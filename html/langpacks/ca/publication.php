@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'publication', language 'ca', version '4.4'.
+ * Strings for component 'publication', language 'ca', version '4.5'.
  *
  * @package     publication
  * @category    string
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configrequiremodintro'] = 'Inhabiliteu aquesta opció si no voleu forçar els usuaris a introduir una descripció de cada activitat.';
 $string['details'] = 'Detalls';
 $string['filedetails'] = 'Detalls';
 $string['overview'] = 'Resum';

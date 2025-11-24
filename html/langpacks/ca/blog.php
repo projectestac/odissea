@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ca', version '4.4'.
+ * Strings for component 'blog', language 'ca', version '4.5'.
  *
  * @package     blog
  * @category    string
@@ -34,7 +34,7 @@ $string['associatewithmodule'] = 'Blog sobre {$a->modtype}: {$a->modname}';
 $string['association'] = 'Associació';
 $string['associations'] = 'Associacions';
 $string['associationunviewable'] = 'Aquesta entrada no podrà ser vista per altres fins que li associeu un curs o que canvieu el camp \'Publica a\'';
-$string['author'] = 'Autor/a';
+$string['author'] = 'Autor o autora';
 $string['autotags'] = 'Afegeix aquestes etiquetes';
 $string['autotags_help'] = 'Introduïu una o més etiquetes locals (separades per comes) que vulgueu afegir automàticament a cada entrada del blog copiada des del blog extern, cap al vostre blog.';
 $string['backupblogshelp'] = 'Si habiliteu aquesta opció els blogs s\'inclouran en les còpies de seguretat automàtiques del lloc.';

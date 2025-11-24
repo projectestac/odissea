@@ -249,15 +249,6 @@ if ($ADMIN->fulltree) {
         'colourful' => get_string('colourful', 'theme_xtecboost')
     ];
 
-    if (theme_xtecboost_is_service_enabled('nodes')) {
-        $colors = get_colors_from_nodes();
-        if ($colors) {
-            $choices['nodes'] = get_string('nodes_color', 'theme_xtecboost');
-            $init = 'init_nodes_colors("' . $colors['color'] . '", "' . $colors['logo_color'] . '");';
-            $PAGE->requires->js_init_code($init);
-        }
-    }
-
     $setting = new admin_setting_configselect($name, $title, '', $default, $choices);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
@@ -360,62 +351,7 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
-
     if (function_exists('get_protected_agora') && get_protected_agora()) {
-        $setting = new admin_setting_heading('theme_xtecboost/advices_user', get_string('advices_user', 'theme_xtecboost'), '');
-        $page->add($setting);
-
-        $name = 'theme_xtecboost/agora_alert_message';
-        $title = get_string('alert_message', 'theme_xtecboost');
-        $description = get_string('agora_alert_message_desc', 'theme_xtecboost');
-        $default = '';
-        $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
-        $page->add($setting);
-        $setting->set_updatedcallback('theme_reset_all_caches');
-
-        $name = 'theme_xtecboost/agora_alert_start';
-        $title = get_string('alert_start', 'theme_xtecboost');
-        $description = get_string('alert_start_desc', 'theme_xtecboost');
-        $default = '';
-        $setting = new admin_setting_configtext($name, $title, $description, $default);
-        $page->add($setting);
-        $setting->set_updatedcallback('theme_reset_all_caches');
-
-        $name = 'theme_xtecboost/agora_alert_end';
-        $title = get_string('alert_end', 'theme_xtecboost');
-        $description = get_string('alert_end_desc', 'theme_xtecboost');
-        $default = '';
-        $setting = new admin_setting_configtext($name, $title, $description, $default);
-        $page->add($setting);
-        $setting->set_updatedcallback('theme_reset_all_caches');
-
-        $setting = new admin_setting_heading('theme_xtecboost/advices_admin', get_string('advices_admin', 'theme_xtecboost'), '');
-        $page->add($setting);
-
-        $name = 'theme_xtecboost/admin_alert_message';
-        $title = get_string('alert_message', 'theme_xtecboost');
-        $description = get_string('admin_alert_message_desc', 'theme_xtecboost');
-        $default = '';
-        $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
-        $page->add($setting);
-        $setting->set_updatedcallback('theme_reset_all_caches');
-
-        $name = 'theme_xtecboost/admin_alert_start';
-        $title = get_string('alert_start', 'theme_xtecboost');
-        $description = get_string('alert_start_desc', 'theme_xtecboost');
-        $default = '';
-        $setting = new admin_setting_configtext($name, $title, $description, $default);
-        $page->add($setting);
-        $setting->set_updatedcallback('theme_reset_all_caches');
-
-        $name = 'theme_xtecboost/admin_alert_end';
-        $title = get_string('alert_end', 'theme_xtecboost');
-        $description = get_string('alert_end_desc', 'theme_xtecboost');
-        $default = '';
-        $setting = new admin_setting_configtext($name, $title, $description, $default);
-        $page->add($setting);
-        $setting->set_updatedcallback('theme_reset_all_caches');
-
         // XTEC service type
         $setting = new admin_setting_heading('theme_xtecboost/xtec_type_heading', get_string('xtec_type_heading', 'theme_xtecboost'), '');
         $page->add($setting);

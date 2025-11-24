@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'ru', version '4.4'.
+ * Strings for component 'choice', language 'ru', version '4.5'.
  *
  * @package     choice
  * @category    string
@@ -82,7 +82,7 @@ $string['indicator:socialbreadthdef_help'] = 'Участник достиг эт
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['limit'] = 'Предел';
 $string['limita'] = 'Лимит: {$a}';
-$string['limitanswers'] = 'Ограничивать число возможных выборов каждого варианта';
+$string['limitanswers'] = 'Ограничить число возможных выборов каждого варианта';
 $string['limitanswers_help'] = 'Этот параметр позволяет ограничить число участников, которые могут выбрать конкретный вариант ответа. Когда при опросе указанное количество учеников выберут соответствующий вариант ответа, для остальных учеников он станет недоступен.
 
 Обратите внимание, что если вы используете этот опрос в групповом режиме, то ограничение будет на группу. Например, если ограничение установлено на 5, то 5 членов каждой группы могут выбрать эту опцию. Если есть 3 группы, это будет означать, что до 5 х 3 = 15 участников могут выбрать вариант.

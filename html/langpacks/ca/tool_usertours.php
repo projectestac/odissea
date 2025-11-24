@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'ca', version '4.4'.
+ * Strings for component 'tool_usertours', language 'ca', version '4.5'.
  *
  * @package     tool_usertours
  * @category    string
@@ -37,9 +37,9 @@ $string['block'] = 'Bloc';
 $string['block_named'] = 'Bloc anomenat «{$a}»';
 $string['cachedef_stepdata'] = 'Llista de passos de la visita guiada';
 $string['cachedef_tourdata'] = 'Llista d\'informació sobre visites guiades d\'usuaris habilitats que es recull a totes les pàgines';
-$string['confirmstepremovalquestion'] = 'Esteu segur que voleu eliminar aquest pas?';
-$string['confirmstepremovaltitle'] = 'Confirmeu que voleu esborrar aquest pas';
-$string['confirmtourremovalquestion'] = 'Esteu segur que voleu eliminar aquesta visita guiada?';
+$string['confirmstepremovalquestion'] = 'Confirmeu que voleu eliminar aquest pas?';
+$string['confirmstepremovaltitle'] = 'Confirmeu que voleu eliminar aquest pas';
+$string['confirmtourremovalquestion'] = 'Confirmeu que voleu eliminar aquesta visita guiada?';
 $string['confirmtourremovaltitle'] = 'Confirmeu que voleu eliminar aquesta visita guiada';
 $string['content'] = 'Contingut';
 $string['content_heading'] = 'Contingut';
@@ -149,6 +149,9 @@ $string['selector_defaulttitle'] = 'Afegiu un títol descriptiu';
 $string['selectordisplayname'] = 'Un selector de CSS que coincideixi amb «{$a}»';
 $string['selecttype'] = 'Seleccioneu el tipus de pas';
 $string['sharedtourslink'] = 'Repositori de visites guiades';
+$string['showtoureachtime'] = 'cada vegada que un filtre hi coincideix';
+$string['showtouruntilcomplete'] = 'fins que s\'ha tancat';
+$string['showtourwhen'] = 'Mostra la visita guiada';
 $string['skip'] = 'Omet';
 $string['skip_tour'] = 'Omet la visita guiada';
 $string['target'] = 'Destinació';
@@ -170,11 +173,11 @@ $string['title_help'] = 'El títol d\'un pas es pot afegir com a text sense form
 Alternativament, es pot introduir un identificador de cadena d\'idioma en el format identificador,component (sense claudàtors o espai després de la coma).';
 $string['tour1_content_addingblocks'] = 'Penseu bé si voleu incloure blocs a les vostres pàgines. Els blocs no es mostren a l\'aplicació per al mòbil de Moodle, per tant, com a regla general, assegureu-vos que el vostre lloc funciona correctament sense blocs.';
 $string['tour1_content_blockregion'] = 'Encara hi ha una regió de blocs aquí. Recomanem eliminar completament els blocs de Navegació i Administració, ja que tota la funcionalitat es troba en un altre lloc del tema Boost.';
-$string['tour1_content_customisation'] = 'Per personalitzar l\'aspecte del vostre lloc i la portada, utilitzeu el menú de configuració a la cantonada de la capçalera. Proveu d\'activar l\'edició ara.';
-$string['tour1_content_end'] = 'Heu arribat al final de la visita guiada d\'usuari. No tornarà a mostrar-se, tret que ho restabliu mitjançant l\'enllaç que trobareu al peu de la pàgina. Com a administrador també podeu crear les vostres pròpies visites guiades, com ara aquesta.';
+$string['tour1_content_customisation'] = 'Per personalitzar l\'aspecte del vostre lloc i la pàgina inicial, utilitzeu el menú de configuració a la cantonada de la capçalera. Proveu d\'activar l\'edició ara.';
+$string['tour1_content_end'] = 'Heu arribat al final de la visita guiada. No tornarà a mostrar-se, tret que ho restabliu mitjançant l\'enllaç que trobareu al peu de la pàgina.';
 $string['tour1_content_navigation'] = 'La navegació principal ara es fa a través d\'aquest menú. El contingut del menú s\'actualitza segons el lloc on es trobi. Utilitzeu el botó de part superior per amagar-lo o mostrar-lo.';
 $string['tour1_content_welcome'] = 'Benvinguts al tema Boost. Si l\'heu actualitzat des d\'una versió anterior, trobareu una aparença diferent amb aquest tema.';
-$string['tour1_title_addingblocks'] = 'S\'estan afegint blocs';
+$string['tour1_title_addingblocks'] = 'Afegint blocs';
 $string['tour1_title_blockregion'] = 'Espai per als blocs';
 $string['tour1_title_customisation'] = 'Personalització';
 $string['tour1_title_end'] = 'Final de la visita guiada';
@@ -183,52 +186,52 @@ $string['tour1_title_welcome'] = 'Benvinguts';
 $string['tour2_content_addblock'] = 'Si activeu l\'edició, podreu afegir blocs des del menú lateral. Tot i això, penseu bé si voleu incloure blocs a les vostres pàgines. Tingueu present que els blocs no es mostren a l\'aplicació de Moodle per a dispositius mòbils, de manera que per a una millor experiència d\'usuari, cal que us assegureu que el vostre curs funciona bé sense cap bloc.';
 $string['tour2_content_addingblocks'] = 'Podeu afegir blocs a aquesta pàgina fent servir aquest botó. Tot i això, penseu bé si voleu incloure blocs a les vostres pàgines. Tingueu en compte que els blocs no es mostren a l\'aplicació de Moodle per a dispositius mòbils, de manera que per a una millor experiència d\'usuari, cal que us assegureu que el vostre curs funciona bé sense cap bloc.';
 $string['tour2_content_customisation'] = 'Per canviar els paràmetres del curs, feu servir el menú de configuració que trobareu a la cantonada de la capçalera. Podreu trobar un menú de configuració semblant a la pàgina principal de cadascuna de les activitats. Proveu a activar l\'edició ara.';
-$string['tour2_content_end'] = 'Heu arribat al final de la visita guiada d\'usuari. No tornarà a mostrar-se, tret que ho restabliu mitjançant l\'enllaç que trobareu al peu de la pàgina. L\'administrador del lloc també pot crear altres visites guiades, si cal.';
+$string['tour2_content_end'] = 'Heu arribat al final de la visita guiada. No tornarà a mostrar-se, tret que ho restabliu mitjançant l\'enllaç que trobareu al peu de la pàgina.';
 $string['tour2_content_navigation'] = 'La navegació principal ara es fa a través d\'aquest menú. Utilitzeu el botó de la part superior per amagar-lo o mostrar-lo. Veureu que hi ha enllaços directes a les seccions del vostre curs.';
 $string['tour2_content_opendrawer'] = 'Proveu a obrir el menú de navegació ara.';
 $string['tour2_content_participants'] = 'Visualitzeu els participants aquí. Des d\'aquí podreu afegir i treure estudiants.';
 $string['tour2_content_welcome'] = 'Benvinguts al tema Boost. Si el vostre lloc s\'ha actualitzat des d\'una versió anterior, trobareu un aspecte diferent aquí, a la pàgina del curs.';
 $string['tour2_title_addblock'] = 'Afegeix un bloc';
-$string['tour2_title_addingblocks'] = 'S\'estan afegint blocs';
+$string['tour2_title_addingblocks'] = 'Afegint blocs';
 $string['tour2_title_customisation'] = 'Personalització';
 $string['tour2_title_end'] = 'Final de la visita guiada';
 $string['tour2_title_navigation'] = 'Navegació';
 $string['tour2_title_opendrawer'] = 'Obre el menú de navegació';
 $string['tour2_title_participants'] = 'Participants del curs';
 $string['tour2_title_welcome'] = 'Benvinguts';
-$string['tour3_content_dashboard'] = 'El vostre Tauler nou té moltes funcionalitats per ajudar-vos a accedir fàcilment a la informació més important per a vós.';
-$string['tour3_content_displayoptions'] = 'Els cursos es poden ordenar pel nom del curs, pel nom curt del curs o per la data del darrer accés.
+$string['tour3_content_dashboard'] = 'El nou Tauler té moltes funcions que us ajudaran a accedir fàcilment a la informació més important per a vós.';
+$string['tour3_content_displayoptions'] = 'Els cursos es poden ordenar per nom del curs, nom curt del curs o data de l\'últim accés.
 
-També podeu triar mostrar els cursos en una llista, amb un resum de la informació, o amb la vista per defecte de «targeta».';
-$string['tour3_content_overview'] = 'El bloc Resum del curs mostra tots els cursos on esteu inscrits.
+També podeu triar mostrar els cursos en una llista, amb informació resumida o la vista de «targeta» predeterminada.';
+$string['tour3_content_overview'] = 'El bloc «Resum dels cursos» mostra tots els cursos en què esteu inscrit.
 
-Podeu triar mostrar els cursos actuals, els passats, els futurs o els que heu destacat.';
-$string['tour3_content_recentcourses'] = 'El bloc Cursos visitats recentment mostra els últims cursos als quals heu accedit, permetent-vos tornar directament a d\'ells.';
-$string['tour3_content_starring'] = 'Podeu triar afegir-hi una estrela a un curs per a destacar-lo, o bé amagar un curs que ja no siga important per a vosaltres.
+Podeu triar mostrar els cursos actualment en curs, del passat o del futur, o els cursos que heu marcat amb una estrella.';
+$string['tour3_content_recentcourses'] = 'El bloc «Cursos visitats recentmen» mostra els cursos als quals heu accedit recentment i permet tornar-hi directament.';
+$string['tour3_content_starring'] = 'Podeu triar marcar un curs amb una estrella per fer-lo destacar o amagar un curs que ja no sigui important per a vós.
 
-Aquestes accions només afecten la vostra visualització.
+Aquestes accions només afecten la vostra vista.
 
-També podeu triar mostrar els cursos en una llista, amb un resum de la informació o la vista per defecte de «targeta».';
-$string['tour3_content_timeline'] = 'El bloc Línia del temps mostra els vostres futurs esdeveniments importants.
+També podeu triar mostrar els cursos en una llista, amb informació resumida, o la vista de «targeta» predeterminada.';
+$string['tour3_content_timeline'] = 'El bloc "cronologia" mostra els teus futurs esdeveniments importants.
 
-Podeu triar mostrar les activitats de la pròxima setmana, mes o més tard en el futur.';
-$string['tour3_title_dashboard'] = 'El vostre Tauler';
+Pots triar mostrar les activitats de la pròxima setmana, mes o més tard en el futur.';
+$string['tour3_title_dashboard'] = 'El vostre tauler';
 $string['tour3_title_displayoptions'] = 'Mostra les opcions';
 $string['tour3_title_overview'] = 'Resum dels cursos';
 $string['tour3_title_recentcourses'] = 'Cursos visitats recentment';
-$string['tour3_title_starring'] = 'Destacant i amagant cursos';
-$string['tour3_title_timeline'] = 'Bloc línia del temps';
-$string['tour4_content_groupconvo'] = 'Si sou membre d\'un grup amb la missatgeria de grup habilitada, veureu les converses de grup aquí.
+$string['tour3_title_starring'] = 'Marcar amb una estrella i amagar cursos';
+$string['tour3_title_timeline'] = 'Bloc cronologia';
+$string['tour4_content_groupconvo'] = 'Si sou membre d\'un grup amb la missatgeria de grup habilitada, veureu converses de grup aquí.
 
-Les converses de grup del curs us permeten interactuar amb els altres membres del vostre grup en un lloc privat i adequat.';
-$string['tour4_content_icon'] = 'Podeu accedir als vostres missatges des de qualsevol pàgina utilitzant aquesta icona.
+Les converses de grup del curs permeten interactuar amb els altres membres del grup en una ubicació privada i convenient.';
+$string['tour4_content_icon'] = 'Podeu accedir als missatges des de qualsevol pàgina mitjançant aquesta icona.
 
-Si teniu cap missatge sense llegir, el nombre de missatges sense llegir també es mostrarà aquí.
+Si teniu missatges no llegits, també es mostrarà aquí el nombre de missatges no llegits.
 
-Feu clic a la icona per obrir la caixa de missatgeria i continuar la visita guiada.';
-$string['tour4_content_messaging'] = 'Les noves funcionalitats de missatgeria inclouen la missatgeria per als grups d\'un curs i un millor control de qui pot enviar-vos missatges.';
-$string['tour4_content_settings'] = 'Podeu accedir als paràmetres de la vostra missatgeria a través de la icona de l\'engranatge. Un nou paràmetre de privacitat us permet restringir qui pot enviar-vos missatges.';
-$string['tour4_content_starred'] = 'Podeu triar destacar converses concretes per tal de trobar-les més fàcilment.';
+Feu clic a la icona per obrir el calaix de missatges i continuar el recorregut.';
+$string['tour4_content_messaging'] = 'Les noves funcions de missatgeria inclouen missatges en grup dins d\'un curs i un millor control sobre qui pot enviar missatges.';
+$string['tour4_content_settings'] = 'Podeu accedir als paràmetres de la missatgeria a través d\'aquesta icona. Un paràmetre nou de privacitat permet restringir qui us pot escriure.';
+$string['tour4_content_starred'] = 'Podeu destacar converses concretes per tal que us sigui més fàcil trobar-les.';
 $string['tour4_title_groupconvo'] = 'Missatges de grup';
 $string['tour4_title_icon'] = 'Missatgeria';
 $string['tour4_title_messaging'] = 'Nova interfície per a la missatgeria';
@@ -244,14 +247,16 @@ $string['tour_activityinfo_course_student_content'] = 'Les dates de l\'activitat
 $string['tour_activityinfo_course_student_title'] = 'Nou: informació de l\'activitat';
 $string['tour_activityinfo_course_teacher_content'] = 'Els paràmetres nous de curs «Mostra les condicions de compleció de l\'activitat» i «Mostra les dates de l\'activitat» permeten triar si es mostren les condicions de finalització de l\'activitat (si s\'estableixen) i/o les dates per als estudiants a la pàgina del curs.';
 $string['tour_activityinfo_course_teacher_title'] = 'Nou: informació de l\'activitat';
-$string['tour_final_step_content'] = 'Heu arribat al final de la visita guiada d\'usuari. No tornarà a mostrar-se, tret que ho restabliu mitjançant l\'enllaç que trobareu al peu de la pàgina.';
+$string['tour_final_step_content'] = 'Heu arribat al final de la visita guiada. No tornarà a mostrar-se, tret que ho restabliu mitjançant l\'enllaç que trobareu al peu de la pàgina.';
 $string['tour_final_step_title'] = 'Final de la visita guiada';
 $string['tour_gradebook_action_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_action_menu::tool_usertours@@</div>Ordeneu les columnes i trieu quines es mostraran. Al mode d’edició, utilitzeu aquesta drecera per accedir a tasques freqüents relacionades amb la visualització i l’edició dels elements de qualificació.';
 $string['tour_gradebook_action_title'] = 'Enllaços ràpids a accions';
-$string['tour_gradebook_filter_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_initials::tool_usertours@@</div>Filtreu els estudiants per les inicials del nom o el cognom.';
-$string['tour_gradebook_filter_title'] = 'Filtreu per nom';
-$string['tour_gradebook_search_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_search::tool_usertours@@</div>Utilitzeu el quadre de cerca per trobar estudiants determinats ràpidament';
-$string['tour_gradebook_search_title'] = 'Cerqueu estudiants de manera fàcil';
+$string['tour_gradebook_filter_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_initials::tool_usertours@@</div>Filtra els estudiants per les inicials del seu nom o cognom.';
+$string['tour_gradebook_filter_title'] = 'Filtra per nom';
+$string['tour_gradebook_search_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_search::tool_usertours@@</div>Utilitzeu el quadre de cerca per trobar ràpidament estudiants específics.';
+$string['tour_gradebook_search_title'] = 'Trobeu estudiants fàcilment';
+$string['tour_gradebook_tour_description'] = 'Funcions de cerca i navegació a l\'informe de qualificació del llibre de qualificacions';
+$string['tour_gradebook_tour_name'] = 'Informe de qualificació del llibre de qualificacions';
 $string['tour_navigation_course_announcements_teacher_content'] = '@@PIXICON::tour/tour_course_admin_3::tool_usertours@@<br>Envia notícies importants aquí.';
 $string['tour_navigation_course_announcements_teacher_title'] = 'Hi ha res que vulgueu contar a tothom?';
 $string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_course_admin_1::tool_usertours@@<br>Afegeix contingut nou o edita\'n l\'existent.';
@@ -261,7 +266,7 @@ $string['tour_navigation_course_index_student_title'] = 'Trobeu el vostre camí'
 $string['tour_navigation_course_index_teacher_content'] = '@@PIXICON::tour/tour_course_admin_2::tool_usertours@@<br>Arrossega i deixa anar activitats per tornar a ordenar el contingut del curs.';
 $string['tour_navigation_course_index_teacher_title'] = 'Índex del curs';
 $string['tour_navigation_course_student_tour_des'] = 'On navegar a través de les activitats del curs';
-$string['tour_navigation_course_student_tour_name'] = 'Índex del curs';
+$string['tour_navigation_course_student_tour_name'] = 'Índex dels curs';
 $string['tour_navigation_course_teacher_tour_des'] = 'Mode d\'edició, arrossegar i deixar anar activitats i publicació d\'anuncis a un curs';
 $string['tour_navigation_course_teacher_tour_name'] = 'Edició del curs';
 $string['tour_navigation_dashboard_content'] = '@@PIXICON::tour/tour_dashboard::tool_usertours@@<br>Aquest panell lateral pot contenir més funcions.';

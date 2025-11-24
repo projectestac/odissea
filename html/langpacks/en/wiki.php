@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'en', version '4.4'.
+ * Strings for component 'wiki', language 'en', version '4.5'.
  *
  * @package     wiki
  * @category    string
@@ -62,7 +62,7 @@ $string['defaultformat_help'] = 'This setting determines the default format used
 * HTML - The HTML editor is available
 * Creole - A common wiki markup language for which a small edit toolbar is available
 * Nwiki - Mediawiki-like markup language used in the contributed Nwiki module';
-$string['deleteallpages'] = 'Delete all wiki pages';
+$string['deleteallpages'] = 'All wiki pages';
 $string['deletecomment'] = 'Deleting comment';
 $string['deletecommentcheck'] = 'Delete comment';
 $string['deletecommentcheckfull'] = 'Are you sure you want to delete the comment?';
@@ -250,7 +250,7 @@ $string['privacy:metadata:wiki_versions:version'] = 'Version number';
 $string['rated'] = 'You rated this page as a {$a}';
 $string['rating'] = 'Rating';
 $string['ratingmode'] = 'Rating mode';
-$string['removeallwikitags'] = 'Remove all wiki tags';
+$string['removeallwikitags'] = 'All wiki tags';
 $string['removepages'] = 'Remove pages';
 $string['reparsetimeout'] = 'Reparsing default timeout';
 $string['repeatedsection'] = 'Wiki error: Section name cannot be repeated \'{$a}\'';

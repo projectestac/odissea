@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_profiling', language 'it', version '4.4'.
+ * Strings for component 'tool_profiling', language 'it', version '4.5'.
  *
  * @package     tool_profiling
  * @category    string
@@ -30,6 +30,7 @@ $string['cannotfindanyrunforrunid'] = 'Spiacente, non trovo il profiling run \'{
 $string['cannotfindanyrunforurl'] = 'Spiacente, non trovo nessun profiling run per l\'URL \'{$a}\' ';
 $string['comment'] = 'Commento';
 $string['cputime'] = 'Tempo di CPU';
+$string['detailview'] = 'Riepilogo dell\'elaborazione';
 $string['differencesbetween2runsof'] = 'Differenze tra 2 run di {$a}';
 $string['executiontime'] = 'Tempo di esecuzione';
 $string['export'] = 'Esporta';

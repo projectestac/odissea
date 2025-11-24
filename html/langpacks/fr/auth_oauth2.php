@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'fr', version '4.4'.
+ * Strings for component 'auth_oauth2', language 'fr', version '4.5'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -29,7 +29,7 @@ $string['accountexists'] = 'Un utilisateur avec ce nom d’utilisateur existe d�
 $string['alreadylinked'] = 'Ce compte externe est déjà lié à un compte sur ce site.';
 $string['auth_oauth2description'] = 'Authentification basée sur les standards OAuth 2.';
 $string['auth_oauth2settings'] = 'Réglages d’authentification OAuth 2.';
-$string['confirmaccountemail'] = 'Bonjour,
+$string['confirmaccountemail'] = 'Bonjour {$a->firstname},
 
 Un nouveau compte a été demandé sur « {$a->sitename} » en utilisant votre adresse de courriel.
 
@@ -46,7 +46,7 @@ Si vous n’avez pas demandé de compte, quelqu’un cherche peut-être à compr
 $string['confirmaccountemailsubject'] = '{$a} : confirmation de compte';
 $string['confirmationinvalid'] = 'Le lien de confirmation n’est pas valide ou est échu. Veuillez recommencer le processus de connexion afin de générer un nouveau message de confirmation.';
 $string['confirmationpending'] = 'Ce compte est en attente de confirmation par courriel.';
-$string['confirmlinkedloginemail'] = 'Bonjour,
+$string['confirmlinkedloginemail'] = 'Bonjour {$a->firstname},
 
 Une requête a été effectuée avec votre adresse de courriel pour lier le compte {$a->issuername} ({$a->linkedemail}) à votre compte sur la plateforme « {$a->sitename} ».
 
@@ -80,7 +80,7 @@ Veuillez vous connecter comme précédemment, au moyen du lien sur la page de co
 $string['emailpasswordchangeinfosubject'] = '{$a} : information sur le changement de mot de passe';
 $string['info'] = 'Compte externe';
 $string['issuer'] = 'Service OAuth 2';
-$string['issuernologin'] = 'Cet fournisseur d’identité ne peut pas être utilisé pour se connecter';
+$string['issuernologin'] = 'Cet fournisseur d’identité ne peut pas être utilisé pour se connecter.';
 $string['key'] = 'Clef';
 $string['linkedlogins'] = 'Connexions liées';
 $string['linkedloginshelp'] = 'Aide sur les connexion liées';

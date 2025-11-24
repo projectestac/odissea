@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_seb', language 'ca', version '4.4'.
+ * Strings for component 'quizaccess_seb', language 'ca', version '4.5'.
  *
  * @package     quizaccess_seb
  * @category    string
@@ -35,7 +35,9 @@ $string['seb:manage_seb_allowcapturemicrophone'] = 'Canvia el paràmetre del qü
 $string['seb_activateurlfiltering'] = 'Habilita el filtratge d\'URL';
 $string['seb_activateurlfiltering_help'] = 'Si s\'habilita, els URL es filtraran quan es carreguin les pàgines web. El conjunt de filtres s\'ha de definir a sota.';
 $string['seb_allowcapturecamera'] = 'Permet l\'accés del navegador a la càmera';
+$string['seb_allowcapturecamera_help'] = 'Si s\'habilita, es demanarà als usuaris que permetin l\'accés a la càmera per al Navegador d\'examen segur abans d\'iniciar la sessió de l\'examen. A macOS 12/iOS 15 o posterior, el fet de desactivar aquest paràmetre impedeix que les aplicacions web accedeixin a la càmera; és a dir, no serà possible l\'enregistrament de vídeo a través de WebRTC.';
 $string['seb_allowcapturemicrophone'] = 'Permet l\'accés del navegador al micròfon';
+$string['seb_allowcapturemicrophone_help'] = 'Si s\'habilita, es demanarà als usuaris que permetin l\'accés al micròfon per al Navegador d\'examen segur abans d\'iniciar la sessió de l\'examen. A macOS 12/iOS 15 o posterior, el fet de desactivar aquest paràmetre impedeix que les aplicacions web accedeixin al micròfon; és a dir, no serà possible l\'enregistrament d’àudio a través de WebRTC.';
 $string['seb_allowedbrowserexamkeys'] = 'Claus de l\'examen permeses per al navegador';
 $string['seb_allowedbrowserexamkeys_help'] = 'En aquest camp podeu introduir les claus de l\'examen permeses per al navegador per a les versions del Navegador d\'examen segur que tenen permís per accedir a aquest qüestionari. Si no se n\'introdueix cap, aleshores no es comproven les claus de l\'examen permeses per al navegador.';
 $string['seb_allowreloadinexam'] = 'Habilita l\'actualització de la pàgina durant l\'examen';

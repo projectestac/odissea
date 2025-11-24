@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'eu', version '4.4'.
+ * Strings for component 'form', language 'eu', version '4.5'.
  *
  * @package     form
  * @category    string
@@ -41,6 +41,7 @@ $string['err_minlength'] = 'Hemen gutxienez {$a->format} karaktere idatzi behar 
 $string['err_nonzero'] = 'Hemen 0-rekin hasten ez den zenbaki bat idatzi behar duzu.';
 $string['err_nopunctuation'] = 'Hemen ezin duzu inongo puntuazio-markarik idatzi.';
 $string['err_numeric'] = 'Hemen zenbaki bat idatzi behar duzu.';
+$string['err_positiveduration'] = 'Iraupen hau ezin da negatiboa izan.';
 $string['err_positiveint'] = '0 baino handiagoa den zenbaki oso bat idatzi behar duzu.';
 $string['err_rangelength'] = 'Hemen {$a->format[0]} eta {$a->format[1]}-ren arteko karaktere-kopurua idatzi behar duzu.';
 $string['err_required'] = 'Hemen balio bat eman behar duzu';

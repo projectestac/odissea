@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpimportcsv', language 'ja', version '4.4'.
+ * Strings for component 'tool_lpimportcsv', language 'ja', version '4.5'.
  *
  * @package     tool_lpimportcsv
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['competencyscale'] = 'コンピテンシ尺度: {$a}';
-$string['competencyscaledescription'] = 'インポートによって作成されたコンピテコンピテンシンシー尺度';
+$string['competencyscaledescription'] = 'インポートにより作成されたコンピテコンピテンシンシー尺度';
 $string['confirm'] = '確認';
 $string['confirmcolumnmappings'] = 'カラムマッピングを確認する';
 $string['csvdelimiter'] = 'CSVセパレータ';

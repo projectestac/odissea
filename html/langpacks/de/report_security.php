@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'de', version '4.4'.
+ * Strings for component 'report_security', language 'de', version '4.5'.
  *
  * @package     report_security
  * @category    string
@@ -126,6 +126,7 @@ $string['check_unsecuredataroot_error'] = 'Ihr Verzeichnis \'dataroot\'  liegt a
 $string['check_unsecuredataroot_name'] = 'dataroot';
 $string['check_unsecuredataroot_ok'] = 'Das Verzeichnis \'dataroot\' ist nicht aus dem Web erreichbar.';
 $string['check_unsecuredataroot_warning'] = 'Ihr moodledata-Verzeichnis <code>{$a}</code> liegt an der falschen Stelle. Es sollte nicht aus dem Web aufrufbar sein.';
+$string['check_upgradefile_info'] = 'Hinweisdateien zur Aktualisierung sollten nicht öffentlich sein.';
 $string['check_vendordir_details'] = '<p>Das Verzeichnis <em>{$a->path}</em> enthält verschiedene Bibliotheken von Drittanbietern und deren Abhängigkeiten, die normalerweise vom PHP Composer installiert werden. Diese Bibliotheken werden möglicherweise für die lokale Moodle-Entwicklung benötigt, zum Beispiel für die Installation des PHPUnit-Frameworks. Sie werden nicht benötigt, um eine Moodle-Seite in der Produktion auszuführen und sie können potenziell gefährliche Codes enthalten, die Ihre Website externen Angriffen aussetzen. Es wird dringend empfohlen, das Verzeichnis zu entfernen, wenn die Seite über eine öffentliche URL verfügbar ist, oder zumindest den Webzugriff darauf in Ihrer Webserver-Konfiguration zu verbieten.</p>';
 $string['check_vendordir_info'] = 'Das externe Verzeichnis darf nicht auf öffentlichen Seiten vertreten sein.';
 $string['check_vendordir_name'] = 'Externes Verzeichnis';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'ja', version '4.4'.
+ * Strings for component 'qtype_truefalse', language 'ja', version '4.5'.
  *
  * @package     qtype_truefalse
  * @category    string
@@ -38,7 +38,6 @@ $string['pluginname_link'] = 'question/type/truefalse';
 $string['pluginnameadding'] = '○/×問題の追加';
 $string['pluginnameediting'] = '○/×問題の編集';
 $string['pluginnamesummary'] = '2つの選択肢「○」および「×」のみ持ったシンプルな形の多肢選択問題です。';
-$string['privacy:metadata'] = '○/×問題タイププラグインはいかなる個人データも保存しません。';
 $string['privacy:preference:showstandardinstruction'] = '標準インストラクションを表示するかどうか指定します。';
 $string['selectone'] = '1つ選択してください:';
 $string['showstandardinstruction'] = '標準インストラクションを表示する';

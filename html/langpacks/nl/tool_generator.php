@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'nl', version '4.4'.
+ * Strings for component 'tool_generator', language 'nl', version '4.5'.
  *
  * @package     tool_generator
  * @category    string
@@ -59,6 +59,9 @@ $string['error_nonexistingcourse'] = 'De opgegeven cursus bestaat niet';
 $string['error_nopageinstances'] = 'De geselecteerde cursus bevat geen paginamodule-exemplaren';
 $string['error_notdebugging'] = 'Niet beschikbaar op deze server omdat foutopsporing niet op ONTWIKKELAAR staat';
 $string['error_nouserspassword'] = 'Je moet $CFG->tool_generator_users_password in config.php zetten om het testplan te kunnen genereren.';
+$string['execute'] = 'Uitvoeren';
+$string['execute_cleanup'] = 'Opruimscenario\'s';
+$string['execute_scenarios'] = 'Testscenario\'s';
 $string['fullname'] = 'Testcursus: {$a->size}';
 $string['maketestcourse'] = 'Maak testcursus';
 $string['maketestplan'] = 'Maak JMeter testplan';
@@ -91,6 +94,7 @@ $string['sitesize_4'] = 'XL (~10GB; 1065 cursussen, gemaakt in ~5 uur)';
 $string['sitesize_5'] = 'XXL (~20GB; 4177 cursussen, gemaakt in ~10 uur)';
 $string['size'] = 'Grootte van de cursus';
 $string['smallfiles'] = 'Kleine bestanden';
+$string['step_example'] = 'Stap voorbeeld:';
 $string['targetcourse'] = 'Test doelcursus';
 $string['testplanexplanation'] = 'Deze tool maakt een JMeter testplan bestand samen met het gebruikersgegevens bestand.
 
@@ -117,7 +121,9 @@ $string['testscenario'] = 'Testscenario\'s maken';
 $string['testscenario_description'] = 'Bij het maken van testscenario\'s wordt gebruik gemaakt van een beperkte syntaxis van functiebestanden om alle noodzakelijke elementen te creëren om een handmatige test uit te voeren.';
 $string['testscenario_errorparsing'] = 'Fout bij verwerken van fucntiebestand: {$a}';
 $string['testscenario_file'] = 'Functiebestand';
-$string['testscenario_filedesc'] = 'De uploadfunctiebestanden kunnen alleen scenario\'s bevatten met core_data_generator-stappen. Het is nog niet compatibel met scenariocontouren. Alle scenario\'s worden in één keer uitgevoerd, maar achtergrondstappen worden genegeerd.';
+$string['testscenario_filedesc'] = 'De uploadfunctiebestanden kunnen alleen scenario\'s bevatten met core_data_generator-stappen of sommige specifieke stappen die geen selenium nodig hebben. Alle scenario\'s worden in één keer uitgevoerd, behalve degene met de @cleanup-tag.';
+$string['testscenario_filedesc_cleanup'] = 'Scenario\'s met @cleanup tag zullen alleen uitgevoerd worden als de "Uitvoeren" instelling  op "Opruimen" gezet is. Om het opruimen via CLI te doen, kun je de --cleanup optie gebruiken.';
+$string['testscenario_filedesc_list'] = 'Dit is de lijst van stappen die gebruikt kan worden in het test functie bestand:';
 $string['testscenario_invalidfile'] = 'Het bestandsformaat is niet geldig of bevat ongeldige stappen.';
 $string['testscenario_invalidstep'] = 'Onbekende stap. Testscenario\'s maken accepteert alleen generatorstappen.';
 $string['testscenario_nosteps'] = 'Er zijn geen stappen om uit te voeren in het bestand.';

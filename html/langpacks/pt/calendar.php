@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'pt', version '4.4'.
+ * Strings for component 'calendar', language 'pt', version '4.5'.
  *
  * @package     calendar
  * @category    string
@@ -59,6 +59,7 @@ $string['courseevents'] = 'Eventos da disciplina';
 $string['courses'] = 'Disciplinas';
 $string['customexport'] = 'Intervalo personalizado ({$a->timestart} - {$a->timeend})';
 $string['daily'] = 'Diariamente';
+$string['datepicker'] = 'Seletor de data';
 $string['day'] = 'Dia';
 $string['dayeventsmany'] = '{$a->num} eventos, {$a->day}';
 $string['dayeventsnone'] = 'Sem eventos, {$a}';
@@ -71,7 +72,7 @@ $string['daywithnoevents'] = 'Não existem eventos marcados para este dia.';
 $string['default'] = 'Predefinido';
 $string['deleteallevents'] = 'Apagar todos os eventos';
 $string['deleteevent'] = 'Apagar evento';
-$string['deleteevents'] = 'Apagar eventos';
+$string['deleteevents'] = 'Eventos';
 $string['deleteoneevent'] = 'Apagar este evento';
 $string['detailedmonthviewfor'] = 'Vista detalhada do mês:';
 $string['detailedmonthviewtitle'] = 'Vista detalhada do mês: {$a}';
@@ -188,7 +189,9 @@ $string['mon'] = 'Seg';
 $string['monday'] = 'Segunda';
 $string['monthly'] = 'Mensalmente';
 $string['monthnext'] = 'Próximo mês';
+$string['monthnextwithname'] = 'Próximo mês: {$a}';
 $string['monthprev'] = 'Mês passado';
+$string['monthprevwithname'] = 'Mês anterior: {$a}';
 $string['monththis'] = 'Este mês';
 $string['more'] = 'Mais';
 $string['moreevents'] = 'Mais {$a}';
@@ -208,7 +211,7 @@ $string['pref_lookahead_help'] = 'Definir o número (máximo) de dias futuros pa
 $string['pref_maxevents'] = 'Número máximo de próximos eventos';
 $string['pref_maxevents_help'] = 'Define o número máximo de eventos que podem ser exibidos. Se definir um número grande, é possível que os próximos eventos ocupem muito espaço na sua disciplina.';
 $string['pref_persistflt'] = 'Lembrar configurações do filtro';
-$string['pref_persistflt_help'] = 'Se ativar esta opção, o Moodle recordará as configurações do seu último evento e irá utilizá-las sempre que iniciar uma sessão.';
+$string['pref_persistflt_help'] = 'Se ativar esta opção, as suas últimas definições de filtro de eventos serão guardadas para a próxima vez que autenticar-se.';
 $string['pref_startwday'] = 'Primeiro dia da semana';
 $string['pref_startwday_help'] = 'As semanas dos calendários serão mostradas a começar no dia selecionado aqui.';
 $string['pref_timeformat'] = 'Formato da hora';

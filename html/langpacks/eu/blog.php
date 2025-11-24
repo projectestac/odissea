@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'eu', version '4.4'.
+ * Strings for component 'blog', language 'eu', version '4.5'.
  *
  * @package     blog
  * @category    string
@@ -71,7 +71,7 @@ $string['configuseexternalblogs'] = 'Utzi erabiltzaileei kanpoko blogetarako est
 $string['courseblog'] = 'Ikastaro-bloga: {$a}';
 $string['courseblogdisable'] = 'Ikastaro-blogak ez daude gaituta';
 $string['courseblogs'] = 'Erabiltzaileek beren ikastaro bereko pertsonen blogak baino ezin dituzte ikusi';
-$string['deleteblogassociations'] = 'Ezabatu blog-loturak';
+$string['deleteblogassociations'] = 'Blog-loturak';
 $string['deleteblogassociations_help'] = 'Hau markatuta blog-sarrerak ez dira aurrerantzean ikastaro honekin edo ikastaroko inonko jarduera edo baliabiderekin lotuko. Blog-sarrerak ez dira ezabatuko.';
 $string['deleteentry'] = 'Ezabatu sarrera';
 $string['deleteexternalblog'] = 'Erregistroa kendu kanpoko blog honi';

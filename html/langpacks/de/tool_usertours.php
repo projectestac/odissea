@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'de', version '4.4'.
+ * Strings for component 'tool_usertours', language 'de', version '4.5'.
  *
  * @package     tool_usertours
  * @category    string
@@ -268,11 +268,11 @@ $string['tour_navigation_course_edit_teacher_content'] = '@@PIXICON::tour/tour_c
 $string['tour_navigation_course_edit_teacher_title'] = 'Bearbeitungsmodus einschalten';
 $string['tour_navigation_course_index_student_content'] = '@@PIXICON::tour/tour_course_student::tool_usertours@@<br>Navigieren Sie durch die Aktivitäten und verfolgen Sie Ihren Fortschritt.';
 $string['tour_navigation_course_index_student_title'] = 'Finden Sie sich zurecht';
-$string['tour_navigation_course_index_teacher_content'] = '@@PIXICON::tour/tour_course_admin_2::tool_usertours@@<br>Ziehen Sie Aktivitäten per Drag-and-Drop, um Kursinhalte neu anzuordnen.';
+$string['tour_navigation_course_index_teacher_content'] = '@@PIXICON::tour/tour_course_admin_2::tool_usertours@@<br>Ziehen Sie Aktivitäten per Drag&drop, um Kursinhalte neu anzuordnen.';
 $string['tour_navigation_course_index_teacher_title'] = 'Kursindex';
 $string['tour_navigation_course_student_tour_des'] = 'Navigieren durch Aktivitäten in einem Kurs';
 $string['tour_navigation_course_student_tour_name'] = 'Kursindex';
-$string['tour_navigation_course_teacher_tour_des'] = 'Bearbeitungsmodus, Drag-and-Drop von Aktivitäten und Veröffentlichen von Ankündigungen in einem Kurs';
+$string['tour_navigation_course_teacher_tour_des'] = 'Bearbeitungsmodus, Drag&drop von Aktivitäten und Veröffentlichen von Ankündigungen in einem Kurs';
 $string['tour_navigation_course_teacher_tour_name'] = 'Kursbearbeitung';
 $string['tour_navigation_dashboard_content'] = '@@PIXICON::tour/tour_dashboard::tool_usertours@@<br>Diese Seitenleiste kann weitere Funktionen enthalten.';
 $string['tour_navigation_dashboard_title'] = 'Zum Erkunden ausklappen';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'dataform', language 'ca', version '4.4'.
+ * Strings for component 'dataform', language 'ca', version '4.5'.
  *
  * @package     dataform
  * @category    string
@@ -34,7 +34,7 @@ $string['alignment'] = 'Alineació';
 $string['and'] = 'I';
 $string['andor'] = 'i/o';
 $string['ascending'] = 'Ascendent';
-$string['author'] = 'Autor/a';
+$string['author'] = 'Autor o autora';
 $string['authorinfo'] = 'Informació de l\'autor';
 $string['availablefrom'] = 'Disponible des de';
 $string['availableplugins'] = 'Connectors disponibles';

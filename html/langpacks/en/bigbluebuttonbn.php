@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'en', version '4.4'.
+ * Strings for component 'bigbluebuttonbn', language 'en', version '4.5'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -41,6 +41,7 @@ $string['bigbluebuttonbn:join'] = 'Join a BigBlueButton room';
 $string['bigbluebuttonbn:managerecordings'] = 'Manage recordings';
 $string['bigbluebuttonbn:protectrecordings'] = 'Protect recordings';
 $string['bigbluebuttonbn:publishrecordings'] = 'Publish recordings';
+$string['bigbluebuttonbn:seepresentation'] = 'Always see presentation file on activity page';
 $string['bigbluebuttonbn:unprotectrecordings'] = 'Unprotect recordings';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'Unpublish recordings';
 $string['bigbluebuttonbn:view'] = 'View BigBlueButton room';
@@ -200,6 +201,10 @@ $string['config_server_url'] = 'BigBlueButton server URL';
 $string['config_server_url_description'] = 'The URL of your BigBlueButton server.';
 $string['config_shared_secret'] = 'BigBlueButton shared secret';
 $string['config_shared_secret_description'] = 'The security secret of your BigBlueButton server.';
+$string['config_showpresentation_default'] = 'Show presentation file on activity page';
+$string['config_showpresentation_default_description'] = 'Should students have access to the presentation file before the session? This setting has no effect on users with the capability \'Always see presentation file on activity page\' .';
+$string['config_showpresentation_editable'] = '\'Show presentation file on activity page\' option';
+$string['config_showpresentation_editable_description'] = 'Option in activity settings for teachers to choose whether to show the presentation file to students.';
 $string['config_uidelegation_enabled'] = 'UI delegation is enabled';
 $string['config_uidelegation_enabled_description'] = 'These settings enable or disable the UI delegation to the BigBlueButton server.';
 $string['config_userlimit'] = 'User limit';
@@ -371,6 +376,7 @@ $string['mod_form_field_recordings_html'] = 'Show the table in plain HTML';
 $string['mod_form_field_recordings_imported'] = 'Show only imported links';
 $string['mod_form_field_recordings_preview'] = 'Show recording preview';
 $string['mod_form_field_room_name'] = 'Room name';
+$string['mod_form_field_showpresentation'] = 'Show presentation file on activity page';
 $string['mod_form_field_userlimit'] = 'User limit';
 $string['mod_form_field_userlimit_help'] = 'The maximum number of users allowed in a session. Set to 0 to allow an unlimited number of users.';
 $string['mod_form_field_voicebridge'] = 'Voice bridge [####]';

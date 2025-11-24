@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ru', version '4.4'.
+ * Strings for component 'forum', language 'ru', version '4.5'.
  *
  * @package     forum
  * @category    string
@@ -511,11 +511,11 @@ $string['noposts'] = 'Нет сообщений';
 $string['nopostsmadebyuser'] = 'У пользователя {$a} нет сообщений';
 $string['nopostsmadebyyou'] = 'Вы не сделали ни одного сообщения';
 $string['noquestions'] = 'В форуме пока нет ни одного вопроса';
-$string['nosubscribers'] = 'У этого форума нет подписчиков';
+$string['nosubscribers'] = 'На этом форуме пока нет подписчиков.';
 $string['notexists'] = 'Обсуждение больше не существует';
 $string['notgraded'] = 'Не оценено';
 $string['nothingnew'] = 'Ничего нового для {$a}';
-$string['notingroup'] = 'Извините, но Вы должны быть членом группы, чтобы видеть этот форум.';
+$string['notingroup'] = 'Вы должны быть членом группы, чтобы видеть этот форум.';
 $string['notinstalled'] = 'Модуль форума не установлен';
 $string['notlocked'] = 'Заблокировать';
 $string['notpartofdiscussion'] = 'Это сообщение не является частью обсуждения!';
@@ -559,9 +559,6 @@ $string['postmailinfo'] = 'Это копия сообщения с сайта {$
 $string['postmailnow'] = '<p>Это сообщение будет отправленно немедленно всем подписавшимся на этот форум.</p>';
 $string['postmailreply'] = 'Для ответа нажмите на эту ссылку: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
-$string['postrating1'] = 'Наиболее отделенные сообщения';
-$string['postrating2'] = 'Отделенные и связанные сообщения';
-$string['postrating3'] = 'Наиболее связанные сообщения';
 $string['posts'] = 'Сообщения';
 $string['postsfrom'] = 'Сообщения от';
 $string['postsmadebyuser'] = 'Опубликовано {$a}';

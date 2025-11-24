@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'de', version '4.4'.
+ * Strings for component 'blog', language 'de', version '4.5'.
  *
  * @package     blog
  * @category    string
@@ -71,7 +71,7 @@ $string['configuseexternalblogs'] = 'Hinzufügen von externen Blogfeeds erlauben
 $string['courseblog'] = 'Kursblog: {$a}';
 $string['courseblogdisable'] = 'Kursblogs sind nicht aktiviert';
 $string['courseblogs'] = 'Blogs von anderen im Kurs';
-$string['deleteblogassociations'] = 'Blogverbindungen löschen';
+$string['deleteblogassociations'] = 'Blogverbindungen';
 $string['deleteblogassociations_help'] = 'Wenn diese Option aktiviert wird, sind Blogeinträge nicht länger mit diesem Kurs, einer Kursaktivität oder einem Kursmaterial verbunden. Die Blogeinträge selber werden nicht gelöscht.';
 $string['deleteentry'] = 'Eintrag löschen';
 $string['deleteexternalblog'] = 'Diesen externen Blog trennen';

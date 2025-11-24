@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_usersessions', language 'ro', version '4.4'.
+ * Strings for component 'report_usersessions', language 'ro', version '4.5'.
  *
  * @package     report_usersessions
  * @category    string
@@ -25,7 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['mysessions'] = 'Sesiunile mele active';
+$string['logoutothersessions'] = 'Închide toate sesiunile din toate browser-ele';
+$string['logoutothersessions_help'] = 'Dezautentificați-vă din toate sesiunile browser-ului, cu excepția acesteia. Aceasta nu afectează web apps.';
+$string['logoutothersessionssuccess'] = 'Ești dezautentificat din toate celelalte sesiuni.';
+$string['logoutsinglesessionsuccess'] = 'Sunteți deconectat din sesiune la {$a}.';
+$string['mysessions'] = 'Sesiunile mele active din browser';
 $string['navigationlink'] = 'Sesiuni de browser';
 $string['pluginname'] = 'Raport sesiuni utilizator';
 $string['privacy:metadata'] = 'Pluginul pentru raportul sesiunilor utilizatorului nu stochează date personale.';

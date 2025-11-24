@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'el', version '4.4'.
+ * Strings for component 'gradereport_singleview', language 'el', version '4.5'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -40,7 +40,6 @@ $string['excludeall'] = 'Αποκλεισμός όλων των βαθμών';
 $string['excludefor'] = 'Αποκλεισμός για {$a}';
 $string['excludenone'] = 'Να μην αποκλείεται κανένας βαθμός';
 $string['feedbackfor'] = 'Ανατροφοδότηση για {$a}';
-$string['filtergrades'] = 'Εμφάνιση βαθμών για {$a}';
 $string['gradefor'] = 'Βαθμός για {$a}';
 $string['gradeitem'] = 'Στοιχείο βαθμού: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'Αυτό το στοιχείο βαθμού δεν μπορεί να παρακαμφθεί.';

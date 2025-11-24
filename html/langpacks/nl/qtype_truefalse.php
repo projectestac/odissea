@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'nl', version '4.4'.
+ * Strings for component 'qtype_truefalse', language 'nl', version '4.5'.
  *
  * @package     qtype_truefalse
  * @category    string
@@ -38,7 +38,6 @@ $string['pluginname_link'] = 'question/type/truefalse';
 $string['pluginnameadding'] = 'Een waar/niet waar-vraag toevoegen';
 $string['pluginnameediting'] = 'Een  waar/niet waar-vraag bewerken';
 $string['pluginnamesummary'] = 'Een eenvoudige vorm van meerkeuzevraag met slechts twee keuzes: waar of niet waar';
-$string['privacy:metadata'] = 'De waar/niet waar vraagtype-plugin bewaart geen persoonlijke gegevens.';
 $string['privacy:preference:showstandardinstruction'] = 'Of antwoorden automatisch door elkaar moeten gehaald worden.';
 $string['selectone'] = 'Kies één:';
 $string['showstandardinstruction'] = 'Toon standaardinstructies';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'en', version '4.4'.
+ * Strings for component 'block_myoverview', language 'en', version '4.5'.
  *
  * @package     block_myoverview
  * @category    string
@@ -93,7 +93,7 @@ $string['title'] = 'Course name';
 $string['viewquickstart'] = 'View Quickstart guide';
 $string['zero_default_intro'] = 'Once you\'re enrolled in a course, it will appear here.';
 $string['zero_default_title'] = 'You\'re not enrolled in any courses.';
-$string['zero_nocourses_intro'] = 'Need help getting started? Check out the <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Moodle documentation</a> or take your first steps with our Quickstart guide.';
+$string['zero_nocourses_intro'] = 'Need help getting started? Check out the <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Moodle documentation</a>.';
 $string['zero_nocourses_title'] = 'Create your first course';
 $string['zero_request_intro'] = 'Need help getting started? Check out the <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Moodle documentation</a> or take your first steps with our <a href="{$a->quickhref}" title="{$a->quicktitle}" target="{$a->quicktarget}">Quickstart guide</a>.';
 $string['zero_request_title'] = 'Request your first course';

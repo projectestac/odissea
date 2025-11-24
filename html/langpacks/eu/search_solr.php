@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search_solr', language 'eu', version '4.4'.
+ * Strings for component 'search_solr', language 'eu', version '4.5'.
  *
  * @package     search_solr
  * @category    string
@@ -43,7 +43,7 @@ $string['multivaluedfield'] = '"{$a}" eremuak karaktere-kate bat bueltatu du esk
 $string['nodatafromserver'] = 'Ez dago zerbitzariko daturik';
 $string['pluginname'] = 'Solr';
 $string['privacy:metadata'] = 'Plugin honek datuak bidaltzen ditu lotutako kanpoko Solr bilaketa-motorrera. Ez du lokalki daturik biltzen.';
-$string['privacy:metadata:data'] = 'Bilaketa sistemaren bitartez pasatako datu pertsonalak.';
+$string['privacy:metadata:data'] = 'Bilaketen azpisistemaren bitartez pasatako datu pertsonalak.';
 $string['schemafieldautocreated'] = '"{$a}" eremua dagoeneko Solr eskeman existitzen da. Ziuraski datuak indexatu baino lehen script hau exekutatzea ahaztu zenuen eta Solr-ek eremuak automatikoki sortuko zituen. Mesedez ezabatu ezazu indizea, berri bat sortu eta setup_schema.php berriz exekutatu ezazu datuak Solr-en indexatu baino lehen.';
 $string['schemasetupfromsolr5'] = 'Zure Solr zerbitzariaren bertsioa 5.0 baino txikiagoa da. Script honek soilik 5.0 bertsioa edo handiago bat konfiguratu lezake. Zure  eskemako eremuak eskuz konfiguratu beharko dituzu \\search_solr\\document::get_default_fields_definition() funtzioaren arabera.';
 $string['searchinfo'] = 'Bilaketak';

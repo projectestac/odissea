@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_socialwall', language 'eu', version '4.4'.
+ * Strings for component 'format_socialwall', language 'eu', version '4.5'.
  *
  * @package     format_socialwall
  * @category    string

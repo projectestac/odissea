@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_seb', language 'en', version '4.4'.
+ * Strings for component 'quizaccess_seb', language 'en', version '4.5'.
  *
  * @package     quizaccess_seb
  * @category    string
@@ -96,6 +96,7 @@ $string['seb:manage_seb_allowedbrowserexamkeys'] = 'Change SEB quiz setting: All
 $string['seb:manage_seb_allowreloadinexam'] = 'Change SEB quiz setting: Allow reload';
 $string['seb:manage_seb_allowspellchecking'] = 'Change SEB quiz setting: Enable spell checking';
 $string['seb:manage_seb_allowuserquitseb'] = 'Change SEB quiz setting: Allow quit';
+$string['seb:manage_seb_configuremanually'] = 'Change SEB quiz setting: Select manual configuration';
 $string['seb:manage_seb_enableaudiocontrol'] = 'Change SEB quiz setting: Enable audio control';
 $string['seb:manage_seb_expressionsallowed'] = 'Change SEB quiz setting: Simple expressions allowed';
 $string['seb:manage_seb_expressionsblocked'] = 'Change SEB quiz setting: Simple expressions blocked';
@@ -114,13 +115,14 @@ $string['seb:manage_seb_showtime'] = 'Change SEB quiz setting: Show time';
 $string['seb:manage_seb_showwificontrol'] = 'Change SEB quiz setting: Show Wi-Fi control';
 $string['seb:manage_seb_templateid'] = 'Change SEB quiz setting: Select SEB template';
 $string['seb:manage_seb_userconfirmquit'] = 'Change SEB quiz setting: Confirm on quit';
+$string['seb:manage_seb_usesebclientconfig'] = 'Change SEB quiz setting: Use SEB client configuration';
 $string['seb:managetemplates'] = 'Manage SEB configuration templates';
 $string['seb_activateurlfiltering'] = 'Enable URL filtering';
 $string['seb_activateurlfiltering_help'] = 'If enabled, URLs will be filtered when loading web pages. The filter set has to be defined below.';
 $string['seb_allowcapturecamera'] = 'Allow browser access to camera';
-$string['seb_allowcapturecamera_help'] = 'If enabled, users will be asked to grant access to the camera for SEB before the exam session is started. In macOS 12/iOS 15 or later, disabling this setting prevents web applications from accessing the camera in any case, i. e. video recording via WebRTC will not be possible.';
+$string['seb_allowcapturecamera_help'] = 'If enabled, users will be asked to grant access to the camera for SEB before the exam session is started. In macOS 12/iOS 15 or later, disabling this setting prevents web applications from accessing the camera i.e. video recording via WebRTC will not be possible.';
 $string['seb_allowcapturemicrophone'] = 'Allow browser access to microphone';
-$string['seb_allowcapturemicrophone_help'] = 'If enabled, users will be asked to grant access to the microphone for SEB before the exam session is started. In macOS 12/iOS 15 or later, disabling this setting prevents web applications from accessing the microphone in any case, i. e. audio recording via WebRTC will not be possible.';
+$string['seb_allowcapturemicrophone_help'] = 'If enabled, users will be asked to grant access to the microphone for SEB before the exam session is started. In macOS 12/iOS 15 or later, disabling this setting prevents web applications from accessing the microphone i.e. audio recording via WebRTC will not be possible.';
 $string['seb_allowedbrowserexamkeys'] = 'Allowed browser exam keys';
 $string['seb_allowedbrowserexamkeys_help'] = 'In this field you can enter the allowed browser exam keys for versions of Safe Exam Browser that are permitted to access this quiz. If no keys are entered, then browser exam keys are not checked.';
 $string['seb_allowreloadinexam'] = 'Enable reload in exam';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'ro', version '4.4'.
+ * Strings for component 'wiki', language 'ro', version '4.5'.
  *
  * @package     wiki
  * @category    string
@@ -62,7 +62,7 @@ $string['defaultformat_help'] = 'Această setare determină formatul implicit ut
 * HTML - Editorul HTML este disponibil
 * Creole - Un limbaj comun de marcare wiki pentru care este disponibilă o mică bara de instrumente de editare
 * Nwiki - limbaj de marcare asemănător Mediawiki utilizat în modulul Nwiki contribuit';
-$string['deleteallpages'] = 'Șterge toate paginile wiki';
+$string['deleteallpages'] = 'Toate paginile wiki';
 $string['deletecomment'] = 'Se șterge comentariu';
 $string['deletecommentcheck'] = 'Șterge comentariu';
 $string['deletecommentcheckfull'] = 'Sunteți sigur(ă) că doriți să ștergeți comentariul?';
@@ -248,7 +248,7 @@ $string['privacy:metadata:wiki_versions:version'] = 'Versiunea numărul';
 $string['rated'] = 'Ați evaluat această pagină drept {$a}';
 $string['rating'] = 'Rating';
 $string['ratingmode'] = 'Mod de evaluare';
-$string['removeallwikitags'] = 'Eliminați toate etichetele wiki';
+$string['removeallwikitags'] = 'Toate etichetele wiki';
 $string['removepages'] = 'Ștergeți paginile';
 $string['reparsetimeout'] = 'Expirarea implicită a reparației';
 $string['repeatedsection'] = 'Eroare Wiki: numele secțiunii nu poate fi repetat „{$a}”';

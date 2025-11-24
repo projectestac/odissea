@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'zh_cn', version '4.4'.
+ * Strings for component 'moodle', language 'zh_cn', version '4.5'.
  *
  * @package     moodle
  * @category    string
@@ -44,6 +44,7 @@ $string['activityiscurrentlyhidden'] = '很抱歉！此活动目前处于隐藏�
 $string['activitymodule'] = '活动模块';
 $string['activitymodules'] = '活动模块';
 $string['activitynotready'] = '活动还没准备好';
+$string['activityorresource'] = '活动/资源';
 $string['activityreport'] = '活动报表';
 $string['activityreports'] = '活动报表';
 $string['activityselect'] = '选择把此活动移动到其它地方';
@@ -57,6 +58,7 @@ $string['addadmin'] = '添加网站管理员';
 $string['addblock'] = '添加一个版块';
 $string['addcomment'] = '添加一条评论...';
 $string['addcondition'] = '添加条件';
+$string['addcontent'] = '添加内容';
 $string['addcountertousername'] = '向用户名添加数字来建立用户';
 $string['addcreator'] = '添加课程管理员';
 $string['adddots'] = '添加...';
@@ -294,6 +296,7 @@ $string['chooseuser'] = '选择一个用户';
 $string['city'] = '市/县';
 $string['cleaningtempdata'] = '清空临时数据';
 $string['clear'] = '清空';
+$string['clearall'] = '全部清空';
 $string['clearfilterrow'] = '移除过滤器行';
 $string['clearfilters'] = '清空过滤器';
 $string['clearsearch'] = '清除搜索输入';
@@ -568,8 +571,8 @@ $string['delete'] = '删除';
 $string['deleteablock'] = '删除一个版块';
 $string['deleteall'] = '全部删除';
 $string['deleteallcannotundo'] = '全部删除（不能撤销）';
-$string['deleteallcomments'] = '删除所有评论';
-$string['deleteallratings'] = '删除所有评分';
+$string['deleteallcomments'] = '所有评论';
+$string['deleteallratings'] = '所有评分';
 $string['deletecategory'] = '删除课程类别：{$a}';
 $string['deletecategorycheck'] = '您确定要完全删除类别<b>“{$a}”</b>么?<br />此类别中的所有课程将会被移动到父类别或类别“五花八门”中。';
 $string['deletecategorycheck2'] = '如果删除此课程类别，您必须选择该类别下的课程和子类别的处理办法。';
@@ -696,17 +699,18 @@ $string['emailagain'] = '电子邮件(重复)';
 $string['emailalreadysent'] = '一封重置密码的邮件已经发出。请检查您的邮箱。';
 $string['emailcharset'] = 'Email字符集';
 $string['emailconfirm'] = '确认您的帐号';
-$string['emailconfirmation'] = '您好：
+$string['emailconfirmation'] = '您好 {$a->firstname}，
 
-刚才您用您的电子邮箱地址在“{$a->sitename}”上申请了一个新帐号。
+已在 \'{$a->sitename}\' 使用您的电子邮件地址申请新帐户。
 
-如果要确认您的新帐号，请点击以下链接：
+要确认您的新帐户，请访问以下网址：
 
 {$a->link}
 
-在多数的邮件软件中，这个地址应该显示为蓝色的链接，可以直接点击。如果不是这样，请将以上地址复制粘贴到网页浏览器窗口上部的地址栏中，打开这个网页。
+在大多数邮件程序中，这应该显示为蓝色链接，你只需点击即可。 如果这不起作用，请将地址剪切并粘贴到地址行。
 
-如果您需要帮助，请联系网站管理员，{$a->admin}';
+如果您需要帮助，请联系站点管理员，
+{$a->admin}';
 $string['emailconfirmationresend'] = '重新发送确认电子邮件';
 $string['emailconfirmationsubject'] = '{$a}: 帐号确认';
 $string['emailconfirmsent'] = '<p>一封邮件已经发送到您的地址 <b>{$a}</b>。</p>
@@ -1016,6 +1020,7 @@ $string['general'] = '常规项';
 $string['geolocation'] = '维度—经度';
 $string['gettheselogs'] = '获取这些日志';
 $string['go'] = '继续';
+$string['gobacktosite'] = '返回';
 $string['gpl'] = '版权所有 （C） 1999 年起 Martin Dougiamas （https://moodle.com）
 
 该程序是免费软件;您可以根据自由软件基金会发布的 GNU 通用公共许可证的条款重新分发和/或修改它;许可证的第 2 版，或（由您选择）任何更高版本。
@@ -1180,6 +1185,7 @@ $string['indicator:userforumstracking'] = '用户正在跟踪论坛';
 $string['indicator:userforumstracking_help'] = '该指标表示该学生是否在讨论区中打开了跟踪功能。';
 $string['info'] = '信息';
 $string['inprogress'] = '进行中';
+$string['insertcontentbefore'] = '在 \'{$a->activityname}\' 之前插入内容';
 $string['insertresourceoractivitybefore'] = '在 \'{$a->activityname}\' 前插入一个活动或资源';
 $string['institution'] = '机构';
 $string['instudentview'] = '在学生视图中';
@@ -1296,6 +1302,7 @@ $string['maximumgradex'] = '最高分：{$a}';
 $string['maximumshort'] = '最大';
 $string['maximumupload'] = '最大上传文件';
 $string['maximumupload_help'] = '允许学生上传到课程的最大文件大小。此外，您还可以进一步限制每个活动的最大上传大小。';
+$string['maxlengthreached'] = '已达到 {$a} 的最大字符限制。';
 $string['maxnumberweeks'] = '最大小节数';
 $string['maxnumberweeks_desc'] = '下拉菜单中小节数量的最大值（仅适用于特定课程格式）。';
 $string['maxnumcoursesincombo'] = '浏览<a href="{$a->link}">{$a->numberofcourses}门课程</a>。';
@@ -1867,13 +1874,19 @@ $string['resendemail'] = '重新发送确认电子邮件';
 $string['reset'] = '重置';
 $string['resetcomponent'] = '组件';
 $string['resetcourse'] = '重置课程';
-$string['resetinfo'] = '在此页面，您可以清空课程的用户数据，并保留所有活动和其它设置。但请注意，选择下面的选项并提交本页面后，将永远从课程删除您所选择的用户数据！';
-$string['resetnotimplemented'] = '‎未实现重置';
+$string['resetcourseconfirm'] = '重置课程？';
+$string['resetcoursewarning'] = '您确定要重置课程“{$a}”吗？
+<br/><br/>
+这将删除所选数据并将课程重置回其原始状态。您无法撤消此操作。';
+$string['resetinfo'] = '此功能允许您清除所有用户数据并将课程重置为其原始状态。课程活动和设置保持不变。';
+$string['resetinfoselect'] = '从以下类别中选择要删除或重置的数据：';
+$string['resetnotimplemented'] = '不支持重置';
+$string['resetnotimplementedinfo'] = '以下活动无法重置：';
 $string['resetrecordexpired'] = '您使用的密码重置链接已经超过了{$a}分钟，目前已经失效了。请重新发起一次重置密码请求。';
 $string['resetstartdate'] = '重置开始时间';
 $string['resetstatus'] = '状态';
 $string['resettable'] = '重置表格样式';
-$string['resettask'] = '任务';
+$string['resettask'] = '重置';
 $string['resettodefaults'] = '重置为缺省';
 $string['resortcourses'] = '课程重新排列';
 $string['resortsubcategoriesby'] = '根据{$a}对子类别升序排序';
@@ -2021,6 +2034,9 @@ $string['senddetails'] = '用Email发送我的详细资料';
 $string['sent'] = '发送';
 $string['separate'] = '分离';
 $string['separateandconnected'] = '独立型和情景型学习方式';
+$string['separateandconnected1'] = '极端独立型';
+$string['separateandconnected2'] = '独立型与情景型兼备';
+$string['separateandconnected3'] = '极端情景型';
 $string['separateandconnectedinfo'] = '此量表基于独立型和情景型认知理论。此理论描述了我们了解和评价所见所闻事物的两种不同方法。<ul><li><strong>独立型的人</strong>总是尽量保持客观，避免受感觉和情绪的影响。在与其他人讨论时，他们喜欢维护自己的观点，用逻辑找出对手观点中的漏洞。</li><li><strong>情景型的人</strong>比其他人更敏感。 他们善于换位思考，喜欢倾听和提问，直到他们觉得自己能从别人的角度理解事物。他们通过分享从他人身上获得知识的经验来学习。</li></ul>';
 $string['servererror'] = '与服务器通信发生错误';
 $string['serverlocaltime'] = '服务器的当地时间';
@@ -2176,6 +2192,7 @@ $string['statswrites'] = '发布';
 $string['status'] = '状态';
 $string['statuschecks'] = '状态检查';
 $string['statuscritical'] = '关键';
+$string['statusdone'] = '完成';
 $string['statuserror'] = '错误';
 $string['statusinfo'] = '信息';
 $string['statusna'] = 'N/A';
@@ -2191,6 +2208,7 @@ $string['subcategory'] = '子类别';
 $string['subcategoryof'] = '{$a}的子类别';
 $string['subject'] = '主题';
 $string['submit'] = '提交';
+$string['subsectionmoveerror'] = '无法将此小节移动到另一个小节上';
 $string['success'] = '成功';
 $string['successduration'] = '成功 (用时 {$a} 秒)';
 $string['summary'] = '概要';

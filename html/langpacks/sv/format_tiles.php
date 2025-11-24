@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'sv', version '4.4'.
+ * Strings for component 'format_tiles', language 'sv', version '4.5'.
  *
  * @package     format_tiles
  * @category    string
@@ -45,7 +45,6 @@ $string['backupfailed'] = 'Säkerhetskopieringen misslyckades';
 $string['basecolour'] = 'Panelfärger';
 $string['basecolour_help'] = 'Den här färguppsättningen här kommer att appliceras på alla paneler i kursen.  (De tillgängliga färgerna bestäms av webbplatsadministratören via sidan Inställningar för Panelpluginmodulen).';
 $string['brandcolour'] = 'Varumärkesfärg';
-$string['canceltask'] = 'Avbryt åtgärd';
 $string['changedcolour'] = 'Panelfärgerna återställdes till standard för <strong>{$a}</strong>';
 $string['checkforproblemcourses'] = 'Kontrollera och åtgärda problemkurser';
 $string['clickiffailstoload'] = 'Kontrollera om sidan inte kan laddas';
@@ -116,9 +115,6 @@ $string['displaytitle_mod_ppt'] = 'PowerPoint-presentation';
 $string['displaytitle_mod_txt'] = 'Text';
 $string['displaytitle_mod_xls'] = 'Kalkylblad';
 $string['displaytitle_mod_zip'] = 'ZIP-fil';
-$string['documentation'] = 'Dokumentation';
-$string['documentationurl'] = 'URL till dokumentation';
-$string['documentationurl_descr'] = 'URL till platsen där dokumentationen för Paneler finns.';
 $string['download'] = 'Hämta';
 $string['editoradvicesubtiles'] = 'I den här versionen av pluginmodulen Panelformat visas aktiviteter som underpaneler endast om redigeringsläget är inaktiverat';
 $string['editsection'] = 'Redigera titel';
@@ -132,7 +128,6 @@ $string['expand'] = 'Expandera';
 $string['expandall'] = 'Expandera alla';
 $string['expandsections'] = 'Visa alla aktiviteter (alla sektioner)';
 $string['fileaddedtobottom'] = 'Filen lades till sist i sektionen';
-$string['filenoshowtext'] = 'Om filen inte visas här, använd knapparna till höger för att ladda ned eller visa i nytt fönster';
 $string['filterboth'] = 'Visa knappar baserat på panelnummer och kursresultat';
 $string['filternumbers'] = 'Visa knappar baserat på panelnummer';
 $string['filteroutcomes'] = 'Visa knappar baserat på kursresultat';
@@ -253,7 +248,6 @@ $string['imagesavedfor'] = 'Bild för "{$a}" sparad';
 $string['imagesize'] = 'Bildstorlek';
 $string['jsactivate'] = 'Slå på animerad navigering';
 $string['jsdeactivated'] = 'Du har inaktiverat animerad navigering för ditt konto';
-$string['jsnavsettings'] = 'JavaScript-navigering';
 $string['jsreactivated'] = 'Du har aktiverat animerad navigering för ditt konto. Detta kan göra navigeringen snabbare. Detta kräver att JavaScript är aktiverat.';
 $string['links'] = 'Länkar';
 $string['loading'] = 'Laddar';
@@ -271,7 +265,6 @@ $string['none'] = 'Ingen';
 $string['noproblemsfound'] = 'Inga problem funna';
 $string['notcomplete'] = 'Ej slutförd';
 $string['notrecommended'] = 'Ej rekommenderad';
-$string['notregistered'] = 'Du har ännu inte registrerat denna pluginmodul hos utvecklaren.';
 $string['novaliddefaultcolour'] = 'Ingen giltig färg har angivits för standardfärgen nedan';
 $string['numberofsections'] = 'Antal sektioner i kursen';
 $string['ok'] = 'OK';
@@ -302,21 +295,6 @@ $string['problemcourses'] = 'Problemkurser';
 $string['problemcoursesintro'] = 'Följande kurser har sektionsnummer som är högre än förväntat. Använd knapparna nedan för att lösa problemet.';
 $string['progress'] = 'Förlopp';
 $string['reactivate'] = 'återaktivera';
-$string['register'] = 'Registrera';
-$string['registeragreeprivacy'] = 'Jag godkänner pluginutvecklarens {$a->privacypolicylink}';
-$string['registerclicktocomplete'] = 'Klicka på OK för att slutföra processen';
-$string['registeredthanks'] = 'Din pluginmodul har registrerats. Tack!';
-$string['registeremailno'] = 'Nej, jag vill inte få E-post';
-$string['registeremailyes'] = 'Ja, jag vill få information om uppdateringar och annat som rör Panelpluginmodulen';
-$string['registerintro1'] = 'Vi vill gärna behålla kontakten! När du registrerar dig';
-$string['registerintro2'] = 'stödjer du vidareutvecklingen av denna pluginmodul';
-$string['registerintro3'] = 'du går information om viktiga uppdateringar och planerade utvecklingsaktiviteter';
-$string['registerintro4'] = 'vi kan ta reda på mer om vad du vill att den här pluginmodulen ska kunna göra.';
-$string['registerintro5'] = 'Dina uppgifter kommer att hållas privata av utvecklaren enligt integritetspolicyn som länkas till nedan. Tack för ditt stöd!';
-$string['registermissingemail'] = 'Vänligen fyll i din e-postadress (du har valt "Ja" för e-post nedan)';
-$string['registerpickemailpref'] = 'Välj E-postinställningar';
-$string['registerpolicyagreedlinktext'] = 'Sekretess- och personuppgiftspolicy';
-$string['registrationdeferred'] = 'Tack! Vi försöker registrera din pluginmodul (detta är ej slutfört ännu).';
 $string['reopenlastsection'] = 'Återöppna senast besökta panel';
 $string['reopenlastsection_desc'] = 'När det är markerat öppnas det senast besökta avsnittet om användaren besöker kursen på nytt';
 $string['resetallcoursecolours'] = 'Återställ alla kursfärger';
@@ -326,7 +304,6 @@ $string['restorefailed'] = 'Återställningen misslyckades';
 $string['restoreincorrectsections'] = '<strong>Fel:</strong> Kan inte inte slutföra eftersom källkursen innehåller felaktigt numrerade avsnitt (t.ex. att avsnittsnumret ({$a->sectionnum}) är högre än det högsta tillåtna ({$a->maxallowed}). Försök att utesluta eller ta bort avsnitt med höga tal.';
 $string['restoretoomanysections'] = '<strong>Fel:</strong> Det går inte att säkerhetskopiera eller återställa eftersom för många kursavsnitt ingår ({$a->numsections}) och detta är mer än tillåtet ({$a->maxallowed}). Försök att utesluta eller ta bort vissa avsnitt.';
 $string['revealcontents'] = 'Visa panelinnehåll';
-$string['scheduleddeleteemptysections'] = 'En aktivitet för att ta bort tomma avsnitt från kursen har schemalagts. Kom tillbaka senare.';
 $string['section0name'] = 'Allmänt';
 $string['sectionerrorstring'] = 'Din session har löpt ut. Uppdatera sidan.';
 $string['sectionerrortitle'] = 'Kunde inte ladda innehåll';
@@ -377,7 +354,5 @@ $string['usejsnavforsinglesection'] = 'Använd JavaScript-navigering för en-sek
 $string['usejsnavforsinglesection_desc'] = 'När detta är markerat kommer alla samtal för en enda avsnittssida (&section=xx) att hanteras med JavaScript, genom att starta animerad i kursens huvudsida, animerad för att öppna på det begärda avsnittet via JS, i stället för att ringa den gamla php-sidan med en sektion';
 $string['usesubtilesseczero'] = 'Använd underpaneler i översta sektionen';
 $string['usesubtilesseczero_help'] = 'Om det här alternativet är markerat kommer underpaneler naturligtvis att användas i det övre avsnittet och inom alla paneler. Endast tillgängligt om du använder underpaneler i kursen totalt sett.  Detta eftersom underplattorna tar upp mycket utrymme högst upp i kursen. Det kan vara bättre att lämna detta omarkerat, så att alla objekt i det övre avsnittet visas i standardlisteformat i stället.';
-$string['usetooltips'] = 'Använd JavaScript-verktygstips';
-$string['usetooltips_desc'] = 'Använda JavaScript-verktygstips när användaren hovrar över vissa objekt, t.ex. kompletteringsrutor, paneler för kakelinnehåll';
 $string['version'] = 'Version {$a}';
 $string['width'] = 'bredd';

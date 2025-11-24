@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'files', language 'nl', version '4.4'.
+ * Strings for component 'files', language 'nl', version '4.5'.
  *
  * @package     files
  * @category    string
@@ -43,3 +43,24 @@ $string['privacy:metadata:files:source'] = 'De bron van het bestand';
 $string['privacy:metadata:files:timecreated'] = 'Het tijdstip waarop het bestand is gemaakt';
 $string['privacy:metadata:files:timemodified'] = 'Het tijdstip waarop het bestand voor het laatst is gewijzigd';
 $string['privacy:metadata:files:userid'] = 'De gebruiker die het bestand heeft gemaakt';
+$string['redactor'] = 'Bestandsredactie';
+$string['redactor:exifremover'] = 'EXIF verwijderen';
+$string['redactor:exifremover:emptyremovetags'] = 'Verwijder tags kan niet leeg zijn!';
+$string['redactor:exifremover:enabled'] = 'EXIF verwijderen inschakelen';
+$string['redactor:exifremover:enabled_desc'] = 'Standaard ondersteunt de EXIF-verwijderaar enkel JPG-bestanden met PHP, GD of ExifTool als dit geconfigureerd is. PHP GD gebruiken vermindert de kwaliteit van de afbeelding .
+
+Om de performantie van de EXIF-verwijderaar te vergroten kun je de ExifTool-instellingen hier onder aanpassen.
+
+Meer informatie over het installeren van ExifTool kun je vinden op {$a->link}';
+$string['redactor:exifremover:failedprocessexiftool'] = 'Redactie mislukt: kon bestand niet verwerken met ExifTool.';
+$string['redactor:exifremover:failedprocessgd'] = 'Redactie mislukt: kon bestand niet verwerken met PHP GD.';
+$string['redactor:exifremover:heading'] = 'ExifTool';
+$string['redactor:exifremover:mimetype'] = 'Ondersteunde MIME-types';
+$string['redactor:exifremover:mimetype_desc'] = 'Om nieuwe MIME-types toe te voegen met je er voor zorgen dat ze bij de <a href="./tool/filetypes/index.php">Bestandstypes</a> staan.';
+$string['redactor:exifremover:removetags'] = 'De EXIF-tag zal verwijderd worden';
+$string['redactor:exifremover:removetags_desc'] = 'De EXIF-tags die verwijderd moeten worden.';
+$string['redactor:exifremover:tag:all'] = 'Alle';
+$string['redactor:exifremover:tag:gps'] = 'Enkel GPS';
+$string['redactor:exifremover:tooldoesnotexist'] = 'Redactie mislukt: ExifTool bestaat niet!';
+$string['redactor:exifremover:toolpath'] = 'Pad naar ExifTool';
+$string['redactor:exifremover:toolpath_desc'] = 'Om de ExifTool te kunnen gebruiken, moet je het pad naar het uitvoerbaar bestand van de ExifTool geven.';

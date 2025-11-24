@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'es', version '4.4'.
+ * Strings for component 'lesson', language 'es', version '4.5'.
  *
  * @package     lesson
  * @category    string
@@ -160,7 +160,7 @@ $string['customscoring'] = 'Puntuación personalizada';
 $string['customscoring_help'] = 'Si está habilitada, se puede dar a cada respuesta una puntuación numérica (positiva o negativa).';
 $string['deadline'] = 'Fecha final';
 $string['defaultessayresponse'] = 'Su ensayo será calificado por su profesor.';
-$string['deleteallattempts'] = 'Eliminar todos los intentos de resolver la lección';
+$string['deleteallattempts'] = 'Todos los intentos de resolver la lección';
 $string['deletedefaults'] = 'Eliminada {$a} x lección por defecto';
 $string['deletedpage'] = 'Página eliminada';
 $string['deletepagenamed'] = 'Borrar página: {$a}';
@@ -552,8 +552,8 @@ $string['rank'] = 'Ranking';
 $string['rawgrade'] = 'Calificación en bruto';
 $string['receivedcredit'] = 'Crédito recibido';
 $string['redisplaypage'] = 'Volver a mostrar página';
-$string['removeallgroupoverrides'] = 'Eliminar todas las excepciones de grupo';
-$string['removealluseroverrides'] = 'Eliminar todas las excepciones de usuario';
+$string['removeallgroupoverrides'] = 'Todas las excepciones de grupo';
+$string['removealluseroverrides'] = 'Todas las excepciones de usuario';
 $string['report'] = 'Informe';
 $string['reports'] = 'Informes';
 $string['response'] = 'Comentario';

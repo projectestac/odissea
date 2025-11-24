@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'zh_cn', version '4.4'.
+ * Strings for component 'assign', language 'zh_cn', version '4.5'.
  *
  * @package     assign
  * @category    string
@@ -70,6 +70,18 @@ $string['assign:viewgrades'] = '查看成绩';
 $string['assign:viewownsubmissionsummary'] = '查看自己的提交摘要';
 $string['assignfeedback'] = '反馈插件';
 $string['assignfeedbackpluginname'] = '反馈插件';
+$string['assignmentduedigesthtml'] = '<p>嗨 {$a->firstname},</p>
+<p>以下作业的截止日期是 <strong>{$a->duedate}</strong>.</p>
+{$a->digest}';
+$string['assignmentduedigestitem'] = '<strong>{$a->assignmentname}</strong> 在课程 {$a->coursename}<br/>
+<strong>到期: {$a->duetime}</strong><br/>
+<a href="{$a->url}" aria-label="转到{$a->assignmentname}">转到活动</a>';
+$string['assignmentduedigestsubject'] = '您还有7天要交作业';
+$string['assignmentduesoonhtml'] = '<p>嗨{$a->firstname}，</p>
+<p>课程 {$a->coursename} 中的作业 <strong>{$a->assignmentname}</strong> 即将到期。</p>
+<p><strong>截止日期：{$a->duedate}</strong></p>
+<p><a href="{$a->url}">转到活动</a></p>';
+$string['assignmentduesoonsubject'] = '截止日期为 {$a->duedate}：{$a->assignmentname}';
 $string['assignmentisdue'] = '作业到期';
 $string['assignmentmail'] = '{$a->grader}已经给您的作业“{$a->assignment}”提供了一些反馈
 
@@ -79,6 +91,12 @@ $string['assignmentmail'] = '{$a->grader}已经给您的作业“{$a->assignment
 $string['assignmentmailhtml'] = '<p>{$a->grader}已经给您的作业“<i>{$a->assignment}</i>”，提供了一些反馈。</p><p>您可以看到它附加在您的<a href="{$a->url}">作业</a>。</p>';
 $string['assignmentmailsmall'] = '{$a->grader}已经给您的作业“{$a->assignment}”提供了一些反馈，您可以看到它附加在您的作业';
 $string['assignmentname'] = '作业名称';
+$string['assignmentoverduehtml'] = '<p>嗨{$a->firstname}，</p>
+<p>课程 {$a->coursename} 中的 <strong>{$a->assignmentname}</strong> 应于 <strong>{$a->duedate}</strong> 到期。</p>
+<p>您可能仍然可以提交作业{$a->cutoffsnippet}，但您的提交将被标记为迟到。</p>
+<p><a href="{$a->url}">转到活动</a></p>';
+$string['assignmentoverduehtmlcutoffsnippet'] = '<strong>by {$a->cutoffdate}</strong>';
+$string['assignmentoverduesubject'] = '逾期：{$a->assignmentname}';
 $string['assignmentplugins'] = '作业插件';
 $string['assignmentsperpage'] = '每页作业数';
 $string['assignsubmission'] = '提交插件';
@@ -87,15 +105,19 @@ $string['assigntimeleft'] = '剩余时间';
 $string['attemptheading'] = '尝试 {$a->attemptnumber}：{$a->submissionsummary}';
 $string['attempthistory'] = '先前的尝试';
 $string['attemptnumber'] = '尝试数';
-$string['attemptreopenmethod'] = '额外的尝试';
-$string['attemptreopenmethod_help'] = '此设置决定了学生是否可以对作业进行额外的尝试。对于每次尝试，成绩和反馈都会被保存下来，教师和学生都可以查看。可用的选项包括：
+$string['attemptreopenmethod'] = '尝试授权';
+$string['attemptreopenmethod_automatic'] = '自动地';
+$string['attemptreopenmethod_automatic_help'] = '每次尝试后，将自动授予下一次尝试。';
+$string['attemptreopenmethod_help'] = '此设置控制学生尝试此作业的权限。对于每次尝试，成绩和反馈都会被保存，教师和学生都可以查看。可用选项包括：
 
-* 从不 - 只能尝试一次。
-* 手动 - 教师可以允许其他尝试。
-* 自动直到通过 - 允许自动进行其他尝试，直到学生达到本作业成绩册中设定的通过分数。';
+* 手动 - 每次尝试后，您可以通过“提交”页面或“评分器”页面授予下一次尝试。
+* 自动 - 每次尝试后，将自动授予下一次。
+* 自动直到通过 - 每次尝试后，下一次将自动授予，直到学生达到及格分数。';
 $string['attemptreopenmethod_manual'] = '手动';
+$string['attemptreopenmethod_manual_help'] = '每次尝试后，您可以通过“提交”页面或“评分器”页面授予下一次尝试。';
 $string['attemptreopenmethod_none'] = '从不';
 $string['attemptreopenmethod_untilpass'] = '自动开启直到及格';
+$string['attemptreopenmethod_untilpass_help'] = '每次尝试后，下一次将自动授予，直到学生达到及格分数。';
 $string['attemptsettings'] = '尝试设置';
 $string['availability'] = '可用性';
 $string['back'] = '后退';
@@ -109,18 +131,24 @@ $string['batchoperationconfirmreverttodraft'] = '将选定的作业退回到草�
 $string['batchoperationconfirmsetmarkingallocation'] = '为所有选定的作业设置批改分配吗？';
 $string['batchoperationconfirmsetmarkingworkflowstate'] = '为所有选定的作业设置批改工作流程状态吗？';
 $string['batchoperationconfirmunlock'] = '解锁所有选定的作业吗？';
-$string['batchoperationlock'] = '锁定作业';
-$string['batchoperationreverttodraft'] = '退回作业到草稿';
+$string['batchoperationdownloadselected'] = '下载';
+$string['batchoperationgrantextension'] = '扩展';
+$string['batchoperationlock'] = '锁定';
+$string['batchoperationremovesubmission'] = '删除';
+$string['batchoperationreverttodraft'] = '退回草稿';
 $string['batchoperationsdescription'] = '对选中的各项…';
-$string['batchoperationunlock'] = '解锁作业';
+$string['batchoperationsetmarkingallocation'] = '分配标记';
+$string['batchoperationsetmarkingworkflowstate'] = '改变标记状态';
+$string['batchoperationunlock'] = '解锁';
 $string['batchsetallocatedmarker'] = '为{$a}位选定的用户分配批改人。';
 $string['batchsetmarkingworkflowstateforusers'] = '为{$a}位选定的用户设置批改工作流程状态。';
 $string['beginassignment'] = '开始分配';
 $string['blindmarking'] = '匿名提交';
 $string['blindmarking_help'] = '匿名提交会向评分者隐藏学生的身份。一旦提交或评分与此作业相关，匿名提交的设置将被锁定。';
-$string['blindmarkingenabledwarning'] = '此活动已启用盲批。在通过评分操作菜单显示学生身份之前，成绩不会添加到成绩册中。';
+$string['blindmarkingenabledwarning'] = '此活动已启用匿名提交。在通过“操作”菜单显示学生身份之前，成绩不会添加到成绩簿中。';
 $string['cachedef_overrides'] = '用户和组覆盖信息';
 $string['calendardue'] = '{$a} 已到期';
+$string['calendarextension'] = '{$a} 到期（扩展）';
 $string['calendargradingdue'] = '{$a} 等待评分中';
 $string['caneditsubmission'] = '您可以编辑您的提交，并在时间限制到期后提交，但它将被标记为延迟。';
 $string['changefilters'] = '变更过滤器';
@@ -156,11 +184,15 @@ $string['cutoffdate_help'] = '如果设置，则该作业将在此日期之后�
 $string['cutoffdatecolon'] = '截止日期：{$a}';
 $string['cutoffdatefromdatevalidation'] = '截止日期不能早于允许提交日期。';
 $string['cutoffdatevalidation'] = '截止日期不能早于到期日期。';
+$string['defaultgradescale'] = '成绩等级';
+$string['defaultgradescale_help'] = '新作业的默认评分等级。仅提供标准等级。';
+$string['defaultgradetype'] = '成绩类型';
+$string['defaultgradetype_help'] = '创建新作业时要使用的默认成绩类型';
 $string['defaultlayout'] = '恢复默认的布局';
 $string['defaultsettings'] = '默认的作业设置';
 $string['defaultsettings_help'] = '这些设置定义所有新作业的默认设置。';
 $string['defaultteam'] = '默认小组';
-$string['deleteallsubmissions'] = '删除所有作业';
+$string['deleteallsubmissions'] = '所有的提交';
 $string['description'] = '描述';
 $string['disabled'] = '已禁用';
 $string['downloadall'] = '下载所有作业';
@@ -223,6 +255,8 @@ $string['expandreviewpanel'] = '展开检查面板';
 $string['extensionduedate'] = '延长到期日期';
 $string['extensionduedatecurrent'] = '当前延期到期日';
 $string['extensionduedatenone'] = '无';
+$string['extensionduedaterange'] = '{$a->earliest} 和 {$a->latest} 之间的变化';
+$string['extensionduedatewithout'] = '没有当前扩展名的用户 :{$a}';
 $string['extensionnotafterduedate'] = '延期日期必须在到期日期后面';
 $string['extensionnotafterfromdate'] = '延期日期必须在允许提交日期后面';
 $string['feedback'] = '反馈';
@@ -245,6 +279,7 @@ $string['feedbacksettings'] = '反馈设置';
 $string['feedbacktypes'] = '反馈类型';
 $string['filesubmissions'] = '文件作业';
 $string['filter'] = '过滤器';
+$string['filterall'] = '全部';
 $string['filterdraft'] = '草稿';
 $string['filtergrantedextension'] = '准予延期';
 $string['filternone'] = '没有过滤器';
@@ -255,6 +290,7 @@ $string['fixrescalednullgrades'] = '此作业包含一些错误成绩。您可�
 $string['fixrescalednullgradesconfirm'] = '您确定要修正错误的成绩吗?所有受影响的成绩会被移除。这可能会影响课程总成绩。';
 $string['fixrescalednullgradesdone'] = '成绩已修正。';
 $string['gradeabovemaximum'] = '成绩必须小于等于{$a}。';
+$string['gradeactions'] = '成绩操作';
 $string['gradebelowzero'] = '成绩必须大于等于0。';
 $string['gradebreakdown'] = '等级明细';
 $string['gradecanbechanged'] = '允许更改成绩';
@@ -299,6 +335,7 @@ $string['hidegrader_help'] = '如果启用，则不会显示任何为作业评�
 请注意，此设置对评分页上的评论框无效。';
 $string['hideshow'] = '隐藏 / 显示';
 $string['inactiveoverridehelp'] = '* 由于用户对活动的访问受到限制，因此该覆盖无效。这可能是由于小组或角色分配，其他访问限制或活动被隐藏。';
+$string['includesuspendedparticipants'] = '包括被停用的参与者';
 $string['indicator:cognitivedepth'] = '作业认知深度';
 $string['indicator:cognitivedepth_help'] = '该指标是基于学生在一项作业活动中达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '作业认知深度';
@@ -331,6 +368,7 @@ $string['markingallocation'] = '使用批改分配';
 $string['markingallocation_help'] = '如果启用，与批改工作流程一起，批改人可以被分配给特定的学生。';
 $string['markinganonymous'] = '允许在匿名评分时发布部分成绩';
 $string['markinganonymous_help'] = '如果与匿名提交和评分工作流程一起启用，则允许在匿名评分时发布部分成绩';
+$string['markingstate'] = '评分状态';
 $string['markingworkflow'] = '使用批改工作流程';
 $string['markingworkflow_help'] = '如果启用，分数将经过一系列工作流程阶段，然后公布给学生。这允许多轮批改，并允许分数在同一时间公布给所有学生。';
 $string['markingworkflowstate'] = '批改工作流程状态';
@@ -348,12 +386,15 @@ $string['markingworkflowstatenotmarked'] = '未批改';
 $string['markingworkflowstatereadyforrelease'] = '准备公布';
 $string['markingworkflowstatereadyforreview'] = '批改完成';
 $string['markingworkflowstatereleased'] = '已公布';
-$string['maxattempts'] = '最多尝试';
+$string['maxattempts'] = '允许的尝试次数';
 $string['maxattempts_help'] = '学生能够尝试作业的最多次数。超过此数目后，作业不再重新开启。';
 $string['maxgrade'] = '最高分';
 $string['maxperpage'] = '每页最大作业数';
 $string['maxperpage_help'] = '评分人可以在作业评分页面中显示的最大作业数。此设置对于防止参与人众多的课程超时很有用。';
+$string['messageprovider:assign_due_digest'] = '7天内提交作业通知';
+$string['messageprovider:assign_due_soon'] = '任务即将到期通知';
 $string['messageprovider:assign_notification'] = '作业通知';
+$string['messageprovider:assign_overdue'] = '作业逾期通知';
 $string['modulename'] = '作业';
 $string['modulename_help'] = '作业活动模块允许教师布置作业，收集作品并提供成绩和反馈。
 
@@ -388,6 +429,7 @@ $string['noteamgrader'] = '您不是任何小组的成员 ，因此无法提交�
 $string['notgraded'] = '未评分';
 $string['notgradedyet'] = '还未评分';
 $string['notifications'] = '通知';
+$string['notifystudents'] = '通知学生';
 $string['nouseroverrides'] = '当前没有用户覆盖。';
 $string['nousers'] = '没有用户';
 $string['nousersselected'] = '没有选定的用户';
@@ -457,8 +499,8 @@ $string['quickgradingchangessaved'] = '成绩更改已保存';
 $string['quickgradingresult'] = '快速评分';
 $string['recordid'] = '标识符';
 $string['relativedatessubmissiontimeleft'] = '为每个学生计算';
-$string['removeallgroupoverrides'] = '删除所有小组覆盖';
-$string['removealluseroverrides'] = '删除所有用户覆盖';
+$string['removeallgroupoverrides'] = '所有小组覆盖';
+$string['removealluseroverrides'] = '所有用户覆盖';
 $string['removesubmission'] = '移除作业';
 $string['removesubmissionconfirm'] = '您确定要删除该作业数据吗?';
 $string['removesubmissionconfirmforstudent'] = '您确定要删除学生{$a}的作业数据吗？';
@@ -495,6 +537,9 @@ $string['selectlink'] = '选择…';
 $string['selectuser'] = '选择 {$a}';
 $string['sendlatenotifications'] = '迟交作业时通知评分人';
 $string['sendlatenotifications_help'] = '如果启用，评分人（通常就是教师）会在学生迟交作业时收到一个消息。消息的发送方式可配置。';
+$string['sendnotificationduedatesoon'] = '通知用户即将到来的分配截止日期';
+$string['sendnotificationduedigest'] = '通知用户在7天内到期的作业';
+$string['sendnotificationoverdue'] = '通知用户已过期的作业';
 $string['sendnotifications'] = '提交作业时通知评分人';
 $string['sendnotifications_help'] = '如果启用，则评分人（通常是老师）会在学生提交作业时收到一条通知消息，不管是提前、按时，还是迟交均会收到。消息的发送方式可配置。';
 $string['sendstudentnotifications'] = '通知学生';
@@ -512,6 +557,7 @@ $string['showrecentsubmissions'] = '显示最近的作业';
 $string['status'] = '状态';
 $string['studentnotificationworkflowstateerror'] = '批改工作流程状态必须是”已公布“才通知学生。';
 $string['submission'] = '作业';
+$string['submissionactions'] = '提交动作';
 $string['submissionattachments'] = '仅在提交期间显示文件';
 $string['submissionattachments_help'] = '勾选该框以仅在提交页面上显示文件。否则，文件将显示在分配和提交页面上。';
 $string['submissioncopiedhtml'] = '<p>您已经为“<i>{$a->assignment}</i>”复制了一份先前的作业“。</p><p>您可以看到您的<a href="{$a->url}">作业</a>状态。</p>';
@@ -626,6 +672,7 @@ $string['viewfeedbackforuser'] = '查看用户反馈：{$a}';
 $string['viewfull'] = '查看全部';
 $string['viewfullgradingpage'] = '打开完整评分页面来提供反馈';
 $string['viewgradebook'] = '查看成绩册';
+$string['viewgrader'] = '查看评分人';
 $string['viewgrading'] = '查看所有作业';
 $string['viewgradingformforstudent'] = '查看学生（ID={$a->id}，姓名={$a->fullname}）的评分页面。';
 $string['viewownsubmissionform'] = '查看自己的提交作业页面。';

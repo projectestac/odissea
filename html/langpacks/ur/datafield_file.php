@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_file', language 'ur', version '4.4'.
+ * Strings for component 'datafield_file', language 'ur', version '4.5'.
  *
  * @package     datafield_file
  * @category    string

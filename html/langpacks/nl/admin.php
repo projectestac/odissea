@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'nl', version '4.4'.
+ * Strings for component 'admin', language 'nl', version '4.5'.
  *
  * @package     admin
  * @category    string
@@ -282,7 +282,7 @@ $string['configenablecalendarexport'] = 'Exporteren of abonneren op kalenders in
 $string['configenablecomments'] = 'Commentaren inschakelen';
 $string['configenablecourserequests'] = 'Indien ingeschakeld kan elke gebruiker met de juiste rechten  (moodle/course:request) nieuwe cursussen aanvragen. Deze mogelijkheid is standaard niet toegestaan voor alle standaard rollen. Ze moet toegepast worden in de systeem- of categorie-context';
 $string['configenabledevicedetection'] = 'Maakt het detecteren van telefoons, smartphones, tabletcomputers of andere standaardapparatuur (desktops, laptops enz) mogelijk voor het toepassen van thema\'s en andere functies.';
-$string['configenablemobilewebservice'] = 'Schakel de mobiele service in voor de officiële Moodle app of voor andere toepassingen die dat nodig hebben. Lees voor meer informatie {$a}';
+$string['configenablemobilewebservice'] = 'Mobiele webservices zijn vereist voor de Moodle app. Als je site HTTPS gebruikt, dan zijn deze standaard ingeschakeld. Lees voor meer informatie {$a}';
 $string['configenablerssfeeds'] = 'Met deze instelling maak je RSS-feeds mogelijk voor functies over de hele site, zoals blogs, databanken, forums en woordenlijsten. Merk op dat RSS ook moet ingeschakeld worden op het niveau van de activiteitsmodule.';
 $string['configenablerssfeedsdisabled'] = 'Dit is niet beschikbaar omdat RSS voor heel de site is uitgeschakeld. Om RSS in te schakelen ga je naar Configureer variabelen onder Beheer Configuratie.';
 $string['configenablerssfeedsdisabled2'] = 'RSS-feeds zijn uitgeschakeld op site-niveau. Je moet ze inschakelen bij geavanceerd in het site-beheer.';
@@ -310,7 +310,7 @@ $string['configfrontpageloggedin'] = 'De hierboven gekozen items zullen op de st
 $string['configfullnamedisplay'] = 'Deze instelling bepaalt hoe de volledige namen getoond worden. De standaardwaarde, "language", laat het over aan de string "fullnamedisplay" in het huidige taalpakket. Sommige talen hebben verschillende conventies voor het tonen van namen.
 
 Voor de meeste eentalige sites is de beste instelling de standaardinstelling, nl "firstname lastname", maar je kunt ervoor kiezen de achternaam te verbergen. Er kunnen plaatshouders gebruikt worden, zoals firstname, lastname, firstnamephonetic, lastnamephonetic, middlename en alternatename.';
-$string['configgeoipfile'] = 'Plaats van het GeoLite2 City binair data bestand. Dit bestand is geen deel van de Moodle-distributie en moet apart verkregen worden van  <a href="https://www.maxmind.com/">MaxMind</a>. Je kunt ofwel een commerciële versie bekomen of de gratis versie gebruiken. Je zult moeten registreren om het City databankbestand te kunnen downloaden, wat je kan doen op <a href="https://dev.maxmind.com/geoip/geoip2/geolite2/" >https://dev.maxmind.com/geoip/geoip2/geolite2/</a>. Eens je geregistreerd hebt en heb bestand gedownload hebt, kun je het unzippen in de map "{$a}" op je server.';
+$string['configgeoipfile'] = 'Plaats van het GeoIP City binair data bestand. Dit bestand is geen deel van de Moodle-distributie en moet apart verkregen worden van  <a href="https://www.maxmind.com/">MaxMind</a>. Je kunt ofwel een commerciële versie bekomen of de gratis versie gebruiken. Je zult moeten registreren om het City databankbestand te kunnen downloaden, wat je kan doen op <a href="https://dev.maxmind.com/geoip/geoip2/geolite2/" >https://dev.maxmind.com/geoip/geoip2/geolite2/</a>. Eens je geregistreerd bent en het bestand gedownload hebt, kun je het unzippen in de map "{$a}" op je server.';
 $string['configgetremoteaddrconf'] = 'Als je server zich achter een reverse proxy bevindt, dan kun je deze instelling gebruiken om te specifiëren welke HTTP headers vertrouwd kunnen worden dat ze het IP-adres van de client bevatten. De headers worden in volgorde gelezen. De eerste die gevonden wordt, word gebruikt.';
 $string['configgradebookroles'] = 'Deze instelling bepaalt wie er in de cijferlijsten verschijnt. Gebruikers moeten minstens één van deze rollen hebben om in de cijferlijsten voor die cursus te verschijnen.';
 $string['configgradeexport'] = 'Kies welke formaten je wil om je punten te exporteren. De gekozen plugins worden dan ingesteld en gebruiken een "laatst geëxporteerd veld" voor elk cijfer. Dit kan er bijvoorbeeld voor zorgen dat geëxporteerde records geïdentificeerd worden als nieuw of aangepast. Als je niet zeker bent van deze instelling, laat dan alles staan zonder vinkje.';
@@ -655,6 +655,7 @@ $string['enroladminnewcourse_help'] = 'Wanneer een beheerder een nieuwe cursus m
 $string['enrolinstancedefaults'] = 'Aanmeldingsstandaarden';
 $string['enrolinstancedefaults_desc'] = 'Standaard aanmeldingsinstellingen in nieuwe cursussen.';
 $string['enrolmultipleusers'] = 'Gebruikers aanmelden';
+$string['ensureauroraversion'] = 'Je site draait op de Amazon Aurora-database-engine. De MySQL-versie in Amazon Aurora moet compatibel zijn met de Moodle-versie die je installeert of waarnaar je een upgrade uitvoert. Controleer de compatibiliteit in <a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.30Updates.html">Database-engine-updates voor Amazon Aurora MySQL versie 3</a>.';
 $string['entitytasklog'] = 'Taak log';
 $string['environment'] = 'Omgeving';
 $string['environmenterrortodo'] = 'Je moet all de problemen over de installatie-omgeving die hierboven gevonden zijn, oplossen. Ga pas dan verder met het installeren van deze Moodleversie.';
@@ -725,7 +726,15 @@ $string['fullnamedisplay'] = 'Volledige naam opmaak';
 $string['fullnamedisplayprivate'] = 'Volledige naam opmaak - privé';
 $string['gdrequired'] = 'De GD-extentie is vereist door Moodle voor conversie van afbeeldingen';
 $string['generalsettings'] = 'Algemene instellingen';
-$string['geoipfile'] = 'GeoLite2 City MaxMind DB';
+$string['geoipdbedition'] = 'GeoIP Database editie';
+$string['geoipdbedition_desc'] = 'Selecteer de editie van de GeoIP database om te downloaden. Let erop dat je voor de GeoIP2-City database een geldige betaalde licentie nodig hebt.';
+$string['geoipfile'] = 'GeoIP City DB';
+$string['geoipmaxmindaccid'] = 'MaxMind account ID';
+$string['geoipmaxmindaccid_desc'] = 'Het account ID van het account aangemaakt voor de MaxMind API service.';
+$string['geoipmaxmindlicensekey'] = 'MaxMind licentiesleutel';
+$string['geoipmaxmindlicensekey_desc'] = 'De licentiesleutel van het account aangemaakt voor de MaxMind API service.';
+$string['geopluginapikey'] = 'GeoPlugin API-sleutel';
+$string['geopluginapikey_desc'] = 'De API-sleutel die wordt gebruikt om toegang te krijgen tot de GeoPlugin-service. Haal uw sleutel op van <a href="https://www.geoplugin.com/" target="_blank">geoplugin.com</a>.';
 $string['getremoteaddrconf'] = 'IP-adres in de logs';
 $string['globalsearch'] = 'Globaal zoeken';
 $string['globalsearchmanage'] = 'Beheer globaal zoeken';
@@ -737,7 +746,7 @@ $string['gradebookroles'] = 'Rollen in cijferlijst';
 $string['gradeexport'] = 'Primaire cijferexportwijze';
 $string['gradeexportdefault'] = 'Standaard exportmethode voor cijfers';
 $string['gravatardefaulturl'] = 'Gravatar standaard afbeeldings URL';
-$string['gravatardefaulturl_help'] = 'Gravatar heeft een standaard afbeelding nodig om te tonen als het geen afbeelding voor een bepaalde gebruiker kan vinden. Geef een volledige URL voor een afbeelding. Als je deze instelling leeg laat, dan zal Moodle proberen de meest geschikte afbeelding voor de pagina die je aan het bekijken bent te kiezen. Merk ook op dat Gravatar een aantal codes heeft waarmee <a href="https://en.gravatar.com/site/implement/images/#default-image">standaardafbeeldingen gegenereerd kunnen worden</a> .';
+$string['gravatardefaulturl_help'] = 'Gravatar heeft een standaard afbeelding nodig om te tonen als het geen afbeelding voor een bepaalde gebruiker kan vinden. Geef een volledige URL voor een afbeelding. Codes waarmee  standaardafbeeldingen gegenereerd kunnen worden, zijn beschikbaar op <a href="https://docs.gravatar.com/api/avatars/images/">Gravatar for Developers - Avatar Requests</a>.';
 $string['group_customfield'] = 'Aangepaste velden voor groepen';
 $string['groupenrolmentkeypolicy'] = 'Beleid voor aanmeldingssleutel groepen';
 $string['groupenrolmentkeypolicy_desc'] = 'Indien ingeschakeld worden de aanmeldingssleutels voor groepen gecontroleerd tegen het wachtwoordbeleid zoals opgegeven in de instellingen hierboven.';
@@ -787,6 +796,9 @@ $string['httpsecurity'] = 'HTTP Security';
 $string['iconvrequired'] = 'Het installeren van de ICONV-extentie is vereist.';
 $string['igbinary322buggyversion'] = 'De php-igbinary-extensie die op de site is geïnstalleerd, kan leiden tot problemen bij het draaien met PHP 7.2. Het wordt aanbevolen om ofwel te upgraden naar php-igbinary 3.2.5 of later, of om te upgraden naar PHP 7.3 of later.';
 $string['ignore'] = 'Negeer';
+$string['importantupdates_content'] = '<p>In Moodle 5.0 zullen de activiteiten Chat en Onderzoek uit de core code worden verwijderd. Daarna zijn ze beschikbaar als plugins in de <a href="https://moodle.org/plugins/">Moodle plugins databank</a>.</p>
+<p>Als je Chat en Onderzoek op je site wilt blijven gebruiken, kun je ze als plugins installeren voordat je upgradet naar Moodle 5.0.</p>';
+$string['importantupdates_title'] = 'Belangrijke update over de activiteiten Chat en Onderzoek';
 $string['includemoduleuserdata'] = 'Ook gebruikersdata van modules';
 $string['incompatibleblocks'] = 'Niet-compatibele blokken';
 $string['incompleteunicodesupport'] = 'De huidige opzet van MySQL of MariaDB gebruikt \'utf8\'. Deze tekenset ondersteunt geen tekens van vier bytes, waaronder sommige emoji. Gebruik van deze tekens zal leiden tot een foutmelding bij het updaten van een record en informatie die naar de database wordt gezonden, kan verloren gaan. Overweeg de instellingen te wijzigen naar \'utf8mb4\'. Zie de documentatie voor aanvullende informatie.';
@@ -805,11 +817,11 @@ $string['ipblocked'] = 'Deze site is nu niet beschikbaar.';
 $string['ipblocker'] = 'IP blokkeren';
 $string['ipblockersyntax'] = 'Zet elk item op één lijn. Geldige items zijn volledige IP-adressen (zoals <b>192.168.0.1</b>, die overeenkomen met één enkele machine; gedeeltelijke IP-adressen (zoals <b>192.168</b>) die overeenkomen met alle IP-adressen die met die nummers beginnen: of CIDR notatie van IP-adressen (zoals <b>231.3.56.10/20</b>) waar een bereik van toepassing is op het laatste deel van het adres. Domeinnamen (zoals voorbeeld.com) worden niet ondersteund. Lege regels worden genegeerd en tekst die volgt na een \'#"-teken wordt genegeerd.';
 $string['iplookup'] = 'IP-adres opzoeken';
-$string['iplookupgeoplugin'] = 'De <a href="https://www.geoplugin.com">geoPlugin</a> service wordt gebruikt om geografische informatie op te zoeken. Voor meer accurate resultaten kun je beter een lokale kopie van de MaxMind GeoLite databank installeren.';
-$string['iplookupinfo'] = 'Standaard gebruikt Moodle de gratis online NetGeo server om de plaats van IP-adressen op te zoeken. Jammer genoeg wordt deze databank niet meer onderhouden en kan foute data weergeven.
-Het installeren van een lokale kopie van de gratis GeoLite2 City database van MaxMind wordt aangeraden.<br />
+$string['iplookupgeoplugin'] = 'De <a href="https://www.geoplugin.com">geoPlugin</a> service wordt gebruikt om geografische informatie op te zoeken. Voor meer accurate resultaten kun je beter een lokale kopie van de MaxMind GeoIP City databank installeren.';
+$string['iplookupinfo'] = 'Standaard gebruikt Moodle de gratis online NetGeo server om de plaats van IP-adressen op te zoeken. Deze databank wordt niet meer onderhouden en kan foute data weergeven.
+Het installeren van een lokale kopie van de gratis GeoIP City database van MaxMind wordt aangeraden.<br />
 Met een Google Maps API V3 key kun je de IP-adreslocatie tonen op een kaart van Google Maps. Je hebt hiervoor een Google account nodig en je moet een Google Maps API sleutel aanvragen. Als je geen Google Maps API V3 sleutel geeft, dan wordt de IP-locatie getoond met OpenStreetMap.';
-$string['iplookupmaxmindnote'] = 'Dit product bevat GeoLite2 data gemaakt door  MaxMind en beschikbaar van <a href="https://www.maxmind.com/">https://www.maxmind.com/</a>.';
+$string['iplookupmaxmindnote'] = 'Dit product bevat GeoIP City data gemaakt door  MaxMind en beschikbaar van <a href="https://www.maxmind.com/">https://www.maxmind.com/</a>.';
 $string['iscustomadminwarnings'] = 'Er is gedetecteerd dat je site een aangepaste admin-map gebruikt. Deze functionaliteit wordt niet meer ondersteund en zal verwijderd worden na Moodle 4.2/';
 $string['ishttpswarning'] = 'Je site gebruikt geen HTTPS. Voor een betere beveiliging en voor een verbeterde integratie met andere systemen wordt sterk aangeraden om jouw site naar HTTPS om te schakelen.';
 $string['keeptagnamecase'] = 'Hoofdletters tag-namen behouden';
@@ -842,7 +854,9 @@ $string['locationsettings'] = 'Locatie-instellingen';
 $string['locked'] = 'Geblokkeerd';
 $string['lockoutduration'] = 'Duur geblokkeerde account';
 $string['lockoutduration_desc'] = 'De geblokkeerde account wordt automatisch terug vrijgegeven na deze tijd.';
-$string['lockoutemailbody'] = 'Je account {$a->username} op {$a->sitename} is geblokkeerd na meerdere mislukte pogingen om aan te melden.
+$string['lockoutemailbody'] = 'Beste {$a->firstname},
+
+Je account  met gebruikersnaam {$a->username} op server {$a->sitename} is geblokkeerd na meerdere mislukte pogingen om aan te melden.
 
 Om je account onmiddellijk vrij te geven ga je naar volgend adres:
 
@@ -962,7 +976,6 @@ $string['moodlepartners_help'] = '<p>Moodle Partners zijn door Moodle HQ gecerti
 <a href="https://moodle.com/partners">Moodle Partner zoeken</a>';
 $string['moodleservices'] = 'Moodle services';
 $string['moodleservices_help'] = 'Haal het beste uit je Moodle leeromgeving door gebruik te maken van volgende Moodle services:';
-$string['multilangforceold'] = 'Oude multilang-syntaxis afdwingen: &lt;span&gt; zonder de class="multilang" en &lt;lang&gt;';
 $string['mustenablestats'] = 'Op deze server zijn Statistieken nog uitgeschakeld';
 $string['mycourses'] = 'Mijn cursussen';
 $string['mydashboard'] = 'Standaard startpagina van het systeem';
@@ -1195,8 +1208,8 @@ $string['registration_help'] = 'Door te registreren:
 * zul je beveiligingswaarschuwingen krijgen
 * kun je push notifications activeren in de mobiele app voor jouw site
 * draag je bij aan de Moodle statistieken over de de globale Moodle-gemeenschap.';
-$string['registrationwarning'] = 'Je site is nog niet geregistreerd.';
-$string['registrationwarningcontactadmin'] = 'Je site is nog niet geregistreerd. Gelieve contact op te nemen met je sitebeheerder.';
+$string['registrationwarning'] = 'Mis geen updates en beveiligingswaarschuwingen.';
+$string['registrationwarningcontactadmin'] = 'Je site is nog niet geregistreerd. Gelieve contact op te nemen met je sitebeheerder om de site te laten registreren, zodat belangrijke updates niet gemist worden.';
 $string['releasenoteslink'] = 'Bekijk de online <a target="_new" href="{$a}">Release Notes</a> voor informatie over deze versie van Moodle.';
 $string['rememberuserlicensepref'] = 'Onthoud de voorkeur van de gebruikerslicentie';
 $string['rememberuserlicensepref_help'] = 'Indien ingeschakeld, wordt de laatst door de gebruiker geselecteerde licentie vooraf geselecteerd bij het uploaden van een bestand in de bestandskiezer. Anders wordt de standaard sitelicentie vooraf geselecteerd.';
@@ -1377,6 +1390,7 @@ $string['stickyblockscourseview'] = 'Cursuspagina';
 $string['stickyblocksduplicatenotice'] = 'Als je hier een blok toevoegt dat al op een bepaalde pagina staat, krijg je er twee.<br />Alleen het vastgezette blok zul je niet kunnen bewerken, het tweede zul je wel kunnen bewerken.';
 $string['stickyblocksmymoodle'] = 'Mijn Moodle';
 $string['stickyblockspagetype'] = 'Te configureren paginatype';
+$string['storedprogressbarcleanuptask'] = 'Opgeslagen vorderingsbalk opruimtaak';
 $string['strictformsrequired'] = 'Strikte validatie van vereiste velden';
 $string['stripalltitletags'] = 'Verwijder HTML-tags van alle activiteitsnamen';
 $string['supportandservices'] = 'Ondersteuning en diensten';
@@ -1387,6 +1401,7 @@ $string['supportemailsubject'] = 'Verzoek om site-ondersteuning - {$a}';
 $string['supportname'] = 'Naam helpdesk';
 $string['supportpage'] = 'Link naar site-ondersteuning';
 $string['suspenduser'] = 'Schors gebruikersaccount';
+$string['swaggerui'] = 'Moodle REST API UI (SwaggerUI)';
 $string['switchlang'] = 'Wissel map voor taalbestanden';
 $string['systempaths'] = 'Systeempaden';
 $string['tablenosave'] = 'Wijzigingen in bovenstaande tabel worden automatisch bewaard.';
@@ -1477,6 +1492,7 @@ $string['taskstatscron'] = 'Achtergrondprocessen voor statistieken';
 $string['tasktagcron'] = 'Achtergrondprocessen voor tags';
 $string['tasktempfilecleanup'] = 'Verwijder oude tijdelijke bestanden';
 $string['tasktype'] = 'Type';
+$string['taskupdategeoip2file'] = 'GeoIP-bestand updaten';
 $string['tempdatafoldercleanup'] = 'Opschonen van tijdelijke bestanden, ouder dan';
 $string['templates'] = 'Sjabloon';
 $string['testoutgoingmailconf'] = 'Test configuratie uitgaande mail';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customfield', language 'ru', version '4.4'.
+ * Strings for component 'customfield', language 'ru', version '4.5'.
  *
  * @package     customfield
  * @category    string
@@ -40,10 +40,13 @@ $string['customfield'] = 'Пользовательское поле';
 $string['customfielddata'] = 'Данные пользовательских полей';
 $string['customfields'] = 'Пользовательские поля';
 $string['defaultvalue'] = 'Значение по умолчанию';
+$string['deletecategory'] = 'Удалить категорию пользовательского поля: {$a}';
+$string['deletefield'] = 'Удалить пользовательское поле: {$a}';
 $string['description'] = 'Описание';
 $string['description_help'] = 'Описание отображается под полем в форме.';
 $string['edit'] = 'Редактировать';
 $string['editcategoryname'] = 'Изменить название категории';
+$string['editfield'] = 'Редактировать пользовательское поле: {$a}';
 $string['editingfield'] = 'Обновление {$a}';
 $string['errorfieldtypenotfound'] = 'Тип поля {$a} не найден';
 $string['erroruniquevalues'] = 'Это значение уже используется.';

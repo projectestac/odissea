@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'courseformat', language 'pt', version '4.4'.
+ * Strings for component 'courseformat', language 'pt', version '4.5'.
  *
  * @package     courseformat
  * @category    string
@@ -37,8 +37,9 @@ $string['bulkedit'] = 'Ações em massa';
 $string['bulkeditingcourse'] = 'Edição em massa da disciplina: {$a}';
 $string['bulkselection'] = '{$a} selecionado';
 $string['bulkselection_plural'] = '{$a} selecionados';
-$string['cm_complete_feedback'] = '\'{$a->name}\' marcada como concluída.';
-$string['cm_complete_feedback_batch'] = 'Selecionadas {$a->count} atividades marcadas como concluídas.';
+$string['cm_add_feedback'] = '{$a->modname} adicionado.';
+$string['cm_complete_feedback'] = '\'{$a->name}\' marcada como executada.';
+$string['cm_complete_feedback_batch'] = 'Selecionadas {$a->count} atividades marcadas como executadas.';
 $string['cm_delete_feedback'] = '\'{$a->name}\' foi apagada.';
 $string['cm_delete_feedback_batch'] = 'Apagadas {$a->count} atividades selecionadas.';
 $string['cm_duplicate_feedback'] = '\'{$a->name}\' foi duplicada.';
@@ -53,13 +54,15 @@ $string['cm_show_feedback'] = '{$a->name} está a ser mostrada.';
 $string['cm_show_feedback_batch'] = 'As {$a->count} atividades selecionadas estão a ser mostradas.';
 $string['cm_stealth_feedback'] = '{$a->name} já está disponível, mas não é mostrado na página da disciplina.';
 $string['cm_stealth_feedback_batch'] = 'As {$a->count} atividades selecionadas já estão disponíveis, mas não são mostradas na página da disciplina.';
-$string['cm_uncomplete_feedback'] = '\'{$a->name}\' marcada como não concluída.';
-$string['cm_uncomplete_feedback_batch'] = 'Selecionadas {$a->count} atividades marcadas como não concluídas.';
+$string['cm_uncomplete_feedback'] = '\'{$a->name}\' marcada como não executada.';
+$string['cm_uncomplete_feedback_batch'] = 'Selecionadas {$a->count} atividades marcadas como não executada.';
 $string['cm_visiblegroups_feedback'] = 'O modo de grupo \'{$a->name}\' foi alterado para \'Grupos visíveis\'.';
 $string['cmavailability'] = 'Disponibilidade da atividade';
 $string['cmdelete_info'] = 'Irá apagar "{$a->name}" e todos os dados dos utilizadores existentes.';
+$string['cmdelete_subsectiontitle'] = 'Apagar subsecção?';
 $string['cmdelete_title'] = 'Apagar a atividade?';
 $string['cmmove_info'] = 'Mover "{$a}" para depois de';
+$string['cmmove_subsectiontitle'] = 'Mover subsecção';
 $string['cmmove_title'] = 'Mover atividade';
 $string['cmsdelete'] = 'Apagar atividades';
 $string['cmsdelete_info'] = 'Irá apagar {$a->count} atividades e todos os dados dos utilizadores existentes.';
@@ -70,15 +73,19 @@ $string['cmsmove_info'] = 'Mover {$a} atividades para depois de';
 $string['cmsmove_title'] = 'Mover atividades selecionadas';
 $string['courseindex'] = 'Índice da disciplina';
 $string['courseindexoptions'] = 'Opções do índice da disciplina';
+$string['maxsectionaddmessage'] = 'Atingiu o número máximo de secções permitidas para uma disciplina.';
 $string['nobulkaction'] = 'Nenhuma ação em massa disponível';
+$string['orphansectionwarning'] = 'Esta secção e o seu conteúdo não fazem parte da estrutura da disciplina e não são visíveis para os alunos. Para utilizar qualquer um destes conteúdos, mova-o para uma secção diferente.';
 $string['preference:coursesectionspreferences'] = 'Preferências do utilizador da secção da disciplina {$a}';
 $string['privacy:metadata:preference:coursesectionspreferences'] = 'Preferências do utilizador da secção como contraída e expandida.';
+$string['section_add_feedback'] = 'Secção adicionada.';
 $string['section_delete_feedback'] = 'Apagada a secção da disciplina \'{$a->name}\'.';
 $string['section_delete_feedback_batch'] = 'Apagadas {$a->count} secções selecionadas da disciplina.';
 $string['section_hide_feedback'] = 'Ocultada a secção da disciplina \'{$a->name}\'.';
 $string['section_hide_feedback_batch'] = 'Ocultadas {$a->count} secções selecionadas da disciplina.';
 $string['section_show_feedback'] = 'A mostrar a secção da disciplina \'{$a->name}\'.';
 $string['section_show_feedback_batch'] = 'As {$a->count} secções selecionadas da disciplina estão a ser mostradas.';
+$string['sectionaddmax'] = 'Atingiu o número máximo de secções permitidas para uma disciplina...';
 $string['sectionavailability_title'] = 'Disponibilidade da secção';
 $string['sectiondelete_info'] = 'Irá apagar "{$a->name}" e todos os dados dos utilizadores existentes.';
 $string['sectiondelete_title'] = 'Apagar a seleção?';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'groupselect', language 'ca', version '4.4'.
+ * Strings for component 'groupselect', language 'ca', version '4.5'.
  *
  * @package     groupselect
  * @category    string
@@ -128,4 +128,4 @@ $string['timeavailable_error_past_timedue'] = 'Error: no es pot posar una data p
 $string['timedue'] = 'Tanca a partir de';
 $string['timedue_error_pre_timeavailable'] = 'Error: no es pot acabar abans de la data d\'inici';
 $string['unselect'] = 'Abandona el grup {$a}';
-$string['unselectconfirm'] = 'Esteu segur que voleu abandonar el grup <em>{$a}</em>?';
+$string['unselectconfirm'] = 'Confirmeu que voleu abandonar el grup <em>{$a}</em>?';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ja', version '4.4'.
+ * Strings for component 'group', language 'ja', version '4.5'.
  *
  * @package     group
  * @category    string
@@ -50,8 +50,8 @@ $string['databaseupgradegroups'] = '現在のグループバージョン: {$a}';
 $string['defaultgrouping'] = 'デフォルトグルーピング';
 $string['defaultgroupingname'] = 'グルーピング';
 $string['defaultgroupname'] = 'グループ';
-$string['deleteallgroupings'] = 'すべてのグルーピングを削除する';
-$string['deleteallgroups'] = 'すべてのグループを削除する';
+$string['deleteallgroupings'] = 'すべてのグルーピング';
+$string['deleteallgroups'] = 'すべてのグループ';
 $string['deletegroupconfirm'] = '本当にグループ「 {$a} 」を削除してもよろしいですか?';
 $string['deletegrouping'] = 'グルーピングを削除する';
 $string['deletegroupingconfirm'] = '本当にグルーピング「 {$a} 」を削除してもよろしいですか? (グルーピング内のグループは削除されません。)';
@@ -198,8 +198,8 @@ $string['random'] = 'ランダム';
 $string['removefromgroup'] = 'グループ {$a} からユーザを削除する';
 $string['removefromgroupconfirm'] = '本当にユーザ「 {$a->user} 」をグループ「 {$a->group} 」から削除してもよろしいですか?';
 $string['removegroupfromselectedgrouping'] = 'グルーピングからグループを削除する';
-$string['removegroupingsmembers'] = 'グルーピングからすべてのグループを削除する';
-$string['removegroupsmembers'] = 'すべてのグループメンバを削除する';
+$string['removegroupingsmembers'] = 'グルーピングのすべてのグループ';
+$string['removegroupsmembers'] = 'すべてのグループメンバ';
 $string['removeselectedusers'] = '選択したユーザを削除する';
 $string['selectfromgroup'] = 'グループからメンバを選択する';
 $string['selectfromgrouping'] = 'グルーピングからメンバを選択する';

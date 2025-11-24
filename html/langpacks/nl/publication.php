@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'publication', language 'nl', version '4.4'.
+ * Strings for component 'publication', language 'nl', version '4.5'.
  *
  * @package     publication
  * @category    string
@@ -56,9 +56,6 @@ $string['completionupload'] = 'Leerling moet een bestand uploaden';
 $string['configautoimport'] = 'Als je de voorkeur hebt dat inzendingen van leerlingen automatisch worden geïmporteerd in instanties van Publicatie. Deze functie kan worden in-/uitgeschakeld voor iedere instantie van Publicatie.';
 $string['configmaxbytes'] = 'Standaard maximale grootte voor alle bestanden in de Publicatie.';
 $string['configmaxfiles'] = 'Standaard maximaal aantal toegestane bijlagen per gebruiker.';
-$string['configobtainstudentapproval'] = 'Bestanden worden pas gepubliceerd na goedkeuring van leerling en leraar.';
-$string['configobtainteacherapproval'] = 'Documenten van leerlingen zijn standaard zichtbaar voor alle andere deelnemers.';
-$string['configrequiremodintro'] = 'Schakel deze optie uit als je gebruikers niet wilt dwingen een beschrijving toe te voegen bij iedere activiteit.';
 $string['courseuploadlimit'] = 'Cursusuploadlimiet';
 $string['currentlynotapproved'] = '* Nog niet goedgekeurd of afgewezen voor publicatie.';
 $string['cutoffdate'] = 'Afsluitdatum';
@@ -85,6 +82,9 @@ $string['email:statuschange:footer'] = '</ul>';
 $string['email:statuschange:header'] = 'De publicatiestatus van de volgende bestanden voor <b>\'{$a->publication}\'</b> is gewijzigd op {$a->dayupdated} om {$a->timeupdated} door <b>{$a->username}</b>:<br /><ul>';
 $string['email:statuschange:subject'] = 'Publicatiestatus gewijzigd';
 $string['entiresperpage'] = 'Deelnemers tonen per pagina';
+$string['eventoverridecreated'] = 'Overschrijving publicatie aangemaakt';
+$string['eventoverridedeleted'] = 'Overschrijving publicatie verwijderd';
+$string['eventoverrideupdated'] = 'Overschrijving publicatie bijgewerkt';
 $string['eventpublicationapprovalchanged'] = 'Bestandsgoedkeuring Publicatie gewijzigd';
 $string['eventpublicationduedateextended'] = 'Deadline van Publicatie is uitgesteld';
 $string['eventpublicationfiledeleted'] = 'Bestand in Publicatie verwijderd';
@@ -195,7 +195,6 @@ $string['published_aftercheck'] = 'Nee, alleen na goedkeuring door een leraar';
 $string['published_immediately'] = 'Ja onmiddellijk, zonder goedkeuring door een leraar';
 $string['rejected'] = 'Afgewezen';
 $string['rejectusers'] = 'Onzichtbaar voor iedereen';
-$string['requiremodintro'] = 'Vereis activiteitsbeschrijving';
 $string['reset'] = 'Terugdraaien';
 $string['reset_userdata'] = 'Alle gegevens';
 $string['resetstudentapproval'] = 'Status terugzetten';

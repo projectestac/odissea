@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'courseformat', language 'nl', version '4.4'.
+ * Strings for component 'courseformat', language 'nl', version '4.5'.
  *
  * @package     courseformat
  * @category    string
@@ -54,8 +54,10 @@ $string['cm_stealth_feedback_batch'] = 'De geselecteerde {$a->count} activiteite
 $string['cm_visiblegroups_feedback'] = 'De groepsmodus van {$a->name} is gewijzigd naar "Zichtbare groepen".';
 $string['cmavailability'] = 'Activiteitsbeschikbaarheid';
 $string['cmdelete_info'] = 'Hiermee worden {$a->name} en alle gebruikersgegevens die het bevat verwijderd.';
+$string['cmdelete_subsectiontitle'] = 'Subsectie verwijderen?';
 $string['cmdelete_title'] = 'Activiteit verwijderen?';
 $string['cmmove_info'] = 'Verplaats {$a} na';
+$string['cmmove_subsectiontitle'] = 'Verplaats subsectie';
 $string['cmmove_title'] = 'Activiteit verplaatsen';
 $string['cmsdelete'] = 'Activiteiten verwijderen';
 $string['cmsdelete_info'] = 'Hiermee worden {$a->count} activiteiten en alle gebruikersgegevens die ze bevatten verwijderd.';
@@ -66,7 +68,9 @@ $string['cmsmove_info'] = 'Verplaats {$a} activiteiten daarnaartoe';
 $string['cmsmove_title'] = 'Verplaats geselecteerde activiteiten';
 $string['courseindex'] = 'Cursusindex';
 $string['courseindexoptions'] = 'Opties voor cursusindex';
+$string['maxsectionaddmessage'] = 'Je hebt het maximaal toegestane aantal secties voor een cursus bereikt';
 $string['nobulkaction'] = 'Geen bulkacties beschikbaar';
+$string['orphansectionwarning'] = 'Deze sectie en de inhoud ervan zijn geen deel van de cursusstructuur en is niet zichtbaar voor leerlingen. Om deze inhoud te kunnen gebruiken, moet je die verplaatsen naar een andere sectie.';
 $string['preference:coursesectionspreferences'] = 'Sectie gebruikersvoorkeuren voor cursus {$a}';
 $string['privacy:metadata:preference:coursesectionspreferences'] = 'Sectie gebruikersvoorkeuren zoals samengevouwen en uitgevouwen.';
 $string['section_delete_feedback'] = 'De cursussectie {$a->name} is verwijderd.';
@@ -75,6 +79,7 @@ $string['section_hide_feedback'] = 'De cursussectie {$a->name} is verborgen.';
 $string['section_hide_feedback_batch'] = '{$a->count}  geselecteerde cursussecties zijn verborgen.';
 $string['section_show_feedback'] = 'De cursussectie {$a->name} wordt getoond.';
 $string['section_show_feedback_batch'] = '{$a->count}  cursussecties worden getoond.';
+$string['sectionaddmax'] = 'Je hebt het maximaal toegestane aantal secties voor een cursus bereikt ...';
 $string['sectionavailability_title'] = 'Sectie beschikbaarheid';
 $string['sectiondelete_info'] = 'Dit verwijdert {$a->name} en alle activiteiten die het bevat.';
 $string['sectiondelete_title'] = 'Sectie verwijderen?';

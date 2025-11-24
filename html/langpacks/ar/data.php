@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ar', version '4.4'.
+ * Strings for component 'data', language 'ar', version '4.5'.
  *
  * @package     data
  * @category    string
@@ -29,8 +29,6 @@ $string['action'] = 'الإجراء';
 $string['actionsmenu'] = 'قائمة الإجراءات';
 $string['add'] = 'أضف مدخل';
 $string['addcomment'] = 'أضف تعليق';
-$string['addedby'] = 'مضاف من قِبل';
-$string['addentries'] = 'أضف مدخلات';
 $string['addtemplate'] = 'إضافة مظهر الإدخال';
 $string['advancedsearch'] = 'بحث متقدم';
 $string['allowcomments'] = 'السماح بالتعليقات على المصطلحات';
@@ -55,8 +53,6 @@ $string['availabletags_help'] = 'الوسوم هي عناصر نائبة في ا
 الوسوم المتواجدة في قائمة "الوسوم المتاحة" حصراً يمكن استعمالها للقالب الحالي.';
 $string['availabletodate'] = 'متاح إلى';
 $string['availabletodatevalidation'] = 'تاريخ متاح إلى لا يمكن أن يكون قبل تاريخ متاح من.';
-$string['blank'] = 'فارغ';
-$string['buttons'] = 'إجراءات';
 $string['bynameondate'] = 'حسب  {$a->name} - {$a->date}';
 $string['calendarend'] = '{$a} تُغلق';
 $string['calendarstart'] = '{$a} تُفتح';
@@ -126,13 +122,13 @@ $string['defaultfieldenclosure'] = '(الافتراضي هو لا شيء)';
 $string['defaultsortfield'] = 'اتجاه الفرز الافتراضي';
 $string['delcheck'] = 'خانة الحذف بالجملة';
 $string['delete'] = 'حذف';
-$string['deleteallentries'] = 'حذف كل المدخلات';
+$string['deleteallentries'] = 'كل المدخلات';
 $string['deletecomment'] = 'هل فعلا ترغب في حذف هذا التعليق؟';
 $string['deleteconfirm'] = 'أتريد حذف التحضير المسبق {$a}؟';
 $string['deleted'] = 'تم الحذف';
 $string['deleteentry'] = 'حذف الإدخال';
 $string['deletefield'] = 'حذف الحقل';
-$string['deletenotenrolled'] = 'إحذف مدخلات المستخدمين غير المنضمين';
+$string['deletenotenrolled'] = 'مدخلات المستخدمين غير المنضمين';
 $string['deletewarning'] = 'حذف التحضير المسبق يزيله من قائمة التحضيرات المسبقة المتاحة في كل المقررات.';
 $string['descending'] = 'تنازليا';
 $string['directorynotapreset'] = '{$a->directory}  لا يوجد تعيين مسبق: ملفات مفقودة {$a->missing_files}';
@@ -333,7 +329,6 @@ $string['nomatch'] = 'لم يتم العثور على مدخلات مطابقة!
 $string['nomaximum'] = 'لا يوجد حد أقصى';
 $string['nopreviewavailable'] = 'لا يتوفر استعراض لـ {$a}';
 $string['norecords'] = 'لا توجد مُدخلات بعد';
-$string['nosingletemplate'] = 'لم يتم تعريف قالب المعاينة المنفردة بعد';
 $string['notapproved'] = 'بانتظار الموافقة';
 $string['notapprovederror'] = 'لم تتم الموافقة على المُدخل بعد';
 $string['notemplates'] = 'لا مظاهر بعد';
@@ -356,7 +351,6 @@ $string['page-mod-data-x'] = 'أي صفحة لوحدة نشاط قاعدة ال�
 $string['pagesize'] = 'عدد المدخلات لكل صفحة';
 $string['participants'] = 'مشاركون';
 $string['picture'] = 'صورة';
-$string['pleaseaddsome'] = 'لطفاً، أنشئ بعضاً منها أدناه، أو <a href="{$a}">إختر مجموعة سبق تعريفها</a> للبدء.';
 $string['pluginadministration'] = 'إدارة نشاط قاعدة البيانات';
 $string['pluginname'] = 'قاعدة البيانات';
 $string['portfolionotfile'] = 'التصدير إلى محفظة بدلاً من ملف (csv و leap2a حصراً)';
@@ -391,7 +385,7 @@ $string['recorddeleted'] = 'تم حذف السجل';
 $string['recorddisapproved'] = 'المدخل غير موافق عليه';
 $string['recordsnotsaved'] = 'لم يتم حفظ أي إدخال، الرجاء التأكد من تنسيق الملف المرفوع.';
 $string['recordssaved'] = 'تم حفظ السجل/السجلات';
-$string['removealldatatags'] = 'إزالة كل وسوم قاعدة البيانات';
+$string['removealldatatags'] = 'كل وسوم قاعدة البيانات';
 $string['requireapproval'] = 'يتطلب الموافقة';
 $string['requireapproval_help'] = 'تنبغي الموافقة على المدخلات من قبل المعلم قبل أن تكون قابلة للمعاينة من طرف الآخرين.';
 $string['required'] = 'مطلوبة';
@@ -428,7 +422,6 @@ $string['saveaspresetmissingcapability'] = 'المستخدم ليست لديه �
 $string['savedataaspreset'] = 'حفظ كل الحقول والقوالب ونشرها كتحضير مسبق في هذ الموقع';
 $string['savesettings'] = 'حفظ الإعدادات';
 $string['savesuccess'] = 'تم الحفظ بنجاح. <a href="{$a->url}">استعراض التحضير المسبق</a>';
-$string['savetemplate'] = 'حفظ القالب';
 $string['search'] = 'بحث';
 $string['search:activity'] = 'قاعدة البيانات - معلومات النشاط';
 $string['search:entry'] = 'قاعدة البيانات - المدخلات';
@@ -460,7 +453,6 @@ $string['text'] = 'نص';
 $string['textarea'] = 'منطقة النص';
 $string['timeadded'] = 'وقت الإضافة';
 $string['timemodified'] = 'وقت التعديل';
-$string['todatabase'] = 'هذا إلى قاعدة البيانات';
 $string['type'] = 'نوع الحقل';
 $string['undefinedprocessactionmethod'] = 'لا توجد منهجية عمل محددة في البيانات المعدة مسبقاً للقيام بعمل "{$a}"';
 $string['unknown'] = 'حقل غير معروف';

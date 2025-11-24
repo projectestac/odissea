@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ar', version '4.4'.
+ * Strings for component 'group', language 'ar', version '4.5'.
  *
  * @package     group
  * @category    string
@@ -50,8 +50,8 @@ $string['databaseupgradegroups'] = 'إصدار المجموعات الآن هو 
 $string['defaultgrouping'] = 'التجميع الافتراضي';
 $string['defaultgroupingname'] = 'تجميع';
 $string['defaultgroupname'] = 'مجموعة';
-$string['deleteallgroupings'] = 'حذف كل التجميعات';
-$string['deleteallgroups'] = 'حذف كل المجموعات';
+$string['deleteallgroupings'] = 'كل التجميعات';
+$string['deleteallgroups'] = 'كل المجموعات';
 $string['deletegroupconfirm'] = 'هل أنت متأكد من رغبتك بحذف مجموعة \'{$a}\'؟';
 $string['deletegrouping'] = 'حذف التجميع';
 $string['deletegroupingconfirm'] = 'هل أنت متأكد من رغبتك بحذف التجميع "{$a}" (لن يتم حذف المجموعات داخل التجميع)';
@@ -198,8 +198,8 @@ $string['random'] = 'عشوائياً';
 $string['removefromgroup'] = 'استبعد مستخدم من المجموعة {$a}';
 $string['removefromgroupconfirm'] = 'هل تريد بالفعل إزالة المستخدم "{$a->user}" من المجموعة "{$a->group}"؟';
 $string['removegroupfromselectedgrouping'] = 'أستبعد مجموعة من التجميع';
-$string['removegroupingsmembers'] = 'إزالة كل المجموعات من التجميعات';
-$string['removegroupsmembers'] = 'إزالة كل الأعضاء من المجموعات';
+$string['removegroupingsmembers'] = 'كل المجموعات من التجميعات';
+$string['removegroupsmembers'] = 'كل الأعضاء من المجموعات';
 $string['removeselectedusers'] = 'استبعد المستخدمين المختارين من المجموعة';
 $string['selectfromgroup'] = 'حدِّد أعضاء من المجموعة';
 $string['selectfromgrouping'] = 'حدِّد أعضاء من التجميع';

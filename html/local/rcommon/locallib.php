@@ -43,7 +43,7 @@ class rcommon_level {
         global $DB;
         $emptysql = $DB->sql_isempty('rcommon_level', 'code', false, false);
         $sql = "SELECT * FROM {rcommon_level}
-            WHERE id IN (SELECT DISTINCT levelid FROM {rcommon_books} WHERE format = :format) AND NOT $emptysql ORDER BY code, name";
+                WHERE id IN (SELECT DISTINCT levelid FROM {rcommon_books} WHERE format = :format) AND NOT $emptysql ORDER BY code, name";
 
         return $DB->get_records_sql($sql, array('format' => $format));
     }
@@ -55,25 +55,25 @@ class rcommon_level {
             $code = 'SENSE NIVELL';
         }
 
-		if (is_numeric($code)) {
-			return $code;
-		}
+        if (is_numeric($code)) {
+            return $code;
+        }
 
-		if (!$levelid = $DB->get_field('rcommon_level', 'id', array('code' => $code))) {
-			// If the level does not exist create it
-			$record = new stdClass();
-			$record->name = $code;
-			$record->code = $code;
-			$record->timemodified = time();
-			$record->timecreated = $record->timemodified;
-			$levelid = $DB->insert_record('rcommon_level', $record);
-		}
+        if (!$levelid = $DB->get_field('rcommon_level', 'id', array('code' => $code))) {
+            // If the level does not exist create it
+            $record = new stdClass();
+            $record->name = $code;
+            $record->code = $code;
+            $record->timemodified = time();
+            $record->timecreated = $record->timemodified;
+            $levelid = $DB->insert_record('rcommon_level', $record);
+        }
 
         return $levelid;
     }
 }
 
-class rcommon_book{
+class rcommon_book {
     public static $allowedformats = array('webcontent');
 
     public static function get($id) {
@@ -86,9 +86,9 @@ class rcommon_book{
 
         $emptysql = $DB->sql_isempty('rcommon_books', 'rb.isbn', false, false);
         $sql = "SELECT rb.*, rp.name as publisher FROM {rcommon_books} rb
-                    INNER JOIN {rcommon_publisher} rp ON rb.publisherid = rp.id
-                    WHERE rb.levelid = :levelid AND rb.format = :format AND NOT $emptysql
-                    ORDER BY rp.name, rb.name ASC";
+                INNER JOIN {rcommon_publisher} rp ON rb.publisherid = rp.id
+                WHERE rb.levelid = :levelid AND rb.format = :format AND NOT $emptysql
+                ORDER BY rp.name, rb.name ASC";
         $params = array('levelid' => $levelid);
         if ($format) {
             $params['format'] = $format;
@@ -129,7 +129,7 @@ class rcommon_book{
         $obligatoryarray = array('isbn', 'levelid', 'format', 'summary');
         foreach ($obligatoryarray as $value) {
             if (empty($record->$value)) {
-                throw new Exception('Required parameter <strong>'.$value.' not found!</strong>');
+                throw new Exception('Required parameter <strong>' . $value . ' not found!</strong>');
             }
         }
 
@@ -175,7 +175,7 @@ class rcommon_book{
     }
 }
 
-class rcommon_unit{
+class rcommon_unit {
 
     public static function get($id) {
         global $DB;
@@ -224,7 +224,7 @@ class rcommon_unit{
     }
 }
 
-class rcommon_activity{
+class rcommon_activity {
 
     public static function get($id) {
         global $DB;
@@ -277,7 +277,7 @@ class rcommon_activity{
 }
 
 
-class credentials{
+class credentials {
 
     public static function get($id) {
         global $DB;
@@ -299,101 +299,105 @@ class credentials{
         return $cred;
     }
 
-    static function add($isbn, $credentials, $username_or_id = false){
+    static function add($isbn, $credentials, $username_or_id = false) {
         global $DB;
 
-        $record               	= new stdClass();
-        $record->isbn 			= $isbn;
-	    $record->credentials 	= $credentials;
+        $record = new stdClass();
+        $record->isbn = $isbn;
+        $record->credentials = $credentials;
 
         if ($username_or_id) {
-            if(!is_numeric($username_or_id)){
-                $record->euserid = $DB->get_field('user','id',array('username'=>$username_or_id));
-                if(!$record->euserid) return false;
-            } else if($username_or_id !== false){
-                $record->euserid = $username_or_id;
+            if (!is_numeric($username_or_id)) {
+                $record->euserid = $DB->get_field('user', 'id', array('username' => $username_or_id));
+                if (!$record->euserid) return false;
+            } else {
+                if ($username_or_id !== false) {
+                    $record->euserid = $username_or_id;
+                }
             }
         } else {
             $record->euserid = false;
         }
 
         $record->timemodified = time();
-	    $record->timecreated  = $record->timemodified;
+        $record->timecreated = $record->timemodified;
         return $DB->insert_record('rcommon_user_credentials', $record);
     }
 
-    static function update($id, $isbn, $credentials, $username_or_id = false){
+    static function update($id, $isbn, $credentials, $username_or_id = false) {
         global $DB;
 
-        $record               	= new stdClass();
-        $record->id 			= $id;
-        $record->isbn 			= $isbn;
-	    $record->credentials 	= $credentials;
+        $record = new stdClass();
+        $record->id = $id;
+        $record->isbn = $isbn;
+        $record->credentials = $credentials;
 
-        if(is_string($username_or_id)){
-            $record->euserid = $DB->get_field('user','id',array('username'=>$username_or_id));
-            if(!$record->euserid) return false;
-        } else if($username_or_id !== false){
-            $record->euserid = $username_or_id;
+        if (is_string($username_or_id)) {
+            $record->euserid = $DB->get_field('user', 'id', array('username' => $username_or_id));
+            if (!$record->euserid) return false;
+        } else {
+            if ($username_or_id !== false) {
+                $record->euserid = $username_or_id;
+            }
         }
 
         $record->timemodified = time();
         return $DB->update_record('rcommon_user_credentials', $record);
     }
 
-    static function assign($id, $userid){
+    static function assign($id, $userid) {
         global $DB;
 
-        $record               = new StdClass();
-        $record->id           = $id;
-        $record->euserid      = $userid;
+        $record = new StdClass();
+        $record->id = $id;
+        $record->euserid = $userid;
         $record->timemodified = time();
 
         return $DB->update_record('rcommon_user_credentials', $record);
     }
 
-    static function unassign($id){
+    static function unassign($id) {
         global $DB;
 
-        $record               = new StdClass();
-        $record->id           = $id;
-        $record->euserid      = 0;
+        $record = new StdClass();
+        $record->id = $id;
+        $record->euserid = 0;
         $record->timemodified = time();
 
         return $DB->update_record('rcommon_user_credentials', $record);
     }
 
-    static function check_empty_credential($credential){
-        if ($credential->credentials == ' ' || empty($credential->credentials)){
+    static function check_empty_credential($credential) {
+        if ($credential->credentials == ' ' || empty($credential->credentials)) {
             self::delete($credential->id);
             return false;
         }
         return true;
     }
 
-    static function bulk_assign_users($bookisbn, array $ids, array $users){
+    static function bulk_assign_users($bookisbn, array $ids, array $users) {
         global $DB;
 
         $i = 0;
         $ids_where = implode(',', $ids);
 
-        $params = array('isbn'=>$bookisbn);
+        $params = array('isbn' => $bookisbn);
         $empty_credentials = $DB->get_records_select('rcommon_user_credentials', "isbn = :isbn AND euserid = 0 AND id IN ({$ids_where})", $params);
-        if ($empty_credentials){
-            foreach($empty_credentials as $credential_id => $c){
-                if ($i > count($users) - 1){
+        if ($empty_credentials) {
+            foreach ($empty_credentials as $credential_id => $c) {
+                if ($i > count($users) - 1) {
                     break;
                 }
 
                 $params['euserid'] = $users[$i];
-                if ($existing_cred = $DB->get_record('rcommon_user_credentials', $params)){
+                if ($existing_cred = $DB->get_record('rcommon_user_credentials', $params)) {
                     // Unassign empty credentials
-                    if(!self::check_empty_credential($existing_cred)){
+                    if (!self::check_empty_credential($existing_cred)) {
                         continue;
                     }
                 }
 
-                if (self::assign($credential_id, $users[$i])){
+                if (self::assign($credential_id, $users[$i])) {
                     $i++;
                 }
             }
@@ -402,14 +406,14 @@ class credentials{
         return $i;
     }
 
-    static function bulk_unassign_users($bookisbn, array $users){
+    static function bulk_unassign_users($bookisbn, array $users) {
         global $DB;
 
         $i = 0;
-        foreach ($users as $userid){
-            $credid = $DB->get_field('rcommon_user_credentials', 'id', array('isbn'=>$bookisbn, 'euserid' => $userid));
-            if ($credid){
-                if(self::unassign($credid)){
+        foreach ($users as $userid) {
+            $credid = $DB->get_field('rcommon_user_credentials', 'id', array('isbn' => $bookisbn, 'euserid' => $userid));
+            if ($credid) {
+                if (self::unassign($credid)) {
                     $i++;
                 }
             }
@@ -417,21 +421,21 @@ class credentials{
         return $i;
     }
 
-    static function bulk_unassign(array $ids){
+    static function bulk_unassign(array $ids) {
         global $DB;
 
         $ids_where = implode(',', $ids);
         return $DB->execute("UPDATE {rcommon_user_credentials} SET euserid = 0, timemodified = '" . time() . "' WHERE id IN ({$ids_where})");
     }
 
-    static function bulk_delete(array $ids){
+    static function bulk_delete(array $ids) {
         global $DB;
 
         $ids_where = implode(',', $ids);
         return $DB->execute("DELETE FROM {rcommon_user_credentials} WHERE id IN ({$ids_where})");
     }
 
-    static function delete($id){
+    static function delete($id) {
         global $DB;
         return $DB->delete_records('rcommon_user_credentials', array('id' => $id));
     }
@@ -439,9 +443,11 @@ class credentials{
     /**
      * Validation callback function - verified the column line of csv file.
      * Converts standard column names to lowercase.
+     *
      * @param csv_import_reader $cir
      * @param array $fields standard user fields
      * @param moodle_url $returnurl return url in case of any error
+     * @throws moodle_exception
      * @return array list of fields
      */
     static function validate_columns(csv_import_reader $cir, $fields, moodle_url $returnurl) {
@@ -469,12 +475,14 @@ class credentials{
             if (in_array($field, $stdfields) or in_array($lcfield, $stdfields)) {
                 // standard fields are only lowercase
                 $newfield = $lcfield;
-            } else if (in_array($field, $ignoredfields) or in_array($lcfield, $ignoredfields)) {
-                continue;
             } else {
-                $cir->close();
-                $cir->cleanup();
-                throw new \moodle_exception('invalidfieldname', 'error', $returnurl, $field);
+                if (in_array($field, $ignoredfields) or in_array($lcfield, $ignoredfields)) {
+                    continue;
+                } else {
+                    $cir->close();
+                    $cir->cleanup();
+                    throw new \moodle_exception('invalidfieldname', 'error', $returnurl, $field);
+                }
             }
             if (in_array($newfield, $processed)) {
                 $cir->close();
@@ -503,24 +511,26 @@ class credentials_progress_tracker {
 
     /**
      * Print table header.
+     *
      * @return void
      */
     public function start() {
         $ci = 0;
-        echo '<table id="credentialsresults" class="generaltable boxaligncenter flexible-wrap" summary="'.get_string('keymanager_import_title', 'local_rcommon').'">';
+        echo '<table id="credentialsresults" class="generaltable boxaligncenter flexible-wrap" summary="' . get_string('keymanager_import_title', 'local_rcommon') . '">';
         echo '<tr class="heading r0">';
-        echo '<th class="header c'.$ci++.'" scope="col">'.get_string('csvline', 'local_rcommon').'</th>';
-        echo '<th class="header c'.$ci++.'" scope="col">'.get_string('book', 'local_rcommon').'</th>';
-        echo '<th class="header c'.$ci++.'" scope="col">'.get_string('credential', 'local_rcommon').'</th>';
-        echo '<th class="header c'.$ci++.'" scope="col">'.get_string('username').'</th>';
-        echo '<th class="header c'.$ci++.'" scope="col">UserID</th>';
-        echo '<th class="header c'.$ci++.'" scope="col">'.get_string('status').'</th>';
+        echo '<th class="header c' . $ci++ . '" scope="col">' . get_string('csvline', 'local_rcommon') . '</th>';
+        echo '<th class="header c' . $ci++ . '" scope="col">' . get_string('book', 'local_rcommon') . '</th>';
+        echo '<th class="header c' . $ci++ . '" scope="col">' . get_string('credential', 'local_rcommon') . '</th>';
+        echo '<th class="header c' . $ci++ . '" scope="col">' . get_string('username') . '</th>';
+        echo '<th class="header c' . $ci++ . '" scope="col">UserID</th>';
+        echo '<th class="header c' . $ci++ . '" scope="col">' . get_string('status') . '</th>';
         echo '</tr>';
         $this->_row = null;
     }
 
     /**
      * Flush previous line and start a new one.
+     *
      * @return void
      */
     public function flush() {
@@ -528,22 +538,22 @@ class credentials_progress_tracker {
             // Nothing to print - each line has to have at least number
             $this->_row = array();
             foreach ($this->columns as $col) {
-                $this->_row[$col] = array('normal'=>'', 'info'=>'', 'warning'=>'', 'error'=>'');
+                $this->_row[$col] = array('normal' => '', 'info' => '', 'warning' => '', 'error' => '');
             }
             return;
         }
         $ci = 0;
         $ri = 1;
-        echo '<tr class="r'.$ri.'">';
-        foreach ($this->_row as $key=>$field) {
-            foreach ($field as $type=>$content) {
+        echo '<tr class="r' . $ri . '">';
+        foreach ($this->_row as $key => $field) {
+            foreach ($field as $type => $content) {
                 if ($field[$type] !== '') {
-                    $field[$type] = '<span class="credentials'.$type.'">'.$field[$type].'</span>';
+                    $field[$type] = '<span class="credentials' . $type . '">' . $field[$type] . '</span>';
                 } else {
                     unset($field[$type]);
                 }
             }
-            echo '<td class="cell c'.$ci++.'">';
+            echo '<td class="cell c' . $ci++ . '">';
             if (!empty($field)) {
                 echo implode('<br />', $field);
             } else {
@@ -553,12 +563,13 @@ class credentials_progress_tracker {
         }
         echo '</tr>';
         foreach ($this->columns as $col) {
-            $this->_row[$col] = array('normal'=>'', 'info'=>'', 'warning'=>'', 'error'=>'');
+            $this->_row[$col] = array('normal' => '', 'info' => '', 'warning' => '', 'error' => '');
         }
     }
 
     /**
      * Add tracking info
+     *
      * @param string $col name of column
      * @param string $msg message
      * @param string $level 'normal', 'warning' or 'error'
@@ -570,12 +581,12 @@ class credentials_progress_tracker {
             $this->flush(); //init arrays
         }
         if (!in_array($col, $this->columns)) {
-            debugging('Incorrect column:'.$col);
+            debugging('Incorrect column:' . $col);
             return;
         }
         if ($merge) {
             if ($this->_row[$col][$level] != '') {
-                $this->_row[$col][$level] .='<br />';
+                $this->_row[$col][$level] .= '<br />';
             }
             $this->_row[$col][$level] .= $msg;
         } else {
@@ -585,6 +596,7 @@ class credentials_progress_tracker {
 
     /**
      * Print the table end
+     *
      * @return void
      */
     public function close() {

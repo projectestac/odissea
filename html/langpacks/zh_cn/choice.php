@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'zh_cn', version '4.4'.
+ * Strings for component 'choice', language 'zh_cn', version '4.5'.
  *
  * @package     choice
  * @category    string
@@ -143,7 +143,7 @@ $string['publishinfonever'] = '此活动的结果将不会在您投票后公布�
 $string['publishnames'] = '公布完整结果，显示学生姓名及其选择';
 $string['publishnot'] = '不向学生公布结果';
 $string['removemychoice'] = '删除我的投票';
-$string['removeresponses'] = '删除所有投票';
+$string['removeresponses'] = '所有回复';
 $string['responses'] = '得票数';
 $string['responsesa'] = '得票数：{$a}';
 $string['responsesresultgraphheader'] = '图形显示';

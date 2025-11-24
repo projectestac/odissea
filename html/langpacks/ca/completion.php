@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'ca', version '4.4'.
+ * Strings for component 'completion', language 'ca', version '4.5'.
  *
  * @package     completion
  * @category    string
@@ -95,7 +95,7 @@ $string['completiondefault'] = 'Valor per defecte del seguiment de la compleció
 $string['completiondisabled'] = 'Inhabilitada, no es mostra als paràmetres de l\'activitat';
 $string['completionduration'] = 'Inscripció';
 $string['completionenabled'] = 'Habilitada, control mitjançant compleció i paràmetres de l\'activitat';
-$string['completionexpected'] = 'Estableix un recordatori a la línia de temps';
+$string['completionexpected'] = 'Estableix un recordatori a la cronologia';
 $string['completionexpected_help'] = 'Això permet configurar un recordatori als estudiants perquè treballin en aquesta activitat. Apareixerà al bloc «Cronologia» del seu tauler com «{$a} requereix acció».';
 $string['completionexpecteddesc'] = 'S\'espera la compleció el {$a}';
 $string['completionexpectedfor'] = '{$a->instancename} hauria d\'estar completat';
@@ -148,12 +148,13 @@ $string['csvdownload'] = 'Baixa en format de full de càlcul (UTF-8 .csv)';
 $string['datepassed'] = 'Data en què es va aprovar';
 $string['days'] = 'Dies';
 $string['daysoftotal'] = '{$a->days} de {$a->total}';
-$string['daysuntilcompletion'] = 'Dies fins a la compleció';
+$string['daystakingcourse'] = 'Dies fent curs';
+$string['daysuntilcompletion'] = 'Temps fins a la compleció';
 $string['defaultactivitycompletioncourse'] = 'Aquestes són les condicions de compleció predeterminades de les activitats d\'aquest curs.';
 $string['defaultactivitycompletionsite'] = 'Aquestes són les condicions de compleció predeterminades de les activitats de tots els cursos.';
 $string['defaultcompletion'] = 'Compleció d\'activitat per defecte';
 $string['defaultcompletionupdated'] = 'S\'han desat els canvis';
-$string['deletecompletiondata'] = 'Suprimeix les dades de compleció';
+$string['deletecompletiondata'] = 'Dades de compleció';
 $string['dependencies'] = 'Dependències';
 $string['dependenciescompleted'] = 'Compleció d\'altres cursos';
 $string['detail_desc:receivegrade'] = 'Rebre una qualificació';

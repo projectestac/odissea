@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'ru', version '4.4'.
+ * Strings for component 'quiz_overview', language 'ru', version '4.5'.
  *
  * @package     quiz_overview
  * @category    string
@@ -60,6 +60,17 @@ $string['privacy:metadata:preference:quiz_overview_slotmarks'] = 'Показыв
 $string['privacy:preference:slotmarks:no'] = 'Оценки не отображаются рядом с вопросом.';
 $string['privacy:preference:slotmarks:yes'] = 'Оценки отображаются рядом с вопросом.';
 $string['regrade'] = 'Переоценить';
+$string['regrade_allattempts'] = 'Все попытки';
+$string['regrade_allquestions'] = 'Все вопросы';
+$string['regrade_attempts'] = 'Переоценка попыток…';
+$string['regrade_commitregrade'] = 'Зафиксировать переоценку';
+$string['regrade_dryrun'] = 'Пробный прогон';
+$string['regrade_help'] = 'Переоценка пересчитывает автоматически выставленные оценки попыток, при возможности используя текущую версию каждого вопроса. Пробный прогон позволяет вам предварительно просмотреть изменения оценок, не влияя на попытки.';
+$string['regrade_link'] = 'Отчет_об_оценках_теста#Переоценка_попыток';
+$string['regrade_regradeneedednotificationmessage'] = 'При последнем пробном прогоне переоценки было обнаружено, что переоценка изменит оценки за вопросы ({$a->questions}) в попытках ({$a->attempts}).';
+$string['regrade_regradenow'] = 'Переоценить сейчас';
+$string['regrade_selectedattempts'] = 'Выбранные попытки';
+$string['regrade_selectedquestions'] = 'Выбранные вопросы';
 $string['regradeall'] = 'Переоценить все';
 $string['regradealldry'] = 'Пробный прогон переоценки';
 $string['regradealldrydo'] = 'Переоценить попытки, отмеченные для переоценки ({$a})';

@@ -8,13 +8,13 @@ require_once('reportlib.php');
 
 $id = required_param('id', PARAM_INT);    // Course Module ID, or
 if (! $cm = get_coursemodule_from_id('rcontent', $id)) {
-    print_error('Course Module ID was incorrect');
+    throw new moodle_exception('invalidcoursemodule');
 }
 if (! $course = $DB->get_record('course', array('id' => $cm->course))) {
-    print_error('Course is misconfigured');
+    throw new moodle_exception('invalidcourse');
 }
 if (! $rcontent = $DB->get_record('rcontent', array('id' => $cm->instance))) {
-    print_error('Course module is incorrect');
+    throw new moodle_exception('invalidcoursemodule');
 }
 
 require_login($course, false, $cm);

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'ro', version '4.4'.
+ * Strings for component 'completion', language 'ro', version '4.5'.
  *
  * @package     completion
  * @category    string
@@ -147,12 +147,13 @@ $string['csvdownload'] = 'Downloadează în format spreadsheet  (UTF-8 .csv)';
 $string['datepassed'] = 'Dată absolvire';
 $string['days'] = 'Zile';
 $string['daysoftotal'] = '{$a->zile} din {$a->total}';
-$string['daysuntilcompletion'] = 'Zile până la completare';
+$string['daystakingcourse'] = 'Zile de participare la curs';
+$string['daysuntilcompletion'] = 'Timp până la finalizare';
 $string['defaultactivitycompletioncourse'] = 'Acestea sunt condițiile implicite de finalizare pentru activitățile din acest curs.';
 $string['defaultactivitycompletionsite'] = 'Acestea sunt condițiile implicite de finalizare pentru activitățile din toate cursurile.';
 $string['defaultcompletion'] = 'Finalizarea implicită a activităților';
 $string['defaultcompletionupdated'] = 'Modificările au fost salvate';
-$string['deletecompletiondata'] = 'Ștergere data completare';
+$string['deletecompletiondata'] = 'Data finalizării';
 $string['dependencies'] = 'Dependințe';
 $string['dependenciescompleted'] = 'Finalizarea altor cursuri';
 $string['detail_desc:receivegrade'] = 'Trebuie să primești o notă';

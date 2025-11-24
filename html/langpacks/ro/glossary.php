@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ro', version '4.4'.
+ * Strings for component 'glossary', language 'ro', version '4.5'.
  *
  * @package     glossary
  * @category    string
@@ -113,7 +113,7 @@ $string['definitions'] = 'Definiții';
 $string['deletecategory'] = 'Ștergeți categoria';
 $string['deleteentry'] = 'Şterge definiția';
 $string['deleteentrya'] = 'Șterge noțiune: {$a}';
-$string['deletenotenrolled'] = 'Şterge noțiunile inserate de cursanţii care nu sunt înscrişi la curs';
+$string['deletenotenrolled'] = 'Articole ale utilizatorilor care nu sunt înscriși';
 $string['deletingcomment'] = 'Se șterge comentariul';
 $string['deletingnoneemptycategory'] = 'Ştergerea acestei categorii nu va şterge automat şi noțiunile pe care le conţine - acestea vor fi marcate ca neaparţinând niciunei categorii.';
 $string['descending'] = 'descendent';
@@ -303,9 +303,9 @@ $string['privacy:metadata:glossary_entries:userid'] = 'ID-ul utilizatorului care
 $string['question'] = 'Întrebare';
 $string['rejectedentries'] = 'Noțiuni respinse';
 $string['rejectionrpt'] = 'Raport respingeri';
-$string['removeallglossarytags'] = 'Eliminați toate etichetele de glosar';
+$string['removeallglossarytags'] = 'Toate etichetele de glosar';
 $string['resetglossaries'] = 'Şterge noțiuni din';
-$string['resetglossariesall'] = 'Şterge noțiunile din toate glosarele';
+$string['resetglossariesall'] = 'Noțiuni din toate glosarele';
 $string['rssarticles'] = 'Număr de definiții RSS recente';
 $string['rssarticles_help'] = 'Această setare specifică numărul de noțiuni în glosar incluse în flux-ul RSS. Sunt acceptabile, în general, între 5 şi 20.';
 $string['rssfeed'] = 'Feed RSS';

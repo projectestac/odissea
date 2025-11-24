@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'pt', version '4.4'.
+ * Strings for component 'plugin', language 'pt', version '4.5'.
  *
  * @package     plugin
  * @category    string
@@ -53,6 +53,8 @@ $string['err_response_format_version'] = 'Versão inesperada do formato de respo
 $string['err_response_http_code'] = 'Não é possível descarregar os dados de atualizações disponíveis - código de resposta HTTP inesperado.';
 $string['filterall'] = 'Mostrar tudo';
 $string['filtercontribonly'] = 'Mostrar apenas módulos adicionais';
+$string['filtermissingonly'] = 'Mostrar apenas os em falta no disco';
+$string['filternewpluginsonly'] = 'Mostrar apenas os módulos a serem instalados';
 $string['filterupdatesonly'] = 'Mostrar apenas o que está disponível para atualizar';
 $string['incompatibleversion'] = 'Versão incompatível do Moodle: {$a}';
 $string['isenabled'] = 'Ativo?';
@@ -110,6 +112,10 @@ $string['status_uptodate'] = 'Atualizado';
 $string['supportedconversions'] = 'Conversões de documentos suportadas';
 $string['supportedmoodleversions'] = 'Versões Moodle suportadas';
 $string['systemname'] = 'Identificador';
+$string['type_aiplacement'] = 'Módulo de posicionamento de IA';
+$string['type_aiplacement_plural'] = 'Módulos de posicionamento de IA';
+$string['type_aiprovider'] = 'Módulo de fornecedor de IA';
+$string['type_aiprovider_plural'] = 'Módulos de fornecedor de IA';
 $string['type_antivirus'] = 'Módulo Antivírus';
 $string['type_antivirus_plural'] = 'Módulos Antivírus';
 $string['type_auth'] = 'Método de autenticação';
@@ -192,6 +198,8 @@ $string['type_repository'] = 'Repositório';
 $string['type_repository_plural'] = 'Repositórios';
 $string['type_search'] = 'Motor de busca';
 $string['type_search_plural'] = 'Motores de busca';
+$string['type_smsgateway'] = 'Gateway de SMS';
+$string['type_smsgateway_plural'] = 'Gateways de SMS';
 $string['type_theme'] = 'Tema';
 $string['type_theme_plural'] = 'Temas';
 $string['type_tool'] = 'Ferramenta de administração';

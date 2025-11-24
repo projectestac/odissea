@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'nl', version '4.4'.
+ * Strings for component 'workshop', language 'nl', version '4.5'.
  *
  * @package     workshop
  * @category    string
@@ -321,11 +321,11 @@ $string['reassess'] = 'Evalueer opnieuw';
 $string['receivedgrades'] = 'Behaalde cijfers';
 $string['recentassessments'] = 'Workshop beoordelingen:';
 $string['recentsubmissions'] = 'Workshop taken:';
-$string['resetassessments'] = 'Verwijder alle opdrachten';
+$string['resetassessments'] = 'Alle opdrachten';
 $string['resetassessments_help'] = 'Je kunt er voor kiezen om alleen de toegewezen beoordelingen te verwijderen en niet de inzendingen. Als er inzendingen verwijderd moeten worden, dan zal ook de beoordeling verwijderd worden en dan wordt deze instelling genegeerd. Merk op dat dit ook beoordelingen van voorbeeldinzendingen betreft.';
 $string['resetphase'] = 'Schakel naar opstartfase';
 $string['resetphase_help'] = 'Indien ingeschakeld zullen alle workshops in de opstartfase gezet worden.';
-$string['resetsubmissions'] = 'Verwijder alle inzendingen';
+$string['resetsubmissions'] = 'Alle inzendingen';
 $string['resetsubmissions_help'] = 'Alle inzendingen en hun beoordelingen zulle verwijderd worden. Dit geldt niet voor voorbeeldinzendingen';
 $string['saveandclose'] = 'Bewaar en sluit';
 $string['saveandcontinue'] = 'Bewaar en ga verder met beoordelen';

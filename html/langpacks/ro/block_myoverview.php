@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'ro', version '4.4'.
+ * Strings for component 'block_myoverview', language 'ro', version '4.5'.
  *
  * @package     block_myoverview
  * @category    string
@@ -93,7 +93,7 @@ $string['title'] = 'Denumire curs';
 $string['viewquickstart'] = 'Vezi ghidul Quickstart';
 $string['zero_default_intro'] = 'Odată ce ești înscris la un curs, acesta va apărea aici.';
 $string['zero_default_title'] = 'Nu ești înscris la niciun curs.';
-$string['zero_nocourses_intro'] = 'Ai nevoie de ajutor pentru a începe? Verifică <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Documentația Moodle</a> sau folosește ghidul nostru Quickstart.';
+$string['zero_nocourses_intro'] = 'Ai nevoie de ajutor pentru a începe? Verifică <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Documentația Moodle</a>.';
 $string['zero_nocourses_title'] = 'Creează primul tău curs';
 $string['zero_request_intro'] = 'Ai nevoie de ajutor pentru a începe? Verifică <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Documentația Moodle</a> sau folosește <a href="{$a->quickhref}" title="{$a->quicktitle}" target="{$a->quicktarget}">ghidul nostru Quickstart</a>.';
 $string['zero_request_title'] = 'Solicită primul tău curs';

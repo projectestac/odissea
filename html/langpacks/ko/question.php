@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ko', version '4.4'.
+ * Strings for component 'question', language 'ko', version '4.5'.
  *
  * @package     question
  * @category    string
@@ -306,7 +306,6 @@ $string['needtochoosecat'] = '질문을 이동시키려면 범주를 선택하�
 $string['nocate'] = '{$a} 범주는 없음!';
 $string['nopermissionadd'] = '여기에 질문을 추가시킬 권한이 없습니다.';
 $string['nopermissionedit'] = '이곳의 문제를 수정할 권한이 없습니다.';
-$string['nopermissionmove'] = ' 질문을 이동시킬 수 있는 권한이 없습니다. 이 범주에  질문을 저장하거나 새  질문으로 저장하십시오.';
 $string['noprobs'] = '질문 은행 데이터베이스에는 아무런 문제점도 없습니다.';
 $string['noquestionbanks'] = '문제은행 플러그인을 찾지 못했습니다.';
 $string['noquestions'] = '내보내기 할 문제가 없습니다. 내보내기 할 문제가 있는 카테고리를 선택하였는지 확인하세요.';

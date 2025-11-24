@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'publication', language 'de', version '4.4'.
+ * Strings for component 'publication', language 'de', version '4.5'.
  *
  * @package     publication
  * @category    string
@@ -54,15 +54,16 @@ $string['assignment_help'] = 'Aufgabe für die Veröffentlichung von Dateiabgabe
 $string['assignment_notfound'] = 'Die Aufgabe aus der Dateien übernommen wurden, konnte nicht mehr gefunden werden.';
 $string['assignment_notset'] = 'Es wurde noch keine Aufgabe ausgewählt.';
 $string['availability'] = 'Bearbeitungszeit (Hochladen bzw. Freigabe)';
+$string['availabilityrestriction'] = 'Voraussetzungen auf Nutzerliste anwenden';
+$string['availabilityrestriction_admin'] = 'Standardeinstellung für Voraussetzungen in der Nutzerliste';
+$string['availabilityrestriction_admin_desc'] = 'Teilnehmer/innen, die aufgrund von definierten Voraussetzungen nicht auf die Aktivität zugreifen können, werden aus der Liste entfernt.<br>Dazu gehören nur Bedingungen, die auf Nutzerlisten anwendbar sind. Zum Beispiel werden Gruppenbedingungen einbezogen, aber Datumsbedingungen nicht.';
+$string['availabilityrestriction_help'] = 'Teilnehmer/innen, die aufgrund von definierten Voraussetzungen nicht auf die Aktivität zugreifen können, werden aus der Liste entfernt.<br>Dazu gehören nur Bedingungen, die auf Nutzerlisten anwendbar sind. Zum Beispiel werden Gruppenbedingungen einbezogen, aber Datumsbedingungen nicht.';
 $string['choose'] = 'Bitte auswählen ...';
 $string['completiondetail:upload'] = 'Datei hochladen';
 $string['completionupload'] = 'Teilnehmer/in muss eine Datei hochladen';
 $string['configautoimport'] = 'Wenn diese Option aktiviert ist, können Dateiabgaben aus Aufgaben automatisch in Studierendenordner importiert werden. Diese Funktion kann für jeden Studierendenordner separat ein-/ausgeschaltet werden.';
 $string['configmaxbytes'] = 'Standardmäßige maximale Dateigröße für Dateien im Studierendenordner.';
 $string['configmaxfiles'] = 'Standardmäßige maximale Anzahl von Dateien, die pro Teilnehmer/in im Studierendenordner erlaubt sind.';
-$string['configobtainstudentapproval'] = 'Dateien werden erst nach Freigabe von Teilnehmer/innen und Trainer/innen veröffentlicht (d.h. allen angezeigt).';
-$string['configobtainteacherapproval'] = 'Dateien von Teilnehmer/innen werden sofort ohne Überprüfung für alle angezeigt.';
-$string['configrequiremodintro'] = 'Deaktivieren Sie diese Option, wenn die Eingabe von Beschreibungen für jede Aktivität nicht verpflichtend sein soll.';
 $string['courseuploadlimit'] = 'Maximale Dateigröße';
 $string['currentlynotapproved'] = '* Aktuell Veröffentlichung nicht freigegeben oder verweigert.';
 $string['cutoffdate'] = 'Letzte Abgabemöglichkeit';
@@ -90,6 +91,9 @@ $string['email:statuschange:footer'] = '</ul>';
 $string['email:statuschange:header'] = 'Der Status der Veröffentlichung folgender Datei(en) für <b>\'{$a->publication}\'</b> wurde am {$a->dayupdated} um {$a->timeupdated} von <b>{$a->username}</b> geändert:<br /><ul>';
 $string['email:statuschange:subject'] = 'Veröffentlichungsstatus aktualisiert';
 $string['entiresperpage'] = 'Einträge pro Seite';
+$string['eventoverridecreated'] = 'Studierendenordner Überschreibung erzeugt';
+$string['eventoverridedeleted'] = 'Studierendenordner Überschreibung gelöscht';
+$string['eventoverrideupdated'] = 'Studierendenordner Überschreibung geändert';
 $string['eventpublicationapprovalchanged'] = 'Studierendenordner: Dateifreigabe wurde geändert';
 $string['eventpublicationduedateextended'] = 'Studierendenordner: Abgabeende wurde verlängert';
 $string['eventpublicationfiledeleted'] = 'Studierendenordner: Datei wurde gelöscht';
@@ -151,6 +155,14 @@ $string['notice_import_studentnotrequired_teachernotrequired'] = 'Die Dateien we
 $string['notice_import_studentnotrequired_teacherrequired'] = 'Die Dateien werden erst <strong>nach der Freigabe durch die Trainer/innen</strong> veröffentlicht. Trainer/innen können eine Veröffentlichung jederzeit ablehnen.';
 $string['notice_import_studentrequired_teachernotrequired'] = 'Die Dateien werden erst <strong>nach Ihrer Freigabe</strong> veröffentlicht (allen angezeigt).';
 $string['notice_import_studentrequired_teacherrequired'] = 'Die Dateien werden <strong>nach Ihrer Freigabe und der Freigabe der Trainer/innen</strong> veröffentlicht (allen angezeigt). Trainer/innen können eine Veröffentlichung jederzeit aufheben.';
+$string['notice_obtainapproval_import_both'] = 'Als Trainer/in können Sie jederzeit die Zustimmung zur Veröffentlichung verweigern oder aufheben, sollte eine Datei nicht den definierten Anforderungen entsprechen.';
+$string['notice_obtainapproval_import_studentonly'] = 'Im Sinne des Urheberrechts bitten wir Sie, die Zustimmung zur Veröffentlichung von Dateien von Teilnehmer/innen auf separatem Weg anzufragen.<br>
+Als Trainer/in können Sie jederzeit den Status der Veröffentlichung aufheben, sollte eine Datei nicht den definierten Anforderungen entsprechen.';
+$string['notice_obtainapproval_upload_automatic'] = 'Im Sinne des Urheberrechts bitten wir Sie, die Zustimmung zur Veröffentlichung von Dateien von Teilnehmer/innen auf separatem Weg anzufragen.<br>
+Als Trainer/in können Sie jederzeit den Status der Veröffentlichung aufheben, sollte eine Datei nicht den definierten Anforderungen entsprechen.';
+$string['notice_obtainapproval_upload_teacher'] = 'Im Sinne des Urheberrechts bitten wir Sie, die Zustimmung zur Veröffentlichung von Dateien von Teilnehmer/innen auf separatem Weg anzufragen.<br>
+Als Trainer/in können Sie jederzeit den Status der Veröffentlichung aufheben, sollte eine Datei nicht den definierten Anforderungen entsprechen.';
+$string['notice_obtainteacherapproval_studentsapproval'] = 'Im Sinne des Urheberrechts bitten wir Sie, die Zustimmung zur Veröffentlichung von Dateien von Teilnehmer/innen auf separatem Weg einzuholen.';
 $string['notice_upload_studentnotrequired_teachernotrequired'] = 'Alle hier hochgeladenen Dateien werden <strong>automatisch</strong> veröffentlicht (allen angezeigt).';
 $string['notice_upload_studentnotrequired_teacherrequired'] = 'Alle hier hochgeladenen Dateien werden erst <strong>nach der Freigabe durch Trainer/innen</strong> veröffentlicht (allen angezeigt). Trainer/innen können eine Veröffentlichung jederzeit ablehnen.';
 $string['notice_upload_studentrequired_teachernotrequired'] = 'Alle hier hochgeladenen Dateien werden erst <strong>nach Ihrer Freigabe</strong> veröffentlicht (allen angezeigt).';
@@ -193,6 +205,22 @@ $string['obtainteacherapproval_no'] = 'Automatisch';
 $string['obtainteacherapproval_yes'] = 'Erforderlich';
 $string['optionalsettings'] = 'Optionen';
 $string['overdue'] = 'Bearbeitungszeitraum überschritten';
+$string['override:add:group'] = 'Gruppenänderung hinzufügen';
+$string['override:add:user'] = 'Nutzeränderung hinzufügen';
+$string['override:approval:from'] = 'Freigabe ab {$a->from}';
+$string['override:approval:fromto'] = 'Freigabe ab {$a->from} bis {$a->to}';
+$string['override:approval:to'] = 'Freigabe bis {$a->to}';
+$string['override:delete:ask'] = 'Möchten Sie wirklich die Überschreibung für {$a->userorgroup} {$a->fullname} löschen?';
+$string['override:delete:success'] = 'Überschreibung erfolgreich gelöscht!';
+$string['override:group:choose'] = 'Gruppe auswählen';
+$string['override:invalidid'] = 'Ungültige Überschreibungs-ID';
+$string['override:nothingtochange'] = 'Es gibt keine Einstellungen, die mit den aktuellen Aktivitätseinstellungen überschrieben werden können!';
+$string['override:save:success'] = 'Überschreibung erfolgreich gespeichert!';
+$string['override:submission:from'] = 'Abgaben ab {$a->from}';
+$string['override:submission:fromto'] = 'Abgaben ab {$a->from} bis {$a->to}';
+$string['override:submission:to'] = 'Abgaben bis {$a->to}';
+$string['override:user:choose'] = 'Nutzer/in auswählen';
+$string['overrides:empty'] = 'Keine Überschreibungen vorhanden';
 $string['overview'] = 'Überblick';
 $string['pending'] = 'Ausstehend';
 $string['pluginadministration'] = 'Studierendenordner Administration';
@@ -221,6 +249,7 @@ $string['privacy:type:upload'] = 'Hochgeladene Datei';
 $string['publication:addinstance'] = 'Studierendenordner hinzufügen';
 $string['publication:approve'] = 'Entscheiden Sie, ob Dateien veröffentlicht (d.h. für alle Teilnehmer/innen sichtbar) sein sollen';
 $string['publication:grantextension'] = 'Verlängerung zulassen';
+$string['publication:manageoverrides'] = 'Überschreibungen verwalten';
 $string['publication:receiveteachernotification'] = 'Benachrichtigung für Trainer/innen empfangen';
 $string['publication:upload'] = 'Dateien in den Studierendenordner hochladen';
 $string['publication:view'] = 'Studierendenordner anzeigen';
@@ -231,7 +260,6 @@ $string['published_aftercheck'] = 'Freigabe durch Trainer/innen erforderlich';
 $string['published_immediately'] = 'Automatische Freigabe';
 $string['rejected'] = 'Abgelehnt';
 $string['rejectusers'] = 'Freigabe verweigern';
-$string['requiremodintro'] = 'Beschreibung notwendig';
 $string['reset'] = 'Zurücksetzen';
 $string['reset_userdata'] = 'Alle Daten';
 $string['resetstudentapproval'] = 'Freigabe zurücksetzen';

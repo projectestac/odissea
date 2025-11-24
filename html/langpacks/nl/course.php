@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'nl', version '4.4'.
+ * Strings for component 'course', language 'nl', version '4.5'.
  *
  * @package     course
  * @category    string
@@ -101,6 +101,10 @@ $string['downloadcoursecontent_help'] = 'Deze instelling bepaalt of cursusinhoud
 $string['enabledownloadcoursecontent'] = 'Cursusinhoud downloaden inschakelen';
 $string['errorendbeforestart'] = 'De einddatum ({$a}) is vóór de startdatum van de cursus.';
 $string['favourite'] = 'Favoriete cursus';
+$string['filterbothactive'] = 'Eerst ({$a->first}) Laatst ({$a->last})';
+$string['filterbyname'] = 'Filter op naam';
+$string['filterfirstactive'] = 'Eerst ({$a->first})';
+$string['filterlastactive'] = 'Laatst ({$a->last})';
 $string['gotosection'] = 'Ga naar sectie {$a}';
 $string['gradetopassnotset'] = 'Deze cursus heeft geen cijfer om te slagen ingesteld. Het kan worden ingesteld in het cijfer van de cursus (cijferlijst-instelling).';
 $string['hideendedcoursestask'] = 'Verbergen cursussen na einddatum';

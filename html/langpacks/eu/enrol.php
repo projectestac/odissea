@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'eu', version '4.4'.
+ * Strings for component 'enrol', language 'eu', version '4.5'.
  *
  * @package     enrol
  * @category    string
@@ -47,7 +47,7 @@ $string['customwelcomemessage_help'] = 'Onartutako formatuak: Testu soila edo Mo
 <li>Erabiltzailearen abizenak {$a->lastname}</li>
 <li>Erabiltzailearen ikastaroko rola {$a->courserole}</li>
 </ul>';
-$string['customwelcomemessageplaceholder'] = 'Kaixo, {$a->fullname}: {$a->coursename} ikastaroan matrikulatuta zaude.';
+$string['customwelcomemessageplaceholder'] = 'Kaixo, {$a->firstname}: {$a->coursename} ikastaroan matrikulatuta zaude.';
 $string['defaultenrol'] = 'Gehitu instantzia ikastaro berrietarako';
 $string['defaultenrol_desc'] = 'Plugin hau modu lehenetsian ikastaro berri guztiei gehi dakieke.';
 $string['deleteinstanceconfirm'] = '"{$a->name}" matrikulatzeko-metodoa ezabatzekotan zaude. Metodo hori erabilita dagoeneko matrikulatutako {$a->users} guztiak desmatrikulatuko dira eta erabiltzaileen kalifikazioak, taldeetako partaidetza eta foroetako harpidetzak bezalako ikastaroko datu guztiak ezabatuko dira.

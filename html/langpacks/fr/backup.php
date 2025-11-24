@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'fr', version '4.4'.
+ * Strings for component 'backup', language 'fr', version '4.5'.
  *
  * @package     backup
  * @category    string
@@ -206,6 +206,7 @@ $string['enableasyncbackup_help'] = 'Si ce réglage est activé, toutes les opé
 $string['enterasearch'] = 'Saisir une expression à rechercher';
 $string['error_block_for_module_not_found'] = 'Instance de bloc orpheline (id : {$a->bid}) trouvée dans un module de cours (id : {$a->mid}). Ce bloc ne sera pas sauvegardé.';
 $string['error_course_module_not_found'] = 'Module de cours orphelin (id : {$a}) détecté. Ce module ne sera pas sauvegardé.';
+$string['error_delegate_section_not_found'] = 'Formulaire de section déléguée de module de cours (ID {$a}). La section ne sera pas sauvegardée.';
 $string['errorcopyingbackupfile'] = 'Échec de copie du fichier de sauvegarde vers le dossier temporaire avant restauration.';
 $string['errorfilenamemustbezip'] = 'Le fichier doit être un fichier au format ZIP et son nom doit avoir l’extension .mbz';
 $string['errorfilenamerequired'] = 'Veuillez saisir un nom de fichier valide pour cette sauvegarde';
@@ -282,6 +283,7 @@ $string['includeditems'] = 'Éléments inclus :';
 $string['includefilereferences'] = 'Liens vers des contenus externes';
 $string['includesection'] = 'Section {$a}';
 $string['includeuserinfo'] = 'Données utilisateur';
+$string['includeuserinfo_instance'] = 'Inclure les données utilisateurs de {$a}';
 $string['inprogress'] = 'Sauvegarde en cours';
 $string['jumptofinalstep'] = 'Passer à la dernière étape';
 $string['keep'] = 'Conserver';
@@ -400,6 +402,7 @@ $string['rootsettingusers'] = 'Inclure les utilisateurs inscrits';
 $string['rootsettinguserscompletion'] = 'Inclure les données détaillées d’achèvement d’activité';
 $string['rootsettingxapistate'] = 'Inclure l’état d’avancement de l’utilisateur dans les activités telles que H5P.';
 $string['samesitenotification'] = 'Ce fichier de sauvegarde a été créé avec uniquement les références vers les fichiers, et non les fichiers eux-mêmes. La restauration de cette sauvegarde ne fonctionnera que sur ce site.';
+$string['section_prefix'] = 'Section {$a} :';
 $string['sectionactivities'] = 'Activités';
 $string['sectioninc'] = 'Inclus dans la sauvegarde (pas de données utilisateur)';
 $string['sectionincanduser'] = 'Inclus dans la sauvegarde avec des données utilisateur';
@@ -426,6 +429,7 @@ $string['status'] = 'Statut';
 $string['storagecourseandexternal'] = 'Zone de sauvegarde de cours et dossier spécifié';
 $string['storagecourseonly'] = 'Zone de sauvegarde de cours';
 $string['storageexternalonly'] = 'Dossier spécifié pour les sauvegardes automatiques';
+$string['subsectioncontent'] = 'Contenu de sous-section';
 $string['successful'] = 'Sauvegarde effectuée';
 $string['successfulcopy'] = 'Copie terminée';
 $string['successfulrestore'] = 'Restauration effectuée';

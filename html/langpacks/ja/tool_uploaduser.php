@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'ja', version '4.4'.
+ * Strings for component 'tool_uploaduser', language 'ja', version '4.5'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -82,7 +82,7 @@ $string['uploadusers'] = 'ユーザをアップロードする';
 $string['uploadusers_help'] = 'テキストファイルでユーザをアップロード (および任意でコース登録) できます。ファイルのフォーマットは以下のとおりです:
 
 * ファイルのそれぞれの行に1レコードを含みます。
-* それぞれのレコードは選択されたセパレータによって区切られた一連のデータです。
+* それぞれのレコードは選択されたセパレータにより区切られた一連のデータです。
 * 先頭レコードにはファイルの残りのフォーマットを定義したフィールド名一覧を含みます。
 * 必須フィールド名は次のとおりです: username, password, firstname, lastname, email';
 $string['uploadusers_link'] = 'admin/tool/uploaduser/index';

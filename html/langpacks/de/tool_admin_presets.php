@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_admin_presets', language 'de', version '4.4'.
+ * Strings for component 'tool_admin_presets', language 'de', version '4.5'.
  *
  * @package     tool_admin_presets
  * @category    string
@@ -37,8 +37,9 @@ $string['created'] = 'Angelegt';
 $string['currentvalue'] = 'Aktueller Wert';
 $string['deletepreset'] = 'Möchten Sie wirklich die Website-Admin-Vorlage {$a} löschen?';
 $string['deletepresettitle'] = 'Vorlage {$a} löschen?';
-$string['deletepreviouslyapplied'] = 'Diese Vorlage wurde bereits angewendet. Wenn Sie eine Vorlage löschen, wird sie vollständig von Ihrer Website entfernt. Sie können Ihre Einstellungen nicht auf den Stand vor der Anwendung dieser Vorlage zurücksetzen.';
+$string['deletepreviouslyapplied'] = 'Möchten Sie die systemweite Administratorvorlage {$a} wirklich löschen?<br><br>Diese Vorlage wurde bereits angewendet. Beim Löschen wird die Vorlage vollständig von Ihrer Website entfernt. Sie können anschließend Ihre Einstellungen nicht auf den Stand vor der Anwendung dieser Vorlage zurücksetzen.';
 $string['deleteshow'] = 'Website-Admin-Vorlage löschen';
+$string['editadminpresetname'] = 'Namen der Administratorvorlage bearbeiten';
 $string['eventpresetdeleted'] = 'Vorlage gelöscht';
 $string['eventpresetdownloaded'] = 'Vorlage heruntergeladen';
 $string['eventpresetexported'] = 'Vorlage angelegt';

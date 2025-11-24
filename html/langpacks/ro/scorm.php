@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'ro', version '4.4'.
+ * Strings for component 'scorm', language 'ro', version '4.5'.
  *
  * @package     scorm
  * @category    string
@@ -110,7 +110,7 @@ $string['datadir'] = 'Eroare sistem de fișiere: Nu se poate crea directorul de 
 $string['defaultdisplaysettings'] = 'Setări implicite de afișare';
 $string['defaultgradesettings'] = 'Setări implicite de notă';
 $string['defaultothersettings'] = 'Alte setări implicite';
-$string['deleteallattempts'] = 'Şterge toate încercările de parcurgere SCORM';
+$string['deleteallattempts'] = 'Toate încercările de parcurgere SCORM';
 $string['deleteattemptcheck'] = 'Sunteți absolut sigur că doriți să ștergeți complet aceste încercări?';
 $string['deleteselected'] = 'Şterge încercările selectate';
 $string['deleteuserattemptcheck'] = 'Sunteți absolut sigur că doriți să ștergeți complet toate încercările dumneavoastră?';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'sv', version '4.4'.
+ * Strings for component 'question', language 'sv', version '4.5'.
  *
  * @package     question
  * @category    string
@@ -301,7 +301,6 @@ $string['needtochoosecat'] = 'Du måste välja en kategori för att flytta den h
 $string['nocate'] = 'Ingen sådan kategori {$a}!';
 $string['nopermissionadd'] = 'Du har inte behörighet att lägga till frågor här.';
 $string['nopermissionedit'] = 'Du har inte behörighet att redigera frågor härifrån.';
-$string['nopermissionmove'] = 'Du har inte behörighet att flytta frågor härifrån. Du måste spara frågan i denna kategori eller spara den som en ny fråga.';
 $string['noprobs'] = 'Det fanns inga problem i Din databas för frågor.';
 $string['noquestionbanks'] = 'Hittade ingen pluginmodul för frågebank.';
 $string['noquestions'] = 'Inga frågor hittades som kunde exporteras. Se till att du har valt en kategori att exportera som innehåller frågor.';

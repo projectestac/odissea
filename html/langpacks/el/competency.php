@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'el', version '4.4'.
+ * Strings for component 'competency', language 'el', version '4.5'.
  *
  * @package     competency
  * @category    string
@@ -29,6 +29,8 @@ $string['allchildrenarecomplete'] = 'Όλα τα παιδιά είναι πλή�
 $string['competencies'] = 'Προσόντα';
 $string['competenciesarenotenabled'] = 'Τα προσόντα δεν έχουν ενεργοποιηθεί.';
 $string['competenciessettings'] = 'Ρυθμίσεις προσόντων';
+$string['competency'] = 'Προσόν';
+$string['competencyframework'] = 'Πλαίσιο προσόντων';
 $string['completeplanstask'] = 'Ολοκληρωμένα σχέδια μάθησης που οφείλονται';
 $string['coursecompetencyoutcome_complete'] = 'Ολοκλήρωση του προσόντος';
 $string['coursecompetencyoutcome_evidence'] = 'Επισυνάψτε αποδεικτικό';
@@ -163,8 +165,10 @@ $string['privacy:metadata:usermodified'] = 'Ο χρήστης που δημιο�
 $string['privacy:path:plans'] = 'Σχέδια μάθησης';
 $string['privacy:path:relatedtome'] = 'Σε σχέση με εμένα';
 $string['privacy:path:userevidence'] = 'Αποδεικτικό προηγούμενης μάθησης';
+$string['proficient'] = 'Επαρκής';
 $string['pushcourseratingstouserplans'] = 'Προώθηση εκτιμήσεων μαθήματος σε ατομικά σχέδια μάθησης';
 $string['pushcourseratingstouserplans_desc'] = 'Προεπιλεγμένη τιμή για τη ρύθμιση μαθήματος κατά την ενημέρωση προσωπικών σχεδίων μάθησης όταν εκτιμώνται προσόντα μαθήματος.';
+$string['rating'] = 'Αξιολόγηση';
 $string['syncplanscohorts'] = 'Συγχρονισμός σχεδίων μέσω υποδειγμάτων σχεδίων μάθησης συνόλων χρηστών';
 $string['taxonomy_behaviour'] = 'Συμπεριφορά';
 $string['taxonomy_competency'] = 'Προσόν';

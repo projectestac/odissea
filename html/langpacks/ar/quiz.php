@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'ar', version '4.4'.
+ * Strings for component 'quiz', language 'ar', version '4.5'.
  *
  * @package     quiz
  * @category    string
@@ -397,6 +397,7 @@ $string['eventslotgradeitemupdated'] = 'عنصر فتحة التقدير تم ت
 $string['eventslotmarkupdated'] = 'علامة فسحة تم تحديثها';
 $string['eventslotmoved'] = 'فسحة تم نقلها';
 $string['eventslotrequirepreviousupdated'] = 'فسحة تتطلب الاستعراض تم تحديثها';
+$string['eventslotversionupdated'] = 'نسخة الفسحة تم تحديثها';
 $string['everynquestions'] = 'كل {$a} سؤال/أسئلة';
 $string['everyquestion'] = 'كل سؤال';
 $string['everythingon'] = 'كل شيء في';
@@ -557,6 +558,7 @@ $string['maxmarks_help'] = 'أعلى درجة متاحة لكل سؤال.';
 $string['messageprovider:attempt_grading_complete'] = 'إشعار بأن محاولتك قد تم تقييمها';
 $string['messageprovider:attempt_overdue'] = 'تحذير عندما تصير محاولتك للاختبار متأخرة';
 $string['messageprovider:confirmation'] = 'تأكيدات التسليم للاختبارات الخاصة بك';
+$string['messageprovider:quiz_open_soon'] = 'إقتراب موعد فتح الاختبار';
 $string['messageprovider:submission'] = 'إشعارات تسليمات الطلاب للاختبار';
 $string['min'] = 'ادنى';
 $string['minutes'] = 'دقائق';
@@ -650,7 +652,7 @@ $string['onlyteachersimport'] = 'المعلمون ذوو حقوق التحرير
 $string['onthispage'] = 'هذه الصفحة';
 $string['open'] = 'غير مجاب عنه';
 $string['openafterclose'] = 'تعذر تحديث الاختبار. لقد جعلت تاريخ الفتح بعد تاريخ الإغلاق.';
-$string['openclosedatesupdated'] = 'تم تحديث تاريخي الفتح والإغلاق';
+$string['openclosedatesupdated'] = 'تاريخي الفتح والإغلاق';
 $string['optional'] = 'اختياري';
 $string['orderandpaging'] = 'الترتيب وتنظيم الصفحات';
 $string['orderandpaging_help'] = 'الأرقام 10، 20، 30، ... مقابل كل سؤال تشير إلى ترتيب الأسئلة. الزيادة في الأرقام هي 10 حتى تترك مجالاً لإدراج أسئلة إضافية. لإعادة ترتيب الأسئلة، قم بتغيير الأرقام ثم انقر زر "إعادة ترتيب الأسئلة".
@@ -832,6 +834,12 @@ $string['quizopen'] = 'إفتح الاختبار';
 $string['quizopenclose'] = 'تاريخا الفتح والإغلاق';
 $string['quizopenclose_help'] = 'يمكن للطلبة الشروع بمحاولاتهم فقط بعد وقت الفتح وعليهم إكمالها قبل وقت الإغلاق.';
 $string['quizopenclose_link'] = 'mod/quiz/timing';
+$string['quizopendatesoonhtml'] = '<p>مرحبًا {$a->firstname}،</p>
+<p>إن الاختبار <strong>{$a->quizname}</strong> الذي في المساق {$a->coursename} سيُفتح قريبًا.
+<p><strong>موعد الفتح: {$a->timeopen}</strong></p>
+<p><strong>موعد الإغلاق: {$a->timeclose}</strong></p>
+<p><a href="{$a->url}">الذهاب إلى الاختبار</a></p>';
+$string['quizopendatesoonsubject'] = 'يُفتح في {$a->timeopen}: {$a->quizname}';
 $string['quizopened'] = 'هذا الاختبار مفتوح.';
 $string['quizopenedon'] = 'هذا الاختبار فُتح في {$a}';
 $string['quizopens'] = 'يفتح الاختبار';
@@ -883,9 +891,9 @@ $string['regradenotallowed'] = 'ليست لديك صلاحية إعادة تقي
 $string['regradingquestion'] = 'تجري إعادة تقييم "{$a}".';
 $string['regradingquiz'] = 'تجري إعادة تقييم الاختبار "{$a}".';
 $string['remove'] = 'إزالة';
-$string['removeallgroupoverrides'] = 'حذف كل تجاوزات المجموعة';
-$string['removeallquizattempts'] = 'حذف كل محاولات الاختبار';
-$string['removealluseroverrides'] = 'حذف كل تجاوزات المستخدم';
+$string['removeallgroupoverrides'] = 'كل تجاوزات المجموعة';
+$string['removeallquizattempts'] = 'كل محاولات الاختبار';
+$string['removealluseroverrides'] = 'كل تجاوزات المستخدم';
 $string['removeemptypage'] = 'أزل الصفحة الفارغة';
 $string['removepagebreak'] = 'إزالة فاصل الصفحات';
 $string['removeselected'] = 'إزل المحددة';
@@ -998,6 +1006,7 @@ $string['selectmultipletoolbar'] = 'شريط أدوات الاختيار الم�
 $string['selectnone'] = 'إلغاء تحديد الكل';
 $string['selectquestionslot'] = 'إختر السؤال {$a}';
 $string['selectquestiontype'] = '-- إختر نوع السؤال --';
+$string['sendnotificationopendatesoon'] = 'إشعار المستخدم باقتراب تاريخ فتح الاختبار';
 $string['serveradded'] = 'تم إضاف خادم';
 $string['serveridentifier'] = 'مؤشر';
 $string['serverinfo'] = 'معلومات المخدم';
@@ -1066,6 +1075,7 @@ $string['subplugintype_quizaccess_plural'] = 'قواعد الوصول';
 $string['substitutedby'] = 'سيستبدل بــ';
 $string['summaryofattempt'] = 'ملخص المحاولة';
 $string['summaryofattempts'] = 'محاولاتك';
+$string['summaryofattemptscaption'] = 'موجز المحاولة {$a}';
 $string['temporaryblocked'] = 'أنت غير مسموح لك مؤقتاً بإعادة محاولة الاختبار.<br /> ستكون قادراً على محاولته مجدداً في:';
 $string['theattempt'] = 'المحاولة';
 $string['theattempt_help'] = 'إذا كان يمكن للطالب مراجعة المحاولة';

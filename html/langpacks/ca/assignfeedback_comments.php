@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'ca', version '4.4'.
+ * Strings for component 'assignfeedback_comments', language 'ca', version '4.5'.
  *
  * @package     assignfeedback_comments
  * @category    string
@@ -26,17 +26,17 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['commentinline'] = 'Comentaris intercalats';
-$string['commentinline_help'] = 'Si activeu aquesta opció, el text de la tramesa es copiarà durant la qualificació en el camp de comentaris de retroalimentació, de manera que resulti fàcil inserir comentaris intercalats (utilitzant un color diferent, potser) o editar el text original.';
+$string['commentinline_help'] = 'Si activeu aquesta opció, el text de la tramesa es copiarà durant la qualificació en el camp de comentaris de retroacció, de manera que resulti fàcil inserir comentaris intercalats (utilitzant un color diferent, potser) o editar el text original.';
 $string['commentinlinedefault'] = 'Comentaris intercalats per defecte';
 $string['commentinlinedefault_help'] = 'Si activeu aquesta opció, la funció de comentaris intercalats s\'habilitarà per defecte en totes les tasques noves.';
 $string['default'] = 'Habilitat per defecte';
-$string['default_help'] = 'Si està actiu, aquest mètode de retroalimentació s\'habilitarà per defecte per a totes les tasques noves.';
-$string['enabled'] = 'Comentaris de retroalimentació';
-$string['enabled_help'] = 'Si està habilitat, qui qualifiqui pot deixar comentaris com a retroalimentació per a cada tramesa.';
-$string['pluginname'] = 'Comentaris de retroalimentació';
-$string['privacy:commentpath'] = 'Comentaris de retroalimentació';
+$string['default_help'] = 'Si està actiu, aquest mètode de retroacció, s\'habilitarà per defecte per a totes les tasques noves.';
+$string['enabled'] = 'Comentaris de retroacció.';
+$string['enabled_help'] = 'Si està habilitat, qui qualifiqui pot deixar comentaris com a retroacció per a cada tramesa.';
+$string['pluginname'] = 'Comentaris de retroacció.';
+$string['privacy:commentpath'] = 'Comentaris de retroacció.';
 $string['privacy:metadata:assignmentid'] = 'ID de la tasca';
 $string['privacy:metadata:commentpurpose'] = 'El text de comentari.';
-$string['privacy:metadata:filepurpose'] = 'Fitxers de retroalimentació del professor per a l\'estudiant.';
+$string['privacy:metadata:filepurpose'] = 'Fitxers de retroacció del professor per a l\'estudiant.';
 $string['privacy:metadata:gradepurpose'] = 'L\'ID de la qualificació associada amb el comentari.';
-$string['privacy:metadata:tablesummary'] = 'Això emmagatzema els comentaris fets pels avaluadors com a retroalimentació per a l\'estudiant sobre la seva tramesa.';
+$string['privacy:metadata:tablesummary'] = 'Això emmagatzema els comentaris fets pels avaluadors com a retroacció per a l\'estudiant sobre la seva tramesa.';

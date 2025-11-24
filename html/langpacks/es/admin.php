@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'es', version '4.4'.
+ * Strings for component 'admin', language 'es', version '4.5'.
  *
  * @package     admin
  * @category    string
@@ -272,7 +272,7 @@ $string['configenablecalendarexport'] = 'Habilitar la exportación o suscripció
 $string['configenablecomments'] = 'Habilitar comentarios';
 $string['configenablecourserequests'] = 'Si se encuentra habilitado, los usuarios con la capacidad para solicitar nuevos cursos (moodle/course:request) tendrán la opción de solicitar un nuevo curso. Esta función no está permitida para ninguno de los roles predeterminados. Puede ser aplicada en el sistema or en el ámbito de categorías';
 $string['configenabledevicedetection'] = 'Permite la detección de teléfonos móviles, móviles inteligentes, tabletas o dispositivos por defecto (PC de escritorio, PC portátil, etc.) para la aplicación de temas u otras características.';
-$string['configenablemobilewebservice'] = 'Habilitar el servicio para móviles para la aplicación oficial Moodle u otra aplicación que lo solicite. Para más información lea la {$a}';
+$string['configenablemobilewebservice'] = 'Habilitar el servicio para móviles para la aplicación Moodle. Si su sitio usa HTTPS, los servicios móviles están habilitados por defecto. Para más información lea la {$a}.';
 $string['configenablerssfeeds'] = 'Si está activado, los canales RSS son generados para varias características en todo el sitio, tales como blogs, foros, actividades de base de datos y glosarios. Tenga en cuenta que los feeds RSS también necesitan ser habilitados para los módulos de actividad particulares.';
 $string['configenablerssfeedsdisabled'] = 'No está disponible porque los canales RSS están desactivados en todo el sitio. Para activarlos, vaya a Variables en Admin - Configuración.';
 $string['configenablerssfeedsdisabled2'] = 'Los canales RSS están deshabilitados a nivel del sitio. Pueden ser activados desde Características avanzadas, en la Administración del sitio.';
@@ -299,7 +299,7 @@ $string['configfrontpageloggedin'] = 'Los elementos seleccionados se mostrarán 
 $string['configfullnamedisplay'] = 'Esta opción define cómo se verán los nombres cuando se muestren completos. Por defecto, "idioma", redirige a la cadena de caracteres "mostrarnombrecompleto (fullnamedisplay)" en el idioma a escoger. Algunos idiomas siguen un método de visualización del nombre diferente.
 
 Para la mayoría de los sitios que usen un solo idioma, el ajuste más eficiente es el valor por defecto ("Nombre + Apellido"), pero puede elegir ocultar los apellidos. Los marcadores de posición que se pueden utilizar son: nombre, apellido, nombrefonético, apellidofonético, segundonombre, nombrealternativo (firstname, lastname, firstnamephonetic, lastnamephonetic, middlename, alternatename).';
-$string['configgeoipfile'] = 'Ubicación del archivo binario GeoIP City. Este archivo no forma parte de la distribución de Moodle y debe obtenerse de forma independiente en <a href="http://www.maxmind.com/">MaxMind</a>. Puede adquirir una versión comercial u optar por la versión gratuita.<br />Simplemente descargue <a href="http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz" >http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz</a> y extráigalo en el directorio "{$a}" de su servidor.';
+$string['configgeoipfile'] = 'Ubicación del archivo binario GeoIP City. Este archivo no forma parte de la distribución de Moodle y debe obtenerse de forma independiente en <a href="https://www.maxmind.com/">MaxMind</a>. Puede adquirir una versión comercial u optar por la versión gratuita.  Necesitará registrarse para descargar el archivo de base de datos City, lo que puede hacer en <a href="https://dev.maxmind.com/geoip/geoip2/geolite2/" >https://dev.maxmind.com/geoip/geoip2/geolite2/</a>. Una vez hecho el registro, descargue el archivo y extráigalo en el directorio "{$a}" de su servidor.';
 $string['configgetremoteaddrconf'] = 'Si su servidor está detrás de un proxy reverso, puede usar esta opción para especificar en qué cabeceras HTTP se puede confiar que contengan la dirección IP remota. Las cabeceras se leen por orden, usando la primera que esté disponible.';
 $string['configgradebookroles'] = 'Esta opción le permite controlar quién aparece en el libro de calificaciones. Los usuarios necesitan tener al menos uno de estos roles en un curso para poder aparecer en el libro de calificaciones de ese curso.';
 $string['configgradeexport'] = 'Elija qué formatos de exportación del libro de calificaciones constituyen su método principal para exportar calificaciones. Los conectores elegidos ajustarán y usarán un campo ("últimos exportados") para cada calificación. Por ejemplo, esto podría dar como resultado que los registros exportados se identificaran como "nuevos" o "actualizados". Si no está seguro de cómo hacer esto, no marque nada.';
@@ -492,7 +492,7 @@ $string['curlcache'] = 'cURL caché TTL';
 $string['curlrequired'] = 'La extensión cURL PHP ahora es requerida por Moodle con el fin de comunicarse con los repositorios de Moodle.';
 $string['curlsecurityallowedport'] = 'Lista de puertos cURL autorizados';
 $string['curlsecurityallowedportsyntax'] = 'Listado de número de puertos a los que cURL puede conectarse. Las entradas son únicamente numéricas. Pon cada entrada en una nueva línea. Si se deja vacío, todos los puertos están permitidos. Si está especificado, en la mayoría de casos, ambos puertos 443 y 80 deberían ser especificados para cURL para conectar a los puertos estándar de HTTPS y HTTP.';
-$string['curlsecurityblockedhosts'] = 'Lista de puertos cURL bloqueados';
+$string['curlsecurityblockedhosts'] = 'Lista de direcciones cURL bloqueadas';
 $string['curlsecurityblockedhostssyntax'] = 'Ponga cada entrada en una nueva línea. Son válidas las entradas de direcciones completas IPv4 o IPv6 (como por ejemplo 192.168.10.1, 0:0:0:0:0:0:0:1, ::1, fe80::) las cuales coincidan con un único host; o notación CIDR  (como por ejemplo 231.54.211.0/20 o fe80::/64); o un rango de direcciones IP (como por ejemplo 231.3.56.10-20 o fe80::1111-bbbb) donde el rango se aplica al último grupo de direcciones; o nombres de dominio (como por ejemplo localhost o ejemplo.com); o comodines de nombres de dominio (como por ejemplo *.ejemplo.com o *.sub.ejemplo.com). No se permiten líneas en blanco.';
 $string['curlsecurityurlblocked'] = 'Esta URL está bloqueada.';
 $string['curltimeoutkbitrate'] = 'Velocidad de transmisión a utilizar cuando se calculan los tiempos de expiración de cURL (Kbps)';
@@ -640,7 +640,7 @@ $string['enroladminnewcourse_help'] = 'Cuando un administrador añade un nuevo c
 $string['enrolinstancedefaults'] = 'Valores por defecto de la matriculacion';
 $string['enrolinstancedefaults_desc'] = 'Ajustes predeterminados de matriculación en nuevos cursos.';
 $string['enrolmultipleusers'] = 'Matricular a los usuarios';
-$string['ensureauroraversion'] = 'Su sitio se está ejecutando mediante un motor de base de datos Amazon Aurora. Por favor, asegúrese de que la versión de MySQL de Amazon Aurora sea compatible con la versión de Moodle que está instalando o a la que está subiendo. Puede comprobar la compatibilidad en <a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.30Updates.html" target="_blank">Actualizaciones de motor de base de datos de Amazon Aurora versión 3 de MySQL</a>.';
+$string['ensureauroraversion'] = 'Su sitio se está ejecutando mediante un motor de base de datos Amazon Aurora. La versión de MySQL de Amazon Aurora debe ser compatible con la versión de Moodle que está instalando o a la que está subiendo. Puede comprobar la compatibilidad en <a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.30Updates.html" target="_blank">Actualizaciones de motor de base de datos de Amazon Aurora versión 3 de MySQL</a>.';
 $string['entitytasklog'] = 'Registro de tareas';
 $string['environment'] = 'Entorno';
 $string['environmenterrortodo'] = 'Debe resolver todos los problemas de entorno (errores) encontrados arriba antes de proceder a instalar esta versión de Moodle';
@@ -710,7 +710,13 @@ $string['fullnamedisplay'] = 'Formato de nombre completo';
 $string['fullnamedisplayprivate'] = 'Formato del nombre completo - privado';
 $string['gdrequired'] = 'La extensión GD es requerida por Moodle para la conversión de imágenes.';
 $string['generalsettings'] = 'Ajustes generales';
-$string['geoipfile'] = 'GeoLite2 City MaxMind DB';
+$string['geoipdbedition'] = 'GeoIP Database Edition';
+$string['geoipdbedition_desc'] = 'Seleccione la edición de base de datos GeoIP a descargar. Por favor, tenga en cuenta que usar la base de datos GeoIP2-City requiere el pago de una licencia válida.';
+$string['geoipfile'] = 'GeoIP City DB';
+$string['geoipmaxmindaccid'] = 'ID de cuenta MaxMind';
+$string['geoipmaxmindaccid_desc'] = 'El ID de cuenta creado en el servicio de API de MaxMind';
+$string['geoipmaxmindlicensekey'] = 'Clave de licencia de MaxMind';
+$string['geoipmaxmindlicensekey_desc'] = 'La clave de licencia de la cuenta creada en el servidio de API de MaxMind';
 $string['getremoteaddrconf'] = 'Fuente de direcciones IP registradas';
 $string['globalsearch'] = 'Búsqueda global';
 $string['globalsearchmanage'] = 'Administrar búsqueda global';
@@ -722,7 +728,7 @@ $string['gradebookroles'] = 'Roles calificados';
 $string['gradeexport'] = 'Principales métodos de exportación de calificaciones';
 $string['gradeexportdefault'] = 'Método de exportación de calificaciones por defecto.';
 $string['gravatardefaulturl'] = 'URL para imagen por defecto de Gravatar';
-$string['gravatardefaulturl_help'] = 'Gravatar necesita una imagen por defecto para utilizar en caso de que no se pueda localizar la imagen de un determinado usuario. Si dejas esta opción vacía, Moodle intentará usar la imagen por defecto más adecuada para la página que estés viendo. Ten en cuenta que Gravatar dispone de una serie de parámetros que pueden ser usados para <a href="https://es.gravatar.com/site/implement/images/#default-image">generar imágenes por defecto</a>.';
+$string['gravatardefaulturl_help'] = 'Gravatar necesita una imagen por defecto para utilizar en caso de que no se pueda localizar la imagen de un determinado usuario. Hay códigos para generar imágenes por defecto en  <a href="https://docs.gravatar.com/api/avatars/images/">Gravatar para Desarrolladores - Solicitudes de Avatar</a>.';
 $string['group_customfield'] = 'Campos personalizados del grupo';
 $string['groupenrolmentkeypolicy'] = 'Política de matriculación de grupos';
 $string['groupenrolmentkeypolicy_desc'] = 'Si está habilitado, las claves de inscripción de grupo se compararán con la política de contraseñas como se especifica en la configuración anterior.';
@@ -772,6 +778,9 @@ $string['httpsecurity'] = 'Seguridad HTTP';
 $string['iconvrequired'] = 'Es necesario instalar la extensión ICONV';
 $string['igbinary322buggyversion'] = 'La extensión php-igbinary instalada en el sitio puede ocasionar problemas cuando se ejecuta con PHP 7.2. Se recomienda actualizar a php-igbinary 3.2.5 o posterior, o alternativamente actualizar a PHP 7.3 o posterior.';
 $string['ignore'] = 'Ignorar';
+$string['importantupdates_content'] = '<p>En Moodle 5.0, las actividades de Chat y Encuestas Predefinidas dejarán de estar en el core de Moodle. Estarán disponibles en el <a href="https://moodle.org/plugins/">directorio de plugins de Moodle</a>.</p>
+<p>Si usted deseara seguir usando la actividad Chat o Encuestas Predefinidas en su sitio, usted deberá instalarlas como plugins antes de subir a la versión Moodle 5.0.</p>';
+$string['importantupdates_title'] = 'Actualización importante sobre las actividades Chat y Encuestas Predefinidas';
 $string['includemoduleuserdata'] = 'Incluir datos del usuario del módulo';
 $string['incompatibleblocks'] = 'Bloques imcompatibles';
 $string['incompleteunicodesupport'] = 'La configuración actual de MySQL o MariaDB está usando \'utf8\'. Este set de caracteres no soporta caracteres de 4 byte los cuales incluyen algunos emoji. Si intenta usar esos caracteres finalizará con un error al actualizar una fila, y toda la información que esté siendo enviada a la base de datos se perderá. Por favor considere cambiar la configuración a \'utf8mb4\'. Mire la documentación para más información.';
@@ -791,10 +800,10 @@ $string['ipblocker'] = 'Bloqueador de IP';
 $string['ipblockersyntax'] = 'Ponga cada entrada en una línea. Las entradas válidas son la dirección IP completa (como <b>192.168.10.1</b>) que coincide con un solo host; o dirección parcial (como <b>192.168</b>) que coincida con cualquier dirección que comience con esos números; o notación CIDR (como <b>231.54.211.0/20</b>); o un rango de direcciones IP (como <b>231.3.56.10-20</b>) donde el rango se aplica a la última parte de la dirección. Los nombres de dominio de texto (como \'ejemplo.com\') no son compatibles. Las líneas en blanco y el texto que sigue al carácter "#" se ignoran.';
 $string['iplookup'] = 'Búsqueda de dirección IP';
 $string['iplookupgeoplugin'] = 'El servicio <a href="https://www.geoplugin.com">geoPlugin</a> se emplea actualmente para buscar información geográfica. Para tener resultados más exactos le recomendamos instalar una copia local de la base de datos MaxMind GeoLite.';
-$string['iplookupinfo'] = 'Por defecto Moodle utiliza el servidor gratuito en línea NetGeo (The Internet Geographic Database) para buscar la ubicación de las direcciones IP. Esta base de datos ya no se mantiene, y puede devolver información errónea.
-Se recomienda instalar una copia local de la base de datos GeoLite2 City, desde MaxMind.<br />
+$string['iplookupinfo'] = 'Se usa el servidor gratuito en línea NetGeo para buscar la ubicación de las direcciones IP. Esta base de datos ya no se mantiene, y puede devolver información errónea.
+Se recomienda instalar una copia local de la base de datos GeoIP, desde MaxMind.<br />
 Si se da una clave Google Maps API V3, se verá la localización mediante Google Maps. Necesita una cuenta de Google y solicitar una clave Google Maps API. Si no se da clave Google Maps API V3, la localización de la dirección IP se mostrará mediante OpenStreetMap.';
-$string['iplookupmaxmindnote'] = 'Este producto incluye datos de GeoLite2 creado por MaxMind, disponible en <a href="https://www.maxmind.com">https://www.maxmind.com</a>.';
+$string['iplookupmaxmindnote'] = 'Este producto incluye datos de GeoIP City creado por MaxMind, disponible en <a href="https://www.maxmind.com">https://www.maxmind.com</a>.';
 $string['iscustomadminwarnings'] = 'Se ha detectado que su sitio está utilizando un directorio de administración personalizado. Esta característica ya no es compatible y se eliminará después de Moodle 4.2.';
 $string['ishttpswarning'] = 'Se ha detectado que su sitio no se comunica a través de HTTPS. Se recomienda migrar su sitio a HTTPS para incrementar la seguridad y mejorar la integración con otros sistemas.';
 $string['keeptagnamecase'] = 'Mantener minús/MAYÚS de nombre de marca';
@@ -827,9 +836,11 @@ $string['locationsettings'] = 'Ajustes de ubicación';
 $string['locked'] = 'Bloqueado';
 $string['lockoutduration'] = 'Tiempo de duración del bloqueo';
 $string['lockoutduration_desc'] = 'La cuenta bloqueada se desbloquea automáticamente después de esta tiempo.';
-$string['lockoutemailbody'] = 'Su cuenta de usuario {$a->username} en el sitio \'{$a->sitename}\' ha sido bloqueada tras múltiples intentos de acceso no válidos.
+$string['lockoutemailbody'] = 'Hola, {$a->firstname}.
 
-Para desbloquear la cuenta de forma inmediata pulse en el siguiente enlace
+Su cuenta de usuario {$a->username} en el sitio "{$a->sitename}" ha sido bloqueada tras múltiples intentos de acceso no válidos.
+
+Para desbloquear la cuenta de forma inmediata pulse en el siguiente enlace:
 
 {$a->link}
 
@@ -947,7 +958,6 @@ $string['moodlepartners_help'] = '<p>Los Moodle Partners (Socios Moodle) son pro
 <a href="https://moodle.com/partners">Encuentra un Socio</a>';
 $string['moodleservices'] = 'Servicios de Moodle';
 $string['moodleservices_help'] = 'Asegúrese de obtener lo mejor de su entorno de aprendizaje Moodle al usar estos servicios:';
-$string['multilangforceold'] = 'Forzar sintaxis vieja multi-idioma: <span> sin la class="multilang" and <lang>';
 $string['mustenablestats'] = 'Las estadísticas aún no se han habilitado en este sitio.';
 $string['mycourses'] = 'Mis cursos';
 $string['mydashboard'] = 'Panel por defecto del sistema';
@@ -995,7 +1005,7 @@ $string['notifyloginthreshold'] = 'Umbral para notificaciones email';
 $string['notloggedinroleid'] = 'Rol de los visitantes';
 $string['numberofmissingstrings'] = 'Número de cadenas sin traducir: {$a}';
 $string['numberofstrings'] = 'Número total de cadenas: {$a->strings}<br />Ausentes: {$a->missing} ({$a->missingpercent}&nbsp;%)';
-$string['oauthrefreshtokenexpired'] = 'El símbolo refrescar para uno de los servicios OAuth {$a->issuer} en su sitio {$a->siteurl} ha expirado. Esto limitará la funcionalidad de cualquiera de los plugins que usan este servicio. Para solucionar este problema, visite la página de configuración Servicios OAuth 2 y haga click en el icono "Conectar cuenta del sistema" en la fila de la tabla de este servicio. Asegúrese de iniciar sesión usando la misma cuenta de servicio para el sistema OAuth cada vez.';
+$string['oauthrefreshtokenexpired'] = 'El token de refresco para un servicio OAuth 2 {$a->issuer} en su sitio {$a->siteurl} ha expirado. Esto limitará la funcionalidad de cualquiera de los plugins que usan este servicio. Para solucionarlo, visite la página de configuración Servicios OAuth 2 y haga click en el icono "Conectar cuenta del sistema" en la fila de la tabla de este servicio. Asegúrese de iniciar sesión usando la misma cuenta de servicio para el sistema OAuth cada vez.';
 $string['oauthrefreshtokenexpiredshort'] = 'El símbolo para refrescar OAuth ha expirado para {$a->issuer} en su sitio {$a->siteurl}.';
 $string['onlynoreply'] = 'Únicamente cuando se utilice la dirección de no-responder';
 $string['opcacherecommended'] = 'PHP opcode caché mejora el rendimiento y reduce los requisitos de memoria, se recomienda la extensión OPcache, totalmente compatible.';
@@ -1181,8 +1191,8 @@ $string['registration_help'] = 'Al registrarse:
 * Recibirás alertas de seguridad
 * Puede activar las notificaciones push de aplicaciones móviles desde su sitio
 * Estás contribuyendo a nuestras estadísticas de Moodle de la comunidad mundial';
-$string['registrationwarning'] = 'Su sitio aún no está registrado.';
-$string['registrationwarningcontactadmin'] = 'Su sitio no está registrado aún. Por favor, consulte con su administrador.';
+$string['registrationwarning'] = 'No se pierda actualizaciones y alertas de seguridad importantes.';
+$string['registrationwarningcontactadmin'] = 'Este sitio no está registrado. Por favor, consulte con su administrador para registrar su sitio para que no se pierdan actualizaciones importantes.';
 $string['releasenoteslink'] = 'Si desea información sobre esta versión de Moodle, por favor vea <a target="_blank" href="{$a}">Release Notes</a>';
 $string['rememberuserlicensepref'] = 'Recordar preferencia de licencia de usuario';
 $string['rememberuserlicensepref_help'] = 'Si está habilitado, la última licencia seleccionada por el usuario se preselecciona al cargar un archivo en el selector de archivos. De lo contrario, se preselecciona la licencia del sitio predeterminada.';
@@ -1366,6 +1376,7 @@ $string['stickyblockscourseview'] = 'Página del curso';
 $string['stickyblocksduplicatenotice'] = 'Si cualquier bloque que agregue aquí está ya presente en una página en particular, el resultado será un duplicado.<br />Únicamente el bloque agregado no será editable, en tanto que el duplicado podrá editarse.';
 $string['stickyblocksmymoodle'] = 'Mi Moodle';
 $string['stickyblockspagetype'] = 'Tipo de página a configurar';
+$string['storedprogressbarcleanuptask'] = 'Tarea de limpieza de de barra de progreso guardada';
 $string['strictformsrequired'] = 'Validación estricta de campos obligatorios';
 $string['stripalltitletags'] = 'Eliminar marcas HTML de todos los nombres de actividad';
 $string['supportandservices'] = 'Soporte y servicios';
@@ -1376,6 +1387,7 @@ $string['supportemailsubject'] = 'Solicitud de soporte del sitio - {$a}';
 $string['supportname'] = 'Nombre del soporte';
 $string['supportpage'] = 'Enlace a página de soporte del sitio';
 $string['suspenduser'] = 'Suspender cuenta de usuario';
+$string['swaggerui'] = 'Moodle REST API UI (SwaggerUI)';
 $string['switchlang'] = 'Cambiar directorio de idioma';
 $string['systempaths'] = 'Rutas del sistema';
 $string['tablenosave'] = 'Los cambios de la tabla superior se guardan automáticamente.';
@@ -1466,6 +1478,7 @@ $string['taskstatscron'] = 'Procesamiento en segundo plano de las estadísticas'
 $string['tasktagcron'] = 'Procesamiento en segundo plano de las etiquetas';
 $string['tasktempfilecleanup'] = 'Eliminar archivos temporales obsoletos';
 $string['tasktype'] = 'Tipo';
+$string['taskupdategeoip2file'] = 'Actualizar archivo GeoIP';
 $string['tempdatafoldercleanup'] = 'Borrar ficheros de datos temporales más viejos de';
 $string['templates'] = 'Plantillas';
 $string['testoutgoingmailconf'] = 'Probar configuración de correo saliente';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'it', version '4.4'.
+ * Strings for component 'glossary', language 'it', version '4.5'.
  *
  * @package     glossary
  * @category    string
@@ -113,7 +113,7 @@ $string['definitions'] = 'Definizioni';
 $string['deletecategory'] = 'Elimina categoria';
 $string['deleteentry'] = 'Elimina voce';
 $string['deleteentrya'] = 'Elimina voce: {$a}';
-$string['deletenotenrolled'] = 'Elimina le voci inserite da utenti non iscritti';
+$string['deletenotenrolled'] = 'Voci inserite da utenti non iscritti';
 $string['deletingcomment'] = 'Eliminazione commento';
 $string['deletingnoneemptycategory'] = 'Eliminando questa categoria, non verranno comunque eliminate le voci in essa contenute, le voci saranno contrassegnate come non categorizzate.';
 $string['descending'] = 'decrescente';
@@ -304,9 +304,9 @@ $string['privacy:metadata:glossary_entries:userid'] = 'ID dell\'utente che sta a
 $string['question'] = 'Domanda';
 $string['rejectedentries'] = 'Voci rifiutate';
 $string['rejectionrpt'] = 'Report voci non approvate';
-$string['removeallglossarytags'] = 'Elimina tutti i tag del glossario';
+$string['removeallglossarytags'] = 'Tutti i tag del glossario';
 $string['resetglossaries'] = 'Elimina voci da';
-$string['resetglossariesall'] = 'Elimina voci da tutti i glossari';
+$string['resetglossariesall'] = 'Voci da tutti i glossari';
 $string['rssarticles'] = 'Numero di articoli RSS';
 $string['rssarticles_help'] = 'L\'impostazione stabilisce il numero di voci da includere nel feed RSS. In genere un valore tra 5 e 20 è adeguato.';
 $string['rssfeed'] = 'Feed RSS';

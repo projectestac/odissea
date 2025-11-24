@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'uk', version '4.4'.
+ * Strings for component 'bigbluebuttonbn', language 'uk', version '4.5'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -41,6 +41,7 @@ $string['bigbluebuttonbn:join'] = 'Приєднатися до кімнати Bi
 $string['bigbluebuttonbn:managerecordings'] = 'Управління записами';
 $string['bigbluebuttonbn:protectrecordings'] = 'Захистити записи';
 $string['bigbluebuttonbn:publishrecordings'] = 'Публікувати записи';
+$string['bigbluebuttonbn:seepresentation'] = 'Завжди дивіться файл презентації на сторінці активності';
 $string['bigbluebuttonbn:unprotectrecordings'] = 'Зніміть захист записів';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'Скасувати публікацію записів';
 $string['bigbluebuttonbn:view'] = 'Переглянути кімнату BigBlueButton';
@@ -198,6 +199,10 @@ $string['config_server_url'] = 'URL-адреса BigBlueButton сервера';
 $string['config_server_url_description'] = 'URL-адреса вашого сервера BigBlueButton.';
 $string['config_shared_secret'] = 'BigBlueButton Shared Secret';
 $string['config_shared_secret_description'] = 'Секрет безпеки вашого сервера BigBlueButton.';
+$string['config_showpresentation_default'] = 'Показати файл презентації на сторінці активності';
+$string['config_showpresentation_default_description'] = 'Чи повинні студенти мати доступ до файлу презентації до сесії? Цей параметр не впливає на користувачів із можливістю «Завжди переглядати файл презентації на сторінці активності».';
+$string['config_showpresentation_editable'] = 'Параметр «Показати файл презентації на сторінці активності».';
+$string['config_showpresentation_editable_description'] = 'У налаштуваннях діяльності вчителі можуть вибрати, чи показувати файл презентації учням.';
 $string['config_uidelegation_enabled'] = 'UI delegation is enabled';
 $string['config_uidelegation_enabled_description'] = 'These settings enable or disable the UI delegation to the BigBlueButton server.';
 $string['config_userlimit'] = 'Ліміт користувача';
@@ -366,6 +371,7 @@ $string['mod_form_field_recordings_html'] = 'Показувати таблицю
 $string['mod_form_field_recordings_imported'] = 'Показати лише імпортовані посилання';
 $string['mod_form_field_recordings_preview'] = 'Показати попередній перегляд запису';
 $string['mod_form_field_room_name'] = 'Назва  кімнати';
+$string['mod_form_field_showpresentation'] = 'Показати файл презентації на сторінці активності';
 $string['mod_form_field_userlimit'] = 'Ліміт користувачів';
 $string['mod_form_field_userlimit_help'] = 'Максимальна кількість користувачів, дозволена під час сеансу. Встановіть 0, щоб дозволити необмежену кількість користувачів.';
 $string['mod_form_field_voicebridge'] = 'Голосовий міст [####]';

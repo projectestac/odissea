@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'ca', version '4.4'.
+ * Strings for component 'bigbluebuttonbn', language 'ca', version '4.5'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -57,7 +57,7 @@ $string['event_meeting_created'] = 'Sala BigBlueButtonBN creada';
 $string['event_meeting_ended'] = 'S\'ha finalitzat la sessió BigBlueButtonBN de forma deliberada';
 $string['index_disabled'] = 'desactivat';
 $string['index_enabled'] = 'activat';
-$string['index_ending'] = 'S\'està finalitzant l\'aula virtual... Espereu';
+$string['index_ending'] = 'Està finalitzant la sessió... espereu';
 $string['index_error_forciblyended'] = 'No s\'ha pogut unir-se a aquesta conferència perquè ha estat finalitzada manualment.';
 $string['index_heading'] = 'Sales de conferència';
 $string['index_heading_actions'] = 'Accions';
@@ -84,7 +84,7 @@ $string['mod_form_field_instanceprofiles'] = 'Tipus d\'instància';
 $string['mod_form_field_intro'] = 'Descripció';
 $string['mod_form_field_intro_help'] = 'Breu descripció de la sala o la conferència.';
 $string['mod_form_field_muteonstart'] = 'Silencia a l\'inici de la reunió';
-$string['mod_form_field_name'] = 'Nom de l\'aula virtual';
+$string['mod_form_field_name'] = 'Nom de la sala';
 $string['mod_form_field_nosettings'] = 'No es pot editar cap paràmetre';
 $string['mod_form_field_openingtime'] = 'Obre';
 $string['mod_form_field_participant_add'] = 'Afegeix un participant';
@@ -111,6 +111,7 @@ $string['modulename_help'] = 'BigBlueButtonBN us permet crear, dins Moodle, enll
 
 Si utilititzeu BigBlueButtonBN, podeu indicar-hi el títol, la descripció, una entrada al calendari (la qual dona un interval de dates per unir-se a la sessió), els grups, i detalls sobre l’enregistrament de la sessió en línia.';
 $string['modulename_link'] = 'BigBlueButton/view';
+$string['modulenameplural'] = 'BigBlueButton';
 $string['search:activity'] = 'BigBlueButton: informació de l\'activitat';
 $string['started_at'] = 'Ha començat';
 $string['starts_at'] = 'Comença';

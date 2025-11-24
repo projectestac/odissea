@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'ja', version '4.4'.
+ * Strings for component 'tool_uploadcourse', language 'ja', version '4.5'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -139,7 +139,7 @@ $string['uploadcourses'] = 'コースをアップロードする';
 $string['uploadcourses_help'] = 'コースはテキストファイルでアップロードできます。ファイルのフォーマットは以下のとおりです:
 
 * ファイルのそれぞれの行に1レコードを含みます。
-* それぞれのレコードは選択されたセパレータによって区切られた一連のデータです。
+* それぞれのレコードは選択されたセパレータにより区切られた一連のデータです。
 * 最初の行にはファイルの残りのフォーマットを決定する一連のフィールド名を含みます。
 * 必須フィールド名はshortname、fullnameおよびcategoryです。';
 $string['uploadcoursespreview'] = 'アップロードコースプレビュー';

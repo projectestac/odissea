@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'zh_cn', version '4.4'.
+ * Strings for component 'quiz_overview', language 'zh_cn', version '4.5'.
  *
  * @package     quiz_overview
  * @category    string
@@ -60,6 +60,7 @@ $string['privacy:metadata:preference:quiz_overview_slotmarks'] = '是否显示�
 $string['privacy:preference:slotmarks:no'] = '不在问题选项旁边显示分数。';
 $string['privacy:preference:slotmarks:yes'] = '将分数显示在问题选项旁边。';
 $string['regrade'] = '重新评分';
+$string['regrade_allquestions'] = '所有的问题';
 $string['regradeall'] = '全部重新评分';
 $string['regradealldry'] = '模拟运行全部重新评分';
 $string['regradealldrydo'] = '对标记为需要重评分的试卷（{$a}）重新评分';

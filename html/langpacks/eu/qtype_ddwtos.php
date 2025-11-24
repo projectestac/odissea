@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'eu', version '4.4'.
+ * Strings for component 'qtype_ddwtos', language 'eu', version '4.5'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -29,6 +29,8 @@ $string['addmorechoiceblanks'] = 'Gehitu {no} zuriune aukera gehiagorako';
 $string['answer'] = 'Erantzuna';
 $string['blank'] = 'hutsik';
 $string['blanknumber'] = '{$a}. hutsunea';
+$string['choicesacceptedtext'] = 'Idatzi hutsuneetara eraman beharreko erantzunak. Erantzun gehigarriak gehitu ditzakezu zailtasuna handitzeko. <br/>
+Onartutako testu-formatua: &lt;sub&gt;, &lt;sup&gt;, &lt;b&gt;, &lt;i&gt;, &lt;em&gt;, &lt;strong&gt;. TeX ere onartzen da, hasieran eta amaieran $$ erabilita.';
 $string['correctansweris'] = 'Erantzun zuzena ondokoa da: {$a}';
 $string['errorlimitedchoice'] = '[[{$a}]] aukera behin baino gehiagotan erabili da "Mugarik gabe" aukera markatu gabe. Egiaztatu berriro mesedez galdera hau.';
 $string['infinite'] = 'Mugarik gabe';

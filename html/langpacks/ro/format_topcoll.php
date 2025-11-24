@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'ro', version '4.4'.
+ * Strings for component 'format_topcoll', language 'ro', version '4.5'.
  *
  * @package     format_topcoll
  * @category    string
@@ -98,7 +98,6 @@ $string['left'] = 'Stânga';
 $string['maincoursepage'] = 'Pagina principală a cursului';
 $string['medium'] = 'Mediu';
 $string['newsectionname'] = 'Noul nume al secțiunii {$a}';
-$string['numbersections'] = 'Numărul de secțiuni';
 $string['off'] = 'Off';
 $string['on'] = 'On';
 $string['one'] = 'Unu';

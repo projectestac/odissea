@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'eu', version '4.4'.
+ * Strings for component 'data', language 'eu', version '4.5'.
  *
  * @package     data
  * @category    string
@@ -29,8 +29,6 @@ $string['action'] = 'Ekintza';
 $string['actionsmenu'] = 'Ekintzen menua';
 $string['add'] = 'Gehitu sarrera';
 $string['addcomment'] = 'Gehitu iruzkina';
-$string['addedby'] = 'Nork gehituta';
-$string['addentries'] = 'Gehitu sarrerak';
 $string['addtemplate'] = 'Gehitu sarrera orrirako txantiloia';
 $string['advancedsearch'] = 'Bilaketa aurreratua';
 $string['allowcomments'] = 'Baimendu iruzkinak sarreretan';
@@ -55,8 +53,6 @@ Eremuen formatua [[eremuaren izena]] da. Bestelako etiketen formatua ##etiketa##
 Soilik "Eskuragarri dauden etiketak" zerrendan dauden etiketak erabil daitezke txantiloi honetan.';
 $string['availabletodate'] = 'Amaiera-data';
 $string['availabletodatevalidation'] = 'Amaiera-data ezin da hasiera-data baino lehenagokoa izan.';
-$string['blank'] = 'Hutsik';
-$string['buttons'] = 'Ekintzak';
 $string['bynameondate'] = 'Egilea eta data: {$a->name} - {$a->date}';
 $string['calendarend'] = '{$a}(r)en itxiera-data:';
 $string['calendarstart'] = '{$a}(r)en hasiera-data';
@@ -126,13 +122,13 @@ $string['defaultfieldenclosure'] = '(ez dago lehenetsitakorik)';
 $string['defaultsortfield'] = 'Lehenetsitako ordenatze-eremua';
 $string['delcheck'] = 'Ezabaketa masiborako laukitxoa';
 $string['delete'] = 'Ezabatu';
-$string['deleteallentries'] = 'Ezabatu sarrera guztiak';
+$string['deleteallentries'] = 'Sarrera guztiak';
 $string['deletecomment'] = 'Ziur zaude iruzkin hau ezabatu nahi duzula?';
 $string['deleteconfirm'] = 'Ezabatu {$a} aurretiko ezarpena?';
 $string['deleted'] = 'ezabatuta';
 $string['deleteentry'] = 'Ezabatu sarrera';
 $string['deletefield'] = 'Ezabatu eremua';
-$string['deletenotenrolled'] = 'Ezabatu matrikulatu gabeko erabiltzaileen sarrerak';
+$string['deletenotenrolled'] = 'Matrikulatu gabeko erabiltzaileen sarrerak';
 $string['deletewarning'] = 'Aurretiko ezarpen bat ezabatzean berau ikastaro guztietan eskuragarri dauden aurretiko ezarpenen zerrendatik kenduko du.';
 $string['descending'] = 'Beheranzkoa';
 $string['directorynotapreset'] = '{$a->directory} Aurretiko ezarpenik ez: galdutako fitxategiak: {$a->missing_files}';
@@ -332,7 +328,6 @@ $string['nomatch'] = 'Ez da aurkitu bat datorren sarrerarik!';
 $string['nomaximum'] = 'Gehienekorik ez';
 $string['nopreviewavailable'] = 'Ez dago aurreikuspenik eskuragarri {$a}(r)entzat';
 $string['norecords'] = 'Oraindik sarrerarik ez';
-$string['nosingletemplate'] = 'Banakako-ikuspegiko txantiloia ez da oraindik zehaztu';
 $string['notapproved'] = 'Onarpenaren zain';
 $string['notapprovederror'] = 'Sarrera oraindik ez dago onartuta.';
 $string['notemplates'] = 'Oraindik ez dago txantiloirik';
@@ -355,7 +350,6 @@ $string['page-mod-data-x'] = 'Datu-baseko edozein orri';
 $string['pagesize'] = 'Sarrerak orriko';
 $string['participants'] = 'Partaideak';
 $string['picture'] = 'Irudia';
-$string['pleaseaddsome'] = 'Mesedez, sortu baten bat azpian edo <a href="{$a}">aukeratu aurrez definitutako multzo bat</a> hasteko.';
 $string['pluginadministration'] = 'Datu-basea jardueraren kudeaketa';
 $string['pluginname'] = 'Datu-basea';
 $string['portfolionotfile'] = 'Esportatu portfolio batera fitxategi batera izan beharrean (soilik csn eta leap2a)';
@@ -390,7 +384,7 @@ $string['recorddeleted'] = 'Sarrera ezabatu da';
 $string['recorddisapproved'] = 'Onartu gabeko sarrera';
 $string['recordsnotsaved'] = 'Ez da sarrerarik gorde. Mesedez, igotako fitxategiaren formatua aztertu.';
 $string['recordssaved'] = 'sarrerak gorde dira';
-$string['removealldatatags'] = 'Ezabatu datu-baseko etiketa guztiak';
+$string['removealldatatags'] = 'Datu-baseko etiketa guztiak';
 $string['requireapproval'] = 'Onarpena behar da';
 $string['requireapproval_help'] = 'Irakasle batek sarrerak onartu behar ditu ikasle guztientzat ikusgai egoteko.';
 $string['required'] = 'Beharrezkoa';
@@ -429,7 +423,6 @@ $string['saveaspresetmissingcapability'] = 'Erabiltzaileak ez dauzka datu-basea 
 $string['savedataaspreset'] = 'Gorde eremu eta txantiloi guztiak eta publikatu aurretiko ezarpen gisa gune honetan';
 $string['savesettings'] = 'Gorde ezarpenak';
 $string['savesuccess'] = 'Aurretiko ezarpena gorde da. <a href="{$a->url}">Aurreikusi aurretiko ezarpena</a>';
-$string['savetemplate'] = 'Gorde txantiloia';
 $string['search'] = 'Bilatu';
 $string['search:activity'] = 'Datu-basea - jardueraren informazioa';
 $string['search:entry'] = 'Datu-basea - sarrerak';
@@ -461,7 +454,6 @@ $string['text'] = 'Testua';
 $string['textarea'] = 'Testu-eremua';
 $string['timeadded'] = 'Gehitze-data';
 $string['timemodified'] = 'Aldatze-data';
-$string['todatabase'] = 'datu-base honetara.';
 $string['type'] = 'Eremu mota';
 $string['undefinedprocessactionmethod'] = 'Data_Preset-en ez da ekintza-metodorik definitu "{$a}" ekintza kudeatzeko.';
 $string['unknown'] = 'Eremu ezezaguna';

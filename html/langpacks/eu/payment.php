@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'payment', language 'eu', version '4.4'.
+ * Strings for component 'payment', language 'eu', version '4.5'.
  *
  * @package     payment
  * @category    string
@@ -45,7 +45,7 @@ $string['gatewaydisabled'] = 'Desgaituta';
 $string['gatewayenabled'] = 'Gaituta';
 $string['gatewaynotfound'] = 'Ez da ataria aurkitu';
 $string['gotomanageplugins'] = 'Gaitu eta desgaitu ordainketa-atariak eta gainordainak zehaztu {$a} bitartez.';
-$string['gotopaymentaccounts'] = 'Ordainketa-kontu anitz sortu ditzakezu {$a} orriko edozein ordainketa-atari erabilita';
+$string['gotopaymentaccounts'] = 'Sortu ordainketa-kontuak {$a} orriko edozein ordainketa-atari erabilita.';
 $string['hidearchived'] = 'Ezkutatu artxibatutakoak';
 $string['noaccountsavilable'] = 'Ez dago ordainketa-konturik eskuragarri.';
 $string['nocurrencysupported'] = 'Ez da ordainketarik onartzen ezein monetatan. Ziurtatu ezazu mesedez gutxienez ordainketa-atari bat gaituta dagoela.';

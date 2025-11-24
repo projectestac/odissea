@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'ur', version '4.4'.
+ * Strings for component 'qtype_truefalse', language 'ur', version '4.5'.
  *
  * @package     qtype_truefalse
  * @category    string
@@ -38,6 +38,5 @@ $string['pluginname_link'] = 'question/type/truefalse';
 $string['pluginnameadding'] = 'ایک صحیح/غلط سوال شامل کرنا';
 $string['pluginnameediting'] = 'صحیح/غلط سوال میں ترمیم کرنا';
 $string['pluginnamesummary'] = 'صرف دو انتخابوں \'صحیح\' اور \'غلط\' کے ساتھ کثیر انتخابی سوال کی ایک سادہ شکل۔';
-$string['privacy:metadata'] = 'صحیح/غلط سوال قسم کا پلگ ان کوئی ذاتی ڈیٹا محفوظ نہیں کرتا ہے۔';
 $string['selectone'] = 'ایک منتخب کریں:';
 $string['true'] = 'صحیح';

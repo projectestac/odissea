@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'ro', version '4.4'.
+ * Strings for component 'quiz', language 'ro', version '4.5'.
  *
  * @package     quiz
  * @category    string
@@ -397,6 +397,7 @@ $string['eventslotgradeitemupdated'] = 'Intervalul elementului notei a fost actu
 $string['eventslotmarkupdated'] = 'Intervalul de notare a fost actualizat';
 $string['eventslotmoved'] = 'Interval mutat';
 $string['eventslotrequirepreviousupdated'] = 'Intervalul necesită actualizare anterioară';
+$string['eventslotversionupdated'] = 'Versiune de interval actualizată';
 $string['everynquestions'] = 'Câte {$a} întrebări pe o pagină';
 $string['everyquestion'] = 'O singură întrebare pe pagină';
 $string['everythingon'] = 'Totul în';
@@ -557,6 +558,7 @@ $string['maxmarks_help'] = 'Punctajul maxim disponibil pentru fiecare întrebare
 $string['messageprovider:attempt_grading_complete'] = 'Notificare că încercarea dumneavoastră a fost notată';
 $string['messageprovider:attempt_overdue'] = 'Avertisment când încercarea de testare devine expirată';
 $string['messageprovider:confirmation'] = 'Confirmarea propriilor teste finalizate';
+$string['messageprovider:quiz_open_soon'] = 'Testul se va deschide în curând';
 $string['messageprovider:submission'] = 'Notificare pentru trimiterea testelor';
 $string['min'] = 'Min';
 $string['minutes'] = 'Minute';
@@ -648,7 +650,7 @@ $string['onlyteachersimport'] = 'Doar profesorii cu drepturi de editare pot impo
 $string['onthispage'] = 'Această pagină';
 $string['open'] = 'Fără răspuns';
 $string['openafterclose'] = 'Nu s-a putut actualiza testul. Ați specificat o dată de deschidere care e după data de închidere.';
-$string['openclosedatesupdated'] = 'Datele de începere și încheiere a testului au fost actualizate';
+$string['openclosedatesupdated'] = 'Datele de începere și încheiere';
 $string['optional'] = 'opțional';
 $string['orderandpaging'] = 'Ordonare și paginare';
 $string['orderandpaging_help'] = 'Numerele 10, 20, 30, ... opuse fiecărei întrebări indică ordinea întrebărilor. Numerele cresc din 10 în 10 pentru a lăsa spațiu pentru a fi inserate întrebări suplimentare. Pentru a reordona întrebările schimbați numerele, apoi dați click pe butonul „Reordonați întrebările”.
@@ -830,6 +832,12 @@ $string['quizopen'] = 'Testul se deschide';
 $string['quizopenclose'] = 'Datele de deschidere și de încheiere';
 $string['quizopenclose_help'] = 'Cursanții își pot începe încercările lor numai după ora de deschidere a testului și trebuie să își finalizeze încercările înainte de ora de închidere.';
 $string['quizopenclose_link'] = 'mod/test/timp';
+$string['quizopendatesoonhtml'] = '<p>Hi {$a->firstname},</p>
+<p>Testul <strong>{$a->quizname}</strong> din cursul {$a->coursename} va fi disponibil în curând.
+<p><strong>Se deschide: {$a->timeopen}</strong></p>
+<p><strong>Se închide: {$a->timeclose}</strong></p>
+<p><a href="{$a->url}">Go to quiz</a></p>';
+$string['quizopendatesoonsubject'] = 'Se deschide în {$a->timeopen}: {$a->quizname}';
 $string['quizopened'] = 'Acest test este deschis.';
 $string['quizopenedon'] = 'Testul s-a deschis la {$a}';
 $string['quizopens'] = 'Testul se deschide';
@@ -881,9 +889,9 @@ $string['regradenotallowed'] = 'Nu aveți permisiunea de a re-nota acest test';
 $string['regradingquestion'] = 'Re-notarea "{$a}".';
 $string['regradingquiz'] = 'Re-notarea testului "{$a}"';
 $string['remove'] = 'Șterge';
-$string['removeallgroupoverrides'] = 'Ștergeți toate suprascrierile grupului';
+$string['removeallgroupoverrides'] = 'Toate suprascrierile grupului';
 $string['removeallquizattempts'] = 'Șterge toate încercările la test';
-$string['removealluseroverrides'] = 'Ștergeți toate suprascrierile utilizatorului';
+$string['removealluseroverrides'] = 'Toate suprascrierile utilizatorului';
 $string['removeemptypage'] = 'Șterge pagina goală';
 $string['removepagebreak'] = 'Ștergeți pagina nouă';
 $string['removeselected'] = 'Ștergeți selecția';
@@ -995,6 +1003,7 @@ $string['selectmultipletoolbar'] = 'Selectează bară de instrumente multiplă';
 $string['selectnone'] = 'Deselectează toate';
 $string['selectquestionslot'] = 'Selectează întrebare {$a}';
 $string['selectquestiontype'] = '-- Selectați tipul de întrebare --';
+$string['sendnotificationopendatesoon'] = 'Notifică utilizatorul când se apropie data de deschidere e testului';
 $string['serveradded'] = 'Server adăugat';
 $string['serveridentifier'] = 'Identificator';
 $string['serverinfo'] = 'Informații despre server';

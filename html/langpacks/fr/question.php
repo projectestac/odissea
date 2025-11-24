@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'fr', version '4.4'.
+ * Strings for component 'question', language 'fr', version '4.5'.
  *
  * @package     question
  * @category    string
@@ -313,7 +313,6 @@ $string['nocate'] = 'Aucune catégorie {$a} !';
 $string['noconditionspecified'] = 'Veuillez indiquer une condition';
 $string['nopermissionadd'] = 'Vous n’avez pas les permissions requises pour ajouter des questions ici.';
 $string['nopermissionedit'] = 'Vous n’avez pas les permissions requises pour modifier ici les questions.';
-$string['nopermissionmove'] = 'Vous n’avez pas les permissions requises pour déplacer des questions depuis ici. Vous devez enregistrer la question dans cette catégorie ou l’enregistrer comme nouvelle question.';
 $string['noprobs'] = 'Aucun problème n’a été détecté dans votre banque de questions.';
 $string['noquestionbanks'] = 'Aucun plugin banque de questions trouvé.';
 $string['noquestions'] = 'Aucune question à exporter. Assurez-vous que vous avez sélectionné pour l’exportation une catégorie contenant des questions.';
@@ -404,7 +403,11 @@ $string['questionbehavioursorderexplained'] = 'Saisissez une liste des comportem
 $string['questioncategories'] = 'Catégories de questions';
 $string['questioncategory'] = 'Catégorie de questions';
 $string['questioncatsfor'] = 'Catégories de question de « {$a} »';
+$string['questiondefaultssave'] = 'Enregistrer les options de la question comme réglages par défaut';
+$string['questiondefaultssave_desc'] = 'Si ce réglage est activé, les options de question comme « Points par défaut », « Une ou plusieurs réponses ?», etc. seront enregistrées comme préférences utilisateur lorsque le formulaire de modification de question est envoyé. Les valeurs enregistrées seront utilisées comme valeur par défaut la prochaine fois que le formulaire est affiché.';
 $string['questiondoesnotexist'] = 'Cette question n’existe pas';
+$string['questionediting'] = 'Modification de question';
+$string['questionediting_desc'] = 'Ces réglages s’appliquent aux formulaires de modification de questions.';
 $string['questionformtagheader'] = 'Tags {$a}';
 $string['questionidmismatch'] = 'Les identifiants de questions ne correspondent pas';
 $string['questionloaderror'] = 'Impossible de charger les options de question.';

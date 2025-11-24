@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_admin_presets', language 'fr', version '4.4'.
+ * Strings for component 'tool_admin_presets', language 'fr', version '4.5'.
  *
  * @package     tool_admin_presets
  * @category    string
@@ -37,8 +37,9 @@ $string['created'] = 'Créé';
 $string['currentvalue'] = 'Valeur actuelle';
 $string['deletepreset'] = 'Voulez-vous vraiment supprimer le préréglage admin de site « {$a} ?';
 $string['deletepresettitle'] = 'Supprimer le préréglage « {$a} ?';
-$string['deletepreviouslyapplied'] = 'Ce préréglage a été précédemment appliqué. La suppression d’un préréglage le retire complètement de votre site. Après suppression, vous ne pourrez plus revenir aux réglages tels qu’ils étaient avant l’application de ce préréglage.';
+$string['deletepreviouslyapplied'] = 'Voulez-vous vraiment supprimer le préréglage administrateur {$a} ?<br><br>Ce préréglage a été précédemment appliqué. La suppression d’un préréglage le retire complètement de votre site. Après suppression, vous ne pourrez plus revenir aux réglages tels qu’ils étaient avant l’application de ce préréglage.';
 $string['deleteshow'] = 'Supprimer le préréglage admin de site';
+$string['editadminpresetname'] = 'Modifier le nom du préréglage administrateur';
 $string['eventpresetdeleted'] = 'Préréglage supprimé';
 $string['eventpresetdownloaded'] = 'Préréglage téléchargé';
 $string['eventpresetexported'] = 'Préréglage créé';

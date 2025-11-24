@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'nl', version '4.4'.
+ * Strings for component 'role', language 'nl', version '4.5'.
  *
  * @package     role
  * @category    string
@@ -28,6 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['addinganewrole'] = 'Nieuwe rol toevoegen';
 $string['addrole'] = 'Nieuwe rol toevoegen';
 $string['advancedoverride'] = 'Geavanceerd rollen overschrijven';
+$string['ai:acceptpolicy'] = 'AI-beleid aanvaarden';
+$string['ai:fetchanyuserpolicystatus'] = 'Vraag aanvaarding AI-beleid';
+$string['ai:fetchpolicy'] = 'Vraag aanvaarding AI-beleid';
 $string['allow'] = 'Toelaten';
 $string['allowassign'] = 'Toewijzen van rollen toestaan';
 $string['allowed'] = 'Toegelaten';
@@ -164,6 +167,8 @@ $string['confirmunassignno'] = 'Annuleer';
 $string['confirmunassigntitle'] = 'Bevestig rolwijziging';
 $string['confirmunassignyes'] = 'Verwijder';
 $string['contentbank:access'] = 'Toegang tot de inhoudsbank';
+$string['contentbank:changelockedcustomfields'] = 'Wijzig inhoudsbank vastgezette aangepaste velden';
+$string['contentbank:configurecustomfields'] = 'Configureer inhoudsbank aangepaste velden';
 $string['contentbank:copyanycontent'] = 'Kopieer alle inhoud in de inhoudsbank';
 $string['contentbank:copycontent'] = 'Kopieer inhoud in de inhoudsbank';
 $string['contentbank:deleteanycontent'] = 'Verwijder alle inhoud uit de inhoudsbank';
@@ -191,6 +196,7 @@ $string['course:create'] = 'Cursussen aanmaken';
 $string['course:creategroupconversations'] = 'Maak groepsconversaties';
 $string['course:delete'] = 'Cursussen verwijderen';
 $string['course:downloadcoursecontent'] = 'Download cursusinhoud';
+$string['course:editcoursewelcomemessage'] = 'Bewerk cursus welkomstbericht';
 $string['course:enrolconfig'] = 'Configureer aanmeldingen in cursussen';
 $string['course:enrolreview'] = 'Aanmeldingen in cursussen nakijken';
 $string['course:ignoreavailabilityrestrictions'] = 'Negeer beschikbaarheidsbeperkingen';
@@ -239,8 +245,8 @@ $string['defaultrole'] = 'Standaard rol';
 $string['defaultx'] = 'Standaard: {$a}';
 $string['defineroles'] = 'Definieer rollen';
 $string['definitionofrolex'] = 'Definitie van rol \'{$a}\'';
-$string['deletecourseoverrides'] = 'Verwijder alle overschrijvingen in de cursus';
-$string['deletelocalroles'] = 'Verwijder alle toegewezen rollen';
+$string['deletecourseoverrides'] = 'Alle overschrijvingen in de cursus';
+$string['deletelocalroles'] = 'Alle lokale toegewezen rollen';
 $string['deleterolesure'] = '<p>Ben je zeker dat je de rol "{$a->name} ({$a->shortname})" wil verwijderen?</p><p>Op dit moment is de rol aan {$a->count} gebruikers toegewezen.</p>';
 $string['deletexrole'] = 'Verwijder {$a} rol';
 $string['duplicaterole'] = 'Kopieer rol';
@@ -543,6 +549,7 @@ $string['user:viewalldetails'] = 'Bekijk alle informatie van de gebruiker';
 $string['user:viewdetails'] = 'Gebruikersprofielen bekijken';
 $string['user:viewhiddendetails'] = 'Verborgen details van gebruikers bekijken';
 $string['user:viewlastip'] = 'Laatste IP-adres van alle gebruikers bekijken';
+$string['user:viewprofilepictures'] = 'Bekijk gebruikersafbeeldingen (als verplicht aanmelden is ingeschakeld)';
 $string['user:viewuseractivitiesreport'] = 'Activiteitenrapporten van gebruikers bekijken';
 $string['user:viewusergrades'] = 'Cijfers van gebruikers bekijken';
 $string['usersfrom'] = 'Gebruikers van {$a}';

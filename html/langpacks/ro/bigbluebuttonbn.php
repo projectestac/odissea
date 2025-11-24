@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'ro', version '4.4'.
+ * Strings for component 'bigbluebuttonbn', language 'ro', version '4.5'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -41,6 +41,7 @@ $string['bigbluebuttonbn:join'] = 'Înscrie-te la o cameră BigBlueButton';
 $string['bigbluebuttonbn:managerecordings'] = 'Administrează înregistrări';
 $string['bigbluebuttonbn:protectrecordings'] = 'Protejează accesul la înregistrări';
 $string['bigbluebuttonbn:publishrecordings'] = 'Publică înregistrări';
+$string['bigbluebuttonbn:seepresentation'] = 'Întotdeauna afișează fișierul de prezentare în pagina activității';
 $string['bigbluebuttonbn:unprotectrecordings'] = 'Deprotejați înregistrările';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'Anulați publicarea înregistrărilor';
 $string['bigbluebuttonbn:view'] = 'Accesează cameră BigBlueButton';
@@ -200,6 +201,10 @@ $string['config_server_url'] = 'Adresa serverului BigBlueButton';
 $string['config_server_url_description'] = 'Adresa URL a serverului BigBlueButton.';
 $string['config_shared_secret'] = 'Parola de conectare BigBlueButton';
 $string['config_shared_secret_description'] = 'Cheia de securitate a serverului BigBlueButton.';
+$string['config_showpresentation_default'] = 'Afișează fișierul de prezentare în pagina activității';
+$string['config_showpresentation_default_description'] = 'Cursanții ar trebui să aibă acces la fișierul de prezentare înaintea sesiunii? Această setare nu are niciun efect asupra utilizatorilor cu capacitatea „Vedeți întotdeauna fișierul de prezentare pe pagina de activitate” .';
+$string['config_showpresentation_editable'] = 'Opțiunea \'Afișează fișierul de prezentare în pagina activității\'';
+$string['config_showpresentation_editable_description'] = 'Opțiune în setările activității pentru profesori de a alege dacă afișează fișierul de prezentare cursanților.';
 $string['config_uidelegation_enabled'] = 'Asignarea permisiunilor pentru interfața utilizatorului este activată';
 $string['config_uidelegation_enabled_description'] = 'Aceste setări activează sau dezactivează delegarea UI către serverul BigBlueButton.';
 $string['config_userlimit'] = 'Limită de utilizatori';
@@ -372,6 +377,7 @@ $string['mod_form_field_recordings_html'] = 'Afișați acest tabel în plain HTM
 $string['mod_form_field_recordings_imported'] = 'Afișați doar link-urile importate';
 $string['mod_form_field_recordings_preview'] = 'Afișează previzualizarea înregistrării';
 $string['mod_form_field_room_name'] = 'Denumirea camerei';
+$string['mod_form_field_showpresentation'] = 'Afișează fișierul de prezentare în pagina activității';
 $string['mod_form_field_userlimit'] = 'Limita de utilizatori';
 $string['mod_form_field_userlimit_help'] = 'Limita maximă de utilizatori acceptați într-o sesiune. Dacă limita este setată la 0, numărul de utilizatori va fi nelimitat.';
 $string['mod_form_field_voicebridge'] = 'Pod voce [####]';

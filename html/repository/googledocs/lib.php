@@ -111,7 +111,19 @@ class repository_googledocs extends repository {
             $returnurl->param('sesskey', sesskey());
         }
 
+        // XTEC ************ MODIFICAT - Recover behaviour changed by https://moodle.atlassian.net/browse/MDL-80447
+        // 2025.11.20 @aginard
+        $this->client = \core\oauth2\api::get_user_oauth_client(
+            $this->issuer,
+            $returnurl,
+            Google_Service_Drive::DRIVE_FILE . ' ' . Google_Service_Drive::DRIVE_READONLY,
+            true
+        );
+        // *********** CODI ORIGINAL
+        /*
         $this->client = \core\oauth2\api::get_user_oauth_client($this->issuer, $returnurl, Google_Service_Drive::DRIVE_FILE, true);
+        */
+        // ***************** FI
 
         return $this->client;
     }
@@ -998,7 +1010,12 @@ class repository_googledocs extends repository {
         $userservice = new repository_googledocs\rest($userauth);
         $systemservice = new repository_googledocs\rest($systemauth);
 
+        // XTEC ************ ELIMINAT - Recover behaviour changed by https://moodle.atlassian.net/browse/MDL-80447
+        // 2025.11.20 @aginard
+        /*
         $this->add_writer_to_file($userservice, $source->id, $systemuseremail);
+        */
+        // ***************** FI
 
         // Now move it to a sensible folder.
         $contextlist = array_reverse($context->get_parent_contexts(true));
@@ -1068,7 +1085,14 @@ class repository_googledocs extends repository {
             $parentid,
         );
         // Add the original file owner as a writer to the file.
+
+        // XTEC ************ ELIMINAT - Recover behaviour changed by https://moodle.atlassian.net/browse/MDL-80447
+        // 2025.11.20 @aginard
+        /*
         $this->add_writer_to_file($systemservice, $uploaded->id, $originalfile->owners[0]->emailAddress);
+        */
+        // ***************** FI
+
         $newsource = $this->get_file_summary($systemservice, $uploaded->id);
 
         // Move the copied file to the correct folder.
@@ -1304,7 +1328,16 @@ class repository_googledocs extends repository {
  */
 function repository_googledocs_oauth2_system_scopes(\core\oauth2\issuer $issuer) {
     if ($issuer->get('id') == get_config('googledocs', 'issuerid')) {
+
+        // XTEC ************ MODIFICAT - Recover behaviour changed by https://moodle.atlassian.net/browse/MDL-80447
+        // 2025.11.20 @aginard
+        return Google_Service_Drive::DRIVE_FILE . ' ' . Google_Service_Drive::DRIVE_READONLY;
+        // *********** CODI ORIGINAL
+        /*
         return Google_Service_Drive::DRIVE_FILE;
+        */
+        // ***************** FI
+
     }
     return '';
 }

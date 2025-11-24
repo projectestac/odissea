@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'gl', version '4.4'.
+ * Strings for component 'forum', language 'gl', version '4.5'.
  *
  * @package     forum
  * @category    string
@@ -551,9 +551,6 @@ $string['postmailinfo'] = 'Esta é unha copia dunha mensaxe publicada en {$a}.';
 $string['postmailnow'] = '<p>Este comentario enviarase por correo inmediatamente a todos os subscritores do foro.</p>';
 $string['postmailreply'] = 'Para responder prema nesta ligazón: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
-$string['postrating1'] = 'Maioritariamente sabendo separado';
-$string['postrating2'] = 'Separado e conectado';
-$string['postrating3'] = 'Maioritariamente sabendo conectado';
 $string['posts'] = 'Mensaxes';
 $string['postsfrom'] = 'Comentarios de';
 $string['postsmadebyuser'] = 'Comentarios feitos por {$a}';

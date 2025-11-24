@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'de', version '4.4'.
+ * Strings for component 'data', language 'de', version '4.5'.
  *
  * @package     data
  * @category    string
@@ -29,8 +29,6 @@ $string['action'] = 'Aktion';
 $string['actionsmenu'] = 'Aktionenmenü';
 $string['add'] = 'Eintrag hinzufügen';
 $string['addcomment'] = 'Kommentar hinzufügen';
-$string['addedby'] = 'Hinzugefügt von';
-$string['addentries'] = 'Einträge hinzufügen';
 $string['addtemplate'] = 'Vorlage für Einträge hinzufügen';
 $string['advancedsearch'] = 'Erweiterte Suche';
 $string['allowcomments'] = 'Kommentare';
@@ -55,8 +53,6 @@ Nutzerdefinierte Felder haben das Format [[feldname]]. Alle anderen Elemente hab
 Nur die Elemente, die unter \'Verfügbare Elemente\' aufgeführt sind, können in der Vorlage verwendet werden.';
 $string['availabletodate'] = 'Verfügbar bis';
 $string['availabletodatevalidation'] = 'Das Datum \'Verfügbar bis\' kann nicht vor dem Datum \'Verfügbar ab\' liegen.';
-$string['blank'] = 'Leer';
-$string['buttons'] = 'Aktionen';
 $string['bynameondate'] = 'von {$a->name} - {$a->date}';
 $string['calendarend'] = '{$a} endet';
 $string['calendarstart'] = '{$a} beginnt';
@@ -126,13 +122,13 @@ $string['defaultfieldenclosure'] = '(Vorgabe: kein Zeichen)';
 $string['defaultsortfield'] = 'Standard-Sortierfeld';
 $string['delcheck'] = 'Checkbox zum Löschen (Bulk)';
 $string['delete'] = 'Löschen';
-$string['deleteallentries'] = 'Alle Einträge löschen';
+$string['deleteallentries'] = 'Alle Einträge';
 $string['deletecomment'] = 'Möchten Sie diesen Kommentar wirklich löschen?';
 $string['deleteconfirm'] = 'Vorlagensatz {$a} löschen?';
 $string['deleted'] = 'gelöscht';
 $string['deleteentry'] = 'Eintrag löschen';
 $string['deletefield'] = 'Feld löschen';
-$string['deletenotenrolled'] = 'Einträge von abgemeldeten Nutzer/innen löschen';
+$string['deletenotenrolled'] = 'Einträge von abgemeldeten Nutzer/innen';
 $string['deletewarning'] = 'Das Löschen des Vorlagensatzes entfernt diesen aus der Liste der verfügbaren Vorlagensätze in allen Kursen';
 $string['descending'] = 'Absteigend';
 $string['directorynotapreset'] = '{$a->directory} ist kein Vorlagensatz. Fehlende Dateien: {$a->missing_files}';
@@ -333,7 +329,6 @@ $string['nomatch'] = 'Keine passenden Einträge gefunden';
 $string['nomaximum'] = 'Keine Höchstzahl';
 $string['nopreviewavailable'] = 'Für {$a} ist keine Vorschau verfügbar';
 $string['norecords'] = 'Bisher keine Einträge';
-$string['nosingletemplate'] = 'Die Einzelansicht wurde noch nicht definiert.';
 $string['notapproved'] = 'Freigabe ausstehend';
 $string['notapprovederror'] = 'Der Eintrag ist noch nicht freigegeben.';
 $string['notemplates'] = 'Keine Vorlagen';
@@ -356,7 +351,6 @@ $string['page-mod-data-x'] = 'Jede Datenbankseite';
 $string['pagesize'] = 'Einträge pro Seite';
 $string['participants'] = 'Teilnehmer/innen';
 $string['picture'] = 'Bild';
-$string['pleaseaddsome'] = 'Bitte erzeugen Sie ein Feld oder <a href="{$a}">wählen Sie einen Vorlagensatz</a>, um zu beginnen.';
 $string['pluginadministration'] = 'Datenbank-Administration';
 $string['pluginname'] = 'Datenbank';
 $string['portfolionotfile'] = 'In ein Portfolio und nicht als Datei exportieren (nur csv und leap2a)';
@@ -391,7 +385,7 @@ $string['recorddeleted'] = 'Datensatz gelöscht';
 $string['recorddisapproved'] = 'Eintrag nicht freigegeben';
 $string['recordsnotsaved'] = 'Kein Eintrag wurde gespeichert. Prüfen Sie bitte das Format der hochgeladenen Datei.';
 $string['recordssaved'] = 'Einträge gespeichert';
-$string['removealldatatags'] = 'Alle Datenbank-Tags entfernen';
+$string['removealldatatags'] = 'Alle Datenbank-Tags';
 $string['requireapproval'] = 'Freigabe erforderlich';
 $string['requireapproval_help'] = 'Einträge müssen von Trainer/innen erst freigegeben werden, bevor sie für alle angezeigt werden.';
 $string['required'] = 'Notwendig';
@@ -428,7 +422,6 @@ $string['saveaspresetmissingcapability'] = 'Nutzer/in hat nicht die kein Recht, 
 $string['savedataaspreset'] = 'Alle Felder und Vorlagen speichern und als Vorlagensatz  auf der Website bereitstellen';
 $string['savesettings'] = 'Einstellungen speichern';
 $string['savesuccess'] = 'Vorlagensatz gespeichert. <a href="{$a->url}">Vorschau des Vorlagensatzes</a>';
-$string['savetemplate'] = 'Vorlage speichern';
 $string['search'] = 'Suche';
 $string['search:activity'] = 'Datenbank - Aktivitätsinfo';
 $string['search:entry'] = 'Datenbank - Einträge';
@@ -460,7 +453,6 @@ $string['text'] = 'Text';
 $string['textarea'] = 'Textbereich';
 $string['timeadded'] = 'Zeit erstellt';
 $string['timemodified'] = 'Zuletzt geändert';
-$string['todatabase'] = 'in diese Datenbank';
 $string['type'] = 'Feld-Typ';
 $string['undefinedprocessactionmethod'] = 'Im Vorlagensatz wurde keine Verarbeitungsmethode definiert für: "{$a}".';
 $string['unknown'] = 'Unbekanntes Feld';

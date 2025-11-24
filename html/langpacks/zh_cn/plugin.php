@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'zh_cn', version '4.4'.
+ * Strings for component 'plugin', language 'zh_cn', version '4.5'.
  *
  * @package     plugin
  * @category    string
@@ -53,6 +53,8 @@ $string['err_response_format_version'] = '返回非预期的版本号，请重�
 $string['err_response_http_code'] = '不能获取到可用的更新数据-不可知的HTTP响应代码。';
 $string['filterall'] = '显示全部';
 $string['filtercontribonly'] = '只显示额外的插件';
+$string['filtermissingonly'] = '只显示磁盘缺失';
+$string['filternewpluginsonly'] = '只显示要安装的插件';
 $string['filterupdatesonly'] = '只显示可用的更新';
 $string['incompatibleversion'] = '不兼容的 Moodle 版本：{$a}';
 $string['isenabled'] = '启用？';
@@ -110,6 +112,8 @@ $string['status_uptodate'] = '安装';
 $string['supportedconversions'] = '支持的文档转换';
 $string['supportedmoodleversions'] = '支持的 Moodle 版本';
 $string['systemname'] = '标识';
+$string['type_aiprovider'] = 'AI Provider 插件';
+$string['type_aiprovider_plural'] = 'AI Provider 插件';
 $string['type_antivirus'] = '防病毒插件';
 $string['type_antivirus_plural'] = '防病毒插件';
 $string['type_auth'] = '认证方法';
@@ -192,6 +196,8 @@ $string['type_repository'] = '库';
 $string['type_repository_plural'] = '库';
 $string['type_search'] = '搜索引擎';
 $string['type_search_plural'] = '搜索引擎';
+$string['type_smsgateway'] = 'SMS 网关';
+$string['type_smsgateway_plural'] = 'SMS 网关';
 $string['type_theme'] = '皮肤';
 $string['type_theme_plural'] = '皮肤';
 $string['type_tool'] = '管理工具';

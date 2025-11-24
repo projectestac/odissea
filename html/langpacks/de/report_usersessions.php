@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_usersessions', language 'de', version '4.4'.
+ * Strings for component 'report_usersessions', language 'de', version '4.5'.
  *
  * @package     report_usersessions
  * @category    string
@@ -25,7 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['mysessions'] = 'Meine aktiven Sessions';
+$string['logoutothersessions'] = 'Alle anderen Browsersitzungen abmelden';
+$string['logoutothersessions_help'] = 'Melden Sie sich von allen Browsersitzungen außer dieser ab. Dies hat keine Auswirkungen auf Web-Apps.';
+$string['logoutothersessionssuccess'] = 'Sie wurden von allen anderen Sitzungen abgemeldet.';
+$string['logoutsinglesessionsuccess'] = 'Sie wurden von der Sitzung bei {$a} abgemeldet.';
+$string['mysessions'] = 'Meine aktiven Browsersitzungen';
 $string['navigationlink'] = 'Browsersessions';
 $string['pluginname'] = 'Bericht zu Nutzersessions';
 $string['privacy:metadata'] = 'Das Nutzer-Session-Berichts-Plugin speichert keine personenbezogenen Daten.';

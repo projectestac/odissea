@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ro', version '4.4'.
+ * Strings for component 'blog', language 'ro', version '4.5'.
  *
  * @package     blog
  * @category    string
@@ -71,7 +71,7 @@ $string['configuseexternalblogs'] = 'Permite utilizatorilor să specifice feed-u
 $string['courseblog'] = 'Blog curs: {$a}';
 $string['courseblogdisable'] = 'Blogurile cursului nu sunt active';
 $string['courseblogs'] = 'Utilizatorii pot vedea doar blog-urile persoanelor cu care sunt colegi de curs';
-$string['deleteblogassociations'] = 'Șterge asocierile blogului';
+$string['deleteblogassociations'] = 'Asocierile blogului';
 $string['deleteblogassociations_help'] = 'Dacă bifați, intrările de pe blog nu vor mai fi asociate cu acest curs sau oricare alte din activităţi de curs sau resurse. Intrările de blog nu vor fi şterse.';
 $string['deleteentry'] = 'Șterge postare';
 $string['deleteexternalblog'] = 'Retrage acest blog extern';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'uk', version '4.4'.
+ * Strings for component 'plugin', language 'uk', version '4.5'.
  *
  * @package     plugin
  * @category    string
@@ -53,6 +53,8 @@ $string['err_response_format_version'] = 'Непередбачувана вер�
 $string['err_response_http_code'] = 'Не вдається отримати наявні оновлення даних - непередбачуваний HTML-код відгуку.';
 $string['filterall'] = 'Показати все';
 $string['filtercontribonly'] = 'Показати тільки сторонні';
+$string['filtermissingonly'] = 'Показати лише відсутні на диску';
+$string['filternewpluginsonly'] = 'Показати лише плагіни для встановлення';
 $string['filterupdatesonly'] = 'Показати тільки з оновленнями';
 $string['incompatibleversion'] = 'Несумісна версія Moodle: {$a}';
 $string['isenabled'] = 'Увімкнено?';
@@ -110,6 +112,10 @@ $string['status_uptodate'] = 'Встановлено';
 $string['supportedconversions'] = 'Підтримувані перетворення документів';
 $string['supportedmoodleversions'] = 'Підтримувані версії Moodle';
 $string['systemname'] = 'Ідентифікатор';
+$string['type_aiplacement'] = 'Плагін розміщення AI';
+$string['type_aiplacement_plural'] = 'Плагіни розміщення AI';
+$string['type_aiprovider'] = 'Плагін постачальника AI';
+$string['type_aiprovider_plural'] = 'Плагіни постачальників AI';
 $string['type_antivirus'] = 'Антивірусний плагін';
 $string['type_antivirus_plural'] = 'Антивірусні плагіни';
 $string['type_auth'] = 'Метод ідентифікації';
@@ -192,6 +198,8 @@ $string['type_repository'] = 'Репозиторій';
 $string['type_repository_plural'] = 'Репозиторії';
 $string['type_search'] = 'Пошукова система';
 $string['type_search_plural'] = 'Пошукові системи';
+$string['type_smsgateway'] = 'SMS шлюз';
+$string['type_smsgateway_plural'] = 'SMS шлюзи';
 $string['type_theme'] = 'Тема оформлення';
 $string['type_theme_plural'] = 'Теми оформлення';
 $string['type_tool'] = 'Засіб адміністрування';

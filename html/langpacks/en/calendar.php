@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'en', version '4.4'.
+ * Strings for component 'calendar', language 'en', version '4.5'.
  *
  * @package     calendar
  * @category    string
@@ -59,6 +59,7 @@ $string['courseevents'] = 'Course events';
 $string['courses'] = 'Courses';
 $string['customexport'] = 'Custom range ({$a->timestart} - {$a->timeend})';
 $string['daily'] = 'Daily';
+$string['datepicker'] = 'Date picker';
 $string['day'] = 'Day';
 $string['dayeventsmany'] = '{$a->num} events, {$a->day}';
 $string['dayeventsnone'] = 'No events, {$a}';
@@ -71,7 +72,7 @@ $string['daywithnoevents'] = 'There are no events this day.';
 $string['default'] = 'Default';
 $string['deleteallevents'] = 'Delete all events';
 $string['deleteevent'] = 'Delete event';
-$string['deleteevents'] = 'Delete events';
+$string['deleteevents'] = 'Events';
 $string['deleteoneevent'] = 'Delete this event';
 $string['detailedmonthviewfor'] = 'Detailed month view for:';
 $string['detailedmonthviewtitle'] = 'Detailed month view: {$a}';
@@ -188,7 +189,9 @@ $string['mon'] = 'Mon';
 $string['monday'] = 'Monday';
 $string['monthly'] = 'Monthly';
 $string['monthnext'] = 'Next month';
+$string['monthnextwithname'] = 'Next month: {$a}';
 $string['monthprev'] = 'Previous month';
+$string['monthprevwithname'] = 'Previous month: {$a}';
 $string['monththis'] = 'This month';
 $string['more'] = 'More';
 $string['moreevents'] = '{$a} more';
@@ -208,7 +211,7 @@ $string['pref_lookahead_help'] = 'This sets the (maximum) number of days in the 
 $string['pref_maxevents'] = 'Maximum upcoming events';
 $string['pref_maxevents_help'] = 'This sets the maximum number of upcoming events that can be displayed. If you pick a large number here it is possible that upcoming events displays will take up a lot of space on your screen.';
 $string['pref_persistflt'] = 'Remember filter settings';
-$string['pref_persistflt_help'] = 'If this is enabled, then Moodle will remember your last event filter settings and automatically restore them each time you login.';
+$string['pref_persistflt_help'] = 'If enabled, your last event filter settings are saved for the next time you log in.';
 $string['pref_startwday'] = 'First day of week';
 $string['pref_startwday_help'] = 'Calendar weeks will be shown as starting on the day that you select here.';
 $string['pref_timeformat'] = 'Time display format';

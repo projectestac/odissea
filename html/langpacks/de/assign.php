@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'de', version '4.4'.
+ * Strings for component 'assign', language 'de', version '4.5'.
  *
  * @package     assign
  * @category    string
@@ -70,6 +70,18 @@ $string['assign:viewgrades'] = 'Bewertungen anzeigen';
 $string['assign:viewownsubmissionsummary'] = 'Eigene Abgabezusammenfassung anzeigen';
 $string['assignfeedback'] = 'Feedback Plugin';
 $string['assignfeedbackpluginname'] = 'Feedback Plugin';
+$string['assignmentduedigesthtml'] = '<p>Hallo {$a->firstname},</p>
+<p>Die folgenden Aufgaben sind am <strong>{$a->duedate}</strong> fällig.</p>
+{$a->digest}';
+$string['assignmentduedigestitem'] = '<strong>{$a->assignmentname}</strong> im Kurs {$a->coursename}<br/>
+<strong>Fällig: {$a->duetime}</strong><br/>
+<a href="{$a->url}" aria-label="Zu {$a->assignmentname}">Zur Aktivität</a>';
+$string['assignmentduedigestsubject'] = 'Sie haben Aufgaben, die in 7 Tagen fällig sind';
+$string['assignmentduesoonhtml'] = '<p>Hallo {$a->firstname},</p>
+<p>Die Aufgabe <strong>{$a->assignmentname}</strong> im Kurs {$a->coursename} ist bald fällig.</p>
+<p><strong>Fällig: {$a->duedate}</strong></p>
+<p><a href="{$a->url}">Zur Aktivität</a></p>';
+$string['assignmentduesoonsubject'] = 'Fällig am {$a->duedate}: {$a->assignmentname}';
 $string['assignmentisdue'] = 'Aufgabe ist fällig';
 $string['assignmentmail'] = 'Guten Tag,
 
@@ -91,6 +103,12 @@ $string['assignmentmailsmall'] = 'Guten Tag,
 
 Ihr E-Learning-Team';
 $string['assignmentname'] = 'Name der Aufgabe';
+$string['assignmentoverduehtml'] = '<p>Hallo {$a->firstname},</p>
+<p>die Aufgabe <strong>{$a->assignmentname}</strong> im Kurs {$a->coursename} war am <strong>{$a->duedate}</strong> fällig.</p>
+<p>Sie können Ihre Aufgabe {$a->cutoffsnippet} möglicherweise noch einreichen, aber Ihre Abgabe wird als verspätet markiert.</p>
+<p><a href="{$a->url}">Zur Aktivität</a></p>';
+$string['assignmentoverduehtmlcutoffsnippet'] = '<strong>nach {$a->cutoffdate}</strong>';
+$string['assignmentoverduesubject'] = 'Überfällig: {$a->assignmentname}';
 $string['assignmentplugins'] = 'Aufgabentypen';
 $string['assignmentsperpage'] = 'Aufgaben pro Seite';
 $string['assignsubmission'] = 'Abgabetyp';
@@ -99,19 +117,24 @@ $string['assigntimeleft'] = 'Zeit verbleibend';
 $string['attemptheading'] = 'Versuch {$a->attemptnumber}: {$a->submissionsummary}';
 $string['attempthistory'] = 'Vorherige Versuche';
 $string['attemptnumber'] = 'Nummer';
-$string['attemptreopenmethod'] = 'Zusätzliche Versuche';
-$string['attemptreopenmethod_help'] = 'Die Einstellung legt fest, ob Teilnehmer/innen zusätzliche Versuche bei der Aufgabe unternehmen können. Bei jedem Versuch werden die Note und das Feedback gespeichert und können von Trainer/in und Teilnehmer/in angezeigt werden. Mögliche Optionen sind:
+$string['attemptreopenmethod'] = 'Gewährte Versuche';
+$string['attemptreopenmethod_automatic'] = 'Automatisch';
+$string['attemptreopenmethod_automatic_help'] = 'Nach jedem Versuch wird der nächste Versuch automatisch angeboten.';
+$string['attemptreopenmethod_help'] = 'Diese Einstellung steuert, wie den Teilnehmer/innen die Versuche für die Aufgabe angeboten werden. Für jeden Versuch werden Bewertung und Feedback gespeichert und können von Trainer/in und Teilnehmer/in eingesehen werden. Die verfügbaren Optionen sind:
 
-* Nie - Es ist nur ein Versuch möglich.
-* Manuell - Zusätzliche Versuche können von Trainer/innen zugelassen werden.
-* Automatisch bis zum Bestehen - Zusätzliche Versuche sind automatisch zulässig, bis Teilnehmer/innen die für diese Aufgabe in den Bewertungen festgelegte Bestehensgrenze erreicht haben.';
+* Manuell – Nach jedem Versuch können Sie einen weiteren über die Seite "Einreichungen" oder die Seite "Bewerter/in" gewähren.
+* Automatisch – Nach jedem Versuch wird automatisch ein nächster angeboten.
+* Automatisch bis zum Bestehen – Nach jedem Versuch wird automatisch ein nächster angeboten, bis die in den Bewertungen festgelegte Bestehensgrenze erreicht ist.';
 $string['attemptreopenmethod_manual'] = 'Manuell';
+$string['attemptreopenmethod_manual_help'] = 'Nach jedem Versuch können Sie einen nächsten Versuch gewähren, u.z. über die Abgabeseite oder die Bewerterseite.';
 $string['attemptreopenmethod_none'] = 'Nie';
 $string['attemptreopenmethod_untilpass'] = 'Automatisch bis zum Bestehen';
+$string['attemptreopenmethod_untilpass_help'] = 'Nach jedem Versuch wird der nächste Versuch nach der Bewertung automatisch gewährt, bis bis die in den Bewertungen festgelegte Bestehensgrenze erreicht ist.';
 $string['attemptsettings'] = 'Einstellungen für Versuche';
 $string['availability'] = 'Verfügbarkeit';
 $string['back'] = 'Zurück';
 $string['backtoassignment'] = 'Zurück zur Aufgabe';
+$string['batchoperationaddattempt'] = 'Versuch gewähren';
 $string['batchoperationconfirmaddattempt'] = 'Einen weiteren Versuch für ausgewählte Lösungen erlauben?';
 $string['batchoperationconfirmdownloadselected'] = 'Ausgewählte Abgaben herunterladen?';
 $string['batchoperationconfirmgrantextension'] = 'Abgabeende für die ausgewählten Abgaben verlängern?';
@@ -121,18 +144,26 @@ $string['batchoperationconfirmreverttodraft'] = 'Ausgewählte Abgaben in den Ent
 $string['batchoperationconfirmsetmarkingallocation'] = 'Bewerterzuordnung für alle ausgewählten Einreichungen setzen?';
 $string['batchoperationconfirmsetmarkingworkflowstate'] = 'Bewertungsworkflow-Status für alle ausgewählten Einreichungen setzen?';
 $string['batchoperationconfirmunlock'] = 'Ausgewählte Abgaben freigeben?';
-$string['batchoperationlock'] = 'Abgaben sperren';
-$string['batchoperationreverttodraft'] = 'Abgaben in den Entwurfsstatus zurücksetzen';
+$string['batchoperationdownloadselected'] = 'Herunterladen';
+$string['batchoperationgrantextension'] = 'Erweitern';
+$string['batchoperationlock'] = 'Sperren';
+$string['batchoperationremovesubmission'] = 'Löschen';
+$string['batchoperationreverttodraft'] = 'Zurücksetzen in den Entwurfsstatus';
 $string['batchoperationsdescription'] = 'Mit Auswahl ...';
-$string['batchoperationunlock'] = 'Abgaben freigeben';
+$string['batchoperationsetmarkingallocation'] = 'Bewerter/in zuordnen';
+$string['batchoperationsetmarkingworkflowstate'] = 'Bearbeitungsstatus ändern';
+$string['batchoperationunlock'] = 'Freigeben';
 $string['batchsetallocatedmarker'] = 'Bewerter/in für {$a} ausgewählte Nutzer festlegen.';
 $string['batchsetmarkingworkflowstateforusers'] = 'Bewertungsworkflow-Status für {$a} ausgewählte Nutzer festlegen.';
 $string['beginassignment'] = 'Aufgabenbeginn';
 $string['blindmarking'] = 'Anonyme Einreichungen';
 $string['blindmarking_help'] = 'Die anonyme Einreichung verbirgt die Identität von Teilnehmer/innen während der Bewertung. Die Option kann nicht mehr geändert werden, nachdem die erste Lösung eingereicht oder Bewertung vorgenommen wurde.';
-$string['blindmarkingenabledwarning'] = 'Für diese Aktivität sind anonyme Abgaben aktiviert. Punkte werden erst in die Bewertungen übernommen, wenn die Identität der Teilnehmer/innen über das Aktionsmenü für die Benotung bekannt gegeben ist.';
+$string['blindmarkingenabledwarning'] = 'Für diese Aktivität sind anonyme Abgaben möglich.';
+$string['blindmarkingnogradewarning'] = 'Für diese Aktivität sind anonyme Abgaben möglich. Punkte werden erst dann in die Bewertungen eingetragen, wenn die Identität der Teilnehmer/innen über das Menü "Aktionen" bekannt gegeben wird.';
+$string['bulkactionsselection'] = 'Auswahl von Sammelaktionen';
 $string['cachedef_overrides'] = 'Infos zu Nutzer- und Gruppenänderungen';
 $string['calendardue'] = '{$a} ist fällig.';
+$string['calendarextension'] = '{$a} ist fällig (Verlängerung)';
 $string['calendargradingdue'] = '{$a} ist zur Bewertung fällig.';
 $string['caneditsubmission'] = 'Sie können Ihre Einreichung bearbeiten und nach Ablauf der Frist einreichen, sie wird jedoch als verspätet markiert.';
 $string['changefilters'] = 'Filter wechseln';
@@ -167,11 +198,15 @@ $string['cutoffdate_help'] = 'Wenn diese Option aktiviert ist, werden Abgaben na
 $string['cutoffdatecolon'] = 'Letzte Abgabemöglichkeit: {$a}';
 $string['cutoffdatefromdatevalidation'] = 'Der Termin der letzten Abgabemöglichkeit kann nicht früher liegen als der erlaubte Abgabebeginn.';
 $string['cutoffdatevalidation'] = 'Der Termin der letzten Abgabemöglichkeit kann nicht früher liegen als das Fälligkeitsdatum.';
+$string['defaultgradescale'] = 'Bewertungsskala';
+$string['defaultgradescale_help'] = 'Die standardmäßige Bewertungsskala wird verwendet, wenn neue Aufgaben angelegt werden. Nur standardmäßige Skalen können benutzt werden.';
+$string['defaultgradetype'] = 'Bewertungstyp';
+$string['defaultgradetype_help'] = 'Die standardmäßige Bewertungstyp wird verwendet, wenn neue Aufgaben angelegt werden.';
 $string['defaultlayout'] = 'Standardlayout wiederherstellen';
 $string['defaultsettings'] = 'Voreinstellungen';
 $string['defaultsettings_help'] = 'Diese Einstellungen legen Vorgaben für alle neuen Aufgaben fest.';
 $string['defaultteam'] = 'Standard-Gruppe';
-$string['deleteallsubmissions'] = 'Alle Abgaben löschen';
+$string['deleteallsubmissions'] = 'Alle Abgaben';
 $string['description'] = 'Beschreibung';
 $string['disabled'] = 'Deaktiviert';
 $string['downloadall'] = 'Alle Abgaben herunterladen';
@@ -197,7 +232,7 @@ $string['editsubmissionother'] = 'Abgabe bearbeiten für {$a}';
 $string['enabled'] = 'Aktiviert';
 $string['enabletimelimit'] = 'Zeitgesteuerte Aufgaben aktivieren';
 $string['enabletimelimit_help'] = 'Wenn diese Option aktiviert ist, können Sie auf der Seite mit den Aufgabeneinstellungen ein Zeitlimit festlegen.';
-$string['errorgradechangessaveddetail'] = 'Die Änderungen von Bewertungen und Feedback konnten nicht gespeichert werden.';
+$string['errorgradechangessaveddetail'] = 'Die Änderungen von Bewertungen und Feedback wurden nicht gespeichert.';
 $string['errornosubmissions'] = 'Keine Abgaben zum Herunterladen verfügbar';
 $string['errorquickgradingvsadvancedgrading'] = 'Die Aufgabe verwendet das erweiterte Bewertungsschema. Daher werden diese Bewertungen nun nicht abgespeichert.';
 $string['errorrecordmodified'] = 'Bevor Sie die Seite aufgerufen haben, hat jemand anders einen oder mehrere Daten geändert. Deswegen können Ihre Einträge nun nicht gespeichert werden.';
@@ -235,6 +270,8 @@ $string['expandreviewpanel'] = 'Überprüfungsansicht ausklappen';
 $string['extensionduedate'] = 'Verlängerung des Fälligkeitsdatums';
 $string['extensionduedatecurrent'] = 'Aktuelles Fristverlängerungsdatum';
 $string['extensionduedatenone'] = 'Keine';
+$string['extensionduedaterange'] = 'Variiert zwischen {$a->earliest} und {$a->latest}';
+$string['extensionduedatewithout'] = 'Nutzer/innen ohne Fristverlängerung: {$a}';
 $string['extensionnotafterduedate'] = 'Das verlängerte Fälligkeitsdatum muss nach dem (normalen) Fälligkeitsdatum liegen.';
 $string['extensionnotafterfromdate'] = 'Das verlängerte Abgabeende muss nach dem Abgabebeginn liegen.';
 $string['feedback'] = 'Feedback';
@@ -256,6 +293,7 @@ $string['feedbacksettings'] = 'Feedback';
 $string['feedbacktypes'] = 'Feedback-Typen';
 $string['filesubmissions'] = 'Dateiabgaben';
 $string['filter'] = 'Filter';
+$string['filterall'] = 'Alle';
 $string['filterdraft'] = 'Entwurf';
 $string['filtergrantedextension'] = 'Gewährte Verlängerung';
 $string['filternone'] = 'Kein Filter';
@@ -266,6 +304,7 @@ $string['fixrescalednullgrades'] = 'Die Aufgabe enthält fehlerhafte Bewertungen
 $string['fixrescalednullgradesconfirm'] = 'Möchten Sie die fehlerhaften Bewertungen automatisch beheben lassen? Alle betroffenen Bewertungen werden entfernt. Die Kurssummen könnten beeinflusst werden.';
 $string['fixrescalednullgradesdone'] = 'Bewertungen korrigiert';
 $string['gradeabovemaximum'] = 'Bewertung muss kleiner oder gleich {$a} sein.';
+$string['gradeactions'] = 'Aktionen zur Bewertung';
 $string['gradebelowzero'] = 'Bewertung muss größer oder gleich Null sein.';
 $string['gradebreakdown'] = 'Bewertungsaufschlüsselung';
 $string['gradecanbechanged'] = 'Bewertung kann geändert werden';
@@ -312,6 +351,7 @@ $string['hidegrader_help'] = 'Wenn diese Option aktiviert ist, wird die Identit�
 Beachten Sie, dass diese Einstellung keine Auswirkungen auf das Kommentarfeld auf der Bewertungsseite hat.';
 $string['hideshow'] = 'Verbergen/Anzeigen';
 $string['inactiveoverridehelp'] = '* Diese Nutzeränderung ist inaktiv, weil kein Zugang zur Aktivität besteht. Das kann aufgrund der Gruppenzugehörigkeit oder Rolle sein, aufgrund anderer Zugriffsbeschränkungen oder weil die Aktivität verborgen ist.';
+$string['includesuspendedparticipants'] = 'Gesperrte Teilnehmer/innen einschließen';
 $string['indicator:cognitivedepth'] = 'Aufgabe kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Aufgabenaktivität erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Aufgabe kognitiv';
@@ -344,6 +384,7 @@ $string['markingallocation'] = 'Bewerter-Zuordnung verwenden';
 $string['markingallocation_help'] = 'Nach der Aktivierung können einzelnen Nutzer/innen Bewerter zugewiesen werden. Dazu muss der Bewertungsablaufstatus aktiviert worden sein.';
 $string['markinganonymous'] = 'Teilweise Freigabe von Bewertungen bei anonymer Bewertung erlauben';
 $string['markinganonymous_help'] = 'Wenn diese Option aktiviert ist, sind zusammen mit anonymen Einreichungen und  Bewertungprozessen  auch teilweise Freigaben anonymer Berwertungen möglich.';
+$string['markingstate'] = 'Bearbeitungsstatus';
 $string['markingworkflow'] = 'Bewertungsworkflow verwenden';
 $string['markingworkflow_help'] = 'Nach der Aktivierung können mehrere Bewertungsdurchläufe erfolgen, bevor abschließend alle Bewertungen allen Teilnehmer/innen gleichzeitig sichtbar gemacht werden.';
 $string['markingworkflowstate'] = 'Status des Bewertungsworkflows';
@@ -361,12 +402,15 @@ $string['markingworkflowstatenotmarked'] = 'Unbewertet';
 $string['markingworkflowstatereadyforrelease'] = 'Fertig zur Freigabe';
 $string['markingworkflowstatereadyforreview'] = 'Bewertung abgeschlossen';
 $string['markingworkflowstatereleased'] = 'Freigegeben';
-$string['maxattempts'] = 'Maximal mögliche Versuche';
+$string['maxattempts'] = 'Erlaubte Versuche';
 $string['maxattempts_help'] = 'Maximale Anzahl von Abgabeversuchen. Nach dieser Anzahl von Versuchen können Teilnehmer/innen ihre Abgabe nicht mehr neu öffnen oder ändern.';
 $string['maxgrade'] = 'Bestwertung';
 $string['maxperpage'] = 'Maximale Aufgaben pro Seite';
 $string['maxperpage_help'] = 'Die Höchstzahl von Aufgaben, die in der Bewertungsübersicht angezeigt werden. Diese Einstellung ist sinnvoll zur Vermeidung von Timeout-Effekten bei Kursen mit sehr großen Nutzerzahlen.';
+$string['messageprovider:assign_due_digest'] = 'Abgabetermine in 7 Tagen';
+$string['messageprovider:assign_due_soon'] = 'Bald fälliger Abgabetermin';
 $string['messageprovider:assign_notification'] = 'Benachrichtigung zu Aufgaben';
+$string['messageprovider:assign_overdue'] = 'Überfälliger Abgabetermin';
 $string['modulename'] = 'Aufgabe';
 $string['modulename_help'] = 'Stellen Sie Aufgaben bereit, um Lösungen einzusammeln und Bewertungen und Feedback zu geben.
 
@@ -401,6 +445,7 @@ $string['noteamgrader'] = 'Kein Mitglied einer Gruppe. Die Abgabe von Aufgaben i
 $string['notgraded'] = 'Nicht bewertet';
 $string['notgradedyet'] = 'Noch nicht bewertet';
 $string['notifications'] = 'Systemnachrichten';
+$string['notifystudents'] = 'Teilnehmer/innen benachrichtigen';
 $string['nouseroverrides'] = 'Derzeit gibt es keine Nutzeränderungen.';
 $string['nousers'] = 'Keine Nutzer/innen';
 $string['nousersselected'] = 'Niemand ausgewählt';
@@ -470,8 +515,8 @@ $string['quickgradingchangessaved'] = 'Die Änderungen in der Bewertung wurden g
 $string['quickgradingresult'] = 'Schnellbewertung';
 $string['recordid'] = 'ID';
 $string['relativedatessubmissiontimeleft'] = 'Für alle Teilnehmer/innen berechnet';
-$string['removeallgroupoverrides'] = 'Alle Gruppenänderungen löschen';
-$string['removealluseroverrides'] = 'Alle Nutzeränderungen löschen';
+$string['removeallgroupoverrides'] = 'Alle Gruppenänderungen';
+$string['removealluseroverrides'] = 'Alle Nutzeränderungen';
 $string['removesubmission'] = 'Lösung entfernen';
 $string['removesubmissionconfirm'] = 'Möchten Sie wirklich Ihre Abgabe löschen?';
 $string['removesubmissionconfirmforstudent'] = 'Möchten Sie wirklich die Abgabe von {$a} löschen?';
@@ -508,6 +553,9 @@ $string['selectlink'] = 'Auswählen ...';
 $string['selectuser'] = '{$a} auswählen';
 $string['sendlatenotifications'] = 'Bewerter/innen über verspätete Abgaben von Lösungen informieren.';
 $string['sendlatenotifications_help'] = 'Mit der Aktivierung werden die Bewerter/innen (meist die Trainer/innen) benachrichtigt, wenn eine Lösung verspätet abgegeben wird. Die Zustellung der Benachrichtigung ist individuell einstellbar.';
+$string['sendnotificationduedatesoon'] = 'Nutzer/innen über den bevorstehenden Abgabetermin einer Aufgabe benachrichtigen';
+$string['sendnotificationduedigest'] = 'Nutzer/innen zu Aufgaben benachrichtigen, die in 7 Tagen fällig sind';
+$string['sendnotificationoverdue'] = 'Teilnehmer/innen sollen benachrichtigt werden,  wenn die Abgabe einer Aufgabe überfällig ist.';
 $string['sendnotifications'] = 'Mitteilungen an bewertende Personen senden';
 $string['sendnotifications_help'] = 'Mit der Aktivierung werden die Bewerter/innen (meist die Trainer/innen) benachrichtigt wenn eine Lösung zeitgerecht oder verspätet abgegeben wird. Die Zustellung der Benachrichtigung ist individuell einstellbar.';
 $string['sendstudentnotifications'] = 'Teilnehmer/in benachrichtigen';
@@ -525,6 +573,7 @@ $string['showrecentsubmissions'] = 'Neue Abgaben anzeigen';
 $string['status'] = 'Status';
 $string['studentnotificationworkflowstateerror'] = 'Der Status für den Ablauf muss \'Freigegeben\' sein, um Teilnehmer/innen zu benachrichtigen.';
 $string['submission'] = 'Abgabe';
+$string['submissionactions'] = 'Aktionen zur Abgabe';
 $string['submissionattachments'] = 'Dateien nur während der Abgabe anzeigen.';
 $string['submissionattachments_help'] = 'Wenn die Option aktiviert ist, werden Dateien nur in der Abgabeseite angezeigt.
 Wenn die Option deaktiviert ist, werden Dateien sowohl in der Aufgabenseite als auch in der Abgabeseite angezeigt.';
@@ -603,9 +652,9 @@ $string['subplugintype_assignfeedback'] = 'Feedback Plugin';
 $string['subplugintype_assignfeedback_plural'] = 'Feedback Plugins';
 $string['subplugintype_assignsubmission'] = 'Abgabe Plugin';
 $string['subplugintype_assignsubmission_plural'] = 'Abgabe Plugins';
-$string['teamname'] = 'Team: {$a}';
+$string['teamname'] = 'Gruppe: {$a}';
 $string['teamsubmission'] = 'Teilnehmer/innen geben in Gruppen ab';
-$string['teamsubmission_help'] = 'Wenn diese Option aktiviert ist, werden die Teilnehmer/innen anhand der Standardgruppen oder einer nutzerdefinierten Gruppierung in Gruppen eingeteilt. Eine Gruppeneinreichung wird unter den Gruppenmitgliedern geteilt, und alle sehen die Änderungen der jeweils anderen Personen an der Einreichung.';
+$string['teamsubmission_help'] = 'Wenn diese Option aktiviert ist, werden die Teilnehmer/innen anhand der Standardgruppen oder einer nutzerdefinierten Gruppierung in Gruppen eingeteilt. Eine Gruppeneinreichung wird unter den Gruppenmitgliedern geteilt, und alle sehen die Änderungen der jeweils anderen an der Einreichung. Sie können diese Einstellung nicht ändern, wenn bereits Abgaben vorliegen.';
 $string['teamsubmissiongroupingid'] = 'Berücksichtigte Gruppierung';
 $string['teamsubmissiongroupingid_help'] = 'Diese Gruppierung wird verwendet, um Gruppen für die Aufgabenbearbeitung zu finden. Wird keine Gruppierung festgelegt, wird die Standardeinstellung für Gruppen verwendet.';
 $string['textinstructions'] = 'Aufgabenstellung';
@@ -647,6 +696,7 @@ $string['viewfeedbackforuser'] = 'Feedback anzeigen für: {$a}';
 $string['viewfull'] = 'Vollständige Anzeige';
 $string['viewfullgradingpage'] = 'Die komplette Bewertungsseite öffnen, um ein Feedback zu erstellen.';
 $string['viewgradebook'] = 'Bewertungen anzeigen';
+$string['viewgrader'] = 'Bewerter/in anzeigen';
 $string['viewgrading'] = 'Alle Abgaben anzeigen';
 $string['viewgradingformforstudent'] = 'Bewertungsseite für Teilnehmer/in: (id={$a->id}, Name={$a->fullname}) anzeigen.';
 $string['viewownsubmissionform'] = 'Seite mit meinen eigenen Lösungen für Aufgaben anzeigen.';

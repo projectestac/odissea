@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'eu', version '4.4'.
+ * Strings for component 'cohort', language 'eu', version '4.5'.
  *
  * @package     cohort
  * @category    string
@@ -49,7 +49,10 @@ $string['currentusers'] = 'Oraingo erabiltzaileak';
 $string['currentusersmatching'] = 'Bat datozen oraingo erabiltzaileak';
 $string['defaultcontext'] = 'Lehenetsitako testuingurua';
 $string['delcohort'] = 'Ezabatu kohortea';
+$string['delcohortsconfirm'] = 'Ekintza honek kohorte guztiak eta eurekin lotutako datuak ezabatuko ditu.';
+$string['delcohortssuccess'] = 'Ezabatutako aukeratutako kohorteak';
 $string['delconfirm'] = 'Ekintza honek \'{$a}\' kohortea eta berarekin lotutako datuak ezabatuko ditu.';
+$string['delsuccess'] = 'Ezabatutako kohortea';
 $string['description'] = 'Deskribapena';
 $string['displayedrows'] = '{$a->displayed} errenkada erakutsi dira {$a->total}(e)tik.';
 $string['duplicateidnumber'] = 'Badago dagoeneko ID zenbaki bera duen kohortea';

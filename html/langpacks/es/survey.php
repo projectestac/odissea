@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'es', version '4.4'.
+ * Strings for component 'survey', language 'es', version '4.5'.
  *
  * @package     survey
  * @category    string
@@ -191,8 +191,8 @@ $string['collespname'] = 'COLLES (Preferida)';
 $string['completiondetail:submit'] = 'Enviar respuestas';
 $string['completionsubmit'] = 'Hacer una entrega';
 $string['customintro'] = 'Descripción';
-$string['deleteallanswers'] = 'Eliminar todas las respuestas a la encuesta';
-$string['deleteanalysis'] = 'Eliminar el análisis de las respuestas';
+$string['deleteallanswers'] = 'Todas las respuestas a encuestas';
+$string['deleteanalysis'] = 'Análisis de respuestas';
 $string['done'] = 'Hecho';
 $string['download'] = 'Descargar';
 $string['downloadexcel'] = 'Descargar como hoja de cálculo';

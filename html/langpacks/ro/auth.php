@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'ro', version '4.4'.
+ * Strings for component 'auth', language 'ro', version '4.5'.
  *
  * @package     auth
  * @category    string
@@ -88,11 +88,12 @@ $string['emailchangecancel'] = 'Anulează modificarea email-ului';
 $string['emailchangepending'] = 'Modificarea este în așteptare. Deschide link-ul trimis la {$a->preference_newemail}.';
 $string['emailnowexists'] = 'Adresa de e-mail pe care ați încercat să o atribuiți profilului dumnevoastră a fost atribuită altcuiva de când ați trimis cererea inițială. Cererea dumneavoastră de schimbare a adresei de e-mail este, așadar, anulată, dar puteți încerca din nou cu o altă adresă.';
 $string['emailupdate'] = 'Actualizare adresă de email';
-$string['emailupdatemessage'] = 'Stimate {$a->fullname},
+$string['emailupdatemessage'] = 'Bună ziua {$a->fullname},
 
-Ați solicitat o modificare a adresei dvs. de e-mail pentru contul dvs. pe {$a->site}. Pentru a confirma această modificare, accesați următoarea adresă web:
+Ați solicitat o modificare a adresei dumneavoastră de e-mail pentru contul dumneavoastră pe {$a->site}. Pentru a confirma această modificare, te rugăm să accesezi următoarea adresă web:
 
 {$a->url}
+Link-ul de confirmare va expira în <b>10 minutes</b>.
 
 {$a->supportemail}';
 $string['emailupdatesuccess'] = 'Adresa de e-mail a utilizatorului <em>{$a->fullname}</em> a fost schimbată cu succes în <em>{$a->email}</em>.';
@@ -160,6 +161,10 @@ $string['selfregistration_help'] = 'Dacă se selectează un plugin de autentific
 $string['settingmigrationmismatch'] = 'Valori nepotrivite detectate în timp ce corectați numele setărilor pluginului! Pluginul de autentificare „{$a->plugin}” avea setarea „{$a->setare}” configurată la „{$a->legacy}” sub numele vechi și la „{$a->current}” sub numele actual. Ultima valoare a fost setată ca fiind valabilă, dar ar trebui să verificați și să confirmați că este de așteptat.';
 $string['sha1'] = 'Hash SHA-1';
 $string['showguestlogin'] = 'Puteţi ascunde sau afişa butonul de autentificare vizitator pe pagina de autentificare.';
+$string['showloginform'] = 'Afișează formularul pentru autentificare manuală';
+$string['showloginform_desc'] = 'Dacă toți utilizatorii de pe site folosesc o metodă de autentificare, de exemplu, OAuth 2 care nu le cere să introducă un nume de utilizator și o parolă, puteți ascunde formularul de conectare manuală. Rețineți că utilizatorii cu conturi manuale nu se vor putea autentifica.
+
+Dacă ascundeți formularul de conectare manuală și nu vă puteți autentifica, îl puteți afișa din nou utilizând linia de comandă php admin/cli/cfg.php --name=showloginform --set=1.';
 $string['stdchangepassword'] = 'Foloseşte pagina standard pentru schimbarea parolei';
 $string['stdchangepassword_expl'] = 'În cazul în care sistemul extern de autentificare permite schimbarea parolei prin Moodle, comutaţi pe "Da". Această setare va avea prioritate faţă de setarea "URL schimbare parolă"';
 $string['stdchangepassword_explldap'] = 'NOTĂ: în cazul în care serverul LDAP este remote, se recomandă utilizarea LDAP printr-un tunel SSL criptat (ldaps://).';

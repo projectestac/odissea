@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'files', language 'ru', version '4.4'.
+ * Strings for component 'files', language 'ru', version '4.5'.
  *
  * @package     files
  * @category    string
@@ -43,3 +43,26 @@ $string['privacy:metadata:files:source'] = 'Источник файла';
 $string['privacy:metadata:files:timecreated'] = 'Время создания файла';
 $string['privacy:metadata:files:timemodified'] = 'Время последнего изменения файла';
 $string['privacy:metadata:files:userid'] = 'Пользователь, создавший файл';
+$string['redactor'] = 'Редактирование файла';
+$string['redactor:exifremover'] = 'EXIF Remover';
+$string['redactor:exifremover:emptyremovetags'] = 'Редактирование файла';
+$string['redactor:exifremover:enabled'] = 'Включить EXIF remover';
+$string['redactor:exifremover:enabled_desc'] = 'По умолчанию EXIF Remover поддерживает только файлы JPG с использованием PHP GD или ExifTool, если они настроены.
+Использование PHP GD может ухудшить качество изображения.
+
+Чтобы повысить производительность EXIF Remover, настройте параметры ExifTool ниже.
+
+Дополнительную информацию об установке ExifTool можно найти по адресу {$a->link}';
+$string['redactor:exifremover:failedprocessexiftool'] = 'Редактирование файла';
+$string['redactor:exifremover:failedprocessgd'] = 'Редактирование файла';
+$string['redactor:exifremover:heading'] = 'ExifTool';
+$string['redactor:exifremover:mimetype'] = 'Поддерживаемые типы MIME';
+$string['redactor:exifremover:mimetype_desc'] = 'Чтобы добавить новые типы MIME, убедитесь, что они включены в <a href="./tool/filetypes/index.php">Типы файлов</a>.';
+$string['redactor:exifremover:removetags'] = 'EXIF-теги, которые нужно удалить.';
+$string['redactor:exifremover:removetags_desc'] = 'EXIF-теги, которые необходимо удалить.';
+$string['redactor:exifremover:tag:all'] = 'Все';
+$string['redactor:exifremover:tag:gps'] = 'Только GPS';
+$string['redactor:exifremover:tooldoesnotexist'] = 'Редактирование файла';
+$string['redactor:exifremover:toolpath'] = 'Путь к ExifTool';
+$string['redactor:exifremover:toolpath_desc'] = 'Чтобы использовать ExifTool, укажите путь к исполняемому файлу ExifTool.
+Обычно в системах Unix/Linux путь выглядит так: /usr/bin/exiftool.';

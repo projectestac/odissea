@@ -108,14 +108,14 @@ switch ($type) {
 // XTEC ************ AFEGIT - Control backup hours
 // 2012.06.04 @aginard
 if (!get_protected_agora() && is_rush_hour()) {
-    print_error('rush_hour', 'local_agora', $CFG->wwwroot . '/course/view.php?id=' . $id);
+    throw new \moodle_exception('rush_hour', 'local_agora', $CFG->wwwroot . '/course/view.php?id=' . $id);
 }
 // ************ FI
 
 // XTEC ************ AFEGIT - Check if there's enough disk space quota
 // 2012.06.04 @aginard
 if (($CFG->diskPercent) && ($CFG->diskPercent >= 100)) {
-    print_error('diskquotaerror', 'local_agora', $CFG->wwwroot . '/course/view.php?id=' . $id);
+    throw new \moodle_exception('diskquotaerror', 'local_agora', $CFG->wwwroot . '/course/view.php?id=' . $id);
 }
 // ************ FI
 

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'files', language 'uk', version '4.4'.
+ * Strings for component 'files', language 'uk', version '4.5'.
  *
  * @package     files
  * @category    string
@@ -43,3 +43,26 @@ $string['privacy:metadata:files:source'] = 'Джерело файлу';
 $string['privacy:metadata:files:timecreated'] = 'Час створення файлу';
 $string['privacy:metadata:files:timemodified'] = 'Час останньої зміни файлу';
 $string['privacy:metadata:files:userid'] = 'Користувач, який створив файл';
+$string['redactor'] = 'Редагування файлів';
+$string['redactor:exifremover'] = 'Засіб для видалення EXIF';
+$string['redactor:exifremover:emptyremovetags'] = 'Видалити теги не може бути порожнім!';
+$string['redactor:exifremover:enabled'] = 'Увімкнути засіб видалення EXIF';
+$string['redactor:exifremover:enabled_desc'] = 'За замовчуванням EXIF Remover підтримує лише файли JPG за допомогою PHP GD або ExifTool, якщо налаштовано.
+Використання PHP GD для цієї мети може погіршити якість зображення.
+
+Щоб покращити продуктивність EXIF Remover, налаштуйте параметри ExifTool нижче.
+
+Більше інформації про встановлення ExifTool можна знайти на {$a->link}';
+$string['redactor:exifremover:failedprocessexiftool'] = 'Помилка редагування: не вдалося обробити файл за допомогою ExifTool!';
+$string['redactor:exifremover:failedprocessgd'] = 'Помилка редагування: не вдалося обробити файл за допомогою PHP gd!';
+$string['redactor:exifremover:heading'] = 'Помилка редагування: не вдасться обробити файл за допомогою PHP gd!';
+$string['redactor:exifremover:mimetype'] = 'Підтримувані типи MIME';
+$string['redactor:exifremover:mimetype_desc'] = 'Щоб додати нові типи MIME, переконайтеся, що вони включені в <a href="./tool/filetypes/index.php">Типи файлів</a>.';
+$string['redactor:exifremover:removetags'] = 'Теги EXIF, які буде видалено.';
+$string['redactor:exifremover:removetags_desc'] = 'Теги EXIF, які потрібно видалити.';
+$string['redactor:exifremover:tag:all'] = 'Все';
+$string['redactor:exifremover:tag:gps'] = 'Тільки GPS';
+$string['redactor:exifremover:tooldoesnotexist'] = 'Помилка редагування: ExifTool не існує!';
+$string['redactor:exifremover:toolpath'] = 'Шлях до ExifTool';
+$string['redactor:exifremover:toolpath_desc'] = 'Щоб використовувати ExifTool, укажіть шлях до виконуваного файлу ExifTool.
+Як правило, у системах Unix/Linux це шлях /usr/bin/exiftool.';

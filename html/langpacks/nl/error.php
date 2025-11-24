@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'nl', version '4.4'.
+ * Strings for component 'error', language 'nl', version '4.5'.
  *
  * @package     error
  * @category    string
@@ -101,7 +101,7 @@ $string['cannotfindinfo'] = 'Kan geen informatie voor "{$a}" vinden';
 $string['cannotfindlang'] = 'Kan taalpakket "{$a}" niet vinden';
 $string['cannotfindteacher'] = 'Kon leraar niet vinden';
 $string['cannotfinduser'] = 'Kan gebruiker {$a} niet vinden';
-$string['cannotgeoplugin'] = 'Kan niet verbinden met de geoPlugin server op https://www.geoplugin.com. Controleer je proxy-instellingen of installeer het MaxMind GeoLite City gegevensbestand';
+$string['cannotgeoplugin'] = 'Kan niet verbinden met de geoPlugin server op https://www.geoplugin.com. Controleer je proxy-instellingen of installeer het MaxMind GeoIP City gegevensbestand';
 $string['cannotgetblock'] = 'Kon blokken niet vinden in de databank';
 $string['cannotgetcats'] = 'fout bij het ophalen van het categorie record';
 $string['cannotgetdata'] = 'Kan gegevens niet ophalen';
@@ -158,7 +158,6 @@ $string['cannotsetupcapformod'] = 'Kon de mogelijkheden (capabilities) niet inst
 $string['cannotsetupcapforplugin'] = 'Kon de mogelijkheden (capabilities) niet instellen voor {$a}';
 $string['cannotshowhidecoursesincategory'] = 'Kan cursussen in categorie {$a} niet tonen/verbergen';
 $string['cannotsignup'] = 'Je kunt geen nieuw account maken want je bent al aangemeld als {$a}.';
-$string['cannotswitcheditmodeon'] = 'Kon bewerkmodus niet inschaklen';
 $string['cannotunassigncap'] = 'Kon ongebruikte mogelijkheid (capability) {$a->cap} niet wegnemen van rol {$a->role}';
 $string['cannotunassignrolefrom'] = 'Kon rol id {$a} niet wegnemen van deze gebruiker';
 $string['cannotunzipfile'] = 'Kon bestand niet unzippen';
@@ -286,6 +285,8 @@ $string['filternotenabled'] = 'Filter niet ingeschakeld!';
 $string['filternotinstalled'] = 'Filter {$a} is momenteel niet geïnstalleerd';
 $string['forumblockingtoomanyposts'] = 'Je hebt het maximale aantal berichten voor dit forum bereikt.';
 $string['functionalityremoved'] = 'U probeert toegang te krijgen tot de functionaliteit die is verwijderd.';
+$string['gdfeaturenotsupported'] = 'De GD-extensie was niet gecompileerd met methodes voor {$a}';
+$string['gdmimetypenotsupported'] = 'MIME-type niet ondersteund';
 $string['generalexceptionmessage'] = 'Uitzondering - {$a}';
 $string['gradecantregrade'] = 'Er is een fout gebeurd tijdens het berekenen van de cijfers: {$a}';
 $string['gradepubdisable'] = 'Het publiceren van cijfers is uitgeschakeld';
@@ -351,6 +352,7 @@ $string['invalidelementid'] = 'Element-ID niet geldig';
 $string['invalidentry'] = 'Dit is niet geldig';
 $string['invalidevent'] = 'Ongeldige gebeurtenis';
 $string['invalidfieldname'] = '"{$a}" is geen geldige veldnaam';
+$string['invalidfile'] = 'Bestand niet gevonden';
 $string['invalidfiletype'] = '"{$a}" is geen geldig bestandstype';
 $string['invalidformatpara'] = 'Verkeerde format voor gekozen parameter';
 $string['invalidformdata'] = 'Foute formuliergegevens';
@@ -398,6 +400,7 @@ $string['invalidxmlfile'] = '"{$a}" is geen geldig XML-bestand';
 $string['iplookupfailed'] = 'Kan de geografische informatie voor het IP-adres {$a} niet vinden.';
 $string['iplookupprivate'] = 'Over een privaat IP-adres kan geen informatie gevonden worden';
 $string['ipmismatch'] = 'Client IP klopt niet';
+$string['itemnotfound'] = 'Geen {$a->itemtype} gevonden met identificatie \'{$a->identifier}\'';
 $string['listcantmovedown'] = 'Kon het item niet naar omlaag verschuiven want het is het laatste item op hetzelfde niveau.';
 $string['listcantmoveleft'] = 'Kon het item niet naar links verschuiven - het heeft geen bovenliggend item.';
 $string['listcantmoveright'] = 'Kon het item niet naar rechts verschuiven - er is geen item op hetzelfde niveau om het ondergeschikt aan te maken. Verschuif het omlaag en probeer dan nogmaals naar rechts te verplaatsen.';
@@ -407,8 +410,8 @@ $string['listnoitem'] = 'Item niet gevonden.';
 $string['listnopeers'] = 'Geen items op hetzelfde niveau gevonden';
 $string['listupdatefail'] = 'Databankoperatie mislukt bij het aanpassen  van de hiërarchie van de lijst.';
 $string['logfilenotavailable'] = 'Logs niet beschikbaar';
-$string['loginasnoenrol'] = 'Je kunt aanmelden en afmelden bij een cursus niet gebruiken wanneer je met een "Login als"-sessie een cursus bekijkt.';
-$string['loginasonecourse'] = 'Je kunt deze cursus niet openen.<br />Je moet je "Login als"-sessie beëindigen voor je een andere cursus opent.';
+$string['loginasnoenrol'] = 'Je kunt aanmelden en afmelden bij een cursus niet gebruiken wanneer je "Login als" gebruikt.';
+$string['loginasonecourse'] = 'Je kunt deze cursus niet openen. Je moet je "Login als"-sessie beëindigen voor je een andere cursus opent.';
 $string['maxareabytes'] = 'Het bestand is groter dan de beschikbare plaats.';
 $string['maxbytesfile'] = 'Het bestand {$a->file} is te groot. De maximale grootte die je kunt uploaden is {$a->size}.';
 $string['maxdraftitemids'] = 'Door het uploaden van een grote hoeveelheid bestanden, is je bestandsupload tijdelijk beperkt. Wacht even en probeer opnieuw';
@@ -490,6 +493,7 @@ $string['nostartdatenoenddate'] = 'Een cursuseinddatum kan alleen worden ingeste
 $string['nostatstodisplay'] = 'Er zijn geen gegevens om te tonen.';
 $string['notallowedtoupdateprefremotely'] = 'Je mag deze gebruikersvoorkeuren niet van op afstand updaten';
 $string['notavailable'] = 'Dat is nu niet beschikbaar';
+$string['notfound'] = 'Niet gevonden';
 $string['notlocalisederrormessage'] = '{$a}';
 $string['notmemberofgroup'] = 'Je bent geen lid van deze cursusgroep';
 $string['notownerofkey'] = 'Je bent niet de eigenaar van deze sleutel';
@@ -540,6 +544,7 @@ $string['reverseproxyabused'] = 'Reverse proxy ingeschakeld. Er is geen rechtstr
 $string['rpcerror'] = 'Je MNET-communicatie is mislukt. Geef deze foutmelding door aan je site-beheerder:({$a})';
 $string['scheduledbackupsdisabled'] = 'Automatische back-ups zijn uitgeschakeld door de site-beheerder';
 $string['secretalreadyused'] = '"Wijzig wachtwoord bevestigingslink" is al gebruikt, het wachtwoord is niet gewijzigd';
+$string['sectioncantbefound'] = '<p><strong>Deze inhoud kan niet gevonden worden.</strong></p><p>Het kan verwijderd zijn of de URL kan fout zijn.</p>';
 $string['sectionnotexist'] = 'Deze sectie bestaat niet';
 $string['sendmessage'] = 'Stuur bericht';
 $string['sendmessagesent'] = 'Bedankt voor je feedback over: <br>{$a}';

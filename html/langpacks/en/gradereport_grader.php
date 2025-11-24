@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'en', version '4.4'.
+ * Strings for component 'gradereport_grader', language 'en', version '4.5'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -33,9 +33,8 @@ $string['ajaxfailedupdate'] = 'Unable to update [1] for [2]';
 $string['ajaxfieldchanged'] = 'The field you are currently editing has changed, would you like to use the updated value?';
 $string['aria:dropdowncolumns'] = 'Collapsed columns found';
 $string['cellactions'] = 'Cell actions';
-$string['clearall'] = 'Clear all';
 $string['clearsearch'] = 'Clear searched users';
-$string['collapsedcolumns'] = 'Collapsed columns <span class="badge rounded-pill bg-primary text-white ml-1" data-collapse="count">{$a}</span>';
+$string['collapsedcolumns'] = 'Collapsed columns <span class="badge rounded-pill bg-primary text-white ms-1" data-collapse="count">{$a}</span>';
 $string['editingmode_title'] = 'Editing the grader report';
 $string['eventgradereportviewed'] = 'Grader report viewed';
 $string['grader:manage'] = 'Manage the grader report';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customfield', language 'pt', version '4.4'.
+ * Strings for component 'customfield', language 'pt', version '4.5'.
  *
  * @package     customfield
  * @category    string
@@ -40,10 +40,13 @@ $string['customfield'] = 'Campo personalizado';
 $string['customfielddata'] = 'Dados dos campos personalizados';
 $string['customfields'] = 'Campos personalizados';
 $string['defaultvalue'] = 'Valor predefinido';
+$string['deletecategory'] = 'Apagar categoria de campo personalizado: {$a}';
+$string['deletefield'] = 'Apagar campo personalizado: {$a}';
 $string['description'] = 'Descrição';
 $string['description_help'] = 'A descrição é mostrada no formulário por baixo do campo.';
 $string['edit'] = 'Editar';
 $string['editcategoryname'] = 'Editar nome da categoria';
+$string['editfield'] = 'Editar campo personalizado: {$a}';
 $string['editingfield'] = 'A atualizar \'{$a}\'';
 $string['errorfieldtypenotfound'] = 'Tipo de campo \'{$a}\' não foi encontrado';
 $string['erroruniquevalues'] = 'Este valor já está a ser usado.';

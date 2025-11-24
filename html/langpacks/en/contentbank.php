@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'en', version '4.4'.
+ * Strings for component 'contentbank', language 'en', version '4.5'.
  *
  * @package     contentbank
  * @category    string
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['author'] = 'Author';
 $string['choosecontext'] = 'Choose course or category...';
 $string['contentbank'] = 'Content bank';
+$string['contentbankcustomfields'] = 'Content bank custom fields';
 $string['contentbankpreferences'] = 'Content bank preferences';
 $string['contentcopied'] = 'Content copied.';
 $string['contentcreated'] = 'Content created.';
@@ -50,6 +51,7 @@ $string['deletecontentconfirm'] = 'Are you sure you want to delete the content <
 $string['deletecontentconfirmlinked'] = 'The content will only be deleted from the content bank. Any places which currently link to it will be automatically updated to use a copy of the content instead.';
 $string['displaydetails'] = 'Display content bank with file details';
 $string['displayicons'] = 'Display content bank with icons';
+$string['displayunlisted'] = 'Show unlisted content';
 $string['emptynamenotallowed'] = 'Empty name is not allowed';
 $string['errordeletingcontentfromcategory'] = 'Error deleting content from category {$a}.';
 $string['errornofile'] = 'A compatible file is needed to create content.';

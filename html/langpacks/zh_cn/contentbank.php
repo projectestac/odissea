@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'zh_cn', version '4.4'.
+ * Strings for component 'contentbank', language 'zh_cn', version '4.5'.
  *
  * @package     contentbank
  * @category    string
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['author'] = '作者';
 $string['choosecontext'] = '选择课程或类别...';
 $string['contentbank'] = '内容库';
+$string['contentbankcustomfields'] = '内容库自定义域';
 $string['contentbankpreferences'] = '内容库偏好';
 $string['contentcopied'] = '已复制';
 $string['contentcreated'] = '已创建';
@@ -50,6 +51,7 @@ $string['deletecontentconfirm'] = '您确定要删除内容 <em>“{$a->name}”
 $string['deletecontentconfirmlinked'] = '内容只会从内容库中删除。 当前链接到它的任何地方都将自动更新以使用内容的副本。';
 $string['displaydetails'] = '显示包含文件详细信息的内容库';
 $string['displayicons'] = '用图标显示内容库';
+$string['displayunlisted'] = '显示不公开的内容';
 $string['emptynamenotallowed'] = '不允许空名称';
 $string['errordeletingcontentfromcategory'] = '从类别{$a}删除内容时出错。';
 $string['errornofile'] = '创建内容需要兼容的文件。';

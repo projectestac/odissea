@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'zh_cn', version '4.4'.
+ * Strings for component 'blog', language 'zh_cn', version '4.5'.
  *
  * @package     blog
  * @category    string
@@ -71,7 +71,7 @@ $string['configuseexternalblogs'] = '允许用户指定外部博客的种子。M
 $string['courseblog'] = '课程博客：{$a}';
 $string['courseblogdisable'] = '课程博客被禁用';
 $string['courseblogs'] = '用户只能浏览开放课程者的博客';
-$string['deleteblogassociations'] = '删除博客关联';
+$string['deleteblogassociations'] = '博客关联';
 $string['deleteblogassociations_help'] = '如勾选，那么博客将不再和此课程，或课程中的活动、资源相关联。不会有任何博文会被删除。';
 $string['deleteentry'] = '删除条目';
 $string['deleteexternalblog'] = '取消此外部博客的注册';

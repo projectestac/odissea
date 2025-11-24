@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'ca', version '4.4'.
+ * Strings for component 'qtype_ddmarker', language 'ca', version '4.5'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -47,7 +47,7 @@ $string['dropzones_help'] = 'Les zones de col·locació es defineixen teclejant 
 * Polígon: x1, y1; x2, y2; ...; xn, yn<br>per exemple: <code>20, 60; 100, 60; 20, 100</code>
 * Rectangle: esquerra, superior; amplada, alçada<br>per exemple: <code> 20, 60; 80, 40</code>';
 $string['followingarewrong'] = 'Els marcadors següents s\'han col·locat al lloc incorrecte: {$a}.';
-$string['followingarewrongandhighlighted'] = 'Els marcadros següents estan mal col·locats:  {$a}. El(s) marcador(s) destacats es mostren al lloc correcte .<br /> Feu clic al marcador per destacar l\'àrea permesa.';
+$string['followingarewrongandhighlighted'] = 'Els marcadors estan mal col·locats: {$a}. Els marcadors ressaltats ara es mostren en els emplaçaments correctes. Feu clic al marcador per ressaltar l\'àrea permesa.';
 $string['formerror_dragrequired'] = 'Heu d\'afegir almenys un marcador a aquesta pregunta.';
 $string['formerror_droprequired'] = 'Heu de definir almenys una zona d\'arrossegament per a aquesta pregunta.';
 $string['formerror_nobgimage'] = 'Heu de triar una imatge de fons per fer servir a l\'àrea d\'arrossegar.';

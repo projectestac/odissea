@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5p', language 'ca', version '4.4'.
+ * Strings for component 'h5p', language 'ca', version '4.5'.
  *
  * @package     h5p
  * @category    string
@@ -43,7 +43,7 @@ $string['ageDescription'] = 'El públic objectiu d\'aquest contingut. Formats d\
 $string['altText'] = 'Text alternatiu';
 $string['atto_h5p'] = 'Botó \'Insereix H5P\\';
 $string['atto_h5p_description'] = 'El botó «Insereix H5P» de l\'editor Atto permet als usuaris d\'inserir contingut H5P o bé introduint un URL o un codi d\'inserció, o bé penjant un fitxer H5P.';
-$string['author'] = 'Autor/a';
+$string['author'] = 'Autor o autora';
 $string['authorcomments'] = 'Comentaris de l\'autor';
 $string['authorcommentsdescription'] = 'Comentaris per a l\'editor del contingut. (Aquest text no es publicarà com a part de la informació dels drets d\'autor.)';
 $string['authorname'] = 'Nom de l\'autor';

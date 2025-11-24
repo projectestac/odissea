@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'ru', version '4.4'.
+ * Strings for component 'format_tiles', language 'ru', version '4.5'.
  *
  * @package     format_tiles
  * @category    string
@@ -45,7 +45,6 @@ $string['backupfailed'] = 'Резервное копирование не уда
 $string['basecolour'] = 'Цвет для плиток';
 $string['basecolour_help'] = 'Заданный здесь цвет будет применяться ко всем плиткам в курсе. (Доступные цвета определяются администратором вашего сайта на странице настроек плагина Tiles).';
 $string['brandcolour'] = 'Цвет бренда';
-$string['canceltask'] = 'Отменить задачу';
 $string['changedcolour'] = 'Цвет плитки по умолчанию для курса {$a}';
 $string['checkforproblemcourses'] = 'Проверить и исправить проблемные курсы';
 $string['clickiffailstoload'] = 'Нажмите, если страница не загружается';
@@ -115,9 +114,6 @@ $string['displaytitle_mod_ppt'] = 'Презентация PowerPoint';
 $string['displaytitle_mod_txt'] = 'Текст';
 $string['displaytitle_mod_xls'] = 'Электронная таблица Excel';
 $string['displaytitle_mod_zip'] = 'Архив';
-$string['documentation'] = 'Документация';
-$string['documentationurl'] = 'URL документации';
-$string['documentationurl_descr'] = 'URL, где можно найти документацию по плагину.';
 $string['download'] = 'Скачать';
 $string['editsectionname'] = 'Введите название плитки';
 $string['embeddedurlerror'] = 'Если внешний сайт отказывается подключаться в окне выше, используйте это:';
@@ -267,7 +263,6 @@ $string['restorefailed'] = 'Не удалось восстановить';
 $string['restoreincorrectsections'] = 'Ошибка: Невозможно завершить курс, так как исходный курс содержит неправильно пронумерованные разделы (например, номер раздела ({$a->sectionnum}) больше максимально допустимого ({$a->maxallowed}). Попробуйте исключить или удалить разделы с большими номерами.';
 $string['restoretoomanysections'] = 'Ошибка: невозможно выполнить резервное копирование или восстановление, так как включено слишком много разделов курса ({$a->numsections}), а это больше, чем разрешено ({$a->maxallowed}). Попробуйте исключить или удалить некоторые разделы.';
 $string['revealcontents'] = 'Показать содержимое плитки';
-$string['scheduleddeleteemptysections'] = 'Запланирована задача по удалению пустых разделов из курса. Пожалуйста, зайдите позже.';
 $string['section0name'] = 'Общее';
 $string['sectionerrorstring'] = 'Возможно, что время вашей сессии истекло. Попробуйте обновить эту страницу.';
 $string['sectionerrortitle'] = 'Ошибка загрузки контента';

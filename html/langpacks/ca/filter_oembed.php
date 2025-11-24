@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_oembed', language 'ca', version '4.4'.
+ * Strings for component 'filter_oembed', language 'ca', version '4.5'.
  *
  * @package     filter_oembed
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['cachelifespan_daily'] = '1 dia';
 $string['cachelifespan_desc'] = 'L\'interval de temps d\'actualització de la llista de proveïdors.';
 $string['cachelifespan_weekly'] = '1 setmana';
-$string['deleteproviderconfirm'] = 'Esteu segur de voler eliminar el proveïdor «{$a}»?';
+$string['deleteproviderconfirm'] = 'Confirmeu que voleu eliminar el proveïdor «{$a}»?';
 $string['deleteprovidertitle'] = 'Elimina el proveïdor';
 $string['downloadproviders'] = 'Proveïdors descarregats';
 $string['enabled'] = 'Habilitat';

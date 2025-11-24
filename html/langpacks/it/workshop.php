@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'it', version '4.4'.
+ * Strings for component 'workshop', language 'it', version '4.5'.
  *
  * @package     workshop
  * @category    string
@@ -324,11 +324,11 @@ $string['reassess'] = 'Modifica valutazione';
 $string['receivedgrades'] = 'Voti ricevuti';
 $string['recentassessments'] = 'Valutazioni workshop:';
 $string['recentsubmissions'] = 'Consegne workshop:';
-$string['resetassessments'] = 'Elimina tutte le consegne';
+$string['resetassessments'] = 'Tutte le valutazioni';
 $string['resetassessments_help'] = 'È possibile scegliere se eliminare solo le consegne distribuite senza influire sulle consegne. Se le consegne devono essere eliminate, saranno eliminate anche le valutazioni e questa opzione sarà ignorata. Da notare che verranno incluse anche le valutazioni delle consegne di esempio.';
 $string['resetphase'] = 'Passa alla fase di allestimento';
 $string['resetphase_help'] = 'Abilitando l\'opzione, i workshop saranno posti nella fase di allestimento.';
-$string['resetsubmissions'] = 'Elimina tutte le consegne';
+$string['resetsubmissions'] = 'Tutte le consegne';
 $string['resetsubmissions_help'] = 'Tutte le consegne e le valutazioni associate saranno eliminate. Dall\'eliminazione sono escluse le consegne di esempio.';
 $string['saveandclose'] = 'Salva e chiudi';
 $string['saveandcontinue'] = 'Salva e continua a modificare';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_file', language 'zh_cn', version '4.4'.
+ * Strings for component 'assignfeedback_file', language 'zh_cn', version '4.5'.
  *
  * @package     assignfeedback_file
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['batchoperationconfirmuploadfiles'] = '上传一个或几个反馈文件给所有选定的用户';
+$string['batchoperationuploadfiles'] = '上传反馈';
 $string['batchuploadfiles'] = '上传反馈文件给多个用户';
 $string['batchuploadfilesforusers'] = '发送反馈文件给{$a}位选定的用户';
 $string['configmaxbytes'] = '最大文件大小';
@@ -53,6 +54,6 @@ $string['privacy:metadata:filepurpose'] = '老师反馈给学生的文件。';
 $string['privacy:path'] = '反馈文件';
 $string['selectedusers'] = '选定的用户';
 $string['uploadfiles'] = '发送反馈文件';
-$string['uploadzip'] = '以一个压缩文件方式上传多个反馈文件';
+$string['uploadzip'] = '以压缩文件方式上传反馈';
 $string['uploadzipsummary'] = '以一个压缩文件方式导入的多个反馈文件';
 $string['userswithnewfeedback'] = '用户及其更新的反馈文件：{$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_seb', language 'it', version '4.4'.
+ * Strings for component 'quizaccess_seb', language 'it', version '4.5'.
  *
  * @package     quizaccess_seb
  * @category    string
@@ -96,6 +96,7 @@ $string['seb:manage_seb_allowedbrowserexamkeys'] = 'Modificare impostazioni SEB 
 $string['seb:manage_seb_allowreloadinexam'] = 'Modificare impostazioni SEB dei quiz: Consentire di ricaricare le pagine';
 $string['seb:manage_seb_allowspellchecking'] = 'Modificare impostazioni SEB dei quiz: Abilitare controllo ortografico';
 $string['seb:manage_seb_allowuserquitseb'] = 'Modificare impostazioni SEB dei quiz: Consentire uscita';
+$string['seb:manage_seb_configuremanually'] = 'Modificare impostazioni SEB dei quiz: Selezionare configurazione manuale';
 $string['seb:manage_seb_enableaudiocontrol'] = 'Modificare impostazioni SEB dei quiz: Abilitare controlli audio';
 $string['seb:manage_seb_expressionsallowed'] = 'Modificare impostazioni SEB dei quiz: Consentire espressioni semplificate';
 $string['seb:manage_seb_expressionsblocked'] = 'Modificare impostazioni SEB dei quiz: Bloccare espressioni semplificate';
@@ -114,13 +115,14 @@ $string['seb:manage_seb_showtime'] = 'Modificare impostazioni SEB dei quiz: Visu
 $string['seb:manage_seb_showwificontrol'] = 'Modificare impostazioni SEB dei quiz: Visualizzare controlli Wi-Fi';
 $string['seb:manage_seb_templateid'] = 'Modificare impostazioni SEB dei quiz: Selezionare modello SEB';
 $string['seb:manage_seb_userconfirmquit'] = 'Modificare impostazioni SEB dei quiz: Confermare uscita';
+$string['seb:manage_seb_usesebclientconfig'] = 'Modificare impostazioni SEB dei quiz: Utilizzare configurazione client SEB';
 $string['seb:managetemplates'] = 'Gestione modelli di configurazione Safe Exam Browser';
 $string['seb_activateurlfiltering'] = 'Abilita filtro URL';
 $string['seb_activateurlfiltering_help'] = 'Gli URL saranno filtrati quando verranno caricate le pagine web. L\'insieme dei filtri deve essere definito sotto.';
 $string['seb_allowcapturecamera'] = 'Consenti al browser di accedere alla telecamera';
-$string['seb_allowcapturecamera_help'] = 'Se abilitata, agli utenti verrà chiesto di concedere l\'accesso alla telecamera per SEB prima dell\'inizio della sessione d\'esame. Su macOS 12/iOS 15 o versioni successive, disabilitando questa impostazione, le applicazioni web non potranno in alcun caso accedere alla fotocamera, ovvero la registrazione video tramite WebRTC non sarà possibile.';
+$string['seb_allowcapturecamera_help'] = 'Se abilitata, agli utenti verrà chiesto di concedere l\'accesso di SEB alla videocamera prima dell\'inizio della sessione d\'esame. Su macOS 12/iOS 15 o versioni successive, disabilitando questa impostazione si impedisce alle applicazioni web di accedere alla videocamera, ovvero la registrazione video tramite WebRTC non sarà possibile.';
 $string['seb_allowcapturemicrophone'] = 'Consenti al browser di accedere al microfono';
-$string['seb_allowcapturemicrophone_help'] = 'Se abilitata, agli utenti verrà chiesto di concedere l\'accesso al microfono per SEB prima dell\'inizio della sessione d\'esame. Su macOS 12/iOS 15 o versioni successive, disabilitando questa impostazione, le applicazioni web non potranno in alcun caso accedere al microfono, ovvero la registrazione audio tramite WebRTC non sarà possibile.';
+$string['seb_allowcapturemicrophone_help'] = 'Se abilitata, agli utenti verrà chiesto di concedere l\'accesso di SEB al microfono prima dell\'inizio della sessione d\'esame. Su macOS 12/iOS 15 o versioni successive, disabilitando questa impostazione si impedisce alle applicazioni web di accedere al microfono, ovvero la registrazione video tramite WebRTC non sarà possibile.';
 $string['seb_allowedbrowserexamkeys'] = 'Chiavi browser consentite di svolgere l\'esame';
 $string['seb_allowedbrowserexamkeys_help'] = 'È possibile inserire le Chiavi browser consentite per svolgere l\'esame per le versioni di Safe Exam Browser che consentono l\'accesso al quiz. Se non verranno inserite chiavi, Moodle non controllerà chiavi degli esami.';
 $string['seb_allowreloadinexam'] = 'Abilita ricaricamento durante gli esami';

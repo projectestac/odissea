@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'sv', version '4.4'.
+ * Strings for component 'theme_boost', language 'sv', version '4.5'.
  *
  * @package     theme_boost
  * @category    string
@@ -34,7 +34,6 @@ $string['brandcolor'] = 'Varumärkesfärg';
 $string['brandcolor_desc'] = 'Accentfärgen';
 $string['choosereadme'] = 'Boost är ett modernt mycket anpassningsbart tema. Det här temat är avsett att användas direkt eller som ett överordnat tema när du skapar nya teman med Bootstrap 4.';
 $string['configtitle'] = 'Boost';
-$string['currentinparentheses'] = '(aktuellt)';
 $string['generalsettings'] = 'Generella inställningar';
 $string['loginbackgroundimage'] = 'Bakgrundsbild på inloggningssidan';
 $string['loginbackgroundimage_desc'] = 'Bild som visas som bakgrundsbild på inloggningssidan.';
@@ -48,8 +47,6 @@ $string['privacy:drawerblockclosed'] = 'Den aktuella inställningen för blockve
 $string['privacy:drawerblockopen'] = 'Den aktuella inställningen för blockverktygslådan är öppen.';
 $string['privacy:drawerindexclosed'] = 'Den aktuella inställningen för indexverktygslådan är stängd.';
 $string['privacy:drawerindexopen'] = 'Den aktuella inställningen för indexverktygslådan är öppen.';
-$string['privacy:drawernavclosed'] = 'Den aktuella inställningen för navigeringsmenyn är: stängd.';
-$string['privacy:drawernavopen'] = 'Den aktuella inställningen för navigeringsmenyn är: öppen.';
 $string['privacy:metadata'] = 'Boost-temat lagrar inga personuppgifter för någon användare.';
 $string['privacy:metadata:preference:draweropenblock'] = 'Användarens inställningar för att dölja eller visa blockverktygslådan.';
 $string['privacy:metadata:preference:draweropenindex'] = 'Användarens inställningar för att dölja eller visa kursindexverktygslådan.';

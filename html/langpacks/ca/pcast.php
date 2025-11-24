@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pcast', language 'ca', version '4.4'.
+ * Strings for component 'pcast', language 'ca', version '4.5'.
  *
  * @package     pcast
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['author'] = 'Autor/a';
+$string['author'] = 'Autor o autora';
 $string['imagefile'] = 'Imatge';
 $string['requireapproval_help'] = 'Fes que calgui aprovar els episodis abans de publicar-los';
 $string['sortbycreation'] = 'Data de creació';

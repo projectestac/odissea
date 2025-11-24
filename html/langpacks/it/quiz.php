@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'it', version '4.4'.
+ * Strings for component 'quiz', language 'it', version '4.5'.
  *
  * @package     quiz
  * @category    string
@@ -398,6 +398,7 @@ $string['eventslotgradeitemupdated'] = 'Aggiornamento slot elemento di valutazio
 $string['eventslotmarkupdated'] = 'Aggiornamento slot';
 $string['eventslotmoved'] = 'Spostamento slot';
 $string['eventslotrequirepreviousupdated'] = 'Aggiornamento slot richiesta precedente';
+$string['eventslotversionupdated'] = 'Aggiornamento versione slot';
 $string['everynquestions'] = 'Ogni {$a} domande';
 $string['everyquestion'] = 'Ogni domanda';
 $string['everythingon'] = 'Tutto su';
@@ -558,6 +559,7 @@ $string['maxmarks_help'] = 'Il punteggio massimo di ciascuna domanda.';
 $string['messageprovider:attempt_grading_complete'] = 'Notifica di valutazione del tentativo';
 $string['messageprovider:attempt_overdue'] = 'Notifiche sui tentativi dei quiz fuori tempo massimo';
 $string['messageprovider:confirmation'] = 'Conferme sui propri completamenti di quiz';
+$string['messageprovider:quiz_open_soon'] = 'Apertura quiz imminente';
 $string['messageprovider:submission'] = 'Notifiche di consegne quiz';
 $string['min'] = 'Minimo';
 $string['minutes'] = 'Minuti';
@@ -651,7 +653,7 @@ $string['onlyteachersimport'] = 'Solo i docenti con diritto di modifica possono 
 $string['onthispage'] = 'Questa pagina';
 $string['open'] = 'Senza risposta';
 $string['openafterclose'] = 'Non è stato possibile aggiornare il quiz. La data di apertura è successiva alla data di chiusura.';
-$string['openclosedatesupdated'] = 'Date apertura e chiusura quiz aggiornate';
+$string['openclosedatesupdated'] = 'Date di apertura e chiusura';
 $string['optional'] = 'opzionale';
 $string['orderandpaging'] = 'Ordinamento e impaginazione';
 $string['orderandpaging_help'] = 'I numeri 10, 20, 30, ... a fianco di ciascuna domanda indicano l\'ordinamento delle domande. Gli incrementi di 10 consentono di lasciare spazi per inserire ulteriori domande.
@@ -833,6 +835,12 @@ $string['quizopen'] = 'Apertura';
 $string['quizopenclose'] = 'Date di apertura e chiusura';
 $string['quizopenclose_help'] = 'Gli studenti possono tentare il quiz solo dopo la data di apertura. Devono anche terminare il tentativo entro la data di chiusura.';
 $string['quizopenclose_link'] = 'mod/quiz/timing';
+$string['quizopendatesoonhtml'] = '<p>Gentile {$a->firstname},</p>
+<p>l’apertura del quiz <strong>{$a->quizname}</strong> nel corso {$a->coursename} è imminente.
+<p><strong>Apertura: {$a->timeopen}</strong></p>
+<p><strong>Chiusura: {$a->timeclose}</strong></p>
+<p><a href="{$a->url}">Vai al quiz</a></p>';
+$string['quizopendatesoonsubject'] = 'Apre il {$a->timeopen}: {$a->quizname}';
 $string['quizopened'] = 'Questo quiz è aperto.';
 $string['quizopenedon'] = 'Il quiz è aperto dal {$a}';
 $string['quizopens'] = 'Quiz disponibile';
@@ -884,9 +892,9 @@ $string['regradenotallowed'] = 'Non hai l\'autorizzazione di rivalutare questo q
 $string['regradingquestion'] = 'Ricalcolo valutazione "{$a}".';
 $string['regradingquiz'] = 'Rivalutazione quiz "{$a}"';
 $string['remove'] = 'Rimuovi';
-$string['removeallgroupoverrides'] = 'Elimina tutte le personalizzazioni di gruppo';
-$string['removeallquizattempts'] = 'Elimina tutti i tentativi del quiz';
-$string['removealluseroverrides'] = 'a tutte le personalizzazioni individuali';
+$string['removeallgroupoverrides'] = 'Tutte le personalizzazioni di gruppo';
+$string['removeallquizattempts'] = 'Tutti i tentativi del quiz';
+$string['removealluseroverrides'] = 'Tutte le personalizzazioni individuali';
 $string['removeemptypage'] = 'Rimuovi pagina vuota';
 $string['removepagebreak'] = 'Elimina interruzione di pagina';
 $string['removeselected'] = 'Rimuovi selezionati';
@@ -999,6 +1007,7 @@ $string['selectmultipletoolbar'] = 'Seleziona barre degli strumenti multiple';
 $string['selectnone'] = 'Deseleziona tutto';
 $string['selectquestionslot'] = 'Seleziona domanda {$a}';
 $string['selectquestiontype'] = '-- Scegli il tipo di domanda --';
+$string['sendnotificationopendatesoon'] = 'Avvisare l\'utente dell\'imminente data di apertura del quiz';
 $string['serveradded'] = 'Server aggiunto';
 $string['serveridentifier'] = 'Identificativo';
 $string['serverinfo'] = 'Informazioni sul server';
@@ -1067,6 +1076,7 @@ $string['subplugintype_quizaccess_plural'] = 'Regole di accesso';
 $string['substitutedby'] = 'sarà  sostituito da';
 $string['summaryofattempt'] = 'Riepilogo del tentativo';
 $string['summaryofattempts'] = 'I tuoi tentativi';
+$string['summaryofattemptscaption'] = 'Riepilogo del tentativo {$a}';
 $string['temporaryblocked'] = 'Temporaneamente non è permesso ritentare il quiz.<br />Potrai tentare nuovamente il:';
 $string['theattempt'] = 'Il tentativo';
 $string['theattempt_help'] = 'Imposta se lo studente può avere o meno la possibilità di rivedere il proprio tentativo.';

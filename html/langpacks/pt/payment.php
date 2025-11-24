@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'payment', language 'pt', version '4.4'.
+ * Strings for component 'payment', language 'pt', version '4.5'.
  *
  * @package     payment
  * @category    string
@@ -45,7 +45,7 @@ $string['gatewaydisabled'] = 'Desativado';
 $string['gatewayenabled'] = 'Ativado';
 $string['gatewaynotfound'] = 'Gateway não encontrado';
 $string['gotomanageplugins'] = 'Ativar e desativar os gateways de pagamento e definir sobretaxas para {$a}.';
-$string['gotopaymentaccounts'] = 'Pode criar várias contas de pagamento usando qualquer um destes gateways na página \'{$a}\'';
+$string['gotopaymentaccounts'] = 'Pode criar várias contas de pagamento usando qualquer um destes gateways em \'{$a}\'';
 $string['hidearchived'] = 'Ocultar arquivados';
 $string['noaccountsavilable'] = 'Nenhuma conta de pagamento está disponível.';
 $string['nocurrencysupported'] = 'Nenhum pagamento em qualquer moeda é suportado. Certifique-se de que pelo menos um gateway de pagamento está ativado.';

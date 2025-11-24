@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'ro', version '4.4'.
+ * Strings for component 'grades', language 'ro', version '4.5'.
  *
  * @package     grades
  * @category    string
@@ -727,9 +727,9 @@ $string['recovergradesdefault'] = 'Recuperați notele implicite';
 $string['recovergradesdefault_help'] = 'În mod implicit, recuperați notele vechi la reînscrierea unui utilizator la un curs.';
 $string['refreshpreview'] = 'Actualizați previzualizarea';
 $string['regradeanyway'] = 'Notează din nou oricum';
-$string['removeallcoursegrades'] = 'Şterge toate notele';
+$string['removeallcoursegrades'] = 'Toate notele';
 $string['removeallcoursegrades_help'] = 'Dacă este bifat, toate elementele de notare care au fost adăugate manual în catalog vor fi șterse, împreună cu notele și datele privind notele suprascrise, excluse, ascunse și blocate. Vor rămâne doar elementele clasificate asociate activităților.';
-$string['removeallcourseitems'] = 'Şterge toate elementele şi categoriile';
+$string['removeallcourseitems'] = 'Toate elementele şi categoriile';
 $string['removeallcourseitems_help'] = 'Dacă este bifat, toate categoriile și elementele de notare care au fost adăugate manual în registrul de note vor fi șterse, împreună cu notele și datele privind notele suprascrise, excluse, ascunse și blocate. Vor rămâne doar elementele de notare asociate activităților.';
 $string['report'] = 'Raport';
 $string['reportdefault'] = 'Raport implicit ({$a})';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'eu', version '4.4'.
+ * Strings for component 'backup', language 'eu', version '4.5'.
  *
  * @package     backup
  * @category    string
@@ -204,6 +204,7 @@ $string['enableasyncbackup_help'] = 'Gaituz gero, segurtasun-kopia eta berreskur
 $string['enterasearch'] = 'Idatzi bilaketa bat';
 $string['error_block_for_module_not_found'] = 'Bloke-instantzia umezurtza (id: {$a->bid}) aurkitu da (id: {$a->mid}) ikastaro-modulurako. Bloke hau ez da berreskuratuko';
 $string['error_course_module_not_found'] = 'Ikastaro-modulu umezurtza (id: {$a})  aurkitu da. Modulu hau ez da segurtausn-kopian gehituko.';
+$string['error_delegate_section_not_found'] = 'Ikastaro-moduluaren atala delegatzeko formularioa falta da (IDa: {$a}). Ez da atalaren segurtasun-kopia egingo';
 $string['errorcopyingbackupfile'] = 'Errorea gertatu da segurtasun-kopia fitxategia aldi baterako karpetara kopiatzean berreskuratzea hasi aurretik.';
 $string['errorfilenamemustbezip'] = 'Sartzen duzun fitxategiak ZIP motakoa izan behar du eta .mbz luzapena behar du izan';
 $string['errorfilenamerequired'] = 'Fitxategi-izen egokia zehaztu behar duzu segurtasun-kopia honetarako';
@@ -280,6 +281,7 @@ $string['includeditems'] = 'Barne dituen elementuak:';
 $string['includefilereferences'] = 'Fitxategien erreferentziak kanpoko edukietara';
 $string['includesection'] = '{$a} atala';
 $string['includeuserinfo'] = 'Erabiltzaileen datuak';
+$string['includeuserinfo_instance'] = '{$a} erabiltzaile-datuak barne ditu';
 $string['inprogress'] = 'Segurtasun-kopia egiten ari da';
 $string['jumptofinalstep'] = 'Jauzi egin azken urratsera';
 $string['keep'] = 'Mantendu';
@@ -399,6 +401,7 @@ $string['rootsettingusers'] = 'Matrikulatutako erabiltzaileak barne ditu';
 $string['rootsettinguserscompletion'] = 'Erabiltzaileen osaketa-xehetasunak barne ditu';
 $string['rootsettingxapistate'] = 'H5P jardueren antzeko erabiltzaileen edukiaren aurrerapen egoera barne du';
 $string['samesitenotification'] = 'Segurtasun-kopia fitxategietarako erreferentziekin sortu zen, eta ez fitxategiekin. Berreskurapenak gune honetan soilik egin daiteke.';
+$string['section_prefix'] = '{$a}. atala:';
 $string['sectionactivities'] = 'Jarduerak';
 $string['sectioninc'] = 'Segurtasun-kopian sartua (erabiltzaileen informaziorik gabe)';
 $string['sectionincanduser'] = 'Segurtasun-kopian sartua erabiltzaileen informazioarekin';
@@ -425,6 +428,7 @@ $string['status'] = 'Egoera';
 $string['storagecourseandexternal'] = 'Ikastaroko segurtasun-kopien fitxategi-eremua eta direktorio espezifikoa';
 $string['storagecourseonly'] = 'Ikastaroko segurtasun-kopien fitxategi-eremua';
 $string['storageexternalonly'] = 'Zehaztu direktorio bat segurtasun-kopia automatizatuetarako';
+$string['subsectioncontent'] = 'Azpi-atalaren edukia';
 $string['successful'] = 'Segurtasun kopia arrakastatsua';
 $string['successfulcopy'] = 'Kopia ondo egin da';
 $string['successfulrestore'] = 'Berreskuratze arrakastatsua';

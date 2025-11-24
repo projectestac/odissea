@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ca', version '4.4'.
+ * Strings for component 'glossary', language 'ca', version '4.5'.
  *
  * @package     glossary
  * @category    string
@@ -67,7 +67,7 @@ $string['attachment_help'] = '<p>Opcionalment, podeu adjuntar UN fitxer des del 
 <p>Si torneu a editar una entrada i adjunteu un nou fitxer, qualsevol fitxer adjunt anterior serà reemplaçat.</p>
 
 <p>Si torneu a editar una entrada amb un fitxer adjunt i deixeu aquest espai en blanc, es conservarà l\'adjunt original.</p>';
-$string['author'] = 'Autor/a';
+$string['author'] = 'autor o autora';
 $string['authorview'] = 'Ordenat per autor';
 $string['back'] = 'Enrere';
 $string['cachedef_concepts'] = 'Vinculació de conceptes';

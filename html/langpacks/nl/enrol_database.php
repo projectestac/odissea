@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'nl', version '4.4'.
+ * Strings for component 'enrol_database', language 'nl', version '4.5'.
  *
  * @package     enrol_database
  * @category    string
@@ -53,9 +53,13 @@ $string['localcoursefield'] = 'Lokaal cursusveld';
 $string['localrolefield'] = 'Lokaal rolveld';
 $string['localuserfield'] = 'Lokaal gebruikersveld';
 $string['newcoursecategory'] = 'Veld voor nieuwe cursuscategorie';
+$string['newcourseenddate'] = 'Veld voor nieuwe cursus einddatum';
+$string['newcourseenddate_desc'] = 'Geef een datum in het formaat  yyyy-mm-dd of Unix time, of laat leeg om de cursus einddatum te laten berekenen uit de geconfigureerde cursusduur.';
 $string['newcoursefullname'] = 'Veld voor cursus volledige naam';
 $string['newcourseidnumber'] = 'Veld voor cursus ID-nummer';
 $string['newcourseshortname'] = 'Veld voor cursus verkorte naam';
+$string['newcoursestartdate'] = 'Veld voor nieuwe cursus startdatum';
+$string['newcoursestartdate_desc'] = 'Geef een datum in het formaat  yyyy-mm-dd of Unix time, of laat leeg om de cursus startdatum op vandaag te zetten.';
 $string['newcoursetable'] = 'Tabel voor nieuwe cursussen';
 $string['newcoursetable_desc'] = 'Geef de naam van de tabel op die de lijst met cursussen bevat die automatisch gecreëerd zou moeten worden. Leeg betekent dat er geen cursussen gemaakt zijn.';
 $string['pluginname'] = 'Externe databank';

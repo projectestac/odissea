@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'de', version '4.4'.
+ * Strings for component 'choice', language 'de', version '4.5'.
  *
  * @package     choice
  * @category    string
@@ -139,7 +139,7 @@ $string['publishinfonever'] = 'Die Ergebnisse werden nach Ihrer Antwort nicht ve
 $string['publishnames'] = 'Ergebnisse mit Namen';
 $string['publishnot'] = 'Keine Ergebnisse veröffentlichen';
 $string['removemychoice'] = 'Meine Auswahl löschen';
-$string['removeresponses'] = 'Alle Stimmabgaben löschen';
+$string['removeresponses'] = 'Alle Stimmabgaben';
 $string['responses'] = 'Antworten';
 $string['responsesa'] = 'Antworten: {$a}';
 $string['responsesresultgraphheader'] = 'Grafische Darstellung';

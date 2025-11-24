@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'publication', language 'ja', version '4.4'.
+ * Strings for component 'publication', language 'ja', version '4.5'.
  *
  * @package     publication
  * @category    string
@@ -50,9 +50,6 @@ $string['choose'] = '選択してください ...';
 $string['configautoimport'] = 'あなたが学生の提出物を自動的に学生フォルダインスタンスにインポートしたい場合、この設定を有効にしてください。この機能は学生フォルダインスタンスごとに個別に有効/無効に設定できます。';
 $string['configmaxbytes'] = '学生フォルダ内すべてのファイルのデフォルトの最大サイズです。';
 $string['configmaxfiles'] = 'ユーザごとに許可される添付のデフォルトの最大数です。';
-$string['configobtainstudentapproval'] = 'ドキュメントは学生の承認後に閲覧可能となります。';
-$string['configobtainteacherapproval'] = '学生のドキュメントはデフォルトで他のすべての参加者が閲覧できます。';
-$string['configrequiremodintro'] = 'あなたがユーザにそれぞれの活動の説明を入力させたくない場合、このオプションを無効にしてください。';
 $string['courseuploadlimit'] = 'コースアップロード制限';
 $string['currentlynotapproved'] = '* 現在承認または不承認されていません。';
 $string['cutoffdate'] = '遮断日';
@@ -166,7 +163,6 @@ $string['published_aftercheck'] = 'いいえ、教師の承認後のみ';
 $string['published_immediately'] = 'はい、すぐに (教師の承認なし)';
 $string['rejected'] = '却下';
 $string['rejectusers'] = '誰でも閲覧不可';
-$string['requiremodintro'] = '活動説明を必要とする';
 $string['reset'] = '元に戻す';
 $string['reset_userdata'] = 'すべてのデータ';
 $string['resetstudentapproval'] = 'ステータスをリセットする';

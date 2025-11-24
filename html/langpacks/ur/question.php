@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ur', version '4.4'.
+ * Strings for component 'question', language 'ur', version '4.5'.
  *
  * @package     question
  * @category    string
@@ -272,7 +272,6 @@ $string['movingquestionsnofiles'] = 'کیا آپ واقعی <strong>"{$a->tocont
 $string['needtochoosecat'] = 'اس سوال کو منتقل کرنے کے لیے آپ کو ایک زمرہ منتخب کرنے کی ضرورت ہے یا \'منسوخ کریں\' کو دبائیں۔';
 $string['nocate'] = 'ایسا کوئی زمرہ نہیں {$a}!';
 $string['nopermissionadd'] = 'آپ کو یہاں سوالات شامل کرنے کی اجازت نہیں ہے۔';
-$string['nopermissionmove'] = 'آپ کو یہاں سے سوالات منتقل کرنے کی اجازت نہیں ہے۔ آپ کو اس زمرے میں سوال کو محفوظ کرنا چاہیے یا اسے نئے سوال کے طور پر محفوظ کرنا چاہیے۔';
 $string['noprobs'] = 'آپ کے سوال کے ڈیٹا بیس میں کوئی مسئلہ نہیں ملا۔';
 $string['noquestions'] = 'کوئی سوال نہیں ملا جسے برآمد کیا جا سکے۔ یقینی بنائیں کہ آپ نے برآمد کرنے کے لیے ایک زمرہ منتخب کیا ہے جس میں سوالات ہیں۔';
 $string['noquestionsinfile'] = 'امپورٹ فائل میں کوئی سوال نہیں ہے';

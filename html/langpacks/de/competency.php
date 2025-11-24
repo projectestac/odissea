@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'de', version '4.4'.
+ * Strings for component 'competency', language 'de', version '4.5'.
  *
  * @package     competency
  * @category    string
@@ -29,6 +29,8 @@ $string['allchildrenarecomplete'] = 'Alle Abhängigkeiten sind vollständig.';
 $string['competencies'] = 'Kompetenzen';
 $string['competenciesarenotenabled'] = 'Kompetenzen sind nicht aktiviert.';
 $string['competenciessettings'] = 'Einstellungen für Kompetenzen';
+$string['competency'] = 'Kompetenz';
+$string['competencyframework'] = 'Kompetenzrahmen';
 $string['completeplanstask'] = 'Lernpläne abschließen, die abgelaufen sind';
 $string['coursecompetencyoutcome_complete'] = 'Kompetenz abschließen';
 $string['coursecompetencyoutcome_evidence'] = 'Belege anhängen';
@@ -38,7 +40,7 @@ $string['coursemodulecompetencyoutcome_complete'] = 'Kompetenz abschließen';
 $string['coursemodulecompetencyoutcome_evidence'] = 'Belege anhängen';
 $string['coursemodulecompetencyoutcome_none'] = 'Abwarten';
 $string['coursemodulecompetencyoutcome_recommend'] = 'Zur Prüfung einsenden';
-$string['deletecompetencyratings'] = 'Kompetenzwertungen löschen';
+$string['deletecompetencyratings'] = 'Kompetenzwertungen';
 $string['duplicateditemname'] = '{$a} (Kopie)';
 $string['enablecompetencies'] = 'Kompetenzen aktivieren';
 $string['enablecompetencies_desc'] = 'Kompetenzen ermöglichen es, Nutzer/innen anhand von Lernplänen zu beurteilen.';
@@ -163,8 +165,10 @@ $string['privacy:metadata:usermodified'] = 'Person, die den Datensatz erstellt o
 $string['privacy:path:plans'] = 'Lernpläne';
 $string['privacy:path:relatedtome'] = 'Mir zugeordnet';
 $string['privacy:path:userevidence'] = 'Nachweis frührerer Lernprozesse';
+$string['proficient'] = 'Kompetent';
 $string['pushcourseratingstouserplans'] = 'Kursbewertungen in die individuellen Lernpläne übertragen';
 $string['pushcourseratingstouserplans_desc'] = 'Standardwert zur Aktualisierung von individuellen Lernplänen, wenn die Kurskompetenzen bewertet sind.';
+$string['rating'] = 'Wertung';
 $string['syncplanscohorts'] = 'Lernpläne aus der Vorlage für globale Gruppen synchronisieren';
 $string['taxonomy_behaviour'] = 'Verhalten';
 $string['taxonomy_competency'] = 'Kompetenz';
@@ -197,6 +201,7 @@ $string['usercommentedonaplanhtml'] = '<p>{$a->fullname} hat den Lernplan \'{$a-
 <p>Siehe: <a href="{$a->url}">{$a->urlname}</a>.</p>';
 $string['usercommentedonaplansmall'] = '{$a->fullname} hat den Lernplan \'{$a->plan}\' kommentiert.';
 $string['usercommentedonaplansubject'] = '{$a} hat einem Lernplan kommentiert.';
+$string['usercompetency'] = 'Nutzerkompetenz';
 $string['usercompetencystatus_idle'] = 'Abwarten';
 $string['usercompetencystatus_inreview'] = 'Überprüfung läuft';
 $string['usercompetencystatus_waitingforreview'] = 'Überprüfung abwarten';

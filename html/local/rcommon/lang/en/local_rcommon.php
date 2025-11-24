@@ -1,5 +1,4 @@
 <?php
-
 $string['pluginname'] = 'Remote resources';
 
 $string['rcommon:authenticate'] = 'Marsupial content authentication';
@@ -85,6 +84,7 @@ $string['scorm'] = 'Remote SCORM';
 $string['webcontent'] = 'Remote content';
 $string['downloadbookstructures_warning'] = '<strong>ATENTION</strong>: You are trying to download the structure of books. This process can take several minutes. Please wait  ...';
 
+$string['showallusers'] = 'Show all users';
 $string['user_credentials'] = 'Users with credentials';
 $string['users_proportion'] = '{$a->with_credentials} of the {$a->total_users} users in the system have some credential';
 $string['publishers'] = 'Publishers';
@@ -210,8 +210,6 @@ Els possibles missatges d'error que es poden produir s&oacute;n:</p>
 </ul>
 <p>Cal tenir en compte que si hi ha errors, caldr&agrave; revisar-los i reparar-los per poder continuar amb el proc&eacute;s d'importaci&oacute;.</p>";
 $string['addeddate'] = 'Added';
-
-$string['marsupial_not_enabled'] = 'Marsupial is not enabled';
 
 // Deprecated lang strings
 $string['exit'] = 'Exit';

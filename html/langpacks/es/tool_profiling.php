@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_profiling', language 'es', version '4.4'.
+ * Strings for component 'tool_profiling', language 'es', version '4.5'.
  *
  * @package     tool_profiling
  * @category    string
@@ -30,6 +30,7 @@ $string['cannotfindanyrunforrunid'] = 'Lo sentimos, no se puede encontrar la eje
 $string['cannotfindanyrunforurl'] = 'Lo sentimos, no se puede encontrar ninguna ejecución de generación de perfiles para la URL \'{$a}\'';
 $string['comment'] = 'Comentario';
 $string['cputime'] = 'Tiempo de CPU';
+$string['detailview'] = 'Resumen de la ejecución';
 $string['differencesbetween2runsof'] = 'Diferencias entres 2 ejecuciones de {$a}';
 $string['executiontime'] = 'Tiempo de ejecución';
 $string['export'] = 'Exportar';

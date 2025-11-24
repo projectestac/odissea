@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'eu', version '4.4'.
+ * Strings for component 'completion', language 'eu', version '4.5'.
  *
  * @package     completion
  * @category    string
@@ -147,12 +147,13 @@ $string['csvdownload'] = 'Jaitsi kalkulu-orri formatuan (UTF-8 .csv)';
 $string['datepassed'] = 'Data igarota';
 $string['days'] = 'Egun';
 $string['daysoftotal'] = '{$a->days} egun {$a->total}(e)tik';
-$string['daysuntilcompletion'] = 'Osatzeko falta den egun kopurua';
+$string['daystakingcourse'] = 'Ikastaroa egiten igarotako egunak';
+$string['daysuntilcompletion'] = 'Osatzeko falta den denbora';
 $string['defaultactivitycompletioncourse'] = 'Hauek dira ikastaro honetako jardueretarako lehenetsitako osaketa-baldintzak.';
 $string['defaultactivitycompletionsite'] = 'Hauek dira ikastaro guztietako jardueretarako lehenetsitako osaketa-baldintzak.';
 $string['defaultcompletion'] = 'Lehenetsitako jarduera-osaketa';
 $string['defaultcompletionupdated'] = 'Aldaketak gorde dira';
-$string['deletecompletiondata'] = 'Ezabatu osaketaren datuak';
+$string['deletecompletiondata'] = 'Osaketa datuak';
 $string['dependencies'] = 'Mendekotasunak';
 $string['dependenciescompleted'] = 'Beste ikastaro batzuen osaketa';
 $string['detail_desc:receivegrade'] = 'Kalifikazio bat jasotzea';

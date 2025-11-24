@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'de', version '4.4'.
+ * Strings for component 'user', language 'de', version '4.5'.
  *
  * @package     user
  * @category    string
@@ -25,25 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcondition'] = 'Bedingung hinzufügen';
-$string['adverbfor_and'] = 'und';
-$string['adverbfor_andnot'] = 'und';
-$string['adverbfor_or'] = 'oder';
-$string['applyfilters'] = 'Filter anwenden';
-$string['clearfilterrow'] = 'Filter entfernen';
-$string['clearfilters'] = 'Filter löschen';
-$string['clearfilterselection'] = '"{$a}" aus dem Filter entfernen';
 $string['countparticipantsfound'] = '{$a} Teilnehmer/innen gefunden';
 $string['filterbykeyword'] = 'Stichwort';
-$string['filterrowlegend'] = 'Filter {$a}';
-$string['filtersetmatchdescription'] = 'Wie mehrere Filter kombiniert werden sollten';
-$string['filtertype'] = 'Filtertyp';
-$string['match'] = 'Passen';
-$string['matchofthefollowing'] = 'aus Folgendem';
 $string['moodlenetprofile'] = 'MoodleNet-Profil-ID';
 $string['moodlenetprofile_help'] = 'Dieses Feld stellt Ihre MoodleNet-Profil-ID dar, die verwendet wird, um Ihr MoodleNet-Profil mit Moodle zu verknüpfen.';
 $string['placeholdertype'] = 'Eingeben...';
-$string['placeholdertypeorselect'] = 'Schreiben oder auswählen …';
 $string['privacy:courserequestpath'] = 'Angefragte Kurse';
 $string['privacy:descriptionpath'] = 'Profilbeschreibung';
 $string['privacy:devicespath'] = 'Nutzergeräte';
@@ -149,7 +135,6 @@ $string['privacy:passwordresetpath'] = 'Kennwortzurücksetzungen';
 $string['privacy:privatefilespath'] = 'Meine Dateien';
 $string['privacy:profileimagespath'] = 'Profilbilder';
 $string['privacy:sessionpath'] = 'Sessiondaten';
-$string['selectfiltertype'] = 'Auswählen';
 $string['supportmessagealternative'] = 'Sie können auch eine E-Mail an {$a} senden.';
 $string['supportmessagenotsent'] = 'Leider kann Ihre Mitteilung nicht versendet werden!';
 $string['supportmessagesent'] = 'Ihre Mitteilung wurde gesendet.';

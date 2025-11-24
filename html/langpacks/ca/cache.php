@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'ca', version '4.4'.
+ * Strings for component 'cache', language 'ca', version '4.5'.
  *
  * @package     cache
  * @category    string
@@ -68,7 +68,6 @@ $string['cachedef_groupdata'] = 'Informació del grup del curs';
 $string['cachedef_h5p_content_type_translations'] = 'Traduccions de biblioteques de tipus de contingut H5P';
 $string['cachedef_h5p_libraries'] = 'Biblioteques H5P';
 $string['cachedef_h5p_library_files'] = 'Fitxers de la biblioteca H5P';
-$string['cachedef_hookcallbacks'] = 'Crides de retorn del Hook';
 $string['cachedef_htmlpurifier'] = 'Purificador HTML - contingut netejat';
 $string['cachedef_langmenu'] = 'Llista d\'idiomes disponibles';
 $string['cachedef_license'] = 'Llista de llicències';

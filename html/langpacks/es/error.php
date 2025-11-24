@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'es', version '4.4'.
+ * Strings for component 'error', language 'es', version '4.5'.
  *
  * @package     error
  * @category    string
@@ -36,6 +36,7 @@ $string['alreadyloggedin'] = 'Actualmente ha iniciado sesión como {$a}, necesit
 $string['authnotexisting'] = 'El plugin de autorización no existe';
 $string['backupcontainexternal'] = 'Este fichero de copia de seguridad contiene nombres de Equipos de Red externos que no están configurados localmente';
 $string['backuptablefail'] = '¡Las tablas de copia de seguridad NO pueden ser configuradas correctamente!';
+$string['blockcannotadd'] = 'No se puede añadir el bloque';
 $string['blockcannotconfig'] = 'Este bloque no soporta configuración global';
 $string['blockcannotinistantiate'] = 'Problema en la instanciación del objeto bloque';
 $string['blockcannotread'] = 'No se ha podido leer los datos para el blockid= {$a}';
@@ -99,7 +100,7 @@ $string['cannotfindinfo'] = 'No se puede encontrar información para: "{$a}"';
 $string['cannotfindlang'] = 'No se puede encontrar el paquete de idioma "{$a}"!';
 $string['cannotfindteacher'] = 'No se ha podido encontrar al profesor';
 $string['cannotfinduser'] = 'No se puede encontrar el usuario con nombre "{$a}"';
-$string['cannotgeoplugin'] = 'No se puede conectar al servidor geoPlugin en https://www.geoplugin.com. Verifique la configuración de su proxy o instale el archivo de datos MaxMind GeoLite City.';
+$string['cannotgeoplugin'] = 'No se puede conectar al servidor geoPlugin en https://www.geoplugin.com. Verifique la configuración de su proxy o instale el archivo de datos MaxMind GeoIP City .';
 $string['cannotgetblock'] = 'No se pudo recuperar bloques de la base de datos';
 $string['cannotgetcats'] = 'No se pudo obtener el registro de la categoría';
 $string['cannotgetdata'] = 'No se pudo obtener información';
@@ -156,7 +157,6 @@ $string['cannotsetupcapformod'] = 'No se pueden establecer los permisos para {$a
 $string['cannotsetupcapforplugin'] = 'No se pueden establecer los permisos para {$a}';
 $string['cannotshowhidecoursesincategory'] = 'No se puede mostrar/ocultar los cursos en la categoría {$a}';
 $string['cannotsignup'] = 'No puede crear una nueva cuenta porque actualmente ha iniciado sesión como {$a}.';
-$string['cannotswitcheditmodeon'] = 'No se pudo activar el modo de edición';
 $string['cannotunassigncap'] = 'No se puede revocar la asignación de capacidad obsoleta {$a->cap} del rol {$a->role}';
 $string['cannotunassignrolefrom'] = 'No se puede revocar la asignación de este usuario del Id de rol: {$a}';
 $string['cannotunzipfile'] = 'No se puede descomprimir el archivo';
@@ -285,6 +285,8 @@ $string['filternotenabled'] = '¡Filtro no habilitado!';
 $string['filternotinstalled'] = 'El filtro {$a} no se encuentra instalado';
 $string['forumblockingtoomanyposts'] = 'Ha excedido el umbral de tiempo para enviar mensajes a este foro';
 $string['functionalityremoved'] = 'Está intentando acceder a funcionalidad que ha sido eliminada.';
+$string['gdfeaturenotsupported'] = 'La extensión GD no se compiló con métodos para {$a}';
+$string['gdmimetypenotsupported'] = 'No se soporta el tipo MIME';
 $string['generalexceptionmessage'] = 'Excepción - {$a}';
 $string['gradecantregrade'] = 'Ha ocurrido un error durante el cálculo de las calificaciones: {$a}';
 $string['gradepubdisable'] = 'Publicación de calificaciones deshabilitada';
@@ -350,6 +352,7 @@ $string['invalidelementid'] = '¡ID de elemento incorrecto!';
 $string['invalidentry'] = 'Esta no es una entrada valida!';
 $string['invalidevent'] = 'Evento invalido';
 $string['invalidfieldname'] = '"{$a}" no es un nombre válido';
+$string['invalidfile'] = 'No se ha encontrado el archivo';
 $string['invalidfiletype'] = '"{$a}" no es un tipo de archivo válido';
 $string['invalidformatpara'] = 'Formato incorrecto para el parámetro de selección';
 $string['invalidformdata'] = 'Formulario de datos incorrecto';
@@ -397,6 +400,7 @@ $string['invalidxmlfile'] = '"{$a}" no es un archivo XML válido';
 $string['iplookupfailed'] = 'No se puede encontrar información geográfica sobre esta dirección IP {$a}';
 $string['iplookupprivate'] = 'No se puede mostrar la búsqueda de la dirección IP privada';
 $string['ipmismatch'] = 'No coincide la dirección IP del cliente';
+$string['itemnotfound'] = 'No se ha encontrado {$a->itemtype} con identificador "{$a->identifier}"';
 $string['listcantmovedown'] = 'No se pudo mover el elemento hacia abajo, ya que es el último de sus pares.';
 $string['listcantmoveleft'] = 'No se pudo mover a la izquierda el elemento ya que no tiene padre.';
 $string['listcantmoveright'] = 'No se ha podido mover a la derecha el ítem. Póngalo debajo de otro compañero y luego podrá pasarlo a la derecha.';
@@ -406,7 +410,7 @@ $string['listnoitem'] = 'Elemento no encontrado';
 $string['listnopeers'] = 'No se han encontrado iguales del ítem.';
 $string['listupdatefail'] = 'La operación de la base de datos falló al editar la jerarquía de la lista';
 $string['logfilenotavailable'] = 'Registros no disponibles';
-$string['loginasnoenrol'] = 'No puede usar las opciones matricular o dar de baja  cuando está en curso una sesión "Entrar como"';
+$string['loginasnoenrol'] = 'No puede matricular ni dar de baja cuando está usando "Entrar como"';
 $string['loginasonecourse'] = 'No puede entrar a este curso.<br /> Debe terminar la sesión "Entrar como" antes de entrar a cualquier otro curso.';
 $string['maxareabytes'] = 'El fichero es más grande que el espacio disponible en esta área.';
 $string['maxbytesfile'] = 'El archivo {$a->file} es demasiado grande. El tamaño de subida máximo es {$a->size}.';
@@ -489,6 +493,7 @@ $string['nostartdatenoenddate'] = 'Solamente se puede establecer una fecha de fi
 $string['nostatstodisplay'] = 'Lo siento, no hay datos disponibles para mostrar';
 $string['notallowedtoupdateprefremotely'] = 'No está autorizado para actualizar esta preferencia de usuario de forma remota';
 $string['notavailable'] = 'No disponible en este momento';
+$string['notfound'] = 'No se encuentra';
 $string['notlocalisederrormessage'] = '{$a}';
 $string['notmemberofgroup'] = 'Usted no es un miembro de este grupo en este curso';
 $string['notownerofkey'] = 'No es el propietario de esta llave';
@@ -540,6 +545,7 @@ $string['reverseproxyabused'] = 'Proxy inverso habilitado para que no se pueda a
 $string['rpcerror'] = 'Su configuración MNET ha fallado. Éste es el mensaje de error para pasar a su administrador: {$a}';
 $string['scheduledbackupsdisabled'] = 'Las copias de seguridad programadas han sido deshabilitadas por el administrador del sitio';
 $string['secretalreadyused'] = 'El enlace de confirmación de cambio de clave ha sido utilizando anteriormente. La clave no ha sido modificada';
+$string['sectioncantbefound'] = '<p><strong>No se puede encontrar este contenido. </strong></p><p>Tal vez se haya borrado o la URL sea incorrecta.</p>';
 $string['sectionnotexist'] = 'Esta sección no existe';
 $string['sendmessage'] = 'Enviar mensaje';
 $string['sendmessagesent'] = 'Gracias por su retroalimentación acerca de:<br>{$a}';
@@ -557,6 +563,7 @@ $string['sessionhandlerproblem'] = 'El gestor de sesión está mal configurado';
 $string['sessionipnomatch'] = 'Lo sentimos, pero su número IP parece haber cambiado desde su primer acceso. Esta norma de seguridad previene que los crackers roben su identidad mientras usted está dentro de este sitio. Los usuarios normales no deberían ver este mensaje, así que por favor pida ayuda al administrador del sitio.';
 $string['sessionipnomatch2'] = '<p>Lo sentimos, pero su dirección IP, parece haber cambiado desde la primera vez que inicio su sesión. Esta característica de seguridad impide a los \'crackers\' robar su identidad mientras está conectado a este sitio. Usted puede ver este error si utiliza redes wifi o si está en itinerancia (roaming) entre redes diferentes. Por favor, pregunte al administrador del sitio para obtener más ayuda. </p>
 <p>Si desea continuar por favor presione la tecla F5 para refrescar esta página.</p>';
+$string['sessionstarterror'] = 'No se pudo iniciar la sesión. Por favor, inténtelo de nuevo.';
 $string['sessionwaiterr'] = 'Tiempo de espera para el bloqueo de sesión.Espere a que finalice su solicitud actual y vuelva a intentarlo más tarde.';
 $string['shortnametaken'] = 'El nombre corto ({$a}) ya ha sido utilizado para otro curso';
 $string['sitepolicynotagreed'] = 'No ha aceptado la política del sitio: <a href="{$a}">Haga clic aquí para abrir la política del sitio.</a>';

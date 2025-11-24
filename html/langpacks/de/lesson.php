@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'de', version '4.4'.
+ * Strings for component 'lesson', language 'de', version '4.5'.
  *
  * @package     lesson
  * @category    string
@@ -154,7 +154,7 @@ $string['customscoring'] = 'Standardbewertung (Punkte)';
 $string['customscoring_help'] = 'Wenn diese Option aktiviert ist, kann jeder ganzzahlige Wert (positiv oder negativ)  eingegeben werden.';
 $string['deadline'] = 'Verfügbar bis';
 $string['defaultessayresponse'] = 'Die Freitext-Antwort wird später bewertet.';
-$string['deleteallattempts'] = 'Alle Versuche der Lektion löschen';
+$string['deleteallattempts'] = 'Alle Versuche der Lektion';
 $string['deletedefaults'] = '{$a} x Lektionen gelöscht';
 $string['deletedpage'] = 'Seite gelöscht';
 $string['deletepagenamed'] = 'Seite löschen: {$a}';
@@ -533,8 +533,8 @@ $string['rank'] = 'Rang';
 $string['rawgrade'] = 'Absolute Bewertung';
 $string['receivedcredit'] = 'Bewertung';
 $string['redisplaypage'] = 'Seite erneut anzeigen';
-$string['removeallgroupoverrides'] = 'Alle Gruppenänderungen löschen';
-$string['removealluseroverrides'] = 'Alle Nutzeränderungen löschen';
+$string['removeallgroupoverrides'] = 'Alle Gruppenänderungen';
+$string['removealluseroverrides'] = 'Alle Nutzeränderungen';
 $string['report'] = 'Bericht';
 $string['reports'] = 'Ergebnisse';
 $string['response'] = 'Feedback';

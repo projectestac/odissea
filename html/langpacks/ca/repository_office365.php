@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_office365', language 'ca', version '4.4'.
+ * Strings for component 'repository_office365', language 'ca', version '4.5'.
  *
  * @package     repository_office365
  * @category    string

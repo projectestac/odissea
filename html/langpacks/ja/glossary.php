@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ja', version '4.4'.
+ * Strings for component 'glossary', language 'ja', version '4.5'.
  *
  * @package     glossary
  * @category    string
@@ -113,7 +113,7 @@ $string['definitions'] = '定義';
 $string['deletecategory'] = 'カテゴリを削除する';
 $string['deleteentry'] = 'エントリを削除する';
 $string['deleteentrya'] = 'エントリを削除する: {$a}';
-$string['deletenotenrolled'] = '登録されていないユーザのエントリを削除する';
+$string['deletenotenrolled'] = '登録されていないユーザのエントリ';
 $string['deletingcomment'] = 'コメントの削除';
 $string['deletingnoneemptycategory'] = 'このカテゴリを削除する削除することにより、含まれるエントリは削除されずにカテゴリなしとマークされます。';
 $string['descending'] = '降順';
@@ -164,7 +164,7 @@ $string['entrynotapproved'] = 'エントリが承認されていません。';
 $string['entrysaved'] = 'このエントリが保存されました。';
 $string['entryupdated'] = 'このエントリが更新されました。';
 $string['entryusedynalink'] = 'このエントリを自動的にリンクさせる';
-$string['entryusedynalink_help'] = '管理者によって用語集オートリンクが有効にされた上でこの設定が有効にされた場合、エントリはコース全体で出現した用語またはフレーズに自動的にリンクされます。';
+$string['entryusedynalink_help'] = '管理者により用語集オートリンクが有効にされた上でこの設定が有効にされた場合、エントリはコース全体で出現した用語またはフレーズに自動的にリンクされます。';
 $string['errcannoteditothers'] = 'あなたは他の人のエントリを編集できません。';
 $string['errconceptalreadyexists'] = 'この用語はすでに登録されています。この用語集では重複は許可されていません。';
 $string['errdeltimeexpired'] = 'あなたはこのエントリを削除できません。編集期限は終了しました!';
@@ -246,7 +246,7 @@ $string['maxtimehaspassed'] = '申し訳ございません、このコメント�
 $string['modulename'] = '用語集';
 $string['modulename_help'] = '用語集活動モジュールにおいて、参加者は辞書のような定義リストを作成および管理すること、またはリソースおよび情報を収集および整理することができます。
 
-教師は用語集エントリへのファイルの添付を許可することができます。添付されたイメージはエントリ内に表示されます。エントリは検索、またはアルファベット順、カテゴリ順、日付順、著者順に閲覧することができます。エントリはデフォルトで承認すること、またはユーザによって閲覧できるようになる前に教師の承認を必要とすることができます。
+教師は用語集エントリへのファイルの添付を許可することができます。添付されたイメージはエントリ内に表示されます。エントリは検索、またはアルファベット順、カテゴリ順、日付順、著者順に閲覧することができます。エントリはデフォルトで承認すること、またはユーザにより閲覧できるようになる前に教師の承認を必要とすることができます。
 
 用語集オートリンクフィルタが有効にされた場合、用語またはフレーズがコース内に表示された時点でエントリが自動的にリンクされます。
 
@@ -298,14 +298,14 @@ $string['privacy:metadata:glossary_entries:attachment'] = 'ユーザが追加し
 $string['privacy:metadata:glossary_entries:concept'] = 'ユーザが追加したエントリの用語です。';
 $string['privacy:metadata:glossary_entries:definition'] = 'ユーザが追加したエントリの定義です。';
 $string['privacy:metadata:glossary_entries:glossaryid'] = '用語集活動のIDです。';
-$string['privacy:metadata:glossary_entries:timemodified'] = 'タイムスタンプは用語集エントリがユーザによって修正された日時を示します。';
+$string['privacy:metadata:glossary_entries:timemodified'] = 'タイムスタンプは用語集エントリがユーザにより修正された日時を示します。';
 $string['privacy:metadata:glossary_entries:userid'] = 'この用語集エントリを追加するユーザのIDです。';
 $string['question'] = '質問';
 $string['rejectedentries'] = '拒否されたエントリ';
 $string['rejectionrpt'] = '拒否レポート';
-$string['removeallglossarytags'] = 'すべての用語集タグを削除する';
+$string['removeallglossarytags'] = 'すべての用語集タグ';
 $string['resetglossaries'] = 'エントリ削除対象';
-$string['resetglossariesall'] = 'すべての用語集からエントリを削除する';
+$string['resetglossariesall'] = 'すべての用語集からエントリ';
 $string['rssarticles'] = '最近の記事のRSS数';
 $string['rssarticles_help'] = 'ここではRSSフィードに含まれる記事数を設定します。一般的に5から20の間が適切です。';
 $string['rssfeed'] = 'RSSフィード';
@@ -333,7 +333,7 @@ $string['tagarea_glossary_entries'] = '用語集エントリ';
 $string['tagsdeleted'] = '用語集タグが削除されました。';
 $string['totalentries'] = 'エントリ合計';
 $string['usedynalink'] = 'エントリを自動的にリンクする';
-$string['usedynalink_help'] = '管理者によって用語集オートリンクが有効にされた上でこの設定が有効にされた場合、「新しいエントリを追加する」フォームにはコース全体で出現した用語またはフレーズにエントリを自動的にリンクするためのオプションを含みます。';
+$string['usedynalink_help'] = '管理者により用語集オートリンクが有効にされた上でこの設定が有効にされた場合、「新しいエントリを追加する」フォームにはコース全体で出現した用語またはフレーズにエントリを自動的にリンクするためのオプションを含みます。';
 $string['visibletabs'] = '表示タブ';
 $string['warningstudentcapost'] = '(用語集がメイン用語集ではない場合に適用)';
 $string['withauthor'] = '用語 (著者あり)';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'ca', version '4.4'.
+ * Strings for component 'plugin', language 'ca', version '4.5'.
  *
  * @package     plugin
  * @category    string
@@ -112,6 +112,8 @@ $string['status_uptodate'] = 'Instal·lat';
 $string['supportedconversions'] = 'Conversions de documents admeses';
 $string['supportedmoodleversions'] = 'Versions compatibles de Moodle';
 $string['systemname'] = 'Identificador';
+$string['type_aiplacement'] = 'Connector d\'emplaçament IA';
+$string['type_aiplacement_plural'] = 'Connectors d\'emplaçament IA';
 $string['type_antivirus'] = 'Connector antivirus';
 $string['type_antivirus_plural'] = 'Connectors antivirus';
 $string['type_auth'] = 'Mètode d\'autenticació';

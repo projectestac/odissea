@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'nl', version '4.4'.
+ * Strings for component 'lesson', language 'nl', version '4.5'.
  *
  * @package     lesson
  * @category    string
@@ -153,7 +153,7 @@ $string['customscoring'] = 'Aangepaste cijfers';
 $string['customscoring_help'] = 'Indien ingeschakeld kan een geheel getal (positief of negatief) ingegeven worden voor elk antwoord.';
 $string['deadline'] = 'Deadline';
 $string['defaultessayresponse'] = 'Je antwoord op deze open vraag zal door de leraar beoordeeld worden.';
-$string['deleteallattempts'] = 'Verwijder alle pogingen';
+$string['deleteallattempts'] = 'Alle les-pogingen';
 $string['deletedefaults'] = 'Standaard les {$a} verwijderd';
 $string['deletedpage'] = 'Pagina verwijderd';
 $string['deletepagenamed'] = 'Verwijder pagina: {$a}';
@@ -528,8 +528,8 @@ $string['rank'] = 'Rangschikking';
 $string['rawgrade'] = 'Ruwe score';
 $string['receivedcredit'] = 'Behaalde score';
 $string['redisplaypage'] = 'Toon pagina opnieuw';
-$string['removeallgroupoverrides'] = 'Verwijder alle groepsoverschrijvingen';
-$string['removealluseroverrides'] = 'Verwijder alle gebruikersoverschrijvingen';
+$string['removeallgroupoverrides'] = 'Alle groepsoverschrijvingen';
+$string['removealluseroverrides'] = 'Alle gebruikersoverschrijvingen';
 $string['report'] = 'Rapport';
 $string['reports'] = 'Rapporten';
 $string['response'] = 'Feedback';

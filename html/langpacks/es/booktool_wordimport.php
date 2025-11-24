@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booktool_wordimport', language 'es', version '4.4'.
+ * Strings for component 'booktool_wordimport', language 'es', version '4.5'.
  *
  * @package     booktool_wordimport
  * @category    string

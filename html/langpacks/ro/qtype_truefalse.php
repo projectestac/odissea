@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'ro', version '4.4'.
+ * Strings for component 'qtype_truefalse', language 'ro', version '4.5'.
  *
  * @package     qtype_truefalse
  * @category    string
@@ -38,7 +38,6 @@ $string['pluginname_link'] = 'question/type/truefalse';
 $string['pluginnameadding'] = 'Adăugare întrebare de tip Adevărat/Fals';
 $string['pluginnameediting'] = 'Editare întrebare de tip Adevărat/Fals';
 $string['pluginnamesummary'] = 'O formă simplă de întrebare cu alegere multiplă, cu doar cele două opțiuni „Adevărat” și „Fals”.';
-$string['privacy:metadata'] = 'Tipul de întrebare Adevărat / Fals nu stochează date personale.';
 $string['privacy:preference:showstandardinstruction'] = 'Dacă se afișează instrucțiunile standard.';
 $string['selectone'] = 'Selectați o opțiune:';
 $string['showstandardinstruction'] = 'Afișați instrucțiunile standard';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_catalogue', language 'ca', version '4.4'.
+ * Strings for component 'block_catalogue', language 'ca', version '4.5'.
  *
  * @package     block_catalogue
  * @category    string
@@ -47,7 +47,7 @@ $string['hvp_QuestionSet'] = 'Conjunt de preguntes';
 $string['hvp_Questionnaire'] = 'Qüestionari';
 $string['hvp_SingleChoiceSet'] = 'Conjunt de preguntes amb una única resposta correcta';
 $string['hvp_Summary'] = 'Resum';
-$string['hvp_Timeline'] = 'Línia de temps';
+$string['hvp_Timeline'] = 'Cronologia';
 $string['hvp_TwitterUserFeed'] = 'Canal de continguts d\'usuari de Twitter';
 $string['hvp_description_Audio'] = 'Àudio';
 $string['hvp_description_CoursePresentation'] = 'Crea una presentació amb diapositives interactives';

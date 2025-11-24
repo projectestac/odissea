@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'nl', version '4.4'.
+ * Strings for component 'quiz', language 'nl', version '4.5'.
  *
  * @package     quiz
  * @category    string
@@ -401,6 +401,7 @@ $string['eventslotgradeitemupdated'] = 'Slot cijferitem aangepast';
 $string['eventslotmarkupdated'] = 'Slot aangepast';
 $string['eventslotmoved'] = 'Slot verplaatst';
 $string['eventslotrequirepreviousupdated'] = 'Slot vereist vorige aanpassing';
+$string['eventslotversionupdated'] = 'Slotversie aangepast';
 $string['everynquestions'] = 'Elke {$a} vragen';
 $string['everyquestion'] = 'Elke vraag';
 $string['everythingon'] = 'Alles ingeschakeld';
@@ -567,6 +568,7 @@ $string['maxmarks_help'] = 'Het maximale cijfer voor elke vraag.';
 $string['messageprovider:attempt_grading_complete'] = 'Melding dat je poging is beoordeeld';
 $string['messageprovider:attempt_overdue'] = 'Waarschuwing wanneer je testpoging over tijd gaat';
 $string['messageprovider:confirmation'] = 'Bevestiging van je eigen testinzendingen';
+$string['messageprovider:quiz_open_soon'] = 'Test opent binnenkort';
 $string['messageprovider:submission'] = 'Melding van testen ingestuurd door je leerlingen';
 $string['min'] = 'Min';
 $string['minutes'] = 'Minuten';
@@ -663,7 +665,7 @@ $string['onlyteachersimport'] = 'Enkel leraren met bewerkrechten kunnen vragen i
 $string['onthispage'] = 'Op deze pagina';
 $string['open'] = 'Niet beantwoord';
 $string['openafterclose'] = 'Kon de test niet aanpassen. Je hebt een startdatum ingegeven na de einddatum.';
-$string['openclosedatesupdated'] = 'Open- en sluittijden aangepast';
+$string['openclosedatesupdated'] = 'Open- en sluittijden';
 $string['optional'] = 'optioneel';
 $string['orderandpaging'] = 'Volgorde en paginering';
 $string['orderandpaging_help'] = 'De nummers 10, 20, 30 tegenover elke vraag duiden de volgorde van de vragen aan. De nummers verhogen per 10 om plaats te laten om bijkomende vragen in te voegen. Om de vragen van volgorde te veranderen, kun je de nummers veranderen en op de "herorden vragen" knop klikken.';
@@ -843,6 +845,12 @@ $string['quizopen'] = 'Open de test';
 $string['quizopenclose'] = 'Open en sluit data';
 $string['quizopenclose_help'] = 'Leerlingen kunnen hun pogingen enkel starten na de open tijd en ze moeten er mee klaar zijn voor de sluit tijd.';
 $string['quizopenclose_link'] = 'mod/quiz/timing';
+$string['quizopendatesoonhtml'] = '<p>Beste {$a->firstname},</p>
+<p>De test <strong>{$a->quizname}</strong> in cursus {$a->coursename} gaat binnenkort open.
+<p><strong>Opent: {$a->timeopen}</strong></p>
+<p><strong>Sluit: {$a->timeclose}</strong></p>
+<p><a href="{$a->url}">Ga naar de test</a></p>';
+$string['quizopendatesoonsubject'] = 'Opent op {$a->timeopen}: {$a->quizname}';
 $string['quizopened'] = 'Deze test is open.';
 $string['quizopenedon'] = 'Deze test opende op {$a}';
 $string['quizopens'] = 'De test gaat open';
@@ -894,9 +902,9 @@ $string['regradenotallowed'] = 'Je hebt onvoldoende rechten om deze test te herb
 $string['regradingquestion'] = '"{$a}" aan het herberekenen';
 $string['regradingquiz'] = 'Test "{$a}" aan het herbeoordelen';
 $string['remove'] = 'Verwijder';
-$string['removeallgroupoverrides'] = 'Verwijder alle groepsoverschrijvingen';
-$string['removeallquizattempts'] = 'Verwijder alle pogingen van de test';
-$string['removealluseroverrides'] = 'Verwijder alle gebruikersoverschrijvingen';
+$string['removeallgroupoverrides'] = 'Alle groepsoverschrijvingen';
+$string['removeallquizattempts'] = 'Alle pogingen van de test';
+$string['removealluseroverrides'] = 'Alle gebruikersoverschrijvingen';
 $string['removeemptypage'] = 'Verwijder lege pagina';
 $string['removepagebreak'] = 'Verwijder paginascheiding';
 $string['removeselected'] = 'Verwijder selectie';
@@ -1027,6 +1035,7 @@ $string['selectmultipletoolbar'] = 'Selecteer meerdere werkbalk';
 $string['selectnone'] = 'Selecteer geen';
 $string['selectquestionslot'] = 'Selecteer vraag {$a}';
 $string['selectquestiontype'] = '--Selecteer vraagtype--';
+$string['sendnotificationopendatesoon'] = 'Verwittig gebruiker voor een aankomende test opendatum';
 $string['serveradded'] = 'Server toegevoegd';
 $string['serveridentifier'] = 'Identificatie';
 $string['serverinfo'] = 'Serverinformatie';

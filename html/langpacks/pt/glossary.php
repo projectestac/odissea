@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'pt', version '4.4'.
+ * Strings for component 'glossary', language 'pt', version '4.5'.
  *
  * @package     glossary
  * @category    string
@@ -113,7 +113,7 @@ $string['definitions'] = 'Descrições';
 $string['deletecategory'] = 'Apagar categoria';
 $string['deleteentry'] = 'Apagar termo';
 $string['deleteentrya'] = 'Apagar termo: {$a}';
-$string['deletenotenrolled'] = 'Apagar todos os termos inseridos por utilizadores não inscritos';
+$string['deletenotenrolled'] = 'Todos os termos inseridos por utilizadores não inscritos';
 $string['deletingcomment'] = 'A apagar comentário';
 $string['deletingnoneemptycategory'] = 'A eliminação desta categoria não implica a eliminação dos termos nela contida - estes deixarão de pertencer a uma categoria.';
 $string['descending'] = '(descendente)';
@@ -303,9 +303,9 @@ $string['privacy:metadata:glossary_entries:userid'] = 'O ID do utilizador que es
 $string['question'] = 'Pergunta';
 $string['rejectedentries'] = 'Termos rejeitados';
 $string['rejectionrpt'] = 'Relatório de rejeição';
-$string['removeallglossarytags'] = 'Remover todas as palavras-chave do glossário';
+$string['removeallglossarytags'] = 'Todas as palavras-chave do glossário';
 $string['resetglossaries'] = 'Apagar termos de';
-$string['resetglossariesall'] = 'Apagar termos de todos os glossários';
+$string['resetglossariesall'] = 'Termos de todos os glossários';
 $string['rssarticles'] = 'Número de artigos recentes na lista RSS';
 $string['rssarticles_help'] = 'Defina o número de termos do glossário a publicar na lista RSS. É aceitável um valor de 5 a 20 termos.';
 $string['rssfeed'] = 'Lista RSS';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'it', version '4.4'.
+ * Strings for component 'scorm', language 'it', version '4.5'.
  *
  * @package     scorm
  * @category    string
@@ -38,6 +38,7 @@ $string['aicchacptimeout_desc'] = 'La durata in minuti in cui una sessione AICC 
 $string['aiccuserid'] = 'Passa ad AICC gli user id numerici';
 $string['aiccuserid_desc'] = 'Lo standard AICC rispetto a Moodle è molto restrittivo sugli username, consentendo solo l\'uso di caratteri alfanumerici del segno meno (-) e del segno di sottolineatura (_). Punti, spazi e il simbolo @ non sono consentiti. Questa impostazione consente di passare al pacchetto AICC il codice identificativo dell\'utente al posto dello username.';
 $string['aliasonly'] = 'Aggiornamento autorizzati a cambiare ruolo';
+$string['allattempts'] = 'Tutti i tentativi SCORM';
 $string['allowapidebug'] = 'Attiva l\'API di debug e tracking (Imposta la capture mask con apidebugmasjk)';
 $string['allowtypeaicchacp'] = 'Abilita AICC HACP esterna';
 $string['allowtypeaicchacp_desc'] = 'Abilita la comunicazione   AICC HACP esterna senza necessità di autenticazioni per richieste post provenienti dal pacchetto AICC esterno';

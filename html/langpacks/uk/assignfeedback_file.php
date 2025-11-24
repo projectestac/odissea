@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_file', language 'uk', version '4.4'.
+ * Strings for component 'assignfeedback_file', language 'uk', version '4.5'.
  *
  * @package     assignfeedback_file
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['batchoperationconfirmuploadfiles'] = 'Відправити один або більше файлів-відгуків для всіх вибраних користувачів?';
+$string['batchoperationuploadfiles'] = 'Завантажити відгук';
 $string['batchuploadfiles'] = 'Відправити файли-відгуки для багатьох користувачів';
 $string['batchuploadfilesforusers'] = 'Відправити файли-відгуки для {$a}  відібраного(их) користувача(ів).';
 $string['configmaxbytes'] = 'Максимальний об’єм файлу';
@@ -53,6 +54,6 @@ $string['privacy:metadata:filepurpose'] = 'Файли відгуків від в
 $string['privacy:path'] = 'Файли відгуків';
 $string['selectedusers'] = 'Відібрані користувачі';
 $string['uploadfiles'] = 'Надіслати файл-відгук(и)';
-$string['uploadzip'] = 'Надіслати багато файлів-відгуків в zip-архіві';
+$string['uploadzip'] = 'Завантажте файли відгуків у zip';
 $string['uploadzipsummary'] = 'Файли-відгуки імпортовано з zip-архіву';
 $string['userswithnewfeedback'] = 'Користувачів, які отримали відгуки: {$a}';

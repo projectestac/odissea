@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'ar', version '4.4'.
+ * Strings for component 'qtype_ddwtos', language 'ar', version '4.5'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -29,6 +29,8 @@ $string['addmorechoiceblanks'] = 'إضافة {no} خيارات أخرى';
 $string['answer'] = 'الإجابة';
 $string['blank'] = 'فراغ';
 $string['blanknumber'] = 'خالية {$a}';
+$string['choicesacceptedtext'] = 'أكتب الإجابات المزمع سحبها إلى الفجوات. بإمكانك تضمين المزيد من الإجابات لزيادة الصعوبة. <br/>
+صيغ النصوص المقبولة: &lt;sub&gt;، &lt;sup&gt;، &lt;b&gt;، &lt;i&gt;، &lt;em&gt;، &lt;strong&gt;. إن TeX مقبول أيضًا، مع استعمال $$ عند البدء وعند الانتهاء.';
 $string['correctansweris'] = 'الإجابة الصحيحة هي: {$a}';
 $string['errorlimitedchoice'] = 'الخيار [[{$a}]] تم استعماله لأكثر من مرة دون ضبطه على "غير محدود". رجاءً، تحقق من هذا السؤال مرة أخرى.';
 $string['infinite'] = 'غير محدود';

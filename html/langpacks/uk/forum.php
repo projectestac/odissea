@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'uk', version '4.4'.
+ * Strings for component 'forum', language 'uk', version '4.5'.
  *
  * @package     forum
  * @category    string
@@ -542,9 +542,6 @@ $string['postmailinfo'] = 'Це копія повідомлення, опубл�
 $string['postmailnow'] = '<p>Це повідомлення буде відразу відправлене всім адресатам форуму.</p>';
 $string['postmailreply'] = 'Щоб відповісти, натисніть це посилання: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
-$string['postrating1'] = 'Здебільшого не по темі';
-$string['postrating2'] = 'Дещо є';
-$string['postrating3'] = 'Те, що треба';
 $string['posts'] = 'Повідомлення';
 $string['postsfrom'] = 'Публікації від';
 $string['postsmadebyuser'] = 'Повідомлення, що надісла(ла)в {$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_recyclebin', language 'ja', version '4.4'.
+ * Strings for component 'tool_recyclebin', language 'ja', version '4.5'.
  *
  * @package     tool_recyclebin
  * @category    string
@@ -49,7 +49,7 @@ $string['eventitemrestored'] = 'アイテムがリストアされました。';
 $string['eventitemrestored_desc'] = 'ID {$a->objectid} のアイテムがリストアされました。';
 $string['invalidcontext'] = '無効なコンテンツが提供されました。';
 $string['noitemsinbin'] = 'ごみ箱にアイテムはありません。';
-$string['notenabled'] = '申し訳ございません、ごみ箱は管理者によって無効にされています。';
+$string['notenabled'] = '申し訳ございません、ごみ箱は管理者により無効にされています。';
 $string['pluginname'] = 'ごみ箱';
 $string['privacy:metadata'] = 'ごみ箱プラグインはいかなる個人データも保存しません。';
 $string['recyclebin:deleteitems'] = 'ごみ箱アイテムを削除する';

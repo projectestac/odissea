@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'fr', version '4.4'.
+ * Strings for component 'calendar', language 'fr', version '4.5'.
  *
  * @package     calendar
  * @category    string
@@ -59,6 +59,7 @@ $string['courseevents'] = 'Événements de cours';
 $string['courses'] = 'Cours';
 $string['customexport'] = 'Intervalle personnalisé ({$a->timestart} - {$a->timeend})';
 $string['daily'] = 'Chaque jour';
+$string['datepicker'] = 'Sélecteur de date';
 $string['day'] = 'Jour';
 $string['dayeventsmany'] = '{$a->num} événements, {$a->day}';
 $string['dayeventsnone'] = 'Aucun événement, {$a}';
@@ -71,7 +72,7 @@ $string['daywithnoevents'] = 'Il n’y a pas d’événement programmé à cette
 $string['default'] = 'Valeur par défaut';
 $string['deleteallevents'] = 'Supprimer tous les événements';
 $string['deleteevent'] = 'Supprimer l’événement';
-$string['deleteevents'] = 'Supprimer les événements';
+$string['deleteevents'] = 'Événements';
 $string['deleteoneevent'] = 'Supprimer cet événement';
 $string['detailedmonthviewfor'] = 'Vue mensuelle détaillée pour';
 $string['detailedmonthviewtitle'] = 'Vue mensuelle détaillée : {$a}';
@@ -188,7 +189,9 @@ $string['mon'] = 'Lu';
 $string['monday'] = 'Lundi';
 $string['monthly'] = 'Chaque mois';
 $string['monthnext'] = 'Mois prochain';
+$string['monthnextwithname'] = 'Mois suivant : {$a}';
 $string['monthprev'] = 'Mois précédent';
+$string['monthprevwithname'] = 'Mois précédent : {$a}';
 $string['monththis'] = 'Ce mois';
 $string['more'] = 'Plus';
 $string['moreevents'] = '{$a} de plus';
@@ -208,7 +211,7 @@ $string['pref_lookahead_help'] = 'Ce paramètre détermine le nombre (maximum) d
 $string['pref_maxevents'] = 'Nombre maximal d’événements à venir';
 $string['pref_maxevents_help'] = 'Ce réglage définit le nombre maximal d’événements à venir qui seront affichés. Si vous spécifiez un nombre élevé, l’affichage ne sera pas optimal.';
 $string['pref_persistflt'] = 'Enregistrer les réglages des filtres';
-$string['pref_persistflt_help'] = 'Si cette option est activée, Moodle se rappellera vos derniers réglages des filtres d’événements et les mettra en vigueur automatiquement à chacune de vos connexions.';
+$string['pref_persistflt_help'] = 'Si ce réglage est activé, vos derniers réglages des filtres d’événements sont enregistrés pour votre prochaine connexion.';
 $string['pref_startwday'] = 'Premier jour de la semaine';
 $string['pref_startwday_help'] = 'Ce réglage définit le premier jour de la semaine et détermine la façon dont les calendriers mensuels sont affichés.';
 $string['pref_timeformat'] = 'Format d’affichage des heures';

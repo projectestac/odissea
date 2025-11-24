@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'sv', version '4.4'.
+ * Strings for component 'forum', language 'sv', version '4.5'.
  *
  * @package     forum
  * @category    string
@@ -557,9 +557,6 @@ $string['postmailinfo'] = 'Detta är en kopia av ett inlägg i "{$a}"-forumet.';
 $string['postmailnow'] = '<p>Det här inlägget kommer omedelbart att skicka med e-post till alla som prenumererar på forumet.</p>';
 $string['postmailreply'] = 'Klicka på den här länken för att svara: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
-$string['postrating1'] = 'Mestadels separat lärande';
-$string['postrating2'] = 'Separat och anslutet';
-$string['postrating3'] = 'Mestadels anslutet lärande';
 $string['posts'] = 'Inlägg';
 $string['postsfrom'] = 'Inlägg från';
 $string['postsmadebyuser'] = 'Inlägg av {$a}';

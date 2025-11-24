@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'ca', version '4.4'.
+ * Strings for component 'format_topcoll', language 'ca', version '4.5'.
  *
  * @package     format_topcoll
  * @category    string
@@ -62,7 +62,6 @@ $string['hidefromothers'] = 'Oculta la secció';
 $string['instructions'] = 'Instruccions: en fer clic sobre el nom de la secció, aquesta es mostra / s’amaga.';
 $string['large'] = 'Llarg';
 $string['newsection'] = 'Secció nova';
-$string['numbersections'] = 'Nombre de seccions';
 $string['one'] = 'Un';
 $string['pluginname'] = 'Temes replegats';
 $string['point'] = 'Punt';

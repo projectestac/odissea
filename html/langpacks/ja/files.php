@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'files', language 'ja', version '4.4'.
+ * Strings for component 'files', language 'ja', version '4.5'.
  *
  * @package     files
  * @category    string
@@ -43,3 +43,24 @@ $string['privacy:metadata:files:source'] = 'ファイルのソースです。';
 $string['privacy:metadata:files:timecreated'] = 'ファイルの作成日時です。';
 $string['privacy:metadata:files:timemodified'] = 'ファイルの最終更新日時です。';
 $string['privacy:metadata:files:userid'] = 'ファイルを作成したユーザです。';
+$string['redactor'] = 'ファイル編集';
+$string['redactor:exifremover'] = 'ファイル編集';
+$string['redactor:exifremover:emptyremovetags'] = 'ファイル編集';
+$string['redactor:exifremover:enabled'] = 'ファイル編集';
+$string['redactor:exifremover:enabled_desc'] = 'デフォルトではEXIFリムーバはPHP GDまたはExifToolを使用したJPGファイルのみに対応しています。この目的のためにPHP GDを使用した場合、イメージの品質を低下させる可能性があります。
+
+EXIFリムーバのパフォーマンスを向上させるには以下のExifToolを設定してください。
+
+ExifToolのインストールに関する詳細は {$a->link} をご覧ください。';
+$string['redactor:exifremover:failedprocessexiftool'] = 'ファイル編集';
+$string['redactor:exifremover:failedprocessgd'] = 'ファイル編集';
+$string['redactor:exifremover:heading'] = 'ファイル編集';
+$string['redactor:exifremover:mimetype'] = 'ファイル編集';
+$string['redactor:exifremover:mimetype_desc'] = 'ファイル編集';
+$string['redactor:exifremover:removetags'] = '削除予定EXIFタグ';
+$string['redactor:exifremover:removetags_desc'] = 'ファイル編集';
+$string['redactor:exifremover:tag:all'] = 'ファイル編集';
+$string['redactor:exifremover:tag:gps'] = 'ファイル編集';
+$string['redactor:exifremover:tooldoesnotexist'] = 'ファイル編集';
+$string['redactor:exifremover:toolpath'] = 'ファイル編集';
+$string['redactor:exifremover:toolpath_desc'] = 'ファイル編集';

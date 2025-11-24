@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'pt', version '4.4'.
+ * Strings for component 'enrol', language 'pt', version '4.5'.
  *
  * @package     enrol
  * @category    string
@@ -47,7 +47,7 @@ $string['customwelcomemessage_help'] = 'Formatos aceites: Texto simples ou Autof
 <li>Apelido do utilizador {$a->lastname}</li>
 <li>Papel do utilizador na disciplina {$a->courserole}</li>
 </ul>';
-$string['customwelcomemessageplaceholder'] = 'Caro/a {$a->fullname}, foi inscrito/a com sucesso na disciplina {$a->coursename}';
+$string['customwelcomemessageplaceholder'] = 'Olá {$a->firstname}, está inscrito/a na disciplina {$a->coursename}';
 $string['defaultenrol'] = 'Adicionar instância às novas disciplinas';
 $string['defaultenrol_desc'] = 'Se ativar esta opção, este módulo estará ativo por predefinição nas novas disciplinas criadas.';
 $string['deleteinstanceconfirm'] = 'Está prestes a apagar o método de inscrição "{$a->name}". Todos os utilizadores atualmente inscritos através deste método ({$a->users}) deixarão de estar inscritos e quaisquer informações relacionadas com a disciplina, tais como notas, participação em grupos ou subscrições de fóruns, serão apagadas. Tem a certeza de que pretende continuar?';

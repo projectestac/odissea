@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'ro', version '4.4'.
+ * Strings for component 'block_rss_client', language 'ro', version '4.5'.
  *
  * @package     block_rss_client
  * @category    string
@@ -30,18 +30,21 @@ $string['addheadlineblock'] = 'Adaugă bloc cu titlu RSS';
 $string['addnew'] = 'Adaugă';
 $string['addnewfeed'] = 'Adaugă un nou flux';
 $string['cannotmakemodification'] = 'Nu este permis să facă modificări la acest feed RSS, la acest moment.';
-$string['choosefeedlabel'] = 'Selectaţi fluxurile care vor fi disponibile în cadrul acestui bloc';
+$string['choosefeedlabel'] = 'Selectaţi fluxurile pentru afișare';
 $string['clientchannellink'] = 'Sit sursă...';
 $string['clientnumentries'] = 'Număr implicit de elemente ce vor fi afişate în cadrul unui flux.';
-$string['clientshowchannellinklabel'] = 'Se afişează link la situl original? (Dacă în cadrul fluxului nu este furnizat un link atunci nu se afişează niciun link)';
+$string['clientshowchannellinklabel'] = 'Afișați link-ul sursă, dacă este disponibil';
 $string['clientshowimagelabel'] = 'Afişează imagine canal în cazul în care este disponibilă';
 $string['configblock'] = 'Configurează blocul curent';
+$string['configmethodexisting'] = 'Selectați fluxul RSS existent';
+$string['configmethodnew'] = 'Adaugă feed RSS nou';
 $string['couldnotfindfeed'] = 'Nu s-a putut găsi fluxul cu ID.';
 $string['couldnotfindloadrssfeed'] = 'Nu s-a putut găsi sau încărca feed-ul RSS';
 $string['customtitlelabel'] = 'Titlu personalizat (dacă doriţi să păstraţi titlul original al fluxului nu completaţi nimic în acest câmp)';
 $string['deletefeedconfirm'] = 'Sunteţi sigur că doriţi să ştergeţi acest flux?';
 $string['disabledrssfeeds'] = 'Fluxurile RSS sunt dezactivate';
-$string['displaydescriptionlabel'] = 'Afişare descriere la fiecare link?';
+$string['displaydescriptionlabel'] = 'Afișați descrierea articolelor';
+$string['displaysettings'] = 'Afișați setările fluxului RSS';
 $string['editafeed'] = 'Editează un flux';
 $string['editfeeds'] = 'Editare, abonare sau dezabonare fluxuri de ştiri RSS';
 $string['editnewsfeeds'] = 'Editare fluxuri ştiri';
@@ -58,10 +61,10 @@ $string['feedsaddedit'] = 'Adaugă/Editează fluxuri';
 $string['feedsconfigurenewinstance'] = 'Executaţi clic aici pentru a configura acest bloc astfel încât să afişeze fluxuri RSS';
 $string['feedsconfigurenewinstance2'] = 'Faceți clic pe pictograma de editare de mai sus pentru a configura acest bloc pentru a afișa feed-urile RSS.';
 $string['feedupdated'] = 'Flux RSS actualizat';
-$string['feedurl'] = 'URL flux';
+$string['feedurl'] = 'Flux RSS';
 $string['findmorefeeds'] = 'Găseşte mai multe fluxuri RSS';
 $string['managefeeds'] = 'Administrare fluxuri RSS';
-$string['nofeeds'] = 'Pentru acest site nu a fost definit niciun flux RSS.';
+$string['nofeeds'] = 'Încă nu sunt fluxuri RSS. Alegeți \'Adaugă flux nou RSS\'.';
 $string['numentries'] = 'Număr elemente în cadrul unui flux';
 $string['pickfeed'] = 'Selectaţi un flux RSS';
 $string['pluginname'] = 'Fluxuri RSS';
@@ -84,7 +87,7 @@ $string['rss_client:manageownfeeds'] = 'Administrare fluxurile RSS proprii';
 $string['rss_client:myaddinstance'] = 'Adaugă un nou bloc RSS feeds în Dashboard';
 $string['seeallfeeds'] = 'Afişează toate fluxurile';
 $string['sharedfeed'] = 'Flux partajat';
-$string['shownumentrieslabel'] = 'Număr maxim de elemente care să fie afişate pentru fiecare bloc';
+$string['shownumentrieslabel'] = 'Articole de afișat';
 $string['submitters'] = 'Cine are permisiunea să definească noi fluxuri RSS? Fluxurile definite sunt disponibile pe oricare din paginile site-ului.';
 $string['submitters2'] = 'Trimiţători';
 $string['timeout'] = 'Intervalul de timp, exprimat în minute, pe parcursul căruia un flux RSS este stocat în cache. Atenţie, acest timp defineşte intervalul minim; fluxul va fi actualizat în cache la următoarea execuţie a cronului. Folosiţi 30 minute sau valori superioare.';

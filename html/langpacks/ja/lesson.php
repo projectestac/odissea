@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ja', version '4.4'.
+ * Strings for component 'lesson', language 'ja', version '4.5'.
  *
  * @package     lesson
  * @category    string
@@ -152,8 +152,8 @@ $string['credit'] = '承認';
 $string['customscoring'] = 'カスタムスコア';
 $string['customscoring_help'] = 'この設定を有効にした場合、それぞれの答えに整数値 (プラスまたはマイナス) を入力できます。';
 $string['deadline'] = '終了日時';
-$string['defaultessayresponse'] = 'あなたの作文はあなたの教師によって評定されます。';
-$string['deleteallattempts'] = 'すべてのレッスン受験を削除する';
+$string['defaultessayresponse'] = 'あなたの作文はあなたの教師により評定されます。';
+$string['deleteallattempts'] = 'すべてのレッスン受験';
 $string['deletedefaults'] = '{$a} x レッスンデフォルトを削除しました。';
 $string['deletedpage'] = 'ページを削除しました';
 $string['deletepagenamed'] = 'ページを削除する: {$a}';
@@ -523,8 +523,8 @@ $string['rank'] = 'ランク';
 $string['rawgrade'] = '素点';
 $string['receivedcredit'] = '承認クレジット';
 $string['redisplaypage'] = 'ページを再表示する';
-$string['removeallgroupoverrides'] = 'すべてのグループオーバーライドを削除する';
-$string['removealluseroverrides'] = 'すべてのユーザオーバーライドを削除する';
+$string['removeallgroupoverrides'] = 'すべてのグループオーバーライド';
+$string['removealluseroverrides'] = 'すべてのユーザオーバーライド';
 $string['report'] = 'レポート';
 $string['reports'] = 'レポート';
 $string['response'] = '返答';

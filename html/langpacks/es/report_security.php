@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'es', version '4.4'.
+ * Strings for component 'report_security', language 'es', version '4.5'.
  *
  * @package     report_security
  * @category    string
@@ -125,6 +125,7 @@ $string['check_unsecuredataroot_error'] = '!Su directorio dataroot <code>{$a}</c
 $string['check_unsecuredataroot_name'] = 'Directorio dataroot inseguro';
 $string['check_unsecuredataroot_ok'] = 'El directorio de datos (normalmente /moodledata) no debe ser accesible desde la web';
 $string['check_unsecuredataroot_warning'] = '!Su directorio dataroot <code>{$a}</code> ¡ está en el lugar equivocado y puede estar expuesto a la web!';
+$string['check_upgradefile_info'] = 'Los archivos de notas de actualización no deberían ser públicos';
 $string['check_vendordir_details'] = '<p>El directorio <code>{$a->path}</code> contiene varias librerías de terceros y sus dependencias, típicamente instaladas por el PHP Composer. Estas librerías podrían ser necesarias para el desarrollo local de Moodle, como por ejemplo para instalar el PHPUnit framework. No son necesarias para correr un sitio Moodle en producción y podrían contener código potencialmente peligroso, que expondría su sitio a ataques remotos.</p><p>Se recomienda encarecidamente que quite el directorio si el sitio está disponible vía una URL pública, o cuando menos que prohíba el acceso web a él en su servidor web.</p>';
 $string['check_vendordir_info'] = 'El directorio del vendedor no debería estar presente en sitios públicos.';
 $string['check_vendordir_name'] = 'Directorio del vendedor';

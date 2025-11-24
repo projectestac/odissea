@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'ro', version '4.4'.
+ * Strings for component 'quiz_overview', language 'ro', version '4.5'.
  *
  * @package     quiz_overview
  * @category    string
@@ -60,6 +60,17 @@ $string['privacy:metadata:preference:quiz_overview_slotmarks'] = 'Afișarea note
 $string['privacy:preference:slotmarks:no'] = 'Notele nu sunt afișate împreună cu lotul de întrebări.';
 $string['privacy:preference:slotmarks:yes'] = 'Notele sunt afișate împreună cu lotul de întrebări.';
 $string['regrade'] = 'Notează din nou';
+$string['regrade_allattempts'] = 'Toate încercările';
+$string['regrade_allquestions'] = 'Toate întrebările';
+$string['regrade_attempts'] = 'Renotare încercări...';
+$string['regrade_commitregrade'] = 'Trimite notele recalculate';
+$string['regrade_dryrun'] = 'Afișarea recalculării notelor fără salvare';
+$string['regrade_help'] = 'Recalcularea notei se face calculând automat încercările folosind cea mai recentă versiune a întrebării, dacă este posibil. O simulare permite vizualizarea notării fără să afecteze încercările.';
+$string['regrade_link'] = 'Quiz_grades_report#Re-grading_attempts';
+$string['regrade_regradeneedednotificationmessage'] = 'Prin ultima simulare a renotării s-a constatat că renotarea ar modifica punctele {$a->questions} întrebărilor din {$a->attempts} încercare.';
+$string['regrade_regradenow'] = 'Renotează acum';
+$string['regrade_selectedattempts'] = 'Încercările selectate';
+$string['regrade_selectedquestions'] = 'Întrebări selectate';
 $string['regradeall'] = 'Notează toate testele din nou';
 $string['regradealldry'] = 'Efectuare completă a recalculării notelor';
 $string['regradealldrydo'] = 'Recalcularea încercărilor marcate că necesită recalculare ({$a})';

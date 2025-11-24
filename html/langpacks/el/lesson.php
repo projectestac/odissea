@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'el', version '4.4'.
+ * Strings for component 'lesson', language 'el', version '4.5'.
  *
  * @package     lesson
  * @category    string
@@ -151,7 +151,7 @@ $string['customscoring'] = 'Ατομικός τρόπος βαθμολόγηση
 $string['customscoring_help'] = 'Αν ενεργοποιηθεί, τότε σε κάθε απάντηση μπορεί να δοθεί μια ακέραια αριθμητική τιμή βαθμών (θετική ή αρνητική).';
 $string['deadline'] = 'Προθεσμία';
 $string['defaultessayresponse'] = 'Η έκθεσή σας θα βαθμολογηθεί από τον διδάσκοντά σας.';
-$string['deleteallattempts'] = 'Διαγραφή όλων των προσπαθειών της διδασκαλίας';
+$string['deleteallattempts'] = 'Όλες οι προσπάθειες της διδασκαλίας';
 $string['deletedefaults'] = 'Διαγραφή {$a} x προεπιλογής διδασκαλίας';
 $string['deletedpage'] = 'Διαγραμμένη σελίδα';
 $string['deletepagenamed'] = 'Διαγραφή σελίδας: {$a}';
@@ -521,8 +521,8 @@ $string['rank'] = 'Κατάταξη';
 $string['rawgrade'] = 'Βαθμός χωρίς επεξεργασία';
 $string['receivedcredit'] = 'Λάβατε βαθμό';
 $string['redisplaypage'] = 'Επανεμφάνιση σελίδας';
-$string['removeallgroupoverrides'] = 'Διαγραφή όλων των παρακάμψεων ομάδας';
-$string['removealluseroverrides'] = 'Διαγραφή όλων των παρακάμψεων χρήστη';
+$string['removeallgroupoverrides'] = 'Όλες οι παρακάμψεις ομάδας';
+$string['removealluseroverrides'] = 'Όλες οι παρακάμψεις χρήστη';
 $string['report'] = 'Αναφορά';
 $string['reports'] = 'Αναφορές';
 $string['response'] = 'Απόκριση';

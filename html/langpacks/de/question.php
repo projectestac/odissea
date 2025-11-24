@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'de', version '4.4'.
+ * Strings for component 'question', language 'de', version '4.5'.
  *
  * @package     question
  * @category    string
@@ -316,7 +316,6 @@ $string['nocate'] = 'Keine solche Kategorie: {$a}!';
 $string['noconditionspecified'] = 'Geben Sie bitte eine Bedingung an';
 $string['nopermissionadd'] = 'Sie haben nicht das Recht, hier Fragen hinzuzufügen.';
 $string['nopermissionedit'] = 'Sie können hier keine Fragen bearbeiten.';
-$string['nopermissionmove'] = 'Sie haben nicht das Recht, hier Fragen zu verschieben. Speichern Sie die Frage in dieser Kategorie oder als neue Frage.';
 $string['noprobs'] = 'Es wurden keine Probleme in Ihrer Fragen-Datenbank gefunden.';
 $string['noquestionbanks'] = 'Keine Fragensammlungsplugins gefunden';
 $string['noquestions'] = 'Es wurden keine Fragen gefunden, die exportiert werden könnten. Stellen Sie sicher, dass Sie eine Kategorie ausgewählt haben, die Fragen enthält.';
@@ -407,7 +406,11 @@ $string['questionbehavioursorderexplained'] = 'Geben Sie eine kommagetrennte Lis
 $string['questioncategories'] = 'Fragenkategorien';
 $string['questioncategory'] = 'Fragenkategorie';
 $string['questioncatsfor'] = 'Fragenkategorien für \'{$a}\'';
+$string['questiondefaultssave'] = 'Fragenoptionen als standardmäßige Nutzerpräferenz speichern';
+$string['questiondefaultssave_desc'] = 'Wenn diese Option aktiviert ist, sollten Frageoptionen wie "Standardmarkierung", "eine oder mehrere Antworten?" usw. als Nutzereinstellungen gespeichert werden, wenn das Fragebearbeitungsformular übermittelt wird. Die Einstellungen werden dann beim nächsten Formularzugriff als Standard verwendet.';
 $string['questiondoesnotexist'] = 'Diese Frage gibt es nicht';
+$string['questionediting'] = 'Fragebearbeitung';
+$string['questionediting_desc'] = 'Diese Einstellungen gelten für das Bearbeiten von Fragenformularen.';
 $string['questionformtagheader'] = '{$a} Tags';
 $string['questionidmismatch'] = 'Frage-IDs können nicht zugeordnet werden';
 $string['questionloaderror'] = 'Die Frageoptionen konnten nicht geladen werden.';

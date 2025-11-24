@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_social', language 'ja', version '4.4'.
+ * Strings for component 'profilefield_social', language 'ja', version '4.5'.
  *
  * @package     profilefield_social
  * @category    string
@@ -38,5 +38,5 @@ $string['privacy:metadata:profile_field_social:fieldid'] = 'プロファイル�
 $string['privacy:metadata:profile_field_social:tableexplanation'] = '追加プロファイルデータ';
 $string['privacy:metadata:profile_field_social:userid'] = 'ソーシャルユーザプロファイルフィールドにデータが保存されているユーザのID';
 $string['skypeid'] = 'Skype ID';
-$string['webpage'] = 'ウェブページ';
+$string['webpage'] = 'ウェブサイト';
 $string['yahooid'] = 'Yahoo ID';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'eu', version '4.4'.
+ * Strings for component 'message', language 'eu', version '4.5'.
  *
  * @package     message
  * @category    string
@@ -69,6 +69,7 @@ $string['disallowed'] = 'Blokeatuta';
 $string['editmessages'] = 'Editatu mezuak';
 $string['emailtagline'] = 'Mezu hau {$a->sitename} gunean zuri bidalitako mezu baten kopia da. Erantzuteko <a href="{$a->url}">hona sartu zaitez</a>.';
 $string['enabled'] = 'Gaituta';
+$string['enablenotificationplugin'] = 'Gaitu jakinarazpen-plugina: {$a}';
 $string['errorcallingprocessor'] = 'Errorea definitutako irteera-prozesatzaileari deitzean';
 $string['errorconversationdoesnotexist'] = 'Elkarrizketa ez da existitzen';
 $string['errormessagetoolong'] = 'Mezua baimendutakoa baino luzeagoa da.';
@@ -139,6 +140,7 @@ $string['notificationdatahasnotbeenmigrated'] = 'Zure jakinarazpenak behin behin
 $string['notificationimage'] = 'Jakinarazpenen irudia';
 $string['notificationpreferences'] = 'Jakinarazpenen hobespenak';
 $string['notifications'] = 'Jakinarazpenak';
+$string['notificationsmarkedasread'] = 'Jakinarazpen guztiak irakurritako gisa markatuta daude.';
 $string['notificationwindow'] = 'Jakinarazpenen leihoa';
 $string['notincontacts'] = '{$a} kontaktuetara gehitu behar duzu zuri mezuak bidali ahal izateko.';
 $string['notincontactsheading'] = '{$a} ez dago zure kontaktuetan';
@@ -153,6 +155,7 @@ $string['page-message-x'] = 'Edozein mezu-orri';
 $string['participants'] = 'Partaideak';
 $string['pendingcontactrequests'] = 'Itxaron-zerrendan {$a} kontaktu-eskaera daude';
 $string['permitted'] = 'Baimendua';
+$string['preference'] = 'Hobespena';
 $string['privacy'] = 'Pribatutasuna';
 $string['privacy:export:conversationprefix'] = 'Elkarrizketa:';
 $string['privacy:metadata:core_favourites'] = 'Erabiltzaileak nabarmendutako elkarrizketak';

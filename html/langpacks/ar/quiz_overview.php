@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'ar', version '4.4'.
+ * Strings for component 'quiz_overview', language 'ar', version '4.5'.
  *
  * @package     quiz_overview
  * @category    string
@@ -60,6 +60,17 @@ $string['privacy:metadata:preference:quiz_overview_slotmarks'] = 'ما إذا ي
 $string['privacy:preference:slotmarks:no'] = 'لا تظهر العلامات بجانب خانة السؤال.';
 $string['privacy:preference:slotmarks:yes'] = 'تظهر العلامات بجانب خانة السؤال.';
 $string['regrade'] = 'إعادة التقييم';
+$string['regrade_allattempts'] = 'كل المحاولات';
+$string['regrade_allquestions'] = 'كل الأسئلة';
+$string['regrade_attempts'] = 'إعادة تقييم المحاولات...';
+$string['regrade_commitregrade'] = 'تثبيت إعادة التقييم';
+$string['regrade_dryrun'] = 'التنفيذ الأعزل';
+$string['regrade_help'] = 'إعادة التقييم تُعيد إجراءات حسابات الدرجات بشكل آلي للمحاولات باستعمال الإصدار الحالي لكل سؤال إن أمكن. التنفيذ الأعزل يسمح لك بمعاينة التغييرات في الدرجات بدون التأثير على المحاولات نفسها.';
+$string['regrade_link'] = 'Quiz_grades_report#Re-grading_attempts';
+$string['regrade_regradeneedednotificationmessage'] = 'آخر تنفيذ أعزل لإعادة التقييم كشف إمكانية حدوث تغيير في الدرجات عند {$a->questions} من الأسئلة لدى {$a->attempts} من المحاولات.';
+$string['regrade_regradenow'] = 'إعادة التقييم الآن';
+$string['regrade_selectedattempts'] = 'المحاولات المحددة';
+$string['regrade_selectedquestions'] = 'الأسئلة المحددة';
 $string['regradeall'] = 'إعادة تقييم الكل';
 $string['regradealldry'] = 'إعادة تقدير الدرجات بالكامل';
 $string['regradealldrydo'] = 'إعادة تقييم المحاولات المؤشرة بأنها بحاجة لإعادة التقييم ({$a})';

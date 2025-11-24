@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'ru', version '4.4'.
+ * Strings for component 'cache', language 'ru', version '4.5'.
  *
  * @package     cache
  * @category    string
@@ -34,6 +34,8 @@ $string['addstoresuccess'] = 'Успешно добавлено новое хр�
 $string['area'] = 'Область';
 $string['cacheadmin'] = 'Управление кэшированием';
 $string['cacheconfig'] = 'Настройка';
+$string['cachedef_ai_policy'] = 'Принятие пользователем политики искусственного интеллекта.';
+$string['cachedef_ai_ratelimit'] = 'Ограничение скорости вызовов поставщика искусственного интеллекта.';
 $string['cachedef_calculablesinfo'] = 'Информация о расчетах аналитики';
 $string['cachedef_calendar_categories'] = 'Категории курсов календаря, к которым пользователь имеет доступ';
 $string['cachedef_calendar_subscriptions'] = 'Подписки на календарь';
@@ -69,7 +71,6 @@ $string['cachedef_groupdata'] = 'Информация о группах курс
 $string['cachedef_h5p_content_type_translations'] = 'Переводы библиотек типов контента H5P';
 $string['cachedef_h5p_libraries'] = 'Библиотеки H5P';
 $string['cachedef_h5p_library_files'] = 'Файлы библиотеки H5P';
-$string['cachedef_hookcallbacks'] = 'Обратные вызовы хука';
 $string['cachedef_htmlpurifier'] = 'Очиститель HTML - очищенное содержимое';
 $string['cachedef_langmenu'] = 'Список доступных языков';
 $string['cachedef_license'] = 'Список лицензий';
@@ -91,6 +92,7 @@ $string['cachedef_recommendation_favourite_course_content_items'] = 'Реком�
 $string['cachedef_reportbuilder_allowed_reports'] = 'Разрешены отчеты пользователя в зависимости от аудитории';
 $string['cachedef_repositories'] = 'Данные отдельных экземпляров хранилищ файлов';
 $string['cachedef_roledefs'] = 'Определения ролей';
+$string['cachedef_routes'] = 'Данные маршрута';
 $string['cachedef_string'] = 'Строки языкового пакета';
 $string['cachedef_suspended_userids'] = 'Список приостановленных пользователей курса';
 $string['cachedef_tagindexbuilder'] = 'Результаты поиска для элементов с тегами';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'pt', version '4.4'.
+ * Strings for component 'form', language 'pt', version '4.5'.
  *
  * @package     form
  * @category    string
@@ -41,6 +41,7 @@ $string['err_minlength'] = 'Tem de inserir pelo menos {$a->format} caracteres ne
 $string['err_nonzero'] = 'Tem de inserir neste campo um número que não inicie em 0.';
 $string['err_nopunctuation'] = 'Não pode inserir pontuação neste campo.';
 $string['err_numeric'] = 'Tem de inserir um número neste campo.';
+$string['err_positiveduration'] = 'Esta duração não pode ser negativa.';
 $string['err_positiveint'] = 'Tem de inserir um número inteiro maior que 0.';
 $string['err_rangelength'] = 'Tem de inserir entre {$a->format[0]} e {$a->format[1]} caracteres neste campo.';
 $string['err_required'] = 'Tem de indicar um valor para este campo.';

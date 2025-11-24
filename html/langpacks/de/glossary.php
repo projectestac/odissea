@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'de', version '4.4'.
+ * Strings for component 'glossary', language 'de', version '4.5'.
  *
  * @package     glossary
  * @category    string
@@ -116,7 +116,7 @@ $string['definitions'] = 'Definitionen';
 $string['deletecategory'] = 'Kategorie löschen';
 $string['deleteentry'] = 'Eintrag löschen';
 $string['deleteentrya'] = 'Eintrag löschen: {$a}';
-$string['deletenotenrolled'] = 'Einträge von nicht eingeschriebenen Nutzer/innen löschen';
+$string['deletenotenrolled'] = 'Einträge von abgemeldeten Nutzer/innen';
 $string['deletingcomment'] = 'Lösche Kommentar';
 $string['deletingnoneemptycategory'] = 'Wenn diese Kategorie gelöscht wird, werden die Einträge daraus nicht gelöscht. Sie werden als \'keiner Kategorie zugeordnet\' gekennzeichnet.';
 $string['descending'] = '(absteigend)';
@@ -318,9 +318,9 @@ $string['privacy:metadata:glossary_entries:userid'] = 'ID des Nutzers der Glossa
 $string['question'] = 'Frage';
 $string['rejectedentries'] = 'Abgelehnte Einträge';
 $string['rejectionrpt'] = 'Übersicht über abgelehnte Einträge';
-$string['removeallglossarytags'] = 'Alle Glossar-Tags entfernen';
+$string['removeallglossarytags'] = 'Alle Glossar-Tags';
 $string['resetglossaries'] = 'Einträge löschen von';
-$string['resetglossariesall'] = 'Einträge aus allen Glossaren löschen';
+$string['resetglossariesall'] = 'Einträge aus allen Glossaren';
 $string['rssarticles'] = 'Anzahl neuer RSS-Artikel ';
 $string['rssarticles_help'] = 'Diese Option legt fest, wie viele neue Glossarbegriffe in den RSS-Feed übernommen werden. Eine Zahl zwischen 5 und 20 sollte angemessen sein. Die Zahl sollte höher sein, wenn das Glossar häufig bearbeitet wird.';
 $string['rssfeed'] = 'RSS Feed';

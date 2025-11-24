@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'payment', language 'ru', version '4.4'.
+ * Strings for component 'payment', language 'ru', version '4.5'.
  *
  * @package     payment
  * @category    string
@@ -45,7 +45,7 @@ $string['gatewaydisabled'] = 'Отключено';
 $string['gatewayenabled'] = 'Включено';
 $string['gatewaynotfound'] = 'Шлюз не найден';
 $string['gotomanageplugins'] = 'Включение и отключение платежных шлюзов и установка доплат через {$a}.';
-$string['gotopaymentaccounts'] = 'Вы можете создать несколько платежных счетов, используя любой из этих шлюзов на странице {$a}';
+$string['gotopaymentaccounts'] = 'Создайте платежные счета, используя любой из этих шлюзов в {$a}.';
 $string['hidearchived'] = 'Скрыть архив';
 $string['noaccountsavilable'] = 'Нет доступных платежных счетов.';
 $string['nocurrencysupported'] = 'Оплата в любой валюте не поддерживается. Убедитесь, что включен хотя бы один платежный шлюз.';

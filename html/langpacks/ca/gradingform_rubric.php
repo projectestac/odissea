@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'ca', version '4.4'.
+ * Strings for component 'gradingform_rubric', language 'ca', version '4.5'.
  *
  * @package     gradingform_rubric
  * @category    string
@@ -30,7 +30,7 @@ $string['additionalfeedback'] = 'Retroacció addicional';
 $string['alwaysshowdefinition'] = 'Permet als usuaris previsualitzar la rúbrica (en cas contrari sols es mostra després de qualificar)';
 $string['backtoediting'] = 'Torna a l\'edició';
 $string['confirmdeletecriterion'] = 'Confirmeu que voleu suprimir aquest criteri?';
-$string['confirmdeletelevel'] = 'Esteu segur de voler suprimir aquest nivell ?';
+$string['confirmdeletelevel'] = 'Confirmeu que voleu suprimir aquest nivell?';
 $string['criterion'] = 'Criteri {$a}';
 $string['criterionaddlevel'] = 'Afegeix nivell';
 $string['criteriondelete'] = 'Suprimeix criteri';
@@ -55,7 +55,7 @@ $string['leveldefinition'] = 'Definició del nivell {$a}';
 $string['leveldelete'] = 'Suprimeix el nivell {$a}';
 $string['levelempty'] = 'Prem per editar el nivell';
 $string['levelsgroup'] = 'Nivells del grup';
-$string['lockzeropoints'] = 'Calcula la qualificació basada en la rúbrica amb una qualificació mínima de 0.';
+$string['lockzeropoints'] = 'Calcula la qualificació establint com a puntuació mínima la qualificació mínima assolible a la rúbrica';
 $string['lockzeropoints_help'] = 'Aquest paràmetre només té efecte si la suma del nombre mínim de punts de cada criteri és superior a zero. Si es marca, la mínima puntuació possible de la rúbrica serà la qualificació mínima assolible en la rúbrica. Si es desmarca, la mínima puntuació possible de la rúbrica es farà correspondre amb la puntuació mínima disponible en l\'activitat (la qual és zero si no s\'utilitza cap escala).';
 $string['name'] = 'Nom';
 $string['needregrademessage'] = 'La definició de la rúbrica ha canviat després que aquest estudiant hagi estat qualificat. L\'estudiant no pot veure aquesta rúbrica fins que comproveu la rúbrica i actualitzeu la qualificació.';
@@ -63,6 +63,8 @@ $string['notset'] = 'Sense definir';
 $string['pluginname'] = 'Rúbrica';
 $string['pointsvalue'] = '{$a} punts';
 $string['previewrubric'] = 'Previsualitza rúbrica';
+$string['privacy:metadata:criterionid'] = 'Identificador d’un criteri concret que està sent qualificat.';
+$string['privacy:metadata:fillingssummary'] = 'Emmagatzema la informació sobre la qualificació de l\'usuari generada per la rúbrica.';
 $string['privacy:metadata:levelid'] = 'El nivell assolit a la rúbrica.';
 $string['regrademessage1'] = 'Ara desareu canvis en una rúbrica que ha estat utilitzada per a qualificar. Indiqueu si les qualificacions que ja existeixen s\'han de revisar. Si ho configureu així, llavors, la rúbrica s\'ocultarà als estudiants fins que els seus elements es tornin a qualificar.';
 $string['regrademessage5'] = 'Ara desareu canvis en una rúbrica que ha estat utilitzada per a qualificar. El quadern de notes no canviarà, però la rúbrica s\'ocultarà als estudiants fins que els seus elements es tornin a qualificar.';

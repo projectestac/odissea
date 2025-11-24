@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'uk', version '4.4'.
+ * Strings for component 'cohort', language 'uk', version '4.5'.
  *
  * @package     cohort
  * @category    string
@@ -49,7 +49,10 @@ $string['currentusers'] = 'Поточні користувачі';
 $string['currentusersmatching'] = 'Відібрані поточні користувачі';
 $string['defaultcontext'] = 'Типовий контекст';
 $string['delcohort'] = 'Видалити гурт';
+$string['delcohortsconfirm'] = 'Це призведе до видалення когорт і всіх пов’язаних даних.';
+$string['delcohortssuccess'] = 'Вибрані когорти видалено';
 $string['delconfirm'] = 'Це призведе до видалення когорти "{$a}" і всіх пов’язаних даних.';
+$string['delsuccess'] = 'Видалена когорта';
 $string['description'] = 'Опис';
 $string['displayedrows'] = 'Показано {$a->displayed} рядків з {$a->total}.';
 $string['duplicateidnumber'] = 'Гурт з таким кодом вже існує';

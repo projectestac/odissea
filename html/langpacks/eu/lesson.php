@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'eu', version '4.4'.
+ * Strings for component 'lesson', language 'eu', version '4.5'.
  *
  * @package     lesson
  * @category    string
@@ -151,7 +151,7 @@ $string['customscoring'] = 'Puntuazio pertsonalizatua';
 $string['customscoring_help'] = 'Gaituz gero, erantzun bakoitzari zenbakizko balioa (positiboa edo negatiboa) zehaztu beharko da.';
 $string['deadline'] = 'Itxiera-data';
 $string['defaultessayresponse'] = 'Zure entsegua irakasleak kalifikatuko du.';
-$string['deleteallattempts'] = 'Ezabatu ikasgaiaren saiakera guztiak';
+$string['deleteallattempts'] = 'Ikasgaiaren saiakera guztiak';
 $string['deletedefaults'] = 'Lehenetsitako {$a} x ikasgai ezabatu da';
 $string['deletedpage'] = 'Orria ezabatu da';
 $string['deletepagenamed'] = 'Ezabatu orria: {$a}';
@@ -519,8 +519,8 @@ $string['rank'] = 'Bitartea';
 $string['rawgrade'] = 'Puntuazio gordina';
 $string['receivedcredit'] = 'Kreditu jasoa';
 $string['redisplaypage'] = 'Orria berriz erakutsi';
-$string['removeallgroupoverrides'] = 'Ezabatu talde-salbuespen guztiak';
-$string['removealluseroverrides'] = 'Ezabatu erabiltzaile-salbuespen guztiak';
+$string['removeallgroupoverrides'] = 'Talde-salbuespen guztiak';
+$string['removealluseroverrides'] = 'Erabiltzaile-salbuespen guztiak';
 $string['report'] = 'Txostena';
 $string['reports'] = 'Txostenak';
 $string['response'] = 'Erantzuna';

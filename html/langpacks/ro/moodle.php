@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'ro', version '4.4'.
+ * Strings for component 'moodle', language 'ro', version '4.5'.
  *
  * @package     moodle
  * @category    string
@@ -44,6 +44,7 @@ $string['activityiscurrentlyhidden'] = 'Ne pare rău, această activitate este a
 $string['activitymodule'] = 'Modul activitate';
 $string['activitymodules'] = 'Module activități';
 $string['activitynotready'] = 'Activitatea nu este pregătită încă';
+$string['activityorresource'] = 'Activitate sau resursă';
 $string['activityreport'] = 'Raport activitate';
 $string['activityreports'] = 'Rapoarte activitate';
 $string['activityselect'] = 'Selectați această activitate, pentru a o muta în altă parte';
@@ -57,6 +58,7 @@ $string['addadmin'] = 'Adaugă un administrator';
 $string['addblock'] = 'Adaugă un bloc';
 $string['addcomment'] = 'Adaugă un comentariu...';
 $string['addcondition'] = 'Adaugă condiție';
+$string['addcontent'] = 'Adaugă conținut';
 $string['addcountertousername'] = 'Creează un utilizator, adăugând un număr la numele de utilizator';
 $string['addcreator'] = 'Adaugă creatorul cursului';
 $string['adddots'] = 'Adaugă...';
@@ -292,6 +294,7 @@ $string['chooseuser'] = 'Selectați un utilizator';
 $string['city'] = 'Localitate/ oraș';
 $string['cleaningtempdata'] = 'Ștergerea datelor de temporizare';
 $string['clear'] = 'Șterge';
+$string['clearall'] = 'Șterge tot';
 $string['clearfilterrow'] = 'Șterge filtrul rândului';
 $string['clearfilters'] = 'Șterge filtrele';
 $string['clearsearch'] = 'Ștergeți valoarea de căutare';
@@ -561,8 +564,8 @@ $string['delete'] = 'Șterge';
 $string['deleteablock'] = 'Șterge un bloc';
 $string['deleteall'] = 'Șterge tot';
 $string['deleteallcannotundo'] = 'Ștergeți tot - nu poate fi anulat';
-$string['deleteallcomments'] = 'Șterge toate comentariile';
-$string['deleteallratings'] = 'Șterge toate evaluările';
+$string['deleteallcomments'] = 'Toate comentariile';
+$string['deleteallratings'] = 'Toate evaluările';
 $string['deletecategory'] = 'Șterge categorie: {$a}';
 $string['deletecategorycheck'] = 'Sunteți sigur că doriți să ștergeți în întregime această categorie <b>"{$a}"</b>?<br />Aceasta va muta toate cursurile în categoria părinte, dacă există una, sau în Diverse.';
 $string['deletecategorycheck2'] = 'Dacă ștergeți această categorie, trebuie să alegeți ce veți face cu toate cursurile și subcategoriile pe care le conține.';
@@ -689,19 +692,18 @@ $string['emailagain'] = 'E-mail (din nou)';
 $string['emailalreadysent'] = 'A fost transmis deja un e-mail de resetare a parolei. Vă rugăm să vă verificați e-mailul.';
 $string['emailcharset'] = 'Set de caractere prin e-mail';
 $string['emailconfirm'] = 'Confirmați contul dumneavoastră';
-$string['emailconfirmation'] = 'Bună,
+$string['emailconfirmation'] = 'Bună ziua {$a->firstname},
 
 Un nou cont a fost solicitat pe "{$a->sitename}"
 utilizând adresa dumneavoastră de e-mail.
 
-Pentru a vă confirma noul cont, accesați această adresă web:
+Pentru a vă confirma noul cont, te rugăm să accesezi această adresă web:
 
 {$a->link}
 
-În majoritatea programelor de e-mail, aceasta ar trebui să apară sub forma unui link de culoare albastră
-pe care puteți să faceți click. Dacă nu funcționează,
-atunci tăiați și lipiți adresa în linia
-din partea superioară a ferestrei browser-ului web.
+În majoritatea programelor de e-mail, ar trebui să apară sub forma unui link de culoare albastră
+pe care puteți să dați click. Dacă nu funcționează,
+atunci faceți copy-paste în bara de adrese a ferestrei browser-ului web.
 
 Dacă aveți nevoie de asistență, vă rugăm să contactați administratorul site-ului,
 {$a->admin}';
@@ -1030,6 +1032,7 @@ $string['general'] = 'General';
 $string['geolocation'] = 'latitudine - longitudine';
 $string['gettheselogs'] = 'Obține aceste jurnale';
 $string['go'] = 'Mergi';
+$string['gobacktosite'] = 'Mergi înapoi la curs';
 $string['gpl'] = 'Drepturi de autor (C) 1999 și până în prezent Martin Dougiamas (https://moodle.com)
 
 Acest program este software gratuit; îl poți redistribui și/sau modifica în condițiile licenței publice generale GNU publicate de Free Software Foundation; fie versiunea 2 a licenței, fie (la alegerea ta) orice versiune ulterioară.
@@ -1194,6 +1197,7 @@ $string['indicator:userforumstracking'] = 'Utilizatorul urmărește forumurile';
 $string['indicator:userforumstracking_help'] = 'Acest indicator reprezintă dacă un cursant a activat sau nu urmărirea discuțiilor din forumuri.';
 $string['info'] = 'Informații';
 $string['inprogress'] = 'În desfășurare';
+$string['insertcontentbefore'] = 'Inserează conținut înaintea \'{$a->activityname}\'';
 $string['insertresourceoractivitybefore'] = 'Include o activitate sau o resursă înaintea \'{$a->activityname}\'';
 $string['institution'] = 'Instituție';
 $string['instudentview'] = 'în atenția cursantului';
@@ -1894,13 +1898,19 @@ $string['resendemail'] = 'Retrimite email de confirmare';
 $string['reset'] = 'Resetează';
 $string['resetcomponent'] = 'Componentă';
 $string['resetcourse'] = 'Resetează curs';
-$string['resetinfo'] = 'Șterge toate datele utilizatorului și resetează acest curs la starea inițială, păstrând intacte activitățile și setările.';
-$string['resetnotimplemented'] = 'Resetarea nu a fost implementată';
+$string['resetcourseconfirm'] = 'Resetați cursul?';
+$string['resetcoursewarning'] = 'Sunteți sigur(ă) că doriți să resetați cursul?
+<br/><br/>
+Se vor șterge datele selectate și se va reseta cursul la statusul inițial. Nu puteți anula această acțiune.';
+$string['resetinfo'] = 'Această funcționalitate vă permite să ștergeți toate datele utilizatorului și să resetați cursul la statusul inițial. Activitățile și setările cursului rămân neschimbate.';
+$string['resetinfoselect'] = 'Selectați datele pe care doriți să le ștergeți sau să le resetați din categoriile de mai jos:';
+$string['resetnotimplemented'] = 'Resetarea nesuportată';
+$string['resetnotimplementedinfo'] = 'Aceste activități nu pot fi resetate:';
 $string['resetrecordexpired'] = 'Link-ul de resetare a parolei pe care l-ați folosit este mai vechi de {$a} minute și a expirat. Vă rugăm să inițiați o nouă resetare a parolei.';
 $string['resetstartdate'] = 'Resetează data de începere';
 $string['resetstatus'] = 'Status';
 $string['resettable'] = 'Resetați preferințele tabelului';
-$string['resettask'] = 'Sarcină';
+$string['resettask'] = 'Resetare';
 $string['resettodefaults'] = 'Reveniți la valorile implicite';
 $string['resortcourses'] = 'Sortează cursurile';
 $string['resortsubcategoriesby'] = 'Sortează subcategoriile în {$a} crescătoare';
@@ -2049,6 +2059,9 @@ $string['senddetails'] = 'Trimiteți datele mele prin e-mail';
 $string['sent'] = 'Trimis';
 $string['separate'] = 'Separă';
 $string['separateandconnected'] = 'Modalități separate și conectate de cunoaștere';
+$string['separateandconnected1'] = 'Cunoașterea separată';
+$string['separateandconnected2'] = 'Atât separată cât şi legată';
+$string['separateandconnected3'] = 'Cunoașterea legată';
 $string['separateandconnectedinfo'] = 'Scara bazată pe teoria cunoașterii separate și conectate. Această teorie descrie două moduri diferite prin care putem evalua și învăța despre lucrurile pe care le vedem și le auzim. <ul> <li> <strong> Cunoștințele separate </strong> rămân cât mai obiective posibil fără a include sentimente și emoții. Într-o discuție cu alte persoane, le place să-și apere propriile idei, folosind logica pentru a găsi găuri în ideile adversarului. </li> <li> <strong> Cunoscătorii conectați </strong> sunt mai sensibili la alte persoane. Sunt pricepuți la empatie și tind să asculte și să pună întrebări până când simt că se pot conecta și „înțelege lucrurile din punctul lor de vedere”. Ei învață încercând să împărtășească experiențele care au condus la cunoștințele pe care le găsesc la alte persoane. </li> </ul>';
 $string['servererror'] = 'A apărut o eroare la comunicarea cu serverul';
 $string['serverlocaltime'] = 'Ora locală a server-ului';
@@ -2204,6 +2217,7 @@ $string['statswrites'] = 'Postări';
 $string['status'] = 'Status';
 $string['statuschecks'] = 'Verificări status';
 $string['statuscritical'] = 'Critic';
+$string['statusdone'] = 'Realizat';
 $string['statuserror'] = 'Eroare';
 $string['statusinfo'] = 'Info';
 $string['statusna'] = 'N/A';
@@ -2219,6 +2233,7 @@ $string['subcategory'] = 'Subcategorie';
 $string['subcategoryof'] = 'Subcategoria {$a}';
 $string['subject'] = 'Subiect';
 $string['submit'] = 'Trimite';
+$string['subsectionmoveerror'] = 'Nu se poate muta această subsecțiune într-o altă subsecțiune';
 $string['success'] = 'Succes';
 $string['successduration'] = 'Succes ({$a} secunde)';
 $string['summary'] = 'Rezumat';

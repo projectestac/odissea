@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_availabilityconditions', language 'nl', version '4.4'.
+ * Strings for component 'tool_availabilityconditions', language 'nl', version '4.5'.
  *
  * @package     tool_availabilityconditions
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['defaultdisplaymode'] = 'Standaard weergavemodus';
 $string['manageplugins'] = 'Beheer beperkingen';
 $string['pluginname'] = 'Beheer beschikbaarheidsvoorwaarden';
 $string['privacy:metadata'] = 'De beheer beschikbaarheidsvoorwaarden-plugin bewaart geen persoonlijke gegevens.';

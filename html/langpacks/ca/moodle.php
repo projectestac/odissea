@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'ca', version '4.4'.
+ * Strings for component 'moodle', language 'ca', version '4.5'.
  *
  * @package     moodle
  * @category    string
@@ -44,6 +44,7 @@ $string['activityiscurrentlyhidden'] = 'Actualment aquesta activitat està ocult
 $string['activitymodule'] = 'Mòdul d\'activitat';
 $string['activitymodules'] = 'Mòduls d\'activitat';
 $string['activitynotready'] = 'L\'activitat encara no està llesta';
+$string['activityorresource'] = 'Activitat o recurs';
 $string['activityreport'] = 'Informe d\'activitat';
 $string['activityreports'] = 'Informes d\'activitat';
 $string['activityselect'] = 'Seleccioneu aquesta activitat per moure-la a un altre lloc';
@@ -57,6 +58,7 @@ $string['addadmin'] = 'Afegeix un administrador';
 $string['addblock'] = 'Afegeix un bloc';
 $string['addcomment'] = 'Afegeix un comentari...';
 $string['addcondition'] = 'Afegeix una condició';
+$string['addcontent'] = 'Afegeix contingut';
 $string['addcountertousername'] = 'Crea un usuari afegint un número al nom d\'usuari';
 $string['addcreator'] = 'Afegeix creador/a de cursos';
 $string['adddots'] = 'Afegeix...';
@@ -294,6 +296,7 @@ $string['chooseuser'] = 'Tria un usuari';
 $string['city'] = 'Població';
 $string['cleaningtempdata'] = 'S\'estan netejant les dades temporals';
 $string['clear'] = 'Suprimeix';
+$string['clearall'] = 'Esborra-ho tot';
 $string['clearfilterrow'] = 'Suprimeix la fila de filtres';
 $string['clearfilters'] = 'Neteja els filtres';
 $string['clearsearch'] = 'Neteja la cerca';
@@ -563,15 +566,15 @@ $string['delete'] = 'Suprimeix';
 $string['deleteablock'] = 'Elimina un bloc';
 $string['deleteall'] = 'Suprimeix-ho tot';
 $string['deleteallcannotundo'] = 'Suprimeix tot (no es pot desfer)';
-$string['deleteallcomments'] = 'Suprimeix tots els comentaris';
-$string['deleteallratings'] = 'Suprimeix totes les valoracions';
+$string['deleteallcomments'] = 'Tots els comentaris';
+$string['deleteallratings'] = 'Totes les valoracions';
 $string['deletecategory'] = 'Suprimeix categoria: {$a}';
 $string['deletecategorycheck'] = 'Confirmeu que voleu suprimir completament la categoria <b>«{$a}»</b>?<br />Els cursos que contingui aquesta categoria es traslladaran a la categoria mare, si n\'hi ha, o, si no, a Miscel·lània.';
 $string['deletecategorycheck2'] = 'Si voleu suprimir aquesta categoria, heu de decidir què fer amb els cursos i subcategories que conté.';
 $string['deletecategoryempty'] = 'Categoria buida';
 $string['deletecheck'] = 'Suprimiu {$a} ?';
 $string['deletecheckfiles'] = 'Esteu absolutament segur que voleu suprimir aquests fitxers?';
-$string['deletecheckfull'] = 'Esteu absolutament segur que voleu suprimir completament {$a}, incloent les seves inscripcions, activitat i altres dades d\'usuari?';
+$string['deletecheckfull'] = 'Esteu segur que voleu esborrar l\'usuari {$a}, incloent-hi dades com ara els detalls del perfil, les inscripcions, la pertinença a grups i cohorts i algunes dades d\'activitat de l\'usuari?';
 $string['deletechecktype'] = 'Confirmeu que voleu suprimir aquest {$a->type}?';
 $string['deletechecktypename'] = 'Confirmeu que voleu suprimir  {$a->type} «{$a->name}»?';
 $string['deletecheckwarning'] = 'Ara suprimireu aquests fitxers';
@@ -691,17 +694,22 @@ $string['emailagain'] = 'Repeteix l\'adreça electrònica';
 $string['emailalreadysent'] = 'S\'ha enviat un correu electrònic de restabliment de contrasenya. Consulteu el vostre correu electrònic.';
 $string['emailcharset'] = 'Joc de caràcters del correu';
 $string['emailconfirm'] = 'Confirmació del compte';
-$string['emailconfirmation'] = 'S\'ha sol·licitat un nou compte a «{$a->sitename}» amb la vostra adreça electrònica.
+$string['emailconfirmation'] = 'Hola, {$a->firstname},
 
-Per confirmar el vostre compte, aneu a aquesta adreça web:
+S\'ha sol·licitat un compte nou a «{$a->sitename}» utilitzant
+la vostra adreça de correu electrònic.
 
-  {$a->link}
+Per confirmar el compte nou, aneu a aquesta adreça web:
 
-En la majoria de programes de correu, l\'adreça s\'hauria de presentar com un enllaç blau on podeu fer clic. Si això no funciona, copieu i enganxeu l\'adreça al camp d\'adreces
-de la finestra del vostre navegador web.
+{$a->link}
+
+A la majoria de programes de correu, s\'hauria de mostrar amb
+un enllaç blau sobre el qual només cal fer clic. Si això no funciona,
+retalleu i enganxeu l\'adreça a la línia d\'adreces a la part superior
+de la finestra del navegador web.
 
 Si necessiteu ajuda, contacteu amb l\'administrador del lloc,
-{$a->admin},';
+{$a->admin}';
 $string['emailconfirmationresend'] = 'Reenvia el correu de confirmació';
 $string['emailconfirmationsubject'] = '{$a}: confirmació de compte';
 $string['emailconfirmsent'] = '<p>S\'ha enviat un correu a la vostra adreça <b>{$a}</b></p>
@@ -960,13 +968,13 @@ $string['force'] = 'Imposa';
 $string['forcelanguage'] = 'Imposa l\'idioma';
 $string['forceno'] = 'No imposis';
 $string['forcepasswordchange'] = 'Imposa un canvi de contrasenya';
-$string['forcepasswordchange_help'] = 'Si activeu aquesta casella, la pròxima vegada que l\'usuari iniciï la sessió se li demanarà que canviï la contrasenya';
+$string['forcepasswordchange_help'] = 'Si està marcat, es demanarà a l\'usuari que canviï la contrasenya la propera vegada que iniciï la sessió.';
 $string['forcepasswordchangecheckfull'] = 'Esteu absolutament segur que voleu imposar un canvi de contrasenya a {$a}?';
 $string['forcepasswordchangenot'] = 'No s\'ha pogut imposar el canvi de contrasenya a {$a}';
 $string['forcepasswordchangenotice'] = 'Heu de canviar la contrasenya abans de continuar';
 $string['forcepasswordresetfailurenotice'] = 'La vostra contrasenya actual ja no supera la política de contrasenyes establerta. Contacteu amb el vostre administrador de Moodle per rebre suport.
    {$a}';
-$string['forcepasswordresetnotice'] = 'La vostra contrasenya actual ja no supera la política de contrasenyes establerta; heu de restablir la contrasenya per iniciar la sessió.
+$string['forcepasswordresetnotice'] = 'La vostra contrasenya actual ja no compleix la política de contrasenyes. Heu de restablir la contrasenya per iniciar la sessió.
    {$a}';
 $string['forcetheme'] = 'Imposa tema';
 $string['forgotaccount'] = 'Heu oblidat la contrasenya?';
@@ -1013,6 +1021,7 @@ $string['general'] = 'General';
 $string['geolocation'] = 'latitud - longitud';
 $string['gettheselogs'] = 'Obté aquests registres';
 $string['go'] = 'Endavant';
+$string['gobacktosite'] = 'Torna al lloc';
 $string['gpl'] = 'Drets d\'autor (C) 1999 en endavant Martin Dougiamas (https://moodle.com)
 
 Aquest programa és programari lliure; podeu redistribuir-lo i/o modificar-lo segons els termes de la Llicència Pública General GNU publicada per la Free Software Foundation; ja sigui la versió 2 de la Llicència o (a la vostra elecció) qualsevol versió posterior.
@@ -1178,6 +1187,8 @@ $string['indicator:userforumstracking'] = 'L\'usuari segueix els fòrums';
 $string['indicator:userforumstracking_help'] = 'Aquest indicador mostra si l\'estudiant té activat el seguiment dels fòrums.';
 $string['info'] = 'Informació';
 $string['inprogress'] = 'En progrés';
+$string['insertcontentbefore'] = 'Inseriu el contingut abans de «{$a->activityname}»';
+$string['insertcontentsection'] = 'Inseriu el contingut a la secció «{$a->sectionname}»';
 $string['insertresourceoractivitybefore'] = 'Insereix una activitat o un recurs abans de «{$a->activityname}»';
 $string['institution'] = 'Institució';
 $string['instudentview'] = 'a la visualització de l\'estudiant';
@@ -1293,6 +1304,7 @@ $string['maximumgradex'] = 'Nota màxima: {$a}';
 $string['maximumshort'] = 'Max';
 $string['maximumupload'] = 'Mida màxima de càrrega';
 $string['maximumupload_help'] = 'La mida màxima de fitxers permesa per a les càrregues dels estudiants al curs. Addicionalment, podeu restringir encara més la mida màxima de càrrega per a cada activitat.';
+$string['maxlengthreached'] = 'S\'ha arribat al límit màxim de caràcters de {$a}.';
 $string['maxnumberweeks'] = 'Nombre màxim de seccions';
 $string['maxnumberweeks_desc'] = 'El valor màxim del nombre de seccions en el menú desplegable (només és aplicable a alguns formats de curs).';
 $string['maxnumcoursesincombo'] = 'Navega per els<a href="{$a->link}">{$a->numberofcourses} cursos</a>.';
@@ -1459,6 +1471,7 @@ $string['moveselectedcategoriesto'] = 'Mou les categories seleccionades a';
 $string['moveselectedcoursesto'] = 'Mou els cursos seleccionats a...';
 $string['movetoanotherfolder'] = 'Mou-los a una altra carpeta';
 $string['moveup'] = 'amunt';
+$string['multipleitemsfound'] = 'S\'han trobat {$a} elements.';
 $string['mustchangepassword'] = 'La contrasenya nova ha de ser diferent de l\'actual';
 $string['mustconfirm'] = 'Cal que confirmeu el vostre compte';
 $string['mycourses'] = 'Els meus cursos';
@@ -1560,6 +1573,7 @@ $string['nofiltersapplied'] = 'No s\'ha aplicat cap filtre';
 $string['nograde'] = 'Sense qualificació';
 $string['nohelpforactivityorresource'] = 'Actualment no hi ha una ajuda associada a aquest recurs o activitat';
 $string['noimagesyet'] = 'Encara no s\'han penjat imatges en aquest curs';
+$string['noitemsfound'] = 'No s\'ha trobat cap element.';
 $string['nologsfound'] = 'No s\'han trobat registres';
 $string['nomatchingusers'] = 'Cap usuari concorda amb \'{$a}\'';
 $string['nomorecourses'] = 'No s\'ha trobat cap altre curs que coincideixi';
@@ -1634,6 +1648,7 @@ $string['numyears'] = '{$a} anys';
 $string['ok'] = 'OK';
 $string['oldpassword'] = 'Contrasenya actual';
 $string['olduserdirectory'] = 'Aquest és l\'ANTIC directori d\'usuaris i ja no és necessari. Podeu suprimir-lo tranquil·lament. Els fitxers que conté s\'han copiat al NOU directori d\'usuaris.';
+$string['oneitemfound'] = 'S\'ha trobat un element.';
 $string['opendrawerblocks'] = 'Obre el calaix de blocs';
 $string['opendrawerindex'] = 'Obre l\'índex del curs';
 $string['opensinnewwindow'] = 'S\'obre en una finestra nova';
@@ -1850,6 +1865,7 @@ $string['remoteappuser'] = 'Usuari remot {$a}';
 $string['remove'] = 'Suprimeix';
 $string['removeadmin'] = 'Suprimeix administrador';
 $string['removecreator'] = 'Suprimeix creador de cursos';
+$string['removed'] = 'S\'ha esborrat {$a}';
 $string['removestudent'] = 'Suprimeix estudiant';
 $string['removeteacher'] = 'Suprimeix professor';
 $string['rename'] = 'Canvia el nom';
@@ -1869,13 +1885,19 @@ $string['resendemail'] = 'Reenvia el correu de confirmació';
 $string['reset'] = 'Reinicia';
 $string['resetcomponent'] = 'Component';
 $string['resetcourse'] = 'Reinicia curs';
-$string['resetinfo'] = 'Aquesta pàgina us permet buidar un curs, tot suprimint les dades d\'usuari i conservant les activitats i altres paràmetres. Teniu en compte que en trametre aquest formulari suprimireu definitivament les dades d\'usuari d\'aquest curs que hàgiu seleccionat.';
+$string['resetcourseconfirm'] = 'Reiniciar el curs?';
+$string['resetcoursewarning'] = 'Esteu segur que voleu restablir el curs «{$a}»?
+<br/><br/>
+Això esborrarà les dades seleccionades i restablirà el curs al seu estat original. Aquesta acció no es pot desfer.';
+$string['resetinfo'] = 'Aquesta funcionalitat permet esborrar totes les dades dels usuaris i restablir el curs al seu estat original. Les activitats i els paràmetres del curs no es modifiquen.';
+$string['resetinfoselect'] = 'Seleccioneu les dades que voleu esborrar o restablir de les categories següents:';
 $string['resetnotimplemented'] = 'Reinici no implementat';
+$string['resetnotimplementedinfo'] = 'Aquestes activitats no es poden reiniciar:';
 $string['resetrecordexpired'] = 'L\'enllaç de restabliment de la contrasenya que ha utilitzat fa {$a} minuts ha expirat. Torni a iniciar un nou procediment de restabliment de contrasenya..';
 $string['resetstartdate'] = 'Redefineix la data d\'inici';
 $string['resetstatus'] = 'Estat';
 $string['resettable'] = 'Restableix les preferències de la taula';
-$string['resettask'] = 'Tasca';
+$string['resettask'] = 'Reinicia';
 $string['resettodefaults'] = 'Reinicia a valors per defecte';
 $string['resortcourses'] = 'Ordena els cursos';
 $string['resortsubcategoriesby'] = 'Ordena les subcategories per {$a} ascendent';
@@ -2023,6 +2045,9 @@ $string['senddetails'] = 'Envia\'m les dades per correu';
 $string['sent'] = 'Enviat';
 $string['separate'] = 'Separat';
 $string['separateandconnected'] = 'Formes de coneixement separades i connectades';
+$string['separateandconnected1'] = 'Sobretot coneixements separats';
+$string['separateandconnected2'] = 'Separats i connectats';
+$string['separateandconnected3'] = 'Sobretot coneixements connectats';
 $string['separateandconnectedinfo'] = 'L\'escala basada en la teoria del coneixement separat i connectat.
 Aquesta teoria descriu dues formes diferents d\'avaluar i aprendre sobre les coses que podem veure i escoltar.<ul><li>Els <strong>coneixedors separats</strong> intenten mantenir-se objectius sense deixar-se influir pels sentiments ni les emocions. En el debat amb altres persones els agrada defensar les seves idees utilitzant la lògica per trobar forats en l\'argumentació de l\'oponent.</li><li>Els <strong>coneixedors connectats</strong> són molt més sensibles que la resta de la gent. Són experts en empatia i tendeixen a escoltar i fer preguntes fins que poden «entendre el teu punt de vista». Aprenen provant de compartir les experiències que els han aportat coneixement amb la resta de la gent.</li></ul>';
 $string['servererror'] = 'S\'ha produït un error mentre es comunicava amb el servidor';
@@ -2179,6 +2204,7 @@ $string['statswrites'] = 'Enviaments';
 $string['status'] = 'Estat';
 $string['statuschecks'] = 'Comprovacions d\'estat';
 $string['statuscritical'] = 'Crític';
+$string['statusdone'] = 'Fet';
 $string['statuserror'] = 'Error';
 $string['statusinfo'] = 'Informació';
 $string['statusna'] = 'N/D';
@@ -2194,6 +2220,7 @@ $string['subcategory'] = 'Subcategoria';
 $string['subcategoryof'] = 'Subcategoria de {$a}';
 $string['subject'] = 'Assumpte';
 $string['submit'] = 'Tramet';
+$string['subsectionmoveerror'] = 'No es pot moure aquesta subsecció a una altra subsecció';
 $string['success'] = 'Èxit';
 $string['successduration'] = 'Èxit ({$a} segons)';
 $string['summary'] = 'Resum';

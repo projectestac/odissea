@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_admin_presets', language 'ar', version '4.4'.
+ * Strings for component 'tool_admin_presets', language 'ar', version '4.5'.
  *
  * @package     tool_admin_presets
  * @category    string
@@ -37,8 +37,10 @@ $string['created'] = 'تم إنشاؤه';
 $string['currentvalue'] = 'القيمة الحالية';
 $string['deletepreset'] = 'هل أنت متأكد من رغبتك في حذف الإعداد المسبق {$a} لمشرف الموقع؟';
 $string['deletepresettitle'] = 'أتريد حذف الإعداد المسبق {$a}؟';
-$string['deletepreviouslyapplied'] = 'لقد تم سابقًا تطبيق هذا الإعداد المسبق. حذف الإعداد المسبق يزيله من موقعك بشكل كامل. لن تكون قادرًا على إرجاع إعداداتك إلى ما كانت عليه قبل تطبيق هذا الإعداد المسبق.';
+$string['deletepreviouslyapplied'] = 'هل أنت متأكد من رغبتك في حذف التحضير المسبق لمشرف الموقع {$a}؟<br><br>
+لقد تم سابقًا تطبيق هذا الإعداد المسبق. حذف الإعداد المسبق يزيله من موقعك بشكل كامل. لن تكون قادرًا على إرجاع إعداداتك إلى ما كانت عليه قبل تطبيق هذا الإعداد المسبق.';
 $string['deleteshow'] = 'حذف إعداد مسبق لمشرف الموقع';
+$string['editadminpresetname'] = 'تحرير اسم مشرف التحضير المسبق';
 $string['eventpresetdeleted'] = 'إعداد مسبق تم حذفه';
 $string['eventpresetdownloaded'] = 'إعداد مسبق تم تنزيله';
 $string['eventpresetexported'] = 'إعداد مسبق تم إنشاؤه';

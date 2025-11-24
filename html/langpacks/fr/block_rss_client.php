@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'fr', version '4.4'.
+ * Strings for component 'block_rss_client', language 'fr', version '4.5'.
  *
  * @package     block_rss_client
  * @category    string
@@ -30,18 +30,21 @@ $string['addheadlineblock'] = 'Ajouter un bloc manchette RSS';
 $string['addnew'] = 'Ajouter nouveau';
 $string['addnewfeed'] = 'Ajouter un flux';
 $string['cannotmakemodification'] = 'Vous n’avez actuellement pas les permissions requises pour faire des modifications à ce flux RSS.';
-$string['choosefeedlabel'] = 'Choisir les flux RSS que vous désirez rendre disponibles dans ce bloc :';
+$string['choosefeedlabel'] = 'Choisir les flux à afficher';
 $string['clientchannellink'] = 'Site d’origine…';
 $string['clientnumentries'] = 'Nombre par défaut d’articles RSS à afficher par bloc';
-$string['clientshowchannellinklabel'] = 'Un lien vers le site original doit-il être affiché ? (Si aucun lien n’est fourni dans le flux, aucun lien ne sera affiché) :';
+$string['clientshowchannellinklabel'] = 'Afficher le lien source si disponible';
 $string['clientshowimagelabel'] = 'Afficher l’image du flux si disponible';
 $string['configblock'] = 'Configurer ce bloc';
+$string['configmethodexisting'] = 'Choisir un flux RSS existant';
+$string['configmethodnew'] = 'Ajouter un nouveau flux RSS';
 $string['couldnotfindfeed'] = 'Impossible de trouver le flux avec cet ID.';
 $string['couldnotfindloadrssfeed'] = 'Impossible de trouver ou charger le flux RSS';
 $string['customtitlelabel'] = 'Titre personnalisé (laisser vide pour utiliser le titre fourni par le flux)';
 $string['deletefeedconfirm'] = 'Voulez-vous vraiment supprimer ce flux RSS ?';
 $string['disabledrssfeeds'] = 'Les flux RSS sont désactivés';
-$string['displaydescriptionlabel'] = 'Afficher la description de chaque lien ?';
+$string['displaydescriptionlabel'] = 'Afficher la description des articles';
+$string['displaysettings'] = 'Afficher les réglages du flux RSS';
 $string['editafeed'] = 'Modifier un flux';
 $string['editfeeds'] = 'Modifier, s’abonner ou se désabonner de flux RSS';
 $string['editnewsfeeds'] = 'Modifier les flux RSS';
@@ -58,10 +61,10 @@ $string['feedsaddedit'] = 'Ajouter/modifier des flux RSS';
 $string['feedsconfigurenewinstance'] = 'Cliquer ici pour afficher dans ce bloc des flux RSS';
 $string['feedsconfigurenewinstance2'] = 'Cliquer l’icône de modification ci-dessus pour configurer ce bloc afin d’afficher des flux RSS.';
 $string['feedupdated'] = 'Flux RSS modifié';
-$string['feedurl'] = 'URL du flux';
+$string['feedurl'] = 'Lien RSS';
 $string['findmorefeeds'] = 'Rechercher d’autres flux RSS';
 $string['managefeeds'] = 'Gérer les flux RSS';
-$string['nofeeds'] = 'Il n’y a pas de flux RSS défini sur ce site.';
+$string['nofeeds'] = 'Il n’y a pas encore de flux RSS. Sélectionner « Ajouter un nouveau flux RSS ».';
 $string['numentries'] = 'Articles par flux';
 $string['pickfeed'] = 'Choisir un flux RSS';
 $string['pluginname'] = 'Flux RSS';
@@ -84,7 +87,7 @@ $string['rss_client:manageownfeeds'] = 'Gérer ses propres flux RSS';
 $string['rss_client:myaddinstance'] = 'Ajouter un bloc flux RSS au tableau de bord';
 $string['seeallfeeds'] = 'Afficher tous les flux RSS';
 $string['sharedfeed'] = 'Flux RSS partagé';
-$string['shownumentrieslabel'] = 'Nombre maximum d’articles à afficher par bloc';
+$string['shownumentrieslabel'] = 'Articles à afficher';
 $string['submitters'] = 'Qui aura les permissions requises pour définir de nouveaux flux RSS ? Les flux RSS définis sont disponibles sur toutes les pages de votre site.';
 $string['submitters2'] = 'Pouvant définir';
 $string['timeout'] = 'Durée en minutes avant l’expiration d’un flux RSS en cache. Cette durée définit le laps de temps minimal avant expiration. Le flux sera actualisé lors de l’exécution du cron après expiration. Valeur recommandée : 30 min ou plus.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'ro', version '4.4'.
+ * Strings for component 'backup', language 'ro', version '4.5'.
  *
  * @package     backup
  * @category    string
@@ -205,6 +205,7 @@ $string['enableasyncbackup_help'] = 'Dacă este activată această opțiune, ope
 $string['enterasearch'] = 'Introduceți o căutare';
 $string['error_block_for_module_not_found'] = 'Instanță orfană de bloc (id: {$a->bid}) pentru modulul cursului (id: {$a->mid}) găsită. Acest bloc nu va avea backup.';
 $string['error_course_module_not_found'] = 'Modul de curs Orphan (id: {$a}) găsit. Acest modul nu va avea backup.';
+$string['error_delegate_section_not_found'] = 'Lipsește sectiunea delegată din modulul de curs (ID {$a}). Acestei secțiuni nu i se va face backup.';
 $string['errorcopyingbackupfile'] = 'Nu s-a copiat fișierul de backup în folderul temporar înaintea restaurării.';
 $string['errorfilenamemustbezip'] = 'Fişierul pe care îl introduceţi trebuie să fie un fişier ZIP şi să aibă extensia .mbz';
 $string['errorfilenamerequired'] = 'Trebuie să introduceţi un nume de fişier valid pentru această copie de rezervă';
@@ -281,6 +282,7 @@ $string['includeditems'] = 'Elemente incluse:';
 $string['includefilereferences'] = 'Referințe despre fișier la conținuturi externe';
 $string['includesection'] = 'Secţiunea {$a}';
 $string['includeuserinfo'] = 'Informaţii de utilizator';
+$string['includeuserinfo_instance'] = 'Include {$a} date despre utilizator';
 $string['inprogress'] = 'Copie de rezervă în curs';
 $string['jumptofinalstep'] = 'Sari la pasul final';
 $string['keep'] = 'Păstrează';
@@ -398,6 +400,7 @@ $string['rootsettingusers'] = 'Include utilizatorii inscriși';
 $string['rootsettinguserscompletion'] = 'Include detalii finalizare curs ale utilizatorilor';
 $string['rootsettingxapistate'] = 'Include status-ul utilizatorului în conținutul de genul activităților H5P';
 $string['samesitenotification'] = 'Această copie de rezervă a fost creată numai cu referințe la fișiere, nu fișierele în sine. Restaurarea va funcționa numai pe acest site.';
+$string['section_prefix'] = 'Secțiune {$a}:';
 $string['sectionactivities'] = 'Activităţi';
 $string['sectioninc'] = 'Inclus în copia de rezervă (fără informaţii de utilizator)';
 $string['sectionincanduser'] = 'Inclus în copia de rezervă împreună cu informaţii de utilizator';
@@ -424,6 +427,7 @@ $string['status'] = 'Status';
 $string['storagecourseandexternal'] = 'Locul în care sunt backup-urile cursului și directorul specificat';
 $string['storagecourseonly'] = 'Locul în care sunt backup-urile cursului';
 $string['storageexternalonly'] = 'Director specificat pentru backup-uri automate';
+$string['subsectioncontent'] = 'Conținutul subsecțiunii';
 $string['successful'] = 'Backup finalizat cu succes';
 $string['successfulcopy'] = 'Copiere finalizată cu succes';
 $string['successfulrestore'] = 'Restaurare finalizată cu succes';

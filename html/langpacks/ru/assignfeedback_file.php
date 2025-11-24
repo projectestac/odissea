@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_file', language 'ru', version '4.4'.
+ * Strings for component 'assignfeedback_file', language 'ru', version '4.5'.
  *
  * @package     assignfeedback_file
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['batchoperationconfirmuploadfiles'] = 'Загрузить один или несколько файлов с отзывами для всех выбранных пользователей?';
+$string['batchoperationuploadfiles'] = 'Загрузить отзыв';
 $string['batchuploadfiles'] = 'Загрузить файлы с отзывами для нескольких пользователей?';
 $string['batchuploadfilesforusers'] = 'Отправить файлы с отзывами выбранным пользователям - {$a}.';
 $string['configmaxbytes'] = 'Максимальный размер файла';

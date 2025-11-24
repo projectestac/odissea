@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'zh_cn', version '4.4'.
+ * Strings for component 'auth', language 'zh_cn', version '4.5'.
  *
  * @package     auth
  * @category    string
@@ -89,13 +89,14 @@ $string['emailchangecancel'] = '取消 email 变更';
 $string['emailchangepending'] = '变更进行中。访问向 {$a->preference_newemail} 发送的链接。';
 $string['emailnowexists'] = '你尝试输入到个人资料里的email地址已经被分配给别人了。所以您的email地址变更请求现予取消，但您可以再次尝试使用不同的地址。';
 $string['emailupdate'] = 'Email地址更新';
-$string['emailupdatemessage'] = '亲爱的{$a->fullname}，
+$string['emailupdatemessage'] = 'Hi，{$a->firstname}，
 
-您已请求更改您在{$a->site}上的帐户的电子邮件地址。要确认此更改，请访问以下网址：
+您已请求更改您在{$a->站点}上的帐户的电子邮件地址。要确认此更改，请进入以下网址：
 
-{$a->url}
+{$ - > url}
+确认链接将在<b>10分钟后过期</b>。
 
-{$a->supportemail}';
+{$ a - > supportemail}';
 $string['emailupdatesuccess'] = '用户 <em>{$a->fullname}</em> 的email地址已成功更新为 <em>{$a->email}</em>。';
 $string['emailupdatetitle'] = '{$a->site}的email更新确认';
 $string['errormaxconsecutiveidentchars'] = '密码必须包含最多{$a}个连续的相同字符。';
@@ -162,6 +163,10 @@ $string['selfregistration_help'] = '如果选中一个身份认证插件，比�
 $string['settingmigrationmismatch'] = '更正插件设置名称时检测到数值不匹配！身份验证插件 \'{$a->plugin}\' 在原传统名称设置值 \'{$a->setting}\' 为 \'{$a->legacy}\' 而当前名称设置为\'{$a->current}\'。后面的值已被设定为有效值，但您应该检查一下是否符合您所期。';
 $string['sha1'] = 'SHA-1 加密';
 $string['showguestlogin'] = '您可以在登录页面显示或隐藏访客登录按钮。';
+$string['showloginform'] = '显示手动登录表单';
+$string['showloginform_desc'] = '如果网站上的所有用户都使用不需要他们输入用户名和密码的身份验证方法（如 OAuth 2），则可以隐藏手动登录表单。请注意，使用手动帐户的用户将无法登录。
+
+如果您隐藏了手动登录表单，然后无法登录，您可以使用命令行 php admin/cli/cfg.php --name=showloginform --set=1 再次显示它';
 $string['stdchangepassword'] = '使用标准页面更改密码';
 $string['stdchangepassword_expl'] = '如果外部认证系统允许通过 Moodle 修改密码，则应设为是。此选项会覆盖“修改密码URL”。';
 $string['stdchangepassword_explldap'] = '注意: 如果使用远程服务器，建议您使用安全的 LDAP 连接(ldaps://)。';

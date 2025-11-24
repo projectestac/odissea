@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'ru', version '4.4'.
+ * Strings for component 'availability', language 'ru', version '4.5'.
  *
  * @package     availability
  * @category    string
@@ -67,7 +67,7 @@ $string['privacy:metadata'] = 'Подсистема ограничения до�
 $string['restrictaccess'] = 'Ограничение доступа';
 $string['restrictbygroup'] = 'Добавить ограничение доступа по группе/потоку';
 $string['setheading'] = '{$a->number} Набор из {$a->count} ограничений';
-$string['show_verb'] = 'Щелкните, чтобы показать отобразить';
+$string['show_verb'] = 'Щелкните, чтобы отобразить';
 $string['showmore'] = 'Показать больше';
 $string['shown_all'] = 'Отображается, если студент не соответствует условиям';
 $string['shown_individual'] = 'Отображается, если студент не соответствует этому условию';

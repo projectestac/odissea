@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'it', version '4.4'.
+ * Strings for component 'competency', language 'it', version '4.5'.
  *
  * @package     competency
  * @category    string
@@ -29,6 +29,8 @@ $string['allchildrenarecomplete'] = 'Tutte le figlie sono state raggiunte';
 $string['competencies'] = 'Competenze';
 $string['competenciesarenotenabled'] = 'Le competenze non sono abilitate.';
 $string['competenciessettings'] = 'Impostazioni competenze';
+$string['competency'] = 'Competenza';
+$string['competencyframework'] = 'Quadro di competenze';
 $string['completeplanstask'] = 'Completamento piani formativi in scadenza';
 $string['coursecompetencyoutcome_complete'] = 'Raggiungi la competenza';
 $string['coursecompetencyoutcome_evidence'] = 'Allega attestazione';
@@ -38,7 +40,7 @@ $string['coursemodulecompetencyoutcome_complete'] = 'Raggiungi la competenza';
 $string['coursemodulecompetencyoutcome_evidence'] = 'Allega attestazione';
 $string['coursemodulecompetencyoutcome_none'] = 'Non eseguire azioni';
 $string['coursemodulecompetencyoutcome_recommend'] = 'Manda in revisione';
-$string['deletecompetencyratings'] = 'Elimina valutazioni delle competenze';
+$string['deletecompetencyratings'] = 'Valutazioni delle competenze';
 $string['duplicateditemname'] = '{$a} (copia)';
 $string['enablecompetencies'] = 'Abilita competenze';
 $string['enablecompetencies_desc'] = 'Le competenze consentono di valutare gli utenti in base ai piani di formazione.';
@@ -163,8 +165,10 @@ $string['privacy:metadata:usermodified'] = 'L\'utente che ha creato o modificato
 $string['privacy:path:plans'] = 'Piani di formazione';
 $string['privacy:path:relatedtome'] = 'Relative alla persona';
 $string['privacy:path:userevidence'] = 'Attestazione della formazione pregressa';
+$string['proficient'] = 'Esperto';
 $string['pushcourseratingstouserplans'] = 'Aggiorna i piani formativi individuali con le valutazioni del corso';
 $string['pushcourseratingstouserplans_desc'] = 'Di default le impostazioni del corso prevedono l\'aggiornamento dei piani formativi individuali quando vengono valutate le competenze.';
+$string['rating'] = 'Valutazione';
 $string['syncplanscohorts'] = 'Sincronizzazione piani dai modelli dei piani formativi dei gruppi globali';
 $string['taxonomy_behaviour'] = 'Comportamento';
 $string['taxonomy_competency'] = 'Competenza';
@@ -197,6 +201,7 @@ $string['usercommentedonaplanhtml'] = '<p>{$a->fullname} ha commentato il piano 
 <p>Per ulteriori informazioni: <a href="{$a->url}">{$a->urlname}</a>.</p>';
 $string['usercommentedonaplansmall'] = '{$a->fullname} ha commentato il piano "{$a->plan}".';
 $string['usercommentedonaplansubject'] = '{$a} ha commentato il piano.';
+$string['usercompetency'] = 'Competenza utente';
 $string['usercompetencystatus_idle'] = 'Non attiva';
 $string['usercompetencystatus_inreview'] = 'In revisione';
 $string['usercompetencystatus_waitingforreview'] = 'In attesa di revisione';

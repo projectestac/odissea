@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'uk', version '4.4'.
+ * Strings for component 'group', language 'uk', version '4.5'.
  *
  * @package     group
  * @category    string
@@ -50,8 +50,8 @@ $string['databaseupgradegroups'] = 'Поточна версія груп - {$a}'
 $string['defaultgrouping'] = 'Типове Групування';
 $string['defaultgroupingname'] = 'Групування';
 $string['defaultgroupname'] = 'Група';
-$string['deleteallgroupings'] = 'Видалити усі групування';
-$string['deleteallgroups'] = 'Видалити усі групи';
+$string['deleteallgroupings'] = 'Всі угруповання';
+$string['deleteallgroups'] = 'Всі групи';
 $string['deletegroupconfirm'] = 'Ви впевнені, що хочете видалити групу \'{$a}\'?';
 $string['deletegrouping'] = 'Видалити групування';
 $string['deletegroupingconfirm'] = 'Ви впевнені, що хочете видалити групування \'{$a}\'? (Наявні в групуванні групи не видаляються.)';
@@ -210,8 +210,8 @@ $string['random'] = 'Випадково';
 $string['removefromgroup'] = 'Вилучити користувача з групи {$a}';
 $string['removefromgroupconfirm'] = 'Ви дійсно бажаєте вилучити користувача "{$a->user}" з групи "{$a->group}"?';
 $string['removegroupfromselectedgrouping'] = 'Вилучити групу з групування';
-$string['removegroupingsmembers'] = 'Вилучити усі групи з групування';
-$string['removegroupsmembers'] = 'Вилучити усіх учасників групи';
+$string['removegroupingsmembers'] = 'Всі групи з угруповань';
+$string['removegroupsmembers'] = 'Всі учасники групи';
 $string['removeselectedusers'] = 'Вилучити вибраних користувачів';
 $string['selectfromgroup'] = 'Вибрати учасників з групи';
 $string['selectfromgrouping'] = 'Вибрати учасників з групування';

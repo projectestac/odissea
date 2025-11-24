@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_moderator_guide', language 'ca', version '4.4'.
+ * Strings for component 'block_moderator_guide', language 'ca', version '4.5'.
  *
  * @package     block_moderator_guide
  * @category    string
@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['author'] = 'Autor/a original';
+$string['author'] = 'Autor o autora original';
 $string['description'] = 'Descripció';
 $string['name'] = 'Nom';

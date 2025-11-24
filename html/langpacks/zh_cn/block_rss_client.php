@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'zh_cn', version '4.4'.
+ * Strings for component 'block_rss_client', language 'zh_cn', version '4.5'.
  *
  * @package     block_rss_client
  * @category    string
@@ -30,18 +30,21 @@ $string['addheadlineblock'] = '添加 RSS 标题块';
 $string['addnew'] = '添加新的';
 $string['addnewfeed'] = '添加一个新种子';
 $string['cannotmakemodification'] = '您现在不能修改这个RSS种子。';
-$string['choosefeedlabel'] = '显示您要显示在这个版块中的种子：';
+$string['choosefeedlabel'] = '选择要显示的源';
 $string['clientchannellink'] = '源站点...';
 $string['clientnumentries'] = '缺省情况下每个种子显示多少条信息。';
-$string['clientshowchannellinklabel'] = '是否显示原站链接(频道链接)?(如果在新闻种子中并未提供链接，则不会显示)';
+$string['clientshowchannellinklabel'] = '如果可用显示源链接';
 $string['clientshowimagelabel'] = '如果可能，显示频道的图片：';
 $string['configblock'] = '配置此区块';
+$string['configmethodexisting'] = '选择现有的 RSS 源';
+$string['configmethodnew'] = '添加新的 RSS 源';
 $string['couldnotfindfeed'] = '找不到 ID 的源';
 $string['couldnotfindloadrssfeed'] = '不能找到或者读取RSS种子';
 $string['customtitlelabel'] = '自定义题目(如果留空则使用源内的标题)';
 $string['deletefeedconfirm'] = '您确定要删除这个种子么?';
 $string['disabledrssfeeds'] = 'RSS种子被禁用';
-$string['displaydescriptionlabel'] = '显示每个链接的描述?';
+$string['displaydescriptionlabel'] = '显示条目的说明';
+$string['displaysettings'] = 'RSS 源的显示设置';
 $string['editafeed'] = '编辑一个种子';
 $string['editfeeds'] = '修改、订阅或取消订阅 RSS 新闻源';
 $string['editnewsfeeds'] = '修改新闻种子';
@@ -58,10 +61,10 @@ $string['feedsaddedit'] = '添加/修改源';
 $string['feedsconfigurenewinstance'] = '点击此处以配置此区块应显示的RSS种子。';
 $string['feedsconfigurenewinstance2'] = '点击上面的编辑图标配置本版块显示的RSS种子。';
 $string['feedupdated'] = 'RSS 已更新';
-$string['feedurl'] = '种子网页地址';
+$string['feedurl'] = '源链接';
 $string['findmorefeeds'] = '查找更多 RSS 源';
 $string['managefeeds'] = '管理RSS 源';
-$string['nofeeds'] = '此站尚未添加 RSS 种子。';
+$string['nofeeds'] = '没有 RSS 源。选择“添加新的 RSS 源”添加一个。';
 $string['numentries'] = '每个种子的标题数';
 $string['pickfeed'] = '选择一个 RSS 源';
 $string['pluginname'] = '远程 RSS 源';
@@ -84,7 +87,7 @@ $string['rss_client:manageownfeeds'] = '管理自己的 RSS 种子';
 $string['rss_client:myaddinstance'] = '在仪表盘新增一个 RSS 源版块';
 $string['seeallfeeds'] = '查看所有的种子';
 $string['sharedfeed'] = '共享种子';
-$string['shownumentrieslabel'] = '每个版块中最多显示几条。';
+$string['shownumentrieslabel'] = '要显示的条目';
 $string['submitters'] = '允许谁定义新的 RSS 种子？已定义的种子可以在网站的任何页面显示。';
 $string['submitters2'] = '提交者';
 $string['timeout'] = '读 RSS 种子超时';

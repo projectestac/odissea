@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'de', version '4.4'.
+ * Strings for component 'quiz_overview', language 'de', version '4.5'.
  *
  * @package     quiz_overview
  * @category    string
@@ -60,6 +60,17 @@ $string['privacy:metadata:preference:quiz_overview_slotmarks'] = 'Ob Kennzeichen
 $string['privacy:preference:slotmarks:no'] = 'Kennzeichen werden nicht beim Fragenslot gezeigt';
 $string['privacy:preference:slotmarks:yes'] = 'Kennzeichen werden beim Fragenslot angezeigt';
 $string['regrade'] = 'Neu bewerten';
+$string['regrade_allattempts'] = 'Alle Versuche';
+$string['regrade_allquestions'] = 'Alle Fragen';
+$string['regrade_attempts'] = 'Versuche neu bewerten …';
+$string['regrade_commitregrade'] = 'Neubewertung durchführen';
+$string['regrade_dryrun'] = 'Probelauf';
+$string['regrade_help'] = 'Bei der Neubewertung wird die automatische Bewertung der Versuche neu berechnet, wobei die aktuelle Version jeder Frage verwendet wird. Ein Probelauf ermöglicht eine Vorschau der Notenänderungen, ohne dass dies Auswirkungen auf die Versuche hat.';
+$string['regrade_link'] = 'Quiz_grades_report#Re-grading_attempts';
+$string['regrade_regradeneedednotificationmessage'] = 'Beim letzten Probelauf wurde festgestellt, dass sich durch die Neubewertung die Noten für {$a->questions} Fragen in {$a->attempts} Versuchen ändern würden.';
+$string['regrade_regradenow'] = 'Jetzt neu bewerten';
+$string['regrade_selectedattempts'] = 'Ausgewählte Versuche';
+$string['regrade_selectedquestions'] = 'Ausgewählte Fragen';
 $string['regradeall'] = 'Alle neu bewerten';
 $string['regradealldry'] = 'Probelauf einer vollständigen Neubewertung';
 $string['regradealldrydo'] = 'Versuche neu bewerten, die entsprechend markiert sind ({$a})';

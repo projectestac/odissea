@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost_union', language 'fr', version '4.4'.
+ * Strings for component 'theme_boost_union', language 'fr', version '4.5'.
  *
  * @package     theme_boost_union
  * @category    string
@@ -74,7 +74,7 @@ $string['accessibilitysupportpagesrlinktitledefault'] = 'Obtenir une assistance 
 $string['accessibilitysupportpagesrlinktitlesetting'] = 'Titre du lien du lecteur d\'écran pour la page d\'aide à l\'accessibilité';
 $string['accessibilitysupportpagesrlinktitlesetting_desc'] = 'Dans ce paramètre, vous pouvez définir le titre du lien du lecteur d\'écran pour la page d\'aide à l\'accessibilité. Ce texte sera utilisé comme texte de lien qui n\'est affiché qu\'aux lecteurs d\'écran.';
 $string['accessibilitysupportpagetitledefault'] = 'Assistance à l\'accessibilité';
-$string['accessibilitysupportpagetitlesetting'] = 'Titre de la page d\'assistance  à l\'accessibilité';
+$string['accessibilitysupportpagetitlesetting'] = 'Titre de la page d\'assistance à l\'accessibilité';
 $string['accessibilitysupportpagetitlesetting_desc'] = 'Dans ce paramètre, vous pouvez définir le titre de la page d\'aide à l\'accessibilité. Ce texte sera également utilisé comme texte de lien vers la page d\'informations sur l\'aide à l\'accessibilité si vous configurez « Position du lien vers la page d\'aide à l\'accessibilité » en conséquence.';
 $string['accessibilitysupportrecaptcha'] = 'Ajouter reCAPTCHA à la page d\'aide à l\'accessibilité';
 $string['accessibilitysupportrecaptcha_desc'] = 'Ce paramètre vous permet de contrôler si un reCAPTCHA est ajouté à la page d\'assistance à l\'accessibilité. Cela permet d\'éviter le spam et les abus du formulaire d\'assistance à l\'accessibilité, comme c\'est le cas pour le <a href="{$a->support}">formulaire d\'assistance de Moodle</a>. Cependant, l\'ajout de reCAPTCHA crée une barrière d\'accessibilité supplémentaire pour les utilisateurs de lecteurs d\'écran ou d\'autres technologies d\'assistance, ce qui peut être contre-productif dans ce cas. Par conséquent, veuillez choisir judicieusement si vous souhaitez activer ce paramètre. Veuillez également noter que, même activé, le recaptcha ne s\'affiche pas tant que vous n\'avez pas défini les <a href="{$a->settings}">clés API nécessaires dans les paramètres d\'authentification</a>.';
@@ -199,6 +199,7 @@ $string['boost_union:editregionoutsidebottom'] = 'Pour pouvoir modifier la régi
 $string['boost_union:editregionoutsideleft'] = 'Pour pouvoir modifier la région de bloc extérieur (à gauche)';
 $string['boost_union:editregionoutsideright'] = 'Pour pouvoir modifier la région de bloc extérieur (à droite)';
 $string['boost_union:editregionoutsidetop'] = 'Pour pouvoir modifier la région de bloc extérieur (en haut)';
+$string['boost_union:viewhintcourseguestenrol'] = 'Pour pouvoir voir un indice concernant l\'inscription des invités dans un cours visible.';
 $string['boost_union:viewhintcourseselfenrol'] = 'Pour pouvoir obtenir un indice d’auto-inscription libre à un cours visible.';
 $string['boost_union:viewhintinhiddencourse'] = 'Pour pouvoir obtenir un indice pour un cours caché.';
 $string['boost_union:viewregioncontentlower'] = 'Pour pouvoir voir la région du bloc Contenu (inférieur)';
@@ -235,10 +236,25 @@ $string['bootstrapwarningcolor'] = 'Couleur d’attention';
 $string['brandcolorsheading'] = 'Couleurs de la marque';
 $string['breadcrumbsheading'] = 'Fil d’Ariane';
 $string['cachedef_flavours'] = 'Variantes qui s’appliquent à un numéro d’identifiant de catégorie de page donné pour l’utilisateur actuel';
+$string['cachedef_fontawesomeicons'] = 'Carte des icônes FontAwesome';
 $string['cachedef_hookoverrides'] = 'Remplacement des crochets';
 $string['cachedef_smartmenu_items'] = 'Éléments du menu intelligent';
 $string['cachedef_smartmenus'] = 'Menus intelligents';
 $string['cachedef_touchiconsios'] = 'Icônes pour écran d‘accueil iOS';
+$string['calendarbrandingheading'] = 'Calendrier général de la marque';
+$string['calendareventcolorbordersetting'] = 'Couleur de la bordure du type d\'événement du calendrier « {$a} »';
+$string['calendareventcolorbordersetting_desc'] = 'La couleur du type d\'événement du calendrier « {$a} » qui est utilisée pour les bordures.';
+$string['calendareventcolormainsetting'] = 'Couleur principale du type d\'événement du calendrier « {$a} »';
+$string['calendareventcolormainsetting_desc'] = 'La couleur principale du type d\'événement du calendrier « {$a} » qui est utilisée pour les icônes et les arrière-plans.';
+$string['calendareventcolorsheading'] = 'Type d\'événement du calendrier : {$a}';
+$string['calendareventtypecategory'] = 'Categorie';
+$string['calendareventtypecourse'] = 'Cours';
+$string['calendareventtypegroup'] = 'Groupe';
+$string['calendareventtypeother'] = 'Autre';
+$string['calendareventtypesite'] = 'Site';
+$string['calendareventtypeuser'] = 'Utilisateur';
+$string['calendariconscolorsetting'] = 'Couleurs des icônes du calendrier';
+$string['calendariconscolorsetting_desc'] = 'La couleur de certaines icônes utilisées dans les vues du calendrier. La couleur par défaut est le bleu, mais cela peut entrer en conflit avec les couleurs de la marque du calendrier que vous avez peut-être définies ci-dessus.';
 $string['categorybreadcrumbs'] = 'Afficher le fil d’Ariane de la catégorie dans l’en-tête du cours';
 $string['categorybreadcrumbs_desc'] = 'Par défaut, les fils d’Ariane de la catégorie de cours ne sont pas affichés sur les pages de cours dans l’en-tête du cours. Ce paramètre permet d’afficher le fil d’Ariane de la catégorie de cours dans l’en-tête du cours au-dessus du nom du cours.<br/><br/>
 Remarque : l’option « Ne rien changer » ne change rien au fil d’Ariane de la catégorie de cours tel qu’il est présenté par le noyau Moodle. Alors que l’option « Non » veille à ce que les fils d’Ariane des catégories de cours ne soient jamais affichés du tout. Cela pourrait être une différence car Boost dans le noyau de Moodle pourrait en effet montrer des fils d’Ariane de catégorie de cours commençant sur des niveaux de catégorie de cours imbriqués plus profonds (ce que les développeurs de Boost Union considèrent comme un problème).';
@@ -249,7 +265,7 @@ $string['categorylistingpresentation_boxlist'] = 'Liste des cases';
 $string['categorylistingpresentation_desc'] = 'Avec ce paramètre, vous pouvez modifier l\'apparence de la liste des catégories sur les pages d\'index des catégories et sur la page d\'accueil du site. Au lieu de la présentation proposée par le noyau Moodle, vous pouvez présenter la liste des catégories sous forme d\'une liste actualisée de cases.';
 $string['categorylistingpresentation_nochange'] = 'Le cauchemar du concepteur (inchangé tel que présenté par le noyau Moodle)';
 $string['categorylistingpresentation_note'] = 'Remarque : si vous avez activé le paramètre « Présentation de la liste des cours » ci-dessus, nous vous recommandons d\'activer également ce paramètre. Les deux ont été conçus pour fonctionner ensemble.';
-$string['choosereadme'] = '<p>Theme Boost Union est un thème enfant amélioré de Boost qui vise, d’une part, à rendre Boost simplement plus configurable et, d’autre part, à fournir des fonctionnalités supplémentaires utiles pour le fonctionnement quotidien de Moodle par les administrateurs, les enseignants et étudiants.</p><p>Boost Union est géré par<br />Moodle an Hochschulen e.V.,</p><p>en coopération avec<br />lern.link GmbH</p><p>ainsi que<br />bdecent GmbH</p>';
+$string['choosereadme'] = 'Theme Boost Union est un thème enfant amélioré de Boost qui vise, d’une part, à rendre Boost simplement plus configurable et, d’autre part, à fournir des fonctionnalités supplémentaires utiles pour le fonctionnement quotidien de Moodle par les administrateurs, les enseignants et étudiants. Boost Union est géré par Moodle an Hochschulen e.V., en coopération avec ssystems GmBH ainsi que bdecent GmbH';
 $string['closeoffcanvas'] = 'Fermer le tiroir hors canevas';
 $string['configtitle'] = 'Boost Union';
 $string['configtitleaccessibility'] = 'Accessibilité';
@@ -258,6 +274,7 @@ $string['configtitlefeel'] = 'Sensation';
 $string['configtitleflavours'] = 'Variantes';
 $string['configtitlefunctionality'] = 'Fonctionnalité';
 $string['configtitlelook'] = 'Apparence';
+$string['configtitlesnippets'] = 'Extraits SCSS';
 $string['contactcontentsetting'] = 'Contenu de la page Contact';
 $string['contactcontentsetting_desc'] = 'Ce réglage permet d’ajouter du contenu en texte enrichi qui sera affiché sur une page de contact (qui n’est pas la même que la page intégrée Moodle « Contacter l’assistance du site »).';
 $string['contactdisabled'] = 'La page de contact est désactivée pour ce site. Il n’y a rien à voir ici.';
@@ -300,6 +317,10 @@ $string['courseindexdrawerwidthsetting_desc'] = 'Ce paramètre permet de modifie
 $string['courseindexheading'] = 'Index de cours';
 $string['courseindexmodiconenabled'] = 'Afficher les icônes d‘activités dans l‘index de cours';
 $string['courseindexmodiconenabled_desc'] = 'Si activé, l‘icône représentant le type d‘activité sera affiché à gauche du titre de l‘activité. Ce faisant, soit l‘icône déplace l‘indicateur d‘achèvement d‘activité à droite du titre de l‘activité, soit il remplace cet indicateur en revêtant la couleur d‘état d‘achèvement en arrière-plan.';
+$string['courseistingprogressstyle'] = 'Style de progression dans l\'achèvement du cours';
+$string['courseistingprogressstyle_bar'] = 'Barre de progression';
+$string['courseistingprogressstyle_desc'] = 'Avec ce paramètre, vous contrôlez la manière dont la progression de la formation est affichée. Vous pouvez choisir entre un simple pourcentage ou une barre de progression.';
+$string['courseistingprogressstyle_percentage'] = 'Pourcentage du texte';
 $string['courselistingcontacts'] = 'Contact du cours';
 $string['courselistingfields'] = 'Classification des cours';
 $string['courselistinggoto'] = 'Accéder au cours';
@@ -321,8 +342,13 @@ $string['courselistingnosummary'] = 'Ce cours n\'a pas de résumé';
 $string['courselistingpopup'] = 'Détails';
 $string['courselistingpresentation'] = 'Présentation de la liste des cours';
 $string['courselistingpresentation_list'] = 'Liste des cours';
+$string['courselistingselectfields'] = 'Sélectionnez les champs du cours à afficher dans la liste des cours.';
+$string['courselistingselectfields_desc'] = 'Avec ce paramètre, vous pouvez sélectionner les champs personnalisés spécifiques qui s\'affichent dans la liste des cours. Si aucun champ n\'est sélectionné, aucun champ ne s\'affichera.';
+$string['courselistingselectfields_nofield'] = 'Avec ce paramètre, vous pouvez sélectionner les champs personnalisés spécifiques qui s\'affichent dans la liste des cours. Il n\'y a pas encore de champ personnalisé utilisable. Veuillez vous rendre sur <a href="{$a->url}">{$a->linktitle}</a> et créer d\'abord un champ personnalisé.';
 $string['courselistingshowcontacts'] = 'Afficher les contacts du cours dans la liste des cours';
 $string['courselistingshowcontacts_desc'] = 'Avec ce paramètre, vous pouvez contrôler si les photos des contacts du cours sont affichées dans la liste des cours ou non. Remarque : les photos des contacts sont affichées avec l\'image du cours, il n\'est donc pas possible d\'afficher les contacts du cours sans afficher l\'image du cours.';
+$string['courselistingshowfields'] = 'Afficher les champs du cours dans la liste des cours';
+$string['courselistingshowfields_desc'] = 'Avec ce paramètre, vous pouvez contrôler si les champs personnalisés du cours sont affichés ou non dans la liste des cours.';
 $string['courselistingummary'] = 'Résumé du cours';
 $string['courselistingviewprofile'] = 'Voir le profil';
 $string['coursemanagementheading'] = 'Gestion des cours';
@@ -331,7 +357,6 @@ $string['courseoverviewshowcourseimagessetting'] = 'Afficher les images de cours
 $string['courseoverviewshowcourseimagessetting_desc'] = 'Ce paramètre permet d‘afficher ou non les images de cours dans le bloc « Vue d‘ensemble des cours ». Ce paramètre est réglable individuellement pour les différentes vues (Cartes, Liste et Résumé).';
 $string['courseoverviewshowprogresssetting'] = 'Afficher la progression dans le cours';
 $string['courseoverviewshowprogresssetting_desc'] = 'Ce paramètre permet d‘afficher ou non la progression dans le cours dans le bloc « Vue d‘ensemble des cours ».';
-$string['courserelatedhintsheading'] = 'Conseils liés au cours';
 $string['coursestab'] = 'Cours';
 $string['coursetab'] = 'Cours';
 $string['cssh5pheading'] = 'CSS brut pour H5P';
@@ -617,12 +642,14 @@ $string['loginformtransparencysetting'] = 'Transparence du formulaire de connexi
 $string['loginformtransparencysetting_desc'] = 'Ce paramètre permet de rendre le formulaire de connexion légèrement transparent pour faire ressortir encore plus l’image d’arrière-plan.';
 $string['loginidpshowintrosetting'] = 'Texte pour la connexion par IdP';
 $string['loginidpshowintrosetting_desc'] = 'Ce paramètre permet d‘afficher ou non le texte <em>« {$a} »</em> au dessus des boutons de connexion par fournisseur d‘identité. Par défaut ce texte est affiché et informe brièvement les utilisateurs de la nature de ces boutons. Si vous désactivez ce paramètre, le texte sera caché. Ceci permet de fournir une interface de connexion simple si vous n‘utilisez que des fournisseurs d‘identités externes comme OAuth2 ou OIDC.';
+$string['loginlinkbuttonenabled'] = 'Afficher le lien « Connexion » sous forme de bouton';
+$string['loginlinkbuttonenabled_desc'] = 'Avec ce paramètre, vous pouvez afficher le lien « Se connecter » en haut de la page sous forme de bouton. Cela peut aider vos utilisateurs à reconnaître qu\'ils ne sont pas encore connectés.';
 $string['loginlocalintro'] = 'Connexion avec votre compte Moodle';
 $string['loginlocalloginenablesetting'] = 'Connexion locale';
 $string['loginlocalloginenablesetting_desc'] = 'Ce paramètre permet d‘afficher ou non le formulaire de connexion locale. Par défaut, ce formulaire est affiché et permet aux utilisateurs de s‘identifier avec un compte local. En désactivant ce paramètre, le formulaire sera masqué. Ceci permet de ne proposer que la connexion via des fournisseurs d‘identité externes comme OAuth2 ou OIDC.';
-$string['loginlocalloginenablesetting_note'] = 'Attention : si vous masquez le formulaire de connexion locale, il se peut que les administrateurs ne puissent plus se connecter avec un compte local en cas de problème avec le fournisseur d’identité externe. Pour permettre une connexion locale dans ce cas de figure, il est possible de définir une <a href="{$a->url}">page de connexion locale séparée</a>. Sur cette page alternative, toutes les mesures de sécurité pour la connexion à Moodle s’appliquent.';
+$string['loginlocalloginenablesetting_note'] = 'Attention : si vous masquez le formulaire de connexion locale, il se peut que les administrateurs ne puissent plus se connecter avec un compte local en cas de problème avec le fournisseur d’identité externe. Il en va de même si aucune autre méthode d\'authentification que l\'authentification manuelle n\'est activée. <br />Pour autoriser les connexions locales dans de tels cas, la <a href="{$a->url}">page de connexion locale latérale</a> (voir ci-dessous pour plus de détails) est automatiquement activée. Par sécurité, veuillez enregistrer cette URL.';
 $string['loginlocalloginformhead'] = 'Connexion locale';
-$string['loginlocalloginlocalnotdisabled'] = 'La connexion locale est possible depuis la page de connexion standard. Il n‘est donc pas utile de passer par cette page de connexion locale. Utilisez plutôt la <a href="{$a->url}">page de connexion standard</a> pour vous connecter.';
+$string['loginlocalloginlocalnotdisabled'] = 'Il n\'est pas nécessaire de se connecter sur cette page d\'accès secondaire. Veuillez utiliser la <a href="{$a->url}">page de connexion standard</a> pour vous connecter.';
 $string['loginlocalshowintrosetting'] = 'Texte pour la connexion locale';
 $string['loginlocalshowintrosetting_desc'] = 'Ce paramètre permet d‘afficher ou non le texte <em>« {$a} »</em> au-dessus du formulaire de connexion locale. Par défaut, ce texte est masqué. Si vous l‘affichez, cela peut aider les utilisateurs à comprendre quelles informations d‘authentification ils doivent utiliser, notamment s‘il y a plusieurs méthodes de connexion possibles ou si vous avez modifié l‘ordre des méthodes de connexion.';
 $string['loginorderfirsttimesignupsetting'] = 'Information pour les nouveaux utilisateurs et auto-enregistrement';
@@ -634,6 +661,7 @@ $string['loginorderidpsetting'] = 'Connexion par IdP';
 $string['loginorderlocalsetting'] = 'Connexion locale';
 $string['loginpagetab'] = 'Page de connexion';
 $string['loginprovidersheading'] = 'Fournisseurs d‘identités';
+$string['loginprovidersheading_desc'] = 'Remarque : Boost Union dispose de ses propres paramètres de connexion et n\'utilise pas le paramètre « {$a->settingname} » du <a href="{$a->url}">paramètre d\'authentification du cœur de Moodle</a>.';
 $string['logocompactsetting'] = 'Logo compact';
 $string['logocompactsetting_desc'] = 'Ici, on peut télécharger une version compacte du même logo que ci-dessus, comme un emblème, un bouclier ou une icône. Cette image est notamment utilisée dans la barre de navigation en haut de chaque page Moodle. L’image doit être claire même à de petites tailles.';
 $string['logosetting'] = 'Logo';
@@ -823,6 +851,15 @@ $string['showfullnameinusermenussetting_loggedinas'] = 'Connecté sous le nom :
 $string['showhintcourseguestaccessgeneral'] = 'Vous consultez actuellement ce cours en tant que <strong>{$a->role}</strong>.';
 $string['showhintcourseguestaccesslink'] = 'Pour avoir un accès complet au cours, vous pouvez <a href="{$a->url}">vous inscrire vous-même à ce cours</a>.';
 $string['showhintcourseguestaccesssetting_desc'] = 'Avec ce paramètre, un indice apparaîtra dans l’en-tête du cours lorsqu’un utilisateur y accède avec la fonction d’accès invité. Si le cours propose une auto-inscription active, un lien vers cette page est également présenté à l’utilisateur.';
+$string['showhintcourseguestenrolauthonly'] = 'Tous les utilisateurs connectés à Moodle peuvent accéder librement au contenu de ce cours sans s\'y inscrire.';
+$string['showhintcourseguestenrolauthonlyalways'] = 'Tous les utilisateurs connectés à Moodle peuvent accéder au contenu de ce cours sans s\'y inscrire s\'ils connaissent le mot de passe d\'accès invité.';
+$string['showhintcourseguestenrolcallforaction'] = 'Si vous ne souhaitez pas accorder un accès libre à ce cours, veuillez désactiver l\'accès invité ou définir un mot de passe invité dans les <a href="{$a->url}">paramètres du cours</a>.';
+$string['showhintcourseguestenrolcallforactionalways'] = 'Si vous ne souhaitez pas accorder l\'accès invité à ce cours, veuillez désactiver l\'accès invité dans les <a href="{$a->url}">paramètres du cours</a>.';
+$string['showhintcourseguestenroleveryone'] = 'Tous les utilisateurs de Moodle, même ceux qui ne possèdent pas de compte Moodle, peuvent accéder librement au contenu de ce cours sans s\'y inscrire.';
+$string['showhintcourseguestenroleveryonealways'] = 'Tous les utilisateurs Moodle, et même ceux qui n\'ont pas de compte Moodle, peuvent accéder au contenu de ce cours sans s\'y inscrire s\'ils connaissent le mot de passe d\'accès invité.';
+$string['showhintcourseguestenrolhint'] = 'Ce cours est actuellement visible par tous et <strong>l\'accès invité sans mot de passe invité</strong> est possible.';
+$string['showhintcourseguestenrolhintalways'] = 'Ce cours est actuellement visible par tous et accessible aux invités à l\'aide d\'un mot de passe.';
+$string['showhintcourseguestenrolsetting_always'] = 'Oui, même si un mot de passe d\'accès invité est défini.';
 $string['showhintcoursehiddengeneral'] = 'Ce cours est actuellement <strong>masqué</strong>. Seuls les enseignants inscrits peuvent accéder à ce cours lorsqu’il est masqué.';
 $string['showhintcoursehiddensetting'] = 'Afficher l’indice dans les cours masqués';
 $string['showhintcoursehiddensetting_desc'] = 'Avec ce paramètre, un indice apparaîtra dans l’en-tête du cours tant que la visibilité du cours est masquée. Cela permet d’identifier l’état de visibilité d’un parcours en un coup d’œil sans avoir à consulter les paramètres du parcours.';
@@ -842,7 +879,7 @@ $string['showhintcoursguestaccesssetting'] = 'Afficher l’indice pour l’accè
 $string['showhintforumnotifications'] = 'Ce cours est actuellement <strong>masqué</strong>. Cela signifie que <strong>les étudiants ne seront pas avertis</strong> en ligne ou par e-mail des messages que vous aurez postés dans ce forum.';
 $string['showhintforumnotificationssetting'] = 'Afficher un indice pour les notifications du forum dans les cours masqués';
 $string['showhintforumnotificationssetting_desc'] = 'Avec ce paramètre, un indice apparaîtra non seulement dans l’en-tête du cours, mais aussi dans les forums, tant que la visibilité du cours est masquée. Ceci a pour but de clarifier que les notifications dans un forum ne sont pas envoyées aux étudiants et d’aider les enseignants à comprendre cette situation.';
-$string['shownavbarstarredcourses_config'] = 'Choisir mes cours favoris sur la page « Mes cours »';
+$string['shownavbarstarredcourses_config'] = 'Définir les cours favoris sur la page « {$a} »';
 $string['shownavbarstarredcourses_label'] = 'Cours favoris';
 $string['shownavbarstarredcoursessetting'] = 'Accéder aux cours favoris depuis la barre de navigation';
 $string['shownavbarstarredcoursessetting_desc'] = 'Ce paramètre permet d‘ajouter un menu déroulant qui liste les cours favoris à côté des icônes de notification et de messagerie';
@@ -925,7 +962,7 @@ $string['smartmenus_desc'] = '<p>Les menus intelligents permettent à l‘admini
 $string['smartmenusbyadmin'] = 'Montrer à';
 $string['smartmenusbyadmin_admins'] = 'Administrateurs du site uniquement';
 $string['smartmenusbyadmin_all'] = 'Tous les utilisateurs';
-$string['smartmenusbyadmin_help'] = 'Limitez la visibilité en fonction du fait que l\'utilisateur soit  administrateur du site ou pas.';
+$string['smartmenusbyadmin_help'] = 'Limitez la visibilité en fonction du fait que l\'utilisateur soit administrateur du site ou pas.';
 $string['smartmenusbyadmin_nonadmins'] = 'Réservé aux non-administrateurs';
 $string['smartmenusbycohort'] = 'Cohorte';
 $string['smartmenusbycohort_help'] = 'Restreindre l‘accès à une ou plusieurs cohortes';
@@ -999,10 +1036,13 @@ $string['smartmenusmenuitemcssclass'] = 'Classe CSS';
 $string['smartmenusmenuitemcssclass_help'] = 'Ce paramètre permet d‘ajouter une classe CSS à l‘élément de menu afin de pouvoir adapter son style.';
 $string['smartmenusmenuitemdeleteconfirm'] = 'Voulez-vous vraiment supprimer cet élément du menu intelligent ?';
 $string['smartmenusmenuitemdeletesuccess'] = 'L’élément du menu intelligent a bien été supprimé';
+$string['smartmenusmenuitemdisplayallcourses'] = 'Afficher les cours masqués';
 $string['smartmenusmenuitemdisplayfield'] = 'Nom du cours';
 $string['smartmenusmenuitemdisplayfield_help'] = 'Le nom qui sera utilisé comme titre de l‘élément de la liste de cours dynamique. Les possibilités sont le nom complet du cours ou le nom abrégé';
 $string['smartmenusmenuitemdisplayfieldcoursefullname'] = 'Nom complet';
 $string['smartmenusmenuitemdisplayfieldcourseshortname'] = 'Nom abrégé';
+$string['smartmenusmenuitemdisplayonlyvisiblecourses'] = 'Affichage des parcours cachés';
+$string['smartmenusmenuitemdisplayonlyvisiblecourses_help'] = 'Si cette option est activée, la liste des cours n\'affichera pas les cours masqués dans aucun menu intelligent, même pour les administrateurs et les utilisateurs disposant de la capacité moodle/course:viewhiddencourses dans le cours.';
 $string['smartmenusmenuitemdisplayoptions'] = 'Mise en forme du titre';
 $string['smartmenusmenuitemdisplayoptions_help'] = 'Permet de définir l‘apparence du titre de l‘élément';
 $string['smartmenusmenuitemdisplayoptionshidetitle'] = 'Afficher seulement l‘icône (sur tous les dispositifs)';
@@ -1012,6 +1052,8 @@ $string['smartmenusmenuitemduplicate'] = 'Dupliquer l‘élément de menu';
 $string['smartmenusmenuitemduplicatesuccess'] = 'L‘élément de menu a bien été dupliqué';
 $string['smartmenusmenuitemedit'] = 'Modifier l‘élément de menu';
 $string['smartmenusmenuitemeditsuccess'] = 'L‘élément du menu intelligent a bien été modifié';
+$string['smartmenusmenuitemhiddencoursesortingend'] = 'Afficher les cours masqués à la fin de la liste des cours';
+$string['smartmenusmenuitemhiddencoursesortingtogether'] = 'Trier les cours cachés et visibles ensemble';
 $string['smartmenusmenuitemicon'] = 'Icône';
 $string['smartmenusmenuitemicon_help'] = 'L‘icône à afficher à côté du titre de l‘élément de menu';
 $string['smartmenusmenuitemlinktarget'] = 'Cible du lien';

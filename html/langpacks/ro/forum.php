@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ro', version '4.4'.
+ * Strings for component 'forum', language 'ro', version '4.5'.
  *
  * @package     forum
  * @category    string
@@ -554,9 +554,6 @@ $string['postmailinfo'] = 'Aceasta este o copie a mesajului postat în {$a}.';
 $string['postmailnow'] = '<p>Această intervenţie va fi trimisă automat la toţi utilizatorii care s-au înscris la acest forum.</p>';
 $string['postmailreply'] = 'Pentru a răspunde dați click pe acest link: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
-$string['postrating1'] = 'Cunoașterea separată';
-$string['postrating2'] = 'Atât separată cât şi legată';
-$string['postrating3'] = 'Cunoașterea legată';
 $string['posts'] = 'Intervenţii';
 $string['postsfrom'] = 'Postări de la';
 $string['postsmadebyuser'] = 'Postările lui {$a}';
@@ -643,7 +640,7 @@ $string['qandaforum'] = 'Forum Întrebare şi Răspuns';
 $string['qandanotify'] = 'Acesta este un forum de întrebări și răspunsuri. Pentru a vedea alte răspunsuri, trebuie mai întâi să postați un răspuns';
 $string['re'] = 'Re:';
 $string['readtherest'] = 'Citeşte continuarea acestui subiect';
-$string['removeallforumtags'] = 'Eliminați toate etichetele forumului';
+$string['removeallforumtags'] = 'Toate etichetele forumului';
 $string['removefromfavourites'] = 'Scoateți această discuție de la favorite';
 $string['replies'] = 'Răspunsuri';
 $string['repliesmany'] = '{$a} replici în total';
@@ -658,11 +655,11 @@ $string['replyplaceholder'] = 'Scrie răspunsul tău ...';
 $string['replypostdiscussion'] = 'Răspunde la discuție';
 $string['replytopostbyemail'] = 'Puteți răspunde prin email';
 $string['replytouser'] = 'Foloseşte adresa de email în răspuns';
-$string['resetdigests'] = 'Ștergeți toate preferințele de rezumat pentru fiecare utilizator pe forum';
+$string['resetdigests'] = 'Toate preferințele de rezumat pentru fiecare utilizator pe forum';
 $string['resetforums'] = 'Şterge intervenţii din';
-$string['resetforumsall'] = 'Şterge toate intervenţiile';
-$string['resetsubscriptions'] = 'Şterge toate intervenţiile din forum';
-$string['resettrackprefs'] = 'Şterge toate preferinţele de urmărire a forumului';
+$string['resetforumsall'] = 'Toate postările';
+$string['resetsubscriptions'] = 'Toate abonamentele de pe forum';
+$string['resettrackprefs'] = 'Toate preferinţele de urmărire a forumului';
 $string['rssarticles'] = 'Număr de articole RSS recente';
 $string['rssarticles_help'] = 'Această setare specifică numărul de articole (fie discuţii sau postări) incluse în flux-ul RSS. Sunt acceptabile, în general, între 5 şi 20. ';
 $string['rsssubscriberssdiscussions'] = 'Feed RSS de discuții';

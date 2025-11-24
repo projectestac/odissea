@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'fr', version '4.4'.
+ * Strings for component 'user', language 'fr', version '4.5'.
  *
  * @package     user
  * @category    string
@@ -25,25 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcondition'] = 'Ajouter une condition';
-$string['adverbfor_and'] = 'et';
-$string['adverbfor_andnot'] = 'et';
-$string['adverbfor_or'] = 'ou';
-$string['applyfilters'] = 'Appliquer les filtres';
-$string['clearfilterrow'] = 'Supprimer la rangée de filtre';
-$string['clearfilters'] = 'Réinitialiser les filtres';
-$string['clearfilterselection'] = 'Retirer « {$a} » du filtre';
 $string['countparticipantsfound'] = '{$a} participants trouvés';
 $string['filterbykeyword'] = 'Mot-clef';
-$string['filterrowlegend'] = 'Filtre {$a}';
-$string['filtersetmatchdescription'] = 'Comment les filtres multiples doivent être combinés';
-$string['filtertype'] = 'Type de filtre';
-$string['match'] = 'Correspondance';
-$string['matchofthefollowing'] = 'un des éléments suivants :';
 $string['moodlenetprofile'] = 'ID de profil MoodleNet';
 $string['moodlenetprofile_help'] = 'Votre ID de profil MoodleNet relie votre profil MoodleNet avec ce site.';
 $string['placeholdertype'] = 'Taper…';
-$string['placeholdertypeorselect'] = 'Taper ou sélectionner…';
 $string['privacy:courserequestpath'] = 'Cours demandés';
 $string['privacy:descriptionpath'] = 'Description de profil';
 $string['privacy:devicespath'] = 'Appareils de l’utilisateur';
@@ -149,7 +135,6 @@ $string['privacy:passwordresetpath'] = 'Réinitialisation de mots de passe';
 $string['privacy:privatefilespath'] = 'Fichiers personnels';
 $string['privacy:profileimagespath'] = 'Avatars (images des profils)';
 $string['privacy:sessionpath'] = 'Données de session';
-$string['selectfiltertype'] = 'Sélectionner';
 $string['supportmessagealternative'] = 'En lieu et place, vous pouvez envoyer un courriel à {$a}.';
 $string['supportmessagenotsent'] = 'Votre message n’a pas pu être envoyé.';
 $string['supportmessagesent'] = 'Votre message a été envoyé.';

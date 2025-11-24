@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'nl', version '4.4'.
+ * Strings for component 'auth', language 'nl', version '4.5'.
  *
  * @package     auth
  * @category    string
@@ -47,7 +47,7 @@ $string['auth_invalidnewemailkey'] = 'Fout. Als je probeert een wijziging van e-
 $string['auth_loginpasswordtoggle'] = 'Wachtwoordzichtbaarheid wisselen';
 $string['auth_loginpasswordtoggle_desc'] = 'Voeg een pictogram toe aan het wachtwoordveld op het inlogscherm waarmee gebruikers hun ingevoerde wachtwoord kunnen tonen of verbergen.';
 $string['auth_loginrecaptcha'] = 'Schakel reCAPTCHA in om in te loggen';
-$string['auth_loginrecaptcha_desc'] = 'Voeg een visueel/audio bevestigingsformulierelement toe aan de inlogpagina. Dit verkleint het risico op ongerechtvaardigde inlogpogingen. Zie <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a> voor meer details.';
+$string['auth_loginrecaptcha_desc'] = 'Voeg een visueel/audio bevestigingsformulierelement toe aan de inlogpagina. Dit verkleint het risico op ongerechtvaardigde inlogpogingen. Zie <a href="https://www.google.com/recaptcha">Google reCAPTCHA</a> voor meer details.';
 $string['auth_multiplehosts'] = 'Je kunt verschillende hosts ingeven (bijv. host1.com;host2.com;host3.com)';
 $string['auth_notconfigured'] = 'Authenticatiemethode {$a} is niet geconfigureerd';
 $string['auth_outofnewemailupdateattempts'] = 'Je hebt het maximale aantal pogingen om je wijziging van e-mailadres te bevestigen bereikt. Je wijzigingsaanvraag is geannuleerd.';
@@ -89,10 +89,12 @@ $string['emailchangecancel'] = 'Annuleer e-mailwijziging';
 $string['emailchangepending'] = 'De wijziging is in behandeling. Open de link in het bericht dat gestuurd is naar {$a->preference_newemail}.';
 $string['emailnowexists'] = 'Het e-mailadres dat je probeert te gebruiken, is al in gebruik door iemand anders. Daarom wordt deze wijziging geannuleerd. Je kunt wel opnieuw proberen met een ander e-mailadres.';
 $string['emailupdate'] = 'E-mailadres aanpassen';
-$string['emailupdatemessage'] = 'Beste {$a->fullname},
+$string['emailupdatemessage'] = 'Beste {$a->firstname},
 
-Je hebt gevraagd om je e-mailadres te wijzigen voor je account op {$a->site}. Open volgende URL in je browser om deze wijziging te bevestigen:
+Je hebt gevraagd om je e-mailadres te wijzigen voor je account op {$a->site}. Ga naar volgend webadres om de wijziging te bevestigen:
+
 {$a->url}
+De bevestigingslink blijft <b>10 minuten</b> geldig
 
 {$a->supportemail}';
 $string['emailupdatesuccess'] = 'Het e-mail adres van gebruiker <em>{$a->fullname}</em> is gewijzigd naar <em>{$a->email}</em>.';
@@ -144,7 +146,7 @@ $string['potentialidps'] = 'Login met je account op:';
 $string['privacy:metadata:userpref:createpassword'] = 'Geeft aan dat er een wachtwoord gegenereerd moet worden voor de gebruiker';
 $string['privacy:metadata:userpref:forcepasswordchange'] = 'Geeft aan dat de gebruiker het wachtwoord moet wijzigen bij de volgende aanmelding';
 $string['privacy:metadata:userpref:loginfailedcount'] = 'Het aantal keer dat de gebruiker niet heeft kunnen aanmelden';
-$string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = 'ft Het aantal keer dat de gebruiker niet heeft kunnen aanmelden sinds de laatste keer dat aanmelden lukte.';
+$string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = 'Het aantal keer dat de gebruiker niet heeft kunnen aanmelden sinds de laatste keer dat aanmelden lukte.';
 $string['privacy:metadata:userpref:loginfailedlast'] = 'De datum waarop de laatste mislukte aanmelding was gezien';
 $string['privacy:metadata:userpref:loginlockout'] = 'Geeft aan of de gebruikersaccount geblokkeerd is omdat er teveel mislukte pogingen zijn en de datum waarom deze account deze geblokkeerde status gekregen heeft';
 $string['privacy:metadata:userpref:loginlockoutignored'] = 'Geeft aan dat een gebruikersaccount nooit mag geblokkeerd worden';
@@ -160,6 +162,10 @@ $string['selfregistration_help'] = 'Als een authenticatieplugin, zoals e-mailgeb
 $string['settingmigrationmismatch'] = 'Niet overeenkomstige waarden ontdekt bij het corrigeren van de plugin instelling namen!. De authenticatieplugin  \'{$a->plugin}\' had de instelling \'{$a->setting}\' geconfigureerd als \'{$a->legacy}\' onder de verouderde naam en als \'{$a->current}\' onder de huidige naam. De laatste waarde is als geldig ingesteld, maar je zou dit moeten controleren en bevestigen dat dit is wat je verwacht.';
 $string['sha1'] = 'SHA1 hash';
 $string['showguestlogin'] = 'Je kunt de knop om in te loggen als gast verbergen of laten zien op de inlogpagina.';
+$string['showloginform'] = 'Toon manueel loginformulier';
+$string['showloginform_desc'] = 'Als alle gebruikers op deze site een authenticatiemethode gebruiken zoals OAuth 2 waardoor ze geen gebruikersnaam en wachtwoord moeten ingeven, dan kun je het manuele loginformulier verbergen. Merk op dat gebruikers met een manuele login dan niet kunnen aanmelden.
+
+Als je de manuele loginpagina verbergt en zelf niet meer kunt aanmelden, dan kun je die toch tonen via het command line php - commando admin/cli/cfg.php --name=showloginform --set=1.';
 $string['stdchangepassword'] = 'Gebruik de standaardpagina om het wachtwoord te wijzigen';
 $string['stdchangepassword_expl'] = 'Zet dit op ja als het externe systeem toelaat om wachtwoorden via Moodle te wijzigen. Deze instelling gaat voor op de "Wijzig wachtwoord-URL"';
 $string['stdchangepassword_explldap'] = 'Merk op: het is aan te raaden om LDAP te gebruiken met een SSL geëncrypteerde tunnel (ldaps://) als de LDAP-server op afstand staat.';

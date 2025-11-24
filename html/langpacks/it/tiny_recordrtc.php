@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_recordrtc', language 'it', version '4.4'.
+ * Strings for component 'tiny_recordrtc', language 'it', version '4.5'.
  *
  * @package     tiny_recordrtc
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowedpausing'] = 'Consenti di mettere in pausa';
 $string['allowedtypes'] = 'Tipo di registrazione';
 $string['allowedtypes_desc'] = 'I pulsanti di registrazione che saranno disponibili in TinyMCE. È anche possibile impostare i privilegi che controllano chi può utilizzare le funzionalità di registrazione .';
 $string['attachrecording'] = 'Allega registrazione';
@@ -38,7 +39,7 @@ $string['audiotitle'] = 'Registrazione audio';
 $string['confirm_yes'] = 'Si';
 $string['discard_desc'] = 'La registrazione è in corso. Sei sicuro di interromperla?';
 $string['discard_title'] = 'Chiudi conferma';
-$string['gumabort'] = 'È successo qualcosa di inatteso che ha impedito l\'utilizzo della webcam/microfono';
+$string['gumabort'] = 'È successo qualcosa di inatteso che ha impedito l\'utilizzo della webcam/microfono.';
 $string['gumabort_title'] = 'È accaduto qualcosa';
 $string['gumnotallowed'] = 'L\'utente deve consentire al browser di accedere alla webcam e/o al microfono.';
 $string['gumnotallowed_title'] = 'Autorizzazioni errate';
@@ -64,8 +65,10 @@ $string['norecordingfound'] = 'Qualcosa non ha funzionato, sembra che non sia st
 $string['norecordingfound_title'] = 'Nessuna registrazione trovata';
 $string['nowebrtc'] = 'Il browser offre un supporto limitato o assente per le tecnologie WebRTC e non può essere utilizzato con questo plugin. Si prega di cambiare o aggiornare il browser.';
 $string['nowebrtc_title'] = 'WebRTC non supportato';
-$string['onlyaudio'] = 'Solo audio';
-$string['onlyvideo'] = 'Solo video';
+$string['onlyaudio'] = 'Audio';
+$string['onlyscreen'] = 'Schermo';
+$string['onlyvideo'] = 'Video';
+$string['pause'] = 'Metti in pausa';
 $string['pluginname'] = 'RecordRTC';
 $string['privacy:metadata'] = 'Il plugin RecordRTC non memorizza dati personali.';
 $string['recordagain'] = 'Nuova registrazione';
@@ -74,7 +77,21 @@ $string['recordagain_title'] = 'Conferma nuova registrazione';
 $string['recordingfailed'] = 'Registrazione non andata a buon fine, per favore riprovare';
 $string['recordinguploaded'] = 'Registrazione caricata';
 $string['recordrtc:recordaudio'] = 'Registrare audio tramite editor di testo';
+$string['recordrtc:recordscreen'] = 'Registra schermo nell\'editor di testo';
 $string['recordrtc:recordvideo'] = 'Registrare video tramite editor di testo';
+$string['resume'] = 'Riprendi';
+$string['screenbitrate'] = 'Velocità in bit dello schermo';
+$string['screenbitrate_desc'] = 'Qualità della registrazione dello schermo (un numero più grande indica una qualità superiore).';
+$string['screenbuttontitle'] = 'Registra schermo';
+$string['screenresolution_fhd'] = '1920 x 1080 (16:9)';
+$string['screenresolution_hd'] = '1280 x 720 (16:9)';
+$string['screensharingstopped'] = 'La condivisione dello schermo è stata interrotta prima di iniziare la registrazione. Per favore Consentire la condivisione dello schermo nelle impostazioni del browser e riavviare la registrazione.';
+$string['screensharingstopped_title'] = 'La condivisione è stata interrotta';
+$string['screensize'] = 'Dimensioni di registrazione dello schermo';
+$string['screensize_desc'] = 'La dimensione della risoluzione dell\'output video.';
+$string['screentimelimit'] = 'Tempo limite della registrazione';
+$string['screentimelimit_desc'] = 'Durata massima della registrazione dello schermo.';
+$string['screentitle'] = 'Registrazione schermo';
 $string['startrecording'] = 'Avvia registrazione';
 $string['stoprecording'] = 'Interrompi registrazione';
 $string['timelimitwarning'] = 'È necessari inserire un numero maggiore di 0.';
@@ -86,6 +103,7 @@ $string['uploadprogress'] = 'completato';
 $string['videobitrate'] = 'Velocità video in bit';
 $string['videobitrate_desc'] = 'Qualità della registrazione video (un numero maggiore significa una qualità superiore).';
 $string['videobuttontitle'] = 'Registra video';
+$string['videorecordmenutitle'] = 'Menù di registrazione video';
 $string['videotimelimit'] = 'Durata massima del video';
 $string['videotimelimit_desc'] = 'Lunghezza temporale massima consentita delle registrazioni video.';
 $string['videotitle'] = 'Registrazione video';

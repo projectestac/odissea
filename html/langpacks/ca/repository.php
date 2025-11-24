@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'ca', version '4.4'.
+ * Strings for component 'repository', language 'ca', version '4.5'.
  *
  * @package     repository
  * @category    string
@@ -46,7 +46,7 @@ $string['areauserpersonal'] = 'Fitxers privats';
 $string['areauserprofile'] = 'Perfil';
 $string['attachedfiles'] = 'Fitxers adjunts';
 $string['attachment'] = 'Adjunció';
-$string['author'] = 'Autor/a';
+$string['author'] = 'Autor o autora';
 $string['automatedbackup'] = 'Còpies de seguretat automatitzades';
 $string['back'] = 'Enrere';
 $string['backtodraftfiles'] = 'Torna al gestor d\'esborranys';

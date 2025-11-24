@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'it', version '4.4'.
+ * Strings for component 'search', language 'it', version '4.5'.
  *
  * @package     search
  * @category    string
@@ -101,6 +101,7 @@ $string['optimize'] = 'Ottimizza';
 $string['order'] = 'Ordinamento dei risultati';
 $string['order_location'] = 'Dai priorità ai risultati relativi a {$a}';
 $string['order_relevance'] = 'Prima i risultati più rilevanti';
+$string['performsearch'] = 'Esegui la ricerca';
 $string['priority'] = 'Priorità';
 $string['priority_normal'] = 'Normale';
 $string['priority_reindexing'] = 'Re-inidicizzazione in corso';
@@ -130,6 +131,7 @@ $string['searchnotpermitted'] = 'Non sei autorizzato ad eseguire ricerche';
 $string['searchsetupdescription'] = 'I passi seguenti faciliteranno l\'impostazione della ricerca globale di Moodle:';
 $string['searchwithin'] = 'Cerca in';
 $string['seconds'] = 'secondi';
+$string['sitewidesearch'] = 'Ricerca in tutto il sito';
 $string['solutions'] = 'Soluzioni';
 $string['statistics'] = 'Statistiche';
 $string['step'] = 'Passo';

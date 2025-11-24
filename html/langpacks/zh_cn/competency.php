@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'zh_cn', version '4.4'.
+ * Strings for component 'competency', language 'zh_cn', version '4.5'.
  *
  * @package     competency
  * @category    string
@@ -29,6 +29,8 @@ $string['allchildrenarecomplete'] = '所有子条目都已完成';
 $string['competencies'] = '能力';
 $string['competenciesarenotenabled'] = '能力没有启用。';
 $string['competenciessettings'] = '能力设置';
+$string['competency'] = '能力';
+$string['competencyframework'] = '能力框架';
 $string['completeplanstask'] = '按时完成学习计划';
 $string['coursecompetencyoutcome_complete'] = '完成该能力';
 $string['coursecompetencyoutcome_evidence'] = '附加证据';
@@ -38,7 +40,7 @@ $string['coursemodulecompetencyoutcome_complete'] = '完成该能力';
 $string['coursemodulecompetencyoutcome_evidence'] = '附加证据';
 $string['coursemodulecompetencyoutcome_none'] = '什么都不做';
 $string['coursemodulecompetencyoutcome_recommend'] = '送去审查';
-$string['deletecompetencyratings'] = '删除能力等级';
+$string['deletecompetencyratings'] = '能力等级';
 $string['duplicateditemname'] = '{$a} (复制)';
 $string['enablecompetencies'] = '启用能力';
 $string['enablecompetencies_desc'] = '允许用户根据学习计划进行能力评估';
@@ -163,8 +165,10 @@ $string['privacy:metadata:usermodified'] = '创建或修改此记录的用户';
 $string['privacy:path:plans'] = '学习计划';
 $string['privacy:path:relatedtome'] = '与我有关';
 $string['privacy:path:userevidence'] = '先前学习证据';
+$string['proficient'] = '精通';
 $string['pushcourseratingstouserplans'] = '推送课程等级到个人学习计划';
 $string['pushcourseratingstouserplans_desc'] = '课程设置的默认值，用于在对课程能力进行评估时更新个人学习计划。';
+$string['rating'] = '等级';
 $string['syncplanscohorts'] = '从学习计划模板群组同步计划';
 $string['taxonomy_behaviour'] = '行为';
 $string['taxonomy_competency'] = '能力';
@@ -193,6 +197,7 @@ $string['usercommentedonaplan'] = '{$a->fullname}评论了学习计划 "{$a->pla
 $string['usercommentedonaplanhtml'] = '<p>{$a->fullname}评论了学习计划 "{$a->plan}"：</p> <div>{$a->comment}</div> <p>请参看： <a href="{$a->url}">{$a->urlname}</a>。</p>';
 $string['usercommentedonaplansmall'] = '{$a->fullname}评论了学习计划 "{$a->plan}"。';
 $string['usercommentedonaplansubject'] = '{$a}评论了一个学习计划。';
+$string['usercompetency'] = '用户的能力';
 $string['usercompetencystatus_idle'] = '闲置';
 $string['usercompetencystatus_inreview'] = '审查中';
 $string['usercompetencystatus_waitingforreview'] = '等待审查';

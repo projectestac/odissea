@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'nl', version '4.4'.
+ * Strings for component 'badges', language 'nl', version '4.5'.
  *
  * @package     badges
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actions'] = 'Acties';
 $string['activate'] = 'Toegang inschakelen';
-$string['activatesuccess'] = 'De toegang tot de badges is met succes ingeschakeld.';
+$string['activatesuccess'] = 'De toegang tot de badge {$a} ingeschakeld.';
 $string['addalignment'] = 'Externe vaardigheid of standaard toevoegen';
 $string['addbadge'] = 'Badges toevoegen';
 $string['addbadge_help'] = 'Selecteer alle badges die aan deze badge-eis moeten worden toegevoegd. Houd de CTRL-toets ingedrukt om meerdere items te selecteren.';
@@ -40,6 +40,7 @@ $string['addcourse'] = 'Voeg cursussen toe';
 $string['addcourse_help'] = 'Selecteer alle cursussen die bij de vereisten voor deze badge horen. Hou de CTRL-toets ingedrukt om er meerdere te selecteren.';
 $string['addcriteria'] = 'Voeg criteria toe';
 $string['addcriteriatext'] = 'Selecteer één van de opties in het rolmenu om criteria toe te voegen.';
+$string['addcriterion'] = 'Criterium te';
 $string['addedtobackpack'] = 'Badge toegevoegd aan backpack';
 $string['addrelated'] = 'Voeg gerelateerde badge toe';
 $string['addtobackpack'] = 'Voeg toe aan backpack';
@@ -81,7 +82,7 @@ $string['attachment_help'] = 'Indien ingeschakeld kan een uitgereikte badge als 
 $string['award'] = 'Badge toekennen';
 $string['awardedto'] = 'Toegekend aan {$a}';
 $string['awardedtoyou'] = 'Uitgereikt aan mij';
-$string['awardoncron'] = 'Toegang tot badges is met succes ingeschakeld. Er zijn teveel gebruikers die onmiddellijk een badge verdienen. Om de performantie van de site te garanderen zal deze actie wat tijd vragen om verwerkt te worden.';
+$string['awardoncron'] = 'Een groot aantal gebruikers kregen de badge \'{$a->badgename}\'. Het kan even duren voor alle gebruikers ze ontvangen.';
 $string['awards'] = 'Ontvangers';
 $string['backpackapiurl'] = 'Backpack API URL';
 $string['backpackavailability'] = 'Externe badge verificatie';
@@ -194,7 +195,7 @@ $string['configuremessage'] = 'Badge bericht';
 $string['connect'] = 'Verbind';
 $string['connected'] = 'Verbonden';
 $string['connecting'] = 'Verbinden...';
-$string['contact'] = 'Contact';
+$string['contact'] = 'Contact uitgever';
 $string['contact_help'] = 'Een e-mailadres dat geassocieerd is met de uitgever van de badge.';
 $string['copy'] = 'Kopiëren';
 $string['copyof'] = 'Kopie van {$a}';
@@ -275,7 +276,7 @@ $string['dateawarded'] = 'Uitgavedatum';
 $string['dateearned'] = 'Datum: {$a}';
 $string['day'] = 'Dag(en)';
 $string['deactivate'] = 'Toegang uitschakelen';
-$string['deactivatesuccess'] = 'Toegang tot badges uitschakelen gelukt.';
+$string['deactivatesuccess'] = 'De toegang tot de badge {$a} is uitgeschakeld.';
 $string['defaultissuercontact'] = 'E-mailadres van de badge-uitgever';
 $string['defaultissuercontact_desc'] = 'Een e-mailadres dat verbonden is met de uitgever van de badge. Voor een Open Badges v2.0 backpack wordt dit gebruikt bij authenticatie wanneer je badges naar een bakpack exporteert.';
 $string['defaultissuername'] = 'Naam van de badge-uitgever';
@@ -327,7 +328,7 @@ $string['error:nosuchfield'] = 'Waarschuwing: dit gebruikersprofielveld is niet 
 $string['error:nosuchmod'] = 'Waarschuwing: deze activiteit is niet langer beschikbaar.';
 $string['error:nosuchrole'] = 'Waarschuwing: deze rol is niet langer beschikbaar.';
 $string['error:nosuchuser'] = 'De gebruiker met dit e-mailadres heeft geen account bij de huidige backpackprovider.';
-$string['error:notifycoursedate'] = 'Waarschuwing: badges die verbonden zijn met cursusactiviteit en activiteit voltooien, zullen niet uitgereikt worden voor de cursus startdatum.';
+$string['error:notifycoursedate'] = 'Badges die geassocieerd zijn met cursusactiviteit en activiteiten voltooien, zullen niet uitgereikt worden voor de cursus startdatum  ({$a})..';
 $string['error:parameter'] = 'Waarschuwing: minstens één parameter moet geselecteerd worden om het correct uitreiken van badges te garanderen.';
 $string['error:relatedbadgedoesntexist'] = 'Er is geen openbare badge met deze ID';
 $string['error:requesterror'] = 'De verbindingsaanvraag is mislukt (foutcode {$a} ).';
@@ -426,6 +427,7 @@ $string['namewithlink'] = 'Naam met link';
 $string['never'] = 'Nooit';
 $string['newbackpack'] = 'Voeg een nieuwe backpack toe';
 $string['newbadge'] = 'Voeg een nieuwe badge toe';
+$string['newbadgedeprecated'] = 'Je bent omgeleid van badges/newbadge.php. Deze pagina zal verwijderd worden in de toekomst. <br/>Pas je snelkoppelingen en links aan om de huidige pagina badges/edit.php te gebruiken.';
 $string['newimage'] = 'Nieuwe afbeelding';
 $string['noalignment'] = 'Deze badge heeft geen externe vaardigheden of standaarden opgegeven.';
 $string['noawards'] = 'Deze badge is nog niet verdiend.';
@@ -467,8 +469,8 @@ $string['notifydaily'] = 'Dagelijks';
 $string['notifyevery'] = 'Elke keer';
 $string['notifymonthly'] = 'Maandelijks';
 $string['notifyweekly'] = 'Wekelijks';
-$string['numawards'] = 'Deze badge is uitgereikt aan <a href="{$a->link}">{$a->count}</a> gebruiker(s).';
-$string['numawardstat'] = 'Deze badge is uitgereikt aan {$a} gebruiker(s)';
+$string['numawards'] = 'Aan gebruikers uitgereikte badge  \'{$a->badgename}\': <a href="{$a->link}">{$a->count}</a>';
+$string['numawardstat'] = 'Gebruikers met badge \'{$a->badgename}\': {$a->awards}.';
 $string['oauth2issuer'] = 'OAuth 2 services';
 $string['openbadgesv1'] = 'Open badges v1.0';
 $string['openbadgesv2'] = 'Open Badges v2.0';

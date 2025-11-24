@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'eu', version '4.4'.
+ * Strings for component 'group', language 'eu', version '4.5'.
  *
  * @package     group
  * @category    string
@@ -50,8 +50,8 @@ $string['databaseupgradegroups'] = '{$a} da orain taldeen bertsioa';
 $string['defaultgrouping'] = 'Lehenetsitako talde-multzoa';
 $string['defaultgroupingname'] = 'Talde-multzoa';
 $string['defaultgroupname'] = 'Taldea';
-$string['deleteallgroupings'] = 'Ezabatu talde-multzo guztiak';
-$string['deleteallgroups'] = 'Ezabatu talde guztiak';
+$string['deleteallgroupings'] = 'Talde-multzo guztiak';
+$string['deleteallgroups'] = 'Talde guztiak';
 $string['deletegroupconfirm'] = 'Ziur zaude \'{$a}\' taldea ezabatu nahi duzula?';
 $string['deletegrouping'] = 'Ezabatu talde-multzoa';
 $string['deletegroupingconfirm'] = 'Ziur zaude \'{$a}\' talde-multzoa ezabatu nahi duzula? (Taldeak ez dira ezabatuko)';
@@ -198,8 +198,8 @@ $string['random'] = 'Ausaz';
 $string['removefromgroup'] = 'Kendu erabiltzailea {$a} taldetik';
 $string['removefromgroupconfirm'] = 'Ziur zaude "{$a->user}" erabiltzailea "{$a->group}" taldetik ezabatu nahi duzula?';
 $string['removegroupfromselectedgrouping'] = 'Kendu taldea aukeratutako talde-multzotik';
-$string['removegroupingsmembers'] = 'Kendu taldeak talde-multzoetatik';
-$string['removegroupsmembers'] = 'Kendu talde guztietako kideak';
+$string['removegroupingsmembers'] = 'Taldeak talde-multzoetatik';
+$string['removegroupsmembers'] = 'Talde guztietako kideak';
 $string['removeselectedusers'] = 'Kendu aukeratutako erabiltzaileak';
 $string['selectfromgroup'] = 'Aukeratu kideak taldetik';
 $string['selectfromgrouping'] = 'Aukeratu kideak talde-multzotik';

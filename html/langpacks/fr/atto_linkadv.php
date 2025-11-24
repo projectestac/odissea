@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_linkadv', language 'fr', version '4.4'.
+ * Strings for component 'atto_linkadv', language 'fr', version '4.5'.
  *
  * @package     atto_linkadv
  * @category    string
@@ -26,8 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['advanced'] = 'Avancés';
+$string['browserepositories'] = 'Parcourir les dépôts...';
 $string['createlink'] = 'Créer un lien';
 $string['enterid'] = 'Saisir un identifiant';
 $string['enterurl'] = 'Saisir une URL';
 $string['link'] = 'Lien';
 $string['openinnewwindow'] = 'Ouvrir dans une nouvelle fenêtre';
+$string['texttodisplay'] = 'Texte à afficher';

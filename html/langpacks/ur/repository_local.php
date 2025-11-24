@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_local', language 'ur', version '4.4'.
+ * Strings for component 'repository_local', language 'ur', version '4.5'.
  *
  * @package     repository_local
  * @category    string

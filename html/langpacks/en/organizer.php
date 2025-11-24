@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'organizer', language 'en', version '4.4'.
+ * Strings for component 'organizer', language 'en', version '4.5'.
  *
  * @package     organizer
  * @category    string
@@ -167,6 +167,7 @@ $string['btn_editsingle'] = 'Edit selected slot';
 $string['btn_eval'] = 'Grade selected slots';
 $string['btn_eval_short'] = 'Grade';
 $string['btn_evalsingle'] = 'Grade selected slot';
+$string['btn_exportics'] = 'Export selected slot as an ICS file';
 $string['btn_print'] = 'Print selected slots';
 $string['btn_printsingle'] = 'Print selected slot';
 $string['btn_queue'] = 'Queue';
@@ -391,6 +392,8 @@ $string['eventtemplatewithoutlinks'] = '{$a->coursename} / {$a->organizername}: 
 $string['eventtitle'] = '{$a->coursename} / {$a->organizername}: {$a->appwith}';
 $string['eventwith'] = 'with';
 $string['eventwithout'] = 'with';
+$string['exportics'] = 'Export ICS';
+$string['exporticsaction'] = 'export ICS';
 $string['exportsettings'] = 'Export settings';
 $string['filtertable'] = '\'Filterting this table\'';
 $string['filtertable_help'] = 'Search these slots for mutual strings here.';
@@ -486,8 +489,9 @@ $string['groupmodenogroups'] = 'No group appointments';
 $string['groupmodeslotgroups'] = 'Group creation per empty slot';
 $string['groupmodeslotgroupsappointment'] = 'Group creation per booked slot';
 $string['groupoptions'] = 'Group settings';
-$string['grouporganizer_desc_hasgroup'] = 'This is a group organizer. Clicking the register button will register you and all members of your group {$a->groupname} to this slot. All group members may change and comment the registration.';
+$string['grouporganizer_desc'] = 'This is a group organizer.';
 $string['grouporganizer_desc_novalidgroup'] = 'This is a group organizer. You are not member of a group included in this organizer instance!';
+$string['grouporganizer_desc_participant'] = 'This is a group organizer. Clicking the register button will register you and all members of your group {$a->groupname} to this slot. All group members may change and comment the registration.';
 $string['grouppicker'] = 'Group picker';
 $string['groupwarning'] = 'Check the group options below!';
 $string['headerfooter'] = 'Print header/footer';
@@ -598,8 +602,8 @@ $string['message_info_slots_deleted_pl'] = '{$a->deleted} slots were deleted. {$
 $string['message_info_slots_deleted_sg'] = 'One slot was deleted. {$a->notified} participant(s) had been notified.';
 $string['message_info_slots_edited_pl'] = '{$a->count} slots were edited.';
 $string['message_info_slots_edited_sg'] = '{$a->count} slot was edited.';
-$string['message_info_slots_evaluated_pl'] = '{$a->count} slots were graded.';
-$string['message_info_slots_evaluated_sg'] = '{$a->count} slot was graded.';
+$string['message_info_slots_evaluated_pl'] = '{$a->count} participants were graded.';
+$string['message_info_slots_evaluated_sg'] = '{$a->count} participant was graded.';
 $string['message_info_unqueued'] = 'You was removed from a slot\'s waiting list.';
 $string['message_info_unqueued_group'] = 'Your group was removed from a slot\'s waiting list.';
 $string['message_info_unregistered'] = 'You successfully unregistered from a slot.';
@@ -638,7 +642,7 @@ $string['modulename'] = 'Organizer';
 $string['modulename_help'] = 'Organizers enable teachers to make appointments with students by creating time slots which students can register to.';
 $string['modulenameplural'] = 'Organizers';
 $string['monthlyview'] = 'Monthly view';
-$string['multimember'] = 'Users cannot belong to multiple groups within the same grouping!';
+$string['multimember'] = 'Users cannot belong to multiple course groups!';
 $string['multimemberspecific'] = 'User {$a->username} {$a->idnumber} is registered in more than one group! ({$a->groups})';
 $string['multipleappointmentenddate'] = 'End date';
 $string['multipleappointmentstartdate'] = 'Start date';
@@ -680,6 +684,8 @@ $string['nofreeslots'] = 'No free slots available.';
 $string['nogroup'] = 'No group';
 $string['nolocationplaceholder'] = '[TBD]';
 $string['noparticipants'] = 'No participants';
+$string['noreregistrations'] = 'No reregistrations after deadline';
+$string['noreregistrations_help'] = 'If a booked slot has reached the deadline it can not be the source of a reregistration anymore.';
 $string['norightpage'] = 'You are not allowed to call up this page.';
 $string['nosingleslotprintfields'] = 'Printing is not possible. There are no user fields defined. See the organizer settings.';
 $string['noslots'] = 'No slots for';
@@ -897,7 +903,7 @@ $string['singleslotprintfield'] = 'Print slot user field';
 $string['singleslotprintfield0'] = 'Print slot user field';
 $string['singleslotprintfield0_help'] = 'These user fields are used for each participant when a single slot is printed out.';
 $string['singleslotprintfields'] = 'Single print slot user profile fields';
-$string['singleslotprintfields_help'] = 'FAKE TEXT - have to be changed with more info on profile fields and how they are controlled by an admin setting';
+$string['singleslotprintfields_help'] = 'In this section you define additional personal fields to be printed out for each participant when a single slot is printed out.';
 $string['slot'] = 'Appointment';
 $string['slot_anonymous'] = 'Slot anonymous';
 $string['slot_slotvisible'] = 'Members only visible if own slot';

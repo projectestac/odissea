@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ar', version '4.4'.
+ * Strings for component 'workshop', language 'ar', version '4.5'.
  *
  * @package     workshop
  * @category    string
@@ -321,11 +321,11 @@ $string['reassess'] = 'أعد التقييم';
 $string['receivedgrades'] = 'تم استلام الدرجات';
 $string['recentassessments'] = 'تقييمات ورشة العمل:';
 $string['recentsubmissions'] = 'تسليمات ورشة العمل:';
-$string['resetassessments'] = 'حذف كل التقييمات';
+$string['resetassessments'] = 'كل التقييمات';
 $string['resetassessments_help'] = 'يمكن اختيار حذف التقييمات الموزعة فقط دون التأثير على التسليمات. إذا كان بالنية حذف التسليمات، فتقييماتها سيتم حذفها ضمنياً وهذا الخيار سيتم تجاهله. لاحظ أن ذلك يشمل أيضاً تقييمات التسليمات النموذجية.';
 $string['resetphase'] = 'التبديل إلى طور الإعداد';
 $string['resetphase_help'] = 'عند تمكينه، فكل ورش العمل سيتم وضعها في طور الإعداد الأولي.';
-$string['resetsubmissions'] = 'حذف كل التسليمات';
+$string['resetsubmissions'] = 'كل التسليمات';
 $string['resetsubmissions_help'] = 'كل التسليمات وتقييماتها سيتم حذفها. هذا لا يؤثر على التسليمات النموذجية.';
 $string['saveandclose'] = 'حفظ وإغلاق';
 $string['saveandcontinue'] = 'حفظ ومتابعة التحرير';

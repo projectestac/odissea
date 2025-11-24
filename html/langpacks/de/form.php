@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'de', version '4.4'.
+ * Strings for component 'form', language 'de', version '4.5'.
  *
  * @package     form
  * @category    string
@@ -41,6 +41,7 @@ $string['err_minlength'] = 'Sie müssen hier mindestens {$a->format} Buchstaben 
 $string['err_nonzero'] = 'Sie müssen hier eine Zahl eingeben, die nicht mit 0 beginnt.';
 $string['err_nopunctuation'] = 'Sie dürfen hier keine Satzseichen verwenden.';
 $string['err_numeric'] = 'Sie müssen hier eine Zahl eingeben.';
+$string['err_positiveduration'] = 'Die Dauer kann nicht negativ sein';
 $string['err_positiveint'] = 'Sie müssen hier eine ganze Zahl eingeben, die größer als 0 ist.';
 $string['err_rangelength'] = 'Sie müssen hier zwischen {$a->format[0]} und {$a->format[1]} Buchstaben eingeben.';
 $string['err_required'] = 'Sie müssen hier einen Wert eingeben.';
@@ -89,6 +90,6 @@ $string['suggestions'] = 'Anregungen';
 $string['time'] = 'Zeit';
 $string['timeunit'] = 'Zeiteinheit';
 $string['timing'] = 'Zeitsteuerung';
-$string['togglesensitive'] = 'Umschaltempfindlich';
+$string['togglesensitive'] = 'Sensible Daten ein-/ausblenden';
 $string['unmaskpassword'] = 'Klartext';
 $string['year'] = 'Jahr';

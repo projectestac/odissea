@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_seb', language 'es', version '4.4'.
+ * Strings for component 'quizaccess_seb', language 'es', version '4.5'.
  *
  * @package     quizaccess_seb
  * @category    string
@@ -96,6 +96,7 @@ $string['seb:manage_seb_allowedbrowserexamkeys'] = 'Cambiar la configuración de
 $string['seb:manage_seb_allowreloadinexam'] = 'Cambiar la configuración del cuestionario SEB: Permitir recargar';
 $string['seb:manage_seb_allowspellchecking'] = 'Cambiar la configuración del cuestionario SEB: Habilitar la revisión ortográfica';
 $string['seb:manage_seb_allowuserquitseb'] = 'Cambiar la configuración de la prueba de SEB: Permitir salir';
+$string['seb:manage_seb_configuremanually'] = 'Cambiar configuración de cuestionario SEB: Seleccionar configuración manual';
 $string['seb:manage_seb_enableaudiocontrol'] = 'Cambiar la configuración del cuestionario SEB: Habilitar el control de audio';
 $string['seb:manage_seb_expressionsallowed'] = 'Cambiar la configuración del cuestionario SEB: Expresiones simples permitidas';
 $string['seb:manage_seb_expressionsblocked'] = 'Cambiar la configuración del cuestionario SEB: Expresiones simples bloqueadas';
@@ -114,13 +115,14 @@ $string['seb:manage_seb_showtime'] = 'Cambiar la configuración del cuestionario
 $string['seb:manage_seb_showwificontrol'] = 'Cambiar la configuración del cuestionario SEB: Mostrar controles Wi-Fi';
 $string['seb:manage_seb_templateid'] = 'Cambiar la configuración del cuestionario SEB: Seleccionar plantilla SEB';
 $string['seb:manage_seb_userconfirmquit'] = 'Cambiar la configuración del cuestionario SEB: Confirmar al salir';
+$string['seb:manage_seb_usesebclientconfig'] = 'Cambiar configuración de cuestionario SEB: Usar configuración de cliente SEB';
 $string['seb:managetemplates'] = 'Gestionar las plantilla de configuración SEB';
 $string['seb_activateurlfiltering'] = 'Habilitar el filtrado de URL';
 $string['seb_activateurlfiltering_help'] = 'Si está habilitado, las URLs se filtrarán al cargar páginas web. El conjunto de filtros debe definirse a continuación.';
 $string['seb_allowcapturecamera'] = 'Permitir al navegador acceder a la cámara';
-$string['seb_allowcapturecamera_help'] = 'Si se habilita, se pedirá a los usuarios permiso para que SEB acceda a la cámara antes de comenzar la sesión del examen. En macOS 12/iOS 15 y posteriores, deshabilitar este ajuste evita que las aplicaciones web accedan a la cámara en cualquier caso, p.ej. no será posible grabar vídeo mediante WebRTC.';
+$string['seb_allowcapturecamera_help'] = 'Si se habilita, se pedirá a los usuarios permiso para que SEB acceda a la cámara antes de comenzar la sesión del examen. En macOS 12/iOS 15 y posteriores, deshabilitar este ajuste evita que las aplicaciones web accedan a la cámara. P.ej. no será posible grabar vídeo mediante WebRTC.';
 $string['seb_allowcapturemicrophone'] = 'Permitir al navegador acceder al micrófono';
-$string['seb_allowcapturemicrophone_help'] = 'Si se habilita, se pedirá a los usuarios permiso para que SEB acceda al micrófono antes de comenzar la sesión del examen. En macOS 12/iOS 15 y posteriores, deshabilitar este ajuste evita que las aplicaciones web accedan al micrófono en cualquier caso, p.ej. no será posible grabar audio mediante WebRTC.';
+$string['seb_allowcapturemicrophone_help'] = 'Si se habilita, se pedirá a los usuarios permiso para que SEB acceda al micrófono antes de comenzar la sesión del examen. En macOS 12/iOS 15 y posteriores, deshabilitar este ajuste evita que las aplicaciones web accedan al micrófono. P.ej. no será posible grabar audio mediante WebRTC.';
 $string['seb_allowedbrowserexamkeys'] = 'Claves del navegador seguro permitidas';
 $string['seb_allowedbrowserexamkeys_help'] = 'Es este campo puede introducir las claves de examen de navegador permitidas para las versiones de Safe Exam Browser que tengan permitido acceder a este cuestionario. Si no se introducen claves, no se verificarán las claves de examen de navegador.';
 $string['seb_allowreloadinexam'] = 'Permitir recargar en el examen';

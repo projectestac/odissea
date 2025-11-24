@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'ja', version '4.4'.
+ * Strings for component 'bigbluebuttonbn', language 'ja', version '4.5'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -41,6 +41,7 @@ $string['bigbluebuttonbn:join'] = 'BigBlueButtonルームに参加する';
 $string['bigbluebuttonbn:managerecordings'] = 'レコーディングを管理する';
 $string['bigbluebuttonbn:protectrecordings'] = 'レコーディングを保護する';
 $string['bigbluebuttonbn:publishrecordings'] = 'レコーディングを公開する';
+$string['bigbluebuttonbn:seepresentation'] = '常に活動ページにプレゼンテーションファイルを表示する';
 $string['bigbluebuttonbn:unprotectrecordings'] = 'レコーディングを保護解除する';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'レコーディングを非公開にする';
 $string['bigbluebuttonbn:view'] = 'BigBlueButtonを表示する';
@@ -201,6 +202,10 @@ $string['config_server_url'] = 'BigBlueButtonサーバURL';
 $string['config_server_url_description'] = 'あなたのBigBlueButtonサーバのURLです。';
 $string['config_shared_secret'] = 'BigBlueButton共有シークレット';
 $string['config_shared_secret_description'] = 'あなたのBigBlueButtonサーバのセキュリティシークレットです';
+$string['config_showpresentation_default'] = '活動ページにプレゼンテーションファイルを表示する';
+$string['config_showpresentation_default_description'] = '学生はセッションの前にプレゼンテーションファイルにアクセスできますか？この設定は「常に活動ページにプレゼンテーションファイルを表示する」ケイパビリティを持つユーザには影響しません。';
+$string['config_showpresentation_editable'] = '「活動ページにプレゼンテーションファイルを表示する」オプション';
+$string['config_showpresentation_editable_description'] = '活動設定のオプションで教師がプレゼンテーションファイルを学生に見せるかどうかを選択できます。';
 $string['config_uidelegation_enabled'] = 'UIデリゲーション有効';
 $string['config_uidelegation_enabled_description'] = 'これらの設定はBigBlueButtonサーバへのUIのデリゲーションを有効または無効にします。';
 $string['config_userlimit'] = 'ユーザ制限';
@@ -372,6 +377,7 @@ $string['mod_form_field_recordings_html'] = 'プレインHTMLでテーブルを�
 $string['mod_form_field_recordings_imported'] = 'インポート済みリンクのみ表示する';
 $string['mod_form_field_recordings_preview'] = 'レコーディングプレビュを表示する';
 $string['mod_form_field_room_name'] = 'ルーム名';
+$string['mod_form_field_showpresentation'] = 'プレゼンテーションファイルを活動ページに表示する';
 $string['mod_form_field_userlimit'] = 'ユーザ制限';
 $string['mod_form_field_userlimit_help'] = 'セッションで許可される最大ユーザ制限です。制限にゼロが設定された場合、ユーザ数は無制限となります。';
 $string['mod_form_field_voicebridge'] = 'ボイスブリッジ [####]';

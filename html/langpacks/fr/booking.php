@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booking', language 'fr', version '4.4'.
+ * Strings for component 'booking', language 'fr', version '4.5'.
  *
  * @package     booking
  * @category    string
@@ -972,8 +972,6 @@ $string['electivenotbookable'] = 'Non réservable';
 $string['email'] = 'Courriel';
 $string['emailbody'] = 'Corps du courriel';
 $string['enable'] = 'Activer';
-$string['enablecompletion'] = 'Activer la réalisation d’activité.';
-$string['enablecompletiongroup'] = 'Réalisation d’activité';
 $string['enddate'] = 'Date de fin';
 $string['endtime'] = 'Heure de fin';
 $string['endtimenotset'] = 'Date de fin non rensignée';
@@ -1871,7 +1869,7 @@ $string['skipbookingrulesoptin'] = 'Opt in : Appliquer uniquement les règles su
 $string['skipbookingrulesoptout'] = 'Opt in : Ne pas appliquer les règles suivantes';
 $string['skipbookingrulesrules'] = 'Choisir les règles de réservation';
 $string['sortbookingoptions'] = 'Veuillez trier vos réservations dans le bon ordre. Vous pourrez accéder aux cours correspondants l\'un après l\'autre. Le premier cours arrive en premier.';
-$string['sortorder'] = 'Ordre de try';
+$string['sortorder'] = 'Ordre de tri';
 $string['sortorder:asc'] = 'A&rarr;Z';
 $string['sortorder:desc'] = 'Z&rarr;A';
 $string['spaceleft'] = 'espace disponible';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_admin_presets', language 'ro', version '4.4'.
+ * Strings for component 'tool_admin_presets', language 'ro', version '4.5'.
  *
  * @package     tool_admin_presets
  * @category    string
@@ -37,8 +37,9 @@ $string['created'] = 'Creat';
 $string['currentvalue'] = 'Valoare curentă';
 $string['deletepreset'] = 'Sigur doriți să ștergeți presetarea de administrator al site-ului {$a}?';
 $string['deletepresettitle'] = 'Ștergeți presetarea {$a}?';
-$string['deletepreviouslyapplied'] = 'Această presetare a fost aplicată anterior. Ștergerea unei presetări înseamnă eliminarea completă de pe site. Nu veți putea reveni la setările de dinainte de a aplica această presetare.';
+$string['deletepreviouslyapplied'] = 'Sigur doriți să ștergeți presetarea de administrare al site-ului {$a}?<br><br>Această presetare a fost aplicată anterior. Ștergerea unei presetări o elimină complet din platformă. Nu veți putea reveni la setările care erau înainte de a aplica această presetare.';
 $string['deleteshow'] = 'Ștergeți presetarea administrării site-ului';
+$string['editadminpresetname'] = 'Editați numele presetat al administratorului';
 $string['eventpresetdeleted'] = 'Presetare ștearsă';
 $string['eventpresetdownloaded'] = 'Presetare descărcată';
 $string['eventpresetexported'] = 'Presetare creată';

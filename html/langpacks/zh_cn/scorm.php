@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'zh_cn', version '4.4'.
+ * Strings for component 'scorm', language 'zh_cn', version '4.5'.
  *
  * @package     scorm
  * @category    string
@@ -110,7 +110,7 @@ $string['datadir'] = '文件系统错误：无法创建课程数据目录';
 $string['defaultdisplaysettings'] = '默认的显示设置';
 $string['defaultgradesettings'] = '默认评分设置';
 $string['defaultothersettings'] = '其他默认设置';
-$string['deleteallattempts'] = '删除所有 SCORM 学习记录';
+$string['deleteallattempts'] = '所有 SCORM 学习记录';
 $string['deleteattemptcheck'] = '您确定要完全删除所有尝试记录吗？';
 $string['deleteselected'] = '删除';
 $string['deleteuserattemptcheck'] = '您确定要完全删除所有您的尝试记录吗？';

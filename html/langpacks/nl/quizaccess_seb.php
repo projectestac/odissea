@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_seb', language 'nl', version '4.4'.
+ * Strings for component 'quizaccess_seb', language 'nl', version '4.5'.
  *
  * @package     quizaccess_seb
  * @category    string
@@ -94,6 +94,7 @@ $string['seb:manage_seb_allowedbrowserexamkeys'] = 'Wijzig SEB test instellingen
 $string['seb:manage_seb_allowreloadinexam'] = 'Wijzig SEB test instellingen: Sta herladen toe';
 $string['seb:manage_seb_allowspellchecking'] = 'Wijzig SEB test instellingen:  Schakelen spellingscontrole in';
 $string['seb:manage_seb_allowuserquitseb'] = 'SEB-testinstelling wijzigen: Stoppen toestaan';
+$string['seb:manage_seb_configuremanually'] = 'Wijzig SEB testinstelling: selecteer manuele configuratie';
 $string['seb:manage_seb_enableaudiocontrol'] = 'SEB-testinstelling wijzigen: Schakel audiocontrole in';
 $string['seb:manage_seb_expressionsallowed'] = 'SEB-testinstelling wijzigen: eenvoudige uitdrukkingen toegestaan';
 $string['seb:manage_seb_expressionsblocked'] = 'SEB-testinstelling wijzigen: eenvoudige uitdrukkingen geblokkeerd';
@@ -112,6 +113,7 @@ $string['seb:manage_seb_showtime'] = 'SEB-testinstelling wijzigen: tijd weergeve
 $string['seb:manage_seb_showwificontrol'] = 'SEB-testinstelling wijzigen: Wi-Fi-besturing weergeven';
 $string['seb:manage_seb_templateid'] = 'SEB-testinstelling wijzigen: Selecteer SEB-sjabloon';
 $string['seb:manage_seb_userconfirmquit'] = 'SEB-testinstelling wijzigen: bevestigen bij afsluiten';
+$string['seb:manage_seb_usesebclientconfig'] = 'Wijzig SEB testinstelling: gebruik SEB client configuratie';
 $string['seb:managetemplates'] = 'Beheer SEB-configuratiesjablonen';
 $string['seb_activateurlfiltering'] = 'URL filtering inschakelen';
 $string['seb_activateurlfiltering_help'] = 'Wanneer ingeschakeld, zullen de URL gefilterd worden wanneer de webpagina\'s geladen worden. De filterset moet hieronder gedefinieerd worden';

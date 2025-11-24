@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ja', version '4.4'.
+ * Strings for component 'message', language 'ja', version '4.5'.
  *
  * @package     message
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['acceptandaddcontact'] = '承認およびコンタクトに追加する';
+$string['acceptandaddcontact'] = '承認してコンタクトに追加する';
 $string['addcontact'] = 'コンタクトに追加する';
 $string['addcontactconfirm'] = '本当にあなたのコンタクトに {$a} を追加してもよろしいですか?';
 $string['addtofavourites'] = '会話に星を付ける';
@@ -37,13 +37,13 @@ $string['backto'] = '{$a} に戻る';
 $string['backupmessageshelp'] = 'この設定を有効にした場合、サイト自動バックアップにインスタントメッセージが含まれます。';
 $string['blockcontact'] = '受信拒否';
 $string['blockedusers'] = 'ブロック済みユーザ';
-$string['blocknoncontacts'] = '不明なユーザをブロックする';
+$string['blocknoncontacts'] = '不明なユーザからのメッセージをブロックする';
 $string['blockuser'] = 'ユーザをブロックする';
 $string['blockuserconfirm'] = '本当に {$a} をブロックしてもよろしいですか?';
 $string['blockuserconfirmbutton'] = 'ブロック';
 $string['cancelselection'] = 'メッセージ選択を解除する';
 $string['cantblockuser'] = 'すべてのユーザにメッセージを送信できるパーミッションのロールであるため、あなたは {$a} をブロックできません。';
-$string['contactableprivacy'] = '受け入れるメッセージの送信元:';
+$string['contactableprivacy'] = '次の送信元からメッセージを受信する:';
 $string['contactableprivacy_coursemember'] = 'マイコンタクトおよびマイコースの誰でも';
 $string['contactableprivacy_onlycontacts'] = 'マイコンタクトのみ';
 $string['contactableprivacy_site'] = 'サイトの誰でも';
@@ -69,6 +69,7 @@ $string['disallowed'] = 'ロック解除';
 $string['editmessages'] = 'メッセージを編集する';
 $string['emailtagline'] = 'これはあなた宛に {$a->sitename} で送信されたメッセージのコピーです。返信するには {$a->url} にアクセスしてください。';
 $string['enabled'] = '有効';
+$string['enablenotificationplugin'] = '通知プラグインを有効にする: {$a}';
 $string['errorcallingprocessor'] = '定義されたアウトプットのコールにエラーが発生しました。';
 $string['errorconversationdoesnotexist'] = '会話はありません。';
 $string['errormessagetoolong'] = 'メッセージが最大許可長を超えています。';
@@ -139,6 +140,7 @@ $string['notificationdatahasnotbeenmigrated'] = '通知機能のアップグレ�
 $string['notificationimage'] = '通知イメージ';
 $string['notificationpreferences'] = '通知プレファレンス';
 $string['notifications'] = '通知';
+$string['notificationsmarkedasread'] = 'すべての通知が既読マークされました。';
 $string['notificationwindow'] = '通知ウィンドウ';
 $string['notincontacts'] = 'メッセージを送信するにはあなたのコンタクトに {$a} を追加する必要があります。';
 $string['notincontactsheading'] = 'あなたのコンタクトに {$a} は登録されていません。';
@@ -153,6 +155,7 @@ $string['page-message-x'] = 'すべてのメッセージページ';
 $string['participants'] = '参加者';
 $string['pendingcontactrequests'] = '{$a} 件の保留コンタクトリクエストがあります。';
 $string['permitted'] = '許可';
+$string['preference'] = 'プレファレンス';
 $string['privacy'] = 'プライバシー';
 $string['privacy:export:conversationprefix'] = '会話:';
 $string['privacy:metadata:core_favourites'] = 'ユーザにより星が付けられた会話';

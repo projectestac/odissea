@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'eu', version '4.4'.
+ * Strings for component 'glossary', language 'eu', version '4.5'.
  *
  * @package     glossary
  * @category    string
@@ -113,7 +113,7 @@ $string['definitions'] = 'Definizioak';
 $string['deletecategory'] = 'Ezabatu kategoria';
 $string['deleteentry'] = 'Ezabatu sarrera';
 $string['deleteentrya'] = 'Ezabatu sarrera: {$a}';
-$string['deletenotenrolled'] = 'Ezabatu matrikulatu gabeko erabiltzaileen sarrerak';
+$string['deletenotenrolled'] = 'Matrikulatu gabeko erabiltzaileen sarrerak';
 $string['deletingcomment'] = 'Iruzkina ezabatzen';
 $string['deletingnoneemptycategory'] = 'Kategoria hau ezabatuta ez dira ezabatuko bertan dauden sarrerak. Besterik gabe, kategoria gabeko bezala agertuko dira.';
 $string['descending'] = 'goitik behera';
@@ -303,9 +303,9 @@ $string['privacy:metadata:glossary_entries:userid'] = 'Glosario-sarrera gehitu z
 $string['question'] = 'Galdera';
 $string['rejectedentries'] = 'Onartu gabeko sarrerak';
 $string['rejectionrpt'] = 'Onartu gabekoen txostena';
-$string['removeallglossarytags'] = 'Ezabatu glosarioko etiketa guztiak';
+$string['removeallglossarytags'] = 'Glosarioko etiketa guztiak';
 $string['resetglossaries'] = 'Ezabatu sarrerak ondokotik';
-$string['resetglossariesall'] = 'Ezabatu glosario guztietako sarrerak';
+$string['resetglossariesall'] = 'Glosario guztietako sarrerak';
 $string['rssarticles'] = 'RSS jario berrien kopurua';
 $string['rssarticles_help'] = 'Hemen RSS jarioan sartu beharreko glosario-sarrera kopurua aukera dezakezu. Oro har, 5 eta 20ren artean ezartzea egokia izan daiteke.';
 $string['rssfeed'] = 'RSS jarioa';

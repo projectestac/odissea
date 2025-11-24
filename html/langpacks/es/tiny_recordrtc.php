@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_recordrtc', language 'es', version '4.4'.
+ * Strings for component 'tiny_recordrtc', language 'es', version '4.5'.
  *
  * @package     tiny_recordrtc
  * @category    string
@@ -25,8 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowedpausing'] = 'Permitir pausa';
 $string['allowedtypes'] = 'Tipo permitido';
-$string['allowedtypes_desc'] = '¿Qué botones de grabación deberían aparecer en el editor TinyMCE? Además de esta configuración, hay dos permisos que pueden controlar el acceso a las opciones de grabación.';
+$string['allowedtypes_desc'] = '¿Qué tipos de grabación pueden hacerse en el editor TinyMCE? Además de esta configuración, hay permisos que pueden controlar el acceso a las opciones de grabación.';
 $string['attachrecording'] = 'Adjuntar grabación';
 $string['audioandvideo'] = 'Audio y vídeo';
 $string['audiobitrate'] = 'Bitrate de audio';
@@ -38,21 +39,21 @@ $string['audiotitle'] = 'Grabar audio';
 $string['confirm_yes'] = 'Si';
 $string['discard_desc'] = 'Hay una grabación en progreso.¿Desea detener la grabación?';
 $string['discard_title'] = 'Confirmación de cierre';
-$string['gumabort'] = 'Algo extraño ha sucedido que impide usar la webcam/micrófono';
+$string['gumabort'] = 'Ha sucedido algo que ha impedido usar la webcam/micrófono/pantalla.';
 $string['gumabort_title'] = 'Algo ha sucedido';
-$string['gumnotallowed'] = 'El usuario debe permitir al navegador acceder a la webcam/micrófono';
+$string['gumnotallowed'] = 'Usted debe permitir al navegador acceder a la webcam/micrófono/pantalla.';
 $string['gumnotallowed_title'] = 'Error de permisos';
 $string['gumnotfound'] = 'No se ha detectado ningún dispositivo de entrada.';
 $string['gumnotfound_title'] = 'No hay dispositivo';
-$string['gumnotreadable'] = 'Algo está impidiendo al navegador acceder a la webcam/micrófono';
+$string['gumnotreadable'] = 'Algo está impidiendo al navegador acceder a la webcam/micrófono/pantalla.';
 $string['gumnotreadable_title'] = 'Error de hardware';
 $string['gumnotsupported'] = 'Su navegador no soporta la grabación con una conexión no segura.';
 $string['gumnotsupported_title'] = 'No soportado para una conexión no segura';
-$string['gumoverconstrained'] = 'La actual webcam/micrófono no puede producir un flujo con las condiciones necesarias';
+$string['gumoverconstrained'] = 'La actual webcam/micrófono/pantalla no puede producir un flujo con las condiciones necesarias.';
 $string['gumoverconstrained_title'] = 'Problema con las condiciones';
 $string['gumsecurity'] = 'Su navegador no soporta la grabación con una conexión no segura.';
 $string['gumsecurity_title'] = 'No soportado para una conexión no segura';
-$string['gumtype'] = 'Intentando conseguir el flujo de la webcam/micrófono, pero no se especificaron las condiciones';
+$string['gumtype'] = 'Intentando conseguir el flujo de la webcam/micrófono/pantalla, pero no se especificaron las condiciones';
 $string['gumtype_title'] = 'Condiciones no especificadas';
 $string['helplinktext'] = 'RecordRTC';
 $string['insecurealert'] = 'Su navegador puede no permitir trabajar a este plugin si no utiliza HTTPS o se conecta de manera local';
@@ -64,8 +65,10 @@ $string['norecordingfound'] = 'Parace que algo ha ido mal, no se ha grabado nada
 $string['norecordingfound_title'] = 'Grabación no encontrada';
 $string['nowebrtc'] = 'Su navegador ofrece soporte limitado o no soporta la tecnología WebRTC y no puede utilizar este plugin. Por favor, cambie o actualice su navegador';
 $string['nowebrtc_title'] = 'WebRTC no soportado';
-$string['onlyaudio'] = 'Solo audio';
-$string['onlyvideo'] = 'Solo video';
+$string['onlyaudio'] = 'Audio';
+$string['onlyscreen'] = 'Pantalla';
+$string['onlyvideo'] = 'Vídeo';
+$string['pause'] = 'Pausa';
 $string['pluginname'] = 'RecordRTC';
 $string['privacy:metadata'] = 'El plugin RecordRTC no almacena ningún dato personal.';
 $string['recordagain'] = 'Grabar otra vez';
@@ -74,7 +77,21 @@ $string['recordagain_title'] = 'Confirmación de grabar de nuevo';
 $string['recordingfailed'] = 'Fallo de grabación, inténtelo de nuevo';
 $string['recordinguploaded'] = 'Grabación subida';
 $string['recordrtc:recordaudio'] = 'Grabar audio directamente dentro del editor de texto';
+$string['recordrtc:recordscreen'] = 'Grabar pantalla en el editor de texto';
 $string['recordrtc:recordvideo'] = 'Grabar video directamente dentro del editor de texto';
+$string['resume'] = 'Continuar';
+$string['screenbitrate'] = 'Bitrate de pantalla';
+$string['screenbitrate_desc'] = 'Calidad de grabación de pantalla (un número mayor supone mayor calidad).';
+$string['screenbuttontitle'] = 'Grabar pantalla';
+$string['screenresolution_fhd'] = '1920 x 1080 (16:9)';
+$string['screenresolution_hd'] = '1280 x 720 (16:9)';
+$string['screensharingstopped'] = 'Usted dejó de compartir su pantalla antes de empezar a grabar. Por favor, dé permisos de compartir pantalla en los ajustes de su navegador y vuelva a empezar a grabar.';
+$string['screensharingstopped_title'] = 'Se ha dejado de compartir pantalla';
+$string['screensize'] = 'Tamaño de grabación de pantalla';
+$string['screensize_desc'] = 'El tamaño de la resolución de salida de vídeo.';
+$string['screentimelimit'] = 'Tiempo límite de pantalla';
+$string['screentimelimit_desc'] = 'Duración máxima de grabación de pantalla.';
+$string['screentitle'] = 'Grabar pantalla';
 $string['startrecording'] = 'Iniciar grabación';
 $string['stoprecording'] = 'Detener grabación';
 $string['timelimitwarning'] = 'Debe introducir un número que sea mayor que 0.';
@@ -86,6 +103,7 @@ $string['uploadprogress'] = 'completada';
 $string['videobitrate'] = 'Bitrate de vídeo';
 $string['videobitrate_desc'] = 'Calidad de la grabación de vídeo (números más altos significan mayor calidad)';
 $string['videobuttontitle'] = 'Grabar video';
+$string['videorecordmenutitle'] = 'Menú de grabación de vídeo';
 $string['videotimelimit'] = 'Tiempo límite de vídeo';
 $string['videotimelimit_desc'] = 'Duración máxima permitida para los clips de vídeo';
 $string['videotitle'] = 'Grabar video';

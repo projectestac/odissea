@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'pt', version '4.4'.
+ * Strings for component 'block_myoverview', language 'pt', version '4.5'.
  *
  * @package     block_myoverview
  * @category    string
@@ -93,7 +93,7 @@ $string['title'] = 'Nome da disciplina';
 $string['viewquickstart'] = 'Ver guia rápido';
 $string['zero_default_intro'] = 'Depois de se inscrever numa disciplina, ela será mostrada aqui.';
 $string['zero_default_title'] = 'Não está inscrito em qualquer disciplina.';
-$string['zero_nocourses_intro'] = 'Precisa de ajuda para começar? Consulte a <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">documentação do Moodle</a> ou dê os seus primeiros passos com o nosso guia rápido.';
+$string['zero_nocourses_intro'] = 'Precisa de ajuda para começar? Consulte a <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">documentação do Moodle</a>.';
 $string['zero_nocourses_title'] = 'Crie a sua primeira disciplina';
 $string['zero_request_intro'] = 'Precisa de ajuda para começar? Consulte a <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">documentação do Moodle</a> ou dê os seus primeiros passos com o nosso <a href="{$a->quickhref}" title="{$a->quicktitle}" target="{$a->quicktarget}">guia rápido</a>.';
 $string['zero_request_title'] = 'Peça a sua primeira disciplina';

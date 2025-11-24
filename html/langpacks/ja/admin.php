@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'ja', version '4.4'.
+ * Strings for component 'admin', language 'ja', version '4.5'.
  *
  * @package     admin
  * @category    string
@@ -280,8 +280,8 @@ $string['configenablecalendarexport'] = 'カレンダーのエクスポートま
 $string['configenablecomments'] = 'コメントを有効にします。';
 $string['configenablecourserequests'] = 'この設定を有効にした場合、新しいコースをリクエストできるケイパビリティ (moodle/course:request) のユーザにはコースをリクエストするオプションが与えられます。このケイパビリティは他のすべてのデフォルトロールでは許可されません。これはシステムまたはカテゴリコンテクストで適用できます。';
 $string['configenabledevicedetection'] = 'テーマおよび他の機能を適用するため、携帯電話、スマートフォン、タブレットまたはデフォルトデバイス (デスクトップPC、ノートPC等) の検出を有効にします。';
-$string['configenablemobilewebservice'] = '公式Moodle appまたは他のappが要求するモバイルサービスを有効にします。詳細は {$a} をご覧ください。';
-$string['configenablerssfeeds'] = 'このオプションを有効にした場合、ブログ、フォーラム、データベース活動および用語集を含むサイト全体の様々な機能によってRSSフィードが生成されます。特定のモジュールでRSSフィードを有効にする必要があることに留意してください。';
+$string['configenablemobilewebservice'] = 'Moodleアプリにはモバイルウェブサービスが必要です。あなたのサイトがHTTPSを使用している場合、モバイルウェブサービスはデフォルトで有効にされています。詳細は {$a} をご覧ください。';
+$string['configenablerssfeeds'] = 'このオプションを有効にした場合、ブログ、フォーラム、データベース活動および用語集を含むサイト全体の様々な機能によりRSSフィードが生成されます。特定のモジュールでRSSフィードを有効にする必要があることに留意してください。';
 $string['configenablerssfeedsdisabled'] = 'サイトすべてにおいてRSSフィードが無効にされているため、利用できません。管理設定内の詳細設定でRSSフィードを利用可能にできます。';
 $string['configenablerssfeedsdisabled2'] = 'RSSフィードはサイトレベルで無効にされています。サイト管理の拡張機能で有効にすることができます。';
 $string['configenablestats'] = 'この設定を有効にした場合、Moodleのcronジョブがログを処理して統計情報を集めます。あなたのサイトのトラフィックにより時間を要する場合があります。このオプションを有効にした場合、あなたのそれぞれのコースまたはサイト全体に関して興味深いグラフおよび統計データを閲覧することができます。';
@@ -308,7 +308,7 @@ $string['configfullnamedisplay'] = 'ここでは氏名がどのように表示�
 
 単一言語を使用したほとんどのサイトでは「名 + 姓」を使用した方が良いでしょう。しかし、あなたは姓を完全に隠すこともできます。使用できるプレースホルダは次のとおりです:
 firstname, lastname, firstnamephonetic, lastnamephonetic, middlename, alternatename';
-$string['configgeoipfile'] = 'GeoLite2 Cityバイナリデータファイルのロケーションです。このファイルはMoodleディストリビューションの一部ではなく、<a href="https://www.maxmind.com/">MaxMind</a>から個別に取得する必要があります。あなたは商用バージョンを購入または無料バージョンを使用できます。<a href="https://dev.maxmind.com/geoip/geoip2/geolite2/" >https://dev.maxmind.com/geoip/geoip2/geolite2/</a>からダウンロードできるCityデータベースファイルをダウンロードする場合、あなたは登録する必要があります。あなたが登録してファイルをダウンロードした後、あなたのサーバの「 {$a} 」ディレクトリで展開してください。';
+$string['configgeoipfile'] = 'GeoIP Cityバイナリデータファイルのロケーションです。このファイルはMoodleディストリビューションの一部ではなく、<a href="https://www.maxmind.com/">MaxMind</a>から個別に取得する必要があります。あなたは商用バージョンを購入または無料バージョンを使用できます。<a href="https://dev.maxmind.com/geoip/geoip2/geolite2/" >https://dev.maxmind.com/geoip/geoip2/geolite2/</a>からダウンロードできるCityデータベースファイルをダウンロードする場合、あなたは登録する必要があります。あなたが登録してファイルをダウンロードした後、あなたのサーバの「 {$a} 」ディレクトリで展開してください。';
 $string['configgetremoteaddrconf'] = 'リバースプロキシの背後にサーバを設置している場合、あなたはリモートIPアドレスを含んだ信頼できるHTTPヘッダを指定することができます。ヘッダは順番に読まれ最初の有効なヘッダが使用されます。';
 $string['configgradebookroles'] = 'ここでは誰が評定表に表示されるか設定することができます。ユーザがコース評定表で表示されるためにはこれらの中から少なくとも１つのロールを割り当ててください。';
 $string['configgradeexport'] = 'どの評定表エクスポートフォーマットをあなたの主要な評定表エクスポート方法にするか選択してください。選択されたフォーマットのプラグインが設定され、すべての評定の「最新エクスポート」フィールドに使用されます。例えばエクスポートされたレコードは「新規」または「更新」レコードとして認識されます。この設定に関して自信を持てない場合、すべてをチェックしないままにしてください。';
@@ -652,7 +652,7 @@ $string['enroladminnewcourse_help'] = '管理者が新しいコースを追加�
 $string['enrolinstancedefaults'] = '登録インスタンスデフォルト';
 $string['enrolinstancedefaults_desc'] = '新しいコースのデフォルト登録設定';
 $string['enrolmultipleusers'] = 'ユーザを登録する';
-$string['ensureauroraversion'] = 'あなたはのサイトはAmazon Auroraデータベースエンジンで動作しています。Amazon Auroraで利用しているMySQLバージョンがインストールまたはアップグレードするMoodleバージョンと互換性があることを確認してください。あなたは互換性を次のページで確認できます: <a href="https://docs.aws.amazon.com/ja_jp/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.30Updates.html" target="_blank">Amazon Aurora MySQL バージョン 3 のデータベースエンジンの更新</a>';
+$string['ensureauroraversion'] = 'あなたはのサイトはAmazon Auroraデータベースエンジンで動作しています。Amazon Auroraで利用しているMySQLバージョンがインストールまたはアップグレードするMoodleバージョンと互換性があることをご確認ください。あなたは互換性を次のページで確認できます: <a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.30Updates.html">Amazon Aurora MySQL バージョン3のデータベースエンジンの更新</a>';
 $string['entitytasklog'] = 'タスクログ';
 $string['environment'] = '動作環境';
 $string['environmenterrortodo'] = 'このバージョンのMoodleをインストールする前に、発見された動作環境の問題 (エラー) を解消してください!';
@@ -722,8 +722,15 @@ $string['fullnamedisplay'] = 'フルネームフォーマット';
 $string['fullnamedisplayprivate'] = 'フルネームフォーマット - プライベート';
 $string['gdrequired'] = '画像変換のため、MoodleではGD拡張モジュールが必要です。';
 $string['generalsettings'] = '一般設定';
-$string['geoipfile'] = 'GeoLite2 City MaxMind DB';
+$string['geoipdbedition'] = 'GeoIPデータベースエディション';
+$string['geoipdbedition_desc'] = 'ダウンロードするGeoIP データベースのエディションを選択してください。GeoIP2-City データベースを使用するには有効な有料ライセンスが必要であることに留意してください。';
+$string['geoipfile'] = 'GeoIP City DB';
+$string['geoipmaxmindaccid'] = 'MaxMindアカウントID';
+$string['geoipmaxmindaccid_desc'] = 'MaxMind APIサービスで作成されたアカウントのアカウントIDです。';
+$string['geoipmaxmindlicensekey'] = 'MaxMindライセンスキー';
+$string['geoipmaxmindlicensekey_desc'] = 'MaxMind APIサービスで作成されたアカウントのライセンスキーです。';
 $string['geopluginapikey'] = 'GeoPlugin APIキー';
+$string['geopluginapikey_desc'] = 'GeoPluginサービスにアクセスするために使用するAPIキーです。あなたのキーを<a href="https://www.geoplugin.com/" target="_blank">GeoPluginページ</a>で取得してください。';
 $string['getremoteaddrconf'] = '記録されるIPアドレスのソース';
 $string['globalsearch'] = 'グローバル検索';
 $string['globalsearchmanage'] = 'グローバル検索を管理する';
@@ -735,7 +742,7 @@ $string['gradebookroles'] = '評定ロール';
 $string['gradeexport'] = '主要な評定表エクスポート方法';
 $string['gradeexportdefault'] = 'デフォルト評定エクスポート方法';
 $string['gravatardefaulturl'] = 'GravatarデフォルトイメージURL';
-$string['gravatardefaulturl_help'] = 'Gravatarではユーザ画像が見つからない場合に表示するデフォルトイメージが必要です。イメージの完全なURLを提供してください。この設定を空白にした場合、あなたが閲覧しているページに対して、Moodleは最も適切なデフォルトイメージの使用を試みます。Gravatarには<a href="https://en.gravatar.com/site/implement/images/#default-image">デフォルトイメージを生成するため</a>の多くのコードが含まれていることにも留意してください。';
+$string['gravatardefaulturl_help'] = 'Gravatarではユーザ画像が見つからない場合に表示するデフォルトイメージが必要です。イメージの完全なURLを提供してください。デフォルトイメージを生成するためのコードは<a href="https://docs.gravatar.com/api/avatars/images/">Gravatar for Developers - Avatar Requests</a>で利用可能です。';
 $string['group_customfield'] = 'グループカスタムフィールド';
 $string['groupenrolmentkeypolicy'] = 'デフォルト登録キーポリシー';
 $string['groupenrolmentkeypolicy_desc'] = 'この設定を有効にした場合、上の設定で指定されたパスワードポリシーを基にグループ登録キーがチェックされます。';
@@ -785,6 +792,9 @@ $string['httpsecurity'] = 'HTTPセキュリティ';
 $string['iconvrequired'] = 'ICONV拡張モジュールのインストールが必須です。';
 $string['igbinary322buggyversion'] = 'このサイトにインストールされているphp-igbinary拡張モジュールをPHP 7.2で動作させた場合、問題が発生する可能性があります。php-igbinary 3.2.5またはそれ以降にアップグレードするか、PHP 7.3またはそれ以降へのアップグレードをお勧めします。';
 $string['ignore'] = '無視';
+$string['importantupdates_content'] = '<p>Moodle 5.0ではチャットおよび調査活動はコアMoodleから取り除かれます。これらは<a href="https://moodle.org/plugins/">Moodleプラグインディレクトリ</a>でプラグインとして利用できるようになります。</p>
+<p>あなたのサイトでチャットまたは調査を継続して使用したい場合、Moodle 5.0にアップグレード時にプラグインとしてインストールできます。</p>';
+$string['importantupdates_title'] = 'チャットおよび調査活動に関する重要なお知らせ';
 $string['includemoduleuserdata'] = 'モジュールユーザデータを含む';
 $string['incompatibleblocks'] = '互換性がないブロック';
 $string['incompleteunicodesupport'] = '現在のMySQLまたはMariaDBの設定では「utf8」を使用しています。この文字セットは絵文字を含む4バイト文字をサポートしていません。これらの文字を使用した場合、結果としてレコードのアップデート時にエラーが発生してデータベースに送信されるデータが失われてしまいます。あなたの設定を「utf8mb4」に変更することをお考えください。詳細はドキュメンテーションをご覧ください。';
@@ -803,11 +813,11 @@ $string['ipblocked'] = '現在、このサイトは利用できません。';
 $string['ipblocker'] = 'IPブロッカー';
 $string['ipblockersyntax'] = '1行につき1項目を入力してください。有効な項目は単一ホストに合致するフルIPアドレス (例: <b>192.168.10.1</b>)、指定されたIPアドレスで始まる部分アドレス (例: <b>192.168</b>)、CIDR表記 (例: <b>231.54.211.0/20</b>)、またはアドレスの最後の区切りに適用されるIPアドレスの範囲 (例: <b>231.3.56.10-20</b>)  です。「example.com」のようなテキストドメインはサポートされません。空白行および「#」記号以降の文字列は無視されます。';
 $string['iplookup'] = 'IPアドレスのルックアップ';
-$string['iplookupgeoplugin'] = '現在、<a href="https://www.geoplugin.com">geoPlugin</a> は地理情報を取得するために使用されています。さらに正確な結果を取得するにはローカルへのMaxMind GeoLiteデータベースのインストールをお勧めします。';
+$string['iplookupgeoplugin'] = '現在、<a href="https://www.geoplugin.com">geoPlugin</a> は地理情報を取得するために使用されています。さらに正確な結果を取得するにはローカルへのMaxMind GeoIP Cityデータベースのインストールをお勧めします。';
 $string['iplookupinfo'] = 'IPアドレスのロケーションをルックアップするため、MoodleはフリーオンラインNetGeoサーバを利用します。このデータベースは今後メンテナンスされることはなく、不正確なデータを返す可能性があります。<br />
-MaxMindからフリーGeoLite2 Cityデータベースのローカルコピーへのインストールをお勧めします。<br />
+MaxMindからGeoIPデータベースのローカルコピーへのインストールをお勧めします。<br />
 Google Maps API V3キーが提供されている場合、IPアドレスの位置はGoogle Mapsを使用して表示されます。あなたはGoogleアカウント必要です。また、Google Maps APIキーの申請も必要です。Google Maps API V3キーが提供されていない場合、IPアドレスの位置はOpenStreetMapを使用して表示されます。';
-$string['iplookupmaxmindnote'] = 'この製品は<a href="https://www.maxmind.com/">https://www.maxmind.com/</a>で利用できるMaxMindによって作成されたGeoLite2データを含みます。';
+$string['iplookupmaxmindnote'] = 'この製品は<a href="https://www.maxmind.com/">https://www.maxmind.com/</a>で利用できるMaxMindにより作成されたGeoIP Cityデータを含みます。';
 $string['iscustomadminwarnings'] = 'あなたのサイトでカスタム管理ディレクトリの使用が検出されました。この機能はサポートされなくなったため、Moodle 4.2以降に削除されます。';
 $string['ishttpswarning'] = 'あなたのサイトでは安全なHTTPSを使用していないことが検出されました。セキュリティを増して他のシステムとの統合を改善するため、あなたのサイトをHTTPSに移行することを強くお勧めします。';
 $string['keeptagnamecase'] = 'タグ名の大文字小文字を保持する';
@@ -840,7 +850,9 @@ $string['locationsettings'] = 'ロケーション設定';
 $string['locked'] = 'ロック';
 $string['lockoutduration'] = 'アカウントロックアウト継続時間';
 $string['lockoutduration_desc'] = 'この時間の後、ロックアウトされたアカウントが自動的にロック解除されます。';
-$string['lockoutemailbody'] = 'サーバ「 {$a->sitename} 」内のあなたのアカウント (ユーザ名: {$a->username}  )  は無効な複数回のログインによりロックアウトされました。
+$string['lockoutemailbody'] = '{$a->fullname} さん
+
+サーバ「 {$a->sitename} 」内のあなたのアカウント (ユーザ名: {$a->username}  )  は無効な複数回のログインによりロックアウトされました。
 
 すぐにアカウントをロック解除するには次のアドレスにアクセスしてください。
 
@@ -848,7 +860,8 @@ $string['lockoutemailbody'] = 'サーバ「 {$a->sitename} 」内のあなたの
 
 ほとんどのメールプログラムではあなたがクリックできる青いリンクとして表示されているはずです。クリックできない場合、あなたのウェブブラウザウィンドウのアドレス欄にアドレスをコピー＆ペーストしてください。
 
-分からない場合、サイト管理者 ( {$a->admin}) にご連絡ください。';
+分からないことがある場合、サイト管理者にご連絡ください。
+{$a->admin}';
 $string['lockoutemailsubject'] = '{$a} のあなたのアカウントはロックアウトされました。';
 $string['lockouterrorunlock'] = '無効なアカウントロック解除情報が提供されました。';
 $string['lockoutthreshold'] = 'アカウントロックアウト閾値';
@@ -960,7 +973,6 @@ $string['moodlepartners_help'] = '<p>Moodle HQにより認定されたMoodleパ�
 <a href="https://moodle.com/partners">パートナを探す</a>';
 $string['moodleservices'] = 'Moodleサービス';
 $string['moodleservices_help'] = 'これらのサービスを利用してあなたのMoodle学習環境を最大限利用できていることを確認してください:';
-$string['multilangforceold'] = '古いmultilangシンタックスを強制する: class="multilang" なしの &lt;span&gt; および &lt;lang&gt;';
 $string['mustenablestats'] = 'このサイトでは統計が有効にされていません。';
 $string['mycourses'] = 'マイコース';
 $string['mydashboard'] = 'システムデフォルダッシュボード';
@@ -1008,7 +1020,7 @@ $string['notifyloginthreshold'] = 'メール通知の閾値';
 $string['notloggedinroleid'] = 'ビジターのロール';
 $string['numberofmissingstrings'] = '未翻訳ストリング数: {$a}';
 $string['numberofstrings'] = '合計ストリング数: {$a->strings}<br />未翻訳数: {$a->missing} ({$a->missingpercent}&nbsp;%)';
-$string['oauthrefreshtokenexpired'] = 'あなたのサイト {$a->siteurl} のOAuthサービス {$a->issuer} のリフレッシュトークンの1つの有効期限が切れました。これでこのサービスを利用しているすべてのプラグインの機能が制限されます。この問題を解決するにはOAuth 2サービス設定ページに移動してこのサービスのテーブル行にある「システムアカウントに接続する」アイコンをクリックしてください。毎回必ずOAuthシステムの同じサービスアカウントを使用してログインしてください。';
+$string['oauthrefreshtokenexpired'] = 'あなたのサイト {$a->siteurl} のOAuthサービス {$a->issuer} のリフレッシュトークンの1つの有効期限が切れました。このサービスを利用しているすべてのプラグインの機能が制限されます。この問題を解決するにはOAuth 2サービス設定ページに移動してこのサービスのテーブル行にある「システムアカウントに接続する」アイコンをクリックしてください。毎回必ずOAuth 2システムの同じサービスアカウントを使用してログインしてください。';
 $string['oauthrefreshtokenexpiredshort'] = 'あなたのサイト {$a->siteurl} の {$a->issuer} のOAuthリフレッシュトークンの有効期限が切れました。';
 $string['onlynoreply'] = 'no-replyアドレスからの場合のみ';
 $string['opcacherecommended'] = 'PHP OPcacheキャッシングはパフォーマンスを改善して、必要メモリを減らします。OPcache拡張モジュールは推奨および完全にサポートされます。';
@@ -1194,8 +1206,8 @@ $string['registration_help'] = '登録することにより:
 * あなたはセキュリティ警告を受信します。
 * あなたのサイトからのモバイルアプリプッシュ通知を有効にできます。
 * あなたは私たちの世界規模のコミュニティのMoodle統計に貢献できます。';
-$string['registrationwarning'] = 'あなたのサイトはまだ登録されていません。';
-$string['registrationwarningcontactadmin'] = 'あなたのサイトはまだ登録されていません。あなたの管理者にお伝えください。';
+$string['registrationwarning'] = '重要なアップデートおよびセキュリティアラートを見逃さないようにしてください。';
+$string['registrationwarningcontactadmin'] = 'このサイトは登録されていません。重要な更新を見逃さないためにも管理者にサイトの登録をご依頼ください。';
 $string['releasenoteslink'] = 'このバージョンのMoodleに関する詳細情報はオンライン<a target="_blank" href="{$a}">リリースノート</a>をご覧ください。';
 $string['rememberuserlicensepref'] = 'ユーザライセンスプレファレンスを記憶する';
 $string['rememberuserlicensepref_help'] = 'この設定を有効にした場合、ユーザが最後に選択したライセンスがファイルピッカでのファイルアップロード時に事前選択されます。そうでない場合、デフォルトサイトライセンスが事前選択されます。';
@@ -1378,6 +1390,7 @@ $string['stickyblockscourseview'] = 'コースページ';
 $string['stickyblocksduplicatenotice'] = 'あなたがここで追加するブロックがすでに特定のページに登録されている場合、ブロックが重複することになります。<br />この場合、固定ブロックのみ編集不可となりますが、重複したブロックは編集することができます。';
 $string['stickyblocksmymoodle'] = 'マイMoodle';
 $string['stickyblockspagetype'] = '設定するページタイプ';
+$string['storedprogressbarcleanuptask'] = '保存されたプログレスバーのクリーンアップタスク';
 $string['strictformsrequired'] = '必須フィールドの厳密な妥当性確認';
 $string['stripalltitletags'] = 'すべての活動名からHTMLタグを取り除く';
 $string['supportandservices'] = 'サポートおよびサービス';
@@ -1388,6 +1401,7 @@ $string['supportemailsubject'] = 'サイトサポートリクエスト - {$a}';
 $string['supportname'] = 'サポート名';
 $string['supportpage'] = 'サイトサポート連絡リンク';
 $string['suspenduser'] = 'ユーザアカウントを利用停止する';
+$string['swaggerui'] = 'Moodle REST API UI (SwaggerUI)';
 $string['switchlang'] = '言語ディレクトリを切り替える';
 $string['systempaths'] = 'システムパス';
 $string['tablenosave'] = '上のテーブル内の変更は自動的に保存されます。';
@@ -1478,6 +1492,7 @@ $string['taskstatscron'] = '統計のバックグラウンド処理';
 $string['tasktagcron'] = 'タグのバックグラウンド処理';
 $string['tasktempfilecleanup'] = '古い一時ファイルを削除する';
 $string['tasktype'] = 'タイプ';
+$string['taskupdategeoip2file'] = 'GeoIPファイルを更新する';
 $string['tempdatafoldercleanup'] = '次より古い一時データファイルを削除する';
 $string['templates'] = 'テンプレート';
 $string['testoutgoingmailconf'] = '送信メール設定をテストする';
@@ -1512,7 +1527,7 @@ $string['thirdpartylibrary'] = 'ライブラリ';
 $string['thirdpartylibrarylocation'] = 'ロケーション';
 $string['thirdpartylibs'] = 'サードパーティライブラリ';
 $string['timezone'] = 'デフォルトタイムゾーン';
-$string['timezoneforced'] = 'サイト管理者によって強制されています。';
+$string['timezoneforced'] = 'サイト管理者により強制されています。';
 $string['timezoneinvalid'] = '無効なタイムゾーン「 {$a} 」';
 $string['timezoneisforcedto'] = 'すべてのユーザに使用を強制する';
 $string['timezonenotforced'] = 'ユーザは独自のタイムゾーンを使用できる';
@@ -1520,7 +1535,7 @@ $string['timezonephpdefault'] = 'デフォルトPHPタイムゾーン ({$a})';
 $string['timezoneserver'] = 'サーバタイムゾーン ({$a})';
 $string['tlswarning'] = 'TLSv1.2をサポートするPHP/cURL拡張モジュールが検出されませんでした。いくつかのサービスは動作しません。あなたのTLSライブラリのアップグレードを強くお勧めします。';
 $string['tokenduration'] = 'ユーザ作成トークンの持続時間';
-$string['tokenduration_desc'] = 'ユーザ  (例えばモバイルアプリ) によって新しく作成されたトークンが有効な時間です。';
+$string['tokenduration_desc'] = 'ユーザ  (例えばモバイルアプリ) により新しく作成されたトークンが有効な時間です。';
 $string['tokenizerrecommended'] = 'PHP Tokenizer拡張モジュールのインストールをお勧めします - Moodleネットーワーキングの機能性を改善します。';
 $string['tools'] = '管理ツール';
 $string['toolsmanage'] = '管理ツール管理';
@@ -1576,7 +1591,7 @@ $string['upgradeforumreadinfo'] = 'Moodle1.5ではフォーラムの既読/未�
 $string['upgradekeyreq'] = 'アップグレードキー必須';
 $string['upgradekeyset'] = 'アップグレードキー (設定しない場合、空白にしてください)';
 $string['upgradelogs'] = '正常に動作させるためには古いログのアップグレードが必要です。<a href="{$a}">詳細はこちら</a>';
-$string['upgradelogsinfo'] = 'ログの保存方法に変更点があります。あなたの活動ベースの古いログを閲覧できるようにするには古いログをアップグレードする必要があります。サイトによってはアップグレード作業に長時間(例 数時間) を要し、規模が大きなサイトではデータベースに負荷がかかります。処理を開始した場合は終了するまでそのまま (ブラウザを開いたまま) にしてください。心配する必要はありません - ログが更新された後、あなたのサイトは正常に動作します。<br /><br />本当にログをアップグレードしてもよろしいですか?';
+$string['upgradelogsinfo'] = 'ログの保存方法に変更点があります。あなたの活動ベースの古いログを閲覧できるようにするには古いログをアップグレードする必要があります。サイトによりアップグレード作業に長時間(例 数時間) を要し、規模が大きなサイトではデータベースに負荷がかかります。処理を開始した場合は終了するまでそのまま (ブラウザを開いたまま) にしてください。心配する必要はありません - ログが更新された後、あなたのサイトは正常に動作します。<br /><br />本当にログをアップグレードしてもよろしいですか?';
 $string['upgradepluginsfirst'] = '最初に利用可能な更新のインストールをお勧めします。';
 $string['upgradepluginsinfo'] = 'プラグインの更新';
 $string['upgradepluginsinfo_help'] = 'あなたのプラグインに関して利用可能な更新があります。あなたはMoodleデータベースのアップグレード前にそれらをインストールする必要があります。あなたのサイトが自動更新適用をサポートしていない場合、新しいプラグインバージョンをダウンロードして、あなたのサーバに手動でインストールする必要があります。';
@@ -1646,6 +1661,6 @@ $string['warningcurrentsetting'] = '無効な現在値: {$a}';
 $string['warningiconvbuggy'] = 'あなたのバージョンのiconvライブラリはIGNORE modifierをサポートしていません。無効なUTF-8文字列を含むストリングをクリーニングするため、代わりにmbstring拡張モジュールをインストールする必要があります。';
 $string['webproxy'] = 'ウェブプロキシ';
 $string['webproxyinfo'] = 'あなたのMoodleサーバが直接インターネットに接続できない場合、以下のオプションに必要事項を入力してください。インターネットアクセスは環境データ、言語パック、RSSフィード、タイムゾーン等のダウンロードに必要です。<br />PHP cURL拡張モジュールの使用を強くお勧めします。';
-$string['xmlrpcwebserviceenabled'] = 'あなたのサイトでXML-RPCウェブサービスプロトコルが有効にされていることを検出しました。この機能はPHP XML-RPC拡張モジュールに依存していますが、現在、PHPによってメンテナンスされていません。';
+$string['xmlrpcwebserviceenabled'] = 'あなたのサイトでXML-RPCウェブサービスプロトコルが有効にされていることを検出しました。この機能はPHP XML-RPC拡張モジュールに依存していますが、現在、PHPによりメンテナンスされていません。';
 $string['yuicomboloading'] = 'YUI combo読み込み';
 $string['ziprequired'] = 'MoodleではPHP Zip拡張モジュールが必須です。info-ZIPバイナリまたはPclZipライブラリは今後使用されません。';

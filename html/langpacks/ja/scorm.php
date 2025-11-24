@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'ja', version '4.4'.
+ * Strings for component 'scorm', language 'ja', version '4.5'.
  *
  * @package     scorm
  * @category    string
@@ -38,6 +38,7 @@ $string['aicchacptimeout_desc'] = '外部AICC HACPセッションをオープン
 $string['aiccuserid'] = 'AICC数字ユーザID渡し';
 $string['aiccuserid_desc'] = 'Moodleに比べてAICCスタンダードのユーザ名には制限が多く、半角英数字、ダッシュ (-) およびアンダースコア (_) のみ許可されます。ピリオド (.)、スペースおよびアットマーク (@) は許可されません。この設定を有効にした場合、ユーザ名の代わりにナンバIDナンバがAICCパッケージに渡されます。';
 $string['aliasonly'] = 'リポジトリからimsmanifest.xmlファイルを選択する場合、あなたはこのファイルのエイリアス/ショートカットを使用する必要があります。';
+$string['allattempts'] = 'すべてのSCORM受験';
 $string['allowapidebug'] = 'アクティブAPIデバッグおよびトレース (apidebugmaskでキャプチャマスクを設定する)';
 $string['allowtypeaicchacp'] = '外部AICC HACPを有効にする';
 $string['allowtypeaicchacp_desc'] = 'この設定を有効にした場合、外部AICCパッケージからユーザログインのポストリクエストを必要とせずにAICC HACP外部通信することができます。';
@@ -60,7 +61,7 @@ $string['attemptstatusmy'] = 'ダッシュボードのみ';
 $string['attemptsx'] = '受験 {$a}';
 $string['attr_error'] = 'タグ {$a->tag} のアトリビュート ({$a->attr}) に不適切な値が設定されています。';
 $string['autocommit'] = '自動コミット';
-$string['autocommit_help'] = 'この設定を有効にした場合、SCORMデータは自動的にデータベースに保存されます。定期的にデータを保存しないSCORMオブジェクトに有用です。';
+$string['autocommit_help'] = 'この設定を有効にした場合、SCORMデータは自動的にデータベースに保存されます。これは定期的にデータを保存しないSCORMオブジェクトに有用です。';
 $string['autocommitdesc'] = 'SCORMパッケージがSCORMデータを保存しない場合、自動的にSCORMデータを保存します。';
 $string['autocontinue'] = '自動継続';
 $string['autocontinue_help'] = 'この設定を有効にした場合、自動的に次の利用可能な学習オブジェクトが起動されます。そうでない場合、「続ける」ボタンを使用してください。';
@@ -231,7 +232,7 @@ $string['lastattemptlock_help'] = 'この設定を有効にした場合、割り
 $string['lastattemptlockdesc'] = 'この設定を有効にした場合、割り当てられた受験すべての終了後、学生はSCORMプレイヤを起動できないようになります。';
 $string['location'] = 'ロケーションバーを表示する';
 $string['masteryoverride'] = '熟達度がステータスをオーバーライドする';
-$string['masteryoverride_help'] = 'この設定を有効にして熟練度が提供された場合、LMSFinishがコールされて素点が設定された時点で素点を使用してステータスが再計算されます。SCORM (「未完了」を含む) によって提供された熟練度およびステータスはオーバーライドされます。';
+$string['masteryoverride_help'] = 'この設定を有効にして熟練度が提供された場合、LMSFinishがコールされて素点が設定された時点で素点を使用してステータスが再計算されます。SCORM (「未完了」を含む) により提供された熟練度およびステータスはオーバーライドされます。';
 $string['masteryoverridedesc'] = 'このプレファレンスでは熟練度オーバーライド設定のデフォルトを設定します。';
 $string['max'] = '最大評点';
 $string['maximumattempts'] = '受験回数';
@@ -265,7 +266,7 @@ $string['nav_help'] = 'ここではナビゲーションボタンの表示/非�
 
 * なし - ナビゲーションボタンを表示しません。
 * コンテンツの下 - SCORMパッケージコンテンツの下にナビゲーションボタンを表示します。
-* フロート - ナビゲーションボタンはパッケージによって決定されたトップおよび左からのポジションにフロート表示されます。';
+* フロート - ナビゲーションボタンはパッケージにより決定されたトップおよび左からのポジションにフロート表示されます。';
 $string['navdesc'] = 'ここではナビゲーションボタンの表示/非表示およびポジションを設定します。';
 $string['navigation'] = 'ナビゲーション';
 $string['navpositionleft'] = '左からのナビゲーションボタンのポジション (ピクセル) です。';

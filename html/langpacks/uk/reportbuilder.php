@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'uk', version '4.4'.
+ * Strings for component 'reportbuilder', language 'uk', version '4.5'.
  *
  * @package     reportbuilder
  * @category    string
@@ -67,8 +67,8 @@ $string['columnadded'] = 'Додано стовпець "{$a}"';
 $string['columnaggregated'] = 'Зведений стовпець "{$a}"';
 $string['columndeleted'] = 'Видалено стовпець "{$a}"';
 $string['columnmoved'] = 'Переміщено стовпець "{$a}"';
-$string['columnsortdirectionasc'] = 'Сортувати стовпець "{$a}" за зростанням';
-$string['columnsortdirectiondesc'] = 'Сортувати стовпець "{$a}" за спаданням';
+$string['columnsortdirectionasc'] = 'Змінити початкове сортування для стовпця \'{$a}\' на зростання';
+$string['columnsortdirectiondesc'] = 'Змінити початкове сортування для стовпця \'{$a}\' на спадання';
 $string['columnsortdisable'] = 'Вимкнути початкове сортування для стовпця {$a}';
 $string['columnsortenable'] = 'Увімкнути початкове сортування для стовпця {$a}';
 $string['columnsortupdated'] = 'Оновлено сортування для стовпця "{$a}"';
@@ -147,6 +147,7 @@ $string['filterdurationunit'] = 'одиниця {$a}';
 $string['filterendswith'] = 'Закінчується на';
 $string['filterequalorgreaterthan'] = 'Більше або рівне';
 $string['filterequalorlessthan'] = 'Менше або рівне';
+$string['filterfieldfrom'] = '{$a} від';
 $string['filterfieldoperator'] = 'оператор {$a}';
 $string['filterfieldto'] = '{$a} до';
 $string['filterfieldunit'] = '{$a} одиниць';

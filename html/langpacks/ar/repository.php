@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'ar', version '4.4'.
+ * Strings for component 'repository', language 'ar', version '4.5'.
  *
  * @package     repository
  * @category    string
@@ -260,6 +260,7 @@ $string['unknownoriginal'] = 'مجهول';
 $string['unknownsource'] = 'مصدر مجهول';
 $string['unzipped'] = 'تم فك الملف المضغوط بنجاح';
 $string['upload'] = 'حمل هذا الملف';
+$string['uploaderror'] = 'خطأ في رفع الملف';
 $string['uploading'] = 'يتم التحميل';
 $string['uploadsucc'] = 'تم رفع الملف بنجاح';
 $string['uselatestfile'] = 'استعمل الملف الأخير';

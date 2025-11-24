@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'ja', version '4.4'.
+ * Strings for component 'reportbuilder', language 'ja', version '4.5'.
  *
  * @package     reportbuilder
  * @category    string
@@ -67,8 +67,8 @@ $string['columnadded'] = 'カラム「 {$a} 」が追加されました。';
 $string['columnaggregated'] = 'カラム「 {$a} 」が集計されました。';
 $string['columndeleted'] = 'カラム「 {$a} 」が削除されました。';
 $string['columnmoved'] = 'カラム「 {$a} 」が移動されました。';
-$string['columnsortdirectionasc'] = 'カラム「 {$a} 」を昇順に並べ替える';
-$string['columnsortdirectiondesc'] = 'カラム「 {$a} 」を降順に並べ替える';
+$string['columnsortdirectionasc'] = 'カラム「 {$a} 」の初期並べ替えを昇順に変更する';
+$string['columnsortdirectiondesc'] = 'カラム「 {$a} 」初期並べ替えを降順に変更する';
 $string['columnsortdisable'] = 'カラム「 {$a} 」の初期並べ替えを無効にする';
 $string['columnsortenable'] = 'カラム「 {$a} 」の初期並べ替えを有効にする';
 $string['columnsortupdated'] = 'カラム「 {$a} 」の並べ替えが更新されました。';
@@ -147,6 +147,7 @@ $string['filterdurationunit'] = '{$a} 単位';
 $string['filterendswith'] = '終了';
 $string['filterequalorgreaterthan'] = '大きいまたは等しい';
 $string['filterequalorlessthan'] = '小さいまたは等しい';
+$string['filterfieldfrom'] = '{$a} 開始';
 $string['filterfieldoperator'] = '{$a} 演算子';
 $string['filterfieldto'] = '{$a} 終了';
 $string['filterfieldunit'] = '{$a} 単位';

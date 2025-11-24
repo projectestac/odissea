@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'fr', version '4.4'.
+ * Strings for component 'gradereport_grader', language 'fr', version '4.5'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -33,9 +33,8 @@ $string['ajaxfailedupdate'] = 'Impossible de modifier [1] vers [2]';
 $string['ajaxfieldchanged'] = 'Le champ que vous modifiez actuellement a été modifié. Voulez-vous utiliser la nouvelle valeur ?';
 $string['aria:dropdowncolumns'] = 'Colonnes repliées trouvées';
 $string['cellactions'] = 'Actions de cellule';
-$string['clearall'] = 'Tout effacer';
 $string['clearsearch'] = 'Effacer la recherche des utilisateurs';
-$string['collapsedcolumns'] = 'Colonnes repliées <span class="badge rounded-pill bg-primary text-white ml-1" data-collapse="count">{$a}</span>';
+$string['collapsedcolumns'] = 'Colonnes repliées <span class="badge rounded-pill bg-primary text-white ms-1" data-collapse="count">{$a}</span>';
 $string['editingmode_title'] = 'Modification du rapport de l’évaluateur';
 $string['eventgradereportviewed'] = 'Rapport de l’évaluateur consulté';
 $string['grader:manage'] = 'Gérer le rapport de l’évaluateur';

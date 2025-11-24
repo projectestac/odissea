@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ar', version '4.4'.
+ * Strings for component 'question', language 'ar', version '4.5'.
  *
  * @package     question
  * @category    string
@@ -325,7 +325,6 @@ $string['nocate'] = 'لا يوجد هذا التصنيف {$a}!';
 $string['noconditionspecified'] = 'يرجى تحديد الشرط';
 $string['nopermissionadd'] = 'ليست لديك صلاحية إضافة الأسئلة هنا.';
 $string['nopermissionedit'] = 'ليست لديك صلاحية تحرير الأسئلة من هنا.';
-$string['nopermissionmove'] = 'ليست لديك صلاحية نقل الأسئلة من هنا. ينبغي حفظ السؤال في هذا الصنف أو حفظه كسؤال جديد.';
 $string['noprobs'] = 'لا توجد مشاكل في قاعدة بيانات الأسئلة لديك.';
 $string['noquestionbanks'] = 'لا يوجد ملحق بنك الأسئلة.';
 $string['noquestions'] = 'لم يتم العثور على الأسئلة لتصديرها. تأكد من أنك قمت بتحديد التصنيف الذي يحتوي على الأسئلة لتصديره.';
@@ -416,7 +415,11 @@ $string['questionbehavioursorderexplained'] = 'أدخل قائمة مفصولة 
 $string['questioncategories'] = 'أصناف الأسئلة';
 $string['questioncategory'] = 'صنف السؤال';
 $string['questioncatsfor'] = 'أصناف الأسئلة لـ \'{$a}\'';
+$string['questiondefaultssave'] = 'حفظ خيارات السؤال بمثابة التفضيلات الافتراضية للمستخدم';
+$string['questiondefaultssave_desc'] = 'ما إذا كان ينبغي حفظ خيارات الأسئلة، مثل \'العلامة الافتراضية\'، \'إجابة واحدة أم متعددة\'، إلخ. بمثابة تفضيلات للمستخدم عند تسليم نموذج تحرير السؤال، من أجل استعمالها كخيارات افتراضية عند استعمال النموذج لاحقًا من قبل المستخدم.';
 $string['questiondoesnotexist'] = 'هذا السؤال غير موجود';
+$string['questionediting'] = 'تحرير السؤال';
+$string['questionediting_desc'] = 'هذه الإعدادات تنطبق على نماذج تحرير الأسئلة.';
 $string['questionformtagheader'] = 'وسوم {$a}';
 $string['questionidmismatch'] = 'عدم تطابق مُعرِّفات السؤال';
 $string['questionloaderror'] = 'تعذر تحميل خيارات السؤال.';

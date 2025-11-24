@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'organizer', language 'ru', version '4.4'.
+ * Strings for component 'organizer', language 'ru', version '4.5'.
  *
  * @package     organizer
  * @category    string
@@ -485,7 +485,6 @@ $string['groupmodenogroups'] = 'Групповых встреч нет';
 $string['groupmodeslotgroups'] = 'Создание группы в пустом временном интервале';
 $string['groupmodeslotgroupsappointment'] = 'Создание группы в забронированном временном интервале';
 $string['groupoptions'] = 'Настройки группы';
-$string['grouporganizer_desc_hasgroup'] = 'Это органайзер группы. Нажатие кнопки регистрации зарегистрирует вас и всех участников вашей группы {$a->groupname} в этом временном интервале. Все участники группы могут изменять и комментировать регистрацию.';
 $string['grouporganizer_desc_novalidgroup'] = 'Это органайзер группы. Вы не являетесь членом группы, входящей в этот органайзер!';
 $string['grouppicker'] = 'Выбор группы';
 $string['groupwarning'] = 'Проверьте ниже параметры группы!';

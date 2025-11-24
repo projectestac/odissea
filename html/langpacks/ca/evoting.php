@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'evoting', language 'ca', version '4.4'.
+ * Strings for component 'evoting', language 'ca', version '4.5'.
  *
  * @package     evoting
  * @category    string
@@ -30,7 +30,7 @@ $string['addquestion'] = 'Afegeix una pregunta';
 $string['checkbox_multiple_answer'] = 'Possibilitat de triar respostes múltiples';
 $string['choice'] = 'Opcions de resposta';
 $string['choicenotvalid'] = 'L\'opció de resposta no és vàlida';
-$string['confirmDelete'] = 'N\'esteu segur?';
+$string['confirmDelete'] = 'Confirmeu que voleu que es dugui a terme aquesta acció?';
 $string['countdownvote'] = 'Mostra els vots d\'aquí a';
 $string['countvote'] = 'Nombre de vots';
 $string['delete'] = 'Suprimeix';

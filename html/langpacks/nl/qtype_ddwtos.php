@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'nl', version '4.4'.
+ * Strings for component 'qtype_ddwtos', language 'nl', version '4.5'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -29,6 +29,7 @@ $string['addmorechoiceblanks'] = 'Blanco voor {no} meer keuzes';
 $string['answer'] = 'Antwoord';
 $string['blank'] = 'blanco';
 $string['blanknumber'] = 'Leeg {$a}';
+$string['choicesacceptedtext'] = 'Noteer de antwoorden die in de uitsparingen gesleept moeten worden. Je kunt extra antwoorden invoeren om de moeilijkheidsgraad te verhogen. <br />Aanvaarde tekstopmaak:  &lt;sub&gt;, &lt;sup&gt;, &lt;b&gt;, &lt;i&gt;, &lt;em&gt;, &lt;strong&gt;. TeX wordt ook aanvaard met $$ aan het begin en einde.';
 $string['correctansweris'] = 'Het goede antwoord is: {$a}';
 $string['errorlimitedchoice'] = 'Keuze [[{$a}]] is meer dan eens gebruikt zonder deze in te stellen op "Onbeperkt". Controleer deze vraag.';
 $string['infinite'] = 'Onbeperkt';

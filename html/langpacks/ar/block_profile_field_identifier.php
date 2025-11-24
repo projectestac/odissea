@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_profile_field_identifier', language 'ar', version '4.4'.
+ * Strings for component 'block_profile_field_identifier', language 'ar', version '4.5'.
  *
  * @package     block_profile_field_identifier
  * @category    string

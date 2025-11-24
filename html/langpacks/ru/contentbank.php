@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'ru', version '4.4'.
+ * Strings for component 'contentbank', language 'ru', version '4.5'.
  *
  * @package     contentbank
  * @category    string
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['author'] = 'Автор';
 $string['choosecontext'] = 'Выберите курс или категорию...';
 $string['contentbank'] = 'Банк контента';
+$string['contentbankcustomfields'] = 'Пользовательские поля банка контента';
 $string['contentbankpreferences'] = 'Настройки банка контента';
 $string['contentcopied'] = 'Контент скопирован.';
 $string['contentcreated'] = 'Контент создан.';
@@ -50,6 +51,7 @@ $string['deletecontentconfirm'] = 'Вы действительно хотите 
 $string['deletecontentconfirmlinked'] = 'Содержимое будет удалено только из банка контента. Любые места, которые в настоящее время ссылаются на него, будут автоматически обновлены, чтобы вместо контента использовать его копию.';
 $string['displaydetails'] = 'Отображать банк контента с атрибутами файлов';
 $string['displayicons'] = 'Отображать банк контента с иконками';
+$string['displayunlisted'] = 'Показать неперечисленный контент';
 $string['emptynamenotallowed'] = 'Пустое имя не допускается';
 $string['errordeletingcontentfromcategory'] = 'Ошибка при удалении контента из категории {$a}.';
 $string['errornofile'] = 'Для создания контента необходим совместимый файл.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'uk', version '4.4'.
+ * Strings for component 'question', language 'uk', version '4.5'.
  *
  * @package     question
  * @category    string
@@ -307,7 +307,6 @@ $string['nocate'] = 'Немає категорії {$a}!';
 $string['noconditionspecified'] = 'Будь ласка, вкажіть умову';
 $string['nopermissionadd'] = 'Ви не маєте прав для додавання сюди питань.';
 $string['nopermissionedit'] = 'Ви не маєте дозволу редагувати запитання звідси.';
-$string['nopermissionmove'] = 'У вас немає прав переміщувати це питання в іншу категорію. Ви повинні зберегти питання в цю категорію або зберегти його як нове питання.';
 $string['noprobs'] = 'Проблем в банку питань не виявлено.';
 $string['noquestionbanks'] = 'Плагін банку запитань не знайдено.';
 $string['noquestions'] = 'Не знайдено жодного питання для експорту. Переконайтеся, що ви вибрали категорію для експорту, яка містить питання.';
@@ -398,7 +397,11 @@ $string['questionbehavioursorderexplained'] = 'Введіть розділени
 $string['questioncategories'] = 'Категорії питань';
 $string['questioncategory'] = 'Категорія питань';
 $string['questioncatsfor'] = 'Категорії питань для \'{$a}';
+$string['questiondefaultssave'] = 'Зберегти параметри запитання як налаштування користувача за замовчуванням';
+$string['questiondefaultssave_desc'] = 'Чи такі параметри запитання, як «Позначка за замовчуванням», «Одна чи кілька відповідей?» і т. д. повинні бути збережені як параметри користувача, коли надсилається форма редагування запитання, для використання як стандартні під час наступного доступу користувача до форми.';
 $string['questiondoesnotexist'] = 'Це питання не створено';
+$string['questionediting'] = 'Редагування питання';
+$string['questionediting_desc'] = 'Ці налаштування застосовуються до редагування форм запитань.';
 $string['questionformtagheader'] = '{$a} тегів';
 $string['questionidmismatch'] = 'Невідповідність кодів питання';
 $string['questionloaderror'] = 'Не вдалося завантажити параметри запитання.';

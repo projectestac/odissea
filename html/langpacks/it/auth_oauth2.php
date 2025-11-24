@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'it', version '4.4'.
+ * Strings for component 'auth_oauth2', language 'it', version '4.5'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -29,9 +29,9 @@ $string['accountexists'] = 'Un utente con questo username è già esistente. Se 
 $string['alreadylinked'] = 'L\'account esterno è già collegato ad un account del sito';
 $string['auth_oauth2description'] = 'Autenticazione basata sullo standard OAuth 2';
 $string['auth_oauth2settings'] = 'Impostazioni autenticazione OAuth 2';
-$string['confirmaccountemail'] = 'Gentile {$a->fullname},
+$string['confirmaccountemail'] = 'Gentile {$a->firstname},
 
-è stata richiesta la creazione di un nuovo account su \'{$a->sitename}\' che utilizza il tuo indirizzo di posta elettronica.
+è stata richiesta la creazione di un nuovo account su \'{$a->sitename}\' utilizzando il tuo indirizzo di posta elettronica.
 
 Per confermare l\'account, devi cliccare sul link seguente:
 
@@ -40,11 +40,13 @@ Per confermare l\'account, devi cliccare sul link seguente:
 Nella maggior parte dei programmi di posta il link apparirà colorato di blu ed è sufficiente cliccarlo. Se il link non dovesse essere attivo, copia e incolla il link nella barra dell\'indirizzo del browser e premi il tasto invio.
 
 Se hai bisogno di aiuto contatta l\'amministratore del sito,
-{$a->admin}';
+{$a->admin}
+
+Se non hai richiesto tu l\'account, allora è possibile che qualcuno stia tentando di creare un account al tuo posto. Per favore contatta subito l\'amministratore del sito.';
 $string['confirmaccountemailsubject'] = '{$a}: conferma account';
 $string['confirmationinvalid'] = 'Il link di conferma è scaduto o non è valido. Per generare una nuova email di conferma devi ricominciare daccapo il processo di autenticazione.';
 $string['confirmationpending'] = 'Account in attesa di conferma email';
-$string['confirmlinkedloginemail'] = 'Gentile {$a->fullname},
+$string['confirmlinkedloginemail'] = 'Gentile {$a->firstname},
 
 è stato richiesto di collegare l\'autenticazione di \'{$a->issuername}\' {$a->linkedemail} con il tuo account su {$a->sitename}\' utilizzando il tuo indirizzo di posta elettronica.
 

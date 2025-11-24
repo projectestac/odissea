@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'pt', version '4.4'.
+ * Strings for component 'format_tiles', language 'pt', version '4.5'.
  *
  * @package     format_tiles
  * @category    string
@@ -38,16 +38,17 @@ $string['alternativelink'] = 'hiperligação alternativa';
 $string['areyousure'] = 'Tem a certeza?';
 $string['asfraction'] = 'Mostrar como fração';
 $string['aspectratiotootallorwide'] = 'A imagem enviada foi guardada, mas verifique, uma vez que pode ser <strong>{$a->tallorwide}</strong>. Se não lhe parecer correto, recorte-a para dimensões de paisagem e carregue-a novamente. Por exemplo, 300 largura x 200 altura é suficiente.';
-$string['aspercentagedial'] = 'Mostrar como % num círculo';
+$string['aspercentagedial'] = 'Mostrar como %';
 $string['assumedatastoreconsent'] = 'Assumir consentimento para o armazenamento local do navegador';
 $string['assumedatastoreconsent_desc'] = 'Se ativar esta opção, a caixa de diálogo a solicitar consentimento para armazenar os dados no armazenamento local do navegador <b>não</b> será mostrada ao utilizador';
 $string['backupfailed'] = 'Cópia de segurança sem sucesso';
 $string['basecolour'] = 'Cor dos mosaicos';
 $string['basecolour_help'] = 'A cor que será aplicada a todos os mosaicos desta disciplina. (As cores disponíveis são determinadas pelo administrador do site através da página de configurações do módulo Mosaicos).';
 $string['brandcolour'] = 'Cor';
+$string['cachedef_formatoptionelementids'] = 'Matriz simples de ID de elementos que têm opções de formato definidas, por exemplo, ID de secções da disciplina que têm fotos.';
+$string['cachedef_formatoptions'] = 'Matriz de valores das opções de formato da disciplina por ID do elemento. Por exemplo, nomes de ficheiros de fotografias por ID da secção da disciplina.';
 $string['cachedef_modalcmids'] = 'IDs dos módulos da disciplina (por disciplina) que têm de ser abertos numa janela modal';
 $string['cachedef_videocmids'] = 'ID dos módulos da disciplina (por disciplina) que são vídeos (atividades URL que apontam para o YouTube ou Vimeo)';
-$string['canceltask'] = 'Cancelar tarefa';
 $string['changedcolour'] = 'A cor do mosaico foi redefinida para a predefinição da disciplina {$a}';
 $string['checkforproblemcourses'] = 'Verificar e corrigir disciplinas com erros';
 $string['clearphoto'] = 'Repor este mosaico';
@@ -122,9 +123,6 @@ $string['displaytitle_mod_ppt'] = 'Apresentação Powerpoint';
 $string['displaytitle_mod_txt'] = 'Texto';
 $string['displaytitle_mod_xls'] = 'Folha de cálculo';
 $string['displaytitle_mod_zip'] = 'ZIP';
-$string['documentation'] = 'Documentação';
-$string['documentationurl'] = 'URL da documentação';
-$string['documentationurl_descr'] = 'URL da documentação acerca do formato Mosaicos.';
 $string['download'] = 'Descarregar';
 $string['editoradvicesubtiles'] = 'Nesta versão do módulo Mosaicos, as atividades só aparecerão como sub-mosaicos se o modo de edição estiver desligado';
 $string['editsection'] = 'Editar mosaico';
@@ -265,7 +263,7 @@ $string['imagedeletedfrom'] = 'A imagem de "{$a}" foi apagada';
 $string['imagesavedfor'] = 'Imagem guardada para {$a}';
 $string['imagesize'] = 'Tamanho da imagem';
 $string['invalidsectionid'] = 'ID de secção inválido "{$a}"';
-$string['jsactivate'] = 'Navegação animada - desativar';
+$string['jsactivate'] = 'Navegação animada';
 $string['jsdeactivated'] = 'Navegação animada desativada';
 $string['jsreactivated'] = 'Ativou a navegação animada na sua conta.';
 $string['legacytiledata'] = 'Contagem de dados do mosaico antiga';
@@ -289,7 +287,6 @@ $string['none'] = 'Nenhum';
 $string['noproblemsfound'] = 'Nenhum problema encontrado';
 $string['notcomplete'] = 'Não concluído';
 $string['notrecommended'] = 'Não recomendado';
-$string['notregistered'] = 'Este módulo Mosaicos ainda não está registado no site do programador do módulo.';
 $string['novaliddefaultcolour'] = 'Nenhuma cor válida foi definida para cor predefinida do mosaico';
 $string['numberofsections'] = 'Número de secções na disciplina';
 $string['numbers'] = 'Números';
@@ -326,6 +323,8 @@ $string['privacypolicy'] = 'Politica de privacidade';
 $string['problemcourses'] = 'Disciplina com erros';
 $string['problemcoursesintro'] = 'As seguintes disciplinas têm números de secção maiores do que o esperado. Use os botões abaixo para resolver os problemas.';
 $string['progress'] = 'Progresso';
+$string['progressincludesubsections'] = 'Indicador de progresso - incluir dados de subsecção?';
+$string['progressincludesubsections_desc'] = 'O indicador de progresso de um mosaico deve incluir dados de progresso das atividades dentro das suas subsecções?';
 $string['progresstitle'] = '{$a->numComplete} / {$a->numOutOf} itens concluídos ({$a->percent}%)';
 $string['reactivate'] = 'Reativar';
 $string['reopenlastsection'] = 'Reabrir o último mosaico visitado';
@@ -340,7 +339,6 @@ $string['restorefailed'] = 'Restaurar falhas';
 $string['restoreincorrectsections'] = 'Erro: não foi possível concluir porque a disciplina de origem contém secções numeradas incorretamente (por exemplo, o número da secção ({$a->sectionnum}) é maior do que o máximo permitido ({$a->maxallowed}, conforme definido configuração de administração \'moodlecourse | maxsection\'). Tente apagar ou excluir as secções com os números mais altos.';
 $string['restoretoomanysections'] = 'Erro: Não é possível fazer cópia de segurança ou restaurar porque estão incluídas muitas secções da disciplina ({$a->numsections}) o que é superior ao que é permitido ({$a->maxallowed}). Tente apagar ou excluir algumas secções.';
 $string['revealcontents'] = 'Mostrar conteúdo';
-$string['scheduleddeleteemptysections'] = 'Foi agendada uma tarefa para apagar secções vazias da disciplina. Por favor, volte mais tarde.';
 $string['section0name'] = 'Geral';
 $string['sectionerrorstring'] = 'A sua sessão pode ter expirado. Tente atualizar esta página.';
 $string['sectionerrortitle'] = 'Erro ao carregar conteúdo';
@@ -405,7 +403,5 @@ $string['usejsnavforsinglesection'] = 'Usar navegação JS na página de secçã
 $string['usejsnavforsinglesection_desc'] = 'Se ativar esta opção, qualquer chamada para uma página de secção única (& secção = xx) será manipulada pelo Javascript, iniciando a página principal da disciplina animada para abrir na secção solicitada via JS, em vez de chamar a página de secção única do PHP no estilo antigo';
 $string['usesubtilesseczero'] = 'Usar sub-mosaicos na secção de topo';
 $string['usesubtilesseczero_help'] = 'Se ativar esta opção, na secção de topo da disciplina serão usados sub-mosaicos, bem como em todos os mosaicos. Apenas disponível se usar sub-mosaicos em toda a disciplina. Uma vez que os sub-mosaicos ocupam muito espaço no topo da disciplina, talvez seja melhor não ativar para que todos os itens da secção de topo possam ser mostrados no formato de lista normal.';
-$string['usetooltips'] = 'Usar dicas do JavaScript';
-$string['usetooltips_desc'] = 'Usar dicas do JavaScript quando o utilizador passa o rato sobre determinados itens, por exemplo, caixas de conclusão, mosaicos de conteúdos, etc.';
 $string['version'] = 'Versão {$a}';
 $string['width'] = 'largura';

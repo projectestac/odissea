@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'en', version '4.4'.
+ * Strings for component 'tool_oauth2', language 'en', version '4.5'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -93,15 +93,18 @@ $string['issuersetup'] = 'Detailed instructions on configuring the common OAuth 
 $string['issuersetuptype'] = 'Detailed instructions on setting up the {$a} OAuth 2 provider';
 $string['issuershowonloginpage'] = 'Show on login page';
 $string['issuershowonloginpage_help'] = 'If the OAuth 2 authentication plugin is enabled, this login issuer will be listed on the login page to allow users to log in with accounts from this issuer.';
+$string['issuersmtpsystememail'] = 'SMTP email';
+$string['issuersmtpsystememail_help'] = 'If specified, this email will be used to connect a system account for sending email via SMTP. This is required for some OAuth 2 services (e.g. Microsoft). Please check the documentation for your OAuth 2 service to see if this is required.';
 $string['issuersservicesallow'] = 'Allow services';
 $string['issuersservicesnotallow'] = 'Do not allow services';
 $string['issuerusedforinternal'] = 'Internal services';
 $string['issuerusedforlogin'] = 'Login';
 $string['issuerusein'] = 'This service will be used';
-$string['issuerusein_help'] = 'OAuth 2 services can be used for internal services, on the login page, or both, if required.';
+$string['issuerusein_help'] = 'OAuth 2 services can be used for internal services, on the login page, SMTP with XOAUTH2, or both login page and internal services, if required.';
 $string['issueruseineverywhere'] = 'Login page and internal services';
 $string['issueruseininternalonly'] = 'Internal services only';
 $string['issueruseinloginonly'] = 'Login page only';
+$string['issueruseinsmtpwithoauth'] = 'SMTP with XOAUTH2 only';
 $string['linkedin_service'] = 'LinkedIn';
 $string['logindisplay'] = 'Display on login page as';
 $string['loginissuer'] = 'Allow login';

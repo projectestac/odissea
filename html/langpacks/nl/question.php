@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'nl', version '4.4'.
+ * Strings for component 'question', language 'nl', version '4.5'.
  *
  * @package     question
  * @category    string
@@ -311,7 +311,6 @@ $string['nocate'] = 'Geen categorie {$a}!';
 $string['noconditionspecified'] = 'Geef een voorwaarde op';
 $string['nopermissionadd'] = 'Je hebt het recht niet om hier vragen toe te voegen.';
 $string['nopermissionedit'] = 'Je hebt het recht niet om vragen vanaf hier te bewerken.';
-$string['nopermissionmove'] = 'Je hebt het recht niet om vragen van hieruit te verplaatsen. Je moet de vraag in deze categorie bewaren of ze bewaren als nieuwe vraag.';
 $string['noprobs'] = 'Er zijn geen problemen gevonden in je vragendatabank.';
 $string['noquestionbanks'] = 'Geen vraagbank-plug-in gevonden.';
 $string['noquestions'] = 'Er zijn geen vragen gevonden die geëxporteerd kunnen worden. Zorg ervoor dat en een categorie geselecteerd die vragen bevat om te exporteren.';
@@ -400,7 +399,11 @@ $string['questionbehavioursorderexplained'] = 'Geef een komma gescheiden lijst v
 $string['questioncategories'] = 'Vraagcategorieën';
 $string['questioncategory'] = 'Vraagcategorie';
 $string['questioncatsfor'] = 'Vragencategorieën voor \'{$a}\'';
+$string['questiondefaultssave'] = 'Bewaar vraagopties als standaard gebruikersvoorkeuren';
+$string['questiondefaultssave_desc'] = 'Of vraagopties zoals \'Standaardcijfer\', \'Een of meer antwoorden?\' en dergelijke bewaard moeten worden als gebruikersvoorkeuren wanneer het vragen bewerkformulier wordt ingestuurd? Hierdoor worden deze instellingen gebruikt wanneer de gebruiker de volgende keer een vraag bewerkt.';
 $string['questiondoesnotexist'] = 'Deze vraag bestaat niet.';
+$string['questionediting'] = 'Vraag bewerken';
+$string['questionediting_desc'] = 'Deze instellingen zijn van toepassing op de formulieren om vragen te bewerken.';
 $string['questionformtagheader'] = '{$a} tags';
 $string['questionidmismatch'] = 'Vraag ID\'s komen niet overeen';
 $string['questionloaderror'] = 'Kan de vraagopties niet laden.';

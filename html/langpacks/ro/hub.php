@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'ro', version '4.4'.
+ * Strings for component 'hub', language 'ro', version '4.5'.
  *
  * @package     hub
  * @category    string
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activeparticipantnumberaverage'] = 'Numărul mediu de participanți activi recent ({$a})';
 $string['activeusersnumber'] = 'Numărul de utilizatori activi recent ({$a})';
+$string['aiusagestats'] = 'Statisticile utilizării AI ({$a->timefrom} - {$a->timeto})';
 $string['analyticsactions'] = 'Numărul de acțiuni întreprinse cu privire la predicțiile generate ({$a})';
 $string['analyticsactionsnotuseful'] = 'Numărul de acțiuni care marchează o predicție ca nefolositoare ({$a})';
 $string['analyticsenabledmodels'] = 'Numărul de modele de predicție activate ({$a})';
@@ -92,6 +93,7 @@ $string['nohubselected'] = 'Nu a fost selectat niciun hub';
 $string['none'] = 'Nici unul';
 $string['operation'] = 'Acțiuni';
 $string['participantnumberaverage'] = 'Numărul mediu de participanți ({$a})';
+$string['pluginusagedata'] = 'Datele de utilizare a plugin-ului colectate din: <a href="{$a->overview}">Plugins overview</a>, <a href="{$a->activities}">Manage activities</a>, and <a href="{$a->blocks}">Manage blocks</a>';
 $string['policyagreed'] = 'Notificare de confidențialitate și acord de prelucrare a datelor';
 $string['policyagreeddesc'] = 'Sunt de acord cu <a href="{$a}" target="_blank"> Notificarea privind confidențialitatea și acordul de prelucrare a datelor </a>';
 $string['postaladdress'] = 'Adresă poștală';
@@ -113,8 +115,8 @@ $string['registerwithmoodleorginfo'] = 'Ne dorim să rămânem conectați și s�
 * Contribuiți la statisticile noastre Moodle ale comunității mondiale, care ne ajută să îmbunătățim Moodle și site-urile comunității noastre.
 * Dacă doriți, site-ul dvs. poate fi inclus în lista site-urilor Moodle înregistrate din țara dvs.';
 $string['registerwithmoodleorginfoapp'] = 'Despre aplicația mobilă Moodle';
-$string['registerwithmoodleorginfosites'] = 'Alte site-uri din țara mea';
-$string['registerwithmoodleorginfostats'] = 'Statistici Moodle';
+$string['registerwithmoodleorginfosites'] = 'Descoperă alte site-uri din țara mea';
+$string['registerwithmoodleorginfostats'] = 'Vezi statisticile Moodle globale';
 $string['registerwithmoodleorgremove'] = 'Veți anula înregistrarea site-ului dvs. Dacă continuați, nu veți mai avea acces la notificări importante și alerte de securitate. Utilizatorii dvs. nu vor putea primi notificări push de pe site-ul dvs. în aplicația lor mobilă Moodle. Sigur doriți să vă anulați înregistrarea site-ului?';
 $string['registerwithmoodleorgupdate'] = 'Actualizați înregistrarea site-ului dvs.';
 $string['registrationconfirmed'] = 'Înregistrarea site-ului este confirmată';
@@ -147,6 +149,27 @@ $string['sitelang'] = 'Limbă';
 $string['sitelang_help'] = 'Care este limba principală utilizată pe site-ul dvs. Moodle?';
 $string['sitename'] = 'Nume';
 $string['sitename_help'] = 'Numele site-ului va fi afişat pe listarea site-urilor în cazul în care hub-ul permite acest lucru.';
+$string['siteorganisationtype'] = 'Tipul organizației';
+$string['siteorganisationtype:charityornotforprofit'] = 'Caritabilă sau Non-Profit';
+$string['siteorganisationtype:charterschool'] = 'Școală generală';
+$string['siteorganisationtype:college'] = 'Colegiu';
+$string['siteorganisationtype:collegedepartment'] = 'Departamentul al facultății';
+$string['siteorganisationtype:commercialcourseprovider'] = 'Furnizor comercial de cursuri';
+$string['siteorganisationtype:companydepartment'] = 'Departament al companiei';
+$string['siteorganisationtype:companyinternal'] = 'Intern companiei';
+$string['siteorganisationtype:donotshare'] = 'Nu partaja';
+$string['siteorganisationtype:government'] = 'Guvern';
+$string['siteorganisationtype:highschool'] = 'Liceu';
+$string['siteorganisationtype:highschooldepartment'] = 'Departament al istoriei';
+$string['siteorganisationtype:highschooldistrict'] = 'Liceu';
+$string['siteorganisationtype:hospital'] = 'Spital';
+$string['siteorganisationtype:independentteacher'] = 'Profesor independent';
+$string['siteorganisationtype:other'] = 'Altele';
+$string['siteorganisationtype:primaryschool'] = 'Școala primară';
+$string['siteorganisationtype:schooldistrict'] = 'District școlar';
+$string['siteorganisationtype:universitydepartment'] = 'Departament al universității';
+$string['siteorganisationtype:wholeuniversity'] = 'Toată universitatea';
+$string['siteorganisationtype_help'] = 'Prin menționarea tipului organizației dumneavoastră ne veți ajuta să înțelegem mai bine tipurile de organizații care folosesc Moodle și nevoile acestora.';
 $string['sitephone'] = 'Telefon';
 $string['sitephone_help'] = 'Numărul dvs. de telefon va fi vizibil numai de către administratorul hub-ului.';
 $string['siteprivacy'] = 'Listarea site-ului';

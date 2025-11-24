@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'ja', version '4.4'.
+ * Strings for component 'format_topcoll', language 'ja', version '4.5'.
  *
  * @package     format_topcoll
  * @category    string
@@ -65,7 +65,6 @@ $string['groundsignal'] = '信号機';
 $string['hidefromothers'] = 'トピックを隠す';
 $string['instructions'] = '解説 : セクション名をクリックすることでセクションを展開したり折りたたんだりすることができます。';
 $string['led'] = 'LED (発光ダイオード)';
-$string['numbersections'] = 'セクション数';
 $string['one'] = '1列';
 $string['onesection'] = '拡げるセクションを最大1つに限定';
 $string['pluginname'] = '折り畳み型トピック';

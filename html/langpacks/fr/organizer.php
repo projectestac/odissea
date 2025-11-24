@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'organizer', language 'fr', version '4.4'.
+ * Strings for component 'organizer', language 'fr', version '4.5'.
  *
  * @package     organizer
  * @category    string
@@ -171,6 +171,7 @@ $string['btn_editsingle'] = 'Modifier ce créneau';
 $string['btn_eval'] = 'Finaliser les créneaux sélectionnés';
 $string['btn_eval_short'] = 'Finaliser';
 $string['btn_evalsingle'] = 'Finaliser ce créneau';
+$string['btn_exportics'] = 'Exporter l\'emplacement sélectionné sous forme de fichier ICS';
 $string['btn_print'] = 'Imprimer les créneaux sélectionnés';
 $string['btn_printsingle'] = 'Imprimer ce créneau';
 $string['btn_queue'] = 'Mettre en attente';
@@ -283,29 +284,26 @@ $string['edit_notify_student:group:smallmessage'] = 'Le rendez-vous de groupe {$
 $string['edit_notify_student:group:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Rendez-vous modifié';
 $string['edit_notify_student:smallmessage'] = 'Le rendez-vous {$a->sendername} ({$a->courseid} {$a->coursefullname}) le {$a->date} a été modifié.';
 $string['edit_notify_student:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Rendez-vous modifié';
-$string['edit_notify_teacher:fullmessage'] = 'Bonjour {$a->receivername},
+$string['edit_notify_teacher:fullmessage'] = 'Bonjour {$a->receivername} !
 
-{$a->sendername} ({$a->courseid} {$a->coursefullname}) a modifié  le créneau du {$a->date} à {$a->time}.
+Dans le cadre du cours {$a->courseid} {$a->coursefullname}, les détails du créneau horaire du {$a->date} à {$a->time} ont été modifiés par {$a->sendername}.
 
-Voici le nouveau créneau :
-Organisateur(s) : {$a->slot_teacher}
+Enseignant(s) : {$a->slot_teacher}
 Lieu : {$a->slot_location}
-Nombre max. de participants: {$a->slot_maxparticipants}
-Commentaires:
-{$a->slot_comments}
+Nombre maximum de participants : {$a->slot_maxparticipants}
+Commentaires : {$a->slot_comments}
 
---- Ceci est un message généré par un automate, merci de ne pas y répondre. Pour plus de renseignement, contacter un organisateur ---';
-$string['edit_notify_teacher:group:fullmessage'] = 'Bonjour {$a->receivername},
+Le système de messagerie Moodle';
+$string['edit_notify_teacher:group:fullmessage'] = 'Bonjour {$a->receivername} !
 
-Concernant {$a->courseid} {$a->coursefullname}, {$a->sendername} a modifié le créneau du {$a->date} à {$a->time}.
+Dans le cadre du cours {$a->courseid} {$a->coursefullname}, les détails du créneau horaire du {$a->date} à {$a->time} ont été modifiés par {$a->sendername}.
 
-Organisateur(s) : {$a->slot_teacher}
+Enseignant(s) : {$a->slot_teacher}
 Lieu : {$a->slot_location}
-Nombre max. de participants: {$a->slot_maxparticipants}
-Commentaires:
-{$a->slot_comments}
+Nombre maximum de participants : {$a->slot_maxparticipants}
+Commentaires : {$a->slot_comments}
 
---- Ceci est un message généré par un automate, merci de ne pas y répondre. Pour plus de renseignement, contacter un organisateur ---';
+Le système de messagerie Moodle';
 $string['edit_notify_teacher:group:smallmessage'] = '{$a->sendername} a modifié le créneau du {$a->date} à {$a->time}.';
 $string['edit_notify_teacher:group:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Rendez-vous modifié';
 $string['edit_notify_teacher:smallmessage'] = '{$a->sendername} a modifié le créneau du {$a->date} à {$a->time}.';
@@ -397,6 +395,8 @@ $string['eventtemplatewithoutlinks'] = '{$a->coursename} / {$a->organizername} :
 $string['eventtitle'] = '{$a->coursename} / {$a->organizername}: {$a->appwith}';
 $string['eventwith'] = 'avec';
 $string['eventwithout'] = 'sans';
+$string['exportics'] = 'Export ICS';
+$string['exporticsaction'] = 'export ICS';
 $string['exportsettings'] = 'Exporter les réglages';
 $string['filtertable'] = '« Recherche dans cette table »';
 $string['filtertable_help'] = 'Rechercher ces créneaux pour les chaînes communes ici.';
@@ -497,8 +497,9 @@ $string['groupmodenogroups'] = 'Pas de rendez-vous de groupe';
 $string['groupmodeslotgroups'] = 'Création de groupe par créneau vide';
 $string['groupmodeslotgroupsappointment'] = 'Création de groupe par créneau réservée';
 $string['groupoptions'] = 'Réglages de groupe';
-$string['grouporganizer_desc_hasgroup'] = 'Ceci est un agenda de groupe. Lorsque vous cliquerez sur le bouton d’inscription vous vous inscrirez avec tous les participants de votre groupe {$a->groupname} dans ce créneau. Tous les participants du groupe peuvent modifier et commenter l’inscription.';
+$string['grouporganizer_desc'] = 'Il s\'agit d\'une organisation de groupe.';
 $string['grouporganizer_desc_novalidgroup'] = 'Ceci est un agenda de groupe. Vous n’êtes pas membre du groupe invité dans cet agenda.';
+$string['grouporganizer_desc_participant'] = 'Il s\'agit d\'une organisation de groupe. En cliquant sur le bouton « S\'inscrire », vous vous inscrivez, ainsi que tous les membres de votre groupe {$a->groupname}, à cette session. Tous les membres du groupe peuvent modifier et commenter l\'inscription.';
 $string['grouppicker'] = 'Choix du groupe';
 $string['groupwarning'] = 'Vérifiez les options de groupe ci-dessous.';
 $string['headerfooter'] = 'Imprimer les en-tête et pied de page';
@@ -688,6 +689,8 @@ $string['nofreeslots'] = 'Aucun créneau disponible.';
 $string['nogroup'] = 'Aucun groupe';
 $string['nolocationplaceholder'] = '[TBD]';
 $string['noparticipants'] = 'Aucun participant';
+$string['noreregistrations'] = 'Aucune réinscription après la date limite';
+$string['noreregistrations_help'] = 'Si un créneau réservé a atteint la date limite, il ne peut plus faire l\'objet d\'une nouvelle inscription.';
 $string['norightpage'] = 'Vous n’avez pas le droit d’accès à cette page.';
 $string['nosingleslotprintfields'] = 'L’impression n’est pas possible. Aucun champ utilisateur n’est défini. Voir les paramètres de l’agenda.';
 $string['noslots'] = 'Pas de créneau pour';
@@ -902,7 +905,7 @@ $string['singleslotprintfield'] = 'Champ de profil';
 $string['singleslotprintfield0'] = 'Champ de profil';
 $string['singleslotprintfield0_help'] = 'Ces champs utilisateur sont utilisés pour chaque étudiant lorsqu’un seul créneau est imprimé.';
 $string['singleslotprintfields'] = 'Champs de profil utilisateur à inclure dans les informations';
-$string['singleslotprintfields_help'] = 'TEXTE FACTICE - doit être modifié avec plus d’informations sur les champs de profil et comment ils sont contrôlés par un paramètre d’administration';
+$string['singleslotprintfields_help'] = 'Dans cette section, vous définissez les champs personnels supplémentaires à imprimer pour chaque participant lors de l\'impression d\'un créneau unique.';
 $string['slot'] = 'Rendez-vous';
 $string['slot_anonymous'] = 'Créneau anonyme';
 $string['slot_slotvisible'] = 'Les participants ne sont visibles que s’ils sont dans leur propre créneau.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'es', version '4.4'.
+ * Strings for component 'bigbluebuttonbn', language 'es', version '4.5'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -41,6 +41,7 @@ $string['bigbluebuttonbn:join'] = 'Unirse a una sala de BigBlueButton';
 $string['bigbluebuttonbn:managerecordings'] = 'Gestionar grabaciones';
 $string['bigbluebuttonbn:protectrecordings'] = 'Proteger grabaciones';
 $string['bigbluebuttonbn:publishrecordings'] = 'Publicar grabaciones';
+$string['bigbluebuttonbn:seepresentation'] = 'Ver siempre el archivo de presentación en la página de la actividad';
 $string['bigbluebuttonbn:unprotectrecordings'] = 'Desproteger grabaciones';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'Cancelar la publicación de grabaciones';
 $string['bigbluebuttonbn:view'] = 'Ver sala BigBlueButton';
@@ -199,6 +200,10 @@ $string['config_server_url'] = 'URL del servidor BigBlueButton';
 $string['config_server_url_description'] = 'La URL de su servidor BigBlueButton';
 $string['config_shared_secret'] = 'Clave secreta de BigBlueButton';
 $string['config_shared_secret_description'] = 'La clave de seguridad de su servidor BigBlueButton.';
+$string['config_showpresentation_default'] = 'Mostrar archivo de presentación en la página de la actividad';
+$string['config_showpresentation_default_description'] = '¿Deberían poder acceder los estudiantes al archivo de la presentación antes de la sesión? Este ajuste no tiene efecto en usuarios con el permiso "Ver siempre el archivo de presentación en la página de la actividad".';
+$string['config_showpresentation_editable'] = 'Opción "Ver siempre el archivo de presentación en la página de la actividad"';
+$string['config_showpresentation_editable_description'] = 'Opción en los ajustes de la actividad para que los docentes elijan mostrar (o no) el archivo de presentación a los estudiantes.';
 $string['config_uidelegation_enabled'] = 'La delegación de interfaz de usuario está habilitada';
 $string['config_uidelegation_enabled_description'] = 'Esta configuración habilita o deshabilita la delegación de interfaz de usuario al servidor de BigBlueButton.';
 $string['config_userlimit'] = 'Límite de usuarios';
@@ -370,6 +375,7 @@ $string['mod_form_field_recordings_html'] = 'Mostrar la tabla en HTML plano';
 $string['mod_form_field_recordings_imported'] = 'Mostrar solo enlaces importados';
 $string['mod_form_field_recordings_preview'] = 'Mostrar vista previa de grabación';
 $string['mod_form_field_room_name'] = 'Nombre de la sala';
+$string['mod_form_field_showpresentation'] = 'Mostrar archivo de presentación en la página de la actividad';
 $string['mod_form_field_userlimit'] = 'Límite de usuarios';
 $string['mod_form_field_userlimit_help'] = 'Límite máximo de usuarios permitidos en una reunión. Si el límite está a 0 el número de usuarios será ilimitado.';
 $string['mod_form_field_voicebridge'] = 'Puente de voz [####]';

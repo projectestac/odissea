@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'de', version '4.4'.
+ * Strings for component 'scorm', language 'de', version '4.5'.
  *
  * @package     scorm
  * @category    string
@@ -39,6 +39,7 @@ $string['aiccuserid'] = 'Nutzer-ID für AICC verwenden';
 $string['aiccuserid_desc'] = 'Der AICC-Standard für Nutzernamen ist sehr restriktiv und erlaubt ausschließlich alphanumerische Zeichen und die Sonderzeichen Bindestrich und Unterstrich. Punkte, Leerzeichen und das Symbol @ sind nicht zugelassen.
 Wenn diese Option aktiviert ist, werden die Nutzer-ID-Nummern an das AICC-Lernpaket übergeben und nicht die Anmeldenamen.';
 $string['aliasonly'] = 'Wenn eine imsmanifest.xml-Datei aus einem Repository ausgewählt wird, muss für diese Datei ein Alias/Shortcut verwendet werden.';
+$string['allattempts'] = 'Alle Lernpaket-Versuche';
 $string['allowapidebug'] = 'API debug und tracing aktivieren (Capture Maske mit apidebumask einrichten)';
 $string['allowtypeaicchacp'] = 'Externe AICC HACP aktivieren';
 $string['allowtypeaicchacp_desc'] = 'Die Aktivierung ermöglicht AICC HACP die externe Kommunikation ohne ein Nutzerlogin zu benötigen, um Anfragen des externen AICC Pakets zu verarbeiten.';
@@ -61,7 +62,7 @@ $string['attemptstatusmy'] = 'Nur Dashboard';
 $string['attemptsx'] = '{$a} Versuche';
 $string['attr_error'] = 'Falscher Wert für das Attribut ({$a->attr}) im Tag {$a->tag}';
 $string['autocommit'] = 'Automatisch übernehmen';
-$string['autocommit_help'] = 'Die Option legt fest, ob SCORM-Daten automatisch in der Datenbank gespeichert werden. Dies ist hilfreich für SCORM-Objekte, die ihre Daten nicht regelmäßig speichern.';
+$string['autocommit_help'] = 'Die Option legt fest, ob Lernpaket-Daten automatisch in der Datenbank gespeichert werden. Dies ist hilfreich für Lernpaket-Objekte, die ihre Daten selber nicht regelmäßig speichern.';
 $string['autocommitdesc'] = 'SCORM-Daten automatisch speichern, wenn sie nicht vom Lernpaket gespeichert werden.';
 $string['autocontinue'] = 'Automatisch fortsetzen';
 $string['autocontinue_help'] = 'Wenn die Option aktiviert ist, wird nach dem Bearbeiten eines Lernobjekts automatisch das nächste verfügbare Lernobjekt aufgerufen. Andernfalls muss eine Taste \'Weiter\' benutzt werden.';

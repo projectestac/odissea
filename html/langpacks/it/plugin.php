@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'it', version '4.4'.
+ * Strings for component 'plugin', language 'it', version '4.5'.
  *
  * @package     plugin
  * @category    string
@@ -53,6 +53,8 @@ $string['err_response_format_version'] = 'Formato del response inatteso. Per fav
 $string['err_response_http_code'] = 'Non è stato possibile ottenere i dati sugli aggiornamenti - response HTTP inatteso.';
 $string['filterall'] = 'Visualizza tutto';
 $string['filtercontribonly'] = 'Visualizza solo i plugin aggiuntivi';
+$string['filtermissingonly'] = 'Visualizza solo mancanti sul disco';
+$string['filternewpluginsonly'] = 'Visualizza solo plugin da installare';
 $string['filterupdatesonly'] = 'Visualizza solo plugin aggiornabili';
 $string['incompatibleversion'] = 'Versione di Moodle non compatibile: {$a}';
 $string['isenabled'] = 'Abilita';
@@ -110,6 +112,10 @@ $string['status_uptodate'] = 'Installato';
 $string['supportedconversions'] = 'Conversioni di documenti supportate';
 $string['supportedmoodleversions'] = 'Versioni di Moodle supportate';
 $string['systemname'] = 'Identificativo';
+$string['type_aiplacement'] = 'Plugin posizionamento IA';
+$string['type_aiplacement_plural'] = 'Plugin posizionamento IA';
+$string['type_aiprovider'] = 'Plugin provider IA';
+$string['type_aiprovider_plural'] = 'Plugin provider IA';
 $string['type_antivirus'] = 'Plugin antivirus';
 $string['type_antivirus_plural'] = 'Plugin antivirus';
 $string['type_auth'] = 'Metodo di autenticazione';
@@ -192,6 +198,8 @@ $string['type_repository'] = 'Repository';
 $string['type_repository_plural'] = 'Repository';
 $string['type_search'] = 'Motore di ricerca';
 $string['type_search_plural'] = 'Motori di ricerca';
+$string['type_smsgateway'] = 'Gateway SMS';
+$string['type_smsgateway_plural'] = 'Gateway SMS';
 $string['type_theme'] = 'Tema';
 $string['type_theme_plural'] = 'Temi';
 $string['type_tool'] = 'Tool amministrativo';

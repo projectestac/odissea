@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'ca', version '4.4'.
+ * Strings for component 'format_tiles', language 'ca', version '4.5'.
  *
  * @package     format_tiles
  * @category    string
@@ -30,7 +30,7 @@ $string['all'] = 'Tots';
 $string['allcomplete'] = 'Tot complet';
 $string['allowphototiles_desc'] = 'Si se selecciona aquesta opció, els professors podran pujar-hi una foto perquè serveixi com a fons del mosaic. Així mateix, podran continuar emprant icones estàndard dins el mateix curs. (Si no se selecciona aquesta opció, només es permetrà l\'ús d\'icones del mosaic, i s\'ignorarà la configuració següent de fotos de mosaic.)';
 $string['asfraction'] = 'Mostra\'l com una fracció';
-$string['aspercentagedial'] = 'Mostra\'l com un % dins un cercle';
+$string['aspercentagedial'] = 'Mostra\'l com a %';
 $string['basecolour'] = 'Color dels mosaics';
 $string['basecolour_help'] = 'El color que s\'estableixi aquí s\'aplicarà a tots els mosaics del curs.
 (L\'administrador del vostre lloc determina, a través de la pàgina de configuració del connector de Mosaics, quins colors hi haurà disponibles.)';
@@ -63,7 +63,6 @@ $string['displayfilterbar_help'] = '<p>Quan se selecciona aquesta opció, es mos
 $string['displayfilterbar_link'] = 'Outcomes';
 $string['displaytitle_mod_jpeg'] = 'Imartge';
 $string['displaytitle_mod_mp3'] = 'Àudio';
-$string['documentation'] = 'Documentació';
 $string['download'] = 'Baixa';
 $string['editsection'] = 'Edita el mosaic';
 $string['editsectionname'] = 'Edita el nom de la secció';

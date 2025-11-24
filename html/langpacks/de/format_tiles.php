@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'de', version '4.4'.
+ * Strings for component 'format_tiles', language 'de', version '4.5'.
  *
  * @package     format_tiles
  * @category    string
@@ -38,16 +38,17 @@ $string['alternativelink'] = 'Alternativer Link';
 $string['areyousure'] = 'Möchten Sie das wirklich?';
 $string['asfraction'] = 'Als Bruch anzeigen';
 $string['aspectratiotootallorwide'] = 'Das hochgeladene Bild wurde gespeichert. Überprüfen Sie bitte, ob es <strong>{$a->tallorwide}</strong> ist. Wenn es nicht richtig aussieht, schneiden Sie es auf die Standardgröße (z.B. 300x200 Pixel) im Querformat zu und laden Sie es erneut hoch.';
-$string['aspercentagedial'] = 'Mit % im Kreis anzeigen';
+$string['aspercentagedial'] = 'Als % anzeigen';
 $string['assumedatastoreconsent'] = 'Automatische Zustimmung zur lokalen Datenspeicherung';
 $string['assumedatastoreconsent_desc'] = 'Wenn diese Option ausgewählt ist, wird die Zustimmung zur lokalen Datenspeicherung im Browser automatisch gegeben. Den Nutzer/innen  wird <b>kein Dialog</b> angezeigt, in dem um eine Zustimmung zur Datenspeicherung gebeten wird.';
 $string['backupfailed'] = 'Sicherung fehlgeschlagen';
 $string['basecolour'] = 'Kachelfarbe';
 $string['basecolour_help'] = 'Die hier festgelegte Farbe wird für alle Kacheln im Kurs angewendet. Die verfügbaren Farben werden von den Administrator/innen in den Einstellungen des Kachelformats festgelegt.';
 $string['brandcolour'] = 'Markenfarbe';
+$string['cachedef_formatoptionelementids'] = 'Einfaches Array von Element-IDs mit festgelegten Formatoptionen, z.B. Kursabschnitt-IDs mit Fotos.';
+$string['cachedef_formatoptions'] = 'Werte-Array der Kursformatoptionen nach Element-ID, z.B. Fotodateinamen nach Kursabschnitts-ID.';
 $string['cachedef_modalcmids'] = 'Kursmodul-IDs (nach Kurs), die gestartet werden müssen';
 $string['cachedef_videocmids'] = 'Kursmodul-IDs (nach Kurs), die Videos sind (URLs, die auf YouTube oder Vimeo verweisen)';
-$string['canceltask'] = 'Task abbrechen';
 $string['changedcolour'] = 'Kachelfarbe für Kurs {$a} auf Standard zurückgesetzt';
 $string['checkforproblemcourses'] = 'Problemkurse prüfen und korrigieren';
 $string['clearphoto'] = 'Diese Kachel zurücksetzen';
@@ -125,9 +126,6 @@ $string['displaytitle_mod_ppt'] = 'PowerPoint-Präsentation';
 $string['displaytitle_mod_txt'] = 'Text';
 $string['displaytitle_mod_xls'] = 'Tabellenkalkulation';
 $string['displaytitle_mod_zip'] = 'Zip-Datei';
-$string['documentation'] = 'Dokumentation';
-$string['documentationurl'] = 'Link zur Dokumentation';
-$string['documentationurl_descr'] = 'Link zur Dokumentation des Kachelformats';
 $string['download'] = 'Download';
 $string['editoradvicesubtiles'] = 'In dieser Version des Kachelformats erscheinen die Aktivitäten nur als Unterkacheln, wenn Bearbeiten ausgeschaltet ist.';
 $string['editsection'] = 'Abschnitt bearbeiten';
@@ -268,7 +266,7 @@ $string['imagedeletedfrom'] = 'Bild gelöscht von "{$a}"';
 $string['imagesavedfor'] = 'Bild gesichert für \'{$a}\'';
 $string['imagesize'] = 'Bildgröße';
 $string['invalidsectionid'] = 'Ungültige Abschnitts-ID "{$a}"';
-$string['jsactivate'] = 'Animierte Navigation ausschalten';
+$string['jsactivate'] = 'Animierte Navigation';
 $string['jsdeactivated'] = 'Sie haben die animierte Navigation in Ihrem Konto deaktiviert.';
 $string['jsreactivated'] = 'Sie haben die animierte Navigation in Ihrem Konto aktiviert.';
 $string['legacytiledata'] = 'Anzahl von alten Kacheldaten';
@@ -293,7 +291,6 @@ $string['none'] = 'Keine';
 $string['noproblemsfound'] = 'Keine Probleme gefunden';
 $string['notcomplete'] = 'Nicht abgeschlossen';
 $string['notrecommended'] = 'Nicht empfohlen';
-$string['notregistered'] = 'Das Plugin \'Kachelformat\' ist bisher nicht bei den Entwickler/innen registriert.';
 $string['novaliddefaultcolour'] = 'Keine gültige Farbe für die unten stehende Standardkachelfarbe festgelegt';
 $string['numberofsections'] = 'Anzahl der Abschnitte im Kurs';
 $string['numbers'] = 'Zahlen';
@@ -330,6 +327,8 @@ $string['privacypolicy'] = 'Datenschutzrichtlinie';
 $string['problemcourses'] = 'Problemkurse';
 $string['problemcoursesintro'] = 'Die folgenden Kurse haben Abschnittsnummern, die größer sind als erlaubt. Verwenden Sie bitte die nachfolgenden Tasten, um die Fehler zu beheben.';
 $string['progress'] = 'Fortschritt';
+$string['progressincludesubsections'] = 'Fortschrittsanzeige - Daten aus Unterabschnitt einbeziehen?';
+$string['progressincludesubsections_desc'] = 'Soll die Fortschrittsanzeige einer Kachel Fortschrittsdaten von Aktivitäten innerhalb ihrer Unterabschnitte enthalten?';
 $string['progresstitle'] = '{$a->numComplete} / {$a->numOutOf} Elemente abgeschlossen ({$a->percent}%)';
 $string['reactivate'] = 'Reaktivieren';
 $string['reopenlastsection'] = 'Zuletzt besuchte Kachel wieder öffnen';
@@ -344,7 +343,6 @@ $string['restorefailed'] = 'Wiederherstellung fehlgeschlagen';
 $string['restoreincorrectsections'] = 'Fehler: Der Vorgang kann nicht abgeschlossen werden. Der Quellkurs enthält falsch nummerierte Abschnitte (möglicherweise ist die Abschnittsnummer ({$a->sectionnum}) höher als die maximal zulässige Anzahl den Kurseinstellungen der Website. Versuchen Sie, Abschnitte mit hohen Nummern auszuschließen oder zu löschen.';
 $string['restoretoomanysections'] = 'Fehler: Der Kurs kann nicht gesichert oder wiederhergestellt werden, da er zu viele Abschnitte enthält ({$a->numsections}) und dies mehr als zulässig ist ({$a->maxallowed}). Versuchen Sie, einige Abschnitte auszuschließen oder zu löschen.';
 $string['revealcontents'] = 'Kachelinhalt aufdecken';
-$string['scheduleddeleteemptysections'] = 'Die Task, leere Abschnitte aus dem Kurs zu löschen, wurde eingeplant. Versuchen Sie es bitte später noch einmal.';
 $string['section0name'] = 'Allgemeines';
 $string['sectionerrorstring'] = 'Ihre Sitzung ist möglicherweise abgelaufen. Versuchen Sie, diese Seite zu aktualisieren.';
 $string['sectionerrortitle'] = 'Fehler beim Laden von Inhalten';
@@ -410,7 +408,5 @@ $string['usejsnavforsinglesection'] = 'JavaScript-Navigation für einzelne Absch
 $string['usejsnavforsinglesection_desc'] = 'Wenn diese Option aktiviert ist, wird jeder Abschnittsaufruf (&section=xx) mithilfe von JavaScript verarbeitet. Die Kurshauptseite wird gestartet, um anschließend über JavaScript animiert den angeforderten Abschnitt zu öffnen.';
 $string['usesubtilesseczero'] = 'Unterkacheln im oberen Bereich verwenden';
 $string['usesubtilesseczero_help'] = 'Wenn diese Option ausgewählt ist, werden die Unterkacheln im oberen Bereich sowie in allen Kacheln verwendet. Nachteil ist, dass die Subkacheln viel Raum ganz oben einnehmen. Es kann besser sein, diese Option deaktiviert zu lassen, damit alle Elemente im oberen Abschnitt stattdessen im Standardlistenformat angezeigt werden.';
-$string['usetooltips'] = 'JavaScript Tooltipps anzeigen';
-$string['usetooltips_desc'] = 'JavaScript Tooltipps anzeigen. wenn Nutzer/innen bestimmte Elemente berühren, z.B. Bereiche für die Fertigstellung, Kacheln für den Kachelinhalt';
 $string['version'] = 'Version {$a}';
 $string['width'] = 'Breite';

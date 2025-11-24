@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'zh_cn', version '4.4'.
+ * Strings for component 'admin', language 'zh_cn', version '4.5'.
  *
  * @package     admin
  * @category    string
@@ -305,7 +305,7 @@ $string['configfullnamedisplay'] = '这个设置决定了姓名在显示时的�
 对于大多数单一语言网站而言，最简单的设置是 "firstname lastname（名 姓）"（在中文网站中则一般选择"语言"），但也可以选择完全隐藏姓氏。
 
 可用的占位符有：firstname、lastname、firstnamephonetic、lastnamephonetic、middlename 和 alternatename（名、姓、名拼音、姓拼音、中间名和别名）。';
-$string['configgeoipfile'] = 'GeoLite2 City二进制数据文件的位置。此文件不是Moodle发行版的一部分，必须从<a href="https://www.maxmind.com/">MaxMind</a>中单独获取。您可以购买商业版或使用免费版。你需要注册才能下载城市数据库文件，你可以在 <a href="https://dev.maxmind.com/geoip/geoip2/geolite2/" >https://dev.maxmind.com/geoip/geoip2/geolite2/</a>进行注册。注册并下载该文件后，将其解压到你服务器上的"{$a}"目录中。';
+$string['configgeoipfile'] = 'GeoIP City二进制数据文件的位置。此文件不是 Moodle 分发的一部分，必须从 <a href="https://www.maxmind.com/">MaxMind 中独立获取</a>。您可以购买商业版本或使用免费版本。您需要注册才能下载城市数据库，您可以在 <a href="https://dev.maxmind.com/geoip/geoip2/geolite2/" >https://dev.maxmind.com/geoip/geoip2/geolite2/</a> 执行此操作。注册并下载文件后，将其解压缩到服务器上的"{$a}"目录中。';
 $string['configgetremoteaddrconf'] = '如果您的服务器在一个反向代理后，您可以设定此项以确定哪条 HTTP 头信息包含了访问者的 IP 地址。头信息按顺序读入，第一条出现的将被使用。';
 $string['configgradebookroles'] = '此设置允许您控制谁可以出现在成绩单上。用户至少需要在课程中具有这里的一种角色，才会在该课程的成绩单中显示他的成绩。';
 $string['configgradeexport'] = '选择用哪种成绩薄导出格式做为主要格式。被选择的插件将设置和使用每个成绩的“最近导出”字段。例如，已导出的记录可以被标记为“新的”或者“已更新的”。如果您不能确定该如何设置，就什么都别选。';
@@ -718,7 +718,13 @@ $string['fullnamedisplay'] = '全称格式';
 $string['fullnamedisplayprivate'] = '全名格式 - 私人的';
 $string['gdrequired'] = 'Moodle 现在需要 GD 扩展来做图片转换。';
 $string['generalsettings'] = '一般设置';
-$string['geoipfile'] = 'GeoLite2城市MaxMind数据文件';
+$string['geoipdbedition'] = 'GeoIP数据库版本';
+$string['geoipdbedition_desc'] = '选择要下载的GeoIP数据库版本。请注意，使用GeoIP2-City数据库需要有效的付费许可证。';
+$string['geoipfile'] = 'GeoIP城市数据库';
+$string['geoipmaxmindaccid'] = 'MaxMind 账户 ID';
+$string['geoipmaxmindaccid_desc'] = '在MaxMind API服务中创建的账户ID。';
+$string['geoipmaxmindlicensekey'] = 'MaxMind 许可证密钥';
+$string['geoipmaxmindlicensekey_desc'] = '在MaxMind API服务上创建的账户的许可证密钥。';
 $string['getremoteaddrconf'] = '被记录的IP地址来源于';
 $string['globalsearch'] = '全局搜索';
 $string['globalsearchmanage'] = '管理全局搜索';
@@ -780,6 +786,10 @@ $string['httpsecurity'] = 'HTTP安全';
 $string['iconvrequired'] = '必须安装ICONV扩展';
 $string['igbinary322buggyversion'] = '安装在站点上的 php-igbinary 扩展在使用 PHP 7.2 运行时可能会导致问题。 建议您升级到 php-igbinary 3.2.5 或更高版本，或者升级到 PHP 7.3 或更高版本。';
 $string['ignore'] = '忽略';
+$string['importantupdates_content'] = '<p>计划在2025年4月发布的下一个Moodle 5.0中，聊天和调查活动将从核心Moodle中删除。它们将作为插件在
+<a href="https://moodle.org/plugins/">Moodle插件目录</a>.</p>
+<p>如果您希望继续在您的网站中使用Chat或Survey，您可以在升级到Moodle 5.0之前将它们作为插件安装。</p>';
+$string['importantupdates_title'] = '关于聊天和调查活动的重要更新';
 $string['includemoduleuserdata'] = '包括模块用户数据';
 $string['incompatibleblocks'] = '不兼容的版块';
 $string['incompleteunicodesupport'] = 'MySQL 或 MariaDB 的配置默认使用 “utf8”。这一字符集不支持四字节的字符(它包含某些表情符号)。若尝试使用这些字符，将会在更新记录时导致错误，而且送到数据库的任何信息将会缺失。
@@ -799,9 +809,10 @@ $string['ipblocked'] = '本站现在不可访问。';
 $string['ipblocker'] = 'IP封禁器';
 $string['ipblockersyntax'] = '将每个条目放在一行。有效的条目是完整的IP地址（如 <b>192.168.10.1</b>），它与单个主机相匹配；或部分地址（如<b>192.168</b>），它与任何以这些数字开始的地址相匹配；或CIDR符号（如 <b>231.54.211.0/20</b>）；或一个IP地址范围（如 <b>231.3.56.10-20</b>），该范围适用于地址的最后一部分。不支持文本域名（如 \'example.com\'）。空行和 "#"字符串后面的文字被忽略。';
 $string['iplookup'] = 'IP地址查找';
-$string['iplookupgeoplugin'] = '<a href="https://www.geoplugin.com">geoPlugin</a> 服务当前用于查找地理信息。要获得更准确的结果，建议安装MaxMind GeoLite数据库的本地副本。';
-$string['iplookupinfo'] = '默认情况下，Moodle使用免费的在线NetGeo（互联网地理数据库）服务器来查询IP地址的位置，不幸的是，这个数据库已经不再维护，可能会返回<em>非常不正确的</em>数据。建议安装MaxMind免费GeoLite2 City 数据库的本地副本<br/>IP地址位置显示在简单地图上或使用谷歌地图。请注意，您需要有一个Google帐户，并申请免费的Google Maps API密钥才能启用交互式地图。';
-$string['iplookupmaxmindnote'] = '该产品包括由MaxMind创建的GeoLite2数据，可通过 <a href="http://www.maxmind.com/">http://www.maxmind.com/</a>获取。';
+$string['iplookupgeoplugin'] = '<a href="https://www.geoplugin.com">geoPlugin</a> 服务目前用于查找地理信息。为了获得更准确的结果，我们建议安装 MaxMind GeoIP City 数据库的本地副本。';
+$string['iplookupinfo'] = '免费的在线 NetGeo 服务器用于查找 IP 地址位置。但是，数据库不再维护，并且可能会返回不正确的数据。建议从 MaxMind 安装 GeoIP 数据库的本地副本。<br />
+如果提供了 Google Maps API V3 密钥，则会使用 Google 地图显示 IP 地址位置。您需要一个 Google 帐户并申请 Google Maps API 密钥。如果未提供 Google Maps API V3 密钥，则使用 OpenStreetMap 显示 IP 地址位置。';
+$string['iplookupmaxmindnote'] = '该产品包括由MaxMind创建的GeoIPCity数据，可通过 <a href="http://www.maxmind.com/">http://www.maxmind.com/</a>获取。';
 $string['iscustomadminwarnings'] = '检测到你的网站使用了自定义的管理员目录。此功能已经不受支持并将会在Moodle4.2版本后删除。';
 $string['ishttpswarning'] = '已经检测到你的网站没有使用 HTTPS 来增加安全。强烈建议您将您的网站改用HTTPS 以增加安全性，并改进与其他系统的整合。';
 $string['keeptagnamecase'] = '保持标签名大小写';
@@ -834,15 +845,21 @@ $string['locationsettings'] = '位置设置';
 $string['locked'] = '已锁定';
 $string['lockoutduration'] = '帐号锁定期限';
 $string['lockoutduration_desc'] = '到设置的期限锁定的帐号自动解除锁定。';
-$string['lockoutemailbody'] = '因多次无效的登录尝试，你的用户名为 {$a->username}的帐号在 \'{$a->sitename}\'网站上已被锁定。
+$string['lockoutemailbody'] = '嗨{$a->firstname}，
 
-如需立即解锁帐号请访问以下地址：
+您在服务器"{$a->sitename}"上的用户名为 {$a->username}  的帐户
+在多次无效登录尝试后被锁定。
+
+要立即解锁帐户，请转到以下地址
 
 {$a->link}
 
-对于大多数邮件客户端，这儿会出现蓝色链接，你只需点击即可。如果点击无效，则需复制、粘帖地址到你的网页浏览器窗口顶部的地址栏里面。
+在大多数邮件程序中，这应该显示为蓝色链接
+您可以单击它。 如果这不起作用，
+然后将地址复制并粘贴到地址中
+Web 浏览器窗口顶部的行。
 
-如需帮助，请联系网站管理员，
+如果您需要帮助，请联系网站管理员，
 {$a->admin}';
 $string['lockoutemailsubject'] = '你在 {$a} 的账户被锁定';
 $string['lockouterrorunlock'] = '提供的帐号解锁信息无效。';
@@ -952,7 +969,6 @@ $string['moodlepartners'] = 'Moodle合作伙伴';
 $string['moodlepartners_help'] = '<p> Moodle 合作伙伴是Moodle HQ认证的服务提供商，为您组织的在线学习环境提供高质量的Moodle服务。</p> <a href =“https://moodle.com/about-partners/ “>关于我们的合作伙伴</a> <br /> <a href="https://moodle.com/partners">寻找合作伙伴</a>';
 $string['moodleservices'] = 'Moodle服务';
 $string['moodleservices_help'] = '通过使用这些Moodle服务，可确保您从Moodle学习环境中获得最佳效果：';
-$string['multilangforceold'] = '强制旧版的多语言语法：没有 class="multilang" 的&lt;span&gt; 和 &lt;lang&gt;';
 $string['mustenablestats'] = '本网站的统计功能还未开启。';
 $string['mycourses'] = '我的课程';
 $string['mydashboard'] = '系统缺省个人主页';
@@ -1185,8 +1201,8 @@ $string['registration_help'] = '注册后：
 *你会收到安全警告
 *你可以从你的网站激活移动应用推送通知
 *你会为我们的Moodle全球社区统计数据做出贡献';
-$string['registrationwarning'] = '您的网站还没有注册。';
-$string['registrationwarningcontactadmin'] = '此网站尚未注册。请告知您的管理员。';
+$string['registrationwarning'] = '切勿错过重要的更新和安全警报。';
+$string['registrationwarningcontactadmin'] = '此站点未注册。请让管理员注册网站，这样他们就不会错过重要的更新。';
 $string['releasenoteslink'] = '想更多了解此版本的 Moodle，请参考<a target="_new" href="{$a}">发行备忘录</a>。';
 $string['rememberuserlicensepref'] = '记住用户许可偏好';
 $string['rememberuserlicensepref_help'] = '如果启用，则在文件选择器中上载文件时，将预选用户选择的最后一个许可证。否则，将预选默认站点许可证。';
@@ -1366,6 +1382,7 @@ $string['stickyblockscourseview'] = '课程页';
 $string['stickyblocksduplicatenotice'] = '如果您增加到这的版块已经存在于单独的页面中时，它将会被复制。<br /> 复制的版块能够被编辑除了一些小的版块。';
 $string['stickyblocksmymoodle'] = '我的Moodle';
 $string['stickyblockspagetype'] = '要配置的页类型';
+$string['storedprogressbarcleanuptask'] = '存储的进度条清理任务';
 $string['strictformsrequired'] = '严格校验必填字段';
 $string['stripalltitletags'] = '删除所有活动名中的HTML标签';
 $string['supportandservices'] = '支持和服务';
@@ -1376,6 +1393,7 @@ $string['supportemailsubject'] = '站点支持请求-{$a}';
 $string['supportname'] = '技术支持';
 $string['supportpage'] = '支持链接';
 $string['suspenduser'] = '停用用户账号';
+$string['swaggerui'] = 'Moodle REST API UI （SwaggerUI）';
 $string['switchlang'] = '切换语言目录';
 $string['systempaths'] = '系统路径';
 $string['tablenosave'] = '在上面表格中所做的修改会被自动保存。';
@@ -1466,6 +1484,7 @@ $string['taskstatscron'] = '后台统计进程';
 $string['tasktagcron'] = '后台分类进程';
 $string['tasktempfilecleanup'] = '删除临时文件';
 $string['tasktype'] = '类型';
+$string['taskupdategeoip2file'] = '更新 GeoIP 文件';
 $string['tempdatafoldercleanup'] = '清除临时数据文件早于';
 $string['templates'] = '模板';
 $string['testoutgoingmailconf'] = '测试邮件发送的配置';

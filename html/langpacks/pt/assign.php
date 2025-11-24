@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'pt', version '4.4'.
+ * Strings for component 'assign', language 'pt', version '4.5'.
  *
  * @package     assign
  * @category    string
@@ -70,6 +70,18 @@ $string['assign:viewgrades'] = 'Ver notas';
 $string['assign:viewownsubmissionsummary'] = 'Ver o resumo da própria submissão';
 $string['assignfeedback'] = 'Módulo de feedback';
 $string['assignfeedbackpluginname'] = 'Módulo de feedback';
+$string['assignmentduedigesthtml'] = '<p>Olá {$a->firstname},</p>
+<p>Os seguintes trabalhos terminam o prazo <strong>{$a->duedate}</strong>.</p>
+{$a->digest}';
+$string['assignmentduedigestitem'] = '<strong>{$a->assignmentname}</strong> na disciplina {$a->coursename}<br/>
+<strong>Data limite: {$a->duetime}</strong><br/>
+<a href="{$a->url}" aria-label="Ir para {$a->assignmentname}">Ir para a atividade</a>';
+$string['assignmentduedigestsubject'] = 'Tem trabalhos com data limite dentro de 7 dias';
+$string['assignmentduesoonhtml'] = '<p>Olá {$a->firstname},</p>
+<p>O trabalho <strong>{$a->assignmentname}</strong> na disciplina {$a->coursename} atingirá a data limite brevemente.</p>
+<p><strong>Data limite: {$a->duedate}</strong></p>
+<p><a href="{$a->url}">Ir para a atividade</a></p>';
+$string['assignmentduesoonsubject'] = 'Data limite em {$a->duedate}: {$a->assignmentname}';
 $string['assignmentisdue'] = 'Já terminou o prazo para submeter trabalhos';
 $string['assignmentmail'] = '{$a->grader} submeteu feedback ao seu trabalho
 que submeteu na atividade \'{$a->assignment}\'
@@ -83,6 +95,12 @@ que submeteu na atividade \'<i>{$a->assignment}</i>\'.</p>
 $string['assignmentmailsmall'] = '{$a->grader} submeteu feedback
 ao seu trabalho que submeteu na atividade \'{$a->assignment}\'. Pode consultar o feedback na área do trabalho.';
 $string['assignmentname'] = 'Designação';
+$string['assignmentoverduehtml'] = '<p>Olá {$a->firstname},</p>
+<p><strong>{$a->assignmentname}</strong> na disciplina \'{$a->coursename}\' terminou o prazo <strong>{$a->duedate}</strong>.</p>
+<p>Ainda poderá submeter o seu trabalho {$a->cutoffsnippet}, mas será marcado como \'Atrasado\'.</p>
+<p><a href="{$a->url}">Ir para a atividade</a></p>';
+$string['assignmentoverduehtmlcutoffsnippet'] = '<strong>{$a->cutoffdate}</strong>';
+$string['assignmentoverduesubject'] = 'Atrasado: {$a->assignmentname}';
 $string['assignmentplugins'] = 'Trabalho';
 $string['assignmentsperpage'] = 'Número de trabalhos por página';
 $string['assignsubmission'] = 'Módulo de submissão';
@@ -92,18 +110,23 @@ $string['attemptheading'] = 'Tentativa {$a->attemptnumber}: {$a->submissionsumma
 $string['attempthistory'] = 'Tentativas anteriores';
 $string['attemptnumber'] = 'Número da tentativa';
 $string['attemptreopenmethod'] = 'Tentativas adicionais';
-$string['attemptreopenmethod_help'] = 'Esta configuração determina se o aluno pode realizar outras tentativas no trabalho. Para cada tentativa, a nota e o feedback são guardados e podem ser visualizados pelo professor e pelo aluno. As opções disponíveis são:
+$string['attemptreopenmethod_automatic'] = 'Automaticamente';
+$string['attemptreopenmethod_automatic_help'] = 'Após cada tentativa, será concedida mais uma tentativa automaticamente após a avaliação.';
+$string['attemptreopenmethod_help'] = 'Esta configuração determina como o aluno pode obter mais tentativas para realizar este trabalho. Em cada tentativa, a nota e o feedback são guardados e podem ser visualizados pelo professor e pelo aluno. As opções são:
 
-* Nunca - apenas é possível uma tentativa.
-* Manualmente -  um professor pode adicionar tentativas adicionais
-* Automaticamente até obter aproveitamento - são permitidas tentativas adicionais automaticamente até que o aluno obtenha a nota de aprovação definida nas configurações do trabalho.';
+* Manualmente -  Após cada tentativa, pode conceder a próxima através da página Submissões ou da página Avaliador.
+* Automaticamente - Após cada tentativa, a próxima será concedida automaticamente após a avaliação.
+* Automaticamente até aprovação - Após cada tentativa, a próxima será concedida automaticamente após a avaliação, até que o aluno obtenha a nota de aprovação.';
 $string['attemptreopenmethod_manual'] = 'Manualmente';
+$string['attemptreopenmethod_manual_help'] = 'Após cada tentativa, pode conceder a próxima através da página Submissões ou da página Avaliador.';
 $string['attemptreopenmethod_none'] = 'Nunca';
 $string['attemptreopenmethod_untilpass'] = 'Automaticamente até obter aproveitamento';
+$string['attemptreopenmethod_untilpass_help'] = 'Após cada tentativa, será concedida mais uma tentativa automaticamente após a avaliação, até que o aluno obtenha a nota de aprovação.';
 $string['attemptsettings'] = 'Configurações da tentativa';
 $string['availability'] = 'Disponibilidade';
 $string['back'] = 'Voltar';
 $string['backtoassignment'] = 'Voltar ao trabalho';
+$string['batchoperationaddattempt'] = 'Tentativa adicional';
 $string['batchoperationconfirmaddattempt'] = 'Permitir outra tentativa para as submissões selecionadas?';
 $string['batchoperationconfirmdownloadselected'] = 'Descarregar as submissões selecionadas?';
 $string['batchoperationconfirmgrantextension'] = 'Prolongar o prazo para todas as submissões selecionadas?';
@@ -113,18 +136,26 @@ $string['batchoperationconfirmreverttodraft'] = 'Reverter as submissões selecio
 $string['batchoperationconfirmsetmarkingallocation'] = 'Definir atribuição de avaliadores para todas as submissões selecionadas?';
 $string['batchoperationconfirmsetmarkingworkflowstate'] = 'Definir "Usar processo de avaliação" para todas as submissões selecionadas?';
 $string['batchoperationconfirmunlock'] = 'Desbloquear todos os trabalhos selecionados?';
-$string['batchoperationlock'] = 'bloquear trabalhos';
-$string['batchoperationreverttodraft'] = 'reverter submissões para “Trabalho em curso”';
+$string['batchoperationdownloadselected'] = 'Descarregar';
+$string['batchoperationgrantextension'] = 'Prolongar o prazo';
+$string['batchoperationlock'] = 'Bloquear';
+$string['batchoperationremovesubmission'] = 'Apagar';
+$string['batchoperationreverttodraft'] = 'Reverter para “Trabalho em curso”';
 $string['batchoperationsdescription'] = 'Com os selecionados, executar a ação:';
-$string['batchoperationunlock'] = 'desbloquear trabalhos';
+$string['batchoperationsetmarkingallocation'] = 'Atribuir avaliador';
+$string['batchoperationsetmarkingworkflowstate'] = 'Alterar o estado da avaliação';
+$string['batchoperationunlock'] = 'Desbloquear';
 $string['batchsetallocatedmarker'] = 'Definir avaliador atribuído a {$a} utilizador(es) selecionado(s).';
 $string['batchsetmarkingworkflowstateforusers'] = 'Definir processo de avaliação por estados para {$a} utilizador(es) selecionado(s).';
 $string['beginassignment'] = 'Iniciar trabalho';
 $string['blindmarking'] = 'Submissões anónimas';
 $string['blindmarking_help'] = 'As submissões anónimas ocultam a identidade dos alunos aos avaliadores. As configurações das submissões anónimas ficarão bloqueadas assim que um trabalho ou nota forem submetidos neste trabalho.';
-$string['blindmarkingenabledwarning'] = 'As \'Submissões anónimas\' estão ativadas nesta atividade. As notas não serão adicionadas à pauta até que as identidades dos alunos sejam reveladas através do menu de ação da avaliação.';
+$string['blindmarkingenabledwarning'] = 'As \'Submissões anónimas\' estão ativadas nesta atividade.';
+$string['blindmarkingnogradewarning'] = 'As \'Submissões anónimas\' estão ativadas nesta atividade. As notas não serão adicionadas à pauta até que as identidades dos alunos sejam reveladas através do menu "Ações".';
+$string['bulkactionsselection'] = 'Seleção de ações em massa';
 $string['cachedef_overrides'] = 'Informações da exceção para utilizador e para grupo';
 $string['calendardue'] = 'Termina o prazo de \'{$a}\'';
+$string['calendarextension'] = 'Já terminou o prazo de \'{$a}\' (prolongar prazo)';
 $string['calendargradingdue'] = 'Termina o prazo de avaliação de \'{$a}\'';
 $string['caneditsubmission'] = 'Pode editar a sua submissão após o limite de tempo ter expirado, mas será marcado como atrasado.';
 $string['changefilters'] = 'Alterar filtros';
@@ -159,11 +190,15 @@ $string['cutoffdate_help'] = 'Se ativar esta opção, não serão aceites submis
 $string['cutoffdatecolon'] = 'Data de fecho: {$a}';
 $string['cutoffdatefromdatevalidation'] = 'A data de fecho não pode ser anterior à data de início das submissões.';
 $string['cutoffdatevalidation'] = 'Data de fecho não pode ser anterior à data limite para submeter trabalhos.';
+$string['defaultgradescale'] = 'Escala de notas';
+$string['defaultgradescale_help'] = 'A escala de notas predefinida para os novos trabalhos. Estão disponíveis apenas escalas padrão.';
+$string['defaultgradetype'] = 'Tipo de nota';
+$string['defaultgradetype_help'] = 'O tipo de nota predefinido para os novos trabalhos.';
 $string['defaultlayout'] = 'Restaurar a estrutura predefinida';
 $string['defaultsettings'] = 'Configurações predefinidas do trabalho';
 $string['defaultsettings_help'] = 'Estas configurações definem as opções predefinidas para os trabalhos que criar futuramente.';
 $string['defaultteam'] = 'Grupo predefinido';
-$string['deleteallsubmissions'] = 'Apagar todas as submissões';
+$string['deleteallsubmissions'] = 'Todas as submissões';
 $string['description'] = 'Descrição';
 $string['disabled'] = 'Desativar';
 $string['downloadall'] = 'Descarregar todos os trabalhos';
@@ -189,7 +224,7 @@ $string['editsubmissionother'] = 'Editar submissão de {$a}';
 $string['enabled'] = 'Ativado';
 $string['enabletimelimit'] = 'Ativar trabalhos cronometrados';
 $string['enabletimelimit_help'] = 'Se ativar esta opção, poderá definir um limite de tempo na página das configurações do trabalho.';
-$string['errorgradechangessaveddetail'] = 'Ocorreu um erro ao guardar as alterações na nota e no feedback';
+$string['errorgradechangessaveddetail'] = 'As alterações na nota e no feedback não foram guardadas.';
 $string['errornosubmissions'] = 'Não existem trabalhos submetidos para descarregar';
 $string['errorquickgradingvsadvancedgrading'] = 'As notas não foram guardadas porque este trabalho está a usar um método de avaliação avançado.';
 $string['errorrecordmodified'] = 'As notas não foram guardadas porque alguém alterou um ou mais registos desde o momento em que acedeu à página.';
@@ -227,6 +262,8 @@ $string['expandreviewpanel'] = 'Expandir painel de revisão';
 $string['extensionduedate'] = 'Prolongamento do prazo';
 $string['extensionduedatecurrent'] = 'Data do prolongamento de prazo atual';
 $string['extensionduedatenone'] = 'Nenhum';
+$string['extensionduedaterange'] = 'Vários entre {$a->earliest} e {$a->latest}';
+$string['extensionduedatewithout'] = 'Utilizadores sem a prorrogação atual: {$a}';
 $string['extensionnotafterduedate'] = 'A data de prolongamento deve ser posterior à data limite';
 $string['extensionnotafterfromdate'] = 'A data de prorrogação deve ser posterior à data definida para iniciar a aceitação de trabalhos';
 $string['feedback'] = 'Feedback';
@@ -253,6 +290,7 @@ $string['feedbacksettings'] = 'Configurações do feedback do avaliador';
 $string['feedbacktypes'] = 'Tipos de feedback';
 $string['filesubmissions'] = 'Submissões de ficheiros';
 $string['filter'] = 'Filtro';
+$string['filterall'] = 'Todos';
 $string['filterdraft'] = 'Rascunho';
 $string['filtergrantedextension'] = 'Prazo prolongado';
 $string['filternone'] = 'Sem filtro';
@@ -263,6 +301,7 @@ $string['fixrescalednullgrades'] = 'Este trabalho contém algumas notas incorret
 $string['fixrescalednullgradesconfirm'] = 'Tem a certeza de que pretende corrigir as notas erradas? Todas as notas afetadas serão removidas. Isto pode afetar os totais da disciplina.';
 $string['fixrescalednullgradesdone'] = 'Notas corrigidas.';
 $string['gradeabovemaximum'] = 'A nota deve ser menor ou igual a {$a}.';
+$string['gradeactions'] = 'Ações da nota';
 $string['gradebelowzero'] = 'A nota deve ser maior ou igual a 0.';
 $string['gradebreakdown'] = 'Detalhe da nota';
 $string['gradecanbechanged'] = 'A nota pode ser alterada.';
@@ -309,6 +348,7 @@ $string['hidegrader_help'] = 'Se ativar esta opção, a identidade do utilizador
 Tenha em atenção que esta configuração não tem efeito na caixa de comentários na página de avaliação.';
 $string['hideshow'] = 'Mostrar/Ocultar';
 $string['inactiveoverridehelp'] = '* Esta exceção está inativa porque o acesso do utilizador à atividade é restrito. Pode ser devido às atribuições de papel ou de grupo, outras restrições de acesso ou a atividade está oculta.';
+$string['includesuspendedparticipants'] = 'Incluir participantes suspensos';
 $string['indicator:cognitivedepth'] = 'Compreensão do Trabalho';
 $string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno numa atividade de trabalho.';
 $string['indicator:cognitivedepthdef'] = 'Compreensão do Trabalho';
@@ -341,6 +381,7 @@ $string['markingallocation'] = 'Usar atribuição de avaliador';
 $string['markingallocation_help'] = 'Se ativar esta opção, os avaliadores podem ser atribuídos a determinados alunos - requer ativação do processo de avaliação.';
 $string['markinganonymous'] = 'Lançamento parcial das notas durante a avaliação anónima';
 $string['markinganonymous_help'] = 'Se ativado conjuntamente com Submissões anónimas e Processo de avaliação, permite o lançamento parcial das notas durante a avaliação anónima';
+$string['markingstate'] = 'Estado da avaliação';
 $string['markingworkflow'] = 'Usar processo de avaliação';
 $string['markingworkflow_help'] = 'Se ativar esta opção, as notas irão passar por diversos estados do  processo de avaliação antes de serem lançadas para os alunos. Isto permite efetuar várias rondas de avaliação e permite que as notas sejam lançadas para todos os alunos ao mesmo tempo.';
 $string['markingworkflowstate'] = 'Estado do processo de avaliação';
@@ -358,12 +399,15 @@ $string['markingworkflowstatenotmarked'] = 'Não avaliado';
 $string['markingworkflowstatereadyforrelease'] = 'Avaliação validada';
 $string['markingworkflowstatereadyforreview'] = 'Avaliação concluída';
 $string['markingworkflowstatereleased'] = 'Nota lançada';
-$string['maxattempts'] = 'Número máximo de tentativas';
+$string['maxattempts'] = 'Tentativas permitidas';
 $string['maxattempts_help'] = 'Número máximo de tentativas de submissão permitidas a um aluno. Após ser atingido este número de tentativas, a submissão do aluno não poderá ser reaberta.';
 $string['maxgrade'] = 'Nota máxima';
 $string['maxperpage'] = 'Número máximo de trabalhos por página';
 $string['maxperpage_help'] = 'O número máximo de trabalhos por avaliar a mostrar na página de avaliação dos trabalhos. Útil para evitar elevados tempos de espera em disciplinas com um grande número de participantes.';
+$string['messageprovider:assign_due_digest'] = 'Notificação de trabalhos com data limite dentro de 7 dias';
+$string['messageprovider:assign_due_soon'] = 'Notificação de trabalho com data limite para breve';
 $string['messageprovider:assign_notification'] = 'Notificações dos trabalhos';
+$string['messageprovider:assign_overdue'] = 'Notificação de trabalho atrasado';
 $string['modulename'] = 'Trabalho';
 $string['modulename_help'] = 'A atividade Trabalho permite ao professor definir tarefas ou disponibilizar o enunciado de um trabalho, recolher submissões dos alunos e rever, avaliar e dar feedback.
 
@@ -398,6 +442,7 @@ $string['noteamgrader'] = 'Não pode submeter trabalhos porque não está inscri
 $string['notgraded'] = 'Sem avaliação';
 $string['notgradedyet'] = 'Ainda não foi avaliado';
 $string['notifications'] = 'Notificações';
+$string['notifystudents'] = 'Notificar alunos';
 $string['nouseroverrides'] = 'Não existem exceções para utilizadores.';
 $string['nousers'] = 'Sem utilizadores';
 $string['nousersselected'] = 'Sem alunos selecionados';
@@ -467,8 +512,8 @@ $string['quickgradingchangessaved'] = 'As atualizações das notas foram guardad
 $string['quickgradingresult'] = 'Avaliação rápida';
 $string['recordid'] = 'Identificador';
 $string['relativedatessubmissiontimeleft'] = 'Calculado para cada aluno';
-$string['removeallgroupoverrides'] = 'Apagar todas as exceções para grupos';
-$string['removealluseroverrides'] = 'Apagar todas as exceções para utilizadores';
+$string['removeallgroupoverrides'] = 'Todas as exceções para grupos';
+$string['removealluseroverrides'] = 'Todas as exceções para utilizadores';
 $string['removesubmission'] = 'Remover submissão';
 $string['removesubmissionconfirm'] = 'Tem a certeza de que pretende remover a sua submissão?';
 $string['removesubmissionconfirmforstudent'] = 'Tem a certeza de que pretende remover a submissão de \'{$a}\'?';
@@ -505,6 +550,9 @@ $string['selectlink'] = 'Selecionar…';
 $string['selectuser'] = 'Selecione {$a}';
 $string['sendlatenotifications'] = 'Notificar submissões atrasadas aos avaliadores';
 $string['sendlatenotifications_help'] = 'Se ativar esta opção, os avaliadores (geralmente os professores) receberão uma mensagem quando um aluno submete um trabalho fora do prazo. Os métodos das mensagens são configuráveis.';
+$string['sendnotificationduedatesoon'] = 'Notificar o utilizador que a data limite de um trabalho está para breve';
+$string['sendnotificationduedigest'] = 'Notificar utilizador para trabalhos com data limite dentro de 7 dias';
+$string['sendnotificationoverdue'] = 'Notificar o utilizador sobre um trabalho atrasado';
 $string['sendnotifications'] = 'Notificar submissões aos avaliadores';
 $string['sendnotifications_help'] = 'Se ativar esta opção, os avaliadores (geralmente os professores) receberão uma mensagem sempre que um aluno submete um trabalho, antes, durante ou fora do prazo. Os métodos das mensagens são configuráveis.';
 $string['sendstudentnotifications'] = 'Notificar alunos';
@@ -522,6 +570,7 @@ $string['showrecentsubmissions'] = 'Mostrar submissões recentes';
 $string['status'] = 'Estado';
 $string['studentnotificationworkflowstateerror'] = 'O estado do processo de avaliação tem de ser "Nota lançada" para que os alunos sejam notificados.';
 $string['submission'] = 'Trabalho';
+$string['submissionactions'] = 'Ações da submissão';
 $string['submissionattachments'] = 'Mostrar os ficheiros apenas durante a submissão';
 $string['submissionattachments_help'] = 'Ative esta opção para que os ficheiros só sejam mostrados na página de submissão. Se desativada, os ficheiros serão mostrados nas páginas do trabalho e da submissão.';
 $string['submissioncopiedhtml'] = '<p>Efetuou uma cópia da sua anterior submissão do trabalho na atividade \'<i>{$a->assignment}</i>\'.</p>
@@ -602,9 +651,9 @@ $string['subplugintype_assignfeedback'] = 'Módulo de feedback';
 $string['subplugintype_assignfeedback_plural'] = 'Módulos de feedback';
 $string['subplugintype_assignsubmission'] = 'Módulo de submissão';
 $string['subplugintype_assignsubmission_plural'] = 'Módulos de submissão';
-$string['teamname'] = 'Equipa: {$a}';
+$string['teamname'] = 'Grupo: {$a}';
 $string['teamsubmission'] = 'Os alunos submetem em grupos';
-$string['teamsubmission_help'] = 'Se ativar esta opção, os alunos serão divididos em grupos de acordo com o conjunto predefinido de grupos ou de um agrupamento específico. A submissão do grupo será partilhada entre todos os membros do grupo e todos veem as alterações realizadas à submissão.';
+$string['teamsubmission_help'] = 'Se ativar esta opção, os alunos serão divididos em grupos de acordo com o conjunto predefinido de grupos ou de um agrupamento específico. A submissão do grupo será partilhada entre todos os membros do grupo e todos veem as alterações realizadas à submissão. Nota: não pode alterar esta definição se já existirem submissões.';
 $string['teamsubmissiongroupingid'] = 'Agrupamento para grupos de alunos';
 $string['teamsubmissiongroupingid_help'] = 'Agrupamento que o trabalho utilizará para encontrar grupos para os grupos de alunos. Se não configurar esta opção, será utilizada a configuração predefinida de grupos.';
 $string['textinstructions'] = 'Instruções do trabalho';
@@ -646,6 +695,7 @@ $string['viewfeedbackforuser'] = 'Ver feedback do aluno: {$a}';
 $string['viewfull'] = 'Ver tudo';
 $string['viewfullgradingpage'] = 'Abrir a página de avaliações para submeter feedback';
 $string['viewgradebook'] = 'Ver pauta';
+$string['viewgrader'] = 'Ver avaliador';
 $string['viewgrading'] = 'Ver todas as submissões';
 $string['viewgradingformforstudent'] = 'Ver página de avaliação do aluno: (ID={$a->id}, nome completo = {$a->fullname}).';
 $string['viewownsubmissionform'] = 'Ver o seu trabalho.';

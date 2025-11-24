@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'eu', version '4.4'.
+ * Strings for component 'course', language 'eu', version '4.5'.
  *
  * @package     course
  * @category    string
@@ -101,6 +101,10 @@ $string['downloadcoursecontent_help'] = 'Ezarpen honek zehazten du jaitsi ikasta
 $string['enabledownloadcoursecontent'] = 'Gaitu ikastaroko edukiaren deskarga';
 $string['errorendbeforestart'] = '({$a}) amaiera-data hasiera data baino lehenagokoa da.';
 $string['favourite'] = 'Nabarmendutako ikastaroa';
+$string['filterbothactive'] = 'Izena ({$a->first}) Abizena ({$a->last})';
+$string['filterbyname'] = 'Iragazi izenaren arabera';
+$string['filterfirstactive'] = 'Izena ({$a->first})';
+$string['filterlastactive'] = 'Abizena ({$a->last})';
 $string['gotosection'] = 'Joan {$a} atalera';
 $string['gradetopassnotset'] = 'Ez da ikastaro hau gainditzeko kalifikaziorik ezarri. Ikastaroaren kalifikazio-elementuan ezarri daiteke (Kalifikazio-liburuaren ezarpenak).';
 $string['hideendedcoursestask'] = 'Ezkutatu ikastaroak amaiera-datan';

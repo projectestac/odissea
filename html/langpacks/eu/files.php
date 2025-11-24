@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'files', language 'eu', version '4.4'.
+ * Strings for component 'files', language 'eu', version '4.5'.
  *
  * @package     files
  * @category    string
@@ -43,3 +43,25 @@ $string['privacy:metadata:files:source'] = 'Fitxategiaren jatorria';
 $string['privacy:metadata:files:timecreated'] = 'Fitxategia sortu zeneko unea';
 $string['privacy:metadata:files:timemodified'] = 'Fitxategia azkenengoz aldatu zeneko unea';
 $string['privacy:metadata:files:userid'] = 'Fitxategia sortu zuen erabiltzailea';
+$string['redactor'] = 'Fitxategi garbitzailea';
+$string['redactor:exifremover'] = 'EXIF Fitxategi garbitzailea';
+$string['redactor:exifremover:emptyremovetags'] = 'Ezabatu etiketak ezin da hutsik egon!';
+$string['redactor:exifremover:enabled'] = 'Gaitu EXIF Fitxategi garbitzailea';
+$string['redactor:exifremover:enabled_desc'] = 'Modu lehenetsian, PHP GD ala ExifTool erabilita (konfiguratuta badago) EXIF Fitxategi garbitzaileak soilik JPG fitxategiak onartzen ditu. Helburu honekin PHP GD erabiltzeak irudiaren kalitatea kaltetu dezake.
+
+EXIF Fitxategi garbitzailearen errendimendua hobetzeko, konfiguratu itzazu beheko ExifTool tresnaren ezarpenak.
+
+ExifTool instalatzearen inguruko informazio gehiago aurkitu daiteke hemen:  {$a->link}';
+$string['redactor:exifremover:failedprocessexiftool'] = 'Garbitzeak huts egin du: fitxategia ExifTool-ekin prozesatzeak huts egin du!';
+$string['redactor:exifremover:failedprocessgd'] = 'Garbitzeak huts egin du: fitxategia PHP gd-ekin prozesatzeak huts egin du!';
+$string['redactor:exifremover:heading'] = 'ExifTool';
+$string['redactor:exifremover:mimetype'] = 'Onartutako MIME motak';
+$string['redactor:exifremover:mimetype_desc'] = 'MIME motak gehitzeko, ziurtatu ezazu  <a href="./tool/filetypes/index.php">Fitxategi Moten zerrendan</a> daudela.';
+$string['redactor:exifremover:removetags'] = 'Ezabatuko diren EXIF etiketak';
+$string['redactor:exifremover:removetags_desc'] = 'Ezabatu beharreko EXIF etiketak.';
+$string['redactor:exifremover:tag:all'] = 'Guztiak';
+$string['redactor:exifremover:tag:gps'] = 'GPS soilik';
+$string['redactor:exifremover:tooldoesnotexist'] = 'Garbitzeak huts egin du: ExifTool ez da existitzen!';
+$string['redactor:exifremover:toolpath'] = 'ExifTool-eko bidea';
+$string['redactor:exifremover:toolpath_desc'] = 'ExifTool erabiltzeko, zehaztu ezazu ExifTool exekutagarriaren bidea.
+Unix/Linux sistemetan, bidea /usr/bin/exiftool izan ohi da.';

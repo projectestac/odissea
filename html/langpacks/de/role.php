@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'de', version '4.4'.
+ * Strings for component 'role', language 'de', version '4.5'.
  *
  * @package     role
  * @category    string
@@ -28,6 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['addinganewrole'] = 'Neue Rolle hinzufügen';
 $string['addrole'] = 'Neue Rolle hinzufügen';
 $string['advancedoverride'] = 'Erweiterte Rollenänderung';
+$string['ai:acceptpolicy'] = 'KI-Richtlinie akzeptieren';
+$string['ai:fetchanyuserpolicystatus'] = 'Akzeptanz zur KI-Nutzerrichtlinie einholen';
+$string['ai:fetchpolicy'] = 'Akzeptanz zur KI-Nutzerrichtlinie einholen';
 $string['allow'] = 'Erlauben';
 $string['allowassign'] = 'Rollenzuweisung erlauben';
 $string['allowed'] = 'Erlaubt';
@@ -163,6 +166,8 @@ $string['confirmunassignno'] = 'Abbrechen';
 $string['confirmunassigntitle'] = 'Rollenwechsel bestätigen';
 $string['confirmunassignyes'] = 'Löschen';
 $string['contentbank:access'] = 'Auf den Inhaltsspeicher zugreifen';
+$string['contentbank:changelockedcustomfields'] = 'Gesperrte nutzerdefinierte Felder für Inhaltsspeicher ändern';
+$string['contentbank:configurecustomfields'] = 'Nutzerdefinierte Felder für Inhaltsspeicher konfigurieren';
 $string['contentbank:copyanycontent'] = 'Jeden Inhalt in den Inhaltsspeicher kopieren';
 $string['contentbank:copycontent'] = 'Inhalt in den Inhaltsspeicher kopieren';
 $string['contentbank:deleteanycontent'] = 'Inhalt des Inhaltsspeichers löschen';
@@ -190,6 +195,7 @@ $string['course:create'] = 'Kurse anlegen';
 $string['course:creategroupconversations'] = 'Gruppenkommunikation erstellen';
 $string['course:delete'] = 'Kurse löschen';
 $string['course:downloadcoursecontent'] = 'Kursinhalt herunterladen';
+$string['course:editcoursewelcomemessage'] = 'Begrüßungsnachricht für Kurs bearbeiten';
 $string['course:enrolconfig'] = 'Einschreibeverfahren in Kursen konfigurieren';
 $string['course:enrolreview'] = 'Kurseinschreibungen überprüfen';
 $string['course:ignoreavailabilityrestrictions'] = 'Verfügbarkeitseinschränkungen ignorieren';
@@ -238,8 +244,8 @@ $string['defaultrole'] = 'Standardrolle';
 $string['defaultx'] = 'Standard: {$a}';
 $string['defineroles'] = 'Rollen verwalten';
 $string['definitionofrolex'] = 'Definition der Rolle \'{$a}\'';
-$string['deletecourseoverrides'] = 'Alle Änderungen im Kurs löschen';
-$string['deletelocalroles'] = 'Alle lokalen Rollenzuordnungen löschen';
+$string['deletecourseoverrides'] = 'Alle Änderungen im Kurs';
+$string['deletelocalroles'] = 'Alle lokalen Rollenzuordnungen';
 $string['deleterolesure'] = '<p>Möchten Sie wirklich die Rolle \'{$a->name} ({$a->shortname})\' löschen?</p>
 <p>Aktuell sind dieser Rolle insgesamt {$a->count} Personen zugewiesen.';
 $string['deletexrole'] = 'Rolle {$a} löschen';
@@ -510,7 +516,7 @@ $string['user:editownmessageprofile'] = 'Eigenes Systemnachrichtenprofil bearbei
 $string['user:editownprofile'] = 'Eigenes Nutzerprofil bearbeiten';
 $string['user:editprofile'] = 'Nutzerprofile bearbeiten';
 $string['user:ignoreuserquota'] = 'Obergrenze des Nutzerquota ignorieren';
-$string['user:loginas'] = 'Login als anderer Nutzer';
+$string['user:loginas'] = 'Login als andere Person';
 $string['user:manageblocks'] = 'Blöcke im Nutzerprofil anderer Nutzer/innen verwalten';
 $string['user:manageownblocks'] = 'Blöcke im eigenen öffentlichen Nutzerprofil verwalten';
 $string['user:manageownfiles'] = 'Dateien im Bereich \'Meine Dateien\' verwalten';
@@ -522,6 +528,7 @@ $string['user:viewalldetails'] = 'Alle Nutzerinformationen anzeigen';
 $string['user:viewdetails'] = 'Nutzerprofile anzeigen';
 $string['user:viewhiddendetails'] = 'Verborgene Nutzerdetails anzeigen';
 $string['user:viewlastip'] = 'Letzte Nutzer-IP-Adresse anzeigen';
+$string['user:viewprofilepictures'] = 'Nutzerprofilbilder anzeigen, wenn Anmeldung zwingend ist';
 $string['user:viewuseractivitiesreport'] = 'Nutzerberichte anzeigen';
 $string['user:viewusergrades'] = 'Nutzerbewertungen anzeigen';
 $string['usersfrom'] = 'Nutzer/innen von {$a}';

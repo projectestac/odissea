@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'fr', version '4.4'.
+ * Strings for component 'plugin', language 'fr', version '4.5'.
  *
  * @package     plugin
  * @category    string
@@ -53,6 +53,8 @@ $string['err_response_format_version'] = 'Version inattendue du format de répon
 $string['err_response_http_code'] = 'Impossible de récupérer les données de mise à jour. Code de réponse HTTP inapproprié.';
 $string['filterall'] = 'Tout afficher';
 $string['filtercontribonly'] = 'N’afficher que les plugins additionnels';
+$string['filtermissingonly'] = 'N’afficher que les plugins absents sur le disque';
+$string['filternewpluginsonly'] = 'N’afficher que les plugins à installer';
 $string['filterupdatesonly'] = 'Afficher seulement les éléments susceptibles de mise à jour';
 $string['incompatibleversion'] = 'Version de Moodle incompatible : {$a}';
 $string['isenabled'] = 'Activé ?';
@@ -110,6 +112,10 @@ $string['status_uptodate'] = 'Installé';
 $string['supportedconversions'] = 'Conversions de documents prises en charge';
 $string['supportedmoodleversions'] = 'Versions de Moodle prises en charge';
 $string['systemname'] = 'Identifiant';
+$string['type_aiplacement'] = 'Plugin placement IA';
+$string['type_aiplacement_plural'] = 'Plugins placements IA';
+$string['type_aiprovider'] = 'Plugin fournisseur IA';
+$string['type_aiprovider_plural'] = 'Plugins fournisseur IA';
 $string['type_antivirus'] = 'Plugin antivirus';
 $string['type_antivirus_plural'] = 'Plugins antivirus';
 $string['type_auth'] = 'Méthode d’authentification';
@@ -192,6 +198,8 @@ $string['type_repository'] = 'Dépôt';
 $string['type_repository_plural'] = 'Dépôts';
 $string['type_search'] = 'Moteur de recherche';
 $string['type_search_plural'] = 'Moteurs de recherche';
+$string['type_smsgateway'] = 'Passerelle SMS';
+$string['type_smsgateway_plural'] = 'Passerelles SMS';
 $string['type_theme'] = 'Thème';
 $string['type_theme_plural'] = 'Thèmes';
 $string['type_tool'] = 'Outil d’administration';

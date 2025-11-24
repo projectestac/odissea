@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_file', language 'eu', version '4.4'.
+ * Strings for component 'assignfeedback_file', language 'eu', version '4.5'.
  *
  * @package     assignfeedback_file
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['batchoperationconfirmuploadfiles'] = 'Igo feedback-fitxategi bat edo gehiago aukeratutako erabiltzaile guztientzat?';
+$string['batchoperationuploadfiles'] = 'Igo feedbacka';
 $string['batchuploadfiles'] = 'Igo feedback-fitxategiak hainbat erabiltzailerentzat';
 $string['batchuploadfilesforusers'] = 'Bidali feedback fitxategiak aukeratutako {$a} erabiltzaile(r)entzat';
 $string['configmaxbytes'] = 'Fitxategiaren gehieneko tamaina';
@@ -53,6 +54,6 @@ $string['privacy:metadata:filepurpose'] = 'Irakasleak ikaslearentzako feedback e
 $string['privacy:path'] = 'Feedback fitxategiak';
 $string['selectedusers'] = 'Aukeratutako erabiltzaileak';
 $string['uploadfiles'] = 'Bidali feedback-fitxategiak';
-$string['uploadzip'] = 'Igo hainbat feedback-fitxategi zip batean';
+$string['uploadzip'] = 'Igo feedback-fitxategiak zip batean';
 $string['uploadzipsummary'] = 'Feedback fitxategiak zip batetik inportatuta';
 $string['userswithnewfeedback'] = 'Eguneratutako feedbacka duten erabiltzaileak: {$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_seb', language 'fr', version '4.4'.
+ * Strings for component 'quizaccess_seb', language 'fr', version '4.5'.
  *
  * @package     quizaccess_seb
  * @category    string
@@ -96,6 +96,7 @@ $string['seb:manage_seb_allowedbrowserexamkeys'] = 'Modifier le réglage de test
 $string['seb:manage_seb_allowreloadinexam'] = 'Modifier le réglage de test SEB : « Permettre le rechargement ».';
 $string['seb:manage_seb_allowspellchecking'] = 'Modifier le réglage de test SEB : « Permettre la vérification orthographique ».';
 $string['seb:manage_seb_allowuserquitseb'] = 'Modifier le réglage de test SEB : « Permettre l’action quitter ».';
+$string['seb:manage_seb_configuremanually'] = 'Changer le réglage de test SEB : « Sélectionner une configuration manuelle »';
 $string['seb:manage_seb_enableaudiocontrol'] = 'Modifier le réglage de test SEB : « Activer les contrôles audio ».';
 $string['seb:manage_seb_expressionsallowed'] = 'Modifier le réglage de test SEB : « Activer les contrôles audio ».';
 $string['seb:manage_seb_expressionsblocked'] = 'Modifier le réglage de test SEB : « Expressions bloquées ».';
@@ -114,13 +115,14 @@ $string['seb:manage_seb_showtime'] = 'Modifier le réglage de test SEB : « Af
 $string['seb:manage_seb_showwificontrol'] = 'Modifier le réglage de test SEB : « Afficher la commande Wi-Fi ».';
 $string['seb:manage_seb_templateid'] = 'Modifier le réglage de test SEB : « Sélectionner un gabarit SEB ».';
 $string['seb:manage_seb_userconfirmquit'] = 'Modifier le réglage de test SEB : « Demander à l’utilisateur de confirmer la sortie ».';
+$string['seb:manage_seb_usesebclientconfig'] = 'Changer le réglage de test SEB : « Utiliser la configuration client »';
 $string['seb:managetemplates'] = 'Gérer les gabarits de configuration SEB';
 $string['seb_activateurlfiltering'] = 'Activer le filtrage d’URL';
 $string['seb_activateurlfiltering_help'] = 'Si ce réglage est activé, les URLs seront filtrés lors du chargement de pages web. Le filtre doit être défini ci-dessous.';
 $string['seb_allowcapturecamera'] = 'Autoriser le navigateur à accéder à la caméra';
-$string['seb_allowcapturecamera_help'] = 'Si ce réglage est activé, les utilisateurs se verront demander d’autoriser l’accès de SEB à la caméra avant que la session SEB ne commence. Avec macOS 12/iOS 15 ou ultérieur, la désactivation de ce réglage empêche les applications web d’accéder à la caméra dans tous les cas, p.ex. l’enregistrement vidéo via WebRTC sera impossible.';
+$string['seb_allowcapturecamera_help'] = 'Si ce réglage est activé, les utilisateurs se verront demander d’autoriser l’accès de SEB à la caméra avant que la session SEB ne commence. Avec macOS 12/iOS 15 ou ultérieur, la désactivation de ce réglage empêche les applications web d’accéder à la caméra, p.ex. l’enregistrement vidéo via WebRTC sera impossible.';
 $string['seb_allowcapturemicrophone'] = 'Autoriser le navigateur à accéder au microphone';
-$string['seb_allowcapturemicrophone_help'] = 'Si ce réglage est activé, les utilisateurs se verront demander d’autoriser l’accès de SEB au microphone avant que la session SEB ne commence. Avec macOS 12/iOS 15 ou ultérieur, la désactivation de ce réglage empêche les applications web d’accéder à la caméra dans tous les cas, p.ex. l’enregistrement audio via WebRTC sera impossible.';
+$string['seb_allowcapturemicrophone_help'] = 'Si ce réglage est activé, les utilisateurs se verront demander d’autoriser l’accès de SEB au microphone avant que la session SEB ne commence. Avec macOS 12/iOS 15 ou ultérieur, la désactivation de ce réglage empêche les applications web d’accéder à la caméra, p.ex. l’enregistrement audio via WebRTC sera impossible.';
 $string['seb_allowedbrowserexamkeys'] = 'Clefs de navigateur pour examen autorisées';
 $string['seb_allowedbrowserexamkeys_help'] = 'Vous pouvez indiquer dans ce champ les clefs de navigateur pour examen pour les versions de Safe Exam Browser pouvant accéder à ce test. Si aucune clef n’est indiquée, Moodle ne vérifie pas les clefs de navigateur pour examen.';
 $string['seb_allowreloadinexam'] = 'Permettre le rechargement de page durant l’examen';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_sharing_cart', language 'de', version '4.4'.
+ * Strings for component 'block_sharing_cart', language 'de', version '4.5'.
  *
  * @package     block_sharing_cart
  * @category    string
@@ -26,18 +26,20 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['anonymize_user_data'] = 'Möchten Sie die Nutzerdaten anonymisieren?';
-$string['atleast_one_course_module_must_be_included'] = 'Mindestens ein Kursmodul muss enthalten sein. Bitte wählen Sie mindestens ein Kursmodul aus, das enthalten sein soll.';
+$string['atleast_one_course_module_must_be_included'] = 'Mindestens ein Kursmodul muss enthalten sein. Bitte wählen Sie mindestens ein Kursmodul aus.';
 $string['backup_failed'] = 'Die Sicherung ist fehlgeschlagen. Sie können den Artikel aus dem Zwischenspeicher löschen und es erneut versuchen.';
-$string['backup_item'] = 'Element sichern';
-$string['backup_settings'] = 'Backup-Einstellungen';
-$string['backup_without_user_data'] = 'Backup ohne Nutzerdaten';
+$string['backup_item'] = 'Element kopieren';
+$string['backup_settings'] = 'Kopiereinstellungen';
+$string['backup_without_user_data'] = 'Ohne Nutzerdaten kopieren';
 $string['bulk_delete'] = 'Mehrere Elemente löschen';
 $string['cancel_bulk_delete'] = 'Abbrechen';
 $string['confirm_copy_item'] = 'Möchten Sie dieses Element wirklich kopieren?';
 $string['confirm_copy_item_form_text'] = 'Möchten Sie dieses Element wirklich kopieren? Unten können Sie auswählen, was in der Kopie enthalten sein soll.';
 $string['confirm_delete_item'] = 'Möchten Sie dieses Element wirklich löschen? Alle Unterelemente werden ebenfalls gelöscht.';
 $string['confirm_delete_items'] = 'Möchten Sie diese Elemente wirklich löschen? Alle Unterelemente werden ebenfalls gelöscht.';
+$string['copy'] = 'Kopieren';
 $string['copy_item'] = 'Element kopieren';
+$string['copy_quiz_warning'] = 'Achtung! - Sie kopieren eine Aktivität Test in den "Zwischenspeicher zum Teilen". Wenn sich viele Fragen im Kurs befinden kann dies etwas länger dauern.';
 $string['copy_section'] = 'Abschnitt kopieren';
 $string['copy_this_course'] = 'Diesen Kurs kopieren';
 $string['copy_user_data'] = 'Möchten Sie Nutzerdaten kopieren? (z. B. Glossar/Wiki/Datenbankeinträge)';
@@ -51,14 +53,17 @@ $string['into_section'] = 'in den Abschnitt';
 $string['into_sharing_cart'] = 'in den Zwischenspeicher';
 $string['items'] = 'Elemente';
 $string['legacy_section_info'] = 'Dies ist ein Legacy-Abschnitt. Der Zwischenspeicher kann diesen Abschnitt nicht kopieren, die einzelnen Aktivitäten sind jedoch weiterhin verfügbar.';
-$string['maybe_the_queue_is_stuck'] = 'Wenn Sie die Wiederherstellung jetzt ausführen möchten, klicken Sie auf die Schaltfläche oben.';
-$string['module_is_disabled_on_site'] = 'Dieses Modul wurde auf der Site deaktiviert. Sie können es nicht wiederherstellen.';
+$string['maybe_the_queue_is_stuck'] = 'Wenn Sie  den Kopiervorgang jetzt ausführen möchten, klicken Sie auf die Schaltfläche oben.';
+$string['module_is_disabled_on_site'] = 'Dieses Modul wurde auf der Site deaktiviert. Sie können es nicht kopieren.';
 $string['no_course_modules_in_section'] = 'Keine Kursmodule in diesem Abschnitt';
 $string['no_course_modules_in_section_description'] = 'Dieser Abschnitt enthält keine Kursmodule und kann daher nicht kopiert werden.';
 $string['no_items'] = 'Keine Elemente.<br/> <br/>Ziehen Sie per Drag & drop Aktivitäten oder Abschnitte in den Sharing Cart oder klicken Sie das <i class="fa fa-shopping-basket"></i> Icon, um Elemente in den Zwischenspeicher zu legen.';
-$string['no_restores'] = '<div class="no-restores text-muted">Keine Wiederherstellungen im Prozess<br>
+$string['no_restores'] = '<div class="no-restores text-muted">Kein Kopiervorgang im Prozess<br>
 <br>
 Klicken Sie auf das <i class="fa fa-clone"></i> Symbol, um Elemente aus dem "Zwischenspeicher zum Teilen" zum Kurs hinzuzufügen.</div>';
+$string['nopermissions'] = 'Sie haben nicht die Rechte, um Sicherungen oder Wiederherstellungen in diesem Kurs durchzuführen. Bitte kontaktieren Sie Ihren Administrator, wenn Sie denken, dass dies ein Fehler ist.';
+$string['old_version_module_info'] = 'Dieses Element wurde mit einer vorherigen Version gesichert.';
+$string['old_version_section_info'] = 'Dieser Abschnitt wurde mit einer vorherigen Version gesichert.';
 $string['original_course'] = 'Ursprünglicher Kurs:';
 $string['pluginname'] = 'Zwischenspeicher zum Teilen';
 $string['privacy:metadata:sharing_cart_items:file_id'] = 'The File-ID der Sicherung';
@@ -75,7 +80,7 @@ $string['privacy:metadata:sharing_cart_items:type'] = 'Die Art des Elements';
 $string['privacy:metadata:sharing_cart_items:user_id'] = 'Die Nutzer-ID des Besitzers des Elements';
 $string['rename_item'] = 'Element umbenennen';
 $string['restore_failed'] = 'Wiederherstellen fehlgeschlagen (Task ID: {$a}). Diese Nachricht verschwindet nach einer bestimmten Zeit.';
-$string['restores'] = 'Wiederherstellungen';
+$string['restores'] = 'Kopiervorgänge in der Warteschlange';
 $string['run_now'] = 'Jetzt ausführen';
 $string['select_all'] = 'Alle auswählen';
 $string['settings:show_copy_section_in_block'] = '"Abschnitt kopieren" im Block anzeigen';
@@ -83,4 +88,6 @@ $string['settings:show_copy_section_in_block_desc'] = '"Abschnitt kopieren" im B
 $string['settings:show_sharing_cart_basket'] = 'Den "Zwischenspeicher zum Teilen" Korb anzeigen';
 $string['settings:show_sharing_cart_basket_desc'] = 'Den "Zwischenspeicher zum Teilen" Korb auf der Kursseite im Bearbeitungsmodus anzeigen. Dies ermöglicht es den Nutzer/innen Aktivitäten und Abschnitte in den "Zwischenspeicher zum Teilen" zu kopieren. Wenn der Korb nicht angezeigt wird, können Nutzer/innen dennoch Aktivitäten und Abschnitte in den "Zwischenspeicher zum Teilen" ziehen.';
 $string['sharing_cart:addinstance'] = 'Neuen Block \'Zwischenspeicher zum Teilen\' hinzufügen';
+$string['sharing_cart:manual_run_task'] = 'Den Sichern/Wiederherstellen-Prozess manuell ausführen';
+$string['you_do_not_have_permission_to_configure_restores'] = 'Sie haben nicht die erforderlichen Rechte, um Wiederherstellungen zu konfigurieren. Bitte kontaktieren Sie Ihren Administrator, wenn Sie denken, dass dies ein Fehler ist.';
 $string['you_may_need_to_reload_the_course_warning'] = 'Elemente eingefügt. Eventuell muss die Kursseite neu geladen werden, um die Änderungen anzuzeigen.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'pt', version '4.4'.
+ * Strings for component 'quiz_overview', language 'pt', version '4.5'.
  *
  * @package     quiz_overview
  * @category    string
@@ -60,6 +60,17 @@ $string['privacy:metadata:preference:quiz_overview_slotmarks'] = 'Se os pontos s
 $string['privacy:preference:slotmarks:no'] = 'Os pontos não são visíveis ao longo do conjunto de perguntas.';
 $string['privacy:preference:slotmarks:yes'] = 'Os pontos são visíveis ao longo do conjunto de perguntas.';
 $string['regrade'] = 'Reavaliar';
+$string['regrade_allattempts'] = 'Todas as tentativas';
+$string['regrade_allquestions'] = 'Todas as perguntas';
+$string['regrade_attempts'] = 'Reavaliar tentativas';
+$string['regrade_commitregrade'] = 'Aceitar a reavaliação';
+$string['regrade_dryrun'] = 'Testar reavaliação';
+$string['regrade_help'] = 'A reavaliação recalcula a avaliação automática das tentativas, usando, se possível, a versão atual de cada pergunta. Pode testar e visualizar as alterações das notas sem afetar as tentativas.';
+$string['regrade_link'] = 'Relatório_notas_teste#Reavaliação_tentativas';
+$string['regrade_regradeneedednotificationmessage'] = 'O último teste de uma reavaliação detetou que a reavaliação mudaria as notas de {$a->questions} perguntas em {$a->attempts} tentativas.';
+$string['regrade_regradenow'] = 'Reavaliar agora';
+$string['regrade_selectedattempts'] = 'Tentativas selecionadas';
+$string['regrade_selectedquestions'] = 'Perguntas selecionadas';
 $string['regradeall'] = 'Reavaliar todas';
 $string['regradealldry'] = 'Simular reavaliação de todas';
 $string['regradealldrydo'] = 'Reavaliar as tentativas selecionadas ({$a})';

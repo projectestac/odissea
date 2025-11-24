@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'fr', version '4.4'.
+ * Strings for component 'course', language 'fr', version '4.5'.
  *
  * @package     course
  * @category    string
@@ -101,6 +101,10 @@ $string['downloadcoursecontent_help'] = 'Ce réglage détermine si les contenus 
 $string['enabledownloadcoursecontent'] = 'Activer le téléchargement de contenus de cours';
 $string['errorendbeforestart'] = 'La date de fin ({$a}) est antérieure à la date du début du cours.';
 $string['favourite'] = 'Cours marqué comme favori';
+$string['filterbothactive'] = 'Prénom ({$a->first}) Nom de famille ({$a->last})';
+$string['filterbyname'] = 'Filtrer par nom';
+$string['filterfirstactive'] = 'Prénom ({$a->first})';
+$string['filterlastactive'] = 'Nom de famille ({$a->last})';
 $string['gotosection'] = 'Aller à la section {$a}';
 $string['gradetopassnotset'] = 'Ce cours n’a pas de note pour passer. Une telle note peut être indiquée dans l’élément d’évaluation du cours (configuration du carnet de notes).';
 $string['hideendedcoursestask'] = 'Cacher les cours à leur date de fin';

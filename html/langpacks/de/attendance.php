@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attendance', language 'de', version '4.4'.
+ * Strings for component 'attendance', language 'de', version '4.5'.
  *
  * @package     attendance
  * @category    string
@@ -376,6 +376,7 @@ $string['notmember'] = 'kein Mitglied';
 $string['notset'] = 'nicht gesetzt';
 $string['nounmarkedstatusset'] = 'Für diese Sitzung ist kein unmarkierter Status konfigurie<a href="{$a->url}">rt (ID: {$a->sessionid}). Um dies zu beheben, aktualisieren Sie den gesetzten Status</a>.';
 $string['noupgradefromthisversion'] = 'Das Update des Moduls \'attforblock\' zum Modul \'Anwesenheit\' kann nicht ausgeführt werden. Bitte löschen Sie attforblock oder aktualisieren Sie es auf die neueste Version, bevor Sie das neue Modul \'Anwesenheit\' installieren.';
+$string['nousers'] = 'Keine eingeschriebenen Teilnehmer/innen gefunden, für die eine Anwesenheit eingetragen werden kann.';
 $string['numsessions'] = 'Anzahl der Termine';
 $string['numsessionstaken'] = 'Anzahl der durchgeführten Sitzungen';
 $string['olddate'] = 'Vormaliges Datum';

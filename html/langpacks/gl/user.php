@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'gl', version '4.4'.
+ * Strings for component 'user', language 'gl', version '4.5'.
  *
  * @package     user
  * @category    string
@@ -25,25 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcondition'] = 'Engadir condición';
-$string['adverbfor_and'] = 'e';
-$string['adverbfor_andnot'] = 'e';
-$string['adverbfor_or'] = 'ou';
-$string['applyfilters'] = 'Aplicar filtros';
-$string['clearfilterrow'] = 'Eliminar a fila do filtro';
-$string['clearfilters'] = 'Limpar filtros';
-$string['clearfilterselection'] = 'Retirar «{$a}» do filtro';
 $string['countparticipantsfound'] = 'Atopáronse {$a} participantes';
 $string['filterbykeyword'] = 'Palabra clave';
-$string['filterrowlegend'] = 'Filtro {$a}';
-$string['filtersetmatchdescription'] = 'Como se deben combinar varios filtros';
-$string['filtertype'] = 'Tipo de filtro';
-$string['match'] = 'Coincidencia';
-$string['matchofthefollowing'] = 'dos seguintes:';
 $string['moodlenetprofile'] = 'ID de perfil de MoodleNet';
 $string['moodlenetprofile_help'] = 'O seu ID de perfil de MoodleNet vincula o seu perfil de MoodleNet con este sitio.';
 $string['placeholdertype'] = 'Escriba…';
-$string['placeholdertypeorselect'] = 'Escriba ou seleccione…';
 $string['privacy:courserequestpath'] = 'Cursos solicitados';
 $string['privacy:descriptionpath'] = 'Descrición do perfil';
 $string['privacy:devicespath'] = 'Dispositivos do usuario';
@@ -149,7 +135,6 @@ $string['privacy:passwordresetpath'] = 'Restabelecemento do contrasinal';
 $string['privacy:privatefilespath'] = 'Ficheiros privados';
 $string['privacy:profileimagespath'] = 'Imaxes do perfil';
 $string['privacy:sessionpath'] = 'Datos da sesión';
-$string['selectfiltertype'] = 'Seleccionar';
 $string['supportmessagealternative'] = 'Pola contra, pode enviar un correo-e a {$a}.';
 $string['supportmessagenotsent'] = 'Desafortunadamente non foi posíbel enviar a súa mensaxe.';
 $string['supportmessagesent'] = 'A súa mensaxe foi enviada.';

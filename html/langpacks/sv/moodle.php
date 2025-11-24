@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'sv', version '4.4'.
+ * Strings for component 'moodle', language 'sv', version '4.5'.
  *
  * @package     moodle
  * @category    string
@@ -44,6 +44,7 @@ $string['activityiscurrentlyhidden'] = 'Tyvärr, den här aktiviteten är för t
 $string['activitymodule'] = 'Aktivitetsmodul';
 $string['activitymodules'] = 'Aktivitetsmoduler';
 $string['activitynotready'] = 'Aktiviteten är inte klar ännu';
+$string['activityorresource'] = 'Aktivitet eller resurs';
 $string['activityreport'] = 'Aktivitetsrapport';
 $string['activityreports'] = 'Aktivitetsrapporter';
 $string['activityselect'] = 'Välj den här aktiviteten och flytta den någon annanstans';
@@ -57,6 +58,7 @@ $string['addadmin'] = 'Lägg till administratör';
 $string['addblock'] = 'Lägg till ett block';
 $string['addcomment'] = 'Lägg till kommentar...';
 $string['addcondition'] = 'Lägg till villkor';
+$string['addcontent'] = 'Lägg till innehåll';
 $string['addcountertousername'] = 'Skapa en användare genom att lägga till ett tal till användarnamnet';
 $string['addcreator'] = 'Lägg till kursutvecklare';
 $string['adddots'] = 'Lägg till...';
@@ -295,6 +297,7 @@ $string['chooseuser'] = 'Välj en användare';
 $string['city'] = 'Stad';
 $string['cleaningtempdata'] = 'Tömmer tillfälliga data';
 $string['clear'] = 'Rensa';
+$string['clearall'] = 'Rensa allt';
 $string['clearfilterrow'] = 'Ta bort filterrad';
 $string['clearfilters'] = 'Rensa filter';
 $string['clearsearch'] = 'Rensa sökfältet';
@@ -564,8 +567,8 @@ $string['delete'] = 'Ta bort';
 $string['deleteablock'] = 'Ta bort ett block';
 $string['deleteall'] = 'Ta bort alla';
 $string['deleteallcannotundo'] = 'Ta bort allt - detta kan inte göras ogjort';
-$string['deleteallcomments'] = 'Ta bort alla kommentarer';
-$string['deleteallratings'] = 'Ta bort alla bedömningar';
+$string['deleteallcomments'] = 'Alla kommentarer';
+$string['deleteallratings'] = 'Alla bedömningar';
 $string['deletecategory'] = 'Ta bort kategori: {$a}';
 $string['deletecategorycheck'] = 'Är du absolut säker på att du vill ta bort den här kategorin <b>\'{$a}\'</b>?<br />Det här flyttar alla kurser till föräldrakategorin om det det finns någon eller till \'Övrigt\'.';
 $string['deletecategorycheck2'] = 'Om du tar bort denna kategori måste du välja vad du vill göra med de kurser och underkategorier som den innehåller.';
@@ -692,17 +695,22 @@ $string['emailagain'] = 'E-post (igen)';
 $string['emailalreadysent'] = 'Ett meddelande om lösenordsåterställning har redan skickats. Vänligen kontrollera din epost.';
 $string['emailcharset'] = 'Teckenuppsättning för e-post';
 $string['emailconfirm'] = 'Bekräfta konto';
-$string['emailconfirmation'] = 'Hej,
+$string['emailconfirmation'] = 'Hej {$a->firstname}!
 
-Någon (antagligen du) har använt din e-postadress för att beställa ett nytt konto på: \'{$a->sitename}\'.
+Ett nytt konto har begärts på \'{$a->sitename}\'
+med din e-postadress.
 
-För att bekräfta kontot, gå till:
+För att bekräfta ditt nya konto, gå till denna webbadress:
 
 {$a->link}
 
-I de flesta e-postprogram behöver du bara klicka på länken. Om det inte fungerar, kan du klippa ut adressen här och klistra in den i adressrutan på din webbläsare.
+I de flesta e-postprogram bör detta visas som en blå länk
+som du kan klicka på. Om det inte fungerar,
+klipp ut och klistra in adressen i adressfältet
+längst upp i webbläsarfönstret.
 
-Om du behöver hjälp kan du gärna kontakta administratören för webbplatsen, {$a->admin}';
+Om du behöver hjälp, kontakta webbplatsens administratör,
+{$a->admin}';
 $string['emailconfirmationresend'] = 'Skicka om bekräftelsemejl';
 $string['emailconfirmationsubject'] = '{$a}: bekräftelse av konto';
 $string['emailconfirmsent'] = '<p>Vi har skickat ett e-postmeddelande som du bör ha fått<br /> till din adress på <b>{$a}</b></p>
@@ -1057,6 +1065,7 @@ $string['general'] = 'Allmänt';
 $string['geolocation'] = 'latitud - longitud';
 $string['gettheselogs'] = 'Hämta loggar';
 $string['go'] = 'Gå';
+$string['gobacktosite'] = 'Tillbaka till webbplatsen';
 $string['gpl'] = 'Copyright (C) 1999 och framåt Martin Dougiamas (https://moodle.com)
 
 Detta program är fri programvara; du kan distribuera den och/eller modifiera den enligt villkoren i GNU General Public License som publicerats av Free Software Foundation; antingen version 2 av licensen eller (efter eget val) någon senare version.
@@ -1221,6 +1230,7 @@ $string['indicator:userforumstracking'] = 'Användaren följer forum';
 $string['indicator:userforumstracking_help'] = 'Denna indikator representerar huruvida studenten har spårning aktiverad i forumen, eller ej.';
 $string['info'] = 'Information';
 $string['inprogress'] = 'Pågående';
+$string['insertcontentbefore'] = 'Infoga innehåll före \'{$a->activityname}\'';
 $string['insertresourceoractivitybefore'] = 'Infoga aktivitet eller resurs före \'{$a->activityname}\'';
 $string['institution'] = 'Institution';
 $string['instudentview'] = 'i lärandevy';
@@ -1900,13 +1910,19 @@ $string['resendemail'] = 'Skicka bekräftelsemail igen';
 $string['reset'] = 'Nollställ';
 $string['resetcomponent'] = 'Komponent';
 $string['resetcourse'] = 'Nollställ kurs';
-$string['resetinfo'] = 'Den här sidan låter dig tömma en kurs på användardata samtidigt som aktiviteterna och andra inställningar bibehålls. Kom alltså ihåg att om du väljer de nedanstående komponenterna och bekräftar dina val på den här sidan så kommer du, från den här kursen, permanent att ta bort de användardata som du har valt.';
-$string['resetnotimplemented'] = 'Nollställning har inte implementerats';
+$string['resetcourseconfirm'] = 'Återställ kurs?';
+$string['resetcoursewarning'] = 'Är du säker på att du vill återställa kursen \'{$a}\'?
+<br/><br/>
+Detta kommer att radera vald data och återställa kursen till dess ursprungliga tillstånd. Du kan inte ångra den här åtgärden.';
+$string['resetinfo'] = 'Denna funktion låter dig rensa alla användardata och återställa kursen till dess ursprungliga tillstånd. Kursaktiviteter och inställningar förblir oförändrade.';
+$string['resetinfoselect'] = 'Välj de data du vill radera eller återställa från kategorierna nedan:';
+$string['resetnotimplemented'] = 'Återställning stöds inte';
+$string['resetnotimplementedinfo'] = 'Dessa aktiviteter kan inte återställas:';
 $string['resetrecordexpired'] = 'Länken för lösenordsåterställning du använde är mer än {$a} minuter gammal och har slutat gälla. Vänligen påbörja en ny lösenordsåterställning.';
 $string['resetstartdate'] = 'Startdatum för nollställning';
 $string['resetstatus'] = 'Status';
 $string['resettable'] = 'Nollställ inställningar för tabell';
-$string['resettask'] = 'Uppgift';
+$string['resettask'] = 'Återställ';
 $string['resettodefaults'] = 'Nollställ till standardvärden';
 $string['resortcourses'] = 'Sortera kurser';
 $string['resortsubcategoriesby'] = 'Sortera underkategorier efter {$a} stigande';
@@ -2055,6 +2071,9 @@ $string['senddetails'] = 'Sänd mina uppgifter för inloggning via e-post.';
 $string['sent'] = 'Skickat';
 $string['separate'] = 'Separat';
 $string['separateandconnected'] = 'Enskild (rationell) och social(empatisk) inriktning ang vetande (kunskap)';
+$string['separateandconnected1'] = 'Mestadels separat lärande';
+$string['separateandconnected2'] = 'Separat och anslutet';
+$string['separateandconnected3'] = 'Mestadels anslutet lärande';
 $string['separateandconnectedinfo'] = 'Skalan baserad på teorin om separat och anslutet lärande. Denna teori beskriver två olika sätt som vi kan utvärdera och lära oss om de saker vi ser och hör.<ul><li>
 <strong>Separata lärande</strong> förblir så objektiva som möjligt utan att inkludera känslor och emotioner. I en diskussion med andra människor gillar de att försvara sina egna idéer, med hjälp av logik, för att hitta hål i motståndarens idéer. </li><li>
 <strong>Anslutna lärande</strong> är mer sensitiva för andra människor. De är empatiska och tenderar att lyssna och ställa frågor tills det att de känner att de kan få kontakt och <em>"förstå saker ur deras synvinkel"</em>. De lär sig genom att försöka dela med sig av de erfarenheter som ledde till den kunskap de hittar hos andra människor.</li></ul>';
@@ -2211,6 +2230,7 @@ $string['statsuserwrites'] = 'Inlägg';
 $string['statswrites'] = 'Inlägg';
 $string['status'] = 'Status';
 $string['statuscritical'] = 'Kritiskt';
+$string['statusdone'] = 'Klar';
 $string['statuserror'] = 'Fel';
 $string['statusinfo'] = 'Info';
 $string['statusna'] = 'Ej tillämpligt';

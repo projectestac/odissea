@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'pt', version '4.4'.
+ * Strings for component 'tool_usertours', language 'pt', version '4.5'.
  *
  * @package     tool_usertours
  * @category    string
@@ -142,7 +142,7 @@ $string['privacy:request:preference:completed'] = 'A última vez que marcou como
 $string['privacy:request:preference:requested'] = 'Solicitou a demonstração ao utilizador "{$a->name}" pela última vez em {$a->time}';
 $string['reflex'] = 'Clique para avançar';
 $string['reflex_help'] = 'Ir para a próxima etapa quando clicar no destino.';
-$string['resettouronpage'] = 'Repetir a demonstração ao utilizador desta página';
+$string['resettouronpage'] = 'Repetir a demonstração desta página ao utilizador';
 $string['resumetour'] = 'Retomar';
 $string['right'] = 'Direita';
 $string['select_block'] = 'Selecione um bloco';

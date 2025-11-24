@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ru', version '4.4'.
+ * Strings for component 'message', language 'ru', version '4.5'.
  *
  * @package     message
  * @category    string
@@ -69,6 +69,7 @@ $string['disallowed'] = 'Запрещено';
 $string['editmessages'] = 'Редактировать сообщения';
 $string['emailtagline'] = 'Это письмо - копия сообщения, отправленного Вам на сайте «{$a->sitename}». Для ответа пройдите по ссылке <a href="{$a->url}">{$a->url}</a>.';
 $string['enabled'] = 'Включено';
+$string['enablenotificationplugin'] = 'Включить плагин уведомлений: {$a}';
 $string['errorcallingprocessor'] = 'Ошибка вызова указанного способа доставки';
 $string['errorconversationdoesnotexist'] = 'Разговор не существует';
 $string['errormessagetoolong'] = 'Сообщение длиннее максимально допустимого.';
@@ -139,6 +140,7 @@ $string['notificationdatahasnotbeenmigrated'] = 'Ваши уведомления
 $string['notificationimage'] = 'Уведомления в виде картинки';
 $string['notificationpreferences'] = 'Настройки уведомлений';
 $string['notifications'] = 'Уведомления';
+$string['notificationsmarkedasread'] = 'Все уведомления отмечены как прочитанные.';
 $string['notificationwindow'] = 'Окно уведомления';
 $string['notincontacts'] = 'Вам нужно добавить пользователя {$a} в список собеседников, чтобы иметь возможность отправлять ему(ей) сообщения.';
 $string['notincontactsheading'] = '{$a} не является вашим собеседником';
@@ -153,6 +155,7 @@ $string['page-message-x'] = 'Любая из страниц сообщений';
 $string['participants'] = 'Участники';
 $string['pendingcontactrequests'] = 'Ожидающих запросов на добавление в собеседники: {$a}';
 $string['permitted'] = 'По выбору';
+$string['preference'] = 'Предпочтения';
 $string['privacy'] = 'Приватность';
 $string['privacy:export:conversationprefix'] = 'Обсуждение:';
 $string['privacy:metadata:core_favourites'] = 'Разговоры, помеченные пользователем';

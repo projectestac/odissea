@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'ro', version '4.4'.
+ * Strings for component 'enrol_database', language 'ro', version '4.5'.
  *
  * @package     enrol_database
  * @category    string
@@ -53,9 +53,13 @@ $string['localcoursefield'] = 'Câmpul cursului local';
 $string['localrolefield'] = 'Câmpul rol local';
 $string['localuserfield'] = 'Câmpul utilizatorului local';
 $string['newcoursecategory'] = 'Câmpul categoriei de cursuri noi';
+$string['newcourseenddate'] = 'Câmp nou pentru data de încheiere a cursului';
+$string['newcourseenddate_desc'] = 'Specificați o dată în format yyyy-mm-dd sau format Unix, sau lăsați necompletată data încheierii cursului pentru a fi calculată din durata din configurările cursului.';
 $string['newcoursefullname'] = 'Câmpul denumirii complete a cursului nou';
 $string['newcourseidnumber'] = 'Câmpul numărului de ID al cursului nou';
 $string['newcourseshortname'] = 'Câmpul denumirii prescurtate a cursului nou';
+$string['newcoursestartdate'] = 'Câmp nou pentru data de începere a cursului';
+$string['newcoursestartdate_desc'] = 'Specificați o dată în format yyyy-mm-dd sau format Unix, sau lăsați necompletată data începerii cursului pentru a fi calculată din durata din configurările cursului.';
 $string['newcoursetable'] = 'Tabel cursuri noi la distanță';
 $string['newcoursetable_desc'] = 'Specificați numele tabelului care conține lista cursurilor care ar trebui create automat. Dacă nu este completat, înseamnă că nu sunt create cursuri.';
 $string['pluginname'] = 'Bază de date externă';

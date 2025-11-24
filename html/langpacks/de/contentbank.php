@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'de', version '4.4'.
+ * Strings for component 'contentbank', language 'de', version '4.5'.
  *
  * @package     contentbank
  * @category    string
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['author'] = 'Autor/in';
 $string['choosecontext'] = 'Kurs oder Kursbereich auswählen ...';
 $string['contentbank'] = 'Inhaltsspeicher';
+$string['contentbankcustomfields'] = 'Inhaltsspeicher - Nutzerdefinierte Felder';
 $string['contentbankpreferences'] = 'Inhaltsspeicher einstellen';
 $string['contentcopied'] = 'Inhalt kopiert.';
 $string['contentcreated'] = 'Inhalt angelegt';
@@ -50,6 +51,7 @@ $string['deletecontentconfirm'] = 'Möchten Sie den Inhalt <em>\'{$a->name}\'</e
 $string['deletecontentconfirmlinked'] = 'Der Inhalt wird nur aus dem Inhaltsspeicher gelöscht. Alle Orte, die derzeit darauf verlinken, werden automatisch aktualisiert, um stattdessen eine Kopie des Inhalts zu verwenden.';
 $string['displaydetails'] = 'Inhaltsspeicher mit Dateidetails anzeigen';
 $string['displayicons'] = 'Inhaltsspeicher mit Symbolen anzeigen';
+$string['displayunlisted'] = 'Nicht gelistete Inhalte anzeigen';
 $string['emptynamenotallowed'] = 'Der Name darf nicht leer sein.';
 $string['errordeletingcontentfromcategory'] = 'Fehler beim Löschen von Inhalt aus der Kategorie {$a}.';
 $string['errornofile'] = 'Zum Erstellen von Inhalten wird eine kompatible Datei benötigt.';

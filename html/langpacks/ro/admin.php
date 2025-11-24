@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'ro', version '4.4'.
+ * Strings for component 'admin', language 'ro', version '4.5'.
  *
  * @package     admin
  * @category    string
@@ -302,7 +302,7 @@ $string['configfrontpageloggedin'] = 'Elementele selectate mai sus vor fi afișa
 $string['configfullnamedisplay'] = 'Definește modul în care sunt afișate numele atunci când sunt afișate în întregime. Valoarea implicită, „language”, va afișa confom cu setarea șirului „fullnamedisplay” din pachetul de limbă curent pentru a decide. Unele limbi au convenții de afișare a numelor diferite.
 
 Pentru majoritatea site-urilor monolingve, cea mai eficientă setare este „Prenume Nume”, dar puteți alege să ascundeți numele de familie. Substituenții care pot fi utilizați sunt: prenume, nume, prenume-fonetic, nume fonetic, nume de botez și nume alternativ.';
-$string['configgeoipfile'] = 'Locația fișierului de date binare GeoLite2 City. Acest fișier nu face parte din distribuția Moodle și trebuie obținut separat de <a href="https://www.maxmind.com/"> MaxMind </a>. Puteți cumpăra o versiune comercială sau puteți folosi versiunea gratuită. Va trebui să vă înregistrați pentru a descărca fișierul bazei de date City, pe care îl puteți face la <a href="https://dev.maxmind.com/geoip/geoip2/geolite2/"> https://dev.maxmind.com/geoip/geoip2/geolite2 / </a>. După ce ați înregistrat și descărcat fișierul, extrageți-l în directorul „{$a}” de pe server.';
+$string['configgeoipfile'] = 'Locația fișierului de date binare GeoIP City. Acest fișier nu face parte din distribuția Moodle și trebuie să fie obținut separat de la <a href="https://www.maxmind.com/">MaxMind</a>. Puteți cumpăra fie o versiune comercială, fie să utilizați versiunea gratuită. Va trebui să vă înregistrați pentru a descărca fișierul bazei de date City, pe care îl puteți face la <a href="https://dev.maxmind.com/geoip/geoip2/geolite2/" >https://dev.maxmind.com /geoip/geoip2/geolite2/</a>. După ce v-ați înregistrat și descărcat fișierul, extrageți-l în directorul „{$a}” de pe serverul dvs.';
 $string['configgetremoteaddrconf'] = 'În cazul în care serverul dumneavoastră foloseşte un proxy, puteţi folosi acest parametru pentru a specifica anume care headere HTTP sunt de încredere şi pot să conţină adresa IP remote. Headerele vor fi citite în ordine şi se va folosi primul header care este disponibil.';
 $string['configgradebookroles'] = 'Acest parametru vă permite să stabiliţi care sunt utilizatorii ale căror nume pot apărea în catalog. Pentru ca numele unui utilizator să apară în catalog, utilizatorul respectiv trebuie să aibă cel puţin unul din aceste roluri.';
 $string['configgradeexport'] = 'Selectaţi formatele pe care le veţi folosi cel mai des în cadrul operaţiunii de export a catalogului. Plugin-urile selectate vor fi afişate în câmpurile "exportat în" corespunzătoare fiecărei note. În consecinţă, în funcţie de formatul de export ales, înregitrările fiecărei note vor fi marcate ca "nou" sau "actualizat". Dacă nu sunteţi sigur ce setare să realizaţi aici, nu selectaţi nicio opţiune.';
@@ -714,7 +714,13 @@ $string['fullnamedisplay'] = 'Format nume complet';
 $string['fullnamedisplayprivate'] = 'Format nume complet - privat';
 $string['gdrequired'] = 'Extensia GD este necesară în Moodle pentru conversia imaginii.';
 $string['generalsettings'] = 'Setări generale';
-$string['geoipfile'] = 'Baza de date GeoLite2 City MaxMind DB';
+$string['geoipdbedition'] = 'GeoIP Database Edition';
+$string['geoipdbedition_desc'] = 'Selectați ediția bazei de date GeoIP pentru descărcare. Vă rugăm să rețineți că utilizarea bazei de date GeoIP2-City necesită o licență valabilă plătită.';
+$string['geoipfile'] = 'GeoIP City DB';
+$string['geoipmaxmindaccid'] = 'ID-ul contului MaxMind';
+$string['geoipmaxmindaccid_desc'] = 'ID-ul contului creat în MaxMind API service.';
+$string['geoipmaxmindlicensekey'] = 'Cheie de licențiere MaxMind';
+$string['geoipmaxmindlicensekey_desc'] = 'Cheia de licențiere a contului creat în MaxMind API service.';
 $string['getremoteaddrconf'] = 'Sursa adresei IP de logare';
 $string['globalsearch'] = 'Căutare generală';
 $string['globalsearchmanage'] = 'Activați căutarea generală';
@@ -776,6 +782,11 @@ $string['httpsecurity'] = 'Securitate HTTP';
 $string['iconvrequired'] = 'Instalarea extensiei ICONV este obligatorie';
 $string['igbinary322buggyversion'] = 'Extensia php-igbinary instalată pe site poate duce la probleme la rularea cu PHP 7.2. Vi se recomandă fie să faceți upgrade la php-igbinary 3.2.5 sau o versiune ulterioară, fie, alternativ, să faceți upgrade la PHP 7.3 sau o versiune ulterioară.';
 $string['ignore'] = 'Ignoră';
+$string['importantupdates_content'] = '<p>În următoarea versiune 5.0, planificată pentru a fi lansată în aprilie 2025, actvitățile Chat și Sondaj vor
+fi eliminate din activitățile Moodle. Vor fi disponibile ca plugin-uri la
+<a href="https://moodle.org/plugins/">directorul de plugin-uri Moodle</a>.</p>
+<p>Dacă doriți să folosiți în continuare Chat și Sondaj în site-ul dumneavoastră, le veți putea instala ca plugin-uri înainte de a face actualizarea la Moodle 5.0.</p>';
+$string['importantupdates_title'] = 'Actualizări importante depre activitățile Chat și Survey';
 $string['includemoduleuserdata'] = 'Include informaţii despre utilizatori din cadrul modulelor';
 $string['incompatibleblocks'] = 'Blocuri incompatibile';
 $string['incompleteunicodesupport'] = 'Configurarea curentă a MySQL sau MariaDB utilizează „utf8”. Acest set de caractere nu acceptă caractere de patru octeți care includ unele emoji. Încercarea de a utiliza aceste caractere va duce la o eroare la actualizarea unei înregistrări, iar orice informație trimisă la baza de date se va pierde. Vă rugăm să luați în considerare modificarea setărilor în „utf8mb4”. Consultați documentația pentru detalii complete.';
@@ -794,10 +805,10 @@ $string['ipblocked'] = 'Acest site nu este disponibil în prezent.';
 $string['ipblocker'] = 'Blocare IP';
 $string['ipblockersyntax'] = 'Puneți fiecare intrare pe o singură linie. Intrările valide sunt fie adresa IP completă (cum ar fi <b> 192.168.10.1 </b>) care se potrivește cu o singură gazdă; sau adresă parțială (cum ar fi <b> 192.168 </b>) care se potrivește cu orice adresă începând cu acele numere; sau notație CIDR (cum ar fi <b> 231.54.211.0/20 </b>); sau un interval de adrese IP (cum ar fi <b> 231.3.56.10-20 </b>) în care intervalul se aplică ultimei părți a adresei. Numele de domeniu text (cum ar fi „example.com”) nu sunt acceptate. Liniile goale și textul urmând un caracter „#” sunt ignorate.';
 $string['iplookup'] = 'Căutare adresă IP';
-$string['iplookupgeoplugin'] = 'Serviciul <a href="https://www.geoplugin.com"> geoPlugin </a> este utilizat în prezent pentru a căuta informații geografice. Pentru rezultate mai precise, vă recomandăm să instalați o copie locală a bazei de date MaxMind GeoLite.';
-$string['iplookupinfo'] = 'Serverul online gratuit NetGeo este folosit pentru a căuta locațiile adreselor IP. Cu toate acestea, baza de date nu mai este întreținută și poate returna date incorecte. Se recomandă instalarea unei copii locale a bazei de date gratuite GeoLite2 City de la MaxMind.<br />
+$string['iplookupgeoplugin'] = 'Serviciul <a href="https://www.geoplugin.com">geoPlugin</a> este utilizat în prezent pentru a căuta informații geografice. Pentru rezultate mai exacte, vă recomandăm să instalați o copie locală a bazei de date MaxMind GeoIP City';
+$string['iplookupinfo'] = 'Serverul online gratuit NetGeo este folosit pentru a căuta locațiile adreselor IP. Cu toate acestea, baza de date nu mai este întreținută și poate returna date incorecte. Se recomandă instalarea unei copii locale a unei baze de date GeoIP de la MaxMind.<br />
 Dacă este furnizată o cheie Google Maps API V3, locația adresei IP este afișată folosind Google Maps. Aveți nevoie de un cont Google și pentru a solicita o cheie API Google Maps. Dacă nu este furnizată nicio cheie Google Maps API V3, locația adresei IP este afișată folosind OpenStreetMap.';
-$string['iplookupmaxmindnote'] = 'Acest produs include informaţii GeoLite, creat de MaxMind, disponibil la <a href="http://www.maxmind.com/">http://www.maxmind.com/</a>.';
+$string['iplookupmaxmindnote'] = 'Acest produs include informaţii GeoIP City creat de MaxMind, disponibil la <a href="http://www.maxmind.com/">http://www.maxmind.com/</a>.';
 $string['iscustomadminwarnings'] = 'S-a detectat că site-ul dvs. folosește un director personalizat de administrare. Această caracteristică nu mai este acceptată și va fi eliminată după Moodle 4.2.';
 $string['ishttpswarning'] = 'Site-ul dumneavoastră nu utilizează HTTPS. Este recomandat să migrați site-ul la HTTPS pentru un sistem de securitate superior și pentru o integrare îmbunătățită a celorlalte sisteme.';
 $string['keeptagnamecase'] = 'În etichete păstrează combinaţia majuscule/minuscule';
@@ -830,19 +841,19 @@ $string['locationsettings'] = 'Setări locație';
 $string['locked'] = 'Blocat';
 $string['lockoutduration'] = 'Durata de blocare a contului';
 $string['lockoutduration_desc'] = 'Contul blocat este automat deblocat după această durată.';
-$string['lockoutemailbody'] = 'Contul dumneavoastră cu numele de utilizator  {$a->username} pe serverul \'{$a->sitename}\'
+$string['lockoutemailbody'] = 'Bună ziua {$a->firstname},
+
+Contul dumneavoastră cu numele de utilizator {$a->username} pe serverul \'{$a->sitename}\'
 a fost blocat după mai multe încercări nereușite de autentificare.
 
 Pentru a debloca acest cont, mergeți la următoarea adresă
 
 {$a->link}
 
-În cele mai multe programe, apare ca un link albastru pe care puteți da clic. Dacă acest lucru nu funcționează, dați copy-past adresei în fereastra browserului.
+În cele mai multe programe, apare un link albastru pe care puteți da click. Dacă acest lucru nu funcționează, dați copy-paste adresei în bara de adrese a browser-ului web.
 
 Dacă aveți nevoie de ajutor, vă rugăm să contactați administratorul site-ului.
-{$a->admin}
-
-Vă mulțumim!';
+{$a->admin}';
 $string['lockoutemailsubject'] = 'Contul dumneavoastră {$a} a fost blocat';
 $string['lockouterrorunlock'] = 'Informații invalide furnizate pentru deblocarea contului.';
 $string['lockoutthreshold'] = 'Prag de blocare a contului';
@@ -957,8 +968,6 @@ $string['moodlepartners_help'] = '<p>Partenerii Moodle sunt furnizori de servici
 <a href="https://moodle.com/partners"> Găsiți un partener </a>';
 $string['moodleservices'] = 'Servicii Moodle';
 $string['moodleservices_help'] = 'Asigurați-vă că obțineți tot ce este mai bun de la mediul dvs. de învățare Moodle utilizând aceste servicii Moodle:';
-$string['multilangforceold'] = 'Forțează vechea sintaxă multilang: &lt;span&gt; fără class="multilang"
-și &lt;lang&gt;';
 $string['mustenablestats'] = 'Funcţionalitatea Statistici nu a fost încă activată în cadrul acestui site.';
 $string['mycourses'] = 'Cursurile mele';
 $string['mydashboard'] = 'Tablou de bord implicit al sistemului';
@@ -1192,8 +1201,8 @@ $string['registration_help'] = 'Prin înregistrare:
 * Veți primi alerte de securitate
 * Puteți activa notificările push de aplicații mobile de pe site-ul dvs.
 * Contribuiți la statisticile noastre Moodle ale comunității mondiale';
-$string['registrationwarning'] = 'Site-ul dvs. nu este încă înregistrat.';
-$string['registrationwarningcontactadmin'] = 'Site-ul dumneavoastră nu este încă înregistrat. Vă rugăm să anunțați administratorul.';
+$string['registrationwarning'] = 'Nu ratați actualizări importante sau alerte de securitate.';
+$string['registrationwarningcontactadmin'] = 'Acest site nu este înregistrat. Vă rugăm să solicitați administratorului să înregistreze site-ul pentru a nu rata actualizări importante.';
 $string['releasenoteslink'] = 'Pentru informații referitoare la această versiune Moodle, vedeți <a target="_blank" href="{$a}">Informații versiune lansată</a>';
 $string['rememberuserlicensepref'] = 'Rețineți preferința de licență a utilizatorului';
 $string['rememberuserlicensepref_help'] = 'Dacă este activată, ultima licență selectată de utilizator este preselectată la încărcarea unui fișier în selectorul de fișiere. În caz contrar, licența implicită a site-ului este preselectată.';
@@ -1377,6 +1386,7 @@ $string['stickyblockscourseview'] = 'Pagină curs';
 $string['stickyblocksduplicatenotice'] = 'Dacă adăugaţi aici un bloc ce există deja în cadrul unei pagini, se va crea un duplicat.<br/>Blocul fix nu va putea fi modificat, blocul duplicat va putea fi modificat.';
 $string['stickyblocksmymoodle'] = 'My Moodle';
 $string['stickyblockspagetype'] = 'Tipul paginii de configurat';
+$string['storedprogressbarcleanuptask'] = 'Sarcină de curățare a barei de progres stocată';
 $string['strictformsrequired'] = 'Validare strictă a câmpurilor necesare';
 $string['stripalltitletags'] = 'Ştergeţi etichetele HTML din numele tuturor activităţilor';
 $string['supportandservices'] = 'Suport și servicii';
@@ -1387,6 +1397,7 @@ $string['supportemailsubject'] = 'Solicitare de suport pe site - {$a}';
 $string['supportname'] = 'Denumirea activității de suport';
 $string['supportpage'] = 'Link pagină de suport';
 $string['suspenduser'] = 'Suspendare cont de utilizator';
+$string['swaggerui'] = 'Moodle REST API UI (SwaggerUI)';
 $string['switchlang'] = 'Comutator director lang';
 $string['systempaths'] = 'Căi de sistem';
 $string['tablenosave'] = 'Schimbările în tabelul de mai sus sunt salvate automat';
@@ -1477,6 +1488,7 @@ $string['taskstatscron'] = 'Procesare background pentru statistici';
 $string['tasktagcron'] = 'Procesare background pentru etichete';
 $string['tasktempfilecleanup'] = 'Șterge fișierele temporare stale';
 $string['tasktype'] = 'Tip';
+$string['taskupdategeoip2file'] = 'Actualizare fișier GeoIP';
 $string['tempdatafoldercleanup'] = 'Șterge fișierele de date temporare mai vechi de';
 $string['templates'] = 'Șabloane';
 $string['testoutgoingmailconf'] = 'Testați configurația de trimitere a e-mailurilor';

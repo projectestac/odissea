@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'fr', version '4.4'.
+ * Strings for component 'glossary', language 'fr', version '4.5'.
  *
  * @package     glossary
  * @category    string
@@ -111,7 +111,7 @@ $string['definitions'] = 'Définitions';
 $string['deletecategory'] = 'Supprimer la catégorie';
 $string['deleteentry'] = 'Supprimer l’article';
 $string['deleteentrya'] = 'Supprimer l’article : {$a}';
-$string['deletenotenrolled'] = 'Supprimer les articles des utilisateurs non inscrits';
+$string['deletenotenrolled'] = 'Articles des utilisateurs non inscrits';
 $string['deletingcomment'] = 'Suppression du commentaire';
 $string['deletingnoneemptycategory'] = 'La suppression de cette catégorie ne supprimera pas les articles qu’elle contient. Ceux-ci seront marquées comme sans catégorie.';
 $string['descending'] = 'descendant';
@@ -301,9 +301,9 @@ $string['privacy:metadata:glossary_entries:userid'] = 'L’identifiant de l’ut
 $string['question'] = 'Question';
 $string['rejectedentries'] = 'Articles rejetés';
 $string['rejectionrpt'] = 'Rapport de rejet';
-$string['removeallglossarytags'] = 'Supprimer tous les tags du glossaire';
+$string['removeallglossarytags'] = 'Tous les tags du glossaire';
 $string['resetglossaries'] = 'Supprimer les articles depuis le';
-$string['resetglossariesall'] = 'Supprimer les articles de tous les glossaires';
+$string['resetglossariesall'] = 'Articles de tous les glossaires';
 $string['rssarticles'] = 'Nombres d’articles RSS récents';
 $string['rssarticles_help'] = '<p>Cette option vous permet de fixer le nombre d’articles récents à inclure dans le flux RSS.</p>
 

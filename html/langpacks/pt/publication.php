@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'publication', language 'pt', version '4.4'.
+ * Strings for component 'publication', language 'pt', version '4.5'.
  *
  * @package     publication
  * @category    string
@@ -54,9 +54,6 @@ $string['completionupload'] = 'O aluno tem de submeter um ficheiro';
 $string['configautoimport'] = 'Se preferir que as submissões dos alunos sejam automaticamente importadas para as instâncias da Pasta do Aluno. Esse recurso pode ser ativado / desativado para cada instância da Pasta do aluno separadamente.';
 $string['configmaxbytes'] = 'Tamanho máximo predefinido para todos os ficheiros na Pasta do Aluno.';
 $string['configmaxfiles'] = 'Número máximo de anexos permitidos por utilizador.';
-$string['configobtainstudentapproval'] = 'Os ficheiros só serão publicados (visíveis para todos) após a aprovação do aluno e do professor.';
-$string['configobtainteacherapproval'] = 'Por predefinição, os documentos dos alunos estão visíveis para todos os outros participantes.';
-$string['configrequiremodintro'] = 'Desative esta opção se não quiser forçar os utilizadores a inserir a descrição de cada atividade.';
 $string['courseuploadlimit'] = 'Limite da disciplina';
 $string['currentlynotapproved'] = '* Atualmente não aprovado ou reprovado para publicação.';
 $string['cutoffdate'] = 'Data de fecho';
@@ -122,6 +119,14 @@ $string['nothing_to_show_groups'] = 'Nada para mostrar - nenhum grupo disponíve
 $string['nothing_to_show_users'] = 'Nada para mostrar - nenhum aluno disponível';
 $string['nothingtodisplay'] = 'Nenhuma entrada para mostrar';
 $string['notice'] = '<strong>Atenção</strong>:';
+$string['notice_obtainapproval_import_both'] = 'Como professor, pode rejeitar a aprovação para publicação a qualquer momento, caso um ficheiro não cumpra os requisitos definidos.';
+$string['notice_obtainapproval_import_studentonly'] = 'Para cumprimento da lei dos direitos de autor, pedimos que solicite aprovação para publicar ficheiros dos alunos de forma separada.<br>
+Como professor, pode rejeitar a aprovação para publicação a qualquer momento, caso um ficheiro não cumpra os requisitos definidos.';
+$string['notice_obtainapproval_upload_automatic'] = 'Para cumprimento da lei dos direitos de autor, pedimos que solicite aprovação para publicar ficheiros dos alunos de forma separada.<br>
+Como professor, pode rejeitar a aprovação para publicação a qualquer momento, caso um ficheiro não cumpra os requisitos definidos.';
+$string['notice_obtainapproval_upload_teacher'] = 'Para cumprimento da lei dos direitos de autor, pedimos que solicite aprovação para publicar ficheiros dos alunos de forma separada.<br>
+Como professor, pode rejeitar a aprovação para publicação a qualquer momento, caso um ficheiro não cumpra os requisitos definidos.';
+$string['notice_obtainteacherapproval_studentsapproval'] = 'Para cumprimento da lei dos direitos de autor, pedimos que solicite aprovação para publicar ficheiros dos alunos de forma separada.';
 $string['notifications'] = 'Notificações';
 $string['notifystudents'] = 'Notificar os alunos sobre alterações da publicação';
 $string['notifystudents_help'] = 'Se ativar esta opção, os alunos receberão uma mensagem sempre que for alterado o estado da aprovação de qualquer um dos seus ficheiros carregados.';
@@ -174,7 +179,6 @@ $string['published_aftercheck'] = 'Requer aprovação dos professores';
 $string['published_immediately'] = 'Aprovado automaticamente';
 $string['rejected'] = 'Rejeitado';
 $string['rejectusers'] = 'Rejeitado';
-$string['requiremodintro'] = 'Requer descrição da atividade';
 $string['reset'] = 'Reverter';
 $string['reset_userdata'] = 'Todos os dados';
 $string['resetstudentapproval'] = 'Reverter aprovação';

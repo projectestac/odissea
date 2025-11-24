@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'it', version '4.4'.
+ * Strings for component 'role', language 'it', version '4.5'.
  *
  * @package     role
  * @category    string
@@ -28,6 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['addinganewrole'] = 'Aggiungi un ruolo';
 $string['addrole'] = 'Aggiungi un ruolo';
 $string['advancedoverride'] = 'Modifica avanzata ruolo';
+$string['ai:acceptpolicy'] = 'Accettare politiche IA';
+$string['ai:fetchanyuserpolicystatus'] = 'Ottenere l\'accettazione della politica AI degli utenti';
+$string['ai:fetchpolicy'] = 'Ottenere l\'accettazione della politica AI degli utenti';
 $string['allow'] = 'Consenti';
 $string['allowassign'] = 'Autorizzati ad assegnare ruoli';
 $string['allowed'] = 'Consentito';
@@ -164,6 +167,8 @@ $string['confirmunassignno'] = 'Annulla';
 $string['confirmunassigntitle'] = 'Conferma cambiamento di ruolo';
 $string['confirmunassignyes'] = 'Rimuovi';
 $string['contentbank:access'] = 'Accedere al deposito dei contenuti';
+$string['contentbank:changelockedcustomfields'] = 'Modificare i campi personalizzati bloccati del deposito dei contenuti';
+$string['contentbank:configurecustomfields'] = 'Modificare i campi personalizzati del deposito dei contenuti';
 $string['contentbank:copyanycontent'] = 'Copiare qualsiasi contenuto dal deposito dei contenuti';
 $string['contentbank:copycontent'] = 'Copiare contenuto nel deposito dei contenuti';
 $string['contentbank:deleteanycontent'] = 'Eliminare qualsiasi contenuto dal deposito dei contenuti';
@@ -191,6 +196,7 @@ $string['course:create'] = 'Creare corsi';
 $string['course:creategroupconversations'] = 'Creare conversazioni di gruppo';
 $string['course:delete'] = 'Eliminare corsi';
 $string['course:downloadcoursecontent'] = 'Scaricare contenuti dei corsi';
+$string['course:editcoursewelcomemessage'] = 'Modificare messaggio di benvenuto al corso';
 $string['course:enrolconfig'] = 'Configurare istanze di plugin di iscrizione nei corsi';
 $string['course:enrolreview'] = 'Rivedere le iscrizioni al corso';
 $string['course:ignoreavailabilityrestrictions'] = 'Ignorare disponibilità condizionata';
@@ -239,8 +245,8 @@ $string['defaultrole'] = 'Ruolo di default';
 $string['defaultx'] = 'Default: {$a}';
 $string['defineroles'] = 'Gestione ruoli';
 $string['definitionofrolex'] = 'Definizione del ruolo \'{$a}\'';
-$string['deletecourseoverrides'] = 'Cancellare tutte le modifiche di ruolo nel corso';
-$string['deletelocalroles'] = 'Cancellare tutte le assegnazioni locali di ruolo';
+$string['deletecourseoverrides'] = 'Tutte le modifiche di ruolo nel corso';
+$string['deletelocalroles'] = 'Tutte le assegnazioni locali di ruolo';
 $string['deleterolesure'] = '<p>Sei sicuro di eliminare il ruolo "{$a->name} ({$a->shortname})"?</p><p>Al momento questo ruolo è assegnato a {$a->count} utenti.</p>';
 $string['deletexrole'] = 'Elimina il ruolo {$a}';
 $string['duplicaterole'] = 'Duplica ruolo';
@@ -521,6 +527,7 @@ $string['user:viewalldetails'] = 'Visualizzare il profilo completo degli utenti'
 $string['user:viewdetails'] = 'Visualizzare i profili utente';
 $string['user:viewhiddendetails'] = 'Visualizzare campi nascosti nei profili utenti';
 $string['user:viewlastip'] = 'Visualizzare Indirizzo IP più recente';
+$string['user:viewprofilepictures'] = 'Visualizza le immagini degli utenti (se è abilitata l\'autenticazione obbligatoria) l\'accesso forzato)';
 $string['user:viewuseractivitiesreport'] = 'Visualizzare i report delle attività degli utenti';
 $string['user:viewusergrades'] = 'Visualizzare le valutazioni degli utenti';
 $string['usersfrom'] = 'Utenti da {$a}';

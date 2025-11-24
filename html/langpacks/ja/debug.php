@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'ja', version '4.4'.
+ * Strings for component 'debug', language 'ja', version '4.5'.
  *
  * @package     debug
  * @category    string
@@ -32,7 +32,7 @@ $string['cannotdowngrade'] = '{$a->plugin} を {$a->oldversion} から {$a->newv
 $string['cannotfindadmin'] = '管理ユーザが見つかりませんでした!';
 $string['cannotinitpage'] = 'ページを完全に初期化できません: 無効な {$a->name} ID {$a->id}';
 $string['cannotsetuptable'] = '{$a} テーブルを正常に設定できませんでした!';
-$string['codingerror'] = 'コーディングエラーが検出されました。プログラマによって修正される必要があります: {$a}';
+$string['codingerror'] = 'コーディングエラーが検出されました。プログラマにより修正される必要があります: {$a}';
 $string['configmoodle'] = 'まだMoodleは設定されていません。あなたは最初にconfig.phpを編集する必要があります。';
 $string['debuginfo'] = 'デバッグ情報';
 $string['erroroccur'] = 'この処理中にエラーが発生しました。';
@@ -67,7 +67,7 @@ $string['reactive_saveingwarning'] = '警告: 状態を編集した場合、予�
 $string['reactive_statedata'] = '状態データ';
 $string['reactive_unpin'] = 'ピン留め解除';
 $string['sessionmissing'] = 'セッションに {$a} オブジェクトがありません。';
-$string['sqlrelyonobsoletetable'] = 'このSQLは古いテーブル {$a} を参照しています! あなたのコードは開発者によって修正される必要があります。';
+$string['sqlrelyonobsoletetable'] = 'このSQLは古いテーブル {$a} を参照しています! あなたのコードは開発者により修正される必要があります。';
 $string['stacktrace'] = 'スタックトレース';
 $string['withoutversion'] = 'メインversion.phpファイルが存在しないか、読めない、または壊れています。';
 $string['xmlizeunavailable'] = 'xmlize関数を利用できません。';

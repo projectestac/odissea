@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'ja', version '4.4'.
+ * Strings for component 'report_log', language 'ja', version '4.5'.
  *
  * @package     report_log
  * @category    string
@@ -37,6 +37,8 @@ $string['eventuserreportviewed'] = 'ユーザログレポートが閲覧され�
 $string['log:view'] = 'コースログを表示する';
 $string['log:viewtoday'] = '本日のログを表示する';
 $string['logsformat'] = 'ログフォーマット';
+$string['missingcontext'] = '削除 {$a->name} (id \'{$a->instanceid}\')';
+$string['missingcourse'] = '不明コース (ID「 {$a->instanceid} 」)';
 $string['nocapability'] = 'ユーザログレポートにアクセスできません。';
 $string['nologreaderenabled'] = '有効にされているログリーダはありません。';
 $string['origin'] = 'ソース';

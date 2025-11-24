@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ro', version '4.4'.
+ * Strings for component 'report_security', language 'ro', version '4.5'.
  *
  * @package     report_security
  * @category    string
@@ -129,6 +129,7 @@ $string['check_unsecuredataroot_error'] = 'Directorul dumneavoastră dataroot <c
 $string['check_unsecuredataroot_name'] = 'Director dataroot expus riscurilor';
 $string['check_unsecuredataroot_ok'] = 'Directorul dataroot nu trebuie să fie accesibil via Web.';
 $string['check_unsecuredataroot_warning'] = 'Directorul dumneavoastră dataroot <code>{$a}</code> este într-o locaţie incorectă şi este posibil să fie expus pe Web.';
+$string['check_upgradefile_info'] = 'Fișierele cu observații ale procesului de actualizare nu ar trebui să fie publice';
 $string['check_vendordir_details'] = '<p> Directorul <code> {$a->path} </code> conține diverse biblioteci terțe și dependențele acestora, instalate de obicei de PHP Composer. Aceste biblioteci pot fi necesare pentru dezvoltarea locală a Moodle, cum ar fi instalarea cadrului PHPUnit. Nu sunt necesare pentru a rula un site Moodle în producție și pot conține cod potențial periculos, expunând site-ul dvs. la atacuri de la distanță. </p> <p> Este recomandat să eliminați directorul dacă site-ul este disponibil printr-un URL public, sau cel puțin interzice accesul web la acesta în configurația serverului dvs. web. </p>';
 $string['check_vendordir_info'] = 'Directorul vendor nu ar trebui să apară pe site-uri publice.';
 $string['check_vendordir_name'] = 'Director Vendor';

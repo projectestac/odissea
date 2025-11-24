@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'de', version '4.4'.
+ * Strings for component 'qtype_ddmarker', language 'de', version '4.5'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -37,7 +37,7 @@ $string['draggableitem'] = 'Verschiebbares Element';
 $string['draggableitemheader'] = 'Verschiebbares Element {$a}';
 $string['draggableitemtype'] = 'Typ';
 $string['draggableword'] = 'Verschiebbarer Text';
-$string['dropbackground'] = 'Hintergrundbild, auf das die Markierungen gezogen werden';
+$string['dropbackground'] = 'Hintergrundbild, auf das die Objekte gezogen werden';
 $string['dropzone'] = 'Dropzone {$a}';
 $string['dropzoneheader'] = 'Dropzonen';
 $string['dropzones'] = 'Dropzonen';
@@ -60,8 +60,8 @@ $string['followingarewrong'] = 'Die Markierungensind in den falschen Bereich ges
 $string['followingarewrongandhighlighted'] = 'Falsch platzierte Markierungen: {$a}. Hervorgehobene Markierungen werden jetzt an den richtigen Stellen angezeigt. Klicken Sie auf die Markierung, um den erlaubten Bereich hervorzuheben.';
 $string['formerror_dragrequired'] = 'Sie müssen mindestens eine Markierung für diese Frage definieren.';
 $string['formerror_droprequired'] = 'Sie müssen mindestens einen Ablagebereich für diese Frage definieren.';
-$string['formerror_nobgimage'] = 'Sie müssen ein Hintergrundbild für die "Drag-and-drop"-Fläche wählen.';
-$string['formerror_noitemselected'] = 'Sie haben einen Ablegebereich festgelegt, aber keine Markierung ausgewählt, welche in den Bereich gezogen werden soll.';
+$string['formerror_nobgimage'] = 'Sie müssen ein Hintergrundbild für die Drag&drop-Fläche wählen.';
+$string['formerror_noitemselected'] = 'Sie haben einen Ablegebereich festgelegt, aber kein Objekt ausgewählt, welches in den Bereich gezogen werden soll.';
 $string['formerror_nosemicolons'] = 'Ihre Koordinaten-Zeichenkette enthält keine \';\'. Ihre Koordinaten für ein(en) {$a->shape} müssen als {$a->coordsstring} ausgedrückt werden.';
 $string['formerror_onlysometagsallowed'] = 'Nur \'{$a}\' Tags sind in der Beschreibung für eine Markierung erlaubt.';
 $string['formerror_onlyusewholepositivenumbers'] = 'Verwenden Sie ausschließlich positive ganze Zahlen, um x,y Koordinaten bzw. um Höhe und Breite zu beschreiben. Die Parameter für ein(en) {$a->shape} müssen in der Form \'{$a->coordstring}\' eingegeben werden.';
@@ -78,17 +78,17 @@ $string['markers'] = 'Markierungen';
 $string['nolabel'] = 'Kein Beschriftungstext';
 $string['noofdrags'] = 'Anzahl';
 $string['pleasedragatleastonemarker'] = 'Die Antwort ist nicht vollständig. Sie müssen mindestens eine Markierung auf das Bild setzen.';
-$string['pluginname'] = 'Drag-and-drop-Markierungen';
-$string['pluginname_help'] = '"Drag-and-drop- Markierungen" benötigen Platzhalter, um Textbausteine in die vorgesehenen Anlegebereiche auf dem Hintergrundbild verschieben zu können.';
+$string['pluginname'] = 'Drag&drop-Objekte';
+$string['pluginname_help'] = 'Drag&drop-Objekte benötigen Platzhalter, um Textfelder in die vorgesehenen Anlegebereiche auf dem Hintergrundbild verschieben zu können.';
 $string['pluginname_link'] = 'question/type/ddmarker';
-$string['pluginnameadding'] = 'Füge "Drag-and-drop- Markierungen" hinzu';
-$string['pluginnameediting'] = 'Bearbeite "Drag-and-drop- Markierungen"';
-$string['pluginnamesummary'] = 'Markierungen werden per Drag-and-drop auf ein Hintergrundbild gezogen.
+$string['pluginnameadding'] = 'Drag&drop-Objekte hinzufügen';
+$string['pluginnameediting'] = 'Drag&drop-Objekte bearbeiten';
+$string['pluginnamesummary'] = 'Objekte werden per Drag&drop auf ein Hintergrundbild gezogen.
 
 Hinweis: Dieser Fragetyp ist für sehbehinderte Nutzer/innen nicht barrierefrei.';
 $string['previewareaheader'] = 'Vorschau';
-$string['previewareamessage'] = 'Wählen Sie ein Hintergrundbild, geben Sie Texte für die Markierungen ein und legen Sie die Ablagebereiche auf dem Hintergrundbild fest, auf welche die Markierungen gezogen werden müssen.';
-$string['privacy:metadata'] = 'Das Plugin "Drag-and-Drop Markierungen Frageformat" erlaubt es Frageautor/innen, standardmäßige Optionen als Nutzereinstellungen zu setzen.';
+$string['previewareamessage'] = 'Wählen Sie ein Hintergrundbild, geben Sie Textfelder als Objekte an und legen Sie die Ablagebereiche auf dem Hintergrundbild fest, auf welche die Objekte gezogen werden sollen.';
+$string['privacy:metadata'] = 'Das Frageformat "Drag&drop-Objekte" erlaubt es Frageautor/innen, standardmäßige Optionen als Nutzereinstellungen zu setzen.';
 $string['privacy:preference:defaultmark'] = 'Die Standardmarkierung wird für eine bestimmte Frage gesetzt.';
 $string['privacy:preference:penalty'] = 'Abzug für jeden falschen Versuch, wenn Fragen mit dem Verhalten "Interaktiv mit mehreren Versuchen" oder "Adaptiver Modus" ausgeführt werden.';
 $string['privacy:preference:shuffleanswers'] = 'Gibt an, ob die Antworten automatisch gemischt werden sollen.';

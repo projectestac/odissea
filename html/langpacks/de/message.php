@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'de', version '4.4'.
+ * Strings for component 'message', language 'de', version '4.5'.
  *
  * @package     message
  * @category    string
@@ -69,6 +69,7 @@ $string['disallowed'] = 'Aus (gesperrt)';
 $string['editmessages'] = 'Mitteilungen bearbeiten';
 $string['emailtagline'] = 'Dies ist eine Kopie einer Mitteilung, die Ihnen auf der Website "{$a->sitename}" gesendet wurde. Gehen Sie zu <a href="{$a->url}">{$a->url}</a>, um zu antworten.';
 $string['enabled'] = 'Aktiviert';
+$string['enablenotificationplugin'] = 'Benachrichtigungsplugin aktivieren: {$a}';
 $string['errorcallingprocessor'] = 'Fehler bei der angegebenen Ausgabe';
 $string['errorconversationdoesnotexist'] = 'Diese Kommunikation gibt es nicht.';
 $string['errormessagetoolong'] = 'Die Mitteilung ist länger als maximal erlaubt.';
@@ -139,6 +140,7 @@ $string['notificationdatahasnotbeenmigrated'] = 'Ihre Mitteilungen sind vorüber
 $string['notificationimage'] = 'Bild für Mitteilungen';
 $string['notificationpreferences'] = 'Systemnachrichten';
 $string['notifications'] = 'Systemnachrichten';
+$string['notificationsmarkedasread'] = 'Alle Benachrichtigungen sind als gelesen markiert.';
 $string['notificationwindow'] = 'Mitteilungsfenster';
 $string['notincontacts'] = 'Sie müssen {$a} zu Ihren Kontakten hinzufügen, um Mitteilungen senden zu können.';
 $string['notincontactsheading'] = '{$a} gehört nicht zu Ihren Kontakten.';
@@ -153,6 +155,7 @@ $string['page-message-x'] = 'Jede Mitteilungsseite';
 $string['participants'] = 'Teilnehmer/innen';
 $string['pendingcontactrequests'] = 'Es gibt {$a} anstehende Kontaktanfragen.';
 $string['permitted'] = 'Aktiviert';
+$string['preference'] = 'Präferenz';
 $string['privacy'] = 'Datenschutz';
 $string['privacy:export:conversationprefix'] = 'Kommunikation:';
 $string['privacy:metadata:core_favourites'] = 'Diese Kommunikationen wurden von der Person als Favorit markiert';

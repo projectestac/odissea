@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'de', version '4.4'.
+ * Strings for component 'qtype_ddwtos', language 'de', version '4.5'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -29,17 +29,19 @@ $string['addmorechoiceblanks'] = 'Leerfelder für {no} weitere Wahlmöglichkeite
 $string['answer'] = 'Antwort';
 $string['blank'] = 'leer';
 $string['blanknumber'] = 'Leer {$a}';
+$string['choicesacceptedtext'] = 'Schreiben Sie die Antworten, die in die Lücken gezogen werden sollen. Sie können zusätzliche Antworten hinzufügen, um den Schwierigkeitsgrad zu erhöhen. <br/>
+Akzeptierte Textformatierung: &lt;sub&gt;, &lt;sup&gt;, &lt;b&gt;, &lt;i&gt;, &lt;em&gt;, &lt;strong&gt;. TeX wird ebenfalls akzeptiert, wenn $$ am Anfang und am Ende verwendet wird.';
 $string['correctansweris'] = 'Die richtige Antwort lautet: {$a}';
 $string['errorlimitedchoice'] = 'Die Wahlmöglichkeit [[{$a}]] wurde mehr als einmal verwendet, ohne auf "Unbegrenzt" gesetzt zu sein. Bitte überprüfen Sie diese Frage erneut.';
 $string['infinite'] = 'Unbegrenzt';
 $string['pleaseputananswerineachbox'] = 'Schieben Sie eine Antwort in jedes Feld.';
-$string['pluginname'] = 'Drag-and-drop auf Text';
-$string['pluginname_help'] = 'Fragetexte mit Drag-and-drop-Lücken benötigen Platzhalter, um die richtigen Antworten in die entsprechenden Lücken im Fragetext zuordnen zu können. [[1]], [[2]], [[3]], ... werden als Platzhalter im Fragetext benutzt, wobei die richtigen Antworten als Auswahlantworten 1, 2, 3, ... angegeben sind. Antworten können gruppiert werden, um alle Antwortenmöglichkeiten für eine Lücke farblich zu markieren. Wenn Antwortmöglichkeiten als \'unbegrenzt\' markiert sind, können sie in mehr als einer Lücke verwendet werden.';
+$string['pluginname'] = 'Drag&drop auf Text';
+$string['pluginname_help'] = 'Fragetexte mit Drag&drop-Lücken benötigen Platzhalter, um die richtigen Antworten in die entsprechenden Lücken im Fragetext zuordnen zu können. [[1]], [[2]], [[3]], ... werden als Platzhalter im Fragetext benutzt, wobei die richtigen Antworten als Auswahlantworten 1, 2, 3, ... angegeben sind. Antworten können gruppiert werden, um alle Antwortenmöglichkeiten für eine Lücke farblich zu markieren. Wenn Antwortmöglichkeiten als \'unbegrenzt\' markiert sind, können sie in mehr als einer Lücke verwendet werden.';
 $string['pluginname_link'] = 'question/type/ddwtos';
-$string['pluginnameadding'] = '"Drag-and-drop auf Text" hinzufügen';
-$string['pluginnameediting'] = '"Drag-and-drop auf Text" bearbeiten';
+$string['pluginnameadding'] = '"Drag&drop auf Text" hinzufügen';
+$string['pluginnameediting'] = '"Drag&drop auf Text" bearbeiten';
 $string['pluginnamesummary'] = 'Fehlende Wörter im Fragetext werden per Drag-and-drop ausgefüllt.';
-$string['privacy:metadata'] = 'Das Plugin "Drag-and-Drop in Text Frageformat" erlaubt es Frageautor/innen, standardmäßige Optionen als Nutzereinstellungen zu setzen.';
+$string['privacy:metadata'] = 'Das Frageformat "Drag&drop in Text" erlaubt es Frageautor/innen, standardmäßige Optionen als Nutzereinstellungen zu setzen.';
 $string['privacy:preference:defaultmark'] = 'Die Standardmarkierung wird für eine bestimmte Frage gesetzt.';
 $string['privacy:preference:penalty'] = 'Abzug für jeden falschen Versuch, wenn Fragen mit dem Verhalten "Interaktiv mit mehreren Versuchen" oder "Adaptiver Modus" ausgeführt werden.';
 $string['privacy:preference:shuffleanswers'] = 'Gibt an, ob die Antworten automatisch gemischt werden sollen.';

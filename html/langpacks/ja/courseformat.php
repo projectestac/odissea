@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'courseformat', language 'ja', version '4.4'.
+ * Strings for component 'courseformat', language 'ja', version '4.5'.
  *
  * @package     courseformat
  * @category    string
@@ -37,6 +37,7 @@ $string['bulkedit'] = 'バルク操作';
 $string['bulkeditingcourse'] = 'バルクコース編集: {$a}';
 $string['bulkselection'] = '{$a} 選択済み';
 $string['bulkselection_plural'] = '{$a} 選択済み';
+$string['cm_add_feedback'] = '{$a->modname} が追加されました。.';
 $string['cm_complete_feedback'] = '{$a->name} が完了マークされました。';
 $string['cm_complete_feedback_batch'] = '選択された {$a->count} 件の活動が完了マークされました。';
 $string['cm_delete_feedback'] = '{$a->name} が削除されました。';
@@ -58,8 +59,10 @@ $string['cm_uncomplete_feedback_batch'] = '選択された {$a->count} 件の活
 $string['cm_visiblegroups_feedback'] = '{$a->name} のグループモードが「可視グループ」に変更されました。';
 $string['cmavailability'] = '活動利用';
 $string['cmdelete_info'] = 'これにより {$a->name} および含まれるすべてのユーザデータが削除されます。';
+$string['cmdelete_subsectiontitle'] = 'サブセクションを削除しますか?';
 $string['cmdelete_title'] = '活動を削除してもよろしいですか?';
 $string['cmmove_info'] = '「 {$a} 」を次の後に移動する';
+$string['cmmove_subsectiontitle'] = 'サブセクションを移動する';
 $string['cmmove_title'] = '活動を移動する';
 $string['cmsdelete'] = '活動を削除する';
 $string['cmsdelete_info'] = 'これにより {$a->count} 活動および含まれるすべてのユーザデータが削除されます。';
@@ -70,15 +73,19 @@ $string['cmsmove_info'] = '{$a} 活動を次の後に移動する';
 $string['cmsmove_title'] = '選択された活動を移動する';
 $string['courseindex'] = 'コースインデックス';
 $string['courseindexoptions'] = 'コースインデックスオプション';
+$string['maxsectionaddmessage'] = 'あなたはコースで許可されるセクション数上限に達しました。';
 $string['nobulkaction'] = 'バルクアクション利用不可';
+$string['orphansectionwarning'] = 'このセクションおよびコンテンツはコース構造の一部ではなく、学生には表示されません。このコンテンツを使用するには別のセクションに移動してください。';
 $string['preference:coursesectionspreferences'] = 'コース {$a} のセクションユーザプレファレンス';
 $string['privacy:metadata:preference:coursesectionspreferences'] = '折り畳みおよび展開のようなセクションユーザプレファレンスです。';
+$string['section_add_feedback'] = 'セクションが追加されました。';
 $string['section_delete_feedback'] = 'コースセクション {$a->name} が削除されました。';
 $string['section_delete_feedback_batch'] = '選択された {$a->count} 件のコースセクションが削除されました。';
 $string['section_hide_feedback'] = 'コースセクション {$a->name} が秘匿されました。';
 $string['section_hide_feedback_batch'] = '選択された {$a->count} 件のコースセクションが秘匿されました。';
 $string['section_show_feedback'] = 'コースセクション {$a->name} が表示されるようになりました。';
 $string['section_show_feedback_batch'] = '選択された {$a->count} 件のコースセクションが表示されるようになりました。';
+$string['sectionaddmax'] = 'あなたはコースで許可されるセクション数上限に達しました ...';
 $string['sectionavailability_title'] = 'セクション利用';
 $string['sectiondelete_info'] = 'これにより {$a->name} および含まれるすべての活動が削除されます。';
 $string['sectiondelete_title'] = 'セクションを削除してもよろしいですか?';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ar', version '4.4'.
+ * Strings for component 'report_security', language 'ar', version '4.5'.
  *
  * @package     report_security
  * @category    string
@@ -129,6 +129,7 @@ $string['check_unsecuredataroot_error'] = 'مجلد dataroot الخاص بك <co
 $string['check_unsecuredataroot_name'] = 'dataroot غير آمن';
 $string['check_unsecuredataroot_ok'] = 'مجلد Dataroot ينبغي أن لا يكون متاحاً للوصول عبر الويب.';
 $string['check_unsecuredataroot_warning'] = 'مجلد dataroot الخاص بك <code>{$a}</code> هو في الموضع الخطأ وقد يكون مكشوفاً للويب.';
+$string['check_upgradefile_info'] = 'ترقية ملفات الملاحظات ينبغي أن لا تكون مشاعة';
 $string['check_vendordir_details'] = '<p>المجلد <code>{$a->path}</code> يحتوي مكتبات متعددة من أطراف ثالثة مع تبعياتها، منصبة عادة من قبل مؤلف PHP. قد تكون هذه المكتبات مطلوبة للتطوير المحلي لمودل، كما في حالة تنصيب إطار العمل PHPUnit. ليست لها حاجة عند تشغيل الموقع الإنتاجي لمودل وقد تحتوي على رموز برمجية خطرة مما قد يعرض موقعك إلى هجمات خارجية.</p><p>يوصى بشدة بإزالة المجلد إذا كان الموقع متاحاً عبر رابط ويب عمومي، أو على الأقل منع وصول الويب إليه عبر إعدادات التهيئة في مخدمك.</p>';
 $string['check_vendordir_info'] = 'ينبغي أن لا يكون مجلد البائع متواجداً في المواقع الإنتاجية.';
 $string['check_vendordir_name'] = 'مجلد البائع';

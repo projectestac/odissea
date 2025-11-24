@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'organizer', language 'it', version '4.4'.
+ * Strings for component 'organizer', language 'it', version '4.5'.
  *
  * @package     organizer
  * @category    string
@@ -296,7 +296,6 @@ $string['groupmodenogroups'] = 'Nessun appuntamento di gruppo';
 $string['groupmodeslotgroups'] = 'Creazione di gruppi per fascia oraria vuota';
 $string['groupmodeslotgroupsappointment'] = 'Creazione del gruppo per fascia oraria prenotata';
 $string['groupoptions'] = 'Impostazioni di gruppo';
-$string['grouporganizer_desc_hasgroup'] = 'Questo è un organizzatore di gruppi. Facendo clic sul pulsante di registrazione registrerai te e tutti i membri del tuo gruppo {$a->groupname} in questa fascia oraria. Tutti i membri del gruppo possono modificare e commentare la registrazione.';
 $string['grouppicker'] = 'Selettore di gruppo';
 $string['groupwarning'] = 'Controlla le opzioni di gruppo qui sotto!';
 $string['headerfooter'] = 'Stampa intestazione/piè di pagina';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'ru', version '4.4'.
+ * Strings for component 'user', language 'ru', version '4.5'.
  *
  * @package     user
  * @category    string
@@ -25,25 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcondition'] = 'Добавить условие';
-$string['adverbfor_and'] = 'и';
-$string['adverbfor_andnot'] = 'и';
-$string['adverbfor_or'] = 'или';
-$string['applyfilters'] = 'Применить фильтры';
-$string['clearfilterrow'] = 'Удалить строку фильтра';
-$string['clearfilters'] = 'Очистить фильтры';
-$string['clearfilterselection'] = 'Удалить «{$a}» из фильтра';
 $string['countparticipantsfound'] = 'Найдено участников: {$a}';
 $string['filterbykeyword'] = 'Ключевое слово';
-$string['filterrowlegend'] = 'Фильтр {$а}';
-$string['filtersetmatchdescription'] = 'Как комбинировать несколько фильтров';
-$string['filtertype'] = '';
-$string['match'] = 'Соответствие';
-$string['matchofthefollowing'] = 'из следующих:';
 $string['moodlenetprofile'] = 'ID профиля MoodleNet';
 $string['moodlenetprofile_help'] = 'ID вашего профиля MoodleNet связывает ваш профиль MoodleNet с этим сайтом.';
 $string['placeholdertype'] = 'Введите...';
-$string['placeholdertypeorselect'] = 'Введите или выберите...';
 $string['privacy:courserequestpath'] = 'Запрошенные курсы';
 $string['privacy:descriptionpath'] = 'Описание профиля';
 $string['privacy:devicespath'] = 'Устройства пользователя';
@@ -149,7 +135,6 @@ $string['privacy:passwordresetpath'] = 'Сбросы пароля';
 $string['privacy:privatefilespath'] = 'Личные файлы';
 $string['privacy:profileimagespath'] = 'Изображения профиля';
 $string['privacy:sessionpath'] = 'Данные сеанса';
-$string['selectfiltertype'] = 'Выбрать';
 $string['supportmessagealternative'] = 'Вместо этого вы можете отправить электронное письмо {$a}.';
 $string['supportmessagenotsent'] = 'К сожалению, ваше сообщение не может быть отправлено.';
 $string['supportmessagesent'] = 'Ваше сообщение отправлено.';

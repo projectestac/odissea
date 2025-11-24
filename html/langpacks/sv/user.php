@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'sv', version '4.4'.
+ * Strings for component 'user', language 'sv', version '4.5'.
  *
  * @package     user
  * @category    string
@@ -25,25 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcondition'] = 'Lägg till villkor';
-$string['adverbfor_and'] = 'och';
-$string['adverbfor_andnot'] = 'och';
-$string['adverbfor_or'] = 'eller';
-$string['applyfilters'] = 'Använd filter';
-$string['clearfilterrow'] = 'Ta bort filterrad';
-$string['clearfilters'] = 'Rensa filter';
-$string['clearfilterselection'] = 'Ta bort "{$a}" från filtret';
 $string['countparticipantsfound'] = '{$a} deltagare hittades';
 $string['filterbykeyword'] = 'Nyckelord';
-$string['filterrowlegend'] = 'Filter {$a}';
-$string['filtersetmatchdescription'] = 'Hur multipla filter ska kombineras';
-$string['filtertype'] = 'Typ av filter';
-$string['match'] = 'Matcha';
-$string['matchofthefollowing'] = 'av följande:';
 $string['moodlenetprofile'] = 'MoodleNet profil-ID';
 $string['moodlenetprofile_help'] = 'Ditt MoodleNet profil-ID länkar din MoodleNet-profil till den här webbplatsen.';
 $string['placeholdertype'] = 'Skriv...';
-$string['placeholdertypeorselect'] = 'Skriv eller välj...';
 $string['privacy:courserequestpath'] = 'Begärda kurser';
 $string['privacy:descriptionpath'] = 'Profilbeskrivning';
 $string['privacy:devicespath'] = 'Användarenheter';
@@ -149,7 +135,6 @@ $string['privacy:passwordresetpath'] = 'Lösenordsåterställningar';
 $string['privacy:privatefilespath'] = 'Privata filer';
 $string['privacy:profileimagespath'] = 'Profilbilder';
 $string['privacy:sessionpath'] = 'Sessionsdata';
-$string['selectfiltertype'] = 'Välj';
 $string['supportmessagealternative'] = 'Du kan istället skicka e-post till {$a}';
 $string['supportmessagenotsent'] = 'Tyvärr kunde ditt meddelande inte skickas.';
 $string['supportmessagesent'] = 'Meddelandet skickades';

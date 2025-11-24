@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'de', version '4.4'.
+ * Strings for component 'wiki', language 'de', version '4.5'.
  *
  * @package     wiki
  * @category    string
@@ -62,7 +62,7 @@ $string['defaultformat_help'] = 'Diese Option legt das Bearbeitungsformat von Wi
 * HTML - Der Texteditor ist verfügbar
 * Creole - Markup-Editor für Wikis mit Werkzeugleiste
 * NWiki - MediaWiki-ähnlicher Markup-Editor';
-$string['deleteallpages'] = 'Alle Wiki-Seiten löschen';
+$string['deleteallpages'] = 'Alle Wiki-Seiten';
 $string['deletecomment'] = 'Kommentar wird gelöscht';
 $string['deletecommentcheck'] = 'Kommentar löschen';
 $string['deletecommentcheckfull'] = 'Möchten Sie den Kommentar wirklich löschen?';
@@ -252,7 +252,7 @@ $string['privacy:metadata:wiki_versions:version'] = 'Versionsnummer';
 $string['rated'] = 'Ihre Bewertung der Seite: {$a}';
 $string['rating'] = 'Bewertung';
 $string['ratingmode'] = 'Bewertungsmodus';
-$string['removeallwikitags'] = 'Alle Wiki-Tags löschen';
+$string['removeallwikitags'] = 'Alle Wiki-Tags';
 $string['removepages'] = 'Seiten löschen';
 $string['reparsetimeout'] = 'Standard-Timeout setzen';
 $string['repeatedsection'] = 'Wikifehler: Name \'{$a}\' kann nicht doppelt verwendet werden';

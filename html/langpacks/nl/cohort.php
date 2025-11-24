@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'nl', version '4.4'.
+ * Strings for component 'cohort', language 'nl', version '4.5'.
  *
  * @package     cohort
  * @category    string
@@ -49,7 +49,10 @@ $string['currentusers'] = 'Huidige gebruikers';
 $string['currentusersmatching'] = 'Huidige overeenkomende gebruikers';
 $string['defaultcontext'] = 'Standaard context';
 $string['delcohort'] = 'Verwijder site-groep';
+$string['delcohortsconfirm'] = 'Dit zal de site-groepen en alle geassocieerde gegevens verwijderen.';
+$string['delcohortssuccess'] = 'Geselecteerde site-groepen verwijderd';
 $string['delconfirm'] = 'Dit zal site-groep \'{$a}\' en alle bijhorende gegevens verwijderen.';
+$string['delsuccess'] = 'Verwijderde site-groepen';
 $string['description'] = 'Beschrijving';
 $string['displayedrows'] = '{$a->displayed} rijen weergegeven uit {$a->total}.';
 $string['duplicateidnumber'] = 'Site-groep met hetzelfde ID-nummer bestaat al';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'eu', version '4.4'.
+ * Strings for component 'format_tiles', language 'eu', version '4.5'.
  *
  * @package     format_tiles
  * @category    string
@@ -38,16 +38,17 @@ $string['alternativelink'] = 'ordezko esteka';
 $string['areyousure'] = 'Ziur zaude?';
 $string['asfraction'] = 'Erakutsi zatiki gisa';
 $string['aspectratiotootallorwide'] = 'Igotako irudia gorde da, baina mesedez egiaztatu ezazu, <strong>{$a->tallorwide}</strong> izan daitekeelako. Ondo erakusten ez bada, mesedez moztu ezazu tamaina horizontal estandarra izan dezan eta berriz igo ezazu. Tamaina egokia 300 pixeleko zabalera eta 200 pixeleko altuera izan daiteke.';
-$string['aspercentagedial'] = 'Erakutsi zirkuluan ehuneko gisa';
+$string['aspercentagedial'] = 'Erakutsi ehuneko gisa';
 $string['assumedatastoreconsent'] = 'Suposatu erabiltzailearen onespena nabigatzaileak hobespenak lokalki gorde ditzan';
 $string['assumedatastoreconsent_desc'] = 'Markatuz gero, erabiltzaileari <b>ez</b> zaio mezurik erakutsiko nabigatzaileak hobespenen informazioa lokalki gordetzeko baimena eskatuz';
 $string['backupfailed'] = 'Segurtasun-kopiak huts egin du';
 $string['basecolour'] = 'Lauzentzako kolorea';
 $string['basecolour_help'] = 'Hemen zehaztutako kolorea ikastaroko lauza guztiei aplikatuko zaie. (Eskuragarri dauden koloreak zure kudeatzaileak erabakitzen ditu guneko kudeaketako Lauzak formatuaren ezarpenen orritik).';
 $string['brandcolour'] = 'Markaren kolorea';
+$string['cachedef_formatoptionelementids'] = 'Formatu aukerak dituzten elementu-IDen array sinplea, esaterako argazkiak dituzten ikastaro-atalen IDak.';
+$string['cachedef_formatoptions'] = 'Elementu-IDen araberako formatu aukeren balioen arraya, esaterako argazkien fitxategi-izenak ikastaro-atalka.';
 $string['cachedef_modalcmids'] = 'Leiho modalean erakutsi beharreko ikastaro-modulu IDak (ikastaroka)';
 $string['cachedef_videocmids'] = 'Bideoak diren (YouTube edo Vimeora bideratutako URL jarduerak) ikastaro-modulu IDak (ikastaroka)';
-$string['canceltask'] = 'Bertan behera utzi ataza';
 $string['changedcolour'] = '{$a} ikastaroaren lauzen kolorea lehenetsitakora berrabiarazi da';
 $string['checkforproblemcourses'] = 'Egiaztatu eta konpondu ikastaroetako arazoak';
 $string['clearphoto'] = 'Berrabiarazi lauza hau';
@@ -122,9 +123,6 @@ $string['displaytitle_mod_ppt'] = 'Powerpoint aurkezpena';
 $string['displaytitle_mod_txt'] = 'Testua';
 $string['displaytitle_mod_xls'] = 'Kalkulu-orria';
 $string['displaytitle_mod_zip'] = 'Zip fitxategia';
-$string['documentation'] = 'Dokumentazioa';
-$string['documentationurl'] = 'Dokumentazioaren URLa';
-$string['documentationurl_descr'] = 'Lauzak formatuaren dokumentazioa aurkitu daitekeen URLa.';
 $string['download'] = 'Jaitsi';
 $string['editoradvicesubtiles'] = 'Lauzak formatuaren bertsio honetan, jarduerak soilik erakutsiko dira azpi-lauza gisa edizio-modua desgaituta badago.';
 $string['editsection'] = 'Editatu atala';
@@ -265,7 +263,7 @@ $string['imagedeletedfrom'] = 'Irudia "{$a}"(e)tik ezabatu da';
 $string['imagesavedfor'] = 'Irudia gorde da {$a} lauzarentzat';
 $string['imagesize'] = 'Irudiaren tamaina';
 $string['invalidsectionid'] = '"{$a}" atal-ID baliogabea';
-$string['jsactivate'] = 'Nabigazio animatua - Itzali';
+$string['jsactivate'] = 'Nabigazio animatua';
 $string['jsdeactivated'] = 'Nabigazio animatua desgaitu duzu zure kontuan';
 $string['jsreactivated'] = 'Nabigazio animatua gaitu duzu zure kontuan.';
 $string['legacytiledata'] = 'Zaharkitutako lauza-datu kopurua';
@@ -289,7 +287,6 @@ $string['none'] = 'Bat ere ez';
 $string['noproblemsfound'] = 'Ez da arazorik aurkitu';
 $string['notcomplete'] = 'Osatu gabea';
 $string['notrecommended'] = '(Ez gomendatua)';
-$string['notregistered'] = 'Zure lauzak plugina oraindik ez dago pluginaren garatzailerekin erregistratua.';
 $string['novaliddefaultcolour'] = 'Ez da kolore baliagarririk zehaztu azpiko lauza-kolore lehenetsirako';
 $string['numberofsections'] = 'Ikastaroko atal kopurua';
 $string['numbers'] = 'Zenbakiak';
@@ -326,6 +323,8 @@ $string['privacypolicy'] = 'Pribatutasun-politika';
 $string['problemcourses'] = 'Arazoak dituzten ikastaroak';
 $string['problemcoursesintro'] = 'Hurrengo ikastaroek espero zena baino atal-kopuru handiagoak dituzte. Erabili itzazu azpiko botoiak arazoak konpontzeko.';
 $string['progress'] = 'Aurrerapena';
+$string['progressincludesubsections'] = 'Aurrerapenaren adierazlea - kontuan hartu azpi-atalen datuak?';
+$string['progressincludesubsections_desc'] = 'Lauzaren aurrerapenaren adierazlean azpi-ataletako jardueren datuak kontuan hartu beharko lituzke?';
 $string['progresstitle'] = '{$a->numOutOf}tik {$a->numComplete} elementu osatuta (%{$a->percent})';
 $string['reactivate'] = 'Berriz aktibatu';
 $string['reopenlastsection'] = 'Ireki berriro bisitatutako azken lauza';
@@ -340,7 +339,6 @@ $string['restorefailed'] = 'Berreskuratzeak huts egin du';
 $string['restoreincorrectsections'] = 'Errorea: Ezin da osatu jatorriko ikastaroak gaizki zenbakitutako atalak dituelako ( {$a->sectionnum}. atalak adibidez gehienez baimendutako {$a->maxallowed} kopurua baino altuagoa da \'moodlecourse | maxsections\' kudeaketa-ezarpenean zehaztuta dagoen moduan). Zenbaki altuetako atalak alde batera uzten edo ezabatzen saiatu zaitez.';
 $string['restoretoomanysections'] = 'Errorea: Ezin da segurtasun-kopia edo berreskuratzea egin ikastaroak atal gehiegi dituelako ({$a->numsections}) eta gehienez baimendutakoak baino gehiago direlako({$a->maxallowed}). Atal batzuk alde batera utzi edo ezabatzen saiatu zaitez.';
 $string['revealcontents'] = 'Erakutsi lauzaren edukiak';
-$string['scheduleddeleteemptysections'] = 'Hutsik dauden atalak ezabatzeko ataza programatu da. Egiaztatu ezazu beranduago, mesedez.';
 $string['section0name'] = 'Orokorra';
 $string['sectionerrorstring'] = 'Zure saioa iraungi dela ematen du. Saiatu orri hau berriz kargatzen.';
 $string['sectionerrortitle'] = 'Errorea edukia kargatzean';
@@ -407,7 +405,5 @@ $string['usejsnavforsinglesection'] = 'Erabili JavaScript nabigazioa atal bakarr
 $string['usejsnavforsinglesection_desc'] = 'Markatuz gero, atal bakarreko edozein orrietarako deiak (&section=xx) JavaScript erabilita egingo dira, ikastaroaren orri nagusia zabalduz eta atal hori irekitzeko JavaScript animazioa erabilita, zaharkitutako atal bakarreko PHP orria erabili ordez.';
 $string['usesubtilesseczero'] = 'Erabili azpi-lauzak 0 atalean';
 $string['usesubtilesseczero_help'] = 'Aukeratuz gero, 0 ataleko elementuak ere azpi-lauzetan erakutsiko dira. Soilik aplikatzen da ikastaroaren ezarpenetan azpi-lauzak erabiltzen badira. Azpi-lauzek ikastaroaren goiko aldean leku gehiegi okupatu dezaketenez, gomendagarria da aukera hau markatu gabe uztea, eta horrela 0 ataleko elementuak ohiko zerrendan erakutsiko dira.';
-$string['usetooltips'] = 'Erabili JavaScript oharrak';
-$string['usetooltips_desc'] = 'Erabili JavaScript oharrak erabiltzaileak sagua elementu zehatz batzuen gainetik pasatzean (esaterako osatze-laukitxoak edo lauzak bertako edukietarako)';
 $string['version'] = '{$a} bertsioa';
 $string['width'] = 'zabalera';

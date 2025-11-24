@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'zh_cn', version '4.4'.
+ * Strings for component 'book', language 'zh_cn', version '4.5'.
  *
  * @package     book
  * @category    string
@@ -103,7 +103,7 @@ $string['pluginadministration'] = '图书管理';
 $string['pluginname'] = '图书';
 $string['previouschapter'] = '上一章';
 $string['privacy:metadata'] = '图书活动模块不存储任何个人数据。';
-$string['removeallbooktags'] = '删除所有图书标签';
+$string['removeallbooktags'] = '所有图书标签';
 $string['search:activity'] = '图书 - 资源信息';
 $string['search:chapter'] = '图书 - 章节';
 $string['showchapter'] = '显示章节“{$a}”';

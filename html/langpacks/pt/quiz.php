@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'pt', version '4.4'.
+ * Strings for component 'quiz', language 'pt', version '4.5'.
  *
  * @package     quiz
  * @category    string
@@ -397,6 +397,7 @@ $string['eventslotgradeitemupdated'] = 'Local do item de avaliação atualizado'
 $string['eventslotmarkupdated'] = 'Nota da pergunta atualizada';
 $string['eventslotmoved'] = 'Pergunta movida';
 $string['eventslotrequirepreviousupdated'] = 'Pergunta requer atualização anterior';
+$string['eventslotversionupdated'] = 'Versão de pergunta atualizada';
 $string['everynquestions'] = 'A cada {$a} perguntas';
 $string['everyquestion'] = 'A cada nova pergunta inserida';
 $string['everythingon'] = 'Tudo em';
@@ -557,6 +558,7 @@ $string['maxmarks_help'] = 'A nota máxima disponível para cada pergunta.';
 $string['messageprovider:attempt_grading_complete'] = 'Notificação de que a sua tentativa foi avaliada';
 $string['messageprovider:attempt_overdue'] = 'Avisar quando as tentativas do teste ultrapassarem o tempo limite';
 $string['messageprovider:confirmation'] = 'Confirmação das suas submissões nos testes';
+$string['messageprovider:quiz_open_soon'] = 'Teste abre brevemente';
 $string['messageprovider:submission'] = 'Notificação das submissões dos seus alunos no teste';
 $string['min'] = 'Mín.';
 $string['minutes'] = 'Minutos';
@@ -649,7 +651,7 @@ $string['onlyteachersimport'] = 'Apenas os professores com permissões de ediç�
 $string['onthispage'] = 'Nesta página';
 $string['open'] = 'Não respondido';
 $string['openafterclose'] = 'Não foi possível atualizar o teste. Especificou uma data de abertura posterior à data de fecho.';
-$string['openclosedatesupdated'] = 'Foram atualizadas as datas de abertura e fecho do teste';
+$string['openclosedatesupdated'] = 'Datas de abertura e fecho';
 $string['optional'] = 'opcional';
 $string['orderandpaging'] = 'Ordem e paginação';
 $string['orderandpaging_help'] = 'Os números 10, 20, 30, ... em cada pergunta indicam a sua ordem. Ao apresentar intervalos de 10 é possível inserir perguntas no meio. Para reordenar as perguntas, altere a numeração e clique no botão \'Reordenar perguntas\'.
@@ -831,6 +833,12 @@ $string['quizopen'] = 'Abrir o teste em';
 $string['quizopenclose'] = 'Datas de abertura e fecho';
 $string['quizopenclose_help'] = 'Se ativar esta opção, os alunos só podem iniciar a(s) sua(s) tentativa(s) após a data/hora de abertura e devem terminá-las até à data/hora de fecho, se ativada.';
 $string['quizopenclose_link'] = 'mod/quiz/timing';
+$string['quizopendatesoonhtml'] = '<p>Olá {$a->firstname},</p>
+<p>O teste "<strong>{$a->quizname}</strong> na disciplina "{$a->coursename}" irá abrir brevemente.
+<p><strong>Abre: {$a->timeopen}</strong></p>
+<p><strong>Fecha: {$a->timeclose}</strong></p>
+<p><a href="{$a->url}">Ir para teste</a></p>';
+$string['quizopendatesoonsubject'] = 'Abre {$a->timeopen}: {$a->quizname}';
 $string['quizopened'] = 'Este teste está aberto.';
 $string['quizopenedon'] = 'Este teste abriu {$a}';
 $string['quizopens'] = 'Abertura do teste';
@@ -882,9 +890,9 @@ $string['regradenotallowed'] = 'Não tem permissão para reavaliar este teste';
 $string['regradingquestion'] = 'A reavaliar "{$a}".';
 $string['regradingquiz'] = 'A reavaliar teste "{$a}"';
 $string['remove'] = 'Apagar';
-$string['removeallgroupoverrides'] = 'Apagar todas as exceções para grupos';
-$string['removeallquizattempts'] = 'Apagar todas as tentativas do teste';
-$string['removealluseroverrides'] = 'Apagar todas as exceções para utilizadores';
+$string['removeallgroupoverrides'] = 'Todas as exceções para grupos';
+$string['removeallquizattempts'] = 'Todas as tentativas do teste';
+$string['removealluseroverrides'] = 'Todas as exceções para utilizadores';
 $string['removeemptypage'] = 'Apagar página vazia';
 $string['removepagebreak'] = 'Remover quebra de página';
 $string['removeselected'] = 'Apagar selecionadas';
@@ -997,6 +1005,7 @@ $string['selectmultipletoolbar'] = 'Selecionar mais do que uma barra de ferramen
 $string['selectnone'] = 'Desselecionar todas';
 $string['selectquestionslot'] = 'Selecionar a pergunta {$a}';
 $string['selectquestiontype'] = '-- Selecionar tipo de pergunta --';
+$string['sendnotificationopendatesoon'] = 'Notificar o utilizador que o teste abre brevemente';
 $string['serveradded'] = 'Servidor adicionado';
 $string['serveridentifier'] = 'Identificador';
 $string['serverinfo'] = 'Informação do servidor';
@@ -1065,6 +1074,7 @@ $string['subplugintype_quizaccess_plural'] = 'Regras de acesso';
 $string['substitutedby'] = 'será substituído por';
 $string['summaryofattempt'] = 'Síntese da tentativa';
 $string['summaryofattempts'] = 'Tentativas realizadas';
+$string['summaryofattemptscaption'] = 'Resumo da tentativa {$a}';
 $string['temporaryblocked'] = 'Está temporariamente impedido de tentar resolver o teste novamente.<br /> Poderá voltar a tentar em:';
 $string['theattempt'] = 'Resposta submetida';
 $string['theattempt_help'] = 'A resposta submetida pelo aluno.';

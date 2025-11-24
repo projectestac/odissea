@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'eu', version '4.4'.
+ * Strings for component 'admin', language 'eu', version '4.5'.
  *
  * @package     admin
  * @category    string
@@ -277,7 +277,7 @@ $string['configenablecalendarexport'] = 'Gaitu egutegiak esportatzea eta harpide
 $string['configenablecomments'] = 'Gaitu iruzkinak';
 $string['configenablecourserequests'] = 'Gaituz gero, ikastaro berriak eskatzeko gaitasuna duten erabiltzaileek (moodle/course:request) ikastaroak eskatu ahalko dituzte. Gaitasun hau ez dago lehenetsitako rolentzako baimenduta. Sistemaren testuinguruan edo kategoria mailan eman daiteke.';
 $string['configenabledevicedetection'] = 'Ezarpen honek gailu mugikorrak, smartphone-ak, tabletak edo bestelako gailuak (mahai-gaineko ordenagailuak, ordenagailu eramangarriak, e.a.) atzematea baimentzen du, horren arabera azal edo beste ezaugarri batzuk aplikatu ahal izateko.';
-$string['configenablemobilewebservice'] = 'Gaitu zerbitzu mugikorra Moodleren aplikazio ofizialerako edo eska dezaketen beste aplikazio baterako. Informazio gehiagorako, irakurri {$a}';
+$string['configenablemobilewebservice'] = 'Mobile web-zerbitzuak beharrezkoak dira Moodle aplikazioarentzat. Zure guneak HTTPS erabiltzen badu, mobile web-zerbitzuak modu lehenetsian gaituta egongo dira. Informazio gehiagorako, irakurri {$a}.';
 $string['configenablerssfeeds'] = 'Gaituz gero, guneko hainbat funtzionalitatek RSS jarioak sortuko dituzte, besteak beste, blog, foro, datu-base jarduera eta glosarioek. Kontuan izan modulu bakoitzean ere RSS jarioak aktibatu behar direla.';
 $string['configenablerssfeedsdisabled'] = 'Ez dago eskuragarri RSS kanalak gune osoan desaktibatuta daudelako. Aktibatzeko, Aldagaietara joan Admin - Konfigurazioan.';
 $string['configenablerssfeedsdisabled2'] = 'RSS jarioak ez daude gaituta gunearen mailan. Gunearen kudeaketako Funtzio Aurreratuak aukeran gaitu ahal dira.';
@@ -304,7 +304,7 @@ $string['configfrontpageloggedin'] = 'Aukeratutako elementuak gunearen hasiera-o
 $string['configfullnamedisplay'] = 'Aukera honek izenak osorik erakustean nola ikusiko diren definitzen du. Balio lehenetsiak, "language", erakutsi beharrekoa hizkuntza pakete bakoitzaren "fullnamedisplay" katearen menpe uzten du. Hizkuntza batzuek izenak erakusteko arau ezberdinak dituzte.
 
 Hizkuntza bakarra erabiltzen duten gune gehienek lehenetsitako balioa mantentzea aholkatzen da: ("Izena + Abizena"), baina abizena ezkutatzea erabaki dezakezu. Erabili daitezken gakoak hauek dira: firstname, lastname, firstnamephonetic, lastnamephonetic, middlename, and alternatename.';
-$string['configgeoipfile'] = 'GeoLite2 City fitxategi bitarraren kokapena. Fitxategi hau ez dator Moodleren pakete estandarrean eta aparte lortu behar da hemen: <a href="https://www.maxmind.com/">MaxMind</a>. Bertsio komertziala nahiz doakoa dituzu eskura. Erregistratu beharko duzu City datu-basea hurrengo estekatik jaitsi ahal izateko: <a href="https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz" >https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz</a>. Behin erregistratuta eta fitxategia jaitsita, zure zerbitzariaren "{$a}" direktorioan erauzi ezazu.';
+$string['configgeoipfile'] = 'GeoIP City fitxategi bitarraren kokapena. Fitxategi hau ez dator Moodleren pakete estandarrean eta aparte lortu behar da hemen: <a href="https://www.maxmind.com/">MaxMind</a>. Bertsio komertziala nahiz doakoa dituzu eskura. Erregistratu beharko duzu City datu-basea hurrengo estekatik jaitsi ahal izateko: <a href="https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz" >https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz</a>. Behin erregistratuta eta fitxategia jaitsita, zure zerbitzariaren "{$a}" direktorioan erauzi ezazu.';
 $string['configgetremoteaddrconf'] = 'Zure zerbitzaria \'reverse proxy\' baten atzean badago aukera hau erabil dezakezu urrutiko IP helbidea duten zein HTTP goibururekin fidatu daitekeen zehazteko. Goiburuak ordenean irakurriko dira eta eskuragarri dagoen lehenengoa erabiliko da.';
 $string['configgradebookroles'] = 'Ezarpen honek kalifikazio-liburuan nor agertuko den kontrolatzen utziko dizu. Erabiltzaileek hauetako rolen bat izan behar dute gutxienez ikastaro batean ikastaro horretako kalifikazio-liburuan agertzeko.';
 $string['configgradeexport'] = 'Aukeratu zein formatu izango den kalifikazio-liburuko kalifikazioak esportatzeko metodo nagusia. Aukeratutako pluginek ondoren kalifikazio bakoitzerako "esportatutako azkenak" eremu bat sortu eta erabiliko dute. Adibidez, honen ondorioz esportatutako erregistroak "berriak" edo "eguneratuta" gisa identifikatuko dira. Hau nola egin ez badakizu, ez markatu ezer.';
@@ -649,7 +649,7 @@ $string['enroladminnewcourse_help'] = 'Kudeatzaile batek ikastaro berri bat gehi
 $string['enrolinstancedefaults'] = 'Lehenetsitako matrikulazio-instantzia';
 $string['enrolinstancedefaults_desc'] = 'Lehenetsitako matrikulazio-ezarpenak ikastaro berrietan.';
 $string['enrolmultipleusers'] = 'Matrikulatu erabiltzaileak';
-$string['ensureauroraversion'] = 'Zure guneak Amazon Aurora datu-base motorra erabiltzen du. Ziurtatu mesedez Amazon Aurorako MySQL bertsioa instalatzen ala eguneratzen ari zaren Moodleko bertsioarekin bateragarria dela. Bateragarritasuna <a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.30Updates.html" target="_blank">Database engine updates for Amazon Aurora MySQL version 3</a> orrian egiaztatu dezakezu.';
+$string['ensureauroraversion'] = 'Zure guneak Amazon Aurora datu-base motorra erabiltzen du. Amazon Aurorako MySQL bertsioa instalatzen ala eguneratzen ari zaren Moodleko bertsioarekin bateragarria izan behar da. Egiaztatu ezazu bateragarritasuna <a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.30Updates.html" target="_blank">Database engine updates for Amazon Aurora MySQL version 3</a> orrian.';
 $string['entitytasklog'] = 'Atazen erregistroa';
 $string['environment'] = 'Ingurunea';
 $string['environmenterrortodo'] = 'Moodleren bertsio hau instalatu aurretik goian aurkitutako inguru-arazo (errore) guztiak zuzendu behar dituzu.';
@@ -720,8 +720,15 @@ $string['fullnamedisplay'] = 'Izen osoaren formatua';
 $string['fullnamedisplayprivate'] = 'Izen osoaren formatua - pribatua';
 $string['gdrequired'] = 'GD hedapena orain Moodlen derrigorrezkoa da irudiak bihurtzeko.';
 $string['generalsettings'] = 'Ezarpen orokorrak';
-$string['geoipfile'] = 'GeoLite2 City MaxMind DB';
+$string['geoipdbedition'] = 'GeoIP datu-base edizioa';
+$string['geoipdbedition_desc'] = 'Aukeratu deskargatu beharreko GeoIP datu-basearen edizioa. Kontuan izan GeoIP2-City datu-baseak ordaindu beharreko baliozko lizentzia behar duela.';
+$string['geoipfile'] = 'GeoLite2 City DB';
+$string['geoipmaxmindaccid'] = 'MaxMind kontuaren IDa';
+$string['geoipmaxmindaccid_desc'] = 'MaxMind API zerbitzuan sortutako kontuaren IDa.';
+$string['geoipmaxmindlicensekey'] = 'MaxMind lizentziaren gakoa';
+$string['geoipmaxmindlicensekey_desc'] = 'MaxMind API zerbitzuan sortutako lizentziaren gakoa.';
 $string['geopluginapikey'] = 'GeoPlugin APIaren gakoa';
+$string['geopluginapikey_desc'] = 'GeoPlugin zerbitzura sarbidea izateko erabilitako API gakoa. Lortu zure gakoa <a href="https://www.geoplugin.com/" target="_blank">geoplugin.com</a> webgunetik.';
 $string['getremoteaddrconf'] = 'Erregistratutako IP helbideen iturburua';
 $string['globalsearch'] = 'Bilaketa orokorra';
 $string['globalsearchmanage'] = 'Kudeatu bilaketa orokorra';
@@ -733,7 +740,7 @@ $string['gradebookroles'] = 'Kalifikatutako rolak';
 $string['gradeexport'] = 'Kalifikazioak esportatzeko metodo nagusiak';
 $string['gradeexportdefault'] = 'Kalifikazioak esportatzeko metodo lehenetsia';
 $string['gravatardefaulturl'] = 'Gravatar-en lehenetsitako irudiaren URLa';
-$string['gravatardefaulturl_help'] = 'Gravatar-ek lehenetsitako irudi bat behar du erabiltzaile baten irudia eskuratzeko gai ez denerako. Eman irudiaren URL osoa. Ezarpen hau hutsik utziz gero, Moodle ikusten ari zaren orriarentzako lehenetsitako irudi egokiena erabiltzen saiatuko da. Kontuan izan Gravatar-ek erabil daitezkeen kode batzuk ere badituela <a href="https://en.gravatar.com/site/implement/images/#default-image">lehenetsitako irudiak sortzeko</a>.';
+$string['gravatardefaulturl_help'] = 'Gravatar-ek lehenetsitako irudi bat behar du erabiltzaile baten irudia eskuratzeko gai ez denerako. Eman irudiaren URL osoa. Lehenetsitako irudiak sortzeko kodeak eskuragarri daude <a href="https://docs.gravatar.com/api/avatars/images/">Gravatar Garatzaileentzat - Avatar Eskaerak</a> webgunean.';
 $string['group_customfield'] = 'Taldeen eremu pertsonalizatuak';
 $string['groupenrolmentkeypolicy'] = 'Taldeen matrikulazio-gakoentzako politika';
 $string['groupenrolmentkeypolicy_desc'] = 'Ezarpen hau gaituz gero, taldeko matrikulazio-gakoek pasahitzen politika betetzen duten egiaztatuko da, beheko ezarpenetan zehaztutakoaren arabera.';
@@ -783,6 +790,9 @@ $string['httpsecurity'] = 'HTTP segurtasuna';
 $string['iconvrequired'] = 'ICONV hedapena instalatzea beharrezkoa da.';
 $string['igbinary322buggyversion'] = 'Gunean instalatutako php-igbinary luzapenak arazoak eman ditzake PHP 7.2 bertsioa erabiltzean. Gomendagarria da php-igbinary 3.2.5 edo berriagoa instalatzea edo bestela PHP 7.3 edo berriagora eguneratzea.';
 $string['ignore'] = 'Baztertu';
+$string['importantupdates_content'] = '<p>Moodle 5.0 bertsioan, Txat eta Hausnarketa jarduerak Moodleko muinetik kendu dira. Plugin gisa eskuragarri daude <a href="https://moodle.org/plugins/">Moodleko pluginen direktorioan</a>.</p>
+<p>Zure gunean Txat ala Hausnarketa erabiltzen jarraitu nahi baduzu, plugin gisa instalatu ahal dituzu Moodle 5.0 bertsiora eguneratzerakoan.</p>';
+$string['importantupdates_title'] = 'Eguneraketa garrantzitsua Txat eta Hausnarketa jardueren inguruan';
 $string['includemoduleuserdata'] = 'Barne hartu moduluaren erabiltzailearen datuak';
 $string['incompatibleblocks'] = 'Bloke bateraezinak';
 $string['incompleteunicodesupport'] = 'Oraingo MySQL eta MariaDB-ren konfigurazioak \'utf8\' erabiltzen du. Karaktere-multzo honek ez du lau bit-ez osatutako karaktereak onartzen emoji batzuk barne. Karaktere horiek erabiltzen saiatuz gero errore bat gertatutako da erregistroa eguneratzerakoan, eta datu-basera bidaltzen ari den informazioa galduko da. Mesedez hausnartu ezazu ezarpen hau \'utf8mb4\' aldatzea. Ikusi dokumentazioa xehetasunak ezagutzeko.';
@@ -801,10 +811,10 @@ $string['ipblocked'] = 'Gunea ez dago eskuragarri une honetan.';
 $string['ipblocker'] = 'IP blokeatzailea';
 $string['ipblockersyntax'] = 'Sarrera bakoitza lerro batean idatzi. Baliozko sarrerak horrelakoak izan daitezke: IP helbide osoak (hala nola <b>192.168.10.1</b>), hostalari bakar batekin bat egiten dutenak; IP helbideen zatiak (hala nola <b>192.168</b>), zenbaki horiekin bat egiten duten helbideekin bat egiten dutenak; CIDR notazioko helbideak (hala nola <b>231.54.211.0/20</b>); IP helbideen tarte bat (hala nola <b>231.3.56.10-20</b>), non tartea helbidearen azken zatiari aplikatzen zaion. Testuzko domeinu -izenak (\'adibidea.eus\' adibidez) ez dira onartzen. Hutsik dauden lerroak eta "#" karakterearen ondorengoko testuak ez dira kontuan hartuko.';
 $string['iplookup'] = 'IP helbidea bilatu';
-$string['iplookupgeoplugin'] = 'Une honetan <a href="https://www.geoplugin.com">geoPlugin</a> zerbitzua informazio geografikoa eskuratzeko erabiltzen da. Emaitza zehatzagoak lortzeko MaxMind GeoLite datu-basearen kopia bat lokalean instalatzea gomendatzen dugu.';
-$string['iplookupinfo'] = 'IP helbideen kokapena bilatzeko NetGeo doako on-line zerbitzari erabiltzen da. Datu-base horren mantenua eten egin da eta emaitza ezegokiak eman ditzake. Gomendagarria da doako GeoLite2 City datu-basearen kopia lokala MaxMind-etik instalatzea.<br />
+$string['iplookupgeoplugin'] = 'Une honetan <a href="https://www.geoplugin.com">geoPlugin</a> zerbitzua informazio geografikoa eskuratzeko erabiltzen da. Emaitza zehatzagoak lortzeko MaxMind GeoIP City datu-basearen kopia bat lokalean instalatzea gomendatzen dugu.';
+$string['iplookupinfo'] = 'IP helbideen kokapena bilatzeko NetGeo doako on-line zerbitzari erabiltzen da. Datu-base horren mantenua eten egin da eta emaitza ezegokiak eman ditzake. Gomendagarria da GeoIP datu-base baten kopia lokala MaxMind-etik instalatzea.<br />
 Google Maps API V3 gakoa emanez gero, IP helbideen kokapena Google Maps erabilita erakusten da. Google Maps API gakoa eskatzeko Google kontu bat behar duzu. Google Maps API V3 gakorik zehazten ez bada, IP helbidea OpenStreetMap erabilita kokatuko da.';
-$string['iplookupmaxmindnote'] = 'Produktu honek MaxMind-ek sortutako GeoLite2 datuak barne ditu eta hemendik eskura daitezke: <a href="https://www.maxmind.com/">https://www.maxmind.com/</a>.';
+$string['iplookupmaxmindnote'] = 'Produktu honek MaxMind-ek sortutako GeoIP City datuak barne ditu eta hemendik eskura daitezke: <a href="https://www.maxmind.com/">https://www.maxmind.com/</a>.';
 $string['iscustomadminwarnings'] = 'Zure gunean admin direktorio pertsonalizatua erabiltzen duela antzeman da. Funtzionalitate hau dagoeneko ez da onartzen eta Moodle 4.2 bertsioan kenduko da.';
 $string['ishttpswarning'] = 'Zure gunea HTTPS erabiliz babesturik ez dagoela antzeman dugu. Zure gunea HTTPS erabiltzeko migratzea irmoki gomendatzen da segurtasuna eta beste sistemekiko integrazioak hobetzeko.';
 $string['keeptagnamecase'] = 'Mantendu etiketen izenen jatorrizko \'casing\'-a';
@@ -837,7 +847,9 @@ $string['locationsettings'] = 'Kokapenaren ezarpenak';
 $string['locked'] = 'Blokeatuta';
 $string['lockoutduration'] = 'Kontuaren blokeoaren iraupena';
 $string['lockoutduration_desc'] = 'Blokeatutako kontua denbora-tarte honen ondoren automatikoki desblokeatuko da.';
-$string['lockoutemailbody'] = 'Zure \'{$a->sitename}\' zerbitzariko {$a->username} erabiltzailearen kontua blokeatua izan da sartzeko saiakera oker anitz egin direlako.
+$string['lockoutemailbody'] = 'Kaixo, {$a->firstname}:
+
+Zure \'{$a->sitename}\' zerbitzariko {$a->username} erabiltzailearen kontua blokeatua izan da sartzeko saiakera oker anitz egin direlako.
 
 Kontua berehala desblokeatzeko, sartu hurrengo estekan:
 
@@ -958,7 +970,6 @@ $string['moodlepartners_help'] = '<p>Moodle Partner-ak Moodle HQk egiaztatutako 
 <a href="https://moodle.com/partners">Bilatu bazkide bat</a>';
 $string['moodleservices'] = 'Moodle zerbitzuak';
 $string['moodleservices_help'] = 'Ziurtatu ezazu zure Moodle hezkuntza-inguruneari etekin handiena ateratzen diozula Moodle-zerbitzu hauek erabiliz:';
-$string['multilangforceold'] = 'Behartu sintaxi eleaniztun zaharra: &lt;span&gt; etiketa class="multilang" eta &lt;lang&gt; gabe';
 $string['mustenablestats'] = 'Estatistikak ez daude gaituta gune honetan.';
 $string['mycourses'] = 'Nire ikastaroak';
 $string['mydashboard'] = 'Sisteman lehenetsitako aginte-panela';
@@ -1008,7 +1019,7 @@ $string['notifyloginthreshold'] = 'Posta elektroniko bidezko jakinarazpenetarako
 $string['notloggedinroleid'] = 'Gonbidatuen rola';
 $string['numberofmissingstrings'] = 'Itzuli gabeko kateen kopurua: {$a}';
 $string['numberofstrings'] = 'Kate kopurua denera: {$a->strings}<br />Falta dira: {$a->missing} ({$a->missingpercent} %)';
-$string['oauthrefreshtokenexpired'] = 'Zure {$a->siteurl} guneko {$a->issuer} OAuth zerbitzuko freskatze-tokena iraungi da. Honek zerbitzu hori erabiltzen duten pluginen funtzionalitatea mugatuko du. Arazoa konpontzeko, sartu Oauth 2 zerbitzuen ezarpenen orrian eta egin klik taulako zerbitzu horren errenkadan “Konektatu sistemaren kontua” ikonoan. Ziurta ezazu OAuth sisteman sartzen zaren bakoitzean zerbitzuko kontu bera erabiltzen ari zarela.';
+$string['oauthrefreshtokenexpired'] = 'Zure {$a->siteurl} guneko {$a->issuer} OAuth 2 zerbitzuetako baten freskatze-tokena iraungi da. Honek zerbitzu hori erabiltzen duten pluginen funtzionalitatea mugatuko du. Arazo hau konpontzeko, joan Oauth 2 zerbitzuen ezarpenen orrian eta egin klik taulako zerbitzu horren errenkadan “Konektatu sistemaren kontua” ikonoan. Ziurta ezazu OAuth sisteman sartzen zaren bakoitzean zerbitzuko kontu bera erabiltzen ari zarela.';
 $string['oauthrefreshtokenexpiredshort'] = 'Zure {$a->siteurl} guneko {$a->issuer} OAuth freskatze-tokena iraungi da.';
 $string['onlynoreply'] = 'Soilik ez-erantzun helbide batetik denean';
 $string['opcacherecommended'] = 'PHP opcode cacheak errendimendua hobetzen du eta memoria eskakizunak murrizten ditu. OPcache hedapena gomendatzen da eta erabat sostengatzen da.';
@@ -1194,8 +1205,8 @@ $string['registration_help'] = 'Erregistratuz gero:
 * Segurtasun-abisuak jasoko dituzu
 * Zure guneko Moodle aplikazioarentzako push jakinarazpenak gaitu ahal izango dituzu
 * Mundu mailako gure Moodle komunitatearen estatistikei ekarpena egingo diezu';
-$string['registrationwarning'] = 'Zure gunea oraindik ez dago erregistratuta.';
-$string['registrationwarningcontactadmin'] = 'Zure gunea oraindik ez dago erregistratuta. Mesedez jarri harremanetan zure kudeatzailearekin.';
+$string['registrationwarning'] = 'Ez galdu eguneraketa garrantzitsu eta segurtasun-alertak.';
+$string['registrationwarningcontactadmin'] = 'Gune hau ez dago erregistratuta. Gunea erregistratzeko eskaera egin zure kudeatzaileari eguneraketa garrantzitsuak galdu ez ditzan.';
 $string['releasenoteslink'] = 'Moodleren bertsio honi buruzko informazioa nahi baduzu, mesedez begiratu <a target="_new" href="{$a}">Bertsio-kaleratze oharrak</a>';
 $string['rememberuserlicensepref'] = 'Gogoratu erabiltzaileen lizentzia-hobespenak';
 $string['rememberuserlicensepref_help'] = 'Gaituz gero, fitxategi-hautatzailearen bitartez fitxategi bat igotzean erabiltzaileak aukeratutako azken lizentzia aukeratuko da modu lehenetsian. Bestela, guneko lizentzia lehenetsia aukeratuko da.';
@@ -1378,6 +1389,7 @@ $string['stickyblockscourseview'] = 'Ikastaroaren orria';
 $string['stickyblocksduplicatenotice'] = 'Hemen gehitzen duzun edozein bloke orri jakin batean jadanik indarrean badago, emaitza kopia bikoiztua izango da.<br />gehitutako blokea ezingo da editatu, bikoiztutakoa editagarria izango den bitartean.';
 $string['stickyblocksmymoodle'] = 'Nire Moodle';
 $string['stickyblockspagetype'] = 'Konfiguratu beharreko orri mota';
+$string['storedprogressbarcleanuptask'] = 'Gordetako aurrerapen-barraren garbiketa ataza';
 $string['strictformsrequired'] = 'Beharrezko eremuen balidatze zorrotza';
 $string['stripalltitletags'] = 'Ezabatu HTML etiketak jarduera-izen guztietatik';
 $string['supportandservices'] = 'Laguntza eta zerbitzuak';
@@ -1388,6 +1400,7 @@ $string['supportemailsubject'] = 'Guneko laguntza eskaera - {$a}';
 $string['supportname'] = 'Laguntzarako izena';
 $string['supportpage'] = 'Guneko laguntzarako kontaktuaren esteka';
 $string['suspenduser'] = 'Eten erabiltzailearen kontua';
+$string['swaggerui'] = 'Moodle REST API UI (SwaggerUI)';
 $string['switchlang'] = 'Aldatu hizkuntzaren direktorioa';
 $string['systempaths'] = 'Sistemaren bideak';
 $string['tablenosave'] = 'Goiko taulako aldaketak automatikoki gordetzen dira.';
@@ -1478,6 +1491,7 @@ $string['taskstatscron'] = 'Estatistiken atzeko planoko prozesatzea';
 $string['tasktagcron'] = 'Etiketen atzeko planoko prozesatzea';
 $string['tasktempfilecleanup'] = 'Ezabatu behin-behineko fitxategi zaharkituak';
 $string['tasktype'] = 'Mota';
+$string['taskupdategeoip2file'] = 'Eguneratu GeoIP fitxategia';
 $string['tempdatafoldercleanup'] = 'Garbitu data hau baino zaharragoak diren behin-behineko datuetako fitxategiak:';
 $string['templates'] = 'Txantiloiak';
 $string['testoutgoingmailconf'] = 'Probatu irteerako postaren ezarpenak';

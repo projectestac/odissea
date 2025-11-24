@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'fr', version '4.4'.
+ * Strings for component 'format_topcoll', language 'fr', version '4.5'.
  *
  * @package     format_topcoll
  * @category    string
@@ -27,11 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['arrow'] = 'Flèche';
 $string['bulb'] = 'Ampoule';
-$string['cachedef_activitymodulecountcache'] = 'Met en cache le nombre d’étudiants qui peuvent accéder à un module donné dans un cours donné.';
-$string['cachedef_activitystudentrolescache'] = 'Met en cache les rôles des étudiants.';
-$string['cachedef_activitystudentscache'] = 'Met en cache les identifiants des étudiants d’un cours donné.';
-$string['cachedef_activityusercreatedcache'] = 'Met en cache les identifiants des nouveaux utilisateurs d’un cours donné.';
-$string['cannotgetactivitycacheslock'] = 'Impossible d’obtenir le verrouillage des caches d’activité pour l’identifiant de cours {$a}.';
 $string['center'] = 'Centre';
 $string['cloud'] = 'Nuage';
 $string['colourrule'] = 'Veuillez entrer une couleur RVB valide, six chiffres hexadécimaux ou « - » par défaut.';
@@ -40,28 +35,6 @@ $string['columnhorizontal'] = 'Horizontal';
 $string['columnvertical'] = 'Vertical';
 $string['configurationheadingsub'] = 'Configuration';
 $string['configurationheadingsubdesc'] = 'Paramètres de configuration au niveau du site';
-$string['courseadditionalmoddatamaxstudents'] = 'Définir le nombre maximum d’étudiants d’un cours auquel s’appliquera l’option « Afficher les informations supplémentaires »';
-$string['courseadditionalmoddatamaxstudentsdesc'] = 'Les informations supplémentaires peuvent prendre du temps à calculer, en particulier pour les cours de grande taille. Vous pouvez donc définir ici le nombre maximum d’étudiants qu’un cours peut avoir pour que la fonctionnalité s’affiche sur ce cours. Au-delà de cette valeur, les « Informations supplémentaires » ne seront PAS calculées ni affichées, quels que soient les paramètres du cours ! Une valeur à « 0 » signifie « illimité ». Remarque : il faut purger les caches lorsqu’ils sont modifiés.';
-$string['courseadditionalmoddatastudentsinfo'] = 'Statut d’information supplémentaire :';
-$string['courseadditionalmoddatastudentsinfolimitednoshow'] = 'Les informations supplémentaires ne seront PAS affichées pour les activités activées pour les étudiants {$a->étudiants} car le nombre dépasse le maximum « {$a->maxstudents} » défini par l’administrateur dans le paramètre « courseadditionalmoddatamaxstudents » du format de cours Sections Réduites.';
-$string['courseadditionalmoddatastudentsinfolimitedshow'] = 'Des informations supplémentaires seront affichées pour les activités activées pour les {$a->students} étudiants si le nombre ne dépasse pas le maximum « {$a->maxstudents} » défini par l’administrateur dans le paramètre « courseadditionalmoddatamaxstudents » du format de cours Sections Réduites.';
-$string['courseadditionalmoddatastudentsinfounlimited'] = 'Des informations supplémentaires s’afficheront pour les activités activées pour {$a} étudiants.';
-$string['coursesectionactivityfurtherinformation'] = 'Page du cours pour plus d’informations';
-$string['coursesectionactivityfurtherinformation_desc'] = 'Paramètres de la page de cours au niveau du site pour plus d’informations';
-$string['coursesectionactivityfurtherinformationassign'] = 'Afficher les informations sur le devoir';
-$string['coursesectionactivityfurtherinformationassigndesc'] = 'Permet de sélectionner les informations sur les devoirs à afficher dans un cours. Pour les enseignants/administrateurs, afficher le nombre de rendus.';
-$string['coursesectionactivityfurtherinformationchoice'] = 'Afficher les choix';
-$string['coursesectionactivityfurtherinformationchoicedesc'] = 'Permet de sélectionner les informations de choix à afficher sur un cours. Pour les enseignants/administrateurs, afficher le nombre de rendus.';
-$string['coursesectionactivityfurtherinformationdata'] = 'Afficher les informations sur la base de données';
-$string['coursesectionactivityfurtherinformationdatadesc'] = 'Permet de sélectionner les informations sur les données à afficher sur un cours. Pour les enseignants/administrateurs, afficher le nombre de rendus.';
-$string['coursesectionactivityfurtherinformationfeedback'] = 'Afficher les informations de retour (feedback)';
-$string['coursesectionactivityfurtherinformationfeedbackdesc'] = 'Permet de sélectionner les informations sur les retours à afficher sur un cours. Pour les enseignants/administrateurs, afficher le nombre de rendus.';
-$string['coursesectionactivityfurtherinformationforum'] = 'Afficher les informations du forum';
-$string['coursesectionactivityfurtherinformationforumdesc'] = 'Permet aux informations du forum d’être sélectionnées pour être affichées sur un cours. Pour les enseignants/administrateurs, afficher le nombre de contributions lorsque le classement du forum entier est activé.';
-$string['coursesectionactivityfurtherinformationlesson'] = 'Afficher les informations sur la leçon';
-$string['coursesectionactivityfurtherinformationlessondesc'] = 'Permet de sélectionner les informations sur les leçons à afficher sur un cours. Pour les enseignants/administrateurs, afficher le nombre de rendus.';
-$string['coursesectionactivityfurtherinformationquiz'] = 'Afficher les informations du Test';
-$string['coursesectionactivityfurtherinformationquizdesc'] = 'Permet de sélectionner les informations sur les tests à afficher sur un cours. Pour les enseignants/administrateurs, afficher le nombre de rendus.';
 $string['ctreset'] = 'Réinitialisation des options des sections réduites';
 $string['ctreset_help'] = 'Rétablir les paramètres par défaut des sections réduites.';
 $string['currentsection'] = 'Cette section';
@@ -89,8 +62,6 @@ $string['defaultonesection'] = 'Une section';
 $string['defaultonesection_desc'] = 'Indique si une seule section devrait être ouverte à la fois. Note : ce paramètre est ignoré en mode édition pour permettre le déplacement d’éléments entre les sections.';
 $string['defaultonesectioniconfont'] = 'Police d’icônes d’une section';
 $string['defaultonesectioniconfont_desc'] = 'Indiquer la classe de police d’icônes à utiliser pour l’icône de lien d’une section, par exemple, voir les classes d’icône de FontAwesome. S’il est vide, l’icône par défaut « one_section » du dossier « pix » du format sera utilisée.';
-$string['defaultshowadditionalmoddata'] = 'Cours par défaut « Afficher des informations supplémentaires »';
-$string['defaultshowadditionalmoddatadesc'] = 'Si une activité est définie au niveau du site (ci-dessous) pour afficher des informations supplémentaires, ce paramètre indique l’état par défaut de l’instance spécifique au cours.';
 $string['defaultshowsectionsummary'] = 'Afficher le résumé de la section lorsqu’elle est réduite';
 $string['defaultshowsectionsummary_desc'] = 'Fixe le résumé de la section toujours affiché même si la section est réduite.';
 $string['defaulttgbgcolour'] = 'Changer la couleur d’arrière-plan';
@@ -189,8 +160,6 @@ $string['em3_7'] = '3.7em';
 $string['em3_8'] = '3.8em';
 $string['em3_9'] = '3.9em';
 $string['em4_0'] = '4.0em';
-$string['enableadditionalmoddata'] = 'Activer les informations supplémentaires';
-$string['enableadditionalmoddatadesc'] = 'Il s’agit d’un paramétrage au « niveau du site » permettant d’activer ou de désactiver les informations sur les activités.  Il doit être activé pour que les paramètres associés qui fonctionnent au niveau du cours prennent effet.  Comme cette fonctionnalité peut être coûteuse en termes de calcul, il est fortement conseillé d’effectuer des tests complets avant de l’utiliser sur un système de production.  Note : il faut purger les caches lorsqu’ils sont modifiés.';
 $string['eye'] = 'Œil';
 $string['feedbackavailable'] = 'Commentaire (feedback) disponible';
 $string['folder'] = 'Dossier';
@@ -219,7 +188,6 @@ $string['markthissection'] = 'Mettre en évidence cette section comme section ac
 $string['medium'] = 'Moyen';
 $string['newsection'] = 'Nouvelle section';
 $string['newsectionname'] = 'Nouveau nom pour la section {$a}';
-$string['numbersections'] = 'Nombre de section';
 $string['off'] = 'Off';
 $string['on'] = 'On';
 $string['one'] = 'Une';
@@ -236,10 +204,6 @@ $string['privacy:request:preference:toggle'] = 'L’identifiant du cours « {$a
 $string['radio'] = 'Radio';
 $string['readme_desc'] = 'Veuillez cliquer sur « {$a->url} » pour plus d’informations sur les Sections Réduites.';
 $string['readme_title'] = 'Fichier « lisez-moi » (en anglais)';
-$string['resetactivitymeta'] = 'Informations complémentaires sur les modules';
-$string['resetactivitymeta_help'] = 'Réinitialise les informations du module supplémentaire pour suivre la valeur par défaut du site.';
-$string['resetallactivitymeta'] = 'Toutes les informations supplémentaires sur les modules';
-$string['resetallactivitymeta_help'] = 'Réinitialise toutes les informations supplémentaires du module pour suivre la valeur par défaut du site.';
 $string['resetallcolour'] = 'Les couleurs';
 $string['resetallcolour_help'] = 'Réinitialise les couleurs et les opacités pour suivre la valeur par défaut du site.';
 $string['resetalldisplayinstructions'] = 'L’affichage des instructions';
@@ -338,8 +302,6 @@ $string['settoggleiconset'] = 'Jeu d’icônes';
 $string['settoggleiconset_help'] = 'Définit le type d’icônes dans le bandeau de la section réduite';
 $string['setviewsinglesectionenabled'] = 'Afficher une seule section activée';
 $string['setviewsinglesectionenabled_help'] = 'La fonctionnalité d’affichage d’une seule section est activée.';
-$string['showadditionalmoddata'] = 'Afficher des informations supplémentaires pour : {$a} dans le cours';
-$string['showadditionalmoddata_help'] = 'Autoriser tous les utilisateurs à voir la date limite de l’activité et les utilisateurs disposant d’une autorisation de notation à voir le nombre de dépôts sur la page du cours pour les activités.';
 $string['showfromothers'] = 'Afficher';
 $string['sidepost'] = 'Après';
 $string['sidepre'] = 'Avant';
@@ -352,7 +314,6 @@ $string['three'] = 'Trois';
 $string['tif'] = 'Police d’icônes';
 $string['toggleclose'] = 'Fermer';
 $string['toggleopen'] = 'Ouvrir';
-$string['topcoll:changeactivitymeta'] = 'Modifier ou réinitialiser l’activité meta';
 $string['topcoll:changecolour'] = 'Modifier ou réinitialiser les couleurs';
 $string['topcoll:changelayout'] = 'Modifier ou réinitialiser la configuration';
 $string['topcoll:changetogglealignment'] = 'Modifier ou réinitialiser l’alignement du texte';

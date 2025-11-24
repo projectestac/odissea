@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_admin_presets', language 'ru', version '4.4'.
+ * Strings for component 'tool_admin_presets', language 'ru', version '4.5'.
  *
  * @package     tool_admin_presets
  * @category    string
@@ -37,8 +37,9 @@ $string['created'] = 'Создано';
 $string['currentvalue'] = 'Текущее значение';
 $string['deletepreset'] = 'Вы уверены, что хотите удалить предустановку администратора сайта «{$a}»?';
 $string['deletepresettitle'] = 'Удалить предустановку {$a}?';
-$string['deletepreviouslyapplied'] = 'Эта предустановка уже применялась ранее. Удаление предустановки полностью удаляет её с вашего сайта. Вы не сможете вернуть свои настройки к тому состоянию, в котором они были до применения этой предустановки.';
+$string['deletepreviouslyapplied'] = 'Вы уверены, что хотите удалить предустановку администратора сайта {$a}?<br><br>Эта предустановка была применена ранее. Удаление предустановки полностью удаляет ее с вашего сайта. Вы не сможете вернуть настройки к значениям, которые были до применения этой предустановки.';
 $string['deleteshow'] = 'Удаление предустановки администратора сайта';
+$string['editadminpresetname'] = 'Изменить название предустановки администратора';
 $string['eventpresetdeleted'] = 'Предустановка удалена';
 $string['eventpresetdownloaded'] = 'Предустановка скачана';
 $string['eventpresetexported'] = 'Предустановка создана';

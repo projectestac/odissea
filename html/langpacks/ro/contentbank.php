@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'ro', version '4.4'.
+ * Strings for component 'contentbank', language 'ro', version '4.5'.
  *
  * @package     contentbank
  * @category    string
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['author'] = 'Autor';
 $string['choosecontext'] = 'Alege curs sau categorie...';
 $string['contentbank'] = 'Banca de conținut';
+$string['contentbankcustomfields'] = 'Câmpuri personalizate ale băncii de conținut';
 $string['contentbankpreferences'] = 'Preferințe ale băncii de conținut';
 $string['contentcopied'] = 'Conținut copiat.';
 $string['contentcreated'] = 'Conținut creat.';
@@ -50,6 +51,7 @@ $string['deletecontentconfirm'] = 'Sigur doriți să ștergeți conținutul <em>
 $string['deletecontentconfirmlinked'] = 'Conținutul va fi șters doar din banca de conținut. Orice locații care au o conexiune în prezent cu acesta vor fi actualizate automat pentru a utiliza, în schimb, o copie a conținutului.';
 $string['displaydetails'] = 'Afișează conținutul băncii cu detaliile fișierului';
 $string['displayicons'] = 'Afișează conținutul băncii cu pictograme';
+$string['displayunlisted'] = 'Afișați conținutul nelistat';
 $string['emptynamenotallowed'] = 'Trebuie să completați numele.';
 $string['errordeletingcontentfromcategory'] = 'Eroare la ștergerea conținutului din categoria {$a}.';
 $string['errornofile'] = 'Este necesar un fișier compatibil pentru a crea conținut.';

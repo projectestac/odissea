@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'ca', version '4.4'.
+ * Strings for component 'search', language 'ca', version '4.5'.
  *
  * @package     search
  * @category    string
@@ -30,8 +30,8 @@ $string['all'] = 'Tots';
 $string['allareas'] = 'Totes les àrees';
 $string['allcourses'] = 'Tots els cursos';
 $string['allusers'] = 'Tots els usuaris';
-$string['author'] = 'Autor/a';
-$string['authorname'] = 'Nom de l\'autor/a';
+$string['author'] = 'Autor o autora';
+$string['authorname'] = 'Nom de l\'autor o l\'autora';
 $string['back'] = 'Enrere';
 $string['beadmin'] = 'Cal tenir permisos d\'administració per usar aquesta pàgina.';
 $string['checkdb'] = 'Revisa la base de dades';

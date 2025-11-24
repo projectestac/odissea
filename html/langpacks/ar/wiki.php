@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'ar', version '4.4'.
+ * Strings for component 'wiki', language 'ar', version '4.5'.
  *
  * @package     wiki
  * @category    string
@@ -62,7 +62,7 @@ $string['defaultformat_help'] = 'هذا الخيار يحدد التنسيق ا�
 * HTML - محرر HTML متوافر
 * كريول - لغة تأشير عامة خاصة بويكي والتي يوجد لها شريط أدوات صغير
 * Nwiki - لغة تأشير شبيهة بويكيميديا تستخدم مع وحدة Nwiki';
-$string['deleteallpages'] = 'حذف كل صفحات ويكي';
+$string['deleteallpages'] = 'كل صفحات ويكي';
 $string['deletecomment'] = 'يتم حذف التعليق';
 $string['deletecommentcheck'] = 'حذف التعليق';
 $string['deletecommentcheckfull'] = 'هل أنت متأكد أنك تريد حذف التعليق؟';
@@ -250,7 +250,7 @@ $string['privacy:metadata:wiki_versions:version'] = 'رقم الإصدار';
 $string['rated'] = 'لقد قيَّمت هذه الصفحة بـ {$a}';
 $string['rating'] = 'التقييم';
 $string['ratingmode'] = 'نمط التقييم';
-$string['removeallwikitags'] = 'إزالة كل وسوم الويكي';
+$string['removeallwikitags'] = 'كل وسوم الويكي';
 $string['removepages'] = 'أزل الصفحات';
 $string['reparsetimeout'] = 'الوقت الافتراضي لانتهاء صلاحية التحليل';
 $string['repeatedsection'] = 'خطأ ويكي: لا يمكن تكرار اسم المقطع \'{$a}\\';

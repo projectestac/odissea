@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'publication', language 'el', version '4.4'.
+ * Strings for component 'publication', language 'el', version '4.5'.
  *
  * @package     publication
  * @category    string
@@ -107,7 +107,6 @@ $string['published_aftercheck'] = 'όχι, μόνο μετά από έγκρισ
 $string['published_immediately'] = 'ναι αμέσως, χωρίς έγκριση από έναν διδάσκοντα';
 $string['rejected'] = 'Απορρίφθηκε';
 $string['rejectusers'] = 'απόκρυψη από όλους';
-$string['requiremodintro'] = 'Απαιτείται περιγραφή δραστηριότητας';
 $string['reset'] = 'Επαναφορά';
 $string['reset_userdata'] = 'Όλα τα δεδομένα';
 $string['resetstudentapproval'] = 'Επαναρχικοποίηση κατάστασης';

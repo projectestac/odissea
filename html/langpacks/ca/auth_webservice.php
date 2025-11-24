@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_webservice', language 'ca', version '4.4'.
+ * Strings for component 'auth_webservice', language 'ca', version '4.5'.
  *
  * @package     auth_webservice
  * @category    string

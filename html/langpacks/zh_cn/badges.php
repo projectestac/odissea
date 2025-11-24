@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'zh_cn', version '4.4'.
+ * Strings for component 'badges', language 'zh_cn', version '4.5'.
  *
  * @package     badges
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actions'] = '行为';
 $string['activate'] = '启用访问';
-$string['activatesuccess'] = '成功启用了对勋章的访问。';
+$string['activatesuccess'] = '已启用对徽章“{$a}”的访问';
 $string['addalignment'] = '增加外部技能或标准';
 $string['addbadge'] = '添加勋章';
 $string['addbadge_help'] = '选择所有应该添加到此勋章条件的勋章。按住CTRL键选择多个项目。';
@@ -78,7 +78,7 @@ $string['attachment_help'] = '如果启用，将在收件人的电子邮件中�
 $string['award'] = '授予勋章';
 $string['awardedto'] = '授予 {$a}';
 $string['awardedtoyou'] = '颁发给我';
-$string['awardoncron'] = '成功地启用了对勋章的访问。太多的用户可以立即获得这个勋章。为了确保站点的性能，这个操作需要一些时间来处理。';
+$string['awardoncron'] = '大量用户被授予徽章“{$a->badgename}”。用户可能需要一些时间才能收到。';
 $string['awards'] = '获得人';
 $string['backpackapiurl'] = '背包API URL';
 $string['backpackavailability'] = '外部勋章验证';
@@ -173,7 +173,7 @@ $string['configuremessage'] = '勋章消息';
 $string['connect'] = '连接';
 $string['connected'] = '已连接';
 $string['connecting'] = '连接中';
-$string['contact'] = '联系人';
+$string['contact'] = '发行人联系方式';
 $string['contact_help'] = '授勋机构的 email';
 $string['copy'] = '复制';
 $string['copyof'] = '复制的 {$a}';
@@ -254,7 +254,7 @@ $string['dateawarded'] = '颁发日期';
 $string['dateearned'] = '日期： {$a}';
 $string['day'] = '天';
 $string['deactivate'] = '禁用';
-$string['deactivatesuccess'] = '成功禁用勋章';
+$string['deactivatesuccess'] = '对徽章“{$a}”的访问已禁用。';
 $string['defaultissuercontact'] = '勋章颁发人电子邮件地址';
 $string['defaultissuercontact_desc'] = '与勋章颁发者关联的电子邮件地址。对于Open badge v2.0背包，在将勋章发布到背包时使用此身份验证。';
 $string['defaultissuername'] = '勋章颁发人名称';
@@ -305,7 +305,7 @@ $string['error:nosuchfield'] = '警告：这个用户个人档案字段不再可
 $string['error:nosuchmod'] = '警告：这个活动不再可用。';
 $string['error:nosuchrole'] = '警告：这个角色不再可用。';
 $string['error:nosuchuser'] = '使用此电子邮件地址的用户在当前背包提供商处没有帐户。';
-$string['error:notifycoursedate'] = '警告:与课程及活动进度有关的勋章不能于课程开始日期前颁发。';
+$string['error:notifycoursedate'] = '与课程和活动完成相关的徽章将在课程开始日期（{$a}）之前颁发。';
 $string['error:parameter'] = '警告:为了确保正确的勋章颁发流程，至少应该选择一个参数。';
 $string['error:relatedbadgedoesntexist'] = '没有带此标识符的公共勋章';
 $string['error:requesterror'] = '连接请求失败（错误代码：{$a}）';
@@ -398,6 +398,8 @@ $string['namewithlink'] = '带链接的名称';
 $string['never'] = '从不';
 $string['newbackpack'] = '添加一个新背包';
 $string['newbadge'] = '添加一个新勋章';
+$string['newbadgedeprecated'] = '您已被重定向出 badges/newbadge.php。请注意，徽章/newbadge.php将在将来被移除。
+<br/>更新链接和书签以使用当前页面徽章/edit.php。';
 $string['newimage'] = '新图片';
 $string['noalignment'] = '此勋章没有指定任何外部技能或标准。';
 $string['noawards'] = '还没有人获得此勋章。';
@@ -439,8 +441,8 @@ $string['notifydaily'] = '每天';
 $string['notifyevery'] = '每次';
 $string['notifymonthly'] = '每月';
 $string['notifyweekly'] = '每周';
-$string['numawards'] = '此勋章已经颁发给 <a href="{$a->link}">{$a->count}</a> 用户。';
-$string['numawardstat'] = '此勋章已经颁发给{$a}用户。';
+$string['numawards'] = '获得徽章“{$a->badgename}”的用户：<a href="{$a->link}">{$a->count}</a>。';
+$string['numawardstat'] = '获得徽章“{$a->badgename}”的用户：{$a->awards}。';
 $string['oauth2issuer'] = 'OAuth 2 服务';
 $string['openbadgesv1'] = 'Open Badges v1.0';
 $string['openbadgesv2'] = 'Open Badges v2.0';

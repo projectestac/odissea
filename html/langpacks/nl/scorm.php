@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'nl', version '4.4'.
+ * Strings for component 'scorm', language 'nl', version '4.5'.
  *
  * @package     scorm
  * @category    string
@@ -114,7 +114,7 @@ $string['datadir'] = 'Fout van het bestandssysteem: de gegevensfolder van de cur
 $string['defaultdisplaysettings'] = 'Standaard scherminstellingen';
 $string['defaultgradesettings'] = 'Standaard cijferinstellingen';
 $string['defaultothersettings'] = 'Andere standaardinstellingen';
-$string['deleteallattempts'] = 'Verwijder alle SCORM pogingen';
+$string['deleteallattempts'] = 'Alle SCORM pogingen';
 $string['deleteattemptcheck'] = 'Weet je zeker dat je al deze pogingen volledig wil verwijderen?';
 $string['deleteselected'] = 'Verwijder geselecteerde pogingen';
 $string['deleteuserattemptcheck'] = 'Weet je zeker dat je al jouw pogingen volledig wil verwijderen?';

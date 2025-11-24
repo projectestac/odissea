@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'ja', version '4.4'.
+ * Strings for component 'plugin', language 'ja', version '4.5'.
  *
  * @package     plugin
  * @category    string
@@ -53,6 +53,8 @@ $string['err_response_format_version'] = '予期しないレスポンスフォ�
 $string['err_response_http_code'] = '利用可能なアップデートデータを取得できません - 不明なHTTPレスポンスコードです。';
 $string['filterall'] = 'すべてを表示する';
 $string['filtercontribonly'] = '追加プラグインのみ表示する';
+$string['filtermissingonly'] = 'ディスクから欠落しているもののみ表示する';
+$string['filternewpluginsonly'] = 'インストールするプラグインのみ表示する';
 $string['filterupdatesonly'] = '更新可能のみ表示する';
 $string['incompatibleversion'] = '互換性のないMoodleバージョン: {$a}';
 $string['isenabled'] = '有効にしますか?';
@@ -110,6 +112,10 @@ $string['status_uptodate'] = 'インストール';
 $string['supportedconversions'] = 'サポートされるドキュメントコンバージョン';
 $string['supportedmoodleversions'] = 'サポートされるMoodleバージョン';
 $string['systemname'] = '識別子';
+$string['type_aiplacement'] = 'AI配置プラグイン';
+$string['type_aiplacement_plural'] = 'AI配置プラグイン';
+$string['type_aiprovider'] = 'AIプロバイダプラグイン';
+$string['type_aiprovider_plural'] = 'AIプロバイダプラグイン';
 $string['type_antivirus'] = 'アンチウイルスプラグイン';
 $string['type_antivirus_plural'] = 'アンチウイルスプラグイン';
 $string['type_auth'] = '認証方法';
@@ -192,6 +198,8 @@ $string['type_repository'] = 'リポジトリ';
 $string['type_repository_plural'] = 'リポジトリ';
 $string['type_search'] = '検索エンジン';
 $string['type_search_plural'] = 'サーチエンジン';
+$string['type_smsgateway'] = 'SMSゲートウェイ';
+$string['type_smsgateway_plural'] = 'SMSゲートウェイ';
 $string['type_theme'] = 'テーマ';
 $string['type_theme_plural'] = 'テーマ';
 $string['type_tool'] = '管理ツール';
@@ -211,7 +219,7 @@ $string['updateavailable'] = '利用可能な新しいバージョンの {$a} �
 $string['updateavailable_moreinfo'] = '詳細情報 ...';
 $string['updateavailable_release'] = 'リリース {$a}';
 $string['updatepluginconfirm'] = 'プラグイン更新確認';
-$string['updatepluginconfirmexternal'] = '現在のバージョンのプラグインはソースコード管理システム ({$a}) のチェックアウトによって取得されたようです。この更新をインストールした場合、あなたはこれ以上ソースコード管理システム経由でプラグイン更新を取得できないようになります。続ける前に、あなたが本当にプラグインを更新したいかどうかご確認ください。';
+$string['updatepluginconfirmexternal'] = '現在のバージョンのプラグインはソースコード管理システム ({$a}) のチェックアウトにより取得されたようです。この更新をインストールした場合、あなたはこれ以上ソースコード管理システム経由でプラグイン更新を取得できないようになります。続ける前に、あなたが本当にプラグインを更新したいかどうかご確認ください。';
 $string['updatepluginconfirminfo'] = 'あなたは新しいバージョンのプラグイン「<strong>{$a->name}</strong>」をインストールしようとしています。 プラグインのバージョン {$a->version} のZIPパッケージが <a href="{$a->url}">{$a->url}</a> からダウンロードされた後、アップグレードするため、あなたのMoodleインストレーションに展開されます。';
 $string['updatepluginconfirmwarning'] = 'アップグレード前にあなたのデータベースをMoodleが自動的にバックアップしないことに留意してください。新しいコードに含まれるバグがあなたのサイトを利用停止する、またはデータベースを破壊してしまうという稀なケースに対処するため、今から完全なスナップショットバックアップを実行されることを強くお勧めします。あなたの責任において、処理を進めてください。';
 $string['validationmsg_componentmatch'] = 'ファイルコンポーネント名';

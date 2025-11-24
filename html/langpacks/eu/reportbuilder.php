@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'eu', version '4.4'.
+ * Strings for component 'reportbuilder', language 'eu', version '4.5'.
  *
  * @package     reportbuilder
  * @category    string
@@ -67,8 +67,8 @@ $string['columnadded'] = '\'{$a}\' zutabea gehituta';
 $string['columnaggregated'] = '\'{$a}\' zutabe agregatua';
 $string['columndeleted'] = 'Ezabatutako \'{$a}\' zutabea';
 $string['columnmoved'] = '\'{$a}\' zutabea mugituta';
-$string['columnsortdirectionasc'] = 'Ordenatu zutabea \'{$a}\' goranzka';
-$string['columnsortdirectiondesc'] = 'Ordenatu zutabea \'{$a}\' beheranzka';
+$string['columnsortdirectionasc'] = 'Aldatu \'{$a}\' zutabearen hasierako ordenatzea goranzko ordenara';
+$string['columnsortdirectiondesc'] = 'Aldatu \'{$a}\' zutabearen hasierako ordenatzea beheranzko ordenara';
 $string['columnsortdisable'] = 'Desgaitu \'{$a}\' zutabearen hasierako ordenatzea';
 $string['columnsortenable'] = 'Gaitu \'{$a}\' zutabearen hasierako ordenatzea';
 $string['columnsortupdated'] = '\'{$a}\' zutabearen ordenatzea eguneratuta';
@@ -147,6 +147,7 @@ $string['filterdurationunit'] = '{$a} unitate';
 $string['filterendswith'] = 'Honela amaitzen da';
 $string['filterequalorgreaterthan'] = 'Handiagoa edo berdin';
 $string['filterequalorlessthan'] = 'Txikiagoa edo berdin';
+$string['filterfieldfrom'] = '{$a} hemendik aurrera';
 $string['filterfieldoperator'] = '{$a} eragilea';
 $string['filterfieldto'] = '{$a} hona arte';
 $string['filterfieldunit'] = '{$a} unitatea';

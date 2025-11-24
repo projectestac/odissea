@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'uk', version '4.4'.
+ * Strings for component 'theme_boost', language 'uk', version '4.5'.
  *
  * @package     theme_boost
  * @category    string
@@ -34,7 +34,6 @@ $string['brandcolor'] = 'Колір бренду';
 $string['brandcolor_desc'] = 'Колір акценту.';
 $string['choosereadme'] = 'Boost - сучасна високонастроювана тема. Ця тема призначена для використання безпосередньо як головна тема, або тема при створенні нових тем із використанням Bootstrap 4';
 $string['configtitle'] = 'Boost';
-$string['currentinparentheses'] = '(поточний)';
 $string['generalsettings'] = 'General settings';
 $string['loginbackgroundimage'] = 'Фонове зображення сторінки входу';
 $string['loginbackgroundimage_desc'] = 'Зображення для відображення як фон для сторінки входу.';
@@ -48,8 +47,6 @@ $string['privacy:drawerblockclosed'] = 'Поточні параметри для
 $string['privacy:drawerblockopen'] = 'Поточні налаштування для шухляди блоків відкрито.';
 $string['privacy:drawerindexclosed'] = 'Поточні налаштування для шухляди індексів закрито.';
 $string['privacy:drawerindexopen'] = 'Поточні налаштування для шухляди індексів відкрито.';
-$string['privacy:drawernavclosed'] = 'Поточні параметри для панелі навігації закриті.';
-$string['privacy:drawernavopen'] = 'Поточні налаштування для панелі навігації відкрито.';
 $string['privacy:metadata'] = 'Тема Boost не зберігає жодних особистих даних про жодного користувача.';
 $string['privacy:metadata:preference:draweropenblock'] = 'Переваги користувача щодо приховування або показу ящика з блоками.';
 $string['privacy:metadata:preference:draweropenindex'] = 'Переваги користувача щодо приховування або показу ящика з індексом курсу.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'zh_cn', version '4.4'.
+ * Strings for component 'group', language 'zh_cn', version '4.5'.
  *
  * @package     group
  * @category    string
@@ -50,8 +50,8 @@ $string['databaseupgradegroups'] = '小组版本现在是 {$a}';
 $string['defaultgrouping'] = '默认大组';
 $string['defaultgroupingname'] = '大组';
 $string['defaultgroupname'] = '小组';
-$string['deleteallgroupings'] = '删除所有大组';
-$string['deleteallgroups'] = '删除所有小组';
+$string['deleteallgroupings'] = '所有大组';
+$string['deleteallgroups'] = '所有小组';
 $string['deletegroupconfirm'] = '您确定要删除小组“{$a}”吗？';
 $string['deletegrouping'] = '删除大组';
 $string['deletegroupingconfirm'] = '您确定要删除大组“{$a}”吗？（此大组中的小组不会被删除。）';
@@ -198,8 +198,8 @@ $string['random'] = '随机地';
 $string['removefromgroup'] = '从小组{$a}中移除用户';
 $string['removefromgroupconfirm'] = '您确定要从小组“{$a->group}”中移除用户“{$a->user}”吗？';
 $string['removegroupfromselectedgrouping'] = '从大组中移除小组';
-$string['removegroupingsmembers'] = '从大组中移除所有小组';
-$string['removegroupsmembers'] = '移除所有小组成员';
+$string['removegroupingsmembers'] = '大组中所有小组';
+$string['removegroupsmembers'] = '所有小组成员';
 $string['removeselectedusers'] = '移除选定的用户';
 $string['selectfromgroup'] = '从小组中选择成员';
 $string['selectfromgrouping'] = '从大组中选择成员';

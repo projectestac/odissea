@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'ja', version '4.4'.
+ * Strings for component 'format_tiles', language 'ja', version '4.5'.
  *
  * @package     format_tiles
  * @category    string
@@ -45,7 +45,6 @@ $string['backupfailed'] = 'バックアップ失敗';
 $string['basecolour'] = 'タイルの色';
 $string['basecolour_help'] = 'ここで設定された色は、コース内のすべてのタイルに適用されます。';
 $string['brandcolour'] = 'ブランド色';
-$string['canceltask'] = 'キャンセル';
 $string['changedcolour'] = 'タイルの色をコース{$a}のデフォルトに戻す';
 $string['checkforproblemcourses'] = '問題のあるコースの確認と修正';
 $string['clickiffailstoload'] = 'ページの読み込みに失敗したときにクリックする';
@@ -112,9 +111,6 @@ $string['displaytitle_mod_ppt'] = 'パワーポイント';
 $string['displaytitle_mod_txt'] = 'テキスト';
 $string['displaytitle_mod_xls'] = 'スプレッドシート';
 $string['displaytitle_mod_zip'] = 'Zip';
-$string['documentation'] = 'ドキュメンテーション';
-$string['documentationurl'] = 'ドキュメンテーションのURL';
-$string['documentationurl_descr'] = '「タイル」ドキュメンテーションのURL';
 $string['download'] = 'ダウンロード';
 $string['editsectionname'] = 'タイル名を編集';
 $string['embeddedurlerror'] = '上記のウィンドウで外部サイトの接続が拒否された場合は、こちらをご利用ください。';
@@ -261,7 +257,6 @@ $string['none'] = 'なし';
 $string['noproblemsfound'] = '問題なし';
 $string['notcomplete'] = '未完成';
 $string['notrecommended'] = '推奨しない';
-$string['notregistered'] = 'あなたの「タイル」プラグインは、まだプラグイン開発者に登録されていません。';
 $string['novaliddefaultcolour'] = '以下のデフォルトタイルカラーに有効な色が設定されていません。';
 $string['numberofsections'] = 'コースのセクション数';
 $string['ok'] = 'OK';
@@ -300,7 +295,6 @@ $string['restorefailed'] = 'リストアの失敗';
 $string['restoreincorrectsections'] = 'エラーです。ソースコースに誤ったセクション番号が含まれているため、完了できません。例：セクション番号({$a->sectionnum})が最大許容数より({$a->maxallowed})も多い。数字が大きいセクションを除外したり、削除したりしてみてください。';
 $string['restoretoomanysections'] = 'エラーです。あまりにも多くのコースセクションが含まれており ({$a->numsections})、これが許容範囲 ({$a->maxallowed}) を超えているため、バックアップまたはリストアできません。いくつかのセクションを除外または削除してみてください。';
 $string['revealcontents'] = 'タイルの内容を表示する';
-$string['scheduleddeleteemptysections'] = 'コースから空のセクションを削除するタスクがスケジュールされました。後日、ご確認ください。';
 $string['section0name'] = '一般';
 $string['sectionerrorstring'] = 'セッションの有効期限が切れている可能性があります。このページを更新してみてください。';
 $string['sectionerrortitle'] = '読み込みエラー';
@@ -348,6 +342,4 @@ $string['usejsnavforsinglesection'] = 'シングルセクションページで�
 $string['usejsnavforsinglesection_desc'] = 'チェックした場合、シングルセクションページ (&section=xx) の呼び出しは、古いスタイルのPHPシングルセクションページを呼び出すのではなく、JavaScriptを介して要求されたセクションを開くようにアニメーションしたコースメインページを起動することにより、JavaScriptを使用して処理されます。';
 $string['usesubtilesseczero'] = 'トップセクションにサブタイルを使用する';
 $string['usesubtilesseczero_help'] = '選択された場合、サブタイルはコースの最上部に使用され、すべてのタイル内にも使用されます。これはサブタイルがコースの最上部に多くのスペースを占めるためです。これを選択しないでおくと、トップセクションのアイテムは標準的なリスト形式で表示されます。';
-$string['usetooltips'] = 'JavaScriptのツールチップを使用';
-$string['usetooltips_desc'] = 'ユーザーが特定のアイテムにカーソルを置くと、JavaScriptのツールチップを使用する（例：完了ボックス、タイルの内容のタイル';
 $string['width'] = '幅';

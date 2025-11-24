@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'ar', version '4.4'.
+ * Strings for component 'format_topcoll', language 'ar', version '4.5'.
  *
  * @package     format_topcoll
  * @category    string
@@ -25,11 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['coursesectionactivityfurtherinformation'] = 'المعلومات الإضافية لصفحة المقرر';
-$string['coursesectionactivityfurtherinformationfeedback'] = 'إظهار معلومات الإفادة';
-$string['coursesectionactivityfurtherinformationfeedbackdesc'] = 'إظهار معلومات الإفادة. بالنسبة إلى المعلمين / المشرفين، إظهار عدد التسليمات.';
-$string['coursesectionactivityfurtherinformationquiz'] = 'إظهار معلومات الاختبار';
-$string['coursesectionactivityfurtherinformationquizdesc'] = 'إظهار معلومات الاختبار. بالنسبة للمعلمين والمشرفين، إظهار عدد التسليمات.';
 $string['default'] = 'الافتراضي - {$a}';
 $string['defaultheadingsub'] = 'الافتراضيات';
 $string['defaulttgbgcolour'] = 'تبديل لون الخلفية';
@@ -72,8 +67,6 @@ $string['settogglealignment'] = 'تبديل محاذاة النص';
 $string['settogglealignment_help'] = 'ضبط محاذاة النص في التبديل';
 $string['settogglebackgroundcolour_help'] = 'تعيين لون خلفية التبديل.';
 $string['settogglebackgroundhovercolour_help'] = 'تعيين لون خلفية التبديل عند تحريك الماوس فوقه.';
-$string['showadditionalmoddata'] = 'إظهار معلومات إضافية عن: {$a} في المساق';
-$string['showadditionalmoddata_help'] = 'السماح لكل المستخدمين بمشاهدة الموعد النهائي للنشاط، والمساح للمستخدمين ذوي صلاحية التقييم بمشاهدة عدد تسليمات النشاطات في صفحة المقرر.';
 $string['small'] = 'صغير';
 $string['topcoll:changetogglealignment'] = 'تغيير أو إعادة تعيين محاذاة التبديل';
 $string['topcollclosed'] = 'إغلاق الكل';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'it', version '4.4'.
+ * Strings for component 'assign', language 'it', version '4.5'.
  *
  * @package     assign
  * @category    string
@@ -70,6 +70,18 @@ $string['assign:viewgrades'] = 'Visualizza valutazioni';
 $string['assign:viewownsubmissionsummary'] = 'Visualizzare il riepilogo della propria consegna';
 $string['assignfeedback'] = 'Plugin commento';
 $string['assignfeedbackpluginname'] = 'Plugin commento';
+$string['assignmentduedigesthtml'] = '<p>Gentile {$a->firstname},</p>
+<p>I seguenti compiti devono essere consegnati entro <strong>{$a->duedate}</strong>.</p>
+{$a->digest}';
+$string['assignmentduedigestitem'] = '<strong>{$a->assignmentname}</strong> nel corso {$a->coursename}<br/>
+<strong>Scadenza: {$a->duetime}</strong><br/>
+<a href="{$a->url}" aria-label="Vai a {$a->assignmentname}">Vai all\'attività</a>';
+$string['assignmentduedigestsubject'] = 'Hai dei compiti in scadenza tra 7 giorni';
+$string['assignmentduesoonhtml'] = '<p>Gentile {$a->firstname},</p>
+<p>Il compito <strong>{$a->assignmentname}</strong> nel corso {$a->coursename} scadrà a breve.</p>
+<p><strong>Scadenza: {$a->duedate}</strong></p>
+<p><a href="{$a->url}">Vai all\'attività</a></p>';
+$string['assignmentduesoonsubject'] = 'Scadenza il {$a->duedate}: {$a->assignmentname}';
 $string['assignmentisdue'] = 'Consegna compito';
 $string['assignmentmail'] = '{$a->grader} ha inserito un commento sulla tua consegna del compito \'{$a->assignment}\' .
 
@@ -80,6 +92,12 @@ $string['assignmentmailhtml'] = '<p>{$a->grader} ha inserito un commento sulla t
 <p>Puoi visualizzare il commento di seguito alla tua consegna: <a href="{$a->url}">assignment submission</a>.</p>';
 $string['assignmentmailsmall'] = '{$a->grader} ha inserito un commento sulla tua consegna del compito \'{$a->assignment}\' . Puoi visualizzare il commento di seguito alla tua consegna.';
 $string['assignmentname'] = 'Titolo del compito';
+$string['assignmentoverduehtml'] = '<p>Gentile {$a->firstname},</p>
+<p><strong>{$a->assignmentname}</strong> nel corso {$a->coursename} doveva essere consegnato il <strong>{$a->duedate}</strong>.</p>
+<p>Potresti comunque riuscire a inviare il tuo compito {$a->cutoffsnippet}, ma la consegna verrà contrassegnata come in ritardo.</p>
+<p><a href="{$a->url}">Vai all\'attività</a></p>';
+$string['assignmentoverduehtmlcutoffsnippet'] = '<strong>entro {$a->cutoffdate}</strong>';
+$string['assignmentoverduesubject'] = 'In ritardo: {$a->assignmentname}';
 $string['assignmentplugins'] = 'Plugin compito';
 $string['assignmentsperpage'] = 'Compiti per pagina';
 $string['assignsubmission'] = 'Plugin consegna';
@@ -89,19 +107,23 @@ $string['attemptheading'] = 'Tentativo {$a->attemptnumber}: {$a->submissionsumma
 $string['attempthistory'] = 'Tentativo precedente';
 $string['attemptnumber'] = 'Numero tentativo';
 $string['attemptreopenmethod'] = 'Tentativi aggiuntivi';
-$string['attemptreopenmethod_help'] = 'Imposta la modalità di riapertura dei tentativi di consegna.
-Per ogni tentativo, la valutazione e il commento saranno salvati e potranno essere visualizzati sia dal docente sia dallo studente. Le opzioni disponibili sono:
+$string['attemptreopenmethod_automatic'] = 'Automaticamente';
+$string['attemptreopenmethod_automatic_help'] = 'Dopo ogni tentativo, il successivo viene concesso automaticamente dopo la valutazione.';
+$string['attemptreopenmethod_help'] = 'Questa impostazione controlla il modo in cui agli studenti vengono concessi i tentativi . Per ogni tentativo, la valutazione e il feedback vengono salvati e possono essere visualizzati dal docente e dallo studente. Le opzioni disponibili sono:
 
-* Mai - Il tentativo di consegna non potrà essere riaperto.
-* Manualmente - Il tentativo di consegna potrà essere riaperto da un docente.
-* Automaticamente fino al superamento - Il tentativo di consegna verrà riaperto automaticamente fino al raggiungimento della sufficienza impostata per il compito nel Registro valutatore.';
+* Manualmente: dopo ogni tentativo, è possibile concedere quello successivo tramite la pagina Consegne o la pagina Valutazione.
+* Automaticamente: dopo ogni tentativo, viene concesso automaticamente il successivo.
+* Automaticamente fino al superamento - Dopo ogni tentativo, il successivo verrà concesso automaticamente, finché lo studente non raggiungerà la sufficienza.';
 $string['attemptreopenmethod_manual'] = 'Manualmente';
+$string['attemptreopenmethod_manual_help'] = 'Dopo ogni tentativo, puoi concedere quello successivo attraverso la pagina Consegne o la pagina Valutazione.';
 $string['attemptreopenmethod_none'] = 'Mai';
 $string['attemptreopenmethod_untilpass'] = 'Automaticamente fino al superamento';
+$string['attemptreopenmethod_untilpass_help'] = 'Dopo ogni tentativo, verrà concesso automaticamente il successivo, fino al raggiungimento della sufficienza.';
 $string['attemptsettings'] = 'Impostazioni tentativo';
 $string['availability'] = 'Disponibilità';
 $string['back'] = 'Indietro';
 $string['backtoassignment'] = 'Torna al compito';
+$string['batchoperationaddattempt'] = 'Concedi tentativo';
 $string['batchoperationconfirmaddattempt'] = 'Confermi il nuovo tentativo per le consegne selezionate?';
 $string['batchoperationconfirmdownloadselected'] = 'Vuoi scaricare le consegne selezionate?';
 $string['batchoperationconfirmgrantextension'] = 'Vuoi concedere la proroga a tutte le consegne selezionate ?';
@@ -111,18 +133,26 @@ $string['batchoperationconfirmreverttodraft'] = 'Vuoi riportare le consegne sele
 $string['batchoperationconfirmsetmarkingallocation'] = 'Vuoi impostare l\'assegnazione dei valutatori per tutte le consegne selezionate?';
 $string['batchoperationconfirmsetmarkingworkflowstate'] = 'Vuoi impostare lo stato del flusso di lavoro della valutazione per tutte le consegne selezionate?';
 $string['batchoperationconfirmunlock'] = 'Vuoi sbloccare tutte le consegne selezionate ?';
-$string['batchoperationlock'] = 'blocca consegne';
-$string['batchoperationreverttodraft'] = 'riporta consegne a bozza';
+$string['batchoperationdownloadselected'] = 'Download';
+$string['batchoperationgrantextension'] = 'Estendi';
+$string['batchoperationlock'] = 'Blocca';
+$string['batchoperationremovesubmission'] = 'Elimina';
+$string['batchoperationreverttodraft'] = 'Riporta in bozza';
 $string['batchoperationsdescription'] = 'Per gli utenti selezionati...';
-$string['batchoperationunlock'] = 'sblocca consegne';
+$string['batchoperationsetmarkingallocation'] = 'Assegna valutatore';
+$string['batchoperationsetmarkingworkflowstate'] = 'Modifica stato della valutazione';
+$string['batchoperationunlock'] = 'Sblocca';
 $string['batchsetallocatedmarker'] = 'Valutatori assegnati per {$a} utenti selezionati.';
 $string['batchsetmarkingworkflowstateforusers'] = 'Stato del flusso di lavoro della valutazione impostato per {$a} utenti selezionati.';
 $string['beginassignment'] = 'Inizia il compito';
 $string['blindmarking'] = 'Consegne anonime';
 $string['blindmarking_help'] = 'La consegna anonima nasconde l\'identità degli studenti ai valutatori. L\'impostazione di consegna anonima sarà bloccata non appena sarà presente una consegna o una valutazione del compito.';
-$string['blindmarkingenabledwarning'] = 'In questa attività è abilitata la consegna anonima. Le valutazioni non saranno inserite nel registro delle valutazioni finché non saranno rivelate le identità degli studenti.';
+$string['blindmarkingenabledwarning'] = 'In questa attività è abilitata la consegna anonima.';
+$string['blindmarkingnogradewarning'] = 'Per questa attività è possibile consegnare compiti in forma anonima. Le valutazioni non verranno inserire nel registro finché non verranno rivelate le identità degli studenti tramite il menu "Azioni".';
+$string['bulkactionsselection'] = 'Nuovo feedback su \'{$an->assignment}\' in \'{$a->coursefull name}\'. Accedere per visualizzare';
 $string['cachedef_overrides'] = 'Informazioni sulle personalizzazioni individuali e di gruppo';
 $string['calendardue'] = '{$a} è in scadenza';
+$string['calendarextension'] = '{$a} è in scadenza (estensione)';
 $string['calendargradingdue'] = '{$a} deve essere valutato';
 $string['caneditsubmission'] = 'È possibile modificare la propria consegna e inviarla dopo la scadenza del limite di tempo, ma verrà segnato come in ritardo.';
 $string['changefilters'] = 'Modifica filtri';
@@ -157,11 +187,15 @@ $string['cutoffdate_help'] = 'Le consegne oltre la data limite saranno impedite,
 $string['cutoffdatecolon'] = 'Data limite: {$a}';
 $string['cutoffdatefromdatevalidation'] = 'La data limite deve essere successiva alla data di inizio consegne';
 $string['cutoffdatevalidation'] = 'La data limite non può essere antecedente alla data di fine consegne.';
+$string['defaultgradescale'] = 'Scala di valutazione';
+$string['defaultgradescale_help'] = 'La scala di valutazione di default da utilizzare durante la creazione di nuovi compiti. È possibile utilizzare solo scale standard.';
+$string['defaultgradetype'] = 'Tipo di valutazione';
+$string['defaultgradetype_help'] = 'Il tipo di valutazione di default da utilizzare durante la creazione di nuovi compiti';
 $string['defaultlayout'] = 'Ripristina impaginazione di default';
 $string['defaultsettings'] = 'Impostazioni compito di default';
 $string['defaultsettings_help'] = 'Queste impostazioni definiscono i default per tutte le nuove istanze di compito';
 $string['defaultteam'] = 'Gruppo di default';
-$string['deleteallsubmissions'] = 'Elimina tutte le consegne';
+$string['deleteallsubmissions'] = 'Ttutte le consegne';
 $string['description'] = 'Descrizione';
 $string['disabled'] = 'Disabilitato';
 $string['downloadall'] = 'Scarica tutte le consegne';
@@ -187,7 +221,7 @@ $string['editsubmissionother'] = 'Modifica consegna di {$a}';
 $string['enabled'] = 'Abilitato';
 $string['enabletimelimit'] = 'Abilita compiti a tempo';
 $string['enabletimelimit_help'] = 'Consente di impostare un limite di tempo nelle impostazioni del compito.';
-$string['errorgradechangessaveddetail'] = 'Le modifiche al voto e al feedback non sono state salvate';
+$string['errorgradechangessaveddetail'] = 'Le modifiche al voto e al feedback non sono state salvate.';
 $string['errornosubmissions'] = 'Non ci sono consegne da scaricare';
 $string['errorquickgradingvsadvancedgrading'] = 'La valutazione non è stata salvata poiché il compito sta usando la valutazione avanzata.';
 $string['errorrecordmodified'] = 'La valutazione non è stata salvata poiché uno o più record sono stati modificati da qualcuno più recentemente del tuo caricamento della pagina.';
@@ -225,6 +259,8 @@ $string['expandreviewpanel'] = 'Ingrandisci il pannello di revisione';
 $string['extensionduedate'] = 'Data scadenza proroga';
 $string['extensionduedatecurrent'] = 'Data di scadenza dell\'estensione';
 $string['extensionduedatenone'] = 'Nessuna';
+$string['extensionduedaterange'] = 'Variabile tra {$a->earliest} e {$a->latest}';
+$string['extensionduedatewithout'] = 'Utenti senza estensione : {$a}';
 $string['extensionnotafterduedate'] = 'La data di fine proroga deve essere successiva alla data di fine consegne';
 $string['extensionnotafterfromdate'] = 'La data di fine proroga deve essere successiva alla data di inizio consegne';
 $string['feedback'] = 'Commento';
@@ -253,6 +289,7 @@ $string['feedbacksettings'] = 'Impostazioni commento';
 $string['feedbacktypes'] = 'Tipi di feedback';
 $string['filesubmissions'] = 'File consegnati';
 $string['filter'] = 'Filtro';
+$string['filterall'] = 'Tutto';
 $string['filterdraft'] = 'Bozza';
 $string['filtergrantedextension'] = 'Proroghe concesse';
 $string['filternone'] = 'Senza filtro';
@@ -263,6 +300,7 @@ $string['fixrescalednullgrades'] = 'Il compito contiene alcune valutazioni errat
 $string['fixrescalednullgradesconfirm'] = 'Sei sicuro di sistemare le valutazioni errate? Tutte le valutazioni interessate saranno rimosse. Da notare che i totali del corso potranno cambiare.';
 $string['fixrescalednullgradesdone'] = 'Valutazioni sistemate.';
 $string['gradeabovemaximum'] = 'La valutazione deve essere minore o uguale a {$a}.';
+$string['gradeactions'] = 'Azioni sulle valutazioni';
 $string['gradebelowzero'] = 'La valutazione deve essere maggiore o uguale a zero';
 $string['gradebreakdown'] = 'Suddivisione delle valutazioni';
 $string['gradecanbechanged'] = 'La valutazione può essere cambiata';
@@ -310,6 +348,7 @@ $string['hidegrader_help'] = 'Gli studenti non potranno visualizzare chi ha valu
 Da notare che l\'impostazione non si applica al riquadro commenti nella pagina di valutazione.';
 $string['hideshow'] = 'Nascondi/Visualizza';
 $string['inactiveoverridehelp'] = '* La personalizzazione non è attiva poiché gli studenti non possono accedervi. Può avvenire in funzione di assegnazioni a gruppi o a ruoli, condizioni di accesso, oppure perché l\'attività è nascosta.';
+$string['includesuspendedparticipants'] = 'Includi partecipanti sospesi';
 $string['indicator:cognitivedepth'] = 'Compito cognitivo';
 $string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività Compito.';
 $string['indicator:cognitivedepthdef'] = 'Compito cognitivo';
@@ -342,6 +381,7 @@ $string['markingallocation'] = 'Utilizza assegnazione valutatori';
 $string['markingallocation_help'] = 'Consente di assegnare valutatori a singoli studenti. Richiede l\'attivazione del flusso di lavoro della valutazione.';
 $string['markinganonymous'] = 'Consenti il rilascio parziale dei voti durante la valutazione anonima';
 $string['markinganonymous_help'] = 'Se abilitato insieme alle consegne anonime e al flusso di lavoro della valutazione, consente il rilascio parziale dei voti durante la valutazione anonima.';
+$string['markingstate'] = 'Stato della valutazione';
 $string['markingworkflow'] = 'Utilizza flusso di lavoro della valutazione';
 $string['markingworkflow_help'] = 'Le valutazioni seguiranno un flusso di lavoro prima di essere rilasciate agli studenti, consentendo di valutare in diversi cicli e rilasciare le valutazioni a tutti gli studenti in una sola volta.';
 $string['markingworkflowstate'] = 'Stato del flusso di lavoro della valutazione';
@@ -359,12 +399,15 @@ $string['markingworkflowstatenotmarked'] = 'Non valutata';
 $string['markingworkflowstatereadyforrelease'] = 'Pronta per il rilascio';
 $string['markingworkflowstatereadyforreview'] = 'Valutazione completata';
 $string['markingworkflowstatereleased'] = 'Rilasciata';
-$string['maxattempts'] = 'Numero massimo tentativi';
+$string['maxattempts'] = 'Numero di tentativi';
 $string['maxattempts_help'] = 'Il numero massimo di tentativi di consegna di uno studente. Raggiunto il numero massimo impostato non sarà più possibile riaprire le consegne.';
 $string['maxgrade'] = 'Valutazione massima';
 $string['maxperpage'] = 'Numero massimo di consegne per pagina';
 $string['maxperpage_help'] = 'Il numero massimo di consegne visualizzabili dal valutatore nella stessa pagina. L\'impostazione è particolarmente utile nei corsi con molte iscrizioni.';
+$string['messageprovider:assign_due_digest'] = 'Notifica compiti in scadenza tra 7 giorni';
+$string['messageprovider:assign_due_soon'] = 'Notifica di compito con scadenza a breve';
 $string['messageprovider:assign_notification'] = 'Notifiche compito';
+$string['messageprovider:assign_overdue'] = 'Notifica di consegna in ritardo';
 $string['modulename'] = 'Compito';
 $string['modulename_help'] = 'Il modulo di attività compito consente al docente di valutare l\'apprendimento degli studenti assegnando loro un lavoro che potrà poi valutare e commentare.
 
@@ -399,6 +442,7 @@ $string['noteamgrader'] = 'Non appartieni a nessun gruppo, non puoi effettuare c
 $string['notgraded'] = 'Non valutata';
 $string['notgradedyet'] = 'Non ancora valutata';
 $string['notifications'] = 'Notifiche';
+$string['notifystudents'] = 'Notifica gli studenti';
 $string['nouseroverrides'] = 'Al momento non sono presenti personalizzazioni individuali.';
 $string['nousers'] = 'Nessun utente';
 $string['nousersselected'] = 'Non sono stati selezionati utenti';
@@ -468,8 +512,8 @@ $string['quickgradingchangessaved'] = 'Le modiche alle valutazioni sono state sa
 $string['quickgradingresult'] = 'Valutazione rapida';
 $string['recordid'] = 'Identificativo';
 $string['relativedatessubmissiontimeleft'] = 'Calcolato individualmente';
-$string['removeallgroupoverrides'] = 'Elimina tutte le personalizzazioni di gruppo';
-$string['removealluseroverrides'] = 'Elimina tutte le personalizzazioni individuali';
+$string['removeallgroupoverrides'] = 'Tutte le personalizzazioni di gruppo';
+$string['removealluseroverrides'] = 'Tutte le personalizzazioni individuali';
 $string['removesubmission'] = 'Elimina consegna';
 $string['removesubmissionconfirm'] = 'Sei sicuro di eliminare la consegna?';
 $string['removesubmissionconfirmforstudent'] = 'Sei sicuro di eliminare la consegna di {$a}?';
@@ -506,6 +550,9 @@ $string['selectlink'] = 'Seleziona...';
 $string['selectuser'] = 'Seleziona {$a}';
 $string['sendlatenotifications'] = 'Notifica le consegne in ritardo ai valutatori';
 $string['sendlatenotifications_help'] = 'I valutatori (di solito i docenti) riceveranno una notifica tutte le volte che uno studente avrà consegnato un compito in ritardo. I metodi di notifica sono configurabili.';
+$string['sendnotificationduedatesoon'] = 'Avvisa l\'utente dell\'avvicinarsi della data di scadenza del compito';
+$string['sendnotificationduedigest'] = 'Notifica gli utenti di compiti in scadenza tra 7 giorni';
+$string['sendnotificationoverdue'] = 'Notifica gli utenti riguardo le consegne in ritardo';
 $string['sendnotifications'] = 'Notifica le consegne ai valutatori';
 $string['sendnotifications_help'] = 'I valutatori (di solito i docenti) riceveranno una notifica tutte le volte che uno studente avrà consegnato un compito, sia che la consegna avvenga in anticipo, sia nelle date previste, sia in ritardo. I metodi di notifica sono configurabili.';
 $string['sendstudentnotifications'] = 'Notifica agli studenti';
@@ -523,6 +570,7 @@ $string['showrecentsubmissions'] = 'Visualizza consegne recenti';
 $string['status'] = 'Stato';
 $string['studentnotificationworkflowstateerror'] = 'Il flusso di lavoro deve avere la valutazione con lo stato di \'Rilasciata\' affinché siano inviate le notifiche agli studenti.';
 $string['submission'] = 'Consegna';
+$string['submissionactions'] = 'Azioni sulle consegne';
 $string['submissionattachments'] = 'Visualizza file solo durante la consegna';
 $string['submissionattachments_help'] = 'Consente di visualizzare i file solo nella pagina della consegna. Diversamente i file saranno visualizzati sia nella pagina della consegna sia nella pagina del compito.';
 $string['submissioncopiedhtml'] = '<p>Hai copiato la tua precedente consegna del compito \'<i>{$a->assignment}</i>\'</p>
@@ -607,7 +655,7 @@ $string['subplugintype_assignsubmission'] = 'Plugin consegna';
 $string['subplugintype_assignsubmission_plural'] = 'Plugin consegna';
 $string['teamname'] = 'Gruppo: {$a}';
 $string['teamsubmission'] = 'Consegna di gruppo';
-$string['teamsubmission_help'] = 'Consente la suddivisone degli studenti in gruppi secondo i gruppi disponibili oppure in base ad un raggruppamento personalizzato. Una consegna di gruppo sarà condivisa tra tutti gli appartenenti al gruppo e ciascun membro potrà visualizzare le modifiche apportate alla consegna dagli altri membri del gruppo.';
+$string['teamsubmission_help'] = 'Consente la suddivisione degli studenti in gruppi in base al set di default di gruppi o a un raggruppamento personalizzato. Una consegna di gruppo verrà condivisa tra i membri del gruppo e tutti i membri del gruppo vedranno le modifiche apportate dagli altri. Nota: non è possibile modificare questa impostazione se sono già presenti consegne.';
 $string['teamsubmissiongroupingid'] = 'Raggruppamento';
 $string['teamsubmissiongroupingid_help'] = 'Il raggruppamento da utilizzare per circoscrivere i gruppi di studenti. Se non impostato, verranno utilizzati i gruppi disponibili.';
 $string['textinstructions'] = 'Istruzioni del compito';
@@ -649,6 +697,7 @@ $string['viewfeedbackforuser'] = 'Visualizza feedback per l\'utente: {$a}';
 $string['viewfull'] = 'Visualizza tutto';
 $string['viewfullgradingpage'] = 'Apri la pagina della valutazione per rilasciare commenti';
 $string['viewgradebook'] = 'Visualizza registro valutatore';
+$string['viewgrader'] = 'Visualizza valutatore';
 $string['viewgrading'] = 'Visualizza tutte le consegne';
 $string['viewgradingformforstudent'] = 'Visualizza pagina di valutazione dello studente (id={$a->id}, fullname={$a->fullname}).';
 $string['viewownsubmissionform'] = 'Visualizza la propria pagina di consegna';

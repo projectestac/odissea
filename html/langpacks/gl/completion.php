@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'gl', version '4.4'.
+ * Strings for component 'completion', language 'gl', version '4.5'.
  *
  * @package     completion
  * @category    string
@@ -145,6 +145,7 @@ $string['csvdownload'] = 'Descargar en formato de folla de cálculo (UTF-8 .csv)
 $string['datepassed'] = 'data do aprobado';
 $string['days'] = 'Días';
 $string['daysoftotal'] = '{$a->days} de {$a->total}';
+$string['daystakingcourse'] = 'Días de curso';
 $string['daysuntilcompletion'] = 'Días ata que se complete';
 $string['defaultactivitycompletioncourse'] = 'Estas son as condicións predeterminadas de completado das actividades deste curso.';
 $string['defaultactivitycompletionsite'] = 'Estas son as condicións predeterminadas de completado das actividades de todos os cursos.';

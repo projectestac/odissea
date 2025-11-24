@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'ja', version '4.4'.
+ * Strings for component 'book', language 'ja', version '4.5'.
  *
  * @package     book
  * @category    string
@@ -103,7 +103,7 @@ $string['pluginadministration'] = 'ブック管理';
 $string['pluginname'] = 'ブック';
 $string['previouschapter'] = '前の章';
 $string['privacy:metadata'] = 'ブック活動モジュールはいかなる個人データも保存しません。';
-$string['removeallbooktags'] = 'すべてのブックタグを削除する';
+$string['removeallbooktags'] = 'すべてのブックタグ';
 $string['search:activity'] = 'ブック - リソース情報';
 $string['search:chapter'] = 'ブック - 章';
 $string['showchapter'] = '章「 {$a} 」を表示する';

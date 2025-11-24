@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'eu', version '4.4'.
+ * Strings for component 'scorm', language 'eu', version '4.5'.
  *
  * @package     scorm
  * @category    string
@@ -38,6 +38,7 @@ $string['aicchacptimeout_desc'] = 'Kanpoko AICC HACP saioa irekita mantendu dait
 $string['aiccuserid'] = 'AICC pass erabiltzailearen ID numerikoa';
 $string['aiccuserid_desc'] = 'AICC erabiltzaile-izenentzako estandarra oso mugatzailea da Moodlerekin konparatuta, eta karaktere alfanumerikoak, gidoia eta beheko gidoia soilik onartzen ditu. Puntuak, espazioak eta @ sinboloa ez ditu onartzen. Gaituz gero, erabiltzaileen ID zenbakiak pasatzen dira AICC paketeari erabiltzaile-izenen ordez.';
 $string['aliasonly'] = 'Fitxategia biltegi batetik aukeratzean fitxategiarentzat alias/lasterbidea erabili behar duzu imsmanifest.xml.';
+$string['allattempts'] = 'SCORM saiakera guztiak';
 $string['allowapidebug'] = 'Arazketa eta jazarpenerako APIa gaitu (atzipen maskara ezarri apidebugmask-aren bidez)';
 $string['allowtypeaicchacp'] = 'Gaitu kanpoko AICC HACP';
 $string['allowtypeaicchacp_desc'] = 'Gaituz gero, kanpoko AICC HACP komunikaziorako, ez da beharrekoa izango erabiltzailea plataforman sartzea kanpoko AICC paketeetatik post eskaerak egiteko orduan';
@@ -61,7 +62,7 @@ $string['attemptstatusmy'] = 'Aginte-panela soilik';
 $string['attemptsx'] = '{$a} saiakera';
 $string['attr_error'] = '({$a->attr}) atributuaren balio desegokia {$a->tag} etiketan.';
 $string['autocommit'] = 'Gordetze automatikoa';
-$string['autocommit_help'] = 'Gaituz gero, SCORM datuak datu-basean automatikoki gordetzen dira. Erabilgarria da beren datuak aldiro gordetzen ez dituzten SCORM objektuetan.';
+$string['autocommit_help'] = 'Gaituz gero, SCORM datuak datu-basean automatikoki gordetzen dira. Aukera hau erabilgarria da beren datuak aldiro gordetzen ez dituzten SCORM objektuetan.';
 $string['autocommitdesc'] = 'SCORM datuak automatikoki gorde SCORM paketeak berak gordetzen ez baditu.';
 $string['autocontinue'] = 'Jarraitze automatikoa';
 $string['autocontinue_help'] = 'Gaituz gero, ondorengo ikasteko objektuak automatikoki hasiko dira, eta bestela Jarraitu botoia erabili beharko da.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'ja', version '4.4'.
+ * Strings for component 'backup', language 'ja', version '4.5'.
  *
  * @package     backup
  * @category    string
@@ -204,6 +204,7 @@ $string['enableasyncbackup_help'] = 'この設定を有効にした場合、バ�
 $string['enterasearch'] = 'キーワードを入力する';
 $string['error_block_for_module_not_found'] = 'コースモジュール (id: {$a->mid}) において、迷子のブロックインスタンス (id: {$a->bid}) が見つかりました。このブロックはバックアップされません。';
 $string['error_course_module_not_found'] = '迷子のコースモジュール (id: {$a}) が見つかりました。このモジュールはバックアップされません。';
+$string['error_delegate_section_not_found'] = 'コースモジュールに代表セクションがありません (ID: {$a})。セクションはバックアップされません。';
 $string['errorcopyingbackupfile'] = 'リストア前の一時フォルダへのバックアップファイルのコピーに失敗しました。';
 $string['errorfilenamemustbezip'] = 'あなたが入力するファイル名は.mbz拡張子を持つZIPファイルである必要があります。';
 $string['errorfilenamerequired'] = 'あなたはこのバックアップに関して、有効なファイル名を入力する必要があります。';
@@ -280,6 +281,7 @@ $string['includeditems'] = '含まれるアイテム:';
 $string['includefilereferences'] = '外部コンテンツへのファイル参照';
 $string['includesection'] = 'セクション {$a}';
 $string['includeuserinfo'] = 'ユーザデータ';
+$string['includeuserinfo_instance'] = '{$a} ユーザデータを含む';
 $string['inprogress'] = 'バックアップ処理中';
 $string['jumptofinalstep'] = '最終ステップにジャンプする';
 $string['keep'] = '保持';
@@ -398,6 +400,7 @@ $string['rootsettingusers'] = '登録済みユーザを含む';
 $string['rootsettinguserscompletion'] = 'ユーザ完了詳細を含む';
 $string['rootsettingxapistate'] = 'H5P活動等のコンテンツにユーザの状態を含む';
 $string['samesitenotification'] = 'このバックアップはファイル自体ではなく、ファイルの参照のみで作成されました。このサイトでのリストアのみに機能します。';
+$string['section_prefix'] = 'セクション {$a}:';
 $string['sectionactivities'] = '活動';
 $string['sectioninc'] = 'バックアップに含む (ユーザ情報なし)';
 $string['sectionincanduser'] = 'バックアップに含む (ユーザ情報あり)';
@@ -424,6 +427,7 @@ $string['status'] = 'ステータス';
 $string['storagecourseandexternal'] = 'コースバックアップファイルエリアおよび指定ディレクトリ';
 $string['storagecourseonly'] = 'コースバックアップファイルエリア';
 $string['storageexternalonly'] = '自動バックアップの指定ディレクトリ';
+$string['subsectioncontent'] = 'サブセクションコンテンツ';
 $string['successful'] = 'バックアップに成功しました。';
 $string['successfulcopy'] = 'コピー完了';
 $string['successfulrestore'] = 'リストアに成功しました。';

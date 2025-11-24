@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attendance', language 'es', version '4.4'.
+ * Strings for component 'attendance', language 'es', version '4.5'.
  *
  * @package     attendance
  * @category    string
@@ -197,19 +197,19 @@ $string['emailcontent_default'] = 'Hola %userfirstname%,
 Su asistencia en %coursename% %attendancename% ha caído por debajo del %warningpercent% y actualmente es del %percent% - ¡esperamos que esté bien!
 
 Para aprovechar al máximo este curso, debe mejorar su asistencia, póngase en contacto si necesita más ayuda.';
-$string['emailcontent_help'] = 'Cuando un aviso es remitido al estudiante, se recoge el contenido de este campo. Se pueden usar las siguientes variables:
+$string['emailcontent_help'] = 'Cuando se envía un aviso al estudiante, se recoge el contenido de este campo. Se pueden usar las siguientes variables:
 <ul>
-<li>%coursename%</li>
-<li>%userfirstname%</li>
-<li>%userlastname%</li>
-<li>%userid%</li>
-<li>%warningpercent%</li>
-<li>%attendancename%</li>
-<li>%cmid%</li>
-<li>%numtakensessions%</li>
-<li>%points%</li>
-<li>%maxpoints%</li>
-<li>%percent%</li>
+    <li>%coursename%</li>
+    <li>%userfirstname%</li>
+    <li>%userlastname%</li>
+    <li>%userid%</li>
+    <li>%warningpercent%</li>
+    <li>%attendancename%</li>
+    <li>%cmid%</li>
+    <li>%numtakensessions%</li>
+    <li>%points%</li>
+    <li>%maxpoints%</li>
+    <li>%percent%</li>
 </ul>';
 $string['emailsubject'] = 'Asunto del email';
 $string['emailsubject_default'] = 'Advertencia de asistencia';
@@ -377,6 +377,7 @@ $string['notmember'] = 'No&nbsp;miembro';
 $string['notset'] = 'no establecido';
 $string['nounmarkedstatusset'] = 'No está configurado ningún estado sin marcar para esta sesión (id:{$a->sessionid}), para corregir esta actualización el <a href="{$a->url}">Conjunto de estados</a>';
 $string['noupgradefromthisversion'] = 'El módulo de asistencia no puede actualizarse desde la versión de attforblock que tiene instalada. - por favor elimine attforblock o actualícelo a la última versión antes de instalar el nuevo módulo de asistencia';
+$string['nousers'] = 'No se han encontrado usuarios a quienes tomar nota de asistencia.';
 $string['numsessions'] = 'Número de sesiones';
 $string['numsessionstaken'] = 'Número de sesiones tomadas';
 $string['olddate'] = 'Fecha Anterior';
@@ -442,7 +443,7 @@ $string['privacy:metadata:timetaken'] = 'Sello de tiempo de cuando fue tomada la
 $string['privacy:metadata:userid'] = 'ID del usuario a quien enviar advertencia.';
 $string['processingfile'] = 'Procesando archivo';
 $string['qr_cookie_error'] = 'El QR de la sesión ha caducado';
-$string['qr_pass_wrong'] = 'El QR de la contraseña es erróneo o ha caducado';
+$string['qr_pass_wrong'] = 'El código QR ha caducado. Por favor, escanee el código QR de nuevo.';
 $string['qrcode'] = 'Código QR';
 $string['qrcodeandpasswordheader'] = 'Escanee el código QR de debajo o use la contraseña indicada debajo para registrar su asistencia';
 $string['qrcodeheader'] = 'Escanee el código QR de debajo para registrar su asistencia';

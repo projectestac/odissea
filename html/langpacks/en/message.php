@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'en', version '4.4'.
+ * Strings for component 'message', language 'en', version '4.5'.
  *
  * @package     message
  * @category    string
@@ -69,6 +69,7 @@ $string['disallowed'] = 'Locked off';
 $string['editmessages'] = 'Edit messages';
 $string['emailtagline'] = 'This is a copy of a message sent to you on the site {$a->sitename}. Go to <a href="{$a->url}">{$a->url}</a> to reply.';
 $string['enabled'] = 'Enabled';
+$string['enablenotificationplugin'] = 'Enable notification plugin: {$a}';
 $string['errorcallingprocessor'] = 'Error calling defined output';
 $string['errorconversationdoesnotexist'] = 'Conversation does not exist';
 $string['errormessagetoolong'] = 'The message is longer than the maximum allowed.';
@@ -139,6 +140,7 @@ $string['notificationdatahasnotbeenmigrated'] = 'Your notifications are temporar
 $string['notificationimage'] = 'Notification image';
 $string['notificationpreferences'] = 'Notification preferences';
 $string['notifications'] = 'Notifications';
+$string['notificationsmarkedasread'] = 'All notifications are marked as read.';
 $string['notificationwindow'] = 'Notification window';
 $string['notincontacts'] = 'You need to add {$a} to your contacts to be able to send them messages.';
 $string['notincontactsheading'] = '{$a} is not in your contacts';
@@ -153,6 +155,7 @@ $string['page-message-x'] = 'Any message pages';
 $string['participants'] = 'Participants';
 $string['pendingcontactrequests'] = 'There are {$a} pending contact requests';
 $string['permitted'] = 'Permitted';
+$string['preference'] = 'Preference';
 $string['privacy'] = 'Privacy';
 $string['privacy:export:conversationprefix'] = 'Conversation:';
 $string['privacy:metadata:core_favourites'] = 'The conversations starred by the user';

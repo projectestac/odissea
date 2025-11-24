@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'en', version '4.4'.
+ * Strings for component 'badges', language 'en', version '4.5'.
  *
  * @package     badges
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actions'] = 'Actions';
 $string['activate'] = 'Enable access';
-$string['activatesuccess'] = 'Access to the badges was successfully enabled.';
+$string['activatesuccess'] = 'Access to badge \'{$a}\' enabled.';
 $string['addalignment'] = 'Add external skill or standard';
 $string['addbadge'] = 'Add badges';
 $string['addbadge_help'] = 'Select all badges that should be added to this badge requirement. Hold CTRL key to select multiple items.';
@@ -40,6 +40,7 @@ $string['addcourse'] = 'Add courses';
 $string['addcourse_help'] = 'Select all courses that should be added to this badge requirement. Hold CTRL key to select multiple items.';
 $string['addcriteria'] = 'Add criteria';
 $string['addcriteriatext'] = 'To start adding criteria, please select one of the options from the drop-down menu.';
+$string['addcriterion'] = 'Add criterion';
 $string['addedtobackpack'] = 'Added badge to backpack';
 $string['addrelated'] = 'Add related badge';
 $string['addtobackpack'] = 'Add to backpack';
@@ -79,7 +80,7 @@ $string['attachment_help'] = 'If enabled, an issued badge will be attached to th
 $string['award'] = 'Award badge';
 $string['awardedto'] = 'Awarded to {$a}';
 $string['awardedtoyou'] = 'Issued to me';
-$string['awardoncron'] = 'Access to the badges was successfully enabled. Too many users can instantly earn this badge. To ensure site performance, this action will take some time to process.';
+$string['awardoncron'] = 'A high number of users are being awarded the badge \'{$a->badgename}\'. It may take some time for all users to receive it.';
 $string['awards'] = 'Recipients';
 $string['backpackapiurl'] = 'Backpack API URL';
 $string['backpackavailability'] = 'External badge verification';
@@ -163,6 +164,7 @@ Note: For recipient verification purposes, please avoid changing this setting on
 $string['badgesdisabled'] = 'Badges are not enabled on this site.';
 $string['badgesearned'] = 'Number of badges earned: {$a}';
 $string['badgesettings'] = 'Badges settings';
+$string['badgesnavigation'] = 'Badges navigation';
 $string['badgestatus_0'] = 'Not available';
 $string['badgestatus_1'] = 'Available';
 $string['badgestatus_2'] = 'Not available (criteria locked)';
@@ -181,6 +183,9 @@ $string['bmessage'] = 'Message';
 $string['boverview'] = 'Overview';
 $string['brelated'] = 'Related badges ({$a})';
 $string['bydate'] = 'complete by';
+$string['canvascredentialsprovider'] = 'Canvas Credentials';
+$string['canvasregions'] = 'Canvas Credentials regions';
+$string['canvasregions_desc'] = 'You can configure the contents of the Canvas Credentials regions. Each line is separated by pipe characters and consists of 1) the region name, 2) the backpack URL, and 3) the backpack API URL.';
 $string['claim'] = 'Claim';
 $string['claimcomment'] = 'Endorsement comment';
 $string['claimid'] = 'Claim URL';
@@ -192,7 +197,7 @@ $string['configuremessage'] = 'Badge message';
 $string['connect'] = 'Connect';
 $string['connected'] = 'Connected';
 $string['connecting'] = 'Connecting...';
-$string['contact'] = 'Contact';
+$string['contact'] = 'Issuer contact';
 $string['contact_help'] = 'An email address associated with the badge issuer.';
 $string['copy'] = 'Copy';
 $string['copyof'] = 'Copy of {$a}';
@@ -273,7 +278,7 @@ $string['dateawarded'] = 'Date issued';
 $string['dateearned'] = 'Date: {$a}';
 $string['day'] = 'Day(s)';
 $string['deactivate'] = 'Disable access';
-$string['deactivatesuccess'] = 'Access to the badges was successfully disabled.';
+$string['deactivatesuccess'] = 'Access to badge \'{$a}\' disabled.';
 $string['defaultissuercontact'] = 'Badge issuer email address';
 $string['defaultissuercontact_desc'] = 'An email address associated with the badge issuer. For an Open Badges v2.0 backpack, this is used for authentication when publishing badges to a backpack.';
 $string['defaultissuername'] = 'Badge issuer name';
@@ -328,7 +333,7 @@ $string['error:nosuchfield'] = 'Warning: This user profile field is no longer av
 $string['error:nosuchmod'] = 'Warning: This activity is no longer available.';
 $string['error:nosuchrole'] = 'Warning: This role is no longer available.';
 $string['error:nosuchuser'] = 'User with this email address does not have an account with the current backpack provider.';
-$string['error:notifycoursedate'] = 'Warning: Badges associated with course and activity completions will not be issued until the course start date.';
+$string['error:notifycoursedate'] = 'Badges associated with course and activity completions will not be issued until the course start date ({$a}).';
 $string['error:parameter'] = 'Warning: At least one parameter should be selected to ensure correct badge issuing workflow.';
 $string['error:relatedbadgedoesntexist'] = 'There is no public badge with this identifier';
 $string['error:requesterror'] = 'The connection request failed (error code {$a}).';
@@ -380,7 +385,13 @@ $string['imageauthorurl'] = 'Image author\'s URL';
 $string['imageauthorurl_help'] = 'If specified, a link to the badge image author\'s website is displayed on the badge page. The URL should have a prefix http:// or https://.';
 $string['imagecaption'] = 'Image caption';
 $string['imagecaption_help'] = 'If specified, an image caption is displayed on the badge page.';
-$string['includeauthdetails'] = 'Include authentication details with the backpack';
+$string['includeauthdetails'] = 'Connect to backpack provider account';
+$string['includeauthdetails_desc'] = 'Enter your badge issuer credentials to connect to your backpack provider.';
+$string['includeauthdetails_help'] = 'Sends your issuer credentials with each badge exported to this backpack.';
+$string['includeauthdetailscanvas'] = 'Connect to a Canvas Credentials issuer account';
+$string['includeauthdetailscanvas_desc'] = 'Enter your Canvas Credentials details to connect your issuer account.';
+$string['includeauthdetailscanvas_help'] = 'Badges exported to Canvas Credentials will show your organisation as the issuer. This also lets you track who received badges, and manage updates.';
+$string['includeauthdetailscanvas_subtitle'] = '(Requires a Canvas Credentials paid plan)';
 $string['invalidurl'] = 'Invalid URL';
 $string['issuancedetails'] = 'Badge expiry';
 $string['issuedbadge'] = 'Issued badge information';
@@ -423,10 +434,13 @@ $string['month'] = 'Month(s)';
 $string['moredetails'] = 'More details';
 $string['mybackpack'] = 'My backpack settings';
 $string['mybadges'] = 'My badges';
+$string['namewithimagelink'] = 'Name with image and link';
 $string['namewithlink'] = 'Name with link';
 $string['never'] = 'Never';
 $string['newbackpack'] = 'Add a new backpack';
 $string['newbadge'] = 'Add a new badge';
+$string['newbadgedeprecated'] = 'You have been redirected from badges/newbadge.php. Please note that badges/newbadge.php will be removed in the near future.
+<br/>Update links and bookmarks to use the current page badges/edit.php.';
 $string['newimage'] = 'New image';
 $string['noalignment'] = 'This badge does not have any external skills or standards specified.';
 $string['noawards'] = 'This badge has not been earned yet.';
@@ -468,13 +482,14 @@ $string['notifydaily'] = 'Daily';
 $string['notifyevery'] = 'Every time';
 $string['notifymonthly'] = 'Monthly';
 $string['notifyweekly'] = 'Weekly';
-$string['numawards'] = 'This badge has been issued to <a href="{$a->link}">{$a->count}</a> user(s).';
-$string['numawardstat'] = 'This badge has been issued {$a} user(s).';
+$string['numawards'] = 'Users awarded badge \'{$a->badgename}\': <a href="{$a->link}">{$a->count}</a>.';
+$string['numawardstat'] = 'Users awarded badge \'{$a->badgename}\': {$a->awards}.';
 $string['oauth2issuer'] = 'OAuth 2 services';
 $string['openbadgesv1'] = 'Open Badges v1.0';
 $string['openbadgesv2'] = 'Open Badges v2.0';
 $string['openbadgesv2p1'] = 'Open Badges v2.1';
 $string['othernavigation'] = 'Other navigation ...';
+$string['otherprovider'] = 'Other';
 $string['overallcrit'] = 'of the selected criteria are complete.';
 $string['password_required'] = 'Password can\'t be blank';
 $string['potentialrecipients'] = 'Potential badge recipients';
@@ -513,9 +528,11 @@ $string['privacy:metadata:manualaward:datemet'] = 'The date when the user was aw
 $string['privacy:metadata:manualaward:issuerid'] = 'The ID of the user awarding the badge';
 $string['privacy:metadata:manualaward:issuerrole'] = 'The role of the user awarding the badge';
 $string['privacy:metadata:manualaward:recipientid'] = 'The ID of the user who is manually awarded a badge';
+$string['provider'] = 'Provider';
 $string['recipient'] = 'Badge recipient';
 $string['recipients'] = 'Badge recipients';
 $string['recipientvalidationproblem'] = 'This user cannot be verified as a recipient of this badge.';
+$string['region'] = 'Region';
 $string['relatedbages'] = 'Related badges';
 $string['relative'] = 'Relative date';
 $string['requiredbadge'] = 'At least one badge should be added to the badge criterion.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'fr', version '4.4'.
+ * Strings for component 'scorm', language 'fr', version '4.5'.
  *
  * @package     scorm
  * @category    string
@@ -38,6 +38,7 @@ $string['aicchacptimeout_desc'] = 'Durée en minutes pendant laquelle une sessio
 $string['aiccuserid'] = 'Transmettre à AICC les identifiants numériques des utilisateurs';
 $string['aiccuserid_desc'] = 'En comparaison avec Moodle, le standard AICC est très restrictif pour les noms d’utilisateur et n’autorise que les caractères alphanumériques, les tirets (-) et caractères souligné (_). Les points, espaces et l’arobase (@) ne sont pas acceptés. Si ce réglage est activé, l’identifiant numérique (user->id) est passé au paquetage AICC au lieu du nom d’utilisateur.';
 $string['aliasonly'] = 'Lors de la sélection d’un fichier imsmanifest.xml dans un dépôt, vous devez utiliser un alias de ce fichier.';
+$string['allattempts'] = 'Toutes les tentatives SCORM';
 $string['allowapidebug'] = 'Activer l’API de débogage et de traçage (veuillez spécifier le masque de capture)';
 $string['allowtypeaicchacp'] = 'Autoriser AICC HACP externe';
 $string['allowtypeaicchacp_desc'] = 'Si ce réglage est activé, cela permet la communication AICC HACP externe sans nécessiter de connexion utilisateur pour les requêtes externes d’un paquetage AICC';
@@ -110,7 +111,7 @@ $string['datadir'] = 'Erreur du système de fichier : impossible de créer le d
 $string['defaultdisplaysettings'] = 'Réglages par défaut de l’affichage';
 $string['defaultgradesettings'] = 'Réglages par défaut des notes';
 $string['defaultothersettings'] = 'Autres réglages par défaut';
-$string['deleteallattempts'] = 'Supprimer toutes les tentatives de SCORM';
+$string['deleteallattempts'] = 'Supprimer toutes les tentatives SCORM';
 $string['deleteattemptcheck'] = 'Voulez-vous vraiment supprimer totalement ces tentatives ?';
 $string['deleteselected'] = 'Supprimer les tentatives sélectionnées';
 $string['deleteuserattemptcheck'] = 'Voulez-vous vraiment supprimer totalement toutes vos tentatives ?';

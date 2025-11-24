@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'fr', version '4.4'.
+ * Strings for component 'auth', language 'fr', version '4.5'.
  *
  * @package     auth
  * @category    string
@@ -47,7 +47,7 @@ $string['auth_invalidnewemailkey'] = 'Erreur : si vous avez tenté de confirmer
 $string['auth_loginpasswordtoggle'] = 'Bascule de visibilité du mot de passe';
 $string['auth_loginpasswordtoggle_desc'] = 'Ajoute une icône au champ mot de passe de l’écran de connexion, permettant aux utilisateurs d’afficher ou de cacher le mot de passe saisi.';
 $string['auth_loginrecaptcha'] = 'Activer reCAPTCHA pour la connexion';
-$string['auth_loginrecaptcha_desc'] = 'Ajouter un élément de confirmation visuel/audio au formulaire de connexion. Ceci réduit le risque de tentatives de connexions indues. Voir <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a> pour plus de détails.';
+$string['auth_loginrecaptcha_desc'] = 'Ajouter un élément de confirmation visuel/audio au formulaire de connexion. Ceci réduit le risque de tentatives de connexions indues. Pour plus d’informations, voir <a href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
 $string['auth_multiplehosts'] = 'Vous pouvez indiquer ici plusieurs hôtes ou adresses IP (par exemple host1.com;host2.com;host3.com ou 192.168.1.100;172.23.92.1)';
 $string['auth_notconfigured'] = 'La méthode d’authentification {$a} n’est pas configurée.';
 $string['auth_outofnewemailupdateattempts'] = 'Le nombre de tentatives permises pour modifier votre adresse de courriel est dépassé. Votre demande de modification a été annulée.';
@@ -88,11 +88,12 @@ $string['emailchangecancel'] = 'Annuler la modification de l’adresse de courri
 $string['emailchangepending'] = 'Modification en attente. Veuillez cliquer sur le lien qui vous a été envoyé à l’adresse {$a->preference_newemail}.';
 $string['emailnowexists'] = 'L’adresse de courriel que vous tentez d’utiliser pour votre profil est déjà attribuée à un autre utilisateur. Votre demande de modification de courriel est donc annulée, mais vous pouvez réessayer avec une adresse différente.';
 $string['emailupdate'] = 'Modification d’adresse de courriel';
-$string['emailupdatemessage'] = 'Bonjour,
+$string['emailupdatemessage'] = 'Bonjour {$a->firstname},
 
 Vous avez demandé la modification de votre adresse de courriel pour votre compte sur {$a->site}. Veuillez visiter l’URL ci-dessous afin de confirmer la modification :
 
 {$a->url}
+Le lien de confirmation expirera dans <b>10 minutes</b>.
 
 {$a->supportemail}';
 $string['emailupdatesuccess'] = 'L’adresse de courriel de votre compte <em>{$a->fullname}</em> a été modifiée. L’adresse est maintenant <em>{$a->email}</em>.';
@@ -144,7 +145,7 @@ $string['potentialidps'] = 'Se connecter au moyen du compte :';
 $string['privacy:metadata:userpref:createpassword'] = 'Indique q’un mot de passe doit être généré pour l’utilisateur';
 $string['privacy:metadata:userpref:forcepasswordchange'] = 'Indique si l’utilisateur doit changer son mot de passe lors de la connexion';
 $string['privacy:metadata:userpref:loginfailedcount'] = 'Le nombre de fois que l’utilisateur a saisi un mauvais mot de passe';
-$string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = 'Le nombre de fois que l’utilisateur a saisi un mauvais mot de passe depuis sa dernière connexion réussie';
+$string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = 'Le nombre de fois que l’utilisateur a saisi un mauvais mot de passe depuis sa dernière connexion réussie.';
 $string['privacy:metadata:userpref:loginfailedlast'] = 'La date de l’enregistrement de la dernière connexion échouée';
 $string['privacy:metadata:userpref:loginlockout'] = 'Indique si le compte de l’utilisateur est verrouillé en raison de tentatives de connexion échouées, et la date à laquelle le compte a été verrouillé';
 $string['privacy:metadata:userpref:loginlockoutignored'] = 'Indique que le compte d’un utilisateur ne doit jamais être verrouillé';
@@ -160,6 +161,10 @@ $string['selfregistration_help'] = 'Si un plugin d’authentification gérant l�
 $string['settingmigrationmismatch'] = 'Une discordance a été détectée lors de la correction des noms des paramètres du plugin ! Dans le plugin d’authentification « {$a->plugin} », le réglage « {$a->setting} » était réglé sur « {$a->legacy} » avec l’ancienne terminologie et sur « {$a->current} » avec la terminologie actuelle. Cette dernière valeur a été conservée. Veuillez confirmer que c’est bien ce qui est attendu.';
 $string['sha1'] = 'Hachage SHA-1';
 $string['showguestlogin'] = 'Vous pouvez choisir d’afficher ou non sur la page de connexion le bouton de connexion anonyme.';
+$string['showloginform'] = 'Afficher le formulaire de connexion manuelle';
+$string['showloginform_desc'] = 'Si tous les utilisateurs du site utilisent une méthode d’authentification telle que OAuth2, qui ne nécessite pas la saisie d’un nom d’utilisateur et d’un mot de passe, il est possible de cacher le formulaire de connexion manuelle. Les utilisateurs avec des comptes manuels ne pourront alors pas se connecter.
+
+Si vous cachez le formulaire de connexion manuelle et ne pouvez pas vous connecter, vous pouvez le faire afficher à nouveau en lançant la commande php admin/cli/cfg.php --name=showloginform --set=1';
 $string['stdchangepassword'] = 'Utiliser la page de changement de mot de passe standard';
 $string['stdchangepassword_expl'] = 'Si la source d’authentification externe permet le changement de mot de passe par l’intermédiaire de Moodle, mettez ce réglage sur « Oui ». Ce réglage rend obsolète le réglage « URL de la page de changement du mot de passe ».';
 $string['stdchangepassword_explldap'] = 'Remarque : il est recommandé d’utiliser LDAP à travers un tunnel chiffré SSL (ldaps://) si le serveur LDAP n’est pas dans un intranet.';

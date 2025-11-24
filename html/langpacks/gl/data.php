@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'gl', version '4.4'.
+ * Strings for component 'data', language 'gl', version '4.5'.
  *
  * @package     data
  * @category    string
@@ -29,8 +29,6 @@ $string['action'] = 'Acción';
 $string['actionsmenu'] = 'Menú de accións';
 $string['add'] = 'Engadir entrada';
 $string['addcomment'] = 'Engadir comentario';
-$string['addedby'] = 'Engadido por';
-$string['addentries'] = 'Engadir entradas';
 $string['addtemplate'] = 'Engadir modelo de entrada';
 $string['advancedsearch'] = 'Busca avanzada';
 $string['allowcomments'] = 'Permitir comentarios nas entradas';
@@ -55,8 +53,6 @@ Os campos teñen o formato [[nome_de_campo]]. As outras etiquetas teñen o forma
 Soamente as etiquetas que están na lista de «Etiquetas dispoñíbeis» se poden usar para este modelo.';
 $string['availabletodate'] = 'Dispoñíbel para';
 $string['availabletodatevalidation'] = 'A data «dispoñíbel ata» non pode ser anterior á data «dispoñíbel a partir de».';
-$string['blank'] = 'En branco';
-$string['buttons'] = 'Accións';
 $string['bynameondate'] = 'por {$a->name} - {$a->date}';
 $string['calendarend'] = '{$a} pechan';
 $string['calendarstart'] = '{$a} abren';
@@ -333,7 +329,6 @@ $string['nomatch'] = 'Non se atoparon entradas que coincidan';
 $string['nomaximum'] = 'Número máximo';
 $string['nopreviewavailable'] = 'Non hai vista previa dispoñíbel para {$a}';
 $string['norecords'] = 'Aínda non hai entradas';
-$string['nosingletemplate'] = 'O modelo de vista única aínda non está definido';
 $string['notapproved'] = 'Pendente de aprobación';
 $string['notapprovederror'] = 'A entrada aínda non está aprobada.';
 $string['notemplates'] = 'Aínda non hai modelos';
@@ -356,7 +351,6 @@ $string['page-mod-data-x'] = 'Calquera páxina do módulo de actividade de base 
 $string['pagesize'] = 'Entradas por páxina';
 $string['participants'] = 'Participantes';
 $string['picture'] = 'Imaxe';
-$string['pleaseaddsome'] = 'Cree algo como o que segue ou <a href="{$a}">escolla un conxunto predefinido</a> para ir comezando.';
 $string['pluginadministration'] = 'Administración da actividade de base de datos';
 $string['pluginname'] = 'Base de datos';
 $string['portfolionotfile'] = 'Exportar a un cartafol antes ca a un ficheiro (soamente csv e leap2a)';
@@ -428,7 +422,6 @@ $string['saveaspresetmissingcapability'] = 'O usuario non ten permiso para garda
 $string['savedataaspreset'] = 'Gardar todos os campos e modelos e publicar como predefinido neste sitio';
 $string['savesettings'] = 'Gardar a configuración';
 $string['savesuccess'] = 'Predefinición gardada. <a href="{$a->url}"> Predefinición da vista previa</a>';
-$string['savetemplate'] = 'Gardar modelo';
 $string['search'] = 'Buscar';
 $string['search:activity'] = 'Base de datos - información de actividade';
 $string['search:entry'] = 'Base de datos, entradas';
@@ -458,7 +451,6 @@ $string['text'] = 'Texto';
 $string['textarea'] = 'Área de texto';
 $string['timeadded'] = 'Tempo engadido';
 $string['timemodified'] = 'Tempo modificado';
-$string['todatabase'] = 'a esta base de datos.';
 $string['type'] = 'Tipo de campo';
 $string['undefinedprocessactionmethod'] = 'Non existe un método definido en Data_Preset para manexa a acción "{$a}".';
 $string['unknown'] = 'Campo descoñecido';

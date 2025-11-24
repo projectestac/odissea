@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_usersessions', language 'eu', version '4.4'.
+ * Strings for component 'report_usersessions', language 'eu', version '4.5'.
  *
  * @package     report_usersessions
  * @category    string
@@ -25,7 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['mysessions'] = 'Nire saio aktiboak';
+$string['logoutothersessions'] = 'Itxi saioa nabigatzailetako beste saio guztietatik';
+$string['logoutothersessions_help'] = 'Itxi saioa nabigatzailetako saio guztietatik, oraingo hau izan ezik. Honek ez die web aplikazioetako saioei eragiten.';
+$string['logoutothersessionssuccess'] = 'Nabigatzailetako beste saio guztiak itxi dituzu.';
+$string['logoutsinglesessionsuccess'] = '{$a}(e)ko saioa itxi duzu.';
+$string['mysessions'] = 'Nire nabigatzaileko saio aktiboak';
 $string['navigationlink'] = 'Arakatu saioak';
 $string['pluginname'] = 'Erabiltzaile-saioen txostena';
 $string['privacy:metadata'] = 'Erabiltzaile-saioen txostena pluginak ez du datu pertsonalik biltzen.';

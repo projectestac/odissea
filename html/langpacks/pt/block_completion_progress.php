@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completion_progress', language 'pt', version '4.4'.
+ * Strings for component 'block_completion_progress', language 'pt', version '4.5'.
  *
  * @package     block_completion_progress
  * @category    string
@@ -87,7 +87,6 @@ $string['not_all_expected_set'] = 'Nem todas as atividades com verificação da 
 $string['now_indicator'] = 'AGORA';
 $string['overview'] = 'Visão global dos alunos';
 $string['pluginname'] = 'Barra de Progresso';
-$string['privacy:metadata'] = 'O bloco Barra de Progresso mostra apenas dados de conclusão existentes.';
 $string['progress'] = 'Progresso';
 $string['progressbar'] = 'Barra de Progresso';
 $string['selectitem'] = 'Selecionar \'{$a}\'';

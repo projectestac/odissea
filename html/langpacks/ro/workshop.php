@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ro', version '4.4'.
+ * Strings for component 'workshop', language 'ro', version '4.5'.
  *
  * @package     workshop
  * @category    string
@@ -321,11 +321,11 @@ $string['reassess'] = 'Re-evaluare';
 $string['receivedgrades'] = 'Note primite';
 $string['recentassessments'] = 'Evaluările atelierului:';
 $string['recentsubmissions'] = 'Răspunsurile atelierului:';
-$string['resetassessments'] = 'Ștergeți toate evaluările';
+$string['resetassessments'] = 'Toate evaluările';
 $string['resetassessments_help'] = 'Puteți alege să ștergeți doar evaluările alocate fără a afecta răspunsurile. Dacă trimiterile vor fi șterse, evaluările lor vor fi șterse implicit și această opțiune este ignorată. Rețineți că include și evaluări ale exemplelor de trimiteri.';
 $string['resetphase'] = 'Treceți la faza de configurare';
 $string['resetphase_help'] = 'Dacă este activat, toate atelierele vor fi puse în faza inițială de configurare.';
-$string['resetsubmissions'] = 'Șterge toate răspunsurile';
+$string['resetsubmissions'] = 'Toate răspunsurile';
 $string['resetsubmissions_help'] = 'Toate răspunsurile și evaluările lor vor fi șterse. Acest lucru nu afectează răspunsurile de exemplele.';
 $string['saveandclose'] = 'Salvează și închide';
 $string['saveandcontinue'] = 'Salvează și continuă editarea';

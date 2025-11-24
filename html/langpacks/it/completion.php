@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'it', version '4.4'.
+ * Strings for component 'completion', language 'it', version '4.5'.
  *
  * @package     completion
  * @category    string
@@ -149,12 +149,13 @@ $string['csvdownload'] = 'Scarica nel formato per foglio elettronico (UTF-8 .csv
 $string['datepassed'] = 'Data di superamento';
 $string['days'] = 'Giorni';
 $string['daysoftotal'] = '{$a->days} su {$a->total}';
-$string['daysuntilcompletion'] = 'Giorni fino al completamento';
+$string['daystakingcourse'] = 'Giorni trascorsi dalla data di inizio corso';
+$string['daysuntilcompletion'] = 'Tempo fino al completamento';
 $string['defaultactivitycompletioncourse'] = 'I criteri di completamento di default delle attività di questo corso.';
 $string['defaultactivitycompletionsite'] = 'I criteri di completamento di default delle attività di tutti i corsi.';
 $string['defaultcompletion'] = 'Default del completamento attività';
 $string['defaultcompletionupdated'] = 'Le modifiche sono state salvate';
-$string['deletecompletiondata'] = 'Elimina dati di completamento';
+$string['deletecompletiondata'] = 'Dati di completamento';
 $string['dependencies'] = 'Prerequisiti';
 $string['dependenciescompleted'] = 'Completamento di altri corsi';
 $string['detail_desc:receivegrade'] = 'Ricevere una valutazione';

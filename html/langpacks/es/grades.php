@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'es', version '4.4'.
+ * Strings for component 'grades', language 'es', version '4.5'.
  *
  * @package     grades
  * @category    string
@@ -530,7 +530,9 @@ $string['missingitemtypeoreid'] = 'Falta la clave de matriz (itemtype o eid)';
 $string['missingscale'] = 'La escala debe estar seleccionada';
 $string['mode'] = 'Moda';
 $string['modgrade'] = 'Calificación';
-$string['modgrade_help'] = 'Seleccione el tipo de calificación utilizada para esta actividad. Si se elige "escala", puede elegir la escala en el menú desplegable. Si usa la calificación de puntos, puede introducir la calificación máxima disponible para esta actividad.';
+$string['modgrade_help'] = '* Puntuación - Valor numérico
+* Ninguna - Sólo retroalimentación
+* Escala - Un elemento de una lista';
 $string['modgradecantchangegradetype'] = 'No puedes cambiar el tipo, ya que hay calificaciones para este elemento.';
 $string['modgradecantchangegradetypemsg'] = 'Algunas calificaciones ya se han asignado, por lo que el tipo de calificación no se puede cambiar. Si desea cambiar la calificación máxima, primero debe elegir si desea o no recalcular el valor de las calificaciones existentes.';
 $string['modgradecantchangegradetyporscalemsg'] = 'Algunas calificaciones han sido asignadas, de modo que el tipo y la escala no pueden ser cambiados.';
@@ -739,9 +741,9 @@ $string['recovergradesdefault'] = 'Recuperar las calificaciones por defecto';
 $string['recovergradesdefault_help'] = 'Por defecto recuperar las calificaciones antiguas cuando se matricula de nuevo a un usuario en un curso.';
 $string['refreshpreview'] = 'Actualizar previsualización';
 $string['regradeanyway'] = 'Recalificar de todos modos';
-$string['removeallcoursegrades'] = 'Eliminar todas las calificaciones';
+$string['removeallcoursegrades'] = 'Todas las calificaciones';
 $string['removeallcoursegrades_help'] = 'Al seleccionarse, todos los ítems y calificaciones que fueron añadidos manualmente al libro de calificaciones serán eliminados junto con la información de las calificaciones anuladas, excluidas, ocultas y bloqueadas. Solo quedarán los ítems y calificaciones asociados con actividades.';
-$string['removeallcourseitems'] = 'Eliminar todos los ítems y categorías';
+$string['removeallcourseitems'] = 'Todos los ítems y categorías';
 $string['removeallcourseitems_help'] = 'Al seleccionarse, todas las categorías y unidades que fueron manualmente añadidas al libro de calificaciones serán eliminadas junto con las calificaciones e información de notas bloqueadas, excluidas, ocultas y manualmente anuladas. Solo quedarán las unidades asociadas con actividades.';
 $string['report'] = 'Informe';
 $string['reportdefault'] = 'Valor por defecto del informe ({$a})';

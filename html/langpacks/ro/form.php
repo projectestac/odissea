@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ro', version '4.4'.
+ * Strings for component 'form', language 'ro', version '4.5'.
  *
  * @package     form
  * @category    string
@@ -41,6 +41,7 @@ $string['err_minlength'] = 'În acest câmp trebuie să completaţi cel puţin {
 $string['err_nonzero'] = 'Completaţi aici un număr care să nu aibă prima cifră 0.';
 $string['err_nopunctuation'] = 'Nu folosiţi semne de punctuaţie în acest câmp.';
 $string['err_numeric'] = 'Completaţi aici un număr.';
+$string['err_positiveduration'] = 'Această durată nu poate fi negativă.';
 $string['err_positiveint'] = 'Trebuie să inserați un număr întreg mai mare decât 0.';
 $string['err_rangelength'] = 'Aici trebuie să completaţi un număr de caractere care să se încadreze în limitele {$a->format[0]} - {$a->format[1]}.';
 $string['err_required'] = 'Trebuie să introduceți o valoare.';

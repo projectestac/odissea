@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'uk', version '4.4'.
+ * Strings for component 'calendar', language 'uk', version '4.5'.
  *
  * @package     calendar
  * @category    string
@@ -71,7 +71,7 @@ $string['daywithnoevents'] = 'На сьогодні нічого не запла
 $string['default'] = 'Типово';
 $string['deleteallevents'] = 'Видалити всі події';
 $string['deleteevent'] = 'Видалити подію';
-$string['deleteevents'] = 'Видалити події';
+$string['deleteevents'] = 'Події';
 $string['deleteoneevent'] = 'Видалити цю подію';
 $string['detailedmonthviewfor'] = 'Детальний місячний для:';
 $string['detailedmonthviewtitle'] = 'Детальний місячний для: {$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'zh_cn', version '4.4'.
+ * Strings for component 'workshop', language 'zh_cn', version '4.5'.
  *
  * @package     workshop
  * @category    string
@@ -315,11 +315,11 @@ $string['reassess'] = '重新评价';
 $string['receivedgrades'] = '获得的成绩';
 $string['recentassessments'] = '互动评价评价：';
 $string['recentsubmissions'] = '互动评价提交：';
-$string['resetassessments'] = '删除所有评价';
+$string['resetassessments'] = '所有评价';
 $string['resetassessments_help'] = '您可以选择只删除分配的评价而不影响提交。如果要删除提交，它们的评价将被隐式删除，并且这个选项将被忽略。注意，这还包括对范例提交的评价。';
 $string['resetphase'] = '切换到设置阶段';
 $string['resetphase_help'] = '如果启用，所有互动评价将进入初始设置阶段。';
-$string['resetsubmissions'] = '删除所有提交';
+$string['resetsubmissions'] = '所有提交';
 $string['resetsubmissions_help'] = '所有提交及其评价将被删除。这不影响范例提交。';
 $string['saveandclose'] = '保存并关闭';
 $string['saveandcontinue'] = '保存并继续编辑';

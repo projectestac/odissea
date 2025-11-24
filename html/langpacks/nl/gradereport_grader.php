@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'nl', version '4.4'.
+ * Strings for component 'gradereport_grader', language 'nl', version '4.5'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -33,9 +33,8 @@ $string['ajaxfailedupdate'] = 'Kan [1] niet updaten voor [2]';
 $string['ajaxfieldchanged'] = 'Het veld dat je nu aan het bewerken bent, is gewijzigd. Wil je de aangepaste waarde gebruiken?';
 $string['aria:dropdowncolumns'] = 'Samengevouwen kolommen gevonden';
 $string['cellactions'] = 'Cel-acties';
-$string['clearall'] = 'Wis alles';
 $string['clearsearch'] = 'Wis gezochte gebruikers';
-$string['collapsedcolumns'] = 'Samengevouwen kolommen <span class="badge badge-pill badge-primary ml-1" data-collapse="count">{$a}</span>';
+$string['collapsedcolumns'] = 'Samengevouwen kolommen  <span class="badge rounded-pill bg-primary text-white ms-1" data-collapse="count">{$a}</span>';
 $string['editingmode_title'] = 'Beoordelersrapport bewerken';
 $string['eventgradereportviewed'] = 'Beoordelaarsrapport bekeken';
 $string['grader:manage'] = 'Beheer rapportage';

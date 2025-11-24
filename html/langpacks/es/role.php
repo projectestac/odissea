@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'es', version '4.4'.
+ * Strings for component 'role', language 'es', version '4.5'.
  *
  * @package     role
  * @category    string
@@ -28,6 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['addinganewrole'] = 'Agregando nuevo rol';
 $string['addrole'] = 'Añadir un nuevo rol';
 $string['advancedoverride'] = 'Anulación de rol avanzada';
+$string['ai:acceptpolicy'] = 'Aceptar política de privacidad de IA';
+$string['ai:fetchanyuserpolicystatus'] = 'Obtener la aceptación de política de IA de un usuario';
+$string['ai:fetchpolicy'] = 'Obtener la aceptación de política de IA de un usuario';
 $string['allow'] = 'Permitir';
 $string['allowassign'] = 'Permitir asignar roles';
 $string['allowed'] = 'Permitido';
@@ -166,6 +169,8 @@ $string['confirmunassignno'] = 'Cancelar';
 $string['confirmunassigntitle'] = 'Confirmar cambio de rol';
 $string['confirmunassignyes'] = 'Eliminar';
 $string['contentbank:access'] = 'Acceder al banco de contenido';
+$string['contentbank:changelockedcustomfields'] = 'Cambiar campos personalizados bloqueados del banco de cotenido';
+$string['contentbank:configurecustomfields'] = 'Configurar campos personalizaods del banco de contenido';
 $string['contentbank:copyanycontent'] = 'Copiar cualquier contenido en el banco de contenido';
 $string['contentbank:copycontent'] = 'Copiar contenido en el banco de contenido';
 $string['contentbank:deleteanycontent'] = 'Eliminar cualquier contenido del banco de contenido';
@@ -193,6 +198,7 @@ $string['course:create'] = 'Crear cursos';
 $string['course:creategroupconversations'] = 'Crear conversaciones de grupo';
 $string['course:delete'] = 'Eliminar cursos';
 $string['course:downloadcoursecontent'] = 'Descargar contenido del curso';
+$string['course:editcoursewelcomemessage'] = 'Editar mensaje de bienvenida del curso';
 $string['course:enrolconfig'] = 'Configurar ejemplos de matriculación en cursos';
 $string['course:enrolreview'] = 'Revisar matriculaciones del curso';
 $string['course:ignoreavailabilityrestrictions'] = 'Ignorar restricciones de acceso';
@@ -241,8 +247,8 @@ $string['defaultrole'] = 'Rol por defecto';
 $string['defaultx'] = 'Valor predeterminado: {$a}';
 $string['defineroles'] = 'Definir roles';
 $string['definitionofrolex'] = 'Definición de rol \'{$a}\'';
-$string['deletecourseoverrides'] = 'Eliminar todas las modificaciones en el curso';
-$string['deletelocalroles'] = 'Eliminar todas las asignaciones de rol locales';
+$string['deletecourseoverrides'] = 'Todas las modificaciones en el curso';
+$string['deletelocalroles'] = 'Todas las asignaciones de rol locales';
 $string['deleterolesure'] = '<p> ¿Está seguro de que quiere eliminar el rol "{$a->name} ({$a->shortname})"?</p><p>Actualmente este rol está asignado a {$a->count} usuarios. <p>';
 $string['deletexrole'] = 'Eliminar el rol {$a}';
 $string['duplicaterole'] = 'Duplicar rol';
@@ -512,7 +518,7 @@ $string['user:editownmessageprofile'] = 'Editar el propio perfil de mensajería 
 $string['user:editownprofile'] = 'Editar el perfil de usuario propio';
 $string['user:editprofile'] = 'Editar perfil de usuario';
 $string['user:ignoreuserquota'] = 'Ignorar límite de cuota de usuario';
-$string['user:loginas'] = 'Entrar como otro usuario';
+$string['user:loginas'] = 'Entrar como otros usuarios';
 $string['user:manageblocks'] = 'Gestionar bloques en el perfil de usuario de otros usuarios';
 $string['user:manageownblocks'] = 'Gestionar bloques en el perfil de usuario público propio';
 $string['user:manageownfiles'] = 'Gestionar archivos en las áreas de archivos privados propios';
@@ -524,6 +530,7 @@ $string['user:viewalldetails'] = 'Ver información completa del usuario';
 $string['user:viewdetails'] = 'Ver perfiles de usuario';
 $string['user:viewhiddendetails'] = 'Ver detalles ocultos de los usuarios';
 $string['user:viewlastip'] = 'Ver última dirección ip del usuario';
+$string['user:viewprofilepictures'] = 'Ver imágenes de usuario (si está permitida la autenticación forzada)';
 $string['user:viewuseractivitiesreport'] = 'Ver informes de actividad de los usuarios';
 $string['user:viewusergrades'] = 'Ver calificaciones de los usuarios';
 $string['usersfrom'] = 'Usuarios de {$a}';

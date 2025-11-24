@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'it', version '4.4'.
+ * Strings for component 'tool_generator', language 'it', version '4.5'.
  *
  * @package     tool_generator
  * @category    string
@@ -59,6 +59,9 @@ $string['error_nonexistingcourse'] = 'Il corso specificato non esiste';
 $string['error_nopageinstances'] = 'Il corso selezionato non contiene istanze del modulo pagina';
 $string['error_notdebugging'] = 'Non disponibile su questo server poiché il debugging non è impostato a DEVELOPER.';
 $string['error_nouserspassword'] = 'Per generare un test plan è necessario impostare $CFG->tool_generator_users_password nel file config.php';
+$string['execute'] = 'Esegui';
+$string['execute_cleanup'] = 'Scenari di pulizia';
+$string['execute_scenarios'] = 'Scenari di test';
 $string['fullname'] = 'Corso di test: {$a->size}';
 $string['maketestcourse'] = 'Crea corso di test';
 $string['maketestplan'] = 'Crea test plan JMeter';
@@ -91,6 +94,7 @@ $string['sitesize_4'] = 'XL (~10GB; 1065 corsi, creazione in ~5 ore)';
 $string['sitesize_5'] = 'XXL (~20GB; 4177 corsi, creazione in ~10 ore)';
 $string['size'] = 'Dimensione del corso';
 $string['smallfiles'] = 'File piccoli';
+$string['step_example'] = 'Esempio di passo';
 $string['targetcourse'] = 'Test corso obiettivo';
 $string['testplanexplanation'] = 'Il tool crea un file di test plan JMeter assieme ad un file con le credenziali utente.
 
@@ -117,6 +121,9 @@ $string['testscenario'] = 'Crea scenario di test';
 $string['testscenario_description'] = 'La creazione di scenari di test utilizza una sintassi limitata del file featue per creare tutti gli elementi necessari all\'esecuzione di un test manuale.';
 $string['testscenario_errorparsing'] = 'Si è verificato un errore durante l\'analisi del file feature: {$a}';
 $string['testscenario_file'] = 'File feature';
+$string['testscenario_filedesc'] = 'Il caricamento di feture die delle feature di caricamento possono contenere solo scenari con passaggi core_data_generator o alcuni passaggi specifici che non richiedono selenium. Tutti gli scenari saranno eseguiti contemporaneamente, eccetto quelli con tag @cleanup.';
+$string['testscenario_filedesc_cleanup'] = 'Gli scenari con tag @cleanup verranno eseguiti solo se l\'impostazione "Esegui" è impostata su "Pulizia". Per eseguire la pulizia tramite CLI, è possibile utilizzare l\'opzione --cleanup.';
+$string['testscenario_filedesc_list'] = 'Di seguito l\'elenco dei passi che possono essere utilizzati nel file feature dello scenario di test:';
 $string['testscenario_invalidfile'] = 'Il formato del file non è valido o contiene passi non validi.';
 $string['testscenario_invalidstep'] = 'Passo sconosciuto. La creazione di scenari di test accetta solo passi del generatore.';
 $string['testscenario_nosteps'] = 'Non ci sono passi da eseguire nel file.';

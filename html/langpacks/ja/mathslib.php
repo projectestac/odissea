@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mathslib', language 'ja', version '4.4'.
+ * Strings for component 'mathslib', language 'ja', version '4.5'.
  *
  * @package     mathslib
  * @category    string
@@ -34,7 +34,7 @@ $string['illegalcharactergeneral'] = '不正な文字「 {$a} 」です。';
 $string['illegalcharacterunderscore'] = '不正な文字「_」です。';
 $string['implicitmultiplicationnotallowed'] = '期待される演算子です。暗黙の乗算は許可されません。';
 $string['internalerror'] = '内部エラー';
-$string['operatorlacksoperand'] = '演算子「 {$a} 」の被作用子 (オペランド) が不足しています。';
+$string['operatorlacksoperand'] = '演算子「 {$a} 」にオペランドがありません。';
 $string['undefinedvariable'] = '未定義の変数「 {$a} 」です。';
 $string['undefinedvariableinfunctiondefinition'] = '関数定義内の未定義の変数「 {$a} 」です。';
 $string['unexpectedclosingbracket'] = '不明な右角括弧です。';

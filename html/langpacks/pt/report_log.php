@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'pt', version '4.4'.
+ * Strings for component 'report_log', language 'pt', version '4.5'.
  *
  * @package     report_log
  * @category    string
@@ -37,6 +37,8 @@ $string['eventuserreportviewed'] = 'Relatório dos registos de atividade do util
 $string['log:view'] = 'Ver registos de atividade da disciplina';
 $string['log:viewtoday'] = 'Ver registos de atividade de hoje';
 $string['logsformat'] = 'Formato dos registos de atividade';
+$string['missingcontext'] = 'Apagada {$a->name} (id \'{$a->instanceid}\')';
+$string['missingcourse'] = 'Disciplina em falta (id \'{$a->instanceid}\')';
 $string['nocapability'] = 'Não é possível aceder ao relatório de registo de atividades do utilizador';
 $string['nologreaderenabled'] = 'Nenhum leitor de registos ativado';
 $string['origin'] = 'Origem';

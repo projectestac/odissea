@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_admin_presets', language 'nl', version '4.4'.
+ * Strings for component 'tool_admin_presets', language 'nl', version '4.5'.
  *
  * @package     tool_admin_presets
  * @category    string
@@ -37,8 +37,9 @@ $string['created'] = 'Gemaakt';
 $string['currentvalue'] = 'Huidige waarde';
 $string['deletepreset'] = 'Weet u zeker dat je de site-beheerder voorinstelling {$a} wil verwijderen?';
 $string['deletepresettitle'] = 'Voorinstelling {$a} verwijderen?';
-$string['deletepreviouslyapplied'] = 'Deze voorinstelling is eerder toegepast. Als je een voorinstelling verwijdert, wordt deze volledig van je site verwijderd. Je kunt je instellingen niet terugzetten naar hoe ze waren voordat je deze voorinstelling toepaste.';
+$string['deletepreviouslyapplied'] = 'Weet je zeker dat je deze voorinstelling {$a}wil verwijderen? <br><br>Ze is eerder toegepast. Als je een voorinstelling verwijdert, wordt deze volledig van je site verwijderd. Je kunt je instellingen niet terugzetten naar hoe ze waren voordat je deze voorinstelling toepaste.';
 $string['deleteshow'] = 'Voorinstelling voor sitebeheerder verwijderen';
+$string['editadminpresetname'] = 'Bewerk beheerder ingestelde naam';
 $string['eventpresetdeleted'] = 'Voorinstelling verwijderd';
 $string['eventpresetdownloaded'] = 'Voorinstelling gedownload';
 $string['eventpresetexported'] = 'Voorinstelling gemaakt';

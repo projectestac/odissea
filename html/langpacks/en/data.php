@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'en', version '4.4'.
+ * Strings for component 'data', language 'en', version '4.5'.
  *
  * @package     data
  * @category    string
@@ -29,8 +29,6 @@ $string['action'] = 'Action';
 $string['actionsmenu'] = 'Actions menu';
 $string['add'] = 'Add entry';
 $string['addcomment'] = 'Add comment';
-$string['addedby'] = 'Added by';
-$string['addentries'] = 'Add entries';
 $string['addtemplate'] = 'Add entry template';
 $string['advancedsearch'] = 'Advanced search';
 $string['allowcomments'] = 'Allow comments on entries';
@@ -55,8 +53,6 @@ Fields have the format [[fieldname]]. All other tags have the format ##sometag##
 Only the tags that are in the "Available tags" list may be used for the current template.';
 $string['availabletodate'] = 'Available to';
 $string['availabletodatevalidation'] = 'The available to date cannot be before the available from date.';
-$string['blank'] = 'Blank';
-$string['buttons'] = 'Actions';
 $string['bynameondate'] = 'by {$a->name} - {$a->date}';
 $string['calendarend'] = '{$a} closes';
 $string['calendarstart'] = '{$a} opens';
@@ -126,13 +122,13 @@ $string['defaultfieldenclosure'] = '(default is none)';
 $string['defaultsortfield'] = 'Default sort field';
 $string['delcheck'] = 'Bulk delete checkbox';
 $string['delete'] = 'Delete';
-$string['deleteallentries'] = 'Delete all entries';
+$string['deleteallentries'] = 'All entries';
 $string['deletecomment'] = 'Are you sure you want to delete this comment?';
 $string['deleteconfirm'] = 'Delete preset {$a}?';
 $string['deleted'] = 'deleted';
 $string['deleteentry'] = 'Delete entry';
 $string['deletefield'] = 'Delete field';
-$string['deletenotenrolled'] = 'Delete entries by users not enrolled';
+$string['deletenotenrolled'] = 'Entries by users not enrolled';
 $string['deletewarning'] = 'Deleting a preset removes it from the list of available presets in all courses.';
 $string['descending'] = 'Descending';
 $string['directorynotapreset'] = '{$a->directory} Not a preset: missing files: {$a->missing_files}';
@@ -333,7 +329,6 @@ $string['nomatch'] = 'No matching entries found!';
 $string['nomaximum'] = 'No maximum';
 $string['nopreviewavailable'] = 'No preview available for {$a}';
 $string['norecords'] = 'No entries yet';
-$string['nosingletemplate'] = 'Single view template is not yet defined';
 $string['notapproved'] = 'Pending approval';
 $string['notapprovederror'] = 'Entry is not approved yet.';
 $string['notemplates'] = 'No templates yet';
@@ -356,7 +351,6 @@ $string['page-mod-data-x'] = 'Any database activity module page';
 $string['pagesize'] = 'Entries per page';
 $string['participants'] = 'Participants';
 $string['picture'] = 'Picture';
-$string['pleaseaddsome'] = 'Please create some below or <a href="{$a}">choose a predefined set</a> to get started.';
 $string['pluginadministration'] = 'Database activity administration';
 $string['pluginname'] = 'Database';
 $string['portfolionotfile'] = 'Export to a portfolio rather than a file (csv and leap2a only)';
@@ -391,7 +385,7 @@ $string['recorddeleted'] = 'Entry deleted';
 $string['recorddisapproved'] = 'Entry unapproved';
 $string['recordsnotsaved'] = 'No entry was saved. Please check the format of the uploaded file.';
 $string['recordssaved'] = 'entries saved';
-$string['removealldatatags'] = 'Remove all database tags';
+$string['removealldatatags'] = 'All database tags';
 $string['requireapproval'] = 'Approval required';
 $string['requireapproval_help'] = 'A teacher has to approve entries before they’re visible to everyone.';
 $string['required'] = 'Required';
@@ -428,7 +422,6 @@ $string['saveaspresetmissingcapability'] = 'The user does not have permission to
 $string['savedataaspreset'] = 'Save all fields and templates and publish as preset on this site';
 $string['savesettings'] = 'Save settings';
 $string['savesuccess'] = 'Preset saved. <a href="{$a->url}">Preview preset</a>';
-$string['savetemplate'] = 'Save template';
 $string['search'] = 'Search';
 $string['search:activity'] = 'Database - activity information';
 $string['search:entry'] = 'Database - entries';
@@ -460,7 +453,6 @@ $string['text'] = 'Text';
 $string['textarea'] = 'Text area';
 $string['timeadded'] = 'Time added';
 $string['timemodified'] = 'Time modified';
-$string['todatabase'] = 'to this database.';
 $string['type'] = 'Field type';
 $string['undefinedprocessactionmethod'] = 'No action method defined in Data_Preset to handle action "{$a}".';
 $string['unknown'] = 'Unknown field';

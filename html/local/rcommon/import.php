@@ -1,9 +1,9 @@
 <?php
 require_once('../../config.php');
-require_once($CFG->dirroot.'/course/lib.php');
-require_once($CFG->libdir.'/formslib.php');
-require_once($CFG->libdir.'/csvlib.class.php');
-require_once($CFG->libdir.'/adminlib.php');
+require_once($CFG->dirroot . '/course/lib.php');
+require_once($CFG->libdir . '/formslib.php');
+require_once($CFG->libdir . '/csvlib.class.php');
+require_once($CFG->libdir . '/adminlib.php');
 require_once('forms.php');
 require_once('locallib.php');
 
@@ -13,12 +13,12 @@ require_capability('local/rcommon:importcredentials', context_system::instance()
 @set_time_limit(3600); // 1 hour should be enough
 @raise_memory_limit('256M');
 
-$iid         = optional_param('iid', '', PARAM_INT);
-$continue         = optional_param('continue', false, PARAM_BOOL);
+$iid = optional_param('iid', '', PARAM_INT);
+$continue = optional_param('continue', false, PARAM_BOOL);
 
 $fields = array('required' => array('isbn', 'credential'), 'optional' => array('username', 'userid'), 'ignored' => array('pack', 'packid'));
 
-$errorstr                   = get_string('error');
+$errorstr = get_string('error');
 
 $returnurl = new moodle_url('/local/rcommon/import.php');
 if (empty($iid)) {
@@ -51,7 +51,6 @@ if (empty($iid)) {
     $filecolumns = credentials::validate_columns($cir, $fields, $returnurl);
 }
 
-
 echo $OUTPUT->header();
 
 echo $OUTPUT->heading(get_string('keymanager_import_title', 'local_rcommon'));
@@ -61,8 +60,8 @@ $cir->init();
 $linenum = 1; // Column header is first line
 
 // verification moved to two places: after upload and into form2
-$errors        = 0;
-$warnings      = 0;
+$errors = 0;
+$warnings = 0;
 $do_errors = 0;
 $do_ok = 0;
 $processed_user = array();
@@ -124,21 +123,23 @@ while ($line = $cir->next()) {
             $error = true;
         }
         $upt->track('userid', $credential->euserid, 'normal');
-    } else if (isset($credential->userid) && !empty($credential->userid)) {
-        $credential->username = $DB->get_field('user', 'username', array('id' => $credential->userid));
-        $upt->track('username', $credential->username, 'normal');
-        if (!is_numeric($credential->userid) || !$credential->username) {
-            $upt->track('status', get_string('keymanager_import_error_13', 'local_rcommon', $credential->userid), 'error');
-            $upt->track('userid', $errorstr, 'error');
-            $error = true;
-        } else {
-            $upt->track('userid', $credential->userid, 'normal', false);
-        }
-        $credential->euserid = $credential->userid;
-
     } else {
-        $credential->euserid = false;
-        $upt->track('userid', $credential->euserid, 'normal', false);
+        if (isset($credential->userid) && !empty($credential->userid)) {
+            $credential->username = $DB->get_field('user', 'username', array('id' => $credential->userid));
+            $upt->track('username', $credential->username, 'normal');
+            if (!is_numeric($credential->userid) || !$credential->username) {
+                $upt->track('status', get_string('keymanager_import_error_13', 'local_rcommon', $credential->userid), 'error');
+                $upt->track('userid', $errorstr, 'error');
+                $error = true;
+            } else {
+                $upt->track('userid', $credential->userid, 'normal', false);
+            }
+            $credential->euserid = $credential->userid;
+
+        } else {
+            $credential->euserid = false;
+            $upt->track('userid', $credential->euserid, 'normal', false);
+        }
     }
 
     // Check if isset any credential for that book and user
@@ -151,13 +152,15 @@ while ($line = $cir->next()) {
             $error = true;
             $duplicated = true;
             $processed_user[$credential->isbn][$credential->euserid] = true;
-        } else if (isset($processed_user[$credential->isbn][$credential->euserid])) {
-            // A credential for this user is already being imported
-            $upt->track('status', get_string('keymanager_import_error_20', 'local_rcommon'), 'error');
-            $error = true;
-            $duplicated = true;
         } else {
-            $processed_user[$credential->isbn][$credential->euserid] = true;
+            if (isset($processed_user[$credential->isbn][$credential->euserid])) {
+                // A credential for this user is already being imported
+                $upt->track('status', get_string('keymanager_import_error_20', 'local_rcommon'), 'error');
+                $error = true;
+                $duplicated = true;
+            } else {
+                $processed_user[$credential->isbn][$credential->euserid] = true;
+            }
         }
     }
 
@@ -175,7 +178,7 @@ while ($line = $cir->next()) {
         if ($numcreds > 0) {
             // Credential duplicated in database. It may be a group credential.
             $warning = true;
-            $upt->track('status', get_string('keymanager_import_error_16', 'local_rcommon', $numcreds) , 'warning');
+            $upt->track('status', get_string('keymanager_import_error_16', 'local_rcommon', $numcreds), 'warning');
         }
     }
 
@@ -190,17 +193,19 @@ while ($line = $cir->next()) {
     if ($error) {
         $errors++;
         continue;
-    } else if ($warning) {
-        $warnings++;
+    } else {
+        if ($warning) {
+            $warnings++;
+        }
     }
 
     // Ok Do it
     if ($continue) {
         if (credentials::add($credential->isbn, $credential->credential, $credential->euserid)) {
-            $upt->track('status', get_string('success') , 'info');
+            $upt->track('status', get_string('success'), 'info');
             $do_ok++;
         } else {
-            $upt->track('status', get_string('error') , 'error');
+            $upt->track('status', get_string('error'), 'error');
             $do_errors++;
         }
     }
@@ -214,33 +219,35 @@ if ($linenum <= 1) {
     // Empty file
     echo $OUTPUT->notification(get_string('keymanager_import_error_17', 'local_rcommon'));
     echo $OUTPUT->continue_button($returnurl);
-} else if (!$continue) {
-    if ($errors > 0) {
-        // Errors found in the preview and cannot continue
-        echo $OUTPUT->notification(get_string('keymanager_import_resum_error', 'local_rcommon', $errors));
-        echo $OUTPUT->continue_button($returnurl);
-    } else {
-        if ($warnings > 0) {
-            // Warnings found, warn user
-            echo $OUTPUT->notification(get_string('keymanager_import_resum_alert', 'local_rcommon', $warnings));
-        }
-        // Confirmation
-        $continueurl = new moodle_url('/local/rcommon/import.php', array('continue' => true, 'iid' => $iid));
-        echo $OUTPUT->confirm(get_string('keymanager_import_resum_msg', 'local_rcommon', $linenum - 1), $continueurl, $returnurl);
-    }
 } else {
-    // Summary of actions taken, erase temp files
-    $cir->cleanup(true);
-    if ($do_errors > 0) {
-        $a = new StdClass();
-        $a->errors = $do_errors;
-        $a->ok = $do_ok;
-        echo $OUTPUT->notification(get_string('keymanager_import_message_error', 'local_rcommon', $a));
-        echo $OUTPUT->continue_button($returnurl);
+    if (!$continue) {
+        if ($errors > 0) {
+            // Errors found in the preview and cannot continue
+            echo $OUTPUT->notification(get_string('keymanager_import_resum_error', 'local_rcommon', $errors));
+            echo $OUTPUT->continue_button($returnurl);
+        } else {
+            if ($warnings > 0) {
+                // Warnings found, warn user
+                echo $OUTPUT->notification(get_string('keymanager_import_resum_alert', 'local_rcommon', $warnings));
+            }
+            // Confirmation
+            $continueurl = new moodle_url('/local/rcommon/import.php', array('continue' => true, 'iid' => $iid));
+            echo $OUTPUT->confirm(get_string('keymanager_import_resum_msg', 'local_rcommon', $linenum - 1), $continueurl, $returnurl);
+        }
     } else {
-        $a = new StdClass();
-        $a->ok = $do_ok;
-        echo redirect($CFG->wwwroot.'/local/rcommon/users.php', get_string('keymanager_import_message', 'local_rcommon', $a), 10);
+        // Summary of actions taken, erase temp files
+        $cir->cleanup(true);
+        if ($do_errors > 0) {
+            $a = new StdClass();
+            $a->errors = $do_errors;
+            $a->ok = $do_ok;
+            echo $OUTPUT->notification(get_string('keymanager_import_message_error', 'local_rcommon', $a));
+            echo $OUTPUT->continue_button($returnurl);
+        } else {
+            $a = new StdClass();
+            $a->ok = $do_ok;
+            echo redirect($CFG->wwwroot . '/local/rcommon/users.php', get_string('keymanager_import_message', 'local_rcommon', $a), 10);
+        }
     }
 }
 echo $OUTPUT->footer();

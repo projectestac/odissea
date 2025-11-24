@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'pt', version '4.4'.
+ * Strings for component 'hub', language 'pt', version '4.5'.
  *
  * @package     hub
  * @category    string
@@ -27,6 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activeparticipantnumberaverage'] = 'Número médio de participantes ativos recentemente ({$a})';
 $string['activeusersnumber'] = 'Número de utilizadores ativos recentemente ({$a})';
+$string['aiusagedata'] = 'Dados de utilização de IA';
+$string['aiusagestats'] = 'Estatísticas de uso de IA ({$a->timefrom} - {$a->timeto})';
 $string['analyticsactions'] = 'Número de ações realizadas em previsões geradas ({$a})';
 $string['analyticsactionsnotuseful'] = 'Número de ações para marcar uma previsão como não útil ({$a})';
 $string['analyticsenabledmodels'] = 'Número de modelos de previsão ativados ({$a})';
@@ -36,6 +38,7 @@ $string['audience_help'] = 'Defina o público-alvo pretendido para a disciplina'
 $string['audienceadmins'] = 'Administradores do Moodle';
 $string['audienceeducators'] = 'Educadores';
 $string['audiencestudents'] = 'Alunos';
+$string['average_time'] = 'Tempo médio de processamento ({$a})';
 $string['badgesnumber'] = 'Número de medalhas ({$a})';
 $string['communityremoved'] = 'A hiperligação da disciplina foi removida da sua lista';
 $string['confirmregistration'] = 'Confirmar registo';
@@ -66,6 +69,7 @@ $string['errorotherhubsnotsupported'] = 'Esta página já não pode ser usada pa
 $string['errorregistrationupdate'] = 'Ocorreu um erro durante a atualização do registo ({$a})';
 $string['errorws'] = '{$a}';
 $string['errorwstokenreset'] = '{$a}. O token de registo neste site foi redefinido. Já pode registar seu site novamente.';
+$string['fail_count'] = 'Contagem de falhas ({$a})';
 $string['geolocation'] = 'Geolocalização';
 $string['geolocation_help'] = 'É possível que no futuro seja disponibilizada a pesquisa baseada na localização geográfica. Se pretender indicar a localização da sua disciplina, indique aqui os valores da latitude e longitude. Ex: 31.947884,115.871285. Uma forma de obter esta informação é usar o Google Maps.';
 $string['imageurl'] = 'URL da imagem';
@@ -80,6 +84,7 @@ $string['licence_link'] = 'licenças';
 $string['logourl'] = 'URL do logótipo';
 $string['mobilenotificationsenabled'] = 'Notificações móveis ativadas ({$a})';
 $string['mobileservicesenabled'] = 'Serviços Mobile ativados ({$a})';
+$string['models'] = 'Modelos';
 $string['modulenumberaverage'] = 'Número médio de módulos por disciplina ({$a})';
 $string['mustselectsubject'] = 'É obrigatória a seleção de um assunto';
 $string['name'] = 'Nome';
@@ -87,16 +92,19 @@ $string['name_help'] = 'Este nome será mostrado na lista de disciplinas.';
 $string['neverchecked'] = 'Nunca foi verificado(a)';
 $string['next'] = 'Seguinte';
 $string['no'] = 'Não';
+$string['noaiusagedata'] = 'Dados de utilização de IA (nenhum)';
 $string['nocheckstatusfromunreghub'] = 'O site não está registado no hub pelo que o seu estado não pode ser verificado.';
 $string['nohubselected'] = 'Não foi selecionado nenhum hub.';
 $string['none'] = 'Nenhum';
 $string['operation'] = 'Ações';
 $string['participantnumberaverage'] = 'Número médio de participantes ({$a})';
+$string['pluginusagedata'] = 'Dados do uso de módulos obtidos de: <a href="{$a->overview}">Lista de módulos instalados</a>, <a href="{$a->activities}">Gerir atividades</a> e <a href="{$a->blocks}">Gerir blocos</a>';
 $string['policyagreed'] = 'Política de privacidade e contrato de processamento de dados';
 $string['policyagreeddesc'] = 'Concordo com a <a href="{$a}" target="_blank">Política de privacidade e contrato de processamento de dados</a>';
 $string['postaladdress'] = 'Morada';
 $string['postaladdress_help'] = 'Morada deste site ou da entidade por ele representada.';
 $string['postsnumber'] = 'Número de mensagens ({$a})';
+$string['predominant_error'] = 'Erro HTTP predominante ({$a})';
 $string['previousregistrationdeleted'] = 'O registo anterior foi apagado de {$a}. Pode reiniciar o processo de registo. Obrigado.';
 $string['primaryauthtype'] = 'Tipo de autenticação principal ({$a})';
 $string['questionsnumber'] = 'Número de perguntas ({$a})';
@@ -106,15 +114,15 @@ $string['registeredsites'] = 'Sites registados';
 $string['registereduserdevices'] = 'Número de utilizadores com dispositivos móveis registados ({$a})';
 $string['registerwithmoodleorg'] = 'Registar o seu site';
 $string['registerwithmoodleorgcomplete'] = 'Conclua o registo do seu site';
-$string['registerwithmoodleorginfo'] = 'Gostaríamos muito de ficar em contacto para lhe disponibilizar coisas importantes para o seu site Moodle! Ao registar o seu site:
+$string['registerwithmoodleorginfo'] = 'Registar o seu site envolve enviar periodicamente <a href="{$a->moreinformation}" class="focus-expand">estatísticas anónimas do site</a> para o Moodle HQ. Isto ajuda a perceber como usa o Moodle e permite tomar decisões sobre novos recursos e módulos.
 
-* Pode subscrever-se para receber notificações de novos lançamentos do Moodle, alertas de segurança e outras notícias importantes.
-* Pode aceder e ativar o envio de notificações móveis a partir do seu site através da Aplicação móvel Moodle gratuita.
-* Está a contribuir para as nossas estatísticas Moodle da comunidade mundial, que nos ajudam a melhorar o Moodle e os sites da nossa comunidade.
-* Se pretender, o seu site pode ser incluído na lista de sites Moodle registados do seu país.';
+Além disso, permite que:
+* Esteja atualizado sobre atualizações importantes, como alertas de segurança e novos lançamentos disponíveis.
+* Ative o envio de notificações móveis para a <a href="{$a->moodleapp}">Aplicação móvel Moodle</a>.
+* Aumente a visibilidade do seu site destacando-o na lista de sites Moodle registados no seu país (opcional).';
 $string['registerwithmoodleorginfoapp'] = 'Acerca da Aplicação móvel Moodle';
-$string['registerwithmoodleorginfosites'] = 'Outros sites do meu país';
-$string['registerwithmoodleorginfostats'] = 'Estatísticas do Moodle';
+$string['registerwithmoodleorginfosites'] = 'Encontrar outros sites do meu país';
+$string['registerwithmoodleorginfostats'] = 'Ver estatísticas globais do Moodle';
 $string['registerwithmoodleorgremove'] = 'Está prestes a cancelar o registo do seu site. Deixará de receber notificações e alertas de segurança importantes e os utilizadores do site não poderão receber notificações do seu site na Aplicação móvel Moodle. A qualquer momento poderá registar novamente. Tem a certeza de que pretende cancelar o registo do seu site?';
 $string['registerwithmoodleorgupdate'] = 'Atualize o registo do seu site';
 $string['registrationconfirmed'] = 'Confirmação de registo do site';
@@ -147,6 +155,27 @@ $string['sitelang'] = 'Idioma';
 $string['sitelang_help'] = 'Qual é o idioma principal usado no seu site Moodle?';
 $string['sitename'] = 'Nome';
 $string['sitename_help'] = 'O nome do site será apresentado na lista de sites disponibilizada pelo hub.';
+$string['siteorganisationtype'] = 'Tipo de organização';
+$string['siteorganisationtype:charityornotforprofit'] = 'Caridade ou sem fins lucrativos';
+$string['siteorganisationtype:charterschool'] = 'Escola privada';
+$string['siteorganisationtype:college'] = 'Faculdade';
+$string['siteorganisationtype:collegedepartment'] = 'Departamento de faculdade';
+$string['siteorganisationtype:commercialcourseprovider'] = 'Fornecedor comercial de cursos';
+$string['siteorganisationtype:companydepartment'] = 'Departamento de empresa';
+$string['siteorganisationtype:companyinternal'] = 'Empresa';
+$string['siteorganisationtype:donotshare'] = 'Não divulgar';
+$string['siteorganisationtype:government'] = 'Governamental';
+$string['siteorganisationtype:highschool'] = 'Escola secundária';
+$string['siteorganisationtype:highschooldepartment'] = 'Departamento de escola secundária';
+$string['siteorganisationtype:highschooldistrict'] = 'Agrupamento de escolas secundárias';
+$string['siteorganisationtype:hospital'] = 'Hospital';
+$string['siteorganisationtype:independentteacher'] = 'Professor independente';
+$string['siteorganisationtype:other'] = 'Outro';
+$string['siteorganisationtype:primaryschool'] = 'Escola primária';
+$string['siteorganisationtype:schooldistrict'] = 'Agrupamento de escolas';
+$string['siteorganisationtype:universitydepartment'] = 'Departamento de universidade';
+$string['siteorganisationtype:wholeuniversity'] = 'Universidade';
+$string['siteorganisationtype_help'] = 'Informar o tipo da sua organização ajudará a entender melhor os tipos de organizações que usam o Moodle e suas necessidades.';
 $string['sitephone'] = 'Telefone';
 $string['sitephone_help'] = 'O seu contacto telefónico apenas estará visível para o administrador do hub.';
 $string['siteprivacy'] = 'Listar o site';
@@ -170,6 +199,10 @@ $string['siteversion_help'] = 'A versão do Moodle instalada neste site.';
 $string['skipregistration'] = 'Ignorar';
 $string['subject'] = 'Assunto';
 $string['subject_help'] = 'Selecione o assunto principal da disciplina';
+$string['success_count'] = 'Contagem de acertos ({$a})';
+$string['time_range'] = 'Intervalo de tempo';
+$string['timefrom'] = 'Desde ({$a})';
+$string['timeto'] = 'Até ({$a})';
 $string['type'] = 'Partilhada';
 $string['unregister'] = 'Remover registo';
 $string['unregistrationerror'] = 'Ocorreu um erro ao tentar remover o registo do site: {$a}';

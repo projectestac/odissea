@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'zh_cn', version '4.4'.
+ * Strings for component 'cache', language 'zh_cn', version '4.5'.
  *
  * @package     cache
  * @category    string
@@ -34,6 +34,8 @@ $string['addstoresuccess'] = '成功添加一个新的 {$a}存储';
 $string['area'] = '区域';
 $string['cacheadmin'] = '缓存管理';
 $string['cacheconfig'] = '配置';
+$string['cachedef_ai_policy'] = '用户 AI 策略许可';
+$string['cachedef_ai_ratelimit'] = 'AI 提供者调用速率限制';
 $string['cachedef_calculablesinfo'] = '分析可计算信息';
 $string['cachedef_calendar_categories'] = '用户可访问的日历课程分类';
 $string['cachedef_calendar_subscriptions'] = '日历订阅';
@@ -91,6 +93,7 @@ $string['cachedef_recommendation_favourite_course_content_items'] = '课程内�
 $string['cachedef_reportbuilder_allowed_reports'] = '用户允许根据受众进行报告';
 $string['cachedef_repositories'] = '库实例资料';
 $string['cachedef_roledefs'] = '角色定义';
+$string['cachedef_routes'] = '路由数据';
 $string['cachedef_string'] = '语言字符串缓存';
 $string['cachedef_suspended_userids'] = '列出每一课程的已休学用户';
 $string['cachedef_tagindexbuilder'] = '加标签的项目搜索结果';

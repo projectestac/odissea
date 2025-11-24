@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'ru', version '4.4'.
+ * Strings for component 'role', language 'ru', version '4.5'.
  *
  * @package     role
  * @category    string
@@ -28,6 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['addinganewrole'] = 'Добавить новую роль';
 $string['addrole'] = 'Добавить новую роль';
 $string['advancedoverride'] = 'Расширенное переопределение роли';
+$string['ai:acceptpolicy'] = 'Принимать политики ИИ';
+$string['ai:fetchanyuserpolicystatus'] = 'Получать согласие пользователей с политикой ИИ';
+$string['ai:fetchpolicy'] = 'Получать согласие пользователей с политикой ИИ';
 $string['allow'] = 'Дать право';
 $string['allowassign'] = 'Разрешить назначение ролей';
 $string['allowed'] = 'Разрешено';
@@ -164,6 +167,8 @@ $string['confirmunassignno'] = 'Отменить';
 $string['confirmunassigntitle'] = 'Подтвердите изменение роли';
 $string['confirmunassignyes'] = 'Удалить';
 $string['contentbank:access'] = 'Иметь доступ к банку контента';
+$string['contentbank:changelockedcustomfields'] = 'Изменять заблокированные пользовательские поля в банке контента';
+$string['contentbank:configurecustomfields'] = 'Настраивать пользовательские поля в банке контента';
 $string['contentbank:copyanycontent'] = 'Копировать любой контент в банк контента';
 $string['contentbank:copycontent'] = 'Копировать контент в банк контента';
 $string['contentbank:deleteanycontent'] = 'Удалять любое содержимое из банка контента';
@@ -191,6 +196,7 @@ $string['course:create'] = 'Создавать курсы';
 $string['course:creategroupconversations'] = 'Создавать групповые беседы';
 $string['course:delete'] = 'Удалять курсы';
 $string['course:downloadcoursecontent'] = 'Скачивать содержимое курса';
+$string['course:editcoursewelcomemessage'] = 'Изменять приветственное сообщение курса';
 $string['course:enrolconfig'] = 'Настраивать способы записи на отдельные курсы';
 $string['course:enrolreview'] = 'Просматривать участников курса';
 $string['course:ignoreavailabilityrestrictions'] = 'Игнорировать ограничения доступности';
@@ -521,6 +527,7 @@ $string['user:viewalldetails'] = 'Просматривать всю информ
 $string['user:viewdetails'] = 'Просматривать профили других пользоватеей';
 $string['user:viewhiddendetails'] = 'Просматривать скрытые поля профилей других пользователей';
 $string['user:viewlastip'] = 'Просматривать последний IP-адрес пользователя';
+$string['user:viewprofilepictures'] = 'Просматривать фотографии профилей пользователей (если включен принудительный вход в систему)';
 $string['user:viewuseractivitiesreport'] = 'Просматривать отчеты о деятельности пользователей';
 $string['user:viewusergrades'] = 'Просматривать оценки другого пользователя';
 $string['usersfrom'] = 'Пользователи из контекста «{$a}»';

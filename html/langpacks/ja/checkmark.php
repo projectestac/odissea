@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'checkmark', language 'ja', version '4.4'.
+ * Strings for component 'checkmark', language 'ja', version '4.5'.
  *
  * @package     checkmark
  * @category    string
@@ -508,7 +508,6 @@ $string['submissionstatusheading'] = '提出ステータス';
 $string['submitcheckmark'] = 'あなたのチェックマークをこのフォームで送信する';
 $string['submitted'] = '送信済み';
 $string['submitted_entries'] = '送信済み';
-$string['submittedlateshort'] = '{$a} 遅い';
 $string['summary_abs'] = 'x/y 例チェック済み';
 $string['summary_rel'] = '% 例チェック済み';
 $string['timelimit'] = '時間制限';

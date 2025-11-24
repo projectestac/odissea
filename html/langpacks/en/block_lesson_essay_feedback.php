@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_lesson_essay_feedback', language 'en', version '4.4'.
+ * Strings for component 'block_lesson_essay_feedback', language 'en', version '4.5'.
  *
  * @package     block_lesson_essay_feedback
  * @category    string

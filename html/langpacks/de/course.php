@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'de', version '4.4'.
+ * Strings for component 'course', language 'de', version '4.5'.
  *
  * @package     course
  * @category    string
@@ -101,6 +101,10 @@ $string['downloadcoursecontent_help'] = 'Diese Einstellung legt fest, ob Kursinh
 $string['enabledownloadcoursecontent'] = 'Kursinhalt herunterladen aktivieren';
 $string['errorendbeforestart'] = 'Das Enddatum ({$a}) liegt vor dem Anfangsdatum.';
 $string['favourite'] = 'Favorisierte Kurse';
+$string['filterbothactive'] = 'Vorname ({$a->first}) Nachname ({$a->last})';
+$string['filterbyname'] = 'Nach Name filtern';
+$string['filterfirstactive'] = 'Vorname ({$a->first})';
+$string['filterlastactive'] = 'Nachname ({$a->last})';
 $string['gotosection'] = 'Zum Abschnitt {$a}';
 $string['gradetopassnotset'] = 'Für diesen Kurs wurde keine Bestehensgrenze festgelegt, die erreichet werden muss. Dies kann im Bewertungselement des Kurses festgelegt werden (Bewertungseinstellungen).';
 $string['hideendedcoursestask'] = 'Kurse nach dem Enddatum verbergen';

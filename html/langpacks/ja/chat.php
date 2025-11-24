@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'ja', version '4.4'.
+ * Strings for component 'chat', language 'ja', version '4.5'.
  *
  * @package     chat
  * @category    string
@@ -139,13 +139,13 @@ $string['privacy:metadata:chat_users:lastping'] = 'チャットルームへの�
 $string['privacy:metadata:chat_users:userid'] = 'ユーザIDです。';
 $string['privacy:metadata:chat_users:version'] = 'ユーザがどのようにしてチャットルームにアクセスするか示します (ソケット/基本/ajax/header_js)。';
 $string['privacy:metadata:messages'] = 'チャットセッション中に送信されたメッセージのレコードです。';
-$string['privacy:metadata:messages:issystem'] = 'メッセージがシステムによって生成されたメッセージかどうか示します。';
+$string['privacy:metadata:messages:issystem'] = 'メッセージがシステムにより生成されたメッセージかどうか示します。';
 $string['privacy:metadata:messages:message'] = 'メッセージ';
 $string['privacy:metadata:messages:timestamp'] = 'メッセージが送信された日時です。';
 $string['privacy:metadata:messages:userid'] = 'メッセージの作成者のユーザIDです。';
 $string['refreshroom'] = 'ルームをリフレッシュする';
 $string['refreshuserlist'] = 'ユーザリストをリフレッシュする';
-$string['removemessages'] = 'すべてのメッセージを削除する';
+$string['removemessages'] = 'すべてのメッセージ';
 $string['repeatdaily'] = '毎日同じ時間に';
 $string['repeatnone'] = '繰り返しなし - 指定した時間にのみ公開する';
 $string['repeattimes'] = 'セッション時間の繰り返し/公開';

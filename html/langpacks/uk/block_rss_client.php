@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'uk', version '4.4'.
+ * Strings for component 'block_rss_client', language 'uk', version '4.5'.
  *
  * @package     block_rss_client
  * @category    string
@@ -30,18 +30,21 @@ $string['addheadlineblock'] = 'Додати заголовок RSS блоку';
 $string['addnew'] = 'Додати новий';
 $string['addnewfeed'] = 'Додати нову стрічку';
 $string['cannotmakemodification'] = 'Наразі вам недозволено змінювати цю RSS стрічку.';
-$string['choosefeedlabel'] = 'Виберіть стрічки новин для показу в цьому блоці:';
+$string['choosefeedlabel'] = 'Виберіть канали для відображення';
 $string['clientchannellink'] = 'Сайт-джерело...';
 $string['clientnumentries'] = 'Типова кількість записів для показу.';
-$string['clientshowchannellinklabel'] = 'Чи показувати посилання на сайт (канал ресурсу), де взяті новини? (Якщо ніяких записів не виводиться, то й посилання не буде):';
+$string['clientshowchannellinklabel'] = 'Показати посилання на джерело, якщо воно доступне';
 $string['clientshowimagelabel'] = 'Показати зображення каналу, якщо доступне';
 $string['configblock'] = 'Конфігурація блоку';
+$string['configmethodexisting'] = 'Виберіть наявний канал RSS';
+$string['configmethodnew'] = 'Додати новий канал RSS';
 $string['couldnotfindfeed'] = 'Не вдалося знайти стрічку з ідентифікатором.';
 $string['couldnotfindloadrssfeed'] = 'Не вдається знайти або завантажити RSS стрічку.';
 $string['customtitlelabel'] = 'Користувацька назва (залиште поле порожнім, щоб використовувати назву, надану каналом)';
 $string['deletefeedconfirm'] = 'Ви впевнені, що бажаєте видалити цю стрічку новин?';
 $string['disabledrssfeeds'] = 'RSS відключено';
-$string['displaydescriptionlabel'] = 'Показувати опис кожного посилання?';
+$string['displaydescriptionlabel'] = 'Показати описи для записів';
+$string['displaysettings'] = 'Параметри відображення для RSS-каналу';
 $string['editafeed'] = 'Редагувати стрічку';
 $string['editfeeds'] = 'Редагувати, підписуватися або скасовувати підписку на канали RSS';
 $string['editnewsfeeds'] = 'Редагувати новини';
@@ -58,10 +61,10 @@ $string['feedsaddedit'] = 'Додати/Редагувати стрічки но
 $string['feedsconfigurenewinstance'] = 'Клацніть тут для налаштування блоку';
 $string['feedsconfigurenewinstance2'] = 'Натисніть на іконку Редагувати вище, щоб настроїти цей блок для відображення RSS-каналів.';
 $string['feedupdated'] = 'RSS оновлено';
-$string['feedurl'] = 'URL стрічки';
+$string['feedurl'] = 'RSS посилання';
 $string['findmorefeeds'] = 'Знайти ще';
 $string['managefeeds'] = 'Керуйте RSS-каналами';
-$string['nofeeds'] = 'Ніяких RSS новин не визначено для цього сайту';
+$string['nofeeds'] = 'Ще немає RSS-каналів. Виберіть «Додати новий канал RSS».';
 $string['numentries'] = 'Новин на ресурс';
 $string['pickfeed'] = 'Виберіть канал RSS';
 $string['pluginname'] = 'RSS-канали';
@@ -84,7 +87,7 @@ $string['rss_client:manageownfeeds'] = 'Управляти власними RSS 
 $string['rss_client:myaddinstance'] = 'Додайте новий блок RSS-каналів на інформаційну панель';
 $string['seeallfeeds'] = 'Переглянути всі стрічки';
 $string['sharedfeed'] = 'Публічні стрічки';
-$string['shownumentrieslabel'] = 'Максимальна кількість записів для показу в блоці.';
+$string['shownumentrieslabel'] = 'Записи для відображення';
 $string['submitters'] = 'Кому буде доступно визначення нових стрічок rss? Визначення стрічок новин буде доступне для всіх сторінок вашого сайту.';
 $string['submitters2'] = 'Підписаних';
 $string['timeout'] = 'Час у хвилинах до того, як RSS оновиться у кеші. Зверніть увагу, що це мінімальний час до закінчення терміну; Стрічка буде оновлена у кеші при наступному запуску cron. Рекомендується встановлювати 30 хвилин або більше.';

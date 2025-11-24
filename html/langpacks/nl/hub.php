@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'nl', version '4.4'.
+ * Strings for component 'hub', language 'nl', version '4.5'.
  *
  * @package     hub
  * @category    string
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activeparticipantnumberaverage'] = 'Gemiddeld aantal recent actieve deelnemers ({$a})';
 $string['activeusersnumber'] = 'Aantal recent actieve gebruikers ({$a})';
+$string['aiusagestats'] = 'Alle gebruiksstatistieken ({$a->timefrom} - {$a->timeto})';
 $string['analyticsactions'] = 'Aantal acties dat is uitgevoerd op gegenereerde voorspellingen ({$a})';
 $string['analyticsactionsnotuseful'] = 'Aantal acties dat een voorspelling markeert als niet nuttig ({$a})';
 $string['analyticsenabledmodels'] = 'Aantal geactiveerde voorspellingsmodellen ({$a})';
@@ -66,6 +67,7 @@ $string['errorotherhubsnotsupported'] = 'Deze pagina kan niet meer gebruikt word
 $string['errorregistrationupdate'] = 'Er is een fout opgetreden tijdens de update van de registratie  ({$a})';
 $string['errorws'] = '{$a}';
 $string['errorwstokenreset'] = '{$a}. Registratietoken van deze site is gereset. Je kunt je site nu opnieuw registreren.';
+$string['fail_count'] = 'Aantal keer mislukt ({$a})';
 $string['geolocation'] = 'Geolocatie';
 $string['geolocation_help'] = 'In de toekomst zullen we locatiegebaseerd zoeken voorzien. Als je een locatie voor jouw cursus wil opgeven, gebruik hier dan lengte en breedtewaarden (vb. 31.947884,115.871285). Je kunt die bijvoorbeeld vinden met Google Maps.';
 $string['imageurl'] = 'AfbeeldingsURL';
@@ -80,6 +82,7 @@ $string['licence_link'] = 'licenses';
 $string['logourl'] = 'Logo URL';
 $string['mobilenotificationsenabled'] = 'Mobiele meldingen ingeschakeld ({$a})';
 $string['mobileservicesenabled'] = 'Mobiele diensten ingeschakeld  ({$a})';
+$string['models'] = 'Modellen';
 $string['modulenumberaverage'] = 'Gemiddeld aantal cursusmodules ({$a})';
 $string['mustselectsubject'] = 'Je moet een onderwerp selecteren';
 $string['name'] = 'Naam';
@@ -92,6 +95,7 @@ $string['nohubselected'] = 'Geen hub geselecteerd';
 $string['none'] = 'Geen';
 $string['operation'] = 'Acties';
 $string['participantnumberaverage'] = 'Gemiddeld aantal deelnemers ({$a})';
+$string['pluginusagedata'] = 'Plugin gebruiksgegevens verzameld van: <a href="{$a->overview}">Plugin overzicht</a>, <a href="{$a->activities}">Beheer activiteiten</a>, en <a href="{$a->blocks}">Beheer blokken</a>';
 $string['policyagreed'] = 'Privacyverklaring en gegevensverwerkingsovereenkomst';
 $string['policyagreeddesc'] = 'Ik ga akkoord met de <a href="{$a}" target="_blank"> privacyverklaring en gegevensverwerkingsovereenkomst </a>';
 $string['postaladdress'] = 'Postadres';
@@ -106,15 +110,16 @@ $string['registeredsites'] = 'Geregistreerde sites';
 $string['registereduserdevices'] = 'Aantal gebruikers met geregistreerde mobiele toestellen ({$a})';
 $string['registerwithmoodleorg'] = 'Registreer je site';
 $string['registerwithmoodleorgcomplete'] = 'Voltooi de registratie van je site';
-$string['registerwithmoodleorginfo'] = 'We houden graag contact en voorzien je van belangrijke dingen voor je Moodle-website! Door te registreren:
+$string['registerwithmoodleorginfo'] = 'Het registreren van je site houdt in dat er af en toe  <a href="{$a->moreinformation}" class="focus-expand">geanonimiseerde statistieken</a> to Moodle HQ verstuurd worden. Dit helpt ons om inzicht te krijgen in hoe je Moodle gebruikt en om beslissingen te nemen over nieuwe functionaliteit.
 
-*  kun je je abonneren op meldingen van nieuwe Moodle-releases, beveiligingswaarschuwingen en ander belangrijk nieuws
-* kun je mobiele pushmeldingen van je Moodle-website openen en activeren via onze gratis Moodle-app
-* draag je bij aan onze Moodle-statistieken van de wereldwijde gemeenschap, die ons helpen Moodle en onze community-sites te verbeteren.
-* als je wil, kan je site worden opgenomen in de lijst met in jouw land geregistreerde Moodle-websites.';
+Hierdoor:
+
+*  blijf je op de hoogte van belangrijke beveiligingswaarschuwingen en nieuwe Moodle-releases
+* kun je mobiele pushmeldingen van je Moodle-website openen en activeren via onze <a href="{$a->moodleapp}">Moodle App</a>
+* vergroot je de zichtbaarheid van je site door te worden opgenomen in de lijst met in jouw land geregistreerde Moodle-websites (optioneel).';
 $string['registerwithmoodleorginfoapp'] = 'Over de Moodle-app';
-$string['registerwithmoodleorginfosites'] = 'Andere sites in mijn land';
-$string['registerwithmoodleorginfostats'] = 'Moodle-statistieken';
+$string['registerwithmoodleorginfosites'] = 'Ontdek andere sites in mijn land';
+$string['registerwithmoodleorginfostats'] = 'Bekijk globale Moodle-statistieken';
 $string['registerwithmoodleorgremove'] = 'Je gaat je site afmelden. Als je doorgaat, heb je geen toegang meer tot belangrijke meldingen en beveiligingsmeldingen. Je gebruikers kunnen geen pushmeldingen van je site ontvangen naar hun mobiele Moodle-app. Je kunt je wel op elk moment opnieuw registreren. Weet je zeker dat je jouw site wilt afmelden?';
 $string['registerwithmoodleorgupdate'] = 'Update je site-registratie';
 $string['registrationconfirmed'] = 'Site-registratie bevestigd';
@@ -147,6 +152,27 @@ $string['sitelang'] = 'Taal';
 $string['sitelang_help'] = 'Wat is de hoofdtaal op je Moodle site?';
 $string['sitename'] = 'Naam';
 $string['sitename_help'] = 'De naam van de site zal getoond worden op de site lijst als de hub dat toestaat.';
+$string['siteorganisationtype'] = 'Organisatietype';
+$string['siteorganisationtype:charityornotforprofit'] = 'Liefdadigheid of non-profit';
+$string['siteorganisationtype:charterschool'] = 'Handvestschool';
+$string['siteorganisationtype:college'] = 'Hogeschool';
+$string['siteorganisationtype:collegedepartment'] = 'Hogeschoolafdeling';
+$string['siteorganisationtype:commercialcourseprovider'] = 'Commerciële opleidingsaanbieder';
+$string['siteorganisationtype:companydepartment'] = 'Bedrijfsafdeling';
+$string['siteorganisationtype:companyinternal'] = 'Bedrijfsintern';
+$string['siteorganisationtype:donotshare'] = 'Niet delen';
+$string['siteorganisationtype:government'] = 'Overheid';
+$string['siteorganisationtype:highschool'] = 'Middelbare school';
+$string['siteorganisationtype:highschooldepartment'] = 'Middelbare school afdeling';
+$string['siteorganisationtype:highschooldistrict'] = 'Middelbare school district';
+$string['siteorganisationtype:hospital'] = 'Ziekenhuis';
+$string['siteorganisationtype:independentteacher'] = 'Onafhankelijke lesgever';
+$string['siteorganisationtype:other'] = 'Andere';
+$string['siteorganisationtype:primaryschool'] = 'Basisschool';
+$string['siteorganisationtype:schooldistrict'] = 'Schooldistrict';
+$string['siteorganisationtype:universitydepartment'] = 'Universiteitsafdeling';
+$string['siteorganisationtype:wholeuniversity'] = 'Universiteit';
+$string['siteorganisationtype_help'] = 'Het delen van je organisatietype zal ons helpen om beter de noden te begrijpen van organisaties die Moodle gebruiken.';
 $string['sitephone'] = 'Telefoon';
 $string['sitephone_help'] = 'Je telefoonnummer zal enkel door de hubbeheerder gezien worden.';
 $string['siteprivacy'] = 'Site lijst';

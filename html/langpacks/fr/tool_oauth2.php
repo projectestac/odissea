@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'fr', version '4.4'.
+ * Strings for component 'tool_oauth2', language 'fr', version '4.5'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -93,15 +93,18 @@ $string['issuersetup'] = 'Instructions détaillées sur la configuration commune
 $string['issuersetuptype'] = 'Instructions détaillées sur la configuration du fournisseur OAuth 2 {$a}';
 $string['issuershowonloginpage'] = 'Afficher sur la page de connexion';
 $string['issuershowonloginpage_help'] = 'Si le plugin d’authentification OAuth 2 est activé, ce fournisseur d’identité sera mentionné sur la page de connexion pour permettre aux utilisateurs de se connecter via ce fournisseur.';
+$string['issuersmtpsystememail'] = 'Adresse de courriel SMTP';
+$string['issuersmtpsystememail_help'] = 'Si une adresse de courriel est indiquée, elle sera utilisée pour connecter un compte système pour l’envoi de courriels via SMTP. Ceci est requis par certains services OAuth 2 (p.ex. Microsoft). Veuillez consulter la documentation de votre service OAuth 2 pour savoir si cela est nécessaire.';
 $string['issuersservicesallow'] = 'Autoriser les services';
 $string['issuersservicesnotallow'] = 'Ne pas autoriser les services';
 $string['issuerusedforinternal'] = 'Services internes';
 $string['issuerusedforlogin'] = 'Connexion';
 $string['issuerusein'] = 'Ce service sera utilisé';
-$string['issuerusein_help'] = 'Les services OAuth 2 peuvent être utilisés pour certains services internes, sur la page de connexion ou sur les deux, si nécessaire.';
+$string['issuerusein_help'] = 'Les services OAuth 2 peuvent être utilisés pour certains services internes, sur la page de connexion, SMTP avec XOAUTH2, ou sur la page de connexion et des services internes, si nécessaire.';
 $string['issueruseineverywhere'] = 'Page de connexion et services internes';
 $string['issueruseininternalonly'] = 'Services internes uniquement';
 $string['issueruseinloginonly'] = 'Page de connexion uniquement';
+$string['issueruseinsmtpwithoauth'] = 'Seulement SMTP avec XOAUTH2';
 $string['linkedin_service'] = 'LinkedIn';
 $string['logindisplay'] = 'Afficher sur la page de connexion comme';
 $string['loginissuer'] = 'Permettre la connexion';

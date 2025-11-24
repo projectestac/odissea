@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'zh_cn', version '4.4'.
+ * Strings for component 'bigbluebuttonbn', language 'zh_cn', version '4.5'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -41,6 +41,7 @@ $string['bigbluebuttonbn:join'] = '加入 BigBlueButton 空间';
 $string['bigbluebuttonbn:managerecordings'] = '管理bigbluebuttonbn记录';
 $string['bigbluebuttonbn:protectrecordings'] = '保护录制';
 $string['bigbluebuttonbn:publishrecordings'] = '发布录制';
+$string['bigbluebuttonbn:seepresentation'] = '总是在活动页面上看到演示文件';
 $string['bigbluebuttonbn:unprotectrecordings'] = '取消对录制的保护';
 $string['bigbluebuttonbn:unpublishrecordings'] = '取消发布录制';
 $string['bigbluebuttonbn:view'] = '查看 BigBlueButton 空间';
@@ -199,6 +200,10 @@ $string['config_server_url'] = 'BigBlueButton服务器URL';
 $string['config_server_url_description'] = 'BigBlueButton 服务器的 URL。';
 $string['config_shared_secret'] = 'BigBlueButton共享密码';
 $string['config_shared_secret_description'] = 'BigBlueButton服务器的安全密钥。';
+$string['config_showpresentation_default'] = '在活动页面上显示演示文件';
+$string['config_showpresentation_default_description'] = '学生是否可以在上课前查看演示文件？此设置对具有“始终在活动页面上查看演示文件”功能的用户没有影响。';
+$string['config_showpresentation_editable'] = '“在活动页面上显示演示文件”选项';
+$string['config_showpresentation_editable_description'] = '活动设置中的选项，供教师选择是否向学生显示演示文件。';
 $string['config_uidelegation_enabled'] = '启用了UI授权';
 $string['config_uidelegation_enabled_description'] = '这些设置启用或禁用对BigBlueButton服务器的UI授权。';
 $string['config_userlimit'] = '用户限制';
@@ -369,6 +374,7 @@ $string['mod_form_field_recordings_html'] = '以普通HTML显示表格';
 $string['mod_form_field_recordings_imported'] = '仅显示导入的链接';
 $string['mod_form_field_recordings_preview'] = '显示录制预览';
 $string['mod_form_field_room_name'] = '房间名称';
+$string['mod_form_field_showpresentation'] = '在活动页面上显示演示文件';
 $string['mod_form_field_userlimit'] = '用户限制';
 $string['mod_form_field_userlimit_help'] = '会话中允许的最大用户数。设置为0以允许无限数量的用户。';
 $string['mod_form_field_voicebridge'] = '语音桥[####]';

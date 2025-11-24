@@ -9,7 +9,7 @@ $id = required_param('id', PARAM_INT);        // course
 $filterby = optional_param('filterby', '', PARAM_RAW);
 
 if (($course = $DB->get_record('course', array('id' => $id))) === false) {
-    print_error('Course ID is incorrect');
+    throw new moodle_exception('invalidcourseid');
 }
 
 require_course_login($course);
@@ -31,7 +31,6 @@ $filteroptionsparam       = '&amp;filterby=';
 $filteroptionsurlandparam = $filterselected = $filteroptionsurl.$filteroptionsparam;
 $filterselected          .= $filterby;
 $filteroptionsparam       = ($filterby != '')? $filteroptionsparam.$filterby : '';
-// ********** FI
 
 /// Get all the appropriate data
 

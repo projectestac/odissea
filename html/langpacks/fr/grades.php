@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'fr', version '4.4'.
+ * Strings for component 'grades', language 'fr', version '4.5'.
  *
  * @package     grades
  * @category    string
@@ -513,7 +513,7 @@ $string['min'] = 'Minimum';
 $string['minimum_show'] = 'Afficher la note minimale';
 $string['minimum_show_help'] = 'La note minimale est utilisée dans le calcul des notes et pondérations. Si elle n’est pas affichée, la note minimale est fixée à 0 et ne peut pas être modifiée.';
 $string['minmaxtouse'] = 'Notes minimale et maximale utilisées dans les calculs';
-$string['minmaxtouse_desc'] = 'Ce réglage détermine si, pour le calcul de la note affichée dans le carnet de notes, les notes maximale et minimale initiales (lorsque la note a été donnée) ou plutôt celles définies dans les réglages de l’élément d’évaluation seront utilisées. Il recommandé de modifier ce réglage en dehors des heures de pointe, car toutes les notes seront recalculées, ce qui chargera le serveur de manière importante.';
+$string['minmaxtouse_desc'] = 'Ce réglage détermine si, pour le calcul de la note affichée dans le carnet de notes, les notes maximale et minimale initiales (lorsque la note a été donnée) ou plutôt celles définies dans les réglages de l’élément d’évaluation seront utilisées. Il est recommandé de modifier ce réglage en dehors des heures de pointe, car toutes les notes seront recalculées, ce qui chargera le serveur de manière importante.';
 $string['minmaxtouse_help'] = 'Ce réglage détermine si, pour le calcul de la note affichée dans le carnet de notes, les notes maximale et minimale initiales (lorsque la note a été donnée) ou plutôt celles définies dans les réglages de l’élément d’évaluation seront utilisées.';
 $string['minmaxtouse_link'] = 'Grades_min_max';
 $string['minmaxupgradedgrades'] = 'Certaines notes ont été modifiées afin de résoudre une incohérence dans le carnet de notes, causée par une modification des notes minimale et maximale utilisées lors du calcul de la note affichée. Il est recommandé de passer en revue ces changements et de les confirmer.';
@@ -523,7 +523,9 @@ $string['missingitemtypeoreid'] = 'Clef de tableau (itemtype ou eid) manquante';
 $string['missingscale'] = 'Un barème doit être sélectionné';
 $string['mode'] = 'Mode';
 $string['modgrade'] = 'Note';
-$string['modgrade_help'] = 'Sélectionnez le type de note utilisée dans cette activité. Si « Barème » est choisi, vous pourrez sélectionner un barème dans le menu déroulant. Si « Point » est choisi, vous pourrez spécifier la note maximale pour cette activité.';
+$string['modgrade_help'] = '* Point - Une valeur numérique
+* Aucun - Feedback seulement
+* Barème - Un élément d’une liste';
 $string['modgradecantchangegradetype'] = 'Il n’est pas possible de modifier le type, car des notes existent déjà pour cet élément.';
 $string['modgradecantchangegradetypemsg'] = 'Des notes ont déjà été données, donc le type de note ne peut plus être modifié. Si vous voulez changer la note maximale, vous devez d’abord décider si vous voulez ou non adapter en conséquence les notes existantes.';
 $string['modgradecantchangegradetyporscalemsg'] = 'Des notes ont déjà été données, donc le type de note et le barème ne peuvent plus être modifiés.';
@@ -728,9 +730,9 @@ $string['recovergradesdefault'] = 'Récupérer par défaut les notes';
 $string['recovergradesdefault_help'] = 'Par défaut, récupérer les anciennes notes lors de la ré-inscription d’un participant à un cours.';
 $string['refreshpreview'] = 'Actualiser la prévisualisation';
 $string['regradeanyway'] = 'Recalculer malgré tout';
-$string['removeallcoursegrades'] = 'Supprimer toutes les notes';
+$string['removeallcoursegrades'] = 'Toutes les notes';
 $string['removeallcoursegrades_help'] = 'Si ce réglage est activé, tous les éléments d’évaluation et les notes ajoutées manuellement au carnet de notes seront supprimés, ainsi que les notes et autres données associées aux notes modifiées, exclues, cachées et verrouillées. Seuls les éléments d’évaluation et notes associés avec des activités persisteront.';
-$string['removeallcourseitems'] = 'Supprimer tous les éléments et catégories';
+$string['removeallcourseitems'] = 'Tous les éléments et catégories';
 $string['removeallcourseitems_help'] = 'Si ce réglage est activé, toutes les catégories et tous les éléments d’évaluation ajoutés manuellement au carnet de notes seront supprimés, ainsi que les notes et autres données associées aux notes modifiées, exclues, cachées et verrouillées. Seuls les éléments d’évaluation associés avec des activités persisteront.';
 $string['report'] = 'Rapport';
 $string['reportdefault'] = 'Réglage par défaut du rapport ({$a})';

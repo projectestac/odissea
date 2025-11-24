@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'gl', version '4.4'.
+ * Strings for component 'competency', language 'gl', version '4.5'.
  *
  * @package     competency
  * @category    string
@@ -29,6 +29,8 @@ $string['allchildrenarecomplete'] = 'Todos os descendentes están completados';
 $string['competencies'] = 'Competencias';
 $string['competenciesarenotenabled'] = 'As competencias non están activadas';
 $string['competenciessettings'] = 'Axustes das competencias';
+$string['competency'] = 'Competencia';
+$string['competencyframework'] = 'Marco de competencia';
 $string['completeplanstask'] = 'Completar os plans de aprendizaxe que estean pendentes';
 $string['coursecompetencyoutcome_complete'] = 'Completar a competencia';
 $string['coursecompetencyoutcome_evidence'] = 'Anexar evidencia';
@@ -163,8 +165,10 @@ $string['privacy:metadata:usermodified'] = 'O usuario que creou ou modificou o r
 $string['privacy:path:plans'] = 'Plans de aprendizaxe';
 $string['privacy:path:relatedtome'] = 'Relacionado comigo';
 $string['privacy:path:userevidence'] = 'Evidencia de aprendizaxe previo';
+$string['proficient'] = 'Competente';
 $string['pushcourseratingstouserplans'] = 'Enviar as puntuacións do curso aos plans de aprendizaxe individuais';
 $string['pushcourseratingstouserplans_desc'] = 'Valor predeterminado para o axuste do curso para actualizar plans individuais de aprendizaxe cando se puntúan as competencias do curso.';
+$string['rating'] = 'Puntuación';
 $string['syncplanscohorts'] = 'Sincronizar plans dende modelos de círculos de plan de aprendizaxe';
 $string['taxonomy_behaviour'] = 'Comportamento';
 $string['taxonomy_competency'] = 'Competencia';

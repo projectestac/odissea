@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'fr', version '4.4'.
+ * Strings for component 'tool_generator', language 'fr', version '4.5'.
  *
  * @package     tool_generator
  * @category    string
@@ -59,6 +59,9 @@ $string['error_nonexistingcourse'] = 'Le cours indiqué n’existe pas';
 $string['error_nopageinstances'] = 'Le cours sélectionné ne contient pas de pages';
 $string['error_notdebugging'] = 'Non disponible sur ce serveur, car le niveau de débogage n’est pas défini sur DEVELOPER';
 $string['error_nouserspassword'] = 'Vous devez définir $CFG->tool_generator_users_password dans le fichier config.php, afin de pouvoir générer le plan de test';
+$string['execute'] = 'Lancer';
+$string['execute_cleanup'] = 'Scénarios de nettoyage';
+$string['execute_scenarios'] = 'Scénarios de test';
 $string['fullname'] = 'Cours de test : {$a->size}';
 $string['maketestcourse'] = 'Créer des cours de test';
 $string['maketestplan'] = 'Créer un plan de test JMeter';
@@ -91,6 +94,7 @@ $string['sitesize_4'] = 'XL (~10 Go ; 1065 cours, création en ~5 h)';
 $string['sitesize_5'] = 'XXL (~20 Go ; 4177 cours, création in ~10 h)';
 $string['size'] = 'Taille du cours';
 $string['smallfiles'] = 'Petits fichiers';
+$string['step_example'] = 'Exemple d’étape :';
 $string['targetcourse'] = 'Cours cible du test';
 $string['testplanexplanation'] = 'Cet outil crée un plan de test JMeter, ainsi que le fichier des accréditations utilisateur.
 
@@ -117,7 +121,9 @@ $string['testscenario'] = 'Créer des scénarios de test';
 $string['testscenario_description'] = 'La création de scénarios de test utilise une syntaxe de fichiers de feature limitée pour créer tous les éléments nécessaire pour lancer un test manuellement.';
 $string['testscenario_errorparsing'] = 'Erreur lors de l’analyse du fichier de festure';
 $string['testscenario_file'] = 'Fichier de feature';
-$string['testscenario_filedesc'] = 'Le fichier de feature déposé ne peut contenir que des scénarios avec des étapes de core_data_generator. Il n’est pas encore compatible avec les esquisses de scénarios. Tous les scénarios seront exécutés en même temps, mais les étapes d’arrière-plan seront ignorées.';
+$string['testscenario_filedesc'] = 'Le fichier de fonctionnalité déposé ne peut contenir que des scénarios avec des étapes de core_data_generator ou d’autres étapes spécifiques ne nécessitant pas selenium. Tous les scénarios seront exécutés immédiatement, à l’exception de ceux qui comporte le tag @cleanup.';
+$string['testscenario_filedesc_cleanup'] = 'Les scénarios comportant le tag @cleanup seront lancés uniquement quand le réglage « Execute » a la valeur « Cleanup ». Pour lancer le nettoyage en ligne de commande, utiliser l’option --cleanup.';
+$string['testscenario_filedesc_list'] = 'Voici la liste des étapes pouvant être utilisées dans le fichier de scénario de test :';
 $string['testscenario_invalidfile'] = 'Le fichier de format n’est pas valide ou contient des étapes non valides.';
 $string['testscenario_invalidstep'] = 'Étape inconnue. La création de scénarios de test n’accepte que des étapes du générateur.';
 $string['testscenario_nosteps'] = 'Il n’y a pas d’étape à effectuer dans le fichier.';

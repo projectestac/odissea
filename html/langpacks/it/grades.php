@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'it', version '4.4'.
+ * Strings for component 'grades', language 'it', version '4.5'.
  *
  * @package     grades
  * @category    string
@@ -512,7 +512,9 @@ $string['missingitemtypeoreid'] = 'La chiave dell\'array (itemtype oppure eid) �
 $string['missingscale'] = 'Deve essere scelta la scala';
 $string['mode'] = 'Moda';
 $string['modgrade'] = 'Voto';
-$string['modgrade_help'] = 'Il tipo di valutazione da usare per l\'attività. Scegliendo \'scala\' sarà possibile selezionare una scala dal menù a discesa \'scala\'. Scegliendo \'punteggio\', sarà possibile impostare il punteggio massimo dell\'attività.';
+$string['modgrade_help'] = '* Punteggio - Un valore numerico
+* Nessuno - Solo feedback
+* Scala - Un elemento da un elenco';
 $string['modgradecantchangegradetype'] = 'Non è possibile modificare il tipo poiché esistono già valutazioni per questo elemento';
 $string['modgradecantchangegradetypemsg'] = 'Non è possibile modificare il tipo di valutazione poiché alcune valutazione sono già state rilasciate. Se desideri modificare il punteggio massimo, devi prima decidere se cambiare la scala delle valutazioni esistenti.';
 $string['modgradecantchangegradetyporscalemsg'] = 'Non è possibile modificare il tipo di valutazione e la scala poiché alcune valutazione sono già state rilasciate.';
@@ -715,9 +717,9 @@ $string['recovergradesdefault'] = 'Default per il recupero delle valutazioni';
 $string['recovergradesdefault_help'] = 'Recupera le valutazioni precedenti quando un utente si iscrive nuovamente in un corso';
 $string['refreshpreview'] = 'Aggiorna anteprima';
 $string['regradeanyway'] = 'Rivaluta comunque';
-$string['removeallcoursegrades'] = 'Elimina tutte le valutazioni';
+$string['removeallcoursegrades'] = 'Tutte le valutazioni';
 $string['removeallcoursegrades_help'] = 'Selezionando la casella, saranno eliminati tutti gli elementi di valutazione manualmente aggiunti al registro valutatore e tutte le valutazioni modificate, escluse, nascoste o bloccate. Saranno mantenute solo le valutazioni associate alle attività.';
-$string['removeallcourseitems'] = 'Elimina tutti gli elementi e le categorie';
+$string['removeallcourseitems'] = 'Tutti gli elementi e le categorie';
 $string['removeallcourseitems_help'] = 'Selezionando la casella, saranno eliminati tutti gli elementi di valutazione e le categorie manualmente aggiunti al registro valutatore e tutte le valutazioni modificate, escluse, nascoste o bloccate. Saranno mantenute solo le valutazioni associate alle attività.';
 $string['report'] = 'Report';
 $string['reportdefault'] = 'Report default ({$a})';

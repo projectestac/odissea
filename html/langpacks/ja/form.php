@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ja', version '4.4'.
+ * Strings for component 'form', language 'ja', version '4.5'.
  *
  * @package     form
  * @category    string
@@ -41,6 +41,7 @@ $string['err_minlength'] = 'あなたはここに少なくとも {$a->format} �
 $string['err_nonzero'] = 'あなたはここにゼロから始まらない数字を入力する必要があります。';
 $string['err_nopunctuation'] = 'あなたはここに句読点以外の文字を入力する必要があります。';
 $string['err_numeric'] = 'あなたはここに数字を入力する必要があります。';
+$string['err_positiveduration'] = 'この期間はマイナスにできません。';
 $string['err_positiveint'] = 'あなたはここにゼロより大きな整数を入力する必要があります。';
 $string['err_rangelength'] = 'あなたはここに {$a->format[0]} から {$a->format[1]} 文字を入力する必要があります。';
 $string['err_required'] = 'あなたはここに値を入力する必要があります。';

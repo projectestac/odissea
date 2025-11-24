@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ca', version '4.4'.
+ * Strings for component 'question', language 'ca', version '4.5'.
  *
  * @package     question
  * @category    string
@@ -316,7 +316,6 @@ $string['nocate'] = 'No es troba la categoria {$a} (!)';
 $string['noconditionspecified'] = 'Especifiqueu una condició';
 $string['nopermissionadd'] = 'No teniu permís per a afegir preguntes aquí.';
 $string['nopermissionedit'] = 'No teniu permís per editar preguntes des d\'aquí.';
-$string['nopermissionmove'] = 'No teniu permisos per desplaçar preguntes des d\'aquí. Heu de desar la pregunta en aquesta categoria o desar-la com a pregunta nova.';
 $string['noprobs'] = 'No s\'han trobat problemes en la vostra base de dades de preguntes.';
 $string['noquestionbanks'] = 'No s\'ha trobat cap connector del banc de preguntes.';
 $string['noquestions'] = 'No s\'han trobat preguntes que puguin ser exportades. Assegureu-vos que seleccioneu una categoria d\'exportació que contingui preguntes.';
@@ -406,7 +405,11 @@ $string['questionbehavioursorderexplained'] = 'Introduïu una llista de comporta
 $string['questioncategories'] = 'Categories de preguntes';
 $string['questioncategory'] = 'Categoria de preguntes';
 $string['questioncatsfor'] = 'Categories de preguntes en «{$a}»';
+$string['questiondefaultssave'] = 'Desa les opcions de pregunta com a valors predeterminats de les preferències de l\'usuari';
+$string['questiondefaultssave_desc'] = 'Si les opcions de pregunta com ara «Nota per defecte», «Una o diverses respostes?», etc., s\'han de desar com a preferències de l\'usuari quan s\'envia el formulari d\'edició de preguntes, per utilitzar-les com a valors per defecte la pròxima vegada que l\'usuari accedeixi al formulari.';
 $string['questiondoesnotexist'] = 'Aquesta pregunta no existeix';
+$string['questionediting'] = 'Edició de preguntes';
+$string['questionediting_desc'] = 'Aquesta configuració s\'aplica als formularis d\'edició de preguntes.';
 $string['questionformtagheader'] = '{$a} etiquetes';
 $string['questionidmismatch'] = 'Identificadors de preguntes desajustats';
 $string['questionloaderror'] = 'No s\'han pogut carregar les opcions de la pregunta.';

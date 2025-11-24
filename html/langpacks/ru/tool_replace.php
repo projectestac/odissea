@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'ru', version '4.4'.
+ * Strings for component 'tool_replace', language 'ru', version '4.5'.
  *
  * @package     tool_replace
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['additionalskiptables'] = 'Дополнительно пропускаемые таблицы';
+$string['additionalskiptables'] = 'Пропускать вспомогательные таблицы';
 $string['additionalskiptables_desc'] = 'Список таблиц (разделенных запятыми), которые следует пропускать при запуске поиска и замены в базе данных.';
 $string['cannotfit'] = 'Замена длиннее оригинала и сокращение не разрешено. Продолжение невозможно.';
 $string['disclaimer'] = 'Я понимаю риски этой операции';

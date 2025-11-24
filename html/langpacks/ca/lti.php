@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'ca', version '4.4'.
+ * Strings for component 'lti', language 'ca', version '4.5'.
  *
  * @package     lti
  * @category    string
@@ -277,7 +277,7 @@ Les eines externes diferiran en els recursos URL en alguns aspectes:
 * **Seguretat** — Les configuracions de les eines externes creen relacions de confiança entre Moodle i  l\'eina; permeten una comunicació segura entre aquests.';
 $string['modulename_link'] = 'mod/lti/view';
 $string['modulenameplural'] = 'Eines externes';
-$string['modulenamepluralformatted'] = 'Instàncies';
+$string['modulenamepluralformatted'] = 'Eines externes';
 $string['name'] = 'Nom';
 $string['never'] = 'Mai';
 $string['new_window'] = 'Finestra nova';

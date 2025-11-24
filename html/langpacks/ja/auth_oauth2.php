@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'ja', version '4.4'.
+ * Strings for component 'auth_oauth2', language 'ja', version '4.5'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -39,7 +39,8 @@ $string['confirmaccountemail'] = '{$a->fullname} さん
 
 ほとんどのメールプログラムではあなたがクリックできる青いリンクとして表示されているはずです。クリックできない場合、あなたのウェブブラウザウィンドウのアドレス欄にアドレスをコピー＆ペーストしてください。
 
-分からない場合、サイト管理者 ( {$a->admin}) にご連絡ください。
+分からないことがある場合、サイト管理者にご連絡ください。
+{$a->admin}
 
 あなたがこれを完了しない場合、他の誰かがあなたのアカウントの情報取得を試みる場合があります。すぐにサイト管理者にご連絡ください。';
 $string['confirmaccountemailsubject'] = '{$a}: アカウント確認';
@@ -55,7 +56,8 @@ $string['confirmlinkedloginemail'] = '{$a->fullname} さん
 
 ほとんどのメールプログラムではあなたがクリックできる青いリンクとして表示されているはずです。クリックできない場合、あなたのウェブブラウザウィンドウのアドレス欄にアドレスをコピー＆ペーストしてください。
 
-分からない場合、サイト管理者 ( {$a->admin}) にご連絡ください。
+分からないことがある場合、サイト管理者にご連絡ください。
+{$a->admin}
 
 あなたがこれを完了しない場合、他の誰かがあなたのアカウントの情報取得を試みる場合があります。すぐにサイト管理者にご連絡ください。';
 $string['confirmlinkedloginemailsubject'] = '{$a}: リンクログイン確認';

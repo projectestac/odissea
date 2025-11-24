@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_seb', language 'ro', version '4.4'.
+ * Strings for component 'quizaccess_seb', language 'ro', version '4.5'.
  *
  * @package     quizaccess_seb
  * @category    string
@@ -94,6 +94,7 @@ $string['seb:manage_seb_allowedbrowserexamkeys'] = 'Schimbați setarea testului 
 $string['seb:manage_seb_allowreloadinexam'] = 'Schimbați setarea testului SEB: permiteți reîncărcarea';
 $string['seb:manage_seb_allowspellchecking'] = 'Modificați setarea testului SEB: activați verificarea ortografică';
 $string['seb:manage_seb_allowuserquitseb'] = 'Modificați setarea testului SEB: permiteți ieșirea';
+$string['seb:manage_seb_configuremanually'] = 'Modificați setările SEB pentru test: Selectați configurarea manuală';
 $string['seb:manage_seb_enableaudiocontrol'] = 'Schimbați setarea testului SEB: activați controlul audio';
 $string['seb:manage_seb_expressionsallowed'] = 'Modificați setarea testului SEB: sunt permise expresii simple';
 $string['seb:manage_seb_expressionsblocked'] = 'Modificați setarea testului SEB: expresii simple blocate';
@@ -112,6 +113,7 @@ $string['seb:manage_seb_showtime'] = 'Schimbați setarea testului SEB: Afișați
 $string['seb:manage_seb_showwificontrol'] = 'Schimbați setarea testului SEB: Afișați controlul Wi-Fi';
 $string['seb:manage_seb_templateid'] = 'Schimbați setarea testului SEB: selectați șablonul SEB';
 $string['seb:manage_seb_userconfirmquit'] = 'Schimbați setarea testului SEB: confirmați la ieșire';
+$string['seb:manage_seb_usesebclientconfig'] = 'Moificați setările SEB pentru test: Folosiți configurarea clientului SEB';
 $string['seb:managetemplates'] = 'Gestionați șabloanele de configurare SEB';
 $string['seb_activateurlfiltering'] = 'Activați filtrarea adreselor URL';
 $string['seb_activateurlfiltering_help'] = 'Dacă este activată, adresele URL vor fi filtrate la încărcarea paginilor web. Setul de filtrare trebuie definit mai jos.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_lpmonitoring', language 'ro', version '4.4'.
+ * Strings for component 'report_lpmonitoring', language 'ro', version '4.5'.
  *
  * @package     report_lpmonitoring
  * @category    string

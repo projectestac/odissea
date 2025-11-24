@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ca', version '4.4'.
+ * Strings for component 'feedback', language 'ca', version '4.5'.
  *
  * @package     feedback
  * @category    string
@@ -60,10 +60,10 @@ $string['completedon'] = 'S\'ha completat el {$a}';
 $string['completiondetail:submit'] = 'Tramet la retroalimentació';
 $string['completionsubmit'] = 'Mostra com a completada si s\'ha tramès la retroalimentació';
 $string['configallowfullanonymous'] = 'Si habiliteu aquesta opció, els usuaris podran completar una activitat de retroalimentació a la pàgina principal sense necessitat d\'iniciar sessió.';
-$string['confirmdeleteentry'] = 'Esteu segur de voler suprimir aquesta entrada?';
-$string['confirmdeleteitem'] = 'Esteu segurs de voler suprimir aquest element?';
-$string['confirmdeletetemplate'] = 'Esteu segur de voler suprimir aquesta plantilla?';
-$string['confirmusetemplate'] = 'Esteu segur de voler utilitzar aquesta plantilla?';
+$string['confirmdeleteentry'] = 'Confirmeu que voleu suprimir aquesta entrada?';
+$string['confirmdeleteitem'] = 'Confirmeu que voleu suprimir aquest element?';
+$string['confirmdeletetemplate'] = 'Confirmeu que voleu suprimir aquesta plantilla?';
+$string['confirmusetemplate'] = 'Confirmeu que voleu utilitzar aquesta plantilla?';
 $string['continue_the_form'] = 'Continueu responent les preguntes';
 $string['count_of_nums'] = 'Recompte de nombres';
 $string['courseid'] = 'ID del curs';
@@ -176,7 +176,7 @@ Les activitats de retroalimentació es poden utilitzar:
 * Per a enquestes a visitants sobre opcions de cursos, polítiques de la institució educativa, etc.
 * Per a enquestes contra l\'assetjament escolar on els estudiants puguin informar sobre incidències de manera anònima.';
 $string['modulename_link'] = 'mod/feedback/view';
-$string['modulenameplural'] = 'Retroalimentació';
+$string['modulenameplural'] = 'Retroaccions';
 $string['move_item'] = 'Mou aquesta pregunta';
 $string['multichoice'] = 'Opcions múltiples';
 $string['multichoice_values'] = 'Valors de les opcions múltiples';

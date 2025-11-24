@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ja', version '4.4'.
+ * Strings for component 'survey', language 'ja', version '4.5'.
  *
  * @package     survey
  * @category    string
@@ -191,8 +191,8 @@ $string['collespname'] = 'COLLES (要望)';
 $string['completiondetail:submit'] = '回答を送信する';
 $string['completionsubmit'] = '提出する';
 $string['customintro'] = '説明';
-$string['deleteallanswers'] = 'すべての調査回答を削除する';
-$string['deleteanalysis'] = '回答分析を削除する';
+$string['deleteallanswers'] = 'すべての調査回答';
+$string['deleteanalysis'] = '回答分析';
 $string['done'] = '完了';
 $string['download'] = 'ダウンロード';
 $string['downloadexcel'] = 'Excelフォーマットでダウンロードする';

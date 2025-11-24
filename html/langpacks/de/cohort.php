@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'de', version '4.4'.
+ * Strings for component 'cohort', language 'de', version '4.5'.
  *
  * @package     cohort
  * @category    string
@@ -49,7 +49,10 @@ $string['currentusers'] = 'Aktuelle Nutzer/innen';
 $string['currentusersmatching'] = 'Aktuelle passende Nutzer/innen';
 $string['defaultcontext'] = 'Standardkontext';
 $string['delcohort'] = 'Globale Gruppe löschen';
+$string['delcohortsconfirm'] = 'Dies löscht die ausgewählten globalen Gruppen und alle damit verbundenen Daten.';
+$string['delcohortssuccess'] = 'Gelöschte ausgewählte globale Gruppen';
 $string['delconfirm'] = 'Dies löscht die globale Gruppe \'{$a}\'  und alle damit verbundenen Daten.';
+$string['delsuccess'] = 'Gelöschte globale Gruppen';
 $string['description'] = 'Beschreibung';
 $string['displayedrows'] = '{$a->displayed} Zeilen von {$a->total} angezeigt';
 $string['duplicateidnumber'] = 'Globale Gruppe mit dieser ID existiert bereits.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attendance', language 'eu', version '4.4'.
+ * Strings for component 'attendance', language 'eu', version '4.5'.
  *
  * @package     attendance
  * @category    string
@@ -378,6 +378,7 @@ $string['notmember'] = 'ez da partaidea';
 $string['notset'] = 'ezarri gabe';
 $string['nounmarkedstatusset'] = 'Ez dago markatu gabekoentzako egoerarik zehaztuta saio honetan (id:{$a->sessionid}), hau konpontzeko <a href="{$a->url}">Egoera-multzoa</a> eguneratu ezazu.';
 $string['noupgradefromthisversion'] = 'Bertaratzearen erregistroaren modulua ezin da eguneratu instalatuta daukazun attforblock bertsiotik. - attforblock ezabatu edo bere bertsio berrienera eguneratu ezazu mesedez bertaratzearen erregistroaren modulua instalatu baino lehen.';
+$string['nousers'] = 'Ez da aurkitu bertaratzea erregistratzeko matrikulatutako erabiltzailerik.';
 $string['numsessions'] = 'Saio kopurua';
 $string['numsessionstaken'] = 'Jasotako saio kopurua';
 $string['olddate'] = 'Data zaharra';
@@ -443,7 +444,7 @@ $string['privacy:metadata:timetaken'] = 'Ikaslearen bertaratzea jaso zeneko unea
 $string['privacy:metadata:userid'] = 'Jakinarazpena bidali zaioneko erabiltzailearen IDa.';
 $string['processingfile'] = 'Fitxategia prozesatzen';
 $string['qr_cookie_error'] = 'QR saioa iraungi da.';
-$string['qr_pass_wrong'] = 'QR pasahitza okerra da edo iraungi da.';
+$string['qr_pass_wrong'] = 'QR kodea iraungi da, QR kodea berriro eskaneatu ezazu, mesedez.';
 $string['qrcode'] = 'QR kodea';
 $string['qrcodeandpasswordheader'] = 'Eskaneatu azpiko QR kodea edo erabili azpiko zerrendako pasahitza zure bertaratzea erregistratzeko';
 $string['qrcodeheader'] = 'Eskaneatu azpiko QR kodea zure bertaratzearen erregistroa egiteko';

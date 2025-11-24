@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'nl', version '4.4'.
+ * Strings for component 'report_security', language 'nl', version '4.5'.
  *
  * @package     report_security
  * @category    string
@@ -127,6 +127,7 @@ $string['check_unsecuredataroot_error'] = 'Je dataroot-map <code>{$a}</code> sta
 $string['check_unsecuredataroot_name'] = 'Onveilige dataroot';
 $string['check_unsecuredataroot_ok'] = 'De dataroot-map mag niet toegankelijk zijn vanaf het internet.';
 $string['check_unsecuredataroot_warning'] = 'Je dataroot-map <code>{$a}</code> staat op de verkeerde plaats en kan toegankelijk zijn vanaf het internet!';
+$string['check_upgradefile_info'] = 'Upgrade notitiebestanden zouden niet publiek beschikbaar mogen zijn';
 $string['check_vendordir_details'] = '<p>De map <em>{$a->path}</em> bevat verschillende externe bibliotheken en hun afhankelijkheden, typisch geïnstalleerd door de PHP Composer. Deze bibliotheken kunnen nodig zijn voor lokale Moodle-ontwikkeling, zoals voor het installeren van het PHPUnit framework. Ze zijn niet nodig om een Moodle-site in productie te gebruiken en kunnen mogelijk gevaarlijke code bevatten die je site kwetsbaar maakt voor aanvallen.</p><p>Het is sterk aangeraden om deze map te verwijderen als je site bereikbaar is via een publieke URL of om om minstens de toegang ertoe te beveiligen via de configuratie van je webserver.</p>';
 $string['check_vendordir_info'] = 'De vendor-map zou niet mogen bestaan op publieke sites.';
 $string['check_vendordir_name'] = 'Vendor-map';

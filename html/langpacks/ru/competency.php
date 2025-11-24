@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'ru', version '4.4'.
+ * Strings for component 'competency', language 'ru', version '4.5'.
  *
  * @package     competency
  * @category    string
@@ -29,6 +29,8 @@ $string['allchildrenarecomplete'] = 'Все дочерние компетенц�
 $string['competencies'] = 'Компетенции';
 $string['competenciesarenotenabled'] = 'Компетенции не включены.';
 $string['competenciessettings'] = 'Настройки компетенций';
+$string['competency'] = 'Компетенция';
+$string['competencyframework'] = 'Фреймворк компетенций';
 $string['completeplanstask'] = 'Выполнить учебные планы, по которым подошел срок';
 $string['coursecompetencyoutcome_complete'] = 'Отметить компетенцию, как достигнутую';
 $string['coursecompetencyoutcome_evidence'] = 'Прикрепить доказательство';
@@ -163,8 +165,10 @@ $string['privacy:metadata:usermodified'] = 'Пользователь, созда
 $string['privacy:path:plans'] = 'Учебные планы';
 $string['privacy:path:relatedtome'] = 'Относящиеся ко мне';
 $string['privacy:path:userevidence'] = 'Доказательства предыдущего обучения';
+$string['proficient'] = 'Освоено';
 $string['pushcourseratingstouserplans'] = 'Передавать оценки курсов в индивидуальные учебные планы';
 $string['pushcourseratingstouserplans_desc'] = 'Значение по умолчанию для настройки курса при обновлении индивидуальных учебных планов если оценены компетенции курса.';
+$string['rating'] = 'Рейтинг';
 $string['syncplanscohorts'] = 'Синхронизировать планы из глобальных групп шаблонов учебных планов';
 $string['taxonomy_behaviour'] = 'Поведение';
 $string['taxonomy_competency'] = 'Компетенция';
@@ -197,6 +201,7 @@ $string['usercommentedonaplanhtml'] = '<p>{$a->fullname} оставил(а) ко
 <p>Смотрите: <a href="{$a->url}">{$a->urlname}</a>.</p>';
 $string['usercommentedonaplansmall'] = '{$a->fullname} оставил(а) комментарий к учебному плану «{$a->plan}».';
 $string['usercommentedonaplansubject'] = '{$a} оставил(а) комментарий к учебному плану.';
+$string['usercompetency'] = 'Компетентность пользователя';
 $string['usercompetencystatus_idle'] = 'Не используется';
 $string['usercompetencystatus_inreview'] = 'В процессе пересмотра';
 $string['usercompetencystatus_waitingforreview'] = 'Ожидает пересмотра';

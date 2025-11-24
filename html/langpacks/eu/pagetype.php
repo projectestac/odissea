@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pagetype', language 'eu', version '4.4'.
+ * Strings for component 'pagetype', language 'eu', version '4.5'.
  *
  * @package     pagetype
  * @category    string
@@ -39,7 +39,7 @@ $string['page-mod-x-view'] = 'Jarduera-modulu nagusiaren edozein orri';
 $string['page-my-index'] = 'Aginte-panela';
 $string['page-report-x'] = 'Edozein txosten-orri';
 $string['page-site-index'] = 'Hasiera-orria soilik';
-$string['page-site-x'] = 'Gunearen goragoko mailaren edozein orri';
+$string['page-site-x'] = 'Gunearen maila goreneko edozein orri';
 $string['page-user-profile'] = 'Erabiltzaileen profil-orrietan soilik';
 $string['page-user-view'] = 'Erabiltzaileen profil-orrietan soilik';
 $string['page-user-x'] = 'Erabiltzaileen orri guztiak';

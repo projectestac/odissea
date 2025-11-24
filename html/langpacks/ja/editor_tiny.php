@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tiny', language 'ja', version '4.4'.
+ * Strings for component 'editor_tiny', language 'ja', version '4.5'.
  *
  * @package     editor_tiny
  * @category    string
@@ -236,6 +236,7 @@ $string['tiny:indentation'] = 'インデント';
 $string['tiny:indian_rupee_sign'] = 'インドルピー記号';
 $string['tiny:inline'] = 'インライン';
 $string['tiny:insert'] = '挿入';
+$string['tiny:insert_accordion'] = 'アコーディオンを挿入する';
 $string['tiny:insert_column_after'] = '列を直後に挿入';
 $string['tiny:insert_column_before'] = '列を直前に挿入';
 $string['tiny:insert_datetime'] = '日付/時刻を挿入する';

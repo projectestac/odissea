@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ja', version '4.4'.
+ * Strings for component 'workshop', language 'ja', version '4.5'.
  *
  * @package     workshop
  * @category    string
@@ -217,7 +217,7 @@ $string['modulename_help'] = 'ワークショップ活動モジュールでは�
 
 学生はワードプロセッサで処理したドキュメント、スプレッドシートのようなデジタルコンテンツ (ファイル) を提出することができます。また、テキストエディタを使用してフィールドに直接テキストを入力することができます。
 
-提出物は教師によって定義された複数クライテリアの評価フォームを使用して評価されます。相互評価手順および評価フォームの理解は教師から提供される練習提出物および評価例によって練習することができます。学生には1つまたはそれ以上のクラスメートの提出物を評価する機会が与えられます。必要であれば提出およびレビューを匿名にすることもできます。
+提出物は教師により定義された複数クライテリアの評価フォームを使用して評価されます。相互評価手順および評価フォームの理解は教師から提供される練習提出物および評価例により練習することができます。学生には1つまたはそれ以上のクラスメートの提出物を評価する機会が与えられます。必要であれば提出およびレビューを匿名にすることもできます。
 
 ワークショップ活動において学生は2つの評点を取得することになります - 「自分の提出物」に対する評点および「クラスメートの提出物の評価」に対する評点です。両評点は評定表に記録されます。';
 $string['modulename_link'] = 'mod/workshop/view';
@@ -323,11 +323,11 @@ $string['reassess'] = '再評価';
 $string['receivedgrades'] = '与えられた評点';
 $string['recentassessments'] = 'ワークショップ評価:';
 $string['recentsubmissions'] = 'ワークショップ提出:';
-$string['resetassessments'] = 'すべての評価を削除する';
+$string['resetassessments'] = 'すべての評価';
 $string['resetassessments_help'] = 'あなたは提出に影響を及ぼさずに割り当てられた評価のみ削除するよう選択することができます。提出が削除される場合、その評価は暗黙のうちに削除され、このオプションは無視されます。これには提出例の評価も含むことに留意してください。';
 $string['resetphase'] = 'セットアップフェーズにスイッチする';
 $string['resetphase_help'] = 'この設定を有効にした場合、すべてのワークショップは初期セットアップフェーズに入ります。';
-$string['resetsubmissions'] = 'すべての提出を削除する';
+$string['resetsubmissions'] = 'すべての提出';
 $string['resetsubmissions_help'] = 'すべての提出およびその評価が削除されます。これは提出例に影響を及ぼしません。';
 $string['saveandclose'] = '保存して閉じる';
 $string['saveandcontinue'] = '保存して編集を続ける';

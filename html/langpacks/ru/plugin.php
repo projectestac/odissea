@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'ru', version '4.4'.
+ * Strings for component 'plugin', language 'ru', version '4.5'.
  *
  * @package     plugin
  * @category    string
@@ -53,6 +53,8 @@ $string['err_response_format_version'] = 'Непредвиденная верс�
 $string['err_response_http_code'] = 'Невозможно получить информацию о доступных обновлениях - непредвиденный код ответа HTTP.';
 $string['filterall'] = 'Отображать все';
 $string['filtercontribonly'] = 'Отображать только дополнения';
+$string['filtermissingonly'] = 'Показать только отсутствующие на диске';
+$string['filternewpluginsonly'] = 'Показывать только плагины, которые можно установить';
 $string['filterupdatesonly'] = 'Отображать только с доступными обновлениями';
 $string['incompatibleversion'] = 'Несовместимая версия Moodle: {$a}';
 $string['isenabled'] = 'Разрешить?';
@@ -112,6 +114,10 @@ $string['status_uptodate'] = 'Установлен';
 $string['supportedconversions'] = 'Поддерживаемые преобразования документов';
 $string['supportedmoodleversions'] = 'Поддерживаемые версии Moodle';
 $string['systemname'] = 'Идентификатор';
+$string['type_aiplacement'] = 'Плагин размещения ИИ';
+$string['type_aiplacement_plural'] = 'Плагины размещения ИИ';
+$string['type_aiprovider'] = 'Плагин «Поставщик искусственного интеллекта»';
+$string['type_aiprovider_plural'] = 'Плагины «Поставщик искусственного интеллекта»';
 $string['type_antivirus'] = 'Антивирусный плагин';
 $string['type_antivirus_plural'] = 'Антивирусные плагины';
 $string['type_auth'] = 'Метод аутентификации';
@@ -194,6 +200,8 @@ $string['type_repository'] = 'Хранилище';
 $string['type_repository_plural'] = 'Хранилища';
 $string['type_search'] = 'Поисковая машина';
 $string['type_search_plural'] = 'Поисковые машины';
+$string['type_smsgateway'] = 'СМС-шлюз';
+$string['type_smsgateway_plural'] = 'СМС-шлюзы';
 $string['type_theme'] = 'Тема оформления';
 $string['type_theme_plural'] = 'Темы оформления';
 $string['type_tool'] = 'Инструмент администрирования';

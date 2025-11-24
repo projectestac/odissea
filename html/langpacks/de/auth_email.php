@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_email', language 'de', version '4.4'.
+ * Strings for component 'auth_email', language 'de', version '4.5'.
  *
  * @package     auth_email
  * @category    string

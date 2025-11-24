@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'ca', version '4.4'.
+ * Strings for component 'hub', language 'ca', version '4.5'.
  *
  * @package     hub
  * @category    string
@@ -170,6 +170,7 @@ $string['siteversion_help'] = 'La versió de Moodle d\'aquest lloc.';
 $string['skipregistration'] = 'Omet';
 $string['subject'] = 'Tema';
 $string['subject_help'] = 'Selecciona el tema principal, que cobreix el curs.';
+$string['time_range'] = 'Interval de temps';
 $string['type'] = 'Compartits';
 $string['unregister'] = 'Esborra el registre';
 $string['unregistrationerror'] = 'S\'ha produït un error quan el lloc ha intentat esborrar el registre des de Moodle.net: {$a}';

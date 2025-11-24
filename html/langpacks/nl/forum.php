@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'nl', version '4.4'.
+ * Strings for component 'forum', language 'nl', version '4.5'.
  *
  * @package     forum
  * @category    string
@@ -561,9 +561,6 @@ $string['postmailinfo'] = 'Dit is een kopie van een bericht op {$a}';
 $string['postmailnow'] = '<p>Dit bericht zal onmiddellijk verstuurd worden naar iedereen die e-mail van dit forum wil.</p>';
 $string['postmailreply'] = 'Klik op deze link om te reageren: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
-$string['postrating1'] = 'Vooral Separate Knowing';
-$string['postrating2'] = 'Separate en Connected Knowing';
-$string['postrating3'] = 'Vooral Connected Knowing';
 $string['posts'] = 'Berichten';
 $string['postsfrom'] = 'Berichten van';
 $string['postsmadebyuser'] = 'Berichten gepost door {$a}';
@@ -650,7 +647,7 @@ $string['qandaforum'] = 'Vraag- en antwoordforum';
 $string['qandanotify'] = 'Dit is een vraag- en antwoordforum. Om de andere antwoorden op deze vraag te kunnen zien, moet je eerst je eigen antwoord posten.';
 $string['re'] = 'Re:';
 $string['readtherest'] = 'Lees de rest van deze discussie';
-$string['removeallforumtags'] = 'Verwijder alle forum-tags';
+$string['removeallforumtags'] = 'Alle forum-tags';
 $string['removefromfavourites'] = 'Discussie niet meer favoriet';
 $string['replies'] = 'Antwoorden';
 $string['repliesmany'] = '{$a} antwoorden tot nu toe';
@@ -665,11 +662,11 @@ $string['replyplaceholder'] = 'Schrijf je antwoord ...';
 $string['replypostdiscussion'] = 'Antwoord op discussie';
 $string['replytopostbyemail'] = 'Je kan dit via e-mail beantwoorden.';
 $string['replytouser'] = 'Gebruik e-mailadres in antwoord';
-$string['resetdigests'] = 'Verwijder alle individuele voorkeuren voor berichtenoverzicht voor forum';
+$string['resetdigests'] = 'Alle individuele voorkeuren voor berichtenoverzicht voor forum';
 $string['resetforums'] = 'Verwijder berichten van';
-$string['resetforumsall'] = 'Verwijder alle berichten';
-$string['resetsubscriptions'] = 'Laat niemand nog e-mail van dit forum ontvangen';
-$string['resettrackprefs'] = 'Verwijder alle voorkeuren voor berichtenopvolging';
+$string['resetforumsall'] = 'Alle berichten';
+$string['resetsubscriptions'] = 'Alle foruminschrijvingen';
+$string['resettrackprefs'] = 'Alle voorkeuren voor berichtenopvolging';
 $string['rssarticles'] = 'Aantal recente RSS artikels';
 $string['rssarticles_help'] = '<p>Met deze instelling kun je kiezen hoeveel artikels je in de RSS-feed wil zetten.</p>
 

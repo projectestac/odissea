@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'uk', version '4.4'.
+ * Strings for component 'form', language 'uk', version '4.5'.
  *
  * @package     form
  * @category    string
@@ -41,6 +41,7 @@ $string['err_minlength'] = 'Ви повинні тут ввести як мін�
 $string['err_nonzero'] = 'Ви повинні тут вводити число, яке не дорівнює 0.';
 $string['err_nopunctuation'] = 'Ви не повинні тут вводити знаки пунктуації.';
 $string['err_numeric'] = 'Ви повинні тут ввести число.';
+$string['err_positiveduration'] = 'Ця тривалість не може бути від’ємною.';
 $string['err_positiveint'] = 'Ви повинні ввести ціле число, яке більше 0.';
 $string['err_rangelength'] = 'Ви повинні тут ввести значенні між {$a->format[0]} та {$a->format[1]}';
 $string['err_required'] = 'Ви повинні тут ввести значення.';

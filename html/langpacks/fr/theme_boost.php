@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'fr', version '4.4'.
+ * Strings for component 'theme_boost', language 'fr', version '4.5'.
  *
  * @package     theme_boost
  * @category    string
@@ -34,7 +34,6 @@ $string['brandcolor'] = 'Couleur principale';
 $string['brandcolor_desc'] = 'La couleur majeure du thème.';
 $string['choosereadme'] = 'Boost est un thème moderne hautement personnalisable. Ce thème est destiné à être utilisé directement ou comme thème parent lors de la création de nouveaux thèmes basés sur Bootstrap 4.';
 $string['configtitle'] = 'Boost';
-$string['currentinparentheses'] = '(actuel)';
 $string['generalsettings'] = 'Réglages généraux';
 $string['loginbackgroundimage'] = 'Image de fond de la page de connexion';
 $string['loginbackgroundimage_desc'] = 'L’image à afficher en arrière-plan de la page de connexion.';
@@ -48,8 +47,6 @@ $string['privacy:drawerblockclosed'] = 'Le réglage actuel pour le tiroir des bl
 $string['privacy:drawerblockopen'] = 'Le réglage actuel pour le tiroir des blocs est « ourvert ».';
 $string['privacy:drawerindexclosed'] = 'Le réglage actuel pour le tiroir de l’index du cours est « fermé ».';
 $string['privacy:drawerindexopen'] = 'Le réglage actuel pour le tiroir de l’index du cours est « ouvert ».';
-$string['privacy:drawernavclosed'] = 'Le réglage actuel pour le tiroir de navigation est « fermé ».';
-$string['privacy:drawernavopen'] = 'Le réglage actuel pour le tiroir de navigation est « ouvert ».';
 $string['privacy:metadata'] = 'Le thème Boost n’enregistre aucune donnée personnelle.';
 $string['privacy:metadata:preference:draweropenblock'] = 'Le réglage utilisateur pour afficher ou cacher le tiroir des blocs.';
 $string['privacy:metadata:preference:draweropenindex'] = 'Le réglage utilisateur pour afficher ou cacher le tiroir de l’index du cours.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_admin_presets', language 'pt', version '4.4'.
+ * Strings for component 'tool_admin_presets', language 'pt', version '4.5'.
  *
  * @package     tool_admin_presets
  * @category    string
@@ -37,8 +37,9 @@ $string['created'] = 'Criada';
 $string['currentvalue'] = 'Valor atual';
 $string['deletepreset'] = 'Tem a certeza de que pretende apagar a predefinição de administração do site \'{$a}\'?';
 $string['deletepresettitle'] = 'Apagar a predefinição {$a}?';
-$string['deletepreviouslyapplied'] = 'Esta predefinição já foi aplicada anteriormente. Ao apagar uma predefinição remove-a completamente do site. Não poderá reverter as suas configurações para o estado em que estavam antes de aplicar esta predefinição.';
+$string['deletepreviouslyapplied'] = 'Tem a certeza de que pretende apagar a predefinição de administração {$a}?<br><br>Esta predefinição já foi aplicada anteriormente. Ao apagar uma predefinição remove-a completamente do site. Não poderá reverter as suas configurações para o estado em que estavam antes de aplicar esta predefinição.';
 $string['deleteshow'] = 'Apagar predefinição de administração do site';
+$string['editadminpresetname'] = 'Editar nome da predefinição de administração';
 $string['eventpresetdeleted'] = 'Predefinição apagada';
 $string['eventpresetdownloaded'] = 'Predefinição descarregada';
 $string['eventpresetexported'] = 'Predefinição criada';

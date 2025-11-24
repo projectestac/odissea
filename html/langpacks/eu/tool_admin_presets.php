@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_admin_presets', language 'eu', version '4.4'.
+ * Strings for component 'tool_admin_presets', language 'eu', version '4.5'.
  *
  * @package     tool_admin_presets
  * @category    string
@@ -37,8 +37,9 @@ $string['created'] = 'Sorrera-data';
 $string['currentvalue'] = 'Oraingo balioa';
 $string['deletepreset'] = 'Ziur zaude gunearen kudeaketarako {$a} aurretiko ezarpena ezabatu nahi duzula?';
 $string['deletepresettitle'] = 'Ezabatu {$a} aurretiko ezarpena?';
-$string['deletepreviouslyapplied'] = 'Aurretiko ezarpen hau aurretik aplikatu zen. Aurretiko ezarpen bat ezabatzean berau zure gunetik erabat kenduko da. Hori eginez gero ezingo duzu aurretiko ezarpen hau aplikatu aurretiko egoerarik berreskuratu ahalko.';
+$string['deletepreviouslyapplied'] = 'Ziur zaude {$a} kudeaketarako aurretiko ezarpena ezabatu nahi duzula?<br><br>Aurretiko ezarpen hau aurretik aplikatu zen. Aurretiko ezarpen bat ezabatzean berau zure gunetik erabat kenduko da. Hori eginez gero ezingo duzu aurretiko ezarpen hau aplikatu aurretiko egoerarik berreskuratu ahalko.';
 $string['deleteshow'] = 'Ezabatu gunearen kudeaketarako aurretiko ezarpena';
+$string['editadminpresetname'] = 'Editatu kudeaketarako aurretiko ezarpenaren izena';
 $string['eventpresetdeleted'] = 'Aurretiko ezarpena ezabatu da';
 $string['eventpresetdownloaded'] = 'Aurretiko ezarpena jaitsi da';
 $string['eventpresetexported'] = 'Aurretiko ezarpena sortu da';

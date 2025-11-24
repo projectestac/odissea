@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_admin_presets', language 'uk', version '4.4'.
+ * Strings for component 'tool_admin_presets', language 'uk', version '4.5'.
  *
  * @package     tool_admin_presets
  * @category    string

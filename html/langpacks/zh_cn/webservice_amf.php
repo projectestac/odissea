@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice_amf', language 'zh_cn', version '4.4'.
+ * Strings for component 'webservice_amf', language 'zh_cn', version '4.5'.
  *
  * @package     webservice_amf
  * @category    string

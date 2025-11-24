@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'ro', version '4.4'.
+ * Strings for component 'gradereport_grader', language 'ro', version '4.5'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -33,9 +33,8 @@ $string['ajaxfailedupdate'] = 'Nu se poate actualiza [1] în [2]';
 $string['ajaxfieldchanged'] = 'Câmpul pe care îl editați acum este schimbat, doriți să utilizați valoarea actualizată?';
 $string['aria:dropdowncolumns'] = 'S-au găsit coloane restrânse';
 $string['cellactions'] = 'Acțiuni în cadrul celulei';
-$string['clearall'] = 'Șterge tot';
 $string['clearsearch'] = 'Anulează selecția utilizatorilor';
-$string['collapsedcolumns'] = 'Coloane restrânse <span class="badge rounded-pill bg-primary text-white ml-1" data-collapse="count">{$a}</span>';
+$string['collapsedcolumns'] = 'Coloane restrânse <span class="badge rounded-pill bg-primary text-white ms-1" data-collapse="count">{$a}</span>';
 $string['editingmode_title'] = 'Editarea raportului evaluatorului';
 $string['eventgradereportviewed'] = 'Raport evaluator vizualizat';
 $string['grader:manage'] = 'Modificați raportul notelor';

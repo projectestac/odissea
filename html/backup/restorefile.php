@@ -127,7 +127,7 @@ $PAGE->requires->js_call_amd('core_backup/async_backup', 'asyncBackupAllStatus',
 // XTEC ************ AFEGIT - Control backup hours
 // 2013.04.24 @aginard
 if (!get_protected_agora() && is_rush_hour()) {
-    print_error('rush_hour', 'local_agora', $CFG->wwwroot . '/course/view.php?id=' . $course->id);
+    throw new moodle_exception('rush_hour', 'local_agora', $CFG->wwwroot . '/course/view.php?id=' . $course->id);
 }
 // ************ FI
 

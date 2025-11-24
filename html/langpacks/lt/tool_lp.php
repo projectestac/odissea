@@ -1,0 +1,300 @@
+<?php
+// This file is part of Moodle - https://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
+
+/**
+ * Strings for component 'tool_lp', language 'lt', version '4.5'.
+ *
+ * @package     tool_lp
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+defined('MOODLE_INTERNAL') || die();
+
+$string['actions'] = 'Veiksmai';
+$string['activities'] = 'Veiklos';
+$string['addcohorts'] = 'Pridėti junginius';
+$string['addcohortstosync'] = 'Pridėti junginius sinchronizavimui';
+$string['addcompetency'] = 'Pridėti kompetenciją';
+$string['addcoursecompetencies'] = 'Pridėti kompetencijas į kursą';
+$string['addcrossreferencedcompetency'] = 'Pridėti kryžminę kompetenciją';
+$string['addingcompetencywillresetparentrule'] = 'Pridėjus naują kompetenciją bus pašalinta taisyklė, nustatyta \'{$a}\'. Ar norite tęsti?';
+$string['addnewcompetency'] = 'Pridėti naują kompetenciją';
+$string['addnewcompetencyframework'] = 'Pridėti naują kompetencijų sistemą';
+$string['addnewplan'] = 'Pridėti naują mokymosi planą';
+$string['addnewtemplate'] = 'Pridėti naują mokymosi plano šabloną';
+$string['addnewuserevidence'] = 'Pridėti naują įrodymą';
+$string['addtemplatecompetencies'] = 'Pridėti kompetencijas į mokymosi plano šabloną';
+$string['aisrequired'] = '\'{$a}\' privalomas';
+$string['aplanswerecreated'] = '{$a} mokymosi planai buvo sukurti.';
+$string['aplanswerecreatedmoremayrequiresync'] = '{$a} mokymosi planai buvo sukurti; per kitą sinchronizavimą bus sukurta daugiau.';
+$string['assigncohorts'] = 'Priskirti junginius';
+$string['averageproficiencyrate'] = 'Vidutinis mokymosi planų, parengtų pagal šį šabloną, įgūdžių lygis yra {$a}%.';
+$string['cancelreviewrequest'] = 'Atšaukti peržiūros užklausą';
+$string['cannotaddrules'] = 'Kompetencija negali būti konfigūruojama';
+$string['cannotcreateuserplanswhentemplateduedateispassed'] = 'Naujų mokymosi planų sukurti negalima. Šablono galiojimo terminas baigėsi arba baigiasi.';
+$string['cannotcreateuserplanswhentemplatehidden'] = 'Nauji mokymosi planai negali būti sukurti kol šablonas yra paslėptas.';
+$string['category'] = 'Kategorija';
+$string['chooserating'] = 'Pasirinkite reitingą...';
+$string['cohortssyncedtotemplate'] = 'Junginiai sinchronizuojami su šiuo mokymosi plano šablonu';
+$string['competenciesforframework'] = 'Kompetencijos {$a}';
+$string['competenciesmostoftennotproficient'] = 'Kompetencijos dažniausiai neįgudusios įvykdyti mokymosi planus';
+$string['competenciesmostoftennotproficientincourse'] = 'Kompetencijos dažniausiai neįgyjamos šiame kurse';
+$string['competencycannotbedeleted'] = 'Kompetencija \'{$a}\' negali būti panaikinta';
+$string['competencycreated'] = 'Kompetencija sukurta';
+$string['competencycrossreferencedcompetencies'] = '{$a} kryžminės kompetencijos';
+$string['competencyframework'] = 'Kompetencijų sistema';
+$string['competencyframeworkcreated'] = 'Kompetencijų sistema sukurta.';
+$string['competencyframeworkname'] = 'Pavadinimas';
+$string['competencyframeworkroot'] = 'Ne pirminis (aukščiausio lygio kompetencija)';
+$string['competencyframeworks'] = 'Kompetencijų sistemos';
+$string['competencyframeworksrepository'] = 'Kompetencijų sistemų talpykla';
+$string['competencyframeworkupdated'] = 'Kompetencijų sistema atnaujinta.';
+$string['competencyoutcome_complete'] = 'Žymėti kaip užbaigtą';
+$string['competencyoutcome_evidence'] = 'Priskirti įrodymus';
+$string['competencyoutcome_none'] = 'Nė vienas';
+$string['competencyoutcome_recommend'] = 'Rekomenduoti kompetenciją';
+$string['competencypicker'] = 'Kompetencijų pasirinkimas';
+$string['competencyrule'] = 'Kompetencijos taisyklė';
+$string['competencyupdated'] = 'Kompetencija atnaujinta';
+$string['completeplan'] = 'Užbaigti šį mokymosi planą';
+$string['completeplanconfirm'] = 'Nustatyti, kad mokymosi planas „{$a}“ baigtas? Jei taip, bus įrašyta esama visų naudotojų kompetencijų būsena, o planas taps tik skaitomas.';
+$string['configurecoursecompetencysettings'] = 'Konfigūruoti kursų kompetencijas';
+$string['configurescale'] = 'Konfigūruoti skales';
+$string['coursecompetencies'] = 'Kurso kompetencijos';
+$string['coursecompetencyratingsarenotpushedtouserplans'] = 'Kompetencijų reitingai šiame kurse neturi įtakos mokymosi planams.';
+$string['coursecompetencyratingsarepushedtouserplans'] = 'Šio kurso kompetencijų įvertinimai  mokymosi planuose nedelsiant atnaujinami.';
+$string['coursecompetencyratingsquestion'] = 'Kai įvertinama kurso kompetencija, ar įvertinimas atnaujina kompetencijas mokymosi planuose, ar taikomas tik kursui?';
+$string['coursesusingthiscompetency'] = 'Kursai, susiję su šia kompetencija';
+$string['coveragesummary'] = 'Apimta {$a->competenciescoveredcount} iš {$a->competenciescount} kompetencijų ({$a->coveragepercentage}% )';
+$string['createlearningplans'] = 'Kurti mokymosi planus';
+$string['createplans'] = 'Kurti mokymosi planus';
+$string['crossreferencedcompetencies'] = 'Kryžminės kompetencijos';
+$string['default'] = 'Numatytasis';
+$string['deletecompetency'] = 'Naikinti \'{$a}\' kompetenciją?';
+$string['deletecompetencyframework'] = 'Naikinti  \'{$a}\' kompetencijos sistemą?';
+$string['deletecompetencyparenthasrule'] = 'Ištrinti „{$a}“ kompetenciją ? Taip pat bus pašalinta pagrindinė taisyklė.';
+$string['deleteplan'] = 'Naikinti  \'{$a}\' mokymosi planą?';
+$string['deleteplans'] = 'Naikinti mokymosi planus';
+$string['deletetemplate'] = 'Naikinti  \'{$a}\' mokymosi plano šabloną?';
+$string['deletetemplatewithplans'] = 'Šiame šablone yra susieti mokymosi planai. Turite nurodyti, kaip tuos planus apdoroti.';
+$string['deletethisplan'] = 'Naikinti šį mokymosi planą';
+$string['deletethisuserevidence'] = 'Naikinti šį įrodymą';
+$string['deleteuserevidence'] = 'Naikinti šį įrodymą ankstesniam mokymuisi \'{$a}\'?';
+$string['description'] = 'Aprašymas';
+$string['duedate'] = 'Terminas';
+$string['duedate_help'] = 'Data, iki kurios mokymosi planas turi būti baigtas.';
+$string['editcompetency'] = 'Redaguoti kompetenciją';
+$string['editcompetencyframework'] = 'Redaguoti kompetencijos sistemą';
+$string['editplan'] = 'Redaguoti mokymosi planą';
+$string['editrating'] = 'Redaguoti reitingą';
+$string['edittemplate'] = 'Redaguoti mokymosi plano šabloną';
+$string['editthisplan'] = 'Redaguoti šį mokymosi planą';
+$string['editthisuserevidence'] = 'Redaguoti šį įrodymą';
+$string['edituserevidence'] = 'Redaguoti įrodymą';
+$string['evidence'] = 'Įrodymas';
+$string['filterbyactivity'] = 'Filtruoti kompetencijas pagal išteklių arba veiklą';
+$string['findcourses'] = 'Rasti kursus';
+$string['frameworkcannotbedeleted'] = 'Kompetencijų sistema \'{$a} negali būti panaikinta';
+$string['hidden'] = 'Paslėptas';
+$string['hiddenhint'] = '(paslėptas)';
+$string['idnumber'] = 'ID numeris';
+$string['inheritfromframework'] = 'Paveldėjama kompetencijų sistema (numatyta)';
+$string['itemstoadd'] = 'Pridėti elementus';
+$string['jumptocompetency'] = 'Pereiti į kompetenciją';
+$string['jumptouser'] = 'Pereiti į naudotoją';
+$string['learningplancompetencies'] = 'Mokymosi plano kompetencijos';
+$string['learningplans'] = 'Mokymosi planai';
+$string['levela'] = 'Lygis {$a}';
+$string['linkcompetencies'] = 'Susieti kompetencijas';
+$string['linkcompetency'] = 'Susieti kompetenciją';
+$string['linkedcompetencies'] = 'Susietos kompetencijos';
+$string['linkedcourses'] = 'Susieti kursai';
+$string['linkedcourseslist'] = 'Susieti kursai:';
+$string['listcompetencyframeworkscaption'] = 'Kompetencijų sistemų sąrašas';
+$string['listofevidence'] = 'Įrodymų sąrašas';
+$string['listplanscaption'] = 'Mokymosi planų sąrašas';
+$string['listtemplatescaption'] = 'Mokymosi plano šablonų sąrašas';
+$string['loading'] = 'Kraunasi...';
+$string['locatecompetency'] = 'Rasti kompetenciją';
+$string['managecompetenciesandframeworks'] = 'Tvarkyti kompetencijas ir sistemas';
+$string['modcompetencies'] = 'Kurso kompetencijos';
+$string['modcompetencies_help'] = 'Kurso kompetencijos susietos su šia veikla.';
+$string['move'] = 'Perkelti';
+$string['movecompetency'] = 'Perkelti kompetenciją';
+$string['movecompetencyafter'] = 'Perkelti kompetenciją po \'{$a}\'';
+$string['movecompetencyframework'] = 'Perkelti kompetencijų sistemą';
+$string['movecompetencytochildofselfwillresetrules'] = 'Perkėlus kompetenciją bus pašalinta jo taisyklė ir taisyklės, nustatytos pirminiame lygmenyje ir paskirčiai. Ar norite tęsti?';
+$string['movecompetencywillresetrules'] = 'Perkėlus kompetenciją bus pašalintos pagrindinės ir paskirties vietos taisyklės. Ar norite tęsti?';
+$string['moveframeworkafter'] = 'Perkelti kompetencijų sistemą po \'{$a}\'';
+$string['movetonewparent'] = 'Perkelti';
+$string['myplans'] = 'Mano mokymosi planai';
+$string['nfiles'] = '{$a} failas(-ai)';
+$string['noactivities'] = 'Nėra veiklų';
+$string['nocompetencies'] = 'Šioje sistemoje nebuvo sukurta kompetencijų.';
+$string['nocompetenciesinactivity'] = 'Su šia veikla ar šaltiniu nesusietos jokios kompetencijos.';
+$string['nocompetenciesincourse'] = 'Šiame kurse nebuvo susieta kompetencijų.';
+$string['nocompetenciesinevidence'] = 'Šiam įvykiui nebuvo susieta kompetencijų.';
+$string['nocompetenciesinlearningplan'] = 'Šiam mokymosi planui nebuvo susieta kompetencijų.';
+$string['nocompetenciesinlist'] = 'Nebuvo pasirinkta jokių kompetencijų.';
+$string['nocompetenciesintemplate'] = 'Šiam mokymosi plano šablonui nebuvo susieta kompetencijų.';
+$string['nocompetencyframeworks'] = 'Kompetencijų sistemų dar nebuvo sukurta.';
+$string['nocompetencyselected'] = 'Nepasirinkta kompetencija';
+$string['nocrossreferencedcompetencies'] = 'Jokios kitos kompetencijos nebuvo susietos kryžmine nuoroda su šia kompetencija.';
+$string['noevidence'] = 'Nėra įrodymų';
+$string['nofiles'] = 'Nėra failų';
+$string['nolinkedcourses'] = 'Nėra kursų, susietų su šia kompetencija';
+$string['noparticipants'] = 'Nerasta dalyvių.';
+$string['noplanswerecreated'] = 'Nebuvo sukurta mokymosi planų.';
+$string['notemplates'] = 'Dar nėra sukurta mokymosi plano šablonų';
+$string['nourl'] = 'Nėra URL';
+$string['nouserevidence'] = 'Dar nebuvo pridėta ankstesnio mokymosi įrodymų.';
+$string['nouserplans'] = 'Dar nebuvo sukurta mokymosi planų.';
+$string['oneplanwascreated'] = 'Mokymosi planas buvo sukurtas';
+$string['outcome'] = 'Rezultatas';
+$string['overridegrade'] = 'Pakeisti esantį kompetencijos įvertinimą kai baigta.';
+$string['parentcompetency'] = 'Pirminis';
+$string['parentcompetency_edit'] = 'Redaguoti pirminį';
+$string['parentcompetency_help'] = 'Apibrėžkite pagrindą, pagal kurį bus įtraukta kompetencija. Tai gali būti kita kompetencija toje pačioje sistemoje arba aukščiausio lygio kompetencijai kompetencijos sistemos šaknis.';
+$string['path'] = 'Kelias:';
+$string['planapprove'] = 'Aktyvuoti';
+$string['plancompleted'] = 'Mokymosi planas užbaigtas';
+$string['plancreated'] = 'Mokymosi planas sukurtas';
+$string['plandescription'] = 'Aprašymas';
+$string['planname'] = 'Pavadinimas';
+$string['plantemplate'] = 'Pasirinkite mokymosi plano šabloną';
+$string['plantemplate_help'] = 'Pagal šabloną sukurtame mokymosi plane bus pateiktas šabloną atitinkančių kompetencijų sąrašas. Šablono atnaujinimai atsispindės bet kuriame pagal tą šabloną sukurtame plane.';
+$string['planunapprove'] = 'Siųsti atgal į juodraštį';
+$string['planupdated'] = 'Mokymosi planas atnaujintas';
+$string['pluginname'] = 'Mokymosi planai';
+$string['points'] = 'Taškai';
+$string['pointsgivenfor'] = 'Taškai, duoti už \'{$a}\'';
+$string['privacy:metadata'] = 'Mokymosi plano papildinys nesaugo jokių asmeninių duomenų.';
+$string['proficient'] = 'Įgūdis';
+$string['progress'] = 'Progresas';
+$string['rate'] = 'Įvertinimas';
+$string['ratecomment'] = 'Įrodymo pastabos';
+$string['rating'] = 'Reitingas';
+$string['ratingaffectsonlycourse'] = 'Kompetencijos įvertinimas atnaujina tik šio kurso kompetenciją';
+$string['ratingaffectsuserplans'] = 'Kompetencijos įvertinimas taip pat atnaujina kompetenciją visuose mokymosi planuose';
+$string['reopenplan'] = 'Iš naujo atidaryti šį mokymosi planą';
+$string['reopenplanconfirm'] = 'Iš naujo atidaryti mokymosi planą „{$a}“? Jei taip, naudotojų kompetencijų būsena, kuri buvo įrašyta tuo metu, kai planas anksčiau buvo pildomas, bus ištrinta ir planas vėl taps aktyvus.';
+$string['requestreview'] = 'Peržiūrėti užklausas';
+$string['reviewer'] = 'Recenzentas';
+$string['reviewstatus'] = 'Peržiūros būsena';
+$string['savechanges'] = 'Išsaugoti pakeitimus';
+$string['scale'] = 'Skalė';
+$string['scale_help'] = 'Skalė nurodo kaip kompetencijos patirtis yra įvertinama. Pasirinkus skalę, reikia ją sukonfigūruoti.
+
+* Elementas pasirinktas kaip "Numatytasis" yra suteikiamas tada, kai kompetencija yra automatiškai baigta.
+* Elementas(-ai) pasirinktas(-i) kaip "Įsisavinta" nurodo, kuri(-os) reikšmė(-s) vertinant nustatys kompetenciją kaip įsisavintą.';
+$string['scalevalue'] = 'Skalės reikšmė';
+$string['search'] = 'Paieška...';
+$string['selectcohortstosync'] = 'Pasirinkti sinchronizuojamus junginius';
+$string['selectcompetencymovetarget'] = 'Pasirinkti vietą perkelti kompetenciją į:';
+$string['selectedcompetency'] = 'Pasirinkti kompetenciją';
+$string['selectuserstocreateplansfor'] = 'Pasirinkti naudotojus kurti mokymosi planus';
+$string['sendallcompetenciestoreview'] = 'Siųsti visas kompetencijas ankstesnio mokymosi \'{$a}\' įrodymo peržiūrai';
+$string['sendcompetenciestoreview'] = 'Siųsti peržiūrėti kompetencijas';
+$string['shortname'] = 'Pavadinimas';
+$string['sitedefault'] = '(Svetainės numatytasis)';
+$string['startreview'] = 'Pradėti peržiūrą';
+$string['state'] = 'Vieta';
+$string['status'] = 'Būsena';
+$string['stopreview'] = 'Baigti peržiūrą';
+$string['stopsyncingcohort'] = 'Stabdyti junginių sinchronizavimą';
+$string['taxonomies'] = 'Taksonomijos';
+$string['taxonomy_add_behaviour'] = 'Pridėti elgseną';
+$string['taxonomy_add_competency'] = 'Pridėti kompetenciją';
+$string['taxonomy_add_concept'] = 'Pridėti koncepciją';
+$string['taxonomy_add_domain'] = 'Pridėti domeną';
+$string['taxonomy_add_indicator'] = 'Pridėti rodiklį';
+$string['taxonomy_add_level'] = 'Pridėti lygį';
+$string['taxonomy_add_outcome'] = 'Pridėti rezultatą';
+$string['taxonomy_add_practice'] = 'Pridėti praktiką';
+$string['taxonomy_add_proficiency'] = 'Pridėti patirtį';
+$string['taxonomy_add_skill'] = 'Pridėti įgūdį';
+$string['taxonomy_add_value'] = 'Pridėti vertę';
+$string['taxonomy_edit_behaviour'] = 'Redaguoti elgseną';
+$string['taxonomy_edit_competency'] = 'Redaguoti kompetenciją';
+$string['taxonomy_edit_concept'] = 'Redaguoti koncepciją';
+$string['taxonomy_edit_domain'] = 'Redaguoti domeną';
+$string['taxonomy_edit_indicator'] = 'Redaguoti rodiklį';
+$string['taxonomy_edit_level'] = 'Redaguoti lygį';
+$string['taxonomy_edit_outcome'] = 'Redaguoti rezultatą';
+$string['taxonomy_edit_practice'] = 'Redaguoti praktiką';
+$string['taxonomy_edit_proficiency'] = 'Redaguoti patirtį';
+$string['taxonomy_edit_skill'] = 'Redaguoti įgūdį';
+$string['taxonomy_edit_value'] = 'Redaguoti vertę';
+$string['taxonomy_parent_behaviour'] = 'Pagrindinė elgsena';
+$string['taxonomy_parent_competency'] = 'Pagrindinė kompetencija';
+$string['taxonomy_parent_concept'] = 'Pagrindinė koncepcija';
+$string['taxonomy_parent_domain'] = 'Pagrindinė sritis';
+$string['taxonomy_parent_indicator'] = 'Pagrindinis rodiklis';
+$string['taxonomy_parent_level'] = 'Pagrindinis lygis';
+$string['taxonomy_parent_outcome'] = 'Pagrindinis rezultatas';
+$string['taxonomy_parent_practice'] = 'Pagrindinė praktika';
+$string['taxonomy_parent_proficiency'] = 'Pagrindinė patirtis';
+$string['taxonomy_parent_skill'] = 'Pagrindinis įgūdis';
+$string['taxonomy_parent_value'] = 'Pagrindinė vertė';
+$string['taxonomy_selected_behaviour'] = 'Pasirinkta elgsena';
+$string['taxonomy_selected_competency'] = 'Pasirinkta kompetencija';
+$string['taxonomy_selected_concept'] = 'Pasirinkta koncepcija';
+$string['taxonomy_selected_domain'] = 'Pasirinktas domenas';
+$string['taxonomy_selected_indicator'] = 'Pasirinktas rodiklis';
+$string['taxonomy_selected_level'] = 'Pasirinktas lygis';
+$string['taxonomy_selected_outcome'] = 'Pasirinktas rezultatas';
+$string['taxonomy_selected_practice'] = 'Pasirinkta praktika';
+$string['taxonomy_selected_proficiency'] = 'Pasirinkta patirtis';
+$string['taxonomy_selected_skill'] = 'Pasirinktas įgūdis';
+$string['taxonomy_selected_value'] = 'Pasirinkta vertė';
+$string['template'] = 'Mokymosi plano šablonas';
+$string['templatebased'] = 'Pagrindinis šablonas';
+$string['templatecohortnotsyncedwhileduedateispassed'] = 'Junginiai nebus sinchronizuojami, jei šablono terminas yra pasibaigęs.';
+$string['templatecohortnotsyncedwhilehidden'] = 'Junginiai nebus sinchronizuojami, kol šablonas yra paslėptas';
+$string['templatecompetencies'] = 'Mokymosi plano šablono kompetencijos';
+$string['templatecreated'] = 'Mokymosi plano šablonas sukurtas';
+$string['templatename'] = 'Pavadinimas';
+$string['templates'] = 'Mokymosi plano šablonai';
+$string['templateupdated'] = 'Mokymosi plano šablonas atnaujintas';
+$string['totalrequiredtocomplete'] = 'Iš viso reikia užbaigti';
+$string['unlinkcompetencycourse'] = 'Atsieti kompetenciją \'{$a}\' nuo kurso?';
+$string['unlinkcompetencyplan'] = 'Atsieti kompetenciją \'{$a}\' nuo mokymosi plano?';
+$string['unlinkcompetencytemplate'] = 'Atsieti kompetenciją \'{$a}\' nuo mokymosi plano šablono?';
+$string['unlinkplanstemplate'] = 'Atsieti mokymosi planą nuo jo šablono';
+$string['unlinkplantemplate'] = 'Atsieti nuo mokymosi plano šablono';
+$string['unlinkplantemplateconfirm'] = 'Atsieti mokymosi planą \'{$a}\' nuo jo šablono? Bet koks šablono pakeitimas nebebus taikomas planui. Šis veiksmas negali būti panaikintas.';
+$string['uponcoursecompletion'] = 'Po kurso užbaigimo:';
+$string['uponcoursemodulecompletion'] = 'Po veiklos užbaigimo:';
+$string['usercompetencyfrozen'] = 'Šis įrašas yra neaktyvus. Tai atspindi naudotojų kompetencijos būseną, kai jų mokymosi planas buvo pažymėtas kaip baigtas.';
+$string['userevidence'] = 'Ankstesnio mokymosi įrodymai';
+$string['userevidencecreated'] = 'Ankstesnio mokymosi įrodymai sukurti';
+$string['userevidencedescription'] = 'Aprašymas';
+$string['userevidencefiles'] = 'Failai';
+$string['userevidencename'] = 'Pavadinimas';
+$string['userevidencesummary'] = 'Santrauka';
+$string['userevidenceupdated'] = 'Ankstesnio mokymosi įrodymai atnaujinti';
+$string['userevidenceurl'] = 'URL';
+$string['userevidenceurl_help'] = 'URL turi prasidėti \'http://\' arba \'https://\'.';
+$string['viewdetails'] = 'Išsamiau';
+$string['visible'] = 'Matomas';
+$string['visible_help'] = 'Kompetencijos sistema gali būti paslėpta kol ji yra kuriama arba kol bus atnaujinta į naują versiją.';
+$string['when'] = 'Kada';
+$string['xcompetencieslinkedoutofy'] = '{$a->x} iš {$a->y} kompetencijos susietos su kursais';
+$string['xcompetenciesproficientoutofy'] = '{$a->x} iš {$a->y} kompetencijų yra įgudusios';
+$string['xcompetenciesproficientoutofyincourse'] = 'Įgijote {$a->x} iš {$a->y} kompetenciją šiame kurse.';
+$string['xplanscompletedoutofy'] = 'Atlikta šio šablono mokymosi planų: {$a->x} iš {$a->y}';

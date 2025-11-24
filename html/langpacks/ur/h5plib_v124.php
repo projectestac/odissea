@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5plib_v124', language 'ur', version '4.4'.
+ * Strings for component 'h5plib_v124', language 'ur', version '4.5'.
  *
  * @package     h5plib_v124
  * @category    string

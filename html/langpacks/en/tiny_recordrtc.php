@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_recordrtc', language 'en', version '4.4'.
+ * Strings for component 'tiny_recordrtc', language 'en', version '4.5'.
  *
  * @package     tiny_recordrtc
  * @category    string
@@ -25,8 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowedpausing'] = 'Allow pausing';
 $string['allowedtypes'] = 'Recording type';
-$string['allowedtypes_desc'] = 'Which types of recording can be made in the TinyMCE editor? In addition to this setting, there are two capabilities which control access to recording options.';
+$string['allowedtypes_desc'] = 'Which types of recording can be made in the TinyMCE editor? In addition to this setting, there are capabilities which control access to recording options.';
 $string['attachrecording'] = 'Attach recording';
 $string['audioandvideo'] = 'Audio and video';
 $string['audiobitrate'] = 'Audio bitrate';
@@ -38,21 +39,21 @@ $string['audiotitle'] = 'Record audio';
 $string['confirm_yes'] = 'Yes';
 $string['discard_desc'] = 'There is a recording in progress. Do you want to stop the recording?';
 $string['discard_title'] = 'Close confirmation';
-$string['gumabort'] = 'Something happened which prevented the webcam/microphone from being used.';
+$string['gumabort'] = 'Something happened which prevented the webcam/microphone/screen from being used.';
 $string['gumabort_title'] = 'Something happened';
-$string['gumnotallowed'] = 'You must allow the browser access to the webcam/microphone.';
+$string['gumnotallowed'] = 'You must allow the browser access to the webcam/microphone/screen.';
 $string['gumnotallowed_title'] = 'Wrong permissions';
 $string['gumnotfound'] = 'No input device detected.';
 $string['gumnotfound_title'] = 'Device missing';
-$string['gumnotreadable'] = 'Something is preventing the browser from accessing the webcam/microphone.';
+$string['gumnotreadable'] = 'Something is preventing the browser from accessing the webcam/microphone/screen.';
 $string['gumnotreadable_title'] = 'Hardware error';
 $string['gumnotsupported'] = 'Your browser doesn\'t support recording over an insecure connection.';
 $string['gumnotsupported_title'] = 'No support for insecure connection';
-$string['gumoverconstrained'] = 'The current webcam/microphone can\'t produce a stream with the required constraints.';
+$string['gumoverconstrained'] = 'The current webcam/microphone/screen can\'t produce a stream with the required constraints.';
 $string['gumoverconstrained_title'] = 'Problem with constraints';
 $string['gumsecurity'] = 'Your browser doesn\'t support recording over an insecure connection.';
 $string['gumsecurity_title'] = 'No support for insecure connection';
-$string['gumtype'] = 'Tried to get stream from the webcam/microphone, but no constraints were specified.';
+$string['gumtype'] = 'Tried to get stream from the webcam/microphone/screen, but no constraints were specified.';
 $string['gumtype_title'] = 'No constraints specified';
 $string['helplinktext'] = 'RecordRTC';
 $string['insecurealert'] = 'Your browser might not allow this plugin to work unless it is used either over HTTPS or from localhost.';
@@ -64,8 +65,10 @@ $string['norecordingfound'] = 'Something has gone wrong. Nothing has been record
 $string['norecordingfound_title'] = 'No recording found';
 $string['nowebrtc'] = 'Your browser offers limited or no support for WebRTC technologies yet, and can\'t be used with this plugin. Please switch or upgrade your browser.';
 $string['nowebrtc_title'] = 'WebRTC not supported';
-$string['onlyaudio'] = 'Audio only';
-$string['onlyvideo'] = 'Video only';
+$string['onlyaudio'] = 'Audio';
+$string['onlyscreen'] = 'Screen';
+$string['onlyvideo'] = 'Video';
+$string['pause'] = 'Pause';
 $string['pluginname'] = 'RecordRTC';
 $string['privacy:metadata'] = 'The RecordRTC plugin does not store any personal data.';
 $string['recordagain'] = 'Record again';
@@ -74,7 +77,21 @@ $string['recordagain_title'] = 'Record again confirmation';
 $string['recordingfailed'] = 'Recording failed. Try again.';
 $string['recordinguploaded'] = 'Recording uploaded';
 $string['recordrtc:recordaudio'] = 'Record audio in the text editor';
+$string['recordrtc:recordscreen'] = 'Record screen in the text editor';
 $string['recordrtc:recordvideo'] = 'Record video in the text editor';
+$string['resume'] = 'Resume';
+$string['screenbitrate'] = 'Screen bitrate';
+$string['screenbitrate_desc'] = 'Quality of screen recording (a larger number means higher quality).';
+$string['screenbuttontitle'] = 'Record screen';
+$string['screenresolution_fhd'] = '1920 x 1080 (16:9)';
+$string['screenresolution_hd'] = '1280 x 720 (16:9)';
+$string['screensharingstopped'] = 'You stopped sharing your screen before starting the recording. Please allow screen sharing in your browser settings and start the recording again.';
+$string['screensharingstopped_title'] = 'Sharing stopped';
+$string['screensize'] = 'Screen recording size';
+$string['screensize_desc'] = 'The size of video output resolution.';
+$string['screentimelimit'] = 'Screen limit time';
+$string['screentimelimit_desc'] = 'Maximum recording length for screen recording.';
+$string['screentitle'] = 'Record screen';
 $string['startrecording'] = 'Start recording';
 $string['stoprecording'] = 'Stop recording';
 $string['timelimitwarning'] = 'You must enter a number that is greater than 0.';
@@ -86,6 +103,7 @@ $string['uploadprogress'] = 'completed';
 $string['videobitrate'] = 'Video bitrate';
 $string['videobitrate_desc'] = 'Quality of video recording (larger number means higher quality).';
 $string['videobuttontitle'] = 'Record video';
+$string['videorecordmenutitle'] = 'Video record menu';
 $string['videotimelimit'] = 'Video time limit';
 $string['videotimelimit_desc'] = 'Maximum recording length for video clips.';
 $string['videotitle'] = 'Record video';

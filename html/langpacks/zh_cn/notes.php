@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'zh_cn', version '4.4'.
+ * Strings for component 'notes', language 'zh_cn', version '4.5'.
  *
  * @package     notes
  * @category    string
@@ -39,7 +39,7 @@ $string['course'] = '课程';
 $string['coursenotes'] = '课程备注';
 $string['created'] = '已创建';
 $string['deleteconfirm'] = '删除该备注吗？';
-$string['deletenotes'] = '删除所有备注';
+$string['deletenotes'] = '所有备注';
 $string['editnote'] = '编辑备注';
 $string['enablenotes'] = '启用备注';
 $string['eventnotecreated'] = '备注已创建';

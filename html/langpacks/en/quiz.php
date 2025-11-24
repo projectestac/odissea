@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'en', version '4.4'.
+ * Strings for component 'quiz', language 'en', version '4.5'.
  *
  * @package     quiz
  * @category    string
@@ -396,6 +396,7 @@ $string['eventslotgradeitemupdated'] = 'Slot grade item updated';
 $string['eventslotmarkupdated'] = 'Slot mark updated';
 $string['eventslotmoved'] = 'Slot moved';
 $string['eventslotrequirepreviousupdated'] = 'Slot require previous updated';
+$string['eventslotversionupdated'] = 'Slot version updated';
 $string['everynquestions'] = 'Every {$a} questions';
 $string['everyquestion'] = 'Every question';
 $string['everythingon'] = 'Everything on';
@@ -556,6 +557,7 @@ $string['maxmarks_help'] = 'The maximum mark available for each question.';
 $string['messageprovider:attempt_grading_complete'] = 'Notification that your attempt has been graded';
 $string['messageprovider:attempt_overdue'] = 'Warning when your quiz attempt becomes overdue';
 $string['messageprovider:confirmation'] = 'Confirmation of your own quiz submissions';
+$string['messageprovider:quiz_open_soon'] = 'Quiz opens soon';
 $string['messageprovider:submission'] = 'Notification of your students\' quiz submissions';
 $string['min'] = 'Min';
 $string['minutes'] = 'Minutes';
@@ -649,7 +651,7 @@ $string['onlyteachersimport'] = 'Only teachers with editing rights can import qu
 $string['onthispage'] = 'This page';
 $string['open'] = 'Not answered';
 $string['openafterclose'] = 'Could not update the quiz. You have specified an open date after the close date.';
-$string['openclosedatesupdated'] = 'Quiz open and close dates updated';
+$string['openclosedatesupdated'] = 'Open and close dates';
 $string['optional'] = 'optional';
 $string['orderandpaging'] = 'Order and paging';
 $string['orderandpaging_help'] = 'The numbers 10, 20, 30, ... opposite each question indicate the order of the questions. The numbers increase in steps of 10 to leave space for additional questions to be inserted. To reorder the questions, change the numbers then click the "Reorder questions" button.
@@ -831,6 +833,12 @@ $string['quizopen'] = 'Open the quiz';
 $string['quizopenclose'] = 'Open and close dates';
 $string['quizopenclose_help'] = 'Students can only start their attempt(s) after the open time and they must complete their attempts before the close time.';
 $string['quizopenclose_link'] = 'mod/quiz/timing';
+$string['quizopendatesoonhtml'] = '<p>Hi {$a->firstname},</p>
+<p>The quiz <strong>{$a->quizname}</strong> in course {$a->coursename} is opening soon.
+<p><strong>Opens: {$a->timeopen}</strong></p>
+<p><strong>Closes: {$a->timeclose}</strong></p>
+<p><a href="{$a->url}">Go to quiz</a></p>';
+$string['quizopendatesoonsubject'] = 'Opens on {$a->timeopen}: {$a->quizname}';
 $string['quizopened'] = 'This quiz is open.';
 $string['quizopenedon'] = 'This quiz opened on {$a}';
 $string['quizopens'] = 'Quiz opens';
@@ -882,9 +890,9 @@ $string['regradenotallowed'] = 'You do not have permission to regrade this quiz'
 $string['regradingquestion'] = 'Regrading "{$a}".';
 $string['regradingquiz'] = 'Regrading quiz "{$a}"';
 $string['remove'] = 'Remove';
-$string['removeallgroupoverrides'] = 'Delete all group overrides';
-$string['removeallquizattempts'] = 'Delete all quiz attempts';
-$string['removealluseroverrides'] = 'Delete all user overrides';
+$string['removeallgroupoverrides'] = 'All group overrides';
+$string['removeallquizattempts'] = 'All quiz attempts';
+$string['removealluseroverrides'] = 'All user overrides';
 $string['removeemptypage'] = 'Remove empty page';
 $string['removepagebreak'] = 'Remove page break';
 $string['removeselected'] = 'Remove selected';
@@ -997,6 +1005,7 @@ $string['selectmultipletoolbar'] = 'Select multiple toolbar';
 $string['selectnone'] = 'Deselect all';
 $string['selectquestionslot'] = 'Select question {$a}';
 $string['selectquestiontype'] = '-- Select question type --';
+$string['sendnotificationopendatesoon'] = 'Notify user of an approaching quiz open date';
 $string['serveradded'] = 'Server added';
 $string['serveridentifier'] = 'Identifier';
 $string['serverinfo'] = 'Server information';
@@ -1065,6 +1074,7 @@ $string['subplugintype_quizaccess_plural'] = 'Access rules';
 $string['substitutedby'] = 'will be substituted by';
 $string['summaryofattempt'] = 'Summary of attempt';
 $string['summaryofattempts'] = 'Your attempts';
+$string['summaryofattemptscaption'] = 'Attempt {$a} summary';
 $string['temporaryblocked'] = 'You are temporarily not allowed to re-attempt the quiz.<br /> You will be able to take another attempt on:';
 $string['theattempt'] = 'The attempt';
 $string['theattempt_help'] = 'Whether the student can review the attempt at all.';

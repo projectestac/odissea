@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'pt', version '4.4'.
+ * Strings for component 'badges', language 'pt', version '4.5'.
  *
  * @package     badges
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actions'] = 'Ações';
 $string['activate'] = 'Ativar acesso';
-$string['activatesuccess'] = 'O acesso às medalhas foi ativado com sucesso.';
+$string['activatesuccess'] = 'O acesso à medalha \'{$a}\' foi ativado.';
 $string['addalignment'] = 'Adicionar competência ou norma externa';
 $string['addbadge'] = 'Adicionar medalhas';
 $string['addbadge_help'] = 'Selecione todas as medalhas que devem fazer parte dos requisitos desta medalha. Mantenha a tecla Ctrl pressionada para selecionar vários itens.';
@@ -40,6 +40,7 @@ $string['addcourse'] = 'Adicionar disciplinas';
 $string['addcourse_help'] = 'Selecione todas as disciplinas que devem ser adicionadas a este requisito desta medalha. Mantenha a tecla Ctrl pressionada para selecionar vários itens.';
 $string['addcriteria'] = 'Adicionar critério';
 $string['addcriteriatext'] = 'Para começar a adicionar critérios, por favor, selecione uma das opções a partir da lista pendente.';
+$string['addcriterion'] = 'Adicionar critério';
 $string['addedtobackpack'] = 'Medalha adicionada à backpack';
 $string['addrelated'] = 'Adicionar medalha relacionada';
 $string['addtobackpack'] = 'Adicionar à backpack';
@@ -78,7 +79,7 @@ $string['attachment_help'] = 'Se ativar esta opção, a medalha emitida será an
 $string['award'] = 'Atribuir medalha';
 $string['awardedto'] = 'Atribuída a {$a}';
 $string['awardedtoyou'] = 'Atribuídas a mim';
-$string['awardoncron'] = 'O acesso às medalhas foi ativado com sucesso. Esta medalha pode ser ganha por um grande número de utilizadores. Para assegurar o desempenho do site, esta ação levará algum tempo a processar.';
+$string['awardoncron'] = 'Um grande número de utilizadores está a ganhar a medalha \'{$a->badgename}\'. Pode levar algum tempo para que todos os utilizadores a recebam.';
 $string['awards'] = 'Condecorados';
 $string['backpackapiurl'] = 'URL da API da backpack';
 $string['backpackavailability'] = 'Verificação externa da medalha';
@@ -161,6 +162,7 @@ Nota: Para fins de verificação, evite mudar esta configuração assim que come
 $string['badgesdisabled'] = 'As medalhas não estão ativas neste site.';
 $string['badgesearned'] = 'Número de medalhas recebidas: {$a}';
 $string['badgesettings'] = 'Configurações das medalhas';
+$string['badgesnavigation'] = 'Navegação de medalhas';
 $string['badgestatus_0'] = 'Não disponível';
 $string['badgestatus_1'] = 'Disponível';
 $string['badgestatus_2'] = 'Não disponível (critérios bloqueados)';
@@ -179,6 +181,9 @@ $string['bmessage'] = 'Mensagem';
 $string['boverview'] = 'Visão global';
 $string['brelated'] = 'Medalhas relacionadas ({$a})';
 $string['bydate'] = '&nbsp;concluída até&nbsp;';
+$string['canvascredentialsprovider'] = 'Canvas Credentials';
+$string['canvasregions'] = 'Regiões de Canvas Credentials';
+$string['canvasregions_desc'] = 'Pode configurar o conteúdo das regiões de Canvas Credentials. Cada linha é separada por barras verticais e consiste em 1) o nome da região, 2) o URL da Backpack e 3) o URL da API da Backpack.';
 $string['claim'] = 'Acreditação';
 $string['claimcomment'] = 'Comentário sobre a acreditação';
 $string['claimid'] = 'URL da acreditação';
@@ -190,7 +195,7 @@ $string['configuremessage'] = 'Mensagem da medalha';
 $string['connect'] = 'Ligar';
 $string['connected'] = 'Ligado';
 $string['connecting'] = 'A estabelecer a ligação...';
-$string['contact'] = 'Contacto';
+$string['contact'] = 'Contacto do emissor';
 $string['contact_help'] = 'Endereço de e-mail associado ao emissor da medalha.';
 $string['copy'] = 'Copiar';
 $string['copyof'] = 'Cópia de {$a}';
@@ -271,7 +276,7 @@ $string['dateawarded'] = 'Data de emissão';
 $string['dateearned'] = 'Data: {$a}';
 $string['day'] = 'Dia(s)';
 $string['deactivate'] = 'Desativar acesso';
-$string['deactivatesuccess'] = 'O acesso às medalha foi desativado com sucesso.';
+$string['deactivatesuccess'] = 'O acesso à medalha \'{$a}\' foi desativado.';
 $string['defaultissuercontact'] = 'E-mail do emissor de medalhas';
 $string['defaultissuercontact_desc'] = 'Endereço de e-mail associado ao emissor da medalha. Para uma backpack Open Badges v2.0, é usado para autenticação ao publicar medalhas numa backpack.';
 $string['defaultissuername'] = 'Nome do emissor de medalhas';
@@ -326,7 +331,7 @@ $string['error:nosuchfield'] = 'Aviso: Este campo de perfil do utilizador já n�
 $string['error:nosuchmod'] = 'Aviso: Esta atividade já não está disponível.';
 $string['error:nosuchrole'] = 'Aviso: Este papel já não está disponível.';
 $string['error:nosuchuser'] = 'O utilizador com este endereço de e-mail não tem uma conta no atual fornecedor da backpack.';
-$string['error:notifycoursedate'] = 'Aviso: As medalhas associadas à conclusão de disciplina e de atividade não serão emitidas até à data de início da disciplina.';
+$string['error:notifycoursedate'] = 'As medalhas associadas à conclusão de disciplina e de atividade não serão emitidas até à data de início da disciplina ({$a}).';
 $string['error:parameter'] = 'Aviso: Deve ser selecionado pelo menos um parâmetro para garantir a correta emissão da medalha.';
 $string['error:relatedbadgedoesntexist'] = 'Não existe uma medalha pública com esse identificador';
 $string['error:requesterror'] = 'O pedido de ligação falhou (código de erro {$a})';
@@ -378,7 +383,13 @@ $string['imageauthorurl'] = 'URL do autor da imagem';
 $string['imageauthorurl_help'] = 'Se especificado, será mostrada na página da medalha uma hiperligação para o site do autor da imagem da medalha. O URL deve ter um prefixo http:// ou https://.';
 $string['imagecaption'] = 'Legenda da imagem';
 $string['imagecaption_help'] = 'Se especificada, a legenda da imagem será mostrada na página da medalha.';
-$string['includeauthdetails'] = 'Incluir detalhes da autenticação com a backpack';
+$string['includeauthdetails'] = 'Ligar à conta do fornecedor da backpack';
+$string['includeauthdetails_desc'] = 'Indique as credenciais do emissor da sua medalha para se ligar ao seu fornecedor da backpack.';
+$string['includeauthdetails_help'] = 'Enviar as suas credenciais de emissor com cada medalha exportada para esta backpack.';
+$string['includeauthdetailscanvas'] = 'Ligar a uma conta emissora de Canvas Credentials';
+$string['includeauthdetailscanvas_desc'] = 'Indique os detalhes da sua Canvas Credentials para ligar a sua conta de emissor.';
+$string['includeauthdetailscanvas_help'] = 'As medalhas exportadas para o Credenciais Canvas mostrarão a sua organização enquanto emissora. Também permite acompanhar quem recebeu as medalhas e gerir atualizações.';
+$string['includeauthdetailscanvas_subtitle'] = '(Requer um plano pago de Canvas Credentials)';
 $string['invalidurl'] = 'URL inválido';
 $string['issuancedetails'] = 'Data de validade da medalha';
 $string['issuedbadge'] = 'Informação da medalha emitida';
@@ -421,10 +432,13 @@ $string['month'] = 'Mês/Meses';
 $string['moredetails'] = 'Mais detalhes';
 $string['mybackpack'] = 'Configurações da minha backpack';
 $string['mybadges'] = 'Minhas medalhas';
+$string['namewithimagelink'] = 'Nome com imagem e hiperligação';
 $string['namewithlink'] = 'Nome com hiperligação';
 $string['never'] = 'Sem data de validade';
 $string['newbackpack'] = 'Adicionar uma nova backpack';
 $string['newbadge'] = 'Adicionar uma nova medalha';
+$string['newbadgedeprecated'] = 'Foi redirecionado desde badges/newbadge.php. Tenha em atenção que badges/newbadge.php será removido num futuro próximo.
+<br/>Atualize as hiperligações e favoritos para usar a página atual badges/edit.php.';
 $string['newimage'] = 'Nova imagem';
 $string['noalignment'] = 'Nenhuma competência ou norma externa foi especificada para esta medalha.';
 $string['noawards'] = 'Esta medalha ainda não foi atribuída.';
@@ -466,13 +480,14 @@ $string['notifydaily'] = 'Diariamente';
 $string['notifyevery'] = 'Sempre';
 $string['notifymonthly'] = 'Mensalmente';
 $string['notifyweekly'] = 'Semanalmente';
-$string['numawards'] = 'Esta medalha foi emitida para <a href="{$a->link}">{$a->count}</a> utilizador(es).';
-$string['numawardstat'] = 'Esta medalha foi emitida para {$a} utilizador(es).';
+$string['numawards'] = 'Utilizadores que ganharam a medalha \'{$a->badgename}\': <a href="{$a->link}">{$a->count}</a>.';
+$string['numawardstat'] = 'Utilizadores que ganharam a medalha \'{$a->badgename}\': {$a->awards}.';
 $string['oauth2issuer'] = 'Serviços OAuth 2';
 $string['openbadgesv1'] = 'Open Badges v1.0';
 $string['openbadgesv2'] = 'Open Badges v2.0';
 $string['openbadgesv2p1'] = 'Open Badges v2.1';
 $string['othernavigation'] = 'Outra navegação...';
+$string['otherprovider'] = 'Outro';
 $string['overallcrit'] = 'dos critérios selecionados são cumpridos.';
 $string['password_required'] = 'A senha não pode estar em branco';
 $string['potentialrecipients'] = 'Potenciais condecorados da medalha';
@@ -511,9 +526,11 @@ $string['privacy:metadata:manualaward:datemet'] = 'A data de quando o utilizador
 $string['privacy:metadata:manualaward:issuerid'] = 'ID do utilizador condecorado com a medalha';
 $string['privacy:metadata:manualaward:issuerrole'] = 'O papel do utilizador condecorado com a medalha';
 $string['privacy:metadata:manualaward:recipientid'] = 'ID do utilizador condecorado manualmente com a medalha';
+$string['provider'] = 'Fornecedor';
 $string['recipient'] = 'Condecorado com a medalha';
 $string['recipients'] = 'Condecorados com a medalha';
 $string['recipientvalidationproblem'] = 'Não é possível verificar este utilizador como um condecorado com esta medalha.';
+$string['region'] = 'Região';
 $string['relatedbages'] = 'Medalhas relacionadas';
 $string['relative'] = 'Data relativa';
 $string['requiredbadge'] = 'Deve ser adicionada pelo menos uma medalha ao critério medalha.';

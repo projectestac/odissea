@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'es', version '4.4'.
+ * Strings for component 'theme_boost', language 'es', version '4.5'.
  *
  * @package     theme_boost
  * @category    string
@@ -34,7 +34,6 @@ $string['brandcolor'] = 'Color de marca';
 $string['brandcolor_desc'] = 'El color de acento';
 $string['choosereadme'] = 'Boost (Impulso) es un tema moderno altamente configurable. Este tema está diseñado para usarse directamente, o como un tema paterno al crear temas nuevos usando Bootstrap 4.';
 $string['configtitle'] = 'Boost (Impulso)';
-$string['currentinparentheses'] = '(actual)';
 $string['generalsettings'] = 'Ajustes generales';
 $string['loginbackgroundimage'] = 'Imagen de fondo para la página de inicio de sesión';
 $string['loginbackgroundimage_desc'] = 'La imagen que se mostrará como fondo de la página de inicio de sesión.';
@@ -48,8 +47,6 @@ $string['privacy:drawerblockclosed'] = 'La preferencia actual para el cajón de 
 $string['privacy:drawerblockopen'] = 'La preferencia actual para el cajón de bloque está abierta.';
 $string['privacy:drawerindexclosed'] = 'La preferencia actual para el cajón de índice está cerrada.';
 $string['privacy:drawerindexopen'] = 'La preferencia actual para el cajón de índice está abierta.';
-$string['privacy:drawernavclosed'] = 'La preferencia actual para el cajón de navegación está cerrada.';
-$string['privacy:drawernavopen'] = 'La preferencia actual para el cajón de navegación está abierta.';
 $string['privacy:metadata'] = 'El tema Boost (Impulso) no almacena ningún dato personal de ningún usuario';
 $string['privacy:metadata:preference:draweropenblock'] = 'Preferencia del usuario por ocultar o mostrar el cajón con bloques.';
 $string['privacy:metadata:preference:draweropenindex'] = 'Preferencia del usuario por ocultar o mostrar el cajón con índice de cursos.';

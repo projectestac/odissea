@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'ur', version '4.4'.
+ * Strings for component 'gradereport_singleview', language 'ur', version '4.5'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -40,7 +40,6 @@ $string['excludeall'] = 'تمام درجات کو چھوڑ دیں';
 $string['excludefor'] = '{$a} کے لیے خارج کریں';
 $string['excludenone'] = 'کسی بھی گریڈ کو خارج نہ کریں';
 $string['feedbackfor'] = '{$a} کے لیے تاثرات';
-$string['filtergrades'] = '{$a} کے لیے درجات دکھائیں۔';
 $string['gradefor'] = '{$a} کے لیے گریڈ';
 $string['gradeitem'] = 'گریڈ آئٹم: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'اس گریڈ آئٹم کو اوور رائڈ نہیں کیا جا سکتا۔';

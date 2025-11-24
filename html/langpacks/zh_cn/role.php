@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'zh_cn', version '4.4'.
+ * Strings for component 'role', language 'zh_cn', version '4.5'.
  *
  * @package     role
  * @category    string
@@ -162,6 +162,8 @@ $string['confirmunassignno'] = '放弃';
 $string['confirmunassigntitle'] = '确认角色改变';
 $string['confirmunassignyes'] = '删除';
 $string['contentbank:access'] = '访问内容库';
+$string['contentbank:changelockedcustomfields'] = '更改内容库锁定的自定义字段';
+$string['contentbank:configurecustomfields'] = '配置内容库自定义字段';
 $string['contentbank:copyanycontent'] = '复制内容库中的任何内容';
 $string['contentbank:copycontent'] = '复制内容库中的内容';
 $string['contentbank:deleteanycontent'] = '从内容库中删除任何内容';
@@ -189,6 +191,7 @@ $string['course:create'] = '创建课程';
 $string['course:creategroupconversations'] = '创建群组对话';
 $string['course:delete'] = '删除课程';
 $string['course:downloadcoursecontent'] = '下载课程内容';
+$string['course:editcoursewelcomemessage'] = '编辑课程欢迎辞';
 $string['course:enrolconfig'] = '配置课程中的选课实例';
 $string['course:enrolreview'] = '审查选课';
 $string['course:ignoreavailabilityrestrictions'] = '忽视可用性的限制';
@@ -237,8 +240,8 @@ $string['defaultrole'] = '默认角色';
 $string['defaultx'] = '缺省：{$a}';
 $string['defineroles'] = '定义角色';
 $string['definitionofrolex'] = '角色“{$a}”的定义';
-$string['deletecourseoverrides'] = '删除课程中所有角色修改';
-$string['deletelocalroles'] = '删除所有局部角色分配';
+$string['deletecourseoverrides'] = '课程中的所有覆盖';
+$string['deletelocalroles'] = '所有局部角色分配';
 $string['deleterolesure'] = '<p>您确定要删除角色“{$a->name} ({$a->shortname})”？</p><p>当前此角色已经分配給{$a->count}个用户了。</p>';
 $string['deletexrole'] = '删除{$a}角色';
 $string['duplicaterole'] = '克隆角色';
@@ -519,6 +522,7 @@ $string['user:viewalldetails'] = '查看用户详细信息';
 $string['user:viewdetails'] = '浏览用户资料';
 $string['user:viewhiddendetails'] = '浏览用户隐藏的个人信息';
 $string['user:viewlastip'] = '查看用户最近一次IP地址';
+$string['user:viewprofilepictures'] = '查看用户图片（如果启用了强制登录）';
 $string['user:viewuseractivitiesreport'] = '查看用户活动报表';
 $string['user:viewusergrades'] = '浏览用户成绩';
 $string['usersfrom'] = '来自{$a}的用户';

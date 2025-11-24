@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ca', version '4.4'.
+ * Strings for component 'workshop', language 'ca', version '4.5'.
  *
  * @package     workshop
  * @category    string
@@ -233,8 +233,8 @@ $string['noworkshops'] = 'Aquest curs no té tallers';
 $string['noyoursubmission'] = 'Encara no heu enviat la vostra feina';
 $string['nullgrade'] = '-';
 $string['overallfeedback'] = 'Retroacció global';
-$string['overallfeedbackfiles'] = 'Nombre màxim d\'adjuncions en la retroalimentació global';
-$string['overallfeedbackmaxbytes'] = 'Mida màxima en total dels adjunts de retroalimentació';
+$string['overallfeedbackfiles'] = 'Nombre màxim d\'adjuncions en la retroacció global';
+$string['overallfeedbackmaxbytes'] = 'Mida màxima en total dels adjunts de retroacció';
 $string['overallfeedbackmode'] = 'Mode de retroalimentació global';
 $string['overallfeedbackmode_0'] = 'Inhabilitat';
 $string['overallfeedbackmode_1'] = 'Habilitat i opcional';
@@ -373,7 +373,7 @@ $string['userdatecreated'] = 'tramesa el <span>{$a}</span>';
 $string['userdatemodified'] = 'modificada el <span>{$a}</span>';
 $string['userplan'] = 'Planificador del taller';
 $string['userplan_help'] = 'El planificador del taller mostra totes les fases de l\'activitat i llista les tasques de cada fase. La fase actual es destaca i les tasques completades es marquen amb un senyal.';
-$string['userplanaccessibilitytitle'] = 'Línia temporal del taller, amb {$a} fases';
+$string['userplanaccessibilitytitle'] = 'Cronologia del taller, amb {$a} fases';
 $string['userplancurrentphase'] = 'Fase actual';
 $string['useselfassessment'] = 'Usa l\'autoavaluació';
 $string['useselfassessment_desc'] = 'Els estudiants poden avaluar les seves pròpies trameses';

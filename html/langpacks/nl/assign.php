@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'nl', version '4.4'.
+ * Strings for component 'assign', language 'nl', version '4.5'.
  *
  * @package     assign
  * @category    string
@@ -70,6 +70,18 @@ $string['assign:viewgrades'] = 'Bekijk cijfers';
 $string['assign:viewownsubmissionsummary'] = 'Bekijk samenvatting van eigen inzending';
 $string['assignfeedback'] = 'Feedback plugin';
 $string['assignfeedbackpluginname'] = 'Feedback plugin';
+$string['assignmentduedigesthtml'] = '<p>Beste {$a->firstname},</p>
+<p>Volgende opdrachten moeten voltooid worden tegen <strong>{$a->duedate}</strong>.</p>
+{$a->digest}';
+$string['assignmentduedigestitem'] = '<strong>{$a->assignmentname}</strong> in cursus {$a->coursename}<br/>
+<strong>Tegen: {$a->duetime}</strong><br/>
+<a href="{$a->url}" aria-label="Ga naar {$a->assignmentname}">Ga naar de activiteit</a';
+$string['assignmentduedigestsubject'] = 'Je hebt opdrachten die binnen 7 dagen klaar moeten zijn';
+$string['assignmentduesoonhtml'] = '<p>Beste {$a->firstname},</p>
+<p>De opdracht <strong>{$a->assignmentname}</strong> in cursus {$a->coursename} moet bijna klaar zijn.</p>
+<p><strong>Klaar tegen: {$a->duedate}</strong></p>
+<p><a href="{$a->url}">Go to activity</a></p>';
+$string['assignmentduesoonsubject'] = 'Klaar tegen {$a->duedate}: {$a->assignmentname}';
 $string['assignmentisdue'] = 'Opdracht moet worden ingeleverd';
 $string['assignmentmail'] = '{$a->grader} heeft feedback gepost voor je ingestuurde opdracht voor \'{$a->assignment}\'
 
@@ -80,6 +92,12 @@ $string['assignmentmailhtml'] = '<p>{$a->grader} heeft feedback gepost voor je i
 $string['assignmentmailsmall'] = '{$a->grader} heeft feedback gepost voor je ingestuurde opdracht voor \'{$a->assignment}\'
 Je kunt de feedback nalezen onderaan je ingestuurde opdracht';
 $string['assignmentname'] = 'Naam van de opdracht';
+$string['assignmentoverduehtml'] = '<p>Beste {$a->firstname},</p>
+<p><strong>{$a->assignmentname}</strong> in cursus {$a->coursename} moest klaar zijn tegen <strong>{$a->duedate}</strong>.</p>
+<p>Misschien kun je je opdracht nog insturen {$a->cutoffsnippet}, maar je werk zal als "Te laat" gemarkeerd worden.</p>
+<p><a href="{$a->url}">Ga naar activiteit</a></p>';
+$string['assignmentoverduehtmlcutoffsnippet'] = '<strong>tegen {$a->cutoffdate}</strong>';
+$string['assignmentoverduesubject'] = 'Te laat: {$a->assignmentname}';
 $string['assignmentplugins'] = 'Opdracht plugins';
 $string['assignmentsperpage'] = 'Opdrachten per pagina';
 $string['assignsubmission'] = 'Inzendingsplugin';
@@ -88,20 +106,25 @@ $string['assigntimeleft'] = 'Tijd over';
 $string['attemptheading'] = 'Poging {$a->attemptnumber}: {$a->submissionsummary}';
 $string['attempthistory'] = 'Vorige pogingen';
 $string['attemptnumber'] = 'Pogingnummer';
-$string['attemptreopenmethod'] = 'Bijkomende pogingen';
+$string['attemptreopenmethod'] = 'Extra pogingen';
+$string['attemptreopenmethod_automatic'] = 'Automatisch';
+$string['attemptreopenmethod_automatic_help'] = 'Na elke poging is de volgende automatisch toegestaan.';
 $string['attemptreopenmethod_help'] = 'Deze instelling bepaalt of een leerling bijkomende pogingen kan insturen voor de opdracht. Voor elke inzending wordt de poging, het cijfer en de feedback bewaard en die kan bekeken worden door leraar en leerling.
 De beschikbare opties zijn:
 
-* Nooit - slechts één inzending mogelijk.
-* Manueel - er kunnen bijkomende pogingen toegestaan worden door een leraar.
-* Automatisch tot geslaagd - de leerling kan automatisch meer pogingen insturen tot de leerling een cijfer behaalt dat ingesteld is als cesuur in het cijferlijst voor deze opdracht.';
+* Manueel - Na elke poging kunnen er bijkomende pogingen toegestaan via de instuur en beoordelingspagina.
+* Automatisch - Na elke poging wordt een nieuwe poging automatisch toegestaan.
+* Automatisch tot geslaagd - de leerling kan automatisch meer pogingen insturen tot de leerling een slaagcijfer behaalt.';
 $string['attemptreopenmethod_manual'] = 'Manueel';
+$string['attemptreopenmethod_manual_help'] = 'Na elke poging kun je de volgende toestaan via de ingestuurde opdrachten-pagina of via de beoordelingspagina.';
 $string['attemptreopenmethod_none'] = 'Nooit';
 $string['attemptreopenmethod_untilpass'] = 'Automatisch tot geslaagd';
+$string['attemptreopenmethod_untilpass_help'] = 'Na elke poging zal de volgende automatisch toegestaan worden tot de leerling de score om te slagen behaalt.';
 $string['attemptsettings'] = 'Poginginstellingen';
 $string['availability'] = 'Beschikbaarheid';
 $string['back'] = 'Terug';
 $string['backtoassignment'] = 'Terug naar opdracht';
+$string['batchoperationaddattempt'] = 'Extra poging toestaan';
 $string['batchoperationconfirmaddattempt'] = 'Nog een poging toestaan voor de geselecteerde inzendingen?';
 $string['batchoperationconfirmdownloadselected'] = 'Geselecteerde inzendingen downloaden?';
 $string['batchoperationconfirmgrantextension'] = 'Geef extra tijd voor alle';
@@ -111,18 +134,25 @@ $string['batchoperationconfirmreverttodraft'] = 'Alle geselecteerde inzendingen 
 $string['batchoperationconfirmsetmarkingallocation'] = 'Beoordelaars toewijzen voor alle geselecteerde inzendingen?';
 $string['batchoperationconfirmsetmarkingworkflowstate'] = 'De status van de beoordelings-workflow voor alle geselecteerde inzendingen instellen?';
 $string['batchoperationconfirmunlock'] = 'Alle geselecteerde opdrachten deblokkeren?';
-$string['batchoperationlock'] = 'blokkeer inzendingen';
-$string['batchoperationreverttodraft'] = 'inzendingen terugdraaien naar concept';
+$string['batchoperationdownloadselected'] = 'Download';
+$string['batchoperationgrantextension'] = 'Verlengen';
+$string['batchoperationlock'] = 'Blokkeer';
+$string['batchoperationremovesubmission'] = 'Verwijderen';
+$string['batchoperationreverttodraft'] = 'Terug naar concept';
 $string['batchoperationsdescription'] = 'Met geselecteerde...';
-$string['batchoperationunlock'] = 'deblokkeer inzendingen';
+$string['batchoperationsetmarkingallocation'] = 'Beoordeler toewijzen';
+$string['batchoperationsetmarkingworkflowstate'] = 'Wijzig beoordelingsstatus';
+$string['batchoperationunlock'] = 'Deblokkeer';
 $string['batchsetallocatedmarker'] = 'Wijs een beoordelaar toe aan {$a} geselecteerde gebruiker(s).';
 $string['batchsetmarkingworkflowstateforusers'] = 'Stel de status van de beoordelings-workflow in voor {$a} geselecteerde gebruiker(s)';
 $string['beginassignment'] = 'Opdracht starten';
 $string['blindmarking'] = 'Anoniem insturen';
 $string['blindmarking_help'] = 'Anoniem insturen verbergt de identiteit van leerlingen voor de beoordelaars. De instellingen voor anoniem insturen zullen geblokkeerd worden als er minstens één inzending of één beoordeling is gebeurd voor deze opdracht.';
-$string['blindmarkingenabledwarning'] = 'Voor deze activiteit is anoniem insturen ingeschakeld. Cijfers zullen niet aan het cijferboek toegevoegd worden tot de identiteit van de leerlingen vrijgegeven is via het actiemenu van het beoordelen.';
+$string['blindmarkingenabledwarning'] = 'Voor deze activiteit is anoniem insturen ingeschakeld.';
+$string['blindmarkingnogradewarning'] = 'Voor deze activiteit is anoniem insturen ingeschakeld. Cijfers zullen niet aan het puntenboek toegevoegd worden tot de identiteit van de leerlingen vrijgegeven wordt via het "Acties"-menu.';
 $string['cachedef_overrides'] = 'Informatie gebruiker- en groepsoverschrijving';
 $string['calendardue'] = '{$a} moet worden ingeleverd';
+$string['calendarextension'] = '{$a} moet klaar zijn (verlenging)';
 $string['calendargradingdue'] = '{$a} moet worden beoordeeld';
 $string['caneditsubmission'] = 'Je kunt de inzending indienen/bewerken nadat de tijdslimiet is verstreken, maar deze wordt als te laat gemarkeerd.';
 $string['changefilters'] = 'Wijzig filters';
@@ -157,11 +187,15 @@ $string['cutoffdate_help'] = 'Indien ingesteld zal een opdracht geen inzendingen
 $string['cutoffdatecolon'] = 'Einde termijn: {$a}';
 $string['cutoffdatefromdatevalidation'] = 'Afsluitdatum kan niet voor startdatum zijn.';
 $string['cutoffdatevalidation'] = 'Afsluitdatum kan niet voor uiterste inleverdatum zijn.';
+$string['defaultgradescale'] = 'Beoordelingsschaal';
+$string['defaultgradescale_help'] = 'De standaard beoordelingsschaal voor nieuwe opdrachten. Enkel standaardschalen zijn beschikbaar.';
+$string['defaultgradetype'] = 'Beoordelingstype';
+$string['defaultgradetype_help'] = 'Het standaard beoordelingstype voor nieuwe opdrachten.';
 $string['defaultlayout'] = 'Standaard layout herstellen';
 $string['defaultsettings'] = 'Standaard opdrachtinstellingen';
 $string['defaultsettings_help'] = 'Deze instellingen definiëren de standaardinstellingen voor alle nieuwe opdrachten.';
 $string['defaultteam'] = 'Standaard groep';
-$string['deleteallsubmissions'] = 'Verwijder alle inzendingen';
+$string['deleteallsubmissions'] = 'Alle inzendingen';
 $string['description'] = 'Beschrijving';
 $string['disabled'] = 'Uitgeschakeld';
 $string['downloadall'] = 'Download alle inzendingen';
@@ -187,6 +221,7 @@ $string['editsubmissionother'] = 'Bewerk inzending voor {$a}';
 $string['enabled'] = 'Ingeschakeld';
 $string['enabletimelimit'] = 'Tijdslimiet opdrachten inschakelen';
 $string['enabletimelimit_help'] = 'Indien ingeschakeld, kun je een tijdslimiet instellen op de pagina met opdrachtinstellingen.';
+$string['errorgradechangessaveddetail'] = 'De wijzigingen aan het cijfer en feedback zijn niet bewaard.';
 $string['errornosubmissions'] = 'Er zijn geen inzendingen om te downloaden';
 $string['errorquickgradingvsadvancedgrading'] = 'De cijfers werden niet bewaard omdat deze opdracht nu op geavanceerd beoordelen is ingesteld';
 $string['errorrecordmodified'] = 'De cijfers werden niet bewaard omdat iemand één of meer gegevens heeft gewijzigd sinds jij de pagina hebt geladen.';
@@ -224,6 +259,8 @@ $string['expandreviewpanel'] = 'Beoordelingsscherm openklappen';
 $string['extensionduedate'] = 'Verlengen van de uiterste inleverdatum';
 $string['extensionduedatecurrent'] = 'Huidige verlengingsdatum';
 $string['extensionduedatenone'] = 'Geen';
+$string['extensionduedaterange'] = 'Varieert tussen {$a->earliest} en {$a->latest}';
+$string['extensionduedatewithout'] = 'Gebruikers zonder verlenging ({$a}';
 $string['extensionnotafterduedate'] = 'De datum voor de extra tijd moet na de uiterste inleverdatum zijn.';
 $string['extensionnotafterfromdate'] = 'De extra tijd einddatum moet na de startdatum zijn';
 $string['feedback'] = 'Feedback';
@@ -253,6 +290,7 @@ $string['feedbacksettings'] = 'Feedback-instellingen';
 $string['feedbacktypes'] = 'Feedbacktypes';
 $string['filesubmissions'] = 'Ingestuurde bestanden';
 $string['filter'] = 'Filter';
+$string['filterall'] = 'Alle';
 $string['filterdraft'] = 'Concept';
 $string['filtergrantedextension'] = 'Verleen verlenging';
 $string['filternone'] = 'Geen filter';
@@ -263,6 +301,7 @@ $string['fixrescalednullgrades'] = 'Deze opdracht bevat foute cijfers. Je kunt z
 $string['fixrescalednullgradesconfirm'] = 'Weet je zeker dat je foute cijfers wil herstellen? Alle foute cijfers zullen verwijderd worden. Dit kan je cursustotaal wijzigen.';
 $string['fixrescalednullgradesdone'] = 'Cijfers hersteld.';
 $string['gradeabovemaximum'] = 'Cijfer moet gelijk zijn aan of kleiner zijn dan {$a}.';
+$string['gradeactions'] = 'Beoordelingsacties';
 $string['gradebelowzero'] = 'Cijfer moet groter of gelijk zijnj aan nul.';
 $string['gradebreakdown'] = 'Cijferopbouw';
 $string['gradecanbechanged'] = 'Het cijfer kan gewijzigd worden';
@@ -310,6 +349,7 @@ $string['hidegrader_help'] = 'Indien ingeschakeld wordt de identiteit van een ge
 Merk op dat deze instelling geen invloed heeft op het veld voor opmerkingen op de beoordelingspagina.';
 $string['hideshow'] = 'Verberg/toon';
 $string['inactiveoverridehelp'] = '* Deze overschrijving is niet actief omdat de toegang tot de activiteit voor deze gebruiker beperkt is. Dit kan te wijten zijn aan roltoewijzingen, andere beperkingen of omdat de activiteit verborgen is.';
+$string['includesuspendedparticipants'] = 'Geschorste deelnemers inbegrepen';
 $string['indicator:cognitivedepth'] = 'Opdracht cognitief';
 $string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de cognitieve diepte die door de leerling is bereikt in een opdracht-activiteit.';
 $string['indicator:cognitivedepthdef'] = 'Cognitieve Opdracht';
@@ -342,6 +382,7 @@ $string['markingallocation'] = 'Gebruik toewijzing beoordelaars';
 $string['markingallocation_help'] = 'Indien dit ingeschakeld is samen met de beoordelingsworkflow, dan kun je beoordelaars toewijzen aan individuele leerlingen.';
 $string['markinganonymous'] = 'Sta gedeeltelijke vrijgave van cijfers toe terwijl anoniem wordt beoordeeld';
 $string['markinganonymous_help'] = 'Indien ingeschakeld in combinatie met anonieme inzendingen en de beoordelingsworkflow, is gedeeltelijke vrijgave van cijfers mogelijk terwijl anoniem wordt beoordeeld.';
+$string['markingstate'] = 'Beoordelingsstatus';
 $string['markingworkflow'] = 'Gebruik beoordelings-workflow';
 $string['markingworkflow_help'] = 'Indien ingeschakeld zullen beoordelingen door een workflow gaan, vooraleer ze aan leerlingen vrijgegeven worden. Dit laat meerdere beoordelingssessies toe zodat de cijfers tegelijk aan alle leerlingen gegeven kunnen worden.';
 $string['markingworkflowstate'] = 'Status van de beoordelings-workflow';
@@ -359,12 +400,15 @@ $string['markingworkflowstatenotmarked'] = 'Niet beoordeeld';
 $string['markingworkflowstatereadyforrelease'] = 'Klaar om vrijgegeven te worden';
 $string['markingworkflowstatereadyforreview'] = 'Beoordeling klaar';
 $string['markingworkflowstatereleased'] = 'Vrijgegeven';
-$string['maxattempts'] = 'Maximum aantal pogingen';
+$string['maxattempts'] = 'Toegestaan aantal pogingen';
 $string['maxattempts_help'] = 'Het maximale aantal pogingen die een leerling kan doen. Na dit aantal pogingen zal een leerling zijn poging niet meer kunnen openen.';
 $string['maxgrade'] = 'Maximaal cijfer';
 $string['maxperpage'] = 'Maximaal aantal opdrachten per pagina';
 $string['maxperpage_help'] = 'Het maximaal aantal opdrachten die een beoordeler kan tonen op de opdracht beoordelingspagina. Nuttig om te verhinderen dat de pagina een time-out fout geeft bij cursussen met heel veel deelnemers.';
+$string['messageprovider:assign_due_digest'] = 'Melding opdracht moet klaar zijn 7 dagen vooraf';
+$string['messageprovider:assign_due_soon'] = 'Melding opdracht moet binnenkort klaar zijn';
 $string['messageprovider:assign_notification'] = 'Opdracht meldingen';
+$string['messageprovider:assign_overdue'] = 'Melding opdracht te laat';
 $string['modulename'] = 'Opdracht';
 $string['modulename_help'] = 'Met de opdrachtactiviteit kan een leraar taken geven aan leerlingen, hun werk ophalen en cijfers en feedback geven.
 
@@ -399,6 +443,7 @@ $string['noteamgrader'] = 'Lid van geen enkele groep, dus kan geen inzendingen d
 $string['notgraded'] = 'Niet beoordeeld';
 $string['notgradedyet'] = 'Nog niet beoordeeld';
 $string['notifications'] = 'Meldingen';
+$string['notifystudents'] = 'Verwittig gebruikers';
 $string['nouseroverrides'] = 'Er zijn momenteel geen gebruikersoverschrijvingen.';
 $string['nousers'] = 'Geen gebruikers';
 $string['nousersselected'] = 'Geen gebruikers geselecteerd';
@@ -468,8 +513,8 @@ $string['quickgradingchangessaved'] = 'De wijzigingen aan de cijfers zijn bewaar
 $string['quickgradingresult'] = 'Snel beoordelen';
 $string['recordid'] = 'Identificatie';
 $string['relativedatessubmissiontimeleft'] = 'Berekend voor elke leerling';
-$string['removeallgroupoverrides'] = 'Verwijder alle groepsoverschrijvingen';
-$string['removealluseroverrides'] = 'Verwijder alle gebruikersoverschrijvingen';
+$string['removeallgroupoverrides'] = 'Alle groepsoverschrijvingen';
+$string['removealluseroverrides'] = 'Alle gebruikersoverschrijvingen';
 $string['removesubmission'] = 'Verwijder ingestuurde opdrachten';
 $string['removesubmissionconfirm'] = 'Weet je zeker dat je je inzending wil verwijderen?';
 $string['removesubmissionconfirmforstudent'] = 'Weet je zeker dat je de inzending voor {$a} wilt verwijderen?';
@@ -506,6 +551,9 @@ $string['selectlink'] = 'Selecteer...';
 $string['selectuser'] = 'Selecteer {$a}';
 $string['sendlatenotifications'] = 'Stuur een melding naar de beoordelaars over te laat ingestuurde opdrachten';
 $string['sendlatenotifications_help'] = 'Indien ingeschakeld zullen beoordelaars (gewoonlijk leraren) een bericht ontvangen wanneer een leerling een opdracht te laat instuurt. De manier van berichtgeving kan ingesteld worden.';
+$string['sendnotificationduedatesoon'] = 'Verwittig gebruiker van een opdracht die bijna klaar moet zijn';
+$string['sendnotificationduedigest'] = 'Verwittig gebruiker van opdrachten die binnen 7 dagen klaar moeten zijn';
+$string['sendnotificationoverdue'] = 'Verwittig gebruikers van opdrachten die te laat zijn';
 $string['sendnotifications'] = 'Stuur een melding naar beoordelaars over ingestuurde opdrachten';
 $string['sendnotifications_help'] = 'Indien ingeschakeld zullen beoordelaars (gewoonlijk leraren) een bericht ontvangen wanneer een leerling een opdracht instuurt, te vroeg, op tijd en te laat. De manier van berichtgeving kan ingesteld worden.';
 $string['sendstudentnotifications'] = 'Verwittig leerling';
@@ -523,6 +571,7 @@ $string['showrecentsubmissions'] = 'Toon recente inzendingen';
 $string['status'] = 'Status';
 $string['studentnotificationworkflowstateerror'] = 'De status van de beoordelingsworkflow moet op \'vrijgegeven\' gezet worden om de leerlingen een melding te sturen.';
 $string['submission'] = 'Ingestuurde opdracht';
+$string['submissionactions'] = 'Instuuracties';
 $string['submissionattachments'] = 'Toon alleen bestanden tijdens het insturen';
 $string['submissionattachments_help'] = 'Indien ingeschakeld, worden bestanden alleen weergegeven op het verzendscherm.
 Anders worden bestanden weergegeven in zowel de opdrachtweergave als op de instuurschermen.';
@@ -604,9 +653,10 @@ $string['subplugintype_assignfeedback'] = 'Feedback plugin';
 $string['subplugintype_assignfeedback_plural'] = 'Feedback plugins';
 $string['subplugintype_assignsubmission'] = 'Instuurplugin';
 $string['subplugintype_assignsubmission_plural'] = 'Instuurplugins';
-$string['teamname'] = 'Team: {$a}';
+$string['teamname'] = 'Groep: {$a}';
 $string['teamsubmission'] = 'Leerlingen sturen groepsopdracht in';
-$string['teamsubmission_help'] = 'Indien ingeschakeld zullen de leerlingen in groepen verdeeld worden, gebaseerd op de standaard set groepen of een aangepaste groepering. De ingestuurde opdracht van een groep zal gedeeld worden door de groepsleden en alle leden van de groep zullen elkaars wijzigingen aan de opdracht zien.';
+$string['teamsubmission_help'] = 'Indien ingeschakeld zullen de leerlingen in groepen verdeeld worden, gebaseerd op de standaard set groepen of een aangepaste groepering. De ingestuurde opdracht van een groep zal gedeeld worden door de groepsleden en alle leden van de groep zullen elkaars wijzigingen aan de opdracht zien.
+Opmerking: je kunt deze instelling niet wijzigen als er al ingestuurde opdrachten zijn.';
 $string['teamsubmissiongroupingid'] = 'Groepering voor groepen van leerlingen';
 $string['teamsubmissiongroupingid_help'] = 'Dit is de groepering die de opdracht zal gebruiken om groepen voor leerlingen te vinden. Indien niet ingesteld zal de standaard set groepen gebruikt worden.';
 $string['textinstructions'] = 'Opdracht instructies';
@@ -648,6 +698,7 @@ $string['viewfeedbackforuser'] = 'Bekijk feedback voor gebruiker: {$a}';
 $string['viewfull'] = 'Bekijk volledig';
 $string['viewfullgradingpage'] = 'Open de volledige beoordelingspagina om feedback te geven';
 $string['viewgradebook'] = 'Bekijk de cijferlijst';
+$string['viewgrader'] = 'Bekijk beoordeler';
 $string['viewgrading'] = 'Bekijk alle ingestuurde opdrachten';
 $string['viewgradingformforstudent'] = 'Bekijk beoordelingspagina voor leerling:  (id={$a->id}, fullname={$a->fullname}).';
 $string['viewownsubmissionform'] = 'Bekijk je eigen pagina om de opdracht in te sturen';

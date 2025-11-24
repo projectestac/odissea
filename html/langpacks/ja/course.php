@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'ja', version '4.4'.
+ * Strings for component 'course', language 'ja', version '4.5'.
  *
  * @package     course
  * @category    string
@@ -101,6 +101,10 @@ $string['downloadcoursecontent_help'] = 'この設定ではコースコンテン
 $string['enabledownloadcoursecontent'] = 'コースコンテンツのダウンロードを有効にする';
 $string['errorendbeforestart'] = '終了日 ({$a}) は開始日の前にしてください。';
 $string['favourite'] = '星付きコース';
+$string['filterbothactive'] = '最初 ({$a->first}) 最後 ({$a->last})';
+$string['filterbyname'] = '姓名でフィルタする';
+$string['filterfirstactive'] = '最初 ({$a->first})';
+$string['filterlastactive'] = '最後 ({$a->last})';
 $string['gotosection'] = 'セクション {$a} に移動する';
 $string['gradetopassnotset'] = 'このコースには合格点が設定されていません。合格点はコースの評定アイテム (評定表セットアップ) で設定できます。';
 $string['hideendedcoursestask'] = '終了日にコースを秘匿する';

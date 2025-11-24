@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'publication', language 'it', version '4.4'.
+ * Strings for component 'publication', language 'it', version '4.5'.
  *
  * @package     publication
  * @category    string
@@ -51,9 +51,6 @@ $string['choose'] = 'Seleziona…';
 $string['configautoimport'] = 'Se i file consegnati dagli studenti devono essere importati automaticamente nelle istanze di cartella studenti. Questa opzione può essere gestita separatamente per ogni istanza.';
 $string['configmaxbytes'] = 'Dimensione massima di default per i file nella cartella studenti';
 $string['configmaxfiles'] = 'Numero massimo di default di file per utente';
-$string['configobtainstudentapproval'] = 'I file saranno visibili dopo il consenso dello studente.';
-$string['configobtainteacherapproval'] = 'I file degli studenti sono visibili di default a tutti gli altri partecipanti.';
-$string['configrequiremodintro'] = 'Disabilita l’opzione se non vuoi obbligare gli utenti a inserire una descrizione per ogni attività.';
 $string['courseuploadlimit'] = 'Limite di caricamento del corso';
 $string['currentlynotapproved'] = '* Approvazione non ancora concessa né rifiutata';
 $string['cutoffdate'] = 'Data limite';
@@ -133,7 +130,6 @@ $string['published_aftercheck'] = 'No, solo dopo l’approvazione di un docente'
 $string['published_immediately'] = 'Sì, immediatamente, senza l’approvazione di un docente';
 $string['rejected'] = 'Rifiutato';
 $string['rejectusers'] = 'Nascosto a tutti';
-$string['requiremodintro'] = 'Richiedi descrizione dell’attività';
 $string['reset'] = 'Ripristina';
 $string['reset_userdata'] = 'Tutti i dati';
 $string['resetstudentapproval'] = 'Ripristina stato';

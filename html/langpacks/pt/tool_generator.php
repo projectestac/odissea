@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'pt', version '4.4'.
+ * Strings for component 'tool_generator', language 'pt', version '4.5'.
  *
  * @package     tool_generator
  * @category    string
@@ -60,6 +60,9 @@ $string['error_nonexistingcourse'] = 'A disciplina especificada não existe';
 $string['error_nopageinstances'] = 'A disciplina selecionada não contém instâncias do módulo Página';
 $string['error_notdebugging'] = 'Não está disponível neste servidor porque a depuração (mensagens de erro) não está definida como PROGRAMADOR.';
 $string['error_nouserspassword'] = 'Tem de definir $CFG->tool_generator_users_password em \'config.php\' para gerar o plano de teste';
+$string['execute'] = 'Executar';
+$string['execute_cleanup'] = 'Limpar cenários';
+$string['execute_scenarios'] = 'A testar cenários';
 $string['fullname'] = 'Testar disciplina: {$a->size}';
 $string['maketestcourse'] = 'Criar disciplina experimental';
 $string['maketestplan'] = 'Criar plano de teste JMeter';
@@ -92,6 +95,7 @@ $string['sitesize_4'] = 'XL (aprox. 10GB; 1065 disciplinas, criadas em aprox. 5 
 $string['sitesize_5'] = 'XXL (aprox. 20GB; 4177 disciplinas, criadas em aprox. 10 horas)';
 $string['size'] = 'Tamanho da disciplina';
 $string['smallfiles'] = 'Ficheiros pequenos';
+$string['step_example'] = 'Exemplo de etapa:';
 $string['targetcourse'] = 'Disciplina alvo de teste';
 $string['testplanexplanation'] = 'Esta ferramenta cria um ficheiro JMeter de plano de teste juntamente com o ficheiro de credenciais do utilizador.
 
@@ -120,7 +124,10 @@ $string['testscenario'] = 'Criar cenários de teste';
 $string['testscenario_description'] = 'A criação de cenários de teste usa uma sintaxe limitada de ficheiros de funcionalidades para criar todos os elementos necessários para executar um teste manual.';
 $string['testscenario_errorparsing'] = 'Erro ao analisar o ficheiro de funcionalidade: {$a}';
 $string['testscenario_file'] = 'Ficheiro de funcionalidade';
-$string['testscenario_filedesc'] = 'Os ficheiros de funcionalidades carregados apenas podem conter cenários com etapas \'core_data_generator\'. Ainda não é compatível com esboços de cenários. Todos os cenários serão executados de uma só vez, mas as etapas em segundo plano serão ignoradas.';
+$string['testscenario_filedesc'] = 'Os ficheiros de funcionalidades carregados apenas podem conter cenários com etapas \'core_data_generator\' ou algumas etapas específicas que não requerem \'Selenium\'. Todos os cenários serão executados de uma só vez, exceto os que têm a tag @cleanup.';
+$string['testscenario_filedesc_cleanup'] = 'Os cenários com a tag @cleanup serão executados apenas se a configuração "Executar"
+está definida como "Limpar cenários". Para executar a limpeza através da CLI, pode utilizar a opção --cleanup.';
+$string['testscenario_filedesc_list'] = 'Esta é a lista de passos que podem ser utilizados no ficheiro de funcionalidades do cenário de teste:';
 $string['testscenario_invalidfile'] = 'O formato do ficheiro não é válido ou contém etapas inválidas.';
 $string['testscenario_invalidstep'] = 'Etapa desconhecida. Criar cenários de teste aceita apenas etapas do gerador.';
 $string['testscenario_nosteps'] = 'Não existem etapas para executar no ficheiro.';

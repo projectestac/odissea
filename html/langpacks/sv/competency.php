@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'sv', version '4.4'.
+ * Strings for component 'competency', language 'sv', version '4.5'.
  *
  * @package     competency
  * @category    string
@@ -29,6 +29,8 @@ $string['allchildrenarecomplete'] = 'Alla underliggande är slutförda';
 $string['competencies'] = 'Kompetenser';
 $string['competenciesarenotenabled'] = 'Kompetenser är ej aktiverade';
 $string['competenciessettings'] = 'Kompetensinställningar';
+$string['competency'] = 'Kompetens';
+$string['competencyframework'] = 'Kompetensramverk';
 $string['completeplanstask'] = 'Slutför studieplaner som förfaller';
 $string['coursecompetencyoutcome_complete'] = 'Slutför kompetensen';
 $string['coursecompetencyoutcome_evidence'] = 'Bifoga bevis';
@@ -163,8 +165,10 @@ $string['privacy:metadata:usermodified'] = 'Användaren som skapade eller ändra
 $string['privacy:path:plans'] = 'Studieplaner';
 $string['privacy:path:relatedtome'] = 'Relaterat till mig';
 $string['privacy:path:userevidence'] = 'Bevis på tidigare lärande';
+$string['proficient'] = 'Kunnig';
 $string['pushcourseratingstouserplans'] = 'För över kursbedömningar till individuella studieplaner.';
 $string['pushcourseratingstouserplans_desc'] = 'Standardvärde för kursens inställning att uppdatera individuella studieplaner när kurskompetenser bedöms.';
+$string['rating'] = 'Bedömning';
 $string['syncplanscohorts'] = 'Synkronisera planer från kohorter med studieplansmallar.';
 $string['taxonomy_behaviour'] = 'Beteende';
 $string['taxonomy_competency'] = 'Kompetens';

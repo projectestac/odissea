@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'eu', version '4.4'.
+ * Strings for component 'block_rss_client', language 'eu', version '4.5'.
  *
  * @package     block_rss_client
  * @category    string
@@ -30,18 +30,21 @@ $string['addheadlineblock'] = 'Gehitu goialdeko RSS blokea';
 $string['addnew'] = 'Gehitu beste bat';
 $string['addnewfeed'] = 'Gehitu beste jario bat';
 $string['cannotmakemodification'] = 'Momentu honetan ez duzu RSS jario honi aldaketarik egiteko baimenik.';
-$string['choosefeedlabel'] = 'Aukeratu bloke honetan eskuragarri izatea nahi dituzun jarioak:';
+$string['choosefeedlabel'] = 'Aukeratu erakutsi beharreko jarioak';
 $string['clientchannellink'] = 'Gunearen iturria...';
 $string['clientnumentries'] = 'Jarioko erakutsi behar den lehenetsitako sarrera-kopurua.';
-$string['clientshowchannellinklabel'] = 'Jatorrizko gunearekiko esteka (jarioaren esteka) erakutsi behar al da? (Albiste-jarioaren estekarik ematen ez bada, bat ere ez dela erakutsiko kontuan hartu):';
+$string['clientshowchannellinklabel'] = 'Erakutsi jatorriaren esteka eskuragarri badago';
 $string['clientshowimagelabel'] = 'Erakutsi jarioaren irudia eskuragarria badago';
 $string['configblock'] = 'Konfiguratu bloke hau';
+$string['configmethodexisting'] = 'Aukeratu existitzen den RSS jarioa';
+$string['configmethodnew'] = 'Gehitu RSS jario berria';
 $string['couldnotfindfeed'] = 'Ezin izan da ID hori duen jariorik aurkitu';
 $string['couldnotfindloadrssfeed'] = 'Ezin izan da aurkitu edo kargatu RSS jarioa.';
 $string['customtitlelabel'] = 'Izenburu pertsonalizatua (jarioak ematen duen izenburua erakusteko hutsik utzi)';
 $string['deletefeedconfirm'] = 'Ziur zaude jario hau ezabatu nahi duzula?';
 $string['disabledrssfeeds'] = 'RSS jarioak desgaituta daude';
-$string['displaydescriptionlabel'] = 'Erakutsi esteka bakoitzaren deskribapena?';
+$string['displaydescriptionlabel'] = 'Erakutsi sarreren deskribapena';
+$string['displaysettings'] = 'Erakutsi RSS jarioaren ezarpenak';
 $string['editafeed'] = 'Editatu jarioa';
 $string['editfeeds'] = 'Editatu, harpidetu edo baja eman RSS jariotik';
 $string['editnewsfeeds'] = 'Editatu albiste-jarioak';
@@ -58,10 +61,10 @@ $string['feedsaddedit'] = 'Gehitu/editatu jarioak';
 $string['feedsconfigurenewinstance'] = 'Egin klik hemen RSS jarioak erakustearren bloke hau konfiguratzeko.';
 $string['feedsconfigurenewinstance2'] = 'Egin klik goiko edizio-ikonoan bloke hau RSS jarioak erakusteko konfiguratzeko.';
 $string['feedupdated'] = 'RSS jarioa eguneratu da';
-$string['feedurl'] = 'Jarioaren URLa';
+$string['feedurl'] = 'RSS esteka';
 $string['findmorefeeds'] = 'Bilatu RSS jario gehiago';
 $string['managefeeds'] = 'Kudeatu RSS jarioak';
-$string['nofeeds'] = 'Gune honetako ez da RSS jariorik definitu.';
+$string['nofeeds'] = 'Oraindik ez dago RSS jariorik. Aukeratu \'Gehitu RSS jario berria\'.';
 $string['numentries'] = 'Sarrerak jarioko';
 $string['pickfeed'] = 'Aukeratu RSS jario bat';
 $string['pluginname'] = 'RSS jarioak';
@@ -84,7 +87,7 @@ $string['rss_client:manageownfeeds'] = 'Kudeatu norberaren RSS jarioak';
 $string['rss_client:myaddinstance'] = 'Gehitu RSS jarioa bloke berria Aginte-panelean';
 $string['seeallfeeds'] = 'Ikusi jario guztiak';
 $string['sharedfeed'] = 'Partekatutako jarioa';
-$string['shownumentrieslabel'] = 'Blokeko erakuts daitekeen gehieneko sarrera-kopurua.';
+$string['shownumentrieslabel'] = 'Erakutsi beharreko sarrerak';
 $string['submitters'] = 'Nork sortu ahalko ditu RSS albiste-jarioak? Sortutako jarioak zure gunearen orri guztietatik eskuratu ahal izango dira.';
 $string['submitters2'] = 'Igorleak';
 $string['timeout'] = 'Minututan neurtutako denbora RSS jarioa iraungi aurretik. Hartu kontuan denbora honek iraungi aurretiko gutxieneko tartea definitzen duela; jarioa cron-aren hurrengo exekuzioan freskatuko da. Gomendatutako balioak 30 minutu edo gehiago dira.';

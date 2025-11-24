@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5p', language 'gl', version '4.4'.
+ * Strings for component 'h5p', language 'gl', version '4.5'.
  *
  * @package     h5p
  * @category    string

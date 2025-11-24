@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'files', language 'it', version '4.4'.
+ * Strings for component 'files', language 'it', version '4.5'.
  *
  * @package     files
  * @category    string
@@ -43,3 +43,25 @@ $string['privacy:metadata:files:source'] = 'Sorgente del file';
 $string['privacy:metadata:files:timecreated'] = 'Orario di creazione del file';
 $string['privacy:metadata:files:timemodified'] = 'Orario della modifica più recente del file.';
 $string['privacy:metadata:files:userid'] = 'Utente che ha creato il file';
+$string['redactor'] = 'Redazione del file';
+$string['redactor:exifremover'] = 'Rimozione EXIF';
+$string['redactor:exifremover:emptyremovetags'] = '';
+$string['redactor:exifremover:enabled'] = 'Abilita rimozione EXIF';
+$string['redactor:exifremover:enabled_desc'] = 'Di default, la rimozione EXIF supporta solo file JPG utilizzando PHP GD o ExifTool, se configurato.
+
+Per migliorare le prestazioni di rimozione EXIF, configurare le impostazioni di ExifTool di seguito.
+
+Per maggiori informazioni sull\'installazione di ExifTool, visitare {$a->link}';
+$string['redactor:exifremover:failedprocessexiftool'] = 'Redazione non andata a buon fine: non è stato possibile elaborare il file con ExifTool.';
+$string['redactor:exifremover:failedprocessgd'] = 'Redazione non andata a buon fine: non è stato possibile elaborare il file con PHP gd!';
+$string['redactor:exifremover:heading'] = 'ExifTool';
+$string['redactor:exifremover:mimetype'] = 'Tipi MIME supportati';
+$string['redactor:exifremover:mimetype_desc'] = 'Per aggiungere nuovi tipi MIME, assicurarsi che siano inclusi nei <a href="./tool/filetypes/index.php">Tipi di file</a>.';
+$string['redactor:exifremover:removetags'] = 'I tag EXIF che verranno rimossi.';
+$string['redactor:exifremover:removetags_desc'] = 'I tag EXIF che devono essere rimossi.';
+$string['redactor:exifremover:tag:all'] = 'Tutti';
+$string['redactor:exifremover:tag:gps'] = 'Solo GPS';
+$string['redactor:exifremover:tooldoesnotexist'] = 'Redazione non andata a buon fine: ExifTool non esiste.';
+$string['redactor:exifremover:toolpath'] = 'Percorso di ExifTool';
+$string['redactor:exifremover:toolpath_desc'] = 'Per utilizzare ExifTool, specificare il percorso all\'eseguibile ExifTool.
+In genere, nei sistemi Unix/Linux, il percorso è /usr/bin/exiftool.';

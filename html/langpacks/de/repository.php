@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'de', version '4.4'.
+ * Strings for component 'repository', language 'de', version '4.5'.
  *
  * @package     repository
  * @category    string
@@ -261,6 +261,7 @@ $string['unknownoriginal'] = 'Unbekannt';
 $string['unknownsource'] = 'Unbekannte Quelle';
 $string['unzipped'] = 'Erfolgreich entpackt';
 $string['upload'] = 'Datei hochladen';
+$string['uploaderror'] = 'Fehler beim Hochladen einer Datei';
 $string['uploading'] = 'Wird hochgeladen...';
 $string['uploadsucc'] = 'Datei wurde erfolgreich hochgeladen';
 $string['uselatestfile'] = 'Letzte Datei benutzen';

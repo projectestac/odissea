@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'zh_cn', version '4.4'.
+ * Strings for component 'question', language 'zh_cn', version '4.5'.
  *
  * @package     question
  * @category    string
@@ -313,7 +313,6 @@ $string['nocate'] = '没有这样的类别{$a}！';
 $string['noconditionspecified'] = '请指定一个条件';
 $string['nopermissionadd'] = '您没有在此处添加试题的权限。';
 $string['nopermissionedit'] = '您无权从此处编辑问题';
-$string['nopermissionmove'] = '您没有将试题从此处移走的权限。您必须保存此试题在此类别中，或者将其另存为一道新试题。';
 $string['noprobs'] = '在题目数据库中未发现问题。';
 $string['noquestionbanks'] = '未找到题库插件。';
 $string['noquestions'] = '未找到可导出的试题。请确认您要导出的类别包含试题。';
@@ -404,7 +403,11 @@ $string['questionbehavioursorderexplained'] = '按您希望在下拉菜单中看
 $string['questioncategories'] = '试题类别';
 $string['questioncategory'] = '试题类别';
 $string['questioncatsfor'] = '“{$a}”的试题类别';
+$string['questiondefaultssave'] = '启用保存问题默认值';
+$string['questiondefaultssave_desc'] = '在提交编辑问题表单时，是否应将“默认标记”、“一个或多个答案”等问题选项保存为用户首选项，以便在用户下次访问表单时用作默认值。';
 $string['questiondoesnotexist'] = '该试题不存在';
+$string['questionediting'] = '编辑问题';
+$string['questionediting_desc'] = '这些设置适用于编辑问题表单。';
 $string['questionformtagheader'] = '{$a} 标签';
 $string['questionidmismatch'] = '试题 ID 不匹配';
 $string['questionloaderror'] = '无法载入问题选项。';

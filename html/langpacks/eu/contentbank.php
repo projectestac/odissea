@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'eu', version '4.4'.
+ * Strings for component 'contentbank', language 'eu', version '4.5'.
  *
  * @package     contentbank
  * @category    string
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['author'] = 'Egilea';
 $string['choosecontext'] = 'Aukeratu ezazu ikastaroa edo kategoria...';
 $string['contentbank'] = 'Eduki-bankua';
+$string['contentbankcustomfields'] = 'Eduki-bankuko eremu pertsonalizatuak';
 $string['contentbankpreferences'] = 'Eduki-bankuko hobespenak';
 $string['contentcopied'] = 'Edukia kopiatu da.';
 $string['contentcreated'] = 'Edukia sortuta.';
@@ -50,6 +51,7 @@ $string['deletecontentconfirm'] = 'Ziur zaude <em>\'{$a->name}\'</em> edukia eta
 $string['deletecontentconfirmlinked'] = 'Edukia soilik eduki-bankutik ezabatuko da. Une honetan eduki hau estekatuta daukaten lekuetan esteka eduki honen kopia batekin ordezkatuko da.';
 $string['displaydetails'] = 'Erakutsi eduki-bankua fitxategien xehetasunekin';
 $string['displayicons'] = 'Erakutsi eduki-bankua ikonoekin';
+$string['displayunlisted'] = 'Erakutsi zerrendatik kanpoko edukia';
 $string['emptynamenotallowed'] = 'Izena ezin da hutsik utzi';
 $string['errordeletingcontentfromcategory'] = 'Errorea {$a} kategoriako edukiak ezabatzean.';
 $string['errornofile'] = 'Edukia sortzeko bateragarria den fitxategia beharrezkoa da.';

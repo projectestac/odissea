@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_admin_presets', language 'ja', version '4.4'.
+ * Strings for component 'tool_admin_presets', language 'ja', version '4.5'.
  *
  * @package     tool_admin_presets
  * @category    string
@@ -37,8 +37,9 @@ $string['created'] = '作成';
 $string['currentvalue'] = '現在の値';
 $string['deletepreset'] = '本当に「 {$a} 」サイト管理プリセットを削除してもよろしいですか?';
 $string['deletepresettitle'] = '{$a} プリセットを削除してもよろしいですか?';
-$string['deletepreviouslyapplied'] = 'このプリセットは以前適用されたものです。プリセットを削除した場合、あなたのサイトから完全に削除されます。あなたはこのプリセットを適用する前の状態に戻せません。';
+$string['deletepreviouslyapplied'] = '本当にサイト管理プリセット {$a} を削除してもよろしいですか?<br /><br />このプリセットは以前に適用されています。プリセットを削除した場合、あなたのサイトから完全に削除されます。あなたはこのプリセットを適用する前の設定に戻せなくなります。';
 $string['deleteshow'] = 'サイト管理プリセットを削除する';
+$string['editadminpresetname'] = '管理プリセット名を編集する';
 $string['eventpresetdeleted'] = 'プリセットが削除されました。';
 $string['eventpresetdownloaded'] = 'プリセットがダウンロードされました。';
 $string['eventpresetexported'] = 'プリセットが作成されました。';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'pt', version '4.4'.
+ * Strings for component 'grades', language 'pt', version '4.5'.
  *
  * @package     grades
  * @category    string
@@ -523,7 +523,9 @@ $string['missingitemtypeoreid'] = 'O índice do array (itemtype ou eid) está em
 $string['missingscale'] = 'É preciso selecionar uma escala';
 $string['mode'] = 'Moda';
 $string['modgrade'] = 'Nota';
-$string['modgrade_help'] = 'Selecione o tipo de nota a utilizar nesta atividade. Se escolher a opção \'Escala\', poderá selecionar o tipo de escala a usar a partir da lista pendente. Se selecionar a opção \'Nota\', poderá definir a nota máxima disponível para esta atividade.';
+$string['modgrade_help'] = '* Ponto - Um valor numérico
+* Nenhum - Apenas feedback
+* Escala - Um item de uma lista';
 $string['modgradecantchangegradetype'] = 'Não pode alterar o tipo, porque já existem notas atribuídas neste item de avaliação.';
 $string['modgradecantchangegradetypemsg'] = 'Como algumas notas já foram atribuídas, o tipo de nota não pode ser alterado. Se pretender alterar a nota máxima, deve primeiro selecionar se pretende, ou não, "Reajustar notas existentes".';
 $string['modgradecantchangegradetyporscalemsg'] = 'Algumas notas já foram atribuídas, por isso, o tipo de nota e a escala não podem ser alterados.';
@@ -728,9 +730,9 @@ $string['recovergradesdefault'] = 'Recuperação de notas';
 $string['recovergradesdefault_help'] = 'Se ativar esta opção, por predefinição, serão recuperadas as notas antigas quando se reinscreve um aluno numa disciplina.';
 $string['refreshpreview'] = 'Atualizar pré-visualização';
 $string['regradeanyway'] = 'Voltar a avaliar';
-$string['removeallcoursegrades'] = 'Apagar todas as notas';
+$string['removeallcoursegrades'] = 'Todas as notas';
 $string['removeallcoursegrades_help'] = 'Se selecionado, todas as notas que foram adicionadas manualmente na pauta serão apagadas, juntamente com os dados e as notas que foram substituídas, excluídas, ocultadas e bloqueadas. Apenas as notas associadas às atividades permanecerão.';
-$string['removeallcourseitems'] = 'Apagar todos os itens e categorias';
+$string['removeallcourseitems'] = 'Todos os itens e categorias';
 $string['removeallcourseitems_help'] = 'Se ativar esta opção, todas as categorias e itens de avaliação que foram adicionadas manualmente na pauta serão apagados, juntamente com os dados e as notas que foram substituídas, excluídas, ocultadas e bloqueadas. Apenas permanecerão os itens de avaliação associados às atividades.';
 $string['report'] = 'Relatório';
 $string['reportdefault'] = 'Predefinições do relatório ({$a})';

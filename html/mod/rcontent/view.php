@@ -8,29 +8,26 @@ $a = optional_param('a', false, PARAM_INT); // Rcontent instance ID
 
 if ($id !== false) {
     if (($cm = get_coursemodule_from_id('rcontent', $id)) === false) {
-        print_error('Course Module ID was incorrect');
+        throw new moodle_exception('invalidcoursemodule');
     }
     if (($course = $DB->get_record('course', array('id' => $cm->course))) === false) {
-        print_error('Course is misconfigured');
+        throw new moodle_exception('invalidcourseid');
     }
-
     if (($rcontent = $DB->get_record('rcontent', array('id' => $cm->instance))) === false) {
-        print_error('Course module is incorrect');
+        throw new moodle_exception('invalidcoursemoduleid');
     }
 } else if ($a !== false) {
     if (($rcontent = $DB->get_record('rcontent', array('id' => $a))) === false) {
-        print_error('Course module is incorrect');
+        throw new moodle_exception('invalidcoursemoduleid');
     }
-
     if (($course = $DB->get_record('course', array('id' => $rcontent->course))) === false) {
-        print_error('Course is misconfigured');
+        throw new moodle_exception('invalidcourseid');
     }
-
     if (($cm = get_coursemodule_from_instance('rcontent', $rcontent->id, $course->id)) === false) {
-        print_error('Course Module ID was incorrect');
+        throw new moodle_exception('invalidcoursemodule');
     }
 } else {
-    print_error('You must specify a course_module ID or an instance ID');
+    throw new moodle_exception('invalidaction');
 }
 
 if (!empty($rcontent->frame) || $rcontent->popup == 1) {
@@ -66,7 +63,12 @@ $rcontent->cmid = $cm->id;
 $return = AuthenticateUserContent($rcontent);
 
 if ($return->AutenticarUsuarioContenidoResult->Codigo <= 0 || !isset($return->AutenticarUsuarioContenidoResult->URL) || empty($return->AutenticarUsuarioContenidoResult->URL)) {
-    print_error(get_string('error_authentication', 'local_rcommon').$return->AutenticarUsuarioContenidoResult->Codigo.', '.$return->AutenticarUsuarioContenidoResult->Descripcion);
+    throw new moodle_exception(
+        'error_authentication',
+        'local_rcommon',
+        '',
+        $return->AutenticarUsuarioContenidoResult->Codigo . ', ' . $return->AutenticarUsuarioContenidoResult->Descripcion
+    );
 }
 
 $url = $return->AutenticarUsuarioContenidoResult->URL;

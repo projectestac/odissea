@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'es', version '4.4'.
+ * Strings for component 'scorm', language 'es', version '4.5'.
  *
  * @package     scorm
  * @category    string
@@ -38,6 +38,7 @@ $string['aicchacptimeout_desc'] = 'Periodo de tiempo en minutos en el que una se
 $string['aiccuserid'] = 'AICC pasa el número ID del usuario';
 $string['aiccuserid_desc'] = 'El estándar AICC para los nombres de usuario es muy restrictivo en comparación con Moodle, y sólo permite caracteres alfanuméricos, guiones y subrayado. No se permiten puntos, espacios y el símbolo @. Si está activado, los números ID de usuario se pasan al paquete AICC en lugar de los nombres de usuario.';
 $string['aliasonly'] = 'Cuando se selecciona un archivo imsmanifest.xml de un repositorio debemos utilizar un alias / atajo para este archivo.';
+$string['allattempts'] = 'Todos los intentos SCORM';
 $string['allowapidebug'] = 'Activar depuración y trazado API (ajustar la máscara de captura con apidebugmask)';
 $string['allowtypeaicchacp'] = 'Habilitar AICC HACP externo';
 $string['allowtypeaicchacp_desc'] = 'Si se habilita permite comunicaciones externas AICC HACP sin necesidad de identidicación de usuario para peticiones de un paquete AICC externo';
@@ -60,7 +61,7 @@ $string['attemptstatusmy'] = 'Solo Área personal';
 $string['attemptsx'] = '{$a} intentos';
 $string['attr_error'] = 'Valor incorrecto para el atributo ({$a->attr}) en la marca {$a->tag}.';
 $string['autocommit'] = 'Auto-guardado';
-$string['autocommit_help'] = 'Si está habilitado, los datos SCORM se guarda automáticamente en la base de datos. Útil para los objetos SCORM que no guardan sus datos con regularidad.';
+$string['autocommit_help'] = 'Si está habilitado, los datos SCORM se guardan automáticamente en la base de datos. Útil para los objetos SCORM que no guardan sus datos con regularidad.';
 $string['autocommitdesc'] = 'Guardar automáticamente los datos SCORM si el paquete SCORM no ha sido guardado.';
 $string['autocontinue'] = 'Continuación automática';
 $string['autocontinue_help'] = '<p><strong>Autocontinuar</strong></p>
@@ -116,7 +117,7 @@ $string['datadir'] = 'Error del sistema de archivos: No se puede crear el direct
 $string['defaultdisplaysettings'] = 'Configuración de pantalla predeterminada';
 $string['defaultgradesettings'] = 'Configuración de calificación predeterminada';
 $string['defaultothersettings'] = 'Otras configuraciones predeterminadas';
-$string['deleteallattempts'] = 'Eliminar todos los intentos SCORM';
+$string['deleteallattempts'] = 'Borrar todos los intentos SCORM';
 $string['deleteattemptcheck'] = '¿Está totalmente seguro que quiere eliminar completamente estos intentos?';
 $string['deleteselected'] = 'Eliminar los intentos seleccionados';
 $string['deleteuserattemptcheck'] = '¿Está seguro que quiere eliminar completamente todos sus intentos?';

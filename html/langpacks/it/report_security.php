@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'it', version '4.4'.
+ * Strings for component 'report_security', language 'it', version '4.5'.
  *
  * @package     report_security
  * @category    string
@@ -128,6 +128,7 @@ $string['check_unsecuredataroot_error'] = 'La cartella dataroot <code>{$a}</code
 $string['check_unsecuredataroot_name'] = 'Dataroot non sicura';
 $string['check_unsecuredataroot_ok'] = 'La Dataroot non deve essere accessibile via web.';
 $string['check_unsecuredataroot_warning'] = 'La cartella dataroot <code>{$a}</code> si trova in una posizione errata e potrebbe essere esposta pubblicamente sul web!';
+$string['check_upgradefile_info'] = 'I file delle note di aggiornamento non devono essere pubblici';
 $string['check_vendordir_details'] = '<p>La cartella <em>{$a->path}</em> contiene diverse librerie di terze parti e le relative dipendenze, generalmente installate da PHP Composer. Queste librerie possono essere necessarie per lo sviluppo locale oppure per la installazione di framework PHPUnit. La cartella può anche contenere codice potenzialmente pericoloso esponendo il sito ad attacchi da remoto.</p><p>Poichè il contenuto della cartella non è necessario per il funzionamento di Moodle in produzione, si raccomanda caldamente di rimuovere la cartella qualora il sito sia accessibile pubblicamente oppure di impedirne l\'accesso pubblico.</p>';
 $string['check_vendordir_info'] = 'La cartella fornitori non deve essere presente in siti pubblici';
 $string['check_vendordir_name'] = 'Cartella fornitori';

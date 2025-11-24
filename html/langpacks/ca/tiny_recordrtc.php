@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_recordrtc', language 'ca', version '4.4'.
+ * Strings for component 'tiny_recordrtc', language 'ca', version '4.5'.
  *
  * @package     tiny_recordrtc
  * @category    string
@@ -25,8 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowedpausing'] = 'Permet fer pausa';
 $string['allowedtypes'] = 'Tipus d\'enregistrament';
-$string['allowedtypes_desc'] = 'Quins botons d\'enregistrament haurien d\'aparèixer a Atto? A més d\'aquest paràmetre, també hi ha capacitats que poden controlar l\'accés als botons d\'usuaris concrets en contextos concrets.';
+$string['allowedtypes_desc'] = 'Quins tipus d\'enregistrament es poden fer a l\'editor TinyMCE? A més d\'aquesta configuració, hi ha capacitats que controlen l\'accés a les opcions d\'enregistrament.';
 $string['attachrecording'] = 'Adjunta un enregistrament';
 $string['audioandvideo'] = 'Àudio i vídeo';
 $string['audiobitrate'] = 'Taxa de bits d\'àudio';
@@ -38,21 +39,21 @@ $string['audiotitle'] = 'Enregistra àudio';
 $string['confirm_yes'] = 'Sí';
 $string['discard_desc'] = 'Hi ha un enregistrament en curs. El voleu aturar?';
 $string['discard_title'] = 'Tanca la confirmació';
-$string['gumabort'] = 'Ha passat alguna cosa estranya que ha impedit l\'accés a la càmera o al micròfon.';
+$string['gumabort'] = 'Ha passat alguna cosa que ha impedit l\'accés a la càmera, al micròfon o a la pantalla.';
 $string['gumabort_title'] = 'Ha passat alguna cosa';
-$string['gumnotallowed'] = 'Cal que permeteu l\'accés a la càmera i/o al micròfon';
+$string['gumnotallowed'] = 'Cal que permeteu al navegador l\'accés a la càmera, al micròfon o a la pantalla.';
 $string['gumnotallowed_title'] = 'Els permisos són incorrectes';
 $string['gumnotfound'] = 'No s\'ha detectat cap dispositiu d\'entrada.';
 $string['gumnotfound_title'] = 'No s\'ha trobat cap dispositiu';
-$string['gumnotreadable'] = 'Alguna cosa impedeix que el navegador accedeixi a la càmera o al micròfon; intenteu-ho de nou!';
+$string['gumnotreadable'] = 'Alguna cosa impedeix que el navegador accedeixi a la càmera, al micròfon o a la pantalla.';
 $string['gumnotreadable_title'] = 'Error de maquinari';
 $string['gumnotsupported'] = 'El vostre navegador no admet l\'enregistrament en una connexió no segura.';
 $string['gumnotsupported_title'] = 'No hi ha suport per a una connexió no segura';
-$string['gumoverconstrained'] = 'La càmera o el micròfon no pot crear un flux amb les restriccions preestablertes';
+$string['gumoverconstrained'] = 'La càmera, el micròfon o la pantalla actuals no permeten crear un flux amb les restriccions requerides.';
 $string['gumoverconstrained_title'] = 'Hi ha un problema amb les restriccions';
 $string['gumsecurity'] = 'El vostre navegador no admet l\'enregistrament mitjançant una connexió insegura.';
 $string['gumsecurity_title'] = 'No hi ha suport per a connexions insegures';
-$string['gumtype'] = 'S\'ha intentat obtenir el flux de la càmera o el micròfon, però no s\'han especificat les restriccions';
+$string['gumtype'] = 'S\'ha intentat obtenir el flux de la càmera, el micròfon o la pantalla, però no s\'ha especificat cap restricció.';
 $string['gumtype_title'] = 'No s\'ha definit cap restricció';
 $string['helplinktext'] = 'Enregistrament RTC';
 $string['insecurealert'] = 'El vostre navegador podria no permetre que aquest connector funcioni tret que s\'utilitzi mitjançant HTTPS o des de localhost.';
@@ -64,8 +65,10 @@ $string['norecordingfound'] = 'Alguna cosa ha anat malament. No s\'ha enregistra
 $string['norecordingfound_title'] = 'No s\'ha trobat cap enregistrament';
 $string['nowebrtc'] = 'El vostre navegador ofereix un suport limitat o cap suport per a les tecnologies WebRTC i no es pot utilitzar amb aquest connector. Canvieu o actualitzeu el vostre navegador.';
 $string['nowebrtc_title'] = 'No s\'admet la tecnologia WebRTC';
-$string['onlyaudio'] = 'Només àudio';
-$string['onlyvideo'] = 'Només vídeo';
+$string['onlyaudio'] = 'Àudio';
+$string['onlyscreen'] = 'Pantalla';
+$string['onlyvideo'] = 'Vídeo';
+$string['pause'] = 'Pausa';
 $string['pluginname'] = 'RecordRTC';
 $string['privacy:metadata'] = 'El connector RecordRTC no emmagatzema cap dada personal.';
 $string['recordagain'] = 'Enregistra de nou';
@@ -74,7 +77,21 @@ $string['recordagain_title'] = 'Confirmació d\'enregistrar de nou';
 $string['recordingfailed'] = 'L\'enregistrament ha fallat. Torneu-ho a provar.';
 $string['recordinguploaded'] = 'Enregistrament carregat';
 $string['recordrtc:recordaudio'] = 'Enregistra l\'àudio a l\'editor de text';
+$string['recordrtc:recordscreen'] = 'Enregistra la pantalla a l\'editor de text';
 $string['recordrtc:recordvideo'] = 'Enregistra el vídeo a l\'editor de text';
+$string['resume'] = 'Reprèn';
+$string['screenbitrate'] = 'Velocitat de bits de la pantalla';
+$string['screenbitrate_desc'] = 'Qualitat de l\'enregistrament de la pantalla (com més alt és el número, millor qualitat).';
+$string['screenbuttontitle'] = 'Enregistra la pantalla';
+$string['screenresolution_fhd'] = '1920 x 1080 (16:9)';
+$string['screenresolution_hd'] = '1280 x 720 (16:9)';
+$string['screensharingstopped'] = 'Heu deixat de compartir la pantalla abans de començar l\'enregistrament. Heu de permetre la compartició de la pantalla a la configuració del navegador i tornar a començar l\'enregistrament.';
+$string['screensharingstopped_title'] = 'S\'ha aturat la compartició';
+$string['screensize'] = 'Mida de l\'enregistrament de la pantalla';
+$string['screensize_desc'] = 'La mida de la resolució de sortida del vídeo.';
+$string['screentimelimit'] = 'Temps límit de pantalla';
+$string['screentimelimit_desc'] = 'Durada màxima de l\'enregistrament per a l\'enregistrament de la pantalla.';
+$string['screentitle'] = 'Enregistra la pantalla';
 $string['startrecording'] = 'Inicia l\'enregistrament';
 $string['stoprecording'] = 'Atura l\'enregistrament';
 $string['timelimitwarning'] = 'Heu d\'introduir un nombre més gran que 0.';
@@ -86,6 +103,7 @@ $string['uploadprogress'] = 'completat';
 $string['videobitrate'] = 'Velocitat de bits de vídeo';
 $string['videobitrate_desc'] = 'Qualitat de l\'enregistrament de vídeo (com més alt és el número, millor qualitat).';
 $string['videobuttontitle'] = 'Enregistra vídeo';
+$string['videorecordmenutitle'] = 'Menú d\'enregistrament de vídeo';
 $string['videotimelimit'] = 'Límit de temps del vídeo';
 $string['videotimelimit_desc'] = 'Durada màxima d\'enregistrament per a videoclips.';
 $string['videotitle'] = 'Enregistra vídeo';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'ar', version '4.4'.
+ * Strings for component 'enrol_database', language 'ar', version '4.5'.
  *
  * @package     enrol_database
  * @category    string
@@ -53,9 +53,13 @@ $string['localcoursefield'] = 'حقل المساق المحلي';
 $string['localrolefield'] = 'حقل الدور المحلي';
 $string['localuserfield'] = 'حقل المستخدم المحلي';
 $string['newcoursecategory'] = 'حقل تصنيف المساق الجديد';
+$string['newcourseenddate'] = 'حقل إنتهاء المساق الجديد';
+$string['newcourseenddate_desc'] = 'حدد التاريخ بصيغة yyy-mm-dd أو بشكل وقت يونكس أو اتركه فارغًا ليتم احتساب تاريخ انتهاء المساق من إعداد مدة المساق.';
 $string['newcoursefullname'] = 'حقل الاسم الكامل للمقرر الدراسي الجديد';
 $string['newcourseidnumber'] = 'حقل مُعرَّف المساق الجديد';
 $string['newcourseshortname'] = 'حقل الاسم المختصر للمقرر الدراسي الجديد';
+$string['newcoursestartdate'] = 'حقل بدء المساق الجديد';
+$string['newcoursestartdate_desc'] = 'حدد التاريخ بالتنسيق yyy-mm-dd أو بوقت يونكس، أو اتكه فارغًا ليتم تحديد تاريخ بدء المساق على أنه يومنا الحالي.';
 $string['newcoursetable'] = 'جدول المقررات الدراسية الجديدة البعيد';
 $string['newcoursetable_desc'] = 'حدد اسم الجدول الذي يضم قائمة بالمساقات التي ينبغي إنشاؤها تلقائياً. تركه فارغاً معناه لن يتم إنشاء أي مساق.';
 $string['pluginname'] = 'قاعدة البيانات الخارجية';

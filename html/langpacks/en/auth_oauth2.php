@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'en', version '4.4'.
+ * Strings for component 'auth_oauth2', language 'en', version '4.5'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -29,7 +29,7 @@ $string['accountexists'] = 'A user already exists on this site with this usernam
 $string['alreadylinked'] = 'This external account is already linked to an account on this site';
 $string['auth_oauth2description'] = 'OAuth 2 standards based authentication';
 $string['auth_oauth2settings'] = 'OAuth 2 authentication settings.';
-$string['confirmaccountemail'] = 'Hi {$a->fullname},
+$string['confirmaccountemail'] = 'Hi {$a->firstname},
 
 A new account has been requested at \'{$a->sitename}\'
 using your email address.
@@ -51,7 +51,7 @@ Please contact the site administrator immediately.';
 $string['confirmaccountemailsubject'] = '{$a}: account confirmation';
 $string['confirmationinvalid'] = 'The confirmation link is either invalid, or has expired. Please start the login process again to generate a new confirmation email.';
 $string['confirmationpending'] = 'This account is pending email confirmation.';
-$string['confirmlinkedloginemail'] = 'Hi {$a->fullname},
+$string['confirmlinkedloginemail'] = 'Hi {$a->firstname},
 
 A request has been made to link the {$a->issuername} login
 {$a->linkedemail} to your account at \'{$a->sitename}\'
@@ -91,7 +91,7 @@ Please log in as before, using the link on the login page.
 $string['emailpasswordchangeinfosubject'] = '{$a}: Change password information';
 $string['info'] = 'External account';
 $string['issuer'] = 'OAuth 2 service';
-$string['issuernologin'] = 'This issuer can not be used to login';
+$string['issuernologin'] = 'This issuer can not be used to log in.';
 $string['key'] = 'Key';
 $string['linkedlogins'] = 'Linked logins';
 $string['linkedloginshelp'] = 'Help with linked logins';

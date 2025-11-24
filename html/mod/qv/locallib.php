@@ -136,18 +136,26 @@ class qv{
         return $fs->get_file($this->context->id, 'mod_qv', 'content', 0, '/html/', 'index.htm');
     }
 
-    public function get_url() {
-        global $CFG;
-
+    public function get_url(): string
+    {
         if ($this->filetype == QV_FILE_TYPE_EXTERNAL) {
             return $this->reference;
-        } else if ($indexfile = $this->get_index_file()) {
-            $path = '/'.$this->context->id.'/mod_qv/content/0/'.$this->reference.$indexfile->get_filepath().$indexfile->get_filename();
-            return file_encode_url($CFG->wwwroot.'/pluginfile.php', $path, false);
-        } else {
-            print_error('invalidqvfile', 'qv');
         }
-        return false;
+
+        if ($indexfile = $this->get_index_file()) {
+            $url = moodle_url::make_pluginfile_url(
+                $this->context->id,
+                'mod_qv',
+                'content',
+                0,
+                $indexfile->get_filepath(),
+                $indexfile->get_filename()
+            );
+
+            return $url->out(false);
+        }
+
+        throw new moodle_exception('invalidqvfile', 'qv');
     }
 
 

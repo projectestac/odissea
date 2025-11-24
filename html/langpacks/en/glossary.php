@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'en', version '4.4'.
+ * Strings for component 'glossary', language 'en', version '4.5'.
  *
  * @package     glossary
  * @category    string
@@ -113,7 +113,7 @@ $string['definitions'] = 'Definitions';
 $string['deletecategory'] = 'Delete category';
 $string['deleteentry'] = 'Delete entry';
 $string['deleteentrya'] = 'Delete entry: {$a}';
-$string['deletenotenrolled'] = 'Delete entries by users not enrolled';
+$string['deletenotenrolled'] = 'Entries by users not enrolled';
 $string['deletingcomment'] = 'Deleting comment';
 $string['deletingnoneemptycategory'] = 'Deleting this category will not delete the entries it contains - they will be marked as uncategorised.';
 $string['descending'] = 'descending';
@@ -303,9 +303,9 @@ $string['privacy:metadata:glossary_entries:userid'] = 'The ID of the user that i
 $string['question'] = 'Question';
 $string['rejectedentries'] = 'Rejected entries';
 $string['rejectionrpt'] = 'Rejection report';
-$string['removeallglossarytags'] = 'Remove all glossary tags';
+$string['removeallglossarytags'] = 'All glossary tags';
 $string['resetglossaries'] = 'Delete entries from';
-$string['resetglossariesall'] = 'Delete entries from all glossaries';
+$string['resetglossariesall'] = 'Entries from all glossaries';
 $string['rssarticles'] = 'Number of RSS recent articles';
 $string['rssarticles_help'] = 'This setting specifies the number of glossary entry concepts to include in the RSS feed. Between 5 and 20 generally acceptable.';
 $string['rssfeed'] = 'RSS feed';

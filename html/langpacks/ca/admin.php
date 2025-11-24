@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'ca', version '4.4'.
+ * Strings for component 'admin', language 'ca', version '4.5'.
  *
  * @package     admin
  * @category    string
@@ -278,7 +278,7 @@ $string['configenablecalendarexport'] = 'Habiliteu l\'exportació o subscripció
 $string['configenablecomments'] = 'Habiliteu els comentaris';
 $string['configenablecourserequests'] = 'Si està activat, els usuaris amb la capacitat de sol·licitar cursos nous (moodle/course:request) podran sol·licitar cursos. Aquesta capacitat no està permesa a cap dels rols per defecte. Es pot aplicar en els contextos de sistema i de categoria.';
 $string['configenabledevicedetection'] = 'Habilita la detecció de mòbils, telèfons intel·ligents (<em>smartphones</em>), tauletes tàctils o altres dispositius (ordinadors de taula, portàtils, etc.) per a l\'aplicació de temes i altres funcionalitats.';
-$string['configenablemobilewebservice'] = 'Habilita els serveis mòbils per a l\'aplicació oficial de Moodle o per a d\'altres que ho demanin. Per a més informació, llegiu {$a}';
+$string['configenablemobilewebservice'] = 'Els serveis web mòbils són necessaris per a l\'aplicació Moodle. Si el vostre lloc web utilitza HTTPS, els serveis web mòbils estan habilitats per defecte. Per a més informació, consulteu {$a}.';
 $string['configenablerssfeeds'] = 'Si s\'habilita, es generen canals de continguts RSS per a diverses funcionalitats a tot el lloc, com ara blogs, fòrums, activitats de base de dades i glossaris. Teniu en compte que també cal habilitar els canals de continguts RSS per als mòduls d\'activitat concrets.';
 $string['configenablerssfeedsdisabled'] = 'No està disponible perquè l\'RSS està inhabilitat per a tot el lloc. Per habilitar-lo, aneu a la pantalla de variables en Administració > Configuració.';
 $string['configenablerssfeedsdisabled2'] = 'Els canals RSS estan inhabilitats a tot el lloc. Poden ser habilitats des de les Característiques avançades de l\'Administració del lloc.';
@@ -305,7 +305,7 @@ $string['configfrontpageloggedin'] = 'Els elements seleccionats anteriorment es 
 $string['configfullnamedisplay'] = 'Això defineix com es mostren els noms quan es mostren complets. El valor per defecte, «language», deixa que la cadena «fullnamedisplay» del paquet d\'idiomes actual decideixi. Alguns idiomes tenen convencions de visualització de noms diferents.
 
 Per a la majoria de llocs monolingües, la configuració més eficient és «firstname lastname», però podeu optar per ocultar els cognoms completament. Els marcadors de posició que es poden utilitzar són: firstname, lastname, firstnamephonetic, lastnamephonetic, secondname i alternatename.';
-$string['configgeoipfile'] = 'Ubicació del fitxer binari de dades de GeoLite2 City. Aquest fitxer no és part de la distribució del Moodle i cal obtenir-lo de <a href="https://www.maxmind.com/">MaxMind</a> per separat. Podeu comprar la versió comercial o utilitzar la versió gratuïta. Us haureu de registrar per descarregar el fitxer de dades de ciutats, cosa que podeu fer a <a href="https://dev.maxmind.com/geoip/geoip2/geolite2/" >https://dev.maxmind.com/geoip/geoip2/geolite2/</a>. Una vegada us hàgiu registrat i hàgiu descarregat el fitxer, l\'heu d\'extreure al directori «{$a}» del vostre servidor.';
+$string['configgeoipfile'] = 'Ubicació del fitxer de dades binàries de GeoIP City. Aquest fitxer no forma part de la distribució del Moodle i s\'ha d\'obtenir per separat de <a href="https://www.maxmind.com/">MaxMind</a>. Podeu comprar una versió comercial o utilitzar la versió gratuïta. Haureu de registrar-vos per descarregar el fitxer de la base de dades de City, cosa que podeu fer a <a href="https://dev.maxmind.com/geoip/geoip2/geolite2/" >https://dev.maxmind.com/geoip/geoip2/geolite2/</a>. Un cop us hàgiu registrat i descarregat el fitxer, extraieu-lo al directori «{$a}» del vostre servidor.';
 $string['configgetremoteaddrconf'] = 'Si el vostre servidor està darrere un servidor intermediari invers (<em>reverse proxy</em>), podeu modificar aquest paràmetre per especificar quines capçaleres HTTP són de confiança per contenir adreces IP remotes. Les capçaleres es llegeixen per ordre, utilitzant la primera que estigui disponible.';
 $string['configgradebookroles'] = 'Aquest paràmetre us permet controlar qui apareix al butlletí de qualificacions. Els usuaris que tinguin assignat almenys un d\'aquests rols en un curs apareixeran al butlletí de qualificacions d\'aquest curs.';
 $string['configgradeexport'] = 'Trieu quins formats voleu com a mètodes primaris d\'exportació del butlletí de qualificacions. Els connectors que trieu definiran i actualitzaran un camp de «darrera exportació» per a cada qualificació. Això tindrà com a conseqüència, per exemple, que els registres exportats s\'identifiquin com a «nous» o «actualitzats». Si no n\'esteu segur, podeu deixar totes les opcions desactivades.';
@@ -445,7 +445,7 @@ $string['confirmation'] = 'Confirmació';
 $string['confirmationpending'] = 'Confirmació pendent';
 $string['confirmcontextlock'] = '{$a->contextname} actualment està descongelat. Congelar-lo farà que sigui de només lectura i evitarà que els usuaris hi puguin fer canvis. Confirmeu que voleu continuar?';
 $string['confirmcontextunlock'] = '{$a->contextname} actualment està congelat. Descongelar-lo permetrà que els usuaris hi facin canvis. Confirmeu que voleu continuar?';
-$string['confirmdeletecomments'] = 'Esteu segur que voleu esborrar els comentaris seleccionats?';
+$string['confirmdeletecomments'] = 'Confirmeu que voleu esborrar els comentaris seleccionats?';
 $string['confirmed'] = 'Confirmat';
 $string['contactsitesupport'] = 'Contacteu amb el suport del lloc';
 $string['contenttypeuninstalling'] = 'Hi ha {$a->count} continguts admesos per {$a->type} Se suprimiran. Segur que voleu continuar?';
@@ -624,7 +624,7 @@ $string['enablecourserelativedates_desc'] = 'Permet configurar cursos per mostra
 $string['enablecourserequests'] = 'Habilita sol·licituds de cursos';
 $string['enabled'] = 'Habilitat';
 $string['enabledashboard'] = 'Activa el tauler';
-$string['enabledashboard_help'] = 'El tauler mostra per defecte els elements de la línia de temps, el calendari i els elements als quals s\'ha accedit recentment. Podeu establir un tauler diferent per defecte per a tothom i permetre als usuaris personalitzar el seu propi tauler. Si està inhabilitat, cal establir «Pàgina d\'inici per als usuaris» a un valor diferent del Tauler.';
+$string['enabledashboard_help'] = 'El tauler mostra per defecte els elements de la cronologia, el calendari i els elements als quals s\'ha accedit recentment. Podeu establir un tauler diferent per defecte per a tothom i permetre als usuaris personalitzar el seu propi tauler. Si està inhabilitat, cal establir «Pàgina d\'inici per als usuaris» a un valor diferent del Tauler.';
 $string['enabledevicedetection'] = 'Permet la detecció de dispositius';
 $string['enableglobalsearch'] = 'Habilita la cerca global';
 $string['enableglobalsearch_desc'] = 'Si està habilitat, les dades s\'indexaran i se sincronitzaran mitjançant una tasca programada.';
@@ -652,6 +652,7 @@ $string['enroladminnewcourse_help'] = 'Quan un administrador afegeix un nou curs
 $string['enrolinstancedefaults'] = 'Instància d\'inscripció per defecte';
 $string['enrolinstancedefaults_desc'] = 'Paràmetres d\'inscripció per defecte per als cursos nous.';
 $string['enrolmultipleusers'] = 'Inscriu els usuaris';
+$string['ensureauroraversion'] = 'El vostre lloc web s\'executa amb el motor de base de dades Amazon Aurora. La versió de MySQL a Amazon Aurora ha de ser compatible amb la versió del Moodle que esteu instal·lant o actualitzant. Comproveu la compatibilitat a <a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.30Updates.html">Actualitzacions del motor de base de dades per a Amazon Aurora MySQL versió 3</a>.';
 $string['entitytasklog'] = 'Registre de tasques';
 $string['environment'] = 'Entorn';
 $string['environmenterrortodo'] = 'Abans d\'instal·lar aquesta versió de Moodle heu de resoldre tots els problemes d\'entorn (errors) que s\'han trobat.';
@@ -721,8 +722,15 @@ $string['fullnamedisplay'] = 'Format del nom complet';
 $string['fullnamedisplayprivate'] = 'Format del nom complet - privat';
 $string['gdrequired'] = 'L\'extensió GD és necessària per a la conversió d\'imatges en Moodle.';
 $string['generalsettings'] = 'Paràmetres generals';
-$string['geoipfile'] = 'DB MaxMind per GeoLite2 City';
+$string['geoipdbedition'] = 'Edició de la base de dades GeoIP';
+$string['geoipdbedition_desc'] = 'Seleccioneu l\'edició de la base de dades GeoIP que voleu descarregar. Tingueu en compte que l\'ús de la base de dades GeoIP2-City requereix una llicència de pagament vàlida.';
+$string['geoipfile'] = 'Base de dades GeoIP City';
+$string['geoipmaxmindaccid'] = 'ID del compte MaxMind';
+$string['geoipmaxmindaccid_desc'] = 'L\'ID del compte creat al servei API de MaxMind.';
+$string['geoipmaxmindlicensekey'] = 'Clau de llicència de MaxMind';
+$string['geoipmaxmindlicensekey_desc'] = 'La clau de llicència del compte creat al servei API de MaxMind.';
 $string['geopluginapikey'] = 'Clau de l\'API de GeoPlugin';
+$string['geopluginapikey_desc'] = 'La clau de l\'API que s\'utilitza per accedir al servei GeoPlugin. Obteniu la vostra clau a <a href="https://www.geoplugin.com/" target="_blank">geoplugin.com</a>.';
 $string['getremoteaddrconf'] = 'Font de l\'adreça IP anotada';
 $string['globalsearch'] = 'Cerca global';
 $string['globalsearchmanage'] = 'Gestiona la cerca global';
@@ -734,7 +742,7 @@ $string['gradebookroles'] = 'Rols qualificats';
 $string['gradeexport'] = 'Mètodes primaris d\'exportació de qualificacions';
 $string['gradeexportdefault'] = 'Mètode d\'exportació de qualificacions per defecte';
 $string['gravatardefaulturl'] = 'URL de la imatge per defecte per a Gravatar';
-$string['gravatardefaulturl_help'] = 'Gravatar necessita una imatge per defecte que es visualitzarà quan no pugui trobar una imatge d\'un usuari determinat. Proporcioneu l\'URL complet d\'una imatge. Si deixeu aquest camp buit, Moodle intentarà utilitzar la imatge més apropiada per a la pàgina que estigueu veient. Fixeu-vos que Gravatar té un nombre de codis que poden utilitzar-se per <a href="https://en.gravatar.com/site/implement/images/#default-image">generar imatges per defecte</a>.';
+$string['gravatardefaulturl_help'] = 'el Gravatar necessita una imatge predeterminada per mostrar en cas que no pugui trobar una imatge per a un usuari determinat. Proporcioneu un URL complet per a una imatge. Els codis per generar imatges predeterminades estan disponibles a <a href="https://docs.gravatar.com/api/avatars/images/">Gravatar per a desenvolupadors - Sol·licituds d\'avatar</a>.';
 $string['group_customfield'] = 'Camps personalitzats de grups';
 $string['groupenrolmentkeypolicy'] = 'Política de contrasenyes per a les inscripcions de grups';
 $string['groupenrolmentkeypolicy_desc'] = 'Si està activat, les claus d\'inscripció al grup es comprovaran amb la política de contrasenyes especificada als paràmetres anteriors.';
@@ -784,6 +792,9 @@ $string['httpsecurity'] = 'Seguretat HTTP';
 $string['iconvrequired'] = 'Cal instal·lar l\'extensió ICONV.';
 $string['igbinary322buggyversion'] = 'L\'extensió php-igbinary instal·lada al lloc pot provocar problemes quan s\'executa amb PHP 7.2. Us recomanem que actualitzeu a php-igbinary 3.2.5 o posterior, o alternativament a PHP 7.3 o posterior.';
 $string['ignore'] = 'Ignora';
+$string['importantupdates_content'] = '<p>Al Moodle 5.0, les activitats de xat i enquesta s\'eliminen del nucli del Moodle. Estan disponibles com a complements al <a href="https://moodle.org/plugins/">directori de complements del Moodle</a>.</p>
+<p>Si voleu continuar utilitzant Xat o Enquesta al vostre lloc, podeu instal·lar-los com a complements quan actualitzeu al Moodle 5.0.</p>';
+$string['importantupdates_title'] = 'Actualització important sobre les activitats de xat i enquesta';
 $string['includemoduleuserdata'] = 'Inclou dades d\'usuari dels mòduls';
 $string['incompatibleblocks'] = 'Blocs incompatibles';
 $string['incompleteunicodesupport'] = 'La configuració actual de MySQL o MariaDB està utilitzant «utf8». Aquest conjunt de caràcters no admet caràcters de quatre bytes que incloguin alguns emojis. Si intenteu utilitzar aquests caràcters, es produirà un error en actualitzar un registre, i es perdrà tota la informació que s\'enviï a la base de dades. Modifiqueu la vostra configuració a «utf8mb4». Consulteu la documentació per obtenir-ne informació completa.';
@@ -802,9 +813,10 @@ $string['ipblocked'] = 'Aquest lloc no està disponible actualment.';
 $string['ipblocker'] = 'Bloquejador d\'IP';
 $string['ipblockersyntax'] = 'Poseu totes les entrades en una sola línia. Les entrades vàlides són l\'adreça IP completa (com ara <b>192.168.10.1</b>) que coincideix amb un únic host; o l\'adreça parcial (com ara <b>192.168</b>) que coincideix amb qualsevol adreça que comenci amb aquests números; o la notació CIDR (com ara <b>231.54.211.0/20</b>); o un interval d\'adreces IP (com ara <b>231.3.56.10-20</b>) on l\'interval s\'aplica a l\'última part de l\'adreça. No s\'admeten noms de domini de text (com ara «exemple.cat»). S\'ignoren les línies en blanc i el text que segueix un caràcter «#».';
 $string['iplookup'] = 'Cerca d\'adreça IP';
-$string['iplookupgeoplugin'] = 'El servei <a href="http://www.geoplugin.com">geoPlugin</a> s\'està utilitzant actualment per cercar informació geogràfica. Per a resultats més detallats us recomanem instal·lar una còpia local de la base de dades MaxMind GeoLite.';
-$string['iplookupinfo'] = 'Per defecte, Moodle utilitza el servidor lliure NetGeo (The Internet Geographic Database) per cercar la ubicació geogràfica d\'adreces IP. Malauradament, aquesta base de dades ja no és mantinguda i pot tornar dades <em>totalment incorrectes</em>. Es recomana que instal·leu una còpia local de la base de dades gratuïta GeoLite2 City de MaxMind.<br />La ubicació d\'adreces IP es mostra en un mapa simple o mitjançant Google Maps. Tingueu en compte que per tal d\'habilitar els mapes interactius de Google us caldrà tenir un compte de Google i demanar una clau de l\'API de Google Maps.';
-$string['iplookupmaxmindnote'] = 'Aquest producte inclou dades de GeoLite creades per MaxMind, disponibles en <a href="http://www.maxmind.com/">http://www.maxmind.com/</a>.';
+$string['iplookupgeoplugin'] = 'El servei <a href="https://www.geoplugin.com">geoPlugin</a> s\'utilitza actualment per cercar informació geogràfica. Per obtenir resultats més precisos, recomanem instal·lar una còpia local de la base de dades MaxMind GeoIP City.';
+$string['iplookupinfo'] = 'El servidor gratuït en línia NetGeo s\'utilitza per cercar ubicacions d\'adreces IP. Tot i això, la base de dades ja no es manté i pot retornar dades incorrectes. Es recomana instal·lar una còpia local d\'una base de dades GeoIP de MaxMind.<br />
+Si es proporciona una clau API V3 de Google Maps, la ubicació de l\'adreça IP es mostra mitjançant el Google Maps. Necessiteu un compte de Google i sol·licitar una clau API de Google Maps. Si no es proporciona cap clau API V3 de Google Maps, la ubicació de l\'adreça IP es mostra mitjançant OpenStreetMap.';
+$string['iplookupmaxmindnote'] = 'Aquest producte inclou dades de GeoIP City creades per MaxMind, disponibles a <a href="https://www.maxmind.com">https://www.maxmind.com</a>.';
 $string['iscustomadminwarnings'] = 'S\'ha detectat que el vostre lloc utilitza un directori d\'administració personalitzat. Aquesta funció ja no és compatible i s\'eliminarà després de Moodle 4.2.';
 $string['ishttpswarning'] = 'S\'ha detectat que el vostre lloc no està protegit mitjançant HTTPS. Es recomana migrar el vostre lloc a HTTPS per obtenir una major seguretat i una integració millorada amb altres sistemes.';
 $string['keeptagnamecase'] = 'Conserva les majúscules i minúscules en les etiquetes';
@@ -838,15 +850,21 @@ $string['locationsettings'] = 'Paràmetres d\'ubicació';
 $string['locked'] = 'Bloquejat';
 $string['lockoutduration'] = 'Durada del bloqueig del compte';
 $string['lockoutduration_desc'] = 'El compte bloquejat es desbloqueja automàticament després d\'aquest període.';
-$string['lockoutemailbody'] = 'El vostre compte amb nom d\'usuari {$a->username} al servidor «{$a->sitename}» ha estat blocat després de múltiples intents d\'inici de sessió no vàlids.
+$string['lockoutemailbody'] = 'Hola, {$a->firstname},
 
-Per desblocar el compte immediatament, aneu a l\'adreça següent
+El vostre compte amb el nom d\'usuari «{$a->username}» al servidor «{$a->sitename}»
+s\'ha bloquejat després de diversos intents d\'inici de sessió no vàlids.
+
+Per desbloquejar el compte immediatament, aneu a l\'adreça següent:
 
 {$a->link}
 
-En molts programes de correu, això apareixerà com un enllaç blau al qual heu de fer clic. Si això no funciona, llavors copieu i enganxeu l\'adreça a la finestra de navegació al vostre navegador.
+A la majoria de programes de correu, això hauria d\'aparèixer com un enllaç blau
+sobre el qual només cal fer clic. Si això no funciona, copieu i enganxeu l\'adreça a
+la línia d\'adreces a la part superior de la finestra del navegador web.
 
-Si us cal ajuda, contacteu amb el vostre administrador, {$a->admin}';
+Si necessiteu ajuda, poseu-vos en contacte amb l\'administrador del lloc,
+{$a->admin}';
 $string['lockoutemailsubject'] = 'El vostre compte a {$a} ha estat blocat';
 $string['lockouterrorunlock'] = 'La informació subministrada per desblocar el compte no és vàlida.';
 $string['lockoutthreshold'] = 'Llindar d\'intents per bloqueig del compte';
@@ -959,7 +977,6 @@ $string['moodlepartners_help'] = '<p>Moodle Partners són proveïdors de serveis
 <a href="https://moodle.com/partners">Troba un soci</a>';
 $string['moodleservices'] = 'Serveis Moodle';
 $string['moodleservices_help'] = 'Assegureu-vos d\'extreure el màxim profit del vostre entorn d\'aprenentatge Moodle emprant els següents serveis Moodle:';
-$string['multilangforceold'] = 'Imposa la sintaxi antiga de continguts multilingües: <span> sense class="multilang" i <lang>';
 $string['mustenablestats'] = 'Les estadístiques encara no han estat habilitades en aquest lloc.';
 $string['mycourses'] = 'Els meus cursos';
 $string['mydashboard'] = 'Tauler d\'eines per defecte del sistema';
@@ -1007,7 +1024,7 @@ $string['notifyloginthreshold'] = 'Llindar de les notificacions per correu';
 $string['notloggedinroleid'] = 'Rol per a usuaris que no hagin iniciat una sessió';
 $string['numberofmissingstrings'] = 'Nombre de cadenes per traduir: {$a}';
 $string['numberofstrings'] = 'Nombre total de cadenes: {$a->strings}<br />Per traduir: {$a->missing} ({$a->missingpercent} %)';
-$string['oauthrefreshtokenexpired'] = 'El testimoni d\'actualització d\'un dels serveis d\'OAuth {$a->issuer}  al vostre lloc {$a->siteurl} ha caducat. Això limitarà la funcionalitat de qualsevol connector que utilitzi aquest servei. Per solucionar aquest problema, visiteu la pàgina de configuració de Serveis OAuth 2 i feu clic a la icona «Connect system account» de la fila de la taula d\'aquest servei. Assegureu-vos d\'iniciar sessió utilitzant el mateix compte del servei per al sistema OAuth cada vegada.';
+$string['oauthrefreshtokenexpired'] = 'El testimoni d\'actualització per a un servei OAuth 2 {$a->issuer} al vostre lloc web {$a->siteurl} ha caducat. Això limitarà la funcionalitat de qualsevol complement que utilitzi aquest servei. Per solucionar-ho, aneu a la pàgina de configuració dels serveis OAuth 2 i feu clic a la icona «Connecta el compte del sistema» a la fila d\'aquest servei. Assegureu-vos d\'iniciar la sessió amb el mateix compte de servei per al sistema OAuth 2 cada vegada.';
 $string['oauthrefreshtokenexpiredshort'] = 'El testimoni d\'actualització ha caducat per  {$a->issuer} al vostre lloc web {$a->siteurl}.';
 $string['onlynoreply'] = 'Només si prové d\'una adreça sense resposta';
 $string['opcacherecommended'] = 'El sistema de memòria cau de PHP opcode millora el rendiment i redueix els requisits de memòria. L\'extensió OPcache es recomana i és totalment compatible.';
@@ -1193,8 +1210,8 @@ $string['registration_help'] = 'En estar registrat:
 * Rebeu alertes de seguretat.
 * Podeu activar notificacions push d\'aplicacions mòbils des del lloc web.
 * Contribuïu a les nostres estadístiques de Moodle de la comunitat mundial.';
-$string['registrationwarning'] = 'El vostre lloc encara no està registrat.';
-$string['registrationwarningcontactadmin'] = 'El vostre lloc encara no està registrat. Notifiqueu-ho al vostre administrador.';
+$string['registrationwarning'] = 'No us perdeu les actualitzacions importants ni les alertes de seguretat.';
+$string['registrationwarningcontactadmin'] = 'Aquest lloc no està registrat. Demaneu al vostre administrador que registri el lloc per tal que no es perdi les actualitzacions importants.';
 $string['releasenoteslink'] = 'Consulteu la informació sobre aquesta versió de Moodle a les <a target="_new" href="{$a}">Notes de llançament</a>';
 $string['rememberuserlicensepref'] = 'Recorda la preferència de llicència d\'usuari';
 $string['rememberuserlicensepref_help'] = 'Si s\'habilita, es preseleccionarà l\'última llicència seleccionada per l\'usuari quan es carregui un fitxer al selector de fitxers. En cas contrari, es preseleccionarà la llicència del lloc per defecte.';
@@ -1377,6 +1394,7 @@ $string['stickyblockscourseview'] = 'Pàgina de curs';
 $string['stickyblocksduplicatenotice'] = 'Si qualsevol bloc que afegiu aquí ja és present en una pàgina, en resultarà un duplicat.<br />Només el bloc fix serà no editable. El duplicat sí que es podrà editar.';
 $string['stickyblocksmymoodle'] = 'Tauler';
 $string['stickyblockspagetype'] = 'Tipus de pàgina a configurar';
+$string['storedprogressbarcleanuptask'] = 'Tasca de neteja de la barra de progrés emmagatzemada';
 $string['strictformsrequired'] = 'Validació estricta dels camps obligatoris';
 $string['stripalltitletags'] = 'Elimina les etiquetes HTML de tots els noms de les activitats';
 $string['supportandservices'] = 'Suport i serveis';
@@ -1387,6 +1405,7 @@ $string['supportemailsubject'] = 'Sol·licitud de suport a l\'espai - {$a}';
 $string['supportname'] = 'Nom de suport';
 $string['supportpage'] = 'Enllaç de contacte amb el suport del lloc';
 $string['suspenduser'] = 'Suspendre el compte d\'usuari';
+$string['swaggerui'] = 'Interfície d\'usuari de l\'API REST del Moodle (SwaggerUI)';
 $string['switchlang'] = 'Commuta directori d\'idioma';
 $string['systempaths'] = 'Camins del sistema';
 $string['tablenosave'] = 'Els canvis a la taula de dalt es desen de manera automàtica.';
@@ -1477,6 +1496,7 @@ $string['taskstatscron'] = 'Processament en segon pla de les estadístiques';
 $string['tasktagcron'] = 'Processament en segon pla de les etiquetes';
 $string['tasktempfilecleanup'] = 'Suprimeix els fitxers temporals obsolets';
 $string['tasktype'] = 'Tipus';
+$string['taskupdategeoip2file'] = 'Actualitza el fitxer GeoIP';
 $string['tempdatafoldercleanup'] = 'Neteja els fitxers temporals més antics de';
 $string['templates'] = 'Plantilles';
 $string['testoutgoingmailconf'] = 'Prova la configuració del correu de sortida';

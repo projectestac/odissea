@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'nl', version '4.4'.
+ * Strings for component 'tool_oauth2', language 'nl', version '4.5'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -98,7 +98,7 @@ $string['issuersservicesnotallow'] = 'Services niet toestaan';
 $string['issuerusedforinternal'] = 'Interne services';
 $string['issuerusedforlogin'] = 'Login';
 $string['issuerusein'] = 'Deze service zal gebruikt worden';
-$string['issuerusein_help'] = 'OAuth 2 services kunnen voor interne services gebruikt worden, op de login-pagina of beide als nodig.';
+$string['issuerusein_help'] = 'OAuth 2 services kunnen voor interne services gebruikt worden, op de login-pagina, SMTP met XOAUTH2 of beide login-pagina\'s en interne diensten indien nodig.';
 $string['issueruseineverywhere'] = 'Login-pagina en interne services';
 $string['issueruseininternalonly'] = 'Enkel interne services';
 $string['issueruseinloginonly'] = 'Enkel login-pagina';

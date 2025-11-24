@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'zh_cn', version '4.4'.
+ * Strings for component 'tool_generator', language 'zh_cn', version '4.5'.
  *
  * @package     tool_generator
  * @category    string
@@ -58,6 +58,9 @@ $string['error_nonexistingcourse'] = '指定的课程不存在';
 $string['error_nopageinstances'] = '所选课程不包含页面模块实例';
 $string['error_notdebugging'] = '此服务器上不可用，因为调试未设置为“开发人员”';
 $string['error_nouserspassword'] = '您需要在config.php中设置$CFG->tool_generator_users_password来生成测试计划';
+$string['execute'] = '执行';
+$string['execute_cleanup'] = '清理场景';
+$string['execute_scenarios'] = '测试场景';
 $string['fullname'] = '测试课程：{$a->size}';
 $string['maketestcourse'] = '制作测试课程';
 $string['maketestplan'] = '制定JMeter测试计划';
@@ -90,6 +93,7 @@ $string['sitesize_4'] = 'XL（~10GB；1065门课程，约5小时内创建）';
 $string['sitesize_5'] = 'XXL（~20GB；4177门课程，约10小时内创建）';
 $string['size'] = '课程大小';
 $string['smallfiles'] = '小文件';
+$string['step_example'] = '步骤示例：';
 $string['targetcourse'] = '测试目标课程';
 $string['testplanexplanation'] = '此工具将创建JMeter测试计划文件以及用户凭据文件。
 
@@ -116,6 +120,10 @@ $string['testscenario'] = '创建测试场景';
 $string['testscenario_description'] = '创建测试方案 使用有限的功能文件语法来创建运行手动测试所需的所有元素。';
 $string['testscenario_errorparsing'] = '解析特征文件错误：{$a}';
 $string['testscenario_file'] = '特征文件';
+$string['testscenario_filedesc'] = '上传特征文件只能包含具有core_data_generator步骤的场景或一些不需要 selenium 的特定步骤。除了带有 @cleanup 标签的场景外，所有场景都将同时执行。';
+$string['testscenario_filedesc_cleanup'] = '具有 @cleanup 标签的场景仅在 “执行” 设置为 “执行” 时执行
+设置为 “Cleanup”。要通过 CLI 执行清理，您可以使用 --cleanup 选项。';
+$string['testscenario_filedesc_list'] = '以下是可在测试场景功能文件中使用的步骤列表：';
 $string['testscenario_invalidfile'] = '文件格式无效或包含无效步骤。';
 $string['testscenario_invalidstep'] = '未知的一步。创建测试场景只接受生成器步骤。';
 $string['testscenario_nosteps'] = '文件中没有要执行的步骤。';

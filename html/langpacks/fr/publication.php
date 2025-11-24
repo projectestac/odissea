@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'publication', language 'fr', version '4.4'.
+ * Strings for component 'publication', language 'fr', version '4.5'.
  *
  * @package     publication
  * @category    string
@@ -60,9 +60,6 @@ $string['completionupload'] = 'L’étudiant doit déposer un fichier';
 $string['configautoimport'] = 'Si vous préférez que les nouveaux devoirs soient automatiquement importés dans les instances du Partage de fichiers. Cette fonctionnalité peut être activée/désactivée pour chaque instance de l’activité.';
 $string['configmaxbytes'] = 'Taille maximale par défaut des fichiers dans un partage de fichiers.';
 $string['configmaxfiles'] = 'Nombre maximal par défaut de fichiers permis par utilisateur.';
-$string['configobtainstudentapproval'] = 'Les fichiers ne seront publiés (rendus visibles à tous) qu’après approbation de l’étudiant et de l’enseignant.';
-$string['configobtainteacherapproval'] = 'Les documents des étudiants sont par défaut visibles pour les autres participants.';
-$string['configrequiremodintro'] = 'Désactivez cette option si vous ne voulez pas forcer les utilisateurs à entrer une description pour chaque activité';
 $string['courseuploadlimit'] = 'Limite de dépôt pour le cours';
 $string['currentlynotapproved'] = '* Pour l’instant, la publication n’a pas été approuvée ou rejetée.';
 $string['cutoffdate'] = 'Date de fin';
@@ -145,11 +142,19 @@ $string['notice_files_imported_group'] = 'Les fichiers affichés proviennent d�
 $string['notice_group_all_teachernotrequired'] = 'Les fichiers ne seront publiés pour tous les étudiants qu’avec l’approbation de <strong>TOUS les membres du groupe</strong>.';
 $string['notice_group_all_teacherrequired'] = 'Les fichiers ne seront publiés pour tous les étudiants qu’avec l’approbation de <strong>TOUS les membres du groupe et de l’enseignant.</strong> Les enseignants se réservent le droit de refuser la publication de vos fichiers à tout moment.';
 $string['notice_group_one_teachernotrequired'] = 'Les fichiers ne seront publiés pour tous les étudiants qu’avec l’approbation d\'<strong>AU MOINS UN membre du groupe.</strong>';
-$string['notice_group_one_teacherrequired'] = 'Les fichiers ne seront publiés pour tous les élèves qu’avec l’approbation d\'<strong>AU MOINS UN membre du groupe et de l’enseignant.</strong> Les enseignants se réservent le droit de refuser la publication de vos fichiers à tout moment.';
+$string['notice_group_one_teacherrequired'] = 'Les fichiers ne seront publiés pour tous les étudiants qu’avec l’approbation d\'<strong>AU MOINS UN membre du groupe et de l’enseignant.</strong> Les enseignants se réservent le droit de refuser la publication de vos fichiers à tout moment.';
 $string['notice_import_studentnotrequired_teachernotrequired'] = 'Les fichiers seront publiés (seront rendus visibles pour tous) <strong>automatiquement.</strong>';
 $string['notice_import_studentnotrequired_teacherrequired'] = 'Les fichiers ne seront publiés (seront rendus visibles pour tous) <strong>qu’après l’approbation des enseignants.</strong> Les enseignants se réservent le droit de refuser la publication de vos fichiers à tout moment.';
 $string['notice_import_studentrequired_teachernotrequired'] = 'Les fichiers seront publiés (seront rendus visibles pour tous) après <strong>votre approbation.</strong>';
 $string['notice_import_studentrequired_teacherrequired'] = 'Les fichiers seront publiés (seront rendus visibles pour tous) après <strong>votre approbation et celle des enseignants.</strong> Les enseignants se réservent le droit de refuser la publication de vos fichiers à tout moment.';
+$string['notice_obtainapproval_import_both'] = 'En tant qu’enseignant, vous pouvez à tout moment refuser l’approbation d’une publication, si un fichier ne répond pas aux exigences définies.';
+$string['notice_obtainapproval_import_studentonly'] = 'Dans l’esprit de la législation sur les droits d’auteur, nous vous demandons de demander l’autorisation de publier les fichiers des étudiants d’une façon distincte.<br>
+En tant qu’enseignant, vous pouvez à tout moment refuser l’approbation d’une publication, si un fichier ne répond pas aux exigences définies.';
+$string['notice_obtainapproval_upload_automatic'] = 'Dans l’esprit de la législation sur les droits d’auteur, nous vous demandons de demander l’autorisation de publier les fichiers des étudiants d’une façon distincte.<br>
+En tant qu’enseignant, vous pouvez à tout moment refuser l’approbation d’une publication, si un fichier ne répond pas aux exigences définies.';
+$string['notice_obtainapproval_upload_teacher'] = 'Dans l’esprit de la législation sur les droits d’auteur, nous vous demandons de demander l’autorisation de publier les fichiers des étudiants d’une façon distincte.<br>
+En tant qu’enseignant, vous pouvez à tout moment refuser l’approbation d’une publication, si un fichier ne répond pas aux exigences définies.';
+$string['notice_obtainteacherapproval_studentsapproval'] = 'Dans l’esprit de la législation sur les droits d’auteur, nous vous demandons de demander l’autorisation de publier les fichiers des étudiants d’une façon distincte.';
 $string['notice_upload_studentnotrequired_teachernotrequired'] = 'Tous les fichiers que vous téléchargez ici seront publiés (seront rendus visibles pour tout le monde) <strong>automatiquement</strong>.';
 $string['notice_upload_studentnotrequired_teacherrequired'] = 'Tous les fichiers que vous téléchargez ici seront publiés (seront rendus visibles pour tous) seulement <strong>après l’approbation des enseignants.</strong> Les enseignants se réservent le droit de rejeter la publication de vos fichiers à tout moment.';
 $string['notice_upload_studentrequired_teachernotrequired'] = 'Tous les fichiers que vous téléchargez ici seront publiés (seront rendus visibles pour tout le monde) <strong>après votre approbation.</strong>';
@@ -230,7 +235,6 @@ $string['published_aftercheck'] = 'Approbation des enseignants requise';
 $string['published_immediately'] = 'Approuver automatiquement';
 $string['rejected'] = 'Rejeté';
 $string['rejectusers'] = 'Rejeter';
-$string['requiremodintro'] = 'Exiger une description de l’activité';
 $string['reset'] = 'Annuler';
 $string['reset_userdata'] = 'Toutes les données';
 $string['resetstudentapproval'] = 'Annuler l’approbation de l’étudiant';

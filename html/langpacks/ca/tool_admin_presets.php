@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_admin_presets', language 'ca', version '4.4'.
+ * Strings for component 'tool_admin_presets', language 'ca', version '4.5'.
  *
  * @package     tool_admin_presets
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actionimport'] = 'Importa la preconfiguració';
-$string['author'] = 'Autor/a';
+$string['author'] = 'Autor o autora';
 $string['import'] = 'Importa';
 $string['pluginname'] = 'Configuracions d\'administració predefinides del lloc.';
 $string['presetslisttable'] = 'Taula de configuracions d\'administració predefinides.';

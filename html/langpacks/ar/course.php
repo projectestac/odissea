@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'ar', version '4.4'.
+ * Strings for component 'course', language 'ar', version '4.5'.
  *
  * @package     course
  * @category    string
@@ -99,6 +99,10 @@ $string['downloadcoursecontent_help'] = 'هذا الإعداد يحدد ما إ�
 $string['enabledownloadcoursecontent'] = 'تمكين تنزيل محتوى المقرر';
 $string['errorendbeforestart'] = 'تاريخ النهاية ({$a}) يسبق تاريخ بداية المساق';
 $string['favourite'] = 'المقررات الدراسية المميزة بنجمه';
+$string['filterbothactive'] = 'أول ({$a->first}) آخر ({$a->last})';
+$string['filterbyname'] = 'التصفية حسب الاسم';
+$string['filterfirstactive'] = 'أول ({$a->first})';
+$string['filterlastactive'] = 'آخر ({$a->last})';
 $string['gotosection'] = 'الذهاب إلى القسم {$a}';
 $string['gradetopassnotset'] = 'لم يتم تحديد علامة النجاح لهذا المقرر. قد يُصار إلى وضعها في عنصر التقييم للمقرر (إعداد سجل التقديرات).';
 $string['hideendedcoursestask'] = 'إخفاء المقررات عند تاريخ الانتهاء';

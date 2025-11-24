@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'eu', version '4.4'.
+ * Strings for component 'error', language 'eu', version '4.5'.
  *
  * @package     error
  * @category    string
@@ -36,6 +36,7 @@ $string['alreadyloggedin'] = 'Dagoeneko {$a} gisa identifikatuta zaude, beste er
 $string['authnotexisting'] = 'Autorizazio-plugina ez da existitzen';
 $string['backupcontainexternal'] = 'Segurtasun-fitxategi honek lokalean konfiguratuta ez dauden kanpoko Moodle sarerako ostalariak ditu.';
 $string['backuptablefail'] = 'Segurtasun-kopiaren taulak EZ dira ondo sortu!';
+$string['blockcannotadd'] = 'Ezin da blokea gehitu';
 $string['blockcannotconfig'] = 'Bloke honek ez ditu ezarpen orokorrak onartzen';
 $string['blockcannotinistantiate'] = 'Arazoa bloke-objektuaren instantzia egitean';
 $string['blockcannotread'] = 'Ondorengo bloke id-tik ezin da daturik irakurri= {$a}';
@@ -101,7 +102,7 @@ $string['cannotfindinfo'] = 'Ezin da ondokoarentzako informaziorik aurkitu: "{$a
 $string['cannotfindlang'] = 'Ezin da "{$a}" hizkuntza-paketea aurkitu!';
 $string['cannotfindteacher'] = 'Ezin da irakaslea aurkitu';
 $string['cannotfinduser'] = 'Ezin da "{$a}" erabiltzaile-izena aurkitu';
-$string['cannotgeoplugin'] = 'Ezin da geoPlugin-en  zerbitzarira konektatu (https://www.geoplugin.com). Mesedez, egiaztatu proxy-aren ezarpenak edo instalatu ezazu MaxMind GeoLite City-ren datu-fitxategia.';
+$string['cannotgeoplugin'] = 'Ezin da geoPlugin-en  zerbitzarira konektatu (https://www.geoplugin.com). Mesedez, egiaztatu proxy-aren ezarpenak edo instalatu ezazu MaxMind GeoIP City-ren datu-fitxategia.';
 $string['cannotgetblock'] = 'Ezin da blokerik berreskuratu datu-basetik';
 $string['cannotgetcats'] = 'Ezin da lortu kategoria-erregistrorik';
 $string['cannotgetdata'] = 'Ezin da daturik lortu';
@@ -158,7 +159,6 @@ $string['cannotsetupcapformod'] = 'Ezin dira gaitasunak esleitu honentzat: {$a}'
 $string['cannotsetupcapforplugin'] = 'Ezin dira gaitasunak esleitu honentzat: {$a}';
 $string['cannotshowhidecoursesincategory'] = 'Ezin dira ikastaroak erakutsi/ezkutatu {$a} kategorian.';
 $string['cannotsignup'] = 'Ezin duzu konturik sortu dagoeneko saioa hasi duzulako {$a} gisa.';
-$string['cannotswitcheditmodeon'] = 'Ezin izan da edizio-modua aktibatu';
 $string['cannotunassigncap'] = 'Ezin izan zaio {$a->role} rolari zaharkitutako {$a->cap} gaitasuna kendu.';
 $string['cannotunassignrolefrom'] = 'Ezin zaio erabiltzaie honi {$a} ID-a duen rola kendu';
 $string['cannotunzipfile'] = 'Ezin da fitxategia deskonprimatu';
@@ -286,6 +286,8 @@ $string['filternotenabled'] = 'Iragazkia ez dago gaituta!';
 $string['filternotinstalled'] = '{$a} iragazkia ez dago une honetan instalatuta';
 $string['forumblockingtoomanyposts'] = 'Foro honetara bidalitako mezu-kopuruaren atalasea gainditu duzu';
 $string['functionalityremoved'] = 'Ezabatu den funtzionalitate batera sartzen saiatzen ari zara.';
+$string['gdfeaturenotsupported'] = 'GD luzapena ez dago {$a}(r)entzako metodoekin konpilatuta';
+$string['gdmimetypenotsupported'] = 'MIME Mota ez da onartzen.';
 $string['generalexceptionmessage'] = 'Salbuespena - {$a}';
 $string['gradecantregrade'] = 'Errorea gertatu da kalifikazioa kalkulatu bitartean: {$a}';
 $string['gradepubdisable'] = 'Kalifikazioak argitaratzea desgaituta dago';
@@ -351,6 +353,7 @@ $string['invalidelementid'] = 'Elementuaren ID ezegokia!';
 $string['invalidentry'] = 'Hau ez da sarrera baliagarria!';
 $string['invalidevent'] = 'Ekitaldi baliogabea';
 $string['invalidfieldname'] = '"{$a}"  ez da izen baliagarria eremu honetarako';
+$string['invalidfile'] = 'Fitxategia ez da aurkitu';
 $string['invalidfiletype'] = '"{$a}" ez da fitxategi mota baliagarria';
 $string['invalidformatpara'] = 'Formatua ez da egokia parametroa aukeratzeko';
 $string['invalidformdata'] = 'Datu-formularioa ez da egokia';
@@ -398,6 +401,7 @@ $string['invalidxmlfile'] = '"{$a}" ez da XML fitxategi baliagarria.';
 $string['iplookupfailed'] = 'Ezin da {$a} IP helbidearen kokapenari buruzko informaziorik aurkitu';
 $string['iplookupprivate'] = 'Ezin da IP helbide pribatuen informaziorik aurkitu';
 $string['ipmismatch'] = 'Bezeroaren IP helbidea ez dator bat';
+$string['itemnotfound'] = 'Ez da {$a->itemtype} aurkitu \'{$a->identifier}\' identifikatzailearekin';
 $string['listcantmovedown'] = 'Elementua behera mugitzeak huts egin du, zerrendako azkena delako.';
 $string['listcantmoveleft'] = 'Elementua ezkerrera mugitzeak huts egin du, ez dagoelako goragoko elementurik';
 $string['listcantmoveright'] = 'Errorea elementua eskuinera eramatean, ez baitago beste bat horren beheragokoa izan dadin. Mugitu ezazu hau beste baten azpira eta horrela eskuinera eraman ahal izango duzu.';
@@ -407,8 +411,8 @@ $string['listnoitem'] = 'Ez da elementua aurkitu';
 $string['listnopeers'] = 'Ez dago aurkitutako elementuaren maila berekorik';
 $string['listupdatefail'] = 'Errorea DB eragiketan zerrendaren ierarkia editatzean';
 $string['logfilenotavailable'] = 'Agerraldiak ez daude eskuragarri';
-$string['loginasnoenrol'] = 'Ezin duzu matrikulatu edo desmatrikulatu "Honela sartu" saio bat erabiltzen ari zarenean.';
-$string['loginasonecourse'] = 'Ezin zara ikastaro honetan sartu.<br />"Aukeratu beste rol bat" saioa amaitu behar duzu beste edozein ikastarotan sartzeko';
+$string['loginasnoenrol'] = 'Ezin duzu matrikulatu edo desmatrikulatu "Sartu erabiltzaile hau bezala" funtzioa erabiltzen ari zarenean.';
+$string['loginasonecourse'] = 'Ezin zara ikastaro honetan sartu. Beste edozein ikastarotan sartu aurretik "Sartu erabiltzaile hau bezala" saioa amaitu behar duzu.';
 $string['maxareabytes'] = 'Fitxategia eremu honetan geratzen den espazioa baino handiagoa da.';
 $string['maxbytesfile'] = '{$a->file} fitxategia handiegia da. Igo dezakezun gehinezko tamaina  {$a->size} da.';
 $string['maxdraftitemids'] = 'Fitxategi-igoera behin-behinean mugatu zaizu fitxategien bolumen handia igo duzulako. Itxaron ezazu eta ondoren saiatu zaitez berriro.';
@@ -484,12 +488,13 @@ $string['nopermissiontoviewcalendar'] = 'Sentitzen dugu, baina ez daukazu eguteg
 $string['nopermissiontoviewgrades'] = 'Ezin da kalifikaziorik ikusi.';
 $string['nopermissiontoviewletergrade'] = 'Letra-kalifikazioak ikusteko baimena galduta.';
 $string['nopermissiontoviewpage'] = 'Ez duzu orri hau begiratzeko baimenik.';
-$string['nosite'] = 'Ezin da maila altuagoko ikastarorik aurkitu';
+$string['nosite'] = 'Ezin da maila goreneko ikastarorik aurkitu';
 $string['nositeid'] = 'Guneko ID-rik ez';
 $string['nostartdatenoenddate'] = 'Ikastaro baten amaiera-data ezartzeko hasiera-data ere ezarri behar da.';
 $string['nostatstodisplay'] = 'Sentitzen dugu, baina ez dago erakusteko daturik';
 $string['notallowedtoupdateprefremotely'] = 'Ez duzu baimenik erabiltzaile-hobespen hau urrutitik eguneratzeko';
 $string['notavailable'] = 'Ez dago eskuragarri une honetan';
+$string['notfound'] = 'Ez da aurkitu';
 $string['notlocalisederrormessage'] = '{$a}';
 $string['notmemberofgroup'] = 'Ez zara ikastaro-talde honetako kide';
 $string['notownerofkey'] = 'Ez zara gako honen jabea';
@@ -540,6 +545,7 @@ $string['reverseproxyabused'] = 'Alderantzizko proxy-a gaituta dago, eta beraz e
 $string['rpcerror'] = 'Ups! Zure MNET komunikazioak huts egin du! Hau da errore-mezua zure kudeatzaileari igor diezaiozun: {$a}';
 $string['scheduledbackupsdisabled'] = 'Guneko kudeatzaileak programatutako segurtasun-kopiak desgaitu ditu';
 $string['secretalreadyused'] = 'Pasahitza aldatzeko berrespen-esteka erabilia izan da dagoeneko, pasahitza ez da aldatu';
+$string['sectioncantbefound'] = '<p><strong>Eduki hau ezin izan da aurkitu</strong></p><p>Baliteke ezabatu izana, ala URLa zuzena ez izatea.</p>';
 $string['sectionnotexist'] = 'Atal hau ez da existitzen';
 $string['sendmessage'] = 'Bidali mezua';
 $string['sendmessagesent'] = 'Eskerrik asko honi buruzko zure feedbackagatik:<br>{$a}';
@@ -557,6 +563,7 @@ $string['sessionhandlerproblem'] = 'Saioaren kudeatzailea gaizki konfiguratuta d
 $string['sessionipnomatch'] = 'Sentitzen dugu, baina lehenengo sarreratik zure IPa aldatu dela dirudi. Ziurtasun neurri honen arrazoia crackerrek gune honetan zauden bitartean zure nortasuna ez lapurtzean datza. Erabiltzaile arruntek ez lukete mezu hau ikusi beharko. Beraz, gunearen kudeatzaileari laguntza eskatu.';
 $string['sessionipnomatch2'] = '<p>Sentitzen dugu, baina sartu zarenetik zure IP helbidea aldatu dela dirudi. Segurtasun-ezaugarri honek gunean zauden bitartean cracker batek zure identitatea lapurtzea eragozten du. Errore hau ikusi dezakezu haririk gabeko sareak erabiltzen badituzu eta leku batetik bestera mugitzen ari bazara. Mesdez galdetu guneko kudeatzaileari laguntza gehiago eskuratzeko.</p>
 <p>Jarraitu nahi baduzu mesedez sakatu F5 tekla orri hau freskatzeko.</p>';
+$string['sessionstarterror'] = 'Ezin izan da saioa hasi. Saiatu zaitez beranduago, mesedez.';
 $string['sessionwaiterr'] = 'Saioaren blokeoaren zai egoteko denbora amaitu da.<br />Itxaron zure oraingo eskaera amaitu arte eta saiatu zaitez berriro.';
 $string['shortnametaken'] = 'Izan laburra dagoeneko beste ikastaro batean erabili da ({$a})';
 $string['sitepolicynotagreed'] = 'Ez duzu guneko politika onartu: <a href="{$a}">Egin klik hemen guneko politika irekitzeko.</a>';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'it', version '4.4'.
+ * Strings for component 'user', language 'it', version '4.5'.
  *
  * @package     user
  * @category    string
@@ -25,25 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcondition'] = 'Aggiungi condizione';
-$string['adverbfor_and'] = 'and';
-$string['adverbfor_andnot'] = 'and';
-$string['adverbfor_or'] = 'or';
-$string['applyfilters'] = 'Applica filtri';
-$string['clearfilterrow'] = 'Rimuovi riga di filtri';
-$string['clearfilters'] = 'Pulisci filtri';
-$string['clearfilterselection'] = 'Elimina "{$a}" dal filtro';
 $string['countparticipantsfound'] = '{$a} partecipanti trovati';
 $string['filterbykeyword'] = 'Parola chiave';
-$string['filterrowlegend'] = 'Filtro {$a}';
-$string['filtersetmatchdescription'] = 'La modalità di combinazione di più filtri';
-$string['filtertype'] = 'Tipo di filtro:';
-$string['match'] = 'Filtra';
-$string['matchofthefollowing'] = 'dei seguenti:';
 $string['moodlenetprofile'] = 'ID del profilo MoodleNet';
 $string['moodlenetprofile_help'] = 'Campo per il collegamento del proprio profilo tra MoodleNet e Moodle.';
 $string['placeholdertype'] = 'Scrivi...';
-$string['placeholdertypeorselect'] = 'Digita o seleziona...';
 $string['privacy:courserequestpath'] = 'Corsi richiesti';
 $string['privacy:descriptionpath'] = 'Descrizione del profilo';
 $string['privacy:devicespath'] = 'Dispostivi dell\'utente';
@@ -149,7 +135,6 @@ $string['privacy:passwordresetpath'] = 'Reimpostazioni password';
 $string['privacy:privatefilespath'] = 'File privati';
 $string['privacy:profileimagespath'] = 'Immagini del profilo';
 $string['privacy:sessionpath'] = 'Dati della sessione';
-$string['selectfiltertype'] = 'Seleziona';
 $string['supportmessagealternative'] = 'In alternativa, puoi inviare una email a {$a}.';
 $string['supportmessagenotsent'] = 'Purtroppo non è stato possibile inviare il messaggio.';
 $string['supportmessagesent'] = 'Il messaggio è stato inviato.';

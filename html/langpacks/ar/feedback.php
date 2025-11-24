@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ar', version '4.4'.
+ * Strings for component 'feedback', language 'ar', version '4.5'.
  *
  * @package     feedback
  * @category    string
@@ -247,13 +247,15 @@ $string['privacy:metadata:valuetmp'] = 'سِجل بإجابة السؤال با�
 $string['public'] = 'عام';
 $string['question'] = 'السؤال';
 $string['questionandsubmission'] = 'إعدادات السؤال والتسليم';
+$string['questionmoved'] = 'السؤال تم نقله';
 $string['questions'] = 'الأسئلة';
 $string['questionslimited'] = 'إظهار أول {$a} أسئلة فقط؛ عاين الإجابات الفردية أو قم بتنزيل بيانات الجدول لمعاينة الكل.';
 $string['radio'] = 'متعدد الاختيارات - إجابة واحدة';
 $string['radio_values'] = 'الإجابات';
 $string['ready_feedbacks'] = 'الإفادات الجاهزة';
 $string['required'] = 'مطلوب';
-$string['resetting_data'] = 'أعد تعيين إجابات الإفادة';
+$string['resetting_data'] = 'الإجابات';
+$string['resetting_delete'] = 'حذف الإجابات';
 $string['resetting_feedbacks'] = 'تجري إعادة تعيين الإفادات';
 $string['response_nr'] = 'رقم الإجابة';
 $string['responses'] = 'إجابات';

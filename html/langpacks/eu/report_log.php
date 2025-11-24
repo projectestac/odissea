@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'eu', version '4.4'.
+ * Strings for component 'report_log', language 'eu', version '4.5'.
  *
  * @package     report_log
  * @category    string
@@ -37,6 +37,8 @@ $string['eventuserreportviewed'] = 'Erabiltzailearen agerraldi-txostena ikusi da
 $string['log:view'] = 'Ikusi ikastaroko agerraldiak';
 $string['log:viewtoday'] = 'Ikusi gaurko agerraldiak';
 $string['logsformat'] = 'Agerraldien formatua';
+$string['missingcontext'] = 'Ezabatutako {$a->name} (\'{$a->instanceid}\' IDa)';
+$string['missingcourse'] = 'Falta den ikastaroa (\'{$a->instanceid}\' IDa)';
 $string['nocapability'] = 'Ez dago sarbiderik erabiltzailearen agerraldien txostenera';
 $string['nologreaderenabled'] = 'Ez dago agerraldi-irakurlerik gaituta';
 $string['origin'] = 'Iturburua';

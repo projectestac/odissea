@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpmigrate', language 'ar', version '4.4'.
+ * Strings for component 'tool_lpmigrate', language 'ar', version '4.5'.
  *
  * @package     tool_lpmigrate
  * @category    string

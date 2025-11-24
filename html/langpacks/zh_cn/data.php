@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'zh_cn', version '4.4'.
+ * Strings for component 'data', language 'zh_cn', version '4.5'.
  *
  * @package     data
  * @category    string
@@ -29,7 +29,6 @@ $string['action'] = '动作';
 $string['actionsmenu'] = '操作菜单';
 $string['add'] = '增加条目';
 $string['addcomment'] = '添加评论';
-$string['addentries'] = '添加条目';
 $string['addtemplate'] = '添加条目模板';
 $string['advancedsearch'] = '高级搜索';
 $string['allowcomments'] = '允许评论词条';
@@ -54,8 +53,6 @@ $string['availabletags_help'] = '标记是模板中的占位符，在编辑或�
 只有“可用标记”列表中的标记可用于当前模板。';
 $string['availabletodate'] = '适用于';
 $string['availabletodatevalidation'] = '可用开始日期不能早于可用开始日期。';
-$string['blank'] = '空白';
-$string['buttons'] = '动作';
 $string['bynameondate'] = '作者 {$a->name} - {$a->date}';
 $string['calendarend'] = '{$a}关闭';
 $string['calendarstart'] = '{$a}打开';
@@ -125,13 +122,13 @@ $string['defaultfieldenclosure'] = '缺省为空';
 $string['defaultsortfield'] = '缺省排序字段';
 $string['delcheck'] = '批量删除筛选框';
 $string['delete'] = '删除';
-$string['deleteallentries'] = '删除所有条目';
+$string['deleteallentries'] = '所有条目';
 $string['deletecomment'] = '您确定要删除这条这注释吗？';
 $string['deleteconfirm'] = '删除预设 {$a}？';
 $string['deleted'] = '已删除';
 $string['deleteentry'] = '删除条目';
 $string['deletefield'] = '删除字段';
-$string['deletenotenrolled'] = '删除未选课用户的条目';
+$string['deletenotenrolled'] = '未选课用户的条目';
 $string['deletewarning'] = '删除预设会将其从所有课程的可用预设列表中删除';
 $string['descending'] = '降序';
 $string['directorynotapreset'] = '{$a->directory} 没有预设：文件丢失{$a->missing_files}';
@@ -332,7 +329,6 @@ $string['nomatch'] = '找不到匹配的条目！';
 $string['nomaximum'] = '无最大数量限制';
 $string['nopreviewavailable'] = '没有适用于 {$a} 的预览';
 $string['norecords'] = '没有条目';
-$string['nosingletemplate'] = '独立显示模板尚未定义';
 $string['notapproved'] = '等待批准';
 $string['notapprovederror'] = '参赛作品尚未获批。';
 $string['notemplates'] = '暂无模板';
@@ -355,7 +351,6 @@ $string['page-mod-data-x'] = '任意数据库活动模块页面';
 $string['pagesize'] = '每页条目数';
 $string['participants'] = '参与者';
 $string['picture'] = '图片';
-$string['pleaseaddsome'] = '请在创建一些在下面或 <a href="{$a}">选择一个预定义的集合</a>再开始.';
 $string['pluginadministration'] = '数据库活动管理';
 $string['pluginname'] = '数据库';
 $string['portfolionotfile'] = '导出到文件包而不是文件（只支持csv和leap2a）';
@@ -390,7 +385,7 @@ $string['recorddeleted'] = '已删除条目';
 $string['recorddisapproved'] = '未批准条目';
 $string['recordsnotsaved'] = '没有记录被保存。请确认上传文件的安排。';
 $string['recordssaved'] = '条目已保存';
-$string['removealldatatags'] = '删除所有数据库标记';
+$string['removealldatatags'] = '所有数据库标记';
 $string['requireapproval'] = '需要批准';
 $string['requireapproval_help'] = '教师必须先批准参赛作品，然后才能让所有人都能看到这些参赛作品';
 $string['required'] = '要求的';
@@ -427,7 +422,6 @@ $string['saveaspresetmissingcapability'] = '用户无权将数据库另存为预
 $string['savedataaspreset'] = '保存所有字段和模板，并在此站点上按预设发布';
 $string['savesettings'] = '保存设置';
 $string['savesuccess'] = '预设已保存。<a href="{$a->url}">预览预设</a>';
-$string['savetemplate'] = '保存模板';
 $string['search'] = '搜索';
 $string['search:activity'] = '数据库-活动信息';
 $string['search:entry'] = '数据库-条目';
@@ -459,7 +453,6 @@ $string['text'] = '文本';
 $string['textarea'] = '文本域';
 $string['timeadded'] = '添加时间';
 $string['timemodified'] = '修改时间';
-$string['todatabase'] = '至此数据库。';
 $string['type'] = '字段类型';
 $string['undefinedprocessactionmethod'] = '在 Data_Preset 中处理动作“{$a}”，没有定义动作的方法';
 $string['unknown'] = '未知字段';

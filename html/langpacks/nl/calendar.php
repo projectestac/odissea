@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'nl', version '4.4'.
+ * Strings for component 'calendar', language 'nl', version '4.5'.
  *
  * @package     calendar
  * @category    string
@@ -71,7 +71,7 @@ $string['daywithnoevents'] = 'Vandaag geen activiteiten';
 $string['default'] = 'Standaard';
 $string['deleteallevents'] = 'Alle gebeurtenissen verwijderen';
 $string['deleteevent'] = 'Wis activiteit';
-$string['deleteevents'] = 'Verwijder gebeurtenissen';
+$string['deleteevents'] = 'Gebeurtenissen';
 $string['deleteoneevent'] = 'Deze gebeurtenis verwijderen';
 $string['detailedmonthviewfor'] = 'Gedetailleerde maandweergave voor:';
 $string['detailedmonthviewtitle'] = 'Gedetailleerd maandoverzicht: {$a}';

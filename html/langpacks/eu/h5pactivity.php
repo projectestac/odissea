@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'eu', version '4.4'.
+ * Strings for component 'h5pactivity', language 'eu', version '4.5'.
  *
  * @package     h5pactivity
  * @category    string
@@ -58,7 +58,7 @@ $string['completion'] = 'Osaketa';
 $string['contentbank'] = 'Informazio gehiago eduki-bankuari buruz';
 $string['contentbank_help'] = 'Eduki-bankuan edukiak sortu eta bildu ditzakezu autoretza-tresna ezberdinak erabiliz, H5P pakete-sortzailean integratutako sortzailea barne.';
 $string['correct_answer'] = 'Erantzun zuzena';
-$string['deleteallattempts'] = 'Ezabatu H5P saiakera guztiak';
+$string['deleteallattempts'] = 'H5P saiakera guztiak';
 $string['displaycopyright'] = 'Copyright botoia';
 $string['displayembed'] = 'Enbotatu botoia';
 $string['displayexport'] = 'Baimendu deskarga';

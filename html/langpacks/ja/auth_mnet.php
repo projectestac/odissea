@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'ja', version '4.4'.
+ * Strings for component 'auth_mnet', language 'ja', version '4.5'.
  *
  * @package     auth_mnet
  * @category    string
@@ -50,7 +50,7 @@ $string['privacy:metadata:mnet_external:firstaccess'] = 'このユーザが最�
 $string['privacy:metadata:mnet_external:firstname'] = 'ユーザの名です。';
 $string['privacy:metadata:mnet_external:firstnamephonetic'] = 'ユーザの名に関するヨミガナ詳細です。';
 $string['privacy:metadata:mnet_external:id'] = 'ユーザのIDです。';
-$string['privacy:metadata:mnet_external:idnumber'] = 'インスティテューションによって与えられたIDナンバです。';
+$string['privacy:metadata:mnet_external:idnumber'] = 'インスティテューションにより与えられたIDナンバです。';
 $string['privacy:metadata:mnet_external:imagealt'] = 'ユーザのイメージの代替テキストです。';
 $string['privacy:metadata:mnet_external:institution'] = 'ユーザがメンバであるインスティテューションです。';
 $string['privacy:metadata:mnet_external:lang'] = '表示される言語のユーザプレファレンスです。';
@@ -70,7 +70,7 @@ $string['privacy:metadata:mnet_external:timezone'] = 'ユーザのタイムゾ�
 $string['privacy:metadata:mnet_external:trackforums'] = 'フォーラムおよび未読管理に関するプレファレンスです。';
 $string['privacy:metadata:mnet_external:trustbitmask'] = 'トラストビットマスクです。';
 $string['privacy:metadata:mnet_external:username'] = 'このユーザのユーザ名です。';
-$string['privacy:metadata:mnet_log'] = 'リモートシステムにログインしたローカルユーザによって実行されたリモートアクションの詳細です。';
+$string['privacy:metadata:mnet_log'] = 'リモートシステムにログインしたローカルユーザにより実行されたリモートアクションの詳細です。';
 $string['privacy:metadata:mnet_log:action'] = 'ユーザにより実行されたアクションです。';
 $string['privacy:metadata:mnet_log:cmid'] = 'コースモジュールIDです。';
 $string['privacy:metadata:mnet_log:course'] = 'アクションが発生したリモートシステムのコースIDです。';

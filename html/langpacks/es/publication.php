@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'publication', language 'es', version '4.4'.
+ * Strings for component 'publication', language 'es', version '4.5'.
  *
  * @package     publication
  * @category    string
@@ -50,9 +50,6 @@ $string['choose'] = 'elija por favor...';
 $string['configautoimport'] = 'Si Usted prefiere que los envíos de los estudiantes sean importados automáticamente dentro de las instancias de carpeta del estudiante. Esta característica puede ser habilitada/deshabilitada para cada instancia de carpeta del estudiante en forma separada.';
 $string['configmaxbytes'] = 'Tamaño máximo por defecto para todos los archivos en la carpeta del estudiante.';
 $string['configmaxfiles'] = 'Número máximo por defecto de anexos permitidos por usuario.';
-$string['configobtainstudentapproval'] = 'Los documentos son visibles después del consentimiento del estudiante.';
-$string['configobtainteacherapproval'] = 'Los documento de los estudiantes por defecto son visibles para todos los otros participante.';
-$string['configrequiremodintro'] = 'Deshabilite esta opción si no desea forzar a los usuarios a que escriban descripciones de cada actividad.';
 $string['courseuploadlimit'] = 'Límite de subida del curso';
 $string['currentlynotapproved'] = '* Actualmente no-aprobado o desaprobado.';
 $string['cutoffdate'] = 'Fecha límite';
@@ -153,7 +150,6 @@ $string['published_aftercheck'] = 'no, solamente después de la aprobación por 
 $string['published_immediately'] = 'si inmediatamente, sin necesitarse aprobación por un profesor';
 $string['rejected'] = 'Rechazado';
 $string['rejectusers'] = 'invisible para todos';
-$string['requiremodintro'] = 'Requerir descripción de la actividad';
 $string['reset'] = 'Revertir';
 $string['reset_userdata'] = 'Todos los datos';
 $string['resetstudentapproval'] = 'Reiniciar estatus';

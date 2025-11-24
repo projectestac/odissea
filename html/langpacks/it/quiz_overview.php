@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'it', version '4.4'.
+ * Strings for component 'quiz_overview', language 'it', version '4.5'.
  *
  * @package     quiz_overview
  * @category    string
@@ -60,6 +60,17 @@ $string['privacy:metadata:preference:quiz_overview_slotmarks'] = 'Scelta di visu
 $string['privacy:preference:slotmarks:no'] = 'I punteggi non sono visualizzati accanto allo slot della domanda.';
 $string['privacy:preference:slotmarks:yes'] = 'I punteggi sono visualizzati accanto allo slot della domanda.';
 $string['regrade'] = 'Rivaluta';
+$string['regrade_allattempts'] = 'Tutti i tentativi';
+$string['regrade_allquestions'] = 'Tutte le domande';
+$string['regrade_attempts'] = 'Rivaluta tentativi...';
+$string['regrade_commitregrade'] = 'Conferma la rivalutazione';
+$string['regrade_dryrun'] = 'Prova a secco';
+$string['regrade_help'] = 'La rivalutazione ricalcola la valutazione automatica dei tentativi, utilizzando la versione corrente di ogni domanda, se possibile. Una prova a secco consente di visualizzare in anteprima le modifiche delle valutazioni senza influire sui tentativi';
+$string['regrade_link'] = 'Quiz_grades_report#Re-grading_attempts';
+$string['regrade_regradeneedednotificationmessage'] = 'L\'ultima prova a secco di una rivalutazione ha rilevato che la rivalutazione avrebbe modificato i voti per {$a->questions} domande in {$a->attempts} tentativi.';
+$string['regrade_regradenow'] = 'Rivaluta adesso';
+$string['regrade_selectedattempts'] = 'Tentativi selezionati';
+$string['regrade_selectedquestions'] = 'Domande selezionate';
 $string['regradeall'] = 'Rivaluta tutto';
 $string['regradealldry'] = 'Prova rivalutazione totale';
 $string['regradealldrydo'] = 'Rivaluta tentativi evidenziati da rivalutare ({$a})';

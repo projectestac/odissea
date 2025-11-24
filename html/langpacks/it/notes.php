@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'it', version '4.4'.
+ * Strings for component 'notes', language 'it', version '4.5'.
  *
  * @package     notes
  * @category    string
@@ -39,7 +39,7 @@ $string['course'] = 'corso';
 $string['coursenotes'] = 'Annotazioni corso';
 $string['created'] = 'creata';
 $string['deleteconfirm'] = 'Confermi l\'eliminazione?';
-$string['deletenotes'] = 'Elimina tutte le annotazioni';
+$string['deletenotes'] = 'Tutte le annotazioni';
 $string['editnote'] = 'Modifica annotazione';
 $string['enablenotes'] = 'Abilita annotazioni';
 $string['eventnotecreated'] = 'Creazione nota';

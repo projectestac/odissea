@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_file', language 'ar', version '4.4'.
+ * Strings for component 'assignfeedback_file', language 'ar', version '4.5'.
  *
  * @package     assignfeedback_file
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['batchoperationconfirmuploadfiles'] = 'أتريد رفع ملف أو أكثر من ملفات الإفادة لكل المستخدمين المحددين؟';
+$string['batchoperationuploadfiles'] = 'رفع الإفادة';
 $string['batchuploadfiles'] = 'رفع ملفات الإفادة لعدة مستخدمين';
 $string['batchuploadfilesforusers'] = 'أرسل ملفات الإفادات إلى {$a} من المستخدمين المحددين';
 $string['configmaxbytes'] = 'أقصى حجم للملف';
@@ -53,6 +54,6 @@ $string['privacy:metadata:filepurpose'] = 'ملفات الملاحظات من ا
 $string['privacy:path'] = 'ملفات الإفادة';
 $string['selectedusers'] = 'المستخدمين المحددين';
 $string['uploadfiles'] = 'أرسل ملفات الإفادات';
-$string['uploadzip'] = 'رفع ملفات متعددة للإفادة في ملف مضغوط';
+$string['uploadzip'] = 'رفع ملفات الإفادة في ملف مضغوط';
 $string['uploadzipsummary'] = 'ملفات الإفادة المُستعادة من ملف مضغوط';
 $string['userswithnewfeedback'] = 'المستخدمون الذين تم تحديث الإفادات لهم : {$a}';

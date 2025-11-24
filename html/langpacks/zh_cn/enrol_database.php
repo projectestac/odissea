@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'zh_cn', version '4.4'.
+ * Strings for component 'enrol_database', language 'zh_cn', version '4.5'.
  *
  * @package     enrol_database
  * @category    string
@@ -53,9 +53,13 @@ $string['localcoursefield'] = '本地课程字段';
 $string['localrolefield'] = '本地角色字段';
 $string['localuserfield'] = '本地用户字段';
 $string['newcoursecategory'] = '新课程分类字段';
+$string['newcourseenddate'] = '新的课程结束日期字段';
+$string['newcourseenddate_desc'] = '以 yyyy-mm-dd 或 Unix 时间格式指定日期，或将课程结束日期留空，以便根据配置的课程持续时间计算。';
 $string['newcoursefullname'] = '新课程的全称字段';
 $string['newcourseidnumber'] = '新课程编号字段';
 $string['newcourseshortname'] = '新课程简称字段';
+$string['newcoursestartdate'] = '新的课程开始日期字段';
+$string['newcoursestartdate_desc'] = '以 yyyy-mm-dd 或 Unix 时间格式指定日期，或留空以将课程开始日期设置为当前日期。';
 $string['newcoursetable'] = '远程新课程数据表';
 $string['newcoursetable_desc'] = '指定一个表名，它应该包含所有要自动新建的课程。留空表示不创建任何课程。';
 $string['pluginname'] = '外部数据库';

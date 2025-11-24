@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'ar', version '4.4'.
+ * Strings for component 'auth_oauth2', language 'ar', version '4.5'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -91,7 +91,7 @@ $string['emailpasswordchangeinfo'] = 'مرحباً {$a->firstname}،
 $string['emailpasswordchangeinfosubject'] = '{$a}: معلومات تغير كلمة المرور';
 $string['info'] = 'حساب خارجي';
 $string['issuer'] = 'خدمة OAuth 2';
-$string['issuernologin'] = 'جهة الإصدار هذه لا يمكن استعمالها لتسجيل الدخول';
+$string['issuernologin'] = 'جهة الإصدار هذه لا يمكن استعمالها لتسجيل الدخول.';
 $string['key'] = 'المفتاح';
 $string['linkedlogins'] = 'تسجيلات الدخول المرتبطة';
 $string['linkedloginshelp'] = 'المساعدة بشأن تسجيلات الدخول المرتبطة';

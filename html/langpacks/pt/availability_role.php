@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_role', language 'pt', version '4.4'.
+ * Strings for component 'availability_role', language 'pt', version '4.5'.
  *
  * @package     availability_role
  * @category    string
@@ -32,6 +32,9 @@ $string['pluginname'] = 'Condição de acesso com base no papel na disciplina';
 $string['privacy:metadata'] = 'O módulo Condição de acesso com base no papel na disciplina não armazena quaisquer dados pessoais.';
 $string['requires_notrole'] = 'Não é <em>{$a}</em>';
 $string['requires_role'] = 'É <em>{$a}</em>';
+$string['setting_supportedroles'] = 'Papeis suportados';
+$string['setting_supportedroles_desc'] = 'Com esta configuração, pode limitar os papeis que podem ser utilizados na condição. Por predefinição, podem ser utilizadas todos os papeis que podem ser atribuídos no contexto da disciplina. Os papeis que não podem ser atribuídos no contexto da disciplina não podem ser utilizados de todo.';
+$string['setting_supportedroles_note'] = 'Nota: Se alterar esta configuração e desativar papeis, tal não afetará as condições já existentes e o papel desativado ainda estará definido nas condições existentes.';
 $string['setting_supportedrolesheading'] = 'Papéis permitidos';
 $string['setting_supportguestrole'] = 'Papel de visitante';
 $string['setting_supportguestrole_desc'] = 'Se ativar esta opção, o acesso às atividades pode ser configurado como exclusivo ou vedado a utilizadores que acedam a uma disciplina como visitante.';

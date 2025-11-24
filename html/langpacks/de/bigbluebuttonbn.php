@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'de', version '4.4'.
+ * Strings for component 'bigbluebuttonbn', language 'de', version '4.5'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -41,6 +41,7 @@ $string['bigbluebuttonbn:join'] = 'An einem Meeting teilnehmen';
 $string['bigbluebuttonbn:managerecordings'] = 'Aufzeichnungen verwalten';
 $string['bigbluebuttonbn:protectrecordings'] = 'Aufzeichnungen schützen';
 $string['bigbluebuttonbn:publishrecordings'] = 'Aufzeichnungen veröffentlichen';
+$string['bigbluebuttonbn:seepresentation'] = 'Präsentationsdatei auf der Aktivitätsseite anzeigen';
 $string['bigbluebuttonbn:unprotectrecordings'] = 'Aufzeichnungen Schutz aufheben';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'Aufzeichnungen Veröffentlichung zurückziehen';
 $string['bigbluebuttonbn:view'] = 'Meeting anzeigen';
@@ -199,6 +200,10 @@ $string['config_server_url'] = 'BigBlueButton-Server-URL';
 $string['config_server_url_description'] = 'URL zum BigBlueButton-Server';
 $string['config_shared_secret'] = 'BigBlueButton Shared Secret';
 $string['config_shared_secret_description'] = 'Security-Secret für den BigBlueButton-Server';
+$string['config_showpresentation_default'] = 'Präsentationsdatei auf der Aktivitätsseite zeigen';
+$string['config_showpresentation_default_description'] = 'Sollen Teilnehmer/innen bereits vor der Sitzung Zugriff auf die Präsentationsdatei haben? Diese Einstellung hat keine Auswirkung auf Nutzer/innen mit dem Recht "Präsentationsdatei immer auf der Aktivitätsseite sehen“.';
+$string['config_showpresentation_editable'] = 'Option \'Präsentationsdatei auf der Aktivitätsseite zeigen\'';
+$string['config_showpresentation_editable_description'] = 'Die Option erlaubt es Trainer/innen, für die Teilnehmer/innen eine Präsentationsdatei anzuzeigen.';
 $string['config_uidelegation_enabled'] = 'Die Weitergabe der Werkzeuge ist aktiviert';
 $string['config_uidelegation_enabled_description'] = 'Diese Einstellungen aktivieren oder deaktivieren die Weitergabe der Werkzeuge.';
 $string['config_userlimit'] = 'Maximale Anzahl von Nutzer/innen';
@@ -371,6 +376,7 @@ $string['mod_form_field_recordings_html'] = 'Tabelle in einfachem HTML anzeigen'
 $string['mod_form_field_recordings_imported'] = 'Nur importierte Links anzeigen';
 $string['mod_form_field_recordings_preview'] = 'Aufzeichnungsvorschau anzeigen';
 $string['mod_form_field_room_name'] = 'Name des Meetings';
+$string['mod_form_field_showpresentation'] = 'Präsentationsdatei auf der Aktivitätsseite zeigen';
 $string['mod_form_field_userlimit'] = 'Maximale Nutzerzahl';
 $string['mod_form_field_userlimit_help'] = 'Die maximale Anzahl von Nutzer/innen, die in einem Meeting erlaubt ist. Wenn der Wert auf 0 gesetzt wird, ist keine Obergrenze festgelegt.';
 $string['mod_form_field_voicebridge'] = 'Voice Bridge [####]';

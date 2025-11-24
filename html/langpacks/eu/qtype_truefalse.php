@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'eu', version '4.4'.
+ * Strings for component 'qtype_truefalse', language 'eu', version '4.5'.
  *
  * @package     qtype_truefalse
  * @category    string
@@ -38,7 +38,6 @@ $string['pluginname_link'] = 'question/type/truefalse';
 $string['pluginnameadding'] = 'Egia/gezurreko galdera gehitzen';
 $string['pluginnameediting'] = 'Egia/gezurra motako galdera bat editatzen';
 $string['pluginnamesummary'] = '\'Egia\' eta \'Gezurra\' aukera baino ez dituen Aukera anizkoitzeko galdera baten formularioa';
-$string['privacy:metadata'] = 'Egia/gezurra galdera-mota pluginak ez du datu pertsonalik biltzen.';
 $string['privacy:preference:showstandardinstruction'] = 'Argibide estandarrak erakutsi behar diren edo ez.';
 $string['selectone'] = 'Aukeratu bat:';
 $string['showstandardinstruction'] = 'Erakutsi argibide estandarrak';

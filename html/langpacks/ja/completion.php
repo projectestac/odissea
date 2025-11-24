@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'ja', version '4.4'.
+ * Strings for component 'completion', language 'ja', version '4.5'.
  *
  * @package     completion
  * @category    string
@@ -145,12 +145,13 @@ $string['csvdownload'] = 'スプレッドシートフォーマットでダウン
 $string['datepassed'] = '合格日';
 $string['days'] = '日';
 $string['daysoftotal'] = '{$a->days} / {$a->total}';
-$string['daysuntilcompletion'] = '完了までの日数';
+$string['daystakingcourse'] = '受講日数';
+$string['daysuntilcompletion'] = '完了までの時間';
 $string['defaultactivitycompletioncourse'] = 'これらはこのコースの活動のデフォルト完了条件です。';
 $string['defaultactivitycompletionsite'] = 'これらはすべてのコースの活動のデフォルト完了条件です。';
 $string['defaultcompletion'] = 'デフォルト活動完了';
 $string['defaultcompletionupdated'] = '変更が保存されました。';
-$string['deletecompletiondata'] = '完了データを削除する';
+$string['deletecompletiondata'] = '完了データ';
 $string['dependencies'] = '依存関係';
 $string['dependenciescompleted'] = '他のコースの完了';
 $string['detail_desc:receivegrade'] = '評定を受ける';

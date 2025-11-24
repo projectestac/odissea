@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'ca', version '4.4'.
+ * Strings for component 'assignfeedback_editpdf', language 'ca', version '4.5'.
  *
  * @package     assignfeedback_editpdf
  * @category    string
@@ -41,12 +41,12 @@ $string['commentlabel'] = '{$a->pnum}.{$a->cnum}';
 $string['couldnotsavepage'] = 'No es pot desar la pàgina {$a}';
 $string['currentstamp'] = 'Segell';
 $string['default'] = 'Habilitat per defecte';
-$string['default_help'] = 'Si està actiu, aquest mètode de retroalimentació s\'habilitarà per defecte per a totes les tasques noves.';
+$string['default_help'] = 'Si està actiu, aquest mètode de retroacció s\'habilitarà per defecte per a totes les tasques noves.';
 $string['deleteannotation'] = 'Suprimeix l\'anotació';
 $string['deletecomment'] = 'Suprimeix el comentari';
-$string['deletefeedback'] = 'Suprimeix el PDF de retroalimentació';
+$string['deletefeedback'] = 'Suprimeix el PDF de retroacció.';
 $string['downloadablefilename'] = 'feedback.pdf';
-$string['downloadfeedback'] = 'Baixa el PDF de retroalimentació';
+$string['downloadfeedback'] = 'Baixa el PDF de retroacció.';
 $string['draftchangessaved'] = 'S\'han desat els esborranys d\'anotacions';
 $string['drag'] = 'Arrossega';
 $string['editpdf'] = 'PDF amb comentaris';
@@ -57,7 +57,7 @@ $string['errorgenerateimage'] = 'S\'ha produït un error mentre es generava una 
 $string['errorpdfpage'] = 'Hi ha hagut un error en generar aquesta pàgina.';
 $string['expcolcomments'] = 'Expandeix/col·lapsa tots els comentaris';
 $string['filter'] = 'Filtra els comentaris ...';
-$string['generatefeedback'] = 'Genera el PDF de retroalimentació';
+$string['generatefeedback'] = 'Genera el PDF de retroacció.';
 $string['generatingpdf'] = 'S\'està generant el PDF ...';
 $string['gotopage'] = 'Ves a la pàgina';
 $string['green'] = 'Verd';
@@ -80,11 +80,11 @@ $string['pluginname'] = 'PDF amb comentaris';
 $string['preparesubmissionsforannotation'] = 'Prepara les trameses per anotacions';
 $string['privacy:metadata:colourpurpose'] = 'Color del comentari o anotació';
 $string['privacy:metadata:conversionpurpose'] = 'Els fitxers es converteixen a PDF per permetre de fer-hi anotacions.';
-$string['privacy:metadata:filepurpose'] = 'Emmagatzema un PDF anotat amb retroalimentació per a l\'usuari.';
+$string['privacy:metadata:filepurpose'] = 'Emmagatzema un PDF anotat amb retroacció per a l\'usuari.';
 $string['privacy:metadata:rawtextpurpose'] = 'Emmagatzema text en brut per les dades ràpides.';
 $string['privacy:metadata:tablepurpose'] = 'Emmagatzema una llista ràpida de comentaris especificats pel professor';
 $string['privacy:metadata:userid'] = 'L\'ID de l\'usuari';
-$string['privacy:path'] = 'Retroalimentació per PDF';
+$string['privacy:path'] = 'Retroacció per PDF.';
 $string['rectangle'] = 'Rectangle';
 $string['red'] = 'Vermell';
 $string['result'] = 'Resultat:';

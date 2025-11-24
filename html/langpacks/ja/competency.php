@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'ja', version '4.4'.
+ * Strings for component 'competency', language 'ja', version '4.5'.
  *
  * @package     competency
  * @category    string
@@ -29,6 +29,8 @@ $string['allchildrenarecomplete'] = 'すべての子が完了する';
 $string['competencies'] = 'コンピテンシ';
 $string['competenciesarenotenabled'] = 'コンピテンシは有効にされていません。';
 $string['competenciessettings'] = 'コンピテンシ設定';
+$string['competency'] = 'コンピテンシ';
+$string['competencyframework'] = 'コンピテンシフレームワーク';
 $string['completeplanstask'] = '期限が近づいている学習プランを完了する';
 $string['coursecompetencyoutcome_complete'] = 'コンピテンシを完了する';
 $string['coursecompetencyoutcome_evidence'] = 'エビデンスを添付する';
@@ -38,7 +40,7 @@ $string['coursemodulecompetencyoutcome_complete'] = 'コンピテンシを完了
 $string['coursemodulecompetencyoutcome_evidence'] = 'エビデンスを添付する';
 $string['coursemodulecompetencyoutcome_none'] = '何もしない';
 $string['coursemodulecompetencyoutcome_recommend'] = 'レビューのために送信する';
-$string['deletecompetencyratings'] = 'コンピテンシ評定を削除する';
+$string['deletecompetencyratings'] = 'コンピテンシ評定';
 $string['duplicateditemname'] = '{$a} (コピー)';
 $string['enablecompetencies'] = 'コンピテンシを有効にする';
 $string['enablecompetencies_desc'] = 'コンピテンシで学習プランに沿ってユーザを評価できます。';
@@ -136,7 +138,7 @@ $string['privacy:metadata:competency_userevidence'] = '事前学習エビデン�
 $string['privacy:metadata:competency_userevidencecomp'] = '事前学習エビデンスに関連するコンピテンシのレコードです。';
 $string['privacy:metadata:core_comments'] = '学習プランおよびコンピテンシに付けられたコメントです。';
 $string['privacy:metadata:evidence:action'] = 'エビデンスと共に実行されたアクションのタイプです。';
-$string['privacy:metadata:evidence:actionuserid'] = 'ユーザによって実行されたアクションです。';
+$string['privacy:metadata:evidence:actionuserid'] = 'ユーザにより実行されたアクションです。';
 $string['privacy:metadata:evidence:desca'] = '翻訳可能なエビデンス説明の任意パラメータです。';
 $string['privacy:metadata:evidence:desccomponent'] = '翻訳可能なエビデンス説明のコンポーネントです。';
 $string['privacy:metadata:evidence:descidentifier'] = '翻訳可能なエビデンス説明のIDです。';
@@ -163,8 +165,10 @@ $string['privacy:metadata:usermodified'] = 'レコードを作成または修正
 $string['privacy:path:plans'] = '学習プランです。';
 $string['privacy:path:relatedtome'] = '私に関連します。';
 $string['privacy:path:userevidence'] = '事前学習エビデンスです。';
+$string['proficient'] = '熟達';
 $string['pushcourseratingstouserplans'] = 'コース評定を個別の学習プランに転送する';
 $string['pushcourseratingstouserplans_desc'] = 'コースコンピテンシの評価時に更新する個人の学習プランのためのコース設定デフォルト値です。';
+$string['rating'] = '評定';
 $string['syncplanscohorts'] = '学習プランテンプレートコーホートからプランを同期する';
 $string['taxonomy_behaviour'] = '行動';
 $string['taxonomy_competency'] = 'コンピテンシ';
@@ -197,6 +201,7 @@ $string['usercommentedonaplanhtml'] = '<p>{$a->fullname} が学習プラン「 {
 <p>詳細は次をご覧ください: <a href="{$a->url}">{$a->urlname}</a></p>';
 $string['usercommentedonaplansmall'] = '{$a->fullname} が学習プラン「 {$a->plan} 」にコメントしました。';
 $string['usercommentedonaplansubject'] = '{$a} が学習プランにコメントしました。';
+$string['usercompetency'] = 'ユーザコンピテンシ';
 $string['usercompetencystatus_idle'] = '待機';
 $string['usercompetencystatus_inreview'] = 'レビュー中';
 $string['usercompetencystatus_waitingforreview'] = 'レビュー待ち';

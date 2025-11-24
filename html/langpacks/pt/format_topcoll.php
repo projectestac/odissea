@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'pt', version '4.4'.
+ * Strings for component 'format_topcoll', language 'pt', version '4.5'.
  *
  * @package     format_topcoll
  * @category    string
@@ -35,20 +35,6 @@ $string['columnhorizontal'] = 'Horizontal';
 $string['columnvertical'] = 'Vertical';
 $string['configurationheadingsub'] = 'Configuração';
 $string['configurationheadingsubdesc'] = 'Opções globais de configuração';
-$string['coursesectionactivityfurtherinformation'] = 'Página da disciplina com mais informações';
-$string['coursesectionactivityfurtherinformationassign'] = 'Mostrar informação do trabalho';
-$string['coursesectionactivityfurtherinformationassigndesc'] = 'Mostrar informações do trabalho. Aos professores/administradores será mostrado o número de submissões.';
-$string['coursesectionactivityfurtherinformationchoice'] = 'Mostrar informação da sondagem';
-$string['coursesectionactivityfurtherinformationchoicedesc'] = 'Mostrar informações da sondagem. Aos professores/administradores será mostrado o número de submissões.';
-$string['coursesectionactivityfurtherinformationdata'] = 'Mostrar informação da base de dados';
-$string['coursesectionactivityfurtherinformationdatadesc'] = 'Mostrar informações da base de dados. Aos professores/administradores será mostrado o número de submissões.';
-$string['coursesectionactivityfurtherinformationfeedback'] = 'Mostrar informação do feedback';
-$string['coursesectionactivityfurtherinformationfeedbackdesc'] = 'Mostrar informações do inquérito. Aos professores/administradores será mostrado o número de submissões.';
-$string['coursesectionactivityfurtherinformationforum'] = 'Mostrar informação do fórum';
-$string['coursesectionactivityfurtherinformationlesson'] = 'Mostrar informação da lição';
-$string['coursesectionactivityfurtherinformationlessondesc'] = 'Mostrar informações da lição. Aos professores/administradores será mostrado o número de submissões.';
-$string['coursesectionactivityfurtherinformationquiz'] = 'Mostrar informação do teste';
-$string['coursesectionactivityfurtherinformationquizdesc'] = 'Mostrar informações do teste Aos professores/administradores será mostrado o número de submissões.';
 $string['ctreset'] = 'Opções da reposição do formato Tópicos Contraídos';
 $string['ctreset_help'] = 'Repor predefinições do formato Tópicos Contraídos';
 $string['currentsection'] = 'Esta secção';
@@ -87,8 +73,6 @@ $string['defaultlayoutstructure'] = 'Configuração da estrutura predefinida';
 $string['defaultlayoutstructure_desc'] = 'A definição de estrutura pode ser um das seguintes:<br />Tópicos<br />Semanas<br />Semana atual primeiro<br />Tópico atual primeiro<br />Dias';
 $string['defaultonesection'] = 'Uma secção';
 $string['defaultonesection_desc'] = 'Indica se, a qualquer momento, apenas uma secção deve estar aberta. Nota: Ignorado ao editar para permitir que atividades e recursos possam ser movidos para outras secções.';
-$string['defaultshowadditionalmoddata'] = 'Usar a predefinição \'Mostrar informações adicionais\' se ainda não estiver definido';
-$string['defaultshowadditionalmoddatadesc'] = 'Se uma atividade for definida ao nível do site (abaixo) para mostrar informações adicionais, esta configuração indica o estado predefinido da instância específica da respetiva disciplina.';
 $string['defaultshowsectionsummary'] = 'Mostrar o resumo quando a secção está contraída';
 $string['defaultshowsectionsummary_desc'] = 'Determina se o resumo da seção será sempre exibido independentemente do estado da secção (contraída ou expandida).';
 $string['defaulttgbgcolour'] = 'Cor do fundo do botão';
@@ -224,7 +208,6 @@ $string['markthissection'] = 'Destacar esta secção como a secção atual';
 $string['medium'] = 'Médio';
 $string['newsection'] = 'Nova secção';
 $string['newsectionname'] = 'Novo nome da secção {$a}';
-$string['numbersections'] = 'Número de secções';
 $string['off'] = 'Desligado';
 $string['on'] = 'Ligado';
 $string['one'] = 'Uma';
@@ -334,8 +317,6 @@ $string['settoggleiconset'] = 'Ícones';
 $string['settoggleiconset_help'] = 'Define o conjunto de ícones a utilizar';
 $string['setviewsinglesectionenabled'] = 'Visualizar secção única ativada';
 $string['setviewsinglesectionenabled_help'] = 'Funcionalidade Visualizar secção única ativada.';
-$string['showadditionalmoddata'] = 'Mostrar informações adicionais de: {$a} na disciplina';
-$string['showadditionalmoddata_help'] = 'Permitir que todos os utilizadores vejam o prazo da atividade e os utilizadores com permissão de avaliação vejam o número de submissões na página da disciplina para atividades.';
 $string['showfromothers'] = 'Mostrar';
 $string['sidepost'] = 'Direita';
 $string['sidepre'] = 'Conteúdo';

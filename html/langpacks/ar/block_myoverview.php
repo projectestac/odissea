@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'ar', version '4.4'.
+ * Strings for component 'block_myoverview', language 'ar', version '4.5'.
  *
  * @package     block_myoverview
  * @category    string
@@ -93,7 +93,7 @@ $string['title'] = 'اسم المقرر';
 $string['viewquickstart'] = 'معاينة دليل البدء السريع';
 $string['zero_default_intro'] = 'بمجرد انضمامك إلى مقرر، سيظهر هنا.';
 $string['zero_default_title'] = 'لستَ منضمًا إلى أي مساق.';
-$string['zero_nocourses_intro'] = 'هل تحتاج مساعدة لتبدأ؟ راجع <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">توثيقات مودل</a> أو تلمس خطواتك الأولى مع دليلنا للبدء السريع.';
+$string['zero_nocourses_intro'] = 'هل تحتاج مساعدة لتبدأ؟ راجع <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">توثيقات مودل</a>.';
 $string['zero_nocourses_title'] = 'أنشئ مقررك الدراسي الأول';
 $string['zero_request_intro'] = 'هل تحتاج مساعدة لتبدأ؟ راجع <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">توثيقات مودل</a> أو تلمس خطواتك الأولى مع <a href="{$a->quickhref}" title="{$a->quicktitle}" target="{$a->quicktarget}">دليلنا للبدء السريع</a>.';
 $string['zero_request_title'] = 'أطلب مساقك الأول';

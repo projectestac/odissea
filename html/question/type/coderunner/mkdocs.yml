@@ -1,5 +1,17 @@
-site_name: CodeRunner
+site_name: CodeRunner Documentation
 theme:
-    name: readthedocs
-extra_css:
-  - stylesheets/extra.css
+  name: material
+  features:
+    - navigation.indexes
+    - navigation.sections
+    - navigation.expand
+    - toc.follow
+
+plugins:
+  - search
+  - awesome-pages
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 3

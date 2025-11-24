@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'ru', version '4.4'.
+ * Strings for component 'course', language 'ru', version '4.5'.
  *
  * @package     course
  * @category    string
@@ -101,6 +101,10 @@ $string['downloadcoursecontent_help'] = 'Этот параметр опреде�
 $string['enabledownloadcoursecontent'] = 'Разрешить скачивание содержимого курса.';
 $string['errorendbeforestart'] = 'Дата окончания ({$a}) раньше даты начала курса.';
 $string['favourite'] = 'Избранный курс';
+$string['filterbothactive'] = 'Первый ({$a->first}) Последний ({$a->last})';
+$string['filterbyname'] = 'Фильтр по имени';
+$string['filterfirstactive'] = 'Первый ({$a->first})';
+$string['filterlastactive'] = 'Последний ({$a->last})';
 $string['gotosection'] = 'Перейти в секцию {$a}';
 $string['gradetopassnotset'] = 'В этом курсе нет проходных оценок. Их можно задать в элементах оценок курса (настройка Журнала уоценок).';
 $string['hideendedcoursestask'] = 'Скрыть курсы в день окончания';

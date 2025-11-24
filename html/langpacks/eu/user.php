@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'eu', version '4.4'.
+ * Strings for component 'user', language 'eu', version '4.5'.
  *
  * @package     user
  * @category    string
@@ -25,25 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcondition'] = 'Gehitu baldintza';
-$string['adverbfor_and'] = 'eta';
-$string['adverbfor_andnot'] = 'eta';
-$string['adverbfor_or'] = 'edo';
-$string['applyfilters'] = 'Aplikatu iragazkiak';
-$string['clearfilterrow'] = 'Kendu iragazkia orain';
-$string['clearfilters'] = 'Garbitu iragazkiak';
-$string['clearfilterselection'] = 'Kendu "{$a}" iragazkitik';
 $string['countparticipantsfound'] = '{$a} partaide aurkitu dira';
 $string['filterbykeyword'] = 'hitz-gakoa';
-$string['filterrowlegend'] = '{$a} iragazkia';
-$string['filtersetmatchdescription'] = 'Iragazkien konbinazioak nola erabili beharko lirateke';
-$string['filtertype'] = 'Iragazki mota';
-$string['match'] = 'Aurkitu';
-$string['matchofthefollowing'] = 'hurrengoetatik:';
 $string['moodlenetprofile'] = 'MoodleNet profilaren IDa';
 $string['moodlenetprofile_help'] = 'Zure MoodleNet profilaren IDak zure MoodleNet profila gune honekin lotzen du.';
 $string['placeholdertype'] = 'Idatzi...';
-$string['placeholdertypeorselect'] = 'Idatzi edo aukeratu...';
 $string['privacy:courserequestpath'] = 'Eskatutako ikastaroak';
 $string['privacy:descriptionpath'] = 'Profilaren deskribapena';
 $string['privacy:devicespath'] = 'Erabiltzailearen gailuak';
@@ -149,7 +135,6 @@ $string['privacy:passwordresetpath'] = 'Pasahitzaren berrezartze kopurua';
 $string['privacy:privatefilespath'] = 'Fitxategi pribatuak';
 $string['privacy:profileimagespath'] = 'Profileko irudiak';
 $string['privacy:sessionpath'] = 'Saioaren datuak';
-$string['selectfiltertype'] = 'Aukeratu';
 $string['supportmessagealternative'] = 'Horren ordez, {$a} helbidera idatzi dezakezu.';
 $string['supportmessagenotsent'] = 'Zoritxarrez zure mezua ezin izan da bidali.';
 $string['supportmessagesent'] = 'Zure mezua bidalia izan da.';

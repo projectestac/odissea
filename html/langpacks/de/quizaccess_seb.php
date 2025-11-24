@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_seb', language 'de', version '4.4'.
+ * Strings for component 'quizaccess_seb', language 'de', version '4.5'.
  *
  * @package     quizaccess_seb
  * @category    string
@@ -96,6 +96,7 @@ $string['seb:manage_seb_allowedbrowserexamkeys'] = 'SEB-Einstellung: Erlaubte Br
 $string['seb:manage_seb_allowreloadinexam'] = 'SEB-Einstellung: Neuladen der Prüfung erlauben';
 $string['seb:manage_seb_allowspellchecking'] = 'SEB-Einstellung: Rechtschreibprüfung aktivieren';
 $string['seb:manage_seb_allowuserquitseb'] = 'SEB-Einstellung: Beenden von SEB erlauben';
+$string['seb:manage_seb_configuremanually'] = 'SEB Testeinstellung ändern: manuelle Konfiguration wählen';
 $string['seb:manage_seb_enableaudiocontrol'] = 'SEB-Einstellung: Audio-Steuerung anzeigen';
 $string['seb:manage_seb_expressionsallowed'] = 'SEB-Einstellung: Erlaubte Ausdrücke';
 $string['seb:manage_seb_expressionsblocked'] = 'SEB-Einstellung: Blockierte Ausdrücke';
@@ -114,13 +115,14 @@ $string['seb:manage_seb_showtime'] = 'SEB-Einstellung: Zeit anzeigen';
 $string['seb:manage_seb_showwificontrol'] = 'SEB-Einstellung: WLAN-Steuerung anzeigen';
 $string['seb:manage_seb_templateid'] = 'SEB-Einstellung: SEB-Template auswählen';
 $string['seb:manage_seb_userconfirmquit'] = 'SEB-Einstellung: Beenden muss bestätigt werden';
+$string['seb:manage_seb_usesebclientconfig'] = 'SEB Testeinstellung ändern: SEB Client Konfiguration wählen';
 $string['seb:managetemplates'] = 'SEB-Konfiguration-Templates verwalten';
 $string['seb_activateurlfiltering'] = 'URL-Filter erlauben';
 $string['seb_activateurlfiltering_help'] = 'Mit dieser Option werden URLs beim Laden von Webseiten gefiltert. Das Filter-Set muss hier unten definiert werden.';
 $string['seb_allowcapturecamera'] = 'Browserzugriff auf die Kamera zulassen';
-$string['seb_allowcapturecamera_help'] = 'Wenn diese Option aktiviert ist, werden Nutzer/innen vor Beginn der Prüfungssitzung aufgefordert, SEB Zugriff auf die Kamera zu gewähren. Unter macOS 12/iOS 15 oder höher verhindert das Deaktivieren dieser Einstellung in jedem Fall den Zugriff von Webanwendungen auf die Kamera. Videoaufzeichnungen über WebRTC sind dann nicht mehr möglich.';
+$string['seb_allowcapturecamera_help'] = 'Wenn diese Option aktiviert ist, werden Nutzer/innen vor Beginn der Prüfung aufgefordert, SEB den Kamerazugriff zu erlauben. Das Deaktivieren dieser Einstellung sperrt bei macOS 12 bzw. iOS 15 (oder höher) den Kamerazugriff. Videoaufnahmen über WebRTC sind dann nicht möglich.';
 $string['seb_allowcapturemicrophone'] = 'Browserzugriff auf das Mikrofon zulassen';
-$string['seb_allowcapturemicrophone_help'] = 'Wenn diese Option aktiviert ist, werden Benutzer vor Beginn der Prüfungssitzung aufgefordert, SEB Zugriff auf das Mikrofon zu gewähren. Unter macOS 12/iOS 15 oder höher verhindert das Deaktivieren dieser Einstellung in jedem Fall den Zugriff von Webanwendungen auf das Mikrofon. Audioaufnahmen über WebRTC sind dann nicht mehr möglich.';
+$string['seb_allowcapturemicrophone_help'] = 'Wenn diese Option aktiviert ist, werden Nutzer/innen vor Beginn der Prüfung aufgefordert, SEB den Mikrofonzugriff zu erlauben. Das Deaktivieren dieser Einstellung sperrt bei macOS 12 bzw. iOS 15 (oder höher) den Mikrofonzugriff. Audioaufnahmen über WebRTC sind dann nicht möglich.';
 $string['seb_allowedbrowserexamkeys'] = 'Erlaubte Safe-Exam-Browser-Keys';
 $string['seb_allowedbrowserexamkeys_help'] = 'In diesem Feld können Sie die erlaubten Safe-Exam-Browser-Keys für verschiedene Versionen des Safe-Exam-Browser angeben, die auf diesen Test zugreifen dürfen. Wenn keine Schlüssel angegeben werden, werden für diesen Test keine Safe-Browser-Exam-Keys geprüft.';
 $string['seb_allowreloadinexam'] = 'Neuladen bei Prüfung erlauben';

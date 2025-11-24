@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ro', version '4.4'.
+ * Strings for component 'calendar', language 'ro', version '4.5'.
  *
  * @package     calendar
  * @category    string
@@ -71,7 +71,7 @@ $string['daywithnoevents'] = 'Nu există evenimente în această zi.';
 $string['default'] = 'Implicit';
 $string['deleteallevents'] = 'Șterge toate evenimentele';
 $string['deleteevent'] = 'Șterge eveniment';
-$string['deleteevents'] = 'Șterge evenimente';
+$string['deleteevents'] = 'Evenimente';
 $string['deleteoneevent'] = 'Șterge acest eveniment';
 $string['detailedmonthviewfor'] = 'Vizualizarea detaliată a lunii pentru:';
 $string['detailedmonthviewtitle'] = 'Vizualizarea detaliată a lunii: {$a}';

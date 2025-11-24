@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'de', version '4.4'.
+ * Strings for component 'format_topcoll', language 'de', version '4.5'.
  *
  * @package     format_topcoll
  * @category    string
@@ -27,11 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['arrow'] = 'Pfeil';
 $string['bulb'] = 'Glühlampe';
-$string['cachedef_activitymodulecountcache'] = 'Speichert die Anzahl der Teilnehmer/innen, die auf ein bestimmtes Modul in einem bestimmten Kurs zugreifen können.';
-$string['cachedef_activitystudentrolescache'] = 'Speichert die Rollen der Teilnehmer/innen';
-$string['cachedef_activitystudentscache'] = 'Speichert die IDs der Teilnehmer/innen für einen bestimmten Kurs';
-$string['cachedef_activityusercreatedcache'] = 'Speichert die IDs von neuen Nutzer/innen für einen bestimmten Kurs';
-$string['cannotgetactivitycacheslock'] = 'Die Sperre der Aktivitäts-Caches für die Kurs-ID {$a} kann nicht abgerufen werden.';
 $string['center'] = 'Zentriert';
 $string['cloud'] = 'Wolke';
 $string['colourrule'] = 'Geben Sie bitte eine gültige RGB-Farbe (z.B. #336699) oder \'-\' für Standard ein.';
@@ -40,28 +35,6 @@ $string['columnhorizontal'] = 'Waagerecht';
 $string['columnvertical'] = 'Senkrecht';
 $string['configurationheadingsub'] = 'Konfiguration';
 $string['configurationheadingsubdesc'] = 'Konfigurationseinstellungen der Website';
-$string['courseadditionalmoddatamaxstudents'] = 'Legen Sie die maximale Anzahl von Teilnehmer/innen in einem Kurs fest, für die "Zusätzliche Infos anzeigen" gelten soll';
-$string['courseadditionalmoddatamaxstudentsdesc'] = 'Die Berechnung zusätzlicher Infos kann einige Zeit dauern, besonders bei großen Kursen. Deswegen können Sie hier die maximale Anzahl von Teilnehmer/innen im Kurs festlegen, damit die Funktionalität angezeigt werden kann. Bei einer größeren Anzahl werden die \'Zusätzlichen Infos\' unabhängig von den Kurseinstellungen NICHT berechnet uns NICHT angezeigt! Ein Wert von \'0\' bedeutet \'unbegrenzt\'. Hinweis: Die Caches werden gelöscht, wenn der Wert geändert wird.';
-$string['courseadditionalmoddatastudentsinfo'] = 'Status für zusätzliche Infos';
-$string['courseadditionalmoddatastudentsinfolimitednoshow'] = 'Zusätzliche Infos werden für die aktivierten Aktivitäten für {$a->students} Teilnehmer/innen NICHT angezeigt, da die maximale Anzahl {$a->maxstudents} überschritten ist, die administrativ in der Einstellung "courseadditionalmoddatamaxstudents" Für das Format "komprimierte Abschnitte" festgelegt wurde.';
-$string['courseadditionalmoddatastudentsinfolimitedshow'] = 'Zusätzliche Infos werden für die aktivierten Aktivitäten für {$a->students} Teilnehmer/innen angezeigt, wenn die maximale Anzahl {$a->maxstudents} nicht überschritten wird. Der Wert wurde von den Administrator/innen  mit der Einstellung "courseadditionalmoddatamaxstudents" für das Format "komprimierte Abschnitte" festgelegt.';
-$string['courseadditionalmoddatastudentsinfounlimited'] = 'Zusätzliche Infos werden für die aktivierten Aktivitäten für {$a} Teilnehmer/innen  angezeigt.';
-$string['coursesectionactivityfurtherinformation'] = 'Weitere Infos der Kursseite';
-$string['coursesectionactivityfurtherinformation_desc'] = 'Weitere Infoeinstellungen für Kursseite auf Website-Ebene';
-$string['coursesectionactivityfurtherinformationassign'] = 'Aufgabeninfos anzeigen';
-$string['coursesectionactivityfurtherinformationassigndesc'] = 'Im Kurs anzuzeigende Aufgabeninfos festlegen. Trainer/innen und Administrator/innen wird die Anzahl der Abgaben angezeigt.';
-$string['coursesectionactivityfurtherinformationchoice'] = 'Abstimmungsinfos anzeigen';
-$string['coursesectionactivityfurtherinformationchoicedesc'] = 'Im Kurs anzuzeigende Abstimmungsinfos festlegen.  Trainer/innen und Administrator/innen wird die Anzahl der Abgaben angezeigt.';
-$string['coursesectionactivityfurtherinformationdata'] = 'Datenbankinfos anzeigen';
-$string['coursesectionactivityfurtherinformationdatadesc'] = 'Im Kurs anzuzeigende Datenbankinfos festlegen.  Trainer/innen und Administrator/innen wird die Anzahl der Abgaben angezeigt.';
-$string['coursesectionactivityfurtherinformationfeedback'] = 'Feedbackinfos anzeigen';
-$string['coursesectionactivityfurtherinformationfeedbackdesc'] = 'Im Kurs anzuzeigende Feedbackinfos festlegen.  Trainer/innen und Administrator/innen wird die Anzahl der Abgaben angezeigt.';
-$string['coursesectionactivityfurtherinformationforum'] = 'Foreninfo anzeigen';
-$string['coursesectionactivityfurtherinformationforumdesc'] = 'Im Kurs anzuzeigende Foreninfos festlegen. Trainer/innen und Administrator/innen wird die Anzahl der Beiträge anzeigt, wenn die Bewertung des gesamten Forums aktiviert ist.';
-$string['coursesectionactivityfurtherinformationlesson'] = 'Lektionsinfos anzeigen';
-$string['coursesectionactivityfurtherinformationlessondesc'] = 'Im Kurs anzuzeigende Lektionsinfos festlegen. Trainer/innen und Administrator/innen wird die Anzahl der Abgaben angezeigt.';
-$string['coursesectionactivityfurtherinformationquiz'] = 'Testinfos anzeigen';
-$string['coursesectionactivityfurtherinformationquizdesc'] = 'Im Kurs anzuzeigende Testinfos festlegen. Trainer/innen und Administrator/innen wird die Anzahl der Abgaben angezeigt.';
 $string['ctreset'] = 'Rücksetzoptionen für komprimierte Abschnitte';
 $string['ctreset_help'] = 'Die Einstellungen können auf die Standardwerte für komprimierte Abschnitte zurückgesetzt werden.';
 $string['currentsection'] = 'Dieser Abschnitt';
@@ -111,8 +84,6 @@ $string['defaultonesection'] = 'Nur ein Abschnitt';
 $string['defaultonesection_desc'] = 'Diese Option legt fest, dass immer nur ein Abschnitt angezeigt wird. Beim Bearbeiten des Kurses wird die Einstellung ignoriert, um Aktivitäten und Ressourcen bewegen zu können.';
 $string['defaultonesectioniconfont'] = 'Icon Font für "Nur ein Abschnitt"';
 $string['defaultonesectioniconfont_desc'] = 'Geben Sie die Icon-Font-Klasse an, die für das Link-Icon mit einem Abschnitt verwendet werden soll, d.h. FontAwesome-Icon-Klassen. Wenn leer, wird das Standardsymbol "Nur ein Abschnitt" im Verzeichnis "pix" des Formats verwendet.';
-$string['defaultshowadditionalmoddata'] = 'Standardmäßiges \'Weitere Infos anzeigen\' im Kurs';
-$string['defaultshowadditionalmoddatadesc'] = 'Wenn eine Aktivität auf Website-Ebene (unten) so eingestellt ist, dass zusätzliche Infos angezeigt werden, gibt diese Einstellung den Standardstatus der kursspezifischen Instanz davon an.';
 $string['defaultshowsectionsummary'] = 'Abschnittsbeschreibung anzeigen, wenn zugeklappt';
 $string['defaultshowsectionsummary_desc'] = 'Diese Option legt fest, ob die Abschnittsbeschreibungen angezeigt werden, auch wenn die Abschnitte zugeklappt sind.';
 $string['defaulttgbgcolour'] = 'Hintergrundfarbe';
@@ -209,8 +180,6 @@ $string['em3_7'] = '3.7em';
 $string['em3_8'] = '3.8em';
 $string['em3_9'] = '3.9em';
 $string['em4_0'] = '4.0em';
-$string['enableadditionalmoddata'] = 'Zusätzliche Infos aktivieren';
-$string['enableadditionalmoddatadesc'] = 'Dies ist ein Schalter auf „Website-Ebene“, um die Aktivitätsinfos ein- oder auszuschalten. Es muss aktiviert sein, damit die entsprechenden Einstellungen auf Kursebene wirksam werden. Da diese Funktionalität rechenintensiv sein kann, wird dringend empfohlen, dass Sie vor der Verwendung auf einem Produktionssystem vollständige Tests durchführen. Hinweis: Löscht die Cache-Caches, wenn sie geändert werden.';
 $string['eye'] = 'Auge';
 $string['feedbackavailable'] = 'Feedback verfügbar';
 $string['folder'] = 'Verzeichnis';
@@ -239,7 +208,6 @@ $string['markthissection'] = 'Markieren Sie diesen Abschnitt als den aktuellen A
 $string['medium'] = 'Mittel';
 $string['newsection'] = 'Neuer Abschnitt';
 $string['newsectionname'] = 'Neuer Titel für Abschnitt {$a}';
-$string['numbersections'] = 'Anzahl der Abschnitte';
 $string['off'] = 'Aus';
 $string['on'] = 'An';
 $string['one'] = '1';
@@ -256,10 +224,6 @@ $string['privacy:request:preference:toggle'] = 'Für den Kurs mit der ID "{$a->n
 $string['radio'] = 'Radiobutton';
 $string['readme_desc'] = 'Weitere Infos zum Kursformat \'komprimierte Abschnitte\' finden Sie unter \'{$a->url}\' .';
 $string['readme_title'] = 'Weitere Infos';
-$string['resetactivitymeta'] = 'Zusätzliche Modulinfo';
-$string['resetactivitymeta_help'] = 'Zusätzliche Modulinfo zurücksetzen, um den Standardwert für die Website einzustellen.';
-$string['resetallactivitymeta'] = 'Alle zusätzlichen Modulinfos';
-$string['resetallactivitymeta_help'] = 'Alle zusätzliche Modulinfos zurücksetzen, um die jeweiligen Standardwerte für die Website einzustellen.';
 $string['resetallcolour'] = 'Farben';
 $string['resetallcolour_help'] = 'Die Einstellungen für Farben und Transparenz werden auf die Standardwerte der Website zurückgesetzt.';
 $string['resetalldisplayinstructions'] = 'Bedienhinweis';
@@ -370,8 +334,6 @@ $string['settoggleiconset'] = 'Symbolauswahl';
 $string['settoggleiconset_help'] = 'Die Option legt fest, welche Symbolauswahl verwendet wird.';
 $string['setviewsinglesectionenabled'] = '"Nur ein Abschnitt" aktiviert';
 $string['setviewsinglesectionenabled_help'] = 'Die Option legt fest, dass "Nur ein Abschnitt" ist aktiviert.';
-$string['showadditionalmoddata'] = 'Zusätzliche Infos für {$a} im Kurs anzeigen';
-$string['showadditionalmoddata_help'] = 'Ermöglichen Sie allen Nutzer/innen, die Aktivitätsfrist anzuzeigen, und Trainer/innen, die Anzahl der Aktivitätseinreichungen auf der Kursseite anzuzeigen.';
 $string['showfromothers'] = 'Sichtbar machen';
 $string['sidepost'] = 'Nach';
 $string['sidepre'] = 'Vor';
@@ -384,7 +346,6 @@ $string['three'] = '3';
 $string['tif'] = 'Icon Font';
 $string['toggleclose'] = 'Schließen';
 $string['toggleopen'] = 'Öffnen';
-$string['topcoll:changeactivitymeta'] = 'Aktivitätsmeta ändern oder zurücksetzen';
 $string['topcoll:changecolour'] = 'Farben der Abschnittstasten ändern';
 $string['topcoll:changelayout'] = 'Layout der Abschnittstasten ändern';
 $string['topcoll:changetogglealignment'] = 'Ausrichtung der Abschnittstasten ändern';

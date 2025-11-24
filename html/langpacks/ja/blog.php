@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ja', version '4.4'.
+ * Strings for component 'blog', language 'ja', version '4.5'.
  *
  * @package     blog
  * @category    string
@@ -71,7 +71,7 @@ $string['configuseexternalblogs'] = 'ユーザが外部ブログフィードを�
 $string['courseblog'] = 'コースブログ: {$a}';
 $string['courseblogdisable'] = 'コースブログは有効にされていません。';
 $string['courseblogs'] = 'ユーザはコースを共有しているユーザのブログのみ読むことができる';
-$string['deleteblogassociations'] = 'ブログ関連付けを削除する';
+$string['deleteblogassociations'] = 'ブログ関連付け';
 $string['deleteblogassociations_help'] = '有効にした場合、今後ブログエントリはこのコース、コース活動またはリソースに関連付けられないようになります。ブログエントリ自体は削除されません。';
 $string['deleteentry'] = 'エントリを削除する';
 $string['deleteexternalblog'] = 'この外部ブログの登録を解除する';

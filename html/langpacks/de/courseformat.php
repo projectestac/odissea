@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'courseformat', language 'de', version '4.4'.
+ * Strings for component 'courseformat', language 'de', version '4.5'.
  *
  * @package     courseformat
  * @category    string
@@ -37,8 +37,9 @@ $string['bulkedit'] = 'Sammelaktionen';
 $string['bulkeditingcourse'] = 'Sammelbearbeitung im Kurs {$a}';
 $string['bulkselection'] = '{$a} ausgewählt';
 $string['bulkselection_plural'] = '{$a} ausgewählt';
-$string['cm_complete_feedback'] = '{$a->name} ist als abgeschlossen markiert.';
-$string['cm_complete_feedback_batch'] = 'Ausgewählte {$a->count} Aktivitäten sind als abgeschlossen markiert.';
+$string['cm_add_feedback'] = '{$a->modname} hinzugefügt';
+$string['cm_complete_feedback'] = '{$a->name} ist als erledigt markiert.';
+$string['cm_complete_feedback_batch'] = 'Ausgewählte {$a->count} Aktivitäten sind als erledigt markiert.';
 $string['cm_delete_feedback'] = '{$a->name} gelöscht';
 $string['cm_delete_feedback_batch'] = 'Ausgewählte {$a->count} Aktivitäten gelöscht';
 $string['cm_duplicate_feedback'] = '{$a->name} dupliziert';
@@ -53,13 +54,15 @@ $string['cm_show_feedback'] = '{$a->name} wird nun angezeigt.';
 $string['cm_show_feedback_batch'] = 'Die ausgewählten {$a->count} Aktivitäten werden nun angezeigt.';
 $string['cm_stealth_feedback'] = '{$a->name} ist nun verfügbar, wird aber auf der Kursseite nicht angezeigt.';
 $string['cm_stealth_feedback_batch'] = 'Die ausgewählten {$a->count} Aktivitäten sind jetzt verfügbar, werden aber nicht auf der Kursseite angezeigt.';
-$string['cm_uncomplete_feedback'] = '{$a->name} ist als nicht abgeschlossen markiert.';
-$string['cm_uncomplete_feedback_batch'] = 'Ausgewählte {$a->count} Aktivitäten sind als nicht abgeschlossen markiert.';
+$string['cm_uncomplete_feedback'] = '{$a->name} ist als nicht erledigt markiert.';
+$string['cm_uncomplete_feedback_batch'] = 'Ausgewählte {$a->count} Aktivitäten sind als nicht erledigt markiert.';
 $string['cm_visiblegroups_feedback'] = 'Gruppenmodus {$a->name} wurde auf "Sichtbare Gruppen" geändert.';
 $string['cmavailability'] = 'Aktivitätsverfügbarkeit';
 $string['cmdelete_info'] = 'Hiermit wird \'{$a->name}\' mit allen darin enthaltenen Nutzerdaten gelöscht.';
+$string['cmdelete_subsectiontitle'] = 'Unterabschnitt löschen?';
 $string['cmdelete_title'] = 'Aktivität löschen?';
 $string['cmmove_info'] = '{$a} verschieben hinter';
+$string['cmmove_subsectiontitle'] = 'Unterabschnitt verschieben';
 $string['cmmove_title'] = 'Aktivität verschieben';
 $string['cmsdelete'] = 'Aktivitäten löschen';
 $string['cmsdelete_info'] = 'Hiermit werden {$a->count} Aktivitäten mit allen darin enthaltenen Nutzerdaten gelöscht.';
@@ -70,15 +73,19 @@ $string['cmsmove_info'] = '{$a} Aktivitäten verschieben hinter';
 $string['cmsmove_title'] = 'Ausgewählte Aktivitäten verschieben';
 $string['courseindex'] = 'Kursindex';
 $string['courseindexoptions'] = 'Optionen für den Kursindex';
+$string['maxsectionaddmessage'] = 'Sie haben die maximal zulässige Anzahl an Abschnitten für einen Kurs erreicht.';
 $string['nobulkaction'] = 'Keine Sammelaktionen verfügbar';
+$string['orphansectionwarning'] = 'Dieser Abschnitt und sein Inhalt sind nicht Teil der Kursstruktur und für Teilnehmer/innen nicht sichtbar. Um diesen Inhalt zu verwenden, verschieben Sie ihn in einen anderen Abschnitt.';
 $string['preference:coursesectionspreferences'] = 'Abschnittsnutzereinstellungen für den Kurs {$a}';
 $string['privacy:metadata:preference:coursesectionspreferences'] = 'Abschnittsnutzereinstellungen wie minimiert und maximiert.';
+$string['section_add_feedback'] = 'Abschnitt hinzugefügt';
 $string['section_delete_feedback'] = 'Kursabschnitt {$a->name} gelöscht';
 $string['section_delete_feedback_batch'] = 'Ausgewählte {$a->count} Kursabschnitte gelöscht';
 $string['section_hide_feedback'] = 'Kursabschnitt {$a->name} verborgen';
 $string['section_hide_feedback_batch'] = 'Ausgewählte {$a->count} Kursabschnitte verborgen';
 $string['section_show_feedback'] = 'Kursabschnitt {$a->name} angezeigt';
 $string['section_show_feedback_batch'] = 'Ausgewählte {$a->count} Kursabschnitte angezeigt';
+$string['sectionaddmax'] = 'Sie haben die maximal zulässige Anzahl an Abschnitten für einen Kurs erreicht ...';
 $string['sectionavailability_title'] = 'Abschnittsverfügbarkeit';
 $string['sectiondelete_info'] = 'Hiermit wird \'{$a->name}\' mit allen darin enthaltenen Aktivitäten gelöscht.';
 $string['sectiondelete_title'] = 'Abschnitt löschen?';

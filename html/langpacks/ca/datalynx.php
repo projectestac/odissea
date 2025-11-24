@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datalynx', language 'ca', version '4.4'.
+ * Strings for component 'datalynx', language 'ca', version '4.5'.
  *
  * @package     datalynx
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['author'] = 'Autor/a';
+$string['author'] = 'Autor o autora';
 $string['download'] = 'Baixa';
 $string['export'] = 'Exporta';
 $string['grade'] = 'Qualificació';

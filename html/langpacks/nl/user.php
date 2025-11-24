@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'nl', version '4.4'.
+ * Strings for component 'user', language 'nl', version '4.5'.
  *
  * @package     user
  * @category    string
@@ -25,25 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcondition'] = 'Voeg voorwaarde toe';
-$string['adverbfor_and'] = 'en';
-$string['adverbfor_andnot'] = 'en';
-$string['adverbfor_or'] = 'of';
-$string['applyfilters'] = 'Filters toepassen';
-$string['clearfilterrow'] = 'Verwijder filterrij';
-$string['clearfilters'] = 'Wis filters';
-$string['clearfilterselection'] = 'Verwijder "{$a}" van filter';
 $string['countparticipantsfound'] = '{$a} deelnemers gevonden';
 $string['filterbykeyword'] = 'Sleutelwoord';
-$string['filterrowlegend'] = 'Filter {$a}';
-$string['filtersetmatchdescription'] = 'Hoe meervoudige filters gecombineerd moeten worden';
-$string['filtertype'] = 'Filtertype';
-$string['match'] = 'Koppel';
-$string['matchofthefollowing'] = 'van volgende:';
 $string['moodlenetprofile'] = 'MoodleNet profiel-ID';
 $string['moodlenetprofile_help'] = 'Je MoodleNet profiel-ID verbindt je MoodleNet-profiel met deze site.';
 $string['placeholdertype'] = 'Typ ...';
-$string['placeholdertypeorselect'] = 'Typ of selecteer...';
 $string['privacy:courserequestpath'] = 'Aangevraagde cursussen';
 $string['privacy:descriptionpath'] = 'Profielbeschrijving';
 $string['privacy:devicespath'] = 'Gebruikerstoestellen';
@@ -149,7 +135,6 @@ $string['privacy:passwordresetpath'] = 'Wachtwoord opnieuw instellen';
 $string['privacy:privatefilespath'] = 'Privébestanden';
 $string['privacy:profileimagespath'] = 'Profielafbeeldingen';
 $string['privacy:sessionpath'] = 'Sessiegegevens';
-$string['selectfiltertype'] = 'Selecteer';
 $string['supportmessagealternative'] = 'In plaats daarvan kun je {$a} e-mailen.';
 $string['supportmessagenotsent'] = 'Helaas kon je bericht niet verstuurd worden.';
 $string['supportmessagesent'] = 'Je bericht is verzonden.';

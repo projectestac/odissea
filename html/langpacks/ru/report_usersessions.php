@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_usersessions', language 'ru', version '4.4'.
+ * Strings for component 'report_usersessions', language 'ru', version '4.5'.
  *
  * @package     report_usersessions
  * @category    string
@@ -25,7 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['mysessions'] = 'Мои активные сессии';
+$string['logoutothersessions'] = 'Завершить все другие сеансы браузера.';
+$string['logoutothersessions_help'] = 'Выйти из всех сеансов браузера, кроме этого. Это не повлияет на веб-приложения.';
+$string['logoutothersessionssuccess'] = 'Вы вышли из всех других сеансов';
+$string['logoutsinglesessionsuccess'] = 'Вы вышли из сеанса {$a}';
+$string['mysessions'] = 'Мои активные сеансы';
 $string['navigationlink'] = 'Сессии браузера';
 $string['pluginname'] = 'Отчет по сеансам пользователя';
 $string['privacy:metadata'] = 'Плагин отчетов о сеансах пользователей не хранит никаких личных данных.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'en', version '4.4'.
+ * Strings for component 'cache', language 'en', version '4.5'.
  *
  * @package     cache
  * @category    string
@@ -34,6 +34,8 @@ $string['addstoresuccess'] = 'Successfully added a new {$a} store.';
 $string['area'] = 'Area';
 $string['cacheadmin'] = 'Cache administration';
 $string['cacheconfig'] = 'Configuration';
+$string['cachedef_ai_policy'] = 'User AI policy acceptance.';
+$string['cachedef_ai_ratelimit'] = 'AI provider call rate limiting';
 $string['cachedef_calculablesinfo'] = 'Analytics calculables info';
 $string['cachedef_calendar_categories'] = 'Calendar course categories that a user can access';
 $string['cachedef_calendar_subscriptions'] = 'Calendar subscriptions';
@@ -69,7 +71,6 @@ $string['cachedef_groupdata'] = 'Course group information';
 $string['cachedef_h5p_content_type_translations'] = 'H5P content-type libraries translations';
 $string['cachedef_h5p_libraries'] = 'H5P libraries';
 $string['cachedef_h5p_library_files'] = 'H5P library files';
-$string['cachedef_hookcallbacks'] = 'Hook callbacks';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier - cleaned content';
 $string['cachedef_langmenu'] = 'List of available languages';
 $string['cachedef_license'] = 'List of licences';
@@ -91,6 +92,7 @@ $string['cachedef_recommendation_favourite_course_content_items'] = 'Recommendat
 $string['cachedef_reportbuilder_allowed_reports'] = 'Users allowed reports according to audience';
 $string['cachedef_repositories'] = 'Repositories instances data';
 $string['cachedef_roledefs'] = 'Role definitions';
+$string['cachedef_routes'] = 'Route data';
 $string['cachedef_string'] = 'Language string cache';
 $string['cachedef_suspended_userids'] = 'List of suspended users per course';
 $string['cachedef_tagindexbuilder'] = 'Search results for tagged items';

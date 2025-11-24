@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'it', version '4.4'.
+ * Strings for component 'lesson', language 'it', version '4.5'.
  *
  * @package     lesson
  * @category    string
@@ -151,7 +151,7 @@ $string['customscoring'] = 'Punteggio personalizzato';
 $string['customscoring_help'] = 'Consente l\'assegnazione di un punteggio numerico a ciascuna risposta (positivo o negativo).';
 $string['deadline'] = 'Fino al';
 $string['defaultessayresponse'] = 'Il testo libero sarà valutato dal docente.';
-$string['deleteallattempts'] = 'Elimina tutti i tentativi della lezione';
+$string['deleteallattempts'] = 'Tutti i tentativi della lezione';
 $string['deletedefaults'] = 'Eliminata {$a} di default per lezione';
 $string['deletedpage'] = 'Pagina eliminata';
 $string['deletepagenamed'] = 'Elimina pagina: {$a}';
@@ -521,8 +521,8 @@ $string['rank'] = 'Classifica';
 $string['rawgrade'] = 'Voto grezzo';
 $string['receivedcredit'] = 'Credito ottenuto';
 $string['redisplaypage'] = 'Rivisualizza pagina';
-$string['removeallgroupoverrides'] = 'Elimina tutte le personalizzazioni di gruppo';
-$string['removealluseroverrides'] = 'Elimina tutte le personalizzazioni individuali';
+$string['removeallgroupoverrides'] = 'Tutte le personalizzazioni di gruppo';
+$string['removealluseroverrides'] = 'Tutte le personalizzazioni individuali';
 $string['report'] = 'Risultati';
 $string['reports'] = 'Risultati';
 $string['response'] = 'Replica';

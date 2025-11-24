@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grouptool', language 'fr', version '4.4'.
+ * Strings for component 'grouptool', language 'fr', version '4.5'.
  *
  * @package     grouptool
  * @category    string
@@ -114,6 +114,7 @@ $string['change_group_to'] = 'Poursuivre le changement de groupe pour <strong>{$
 $string['change_group_to_success'] = 'Changement de groupe réussi ! <strong>{$a->username}</strong> est maintenant enregistré dans le groupe <strong>{$a->groupname}</strong> !';
 $string['changes_saved'] = 'Modifications enregistrées';
 $string['checkbox_control_header'] = 'Dé-/sélectionner les groupes et groupements';
+$string['checkbox_control_header_help'] = '<p>En utilisant cette fonctionnalité vous pouvez activer/désactiver des groupes d’un ou plusieurs groupements depuis votre grouptool :<ol><li>sélection par l’utilisation de la petite icône à côté et en faisant Ctrl + Clic).</li><li>Utiliser l’une des options suivantes « Sélectionner/ Désélectionner/ Inverser » :<ul><li><b>Sélectionner :</b>Les groupes des groupements choisis seront activés.</li><li><b>Désélectionner :</b> Les groupes des groupements choisis seront désactivés.</li><li><b>Inverser :</b> Tous les groupes des groupement non-choisis seront activés.</li></ul></li><li>Confirmer votre choix en cliquant sur le bouton « Go ».</li></ol></p>';
 $string['choose'] = 'Choisir…';
 $string['choose_group'] = 'Vous devez choisir un groupe cible';
 $string['choose_max'] = 'Nombre maximum de groupes à choisir';
@@ -130,6 +131,7 @@ $string['completionregister'] = 'L\'étudiant doit être inscrit dans les groupe
 $string['condition_prevent_access'] = 'Les conditions actuelles vous empêchent d\'accéder à l\'instance grouptool !';
 $string['confirm_delete'] = 'Vous êtes sur le point de supprimer complètement le groupe. Cela retirera tous les membres de ce groupe de manière irrévocable. Voulez-vous VRAIMENT continuer ?';
 $string['confirm_delete_title'] = 'Voulez-vous vraiment supprimer cet élément ?';
+$string['copied_grade_feedback'] = 'Évaluation par groupe<br />+Travail remis par : <strong>{$a->student}</strong><br />+Évalué par : <strong>{$a->teacher}</strong><br />+Date/Heure d\'origine : <strong>{$a->date}</strong><br />+Feedback : <strong>{$a->feedback}</strong>';
 $string['copy'] = 'Copier';
 $string['copy_chosen'] = 'Copie sélectionnée';
 $string['copy_grade_confirm'] = 'Poursuivre la copie de cette note ?';
@@ -145,6 +147,7 @@ $string['couldnt_move_down'] = 'Impossible de déplacer le groupe vers le bas !
 $string['couldnt_move_up'] = 'Impossible de déplacer le groupe vers le haut !';
 $string['createGroups'] = 'Créer les groupes';
 $string['create_1_person_groups'] = 'Créer des groupes individuels';
+$string['create_1_person_groups_help'] = 'Créer des groupes individuels - ici un groupe pour chaque utilisateur sélectionné est créé. Outre # et @ vous pouvez utiliser les balises suivantes qui seront remplacées par les données des utilisateurs :<ul><li>[username] - le nom d\'utilisateur de l\'utilisateur</li><li>[firstname] - le prénom de l\'utilisateur</li><li>[lastname] - le nom de famille de l\'utilisateur</li><li>[idnumber] - l\'identifiant de l\'utilisateur</li></ul>Si certaines données sont manquantes, la balise sera remplacée par nomdebaliseXX où XX représente le numéro du groupe.';
 $string['create_assign_groupings'] = 'Créer/Affecter des groupements';
 $string['create_fromto_groups'] = 'Créer des groupes avec des nombres issus d’un intervalle (par exemple de 34 à 89), <strong>sans attribution automatique</strong> des membres du groupe';
 $string['create_fromto_groups_help'] = 'Créer des groupes avec des nombres d\'un intervalle (e.g. de 34 à 89) - utiliser ce mode pour créer des groupes (i.e. Groupe 4, Groupe 5, Groupe 6). Insérer simplement les limites et le nombre de chiffres à utiliser pour les noms (i.e. 1, 01, 001, 0001…). Il est possible de définir une taille de groupe avec "Nombre de membres de groupe M". Il n\'y aura <strong>pas d\'allocation automatique</strong> des membres de groupes.';
@@ -244,6 +247,7 @@ $string['grouping_exists_error_prev'] = 'Le groupement ne peut pas être créé 
 $string['groupings_created_and_groups_added'] = 'Groupement(s) créé(s) et/ou groupe(s) ajouté(s) !';
 $string['groupingscreation'] = 'Création et attribution de groupements';
 $string['groupingselect'] = 'Groupements pour les groupes sélectionnés';
+$string['groupnamelength'] = 'Le nom du groupe est trop long !';
 $string['groupoverview'] = 'Aperçu du groupe';
 $string['groups_created'] = 'Création des groupes avec succès !';
 $string['groups_queues_limit'] = 'Places dans la file d’attente par groupe';

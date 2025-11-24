@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'organizer', language 'pt', version '4.4'.
+ * Strings for component 'organizer', language 'pt', version '4.5'.
  *
  * @package     organizer
  * @category    string
@@ -458,7 +458,6 @@ $string['groupmodenogroups'] = 'Nenhuma marcação de grupo';
 $string['groupmodeslotgroups'] = 'Criação de grupo por vaga vazia';
 $string['groupmodeslotgroupsappointment'] = 'Criação de grupo por vaga reservada';
 $string['groupoptions'] = 'Configurações do grupo';
-$string['grouporganizer_desc_hasgroup'] = 'Este organizador é para grupos. Ao clicar no botão de inscrição, todos os membros do seu grupo {$a->groupname} ficarão inscritos nesta vaga. Todos os membros do grupo podem mudar e comentar a inscrição.';
 $string['grouppicker'] = 'Escolher grupo';
 $string['groupwarning'] = 'Verifique abaixo as opções do grupo!';
 $string['headerfooter'] = 'Imprimir cabeçalho/rodapé';

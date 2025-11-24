@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'ja', version '4.4'.
+ * Strings for component 'choice', language 'ja', version '4.5'.
  *
  * @package     choice
  * @category    string
@@ -124,7 +124,7 @@ $string['privacy'] = '投票結果のプライバシー';
 $string['privacy:metadata:choice_answers'] = '投票活動でユーザが選択した回答に関する情報です。';
 $string['privacy:metadata:choice_answers:choiceid'] = '投票活動のIDです。';
 $string['privacy:metadata:choice_answers:optionid'] = 'ユーザが選択したオプションのIDです。';
-$string['privacy:metadata:choice_answers:timemodified'] = 'タイムスタンプはユーザによって投票が修正された日時を示します。';
+$string['privacy:metadata:choice_answers:timemodified'] = 'タイムスタンプはユーザにより投票が修正された日時を示します。';
 $string['privacy:metadata:choice_answers:userid'] = 'この投票活動でのユーザ回答のIDです。';
 $string['publish'] = '投票結果を公開する';
 $string['publishafteranswer'] = '投票した後、学生に投票結果を表示する';
@@ -139,7 +139,7 @@ $string['publishinfonever'] = 'あなたが回答した後も、この回答結�
 $string['publishnames'] = '投票結果すべてを公開する、学生の氏名および投票内容を表示する';
 $string['publishnot'] = '学生に投票結果を公開しない';
 $string['removemychoice'] = '私の投票を削除する';
-$string['removeresponses'] = 'すべての投票結果を削除する';
+$string['removeresponses'] = 'すべての投票結果';
 $string['responses'] = '投票結果';
 $string['responsesa'] = '回答: {$a}';
 $string['responsesresultgraphheader'] = 'グラフ表示';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'eu', version '4.4'.
+ * Strings for component 'theme_boost', language 'eu', version '4.5'.
  *
  * @package     theme_boost
  * @category    string
@@ -34,7 +34,6 @@ $string['brandcolor'] = 'Markaren kolorea';
 $string['brandcolor_desc'] = 'Nabarmentzeko kolorea.';
 $string['choosereadme'] = 'Boost itxura moderno duen eta asko pertsonaliza daitekeen azal bat da. Azal hau zuzenean erabil daiteke, edo Bootstrap 4 erabilita sor daitezkeen azal berrien goragoko azal gisa.';
 $string['configtitle'] = 'Boost';
-$string['currentinparentheses'] = '(oraingoa)';
 $string['generalsettings'] = 'Ezarpen orokorrak';
 $string['loginbackgroundimage'] = 'Saioa hasteko orriaren atzeko planoko irudia';
 $string['loginbackgroundimage_desc'] = 'Saioa hasteko orriaren atzeko planoan erakutsi beharreko irudia.';
@@ -48,8 +47,6 @@ $string['privacy:drawerblockclosed'] = 'Blokeen nabigazio-kutxaren une honetako 
 $string['privacy:drawerblockopen'] = 'Blokeen nabigazio-kutxaren une honetako hobespena zabalik egotea da.';
 $string['privacy:drawerindexclosed'] = 'Indizearen nabigazio-kutxaren une honetako hobespena tolestuta egotea da.';
 $string['privacy:drawerindexopen'] = 'Indizearen nabigazio-kutxaren une honetako hobespena zabalik egotea da.';
-$string['privacy:drawernavclosed'] = 'Nabigazio-kutxaren oraingo hobespena tolestuta egotea da.';
-$string['privacy:drawernavopen'] = 'Nabigazio-kutxaren oraingo hobespena zabalik egotea da.';
 $string['privacy:metadata'] = 'Boost azalak ez du datu pertsonalik biltzen.';
 $string['privacy:metadata:preference:draweropenblock'] = 'Blokeen nabigazio-kutxa erakutsi edo ezkutatzeko erabiltzailearen hobespena.';
 $string['privacy:metadata:preference:draweropenindex'] = 'Ikastaroaren aurkibidearen nabigazio-kutxa erakutsi edo ezkutatzeko erabiltzailearen hobespena.';

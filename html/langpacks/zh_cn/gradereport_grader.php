@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'zh_cn', version '4.4'.
+ * Strings for component 'gradereport_grader', language 'zh_cn', version '4.5'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -34,6 +34,7 @@ $string['ajaxfieldchanged'] = '您正在编辑的字段已经更改了，您想�
 $string['aria:dropdowncolumns'] = '有折叠的列';
 $string['cellactions'] = '单元格操作';
 $string['clearsearch'] = '清除搜索用户';
+$string['collapsedcolumns'] = '折叠列 <span class=“badge rounded-pill bg-primary text-white ms-1” data-collapse=“count”>{$a}</span>';
 $string['editingmode_title'] = '编辑评分报告';
 $string['eventgradereportviewed'] = '评分人报表已查看';
 $string['grader:manage'] = '管理评分人报表';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'files', language 'de', version '4.4'.
+ * Strings for component 'files', language 'de', version '4.5'.
  *
  * @package     files
  * @category    string
@@ -43,3 +43,25 @@ $string['privacy:metadata:files:source'] = 'Quelle der Datei';
 $string['privacy:metadata:files:timecreated'] = 'Zeit der Dateierstellung';
 $string['privacy:metadata:files:timemodified'] = 'Zeit der letzten Dateiänderung';
 $string['privacy:metadata:files:userid'] = 'Person, die die Datei erstellt hat';
+$string['redactor'] = 'Nachbearbeitung';
+$string['redactor:exifremover'] = 'EXIF Remover';
+$string['redactor:exifremover:emptyremovetags'] = 'Die zu entfernenden Tags dürfen nicht leer sein!';
+$string['redactor:exifremover:enabled'] = 'EXIF Remover aktivieren';
+$string['redactor:exifremover:enabled_desc'] = 'Der EXIF Remover bearbeitet JPG-Dateien standardmäßig mit der PHP-Extension GD, wodurch die Bildqualität beeinträchtigt werden kann.
+
+Um die Leistung des EXIF Remover zu verbessern, kann das ExifTool verwendet werden. Konfigurieren Sie bitte die folgenden ExifTool-Einstellungen.
+
+Weitere Informationen zur Installation von ExifTool finden Sie unter {$a->link}';
+$string['redactor:exifremover:failedprocessexiftool'] = 'Bearbeitung fehlgeschlagen: Datei konnte nicht mit ExifTool verarbeitet werden!';
+$string['redactor:exifremover:failedprocessgd'] = 'Bearbeitung fehlgeschlagen: Datei konnte nicht mit PHP GD verarbeitet werden!';
+$string['redactor:exifremover:heading'] = 'ExifTool';
+$string['redactor:exifremover:mimetype'] = 'Unterstützte MIME-Typen';
+$string['redactor:exifremover:mimetype_desc'] = 'Um neue MIME-Typen hinzuzufügen, stellen Sie sicher, dass sie in den <a href="./tool/filetypes/index.php">Dateitypen</a> enthalten sind.';
+$string['redactor:exifremover:removetags'] = 'EXIF-Tags, die entfernt werden sollen';
+$string['redactor:exifremover:removetags_desc'] = 'Wählen Sie die EXIF-Tags aus, die entfernt werden sollen.';
+$string['redactor:exifremover:tag:all'] = 'Alle';
+$string['redactor:exifremover:tag:gps'] = 'Nur GPS';
+$string['redactor:exifremover:tooldoesnotexist'] = 'Bearbeitung fehlgeschlagen: ExifTool existiert nicht!';
+$string['redactor:exifremover:toolpath'] = 'Pfad zum ExifTool';
+$string['redactor:exifremover:toolpath_desc'] = 'Um das ExifTool zu verwenden, geben Sie bitte den Pfad zur ausführbaren Datei ExifTool an.
+Auf Unix-/Linux-Systemen ist der Pfad normalerweise: /usr/bin/exiftool';

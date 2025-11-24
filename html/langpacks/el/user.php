@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'el', version '4.4'.
+ * Strings for component 'user', language 'el', version '4.5'.
  *
  * @package     user
  * @category    string
@@ -25,25 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcondition'] = 'Προσθήκη συνθήκης';
-$string['adverbfor_and'] = 'και';
-$string['adverbfor_andnot'] = 'και';
-$string['adverbfor_or'] = 'ή';
-$string['applyfilters'] = 'Εφαρμογή φίλτρων';
-$string['clearfilterrow'] = 'Κατάργηση σειράς φίλτρων';
-$string['clearfilters'] = 'Καθαρισμός φίλτρων';
-$string['clearfilterselection'] = 'Κατάργηση «{$a}» από το φίλτρο';
 $string['countparticipantsfound'] = 'Βρέθηκαν {$a} συμμετέχοντες';
 $string['filterbykeyword'] = 'Λέξη κλειδί';
-$string['filterrowlegend'] = 'Φίλτρο {$a}';
-$string['filtersetmatchdescription'] = 'Πώς πρέπει να συνδυάζονται πολλαπλά φίλτρα';
-$string['filtertype'] = 'Τύπος φίλτρου';
-$string['match'] = 'Αντιστοίχηση';
-$string['matchofthefollowing'] = 'των ακόλουθων:';
 $string['moodlenetprofile'] = 'Προφίλ MoodleNet';
 $string['moodlenetprofile_help'] = 'Αυτό το πεδίο είναι για να συνδέσετε το προφίλ σας στο MoodleNet με το Moodle. Αναμένει ένα URI συμβατό με το WebFinger.';
 $string['placeholdertype'] = 'Τύπος...';
-$string['placeholdertypeorselect'] = 'Πληκτρολογήστε ή επιλέξτε...';
 $string['privacy:courserequestpath'] = 'Ζητούμενα μαθήματα';
 $string['privacy:descriptionpath'] = 'Περιγραφή προφίλ';
 $string['privacy:devicespath'] = 'Συσκευές χρήστη';
@@ -149,7 +135,6 @@ $string['privacy:passwordresetpath'] = 'Επαναφορές κωδικού πρ
 $string['privacy:privatefilespath'] = 'Ιδιωτικά αρχεία';
 $string['privacy:profileimagespath'] = 'Εικόνες προφίλ';
 $string['privacy:sessionpath'] = 'Δεδομένα συνόδου';
-$string['selectfiltertype'] = 'Επιλογή';
 $string['supportmessagesent'] = 'Το μήνυμά σας έχει σταλεί.';
 $string['target:upcomingactivitiesdue'] = 'Δραστηριότητες που λήγουν προσεχώς';
 $string['target:upcomingactivitiesdue_help'] = 'Αυτός ο στόχος δημιουργεί υπενθυμίσεις για δραστηριότητες που λήγουν προσεχώς.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'zh_cn', version '4.4'.
+ * Strings for component 'gradereport_singleview', language 'zh_cn', version '4.5'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -44,7 +44,6 @@ $string['excludefor'] = '排除 {$a}';
 $string['excludenone'] = '不排除任何成绩';
 $string['excludenonegrades'] = '不排除';
 $string['feedbackfor'] = '{$a}的反馈';
-$string['filtergrades'] = '显示{$a}的成绩。';
 $string['gotonextreport'] = '转到下一个用户报告';
 $string['gotopreviousreport'] = '转到上一个用户报告';
 $string['gradefor'] = '{$a}的成绩';

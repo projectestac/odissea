@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'eu', version '4.4'.
+ * Strings for component 'workshop', language 'eu', version '4.5'.
  *
  * @package     workshop
  * @category    string
@@ -321,11 +321,11 @@ $string['reassess'] = 'Berriro ebaluatu';
 $string['receivedgrades'] = 'Jasotako kalifikazioak';
 $string['recentassessments'] = 'Tailerraren ebaluazioak:';
 $string['recentsubmissions'] = 'Tailerraren bidalketak:';
-$string['resetassessments'] = 'Ezabatu ebaluazio guztiak';
+$string['resetassessments'] = 'Ebaluazio guztiak';
 $string['resetassessments_help'] = 'Esleitutako ebaluazioak ezabatzea aukera dezakezu bidalketei eragin gabe. Bidalketak ezabatzen badira inplizituki euren ebaluazioak ere ezabatuko dira, eta beraz aukera hau ez da kontuan hartuko. Kontuan izan honek adibiderako bidalketen ebaluazioak ere barne hartzen dituela.';
 $string['resetphase'] = 'Aldatu ezarpenak zehazteko fasera';
 $string['resetphase_help'] = 'Gaituz gero, tailer guztiak ezarpenak zehazteko fasera igaroko dira.';
-$string['resetsubmissions'] = 'Ezabatu bidalketa guztiak';
+$string['resetsubmissions'] = 'Bidalketa guztiak';
 $string['resetsubmissions_help'] = 'Bidalketa guztiak eta euren ebaluazioak ezabatuak izango dira. Honek ez die adibiderako bidalketei eragiten.';
 $string['saveandclose'] = 'Gorde eta itxi';
 $string['saveandcontinue'] = 'Gorde eta jarraitu editatzen';

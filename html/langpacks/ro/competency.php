@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'ro', version '4.4'.
+ * Strings for component 'competency', language 'ro', version '4.5'.
  *
  * @package     competency
  * @category    string
@@ -29,6 +29,8 @@ $string['allchildrenarecomplete'] = 'Toate cursurile subordonate sunt complete';
 $string['competencies'] = 'Competențe';
 $string['competenciesarenotenabled'] = 'Competențele nu sunt activate';
 $string['competenciessettings'] = 'Setări competențe';
+$string['competency'] = 'Competență';
+$string['competencyframework'] = 'Cadrul de competențe';
 $string['completeplanstask'] = 'Completați planurile de învățare care trebuie predate';
 $string['coursecompetencyoutcome_complete'] = 'Completați competența';
 $string['coursecompetencyoutcome_evidence'] = 'Atașati dovada';
@@ -38,7 +40,7 @@ $string['coursemodulecompetencyoutcome_complete'] = 'Completați competența';
 $string['coursemodulecompetencyoutcome_evidence'] = 'Atașați dovada';
 $string['coursemodulecompetencyoutcome_none'] = 'Fără activitate';
 $string['coursemodulecompetencyoutcome_recommend'] = 'Trimiteți spre revizuire';
-$string['deletecompetencyratings'] = 'Ștergeți evaluările de competență';
+$string['deletecompetencyratings'] = 'Evaluări de competență';
 $string['duplicateditemname'] = '{$a} (copy)';
 $string['enablecompetencies'] = 'Activați competențele';
 $string['enablecompetencies_desc'] = 'Competențele permit ca utilizatorii să fie evaluați în conformitate cu planurile de învățare.';
@@ -163,8 +165,10 @@ $string['privacy:metadata:usermodified'] = 'Utilizatorul care a creat sau a modi
 $string['privacy:path:plans'] = 'Planuri de învățare';
 $string['privacy:path:relatedtome'] = 'În legătură cu mine';
 $string['privacy:path:userevidence'] = 'Dovada învățării anterioare';
+$string['proficient'] = 'Competent';
 $string['pushcourseratingstouserplans'] = 'Împingeți evaluările cursurilor la planurile individuale de învățare';
 $string['pushcourseratingstouserplans_desc'] = 'Valoare implicită pentru setarea cursului pentru a actualiza planurile individuale de învățare atunci când competențele cursului sunt evaluate.';
+$string['rating'] = 'Evaluare';
 $string['syncplanscohorts'] = 'Sincronizează planurile din cohortele cu șabloanele planului de învățare';
 $string['taxonomy_behaviour'] = 'Funcționalitate';
 $string['taxonomy_competency'] = 'Competență';
@@ -198,6 +202,7 @@ $string['usercommentedonaplanhtml'] = '<p>{$a->fullname} a comentat la planul de
 <p>See: <a href="{$a->url}">{$a->urlname}</a>.</p>';
 $string['usercommentedonaplansmall'] = '{$a->fullname} a comentat la planul de învățare "{$a->plan}".';
 $string['usercommentedonaplansubject'] = '{$a} a comentat la un plan de învățare';
+$string['usercompetency'] = 'Competență utilizator';
 $string['usercompetencystatus_idle'] = 'Pauză';
 $string['usercompetencystatus_inreview'] = 'În revizuire';
 $string['usercompetencystatus_waitingforreview'] = 'Se așteaptă revizuirea';

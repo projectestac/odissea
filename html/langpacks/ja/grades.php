@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'ja', version '4.4'.
+ * Strings for component 'grades', language 'ja', version '4.5'.
  *
  * @package     grades
  * @category    string
@@ -64,7 +64,7 @@ $string['aggregation_help'] = '総計ではカテゴリ内の評点がどのよ�
 * 評点の最小値
 * 評点の最大値
 * 評点の最頻値 - 最も頻繁に発生する評点です。
-* 自然 - 加重によって調整された評点すべての合計です。';
+* 自然 - 加重により調整された評点すべての合計です。';
 $string['aggregation_link'] = 'grade/aggregation';
 $string['aggregationcoef'] = '総計係数';
 $string['aggregationcoefextra'] = '追加点';
@@ -380,7 +380,7 @@ $string['gradetype_help'] = '4種類の評定タイプがあります:
 $string['gradevaluetoobig'] = '許可された最大評点  {$a} を評点の1つが超えています。';
 $string['gradevaluetoosmall'] = '評定値のいずれかが許可される {$a} の評点最小値より小さくなっています。';
 $string['gradeview'] = '評定を表示する';
-$string['gradewasmodifiedduringediting'] = '最近他のユーザによって更新されたため、入力された {$a->itemname} に関する {$a->username} の評点は無視されました。';
+$string['gradewasmodifiedduringediting'] = '最近他のユーザにより更新されたため、入力された {$a->itemname} に関する {$a->username} の評点は無視されました。';
 $string['gradeweighthelp'] = '評定加重ヘルプ';
 $string['gradingmodulename'] = '評定 ({$a})';
 $string['groupavg'] = 'グループ平均';
@@ -523,7 +523,9 @@ $string['missingitemtypeoreid'] = '配列キー (itemtypeまたはeid) があり
 $string['missingscale'] = '評価尺度を選択してください。';
 $string['mode'] = '最頻値';
 $string['modgrade'] = '評点';
-$string['modgrade_help'] = 'この活動で使用される評定タイプを選択してください。「尺度」が選択された場合、あなたは「尺度」ドロップダウンメニューから尺度を選択できます。「評点」評定が使用される場合、あなたはこの活動で利用できる最大評点を入力できます。';
+$string['modgrade_help'] = '* 評点 - 数値
+* なし - フィードバックのみ
+* 尺度 - リスト内の項目';
 $string['modgradecantchangegradetype'] = 'すでにこのアイテムのための評点が存在するため、あなたはタイプを変更できません。';
 $string['modgradecantchangegradetypemsg'] = 'すでに評点が与えられているため、評定タイプを変更できません。最大評点を変更したい場合、あなたは最初に既存の評点を変更するかどうか選択する必要があります。';
 $string['modgradecantchangegradetyporscalemsg'] = 'すでに評点が与えられているため、評定タイプおよび評価尺度を変更できません。';
@@ -728,9 +730,9 @@ $string['recovergradesdefault'] = '評定デフォルトに戻す';
 $string['recovergradesdefault_help'] = 'デフォルトではユーザがコースに再度登録される時点で古い評定が戻されます。';
 $string['refreshpreview'] = 'プレビューをリフレッシュする';
 $string['regradeanyway'] = 'とにかく再評定する';
-$string['removeallcoursegrades'] = 'すべての評定を削除する';
+$string['removeallcoursegrades'] = 'すべての評定';
 $string['removeallcoursegrades_help'] = 'この設定を有効にした場合、評定表に手動追加されたすべての評定項目および評点が削除されます。同時に上書きされた評定、除外された評定、非表示にされた評定およびロックされた評定のデータも削除されます。活動に関連する評定項目および評定のみ保持されます。';
-$string['removeallcourseitems'] = 'すべての評定項目およびカテゴリを削除する';
+$string['removeallcourseitems'] = 'すべての評定項目およびカテゴリ';
 $string['removeallcourseitems_help'] = 'この設定を有効にした場合、オーバーライドされた評点およびデータ、除外、非表示およびロックされた評点と共に評定表に手動追加されたカテゴリおよび評定項目すべてが削除されます。活動に関連する評定のみ保持されます。';
 $string['report'] = 'レポート';
 $string['reportdefault'] = 'レポートデフォルト ({$a})';

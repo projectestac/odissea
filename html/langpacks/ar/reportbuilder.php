@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'ar', version '4.4'.
+ * Strings for component 'reportbuilder', language 'ar', version '4.5'.
  *
  * @package     reportbuilder
  * @category    string
@@ -67,8 +67,8 @@ $string['columnadded'] = 'العمود المضاف \'{$a}\'';
 $string['columnaggregated'] = 'العمود المُجمل \'{$a}\'';
 $string['columndeleted'] = 'العمود المحذوف \'{$a}\'';
 $string['columnmoved'] = 'العمود المنقول \'{$a}\'';
-$string['columnsortdirectionasc'] = 'فرز العمود \'{$a}\' تصاعديًا';
-$string['columnsortdirectiondesc'] = 'فرز العمود \'{$a}\' تنازليًا';
+$string['columnsortdirectionasc'] = 'تغيير الفرز الأولي للعمود \'{$a}\' إلى تصاعديًا';
+$string['columnsortdirectiondesc'] = 'تغيير الفرز الأولي للعمود \'{$a}\' إلى تنازليًا';
 $string['columnsortdisable'] = 'تعطيل الفرز الابتدائي للعمود \'{$a}\'';
 $string['columnsortenable'] = 'تمكين الفرز الابتدائي للعمود \'{$a}\'';
 $string['columnsortupdated'] = 'الفرز المحدث للعمود \'{$a}\'';
@@ -147,6 +147,7 @@ $string['filterdurationunit'] = 'وحدة {$a}';
 $string['filterendswith'] = 'ينتهي بـ';
 $string['filterequalorgreaterthan'] = 'أكبر من أو يساوي';
 $string['filterequalorlessthan'] = 'أصغر من أو يساوي';
+$string['filterfieldfrom'] = '{$a} من';
 $string['filterfieldoperator'] = 'عامل {$a}';
 $string['filterfieldto'] = '{$a} إلى';
 $string['filterfieldunit'] = 'وحدة {$a}';

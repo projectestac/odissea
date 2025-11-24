@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_delaybetweenattempts', language 'uk', version '4.4'.
+ * Strings for component 'quizaccess_delaybetweenattempts', language 'uk', version '4.5'.
  *
  * @package     quizaccess_delaybetweenattempts
  * @category    string

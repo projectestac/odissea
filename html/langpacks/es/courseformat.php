@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'courseformat', language 'es', version '4.4'.
+ * Strings for component 'courseformat', language 'es', version '4.5'.
  *
  * @package     courseformat
  * @category    string
@@ -37,6 +37,7 @@ $string['bulkedit'] = 'Acciones masivas';
 $string['bulkeditingcourse'] = 'Editar curso masivamente: {$a}';
 $string['bulkselection'] = '{$a} seleccionados';
 $string['bulkselection_plural'] = '{$a} seleccionado';
+$string['cm_add_feedback'] = '{$a->modname} añadido.';
 $string['cm_complete_feedback'] = '{$a->name} marcado como completado.';
 $string['cm_complete_feedback_batch'] = '{$a->count} actividades seleccionadas marcadas como completadas.';
 $string['cm_delete_feedback'] = 'Se ha borrado {$a->name}.';
@@ -58,8 +59,10 @@ $string['cm_uncomplete_feedback_batch'] = '{$a->count} actividades seleccionadas
 $string['cm_visiblegroups_feedback'] = 'El modo de grupo de {$a->name} se ha cambiado a "Grupos visibles".';
 $string['cmavailability'] = 'Disponibilidad de actividad';
 $string['cmdelete_info'] = 'Esto eliminará {$a->name} y cualquier datos de usuario que contenga.';
+$string['cmdelete_subsectiontitle'] = '¿Borrar subsección?';
 $string['cmdelete_title'] = '¿Eliminar actividad?';
 $string['cmmove_info'] = 'Mover {$a} después de';
+$string['cmmove_subsectiontitle'] = 'Mover subsección';
 $string['cmmove_title'] = 'Mover actividad';
 $string['cmsdelete'] = 'Eliminar actividades';
 $string['cmsdelete_info'] = 'Esto eliminará {$a->count} actividades y cualquier datos de usuario que contengan.';
@@ -70,15 +73,19 @@ $string['cmsmove_info'] = 'Mover {$a} actividades después de';
 $string['cmsmove_title'] = 'Mover actividades seleccionadas';
 $string['courseindex'] = 'Índice del curso';
 $string['courseindexoptions'] = 'Opciones de índice de cursos';
+$string['maxsectionaddmessage'] = 'Usted ha alcanzado el número máximo de secciones permitidas en un curso.';
 $string['nobulkaction'] = 'No hay acciones masivas disponibles';
+$string['orphansectionwarning'] = 'Ni esta sección ni su contenido son parte de la estructura del curso y no están visibles para los estudiantes. Para usar algo de este contenido, muévalo a una sección distinta.';
 $string['preference:coursesectionspreferences'] = 'Preferencias de usuario de la sección para el curso {$a}';
 $string['privacy:metadata:preference:coursesectionspreferences'] = 'Preferencias de usuario de sección como contraída y expandida.';
+$string['section_add_feedback'] = 'Sección añadida.';
 $string['section_delete_feedback'] = 'La sección de curso {$a->name} se ha borrado';
 $string['section_delete_feedback_batch'] = 'Las {$a->count} secciones del curso se han borrado';
 $string['section_hide_feedback'] = 'La sección de curso {$a->name} se ha ocultado.';
 $string['section_hide_feedback_batch'] = 'Las {$a->count} actividades de curso seleccionadas se han ocultado.';
 $string['section_show_feedback'] = 'La sección de curso {$a->name} está visible.';
 $string['section_show_feedback_batch'] = 'Las {$a->count} secciones de curso seleccionadas están visibles.';
+$string['sectionaddmax'] = 'Usted ha alcanzado el número máximo de secciones permitidas en un curso...';
 $string['sectionavailability_title'] = 'Disponibilidad de sección';
 $string['sectiondelete_info'] = 'Esto eliminará {$a->name} y todas las actividades que contiene.';
 $string['sectiondelete_title'] = '¿Eliminar sección?';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'zh_cn', version '4.4'.
+ * Strings for component 'error', language 'zh_cn', version '4.5'.
  *
  * @package     error
  * @category    string
@@ -101,7 +101,7 @@ $string['cannotfindinfo'] = '找不到“{$a}”的信息';
 $string['cannotfindlang'] = '找不到“{$a}”语言包！';
 $string['cannotfindteacher'] = '无法找到教师';
 $string['cannotfinduser'] = '无法找到名为"{$a}"的用户';
-$string['cannotgeoplugin'] = '不能连接到 http://www.geoplugin.com 的 geoPlugin 服务器，请检查代理设置或最好安装 MaxMind GeoLite City 数据文件';
+$string['cannotgeoplugin'] = '无法连接到 geoPlugin 服务器。请检查您的代理设置或安装 MaxMind GeoIP City 数据文件。';
 $string['cannotgetblock'] = '无法从数据库中检索到块';
 $string['cannotgetcats'] = '无法得到分类记录';
 $string['cannotgetdata'] = '无法获取数据';
@@ -158,7 +158,6 @@ $string['cannotsetupcapformod'] = '无法为{$a}设置权限';
 $string['cannotsetupcapforplugin'] = '无法为{$a}设置权限';
 $string['cannotshowhidecoursesincategory'] = '无法在类别{$a}中显示或隐藏课程。';
 $string['cannotsignup'] = '您不能创建新账户因为您已经以{$a}的身份登录了。';
-$string['cannotswitcheditmodeon'] = '无法打开编辑模式';
 $string['cannotunassigncap'] = '无法从角色{$a->role}取消已废弃的权限{$a->cap}';
 $string['cannotunassignrolefrom'] = '无法取消此用户id为{$a}的角色';
 $string['cannotunzipfile'] = '无法解压文件';
@@ -286,6 +285,8 @@ $string['filternotenabled'] = '过滤器未启用！';
 $string['filternotinstalled'] = '目前尚未安装过滤器{$a}';
 $string['forumblockingtoomanyposts'] = '您连续发贴数目过多，超过了此讨论区的限制。';
 $string['functionalityremoved'] = '您正在尝试访问已删除的功能。';
+$string['gdfeaturenotsupported'] = 'GD 扩展未使用 {$a} 的方法进行编译';
+$string['gdmimetypenotsupported'] = '不支持MIME类型。';
 $string['generalexceptionmessage'] = '异常 - {$a}';
 $string['gradecantregrade'] = '成绩计算过程中出现错误：{$a}';
 $string['gradepubdisable'] = '成绩发布已禁用';
@@ -351,6 +352,7 @@ $string['invalidelementid'] = '错误的元素ID！';
 $string['invalidentry'] = '这不是有效的项！';
 $string['invalidevent'] = '无效的事件';
 $string['invalidfieldname'] = '“{$a}”不是合法的字段名';
+$string['invalidfile'] = '文件未找到';
 $string['invalidfiletype'] = '“{$a}”不是合法的文件类型';
 $string['invalidformatpara'] = '选择参数格式错误';
 $string['invalidformdata'] = '错误的表单数据';
@@ -398,6 +400,7 @@ $string['invalidxmlfile'] = '“{$a}”不是合法的 XML 文件';
 $string['iplookupfailed'] = '无法找到关于 IP 地址 {$a} 的 geo 信息。';
 $string['iplookupprivate'] = '无法显示私有 IP 地址。';
 $string['ipmismatch'] = '客户端IP地址不匹配';
+$string['itemnotfound'] = '未找到标识符为“{$a->identifier}”的 {$a->itemtype}';
 $string['listcantmovedown'] = '向下移动项失败，已在最后位置。';
 $string['listcantmoveleft'] = '向左移动项失败，没有找到父项。';
 $string['listcantmoveright'] = '向右移动项失败，因为找不到可做父项的同类项。您必须先将它移动到一个同类项下方才能再向右移。';
@@ -491,6 +494,7 @@ $string['nostartdatenoenddate'] = '只有设置了课程开始日期，才能设
 $string['nostatstodisplay'] = '很抱歉，没有可显示的数据';
 $string['notallowedtoupdateprefremotely'] = '你不可以远程更新用户的设置';
 $string['notavailable'] = '现在它已经不存在了';
+$string['notfound'] = '未找到';
 $string['notlocalisederrormessage'] = '{$a}';
 $string['notmemberofgroup'] = '您不是此课程组中的一员';
 $string['notownerofkey'] = '您不是该密钥的所有者';
@@ -541,6 +545,7 @@ $string['reverseproxyabused'] = '已启用反向代理，因此无法直接访�
 $string['rpcerror'] = '哎呀！你的MNET通讯失败！把这条错误信息给管理员：{$a}';
 $string['scheduledbackupsdisabled'] = '预定文件备份已经被管理员禁用。';
 $string['secretalreadyused'] = '更改密码的确认链接已经被使用，密码没有改变';
+$string['sectioncantbefound'] = '<p><strong>找不到此内容。</strong></p><p>它可能已被删除，或者 URL 可能不正确。</p>';
 $string['sectionnotexist'] = '小节不存在';
 $string['sendmessage'] = '发消息';
 $string['sendmessagesent'] = '感谢您对以下内容的反馈：<br>{$a}';

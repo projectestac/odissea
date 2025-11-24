@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'ko', version '4.4'.
+ * Strings for component 'admin', language 'ko', version '4.5'.
  *
  * @package     admin
  * @category    string
@@ -44,7 +44,9 @@ $string['adminseesall'] = '관리자는 모든 것을 봄';
 $string['adminseesallevents'] = '관리자에게 일정 공개';
 $string['adminseesownevents'] = '관리자는 일반 사용자와 유사합니다.';
 $string['advancedfeatures'] = '추가기능 설정';
+$string['agedigitalconsentverification'] = '온라인 서비스 이용 동의 연령 확인';
 $string['agedigitalconsentverification_desc'] = '사용자 등록을 위한 회원 가입 페이지를 표시하기 전에 디지털 이용 최소 연령 검증을 활성화하십시오. 이것은 미성년자가 부모/보호자의 동의 없이 사이트에 가입하는 것을 방지합니다. 더 많은 도움을 드리기 위해 <a target="_blank" href="{$a}">고객 지원</a> 세부 사항을 제공합니다.';
+$string['ageofdigitalconsentmap'] = '온라인 서비스 이용 동의 연령';
 $string['ageofdigitalconsentmap_desc'] = '디지털 서비스 이용 동의에 필요한 최소 연령 및 최소 연령이 다른 경우에 해당하는 국가의 연령은 여기에서 설정됩니다. 국가 코드, 연령의 서식에 맞춰 각각의 연령을 새로운 줄에 입력하십시오(국가 코드와 연령은 쉼표로 구분하십시오). 최소 연령은 국가 코드 대신 별(*) 표시를 사용합니다. 국가 코드는 ISO 3166-2 국제 표준에 따라 설정됩니다.';
 $string['allcountrycodes'] = '모든 국가 코드';
 $string['allowattachments'] = '첨부 허용';
@@ -81,8 +83,11 @@ $string['authpreventaccountcreation'] = '인증시 사용자 계정 생성 방�
 $string['authpreventaccountcreation_help'] = '사용자 인증 시, 아직 계정이 없는 경우에는 자동으로 생성됨. 만일 인증에 LDAP과 같은 외부 데이터베이스가 사용된 경우 기존 계정이 있는 사용자만 사이트에 접속되도록 제한하고 싶은 경우, 이 옵션을 활성화 시킬 것. 이 경우 새 계정을 생성하려면 사용자의 특성을 업로드하거나 수동으로 생성해야 함. 단 엠넷 인증에는 적용되지 않음을 유의할 것.';
 $string['authsettings'] = '인증 관리';
 $string['autolang'] = '언어 자동 인식';
+$string['autolangusercreation'] = '계정 생성 시 사용자의 브라우저 언어를 선호 언어로 설정';
 $string['autologinguests'] = '자동 로그인 손님';
 $string['availableto'] = '사용 대상';
+$string['availabletoanyone'] = '사이트 방문자 누구나 사용 가능';
+$string['availabletoauthenticated'] = '인증된 사용자에게만 허용';
 $string['backgroundcolour'] = '투명 색상';
 $string['backup_shortname'] = '백업 파일이름으로 강좌이름 사용';
 $string['backup_shortnamehelp'] = '백업 파일명의 일부로서 강좌명을 사용';
@@ -164,8 +169,11 @@ $string['cliupgrademaintenancenotrequired'] = '이 업그레이드로 인해 사
 $string['cliupgrademaintenancerequired'] = '이 업그레이드로 인해 사용자는 유지 관리 모드로 전환됩니다.';
 $string['cliupgradenoneed'] = '설치 버전 {$a} 에 대해  업그레이드가 필요하지 않습니다. 감사합니다!';
 $string['cliupgradepending'] = '업그레이드 중';
+$string['cliupgradesetlock'] = '업그레이드는 CLI 실행으로만 잠겨 있습니다.';
+$string['cliupgradeunsetlock'] = '기존 CLI 실행 업그레이드 잠금이 해제되었습니다.';
 $string['cliyesnoprompt'] = 'y(예를 의미) 혹은 n(아니오를 의미)을 입력';
 $string['close'] = '닫기';
+$string['cohort_customfield'] = '코호트 맞춤 필드';
 $string['commentsperpage'] = '페이지마다 표시될 덧글';
 $string['commonactivitysettings'] = '일반 설정';
 $string['commonfiltersettings'] = '공용 필터 설정';
@@ -741,7 +749,6 @@ $string['modulesecurity'] = '모듈 보안';
 $string['moodleapp'] = '무들 앱';
 $string['moodlepartners'] = '무들 파트너스';
 $string['moodleservices'] = '무들 서비스';
-$string['multilangforceold'] = '강제로 예전의 다중언어 문법 사용: &lt;span&gt; without the class="multilang" and &lt;lang&gt;';
 $string['mustenablestats'] = '아직 통계수집을 하도록 설정하지 않았습니다.';
 $string['mydashboard'] = '시스템 기본 강의 현황';
 $string['mymoodle'] = '강의 현황';

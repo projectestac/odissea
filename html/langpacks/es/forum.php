@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'es', version '4.4'.
+ * Strings for component 'forum', language 'es', version '4.5'.
  *
  * @package     forum
  * @category    string
@@ -555,9 +555,6 @@ $string['postmailinfo'] = 'Esta es una copia del mensaje publicado en {$a}.';
 $string['postmailnow'] = '<p>Este mensaje será enviado inmediatamente a todos los suscritos al foro.</p>';
 $string['postmailreply'] = 'Para responder haga clic en este enlace: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
-$string['postrating1'] = 'Conocimiento mayoritariamente separado';
-$string['postrating2'] = 'Separado y conectado';
-$string['postrating3'] = 'Conocimiento mayoritariamente conectado';
 $string['posts'] = 'Mensajes';
 $string['postsfrom'] = 'Mensajes desde';
 $string['postsmadebyuser'] = 'Aportación realizada por {$a}';
@@ -644,7 +641,7 @@ $string['qandaforum'] = 'Foro P y R';
 $string['qandanotify'] = 'Este es un foro de Preguntas y Respuestas. Para ver otras respuestas, debe primero enviar la suya';
 $string['re'] = 'Re:';
 $string['readtherest'] = 'Ver el resto del tema';
-$string['removeallforumtags'] = 'Eliminar todas las etiquetas del foro';
+$string['removeallforumtags'] = 'Todas las etiquetas del foro';
 $string['removefromfavourites'] = 'Desmarcar como favorita esta discusión';
 $string['replies'] = 'Réplicas';
 $string['repliesmany'] = '{$a} réplicas';
@@ -659,11 +656,11 @@ $string['replyplaceholder'] = 'Escriba su respuesta...';
 $string['replypostdiscussion'] = 'Responder al debate';
 $string['replytopostbyemail'] = 'Puede responder al mensaje mediante email.';
 $string['replytouser'] = 'Usar dirección email en réplica';
-$string['resetdigests'] = 'Eliminar todas las preferencias de usuario para resúmenes del foro';
+$string['resetdigests'] = 'Todas las preferencias de usuario para resúmenes del foro';
 $string['resetforums'] = 'Eliminar mensajes de';
-$string['resetforumsall'] = 'Eliminar todos los mensajes';
-$string['resetsubscriptions'] = 'Eliminar todas las suscripciones al foro';
-$string['resettrackprefs'] = 'Eliminar todas las preferencias de rastreo de los foros';
+$string['resetforumsall'] = 'Todos los mensajes';
+$string['resetsubscriptions'] = 'Todas las suscripciones al foro';
+$string['resettrackprefs'] = 'Todas las preferencias de rastreo de los foros';
 $string['rssarticles'] = 'Número de artículos recientes RSS';
 $string['rssarticles_help'] = 'Este ajuste especifica el número de artículos (ya sean debates o aportaciones) a incluir en el canal RSS. Un número entre 5 y 20 se considera aceptable.';
 $string['rsssubscriberssdiscussions'] = 'Canal RSS de debates';

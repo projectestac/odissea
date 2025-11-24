@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_file', language 'ja', version '4.4'.
+ * Strings for component 'assignfeedback_file', language 'ja', version '4.5'.
  *
  * @package     assignfeedback_file
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['batchoperationconfirmuploadfiles'] = '選択したユーザすべてに対して、1つまたはそれ以上のフィードバックファイルをアップロードしますか?';
+$string['batchoperationuploadfiles'] = 'フィードバックをアップロードする';
 $string['batchuploadfiles'] = '複数ユーザにフィードバックファイルをアップロードする';
 $string['batchuploadfilesforusers'] = '{$a} 名の選択済みユーザにフィードバックファイルを送信します。';
 $string['configmaxbytes'] = '最大ファイルサイズ';
@@ -53,6 +54,6 @@ $string['privacy:metadata:filepurpose'] = '学生に対する教師のフォー�
 $string['privacy:path'] = 'フィードバックファイルです。';
 $string['selectedusers'] = '選択済みユーザ';
 $string['uploadfiles'] = 'フィードバックファイルを送信する';
-$string['uploadzip'] = '複数フィードバックファイルをZIPでアップロードする';
+$string['uploadzip'] = 'フィードバックファイルをZIPでアップロードする';
 $string['uploadzipsummary'] = 'ZIPでアップロードされたフィードバックファイル';
 $string['userswithnewfeedback'] = 'フィードバックが更新されたユーザ: {$a}';

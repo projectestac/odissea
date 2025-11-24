@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ko', version '4.4'.
+ * Strings for component 'calendar', language 'ko', version '4.5'.
  *
  * @package     calendar
  * @category    string
@@ -71,7 +71,7 @@ $string['daywithnoevents'] = '해당 일은 이벤트가 없습니다.';
 $string['default'] = '기본';
 $string['deleteallevents'] = '모든 일정 지우기';
 $string['deleteevent'] = '이벤트 삭제';
-$string['deleteevents'] = '일정 삭제';
+$string['deleteevents'] = '이벤트';
 $string['deleteoneevent'] = '일정 지우기';
 $string['detailedmonthviewfor'] = '자세한 월별 조회:';
 $string['detailedmonthviewtitle'] = '자세한 달별 보기 {$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'it', version '4.4'.
+ * Strings for component 'block_rss_client', language 'it', version '4.5'.
  *
  * @package     block_rss_client
  * @category    string
@@ -30,18 +30,21 @@ $string['addheadlineblock'] = 'Aggiungi il titolo per il blocco RSS';
 $string['addnew'] = 'Aggiungi nuovo';
 $string['addnewfeed'] = 'Aggiungi un feed';
 $string['cannotmakemodification'] = 'Al momento non sei autorizzato a modificare questo feed RSS';
-$string['choosefeedlabel'] = 'Scegli quale feed rendere disponibile in questo blocco:';
+$string['choosefeedlabel'] = 'Selezionare il feed da visualizzare';
 $string['clientchannellink'] = 'Sito sorgente...';
 $string['clientnumentries'] = 'Numero predefinito di voci da visualzzare per ogni feed';
-$string['clientshowchannellinklabel'] = 'Si deve visualizzare un collegamento al sito originario (channel link)?<br/> (Da notare che se non è fornito alcun collegamento feed nel feed delle news, <br/>allora nessun collegamento verrà  visualizzato):';
+$string['clientshowchannellinklabel'] = 'Visualizza link alla fonte se disponibile';
 $string['clientshowimagelabel'] = 'Visualizza immagine del canale se disponibile:';
 $string['configblock'] = 'Configura questo blocco';
+$string['configmethodexisting'] = 'Seleziona feed RSS già disponibile';
+$string['configmethodnew'] = 'Aggiungi feed RSS';
 $string['couldnotfindfeed'] = 'Non è stato possibile trovare il feed tramite l\'ID';
 $string['couldnotfindloadrssfeed'] = 'Non è stato possibile trovare o caricare il feed RSS.';
 $string['customtitlelabel'] = 'Titolo personalizzato (lasciare vuoto per visualizzare il titolo originale del feed):';
 $string['deletefeedconfirm'] = 'Sei sicuro di voler cancellare questo feed?';
 $string['disabledrssfeeds'] = 'I feed RSS sono disabilitati';
-$string['displaydescriptionlabel'] = 'Visualizza descrizione per ogni link?';
+$string['displaydescriptionlabel'] = 'Visualizza la descrizione per ciascun link';
+$string['displaysettings'] = 'Visualizza impostazioni feed RSS';
 $string['editafeed'] = 'Modifica un feed';
 $string['editfeeds'] = 'Modifica, sottoscrivi o revoca sottoscrizione al feed RSS';
 $string['editnewsfeeds'] = 'Modifica feed di news';
@@ -58,10 +61,10 @@ $string['feedsaddedit'] = 'Aggiungi/modifica feed';
 $string['feedsconfigurenewinstance'] = 'Prima che questo blocco possa visualizzare un feed RSS, devi configurarlo facendo click qui.';
 $string['feedsconfigurenewinstance2'] = 'Per configurare il blocco e visualizzare i feed RSS devi fare click sull\'icona di modifica.';
 $string['feedupdated'] = 'Feed RSS aggiornato';
-$string['feedurl'] = 'URL del feed';
+$string['feedurl'] = 'Link RSS';
 $string['findmorefeeds'] = 'Trova altri feed RSS';
 $string['managefeeds'] = 'Gestione feed RSS';
-$string['nofeeds'] = 'Non ci sono altri feed RSS definiti per questo sito.';
+$string['nofeeds'] = 'Non ci sono feed RSS definiti per. Selezionare \'Aggiungi feed RSS\'.';
 $string['numentries'] = 'Elementi per feed';
 $string['pickfeed'] = 'Seleziona un feed RSS';
 $string['pluginname'] = 'Feed RSS';
@@ -84,7 +87,7 @@ $string['rss_client:manageownfeeds'] = 'Gestire i propri feed RSS';
 $string['rss_client:myaddinstance'] = 'Aggiungere blocco feed RSS nella Dashboard';
 $string['seeallfeeds'] = 'Visualizza tutti i feed';
 $string['sharedfeed'] = 'Feed condivisi';
-$string['shownumentrieslabel'] = 'Numero massimo di voci da visualizzare per blocco.';
+$string['shownumentrieslabel'] = 'Numero massimo di voci da visualizzare';
 $string['submitters'] = 'Gli autorizzati a definire nuovi feed RSS. Alcuni feed potranno essere disponibili in qualsiasi pagina del sito.';
 $string['submitters2'] = 'Creatori';
 $string['timeout'] = 'Tempo in minuti prima che un feed RSS sparisca dalla cache. Notare che questo tempo definisce il minimo intervallo prima della scomparsa; il feed sarà ripristinato nella cache alla prossima esecuzione del cron dopo la scomparsa. Valori raccomandati sono 30 min o superiori.';

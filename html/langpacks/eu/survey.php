@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'eu', version '4.4'.
+ * Strings for component 'survey', language 'eu', version '4.5'.
  *
  * @package     survey
  * @category    string
@@ -190,8 +190,8 @@ $string['collespname'] = 'COLLES (Nahia)';
 $string['completiondetail:submit'] = 'Erantzunak bidaltzea';
 $string['completionsubmit'] = 'Bidalketa bat egitea';
 $string['customintro'] = 'Deskribapena';
-$string['deleteallanswers'] = 'Ezabatu hausnarketen erantzun guztiak';
-$string['deleteanalysis'] = 'Ezabatu erantzunen analisiak';
+$string['deleteallanswers'] = 'Hausnarketen erantzun guztiak';
+$string['deleteanalysis'] = 'Erantzunen analisiak';
 $string['done'] = 'Eginda';
 $string['download'] = 'Jaitsi';
 $string['downloadexcel'] = 'Datuak Excel kalkulu-orri gisa jaitsi';

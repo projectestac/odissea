@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'de', version '4.4'.
+ * Strings for component 'completion', language 'de', version '4.5'.
  *
  * @package     completion
  * @category    string
@@ -147,12 +147,13 @@ $string['csvdownload'] = 'Als Tabelle (utf-8 .csv) herunterladen';
 $string['datepassed'] = 'Zeitpunkt vorbei';
 $string['days'] = 'Tage';
 $string['daysoftotal'] = '{$a->days} von {$a->total}';
-$string['daysuntilcompletion'] = 'Tage bis zum Abschluss';
+$string['daystakingcourse'] = 'Kursdauer (in Tagen)';
+$string['daysuntilcompletion'] = 'Zeit bis zum Abschluss';
 $string['defaultactivitycompletioncourse'] = 'Dies sind die standardmäßigen Abschlussbedingungen für Aktivitäten in diesem Kurs.';
 $string['defaultactivitycompletionsite'] = 'Dies sind die standardmäßigen Abschlussbedingungen für Aktivitäten in allen Kursen.';
 $string['defaultcompletion'] = 'Standard-Aktivitätsabschluss';
 $string['defaultcompletionupdated'] = 'Änderungen gespeichert';
-$string['deletecompletiondata'] = 'Abschlussdaten löschen';
+$string['deletecompletiondata'] = 'Abschlussdaten';
 $string['dependencies'] = 'Abhängigkeiten';
 $string['dependenciescompleted'] = 'Abschluss von anderen Kursen';
 $string['detail_desc:receivegrade'] = 'Eine Bewertung erhalten';

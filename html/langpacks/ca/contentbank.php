@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'ca', version '4.4'.
+ * Strings for component 'contentbank', language 'ca', version '4.5'.
  *
  * @package     contentbank
  * @category    string
@@ -25,9 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['author'] = 'Autor/a';
+$string['author'] = 'Autor o autora';
 $string['choosecontext'] = 'Trieu un curs o una categoria...';
 $string['contentbank'] = 'Banc de contingut';
+$string['contentbankcustomfields'] = 'Camps personalitzats del banc de contingut';
 $string['contentbankpreferences'] = 'Preferències del banc de continguts';
 $string['contentcopied'] = 'S\'ha copiat el contingut.';
 $string['contentcreated'] = 'S\'ha creat el contingut.';
@@ -50,6 +51,7 @@ $string['deletecontentconfirm'] = 'Confirmeu que voleu suprimir el contingut <em
 $string['deletecontentconfirmlinked'] = 'El contingut només s\'esborrarà del banc de continguts. Els llocs on actualment està enllaçat s\'actualitzaran de manera automàtica per fer servir una còpia del contingut en comptes d\'un enllaç.';
 $string['displaydetails'] = 'Mostra el banc de contingut amb els detalls del fitxer';
 $string['displayicons'] = 'Mostra el banc de contingut amb les icones';
+$string['displayunlisted'] = 'Mostra el contingut no llistat';
 $string['emptynamenotallowed'] = 'No es permet un nom buit';
 $string['errordeletingcontentfromcategory'] = 'S\'ha trobat un error mentre es suprimia el contingut de la categoria {$a}.';
 $string['errornofile'] = 'Cal un fitxer compatible per a crear el contingut.';

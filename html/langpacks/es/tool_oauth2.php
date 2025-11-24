@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'es', version '4.4'.
+ * Strings for component 'tool_oauth2', language 'es', version '4.5'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -93,15 +93,18 @@ $string['issuersetup'] = 'Instrucciones detalladas sobre la configuración de lo
 $string['issuersetuptype'] = 'Instrucciones detalladas sobre cómo configurar el proveedor OAuth 2 {$a}';
 $string['issuershowonloginpage'] = 'Mostrar en página de inicio de sesión';
 $string['issuershowonloginpage_help'] = 'Si el complemento de autenticación OAuth 2 está habilitado, este emisor de inicio de sesión aparecerá en la página de inicio de sesión para permitir que los usuarios inicien sesión con cuentas de este emisor.';
+$string['issuersmtpsystememail'] = 'Correo SMTP';
+$string['issuersmtpsystememail_help'] = 'Si se especifica, este correo se usará para conectarse a una cuenta de sistema para enviar correos vía SMTP. Algunos servicios OAuth 2 (p.ej. Microsoft) requieren esto. Por favor, compruebe la documentación de su servicio OAuth 2 para ver si es obligatorio.';
 $string['issuersservicesallow'] = 'Permitir servicios';
 $string['issuersservicesnotallow'] = 'No permitir servicios';
 $string['issuerusedforinternal'] = 'Servicios internos';
 $string['issuerusedforlogin'] = 'Inicio de sesión';
 $string['issuerusein'] = 'Se utilizará este servicio';
-$string['issuerusein_help'] = 'Los servicios OAuth 2 pueden utilizarse para servicios internos, en la página de inicio de sesión o para ambos si es necesario.';
+$string['issuerusein_help'] = 'Los servicios OAuth 2 pueden utilizarse para servicios internos, en la página de inicio de sesión, SMTP con XOAUTH2, o tanto página de incidio y servicios internos, si fuera necesario.';
 $string['issueruseineverywhere'] = 'Página de inicio de sesión y servicios internos';
 $string['issueruseininternalonly'] = 'Sólo servicios internos.';
 $string['issueruseinloginonly'] = 'Sólo página de inicio de sesión';
+$string['issueruseinsmtpwithoauth'] = 'Sólo SMTP con XOAUTH2';
 $string['linkedin_service'] = 'LinkedIn';
 $string['logindisplay'] = 'Mostrar en página de inicio de sesión como';
 $string['loginissuer'] = 'Permitir inicio de sesión';

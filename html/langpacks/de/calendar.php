@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'de', version '4.4'.
+ * Strings for component 'calendar', language 'de', version '4.5'.
  *
  * @package     calendar
  * @category    string
@@ -59,6 +59,7 @@ $string['courseevents'] = 'Kurstermine';
 $string['courses'] = 'Kurse';
 $string['customexport'] = 'Eigener Bereich ({$a->timestart} - {$a->timeend})';
 $string['daily'] = 'Täglich';
+$string['datepicker'] = 'Datumsauswahl';
 $string['day'] = 'Tag';
 $string['dayeventsmany'] = '{$a->num} Termine, {$a->day}';
 $string['dayeventsnone'] = 'Keine Termine, {$a}';
@@ -71,7 +72,7 @@ $string['daywithnoevents'] = 'Heute keine Termine';
 $string['default'] = 'Grundeinstellung';
 $string['deleteallevents'] = 'Alle Termine entfernen';
 $string['deleteevent'] = 'Termin löschen';
-$string['deleteevents'] = 'Termine löschen';
+$string['deleteevents'] = 'Termine';
 $string['deleteoneevent'] = 'Diesen Termin löschen';
 $string['detailedmonthviewfor'] = 'Monatsansicht für:';
 $string['detailedmonthviewtitle'] = 'Detaillierte Monatsansicht: {$a}';
@@ -188,7 +189,9 @@ $string['mon'] = 'Mo';
 $string['monday'] = 'Montag';
 $string['monthly'] = 'Monatlich';
 $string['monthnext'] = 'Nächster Monat';
+$string['monthnextwithname'] = 'Nächster Monat: {$a}';
 $string['monthprev'] = 'Vorheriger Monat';
+$string['monthprevwithname'] = 'Vorheriger Monat: {$a}';
 $string['monththis'] = 'Dieser Monat';
 $string['more'] = 'Mehr';
 $string['moreevents'] = '{$a} weitere';
@@ -211,7 +214,7 @@ $string['pref_maxevents'] = 'Höchstzahl bevorstehender Termine';
 $string['pref_maxevents_help'] = 'Diese Einstellung setzt die  Höchstzahl bevorstehender Termine, die angezeigt werden. Wenn Sie hier eine große Zahl wählen, ist es möglich, dass die Anzeige der bevorstehenden Termine viel Platz auf der Webseite verbraucht.
 ';
 $string['pref_persistflt'] = 'Filtereinstellungen merken';
-$string['pref_persistflt_help'] = 'Wenn diese Option aktiviert ist, werden die letzten Filtereinstellungen gespeichert und automatisch wiederhergestellt, wenn Sie sich einloggen.';
+$string['pref_persistflt_help'] = 'Wenn diese Option aktiviert ist, werden Ihre letzten Filtereinstellungen für Ihre nächste Anmeldung gespeichert.';
 $string['pref_startwday'] = 'Wochenbeginn';
 $string['pref_startwday_help'] = 'Kalenderwochen werden mit dem hier ausgewählten Wochenbeginn angezeigt';
 $string['pref_timeformat'] = 'Zeitanzeigeformat';

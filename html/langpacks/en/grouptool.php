@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grouptool', language 'en', version '4.4'.
+ * Strings for component 'grouptool', language 'en', version '4.5'.
  *
  * @package     grouptool
  * @category    string
@@ -114,19 +114,7 @@ $string['change_group_to'] = 'Continue with group-change to <strong>{$a->groupna
 $string['change_group_to_success'] = 'Group-change successful! <strong>{$a->username}</strong> is now registered in group <strong>{$a->groupname}</strong>!';
 $string['changes_saved'] = 'Changes saved';
 $string['checkbox_control_header'] = 'De-/select groups and groupings';
-$string['checkbox_control_header_help'] = '<p>By using this function you can activate/deactivate groups of one or more groupings within your grouptool:
-    <ol>
-        <li>Choose in the multiple-select field "All" (all available groups will be activated/deactivated), one grouping or several groupings (by switching to multiselect using the small icon next to it and using Ctrl + Click).</li>
-        <li>Use one of the following options "Select/ Deselect/ Invert":
-            <ul>
-                <li><b>Select:</b> The groups of the chosen grouping(s) will be activated.</li>
-                <li><b>Deselect:</b> The groups of the chosen grouping(s) will be deactivated </li>
-                <li><b>Invert:</b> All groups of the non-chosen groupings will be activated. </li>
-            </ul>
-        </li>
-        <li>Asume your choice by clicking on the button "Go".</li>
-    </ol>
-</p>';
+$string['checkbox_control_header_help'] = '<p>By using this function you can activate/deactivate groups of one or more groupings within your grouptool:<ol><li>Choose in the multiple-select field "All" (all available groups will be activated/deactivated), one grouping or several groupings (by switching to multiselect using the small icon next to it and using Ctrl + Click).</li><li>Use one of the following options "Select/ Deselect/ Invert":<ul><li><b>Select:</b> The groups of the chosen grouping(s) will be activated.</li><li><b>Deselect:</b> The groups of the chosen grouping(s) will be deactivated </li><li><b>Invert:</b> All groups of the non-chosen groupings will be activated. </li></ul></li><li>Asume your choice by clicking on the button "Go".</li></ol></p>';
 $string['choose'] = 'Choose...';
 $string['choose_group'] = 'You must choose a target group!';
 $string['choose_max'] = 'Maximum groups to choose';
@@ -143,11 +131,7 @@ $string['completionregister'] = 'Student must be registered in groups:';
 $string['condition_prevent_access'] = 'The current conditions prevent you from accessing the grouptool instance!';
 $string['confirm_delete'] = 'You are about to completely delete the group. This will remove all members from this group irrecoverable. Are you SURE you want to continue?';
 $string['confirm_delete_title'] = 'Do you really want to delete this element?';
-$string['copied_grade_feedback'] = 'Group grading<br />
-+Submission from: <strong>{$a->student}</strong><br />
-+Graded by: <strong>{$a->teacher}</strong><br />
-+Original Date/Time: <strong>{$a->date}</strong><br />
-+Feedback: <strong>{$a->feedback}</strong>';
+$string['copied_grade_feedback'] = 'Group grading<br />+Submission from: <strong>{$a->student}</strong><br />+Graded by: <strong>{$a->teacher}</strong><br />+Original Date/Time: <strong>{$a->date}</strong><br />+Feedback: <strong>{$a->feedback}</strong>';
 $string['copy'] = 'Copy';
 $string['copy_chosen'] = 'Copy chosen';
 $string['copy_grade_confirm'] = 'Continue copying this grade?';
@@ -163,14 +147,7 @@ $string['couldnt_move_down'] = 'Could not move group down!';
 $string['couldnt_move_up'] = 'Could not move group up!';
 $string['createGroups'] = 'Create groups';
 $string['create_1_person_groups'] = 'Create 1 person groups';
-$string['create_1_person_groups_help'] = 'Create 1-person-groups - here a group for each chosen user is created. Besides # and @ you can use the following tags which will be replaced with the users data:
-<ul>
-<li>[username] - the user\'s username</li>
-<li>[firstname] - the user\'s first name</li>
-<li>[lastname] - the user\'s last name</li>
-<li>[idnumber] - the user\'s idnumber</li>
-</ul>
-If some data is missing the tag will be replaced by tagnameXX where XX stands for the number of the group.';
+$string['create_1_person_groups_help'] = 'Create 1-person-groups - here a group for each chosen user is created. Besides # and @ you can use the following tags which will be replaced with the users data:<ul><li>[username] - the user\'s username</li><li>[firstname] - the user\'s first name</li><li>[lastname] - the user\'s last name</li><li>[idnumber] - the user\'s idnumber</li></ul>If some data is missing the tag will be replaced by tagnameXX where XX stands for the number of the group.';
 $string['create_assign_groupings'] = 'Create/Assign groupings';
 $string['create_fromto_groups'] = 'Create groups with numbers from an interval (i.e. from 34 to 89), <strong>without automatic allocation</strong> of group members';
 $string['create_fromto_groups_help'] = 'Create groups with numbers from an interval (i.e. from 34 to 89) - use this mode to create (missing) groups (i.e. Group 4, Group 5, Group 6). Just insert limits and how many digits you wish to use at least for the names (i.e. 1, 01, 001, 0001...). It is possible to define a certain group size with "Number of group Members M". There will be <strong>no automatic allocation</strong> of group members.';
@@ -184,12 +161,7 @@ $string['createinsertgrouping'] = 'Add to grouping';
 $string['deactivated_group'] = 'Deactivated group';
 $string['deactivated_groups'] = 'Deactivated groups!';
 $string['define_amount_groups'] = 'Define number of groups N';
-$string['define_amount_groups_help'] = 'Define number of groups N - You choose users from which role to use for group creation and enter the desired amount of groups in Group/Member count text field. In name scheme you can enter a name scheme for the groups using
-<ul>
-<li># (will be replaced with the group-number) and</li>
-<li>@ (will be replaced with a letter-representation of the group number)</li>
-</ul>
-Then the chosen users get spread on the desired amount of groups.';
+$string['define_amount_groups_help'] = 'Define number of groups N - You choose users from which role to use for group creation and enter the desired amount of groups in Group/Member count text field. In name scheme you can enter a name scheme for the groups using<ul><li># (will be replaced with the group-number) and</li><li>@ (will be replaced with a letter-representation of the group number)</li></ul>Then the chosen users get spread on the desired amount of groups.';
 $string['define_amount_members'] = 'Define number of group members M';
 $string['define_amount_members_help'] = 'Define number of group members M - Here you tell the grouptool how many members each group should ideally have. The needed amount of groups will be calculated automatically. If you check prevent last small group the users in this group get spread on the others if the last groups fill-ratio lies under 70%.';
 $string['delete_reference'] = 'Delete from grouptool';
@@ -282,10 +254,8 @@ $string['grouping_exists_error_prev'] = 'Can\'t create grouping because there al
 $string['groupings_created_and_groups_added'] = 'Grouping(s) created and/or group(s) added!';
 $string['groupingscreation'] = 'Create and assign groupings';
 $string['groupingselect'] = 'Groupings for selected groups';
-$string['groupingselect_help'] = 'Create groupings for selected groups:<ul>
-<li>Create ONE grouping for all selected groups. The name of the grouping can be chosen freely.</li>
-<li>Create a grouping for EACH selected group. The grouping is named after the respective group.</li>
-<li>Add selected groups to an existing grouping</li></ul>';
+$string['groupingselect_help'] = 'Create groupings for selected groups:<ul><li>Create ONE grouping for all selected groups. The name of the grouping can be chosen freely.</li><li>Create a grouping for EACH selected group. The grouping is named after the respective group.</li><li>Add selected groups to an existing grouping</li></ul>';
+$string['groupnamelength'] = 'Group name length is too long!';
 $string['groupoverview'] = 'Group overview';
 $string['groups_created'] = 'Groups successfully created!';
 $string['groups_queues_limit'] = 'Queue places per group';
@@ -299,16 +269,20 @@ $string['groupstatus'] = 'Status';
 $string['groupstatus_help'] = 'The current status of a group is visualized by the color:<ul><li>Green - active group. The group is assigned to this grouptool. If self registration is active, students may register to this group.</li><li>Grey - inactive group. The group is not available in this grouptool.</li></ul>By clicking on the symbol the status can be changed.';
 $string['grouptool'] = 'Grouptool';
 $string['grouptool:addinstance'] = 'Add a grouptool instance to course.';
+$string['grouptool:administrate_deregistration'] = 'Administrate deregistration';
 $string['grouptool:administrate_groups'] = 'Administrate (active) groups and groupings';
+$string['grouptool:administrate_registration'] = 'Administrate registration';
 $string['grouptool:create_groupings'] = 'Create groupings using grouptool.';
 $string['grouptool:create_groups'] = 'Create groups using grouptool';
 $string['grouptool:export'] = 'Export group and registration data to different formats';
 $string['grouptool:grade'] = 'Copy grades from a group-member to others';
 $string['grouptool:grade_own_group'] = 'Copy grades from a group-member to others if the original grade has been given by me';
 $string['grouptool:move_students'] = 'Move students to other groups.';
+$string['grouptool:preview'] = 'Show preview of registration view';
 $string['grouptool:register'] = 'Register self in an active group using grouptool';
 $string['grouptool:register_students'] = 'Register students in an active group using grouptool. (Also used for resolving queues)';
 $string['grouptool:unregister_students'] = 'Deregister students from groups using grouptool.';
+$string['grouptool:view'] = 'View Grouptool';
 $string['grouptool:view_description'] = 'View grouptools description';
 $string['grouptool:view_groups'] = 'View active groups';
 $string['grouptool:view_own_registration'] = 'View own registration(s).';
@@ -368,17 +342,20 @@ $string['landscape'] = 'Landscape';
 $string['late'] = '{$a} late';
 $string['limit'] = 'limit';
 $string['loading'] = 'loading...';
+$string['manage_members'] = 'Manage members';
 $string['max_queues_reached'] = 'Maximum queues reached!';
 $string['max_regs_reached'] = 'Maximum registrations reached!';
 $string['maxmembers'] = 'Global group size';
 $string['messageprovider:grouptool_moveupreg'] = 'Registration by moving up the queue';
 $string['missing_source_selection'] = 'No source selected!';
 $string['modulename'] = 'Grouptool';
-$string['modulename_help'] = 'The grouptool-module serves different kind of group-related tasks:<ul><li>It allows to create groups in different modes (amount of groups/group members, single-person-groups, interval of groups) as well as groupings for each group.</li><li>Furthermore it can be used to give students the possibility to register themselves to certain groups during a defined period.</li><li>The module also has the ability of group-grading - i.e. copying activity grades from 1 group member to other group members.</li><li>Import of users into groups via list of ID-numbers</li><li>overview over every course group including all registrations, members, queues, etc. And the ability to export this data into different files-formats (PDF/XLSX/ODS/TXT).</li><li>Exportable list of all course-users including their registrations, queues, etc.</li></ul><p>(!) Note that groups of the grouptool fundamentally differ from the moodle standard groups of the course. To ensure consistency among the group types set parameters of the section "Behaviour on changes in moodle" to "follow changes".</p>';
+$string['modulename_help'] = 'The grouptool-module serves different kind of group-related tasks:<ul><li>It allows to create groups in different modes (amount of groups/group members, single-person-groups, interval of groups) as well as groupings for each group.</li><li>Furthermore it can be used to give students the possibility to register themselves to certain groups during a defined period.</li><li>The module also has the ability of group-grading - i.e. copying activity grades from 1 group member to other group members.</li><li>Import of users into groups via list of ID-numbers</li><li>overview over every course group including all registrations, members, queues, etc. And the ability to export this data into different files-formats (PDF/XLSX/ODS/TXT).</li><li>Exportable list of all course-users including their registrations, queues, etc.</li></ul> <p>(!) Note that groups of the grouptool fundamentally differ from the moodle standard groups of the course. To ensure consistency among the group types set parameters of the section "Behaviour on changes in moodle" to "follow changes".</p> <p><a href="https://academic-moodle-cooperation.org/anleitungen/gruppenverwaltung-selbstanmeldung-zu-gruppen-einrichten/?lng=en" target="_blank">Grouptool: Set up self registration and groups</a></p> <p><a href="https://academic-moodle-cooperation.org/anleitungen/gruppenverwaltung-gruppenadministration/?lng=en" target="_blank">Grouptool: group administration</a></p><p><a href="https://academic-moodle-cooperation.org/anleitungen/gruppenverwaltung-wartelisten-und-mehrfache-anmeldungen/?lng=en" target="_blank">Grouptool: queues and multiple registrations</a></p><p><a href="https://academic-moodle-cooperation.org/anleitungen/gruppenverwaltung-import-und-austragen-von-vielen-studierenden/?lng=en" target="_blank">Grouptool: import and deregister many students</a></p>';
 $string['modulenameplural'] = 'Grouptools';
 $string['moodlesync'] = 'Behaviour on changes in moodle';
 $string['moodlesync_help'] = 'How grouptools should behave if moodle group members are added/deleted or single groups are deleted';
 $string['moreregsthanpossible'] = 'Required registrations for completion cannot be higher than maximum allowed registrations';
+$string['move'] = 'Move';
+$string['move_help'] = '[Missing langstring text]';
 $string['move_user'] = 'Move from queue to group';
 $string['movedown'] = 'Move 1 down';
 $string['moveup'] = 'Move 1 up';
@@ -390,19 +367,11 @@ $string['mustbegtoeqmin'] = 'Has to be greater than or equal the minimum';
 $string['mustbeposint'] = 'Maximum groups to choose have to be greater than or equal 1. Letters or other signs are not allowed.';
 $string['mygroups_only_label'] = 'Show only sources entries I graded';
 $string['myoverview_registrations_missing'] = 'Registrations missing';
-$string['name_scheme_tags'] = '<span class="tag firstname">[firstname]</span>
-<span class="tag lastname">[lastname]</span>
-<span class="tag idnumber">[idnumber]</span>
-<span class="tag username">[username]</span>
-<span class="tag alpha">@</span>
-<span class="tag number">#</span>';
+$string['name_scheme_tags'] = '<span class="tag firstname">[firstname]</span><span class="tag lastname">[lastname]</span><span class="tag idnumber">[idnumber]</span><span class="tag username">[username]</span><span class="tag alpha">@</span><span class="tag number">#</span>';
 $string['nameschemenotunique'] = 'Group names from this name scheme are not unique (<strong>{$a}</strong>). Please choose another one or use # (numeric index) or @ (alphabetic index) to create unique group names.';
 $string['namingscheme'] = 'Name scheme';
-$string['namingscheme_help'] = '<p>The Name scheme defines how groups will be named automatically when you add new groups.</p>
-<p>Please take note of:<br />
-<ol><li>The name of a group has to be unique within your moodle course. </li>
-<li>If you want to create more than one group at once, you have to use tags to create unique names. </li></ol></p>
-<p>Each of this tags will be replaced in the final group names. The tags in [] are related to the users data and the # and @ symbols will be replaced through the groups serial number. If JavaScript is enabled you can simply click on the tags to append them to the name-scheme. Please consider that the group names have to be unique in each course and therefore you may have to alter the name scheme until it\'s conflict-free.</p>';
+$string['namingscheme_help'] = '<p>The Name scheme defines how groups will be named automatically when you add new groups.</p><p>Please take note of:<br /><ol><li>The name of a group has to be unique within your moodle course. </li><li>If you want to create more than one group at once, you have to use tags to create unique names. </li></ol></p><p>Each of this tags will be replaced in the final group names. The tags in [] are related to the users data and the # and @ symbols will be replaced through the groups serial number. If JavaScript is enabled you can simply click on the tags to append them to the name-scheme. Please consider that the group names have to be unique in each course and therefore you may have to alter the name scheme until it\'s conflict-free.</p>';
+$string['no_active_groups'] = 'No active groups';
 $string['no_conflictfree_to_display'] = 'No conflict-free groups to display. So we try to display all instead!';
 $string['no_data_to_display'] = 'No group(s) data to display!';
 $string['no_grades_present'] = 'No grades to show';
@@ -420,6 +389,8 @@ $string['nogroups'] = 'No groups in this course.';
 $string['nogroupsactive'] = 'No active groups in this grouptool.';
 $string['nogroupschoose'] = 'Choose groups';
 $string['nogroupscreate'] = 'Create groups';
+$string['nogroupscreated'] = 'No groups created, because there are no users in the course';
+$string['nogroupsgrouping'] = 'No groups in this grouping.';
 $string['nogroupsinactive'] = 'No inactive groups in this grouptool.';
 $string['nogrouptools'] = 'There are no grouptools!';
 $string['nonconflicting'] = 'Without conflicts';
@@ -453,6 +424,7 @@ $string['overview_tab'] = 'Group view';
 $string['overview_tab_alt'] = 'Open group view';
 $string['overwrite_label'] = 'Overwrite existing grades';
 $string['place_allocated_in_group_success'] = 'Group <strong>{$a->groupname}</strong> has successfully been marked for registration';
+$string['places'] = 'Places';
 $string['pluginadministration'] = 'Grouptool administration';
 $string['pluginname'] = 'Grouptool';
 $string['portrait'] = 'Portrait';
@@ -473,6 +445,7 @@ $string['queue'] = 'Queue';
 $string['queue_and_multiple_reg_title'] = 'Queues and multiple registrations';
 $string['queue_in_group'] = 'Proceed queueing <strong>{$a->username}</strong> in group <strong>{$a->groupname}</strong>?';
 $string['queue_in_group_success'] = 'Successfully queued <strong>{$a->username}</strong> in group <strong>{$a->groupname}</strong>!';
+$string['queue_places'] = 'Queue places';
 $string['queue_you_in_group'] = 'Proceed queueing you in group <strong>{$a->groupname}</strong>?';
 $string['queue_you_in_group_success'] = 'Successfully queued you in group <strong>{$a->groupname}</strong>!';
 $string['queued'] = 'Queued';
@@ -503,14 +476,12 @@ $string['register_you_in_group_successmailhtml'] = 'You successfully registered 
 $string['registered'] = 'Registered';
 $string['registered_in_group_info'] = '{$a->username} registered in group <strong>{$a->groupname}</strong>';
 $string['registered_on_rank'] = 'Registered on rank #{$a}';
+$string['registration_details'] = 'Registration details';
 $string['registration_missing'] = '1 registration missing';
 $string['registration_period_end'] = 'End of registration for';
 $string['registration_period_start'] = 'Begin of registration for';
 $string['registrationdue'] = 'Registration end';
-$string['registrationnotification'] = '{$a->course->shortname} -> {$a->modulenameplural} -> {$a->grouptoolname}
-----------------------------------------------------------
-{$a->message}
-----------------------------------------------------------';
+$string['registrationnotification'] = '{$a->course->shortname} -> {$a->modulenameplural} -> {$a->grouptoolname----------------------------------------------------------{$a->message}----------------------------------------------------------';
 $string['registrations'] = 'Group-registrations';
 $string['registrations_missing'] = '{$a} registrations missing';
 $string['regpresent'] = 'User\'s already {$a}';
@@ -548,20 +519,14 @@ $string['setactive'] = 'Activate';
 $string['setinactive'] = 'Deactivate';
 $string['settingspage'] = 'Edit group settings';
 $string['show_members'] = 'Show group members';
-$string['show_members_help'] = 'Enables students (under certain circumstances) to see who\'s already registered in a group.<br />
-<ul>
-    <li><strong>No:</strong> don\'t show groups\' members at all</li>
-    <li><strong>All - after due date:</strong> show groups\' members for all groups after the due date</li>
-    <li><strong>Own - after due date:</strong> show user\'s own groups\' members after the due date</li>
-    <li><strong>Own - after registration:</strong> show user\'s own groups\' members after he/she registered himself/herself or has been registered by someone else</li>
-    <li><strong>Yes:</strong> show groups\' members</li>
-</ul>';
+$string['show_members_help'] = 'Enables students (under certain circumstances) to see who\'s already registered in a group.<br /><li><strong>Own - after due date:</strong> show user\'s own groups\' members after the due date</li><li><strong>Own - after registration:</strong> show user\'s own groups\' members after he/she registered himself/herself or has been registered by someone else</li><li><strong>Yes:</strong> show groups\' members</li></ul>';
 $string['showafterdue'] = 'All - after due date';
 $string['showownafterdue'] = 'Own - after due date';
 $string['showownafterreg'] = 'Own - after registration';
 $string['size'] = 'Group size';
 $string['size_grp'] = 'Group size settings';
-$string['size_grp_help'] = 'If group size is activated the maximum members for each group get limited (set for the whole instance via text field). If additionally the "individual size" is activated, the group size for each group can be defined in the following list.';
+$string['size_grp_help'] = 'If group size is activated, the maximum members for each group get limited.';
+$string['size_help'] = 'Shows the current group size and if the groupsize is handled individually for each group.';
 $string['skip_user_import'] = 'Skip for import';
 $string['skipped'] = 'Skipped';
 $string['sortlist_no_data'] = 'There are no groups present at the moment!';
@@ -570,12 +535,7 @@ $string['source_missing'] = 'There\'s no source to copy from!';
 $string['sources_missing'] = 'There\'s at least 1 group without a chosen source to copy from!';
 $string['start'] = 'Start';
 $string['status'] = 'Status';
-$string['status_help'] = '<ul>
-<li><strong>✔</strong> registered in Moodle-group and grouptool</li>
-<li><strong>?</strong> registered in Moodle-group but not in grouptool</li>
-<li><strong>+</strong> registered in grouptool but not in Moodle-group</li>
-<li><strong>1, 2, 3...</strong> queued in grouptool</li>
-</ul>';
+$string['status_help'] = '<ul><li><strong>✔</strong> registered in Moodle-group and grouptool</li><li><strong>?</strong> registered in Moodle-group but not in grouptool</li><li><strong>+</strong> registered in grouptool but not in Moodle-group</li><li><strong>1, 2, 3...</strong> queued in grouptool</li></ul>';
 $string['successfully_deleted_groups'] = 'Successfully deleted groups!';
 $string['swapped_groups'] = 'Swapped groups <strong>{$a->a}</strong> (order <strong>{$a->aorder}</strong>) and <strong>{$a->b}</strong> (order <strong>{$a->border}</strong>)!';
 $string['switched_to_all_groups'] = 'Changed group filter to all groups!';

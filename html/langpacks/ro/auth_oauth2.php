@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'ro', version '4.4'.
+ * Strings for component 'auth_oauth2', language 'ro', version '4.5'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -32,16 +32,14 @@ $string['auth_oauth2settings'] = 'Setări de autentificare OAuth 2.';
 $string['confirmaccountemail'] = 'Bună ziua {$a->fullname},
 
 Un cont nou a fost solicitat la „{$a->sitename}”
-folosind adresa de e-mail.
+folosind adresa ta de e-mail.
 
 Pentru a vă confirma noul cont, accesați această adresă web:
 
 {$a->link}
 
-În majoritatea programelor de e-mail, aceasta ar trebui să apară ca o legătură albastră
-pe care puteți doar să faceți clic. Dacă asta nu funcționează,
-apoi tăiați și lipiți adresa în adresă
-linie în partea de sus a ferestrei browserului web.
+În majoritatea programelor de e-mail, aceasta ar trebui să apară ca un link albastru
+pe care dați click. Dacă asta nu funcționează, dați copy-paste adresei în bara de adrese a browser-ului web.
 
 Dacă aveți nevoie de ajutor, vă rugăm să contactați administratorul site-ului,
 {$a->admin}
@@ -54,17 +52,16 @@ $string['confirmationpending'] = 'Acest cont este în așteptarea confirmării p
 $string['confirmlinkedloginemail'] = 'Bună ziua {$a->fullname},
 
 A fost făcută o solicitare pentru a conecta datele de conectare {$a->issuername}
-{$a->linkedemail} în contul dvs. la „{$a->sitename}”
+{$a->linkedemail} în contul dumneavoastră la „{$a->sitename}”
 folosind adresa de e-mail.
 
 Pentru a confirma această solicitare și a conecta aceste date de conectare, vă rugăm să accesați această adresă web:
 
 {$a->link}
 
-În majoritatea programelor de e-mail, aceasta ar trebui să apară ca o legătură albastră
-pe care puteți doar să faceți clic. Dacă asta nu funcționează,
-apoi tăiați și lipiți adresa în adresă
-linie în partea de sus a ferestrei browserului web.
+În majoritatea programelor de e-mail, ar trebui să apară ca un link albastru
+pe care puteți da click. Dacă asta nu funcționează,
+dați copy-paste în bara de adrese a ferestrei browser-ului web.
 
 Dacă aveți nevoie de ajutor, vă rugăm să contactați administratorul site-ului,
 {$a->admin}

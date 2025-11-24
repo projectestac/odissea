@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_admin_presets', language 'en', version '4.4'.
+ * Strings for component 'tool_admin_presets', language 'en', version '4.5'.
  *
  * @package     tool_admin_presets
  * @category    string
@@ -37,8 +37,9 @@ $string['created'] = 'Created';
 $string['currentvalue'] = 'Current value';
 $string['deletepreset'] = 'Are you sure you want to delete the site admin preset {$a}?';
 $string['deletepresettitle'] = 'Delete {$a} preset?';
-$string['deletepreviouslyapplied'] = 'This preset has been previously applied. Deleting a preset removes it from your site completely. You will not be able to revert your settings to how they were before applying this preset.';
+$string['deletepreviouslyapplied'] = 'Are you sure you want to delete the site admin preset {$a}?<br><br>This preset has been previously applied. Deleting a preset removes it from your site completely. You will not be able to revert your settings to how they were before applying this preset.';
 $string['deleteshow'] = 'Delete site admin preset';
+$string['editadminpresetname'] = 'Edit admin preset name';
 $string['eventpresetdeleted'] = 'Preset deleted';
 $string['eventpresetdownloaded'] = 'Preset downloaded';
 $string['eventpresetexported'] = 'Preset created';

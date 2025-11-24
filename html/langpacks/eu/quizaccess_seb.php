@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_seb', language 'eu', version '4.4'.
+ * Strings for component 'quizaccess_seb', language 'eu', version '4.5'.
  *
  * @package     quizaccess_seb
  * @category    string
@@ -96,6 +96,7 @@ $string['seb:manage_seb_allowedbrowserexamkeys'] = 'Aldatu galdetegiaren SEB eza
 $string['seb:manage_seb_allowreloadinexam'] = 'Aldatu galdetegiaren SEB ezarpena: Baimendu freskatzea';
 $string['seb:manage_seb_allowspellchecking'] = 'Aldatu galdetegiaren SEB ezarpena: Gaitu zuzentzaile ortografikoa';
 $string['seb:manage_seb_allowuserquitseb'] = 'Aldatu galdetegiaren SEB ezarpena: Baimendu ixtea';
+$string['seb:manage_seb_configuremanually'] = 'Aldatu SEB galdetegiaren ezarpena: Aukeratu eskuzko konfigurazioa';
 $string['seb:manage_seb_enableaudiocontrol'] = 'Aldatu galdetegiaren SEB ezarpena: Gaitu audio-kontrolak';
 $string['seb:manage_seb_expressionsallowed'] = 'Aldatu galdetegiaren SEB ezarpena: baimendutako adierazpen sinpleak';
 $string['seb:manage_seb_expressionsblocked'] = 'Aldatu galdetegiaren SEB ezarpena: blokeatutako adierazpen sinpleak';
@@ -114,13 +115,14 @@ $string['seb:manage_seb_showtime'] = 'Aldatu galdetegiaren SEB ezarpena: Erakuts
 $string['seb:manage_seb_showwificontrol'] = 'Aldatu galdetegiaren SEB ezarpena: Erakutsi Wi-Fiaren kontrola.';
 $string['seb:manage_seb_templateid'] = 'Aldatu galdetegiaren SEB ezarpena: Aukeratu SEB txantiloia.';
 $string['seb:manage_seb_userconfirmquit'] = 'Aldatu galdetegiaren SEB ezarpena: Baieztatu ixtean';
+$string['seb:manage_seb_usesebclientconfig'] = 'Aldatu SEB galdetegiaren ezarpena: Erabili SEB bezeroaren konfigurazioa';
 $string['seb:managetemplates'] = 'Kudeatu SEB-eko konfigurazio-txantiloiak.';
 $string['seb_activateurlfiltering'] = 'Gaitu URLen iragazkia';
 $string['seb_activateurlfiltering_help'] = 'Gaituz gero, web orriak kargatzerakoan URLak iragaziko dira. Iragazkia beherago zehaztu behar da.';
 $string['seb_allowcapturecamera'] = 'Baimendu nabigatzaileak kamerara sarbidea izatea';
-$string['seb_allowcapturecamera_help'] = 'Gaituz gero, erabiltzaileei galdetegi-saiakera hasi baino lehen SEBeri kamerara sarbidea emateko eskatuko zaio. macOS 12 eta iOS 15 edo berriagoetan, ezarpen hau desgaitzeak web aplikazioek kamerara sarbidea izatea edozein kasuetan ekidingo du, adibidez ezingo da WebRTC bidez bideoa grabatu.';
+$string['seb_allowcapturecamera_help'] = 'Gaituz gero, erabiltzaileei galdetegi-saiakera hasi baino lehen SEBeri kamerara sarbidea emateko eskatuko zaio. macOS 12 eta iOS 15 edo berriagoetan, ezarpen hau desgaitzeak web aplikazioek kamerara sarbidea izatea ekidingo du, eta esaterako ezingo da WebRTC bidez bideoa grabatu.';
 $string['seb_allowcapturemicrophone'] = 'Baimendu nabigatzaileak mikrofonora sarbidea izatea';
-$string['seb_allowcapturemicrophone_help'] = 'Gaituz gero, erabiltzaileei galdetegi-saiakera hasi baino lehen SEBeri mikrofonora sarbidea emateko eskatuko zaio. macOS 12 eta iOS 15 edo berriagoetan, ezarpen hau desgaitzeak web aplikazioek mikrofonora sarbidea izatea edozein kasuetan ekidingo du, adibidez ezingo da WebRTC bidez audioa grabatu.';
+$string['seb_allowcapturemicrophone_help'] = 'Gaituz gero, erabiltzaileei galdetegi-saiakera hasi baino lehen SEBeri mikrofonora sarbidea emateko eskatuko zaio. macOS 12 eta iOS 15 edo berriagoetan, ezarpen hau desgaitzeak web aplikazioek mikrofonora sarbidea izatea ekidingo du, eta esaterako ezingo da WebRTC bidez audioa grabatu.';
 $string['seb_allowedbrowserexamkeys'] = 'Baimendutako "browser exam key" gakoak';
 $string['seb_allowedbrowserexamkeys_help'] = 'Eremu honetan galdetegi honetara sartzeko baimendutako Safe Exam Browser-eko bertsioetarako baimendutako "browser exam key" gakoak zehaztu ditzakezu. Gakorik zehazten ez bada, ez da "browser exam key" gakorik egiaztatuko.';
 $string['seb_allowreloadinexam'] = 'Gaitu freskatzea azterketan';

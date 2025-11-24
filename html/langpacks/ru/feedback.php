@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ru', version '4.4'.
+ * Strings for component 'feedback', language 'ru', version '4.5'.
  *
  * @package     feedback
  * @category    string
@@ -248,6 +248,7 @@ $string['privacy:metadata:valuetmp'] = 'Запись об ответе на во
 $string['public'] = 'Опубликовать';
 $string['question'] = 'Вопрос';
 $string['questionandsubmission'] = 'Параметры вопросов и ответов';
+$string['questionmoved'] = 'Вопрос перемещен';
 $string['questions'] = 'Вопросы';
 $string['questionslimited'] = 'Отображаются только несколько ({$a}) первых вопросов, просмотр отдельных ответов или загрузка данных таблицы при просмотре всех.';
 $string['radio'] = 'Множественный выбор - один ответ';
@@ -255,6 +256,7 @@ $string['radio_values'] = 'Ответы';
 $string['ready_feedbacks'] = 'Готовые отзывы';
 $string['required'] = 'Обязательный';
 $string['resetting_data'] = 'Очистить ответы';
+$string['resetting_delete'] = 'Удалить ответы';
 $string['resetting_feedbacks'] = 'Очистить обратную связь';
 $string['response_nr'] = 'Номер ответа';
 $string['responses'] = 'Ответы';

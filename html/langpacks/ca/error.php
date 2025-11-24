@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'ca', version '4.4'.
+ * Strings for component 'error', language 'ca', version '4.5'.
  *
  * @package     error
  * @category    string
@@ -157,7 +157,6 @@ $string['cannotsetupcapformod'] = 'No s\'han pogut configurar les capacitats de 
 $string['cannotsetupcapforplugin'] = 'No s\'han pogut configurar les capacitats de {$a}';
 $string['cannotshowhidecoursesincategory'] = 'No s\'han pogut Mostrar/Amagar les cursos de la categoria {$a}';
 $string['cannotsignup'] = 'No podeu crear un nou compte perquè ja heu iniciat la sessió com a {$a}.';
-$string['cannotswitcheditmodeon'] = 'No s\'ha pogut activar el mode d\'edició';
 $string['cannotunassigncap'] = 'No s\'ha pogut cancel·lar l\'assignació de la capacitat obsoleta {$ a->cap} del rol {$ a->rol}';
 $string['cannotunassignrolefrom'] = 'No s\'ha pogut cancel·lar l\'assignació del rol id: {$a} a aquest usuari';
 $string['cannotunzipfile'] = 'No s\'ha pogut descomprimir el fitxer';

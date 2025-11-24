@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'it', version '4.4'.
+ * Strings for component 'enrol', language 'it', version '4.5'.
  *
  * @package     enrol
  * @category    string
@@ -47,7 +47,7 @@ $string['customwelcomemessage_help'] = 'Formati accettati: testo semplice o form
 <li>Cognome dell\'utente {$a->cognome}</li>
 <li>Ruolo del corso dell\'utente {$a->courserole}</li>
 </ul>';
-$string['customwelcomemessageplaceholder'] = 'Gentile {$a->fullname}, sei stato iscritto al corso {$a->coursename}';
+$string['customwelcomemessageplaceholder'] = 'Gentile {$a->firstname}, sei stato iscritto al corso {$a->coursename}';
 $string['defaultenrol'] = 'Aggiungi istanza nei nuovi corsi';
 $string['defaultenrol_desc'] = 'È possibile aggiungere di default questo plugin in tutti i nuovi corsi.';
 $string['deleteinstanceconfirm'] = 'Stai per rimuovere il metodo si iscrizione "{$a->name}". Tutti i {$a->users} utenti iscritti con questo metodo saranno disiscritti e i loro dati nel corso, come valutazioni, appartenenza a gruppi, sottoscrizione di forum, eccetera, verranno eliminati.

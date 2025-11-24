@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'sv', version '4.4'.
+ * Strings for component 'completion', language 'sv', version '4.5'.
  *
  * @package     completion
  * @category    string
@@ -88,6 +88,7 @@ $string['completion_link'] = 'activity/completion';
 $string['completion_manual'] = 'Kursdeltagare kan själva markera aktiviteten som slutförd.';
 $string['completion_none'] = 'Ingen slutförandebevakning';
 $string['completionactivitydefault'] = 'Använd aktivitetsstandard';
+$string['completionanygrade_desc'] = 'Vilket betyg som helst';
 $string['completiondefault'] = 'Standard för bevakning av slutförande';
 $string['completiondisabled'] = 'Inaktiverad - visas inte i aktivitetsinställningar';
 $string['completionduration'] = 'Registrering';
@@ -142,6 +143,7 @@ $string['csvdownload'] = 'Ladda ned i kalkylbladsformat (UTF-8 .csv)';
 $string['datepassed'] = 'Datum för godkännande';
 $string['days'] = 'Dagar';
 $string['daysoftotal'] = '{$a->days} av {$a->total}';
+$string['daystakingcourse'] = 'Dagar på kurs';
 $string['daysuntilcompletion'] = 'Dagar till slutförande';
 $string['defaultcompletion'] = 'Standardinställningar för aktivitetsslutförande';
 $string['defaultcompletionupdated'] = 'Ändringar sparade';
@@ -234,6 +236,7 @@ $string['selfcompletion'] = 'Eget slutförande';
 $string['showcompletionconditions'] = 'Visa slutförandevillkor för aktiviteter';
 $string['showcompletionconditions_help'] = 'Slutförandevillkor för aktiviteter visas alltid på aktivitetssidan. Den här inställningen avgör om slutförandevillkor för aktiviteter också visas under varje aktivitet på kurssidan.';
 $string['showinguser'] = 'Visar användare';
+$string['studentsmust'] = 'Studenten måste';
 $string['timecompleted'] = 'Tid för slutförande';
 $string['todo'] = 'Att göra';
 $string['unenrolingfromcourse'] = 'Avregistrerar sig från kursen';
@@ -249,3 +252,4 @@ $string['viewingactivity'] = 'Visar {$a}';
 $string['withconditions'] = 'Med villkor';
 $string['writingcompletiondata'] = 'Skriver slutförandedata';
 $string['xdays'] = '{$a} dagar';
+$string['youmust'] = 'Du måste';

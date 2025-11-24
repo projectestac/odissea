@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'ja', version '4.4'.
+ * Strings for component 'enrol_paypal', language 'ja', version '4.5'.
  *
  * @package     enrol_paypal
  * @category    string
@@ -43,7 +43,7 @@ $string['enrolperiod_help'] = '登録が有効な場合の登録期間です。�
 $string['enrolstartdate'] = '開始日';
 $string['enrolstartdate_help'] = 'この設定を有効にした場合、ユーザはこの日以降のみ登録することができます。';
 $string['errdisabled'] = 'PayPal登録プラグインが無効にされているため支払通知を処理できません。';
-$string['erripninvalid'] = '即時支払通知がPayPalによって確認されました。';
+$string['erripninvalid'] = '即時支払通知がPayPalにより確認されました。';
 $string['errpaypalconnect'] = '即時支払通知を確認するための {$a->url} に接続できませんでした: {$a->result}';
 $string['expiredaction'] = '登録期限切れ処理';
 $string['expiredaction_help'] = 'ユーザの登録期限が切れた場合に実行される処理を選択してください。コース登録解除中、一部のユーザデータおよび設定が削除されてしまうことに留意してください。';
@@ -64,11 +64,11 @@ $string['privacy:metadata:enrol_paypal:enrol_paypal:business'] = '支払受領�
 $string['privacy:metadata:enrol_paypal:enrol_paypal:courseid'] = '販売されたコースのIDです。';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:instanceid'] = 'コースの登録インスタンスのIDです。';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:item_name'] = '登録が販売されたコースのフルネームです。';
-$string['privacy:metadata:enrol_paypal:enrol_paypal:memo'] = 'PayPalウェブサイト支払ノートフィールドに購入者によって入力されたノートです。';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:memo'] = 'PayPalウェブサイト支払ノートフィールドに購入者により入力されたノートです。';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:option_selection1_x'] = '購入者のフルネームです。';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:parent_txn_id'] = '払い戻し、リバースまたはリバースのキャンセル時のオリジナルトランザクションのトランザクションIDです。';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:payment_status'] = '支払ステータスです。';
-$string['privacy:metadata:enrol_paypal:enrol_paypal:payment_type'] = '支払いがeCheck、PayPalバランス、クレジットカードまたは即時送金によって実行されたか保持します。';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:payment_type'] = '支払いがeCheck、PayPalバランス、クレジットカードまたは即時送金により実行されたか保持します。';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:pending_reason'] = '支払ステータスが保留にされている理由です (保留されている場合)。';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:reason_code'] = '支払ステータスがリバース、返金、リバースのキャンセルまたは拒否になっている場合の理由です (ステータスがどれかにあたる場合)。';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:receiver_email'] = '支払先 (マーチャントである場合) の主メールアドレスです。';

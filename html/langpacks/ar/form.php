@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ar', version '4.4'.
+ * Strings for component 'form', language 'ar', version '4.5'.
  *
  * @package     form
  * @category    string
@@ -41,6 +41,7 @@ $string['err_minlength'] = 'يجب عليك إدخال على الأقل {$a->fo
 $string['err_nonzero'] = 'يجب عليك إدخال رقم لا يبدا بصفر (0)';
 $string['err_nopunctuation'] = 'لا يجب ادخال رموز ترقيم هنا';
 $string['err_numeric'] = 'يجب ادخال الرقم هنا';
+$string['err_positiveduration'] = 'هذه الفترة لا يمكن أن تكون سالبة.';
 $string['err_positiveint'] = 'ينبغي عليك إدخال رقم كامل أكبر من 0.';
 $string['err_rangelength'] = 'يجب الأدخل بين {$a->format[0]} و{$a->format[1]}الحروف هنا';
 $string['err_required'] = 'عليك إعطاء قيمة هنا.';

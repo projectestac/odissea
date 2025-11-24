@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'eu', version '4.4'.
+ * Strings for component 'tool_lp', language 'eu', version '4.5'.
  *
  * @package     tool_lp
  * @category    string
@@ -169,7 +169,7 @@ $string['outcome'] = 'Ikaste-emaitza';
 $string['overridegrade'] = 'Baliogabetu lehendik dagoen konpetentziaren kalifikazioa osatzerakoan.';
 $string['parentcompetency'] = 'Goragokoa';
 $string['parentcompetency_edit'] = 'Editatu goragokoa';
-$string['parentcompetency_help'] = 'Zehaztu konpetentzia goragoko zein konpetentziaren barruan gehituko den. Konpetentzia-marko bereko beste konpetentzia bat izan daiteke, edo konpetentzia-markoaren jatorria goi mailako konpetentzia bada.';
+$string['parentcompetency_help'] = 'Zehaztu konpetentzia goragoko zein konpetentziaren barruan gehituko den. Konpetentzia-marko bereko beste konpetentzia bat izan daiteke, edo konpetentzia-markoaren jatorria maila goreneko konpetentzia bada.';
 $string['path'] = 'Bidea:';
 $string['planapprove'] = 'Aktibatu';
 $string['plancompleted'] = 'Ikasketa-plana osatu da';
@@ -259,7 +259,7 @@ $string['taxonomy_selected_indicator'] = 'Aukeratutako adierazlea';
 $string['taxonomy_selected_level'] = 'Aukeratutako maila';
 $string['taxonomy_selected_outcome'] = 'Aukeratutako ikaste-emaitza';
 $string['taxonomy_selected_practice'] = 'Aukeratutako praktika';
-$string['taxonomy_selected_proficiency'] = 'Aukeratuko trebezia';
+$string['taxonomy_selected_proficiency'] = 'Aukeratutako trebezia';
 $string['taxonomy_selected_skill'] = 'Aukeratutako trebetasuna';
 $string['taxonomy_selected_value'] = 'Aukeratutako balioa';
 $string['template'] = 'Ikasketa-planaren txantiloia';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'zh_cn', version '4.4'.
+ * Strings for component 'backup', language 'zh_cn', version '4.5'.
  *
  * @package     backup
  * @category    string
@@ -206,6 +206,7 @@ $string['enableasyncbackup_help'] = '如果启用，备份和还原操作将异�
 $string['enterasearch'] = '键入并搜索';
 $string['error_block_for_module_not_found'] = '在课程模块（ID：{$a->mid}）发现无主版块实例（ID：{$a->bid}）。不会备份此版块。';
 $string['error_course_module_not_found'] = '发现无主课程模块（ID：{$a}）。不会备份此模块。';
+$string['error_delegate_section_not_found'] = '缺少课程模块的代表部分 （ID： {$a}，不会备份该部分。';
 $string['errorcopyingbackupfile'] = '在还原前无法将备份文件复制到临时文件夹。';
 $string['errorfilenamemustbezip'] = '您输入的文件名必须是ZIP文件且扩展名为.mbz';
 $string['errorfilenamerequired'] = '您必须输入一个有效的文件名';
@@ -282,6 +283,7 @@ $string['includeditems'] = '包括项目：';
 $string['includefilereferences'] = '文件引用了外部内容';
 $string['includesection'] = '小节{$a}';
 $string['includeuserinfo'] = '用户数据';
+$string['includeuserinfo_instance'] = '包含 {$a} 用户数据';
 $string['inprogress'] = '正在备份';
 $string['jumptofinalstep'] = '跳到最后一步';
 $string['keep'] = '保留';
@@ -400,6 +402,7 @@ $string['rootsettingusers'] = '包括已选课用户';
 $string['rootsettinguserscompletion'] = '包括用户学习进度细节';
 $string['rootsettingxapistate'] = '在H5P活动等内容中包含用户的状态';
 $string['samesitenotification'] = '创建此备份时仅引用文件，而不是文件本身。恢复只能在此网站上工作。';
+$string['section_prefix'] = '节{$a}:';
 $string['sectionactivities'] = '活动';
 $string['sectioninc'] = '包含在备份中（无用户信息）';
 $string['sectionincanduser'] = '随用户信息一起包含在备份中';
@@ -426,6 +429,7 @@ $string['status'] = '状态';
 $string['storagecourseandexternal'] = '课程备份文件区和指定的目录';
 $string['storagecourseonly'] = '课程备份文件区';
 $string['storageexternalonly'] = '指定自动备份的目录';
+$string['subsectioncontent'] = '小节内容';
 $string['successful'] = '备份成功';
 $string['successfulcopy'] = '复制成功';
 $string['successfulrestore'] = '恢复成功';

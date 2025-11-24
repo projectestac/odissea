@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'ru', version '4.4'.
+ * Strings for component 'grades', language 'ru', version '4.5'.
  *
  * @package     grades
  * @category    string
@@ -523,7 +523,9 @@ $string['missingitemtypeoreid'] = 'Ключ массива (itemtype или eid)
 $string['missingscale'] = 'Необходимо выбрать шкалу';
 $string['mode'] = 'Мода';
 $string['modgrade'] = 'Оценка';
-$string['modgrade_help'] = 'Выберите тип оценивания, который будет использован для этого элемента курса. Если выбрана «шкала», то Вы можете выбрать нужную шкалу в выпадающем списке. При использовании оценивания в «баллах» Вы можете задать максимальную оценку, доступную для этого элемента курса.';
+$string['modgrade_help'] = '* Балл - числовое значение
+* Нет - только отзыв
+* Шкала - элемент из списка';
 $string['modgradecantchangegradetype'] = 'Вы не можете изменить тип, так как для этого элемента уже имеются оценки.';
 $string['modgradecantchangegradetypemsg'] = 'Некоторые оценки уже были выставлены, поэтому тип оценки не может быть изменен. Если Вы хотите изменить максимальную оценку, то сначала нужно указать, хотите ли Вы или нет пересчитать существующие оценки по этой шкале.';
 $string['modgradecantchangegradetyporscalemsg'] = 'Некоторые оценки уже были выставлены, поэтому тип оценки и шкала не могут быть изменены.';

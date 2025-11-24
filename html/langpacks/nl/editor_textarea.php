@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_textarea', language 'nl', version '4.4'.
+ * Strings for component 'editor_textarea', language 'nl', version '4.5'.
  *
  * @package     editor_textarea
  * @category    string

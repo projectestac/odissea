@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'es', version '4.4'.
+ * Strings for component 'block_rss_client', language 'es', version '4.5'.
  *
  * @package     block_rss_client
  * @category    string
@@ -30,18 +30,21 @@ $string['addheadlineblock'] = 'Añadir un bloque de cabecera RSS';
 $string['addnew'] = 'Añadir nuevo';
 $string['addnewfeed'] = 'Añadir un nuevo canal';
 $string['cannotmakemodification'] = 'Usted no está autorizado para hacer modificaciones en este canal RSS en este momento.';
-$string['choosefeedlabel'] = 'Seleccione los canales que desea estén disponibles en este bloque:';
+$string['choosefeedlabel'] = 'Seleccione los canales RSS que desea mostrar';
 $string['clientchannellink'] = 'Sitio fuente...';
 $string['clientnumentries'] = 'El número de entradas por defecto a mostrar por canal.';
-$string['clientshowchannellinklabel'] = '¿Deberá mostrarse un enlace al sitio original (vínculo de canal)? (Observe que si no se suministra un enlace en el canal de noticias, no se mostrará ninguno):';
+$string['clientshowchannellinklabel'] = 'Mostrar enlace fuente si está disponible';
 $string['clientshowimagelabel'] = 'Mostrar imagen del canal si está disponible';
 $string['configblock'] = 'Configurar este bloque';
+$string['configmethodexisting'] = 'Seleccionar canal RSS existente';
+$string['configmethodnew'] = 'Añadir nuevo canal RSS';
 $string['couldnotfindfeed'] = 'No se pudo encontrar un canal con esa ID.';
 $string['couldnotfindloadrssfeed'] = 'No se puede encontrar o cargar el feed RSS.';
 $string['customtitlelabel'] = 'Título personalizado (déjelo en blanco para usar el título suministrado por el canal)';
 $string['deletefeedconfirm'] = '¿Está seguro que desea eliminar este canal?';
 $string['disabledrssfeeds'] = 'Los canales RSS están deshabilitados';
-$string['displaydescriptionlabel'] = '¿Mostrar descripción de cada enlace?';
+$string['displaydescriptionlabel'] = 'Mostrar descripción de entradas';
+$string['displaysettings'] = 'Mostrar ajustes de canal RSS';
 $string['editafeed'] = 'Editar un canal';
 $string['editfeeds'] = 'Editar, suscribir o dar de baja de fuentes de RSS';
 $string['editnewsfeeds'] = 'Editar canales de noticias';
@@ -58,10 +61,10 @@ $string['feedsaddedit'] = 'Añadir/editar fuentes';
 $string['feedsconfigurenewinstance'] = 'Haga clic aquí para configurar este bloque a fin de mostrar canales RSS.';
 $string['feedsconfigurenewinstance2'] = 'Haga clic en el icono de edición de arriba para configurar este bloque de modo que muestre los canales RSS';
 $string['feedupdated'] = 'Canal de RSS actualizado';
-$string['feedurl'] = 'URL del canal';
+$string['feedurl'] = 'URL del canal RSS';
 $string['findmorefeeds'] = 'Encontrar más fuentes RSS';
 $string['managefeeds'] = 'Gestionar todos mis canales RSS';
-$string['nofeeds'] = 'No hay canales RSS definidos para este sitio.';
+$string['nofeeds'] = 'No hay canales RSS definidos para este sitio aún. Elija "Añadir un nuevo canal RSS".';
 $string['numentries'] = 'Entradas por canal';
 $string['pickfeed'] = 'Seleccionar un canal de RSS';
 $string['pluginname'] = 'Canales RSS';
@@ -84,7 +87,7 @@ $string['rss_client:manageownfeeds'] = 'Gestionar canales RSS propios';
 $string['rss_client:myaddinstance'] = 'Añadir un nuevo bloque de canal RSS al Área personal';
 $string['seeallfeeds'] = 'Ver todos los canales';
 $string['sharedfeed'] = 'Canal compartido';
-$string['shownumentrieslabel'] = 'Número máximo de entradas a mostrar por bloque.';
+$string['shownumentrieslabel'] = 'Entradas a mostrar';
 $string['submitters'] = '¿Quién puede definir fuentes RSS de noticias? Los canales definidos estarán disponibles en cualquier página de su sitio.';
 $string['submitters2'] = 'Remitentes';
 $string['timeout'] = 'Tiempo en minutos de validez de un canal RSS en caché. Este tiempo define el intervalo en el que un canal RSS permanece sin ser actualizado. El canal se refresca en la siguiente ejecución del cron si este tiempo ha pasado desde la última ejecución. El valor recomendado es 30 minutos o más.';

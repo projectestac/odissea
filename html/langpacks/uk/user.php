@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'uk', version '4.4'.
+ * Strings for component 'user', language 'uk', version '4.5'.
  *
  * @package     user
  * @category    string
@@ -25,25 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcondition'] = 'Додайте умову';
-$string['adverbfor_and'] = 'і';
-$string['adverbfor_andnot'] = 'і';
-$string['adverbfor_or'] = 'або';
-$string['applyfilters'] = 'Застосувати фільтри';
-$string['clearfilterrow'] = 'Видалити рядок фільтра';
-$string['clearfilters'] = 'Очистити фільтри';
-$string['clearfilterselection'] = 'Видалити "{$a}" з фільтра';
 $string['countparticipantsfound'] = '{$a} знайдено учасників';
 $string['filterbykeyword'] = 'Ключове слово';
-$string['filterrowlegend'] = 'Фільтр {$a}';
-$string['filtersetmatchdescription'] = 'Як поєднати кілька фільтрів';
-$string['filtertype'] = 'Тип фільтра';
-$string['match'] = 'Відповідність';
-$string['matchofthefollowing'] = 'з наступного:';
 $string['moodlenetprofile'] = 'Ідентифікатор профілю MoodleNet';
 $string['moodlenetprofile_help'] = 'Ваш ідентифікатор профілю MoodleNet пов\'язує ваш профіль MoodleNet з цим сайтом.';
 $string['placeholdertype'] = 'Введіть...';
-$string['placeholdertypeorselect'] = 'Введіть або виберіть...';
 $string['privacy:courserequestpath'] = 'Запитувані курси';
 $string['privacy:descriptionpath'] = 'Опис профілю';
 $string['privacy:devicespath'] = 'Пристрої користувача';
@@ -149,7 +135,6 @@ $string['privacy:passwordresetpath'] = 'Скидання пароля';
 $string['privacy:privatefilespath'] = 'Приватні файли';
 $string['privacy:profileimagespath'] = 'Зображення профілю';
 $string['privacy:sessionpath'] = 'Дані сесії';
-$string['selectfiltertype'] = 'Виберіть';
 $string['supportmessagealternative'] = 'Натомість ви можете надіслати електронний лист {$a}.';
 $string['supportmessagenotsent'] = 'На жаль, ваше повідомлення не вдалося надіслати.';
 $string['supportmessagesent'] = 'Ваше повідомлення було відправлене.';

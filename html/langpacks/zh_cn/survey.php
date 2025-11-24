@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'zh_cn', version '4.4'.
+ * Strings for component 'survey', language 'zh_cn', version '4.5'.
  *
  * @package     survey
  * @category    string
@@ -191,8 +191,8 @@ $string['collespname'] = '建构主义在线学习环境问卷调查（希望的
 $string['completiondetail:submit'] = '提交答案';
 $string['completionsubmit'] = '提交';
 $string['customintro'] = '描述';
-$string['deleteallanswers'] = '删除所有调查回复';
-$string['deleteanalysis'] = '删除所有分析回复';
+$string['deleteallanswers'] = '所有调查回复';
+$string['deleteanalysis'] = '所有分析回复';
 $string['done'] = '结束';
 $string['download'] = '下载';
 $string['downloadexcel'] = '以 Excel 电子表格形式下载数据';

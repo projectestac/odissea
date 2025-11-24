@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_premium', language 'fr', version '4.4'.
+ * Strings for component 'tiny_premium', language 'fr', version '4.5'.
  *
  * @package     tiny_premium
  * @category    string
@@ -50,4 +50,4 @@ $string['premiumplugin:tinymcespellchecker'] = 'Vérification orthographique pro
 $string['premiumplugin:typography'] = 'Typographie avancée';
 $string['premiumplugins'] = 'Plugins Premium';
 $string['premiumplugins_desc'] = 'L’accès aux plugins TinyMCE Premium nécessite une clef API. Certains des plugins listés ne seront peut-être pas disponibles avec votre abonnement TinyMCE Premium. Vous pouvez vérifier les plugins disponibles sur votre page <a href="https://www.tiny.cloud">Tiny Cloud</a>.';
-$string['privacy:metadata'] = 'Le plugin Tiny premium pour TinyMCE n’enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Tiny Premium pour TinyMCE n’enregistre aucune donnée personnelle.';

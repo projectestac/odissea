@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'de', version '4.4'.
+ * Strings for component 'reportbuilder', language 'de', version '4.5'.
  *
  * @package     reportbuilder
  * @category    string
@@ -67,8 +67,8 @@ $string['columnadded'] = 'Addierte Spalte \'{$a}\'';
 $string['columnaggregated'] = 'Summierte Spalte \'{$a}\'';
 $string['columndeleted'] = 'Gelöschte Spalte \'{$a}\'';
 $string['columnmoved'] = 'Spalte \'{$a}\' verschoben';
-$string['columnsortdirectionasc'] = 'Spalte \'{$a}\' aufsteigend sortieren';
-$string['columnsortdirectiondesc'] = 'Spalte \'{$a}\' absteigend sortieren';
+$string['columnsortdirectionasc'] = 'Sortierung der Spalte \'{$a}\' aufsteigend ändern';
+$string['columnsortdirectiondesc'] = 'Sortierung der Spalte \'{$a}\' aufsteigend ändern';
 $string['columnsortdisable'] = 'Anfangssortierung von Spalte \'{$a}\' deaktivieren';
 $string['columnsortenable'] = 'Anfangssortierung von Spalte \'{$a}\' aktivieren';
 $string['columnsortupdated'] = 'Aktualisierte Sortierung für Spalte \'{$a}\'';
@@ -147,6 +147,7 @@ $string['filterdurationunit'] = '{$a} Teil';
 $string['filterendswith'] = 'Endet mit';
 $string['filterequalorgreaterthan'] = 'Größer als oder gleich';
 $string['filterequalorlessthan'] = 'Kleiner als oder gleich';
+$string['filterfieldfrom'] = '{$a} von';
 $string['filterfieldoperator'] = '{$a} Operator';
 $string['filterfieldto'] = '{$a} zu';
 $string['filterfieldunit'] = '{$a} Einheit';

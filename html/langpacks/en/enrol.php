@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'en', version '4.4'.
+ * Strings for component 'enrol', language 'en', version '4.5'.
  *
  * @package     enrol
  * @category    string
@@ -47,7 +47,7 @@ $string['customwelcomemessage_help'] = 'Accepted formats: Plain text or Moodle-a
 <li>User last name {$a->lastname}</li>
 <li>User course role {$a->courserole}</li>
 </ul>';
-$string['customwelcomemessageplaceholder'] = 'Dear {$a->fullname}, you are enrolled in the course {$a->coursename}.';
+$string['customwelcomemessageplaceholder'] = 'Hi {$a->firstname}, you are enrolled in the course {$a->coursename}.';
 $string['defaultenrol'] = 'Add instance to new courses';
 $string['defaultenrol_desc'] = 'It is possible to add this plugin to all new courses by default.';
 $string['deleteinstanceconfirm'] = 'You are about to delete the enrolment method "{$a->name}". All {$a->users} users currently enrolled using this method will be unenrolled and any course-related data such as users\' grades, group membership or forum subscriptions will be deleted.

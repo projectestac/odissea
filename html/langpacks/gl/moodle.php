@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'gl', version '4.4'.
+ * Strings for component 'moodle', language 'gl', version '4.5'.
  *
  * @package     moodle
  * @category    string
@@ -292,6 +292,7 @@ $string['chooseuser'] = 'Escoller un usuario';
 $string['city'] = 'Cidade/Vila';
 $string['cleaningtempdata'] = 'Limpando ficheiros temporais';
 $string['clear'] = 'Limpar';
+$string['clearall'] = 'Limpar todo';
 $string['clearfilterrow'] = 'Eliminar a fila do filtro';
 $string['clearfilters'] = 'Limpar filtros';
 $string['clearsearch'] = 'Limpar a entrada de busca';
@@ -1906,13 +1907,19 @@ $string['resendemail'] = 'Reenviar o correo de confirmación';
 $string['reset'] = 'Restabelecer';
 $string['resetcomponent'] = 'Compoñente';
 $string['resetcourse'] = 'Restabelecer o curso';
-$string['resetinfo'] = 'Eliminar todos os datos de usuario e restabelecer este curso ao seu estado orixinal, deixando as actividades e configuracións intactas.';
+$string['resetcourseconfirm'] = 'Restablecer curso?';
+$string['resetcoursewarning'] = 'Está seguro de querer restablecer o curso \'{$a}\'?
+<br/><br/>
+Isto borrará todos os datos seleccionados e restablecerá o curso ao seu estado orixinal. Non pode desfacer esta acción.';
+$string['resetinfo'] = 'Esta opción permite eliminar todos os datos dos usuarios e restabelecer este curso ao seu estado orixinal.  As actividades e configuracións permanecerán intactas.';
+$string['resetinfoselect'] = 'Seleccione os datos que quere borrar ou restablecer das categorías situadas abaixo:';
 $string['resetnotimplemented'] = 'A opción de restabeler non foi implementada';
+$string['resetnotimplementedinfo'] = 'Estas actividades non poden ser restablecidas:';
 $string['resetrecordexpired'] = 'A ligazón que utilizou para restabelecer o contrasinal ten máis de {$a} minutos e xa caducou. Inicie un novo restabelecemento de contrasinal.';
 $string['resetstartdate'] = 'Restabelecer a data de inicio';
 $string['resetstatus'] = 'Estado';
 $string['resettable'] = 'Reiniciar as preferencias da táboa';
-$string['resettask'] = 'Tarefa';
+$string['resettask'] = 'Restablecer';
 $string['resettodefaults'] = 'Restabelecer ao predeterminado';
 $string['resortcourses'] = 'Ordenar cursos';
 $string['resortsubcategoriesby'] = 'Ordena as subcategorías por {$a} de xeito ascendente';
@@ -2060,6 +2067,9 @@ $string['senddetails'] = 'Enviar os meus datos por correo';
 $string['sent'] = 'Enviado';
 $string['separate'] = 'Separar';
 $string['separateandconnected'] = 'Camiños de coñecemento separados e conectados';
+$string['separateandconnected1'] = 'Maioritariamente sabendo separado';
+$string['separateandconnected2'] = 'Separado e conectado';
+$string['separateandconnected3'] = 'Maioritariamente sabendo conectado';
 $string['separateandconnectedinfo'] = 'A escala basease na teoría dos camiños do coñecemento separados  (aprendizaxe individual) e conectados (aprendizaxe colaborativo). Esta teoría describe dúas maneiras diferentes coas que podemos avaliar e aprender a partir do que vemos e escoitamos.<ul><li><strong>Coñecedores separados (individualistas)</strong>mantéñense o máis obxectivos posíbel, sen incluír sentimentos ou emocións. Nun debate con outras persoas, gústalles defender as súas propias ideas, empregando a lóxica para atopar fisuras nas ideas do adversario.</li><li><strong>Coñecedores conectados (colaborativos)</strong> son máis sensíbeis as outras persoas. Son expertos en empatía e adoitan escoitar e facer preguntas ata que senten que poden conectar e «entender as cousas dende outros punto de vista». Aprenden procurando compartir experiencias, o que permítelles atopar o coñecemento nas demais persoas.</li></ul>';
 $string['servererror'] = 'Produciuse un erro mentres se comunicaba co servidor';
 $string['serverlocaltime'] = 'Hora local do servidor';
@@ -2215,6 +2225,7 @@ $string['statswrites'] = 'Mensaxes';
 $string['status'] = 'Estado';
 $string['statuschecks'] = 'Revisións do estado';
 $string['statuscritical'] = 'Crítica';
+$string['statusdone'] = 'Feito';
 $string['statuserror'] = 'Erro';
 $string['statusinfo'] = 'Info';
 $string['statusna'] = 'N/D';

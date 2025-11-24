@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customfield', language 'de', version '4.4'.
+ * Strings for component 'customfield', language 'de', version '4.5'.
  *
  * @package     customfield
  * @category    string
@@ -40,10 +40,13 @@ $string['customfield'] = 'Nutzerdefiniertes Feld';
 $string['customfielddata'] = 'Daten in nutzerdefinierten Feldern';
 $string['customfields'] = 'Nutzerdefinierte Felder';
 $string['defaultvalue'] = 'Standardwert';
+$string['deletecategory'] = 'Nutzerdefinierte Feldkategorie löschen: {$a}';
+$string['deletefield'] = 'Nutzerdefiniertes Feld löschen: {$a}';
 $string['description'] = 'Beschreibung';
 $string['description_help'] = 'Die Beschreibung wird im Formular unter dem Feld angezeigt.';
 $string['edit'] = 'Bearbeiten';
 $string['editcategoryname'] = 'Kategorienamen bearbeiten';
+$string['editfield'] = 'Nutzerdefiniertes Feld bearbeiten: {$a}';
 $string['editingfield'] = '{$a} wird aktualisiert';
 $string['errorfieldtypenotfound'] = 'Feldtyp {$a} nicht gefunden';
 $string['erroruniquevalues'] = 'Dieser Wert wird bereits verwendet.';

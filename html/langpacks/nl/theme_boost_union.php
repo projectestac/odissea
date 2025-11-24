@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost_union', language 'nl', version '4.4'.
+ * Strings for component 'theme_boost_union', language 'nl', version '4.5'.
  *
  * @package     theme_boost_union
  * @category    string
@@ -62,7 +62,7 @@ $string['accessibilitysupportlinkpositionnone'] = 'Toon niet automatisch een lin
 $string['accessibilitysupportlinkpositionsetting'] = 'Positie van de link naar de ondersteuningspagina voor toegankelijkheid.';
 $string['accessibilitysupportmessagenotsent'] = 'Helaas kon je verzoek voor ondersteuning bij toegankelijkheid niet verstuurd worden.';
 $string['accessibilitysupportmessagesent'] = 'Je verzoek voor ondersteuning bij toegankelijkheid is verstuurd.';
-$string['accessibilitysupportmessagetryagain'] = 'Probeer het op een later moment opnieuw';
+$string['accessibilitysupportmessagetryagain'] = 'Probeer het op een later moment nogmaals.';
 $string['accessibilitysupportmessagetryalternative'] = 'Probeer het later nogmaals of stuur rechtstreeks een e-mail naar <a href="mailto:{$a}">{$a}</a>.';
 $string['accessibilitysupportpagesrlinktitledefault'] = 'Vraag ondersteuning bij toegankelijkheid';
 $string['accessibilitysupportpagetitledefault'] = 'Ondersteuning bij toegankelijkheid';
@@ -249,7 +249,6 @@ $string['courselistinggoto'] = 'Ga naar cursus';
 $string['courselistingheading'] = 'Cursuslijst';
 $string['courselistinghowcategory'] = 'Cursuscategorie in cursuslijst tonen';
 $string['courselistinghowenrolicons'] = 'Iconen voor cursusaanmelding tonen in cursuslijst';
-$string['courselistinghowfields'] = 'Cursusvelden tonen in cursuslijst';
 $string['courselistinghowgoto'] = 'Knop \'Ga naar cursus\' tonen in cursuslijst';
 $string['courselistinghowimage'] = 'Cursusafbeelding tonen in cursuslijst';
 $string['courselistinghowpopup'] = 'Popup met details tonen in cursuslijst';
@@ -269,7 +268,6 @@ $string['courseoverviewheading'] = 'Blok Cursusoverzicht';
 $string['courseoverviewshowcourseimagessetting'] = 'Toon cursusafbeeldingen';
 $string['courseoverviewshowprogresssetting'] = 'Toon voortgang cursusvoltooiing';
 $string['courseoverviewshowprogresssetting_desc'] = 'Met deze instelling kun je regelen of de voortgang voor cursusvoltooiing zichtbaar is binnen het blok Cursusoverzicht.';
-$string['courserelatedhintsheading'] = 'Cursusgerelateerde hints';
 $string['coursestab'] = 'Cursussen';
 $string['coursetab'] = 'Cursus';
 $string['cssh5pheading'] = 'Ruwe CSS voor H5P';

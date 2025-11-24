@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'ur', version '4.4'.
+ * Strings for component 'competency', language 'ur', version '4.5'.
  *
  * @package     competency
  * @category    string
@@ -29,6 +29,8 @@ $string['allchildrenarecomplete'] = 'تمام بچے مکمل ہیں۔';
 $string['competencies'] = 'قابلیت';
 $string['competenciesarenotenabled'] = 'اہلیتیں فعال نہیں ہیں۔';
 $string['competenciessettings'] = 'قابلیت کی ترتیبات';
+$string['competency'] = 'قابلیت';
+$string['competencyframework'] = 'قابلیت کا فریم ورک';
 $string['completeplanstask'] = 'مکمل سیکھنے کے منصوبے جو واجب الادا ہیں';
 $string['coursecompetencyoutcome_complete'] = 'اہلیت کی تکمیل کریں';
 $string['coursecompetencyoutcome_evidence'] = 'ثبوت منسلک کریں';
@@ -163,8 +165,10 @@ $string['privacy:metadata:usermodified'] = 'وہ صارف جس نے ریکارڈ
 $string['privacy:path:plans'] = 'سیکھنے کے منصوبے';
 $string['privacy:path:relatedtome'] = 'مجھ سے متعلق';
 $string['privacy:path:userevidence'] = 'پیشگی تعلیم کا ثبوت';
+$string['proficient'] = 'ماہر';
 $string['pushcourseratingstouserplans'] = 'کورس کی درجہ بندی کو انفرادی سیکھنے کے منصوبوں پر دھکیلیں';
 $string['pushcourseratingstouserplans_desc'] = 'کورس کی ترتیب کے لیے پہلے سے طے شدہ قدر انفرادی سیکھنے کے منصوبوں کو اپ ڈیٹ کرنے کے لیے جب کورس کی قابلیت کی درجہ بندی کی جاتی ہے۔';
+$string['rating'] = 'درجہ بندی';
 $string['syncplanscohorts'] = 'لرننگ پلان ٹیمپلیٹ کوہورٹس سے پلانز کو سنک کریں';
 $string['taxonomy_behaviour'] = 'رویہ';
 $string['taxonomy_competency'] = 'قابلیت';

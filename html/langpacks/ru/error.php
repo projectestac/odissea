@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'ru', version '4.4'.
+ * Strings for component 'error', language 'ru', version '4.5'.
  *
  * @package     error
  * @category    string
@@ -36,6 +36,7 @@ $string['alreadyloggedin'] = 'Вы уже вошли в систему под и
 $string['authnotexisting'] = 'Плагин авторизации отсутствует';
 $string['backupcontainexternal'] = 'Этот файл резервной копии содержит внешние узлы Moodle Network, которые не настроены локально';
 $string['backuptablefail'] = 'НЕ удалось настроить таблицы для резервных копий!';
+$string['blockcannotadd'] = 'Невозможно добавить блок';
 $string['blockcannotconfig'] = 'Этот блок не поддерживает глобальные настройки';
 $string['blockcannotinistantiate'] = 'Проблема при создании экземпляра объекта блока';
 $string['blockcannotread'] = 'Не удалось прочитать данные для блока с ID = {$a}';
@@ -99,7 +100,7 @@ $string['cannotfindinfo'] = 'Не удалось найти информацию
 $string['cannotfindlang'] = 'Не удается найти языковой пакет «{$a}»!';
 $string['cannotfindteacher'] = 'Не удалось найти учителя';
 $string['cannotfinduser'] = 'Не удалось найти пользователя с логином «{$a}»';
-$string['cannotgeoplugin'] = 'Не удается подключиться к серверу geoPlugin http://www.geoplugin.com. Проверьте настройки прокси-сервера или лучше установите MaxMind GeoLite City';
+$string['cannotgeoplugin'] = 'Не удается подключиться к серверу geoPlugin http://www.geoplugin.com. Проверьте настройки прокси-сервера или установите файл данных MaxMind GeoIP City.';
 $string['cannotgetblock'] = 'Не удалось восстановить блоки из базы данных';
 $string['cannotgetcats'] = 'Не удалось получить запись для категории';
 $string['cannotgetdata'] = 'Не удалось получить данные';
@@ -156,7 +157,6 @@ $string['cannotsetupcapformod'] = 'Не удается установить во
 $string['cannotsetupcapforplugin'] = 'Не удается установить возможности для плагина {$a}';
 $string['cannotshowhidecoursesincategory'] = 'Не удалось показать/скрыть курсы в категории «{$a}».';
 $string['cannotsignup'] = 'Вы не можете создать новую учетную запись, поскольку Вы уже зашли в систему как {$a}.';
-$string['cannotswitcheditmodeon'] = 'Не удалось включить режим редактирования';
 $string['cannotunassigncap'] = 'Не удалось отозвать устаревшее право «{$a->cap}» у роли «{$a->role}»';
 $string['cannotunassignrolefrom'] = 'Не удалось отменить назначение роли с ID = {$a} для этого пользователя';
 $string['cannotunzipfile'] = 'Не удалось распаковать файл';
@@ -281,6 +281,8 @@ $string['filternotenabled'] = 'Фильтр не включен!';
 $string['filternotinstalled'] = 'Фильтр «{$a}» не установлен';
 $string['forumblockingtoomanyposts'] = 'Вы превысили порог количества сообщений для данного форума';
 $string['functionalityremoved'] = 'Вы пытаетесь получить доступ к функции, которая была удалена.';
+$string['gdfeaturenotsupported'] = 'Расширение GD не скомпилировано с методами для {$a}.';
+$string['gdmimetypenotsupported'] = 'Тип MIME не поддерживается';
 $string['generalexceptionmessage'] = 'Исключение - {$a}';
 $string['gradecantregrade'] = 'Произошла ошибка при вычислении оценки: {$a}';
 $string['gradepubdisable'] = 'Публикация оценок отключена';
@@ -346,6 +348,7 @@ $string['invalidelementid'] = 'Неверный ID элемента!';
 $string['invalidentry'] = 'Это некорректная запись!';
 $string['invalidevent'] = 'Неверное событие';
 $string['invalidfieldname'] = 'Некорректное имя поля «{$a}»';
+$string['invalidfile'] = 'Файл не найден';
 $string['invalidfiletype'] = 'Некорректный тип файла «{$a}»';
 $string['invalidformatpara'] = 'Неверный формат для выбранного параметра';
 $string['invalidformdata'] = 'Неверная форма данных';
@@ -394,6 +397,7 @@ $string['invalidxmlfile'] = '«{$a}» - некорректный XML файл';
 $string['iplookupfailed'] = 'Невозможно определить гео-информацию об этом IP-адресе {$a}.';
 $string['iplookupprivate'] = 'Невозможно отобразить расположение локального IP-адреса.';
 $string['ipmismatch'] = 'Несоответствие IP-адреса клиента';
+$string['itemnotfound'] = 'Не найдено: {$a->itemtype} с идентификатором «{$a->identifier}»';
 $string['listcantmovedown'] = 'Невозможно переместить элемент вниз, так как он и так на последнем месте';
 $string['listcantmoveleft'] = 'Невозможно переместить элемент влево, так как он не имеет родительского объекта';
 $string['listcantmoveright'] = 'Невозможно переместить элемент вправо и сделать его дочерним, поскольку над ним нет элементов этого же уровня. Переместите его под другой элемента такого же уровня, и тогда Вы сможете переместить его вправо.';
@@ -486,6 +490,7 @@ $string['nostartdatenoenddate'] = 'Дата окончания курса мож
 $string['nostatstodisplay'] = 'Нет данных для отображения';
 $string['notallowedtoupdateprefremotely'] = 'Вы не можете удаленно обновить предпочтения этого пользователя';
 $string['notavailable'] = 'Сейчас это недоступно.';
+$string['notfound'] = 'Не найдено';
 $string['notlocalisederrormessage'] = '{$a}';
 $string['notmemberofgroup'] = 'Вы не являетесь участником этой группы';
 $string['notownerofkey'] = 'Вы не являетесь владельцем этого ключа';
@@ -533,6 +538,7 @@ $string['reverseproxyabused'] = 'Используется реверсивный
 $string['rpcerror'] = 'Ошибка соединения MNET! Вот сообщение об ошибке для администратора: {$a}';
 $string['scheduledbackupsdisabled'] = 'Запланированное резервирование было отключено администратором сервера';
 $string['secretalreadyused'] = 'Эта ссылка для подтверждения смены пароля уже использовалась, пароль не был изменен';
+$string['sectioncantbefound'] = '<p><strong>Этот контент не найден</strong></p><p>Возможно, он был удален или URL-адрес неверен.</p>';
 $string['sectionnotexist'] = 'Эта секция не существует';
 $string['sendmessage'] = 'Отправить сообщение';
 $string['sendmessagesent'] = 'Благодарим за отзыв о: <br> {$a}';
@@ -549,6 +555,7 @@ $string['sessionexpired'] = 'Сеанс истёк';
 $string['sessionhandlerproblem'] = 'Обработчик сеанса настроен неправильно';
 $string['sessionipnomatch'] = 'Извините, но Ваш IP адрес был изменен с момента Вашего входа в систему. Эта возможность системы безопасности предотвращает попытки взломщиков получить Ваши учетные данные во время Вашего пребывания на сайте. Обычно пользователи не должны видеть это сообщение. Пожалуйста, свяжитесь с администратором сайта.';
 $string['sessionipnomatch2'] = 'Извините, но похоже что Ваш IP-адрес изменился с момента входа в систему. Эта функция предотвращает похищение Ваших данных хакерами во время работы на сайте. Эта ошибка может возникать, если Вы используете беспроводные сети или перемещаетесь между различными сетями. Вы можете обратитесь за более подробной информацией к администратору сайта. <br /> <br /> Если Вы хотите продолжить работу, нажмите клавишу F5, чтобы обновить эту страницу.';
+$string['sessionstarterror'] = 'Не удалось начать сеанс. Повторите попытку позже.';
 $string['sessionwaiterr'] = 'Тайм-аут в ожидании блокировки сеанса. <br /> Подождите, пока ваши текущие запросы будут завершены и позже попробуйте еще раз.';
 $string['shortnametaken'] = 'Это краткое название уже используется другим курсом ({$a})';
 $string['sitepolicynotagreed'] = 'Не получено согласие с Политикой сайта: <a href="{$a}"> Нажмите здесь, чтобы открыть Политику сайта. </a>';

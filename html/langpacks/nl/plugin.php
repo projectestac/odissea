@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'nl', version '4.4'.
+ * Strings for component 'plugin', language 'nl', version '4.5'.
  *
  * @package     plugin
  * @category    string
@@ -53,6 +53,8 @@ $string['err_response_format_version'] = 'Onverwachte versie van de antwoordopma
 $string['err_response_http_code'] = 'Kon beschikbare updategegevens niet ophalen - onverwachte HTTP antwoordcode.';
 $string['filterall'] = 'Toon alles';
 $string['filtercontribonly'] = 'Toon enkel contributiecode';
+$string['filtermissingonly'] = 'Toon enkel wat ontbreekt op schijf';
+$string['filternewpluginsonly'] = 'Toon enkel te installeren plugins';
 $string['filterupdatesonly'] = 'Toon enkel geüpdated';
 $string['incompatibleversion'] = 'Niet-compatibele Moodle-versie: {$a}';
 $string['isenabled'] = 'Ingeschakeld?';
@@ -110,6 +112,10 @@ $string['status_uptodate'] = 'Geïnstalleerd';
 $string['supportedconversions'] = 'Ondersteunde documentconversies';
 $string['supportedmoodleversions'] = 'Ondersteunde Moodleversies';
 $string['systemname'] = 'Identificatie';
+$string['type_aiplacement'] = 'AI plaatsingsplugin';
+$string['type_aiplacement_plural'] = 'AI plaatsingsplugins';
+$string['type_aiprovider'] = 'AI-provider plugin';
+$string['type_aiprovider_plural'] = 'AI-provider plugins';
 $string['type_antivirus'] = 'Antivirus plugin';
 $string['type_antivirus_plural'] = 'Antivirus plugins';
 $string['type_auth'] = 'Authenticatiemethode';
@@ -192,6 +198,8 @@ $string['type_repository'] = 'Opslagruimte';
 $string['type_repository_plural'] = 'Opslagruimten';
 $string['type_search'] = 'Zoekmachine';
 $string['type_search_plural'] = 'Zoekmachines';
+$string['type_smsgateway'] = 'SMS-gateway';
+$string['type_smsgateway_plural'] = 'SMS-gateways';
 $string['type_theme'] = 'Thema';
 $string['type_theme_plural'] = 'Thema\'s';
 $string['type_tool'] = 'Beheertool';

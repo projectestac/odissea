@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'it', version '4.4'.
+ * Strings for component 'theme_boost', language 'it', version '4.5'.
  *
  * @package     theme_boost
  * @category    string
@@ -34,7 +34,6 @@ $string['brandcolor'] = 'Colore primario';
 $string['brandcolor_desc'] = 'Il colore d\'accento';
 $string['choosereadme'] = 'Boost è un tema moderno e fortemente personalizzabile. È possibile usarlo come tema del sito oppure come tema padre di altri temi che usano Bootstrap 4.';
 $string['configtitle'] = 'Boost';
-$string['currentinparentheses'] = '(zttuale)';
 $string['generalsettings'] = 'Impostazioni generali';
 $string['loginbackgroundimage'] = 'Immagine di sfondo della pagina di autenticazione';
 $string['loginbackgroundimage_desc'] = 'L\'immagine da visualizzare come sfondo della pagina di login.';

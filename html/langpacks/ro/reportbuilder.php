@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'ro', version '4.4'.
+ * Strings for component 'reportbuilder', language 'ro', version '4.5'.
  *
  * @package     reportbuilder
  * @category    string
@@ -67,8 +67,8 @@ $string['columnadded'] = 'Coloana \'{$a}\' adăugată';
 $string['columnaggregated'] = 'Coloană agregată \'{$a}\'';
 $string['columndeleted'] = 'Coloana \'{$a}\' ștearsă';
 $string['columnmoved'] = 'Coloana \'{$a}\' mutată';
-$string['columnsortdirectionasc'] = 'Sortați coloana \'{$a}\' în mod crescător';
-$string['columnsortdirectiondesc'] = 'Sortați coloana \'{$a}\' în mod descrescător';
+$string['columnsortdirectionasc'] = 'Modificați sortarea inițială a coloanei „{$a}” în crescătoare';
+$string['columnsortdirectiondesc'] = 'Modificați sortarea inițială a coloanei „{$a}” în descrescătoare';
 $string['columnsortdisable'] = 'Dezactivați sortarea inițială a coloanei \'{$a}\'';
 $string['columnsortenable'] = 'Activați sortarea inițială a coloanei \'{$a}\'';
 $string['columnsortupdated'] = 'Sortare actualizată a coloanei \'{$a}\'';
@@ -147,6 +147,7 @@ $string['filterdurationunit'] = '{$a} unitate';
 $string['filterendswith'] = 'Se încheie cu';
 $string['filterequalorgreaterthan'] = 'Mai mare decât sau egal';
 $string['filterequalorlessthan'] = 'Mai mare decât sau egal';
+$string['filterfieldfrom'] = '{$a} din';
 $string['filterfieldoperator'] = '{$a} operator';
 $string['filterfieldto'] = '{$a} la';
 $string['filterfieldunit'] = '{$a} unitate';

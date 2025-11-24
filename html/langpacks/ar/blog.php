@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ar', version '4.4'.
+ * Strings for component 'blog', language 'ar', version '4.5'.
  *
  * @package     blog
  * @category    string
@@ -71,7 +71,7 @@ $string['configuseexternalblogs'] = 'تمكين المستخدمين من تحد
 $string['courseblog'] = 'مدونة المساق: {$a}';
 $string['courseblogdisable'] = 'تم تعطيل مدونات المساق';
 $string['courseblogs'] = 'يستطيع المستخدمون رؤية مدونات من يشاركونهم في المساق فقط';
-$string['deleteblogassociations'] = 'حذف متعلقات المدونة';
+$string['deleteblogassociations'] = 'متعلقات المدونة';
 $string['deleteblogassociations_help'] = 'عند تأشيره فلن تعود مشاركات المدونة مرتبطة بهذا المساق أو أي من أنشطته وموارده. لن يتم حذف مدخلات المدونة نفسها.';
 $string['deleteentry'] = 'حذف المشاركة';
 $string['deleteexternalblog'] = 'إلغاء تسجيل هذه المدونة الخارجية';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'sv', version '4.4'.
+ * Strings for component 'admin', language 'sv', version '4.5'.
  *
  * @package     admin
  * @category    string
@@ -928,7 +928,6 @@ $string['moodlepartners_help'] = '<p>Moodle Partners är tjänsteleverantörer s
 <a href="https://moodle.com/partners">Hitta en partner</a>';
 $string['moodleservices'] = 'Moodletjänster';
 $string['moodleservices_help'] = 'Se till att du får ut det bästa av din lärmiljö i Moodle genom att använda dessa Moodletjänster:';
-$string['multilangforceold'] = 'Tvinga gammal syntax för flerspråkigt innehåll: &lt;span&gt; utan class="multilang" and &lt;lang&gt;';
 $string['mustenablestats'] = 'Statistikfunktioner har ännu inte aktiverats för den här webbplatsen.';
 $string['mycourses'] = 'Mina kurser';
 $string['mydashboard'] = 'Systemets standardinstrumentpanel';

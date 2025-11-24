@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'nl', version '4.4'.
+ * Strings for component 'reportbuilder', language 'nl', version '4.5'.
  *
  * @package     reportbuilder
  * @category    string
@@ -67,8 +67,8 @@ $string['columnadded'] = 'Kolom \'{$a}\' toegevoegd';
 $string['columnaggregated'] = 'Geaggregeerde kolom \'{$a}\'';
 $string['columndeleted'] = 'Kolom \'{$a}\' verwijderd';
 $string['columnmoved'] = 'Kolom \'{$a}\' verplaatst';
-$string['columnsortdirectionasc'] = 'Sorteer kolom \'{$a}\' oplopend';
-$string['columnsortdirectiondesc'] = 'Sorteer kolom \'{$a}\' aflopend';
+$string['columnsortdirectionasc'] = 'Wijzig initiële sortering voor kolom \'{$a}\' naar oplopend';
+$string['columnsortdirectiondesc'] = 'Wijzig initiële sortering voor kolom \'{$a}\' naar aflopend';
 $string['columnsortdisable'] = 'Sorteren uitschakelen voor kolom {$a}';
 $string['columnsortenable'] = 'Sorteren inschakelen voor kolom {$a}';
 $string['columnsortupdated'] = 'Bijgewerkte sortering voor kolom \'{$a}\'';
@@ -147,6 +147,7 @@ $string['filterdurationunit'] = '{$a} eenheid';
 $string['filterendswith'] = 'Eindigt met';
 $string['filterequalorgreaterthan'] = 'Groter dan of gelijk aan';
 $string['filterequalorlessthan'] = 'Minder dan of gelijk';
+$string['filterfieldfrom'] = '{$a} van';
 $string['filterfieldoperator'] = '{$a} operator';
 $string['filterfieldto'] = '{$a} naar';
 $string['filterfieldunit'] = '{$a} eenheid';

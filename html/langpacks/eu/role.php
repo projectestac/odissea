@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'eu', version '4.4'.
+ * Strings for component 'role', language 'eu', version '4.5'.
  *
  * @package     role
  * @category    string
@@ -28,6 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['addinganewrole'] = 'Rol berria gehitzen';
 $string['addrole'] = 'Gehitu rol berria';
 $string['advancedoverride'] = 'Rol-baliogabetze aurreratua';
+$string['ai:acceptpolicy'] = 'Onartu AA politika';
+$string['ai:fetchanyuserpolicystatus'] = 'Lortu erabiltzaileen AA politiken onarpen bat';
+$string['ai:fetchpolicy'] = 'Lortu erabiltzaileen AA politiken onarpen bat';
 $string['allow'] = 'Baimendu';
 $string['allowassign'] = 'Baimendu rolak esleitzea';
 $string['allowed'] = 'Baimenduta';
@@ -163,6 +166,8 @@ $string['confirmunassignno'] = 'Utzi';
 $string['confirmunassigntitle'] = 'Baieztatu rol-aldaketa';
 $string['confirmunassignyes'] = 'Kendu';
 $string['contentbank:access'] = 'Sarbidea eduki-bankura';
+$string['contentbank:changelockedcustomfields'] = 'Aldatu eduki-bankuko blokeatutako eremu pertsonalizatuak';
+$string['contentbank:configurecustomfields'] = 'Konfiguratu eduki-bankuko eremu pertsonalizatuak';
 $string['contentbank:copyanycontent'] = 'Kopiatu edozein eduki eduki-bankuan';
 $string['contentbank:copycontent'] = 'Kopiatu edukia eduki-bankuan';
 $string['contentbank:deleteanycontent'] = 'Ezabatu eduki-bankuko eduki guztiak';
@@ -190,6 +195,7 @@ $string['course:create'] = 'Sortu ikastaroak';
 $string['course:creategroupconversations'] = 'Sortu taldeko elkarrizkeak';
 $string['course:delete'] = 'Ezabatu ikastaroak';
 $string['course:downloadcoursecontent'] = 'Jaitsi ikastaroko edukia';
+$string['course:editcoursewelcomemessage'] = 'Editatu ikastaroko ongi-etorri mezua';
 $string['course:enrolconfig'] = 'Konfiguratu ikastaroetako matrikulazio-instantziak';
 $string['course:enrolreview'] = 'Berrikusi ikastaroko matrikulazioak';
 $string['course:ignoreavailabilityrestrictions'] = 'Ezikusi egin eskuragarritasun-murrizketei';
@@ -238,8 +244,8 @@ $string['defaultrole'] = 'Lehenetsitako rola';
 $string['defaultx'] = 'Lehenetsitakoa: {$a}';
 $string['defineroles'] = 'Zehaztu rolak';
 $string['definitionofrolex'] = '\'{$a}\' rolaren definizioa';
-$string['deletecourseoverrides'] = 'Ezabatu ikastaroan baliogabetutako baimen guztiak';
-$string['deletelocalroles'] = 'Ezabatu rol-esleipen lokal guztiak';
+$string['deletecourseoverrides'] = 'Ikastaroko baliogabetze guztiak';
+$string['deletelocalroles'] = 'Rol-esleipen lokal guztiak';
 $string['deleterolesure'] = '<p>Ziur zaude {"{$a->name}} ({$a->shortname})" rola ezabatu nahi duzula?</p><p> Une honetan {$a->count} erabiltzailek dute rol hori.</p>';
 $string['deletexrole'] = 'Ezabatu {$a} rola';
 $string['duplicaterole'] = 'Bikoiztu rola';
@@ -520,6 +526,7 @@ $string['user:viewalldetails'] = 'Ikusi erabiltzaileen informazio osoa';
 $string['user:viewdetails'] = 'Ikusi erabiltzailearen profila';
 $string['user:viewhiddendetails'] = 'Ikusi erabiltzaileen ezkutuko xehetasunak';
 $string['user:viewlastip'] = 'Ikusi erabiltzailearen azken IP helbidea';
+$string['user:viewprofilepictures'] = 'Ikusi erabiltzaile-irudiak (sarbide behartua gaituta badago)';
 $string['user:viewuseractivitiesreport'] = 'Ikusi erabiltzaileen jarduera-txostenak';
 $string['user:viewusergrades'] = 'Ikusi erabiltzaileen kalifikazioak';
 $string['usersfrom'] = 'Erabiltzaileak hemendik: {$a}';

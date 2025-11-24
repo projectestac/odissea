@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'eu', version '4.4'.
+ * Strings for component 'moodle', language 'eu', version '4.5'.
  *
  * @package     moodle
  * @category    string
@@ -44,6 +44,7 @@ $string['activityiscurrentlyhidden'] = 'Sentitzen dugu, jarduera hau ezkutuan da
 $string['activitymodule'] = 'Jarduera-modulua';
 $string['activitymodules'] = 'Jarduera-moduluak';
 $string['activitynotready'] = 'Jarduera oraindik ez dago prest';
+$string['activityorresource'] = 'Jarduera edo baliabidea';
 $string['activityreport'] = 'Jardueraren txostena';
 $string['activityreports'] = 'Jardueraren txostenak';
 $string['activityselect'] = 'Aukeratu jarduera hau beste norabait joateko';
@@ -57,6 +58,7 @@ $string['addadmin'] = 'Gehitu kudeatzailea';
 $string['addblock'] = 'Gehitu blokea';
 $string['addcomment'] = 'Gehitu iruzkina...';
 $string['addcondition'] = 'Gehitu baldintza';
+$string['addcontent'] = 'Gehitu edukia';
 $string['addcountertousername'] = 'Sortu erabiltzailea erabiltzaile-izenari zenbakia gehituz';
 $string['addcreator'] = 'Gehitu ikastaro-sortzailea';
 $string['adddots'] = 'Gehitu...';
@@ -293,6 +295,7 @@ $string['chooseuser'] = 'Aukeratu erabiltzaile bat';
 $string['city'] = 'Hiria/Herria';
 $string['cleaningtempdata'] = 'Behin behineko datuak (TEMP) ezabatzen';
 $string['clear'] = 'Garbitu';
+$string['clearall'] = 'Garbitu guztiak';
 $string['clearfilterrow'] = 'Kendu iragazki-errenkada';
 $string['clearfilters'] = 'Garbitu iragazkiak';
 $string['clearsearch'] = 'Garbitu bilaketa-testua';
@@ -563,15 +566,15 @@ $string['delete'] = 'Ezabatu';
 $string['deleteablock'] = 'Ezabatu blokea';
 $string['deleteall'] = 'Ezabatu guztia';
 $string['deleteallcannotundo'] = 'Ezabatu guztia - ezin da desegin';
-$string['deleteallcomments'] = 'Ezabatu iruzkin guztiak';
-$string['deleteallratings'] = 'Ezabatu puntuazio guztiak';
+$string['deleteallcomments'] = 'Iruzkin guztiak';
+$string['deleteallratings'] = 'Puntuazio guztiak';
 $string['deletecategory'] = 'Ezabatu kategoria: {$a}';
 $string['deletecategorycheck'] = 'Ziur al zaude <b>\'{$a}\'</b> kategoria erabat ezabatu nahi duzula?<br />Honek bertako ikastaroak goragoko kategoriara mugituko ditu, eta halakorik ez balego Bestelakoak kategoriara.';
 $string['deletecategorycheck2'] = 'Kategoria hau ezabatzen baduzu, erabaki beharko duzu barruan dauden ikastaro eta azpikategoriekin zer egin';
 $string['deletecategoryempty'] = 'Kategoria hau hutsik dago.';
 $string['deletecheck'] = 'Ezabatu {$a}?';
 $string['deletecheckfiles'] = 'Ziur al zaude fitxategi hauek ezabatu nahi dituzula?';
-$string['deletecheckfull'] = 'Ziur al zaude {$a} erabiltzailea guztiz ezabatu nahi duzula, bere matrikulazioak, aktibitatea eta bestelako erabiltzaile-datuak barne?';
+$string['deletecheckfull'] = 'Ziur zaude {$a} erabiltzailea ezabatu nahi duzula, bere profileko datuak, matrikulazioak, talde zein kohorteetako partaidetza zein bestelako erabiltzaile-datuak barne?';
 $string['deletechecktype'] = 'Ziur zaude {$a->type} ezabatu nahi duzula?';
 $string['deletechecktypename'] = 'Ziur zaude "{$a->name}" {$a->type} ezabatu nahi duzula?';
 $string['deletecheckwarning'] = 'Fitxategi hauek ezabatu egingo dituzu';
@@ -691,7 +694,7 @@ $string['emailagain'] = 'Helbide elektronikoa (berriro)';
 $string['emailalreadysent'] = 'Pasahitza berrezartzeko e-mail bat bidali da jada. Mesedez begiratu zure posta elektronikoa.';
 $string['emailcharset'] = 'Posta elektronikorako karaktere-multzoa';
 $string['emailconfirm'] = 'Zure kontua berretsi';
-$string['emailconfirmation'] = 'Kaixo:
+$string['emailconfirmation'] = 'Kaixo, {$a->firstname}:
 
 \'{$a->sitename}\' gunean kontu berri baten eskaera bat jaso dugu zure helbide elektronikotik.
 
@@ -968,7 +971,7 @@ $string['forcepasswordchangenot'] = '{$a} ezin da behartu pasahitza aldatzera';
 $string['forcepasswordchangenotice'] = 'Jarraitzeko zure pasahitza aldatu behar duzu.';
 $string['forcepasswordresetfailurenotice'] = 'Zure une honetako pasahitzak ez du oraingo pasahitzen politika betetzen. Jarri zaitez harremanetan zure Moodleko kudeatzailearekin laguntza eskuratzeko.
    {$a}';
-$string['forcepasswordresetnotice'] = 'Zure une honetako pasahitzak ez du oraingo pasahitzen politika betetzen, saioa hasteko pasahitza berrezarri behar duzu.
+$string['forcepasswordresetnotice'] = 'Zure une honetako pasahitzak ez du oraingo pasahitzen politika betetzen. Saioa hasteko pasahitza berrezarri behar duzu.
    {$a}';
 $string['forcetheme'] = 'Behartu azala';
 $string['forgotaccount'] = 'Pasahitza galdu duzu?';
@@ -1015,6 +1018,7 @@ $string['general'] = 'Orokorra';
 $string['geolocation'] = 'latitudea - longitudea';
 $string['gettheselogs'] = 'Eskuratu erregistro hauek';
 $string['go'] = 'Joan';
+$string['gobacktosite'] = 'Itzuli gunera';
 $string['gpl'] = 'Copyright (C) 1999tik aurrera Martin Dougiamas (https://moodle.com)
 
 Programa hau doako softwarea da. Berriz banatu edo eta alda dezakezu, beti ere GNU General Public License lizentziaren arabera, The Free Software Foundation-en argitalpenaren arabera; baita 2. bertsioaren edo ondorengo baten arabera ere.
@@ -1180,6 +1184,8 @@ $string['indicator:userforumstracking'] = 'Erabiltzaileak foroetako irakurri gab
 $string['indicator:userforumstracking_help'] = 'Adierazle honek ikasleak foroetako irakurri gabeko mezuen jarraipena gaituta duen edo ez erakusten du.';
 $string['info'] = 'Informazioa';
 $string['inprogress'] = 'Abian';
+$string['insertcontentbefore'] = 'Txertatu edukia \'{$a->activityname}\' baino lehen';
+$string['insertcontentsection'] = 'Txertatu edukia \'{$a->sectionname}\' atalean';
 $string['insertresourceoractivitybefore'] = 'Txertatu jarduera edo baliabidea \'{$a->activityname}\'(r)en aurretik';
 $string['institution'] = 'Erakundea';
 $string['instudentview'] = 'ikaslearen ikuspegian';
@@ -1297,6 +1303,7 @@ $string['maximumgradex'] = 'Gehieneko kalifikazioa: {$a}';
 $string['maximumshort'] = 'Gehienez';
 $string['maximumupload'] = 'Fitxategiak igotzeko gehieneko tamaina';
 $string['maximumupload_help'] = 'Ikasleek ikastarora igotako fitxategien gehieneko tamaina. Horrez gain, jarduera bakoitzean bertara igotako fitxategien gehieneko tamaina ere muga daiteke.';
+$string['maxlengthreached'] = 'Gehieneko karaktere kopurura iritsi da ({$a}).';
 $string['maxnumberweeks'] = 'Gehieneko atal-kopurua';
 $string['maxnumberweeks_desc'] = 'Atal-kopuruaren menu zabalgarriaren gehieneko balioa (soilik ikastaro formatu jakin batzuetan aplikatzen da).';
 $string['maxnumcoursesincombo'] = 'Arakatu <a href="{$a->link}">{$a->numberofcourses} courses</a>.';
@@ -1464,6 +1471,7 @@ $string['moveselectedcategoriesto'] = 'Mugitu aukeratutako kategoriak hona:';
 $string['moveselectedcoursesto'] = 'Mugitu aukeratutako ikastaroak hona:';
 $string['movetoanotherfolder'] = 'Mugitu beste karpeta batera';
 $string['moveup'] = 'Mugitu gora';
+$string['multipleitemsfound'] = '{$a} elementu aurkitu dira.';
 $string['mustchangepassword'] = 'Pasahitz berriak eta zaharrak ezberdin izan behar dute.';
 $string['mustconfirm'] = 'Zure kontua baieztatu behar dituzu';
 $string['mycourses'] = 'Nire ikastaroak';
@@ -1565,6 +1573,7 @@ $string['nofiltersapplied'] = 'Ez da iragazkirik aplikatu';
 $string['nograde'] = 'Kalifikaziorik ez';
 $string['nohelpforactivityorresource'] = 'Une honetan ez dago baliabide edo jarduera horrekin lotutako laguntzarik';
 $string['noimagesyet'] = 'Ez da irudirik igo zure ikastarora oraindik';
+$string['noitemsfound'] = 'Ez da elementurik aurkitu.';
 $string['nologsfound'] = 'Ez da erregistrorik aurkitu';
 $string['nomatchingusers'] = 'Ez da \'{$a}\' erabiltzailerik aurkitu';
 $string['nomorecourses'] = 'Ezin ikastaro gehiago aurkitu bilaketaren arabera';
@@ -1639,6 +1648,7 @@ $string['numyears'] = '{$a} urte';
 $string['ok'] = 'Ados';
 $string['oldpassword'] = 'Oraingo pasahitza';
 $string['olduserdirectory'] = 'Erabiltzaileen direktorio ZAHARRA da hau eta dagoeneko ez da beharrezkoa. Lasai ezaba dezakezu. Dituen fitxategiak erabiltzaile direktorio BERRIAn kopiatu dira.';
+$string['oneitemfound'] = 'Elementu 1 aurkitu da.';
 $string['opendrawerblocks'] = 'Zabaldu blokeen nabigazio-kutxa';
 $string['opendrawerindex'] = 'Zabaldu ikastaroaren aurkibidea';
 $string['opensinnewwindow'] = 'Leiho berri batean irekitzen da';
@@ -1857,6 +1867,7 @@ $string['remoteappuser'] = 'Urrutiko {$a} erabiltzailea';
 $string['remove'] = 'Kendu';
 $string['removeadmin'] = 'Kendu kudeatzailea';
 $string['removecreator'] = 'Kendu Ikastaro-sortzailea';
+$string['removed'] = 'Ezabatuta {$a}';
 $string['removestudent'] = 'Kendu ikaslea';
 $string['removeteacher'] = 'Kendu irakaslea';
 $string['rename'] = 'Aldatu izena';
@@ -1876,13 +1887,19 @@ $string['resendemail'] = 'Berriz bidali berrespen e-maila';
 $string['reset'] = 'Berrabiarazi';
 $string['resetcomponent'] = 'Osagaia';
 $string['resetcourse'] = 'Berrabiarazi ikastaroa';
-$string['resetinfo'] = 'Ezabatu erabiltzaile-datu guztiak eta berrabiarazi ikastaro hau bere jatorriko egoerara, jarduerak eta ezarpenak aldatu gabe utzita.';
-$string['resetnotimplemented'] = 'Berrabiaraztea ez dago inplementatuta';
+$string['resetcourseconfirm'] = 'Berrabiarazi ikastaroa?';
+$string['resetcoursewarning'] = 'Ziur zaude \'{$a}\' ikastaroa berrabiarazi nahi duzula?
+<br/><br/>
+Ekintza honek aukeratutako datuak ezabatu eta ikastaroa jatorrizko egoerara itzuliko du. Ekintza honek ez du atzera bueltarik.';
+$string['resetinfo'] = 'Funtzionalitate honek erabiltzaile-datu guztiak ezabatu eta ikastaroa bere jatorriko egoerara berrabiaraztea ahalbidetzen du. Ikastaroko jarduerak eta ezarpenak ez dira aldatzen.';
+$string['resetinfoselect'] = 'Aukeratu azpiko kategorietatik ezabatu edo berrabiarazi nahi dituzun datuak:';
+$string['resetnotimplemented'] = 'Berrabiaraztea ez dago onartuta';
+$string['resetnotimplementedinfo'] = 'Hurrengo jarduerak ezin dira berrabiarazi:';
 $string['resetrecordexpired'] = 'Pasahitza berrezartzeko erabili duzun esteka {$a} minutu baino zaharragoa da eta iraungita dago. Mesedez pasahitz berria bat lortzeko eskari berria hasi.';
 $string['resetstartdate'] = 'Aldatu hasiera-data';
 $string['resetstatus'] = 'Egoera';
 $string['resettable'] = 'Berrabiarazi taularen hobespenak';
-$string['resettask'] = 'Ataza';
+$string['resettask'] = 'Berrabiarazi';
 $string['resettodefaults'] = 'Berrezarri balio lehenetsiak';
 $string['resortcourses'] = 'Ordenatu ikastaroak';
 $string['resortsubcategoriesby'] = 'Ordenatu azpikategoriak {$a}(r)en arabera gorantz';
@@ -2012,7 +2029,7 @@ $string['selectcategorysort'] = 'Zein kategoria ordenatu nahi duzu?';
 $string['selectcategorysortby'] = 'Erabaki nola ordenatu nahi dituzun kategoriak';
 $string['selectcoursesortby'] = 'Aukeratu nola ordenatu nahi dituzun ikastaroak';
 $string['selectdefault'] = 'Aukeratu lehenetsitakoa';
-$string['selectedcategories'] = 'Aukeratuko kategoriak';
+$string['selectedcategories'] = 'Aukeratutako kategoriak';
 $string['selectedfile'] = 'Aukeratutako fitxategia';
 $string['selectednowmove'] = '{$a} fitxategi aukeratu duzu mugitzeko. Zoaz orain nahi duzun karpetara eta egin klik \'Mugitu fitxategiak hona\' botoian';
 $string['selectfiles'] = 'Aukeratutako fitxategiak';
@@ -2031,6 +2048,9 @@ $string['senddetails'] = 'Bidali nire xehetasunak posta elektroniko bidez';
 $string['sent'] = 'Bidalita';
 $string['separate'] = 'Bereizi';
 $string['separateandconnected'] = 'Jakintza-bide banatuak eta elkar lotuak';
+$string['separateandconnected1'] = 'Batez ere banatutako jakintza';
+$string['separateandconnected2'] = 'Banatuta eta lotuta';
+$string['separateandconnected3'] = 'Batez ere lotutako jakintza';
 $string['separateandconnectedinfo'] = 'Eskala hau banandutako eta konektatutako ezagutzen teorian oinarritzen da. Teoria honek ikusi eta entzuten ditugun gauzak ebaluatu eta ikasteko bi modu deskribatzen ditu.<ul><li><strong>Ikasle bereiziak</strong> ahal bezain objektibo mantentzen dira sentimenduak eta emozioak kontuan hartu gabe. Beste batzuekin eztabaidak izatean euren ideiak defendatzea gustatzen zaie, logika erabiliz aurkariaren logikan hutsuneak bilatzeko.</li><li><strong>Konektatutako ikasleek</strong> beste jendearekiko sentsibilitate handiagoa dute. Enpatia gaitasun handiagoa dute eta entzun eta galderak egiteko joera dute "bestearen ikuspuntutik gauzak ulertzeko" gai direla sentitu arte. Besteengan topatzen duten jakinduria lortzeko esperientziak trukatzen saiatuz ikasten dute.</li></ul>';
 $string['servererror'] = 'Errorea gertatu da zerbitzariarekin komunikatzean';
 $string['serverlocaltime'] = 'Zerbitzariaren ordu lokala';
@@ -2186,6 +2206,7 @@ $string['statswrites'] = 'Mezuak';
 $string['status'] = 'Egoera';
 $string['statuschecks'] = 'Egoeraren egiaztapenak';
 $string['statuscritical'] = 'Kritikoa';
+$string['statusdone'] = 'Eginda';
 $string['statuserror'] = 'Errorea';
 $string['statusinfo'] = 'Informazioa';
 $string['statusna'] = 'ED/EE';
@@ -2201,6 +2222,7 @@ $string['subcategory'] = 'Azpikategoria';
 $string['subcategoryof'] = '{$a}(r)en azpikategoria';
 $string['subject'] = 'Gaia';
 $string['submit'] = 'Bidali';
+$string['subsectionmoveerror'] = 'Ezin da mugitu azpi-atal hau edo beste azpi-atal bat';
 $string['success'] = 'Ondo';
 $string['successduration'] = 'Ondo ({$a} segundo)';
 $string['summary'] = 'Laburpena';

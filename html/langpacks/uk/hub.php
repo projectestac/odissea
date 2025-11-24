@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'uk', version '4.4'.
+ * Strings for component 'hub', language 'uk', version '4.5'.
  *
  * @package     hub
  * @category    string
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activeparticipantnumberaverage'] = 'Середня кількість нещодавно активних учасників ({$a})';
 $string['activeusersnumber'] = 'Кількість нещодавно активних користувачів ({$a})';
+$string['aiusagestats'] = 'Статистика використання AI ({$a->timefrom} - {$a->timeto})';
 $string['analyticsactions'] = 'Кількість дій, зроблених зі згенерованими передбаченнями ({$a})';
 $string['analyticsactionsnotuseful'] = 'Кількість дій, які позначають прогноз як некорисний ({$a})';
 $string['analyticsenabledmodels'] = 'Кількість увімкнених моделей прогнозування ({$a})';
@@ -92,6 +93,7 @@ $string['nohubselected'] = 'Вузол не вибрано';
 $string['none'] = 'Не існує';
 $string['operation'] = 'Дії';
 $string['participantnumberaverage'] = 'Середня кількість учасників ({$a})';
+$string['pluginusagedata'] = 'Дані про використання плагінів, зібрані з: <a href="{$a->overview}">Огляд плагінів</a>, <a href="{$a->activities}">Керування діяльністю</a> та <a href="{$a->blocks}">Керування блокуванням</a>';
 $string['policyagreed'] = 'Повідомлення про конфіденційність та договір на обробку даних';
 $string['policyagreeddesc'] = 'Я погоджуюся з <a href="{$a}" target="_blank">Угодою про конфіденційність та обробку даних</a>';
 $string['postaladdress'] = 'Поштова адреса';
@@ -106,14 +108,16 @@ $string['registeredsites'] = 'Зареєстровані сайти';
 $string['registereduserdevices'] = 'Кількість користувачів із зареєстрованими мобільними пристроями ({$a})';
 $string['registerwithmoodleorg'] = 'Зареєструйте ваш сайт';
 $string['registerwithmoodleorgcomplete'] = 'Пройдіть реєстрацію свого сайту';
-$string['registerwithmoodleorginfo'] = 'Ми хотіли б залишатися на зв’язку та надавати вам важливі речі для вашого сайту Moodle! Пройшовши реєстрацію:
-* Ви можете підписатися на отримання сповіщень про нові випуски Moodle, попередження про безпеку та інші важливі новини.
-* Ви можете отримати доступ та активувати мобільні push-повідомлення зі свого сайту Moodle через наш безкоштовний додаток Moodle.
-* Ви вносите в нашу статистику Moodle всесвітньої спільноти, яка допомагає нам покращити Moodle та наші сайти спільноти.
-* За бажанням ваш сайт може бути включений до списку зареєстрованих Moodle-сайтів у вашій країні.';
+$string['registerwithmoodleorginfo'] = 'Реєстрація вашого сайту передбачає періодичне надсилання <a href="{$a->moreinformation}" class="focus-expand">анонімної статистики сайту</a> до головного офісу Moodle. Це допомагає нам отримати уявлення про те, як ви використовуєте Moodle, і приймати рішення щодо нових функцій і плагінів.
+
+Крім того, це дає вам змогу:
+
+* Будьте в курсі важливих оновлень, як-от сповіщень системи безпеки та нових доступних випусків.
+* Активуйте мобільні push-сповіщення для <a href="{$a->moodleapp}">програми Moodle</a>.
+* Збільште видимість свого сайту, включивши його до списку зареєстрованих сайтів Moodle у вашій країні (необов’язково).';
 $string['registerwithmoodleorginfoapp'] = 'Про додаток Moodle';
-$string['registerwithmoodleorginfosites'] = 'Інші сайти в моїй країні';
-$string['registerwithmoodleorginfostats'] = 'Статистика Moodle';
+$string['registerwithmoodleorginfosites'] = 'Відкрийте для себе інші сайти в моїй країні';
+$string['registerwithmoodleorginfostats'] = 'Перегляньте глобальну статистику Moodle';
 $string['registerwithmoodleorgremove'] = 'Ви збираєтеся скасувати реєстрацію свого сайту. Ви більше не отримуватимете сповіщення системи безпеки, а користувачі не зможуть отримувати push-повідомлення з вашого сайту в свою програму Moodle. Однак ви зможете перереєструватися в будь-який час! Ви впевнені, що хочете продовжити?';
 $string['registerwithmoodleorgupdate'] = 'Оновіть реєстрацію свого сайту';
 $string['registrationconfirmed'] = 'Реєстрацію сайту підтверджено';
@@ -146,6 +150,27 @@ $string['sitelang'] = 'Мова';
 $string['sitelang_help'] = 'Яка основна мова використовується на вашому сайті Moodle?';
 $string['sitename'] = 'Назва';
 $string['sitename_help'] = 'Назва вашого сайту буде показана в списку сайтів.';
+$string['siteorganisationtype'] = 'Тип організації';
+$string['siteorganisationtype:charityornotforprofit'] = 'Благодійність чи неприбутковість';
+$string['siteorganisationtype:charterschool'] = 'Чартерна школа';
+$string['siteorganisationtype:college'] = 'Коледж';
+$string['siteorganisationtype:collegedepartment'] = 'Кафедра коледжу';
+$string['siteorganisationtype:commercialcourseprovider'] = 'Провайдер комерційних курсів';
+$string['siteorganisationtype:companydepartment'] = 'Відділ компанії';
+$string['siteorganisationtype:companyinternal'] = 'Внутрішня компанія';
+$string['siteorganisationtype:donotshare'] = 'Не діліться';
+$string['siteorganisationtype:government'] = 'Уряд';
+$string['siteorganisationtype:highschool'] = 'Середня школа';
+$string['siteorganisationtype:highschooldepartment'] = 'Кафедра середньої школи';
+$string['siteorganisationtype:highschooldistrict'] = 'Район середньої школи';
+$string['siteorganisationtype:hospital'] = 'Лікарня';
+$string['siteorganisationtype:independentteacher'] = 'Самостійний викладач';
+$string['siteorganisationtype:other'] = 'Інше';
+$string['siteorganisationtype:primaryschool'] = 'Початкова школа';
+$string['siteorganisationtype:schooldistrict'] = 'Шкільний район';
+$string['siteorganisationtype:universitydepartment'] = 'Кафедра університету';
+$string['siteorganisationtype:wholeuniversity'] = 'Цілий університет';
+$string['siteorganisationtype_help'] = 'Надання типу вашої організації допоможе нам краще зрозуміти типи організацій, які використовують Moodle, і їхні потреби.';
 $string['sitephone'] = 'Телефон';
 $string['sitephone_help'] = 'Номер вашого телефону буде доступний тільки адміністратору';
 $string['siteprivacy'] = 'Список сайту';

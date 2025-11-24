@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'ca', version '4.4'.
+ * Strings for component 'auth', language 'ca', version '4.5'.
  *
  * @package     auth
  * @category    string
@@ -34,7 +34,7 @@ $string['auth_changepasswordhelp'] = 'Ajuda de canvi de contrasenya';
 $string['auth_changepasswordhelp_expl'] = 'Mostra l\'ajuda de canvi de contrasenya als usuaris que hagin oblidat la contrasenya {$a}. Aquest ajuda es visualitzarà en lloc de o a més a més de l\'<strong>URL de canvi de contrasenya</strong> o el canvi de contrasenya intern de Moodle.';
 $string['auth_changepasswordurl'] = 'URL de canvi de contrasenya';
 $string['auth_changepasswordurl_expl'] = 'Especifiqueu l\'URL on cal enviar els usuaris que hagin oblidat la contrasenya {$a}. Trieu <strong>No</strong> en <strong>Utilitza la pàgina estàndard de canvi de contrasenya</strong>.';
-$string['auth_changingemailaddress'] = 'Heu sol·licitat un canvi d\'adreça de correu de {$a->oldemail} a {$a->newemail}. Per raons de seguretat, us enviarem un missatge de correu a l\'adreça nova, de manera que puguem confirmar que us pertany. El canvi d\'adreça de correu es farà efectiu tan bon punt obriu l\'enllaç que figura en aquell missatge.';
+$string['auth_changingemailaddress'] = 'Heu sol·licitat un canvi d\'adreça de correu de {$a->oldemail} a {$a->newemail}. Per raons de seguretat, us enviarem un missatge de correu a l\'adreça nova, de manera que puguem confirmar que us pertany. El canvi d\'adreça de correu es farà efectiu tan bon punt obriu l\'enllaç que trobareu en el missatge. L\'enllaç de confirmació expira en 10 minuts.';
 $string['auth_common_settings'] = 'Paràmetres comuns';
 $string['auth_data_mapping'] = 'Mapatge de dades';
 $string['auth_fieldlock'] = 'Bloca valor';
@@ -47,7 +47,7 @@ $string['auth_invalidnewemailkey'] = 'Error: si intenteu confirmar un canvi d\'a
 $string['auth_loginpasswordtoggle'] = 'Commuta la visibilitat de la contrasenya';
 $string['auth_loginpasswordtoggle_desc'] = 'Afegeix una icona al camp de contrasenya de la pantalla d\'inici de sessió que permeti als usuaris mostrar o amagar la contrasenya introduïda.';
 $string['auth_loginrecaptcha'] = 'Habilita reCAPTCHA per iniciar la sessió';
-$string['auth_loginrecaptcha_desc'] = 'Afegeix una confirmació visual/audio al formulari de la pàgina per iniciar la sessió. Això redueix el risc d\'intents d\'inici de sessió injustificats. Vegeu <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a> per saber-ne més.';
+$string['auth_loginrecaptcha_desc'] = 'Afegeix un element de formulari de confirmació visual/àudio a la pàgina de d\'inici de sessió. Això redueix el risc d\'intents il·legítims d\'inici de sessió. Per a més detalls, consulteu <a href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
 $string['auth_multiplehosts'] = 'Podeu especificar diversos ordinadors (p. e.: host1.com; host2.com; host3.com)';
 $string['auth_notconfigured'] = 'El mètode d\'autenticació {$a} no està configurat.';
 $string['auth_outofnewemailupdateattempts'] = 'Heu esgotat els intents d\'actualització de la vostra adreça de correu electrònic. La vostra petició d\'actualització s\'ha cancel·lat.';
@@ -56,13 +56,13 @@ $string['auth_passwordwillexpire'] = 'La vostra contrasenya caducarà d\'aquí a
 $string['auth_remove_delete'] = 'Suprimeix el compte intern';
 $string['auth_remove_keep'] = 'Manté el compte intern';
 $string['auth_remove_suspend'] = 'Suspèn el compte intern';
-$string['auth_remove_user'] = 'Especifiqueu què cal fer amb els comptes d\'usuari interns durant la sincronització en massa, quan l\'usuari ha estat suprimit en la font externa. Només els usuaris amb la inscripció suspesa es restauren automàticament si reapareixen a la font externa.';
+$string['auth_remove_user'] = 'Especifiqueu què cal fer amb els comptes d\'usuari interns durant la sincronització en massa, quan l\'usuari ha estat suprimit a la font externa. Només els usuaris amb la inscripció suspesa es restauren automàticament si reapareixen a la font externa.';
 $string['auth_remove_user_key'] = 'Usuari extern suprimit';
 $string['auth_sync_script'] = 'Sincronització de comptes d\'usuari';
 $string['auth_sync_suspended'] = 'Si s\'habilita, l\'atribut «suspès» s\'utilitzarà per actualitzar l\'estat de suspensió del compte de l\'usuari local.';
 $string['auth_sync_suspended_key'] = 'Sincronitza l\'estat de suspensió de l\'usuari local';
 $string['auth_updatelocal'] = 'Actualitza dades locals';
-$string['auth_updatelocal_expl'] = '<p><b>Actualitza dades locals:</b> si habiliteu aquesta opció, el camp s\'actualitzarà (amb les dades externes d\'autenticació) cada vegada que l\'usuari entri o quan es faci una sincronització d\'usuaris. Els camps definits per actualitzar-se localment haurien d\'estar blocats.</p>';
+$string['auth_updatelocal_expl'] = '<p><b>Actualitza dades locals:</b> si s\'habilita, el camp s\'actualitzarà (amb les dades externes d\'autenticació) cada vegada que l\'usuari entri o quan es faci una sincronització d\'usuaris. Els camps definits per actualitzar-se localment haurien d\'estar blocats.</p>';
 $string['auth_updatelocalfield'] = 'Actualitza les dades locals ({$a})';
 $string['auth_updateremote'] = 'Actualitza dades externes';
 $string['auth_updateremote_expl'] = '<p>Actualitza dades externes:</b> si habiliteu aquesta opció, les dades externes d\'autenticació s\'actualitzaran quan s\'actualitzi el registre de l\'usuari. Els camps s\'haurien de desblocar per permetre l\'edició.</p>';
@@ -76,8 +76,8 @@ $string['authenticationoptions'] = 'Opcions d\'autenticació';
 $string['authinstructions'] = 'Deixeu aquest camp en blanc si voleu mostrar les instruccions d\'inici de sessió per defecte a la pàgina d\'inici de sessió. Si voleu proporcionar instruccions alternatives, introduïu-les aquí.';
 $string['authloginviaemail'] = 'Permet l\'inici de sessió mitjançant el correu electrònic';
 $string['authloginviaemail_desc'] = 'Permet als usuaris utilitzar indistintament el nom d\'usuari i l\'adreça electrònica (mentre sigui única) per iniciar la sessió.';
-$string['auto_add_remote_users'] = 'Afegeix automàticament usuaris remots';
-$string['cannotmapfield'] = 'El camp «{$a->fieldname}» no pot ser mapat, perquè el nom curt «{$a->shortname}» és massa llarg. Per habilitar el mapatge cal reduir el nom curt del camp del perfil fins a {$a->charlimit} caràcters. <a href="{$a->link}">Edita els camps de perfil de l\'usuari</a>';
+$string['auto_add_remote_users'] = 'Afegeix automàticament els usuaris remots';
+$string['cannotmapfield'] = 'El camp «{$a->fieldname}» no pot ser mapat, perquè el seu nom curt «{$a->shortname}» és massa llarg. Per habilitar el mapatge cal reduir el nom curt del camp del perfil fins a {$a->charlimit} caràcters. <a href="{$a->link}">Edita els camps de perfil de l\'usuari</a>';
 $string['changepassword'] = 'URL de canvi de contrasenya';
 $string['changepasswordhelp'] = 'URL de la pàgina de recuperació d\'una contrasenya perduda, la qual s\'enviarà als usuaris per correu electrònic. Pareu esment en que aquest paràmetre no té cap efecte si s\'ha establert una URL de contrasenya oblidada als paràmetres comuns d\'autenticació.';
 $string['chooseauthmethod'] = 'Trieu un mètode d\'autenticació';
@@ -88,11 +88,14 @@ $string['emailchangecancel'] = 'Cancel·la el canvi de correu';
 $string['emailchangepending'] = 'Canvi pendent. Obriu l\'enllaç que us hem enviat a l\'adreça {$a->preference_newemail}.';
 $string['emailnowexists'] = 'L\'adreça de correu electrònic que heu intentat vincular al vostre perfil ha estat assignada a un altre compte des que vau fer la sol·licitud de canvi de correu. Per tant s\'ha cancel·lat aquesta sol·licitud. Podeu tornar a intentar-ho amb una altra adreça.';
 $string['emailupdate'] = 'Actualització de l\'adreça de correu';
-$string['emailupdatemessage'] = '{$a->fullname},
+$string['emailupdatemessage'] = 'Hola, {$a->firstname},
 
 Heu sol·licitat el canvi d\'adreça de correu electrònic del vostre compte d\'usuari a {$a->site}. Obriu l\'enllaç següent amb el vostre navegador per confirmar el canvi:
 
-{$a->url}';
+{$a->url}
+L\'enllaç de confirmació expira en <b>10 minuts</b>.
+
+{$a->supportemail}';
 $string['emailupdatesuccess'] = 'L\'adreça de correu electrònic de l\'usuari <em>{$a->fullname}</em> ha estat actualitzada i ara és <em>{$a->email}</em>.';
 $string['emailupdatetitle'] = 'Confirmació d\'actualització d\'adreça de correu en {$a->site}';
 $string['errormaxconsecutiveidentchars'] = 'La contrasenya ha de contenir almenys {$a} caràcters consecutius.';
@@ -158,6 +161,10 @@ $string['selfregistration_help'] = 'Si seleccioneu un connector d\'autenticació
 $string['settingmigrationmismatch'] = 'S\'han detectat valors no coincidents mentre es corregien els noms de configuració del connector. El connector d\'autenticació «{$a->plugin}»  tenia el paràmetre «{$a->setting}» configurat a «{$a->legacy}» sota el nom antic i a «{$a->current}» sota el nom actual. Aquest últim valor s\'ha definit com a vàlid, però heu de verificar i confirmar que és el valor esperat.';
 $string['sha1'] = 'Resum SHA-1';
 $string['showguestlogin'] = 'Podeu ocultar o mostrar el botó d\'inici de sessió com a visitant a la pàgina d\'inici de sessió.';
+$string['showloginform'] = 'Mostra el formulari d\'inici de sessió manual';
+$string['showloginform_desc'] = 'Si tots els usuaris del lloc web utilitzen un mètode d\'autenticació com ara OAuth 2 que no requereix que introdueixin un nom d\'usuari i una contrasenya, podeu ocultar el formulari d\'inici de sessió manual. Tingueu en compte que els usuaris amb comptes manuals no podran iniciar la sessió.
+
+Si oculteu el formulari d\'inici de sessió manual i no podeu iniciar la sessió, podeu tornar-lo a mostrar mitjançant la línia d\'ordres php admin/cli/cfg.php --name=showloginform --set=1';
 $string['stdchangepassword'] = 'Utilitza la pàgina estàndard de canvi de contrasenya';
 $string['stdchangepassword_expl'] = 'Si el sistema extern d\'autenticació permet canvis de contrasenya per mitjà de Moodle, canvieu aquest paràmetre a Sí. Aquest paràmetre substitueix l\'«URL de canvi de contrasenya».';
 $string['stdchangepassword_explldap'] = 'NOTA: s\'aconsella que utilitzeu LDAP sobre un túnel xifrat SSL (ldaps://) si el servidor LDAP és remot.';

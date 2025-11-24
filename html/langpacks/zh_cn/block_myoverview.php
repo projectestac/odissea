@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'zh_cn', version '4.4'.
+ * Strings for component 'block_myoverview', language 'zh_cn', version '4.5'.
  *
  * @package     block_myoverview
  * @category    string
@@ -93,7 +93,7 @@ $string['title'] = '课程名称';
 $string['viewquickstart'] = '查看快速入门指南';
 $string['zero_default_intro'] = '一旦您注册了课程，它就会显示在此处。';
 $string['zero_default_title'] = '您未加入任何课程';
-$string['zero_nocourses_intro'] = '需要入门帮助吗？请查看 <a href=“{$a->dochref}” title=“{$a->doctitle}” target=“{$a->doctarget}”>Moodle 文档</a>，或使用我们的快速入门指南迈出第一步。';
+$string['zero_nocourses_intro'] = '需要入门帮助吗？请查看 <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Moodle 文档</a>。';
 $string['zero_nocourses_title'] = '创建您的第一门课程';
 $string['zero_request_intro'] = '需要入门帮助吗？查看 <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Moodle 文档</a>或使用我们的 <a href="{$a->quickhref}" title="{$a->quicktitle}" target="{$a->quicktarget}">快速入门指南</a>。';
 $string['zero_request_title'] = '申请您的第一门课程';

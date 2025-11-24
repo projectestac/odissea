@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_gismo', language 'ca', version '4.4'.
+ * Strings for component 'block_gismo', language 'ca', version '4.5'.
  *
  * @package     block_gismo
  * @category    string
@@ -31,3 +31,4 @@ $string['exit'] = 'Surt';
 $string['print'] = 'Imprimeix';
 $string['resources'] = 'Recursos';
 $string['save'] = 'Desa';
+$string['timeline'] = 'Cronologia';

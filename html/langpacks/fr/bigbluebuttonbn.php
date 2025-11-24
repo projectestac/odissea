@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'fr', version '4.4'.
+ * Strings for component 'bigbluebuttonbn', language 'fr', version '4.5'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -41,6 +41,7 @@ $string['bigbluebuttonbn:join'] = 'Rejoindre une salle BigBlueButton';
 $string['bigbluebuttonbn:managerecordings'] = 'Gérer les enregistrements';
 $string['bigbluebuttonbn:protectrecordings'] = 'Protéger des enregistrements';
 $string['bigbluebuttonbn:publishrecordings'] = 'Publier des enregistrements';
+$string['bigbluebuttonbn:seepresentation'] = 'Toujours afficher le fichier de présentation sur la page de l’activité';
 $string['bigbluebuttonbn:unprotectrecordings'] = 'Déprotéger des enregistrements';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'Dépublier des enregistrements';
 $string['bigbluebuttonbn:view'] = 'Voir une salle BigBlueButton';
@@ -199,6 +200,10 @@ $string['config_server_url'] = 'URL du serveur BigBlueButton';
 $string['config_server_url_description'] = 'L’URL de votre serveur BigBlueButton.';
 $string['config_shared_secret'] = 'Secret partagé BigBlueButton';
 $string['config_shared_secret_description'] = 'Le secret de sécurité de votre serveur BigBlueButton.';
+$string['config_showpresentation_default'] = 'Afficher le fichier de présentation sur la page de l’activité';
+$string['config_showpresentation_default_description'] = 'Ce réglage détermine si les étudiants peuvent accéder au fichier de présentation sur la page de l’activité avant la session. Il n’a pas d’effet sur les utilisateurs ayant la capacité « Toujours voir le fichier de présentation sur la page de l’activité »';
+$string['config_showpresentation_editable'] = 'Réglage « Afficher le fichier de présentation sur la page de l’activité »';
+$string['config_showpresentation_editable_description'] = 'Option dans les réglages de l’activité permettant à l’enseignant de choisir d’afficher le fichier de présentation aux étudiants.';
 $string['config_uidelegation_enabled'] = 'La délégation de l’interface utilisateur est activée';
 $string['config_uidelegation_enabled_description'] = 'Ces réglages activent ou désactivent la délégation d’interface utilisateur au serveur BigBlueButton.';
 $string['config_userlimit'] = 'Limite d’utilisateurs';
@@ -215,7 +220,7 @@ $string['config_waitformoderator'] = 'Attendre un modérateur';
 $string['config_waitformoderator_cache_ttl'] = 'Cache TTL de la fonction « Attendre un modérateur »';
 $string['config_waitformoderator_cache_ttl_description'] = 'Pour supporter une charge importante de clients, ce plugin utilise un cache. Ce paramètre définit la durée pendant laquelle le cache sera conservé avant que la prochaine requête soit envoyée au serveur BigBlueButton.';
 $string['config_waitformoderator_default'] = 'Attendre un modérateur activé par défaut';
-$string['config_waitformoderator_default_description'] = 'Si ce réglage est activté, le réglage « Attendre un modérateur » est activé par défaut quand une nouvelle salle BigBlueButton est ajoutée.';
+$string['config_waitformoderator_default_description'] = 'Si ce réglage est activé, le réglage « Attendre un modérateur » est activé par défaut quand une nouvelle salle BigBlueButton est ajoutée.';
 $string['config_waitformoderator_description'] = 'Ces réglages sont spécifiques à cette fonctionnalité';
 $string['config_waitformoderator_editable'] = 'Le réglage « Attendre un modérateur » peut être modifié';
 $string['config_waitformoderator_editable_description'] = 'Si ce réglage est activé, le réglage « Attendre un modérateur » peut être modifié dans les réglages de l’activité BigBlueButton.';
@@ -370,6 +375,7 @@ $string['mod_form_field_recordings_html'] = 'Afficher la table en HTML';
 $string['mod_form_field_recordings_imported'] = 'Afficher uniquement les liens importés';
 $string['mod_form_field_recordings_preview'] = 'Afficher l’aperçu de l’enregistrement';
 $string['mod_form_field_room_name'] = 'Nom de la conférence';
+$string['mod_form_field_showpresentation'] = 'Afficher le fichier de présentation sur la page de l’activité';
 $string['mod_form_field_userlimit'] = 'Limite utilisateurs';
 $string['mod_form_field_userlimit_help'] = 'Limite maximum d’utilisateurs dans une réunion. Indiquer 0 pour permettre un nombre illimité d’utilisateurs.';
 $string['mod_form_field_voicebridge'] = 'Conférence vocale [####]';

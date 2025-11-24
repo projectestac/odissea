@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_catalogue', language 'de', version '4.4'.
+ * Strings for component 'block_catalogue', language 'de', version '4.5'.
  *
  * @package     block_catalogue
  * @category    string

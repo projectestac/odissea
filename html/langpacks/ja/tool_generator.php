@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'ja', version '4.4'.
+ * Strings for component 'tool_generator', language 'ja', version '4.5'.
  *
  * @package     tool_generator
  * @category    string
@@ -58,6 +58,9 @@ $string['error_nonexistingcourse'] = '指定されたコースは存在しませ
 $string['error_nopageinstances'] = '選択されたコースにはページモジュールインスタンスがありません。';
 $string['error_notdebugging'] = 'デバッグでDEVELOPERが設定されていないため、このサーバでは利用できません。';
 $string['error_nouserspassword'] = 'テストプランを作成する場合、あなたはconfig.php内に$CFG->tool_generator_users_passwordを設定する必要があります。';
+$string['execute'] = '実行';
+$string['execute_cleanup'] = 'クリーンアップシナリオ';
+$string['execute_scenarios'] = 'テストシナリオ';
 $string['fullname'] = 'テストコース: {$a->size}';
 $string['maketestcourse'] = 'テストコースを作成する';
 $string['maketestplan'] = 'JMeterテストプランを作成する';
@@ -90,6 +93,7 @@ $string['sitesize_4'] = 'XL (~10GB / 1065コース / 作成時間: ~5時間)';
 $string['sitesize_5'] = 'XXL (~20GB / 4177コース /作成時間: ~10時間)';
 $string['size'] = 'コースサイズ';
 $string['smallfiles'] = 'スモールファイル';
+$string['step_example'] = 'ステップ例:';
 $string['targetcourse'] = 'テストターゲットコース';
 $string['testplanexplanation'] = 'このツールはユーザ認証情報ファイルと共にJMeterテストプランファイルを作成します。
 
@@ -116,7 +120,9 @@ $string['testscenario'] = 'テストシナリオを作成する';
 $string['testscenario_description'] = 'テストシナリオの作成では手動テスト実行に必要なすべての要素を作成するため、限られたフィーチャファイル構文を使用します。';
 $string['testscenario_errorparsing'] = 'フィーチャファイル構文解析エラー: {$a}';
 $string['testscenario_file'] = 'フィーチャファイル';
-$string['testscenario_filedesc'] = 'アップロードフィーチャファイルにはcore_data_generatorステップを含むシナリオのみを含めることができます。まだシナリオアウトラインとの互換性はありません。すべてのシナリオは一度に実行されますが、バックグラウンドステップは無視されます。';
+$string['testscenario_filedesc'] = 'アップロードフィーチャファイルにはcore_data_generatorステップを含むシナリオまたはseleniumを必要としない特定のステップのみを含めることができます。すべてのシナリオは「@cleanup」タグを持つものを除いて一度に実行されます。';
+$string['testscenario_filedesc_cleanup'] = '@cleanupタグが付いたシナリオは「Execute 」設定が 「Cleanup 」に設定されている場合のみ実行されます。CLIでクリーンアップを実行するには「-cleanup」オプションを使用してください。';
+$string['testscenario_filedesc_list'] = 'これはテストシナリオ機能ファイルで使用できるステップのリストです:';
 $string['testscenario_invalidfile'] = 'ファイルフォーマットが有効でないか、無効なステップが含まれています。';
 $string['testscenario_invalidstep'] = '不明なステップです。テストシナリオの作成はジェネレータステップのみを受け入れます。';
 $string['testscenario_nosteps'] = 'ファイル内には実行するステップがありません。';

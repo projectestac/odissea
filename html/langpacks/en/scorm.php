@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'en', version '4.4'.
+ * Strings for component 'scorm', language 'en', version '4.5'.
  *
  * @package     scorm
  * @category    string
@@ -38,6 +38,7 @@ $string['aicchacptimeout_desc'] = 'Length of time in minutes that an external AI
 $string['aiccuserid'] = 'AICC pass numeric user id';
 $string['aiccuserid_desc'] = 'The AICC standard for usernames is very restrictive compared with Moodle, and allows for alphanumeric characters, dash and underscore only. Periods, spaces and the @ symbol are not permitted. If enabled, user ID numbers are passed to the AICC package instead of usernames.';
 $string['aliasonly'] = 'When selecting an imsmanifest.xml file from a repository you must use an alias/shortcut for this file.';
+$string['allattempts'] = 'All SCORM attempts';
 $string['allowapidebug'] = 'Activate API debug and tracing (set the capture mask with apidebugmask)';
 $string['allowtypeaicchacp'] = 'Enable external AICC HACP';
 $string['allowtypeaicchacp_desc'] = 'If enabled this allows AICC HACP external communication without requiring user login for post requests from the external AICC package';
@@ -60,7 +61,7 @@ $string['attemptstatusmy'] = 'Dashboard only';
 $string['attemptsx'] = '{$a} attempts';
 $string['attr_error'] = 'Bad value for attribute ({$a->attr}) in tag {$a->tag}.';
 $string['autocommit'] = 'Auto-commit';
-$string['autocommit_help'] = 'If enabled, SCORM data is automaticaly saved to the database. Useful for SCORM objects which do not save their data regularly.';
+$string['autocommit_help'] = 'If enabled, SCORM data is automatically saved to the database. This is useful for SCORM objects which do not save their data regularly.';
 $string['autocommitdesc'] = 'Automatically save SCORM data if the SCORM package does not save it.';
 $string['autocontinue'] = 'Auto-continue';
 $string['autocontinue_help'] = 'If enabled, subsequent learning objects are launched automatically, otherwise the Continue button must be used.';

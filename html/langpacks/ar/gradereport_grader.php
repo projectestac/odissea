@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'ar', version '4.4'.
+ * Strings for component 'gradereport_grader', language 'ar', version '4.5'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -33,9 +33,8 @@ $string['ajaxfailedupdate'] = 'تعذر تحديث [1] لـ [2]';
 $string['ajaxfieldchanged'] = 'الحقل الذي تقوم بتحريره حالياً قد تغير، هل ترغب باستعمال القيمة المحدثة؟';
 $string['aria:dropdowncolumns'] = 'أعمدة مطوية تم العثور عليها';
 $string['cellactions'] = 'إجراءات الخلية';
-$string['clearall'] = 'إخلاء الكل';
 $string['clearsearch'] = 'إخلاء خانة البحث من المستخدمين';
-$string['collapsedcolumns'] = 'الأعمدة المطوية <span class="badge rounded-pill bg-primary text-white ml-1" data-collapse="count">{$a}</span>';
+$string['collapsedcolumns'] = 'الأعمدة المطوية <span class="badge rounded-pill bg-primary text-white ms-1" data-collapse="count">{$a}</span>';
 $string['editingmode_title'] = 'تحرير تقرير المقيِّم';
 $string['eventgradereportviewed'] = 'تقرير مقيم تمت معاينته';
 $string['grader:manage'] = 'إدارة تقرير المقيم';

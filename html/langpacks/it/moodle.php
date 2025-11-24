@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'it', version '4.4'.
+ * Strings for component 'moodle', language 'it', version '4.5'.
  *
  * @package     moodle
  * @category    string
@@ -44,6 +44,7 @@ $string['activityiscurrentlyhidden'] = 'Purtroppo al momento questa attività è
 $string['activitymodule'] = 'Modulo attività';
 $string['activitymodules'] = 'Moduli attività';
 $string['activitynotready'] = 'Attività non ancora pronta';
+$string['activityorresource'] = 'Attività o risorsa';
 $string['activityreport'] = 'Report delle attività';
 $string['activityreports'] = 'Report delle attività';
 $string['activityselect'] = 'Seleziona questa attività per spostarla altrove';
@@ -57,6 +58,7 @@ $string['addadmin'] = 'Aggiungi amministratore';
 $string['addblock'] = 'Aggiungi un blocco';
 $string['addcomment'] = 'Aggiungi un commento...';
 $string['addcondition'] = 'Aggiungi condizione';
+$string['addcontent'] = 'Aggiungi contenuto';
 $string['addcountertousername'] = 'Crea utente aggiungendo un numero al nome utente';
 $string['addcreator'] = 'Aggiungi creatore corsi';
 $string['adddots'] = 'Aggiungi...';
@@ -293,6 +295,7 @@ $string['chooseuser'] = 'Seleziona un utente';
 $string['city'] = 'Città /Località';
 $string['cleaningtempdata'] = 'Eliminazione dati temporanei';
 $string['clear'] = 'Svuota';
+$string['clearall'] = 'Cancella tutto';
 $string['clearfilterrow'] = 'Elimina riga del filtro';
 $string['clearfilters'] = 'Azzera filtri';
 $string['clearsearch'] = 'Elimina le selezioni della ricerca';
@@ -562,15 +565,15 @@ $string['delete'] = 'Elimina';
 $string['deleteablock'] = 'Elimina blocco';
 $string['deleteall'] = 'Elimina tutto';
 $string['deleteallcannotundo'] = 'Elimina tutto - non sarà possibile tornare indietro';
-$string['deleteallcomments'] = 'Elimina tutti i commenti';
-$string['deleteallratings'] = 'Elimina tutte le valutazioni';
+$string['deleteallcomments'] = 'Tutti i commenti';
+$string['deleteallratings'] = 'Tutte le valutazioni';
 $string['deletecategory'] = 'Elimina categoria: {$a}';
 $string['deletecategorycheck'] = 'Sei sicuro di eliminare questa categoria <b>\'{$a}\'</b>?<br />Questa operazione sposterà tutti i corsi nella categoria padre, se esiste, o in quella Generale.';
 $string['deletecategorycheck2'] = 'Prima di eliminare questa categoria, è necessario decidere cosa fare dei corsi e delle sotto categorie che contiene.';
 $string['deletecategoryempty'] = 'Questa categoria è vuota.';
 $string['deletecheck'] = 'Elimino {$a} ?';
 $string['deletecheckfiles'] = 'Se sicuro di eliminare questi file?';
-$string['deletecheckfull'] = 'Sei sicuro di eliminare l\'utente {$a} e tutti i dati associati relativi a iscrizioni, attività, eccetera ?';
+$string['deletecheckfull'] = 'Vuoi davvero eliminare l\'utente {$a}, inclusi dati come i dettagli del profilo, iscrizioni, appartenenza a gruppi e gruppi globali nonché alcuni dati sulle attività dell\'utente?';
 $string['deletechecktype'] = 'Sei sicuro di voler eliminare questo {$a->type}?';
 $string['deletechecktypename'] = 'Sei sicuro di eliminare questo {$a->type} "{$a->name}"?';
 $string['deletecheckwarning'] = 'Stai per eliminare questi file';
@@ -690,7 +693,7 @@ $string['emailagain'] = 'Indirizzo email (ripeti)';
 $string['emailalreadysent'] = 'L\'email di recupero password è già stata inviata. Per favore controlla la tua casella di posta.';
 $string['emailcharset'] = 'Codifica caratteri delle email';
 $string['emailconfirm'] = 'Conferma il tuo account';
-$string['emailconfirmation'] = 'Ciao,
+$string['emailconfirmation'] = 'Gentile {$a->firstname},
 
 è stata richiesta la creazione di un nuovo account su \'{$a->sitename}\' con il tuo indirizzo di posta elettronica.
 
@@ -959,13 +962,13 @@ $string['force'] = 'Forza';
 $string['forcelanguage'] = 'Forza lingua';
 $string['forceno'] = 'Non forzare';
 $string['forcepasswordchange'] = 'Forza il cambiamento della password';
-$string['forcepasswordchange_help'] = 'Obbliga l\'utente a cambiare la propria password al suo primo login.';
+$string['forcepasswordchange_help'] = 'Obbliga l\'utente a cambiare la propria password al suo prossimo login.';
 $string['forcepasswordchangecheckfull'] = 'Sei sicuro di voler obbligare {$a} a cambiare la password ?';
 $string['forcepasswordchangenot'] = 'Non è stato possibile obbligare il cambio della password per {$a}';
 $string['forcepasswordchangenotice'] = 'È necessario cambiare la password per proseguire.';
 $string['forcepasswordresetfailurenotice'] = 'La password attuale non è più conforme ai requisiti. Per assistenza contatta l\'amministratore del server Moodle.
 {$a}';
-$string['forcepasswordresetnotice'] = 'La password attuale non è più conforme ai requisiti. Dovete reimpostarla per poter accedere.<br/>
+$string['forcepasswordresetnotice'] = 'La password attuale non è più conforme ai requisiti. Devi reimpostarla per poter accedere.
     {$a}';
 $string['forcetheme'] = 'Tema obbligato';
 $string['forgotaccount'] = 'Hai dimenticato la password?';
@@ -1012,6 +1015,7 @@ $string['general'] = 'Generale';
 $string['geolocation'] = 'latitudine - longitudine';
 $string['gettheselogs'] = 'Ottieni i log';
 $string['go'] = 'Vai';
+$string['gobacktosite'] = 'Torna al sito';
 $string['gpl'] = 'Copyright (C) dal 1999 di Martin Dougiamas (http://moodle.com)
 
 Questo programma è software libero; è possibile ridistribuirlo e/o modificarlo secondo le condizioni previste dalla licenza GNU General Public License  pubblicata dalla Free Software Foundation, licenza versione 2 oppure (a scelta) una qualsiasi versione successiva.
@@ -1179,6 +1183,8 @@ $string['indicator:userforumstracking'] = 'Evidenziazione dei messaggi dei forum
 $string['indicator:userforumstracking_help'] = 'L\'indicatore rappresenta l\'attivazione o mancata attivazione dell\'evidenziazione dei messaggi dei forum da parte dello studente.';
 $string['info'] = 'Informazioni';
 $string['inprogress'] = 'In svolgimento';
+$string['insertcontentbefore'] = 'Inserisci contenuto prima di \'{$a->activityname}\'';
+$string['insertcontentsection'] = 'Inserisci contenuto nella sezione \'{$a->sectionname}\'';
 $string['insertresourceoractivitybefore'] = 'Inserisci un\'attività o una risorsa prima di \'{$a->activityname}\'';
 $string['institution'] = 'Istituzione';
 $string['instudentview'] = 'nella vista studente';
@@ -1294,6 +1300,7 @@ $string['maximumgradex'] = 'Voto massimo: {$a}';
 $string['maximumshort'] = 'Massimo';
 $string['maximumupload'] = 'Dimensione massima file caricabili';
 $string['maximumupload_help'] = 'La dimensione massima del file consentita per i caricamenti degli studenti nel corso. Inoltre, È possibile limitare ulteriormente la dimensione massima di caricamento per ciascuna attività.';
+$string['maxlengthreached'] = 'È stato raggiunto il limite massimo di caratteri {$a}.';
 $string['maxnumberweeks'] = 'Numero massimo di sezioni';
 $string['maxnumberweeks_desc'] = 'Il numero massimo di sezioni presenti nel meni a discesa delle sezioni (si applica solamente ad alcuni formati di corso).';
 $string['maxnumcoursesincombo'] = 'Visualizza <a href="{$a->link}">{$a->numberofcourses} corsi</a>.';
@@ -1460,6 +1467,7 @@ $string['moveselectedcategoriesto'] = 'Sposta categorie selezionate in';
 $string['moveselectedcoursesto'] = 'Sposta i corsi selezionati in...';
 $string['movetoanotherfolder'] = 'Sposta in un\'altra cartella';
 $string['moveup'] = 'Sposta in alto';
+$string['multipleitemsfound'] = 'Sono stati trovati {$a} elementi';
 $string['mustchangepassword'] = 'La nuova password deve essere diversa dall\'attuale.';
 $string['mustconfirm'] = 'È necessario confermare l\'account';
 $string['mycourses'] = 'I miei corsi';
@@ -1566,6 +1574,7 @@ $string['nofiltersapplied'] = 'Nessun filtro applicato';
 $string['nograde'] = 'Senza valutazione';
 $string['nohelpforactivityorresource'] = 'Non è presente un help associato a questa risorsa o attività';
 $string['noimagesyet'] = 'Nessuna immagine è stata ancora trasferita sul server';
+$string['noitemsfound'] = 'Non sono stati trovati elementi.';
 $string['nologsfound'] = 'Non ci sono log da visualizzare';
 $string['nomatchingusers'] = 'Non è stato trovato nessun utente che corrisponda al criterio di ricerca \'{$a}\'';
 $string['nomorecourses'] = 'Non possono essere trovati altri corsi corrispondenti';
@@ -1640,6 +1649,7 @@ $string['numyears'] = '{$a} anni';
 $string['ok'] = 'OK';
 $string['oldpassword'] = 'Password attuale';
 $string['olduserdirectory'] = 'Questa è la VECCHIA cartella utenti, e non è più necessaria. La puoi tranquillamente eliminare. Tutti i file che contiene sono stati copiati nella NUOVA cartella utenti.';
+$string['oneitemfound'] = 'È stato trovato 1 elemento.';
 $string['opendrawerblocks'] = 'Apri il cassetto del blocco';
 $string['opendrawerindex'] = 'Apri indice del corso';
 $string['opensinnewwindow'] = 'Apri in una nuova finestra';
@@ -1854,6 +1864,7 @@ $string['remoteappuser'] = 'Utente remoto di {$a}';
 $string['remove'] = 'Rimuovi';
 $string['removeadmin'] = 'Rimuovi amministratore';
 $string['removecreator'] = 'Rimuovi creatore di corsi';
+$string['removed'] = 'Rimosso {$a}';
 $string['removestudent'] = 'Rimuovi studente';
 $string['removeteacher'] = 'Rimuovi docente';
 $string['rename'] = 'Rinomina';
@@ -1873,13 +1884,19 @@ $string['resendemail'] = 'Invia di nuovo l\'email di conferma';
 $string['reset'] = 'Reset';
 $string['resetcomponent'] = 'Componente';
 $string['resetcourse'] = 'Reset corso';
-$string['resetinfo'] = 'Elimina tutti i dati utente e ripristina il corso al suo stato originale, mantenendo intatte le attività e le impostazioni.';
-$string['resetnotimplemented'] = 'Reset non effettuato';
+$string['resetcourseconfirm'] = 'Reimpostare il corso?';
+$string['resetcoursewarning'] = 'Sei sicuro di reimpostare il corso \'{$a}\'?
+<br/><br/>
+Saranno eliminati i dati selezionati e il corso sarà ripristinato al suo stato originale. L\'azione non potrà essere annullata.';
+$string['resetinfo'] = 'Elimina tutti i dati utente e ripristina il corso al suo stato originale, mantenendo intatte le attività del corso e le relative impostazioni.';
+$string['resetinfoselect'] = 'Selezionare dalle categorie seguenti i dati che si desidera eliminare o reimpostare:';
+$string['resetnotimplemented'] = 'Reset non suportato';
+$string['resetnotimplementedinfo'] = 'Le seguenti attività non possono essere resettate:';
 $string['resetrecordexpired'] = 'Il link di recupero password è scaduto da più di {$a} minuti. Per favore avvia nuovamente la procedura di recupero password.';
 $string['resetstartdate'] = 'Data inizio reset';
 $string['resetstatus'] = 'Stato';
 $string['resettable'] = 'Reimposta preferenze tabella';
-$string['resettask'] = 'Elaborazione';
+$string['resettask'] = 'Reset';
 $string['resettodefaults'] = 'Reimposta i valori standard';
 $string['resortcourses'] = 'Ordina corsi';
 $string['resortsubcategoriesby'] = 'Ordinamento crescente sotto categorie per {$a}';
@@ -2041,6 +2058,9 @@ $string['senddetails'] = 'Invia i miei dati via email';
 $string['sent'] = 'Inviato';
 $string['separate'] = 'Separato';
 $string['separateandconnected'] = 'Stile di apprendimento Separato e Collegato';
+$string['separateandconnected1'] = 'Apprendimento prevalentemente separato';
+$string['separateandconnected2'] = 'Apprendimento sia separato sia collegato';
+$string['separateandconnected3'] = 'Apprendimento prevalentemente collegato';
 $string['separateandconnectedinfo'] = 'Scala basata sulla teoria della conoscenza isolata e della conoscenza collegata. La teoria descrive due modi differenti con i quali possiamo valutare e imparare le cose che vediamo e che sentiamo.<ul>
 <li>Il <strong>Conoscitore isolato</strong> preferisce rimanere il più obiettivo possibile senza tener conto dei propri sentimenti e delle proprie emozioni. Durante una discussione con persone che hanno idee diverse, gli piace difendere le proprie, usando la logica per trovare difetti nelle idee altrui.
 <li>Il <strong>Conoscitore collegato</strong> è più disponibile verso le altre persone. È in grado di comunicare meglio e tende ad ascoltare e porre domande finché entra in sintonia e  "capisce le cose dal punto di vista degli altri". Impara cercando di condividere le esperienze che hanno portato alla conoscenza che ha trovato negli altri.</li></ul>';
@@ -2198,6 +2218,7 @@ $string['statswrites'] = 'Interventi';
 $string['status'] = 'Stato';
 $string['statuschecks'] = 'Verifiche di stato';
 $string['statuscritical'] = 'Critico';
+$string['statusdone'] = 'Fatto';
 $string['statuserror'] = 'Errore';
 $string['statusinfo'] = 'Informazione';
 $string['statusna'] = 'N/D';
@@ -2213,6 +2234,7 @@ $string['subcategory'] = 'Sottocategoria';
 $string['subcategoryof'] = 'Sottocategoria di {$a}';
 $string['subject'] = 'Oggetto';
 $string['submit'] = 'Invia';
+$string['subsectionmoveerror'] = 'Non è possibile spostare questa sottosezione su un\'altra sottosezione';
 $string['success'] = 'Operazione eseguita correttamente';
 $string['successduration'] = 'Operazione completata correttamente ({$a} secondi)';
 $string['summary'] = 'Introduzione';

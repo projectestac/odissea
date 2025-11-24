@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'zh_cn', version '4.4'.
+ * Strings for component 'completion', language 'zh_cn', version '4.5'.
  *
  * @package     completion
  * @category    string
@@ -143,12 +143,13 @@ $string['csvdownload'] = '以电子表格格式（UTF-8.csv）下载';
 $string['datepassed'] = '通过日期';
 $string['days'] = '天数';
 $string['daysoftotal'] = '{$a->days}天，总共有 {$a->total}天';
+$string['daystakingcourse'] = '课程时间';
 $string['daysuntilcompletion'] = '完成时间';
 $string['defaultactivitycompletioncourse'] = '这些是本课程中活动的默认完成条件';
 $string['defaultactivitycompletionsite'] = '这些是所有课程中活动的默认完成条件';
 $string['defaultcompletion'] = '默认的活动完成设置';
 $string['defaultcompletionupdated'] = '修改已经保存';
-$string['deletecompletiondata'] = '删除已完成数据';
+$string['deletecompletiondata'] = '完成数据';
 $string['dependencies'] = '依赖条件';
 $string['dependenciescompleted'] = '完成其它课程';
 $string['detail_desc:receivegrade'] = '获得等级';

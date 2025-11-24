@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'nl', version '4.4'.
+ * Strings for component 'bigbluebuttonbn', language 'nl', version '4.5'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -41,6 +41,7 @@ $string['bigbluebuttonbn:join'] = 'Neem deel aan een BigBlueButton sessie';
 $string['bigbluebuttonbn:managerecordings'] = 'Beheeropnames';
 $string['bigbluebuttonbn:protectrecordings'] = 'Opnames beveiligen';
 $string['bigbluebuttonbn:publishrecordings'] = 'Opnames publiceren';
+$string['bigbluebuttonbn:seepresentation'] = 'Bekijk het presentatiebestand altijd op de activiteitenpagina';
 $string['bigbluebuttonbn:unprotectrecordings'] = 'Beveilig opnames ongedaan maken';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'Publicatie van opnames ongedaan maken';
 $string['bigbluebuttonbn:view'] = 'Bekijk een BigBlueButton ruimte';
@@ -202,6 +203,10 @@ $string['config_server_url'] = 'BigBlueButton Server URL';
 $string['config_server_url_description'] = 'De URL van je BibBlueButton-server';
 $string['config_shared_secret'] = 'BigBlueButton geheime sleutel';
 $string['config_shared_secret_description'] = 'De geheime sleutel van je BigBlueButton server.';
+$string['config_showpresentation_default'] = 'Toon het presentatiebestand op de activiteitenpagina';
+$string['config_showpresentation_default_description'] = 'Moeten leerlingen voor de sessie toegang hebben tot het presentatiebestand? Deze instelling heeft geen invloed op gebruikers met de mogelijkheid \'Altijd het presentatiebestand op de activieteitspagina zien\'.';
+$string['config_showpresentation_editable'] = 'Optie \'Toon presentatiebestand op de activiteitenpagina\'';
+$string['config_showpresentation_editable_description'] = 'Optie in de activiteitsinstellingen voor leraren om te kiezen of het presentatiebestand aan leerlingen getoond wordt.';
 $string['config_uidelegation_enabled'] = 'UI-delegatie is ingeschakeld';
 $string['config_uidelegation_enabled_description'] = 'Deze instellingen schakelen de delegatie van de gebruikersinterface naar de BigBlueButton-server in of uit.';
 $string['config_userlimit'] = 'Gebruikerslimiet';
@@ -374,6 +379,7 @@ $string['mod_form_field_recordings_html'] = 'Toon de tabel in gewone HTML';
 $string['mod_form_field_recordings_imported'] = 'Toon alleen geïmporteerde links';
 $string['mod_form_field_recordings_preview'] = 'Toon voorbeeldweergave van opname';
 $string['mod_form_field_room_name'] = 'Naam van de ruimte';
+$string['mod_form_field_showpresentation'] = 'Toon presentatiebestand op de activiteitspagina';
 $string['mod_form_field_userlimit'] = 'Gebruikerslimiet';
 $string['mod_form_field_userlimit_help'] = 'Maximaal aantal toegestane gebruikers in een sessie. Indien ingesteld op 0 is het aantal gebruikers onbeperkt.';
 $string['mod_form_field_voicebridge'] = 'Voice bridge [####]';

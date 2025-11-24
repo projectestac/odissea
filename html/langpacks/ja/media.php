@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media', language 'ja', version '4.4'.
+ * Strings for component 'media', language 'ja', version '4.5'.
  *
  * @package     media
  * @category    string
@@ -27,15 +27,15 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['audioextensions'] = 'オーディオ {$a}';
 $string['defaultheight'] = 'デフォルトの高さ';
-$string['defaultheightdesc'] = '高さが指定されずプレイヤが実際のビデオの高さを取得できない場合のメディアプレイヤの高さです。';
+$string['defaultheightdesc'] = 'メディアプレイヤの高さ (高さが指定されていない場合でプレイヤが実際のメディアファイルの高さを判別できない場合) です。';
 $string['defaultwidth'] = 'デフォルトの幅';
 $string['defaultwidthdesc'] = '幅が指定されずプレイヤが実際のビデオの幅を取得できない場合のメディアプレイヤの幅です。';
 $string['extensions'] = '拡張子: {$a}';
 $string['managemediaplayers'] = 'メディアプレイヤを管理する';
 $string['mediaformats'] = '利用可能なプレイヤ';
-$string['mediaformats_desc'] = 'プレイヤが有効にされた場合、マルチメディアプラグインフィルタ (有効にされた場合)、ファイルまたは埋め込みオプションを設定したURLリソースによって、メディアファイルを埋め込むことができます。有効にされていない場合、これらのフォーマットは埋め込まれません。同時にユーザは手動でダウンロードまたはこれらのリソースのリンクをたどることができます。
+$string['mediaformats_desc'] = 'プレイヤが有効にされている場合、メディアファイルはマルチメディアプラグインフィルタ (有効にされている場合) またはファイルまたはURLリソースを使用して埋め込むことができます。有効にされていない場合、これらのフォーマットは埋め込まれません。また、ユーザはこれらのリソースをダウンロードまたはリンクをフォローできます。
 
-2つのプレイヤが同じフォーマットをサポートする場合、両方を有効にすることにより、モバイルフォン等、異なるデバイスでの互換性が増します。単一のオーディオまたはビデオクリップに対して異なるフォーマットのファイルを複数提供することにより、互換性を増すことができます。';
+2つのプレイヤが同じフォーマットをサポートする場合、両者を有効にすることでモバイルフォン等の異なるデバイスでの互換性が増します。単一のオーディオまたはビデオクリップに対して異なるフォーマットのファイルを複数提供することで互換性を増すことができます。';
 $string['privacy:metadata'] = 'メディア埋め込みはいかなる個人データも保存しません。';
 $string['supports'] = 'サポート';
 $string['videoextensions'] = 'ビデオ {$a}';

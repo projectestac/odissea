@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_infectedfiles', language 'ca', version '4.4'.
+ * Strings for component 'report_infectedfiles', language 'ca', version '4.5'.
  *
  * @package     report_infectedfiles
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['author'] = 'Autor/a';
+$string['author'] = 'Autor o autora';
 $string['confirmdelete'] = 'Segur que voleu esborrar aquest fitxer?';
 $string['confirmdeleteall'] = 'Segur que voleu esborrar tots els fitxers?';
 $string['confirmdownload'] = 'Segur que voleu baixar aquest fitxer?';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'es', version '4.4'.
+ * Strings for component 'user', language 'es', version '4.5'.
  *
  * @package     user
  * @category    string
@@ -25,25 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcondition'] = 'Agregar condición';
-$string['adverbfor_and'] = 'y';
-$string['adverbfor_andnot'] = 'y';
-$string['adverbfor_or'] = 'o';
-$string['applyfilters'] = 'Aplicar filtros';
-$string['clearfilterrow'] = 'Eliminar filtro de fila';
-$string['clearfilters'] = 'Limpiar filtros';
-$string['clearfilterselection'] = 'Eliminar "{$a}" del filtro';
 $string['countparticipantsfound'] = '{$a} participantes encontrados';
 $string['filterbykeyword'] = 'Palabra clave';
-$string['filterrowlegend'] = 'Filtro {$a}';
-$string['filtersetmatchdescription'] = 'Cómo se deben combinar varios filtros';
-$string['filtertype'] = 'Tipo de filtro';
-$string['match'] = 'Coincidir';
-$string['matchofthefollowing'] = 'de los siguientes:';
 $string['moodlenetprofile'] = 'ID perfil MoodleNet';
 $string['moodlenetprofile_help'] = 'Su ID perfil MoodleNet enlaza su perfil MoodleNet con este sitio.';
 $string['placeholdertype'] = 'Escriba...';
-$string['placeholdertypeorselect'] = 'Escriba o seleccione...';
 $string['privacy:courserequestpath'] = 'Cursos solicitados';
 $string['privacy:descriptionpath'] = 'Descripción de perfil';
 $string['privacy:devicespath'] = 'Dispositivos de usuario';
@@ -149,7 +135,6 @@ $string['privacy:passwordresetpath'] = 'Restablecimientos de contraseña';
 $string['privacy:privatefilespath'] = 'Archivos privados';
 $string['privacy:profileimagespath'] = 'Imágenes de perfil';
 $string['privacy:sessionpath'] = 'Datos de la sesión';
-$string['selectfiltertype'] = 'Seleccionar';
 $string['supportmessagealternative'] = 'Puede enviar un correo a {$a}.';
 $string['supportmessagenotsent'] = 'Lamentablemente su mensaje no ha podido enviarse.';
 $string['supportmessagesent'] = 'Su mensaje se envió.';

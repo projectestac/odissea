@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'pt', version '4.4'.
+ * Strings for component 'blog', language 'pt', version '4.5'.
  *
  * @package     blog
  * @category    string
@@ -71,7 +71,7 @@ $string['configuseexternalblogs'] = 'Permite que os utilizadores definam listas 
 $string['courseblog'] = 'Blogue da disciplina: {$a}';
 $string['courseblogdisable'] = 'Os blogues de disciplina não se encontram ativos';
 $string['courseblogs'] = 'Os utilizadores só podem ver blogues de pessoas com quem partilham uma disciplina';
-$string['deleteblogassociations'] = 'Apagar associações entre blogues';
+$string['deleteblogassociations'] = 'Associações a blogue';
 $string['deleteblogassociations_help'] = 'Se ativar esta opção, as entradas do blogue deixarão de estar associadas a esta disciplina ou a quaisquer atividades ou recursos. As entradas do blogue não serão apagadas.';
 $string['deleteentry'] = 'Apagar mensagem';
 $string['deleteexternalblog'] = 'Cancelar o registo deste blogue externo';

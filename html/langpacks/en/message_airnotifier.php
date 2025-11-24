@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'en', version '4.4'.
+ * Strings for component 'message_airnotifier', language 'en', version '4.5'.
  *
  * @package     message_airnotifier
  * @category    string

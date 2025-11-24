@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'ja', version '4.4'.
+ * Strings for component 'quiz_overview', language 'ja', version '4.5'.
  *
  * @package     quiz_overview
  * @category    string
@@ -60,6 +60,17 @@ $string['privacy:metadata:preference:quiz_overview_slotmarks'] = 'それぞれ�
 $string['privacy:preference:slotmarks:no'] = '問題スロットの横に評点は表示されません。';
 $string['privacy:preference:slotmarks:yes'] = '問題スロットの横に評点が表示されます。';
 $string['regrade'] = '再評定';
+$string['regrade_allattempts'] = 'すべての受験';
+$string['regrade_allquestions'] = 'すべての問題';
+$string['regrade_attempts'] = '受験を再評定する ...';
+$string['regrade_commitregrade'] = '再評定を送信する';
+$string['regrade_dryrun'] = 'ドライラン';
+$string['regrade_help'] = '再評定では可能な限りそれぞれの問題の最新バージョンを使用して受験の自動評定を再計算します。ドライランでは受験に影響を与えることなく、評点の変更をプレビューできます。';
+$string['regrade_link'] = 'Quiz_grades_report#Re-grading_attempts';
+$string['regrade_regradeneedednotificationmessage'] = '最後の再評定のドライランでは再評定が {$a->attempts} 回の受験の {$a->questions} 問題の評点を変更することがわかりました。';
+$string['regrade_regradenow'] = '再評定する';
+$string['regrade_selectedattempts'] = '選択済み受験';
+$string['regrade_selectedquestions'] = '選択済み問題';
 $string['regradeall'] = 'すべてを再評定する';
 $string['regradealldry'] = '完全な再評定を予行練習する';
 $string['regradealldrydo'] = '再評定が必要だとマークされた受験 ({$a}) を再評定する';

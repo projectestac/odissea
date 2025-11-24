@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'pt', version '4.4'.
+ * Strings for component 'data', language 'pt', version '4.5'.
  *
  * @package     data
  * @category    string
@@ -29,8 +29,6 @@ $string['action'] = 'Ação';
 $string['actionsmenu'] = 'Menu de Ações';
 $string['add'] = 'Adicionar registo';
 $string['addcomment'] = 'Adicionar comentário';
-$string['addedby'] = 'Adicionado por';
-$string['addentries'] = 'Adicionar registos';
 $string['addtemplate'] = 'Modelo de adicionar registo';
 $string['advancedsearch'] = 'Pesquisa avançada';
 $string['allowcomments'] = 'Permitir comentários aos registos';
@@ -55,8 +53,6 @@ Os marcadores para os campos são definidos no formato <b>[[nomedocampo]]</b>. T
 Apenas os marcadores que estão na lista <b>Marcadores disponíveis</b> podem ser usados no modelo atual.';
 $string['availabletodate'] = 'Disponível até';
 $string['availabletodatevalidation'] = '"Disponível até" não pode ser anterior a "Disponível a partir de".';
-$string['blank'] = 'Em branco';
-$string['buttons'] = 'Botões';
 $string['bynameondate'] = 'por {$a->name} - {$a->date}';
 $string['calendarend'] = 'Fecha \'{$a}\'';
 $string['calendarstart'] = 'Abre \'{$a}\'';
@@ -126,13 +122,13 @@ $string['defaultfieldenclosure'] = '(não existe valor predefinido)';
 $string['defaultsortfield'] = 'Campo de ordenação predefinido';
 $string['delcheck'] = 'Caixa de seleção de exclusão';
 $string['delete'] = 'Apagar';
-$string['deleteallentries'] = 'Apagar todos os registos';
+$string['deleteallentries'] = 'Todos os registos';
 $string['deletecomment'] = 'Tem a certeza de que pretende apagar este comentário?';
 $string['deleteconfirm'] = 'Apagar o protótipo \'{$a}\'?';
 $string['deleted'] = 'apagado(s)';
 $string['deleteentry'] = 'Apagar registo';
 $string['deletefield'] = 'Apagar campo';
-$string['deletenotenrolled'] = 'Apagar registos criados por utilizadores que não estão inscritos';
+$string['deletenotenrolled'] = 'Registos criados por utilizadores não inscritos';
 $string['deletewarning'] = 'Apagar um protótipo remove-o da lista de protótipos disponíveis em todas as disciplinas.';
 $string['descending'] = 'Descendente';
 $string['directorynotapreset'] = '{$a->directory} Não é um protótipo: faltam os ficheiros: {$a->missing_files}';
@@ -333,7 +329,6 @@ $string['nomatch'] = 'Não foram encontrados registos correspondentes!';
 $string['nomaximum'] = 'Não existe máximo';
 $string['nopreviewavailable'] = 'Nenhuma pré-visualização disponível para {$a}';
 $string['norecords'] = 'Ainda não existem registos';
-$string['nosingletemplate'] = 'O modelo do modo registo ainda não foi definido';
 $string['notapproved'] = 'Aprovação pendente';
 $string['notapprovederror'] = 'O registo ainda não foi aprovado.';
 $string['notemplates'] = 'Ainda sem modelos';
@@ -356,7 +351,6 @@ $string['page-mod-data-x'] = 'Qualquer página da atividade Base de Dados';
 $string['pagesize'] = 'Registos por página';
 $string['participants'] = 'Utilizadores';
 $string['picture'] = 'Imagem';
-$string['pleaseaddsome'] = 'Crie campos abaixo ou <a href="{$a}">escolha um protótipo</a> para definir a estrutura da base de dados.';
 $string['pluginadministration'] = 'Administração da Base de dados';
 $string['pluginname'] = 'Base de dados';
 $string['portfolionotfile'] = 'Exportar para portefólio em vez de para ficheiro (apenas CSV e Leap2a)';
@@ -391,7 +385,7 @@ $string['recorddeleted'] = 'Registo apagado';
 $string['recorddisapproved'] = 'Registo não aprovado';
 $string['recordsnotsaved'] = 'Não foram guardados registos. Verifique o formato do ficheiro enviado.';
 $string['recordssaved'] = 'os registos foram guardados';
-$string['removealldatatags'] = 'Apagar todas as tags da base de dados';
+$string['removealldatatags'] = 'Todas as palavras-chave da base de dados';
 $string['requireapproval'] = 'Requer aprovação dos registos';
 $string['requireapproval_help'] = 'Um professor tem de aprovar as entradas antes de ficarem visíveis para todos os utilizadores.';
 $string['required'] = 'Obrigatório';
@@ -428,7 +422,6 @@ $string['saveaspresetmissingcapability'] = 'O utilizador não tem permissão par
 $string['savedataaspreset'] = 'Guardar todos os campos e modelos e publicar como protótipo neste site.';
 $string['savesettings'] = 'Guardar configurações';
 $string['savesuccess'] = 'Protótipo guardado. <a href="{$a->url}">Pré-visualizar protótipo</a>';
-$string['savetemplate'] = 'Guardar modelo';
 $string['search'] = 'Pesquisar';
 $string['search:activity'] = 'Base de dados - informações da atividade';
 $string['search:entry'] = 'Base de dados - registos';
@@ -460,7 +453,6 @@ $string['text'] = 'Texto';
 $string['textarea'] = 'Área de texto';
 $string['timeadded'] = 'Data e hora de criação';
 $string['timemodified'] = 'Data e hora de modificação';
-$string['todatabase'] = 'para esta base de dados.';
 $string['type'] = 'Tipo de campo';
 $string['undefinedprocessactionmethod'] = 'Não foi definido o método de ação em Data_Preset para executar a ação "{$a}".';
 $string['unknown'] = 'Campo desconhecido';

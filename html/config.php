@@ -25,6 +25,9 @@ $CFG->directorypermissions = 00777;
 $CFG->passwordsaltalt1 = '';
 $CFG->passwordsaltmain = 'y7a!Eb019n8Z5*43Sl5J&ly4pjJUk-b';
 
+const CONTEXT_CACHE_MAX_SIZE = 4000;
+const MAX_MODINFO_CACHE_SIZE = 20;
+
 require_once $agora['server']['root'] . '/html/moodle2/site-config.php';
 require_once $agora['server']['root'] . '/html/moodle2/settings.php';
 require_once $agora['server']['root'] . '/html/moodle2/lib/setup.php';

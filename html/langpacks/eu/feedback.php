@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'eu', version '4.4'.
+ * Strings for component 'feedback', language 'eu', version '4.5'.
  *
  * @package     feedback
  * @category    string
@@ -246,13 +246,15 @@ $string['privacy:metadata:valuetmp'] = 'Oraindik amaitu gabeko galderaren erantz
 $string['public'] = 'Publikoa';
 $string['question'] = 'Galdera';
 $string['questionandsubmission'] = 'Galdera eta bidalketen ezarpenak';
+$string['questionmoved'] = 'Galdera mugituta';
 $string['questions'] = 'Galderak';
 $string['questionslimited'] = 'Erakusten soilik lehen {$a} erantzunak, denak ikusteko ikusi banakako erantzunak edo jaitsi datuen taula.';
 $string['radio'] = 'Aukera anizkoitza - erantzun bakarra';
 $string['radio_values'] = 'Erantzunak';
 $string['ready_feedbacks'] = 'Prest dauden inkestak';
 $string['required'] = 'Ezinbestekoa';
-$string['resetting_data'] = 'Berrabiarazi inkestaren erantzunak';
+$string['resetting_data'] = 'Erantzunak';
+$string['resetting_delete'] = 'Ezabatu erantzunak';
 $string['resetting_feedbacks'] = 'Inkestak berrabiarazten';
 $string['response_nr'] = 'Erantzun-kopurua';
 $string['responses'] = 'Erantzunak';

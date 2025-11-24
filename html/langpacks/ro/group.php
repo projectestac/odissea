@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ro', version '4.4'.
+ * Strings for component 'group', language 'ro', version '4.5'.
  *
  * @package     group
  * @category    string
@@ -50,8 +50,8 @@ $string['databaseupgradegroups'] = 'Versiunea grupurilor este în prezent {$a}';
 $string['defaultgrouping'] = 'Grupare implicită';
 $string['defaultgroupingname'] = 'Grupare';
 $string['defaultgroupname'] = 'Grup';
-$string['deleteallgroupings'] = 'Şterge toate grupările';
-$string['deleteallgroups'] = 'Şterge toate grupurile';
+$string['deleteallgroupings'] = 'Toate grupările';
+$string['deleteallgroups'] = 'Toate grupurile';
 $string['deletegroupconfirm'] = 'Sigur doriţi ştergerea grupului \'{$a}\'?';
 $string['deletegrouping'] = 'Şterge grupare';
 $string['deletegroupingconfirm'] = 'Sunteţi sigur că doriţi să ştergeţi gruparea {$a}? (Grupurile din cadrul grupării nu vor fi şterse)';
@@ -198,8 +198,8 @@ $string['random'] = 'Aleatoriu';
 $string['removefromgroup'] = 'Elimină utilizatorul din grup {$a}';
 $string['removefromgroupconfirm'] = 'Ești sigur că vrei să elimini utilizatorul "{$a->user}" din grup "{$a->group}"?';
 $string['removegroupfromselectedgrouping'] = 'Şterge grup din grupare';
-$string['removegroupingsmembers'] = 'Şterge toate grupurile din toate grupările';
-$string['removegroupsmembers'] = 'Şterge toţi membrii grupului';
+$string['removegroupingsmembers'] = 'Toate grupurile din grupări';
+$string['removegroupsmembers'] = 'Toţi membrii grupului';
 $string['removeselectedusers'] = 'Şterge utilizatorii selectaţi';
 $string['selectfromgroup'] = 'Selectează membri din grup';
 $string['selectfromgrouping'] = 'Selectează membri din grupare';

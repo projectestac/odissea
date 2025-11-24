@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'eu', version '4.4'.
+ * Strings for component 'tool_oauth2', language 'eu', version '4.5'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -93,15 +93,18 @@ $string['issuersetup'] = 'OAuth 2 zerbitzu arruntak konfiguratzeko argibide xehe
 $string['issuersetuptype'] = '{$a} OAuth 2 hornitzailea konfiguratzeko argibide xeheak.';
 $string['issuershowonloginpage'] = 'Erakutsi sarbide-orrian.';
 $string['issuershowonloginpage_help'] = 'OAuth autentifikazio-plugina gaituta badago, saio-hasiera emaile hau sarbide-orrian zerrendatuko da erabiltzaileek emaile hau erabiliz saioa hasteko aukera izan dezaten.';
+$string['issuersmtpsystememail'] = 'SMTP helbide elektronikoa';
+$string['issuersmtpsystememail_help'] = 'Zehaztuz gero, helbide elektroniko hau erabiliko da SMTP bitartez e-mailako bidaltzeko sistemako kontu bat konektatzeko. Aukera hau beharrezkoa da OAuth 2 zerbitzu batzuetarako (Microsoft, adibidez). Egiaztatu mesedez zure OAuth 2 zerbitzuaren dokumentazioa kasu horretan aukera hau beharrezkoa den ikusteko.';
 $string['issuersservicesallow'] = 'Baimendu zerbitzuak';
 $string['issuersservicesnotallow'] = 'Ez baimendu zerbitzuak';
 $string['issuerusedforinternal'] = 'Barne-zerbitzuak';
 $string['issuerusedforlogin'] = 'Saio-hasiera';
 $string['issuerusein'] = 'Zerbitzu hau erabiliko da';
-$string['issuerusein_help'] = 'OAuth 2 zerbitzuak zenbait barne-zerbitzutan, saio-hasieran edo bietan erabili daitezke, behar izanez gero.';
+$string['issuerusein_help'] = 'OAuth 2 zerbitzuak zenbait barne-zerbitzutan, saio-hasieran, SMTP XOUATH2 bitartez, edo bietan erabili daitezke, behar izanez gero.';
 $string['issueruseineverywhere'] = 'Saio-hasiera eta barne-zerbitzuak';
 $string['issueruseininternalonly'] = 'Barne-zerbitzuak soilik';
 $string['issueruseinloginonly'] = 'Saio-hasiera soilik';
+$string['issueruseinsmtpwithoauth'] = 'SMTP soilik XOUATH2 bitartez';
 $string['linkedin_service'] = 'LinkedIn';
 $string['logindisplay'] = 'Erakutsi saio-hasiera orrian honela:';
 $string['loginissuer'] = 'Baimendu saioa hastea';

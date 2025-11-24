@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'eu', version '4.4'.
+ * Strings for component 'badges', language 'eu', version '4.5'.
  *
  * @package     badges
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actions'] = 'Ekintzak';
 $string['activate'] = 'Gaitu sarbidea';
-$string['activatesuccess'] = 'Dominetarako sarbidea ondo gaitu da.';
+$string['activatesuccess'] = '\'{$a}\' dominarako sarbidea gaitu da.';
 $string['addalignment'] = 'Gehitu kanpoko trebetasuna edo estandarra';
 $string['addbadge'] = 'Gehitu dominak';
 $string['addbadge_help'] = 'Aukeratu dominarako baldintza honetara gehitu beharreko ikastaro guztiak. Eutsi CTRL teklari hainbat elementu aukeratzeko.';
@@ -40,6 +40,7 @@ $string['addcourse'] = 'Gehitu ikastaroak';
 $string['addcourse_help'] = 'Aukeratu dominarako baldintza honetara gehitu beharreko ikastaro guztiak. Eutsi CTRL teklari hainbat elementu aukeratzeko.';
 $string['addcriteria'] = 'Gehitu irizpidea';
 $string['addcriteriatext'] = 'Irizpideak gehitzen hasteko, mesedez egin aukera zabaltzen den menutik';
+$string['addcriterion'] = 'Gehitu irizpidea';
 $string['addedtobackpack'] = 'Gehitu domina motxilara';
 $string['addrelated'] = 'Gehitu erlazionatutako domina';
 $string['addtobackpack'] = 'Gehitu motxilara';
@@ -79,7 +80,7 @@ $string['attachment_help'] = 'Gaituz gero, jasotzailearen e-mailari domina jaist
 $string['award'] = 'Eman domina';
 $string['awardedto'] = '{$a} erabiltzaileari emana';
 $string['awardedtoyou'] = 'Niri emandakoa';
-$string['awardoncron'] = 'Dominetarako sarbidea modu egokian gaitu da. Erabiltzaile askok irabaz dezakete aldi berean domina hau. Gunea behar bezala ibiltzeko, ekintza hau prozesatzeko denbora-tartetxo bat beharko da.';
+$string['awardoncron'] = 'Erabiltzaile asko \'{$a->badgename}\' domina jasotzen ari dira. Baliteke erabiltzaile guztiek jasotzeko denbora pixka bat igarotzea.';
 $string['awards'] = 'Jasotzaileak';
 $string['backpackapiurl'] = 'Motxilaren APIaren URLa';
 $string['backpackavailability'] = 'Dominaren kanpoko egiaztapena';
@@ -164,6 +165,7 @@ Oharra: jasotzaileak egiaztatzeko, ez aldatu ezarpen hau behin dominak ematen ha
 $string['badgesdisabled'] = 'Dominak ez daude gaituta gune honetan';
 $string['badgesearned'] = 'Lortutako domina-kopurua: {$a}';
 $string['badgesettings'] = 'Dominen ezarpenak';
+$string['badgesnavigation'] = 'Dominen nabigazioa';
 $string['badgestatus_0'] = 'Ez dago eskuragarri';
 $string['badgestatus_1'] = 'Eskuragarri';
 $string['badgestatus_2'] = 'Ez dago eskuragarri (irizpideak blokeatuta)';
@@ -182,6 +184,9 @@ $string['bmessage'] = 'Mezua';
 $string['boverview'] = 'Ikuspegi globala';
 $string['brelated'] = 'Erlazionatutako dominak: ({$a})';
 $string['bydate'] = 'noizko osatua:';
+$string['canvascredentialsprovider'] = 'Canvas Kredentzialak';
+$string['canvasregions'] = 'Canvas Kredentzialen kokapena';
+$string['canvasregions_desc'] = 'Canvas Kredentzialen kokapenen edukiak konfiguratu ditzakezu. Errenkada bakoitza barra bertikal batekin banatzen da eta 1) kokapenaren izena, 2) motxilaren URLa eta 3) motxilaren APIaren URLa eremuak izan behar ditu.';
 $string['claim'] = 'Erreklamatu';
 $string['claimcomment'] = 'Onarpenaren iruzkina';
 $string['claimid'] = 'Erreklamatzeko URLa';
@@ -193,7 +198,7 @@ $string['configuremessage'] = 'Dominaren mezua';
 $string['connect'] = 'Konektatu';
 $string['connected'] = 'Konektatuta';
 $string['connecting'] = 'Konektatzen...';
-$string['contact'] = 'Kontaktua';
+$string['contact'] = 'Emailearen kontaktua';
 $string['contact_help'] = 'Domina-emailearekin lotutako helbide elektroniko bat';
 $string['copy'] = 'Kopiatu';
 $string['copyof'] = '{$a}-ren kopia';
@@ -274,7 +279,7 @@ $string['dateawarded'] = 'Emate-data';
 $string['dateearned'] = 'Data: {$a}';
 $string['day'] = 'Egun';
 $string['deactivate'] = 'Desgaitu sarbidea';
-$string['deactivatesuccess'] = 'Dominetarako sarbidea ondo desgaitu da.';
+$string['deactivatesuccess'] = '\'{$a}\' dominarako sarbidea desgaitu da.';
 $string['defaultissuercontact'] = 'Domina-emailearen helbide elektronikoa';
 $string['defaultissuercontact_desc'] = 'Domina-emailearekin lotutako helbide elektronikoa. Open Badges v2.0 motxila baten kasuan, eremu hau dominak motxilan publikatzean autentifikazioa egiteko erabiltzen da.';
 $string['defaultissuername'] = 'Domina-emailearen izena';
@@ -329,7 +334,7 @@ $string['error:nosuchfield'] = 'Kontuz: erabiltzailearen profil-eremu hau ez dag
 $string['error:nosuchmod'] = 'Kontuz: jarduera hau ez dago eskuragarri.';
 $string['error:nosuchrole'] = 'Kontuz: rol hau ez dago eskuragarri.';
 $string['error:nosuchuser'] = 'Helbide elektroniko hau duen erabiltzaileak ez du oraingo motxila-hornitzailearekin konturik.';
-$string['error:notifycoursedate'] = 'Kontuz: Ikastaro-osaketa eta jarduera-osaketarekin lotutako dominak ez dira ikastaroa hasi arte emango.';
+$string['error:notifycoursedate'] = 'Ikastaro-osaketa eta jarduera-osaketarekin lotutako dominak ez dira ikastaroa hasi arte ({$a}) emango.';
 $string['error:parameter'] = 'Kontuz: gutxinez parametro bat aukeratu behar da domina emateko lan-ildoa ziurtatzeko.';
 $string['error:relatedbadgedoesntexist'] = 'Ez dago domina publikorik Identifikatzaile hau duenik.';
 $string['error:requesterror'] = 'Konexio-eskariak huts egin du (errore-kodea {$a}).';
@@ -381,7 +386,13 @@ $string['imageauthorurl'] = 'Irudiaren egilearen URLa';
 $string['imageauthorurl_help'] = 'Zehaztu gero,  irudia egin duen egilearen web-gunerako esteka dominaren orrian erakutsiko da. URLak http:// edo https:// motako aurrizkia izan behar luke.';
 $string['imagecaption'] = 'Irudi-argazkia';
 $string['imagecaption_help'] = 'Zehaztuz gero, irudi-argazkia dominaren orrian erakutsiko da.';
-$string['includeauthdetails'] = 'Sartu autentifikazio-xehetasunak motxilarekin batera';
+$string['includeauthdetails'] = 'Konektatu motxila-hornitzailearen kontura';
+$string['includeauthdetails_desc'] = 'Idatzi zure motxila-hornitzailearen kredentzialak bertara konektatzeko.';
+$string['includeauthdetails_help'] = 'Esportatutako domina bakoitzarekin batera emailearen informazioa motxila honetara bidaltzen du.';
+$string['includeauthdetailscanvas'] = 'Konektatu Canvas Kredentzialak hornitzailearen kontu batera';
+$string['includeauthdetailscanvas_desc'] = 'Idatzi zure Canvas Kredentzialen xehetasunak zure hornitzailearen kontura konektatzeko.';
+$string['includeauthdetailscanvas_help'] = 'Canvas Kredentzialetara esportatutako dominek zure erakundea erakutsiko dute emaile gisa. Honek dominak jaso dituztenen jarraipena egin eta eguneraketak kudeatzeko aukera ematen du.';
+$string['includeauthdetailscanvas_subtitle'] = '(Ordaindu beharreko Canvas Kredentzialak plana behar du)';
 $string['invalidurl'] = 'URL baliogabea';
 $string['issuancedetails'] = 'Dominaren iraungitzea';
 $string['issuedbadge'] = 'Emandako dominaren informazioa';
@@ -424,10 +435,13 @@ $string['month'] = 'Hilabete';
 $string['moredetails'] = 'Xehetasun gehiago';
 $string['mybackpack'] = 'Nire motxilaren ezarpenak';
 $string['mybadges'] = 'Nire dominak';
+$string['namewithimagelink'] = 'Izena irudia eta estekarekin';
 $string['namewithlink'] = 'Izena estekarekin';
 $string['never'] = 'Inoiz ez';
 $string['newbackpack'] = 'Gehitu motxila berri bat';
 $string['newbadge'] = 'Gehitu domina berria';
+$string['newbadgedeprecated'] = 'badges/newbadge.php orritik berbideratua izan zara. Kontuan izan laster badges/newbadge.php orria kenduko dela.
+<br/>Eguneratu estekak eta laster-markak badges/edit.php orri berria erabiltzeko.';
 $string['newimage'] = 'Irudi berria';
 $string['noalignment'] = 'Dominak ez du kanpoko trebetasun edo estandarrik ezarrita.';
 $string['noawards'] = 'Domina hau ez da oraindik irabazi.';
@@ -469,13 +483,14 @@ $string['notifydaily'] = 'Egunero';
 $string['notifyevery'] = 'Bakoitzean';
 $string['notifymonthly'] = 'Hilabetero';
 $string['notifyweekly'] = 'Astero';
-$string['numawards'] = 'Domina hau <a href="{$a->link}">{$a->count}</a> erabiltzaileri eman zaie.';
-$string['numawardstat'] = 'Domina hau {$a} erabiltzaileri eman zaie.';
+$string['numawards'] = '\'{$a->badgename}\' domina <a href="{$a->link}">{$a->count}</a> erabiltzaileri eman zaie.';
+$string['numawardstat'] = '\'{$a->badgename}\' domina {$a} erabiltzaileri eman zaie.';
 $string['oauth2issuer'] = 'OAuth 2 zerbitzuak';
 $string['openbadgesv1'] = 'Open Badges v1.0';
 $string['openbadgesv2'] = 'Open Badges v2.0';
 $string['openbadgesv2p1'] = 'Open Badges v2.1';
 $string['othernavigation'] = 'Bestelako nabigazioa...';
+$string['otherprovider'] = 'Beste bat';
 $string['overallcrit'] = 'aukeratutako irizpideetatik bete da.';
 $string['password_required'] = 'Pasahitza ezin da hutsik egon';
 $string['potentialrecipients'] = 'Balizko domina-jasotzaileak';
@@ -514,9 +529,11 @@ $string['privacy:metadata:manualaward:datemet'] = 'Erabiltzaileari domina eskuz 
 $string['privacy:metadata:manualaward:issuerid'] = 'Domina eman zuen erabiltzailearen IDa';
 $string['privacy:metadata:manualaward:issuerrole'] = 'Domina eman zuen erabiltzailearen rola';
 $string['privacy:metadata:manualaward:recipientid'] = 'Eskuz emandako domina jaso duen erabiltzailearen IDa';
+$string['provider'] = 'Hornitzailea';
 $string['recipient'] = 'Dominaren jasotzailea';
 $string['recipients'] = 'Domina-jasotzaileak';
 $string['recipientvalidationproblem'] = 'Ezin da erabiltzaile hau domina honen jasotzaile gisa egiaztatu.';
+$string['region'] = 'Kokapena';
 $string['relatedbages'] = 'Erlazionatutako dominak';
 $string['relative'] = 'Data erlatiboa';
 $string['requiredbadge'] = 'Gutxienez domina bat gehitu behar da dominen irizpidera.';

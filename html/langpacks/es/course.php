@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'es', version '4.4'.
+ * Strings for component 'course', language 'es', version '4.5'.
  *
  * @package     course
  * @category    string
@@ -73,7 +73,7 @@ $string['coursecommunication_desc'] = 'El servicio de comunicación por defecto 
 $string['coursecontentnotification'] = 'Enviar notificación de actualización de contenido';
 $string['coursecontentnotification_help'] = 'Marque la casilla para notificar a los participantes del curso sobre esta actividad o recurso nuevo o modificado. Solo los usuarios que puedan acceder a la actividad o recurso recibirán la notificación.';
 $string['coursecontentnotifnew'] = '{$a->coursename} contenido nuevo';
-$string['coursecontentnotifnewbody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> es nuevo en el curso <a href="{$a-> courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Cambiar sus preferencias de notificación</a></p>';
+$string['coursecontentnotifnewbody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> es nuevo en el curso <a href="{$a->courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Cambiar sus preferencias de notificación</a></p>';
 $string['coursecontentnotifupdate'] = '{$a->coursename} cambio de contenido';
 $string['coursecontentnotifupdatebody'] = '<p>{$a->moduletypename} <a href="{$a->link}">{$a->modulename}</a> se ha cambiado en el curso <a href="{$a->courselink}">{$a->coursename}</a>.</p><p><a href="{$a->notificationpreferenceslink}">Cambiar sus preferencias de notificación</a></p>';
 $string['coursecount'] = 'Recuento de cursos';
@@ -99,6 +99,10 @@ $string['downloadcoursecontent_help'] = 'Esta configuración determina si el con
 $string['enabledownloadcoursecontent'] = 'Habilitar descargar contenido del curso';
 $string['errorendbeforestart'] = 'La fecha de fin ({$a}) es anterior a la fecha de inicio del curso.';
 $string['favourite'] = 'Curso destacado';
+$string['filterbothactive'] = 'Nombre ({$a->first}) Apellido ({$a->last})';
+$string['filterbyname'] = 'Filtrar por nombre';
+$string['filterfirstactive'] = 'Nombre ({$a->first})';
+$string['filterlastactive'] = 'Apellido ({$a->last})';
 $string['gotosection'] = 'Ir a sección {$a}';
 $string['gradetopassnotset'] = 'Este curso no tiene configurada una calificación para superarlo. Puede configurarse en el elemento de calificación del curso (Configuración del Libro de calificaciones).';
 $string['hideendedcoursestask'] = 'Ocultar cursos el día de finalización';

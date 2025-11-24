@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'ja', version '4.4'.
+ * Strings for component 'gradereport_grader', language 'ja', version '4.5'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -33,9 +33,8 @@ $string['ajaxfailedupdate'] = '[2] の [1] を更新できません。';
 $string['ajaxfieldchanged'] = '現在あなたが編集しているフィールドの内容が変更されました。更新された値を使用しますか?';
 $string['aria:dropdowncolumns'] = '折りたたまれたカラムが見つかりました。';
 $string['cellactions'] = 'セルアクション';
-$string['clearall'] = 'すべてをクリアする';
 $string['clearsearch'] = '検索済みユーザをクリアする';
-$string['collapsedcolumns'] = '折りたたまれたカラム <span class="badge rounded-pill bg-primary text-white ml-1" data-collapse="count">{$a}</span>';
+$string['collapsedcolumns'] = '折りたたまれたカラム <span class="badge rounded-pill bg-primary text-white ms-1" data-collapse="count">{$a}</span>';
 $string['editingmode_title'] = '評定者レポートを編集する';
 $string['eventgradereportviewed'] = '評定者レポートが閲覧されました。';
 $string['grader:manage'] = '評定者レポートを管理する';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'es', version '4.4'.
+ * Strings for component 'plugin', language 'es', version '4.5'.
  *
  * @package     plugin
  * @category    string
@@ -53,6 +53,8 @@ $string['err_response_format_version'] = 'Formato de respuesta con versión ines
 $string['err_response_http_code'] = 'No pudo obtener actualizaciones disponibles - código de respuesta HTTP inesperado.';
 $string['filterall'] = 'Mostrar todo';
 $string['filtercontribonly'] = 'Mostrar sólo los plugins externos';
+$string['filtermissingonly'] = 'Mostrar los que faltan sólo del disco';
+$string['filternewpluginsonly'] = 'Mostrar sólo los plugins a instalar';
 $string['filterupdatesonly'] = 'Mostrar sólo las actualizables';
 $string['incompatibleversion'] = 'Versión de Moodle incompatible: {$a}';
 $string['isenabled'] = '¿Habilitada?';
@@ -110,6 +112,10 @@ $string['status_uptodate'] = 'Instalado';
 $string['supportedconversions'] = 'Conversiones de documento soportadas';
 $string['supportedmoodleversions'] = 'Versiones de Moodle soportadas';
 $string['systemname'] = 'Identificador';
+$string['type_aiplacement'] = 'Plugin de disposiciones de IA';
+$string['type_aiplacement_plural'] = 'Plugins de disposiciones de IA';
+$string['type_aiprovider'] = 'Plugin de proveedor de IA';
+$string['type_aiprovider_plural'] = 'Plugins de proveedores de IA';
 $string['type_antivirus'] = 'Extensión de Antivirus';
 $string['type_antivirus_plural'] = 'Extensiones de antivirus';
 $string['type_auth'] = 'Método de identificación';
@@ -192,6 +198,8 @@ $string['type_repository'] = 'Repositorio';
 $string['type_repository_plural'] = 'Repositorios';
 $string['type_search'] = 'Buscador';
 $string['type_search_plural'] = 'Buscadores';
+$string['type_smsgateway'] = 'Puerta de enlace SMS';
+$string['type_smsgateway_plural'] = 'Puertas de enlace SMS';
 $string['type_theme'] = 'Tema';
 $string['type_theme_plural'] = 'Temas';
 $string['type_tool'] = 'Herramienta de Administración';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'eu', version '4.4'.
+ * Strings for component 'auth_oauth2', language 'eu', version '4.5'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -47,7 +47,7 @@ Mesedez zure guneko kudeatzailearekin harremanetan jarri zaitez lehen bai lehen.
 $string['confirmaccountemailsubject'] = '{$a}: kontuaren berrespena';
 $string['confirmationinvalid'] = 'Berrespen-esteka baliogabea da edo iraungi da. Mesedez, hasi berriz sartzeko prozesua kontua berrespen e-mail berri bat sortzeko.';
 $string['confirmationpending'] = 'Kontu hau posta elektroniko bidezko berrespenaren zain dago.';
-$string['confirmlinkedloginemail'] = 'Kaixo, {$a->fullname}:
+$string['confirmlinkedloginemail'] = 'Kaixo, {$a->firstname}:
 
 Eskaera bat egin da {$a->issuername}(e)ko {$a->linkedemail} helbidea zure helbide elektronikoa erabiliz zure \'{$a->sitename}\' guneko kontuarekin lotzeko.
 
@@ -101,7 +101,7 @@ $string['oauth2:managelinkedlogins'] = 'Kudeatu lotutako nire kontuak';
 $string['plugindescription'] = 'Autentifikazio-plugin honek konfiguratuta dauden identitate-hornitzaile zerrenda bat erakusten du sarbide-orrian. Identitate-hornitzaile bat aukeratzeak erabiltzaileak OAuth 2 hornitzaile horretako kredentzialen bitartez gunean sartzea baimentzen du.';
 $string['pluginname'] = 'OAuth 2';
 $string['privacy:metadata:auth_oauth2'] = 'OAuth2 autentifikazioa';
-$string['privacy:metadata:auth_oauth2:authsubsystem'] = 'Plugin hau autentifikazio-sistemarekin lotuta dago';
+$string['privacy:metadata:auth_oauth2:authsubsystem'] = 'Plugin hau autentifikazio azpisistemarekin lotuta dago';
 $string['privacy:metadata:auth_oauth2:confirmtoken'] = 'Berrespen-tokena';
 $string['privacy:metadata:auth_oauth2:confirmtokenexpires'] = 'Berrespen-tokena iraungitzen den unea.';
 $string['privacy:metadata:auth_oauth2:email'] = 'Kontu honekin lotutako kanpoko helbide elektronikoa.';

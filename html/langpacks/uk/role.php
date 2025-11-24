@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'uk', version '4.4'.
+ * Strings for component 'role', language 'uk', version '4.5'.
  *
  * @package     role
  * @category    string
@@ -28,6 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['addinganewrole'] = 'Додавання нової ролі';
 $string['addrole'] = 'Додати нову роль';
 $string['advancedoverride'] = 'Розширене перевизначення ролі';
+$string['ai:acceptpolicy'] = 'Прийняти політику AI';
+$string['ai:fetchanyuserpolicystatus'] = 'Отримайте прийнятність політики AI користувачів';
+$string['ai:fetchpolicy'] = 'Отримайте прийнятність політики AI користувачів';
 $string['allow'] = 'Дозволити';
 $string['allowassign'] = 'Дозволити призначення ролей';
 $string['allowed'] = 'Дозволено';
@@ -163,6 +166,8 @@ $string['confirmunassignno'] = 'Скасувати';
 $string['confirmunassigntitle'] = 'Підтвердіть зміну ролі';
 $string['confirmunassignyes'] = 'Вилучити';
 $string['contentbank:access'] = 'Доступ до банку вмісту';
+$string['contentbank:changelockedcustomfields'] = 'Змінити настроювані поля, заблоковані банком вмісту';
+$string['contentbank:configurecustomfields'] = 'Налаштувати спеціальні поля банку вмісту';
 $string['contentbank:copyanycontent'] = 'Скопіюйте будь-який вміст у банку вмісту';
 $string['contentbank:copycontent'] = 'Скопіюйте вміст у банку вмісту';
 $string['contentbank:deleteanycontent'] = 'Видаліть будь-який вміст із банку вмісту';
@@ -190,6 +195,7 @@ $string['course:create'] = 'Створювати курси';
 $string['course:creategroupconversations'] = 'Створюйте групові бесіди';
 $string['course:delete'] = 'Видаляти курси';
 $string['course:downloadcoursecontent'] = 'Завантажити зміст курсу';
+$string['course:editcoursewelcomemessage'] = 'Редагувати вітальне повідомлення курсу';
 $string['course:enrolconfig'] = 'Налаштовувати зарахування на курсах';
 $string['course:enrolreview'] = 'Переглядати зарахування на курсах';
 $string['course:ignoreavailabilityrestrictions'] = 'Ігноруйте обмеження доступності';
@@ -238,8 +244,8 @@ $string['defaultrole'] = 'Типова роль';
 $string['defaultx'] = 'Типово: {$a}';
 $string['defineroles'] = 'Визначити ролі';
 $string['definitionofrolex'] = 'Визначення ролі "{$a}"';
-$string['deletecourseoverrides'] = 'Видалити всі перевизначення ролей на курсі';
-$string['deletelocalroles'] = 'Видалити всі локальні призначення ролей';
+$string['deletecourseoverrides'] = 'Усі переналаштування в курсі';
+$string['deletelocalroles'] = 'Усі локальні призначення ролей';
 $string['deleterolesure'] = 'Ви впевнені, що хочете видалити роль "{$a->name} ({$a->shortname})"? Наразі ця роль призначена користувачам {$a->count}.';
 $string['deletexrole'] = 'Видалити роль {$a}';
 $string['duplicaterole'] = 'Здублювати роль';
@@ -520,6 +526,7 @@ $string['user:viewalldetails'] = 'Переглядати повну інформ
 $string['user:viewdetails'] = 'Переглядати облікові записи користувачів';
 $string['user:viewhiddendetails'] = 'Переглядати сховані деталі про користувачів';
 $string['user:viewlastip'] = 'Бачити останню ІР-адресу користувача';
+$string['user:viewprofilepictures'] = 'Перегляд зображень користувача (якщо ввімкнено примусовий вхід)';
 $string['user:viewuseractivitiesreport'] = 'Бачити звіти діяльності користувачів';
 $string['user:viewusergrades'] = 'Переглядати оцінки користувачів';
 $string['usersfrom'] = 'Користувачі з {$a}';

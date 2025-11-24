@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'de', version '4.4'.
+ * Strings for component 'theme_boost', language 'de', version '4.5'.
  *
  * @package     theme_boost
  * @category    string
@@ -34,7 +34,6 @@ $string['brandcolor'] = 'Markenfarbe';
 $string['brandcolor_desc'] = 'Die Markenfarbe legt die Grundfarbe der Website fest, die die Farbe von Links, Buttons und Menüs bestimmt.';
 $string['choosereadme'] = 'Boost ist ein sehr anpassungsfähiges Design. Boost ist für den direkten Gebrauch vorgesehen, kann aber auch als Basis für die Erstellung neuer Designs mit Bootstrap 4 verwendet werden.';
 $string['configtitle'] = 'Boost-Einstellungen';
-$string['currentinparentheses'] = '(aktuell)';
 $string['generalsettings'] = 'Allgemeine Einstellungen';
 $string['loginbackgroundimage'] = 'Hintergrundbild für die Anmeldeseite';
 $string['loginbackgroundimage_desc'] = 'Das Bild wird als Hintergrundbild auf der Anmeldeseite angezeigt.';
@@ -48,8 +47,6 @@ $string['privacy:drawerblockclosed'] = 'Die aktuelle Einstellung der Blockleiste
 $string['privacy:drawerblockopen'] = 'Die aktuelle Einstellung der Blockleiste ist geöffnet.';
 $string['privacy:drawerindexclosed'] = 'Die aktuelle Einstellung des Kursindex ist geschlossen.';
 $string['privacy:drawerindexopen'] = 'Die aktuelle Einstellung des Kursindex ist geöffnet.';
-$string['privacy:drawernavclosed'] = 'Die aktuelle Einstellung für den Navigationsleiste ist geschlossen.';
-$string['privacy:drawernavopen'] = 'Die aktuelle Einstellung für den Navigationsleiste ist geöffnet.';
 $string['privacy:metadata'] = 'Das Design Boost speichert keine personenbezogenen Daten.';
 $string['privacy:metadata:preference:draweropenblock'] = 'Die Nutzereinstellungen zur Sichtbarkeit der Blockleiste';
 $string['privacy:metadata:preference:draweropenindex'] = 'Die Nutzereinstellungen zur Sichtbarkeit des Kursindex';

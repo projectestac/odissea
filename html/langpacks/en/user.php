@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'en', version '4.4'.
+ * Strings for component 'user', language 'en', version '4.5'.
  *
  * @package     user
  * @category    string
@@ -25,25 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcondition'] = 'Add condition';
-$string['adverbfor_and'] = 'and';
-$string['adverbfor_andnot'] = 'and';
-$string['adverbfor_or'] = 'or';
-$string['applyfilters'] = 'Apply filters';
-$string['clearfilterrow'] = 'Remove filter row';
-$string['clearfilters'] = 'Clear filters';
-$string['clearfilterselection'] = 'Remove "{$a}" from filter';
 $string['countparticipantsfound'] = '{$a} participants found';
 $string['filterbykeyword'] = 'Keyword';
-$string['filterrowlegend'] = 'Filter {$a}';
-$string['filtersetmatchdescription'] = 'How multiple filters should be combined';
-$string['filtertype'] = 'Filter type';
-$string['match'] = 'Match';
-$string['matchofthefollowing'] = 'of the following:';
 $string['moodlenetprofile'] = 'MoodleNet profile ID';
 $string['moodlenetprofile_help'] = 'Your MoodleNet profile ID links your MoodleNet profile with this site.';
 $string['placeholdertype'] = 'Type...';
-$string['placeholdertypeorselect'] = 'Type or select...';
 $string['privacy:courserequestpath'] = 'Requested courses';
 $string['privacy:descriptionpath'] = 'Profile description';
 $string['privacy:devicespath'] = 'User devices';
@@ -149,7 +135,6 @@ $string['privacy:passwordresetpath'] = 'Password resets';
 $string['privacy:privatefilespath'] = 'Private files';
 $string['privacy:profileimagespath'] = 'Profile images';
 $string['privacy:sessionpath'] = 'Session data';
-$string['selectfiltertype'] = 'Select';
 $string['supportmessagealternative'] = 'Instead you can email {$a}.';
 $string['supportmessagenotsent'] = 'Unfortunately your message could not be sent.';
 $string['supportmessagesent'] = 'Your message has been sent.';

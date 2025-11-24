@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'ar', version '4.4'.
+ * Strings for component 'report_log', language 'ar', version '4.5'.
  *
  * @package     report_log
  * @category    string
@@ -37,6 +37,8 @@ $string['eventuserreportviewed'] = 'تقرير سجل وقوعات مستخدم 
 $string['log:view'] = 'معاينة سجلات وقوعات المساق';
 $string['log:viewtoday'] = 'معاينة سجلات الوقوعات لهذا اليوم';
 $string['logsformat'] = 'تنسيق سجلات الوقوعات';
+$string['missingcontext'] = 'تم حذف {$a->name} (المُعرَّف \'{$a->instanceid}\')';
+$string['missingcourse'] = 'مساق مفقود (المُعرَّف \'{$a->instanceid}\')';
 $string['nocapability'] = 'تعذر الوصول إلى تقرير سجل وقوعات المستخدم';
 $string['nologreaderenabled'] = 'لا قارئ مُمَكَّن لسجل الوقوعات';
 $string['origin'] = 'المصدر';

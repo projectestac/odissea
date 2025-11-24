@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'nl', version '4.4'.
+ * Strings for component 'auth_oauth2', language 'nl', version '4.5'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -29,11 +29,11 @@ $string['accountexists'] = 'Er bestaat al een gebruiker op deze site met deze ge
 $string['alreadylinked'] = 'Deze externe account is al gekoppeld aan een account op deze site';
 $string['auth_oauth2description'] = 'OAuth 2 standaarden gebaseerde authenticatie';
 $string['auth_oauth2settings'] = 'OAuth 2 authenticatie-instellingen';
-$string['confirmaccountemail'] = 'Hallo {$a->fullname},
+$string['confirmaccountemail'] = 'Beste {$a->firstname},
 
 Er is een nieuwe account voor jou aangevraagd op \'{$a->sitename}\' met jouw e-mailadres.
 
-Ga naar volgend webadres om je account te bevestigen:
+Ga naar volgend webadres om je nieuwe account te bevestigen:
 
 {$a->link}
 
@@ -46,7 +46,7 @@ Als je geen nieuwe account hebt aangevraagd, dan is het mogelijk dat iemand misb
 $string['confirmaccountemailsubject'] = '{$a}: accountbevestiging';
 $string['confirmationinvalid'] = 'De bevestigingslink is ongeldig of verlopen. Start het login proces opnieuw om een nieuwe bevestigingslnk te genereren.';
 $string['confirmationpending'] = 'Deze account wacht op bevestiging via e-mail';
-$string['confirmlinkedloginemail'] = 'Hallo {$a->fullname},
+$string['confirmlinkedloginemail'] = 'Beste {$a->firstname},
 
 Er is gevraagd om de account {$a->issuername} te koppelen aan jouw account {$a->linkedemail} op \'{$a->sitename}\' met jouw e-mailadres.
 
@@ -80,7 +80,7 @@ Meld u alstublieft aan zoals eerder, via de link op de inlogpagina.
 $string['emailpasswordchangeinfosubject'] = '{$a}: Informatie over wachtwoordwijziging';
 $string['info'] = 'Externe account';
 $string['issuer'] = 'OAuth 2 service';
-$string['issuernologin'] = 'Deze uitgever kan niet gebruikt worden om in te loggen';
+$string['issuernologin'] = 'Deze uitgever kan niet gebruikt worden om in te loggen.';
 $string['key'] = 'Sleutel';
 $string['linkedlogins'] = 'Gekoppelde logins';
 $string['linkedloginshelp'] = 'Hulp bij gekoppelde logins';

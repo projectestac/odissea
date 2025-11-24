@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'offlinequiz', language 'fr', version '4.4'.
+ * Strings for component 'offlinequiz', language 'fr', version '4.5'.
  *
  * @package     offlinequiz
  * @category    string
@@ -119,17 +119,17 @@ $string['correctionform'] = 'Formulaire de correction';
 $string['correctionforms'] = 'Formulaires de correction';
 $string['correctionheader'] = 'Correction';
 $string['correctionheader_help'] = '<p>Les formulaires de réponse affichés ici nécessitent votre attention et doivent être corrigés manuellement. Une évaluation automatique n’est pas possible.</p>
-<u>Les erreurs suivantes peuvent se produire...</u>
+<u>Les erreurs suivantes peuvent se produire…</u>
 <ul>
-  <li><strong>Marquages inexacts</strong> : certaines notes n’ont pas pu être évaluées.</li>
-  <li><strong>Numéro de groupe non valide :</strong> Le numéro de groupe n’a pas pu être évalué.</li>
+  <li><strong>Marquages inexacts :</strong> certaines notes n’ont pas pu être évaluées.</li>
+  <li><strong>Numéro de groupe non valide :</strong> le numéro de groupe n’a pas pu être évalué.</li>
   <li><strong>Numéro de page invalide :</strong> le numéro de page n’a pas pu être évalué.</li>
   <li><strong>Non ajusté :</strong> le formulaire de réponse a été numérisé de travers et ne peut pas être évalué.</li>
   <li><strong>Un résultat différent existe :</strong> un résultat évalué avec un numéro de groupe différent existe déjà.</li>
-  <li><strong>Pages incomplètes :</strong> La feuille de réponses actuelle a été évaluée, mais il manque au moins une feuille supplémentaire pour compléter l’évaluation du participant identifié. (Se produit uniquement avec les formulaires de réponse de plusieurs pages.)</li>
+  <li><strong>Pages incomplètes :</strong> la feuille de réponses actuelle a été évaluée, mais il manque au moins une feuille supplémentaire pour compléter l’évaluation du participant identifié. (Se produit uniquement avec les formulaires de réponse de plusieurs pages.)</li>
   <li><strong>Le résultat existe :</strong> un résultat évalué existe déjà.</li>
   <li><strong>Utilisateur absent du cours</strong> : le participant identifié n’est pas actuellement inscrit au cours.</li>
-  <li><strong>L’utilisateur n’existe pas :</strong> Le participant identifié est inconnu.</li>
+  <li><strong>L’utilisateur n’existe pas :</strong> le participant identifié est inconnu.</li>
 </ul>';
 $string['correctionoptionsheading'] = 'Options de correction';
 $string['correctupdated'] = 'Formulaire de correction mis à jour pour le groupe {$a}.';
@@ -931,7 +931,7 @@ $string['tutorial:question:2'] = 'Quelle marque sera certainement interprétée 
 $string['tutorial:question:3'] = 'Comment l’ordinateur attribue-t-il le formulaire de réponse à la bonne personne ?';
 $string['tutorial:question:4'] = 'Numéro de matricule';
 $string['tutorial:question:5'] = 'Bonne chance !';
-$string['tutorial:questionsheet:1'] = '1)&nbsp;&nbsp; Combien de documents de quiz hors ligne vous seront remis lors d’un examen ?';
+$string['tutorial:questionsheet:1'] = '1)&nbsp;&nbsp; Combien de documents de QCM papier vous seront remis lors d’un examen ?';
 $string['tutorial:questionsheet:1:1'] = 'a)&nbsp;&nbsp;0';
 $string['tutorial:questionsheet:1:2'] = 'b)&nbsp;&nbsp;1';
 $string['tutorial:questionsheet:1:3'] = 'c)&nbsp;&nbsp;2';

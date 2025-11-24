@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'el', version '4.4'.
+ * Strings for component 'question', language 'el', version '4.5'.
  *
  * @package     question
  * @category    string
@@ -295,7 +295,6 @@ $string['movingquestionsnofiles'] = 'Είστε σίγουροι ότι θέλε
 $string['needtochoosecat'] = 'Πρέπει να επιλέξετε μια κατηγορία για να μετακινήσετε αυτή την ερώτηση ή πατήστε «άκυρο».';
 $string['nocate'] = 'Δεν υπάρχει αυτή η κατηγορία {$a}!';
 $string['nopermissionadd'] = 'Δεν έχετε δικαίωμα να προσθέσετε ερωτήσεις εδώ.';
-$string['nopermissionmove'] = 'Δεν έχετε δικαίωμα να μετακινήσετε ερωτήσεις από εδώ. Πρέπει να αποθηκεύσετε την ερώτηση σε αυτή την κατηγορία ή να την σώσετε σαν νέα ερώτηση.';
 $string['noprobs'] = 'Δεν βρέθηκαν προβλήματα στην βάση δεδομένων με τις ερωτήσεις σας.';
 $string['noquestionbanks'] = 'Δεν βρέθηκε κανένα πρόσθετο τράπεζας ερωτήσεων.';
 $string['noquestions'] = 'Δεν βρέθηκαν ερωτήσεις που θα μπορούσαν να εξαχθούν. Βεβαιωθείτε ότι έχετε επιλέξει μια κατηγορία για εξαγωγή που περιέχει ερωτήσεις.';

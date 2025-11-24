@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'el', version '4.4'.
+ * Strings for component 'admin', language 'el', version '4.5'.
  *
  * @package     admin
  * @category    string
@@ -878,7 +878,6 @@ $string['moodlepartners_help'] = '<p>Οι Συνεργάτες Moodle είναι
 <a href="https://moodle.com/about-partners/">Σχετικά με τους Συνεργάτες μας</a><br /><a href="https://moodle.com/partners">Βρείτε έναν Συνεργάτη</a>';
 $string['moodleservices'] = 'Υπηρεσίες Moodle';
 $string['moodleservices_help'] = 'Βεβαιωθείτε ότι αποκομίζετε το καλύτερο από το μαθησιακό περιβάλλον Moodle χρησιμοποιώντας αυτές τις υπηρεσίες Moodle:';
-$string['multilangforceold'] = 'Επιβολή παλαιότερης πολυγλωσσικής σύνταξης: &lt;span&gt; χωρίς class="multilang" και &lt;lang&gt;';
 $string['mustenablestats'] = 'Τα στατιστικά δεν έχουν ενεργοποιηθεί ακόμα σε αυτόν τον ιστότοπο.';
 $string['mydashboard'] = 'Προεπιλεγμένο Ταμπλό συστήματος';
 $string['mymoodle'] = 'Ταμπλό';

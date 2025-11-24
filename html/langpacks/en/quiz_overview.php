@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'en', version '4.4'.
+ * Strings for component 'quiz_overview', language 'en', version '4.5'.
  *
  * @package     quiz_overview
  * @category    string
@@ -60,6 +60,17 @@ $string['privacy:metadata:preference:quiz_overview_slotmarks'] = 'Whether to sho
 $string['privacy:preference:slotmarks:no'] = 'Marks are not shown alongside the question slot.';
 $string['privacy:preference:slotmarks:yes'] = 'Marks are shown alongside the question slot.';
 $string['regrade'] = 'Regrade';
+$string['regrade_allattempts'] = 'All attempts';
+$string['regrade_allquestions'] = 'All questions';
+$string['regrade_attempts'] = 'Regrade attempts...';
+$string['regrade_commitregrade'] = 'Commit regrade';
+$string['regrade_dryrun'] = 'Dry run';
+$string['regrade_help'] = 'Regrading recalculates the automated grading of attempts, using the current version of each question if possible. A dry run allows you to preview the grade changes without affecting attempts.';
+$string['regrade_link'] = 'Quiz_grades_report#Re-grading_attempts';
+$string['regrade_regradeneedednotificationmessage'] = 'The last dry run of a regrade found that the regrade would change the marks for {$a->questions} questions in {$a->attempts} attempts.';
+$string['regrade_regradenow'] = 'Regrade now';
+$string['regrade_selectedattempts'] = 'Selected attempts';
+$string['regrade_selectedquestions'] = 'Selected questions';
 $string['regradeall'] = 'Regrade all';
 $string['regradealldry'] = 'Dry run a full regrade';
 $string['regradealldrydo'] = 'Regrade attempts marked as needing regrading ({$a})';

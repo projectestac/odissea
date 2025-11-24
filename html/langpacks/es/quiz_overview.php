@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'es', version '4.4'.
+ * Strings for component 'quiz_overview', language 'es', version '4.5'.
  *
  * @package     quiz_overview
  * @category    string
@@ -60,6 +60,17 @@ $string['privacy:metadata:preference:quiz_overview_slotmarks'] = 'Si mostrar los
 $string['privacy:preference:slotmarks:no'] = 'Los puntos no se muestran junto al espacio de la pregunta.';
 $string['privacy:preference:slotmarks:yes'] = 'Los puntos se muestran junto al espacio de la pregunta.';
 $string['regrade'] = 'Recalificar';
+$string['regrade_allattempts'] = 'Todos los intentos';
+$string['regrade_allquestions'] = 'Todas las preguntas';
+$string['regrade_attempts'] = 'Recalificar intentos...';
+$string['regrade_commitregrade'] = 'Realizar reevaluación';
+$string['regrade_dryrun'] = 'Simulacro';
+$string['regrade_help'] = 'Reevaluar recalcula la calificación automática de los intentos, usando la versión más reciente de la pregunta si es posible. Un simulacro le permite ver los cambios en la calificaión sin afectar a los intentos.';
+$string['regrade_link'] = 'Quiz_grades_report#Re-grading_attempts';
+$string['regrade_regradeneedednotificationmessage'] = 'El último simulacro de calificación encontrado que modificaría las calificaciones de {$a->questions} preguntas en {$a->attempts} intentos.';
+$string['regrade_regradenow'] = 'Recalificar ahora';
+$string['regrade_selectedattempts'] = 'Intentos seleccionados';
+$string['regrade_selectedquestions'] = 'Preguntas seleccionadas';
 $string['regradeall'] = 'Recalificar todo';
 $string['regradealldry'] = 'Simulacro de recalificación completa';
 $string['regradealldrydo'] = 'Recalificar los intentos marcados cuando necesiten recalificación ({$a})';

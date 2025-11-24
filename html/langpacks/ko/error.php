@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'ko', version '4.4'.
+ * Strings for component 'error', language 'ko', version '4.5'.
  *
  * @package     error
  * @category    string
@@ -479,6 +479,7 @@ $string['reverseproxyabused'] = '죄송합니다만 역 프록시가 활성화�
 $string['rpcerror'] = 'MNET 교신에 실패! 다음의 내용을 관리자에게 전달해주기 바랍니다: {$a}';
 $string['scheduledbackupsdisabled'] = '자동 백업이 서버관리자에 의해 비활성화 되었음';
 $string['secretalreadyused'] = '암호 변경 확인 링크가 이미 사용되었으므로 암호는 변경되지 않습니다.';
+$string['sectioncantbefound'] = '<p><strong>이 콘텐츠를 찾을 수 없습니다.</strong></p><p>삭제되었거나 URL이 잘못되었을 수 있습니다.</p>';
 $string['sectionnotexist'] = '섹션이 존재하지 않음';
 $string['sendmessage'] = '쪽지 보내기';
 $string['sendmessagesent'] = '귀하의 피드백에 감사드립니다:<br>{$a}';

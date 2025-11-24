@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_stash', language 'fr', version '4.4'.
+ * Strings for component 'block_stash', language 'fr', version '4.5'.
  *
  * @package     block_stash
  * @category    string
@@ -121,7 +121,7 @@ $string['maxpickup'] = 'Nombre maximum';
 $string['maxpickup_help'] = 'Le nombre de fois qu’un même objet peut être récupéré par chaque étudiant dans ce lieu. Par exemple, si vous spécifiez « 1 », il ne sera récupérable qu’une fois par étudiant. Par contre, si vous spécifiez « 5 », chaque étudiant pourra le récupérer 5 fois dans ce lieu. Pour les valeurs différentes de « 1 », il est préférable de l’utiliser en combinaison avec « l’intervalle de récupération ».';
 $string['mostitems'] = 'La plupart des éléments';
 $string['mostsingularitem'] = 'La plus grande partie d’un élément unique spécifié';
-$string['mostsingularitemname'] = 'La plupart de « $a »';
+$string['mostsingularitemname'] = 'La plupart de « {$a} »';
 $string['mostuniqueitems'] = 'Les objets les plus uniques';
 $string['myitems'] = 'Mes éléments';
 $string['myrequests'] = 'Mes demandes aux autres';
@@ -162,8 +162,8 @@ $string['privacy:metadata:pickup:pickupcount'] = 'Quantité récupérée dans ce
 $string['privacy:metadata:pickup:timecreated'] = 'Moment auquel l’enregistrement a été créé.';
 $string['privacy:metadata:pickup:timemodified'] = 'Moment auquel l’enregistrement a été modifié pour la dernière fois.';
 $string['privacy:metadata:pickup:userid'] = 'Identifiant de l’utilisateur qui a récupéré l’objet.';
-$string['privacy:metadata:swap'] = 'Un historique des trocs entre utilisateurs';
-$string['privacy:metadata:swap:initiator'] = 'La personne qui a fait un offre de troc';
+$string['privacy:metadata:swap'] = 'L\'historique des trocs entre utilisateurs';
+$string['privacy:metadata:swap:initiator'] = 'La personne qui a fait une offre de troc';
 $string['privacy:metadata:swap:message'] = 'Un message concernant le troc';
 $string['privacy:metadata:swap:messageformat'] = 'Le format dans lequel se trouve le message';
 $string['privacy:metadata:swap:receiver'] = 'La personne qui reçoit l’offre de troc.';
@@ -181,7 +181,7 @@ $string['quantity'] = 'Quantité';
 $string['quizitemsremoved'] = 'Les objets suivants ont été enlevés :';
 $string['quizname'] = 'Nom du test';
 $string['quiznotenoughitems'] = 'Vous n’avez les objets nécessaires pour faire ce test. Vous avez besoin des objets suivants :';
-$string['quizremovalconfigured'] = 'Ce test est <a href="{$a}">configuré</a> pour enlever des objets.';
+$string['quizremovalconfigured'] = 'Ce test est <a href="{$a}">configuré</a> pour retirer des objets.';
 $string['reallydeletedrop'] = 'Voulez-vous vraiment supprimer ce lieu ?';
 $string['reallydeleteitem'] = 'Voulez-vous vraiment supprimer cet objet ?';
 $string['reallyresetstashof'] = 'Voulez-vous vraiment vider le baluchon de {$a} ?';
@@ -189,14 +189,14 @@ $string['received'] = 'Reçu';
 $string['removalconfigurations'] = 'Configuration des suppressions';
 $string['removalexplanation'] = 'Les suppressions sont actuellement limitées à la tentative de l\'activité test. Les objets listés pour suppression seront supprimés chaque fois qu’un étudiant commence une nouvelle tentative. L’accès sera refusé si l’étudiant ne possède pas suffisamment d’objets répertoriés.';
 $string['removals'] = 'Suppression';
-$string['removeswapdetails'] = 'Voulez-vous supprimer les détails de ce troc ?';
+$string['removeswapdetails'] = 'Voulez-vous retirer les détails de ce troc ?';
 $string['report'] = 'Rapport';
 $string['reportadditional'] = 'Gestion avancée des objets';
 $string['requestdetail'] = 'Cet étudiant a demandé le troc suivant.';
 $string['requesteditems'] = 'Objets demandés';
 $string['requestsent'] = 'La demande est envoyée';
 $string['requestsforme'] = 'Demandes pour moi';
-$string['requestswap'] = 'Faire un offre';
+$string['requestswap'] = 'Faire une offre';
 $string['resetstashof'] = 'Vider le baluchon de {$a}';
 $string['saveandnext'] = 'Enregistrer et continuer';
 $string['savechanges'] = 'Enregistrer';
@@ -229,7 +229,7 @@ $string['theitemhasbeendeleted'] = 'L’objet « {$a} » a été supprimé';
 $string['thestashofhasbeenreset'] = 'Le baluchon de « {$a} » a été vidé';
 $string['thetradehasbeendeleted'] = 'Le troc « {$a} » a été supprimé';
 $string['thetradeitemhasbeendeleted'] = 'Le troc a été supprimé';
-$string['tidyswap'] = 'Supprimer toutes les offres de troc terminées.';
+$string['tidyswap'] = 'Retirer toutes les offres de troc qui sont terminées.';
 $string['title'] = 'Titre';
 $string['to'] = 'À';
 $string['trade'] = 'Troc';

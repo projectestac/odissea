@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'es', version '4.4'.
+ * Strings for component 'calendar', language 'es', version '4.5'.
  *
  * @package     calendar
  * @category    string
@@ -71,7 +71,7 @@ $string['daywithnoevents'] = 'No hay eventos este día.';
 $string['default'] = 'Por defecto';
 $string['deleteallevents'] = 'Eliminar todos los eventos';
 $string['deleteevent'] = 'Eliminar evento';
-$string['deleteevents'] = 'Eliminar eventos';
+$string['deleteevents'] = 'Eventos';
 $string['deleteoneevent'] = 'Eliminar este evento';
 $string['detailedmonthviewfor'] = 'Vista mensual detallada para:';
 $string['detailedmonthviewtitle'] = 'Vista mensual detallada: {$a}';
@@ -208,7 +208,7 @@ $string['pref_lookahead_help'] = 'Esta opción ajusta el número (máximo) de d�
 $string['pref_maxevents'] = 'Nº máximo de eventos próximos';
 $string['pref_maxevents_help'] = 'Esta opción fija el número máximo de eventos pendientes que pueden mostrarse. Si escribe un número elevado, es posible que mostrar los eventos ocupe mucho espacio en la pantalla.';
 $string['pref_persistflt'] = 'Recordar ajustes de filtro';
-$string['pref_persistflt_help'] = 'Si se activa, Moodle recordará los últimos ajustes del filtro de eventos y los restaurará de forma automática cada vez que entre al sitio.';
+$string['pref_persistflt_help'] = 'Si se activa, sus últimos ajustes del filtro de eventos se guardan para la próxima vez que acceda.';
 $string['pref_startwday'] = 'Primer día de la semana';
 $string['pref_startwday_help'] = 'Las semanas del calendario se mostrarán comenzando el día que se seleccione aquí.';
 $string['pref_timeformat'] = 'Formato de hora';

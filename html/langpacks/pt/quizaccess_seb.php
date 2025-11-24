@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_seb', language 'pt', version '4.4'.
+ * Strings for component 'quizaccess_seb', language 'pt', version '4.5'.
  *
  * @package     quizaccess_seb
  * @category    string
@@ -96,6 +96,7 @@ $string['seb:manage_seb_allowedbrowserexamkeys'] = 'Modificar a configuração S
 $string['seb:manage_seb_allowreloadinexam'] = 'Modificar a configuração SEB do teste: Permitir atualizar';
 $string['seb:manage_seb_allowspellchecking'] = 'Modificar a configuração SEB do teste: Permitir a verificação ortográfica';
 $string['seb:manage_seb_allowuserquitseb'] = 'Modificar a configuração SEB do teste: Permitir sair';
+$string['seb:manage_seb_configuremanually'] = 'Altere a configuração SEB do teste: Selecione a configuração manual';
 $string['seb:manage_seb_enableaudiocontrol'] = 'Modificar a configuração SEB do teste: Ativar controlo do áudio';
 $string['seb:manage_seb_expressionsallowed'] = 'Modificar a configuração SEB do teste: Expressões simples permitidas';
 $string['seb:manage_seb_expressionsblocked'] = 'Modificar a configuração SEB do teste: Expressões simples bloqueadas';
@@ -114,13 +115,14 @@ $string['seb:manage_seb_showtime'] = 'Modificar a configuração SEB do teste: M
 $string['seb:manage_seb_showwificontrol'] = 'Modificar a configuração SEB do teste: Mostrar controlo do Wi-Fi';
 $string['seb:manage_seb_templateid'] = 'Modificar a configuração SEB do teste: Selecionar modelo do SEB';
 $string['seb:manage_seb_userconfirmquit'] = 'Modificar a configuração SEB do teste: Confirmar ao sair';
+$string['seb:manage_seb_usesebclientconfig'] = 'Altere a configuração SEB do teste: Utilize a configuração do cliente SEB';
 $string['seb:managetemplates'] = 'Gerir modelos de configuração SEB';
 $string['seb_activateurlfiltering'] = 'Ativar filtragem de URL';
 $string['seb_activateurlfiltering_help'] = 'Se ativar esta opção, os URL serão filtrados ao carregar páginas da web. O conjunto de filtros deve ser definido abaixo.';
 $string['seb_allowcapturecamera'] = 'Permitir o acesso do navegador à câmara';
-$string['seb_allowcapturecamera_help'] = 'Se ativar esta opção, os utilizadores serão solicitados a conceder acesso à câmara ao SEB antes do início da sessão do teste. No macOS 12/iOS 15 ou posterior, a desativação desta configuração impede que as aplicações web acedam ao microfone em qualquer caso, por exemplo, a gravação de vídeo através do WebRTC não será possível.';
+$string['seb_allowcapturecamera_help'] = 'Se ativar esta opção, os utilizadores serão solicitados a conceder acesso à câmara ao SEB antes do início da sessão do teste. No macOS 12/iOS 15 ou posterior, a desativação desta configuração impede que as aplicações web acedam à câmara, por exemplo, a gravação de vídeo através do WebRTC não será possível.';
 $string['seb_allowcapturemicrophone'] = 'Permitir o acesso do navegador ao microfone';
-$string['seb_allowcapturemicrophone_help'] = 'Se ativar esta opção, os utilizadores serão solicitados a conceder acesso ao microfone ao SEB antes do início da sessão do teste. No macOS 12/iOS 15 ou posterior, a desativação desta configuração impede que as aplicações web acedam ao microfone em qualquer caso, por exemplo, a gravação de áudio através do WebRTC não será possível.';
+$string['seb_allowcapturemicrophone_help'] = 'Se ativar esta opção, os utilizadores serão solicitados a conceder acesso ao microfone ao SEB antes do início da sessão do teste. No macOS 12/iOS 15 ou posterior, a desativação desta configuração impede que as aplicações web acedam ao microfone, por exemplo, a gravação de áudio através do WebRTC não será possível.';
 $string['seb_allowedbrowserexamkeys'] = 'Chaves permitidas para o Safe Exam Browser';
 $string['seb_allowedbrowserexamkeys_help'] = 'Neste campo, pode inserir as chaves permitidas do Safe Exam Browser para versões do Safe Exam Browser que têm permissão para aceder a este teste. Se nenhuma chave for inserida, as chaves do Safe Exam Browser não são verificadas.';
 $string['seb_allowreloadinexam'] = 'Permitir atualizar no exame';

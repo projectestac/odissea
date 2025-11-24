@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'ja', version '4.4'.
+ * Strings for component 'cohort', language 'ja', version '4.5'.
  *
  * @package     cohort
  * @category    string
@@ -49,7 +49,10 @@ $string['currentusers'] = '現在のユーザ';
 $string['currentusersmatching'] = '既存ユーザとの合致';
 $string['defaultcontext'] = 'デフォルトコンテクスト';
 $string['delcohort'] = 'コーホートを削除する';
+$string['delcohortsconfirm'] = 'これでコホートおよび関連データすべてが削除されます。';
+$string['delcohortssuccess'] = '選択されたコーホートを削除する';
 $string['delconfirm'] = 'これでコホート「 {$a} 」および関連データすべてが削除されます。';
+$string['delsuccess'] = 'コーホートを削除する';
 $string['description'] = '説明';
 $string['displayedrows'] = '{$a->total} 行中 {$a->displayed} 行が表示されます。';
 $string['duplicateidnumber'] = '同一IDナンバのコーホートがすでに存在します。';
@@ -90,7 +93,7 @@ $string['uploadcohorts'] = 'コーホートをアップロードする';
 $string['uploadcohorts_help'] = 'テキストファイルでコーホートをアップロードできます。ファイルのフォーマットは以下に従ってください:
 
 * それぞれの行に1レコードを含んでください。
-* それぞれのレコードは選択されたセパレータによって区切られた一連のデータです。
+* それぞれのレコードは選択されたセパレータにより区切られた一連のデータです。
 * 最初のレコードにはファイルの残りの部分のフォーマットを定義するフィールド名一覧を含んでください。
 * 必須フィールド名は「name」です。
 * 任意フィールド名は「idnumber」「description」「descriptionformat」「context」「category」「category_id」「category_idnumber」「category_path」です。';
@@ -98,4 +101,4 @@ $string['uploadedcohorts'] = '{$a} 件のコーホートがアップロードさ
 $string['useradded'] = 'ユーザがコーホート「 {$a} 」に追加されました。';
 $string['visible'] = '可視性';
 $string['visible_help'] = 'コーホートコンテクスト内で「moodle/cohort:view」ケイパビリティが割り当てられたユーザはすべてのコーホートを閲覧できます。<br />
-また、閲覧可能なコーホートはコース内のユーザによっても閲覧できます。';
+また、閲覧可能なコーホートはコース内のユーザでも閲覧できます。';

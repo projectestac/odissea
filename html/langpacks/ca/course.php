@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'ca', version '4.4'.
+ * Strings for component 'course', language 'ca', version '4.5'.
  *
  * @package     course
  * @category    string
@@ -101,6 +101,7 @@ $string['downloadcoursecontent_help'] = 'Aquest paràmetre determina si el conti
 $string['enabledownloadcoursecontent'] = 'Habilita la baixada de contingut del curs';
 $string['errorendbeforestart'] = 'La data de finalització del curs {$a}) és anterior a la data d\'inici del curs.';
 $string['favourite'] = 'Curs destacat';
+$string['filterbyname'] = 'Filtra per nom';
 $string['gotosection'] = 'Vés a la secció {$a}';
 $string['gradetopassnotset'] = 'El curs no té habilitada cap qualificació per aprovar. Es pot habilitar en l\'element de qualificació del curs (Configuració del llibre de qualificacions).';
 $string['hideendedcoursestask'] = 'Amaga els cursos en la data de finalització';

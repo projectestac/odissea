@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'ca', version '4.4'.
+ * Strings for component 'competency', language 'ca', version '4.5'.
  *
  * @package     competency
  * @category    string
@@ -29,6 +29,8 @@ $string['allchildrenarecomplete'] = 'Tots els fills estan complets';
 $string['competencies'] = 'Competències';
 $string['competenciesarenotenabled'] = 'Les competències no estan habilitades';
 $string['competenciessettings'] = 'Paràmetres de les competències';
+$string['competency'] = 'Competència';
+$string['competencyframework'] = 'Marc de competències';
 $string['completeplanstask'] = 'Plans d\'aprenentatge complets que estan vençuts.';
 $string['coursecompetencyoutcome_complete'] = 'Completa la competència';
 $string['coursecompetencyoutcome_evidence'] = 'Adjunta una evidència';
@@ -163,8 +165,10 @@ $string['privacy:metadata:usermodified'] = 'L\'usuari que ha creat o modificat e
 $string['privacy:path:plans'] = 'Plans d\'aprenentatge';
 $string['privacy:path:relatedtome'] = 'Relacionat amb mi';
 $string['privacy:path:userevidence'] = 'Evidència d\'aprenentatge previ';
+$string['proficient'] = 'Superada';
 $string['pushcourseratingstouserplans'] = 'Força les qualificacions del curs als plans individuals d\'aprenentatge';
 $string['pushcourseratingstouserplans_desc'] = 'Valor per defecte del paràmetre del curs per actualitzar els plans d\'aprenentatge individuals quan es qualifiquen les competències dels curs.';
+$string['rating'] = 'Qualificació';
 $string['syncplanscohorts'] = 'Plans de sincronització de les cohorts de plantilles dels plans d\'aprenentatge';
 $string['taxonomy_behaviour'] = 'Comportament';
 $string['taxonomy_competency'] = 'Competència';

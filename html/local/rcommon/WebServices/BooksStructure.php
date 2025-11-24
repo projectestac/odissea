@@ -101,9 +101,10 @@ function get_books_structure_publisher($publisher, $isbn = false) {
  * @return obj -> web service response
  */
 function get_books($publisher) {
-
+    global $OUTPUT;
     try {
         $center = get_marsupial_center();
+
         $client = get_marsupial_ws_client($publisher);
 
         $idcentro = @new SoapVar($center, XSD_STRING, "string", "http://www.w3.org/2001/XMLSchema");
@@ -114,7 +115,7 @@ function get_books($publisher) {
 
         // Check if there are any response error
         $response = rcommon_object_to_array_lower($response, true);
-        $response = $response['obtenertodosresult'] ?? false;
+        $response = isset($response['obtenertodosresult']) ? $response['obtenertodosresult'] : false;
 
         if ($response && isset($response['codigo']) && $response['codigo'] <= 0) {
             $text = array('code' => $response['codigo'], 'description' => $response['descripcion']);
@@ -123,14 +124,12 @@ function get_books($publisher) {
                 $message .= ', URL: '.test_ws_url($response['url']);
             }
             throw new Exception($message);
-        }
-
-        if ($response && isset($response['catalogo']['libros']['libro'])) {
+        } else if ($response && isset($response['catalogo']['libros']['libro'])) {
             return $response['catalogo']['libros']['libro'];
+        } else {
+            debugging('<pre>'.htmlentities($client->__getLastResponse()).'</pre>');
+            throw new Exception(get_string('empty_response_error', 'local_rcommon'));
         }
-
-        debugging('<pre>'.htmlentities($client->__getLastResponse()).'</pre>');
-        throw new Exception(get_string('empty_response_error', 'local_rcommon'));
 
     } catch (Throwable $e) {
         $message = rcommon_ws_error('get_books', $e->getMessage());

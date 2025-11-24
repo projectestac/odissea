@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'files', language 'pt', version '4.4'.
+ * Strings for component 'files', language 'pt', version '4.5'.
  *
  * @package     files
  * @category    string
@@ -43,3 +43,25 @@ $string['privacy:metadata:files:source'] = 'A fonte do ficheiro';
 $string['privacy:metadata:files:timecreated'] = 'Data e hora a que o ficheiro foi criado';
 $string['privacy:metadata:files:timemodified'] = 'A data e hora em que o ficheiro foi modificado';
 $string['privacy:metadata:files:userid'] = 'O utilizador que criou o ficheiro';
+$string['redactor'] = 'Redação do ficheiro';
+$string['redactor:exifremover'] = 'Redação do ficheiro';
+$string['redactor:exifremover:emptyremovetags'] = 'Redação do ficheiro';
+$string['redactor:exifremover:enabled'] = 'Redação do ficheiro';
+$string['redactor:exifremover:enabled_desc'] = 'Por predefinição, o EXIF Remover apenas suporta ficheiros JPG utilizando GD do PHP GD ou ExifTool, se configurado.
+Utilizar o GD do PHP para este fim pode degradar a qualidade da imagem.
+
+Para melhorar o desempenho do EXIF Remover, configure abaixo as definições do ExifTool.
+
+Mais informações sobre a instalação do ExifTool podem ser encontradas em {$a->link}';
+$string['redactor:exifremover:failedprocessexiftool'] = 'Redação do ficheiro';
+$string['redactor:exifremover:failedprocessgd'] = 'Redação do ficheiro';
+$string['redactor:exifremover:heading'] = 'Redação do ficheiro';
+$string['redactor:exifremover:mimetype'] = 'Redação do ficheiro';
+$string['redactor:exifremover:mimetype_desc'] = 'Redação do ficheiro';
+$string['redactor:exifremover:removetags'] = 'Tags EXIF a serem removidas';
+$string['redactor:exifremover:removetags_desc'] = 'Redação do ficheiro';
+$string['redactor:exifremover:tag:all'] = 'Redação do ficheiro';
+$string['redactor:exifremover:tag:gps'] = 'Redação do ficheiro';
+$string['redactor:exifremover:tooldoesnotexist'] = 'Redação do ficheiro';
+$string['redactor:exifremover:toolpath'] = 'Redação do ficheiro';
+$string['redactor:exifremover:toolpath_desc'] = 'Redação do ficheiro';

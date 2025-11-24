@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'zh_cn', version '4.4'.
+ * Strings for component 'quiz', language 'zh_cn', version '4.5'.
  *
  * @package     quiz
  * @category    string
@@ -554,6 +554,7 @@ $string['maxmarks_help'] = '每道题的最高分。';
 $string['messageprovider:attempt_grading_complete'] = '通知您的尝试已评分';
 $string['messageprovider:attempt_overdue'] = '当您的试答将要过期时进行警告';
 $string['messageprovider:confirmation'] = '确认您自己的测验提交';
+$string['messageprovider:quiz_open_soon'] = '测验即将开始';
 $string['messageprovider:submission'] = '学生提交测验的通知';
 $string['min'] = '最低';
 $string['minutes'] = '分钟';
@@ -644,7 +645,7 @@ $string['onlyteachersimport'] = '只有具有编辑权限的教师能导出试�
 $string['onthispage'] = '此页';
 $string['open'] = '未回答';
 $string['openafterclose'] = '无法更新测验。您在关闭日期之后指定了一个开启日期。';
-$string['openclosedatesupdated'] = '测验开启和关闭日期已更新';
+$string['openclosedatesupdated'] = '开启和关闭日期';
 $string['optional'] = '可选';
 $string['orderandpaging'] = '顺序与分页';
 $string['orderandpaging_help'] = '每道试题后面的10、20、30这样的数字表明试题的顺序。数字以10为步长递增，是为了给后面添加试题留空间。要改变试题顺序，请修改数字，然后点击“重新排序试题”按钮。
@@ -820,6 +821,12 @@ $string['quizopen'] = '开启测验';
 $string['quizopenclose'] = '开启和关闭日期';
 $string['quizopenclose_help'] = '学生只能在开启时间之后开始试答，并且必须在关闭时间之前完成试答。';
 $string['quizopenclose_link'] = 'mod/quiz/timing';
+$string['quizopendatesoonhtml'] = '<p>嗨 {$a->firstname},</p>
+<p>课程 {$a->coursename}的测验 <strong>{$a->quizname}</strong> 即将开始.
+<p><strong>开始时间: {$a->timeopen}</strong></p>
+<p><strong>结束时间: {$a->timeclose}</strong></p>
+<p><a href="{$a->url}">进入测验</a></p>';
+$string['quizopendatesoonsubject'] = '将于 {$a->timeopen}开始: {$a->quizname}';
 $string['quizopened'] = '此测验已开启。';
 $string['quizopenedon'] = '此测验开启于{$a}';
 $string['quizopens'] = '测验开启';
@@ -871,9 +878,9 @@ $string['regradenotallowed'] = '您没有重新评分此测验的权限';
 $string['regradingquestion'] = '重新评分 "{$a}"。';
 $string['regradingquiz'] = '重新评分测验"{$a}"';
 $string['remove'] = '移除';
-$string['removeallgroupoverrides'] = '删除所有小组覆盖';
-$string['removeallquizattempts'] = '删除所有试答';
-$string['removealluseroverrides'] = '删除所有用户覆盖';
+$string['removeallgroupoverrides'] = '所有小组覆盖';
+$string['removeallquizattempts'] = '所有试答';
+$string['removealluseroverrides'] = '所有用户覆盖';
 $string['removeemptypage'] = '移除空白页面';
 $string['removepagebreak'] = '移除分页符';
 $string['removeselected'] = '移除选定的';
@@ -985,6 +992,7 @@ $string['selectmultipletoolbar'] = '选择多个工具条';
 $string['selectnone'] = '取消全选';
 $string['selectquestionslot'] = '选择问题 {$a}';
 $string['selectquestiontype'] = '-- 选择试题类型 --';
+$string['sendnotificationopendatesoon'] = '通知用户测验开放日期即将到来';
 $string['serveradded'] = '已添加服务器';
 $string['serveridentifier'] = '标识符';
 $string['serverinfo'] = '服务器信息';

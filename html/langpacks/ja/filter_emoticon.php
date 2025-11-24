@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_emoticon', language 'ja', version '4.4'.
+ * Strings for component 'filter_emoticon', language 'ja', version '4.5'.
  *
  * @package     filter_emoticon
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'ro', version '4.4'.
+ * Strings for component 'format_tiles', language 'ro', version '4.5'.
  *
  * @package     format_tiles
  * @category    string
@@ -39,7 +39,6 @@ $string['backupfailed'] = 'Backup eșuat';
 $string['basecolour'] = 'Culoare carduri';
 $string['basecolour_help'] = 'Culoarea setată aici va fi aplicată tuturor cardurilor din curs. (Culorile disponibile sunt determinate de administratorul site-ului prin intermediul paginii de setări a pluginului Carduri).';
 $string['brandcolour'] = 'Culoarea mărcii';
-$string['canceltask'] = 'Anulează procesul';
 $string['changedcolour'] = 'Culoarea cardului a fost resetată la culoarea implicită pentru cursul {$a}';
 $string['checkforproblemcourses'] = 'Verifică și remediază cursurile cu probleme';
 $string['clickiffailstoload'] = 'Click dacă paginile nu se încarcă';
@@ -267,6 +266,5 @@ $string['toowide'] = 'prea mare pentru card';
 $string['uploadnewphoto'] = 'Încarcă o poză nouă';
 $string['uploadnewphoto_help'] = 'Încarcă o imagine pentru a fi folosită în acest card';
 $string['usejseditingexpandcollapse'] = 'Mod de editare - folosește JavaScript pentru a extinde/restrînge cardurile';
-$string['usetooltips'] = 'Folosește tooltips JavaScript';
 $string['version'] = 'Versiune {$a}';
 $string['width'] = 'Lățime';

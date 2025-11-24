@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'ur', version '4.4'.
+ * Strings for component 'admin', language 'ur', version '4.5'.
  *
  * @package     admin
  * @category    string
@@ -819,7 +819,6 @@ $string['moodlepartners'] = 'موڈل پارٹنرز';
 $string['moodlepartners_help'] = '<p>موڈل پارٹنرز وہ خدمات فراہم کرنے والے ہیں جو آپ کی تنظیم کے آن لائن سیکھنے کے ماحول کے لیے اعلیٰ معیار کی Moodle خدمات فراہم کرنے کے لیے Moodle HQ سے تصدیق شدہ ہیں۔</p> <a href="https://moodle.com/about-partners/"> ہمارے شراکت داروں کے بارے میں</a><br /> <a href="https://moodle.com/partners">پارٹنر تلاش کریں</a>';
 $string['moodleservices'] = 'موڈل سروسز';
 $string['moodleservices_help'] = 'ان Moodle سروسز کا استعمال کرکے یقینی بنائیں کہ آپ اپنے Moodle سیکھنے کے ماحول سے بہترین حاصل کرتے ہیں:';
-$string['multilangforceold'] = 'پرانے ملٹی لینگ نحو کو مجبور کریں: &lt;span&gt; class="multilang" اور &lt;lang&gt; کے بغیر';
 $string['mustenablestats'] = 'اس سائٹ پر ابھی تک اعداد شمار مجاز نہیں کیے گئے';
 $string['mydashboard'] = 'سسٹم ڈیفالٹ ڈیش بورڈ';
 $string['mymoodle'] = 'میرا موڈل';

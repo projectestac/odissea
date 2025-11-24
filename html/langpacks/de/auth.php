@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'de', version '4.4'.
+ * Strings for component 'auth', language 'de', version '4.5'.
  *
  * @package     auth
  * @category    string
@@ -47,7 +47,7 @@ $string['auth_invalidnewemailkey'] = 'Fehler: Falls Sie gerade versuchen, die Ä
 $string['auth_loginpasswordtoggle'] = 'Kennwort im Klartext anzeigen';
 $string['auth_loginpasswordtoggle_desc'] = 'Icon im Kennwortfeld hinzufügen, das Nutzer/innen beim Login erlaubt, ihr eingegebenes Kennwort im Klartext anzuzeigen.';
 $string['auth_loginrecaptcha'] = 'reCAPTCHA für die Anmeldung aktivieren';
-$string['auth_loginrecaptcha_desc'] = 'Fügen Sie ein visuelles/akustisches Bestätigungselement zur Anmeldeseite hinzu. Dadurch wird das Risiko ungerechtfertigter Anmeldeversuche verringert. Weitere Informationen finden Sie unter <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
+$string['auth_loginrecaptcha_desc'] = 'Fügen Sie der Anmeldeseite ein visuelles/akustisches Bestätigungselement hinzu. Dies verringert das Risiko unberechtigter Anmeldeversuche. Weitere Informationen finden Sie unter <a href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
 $string['auth_multiplehosts'] = 'Mehrere Adressen können angegeben werden (z.B. host1.com;host2.de;xxx.xxx.xxx.xxx)';
 $string['auth_notconfigured'] = 'Die Authentifizierung ‘{$a}\' ist nicht konfiguriert.';
 $string['auth_outofnewemailupdateattempts'] = 'Sie haben die zulässige Zahl von Versuchen überschritten, Ihre E-Mail-Adresse zu ändern. Der Änderungsvorgang wurde abgebrochen.';
@@ -88,13 +88,13 @@ $string['emailchangecancel'] = 'E-Mail-Änderung abbrechen';
 $string['emailchangepending'] = 'Die Änderung ist noch nicht abgeschlossen. Öffnen Sie den zugesandten Link in {$a->preference_newemail}';
 $string['emailnowexists'] = 'Die E-Mail-Adresse, die Sie in Ihrem Nutzerprofil eintragen möchten, wird bereits von jemand anders verwendet. Die Änderung wird abgebrochen, aber Sie können die Eingabe einer weiteren Adresse versuchen.';
 $string['emailupdate'] = 'Änderung der E-Mail-Adresse';
-$string['emailupdatemessage'] = 'Guten Tag {$a->fullname},
+$string['emailupdatemessage'] = 'Guten Tag {$a->firstname},
 
-Sie möchten die E-Mail-Adresse für Ihr Nutzerkonto bei {$a->site} ändern. Öffnen Sie bitte die folgende URL in Ihrem Browser, um die Änderung zu bestätigen.
+Sie möchten die E-Mail-Adresse für Ihr Nutzerkonto bei {$a->site} ändern. Um die Änderung zu bestätigen, öffnen Sie bitte die folgende Webadresse:
 
 {$a->url}
 
-Wenn Sie Fragen haben, kontaktieren Sie den Support: {$a->supportemail}
+Der Bestätigungslink gilt 10 Minuten. Falls Sie Fragen haben, wenden Sie sich an: {$a->supportemail}
 
 Ihr E-Learning-Team';
 $string['emailupdatesuccess'] = 'Die E-Mail-Adresse von <em>{$a->fullname}</em> wurde erfolgreich aktualisiert: <em>{$a->email}</em>.';
@@ -146,7 +146,7 @@ $string['potentialidps'] = 'Verwenden Sie Ihr Nutzerkonto bei';
 $string['privacy:metadata:userpref:createpassword'] = 'Legt fest, dass ein Kennwort für die Person erstellt werden soll';
 $string['privacy:metadata:userpref:forcepasswordchange'] = 'Legt fest, ob eine Person beim Login das Kennwort ändern soll';
 $string['privacy:metadata:userpref:loginfailedcount'] = 'Anzahl der Fehllogins des Nutzers';
-$string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = 'Anzahl der Fehllogins des Nutzers nach seinem letzten erfolgreichen Login';
+$string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = 'Die Anzahl der fehlgeschlagenen Anmeldungen der Person seit der letzten erfolgreichen Anmeldung.';
 $string['privacy:metadata:userpref:loginfailedlast'] = 'Das Datum, an dem der letzte Loginversuch erfolgte';
 $string['privacy:metadata:userpref:loginlockout'] = 'Markierung, ob das Nutzerkonto wegen zu vieler fehlerhafter Anmeldeversuche gesperrt ist und zu welchem Zeitpunkt dies passiert ist.';
 $string['privacy:metadata:userpref:loginlockoutignored'] = 'Markierung, dass ein Nutzerkonto niemals gesperrt werden soll.';
@@ -162,6 +162,10 @@ $string['selfregistration_help'] = 'Wenn die Selbstregistrierung (z.B. \'E-Mail 
 $string['settingmigrationmismatch'] = 'Fehlende Übereinstimmungen, die bei der Korrektur der Namen in den Plugin-Einstellungen erkannt wurden! Beim Authentifizierungs-Plugin \'{$a->plugin}\' war die Einstellung \'{$a->setting}\' mit dem veralteten Namen \'{$a->legacy}\' und dem aktuellen Namen \'{$a->current}\' konfiguriert. Der letztere Wert wurde als gültig gesetzt, aber Sie sollten dies nochmal überprüfen.';
 $string['sha1'] = 'SHA-1 hash';
 $string['showguestlogin'] = 'Sie können auf der Anmeldeseite die Taste zum Gast-Login anzeigen oder verbergen. Wenn die Taste verborgen ist, ist ein Gast-Login für die Website nicht erlaubt.';
+$string['showloginform'] = 'Manuelles Login anzeigen';
+$string['showloginform_desc'] = 'Wenn alle Nutzer/innen auf der  Website eine Authentifizierung wie OAuth2 verwenden, bei der sie keinen Anmeldenamen und kein Kennwort eingeben müssen, können Sie die manuelle Anmeldung ausblenden. Beachten Sie, dass sich dann niemand mehr mit einem manuellen Nutzerkonto anmelden kann.
+
+Um die manuelle Anmeldung wieder anzuzeigen, weil Sie sich selber nicht mehr anmelden können, verwenden Sie die folgende Befehlszeile: php admin/cli/cfg.php --name=showloginform --set=1';
 $string['stdchangepassword'] = 'Standardseite zur Kennwortänderung nutzen';
 $string['stdchangepassword_expl'] = 'Stellen Sie diese Option auf \'Ja\', wenn das externe Authentifizierungssystem eine Änderung des Kennwortes durch Moodle zulässt. Die Einstellungen überschreiben \'URL zur Kennwortänderung\'';
 $string['stdchangepassword_explldap'] = 'Warnung: LDAP sollte unbedingt SSL-verschlüsselt sein (ldaps://), wenn der LDAP-Server extern betrieben wird.';

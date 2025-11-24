@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'ru', version '4.4'.
+ * Strings for component 'block_myoverview', language 'ru', version '4.5'.
  *
  * @package     block_myoverview
  * @category    string
@@ -93,7 +93,7 @@ $string['title'] = 'Название курса';
 $string['viewquickstart'] = 'Посмотреть краткое руководство';
 $string['zero_default_intro'] = 'Курс появится здесь, как только вы запишетесь на него.';
 $string['zero_default_title'] = 'Вы не зачислены ни на один курс';
-$string['zero_nocourses_intro'] = 'Нужна помощь, чтобы начать? Ознакомьтесь с <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">документацией по Moodle</a> или сделайте первые шаги с нашим кратким руководством.';
+$string['zero_nocourses_intro'] = 'Нужна помощь, чтобы начать? Ознакомьтесь с <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">документацией по Moodle</a>.';
 $string['zero_nocourses_title'] = 'Создайте свой первый курс';
 $string['zero_request_intro'] = 'Нужна помощь, чтобы начать? Ознакомьтесь с <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">документацией по Moodle</a> или сделайте первые шаги с нашим <a href="{$a->quickhref}" title="{$a->quicktitle}" target="{$a->quicktarget}">Кратким руководством</a>.';
 $string['zero_request_title'] = 'Запросите свой первый курс';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'ca', version '4.4'.
+ * Strings for component 'block_activity_results', language 'ca', version '4.5'.
  *
  * @package     block_activity_results
  * @category    string
@@ -34,7 +34,7 @@ $string['config_decimalplaces'] = 'Nombre de decimals que es mostraran';
 $string['config_format_absolute'] = 'Nombres absoluts';
 $string['config_format_fraction'] = 'Fraccions';
 $string['config_format_percentage'] = 'Percentatges';
-$string['config_grade_format'] = 'Visualitza les notes com a:';
+$string['config_grade_format'] = 'Visualitza les qualificacions com a:';
 $string['config_name_format'] = 'Confidencialitat dels resultats';
 $string['config_names_anon'] = 'Resultats anònims';
 $string['config_names_full'] = 'Mostra els noms complets';

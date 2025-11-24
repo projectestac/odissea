@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_brickfield', language 'gl', version '4.4'.
+ * Strings for component 'tool_brickfield', language 'gl', version '4.5'.
  *
  * @package     tool_brickfield
  * @category    string

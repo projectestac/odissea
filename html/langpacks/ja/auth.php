@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'ja', version '4.4'.
+ * Strings for component 'auth', language 'ja', version '4.5'.
  *
  * @package     auth
  * @category    string
@@ -88,7 +88,14 @@ $string['emailchangecancel'] = 'メール変更をキャンセルする';
 $string['emailchangepending'] = '変更保留中です。あなたの {$a->preference_newemail} に送信されたリンクを開いてください。';
 $string['emailnowexists'] = 'あなたのプロファイルに割り当てようと試みたメールアドレスはリクエスト後、他のユーザに割り当てられています。そのため、あなたのメールアドレス変更はキャンセルされました。別のメールアドレスで再度お試しください。';
 $string['emailupdate'] = 'メールアドレス更新';
-$string['emailupdatemessage'] = '{$a->fullname} さん あなたは {$a->site} のアカウントのメールアドレス変更をリクエストしました。この変更を確認するには次のウェブアドレスにアクセスしてください: {$a->url} {$a->supportemail}';
+$string['emailupdatemessage'] = '{$a->fullname} さん
+
+あなたは {$a->site} のアカウントのメールアドレス変更をリクエストしました。この変更を確認するには次のウェブアドレスにアクセスしてください:
+
+{$a->url}
+確認リンクの有効期限は<b>10分</b>です。
+
+{$a->supportemail}';
 $string['emailupdatesuccess'] = 'ユーザ {$a->fullname} のメールアドレスが正常に {$a->email} に変更されました。';
 $string['emailupdatetitle'] = '{$a->site} のメール更新確認';
 $string['errormaxconsecutiveidentchars'] = 'パスワードには最大半角 {$a} 文字の連続した同一文字を使用する必要があります。';
@@ -152,6 +159,10 @@ $string['selfregistration_help'] = '「Eメールによる自己登録」のよ�
 $string['settingmigrationmismatch'] = 'プラグイン設定名の訂正中に値の不適合が検出されました。認証プラグイン「 {$a->plugin} 」はレガシ名の下で設定「 {$a->setting} 」に「 {$a->legacy} 」が設定されています。また、現在の名称の下で「 {$a->current} 」が設定されています。後者の値は有効な値として設定されていますが、 あなたはこれが期待された設定値であることを確認する必要があります。';
 $string['sha1'] = 'SHA-1暗号化';
 $string['showguestlogin'] = 'あなたはログインページのゲストログインボタンを表示または非表示にできます。';
+$string['showloginform'] = '手動ログインフォームを表示する';
+$string['showloginform_desc'] = 'サイトすべてのユーザがOAuth 2のようなユーザ名およびとパスワードを入力する必要のない認証方法を使用している場合、手動ログインフォームを非表示にできます。手動アカウントを持つユーザはログインできないことに注意してください。
+
+あなたが手動ログインフォームを非表示にした後にログインできなくなった場合、次のコマンドラインで再度表示できます: php admin/cli/cfg.php --name=showloginform --set=1';
 $string['stdchangepassword'] = 'パスワード変更に標準ページを使用する';
 $string['stdchangepassword_expl'] = '外部認証システムがMoodleにパスワードの変更を許可する場合、この設定を「Yes」にしてください。この設定は「パスワード変更URL」をオーバーライドします。';
 $string['stdchangepassword_explldap'] = '注意: LDAPサーバがリモートの場合、SSL暗号化トンネル (ldaps://) の使用をお勧めします。';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'zh_cn', version '4.4'.
+ * Strings for component 'wiki', language 'zh_cn', version '4.5'.
  *
  * @package     wiki
  * @category    string
@@ -62,7 +62,7 @@ $string['defaultformat_help'] = '此设置决定编辑wiki页面时使用的缺�
 * HTML - 会提供HTML编辑器
 * Creole - 一个常用的wiki标记语言，会提供一个小型编辑工具条
 * Nwiki - Mediawiki风格的标记语言，在Nwiki模块中使用';
-$string['deleteallpages'] = '删除所有wiki页面';
+$string['deleteallpages'] = '所有wiki页面';
 $string['deletecomment'] = '删除评论中';
 $string['deletecommentcheck'] = '删除评论';
 $string['deletecommentcheckfull'] = '您确定要删除此评论吗？';
@@ -251,7 +251,7 @@ $string['privacy:metadata:wiki_versions:version'] = '版本号';
 $string['rated'] = '您对此页的评分是{$a}';
 $string['rating'] = '正在评分';
 $string['ratingmode'] = '评分模式';
-$string['removeallwikitags'] = '删除所有wiki标签';
+$string['removeallwikitags'] = '所有wiki标签';
 $string['removepages'] = '删除页面';
 $string['reparsetimeout'] = '重新解析缺省超时';
 $string['repeatedsection'] = 'Wiki错误：节名不可重复“{$a}”';

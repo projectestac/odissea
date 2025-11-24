@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'ro', version '4.4'.
+ * Strings for component 'course', language 'ro', version '4.5'.
  *
  * @package     course
  * @category    string
@@ -101,6 +101,10 @@ $string['downloadcoursecontent_help'] = 'Această setare determină dacă conți
 $string['enabledownloadcoursecontent'] = 'Activați descărcarea conținutului cursului';
 $string['errorendbeforestart'] = 'Data de încheiere ({$a}) este înainte de data de începere a cursului.';
 $string['favourite'] = 'Curs evidențiat';
+$string['filterbothactive'] = 'Primul ({$a->first}) Ultimul ({$a->last})';
+$string['filterbyname'] = 'Filtrează după nume';
+$string['filterfirstactive'] = 'Primul ({$a->first})';
+$string['filterlastactive'] = 'Ultimul ({$a->last})';
 $string['gotosection'] = 'Mergi la secțiunea {$a}';
 $string['gradetopassnotset'] = 'Acest curs nu are notă de trecere. Poate fi setată în elementul de notă al cursului (Configurare catalog de note).';
 $string['hideendedcoursestask'] = 'Ascunde cursurile la data încheierii';

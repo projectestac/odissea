@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'ro', version '4.4'.
+ * Strings for component 'cohort', language 'ro', version '4.5'.
  *
  * @package     cohort
  * @category    string
@@ -49,7 +49,10 @@ $string['currentusers'] = 'Utilizatori curenţi';
 $string['currentusersmatching'] = 'Utilizatori curenţi conform';
 $string['defaultcontext'] = 'Context implicit';
 $string['delcohort'] = 'Şterge cohortă';
+$string['delcohortsconfirm'] = 'Prin această acțiune se vor șterge cohortele și datele asociate.';
+$string['delcohortssuccess'] = 'Cohortele selectate au fost șterse';
 $string['delconfirm'] = 'Prin această acțiune se va șterge cohorta {$a}\' și toate datele asociate acesteia.';
+$string['delsuccess'] = 'Cohortă ștearsă';
 $string['description'] = 'Descriere';
 $string['displayedrows'] = '{$a->displayed} rânduri afișate din {$a->total}.';
 $string['duplicateidnumber'] = 'Există deja o cohortă cu acest identificator';

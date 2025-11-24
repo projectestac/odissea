@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'ru', version '4.4'.
+ * Strings for component 'theme_boost', language 'ru', version '4.5'.
  *
  * @package     theme_boost
  * @category    string
@@ -34,7 +34,6 @@ $string['brandcolor'] = 'Фирменный цвет';
 $string['brandcolor_desc'] = 'Основной цвет сайта, который определяет цвет ссылок, кнопок и меню.';
 $string['choosereadme'] = 'Boost - это современная тема с множеством настроек. Эта тема предназначена для использования непосредственно или в качестве родительской темы при создании новых тем с использованием Bootstrap 4.';
 $string['configtitle'] = 'Boost';
-$string['currentinparentheses'] = '(текущая)';
 $string['generalsettings'] = 'Основные настройки';
 $string['loginbackgroundimage'] = 'Фоновое изображение для страницы входа';
 $string['loginbackgroundimage_desc'] = 'Изображение, отображаемое в качестве фона на странице входа.';
@@ -48,8 +47,6 @@ $string['privacy:drawerblockclosed'] = 'Текущая настройка для
 $string['privacy:drawerblockopen'] = 'Текущая настройка для боковой панели - открыто.';
 $string['privacy:drawerindexclosed'] = 'Текущая настройка для оглавления курса - закрыто.';
 $string['privacy:drawerindexopen'] = 'Текущая настройка для оглавления курса - открыто.';
-$string['privacy:drawernavclosed'] = 'Текущая настройка для панели навигации - «закрыто».';
-$string['privacy:drawernavopen'] = 'Текущая настройка для панели навигации - «открыто».';
 $string['privacy:metadata'] = 'Тема Boost не хранит никаких персональных данных о любом пользователе.';
 $string['privacy:metadata:preference:draweropenblock'] = 'Настройки пользователя для скрытия или отображения боковых панелей.';
 $string['privacy:metadata:preference:draweropenindex'] = 'Настройки пользователя для скрытия или отображения оглавления курса.';

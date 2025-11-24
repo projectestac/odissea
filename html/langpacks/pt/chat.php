@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'pt', version '4.4'.
+ * Strings for component 'chat', language 'pt', version '4.5'.
  *
  * @package     chat
  * @category    string
@@ -144,7 +144,7 @@ $string['privacy:metadata:messages:timestamp'] = 'Data e hora a que a mensagem f
 $string['privacy:metadata:messages:userid'] = 'ID do utilizador autor da mensagem';
 $string['refreshroom'] = 'Atualizar sala';
 $string['refreshuserlist'] = 'Atualizar lista de utilizadores';
-$string['removemessages'] = 'Apagar todas as mensagens';
+$string['removemessages'] = 'Todas as mensagens';
 $string['repeatdaily'] = 'Todos os dias à mesma hora';
 $string['repeatnone'] = 'Sem repetições - apenas à hora definida';
 $string['repeattimes'] = 'Repetir/publicar horário das sessões';

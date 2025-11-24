@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'ro', version '4.4'.
+ * Strings for component 'role', language 'ro', version '4.5'.
  *
  * @package     role
  * @category    string
@@ -28,6 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['addinganewrole'] = 'Adăugare rol nou';
 $string['addrole'] = 'Adaugă un nou rol';
 $string['advancedoverride'] = 'Suprascriere avansată a rolului';
+$string['ai:acceptpolicy'] = 'Acceptă politica AI';
+$string['ai:fetchanyuserpolicystatus'] = 'Obțineți acordul utilizatorilor cu privire la politica AI';
+$string['ai:fetchpolicy'] = 'Obțineți acordul utilizatorului pentru politica AI';
 $string['allow'] = 'Permite';
 $string['allowassign'] = 'Permite asocierea de roluri';
 $string['allowed'] = 'Permis';
@@ -163,6 +166,8 @@ $string['confirmunassignno'] = 'Anulare';
 $string['confirmunassigntitle'] = 'Confirmare schimbare rol';
 $string['confirmunassignyes'] = 'Scoatere';
 $string['contentbank:access'] = 'Accesează banca de conținut';
+$string['contentbank:changelockedcustomfields'] = 'Modificați câmpurile personalizate blocate din banca de conținut';
+$string['contentbank:configurecustomfields'] = 'Configurați câmpurile personalizate din banca de conținut.';
 $string['contentbank:copyanycontent'] = 'Copiază orice conținut în banca de conținut';
 $string['contentbank:copycontent'] = 'Copiază conținut în banca de conținut';
 $string['contentbank:deleteanycontent'] = 'Șterge orice conținut din banca de conținut';
@@ -190,6 +195,7 @@ $string['course:create'] = 'Creare cursuri';
 $string['course:creategroupconversations'] = 'Creați conversații de grup';
 $string['course:delete'] = 'Ștergere cursuri';
 $string['course:downloadcoursecontent'] = 'Descarcă conținutul cursului';
+$string['course:editcoursewelcomemessage'] = 'Editează mesajul de bun venit la curs';
 $string['course:enrolconfig'] = 'Configurați exemplele de înrolare în cursuri';
 $string['course:enrolreview'] = 'Revizuire înscrieri curs';
 $string['course:ignoreavailabilityrestrictions'] = 'Ignorați restricțiile de disponibilitate';
@@ -238,8 +244,8 @@ $string['defaultrole'] = 'Rol implicit';
 $string['defaultx'] = 'Implicit: {$a}';
 $string['defineroles'] = 'Definește roluri';
 $string['definitionofrolex'] = 'Definirea rolului \'{$a}\'';
-$string['deletecourseoverrides'] = 'Ștergere toate suprascrierile din curs';
-$string['deletelocalroles'] = 'Şterge toate rolurile atribuite la nivel local';
+$string['deletecourseoverrides'] = 'Toate suprascrierile din curs';
+$string['deletelocalroles'] = 'Toate rolurile atribuite la nivel local';
 $string['deleterolesure'] = 'Sunteţi sigur(ă) că doriţi ştergerea rolului "{$a->name} ({$a->shortname})"?</p><p>În prezent acest rol este deţinut de {$a->count} utilizatori.';
 $string['deletexrole'] = 'Ștergere rol {$a}';
 $string['duplicaterole'] = 'Duplică rolul';
@@ -520,6 +526,7 @@ $string['user:viewalldetails'] = 'Vizualizare informații complete despre utiliz
 $string['user:viewdetails'] = 'Vizualizare profile utilizatori';
 $string['user:viewhiddendetails'] = 'Vezi informaţii ascunse despre utilizatori';
 $string['user:viewlastip'] = 'Vezi ultima adresă ip a utilizatorului';
+$string['user:viewprofilepictures'] = 'Vizualizați fotografiile utilizatorului (dacă autentificare este obligatorie)';
 $string['user:viewuseractivitiesreport'] = 'Vizualizează rapoarte despre activitatea utilizatorilor';
 $string['user:viewusergrades'] = 'Vizualizează note utilizator';
 $string['usersfrom'] = 'Utilizatorii de la {$a}';

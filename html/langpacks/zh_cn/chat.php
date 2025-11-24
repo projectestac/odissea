@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'zh_cn', version '4.4'.
+ * Strings for component 'chat', language 'zh_cn', version '4.5'.
  *
  * @package     chat
  * @category    string
@@ -145,7 +145,7 @@ $string['privacy:metadata:messages:timestamp'] = '消息发送的时间。';
 $string['privacy:metadata:messages:userid'] = '消息作者的用户ID';
 $string['refreshroom'] = '刷新聊天室';
 $string['refreshuserlist'] = '刷新用户列表';
-$string['removemessages'] = '移除所有消息';
+$string['removemessages'] = '所有消息';
 $string['repeatdaily'] = '每天同一时间';
 $string['repeatnone'] = '无重复-仅发布指定的时间';
 $string['repeattimes'] = '重复/发布会话时间';

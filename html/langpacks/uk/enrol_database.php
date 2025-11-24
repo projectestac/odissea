@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'uk', version '4.4'.
+ * Strings for component 'enrol_database', language 'uk', version '4.5'.
  *
  * @package     enrol_database
  * @category    string
@@ -53,9 +53,13 @@ $string['localcoursefield'] = 'Локальне поле курсу';
 $string['localrolefield'] = 'Локальне поле ролі';
 $string['localuserfield'] = 'Локальне поле користувача';
 $string['newcoursecategory'] = 'Поле коду категорії для нових курсів';
+$string['newcourseenddate'] = 'Нове поле дати закінчення курсу';
+$string['newcourseenddate_desc'] = 'Укажіть дату у форматі рррр-мм-дд або час Unix або залиште поле пустим, щоб дата завершення курсу обчислювалася на основі налаштованої тривалості курсу.';
 $string['newcoursefullname'] = 'Поле повної назви нових курсів';
 $string['newcourseidnumber'] = 'Поле коду  нового курсу';
 $string['newcourseshortname'] = 'Поле короткої назви нового курсу';
+$string['newcoursestartdate'] = 'Нове поле дати початку курсу';
+$string['newcoursestartdate_desc'] = 'Укажіть дату у форматі рррр-мм-дд або час Unix або залиште поле порожнім, щоб датою початку курсу було встановлено поточну дату.';
 $string['newcoursetable'] = 'Зовнішня таблиця нових курсів';
 $string['newcoursetable_desc'] = 'Вкажіть назву таблиці, в якій зберігається список курсів, які потрібно створити автоматично. Якщо залишити порожнім, то ніякі курси створюватися не будуть.';
 $string['pluginname'] = 'Зовнішня база даних';

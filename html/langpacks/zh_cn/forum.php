@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'zh_cn', version '4.4'.
+ * Strings for component 'forum', language 'zh_cn', version '4.5'.
  *
  * @package     forum
  * @category    string
@@ -555,9 +555,6 @@ $string['postmailinfo'] = '这是在 {$a} 中发布的消息的副本';
 $string['postmailnow'] = '<p>此帖子将立即邮寄给所有讨论区订阅者。</ p>';
 $string['postmailreply'] = '要回复，请单击此链接：{$a}';
 $string['postmailsubject'] = '{$a->courseshortname}:  {$a->subject}';
-$string['postrating1'] = '极端独立型';
-$string['postrating2'] = '独立型与情景型兼备';
-$string['postrating3'] = '极端情景型';
 $string['posts'] = '帖子';
 $string['postsfrom'] = '帖子从';
 $string['postsmadebyuser'] = '{$a}的帖子';
@@ -644,7 +641,7 @@ $string['qandaforum'] = '提问与解答讨论区';
 $string['qandanotify'] = '这是一个问答讨论区。要查看其他回复，您必须先发布您的回复。';
 $string['re'] = '回复：';
 $string['readtherest'] = '阅读剩余部分';
-$string['removeallforumtags'] = '移除所有讨论区标签';
+$string['removeallforumtags'] = '所有讨论区标签';
 $string['removefromfavourites'] = '取消收藏此讨论';
 $string['replies'] = '回帖';
 $string['repliesmany'] = '迄今有 {$a} 个回帖';
@@ -659,11 +656,11 @@ $string['replyplaceholder'] = '写您的回复...';
 $string['replypostdiscussion'] = '回帖';
 $string['replytopostbyemail'] = '您可以通过电子邮件回复。';
 $string['replytouser'] = '在回复中使用电子邮件地址';
-$string['resetdigests'] = '删除所有用户讨论区摘要偏好';
+$string['resetdigests'] = '所有用户讨论区摘要偏好';
 $string['resetforums'] = '删除帖子从';
-$string['resetforumsall'] = '删除所有帖子';
-$string['resetsubscriptions'] = '删除所有讨论区订阅';
-$string['resettrackprefs'] = '删除所有讨论区跟踪偏好';
+$string['resetforumsall'] = '所有帖子';
+$string['resetsubscriptions'] = '所有讨论区订阅';
+$string['resettrackprefs'] = '所有讨论区跟踪偏好';
 $string['rssarticles'] = 'RSS最近文章数';
 $string['rssarticles_help'] = '此设置指定要包含在 RSS feed 中的文章（话题或帖子）数。一般在5到20之间。';
 $string['rsssubscriberssdiscussions'] = '话题的 RSS feed';

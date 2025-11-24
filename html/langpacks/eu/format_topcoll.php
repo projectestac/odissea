@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'eu', version '4.4'.
+ * Strings for component 'format_topcoll', language 'eu', version '4.5'.
  *
  * @package     format_topcoll
  * @category    string
@@ -27,11 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['arrow'] = 'Gezia';
 $string['bulb'] = 'Bonbilla';
-$string['cachedef_activitymodulecountcache'] = 'Emandako ikastaroko modulura sarbidea duen ikasle kopuruaren cachea gordetzen du.';
-$string['cachedef_activitystudentrolescache'] = 'Ikasleen rolen cachea gordetzen du.';
-$string['cachedef_activitystudentscache'] = 'Emandako ikastaroko ikasleen IDen cachea gordetzen du.';
-$string['cachedef_activityusercreatedcache'] = 'Emandako ikastaroko erabiltzaile berrien IDen cachea gordetzen du.';
-$string['cannotgetactivitycacheslock'] = 'Ezin izan da lortu {$a} ikastaro-IDaren jarduera-cachearen blokeoa.';
 $string['center'] = 'Erdian';
 $string['cloud'] = 'Lainoa';
 $string['colourrule'] = 'Mesedez eman kolore RGB egoki bat, sei digitu hamaseitarrekin, edo \'-\' lehenetsitakoa erabiltzeko.';
@@ -40,28 +35,6 @@ $string['columnhorizontal'] = 'Horizontala';
 $string['columnvertical'] = 'Bertikala';
 $string['configurationheadingsub'] = 'Ezarpenak';
 $string['configurationheadingsubdesc'] = 'Gune mailako ezarpenak';
-$string['courseadditionalmoddatamaxstudents'] = 'Zehaztu ikastaro batean \'Erakutsi informazio gehigarria\' gehienez zenbat ikasleri aplikatuko zaien';
-$string['courseadditionalmoddatamaxstudentsdesc'] = 'Informazio gehigarria kalkulatzeak denbora eman dezake, bereziki ikastaro handietan, eta beraz hemen ikastaro bat gehienez zenbat ikasle izan ditzakeen funtzionalitate hau ikasle guztiei aplikatu ahal izateko. Balio hortik gora, \'Informazio gehigarria\' EZ da kalkulatu edo erakutsiko ikastaroaren ezarpenak edozein izanda ere! \'0\' balioak \'mugarik gabe\' esan nahi du. Oharra: ezarpen hau aldatzeak cachea ezabatzen du.';
-$string['courseadditionalmoddatastudentsinfo'] = 'Informazio gehigarriaren egoera:';
-$string['courseadditionalmoddatastudentsinfolimitednoshow'] = 'Gaitutako jardueren informazio gehigarria EZ zaie {$a->students} ikasleri erakutsiko ikasle kopurua kudeatzaileak Gai Tolestuak ikastaro-formatuaren \'courseadditionalmoddatamaxstudents\' ezarpenean zehaztutako \'{$a->maxstudents}\' balioa gainditzen duelako,';
-$string['courseadditionalmoddatastudentsinfolimitedshow'] = 'Gaitutako jardueren informazio gehigarria {$a->students} ikasleri erakutsiko zaie ikasle kopurua kudeatzaileak Gai Tolestuak ikastaro-formatuaren \'courseadditionalmoddatamaxstudents\' ezarpenean zehaztutako \'{$a->maxstudents}\' balioa gainditzen ez duelako,';
-$string['courseadditionalmoddatastudentsinfounlimited'] = 'Gaitutako jardueren informazio gehigarria {$a} ikasleri erakutsiko zaie.';
-$string['coursesectionactivityfurtherinformation'] = 'Ikastaro-orriko informazio gehiago';
-$string['coursesectionactivityfurtherinformation_desc'] = 'Gune mailako ikastaro orriko informazio gehiagorako ezarpenak';
-$string['coursesectionactivityfurtherinformationassign'] = 'Erakutsi zereginen informazioa';
-$string['coursesectionactivityfurtherinformationassigndesc'] = 'Baimendu zereginen informazioa ikastaroan erakusteko hautatu izatea. Irakasle eta kudeatzaileei bidalketa kopurua erakusten zaie.';
-$string['coursesectionactivityfurtherinformationchoice'] = 'Erakutsi kontsulten informazioa';
-$string['coursesectionactivityfurtherinformationchoicedesc'] = 'Baimendu kontsulten informazioa ikastaroan erakusteko hautatu izatea. Irakasle eta kudeatzaileei bidalketa kopurua erakusten zaie.';
-$string['coursesectionactivityfurtherinformationdata'] = 'Erakutsi datu-baseen informazioa';
-$string['coursesectionactivityfurtherinformationdatadesc'] = 'Baimendu datu-baseen informazioa ikastaroan erakusteko hautatu izatea. Irakasle eta kudeatzaileei bidalketa kopurua erakusten zaie.';
-$string['coursesectionactivityfurtherinformationfeedback'] = 'Erakutsi inkesten informazioa';
-$string['coursesectionactivityfurtherinformationfeedbackdesc'] = 'Baimendu inkesten informazioa ikastaroan erakusteko hautatu izatea. Irakasle eta kudeatzaileei bidalketa kopurua erakusten zaie.';
-$string['coursesectionactivityfurtherinformationforum'] = 'Erakutsi foroetako informazioa';
-$string['coursesectionactivityfurtherinformationforumdesc'] = 'Baimendu foroen informazioa ikastaroan erakusteko hautatu izatea. Irakasle eta kudeatzaileentzat, erakutsi ekarpen kopurua foro osoko kalifikazioa gaituta dagoenean.';
-$string['coursesectionactivityfurtherinformationlesson'] = 'Erakutsi ikasgaien informazioa';
-$string['coursesectionactivityfurtherinformationlessondesc'] = 'Baimendu ikasgaien informazioa ikastaroan erakusteko hautatu izatea. Irakasle eta kudeatzaileei bidalketa kopurua erakusten zaie.';
-$string['coursesectionactivityfurtherinformationquiz'] = 'Erakutsi galdetegien informazioa';
-$string['coursesectionactivityfurtherinformationquizdesc'] = 'Baimendu galdetegien informazioa ikastaroan erakusteko hautatu izatea. Irakasle eta kudeatzaileei bidalketa kopurua erakusten zaie.';
 $string['ctreset'] = 'Gai Batuen berrabiarazte-aukerak';
 $string['ctreset_help'] = 'Berrabiarazi Gai Batuen berezko baloreak.';
 $string['currentsection'] = 'Atal hau';
@@ -87,8 +60,6 @@ $string['defaultonesection'] = 'Atal bakarra';
 $string['defaultonesection_desc'] = 'Edozein unetan atal bakarra irekita egon behar den zehazten du. Oharra: Ez da kontuan hartzen edizioa aktibatuta dagoenean jarduera eta baliabideak atal batetik bestera mugitu ahal izateko.';
 $string['defaultonesectioniconfont'] = 'Atal bateko ikonoaren letra-tamaina';
 $string['defaultonesectioniconfont_desc'] = 'Ikonoaren letra-tamainaren klasearen egoera atal bateko ikonoaren letra-tamainan erabiltzeko, esaterako FontAwesome ikono klaseak. Hutsik utziz gero, lehenetsitako formatuaren \'pix\' karpetako \'one_section\' ikonoa erabiliko da.';
-$string['defaultshowadditionalmoddata'] = 'Ikastaroaren \'Erakutsi informazio gehigarria\' ezarpenaren balio lehenetsia.';
-$string['defaultshowadditionalmoddatadesc'] = 'Jarduera bat gune mailan informazio gehigarria erakusteko konfiguratzen bada (azpian) jardueraren ikastaroetako instantzia guztietan ezarpen hau lehenetsiko da.';
 $string['defaultshowsectionsummary'] = 'Erakutsi atalaren laburpena batuta dagoenean';
 $string['defaultshowsectionsummary_desc'] = 'Atalaren laburpena beti erakutsiko den zehazten du, atala batuta egonda ere.';
 $string['defaulttgbgcolour'] = 'Etengailuaren atzeko planoko kolorea';
@@ -185,8 +156,6 @@ $string['em3_7'] = '3.7em';
 $string['em3_8'] = '3.8em';
 $string['em3_9'] = '3.9em';
 $string['em4_0'] = '4.0em';
-$string['enableadditionalmoddata'] = 'Gaitu informazio gehigarria';
-$string['enableadditionalmoddatadesc'] = 'Ezarpen hau jardueren informazioa gaitu ala desgaitzeko gune mailako etengailu bat da. Gaituta egon behar du honekin lotutako ikastaro mailako ezarpenek eragina izan dezaten. Funtzionalitate hau konputazionalki garestia izan daitekeenez, martxan dagoen gune batean gaitu aurretik proba sakonak egitea irmoki gomendatzen dugu. Oharra: ezarpen hau aldatzeak cachea ezabatzen du.';
 $string['eye'] = 'Begia';
 $string['feedbackavailable'] = 'Feedbacka eskuragarri';
 $string['folder'] = 'Karpeta';
@@ -214,7 +183,6 @@ $string['markedthissection'] = 'Atal hau oraingo atal gisa nabarmenduta dago.';
 $string['markthissection'] = 'Nabarmendu atal hau oraingo atal gisa';
 $string['medium'] = 'Ertaina';
 $string['newsectionname'] = 'Izen berria {$a} atalarentzat';
-$string['numbersections'] = 'Atal kopurua';
 $string['off'] = 'Itzalita';
 $string['on'] = 'Piztuta';
 $string['one'] = 'Bat';
@@ -230,10 +198,6 @@ $string['privacy:request:preference:toggle'] = '"{$a->name}" IDa duen ikastaroak
 $string['radio'] = 'Aukera-botoia';
 $string['readme_desc'] = 'Mesedez klik egin  \'{$a->url}\' Gai Batuen inguruko askoz informazio gehiago izateko.';
 $string['readme_title'] = 'Gai Batuak irakur-nazazu';
-$string['resetactivitymeta'] = 'Modulu gehigarrien informazioa';
-$string['resetactivitymeta_help'] = 'Modulu gehigarrien informazioa guneko balio lehenetsietara berrabiarazten du.';
-$string['resetallactivitymeta'] = 'Modulu gehigarri guztien informazioa';
-$string['resetallactivitymeta_help'] = 'Modulu gehigarri guztien informazioa guneko balio lehenetsietara berrabiarazten du.';
 $string['resetallcolour'] = 'Koloreak';
 $string['resetallcolour_help'] = 'Koloreak eta opakotasunak guneko berezko balioetara berrabiarazten ditu.';
 $string['resetalldisplayinstructions'] = 'Erakutsi argibideak';
@@ -330,8 +294,6 @@ $string['settoggleiconset'] = 'Zehaztu ikono multzoa';
 $string['settoggleiconset_help'] = 'Etengailuaren ikono multzoa zehazten du.';
 $string['setviewsinglesectionenabled'] = 'Ikusi atal bakarra gaituta';
 $string['setviewsinglesectionenabled_help'] = 'Ikusi atal bakarra funtzionalitatea gaituta dago.';
-$string['showadditionalmoddata'] = 'Erakutsi informazio gehigarria hauentzat: {$a} ikastaroan';
-$string['showadditionalmoddata_help'] = 'Baimendu erabiltzaile guztiei jardueraren amaiera-data ikustea eta jardueretan kalifikatzeko baimena duten erabiltzaileei baita bidalketa kopurua ere.';
 $string['showfromothers'] = 'Erakutsi gaia';
 $string['sidepost'] = 'Ondoren';
 $string['sidepre'] = 'Aurretik';
@@ -344,7 +306,6 @@ $string['three'] = 'Hiru';
 $string['tif'] = 'Ikonoaren letra-tamaina';
 $string['toggleclose'] = 'Itxi';
 $string['toggleopen'] = 'Ireki';
-$string['topcoll:changeactivitymeta'] = 'Aldatu edo berrabiarazi jardueraren metadatuak';
 $string['topcoll:changecolour'] = 'Aldatu edo berrabiarazi kolorea';
 $string['topcoll:changelayout'] = 'Aldatu edo berrabiarazi diseinua';
 $string['topcoll:changetogglealignment'] = 'Aldatu edo berrabiarazi etengailuen lerrokadura';

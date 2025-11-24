@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_seb', language 'ja', version '4.4'.
+ * Strings for component 'quizaccess_seb', language 'ja', version '4.5'.
  *
  * @package     quizaccess_seb
  * @category    string
@@ -96,6 +96,7 @@ $string['seb:manage_seb_allowedbrowserexamkeys'] = 'SEB小テスト設定を修�
 $string['seb:manage_seb_allowreloadinexam'] = 'SEB小テスト設定を修正する: リロードを許可する';
 $string['seb:manage_seb_allowspellchecking'] = 'SEB小テスト設定を修正する: スペルチェックを有効にする';
 $string['seb:manage_seb_allowuserquitseb'] = 'SEB小テスト設定を修正する: 終了を許可する';
+$string['seb:manage_seb_configuremanually'] = 'SEB小テスト設定変更: 手動設定を選択する';
 $string['seb:manage_seb_enableaudiocontrol'] = 'SEB小テスト設定を修正する: オーディオコントロールを有効にする';
 $string['seb:manage_seb_expressionsallowed'] = 'SEB小テスト設定を修正する: 単純式許可';
 $string['seb:manage_seb_expressionsblocked'] = 'SEB小テスト設定を修正する: 単純式不許可';
@@ -114,13 +115,14 @@ $string['seb:manage_seb_showtime'] = 'SEB小テスト設定を修正する: 時�
 $string['seb:manage_seb_showwificontrol'] = 'SEB小テスト設定を修正する: Wi-Fiコントロールを表示する';
 $string['seb:manage_seb_templateid'] = 'SEB小テスト設定を修正する: SEBテンプレートを選択する';
 $string['seb:manage_seb_userconfirmquit'] = 'SEB小テスト設定を修正する: 終了時に確認する';
+$string['seb:manage_seb_usesebclientconfig'] = 'SEB小テスト設定変更: SEBクライアント設定を使用する';
 $string['seb:managetemplates'] = 'SEB設定テンプレートを管理します。';
 $string['seb_activateurlfiltering'] = 'URLフィルタリングを有効にする';
 $string['seb_activateurlfiltering_help'] = 'この設定を有効にした場合、ウェブページ読み込み時にURLがフィルタリングされます。フィルタ設定は以下で定義する必要があります。';
 $string['seb_allowcapturecamera'] = 'ブラウザからカメラへのアクセスを許可する';
-$string['seb_allowcapturecamera_help'] = 'この設定を有効にした場合、試験セッションの開始前にSEB用カメラへのアクセス許可を求めるメッセージが表示されます。macOS 12/iOS 15またはそれ以降でこの設定を無効にした場合、いかなる場合でもウェブアプリケーションがカメラにアクセスできなくなります。つまり、WebRTC経由でのビデオ録画はできません。';
+$string['seb_allowcapturecamera_help'] = 'この設定を有効にした場合、試験セッションの開始前にSEB用カメラへのアクセス許可を求めるメッセージが表示されます。macOS 12/iOS 15またはそれ以降でこの設定を無効にした場合、ウェブアプリケーションがカメラにアクセスできなくなります。つまり、WebRTC経由でのビデオ録画はできません。';
 $string['seb_allowcapturemicrophone'] = 'ブラウザからマイクへのアクセスを許可する';
-$string['seb_allowcapturemicrophone_help'] = 'この設定を有効にした場合、試験セッションの開始前にSEB用マイクへのアクセス許可を求めるメッセージが表示されます。macOS 12/iOS 15またはそれ以降でこの設定を無効にした場合、いかなる場合でもウェブアプリケーションがマイクにアクセスできなくなります。つまり、WebRTC経由でのオーディオレコーディングはできません。';
+$string['seb_allowcapturemicrophone_help'] = 'この設定を有効にした場合、試験セッションの開始前にSEB用マイクへのアクセス許可を求めるメッセージが表示されます。macOS 12/iOS 15またはそれ以降でこの設定を無効にした場合、ウェブアプリケーションがマイクにアクセスできなくなります。つまり、WebRTC経由でのオーディオレコーディングはできません。';
 $string['seb_allowedbrowserexamkeys'] = 'browser examキーを許可する';
 $string['seb_allowedbrowserexamkeys_help'] = 'あなたはこの小テストに許可されたSafe Exam Browserのバージョンのbrowser examキーをこのフィールドに入力できます。キーが入力されない場合、browser examキーはチェックしません。';
 $string['seb_allowreloadinexam'] = '受験中のリロードを許可する';
@@ -155,7 +157,7 @@ $string['seb_requiresafeexambrowser_help'] = 'この設定を有効にした場�
 * No
 <br />小テストの受験にSafe Exam Browserは要求されません。
 * Yes –既存のテンプレートを使用する
-<br />Safe Exam Browserの設定テンプレートを使用できます。テンプレートはサイト管理者によって管理されます。あなたの手動設定はテンプレートの設定を上書きします。
+<br />Safe Exam Browserの設定テンプレートを使用できます。テンプレートはサイト管理者により管理されます。あなたの手動設定はテンプレートの設定を上書きします。
 * Yes – 手動設定する
 <br />Safe Exam Browserの設定テンプレートは使用されません。あなたはSafe Exam Browserブラウザを手動で設定できます。
 * Yes – 私の設定をアップロードする

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'pt', version '4.4'.
+ * Strings for component 'reportbuilder', language 'pt', version '4.5'.
  *
  * @package     reportbuilder
  * @category    string
@@ -67,8 +67,8 @@ $string['columnadded'] = 'Adicionada a coluna \'{$a}\'';
 $string['columnaggregated'] = 'Agregada a coluna \'{$a}\'';
 $string['columndeleted'] = 'Apagada a coluna \'{$a}\'';
 $string['columnmoved'] = 'Movida a coluna \'{$a}\'';
-$string['columnsortdirectionasc'] = 'Ordenar a coluna \'{$a}\' ascendente';
-$string['columnsortdirectiondesc'] = 'Ordenar a coluna \'{$a}\' descendente';
+$string['columnsortdirectionasc'] = 'Alterar a ordenação inicial da coluna \'{$a}\' para crescente';
+$string['columnsortdirectiondesc'] = 'Alterar a ordenação inicial da coluna \'{$a}\' para decrescente';
 $string['columnsortdisable'] = 'Desativar a ordenação inicial da coluna \'{$a}\'';
 $string['columnsortenable'] = 'Ativar a ordenação inicial da coluna \'{$a}\'';
 $string['columnsortupdated'] = 'Atualizada a ordenação da coluna \'{$a}\'';
@@ -147,6 +147,7 @@ $string['filterdurationunit'] = 'unidade {$a}';
 $string['filterendswith'] = 'Termina com';
 $string['filterequalorgreaterthan'] = 'Maior ou igual a';
 $string['filterequalorlessthan'] = 'Menor ou igual a';
+$string['filterfieldfrom'] = '{$a} desde';
 $string['filterfieldoperator'] = 'operador {$a}';
 $string['filterfieldto'] = '{$a} até';
 $string['filterfieldunit'] = 'unidade {$a}';

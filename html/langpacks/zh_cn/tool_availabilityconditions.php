@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_availabilityconditions', language 'zh_cn', version '4.4'.
+ * Strings for component 'tool_availabilityconditions', language 'zh_cn', version '4.5'.
  *
  * @package     tool_availabilityconditions
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['defaultdisplaymode'] = '默认显示模式';
 $string['manageplugins'] = '管理限制';
 $string['pluginname'] = '可用性状态管理';
 $string['privacy:metadata'] = '可用性条件管理插件不存储任何个人数据。';

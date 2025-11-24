@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'es', version '4.4'.
+ * Strings for component 'quiz', language 'es', version '4.5'.
  *
  * @package     quiz
  * @category    string
@@ -398,6 +398,7 @@ $string['eventslotgradeitemupdated'] = 'Ranura de elemento de calificación actu
 $string['eventslotmarkupdated'] = 'Marca de espacio actualizada';
 $string['eventslotmoved'] = 'Espacio movido';
 $string['eventslotrequirepreviousupdated'] = 'El espacio necesita una actualización previa';
+$string['eventslotversionupdated'] = 'Versión slot actualizada';
 $string['everynquestions'] = 'Cada {$a} preguntas';
 $string['everyquestion'] = 'Cada pregunta';
 $string['everythingon'] = 'Todo activado';
@@ -580,6 +581,7 @@ $string['maxmarks_help'] = 'La puntuación máxima disponible para cada pregunta
 $string['messageprovider:attempt_grading_complete'] = 'Notificación de que su intento se ha calificado';
 $string['messageprovider:attempt_overdue'] = 'Advertencia cuando su intento de resolver el cuestionario se retrase';
 $string['messageprovider:confirmation'] = 'Confirmación de su envío del cuestionario';
+$string['messageprovider:quiz_open_soon'] = 'El cuestionario abrirá pronto';
 $string['messageprovider:submission'] = 'Notificación del envío de cuestionarios de sus estudiantes';
 $string['min'] = 'Mín';
 $string['minutes'] = 'Minutos';
@@ -675,7 +677,7 @@ $string['onlyteachersimport'] = 'Sólo los profesores con permiso de edición pu
 $string['onthispage'] = 'Esta página';
 $string['open'] = 'Sin contestar';
 $string['openafterclose'] = 'No se puede actualizar el cuestionario. Ha indicado una fecha de apertura posterior a la fecha de cierre.';
-$string['openclosedatesupdated'] = 'Actualizadas fechas de apertura y cierre del cuestionario';
+$string['openclosedatesupdated'] = 'Fechas de apertura y cierre de cuestionario';
 $string['optional'] = 'opcional';
 $string['orderandpaging'] = 'Orden y paginación';
 $string['orderandpaging_help'] = 'Los números 10, 20, 30, ... al lado de cada pregunta indican su orden. Los números aumentan en franjas de 10 para dejar espacio a las preguntas adicionales que se insertan posteriormente. Para cambiar el orden de las preguntas, cambie los números haciendo clic en el botón "Volver a ordenar las preguntas".
@@ -869,6 +871,12 @@ $string['quizopen'] = 'Abrir cuestionario';
 $string['quizopenclose'] = 'Fechas de apertura y cierre';
 $string['quizopenclose_help'] = 'Los estudiantes sólo podrán comenzar un intento de resolver el cuestionario después de la apertura y deben completarlo antes de la hora de cierre.';
 $string['quizopenclose_link'] = 'mod/quiz/timing';
+$string['quizopendatesoonhtml'] = '<p>Hola, {$a->firstname}.</p>
+<p>El cuestionario <strong>{$a->quizname}</strong> del curso {$a->coursename} abre próximamente.
+<p><strong>Apertura: {$a->timeopen}</strong></p>
+<p><strong>Cierre: {$a->timeclose}</strong></p>
+<p><a href="{$a->url}">Ir al cuestionario</a></p>';
+$string['quizopendatesoonsubject'] = 'Abre en {$a->timeopen}: {$a->quizname}';
 $string['quizopened'] = 'Este cuestionario está abierto';
 $string['quizopenedon'] = 'Este cuestionario se abrió el {$a}';
 $string['quizopens'] = 'El cuestionario se abrirá el';
@@ -920,9 +928,9 @@ $string['regradenotallowed'] = 'No dispone de permiso para recalificar este cues
 $string['regradingquestion'] = 'Recalificando "{$a}".';
 $string['regradingquiz'] = 'Recalificando el cuestionario "{$a}"';
 $string['remove'] = 'Quitar';
-$string['removeallgroupoverrides'] = 'Eliminar todas las excepciones de grupo';
-$string['removeallquizattempts'] = 'Eliminar todos los intentos de resolver el cuestionario';
-$string['removealluseroverrides'] = 'Eliminar todas las excepciones de usuario';
+$string['removeallgroupoverrides'] = 'Todas las excepciones de grupo';
+$string['removeallquizattempts'] = 'Todos los intentos de resolver el cuestionario';
+$string['removealluseroverrides'] = 'Todas las excepciones de usuario';
 $string['removeemptypage'] = 'Eliminar la página vacía';
 $string['removepagebreak'] = 'Retire salto de página';
 $string['removeselected'] = 'Eliminar las seleccionadas';
@@ -1035,6 +1043,7 @@ $string['selectmultipletoolbar'] = 'Seleccionar barra de herramientas múltiple'
 $string['selectnone'] = 'Omitir todos';
 $string['selectquestionslot'] = 'Seleccionar pregunta {$a}';
 $string['selectquestiontype'] = '-- Seleccionar tipo de pregunta --';
+$string['sendnotificationopendatesoon'] = 'Notificar usuario que próximamente abre un cuestionario';
 $string['serveradded'] = 'Servidor añadido';
 $string['serveridentifier'] = 'Identificador';
 $string['serverinfo'] = 'Información del servidor';
@@ -1104,6 +1113,7 @@ $string['subplugintype_quizaccess_plural'] = 'Reglas de acceso';
 $string['substitutedby'] = 'serán sustituídas por';
 $string['summaryofattempt'] = 'Resumen del intento';
 $string['summaryofattempts'] = 'Sus intentos';
+$string['summaryofattemptscaption'] = 'Resumen de intento {$a}';
 $string['temporaryblocked'] = 'Durante cierto tiempo no está autorizado a intentar de nuevo resolver el cuestionario.<br /> Podrá intentarlo nuevamente en:';
 $string['theattempt'] = 'El intento';
 $string['theattempt_help'] = 'Si el estudiante puede revisar el intento.';

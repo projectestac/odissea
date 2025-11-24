@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ro', version '4.4'.
+ * Strings for component 'question', language 'ro', version '4.5'.
  *
  * @package     question
  * @category    string
@@ -321,7 +321,6 @@ $string['nocate'] = 'Nu există o asemenea categorie {$a}!';
 $string['noconditionspecified'] = 'Te rugăm să specifici o condiție';
 $string['nopermissionadd'] = 'Nu aveţi permisiunea să adăugaţi întrebări în această secţiune.';
 $string['nopermissionedit'] = 'Nu aveți permisiunea să editați întrebările din acest loc.';
-$string['nopermissionmove'] = 'Nu aveţi permisiunea să transferaţi întrebări din cadrul acestei secţiuni. Va trebui să salvaţi întrebarea în această categorie sau să o salvaţi cu un alt nume.';
 $string['noprobs'] = 'Nu s-au identificat probleme în baza de date cu întrebări creată de dumneavoastră.';
 $string['noquestionbanks'] = 'Nu s-a găsit niciun plugin Banca de întrebări';
 $string['noquestions'] = 'Nu s-au găsit întrebări care ar putea fi exportate. Asigurați-vă că ați selectat o categorie pentru export  care conține întrebări.';
@@ -414,7 +413,11 @@ $string['questionbehavioursorderexplained'] = 'Introduceți o listă de comporta
 $string['questioncategories'] = 'Categorii de întrebări';
 $string['questioncategory'] = 'Categoria întrebării';
 $string['questioncatsfor'] = 'Categoriile de  întrebări pentru {$a}.';
+$string['questiondefaultssave'] = 'Salvați opțiunile întrebării ca fiind preferințele implicite ale utilizatorului';
+$string['questiondefaultssave_desc'] = 'Dacă există opțiuni de întrebare, cum ar fi „Notare implicită”, „Un răspuns sau mai multe răspunsuri?” etc. ar trebui să fie salvate ca preferințe ale utilizatorului atunci când este trimis formularul de editare al întrebării, pentru a fi utilizat ca implicite data viitoare când utilizatorul accesează formularul.';
 $string['questiondoesnotexist'] = 'Această întrebare nu există.';
+$string['questionediting'] = 'Editarea întrebărilor';
+$string['questionediting_desc'] = 'Aceste setări se aplică la editarea formularelor întrebării.';
 $string['questionformtagheader'] = '{$a} etichete';
 $string['questionidmismatch'] = 'Nu corespund id-urile întrebării';
 $string['questionloaderror'] = 'Nu s-au putut încărca opțiunile întrebării.';

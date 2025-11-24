@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'el', version '4.4'.
+ * Strings for component 'error', language 'el', version '4.5'.
  *
  * @package     error
  * @category    string
@@ -157,7 +157,6 @@ $string['cannotsetupcapformod'] = 'Δεν ήταν δυνατός ο ορισμ�
 $string['cannotsetupcapforplugin'] = 'Δεν ήταν δυνατός ο ορισμός των δυνατοτήτων για {$a}';
 $string['cannotshowhidecoursesincategory'] = 'Αδυναμία προβολής/απόκρυψης μαθημάτων στην κατηγορία {$a}.';
 $string['cannotsignup'] = 'Δεν μπορείτε να δημιουργήσετε ένα νέο λογαριασμό, διότι έχετε ήδη συνδεθεί ως {$a}.';
-$string['cannotswitcheditmodeon'] = 'Αδυναμία ενεργοποίησης της κατάστασης λειτουργίας επεξεργασίας';
 $string['cannotunassigncap'] = 'Δεν ήταν δυνατή η αφαίρεση της απαρχαιωμένης δυνατότητας {$a->cap} από το ρόλο {$a->role}';
 $string['cannotunassignrolefrom'] = 'Δεν ήταν δυνατή η αφαίρεση του ρόλου με αναγνωριστικό: {$a} από αυτόν τον χρήστη';
 $string['cannotunzipfile'] = 'Αδυναμία αποσυμπίεσης αρχείου';

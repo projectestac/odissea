@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_redis', language 'ja', version '4.4'.
+ * Strings for component 'cachestore_redis', language 'ja', version '4.5'.
  *
  * @package     cachestore_redis
  * @category    string
@@ -97,4 +97,4 @@ $string['test_ttl_desc'] = 'TTL (遅いセット) を必要とするキャッシ
 $string['usecompressor'] = '圧縮を使用する';
 $string['usecompressor_help'] = 'シリアライズの後に使用するコンプレッサを指定してください。これはphp-redisレベルではなくMoodleキャッシュAPIレベルで実行されます。';
 $string['useserializer'] = 'シリアライザを使用する';
-$string['useserializer_help'] = 'シリアライズに使用するシリアライザを指定してください。有効なシリアライザは「Redis::SERIALIZER_PHP」または「Redis::SERIALIZER_IGBINARY」です。後者は「--enable-redis-igbinary option」によってphpredisが有効にされた上でigbinary拡張モジュールがロードされている場合のみサポートされます。';
+$string['useserializer_help'] = 'シリアライズに使用するシリアライザを指定してください。有効なシリアライザは「Redis::SERIALIZER_PHP」または「Redis::SERIALIZER_IGBINARY」です。後者は「--enable-redis-igbinary option」によりphpredisが有効にされた上でigbinary拡張モジュールがロードされている場合のみサポートされます。';

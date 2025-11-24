@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'uk', version '4.4'.
+ * Strings for component 'book', language 'uk', version '4.5'.
  *
  * @package     book
  * @category    string
@@ -105,7 +105,7 @@ $string['pluginadministration'] = 'Керування книгою';
 $string['pluginname'] = 'Книга';
 $string['previouschapter'] = 'Попередній розділ';
 $string['privacy:metadata'] = 'Модуль «Книжкова діяльність» не зберігає жодних персональних даних.';
-$string['removeallbooktags'] = 'Видаліть усі теги книги';
+$string['removeallbooktags'] = 'Усі книжкові теги';
 $string['search:activity'] = 'Книга - інформація про діяльність';
 $string['search:chapter'] = 'Книга - розділи';
 $string['showchapter'] = 'Показати розділ "{$a}"';

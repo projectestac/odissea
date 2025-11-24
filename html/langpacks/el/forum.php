@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'el', version '4.4'.
+ * Strings for component 'forum', language 'el', version '4.5'.
  *
  * @package     forum
  * @category    string
@@ -537,9 +537,6 @@ $string['postmailinfo'] = 'Αυτό είναι ένα αντίγραφο ενό�
 $string['postmailnow'] = '<p> Αυτή η ανάρτηση θα αποσταλεί αμέσως με ηλε.ταχυδρομείο σε όλους τους εγγεγραμμένους στο φόρουμ.</p>';
 $string['postmailreply'] = 'Για να απαντήσετε κάντε κλικ σε αυτόν τον σύνδεσμο: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
-$string['postrating1'] = 'Δείχνει περισσότερο ξεχωριστή γνώση';
-$string['postrating2'] = 'Ξεχωριστή και συνδεδεμένη';
-$string['postrating3'] = 'Δείχνει περισσότερο συνδεδεμένη γνώση';
 $string['posts'] = 'Αναρτήσεις';
 $string['postsfrom'] = 'Αναρτήσεις από';
 $string['postsmadebyuser'] = 'Αναρτήσεις που έγιναν από τον/την {$a}';

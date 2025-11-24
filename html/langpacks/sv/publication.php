@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'publication', language 'sv', version '4.4'.
+ * Strings for component 'publication', language 'sv', version '4.5'.
  *
  * @package     publication
  * @category    string
@@ -50,9 +50,6 @@ $string['choose'] = 'Vänligen välj...';
 $string['configautoimport'] = 'Om du föredrar att studentbidrag importeras automatiskt till studentmapp. Denna funktion kan aktiveras / inaktiveras för varje studentmapp separat.';
 $string['configmaxbytes'] = 'Förinställd maxstorlek för alla filer i studentmappen.';
 $string['configmaxfiles'] = 'Förinställt tillåtet maxantal bifogade filer per användare.';
-$string['configobtainstudentapproval'] = 'Filer publiceras / blir synliga efter studentens medgivande';
-$string['configobtainteacherapproval'] = 'Studenters filer är som standard synliga (publicerade) för alla andra deltagare.';
-$string['configrequiremodintro'] = 'Avaktivera denna om du inte vill tvinga lärare att alltid ge en beskrivning av aktiviteten.';
 $string['courseuploadlimit'] = 'Maximal filstorlek för kurs';
 $string['currentlynotapproved'] = '* För närvarande varken godkänd eller nekad';
 $string['cutoffdate'] = 'Avstängningsdatum';
@@ -134,7 +131,6 @@ $string['published_aftercheck'] = 'Efter godkännande av lärare';
 $string['published_immediately'] = 'Omedelbart efter uppladdning';
 $string['rejected'] = 'Ej godkänd';
 $string['rejectusers'] = 'Dölj för alla';
-$string['requiremodintro'] = 'Kräv beskrivning av aktiviteten';
 $string['reset'] = 'Återställ';
 $string['reset_userdata'] = 'Alla data';
 $string['resetstudentapproval'] = 'Återställ status';

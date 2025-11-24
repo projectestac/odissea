@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'es', version '4.4'.
+ * Strings for component 'tool_generator', language 'es', version '4.5'.
  *
  * @package     tool_generator
  * @category    string
@@ -58,6 +58,9 @@ $string['error_nonexistingcourse'] = 'El curso especificado no existe';
 $string['error_nopageinstances'] = 'El curso seleccionado no contiene instancias de página';
 $string['error_notdebugging'] = 'No disponible en este servidor porque la depuración no está configurada a DESARROLLADOR';
 $string['error_nouserspassword'] = 'Tiene que establecer $CFG->tool_generator_users_password en el archivo config.php para generar el plan de prueba';
+$string['execute'] = 'Ejecutar';
+$string['execute_cleanup'] = 'Limpiar escenarios';
+$string['execute_scenarios'] = 'Probando escenarios';
 $string['fullname'] = 'Curso de test: {$a->size}';
 $string['maketestcourse'] = 'Hacer curso de prueba';
 $string['maketestplan'] = 'Hacer un plan de prueba de JMeter';
@@ -90,6 +93,7 @@ $string['sitesize_4'] = 'XL (~10GB; 1065 cursos, creados en ~5 horas)';
 $string['sitesize_5'] = 'XXL (~20GB; 4177 cursos, creados en ~10 horas)';
 $string['size'] = 'Tamaño del curso';
 $string['smallfiles'] = 'Ficheros pequeños';
+$string['step_example'] = 'Ejemplo de paso:';
 $string['targetcourse'] = 'Probar curso objetivo';
 $string['testplanexplanation'] = 'Esta herramienta crea un archivo de plan de prueba de JMeter junto con el archivo de credenciales de usuario.
 
@@ -120,7 +124,9 @@ $string['testscenario'] = 'Crear escenarios de prueba';
 $string['testscenario_description'] = 'Crear escenarios de prueba usa una sintaxis de archivos personalizada limitada para crear todos los elementos necesarios para ejecutar una comprobación manual.';
 $string['testscenario_errorparsing'] = 'Error al analizar archivo de características: {$a}';
 $string['testscenario_file'] = 'Archivo de características';
-$string['testscenario_filedesc'] = 'Los archivos de características subido solamente pueden contener escenarios con pasos core_data_generator. Aún no es compatible con scenario outlines. Todos los escenarios se ejecutarán a la vez pero el fondo se ignorará.';
+$string['testscenario_filedesc'] = 'Los archivos de características subidos solamente pueden contener escenarios con pasos core_data_generator que no requieran selenium. Todos los escenarios se ejecutarán a la vez menos los que tengan la etiqueta @cleanup.';
+$string['testscenario_filedesc_cleanup'] = 'Los escenarios con la etiqueta @cleanup se ejecutarán sólo si el ajuste "Ejecturar" está configurado como "Cleanup". Para ejecutar la limpieza vía CLI, puede usar la opción --cleanup.';
+$string['testscenario_filedesc_list'] = 'Esta es la lista de pasos que se pueden usar en el archivo de características de escenario de prueba:';
 $string['testscenario_invalidfile'] = 'El archivo de formato no es válido o contiene pasos no válidos.';
 $string['testscenario_invalidstep'] = 'Paso no válido. Crear escenarios de prueba solamente admite generator steps.';
 $string['testscenario_nosteps'] = 'No hay pasos a ejecutar en el archivo.';

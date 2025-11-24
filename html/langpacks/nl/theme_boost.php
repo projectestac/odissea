@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'nl', version '4.4'.
+ * Strings for component 'theme_boost', language 'nl', version '4.5'.
  *
  * @package     theme_boost
  * @category    string
@@ -34,7 +34,6 @@ $string['brandcolor'] = 'Hoofdkleur';
 $string['brandcolor_desc'] = 'Accentkleur';
 $string['choosereadme'] = 'Boost is een modern zeer aanpasbaar thema. Dit thema is bedoeld om direct te worden gebruikt, of als basis thema bij het maken van nieuwe thema\'s gebaseerd op Bootstrap 4.';
 $string['configtitle'] = 'Boost';
-$string['currentinparentheses'] = '(huidige)';
 $string['generalsettings'] = 'Algemene instellingen';
 $string['loginbackgroundimage'] = 'Achtergrondafbeelding voor de inlogpagina';
 $string['loginbackgroundimage_desc'] = 'De afbeelding die moet worden weergegeven als achtergrond voor de inlogpagina.';
@@ -48,8 +47,6 @@ $string['privacy:drawerblockclosed'] = 'De huidige voorkeur voor het blokkenpane
 $string['privacy:drawerblockopen'] = 'De huidige voorkeur voor het blokkenpaneel is open.';
 $string['privacy:drawerindexclosed'] = 'De huidige voorkeur voor de inhoudsopgave is gesloten.';
 $string['privacy:drawerindexopen'] = 'De huidige voorkeur voor de inhoudsopgave is geopend.';
-$string['privacy:drawernavclosed'] = 'De huidige voorkeur voor het navigatiepaneel is gesloten.';
-$string['privacy:drawernavopen'] = 'De huidige voorkeur voor het navigatiepaneel is open.';
 $string['privacy:metadata'] = 'Het Boost-thema slaat geen persoonlijke gegevens over een gebruiker op.';
 $string['privacy:metadata:preference:draweropenblock'] = 'De voorkeur van de gebruiker om het paneel met blokken te verbergen of te tonen.';
 $string['privacy:metadata:preference:draweropenindex'] = 'De voorkeur van de gebruiker voor het verbergen of tonen van de cursusindex.';

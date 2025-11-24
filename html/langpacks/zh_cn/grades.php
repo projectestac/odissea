@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'zh_cn', version '4.4'.
+ * Strings for component 'grades', language 'zh_cn', version '4.5'.
  *
  * @package     grades
  * @category    string
@@ -728,9 +728,9 @@ $string['recovergradesdefault'] = '恢复成绩默认';
 $string['recovergradesdefault_help'] = '当用户重新加入课程时默认恢复原来的成绩。';
 $string['refreshpreview'] = '刷新预览';
 $string['regradeanyway'] = '仍然重新评分';
-$string['removeallcoursegrades'] = '删除所有成绩';
+$string['removeallcoursegrades'] = '所有成绩';
 $string['removeallcoursegrades_help'] = '如果勾选，则将删除手动添加到成绩簿中的所有成绩项目和成绩，以及被覆盖、排除、隐藏和锁定的成绩的数据。仅保留与活动关联的等级项目和等级。';
-$string['removeallcourseitems'] = '删除所有成绩项和类别';
+$string['removeallcourseitems'] = '所有成绩项和类别';
 $string['removeallcourseitems_help'] = '如果选中，则将删除所有手动添加到成绩册的成绩项，以及与覆盖、例外、隐藏和锁定的成绩有关的成绩和数据。 只保留与活动相关的成绩项。';
 $string['report'] = '报表';
 $string['reportdefault'] = '报表默认值（{$a}）';

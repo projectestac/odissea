@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'ja', version '4.4'.
+ * Strings for component 'enrol_imsenterprise', language 'ja', version '4.5'.
  *
  * @package     enrol_imsenterprise
  * @category    string
@@ -43,7 +43,7 @@ $string['createnewcourses_desc'] = 'この設定を有効にした場合、IMS�
 $string['createnewusers'] = 'Moodleに登録されていないユーザアカウントを作成する';
 $string['createnewusers_desc'] = 'IMSエンタプライズユーザ登録データには一般的に一連のユーザを記述します。この設定を有効にした場合、Moodleデータベースで探すことのできないユーザすべてを作成することができます。
 
-ユーザは最初にIDナンバ、次にMoodleユーザ名で検索されます。パスワードはIMSエンタプライズプラグインによってインポートされません。Moodle認証プラグインでユーザ認証することをお勧めします。';
+ユーザは最初にIDナンバ、次にMoodleユーザ名で検索されます。パスワードはIMSエンタプライズプラグインによりインポートされません。Moodle認証プラグインでユーザ認証することをお勧めします。';
 $string['cronfrequency'] = '処理の頻度';
 $string['deleteusers'] = 'IMSデータに指定されている場合、ユーザアカウントを削除する';
 $string['deleteusers_desc'] = 'この設定を有効にした場合、IMSエンタプライズ登録データでユーザアカウントの削除を指定  (「recstatus」フラグにユーザアカウントの削除を意味する「3」を設定) することができます。Moodleの標準どおり、実際にはユーザレコードはMoodleデータベースから削除されず、アカウントに削除フラグがセットされます。';
@@ -99,6 +99,6 @@ $string['updatecourses_desc'] = 'この設定を有効にした場合、IMS Ente
 $string['updateusers'] = 'IMSデータで指定された場合、ユーザアカウントを更新する';
 $string['updateusers_desc'] = 'この設定を有効にした場合、IMS Enterprise登録データはユーザアカウントの変更を指定することができます (「recstatus」フラグに「2」が設定された場合、更新を意味します)。';
 $string['usecapitafix'] = 'Capitaを使用している場合、チェックしてください (XMLフォーマットが少しだけ異なります)。';
-$string['usecapitafix_desc'] = 'Capitaによって作成された学生データにはXML出力において若干のエラーがあることが見つかっています。あなたがCapitaを使用している場合、このオプションを有効にしてください - そうでなければ、チェックしないままにしてください。';
+$string['usecapitafix_desc'] = 'Capitaにより作成された学生データにはXML出力において若干のエラーがあることが見つかっています。あなたがCapitaを使用している場合、このオプションを有効にしてください - そうでなければ、チェックしないままにしてください。';
 $string['usersettings'] = 'ユーザデータオプション';
 $string['zeroisnotruncation'] = '表示:0  切り詰め:なし';

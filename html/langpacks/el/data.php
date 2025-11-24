@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'el', version '4.4'.
+ * Strings for component 'data', language 'el', version '4.5'.
  *
  * @package     data
  * @category    string
@@ -29,7 +29,6 @@ $string['action'] = 'Ενέργεια';
 $string['actionsmenu'] = 'Μενού ενεργειών';
 $string['add'] = 'Προσθήκη καταχώρησης';
 $string['addcomment'] = 'Προσθήκη σχολίου';
-$string['addentries'] = 'Προσθήκη καταχωρήσεων';
 $string['addtemplate'] = 'Προσθήκη φόρμας/υποδείγματος';
 $string['advancedsearch'] = 'Προχωρημένη αναζήτηση';
 $string['allowcomments'] = 'Να επιτρέπονται τα σχόλια στις καταχωρήσεις';
@@ -54,8 +53,6 @@ $string['availabletags_help'] = 'Οι ετικέτες είναι δεσμευτ
 Μόνο οι ετικέτες που είναι στην λίστα «Διαθέσιμες ετικέτες» μπορούν να χρησιμοποιηθούν στην τρέχουσα φόρμα.';
 $string['availabletodate'] = 'Διαθέσιμο έως';
 $string['availabletodatevalidation'] = 'Η «Διαθέσιμο έως» ημερομηνία δεν μπορεί να οριστεί νωρίτερα από την «Διαθέσιμο από».';
-$string['blank'] = 'Κενό';
-$string['buttons'] = 'Ενέργειες';
 $string['bynameondate'] = 'κατά {$a->name} - {$a->date}';
 $string['calendarend'] = '{$a} λήξη';
 $string['calendarstart'] = '{$a} έναρξη';
@@ -293,7 +290,6 @@ $string['nolisttemplate'] = 'Η φόρμα λίστας δεν έχει ορισ
 $string['nomatch'] = 'Δεν βρέθηκαν καταχωρήσεις που να ταιριάζουν!';
 $string['nomaximum'] = 'Χωρίς μέγιστο';
 $string['norecords'] = 'Δεν υπάρχουν καταχωρήσεις στη βάση δεδομένων';
-$string['nosingletemplate'] = 'Η ατομική φόρμα δεν έχει οριστεί ακόμα';
 $string['notapproved'] = 'Καταχώρηση μη εγκεκριμένη ακόμη.';
 $string['notinjectivemap'] = 'Η αντιστοίχιση δεν είναι ένα προς ένα';
 $string['notopenyet'] = 'Συγγνώμη, αυτή η δραστηριότητα δεν είναι διαθέσιμη μέχρι {$a}';
@@ -313,7 +309,6 @@ $string['page-mod-data-x'] = 'Σελίδα αρθρώματος οποιασδή
 $string['pagesize'] = 'Καταχωρήσεις ανά σελίδα';
 $string['participants'] = 'Συμμετέχοντες';
 $string['picture'] = 'Εικόνα';
-$string['pleaseaddsome'] = 'Παρακαλούμε δημιουργήστε μερικά παρακάτω ή <a href="{$a}"> επιλέξετε ένα προκαθορισμένο σετ</a> για να ξεκινήσετε.';
 $string['pluginadministration'] = 'Διαχείριση δραστηριότητας βάσης δεδομένων';
 $string['pluginname'] = 'Βάση δεδομένων';
 $string['portfolionotfile'] = 'Εξαγωγή σε χαρτοφυλάκιο αντί αρχείου (μόνο csv ή leap2aσ)';
@@ -371,7 +366,6 @@ $string['saveaspresetmissingcapability'] = 'Ο χρήστης δεν έχει τ
 $string['savedataaspreset'] = 'Αποθήκευση όλων των πεδίων και των υποδειγμάτων ως προρύθμιση';
 $string['savesettings'] = 'Αποθήκευση ρυθμίσεων';
 $string['savesuccess'] = 'Επιτυχής αποθήκευση. Η προρύθμισή σας θα είναι διαθέσιμη σε όλο τον ιστότοπο.';
-$string['savetemplate'] = 'Αποθήκευση φόρμας';
 $string['search'] = 'Αναζήτηση';
 $string['search:activity'] = 'Βάση δεδομένων - πληροφορίες δραστηριότητας';
 $string['search:entry'] = 'Βάση δεδομένων - καταχωρήσεις';
@@ -397,7 +391,6 @@ $string['text'] = 'Κείμενο';
 $string['textarea'] = 'Περιοχή κειμένου';
 $string['timeadded'] = 'Χρόνος προσθήκης';
 $string['timemodified'] = 'Χρόνος τροποποίησης';
-$string['todatabase'] = 'σε αυτή τη βάση δεδομένων.';
 $string['type'] = 'Τύπος πεδίου';
 $string['undefinedprocessactionmethod'] = 'Δεν έχει οριστεί μέθοδος ενέργειας στο Data_Preset για να χειριστεί την ενέργεια «{$a}».';
 $string['unsupportedfields'] = 'Μη υποστηριζόμενα πεδία';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'it', version '4.4'.
+ * Strings for component 'error', language 'it', version '4.5'.
  *
  * @package     error
  * @category    string
@@ -36,6 +36,7 @@ $string['alreadyloggedin'] = 'Sei già autenticato come {$a}, per autenticarti c
 $string['authnotexisting'] = 'Il plugin di autenticazione non esiste';
 $string['backupcontainexternal'] = 'Questo file di backup contiene host Moodle Network che non sono definiti in questo sito';
 $string['backuptablefail'] = 'Non è stato possibile impostare le tabelle del backup';
+$string['blockcannotadd'] = 'Non è possibile aggiungere il blocco';
 $string['blockcannotconfig'] = 'Questo blocco non supporta configurazioni globali';
 $string['blockcannotinistantiate'] = 'Si è verificato un problema istanziando un block object';
 $string['blockcannotread'] = 'Non è stato possibile leggere i dati del blockid={$a}';
@@ -100,7 +101,7 @@ $string['cannotfindinfo'] = 'Non è possibile trovare per: "{$a}"';
 $string['cannotfindlang'] = 'Non è possibile trovare il language pack "{$a}"';
 $string['cannotfindteacher'] = 'Non è possibile trovare docenti';
 $string['cannotfinduser'] = 'Non è possibile trovare l\'utente di nome "{$a}"';
-$string['cannotgeoplugin'] = 'Non è possibile collegarsi al server geoPlugin disponibile su https://www.geoplugin.com, per favore verificare le impostazioni del proxy oppure installare il file di dati MaxMind GeoLite City';
+$string['cannotgeoplugin'] = 'Non è possibile collegarsi al server geoPlugin disponibile su https://www.geoplugin.com, per favore verificare le impostazioni del proxy oppure installare il file di dati MaxMind GeoIP City';
 $string['cannotgetblock'] = 'Non è stato possibile ottenere i blocchi dal database';
 $string['cannotgetcats'] = 'Non è possibile ottenere il record della categoria';
 $string['cannotgetdata'] = 'Non è possibile ottenere dati';
@@ -157,7 +158,6 @@ $string['cannotsetupcapformod'] = 'Non è stato possibile impostare i privilegi 
 $string['cannotsetupcapforplugin'] = 'Non è stato possibile impostare i privilegi per {$a}';
 $string['cannotshowhidecoursesincategory'] = 'Non è possibile visualizzare/nascondere il corso nella categoria {$a}';
 $string['cannotsignup'] = 'Non puoi creare un nuovo account poiché sei già autenticato come {$a}.';
-$string['cannotswitcheditmodeon'] = 'Non è stato possibile passare alla modalità modifica';
 $string['cannotunassigncap'] = 'Non è possibile rimuovere il privilegio deprecato {$a->cap} dal ruolo {$a->role}';
 $string['cannotunassignrolefrom'] = 'Non è possibile togliere a questo utente il ruolo id: {$a}';
 $string['cannotunzipfile'] = 'Non è possibile decomprimere il file.';
@@ -285,6 +285,8 @@ $string['filternotenabled'] = 'Il filtro non è abilitato!';
 $string['filternotinstalled'] = 'Il filtro {$a} non è installato';
 $string['forumblockingtoomanyposts'] = 'Hai superato il limite di messaggi impostato per questo forum.';
 $string['functionalityremoved'] = 'Stai tentando di accedere a funzionalità che sono state rimosse.';
+$string['gdfeaturenotsupported'] = 'L\'estensione GD non è stata compilata con i metodi per {$a}';
+$string['gdmimetypenotsupported'] = 'Tipo MIME non supportato.';
 $string['generalexceptionmessage'] = 'Eccezione - {$a}';
 $string['gradecantregrade'] = 'Si è verificato un errore durante il calcolo delle valutazioni: {$a}';
 $string['gradepubdisable'] = 'La pubblicazione delle valutazioni è disabilitata';
@@ -350,6 +352,7 @@ $string['invalidelementid'] = 'L\'ID dell\'elemento non è corretto';
 $string['invalidentry'] = 'Questo inserimento non è valido!';
 $string['invalidevent'] = 'Evento non valido';
 $string['invalidfieldname'] = '"{$a}" non è nome di campo valido';
+$string['invalidfile'] = 'Il file non è stato trovato';
 $string['invalidfiletype'] = '"{$a}" non è un tipo di file valido';
 $string['invalidformatpara'] = 'Formato errato per la scelta di un parametro';
 $string['invalidformdata'] = 'I dati del modulo sono errati';
@@ -397,6 +400,7 @@ $string['invalidxmlfile'] = '"{$a}" non è file XML valido';
 $string['iplookupfailed'] = 'Non è possibile trovare le informazioni geografiche sull\'indirzzo IP {$a}';
 $string['iplookupprivate'] = 'Non è possibile effettuare il lookup di indirizzi IP privati';
 $string['ipmismatch'] = 'Discordanza nell\'indirzzo IP del client';
+$string['itemnotfound'] = 'Non è stato trovato alcun {$a->itemtype} con un identificatore \'{$a->identifier}\'';
 $string['listcantmovedown'] = 'Non è stato possibile spostare in basso questo elemento in quanto è già l\'ultimo dei suoi pari';
 $string['listcantmoveleft'] = 'Non è stato possibile spostare a sinistra questo elemento in quanto non ha elementi genitore';
 $string['listcantmoveright'] = 'Non è stato possibile spostare a destra questo elemento in quanto non ci sono elementi pari da trasformare in genitore. Spostate l\'elemento al di sotto di un elemento pari e poi spostatelo a destra.';
@@ -406,8 +410,8 @@ $string['listnoitem'] = 'Elemento non trovato';
 $string['listnopeers'] = 'Non sono stati trovati elementi di pari livello';
 $string['listupdatefail'] = 'Durante la modifica della gerarchia dell\'elenco l\'operazione nel DB non è andata a buon fine.';
 $string['logfilenotavailable'] = 'I log non sono disponibili';
-$string['loginasnoenrol'] = 'Non si può usare "iscrivi" o "disiscrivi" se si è in una sessione "Login come".';
-$string['loginasonecourse'] = 'Non puoi entrare in questo corso.<br/>Devi prima terminare la sessione "Login come" prima di entrare in altri corsi.';
+$string['loginasnoenrol'] = 'Non si può usare \'iscrivi\' o \'disiscrivi\' se si è in una sessione \'Login come\'.';
+$string['loginasonecourse'] = 'Non puoi entrare in questo corso. Devi prima terminare la sessione \'Login come\' prima di entrare in altri corsi.';
 $string['maxareabytes'] = 'La dimensione del file eccede lo spazio rimasto disponibile in quest\'area.';
 $string['maxbytesfile'] = 'Il file {$a->file} è troppo grande. La dimensione massima che è possibile caricare è pari a {$a->size}.';
 $string['maxdraftitemids'] = 'I tuoi caricamenti di file sono stati temporaneamente limitati a causa del caricamento di un volume elevato di file. Attendi prima di riprovare.';
@@ -489,6 +493,7 @@ $string['nostartdatenoenddate'] = 'È possibile impostare una data di fine corso
 $string['nostatstodisplay'] = 'Spiacente, non ci sono dati da visualizzare';
 $string['notallowedtoupdateprefremotely'] = 'Non sei autorizzato ad aggiornare remotamente queste preferenze dell\'utente';
 $string['notavailable'] = 'Non è attualmente disponibile';
+$string['notfound'] = 'Non trovato';
 $string['notlocalisederrormessage'] = '{$a}';
 $string['notmemberofgroup'] = 'Non sei un membro di questo gruppo del corso';
 $string['notownerofkey'] = 'Non sei il proprietario di questa chiave';
@@ -540,6 +545,7 @@ $string['reverseproxyabused'] = 'I server non può essere raggiunto direttamente
 $string['rpcerror'] = 'Ooops! La comunicazione MNET è fallita! Di seguito il messaggio di errore da fornire all\'amministratore: {$a}';
 $string['scheduledbackupsdisabled'] = 'I backup periodici sono stati disabilitati dall\'amministratore del server.';
 $string['secretalreadyused'] = 'Il link di conferma cambio password è già stato utilizzato, la password non è stata cambiata';
+$string['sectioncantbefound'] = '<p>strong>Non è possibile trovare il contenuto</b></p><p>Può essere stato eliminato o l\'URL può essere errata.</strong>';
 $string['sectionnotexist'] = 'Questa sezione non esiste';
 $string['sendmessage'] = 'Invia messaggio';
 $string['sendmessagesent'] = 'Grazie per il feedback su: <br>{$a}';
@@ -557,6 +563,7 @@ $string['sessionhandlerproblem'] = 'Il session handler non è configurato corret
 $string['sessionipnomatch'] = 'Spiacente, ma il tuo IP sembra essere cambiato da quando ti sei autenticao. Questa caratteristica previene il furto della vostra identità  da parte di hacker mentre sei collegato a questo sito. Gli utenti non dovrebbero vedere questo messaggio - chiedi aiuto all\'amministratore del sito.';
 $string['sessionipnomatch2'] = '<p>Spiacente ma il tuo indirizzo IP è cambiato da quando ti sei autenticato. Questa misura di sicurezza evita che cracker possano rubare la tua identità mentre sei collegato al sito. L\'errore potrebbe comparire se stai usando reti wireless oppure se stai muovendovi su reti diverse. Per ricevere aiuto, contatta il tuo amministratore.</p>
 <p>Se desideri continuare, premi il pulsante F5 per ricaricare questa pagina.</p>';
+$string['sessionstarterror'] = 'Non è stato possibile avviare la sessione. Riprovare più tardi.';
 $string['sessionwaiterr'] = 'Si è verificato un timeout durante l\'attesa del session lock.<br />Attendi sino al termine della richiesta e riprova.';
 $string['shortnametaken'] = 'Il titolo abbreviato è già stato usato per un altro corso ({$a})';
 $string['sitepolicynotagreed'] = 'Le politiche del sito non sono state accettate: <a href="{$a}">Fai click qui per consultarle.</a>';

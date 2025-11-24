@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'ja', version '4.4'.
+ * Strings for component 'enrol_database', language 'ja', version '4.5'.
  *
  * @package     enrol_database
  * @category    string
@@ -53,9 +53,13 @@ $string['localcoursefield'] = 'ローカルコースフィールド';
 $string['localrolefield'] = 'ローカルロールフィールド';
 $string['localuserfield'] = 'ローカルユーザフィールド';
 $string['newcoursecategory'] = '新しいコースカテゴリフィールド';
+$string['newcourseenddate'] = '新しいコースの終了日フィールド';
+$string['newcourseenddate_desc'] = 'yyyy-mm-ddまたはUnix時間のフォーマットで日付を指定するか、設定されたコース期間からコース終了日を計算する場合は空白にしてください。';
 $string['newcoursefullname'] = '新しいコースフルネームフィールド';
 $string['newcourseidnumber'] = '新しいコースIDナンバフィールド';
 $string['newcourseshortname'] = '新しいコース省略名フィールド';
+$string['newcoursestartdate'] = '新しいコースの開始日フィールド';
+$string['newcoursestartdate_desc'] = 'yyyy-mm-ddまたはUnix時間のフォーマットで日付を指定するか、コース開始日を現在の日付に設定する場合は空白にしてください。';
 $string['newcoursetable'] = 'リモートの新しいコーステーブル';
 $string['newcoursetable_desc'] = '自動的に作成させるコース一覧を含むテーブル名を指定してください。空白の場合、コースは作成されません。';
 $string['pluginname'] = '外部データベース';

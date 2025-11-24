@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'ru', version '4.4'.
+ * Strings for component 'qtype_ddwtos', language 'ru', version '4.5'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -28,6 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['addmorechoiceblanks'] = 'Шаблоны для еще {no} вариантов';
 $string['answer'] = 'Ответ';
 $string['blank'] = 'пусто';
+$string['choicesacceptedtext'] = 'Напишите ответы, которые нужно будет вставить в пробелы. Можно включить дополнительные ответы для повышения сложности. <br/>
+Допустимое форматирование текста: &lt;sub&gt;, &lt;sup&gt;, &lt;b&gt;, &lt;i&gt;, &lt;em&gt;, &lt;strong&gt;. Также принимается TeX с использованием $$ в начале и в конце.';
 $string['correctansweris'] = 'Верный ответ: {$a}';
 $string['errorlimitedchoice'] = 'Вариант [[{$a}]] использовался более одного раза без установленного значения «Несколько». Пожалуйста, перепроверьте этот вопрос.';
 $string['infinite'] = 'Несколько';

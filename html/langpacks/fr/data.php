@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'fr', version '4.4'.
+ * Strings for component 'data', language 'fr', version '4.5'.
  *
  * @package     data
  * @category    string
@@ -29,8 +29,6 @@ $string['action'] = 'Action';
 $string['actionsmenu'] = 'Menu actions';
 $string['add'] = 'Ajouter une fiche';
 $string['addcomment'] = 'Ajouter un commentaire';
-$string['addedby'] = 'Ajouté par';
-$string['addentries'] = 'Ajouter des fiches';
 $string['addtemplate'] = 'Modèle de nouvelle fiche';
 $string['advancedsearch'] = 'Recherche avancée';
 $string['allowcomments'] = 'Autoriser les commentaires';
@@ -55,8 +53,6 @@ Les champs ont le format [[nom_de_champ]]. Toutes les autres balises sont format
 Seules les balises dans la liste des « Balises disponibles » peuvent être utilisées dans le modèle actuel.';
 $string['availabletodate'] = 'Disponible jusqu’au';
 $string['availabletodatevalidation'] = 'La date de fin de disponibilité ne peut pas être antérieure à la date de début de disponibilité.';
-$string['blank'] = 'Vide';
-$string['buttons'] = 'Actions';
 $string['bynameondate'] = 'par {$a->name}, le {$a->date}';
 $string['calendarend'] = '{$a} se termine';
 $string['calendarstart'] = '{$a} s’ouvre';
@@ -126,13 +122,13 @@ $string['defaultfieldenclosure'] = '(par défaut vide)';
 $string['defaultsortfield'] = 'Champ de tri par défaut';
 $string['delcheck'] = 'Case à cocher pour suppression par lots';
 $string['delete'] = 'Supprimer';
-$string['deleteallentries'] = 'Supprimer toutes les fiches';
+$string['deleteallentries'] = 'Toutes les fiches';
 $string['deletecomment'] = 'Voulez-vous vraiment supprimer ce commentaire ?';
 $string['deleteconfirm'] = 'Supprimer le préréglage {$a} ?';
 $string['deleted'] = 'supprimée';
 $string['deleteentry'] = 'Supprimer une fiche';
 $string['deletefield'] = 'Supprimer champ';
-$string['deletenotenrolled'] = 'Supprimer les fiches des utilisateurs non inscrits';
+$string['deletenotenrolled'] = 'Fiches des utilisateurs non inscrits';
 $string['deletewarning'] = 'La suppression d’un préréglage le retire de la liste des préréglages disponibles dans tous les cours.';
 $string['descending'] = 'Descendant';
 $string['directorynotapreset'] = '{$a->directory} n’est pas un préréglage. Fichiers manquants : {$a->missing_files}';
@@ -332,7 +328,6 @@ $string['nomatch'] = 'Aucune fiche trouvée !';
 $string['nomaximum'] = 'Pas de limite';
 $string['nopreviewavailable'] = 'Pas de prévisualisation disponible pour {$a}';
 $string['norecords'] = 'Pas encore de fiche';
-$string['nosingletemplate'] = 'Le modèle vue fiche unique n’est pas encore défini';
 $string['notapproved'] = 'En attente d’approbation';
 $string['notapprovederror'] = 'La fiche n’est pas encore approuvée.';
 $string['notemplates'] = 'Pas encore de modèle';
@@ -355,7 +350,6 @@ $string['page-mod-data-x'] = 'Toute page du module Base de données';
 $string['pagesize'] = 'Fiches par page';
 $string['participants'] = 'Participants';
 $string['picture'] = 'Image';
-$string['pleaseaddsome'] = 'Veuillez en créer maintenant ou <a href="{$a}">choisir un préréglage disponible</a>.';
 $string['pluginadministration'] = 'Administration de la base de données';
 $string['pluginname'] = 'Base de données';
 $string['portfolionotfile'] = 'Exporter vers un portfolio plutôt que vers un fichier (CSV et LEAP2a seulement)';
@@ -390,7 +384,7 @@ $string['recorddeleted'] = 'Fiche supprimée';
 $string['recorddisapproved'] = 'Fiche désapprouvée';
 $string['recordsnotsaved'] = 'Aucune fiche n’a été importée. Veuillez vérifier le format du fichier déposé.';
 $string['recordssaved'] = 'fiches importées';
-$string['removealldatatags'] = 'Supprimer tous les tags de base de données';
+$string['removealldatatags'] = 'Tous les tags de base de données';
 $string['requireapproval'] = 'Approbation requise';
 $string['requireapproval_help'] = 'Un enseignant doit approuver les fiches avant qu’elles soient visibles pour tout le monde.';
 $string['required'] = 'Requis';
@@ -426,7 +420,6 @@ $string['saveaspresetmissingcapability'] = 'L’utiliseur n’a pas les permissi
 $string['savedataaspreset'] = 'Enregistrer tous les champs et modèles comme préréglage et publier comme préréglage sur ce site';
 $string['savesettings'] = 'Enregistrer les réglages';
 $string['savesuccess'] = 'Préréglage enregistré. <a href="{$a->url}">Prévisualiser le préréglage</a>';
-$string['savetemplate'] = 'Enregistrer modèle';
 $string['search'] = 'Recherche';
 $string['search:activity'] = 'Base de données – information sur l’activité';
 $string['search:entry'] = 'Base de données – fiches';
@@ -458,7 +451,6 @@ $string['text'] = 'Texte';
 $string['textarea'] = 'Zone de texte';
 $string['timeadded'] = 'Date ajout';
 $string['timemodified'] = 'Date modification';
-$string['todatabase'] = 'à cette base de données.';
 $string['type'] = 'Type de champ';
 $string['undefinedprocessactionmethod'] = 'Aucune méthode n’est définie dans Data_Preset pour traiter l’action « {$a} ».';
 $string['unknown'] = 'Champ inconnu';

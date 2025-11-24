@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'ro', version '4.4'.
+ * Strings for component 'tool_generator', language 'ro', version '4.5'.
  *
  * @package     tool_generator
  * @category    string
@@ -66,6 +66,9 @@ $string['error_nonexistingcourse'] = 'Cursul specificat nu există';
 $string['error_nopageinstances'] = 'Cursul selectat nu conține instanțe ale modulului de pagină';
 $string['error_notdebugging'] = 'Nu este disponibil pe acest server deoarece depanarea nu este setată la DEVELOPER';
 $string['error_nouserspassword'] = 'Trebuie să setați $CFG->tool_generator_users_password în config.php pentru a genera planul de testare';
+$string['execute'] = 'Execută';
+$string['execute_cleanup'] = 'Șterge scenariile de testare';
+$string['execute_scenarios'] = 'Scenariu de testare';
 $string['fullname'] = 'Curs de testare: {$a->size}';
 $string['maketestcourse'] = 'Faceți un curs de testare';
 $string['maketestplan'] = 'Faceți planul de testare JMeter';
@@ -98,6 +101,7 @@ $string['sitesize_4'] = 'XL (~10GB; 1065 courses, created in ~5 hours)';
 $string['sitesize_5'] = 'XXL (~20GB; 4177 courses, created in ~10 hours)';
 $string['size'] = 'Dimensiune curs';
 $string['smallfiles'] = 'Fișiere mici';
+$string['step_example'] = 'Exemplu de pas:';
 $string['targetcourse'] = 'Testează cursul țintă';
 $string['testplanexplanation'] = 'Acest instrument creează un fișier plan de testare JMeter împreună cu fișierul acreditării utilizatorului.
 
@@ -128,7 +132,9 @@ $string['testscenario'] = 'Creează scenarii de testare';
 $string['testscenario_description'] = 'Crearea scenariilor de testare folosește o sintaxă limitată a fișierelor de funcționalități pentru a crea toate elementele necesare pentru a rula un test manual.';
 $string['testscenario_errorparsing'] = 'Eroare la procesarea fișierului funcționalități extinse: {$a}';
 $string['testscenario_file'] = 'Fișier funcționalități extinse';
-$string['testscenario_filedesc'] = 'Fișierele caracteristice de încărcare pot conține doar scenarii cu pași core_data_generator. Încă nu sunt compatibile cu schițele scenariilor. Toate scenariile vor fi executate odată, dar procesele din fundalul vor fi ignorate.';
+$string['testscenario_filedesc'] = 'Fișierele caracteristicilor de încărcare pot conține doar scenarii cu pași core_data_generator sau anumiți pași care nu necesită seleniu. Toate scenariile vor fi executate odată, cu excepția celor cu eticheta @cleanup.';
+$string['testscenario_filedesc_cleanup'] = 'Scenariile cu eticheta @cleanup vor fi executate numai dacă setarea „Execute” este setată la „Cleanup”. Pentru a executa curățarea prin CLI, puteți utiliza opțiunea --cleanup.';
+$string['testscenario_filedesc_list'] = 'Aceasta este lista de pași care pot fi utilizați în fișierul cu caracteristicile scenariului de testare:';
 $string['testscenario_invalidfile'] = 'Formatul fișierului nu este valid sau conține pași care nu sunt valizi.';
 $string['testscenario_invalidstep'] = 'Pas necunoscut. Crearea scenariilor de testare acceptă doar pașii generați.';
 $string['testscenario_nosteps'] = 'Nu există pași de executat în fișier.';

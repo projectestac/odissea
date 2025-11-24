@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'pt', version '4.4'.
+ * Strings for component 'competency', language 'pt', version '4.5'.
  *
  * @package     competency
  * @category    string
@@ -29,6 +29,8 @@ $string['allchildrenarecomplete'] = 'Todas as competências filho estão conclu�
 $string['competencies'] = 'Competências';
 $string['competenciesarenotenabled'] = 'As competências não estão ativadas.';
 $string['competenciessettings'] = 'Configurações das competências';
+$string['competency'] = 'Competência';
+$string['competencyframework'] = 'Quadro de competências';
 $string['completeplanstask'] = 'Conclusão de planos de aprendizagem com data limite ultrapassada';
 $string['coursecompetencyoutcome_complete'] = 'Concluir a competência';
 $string['coursecompetencyoutcome_evidence'] = 'Anexar comprovativo de aprendizagem';
@@ -38,7 +40,7 @@ $string['coursemodulecompetencyoutcome_complete'] = 'Concluir a competência';
 $string['coursemodulecompetencyoutcome_evidence'] = 'Anexar comprovativo de aprendizagem';
 $string['coursemodulecompetencyoutcome_none'] = 'Sem ações';
 $string['coursemodulecompetencyoutcome_recommend'] = 'Enviar para revisão';
-$string['deletecompetencyratings'] = 'Apagar avaliações da competência';
+$string['deletecompetencyratings'] = 'Avaliações da competência';
 $string['duplicateditemname'] = '{$a} (cópia)';
 $string['enablecompetencies'] = 'Ativar competências';
 $string['enablecompetencies_desc'] = 'As competências permitem que os utilizadores possam ser avaliados de acordo com planos de aprendizagem.';
@@ -163,8 +165,10 @@ $string['privacy:metadata:usermodified'] = 'O utilizador que criou ou modificou 
 $string['privacy:path:plans'] = 'Planos de apendizagem';
 $string['privacy:path:relatedtome'] = 'Relacionada comigo';
 $string['privacy:path:userevidence'] = 'Comprovativo de aprendizagem anterior';
+$string['proficient'] = 'Proficiente';
 $string['pushcourseratingstouserplans'] = 'Utilizar avaliações da disciplina nos planos individuais de aprendizagem';
 $string['pushcourseratingstouserplans_desc'] = 'Valor predefinido para a configuração da disciplina, para atualizar planos de aprendizagem individuais, sempre que as competências da disciplina são avaliadas.';
+$string['rating'] = 'Avaliação';
 $string['syncplanscohorts'] = 'Sincronização de planos a partir dos modelos de planos de aprendizagem dos Grupos globais';
 $string['taxonomy_behaviour'] = 'Comportamento';
 $string['taxonomy_competency'] = 'Competência';
@@ -197,6 +201,7 @@ $string['usercommentedonaplanhtml'] = '<p>{$a->fullname} comentou no plano de ap
 <p>Ver: <a href="{$a->url}">{$a->urlname}</a>.</p>';
 $string['usercommentedonaplansmall'] = '{$a->fullname} comentou no plano de aprendizagem "{$a->plan}".';
 $string['usercommentedonaplansubject'] = '{$a} comentou num plano de aprendizagem.';
+$string['usercompetency'] = 'Competência do utilizador';
 $string['usercompetencystatus_idle'] = 'Parado';
 $string['usercompetencystatus_inreview'] = 'Em revisão';
 $string['usercompetencystatus_waitingforreview'] = 'À espera de revisão';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'uk', version '4.4'.
+ * Strings for component 'grades', language 'uk', version '4.5'.
  *
  * @package     grades
  * @category    string
@@ -725,9 +725,9 @@ $string['recovergradesdefault'] = 'Повернути оцінки';
 $string['recovergradesdefault_help'] = 'Типово повертати старі оцінки, коли користувачі перезараховуються на курс';
 $string['refreshpreview'] = 'Оновити перегляд';
 $string['regradeanyway'] = 'Переоцінити обов\'язково';
-$string['removeallcoursegrades'] = 'Вилучити всі оцінки';
+$string['removeallcoursegrades'] = 'Всі оцінки';
 $string['removeallcoursegrades_help'] = 'Якщо поставлено галочку, усі оцінки та оцінки, які були додані вручну до книги оцінок, будуть видалені, а також дані про замінені, виключені, приховані та заблоковані оцінки. Залишаться лише оцінки та оцінки, пов’язані з діяльністю.';
-$string['removeallcourseitems'] = 'Вилучити всі елементи та категорії';
+$string['removeallcourseitems'] = 'Всі предмети та категорії';
 $string['removeallcourseitems_help'] = 'Якщо відмічено, то всі категорії та елементи оцінок, які були додані в журнал оцінок вручну, будуть вивилучені разом з оцінками і даними, які є перевизначеними, виключеними (не оцінюються), приховувані чи блоковані. Залишаться лише оцінки пов’язані з активними елементами.';
 $string['report'] = 'Звіт';
 $string['reportdefault'] = 'Типові установки ({$a})';

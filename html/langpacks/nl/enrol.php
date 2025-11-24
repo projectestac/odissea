@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'nl', version '4.4'.
+ * Strings for component 'enrol', language 'nl', version '4.5'.
  *
  * @package     enrol
  * @category    string
@@ -47,7 +47,7 @@ $string['customwelcomemessage_help'] = 'Aanvaarde opmaak: platte tekst of Moodle
 <li>Achternaam gebruiker {$a->lastname}</li>
 <li>Cursusrol van de gebruiker {$a->courserole}</li>
 </ul>';
-$string['customwelcomemessageplaceholder'] = 'Beste {$a->fullname}, je bent aangemeld in de cursus {$a->coursename}';
+$string['customwelcomemessageplaceholder'] = 'Beste {$a->firstname}, je bent aangemeld in de cursus {$a->coursename}.';
 $string['defaultenrol'] = 'Voeg toe aan nieuwe cursussen';
 $string['defaultenrol_desc'] = 'Het is mogelijk om deze plugin standaard aan alle nieuwe cursussen toe te voegen.';
 $string['deleteinstanceconfirm'] = 'Je gaat de aanmeldingsplugin "{$a->name}" verwijderen. Alle  {$a->users} aangemelde gebruikers zullen hierdoor afgemeld worden en al hun cursusgerelateerde gegevens, zoals cijfers, groeplidmaatschap en foruminschrijvingen zullen verwijderd worden.

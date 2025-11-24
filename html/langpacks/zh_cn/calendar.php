@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'zh_cn', version '4.4'.
+ * Strings for component 'calendar', language 'zh_cn', version '4.5'.
  *
  * @package     calendar
  * @category    string
@@ -71,7 +71,7 @@ $string['daywithnoevents'] = '今天没有事件。';
 $string['default'] = '默认';
 $string['deleteallevents'] = '删除所有事件';
 $string['deleteevent'] = '删除事件';
-$string['deleteevents'] = '删除事件';
+$string['deleteevents'] = '事件';
 $string['deleteoneevent'] = '删除此事件';
 $string['detailedmonthviewfor'] = '月视图详情：';
 $string['detailedmonthviewtitle'] = '月视图详情：{$a}';

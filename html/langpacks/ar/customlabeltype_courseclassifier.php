@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customlabeltype_courseclassifier', language 'ar', version '4.4'.
+ * Strings for component 'customlabeltype_courseclassifier', language 'ar', version '4.5'.
  *
  * @package     customlabeltype_courseclassifier
  * @category    string

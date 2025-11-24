@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grouptool', language 'de', version '4.4'.
+ * Strings for component 'grouptool', language 'de', version '4.5'.
  *
  * @package     grouptool
  * @category    string
@@ -285,6 +285,7 @@ $string['groupingselect_help'] = 'Gruppierungen für ausgewählte Gruppen erstel
 <li>für ausgewählte Gruppen EINE neue gemeinsame Gruppierung anlegen. Name der Gruppierung kann selbst gewählt werden.</li>
 <li>für jede ausgewählte Gruppe eine Gruppierung PRO Gruppe anlegen. Name der Gruppierung ist gleich der Name der Gruppe.</li>
 <li>ausgewählte Gruppen in eine bestehende Gruppierung hinzufügen.</li></ul>';
+$string['groupnamelength'] = 'Gruppenname ist zu lang!';
 $string['groupoverview'] = 'Gruppenübersicht';
 $string['groups_created'] = 'Gruppen erfolgreich erstellt!';
 $string['groups_queues_limit'] = 'Wartelistenplätze je Gruppe';
@@ -298,16 +299,20 @@ $string['groupstatus'] = 'Status';
 $string['groupstatus_help'] = 'Der Status der Gruppe ist farbig:<ul><li>Grün - aktive Gruppe. Die Gruppe ist dieser Gruppenverwaltung zugeordnet und steht Teilnehmer/innen (bei aktivierter Selbstanmeldung) zur Anmeldung zur Verfügung.</li><li>Grau - inaktive Gruppe. Die Gruppe wird in dieser Gruppenverwaltung nicht verwendet.</li></ul>Mit Klick auf das Symbol können Sie den Status der Gruppe direkt ändern.';
 $string['grouptool'] = 'Gruppenverwaltung';
 $string['grouptool:addinstance'] = 'Erstelle eine Gruppenverwaltungsinstanz im Kurs';
+$string['grouptool:administrate_deregistration'] = 'Abmeldungen verwalten';
 $string['grouptool:administrate_groups'] = 'Verwalte (aktive) Gruppen und Gruppierungen';
+$string['grouptool:administrate_registration'] = 'Anmeldungen verwalten';
 $string['grouptool:create_groupings'] = 'Erstelle Gruppierungen mit Hilfe der Gruppenverwaltung.';
 $string['grouptool:create_groups'] = 'Erstelle Gruppen mit Hilfe der Gruppenverwaltung';
 $string['grouptool:export'] = 'Exportiere Gruppen und Anmeldungen zu verschiedenen Formaten';
 $string['grouptool:grade'] = 'Kopiere Bewertungen von einem Gruppenmitglied auf andere';
 $string['grouptool:grade_own_group'] = 'Kopiere Bewertungen von einem Gruppenmitglied auf andere, sofern die ursprüngliche Bewertung von mir stammt.';
 $string['grouptool:move_students'] = 'Verschiebe Teilnehmer/innen in andere Gruppen.';
+$string['grouptool:preview'] = 'Vorschau von Anmeldesicht anzeigen';
 $string['grouptool:register'] = 'Selbstanmeldung in aktiver Gruppe mit Hilfe der Gruppenverwaltung';
 $string['grouptool:register_students'] = 'Melde andere Teilnehmer/innen in aktiven Gruppen unter Zuhilfenahme der Gruppenverwaltung an. (Wird auch zum Auflösen von Wartelisten benötigt)';
 $string['grouptool:unregister_students'] = 'Teilnehmer/innen von Gruppen unter Zuhilfenahme der Gruppenverwaltung austragen.';
+$string['grouptool:view'] = 'Gruppenverwaltung anzeigen';
 $string['grouptool:view_description'] = 'Zeige Gruppenverwaltungsbeschreibung';
 $string['grouptool:view_groups'] = 'Zeige aktive Gruppen';
 $string['grouptool:view_own_registration'] = 'Zeige eigene Registrierung(en) an';
@@ -367,17 +372,21 @@ $string['landscape'] = 'Querformat';
 $string['late'] = '{$a} zu spät';
 $string['limit'] = 'beschränken';
 $string['loading'] = 'Lade...';
+$string['manage_members'] = 'Mitglieder verwalten';
 $string['max_queues_reached'] = 'Maximale Wartelistenplätze erreicht!';
 $string['max_regs_reached'] = 'Maximale Anmeldungen erreicht!';
 $string['maxmembers'] = 'Globale Gruppengröße';
 $string['messageprovider:grouptool_moveupreg'] = 'Anmeldung durch Nachrücken in der Warteliste';
 $string['missing_source_selection'] = 'Keine Quelle ausgewählt!';
 $string['modulename'] = 'Gruppenverwaltung';
-$string['modulename_help'] = 'Die Gruppenverwaltung umfasst mehrere Aufgabenbereiche in Verbindung mit Gruppen:<ul><li>Sie erlaubt es Gruppen auf verschiedene Art und Weise (Angabe von Anzahl an Gruppen/Gruppenmitgliedern, 1-Personen-Gruppen) sowie Gruppierungen für jede Kursgruppe zu erzeugen.</li><li>Weiters kann sie benutzt werden um es Teilnehmer/innen zu ermöglichen sich selbst innerhalb eines gewissen Zeitraumes zu Gruppen anzumelden.</li><li>Mit ihrer Hilfe lassen sich Gruppenbenotungen durchführen, d.h. eine Aktivitätsbenotung von einer Teilnehmerin/einem Teilnehmer auf andere Gruppenmitglieder zu übertragen.</li><li>Es ist auch möglich Gruppen schnell zu befüllen, indem Teilnehmer/innen mittels Liste mit Matrikelnummern in eine bestimmte Gruppe importiert werden. Ebenfalls ist auf diese Weise das Austragen von Teilnehmer/innen aus Gruppen möglich.</li><li>Überblick über alle Gruppen sowie deren Anmeldungen/Wartelisten/etc in verschiedene Formate (PDF/XLSX/ODS/TXT) exportierbar.</li><li>Exportierbare Liste aller im Kurs eingeschriebener Teilnehmer/innen mit ihren Gruppenanmeldungen, Wartelistenplätzen, etc. (ebenfalls exportierbar).</li></ul><p>(!) Beachten Sie, dass die Gruppen der Gruppenverwaltung sich grundlegend von den Moodle Standardgruppen des Kurses unterscheiden. Um Konsistenz zwischen den Standardgruppen und den Gruppenverwaltungsgruppen zu bewahren, stellen Sie alle Parameter unter dem Abschnitt „Verhalten bei Änderungen in Moodle-Gruppen“ mit Hilfe des Drop Down Menüs auf „Folge Änderungen“ ein.</p>';
+$string['modulename_help'] = 'Die Gruppenverwaltung umfasst mehrere Aufgabenbereiche in Verbindung mit Gruppen:<ul><li>Sie erlaubt es Gruppen auf verschiedene Art und Weise (Angabe von Anzahl an Gruppen/Gruppenmitgliedern, 1-Personen-Gruppen) sowie Gruppierungen für jede Kursgruppe zu erzeugen.</li><li>Weiters kann sie benutzt werden um es Teilnehmer/innen zu ermöglichen sich selbst innerhalb eines gewissen Zeitraumes zu Gruppen anzumelden.</li><li>Mit ihrer Hilfe lassen sich Gruppenbenotungen durchführen, d.h. eine Aktivitätsbenotung von einer Teilnehmerin/einem Teilnehmer auf andere Gruppenmitglieder zu übertragen.</li><li>Es ist auch möglich Gruppen schnell zu befüllen, indem Teilnehmer/innen mittels Liste mit Matrikelnummern in eine bestimmte Gruppe importiert werden. Ebenfalls ist auf diese Weise das Austragen von Teilnehmer/innen aus Gruppen möglich.</li><li>Überblick über alle Gruppen sowie deren Anmeldungen/Wartelisten/etc in verschiedene Formate (PDF/XLSX/ODS/TXT) exportierbar.</li><li>Exportierbare Liste aller im Kurs eingeschriebener Teilnehmer/innen mit ihren Gruppenanmeldungen, Wartelistenplätzen, etc. (ebenfalls exportierbar).</li></ul><p>(!) Beachten Sie, dass die Gruppen der Gruppenverwaltung sich grundlegend von den Moodle Standardgruppen des Kurses unterscheiden. Um Konsistenz zwischen den Standardgruppen und den Gruppenverwaltungsgruppen zu bewahren, stellen Sie alle Parameter unter dem Abschnitt „Verhalten bei Änderungen in Moodle-Gruppen“ mit Hilfe des Drop Down Menüs auf „Folge Änderungen“ ein.</p><p><a href="https://academic-moodle-cooperation.org/anleitungen/gruppenverwaltung-selbstanmeldung-zu-gruppen-einrichten/" target="_blank">Anleitung "Gruppenverwaltung: Selbstanmeldung einrichten"</a></p><p><a href="https://academic-moodle-cooperation.org/anleitungen/gruppenverwaltung-bewertungen-uebertragen/" target="_blank">Anleitung "Gruppenverwaltung: Bewertungen übertragen"</a></p>
+<p><a href="https://academic-moodle-cooperation.org/anleitungen/gruppenverwaltung-wartelisten-und-mehrfache-anmeldungen/" target="_blank">Anleitung "Gruppenverwaltung: Wartelisten und mehrfache Anmeldungen"</a></p><p><a href="https://academic-moodle-cooperation.org/anleitungen/gruppenverwaltung-gruppenadministration/" target="_blank">Anleitung "Gruppenverwaltung: Gruppenadministration"</a></p>';
 $string['modulenameplural'] = 'Gruppenverwaltungen';
 $string['moodlesync'] = 'Verhalten bei Änderungen in Moodle-Gruppen';
 $string['moodlesync_help'] = 'Wie sich die Gruppenverwaltung verhalten soll, wenn Gruppenmitglieder/Gruppen in Moodle hinzugefügt/entfernt werden';
 $string['moreregsthanpossible'] = 'Die für die Abschlussvefolgung erforderliche Anzahl an Anmeldungen kann nicht höher als die maximal erlaubten Anmeldungen sein.';
+$string['move'] = 'Verschieben';
+$string['move_help'] = 'Verwenden Sie das "Verschieben"-Icon um die Reihenfolge der Gruppen zu ändern. Die Gruppen werden Teilnehmer/innen in dieser Reihenfolge angezeigt.';
 $string['move_user'] = 'Verschiebe von Warteliste in Gruppe';
 $string['movedown'] = 'Nach unten verschieben';
 $string['moveup'] = 'Nach oben verschieben';
@@ -402,6 +411,7 @@ $string['namingscheme_help'] = '<p>Das Namensschema definiert, wie Gruppen beim 
 <ol><li>Der Gruppenname muss immer einzigartig in Ihrem Kurs sein (d.h. es können nicht mehrere Gruppen idente Namen tragen).</li>
 <li>Sollen mehrere Gruppen hinzugefügt werden, müssen zwingend "Tags" verwendet werden, die die Gruppen eindeutig bezeichnen.</li></ol></p>
 <p>Jeder "Tag" wird für die Gruppennamen durch Teilnehmer/innen-Informationen ersetzt. Die Tags in [] sind mit Teilnehmer/innen-Daten verknüpft und die # und @ werden durch eine laufende Nummer bzw. alphabetische Repräsentation dieser ersetzt. Wenn JavaScript aktiviert ist, können Sie durch Klicken auf die Tags, diese dem Namensschema anhängen. Bitte beachten Sie, dass jeder Gruppenname innerhalb des Kurses einzigartig sein muss und ändern Sie bei entsprechenden Problemen das Namensschema!</p>';
+$string['no_active_groups'] = 'Keine aktiven Gruppen';
 $string['no_conflictfree_to_display'] = 'Keine konfliktfreien Gruppen anzuzeigen. Stattdessen alle angezeigt!';
 $string['no_data_to_display'] = 'Keine Gruppendaten anzuzeigen!';
 $string['no_grades_present'] = 'Keine Bewertungen anzuzeigen';
@@ -419,6 +429,8 @@ $string['nogroups'] = 'In diesem Kurs sind aktuell keine Gruppen vorhanden.';
 $string['nogroupsactive'] = 'In dieser Gruppenverwaltung sind aktuell keine aktiven Gruppen vorhanden.';
 $string['nogroupschoose'] = 'Zur Gruppenauswahl';
 $string['nogroupscreate'] = 'Gruppen erstellen';
+$string['nogroupscreated'] = 'Keine Gruppen erstellt, weil sich keine Teilnehmer/innen im Kurs befinden.';
+$string['nogroupsgrouping'] = 'Keine Gruppen in dieser Gruppierung.';
 $string['nogroupsinactive'] = 'In dieser Gruppenverwaltung sind aktuell keine inaktiven Gruppen vorhanden.';
 $string['nogrouptools'] = 'Es gibt keine Gruppenverwaltungen!';
 $string['nonconflicting'] = 'Konfliktfrei';
@@ -452,6 +464,7 @@ $string['overview_tab'] = 'Gruppenübersicht';
 $string['overview_tab_alt'] = 'Öffne Gruppenübersicht';
 $string['overwrite_label'] = 'Überschreibe vorhandene Bewertungen';
 $string['place_allocated_in_group_success'] = 'Gruppe <strong>{$a->groupname}</strong> wurde erfolgreich zur Anmeldung markiert';
+$string['places'] = 'Plätze';
 $string['pluginadministration'] = 'Gruppenverwaltungs Administration';
 $string['pluginname'] = 'Gruppenverwaltung';
 $string['portrait'] = 'Hochformat';
@@ -472,6 +485,7 @@ $string['queue'] = 'Warteliste';
 $string['queue_and_multiple_reg_title'] = 'Wartelisten und mehrfache Anmeldungen';
 $string['queue_in_group'] = 'Trage <strong>{$a->username}</strong> in Warteliste der Gruppe <strong>{$a->groupname}</strong> ein?';
 $string['queue_in_group_success'] = '<strong>{$a->username}</strong> erfolgreich in Warteliste der Gruppe <strong>{$a->groupname}</strong> eingetragen!';
+$string['queue_places'] = 'Wartelistenplätze';
 $string['queue_you_in_group'] = 'Wollen Sie in die Warteliste der Gruppe <strong>{$a->groupname}</strong> eingetragen werden?';
 $string['queue_you_in_group_success'] = 'Sie wurden erfolgreich in die Warteliste der Gruppe <strong>{$a->groupname}</strong> eingetragen!';
 $string['queued'] = 'In Warteliste';
@@ -502,6 +516,7 @@ $string['register_you_in_group_successmailhtml'] = 'Sie wurden erfolgreich in Gr
 $string['registered'] = 'Angemeldet';
 $string['registered_in_group_info'] = '<strong>{$a->username}</strong> in Gruppe <strong>{$a->groupname}</strong> angemeldet';
 $string['registered_on_rank'] = 'Angemeldet auf Platz #{$a}';
+$string['registration_details'] = 'Anmeldedetails';
 $string['registration_missing'] = '1 Anmeldung fehlt';
 $string['registration_period_end'] = 'Ende der Anmeldung für';
 $string['registration_period_start'] = 'Beginn der Anmeldung für';
@@ -561,6 +576,7 @@ $string['showownafterreg'] = 'Nur eigene - nach eigener Anmeldung';
 $string['size'] = 'Gruppengröße';
 $string['size_grp'] = 'Globale Gruppengrößeneinstellung';
 $string['size_grp_help'] = 'Wenn die Gruppengröße aktiviert ist, wird die maximale Anzahl der Mitglieder für jede Gruppe begrenzt. Wenn zusätzlich die "individuelle Größe" aktiviert ist, wird die Gruppengröße für jede Gruppe gesondert festgelegt.';
+$string['size_help'] = 'Zeigt die aktuelle Gruppengröße an und ob die Gruppengröße für jede Gruppe individuell definiert ist.';
 $string['skip_user_import'] = 'Überspringe beim Import';
 $string['skipped'] = 'Übersprungen';
 $string['sortlist_no_data'] = 'In diesem Kurs sind aktuell keine Gruppen vorhanden.';

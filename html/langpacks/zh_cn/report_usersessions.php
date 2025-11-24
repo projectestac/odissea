@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_usersessions', language 'zh_cn', version '4.4'.
+ * Strings for component 'report_usersessions', language 'zh_cn', version '4.5'.
  *
  * @package     report_usersessions
  * @category    string
@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['logoutothersessions'] = '注销所有其他浏览器会话';
+$string['logoutothersessions_help'] = '退出所有的浏览器会话，除了这个。这不会影响web应用程序。';
+$string['logoutothersessionssuccess'] = '您将退出所有其他会话。';
+$string['logoutsinglesessionsuccess'] = '您在{$a}处注销了会话。';
 $string['mysessions'] = '我的活动会话';
 $string['navigationlink'] = '浏览器会话';
 $string['pluginname'] = '用户会话报表';

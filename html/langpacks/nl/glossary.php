@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'nl', version '4.4'.
+ * Strings for component 'glossary', language 'nl', version '4.5'.
  *
  * @package     glossary
  * @category    string
@@ -119,7 +119,7 @@ $string['definitions'] = 'Definities';
 $string['deletecategory'] = 'Categorie verwijderen';
 $string['deleteentry'] = 'Verwijder woord';
 $string['deleteentrya'] = 'Verwijder item: {$a}';
-$string['deletenotenrolled'] = 'Verwijder items van niet aangemelde gebruikers';
+$string['deletenotenrolled'] = 'Items van niet aangemelde gebruikers';
 $string['deletingcomment'] = 'Verwijder commentaar';
 $string['deletingnoneemptycategory'] = 'Door deze categorie te verwijderen zullen de woorden die ze bevat niet verdwijnen - ze zullen als niet-gecategoriseerd gemerkt worden';
 $string['descending'] = 'aflopend';
@@ -323,9 +323,9 @@ $string['privacy:metadata:glossary_entries:userid'] = 'De ID van de gebruiker di
 $string['question'] = 'Vraag';
 $string['rejectedentries'] = 'Verworpen items';
 $string['rejectionrpt'] = 'Verwerpingsrapport';
-$string['removeallglossarytags'] = 'Verwijder alle woordenlijst-tags';
+$string['removeallglossarytags'] = 'Alle woordenlijst-tags';
 $string['resetglossaries'] = 'Verwijder items van';
-$string['resetglossariesall'] = 'Verwijder items uit alle woordenlijsten';
+$string['resetglossariesall'] = 'Items uit alle woordenlijsten';
 $string['rssarticles'] = 'Aantal RSS recente artikels';
 $string['rssarticles_help'] = '<p>Met deze instelling kun je kiezen hoeveel artikels je in de RSS-feed wil zetten.</p>
 

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'ca', version '4.4'.
+ * Strings for component 'assign', language 'ca', version '4.5'.
  *
  * @package     assign
  * @category    string
@@ -70,6 +70,18 @@ $string['assign:viewgrades'] = 'Mostra les qualificacions';
 $string['assign:viewownsubmissionsummary'] = 'Mostra el resum de les trameses pròpies';
 $string['assignfeedback'] = 'Connector de retroacció';
 $string['assignfeedbackpluginname'] = 'Connector de retroacció';
+$string['assignmentduedigesthtml'] = '<p>Hola, {$a->firstname},</p>
+<p>Les tasques següents vencen el <strong>{$a->duedate}</strong>.</p>
+{$a->digest}';
+$string['assignmentduedigestitem'] = '<strong>{$a->assignmentname}</strong> al curs {$a->coursename}<br/>
+<strong>Venciment: {$a->duetime}</strong><br/>
+<a href="{$a->url}" aria-label="Aneu a {$a->assignmentname}">Aneu a l\'activitat</a>';
+$string['assignmentduedigestsubject'] = 'Teniu tasques que vencen en 7 dies';
+$string['assignmentduesoonhtml'] = '<p>{$a->firstname},</p>
+<p>La tasca <strong>{$a->assignmentname}</strong> al curs {$a->coursename} vencerà aviat.</p>
+<p><strong>Venciment: {$a->duedate}</strong></p>
+<p><a href="{$a->url}">Aneu a l\'activitat</a></p>';
+$string['assignmentduesoonsubject'] = 'Venciment el {$a->duedate}: {$a->assignmentname}';
 $string['assignmentisdue'] = 'La tasca ha vençut';
 $string['assignmentmail'] = '{$a->grader} ha enviat una retroacció per a la vostra tramesa de la tasca «{$a->assignment}»
 
@@ -79,6 +91,11 @@ Podeu veure-la adjunta a la vostra tramesa de la tasca:
 $string['assignmentmailhtml'] = '<p>{$a->grader} ha enviat una retroacció per a la vostra tramesa de la tasca «<i>{$a->assignment}</i>».</p> <p>Podeu veure-la adjunta a la vostra tramesa de la tasca <a href="{$a->url}"></a>.</p>';
 $string['assignmentmailsmall'] = '{$a->grader} ha enviat una retroacció per a la vostra tramesa de la tasca «{$a->assignment}». Podeu veure-la adjunta a la vostra tramesa';
 $string['assignmentname'] = 'Nom de la tasca';
+$string['assignmentoverduehtml'] = '<p>{$a->firstname},</p>
+<p><strong>{$a->assignmentname}</strong> al curs {$a->coursename} va vèncer el <strong>{$a->duedate}</strong>.</p>
+<p>Encara podeu trametre la vostra tasca{$a->cutoffsnippet}, però es marcarà que heu fet la tramesa amb retard.</p>
+<p><a href="{$a->url}">Aneu a l\'activitat</a></p>';
+$string['assignmentoverduesubject'] = 'Tasca vençuda:  {$a->assignmentname}';
 $string['assignmentplugins'] = 'Connectors de tasca';
 $string['assignmentsperpage'] = 'Tasques per pàgina';
 $string['assignsubmission'] = 'Connector de la tramesa';
@@ -88,6 +105,8 @@ $string['attemptheading'] = 'Intent {$a->attemptnumber}: {$a->submissionsummary}
 $string['attempthistory'] = 'Intents previs';
 $string['attemptnumber'] = 'Número d\'intent';
 $string['attemptreopenmethod'] = 'Intents addicionals';
+$string['attemptreopenmethod_automatic'] = 'Automàticament';
+$string['attemptreopenmethod_automatic_help'] = 'Després de cada intent, el següent s\'atorga automàticament.';
 $string['attemptreopenmethod_help'] = 'Determina si un estudiant pot fer intents addicionals en la tasca. Per a cada intent, es desen la qualificació i la retroacció, i es mostren a l\'estudiant i el docent.
 Les opcions disponibles són:
 
@@ -96,12 +115,15 @@ Les opcions disponibles són:
 * Automàticament fins a la superació - Es permeten intents addicionals automàticament fins que l\'estudiant assoleixi la qualificació per aprovar establerta al butlletí de qualificacions per a aquesta tasca.
 </ul>';
 $string['attemptreopenmethod_manual'] = 'Manualment';
+$string['attemptreopenmethod_manual_help'] = 'Després de cada intent, podeu permetre el següent a través de la pàgina d\'enviaments o de la pàgina de qualificació.';
 $string['attemptreopenmethod_none'] = 'Mai';
 $string['attemptreopenmethod_untilpass'] = 'Automàticament fins superació';
+$string['attemptreopenmethod_untilpass_help'] = 'Després de cada intent, el següent es permetrà automàticament, fins que l\'estudiant aconsegueixi la nota d\'aprovat.';
 $string['attemptsettings'] = 'Configuració dels intents';
 $string['availability'] = 'Disponibilitat';
 $string['back'] = 'Torna';
 $string['backtoassignment'] = 'Torna a la tasca';
+$string['batchoperationaddattempt'] = 'Intent addicional';
 $string['batchoperationconfirmaddattempt'] = 'Voleu permetre un altre intent per a les trameses seleccionades?';
 $string['batchoperationconfirmdownloadselected'] = 'Voleu baixar les trameses seleccionades?';
 $string['batchoperationconfirmgrantextension'] = 'Voleu concedir una pròrroga a totes les trameses seleccionades?';
@@ -111,10 +133,13 @@ $string['batchoperationconfirmreverttodraft'] = 'Reverteix les trameses seleccio
 $string['batchoperationconfirmsetmarkingallocation'] = 'Voleu establir l\'assignació d\'avaluador per a les trameses seleccionades?';
 $string['batchoperationconfirmsetmarkingworkflowstate'] = 'Voleu habilitar el flux de l\'avaluació per a totes les trameses seleccionades?';
 $string['batchoperationconfirmunlock'] = 'Desbloca totes les trameses seleccionades?';
-$string['batchoperationlock'] = 'bloca les trameses';
-$string['batchoperationreverttodraft'] = 'reverteix les trameses a esborrany';
+$string['batchoperationdownloadselected'] = 'Baixa';
+$string['batchoperationgrantextension'] = 'Prorroga';
+$string['batchoperationlock'] = 'Bloca';
+$string['batchoperationreverttodraft'] = 'Reverteix les trameses a esborrany';
 $string['batchoperationsdescription'] = 'Amb la selecció...';
-$string['batchoperationunlock'] = 'desbloca les trameses';
+$string['batchoperationsetmarkingworkflowstate'] = 'Canvia l\'estat del flux d\'avaluació';
+$string['batchoperationunlock'] = 'Desbloca';
 $string['batchsetallocatedmarker'] = 'Assigna un avaluador als {$a} usuaris seleccionats.';
 $string['batchsetmarkingworkflowstateforusers'] = 'Estableix el flux de l\'avaluació per als {$a} usuaris seleccionats.';
 $string['beginassignment'] = 'Comença la tasca';
@@ -157,6 +182,9 @@ $string['cutoffdate_help'] = 'Si s\'habilita, la tasca no acceptarà trameses de
 $string['cutoffdatecolon'] = 'Data límit: {$a}';
 $string['cutoffdatefromdatevalidation'] = 'La data límit no pot ser anterior a la data d\'inici de les trameses.';
 $string['cutoffdatevalidation'] = 'La data límit no pot ser anterior a la data de venciment.';
+$string['defaultgradescale'] = 'Escala de qualificació per defecte';
+$string['defaultgradetype'] = 'Tipus de qualificació per defecte';
+$string['defaultgradetype_help'] = 'El tipus de qualificació predeterminat que s\'utilitzarà en crear tasques noves';
 $string['defaultlayout'] = 'Restaura la disposició per defecte';
 $string['defaultsettings'] = 'Paràmetres per defecte de la tasca';
 $string['defaultsettings_help'] = 'Aquests paràmetres defineixen els valors per defecte per a totes les tasques noves.';
@@ -246,6 +274,7 @@ $string['feedbacksettings'] = 'Paràmetres de retroacció';
 $string['feedbacktypes'] = 'Tipus de retroacció';
 $string['filesubmissions'] = 'Fitxers de la tramesa';
 $string['filter'] = 'Filtre';
+$string['filterall'] = 'Totes';
 $string['filterdraft'] = 'Esborrany';
 $string['filtergrantedextension'] = 'Amb pròrroga concedida';
 $string['filternone'] = 'Sense filtre';
@@ -356,7 +385,10 @@ $string['maxattempts_help'] = 'El nombre màxim d\'intents de trameses que pot f
 $string['maxgrade'] = 'Qualificació màxima';
 $string['maxperpage'] = 'Nombre màxim de tasques per pàgina';
 $string['maxperpage_help'] = 'El nombre màxim de tasques que un qualificador pot veure a la pàgina de qualificació de les tasques. És útil per prevenir que el temps expiri en cursos amb un nombre molt alt d\'inscrits.';
+$string['messageprovider:assign_due_digest'] = 'Notificació de tasques que vencen en 7 dies';
+$string['messageprovider:assign_due_soon'] = 'Notificació de tasques que vencen aviat';
 $string['messageprovider:assign_notification'] = 'Notificacions de tasques';
+$string['messageprovider:assign_overdue'] = 'Notificació de tasques vençudes';
 $string['modulename'] = 'Tasca';
 $string['modulename_help'] = 'El mòdul d\'activitat tasca permet al professor comunicar les instruccions, recollir els treballs i proporcionar qualificacions i retroacció.
 
@@ -391,6 +423,7 @@ $string['noteamgrader'] = 'No sou membre de cap grup, per això no teniu els per
 $string['notgraded'] = 'Sense qualificació';
 $string['notgradedyet'] = 'No s\'ha qualificat encara';
 $string['notifications'] = 'Notificacions';
+$string['notifystudents'] = 'Notifica-ho als estudiants';
 $string['nouseroverrides'] = 'No hi ha cap excepció d\'usuari assignada.';
 $string['nousers'] = 'Sense usuaris';
 $string['nousersselected'] = 'Cap usuari seleccionat';
@@ -492,6 +525,8 @@ $string['selectlink'] = 'Seleccioneu...';
 $string['selectuser'] = 'Seleccioneu {$a}';
 $string['sendlatenotifications'] = 'Notifica el retard en les trameses a qui qualifica';
 $string['sendlatenotifications_help'] = 'Si està activat, qui qualifica (normalment, els professors) rep un missatge cada vegada que un estudiant envia un treball amb retard. Els mètodes de missatgeria són configurables.';
+$string['sendnotificationduedigest'] = 'Notifica a l’usuari les tasques que vencen en 7 dies';
+$string['sendnotificationoverdue'] = 'Notifica a l\'usuari que una tasca ha vençut';
 $string['sendnotifications'] = 'Notifica les trameses a qui qualifica';
 $string['sendnotifications_help'] = 'Si està activat, qui qualifica (normalment, els professors) rep un missatge cada vegada que un estudiant envia un treball prest, a temps o amb retard. Els mètodes de missatgeria són configurables.';
 $string['sendstudentnotifications'] = 'Notifica als estudiants';
@@ -628,6 +663,7 @@ $string['viewfeedbackforuser'] = 'Visualitza la retroacció de l\'usuari: {$a}';
 $string['viewfull'] = 'Vista completa';
 $string['viewfullgradingpage'] = 'Obre la pàgina de qualificació completa per proporcionar retroacció';
 $string['viewgradebook'] = 'Visualitza el butlletí de qualificacions';
+$string['viewgrader'] = 'Mostra el qualificador';
 $string['viewgrading'] = 'Visualitza totes les trameses';
 $string['viewgradingformforstudent'] = 'Visualitza la pàgina de qualificació per a l\'estudiant: (id={$a->id}, fullname={$a->fullname}).';
 $string['viewownsubmissionform'] = 'Visualitza la pròpia pàgina de tramesa de la tasca';

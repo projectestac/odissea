@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'it', version '4.4'.
+ * Strings for component 'enrol_database', language 'it', version '4.5'.
  *
  * @package     enrol_database
  * @category    string
@@ -53,9 +53,13 @@ $string['localcoursefield'] = 'Campo locale per i corsi';
 $string['localrolefield'] = 'Campo locale per il ruolo';
 $string['localuserfield'] = 'Campo locale per l\'utente';
 $string['newcoursecategory'] = 'Campo categoria per i nuovi corsi';
+$string['newcourseenddate'] = 'Nuovo campo data di fine corso';
+$string['newcourseenddate_desc'] = 'Specificare una data nel formato aaaa-mm-gg o in formato Unix, oppure lasciare vuoto affinché la data di fine del corso venga calcolata in base alla durata configurata del corso .';
 $string['newcoursefullname'] = 'Campo Titolo per i nuovi corsi';
 $string['newcourseidnumber'] = 'Campo codice identificativo per i nuovi corsi';
 $string['newcourseshortname'] = 'Campo Titolo abbreviato per i nuovi corsi';
+$string['newcoursestartdate'] = 'Nuovo campo data inizio corso';
+$string['newcoursestartdate_desc'] = 'Specificare una data nel formato aaaa-mm-gg o in formato Unix, oppure lasciare vuoto affinché la data di inizio del corso venga impostata sulla data corrente.';
 $string['newcoursetable'] = 'Tabella remota contenente i nuovi corsi';
 $string['newcoursetable_desc'] = 'Il nome della tabella che contiene l\'elenco dei corsi da creare automaticamente. Lasciando il nome vuoto non saranno creati corsi.';
 $string['pluginname'] = 'Database esterno';

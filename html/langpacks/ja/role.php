@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'ja', version '4.4'.
+ * Strings for component 'role', language 'ja', version '4.5'.
  *
  * @package     role
  * @category    string
@@ -28,6 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['addinganewrole'] = '新しいロールの追加';
 $string['addrole'] = '新しいロールを追加する';
 $string['advancedoverride'] = '高度なロールオーバーライド';
+$string['ai:acceptpolicy'] = 'AIポリシーを承諾する';
+$string['ai:fetchanyuserpolicystatus'] = 'ユーザAIポリシを受諾する';
+$string['ai:fetchpolicy'] = 'ユーザAIポリシを受諾する';
 $string['allow'] = '許可';
 $string['allowassign'] = 'ロールの割り当てを許可する';
 $string['allowed'] = '許可済み';
@@ -163,6 +166,8 @@ $string['confirmunassignno'] = 'キャンセル';
 $string['confirmunassigntitle'] = 'ロール変更を承認する';
 $string['confirmunassignyes'] = '削除';
 $string['contentbank:access'] = 'コンテンツバンクにアクセスする';
+$string['contentbank:changelockedcustomfields'] = 'コンテンツバンクのロック済みカスタムフィールドを変更する';
+$string['contentbank:configurecustomfields'] = 'コンテンツバンクのカスタムフィールドを設定する';
 $string['contentbank:copyanycontent'] = 'コンテンツバンクのすべてのコンテンツをコピーする';
 $string['contentbank:copycontent'] = 'コンテンツバンクのコンテンツをコピーする';
 $string['contentbank:deleteanycontent'] = 'コンテンツバンクからすべてのコンテンツを削除する';
@@ -190,6 +195,7 @@ $string['course:create'] = 'コースを作成する';
 $string['course:creategroupconversations'] = 'グループ会話を作成する';
 $string['course:delete'] = 'コースを削除する';
 $string['course:downloadcoursecontent'] = 'コースコンテンツのダウンロード';
+$string['course:editcoursewelcomemessage'] = 'コースウェルカムメッセージを編集する';
 $string['course:enrolconfig'] = 'コースの登録インスタンスを設定する';
 $string['course:enrolreview'] = 'コース登録をレビューする';
 $string['course:ignoreavailabilityrestrictions'] = '利用制限を無視する';
@@ -238,8 +244,8 @@ $string['defaultrole'] = 'デフォルトロール';
 $string['defaultx'] = 'デフォルト {$a}';
 $string['defineroles'] = 'ロールを定義する';
 $string['definitionofrolex'] = 'ロール「 {$a} 」の定義';
-$string['deletecourseoverrides'] = 'コース内すべてのオーバーライドを削除する';
-$string['deletelocalroles'] = 'すべてのローカルロール割り当てを削除する';
+$string['deletecourseoverrides'] = 'コース内すべてのオーバーライド';
+$string['deletelocalroles'] = 'すべてのローカルロール割り当て';
 $string['deleterolesure'] = '<p>本当にロール「 {$a->name} ({$a->shortname}) 」を削除してもよろしいですか?</p><p>現在、このロールは {$a->count} 名のユーザに割り当てられています。</p>';
 $string['deletexrole'] = '{$a} ロールを削除する';
 $string['duplicaterole'] = 'ロールを複製する';
@@ -333,7 +339,7 @@ $string['noneinthisxmatching'] = 'この {$a->contexttype} 内には「 {$a->sea
 $string['norole'] = 'ロールなし';
 $string['noroleassignments'] = 'このユーザに関して、このサイト内でのロール割り当てはどこにもありません。';
 $string['noroles'] = 'ロールなし';
-$string['notabletoassignroleshere'] = 'このコンテクスト内でのロール割り当ては管理者によって有効にされていません。';
+$string['notabletoassignroleshere'] = 'このコンテクスト内でのロール割り当ては管理者により有効にされていません。';
 $string['notabletooverrideroleshere'] = 'あなたはここでロールのパーミッションをオーバーライドすることはできません。';
 $string['notes:manage'] = 'ノートを管理する';
 $string['notes:view'] = 'ノートを表示する';
@@ -520,6 +526,7 @@ $string['user:viewalldetails'] = 'ユーザ情報すべてを表示する';
 $string['user:viewdetails'] = 'ユーザプロファイルを表示する';
 $string['user:viewhiddendetails'] = '非表示のユーザ詳細を表示する';
 $string['user:viewlastip'] = 'ユーザの最新IPアドレスを表示する';
+$string['user:viewprofilepictures'] = 'ユーザ画像を表示する (強制ログインが有効である場合)';
 $string['user:viewuseractivitiesreport'] = 'ユーザの活動レポートを表示する';
 $string['user:viewusergrades'] = 'ユーザの評定を表示する';
 $string['usersfrom'] = '{$a} からのユーザ';

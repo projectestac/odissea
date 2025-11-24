@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'en', version '4.4'.
+ * Strings for component 'book', language 'en', version '4.5'.
  *
  * @package     book
  * @category    string
@@ -103,7 +103,7 @@ $string['pluginadministration'] = 'Book administration';
 $string['pluginname'] = 'Book';
 $string['previouschapter'] = 'Previous chapter';
 $string['privacy:metadata'] = 'The book activity module does not store any personal data.';
-$string['removeallbooktags'] = 'Remove all book tags';
+$string['removeallbooktags'] = 'All book tags';
 $string['search:activity'] = 'Book - resource information';
 $string['search:chapter'] = 'Book - chapters';
 $string['showchapter'] = 'Show chapter "{$a}"';

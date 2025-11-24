@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'zh_cn', version '4.4'.
+ * Strings for component 'feedback', language 'zh_cn', version '4.5'.
  *
  * @package     feedback
  * @category    string
@@ -248,13 +248,15 @@ $string['privacy:metadata:valuetmp'] = '提交过程中对问题的回答记录�
 $string['public'] = '公共的';
 $string['question'] = '问题';
 $string['questionandsubmission'] = '问题和提交设置';
+$string['questionmoved'] = '问题已移动';
 $string['questions'] = '问题';
 $string['questionslimited'] = '仅显示{$a}第一个问题，查看单个答案或下载表格数据以查看所有问题。';
 $string['radio'] = '多选项 - 单选';
 $string['radio_values'] = '回答';
 $string['ready_feedbacks'] = '就绪反馈';
 $string['required'] = '必须回答';
-$string['resetting_data'] = '清空反馈的答复';
+$string['resetting_data'] = '答复';
+$string['resetting_delete'] = '删除回答';
 $string['resetting_feedbacks'] = '正在重置反馈';
 $string['response_nr'] = '反馈编号';
 $string['responses'] = '反馈';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'facetoface', language 'de', version '4.4'.
+ * Strings for component 'facetoface', language 'de', version '4.5'.
  *
  * @package     facetoface
  * @category    string
@@ -447,6 +447,7 @@ $string['sessions'] = 'Veranstaltungen';
 $string['sessionsoncoursepage'] = 'Auf der Kursseite angezeigte Veranstaltungen';
 $string['sessionsoncoursepage_help'] = 'Dies ist die Anzahl der Termine für jede Veranstaltung, die auf der Hauptseite des Kurses angezeigt wird.';
 $string['sessionstartdate'] = 'Datum des Veranstaltungsbeginns';
+$string['sessionstartdateandtimewithouttimezone'] = '{$a->startdate}, {$a->starttime} - {$a->endtime}';
 $string['sessionstarttime'] = 'Uhrzeit des Veranstaltungsbeginns';
 $string['sessionvenue'] = 'Veranstaltungsort';
 $string['setting:addchangemanageremail'] = 'Die Teilnehmer/innen nach der E-Mail-Adresse ihres/er Vorgesetzten fragen.';

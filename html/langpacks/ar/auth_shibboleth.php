@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'ar', version '4.4'.
+ * Strings for component 'auth_shibboleth', language 'ar', version '4.5'.
  *
  * @package     auth_shibboleth
  * @category    string
@@ -52,7 +52,7 @@ $string['auth_shib_only_description'] = 'قم بتأشير هذا الخيار �
 $string['auth_shib_username_description'] = 'اسم متغير مخدم الويب لـ Shibboleth الذي سيتم استعماله بمثابة اسم دخول مودل';
 $string['auth_shibboleth_errormsg'] = 'الرجاء اختيار المنظمة التي أنت عضو فيها';
 $string['auth_shibboleth_login'] = 'دخول Shibboleth';
-$string['auth_shibboleth_login_long'] = 'الدخول إلى مودل عن طريق شيبولث';
+$string['auth_shibboleth_login_long'] = 'الدخول عن طريق شيبولث';
 $string['auth_shibboleth_manual_login'] = 'الدخول اليدوي';
 $string['auth_shibboleth_select_member'] = 'أنا عضو في...';
 $string['auth_shibboleth_select_organization'] = 'بغرض المصادقة بواسطة Shibboleth، لطفاً، إختر منظمتك من القائمة المنسدلة:';

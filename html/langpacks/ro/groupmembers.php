@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'groupmembers', language 'ro', version '4.4'.
+ * Strings for component 'groupmembers', language 'ro', version '4.5'.
  *
  * @package     groupmembers
  * @category    string

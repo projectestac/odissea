@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'es', version '4.4'.
+ * Strings for component 'format_topcoll', language 'es', version '4.5'.
  *
  * @package     format_topcoll
  * @category    string
@@ -27,11 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['arrow'] = 'Flecha';
 $string['bulb'] = 'Bombilla';
-$string['cachedef_activitymodulecountcache'] = 'Cachéa el número de estudiantes que pueden acceder a un módulo dado en un curso.';
-$string['cachedef_activitystudentrolescache'] = 'Cachéa los roles de estudiantes.';
-$string['cachedef_activitystudentscache'] = 'Cachéa las IDs de estudiantes en un curso dado.';
-$string['cachedef_activityusercreatedcache'] = 'Cachéa  las IDs de los nuevos usuarios en un curso dado.';
-$string['cannotgetactivitycacheslock'] = 'No se puede obtener el bloqueo de cacheo de actividad para curso con id {$a}.';
 $string['center'] = 'Centro';
 $string['cloud'] = 'Nube';
 $string['colourrule'] = 'Por favor, introduzca un color RGB válido. Seis dígitos hexadecimales.';
@@ -40,25 +35,6 @@ $string['columnhorizontal'] = 'Horizontal';
 $string['columnvertical'] = 'Vertical';
 $string['configurationheadingsub'] = 'Configuración';
 $string['configurationheadingsubdesc'] = 'Ajustes de configuración';
-$string['courseadditionalmoddatamaxstudents'] = 'Configurar el número máximo de estudiantes en un curso a los que se les aplicará "Mostrar información adicional"!';
-$string['courseadditionalmoddatastudentsinfo'] = 'Estado de información adicional:';
-$string['courseadditionalmoddatastudentsinfounlimited'] = 'Información adicional que se mostrará para las actividades habilitadas para $a} estudiantes.';
-$string['coursesectionactivityfurtherinformation'] = 'Más información de la página del curso';
-$string['coursesectionactivityfurtherinformation_desc'] = 'Configuraciones de más información de Página del curso a nivel del sitio';
-$string['coursesectionactivityfurtherinformationassign'] = 'Mostrar información de la tarea';
-$string['coursesectionactivityfurtherinformationassigndesc'] = 'Muestra información de la tarea, como fecha de vencimiento, estado de envío. Para profesores / administradores, muestra el número de envíos.';
-$string['coursesectionactivityfurtherinformationchoice'] = 'Mostrar información elegida';
-$string['coursesectionactivityfurtherinformationchoicedesc'] = 'Muestra información sobre opciones, como el estado de envío. Para profesores / administradores, muestra el número de envíos.';
-$string['coursesectionactivityfurtherinformationdata'] = 'Mostrar información de la base de datos';
-$string['coursesectionactivityfurtherinformationdatadesc'] = 'Muestra información de datos, como el estado de envío. Para profesores / administradores, muestra el número de envíos.';
-$string['coursesectionactivityfurtherinformationfeedback'] = 'Mostrar información de comentarios';
-$string['coursesectionactivityfurtherinformationfeedbackdesc'] = 'Muestra información de comentarios, como el estado del envío. Para profesores / administradores, muestra el número de envíos.';
-$string['coursesectionactivityfurtherinformationforum'] = 'Mostrar información del foro';
-$string['coursesectionactivityfurtherinformationforumdesc'] = 'Permitir que la información del foro a ser seleccionado sea mostrada en un curso. Para profesores / admins, mostrar número de contribuciones cuando está activada la valoración de todo el foro.';
-$string['coursesectionactivityfurtherinformationlesson'] = 'Mostrar información de la lección';
-$string['coursesectionactivityfurtherinformationlessondesc'] = 'Muestra información de la lección, como el estado de envío. Para profesores / administradores, muestra el número de envíos.';
-$string['coursesectionactivityfurtherinformationquiz'] = 'Mostrar información de la prueba';
-$string['coursesectionactivityfurtherinformationquizdesc'] = 'Muestra información de la prueba, como el estado de envío. Para profesores / administradores, muestra el número de envíos.';
 $string['ctreset'] = 'Resetear opciones de Collapsed Topics';
 $string['ctreset_help'] = 'Establecer valorespor defecto a Collapsed Topics.';
 $string['currentsection'] = 'Esta sección';
@@ -83,8 +59,6 @@ $string['defaultonesection'] = 'Una sección';
 $string['defaultonesection_desc'] = 'Indica si solo debe estar abierta una sección en un momento dado. Nota: se ignora al editar para permitir que las actividades y los recursos se muevan por las secciones.';
 $string['defaultonesectioniconfont'] = 'Font de ícono de una sección';
 $string['defaultonesectioniconfont_desc'] = 'Especifique la clase de font de ícono a usar para el ícono de enlace a sección uno. Por ejemplo, vea las clases de ícono FontAwesome. Si está vacío, entonces se usará el ícono predterminado \'one_section\' en la carpeta \'pix\' del formato.';
-$string['defaultshowadditionalmoddata'] = 'Predeterminado del curso \'Mostrar información adicional\'';
-$string['defaultshowadditionalmoddatadesc'] = 'Si una actividad está configurada a nivel del sitio (debajo) para mostrar información adicional, entonces esta configuración decide el estado predeterminado de la instancia específica de curso de éste.';
 $string['defaultshowsectionsummary'] = 'Mostrar el resumen de la sección cuando esté colapsado';
 $string['defaultshowsectionsummary_desc'] = 'Establece si el resumen de la sección se mostrará siempre independientemente del estado del conmutador.';
 $string['defaulttgbgcolour'] = 'Cambiar color de fondo';
@@ -179,7 +153,6 @@ $string['em3_7'] = '3.7em';
 $string['em3_8'] = '3.8em';
 $string['em3_9'] = '3.9em';
 $string['em4_0'] = '4.0em';
-$string['enableadditionalmoddata'] = 'Habilitar información adicional';
 $string['eye'] = 'Ojo';
 $string['feedbackavailable'] = 'Comentarios disponibles';
 $string['folder'] = 'Carpeta';
@@ -207,7 +180,6 @@ $string['markedthissection'] = 'En esta sección está resaltada como la secció
 $string['markthissection'] = 'Resalta esta sección como la sección actual';
 $string['medium'] = 'Mediano';
 $string['newsectionname'] = 'Nuevo nombre de sección {$a}';
-$string['numbersections'] = 'Numero de secciones';
 $string['off'] = 'Off';
 $string['on'] = 'On';
 $string['one'] = 'Uno';
@@ -223,10 +195,6 @@ $string['privacy:request:preference:toggle'] = 'La id del curso "{$a->name}" tie
 $string['radio'] = 'Radio';
 $string['readme_desc'] = 'Por favor haga clic en \'{$a->url}\' para mucha más información sobre Temas Colapsados.';
 $string['readme_title'] = 'Léeme de Temas Colapsados';
-$string['resetactivitymeta'] = 'Información adicional del módulo';
-$string['resetactivitymeta_help'] = 'Reinicia toda la información adicional del módulo para que siga el valor predeterminado del sitio.';
-$string['resetallactivitymeta'] = 'Toda la información adicional del módulo';
-$string['resetallactivitymeta_help'] = 'Reiniciar toda la información adicional del módulo para que siga el valor predeterminado del sitio.';
 $string['resetallcolour'] = 'Colores';
 $string['resetallcolour_help'] = 'Restablece los colores y las opacidades a los valores predeterminados para todos los cursos, por lo que será igual que un curso la primera vez que esté en el formato \'Temas contraídos\'.';
 $string['resetalldisplayinstructions'] = 'Mostrar instrucciones';
@@ -321,8 +289,6 @@ $string['settoggleiconset'] = 'Conjunto de iconos';
 $string['settoggleiconset_help'] = 'Establece el ícono del conmutador.';
 $string['setviewsinglesectionenabled'] = 'Ver sección única habilitada.';
 $string['setviewsinglesectionenabled_help'] = 'Funcionalidad para ver sección única habilitada.';
-$string['showadditionalmoddata'] = 'Mostrar información adicional para: {$a} en el curso';
-$string['showadditionalmoddata_help'] = 'Le permite a todos los usuarios ver la fecha límite de la actividad y le permite a los usuarios con permisos para calificar el  ver el número de envíos en la página del curso para actividades.';
 $string['showfromothers'] = 'Mostrar sección';
 $string['sidepost'] = 'Post';
 $string['sidepre'] = 'Pre';
@@ -335,7 +301,6 @@ $string['three'] = 'Tres';
 $string['tif'] = 'Font del ícono';
 $string['toggleclose'] = 'Cerrar';
 $string['toggleopen'] = 'Abrir';
-$string['topcoll:changeactivitymeta'] = 'Cambiar o reiniciar la meta actividad';
 $string['topcoll:changecolour'] = 'Cambiar o restablecer el color';
 $string['topcoll:changelayout'] = 'Cambiar o restablecer el diseño del conmutador';
 $string['topcoll:changetogglealignment'] = 'Cambiar o restablecer la alineación del conmutador';

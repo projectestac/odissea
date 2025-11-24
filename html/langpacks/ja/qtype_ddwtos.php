@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'ja', version '4.4'.
+ * Strings for component 'qtype_ddwtos', language 'ja', version '4.5'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -29,6 +29,9 @@ $string['addmorechoiceblanks'] = 'さらに {no} 個の空白の選択肢を追�
 $string['answer'] = '答え';
 $string['blank'] = '空白';
 $string['blanknumber'] = '空白 {$a}';
+$string['choicesacceptedtext'] = 'ギャップにドラッグされるための答えを記述してください。
+<br />
+受け入れ可能なテキストフォーマットは次のとおりです: &lt;sub&gt;, &lt;sup&gt;, &lt;b&gt;, &lt;i&gt;, &lt;em&gt;, &lt;strong&gt; TeXも使用可能であり、最初および最後に「$$」を使用してください。';
 $string['correctansweris'] = '正解: {$a}';
 $string['errorlimitedchoice'] = '選択肢 [[{$a}]] は「無制限」に設定されていない状態で複数回使用されています。この問題を再度ご確認ください。';
 $string['infinite'] = '無制限';

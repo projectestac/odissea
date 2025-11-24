@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'zh_cn', version '4.4'.
+ * Strings for component 'user', language 'zh_cn', version '4.5'.
  *
  * @package     user
  * @category    string
@@ -25,25 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcondition'] = '添加条件';
-$string['adverbfor_and'] = '与';
-$string['adverbfor_andnot'] = '与';
-$string['adverbfor_or'] = '或';
-$string['applyfilters'] = '应用过滤器';
-$string['clearfilterrow'] = '移除过滤器行';
-$string['clearfilters'] = '清空过滤器';
-$string['clearfilterselection'] = '从过滤器移除 "{$a}"';
 $string['countparticipantsfound'] = '找到了{$a}个参与人';
 $string['filterbykeyword'] = '关键词';
-$string['filterrowlegend'] = '过滤器 {$a}';
-$string['filtersetmatchdescription'] = '如何组合多个过滤器';
-$string['filtertype'] = '过滤器类型';
-$string['match'] = '匹配';
-$string['matchofthefollowing'] = '以下各项:';
 $string['moodlenetprofile'] = 'MoodleNet 配置文件ID';
 $string['moodlenetprofile_help'] = '您的 MoodleNet 个人资料与此站点相关联。';
 $string['placeholdertype'] = '输入...';
-$string['placeholdertypeorselect'] = '输入或选择…';
 $string['privacy:courserequestpath'] = '申请的课程';
 $string['privacy:descriptionpath'] = '个人档案描述';
 $string['privacy:devicespath'] = '用户设备';
@@ -149,7 +135,6 @@ $string['privacy:passwordresetpath'] = '密码重置';
 $string['privacy:privatefilespath'] = '私人文件';
 $string['privacy:profileimagespath'] = '头像';
 $string['privacy:sessionpath'] = '会话数据';
-$string['selectfiltertype'] = '选择';
 $string['supportmessagealternative'] = '相反您可以通过电子邮件发送 {$a}.';
 $string['supportmessagenotsent'] = '很遗憾您的消息无法发送。';
 $string['supportmessagesent'] = '您的消息已发送。';

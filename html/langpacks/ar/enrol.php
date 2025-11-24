@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'ar', version '4.4'.
+ * Strings for component 'enrol', language 'ar', version '4.5'.
  *
  * @package     enrol
  * @category    string
@@ -47,7 +47,7 @@ $string['customwelcomemessage_help'] = 'التنسيقات المقبولة: ا�
 <li>الاسم الأخير للمستخدم {$a->lastname}</li>
 <li>دور المستخدم في المساق {$a->courserole}</li>
 </ul>';
-$string['customwelcomemessageplaceholder'] = 'عزيزي {$a->fullname}، لقد انضممت بنجاح إلى المساق {$a->coursename}';
+$string['customwelcomemessageplaceholder'] = 'مرحبًا {$a->fullname}، لقد انضممت إلى المساق {$a->coursename}.';
 $string['defaultenrol'] = 'إضافة العيِّنة إلى المساقات الجديدة';
 $string['defaultenrol_desc'] = 'من الممكن إضافة هذا الملحق إلى كل المساقات الجديدة إفتراضياً.';
 $string['deleteinstanceconfirm'] = 'هل تريد بالفعل حذف نسخة إضافة التسجيل "{$a->name} مع {$a->users} مستخدمين مسجلين؟';

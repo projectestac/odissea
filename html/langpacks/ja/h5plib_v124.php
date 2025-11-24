@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5plib_v124', language 'ja', version '4.4'.
+ * Strings for component 'h5plib_v124', language 'ja', version '4.5'.
  *
  * @package     h5plib_v124
  * @category    string
@@ -69,7 +69,7 @@ $string['editor:contenttypenotinstalled'] = '未インストールコンテン�
 $string['editor:contenttypenotinstalleddesc'] = 'あなたにはこのコンテンツタイプをインストールするためのパーミッションがありません。';
 $string['editor:contenttypeowner'] = ':owner 順';
 $string['editor:contenttyperestricted'] = '制限コンテンツタイプ';
-$string['editor:contenttyperestricteddesc'] = 'このコンテンツの使用は管理者によって制限されています。';
+$string['editor:contenttyperestricteddesc'] = 'このコンテンツの使用は管理者により制限されています。';
 $string['editor:contenttypesearchfieldplaceholder'] = 'コンテンツタイプを検索する';
 $string['editor:contenttypesectionall'] = 'すべてのコンテンツタイプ';
 $string['editor:contenttypeunsupportedapiversioncontent'] = 'あなたに必要な更新を提供するにはシステム管理者にご連絡ください。';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'pt', version '4.4'.
+ * Strings for component 'user', language 'pt', version '4.5'.
  *
  * @package     user
  * @category    string
@@ -25,25 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcondition'] = 'Adicionar condição';
-$string['adverbfor_and'] = 'e';
-$string['adverbfor_andnot'] = 'e';
-$string['adverbfor_or'] = 'ou';
-$string['applyfilters'] = 'Aplicar filtros';
-$string['clearfilterrow'] = 'Remover linha de filtro';
-$string['clearfilters'] = 'Limpar filtros';
-$string['clearfilterselection'] = 'Remover "{$a}" do filtro';
 $string['countparticipantsfound'] = '{$a} participantes encontrados';
 $string['filterbykeyword'] = 'Palavra-chave';
-$string['filterrowlegend'] = 'Filtro {$a}';
-$string['filtersetmatchdescription'] = 'Como devem ser combinados vários filtros';
-$string['filtertype'] = 'Tipo de filtro';
-$string['match'] = 'Corresponde a';
-$string['matchofthefollowing'] = 'dos seguintes:';
 $string['moodlenetprofile'] = 'ID do perfil MoodleNet';
 $string['moodlenetprofile_help'] = 'O seu ID do perfil MoodleNet vincula o seu perfil MoodleNet com este site.';
 $string['placeholdertype'] = 'Tipo...';
-$string['placeholdertypeorselect'] = 'Digite ou selecione...';
 $string['privacy:courserequestpath'] = 'Solicitação de disciplinas';
 $string['privacy:descriptionpath'] = 'Descrição do perfil';
 $string['privacy:devicespath'] = 'Dispositivos de utilizador';
@@ -149,7 +135,6 @@ $string['privacy:passwordresetpath'] = 'Reposição de senhas';
 $string['privacy:privatefilespath'] = 'Ficheiros privados';
 $string['privacy:profileimagespath'] = 'Imagens de perfil';
 $string['privacy:sessionpath'] = 'Dados de sessão';
-$string['selectfiltertype'] = 'Selecionar';
 $string['supportmessagealternative'] = 'No entanto, pode enviar um e-mail para {$a}';
 $string['supportmessagenotsent'] = 'Infelizmente, a sua mensagem não pode ser enviado de momento!';
 $string['supportmessagesent'] = 'A sua mensagem foi enviado';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'eu', version '4.4'.
+ * Strings for component 'block_myoverview', language 'eu', version '4.5'.
  *
  * @package     block_myoverview
  * @category    string
@@ -93,7 +93,7 @@ $string['title'] = 'Ikastaroaren izena';
 $string['viewquickstart'] = 'Ikusi hasiberrientzako gida azkarra';
 $string['zero_default_intro'] = 'Ikastaroren batean matrikulatuta zaudenean, hemen agertuko da.';
 $string['zero_default_title'] = 'Ez zaude ezein ikastaroetan matrikulatuta.';
-$string['zero_nocourses_intro'] = 'Hasteko laguntza behar duzu? Begiratu <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Moodleko dokumentazioa</a> edo eman lehen pausoak gure hasiberrientzako gidarekin.';
+$string['zero_nocourses_intro'] = 'Hasteko laguntza behar duzu? Begiratu <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Moodleko dokumentazioa</a>.';
 $string['zero_nocourses_title'] = 'Sortu ezazu zure lehen ikastaroa';
 $string['zero_request_intro'] = 'Hasteko laguntza behar duzu? Begiratu <a href="{$a->dochref}" title="{$a->doctitle}" target="{$a->doctarget}">Moodleko dokumentazioa</a> edo eman lehen pausoak gure <a href="{$a->quickhref}" title="{$a->quicktitle}" target="{$a->quicktarget}">hasiberrientzako gidarekin</a>.';
 $string['zero_request_title'] = 'Eskatu zure lehen ikastaroa';

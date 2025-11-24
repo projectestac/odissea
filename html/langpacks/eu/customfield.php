@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customfield', language 'eu', version '4.4'.
+ * Strings for component 'customfield', language 'eu', version '4.5'.
  *
  * @package     customfield
  * @category    string
@@ -40,10 +40,13 @@ $string['customfield'] = 'Eremu pertsonalizatua';
 $string['customfielddata'] = 'Eremu pertsonalizatuetako datuak';
 $string['customfields'] = 'Eremu pertsonalizatuak';
 $string['defaultvalue'] = 'Balore lehenetsia';
+$string['deletecategory'] = 'Ezabatu pertsonalizatutako eremu-kategoria: {$a}';
+$string['deletefield'] = 'Ezabatu pertsonalizatutako eremua: {$a}';
 $string['description'] = 'Deskribapena';
 $string['description_help'] = 'Deskribapena eremuaren azpiko formularioan erakutsiko da.';
 $string['edit'] = 'Editatu';
 $string['editcategoryname'] = 'Editatu kategoriaren izena';
+$string['editfield'] = 'Editatu pertsonalizatutako eremua: {$a}';
 $string['editingfield'] = '{$a} eguneratzen';
 $string['errorfieldtypenotfound'] = 'Ez da {$a} eremu mota aurkitu';
 $string['erroruniquevalues'] = 'Balore hau jadanik erabili da.';

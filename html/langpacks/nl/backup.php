@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'nl', version '4.4'.
+ * Strings for component 'backup', language 'nl', version '4.5'.
  *
  * @package     backup
  * @category    string
@@ -205,6 +205,7 @@ $string['enableasyncbackup_help'] = 'Indien ingeschakeld, worden alle back-up- e
 $string['enterasearch'] = 'Start een zoekopdracht';
 $string['error_block_for_module_not_found'] = 'Verweesde blok instantie (id: {$a->bid}) voor cursus module (id: {$a->mid}) gevonden. Dit blok zal niet geback-uped worden.';
 $string['error_course_module_not_found'] = 'Verweesde cursus module  (id: {$a}) gevonden. Deze module zal niet geback-upt worden.';
+$string['error_delegate_section_not_found'] = 'Ontbrekende gedelegeerde sectie van cursus module (ID {$a}). Van deze sectie zal geen backup gemaakt worden.';
 $string['errorcopyingbackupfile'] = 'Het kopiëren van het back-upbestand naar de tijdelijke map voor het terugzetten is mislukt.';
 $string['errorfilenamemustbezip'] = 'De bestandsnaam die je opgeeft moet een ZIP-bestand zijn en de .mbz-extentie hebben';
 $string['errorfilenamerequired'] = 'Je moet een geldige bestandsnaam opgeven voor deze back-up';
@@ -281,6 +282,7 @@ $string['includeditems'] = 'Ingesloten items:';
 $string['includefilereferences'] = 'Bestandsverwijizingen naar externe inhoud';
 $string['includesection'] = 'Sectie {$a}';
 $string['includeuserinfo'] = 'Gebruikersinformatie';
+$string['includeuserinfo_instance'] = '{$a} gebruikersgegevens mee opnemen';
 $string['inprogress'] = 'Back-up wordt uitgevoerd';
 $string['jumptofinalstep'] = 'Ga naar laatste stap';
 $string['keep'] = 'Bijhouden';
@@ -399,6 +401,7 @@ $string['rootsettingusers'] = 'Aangemelde gebruikers invoegen';
 $string['rootsettinguserscompletion'] = 'Details over voltooien van gebruikers invoegen';
 $string['rootsettingxapistate'] = 'Neem de status van de gebruiker op in inhoud zoals H5P-activiteiten';
 $string['samesitenotification'] = 'Deze back-up is gemaakt met alleen verwijzingen naar bestanden, niet de bestanden zelf. Herstellen werkt alleen op deze website.';
+$string['section_prefix'] = 'Sectie {$a}:';
 $string['sectionactivities'] = 'Activiteiten';
 $string['sectioninc'] = 'Ingevoegd in back-up (geen gebruikersinformatie)';
 $string['sectionincanduser'] = 'In back-up samen met gebruikersinformatie';
@@ -425,6 +428,7 @@ $string['status'] = 'Status';
 $string['storagecourseandexternal'] = 'Cursusback-ups in cursusbestandszone en alternatieve map';
 $string['storagecourseonly'] = 'Cursusback-ups in cursusbestandszone';
 $string['storageexternalonly'] = 'Alternatieve map voor automatische back-ups';
+$string['subsectioncontent'] = 'Inhoud subsectie';
 $string['successful'] = 'Back-up geslaagd';
 $string['successfulcopy'] = 'Kopiëren gelukt';
 $string['successfulrestore'] = 'Herstel succesvol';

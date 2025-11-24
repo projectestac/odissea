@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customfield', language 'en', version '4.4'.
+ * Strings for component 'customfield', language 'en', version '4.5'.
  *
  * @package     customfield
  * @category    string
@@ -40,10 +40,13 @@ $string['customfield'] = 'Custom field';
 $string['customfielddata'] = 'Custom fields data';
 $string['customfields'] = 'Custom fields';
 $string['defaultvalue'] = 'Default value';
+$string['deletecategory'] = 'Delete custom field category: {$a}';
+$string['deletefield'] = 'Delete custom field: {$a}';
 $string['description'] = 'Description';
 $string['description_help'] = 'The description is displayed in the form below the field.';
 $string['edit'] = 'Edit';
 $string['editcategoryname'] = 'Edit category name';
+$string['editfield'] = 'Edit custom field: {$a}';
 $string['editingfield'] = 'Updating {$a}';
 $string['errorfieldtypenotfound'] = 'Field type {$a} not found';
 $string['erroruniquevalues'] = 'This value is already used.';

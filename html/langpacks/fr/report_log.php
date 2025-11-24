@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'fr', version '4.4'.
+ * Strings for component 'report_log', language 'fr', version '4.5'.
  *
  * @package     report_log
  * @category    string
@@ -37,6 +37,8 @@ $string['eventuserreportviewed'] = 'Journal d’utilisateur consulté';
 $string['log:view'] = 'Consulter les journaux du cours';
 $string['log:viewtoday'] = 'Consulter les journaux du jour';
 $string['logsformat'] = 'Format des journaux';
+$string['missingcontext'] = '{$a->name} supprimé (id « {$a->instanceid} »)';
+$string['missingcourse'] = 'Cours manquant (id « {$a->instanceid} »)';
 $string['nocapability'] = 'Impossible d’accéder au journal de l’utilisateur';
 $string['nologreaderenabled'] = 'Aucun lecteur de journal activé';
 $string['origin'] = 'Source';

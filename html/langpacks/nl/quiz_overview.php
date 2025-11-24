@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'nl', version '4.4'.
+ * Strings for component 'quiz_overview', language 'nl', version '4.5'.
  *
  * @package     quiz_overview
  * @category    string
@@ -60,6 +60,17 @@ $string['privacy:metadata:preference:quiz_overview_slotmarks'] = 'Of cijfers get
 $string['privacy:preference:slotmarks:no'] = 'Cijfers worden niet getoond naast de vraag.';
 $string['privacy:preference:slotmarks:yes'] = 'Cijfers worden getoond naast de vraag.';
 $string['regrade'] = 'Herbeoordeel';
+$string['regrade_allattempts'] = 'Alle pogingen';
+$string['regrade_allquestions'] = 'Alle vragen';
+$string['regrade_attempts'] = 'Pogingen herbeoordelen...';
+$string['regrade_commitregrade'] = 'Herbeoordeling insturen';
+$string['regrade_dryrun'] = 'Herbeoordelen testen';
+$string['regrade_help'] = 'Herbeoordelen herberekent de automatische beoordeling van pogingen, door gebruik te maken van de huidige versie van elke vraag indien mogelijk. Testen maakt het mogelijk om de cijferwijzigingen te bekijken zonder de pogingen te wijzigen.';
+$string['regrade_link'] = 'Quiz_grades_report#Re-grading_attempts';
+$string['regrade_regradeneedednotificationmessage'] = 'Tijdens de laatste test van het herbeoordelen is gevonden dat herbeoordelen de cijfers zou wijzigen voor {$a->questions} vragen in {$a->attempts} pogingen.';
+$string['regrade_regradenow'] = 'Nu herbeoordelen';
+$string['regrade_selectedattempts'] = 'Geselecteerde pogingen';
+$string['regrade_selectedquestions'] = 'Geselecteerde vragen';
 $string['regradeall'] = 'Herbeoordeel alles';
 $string['regradealldry'] = 'Controleer de herbeoordeling';
 $string['regradealldrydo'] = 'Herberekende pogingen gemarkeerd als herberekenen noodzakelijk ({$a})';

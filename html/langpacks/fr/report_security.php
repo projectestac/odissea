@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'fr', version '4.4'.
+ * Strings for component 'report_security', language 'fr', version '4.5'.
  *
  * @package     report_security
  * @category    string
@@ -31,7 +31,7 @@ $string['check_antivirus_info'] = 'Aucun scanner antivirus n’est activé actue
 $string['check_antivirus_logstore_not_supported'] = 'Impossible de vérifier l’état des scanners antivirus en raison du type de journal choisi';
 $string['check_antivirus_name'] = 'Antivirus';
 $string['check_antivirus_ok'] = '{$a->scanners} scanner(s) antivirus activés. Aucun problème n’a été détecté dans les derniers {$a->lookback}';
-$string['check_configrw_details'] = '<p>Il est recommandé de modifier les droits d’accès au fichier <code>config.php</code> après installation, afin qu’il ne soit pas modifié par le serveur web. Veuillez noter que cette mesure n’améliore pas de façon significative la sécurité du serveur, bien qu’elle puisse ralentir ou limiter des attaques générales.</p>';
+$string['check_configrw_details'] = '<p>Il est recommandé de modifier les droits d’accès au fichier <code>config.php</code> après installation, afin qu’il ne soit pas modifiable par le serveur web. Veuillez noter que cette mesure n’améliore pas de façon significative la sécurité du serveur, bien qu’elle puisse ralentir ou limiter des attaques générales.</p>';
 $string['check_configrw_name'] = 'Fichier config.php atteignable en écriture';
 $string['check_configrw_ok'] = 'Le fichier config.php ne peut pas être modifié par les scripts PHP.';
 $string['check_configrw_warning'] = 'Les scripts PHP pourraient modifier le fichier config.php.';
@@ -60,7 +60,7 @@ $string['check_displayerrors_ok'] = 'Affichage des erreurs PHP désactivé.';
 $string['check_dotfiles_info'] = 'Excepté le fichier /.well-known/*, les fichiers commençant par un point ne doivent pas être publics';
 $string['check_emailchangeconfirmation_details'] = '<p>Il est recommandé qu’un courriel de confirmation soit requis lorsque les utilisateurs modifient leur adresse de courriel dans leur profil. Si cette vérification est désactivée, des spammeurs pourraient utiliser votre serveur pour l’envoi de pourriels.</p><p>Le champ du courriel peut par ailleurs être verrouillé par les plugins d’authentification. Cette possibilité n’est pas considérée ici.</p>';
 $string['check_emailchangeconfirmation_error'] = 'Les utilisateurs peuvent saisir n’importe quelle adresse.';
-$string['check_emailchangeconfirmation_info'] = 'Les utilisateurs peuvent saisir que des adresses de courriel des domaines autorisés.';
+$string['check_emailchangeconfirmation_info'] = 'Les utilisateurs ne peuvent saisir que des adresses de courriel des domaines autorisés.';
 $string['check_emailchangeconfirmation_name'] = 'Confirmation de modification d’adresse de courriel';
 $string['check_emailchangeconfirmation_ok'] = 'Confirmation lors du changement de l’adresse de courriel dans le profil utilisateur.';
 $string['check_embed_details'] = '<p>L’intégration illimitée d’objets est très dangereuse. Tout utilisateur enregistré pourrait lancer une attaque XSS contre d’autres utilisateurs du serveur. Ce réglage devrait être désactivé sur des sites en production.</p>';
@@ -113,7 +113,7 @@ $string['check_riskbackup_name'] = 'Sauvegarde des données des utilisateurs.';
 $string['check_riskbackup_ok'] = 'Aucun rôle ne permet explicitement la sauvegarde des données des utilisateurs.';
 $string['check_riskbackup_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}) dans {$a->contextname}</a>';
 $string['check_riskbackup_warning'] = '{$a->rolecount} rôles, {$a->overridecount} dérogations et {$a->usercount} utilisateurs ont la capacité de sauvegarder les données des utilisateurs.';
-$string['check_riskxss_details'] = '<p>Le terme RISK_XSS assortit toutes les capacités dangereuses qui ne doivent être autorisées que par des utilisateurs fiables.</p><p>Veuillez vérifier la liste d’utilisateurs ci-dessous et vous assurer que vous leur faites totalement confiance sur ce site :</p><p>{$a}</p>';
+$string['check_riskxss_details'] = '<p>Le terme RISK_XSS assortit toutes les capacités dangereuses qui ne doivent être autorisées que pour des utilisateurs fiables.</p><p>Veuillez vérifier la liste d’utilisateurs ci-dessous et vous assurer que vous leur faites totalement confiance sur ce site :</p><p>{$a}</p>';
 $string['check_riskxss_name'] = 'Utilisateurs XSS fiables';
 $string['check_riskxss_warning'] = 'RISK_XSS, {$a} utilisateurs dont vous devez être sûr.';
 $string['check_unsecuredataroot_details'] = '<p>Le dossier de données ne doit pas pouvoir être atteint via le web. La meilleure façon de s’assurer que ce dossier n’est pas atteignable est de le placer en dehors du dossier web public.</p><p>Si vous déplacez ce dossier, vous devrez modifier en conséquence la variable <code>$CFG->dataroot</code> dans votre fichier <code>config.php</code>.</p>';
@@ -121,6 +121,7 @@ $string['check_unsecuredataroot_error'] = 'Votre dossier de données <code>{$a}<
 $string['check_unsecuredataroot_name'] = 'Dossier de données non sûr';
 $string['check_unsecuredataroot_ok'] = 'Le dossier de données ne peut pas être atteint via le web.';
 $string['check_unsecuredataroot_warning'] = 'Votre dossier de données <code>{$a}</code> est dans un emplacement où il pourrait être atteint directement via le web.';
+$string['check_upgradefile_info'] = 'Les fichiers de note de mise à jour ne doivent pas être publics';
 $string['check_vendordir_details'] = '<p>Le dossier <code>{$a->path}</code> contient diverses bibliothèques de tierces parties et leur dépendances, installées typiquement par l’utilitaire PHP Composer. Ces bibliothèques peuvent être requises pour le développement de Moodle en local, par exemple pour installer PHPUnit. Elles ne sont pas nécessaires pour le fonctionnement d’un site Moodle en production et peuvent comporter du code potentiellement dangereux, qui expose votre site à des attaques à distance.</p><p>Il est vivement recommandé de supprimer ce dossier si le site peut être atteint au moyen d’une URL publique ou au moins d’en empêcher l’accès par le web dans la configuration de votre serveur web.</p>';
 $string['check_vendordir_info'] = 'Le dossier <em>vendor</em> ne devrait pas être présent sur des sites publics.';
 $string['check_vendordir_name'] = 'Dossier <em>vendor</em>';

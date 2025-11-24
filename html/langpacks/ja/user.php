@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'ja', version '4.4'.
+ * Strings for component 'user', language 'ja', version '4.5'.
  *
  * @package     user
  * @category    string
@@ -25,25 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcondition'] = '条件を追加する';
-$string['adverbfor_and'] = 'and';
-$string['adverbfor_andnot'] = 'and';
-$string['adverbfor_or'] = 'or';
-$string['applyfilters'] = 'フィルタを適用する';
-$string['clearfilterrow'] = 'フィルタ行を削除する';
-$string['clearfilters'] = 'フィルタをクリアする';
-$string['clearfilterselection'] = 'フィルタから「 {$a} 」を削除する';
 $string['countparticipantsfound'] = '{$a} 名の参加者が見つかりました。';
 $string['filterbykeyword'] = 'キーワード';
-$string['filterrowlegend'] = 'フィルタ {$a}';
-$string['filtersetmatchdescription'] = 'フィルタ結合数';
-$string['filtertype'] = 'フィルタタイプ';
-$string['match'] = '合致';
-$string['matchofthefollowing'] = '合致:';
 $string['moodlenetprofile'] = 'MoodleNetプロファイルID';
 $string['moodlenetprofile_help'] = 'あなたのMoodleNetプロファイルIDはこのサイトとあなたのMoodleNetプロファイルをリンクします。';
 $string['placeholdertype'] = '入力 ...';
-$string['placeholdertypeorselect'] = '入力または選択 ...';
 $string['privacy:courserequestpath'] = 'リクエストされたコースです。';
 $string['privacy:descriptionpath'] = 'プロファイル説明です。';
 $string['privacy:devicespath'] = 'ユーザデバイスです。';
@@ -149,7 +135,6 @@ $string['privacy:passwordresetpath'] = 'パスワードリセットです。';
 $string['privacy:privatefilespath'] = 'プライベートファイルです。';
 $string['privacy:profileimagespath'] = 'プロファイルイメージです。';
 $string['privacy:sessionpath'] = 'セッションデータです。';
-$string['selectfiltertype'] = '選択';
 $string['supportmessagealternative'] = 'あなたは代わりに {$a} にメール送信できます。';
 $string['supportmessagenotsent'] = '残念ですが、あなたのメッセージを送信できませんでした。';
 $string['supportmessagesent'] = 'あなたのメッセージが送信されました。';

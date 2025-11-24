@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'ro', version '4.4'.
+ * Strings for component 'qtype_ddwtos', language 'ro', version '4.5'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -29,6 +29,8 @@ $string['addmorechoiceblanks'] = 'Blankuri pentru alte {no} alegeri';
 $string['answer'] = 'Răspuns';
 $string['blank'] = 'blank';
 $string['blanknumber'] = 'Blank {$a}';
+$string['choicesacceptedtext'] = 'Scrie răspunsul care va fi plasat în spațiile libere. Poți include răspunsuri suplimentare pentru a spori dificultatea <br/>
+Formatări de text acceptate : &lt;sub&gt;, &lt;sup&gt;, &lt;b&gt;, &lt;i&gt;, &lt;em&gt;, &lt;strong&gt;. TeX este, de asemenea, acceptat utilizând $$ la început și la sfârșit.';
 $string['correctansweris'] = 'Răspunsul corect este: {$a}';
 $string['errorlimitedchoice'] = 'Alegerea [[{$a}]] a fost folosită de mai multe ori fără a fi setată la „Nelimitat”. Vă rugăm să verificați din nou această întrebare.';
 $string['infinite'] = 'Nelimitat';

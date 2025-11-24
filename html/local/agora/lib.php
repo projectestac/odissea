@@ -1,26 +1,31 @@
 <?php
 
-function is_agora() {
+function is_agora(): bool
+{
     global $CFG;
     return isset($CFG->isagora) && $CFG->isagora;
 }
 
-function is_eoi() {
+function is_eoi(): bool
+{
     global $CFG;
     return isset($CFG->iseoi) && $CFG->iseoi;
 }
 
-function is_odissea() {
+function is_odissea(): bool
+{
     global $CFG;
     return isset($CFG->isodissea) && $CFG->isodissea;
 }
 
-function is_alexandria() {
+function is_alexandria(): bool
+{
     global $CFG;
     return isset($CFG->isalexandria) && $CFG->isalexandria;
 }
 
-function is_xtecadmin($user = null) {
+function is_xtecadmin($user = null): bool
+{
     global $USER;
     if (empty($user)) {
         $user = $USER;
@@ -34,7 +39,8 @@ function is_xtecadmin($user = null) {
  * @throws require_login_exception
  * @throws moodle_exception
  */
-function require_xtecadmin($canbesiteadmin = false) {
+function require_xtecadmin($canbesiteadmin = false): void
+{
     require_login(0, false);
     if (!$canbesiteadmin) {
         if (!is_xtecadmin()) {
@@ -51,21 +57,24 @@ function require_xtecadmin($canbesiteadmin = false) {
 
 }
 
-function get_protected_agora(): bool {
+function get_protected_agora(): bool
+{
     return !is_agora() || is_xtecadmin();
 }
 
 /**
  * @throws moodle_exception
  */
-function require_not_rush_hour() {
+function require_not_rush_hour(): void
+{
     global $CFG;
     if (!get_protected_agora() && is_rush_hour()) {
         throw new \moodle_exception('rush_hour', 'local_agora', $CFG->wwwroot);
     }
 }
 
-function get_debug() {
+function get_debug(): void
+{
     global $CFG;
 
     // Get the cookie (only changes if the cookie is enabled), if not, takes default settings
@@ -80,7 +89,8 @@ function get_debug() {
 }
 
 // Execute a command via CLI
-function run_cli($command, $outputfile = false, $append = true, $background = true, $params = []) {
+function run_cli($command, $outputfile = false, $append = true, $background = true, $params = []): string
+{
     global $CFG;
 
     $command = $CFG->dirroot . '/' . $command;
@@ -132,7 +142,8 @@ function run_cli($command, $outputfile = false, $append = true, $background = tr
 /**
  * @throws coding_exception
  */
-function check_cron_run() {
+function check_cron_run(): void
+{
     global $CFG;
 
     if (!empty($CFG->cronclionly)) {
@@ -157,7 +168,8 @@ function check_cron_run() {
  * @throws coding_exception
  * @throws dml_exception
  */
-function run_cli_cron($background = true) {
+function run_cli_cron($background = true): void
+{
     global $CFG, $DB;
 
     if (!empty($CFG->cronremotepassword)) {
@@ -229,7 +241,8 @@ function run_cli_cron($background = true) {
  * @global Object $CFG
  * @return Boolean true if restrictions apply, false otherwise.
  */
-function is_rush_hour(): bool {
+function is_rush_hour(): bool
+{
     global $CFG;
 
     // If param is not defined or is false, there's no rush hour.
@@ -273,7 +286,7 @@ function is_rush_hour(): bool {
         $startminutes = ((int)$start[0] * 60) + (int)$start[1];
         $endminutes = ((int)$end[0] * 60) + (int)$end[1];
 
-        // Check if current time is in the frame
+        // Check if the current time is in the frame
         if (($nowminutes >= $startminutes) && ($nowminutes < $endminutes)) {
             return true;
         }
@@ -283,14 +296,15 @@ function is_rush_hour(): bool {
 }
 
 /**
- * Check if specified module/block name is enabled
+ * Check if the specified module/block name is enabled
  *
  * @param String $mod module name
  * @return Boolean True if specified module name is enabled and false otherwise.
  *
  * @author sarjona
  **/
-function is_enabled_in_agora(string $mod): bool {
+function is_enabled_in_agora(string $mod): bool
+{
     if (is_agora()) {
         // Disabled in all Agora Moodles
         if ($mod === 'classic' || $mod === 'chat' || $mod === 'bigbluebuttonbn') {
@@ -300,25 +314,20 @@ function is_enabled_in_agora(string $mod): bool {
     return true;
 }
 
-function local_agora_extend_navigation(global_navigation $navigation) {
-    global $DB, $CFG;
-    if (isloggedin() && is_service_enabled('nodes') && $DB->record_exists('oauth_clients', ['client_id' => 'nodes'])) {
-        $nodesurl = $CFG->wwwroot . '/local/agora/login_service.php?service=nodes';
-        $icon = new pix_icon('i/permissions', '');
-        $navigation->add(get_string('login_nodes', 'local_agora'), $nodesurl, navigation_node::TYPE_SETTING, null, get_string('login_nodes', 'local_agora'), $icon);
-    }
-}
-
-function is_service_enabled($service): bool {
+function is_service_enabled($service): bool
+{
     if (!is_agora()) {
         return false;
     }
 
     global $school_info;
-    return isset($school_info['id_' . $service]) && !empty($school_info['id_' . $service]);
+    $id_service = 'id_' . $service;
+
+    return !empty($school_info[$id_service]);
 }
 
-function get_service_url($service) {
+function get_service_url($service)
+{
     global $agora, $CFG;
 
     if (isset($agora['server']) && is_service_enabled($service)) {
@@ -336,9 +345,12 @@ function get_service_url($service) {
  * Return the directory to store admin things
  *
  * @param bool $exceptiononerror throw exception if error encountered creating file
+ * @throws coding_exception
+ * @throws invalid_dataroot_permissions
  * @return string|false Returns full path to directory if successful, false if not; may throw exception
  */
-function get_admin_datadir($exceptiononerror = true) {
+function get_admin_datadir($exceptiononerror = true)
+{
     global $agora, $CFG;
     if (isset($CFG->admindatadir)) {
         return $CFG->admindatadir;
@@ -347,7 +359,7 @@ function get_admin_datadir($exceptiononerror = true) {
     if (isset($agora['admin']['datadir'])) {
         $dir = $agora['server']['root'] . $agora['admin']['datadir'] . '/data/moodle2/' . $CFG->siteidentifier;
     } else {
-        $dir = $CFG->dataroot . '/repository/files';
+        $dir = $CFG->dataroot . $agora['moodle2']['repository_files'];
     }
     $CFG->admindatadir = make_writable_directory($dir, $exceptiononerror);
 
@@ -358,17 +370,22 @@ function get_admin_datadir($exceptiononerror = true) {
  * Return the directory to store admin things
  *
  * @param bool $exceptiononerror throw exception if error encountered creating file
+ * @throws coding_exception
+ * @throws invalid_dataroot_permissions
  * @return string|false Returns full path to directory if successful, false if not; may throw exception
  */
-function get_moodle2_admin_datadir($exceptiononerror = true) {
+function get_moodle2_admin_datadir($exceptiononerror = true)
+{
     global $agora, $CFG;
     if (isset($CFG->moodle2admindatadir)) {
         return $CFG->moodle2admindatadir;
     }
     if (isset($agora['admin']['datadir'])) {
+        // Portal.
         $dir = $agora['server']['root'] . '/' . $agora['admin']['datadir'] . '/data/moodle2';
     } else {
-        $dir = $CFG->dataroot . '/repository/files';
+        // Moodle.
+        $dir = $CFG->dataroot . $agora['moodle2']['repository_files'];
     }
     $CFG->moodle2admindatadir = make_writable_directory($dir, $exceptiononerror);
     return $CFG->moodle2admindatadir;
@@ -379,9 +396,12 @@ function get_moodle2_admin_datadir($exceptiononerror = true) {
  *
  * @param string $folder to add to the admindatadir
  * @param bool $exceptiononerror throw exception if error encountered creating file
+ * @throws coding_exception
+ * @throws invalid_dataroot_permissions
  * @return string|false Returns full path to directory if successful, false if not; may throw exception
  */
-function get_admin_datadir_folder($folder = '', $exceptiononerror = true) {
+function get_admin_datadir_folder($folder = '', $exceptiononerror = true)
+{
     $directory = get_admin_datadir($exceptiononerror);
     if ($directory && !empty($folder)) {
         $directory .= '/' . $folder;
@@ -396,9 +416,12 @@ function get_admin_datadir_folder($folder = '', $exceptiononerror = true) {
  *
  * @param string $folder to add to the admindatadir
  * @param bool $exceptiononerror throw exception if error encountered creating file
+ * @throws coding_exception
+ * @throws invalid_dataroot_permissions
  * @return string|false Returns full path to directory if successful, false if not; may throw exception
  */
-function get_moodle2_admin_datadir_folder($folder = '', $exceptiononerror = true) {
+function get_moodle2_admin_datadir_folder($folder = '', $exceptiononerror = true)
+{
     $directory = get_moodle2_admin_datadir($exceptiononerror);
     if ($directory && !empty($folder)) {
         $directory .= '/' . $folder;
@@ -406,111 +429,4 @@ function get_moodle2_admin_datadir_folder($folder = '', $exceptiononerror = true
     }
 
     return $directory;
-}
-
-function get_colors_from_nodes($solveerrors = false) {
-
-    try {
-        global $agora;
-        $filename = $agora['server']['root'] . '/html/wordpress/wp-content/themes/reactor/custom-tac/colors_nodes.php';
-        if (file_exists($filename)) {
-            global $colors_nodes;
-            $db = external_db('nodes');
-            $options = $db->get_field('options', 'option_value', array('option_name' => 'reactor_options'));
-            $options = unserialize($options);
-            $paleta = $options['paleta_colors'];
-
-            require_once($filename);
-            $paleta = $colors_nodes[$paleta];
-            $colors = array(
-                'color' => $paleta['secondary'],
-                'logo_color' => $paleta['primary'],
-            );
-            if ($solveerrors) {
-                set_config('color2', $colors['color'], 'theme_xtecboost');
-                set_config('color4', $colors['color'], 'theme_xtecboost');
-                set_config('color5', $colors['color'], 'theme_xtecboost');
-                set_config('logo_color', $colors['logo_color'], 'theme_xtecboost');
-            }
-            //$db->dispose();
-            return $colors;
-        }
-    } catch (Exception $e) {
-        // Nothing to do
-    }
-
-    if ($solveerrors) {
-        set_config('colorset', 'PEDC', 'theme_xtecboost');
-        set_config('color2', '#FF494E', 'theme_xtecboost');
-        set_config('color4', '#007377', 'theme_xtecboost');
-        set_config('color5', '#910048', 'theme_xtecboost');
-    }
-    return false;
-}
-
-/**
- * Connecta a una base de dades configurada d'un servei
- *
- * @param string shortname de la taula que vulguem consultar
- * @return  moodle_database
- */
-function external_db($service) {
-    global $DBHANDLERS, $school_info, $agora;
-
-    //Es comprova si en la cache de handlers ja existeix el solicitat
-    if (!isset($DBHANDLERS)) {
-        $DBHANDLERS = array();
-    }
-    if (isset($DBHANDLERS[$service])) {
-        return $DBHANDLERS[$service];
-    }
-
-    if (!is_service_enabled($service)) {
-        $DBHANDLERS[$service] = false;
-        return false;
-    }
-
-    $options = array();
-    $options['dbpersist'] = false;
-    $options['dbcollation'] = 'utf8_unicode_ci';
-    if (isset($agora[$service]['port']) && !empty($agora[$service]['port'])) {
-        $options['dbport'] = $agora[$service]['port'];
-    }
-
-    // Per ara només farem servir aquestes, per ampliar-ho caldria afegir aquest paràmetre a la taula
-    $library = 'native';
-    $dbtype = $agora[$service]['dbtype'];
-    if ($dbtype == 'mysql') {
-        $dbtype = 'mysqli';
-    }
-
-    if (!$handler = moodle_database::get_driver_instance($dbtype, $library, true)) {
-        throw new dml_exception('dbdriverproblem', "Unknown driver $library/$dbtype");
-    }
-
-    $host = $school_info['dbhost_' . mb_strtolower($service)];
-    $username = $agora[$service]['username'];
-    $password = $agora[$service]['userpwd'];
-    $prefix = $agora[$service]['prefix'];
-    if (!empty($prefix)) {
-        $prefix .= '_';
-    }
-    $dbname = $agora[$service]['userprefix'] . $school_info['id_' . mb_strtolower($service)];
-
-    try {
-        if ($handler->connect($host, $username, $password, $dbname, $prefix, $options)) {
-            $DBHANDLERS[$service] = $handler;
-        } else {
-            $DBHANDLERS[$service] = false;
-            return false;
-
-        }
-    } catch (Exception $e) {
-        debugging('Error connecting external DB ' . $service);
-        debugging($e->getMessage());
-        $DBHANDLERS[$service] = false;
-        return false;
-    }
-
-    return $handler;
 }

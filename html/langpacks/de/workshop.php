@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'de', version '4.4'.
+ * Strings for component 'workshop', language 'de', version '4.5'.
  *
  * @package     workshop
  * @category    string
@@ -323,11 +323,11 @@ $string['reassess'] = 'Erneut beurteilen';
 $string['receivedgrades'] = 'Erhaltene Bewertung';
 $string['recentassessments'] = 'Beurteilungen der gegenseitigen Beurteilung';
 $string['recentsubmissions'] = 'Einreichungen der gegenseitigen Beurteilung';
-$string['resetassessments'] = 'Alle Beurteilungen löschen';
+$string['resetassessments'] = 'Alle Beurteilungen';
 $string['resetassessments_help'] = 'Sie können wählen, ob nur zugewiesene Beurteilungen gelöscht werden, ohne die abgegebenen Einreichungen zu löschen. Wenn Einreichungen gelöscht werden sollen, werden Bewertungen implizit mit gelöscht und diese Option wird ignoriert. In diesem Fall werden auch Beurteilungen für Beispieleinreichungen gelöscht werden.';
 $string['resetphase'] = 'Zurück zur Vorbereitungsphase';
 $string['resetphase_help'] = 'Wenn diese Option aktiviert ist, werden alle gegenseitigen Beurteilungen in die Ausgangseinstellung des Setups zurückgesetzt.';
-$string['resetsubmissions'] = 'Alle Einreichungen löschen';
+$string['resetsubmissions'] = 'Alle Einreichungen';
 $string['resetsubmissions_help'] = 'Alle Einreichungen und Beurteilungen werden gelöscht. Beispieleinreichungen sind hiervon nicht betroffen.';
 $string['saveandclose'] = 'Speichern und schließen';
 $string['saveandcontinue'] = 'Speichern und weiter bearbeiten';

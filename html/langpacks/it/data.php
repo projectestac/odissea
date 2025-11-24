@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'it', version '4.4'.
+ * Strings for component 'data', language 'it', version '4.5'.
  *
  * @package     data
  * @category    string
@@ -29,8 +29,6 @@ $string['action'] = 'Azione';
 $string['actionsmenu'] = 'Menu azioni';
 $string['add'] = 'Inserisci';
 $string['addcomment'] = 'Aggiungi un commento';
-$string['addedby'] = 'Aggiunto da';
-$string['addentries'] = 'Aggiungi record';
 $string['addtemplate'] = 'Modello Aggiunta/Modifica record';
 $string['advancedsearch'] = 'Ricerca avanzata';
 $string['allowcomments'] = 'Commenti alle voci';
@@ -55,8 +53,6 @@ I campi hanno il formato [[fieldname]], tutti gli atri tag hanno il formato ##so
 È possibile usare solo i tag presenti nell\'elenco "Tag disponibili".';
 $string['availabletodate'] = 'Fino al';
 $string['availabletodatevalidation'] = 'La data di disponibilità \'Fino al\' non può essere antecedente dalla dati di disponibilità \'Dal\'.';
-$string['blank'] = 'Vuoto';
-$string['buttons'] = 'Azioni';
 $string['bynameondate'] = 'di {$a->name} - {$a->date}';
 $string['calendarend'] = '{$a} chiude';
 $string['calendarstart'] = '{$a} apre';
@@ -126,13 +122,13 @@ $string['defaultfieldenclosure'] = '(di default nessun carattere)';
 $string['defaultsortfield'] = 'Campo di default per l\'ordinamento';
 $string['delcheck'] = 'Casella di spunta per l\'eliminazione di massa';
 $string['delete'] = 'Elimina';
-$string['deleteallentries'] = 'Elimina tutti i record';
+$string['deleteallentries'] = 'Tutti i record';
 $string['deletecomment'] = 'Sei certo di voler eliminare questo commento?';
 $string['deleteconfirm'] = 'Eliminare il preset {$a}?';
 $string['deleted'] = 'è stato eliminato';
 $string['deleteentry'] = 'Elimina record';
 $string['deletefield'] = 'Elimina campo';
-$string['deletenotenrolled'] = 'Elimina i record degli utenti non iscritti';
+$string['deletenotenrolled'] = 'Record degli utenti non iscritti';
 $string['deletewarning'] = 'Stai per eliminare questo preset. Sei sicuro?';
 $string['descending'] = 'Decrescente';
 $string['directorynotapreset'] = '{$a->directory} Non è un preset: file mancanti: {$a->missing_files}';
@@ -333,7 +329,6 @@ $string['nomatch'] = 'Non è stato trovato nessun record che corrisponda!';
 $string['nomaximum'] = 'Senza limite massimo';
 $string['nopreviewavailable'] = 'Nessuna anteprima disponibile per {$a}';
 $string['norecords'] = 'Nessun record presente';
-$string['nosingletemplate'] = 'Il modello di visualizzazione Singola non è stato ancora impostato';
 $string['notapproved'] = 'In attesa di approvazione';
 $string['notapprovederror'] = 'Il record non è stato ancora approvato.';
 $string['notemplates'] = 'Non ci sono ancora modelli';
@@ -356,7 +351,6 @@ $string['page-mod-data-x'] = 'Qualsiasi pagina con modulo database';
 $string['pagesize'] = 'Record per pagina';
 $string['participants'] = 'Sono autorizzati ad inserire record';
 $string['picture'] = 'Immagine';
-$string['pleaseaddsome'] = 'Puoi aggiungere campi al Database tramite il menu sottostante. Se preferisci, puoi usare degli <a href="{$a}">insiemi di campi preimpostati</a>.';
 $string['pluginadministration'] = 'Gestione Attività Database';
 $string['pluginname'] = 'Database';
 $string['portfolionotfile'] = 'Esporta in un portfolio invece che in un file (solo csv e leap2a)';
@@ -391,7 +385,7 @@ $string['recorddeleted'] = 'Il record è stato eliminato';
 $string['recorddisapproved'] = 'Record disapprovato';
 $string['recordsnotsaved'] = 'Nessun record è stato salvato. Prima di provare nuovamente, per favore controlla il formato del file usato per il caricamento.';
 $string['recordssaved'] = 'record salvati';
-$string['removealldatatags'] = 'Rimuovi tutti i tag del database';
+$string['removealldatatags'] = 'Tutti i tag del database';
 $string['requireapproval'] = 'Approvazione dei record inseriti';
 $string['requireapproval_help'] = 'I record inseriti devono essere approvati affinché siano visualizzabili dagli altri utenti.';
 $string['required'] = 'Obbligatorio';
@@ -429,7 +423,6 @@ $string['saveaspresetmissingcapability'] = 'L\'utente non è autorizzato a salva
 $string['savedataaspreset'] = 'Salva tutti i campi e modelli e pubblica come preset';
 $string['savesettings'] = 'Esegui';
 $string['savesuccess'] = 'Preset salvato. <a href="{$a->url}">Anteprima preset</a>';
-$string['savetemplate'] = 'Salva il modello';
 $string['search'] = 'Cerca';
 $string['search:activity'] = 'Database - Informazioni sull\'attività';
 $string['search:entry'] = 'Database - record';
@@ -461,7 +454,6 @@ $string['text'] = 'Testo';
 $string['textarea'] = 'Area di testo';
 $string['timeadded'] = 'Data/ora inserimento';
 $string['timemodified'] = 'Data/ora modifica';
-$string['todatabase'] = 'in questo Database';
 $string['type'] = 'Tipo di campo';
 $string['undefinedprocessactionmethod'] = 'In Data_Preset non vi sono metodi definiti per gestire l\'azione "{$a}".';
 $string['unknown'] = 'Campo sconosciuto';

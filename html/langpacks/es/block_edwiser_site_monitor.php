@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_edwiser_site_monitor', language 'es', version '4.4'.
+ * Strings for component 'block_edwiser_site_monitor', language 'es', version '4.5'.
  *
  * @package     block_edwiser_site_monitor
  * @category    string

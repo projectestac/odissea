@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost_union', language 'it', version '4.4'.
+ * Strings for component 'theme_boost_union', language 'it', version '4.5'.
  *
  * @package     theme_boost_union
  * @category    string
@@ -197,7 +197,6 @@ $string['courseheaderimagelayoutstackedlight'] = 'Titolo del corso sovrapposto a
 $string['courseheaderimageposition'] = 'Posizione dell\'immagine del corso nell\'intestazione del corso';
 $string['courseheaderimageposition_desc'] = 'Con questa impostazione si controlla il posizionamento dell\'immagine dell\'intestazione del corso all\'interno del contenitore dell\'immagine dell\'intestazione del corso. Il primo valore è la posizione orizzontale, il secondo la posizione verticale.';
 $string['coursemanagementheading'] = 'Gestisci i corsi';
-$string['courserelatedhintsheading'] = 'Suggerimenti relativi al corso';
 $string['coursestab'] = 'Corsi';
 $string['coursetab'] = 'Corso';
 $string['cssh5pheading'] = 'CSS grezzo per H5P';

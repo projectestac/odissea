@@ -28,9 +28,9 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-require_once(dirname(dirname(dirname(__FILE__))).'/config.php');
-require_once(dirname(__FILE__).'/locallib.php');
-require_once($CFG->libdir . '/completionlib.php');
+require_once dirname(__FILE__, 3) .'/config.php';
+require_once __DIR__ .'/locallib.php';
+require_once $CFG->libdir . '/completionlib.php';
 
 $id = optional_param('id', 0, PARAM_INT);  // Course Module ID
 $q  = optional_param('q', 0, PARAM_INT);   // qv instance ID - it should be named as the first character of the module
@@ -38,13 +38,13 @@ $q  = optional_param('q', 0, PARAM_INT);   // qv instance ID - it should be name
 if ($id) {
     $cm         = get_coursemodule_from_id('qv', $id, 0, false, MUST_EXIST);
     $course     = $DB->get_record('course', array('id' => $cm->course), '*', MUST_EXIST);
-    $record         = $DB->get_record('qv', array('id' => $cm->instance), '*', MUST_EXIST);
+    $record     = $DB->get_record('qv', array('id' => $cm->instance), '*', MUST_EXIST);
 } else if ($q) {
-    $record         = $DB->get_record('qv', array('id' => $q), '*', MUST_EXIST);
+    $record     = $DB->get_record('qv', array('id' => $q), '*', MUST_EXIST);
     $course     = $DB->get_record('course', array('id' => $qv->course), '*', MUST_EXIST);
     $cm         = get_coursemodule_from_instance('qv', $qv->id, $course->id, false, MUST_EXIST);
 } else {
-    print_error('You must specify a course_module ID or an instance ID');
+    throw new moodle_exception('invalidid', 'qv');
 }
 
 require_login($course, true, $cm);

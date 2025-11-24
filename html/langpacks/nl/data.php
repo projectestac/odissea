@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'nl', version '4.4'.
+ * Strings for component 'data', language 'nl', version '4.5'.
  *
  * @package     data
  * @category    string
@@ -29,8 +29,6 @@ $string['action'] = 'Actie';
 $string['actionsmenu'] = 'Actiemenu';
 $string['add'] = 'Item toevoegen';
 $string['addcomment'] = 'Voeg notitie toe';
-$string['addedby'] = 'Toegevoegd door';
-$string['addentries'] = 'Items goedkeuren';
 $string['addtemplate'] = 'Sjabloon item toevoegen';
 $string['advancedsearch'] = 'Geavanceerd zoeken';
 $string['allowcomments'] = 'Commentaar toevoegen toelaten';
@@ -55,8 +53,6 @@ $string['availabletags_help'] = '<p align="center"><strong>Beschikbare tags</str
 <p>Enkel de tags die je terugvindt in de "Beschikbare tags" lijst kunnen voor het huidige sjabloon gebruikt worden.</p>';
 $string['availabletodate'] = 'Beschikbaar tot';
 $string['availabletodatevalidation'] = 'De \'beschikbaar tot\'-datum kan niet voor de \'beschikbaar vanaf\'-datum liggen.';
-$string['blank'] = 'Leeg';
-$string['buttons'] = 'Acties';
 $string['bynameondate'] = 'door {$a->name} - {$a->date}';
 $string['calendarend'] = '{$a} sluit';
 $string['calendarstart'] = '{$a} opent';
@@ -126,13 +122,13 @@ $string['defaultfieldenclosure'] = '(standaardinstelling is geen)';
 $string['defaultsortfield'] = 'Standaard sorteerveld';
 $string['delcheck'] = 'Selectievakje voor bulk verwijderen';
 $string['delete'] = 'Verwijder';
-$string['deleteallentries'] = 'Verwijder alle items';
+$string['deleteallentries'] = 'Alle items';
 $string['deletecomment'] = 'Weet je zeker dat je deze commentaar wil verwijderen?';
 $string['deleteconfirm'] = 'Sjabloonsets verwijderen {$a}?';
 $string['deleted'] = 'verwijderd';
 $string['deleteentry'] = 'Verwijder item';
 $string['deletefield'] = 'Verwijder veld';
-$string['deletenotenrolled'] = 'Verwijder items van niet aangemelde gebruikers';
+$string['deletenotenrolled'] = 'Items van niet aangemelde gebruikers';
 $string['deletewarning'] = 'Het verwijderen van een sjabloont verwijdert die uit de lijst van beschikbare sjablonen in alle cursussen.';
 $string['descending'] = 'Aflopend';
 $string['directorynotapreset'] = '{$a->directory} Geen voorinstelling: ontbrekende bestanden:
@@ -338,7 +334,6 @@ $string['nomatch'] = 'Geen overeenkomende items gevonden';
 $string['nomaximum'] = 'Geen maximum';
 $string['nopreviewavailable'] = 'Geen voorbeeld beschikbaar voor {$a}';
 $string['norecords'] = 'Nog geen items';
-$string['nosingletemplate'] = 'Sjabloon voor itemweergave is nog niet gedefinieerd';
 $string['notapproved'] = 'Wachten op goedkeuring';
 $string['notapprovederror'] = 'Item item is nog niet goedgekeurd.';
 $string['notemplates'] = 'Nog geen sjablonen';
@@ -361,7 +356,6 @@ $string['page-mod-data-x'] = 'Elke databankactiviteit';
 $string['pagesize'] = 'Items per pagina';
 $string['participants'] = 'Deelnemers';
 $string['picture'] = 'Afbeelding';
-$string['pleaseaddsome'] = 'Kies instellingen hieronder of <a href="{$a}"> kies een voorgedefinieerd sjabloon</a> om te starten.';
 $string['pluginadministration'] = 'Databank activiteitsbeheer';
 $string['pluginname'] = 'Databank';
 $string['portfolionotfile'] = 'Exporteer naar een portfolio, niet naar een bestand (enkel CSV en Leap2A)';
@@ -396,7 +390,7 @@ $string['recorddeleted'] = 'Item verwijderd';
 $string['recorddisapproved'] = 'Item verworpen';
 $string['recordsnotsaved'] = 'Er werd geen item bewaard. Controleer de opmaak van het geüploade bestand.';
 $string['recordssaved'] = 'item(s) bewaard';
-$string['removealldatatags'] = 'Verwijder alle database-tags';
+$string['removealldatatags'] = 'Alle database-tags';
 $string['requireapproval'] = 'Goedkeuring nodig';
 $string['requireapproval_help'] = 'Een leraar moet de items goedkeuren voor ze zichtbaar zijn voor anderen.';
 $string['required'] = 'Vereist';
@@ -432,7 +426,6 @@ $string['saveaspresetmissingcapability'] = 'De gebruiker heeft niet de juiste re
 $string['savedataaspreset'] = 'Bewaar alle velden en sjablonen en publiceer als voorinstelling op deze site';
 $string['savesettings'] = 'Bewaar instellingen';
 $string['savesuccess'] = 'Bewaren sjabloon gelukt. <a href="{$a->url}">Voorbeeld sjabloon</a>';
-$string['savetemplate'] = 'Bewaar sjabloon';
 $string['search'] = 'Zoek';
 $string['search:activity'] = 'Informatie databank-activiteit';
 $string['search:entry'] = 'Databank - inhoud';
@@ -464,7 +457,6 @@ $string['text'] = 'Tekst';
 $string['textarea'] = 'Tekstgebied';
 $string['timeadded'] = 'Toegevoegd op';
 $string['timemodified'] = 'Gewijzigd op';
-$string['todatabase'] = 'naar deze database';
 $string['type'] = 'Veldtype';
 $string['undefinedprocessactionmethod'] = 'Geen methode gedefiniëerd in Data_Preset om de actie "{$a}" af te handelen.';
 $string['unknown'] = 'Onbekend veld';

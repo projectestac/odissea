@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'eu', version '4.4'.
+ * Strings for component 'repository', language 'eu', version '4.5'.
  *
  * @package     repository
  * @category    string
@@ -207,8 +207,8 @@ $string['pluginnamehelp'] = 'Hau hutsik utziz gero, lehenetsitako izena erabilik
 $string['popup'] = 'Egin klik "Sartu" botoian saioa hasteko';
 $string['popupblockeddownload'] = 'Deskargarako leihoa blokeatuta dago, mesedez baimendu popup leihoa eta saiatu berriro.';
 $string['preview'] = 'Aurreikusi';
-$string['privacy:metadata:repository'] = 'Biltegien osagaiak sistemako biltegi motak gordetzen ditu.';
-$string['privacy:metadata:repository_instances'] = 'Biltegien pluginen osagaiak sistemako erabiltzaileen biltegien azpisistemako instantziak gordetzen ditu.';
+$string['privacy:metadata:repository'] = 'Biltegien osagaiak muineko azpisistemako biltegi motak gordetzen ditu.';
+$string['privacy:metadata:repository_instances'] = 'Biltegien pluginen osagaiak muineko azpisistemako erabiltzaileen biltegien azpisistemako instantziak gordetzen ditu.';
 $string['privacy:metadata:repository_instances:name'] = 'Biltegi-instantziaren izen pertsonalitzatua.';
 $string['privacy:metadata:repository_instances:password'] = 'Biltegi-instantziarentzako konfiguratutako pasahitza (hautazkoa).';
 $string['privacy:metadata:repository_instances:timecreated'] = 'Biltegi-instantzia sortu zeneko unea.';
@@ -260,6 +260,7 @@ $string['unknownoriginal'] = 'Ezezaguna';
 $string['unknownsource'] = 'Iturburu ezezaguna';
 $string['unzipped'] = 'Ondo deskonprimatu da';
 $string['upload'] = 'Igo fitxategi hau';
+$string['uploaderror'] = 'Errorea fitxategi-igoeran';
 $string['uploading'] = 'Igotzen...';
 $string['uploadsucc'] = 'Fitxategia ondo igo da';
 $string['uselatestfile'] = 'Erabili azken fitxategia';

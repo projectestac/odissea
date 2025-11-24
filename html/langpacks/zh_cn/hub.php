@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'zh_cn', version '4.4'.
+ * Strings for component 'hub', language 'zh_cn', version '4.5'.
  *
  * @package     hub
  * @category    string
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activeparticipantnumberaverage'] = '最近活跃参与者的平均数量 ({$a})';
 $string['activeusersnumber'] = '最近活跃用户数 ({$a})';
+$string['aiusagestats'] = 'AI使用统计（{$a->timefrom} - {$a->timeto}）';
 $string['analyticsactions'] = '对生成的预测采取的行动数量 ({$a})';
 $string['analyticsactionsnotuseful'] = '将预测标记为无用的操作数 ({$a})';
 $string['analyticsenabledmodels'] = '启用的预测模型数量 ({$a})';
@@ -92,6 +93,7 @@ $string['nohubselected'] = '未选定中心服务器';
 $string['none'] = '无';
 $string['operation'] = '动作';
 $string['participantnumberaverage'] = '课程成员数平均值（{$a}）';
+$string['pluginusagedata'] = '插件使用数据收集自：<a href="{$a->overview}">插件概述</a>、<a href="{$a->activities}">管理活动</a>和<a href="{$a->blocks}">管理板块</a>';
 $string['policyagreed'] = '隐私通知和数据处理协议';
 $string['policyagreeddesc'] = '我同意 <a href="{$a}" target="_blank">隐私声明和数据处理协议</a>';
 $string['postaladdress'] = '通信地址';
@@ -106,15 +108,16 @@ $string['registeredsites'] = '已注册网站';
 $string['registereduserdevices'] = '已注册移动设备的用户数量 ({$a})';
 $string['registerwithmoodleorg'] = '注册你的网站';
 $string['registerwithmoodleorgcomplete'] = '完成您的网站注册';
-$string['registerwithmoodleorginfo'] = '我们很乐意与您保持联系，并为您的 Moodle 网站提供重要信息！ 通过注册：
+$string['registerwithmoodleorginfo'] = '注册您的网站涉及定期发送<a href="{$a->moreinformation}" class="focus-expand">匿名网站统计信息</a>到Moodle总部。这有助于我们了解您是如何使用Moodle的，并对新功能和插件做出决定。
 
-* 您可以订阅接收有关新 Moodle 发布、安全警报和其他重要新闻的通知。
-* 您可以通过我们免费的 Moodle 应用程序从您的 Moodle 站点访问和激活移动推送通知。
-* 您正在为我们的全球社区 Moodle 统计数据做出贡献，这有助于我们改进 Moodle 和我们的社区站点。
-* 如果您愿意，您的站点可以包含在您所在国家/地区的注册 Moodle 站点列表中。';
+此外，它使您能够：
+
+* 及时了解重要的更新，如安全警报和新的可用版本。
+* 激活移动推送通知<a href="{$a->moodleapp}">Moodle App</a>。
+* 通过在您所在国家/地区的注册Moodle网站列表中突出您的网站来增加您的网站的可见性（可选）。';
 $string['registerwithmoodleorginfoapp'] = '关于 Moodle 应用程序';
-$string['registerwithmoodleorginfosites'] = '我所在国家/地区的其他网站';
-$string['registerwithmoodleorginfostats'] = 'Moodle统计';
+$string['registerwithmoodleorginfosites'] = '发现我所在国家/地区的其他网站';
+$string['registerwithmoodleorginfostats'] = '查看全球 Moodle 统计数据';
 $string['registerwithmoodleorgremove'] = '您即将注销您的网站。 您将不再收到安全警报通知，用户将无法接收从您的站点发送到其 Moodle 应用程序的推送通知。 但是，您可以随时重新注册！ 你确定你要继续吗？';
 $string['registerwithmoodleorgupdate'] = '更新您的网站注册';
 $string['registrationconfirmed'] = '网站注册已确认';
@@ -147,6 +150,27 @@ $string['sitelang'] = '语言';
 $string['sitelang_help'] = '您的 Moodle 网站使用的主要语言是什么？';
 $string['sitename'] = '名称';
 $string['sitename_help'] = '如果中心服务器允许，网站的名字会显示在网站列表中。';
+$string['siteorganisationtype'] = '机构类型';
+$string['siteorganisationtype:charityornotforprofit'] = '慈善或非盈利';
+$string['siteorganisationtype:charterschool'] = '特许学校';
+$string['siteorganisationtype:college'] = '学院';
+$string['siteorganisationtype:collegedepartment'] = '学院下属部门';
+$string['siteorganisationtype:commercialcourseprovider'] = '商业课程提供商';
+$string['siteorganisationtype:companydepartment'] = '公司下属部门';
+$string['siteorganisationtype:companyinternal'] = '公司内部使用';
+$string['siteorganisationtype:donotshare'] = '不公开';
+$string['siteorganisationtype:government'] = '政府';
+$string['siteorganisationtype:highschool'] = '高中';
+$string['siteorganisationtype:highschooldepartment'] = '高中下属部门';
+$string['siteorganisationtype:highschooldistrict'] = '高中的分校';
+$string['siteorganisationtype:hospital'] = '医院';
+$string['siteorganisationtype:independentteacher'] = '独立教师';
+$string['siteorganisationtype:other'] = '其他';
+$string['siteorganisationtype:primaryschool'] = '小学';
+$string['siteorganisationtype:schooldistrict'] = '学区';
+$string['siteorganisationtype:universitydepartment'] = '大学下属部门';
+$string['siteorganisationtype:wholeuniversity'] = '整个大学';
+$string['siteorganisationtype_help'] = '提供您的组织类型将帮助我们更好地了解使用Moodle的组织类型及其需求。';
 $string['sitephone'] = '电话';
 $string['sitephone_help'] = '只有中心服务器管理员能看到您的电话号码。';
 $string['siteprivacy'] = '网站列表';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'es', version '4.4'.
+ * Strings for component 'auth', language 'es', version '4.5'.
  *
  * @package     auth
  * @category    string
@@ -88,11 +88,12 @@ $string['emailchangecancel'] = 'Cancelar cambio de email';
 $string['emailchangepending'] = 'Cambio pendiente. Abra el enlace enviado en {$a->preference_newemail}.';
 $string['emailnowexists'] = 'La dirección email que ha intentado asignar a su perfil ha sido asignada a otra persona. Su solicitud de cambio queda cancelada, pero puede intentarlo con otra dirección.';
 $string['emailupdate'] = 'Actualizar dirección Email';
-$string['emailupdatemessage'] = 'Estimado(a) {$a->fullname},
+$string['emailupdatemessage'] = 'Hola, {$a->fullname}.
 
-Ha solicitado un cambio de su dirección de correo electrónico en su cuenta de {$a->site}. Por favor, para confirmar este cambio vaya a las siguientes direcciones web:
+Ha solicitado un cambio de su dirección de correo electrónico en su cuenta de {$a->site}. Por favor, para confirmar este cambio vaya a la siguiente dirección web:
 
 {$a->url}
+El enlace de confirmación expirará en <b>10 minutos</b>.
 
 {$a->supportemail}';
 $string['emailupdatesuccess'] = 'La dirección email del usuario <em>{$a->fullname}</em> ha sido actualizada con éxito a <em>{$a->email}</em>.';
@@ -160,6 +161,10 @@ $string['selfregistration_help'] = 'Si se selecciona un complemento de autentica
 $string['settingmigrationmismatch'] = '¡Se detectó un mal pareado de valores al corregir los nombres de configuración de la extensión! La extensión para autenticación \'{$a->plugin}\' tenía el ajuste \'{$a->setting}\' configurado a \'{$a->legacy}\' debajo del nombre antiguo y tenía \'{$a->current}\' debajo del nombre actual. Este último valor ha sido ajustado como el válido, pero debería revisarlo y confirmar que es lo esperado.';
 $string['sha1'] = 'SHA-1 hash';
 $string['showguestlogin'] = 'Puede ocultar o mostrar el botón de entrada para invitados en la página de acceso.';
+$string['showloginform'] = 'Mostrar formulario de acceso manual';
+$string['showloginform_desc'] = 'Si todos los usuarios de su sitio usan un método autenticación como OAuth 2 que no requiere que los usuarios introduzcan su correo/nombre de usuario y contraseña, puede que usted quiera ocultar el formulario de acceso manual. Pero los usuarios con cuentas manuales no podrán acceder.
+
+Si usted oculta el formulario de acceso manual entonces ya no puede acceder. Puede mostrarlo de nuevo usando la línea de comando php admin/cli/cfg.php --name=showloginform --set=1';
 $string['stdchangepassword'] = 'Utilizar Página de cambio de contraseña estándar';
 $string['stdchangepassword_expl'] = 'Si el sistema de identificación externa permite cambios de contraseña en Moodle, seleccione Sí. Este ajuste anula la configuración de \'Cambiar contraseña URL\'.';
 $string['stdchangepassword_explldap'] = 'NOTA: Se recomienda que utilice LDAP sobre un túnel encriptado SSL (ldaps://) si el servidor LDAP es remoto.';

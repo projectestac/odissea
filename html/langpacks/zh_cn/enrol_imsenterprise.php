@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'zh_cn', version '4.4'.
+ * Strings for component 'enrol_imsenterprise', language 'zh_cn', version '4.5'.
  *
  * @package     enrol_imsenterprise
  * @category    string

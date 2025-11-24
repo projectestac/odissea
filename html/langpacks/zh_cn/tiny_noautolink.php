@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_noautolink', language 'zh_cn', version '4.4'.
+ * Strings for component 'tiny_noautolink', language 'zh_cn', version '4.5'.
  *
  * @package     tiny_noautolink
  * @category    string

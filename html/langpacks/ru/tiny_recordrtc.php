@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_recordrtc', language 'ru', version '4.4'.
+ * Strings for component 'tiny_recordrtc', language 'ru', version '4.5'.
  *
  * @package     tiny_recordrtc
  * @category    string
@@ -25,8 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowedpausing'] = 'Разрешить паузу';
 $string['allowedtypes'] = 'Тип записи';
-$string['allowedtypes_desc'] = 'Какие типы записи можно делать в редакторе TinyMCE? В дополнение к этому параметру есть две возможности, которые контролируют доступ к параметрам записи.';
+$string['allowedtypes_desc'] = 'Какие типы записи можно делать в редакторе TinyMCE? В дополнение к этому параметру есть возможности, которые управляют доступом к параметрам записи.';
 $string['attachrecording'] = 'Прикрепить запись';
 $string['audioandvideo'] = 'Аудио и видео';
 $string['audiobitrate'] = 'Битрейт аудио';
@@ -37,21 +38,21 @@ $string['audiotimelimit_desc'] = 'Максимальная длина запис
 $string['audiotitle'] = 'Запись аудио';
 $string['confirm_yes'] = 'Да';
 $string['discard_desc'] = 'Идет запись. Вы хотите остановить запись?';
-$string['gumabort'] = 'Произошло что-то странное, что не даёт использовать веб-камеру/микрофон';
+$string['gumabort'] = 'Произошло что-то странное, что не даёт использовать веб-камеру/микрофон/экран.';
 $string['gumabort_title'] = 'Что-то произошло';
-$string['gumnotallowed'] = 'Пользователь должен разрешить браузеру доступ к веб-камере/микрофону';
+$string['gumnotallowed'] = 'Необходимо разрешить браузеру доступ к веб-камере/микрофону/экрану.';
 $string['gumnotallowed_title'] = 'Неправильные разрешения';
 $string['gumnotfound'] = 'Устройство ввода не обнаружено.';
 $string['gumnotfound_title'] = 'Устройство отсутствует';
-$string['gumnotreadable'] = 'Что-то мешает браузеру получить доступ к веб-камере/микрофону';
+$string['gumnotreadable'] = 'Что-то мешает браузеру получить доступ к веб-камере/микрофону/экрану.';
 $string['gumnotreadable_title'] = 'Аппаратная ошибка';
 $string['gumnotsupported'] = 'Ваш браузер не поддерживает запись по небезопасному соединению';
 $string['gumnotsupported_title'] = 'Нет поддержки небезопасного соединения';
-$string['gumoverconstrained'] = 'Имеющаяся веб-камера/микрофон не могут создать поток с требуемыми ограничениями';
+$string['gumoverconstrained'] = 'Имеющаяся веб-камера/микрофон/экран не могут создать поток с требуемыми ограничениями';
 $string['gumoverconstrained_title'] = 'Проблемы с ограничениями';
 $string['gumsecurity'] = 'Ваш браузер не поддерживает запись по небезопасному соединению';
 $string['gumsecurity_title'] = 'Нет поддержки небезопасного соединения';
-$string['gumtype'] = 'Произведена попытка получить поток с веб-камеры/микрофона, но ограничения не были заданы';
+$string['gumtype'] = 'Произведена попытка получить поток с веб-камеры/микрофона/экрана, но ограничения не были заданы';
 $string['gumtype_title'] = 'Ограничения не заданы';
 $string['helplinktext'] = 'Запись RTC';
 $string['insecurealert'] = 'Ваш браузер может не разрешить этому плагину работать, если он не используется по HTTPS или с локального сервера';
@@ -64,7 +65,9 @@ $string['norecordingfound_title'] = 'Запись не найдена';
 $string['nowebrtc'] = 'Ваш браузер пока не поддерживает или обеспечивает ограниченную поддержку технологий WebRTC и не может использоваться с этим плагином. Пожалуйста, воспользуйтесь другим браузером или обновите свой.';
 $string['nowebrtc_title'] = 'WebRTC не поддерживается';
 $string['onlyaudio'] = 'Только аудио';
+$string['onlyscreen'] = 'Только экран';
 $string['onlyvideo'] = 'Только видео';
+$string['pause'] = 'Пауза';
 $string['pluginname'] = 'Запись RTC';
 $string['privacy:metadata'] = 'Плагин «Запись RTC» не хранит никаких персональных данных.';
 $string['recordagain'] = 'Записать снова';
@@ -73,7 +76,21 @@ $string['recordagain_title'] = 'Повторите подтверждение з
 $string['recordingfailed'] = 'Запись не удалась, попробуйте снова';
 $string['recordinguploaded'] = 'Запись загружена';
 $string['recordrtc:recordaudio'] = 'Записывать аудио прямо в текстовый редактор';
+$string['recordrtc:recordscreen'] = 'Запись экрана в текстовом редакторе';
 $string['recordrtc:recordvideo'] = 'Записывать видео прямо в текстовый редактор';
+$string['resume'] = 'Резюме';
+$string['screenbitrate'] = 'Битрейт экрана';
+$string['screenbitrate_desc'] = 'Качество записи экрана (большее число означает более высокое качество).';
+$string['screenbuttontitle'] = 'Запись экрана';
+$string['screenresolution_fhd'] = '1920 x 1080 (16:9)';
+$string['screenresolution_hd'] = '1280 x 720 (16:9)';
+$string['screensharingstopped'] = 'Вы запретили показ экрана перед началом записи. Разрешите показ экрана в настройках браузера и начните запись снова.';
+$string['screensharingstopped_title'] = 'Демонстрация экрана остановлена';
+$string['screensize'] = 'Размер записи экрана';
+$string['screensize_desc'] = 'Размер выходного видеосигнала.';
+$string['screentimelimit'] = 'Ограничение времени использования экрана';
+$string['screentimelimit_desc'] = 'Максимальная продолжительность записи экрана.';
+$string['screentitle'] = 'Запись экрана';
 $string['startrecording'] = 'Начать запись';
 $string['stoprecording'] = 'Остановить запись';
 $string['timelimitwarning'] = 'Вы должны ввести число больше 0.';
@@ -85,6 +102,7 @@ $string['uploadprogress'] = 'завершена';
 $string['videobitrate'] = 'Битрейт видео';
 $string['videobitrate_desc'] = 'Качество записи видео (большее значение соответствует более высокому качеству)';
 $string['videobuttontitle'] = 'Запись видео';
+$string['videorecordmenutitle'] = 'Меню записи видео';
 $string['videotimelimit'] = 'Ограничение времени видео';
 $string['videotimelimit_desc'] = 'Максимальная длина записи, разрешенная для видеоклипов';
 $string['videotitle'] = 'Запись видео';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'de', version '4.4'.
+ * Strings for component 'badges', language 'de', version '4.5'.
  *
  * @package     badges
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actions'] = 'Aktivitäten';
 $string['activate'] = 'Zugriff aktivieren';
-$string['activatesuccess'] = 'Zugriff auf die Badges wurde erfolgreich aktiviert.';
+$string['activatesuccess'] = 'Zugriff auf Badge \'{$a}\' aktiviert.';
 $string['addalignment'] = 'Externen Skill oder Standard hinzufügen';
 $string['addbadge'] = 'Badges hinzufügen';
 $string['addbadge_help'] = 'Wählen Sie alle Badges aus, die als Voraussetzung für dieses Badge hinzugefügt werden sollen. (Mehrfachauswahl möglich)';
@@ -40,6 +40,7 @@ $string['addcourse'] = 'Kurse hinzufügen';
 $string['addcourse_help'] = 'Wählen Sie alle Kurse, die als Voraussetzung für dieses Badge hinzugefügt werden sollen. (Mehrfachauswahl möglich)';
 $string['addcriteria'] = 'Kriterium hinzufügen';
 $string['addcriteriatext'] = 'Um mit einem Kriterium für ein Badge zu beginnen, wählen Sie zuerst eine Option aus dem Auswahlmenü.';
+$string['addcriterion'] = 'Kriterium hinzufügen';
 $string['addedtobackpack'] = 'Badge zum Backpack hinzugefügt';
 $string['addrelated'] = 'Badges zuweisen';
 $string['addtobackpack'] = 'Zum Backpack hinzufügen';
@@ -80,7 +81,7 @@ $string['attachment_help'] = 'Wenn diese Option aktiviert ist, wird ein verliehe
 $string['award'] = 'Badge verleihen';
 $string['awardedto'] = 'Verliehen an {$a}';
 $string['awardedtoyou'] = 'An mich verliehen';
-$string['awardoncron'] = 'Der Zugriff auf die Badges wurde erfolgreich aktiviert. Zu viele Nutzer/innen können dieses Badge jetzt sofort erwerben. Um die Leistung der Website sicherzustellen, wird der Vorgang einige Zeit dauern.';
+$string['awardoncron'] = 'Eine große Anzahl von Nutzer/innen bekommen das Badge "{$a->badgename}". Es kann einige Zeit dauern, bis alle Nutzer/innen es erhalten haben.';
 $string['awards'] = 'Empfänger/innen';
 $string['backpackapiurl'] = 'URL der Backpack-API';
 $string['backpackavailability'] = 'Externe Verifizierung der Badges';
@@ -165,6 +166,7 @@ Hinweis: Vermeiden Sie bei der Absicherung der Badge-Verifikation unbedingt, nac
 $string['badgesdisabled'] = 'Badges sind auf dieser Moodle-Site nicht aktiviert.';
 $string['badgesearned'] = 'Anzahl der erworbenen Badges: {$a}';
 $string['badgesettings'] = 'Einstellungen';
+$string['badgesnavigation'] = 'Badges-Navigation';
 $string['badgestatus_0'] = 'Nicht verfügbar';
 $string['badgestatus_1'] = 'Verfügbar';
 $string['badgestatus_2'] = 'Nicht verfügbar (Kriterien gesperrt)';
@@ -183,6 +185,9 @@ $string['bmessage'] = 'Mitteilung';
 $string['boverview'] = 'Überblick';
 $string['brelated'] = 'Zugeordnete Badges ({$a})';
 $string['bydate'] = 'abgeschlossen bis';
+$string['canvascredentialsprovider'] = 'Canvas-Credentials';
+$string['canvasregions'] = 'Canvas-Credentials–Regionen';
+$string['canvasregions_desc'] = 'Sie können den Inhalt der Canvas-Credentials-Regionen konfigurieren. Jede Zeile ist durch Pipe-Zeichen getrennt und besteht aus 1) dem Regionsnamen, 2) der Backpack-URL und 3) der Backpack-API-URL.';
 $string['claim'] = 'Leitsatz (Claim)';
 $string['claimcomment'] = 'Kommentar zur Anerkennung';
 $string['claimid'] = 'Leitsatz (URL)';
@@ -194,7 +199,7 @@ $string['configuremessage'] = 'Mitteilung';
 $string['connect'] = 'Verbinden';
 $string['connected'] = 'Verbunden';
 $string['connecting'] = 'Wird verbunden ...';
-$string['contact'] = 'Kontakt';
+$string['contact'] = 'Kontakt zu Herausgeber/in';
 $string['contact_help'] = 'Tragen Sie hier die E-Mail-Adresse des Verleihers des Badge ein.';
 $string['copy'] = 'Kopieren';
 $string['copyof'] = 'Kopie von {$a}';
@@ -210,7 +215,7 @@ $string['creatorsubject'] = '\'{$a}\' wurde ausgezeichnet!';
 $string['criteria_0'] = 'Dieser Badge wird verliehen, wenn ...';
 $string['criteria_1'] = 'Aktivitätsabschluss';
 $string['criteria_1_help'] = 'Dieses Kriterium erlaubt es, einen Badge an Nutzer/innen zu verleihen, die bestimmte Aktivitäten im Kurs abgeschlossen haben.';
-$string['criteria_2'] = 'Manuelle Verleihung über eine bestimmte Rolle';
+$string['criteria_2'] = 'Manuelle Verleihung durch Personen mit einer bestimmten Rolle';
 $string['criteria_2_help'] = 'Dieses Kriterium erlaubt es, einen Badge manuell durch Personen zu verleihen, die eine bestimmte Rolle auf der Website oder in einem Kurs haben.';
 $string['criteria_3'] = 'Soziale Beteiligung';
 $string['criteria_3_help'] = 'Sozial';
@@ -275,7 +280,7 @@ $string['dateawarded'] = 'Verleihdatum';
 $string['dateearned'] = 'Datum: {$a}';
 $string['day'] = 'Tag(e)';
 $string['deactivate'] = 'Zugriff verhindern';
-$string['deactivatesuccess'] = 'Der Zugriff auf den Badge wurde erfolgreich deaktiviert.';
+$string['deactivatesuccess'] = 'Zugriff auf Badge \'{$a}\' deaktiviert.';
 $string['defaultissuercontact'] = 'E-Mail-Adresse des Badge-Verleihers';
 $string['defaultissuercontact_desc'] = 'Tragen Sie hier eine E-Mail-Adresse ein, die mit dem Badge-Verleiher verknüpft ist. Für ein Open-Badge-Backpack 2.0 dient diese der Authentifizierung, wenn Badges in ein Backpack veröffentlicht werden.';
 $string['defaultissuername'] = 'Name des Badge-Verleihers';
@@ -329,7 +334,7 @@ $string['error:nosuchfield'] = 'Warnung: Dieses Nutzerprofilfeld existiert nicht
 $string['error:nosuchmod'] = 'Warnung: Diese Aktivität existiert nicht mehr.';
 $string['error:nosuchrole'] = 'Warnung: Diese Rolle ist nicht mehr verfügbar.';
 $string['error:nosuchuser'] = 'Die Person mit dieser E-Mail-Adresse hat kein Nutzerkonto beim aktuellen Backpack-Dienst.';
-$string['error:notifycoursedate'] = 'Warnung: Badges, die mit dem Abschluss von Aktivitäten bzw. Kursen verbunden sind, können nicht verliehen werden, bevor der Kurs startet.';
+$string['error:notifycoursedate'] = 'Badges, die mit Aktivitätsabschlüssen oder dem Kursabschluss verbunden sind, können nicht vor Kursbeginn ({$a}) verliehen werden.';
 $string['error:parameter'] = 'Warnung: Mindestens ein Parameter sollte gewählt werden, damit die Verleihung des Badge reibungslos funktioniert.';
 $string['error:relatedbadgedoesntexist'] = 'Es gibt für diese ID kein öffentliches Badge';
 $string['error:requesterror'] = 'Die Verbindung ist fehlgeschlagen (Fehlercode {$a}).';
@@ -381,7 +386,13 @@ $string['imageauthorurl'] = 'URL von Bildautor/in';
 $string['imageauthorurl_help'] = 'Wenn angegeben, wird die URL zur Website der Person auf der Badge-Seite angezeigt, die das Bild erstellt hat. Die URL muss mit http:// oder https:// beginnen.';
 $string['imagecaption'] = 'Bildtitel';
 $string['imagecaption_help'] = 'Wenn ein Bildtitel angegeben ist, wird er auf Badge-Seite angezeigt.';
-$string['includeauthdetails'] = 'Authentifikationsdetails für den Backpack einbeziehen';
+$string['includeauthdetails'] = 'Mit dem Backpack-Anbieterkonto verbinden';
+$string['includeauthdetails_desc'] = 'Geben Sie die Anmeldeinformationen ein, um eine Verbindung mit Ihrem Backpack-Anbieter herzustellen.';
+$string['includeauthdetails_help'] = 'Ihre Anmeldeinformationen werden mit jedem in diesen Backpack exportierten Badge gesendet.';
+$string['includeauthdetailscanvas'] = 'Mit einem Canvas-Credentials-Ausstellerkonto verbinden';
+$string['includeauthdetailscanvas_desc'] = 'Geben Sie Ihre Canvas-Credentials ein, um Ihr Ausstellerkonto zu verbinden.';
+$string['includeauthdetailscanvas_help'] = 'In Canvas-Credentials exportierte Badges zeigen Ihre Organisation als Aussteller an. So können Sie auch nachverfolgen, wer Badges erhalten hat, und Aktualisierungen verwalten.';
+$string['includeauthdetailscanvas_subtitle'] = '(erfordert einen kostenpflichtigen Canvas-Credentials-Plan)';
 $string['invalidurl'] = 'Ungültige URL';
 $string['issuancedetails'] = 'Ablaufdatum';
 $string['issuedbadge'] = 'Information zum verliehenen Badge';
@@ -424,10 +435,13 @@ $string['month'] = 'Monat(e)';
 $string['moredetails'] = 'Weitere Details';
 $string['mybackpack'] = 'Einstellungen für mein Backpack';
 $string['mybadges'] = 'Meine Badges';
+$string['namewithimagelink'] = 'Name mit Bild und Link';
 $string['namewithlink'] = 'Name mit Link';
 $string['never'] = 'Nie';
 $string['newbackpack'] = 'Neuen Backpack hinzufügen';
 $string['newbadge'] = 'Neuen Badge anlegen';
+$string['newbadgedeprecated'] = 'Sie wurden von badges/newbadge.php umgeleitet. Beachten Sie bitte, dass badges/newbadge.php in naher Zukunft entfernt wird.
+<br/>Aktualisieren Sie Links und Lesezeichen, um die aktuelle Seite badges/edit.php zu verwenden.';
 $string['newimage'] = 'Neues Bild';
 $string['noalignment'] = 'Für diesen Badge sind keine externen Skills oder Kompetenzen angegeben.';
 $string['noawards'] = 'Dieser Badge wurde bisher nicht verliehen.';
@@ -469,13 +483,14 @@ $string['notifydaily'] = 'Täglich';
 $string['notifyevery'] = 'Jederzeit';
 $string['notifymonthly'] = 'Monatlich';
 $string['notifyweekly'] = 'Wöchentlich';
-$string['numawards'] = 'Dieser Badge wurde an <a href="{$a->link}">{$a->count}</a> Person(en) verliehen.';
-$string['numawardstat'] = 'Dieser Badge wurde an {$a} Person(en) verliehen.';
+$string['numawards'] = 'Nutzer/innen mit dem Badge \'{$a->badgename}\': <a href="{$a->link}">{$a->count}</a>.';
+$string['numawardstat'] = 'Nutzer/innen mit dem Badge \'{$a->badgename}\': {$a->awards}.';
 $string['oauth2issuer'] = 'OAuth 2-Services';
 $string['openbadgesv1'] = 'Open-Badges 1.0';
 $string['openbadgesv2'] = 'Open-Badges 2.0';
 $string['openbadgesv2p1'] = 'Open-Badges 2.1';
 $string['othernavigation'] = 'Andere Navigation ...';
+$string['otherprovider'] = 'Andere';
 $string['overallcrit'] = 'gewählten Kriterien sind erfüllt.';
 $string['password_required'] = 'Das Kennwort darf nicht leer sein.';
 $string['potentialrecipients'] = 'Mögliche Empfänger/innen';
@@ -514,9 +529,11 @@ $string['privacy:metadata:manualaward:datemet'] = 'Zeit, zu der der Badge verlie
 $string['privacy:metadata:manualaward:issuerid'] = 'ID der Person, die den Badge verleiht';
 $string['privacy:metadata:manualaward:issuerrole'] = 'Rolle der Person, die den Badge verleiht';
 $string['privacy:metadata:manualaward:recipientid'] = 'ID der Person, die den Badge manuell verliehen bekommen hat';
+$string['provider'] = 'Anbieter';
 $string['recipient'] = 'Badge-Empfänger/in';
 $string['recipients'] = 'Empfänger/innen';
 $string['recipientvalidationproblem'] = 'Nutzer/in kann nicht als Empfänger/in für dieses Badge verifiziert werden.';
+$string['region'] = 'Region';
 $string['relatedbages'] = 'Zugeordnete Badges';
 $string['relative'] = 'Relative Zeit';
 $string['requiredbadge'] = 'Mindestens ein Badge muss zum Kriterium hinzugefügt werden.';
@@ -541,7 +558,7 @@ $string['selecting'] = 'Mit den gewählten Badges ...';
 $string['setup'] = 'Verbindung konfigurieren';
 $string['sitebackpackdeleted'] = 'Der Website-Backpack wurde gelöscht.';
 $string['sitebackpacknotdeleted'] = 'Dieser Backpack konnte nicht gelöscht werden, da dies die Standardeinstellung der Website ist.';
-$string['sitebackpackwarning'] = 'Die Verbindung zum Backpack konnte nicht hergestellt werden. <br> <br>Überprüfen Sie, ob die Administrationseinstellung "E-Mail-Adresse des Badge-Ausstellers" die gültige E-Mail-Adresse für ein Konto auf der Backpack-Website ist. <br> <br> Vergewissern Sie sich, dass das "Kennwort des Badge-Ausstellers" auf der Seite <a href="{$a->url}"> Einstellungen für den Website-Backpack </a> das richtige Kennwort für das Konto auf der Backpack-Website ist. <br> <br> Antwort der Backpack-Website: "{$a->warning}"';
+$string['sitebackpackwarning'] = 'Die Verbindung zum Backpack konnte nicht hergestellt werden. <br><br>Überprüfen Sie, ob die Administrationseinstellung "E-Mail-Adresse des Badge-Ausstellers" die gültige E-Mail-Adresse für ein Konto auf der Backpack-Website ist. <br><br> Vergewissern Sie sich, dass das "Kennwort des Badge-Ausstellers" auf der Seite <a href="{$a->url}"> Einstellungen für den Website-Backpack </a> das richtige Kennwort für das Konto auf der Backpack-Website ist. <br><br> Antwort der Backpack-Website: "{$a->warning}"';
 $string['sitebadges'] = 'Website-Badges';
 $string['sitebadges_help'] = 'Website-Badges können nur für systemweite Leistungen verliehen werden, wie z.B. das Abschließen mehrerer Kurse oder die Vervollständigung des Nutzerprofils. Website-Badges können auch manuell von einer Person an eine andere verliehen werden.
 

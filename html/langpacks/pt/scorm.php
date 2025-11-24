@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'pt', version '4.4'.
+ * Strings for component 'scorm', language 'pt', version '4.5'.
  *
  * @package     scorm
  * @category    string
@@ -38,6 +38,7 @@ $string['aicchacptimeout_desc'] = 'Intervalo de tempo (minutos) que uma sessão 
 $string['aiccuserid'] = 'Passar ID numérico do utilizador ao AICC';
 $string['aiccuserid_desc'] = 'A norma AICC para nomes de utilizador é bastante restritiva, em comparação com o Moodle, e permite apenas caracteres alfanuméricos, hífen e underscore. Os pontos, espaços e o símbolo @ não são permitidos. Se ativar esta opção, os ID dos utilizadores serão passados para o pacote AICC em vez dos seus nomes de utilizadores.';
 $string['aliasonly'] = 'Ao selecionar um ficheiro \'imsmanifest.xml\' de um repositório, deverá usar um alias/atalho para este ficheiro.';
+$string['allattempts'] = 'Todas as tentativas do SCORM';
 $string['allowapidebug'] = 'Ativar depuração e rastreio da API (configure a máscara de captura)';
 $string['allowtypeaicchacp'] = 'Permitir AICC HACP externo';
 $string['allowtypeaicchacp_desc'] = 'Se ativar esta opção, permite a comunicação AICC HACP externa sem a necessidade de autenticação do utilizador para pedidos para o pacote externo AICC';
@@ -60,7 +61,7 @@ $string['attemptstatusmy'] = 'Apenas Painel do utilizador';
 $string['attemptsx'] = '{$a} tentativas';
 $string['attr_error'] = 'Valor incorreto para o atributo ({$a->attr}) na tag \'{$a->tag}\'.';
 $string['autocommit'] = 'Guardar automaticamente';
-$string['autocommit_help'] = 'Se ativar esta opção, os dados do SCORM são guardados automaticamente na base de dados. Esta opção é útil para objetos SCORM que não guardam os seus dados regularmente.';
+$string['autocommit_help'] = 'Se ativar esta opção, os dados do SCORM são guardados automaticamente na base de dados. É útil para objetos SCORM que não guardam os seus dados regularmente.';
 $string['autocommitdesc'] = 'Guardar automaticamente os dados do SCORM, caso o pacote SCORM não os guarde.';
 $string['autocontinue'] = 'Prosseguir automaticamente';
 $string['autocontinue_help'] = 'Se ativar esta opção, os objetos de aprendizagem seguintes serão exibidos automaticamente, caso contrário, deverá ser usado o botão \'Continuar\'.';

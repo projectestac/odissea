@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'zh_cn', version '4.4'.
+ * Strings for component 'qtype_ddwtos', language 'zh_cn', version '4.5'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -28,6 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['addmorechoiceblanks'] = '添加 {no} 个空白选项';
 $string['answer'] = '答案';
 $string['blank'] = '空白';
+$string['choicesacceptedtext'] = '把答案写下来，以便被拖进空白处。你可以加入额外的答案来增加难度。<br />
+接受文本格式:&lt; sub&gt; &lt; sup&gt; &lt; b&gt; &lt; i&gt; &lt; em&gt; &lt; strong&gt;。也接受TeX，在开头和结尾使用$$。';
 $string['correctansweris'] = '正确答案是： {$a}';
 $string['errorlimitedchoice'] = '选项 [[{$a}]] 已多次使用，但未设置为“无限制”。 请重新检查这个问题。';
 $string['infinite'] = '无限制';

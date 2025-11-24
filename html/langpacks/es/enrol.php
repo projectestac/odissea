@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'es', version '4.4'.
+ * Strings for component 'enrol', language 'es', version '4.5'.
  *
  * @package     enrol
  * @category    string
@@ -47,7 +47,7 @@ $string['customwelcomemessage_help'] = 'Formatos permitidos: Texto plano o auto-
 <li>Apellido(s) del usuario {$a->lastname}</li>
 <li>Rol del usuario en el curso {$a->courserole}</li>
 </ul>';
-$string['customwelcomemessageplaceholder'] = 'Estimado/a {$a->fullname}: Ha sido matriculado en el curso {$a->coursename}';
+$string['customwelcomemessageplaceholder'] = 'Hola, {$a->fullname}. Se le ha matriculado en el curso {$a->coursename}.';
 $string['defaultenrol'] = 'Añadir instancia a cursos nuevos';
 $string['defaultenrol_desc'] = 'Es posible añadir esta extensión, por defecto, a todos los cursos nuevos.';
 $string['deleteinstanceconfirm'] = 'Está a punto de eliminar el método de matriculación "{$a->name}". Todos los  {$a->users} usuarios actualmente matriculados con este método serán dados de baja y cualquier información suya relativa a sus cursos, como las calificaciones, pertenencia a grupos o suscripción a foros será eliminada.
@@ -147,10 +147,10 @@ $string['privacy:metadata:user_enrolments:enrolid'] = 'La instancia del plugin d
 $string['privacy:metadata:user_enrolments:modifierid'] = 'El ID del usuario que modificó por última vez la matriculación del usuario';
 $string['privacy:metadata:user_enrolments:status'] = 'El estado de la matriculación del usuario en un curso';
 $string['privacy:metadata:user_enrolments:tableexplanation'] = 'El plugin de matriculación del núcleo de Moodle almacena los usuarios matriculados.';
-$string['privacy:metadata:user_enrolments:timecreated'] = 'El momento en el que fue creada la matriculación del usuario';
-$string['privacy:metadata:user_enrolments:timeend'] = 'El momento en el que termina la matriculación del usuario';
-$string['privacy:metadata:user_enrolments:timemodified'] = 'El momento en el que fue modificada la matriculación del usuario';
-$string['privacy:metadata:user_enrolments:timestart'] = 'El momento en el que inicia la matriculación del usuario';
+$string['privacy:metadata:user_enrolments:timecreated'] = 'Fecha de matriculación del usuario';
+$string['privacy:metadata:user_enrolments:timeend'] = 'Fecha de fin de la matriculación al curso';
+$string['privacy:metadata:user_enrolments:timemodified'] = 'Fecha en que fue modificada la matriculación del usuario';
+$string['privacy:metadata:user_enrolments:timestart'] = 'Fecha de inicio de la matriculación del usuario';
 $string['privacy:metadata:user_enrolments:userid'] = 'El ID del usuario';
 $string['recovergrades'] = 'Es posible recuperar las calificaciones de usuario antiguas';
 $string['rolefromcategory'] = '{$a->role} (Heredado de la categoría de curso)';
@@ -166,10 +166,10 @@ $string['startdatetoday'] = 'Hoy';
 $string['synced'] = 'Sincronizado';
 $string['testsettings'] = 'Probar configuración';
 $string['testsettingsheading'] = 'Prueba de configuración del componente de matriculación - {$a}';
-$string['timeended'] = 'Fecha de fin de la matriculación al curso';
+$string['timeended'] = 'Fecha de fin de la matriculación';
 $string['timeenrolled'] = 'Tiempo inscrito';
 $string['timereaggregated'] = 'Tiempo re-agregado';
-$string['timestarted'] = 'Fecha de inicio de la matriculación al curso';
+$string['timestarted'] = 'Fecha de inicio de la matriculación';
 $string['totalenrolledusers'] = '{$a} usuarios matriculados';
 $string['totalotherusers'] = '{$a} otros usuarios';
 $string['totalunenrolledusers'] = '{$a} usuarios desmatriculados';

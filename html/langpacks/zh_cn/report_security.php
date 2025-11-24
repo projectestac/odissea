@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'zh_cn', version '4.4'.
+ * Strings for component 'report_security', language 'zh_cn', version '4.5'.
  *
  * @package     report_security
  * @category    string
@@ -128,6 +128,7 @@ $string['check_unsecuredataroot_error'] = '您的数据目录 <code>{$a}</code> 
 $string['check_unsecuredataroot_name'] = '不安全的数据目录';
 $string['check_unsecuredataroot_ok'] = '数据目录不能通过 Web 直接访问。';
 $string['check_unsecuredataroot_warning'] = '您的数据目录 <code>{$a}</code> 位置错误，可以从 Web 直接访问。';
+$string['check_upgradefile_info'] = '升级说明文件不应该是公开的';
 $string['check_vendordir_details'] = '<p>目录<code>{$a->path}</code>包含各种第三方库及其附属项，通常由PHP 编译器安装。这些库可能是本地Moodle开发所需要的，比如安装PHPUnit框架。在生产环境中运行Moodle站点不需要这些模块，而且它们可能含有使您的站点受到远程攻击的潜在危险代码。</p><p>如果网站可以通过公共URL访问，强烈建议删除该目录，或者至少在web服务器配置中禁止对其进行web访问。</p>';
 $string['check_vendordir_info'] = '供应商目录不应出现在公共站点上。';
 $string['check_vendordir_name'] = '供应商目录';

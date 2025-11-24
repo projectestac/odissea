@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'ca', version '4.4'.
+ * Strings for component 'user', language 'ca', version '4.5'.
  *
  * @package     user
  * @category    string
@@ -25,25 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcondition'] = 'Afegeix una condició';
-$string['adverbfor_and'] = 'i';
-$string['adverbfor_andnot'] = 'i';
-$string['adverbfor_or'] = 'o';
-$string['applyfilters'] = 'Aplica filtres';
-$string['clearfilterrow'] = 'Suprimeix la fila de filtres';
-$string['clearfilters'] = 'Neteja els filtres';
-$string['clearfilterselection'] = 'Suprimeix «{$a}» del filtre';
 $string['countparticipantsfound'] = 'Nombre de participants que s\'han trobat: {$a}';
 $string['filterbykeyword'] = 'Paraula clau';
-$string['filterrowlegend'] = 'Filtre {$a}';
-$string['filtersetmatchdescription'] = 'La manera com s\'haurien de combinar els múltiples filtres';
-$string['filtertype'] = 'Tipus de filtre';
-$string['match'] = 'Coincideix';
-$string['matchofthefollowing'] = 'de les següents:';
 $string['moodlenetprofile'] = 'Perfil de MoodleNet';
 $string['moodlenetprofile_help'] = 'El vostre ID de perfil de MoodleNet enllaça el vostre perfil de MoodleNet amb aquest lloc.';
 $string['placeholdertype'] = 'Tipus...';
-$string['placeholdertypeorselect'] = 'Escriviu o seleccioneu...';
 $string['privacy:courserequestpath'] = 'Cursos sol·licitats';
 $string['privacy:descriptionpath'] = 'Descripció del perfil';
 $string['privacy:devicespath'] = 'Dispositius d\'usuari';
@@ -63,7 +49,7 @@ $string['privacy:metadata:country'] = 'El país en què es troba l\'usuari.';
 $string['privacy:metadata:courseid'] = 'ID del curs';
 $string['privacy:metadata:currentlogin'] = 'L\'autenticació actual d\'aquest usuari.';
 $string['privacy:metadata:data'] = 'Dades relacionades amb el camp d\'usuari personalitzat de l\'usuari.';
-$string['privacy:metadata:deleted'] = 'Un senyalador per a mostrar si l\'usuari s\'ha suprimit o no.';
+$string['privacy:metadata:deleted'] = 'Una marca per a mostrar si l\'usuari s\'ha suprimit o no.';
 $string['privacy:metadata:department'] = 'El departament on es troba aquest usuari.';
 $string['privacy:metadata:description'] = 'Detalls general sobre aquest usuari.';
 $string['privacy:metadata:devicename'] = 'El nom del dispositiu, occam o iPhone, etc.';
@@ -108,7 +94,7 @@ $string['privacy:metadata:passwordtablesummary'] = 'Un registre giratori de resu
 $string['privacy:metadata:phone'] = 'Un número de telèfon per a l\'usuari.';
 $string['privacy:metadata:picture'] = 'Els detalls de la imatge associats amb aquest usuari.';
 $string['privacy:metadata:platform'] = 'La plataforma del dispositiu, Android o iOS, etc';
-$string['privacy:metadata:policyagreed'] = 'Un senyalador per determinar si l\'usuari ha acceptat la política del lloc.';
+$string['privacy:metadata:policyagreed'] = 'Una marca per determinar si l\'usuari ha acceptat la política del lloc.';
 $string['privacy:metadata:pushid'] = 'El token/clau/identificador/identificador de registre del dispositiu d\'empenyiment';
 $string['privacy:metadata:reason'] = 'El motiu per demanar aquest curs.';
 $string['privacy:metadata:requester'] = 'L\'ID de l\'usuari que ha sol·licitat el curs';
@@ -121,7 +107,7 @@ $string['privacy:metadata:sid'] = 'L\'ID de la sessió';
 $string['privacy:metadata:skype'] = 'L\'identificador Skype de l\'usuari';
 $string['privacy:metadata:state'] = '0 significa una sessió normal';
 $string['privacy:metadata:summary'] = 'Una descripció del curs.';
-$string['privacy:metadata:suspended'] = 'Un senyalador per a mostrar si l\'usuari ha estat suspès en aquest sistema.';
+$string['privacy:metadata:suspended'] = 'Una marca per a mostrar si l\'usuari ha estat suspès en aquest sistema.';
 $string['privacy:metadata:theme'] = 'Una preferència d\'usuari per al tema a mostrar.';
 $string['privacy:metadata:timeaccess'] = 'L\'hora d\'accés al curs.';
 $string['privacy:metadata:timecreated'] = 'L\'hora en què es va crear aquest registre.';
@@ -149,7 +135,6 @@ $string['privacy:passwordresetpath'] = 'Restabliments de contrasenya';
 $string['privacy:privatefilespath'] = 'Fitxers privats';
 $string['privacy:profileimagespath'] = 'Imatges de perfil';
 $string['privacy:sessionpath'] = 'Dades de la sessió';
-$string['selectfiltertype'] = 'Selecciona';
 $string['supportmessagealternative'] = 'En el seu lloc, podeu enviar un correu electrònic a {$a}.';
 $string['supportmessagenotsent'] = 'El vostre missatge no s\'ha pogut enviar.';
 $string['supportmessagesent'] = 'S\'ha enviat el vostre missatge.';

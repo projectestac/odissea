@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'nl', version '4.4'.
+ * Strings for component 'feedback', language 'nl', version '4.5'.
  *
  * @package     feedback
  * @category    string
@@ -251,7 +251,8 @@ $string['radio'] = 'Meerkeuzevraag - één antwoord';
 $string['radio_values'] = 'Antwoorden';
 $string['ready_feedbacks'] = 'Ingevulde feedbackformulieren';
 $string['required'] = 'Verplicht';
-$string['resetting_data'] = 'Verwijder alle antwoorden';
+$string['resetting_data'] = 'Antwoorden';
+$string['resetting_delete'] = 'Verwijder antwoord';
 $string['resetting_feedbacks'] = 'Feedback naar standaardinstellingen';
 $string['response_nr'] = 'Antwoordnummer';
 $string['responses'] = 'Antwoorden';

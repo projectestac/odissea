@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ca', version '4.4'.
+ * Strings for component 'forum', language 'ca', version '4.5'.
  *
  * @package     forum
  * @category    string
@@ -542,9 +542,6 @@ $string['postmailinfo'] = 'Això és una còpia d\'un missatge enviat a {$a}.';
 $string['postmailnow'] = '<p>Aquest missatge s\'enviarà per correu, immediatament, a tots els subscriptors del fòrum.</p>';
 $string['postmailreply'] = 'Per respondre-hi cliqueu damunt d\'aquest enllaç: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
-$string['postrating1'] = 'Sobretot coneixements separats';
-$string['postrating2'] = 'Separats i connectats';
-$string['postrating3'] = 'Sobretot coneixements connectats';
 $string['posts'] = 'Missatges';
 $string['postsfrom'] = 'Missatges de';
 $string['postsmadebyuser'] = 'Missatges enviats per {$a}';

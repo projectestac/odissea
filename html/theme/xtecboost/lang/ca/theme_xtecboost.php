@@ -111,19 +111,6 @@ $string['customcssdesc'] = 'Les regles definides aquí seran les darreres que s\
 
 $string['totop'] = 'Amunt';
 
-//Advices
-$string['advices'] = 'Avisos';
-$string['alert_message'] = 'Missatge';
-$string['advices_admin'] = 'Avís per a administradors';
-$string['advices_user'] = 'Avís per a tothom';
-$string['alert_start'] = 'Mostra el missatge a partir d\'aquesta data';
-$string['alert_start_desc'] = 'Deixeu-ho buit si voleu que es mostri des d\'ara mateix. Format YYYYmmdd';
-$string['alert_end'] = 'Mostra el missatge fins a aquesta data';
-$string['alert_end_desc'] = 'Deixeu-ho buit si voleu que es mostri per sempre. Format YYYYmmdd';
-$string['agora_alert_message_desc'] = 'Mostra un missatge a tothom al capdamunt de l\'àrea de blocs';
-$string['admin_alert_message_desc'] = 'Mostra un missatge als administradors al capdamunt de l\'àrea de blocs';
-$string['show_admins'] = 'Aquest missatge només es mostra als administradors del lloc';
-
 // XTEC service type
 $string['xtec_type_heading'] = 'Tipus de servei XTEC';
 $string['xtec_type'] = 'Servei XTEC';

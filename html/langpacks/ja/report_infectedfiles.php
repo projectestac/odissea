@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_infectedfiles', language 'ja', version '4.4'.
+ * Strings for component 'report_infectedfiles', language 'ja', version '4.5'.
  *
  * @package     report_infectedfiles
  * @category    string
@@ -33,8 +33,8 @@ $string['confirmdownloadall'] = '本当にすべてのファイルをダウン�
 $string['filename'] = 'ファイル名';
 $string['infectedfiles'] = 'アンチウイルス失敗';
 $string['pluginname'] = '感染ファイル';
-$string['privacy:metadata:infected_files'] = 'このテーブルはシステムによって検出されたアンチウイルス失敗情報を保持します。';
-$string['privacy:metadata:infected_files:filename'] = 'ユーザによってアップロードされた感染ファイルのファイル名です。';
+$string['privacy:metadata:infected_files'] = 'このテーブルはシステムにより検出されたアンチウイルス失敗情報を保持します。';
+$string['privacy:metadata:infected_files:filename'] = 'ユーザによりアップロードされた感染ファイルのファイル名です。';
 $string['privacy:metadata:infected_files:timecreated'] = 'ユーザが感染ファイルをアップロードした時のタイムスタンプです。';
 $string['privacy:metadata:infected_files:userid'] = '感染ファイルをアップロードしたユーザのユーザIDです。';
 $string['privacy:metadata:infected_files_subcontext'] = 'アンチウイルス失敗';

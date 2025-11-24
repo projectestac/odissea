@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_textarea', language 'sv', version '4.4'.
+ * Strings for component 'profilefield_textarea', language 'sv', version '4.5'.
  *
  * @package     profilefield_textarea
  * @category    string

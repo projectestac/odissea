@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'courseformat', language 'eu', version '4.4'.
+ * Strings for component 'courseformat', language 'eu', version '4.5'.
  *
  * @package     courseformat
  * @category    string
@@ -37,8 +37,9 @@ $string['bulkedit'] = 'Ekintza masiboak';
 $string['bulkeditingcourse'] = 'Ikastaroaren editatze masiboa: {$a}';
 $string['bulkselection'] = '{$a} aukeratuta';
 $string['bulkselection_plural'] = '{$a} aukeratuta';
-$string['cm_complete_feedback'] = '{$a->name} osatutzat markatu da.';
-$string['cm_complete_feedback_batch'] = 'Aukeratutako {$a->count} jarduerak osatutzat markatu dira.';
+$string['cm_add_feedback'] = '{$a->modname} gehituta.';
+$string['cm_complete_feedback'] = '{$a->name} egindako gisa markatu da.';
+$string['cm_complete_feedback_batch'] = 'Aukeratutako {$a->count} jarduerak egindako gisa markatu dira.';
 $string['cm_delete_feedback'] = '{$a->name} ezabatuta.';
 $string['cm_delete_feedback_batch'] = 'Aukeratutako {$a->count} jarduerak ezabatuta.';
 $string['cm_duplicate_feedback'] = '{$a->name} bikoiztuta.';
@@ -53,13 +54,15 @@ $string['cm_show_feedback'] = '{$a->name} ikusgai dago orain.';
 $string['cm_show_feedback_batch'] = 'Aukeratutako {$a->count} jarduera ikusgai daude orain.';
 $string['cm_stealth_feedback'] = '{$a->name} eskuragarri dago orain baina ikastaro-orrian erakutsi gabe.';
 $string['cm_stealth_feedback_batch'] = 'Aukeratutako {$a->count} jarduerak orain eskuragarri daude baina ikastaro-orrian erakutsi gabe.';
-$string['cm_uncomplete_feedback'] = '{$a->name} osatu gabe gisa markatu da.';
-$string['cm_uncomplete_feedback_batch'] = 'Aukeratutako {$a->count} jarduerak osatu gabe gisa markatu dira.';
+$string['cm_uncomplete_feedback'] = '{$a->name} egin gabe gisa markatu da.';
+$string['cm_uncomplete_feedback_batch'] = 'Aukeratutako {$a->count} jarduerak egin gabe gisa markatu dira.';
 $string['cm_visiblegroups_feedback'] = '{$a->name}(r)en talde-modua "Taldeek elkar ikusten dute" izatera aldatuta.';
 $string['cmavailability'] = 'Jarduera-eskuragarritasuna';
 $string['cmdelete_info'] = 'Ekintza honek {$a->name} jarduera eta bere barnean dauden erabiltzaile-datuak ezabatuko ditu.';
+$string['cmdelete_subsectiontitle'] = 'Ezabatu azpi-atala?';
 $string['cmdelete_title'] = 'Ezabatu jarduera?';
 $string['cmmove_info'] = 'Mugitu {$a} honen ondoren:';
+$string['cmmove_subsectiontitle'] = 'Mugitu azpi-atala';
 $string['cmmove_title'] = 'Mugitu jarduera';
 $string['cmsdelete'] = 'Ezabatu jarduerak';
 $string['cmsdelete_info'] = 'Ekintza honek {$a->count} jarduera eta euren barnean dauden erabiltzaile-datuak ezabatuko ditu.';
@@ -70,15 +73,19 @@ $string['cmsmove_info'] = 'Mugitu {$a} jarduera honen ondoren:';
 $string['cmsmove_title'] = 'Mugitu aukeratutako jarduerak';
 $string['courseindex'] = 'Ikastaroaren aurkibidea';
 $string['courseindexoptions'] = 'Ikastaroaren aurkibidearen aukerak';
+$string['maxsectionaddmessage'] = 'Ikastaro batean baimendutako gehieneko atal kopurura iritsi zara.';
 $string['nobulkaction'] = 'Ez dago ekintza masiborik eskuragarri';
+$string['orphansectionwarning'] = 'Atal honek eta bere edukiak ez dira ikastaroaren egituraren parte eta ez daude ikasleentzat ikusgai. Eduki hauetako edozein erabiltzeko, mugitu ezazu beste atal batera.';
 $string['preference:coursesectionspreferences'] = '{$a} ikastarorako atalen erabiltzaile-hobespenak';
 $string['privacy:metadata:preference:coursesectionspreferences'] = 'Atalen erabiltzaile-hobespenak, hala nola zabalduta edo tolestuta dauden.';
+$string['section_add_feedback'] = 'Atala gehituta.';
 $string['section_delete_feedback'] = '{$a->name} ikastaro-atala ezabatuta.';
 $string['section_delete_feedback_batch'] = 'Aukeratutako {$a->count} ikastaro-atal ezabatuta.';
 $string['section_hide_feedback'] = '{$a->name} ikastaro-atala ezkutatuta.';
 $string['section_hide_feedback_batch'] = 'Aukeratutako {$a->count} ikastaro-atal ezkutatuta.';
 $string['section_show_feedback'] = '{$a->name} ikastaro-atala ikusgai jarrita.';
 $string['section_show_feedback_batch'] = 'Aukeratutako {$a->count} ikastaro-atal ikusgai jarrita.';
+$string['sectionaddmax'] = 'Ikastaro batean baimendutako gehieneko atal kopurura iritsi zara...';
 $string['sectionavailability_title'] = 'Atalaren eskuragarritasuna';
 $string['sectiondelete_info'] = 'Ekintza honek {$a->name} atala eta bere barnean dauden jarduera guztiak ezabatuko ditu.';
 $string['sectiondelete_title'] = 'Ezabatu atala?';

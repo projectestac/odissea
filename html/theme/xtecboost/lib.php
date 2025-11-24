@@ -53,7 +53,7 @@ function theme_xtecboost_get_precompiled_css(): string {
  * Get SCSS to prepend.
  *
  * @param theme_config $theme The theme config object.
- * @return array|string
+ * @return string
  */
 function theme_xtecboost_get_pre_scss($theme): string {
     $scss = '';
@@ -72,16 +72,6 @@ function theme_xtecboost_get_pre_scss($theme): string {
     $theme->settings->fontcolor = !empty($theme->settings->fontcolor) ? $theme->settings->fontcolor : '#007377';
     $theme->settings->linkscolor = !empty($theme->settings->linkscolor) ? $theme->settings->linkscolor : '#910048';
     $theme->settings->headerbg = !empty($theme->settings->headerbg) ? $theme->settings->headerbg : '#F8F8F8';
-
-    if (!empty($theme->settings->colorset) && $theme->settings->colorset === 'nodes' && theme_xtecboost_is_service_enabled('nodes')) {
-        $colors = get_colors_from_nodes(true);
-        if ($colors) {
-            $theme->settings->maincolor = $colors['color'];
-            $theme->settings->fontcolor = $colors['color'];
-            $theme->settings->linkscolor = $colors['color'];
-            $theme->settings->headerbg = $colors['logo_color'];
-        }
-    }
 
     // Decide foreground color depending on the other
     $theme->settings->colorcontrast = theme_xtecboost_get_contrast_YIQ($theme->settings->maincolor);

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'zh_cn', version '4.4'.
+ * Strings for component 'enrol', language 'zh_cn', version '4.5'.
  *
  * @package     enrol
  * @category    string
@@ -47,6 +47,7 @@ $string['customwelcomemessage_help'] = '允许的格式：纯文本或 Moodle-au
 <li>用户姓氏 {$a->姓氏}</li>
 <li>用户课程角色 {$a->courserole}</li>
 </ul>';
+$string['customwelcomemessageplaceholder'] = '您好 {$a->firstname}，您已成功加入课程 {$a->coursename}';
 $string['defaultenrol'] = '向新课程添加实例';
 $string['defaultenrol_desc'] = '缺省情况下可以把这些插件添加到所有新课程。';
 $string['deleteinstanceconfirm'] = '您将要删除在"{$a->name}"中的报名方法。当前所有使用该方法参加的{$a->users}用户会被退出，而且所有课程相关的信息例如用户的成绩，组成员关系以及论坛订阅等都将被删除。

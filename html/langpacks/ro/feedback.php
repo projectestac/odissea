@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ro', version '4.4'.
+ * Strings for component 'feedback', language 'ro', version '4.5'.
  *
  * @package     feedback
  * @category    string
@@ -252,7 +252,8 @@ $string['radio'] = 'Alegere multiplă - răspuns unic';
 $string['radio_values'] = 'Răspunsuri';
 $string['ready_feedbacks'] = 'Feedback-uri gata';
 $string['required'] = 'Necesar';
-$string['resetting_data'] = 'Resetați răspunsurile de feedback';
+$string['resetting_data'] = 'Răspunsuri';
+$string['resetting_delete'] = 'Șterge răspunsurile';
 $string['resetting_feedbacks'] = 'Resetarea feedback-urilor';
 $string['response_nr'] = 'Numărul răspunsuluii';
 $string['responses'] = 'Răspunsuri';

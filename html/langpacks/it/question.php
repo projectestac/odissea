@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'it', version '4.4'.
+ * Strings for component 'question', language 'it', version '4.5'.
  *
  * @package     question
  * @category    string
@@ -348,7 +348,6 @@ $string['nocate'] = 'La categoria {$a} non esiste!';
 $string['noconditionspecified'] = 'Specifica una condizione';
 $string['nopermissionadd'] = 'Non sei autorizzato ad aggiungere domande qui.';
 $string['nopermissionedit'] = 'Non sei autorizzato a modificare la domanda da qui.';
-$string['nopermissionmove'] = 'Non sei autorizzato a spostare domande da qui. Puoi salvare la domanda in questa categoria oppure salvarla come nuova domanda.';
 $string['noprobs'] = 'Non è stato trovato nessun problema nel database delle domande.';
 $string['noquestionbanks'] = 'Non sono stati trovati plugin del deposito delle domande';
 $string['noquestions'] = 'Non sono state trovate domande da esportare. Accertati di aver selezionato per l\'esportazione una categoria che contenga domande.';
@@ -438,7 +437,11 @@ $string['questionbehavioursorderexplained'] = 'Inserire un elenco di comportamen
 $string['questioncategories'] = 'Categorie di domande';
 $string['questioncategory'] = 'Categoria di domande';
 $string['questioncatsfor'] = 'Categorie di domande di \'{$a}\'';
+$string['questiondefaultssave'] = 'Salva le opzioni della domanda come impostazioni di default delle preferenze dell\'utente';
+$string['questiondefaultssave_desc'] = 'Imposta se le opzioni delle domande, come "Valutazione predefinita", "Una o più risposte?" ecc., debbano essere salvate come preferenze dell\'utente quando si invia il modulo di modifica della domanda, per essere utilizzate come impostazioni predefinite la prossima volta che l\'utente accederà al modulo.';
 $string['questiondoesnotexist'] = 'Questa domanda non esiste';
+$string['questionediting'] = 'Modifica domanda';
+$string['questionediting_desc'] = 'Queste impostazioni si applicano al modulo di modifica delle domande.';
 $string['questionformtagheader'] = '{$a} tag';
 $string['questionidmismatch'] = 'Mancata corrispondenza delle id delle domande';
 $string['questionloaderror'] = 'Non è stato possibile caricare le opzioni della domanda.';

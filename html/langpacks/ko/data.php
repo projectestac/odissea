@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ko', version '4.4'.
+ * Strings for component 'data', language 'ko', version '4.5'.
  *
  * @package     data
  * @category    string
@@ -28,7 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['action'] = '실행';
 $string['add'] = '내용 추가';
 $string['addcomment'] = '덧글 추가';
-$string['addentries'] = '내용 추가';
 $string['addtemplate'] = '템플릿 추가';
 $string['advancedsearch'] = '고급 검색';
 $string['allowcomments'] = '덧글 허용';
@@ -51,8 +50,6 @@ $string['availabletags_help'] = '<p align="center"><strong>쓸 수 있는 태그
 <p>버튼은 다음과 같은 형식을 갖는다: ##somebutton##</p>
 <p>"쓸 수 있는 태그"목록에 제시된 태그들만 현재의 탬플릿에서 쓸 수 있다.</p>';
 $string['availabletodate'] = '까지 사용가능';
-$string['blank'] = '공백';
-$string['buttons'] = '실행';
 $string['bynameondate'] = '{$a->date} 에 {$a->name} 에 의해';
 $string['cancel'] = '취소';
 $string['cannotaccesspresentsother'] = '다른 사용자가 설정사항 접근을 금지했음';
@@ -279,7 +276,6 @@ $string['nolisttemplate'] = '목록 템플릿이 아직 정의되지 않음';
 $string['nomatch'] = '해당되는 게시물이 없음!';
 $string['nomaximum'] = '최대값 없음';
 $string['norecords'] = '데이터베이스에 입력된 내용 없음';
-$string['nosingletemplate'] = '단일 템플릿이 아직 정의되지 않음';
 $string['notapproved'] = '아직 입력을 받을 수 없음';
 $string['notinjectivemap'] = '일대일 매핑이 아님';
 $string['notopenyet'] = '죄송합니다만 이 활동은 {$a} 가 될 때까지 이용할 수 없습니다.';
@@ -298,7 +294,6 @@ $string['page-mod-data-x'] = '모든 데이터베이스 활동 모듈 페이지'
 $string['pagesize'] = '한 페이지당 게시물 수';
 $string['participants'] = '참가자';
 $string['picture'] = '그림';
-$string['pleaseaddsome'] = '시작하려면 아래에 새로운 설정을 하던지 아니면 미리 <a href="{$a}">설정한 기본값</a>에서 선택하십시오.';
 $string['pluginadministration'] = '데이터베이스 활동 관리';
 $string['pluginname'] = '데이터베이스';
 $string['portfolionotfile'] = '파일 대신 포트폴리오로 내보내기(csv 및 leap2a 만)';
@@ -339,7 +334,6 @@ $string['saveaspreset_help'] = '<p align="center"><strong>초기설정으로 저
 <p>이것은 현재의 템플릿을 사이트의 누구건 보거나 사용할 수 있게 초기설정으로 공개한다. 이는 초기설정 목록에 나타나게 된다. 여러분은 언제든 이를 삭제할 수도 있다.</p>';
 $string['savesettings'] = '설정 저장';
 $string['savesuccess'] = '저장 완료. 여러분의 초기 설정이 사이트 전반에 적용될 것입니다.';
-$string['savetemplate'] = '템플릿 저장';
 $string['search'] = '검색';
 $string['selectedrequired'] = '모든 선택사항 필요';
 $string['showall'] = '전체항목 보기';
@@ -358,7 +352,6 @@ $string['text'] = '문장';
 $string['textarea'] = '글상자';
 $string['timeadded'] = '추가된 시간';
 $string['timemodified'] = '변경된 시간';
-$string['todatabase'] = '이 데이터베이스에';
 $string['type'] = '항목 유형';
 $string['undefinedprocessactionmethod'] = '데이터 초기설정에서 "{$a}"를 처리하기 위한 방법이 정의되지 않았음.';
 $string['updatefield'] = '기존 필드 업데이트';

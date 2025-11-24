@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'eu', version '4.4'.
+ * Strings for component 'tool_generator', language 'eu', version '4.5'.
  *
  * @package     tool_generator
  * @category    string
@@ -58,6 +58,9 @@ $string['error_nonexistingcourse'] = 'Zehaztutako ikastaroa ez da existitzen.';
 $string['error_nopageinstances'] = 'Aukeratutako ikastaroak ez dauka orria moduluaren instantziarik';
 $string['error_notdebugging'] = 'Ez dago zerbitzari honetan eskuragarri arazketan ez dagoelako GARATZAILEA ezarrita';
 $string['error_nouserspassword'] = 'Proba-plan bat sortzeko aurretik config.php fitxategian $CFG->tool_generator_users_password parametroa zehaztu behar duzu.';
+$string['execute'] = 'Exekutatu';
+$string['execute_cleanup'] = 'Garbitu probetarako egoerak';
+$string['execute_scenarios'] = 'Probetarako egoerak probatzen';
 $string['fullname'] = 'Probarako ikastaroa: {$a->size}';
 $string['maketestcourse'] = 'Sortu probetarako ikastaroa';
 $string['maketestplan'] = 'Sortu JMeter proba-plana';
@@ -90,6 +93,7 @@ $string['sitesize_4'] = 'XL (~10GB; 1065 ikastaro, ~5 ordutan sortuak)';
 $string['sitesize_5'] = 'XXL (~20GB; 4177 ikastaro, ~10 ordutan sortuak)';
 $string['size'] = 'Ikastaroaren tamaina';
 $string['smallfiles'] = 'Fitxategi txikiak';
+$string['step_example'] = 'Adibidezko pausoa:';
 $string['targetcourse'] = 'Probatu helburuko ikastaroa';
 $string['testplanexplanation'] = 'Erreminta honek JMeter-eko proba-plan fitxategia sortzen du erabiltzaile-kredentzialen fitxategiarekin batera.
 
@@ -116,7 +120,9 @@ $string['testscenario'] = 'Sortu probetarako egoera';
 $string['testscenario_description'] = 'Probetarako egoerak sortzean mugatutako funtzionalitate-fitxategien sintaxi funtzionalitate bat erabiltzen du eskuzko probak exekutatu ahal izateko beharrezko dituen elementu guztiak sortzeko.';
 $string['testscenario_errorparsing'] = 'Errorea funtzionalitate-fitxategia aztertzean: {$a}';
 $string['testscenario_file'] = 'Funtzionalitate-fitxategia';
-$string['testscenario_filedesc'] = 'Igotako funtzionalitate-fitxategiak core_data_generator duten egoerak soilik izan ditzake. Oraindik ez da bateragarria egoera laburpenekin. Egoera guztiak batera exekutatuko dira baina atzeko planoko pausoei ezikusiarena egingo zaie.';
+$string['testscenario_filedesc'] = 'Igotako funtzionalitate-fitxategiak core_data_generator duten egoerak soilik izan ditzake edo selenium behar ez duten pauso zehatz batzuk. Egoera guztiak batera exekutatuko dira @cleanup etiketa dutenak izan ezik.';
+$string['testscenario_filedesc_cleanup'] = '@cleanup etiketa duten probetarako egoerak soilik exekutatuko dira "Exekutatu" ezarpenean "Cleanup" zehazten bada. Garbiketa komando lerro bidez exekutatzeko --cleanup aukera erabili dezakezu.';
+$string['testscenario_filedesc_list'] = 'Probetarako egoeraren fitxategian erabili daitezkeen pausoen zerrenda hau da:';
 $string['testscenario_invalidfile'] = 'Fitxategiaren formatua baliogabea da edo pauso baliogabeak ditu.';
 $string['testscenario_invalidstep'] = 'Pauso ezezaguna. Probetarako egoerak sortzean core_data_generator egoerak onartzen dira soilik.';
 $string['testscenario_nosteps'] = 'Fitxategian ez dago exekutatu daitekeen pausorik.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'pt', version '4.4'.
+ * Strings for component 'backup', language 'pt', version '4.5'.
  *
  * @package     backup
  * @category    string
@@ -205,6 +205,7 @@ $string['enableasyncbackup_help'] = 'Se ativar esta opção, todas as operaçõe
 $string['enterasearch'] = 'Insira uma pesquisa';
 $string['error_block_for_module_not_found'] = 'Foi encontrada uma instância para bloco (id: {$a->bid}) para a disciplina (id: {$a->mid}). Este bloco não pode ser incluído.';
 $string['error_course_module_not_found'] = 'Foi encontrada um módulo disciplina órfão (id: {$a}). Não pode ser guardado na cópia de segurança.';
+$string['error_delegate_section_not_found'] = 'Módulo da disciplina do formulário da secção delegada em falta (ID: {$a}. Não será feita a cópia de segurança da secção.';
 $string['errorcopyingbackupfile'] = 'Erro ao copiar o ficheiro da cópia de segurança para a pasta temporária antes de proceder ao restauro.';
 $string['errorfilenamemustbezip'] = 'O ficheiro inserido tem de ser do tipo Zip com a extensão .mbz';
 $string['errorfilenamerequired'] = 'Tem de inserir um nome de ficheiro válido para esta cópia de segurança';
@@ -281,6 +282,7 @@ $string['includeditems'] = 'Itens incluídos:';
 $string['includefilereferences'] = 'Referências a conteúdos externos';
 $string['includesection'] = 'Secção {$a}';
 $string['includeuserinfo'] = 'Informação do utilizador';
+$string['includeuserinfo_instance'] = 'Incluir dados de {$a} do utilizador';
 $string['inprogress'] = 'Cópia de segurança em andamento';
 $string['jumptofinalstep'] = 'Ir para etapa final';
 $string['keep'] = 'Manter';
@@ -399,6 +401,7 @@ $string['rootsettingusers'] = 'Incluir utilizadores inscritos';
 $string['rootsettinguserscompletion'] = 'Incluir detalhes da conclusão dos utilizadores';
 $string['rootsettingxapistate'] = 'Incluir o estado do utilizador no conteúdo';
 $string['samesitenotification'] = 'Esta cópia de segurança foi criada apenas com referências a ficheiros, não os ficheiros em si. O restauro da cópia apenas funcionará neste site.';
+$string['section_prefix'] = 'Secção {$a}:';
 $string['sectionactivities'] = 'Atividades';
 $string['sectioninc'] = 'Incluído na cópia de segurança (sem informação de utilizadores)';
 $string['sectionincanduser'] = 'Incluído na cópia de segurança juntamente com a informação dos utilizadores';
@@ -425,6 +428,7 @@ $string['status'] = 'Estado';
 $string['storagecourseandexternal'] = 'Área de ficheiros de cópias de segurança de disciplina e pasta escolhida';
 $string['storagecourseonly'] = 'Área de ficheiros de cópias de segurança de disciplina';
 $string['storageexternalonly'] = 'Pasta escolhida para as cópias de segurança automáticas';
+$string['subsectioncontent'] = 'Conteúdo da subsecção';
 $string['successful'] = 'Cópia de segurança criada com sucesso';
 $string['successfulcopy'] = 'Cópia efetuada com sucesso';
 $string['successfulrestore'] = 'Restauro efetuado com sucesso';

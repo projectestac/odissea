@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'nl', version '4.4'.
+ * Strings for component 'competency', language 'nl', version '4.5'.
  *
  * @package     competency
  * @category    string
@@ -29,6 +29,8 @@ $string['allchildrenarecomplete'] = 'Alle onderliggende zijn volledig';
 $string['competencies'] = 'Competenties';
 $string['competenciesarenotenabled'] = 'Competenties zijn niet ingesteld.';
 $string['competenciessettings'] = 'Competentie-instellingen';
+$string['competency'] = 'Competentie';
+$string['competencyframework'] = 'Competentieframework';
 $string['completeplanstask'] = 'Voltooi studieplannen met einddatum';
 $string['coursecompetencyoutcome_complete'] = 'Voltooi competentie';
 $string['coursecompetencyoutcome_evidence'] = 'Bewijs toevoegen';
@@ -38,7 +40,7 @@ $string['coursemodulecompetencyoutcome_complete'] = 'Voltooi competentie';
 $string['coursemodulecompetencyoutcome_evidence'] = 'Bewijs toevoegen';
 $string['coursemodulecompetencyoutcome_none'] = 'Doe niets';
 $string['coursemodulecompetencyoutcome_recommend'] = 'Insturen voor beoordeling';
-$string['deletecompetencyratings'] = 'Verwijder competentiewaarderingen';
+$string['deletecompetencyratings'] = 'Competentiewaarderingen';
 $string['duplicateditemname'] = '{$a} (kopie)';
 $string['enablecompetencies'] = 'Competenties inschakelen';
 $string['enablecompetencies_desc'] = 'Competenties maken het mogelijk om leerlingen te beoordelen volgens studieplannen';
@@ -163,8 +165,10 @@ $string['privacy:metadata:usermodified'] = 'De gebruiker die dit gegeven gemaakt
 $string['privacy:path:plans'] = 'Studieplannen';
 $string['privacy:path:relatedtome'] = 'Aan mij gerelateerd';
 $string['privacy:path:userevidence'] = 'Bewijs van vroeger leren';
+$string['proficient'] = 'Geslaagd';
 $string['pushcourseratingstouserplans'] = 'Stuur cursusbeoordelingen naar individuele studieplannen';
 $string['pushcourseratingstouserplans_desc'] = 'Standaardwaarde voor cursusinstellingen om individuele studieplannen  aan te passen wanneer curuscompetenties beoordeeld worden.';
+$string['rating'] = 'Beoordeling';
 $string['syncplanscohorts'] = 'Synchroniseer plannen van studieplannensjabloon voor site-groepen';
 $string['taxonomy_behaviour'] = 'Gedrag';
 $string['taxonomy_competency'] = 'Competentie';
@@ -197,6 +201,7 @@ $string['usercommentedonaplanhtml'] = '<p>{$a->fullname} heeft een opmerking gem
 <p>Zie: <a href="{$a->url}">{$a->urlname}</a>.</p>';
 $string['usercommentedonaplansmall'] = '{$a->fullname} heeft een opmerking gemaakt bij studieplan "{$a->plan}".';
 $string['usercommentedonaplansubject'] = '{$a} heeft een opmerking gemaakt bij een studieplan.';
+$string['usercompetency'] = 'Gebruikerscompetentie';
 $string['usercompetencystatus_idle'] = 'Niet aan het werk';
 $string['usercompetencystatus_inreview'] = 'Wordt beoordeeld';
 $string['usercompetencystatus_waitingforreview'] = 'Wacht op beoordeling';

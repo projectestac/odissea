@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ru', version '4.4'.
+ * Strings for component 'report_security', language 'ru', version '4.5'.
  *
  * @package     report_security
  * @category    string
@@ -131,6 +131,7 @@ $string['check_unsecuredataroot_error'] = 'Ваш каталог dataroot<code>{
 $string['check_unsecuredataroot_name'] = 'Небезопасное расположение каталога dataroot';
 $string['check_unsecuredataroot_ok'] = 'Каталог dataroot не должен быть доступен из сети.';
 $string['check_unsecuredataroot_warning'] = 'Ваш каталог dataroot<code>{$a}</code> неправильно размещен и, возможно, доступен из сети!';
+$string['check_upgradefile_info'] = 'Файлы заметок об обновлении не должны быть общедоступными.';
 $string['check_vendordir_details'] = '<p>Каталог <em>{$a->path}</em> содержит различные сторонние библиотеки и их зависимости, обычно устанавливаемые с помощью Composer (менеджера пакетов для PHP). Эти библиотеки могут потребоваться для локальной разработки Moodle, например, для установки фреймворка PHPUnit. Они не нужны для промышленной эксплуатации сайта Moodle, и могут содержать потенциально опасный код, подвергающий Ваш сайт угрозе атак.</p>
 <p>Настоятельно рекомендуется удалить этот каталог, если сайт доступен через интернет, или, по крайней мере, запретить доступ к этому каталогу в конфигурации вашего веб-сервера.</p>';
 $string['check_vendordir_info'] = 'На общедоступных сайтах не должно быть каталога vendor.';

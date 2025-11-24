@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'fr', version '4.4'.
+ * Strings for component 'qtype_ddwtos', language 'fr', version '4.5'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -29,6 +29,8 @@ $string['addmorechoiceblanks'] = 'Espaces vides pour {no} choix supplémentaires
 $string['answer'] = 'Réponse';
 $string['blank'] = 'vide';
 $string['blanknumber'] = 'Espace {$a}';
+$string['choicesacceptedtext'] = 'Écrire les réponses à glisser dans les trous. Des réponses additionnelles peuvent être indiquées afin d’augmenter la difficulté.<br />
+Balises de format acceptées : &lt;sub&gt;, &lt;sup&gt;, &lt;b&gt;, &lt;i&gt;, &lt;em&gt;, &lt;strong&gt;. Le code TeX est aussi accepté, en commençant et en terminant par $$.';
 $string['correctansweris'] = 'La réponse correcte est : {$a}';
 $string['errorlimitedchoice'] = 'Le marqueur [[{$a}]] est utilisé plus d’une fois alors qu’il n’est pas indiqué comme « Réutilisable ». Veuillez vérifier cette question.';
 $string['infinite'] = 'Réutilisable';

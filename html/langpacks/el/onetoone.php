@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'onetoone', language 'el', version '4.4'.
+ * Strings for component 'onetoone', language 'el', version '4.5'.
  *
  * @package     onetoone
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'zh_cn', version '4.4'.
+ * Strings for component 'h5pactivity', language 'zh_cn', version '4.5'.
  *
  * @package     h5pactivity
  * @category    string
@@ -58,7 +58,7 @@ $string['completion'] = '完成';
 $string['contentbank'] = '关于内容库的更多信息';
 $string['contentbank_help'] = '在内容库中，您可以使用多种创作工具创建和存储内容，包括集成的H5P creator（创建器）。';
 $string['correct_answer'] = '正确答案';
-$string['deleteallattempts'] = '删除所有H5P尝试';
+$string['deleteallattempts'] = '所有H5P尝试';
 $string['displaycopyright'] = '版权按钮';
 $string['displayembed'] = '嵌入按钮';
 $string['displayexport'] = '允许下载';

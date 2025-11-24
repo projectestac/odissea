@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'ar', version '4.4'.
+ * Strings for component 'competency', language 'ar', version '4.5'.
  *
  * @package     competency
  * @category    string
@@ -29,6 +29,8 @@ $string['allchildrenarecomplete'] = 'كل الفروع قد اكتملت';
 $string['competencies'] = 'الكفاءات';
 $string['competenciesarenotenabled'] = 'الكفاءات معطلة.';
 $string['competenciessettings'] = 'إعدادات الكفاءات';
+$string['competency'] = 'كفاءة';
+$string['competencyframework'] = 'إطار عمل الكفاءة';
 $string['completeplanstask'] = 'إكمال خطط التعلم المستحقة';
 $string['coursecompetencyoutcome_complete'] = 'أكمل الكفاءة';
 $string['coursecompetencyoutcome_evidence'] = 'إرفق دليلاً';
@@ -38,7 +40,7 @@ $string['coursemodulecompetencyoutcome_complete'] = 'أكمل الكفاءة';
 $string['coursemodulecompetencyoutcome_evidence'] = 'إرفق دليلاً';
 $string['coursemodulecompetencyoutcome_none'] = 'لا تفعل شيئاً';
 $string['coursemodulecompetencyoutcome_recommend'] = 'أرسل للمراجعة';
-$string['deletecompetencyratings'] = 'حذف تقييمات الكفاءة';
+$string['deletecompetencyratings'] = 'تقييمات الكفاءة';
 $string['duplicateditemname'] = '{$a} (نسخة)';
 $string['enablecompetencies'] = 'تمكين الكفاءات';
 $string['enablecompetencies_desc'] = 'الكفاءات تسمح بتقييم المستخدمين وفقاً لخطط التعلم.';
@@ -163,8 +165,10 @@ $string['privacy:metadata:usermodified'] = 'المستخدم الذي أنشأ �
 $string['privacy:path:plans'] = 'خطط التعلم';
 $string['privacy:path:relatedtome'] = 'عائد لي';
 $string['privacy:path:userevidence'] = 'الدليل على التعلم السابق';
+$string['proficient'] = 'بارع';
 $string['pushcourseratingstouserplans'] = 'أقحِم تقييمات المساق في خطط التعلم الفردي';
 $string['pushcourseratingstouserplans_desc'] = 'القيمة الافتراضية في إعدادات المساق لتحديث خطط التعلم الفردي عند تقييم كفاءات المساق';
+$string['rating'] = 'التقييم';
 $string['syncplanscohorts'] = 'مزامنة الخطط من دفعات مظهر خطة التعلم';
 $string['taxonomy_behaviour'] = 'سلوك';
 $string['taxonomy_competency'] = 'كفاءة';
@@ -197,6 +201,7 @@ $string['usercommentedonaplanhtml'] = '<p>{$a->fullname} أعطى تعليقاً
 <p>أنظر: <a href="{$a->url}">{$a->urlname}</a>.</p>';
 $string['usercommentedonaplansmall'] = '{$a->fullname} أعطى تعليقاً عن خطة التعلم "{$a->plan}".';
 $string['usercommentedonaplansubject'] = '{$a} أعطى تعليقاً عن خطة تعلم.';
+$string['usercompetency'] = 'كفاءة المستخدم';
 $string['usercompetencystatus_idle'] = 'خاملة';
 $string['usercompetencystatus_inreview'] = 'قيد التقييم';
 $string['usercompetencystatus_waitingforreview'] = 'بانتظار التقييم';

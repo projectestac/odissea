@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'ar', version '4.4'.
+ * Strings for component 'theme_boost', language 'ar', version '4.5'.
  *
  * @package     theme_boost
  * @category    string
@@ -34,7 +34,6 @@ $string['brandcolor'] = 'لون العلامة التجارية';
 $string['brandcolor_desc'] = 'اللون السائد.';
 $string['choosereadme'] = 'Boost هو قالب حديث قابل للتخصيص بدرجة عالية. هو مُعد للاستعمال المباشر، أو كقالب أساسي عند إنشاء قوالب جديدة باستعمال Bootstrap 4.';
 $string['configtitle'] = 'Boost';
-$string['currentinparentheses'] = '(حالي)';
 $string['generalsettings'] = 'الاعدادات العامة';
 $string['loginbackgroundimage'] = 'صورة الخلفية لصفحة تسجيل الدخول';
 $string['loginbackgroundimage_desc'] = 'الصورة المعروضة كخلفية لصفحة تسجيل الدخول.';
@@ -48,8 +47,6 @@ $string['privacy:drawerblockclosed'] = 'التفضيل الحالي لدُرج �
 $string['privacy:drawerblockopen'] = 'التفضيل الحالي لدُرج الكتلة هو الفتح.';
 $string['privacy:drawerindexclosed'] = 'التفضيل الحالي لدُرج الفهرس هو الإغلاق.';
 $string['privacy:drawerindexopen'] = 'التفضيل الحالي لدُرج الفهرس هو الفتح.';
-$string['privacy:drawernavclosed'] = 'التفضيل الحالي لدرج التنقل مغلق.';
-$string['privacy:drawernavopen'] = 'التفضيل الحالي لدرج التنقل مفتوح.';
 $string['privacy:metadata'] = 'قالب Boost لا يخزّن أي بيانات شخصية عن أيّ مستخدم.';
 $string['privacy:metadata:preference:draweropenblock'] = 'تفضيل المستخدم بشأن إخفاء أو إظهار الدُرج ذي الكتل.';
 $string['privacy:metadata:preference:draweropenindex'] = 'تفضيل المستخدم بشأن إخفاء أو إظهار الدُرج ذي فهرس المساق.';

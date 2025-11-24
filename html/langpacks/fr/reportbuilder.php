@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'fr', version '4.4'.
+ * Strings for component 'reportbuilder', language 'fr', version '4.5'.
  *
  * @package     reportbuilder
  * @category    string
@@ -67,8 +67,8 @@ $string['columnadded'] = 'Colonne « {$a} » ajoutée';
 $string['columnaggregated'] = 'Colonne « {$a} » agrégée';
 $string['columndeleted'] = 'Colonne « {$a} » supprimée';
 $string['columnmoved'] = 'Colonne « {$a} » déplacée';
-$string['columnsortdirectionasc'] = 'Trier la colonne « {$a} » par valeurs croissantes';
-$string['columnsortdirectiondesc'] = 'Trier la colonne « {$a} » par valeurs décroissantes';
+$string['columnsortdirectionasc'] = 'Modifier le tri initial de la colonne « {$a} » par valeurs croissantes';
+$string['columnsortdirectiondesc'] = 'Modifier le tri initial de la colonne « {$a} » par valeurs décroissantes';
 $string['columnsortdisable'] = 'Désactiver le tri initial de la colonne « {$a} »';
 $string['columnsortenable'] = 'Activer le tri initial de la colonne « {$a} »';
 $string['columnsortupdated'] = 'Modifier le tri pour la colonne « {$a} »';
@@ -147,6 +147,7 @@ $string['filterdurationunit'] = 'Unité {$a}';
 $string['filterendswith'] = 'Se termine par';
 $string['filterequalorgreaterthan'] = 'Plus grand ou égal à';
 $string['filterequalorlessthan'] = 'Plus petit ou égal à';
+$string['filterfieldfrom'] = '{$a} à partir de';
 $string['filterfieldoperator'] = 'Opérateur {$a}';
 $string['filterfieldto'] = '{$a} jusqu’à';
 $string['filterfieldunit'] = 'Unité {$a}';

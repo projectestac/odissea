@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'ro', version '4.4'.
+ * Strings for component 'user', language 'ro', version '4.5'.
  *
  * @package     user
  * @category    string
@@ -25,25 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcondition'] = 'Adaugă condiție';
-$string['adverbfor_and'] = 'și';
-$string['adverbfor_andnot'] = 'și';
-$string['adverbfor_or'] = 'sau';
-$string['applyfilters'] = 'Aplică filtre';
-$string['clearfilterrow'] = 'Șterge filtrul rândului';
-$string['clearfilters'] = 'Șterge filtrele';
-$string['clearfilterselection'] = 'Eliminați „{$a}” din filtru';
 $string['countparticipantsfound'] = '{$a} participanți găsiți';
 $string['filterbykeyword'] = 'Cuvânt cheie';
-$string['filterrowlegend'] = 'Filtru {$a}';
-$string['filtersetmatchdescription'] = 'Cum ar trebui să fie combinate filtrele multiple';
-$string['filtertype'] = 'Tipul de filtru';
-$string['match'] = 'Potrivire';
-$string['matchofthefollowing'] = 'sau următoarele:';
 $string['moodlenetprofile'] = 'Identificator profil MoodleNet';
 $string['moodlenetprofile_help'] = 'ID-ul profilului dvs. MoodleNet conectează profilul dvs. MoodleNet cu acest site.';
 $string['placeholdertype'] = 'Tastează...';
-$string['placeholdertypeorselect'] = 'Tastează sau selectează...';
 $string['privacy:courserequestpath'] = 'Cursurile solicitate';
 $string['privacy:descriptionpath'] = 'Descrierea profilului';
 $string['privacy:devicespath'] = 'Dispozitivele utilizatorului';
@@ -149,7 +135,6 @@ $string['privacy:passwordresetpath'] = 'Resetările parolei';
 $string['privacy:privatefilespath'] = 'Fișiere private';
 $string['privacy:profileimagespath'] = 'Imagini de profil';
 $string['privacy:sessionpath'] = 'Date despre sesiuni';
-$string['selectfiltertype'] = 'Selectează';
 $string['supportmessagealternative'] = 'În schimb, puteți să trimiteți email la {$a}';
 $string['supportmessagenotsent'] = 'Din păcate mesajul dumneavoastră nu a putut fi trimis.';
 $string['supportmessagesent'] = 'Mesajul dumneavoastră a fost trimis.';

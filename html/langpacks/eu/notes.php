@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'eu', version '4.4'.
+ * Strings for component 'notes', language 'eu', version '4.5'.
  *
  * @package     notes
  * @category    string
@@ -39,7 +39,7 @@ $string['course'] = 'Ikastaroa';
 $string['coursenotes'] = 'Ikastaroaren oharrak';
 $string['created'] = 'sortua';
 $string['deleteconfirm'] = 'Ezabatu ohar hau?';
-$string['deletenotes'] = 'Ezabatu ohar guztiak';
+$string['deletenotes'] = 'Ohar guztiak';
 $string['editnote'] = 'Editatu oharra';
 $string['enablenotes'] = 'Gaitu oharrak';
 $string['eventnotecreated'] = 'Oharra sortu da';
@@ -61,7 +61,7 @@ $string['page-notes-index'] = 'Oharren orri nagusia';
 $string['page-notes-x'] = 'Oharren edozein orri';
 $string['personal'] = 'pertsonala';
 $string['personalnotes'] = 'Norberaren oharrak';
-$string['privacy:metadata:core_notes'] = 'Oharrak osagaiak sistemako erabiltzaileen oharrak gordetzen ditu.';
+$string['privacy:metadata:core_notes'] = 'Oharrak osagaiak muineko azpisistemako erabiltzaileen oharrak gordetzen ditu.';
 $string['privacy:metadata:core_notes:content'] = 'Oharraren edukia.';
 $string['privacy:metadata:core_notes:courseid'] = 'Oharrarekin lotutako ikastaroaren IDa';
 $string['privacy:metadata:core_notes:created'] = 'Oharra sortu zeneko unea.';

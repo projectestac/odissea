@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ca', version '4.4'.
+ * Strings for component 'data', language 'ca', version '4.5'.
  *
  * @package     data
  * @category    string
@@ -29,8 +29,6 @@ $string['action'] = 'Acció';
 $string['actionsmenu'] = 'Menú d\'accions';
 $string['add'] = 'Afegeix una entrada';
 $string['addcomment'] = 'Afegeix un comentari';
-$string['addedby'] = 'Afegit per';
-$string['addentries'] = 'Afegeix entrades';
 $string['addtemplate'] = 'Plantilla d\'introducció';
 $string['advancedsearch'] = 'Cerca avançada';
 $string['allowcomments'] = 'Permeteu comentaris en les entrades?';
@@ -55,8 +53,6 @@ Els camps tenen el format [[fieldname]]. Totes les altres etiquetes tenen el for
 Només les etiquetes que es troben a la llista "Etiquetes disponibles" poden ser utilitzades en aquesta plantilla.';
 $string['availabletodate'] = 'Disponible fins a';
 $string['availabletodatevalidation'] = 'La data de «disponible fins a» no pot ser anterior a la data de «disponible des de».';
-$string['blank'] = 'Blanc';
-$string['buttons'] = 'Accions';
 $string['bynameondate'] = 'per {$a->name} - {$a->date}';
 $string['calendarend'] = '{$a} es tanca';
 $string['calendarstart'] = '{$a} s\'obre';
@@ -312,7 +308,6 @@ $string['nolisttemplate'] = 'Encara no s\'ha definit la plantilla de llista.';
 $string['nomatch'] = 'No s\'han trobat entrades que coincideixin';
 $string['nomaximum'] = 'No hi ha un valor màxim';
 $string['norecords'] = 'Encara no hi ha entrades';
-$string['nosingletemplate'] = 'Encara no s\'ha definit la plantilla única';
 $string['notapproved'] = 'Pendent d\'aprovació';
 $string['notemplates'] = 'Encara no hi ha cap plantilla';
 $string['notinjectivemap'] = 'No hi ha un mapa d\'injecció';
@@ -333,7 +328,6 @@ $string['page-mod-data-x'] = 'Pàgina qualsevol del mòdul d\'activitat de la ba
 $string['pagesize'] = 'Entrades per pàgina';
 $string['participants'] = 'Participants';
 $string['picture'] = 'Imatge';
-$string['pleaseaddsome'] = 'Creeu-los més avall o <a href="{$a}">trieu un conjunt predefinit</a> per començar.';
 $string['pluginadministration'] = 'Administració de l\'activitat de la base de dades';
 $string['pluginname'] = 'Base de dades';
 $string['portfolionotfile'] = 'Exporta a un portafolis abans que a un fitxer (només csv i leap2a)';
@@ -381,7 +375,6 @@ $string['saveaspreset'] = 'Desa com a predefinit';
 $string['saveaspreset_help'] = 'La funció <em>Desa com a predefinit</em> publica les plantilles i els camps com a predefinits que altres usuaris poden fer servir. (En qualsevol moment el podeu esborrar de la llista de predefinits.)';
 $string['savesettings'] = 'Desa els paràmetres';
 $string['savesuccess'] = 'S\'ha desat amb èxit. El vostre predefinit estarà disponible per a tot el lloc.';
-$string['savetemplate'] = 'Desa la plantilla';
 $string['search'] = 'Cerca';
 $string['search:activity'] = 'Base de dades: informació de l\'activitat';
 $string['selectedrequired'] = 'Cal que estigui tot seleccionat';
@@ -404,7 +397,6 @@ $string['text'] = 'Text';
 $string['textarea'] = 'Àrea de text';
 $string['timeadded'] = 'Hora de la incorporació';
 $string['timemodified'] = 'Hora de la modificació';
-$string['todatabase'] = 'en aquesta base de dades';
 $string['type'] = 'Tipus de camp';
 $string['undefinedprocessactionmethod'] = 'No hi ha un mètode definit en Data_Preset per gestionar l\'acció "{$a}"';
 $string['updatefield'] = 'Actualitza un camp existent';

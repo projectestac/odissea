@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_premium', language 'eu', version '4.4'.
+ * Strings for component 'tiny_premium', language 'eu', version '4.5'.
  *
  * @package     tiny_premium
  * @category    string
@@ -50,4 +50,4 @@ $string['premiumplugin:tinymcespellchecker'] = 'Idazketaren Egiaztatzaile Aurrer
 $string['premiumplugin:typography'] = 'Tipografia Aurreratua';
 $string['premiumplugins'] = 'Premium pluginak';
 $string['premiumplugins_desc'] = 'TinyMCE Premium pluginetara sarbidea izateko API gako bat behar da. Baliteke zure TinyMCE Premium harpidetzarekin zerrendako plugin guztiak eskuragarri ez egotea. Eskuragarri dauden pluginen zerrenda egiaztatu dezakezu zure <a href="https://www.tiny.cloud">Tiny Cloud</a> kontuko orrian.';
-$string['privacy:metadata'] = 'Tiny premium TinyMCE-rako pluginak ez du datu pertsonalik biltzen.';
+$string['privacy:metadata'] = 'TinyMCE Premium TinyMCE-rako pluginak ez du datu pertsonalik biltzen.';

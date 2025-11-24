@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'pt', version '4.4'.
+ * Strings for component 'wiki', language 'pt', version '4.5'.
  *
  * @package     wiki
  * @category    string
@@ -62,7 +62,7 @@ $string['defaultformat_help'] = 'Esta configuração determina o formato predefi
 * HTML - O editor HTML está disponível
 * Creole - Uma linguagem de markup comum de wiki para a qual existe uma pequena barra de edição.
 * Nwiki - linguagem de markup, similar ao Mediawiki utilizado no módulo Nwiki';
-$string['deleteallpages'] = 'Apagar todas as páginas do wiki';
+$string['deleteallpages'] = 'Todas as páginas do wiki';
 $string['deletecomment'] = 'A apagar comentários';
 $string['deletecommentcheck'] = 'Apagar comentário';
 $string['deletecommentcheckfull'] = 'Tem a certeza de que pretende apagar o comentário?';
@@ -250,7 +250,7 @@ $string['privacy:metadata:wiki_versions:version'] = 'Número da versão';
 $string['rated'] = 'Avaliou esta página como {$a}';
 $string['rating'] = 'Avaliação';
 $string['ratingmode'] = 'Modo de avaliação';
-$string['removeallwikitags'] = 'Remover todas as palavras-chave do wiki';
+$string['removeallwikitags'] = 'Todas as palavras-chave do wiki';
 $string['removepages'] = 'Apagar páginas';
 $string['reparsetimeout'] = 'Ajustar tempo limite predefinido';
 $string['repeatedsection'] = 'Erro: O nome da secção não pode ser repetido \'{$a}';

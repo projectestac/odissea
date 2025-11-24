@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_admin_presets', language 'zh_cn', version '4.4'.
+ * Strings for component 'tool_admin_presets', language 'zh_cn', version '4.5'.
  *
  * @package     tool_admin_presets
  * @category    string
@@ -37,8 +37,9 @@ $string['created'] = '创建';
 $string['currentvalue'] = '当前值';
 $string['deletepreset'] = '是否确定要删除站点管理预设{$a}？';
 $string['deletepresettitle'] = '是否删除{$a}预设？';
-$string['deletepreviouslyapplied'] = '此预设以前已应用。删除预设会将其从网站中完全删除。您将无法将还原至应用此预设前的状态。';
+$string['deletepreviouslyapplied'] = '是否确实要删除站点管理员预设 {$a}？<br><br>此预设之前已应用。删除预设会将其从您的网站中完全删除。您将无法将设置恢复到应用此预设之前的状态。';
 $string['deleteshow'] = '删除站点管理预设';
+$string['editadminpresetname'] = '编辑管理员预设名称';
 $string['eventpresetdeleted'] = '已删除预设';
 $string['eventpresetdownloaded'] = '已下载预设';
 $string['eventpresetexported'] = '已创建预设';

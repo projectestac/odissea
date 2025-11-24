@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'ca', version '4.4'.
+ * Strings for component 'quiz', language 'ca', version '4.5'.
  *
  * @package     quiz
  * @category    string
@@ -456,6 +456,7 @@ $string['gradeitemnoslots'] = 'Aquest qüestionari encara no té cap pregunta. P
 $string['gradeitems'] = 'Elements de qualificació';
 $string['gradeitemsautosetup'] = 'Estableix una qualificació per a cada secció';
 $string['gradeitemsetup'] = 'Configuració dels elements de qualificació';
+$string['gradeitemsnoneyet'] = 'Crea elements de qualificació dins el vostre qüestionari. Assigna preguntes o seccions del qüestionari a aquests elements de qualificació per desglossar els resultats de la qualificació en diferents àrees.';
 $string['gradeitemsremoveall'] = 'Reinicialitza la configuració';
 $string['gradeitemsremoveallconfirm'] = 'Voleu reinicialitzar la configuració dels elements de qualificació?';
 $string['gradeitemsremovealltitle'] = 'Reinicialitza la configuració dels elements de qualificació';
@@ -547,6 +548,7 @@ $string['maxmarks_help'] = 'La qualificació màxima disponible per a cada pregu
 $string['messageprovider:attempt_grading_complete'] = 'Notificació que l\'intent ha estat qualificat';
 $string['messageprovider:attempt_overdue'] = 'Avís quan el vostre intent del qüestionari arribi al termini de venciment';
 $string['messageprovider:confirmation'] = 'Confirmació de les vostres trameses de qüestionaris';
+$string['messageprovider:quiz_open_soon'] = 'El qüestionari s\'obrirà aviat';
 $string['messageprovider:submission'] = 'Notificació de trameses de qüestionari';
 $string['min'] = 'Mín.';
 $string['minutes'] = 'minuts';
@@ -765,6 +767,7 @@ $string['quiz:manage'] = 'Gestiona els qüestionaris';
 $string['quiz:manageoverrides'] = 'Gestiona les excepcions del qüestionari';
 $string['quiz:preview'] = 'Previsualitza els qüestionaris';
 $string['quiz:regrade'] = 'Torna a qualificar els intents del qüestionari';
+$string['quiz:reopenattempts'] = 'Reobre els intents mai tramesos';
 $string['quiz:reviewmyattempts'] = 'Revisa els intents propis';
 $string['quiz:view'] = 'Visualitza la informació del qüestionari';
 $string['quiz:viewoverrides'] = 'Mostra les excepcions del qüestionari';
@@ -825,13 +828,18 @@ $string['removepagebreak'] = 'Elimina el salt de pàgina';
 $string['removeselected'] = 'Elimina la selecció';
 $string['rename'] = 'Canvia el nom';
 $string['renderingserverconnectfailed'] = 'El servidor {$a} no ha pogut processar una petició RQP. Comproveu que l\'URL és correcte.';
+$string['reopenattempt'] = 'Reobre';
+$string['reopenattemptareyousuremessage'] = 'Es reobrirà l\'intent {$a->attemptnumber} de {$a->attemptuser}.';
+$string['reopenattemptareyousuretitle'] = 'Reobrir l\'intent?';
+$string['reopenattemptwrongstate'] = 'L\'intent {$a->attemptid} està en un estat incorrecte ({$a->state}) per ser reobert.';
+$string['reopenedattemptwillbesubmitted'] = 'Aquest intent serà immediatament tramès per ser qualificat.';
 $string['reorderquestions'] = 'Reordena les preguntes';
 $string['reordertool'] = 'Mostra l\'eina de reordenació';
 $string['repaginate'] = 'Repagina amb {$a} preguntes per pàgina';
 $string['repaginatecommand'] = 'Repagina';
 $string['repaginatenow'] = 'Repagina ara';
 $string['replace'] = 'Reemplaça';
-$string['replacementoptions'] = 'Opcions de reemplaçament';
+$string['replacementoptions'] = 'Opcions de substitució';
 $string['report'] = 'Informes';
 $string['reportanalysis'] = 'Anàlisi d\'elements';
 $string['reportattemptsfrom'] = 'Intents des de';
@@ -921,6 +929,7 @@ $string['scores'] = 'Puntuacions';
 $string['search:activity'] = 'Qüestionari: informació de l\'activitat';
 $string['sectionheadingedit'] = 'Edita la capçalera «{$a}»';
 $string['sectionheadingremove'] = 'Suprimeix la capçalera «{$a}»';
+$string['sectionnoname'] = 'Secció sense títol';
 $string['seequestions'] = '(Vegeu les preguntes)';
 $string['select'] = 'Selecciona';
 $string['selectall'] = 'Selecciona-ho tot';

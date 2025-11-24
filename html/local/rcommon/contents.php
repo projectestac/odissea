@@ -2,8 +2,8 @@
 //MARSUPIAL ************ FITXER AFEGIT - Added to show books from a publisher
 //2011.08.30 @sarjona
 require_once('../../config.php');
-require_once($CFG->dirroot.'/course/lib.php');
-require_once($CFG->dirroot.'/local/rcommon/locallib.php');
+require_once($CFG->dirroot . '/course/lib.php');
+require_once($CFG->dirroot . '/local/rcommon/locallib.php');
 
 require_login();
 
@@ -12,11 +12,11 @@ require_capability('local/rcommon:managecredentials', context_system::instance()
 $id = required_param('id', PARAM_INT);
 $publisher = $DB->get_record('rcommon_publisher', array('id' => $id));
 if (!$publisher) {
-    throw new \moodle_exception(get_string('nopublisher','local_rcommon'));
+    throw new \moodle_exception('nopublisher', 'local_rcommon');
 }
 
-require_once( $CFG->libdir.'/adminlib.php');
-admin_externalpage_setup('marsupialcontent'.$publisher->id);
+require_once($CFG->libdir . '/adminlib.php');
+admin_externalpage_setup('marsupialcontent' . $publisher->id);
 echo $OUTPUT->header();
 
 $pagetitle = $publisher->name;
@@ -25,7 +25,7 @@ echo $OUTPUT->heading(get_string('provider_books', 'local_rcommon', $publisher->
 
 $action = optional_param('action', false, PARAM_TEXT);
 if ($action == 'update') {
-    require_once($CFG->dirroot.'/local/rcommon/WebServices/BooksStructure.php');
+    require_once($CFG->dirroot . '/local/rcommon/WebServices/BooksStructure.php');
     echo get_string('consumewait', 'local_rcommon');
 
     try {
@@ -34,36 +34,38 @@ if ($action == 'update') {
         } else {
             echo $OUTPUT->notification(get_string('consumeerror', 'local_rcommon'));
         }
-    } catch(Throwable $fault) {
+    } catch (Throwable $fault) {
         echo $OUTPUT->notification($fault->getMessage());
     }
-} else if ($action == 'delete') {
-    $bookid = required_param('bookid', PARAM_INT);
-    $book = $DB->get_record('rcommon_books', array('id' => $bookid, 'publisherid' => $id));
-    if ($book) {
-        $success = true;
-        switch ($book->format) {
-            case 'scorm':
-                if ($DB->get_manager()->table_exists('rscorm') && $DB->record_exists_select('rscorm', 'bookid = :bookid AND course != :course', array('bookid' => $bookid, 'course' => SITEID))) {
-                    $success = false;
-                }
-                break;
-            case 'webcontent':
-            default:
-                if ($DB->record_exists_select('rcontent', 'bookid = :bookid AND course != :course', array('bookid' => $bookid, 'course' => SITEID))) {
-                    $success = false;
-                }
-                break;
-        }
-        if (!$success) {
-            echo $OUTPUT->notification(get_string('book_deleted_act_error', 'local_rcommon', $bookid));
-        } else {
-            $sql = 'SELECT * FROM {rcommon_user_credentials} RUC INNER JOIN {rcommon_books} RB ON RB.isbn = RUC.isbn WHERE RUC.euserid != 0 AND RB.id = :bookid';
-            if ($DB->record_exists_sql($sql, array('bookid' => $bookid))) {
-                echo $OUTPUT->notification(get_string('book_deleted_cred_error', 'local_rcommon', $bookid));
+} else {
+    if ($action == 'delete') {
+        $bookid = required_param('bookid', PARAM_INT);
+        $book = $DB->get_record('rcommon_books', array('id' => $bookid, 'publisherid' => $id));
+        if ($book) {
+            $success = true;
+            switch ($book->format) {
+                case 'scorm':
+                    if ($DB->get_manager()->table_exists('rscorm') && $DB->record_exists_select('rscorm', 'bookid = :bookid AND course != :course', array('bookid' => $bookid, 'course' => SITEID))) {
+                        $success = false;
+                    }
+                    break;
+                case 'webcontent':
+                default:
+                    if ($DB->record_exists_select('rcontent', 'bookid = :bookid AND course != :course', array('bookid' => $bookid, 'course' => SITEID))) {
+                        $success = false;
+                    }
+                    break;
+            }
+            if (!$success) {
+                echo $OUTPUT->notification(get_string('book_deleted_act_error', 'local_rcommon', $bookid));
             } else {
-                if (rcommon_book::delete($bookid, $id)) {
-                    echo $OUTPUT->notification(get_string('book_deleted', 'local_rcommon', $bookid));
+                $sql = 'SELECT * FROM {rcommon_user_credentials} RUC INNER JOIN {rcommon_books} RB ON RB.isbn = RUC.isbn WHERE RUC.euserid != 0 AND RB.id = :bookid';
+                if ($DB->record_exists_sql($sql, array('bookid' => $bookid))) {
+                    echo $OUTPUT->notification(get_string('book_deleted_cred_error', 'local_rcommon', $bookid));
+                } else {
+                    if (rcommon_book::delete($bookid, $id)) {
+                        echo $OUTPUT->notification(get_string('book_deleted', 'local_rcommon', $bookid));
+                    }
                 }
             }
         }
@@ -91,11 +93,11 @@ if (!empty($books)) {
     $table = new html_table();
     $table->class = 'generaltable generalbox';
     $table->head = array(
-                        get_string('name'),
-                        'ISBN',
-                        get_string('assigned', 'local_rcommon'),
-                        get_string('totals', 'local_rcommon'),
-                        get_string('actions', 'local_rcommon'));
+        get_string('name'),
+        'ISBN',
+        get_string('assigned', 'local_rcommon'),
+        get_string('totals', 'local_rcommon'),
+        get_string('actions', 'local_rcommon'));
     $table->align = array('left', 'center', 'center', 'center', 'center', 'center');
 
     $formats = array('scorm' => get_string('scorm', "local_rcommon"), 'webcontent' => get_string('webcontent', 'local_rcommon'));
@@ -120,7 +122,7 @@ if (!empty($books)) {
         }
         $row = array();
         if ($book->format == 'webcontent') {
-            $name = '<img src="'.$OUTPUT->image_url('icon', 'rcontent').'" class="icon" title="'.$formats[$book->format].'" alt="'.$formats[$book->format].'" />'.$book->name;
+            $name = '<img src="' . $OUTPUT->image_url('icon', 'rcontent') . '" class="icon" title="' . $formats[$book->format] . '" alt="' . $formats[$book->format] . '" />' . $book->name;
         } else {
             $name = $book->name;
         }
@@ -128,13 +130,13 @@ if (!empty($books)) {
         $row[] = $book->isbn;
         $row[] = $book->assig;
         $row[] = $book->total;
-        if($showall) {
-            $deletelink = 'contents.php?id='.$id.'&action=delete&showall=1&bookid='.$book->id;
+        if ($showall) {
+            $deletelink = 'contents.php?id=' . $id . '&action=delete&showall=1&bookid=' . $book->id;
         } else {
-            $deletelink = 'contents.php?id='.$id.'&action=delete&bookid='.$book->id;
+            $deletelink = 'contents.php?id=' . $id . '&action=delete&bookid=' . $book->id;
         }
         $actions = array();
-        $actions[] = '<a href="books.php?id=' . $book->id .'" title="' . get_string('see_details_atitle', 'local_rcommon') . '">' . get_string('see_details', 'local_rcommon') . '</a>';
+        $actions[] = '<a href="books.php?id=' . $book->id . '" title="' . get_string('see_details_atitle', 'local_rcommon') . '">' . get_string('see_details', 'local_rcommon') . '</a>';
         $actions[] = $OUTPUT->action_link($deletelink, get_string('delete'), new confirm_action(get_string('delete_book_confirm', 'local_rcommon', $name)));
         $row[] = implode(' | ', $actions);
 
@@ -143,17 +145,19 @@ if (!empty($books)) {
     }
     echo html_writer::table($table);
     if ($hiddenbooks) {
-        echo '<a href="contents.php?showall=1&id='.$id.'"><button>'.get_string('show_all_books', 'local_rcommon').'</button></a>';
-    } else if ($showall) {
-            echo '<a href="contents.php?id='.$id.'"><button>'.get_string('show_valid_books', 'local_rcommon').'</button></a>';
+        echo '<a href="contents.php?showall=1&id=' . $id . '"><button>' . get_string('show_all_books', 'local_rcommon') . '</button></a>';
+    } else {
+        if ($showall) {
+            echo '<a href="contents.php?id=' . $id . '"><button>' . get_string('show_valid_books', 'local_rcommon') . '</button></a>';
+        }
     }
 } else {
     echo $OUTPUT->notification(get_string("nobooks", "local_rcommon"));
 }
 
-echo '<a href="contents.php?action=update&id='.$id.'" onclick="this.disabled=\'disabled\'; document.getElementById(\'downloadbookstructures_warning\').style.display=\'block\';"><button>'.get_string('downloadbookstructures', 'local_rcommon').'</button></a>';
-echo '<div id="downloadbookstructures_warning" style="display:none; padding:10px;" >'.get_string("downloadbookstructures_warning", "local_rcommon").'</div>';
+echo '<a href="contents.php?action=update&id=' . $id . '" onclick="this.disabled=\'disabled\'; document.getElementById(\'downloadbookstructures_warning\').style.display=\'block\';"><button>' . get_string('downloadbookstructures', 'local_rcommon') . '</button></a>';
+echo '<div id="downloadbookstructures_warning" style="display:none; padding:10px;" >' . get_string("downloadbookstructures_warning", "local_rcommon") . '</div>';
 
-echo '<div style="padding:10px;">'.get_string("marsupial_bookswarning", "local_rcommon").'</div>';
+echo '<div style="padding:10px;">' . get_string("marsupial_bookswarning", "local_rcommon") . '</div>';
 
 echo $OUTPUT->footer();

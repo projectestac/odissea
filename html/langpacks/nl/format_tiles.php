@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'nl', version '4.4'.
+ * Strings for component 'format_tiles', language 'nl', version '4.5'.
  *
  * @package     format_tiles
  * @category    string
@@ -46,7 +46,6 @@ $string['basecolour'] = 'Kleur voor tegels';
 $string['basecolour_help'] = 'Kleur die hier is ingesteld zal op alle tegels in de cursus worden toegepast. (De beschikbare kleuren worden bepaald door de site beheerder in de instelingen van de tegels-plugin).';
 $string['brandcolour'] = 'Kleur huisstijl';
 $string['cachedef_modalcmids'] = 'Cursusmodule-ID\'s (per cursus) die geopend worden in een modal';
-$string['canceltask'] = 'Annuleer';
 $string['changedcolour'] = 'Kleur tegel teruggezet naar standaard voor cursus {$a}';
 $string['checkforproblemcourses'] = 'Controleer op en herstelprobleem cursussen';
 $string['clearphoto'] = 'Deze tegel opnieuw instellen';
@@ -119,9 +118,6 @@ $string['displaytitle_mod_ppt'] = 'Powerpoint-presentatie';
 $string['displaytitle_mod_txt'] = 'Tekst';
 $string['displaytitle_mod_xls'] = 'Rekenblad';
 $string['displaytitle_mod_zip'] = 'Zip';
-$string['documentation'] = 'Documentatie';
-$string['documentationurl'] = 'Documentatie URL';
-$string['documentationurl_descr'] = 'URL waar de documentatie gevonden kan worden.';
 $string['download'] = 'Download';
 $string['editoradvicesubtiles'] = 'In deze versie van de Tegelplugin, verschijnen activiteiten alleen als sub-tegel wanneer \'Bewerken\' uit staat';
 $string['editsection'] = 'Bewerk tegel';
@@ -281,7 +277,6 @@ $string['none'] = 'Geen';
 $string['noproblemsfound'] = 'Geen problemen gevonden';
 $string['notcomplete'] = 'Niet voltooid';
 $string['notrecommended'] = 'Niet aanbevolen';
-$string['notregistered'] = 'Je Tegelsplugin is niet geregistreerd bij de ontwikkelaar';
 $string['novaliddefaultcolour'] = 'Geen geldige kleur ingesteld voor de standaardkleur hieronder';
 $string['numberofsections'] = 'Aantal secties in de cursus';
 $string['ok'] = 'OK';
@@ -326,7 +321,6 @@ $string['restorefailed'] = 'Back-up mislukt';
 $string['restoreincorrectsections'] = 'Fout: Kan niet voltooien om dat de broncursus verkeerd genummerde secties bevat. (Voorbeeld sectienummer ({$a->sectionnum}) is hoger dan het maximum aantal toegestaan ({$a->maxallowed} zoals ingesteld in de instelling \'moodlecourse | maxsections\').  Probeer secties met hogere nummers uit te sluiten of te verwijderen.';
 $string['restoretoomanysections'] = 'Fout: Kan cursus niet backuppen of terugzetten omdat er teveel cursussecties zijn inbegrepen ({$a->numsections}) en dit is meer dan ({$a->maxallowed}).  Probeer enkele secties uit te sluiten of te verwijderen.';
 $string['revealcontents'] = 'Toon tegelinhoud';
-$string['scheduleddeleteemptysections'] = 'Taak om lege secties uit de cursus te verwijderen is gepland. Controleer aub later.';
 $string['section0name'] = 'Algemeen';
 $string['sectionerrorstring'] = 'Je sessie is verlopen. Probeer deze pagina te verversen.';
 $string['sectionerrortitle'] = 'Fout bij het laden van de inhoud';
@@ -389,7 +383,5 @@ $string['usejsnavforsinglesection'] = 'Gebruik JS-navigatie voor een enkele-sect
 $string['usejsnavforsinglesection_desc'] = 'Indien aangevinkt, wordt elke aanroep voor een enkele pagina (&section=xx) verwerkt met gebruik van JavaScript, door de hoofd cursus pagina te openen bij de gevraagde cursus sectie via JS, anders dan de oude stijl PHP enkele sectie aanroep te doen';
 $string['usesubtilesseczero'] = 'Gebruik sub-tegels in de topsectie';
 $string['usesubtilesseczero_help'] = 'Indien aangevinkt, worden sub-tegels gebruikt in de topsectie als ook in alle tegels van de cursus. Alleen beschikbaar indien je sub tegels gebruikt in de gehele cursus. Dit is een aparte instelling omdat sub tegels veel ruimte innemen aan de bovenzijde van de cursus. Het is misschien beter om deze instelling uitgevinkt te laten waardoor activiteiten in de top sectie tonen in een standaard lijstweergave.';
-$string['usetooltips'] = 'Gebruik JavaScript tooltips';
-$string['usetooltips_desc'] = 'Gebruik JavaScript tooltips wanneer een gebruiker over bepaalde onderdelen gaat met de muis. Bijvoorbeeld bij voltooiing iconen, titels van tegels.';
 $string['version'] = 'Versie {$a}';
 $string['width'] = 'breedte';

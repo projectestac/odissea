@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'ro', version '4.4'.
+ * Strings for component 'plugin', language 'ro', version '4.5'.
  *
  * @package     plugin
  * @category    string
@@ -53,6 +53,8 @@ $string['err_response_format_version'] = 'Versiune neașteptată a formatului re
 $string['err_response_http_code'] = 'Nu se pot prelua actualizările disponibile ale datelor - cod HTTP de răspuns neașteptat.';
 $string['filterall'] = 'Afișează toate';
 $string['filtercontribonly'] = 'Afișează doar plugin-urile adiționale';
+$string['filtermissingonly'] = 'Afișează doar cele care lipsesc de pe  disk.';
+$string['filternewpluginsonly'] = 'Afișează doar plugin-urile de instalat';
 $string['filterupdatesonly'] = 'Afișati doar pe cele care pot fi updatate';
 $string['incompatibleversion'] = 'Vesiune Moodle incompatibilă: {$a}';
 $string['isenabled'] = 'Activat?';
@@ -110,6 +112,10 @@ $string['status_uptodate'] = 'Instalat';
 $string['supportedconversions'] = 'Conversiile documentelor acceptate';
 $string['supportedmoodleversions'] = 'Versiuni Moodle acceptate';
 $string['systemname'] = 'Identificator';
+$string['type_aiplacement'] = 'Plugin AI placement';
+$string['type_aiplacement_plural'] = 'Plugin-uri AI placement';
+$string['type_aiprovider'] = 'Plugin AI provider';
+$string['type_aiprovider_plural'] = 'Plugin-uri AI provider';
 $string['type_antivirus'] = 'Plugin antivirus';
 $string['type_antivirus_plural'] = 'Plugin-uri antivirus';
 $string['type_auth'] = 'Metodă de autentificare';
@@ -192,6 +198,8 @@ $string['type_repository'] = 'Depozit';
 $string['type_repository_plural'] = 'Depozite';
 $string['type_search'] = 'Caută motor';
 $string['type_search_plural'] = 'Caută motoare';
+$string['type_smsgateway'] = 'SMS gateway';
+$string['type_smsgateway_plural'] = 'SMS gateways';
 $string['type_theme'] = 'Temă';
 $string['type_theme_plural'] = 'Teme';
 $string['type_tool'] = 'Tool admin';

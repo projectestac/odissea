@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'ru', version '4.4'.
+ * Strings for component 'scorm', language 'ru', version '4.5'.
  *
  * @package     scorm
  * @category    string
@@ -38,6 +38,7 @@ $string['aicchacptimeout_desc'] = 'Период времени в минутах
 $string['aiccuserid'] = 'Передавать в AICC числовой ID пользователя';
 $string['aiccuserid_desc'] = 'Стандарт AICC для имен пользователей очень жесткий по сравнению с Moodle и допускает только цифры, буквы, дефис и подчеркивание. Точки, пробелы и символ @ не допускаются. Если параметр включен, в пакет AICC передаются числовые ID пользователей вместо их имен.';
 $string['aliasonly'] = 'При выборе из репозитория файла imsmanifest.xml необходимо использовать псевдоним(алиас)/ярлык этого файла.';
+$string['allattempts'] = 'Все попытки SCORM';
 $string['allowapidebug'] = 'Активировать отладку и трассировку API  (устанавливается захват маски с apidebugmask)';
 $string['allowtypeaicchacp'] = 'Включить внешний AICC HACP';
 $string['allowtypeaicchacp_desc'] = 'Включенный параметр позволяет связь с внешним AICC HACP, не требуя входа пользователя в систему для post-запросов из внешнего пакета AICC';
@@ -111,7 +112,7 @@ $string['datadir'] = 'Ошибка файловой системы: Невозм
 $string['defaultdisplaysettings'] = 'Параметры отображения по умолчанию';
 $string['defaultgradesettings'] = 'Настройки оценок по умолчанию';
 $string['defaultothersettings'] = 'Остальные параметры по умолчанию';
-$string['deleteallattempts'] = 'Удалить все попытки';
+$string['deleteallattempts'] = 'Удалить все попытки SCORM';
 $string['deleteattemptcheck'] = 'Вы абсолютно уверены, что хотите полностью удалить эти попытки?';
 $string['deleteselected'] = 'Удалить выбранные попытки';
 $string['deleteuserattemptcheck'] = 'Вы абсолютно уверены, что хотите полностью удалить все свои попытки?';

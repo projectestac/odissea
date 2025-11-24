@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'nl', version '4.4'.
+ * Strings for component 'grades', language 'nl', version '4.5'.
  *
  * @package     grades
  * @category    string
@@ -543,7 +543,9 @@ $string['missingitemtypeoreid'] = 'Array key (itemtype of eid) ontbreekt';
 $string['missingscale'] = 'Je moet een schaal selecteren';
 $string['mode'] = 'Modus';
 $string['modgrade'] = 'Cijfer';
-$string['modgrade_help'] = 'Selecteer het type beoordeling dat wordt gebruikt voor deze activiteit. Als "schaal" wordt gekozen, kun je vervolgens de schaal kiezen uit een rolmenu. Als je punt-beoordeling kiest, dan kun je het maximale cijfer invoeren dat bij deze activiteit behaald kan worden.';
+$string['modgrade_help'] = '* Punt - een numerieke waarde
+* Geen - enkel feedback
+* Schaal - een item uit een lijst';
 $string['modgradecantchangegradetype'] = 'Je kunt het type niet wijzigen omdat er al cijfers voor dit item bestaan.';
 $string['modgradecantchangegradetypemsg'] = 'Sommige cijfers zijn al toegekend, dus het beoordelingstype kan niet meer gewijzigd worden. Als je het maximumcijfer wilt wijzigen, moet je eerst kiezen of je al dan niet de bestaande cijfers wil herschalen.';
 $string['modgradecantchangegradetyporscalemsg'] = 'Sommige cijfers zijn al toegekend, dus je kan het beoordelingstype en de schaal niet meer wijzigen.';
@@ -744,9 +746,9 @@ $string['recovergradesdefault'] = 'Standaard herstel cijfers';
 $string['recovergradesdefault_help'] = 'Herstel als standaardinstelling oude cijfers bij het opnieuw aanmelden in een cursus.';
 $string['refreshpreview'] = 'Voorbeeld vernieuwen';
 $string['regradeanyway'] = 'Cijfers toch opnieuw berekenen';
-$string['removeallcoursegrades'] = 'Verwijder alle cijfers';
+$string['removeallcoursegrades'] = 'Alle cijfers';
 $string['removeallcoursegrades_help'] = 'Indien ingeschakeld zullen alle beoordelingsitems en cijfers die manueel aan de cijferlijst zijn toegevoegd, verwijderd worden, samen met alle cijfers en gegevens op overschreven, uitgesloten, verborgen en geblokkeerde cijfers. Enkel beoordelingsitems en cijfers die met activiteiten geassocieerd zijn zullen overblijven.';
-$string['removeallcourseitems'] = 'Verwijder alle items en categorieën';
+$string['removeallcourseitems'] = 'Alle items en categorieën';
 $string['removeallcourseitems_help'] = 'Indien ingeschakeld zullen alle categorieën die manueel aan de cijferlijst zijn toegevoegd, verwijderd worden, samen met alle cijfers en gegevens op overschreven, uitgesloten, verborgen en geblokkeerde cijfers. Enkel beoordelingsitems die met activiteiten geassocieerd zijn zullen overblijven.';
 $string['report'] = 'Rapport';
 $string['reportdefault'] = 'Rapportvoorbeeld ({$a})';

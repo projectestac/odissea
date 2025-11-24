@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'de', version '4.4'.
+ * Strings for component 'block_rss_client', language 'de', version '4.5'.
  *
  * @package     block_rss_client
  * @category    string
@@ -30,18 +30,21 @@ $string['addheadlineblock'] = 'RSS Block hinzufügen';
 $string['addnew'] = 'RSS Block hinzufügen';
 $string['addnewfeed'] = 'RSS Feed hinzufügen';
 $string['cannotmakemodification'] = 'Sie dürfen zur Zeit keine Änderungen für diesen RSS Feed vorzunehmen.';
-$string['choosefeedlabel'] = 'RSS-Feeds für diesen Block';
+$string['choosefeedlabel'] = 'RSS Feeds für diesen Block auswählen';
 $string['clientchannellink'] = 'Quelle ...';
 $string['clientnumentries'] = 'Anzahl der Einträge, die standardmäßig pro Feed angezeigt werden';
-$string['clientshowchannellinklabel'] = 'Soll ein Link zur Originalseite angezeigt werden? Hinweis: kann nur genutzt werden, wenn der RSS-Feed einen Link verwendet.';
+$string['clientshowchannellinklabel'] = 'Quelllink anzeigen, falls verfügbar';
 $string['clientshowimagelabel'] = 'Grafik anzeigen, wenn vorhanden';
 $string['configblock'] = 'Block konfigurieren';
+$string['configmethodexisting'] = 'Vorhandenen RSS Feed auswählen';
+$string['configmethodnew'] = 'Neuen RSS Feed hinzufügen';
 $string['couldnotfindfeed'] = 'RSS Feed mit der ID konnte nicht gefunden werden';
 $string['couldnotfindloadrssfeed'] = 'RSS Feed konnte nicht gefunden bzw. nicht geladen werden.';
 $string['customtitlelabel'] = 'Angepasster Titel (leer lassen, um den vom Feed bereitgestellten Titel zu verwenden)';
 $string['deletefeedconfirm'] = 'Möchten Sie diesen RSS Feed wirklich löschen?';
 $string['disabledrssfeeds'] = 'RSS Feeds sind deaktiviert';
-$string['displaydescriptionlabel'] = 'Beschreibung für jeden Link anzeigen?';
+$string['displaydescriptionlabel'] = 'Beschreibung für Einträge anzeigen';
+$string['displaysettings'] = 'Einstellungen für RSS Feed anzeigen';
 $string['editafeed'] = 'RSS Feed bearbeiten';
 $string['editfeeds'] = 'RSS Feeds verwalten';
 $string['editnewsfeeds'] = 'RSS Feeds bearbeiten';
@@ -58,10 +61,10 @@ $string['feedsaddedit'] = 'RSS Feeds bearbeiten';
 $string['feedsconfigurenewinstance'] = 'Um den Block \'RSS Feeds\' zu konfigurieren, klicken Sie hier.';
 $string['feedsconfigurenewinstance2'] = 'Um den Block \'RSS Feeds\' zu konfigurieren, klicken Sie auf \'Bearbeiten\'.';
 $string['feedupdated'] = 'RSS Feed aktualisiert';
-$string['feedurl'] = 'URL des RSS Feed';
+$string['feedurl'] = 'Link des RSS Feeds';
 $string['findmorefeeds'] = 'Weitere RSS Feeds suchen';
 $string['managefeeds'] = 'RSS Feeds verwalten';
-$string['nofeeds'] = 'Es sind keine RSS Feeds für diese Seite definiert.';
+$string['nofeeds'] = 'Es sind bisher keine RSS Feeds konfiguriert. Wählen Sie "Neuen RSS Feed hinzufügen“..';
 $string['numentries'] = 'Einträge pro RSS Feed';
 $string['pickfeed'] = 'RSS Feed auswählen';
 $string['pluginname'] = 'RSS Feeds';
@@ -84,7 +87,7 @@ $string['rss_client:manageownfeeds'] = 'Persönliche RSS Feeds verwalten';
 $string['rss_client:myaddinstance'] = 'Neuen Block \'RSS Feeds\' im Dashboard hinzufügen';
 $string['seeallfeeds'] = 'Alle RSS Feeds anzeigen';
 $string['sharedfeed'] = 'Gemeinsamer RSS Feed';
-$string['shownumentrieslabel'] = 'Maximale Anzahl der angezeigten Einträge pro Block';
+$string['shownumentrieslabel'] = 'Angezeigte Einträge';
 $string['submitters'] = 'Wer darf neue RSS Feeds anlegen? Bereitgestellte RSS-Feeds können in allen Seiten genutzt werden.';
 $string['submitters2'] = 'Bereitsteller/innen für RSS-Feeds';
 $string['timeout'] = 'Zeitdauer (in Minuten), bevor ein RSS Feed im Cache ungültig wird. Dieser Wert legt die minimale Zeit fest. Der RSS-Feed wird im Cache aktualisiert, sobald der dann nachfolgende Cronjob abläuft. Empfohlen ist ein Wert von minimal 30 Minuten.';

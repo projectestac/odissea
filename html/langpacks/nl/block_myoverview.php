@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'nl', version '4.4'.
+ * Strings for component 'block_myoverview', language 'nl', version '4.5'.
  *
  * @package     block_myoverview
  * @category    string
@@ -93,7 +93,7 @@ $string['title'] = 'Cursusnaam';
 $string['viewquickstart'] = 'Bekijk de snelstartgids';
 $string['zero_default_intro'] = 'Zodra je aangemeld bent in een cursus, zal die hier verschijnen.';
 $string['zero_default_title'] = 'Je bent in geen enkele cursus aangemeld.';
-$string['zero_nocourses_intro'] = 'Hulp nodig om aan de slag te gaan? Bekijk de <a href="{$a->docref}" title="{$a->doctitle}" target="{$a->doctarget}">Moodle-documentatie</a> of zet je eerste stappen met onze snelstartgids.';
+$string['zero_nocourses_intro'] = 'Hulp nodig om aan de slag te gaan? Bekijk de <a href="{$a->docref}" title="{$a->doctitle}" target="{$a->doctarget}">Moodle-documentatie</a>.';
 $string['zero_nocourses_title'] = 'Maak je eerste cursus';
 $string['zero_request_intro'] = 'Hulp nodig om aan de slag te gaan? Bekijk de <a href="{$a->docref}" title="{$a->doctitle}" target="{$a->doctarget}">Moodle-documentatie</a> of zet je eerste stappen met onze <a href="{$a->quickhref}" title="{$a->quicktitle}" target="{$a->quicktarget}">snelstartgids</a>.';
 $string['zero_request_title'] = 'Vraag je eerste cursus aan';

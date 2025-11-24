@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'eu', version '4.4'.
+ * Strings for component 'quiz', language 'eu', version '4.5'.
  *
  * @package     quiz
  * @category    string
@@ -396,6 +396,7 @@ $string['eventslotgradeitemupdated'] = 'Galdetegiko kalifikazio-elementuaren gal
 $string['eventslotmarkupdated'] = 'Galdera-tartearen kalifikazioa eguneratu da';
 $string['eventslotmoved'] = 'Galdera-tartea mugitu da';
 $string['eventslotrequirepreviousupdated'] = 'Galdera-tarteak aurretiko behar izatea eguneratu da';
+$string['eventslotversionupdated'] = 'Tartearen bertsioa eguneratuta';
 $string['everynquestions'] = '{$a} galderatik behin';
 $string['everyquestion'] = 'Galdera bakoitzean';
 $string['everythingon'] = 'Guztia hemen';
@@ -556,6 +557,7 @@ $string['maxmarks_help'] = 'Galdera bakoitzarentzat eskuragarri egongo den gehie
 $string['messageprovider:attempt_grading_complete'] = 'Zure saiakera kalifikatua izan denaren jakinarazpena';
 $string['messageprovider:attempt_overdue'] = 'Zure galdetegi-saiakera epez kanpo geratzen denaren jakinarazpena.';
 $string['messageprovider:confirmation'] = 'Galdetegiari erantzun izanaren berrespena';
+$string['messageprovider:quiz_open_soon'] = 'Galdetegia laster irekiko da';
 $string['messageprovider:submission'] = 'Zure ikasleen galdetegi-bidalketen jakinarazpena';
 $string['min'] = 'Gutxienez';
 $string['minutes'] = 'Minutu(ak)';
@@ -649,7 +651,7 @@ $string['onlyteachersimport'] = 'Edizio baimena duten irakasleek baino ezin dute
 $string['onthispage'] = 'Orri hau';
 $string['open'] = 'Erantzunik gabe';
 $string['openafterclose'] = 'Ezin izan da galdetegia eguneratu. Zehaztu duzun hasiera-data itxiera-data baino beranduagokoa da.';
-$string['openclosedatesupdated'] = 'Galdetegia hasiera eta itxiera-datak eguneratu dira';
+$string['openclosedatesupdated'] = 'Hasiera eta itxiera-datak';
 $string['optional'] = 'hautazkoa';
 $string['orderandpaging'] = 'Ordena eta orrikatzea';
 $string['orderandpaging_help'] = 'Galderen ondoan dauden 10, 20, 30... zenbakiek galderen ordena adierazten dute. Zenbakiak hamarnaka igotzen dira, galdera berriak tartekatu behar badira, lekua izateko. Galderak berrantolatu behar badira, egin klik "Galderak berrantolatu" botoian.
@@ -731,7 +733,7 @@ $string['previewquiz'] = 'Aurreikusi {$a}';
 $string['previewquiznow'] = 'Aurreikusi galdetegia orain';
 $string['previewquizstart'] = 'Aurreikusi galdetegia';
 $string['previous'] = 'Aurreko egoera';
-$string['privacy:metadata:core_question'] = 'Galdetegia jarduerak galderen erabileraren informazioa gordetzen du core_question sisteman.';
+$string['privacy:metadata:core_question'] = 'Galdetegia jarduerak galderen erabileraren informazioa gordetzen du muineko galderen azpisisteman.';
 $string['privacy:metadata:quiz'] = 'Galdetegia jarduerak galdetegi-txostenen erabilera egiten du.';
 $string['privacy:metadata:quiz_attempts'] = 'Galdetegi bateko saiakera bakoitzaren inguruko xehetasunak.';
 $string['privacy:metadata:quiz_attempts:attempt'] = 'Saiakera-zenbakia.';
@@ -831,6 +833,12 @@ $string['quizopen'] = 'Galdetegiaren hasiera-data';
 $string['quizopenclose'] = 'Galdetegiaren hasiera eta itxiera-datak';
 $string['quizopenclose_help'] = 'Ikasleek soilik hasiera-data baino beranduago hasi dezakete bere saiakera(k), eta itxiera-dataren aurretik amaitu behar dute.';
 $string['quizopenclose_link'] = 'mod/quiz/timing';
+$string['quizopendatesoonhtml'] = '<p>Kaixo, {$a->firstname},</p>
+<p>{$a->coursename} ikastaroko <strong>{$a->quizname}</strong> galdetegia laster irekiko da.
+<p><strong>Irekitze-data: {$a->timeopen}</strong></p>
+<p><strong>Itxiera-data: {$a->timeclose}</strong></p>
+<p><a href="{$a->url}">Joan galdetegira</a></p>';
+$string['quizopendatesoonsubject'] = '{$a->quizname} galdetegiak laster du irekitze-data ({$a->timeopen})';
 $string['quizopened'] = 'Galdetegi hau irekita dago.';
 $string['quizopenedon'] = 'Galdetegi hau {$a} ireki zen';
 $string['quizopens'] = 'Galdetegia irekiko da';
@@ -882,9 +890,9 @@ $string['regradenotallowed'] = 'Ez duzu galdetegi hau berriro kalifikatzeko baim
 $string['regradingquestion'] = '"{$a}" berriro kalifikatzen';
 $string['regradingquiz'] = '"{$a}" galdetegia berriro kalifikatzen';
 $string['remove'] = 'Ezabatu';
-$string['removeallgroupoverrides'] = 'Ezabatu talde-salbuespen guztiak';
-$string['removeallquizattempts'] = 'Ezabatu galdetegietako saiakera guztiak';
-$string['removealluseroverrides'] = 'Ezabatu erabiltzaile-salbuespen guztiak';
+$string['removeallgroupoverrides'] = 'Talde-salbuespen guztiak';
+$string['removeallquizattempts'] = 'Galdetegietako saiakera guztiak';
+$string['removealluseroverrides'] = 'Erabiltzaile-salbuespen guztiak';
 $string['removeemptypage'] = 'Ezabatu hutsik dagoen orria';
 $string['removepagebreak'] = 'Ezabatu orri-jauzia';
 $string['removeselected'] = 'Ezabatu aukeratutakoa(k)';
@@ -997,6 +1005,7 @@ $string['selectmultipletoolbar'] = 'Aukeratu erreminta-barra bat baino gehiago';
 $string['selectnone'] = 'Desmarkatu guztiak';
 $string['selectquestionslot'] = 'Aukeratu {$a}. galdera';
 $string['selectquestiontype'] = '-- Aukeratu galdera mota --';
+$string['sendnotificationopendatesoon'] = 'Jakinarazi erabiltzaileari galdetegien irekitze-data gerturatzen denean';
 $string['serveradded'] = 'Zerbitzaria gehitu da';
 $string['serveridentifier'] = 'Identifikatzailea';
 $string['serverinfo'] = 'Zerbitzariaren informazioa';
@@ -1065,6 +1074,7 @@ $string['subplugintype_quizaccess_plural'] = 'Sarbide-arauak';
 $string['substitutedby'] = 'zerk ordezkatuko duen:';
 $string['summaryofattempt'] = 'Saiakeren laburpena';
 $string['summaryofattempts'] = 'Zure saiakerak';
+$string['summaryofattemptscaption'] = '{$a}. saiakeraren laburpena';
 $string['temporaryblocked'] = 'Denbora tarte batez ez duzu <br /> galdetegia berriz egiten saiatzeko baimenik. Berriz egin ahal izateko data:';
 $string['theattempt'] = 'Saiakera';
 $string['theattempt_help'] = 'Ea ikasleak egindako saiakera berrikusi dezakeen ala ez.';

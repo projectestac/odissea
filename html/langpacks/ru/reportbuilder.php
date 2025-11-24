@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'reportbuilder', language 'ru', version '4.4'.
+ * Strings for component 'reportbuilder', language 'ru', version '4.5'.
  *
  * @package     reportbuilder
  * @category    string
@@ -145,6 +145,7 @@ $string['filterdoesnotcontain'] = 'Не содержит';
 $string['filterendswith'] = 'Заканчивается на';
 $string['filterequalorgreaterthan'] = 'Больше или равно';
 $string['filterequalorlessthan'] = 'Меньше или равно';
+$string['filterfieldfrom'] = '{$a} с';
 $string['filterfieldoperator'] = 'оператор {$a}';
 $string['filterfieldto'] = '{$a} до';
 $string['filterfieldvalue'] = 'Значение {$a}';

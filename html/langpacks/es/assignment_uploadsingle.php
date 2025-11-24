@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment_uploadsingle', language 'es', version '4.4'.
+ * Strings for component 'assignment_uploadsingle', language 'es', version '4.5'.
  *
  * @package     assignment_uploadsingle
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'es', version '4.4'.
+ * Strings for component 'auth_oauth2', language 'es', version '4.5'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -29,7 +29,7 @@ $string['accountexists'] = 'Ya existe un usuario en este sitio con ese nombre de
 $string['alreadylinked'] = 'Esta cuanta externa ya está enlazada con una cuenta en este sitio';
 $string['auth_oauth2description'] = 'Autenticación basada en estándares OAuth 2';
 $string['auth_oauth2settings'] = 'Ajustes de autenticación OAuth 2.';
-$string['confirmaccountemail'] = 'Hola, {$a->fullname}:
+$string['confirmaccountemail'] = 'Hola, {$a->fullname}.
 
 Se ha solicitado una nueva cuenta en \'{$a->sitename}\'
 utilizando su dirección de correo electrónico.
@@ -38,36 +38,28 @@ Para confirmar su nueva cuenta, vaya a esta dirección web:
 
 {$a->link}
 
-En la mayoría de los programas de correo, esto debería aparecer como un enlace azul.
-en el que puede hacer clic. Si eso no funciona,
-corte y pegue la dirección en la barra de navegación
-en la parte superior de la ventana de su navegador web.
+En la mayoría de los programas de correo, esto debería aparecer como un enlace azul en el que puede hacer clic.
+Si eso no funciona, corte y pegue la dirección en la barra de navegación en la parte superior de la ventana de su navegador web.
 
-Si necesita ayuda, póngase en contacto con el administrador del sitio,
-{$a->admin}
+Si necesita ayuda, póngase en contacto con el administrador del sitio, {$a->admin}
 
 Si usted no hizo esto, alguien más podría estar intentando poner en peligro su cuenta.
 Póngase en contacto con el administrador del sitio de inmediato.';
 $string['confirmaccountemailsubject'] = '{$a}: confirmación de cuenta';
 $string['confirmationinvalid'] = 'El enlace de confirmación no es válido o ha caducado. Vuelva a iniciar el proceso de inicio de sesión para generar un nuevo correo electrónico de confirmación.';
 $string['confirmationpending'] = 'Esta cuenta está pendiente de confirmación por correo electrónico.';
-$string['confirmlinkedloginemail'] = 'Hola, {$a->fullname}:
+$string['confirmlinkedloginemail'] = 'Hola, {$a->fullname}.
 
-Se ha realizado una solicitud para vincular el inicio de sesión de {$a->issuername}
-{$a->linkedemail} a su cuenta en \'{$a->sitename}\'
-utilizando su dirección de correo electrónico.
+Se ha realizado una solicitud para vincular el inicio de sesión de {$a->issuername} {$a->linkedemail} a su cuenta en "{$a->sitename}" utilizando su dirección de correo electrónico.
 
 Para confirmar esta solicitud y vincular estos inicios de sesión, vaya a esta dirección web:
 
 {$a->link}
 
-En la mayoría de los programas de correo, esto debería aparecer como un enlace azul
-en el que puede hacer clic. Si eso no funciona,
-corte y pegue la dirección en la barra de navegación
-en la parte superior de la ventana de su navegador web.
+En la mayoría de los programas de correo, esto debería aparecer como un enlace azul en el que puede hacer clic.
+Si eso no funciona, corte y pegue la dirección en la barra de navegación en la parte superior de la ventana de su navegador web.
 
-Si necesita ayuda, póngase en contacto con el administrador del sitio,
-{$a->admin}
+Si necesita ayuda, póngase en contacto con el administrador del sitio, {$a->admin}
 
 Si usted no hizo esto, alguien más podría estar intentando poner en peligro su cuenta.
 Póngase en contacto con el administrador del sitio de inmediato.';
@@ -91,7 +83,7 @@ Inicie sesión como antes, utilizando el enlace de la página de inicio de sesi�
 $string['emailpasswordchangeinfosubject'] = '{$a}: Información sobre cambiar la contraseña';
 $string['info'] = 'Cuenta externa';
 $string['issuer'] = 'Servicio OAuth 2';
-$string['issuernologin'] = 'El emisor no puede utilizarse para iniciar sesión';
+$string['issuernologin'] = 'Este emisor no puede utilizarse para iniciar sesión.';
 $string['key'] = 'Clave';
 $string['linkedlogins'] = 'Inicios de sesión vinculados';
 $string['linkedloginshelp'] = 'Ayuda con inicios de sesión vinculados';

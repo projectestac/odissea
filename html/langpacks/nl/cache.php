@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'nl', version '4.4'.
+ * Strings for component 'cache', language 'nl', version '4.5'.
  *
  * @package     cache
  * @category    string
@@ -34,6 +34,8 @@ $string['addstoresuccess'] = 'Toevoegen van een nieuwe {$a} opslag gelukt';
 $string['area'] = 'Zone';
 $string['cacheadmin'] = 'Cache-beheer';
 $string['cacheconfig'] = 'Configuratie';
+$string['cachedef_ai_policy'] = 'Gebruikersaanvaarding AI-beleid.';
+$string['cachedef_ai_ratelimit'] = 'AI-provider frequentiebeperking';
 $string['cachedef_calculablesinfo'] = 'Analytics berekent info';
 $string['cachedef_calendar_categories'] = 'Kalender cursus categorieën die een gebruiker kan openen';
 $string['cachedef_calendar_subscriptions'] = 'Kalenderinschrijvingen';
@@ -91,6 +93,7 @@ $string['cachedef_recommendation_favourite_course_content_items'] = 'Aanbeveling
 $string['cachedef_reportbuilder_allowed_reports'] = 'Toegestane gebruikersrapporten op basis van doelgroep';
 $string['cachedef_repositories'] = 'Opslagruimtegegevens';
 $string['cachedef_roledefs'] = 'Roldefinities';
+$string['cachedef_routes'] = 'Stuur gegevens';
 $string['cachedef_string'] = 'Taalstringcache';
 $string['cachedef_suspended_userids'] = 'Lijst van geschorste leerlingen per cursus.';
 $string['cachedef_tagindexbuilder'] = 'Doorzoek de resultaten van getagede items';

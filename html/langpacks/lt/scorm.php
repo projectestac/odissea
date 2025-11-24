@@ -1,0 +1,441 @@
+<?php
+// This file is part of Moodle - https://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
+
+/**
+ * Strings for component 'scorm', language 'lt', version '4.5'.
+ *
+ * @package     scorm
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+defined('MOODLE_INTERNAL') || die();
+
+$string['activation'] = 'Aktyvinimas';
+$string['activityloading'] = 'Būsite automatiškai peradresuoti į veiklą, esančią';
+$string['activityoverview'] = 'Turite SCORM paketus, kuriems reikia dėmesio';
+$string['activitypleasewait'] = 'Įkeliama veikla, palaukite...';
+$string['adminsettings'] = 'Administratoriaus nustatymai';
+$string['advanced'] = 'Parametrai';
+$string['aicchacpkeepsessiondata'] = 'AICC HACP sesijos duomenys';
+$string['aicchacpkeepsessiondata_desc'] = 'Trukmė dienomis kiek laikyti AICC HACP sesijos duomenis (Aukštas skaičius gali užpildyti lentelę su senais duomenimis, bet gali būti naudingas derinant)';
+$string['aicchacptimeout'] = 'AICC HACP minutės pertraukėlė';
+$string['aicchacptimeout_desc'] = 'Trukmė minutėmis kai išorinės AICC HACP sesijos gali likti atidarytos';
+$string['aiccuserid'] = 'AICC leidimo skaitmeninis naudotojo ID';
+$string['aiccuserid_desc'] = 'AICC naudotojo vardų standartas yra labai griežtas, palyginti su Moodle, ir leidžia naudoti tik raidinius ir skaitmeninius simbolius, brūkšnelį ir pabraukimą. Taškai, tarpai ir simbolis @ neleidžiami. Jei įjungta, naudotojo ID numeriai perduodami AICC paketui, o ne naudotojų vardams.';
+$string['aliasonly'] = 'Pasirinkdami imsmanifest.xml failą iš saugyklos, turite naudoti šio failo slapyvardį / nuorodą.';
+$string['allowapidebug'] = 'Aktyvinti API derinimą ir sekimą (nustatyti įrašymo šabloną naudojant „apidebugmask“)';
+$string['allowtypeaicchacp'] = 'Įjungti išorinį AICC HACP';
+$string['allowtypeaicchacp_desc'] = 'Jei įjungta, tai leidžia AICC HACP išorinę komunikaciją nereikalaujant naudotojo prisijungimo, kad galėtų skelbti prašymus iš išorinio AICC paketo.';
+$string['allowtypeexternal'] = 'Įjungti išorinio paketo tipą';
+$string['allowtypeexternalaicc'] = 'Įjungti tiesioginį AICC url';
+$string['allowtypeexternalaicc_desc'] = 'Jei įjungtas, tai leidžia tiesioginį URL į paprastą AICC paketą';
+$string['allowtypelocalsync'] = 'Įjungti atsisiųsto paketo tipą';
+$string['apidebugmask'] = 'API derinimo įrašymo šablonas – naudoti paprastą reguliariąją išraišką &lt;username&gt;:&lt;activityname&gt;, pvz., naudojant admin:.* bus derinamas administratoriaus naudotojas';
+$string['areacontent'] = 'Turinio failai';
+$string['areapackage'] = 'Paketo failas';
+$string['asset'] = 'Turtas';
+$string['assetlaunched'] = 'Turtas – peržiūrėta';
+$string['attempt'] = 'Bandymas';
+$string['attempt1'] = '1 bandymas';
+$string['attempts'] = 'Bandymai';
+$string['attemptsmanagement'] = 'Bandymų valdymas';
+$string['attemptstatusall'] = 'Mano pagrindinis ir įėjimo puslapis';
+$string['attemptstatusentry'] = 'Įėjimo puslapis';
+$string['attemptstatusmy'] = 'Tik Mano pagrindinis';
+$string['attemptsx'] = 'Bandymų: {$a}';
+$string['attr_error'] = 'Neteisinga žymės {$a->tag} atributo ({$a->attr}) reikšmė.';
+$string['autocommit'] = 'Automatinis patvirtinimas';
+$string['autocommit_help'] = 'Jei įjungta, SCORM duomenys automatiškai išsaugomi duomenų bazėje. Naudinga SCORM objektams, kurie reguliariai neišsaugo savo duomenų.';
+$string['autocommitdesc'] = 'Automatiškai išsaugoti SCORM duomenis, jei SCORM paketas jų neišsaugo.';
+$string['autocontinue'] = 'Automatinis tęsimas';
+$string['autocontinue_help'] = 'Jei įjungta, paskesni mokymosi objektai paleidžiami automatiškai. Kitu atveju reikia naudoti mygtuką Tęsti.';
+$string['autocontinuedesc'] = 'Ši nuostata nustato numatytąjį automatinį veiklos tęsimą';
+$string['averageattempt'] = 'Vidutiniškai bandymų';
+$string['badarchive'] = 'Turite pateikti tinkamą zip failą';
+$string['badimsmanifestlocation'] = 'Failas imsmanifest.xml buvo rastas, bet jo nebuvo ZIP failo šaknyje. Iš naujo supakuokite SCORM';
+$string['badmanifest'] = 'Kelios deklaracijos klaidos: žr. klaidų žurnalą';
+$string['browse'] = 'Peržiūra';
+$string['browsed'] = 'Naršyta';
+$string['browsemode'] = 'Peržiūros režimas';
+$string['browserepository'] = 'Naršyti saugyklą';
+$string['cachedef_elements'] = 'Elemento talpykla';
+$string['calculatedweight'] = 'Apskaičiuotas svoris';
+$string['calendarend'] = '{$a} uždaroma';
+$string['calendarstart'] = '{$a} atidaroma';
+$string['cannotaccess'] = 'Jūs negalite vadinti šio scenarijaus tokiu būdu';
+$string['cannotfindsco'] = 'Nepavyko rasti SCO';
+$string['chooseapacket'] = 'Pasirinkti arba naujinti paketą';
+$string['closebeforeopen'] = 'Uždarymo data nurodyta ankstesnė nei atidarymo data.';
+$string['collapsetocwinsize'] = 'Sutraukti TOC, kai lango dydis yra mažesnis';
+$string['collapsetocwinsizedesc'] = 'Šis nustatymas leidžia nurodyti lango dydį, žemiau kurio TOC turėtų automatiškai sutraukti.';
+$string['compatibilitysettings'] = 'Suderinamumo nustatymai';
+$string['completed'] = 'Užbaigta';
+$string['completiondetail:allscos'] = 'Atlikite visas šios veiklos dalis';
+$string['completiondetail:completionscore'] = 'Gauti {$a} ar didesnį įvertinimą';
+$string['completiondetail:completionstatuscompleted'] = 'Baigti veiklą';
+$string['completiondetail:completionstatuscompletedorpassed'] = 'Užbaigti arba išlaikyti veiklą';
+$string['completiondetail:completionstatuspassed'] = 'Išlaikyti veiklą';
+$string['completionscorerequired'] = 'Reikalingas minimalus rezultatas';
+$string['completionscorerequired_help'] = 'Įjungus šį nustatymą, naudotojas turės turėti bent minimalų įvestą balą, kad būtų pažymėtas kaip užbaigtas šioje SCORM veikloje, taip pat bet kokie kiti veiklos užbaigimo reikalavimai.';
+$string['completionscorerequireddesc'] = 'Mažiausias balas {$a} reikalingas užbaigimui';
+$string['completionstatus_completed'] = 'Baigtas';
+$string['completionstatus_passed'] = 'Išlaikyta';
+$string['completionstatusallscos'] = 'Visi SCO turi grąžinti užbaigimo būseną';
+$string['completionstatusallscos_help'] = 'Kai kuriuose SCORM paketuose yra keli komponentai arba „scos“ – kai tai įjungta, visi paketo „scos“ turi grąžinti atitinkamą lesson_status, kad ši veikla būtų pažymėta kaip baigta.';
+$string['completionstatusrequired'] = 'Reikalauti būsenos';
+$string['completionstatusrequired_help'] = 'Patikrinęs vieną ar daugiau būsenų, naudotojas turės pasiekti bent vieną iš pažymėtų būsenų, kad būtų pažymėtas kaip užbaigtas šioje SCORM veikloje, taip pat bet kokius kitus veiklos užbaigimo reikalavimus.';
+$string['completionstatusrequireddesc'] = 'Besimokantysis turi pasiekti bent vieną iš šių būsenų: {$a}';
+$string['confirmloosetracks'] = 'ĮSPĖJIMAS: atrodo, kad paketas pakeistas arba modifikuotas. Jei buvo pakeista paketo struktūra, naujinimo proceso metu gali būti prarasti kai kurių naudotojų sekimai.';
+$string['contents'] = 'Turinys';
+$string['coursepacket'] = 'Kursų paketas';
+$string['coursestruct'] = 'Turinio struktūra';
+$string['crontask'] = 'SCORM foninis apdorojimas';
+$string['currentwindow'] = 'Dabartinis langas';
+$string['datadir'] = 'Failų sistemos klaida: nepavyksta sukurti kursų duomenų katalogo';
+$string['defaultdisplaysettings'] = 'Numatyti vaizdavimo nustatymai';
+$string['defaultgradesettings'] = 'Numatyti vertinimo nustatymai';
+$string['defaultothersettings'] = 'Kiti numatyti nustatymai';
+$string['deleteallattempts'] = 'Visi SCORM bandymai';
+$string['deleteattemptcheck'] = 'Ar esate visiškai įsitikinę, kad norite visiškai panaikinti šiuos bandymus?';
+$string['deleteselected'] = 'Ištrinti pasirinktus bandymus';
+$string['deleteuserattemptcheck'] = 'Ar esate visiškai tikras, kad norite pašalinti savo bandymus?';
+$string['details'] = 'Sekimo išsami informacija';
+$string['directories'] = 'Rodyti katalogų saitus';
+$string['disabled'] = 'Išjungtas';
+$string['display'] = 'Rodyti paketą';
+$string['displayattemptstatus'] = 'Rodyti bandymo būseną';
+$string['displayattemptstatus_help'] = 'Ši nuostata leidžia naudotojų bandymų santrauką rodyti kurso apžvalgos bloke prietaisų skydelyje ir (arba) SCORM įvesties puslapyje.';
+$string['displayattemptstatusdesc'] = 'Ar naudotojo bandymų suvestinė rodoma prietaisų skydelio kurso apžvalgos bloke ir (arba) SCORM įvesties puslapyje.';
+$string['displaycoursestructure'] = 'Turinio struktūros rodymas pradiniame puslapyje';
+$string['displaycoursestructure_help'] = 'Jei įjungta, SCORM struktūros puslapyje rodomas turinys.';
+$string['displaycoursestructuredesc'] = 'Ši nuostata nustato kursų struktūros rodymo įrašų puslapyje parametro numatytąją reikšmę';
+$string['displaydesc'] = 'Ši nuostata nustato numatytąją reikšmę, ar rodyti veiklos paketą, ar ne.';
+$string['displaysettings'] = 'Rodyti nustatymus';
+$string['dnduploadscorm'] = 'Pridėti SCORM paketą';
+$string['domxml'] = 'DOMXML išorinė biblioteka';
+$string['element'] = 'Elementas';
+$string['enter'] = 'Pradėti';
+$string['entercourse'] = 'Eiti į kursą';
+$string['errorlogs'] = 'Klaidų žurnalas';
+$string['eventattemptdeleted'] = 'Bnadymas ištrintas';
+$string['eventinteractionsviewed'] = 'Sąveikos peržiūrėtos';
+$string['eventreportviewed'] = 'Ataskaita peržiūrėta';
+$string['eventscolaunched'] = 'Sco paleistas';
+$string['eventscorerawsubmitted'] = 'Pateiktas SCORM neapdorotas balas';
+$string['eventstatussubmitted'] = 'Pateikta SCORM būsena';
+$string['eventtracksviewed'] = 'Žiūrėti takeliai';
+$string['eventuserreportviewed'] = 'Naudotojo ataskaita peržiūrėta';
+$string['everyday'] = 'Kiekvieną dieną';
+$string['everytime'] = 'Kiekvieną kartą naudojant';
+$string['exceededmaxattempts'] = 'Pasiekėte didžiausią leistiną bandymų skaičių.';
+$string['exit'] = 'Išeiti iš kursų';
+$string['exitactivity'] = 'Išeiti iš veiklos';
+$string['expired'] = 'Apgailestaujame, ši veikla uždaryta {$a} ir nebegalima';
+$string['external'] = 'Naujinti išorinio paketo laiko apskaičiavimą';
+$string['failed'] = 'Nepavyko';
+$string['finishscorm'] = 'Jei baigėte peržiūrėti šį išteklių, {$a}';
+$string['finishscormlinkname'] = 'spustelėkite čia, kad grįžtumėte į kursų puslapį';
+$string['firstaccess'] = 'Pirma prieiga';
+$string['firstattempt'] = 'Pirmasis bandymas';
+$string['floating'] = 'Plaukiojantis';
+$string['forceattemptalways'] = 'Visada';
+$string['forceattemptoncomplete'] = 'Kai ankstesnis bandymas baigtas, sėkmingas arba nepavykęs';
+$string['forcecompleted'] = 'Ši nuostata nustato priverstinio užbaigimo parametro numatytąją reikšmę';
+$string['forcecompleted_help'] = 'Jei įjungta, dabartinio bandymo būsena priverstinai nustatoma kaip Užbaigta. Šis parametras taikomas tik SCORM 1.2 paketams. Tai naudinga, jei SCORM paketas peržiūros ar naršymo režimu netinkamai apdoroja pakartotinę bandymo peržiūrą arba dėl kitų priežasčių pateikia neteisingą užbaigimo būseną.';
+$string['forcecompleteddesc'] = 'Ši nuostata nustato priverstinio užbaigimo parametro numatytąją reikšmę';
+$string['forcejavascript'] = 'Reikalauti, kad naudotojai įjungtų „JavaScript“';
+$string['forcejavascript_desc'] = 'Jei įjungtas (rekomenduojama) užkerta priėjimą prie SCORM objektų kai JavaScript yra nepalaikomas arba išjungtas naudotojo naršyklėje. Jei ši funkcija išjungta naudotojas gali matyti SCORM bet API komunikacija neįvyks ir vertinimo informacija nebus išsaugota.';
+$string['forcejavascriptmessage'] = 'Norint peržiūrėti šį objektą reikalinga „JavaScript“. Naršyklėje įjunkite „JavaScript“ ir bandykite dar kartą.';
+$string['forcenewattempts'] = 'Priverstinis naujas bandymas';
+$string['forcenewattempts_help'] = 'Yra 3 variantai:
+
+* Ne – jei ankstesnis bandymas baigtas, išlaikytas arba nepavyko, besimokančiąjam bus suteikta galimybė įeiti į peržiūros režimą arba pradėti naują bandymą.
+* Kai ankstesnis bandymas buvo baigtas, sėkmingas arba nepavykęs – tai priklauso nuo SCORM paketo, nustatančio būseną „užbaigta“, „išlaikyta“ arba „nepavyko“.
+* Visada – kiekvienas pakartotinis įėjimas į SCORM veiklą sugeneruos naują bandymą ir besimokantysis nebus grąžintas į tą patį tašką, kurį pasiekė ankstesniu bandymu.';
+$string['found'] = 'Deklaracija rasta';
+$string['frameheight'] = 'Ši nuostata nustato numatytąjį etapo rėmelio arba lango aukštį';
+$string['framewidth'] = 'Ši nuostata nustato numatytąjį etapo rėmelio arba lango plotį';
+$string['fromleft'] = 'Iš kairės';
+$string['fromtop'] = 'Iš viršaus';
+$string['fullscreen'] = 'Užpildyti visą ekraną';
+$string['general'] = 'Bendrieji duomenys';
+$string['gradeaverage'] = 'Vidutinis įvertinimas';
+$string['gradeforattempt'] = 'Bandymo įvertinimas';
+$string['gradehighest'] = 'Aukščiausias įvertinimas';
+$string['grademethod'] = 'Vertinimo metodas';
+$string['grademethod_help'] = 'Vertinimo metodas apibrėžia, kaip nustatomas veiklos vieno bandymo įvertinimas.
+
+Yra 4 vertinimo metodai:
+* Mokymosi objektai – užbaigtų / išlaikytų mokymosi objektų skaičius
+* Aukščiausias įvertinimas – aukščiausias balas iš visų balų, gautų už išlaikytus mokymosi objektus
+* Įvertinimų vidurkis – visų balų vidurkis
+* Įvertinimų suma – visų balų suma';
+$string['grademethoddesc'] = 'Ši nuostata nustato numatytąjį veiklos vertinimo metodą';
+$string['gradereported'] = 'Įvertinimas užregistruotas';
+$string['gradescoes'] = 'Mokymosi objektai';
+$string['gradesettings'] = 'Vertinimų nustatymai';
+$string['gradesum'] = 'Įvertinimų suma';
+$string['height'] = 'Aukštis';
+$string['hidden'] = 'Paslėpta';
+$string['hidebrowse'] = 'Išjungti peržiūros režimą';
+$string['hidebrowse_help'] = 'Naudodamas peržiūros režimą besimokantysis gali naršyti veiklą prieš bandydamas ją atlikti. Jei peržiūros režimas išjungtas, peržiūros mygtukas yra paslėptas.';
+$string['hidebrowsedesc'] = 'Ši nuostata nustato numatytąją reikšmę – ar išjungti peržiūros režimą, ar jį įjungti';
+$string['hideexit'] = 'Slėpti išėjimo saitą';
+$string['hidereview'] = 'Slėpti peržiūros mygtuką';
+$string['hidetoc'] = 'Turinio struktūros rodymas grotuve';
+$string['hidetoc_help'] = 'Šis parametras nurodo, kaip SCORM leistuve rodomas turinys.';
+$string['hidetocdesc'] = 'Ši nuostata nustato numatytąją reikšmę – ar SCORM leistuve rodyti kursų struktūrą (TOC), ar ją slėpti';
+$string['highestattempt'] = 'Aukščiausiai įvertintas bandymas';
+$string['identifier'] = 'Klausimo identifikatorius';
+$string['incomplete'] = 'Neužbaigta';
+$string['indicator:cognitivedepth'] = 'Kognityvinis SCORM';
+$string['indicator:cognitivedepth_help'] = 'Šis rodiklis pagrįstas pažinimo gyliu, kurį besimokantysis pasiekia SCORM veikloje.';
+$string['indicator:cognitivedepthdef'] = 'Kognityvinis SCORM';
+$string['indicator:cognitivedepthdef_help'] = 'Dalyvis per šį analizės intervalą pasiekė šį SCORM veiklos siūlomą pažinimo įsitraukimo procentą (Lygiai = Nėra peržiūros, Peržiūra, Pateikimas, Atsiliepimų peržiūra)';
+$string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
+$string['indicator:socialbreadth'] = 'Socialinis SCORM';
+$string['indicator:socialbreadth_help'] = 'Šis rodiklis pagrįstas socialiniu platumu, kurį besimokantysis pasiekia SCORM veikloje.';
+$string['indicator:socialbreadthdef'] = 'Socialinis SCORM';
+$string['indicator:socialbreadthdef_help'] = 'Dalyvis pasiekė šį socialinio įsitraukimo procentą, kurį siūlo SCORM veikla per šį analizės intervalą (Lygiai = Nedalyvauja, Vienas dalyvis)';
+$string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
+$string['interactions'] = 'Sąveika';
+$string['invalidactivity'] = 'SCORM veikla yra netinkama';
+$string['invalidhacpsession'] = 'Negaliojanti HACP sesija';
+$string['invalidmanifestname'] = 'Galima pasirinkti tik imsmanifest.xml arba .zip failus';
+$string['invalidmanifestresource'] = 'ĮSPĖJIMAS: Šie ištekliai buvo paminėti jūsų deklaracijoje, bet nebuvo surasti:';
+$string['invalidstatus'] = 'Netinkama būsena';
+$string['invalidurl'] = 'Nurodytas negaliojantis URL';
+$string['invalidurlhttpcheck'] = 'Nurodytas neteisingas URL. Derinimo pranešimas:<pre>{$a->cmsg}</pre>';
+$string['last'] = 'Paskutinės prieigos data';
+$string['lastaccess'] = 'Paskutinė prieiga';
+$string['lastattempt'] = 'Paskutinis bandymas';
+$string['lastattemptlock'] = 'Užrakinti po paskutinio bandymo';
+$string['lastattemptlock_help'] = 'Jei įjungta, besimokantysis, išnaudojęs visus jam priskirtus bandymus, nebegali paleisti SCORM leistuvo.';
+$string['lastattemptlockdesc'] = 'Ši nuostata nustato užrakinimo po paskutinio bandymo parametro numatytąją reikšmę';
+$string['location'] = 'Rodyti vietos juostą';
+$string['masteryoverride'] = 'Meistriškumo balas nepaiso būsenos';
+$string['masteryoverride_help'] = 'Jei įjungta ir pateikiamas meistriškumo balas, kai iškviečiamas LMSFinish ir nustatytas neapdorotas balas, būsena bus perskaičiuota naudojant neapdorotą balą ir meistriškumo balą, o bet kokia SCORM pateikta būsena (įskaitant „neužbaigtą“) bus nepaisoma.';
+$string['masteryoverridedesc'] = 'Ši nuostata nustato numatytąjį meistriškumo balo nepaisymo nustatymą';
+$string['max'] = 'Didžiausias balas';
+$string['maximumattempts'] = 'Bandymų skaičius';
+$string['maximumattempts_help'] = 'Šis parametras įjungia bandymų skaičiaus apribojimą. Jis taikomas tik SCORM 1.2 ir AICC paketams.';
+$string['maximumattemptsdesc'] = 'Ši nuostata nustato veiklos numatytąjį didžiausią bandymų skaičių';
+$string['maximumgradedesc'] = 'Ši nuostata nustato veiklos numatytąjį didžiausią įvertinimą';
+$string['menubar'] = 'Rodyti meniu juostą';
+$string['min'] = 'Mažiausias balas';
+$string['minimumscoregreater'] = 'Minimalus balų skaičius turi būti didesnis nei 0.';
+$string['missing_attribute'] = 'Trūksta žymės {$a->tag} atributo {$a->attr}';
+$string['missing_tag'] = 'Trūksta žymės {$a->tag}';
+$string['missingparam'] = 'Trūksta būtino parametro arba jis netinkamas';
+$string['mode'] = 'Režimas';
+$string['modulename'] = 'SCORM paketas';
+$string['modulename_help'] = 'SCORM ir AICC yra specifikacijų, užtikrinančių veiksmų suderinamumą, leidžiančių pasiekti ir pakartotinai naudoti žiniatinkliu pagrįstą mokymosi turinį, rinkinys. SCORM/AICC modulis leidžia į kursus įtraukti SCORM/AICC paketus.';
+$string['modulename_link'] = 'mod/scorm/view';
+$string['modulenameplural'] = 'SCORM paketai';
+$string['myaiccsessions'] = 'Mano AICC sesijos';
+$string['myattempts'] = 'Mano bandymai';
+$string['nav'] = 'Rodyti navigaciją';
+$string['nav_help'] = 'Šis nustatymas nurodo, ar rodyti ar slėpti naršymo mygtukus ir jų padėtį.
+
+Yra 3 variantai:
+
+* Ne – naršymo mygtukai nerodomi
+* Po turiniu – naršymo mygtukai rodomi po SCORM paketo turiniu
+* Slankioji – naršymo mygtukai rodomi slankiojantys, o padėtis iš viršaus ir iš kairės nustatoma pagal paketą.';
+$string['navdesc'] = 'Šis nustatymas nurodo, ar rodyti ar slėpti naršymo mygtukus ir jų padėtį.';
+$string['navigation'] = 'Naršymas';
+$string['navpositionleft'] = 'Naršymo mygtukų padėtis iš kairės pikseliais.';
+$string['navpositiontop'] = 'Naršymo mygtukų padėtis iš viršaus pikseliais.';
+$string['networkdropped'] = 'SCORM grotuvas nustatė, kad jūsų interneto ryšys yra nepatikimas arba nutrūko. Jei tęsite šią SCORM veiklą, jūsų pažanga gali būti neišsaugota.<br />
+Turėtumėte baigti veiklą dabar ir grįžti, kai turėsite patikimą interneto ryšį.';
+$string['newattempt'] = 'Pradėti naują bandymą';
+$string['next'] = 'Tęsti';
+$string['no_attributes'] = 'Žymė {$a->tag} privalo turėti atributus';
+$string['no_children'] = 'Žymė {$a->tag} privalo turėti antrinį elementą';
+$string['noactivity'] = 'Nėra, apie ką pranešti';
+$string['noattemptsallowed'] = 'Leidžiamų bandymų skaičius';
+$string['noattemptsmade'] = 'Išnaudotų bandymų skaičius';
+$string['nolimit'] = 'Bandymų skaičius neribotas';
+$string['nomanifest'] = 'Neteisingas failų paketas - trūksta imsmanifest.xml ar AICC struktūros';
+$string['noprerequisites'] = 'Apgailestaujame, bet išpildyta nepakankamai būtinų sąlygų, kad galėtumėte pasiekti šį mokymosi objektą';
+$string['noreports'] = 'Nėra rodytinos ataskaitos';
+$string['normal'] = 'Įprasta';
+$string['noscriptnoscorm'] = 'Jūsų naršyklė nepalaiko „JavaScript“ arba „JavaScript“ palaikymas išjungtas. Šis SCORM paketas gali būti netinkamai atkuriamas arba neteisingai įrašomi duomenys.';
+$string['not_corr_type'] = 'Neatitinka žymės {$a->tag} tipas';
+$string['notattempted'] = 'Nebandyta';
+$string['notopenyet'] = 'Apgailestaujame, ši veikla negalima iki {$a}';
+$string['objectives'] = 'Tikslai';
+$string['openafterclose'] = 'Atidarymo data nurodyta po uždarymo datos';
+$string['optallstudents'] = 'visi naudotojai';
+$string['optattemptsonly'] = 'tik naudotojai, turintys bandymų';
+$string['options'] = 'Parinktys (draudžiamos kai kurių naršyklių)';
+$string['optionsadv'] = 'Nustatymai (Išplėstiniai)';
+$string['optionsadv_desc'] = 'Jei pažymėta, lango nustatymai bus nustatyti kaip išplėstiniai nustatymai formoje';
+$string['optnoattemptsonly'] = 'tik naudotojai, neturintys bandymų';
+$string['organization'] = 'Organizacija';
+$string['organizations'] = 'Organizacijos';
+$string['othersettings'] = 'Papildomi parametrai';
+$string['package'] = 'Paketo failas';
+$string['package_help'] = 'Paketo failas yra ZIP (arba PIF) failas, kuriame yra SCORM/AICC kursų apibrėžimo failai.';
+$string['packagedir'] = 'Failų sistemos klaida: nepavyksta sukurti paketo katalogo';
+$string['packagefile'] = 'Nenurodytas paketo failas';
+$string['packagehdr'] = 'Paketas';
+$string['packageurl'] = 'URL';
+$string['packageurl_help'] = 'Užuot pasirinkus failą naudojant failų parinkiklį, šis parametras leidžia nurodyti SCORM paketo URL.';
+$string['page-mod-scorm-x'] = 'Bet kuris SCORM modulio puslapis';
+$string['pagesize'] = 'Puslapio dydis';
+$string['passed'] = 'Pavyko';
+$string['php5'] = 'PHP 5 (DOMXML prigimtinė biblioteka)';
+$string['pluginadministration'] = 'SCORM/AICC administravimas';
+$string['pluginname'] = 'SCORM paketas';
+$string['popup'] = 'Naujas langas';
+$string['popuplaunched'] = 'Šis SCORM paketas buvo paleistas iššokančiajame lange. Jei baigėte peržiūrėti šį šaltinį, spustelėkite čia norėdami grįžti į kurso puslapį';
+$string['popupmenu'] = 'Iškrentančiame meniu';
+$string['popupopen'] = 'Atidaryti paketą naujame lange';
+$string['popupsblocked'] = 'Atrodo, kad blokuojami iššokantieji langai, todėl negalima atkurti šio SCORM modulio. Prieš vėl paleisdami patikrinkite naršyklės parametrus.';
+$string['position_error'] = 'Žymė {$a->tag} negali būti žymės {$a->parent} antrinis elementas';
+$string['preferencespage'] = 'Tik šio puslapio nuostatos';
+$string['preferencesuser'] = 'Šios ataskaitos nuostatos';
+$string['prev'] = 'Ankstesnis';
+$string['privacy:metadata:aicc:data'] = 'Asmens duomenys perduoti iš AICC/SCORM posistemio.';
+$string['privacy:metadata:aicc:externalpurpose'] = 'Šis papildinys siunčia duomenis iš išorės, naudodamas AICC HACP.';
+$string['privacy:metadata:aicc_session:lessonstatus'] = 'Pamokos būsena, kurią reikia stebėti';
+$string['privacy:metadata:aicc_session:scormmode'] = 'Stebėtino elemento režimas';
+$string['privacy:metadata:aicc_session:scormstatus'] = 'Stebėtino elemento būsena';
+$string['privacy:metadata:aicc_session:sessiontime'] = 'Sesijos laikas, kurį reikia stebėti';
+$string['privacy:metadata:aicc_session:timecreated'] = 'Laikas, kai buvo sukurtas sekamas elementas';
+$string['privacy:metadata:attempt'] = 'Bandymo numeris';
+$string['privacy:metadata:scoes_track:element'] = 'Stebimo elemento pavadinimas';
+$string['privacy:metadata:scoes_track:value'] = 'Pateikto elemento vertė';
+$string['privacy:metadata:scorm_aicc_session'] = 'AICC HACP sesijos informacija';
+$string['privacy:metadata:scorm_attempt'] = 'SCORM naudotojo atlikti bandymai';
+$string['privacy:metadata:timemodified'] = 'Laikas, kada stebimas elementas buvo paskutinį kartą modifikuotas';
+$string['privacy:metadata:userid'] = 'Naudotojo, kuris pasiekė SCORM veiklą, ID';
+$string['protectpackagedownloads'] = 'Apsaugoti paketų atsisiuntimus';
+$string['protectpackagedownloads_desc'] = 'Jei įjungta, SCORM paketus galima atsisiųsti tik tuo atveju, jei naudotojas turi course:manageactivities galimybę. Jei išjungta, SCORM paketus visada galima atsisiųsti (mobiliuoju ar kitomis priemonėmis).';
+$string['raw'] = 'Neapdorotas balas';
+$string['regular'] = 'Įprasta deklaracija';
+$string['report'] = 'Ataskaita';
+$string['reportcountallattempts'] = '{$a->nbusers} naudotojo (-ų) {$a->nbattempts} bandymas (-ų) iš {$a->nbresults} rezultatų';
+$string['reportcountattempts'] = 'Rezultatų: {$a->nbresults} (naudotojų: {$a->nbusers})';
+$string['reports'] = 'Ataskaitos';
+$string['repositorynotsupported'] = 'Ši saugykla nepalaiko tiesioginio susiejimo su imsmanifest.xml failu.';
+$string['response'] = 'Atsakymas';
+$string['result'] = 'Rezultatas';
+$string['results'] = 'Rezultatai';
+$string['review'] = 'Peržiūrėti';
+$string['reviewmode'] = 'Peržiūros režimas';
+$string['rightanswer'] = 'Teisingas atsakymas';
+$string['scoes'] = 'Mokymosi objektai';
+$string['score'] = 'Balas';
+$string['scorm:addinstance'] = 'Pridėti naują SCORM paketą';
+$string['scorm:deleteownresponses'] = 'Pašalinti savo bandymus';
+$string['scorm:deleteresponses'] = 'Naikinti SCORM bandymus';
+$string['scorm:savetrack'] = 'Įrašyti sekimus';
+$string['scorm:skipview'] = 'Praleisti apžvalgą';
+$string['scorm:viewreport'] = 'Peržiūrėti ataskaitas';
+$string['scorm:viewscores'] = 'Peržiūrėti balus';
+$string['scormclose'] = 'Galima iki';
+$string['scormcourse'] = 'Mokymosi kursas';
+$string['scormloggingoff'] = 'API prisijungimas išjungtas';
+$string['scormloggingon'] = 'API prisijungimas įjungtas';
+$string['scormopen'] = 'Galima nuo';
+$string['scormresponsedeleted'] = 'Panaikinti naudotojo bandymai';
+$string['scormstandard'] = 'SCORM standartų režimas';
+$string['scormstandarddesc'] = 'Kai išjungta, Moodle leidžia SCORM 1.2 paketams saugoti daugiau, nei leidžia specifikacijos, ir naudoja Moodle viso vardo formato nustatymus, kai perduoda naudotojo vardą SCORM paketui.';
+$string['scormtype'] = 'Tipas';
+$string['scormtype_help'] = 'Šis parametras nustato, kaip paketas įtraukiamas į kursus. Yra 4 parinktys: * Įkeliamas paketas – SCORM paketą galima pasirinkti naudojant failų parinkiklį * Išorinė SCORM deklaracija – galima nurodyti imsmanifest.xml URL. Pastaba: jei URL domeno pavadinimas kitoks nei jūsų svetainės, tada geriau rinktis parinktį Atsisiunčiamas paketas, nes kitaip nebus įrašyti įverčiai. * Atsisiunčiamas paketas – galima nurodyti paketo URL. Paketas bus išskleistas ir įrašytas vietiniame diske ir atnaujintas, kai bus atnaujintas išorinis SCORM paketas. * Vietinė IMS turinio saugykla – paketą galima pasirinkti IMS saugykloje';
+$string['scrollbars'] = 'Leisti slinkti lange';
+$string['search:activity'] = 'SCORM paketas - veiklos informacija';
+$string['selectall'] = 'Pasirinkti viską';
+$string['selectnone'] = 'Naikinti visų žymėjimą';
+$string['show'] = 'Rodyti';
+$string['sided'] = 'Prie krašto';
+$string['skipview'] = 'Besimokantysis praleidžia turinio struktūros puslapį';
+$string['skipview_help'] = 'Šis parametras nurodo, ar bus praleidžiamas (nerodomas) turinio struktūros puslapis. Jei pakete yra tik vienas mokymosi objektas, turinio struktūros puslapį visada galima praleisti.';
+$string['skipviewdesc'] = 'Ši nuostata nustato numatytąją reikšmę, ar praleisti puslapio turinio struktūrą';
+$string['slashargs'] = 'ĮSPĖJIMAS: šiame objekte yra išjungti pasvirojo brūkšnio argumentai, todėl objektai gali veikti ne taip, kaip numatyta!';
+$string['stagesize'] = 'Etapo dydis';
+$string['stagesize_help'] = 'Šie du parametrai nurodo mokymosi objekto rėmelio / lango plotį ir aukštį.';
+$string['started'] = 'Pradėta';
+$string['status'] = 'Būsena';
+$string['statusbar'] = 'Rodyti būsenos juostą';
+$string['student_response'] = 'Atsakymas';
+$string['subplugintype_scormreport'] = 'Ataskaita';
+$string['subplugintype_scormreport_plural'] = 'Ataskaitos';
+$string['suspended'] = 'Sulaikyta';
+$string['syntax'] = 'Sintaksės klaida';
+$string['tag_error'] = 'Nežinoma žymė ({$a->tag}) ir šis turinys: {$a->value}';
+$string['time'] = 'Laikas';
+$string['title'] = 'Pavadinimas';
+$string['toc'] = 'Turinys (Table Of Contents)';
+$string['too_many_attributes'] = 'Žymė {$a->tag} turi per daug atributų';
+$string['too_many_children'] = 'Žymė {$a->tag} turi per daug antrinių elementų';
+$string['toolbar'] = 'Rodyti įrankių juostą';
+$string['totaltime'] = 'Laikas';
+$string['trackcorrectcount'] = 'Teisingas skaičius';
+$string['trackcorrectcount_help'] = 'Teisingų rezultatų skaičius klausimui';
+$string['trackid'] = 'ID';
+$string['trackid_help'] = 'Tai yra šio klausimo SCORM paketo nustatytas identifikatorius. SCORM specifikacija neleidžia pateikti viso klausimo teksto.';
+$string['trackingloose'] = 'ĮSPĖJIMAS: šiame puslapyje esanti sekimo informacija bus prarasta!';
+$string['tracklatency'] = 'Vėlavimas';
+$string['tracklatency_help'] = 'Laiko praėjo tarp sąveikos, kuri buvo prieinama besimokančiojo atsakui ir laiko nuo pirmo atsako';
+$string['trackpattern'] = 'Raštas';
+$string['trackpattern_help'] = 'Tai būtų būtų teisingas atsakymas į šį klausimą, jis neparodo besimokančiųjų atsakymo.';
+$string['trackresponse'] = 'Atsakymas';
+$string['trackresponse_help'] = 'Tai yra atsakymas, padarytas besimokančiojo šiam klausimui';
+$string['trackresult'] = 'Rezultatas';
+$string['trackresult_help'] = 'Rezultatas pagal besimokančiojo atsaką ir <br /> teisingą atsakymą';
+$string['trackscoremax'] = 'Maksimalus balas';
+$string['trackscoremax_help'] = 'Didžiausia reikšmė diapazone grynam pažymiui';
+$string['trackscoremin'] = 'Minimalus balas';
+$string['trackscoremin_help'] = 'Mažiausia reikšmė diapazone grynam pažymiui';
+$string['trackscoreraw'] = 'Neapdorotas balas';
+$string['trackscoreraw_help'] = 'Skaičius, kuris atspindi besimokančiojo spartą priklausomai nuo diapazono, susieto su mažiausia ir didžiausia reikšme';
+$string['tracksuspenddata'] = 'Sustabdyti duomenis';
+$string['tracksuspenddata_help'] = 'Duoda vietos talpinti ir parsisiųsti duomenis <br /> tarp studentų sesijų';
+$string['tracktime'] = 'Laikas';
+$string['tracktime_help'] = 'Laikas kada bandymas buvo inicijuotas';
+$string['tracktype'] = 'Tipas';
+$string['tracktype_help'] = 'Klausimo tipas, pavyzdžiui "pasirinkimas" arba "trumpas atsakymas"';
+$string['trackweight'] = 'Svoris';
+$string['trackweight_help'] = 'Svoris priskirtas klausimo elementui';
+$string['type'] = 'Tipas';
+$string['typeaiccurl'] = 'Išorinis AICC URL';
+$string['typeexternal'] = 'Išorinė SCORM deklaracija';
+$string['typelocal'] = 'Įkeltas paketas';
+$string['typelocalsync'] = 'Atsisiųstas paketas';
+$string['undercontent'] = 'Po turiniu';
+$string['unziperror'] = 'Išskleidžiant paketą įvyko klaida';
+$string['updatefreq'] = 'Automatinio naujinimo dažnis';
+$string['updatefreq_error'] = 'Automatinio atnaujinimo dažnį galima nustatyti tik tada, kai paketo failas yra išorėje';
+$string['updatefreq_help'] = 'Tai leidžia išoriniams paketams būti automatiškai parsiųstiems ir atnaujintiems';
+$string['updatefreqdesc'] = 'Ši nuostata nustato veiklos numatytąjį automatinio naujinimo dažnį';
+$string['validateascorm'] = 'Tikrinti paketą';
+$string['validation'] = 'Tikrinimo rezultatas';
+$string['validationtype'] = 'Ši nuostata nustato DOMXML biblioteką, naudojamą SCORM deklaracijai tikrinti. Jei nežinote, ką nustatyti, palikite tai, kas pasirinkta.';
+$string['value'] = 'Reikšmė';
+$string['versionwarning'] = 'Deklaracijos versija senesnė 1.3, įspėjimas ties {$a->tag} žyme';
+$string['viewallreports'] = 'Peržiūrėti {$a} bandymų ataskaitas';
+$string['viewalluserreports'] = 'Peržiūrėti {$a} naudotojų ataskaitas';
+$string['whatgrade'] = 'Bandymų vertinimas';
+$string['whatgrade_help'] = 'Jei leidžiami keli bandymai, šis parametras nurodo, kuris bandymas įrašomas į įverčių knygutę – vidutinis (vidurkis), pirmas ar paskutinis. Kelių bandymų apdorojimas * Parinktis norint pradėti naują bandymą pateikiama kaip žymės langelis, esantis virš turinio struktūros puslapio mygtuko Įvesti, todėl, jei norite leisti kelis bandymus, įsitikinkite, kad suteikta prieiga prie šio puslapio. * Kai kurie SCORM paketai žino apie naujus badymus, bet dauguma jų to nežino. Tai reiškia, kad besimokančiajam pakartotinai įėjus į esamą bandymą, jei SCORM turinyje nėra vidinės logikos, neleidžiančios pakeisti ankstesnių bandymų, jie gali būti pakeisti, net jei bandymas buvo Užbaigtas arba Pavyko. * Be to, naudojant parametrus Priverstinai užbaigta, Priverstinis naujas bandymas ir Užrakinti po paskutinio bandymo galima toliau valdyti kelis bandymų.';
+$string['whatgradedesc'] = 'Ši nuostata nustato numatytąjį bandymų vertinimą';
+$string['width'] = 'Plotis';
+$string['window'] = 'Langas';
+$string['youmustselectastatus'] = 'Turite pasirinkti būseną, kurios reikalaujama';

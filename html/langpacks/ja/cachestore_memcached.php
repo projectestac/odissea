@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'ja', version '4.4'.
+ * Strings for component 'cachestore_memcached', language 'ja', version '4.5'.
  *
  * @package     cachestore_memcached
  * @category    string
@@ -46,7 +46,7 @@ $string['hash_hsieh'] = 'Hsieh';
 $string['hash_md5'] = 'MD5';
 $string['hash_murmur'] = 'Murmur';
 $string['isshared'] = '共有キャッシュ';
-$string['isshared_help'] = 'あなたのmemcachedサーバは他のアプリケーションによっても使用されますか?
+$string['isshared_help'] = 'あなたのmemcachedサーバは他のアプリケーションでも使用されますか?
 
 キャッシュが他のアプリケーションと共有されている場合、このアプリケーションにより所有されているデータのみ削除されるようそれぞれのキーは個別に削除されます (外部アプリケーションのキャッシュデータは変更されないままです)。あなたのサーバ設定によりますが結果としてキャッシュ削除時にパフォーマンスを低下させてしまいます。
 

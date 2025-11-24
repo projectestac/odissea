@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ar', version '4.4'.
+ * Strings for component 'calendar', language 'ar', version '4.5'.
  *
  * @package     calendar
  * @category    string
@@ -59,6 +59,7 @@ $string['courseevents'] = 'أحداث المساق';
 $string['courses'] = 'المقررات الدراسية';
 $string['customexport'] = 'نطاق مخصص ({$a->timestart} - {$a->timeend})';
 $string['daily'] = 'يومياً';
+$string['datepicker'] = 'منتقي التاريخ';
 $string['day'] = 'اليوم';
 $string['dayeventsmany'] = '{$a->num} من الأحداث، {$a->day}';
 $string['dayeventsnone'] = 'لا أحداث، {$a}';
@@ -71,7 +72,7 @@ $string['daywithnoevents'] = 'لا أحداث لهذا اليوم.';
 $string['default'] = 'الافتراضي';
 $string['deleteallevents'] = 'حذف كل الأحداث';
 $string['deleteevent'] = 'حذف الحدث';
-$string['deleteevents'] = 'حذف الأحداث';
+$string['deleteevents'] = 'الأحداث';
 $string['deleteoneevent'] = 'حذف هذا الحدث';
 $string['detailedmonthviewfor'] = 'معاينة شهرية مفصلة عن:';
 $string['detailedmonthviewtitle'] = 'معاينة شهرية مفصلة: {$a}';
@@ -188,7 +189,9 @@ $string['mon'] = 'اثن';
 $string['monday'] = 'الاثنين';
 $string['monthly'] = 'شهرياً';
 $string['monthnext'] = 'الشهر القادم';
+$string['monthnextwithname'] = 'الشهر القادم: {$a}';
 $string['monthprev'] = 'الشهر السابق';
+$string['monthprevwithname'] = 'الشهر السابق: {$a}';
 $string['monththis'] = 'هذا الشهر';
 $string['more'] = 'المزيد';
 $string['moreevents'] = '{$a} إضافية';
@@ -208,7 +211,7 @@ $string['pref_lookahead_help'] = 'يحدد هذا أقصى عدد من الأي�
 $string['pref_maxevents'] = 'الحد الاقصى للأحداث القادمة';
 $string['pref_maxevents_help'] = 'هذا الإعداد لضبط الحد الأقصى الذي يمكن عرضه من الأحداث القادمة. إذا اخترت رقماً كبيراً هنا من الممكن أن يأخذ عرض الأحداث القادمة مساحة كبيرة من شاشتك.';
 $string['pref_persistflt'] = 'تذكر إعدادات المرشح';
-$string['pref_persistflt_help'] = 'عن تفعيل هذا الخيار، سيتذكر مودل إعدادات مرشح الأحداث الأخيرة ويستعيدها تلقائياً عند كل تسجيل دخول.';
+$string['pref_persistflt_help'] = 'عند تمكينه، سيتم حفظ إعدادات مرشح الأحداث الأخيرة لك لتستعيده عند كل تسجيل دخولك القادم.';
 $string['pref_startwday'] = 'أول أيام الأسبوع';
 $string['pref_startwday_help'] = 'ستظهر الأسابيع في التقويم على أنها تبدأ باليوم الذي تختاره هنا.';
 $string['pref_timeformat'] = 'تنسيق عرض الوقت';

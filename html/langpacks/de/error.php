@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'de', version '4.4'.
+ * Strings for component 'error', language 'de', version '4.5'.
  *
  * @package     error
  * @category    string
@@ -36,6 +36,7 @@ $string['alreadyloggedin'] = 'Sie sind bereits als {$a} angemeldet. Sie müssen 
 $string['authnotexisting'] = 'Das Plugin zur Authorisierung existiert nicht.';
 $string['backupcontainexternal'] = 'Diese Sicherungsdatei enthält externe Netzwerkverbindungen (MNET), die lokal nicht konfiguriert sind.';
 $string['backuptablefail'] = 'Die Sicherungstabellen konnten nicht erstellt werden!';
+$string['blockcannotadd'] = 'Block kann nicht hinzugefügt werden.';
 $string['blockcannotconfig'] = 'Dieser Block erlaubt keine globale Konfiguration.';
 $string['blockcannotinistantiate'] = 'Fehler beim Anlegen des Blocks';
 $string['blockcannotread'] = 'Die Daten für die Block-ID {$a} konnten nicht gelesen werden.';
@@ -99,7 +100,7 @@ $string['cannotfindinfo'] = 'Informationen zu \'{$a}\' wurden nicht gefunden.';
 $string['cannotfindlang'] = 'Das Sprachpaket \'{$a}\' wurde nicht gefunden!';
 $string['cannotfindteacher'] = 'Trainer/in wurde nicht gefunden.';
 $string['cannotfinduser'] = 'Nutzerkonto \'{$a}\' wurde nicht gefunden:';
-$string['cannotgeoplugin'] = 'Die Verbindung zum geoPlugin-Server https://www.geoplugin.com konnte nicht hergestellt werden. Prüfen Sie die Proxyeinstellungen oder installieren Sie die Datei \'<a href="https://www.maxmind.com">MaxMind GeoLite City</a>\'.';
+$string['cannotgeoplugin'] = 'Es kann keine Verbindung zum GeoPlugin-Server unter https://www.geoplugin.com hergestellt werden. Überprüfen Sie Ihre Proxy-Einstellungen oder installieren Sie die MaxMind GeoIP-City-Datei.';
 $string['cannotgetblock'] = 'Die Blöcke wurden nicht aus der Datenbank abgerufen.';
 $string['cannotgetcats'] = 'Der Datensatzes für den Kursbereich konnte nicht abgerufen werden.';
 $string['cannotgetdata'] = 'Die Daten wurden nicht gefunden.';
@@ -156,7 +157,6 @@ $string['cannotsetupcapformod'] = 'Rechte für {$a} konnten nicht angelegt werde
 $string['cannotsetupcapforplugin'] = 'Rechte für {$a} konnten nicht angelegt werden.';
 $string['cannotshowhidecoursesincategory'] = 'Die Kurse in der Kategorie {$a} können nicht angezeigt / verborgen werden.';
 $string['cannotsignup'] = 'Sie können kein neues Nutzerkonto anlegen, weil Sie bereits als {$a} angemeldet sind.';
-$string['cannotswitcheditmodeon'] = 'Der Bearbeitungsmodus konnte nicht eingeschaltet werden.';
 $string['cannotunassigncap'] = 'Abgelehnte Berechtigung {$a->cap} für Rolle {$a->role} konnte nicht ausgetragen werden.';
 $string['cannotunassignrolefrom'] = 'Dieses Nutzerkonto konnte nicht aus der Rollenzuweisung gelöscht werden: {$a}';
 $string['cannotunzipfile'] = 'Die Datei kann nicht entpackt werden';
@@ -285,6 +285,8 @@ $string['filternotenabled'] = 'Filter nicht aktiviert!';
 $string['filternotinstalled'] = 'Der Filter {$a} ist momentan nicht installiert';
 $string['forumblockingtoomanyposts'] = 'Sie haben die Höchstzahl der zulässigen Beiträge für dieses Forum erreicht';
 $string['functionalityremoved'] = 'Sie versuchen, auf eine Funktion zuzugreifen, die entfernt wurde.';
+$string['gdfeaturenotsupported'] = 'Die GD-Erweiterung wurde nicht mit Funktionen für {$a} kompiliert';
+$string['gdmimetypenotsupported'] = 'Der MIME-Typ wird nicht unterstützt.';
 $string['generalexceptionmessage'] = 'Fehler: {$a}';
 $string['gradecantregrade'] = 'Fehler bei der Bewertungsberechnung: {$a}';
 $string['gradepubdisable'] = 'Das Veröffentlichen von Bewertungen ist deaktiviert';
@@ -350,6 +352,7 @@ $string['invalidelementid'] = 'Falsche Element-ID';
 $string['invalidentry'] = 'Dies ist kein gültiger EIntrag!';
 $string['invalidevent'] = 'Ungültiges Ereignis';
 $string['invalidfieldname'] = '"{$a}" ist ein ungültiger Feldname.';
+$string['invalidfile'] = 'Datei nicht gefunden';
 $string['invalidfiletype'] = '"{$a}" ist ein unzulässiger Dateityp.';
 $string['invalidformatpara'] = 'Falsches Format der Auswahlparameter';
 $string['invalidformdata'] = 'Falsche Formulardaten';
@@ -397,6 +400,7 @@ $string['invalidxmlfile'] = '"{$a}" ist eine ungültige XML-Datei.';
 $string['iplookupfailed'] = 'Die Geo-Informationen zu dieser IP-Adresse konnten nicht gefunden werden: {$a}';
 $string['iplookupprivate'] = 'Private IP-Adressen können nicht lokalisiert werden';
 $string['ipmismatch'] = 'IP-Adresse passt nicht';
+$string['itemnotfound'] = 'Es wurde kein {$a->itemtype} mit der ID \'{$a->identifier}\' gefunden.';
 $string['listcantmovedown'] = 'Fehler beim Verschieben des Elements nach unten, weil es bereits das letzte ist.';
 $string['listcantmoveleft'] = 'Fehler beim Verschieben des Elements nach links, denn es besitzt keine Vorgänger.';
 $string['listcantmoveright'] = 'Fehler beim Verschieben des Elements nach rechts, da es keinen Peer gibt, der es zu einem untergeordneten Element macht. Bewegen Sie es unter einen anderen Peer und dann können Sie es nach rechts verschieben.';
@@ -406,8 +410,8 @@ $string['listnoitem'] = 'Element konnte nicht gefunden werden';
 $string['listnopeers'] = 'Keine Gleichen (Peers) zum Element gefunden.';
 $string['listupdatefail'] = 'Datenbankfehler bei der Bearbeitung der Listenhierarchie';
 $string['logfilenotavailable'] = 'Keine Logdaten verfügbar';
-$string['loginasnoenrol'] = 'Das \'Einschreiben\' oder \'Abmelden\' für einen Kurs ist nicht möglich, wenn Sie als andere Person angemeldet sind.';
-$string['loginasonecourse'] = 'Sie können sich in diesen Kurs nicht eintragen.<br /> Beenden Sie zuerst die Funktion "Login als", um sich dann in den anderen Kurs einzutragen.';
+$string['loginasnoenrol'] = 'Sie können sich nicht für einen Kurs einschreiben oder abmelden, wenn Sie "Anmelden als" verwenden.';
+$string['loginasonecourse'] = 'Sie können diesen Kurs nicht betreten. Beenden Sie zuerst die Sitzung "Login als", bevor Sie einen anderen Kurs betreten.';
 $string['maxareabytes'] = 'Diese Datei ist größer als der in diesem Bereich verfügbare Platz.';
 $string['maxbytesfile'] = 'Die Datei {$a->file} ist zu groß. Die maximale Größe zum Hochladen ist {$a->size}.';
 $string['maxdraftitemids'] = 'Ihre Datei-Uploads sind vorübergehend eingeschränkt, nachdem Sie eine große Anzahl von Dateien hochgeladen haben. Versuchen Sie es bitte später nochmal.';
@@ -489,6 +493,7 @@ $string['nostartdatenoenddate'] = 'Ein Kursende kann nur festgelegt werden, wenn
 $string['nostatstodisplay'] = 'Es sind keine anzeigbaren Daten vorhanden.';
 $string['notallowedtoupdateprefremotely'] = 'Sie sind nicht berechtigt, die Nutzereinstellungen aus der Ferne zu aktualisieren.';
 $string['notavailable'] = 'Dies ist zur Zeit nicht verfügbar.';
+$string['notfound'] = 'Nicht gefunden';
 $string['notlocalisederrormessage'] = '{$a}';
 $string['notmemberofgroup'] = 'Sie sind nicht Mitglied dieser Gruppe im Kurs.';
 $string['notownerofkey'] = 'Sie sind nicht der Eigentümer dieses Schlüssels';
@@ -539,6 +544,7 @@ $string['reverseproxyabused'] = 'Der Reverse Proxy ist aktiviert, so dass Sie ni
 $string['rpcerror'] = 'Ihre MNET-Verbindung ist fehlgeschlagen! Bitte leiten Sie die Fehlermeldung an die Administrato/innen weiter: {$a}';
 $string['scheduledbackupsdisabled'] = 'Automatisch terminierte Backups wurden vom  Admin des Servers deaktiviert.';
 $string['secretalreadyused'] = 'Der Link zum Bestätigen der Kennwortänderung wurde bereits benutzt. Das Kennwort wurde nicht geändert.';
+$string['sectioncantbefound'] = '<p><strong>Dieser Inhalt wurde nicht gefunden.</strong></p><p>Möglicherweise wurde er gelöscht oder die URL ist  falsch.</p>';
 $string['sectionnotexist'] = 'Dieser Abschnitt existiert nicht';
 $string['sendmessage'] = 'Mitteilung senden';
 $string['sendmessagesent'] = 'Danke für Ihr Feedback zu: <br>{$a}';
@@ -555,6 +561,7 @@ $string['sessionexpired'] = 'Sitzung abgelaufen';
 $string['sessionhandlerproblem'] = 'Der Session-Handler ist falsch konfiguriert';
 $string['sessionipnomatch'] = 'Die IP-Adresse scheint sich seit Ihrem letzten Login geändert zu haben. Dieses Sicherheitsfeature schützt Sie vor dem Diebstahl Ihrer Identität durch Hacker, während Sie auf der Seite arbeiten. Normale Nutzer sollten diese Mitteilung nicht sehen - bitten Sie die Administrator/innen um Hilfe.';
 $string['sessionipnomatch2'] = '<p>Ihre IP-Adresse hat sich geändert, seit Sie sich eingeloggt haben. Diese Sicherheitsoption schützt davor, dass Ihre Identität gestohlen werden kann, während Sie eingeloggt sind. Sie könnten diese Fehlermeldung auch erhalten, wenn Sie ein Funknetzwerk benutzen oder zwischen unterschiedlichen Netzwerken pendeln (roaming). Bitte fragen Sie für weitere Hilfe die Administrator/innen Ihrer Website. </p><p>Falls Sie weitermachen möchten, aktualisieren Sie bitte die Seite (F5-Taste).</p>';
+$string['sessionstarterror'] = 'Sitzung konnte nicht gestartet werden. Versuchen Sie es später nochmal.';
 $string['sessionwaiterr'] = 'Zeitüberschreitung beim Warten auf exklusiven Session-Zugriff.<br />Bitte warten Sie, bis Ihre laufenden Anfragen abgeschlossen sind, und versuchen Sie es anschließend nochmal.';
 $string['shortnametaken'] = 'Kurzbezeichnung wird für anderen Kurs genutzt  ({$a})';
 $string['sitepolicynotagreed'] = 'Datenschutzinformation nicht bestätigt. <a href="{$a}">Klicken Sie hier, um die Datenschutzinformation zu öffnen</a>.';

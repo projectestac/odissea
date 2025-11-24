@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customfield', language 'ja', version '4.4'.
+ * Strings for component 'customfield', language 'ja', version '4.5'.
  *
  * @package     customfield
  * @category    string
@@ -40,10 +40,13 @@ $string['customfield'] = 'カスタムフィールド';
 $string['customfielddata'] = 'カスタムフィールドデータ';
 $string['customfields'] = 'カスタムフィールド';
 $string['defaultvalue'] = 'デフォルト値';
+$string['deletecategory'] = 'カスタムフィールドカテゴリを削除する: {$a}';
+$string['deletefield'] = 'カスタムフィールドを削除する: {$a}';
 $string['description'] = '説明';
 $string['description_help'] = '説明はフィールドの下のフォームに表示されます。';
 $string['edit'] = '編集';
 $string['editcategoryname'] = 'カテゴリ名を編集する';
+$string['editfield'] = 'カスタムフィールドを編集する: {$a}';
 $string['editingfield'] = '{$a} を更新する';
 $string['errorfieldtypenotfound'] = 'フィールドタイプ {$a} が見つかりませんでした。';
 $string['erroruniquevalues'] = 'この値はすでに使用されています。';

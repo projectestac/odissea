@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'license', language 'ja', version '4.4'.
+ * Strings for component 'license', language 'ja', version '4.5'.
  *
  * @package     license
  * @category    string
@@ -41,6 +41,6 @@ $string['cc-nd-4.0'] = 'クリエイティブ・コモンズ - 表示-改変禁�
 $string['cc-sa'] = 'クリエイティブ・コモンズ - 表示-継承 3.0 国際';
 $string['cc-sa-4.0'] = 'クリエイティブ・コモンズ - 表示-継承 4.0 国際';
 $string['licensenotfoundshortname'] = '省略名「 {$a} 」のライセンスが見つかりません。';
-$string['missinglicensesortorder'] = '1つまたはそれ以上のインストール済みライセンスが新しい並べ替え順で見つからないため、ライセンス並べ替え順を設定できません。';
+$string['missinglicensesortorder'] = '1つまたはそれ以上のインストール済みライセンスが新しい並べ替え順で不足しているため、ライセンス並べ替え順を設定できません。';
 $string['public'] = 'パブリックドメイン';
 $string['unknown'] = 'ライセンス未指定';

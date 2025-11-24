@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_todo', language 'ja', version '4.4'.
+ * Strings for component 'block_todo', language 'ja', version '4.5'.
  *
  * @package     block_todo
  * @category    string
@@ -26,7 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['placeholder'] = '何をする必要がありますか?';
-$string['placeholdermore'] = 'ここに何かを入力して「追加」ボタンを押してください。';
 $string['pluginname'] = 'マイToDoリスト';
 $string['privacy:metadata:db:blocktodo'] = 'ユーザToDoアイテムの保存';
 $string['privacy:metadata:db:blocktodo:done'] = 'アイテムの完了マークの有無';

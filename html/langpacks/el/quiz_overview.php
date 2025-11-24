@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'el', version '4.4'.
+ * Strings for component 'quiz_overview', language 'el', version '4.5'.
  *
  * @package     quiz_overview
  * @category    string
@@ -60,6 +60,8 @@ $string['privacy:metadata:preference:quiz_overview_slotmarks'] = 'Να εμφα�
 $string['privacy:preference:slotmarks:no'] = 'Οι βαθμοί δεν εμφανίζονται δίπλα στην υποδοχή ερώτησης.';
 $string['privacy:preference:slotmarks:yes'] = 'Οι βαθμοί εμφανίζονται δίπλα στην υποδοχή ερώτησης.';
 $string['regrade'] = 'Επαναβαθμολόγηση';
+$string['regrade_allattempts'] = 'Όλες οι προσπάθειες';
+$string['regrade_allquestions'] = 'Όλες οι ερωτήσεις';
 $string['regradeall'] = 'Επαναβαθμολόγηση όλων';
 $string['regradealldry'] = 'Γενική δοκιμή μιας πλήρους επαναβαθμολόγησης';
 $string['regradealldrydo'] = 'Επαναβαθμολόγηση προσπαθειών που είναι επισημασμένες ότι χρήζουν επαναβαθμολόγησης ({$a})';

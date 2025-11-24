@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ko', version '4.4'.
+ * Strings for component 'forum', language 'ko', version '4.5'.
  *
  * @package     forum
  * @category    string
@@ -363,9 +363,6 @@ $string['postincontext'] = '문맥에서 이 글 보기';
 $string['postisprivatereply'] = '비공개 답변입니다. 다른 참여자에게는 보이지 않습니다.';
 $string['postmailinfo'] = '{$a} 웹사이트에 게시된 글의 사본입니다.';
 $string['postmailnow'] = '<p>모든 포럼 사용자들에게 이 게시물이 즉시 발송될 것입니다.</p>';
-$string['postrating1'] = '대부분 분리된 배움';
-$string['postrating2'] = '분리와 연결';
-$string['postrating3'] = '연대형 학습';
 $string['posts'] = '게시물';
 $string['postsmadebyuser'] = '{$a}가 올린 글';
 $string['postsmadebyuserincourse'] = '{$a->coursename}에서 {$a->fullname} 가 한 글';

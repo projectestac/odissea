@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_paypal', language 'es', version '4.4'.
+ * Strings for component 'availability_paypal', language 'es', version '4.5'.
  *
  * @package     availability_paypal
  * @category    string

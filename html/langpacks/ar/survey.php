@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ar', version '4.4'.
+ * Strings for component 'survey', language 'ar', version '4.5'.
  *
  * @package     survey
  * @category    string
@@ -191,8 +191,8 @@ $string['collespname'] = 'COLLES (الفعلي)';
 $string['completiondetail:submit'] = 'تسليم الإجابات';
 $string['completionsubmit'] = 'القيام بالتسليم';
 $string['customintro'] = 'الوصف';
-$string['deleteallanswers'] = 'حذف كل إجابات الاستبيان';
-$string['deleteanalysis'] = 'أحذف تحليل الإجابات';
+$string['deleteallanswers'] = 'كل إجابات الاستبيان';
+$string['deleteanalysis'] = 'تحليل الإجابات';
 $string['done'] = 'تم';
 $string['download'] = 'تنزيل';
 $string['downloadexcel'] = 'تنزيل البيانات بشكل جدول Excel';

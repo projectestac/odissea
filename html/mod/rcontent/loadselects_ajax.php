@@ -9,13 +9,13 @@ header('Content-type: application/json');
 
 // Check access.
 if (!isloggedin()) {
-    print_error('mustbeloggedin');
+    throw new moodle_exception('mustbeloggedin');
 }
 if (isguestuser()) {
-    print_error('noguestrate', 'forum');
+    throw new moodle_exception('noguestrate', 'forum');
 }
 if (!confirm_sesskey()) {
-    print_error('invalidsesskey');
+    throw new moodle_exception('sesskeyinvalid');
 }
 
 // Check required params

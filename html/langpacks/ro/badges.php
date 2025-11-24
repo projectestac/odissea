@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'ro', version '4.4'.
+ * Strings for component 'badges', language 'ro', version '4.5'.
  *
  * @package     badges
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actions'] = 'Acțiuni';
 $string['activate'] = 'Permite accesul';
-$string['activatesuccess'] = 'Accesul la ecusoane a fost permis cu succes.';
+$string['activatesuccess'] = 'Accesul la ecusonul \'{$a}\' activat.';
 $string['addalignment'] = 'Adăugați abilități externe sau standard';
 $string['addbadge'] = 'Adaugă ecusoane';
 $string['addbadge_help'] = 'Selectează toate ecusoanele care trebuie adăugate acestei cerințe. Țineți apăsată tasta CTRL pentru a selecta mai multe elemente.';
@@ -81,7 +81,7 @@ $string['attachment_help'] = 'Dacă este activat, fișierul ecusonului emis va f
 $string['award'] = 'Acordă ecusonul';
 $string['awardedto'] = 'Acordat lui {$a}';
 $string['awardedtoyou'] = 'Emis mie';
-$string['awardoncron'] = 'Accesul la ecusoane a fost activat cu succes. Prea mulți utilizatori pot câștiga imediat acest ecuson. Pentru a asigura performanța site-ului, procesarea acestei acțiuni va dura ceva timp.';
+$string['awardoncron'] = 'Un număr mare de utilizatori sunt recompensați cu ecusonul „{$a->badgename}”. Poate dura ceva timp până când toți utilizatorii primesc ecusonul.';
 $string['awards'] = 'Destinatari';
 $string['backpackapiurl'] = 'Adresa URL a rucsacului de insigne';
 $string['backpackavailability'] = 'Verificarea ecusonului extern';
@@ -195,7 +195,7 @@ $string['configuremessage'] = 'Mesaj ecuson';
 $string['connect'] = 'Conectați-vă';
 $string['connected'] = 'Conectat';
 $string['connecting'] = 'În curs de conectare...';
-$string['contact'] = 'Contactați';
+$string['contact'] = 'Contactați emitentul';
 $string['contact_help'] = 'O adresă de e-mail asociată cu emitentul ecusonului.';
 $string['copy'] = 'Copiere';
 $string['copyof'] = 'Copia {$a}';
@@ -276,7 +276,7 @@ $string['dateawarded'] = 'Data emiterii';
 $string['dateearned'] = 'Dată: {$a}';
 $string['day'] = 'Ziua(zilele)';
 $string['deactivate'] = 'Dezactivează acces';
-$string['deactivatesuccess'] = 'Accesul la ecusoane a fost dezactivat cu succes.';
+$string['deactivatesuccess'] = 'Accesul la ecusonul \'{$a}\' dezactivat.';
 $string['defaultissuercontact'] = 'Detalii contact emitent implicit al ecusonului';
 $string['defaultissuercontact_desc'] = 'O adresă de e-mail asociată cu emitentul ecusonului.';
 $string['defaultissuername'] = 'Numele emitentului implicit al ecusonului';
@@ -328,7 +328,7 @@ $string['error:nosuchfield'] = 'Avertisment: Acest câmp de profil al utilizator
 $string['error:nosuchmod'] = 'Avertisment: Această activitate nu mai este disponibilă.';
 $string['error:nosuchrole'] = 'Avertisment: Această poziție nu mai este disponibilă.';
 $string['error:nosuchuser'] = 'Utilizatorul acestei adrese de e-mail nu are un cont cu furnizorul curent de backpack.';
-$string['error:notifycoursedate'] = 'Avertisment: Ecusoanele asociate cursului și finalizării activității nu vor fi emise până la data de începere a cursului.';
+$string['error:notifycoursedate'] = 'Ecusoanele asociate cursului și finalizării activității nu vor fi emise până la data de începere a cursului.';
 $string['error:parameter'] = 'Avertisment: Trebuie selectat cel puțin un parametru pentru a asigura fluxul corect al emiterii ecusonului.';
 $string['error:relatedbadgedoesntexist'] = 'Fără nicio insignă publică cu acest identificator';
 $string['error:requesterror'] = 'Solicitarea de conectare a eșuat (eroare cod {$a}).';
@@ -427,6 +427,8 @@ $string['namewithlink'] = 'Denumire cu link';
 $string['never'] = 'Niciodată';
 $string['newbackpack'] = 'Adăugați un rucsac nou';
 $string['newbadge'] = 'Adaugă un nou ecuson';
+$string['newbadgedeprecated'] = 'Ați fost redirecționat de la badges/newbadge.php. Vă rugăm să rețineți că ecusoanele/newbadge.php vor fi eliminate în viitorul apropiat.
+<br/>Actualizați link-urile și semnele de carte pentru a utiliza pagina curentă badges/edit.php.';
 $string['newimage'] = 'Imagine nouă';
 $string['noalignment'] = 'Această insignă nu are competențe sau standarde externe specificate.';
 $string['noawards'] = 'Acest ecuson nu a fost câștigat încă.';
@@ -468,8 +470,8 @@ $string['notifydaily'] = 'Zilnic';
 $string['notifyevery'] = 'De fiecare dată';
 $string['notifymonthly'] = 'Lunar';
 $string['notifyweekly'] = 'Săptămânal';
-$string['numawards'] = 'Acest ecuson poate fi emis <a href="{$a->link}">{$a->count}</a> utilizatorilor.';
-$string['numawardstat'] = 'Acest ecuson a fost emis {$a} utilizatorilor.';
+$string['numawards'] = 'Utilizatori care au primit ecuson \'{$a->badgename}\': <a href="{$a->link}">{$a->count}</a>.';
+$string['numawardstat'] = 'Utilizatorii care au primit ecusonul \'{$a->badgename}\': {$a->awards}.';
 $string['oauth2issuer'] = 'Servicii OAuth 2';
 $string['openbadgesv1'] = 'Open Badges v1.0';
 $string['openbadgesv2'] = 'Open Badges v2.0';

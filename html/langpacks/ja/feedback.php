@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ja', version '4.4'.
+ * Strings for component 'feedback', language 'ja', version '4.5'.
  *
  * @package     feedback
  * @category    string
@@ -251,13 +251,15 @@ $string['privacy:metadata:valuetmp'] = '進行中のサブシステムの質問�
 $string['public'] = '公開';
 $string['question'] = '質問';
 $string['questionandsubmission'] = '質問および回答設定';
+$string['questionmoved'] = '質問が移動されました。';
 $string['questions'] = '質問';
 $string['questionslimited'] = '最初の {$a} 問の問題のみ表示しています。個別の回答またはすべてを確認するにはテーブルデータをダウンロードしてください。';
 $string['radio'] = '多肢選択 - 単一回答';
 $string['radio_values'] = '回答';
 $string['ready_feedbacks'] = '準備済みフィードバック';
 $string['required'] = '必須';
-$string['resetting_data'] = 'フィードバック回答をリセットする';
+$string['resetting_data'] = '回答';
+$string['resetting_delete'] = '回答を削除する';
 $string['resetting_feedbacks'] = 'フィードバックのリセット';
 $string['response_nr'] = '回答No';
 $string['responses'] = '回答';

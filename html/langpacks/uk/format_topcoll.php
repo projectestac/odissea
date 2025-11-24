@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'uk', version '4.4'.
+ * Strings for component 'format_topcoll', language 'uk', version '4.5'.
  *
  * @package     format_topcoll
  * @category    string
@@ -33,7 +33,6 @@ $string['editsection'] = 'Редагувати секцію';
 $string['hidefromothers'] = 'Сховати секцію';
 $string['instructions'] = 'Інструкції: клацання на назві розділу покаже / приховає розділ';
 $string['newsection'] = 'Новий розділ';
-$string['numbersections'] = 'Кількість секцій';
 $string['pluginname'] = 'Згорнуті теми';
 $string['sctcloseall'] = 'Закрити все {$a}';
 $string['sctopenall'] = 'Відкрити все {$a}';

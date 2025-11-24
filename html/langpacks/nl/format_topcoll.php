@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'nl', version '4.4'.
+ * Strings for component 'format_topcoll', language 'nl', version '4.5'.
  *
  * @package     format_topcoll
  * @category    string
@@ -45,7 +45,6 @@ $string['maincoursepage'] = 'Hoofd cursuspagina';
 $string['markedthissection'] = 'Deze sectie is gemarkeerd als huidige sectie';
 $string['markthissection'] = 'Deze sectie is gemarkeerd als huidige sectie';
 $string['medium'] = 'Gemiddeld';
-$string['numbersections'] = 'Aantal secties';
 $string['off'] = 'Uit';
 $string['on'] = 'Aan';
 $string['pluginname'] = 'Ingeklapte onderwerpen';

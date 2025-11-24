@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'pt', version '4.4'.
+ * Strings for component 'message', language 'pt', version '4.5'.
  *
  * @package     message
  * @category    string
@@ -69,6 +69,7 @@ $string['disallowed'] = 'Bloqueado';
 $string['editmessages'] = 'Editar mensagens';
 $string['emailtagline'] = 'Este e-mail é uma cópia de uma mensagem enviada para si no site "{$a->sitename}". Aceda a <a href="{$a->url}">{$a->url}</a> para responder.';
 $string['enabled'] = 'Ativado';
+$string['enablenotificationplugin'] = 'Ativar módulo de notificação: {$a}';
 $string['errorcallingprocessor'] = 'Erro ao chamar método de envio definido';
 $string['errorconversationdoesnotexist'] = 'Conversação não existe';
 $string['errormessagetoolong'] = 'A mensagem é mais longa do que o máximo permitido.';
@@ -139,6 +140,7 @@ $string['notificationdatahasnotbeenmigrated'] = 'As suas notificações estão t
 $string['notificationimage'] = 'Imagem da notificação';
 $string['notificationpreferences'] = 'Preferências das notificações';
 $string['notifications'] = 'Notificações';
+$string['notificationsmarkedasread'] = 'Todas as notificações estão marcadas como lidas.';
 $string['notificationwindow'] = 'Janela da notificação';
 $string['notincontacts'] = 'Tem de adicionar {$a} aos seus contactos para poder enviar mensagens.';
 $string['notincontactsheading'] = '{$a} não pertence aos seus contactos';
@@ -153,6 +155,7 @@ $string['page-message-x'] = 'Qualquer página de mensagens';
 $string['participants'] = 'Participantes';
 $string['pendingcontactrequests'] = 'Tem {$a} solicitações de contacto pendentes';
 $string['permitted'] = 'Permitido';
+$string['preference'] = 'Preferência';
 $string['privacy'] = 'Privacidade';
 $string['privacy:export:conversationprefix'] = 'Conversação:';
 $string['privacy:metadata:core_favourites'] = 'As conversas marcadas com uma estrela pelo utilizador';

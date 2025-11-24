@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ar', version '4.4'.
+ * Strings for component 'lesson', language 'ar', version '4.5'.
  *
  * @package     lesson
  * @category    string
@@ -152,7 +152,7 @@ $string['customscoring'] = 'درجة مخصصة';
 $string['customscoring_help'] = 'عند تمكينه، سيكون بالإمكان إدخال درجة رقمية مستقلة لكل إجابة (موجبة أو سالبة).';
 $string['deadline'] = 'الموعد النهائي';
 $string['defaultessayresponse'] = 'سيتم تقييم مقالتك من قبل المعلم';
-$string['deleteallattempts'] = 'حذف كل محاولات الدرس';
+$string['deleteallattempts'] = 'كل محاولات الدرس';
 $string['deletedefaults'] = 'تم حذف {$a} إفتراضي الدرس';
 $string['deletedpage'] = 'حذف صفحة';
 $string['deletepagenamed'] = 'إحذف الصفحة: {$a}';
@@ -518,8 +518,8 @@ $string['rank'] = 'مستوى';
 $string['rawgrade'] = 'الدرجة الخام';
 $string['receivedcredit'] = 'الدرجة المتلقاة';
 $string['redisplaypage'] = 'إعادة عرض الصفحة';
-$string['removeallgroupoverrides'] = 'حذف كل تجاوزات المجموعة';
-$string['removealluseroverrides'] = 'حذف كل تجاوزات المستخدم';
+$string['removeallgroupoverrides'] = 'كل تجاوزات المجموعة';
+$string['removealluseroverrides'] = 'كل تجاوزات المستخدم';
 $string['report'] = 'تقرير';
 $string['reports'] = 'التقارير';
 $string['response'] = 'إجابة';

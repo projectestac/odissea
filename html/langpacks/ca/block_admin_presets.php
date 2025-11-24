@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_admin_presets', language 'ca', version '4.4'.
+ * Strings for component 'block_admin_presets', language 'ca', version '4.5'.
  *
  * @package     block_admin_presets
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['author'] = 'Autor/a';
+$string['author'] = 'Autor o autora';
 $string['novalidsettings'] = 'La configuració no vàlida';
 $string['novalidsettingsselected'] = 'No s\'han seleccionat paràmetres vàlids';
 $string['preview'] = 'previsualització';

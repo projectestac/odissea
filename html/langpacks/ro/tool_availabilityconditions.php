@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_availabilityconditions', language 'ro', version '4.4'.
+ * Strings for component 'tool_availabilityconditions', language 'ro', version '4.5'.
  *
  * @package     tool_availabilityconditions
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['defaultdisplaymode'] = 'Mod de afișare implicit';
 $string['manageplugins'] = 'Gestionați restricțiile';
 $string['pluginname'] = 'Managementul condiției de disponibilitate';
 $string['privacy:metadata'] = 'Pluginul de gestionare a condițiilor de disponibilitate nu stochează date personale.';

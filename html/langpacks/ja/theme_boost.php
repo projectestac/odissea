@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'ja', version '4.4'.
+ * Strings for component 'theme_boost', language 'ja', version '4.5'.
  *
  * @package     theme_boost
  * @category    string
@@ -34,7 +34,6 @@ $string['brandcolor'] = 'ブランド色';
 $string['brandcolor_desc'] = '強調色です。';
 $string['choosereadme'] = 'Boostは高度にカスタマイズ可能な最新のテーマです。このテーマは直接またはBoostrap 4を使用した新しいテーマ作成時の親テーマとしての使用を目的としています。';
 $string['configtitle'] = 'Boost';
-$string['currentinparentheses'] = '(現在)';
 $string['generalsettings'] = '一般設定';
 $string['loginbackgroundimage'] = 'ログインページ背景イメージ';
 $string['loginbackgroundimage_desc'] = 'ログインページの背景として表示するイメージです。';
@@ -48,8 +47,6 @@ $string['privacy:drawerblockclosed'] = 'ブロックドロワの現在のプレ�
 $string['privacy:drawerblockopen'] = 'ブロックドロワの現在のプレファレンスはオープンです。';
 $string['privacy:drawerindexclosed'] = 'インデックスドロワの現在のプレファレンスはクローズです。';
 $string['privacy:drawerindexopen'] = 'インデックスドロワの現在のプレファレンスはオープンです。';
-$string['privacy:drawernavclosed'] = '現在のナビゲーションドロワのプレファレンスはクローズです。';
-$string['privacy:drawernavopen'] = '現在のナビゲーションドロワのプレファレンスはオープンです。';
 $string['privacy:metadata'] = 'Boostテーマはすべてのユーザに関していかなる個人データも保存しません。';
 $string['privacy:metadata:preference:draweropenblock'] = 'ブロックドロワの表示または秘匿に関するユーザプレファレンスです。';
 $string['privacy:metadata:preference:draweropenindex'] = 'コースインデックスドロワの表示または秘匿に関するユーザプレファレンスです。';

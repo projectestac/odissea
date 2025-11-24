@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'es', version '4.4'.
+ * Strings for component 'feedback', language 'es', version '4.5'.
  *
  * @package     feedback
  * @category    string
@@ -242,13 +242,15 @@ $string['privacy:metadata:valuetmp'] = 'Un registro de la respuesta a una pregun
 $string['public'] = 'Pública';
 $string['question'] = 'Pregunta';
 $string['questionandsubmission'] = 'Ajustes de pregunta y envío';
+$string['questionmoved'] = 'Pregunta movida';
 $string['questions'] = 'Preguntas';
 $string['questionslimited'] = 'Mostrando solo las {$a} primeras preguntas, ver las respuestas de forma individual o descargar una tabla con la información para ver todas.';
 $string['radio'] = 'Opción múltiple (una respuesta)';
 $string['radio_values'] = 'Valores de los botones de opción';
 $string['ready_feedbacks'] = 'Encuestas preparadas';
 $string['required'] = 'Obligatorio';
-$string['resetting_data'] = 'Reiniciar respuestas a la encuesta';
+$string['resetting_data'] = 'Respuestas';
+$string['resetting_delete'] = 'Borrar respuestas';
 $string['resetting_feedbacks'] = 'Reiniciando encuestas';
 $string['response_nr'] = 'Respuesta número';
 $string['responses'] = 'Respuestas';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_embedquestion', language 'pt', version '4.4'.
+ * Strings for component 'filter_embedquestion', language 'pt', version '4.5'.
  *
  * @package     filter_embedquestion
  * @category    string
@@ -45,7 +45,14 @@ $string['filtername'] = 'Incorporar perguntas';
 $string['generalfeedback_desc'] = 'Se por predefinição, deve ser mostrado, ou não, o feedback geral em perguntas incorporadas.';
 $string['howquestionbehaves'] = 'Comportamento da pergunta';
 $string['howquestionbehaves_desc'] = 'O comportamento predefinido a usar nas perguntas incorporadas.';
+$string['iframedescription'] = 'Descrição do iframe';
+$string['iframedescription_help'] = 'Esta descrição ajuda os utilizadores de leitores de ecrã a navegar melhor pela página se incorporar várias perguntas na mesma página.
+A acessibilidade será melhorada se descrever sucintamente cada pergunta incorporada para a tornar única. Tenha em atenção que o sistema descreverá automaticamente como "Pergunta incorporada [[n]]", cujo número exato é calculado pelo sistema.
+Pode fornecer uma descrição em texto adicional, mas utilize um máximo de 100 caracteres.';
+$string['iframedescriptionmaxlengthwarning'] = 'Por favor, encurte a descrição para um máximo de 100 caracteres.';
+$string['iframedescriptionminlengthwarning'] = 'A descrição deve ter pelo menos três caracteres.';
 $string['iframetitle'] = 'Pergunta incorporada';
+$string['iframetitleauto'] = 'Pergunta incorporada {$a}';
 $string['invalidcategory'] = 'A categoria com o ID "{$a->catid}" não existe em "{$a->contextname}".';
 $string['invalidemptycategory'] = 'A categoria "{$a->catname}" em "{$a->contextname}" não contém perguntas incorporáveis.';
 $string['invalidquestion'] = 'A pergunta com ID "{$a->qid}" não existe na categoria "{$a->catname}" [{$a->catidnumber}]".';
@@ -60,7 +67,9 @@ $string['nameidnumberandcount'] = '{$a->name} [{$a->idnumber}] ({$a->count})';
 $string['noguests'] = 'Os visitantes não têm permissão para interagir com perguntas incorporadas.';
 $string['notyourattempt'] = 'Esta não é sua a tentativa.';
 $string['pluginname'] = 'Incorporar perguntas';
+$string['previousattempts'] = 'Tentativas anteriores';
 $string['privacy:metadata'] = 'O filtro Incorporar perguntas não armazena quaisquer dados pessoais.';
+$string['questionbank'] = 'Base de dados de perguntas';
 $string['questionidnumber'] = 'ID da pergunta';
 $string['questionidnumberchanged'] = 'A pergunta que está a ser respondida aqui já não tem o ID \'{$a}\'.';
 $string['questionnolongerhasidnumber'] = 'A pergunta que está a ser respondida aqui já não tem ID.';

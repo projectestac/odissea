@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'ar', version '4.4'.
+ * Strings for component 'plugin', language 'ar', version '4.5'.
  *
  * @package     plugin
  * @category    string
@@ -53,6 +53,8 @@ $string['err_response_format_version'] = 'إصدار غير متوقع لشكل 
 $string['err_response_http_code'] = 'يتعذر جلب بيانات التحديثات المتاحة - رمز استجابة HTTP غير متوقع.';
 $string['filterall'] = 'إظهار الكل';
 $string['filtercontribonly'] = 'إظهار الإضافات الإضافية فقط';
+$string['filtermissingonly'] = 'إظهار ما هو مفقود من القرص فقط';
+$string['filternewpluginsonly'] = 'إظهار الملاحق المراد تنصيبها فقط';
 $string['filterupdatesonly'] = 'إظهار القابل للتحديث فقط';
 $string['incompatibleversion'] = 'إصدار مودل غير متوافق: {$a}';
 $string['isenabled'] = 'مفعّل؟';
@@ -110,6 +112,10 @@ $string['status_uptodate'] = 'منصب';
 $string['supportedconversions'] = 'تحويلات المستندات المدعومة';
 $string['supportedmoodleversions'] = 'إصدارات مودل المدعومة';
 $string['systemname'] = 'محدث';
+$string['type_aiplacement'] = 'ملحق وضع الذكاء الاصطناعي';
+$string['type_aiplacement_plural'] = 'ملاحق وضع الذكاء الاصطناعي';
+$string['type_aiprovider'] = 'ملحق مزود الذكاء الاصطناعي';
+$string['type_aiprovider_plural'] = 'ملاحق مزود الذكاء الاصطناعي';
 $string['type_antivirus'] = 'ملحق مضاد الفيروسات';
 $string['type_antivirus_plural'] = 'إضافات مضادات الفيروسات';
 $string['type_auth'] = 'طريقة المصادقة';
@@ -192,6 +198,8 @@ $string['type_repository'] = 'مستودع';
 $string['type_repository_plural'] = 'مستودعات';
 $string['type_search'] = 'محرك بحث';
 $string['type_search_plural'] = 'محركات بحث';
+$string['type_smsgateway'] = 'بوابة الرسالة القصيرة';
+$string['type_smsgateway_plural'] = 'بوابات الرسائل القصيرة';
 $string['type_theme'] = 'القالب';
 $string['type_theme_plural'] = 'القوالب';
 $string['type_tool'] = 'أداة الإدارة';

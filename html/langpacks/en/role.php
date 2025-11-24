@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'en', version '4.4'.
+ * Strings for component 'role', language 'en', version '4.5'.
  *
  * @package     role
  * @category    string
@@ -28,6 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['addinganewrole'] = 'Adding a new role';
 $string['addrole'] = 'Add a new role';
 $string['advancedoverride'] = 'Advanced role override';
+$string['ai:acceptpolicy'] = 'Accept AI policy';
+$string['ai:fetchanyuserpolicystatus'] = 'Get a users AI policy acceptance';
+$string['ai:fetchpolicy'] = 'Get a users AI policy acceptance';
 $string['allow'] = 'Allow';
 $string['allowassign'] = 'Allow role assignments';
 $string['allowed'] = 'Allowed';
@@ -163,6 +166,8 @@ $string['confirmunassignno'] = 'Cancel';
 $string['confirmunassigntitle'] = 'Confirm role change';
 $string['confirmunassignyes'] = 'Remove';
 $string['contentbank:access'] = 'Access the content bank';
+$string['contentbank:changelockedcustomfields'] = 'Change content bank locked custom fields';
+$string['contentbank:configurecustomfields'] = 'Configure content bank custom fields';
 $string['contentbank:copyanycontent'] = 'Copy any content in the content bank';
 $string['contentbank:copycontent'] = 'Copy content in the content bank';
 $string['contentbank:deleteanycontent'] = 'Delete any content from the content bank';
@@ -190,6 +195,7 @@ $string['course:create'] = 'Create courses';
 $string['course:creategroupconversations'] = 'Create group conversations';
 $string['course:delete'] = 'Delete courses';
 $string['course:downloadcoursecontent'] = 'Download course content';
+$string['course:editcoursewelcomemessage'] = 'Edit course welcome message';
 $string['course:enrolconfig'] = 'Configure enrol instances in courses';
 $string['course:enrolreview'] = 'Review course enrolments';
 $string['course:ignoreavailabilityrestrictions'] = 'Ignore availability restrictions';
@@ -238,8 +244,8 @@ $string['defaultrole'] = 'Default role';
 $string['defaultx'] = 'Default: {$a}';
 $string['defineroles'] = 'Define roles';
 $string['definitionofrolex'] = 'Definition of role \'{$a}\'';
-$string['deletecourseoverrides'] = 'Delete all overrides in course';
-$string['deletelocalroles'] = 'Delete all local role assignments';
+$string['deletecourseoverrides'] = 'All overrides in course';
+$string['deletelocalroles'] = 'All local role assignments';
 $string['deleterolesure'] = '<p>Are you sure that you want to delete role "{$a->name} ({$a->shortname})"?</p><p>Currently this role is assigned to {$a->count} users.</p>';
 $string['deletexrole'] = 'Delete {$a} role';
 $string['duplicaterole'] = 'Duplicate role';
@@ -508,7 +514,7 @@ $string['user:editownmessageprofile'] = 'Edit own user messaging profile';
 $string['user:editownprofile'] = 'Edit own user profile';
 $string['user:editprofile'] = 'Edit user profile';
 $string['user:ignoreuserquota'] = 'Ignore user quota limit';
-$string['user:loginas'] = 'Login as other users';
+$string['user:loginas'] = 'Log in as other users';
 $string['user:manageblocks'] = 'Manage blocks on user profile of other users';
 $string['user:manageownblocks'] = 'Manage blocks on own public user profile';
 $string['user:manageownfiles'] = 'Manage files on own private file areas';
@@ -520,6 +526,7 @@ $string['user:viewalldetails'] = 'View user full information';
 $string['user:viewdetails'] = 'View user profiles';
 $string['user:viewhiddendetails'] = 'View hidden details of users';
 $string['user:viewlastip'] = 'View user last ip address';
+$string['user:viewprofilepictures'] = 'View user pictures (if force log in enabled)';
 $string['user:viewuseractivitiesreport'] = 'See user activity reports';
 $string['user:viewusergrades'] = 'View user grades';
 $string['usersfrom'] = 'Users from {$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'pt', version '4.4'.
+ * Strings for component 'question', language 'pt', version '4.5'.
  *
  * @package     question
  * @category    string
@@ -316,7 +316,6 @@ $string['nocate'] = 'Não existe a categoria \'{$a}\'!';
 $string['noconditionspecified'] = 'Especifique uma condição';
 $string['nopermissionadd'] = 'Não tem permissão para adicionar perguntas aqui.';
 $string['nopermissionedit'] = 'Não tem permissão para editar perguntas a partir daqui.';
-$string['nopermissionmove'] = 'Não tem permissão para mover perguntas a partir desta categoria. Tem de guardar a pergunta nesta categoria ou como uma nova pergunta.';
 $string['noprobs'] = 'Não foram encontrados problemas na base de dados das perguntas.';
 $string['noquestionbanks'] = 'Nenhum módulo da base de dados de perguntas encontrado.';
 $string['noquestions'] = 'Não foram encontradas perguntas para exportação. Certifique-se que selecionou uma categoria com perguntas.';
@@ -407,7 +406,11 @@ $string['questionbehavioursorderexplained'] = 'Insira uma lista de comportamento
 $string['questioncategories'] = 'Categorias de perguntas';
 $string['questioncategory'] = 'Categoria de perguntas';
 $string['questioncatsfor'] = 'Categorias de perguntas de \'{$a}\'';
+$string['questiondefaultssave'] = 'Guardar opções da pergunta como predefinições das preferência do utilizador';
+$string['questiondefaultssave_desc'] = 'Se as opções das perguntas como \'Nota predefinida\', \'Resposta única ou múltiplas respostas\', etc. devem, ou não, ser guardados como preferências do utilizador quando o formulário de edição da pergunta é submetido, para utilizar como predefinição na próxima vez que o utilizador aceder ao formulário.';
 $string['questiondoesnotexist'] = 'Esta pergunta não existe';
+$string['questionediting'] = 'Edição da perguntas';
+$string['questionediting_desc'] = 'Estas configurações aplicam-se aos formulários de edição de perguntas.';
 $string['questionformtagheader'] = '{$a} palavras-chave';
 $string['questionidmismatch'] = 'Incoerência nos ID\'s da Pergunta';
 $string['questionloaderror'] = 'Não foi possível carregar as opções da pergunta.';

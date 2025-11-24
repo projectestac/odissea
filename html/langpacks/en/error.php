@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'en', version '4.4'.
+ * Strings for component 'error', language 'en', version '4.5'.
  *
  * @package     error
  * @category    string
@@ -36,6 +36,7 @@ $string['alreadyloggedin'] = 'You are already logged in as {$a}, you need to log
 $string['authnotexisting'] = 'The autorization plugin doesn\'t exist';
 $string['backupcontainexternal'] = 'This backup file contains external Moodle Network Hosts that are not configured locally';
 $string['backuptablefail'] = 'Backup tables could NOT be set up successfully!';
+$string['blockcannotadd'] = 'Cannot add block';
 $string['blockcannotconfig'] = 'This block does not support global configuration';
 $string['blockcannotinistantiate'] = 'Problem in instantiating block object';
 $string['blockcannotread'] = 'Could not read data for blockid= {$a}';
@@ -101,7 +102,7 @@ $string['cannotfindinfo'] = 'Cannot find info for: "{$a}"';
 $string['cannotfindlang'] = 'Cannot find "{$a}" language pack!';
 $string['cannotfindteacher'] = 'Cannot find teacher';
 $string['cannotfinduser'] = 'Cannot find user named "{$a}"';
-$string['cannotgeoplugin'] = 'Cannot connect to the geoPlugin server at https://www.geoplugin.com. Please check your proxy settings or install the MaxMind GeoLite City data file.';
+$string['cannotgeoplugin'] = 'Cannot connect to the geoPlugin server at https://www.geoplugin.com. Please check your proxy settings or install the MaxMind GeoIP City data file.';
 $string['cannotgetblock'] = 'Could not retrieve blocks from the database';
 $string['cannotgetcats'] = 'Cannot get category record';
 $string['cannotgetdata'] = 'Cannot get data';
@@ -158,7 +159,6 @@ $string['cannotsetupcapformod'] = 'Could not set up the capabilities for {$a}';
 $string['cannotsetupcapforplugin'] = 'Could not set up the capabilities for {$a}';
 $string['cannotshowhidecoursesincategory'] = 'Cannot show/hide the courses in category {$a}.';
 $string['cannotsignup'] = 'You cannot create a new account because you are already logged in as {$a}.';
-$string['cannotswitcheditmodeon'] = 'Could not switch edit mode on';
 $string['cannotunassigncap'] = 'Could not unassign deprecated capability {$a->cap} from role {$a->role}';
 $string['cannotunassignrolefrom'] = 'Cannot unassign this user from role id: {$a}';
 $string['cannotunzipfile'] = 'Cannot unzip file';
@@ -286,6 +286,8 @@ $string['filternotenabled'] = 'Filter not enabled!';
 $string['filternotinstalled'] = 'Filter {$a} is not currently installed';
 $string['forumblockingtoomanyposts'] = 'You have exceeded the posting threshold set for this forum';
 $string['functionalityremoved'] = 'You are trying to access functionality that has been removed.';
+$string['gdfeaturenotsupported'] = 'The GD extension was not compiled with methods for {$a}';
+$string['gdmimetypenotsupported'] = 'MIME type not supported.';
 $string['generalexceptionmessage'] = 'Exception - {$a}';
 $string['gradecantregrade'] = 'An error occurred during grade calculation: {$a}';
 $string['gradepubdisable'] = 'Grade publishing disabled';
@@ -351,6 +353,7 @@ $string['invalidelementid'] = 'Incorrect element ID!';
 $string['invalidentry'] = 'This is not valid entry!';
 $string['invalidevent'] = 'Invalid event';
 $string['invalidfieldname'] = '"{$a}" is not a valid field name';
+$string['invalidfile'] = 'File not found';
 $string['invalidfiletype'] = '"{$a}" is not a valid file type';
 $string['invalidformatpara'] = 'Incorrect format for choose parameter';
 $string['invalidformdata'] = 'Incorrect form data';
@@ -398,6 +401,7 @@ $string['invalidxmlfile'] = '"{$a}" is not a valid XML file';
 $string['iplookupfailed'] = 'Cannot find geo information about this IP address {$a}';
 $string['iplookupprivate'] = 'Cannot display lookup of private IP address';
 $string['ipmismatch'] = 'Client IP address mismatch';
+$string['itemnotfound'] = 'No {$a->itemtype} was found with an identifier of \'{$a->identifier}\'';
 $string['listcantmovedown'] = 'Failed to move item down, as it is the last of its peers.';
 $string['listcantmoveleft'] = 'Failed to move item left, as it has no parent';
 $string['listcantmoveright'] = 'Failed to move item right, as there is no peer to make it a child of. Move it below another peer and then you can move it right.';
@@ -407,8 +411,8 @@ $string['listnoitem'] = 'Item not found';
 $string['listnopeers'] = 'No peers of item found';
 $string['listupdatefail'] = 'DB operation failed when editing list hierarchy';
 $string['logfilenotavailable'] = 'Logs not available';
-$string['loginasnoenrol'] = 'You cannot use enrol or unenrol when in course "Login as" session';
-$string['loginasonecourse'] = 'You cannot enter this course.<br /> You have to terminate the "Login as" session before entering any other course.';
+$string['loginasnoenrol'] = 'You cannot use enrol or unenrol when using \'Log in as\'.';
+$string['loginasonecourse'] = 'You cannot enter this course. You must finish the \'Log in as\' session before entering any other course.';
 $string['maxareabytes'] = 'The file is larger than the space remaining in this area.';
 $string['maxbytesfile'] = 'The file {$a->file} is too large. The maximum size you can upload is {$a->size}.';
 $string['maxdraftitemids'] = 'Your file uploads are temporarily limited after you uploaded a high volume of files. Please wait then try again.';
@@ -490,6 +494,7 @@ $string['nostartdatenoenddate'] = 'A course end date can only be set if a start 
 $string['nostatstodisplay'] = 'Sorry, there is no available data to display';
 $string['notallowedtoupdateprefremotely'] = 'You are not allowed to update this user preference remotely';
 $string['notavailable'] = 'That is not currently available';
+$string['notfound'] = 'Not found';
 $string['notlocalisederrormessage'] = '{$a}';
 $string['notmemberofgroup'] = 'You are not a member of this course group';
 $string['notownerofkey'] = 'You are not owner of this key';
@@ -541,6 +546,7 @@ $string['reverseproxyabused'] = 'Reverse proxy enabled so the server cannot be a
 $string['rpcerror'] = 'Ooops! Your MNET communication has failed! Here\'s that error message to pass on to your administrator: {$a}';
 $string['scheduledbackupsdisabled'] = 'Scheduled backups have been disabled by the server admin';
 $string['secretalreadyused'] = 'Change password confirmation link was already used, password was not changed';
+$string['sectioncantbefound'] = '<p><strong>This content can\'t be found.</strong></p><p>It may have been deleted, or the URL may be incorrect.</p>';
 $string['sectionnotexist'] = 'This section does not exist';
 $string['sendmessage'] = 'Send message';
 $string['sendmessagesent'] = 'Thanks for your feedback about:<br>{$a}';
@@ -558,6 +564,7 @@ $string['sessionhandlerproblem'] = 'Session handler is misconfigured';
 $string['sessionipnomatch'] = 'Sorry, but your IP number seems to have changed from when you first logged in.  This security feature prevents crackers stealing your identity while logged in to this site.  Normal users should not be seeing this message - please ask the site administrator for help.';
 $string['sessionipnomatch2'] = '<p>Sorry, but your IP number seems to have changed from when you first logged in. This security feature prevents crackers stealing your identity while logged in to this site. You may see this error if you use wireless networks or if you are roaming between different networks. Please ask the site administrator for more help.</p>
 <p>If you want to continue please press F5 key to refresh this page.</p>';
+$string['sessionstarterror'] = 'Couldn\'t start session. Please try again later.';
 $string['sessionwaiterr'] = 'Timed out while waiting for session lock.<br />Wait for your current requests to finish and try again later.';
 $string['shortnametaken'] = 'Short name is already used for another course ({$a})';
 $string['sitepolicynotagreed'] = 'Site policy not agreed: <a href="{$a}">Click here to open the site policy.</a>';

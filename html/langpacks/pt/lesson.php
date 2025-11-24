@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'pt', version '4.4'.
+ * Strings for component 'lesson', language 'pt', version '4.5'.
  *
  * @package     lesson
  * @category    string
@@ -152,7 +152,7 @@ $string['customscoring'] = 'Pontuação personalizável';
 $string['customscoring_help'] = 'Se ativar esta opção, para cada resposta poderá ser dada uma pontuação com um valor numérico inteiro (positivo ou negativo).';
 $string['deadline'] = 'Até';
 $string['defaultessayresponse'] = 'A sua resposta à pergunta de desenvolvimento será avaliada pelo professor.';
-$string['deleteallattempts'] = 'Apagar todas as tentativas de realização da lição';
+$string['deleteallattempts'] = 'Todas as tentativas de realização da lição';
 $string['deletedefaults'] = 'Foram apagados {$a} x valores por predefinição da lição';
 $string['deletedpage'] = 'A página foi apagada';
 $string['deletepagenamed'] = 'Eliminar página: {$a}';
@@ -521,8 +521,8 @@ $string['rank'] = 'Posição';
 $string['rawgrade'] = 'Nota bruta';
 $string['receivedcredit'] = 'Crédito obtido';
 $string['redisplaypage'] = 'Voltar a exibir a página';
-$string['removeallgroupoverrides'] = 'Apagar todas as exceções para grupos';
-$string['removealluseroverrides'] = 'Apagar todas as exceções para utilizadores';
+$string['removeallgroupoverrides'] = 'Todas as exceções para grupos';
+$string['removealluseroverrides'] = 'Todas as exceções para utilizadores';
 $string['report'] = 'Relatório';
 $string['reports'] = 'Relatórios';
 $string['response'] = 'Feedback';

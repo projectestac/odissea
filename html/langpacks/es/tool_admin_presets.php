@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_admin_presets', language 'es', version '4.4'.
+ * Strings for component 'tool_admin_presets', language 'es', version '4.5'.
  *
  * @package     tool_admin_presets
  * @category    string
@@ -37,8 +37,9 @@ $string['created'] = 'Creado';
 $string['currentvalue'] = 'Valor actual';
 $string['deletepreset'] = '¿Está seguro de querer eliminar el ajuste preestablecido de administración del sitio "{$a}"?';
 $string['deletepresettitle'] = '¿Eliminar el ajuste preestablecido {$a}?';
-$string['deletepreviouslyapplied'] = 'Este ajuste preestablecido se ha aplicado previamente. Eliminar un ajuste preestablecido lo elimina por completo de su sitio. No podrá revertir su configuración a como estaba antes de aplicar este ajuste preestablecido';
+$string['deletepreviouslyapplied'] = '¿Seguro que quiere borrar el ajuste preestablecido {$a}?<br><br>Este ajuste preestablecido se ha aplicado previamente. Eliminar un ajuste preestablecido lo elimina por completo de su sitio. No podrá revertir su configuración a como estaba antes de aplicar este ajuste preestablecido.';
 $string['deleteshow'] = 'Eliminar ajuste preestablecido de administración del sitio';
+$string['editadminpresetname'] = 'Editar el nombre del ajuste preestablecido';
 $string['eventpresetdeleted'] = 'Ajuste preestablecido eliminado';
 $string['eventpresetdownloaded'] = 'Ajuste preestablecido descargado';
 $string['eventpresetexported'] = 'Ajuste preestablecido creado';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'ar', version '4.4'.
+ * Strings for component 'search', language 'ar', version '4.5'.
  *
  * @package     search
  * @category    string
@@ -101,6 +101,7 @@ $string['optimize'] = 'تحسين';
 $string['order'] = 'فرز النتائج';
 $string['order_location'] = 'إمنح الأولوية للنتائج المتعلقة بـ {$a}';
 $string['order_relevance'] = 'النتائج الأكثر صلة أولاً';
+$string['performsearch'] = 'تنفيذ البحث';
 $string['priority'] = 'الأولوية';
 $string['priority_normal'] = 'عادي';
 $string['priority_reindexing'] = 'إعادة الفهرسة';
@@ -130,6 +131,7 @@ $string['searchnotpermitted'] = 'لا يسمح لك بالبحث';
 $string['searchsetupdescription'] = 'الخطوات الآتية تساعدك في إعداد بحث مودل العمومي.';
 $string['searchwithin'] = 'البحث ضمن';
 $string['seconds'] = 'ثواني';
+$string['sitewidesearch'] = 'البحث في عموم الموقع';
 $string['solutions'] = 'حلول';
 $string['statistics'] = 'الإحصائيات';
 $string['step'] = 'الخطوة';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'sv', version '4.4'.
+ * Strings for component 'qtype_truefalse', language 'sv', version '4.5'.
  *
  * @package     qtype_truefalse
  * @category    string
@@ -38,7 +38,6 @@ $string['pluginname_link'] = 'question/type/truefalse';
 $string['pluginnameadding'] = 'Lägger till en Sant/Falskt-fråga';
 $string['pluginnameediting'] = 'Redigerar en Sant/Falskt-fråga';
 $string['pluginnamesummary'] = 'En enkel form av flervalsfråga med bara de två valen "Sant" och "Falskt".';
-$string['privacy:metadata'] = 'Pluginmodulen för Sant/Falskt-frågetypen lagrar ingen personinformation.';
 $string['privacy:preference:showstandardinstruction'] = 'Om standardinstruktionen visas.';
 $string['selectone'] = 'Välj ett av alternativen:';
 $string['showstandardinstruction'] = 'Visa svarsinstruktioner?';

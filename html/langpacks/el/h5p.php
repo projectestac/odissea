@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5p', language 'el', version '4.4'.
+ * Strings for component 'h5p', language 'el', version '4.5'.
  *
  * @package     h5p
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['a11yTitle:label'] = 'Ετικέτα Βοηθητικών Τεχνολογιών';
+$string['a11yTitle:label'] = 'Ετικέτα για Τεχνολογίες Υποστήριξης';
 $string['acceptTerms'] = 'Αποδέχομαι τους <a href=":url" target="_blank">όρους χρήσης</a>';
 $string['accountDetailsLinkText'] = 'εδώ';
 $string['actions'] = 'Ενέργειες';
@@ -97,7 +97,7 @@ $string['deletelibraryversion'] = 'Διαγραφή έκδοσης';
 $string['deleting'] = 'Διαγραφή μιας βιβλιοθήκης';
 $string['description'] = 'Περιγραφή';
 $string['disablefullscreen'] = 'Απενεργοποίηση πλήρους οθόνης';
-$string['discipline:dropdownButton'] = 'Κουμπί αναδυόμενου μενού';
+$string['discipline:dropdownButton'] = 'Κουμπί επιλογών';
 $string['discipline:in'] = 'σε';
 $string['discipline:searchPlaceholder'] = 'Πληκτρολογήστε για αναζήτηση τομέων';
 $string['disciplineDescription'] = 'Μπορείτε να επιλέξετε πολλούς τομείς';
@@ -110,7 +110,7 @@ $string['editInfoTitle'] = 'Επεξεργασία πληροφοριών για
 $string['editcontent'] = 'Επεξεργασία περιεχομένου H5P';
 $string['editingFailed'] = 'Η επεξεργασία απέτυχε.';
 $string['editor'] = 'Συντάκτης';
-$string['emailAddress'] = 'Διεύθυνση ηλεκτρονικού ταχυδρομείου';
+$string['emailAddress'] = 'Διεύθυνση email';
 $string['embed'] = 'Ενσωμάτωση';
 $string['embedtitle'] = 'Εμφάνιση του κώδικα ενσωμάτωσης για αυτό το περιεχόμενο.';
 $string['error:emptycontentid'] = 'Η δεδομένη διεύθυνση URL είναι λανθασμένη ή δεν μπορείτε να επεξεργαστείτε αυτό το αρχείο.';
@@ -144,7 +144,7 @@ $string['iconDescription'] = '640x480px. Αν δεν επιλεγεί, το πε
 $string['installedcontentlibraries'] = 'Εγκατεστημένες βιβλιοθήκες H5P';
 $string['installedcontenttypes'] = 'Εγκατεστημένοι τύποι περιεχομένου H5P';
 $string['installedh5p'] = 'Εγκατεστημένα H5P';
-$string['invalidAge'] = 'Μη έγκυρη μορφή εισόδου για την τυπική ηλικία. Πιθανές μορφές εισόδου, διαχωρισμένες με κόμμα: \'1, 34-45, -50, -59-\'';
+$string['invalidAge'] = 'Μη έγκυρη μορφή εισόδου για Τυπική ηλικία. Δυνατές μορφές: "1, 34-45, -50, -59-".';
 $string['invalidcontextid'] = 'Το αρχείο H5P δεν βρέθηκε (μη έγκυρο αναγνωριστικό πλαισίου συμφραζομένων)';
 $string['invalidfile'] = 'Το αρχείο «{$a->%filename}» δεν επιτρέπεται. Μόνο αρχεία με τις ακόλουθες επεκτάσεις (ονομάτων αρχείων) επιτρέπονται: {$a->%files-allowed}.';
 $string['invalidlanguagefile'] = 'Μη έγκυρο αρχείο γλώσσας {$a->%file} στην βιβλιοθήκη {$a->%library}';
@@ -245,7 +245,7 @@ $string['reuseDescription'] = 'Επαναχρησιμοποίηση αυτού �
 $string['reviewAndSave'] = 'Ανασκόπηση & Αποθήκευση';
 $string['reviewAndShare'] = 'Ανασκόπηση & Κοινοποίηση';
 $string['reviewInfo'] = 'Ανασκόπηση πληροφοριών';
-$string['reviewMessage'] = 'Παρακαλώ ελέγξτε τις πληροφορίες παρακάτω πριν τις διαμοιράσετε.';
+$string['reviewMessage'] = 'Παρακαλώ ανασκοπήστε τις παρακάτω πληροφορίες πριν κοινοποιήσετε';
 $string['rotateLeft'] = 'Περιστροφή αριστερά';
 $string['rotateRight'] = 'Περιστροφή δεξιά';
 $string['saveChanges'] = 'Αποθήκευση αλλαγών';
@@ -253,7 +253,7 @@ $string['screenshots'] = 'Στιγμιότυπα οθόνης';
 $string['screenshotsDescription'] = 'Προσθέστε έως πέντε στιγμιότυπα του περιεχομένου σας';
 $string['share'] = 'Κοινοποίηση';
 $string['shareFailed'] = 'Η κοινοποίηση απέτυχε.';
-$string['shareTryAgain'] = 'Κάτι πήγε στραβά, παρακαλώ δοκιμάστε να κοινοποιήσετε ξανά.';
+$string['shareTryAgain'] = 'Κάτι πήγε στραβά, παρακαλώ δοκιμάστε ξανά να κοινοποιήσετε.';
 $string['shared'] = 'Κοινοποιήθηκε';
 $string['sharingNote'] = 'Όλες οι λεπτομέρειες περιεχομένου μπορούν να επεξεργαστούν μετά την κοινοποίηση';
 $string['shortDescription'] = 'Σύντομη περιγραφή';
@@ -285,4 +285,4 @@ $string['year'] = 'Έτος';
 $string['years'] = 'Έτος/-η';
 $string['yearsfrom'] = 'Έτη (από)';
 $string['yearsto'] = 'Έτη (έως)';
-$string['zip'] = 'Συμπίεση';
+$string['zip'] = 'Ταχυδρομικός κώδικας';

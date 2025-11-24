@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'sv', version '4.4'.
+ * Strings for component 'course', language 'sv', version '4.5'.
  *
  * @package     course
  * @category    string
@@ -94,6 +94,7 @@ $string['downloadcoursecontent_help'] = 'Den här inställningen avgör om kursi
 $string['enabledownloadcoursecontent'] = 'Tillåt nedladdning av kursinnehåll';
 $string['errorendbeforestart'] = 'Kursens slutdatum ({$a}) inträffar före kursens startdatum.';
 $string['favourite'] = 'Favoritmärkt kurs';
+$string['filterbyname'] = 'Filtrera efter namn';
 $string['gradetopassnotset'] = 'För denna kurs finns ingen inställning gjord för vilka betyg som krävs för att bli godkänd. Detta kan ställas in i betygsobjektet i kursen (Inställningar för betygsbok).';
 $string['informationformodule'] = 'Information om {$a}-aktiviteten';
 $string['module'] = 'Aktivitet';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_capability', language 'ro', version '4.4'.
+ * Strings for component 'tool_capability', language 'ro', version '4.5'.
  *
  * @package     tool_capability
  * @category    string

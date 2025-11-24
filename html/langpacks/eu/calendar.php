@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'eu', version '4.4'.
+ * Strings for component 'calendar', language 'eu', version '4.5'.
  *
  * @package     calendar
  * @category    string
@@ -59,6 +59,7 @@ $string['courseevents'] = 'Ikastaroko ekitaldiak';
 $string['courses'] = 'Ikastaroak';
 $string['customexport'] = 'Pertsonalizatutako tartea ({$a->timestart} - {$a->timeend})';
 $string['daily'] = 'Egunero';
+$string['datepicker'] = 'Data hautatzailea';
 $string['day'] = 'Eguna';
 $string['dayeventsmany'] = '{$a->num} ekitaldi, {$a->day}';
 $string['dayeventsnone'] = 'Ekitaldirik ez, {$a}';
@@ -71,7 +72,7 @@ $string['daywithnoevents'] = 'Ekitaldirik ez egun honetan';
 $string['default'] = 'Lehenetsia';
 $string['deleteallevents'] = 'Ezabatu ekitaldi guztiak';
 $string['deleteevent'] = 'Ezabatu ekitaldia';
-$string['deleteevents'] = 'Ezabatu ekitaldiak';
+$string['deleteevents'] = 'Ekitaldiak';
 $string['deleteoneevent'] = 'Ezabatu ekitaldi hau';
 $string['detailedmonthviewfor'] = 'Hileko ikuspegi xehea honentzat:';
 $string['detailedmonthviewtitle'] = 'Hileko ikuspegi xehea: {$a}';
@@ -188,7 +189,9 @@ $string['mon'] = 'Al';
 $string['monday'] = 'Astelehena';
 $string['monthly'] = 'Hilero';
 $string['monthnext'] = 'Hurrengo hilabetea';
+$string['monthnextwithname'] = 'Hurrengo hilabetea: {$a}';
 $string['monthprev'] = 'Aurreko hilabetea';
+$string['monthprevwithname'] = 'Aurreko hilabetea: {$a}';
 $string['monththis'] = 'Hilabete honetan';
 $string['more'] = 'Gehiago';
 $string['moreevents'] = '{$a} gehiago';
@@ -208,7 +211,7 @@ $string['pref_lookahead_help'] = 'Honek ezartzen du gehienez zenbat egunen burua
 $string['pref_maxevents'] = 'Datozen ekitaldien gehieneko kopurua';
 $string['pref_maxevents_help'] = 'Honek ezartzen du erakutsi daitezkeen datozen ekitaldien gehieneko kopurua. Zenbaki handia ezartzen baduzu datozen ekitaldiek zure pantailaren zati handiegia har dezakete.';
 $string['pref_persistflt'] = 'Gogoratu iragazkiaren ezarpenak';
-$string['pref_persistflt_help'] = 'Gaituta, Moodlek ekitaldien iragazkiaren zure azken ezarpenak gogogoratuko ditu eta berau berreskuratuko du identifikatzen zaren bakoitzean.';
+$string['pref_persistflt_help'] = 'Gaituz gero, ekitaldien iragazkiaren zure azken ezarpenak gordeko dira saioa hasten duzun hurrengo aldian.';
 $string['pref_startwday'] = 'Asteko lehen eguna';
 $string['pref_startwday_help'] = 'Egutegiaren hasteak hemen aukeratzen duzun egunean hasita erakutsiko dira.';
 $string['pref_timeformat'] = 'Ordu-formatua';
@@ -216,13 +219,13 @@ $string['pref_timeformat_help'] = 'Aukeratu egin ahal duzu denbora 12 edo 24 ord
 $string['preferences'] = 'Hobespenak';
 $string['preferences_available'] = 'Zure hobespenak';
 $string['preferredcalendar'] = 'Egutegi hobetsia';
-$string['privacy:metadata:calendar:event'] = 'Egutegia osagaiak sistemako erabiltzaileen egutegi-ekitaldien xehetasunak gordetzen ditu.';
+$string['privacy:metadata:calendar:event'] = 'Egutegia osagaiak muineko azpisistemako erabiltzaileen egutegi-ekitaldien xehetasunak gordetzen ditu.';
 $string['privacy:metadata:calendar:event:description'] = 'Egutegi-ekitaldiaren deskribapena.';
 $string['privacy:metadata:calendar:event:eventtype'] = 'Egutegi-ekitaldiaren ekitaldi mota.';
 $string['privacy:metadata:calendar:event:name'] = 'Egutegi-ekitaldiaren izena.';
 $string['privacy:metadata:calendar:event:timeduration'] = 'Egutegi-ekitaldiaren iraupena.';
 $string['privacy:metadata:calendar:event:timestart'] = 'Egutegi-ekitaldiaren hasiera-unea.';
-$string['privacy:metadata:calendar:event_subscriptions'] = 'Egutegia osagaiak sistemako erabiltzaileen egutegi-harpidetzen xehetasunak gordetzen ditu.';
+$string['privacy:metadata:calendar:event_subscriptions'] = 'Egutegia osagaiak muineko azpisistemako erabiltzaileen egutegi-harpidetzen xehetasunak gordetzen ditu.';
 $string['privacy:metadata:calendar:event_subscriptions:eventtype'] = 'Egutegi-harpidetzaren ekitaldi mota.';
 $string['privacy:metadata:calendar:event_subscriptions:name'] = 'Egutegi-harpidetzaren izena.';
 $string['privacy:metadata:calendar:event_subscriptions:url'] = 'Egutegi-harpidetzaren URLa.';

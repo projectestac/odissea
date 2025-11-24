@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'ja', version '4.4'.
+ * Strings for component 'search', language 'ja', version '4.5'.
  *
  * @package     search
  * @category    string
@@ -101,12 +101,13 @@ $string['optimize'] = '最適化';
 $string['order'] = '結果順';
 $string['order_location'] = '{$a} に関連する結果を優先する';
 $string['order_relevance'] = '最も関連性のある結果を最初にする';
+$string['performsearch'] = '検索を実行する';
 $string['priority'] = '優先度';
 $string['priority_normal'] = 'ノーマル';
 $string['priority_reindexing'] = '再インデックス化';
 $string['privacy:metadata'] = '検索サブシステムはいかなる個人データも保存しません。';
 $string['progress'] = '進捗';
-$string['queryerror'] = 'あなたが提供したクエリは検索エンジンによって構文解析することができませんでした: {$a}';
+$string['queryerror'] = 'あなたが提供したクエリは検索エンジンにより構文解析することができませんでした: {$a}';
 $string['queueheading'] = '追加インデックス化キュー ({$a} アイテム)';
 $string['resultsreturnedfor'] = '件が見つかりました - 検索キーワード:';
 $string['runindexer'] = 'インデックサ (実) を実行する';
@@ -130,6 +131,7 @@ $string['searchnotpermitted'] = 'あなたは検索を許可されていませ�
 $string['searchsetupdescription'] = '次のステップではあなたのMoodleグローバル検索の設定を支援します。';
 $string['searchwithin'] = '検索対象';
 $string['seconds'] = '秒';
+$string['sitewidesearch'] = 'サイト内検索';
 $string['solutions'] = 'ソリューション';
 $string['statistics'] = '統計';
 $string['step'] = 'ステップ';

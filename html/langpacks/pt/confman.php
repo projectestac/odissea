@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'confman', language 'pt', version '4.4'.
+ * Strings for component 'confman', language 'pt', version '4.5'.
  *
  * @package     confman
  * @category    string

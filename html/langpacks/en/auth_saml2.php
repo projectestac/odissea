@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_saml2', language 'en', version '4.4'.
+ * Strings for component 'auth_saml2', language 'en', version '4.5'.
  *
  * @package     auth_saml2
  * @category    string
@@ -142,6 +142,17 @@ $string['mdlattr_help'] = 'Which Moodle user field should the IdP attribute be m
 $string['metadatafetchfailed'] = 'Metadata fetch failed: {$a}';
 $string['metadatafetchfailedstatus'] = 'Metadata fetch failed: Status code {$a}';
 $string['metadatafetchfailedunknown'] = 'Metadata fetch failed: Unknown cURL error';
+$string['moodleidpdescription'] = 'Settings for Moodle as an Identity Provider for other services.';
+$string['moodleidpenabled'] = 'Enable IDP';
+$string['moodleidpenabled_error'] = 'Moodle IDP is not enabled. Check Settings.';
+$string['moodleidpenabled_help'] = 'Allow Moodle to act as an IDP for external services.';
+$string['moodleidpguest_error'] = 'Guest users cannot log in via SAML.';
+$string['moodleidpheading'] = 'Moodle IDP Settings';
+$string['moodleidpmetadata'] = 'IDP Metadata';
+$string['moodleidpmetadata_help'] = '<a href=\'{$a}\'>View Identity Provider Metadata</a> | <a href=\'{$a}?download=1\'>Download IDP Metadata</a>';
+$string['moodleidpsplist'] = 'Valid Issuers';
+$string['moodleidpsplist_error'] = 'Unknown service attempting to authenticate: {$a}. Check config.';
+$string['moodleidpsplist_help'] = 'List of services allowed to use this moodle as an IDP identified by the <code>saml:Issuer</code> tag in the SAML request. One per line. {$a->example}';
 $string['multiidp:label:active'] = 'Active';
 $string['multiidp:label:admin'] = 'For admin users only';
 $string['multiidp:label:admin_help'] = 'Any users that log in using this IdP will automatically be made an site administrator';
@@ -216,7 +227,6 @@ $string['suspendeduser'] = 'You have logged in successfully as \'{$a}\' but your
 $string['taskmetadatarefresh'] = 'Metadata refresh task';
 $string['tempdir'] = 'SimpleSAMLphp temporary directory';
 $string['tempdir_help'] = 'A directory where SimpleSAMLphp can save temporary files';
-$string['tempdirdefault'] = '/tmp/simplesaml';
 $string['test_auth_button_login'] = 'IdP Login';
 $string['test_auth_button_logout'] = 'IdP Logout';
 $string['test_auth_str'] = 'Test isAuthenticated and login';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'ro', version '4.4'.
+ * Strings for component 'cache', language 'ro', version '4.5'.
  *
  * @package     cache
  * @category    string
@@ -34,6 +34,8 @@ $string['addstoresuccess'] = 'S-a adăugat cu succes o nouă {$a} înregistrare.
 $string['area'] = 'Zonă';
 $string['cacheadmin'] = 'Administrare memorie cache';
 $string['cacheconfig'] = 'Configurare';
+$string['cachedef_ai_policy'] = 'Acceptarea de către utilizator a politicilor AI.';
+$string['cachedef_ai_ratelimit'] = 'Limitarea apelurilor către furnizorul AI';
 $string['cachedef_calculablesinfo'] = 'Informații de calcul a modelelor analitice';
 $string['cachedef_calendar_categories'] = 'Calendarul categoriilor de cursuri pe care un utilizator le poate accesa';
 $string['cachedef_calendar_subscriptions'] = 'Abonări la calendar';
@@ -91,6 +93,7 @@ $string['cachedef_recommendation_favourite_course_content_items'] = 'Recomandare
 $string['cachedef_reportbuilder_allowed_reports'] = 'Rapoartele permise utilizatorilor în funcție de audiență';
 $string['cachedef_repositories'] = 'Arhiva de date a exemplelor';
 $string['cachedef_roledefs'] = 'Definițiile rolului';
+$string['cachedef_routes'] = 'Rutarea datelor';
 $string['cachedef_string'] = 'Cache string pentru limbi';
 $string['cachedef_suspended_userids'] = 'Lista utilizatorilor suspendați de la curs';
 $string['cachedef_tagindexbuilder'] = 'Căutați rezultatele pentru elementele etichetate';

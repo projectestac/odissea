@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'checkmark', language 'es', version '4.4'.
+ * Strings for component 'checkmark', language 'es', version '4.5'.
  *
  * @package     checkmark
  * @category    string

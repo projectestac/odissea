@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'organizer', language 'de', version '4.4'.
+ * Strings for component 'organizer', language 'de', version '4.5'.
  *
  * @package     organizer
  * @category    string
@@ -486,7 +486,6 @@ $string['groupmodenogroups'] = 'Kein Gruppenmodus';
 $string['groupmodeslotgroups'] = 'Gruppen für neue Termine anlegen';
 $string['groupmodeslotgroupsappointment'] = 'Gruppen für gebuchte Termine anlegen';
 $string['groupoptions'] = 'Gruppeneinstellungen';
-$string['grouporganizer_desc_hasgroup'] = 'Dies ist ein Gruppenorganizer. Das Betätigen des Anmeldebuttons meldet Sie und alle Mitglieder Ihrer Gruppe {$a->groupname} für diesen Slot an. Alle Gruppenmitglieder können die Anmeldung ändern und kommentieren.';
 $string['grouporganizer_desc_novalidgroup'] = 'Dies ist ein Gruppen-Terminplaner. Sie sind nicht Mitglied einer Gruppe, die Teil dieses Terminplaners ist!';
 $string['grouppicker'] = 'Gruppenauswahl';
 $string['groupwarning'] = 'Prüfen Sie die Gruppeneinstellungen unten!';
@@ -680,6 +679,8 @@ $string['nofreeslots'] = 'Derzeit ist kein freier Termin verfügbar.';
 $string['nogroup'] = 'Keine Gruppe';
 $string['nolocationplaceholder'] = '_noch nicht definiert_';
 $string['noparticipants'] = 'Keine Teilnehmer/innen';
+$string['noreregistrations'] = 'Keine Ummeldungen nach Ablauf der Anmeldefrist';
+$string['noreregistrations_help'] = 'Wurde ein Termin gebucht, dessen Anmeldefrist schon abgelaufen ist, kann diese Buchung nicht mehr umgemeldet werden.';
 $string['norightpage'] = 'Sie haben nicht das Recht, diese Seite aufzurufen.';
 $string['nosingleslotprintfields'] = 'Es kann kein Ausdruck vorgenommen werden. Es wurden keine Profilfelder zum Ausdruck bestimmt. Siehe die Terminplaner-Einstellungen.';
 $string['noslots'] = 'Keine Slots für';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'eu', version '4.4'.
+ * Strings for component 'hub', language 'eu', version '4.5'.
  *
  * @package     hub
  * @category    string
@@ -27,6 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activeparticipantnumberaverage'] = 'Orain dela gutxiko parte-hartzaileen batezbesteko kopurua ({$a})';
 $string['activeusersnumber'] = 'Orain dela gutxiko parte-hartzaile kopurua ({$a})';
+$string['aiusagedata'] = 'AA erabilera datuak';
+$string['aiusagestats'] = 'AA erabilera estatistikak ({$a->timefrom} - {$a->timeto})';
 $string['analyticsactions'] = 'Sortutako aurreikuspenekin sortutako ekintza kopurua ({$a})';
 $string['analyticsactionsnotuseful'] = 'Aurreikuspen bat ez-erabilgarri gisa markatu duen ekintza kopurua ({$a})';
 $string['analyticsenabledmodels'] = 'Gaitutako aurreikuspen-eredu kopurua ({$a})';
@@ -36,6 +38,7 @@ $string['audience_help'] = 'Aukeratu ikastaro honentzako hartzaileak';
 $string['audienceadmins'] = 'Moodle kudeatzaileak';
 $string['audienceeducators'] = 'Irakasleak';
 $string['audiencestudents'] = 'Ikasleak';
+$string['average_time'] = 'Batez besteko prozesatze-denbora ({$a})';
 $string['badgesnumber'] = 'Domina-kopurua: ({$a})';
 $string['communityremoved'] = 'Ikastaro hau zure zerrendatik ezabatu da';
 $string['confirmregistration'] = 'Baieztatu erregistroa';
@@ -66,6 +69,7 @@ $string['errorotherhubsnotsupported'] = 'Orria hau dagoeneko ezin da erabili per
 $string['errorregistrationupdate'] = 'Errorea gertatu da erregistroa eguneratzean ({$a})';
 $string['errorws'] = '{$a}';
 $string['errorwstokenreset'] = '{$a}. Gune honetako erregistro-tokena berrabiarazi da. Zure gunea berriro erregistra dezakezu.';
+$string['fail_count'] = 'Huts-egite kopurua ({$a})';
 $string['geolocation'] = 'Geokokapena';
 $string['geolocation_help'] = 'Etorkizunean agian kokapenean oinarritutako bilaketak eskainiko ditugu. Zure ikastaroaren kokapena zehaztu nahi baduzu sartu hemen latitude/longitudea (adibidez: -31.947884,115.871285). Datu hau lortzeko modu bat Google Maps izan daiteke.';
 $string['imageurl'] = 'Irudiaren URLa';
@@ -80,6 +84,7 @@ $string['licence_link'] = 'licenses';
 $string['logourl'] = 'Logoaren URLa';
 $string['mobilenotificationsenabled'] = 'Mobile jakinarazpenak gaitu dira ({$a})';
 $string['mobileservicesenabled'] = 'Mobile zerbitzuak gaitu dira ({$a})';
+$string['models'] = 'Ereduak';
 $string['modulenumberaverage'] = 'Ikastaroaren batezbesteko modulu-kopurua ({$a})';
 $string['mustselectsubject'] = 'Gaia aukeratu behar duzu';
 $string['name'] = 'Izena';
@@ -87,16 +92,19 @@ $string['name_help'] = 'Izen hau ikastaro-zerrendan erakutsiko da.';
 $string['neverchecked'] = 'Egiaztatu gabea';
 $string['next'] = 'Hurrengoa';
 $string['no'] = 'Ez';
+$string['noaiusagedata'] = 'AA erabilera datuak (bat ere ez)';
 $string['nocheckstatusfromunreghub'] = 'Gune hau ez dago bilgunean erregistratuta eta horregatik izan da egoera egiaztatu.';
 $string['nohubselected'] = 'Ez da bilgunea aukeratu';
 $string['none'] = 'Bat ere ez';
 $string['operation'] = 'Ekintzak';
 $string['participantnumberaverage'] = 'Partaideen batez besteko kopurua: ({$a})';
+$string['pluginusagedata'] = 'Pluginen erabileraren informazioa hurrengo orrietatik biltzen da: <a href="{$a->overview}">Pluginen ikuspegi orokorra</a>, <a href="{$a->activities}">Kudeatu jarduerak</a>, eta <a href="{$a->blocks}">Kudeatu blokeak</a>.';
 $string['policyagreed'] = 'Pribatutasun oharra eta datu-prozesatzearen onespena';
 $string['policyagreeddesc'] = 'Onartzen dut <a href="{$a}" target="_blank">Pribatutasun oharra eta datu-prozesatzearen onespena</a>';
 $string['postaladdress'] = 'Helbidea';
 $string['postaladdress_help'] = 'Gune honen posta-helbidea, edo guneak errepresentatzen duen erakundearena.';
 $string['postsnumber'] = 'Mezu-kopurua: ({$a})';
+$string['predominant_error'] = 'HTTP errore nafusia ({$a})';
 $string['previousregistrationdeleted'] = 'Aurretiko erregistroa ezabatua izan da {$a} gunetik. Erregistro-prozesua berriz has dezakezu. Eskerrik asko.';
 $string['primaryauthtype'] = 'Autentifikazio-mota lehenetsia ({$a})';
 $string['questionsnumber'] = 'Galdera-kopurua: ({$a})';
@@ -106,15 +114,16 @@ $string['registeredsites'] = 'Erregistratutako guneak';
 $string['registereduserdevices'] = 'Erregistratutako gailu mugikorrak duen erabiltzaile-kopurua ({$a})';
 $string['registerwithmoodleorg'] = 'Erregistratu zeure gunea';
 $string['registerwithmoodleorgcomplete'] = 'Osatu zure gunearen erregistroa';
-$string['registerwithmoodleorginfo'] = 'Zurekin harremanetan egotea eta zure Moodle gunerako gauza garrantzitsuak eskaintzea gustatuko litzaiguke! Erregistratuz gero:
+$string['registerwithmoodleorginfo'] = 'Zure gunea erregistratzeak periodikoki <a href="{$a->moreinformation}" class="focus-expand">anonimo bihurtutako guneko estatistikak</a> Moodle HQra bidaltzea suposatzen du. Honek laguntzen digu Moodle nola erabiltzen duzun ezagutzen, eta funtzio zein plugin berrien inguruko erabakiak hartzen.
 
-* Moodle bertsio berrien kaleratzeen, segurtasun-alerten eta bestelako berri garrantzitsuen jakinarazpenak jasotzeko harpidetu zaitezke.
-* Zure Moodle gunerako mugikorrentzako push jakinarazpenak gaitu ditzakezu gure doako Moodle aplikazioaren bidez.
-* Gure mundu mailako komunitatearen Moodle estatistikei ekarpena egingo diezu, Moodle eta gure komunitateen guneak hobetzen laguntzen diguna.
-* Nahi baduzu, gunea zure herrialdeko erregistratutako Moodle guneen zerrendan gehitu daiteke ere.';
+Horretaz gain, erregistratzeak aukera ematen dizu:
+
+* Egunean egon eguneraketa garrantzitsuen inguruan, hala nola segurtasun-alertak eta bertsio berrien kaleratzeak.
+* Gaitu <a href="{$a->moodleapp}">Moodle aplikazioarentzako</a> gailu mugikorrentzako push jakinarazpenak.
+* Handitu zure gunearen ikusgarritasuna zure herrialdeko erregistratutako Moodle guneen zerrendan sartuta (aukerazkoa).';
 $string['registerwithmoodleorginfoapp'] = 'Moodle aplikazioari buruz';
-$string['registerwithmoodleorginfosites'] = 'Nire herrialdeko beste gune batzuk';
-$string['registerwithmoodleorginfostats'] = 'Moodle estatistikak';
+$string['registerwithmoodleorginfosites'] = 'Ezagutu nire herrialdeko beste gune batzuk';
+$string['registerwithmoodleorginfostats'] = 'Ikusi Moodleko estatistika globalak';
 $string['registerwithmoodleorgremove'] = 'Zure gunearen erregistroa ezabatzear zaude. Aurrerantzean ez duzu segurtasun-alerten jakinarazpenik jasoko eta erabiltzaileek ezingo dute euren Moodle aplikazioan zure guneko push jakinarazpenik jasoko. Edonola ere, edozein unetan zure gunea berriz erregistratu ahalko duzu. Ziur zaude aurrera nahi duzula?';
 $string['registerwithmoodleorgupdate'] = 'Eguneratu zure gunearen erregistroa';
 $string['registrationconfirmed'] = 'Gunearen erregistroa baieztatuta';
@@ -147,6 +156,27 @@ $string['sitelang'] = 'Hizkuntza';
 $string['sitelang_help'] = 'Zein da zure Moodle gunearen hizkuntza nagusia?';
 $string['sitename'] = 'Izena';
 $string['sitename_help'] = 'Gunearen izena guneen zerrendan agertuko da, bilguneak onartzen badu.';
+$string['siteorganisationtype'] = 'Erakunde mota';
+$string['siteorganisationtype:charityornotforprofit'] = 'Ongintzarako edo Irabazi Asmorik Gabekoa';
+$string['siteorganisationtype:charterschool'] = 'Eskola kontzertatua';
+$string['siteorganisationtype:college'] = 'Ikastetxea';
+$string['siteorganisationtype:collegedepartment'] = 'Ikastetxeko saila';
+$string['siteorganisationtype:commercialcourseprovider'] = 'Ikastaro komertzialen hornitzailea';
+$string['siteorganisationtype:companydepartment'] = 'Erakundeko saila';
+$string['siteorganisationtype:companyinternal'] = 'Enpresa barruako';
+$string['siteorganisationtype:donotshare'] = 'Ez partekatu';
+$string['siteorganisationtype:government'] = 'Gobernua';
+$string['siteorganisationtype:highschool'] = 'Bigarren Hezkuntzako Institutua';
+$string['siteorganisationtype:highschooldepartment'] = 'Bigarren Hezkuntzako Institutuaren saila';
+$string['siteorganisationtype:highschooldistrict'] = 'Bigarren Hezkuntzako Institutuko barrutia';
+$string['siteorganisationtype:hospital'] = 'Ospitalea';
+$string['siteorganisationtype:independentteacher'] = 'Irakasle independentea';
+$string['siteorganisationtype:other'] = 'Beste bat';
+$string['siteorganisationtype:primaryschool'] = 'Lehen Hezkuntzako eskola';
+$string['siteorganisationtype:schooldistrict'] = 'Lehen Hezkuntzako eskola barrutia';
+$string['siteorganisationtype:universitydepartment'] = 'Unibertsitateko saila';
+$string['siteorganisationtype:wholeuniversity'] = 'Unibertsitatea';
+$string['siteorganisationtype_help'] = 'Zure erakunde-mota jakiteak Moodle erabiltzen duten erakunde-motak eta euren beharrak hobeto ezagutzen laguntzen digu.';
 $string['sitephone'] = 'Telefonoa';
 $string['sitephone_help'] = 'Zure telefono-zenbakiak bilguneko kudeatzaileak baino ez du ikusiko.';
 $string['siteprivacy'] = 'Gunearen zerrendatzea';
@@ -170,6 +200,10 @@ $string['siteversion_help'] = 'Gune honen Moodleren bertsioa.';
 $string['skipregistration'] = 'Utzi alde batera';
 $string['subject'] = 'Gaia';
 $string['subject_help'] = 'Aukeratu ikastaroaren gai nagusia.';
+$string['success_count'] = 'Arrakasta kopurua ({$a})';
+$string['time_range'] = 'Denbora-tartea';
+$string['timefrom'] = 'Data honetatik: ({$a})';
+$string['timeto'] = 'Data honetara arte: ({$a})';
 $string['type'] = 'Partekatuta';
 $string['unregister'] = 'Ezabatu erregistroa';
 $string['unregistrationerror'] = 'Errorea gertatu da gunearen erregistroa ezabatzen saiatu denean: {$a}';

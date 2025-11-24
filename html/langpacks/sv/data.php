@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'sv', version '4.4'.
+ * Strings for component 'data', language 'sv', version '4.5'.
  *
  * @package     data
  * @category    string
@@ -29,7 +29,6 @@ $string['action'] = 'Åtgärd';
 $string['actionsmenu'] = 'Åtgärdsmeny';
 $string['add'] = 'Ny post';
 $string['addcomment'] = 'Lägg till kommentarer';
-$string['addentries'] = 'Lägg till poster';
 $string['addtemplate'] = 'Lägg till en mall för poster';
 $string['advancedsearch'] = 'Avancerad sökning';
 $string['allowcomments'] = 'Tillåt kommentarer för poster';
@@ -54,8 +53,6 @@ $string['availabletags_help'] = '<p align="center"><strong>Tillgängliga etikett
 <p>Endast de etiketter som finns in listan "Tillgängliga etiketter" kan användas för den aktuella mallen.</p>';
 $string['availabletodate'] = 'Tillgänglig t.o.m.';
 $string['availabletodatevalidation'] = 'Tillgänglig till-datum kan inte vara före tillgänglig-från datum.';
-$string['blank'] = 'Tom';
-$string['buttons'] = 'Åtgärder';
 $string['bynameondate'] = 'av {$a->name} - {$a->date}';
 $string['calendarend'] = '{$a} stänger';
 $string['calendarstart'] = '{$a} öppnar';
@@ -303,7 +300,6 @@ $string['nomatch'] = 'Det gick inte att hitta några matchande poster!';
 $string['nomaximum'] = 'Ingen maxgräns';
 $string['nopreviewavailable'] = 'Det finns ingen förhandsgranskning tillgänglig för {$a}';
 $string['norecords'] = 'Det finns inga poster i databasen';
-$string['nosingletemplate'] = 'Det har inte definierats någon mall för enskilda poster ännu';
 $string['notapproved'] = 'Posten är inte godkänd ännu.';
 $string['notinjectivemap'] = 'Detta är inte en injektiv karta';
 $string['notopenyet'] = 'Den här aktiviteten är tyvärr inte tillgänglig förrän {$a}';
@@ -323,7 +319,6 @@ $string['page-mod-data-x'] = 'Valfri sida för databasmodul';
 $string['pagesize'] = 'Poster per sida';
 $string['participants'] = 'Deltagare';
 $string['picture'] = 'Bild';
-$string['pleaseaddsome'] = 'Vänligen skapa några här nedan eller <a href="{$a}">välj en förinställd mall</a> för att komma igång.';
 $string['pluginadministration'] = 'Administration av aktivitet av typ databas';
 $string['pluginname'] = 'Databas';
 $string['portfolionotfile'] = 'Exportera hellre till en portfolio än till en fil (endast csv och leap2)';
@@ -390,7 +385,6 @@ $string['saveaspresetmissingcapability'] = 'Användaren har inte behörighet att
 $string['savedataaspreset'] = 'Spara alla fält och mallar som förinställning';
 $string['savesettings'] = 'Spara inställningar';
 $string['savesuccess'] = 'Förinställningar sparades. Den kommer nu att vara tillgänglig på hela webbplatsen.';
-$string['savetemplate'] = 'Spara mall';
 $string['search'] = 'Sök';
 $string['search:activity'] = 'Databas - aktivitetsinformation';
 $string['search:entry'] = 'Databas - poster';
@@ -418,7 +412,6 @@ $string['text'] = 'Text';
 $string['textarea'] = 'Textfält';
 $string['timeadded'] = 'Tillagd';
 $string['timemodified'] = 'Modifierad';
-$string['todatabase'] = 'till den här databasen';
 $string['type'] = 'Fälttyp';
 $string['undefinedprocessactionmethod'] = 'Ingen metod för händelser har definierats i Data_Preset för att hantera åtgärden "{$a}".';
 $string['unsupportedfields'] = 'Fält som ej stöds';

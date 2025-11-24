@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'eu', version '4.4'.
+ * Strings for component 'plugin', language 'eu', version '4.5'.
  *
  * @package     plugin
  * @category    string
@@ -53,6 +53,8 @@ $string['err_response_format_version'] = 'Erantzunaren formatuaren ezusteko bert
 $string['err_response_http_code'] = 'Ezin izan da eskuragarri dauden eguneraketen daturik eskuratu - ezusteko HTTP erantzun-kodea-';
 $string['filterall'] = 'Erakutsi guztiak';
 $string['filtercontribonly'] = 'Erakutsi plugin gehigarriak soilik';
+$string['filtermissingonly'] = 'Erakutsi soilik diskotik falta direnak';
+$string['filternewpluginsonly'] = 'Erakutsi soilik instalatzera doazen pluginak';
 $string['filterupdatesonly'] = 'Erakutsi eguneratzeko modukoak soilik';
 $string['incompatibleversion'] = 'Bateragarria ez den Moodle bertsioa: {$a}';
 $string['isenabled'] = 'Gaituta?';
@@ -110,6 +112,10 @@ $string['status_uptodate'] = 'Instalatuta';
 $string['supportedconversions'] = 'Onartutako dokumentu-bihurketak';
 $string['supportedmoodleversions'] = 'Onartutako Moodle bertsioak';
 $string['systemname'] = 'Identifikatzailea';
+$string['type_aiplacement'] = 'AA kokatze plugina';
+$string['type_aiplacement_plural'] = 'AA kokatze pluginak';
+$string['type_aiprovider'] = 'AA hornitzaile plugina';
+$string['type_aiprovider_plural'] = 'AA hornitzaile pluginak';
 $string['type_antivirus'] = 'Antiburus-plugina';
 $string['type_antivirus_plural'] = 'Antiburus-pluginak';
 $string['type_auth'] = 'Autentifikazio-metodoa';
@@ -192,6 +198,8 @@ $string['type_repository'] = 'Biltegia';
 $string['type_repository_plural'] = 'Biltegiak';
 $string['type_search'] = 'Bilaketa-motorra';
 $string['type_search_plural'] = 'Bilaketa-motorrak';
+$string['type_smsgateway'] = 'SMS ataria';
+$string['type_smsgateway_plural'] = 'SMS atariak';
 $string['type_theme'] = 'Azala';
 $string['type_theme_plural'] = 'Azalak';
 $string['type_tool'] = 'Kudeaketa-tresna';

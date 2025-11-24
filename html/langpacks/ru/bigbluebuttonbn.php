@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'ru', version '4.4'.
+ * Strings for component 'bigbluebuttonbn', language 'ru', version '4.5'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -41,6 +41,7 @@ $string['bigbluebuttonbn:join'] = 'Участвовать в собрании';
 $string['bigbluebuttonbn:managerecordings'] = 'Управлять записями';
 $string['bigbluebuttonbn:protectrecordings'] = 'Защищать записи';
 $string['bigbluebuttonbn:publishrecordings'] = 'Публиковать записи';
+$string['bigbluebuttonbn:seepresentation'] = 'Всегда видеть файл презентации на странице активного элемента';
 $string['bigbluebuttonbn:unprotectrecordings'] = 'Снимать защиту с записей';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'Отменять публикацию записей';
 $string['bigbluebuttonbn:view'] = 'Видеть комнату BigBlueButton';
@@ -201,6 +202,10 @@ $string['config_server_url'] = 'URL сервера BigBlueButton';
 $string['config_server_url_description'] = 'URL-адрес вашего сервера BigBlueButton.';
 $string['config_shared_secret'] = 'Секретный ключ BigBlueButton';
 $string['config_shared_secret_description'] = 'Секретный ключ вашего сервера BigBlueButton.';
+$string['config_showpresentation_default'] = 'Показать файл презентации на странице активного элемента';
+$string['config_showpresentation_default_description'] = 'Должны ли студенты иметь доступ к файлу презентации до начала сеанса? Эта настройка не влияет на пользователей с возможностью «Всегда видеть файл презентации на странице конференции».';
+$string['config_showpresentation_editable'] = 'Опция «Показать файл презентации на странице конференции»';
+$string['config_showpresentation_editable_description'] = 'В настройках конференции предоставить преподавателям возможность выбрать, показывать ли файл презентации студентам.';
 $string['config_uidelegation_enabled'] = 'Делегирование пользовательского интерфейса включено';
 $string['config_uidelegation_enabled_description'] = 'Эти параметры включают или отключают делегирование пользовательского интерфейса серверу BigBlueButton.';
 $string['config_userlimit'] = 'Конфигурация для функции «Ограничение пользователей»';
@@ -372,6 +377,7 @@ $string['mod_form_field_recordings_html'] = 'Показать таблицу в 
 $string['mod_form_field_recordings_imported'] = 'Показывать только импортированные ссылки';
 $string['mod_form_field_recordings_preview'] = 'Показать предварительный просмотр записи';
 $string['mod_form_field_room_name'] = 'Название собрания';
+$string['mod_form_field_showpresentation'] = 'Показать файл презентации на странице активного элемента';
 $string['mod_form_field_userlimit'] = 'Ограничение на количество пользователей';
 $string['mod_form_field_userlimit_help'] = 'Максимальное разрешенное количество пользователей на собрании. Если установлено значение 0, то количество пользователей не будет ограничено.';
 $string['mod_form_field_voicebridge'] = 'Номер голосового моста [####]';

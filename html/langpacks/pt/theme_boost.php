@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'pt', version '4.4'.
+ * Strings for component 'theme_boost', language 'pt', version '4.5'.
  *
  * @package     theme_boost
  * @category    string
@@ -34,7 +34,6 @@ $string['brandcolor'] = 'Cor da marca';
 $string['brandcolor_desc'] = 'A cor do rebordo.';
 $string['choosereadme'] = 'Boost é um tema moderno altamente personalizável. Este tema é destinado a ser usado como tal, ou como tema original para criar novos temas utilizando o Bootstrap 4.';
 $string['configtitle'] = 'Boost';
-$string['currentinparentheses'] = '(atual)';
 $string['generalsettings'] = 'Configurações gerais';
 $string['loginbackgroundimage'] = 'Imagem de fundo da página de autenticação';
 $string['loginbackgroundimage_desc'] = 'A imagem a ser exibida como fundo na página de autenticação.';
@@ -48,8 +47,6 @@ $string['privacy:drawerblockclosed'] = 'A preferência atual para o painel dos b
 $string['privacy:drawerblockopen'] = 'A preferência atual para o painel dos blocos é aberta.';
 $string['privacy:drawerindexclosed'] = 'A preferência atual para o painel do índice da disciplina é fechada.';
 $string['privacy:drawerindexopen'] = 'A preferência atual para o painel do índice da disciplina é aberta.';
-$string['privacy:drawernavclosed'] = 'A preferência atual do menu de navegação é fechado.';
-$string['privacy:drawernavopen'] = 'A preferência atual do menu de navegação é aberto.';
 $string['privacy:metadata'] = 'O tema Boost não armazena quaisquer dados pessoais dos utilizadores.';
 $string['privacy:metadata:preference:draweropenblock'] = 'A preferência do utilizador para ocultar ou mostrar o painel dos blocos.';
 $string['privacy:metadata:preference:draweropenindex'] = 'A preferência do utilizador para ocultar ou mostrar o painel do índice da disciplina.';

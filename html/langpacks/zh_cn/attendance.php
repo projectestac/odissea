@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attendance', language 'zh_cn', version '4.4'.
+ * Strings for component 'attendance', language 'zh_cn', version '4.5'.
  *
  * @package     attendance
  * @category    string
@@ -143,12 +143,12 @@ $string['coursemessage'] = '向课程用户发送消息';
 $string['courseshortname'] = '课程简称';
 $string['coursesummary'] = '课程汇总报表';
 $string['createmultiplesessions'] = '创建多个课时';
-$string['createmultiplesessions_help'] = '您可使用此项功能来一步建立多个上课时间。
-该多个上课时间开始日期依据基础课时的日期，并且持续到“上课结束日期”。
+$string['createmultiplesessions_help'] = '此功能简化您创建周期性考勤。
+这些考勤自“起始日”起，持续重复到“结束日”。
 
-* <strong>上课日</strong>: 选择上课日(例如星期二/星期三/星期五等等)；
-* <strong>频率</strong>: 在此设定频率。如每周上课则选1，隔周上课则选2，每三周一次课则选3，等等；
-* <strong>上课结束日期</strong>: 选择上课结束日期 (您想点名的最后一天)。';
+* <strong>周X</strong>: 设定考勤重复星期(例如周二/周三/周五等)；
+* <strong>每X周</strong>: 设定考勤重复频率。如每周考勤则选1，隔周考勤则选2，每三周考勤则选3，以此类推；
+* <strong>结束日</strong>: 选择最后的考勤日。';
 $string['createonesession'] = '为此课程创建课时';
 $string['csvdelimiter'] = 'CSV分割符';
 $string['currentlyselectedusers'] = '当前选中用户';
@@ -199,19 +199,19 @@ $string['emailcontent_default'] = '%userfirstname%, 你好。
 您在 %coursename% %attendancename% 中的出勤率已降至 %warningpercent% 以下，目前为 %percent% ，希望您还顺利！
 
 为了更好地通过此课程，您应提高出勤率，若您需要更多帮助，请与我们联系。';
-$string['emailcontent_help'] = '当给学生发送提醒信息的时候，下面的字段可在邮件内容中：
+$string['emailcontent_help'] = '当向学生发送警告时，您可使用以下字段：
 <ul>
-<li>%coursename%</li>
-<li>%userfirstname%</li>
-<li>%userlastname%</li>
-<li>%userid%</li>
-<li>%warningpercent%</li>
-<li>%attendancename%</li>
-<li>%cmid%</li>
-<li>%numtakensessions%</li>
-<li>%points%</li>
-<li>%maxpoints%</li>
-<li>%percent%</li>
+    <li>%coursename%</li>
+    <li>%userfirstname%</li>
+    <li>%userlastname%</li>
+    <li>%userid%</li>
+    <li>%warningpercent%</li>
+    <li>%attendancename%</li>
+    <li>%cmid%</li>
+    <li>%numtakensessions%</li>
+    <li>%points%</li>
+    <li>%maxpoints%</li>
+    <li>%percent%</li>
 </ul>';
 $string['emailsubject'] = '邮件主题';
 $string['emailsubject_default'] = '出勤警告';
@@ -323,10 +323,10 @@ $string['manualtriggerauto'] = '手动触发自动评分';
 $string['marksessionimportcsvhelp'] = '此表单允许您上传包含用户标识符和状态的 csv 文件 - 状态字段可以是状态首字母缩略词或为该用户记录出勤的时间。如果传递了时间值，则它将尝试为状态值分配当时可用的最高成绩。';
 $string['maxpossible'] = '最大可能';
 $string['maxpossible_help'] = '显示每个用户在每个会话中未获得的最高分（过去和未来）时可以达到的分数：
-   <ul>
-    <li><strong>点数</strong>: 用户在所有时段中可以获得的最大点数。</li>
-    <li><strong>百分比</strong>: 用户在所有时段中可以获得的最高百分比。</li>
-    </ul>';
+ <ul>
+    <li><strong>Points</strong>: maximum points each user can reach over all sessions.</li>
+    <li><strong>Percentage</strong>: maximum percentage each user can reach over all sessions.</li>
+</ul>';
 $string['maxpossiblepercentage'] = '最大可能百分比';
 $string['maxpossiblepoints'] = '最大可能点数';
 $string['maxwarn'] = '电子邮件提醒的最大数量';
@@ -379,24 +379,25 @@ $string['notmember'] = 'not&nbsp;成员';
 $string['notset'] = '未设置';
 $string['nounmarkedstatusset'] = '此课程（id:{$a->sessionid}）未配置未标记状态，要修复此问题，请更新<a href="{$a->url}">状态设置</a>';
 $string['noupgradefromthisversion'] = '考勤模块不能在您attforblock的版本上升级。安装新的考勤模块前请删除attforblock或更新到最新版本。';
+$string['nousers'] = '未找到已注册课程用户进行考勤。';
 $string['numsessions'] = '课时数';
 $string['numsessionstaken'] = '参加课时数';
 $string['olddate'] = '旧日期';
 $string['onactivitycompletion'] = '在活动完成时';
 $string['onlyselectedusers'] = '导出特定用户';
 $string['overallsessions'] = '所有课时';
-$string['overallsessions_help'] = '显示全部时段活动的统计信息包括那些未出席的（过去和未来）：
+$string['overallsessions_help'] = '显示所有课时的统计数据，包括尚未进行的课时（过去和未来）：
     <ul>
-    <li><strong>时段活动</strong>: 时段活动总数。</li>
-    <li><strong>点数</strong>: 已出席活动所获得的点数。</li>
-    <li><strong>比例</strong>: 已获得点数占全部活动最大可能点数的比例。</li>
+    <li><strong>课时</strong>: 课时总数。</li>
+    <li><strong>分数</strong>: 已出勤课时中所获得的分数。</li>
+    <li><strong>比例</strong>: 所有课程中，所获分数占最高可能分数的百分比。</li>
     </ul>';
 $string['oversessionstaken'] = '已完成课时';
-$string['oversessionstaken_help'] = '显示已出席时段活动的统计信息：
+$string['oversessionstaken_help'] = '显示已出勤课时的统计信息：
     <ul>
-    <li><strong>活动</strong>: 已出席的时段活动数量。</li>
-    <li><strong>点数</strong>: 已出席活动所获得的点数</li>
-    <li><strong>比例</strong>: 已出席活动获得的点数点最大可能点数的比例。</li>
+    <li><strong>课时</strong>: 已出勤课时数。</li>
+    <li><strong>分数</strong>: 已出勤课时所获得分数</li>
+    <li><strong>比例</strong>: 已出勤课时的最高可能分数中，所获得分数的百分比。</li>
     </ul>';
 $string['pageof'] = '页码： {$a->page} / {$a->numpages}';
 $string['participant'] = '参加';
@@ -444,7 +445,7 @@ $string['privacy:metadata:timetaken'] = '学生考勤记录的时间戳。';
 $string['privacy:metadata:userid'] = '发送警告的用户 ID。';
 $string['processingfile'] = '处理文件';
 $string['qr_cookie_error'] = '二维码已过期。';
-$string['qr_pass_wrong'] = '二维码密码错误或已过期。';
+$string['qr_pass_wrong'] = '二维码已过期，请重新扫描二维码。';
 $string['qrcode'] = '二维码';
 $string['qrcodeandpasswordheader'] = '扫描二维码或输入密码签到：';
 $string['qrcodeheader'] = '扫描二维码签到：';
@@ -464,14 +465,14 @@ $string['reportsessionlasttaken'] = '课时最后使用时间（教师）';
 $string['required'] = '必填*';
 $string['requiredentries'] = '临时记录会覆盖参与者的出勤记录';
 $string['requiredentry'] = '临时用户合并帮助指南';
-$string['requiredentry_help'] = '<p align="center"><b>考勤记录</b></p>
+$string['requiredentry_help'] = '<p align="center"><b>考勤</b></p>
 <p align="left"><strong>合并用户</strong></p>
 <p align="left">
 <table border="2" cellpadding="4">
 <tr>
 <th>Moodle 用户</th>
 <th>临时用户</th>
-<th>动作</th>
+<th>操作</th>
 </tr>
 <tr>
 <td>考勤数据</td>

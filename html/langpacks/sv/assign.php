@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'sv', version '4.4'.
+ * Strings for component 'assign', language 'sv', version '4.5'.
  *
  * @package     assign
  * @category    string
@@ -244,6 +244,7 @@ $string['feedbacksettings'] = 'Inställningar för återkoppling';
 $string['feedbacktypes'] = 'Feedback typer';
 $string['filesubmissions'] = 'Filinlämningar';
 $string['filter'] = 'Filter';
+$string['filterall'] = 'Alla';
 $string['filterdraft'] = 'Utkast';
 $string['filtergrantedextension'] = 'Beviljad förlängning av inlämningstiden';
 $string['filternone'] = 'Inga filter';
@@ -301,6 +302,7 @@ $string['hidegrader_help'] = 'Om aktiverad döljs identiteten för de användare
 Observera att den här inställningen inte har någon effekt i kommentarsrutan på bedömningssidan.';
 $string['hideshow'] = 'Döjl/Visa';
 $string['inactiveoverridehelp'] = '* Den här åsidosättningen är inaktiv eftersom användarens åtkomst till aktiviteten är begränsad. Detta kan bero på grupp- eller rolltilldelningar, andra åtkomstbegränsningar, eller att aktiviteten är dold.';
+$string['includesuspendedparticipants'] = 'Inkludera avstängda användare';
 $string['indicator:cognitivedepth'] = 'Inlämningsuppgift kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Denna indikator baseras på det kognitiva djup som uppnåtts av studenten i en inlämningsuppgiftsaktivitet.';
 $string['indicator:cognitivedepthdef'] = 'inlämningsuppgift kognitiv';
@@ -589,7 +591,7 @@ $string['subplugintype_assignfeedback'] = 'Feedback plugin';
 $string['subplugintype_assignfeedback_plural'] = 'Feedback plugins';
 $string['subplugintype_assignsubmission'] = 'Inlämning plugin';
 $string['subplugintype_assignsubmission_plural'] = 'Inlämningsuppgifter';
-$string['teamname'] = 'Team: {$a}';
+$string['teamname'] = 'Grupp: {$a}';
 $string['teamsubmission'] = 'Elever lämnar in i grupp';
 $string['teamsubmission_help'] = 'Om aktiverat kommer elever att delas in i grupper baserat på den förvalda eller anpassade gruppindelningen. En gruppinlämning kommer att delas av gruppmedlemmarna och alla medlemmar i gruppen kommer att se varandras ändringar i inlämningen.';
 $string['teamsubmissiongroupingid'] = 'Gruppering för elevgrupper';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_seb', language 'zh_cn', version '4.4'.
+ * Strings for component 'quizaccess_seb', language 'zh_cn', version '4.5'.
  *
  * @package     quizaccess_seb
  * @category    string
@@ -94,6 +94,7 @@ $string['seb:manage_seb_allowedbrowserexamkeys'] = '更改SEB测验设置：允�
 $string['seb:manage_seb_allowreloadinexam'] = '更改SEB测验设置：允许重新加载';
 $string['seb:manage_seb_allowspellchecking'] = '更改SEB测验设置：启用拼写检查';
 $string['seb:manage_seb_allowuserquitseb'] = '更改SEB测验设置：允许退出';
+$string['seb:manage_seb_configuremanually'] = '更改SEB测试设置：选择手动配置';
 $string['seb:manage_seb_enableaudiocontrol'] = '更改SEB测验设置：启用音频控制';
 $string['seb:manage_seb_expressionsallowed'] = '更改SEB测验设置：允许简单表达式';
 $string['seb:manage_seb_expressionsblocked'] = '更改SEB测验设置：阻止简单表达式';
@@ -112,6 +113,7 @@ $string['seb:manage_seb_showtime'] = '更改SEB测验设置：显示时间';
 $string['seb:manage_seb_showwificontrol'] = '更改SEB测验置：显示Wi-Fi控制';
 $string['seb:manage_seb_templateid'] = '更改SEB测验设置：选择SEB模板';
 $string['seb:manage_seb_userconfirmquit'] = '更改SEB测验设置：确认退出';
+$string['seb:manage_seb_usesebclientconfig'] = '更改SEB测试设置：使用SEB客户端配置';
 $string['seb:managetemplates'] = '管理SEB配置模板';
 $string['seb_activateurlfiltering'] = '启用URL过滤';
 $string['seb_activateurlfiltering_help'] = '如果启用，url将在加载web页面时被过滤。过滤器集必须在下面定义。';

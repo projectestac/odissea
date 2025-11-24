@@ -1,0 +1,271 @@
+<?php
+// This file is part of Moodle - https://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
+
+/**
+ * Strings for component 'repository', language 'lt', version '4.5'.
+ *
+ * @package     repository
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+defined('MOODLE_INTERNAL') || die();
+
+$string['accessiblefilepicker'] = 'Pasiekiamas failų parinkiklis';
+$string['activaterep'] = 'Aktyvios saugyklos';
+$string['activerepository'] = 'Galimi saugyklos papildiniai';
+$string['activitybackup'] = 'Veiklos atsarginė kopija';
+$string['add'] = 'Įtraukti';
+$string['addfile'] = 'Įtraukti...';
+$string['addfiletext'] = 'Pridėti failą';
+$string['addplugin'] = 'Įtraukti saugyklos papildinį';
+$string['aliaseschange'] = 'Yra {$a} nuorodos į šį failą. Jei tęsite, vietos, kurios šiuo metu yra susietos su failu, bus automatiškai atnaujintos, kad būtų naudojama failo kopija.';
+$string['allowexternallinks'] = 'Leisti išorinius saitus';
+$string['areacategoryintro'] = 'Supažindinimas su kategorija';
+$string['areacourseintro'] = 'Supažindinimas su kursu';
+$string['areacourseoverviewfiles'] = 'Kurso paveikslėlis';
+$string['areamainfile'] = 'Pagrindinis failas';
+$string['arearoot'] = 'Sistema';
+$string['areauserbackup'] = 'Naudotojo atsarginė kopija';
+$string['areauserdraft'] = 'Juodraščiai';
+$string['areauserpersonal'] = 'Asmeniniai failai';
+$string['areauserprofile'] = 'Profilis';
+$string['attachedfiles'] = 'Pridėti failai';
+$string['attachment'] = 'Priedas';
+$string['author'] = 'Kūrėjas';
+$string['automatedbackup'] = 'Automatinės atsarginės kopijos';
+$string['back'] = 'Atgal';
+$string['backtodraftfiles'] = 'Atgal į juodraštinių failų tvarkyklę';
+$string['cachecleared'] = 'Talpyklos failai pašalinami';
+$string['cacheexpire'] = 'Talpyklos galiojimo laikas baigėsi';
+$string['cannotaccessparentwin'] = 'Naudojant HTTPS, saugykla nėra atnaujinama automatiškai. Vietoj to turite grįžti į failų rinkiklį ir dar kartą pasirinkti saugyklą.';
+$string['cannotdelete'] = 'Negalima panaikinti šio failo.';
+$string['cannotdownload'] = 'Negalima atsisiųsti šio failo';
+$string['cannotdownloaddir'] = 'Negalima atsisiųsti šio aplanko';
+$string['cannotinitplugin'] = 'Nepavyko iškviesti plugin_init';
+$string['cannotunzipcontentunreadable'] = 'Šio failo negalima išpakuoti, nes failo turinio negalima perskaityti.';
+$string['cannotunzipextractfileerror'] = 'Šio failo negalima išpakuoti, nes negalima perskaityti vieno ar kelių jo failų.';
+$string['cannotunzipquotaexceeded'] = 'Šio failo negalima išpakuoti, nes bus viršytas didžiausias leistinas dydis šioje juodraščio srityje.';
+$string['choosealink'] = 'Pasirinkti saitą...';
+$string['chooselicense'] = 'Pasirinkti licenciją';
+$string['chooselicense_help'] = 'Norėdami gauti daugiau informacijos apie galimas licencijos parinktis, sekite šias nuorodas:';
+$string['cleancache'] = 'Išvalyti mano talpyklos failus';
+$string['close'] = 'Uždaryti';
+$string['commonrepositorysettings'] = 'Bendrieji saugyklos parametrai';
+$string['configallowexternallinks'] = 'Ši parinktis leidžia visiems naudotojams pasirinkti, ar jie nori kopijuoti į „Moodle“ išorinę mediją. Jei ši parinktis išjungta, medija visada bus kopijuojama į „Moodle“ (paprastai taip geriausiai užtikrinamas bendras duomenų vientisumas ir sauga). Jei ši parinktis įjungta, naudotojai kiekvieną kartą gali pasirinkti, ar mediją įtraukti į tekstą.';
+$string['configcacheexpire'] = 'Failų sąrašų talpinimo vietoje laikas (sekundėmis), kai naršoma išorinėse saugyklose.';
+$string['configgetfiletimeout'] = 'Išorinio failo atsisiuntimo į Moodle laikas sekundėmis.';
+$string['configsaved'] = 'Konfigūracija įrašyta!';
+$string['configsyncfiletimeout'] = 'Išorinio failo dydžio sinchronizavimo laikas (sekundėmis).';
+$string['configsyncimagetimeout'] = 'Vaizdo failo atsisiuntimo iš išorinės saugyklos laikas sinchronizacijos metu sekundėmis.';
+$string['confirmdelete'] = 'Ar tikrai norite ištrinti saugyklą {$a}? Jei pasirinksite „Tęsti ir atsisiųsti“, failų nuorodos į išorinį turinį bus atsisiųstos į „Moodle“. Tai gali užtrukti ilgai.';
+$string['confirmdeletefile'] = 'Ar tikrai norite naikinti šį failą?';
+$string['confirmdeletefilewithhref'] = 'Ar tikrai norite ištrinti šį failą? Yra {$a} nuorodos į šį failą. Jei tęsite, vietos, kurios šiuo metu yra susietos su failu, bus automatiškai atnaujintos, kad būtų naudojama failo kopija.';
+$string['confirmdeletefolder'] = 'Ar Jūs tikrai norite ištrinti šį aplanką? Visi aplankai ir poaplankiai bus ištrinti.';
+$string['confirmdeleteselectedfile'] = 'Ar tikrai norite ištrinti pasirinktus {$a} failus?';
+$string['confirmremove'] = 'Ar tikrai norite pašalinti šį saugyklos papildinį, jo parinktis ir <strong>visus jo atvejus</strong> – {$a}? Jei pasirinksite „Tęsti ir atsisiųsti“, failų nuorodos į išorinį turinį bus atsisiųstos į „Moodle“. Tai gali užtrukti ilgai.';
+$string['confirmrenamefile'] = 'Ar tikrai norite pervardyti/perkelti šį failą?';
+$string['confirmrenamefolder'] = 'Ar tikrai norite perkelti / pervardyti šį aplanką? Visos vietos, kuriose šiuo metu yra nuoroda į šio aplanko failus, bus automatiškai atnaujintos, kad būtų naudojamos failo kopijos.';
+$string['continueuninstall'] = 'Tęsti';
+$string['continueuninstallanddownload'] = 'Tęsti ir parsiųsti';
+$string['copying'] = 'Kopijavimas';
+$string['coursebackup'] = 'Kursų atsarginės kopijos';
+$string['create'] = 'Kurti';
+$string['createfolder'] = 'Sukurti aplanką';
+$string['createfolderfail'] = 'Nepavyko sukurti šio aplanko';
+$string['createfoldersuccess'] = 'Aplankas sėkmingai sukurtas';
+$string['createinstance'] = 'Kurti saugyklos egzempliorių';
+$string['createrepository'] = 'Kurti saugyklos egzempliorių';
+$string['createxxinstance'] = 'Kurti {$a} egzempliorių';
+$string['date'] = 'Data';
+$string['datecreated'] = 'Sukurtas';
+$string['deleted'] = 'Saugykla panaikinta';
+$string['deleterepository'] = 'Naikinti šią saugyklą';
+$string['detailview'] = 'Žiurėti detaliau';
+$string['dimensions'] = 'Matmenys';
+$string['disabled'] = 'Išjungta';
+$string['displayasdetails'] = 'Rodyti kaip failo detales';
+$string['displayasicons'] = 'Rodyti kaip failo piktogramas';
+$string['displayastree'] = 'Rodyti kaip failo medį';
+$string['displaydetails'] = 'Rodyti aplanką su failo detalėmis';
+$string['displayicons'] = 'Rodyti aplanką su failo piktogramomis';
+$string['displaytree'] = 'Rodyti aplanką kaip failo medį';
+$string['download'] = 'Atsisiųsti';
+$string['downloadallfiles'] = 'Parsisiųsti visus failus';
+$string['downloadfolder'] = 'Atsisiųsti viską';
+$string['downloadsucc'] = 'Failas sėkmingai atsisiųstas';
+$string['draftareanofiles'] = 'Negalima atsisiųsti, nes nepridėta failų';
+$string['editrepositoryinstance'] = 'Redaguoti saugyklos egzempliorių';
+$string['emptylist'] = 'Tuščias sąrašas';
+$string['emptytype'] = 'Negalima sukurti saugyklos tipo: įvestas tuščias vardas';
+$string['enablecourseinstances'] = 'Leisti naudotojams įtraukti saugyklos egzempliorių į kursus';
+$string['enableuserinstances'] = 'Leisti naudotojams įtraukti saugyklos egzempliorių į naudotojo kontekstą';
+$string['enter'] = 'Įvesti';
+$string['entername'] = 'Įveskite aplanko pavadinimą';
+$string['enternewname'] = 'Įveskite naują failo vardą';
+$string['error'] = 'Įvyko nežinoma klaida!';
+$string['errordoublereference'] = 'Nepavyko perrašyti failo su nuoroda, nes nuorodos į šį failą jau yra.';
+$string['errornotyourfile'] = 'Galite pasirinkti tik failus, kuriuos Jūs pridėjote.';
+$string['errorpostmaxsize'] = 'Failas, kurį bandote įkelti, per didelis, kad serveris galėtų jį apdoroti.';
+$string['erroruniquename'] = 'Saugyklos pavadinimas turi būti unikalus';
+$string['errorwhilecommunicatingwith'] = 'Klaida bendraujant su saugykla „{$a}“.';
+$string['errorwhiledownload'] = 'Atsisiunčiant failą įvyko klaida: {$a}';
+$string['existingrepository'] = 'Ši saugykla jau yra';
+$string['federatedsearch'] = 'Jungtinė paieška';
+$string['fileexists'] = 'Failo pavadinimas jau naudojamas, naudokite kitą vardą';
+$string['fileexistsdialog_editor'] = 'Failas su tokiu vardu jau yra prikabintas prie teksto kurį jūs redaguojate.';
+$string['fileexistsdialog_filemanager'] = 'Failas su tokiu vardu jau yra prikabintas';
+$string['fileexistsdialogheader'] = 'Failas egzistuoja';
+$string['filename'] = 'Failo pavadinimas';
+$string['filenotnull'] = 'Turite pasirinkti įkeltiną failą.';
+$string['filepicker'] = 'Failo parinkiklis';
+$string['filesaved'] = 'Failas įrašytas';
+$string['filesizenull'] = 'Failo dydis negali būti nustatytas';
+$string['folderexists'] = 'Aplanko pavadinimas yra panaudotas, prašome naudoti kitą pavadinimą.';
+$string['foldernotfound'] = 'Aplankas nerastas';
+$string['folderrecurse'] = 'Aplanko negalima perkelti į savo poaplankį.';
+$string['getfile'] = 'Pasirinkti šį failą';
+$string['getfiletimeout'] = 'Gauti failo skirtąjį laiką';
+$string['help'] = 'Pagalba';
+$string['iconview'] = 'Peržiūrėti kaip piktogramas';
+$string['imagesize'] = '{$a->width} x {$a->height} px';
+$string['instance'] = 'egzempliorius';
+$string['instancedeleted'] = 'Egzempliorius panaikintas';
+$string['instances'] = 'Saugyklos egzemplioriai';
+$string['instancesforcourses'] = '{$a} Bendras (-i) visų kursų egzempliorius (-iai)';
+$string['instancesforsite'] = '{$a} Bendras (-i) visos svetainės egzempliorius (-iai)';
+$string['instancesforusers'] = '{$a} Naudotojo asmeninis (-iai) egzempliorius (-iai)';
+$string['invalidfiletype'] = 'Failo tipas {$a} nepriimtinas.';
+$string['invalidjson'] = 'Klaidinga JSON eilutė';
+$string['invalidparams'] = 'Klaidingi parametrai';
+$string['invalidplugin'] = 'Netinkamas saugyklos {$a} papildinys';
+$string['invalidrepositoryid'] = 'Klaidingas saugyklos ID';
+$string['isactive'] = 'Aktyvu?';
+$string['keyword'] = 'Raktažodis';
+$string['lastmodified'] = 'Paskutinį kartą keista';
+$string['license'] = 'Licencija';
+$string['linkexternal'] = 'Išorinis saitas';
+$string['listview'] = 'Peržiūrėti kaip sąrašą';
+$string['loading'] = 'Įkeliama...';
+$string['login'] = 'Prisijungti prie savo paskyros';
+$string['logintoaccount'] = 'Prisijungti prie savo {$a} paskyros';
+$string['logout'] = 'Atsijungti';
+$string['lostsource'] = 'Klaida. Šaltinio nėra. {$a}';
+$string['makefilecontrolledlink'] = 'Sukurkite kontroliuojamos prieigos nuorodą į failą';
+$string['makefileinternal'] = 'Padaryti failo kopiją';
+$string['makefilelink'] = 'Nuoroda į išorinį failą';
+$string['makefilereference'] = 'Nuoroda į failą';
+$string['manage'] = 'Tvarkyti saugyklas';
+$string['manageinstances'] = 'Tvarkyti egzempliorius';
+$string['manageurl'] = 'Tvarkyti';
+$string['manageuserrepository'] = 'Tvarkyti atskirą saugyklą';
+$string['missingsourcekey'] = 'Trūksta šaltinio rakto. Šis raktas taip pat turi būti pateiktas norint gauti failą.';
+$string['moving'] = 'Juda';
+$string['name'] = 'Pavadinimas';
+$string['newfolder'] = 'Naujas aplankas';
+$string['newfoldername'] = 'Naujas aplanko pavadinimas:';
+$string['noenter'] = 'Nieko neįvesta';
+$string['nofilesattached'] = 'Failų nepridėta';
+$string['nofilesavailable'] = 'Nėra galimų failų';
+$string['nofilesselected'] = 'Nepasirinkta jokių failų';
+$string['nolicenses'] = 'Galimų licencijų nėra';
+$string['nomorefiles'] = 'Nebėra leidžiamų priedų';
+$string['nopathselected'] = 'Dar nepasirinktas paskirties kelias (dukart spustelėkite medžio mazgą, kad pasirinktumėte)';
+$string['nopermissiontoaccess'] = 'Nėra leidimo pasiekti šios saugyklos';
+$string['norepositoriesavailable'] = 'Atsiprašome, bet nė viena iš dabartinių saugyklų negali grąžinti failų reikalaujamu formatu.';
+$string['norepositoriesexternalavailable'] = 'Atsiprašome, bet nė viena iš dabartinių saugyklų negali grąžinti išorinių failų.';
+$string['noresult'] = 'Nėra paieškos rezultato';
+$string['notyourinstances'] = 'Galite peržiūrėti / redaguoti kito naudotojo saugyklos pavyzdžius';
+$string['off'] = 'Įjungta, bet paslėpta';
+$string['on'] = 'Įjungta ir matoma';
+$string['openpicker'] = 'Pasirinkti failą...';
+$string['operation'] = 'Operacija';
+$string['original'] = 'Originalus';
+$string['originalextensionchange'] = 'Pradinis failo plėtinys buvo pakeistas keičiant failo pavadinimą. Pakeitus plėtinį iš „.{$a->originalextension}“ į „.{$a->newextension}“, gali atsirasti failas, kurio negalima atidaryti.';
+$string['originalextensionremove'] = 'Pradinis failo plėtinys buvo pašalintas keičiant failo pavadinimą. Tikėtina, kad pašalinus plėtinį „.{$a}“ atsiras failas, kurio nepavyks atidaryti.';
+$string['overwrite'] = 'Perrašyti';
+$string['overwriteall'] = 'Perrašyti visus';
+$string['path'] = 'Kelias';
+$string['plugin'] = 'Saugyklos papildiniai';
+$string['pluginerror'] = 'Klaidos saugyklos priede.';
+$string['pluginname'] = 'Saugyklos priedo pavadinimas';
+$string['pluginnamehelp'] = 'Jei paliksite ją tuščią, bus naudojamas numatytasis pavadinimas.';
+$string['popup'] = 'Norėdami prisijungti, spustelėkite mygtuką "Prisijungti"';
+$string['popupblockeddownload'] = 'Atsisiunčiamas langas blokuojamas, leiskite išskleidžiamąjį langą ir bandykite dar kartą.';
+$string['preview'] = 'Peržiūra';
+$string['privacy:metadata:repository'] = 'Saugyklos komponentas saugo saugyklų tipus pagrindiniame posistemyje.';
+$string['privacy:metadata:repository_instances'] = 'Saugyklos papildinių komponentas saugo naudotojo saugyklos egzempliorių duomenis pagrindiniame posistemyje.';
+$string['privacy:metadata:repository_instances:name'] = 'Pasirinktinis saugyklos egzemplioriaus pavadinimas.';
+$string['privacy:metadata:repository_instances:password'] = 'Neprivalomas slaptažodis, sukonfigūruotas saugyklos egzemplioriui.';
+$string['privacy:metadata:repository_instances:timecreated'] = 'Saugyklos egzemplioriaus sukūrimo data / laikas.';
+$string['privacy:metadata:repository_instances:timemodified'] = 'Saugyklos egzemplioriaus modifikavimo data / laikas.';
+$string['privacy:metadata:repository_instances:typeid'] = 'Saugyklos egzemplioriaus ID tipas.';
+$string['privacy:metadata:repository_instances:userid'] = 'Naudotojo, kuriam priklauso saugyklos egzempliorius, ID.';
+$string['privacy:metadata:repository_instances:username'] = 'Neprivalomas naudotojo vardas, sukonfigūruotas saugyklos egzemplioriui.';
+$string['privatefilesof'] = '{$a} Privačios bylos';
+$string['readonlyinstance'] = 'Negalite redaguoti / panaikinti tik skaitomo egzemplioriaus';
+$string['referencesexist'] = 'Yra {$a} nuorodų į šį failą';
+$string['referenceslist'] = 'Nuorodos';
+$string['refresh'] = 'Atnaujinti';
+$string['refreshnonjsfilepicker'] = 'Uždarykite šį langą ir atnaujinkite ne „JavaScript“ failo parinkiklį';
+$string['removed'] = 'Saugykla pašalinta';
+$string['renameall'] = 'Pervadinti visus';
+$string['renameto'] = 'Pervadinti į';
+$string['repositories'] = 'Saugyklos';
+$string['repository'] = 'Saugykla';
+$string['repositorycourse'] = 'Kursų saugyklos';
+$string['repositoryerror'] = 'Nuotolinė saugykla grąžino klaidą: {$a}';
+$string['repositoryicon'] = 'Saugyklos piktograma';
+$string['save'] = 'Įrašyti';
+$string['saveas'] = 'Išsaugoti kaip';
+$string['saved'] = 'Įrašyta';
+$string['saving'] = 'Įrašoma';
+$string['search'] = 'Ieškoti';
+$string['searching'] = 'Ieškoti';
+$string['searchrepo'] = 'Ieškoti saugyklos';
+$string['sectionbackup'] = 'Dalies atsarginės kopijos';
+$string['select'] = 'Pasirinkti';
+$string['setmainfile'] = 'Nustatyti pagrindinį failą';
+$string['setmainfile_help'] = 'Jei aplanke yra keli failai, pagrindinis failas yra tas, kuris rodomas peržiūros puslapyje. Į jį gali būti įterpti kiti failai, pvz., vaizdai ar vaizdo įrašai. Failų tvarkyklėje pagrindinis failas nurodomas pusjuodžiu šriftu.';
+$string['settings'] = 'Parametrai';
+$string['setupdefaultplugins'] = 'Nustatomi numatytieji saugyklos priedai';
+$string['siteinstances'] = 'Svetainės saugyklų egzemplioriai';
+$string['size'] = 'Dydis';
+$string['sourcekeymismatch'] = 'Šaltinio URL neatitinka šaltinio rakto.';
+$string['submit'] = 'Pateikti';
+$string['sync'] = 'Sinchronizuoti';
+$string['syncfiletimeout'] = 'Sinchronizavimo failo skirtasis laikas';
+$string['syncimagetimeout'] = 'Vaizdo sinchronizavimo skirtasis laikas';
+$string['thumbview'] = 'Peržiūrėti kaip piktogramas';
+$string['title'] = 'Pasirinkti failą...';
+$string['type'] = 'Tipas';
+$string['typenotvisible'] = 'Įvesti kaip nematomą';
+$string['undisclosedreference'] = '(Neatskleidžiama)';
+$string['undisclosedsource'] = '(Neatskleidžiama)';
+$string['unknownoriginal'] = 'Nežinomas';
+$string['unknownsource'] = 'Nežinomas šaltinis';
+$string['unzipped'] = 'Išskleista sėkmingai';
+$string['upload'] = 'Įkelti šį failą';
+$string['uploading'] = 'Įkeliama...';
+$string['uploadsucc'] = 'Failas sėkmingai įkeltas';
+$string['uselatestfile'] = 'Naudoti naujausią failą';
+$string['usenonjsfilemanager'] = 'Atidaryti failų tvarkytuvą naujame lange';
+$string['usenonjsfilepicker'] = 'Atidaryti failo parinkiklį naujame lange';
+$string['usercontextrepositorydisabled'] = 'Negalite redaguoti šios saugyklos naudotojo kontekste';
+$string['wrongcontext'] = 'Negalite pasiekti šio konteksto';
+$string['xhtmlerror'] = 'Tikriausiai naudojate griežtą XHTML antraštę. Tam tikri YUI komponentai neveikia šiuo režimu; prašome jį išjungti.';
+$string['ziped'] = 'Aplankas sėkmingai suglaudintas';

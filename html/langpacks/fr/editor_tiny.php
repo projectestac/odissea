@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tiny', language 'fr', version '4.4'.
+ * Strings for component 'editor_tiny', language 'fr', version '4.5'.
  *
  * @package     editor_tiny
  * @category    string
@@ -236,6 +236,7 @@ $string['tiny:indentation'] = 'indentation';
 $string['tiny:indian_rupee_sign'] = 'Symbole roupie indienne';
 $string['tiny:inline'] = 'En ligne';
 $string['tiny:insert'] = 'Insérer';
+$string['tiny:insert_accordion'] = 'Insérer accordéon';
 $string['tiny:insert_column_after'] = 'Insérer colonne après';
 $string['tiny:insert_column_before'] = 'Insérer colonne avant';
 $string['tiny:insert_datetime'] = 'Insérer date/heure';

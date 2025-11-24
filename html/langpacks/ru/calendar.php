@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ru', version '4.4'.
+ * Strings for component 'calendar', language 'ru', version '4.5'.
  *
  * @package     calendar
  * @category    string
@@ -59,6 +59,7 @@ $string['courseevents'] = 'События курса';
 $string['courses'] = 'Курсы';
 $string['customexport'] = 'Пользовательский диапазон ({$a->timestart} - {$a->timeend})';
 $string['daily'] = 'Ежедневно';
+$string['datepicker'] = 'Выбор даты';
 $string['day'] = 'День';
 $string['dayeventsmany'] = 'Событий: {$a->num}, {$a->day}';
 $string['dayeventsnone'] = 'Нет событий, {$a}';
@@ -188,7 +189,9 @@ $string['mon'] = 'Пн';
 $string['monday'] = 'Понедельник';
 $string['monthly'] = 'Ежемесячно';
 $string['monthnext'] = 'Следующий месяц';
+$string['monthnextwithname'] = 'Следующий месяц: {$a}';
 $string['monthprev'] = 'Предыдущий месяц';
+$string['monthprevwithname'] = 'Предыдущий месяц: {$a}';
 $string['monththis'] = 'Этот месяц';
 $string['more'] = 'Больше';
 $string['moreevents'] = 'Еще {$a}';
@@ -208,7 +211,7 @@ $string['pref_lookahead_help'] = 'Этот параметр устанавлив
 $string['pref_maxevents'] = 'Максимальное число предстоящих событий';
 $string['pref_maxevents_help'] = 'Этот параметр отвечает за максимальное число отображаемых предстоящих событий. Если указать большое число, то не исключено, что наступающие события будут занимать много места на странице.';
 $string['pref_persistflt'] = 'Запомнить настройки фильтра';
-$string['pref_persistflt_help'] = 'При включении данного параметра Moodle Mobile будет помнить ваши настройки фильтра последних событий и автоматически восстанавливать их при каждой Вашей авторизации в приложении.';
+$string['pref_persistflt_help'] = 'При включении данного параметра ваши последние настройки фильтра событий сохраняются для следующего входа в систему.';
 $string['pref_startwday'] = 'Первый день недели';
 $string['pref_startwday_help'] = 'Недели в календаре будут начинаться с выбранного здесь дня.';
 $string['pref_timeformat'] = 'Формат времени';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_usersessions', language 'ja', version '4.4'.
+ * Strings for component 'report_usersessions', language 'ja', version '4.5'.
  *
  * @package     report_usersessions
  * @category    string
@@ -25,7 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['mysessions'] = 'マイ活動セッション';
+$string['logoutothersessions'] = '他のすべてのブラウザセッションをログアウトする';
+$string['logoutothersessions_help'] = 'このセッション以外のすべてのブラウザセッションからログアウトします。これはウェブアプリには影響しません。';
+$string['logoutothersessionssuccess'] = 'あなたは他のすべてのセッションからログアウトされました。';
+$string['logoutsinglesessionsuccess'] = 'あなたは {$a} のセッションからログアウトされました。';
+$string['mysessions'] = 'マイアクティブブラウザセッション';
 $string['navigationlink'] = 'ブラウザセッション';
 $string['pluginname'] = 'ユーザセッションレポート';
 $string['privacy:metadata'] = 'ユーザセッションレポートプラグインはいかなる個人データも保存しません。';

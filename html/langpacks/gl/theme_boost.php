@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'gl', version '4.4'.
+ * Strings for component 'theme_boost', language 'gl', version '4.5'.
  *
  * @package     theme_boost
  * @category    string
@@ -34,7 +34,6 @@ $string['brandcolor'] = 'Color de marca';
 $string['brandcolor_desc'] = 'A cor do acento.';
 $string['choosereadme'] = 'Boost é un tema moderno e altamente personalizábel. Este tema pretende ser usado directamente ou como un tema primario cando se crean novos temas usando Bootstrap 4.';
 $string['configtitle'] = 'Boost';
-$string['currentinparentheses'] = '(actual)';
 $string['generalsettings'] = 'Axustes xerais';
 $string['nobootswatch'] = 'Ningún';
 $string['pluginname'] = 'Boost';
@@ -42,8 +41,6 @@ $string['preset'] = 'Predefinidos do tema';
 $string['preset_desc'] = 'Escolla un axuste predefinido para cambiar amplamente o aspecto do tema.';
 $string['presetfiles'] = 'Ficheiros predefinidos do tema adicional';
 $string['presetfiles_desc'] = 'Os ficheiros predefinidos poden ser usados para alterar drasticamente o aspecto do tema. Consulte as <a href="https://docs.moodle.org/dev/Boost_Presets">predefinicións de Boost</a> para obter información sobre como crear e compartir os seus propios ficheiros predefinidos e ver o <a href="http://moodle.net/boost">repositorio de predefinicións</a> para os valores predefinidos que outros compartiron.';
-$string['privacy:drawernavclosed'] = 'A preferencia actual para o caixón de navegación está pechada.';
-$string['privacy:drawernavopen'] = 'A preferencia actual do caixón de navegación está aberta.';
 $string['privacy:metadata'] = 'O tema Boost non almacena ningún dato persoal sobre ningún usuario.';
 $string['privacy:metadata:preference:draweropennav'] = 'A preferencia do usuario para agochar ou amosar a navegación do menú do caixón.';
 $string['rawscss'] = 'SCSS en bruto';

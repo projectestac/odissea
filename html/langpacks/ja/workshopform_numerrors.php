@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_numerrors', language 'ja', version '4.4'.
+ * Strings for component 'workshopform_numerrors', language 'ja', version '4.5'.
  *
  * @package     workshopform_numerrors
  * @category    string

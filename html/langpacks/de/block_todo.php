@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_todo', language 'de', version '4.4'.
+ * Strings for component 'block_todo', language 'de', version '4.5'.
  *
  * @package     block_todo
  * @category    string
@@ -34,7 +34,6 @@ $string['itemname'] = 'Aufgabenbezeichnung';
 $string['overdue'] = 'überfällig';
 $string['pin'] = 'Anpinnen';
 $string['placeholder'] = 'Was gibt es zu tun?';
-$string['placeholdermore'] = 'Geben Sie hier etwas ein und klicken Sie auf den "Hinzufügen"-Button.';
 $string['pluginname'] = 'Meine ToDo-Liste';
 $string['privacy:metadata:db:blocktodo'] = 'Speicherung von Elementen der ToDo-Liste des Nutzers.';
 $string['privacy:metadata:db:blocktodo:done'] = 'Wurde das Element als erledigt markiert.';

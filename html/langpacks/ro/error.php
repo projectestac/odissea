@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'ro', version '4.4'.
+ * Strings for component 'error', language 'ro', version '4.5'.
  *
  * @package     error
  * @category    string
@@ -101,7 +101,7 @@ $string['cannotfindinfo'] = 'Informațiile pentru: "{$a}" nu pot fi găsite';
 $string['cannotfindlang'] = 'Pachetul de limbă "{$a}" nu poate fi găsit!';
 $string['cannotfindteacher'] = 'Formatorul nu poate fi găsit';
 $string['cannotfinduser'] = 'Utilizatorul cu numele "{$a}" nu poate fi găsit';
-$string['cannotgeoplugin'] = 'Conexiunea la serverul geoPlugin pe adresa http://www.geoplugin.com nu se poate realiza; vă rugăm să verificați setările proxy sau, mai bine, să instalați fișierul de date MaxMind GeoLite City';
+$string['cannotgeoplugin'] = 'Nu s-a putut face conectarea la serverul geoPlugin la adresa http://www.geoplugin.com. Vă rugăm să verificați setările proxy sau să instalați fișierul de date MaxMind GeoIP City.';
 $string['cannotgetblock'] = 'Nu s-au putut prelua blocuri din baza de date';
 $string['cannotgetcats'] = 'Nu se poate obține înregistrarea categoriei';
 $string['cannotgetdata'] = 'Nu se pot obține date';
@@ -158,7 +158,6 @@ $string['cannotsetupcapformod'] = 'Nu s-au putut configura capacitățile pentru
 $string['cannotsetupcapforplugin'] = 'Nu s-au putut configura capacitățile pentru {$a}';
 $string['cannotshowhidecoursesincategory'] = 'Nu se pot afișa/ ascunde cursurile din categoria {$a}.';
 $string['cannotsignup'] = 'Nu puteți crea un cont nou, deoarece sunteți deja conectat ca {$a}.';
-$string['cannotswitcheditmodeon'] = 'Nu s-a putut activa modul de editare';
 $string['cannotunassigncap'] = 'Nu s-a putut anula atribuirea depreciată {$a->cap} din rolul {$a->role}';
 $string['cannotunassignrolefrom'] = 'Nu se poate anula atribuirea acestui utilizator din ID-ul rolului: {$a}';
 $string['cannotunzipfile'] = 'Nu se poate dezarhiva fișierul';
@@ -286,6 +285,8 @@ $string['filternotenabled'] = 'Filtrul nu este activat!';
 $string['filternotinstalled'] = 'Filtrul {$a} nu este instalat momentan';
 $string['forumblockingtoomanyposts'] = 'Ați depășit pragul de postare stabilit pentru acest forum';
 $string['functionalityremoved'] = 'Ați încercat să accesați o funcționalitate care a fost ștearsă.';
+$string['gdfeaturenotsupported'] = 'Extensia GD nu a fost compilată cu metode pentru {$a}';
+$string['gdmimetypenotsupported'] = 'Tip MIME neacceptat.';
 $string['generalexceptionmessage'] = 'Excepție - {$a}';
 $string['gradecantregrade'] = 'A apărut o eroare în timpul calculului calificativului: {$a}';
 $string['gradepubdisable'] = 'Publicarea notelor este dezactivată';
@@ -351,6 +352,7 @@ $string['invalidelementid'] = 'ID element incorect!';
 $string['invalidentry'] = 'Aceasta nu este o intrare validă!';
 $string['invalidevent'] = 'Evenimentul nu este valid';
 $string['invalidfieldname'] = '"{$a}" nu este un nume de câmp valid';
+$string['invalidfile'] = 'Fișierul nu a fost găsit';
 $string['invalidfiletype'] = '"{$a}" nu este un tip de fișier valid';
 $string['invalidformatpara'] = 'Format incorect pentru parametrul ales';
 $string['invalidformdata'] = 'Date de formular incorecte';
@@ -398,6 +400,7 @@ $string['invalidxmlfile'] = '"{$a}" nu este un fișier XML valid';
 $string['iplookupfailed'] = 'Nu se pot găsi informații geografice despre această adresă IP {$a}';
 $string['iplookupprivate'] = 'Nu se poate afișa căutarea adresei IP private';
 $string['ipmismatch'] = 'Adresa IP client nu corespunde';
+$string['itemnotfound'] = 'Niciun {$a->itemtype} nu a fost găsit cu identificatorul {$a->identifier}\'';
 $string['listcantmovedown'] = 'Nu s-a putut muta elementul în jos, deoarece este ultimul din listă';
 $string['listcantmoveleft'] = 'Nu s-a putut muta elementul la stânga, deoarece nu are părinte';
 $string['listcantmoveright'] = 'Nu s-a putut muta elementul spre dreapta, deoarece nu există un egal care să-l facă copil. Mișcați-l sub un alt element de același nivel și apoi îl puteți muta la dreapta.';
@@ -490,6 +493,7 @@ $string['nostartdatenoenddate'] = 'O dată de încheiere a cursului poate fi set
 $string['nostatstodisplay'] = 'Ne pare rău, nu există date disponibile de afișat';
 $string['notallowedtoupdateprefremotely'] = 'Nu aveți permisiunea să actualizați această preferință de utilizator de la distanță';
 $string['notavailable'] = 'Acest aspect nu este disponibil în prezent';
+$string['notfound'] = 'Nu a fost găsit';
 $string['notlocalisederrormessage'] = '{$a}';
 $string['notmemberofgroup'] = 'Nu sunteți membru al acestui grup de cursuri';
 $string['notownerofkey'] = 'Nu sunteți proprietarul acestei chei';
@@ -541,6 +545,7 @@ $string['reverseproxyabused'] = 'Proxy invers a fost activat, serverul nu poate 
 $string['rpcerror'] = 'Of! Comunicarea dvs. MNET a eșuat! Iată mesajul de eroare pe care trebuie să îl transmiteți administratorului: {$a}';
 $string['scheduledbackupsdisabled'] = 'Copiile de rezervă programate au fost dezactivate de administratorul serverului';
 $string['secretalreadyused'] = 'Linkul de confirmare a modificării parolei a fost deja utilizat, parola nu a fost modificată';
+$string['sectioncantbefound'] = '<p><strong>Acest conținut nu poate fi găsit.</strong></p><p>E posibil să fie șters sau URL-ul să fie incorect.</p>';
 $string['sectionnotexist'] = 'Această secțiune nu există';
 $string['sendmessage'] = 'Trimite mesaj';
 $string['sendmessagesent'] = 'Vă mulțumim pentru feedback-ul în legătură cu:<br>{$a}';

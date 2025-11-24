@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'ja', version '4.4'.
+ * Strings for component 'contentbank', language 'ja', version '4.5'.
  *
  * @package     contentbank
  * @category    string
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['author'] = '作成者';
 $string['choosecontext'] = 'コースまたはカテゴリを選択する ...';
 $string['contentbank'] = 'コンテンツバンク';
+$string['contentbankcustomfields'] = 'コンテンツバンクカスタムフィールド';
 $string['contentbankpreferences'] = 'コンテンツバンクプレファレンス';
 $string['contentcopied'] = 'コンテンツがコピーされました。';
 $string['contentcreated'] = 'コンテンツが作成されました。';
@@ -50,6 +51,7 @@ $string['deletecontentconfirm'] = '本当にコンテンツ「 {$a->name} 」お
 $string['deletecontentconfirmlinked'] = 'コンテンツバンクからコンテンツのみ削除されます。現在コンテンツにリンクされているすべての場所は代わりにコンテンツのコピーを使用するよう自動更新されます。';
 $string['displaydetails'] = 'コンテンツバンクおよびファイル詳細を表示する';
 $string['displayicons'] = 'コンテンツバンクおよびアイコンを表示する';
+$string['displayunlisted'] = '未掲載のコンテンツを表示する';
 $string['emptynamenotallowed'] = '空白の名称は許可されていません。';
 $string['errordeletingcontentfromcategory'] = 'カテゴリ {$a} からのコンテンツ削除中にエラーが発生しました。';
 $string['errornofile'] = 'コンテンツを作成するには互換性のあるファイルが必要です。';

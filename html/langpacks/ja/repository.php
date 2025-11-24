@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'ja', version '4.4'.
+ * Strings for component 'repository', language 'ja', version '4.5'.
  *
  * @package     repository
  * @category    string
@@ -260,6 +260,7 @@ $string['unknownoriginal'] = '不明';
 $string['unknownsource'] = '不明なソース';
 $string['unzipped'] = '正常に展開されました。';
 $string['upload'] = 'このファイルをアップロードする';
+$string['uploaderror'] = 'ファイルアップロードエラー';
 $string['uploading'] = 'アップロード中 ...';
 $string['uploadsucc'] = 'ファイルが正常にアップロードされました。';
 $string['uselatestfile'] = '最新のファイルを使用する';

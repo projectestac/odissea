@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'uk', version '4.4'.
+ * Strings for component 'badges', language 'uk', version '4.5'.
  *
  * @package     badges
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actions'] = 'Дії';
 $string['activate'] = 'Дозволити доступ';
-$string['activatesuccess'] = 'Доступ до відзнак вже дозволено.';
+$string['activatesuccess'] = 'Доступ до значка "{$a}" увімкнено.';
 $string['addalignment'] = 'Додайте зовнішні навички або стандарт';
 $string['addbadge'] = 'Додайте відзнаку';
 $string['addbadge_help'] = 'Виберіть усі відзнаки, які слід додати до вимоги цієї відзнаки. Утримуйте клавішу CTRL, щоб вибрати кілька елементів.';
@@ -40,6 +40,7 @@ $string['addcourse'] = 'Додати курси';
 $string['addcourse_help'] = 'Виберіть всі курси, які потрібно додати до цієї відзнаки. Утримування кнопки CTRL дозволяє мультивибір.';
 $string['addcriteria'] = 'Додати критерій';
 $string['addcriteriatext'] = 'Для початку додавання критерія, будь ласка, виберіть одну опцію з випадаючого меню.';
+$string['addcriterion'] = 'Додайте критерій';
 $string['addedtobackpack'] = 'До торбинки додано відзнаку';
 $string['addrelated'] = 'Додайте відповідну відзнаку';
 $string['addtobackpack'] = 'Додати в торбину';
@@ -79,7 +80,7 @@ $string['attachment_help'] = 'Якщо ввімкнено, виданий зна
 $string['award'] = 'Присудити відзнаку';
 $string['awardedto'] = 'Присуджено {$a}';
 $string['awardedtoyou'] = 'Видано мені';
-$string['awardoncron'] = 'Доступ до відзнак було успішно включено. Занадто багато користувачів можуть миттєво заробиш цю відзнаку. Для забезпечення нормальної роботи сайту, ця дія займе деякий час для обробітку.';
+$string['awardoncron'] = 'Велика кількість користувачів отримує значок "{$a->badgename}". Може знадобитися деякий час, перш ніж усі користувачі його отримають.';
 $string['awards'] = 'Отримали';
 $string['backpackapiurl'] = 'URL-адреса API торбинки';
 $string['backpackavailability'] = 'Перевірка зовнішньої відзнаки';
@@ -265,7 +266,7 @@ $string['dateawarded'] = 'Дата отримання';
 $string['dateearned'] = 'Дата:  {$a}';
 $string['day'] = 'День(ів)';
 $string['deactivate'] = 'Заборонити доступ';
-$string['deactivatesuccess'] = 'Доступ до відзнак успішно відключено.';
+$string['deactivatesuccess'] = 'Доступ до значка "{$a}" вимкнено.';
 $string['defaultissuercontact'] = 'Електронна адреса видавця відзнаки';
 $string['defaultissuercontact_desc'] = 'Електронна адреса, пов’язана з емітентом відзнаки. Для торбинки Open Badges v2.0 він використовується для автентифікації під час публікації відзнак у торбинці.';
 $string['defaultissuername'] = 'Ім’я видавця відзнаки';
@@ -317,7 +318,7 @@ $string['error:nosuchfield'] = 'Увага: це поле користувача
 $string['error:nosuchmod'] = 'Увага: ця діяльність більше недоступна.';
 $string['error:nosuchrole'] = 'Увага: ця роль більше недоступна.';
 $string['error:nosuchuser'] = 'Користувач з цією ел.адресою не має облікового запису у поточного постачальника торбинок відзнак.';
-$string['error:notifycoursedate'] = 'Увага: Відзнаки пов’язані з завершенням курсу або діяльності не можуть призначатися до дати початку навчання на курсі.';
+$string['error:notifycoursedate'] = 'Значки, пов’язані з проходженням курсу та діяльністю, не будуть видаватися до дати початку курсу ({$a}).';
 $string['error:parameter'] = 'Увага: Принаймні один параметр повинен бути обраний, щоб забезпечити правильність робочого процесу видачі відзнак.';
 $string['error:relatedbadgedoesntexist'] = 'З цим ідентифікатором немає загальнодоступної відзнаки';
 $string['error:requesterror'] = 'З’єднання зазнало невдачі (код помилки {$a}).';
@@ -414,6 +415,8 @@ $string['namewithlink'] = 'Назва з посиланням';
 $string['never'] = 'Ніколи';
 $string['newbackpack'] = 'Додати торбинку';
 $string['newbadge'] = 'Додати відзнаку';
+$string['newbadgedeprecated'] = 'Ви були перенаправлені з badges/newbadge.php. Зверніть увагу, що badges/newbadge.php буде видалено найближчим часом.
+<br/>Оновіть посилання та закладки для використання поточної сторінки badges/edit.php.';
 $string['newimage'] = 'Нове зображення';
 $string['noalignment'] = 'Ця відзнака не містить жодних зовнішніх навичок або стандартів.';
 $string['noawards'] = 'Ця відзнака ще не присуджувалася.';
@@ -452,8 +455,8 @@ $string['notifydaily'] = 'Щоденно';
 $string['notifyevery'] = 'Щоразу';
 $string['notifymonthly'] = 'Щомісячно';
 $string['notifyweekly'] = 'Щотижнево';
-$string['numawards'] = 'Цю відзнаку отримали <a href="{$a->link}">{$a->count}</a> користувач(ів).';
-$string['numawardstat'] = 'Цю відзнаку отримали {$a} користувач(ів).';
+$string['numawards'] = 'Користувачі, які отримали значок "{$a->badgename}": <a href="{$a->link}">{$a->count}</a>.';
+$string['numawardstat'] = 'Користувачі, які отримали значок "{$a->badgename}": {$a->awards}.';
 $string['oauth2issuer'] = 'Послуги OAuth 2';
 $string['openbadgesv1'] = 'Open Badges v1.0';
 $string['openbadgesv2'] = 'Open Badges v2.0';

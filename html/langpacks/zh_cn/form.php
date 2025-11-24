@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'zh_cn', version '4.4'.
+ * Strings for component 'form', language 'zh_cn', version '4.5'.
  *
  * @package     form
  * @category    string
@@ -41,6 +41,7 @@ $string['err_minlength'] = '您必须在此处至少输入{$a->format}个字符�
 $string['err_nonzero'] = '您必须在此处输入一个不以0开头的数字。';
 $string['err_nopunctuation'] = '您不能在此处输入任何标点符号。';
 $string['err_numeric'] = '您必须在此处输入一个数字。';
+$string['err_positiveduration'] = '这个持续时间不能为负。';
 $string['err_positiveint'] = '您必须输入一个大于 0 的数字';
 $string['err_rangelength'] = '您必须在此处输入介于{$a->format [0]}和{$a->format [1]}之间的字符。';
 $string['err_required'] = '您必须在此处提供一个值。';

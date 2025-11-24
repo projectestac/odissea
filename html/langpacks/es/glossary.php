@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'es', version '4.4'.
+ * Strings for component 'glossary', language 'es', version '4.5'.
  *
  * @package     glossary
  * @category    string
@@ -122,7 +122,7 @@ $string['definitions'] = 'Definiciones';
 $string['deletecategory'] = 'Eliminar categoría';
 $string['deleteentry'] = 'Borrar entrada';
 $string['deleteentrya'] = 'Eliminar entrada: {$a}';
-$string['deletenotenrolled'] = 'Eliminar entradas de usuarios no matriculados';
+$string['deletenotenrolled'] = 'Entradas de usuarios no matriculados';
 $string['deletingcomment'] = 'Borrando comentario';
 $string['deletingnoneemptycategory'] = 'Eliminar una categoría no eliminará las entradas. Si desea eliminar las entradas tendrá que hacerlo manualmente.';
 $string['descending'] = 'descendente';
@@ -334,9 +334,9 @@ $string['privacy:metadata:glossary_entries:userid'] = 'El ID del usuario que est
 $string['question'] = 'Pregunta';
 $string['rejectedentries'] = 'Entradas rechazadas';
 $string['rejectionrpt'] = 'Informe de rechazo';
-$string['removeallglossarytags'] = 'Eliminar todas las etiquetas del glosario';
+$string['removeallglossarytags'] = 'Todas las etiquetas del glosario';
 $string['resetglossaries'] = 'Eliminar entradas de';
-$string['resetglossariesall'] = 'Eliminar entradas de todos los glosarios';
+$string['resetglossariesall'] = 'Entradas de todos los glosarios';
 $string['rssarticles'] = 'Número de artículos recientes RSS';
 $string['rssarticles_help'] = '<P>Esta opción le permite seleccionar el número de artículos a incluir en el Canal RSS.
 

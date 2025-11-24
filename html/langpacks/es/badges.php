@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'es', version '4.4'.
+ * Strings for component 'badges', language 'es', version '4.5'.
  *
  * @package     badges
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actions'] = 'Acciones';
 $string['activate'] = 'Habilitar acceso';
-$string['activatesuccess'] = 'El acceso a las insignias fue activado con éxito.';
+$string['activatesuccess'] = 'Acceso a insignia {$a} activado.';
 $string['addalignment'] = 'Añadir habilidad externa o estándar';
 $string['addbadge'] = 'Añadir insignias';
 $string['addbadge_help'] = 'Seleccione todas las insignias que deben ser añadidas para los requisitos de esta insignia. Mantenga pulsada la tecla CTRL para seleccionar multiples items.';
@@ -40,6 +40,7 @@ $string['addcourse'] = 'Añadir cursos';
 $string['addcourse_help'] = 'Seleccionar todos los cursos que deben agregarse a este requisito para la insignia. Mantener pulsada la tecla CTRL para seleccionar varios elementos.';
 $string['addcriteria'] = 'Añadir criterios';
 $string['addcriteriatext'] = 'Para empezar a añadir criterios, por favor seleccione una de las opciones del menú desplegable.';
+$string['addcriterion'] = 'Añadir criterio';
 $string['addedtobackpack'] = 'Insignia añadida a mochila';
 $string['addrelated'] = 'Añadir insignia relacionada';
 $string['addtobackpack'] = 'Añadir a la mochila';
@@ -79,7 +80,7 @@ $string['attachment_help'] = 'Si está habilitado, se adjuntará una archivo de 
 $string['award'] = 'Otorgar insignia';
 $string['awardedto'] = 'Otorgado a {$a}';
 $string['awardedtoyou'] = 'Emitida para mi';
-$string['awardoncron'] = 'El acceso a las insignias se activó con éxito. Muchos usuarios pueden ganar simultáneamente esta insignia. Para garantizar el funcionamiento del sitio, esta acción llevará un cierto tiempo de proceso.';
+$string['awardoncron'] = 'Se ha otorgado la insignia "{$a->badgename}" a muchos usuarios. Puede llevar algún tiempo que todos la reciban.';
 $string['awards'] = 'Destinatarios';
 $string['backpackapiurl'] = 'URL de API de mochila';
 $string['backpackavailability'] = 'Verificación externa de la insignia';
@@ -193,7 +194,7 @@ $string['configuremessage'] = 'Mensaje de la insignia';
 $string['connect'] = 'Conectar';
 $string['connected'] = 'Conectado';
 $string['connecting'] = 'Conectando....';
-$string['contact'] = 'Contacto';
+$string['contact'] = 'Contacto del emisor';
 $string['contact_help'] = 'Una dirección de correo electrónico asociada al emisor de la insignia.';
 $string['copy'] = 'Copiar';
 $string['copyof'] = 'Copia de {$a}';
@@ -274,7 +275,7 @@ $string['dateawarded'] = 'Fecha de la emisión';
 $string['dateearned'] = 'Fecha: {$a}';
 $string['day'] = 'Día(s)';
 $string['deactivate'] = 'Deshabilitar acceso';
-$string['deactivatesuccess'] = 'El acceso a las insignias se ha desactivado con éxito.';
+$string['deactivatesuccess'] = 'Acceso a la insignia "{$a}" desactivado.';
 $string['defaultissuercontact'] = 'Dirección de correo electrónico del emisor de la insignia';
 $string['defaultissuercontact_desc'] = 'Una dirección Email asociada con el emisor de insignia. Para una mochila de Open Badges v2.0, esto es usado para autenticación cuando se publican insignias a una mochila.';
 $string['defaultissuername'] = 'Nombre del emisor de insignia';
@@ -328,7 +329,7 @@ $string['error:nosuchfield'] = 'Advertencia: este campo de perfil de usuario ya 
 $string['error:nosuchmod'] = 'Advertencia: Esta actividad ya no está disponible.';
 $string['error:nosuchrole'] = 'Advertencia: Este rol ya no está disponible.';
 $string['error:nosuchuser'] = 'El usuario con esta dirección de correo electrónico no tiene una cuenta con el proveedor de mochila actual.';
-$string['error:notifycoursedate'] = 'Advertencia: Las insignias asociadas con la finalización del curso y con la finalización de actividades no se emitirán hasta la fecha de inicio del curso.';
+$string['error:notifycoursedate'] = 'Las insignias asociadas con la finalización del curso y con la finalización de actividades no se emitirán hasta la fecha de inicio del curso ({$a}).';
 $string['error:parameter'] = 'Advertencia: Al menos un parámetro debe seleccionarse para asegurar el flujo de trabjo correcto para la entrega de la insignia.';
 $string['error:relatedbadgedoesntexist'] = 'No hay insignia pública con este identificador';
 $string['error:requesterror'] = 'La solicitud de conexión ha fallado (código de error {$a}).';
@@ -423,10 +424,13 @@ $string['month'] = 'Mes(es)';
 $string['moredetails'] = 'Más detalles';
 $string['mybackpack'] = 'Configuración de Mi mochila';
 $string['mybadges'] = 'Mis insignias';
+$string['namewithimagelink'] = 'Nombre con imagen y enlace';
 $string['namewithlink'] = 'Nombre con enlace';
 $string['never'] = 'Nunca';
 $string['newbackpack'] = 'Añadir una nueva mochila';
 $string['newbadge'] = 'Añadir una nueva insignia';
+$string['newbadgedeprecated'] = 'Usted ha sido redireccionado desde badges/newbadge.php. Por favor, tenga en cuenta que badges/newbadge.php se eliminará próximamente.
+<br/>Actualice los enlaces y marcas que usen la página actual badges/edit.php.';
 $string['newimage'] = 'Nueva imagen';
 $string['noalignment'] = 'Esta insignia no tiene ninguna habilidad externa o estándar especificado.';
 $string['noawards'] = 'Esta insignia aún no se ha ganado.';
@@ -468,8 +472,8 @@ $string['notifydaily'] = 'Dirariamente';
 $string['notifyevery'] = 'Siempre';
 $string['notifymonthly'] = 'Mensualmente';
 $string['notifyweekly'] = 'Semanalmente';
-$string['numawards'] = 'Esta insignia ha sido emitida para <a href="{$a->link}">{$a->count}</a> usuario(s).';
-$string['numawardstat'] = 'Esta insignia ha sido emitida para {$a} usuario (s).';
+$string['numawards'] = 'Usuarios que han recibido la insignia "{$a->badgename}": <a href="{$a->link}">{$a->count}</a>.';
+$string['numawardstat'] = 'Usuarios que han recibido la insignia "{$a->badgename}": {$a->awards}.';
 $string['oauth2issuer'] = 'Servicios OAuth 2';
 $string['openbadgesv1'] = 'Open Badges v1.0';
 $string['openbadgesv2'] = 'Open Badges v2.0';

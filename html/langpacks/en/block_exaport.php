@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_exaport', language 'en', version '4.4'.
+ * Strings for component 'block_exaport', language 'en', version '4.5'.
  *
  * @package     block_exaport
  * @category    string
@@ -38,6 +38,8 @@ $string['addcategory'] = 'Add category';
 $string['addcomment'] = 'Add comment';
 $string['addposterror'] = 'There was an error adding this post in the database';
 $string['addstdcat'] = 'import standard categories';
+$string['alwaysnotifywhenshare'] = 'Always notify when sharing';
+$string['alwaysnotifywhenshare_description'] = 'When enabled, the notify users checkbox will be automatically checked and disabled when the share checkbox is clicked.';
 $string['attachincluded'] = 'attachment?';
 $string['attachment'] = 'attachment';
 $string['autofillview'] = 'Automatically add all available artefacts to this view';
@@ -214,7 +216,10 @@ $string['emailaccess'] = 'Share by Email';
 $string['emailaccessdescription'] = 'Input an email address per line<br />Each email will receive a unique link with access to this view. Deleting the email will remove access to this view.';
 $string['emailaccessmessage'] = 'Hello! {$a->sendername} has shared the view "{$a->viewname}" for you. You can view it here: {$a->url}';
 $string['emailaccessmessageHTML'] = 'Hello!<br />{$a->sendername} has shared the view "{$a->viewname}" for you.<br />You can view it <a href="{$a->url}">here</a>.';
+$string['emailaccessmessageHTML_updatedview'] = 'Hello!<br />{$a->sendername} has updated the view "{$a->viewname}" they shared with you.<br />You can view it <a href="{$a->url}">here</a>.';
+$string['emailaccessmessage_updatedview'] = 'Hello! {$a->sendername} has updated the view "{$a->viewname}" they shared with you. You can view it here: {$a->url}';
 $string['emailaccessmessagesubject'] = 'New shared View for you';
+$string['emailaccessmessagesubject_updatedview'] = '{$a->sendername} made changes to an e-portfolio view shared with you.';
 $string['endedit'] = 'End editing';
 $string['enrolled_courses'] = 'Related with courses';
 $string['exaport:addinstance'] = 'add Exabis ePortfolio to the course';
@@ -318,7 +323,8 @@ $string['headertext'] = 'Headertext';
 $string['headertext_help'] = 'The simple block for adding only header line';
 $string['height'] = 'Height';
 $string['hidesummary'] = '(hide summary)';
-$string['i_shared'] = 'I shared an eportfolio view with you';
+$string['i_shared'] = '{$a->sendername} shared the e-portfolio view {$a->title} with you';
+$string['i_updated'] = '{$a->sendername} made changes to the e-portfolio view {$a->title} shared with you.';
 $string['iconfile'] = 'Thumbnail';
 $string['iconfile_merge'] = 'Merge this icon picture with the folder icon';
 $string['iconfile_merge_description'] = 'Icon picture will try (without any guarantee) to merge with standard folder icon. The icon will be replaced with the new image.';
@@ -377,6 +383,7 @@ $string['media_help'] = 'The block with embeded media data, from source like: Yo
 $string['mediacontent'] = 'URL or embed code *';
 $string['membercount'] = 'Number of members';
 $string['messageprovider:sharing'] = 'Sharing notifications';
+$string['messageprovider:viewupdated'] = 'Updated view notifications';
 $string['mixed'] = 'Artefact';
 $string['moodleimport'] = 'Import from Moodle-assignments';
 $string['moreinfolink'] = 'Show more info ...';
@@ -613,7 +620,10 @@ $string['resume_title'] = 'Title';
 $string['resume_url'] = 'URL';
 $string['role'] = 'Role';
 $string['root_category'] = 'Root Category';
+$string['saveAndNotifyButton'] = 'Save view and send notifications';
 $string['saveButton'] = 'Save';
+$string['saveViewButton'] = 'Save view';
+$string['saveViewShareSettingsButton'] = 'Share';
 $string['saveitem'] = 'Save';
 $string['scormhastobezip'] = 'SCORM-File has to be a .zip-File';
 $string['searchByTitle'] = 'Search';
@@ -633,6 +643,25 @@ $string['settings_disable_shareall_body'] = 'Click <a href="{$a}">here</a>, to r
 $string['settings_disable_shareall_head'] = 'Disable sharing with all users';
 $string['settings_disable_shareemails_body'] = '';
 $string['settings_disable_shareemails_head'] = 'Disable Sharing-Option "Share by Email" for views';
+$string['settings_exaport_mysource'] = 'Source ID';
+$string['settings_exaport_mysource_body'] = 'Automatically generated ID of this Exaport installation. This ID can not be changed';
+$string['settings_exaport_reload_settings_page'] = 'Reload';
+$string['settings_exaport_wp_sso_enabled'] = 'Enable WordPress SSO connection';
+$string['settings_exaport_wp_sso_enabled_body'] = 'Enable WordPress connection. Options below must be configured';
+$string['settings_exaport_wp_sso_enter_secret_placeholder'] = 'Enter the secret code';
+$string['settings_exaport_wp_sso_error_no_passphrase_registered'] = 'The passphrase must be registered in the WordPress SSO server.';
+$string['settings_exaport_wp_sso_error_no_url_configured'] = 'First set up the "block_exaport/wp_sso_url" option';
+$string['settings_exaport_wp_sso_how_to_get_secret'] = 'You need to register your "block_exaport/mysource" value into WordPress SSO server and get a secret code<br />Then you need to insert the secret code into field below and get the passphrase';
+$string['settings_exaport_wp_sso_passphrase'] = 'WordPress SSO Passphrase';
+$string['settings_exaport_wp_sso_passphrase_body'] = 'The Passphrase to connect with WordPress SSO receiver';
+$string['settings_exaport_wp_sso_passphrase_ok'] = 'The passphrase is configured';
+$string['settings_exaport_wp_sso_remove_passphrase_button'] = 'Remove the passphrase';
+$string['settings_exaport_wp_sso_request_passphrase_button'] = 'Request the passphrase';
+$string['settings_exaport_wp_sso_test_passphrase_button'] = 'Test';
+$string['settings_exaport_wp_sso_url'] = 'Url to WordPress SSO receiver';
+$string['settings_exaport_wp_sso_url_body'] = 'The url to server which is ready to recieve commands from exaport';
+$string['settings_exaport_wp_sso_url_to_get_secret'] = 'Get the secret code';
+$string['settings_export_settings_heading'] = 'Export settings';
 $string['settings_interaktion_exacomp_body'] = 'Interaction with block Exabis Competence Grid, in case it is installed';
 $string['settings_interaktion_exacomp_head'] = 'Interaction exabis ePortfolio - Exabis Competence Grid';
 $string['settings_layout_settings_description'] = 'Here you can change some view layout options or use own custom CSS rules to have the view as you want<br>These settings will be used as default settings <strong>for all views</strong>';
@@ -731,6 +760,7 @@ $string['viewlayoutgroup2'] = '2 columns';
 $string['viewlayoutgroup3'] = '3 columns';
 $string['viewlayoutgroup4'] = '4 columns';
 $string['viewlayoutgroup5'] = '5 columns';
+$string['viewmustbesafed'] = 'Preselected due to global settings. The view must be saved before this notify-setting will take effect';
 $string['viewnotfound'] = 'View not found';
 $string['views'] = 'My Views';
 $string['viewshare'] = 'Share';
@@ -767,34 +797,30 @@ $string['what_is_embed_code_content'] = '<p>Embed code is code that is generated
             </ol>';
 $string['what_is_embed_code_title'] = 'What is embed code?';
 $string['whyEportfolio'] = 'Why ePortfolio';
-$string['whyEportfolio_description'] = '<h4>Don\'t Let Your Hard Work Disappear: Build Your Digital Portfolio</h4>
+$string['whyEportfolio_description'] = '<h4>Make Your Work Visible: Your Digital Portfolio</h4>
                 <br>
-                <p>Imagine all the effort you put into assignments, presentations, and projects. Do you ever feel like it just gets buried in a drawer after it\'s submitted?</p>
-                <p>But here\'s the good news: those projects are <strong>proof of your skills and knowledge</strong>, and you can use them to impress potential employers or clients!</p>
-                <p><strong>Build your digital portfolio</strong> and showcase your best work, from presentations, assignments, and projects to videos. It\'s easier than you think!</p>
+                <p>You invest a lot of time and energy in tasks, projects, or further training. However, these results often disappear after submission or the end of the course, even though they reflect your skills, creativity, and knowledge.</p>
+                <p>An ePortfolio gives you the opportunity to showcase your work, acquired skills, and learning progress. This creates a collection that you can not only document for yourself, but also share with teachers, institutions, or potential employers.</p>
+                <p>From presentations and project reports to videos and certificates, your portfolio makes your achievements tangible. Microcredentials can also be integrated to highlight your successes in education and training.</p>
                 <br>
                 <h4>What is an ePortfolio?</h4>
                 <br>
-                <p>An <strong>ePortfolio</strong> (electronic portfolio) is a <strong>digital collection</strong> that showcases your <strong>skills, knowledge, and experiences</strong>.
-                    While your CV focuses on your education and work history, your ePortfolio goes beyond that, providing <strong>proof and context</strong> for your skills.
-                    It lets you showcase your work samples and <strong>demonstrate your talent</strong> quickly and effectively.
-                    Ultimately, your ePortfolio is a powerful tool to <strong>highlight your qualifications</strong> and set you apart.
-                </p>
-                <p><strong>Remember, different roles may require different types of ePortfolios.</strong>
-                    However, some key elements remain constant.
-                    <strong>Exabis ePortfolio</strong> allows you to <strong>create multiple views</strong> tailored to specific positions, job opportunities, or other purposes.
-                </p>
+                <p> An ePortfolio is more than just a digital resume. It is a personal collection of your work that vividly demonstrates your abilities and experiences. Unlike a traditional CV, it provides real evidence: work samples, reflections, and the context in which you developed your skills.</p>
+                <p>With Exabis ePortfolio, you can create multiple views tailored to specific applications, job opportunities, or presentations. This way, you always highlight what is most relevant for the situation.</p>
                 <br>
-                <h4>How to Build Your ePortfolio</h4>
+                <h4>How do you create your ePortfolio?</h4>
                 <br>
                 <ol>
-                    <li><strong>Gather your work</strong>: Start by reviewing all your projects, presentations, and assignments.</li>
-                    <li><strong>Choose your best work</strong>: Select the pieces that showcase your strongest skills and those that have received positive feedback.</li>
-                    <li><strong>Reflect and describe</strong>: Think about the skills and competencies each piece demonstrates. Write a brief description to provide context.</li>
-                    <li><strong>Build and iterate</strong>: Don\'t be afraid to experiment and refine your ePortfolio as you learn and grow.</li>
+                    <li><strong>Collect:</strong> Gather your work, including assignments, presentations, projects, videos, or similar items.</li>
+                    <li><strong>Select:</strong> Choose your strongest pieces that best demonstrate your skills.</li>
+                    <li><strong>Reflect:</strong> Add short descriptions to explain your competencies and the context in which they were developed.</li>
+                    <li><strong>Build:</strong> Assemble your portfolio step by step and continue to refine it over time.</li>
                 </ol>
-                <p><strong>Exabis ePortfolio</strong> can guide you through each step, making the process of building your ePortfolio smooth and efficient.</p>';
+                <p>Exabis ePortfolio makes this process simple, flexible, and efficient. You always stay in control of how you present yourself and your skills, making visible what makes you unique.</p>';
 $string['width'] = 'Width';
+$string['wp_exported_view'] = 'Exported view';
+$string['wp_exported_view_hidden_in_wp'] = 'Exported but hidden in your WordPress';
+$string['wp_exported_view_newer_than_wp'] = 'WordPress view version is older than Moodle version';
 $string['wrongfileid'] = 'Wrong file id';
 $string['wrongfilepostid'] = 'Wrong file id';
 $string['wronglinkid'] = 'Wrong link id';

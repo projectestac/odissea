@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'de', version '4.4'.
+ * Strings for component 'grades', language 'de', version '4.5'.
  *
  * @package     grades
  * @category    string
@@ -550,7 +550,9 @@ $string['missingitemtypeoreid'] = 'Array-Schlüssel (itemtype oder eid) fehlt';
 $string['missingscale'] = 'Skala auswählen';
 $string['mode'] = 'Modus';
 $string['modgrade'] = 'Bewertung';
-$string['modgrade_help'] = 'Wählen Sie die Art der Bewertung aus, die für diese Aktivität verwendet wird. Wenn \'Skala\' ausgewählt ist, können Sie die Skala aus dem Dropdown-Menü auswählen. Wenn die Punktbewertung ausgewählt ist, können Sie die maximale Note eingeben, die für diese Aktivität verfügbar ist.';
+$string['modgrade_help'] = '* Kein - nur Feedback
+* Punkt - numerischer
+* Skala - Element aus der Liste';
 $string['modgradecantchangegradetype'] = 'Sie können den Typ nicht verändern, wenn bereits Bewertungen für dieses Element existieren.';
 $string['modgradecantchangegradetypemsg'] = 'Einige Bewertungen wurden bereits vergeben, so dass der Bewertungstyp nicht mehr verändert werden kann. Wenn Sie den Maximalwert ändern möchten, müssen Sie zuerst auswählen, ob vorhandene Bewertungen neu vergeben werden sollen oder nicht.';
 $string['modgradecantchangegradetyporscalemsg'] = 'Einige Bewertungen wurden bereits vergeben, so dass Bewertungstyp und -skala nicht mehr verändert werden können.';
@@ -758,9 +760,9 @@ $string['recovergradesdefault'] = 'Bewertungen wiederherstellen';
 $string['recovergradesdefault_help'] = 'Alte Bewertungen werden wiederhergestellt, wenn Nutzer/innen erneut in einen Kurs eingeschrieben werden.';
 $string['refreshpreview'] = 'Vorschau aktualisieren';
 $string['regradeanyway'] = 'Auf jeden Fall neu bewerten';
-$string['removeallcoursegrades'] = 'Alle Bewertungen löschen';
+$string['removeallcoursegrades'] = 'Alle Bewertungen';
 $string['removeallcoursegrades_help'] = 'Wenn diese Option aktiviert ist, werden alle Bewertungen und Einträge gelöscht, die manuell zu den Bewertungen hinzugefügt wurden. Ebenfalls gelöscht werden Bewertungen und Einträge, die überschrieben, ausgeschlossen, verborgen und geblockt wurden. Es bleiben nur solche Einträge stehen, die direkt aus Aktivitäten übermittelt wurden.';
-$string['removeallcourseitems'] = 'Alle Aspekte und Kategorien löschen';
+$string['removeallcourseitems'] = 'Alle Aspekte und Kategorien';
 $string['removeallcourseitems_help'] = 'Wenn Sie diese Option anklicken, werden alle Kategorien und Bewertungsaspekte, die den Bewertungen manuell hinzugefügt wurden, gelöscht. Ebenfalls gelöscht werden Bewertungen und Einträge, die überschrieben, ausgeschlossen, verborgen und geblockt wurden. Es bleiben nur solche Einträge stehen, die direkt aus Aktivitäten übermittelt wurden.';
 $string['report'] = 'Bericht';
 $string['reportdefault'] = 'Voreinstellung für Bericht ({$a})';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_availabilityconditions', language 'eu', version '4.4'.
+ * Strings for component 'tool_availabilityconditions', language 'eu', version '4.5'.
  *
  * @package     tool_availabilityconditions
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['defaultdisplaymode'] = 'Erakusteko modu lehenetsia';
 $string['manageplugins'] = 'Kudeatu eskuragarritasun-murrizketak';
 $string['pluginname'] = 'Eskuragarritasun-baldintzen kudeaketa';
 $string['privacy:metadata'] = 'Eskuragarritasun-baldintzen kudeaketa pluginak ez du datu pertsonalik biltzen.';

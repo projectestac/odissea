@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'sv', version '4.4'.
+ * Strings for component 'gradereport_singleview', language 'sv', version '4.5'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -40,7 +40,6 @@ $string['excludeall'] = 'Exkludera alla betyg';
 $string['excludefor'] = 'Exkludera för {$a}';
 $string['excludenone'] = 'Exkludera inga betyg';
 $string['feedbackfor'] = 'Återkoppling för {$a}';
-$string['filtergrades'] = 'Visa betyg för {$a}.';
 $string['gradefor'] = 'Betyg för {$a}';
 $string['gradeitem'] = 'Betygsobjekt: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'Betygsobjektet kan inte åsidosättas.';

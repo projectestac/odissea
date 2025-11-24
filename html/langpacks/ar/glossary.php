@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ar', version '4.4'.
+ * Strings for component 'glossary', language 'ar', version '4.5'.
  *
  * @package     glossary
  * @category    string
@@ -113,7 +113,7 @@ $string['definitions'] = 'التعاريف';
 $string['deletecategory'] = 'حذف التصنيف';
 $string['deleteentry'] = 'حذف المصطلح';
 $string['deleteentrya'] = 'حذف المصطلح: {$a}';
-$string['deletenotenrolled'] = 'حذف مصطلحات المستخدمين غير المنضمين';
+$string['deletenotenrolled'] = 'مصطلحات المستخدمين غير المنضمين';
 $string['deletingcomment'] = 'حذف التعليق';
 $string['deletingnoneemptycategory'] = 'حذف هذا التصنيف لن يحذف المصطلحات التي يحتويها ـ سيشار إلى هذه المصطلحات على أنها لا تنتمي إلى تصنيف.';
 $string['descending'] = 'تنازلي';
@@ -304,9 +304,9 @@ $string['privacy:metadata:glossary_entries:userid'] = 'مُعرَّف المست
 $string['question'] = 'السؤال';
 $string['rejectedentries'] = 'المصطلحات المرفوضة';
 $string['rejectionrpt'] = 'تقرير الرفض';
-$string['removeallglossarytags'] = 'إزالة كل وسوم قاموس المصطلحات';
+$string['removeallglossarytags'] = 'كل وسوم قاموس المصطلحات';
 $string['resetglossaries'] = 'إحذف المصطلحات من';
-$string['resetglossariesall'] = 'إحذف المصطلحات من كل المسارد';
+$string['resetglossariesall'] = 'المصطلحات من كل المسارد';
 $string['rssarticles'] = 'عدد المقالات الأخيرة في خدمة مغذي الأخبار';
 $string['rssarticles_help'] = 'هذا الإعداد يحدد عدد مفاهيم مصطلحات قاموس المصطلحات التي ينبغي تضمينها في خدمة مغذي الأخبار. العدد المقبول عادة يتراوح ما بين 5 و 20.';
 $string['rssfeed'] = 'التغذية الأخبارية';

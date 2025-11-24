@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'ar', version '4.4'.
+ * Strings for component 'cohort', language 'ar', version '4.5'.
  *
  * @package     cohort
  * @category    string
@@ -49,7 +49,10 @@ $string['currentusers'] = 'المستخدمون الحاليون';
 $string['currentusersmatching'] = 'المستخدمون الحاليون المطابقون';
 $string['defaultcontext'] = 'السياق الافتراضي';
 $string['delcohort'] = 'حذف الدفعة';
+$string['delcohortsconfirm'] = 'هذا من شأنه حذف الزُمر المحددة مع كل البيانات ذات الصلة بها.';
+$string['delcohortssuccess'] = 'الزمر المحددة المحذوفة';
 $string['delconfirm'] = 'هذا من شأنه حذف الزُمرة \'{$a}\' مع كل البيانات ذات الصلة بها.';
+$string['delsuccess'] = 'الزمرة المحذوفة';
 $string['description'] = 'الوصف';
 $string['displayedrows'] = '{$a->displayed} الصفوف تعرض من {$a->total}.';
 $string['duplicateidnumber'] = 'دفعة بنفس رقم المُعرَّف موجود مسبقاً';

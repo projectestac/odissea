@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'uk', version '4.4'.
+ * Strings for component 'course', language 'uk', version '4.5'.
  *
  * @package     course
  * @category    string
@@ -99,6 +99,10 @@ $string['downloadcoursecontent_help'] = 'Цей параметр визнача�
 $string['enabledownloadcoursecontent'] = 'Увімкнути завантаження вмісту курсу';
 $string['errorendbeforestart'] = 'Дата закінчення ({$a}) передує даті початку курсу.';
 $string['favourite'] = 'Курс із зірочкою';
+$string['filterbothactive'] = 'Перший ({$a->first}) Останній ({$a->last})';
+$string['filterbyname'] = 'Фільтрувати за назвою';
+$string['filterfirstactive'] = 'Перший ({$a->first})';
+$string['filterlastactive'] = 'Останній ({$a->last})';
 $string['gotosection'] = 'Перейти до розділу {$a}';
 $string['gradetopassnotset'] = 'Цей курс не має оцінки за здачу. Його можна встановити в елементі оцінки курсу (налаштування журналу оцінок).';
 $string['hideendedcoursestask'] = 'Сховати курси в дату завершення';

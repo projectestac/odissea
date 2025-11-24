@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'zh_cn', version '4.4'.
+ * Strings for component 'theme_boost', language 'zh_cn', version '4.5'.
  *
  * @package     theme_boost
  * @category    string
@@ -34,7 +34,6 @@ $string['brandcolor'] = '条块颜色';
 $string['brandcolor_desc'] = '强调色。';
 $string['choosereadme'] = 'Boost是一套现代且高度可定制化的主题。该主题可以直接使用，或在使用Bootstrap 4 设计新主题时作为模板使用。';
 $string['configtitle'] = 'Boost';
-$string['currentinparentheses'] = '(当前)';
 $string['generalsettings'] = '常规设置';
 $string['loginbackgroundimage'] = '登录页面的背景图像';
 $string['loginbackgroundimage_desc'] = '作为登录页面的背景显示的图片。';
@@ -48,8 +47,6 @@ $string['privacy:drawerblockclosed'] = '版块抽屉的默认选项已关闭。'
 $string['privacy:drawerblockopen'] = '版块抽屉的默认选项已开启。';
 $string['privacy:drawerindexclosed'] = '索引抽屉的默认选项已关闭。';
 $string['privacy:drawerindexopen'] = '索引抽屉的默认选项已开启。';
-$string['privacy:drawernavclosed'] = '导航栏关闭时，当前的选项。';
-$string['privacy:drawernavopen'] = '导航栏打开时，当前的选项。';
 $string['privacy:metadata'] = 'Boost主题不会保存任何用户的任何个人信息。';
 $string['privacy:metadata:preference:draweropenblock'] = '用户关于隐藏或显示版块抽屉的偏好。';
 $string['privacy:metadata:preference:draweropenindex'] = '用户关于隐藏或显示索引抽屉的偏好。';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'zh_cn', version '4.4'.
+ * Strings for component 'glossary', language 'zh_cn', version '4.5'.
  *
  * @package     glossary
  * @category    string
@@ -113,7 +113,7 @@ $string['definitions'] = '定义';
 $string['deletecategory'] = '删除类别';
 $string['deleteentry'] = '删除词条';
 $string['deleteentrya'] = '删除条目：{$a}';
-$string['deletenotenrolled'] = '删除未选课用户的词条';
+$string['deletenotenrolled'] = '未选课用户的词条';
 $string['deletingcomment'] = '删除评论';
 $string['deletingnoneemptycategory'] = '删除类别不会删除它包含的词条——它们将会被标记为未分类。';
 $string['descending'] = '降序';
@@ -303,9 +303,9 @@ $string['privacy:metadata:glossary_entries:userid'] = '添加此词汇表条目�
 $string['question'] = '问题';
 $string['rejectedentries'] = '已拒绝的词条';
 $string['rejectionrpt'] = '拒收报告';
-$string['removeallglossarytags'] = '删除所有术语表标签';
+$string['removeallglossarytags'] = '所有术语表标签';
 $string['resetglossaries'] = '从哪里删除词条';
-$string['resetglossariesall'] = '从所有词汇表删除词条';
+$string['resetglossariesall'] = '所有词汇表词条';
 $string['rssarticles'] = 'RSS 中最近文章个数';
 $string['rssarticles_help'] = '此设置决定在 RSS 种子中包含的词条个数。通常设为 5 到 20 之间。';
 $string['rssfeed'] = 'RSS源';

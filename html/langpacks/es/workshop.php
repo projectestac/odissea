@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'es', version '4.4'.
+ * Strings for component 'workshop', language 'es', version '4.5'.
  *
  * @package     workshop
  * @category    string
@@ -321,11 +321,11 @@ $string['reassess'] = 'Re-evaluar';
 $string['receivedgrades'] = 'Calificaciones recibidas';
 $string['recentassessments'] = 'Evaluaciones del Taller:';
 $string['recentsubmissions'] = 'Envíos del Taller:';
-$string['resetassessments'] = 'Borrar todas las evaluaciones';
+$string['resetassessments'] = 'Todas las evaluaciones';
 $string['resetassessments_help'] = 'Puede elegir eliminar solamente las evaluaciones asignadas sin afectar a las entregas. Si las entregas van a ser eliminadas, sus evaluaciones serán eliminadas de forma implícita y esta opción se ignora. Tenga en cuenta que esto también incluye evaluaciones de entregas de ejemplo.';
 $string['resetphase'] = 'Cambiar a la fase de preparación';
 $string['resetphase_help'] = 'Si está activado, todos los talleres serán puestos en la fase de preparación inicial';
-$string['resetsubmissions'] = 'Borrar todos los envíos';
+$string['resetsubmissions'] = 'Todas las entregas';
 $string['resetsubmissions_help'] = 'Todos los envíos y sus evaluaciones serán borrados. Esto no afecta a los envíos de ejemplo.';
 $string['saveandclose'] = 'Guardar y cerrar';
 $string['saveandcontinue'] = 'Guardar y continuar editando';

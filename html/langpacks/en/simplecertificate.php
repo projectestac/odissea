@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'simplecertificate', language 'en', version '4.4'.
+ * Strings for component 'simplecertificate', language 'en', version '4.5'.
  *
  * @package     simplecertificate
  * @category    string
@@ -69,7 +69,12 @@ These are:
 <li>{USERROLENAME} -> User role name in course</li>
 <li>{TIMESTART} -> User Enrollment start date in course</li>
 <li>{USERIMAGE} -> User profile image</li>
-<li>{USERRESULTS} -> User results (grade) in others course activities</li>
+<li>{USERRESULTS} -> User results (grade) in others course activities or grade items</li>
+<li>{LISTUSERRESULTS} -> Same as {USERRESULTS} but in bullets</li>
+<li>{TABLEUSERRESULTS} -> Same as {USERRESULTS} but in a table</li>
+<li>{USERGRADES} -> All user grades in course</li>
+<li>{LISTUSERGRADES} -> Same as {USERGRADES} but in bullets</li>
+<li>{TABLEUSERGRADES} -> Same as {USERGRADES} but in a table</li>
 <li>{PROFILE_xxxx} -> User custom profile fields</li>
 </ul>
 In order to use custom profiles fields you must use "PORFILE_" prefix, for example: you has created a custom profile with shortname of "birthday," so the text mark used on certificate must be {PROFILE_BIRTHDAY}.
@@ -134,7 +139,7 @@ $string['download'] = 'Force download';
 $string['emailcertificate'] = 'Email';
 $string['emailfrom'] = 'Email From name';
 $string['emailfrom_help'] = 'Alternate email form name';
-$string['emailoncompletion'] = 'Email on course completion';
+$string['emailoncompletion'] = 'Notification on course completion (email or others)';
 $string['emailothers'] = 'Email Others';
 $string['emailothers_help'] = 'Enter the email addresses here, separated by a comma, of those who should be alerted with an email whenever students receive a certificate.';
 $string['emailsent'] = 'The emails have been sent';
@@ -175,6 +180,7 @@ $string['gradefmt_help'] = 'There are three available formats if you choose to p
 <li>Points Grade: Prints the point value of the grade.</li>
 <li>Letter Grade: Prints the percentage grade as a letter.</li>
 </ul>';
+$string['gradelegacy'] = 'Legacy format';
 $string['gradeletter'] = 'Letter Grade';
 $string['gradepercent'] = 'Percentage Grade';
 $string['gradepoints'] = 'Points Grade';
@@ -190,6 +196,7 @@ $string['issueddownload'] = 'Issued certificate [id: {$a}] downloaded';
 $string['issuedview'] = 'Issued certificates';
 $string['issueoptions'] = 'Issue Options';
 $string['keywords'] = 'certificate, course, pdf, moodle';
+$string['messageprovider:receivecertificate'] = 'Receive certificate';
 $string['modulename'] = 'Simple Certificate';
 $string['modulename_help'] = 'The simple certificate activity module enables the teacher to create a custom certificate that can be issued to participants who have completed the teacher’s specified requirements.';
 $string['modulenameplural'] = 'Simple Certificates';
@@ -242,6 +249,7 @@ $string['secondtextposition_help'] = 'These are the XY coordinates (in millimete
 $string['sendtoemail'] = 'Send to user\'s email';
 $string['showusers'] = 'Show';
 $string['signame_help'] = '';
+$string['signaturenoptions'] = 'Security signing options';
 $string['signhead'] = 'Sign setting';
 $string['signheight'] = 'Default height';
 $string['signheight_help'] = '';
@@ -257,6 +265,7 @@ $string['signposy_help'] = '';
 $string['signwidth'] = 'Default width';
 $string['signwidth_help'] = '';
 $string['simplecertificate:addinstance'] = 'Add Simple Certificate Activity';
+$string['simplecertificate:issue'] = 'Issue certificate';
 $string['simplecertificate:manage'] = 'Manage Simple Certificate Activity';
 $string['simplecertificate:view'] = 'View Simple Certificate Activity';
 $string['simplecertificateissue'] = 'Certificate Issue';
@@ -272,6 +281,8 @@ $string['upgradeerror'] = 'Error while upgrading $a';
 $string['usercontextnotfound'] = 'User context not found';
 $string['userdateformat'] = 'User\'s Language Date Format';
 $string['usernotfound'] = 'User not found';
+$string['usesignature'] = 'Use signature';
+$string['usesignature_help'] = 'Use the institutional private key to sign the certificate.';
 $string['variablesoptions'] = 'Others Options';
 $string['verifycertificate'] = 'Verify Certificate';
 $string['viewcertificateviews'] = 'View {$a} issued certificates';

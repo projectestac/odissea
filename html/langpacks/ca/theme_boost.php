@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'ca', version '4.4'.
+ * Strings for component 'theme_boost', language 'ca', version '4.5'.
  *
  * @package     theme_boost
  * @category    string
@@ -34,7 +34,6 @@ $string['brandcolor'] = 'Color de la marca';
 $string['brandcolor_desc'] = 'El color de l\'accent.';
 $string['choosereadme'] = 'El Boost és un tema modern i altament personalitzable. Aquest tema està pensat per ser utilitzat directament o com a tema pare quan es creen temes nous amb Bootstrap 4.';
 $string['configtitle'] = 'Boost';
-$string['currentinparentheses'] = '(actual)';
 $string['generalsettings'] = 'Configuració general';
 $string['nobootswatch'] = 'Cap';
 $string['pluginname'] = 'Boost';
@@ -42,8 +41,6 @@ $string['preset'] = 'Configuració predeterminada del tema';
 $string['preset_desc'] = 'Trieu una configuració predeterminada per canviar l\'aspecte general del tema.';
 $string['presetfiles'] = 'Fitxers addicionals per a la configuració predeterminada del tema';
 $string['presetfiles_desc'] = 'Els fitxers de la configuració predeterminada es poden utilitzar per alterar dràsticament l\'aspecte del tema. Vegeu  <a href="https://docs.moodle.org/dev/Boost_Presets">configuració predeterminada del Boost</a> per obtenir informació sobre com crear i compartir els vostres propis fitxers predefinits i consulteu el <a href="https://archive.moodle.net/boost">repositori de configuracions predeterminades</a> per trobar configuracions que altres han compartit.';
-$string['privacy:drawernavclosed'] = 'La preferència actual per al calaix de navegació és «tancat».';
-$string['privacy:drawernavopen'] = 'La preferència actual per al calaix de navegació és «obert».';
 $string['privacy:metadata'] = 'El tema Boost no emmagatzema dades personals dels usuaris.';
 $string['privacy:metadata:preference:draweropennav'] = 'La preferència de l\'usuari per mostrar o amagar la navegació del menú del calaix.';
 $string['rawscss'] = 'SCSS cru';

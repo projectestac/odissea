@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'eu', version '4.4'.
+ * Strings for component 'bigbluebuttonbn', language 'eu', version '4.5'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -41,6 +41,7 @@ $string['bigbluebuttonbn:join'] = 'Sartu BigBlueButton bilera-gela batera';
 $string['bigbluebuttonbn:managerecordings'] = 'Kudeatu grabazioak';
 $string['bigbluebuttonbn:protectrecordings'] = 'Babestu grabazioak';
 $string['bigbluebuttonbn:publishrecordings'] = 'Argitaratu grabazioak';
+$string['bigbluebuttonbn:seepresentation'] = 'Ikusi beti aurkezpen-fitxategia jarduera-orrian';
 $string['bigbluebuttonbn:unprotectrecordings'] = 'Kendu babesa grabazioei';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'Ezkutatu grabazioak';
 $string['bigbluebuttonbn:view'] = 'Ikusi BigBlueButton bilera-gela';
@@ -201,6 +202,10 @@ $string['config_server_url'] = 'BigBlueButton zerbitzariaren URLa';
 $string['config_server_url_description'] = 'Zure BigBlueButton zerbitzariaren URLa';
 $string['config_shared_secret'] = 'BigBlueButton sekretu partekatua';
 $string['config_shared_secret_description'] = 'Zure BigBlueButton zerbitzariaren segurtasun-sekretua.';
+$string['config_showpresentation_default'] = 'Erakutsi aurkezpen-fitxategia jarduera-orrian';
+$string['config_showpresentation_default_description'] = 'Ikasleek aurkezpen-fitxategira saioa hasi aurretik sarbidea izan beharko dute? Ezarpen honek ez dauka eraginik \'Ikusi beti aurkezpen-fitxategia jarduera-orrian\' baimena duten erabiltzaileengan.';
+$string['config_showpresentation_editable'] = '\'Erakutsi aurkezpen-fitxategia jarduera-orrian\' aukera';
+$string['config_showpresentation_editable_description'] = 'Irakasleek ikasleei aurkezpen-fitxategia erakutsi edo ez aukeratzeko jarduera ezarpenetako aukera.';
 $string['config_uidelegation_enabled'] = 'Interfaze grafikoaren ordezkaritza gaituta dago';
 $string['config_uidelegation_enabled_description'] = 'Ezarpen hauen bidez BigBlueButton zerbitzariaren interfaze grafikoaren ordezkaritza gaitu edo desgaitu daiteke .';
 $string['config_userlimit'] = 'Erabiltzaile-muga';
@@ -372,6 +377,7 @@ $string['mod_form_field_recordings_html'] = 'Erakutsi taula formaturik gabeko HT
 $string['mod_form_field_recordings_imported'] = 'Erakutsi soilik inportatutako estekak';
 $string['mod_form_field_recordings_preview'] = 'Erakutsi grabazioaren aurrebista';
 $string['mod_form_field_room_name'] = 'Bilera-gelaren izena';
+$string['mod_form_field_showpresentation'] = 'Erakutsi aurkezpen-fitxategia jarduera-orrian';
 $string['mod_form_field_userlimit'] = 'Erabiltzaile-muga';
 $string['mod_form_field_userlimit_help'] = 'Saio batean onartutako gehieneko erabiltzaile kopurua. Ezarritako muga 0 bada ez da erabiltzaile mugarik egongo.';
 $string['mod_form_field_voicebridge'] = 'Ahots-zubia [####]';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'es', version '4.4'.
+ * Strings for component 'backup', language 'es', version '4.5'.
  *
  * @package     backup
  * @category    string
@@ -205,6 +205,7 @@ $string['enableasyncbackup_help'] = 'Si se habilita, todas las operaciones de co
 $string['enterasearch'] = 'Introduzca un criterio de búsqueda';
 $string['error_block_for_module_not_found'] = 'Encontrada instancia de bloque huérfano (id: {$a->bid}) para el módulo del curso (id: {$a->mid}) Este bloque no se copiará';
 $string['error_course_module_not_found'] = 'Encontrado módulo de curso huérfano (id: {$a}). Este modulo no se copiará';
+$string['error_delegate_section_not_found'] = 'Falta la sección delegada del módulo de curso (ID {$a}). No se hará copia de seguridad de la sección.';
 $string['errorcopyingbackupfile'] = 'Fallo al copiar el fichero de copia de seguridad al directorio temporal antes de restaurar.';
 $string['errorfilenamemustbezip'] = 'El nombre que se introduzca debe ser un archivo ZIP y con la extensión MBZ';
 $string['errorfilenamerequired'] = 'Debe introducir un nombre de archivo válido para esta copia de seguridad';
@@ -279,6 +280,7 @@ $string['includeditems'] = 'Elementos incluidos:';
 $string['includefilereferences'] = 'Referencias de archivo a contenidos externos';
 $string['includesection'] = 'Sección {$a}';
 $string['includeuserinfo'] = 'Datos de usuario';
+$string['includeuserinfo_instance'] = 'Incluir datos de usuario {$a}';
 $string['inprogress'] = 'Copia de seguridad en progreso';
 $string['jumptofinalstep'] = 'Saltar al último paso';
 $string['keep'] = 'Conservar';
@@ -397,6 +399,7 @@ $string['rootsettingusers'] = 'Incluir usuarios matriculados';
 $string['rootsettinguserscompletion'] = 'Incluir detalles del grado de avance del usuario';
 $string['rootsettingxapistate'] = 'Incluye el estado del usuario en contenido como actividades H5P';
 $string['samesitenotification'] = 'Esta copia de seguridad fue creada solo con referencias a archivos, pero no con los propios archivos. La restauración sólo funcionará en este sitio.';
+$string['section_prefix'] = 'Sección {$a}:';
 $string['sectionactivities'] = 'Actividades';
 $string['sectioninc'] = 'Incluido en la copia de seguridad (sin información de usuario)';
 $string['sectionincanduser'] = 'Incluido en la copia de seguridad junto con la información del usuario';
@@ -423,6 +426,7 @@ $string['status'] = 'Estado';
 $string['storagecourseandexternal'] = 'Área de ficheros de copia de seguridad y carpeta específica';
 $string['storagecourseonly'] = 'Área de archivos de copia de seguridad';
 $string['storageexternalonly'] = 'Especifique directorio para las copias de seguridad automáticas';
+$string['subsectioncontent'] = 'Contenido de la subsección.';
 $string['successful'] = 'Copia de seguridad exitosa';
 $string['successfulcopy'] = 'Copia exitosa';
 $string['successfulrestore'] = 'Restauración exitosa';

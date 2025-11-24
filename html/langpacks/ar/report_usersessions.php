@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_usersessions', language 'ar', version '4.4'.
+ * Strings for component 'report_usersessions', language 'ar', version '4.5'.
  *
  * @package     report_usersessions
  * @category    string
@@ -25,7 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['mysessions'] = 'جلساتي النشطة';
+$string['logoutothersessions'] = 'تسجيل خروج من كل جلسات المستعرض';
+$string['logoutothersessions_help'] = 'تسجيل خروج شامل لجلسات مستعرضات الويب، باستثناء هذه الجلسة. هذا لا يؤثر على تطبيقات الويب.';
+$string['logoutothersessionssuccess'] = 'لقد تم تسجيل خروجك من كل جلساتك الأخرى.';
+$string['logoutsinglesessionsuccess'] = 'لقد تم تسجيل خروجك من جلستك في {$a}.';
+$string['mysessions'] = 'جلساتي النشطة عند مستعرضات الويب';
 $string['navigationlink'] = 'جلسات المستعرض';
 $string['pluginname'] = 'تقرير جلسات المستخدم';
 $string['privacy:metadata'] = 'إن ملحق تقرير جلسات المستخدم لا يخزن أي بيانات شخصية.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_recordrtc', language 'eu', version '4.4'.
+ * Strings for component 'tiny_recordrtc', language 'eu', version '4.5'.
  *
  * @package     tiny_recordrtc
  * @category    string
@@ -25,8 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowedpausing'] = 'Baimendu geratzea';
 $string['allowedtypes'] = 'Grabaketa mota';
-$string['allowedtypes_desc'] = 'Zein grabaketa mota egin daiteke TinyMCE editorean? Ezarpen honetaz gain, grabaketa aukeretarako sarbidea kontrolatzeko bi gaitasun daude.';
+$string['allowedtypes_desc'] = 'Zein grabaketa mota egin daiteke TinyMCE editorean? Ezarpen honetaz gain, grabaketa aukeretarako sarbidea kontrolatzeko gaitasunak daude.';
 $string['attachrecording'] = 'Erantsi grabazioa';
 $string['audioandvideo'] = 'Audioa eta bideoa';
 $string['audiobitrate'] = 'Audioaren bit-emaria';
@@ -38,21 +39,21 @@ $string['audiotitle'] = 'Grabatu audioa';
 $string['confirm_yes'] = 'Bai';
 $string['discard_desc'] = 'Grabaketa bat martxan dago. Grabaketa geratu nahi duzu?';
 $string['discard_title'] = 'Itxi baieztapena';
-$string['gumabort'] = 'Zerbait gertatu da webkamera/mikrofonoa erabiltzea ekidin duena.';
+$string['gumabort'] = 'Zerbait gertatu da web-kamera/mikrofonoa/pantaila erabiltzea ekidin duena.';
 $string['gumabort_title'] = 'Zerbait gertatu da';
-$string['gumnotallowed'] = 'Nabigatzaileari webkamera/mikrofonoa erabiltzeko baimena eman behar diozu.';
+$string['gumnotallowed'] = 'Nabigatzaileari web-kamera/mikrofonoa/pantaila erabiltzeko baimena eman behar diozu.';
 $string['gumnotallowed_title'] = 'Baimen okerrak';
 $string['gumnotfound'] = 'Ez da gaitutako sarrera-gailurik antzeman.';
 $string['gumnotfound_title'] = 'Gailua falta da';
-$string['gumnotreadable'] = 'Zerbaitek zure nabigatzaileari webkamera/mikrofonoa erabiltzea ekiditen ari da.';
+$string['gumnotreadable'] = 'Zerbaitek zure nabigatzaileari web-kamera/mikrofonoa/pantaila erabiltzea ekiditen ari da.';
 $string['gumnotreadable_title'] = 'Hardware errorea';
 $string['gumnotsupported'] = 'Zure nabigatzaileak ez du segurua ez den konexio baten bidezko grabazioa onartzen.';
 $string['gumnotsupported_title'] = 'Ez da onartzen segurua ez den grabaziorik';
-$string['gumoverconstrained'] = 'Oraingo webkamerak/mikrofonoak ezin du stream bat beharrezko murrizketekin sortu.';
+$string['gumoverconstrained'] = 'Oraingo web-kamerak/mikrofonoak/pantailak ezin du stream bat beharrezko murrizketekin sortu.';
 $string['gumoverconstrained_title'] = 'Arazoa murrizketekin';
 $string['gumsecurity'] = 'Zure nabigatzaileak ez du segurua ez den konexio baten bidezko grabazioa onartzen.';
 $string['gumsecurity_title'] = 'Ez da onartzen segurua ez den grabaziorik';
-$string['gumtype'] = 'Webkameratik/mikrofonotik stream bat eskuratzen saiatu gara, baina ez da murrizketarik zehaztu.';
+$string['gumtype'] = 'Web-kameratik/mikrofonotik/pantailatik stream bat eskuratzen saiatu gara, baina ez da murrizketarik zehaztu.';
 $string['gumtype_title'] = 'Ez da murrizketarik zehaztu';
 $string['helplinktext'] = 'GrabatuRTC';
 $string['insecurealert'] = 'Baliteke zure nabigatzaileak plugin hau ez onartzea HTTPS bidez edo localhost batetik erabiltzen ez bada.';
@@ -64,8 +65,10 @@ $string['norecordingfound'] = 'Zerbaitek huts egin du. Ez da ezer grabatu.';
 $string['norecordingfound_title'] = 'Ez da grabaziorik aurkitu';
 $string['nowebrtc'] = 'Zure nabigatzaileak oraindik ez du WebRTC teknologia onartzen edo modu mugatuan onartzen du, eta ondorioz ezin da plugin honekin erabili. Mesedez aldatu edo eguneratu ezazu nabigatzailea';
 $string['nowebrtc_title'] = 'Ez da WebRTC onartzen';
-$string['onlyaudio'] = 'Audioa baino ez';
-$string['onlyvideo'] = 'Bideoa baino ez';
+$string['onlyaudio'] = 'Audioa';
+$string['onlyscreen'] = 'Pantaila';
+$string['onlyvideo'] = 'Bideoa';
+$string['pause'] = 'Geratu';
 $string['pluginname'] = 'GrabatuRTC';
 $string['privacy:metadata'] = 'GrabatuRTC pluginak ez du datu pertsonalik biltzen.';
 $string['recordagain'] = 'Grabatu berriz';
@@ -74,7 +77,21 @@ $string['recordagain_title'] = 'Grabatu berriz baieztapena';
 $string['recordingfailed'] = 'Grabatzeak huts egin du. Saiatu berriro';
 $string['recordinguploaded'] = 'Grabazioa igo da';
 $string['recordrtc:recordaudio'] = 'Grabatu audioa testu-editorean';
+$string['recordrtc:recordscreen'] = 'Grabatu pantaila testu-editorean';
 $string['recordrtc:recordvideo'] = 'Grabatu bideoa testu-editorean';
+$string['resume'] = 'Berrekin';
+$string['screenbitrate'] = 'Pantailaren bit-emaria';
+$string['screenbitrate_desc'] = 'Pantaila-grabazioaren kalitatea (zenbaki handiago batek kalitate handiagoa esan nahi du).';
+$string['screenbuttontitle'] = 'Grabatu pantaila';
+$string['screenresolution_fhd'] = '1920 x 1080 (16:9)';
+$string['screenresolution_hd'] = '1280 x 720 (16:9)';
+$string['screensharingstopped'] = 'Grabazioa hasi baino lehen zure pantaila partekatzea geratu duzu. Zure nabigatzailearen ezarpenetan pantaila partekatzea baimendu ezazu eta ondoren grabazioa berriro hasi ezazu.';
+$string['screensharingstopped_title'] = 'Partekatzea geratu da';
+$string['screensize'] = 'Pantaila-grabazioaren tamaina';
+$string['screensize_desc'] = 'Irteerako bideoaren erresoluzioaren tamaina.';
+$string['screentimelimit'] = 'Pantaila-grabazioaren denbora-muga';
+$string['screentimelimit_desc'] = 'Pantaila-grabazioaren gehieneko iraupena.';
+$string['screentitle'] = 'Grabatu pantaila';
 $string['startrecording'] = 'Hasi grabatzen';
 $string['stoprecording'] = 'Gelditu grabazioa';
 $string['timelimitwarning'] = '0 baino handiagoa den zenbaki bat idatzi behar duzu.';
@@ -86,6 +103,7 @@ $string['uploadprogress'] = 'osatuta';
 $string['videobitrate'] = 'Bideoaren bit-emaria';
 $string['videobitrate_desc'] = 'Bideo-grabazioaren kalitatea (zenbaki handiagoek kalitate hobea esan nahi dute).';
 $string['videobuttontitle'] = 'Grabatu bideoa';
+$string['videorecordmenutitle'] = 'Bideo-grabazioaren menua';
 $string['videotimelimit'] = 'Bideoaren iraupen-muga';
 $string['videotimelimit_desc'] = 'Bideo-klipen grabazioetarako gehieneko iraupena';
 $string['videotitle'] = 'Grabatu bideoa';

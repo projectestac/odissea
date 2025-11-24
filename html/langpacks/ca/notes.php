@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'ca', version '4.4'.
+ * Strings for component 'notes', language 'ca', version '4.5'.
  *
  * @package     notes
  * @category    string
@@ -31,7 +31,7 @@ $string['addbulknotedonesingle'] = 'Nota afegida a 1 persona';
 $string['addbulknotesingle'] = 'Afegeix una nota nova a 1 persona';
 $string['addnewnote'] = 'Afegeix una anotació';
 $string['addnewnoteselect'] = 'Selecciona usuaris per fer-hi anotacions';
-$string['author'] = 'Autor/a';
+$string['author'] = 'Autor o autora';
 $string['bynameondate'] = 'Autor: {$a->name} ({$a->date})';
 $string['configenablenotes'] = 'Habilita l\'historial d\'anotacions sobre els usuaris individuals.';
 $string['content'] = 'Contingut';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'pt', version '4.4'.
+ * Strings for component 'workshop', language 'pt', version '4.5'.
  *
  * @package     workshop
  * @category    string
@@ -321,11 +321,11 @@ $string['reassess'] = 'Reavaliar';
 $string['receivedgrades'] = 'Notas obtidas';
 $string['recentassessments'] = 'Avaliações submetidas:';
 $string['recentsubmissions'] = 'Trabalhos submetidos:';
-$string['resetassessments'] = 'Apagar todas as avaliações';
+$string['resetassessments'] = 'Todas as avaliações';
 $string['resetassessments_help'] = 'Pode optar por apagar apenas as avaliações atribuídas sem afetar as submissões. Se as submissões forem apagadas, as respetivas avaliações serão implicitamente apagadas e esta opção é ignorada. Tenha em atenção que isto também inclui as avaliações de trabalhos exemplo.';
 $string['resetphase'] = 'Mudar para a fase de configuração';
 $string['resetphase_help'] = 'Se ativar esta opção, todos os workshops serão colocados na fase de configuração.';
-$string['resetsubmissions'] = 'Apagar todas as submissões';
+$string['resetsubmissions'] = 'Todas as submissões';
 $string['resetsubmissions_help'] = 'Todas as submissões e respetivas avaliações serão eliminadas. Isto não afeta os trabalhos exemplo.';
 $string['saveandclose'] = 'Guardar e fechar';
 $string['saveandcontinue'] = 'Guardar e continuar edição';

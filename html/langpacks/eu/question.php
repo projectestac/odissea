@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'eu', version '4.4'.
+ * Strings for component 'question', language 'eu', version '4.5'.
  *
  * @package     question
  * @category    string
@@ -314,7 +314,6 @@ $string['nocate'] = 'Ez da kategoria existitzen {$a}!';
 $string['noconditionspecified'] = 'Zehaztu ezazu baldintza bat, mesedez';
 $string['nopermissionadd'] = 'Ez duzu baimenik hemen galderarik gaineratzeko.';
 $string['nopermissionedit'] = 'Ez duzu hemendik galderak editatzeko baimenak.';
-$string['nopermissionmove'] = 'Ez duzu baimenik galderak hemendik mugitzeko. Galdera kategoria honetan gorde behar duzu edo galdera berri gisa gorde.';
 $string['noprobs'] = 'Zure galderen datu-basean ez da arazorik aurkitu.';
 $string['noquestionbanks'] = 'Ez da galdera-bankuko pluginik aurkitu.';
 $string['noquestions'] = 'Ez da esporta daitekeen galderarik aurkitu. Ziurtatu ezazu aukeratu duzun kategoriak galderak badituela.';
@@ -387,9 +386,9 @@ $string['privacy:metadata:database:question_attempts:responsesummary'] = 'Galder
 $string['privacy:metadata:database:question_attempts:timemodified'] = 'Galdera-saiakera eguneratu zeneko unea.';
 $string['privacy:metadata:database:question_bank_entries'] = 'Galdera-bankuko erregistro zehatz bateko xehetasunak.';
 $string['privacy:metadata:database:question_bank_entries:ownerid'] = 'Galdera-bankuko erregistro baten jabea den erabiltzailea.';
-$string['privacy:metadata:link:qbehaviour'] = 'Galderen sistemak galdera-jokaera plugin motaren erabilera egiten du.';
-$string['privacy:metadata:link:qformat'] = 'Galderen sistemak galdera-formatua plugin motaren erabilera egiten du galderak formatu ezberdinetan inportatu eta esportatzeko.';
-$string['privacy:metadata:link:qtype'] = 'Galderen sistemak galdera mota plugin motarekin aritzen da, eta bertan galdera mota ezberdinak daude.';
+$string['privacy:metadata:link:qbehaviour'] = 'Galderen azpisistemak galdera-jokaera plugin motaren erabilera egiten du.';
+$string['privacy:metadata:link:qformat'] = 'Galderen azpisistemak galdera-formatua plugin motaren erabilera egiten du galderak formatu ezberdinetan inportatu eta esportatzeko.';
+$string['privacy:metadata:link:qtype'] = 'Galderen azpisistemak galdera mota plugin motarekin aritzen da, eta bertan galdera mota ezberdinak daude.';
 $string['published'] = 'partekatuta';
 $string['qbanknotfound'] = '\'{$a}\' galdera-bankuko plugina ez da existitzen edo ezezaguna da.';
 $string['qtypeveryshort'] = 'Mota';
@@ -405,7 +404,11 @@ $string['questionbehavioursorderexplained'] = 'Idatzi komaz banatutako zerrenda 
 $string['questioncategories'] = 'Galdera-kategoriak';
 $string['questioncategory'] = 'Galdera-kategoriak';
 $string['questioncatsfor'] = 'Galdera-kategoriak \'{$a}\'-rako';
+$string['questiondefaultssave'] = 'Gorde galderen lehenetsitako balioak erabiltzaile-hobespen gisa';
+$string['questiondefaultssave_desc'] = 'Galderen aukerak, hala nola \'Lehenetsitako puntuazioa\' edo \'Erantzun bakarra ala anizkoitza?\', galdera editatzeko formularioa bidaltzen denean erabiltzaile-hobespen gisa gorde beharko diren ala ez, galderak editatzeko formularioa berriz zabaltzerakoan lehenetsitako gisa erabiliak izan daitezen.';
 $string['questiondoesnotexist'] = 'Ez dago galdera hau';
+$string['questionediting'] = 'Galdera editatzen';
+$string['questionediting_desc'] = 'Ezarpen hauek galderak editatzeko formularioetan aplikatzen dira.';
 $string['questionformtagheader'] = '{$a} etiketa(k)';
 $string['questionidmismatch'] = 'Errorea galderen IDetan';
 $string['questionloaderror'] = 'Ezin izan dira kargatu galderaren aukerak.';

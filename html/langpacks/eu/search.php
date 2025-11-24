@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'eu', version '4.4'.
+ * Strings for component 'search', language 'eu', version '4.5'.
  *
  * @package     search
  * @category    string
@@ -101,10 +101,11 @@ $string['optimize'] = 'Optimizatu';
 $string['order'] = 'Emaitzen ordena';
 $string['order_location'] = 'Lehenetsi emaitzak {$a}(r)en arabera';
 $string['order_relevance'] = 'Emaitza esanguratsuenak lehenengo';
+$string['performsearch'] = 'Egin bilaketa';
 $string['priority'] = 'Lehentasuna';
 $string['priority_normal'] = 'Arrunta';
 $string['priority_reindexing'] = 'Berriz indexatzea';
-$string['privacy:metadata'] = 'Bilaketa-sistemak ez du datu pertsonalik biltzen.';
+$string['privacy:metadata'] = 'Bilaketen azpisistemak ez du datu pertsonalik biltzen.';
 $string['progress'] = 'Aurrerapena';
 $string['queryerror'] = 'Bilaketa-motorrak ezin izan du zure bilaketa aztertu: {$a}';
 $string['queueheading'] = 'Indexatze gehigarrien ilara ({$a} elementu)';
@@ -130,6 +131,7 @@ $string['searchnotpermitted'] = 'Ez duzu bilaketa egiteko baimenik';
 $string['searchsetupdescription'] = 'Hurrengo pausoek lagunduko dizute Moodlen bilaketa orokorra martxan jartzen.';
 $string['searchwithin'] = 'Bilatu honen barruan';
 $string['seconds'] = 'segundo';
+$string['sitewidesearch'] = 'Gune mailako bilaketa';
 $string['solutions'] = 'Konponketak';
 $string['statistics'] = 'Estatistikak';
 $string['step'] = 'Urratsa';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'courseformat', language 'ro', version '4.4'.
+ * Strings for component 'courseformat', language 'ro', version '4.5'.
  *
  * @package     courseformat
  * @category    string
@@ -54,8 +54,10 @@ $string['cm_stealth_feedback_batch'] = 'Activitățile selectate {$a->count} sun
 $string['cm_visiblegroups_feedback'] = 'Modul de grup {$a->name} a fost schimbat în Grupuri vizibile.';
 $string['cmavailability'] = 'Disponibiitatea activității';
 $string['cmdelete_info'] = 'Această acțiune va șterge "{$a->name}" și orice date despre utilizator pe care le conțin.';
+$string['cmdelete_subsectiontitle'] = 'Șterge subsecțiunea?';
 $string['cmdelete_title'] = 'Șterge activitatea';
 $string['cmmove_info'] = 'Mută "{$a}" după';
+$string['cmmove_subsectiontitle'] = 'Mută subsecțiunea';
 $string['cmmove_title'] = 'Mută activitatea';
 $string['cmsdelete'] = 'Șterge activități';
 $string['cmsdelete_info'] = 'Această acțiune va șterge {$a->count} activități și orice date despre utilizator pe care le conțin.';
@@ -66,7 +68,9 @@ $string['cmsmove_info'] = 'Mută activitățile {$a} după';
 $string['cmsmove_title'] = 'Mută activitățile selectate';
 $string['courseindex'] = 'Indexul cursului';
 $string['courseindexoptions'] = 'Opțiunile indexului cursului';
+$string['maxsectionaddmessage'] = 'Ați atins numărul maxim de secțiuni permise pentru un curs.';
 $string['nobulkaction'] = 'Nicio acțiune în masă nu este disponibilă';
+$string['orphansectionwarning'] = 'Această secțiune și conținutul ei nu fac parte din structura cursului și nu sunt vizibile pentru studenți. Pentru a utiliza acest conținut, mutați-l într-o secțiune diferită.';
 $string['preference:coursesectionspreferences'] = 'Secțiunea preferințe utilizator pentru cursul {$a}';
 $string['privacy:metadata:preference:coursesectionspreferences'] = 'Secțiunea preferințe ale utilizatorului, cum ar fi restrâns și extins.';
 $string['section_delete_feedback'] = 'Secțiunea de curs {$a->name} ștearsă';
@@ -75,6 +79,7 @@ $string['section_hide_feedback'] = 'Secțiunea de curs {$a->name} ascunsă.';
 $string['section_hide_feedback_batch'] = 'Cele {$a->count} secțiuni de curs selectate au fost ascunse.';
 $string['section_show_feedback'] = 'Secțiunea de curs {$a->name} afișată.';
 $string['section_show_feedback_batch'] = 'Secțiunile de curs selectate {$a->count} afișate';
+$string['sectionaddmax'] = 'Ați atins numărul maxim de secțiuni permise pentru un curs...';
 $string['sectionavailability_title'] = 'Disponibilitate secțiune';
 $string['sectiondelete_info'] = 'Această acțiune va șterge {$a->name} și toate activitățile pe care le conține.';
 $string['sectiondelete_title'] = 'Șterge secțiunea?';

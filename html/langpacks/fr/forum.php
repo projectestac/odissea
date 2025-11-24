@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'fr', version '4.4'.
+ * Strings for component 'forum', language 'fr', version '4.5'.
  *
  * @package     forum
  * @category    string
@@ -38,7 +38,7 @@ $string['advancedsearch'] = 'Recherche avancée';
 $string['alldiscussions'] = 'Toutes les discussions';
 $string['allforums'] = 'Tous les forums';
 $string['allowdiscussions'] = 'Est-ce que {$a} peut poster dans ce forum ?';
-$string['allowsallsubscribe'] = 'Tout le monde peut choisir de s’abonner ou non à ce forum';
+$string['allowsallsubscribe'] = 'Tout le monde peut choisir de s’abonner ou non à ce forum.';
 $string['allowsdiscussions'] = 'Tout le monde peut lancer une nouvelle discussion dans ce forum';
 $string['allsubscribe'] = 'S’abonner à tous les forums';
 $string['allunsubscribe'] = 'Se désabonner de tous les forums';
@@ -295,9 +295,9 @@ $string['exportstriphtml_help'] = 'Détermine si les balises HTML comme p ou br 
 $string['favourites'] = 'Favori';
 $string['favouriteupdated'] = 'Le réglage favori a été modifié.';
 $string['firstpost'] = 'Premier message';
-$string['forcedreadtracking'] = 'Permettre d’imposer le suivi des messages.';
+$string['forcedreadtracking'] = 'Permettre d’imposer le suivi des messages';
 $string['forcedreadtracking_desc'] = 'Permet d’imposer le suivi des messages de forums. Ce réglage aura pour conséquence une diminution de performance pour certains utilisateurs, en particulier dans des cours avec de nombreux forums et messages. Si le réglage est désactivé, dans les forums qui étaient en mode de suivi imposé, le suivi sera optionnel.';
-$string['forcesubscribed'] = 'Tous les participants sont obligatoirement abonnés à ce forum';
+$string['forcesubscribed'] = 'Tous les participants sont obligatoirement abonnés à ce forum.';
 $string['forcesubscribed_help'] = 'Ce forum ne permet pas de se désabonner des discussions.';
 $string['forum'] = 'Forum';
 $string['forum:addinstance'] = 'Ajouter un forum';
@@ -489,7 +489,7 @@ $string['newforumposts'] = 'Nouveaux messages dans les forums';
 $string['nextdiscussiona'] = 'Discussion suivante : {$a}';
 $string['nextuser'] = 'Enregistrer les modifications et passer à l’utilisateur suivant';
 $string['noattachments'] = 'Ce message n’a pas d’annexe';
-$string['nodiscussions'] = 'Il n’y a pas encore de discussion dans ce forum';
+$string['nodiscussions'] = 'Il n’y a pas encore de discussion dans ce forum.';
 $string['nodiscussionsstartedby'] = '{$a} n’a lancé aucune discussion';
 $string['nodiscussionsstartedbyyou'] = 'Vous n’avez pas encore commencé de discussion';
 $string['noguestpost'] = 'Seuls les utilisateurs connectés peuvent écrire dans ce forum.';
@@ -501,12 +501,12 @@ $string['nonews'] = 'Aucune annonce n’a encore été publiée';
 $string['noonecansubscribenow'] = 'L’abonnement n’est maintenant plus autorisé';
 $string['nopermissiontosubscribe'] = 'Vous n’avez pas les permissions requises pour voir les abonnés au forum';
 $string['nopermissiontoview'] = 'Vous n’avez pas les permissions requises pour voir ce message';
-$string['nopostforum'] = 'Désolé, vous ne pouvez pas écrire dans ce forum';
+$string['nopostforum'] = 'Vous ne pouvez pas écrire dans ce forum,';
 $string['noposts'] = 'Aucun message';
 $string['nopostsmadebyuser'] = '{$a} n’a pas écrit de message';
 $string['nopostsmadebyyou'] = 'Vous n’avez pas écrit de message';
-$string['noquestions'] = 'Il n’y a pas encore de question dans ce forum';
-$string['nosubscribers'] = 'Personne n’est abonné à ce forum';
+$string['noquestions'] = 'Il n’y a pas encore de question dans ce forum.';
+$string['nosubscribers'] = 'Personne n’est abonné à ce forum.';
 $string['notexists'] = 'La discussion n’existe plus';
 $string['notgraded'] = 'Non évalué';
 $string['nothingnew'] = 'Rien de neuf pour {$a}';
@@ -517,7 +517,7 @@ $string['notpartofdiscussion'] = 'Ce message n’appartient pas à une discussio
 $string['notrackforum'] = 'Ne pas signaler les messages non lus';
 $string['notsubscribed'] = 'M’abonner';
 $string['nousersmatch'] = 'Aucun utilisateur trouvé pour les critères données';
-$string['noviewdiscussionspermission'] = 'Vous n’avez pas les permissions requises pour voir les discussions de ce forum';
+$string['noviewdiscussionspermission'] = 'Vous n’avez pas les permissions requises pour voir les discussions de ce forum.';
 $string['nowallsubscribed'] = 'Vous êtes maintenant abonné à tous les forums de {$a}.';
 $string['nowallunsubscribed'] = 'Vous êtes maintenant désabonné de tous les forums de {$a}.';
 $string['nowgradinguser'] = 'Évaluation de {$a}';
@@ -554,9 +554,6 @@ $string['postmailinfo'] = 'Ceci est une copie du message posté sur le site {$a}
 $string['postmailnow'] = '<p>Ce message sera envoyé immédiatement à tous les participants abonnés à ce forum.</p>';
 $string['postmailreply'] = 'Pour répondre, cliquer ce lien : {$a}';
 $string['postmailsubject'] = '{$a->courseshortname} : {$a->subject}';
-$string['postrating1'] = 'Pas très pertinent';
-$string['postrating2'] = 'Moyennement intéressant';
-$string['postrating3'] = 'Plutôt pertinent';
 $string['posts'] = 'Messages';
 $string['postsfrom'] = 'Messages de';
 $string['postsmadebyuser'] = 'Messages écrits par {$a}';
@@ -643,7 +640,7 @@ $string['qandaforum'] = 'Forum questions/réponses';
 $string['qandanotify'] = 'Ce forum est un forum Questions et réponses. Pour voir les autres réponses, vous devez d’abord poster votre propre réponse.';
 $string['re'] = 'Re:';
 $string['readtherest'] = 'Lire le reste de la discussion';
-$string['removeallforumtags'] = 'Supprimer tous les tags de forum';
+$string['removeallforumtags'] = 'Tous les tags de forum';
 $string['removefromfavourites'] = 'Retirer cette discussion des favoris';
 $string['replies'] = 'Réponses';
 $string['repliesmany'] = '{$a} réponses';
@@ -658,11 +655,11 @@ $string['replyplaceholder'] = 'Écrivez votre réponse…';
 $string['replypostdiscussion'] = 'Répondre à la discussion';
 $string['replytopostbyemail'] = 'Vous pouvez répondre à ce message par courriel.';
 $string['replytouser'] = 'Utiliser l’adresse de l’auteur';
-$string['resetdigests'] = 'Supprimer toutes les préférences des utilisateurs pour les récapitulatifs de messages de forum';
+$string['resetdigests'] = 'Toutes les préférences utilisateurs pour les récapitulatifs de forum';
 $string['resetforums'] = 'Supprimer les messages du';
-$string['resetforumsall'] = 'Supprimer tous les messages';
-$string['resetsubscriptions'] = 'Supprimer tous les abonnements aux forums';
-$string['resettrackprefs'] = 'Supprimer toutes les préférences de suivi des messages de forum';
+$string['resetforumsall'] = 'Tous les messages';
+$string['resetsubscriptions'] = 'Tous les abonnements aux forums';
+$string['resettrackprefs'] = 'Toutes les préférences de suivi des messages de forum';
 $string['rssarticles'] = 'Nombre d’articles récents RSS';
 $string['rssarticles_help'] = '<p>Cette option vous permet de fixer le nombre d’articles récents à inclure dans le flux RSS.</p>
 

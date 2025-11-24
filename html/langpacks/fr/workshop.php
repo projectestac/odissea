@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'fr', version '4.4'.
+ * Strings for component 'workshop', language 'fr', version '4.5'.
  *
  * @package     workshop
  * @category    string
@@ -321,11 +321,11 @@ $string['reassess'] = 'Ré-évaluer';
 $string['receivedgrades'] = 'Notes reçues';
 $string['recentassessments'] = 'Évaluations de l’atelier :';
 $string['recentsubmissions'] = 'Travaux remis de l’atelier';
-$string['resetassessments'] = 'Supprimer toutes les évaluations';
+$string['resetassessments'] = 'Toutes les évaluations';
 $string['resetassessments_help'] = 'Vous pouvez choisir de ne supprimer que les évaluations attribuées sans toucher les travaux remis. Si des travaux doivent être supprimés, leurs évaluations seront également supprimées et cette option peut être ignorée. Ce réglage concerne également les évaluations des exemples de travail.';
 $string['resetphase'] = 'Passer à la phase de mise en place';
 $string['resetphase_help'] = 'Si ce réglage est activé, tous les ateliers seront passés à la phase de mise en place.';
-$string['resetsubmissions'] = 'Supprimer tous les travaux remis';
+$string['resetsubmissions'] = 'Tous les travaux remis';
 $string['resetsubmissions_help'] = 'Tous les travaux remis et leurs évaluations vont être supprimés, à l’exception des exemples de travail et de leurs évaluations.';
 $string['saveandclose'] = 'Enregistrer et fermer';
 $string['saveandcontinue'] = 'Enregistrer et continuer les modifications';

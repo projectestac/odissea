@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'en', version '4.4'.
+ * Strings for component 'backup', language 'en', version '4.5'.
  *
  * @package     backup
  * @category    string
@@ -205,6 +205,7 @@ $string['enableasyncbackup_help'] = 'If enabled, backup and restore operations w
 $string['enterasearch'] = 'Enter a search';
 $string['error_block_for_module_not_found'] = 'Orphan block instance (id: {$a->bid}) for course module (id: {$a->mid}) found. This block will not be backed up';
 $string['error_course_module_not_found'] = 'Orphan course module (id: {$a}) found. This module will not be backed up.';
+$string['error_delegate_section_not_found'] = 'Missing delegate section form course module (ID {$a}). The section will not be backed up.';
 $string['errorcopyingbackupfile'] = 'Failed to copy the backup file to the temporary folder before restoring.';
 $string['errorfilenamemustbezip'] = 'The filename you enter must be a ZIP file and have the .mbz extension';
 $string['errorfilenamerequired'] = 'You must enter a valid filename for this backup';
@@ -281,6 +282,7 @@ $string['includeditems'] = 'Included items:';
 $string['includefilereferences'] = 'File references to external contents';
 $string['includesection'] = 'Section {$a}';
 $string['includeuserinfo'] = 'User data';
+$string['includeuserinfo_instance'] = 'Include {$a} user data';
 $string['inprogress'] = 'Backup in progress';
 $string['jumptofinalstep'] = 'Jump to final step';
 $string['keep'] = 'Keep';
@@ -399,6 +401,7 @@ $string['rootsettingusers'] = 'Include enrolled users';
 $string['rootsettinguserscompletion'] = 'Include user completion details';
 $string['rootsettingxapistate'] = 'Include user\'s state in content such as H5P activities';
 $string['samesitenotification'] = 'This backup was created with only references to files, not the files themselves. Restoring will only work on this site.';
+$string['section_prefix'] = 'Section {$a}:';
 $string['sectionactivities'] = 'Activities';
 $string['sectioninc'] = 'Included in backup (no user information)';
 $string['sectionincanduser'] = 'Included in backup along with user information';
@@ -425,6 +428,7 @@ $string['status'] = 'Status';
 $string['storagecourseandexternal'] = 'Course backup filearea and the specified directory';
 $string['storagecourseonly'] = 'Course backup filearea';
 $string['storageexternalonly'] = 'Specified directory for automated backups';
+$string['subsectioncontent'] = 'Subsection content';
 $string['successful'] = 'Backup successful';
 $string['successfulcopy'] = 'Copy successful';
 $string['successfulrestore'] = 'Restore successful';

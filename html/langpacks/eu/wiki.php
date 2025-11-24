@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'eu', version '4.4'.
+ * Strings for component 'wiki', language 'eu', version '4.5'.
  *
  * @package     wiki
  * @category    string
@@ -62,7 +62,7 @@ $string['defaultformat_help'] = 'Ezarpen honek wiki-orriak editatzean erabiltzen
 * HTML - HTML editorea eskuragarri dago
 * Creole - wiki-markak dituen hizkuntza, ediziorako tresna-barra txiki bat duena
 * Nwiki - Mediawiki-ren antzerako marka-hizkuntza, Nwiki moduluan erabiltzen dena';
-$string['deleteallpages'] = 'Ezabatu wikiaren orri guztiak';
+$string['deleteallpages'] = 'Wikiaren orri guztiak';
 $string['deletecomment'] = 'Iruzkina ezabatzen';
 $string['deletecommentcheck'] = 'Ezabatu iruzkina';
 $string['deletecommentcheckfull'] = 'Ziur zaude iruzkina ezabatu nahi duzula?';
@@ -250,7 +250,7 @@ $string['privacy:metadata:wiki_versions:version'] = 'Bertsioaren zenbakia';
 $string['rated'] = 'Orri hau honela kalifikatu duzu: {$a}';
 $string['rating'] = 'Puntuazioa';
 $string['ratingmode'] = 'Puntuazio-modua';
-$string['removeallwikitags'] = 'Kendu wiki-etiketa guztiak';
+$string['removeallwikitags'] = 'Wikiaren etiketa guztiak';
 $string['removepages'] = 'Ezabatu orriak';
 $string['reparsetimeout'] = 'Lehenetsitako berrazterketaren denbora-muga';
 $string['repeatedsection'] = 'Wiki errorea: Atalaren izena ezin da errepikatu: \'{$a}\'';

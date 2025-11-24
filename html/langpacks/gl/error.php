@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'gl', version '4.4'.
+ * Strings for component 'error', language 'gl', version '4.5'.
  *
  * @package     error
  * @category    string
@@ -158,7 +158,6 @@ $string['cannotsetupcapformod'] = 'Non foi posíbel definir as capacidade de {$a
 $string['cannotsetupcapforplugin'] = 'Non foi posíbel definir as capacidade de {$a}';
 $string['cannotshowhidecoursesincategory'] = 'Non é posíbel amosar/agochar os cursos na categoría {$a}.';
 $string['cannotsignup'] = 'Vostede non pode crear unha conta nova porque xa accedeu como {$a}.';
-$string['cannotswitcheditmodeon'] = 'Non foi posíbel activar o modo de edición';
 $string['cannotunassigncap'] = 'Non foi posíbel desasignar a capacidade obsoleta {$a->cap} do rol {$a->role}';
 $string['cannotunassignrolefrom'] = 'Non é posíbel desasignar este usuario do id de rol:{$a}';
 $string['cannotunzipfile'] = 'Non é posíbel descomprimir o ficheiro';

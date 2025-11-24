@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'eu', version '4.4'.
+ * Strings for component 'enrol_database', language 'eu', version '4.5'.
  *
  * @package     enrol_database
  * @category    string
@@ -53,9 +53,13 @@ $string['localcoursefield'] = 'Ikastaroaren eremu lokala';
 $string['localrolefield'] = 'Rolaren eremu lokala';
 $string['localuserfield'] = 'Erabiltzailearen eremu lokala';
 $string['newcoursecategory'] = 'Ikastaro-kategoria berriaren eremua';
+$string['newcourseenddate'] = 'Ikastaro berriko amaiera-data eremua';
+$string['newcourseenddate_desc'] = 'Zehaztu data bat UUUU-HH-EE ala Unix denbora formatuan. Hutsik utziz gero ikastaroaren amaiera-data ikastaroaren iraupen lehenetsiaren arabera kalkulatuko da.';
 $string['newcoursefullname'] = 'Ikastaro berriaren izen luzeraren eremua';
 $string['newcourseidnumber'] = 'Ikastaro berriaren ID zenbakiaren eremua';
 $string['newcourseshortname'] = 'Ikastaro berriaren izen laburraren eremua';
+$string['newcoursestartdate'] = 'Ikastaro berriko hasiera-data eremua';
+$string['newcoursestartdate_desc'] = 'Zehaztu data bat UUUU-HH-EE ala Unix denbora formatuan. Hutsik utziz gero ikastaroko hasiera-data sorrera uneko data izango da.';
 $string['newcoursetable'] = 'Urrutiko ikastaro berrien taula';
 $string['newcoursetable_desc'] = 'Zehaztu automatikoki sortu beharreko ikastaroen zerrenda duen taularen izena. Hutsik utziz gero ez da ikastarorik sortuko.';
 $string['pluginname'] = 'Kanpoko datu-basea';

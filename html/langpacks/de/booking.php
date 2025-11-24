@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booking', language 'de', version '4.4'.
+ * Strings for component 'booking', language 'de', version '4.5'.
  *
  * @package     booking
  * @category    string
@@ -149,8 +149,6 @@ $string['editotherbooking'] = 'Andere Buchungsmöglichkeiten';
 $string['editrule'] = 'Bearbeiten';
 $string['edittag'] = 'Bearbeiten';
 $string['editteachers'] = 'Bearbeiten';
-$string['enablecompletion'] = 'Manuellen Abschluss der Aktivität einschalten.';
-$string['enablecompletiongroup'] = 'Aktivitätsabschluss';
 $string['endtimenotset'] = 'Ende nicht angegeben';
 $string['entervalidurl'] = 'Bitte geben Sie eine gültige URL an!';
 $string['error:failedtosendconfirmation'] = 'Folgender User hat kein Bestätigungsmail erhalten

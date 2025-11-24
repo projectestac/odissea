@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'courseformat', language 'ar', version '4.4'.
+ * Strings for component 'courseformat', language 'ar', version '4.5'.
  *
  * @package     courseformat
  * @category    string
@@ -37,8 +37,9 @@ $string['bulkedit'] = 'إجراءات بالجملة';
 $string['bulkeditingcourse'] = 'تحرير المساق بالجملة: {$a}';
 $string['bulkselection'] = '{$a} محددة';
 $string['bulkselection_plural'] = '{$a} تم تحديدها';
-$string['cm_complete_feedback'] = '{$a->name} مؤشر على أنه مكتمل.';
-$string['cm_complete_feedback_batch'] = 'النشاطات {$a->count} المحددة مؤشرة على أنها مكتملة.';
+$string['cm_add_feedback'] = 'تمت إضافة {$a->modname}';
+$string['cm_complete_feedback'] = '{$a->name} مؤشر على أنه منجز.';
+$string['cm_complete_feedback_batch'] = 'النشاطات {$a->count} المحددة مؤشرة على أنها منجزة.';
 $string['cm_delete_feedback'] = '{$a->name} قد تم حذفه.';
 $string['cm_delete_feedback_batch'] = 'النشاطات {$a->count} المحددة قد تم حذفها.';
 $string['cm_duplicate_feedback'] = '{$a->name} قد تم تكراره.';
@@ -53,13 +54,15 @@ $string['cm_show_feedback'] = '{$a->name} قد صار مرئيًا الآن.';
 $string['cm_show_feedback_batch'] = 'النشاطات {$a->count} المحددة قد تم إظهارها.';
 $string['cm_stealth_feedback'] = '{$a->name} متاح الآن ولكنه غير ظاهر في صفحة المساق.';
 $string['cm_stealth_feedback_batch'] = 'النشاطات المحددة البالغ عددها {$a->count} متاحة الآن ولكنها ليست ظاهرة في صفحة المساق.';
-$string['cm_uncomplete_feedback'] = '{$a->name} مؤشر على أنه غير مكتمل.';
-$string['cm_uncomplete_feedback_batch'] = 'النشاطات {$a->count} المحددة مؤشرة على أنها غير مكتملة.';
+$string['cm_uncomplete_feedback'] = '{$a->name} مؤشر على أنه غير منجز.';
+$string['cm_uncomplete_feedback_batch'] = 'النشاطات {$a->count} المحددة مؤشرة على أنها غير منجزة.';
 $string['cm_visiblegroups_feedback'] = 'نمط المجموعات لـ {$a->name} قد تم تغييره إلى \'مجموعات مرئية\'.';
 $string['cmavailability'] = 'إتاحة النشاط';
 $string['cmdelete_info'] = 'هذا من شأنه حذف {$a->name} مع كل ما يضمه من بيانات المستخدمين.';
+$string['cmdelete_subsectiontitle'] = 'أتريد حذف الاشتراك؟';
 $string['cmdelete_title'] = 'أتريد حذف النشاط؟';
 $string['cmmove_info'] = 'نقل {$a} إلى ما بعد';
+$string['cmmove_subsectiontitle'] = 'نقل القسم الفرعي';
 $string['cmmove_title'] = 'نقل النشاط';
 $string['cmsdelete'] = 'حذف النشاطات';
 $string['cmsdelete_info'] = 'هذا من شأنه حذف {$a->count} من النشاطات مع كل ما تضمه من بيانات المستخدمين.';
@@ -70,15 +73,19 @@ $string['cmsmove_info'] = 'نقل {$a} نشاطات إلى ما بعد';
 $string['cmsmove_title'] = 'نقل النشاطات المحددة';
 $string['courseindex'] = 'فهرس المساق';
 $string['courseindexoptions'] = 'خيارات فهرس المساق';
+$string['maxsectionaddmessage'] = 'لقد بلغت الحد الأقصى من المقاطع المسموح به في المساق.';
 $string['nobulkaction'] = 'لا تتوافر إجراءات بالجملة';
+$string['orphansectionwarning'] = 'هذا القسم ومحتوياته ليست جزءًا من هيكل المقرر الدراسي وغير مرئية للطلاب. لاستعمال أي من هذا المحتوى، أنقله إلى قسم آخر.';
 $string['preference:coursesectionspreferences'] = 'تفضيلات المستخدم للمقاطع في المساق {$a}';
 $string['privacy:metadata:preference:coursesectionspreferences'] = 'تفضيلات المستخدم للمقاطع، مثل خيارات الطي والتوسيع.';
+$string['section_add_feedback'] = 'تمت إضافة مقطع';
 $string['section_delete_feedback'] = 'قسم المقرر {$a->name} قد تم حذفه.';
 $string['section_delete_feedback_batch'] = 'مقاطع المساق {$a->count} المحددة قد تم حذفها.';
 $string['section_hide_feedback'] = 'مقطع المساق {$a->name} قد صار مخفيًا الآن.';
 $string['section_hide_feedback_batch'] = 'مقاطع المساق {$a->count} المحددة قد تم إخفاؤها.';
 $string['section_show_feedback'] = 'مقطع المساق {$a->name} قد صار مرئيًا الآن.';
 $string['section_show_feedback_batch'] = 'مقاطع المساق {$a->count} المحددة قد تم إظهارها.';
+$string['sectionaddmax'] = 'لقد بلغت الحد الأقصى من المقاطع المسموح به في المساق...';
 $string['sectionavailability_title'] = 'إتاحة القسم';
 $string['sectiondelete_info'] = 'هذا من شأنه حذف {$a->name} مع كل ما يضمه من نشاطات.';
 $string['sectiondelete_title'] = 'أتريد حذف القسم؟';

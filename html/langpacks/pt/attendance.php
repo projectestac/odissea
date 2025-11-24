@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attendance', language 'pt', version '4.4'.
+ * Strings for component 'attendance', language 'pt', version '4.5'.
  *
  * @package     attendance
  * @category    string
@@ -143,7 +143,8 @@ $string['coursemessage'] = 'Mensagem aos utilizadores da disciplina';
 $string['courseshortname'] = 'Nome curto da disciplina';
 $string['coursesummary'] = 'Resumo por disciplina';
 $string['createmultiplesessions'] = 'Criar várias sessões';
-$string['createmultiplesessions_help'] = 'Se ativar esta opção, pode criar várias sessões num único e simples passo. As sessões começam na \'Data da sessão\' e continuam até à data \'Repetir até\'.
+$string['createmultiplesessions_help'] = 'Se ativar esta opção, pode criar várias sessões num único e simples passo.
+As sessões começam na \'Data da sessão\' e continuam até à data \'Repetir até\'.
 
 - <strong>Repetir nos dias</strong>: Selecione os dias da semana em que ocorre a sessão (por exemplo, segunda/quarta/sexta).<br />
 - <Strong>Repetir a cada</strong>: Permite definir a frequência com que ocorre. Se a sessão ocorre a cada semana, selecione 1, se ocorre a cada duas semanas, selecione 2, a cada 3 semanas, selecione 3, etc.<br />
@@ -283,7 +284,7 @@ $string['hidensessiondetails'] = 'Ocultar detalhes da sessão';
 $string['identifyby'] = 'Identificar aluno por';
 $string['import'] = 'Importar';
 $string['importfile'] = 'Importar ficheiro';
-$string['importfile_help'] = 'Importar ficheiro';
+$string['importfile_help'] = 'O ficheiro CSV tem de ter um cabeçalho e campos para identificar os grupos, a data/hora e as datas das sessões a criar. <br/>A página seguinte após o envio do ficheiro mostrará exemplos de todos os campos aos quais pode mapear os seus próprios campos. <br/>Exemplo:<br/>groups;sessiondate;from;to<br/>grupoA:05-10-2022;13:00;14:00<br/>grupoB;05-10-2022;14:00;15:00';
 $string['importsessions'] = 'Importar sessões';
 $string['importstatus'] = 'Campo do estado';
 $string['importstatus_help'] = 'Permite que um valor do estado seja incluído na importação - por exemplo, valores como P, F ou A';
@@ -377,20 +378,21 @@ $string['notmember'] = 'não é membro';
 $string['notset'] = 'não definido';
 $string['nounmarkedstatusset'] = 'Não está definido qualquer estado de "Não registado" para esta sessão (id:{$a->sessionid}). Para corrigir, atualize o <a href="{$a->url}">conjunto de estados</a>';
 $string['noupgradefromthisversion'] = 'O módulo de Assiduidade não pode ser atualizado a partir da versão de \'attforblock\' que está instalada. Por favor, apague \'attforblock ou atualize para a última versão antes de instalar o novo módulo Assiduidade';
+$string['nousers'] = 'Não foram encontrados utilizadores inscritos para registar a assiduidade.';
 $string['numsessions'] = 'Número de sessões';
 $string['numsessionstaken'] = 'N.º de sessões realizadas';
 $string['olddate'] = 'Data antiga';
 $string['onactivitycompletion'] = 'Ao completar atividade';
 $string['onlyselectedusers'] = 'Exportar utilizadores específicos';
 $string['overallsessions'] = 'Todas as sessões';
-$string['overallsessions_help'] = 'Mostrar estatísticas de todas as sessões, incluindo as sessões ainda sem assiduidade registada (passado e futuro):
+$string['overallsessions_help'] = 'Mostra as estatísticas de todas as sessões, incluindo as sessões ainda sem assiduidade registada (passado e futuro):
 <ul>
 <li><strong>Sessões</strong>: número total de sessões.</li>
 <li><strong>Pontos</strong>: pontos atribuídos com base nas sessões com registos.</li>
 <li><strong>Percentagem</strong>: percentagem de pontos atribuídos em relação ao máximo de pontos possíveis de todas as sessões.</li>
 </ul>';
 $string['oversessionstaken'] = 'Sessões realizadas';
-$string['oversessionstaken_help'] = 'Mostrar estatísticas para as sessões com assiduidade registada:
+$string['oversessionstaken_help'] = 'Mostra as estatísticas para as sessões com assiduidade registada:
 <ul>
 <li><strong>Sessões</strong>: número de sessões com registos.</li>
 <li><strong>Pontos</strong>: pontos atribuídos com base nas sessões com registos.</li>
@@ -442,7 +444,7 @@ $string['privacy:metadata:timetaken'] = 'Data e hora do registo da assiduidade p
 $string['privacy:metadata:userid'] = 'ID do utilizador a quem enviar aviso.';
 $string['processingfile'] = 'A processar ficheiro';
 $string['qr_cookie_error'] = 'O QR da sessão expirou.';
-$string['qr_pass_wrong'] = 'A senha do QR está incorreta ou expirou.';
+$string['qr_pass_wrong'] = 'O código QR expirou. Por favor, digitalize o código QR novamente.';
 $string['qrcode'] = 'Código QR';
 $string['qrcodeandpasswordheader'] = 'Siga o código QR abaixo ou use a senha apresentada abaixo para registar a sua assiduidade';
 $string['qrcodeheader'] = 'Digitalize o código QR abaixo para registar a sua assiduidade';
@@ -472,17 +474,17 @@ $string['requiredentry_help'] = '<p align="center"><b>Assiduidade</b></p>
 <th>Ação</th>
 </tr>
 <tr>
-<td>Dados da assuidade</td>
-<td>Dados da assuidade</td>
+<td>Dados da assiduidade</td>
+<td>Dados da assiduidade</td>
 <td>Utilizador temporário substituirá utilizador Moodle</td>
 </tr>
 <tr>
 <td>Sem dados de assiduidade</td>
-<td>Dados da assuidade</td>
+<td>Dados da assiduidade</td>
 <td>Assiduidade de utilizador temporário será transferida para utilizador Moodle</td>
 </tr>
 <tr>
-<td>Dados da assuidade</td>
+<td>Dados da assiduidade</td>
 <td>>Sem dados de assiduidade</td>
 <td>Utilizador temporário será apagado</td>
 </tr>
@@ -494,7 +496,7 @@ $string['requiredentry_help'] = '<p align="center"><b>Assiduidade</b></p>
 </table>
 
 </p>
-<p align="left"><strong>Utilizador temporário será sempre apagado  após a ação de unir</strong></p>';
+<p align="left"><strong>Utilizador temporário será sempre apagado após a ação de unir</strong></p>';
 $string['requiresubnet'] = 'Requerer endereço de rede';
 $string['requiresubnet_help'] = 'O registo da assiduidade pode ser restringido a apenas determinadas sub-redes se especificar uma lista dos endereços IP, parciais ou completos, separados por vírgulas.';
 $string['resetcaledarcreate'] = 'Os eventos no calendário foram ativados mas existem várias sessões sem eventos. Pretende criar eventos no calendário para todas as sessões existentes?';

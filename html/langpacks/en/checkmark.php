@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'checkmark', language 'en', version '4.4'.
+ * Strings for component 'checkmark', language 'en', version '4.5'.
  *
  * @package     checkmark
  * @category    string
@@ -446,11 +446,12 @@ $string['remove_presentation_grade_one_success'] = 'Successfully removed grade (
 $string['remove_presentation_grade_success'] = 'Successfully removed grades (presentation) for {$a} users';
 $string['requiregrading'] = 'Requires grading';
 $string['requiresubmit'] = 'Requires submission';
-$string['reverttodefaults'] = 'Revert to assignment defaults';
+$string['reverttodefaults'] = 'Revert to checkmark defaults';
 $string['reviewed'] = 'Reviewed';
 $string['save'] = 'Save';
 $string['saveallfeedback'] = 'Save all grading changes';
 $string['saveoverrideandstay'] = 'Save and enter another override';
+$string['savesubmission'] = 'Save submission';
 $string['search:activity'] = 'Checkmark - activity information';
 $string['select'] = 'Select';
 $string['selection'] = 'Selection';
@@ -520,7 +521,8 @@ $string['submissionstatusheading'] = 'Submission status';
 $string['submitcheckmark'] = 'Submit your checkmark using this form';
 $string['submitted'] = 'Submitted';
 $string['submitted_entries'] = 'Submitted';
-$string['submittedlateshort'] = '{$a} late';
+$string['submittedearly'] = 'Checkmark was submitted {$a} early';
+$string['submittedlate'] = 'Checkmark was submitted {$a} late';
 $string['summary_abs'] = 'x/y Examples checked';
 $string['summary_rel'] = '% Examples checked';
 $string['timelimit'] = 'Time limit';

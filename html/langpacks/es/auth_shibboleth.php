@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'es', version '4.4'.
+ * Strings for component 'auth_shibboleth', language 'es', version '4.5'.
  *
  * @package     auth_shibboleth
  * @category    string
@@ -52,7 +52,7 @@ $string['auth_shib_only_description'] = 'Marque esta opción si desea forzar la 
 $string['auth_shib_username_description'] = 'Nombre de la variable contextual del servidor Shibboleth que se utilizará como nombre de usuario en Moodle';
 $string['auth_shibboleth_errormsg'] = 'Por favor, seleccione la organización a la que pertenece.';
 $string['auth_shibboleth_login'] = 'Inicio de sesión Shibboleth';
-$string['auth_shibboleth_login_long'] = 'Acceso a Moodle vía Shibboleth';
+$string['auth_shibboleth_login_long'] = 'Acceso vía Shibboleth';
 $string['auth_shibboleth_manual_login'] = 'Inicio de sesión manual';
 $string['auth_shibboleth_select_member'] = 'Soy un miembro de...';
 $string['auth_shibboleth_select_organization'] = 'Para iniciar sesión a través de Shibboleth, por favor seleccione su organización de la lista desplegable:';

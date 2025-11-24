@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'el', version '4.4'.
+ * Strings for component 'format_topcoll', language 'el', version '4.5'.
  *
  * @package     format_topcoll
  * @category    string
@@ -192,7 +192,6 @@ $string['markedthissection'] = 'Αυτό το θέμα είναι φωτο-επ�
 $string['markthissection'] = 'Φωτο-επισήμανση αυτού του θέματος ως το τρέχον θέμα';
 $string['medium'] = 'Μεσαίο';
 $string['newsectionname'] = 'Νέο όνομα για την ενότητα {$a}';
-$string['numbersections'] = 'Αριθμός ενοτήτων';
 $string['off'] = 'Απενεργοποιημένο';
 $string['on'] = 'Ενεργοποιημένο';
 $string['one'] = 'Μία';

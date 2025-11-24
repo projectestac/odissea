@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ro', version '4.4'.
+ * Strings for component 'data', language 'ro', version '4.5'.
  *
  * @package     data
  * @category    string
@@ -29,8 +29,6 @@ $string['action'] = 'Acţiune';
 $string['actionsmenu'] = 'Meniul Acțiuni';
 $string['add'] = 'Adaugă un articol';
 $string['addcomment'] = 'Adaugă comentariu';
-$string['addedby'] = 'Adăugat de';
-$string['addentries'] = 'Adaugă articole';
 $string['addtemplate'] = 'Șablon de adăugare';
 $string['advancedsearch'] = 'Căutare complexă';
 $string['allowcomments'] = 'Permite comentarii la articole';
@@ -55,8 +53,6 @@ Câmpurile au formatul [[numecâmp]]. Toate celălalte tag-uri sunt de formatul 
 Numai tag-urile care sunt în lista "Tag-uri Disponibile" pot fi folosite pentru şablonul curent.';
 $string['availabletodate'] = 'Disponibil până la';
 $string['availabletodatevalidation'] = 'Disponibil până în prezent nu poate fi setat înainte de disponibil de la data de.';
-$string['blank'] = 'Blank';
-$string['buttons'] = 'Acţiuni';
 $string['bynameondate'] = 'de {$a->name} - {$a->date}';
 $string['calendarend'] = 'Obiectul {$a} se închide';
 $string['calendarstart'] = '{$a} se deschide';
@@ -126,13 +122,13 @@ $string['defaultfieldenclosure'] = '(nu există caracter implicit)';
 $string['defaultsortfield'] = 'Câmp sortare implicit';
 $string['delcheck'] = 'Caseta de selectare ștergere în bloc';
 $string['delete'] = 'Şterge';
-$string['deleteallentries'] = 'Şterge toate articolele';
+$string['deleteallentries'] = 'Toate articolele';
 $string['deletecomment'] = 'Sunteţi sigur că doriţi ştergerea acestui comentariu?';
 $string['deleteconfirm'] = 'Ștergeți presetarea {$a}?';
 $string['deleted'] = 'şters';
 $string['deleteentry'] = 'Șterge articol';
 $string['deletefield'] = 'Şterge câmp';
-$string['deletenotenrolled'] = 'Sunteţi sigur că doriţi ştergerea acestui parametru implicit?';
+$string['deletenotenrolled'] = 'Articole ale utilizatorilor neînscriși';
 $string['deletewarning'] = 'Ștergerea unei presetări o elimină din lista de presetări disponibile în toate cursurile.';
 $string['descending'] = 'Descrescător';
 $string['directorynotapreset'] = '{$a->directory} Nu este un parametru implicit: lipsesc fişierele: {$a->missing_files}';
@@ -333,7 +329,6 @@ $string['nomatch'] = 'Nu s-au găsit articole care să corespundă criteriilor s
 $string['nomaximum'] = 'Niciun maxim';
 $string['nopreviewavailable'] = 'Nu există previzualizare disponibilă {$a}';
 $string['norecords'] = 'Nu s-au găsit articole';
-$string['nosingletemplate'] = 'Șablonul individual nu este încă definit';
 $string['notapproved'] = 'Se așteaptă aprobarea';
 $string['notapprovederror'] = 'Articolul nu este aprobat încă.';
 $string['notemplates'] = 'Încă nu există șabloane';
@@ -356,7 +351,6 @@ $string['page-mod-data-x'] = 'Orice pagină a modulului cu activitatea din baza 
 $string['pagesize'] = 'Articole pe pagină';
 $string['participants'] = 'Participanţi';
 $string['picture'] = 'Imagine';
-$string['pleaseaddsome'] = 'Pentru a începe alegeţi unul din lista de mai jos sau <a href="{$a}">selectaţi un set predefinit</a>.';
 $string['pluginadministration'] = 'Administrarea activității bazei de date';
 $string['pluginname'] = 'Bază de date';
 $string['portfolionotfile'] = 'Exportați într-un portofoliu sau într-un fișier CSV';
@@ -391,7 +385,7 @@ $string['recorddeleted'] = 'Articol şters';
 $string['recorddisapproved'] = 'Postare neaprobată';
 $string['recordsnotsaved'] = 'Nu s-a salvat niciun articol. Vă rugăm verificaţi formatul fişierului încărcat.';
 $string['recordssaved'] = 'articole salvate';
-$string['removealldatatags'] = 'Eliminați toate etichetele bazei de date';
+$string['removealldatatags'] = 'Toate etichetele bazei de date';
 $string['requireapproval'] = 'Este necesară aprobarea';
 $string['requireapproval_help'] = 'Articolele trebuie să fie aprobate de un profesor înainte de a putea fi văzute de către toți participanții.';
 $string['required'] = 'Necesar';
@@ -428,7 +422,6 @@ $string['saveaspresetmissingcapability'] = 'Utilizatorul nu are permisiunile de 
 $string['savedataaspreset'] = 'Salvați toate câmpurile și șabloanele și publicați ca presetare pe acest site';
 $string['savesettings'] = 'Salvează setări';
 $string['savesuccess'] = 'Presetare salvată. <a href="{$a->url}">Previzualizare presetare</a>';
-$string['savetemplate'] = 'Salvează şablon';
 $string['search'] = 'Căutare';
 $string['search:activity'] = 'Baza de date - informații privind activitatea';
 $string['search:entry'] = 'Baza de date - postări';
@@ -460,7 +453,6 @@ $string['text'] = 'Text';
 $string['textarea'] = 'Editor text';
 $string['timeadded'] = 'Ora la care a fost adăugat';
 $string['timemodified'] = 'Ora la care a fost modificat';
-$string['todatabase'] = 'în această bază de date.';
 $string['type'] = 'Tip câmp';
 $string['undefinedprocessactionmethod'] = 'În Data_Preset nu a fost definită nicio metodă pentru administrarea acţiunii "{$a}".';
 $string['unknown'] = 'Câmp necunoscut';

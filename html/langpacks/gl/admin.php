@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'gl', version '4.4'.
+ * Strings for component 'admin', language 'gl', version '4.5'.
  *
  * @package     admin
  * @category    string
@@ -952,7 +952,6 @@ $string['moodlepartners_help'] = '<p> Os socios de Moodle son provedores de serv
 <a href="https://moodle.com/partners"> Buscar un socio </a>';
 $string['moodleservices'] = 'Servizos de Moodle';
 $string['moodleservices_help'] = 'Asegúrese de obter o mellor do seu contorno de aprendizaxe Moodle usando estes servizos de Moodle:';
-$string['multilangforceold'] = 'Forzar a antiga sintaxe mulyi-idioma &lt;span&gt; sen a class="multilang" e &lt;lang&gt;';
 $string['mustenablestats'] = 'Aínda non se activaron as estatísticas neste sitio.';
 $string['mycourses'] = 'Os meus cursos';
 $string['mydashboard'] = 'Taboleiro predeterminado do sistema';

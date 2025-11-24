@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'eu', version '4.4'.
+ * Strings for component 'auth', language 'eu', version '4.5'.
  *
  * @package     auth
  * @category    string
@@ -88,7 +88,7 @@ $string['emailchangecancel'] = 'Utzi helbide elektronikoaren aldaketa';
 $string['emailchangepending'] = 'Egin gabeko aldaketa. Ireki bidalitako esteka hemen {$a->preference_newemail}.';
 $string['emailnowexists'] = 'Zure profilari ezarri nahi diozun helbide elektronikoa beste erabiltzaile bati ezarri zaio zuk eskaria egin zenuenetik. Helbide elektronikoa aldatzeko eskaera bertan behera geratu da, beraz; baina, nahi izanez gero beste helbide elektroniko batekin egin dezakezu eskaera berria.';
 $string['emailupdate'] = 'Eguneratu helbide elektronikoa';
-$string['emailupdatemessage'] = 'Kaixo, {$a->fullname}:
+$string['emailupdatemessage'] = 'Kaixo, {$a->firstname}:
 
 Zure kontuko helbide elektronikoa aldatzeko eskaria egin duzu {$a->site} gunean. Aldaketa hau baieztatzeko joan mesedez ondorengo web helbidera:
 
@@ -145,7 +145,7 @@ $string['potentialidps'] = 'Sartu beste kontu bat erabiliz:';
 $string['privacy:metadata:userpref:createpassword'] = 'Erabiltzailearentzako pasahitz bat sortu behar dela adierazten du';
 $string['privacy:metadata:userpref:forcepasswordchange'] = 'Erabiltzaileak saioa hastean bere pasahitza aldatu behar duen edo ez adierazten du';
 $string['privacy:metadata:userpref:loginfailedcount'] = 'Erabiltzaileak saio-hastean egindako huts kopurua';
-$string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = 'Erabiltzaileak azken saio-haste arrakastatsuaren ondoren huts egindako saio-hasiera saiakera kopurua';
+$string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = 'Erabiltzaileak azken saio-haste arrakastatsuaren ondoren huts egindako saio-hasiera saiakera kopurua.';
 $string['privacy:metadata:userpref:loginfailedlast'] = 'Huts egindako azken saio-hasiera saiakera gorde zeneko unea';
 $string['privacy:metadata:userpref:loginlockout'] = 'Huts egindako saio-hasiera saiakeren ondorioz erabiltzaile-kontua blokeatuta dagoen edo ez, eta erabiltzaile-kontua blokeatu zeneko data';
 $string['privacy:metadata:userpref:loginlockoutignored'] = 'Erabiltzaile-kontu bat blokeatu ezin daitekela adierazten du';
@@ -161,6 +161,10 @@ $string['selfregistration_help'] = 'Autentifikazio-plugin bat, posta elektroniko
 $string['settingmigrationmismatch'] = 'Pluginaren ezarpenen izenak zuzentzerakoan desadostasuna aurkitu da. \'{$a->plugin}\' autentifikazio-pluginak \'{$a->setting}\' ezarpena dauka \'{$a->legacy}\'(e)rako terminologia zaharrarekin eta \'{$a->current}\'(e)rako terminologia berriarekin. Azken balioa mantendu da. Baieztatu horrela izan behar duela, mesedez.';
 $string['sha1'] = 'SHA-1 hash-a';
 $string['showguestlogin'] = 'Gonbidatuek saioa hasteko botoia erakuts edo ezkuta dezakezu sarbide-orrian.';
+$string['showloginform'] = 'Erakutsi saioa eskuz hasteko formularioa';
+$string['showloginform_desc'] = 'Guneko erabiltzaile guztiek erabiltzaile eta pasahitza sartzea behar ez duen OAuth 2 bezalako autentifikazio-metodoren bat erabiltzen badute, saioa eskuz hasteko formularioa ezkutatu dezakezu. Hau eginez gero eskuzko kontua duten erabiltzaileek ezingo dute saioa hasi.
+
+Saioa eskuz hasteko formularioa ezkutatu ondoren ezin baduzu saioa hasi, saioa hasteko formularioa berriz erakutsi dezakezu komando lerroko hurrengo komandoaren bitartez: php admin/cli/cfg.php --name=showloginform --set=1';
 $string['stdchangepassword'] = 'Erabili pasahitza aldatzeko orri estandarra';
 $string['stdchangepassword_expl'] = 'Kanpoko autentifikazio-sistemak Moodlen pasahitz aldaketa ahalbidetzen badu,  BAI aukeratu. Ezarpen honek \'Pasahitza aldatzeko URLa\' baliogabetzen du.';
 $string['stdchangepassword_explldap'] = 'OHARRA: LDAP SSL zifratze-tunel baten gainean erabiltzea aholkatzen da (ldaps://) LDAP zerbitzaria urrutikoa bada.';

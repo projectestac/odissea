@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'organizer', language 'eu', version '4.4'.
+ * Strings for component 'organizer', language 'eu', version '4.5'.
  *
  * @package     organizer
  * @category    string
@@ -254,7 +254,6 @@ $string['group_registration_notify:student:unregister:subject'] = '[{$a->coursei
 $string['group_slot_available'] = 'Tarte erabilgarria';
 $string['group_slot_full'] = 'Hartutako tartea';
 $string['groupoptions'] = 'Talde-ezarpenak';
-$string['grouporganizer_desc_hasgroup'] = 'Hau talde antolatzailea da. Erregistro botoian klik eginez gero,  zure taldeko {$ a-> name} kide guztiei tarte honetan izena emango diezu. Taldeko kide guztiek alda dezakete eta iruzkindu dezakete izen-ematea.';
 $string['grouppicker'] = 'Talde-hautzailea';
 $string['groupwarning'] = 'Egiaztatu behean taldearen aukerak!';
 $string['headerfooter'] = 'Inprimatu goiburua/orri-oina';

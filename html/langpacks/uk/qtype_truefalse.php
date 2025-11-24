@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'uk', version '4.4'.
+ * Strings for component 'qtype_truefalse', language 'uk', version '4.5'.
  *
  * @package     qtype_truefalse
  * @category    string
@@ -38,7 +38,6 @@ $string['pluginname_link'] = 'question/type/truefalse';
 $string['pluginnameadding'] = 'Додати питання типу Правильно/Неправильно';
 $string['pluginnameediting'] = 'Редагувати питання типу Правильно/Неправильно';
 $string['pluginnamesummary'] = 'Проста форма питання з множинним вибором тільки з двома варіантами вибору: ’Правильно’ і ’Неправильно’.';
-$string['privacy:metadata'] = 'Плагін типу запитання «Правда/Неправда» не зберігає жодних особистих даних.';
 $string['privacy:preference:showstandardinstruction'] = 'Чи показувати стандартну інструкцію.';
 $string['selectone'] = 'Виберіть одну відповідь:';
 $string['showstandardinstruction'] = 'Показати стандартні інструкції';

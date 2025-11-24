@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'it', version '4.4'.
+ * Strings for component 'auth', language 'it', version '4.5'.
  *
  * @package     auth
  * @category    string
@@ -48,7 +48,7 @@ $string['auth_invalidnewemailkey'] = 'Errore: se stai cercando di confermare un 
 $string['auth_loginpasswordtoggle'] = 'Attiva/disattiva la visibilità della password';
 $string['auth_loginpasswordtoggle_desc'] = 'Aggiunge un\'icona al campo password nella schermata di accesso che consente agli utenti di mostrare o nascondere la password inserita.';
 $string['auth_loginrecaptcha'] = 'Abilita reCAPTCHA nel login';
-$string['auth_loginrecaptcha_desc'] = 'Aggiunge un elemento di verifica nella pagina di autenticazione. Utile per ridurre il rischio di tentativi di accesso ingiustificati. Per ulteriori dettagli, consultare <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
+$string['auth_loginrecaptcha_desc'] = 'Aggiungi un modulo di conferma visivo/audio alla pagina di accesso. Questo riduce il rischio di tentativi di accesso indesiderati. Per maggiori dettagli, consulta <a href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
 $string['auth_multiplehosts'] = 'Possono essere elencati più macchine remote (es. host1.com;host2.com;host3.com)';
 $string['auth_notconfigured'] = 'Il metodo di autenticazione {$a} non è configurato.';
 $string['auth_outofnewemailupdateattempts'] = 'Hai superato i tentativi permessi per modificare l\'indirizzo email. La richiesta di modifica è stata annullata.';
@@ -89,11 +89,12 @@ $string['emailchangecancel'] = 'Annulla cambio email';
 $string['emailchangepending'] = 'Cambio email in corso. Clicca sul link presente nel messaggio che ti è stato inviato a {$a->preference_newemail}.';
 $string['emailnowexists'] = 'L\'indirizzo email che hai cercato di assegnare al tuo profilo è stato, nel frattempo, assegnato a qualcun altro, dal momento della tua richiesta. La richiesta di modifica email è stata quindi annullata, ma puoi provare ancora con un indirizzo email differente.';
 $string['emailupdate'] = 'Modifica indirizzo email';
-$string['emailupdatemessage'] = 'Gentile {$a->fullname},
+$string['emailupdatemessage'] = 'Gentile {$a->firstname},
 
 hai richiesto la modifica dell\'indirizzo email del tuo account sul sito {$a->site}. Per confermare la richiesta, apri il link seguente con il browser:
 
 {$a->url}
+Il link di conferma scadrà dopo <b>10 minuti</b>.
 
 {$a->supportemail}';
 $string['emailupdatesuccess'] = 'L\'indirizzo email dell\'utente <em>{$a->fullname}</em> è stato modificato in <em>{$a->email}</em>.';
@@ -161,6 +162,10 @@ $string['selfregistration_help'] = 'Impostando un plugin per l\'auto creazione d
 $string['settingmigrationmismatch'] = 'È stato riscontrato un valore discordante durante la correzione dei nomi delle impostazioni del plugin. Il plugin di autenticazione \'{$a->plugin}\' aveva l\'impostazione \'{$a->setting}\' configurata a to \'{$a->legacy}\' con il nome obsoleto ed a \'{$a->current}\'  con il nome attuale. È stato considerato valido il valore \'{$a->current}\', si consiglia tuttavia di controllare e verificare la correttezza della scelta';
 $string['sha1'] = 'Hash SHA-1';
 $string['showguestlogin'] = 'È possibile visualizzare o nascondere  il pulsante \'login come ospite\' nella pagina di login standard';
+$string['showloginform'] = 'Visualizza il modulo di autenticazione manuale';
+$string['showloginform_desc'] = 'Se tutti gli utenti del sito utilizzano un metodo di autenticazione come OAuth 2 che non richiede loro di immettere un nome utente e una password, è possibile nascondere il modulo di accesso manuale. Da notare che gli utenti con account manuali non saranno in grado di effettuare l\'accesso.
+
+Se si nasconde il modulo di accesso manuale e poi non si riesce ad effettuare l\'accesso, è possibile visualizzarlo di nuovo utilizzando la riga di comando php admin/cli/cfg.php --name=showloginform --set=1';
 $string['stdchangepassword'] = 'Utilizza la pagina standard per il cambiamento della password';
 $string['stdchangepassword_expl'] = 'Se il sistema di autenticazione esterna consente il cambiamento delle password attraverso Moodle, impostare a Si. Questa impostazione esclude l\'URL per cambiare la password.';
 $string['stdchangepassword_explldap'] = 'Nota: Qualora il server fosse remoto, si raccomanda di utilizzare LDAP su una connessione criptata con SSL (ldaps://) .';

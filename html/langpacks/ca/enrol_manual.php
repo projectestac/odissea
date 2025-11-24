@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'ca', version '4.4'.
+ * Strings for component 'enrol_manual', language 'ca', version '4.5'.
  *
  * @package     enrol_manual
  * @category    string
@@ -31,7 +31,7 @@ $string['altertimestart'] = 'Canvia la data inicial';
 $string['assignrole'] = 'Assigneu un rol';
 $string['browsecohorts'] = 'Visualitza les cohorts';
 $string['browseusers'] = 'Visualitza els usuaris';
-$string['confirmbulkdeleteenrolment'] = 'Esteu segur de voler suprimir aquestes inscripcions d\'usuaris ?';
+$string['confirmbulkdeleteenrolment'] = 'Confirmeu que voleu suprimir aquestes inscripcions d\'usuaris?';
 $string['defaultperiod'] = 'Duració de la inscripció per defecte';
 $string['defaultperiod_desc'] = 'Temps per defecte durant el qual la inscripció serà vàlida. Si es posa a cero, la duració per defecte de la inscripció serà il·limitada.';
 $string['defaultperiod_help'] = 'Temps per defecte (en segons) durant el qual la inscripció serà vàlida, començant des del moment en què l\'usuari s\'inscriu. Si es desactiva, el temps per defecte de la inscripció serà il·limitat.';

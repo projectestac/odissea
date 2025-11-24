@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'nl', version '4.4'.
+ * Strings for component 'wiki', language 'nl', version '4.5'.
  *
  * @package     wiki
  * @category    string
@@ -62,7 +62,7 @@ $string['defaultformat_help'] = 'Deze instelling  bepaalt de standaard opmaak di
 *HTML - Gebruik de HTML-editor
 *Creole - Een veel gebruikte wiki opmaaktaal waarvoor een kleine werkbalk beschikbaar is
 *Nwiki - Mediawiki-achtige opmaaktaal die in de Nwiki module gebruikt wordt.';
-$string['deleteallpages'] = 'Verwijder alle wiki-pagina\'s';
+$string['deleteallpages'] = 'Alle wiki-pagina\'s';
 $string['deletecomment'] = 'Verwijder opmerking';
 $string['deletecommentcheck'] = 'Verwijder opmerking';
 $string['deletecommentcheckfull'] = 'Weet je zeker dat je deze opmerking wil verwijderen?';
@@ -250,7 +250,7 @@ $string['privacy:metadata:wiki_versions:version'] = 'Versienummer';
 $string['rated'] = 'Je hebt deze pagina beoordeeld: {$a}';
 $string['rating'] = 'Beoordeling';
 $string['ratingmode'] = 'Beoordelingsmodus';
-$string['removeallwikitags'] = 'Verwijder alle wiki-tags';
+$string['removeallwikitags'] = 'Alle wiki-tags';
 $string['removepages'] = 'Verwijder pagina\'s';
 $string['reparsetimeout'] = 'Standaard time-out opnieuw verwerken';
 $string['repeatedsection'] = 'Wiki fout: sectienaam kan niet herhaald worden \'{$a}\'';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_profiling', language 'ru', version '4.4'.
+ * Strings for component 'tool_profiling', language 'ru', version '4.5'.
  *
  * @package     tool_profiling
  * @category    string
@@ -30,6 +30,7 @@ $string['cannotfindanyrunforrunid'] = 'К сожалению, не удалос�
 $string['cannotfindanyrunforurl'] = 'К сожалению, не удалось найти ни одного прогона профилирования для URL «{$a}»';
 $string['comment'] = 'Комментарий';
 $string['cputime'] = 'Процессорное время';
+$string['detailview'] = 'Сводка по запуску';
 $string['differencesbetween2runsof'] = 'Различия между 2 прогонами для «{$a}»';
 $string['executiontime'] = 'Время выполнения';
 $string['export'] = 'Экспорт';

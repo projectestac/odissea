@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ja', version '4.4'.
+ * Strings for component 'report_security', language 'ja', version '4.5'.
  *
  * @package     report_security
  * @category    string
@@ -79,7 +79,7 @@ $string['check_guestrole_error'] = 'ゲストロール「 {$a} 」の定義は�
 $string['check_guestrole_name'] = 'ゲストロール';
 $string['check_guestrole_notset'] = 'ゲストロールが設定されていません。';
 $string['check_guestrole_ok'] = 'ゲストロール定義はOKです。';
-$string['check_nodemodules_details'] = '<p>ディレクトリ「 <code>{$a->path}</code> 」はNode.jsモジュールおよび一般的にNPMユーティリティによってインストールされる依存関係を含みます。これらのモジュールはgruntフレームワークを使用するようなローカルのMoodleの開発に必要です。これらのためにMoodleサイトを実運用する必要はありません。また、あなたのサイトをリモート攻撃にさらす潜在的に危険なコードを含むことができてしまいます。</p><p>サイトにパブリックURLからアクセスできる場合、ディレクトリを削除することを強くお勧めします。またはあなたのウェブサーバ設定で少なくともディレクトリへのウェブアクセスを禁止してください。</p>';
+$string['check_nodemodules_details'] = '<p>ディレクトリ「 <code>{$a->path}</code> 」はNode.jsモジュールおよび一般的にNPMユーティリティによりインストールされる依存関係を含みます。これらのモジュールはgruntフレームワークを使用するようなローカルのMoodleの開発に必要です。これらのためにMoodleサイトを実運用する必要はありません。また、あなたのサイトをリモート攻撃にさらす潜在的に危険なコードを含むことができてしまいます。</p><p>サイトにパブリックURLからアクセスできる場合、ディレクトリを削除することを強くお勧めします。またはあなたのウェブサーバ設定で少なくともディレクトリへのウェブアクセスを禁止してください。</p>';
 $string['check_nodemodules_info'] = 'node_modulesディレクトリはパブリックサイトに存在すべきではありません。';
 $string['check_nodemodules_name'] = 'Node.jsモジュールディレクトリ';
 $string['check_openprofiles_details'] = 'ユーザプロファイルを公開した場合、スパム送信者が不正利用することができます。「プロファイル閲覧時にユーザのログインを強制する」または「ユーザのログインを強制する」を有効にすることをお勧めします。';
@@ -126,7 +126,8 @@ $string['check_unsecuredataroot_error'] = 'あなたのdatarootディレクト�
 $string['check_unsecuredataroot_name'] = '安全ではないdataroot';
 $string['check_unsecuredataroot_ok'] = 'datarootディレクトリはウェブからアクセスできないようにしてください。';
 $string['check_unsecuredataroot_warning'] = 'あなたのdatarootディレクトリ「 <code>{$a}</code> 」は正しくない場所に配置されウェブに晒された状態です。';
-$string['check_vendordir_details'] = '<p>ディレクトリ「 <code>{$a->path}</code> 」は様々なサードパーティライブラリおよび一般的にPHPコンポーザによってインストールされる依存関係を含みます。PHPUnitフレームワークのインストールのようなローカルのMoodle開発に必要であると思われます。これらのためにMoodleサイトを実運用する必要はありません。また、あなたのサイトをリモート攻撃にさらす潜在的に危険なコードを含むことができてしまいます。</p><p>サイトにパブリックURLからアクセスできる場合、ディレクトリを削除することを強くお勧めします。またはあなたのウェブサーバ設定で少なくともディレクトリへのウェブアクセスを禁止してください。</p>';
+$string['check_upgradefile_info'] = 'アップグレードノートファイルは公開すべきではありません。';
+$string['check_vendordir_details'] = '<p>ディレクトリ「 <code>{$a->path}</code> 」は様々なサードパーティライブラリおよび一般的にPHPコンポーザによりインストールされる依存関係を含みます。PHPUnitフレームワークのインストールのようなローカルのMoodle開発に必要であると思われます。これらのためにMoodleサイトを実運用する必要はありません。また、あなたのサイトをリモート攻撃にさらす潜在的に危険なコードを含むことができてしまいます。</p><p>サイトにパブリックURLからアクセスできる場合、ディレクトリを削除することを強くお勧めします。またはあなたのウェブサーバ設定で少なくともディレクトリへのウェブアクセスを禁止してください。</p>';
 $string['check_vendordir_info'] = 'vendorディレクトリはパブリックサイトに存在すべきではありません。';
 $string['check_vendordir_name'] = 'ベンダディレクトリ';
 $string['check_webcron_details'] = '<p>ウェブブラウザでcronを実行することにより匿名ユーザに機密情報を晒すことができてしまいます。そのため、コマンドラインによるcronを実行するか、リモートアクセスにcronにパスワードを設定することをお勧めします。</p>';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'uk', version '4.4'.
+ * Strings for component 'competency', language 'uk', version '4.5'.
  *
  * @package     competency
  * @category    string
@@ -29,6 +29,8 @@ $string['allchildrenarecomplete'] = 'Всі дочірні компетентн�
 $string['competencies'] = 'Компетенції';
 $string['competenciesarenotenabled'] = 'Компетенції не активовані';
 $string['competenciessettings'] = 'Налаштування компетентностей';
+$string['competency'] = 'Компетентність';
+$string['competencyframework'] = 'Репозиторій компетентностей';
 $string['completeplanstask'] = 'Завершення навчальних планів';
 $string['coursecompetencyoutcome_complete'] = 'Відмітити компетентність як досягнуту';
 $string['coursecompetencyoutcome_evidence'] = 'Долучити підтвердження';
@@ -38,7 +40,7 @@ $string['coursemodulecompetencyoutcome_complete'] = 'Відмітити комп
 $string['coursemodulecompetencyoutcome_evidence'] = 'Долучити підтвердження';
 $string['coursemodulecompetencyoutcome_none'] = 'Нічого не робити';
 $string['coursemodulecompetencyoutcome_recommend'] = 'Направити на підтвердження';
-$string['deletecompetencyratings'] = 'Видалити оцінювання компетентності';
+$string['deletecompetencyratings'] = 'Рейтинги компетентності';
 $string['duplicateditemname'] = '{$a} (копія)';
 $string['enablecompetencies'] = 'Активувати компетентності';
 $string['enablecompetencies_desc'] = 'Компетенції дозволяють оцінювати користувачів у відповідності до навчальних планів';
@@ -163,8 +165,10 @@ $string['privacy:metadata:usermodified'] = 'Користувач, який ст�
 $string['privacy:path:plans'] = 'Навчальні плани';
 $string['privacy:path:relatedtome'] = 'Пов\'язаний зі мною';
 $string['privacy:path:userevidence'] = 'Докази попереднього навчання';
+$string['proficient'] = 'Набута компетентність';
 $string['pushcourseratingstouserplans'] = 'Надсилати оцінювання курсу в індивідуальні навчальні плани';
 $string['pushcourseratingstouserplans_desc'] = 'Значення за замовченням у налаштуваннях курсів для редагування індивідуальних навчальних планів коли компетентності курсу оцінені.';
+$string['rating'] = 'Оцінювання';
 $string['syncplanscohorts'] = 'Синхронізація навчальних планів з шаблоном плану гурту';
 $string['taxonomy_behaviour'] = 'Поведінка';
 $string['taxonomy_competency'] = 'Компетентність';
@@ -185,6 +189,7 @@ $string['usercommentedonaplan'] = '{$a->fullname} прокоментував н�
 $string['usercommentedonaplanhtml'] = '<p>{$a->fullname} прокоментував навчальний план «{$a->plan}»:</p> <div>{$a->comment}</div> <p>Див. <a href="{$a->url}">{$a->urlname}</a>.</p>';
 $string['usercommentedonaplansmall'] = '{$a->fullname} прокоментував навчальний план «{$a->plan}».';
 $string['usercommentedonaplansubject'] = '{$a} прокоментував навчальний план.';
+$string['usercompetency'] = 'Компетентність користувача';
 $string['usercompetencystatus_idle'] = 'В очікуванні';
 $string['usercompetencystatus_inreview'] = 'В процесі підтвердження';
 $string['usercompetencystatus_waitingforreview'] = 'В очікування підтвердження';

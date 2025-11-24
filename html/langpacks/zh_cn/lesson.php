@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'zh_cn', version '4.4'.
+ * Strings for component 'lesson', language 'zh_cn', version '4.5'.
  *
  * @package     lesson
  * @category    string
@@ -151,7 +151,7 @@ $string['customscoring'] = '是否自定义分数';
 $string['customscoring_help'] = '如果启用，则可以为每个答案输入整数值（正数或负数）。';
 $string['deadline'] = '截止时间';
 $string['defaultessayresponse'] = '您的简答题将由您的老师评分。';
-$string['deleteallattempts'] = '删除所有对练习的尝试';
+$string['deleteallattempts'] = '所有课程尝试';
 $string['deletedefaults'] = '删除{$a}默认课程';
 $string['deletedpage'] = '删除此页';
 $string['deletepagenamed'] = '删除页: {$a}';
@@ -511,8 +511,8 @@ $string['rank'] = '等级';
 $string['rawgrade'] = '原始成绩';
 $string['receivedcredit'] = '获得的学分';
 $string['redisplaypage'] = '重新显示此页';
-$string['removeallgroupoverrides'] = '删除所有群组覆盖';
-$string['removealluseroverrides'] = '删除所有用户覆盖';
+$string['removeallgroupoverrides'] = '所有群组覆盖';
+$string['removealluseroverrides'] = '所有用户覆盖';
 $string['report'] = '报表';
 $string['reports'] = '报表';
 $string['response'] = '反馈';

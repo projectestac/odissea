@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'es', version '4.4'.
+ * Strings for component 'format_tiles', language 'es', version '4.5'.
  *
  * @package     format_tiles
  * @category    string
@@ -38,7 +38,7 @@ $string['alternativelink'] = 'enlace alternativo';
 $string['areyousure'] = '¿Está seguro?';
 $string['asfraction'] = 'Mostrar como fracción';
 $string['aspectratiotootallorwide'] = 'La imagen subida ha sido guardada, pero por favor revísela, porque podría ser <strong>{$a->tallorwide}</strong>. Si no se observa bien, por favor recórtela a las dimensiones estándar apaisadas y súbala de nuevo. Por ejemplo, 300 de ancho y 200 de alto debería encajar bien.';
-$string['aspercentagedial'] = 'Mostrar como % en círculo';
+$string['aspercentagedial'] = 'Mostrar como %';
 $string['assumedatastoreconsent'] = 'Asumir consentimiento para almacenamiento local del navegador';
 $string['assumedatastoreconsent_desc'] = 'Si se selecciona, al usuario <b>no</b> le será mostrado un diálogo que le solicite cosentimiento para almacenar datos en almacenamiento local del navegador';
 $string['backupfailed'] = 'Restauración falló';
@@ -46,7 +46,6 @@ $string['basecolour'] = 'Color para mosaicos';
 $string['basecolour_help'] = 'El color aquí configurado será aplicado a todos los mosaicos en el curso. (Los colores disponibles están determinados por su administrador del sitio mediante la página de configuraciones del plugin Mosaicos).';
 $string['brandcolour'] = 'Color de la marca';
 $string['cachedef_modalcmids'] = 'IDs (por curso) de módulo de curso que necesitan ser invocados con un modal';
-$string['canceltask'] = 'Cancelar trabajo';
 $string['changedcolour'] = 'Color del mosaico se reinicia al predeterminado para el curso {$a}';
 $string['checkforproblemcourses'] = 'Revisar y reparar cursos con problemas';
 $string['clearphoto'] = 'Reiniciar este mosaico';
@@ -121,9 +120,6 @@ $string['displaytitle_mod_ppt'] = 'Presentación PowerPoint';
 $string['displaytitle_mod_txt'] = 'Texto';
 $string['displaytitle_mod_xls'] = 'Hoja de cálculo';
 $string['displaytitle_mod_zip'] = 'Zip';
-$string['documentation'] = 'Documentación';
-$string['documentationurl'] = 'URL de Documentación';
-$string['documentationurl_descr'] = 'URL donde puede encontrarse la documentación';
 $string['download'] = 'Descargar';
 $string['editoradvicesubtiles'] = 'En esta versión del plugin Mosaicos (Tiles), las actividades solamente aparecerán como sub-mosaicos si el modo de edición está desactivado';
 $string['editsection'] = 'Editar sección';
@@ -283,7 +279,6 @@ $string['none'] = 'Ninguno';
 $string['noproblemsfound'] = 'No se encontraron problemas';
 $string['notcomplete'] = 'Incompleto';
 $string['notrecommended'] = 'No recomendable';
-$string['notregistered'] = 'Su plugin de mosaicos no está aun registrado con el desarrollador de la extensión.';
 $string['novaliddefaultcolour'] = 'No se ha configurado color válido para el color predeterminado de mosaico abajo';
 $string['numberofsections'] = 'Número de secciones en curso';
 $string['numbers'] = 'Números';
@@ -330,7 +325,6 @@ $string['restorefailed'] = 'Falló restauración';
 $string['restoreincorrectsections'] = 'Error: No se puede completar porque el curso origen contiene secciones numeradas incorrectamente (por ejemplo el número de sección ({$a->sectionnum}) es mayor que el máximo permitido ({$a->maxallowed}) como está definido en la configuración administrativa "moodlecourse | maxsections").  Intente excluir o eliminar secciones con números grandes.';
 $string['restoretoomanysections'] = 'Error: No se puede respaldar o restaurar porque están incluidas demasiadas secciones de curso ({$a->numsections}) y esto son más de lo permitido ({$a->maxallowed}).  Intente excluir o eliminar algunas secciones.';
 $string['revealcontents'] = 'Revelar contenidos de mosaico';
-$string['scheduleddeleteemptysections'] = 'Trabajo para eliminar secciones vacías de cursos que han sido agendados. Por favor vuelva a revisarlos más tarde.';
 $string['section0name'] = 'General';
 $string['sectionerrorstring'] = 'Su sesión podría haber expirado. Intente refrescar la página.';
 $string['sectionerrortitle'] = 'Error al cargar contenido';
@@ -392,7 +386,5 @@ $string['usejsnavforsinglesection'] = 'Usar navegación javascript para página 
 $string['usejsnavforsinglesection_desc'] = 'Cuando se activa, cualquier llamada a una página de sección única  (&section=xx) será manejada usando JavaScript, al invocar la página principal del curso para abrir la sección solicitada vía JS, en lugar de llamar a la página de sección única con el estilo PHP antiguo';
 $string['usesubtilesseczero'] = 'Usar sub mosaicos en sección superior';
 $string['usesubtilesseczero_help'] = 'Si se selecciona, se usarán sub mosaicos en la sección superior del curso además de dentro de todos los mosaicos. Esto es porque los sub mosaicos usan mucho espacio en la parte más superior del curso. Sería mejor dejar esto sin seleccionar para que, en vez de esto, cualquier elemento en la sección superior se muestre en formato de lista estándar.';
-$string['usetooltips'] = 'Usar herramientitas (tooltips) JavaScript';
-$string['usetooltips_desc'] = 'Usar herramientitas (tooltips) JavaScript cuando el usuario pasa el ratón encima de ciertos elemento, como por ejemplo cajas de finalización, mosaicos para contenidos de mosaico';
 $string['version'] = 'Versión {$a}';
 $string['width'] = 'ancho';

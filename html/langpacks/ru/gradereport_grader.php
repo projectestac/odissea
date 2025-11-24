@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'ru', version '4.4'.
+ * Strings for component 'gradereport_grader', language 'ru', version '4.5'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -33,7 +33,6 @@ $string['ajaxfailedupdate'] = 'Не удается изменить [1] для [
 $string['ajaxfieldchanged'] = 'Поле, которое вы сейчас редактируете, обновилось. Вы хотели бы использовать обновленное значение?';
 $string['aria:dropdowncolumns'] = 'Найдены свернутые столбцы';
 $string['cellactions'] = 'Действия с ячейками';
-$string['clearall'] = 'Очистить все';
 $string['clearsearch'] = 'Очистить найденных пользователей';
 $string['collapsedcolumns'] = 'Свернутые столбцы <span class="badge rounded-pill bg-primary text-white ml-1" data-collapse="count">{$a}</span>';
 $string['editingmode_title'] = 'Редактирование отчета оценщика';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'ro', version '4.4'.
+ * Strings for component 'book', language 'ro', version '4.5'.
  *
  * @package     book
  * @category    string
@@ -103,7 +103,7 @@ $string['pluginadministration'] = 'Administrare carte';
 $string['pluginname'] = 'Carte';
 $string['previouschapter'] = 'Capitolul anterior';
 $string['privacy:metadata'] = 'Resursa de tip carte nu stochează date personale.';
-$string['removeallbooktags'] = 'Eliminați toate etichetele cărții';
+$string['removeallbooktags'] = 'Toate etichetele cărții';
 $string['search:activity'] = 'Carte - informații despre resurse';
 $string['search:chapter'] = 'Carte - capitole';
 $string['showchapter'] = 'Afișează capitolul "{$a}"';

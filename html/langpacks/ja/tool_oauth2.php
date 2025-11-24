@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'ja', version '4.4'.
+ * Strings for component 'tool_oauth2', language 'ja', version '4.5'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -93,15 +93,18 @@ $string['issuersetup'] = '一般的なOAuth 2サービス設定に関する詳�
 $string['issuersetuptype'] = '{$a} OAuth 2プロバイダ設定に関する詳細インストラクション';
 $string['issuershowonloginpage'] = 'ログインページに表示する';
 $string['issuershowonloginpage_help'] = 'OAuth 2認証プラグインが有効にされた場合、このイシュアのアカウントでユーザがログインできるようログインページにこのログインイシュアが表示されます。';
+$string['issuersmtpsystememail'] = 'SMTPメール';
+$string['issuersmtpsystememail_help'] = '指定した場合、このメールアドレスはSMTP経由でメールを送信するためのシステムアカウントの接続に使用されます。これは一部のOAuth 2サービス (例: Microsoft) で必要です。この設定が必須かどうか、あなたのOAuth 2サービスのドキュメントを確してください。';
 $string['issuersservicesallow'] = 'サービスを許可する';
 $string['issuersservicesnotallow'] = 'サービスを許可しない';
 $string['issuerusedforinternal'] = '内部サービス';
 $string['issuerusedforlogin'] = 'ログイン';
 $string['issuerusein'] = 'このサービスが使用される場所';
-$string['issuerusein_help'] = 'OAuth 2サービスは必要であれば内部サービス、ログインページまたは両方で使用できます。';
+$string['issuerusein_help'] = 'OAuth 2 サービスは内部サービス、ログインページ、XOAUTH2のSMTP、または必要に応じてログインページおよび内部サービスの両方に使用できます。';
 $string['issueruseineverywhere'] = 'ログインページおよび内部サービス';
 $string['issueruseininternalonly'] = '内部サービスのみ';
 $string['issueruseinloginonly'] = 'ログインページのみ';
+$string['issueruseinsmtpwithoauth'] = 'XOAUTH2のみのSMTP';
 $string['linkedin_service'] = 'LinkedIn';
 $string['logindisplay'] = '以下のログインページに表示する';
 $string['loginissuer'] = 'ログイン許可';

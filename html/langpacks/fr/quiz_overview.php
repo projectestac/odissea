@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'fr', version '4.4'.
+ * Strings for component 'quiz_overview', language 'fr', version '4.5'.
  *
  * @package     quiz_overview
  * @category    string
@@ -60,6 +60,17 @@ $string['privacy:metadata:preference:quiz_overview_slotmarks'] = 'S’il faut af
 $string['privacy:preference:slotmarks:no'] = 'Les points ne sont pas affichés à côté de la question.';
 $string['privacy:preference:slotmarks:yes'] = 'Les points sont affichés à côté de la question.';
 $string['regrade'] = 'Recalculer';
+$string['regrade_allattempts'] = 'Toutes les tentatives';
+$string['regrade_allquestions'] = 'Toutes les questions';
+$string['regrade_attempts'] = 'Recalculer des tentatives…';
+$string['regrade_commitregrade'] = 'Effectuer le recalcul';
+$string['regrade_dryrun'] = 'Essai à blanc';
+$string['regrade_help'] = 'Cette option recalcule automatiquement les notes des tentatives, en utilisant si possible la version actuelle de chaque question. Une simulation permet de prévisualiser les modifications des notes sans modifier les tentatives.';
+$string['regrade_link'] = 'Quiz_grades_report#Re-grading_attempts';
+$string['regrade_regradeneedednotificationmessage'] = 'La dernière simulation de recalcul a montré que les points de {$a->questions} questions dans {$a->attempts} tentatives seront modifiés.';
+$string['regrade_regradenow'] = 'Recalculer maintenant';
+$string['regrade_selectedattempts'] = 'Tentatives sélectionnées';
+$string['regrade_selectedquestions'] = 'Questions sélectionnées';
 $string['regradeall'] = 'Tout recalculer';
 $string['regradealldry'] = 'Simuler un recalcul complet';
 $string['regradealldrydo'] = 'Recalcul des {$a} tentatives marquées comme devant être recalculées';

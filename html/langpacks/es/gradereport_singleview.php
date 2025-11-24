@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'es', version '4.4'.
+ * Strings for component 'gradereport_singleview', language 'es', version '4.5'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -44,7 +44,6 @@ $string['excludefor'] = 'Excluir para {$a}';
 $string['excludenone'] = 'No excluir calificaciones';
 $string['excludenonegrades'] = 'No excluir nada';
 $string['feedbackfor'] = 'Retroalimentación para {$a}';
-$string['filtergrades'] = 'Mostrar calificaciones para {$a}.';
 $string['gotonextreport'] = 'Ir al siguiente informe de usuario';
 $string['gotopreviousreport'] = 'Ir al anterior informe de usuario';
 $string['gradefor'] = 'Calificación para {$a}';

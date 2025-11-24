@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attendance', language 'fr', version '4.4'.
+ * Strings for component 'attendance', language 'fr', version '4.5'.
  *
  * @package     attendance
  * @category    string
@@ -379,6 +379,7 @@ $string['notmember'] = 'non membre';
 $string['notset'] = 'non défini';
 $string['nounmarkedstatusset'] = 'Aucun statut non marqué n’est configuré pour cette session (id : {$a->sessionid}), pour y remédier, mettez à jour le <a href="{$a->url}">Status défini</a>.';
 $string['noupgradefromthisversion'] = 'Le module de présence « Attendance » ne peut pas mettre à niveau l’ancienne version « attforblock » que vous avez installée. Veuillez supprimer l’ancien module « attforblock » ou mettre à niveau vers la dernière version avant d’installer le nouveau module de présence « Attendance »';
+$string['nousers'] = 'Aucun utilisateur inscrit n\'a été trouvé pour saisir les présences.';
 $string['numsessions'] = 'Nombre de sessions';
 $string['numsessionstaken'] = 'Nombre de sessions suivies';
 $string['olddate'] = 'Ancienne date';
@@ -444,7 +445,7 @@ $string['privacy:metadata:timetaken'] = 'Horodatage de la prise de présence pou
 $string['privacy:metadata:userid'] = 'Identifiant de l’utilisateur à qui envoyer l’avertissement.';
 $string['processingfile'] = 'Traitement du fichier';
 $string['qr_cookie_error'] = 'La session QR a expiré.';
-$string['qr_pass_wrong'] = 'Le mot de passe QR est incorrect ou a expiré.';
+$string['qr_pass_wrong'] = 'Le code QR a expiré, veuillez le scanner à nouveau.';
 $string['qrcode'] = 'Code QR';
 $string['qrcodeandpasswordheader'] = 'Scannez le code QR ci-dessous ou utilisez le mot de passe indiqué ci-dessous pour vous inscrire.';
 $string['qrcodeheader'] = 'Scannez le code QR ci-dessous pour prendre connaissance de votre présence';

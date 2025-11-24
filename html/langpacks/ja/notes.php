@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'ja', version '4.4'.
+ * Strings for component 'notes', language 'ja', version '4.5'.
  *
  * @package     notes
  * @category    string
@@ -39,7 +39,7 @@ $string['course'] = 'コース';
 $string['coursenotes'] = 'コースノート';
 $string['created'] = '作成日時';
 $string['deleteconfirm'] = 'このノートを削除してもよろしいですか?';
-$string['deletenotes'] = 'すべてのノートを削除する';
+$string['deletenotes'] = 'すべてのノート';
 $string['editnote'] = 'ノートを編集する';
 $string['enablenotes'] = 'ノートを有効にする';
 $string['eventnotecreated'] = 'ノートが作成されました。';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'checkmark', language 'de', version '4.4'.
+ * Strings for component 'checkmark', language 'de', version '4.5'.
  *
  * @package     checkmark
  * @category    string
@@ -75,16 +75,7 @@ $string['availability'] = 'Verfügbarkeit';
 $string['availabledate'] = 'Abgabebeginn';
 $string['availabledate_help'] = 'Beginn der Abgabeperiode. Nach diesem Datum ist es Teilnehmer/innen möglich Abgaben zu tätigen.';
 $string['bulk'] = 'Massenverarbeitung';
-$string['bulk_help'] = 'Hier können Sie Aktionen wie das Setzen der Anwesenheit, automatische Bewertung oder Kombinationen daraus an mehreren Einträgen gleichzeitig ausführen.<br />
-<ul>
-<li><strong>als Anwesend markieren:</strong> Markiert die ausgewählten Teilnehmer/innen als Anwesend</li>
-<li><strong>als Abwesend markieren:</strong> Markiert die ausgewählten Teilnehmer/innen als Abwesend</li>
-<li><strong>automatisch bewerten:</strong> Errechnet und setzt die Bewertung für die ausgewählten Teilnehmer/innen automatisch</li>
-<li><strong>als Anwesend markieren und bewerten:</strong> Markiert die ausgewählten Teilnehmer/innen als Anwesend und bewertet diese anschließend automatisch</li>
-<li><strong>als Abwesend markieren und bewerten:</strong> Markiert die ausgewählten Teilnehmer/innen als Abwesend und bewertet diese anschließend automatisch</li>
-</ul><br />
-Achtung: Wenn die Anwesenheit an die Noten gekoppelt ist werden nur als Anwesend markierte Teilnehmer/innen mit Punkten für gekreuzte Beispiele bewertet.
-Abwesende Teilnehmer/innen erhalten 0 Punkte und Teilnehmer/innen mit unbekanntem Anwesenheitsstatus werden übersprungen!';
+$string['bulk_help'] = 'Hier können Sie Aktionen wie das Setzen der Anwesenheit, automatische Bewertung oder Kombinationen daraus an mehreren Einträgen gleichzeitig ausführen.<br /> <ul> <li><strong>als Anwesend markieren:</strong> Markiert die ausgewählten Teilnehmer/innen als Anwesend</li> <li><strong>als Abwesend markieren:</strong> Markiert die ausgewählten Teilnehmer/innen als Abwesend</li> <li><strong>automatisch bewerten:</strong> Errechnet und setzt die Bewertung für die ausgewählten Teilnehmer/innen automatisch</li> <li><strong>Bewertung entfernen:</strong> Entfernt die vorhandene Bewertung für ausgewählte Teilnehmer/innen</li> <li><strong>Bewertung (Tafelleistung) entfernen:</strong> Entfernt die vorhandene Bewertung (Tafelleistung) für ausgewählte Teilnehmer/innen</li> <li><strong>als Anwesend markieren und bewerten:</strong> Markiert die ausgewählten Teilnehmer/innen als Anwesend und bewertet diese anschließend automatisch</li> <li><strong>als Abwesend markieren und bewerten:</strong> Markiert die ausgewählten Teilnehmer/innen als Abwesend und bewertet diese anschließend automatisch</li> </ul><br /> Achtung: Wenn die Anwesenheit an die Noten gekoppelt ist werden nur als Anwesend markierte Teilnehmer/innen mit Punkten für gekreuzte Beispiele bewertet. Abwesende Teilnehmer/innen erhalten 0 Punkte und Teilnehmer/innen mit unbekanntem Anwesenheitsstatus werden übersprungen!';
 $string['bulk_no_users_selected'] = 'Sie haben keine Teilnehmer/in ausgewählt. Wählen Sie die gewünschten Teilnehmer/innen über die Checkboxen der linken Tabellenspalte aus.';
 $string['calendardue'] = '{$a} ist fällig.';
 $string['calendargradingdue'] = '{$a} ist zur Bewertung fällig';
@@ -327,7 +318,7 @@ $string['numberofparticipants'] = 'Teilnehmer/innen';
 $string['numberofsubmissionsneedgrading'] = 'Bewertung notwendig';
 $string['numberofsubmittedassignments'] = 'Abgegeben';
 $string['open'] = 'Öffnen';
-$string['operation'] = 'Operation';
+$string['operation'] = 'Vorgang';
 $string['optimum'] = 'Optimal';
 $string['optionalsettings'] = 'Optionale Einstellungen';
 $string['overridden'] = 'Überschrieben';
@@ -426,7 +417,7 @@ $string['quickgrade_help'] = 'Wenn aktiviert, können mehrere Abgaben auf einer 
 $string['remembertoupdategrades'] = 'Sie haben automatisch bewertete Abgaben in dieser Kreuzerlübung. Wir empfehlen ausdrücklich diese Bewertungen zu aktualisieren oder erneut automatisch zu bewerten, für den Fall, dass Sie die Beispielgewichtungen geändert haben!';
 $string['remove_grade'] = 'Bewertung entfernen';
 $string['remove_grade_error'] = 'Fehler beim massenmäßigen Entfernen von Bewertungen';
-$string['remove_grade_failed'] = 'Löschen der Nutzerbewertung fehlgeschlagen';
+$string['remove_grade_failed'] = 'Löschen der Nutzer/innen-Bewertung fehlgeschlagen';
 $string['remove_grade_one_success'] = 'Bewertung wurde erfolgreich entfernt für Nutzer/in {$a}';
 $string['remove_grade_success'] = 'Bewertungen wurden erfolgreich entfernt für Nutzer/innen {$a}';
 $string['remove_presentation_grade'] = 'Bewertung (Tafelleistung) entfernen';
@@ -441,6 +432,7 @@ $string['reviewed'] = 'Angesehen';
 $string['save'] = 'Speichern';
 $string['saveallfeedback'] = 'Alle Bewertungsänderungen sichern';
 $string['saveoverrideandstay'] = 'Speichern und weitere Überschreibung anlegen';
+$string['savesubmission'] = 'Abgabe speichern';
 $string['search:activity'] = 'Kreuzerlübung - Aktivitätsinformation';
 $string['select'] = 'Auswählen';
 $string['selection'] = 'Auswahl';
@@ -510,7 +502,7 @@ $string['submissionstatusheading'] = 'Abgabestatus';
 $string['submitcheckmark'] = 'Geben Sie Ihre Kreuzerlübung mit diesem Formular ab';
 $string['submitted'] = 'Abgegeben';
 $string['submitted_entries'] = 'Abgegebene';
-$string['submittedlateshort'] = '{$a} zu spät';
+$string['submittedlate'] = 'Kreuzerlübung wurde {$a} verspätet abgegeben';
 $string['summary_abs'] = 'X/Y Beispiele gekreuzt';
 $string['summary_rel'] = '% der Beispiele gekreuzt';
 $string['timelimit'] = 'Zeitlimit';

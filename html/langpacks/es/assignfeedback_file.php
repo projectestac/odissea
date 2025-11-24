@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_file', language 'es', version '4.4'.
+ * Strings for component 'assignfeedback_file', language 'es', version '4.5'.
  *
  * @package     assignfeedback_file
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['batchoperationconfirmuploadfiles'] = '¿Subir uno o más ficheros de retroalimentación para todos los usuarios seleccionados?';
+$string['batchoperationuploadfiles'] = 'Cargar retroalimentación';
 $string['batchuploadfiles'] = 'Subir ficheros de retroalimentación para varios usuarios';
 $string['batchuploadfilesforusers'] = 'Mandar ficheros de retroalimentación a {$a} usuarios seleccionados.';
 $string['configmaxbytes'] = 'Tamaño máximo de fichero';
@@ -53,6 +54,6 @@ $string['privacy:metadata:filepurpose'] = 'Archivos de retroalimentación del pr
 $string['privacy:path'] = 'Archivos de retroalimentación';
 $string['selectedusers'] = 'Usuarios seleccionados';
 $string['uploadfiles'] = 'Mandar archivos de retroalimentación';
-$string['uploadzip'] = 'Subir múltiples archivos de retroalimentación en un ZIP';
+$string['uploadzip'] = 'Subir archivos de retroalimentación en un ZIP';
 $string['uploadzipsummary'] = 'Archivos de retroalimentación importados desde un ZIP';
 $string['userswithnewfeedback'] = 'Usuarios con retroalimentaciones actualizadas: {$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'files', language 'es', version '4.4'.
+ * Strings for component 'files', language 'es', version '4.5'.
  *
  * @package     files
  * @category    string
@@ -43,3 +43,25 @@ $string['privacy:metadata:files:source'] = 'El origen del archivo';
 $string['privacy:metadata:files:timecreated'] = 'La hora en la cual fue creado el archivo';
 $string['privacy:metadata:files:timemodified'] = 'La hora en la cual fue modificado por última vez el archivo';
 $string['privacy:metadata:files:userid'] = 'El usuario que creó el archivo';
+$string['redactor'] = 'Expurgación de archivos';
+$string['redactor:exifremover'] = 'Eliminador EXIF';
+$string['redactor:exifremover:emptyremovetags'] = '¡Las etiquetas a eliminar no pueden estar en blanco!';
+$string['redactor:exifremover:enabled'] = 'Habilitar Eliminador EXIF';
+$string['redactor:exifremover:enabled_desc'] = 'Por defecto, el eliminador EXIF sólo soporta archivos JPG usando PHP GD, o ExifTool si está configurado. Esto degrada la calidad de la imagen y elimina la etiqueta orientativa.
+
+Para mejorar el eliminador EXIF, por favor configure los siguientes ajustes de ExifTool.
+
+Más información sobre instalación de ExifTool en {$a->link}';
+$string['redactor:exifremover:failedprocessexiftool'] = 'Falló la expurgación: ¡Falló el procesamiento del archivo con ExifTool!';
+$string['redactor:exifremover:failedprocessgd'] = 'Falló la redaccióń: ¡Falló el procesamiento del archivo con PHP gd!';
+$string['redactor:exifremover:heading'] = 'ExifTool';
+$string['redactor:exifremover:mimetype'] = 'Tipos de MIME soportados';
+$string['redactor:exifremover:mimetype_desc'] = 'Para añadir nuevos tipos de MIME, asegúrese de que estén incluidos en <a href="./tool/filetypes/index.php">Tipos de archivo</a>.';
+$string['redactor:exifremover:removetags'] = 'Las etiquetas EXIF que se eliminarán.';
+$string['redactor:exifremover:removetags_desc'] = 'Las etiquetas EXIF que tienen que eliminarse.';
+$string['redactor:exifremover:tag:all'] = 'Todo';
+$string['redactor:exifremover:tag:gps'] = 'Sólo GPS';
+$string['redactor:exifremover:tooldoesnotexist'] = 'Falló la redacción: ¡No existe ExifTool!';
+$string['redactor:exifremover:toolpath'] = 'Ruta hacia ExifTool';
+$string['redactor:exifremover:toolpath_desc'] = 'Para usar ExifTool, por favor introduzca la ruta hacia el ExifTool ejecutable.
+Habitualmente, en sistemas Unix/Linux, la ruta es /usr/bin/exiftool.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'attendance', language 'ja', version '4.4'.
+ * Strings for component 'attendance', language 'ja', version '4.5'.
  *
  * @package     attendance
  * @category    string
@@ -377,6 +377,7 @@ $string['notmember'] = '非メンバー';
 $string['notset'] = '未設定';
 $string['nounmarkedstatusset'] = 'このセッション（ID:{$a->sessionid}）には未マークのステータスが設定されていません。修正するには、<a href="{$a->url}">ステータス設定</a>を更新してください。';
 $string['noupgradefromthisversion'] = 'あなたがインストールしたattforblockのバージョンからは出欠モジュールをアップグレードできません。新しい出欠モジュールをインストールする前にattforblockを削除するか最新バージョンにアップグレードしてください。';
+$string['nousers'] = '出席を記録する対象の登録ユーザーが見つかりませんでした。';
 $string['numsessions'] = 'セッション数';
 $string['numsessionstaken'] = '受講したセッションの数';
 $string['olddate'] = '旧日付';

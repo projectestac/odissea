@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'de', version '4.4'.
+ * Strings for component 'backup', language 'de', version '4.5'.
  *
  * @package     backup
  * @category    string
@@ -204,6 +204,7 @@ $string['enableasyncbackup_help'] = 'Wenn diese Option aktiviert ist, werden all
 $string['enterasearch'] = 'Suche eingeben';
 $string['error_block_for_module_not_found'] = 'Verwaiste Blockinstanz (ID: {$a->bid}) zum Kursmodul (ID {$a->mid}) gefunden. Dieser Block wird nicht gesichert.';
 $string['error_course_module_not_found'] = 'Verwaistes Kursmodul (ID: {$a}) gefunden. Dieses Modul wird nicht gesichert.';
+$string['error_delegate_section_not_found'] = 'Fehlendes Abschnittsformular (ID: {$a}). Der Abschnitt wird nicht gesichert.';
 $string['errorcopyingbackupfile'] = 'Duplizieren der Sicherungsdatei in den temporären Ordner vor der Wiederherstellung fehlgeschlagen';
 $string['errorfilenamemustbezip'] = 'Die Datei muss eine komprimierte Datei sein und die Dateiendung .mbz haben.';
 $string['errorfilenamerequired'] = 'Sie müssen einen gültigen Dateinamen für diese Sicherung angeben';
@@ -278,6 +279,7 @@ $string['includeditems'] = 'Einbezogene Elemente:';
 $string['includefilereferences'] = 'Dateiverweise zu externen Inhalten';
 $string['includesection'] = 'Abschnitt {$a}';
 $string['includeuserinfo'] = 'Nutzerdaten';
+$string['includeuserinfo_instance'] = '{$a} Nutzerdaten einbeziehen';
 $string['inprogress'] = 'Sicherung läuft';
 $string['jumptofinalstep'] = 'Weitere Einstellungen überspringen';
 $string['keep'] = 'Behalten';
@@ -396,6 +398,7 @@ $string['rootsettingusers'] = 'Eingeschriebene Nutzer/innen einbeziehen';
 $string['rootsettinguserscompletion'] = 'Nutzerabschlussdetails einbeziehen';
 $string['rootsettingxapistate'] = 'Nutzerstatus in Inhalte einbeziehen, z.B. bei H5P-Aktivitäten';
 $string['samesitenotification'] = 'Diese Sicherung wurde nur mit Verweisen auf Dateien erstellt, nicht mit den Dateien selbst. Die Wiederherstellung wird ausschließlich auf dieser Website funktionieren.';
+$string['section_prefix'] = 'Abschnitt {$a}:';
 $string['sectionactivities'] = 'Aktivitäten';
 $string['sectioninc'] = 'In die Sicherung einbezogen (ohne Nutzerinformationen)';
 $string['sectionincanduser'] = 'In die Sicherung einbezogen (mit Nutzerinformationen)';
@@ -422,6 +425,7 @@ $string['status'] = 'Status';
 $string['storagecourseandexternal'] = 'Dateibereich für Kurssicherungen und angegebenes Verzeichnis';
 $string['storagecourseonly'] = 'Dateibereich für Kurssicherungen';
 $string['storageexternalonly'] = 'Angegebenes Verzeichnis für automatisierte Sicherungen';
+$string['subsectioncontent'] = 'Inhalt des Unterabschnitts';
 $string['successful'] = 'Sicherung erfolgreich';
 $string['successfulcopy'] = 'Duplizieren erfolgreich';
 $string['successfulrestore'] = 'Wiederherstellung erfolgreich';

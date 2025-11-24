@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'en', version '4.4'.
+ * Strings for component 'question', language 'en', version '4.5'.
  *
  * @package     question
  * @category    string
@@ -322,7 +322,6 @@ $string['nocate'] = 'No such category {$a}!';
 $string['noconditionspecified'] = 'Please specify a condition';
 $string['nopermissionadd'] = 'You don\'t have permission to add questions here.';
 $string['nopermissionedit'] = 'You don\'t have permission to edit questions from here.';
-$string['nopermissionmove'] = 'You don\'t have permission to move questions from here. You must save the question in this category or save it as a new question.';
 $string['noprobs'] = 'No problems found in your question database.';
 $string['noquestionbanks'] = 'No question bank plugin found.';
 $string['noquestions'] = 'No questions were found that could be exported. Make sure that you have selected a category to export that contains questions.';
@@ -413,7 +412,11 @@ $string['questionbehavioursorderexplained'] = 'Enter a comma-separated list of b
 $string['questioncategories'] = 'Question categories';
 $string['questioncategory'] = 'Question category';
 $string['questioncatsfor'] = 'Question categories for \'{$a}\'';
+$string['questiondefaultssave'] = 'Save question options as user preference defaults';
+$string['questiondefaultssave_desc'] = 'Whether question options such as \'Default mark\', \'One or multiple answers?\' etc. should be saved as user preferences when the edit question form is submitted, for use as defaults the next time the user accesses the form.';
 $string['questiondoesnotexist'] = 'This question does not exist';
+$string['questionediting'] = 'Question editing';
+$string['questionediting_desc'] = 'These settings apply to edit question forms.';
 $string['questionformtagheader'] = '{$a} tags';
 $string['questionidmismatch'] = 'Question ids mismatch';
 $string['questionloaderror'] = 'Could not load the question options.';

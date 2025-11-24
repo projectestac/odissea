@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'pt', version '4.4'.
+ * Strings for component 'enrol_database', language 'pt', version '4.5'.
  *
  * @package     enrol_database
  * @category    string
@@ -53,9 +53,13 @@ $string['localcoursefield'] = 'Nome do campo "Disciplina" na tabela do Moodle';
 $string['localrolefield'] = 'Nome do campo "Papel" na tabela do Moodle';
 $string['localuserfield'] = 'Nome do campo "Utilizador" na tabela do Moodle';
 $string['newcoursecategory'] = 'Nome do campo "Identificador da categoria de novas disciplinas" na tabela do Moodle';
+$string['newcourseenddate'] = 'Campo de nova data de fim da disciplina';
+$string['newcourseenddate_desc'] = 'Especifique uma data no formato aaaa-mm-dd ou hora Unix ou deixe em branco para que a data de fim da disciplina seja calculada a partir da duração da disciplina configurada.';
 $string['newcoursefullname'] = 'Nome do campo "Nome completo de nova disciplina" na tabela do Moodle';
 $string['newcourseidnumber'] = 'Nome do campo "ID de nova disciplina" na tabela do Moodle';
 $string['newcourseshortname'] = 'Nome do campo "Nome curto de nova disciplina" na tabela do Moodle';
+$string['newcoursestartdate'] = 'Campo de nova data de início da disciplina';
+$string['newcoursestartdate_desc'] = 'Especifique uma data no formato aaaa-mm-dd ou hora Unix ou deixe em branco para que a data de início da disciplina seja definida como a data atual.';
 $string['newcoursetable'] = 'Nome da tabela externa de novas disciplinas';
 $string['newcoursetable_desc'] = 'Nome da tabela que contém as disciplinas que devem ser criadas automaticamente. Se este campo estiver estiver, quer dizer que não serão criadas disciplinas.';
 $string['pluginname'] = 'Base de dados externa';

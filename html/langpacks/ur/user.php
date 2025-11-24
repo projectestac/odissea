@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'ur', version '4.4'.
+ * Strings for component 'user', language 'ur', version '4.5'.
  *
  * @package     user
  * @category    string
@@ -25,25 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcondition'] = 'شرط شامل کریں';
-$string['adverbfor_and'] = 'اور';
-$string['adverbfor_andnot'] = 'اور';
-$string['adverbfor_or'] = 'یا';
-$string['applyfilters'] = 'فلٹرز لگائیں';
-$string['clearfilterrow'] = 'فلٹر قطار کو ہٹا دیں';
-$string['clearfilters'] = 'فلٹرز صاف کریں';
-$string['clearfilterselection'] = 'فلٹر سے "{$a}" کو ہٹا دیں';
 $string['countparticipantsfound'] = '{$a} شرکاء ملے';
 $string['filterbykeyword'] = 'کلیدی لفظ';
-$string['filterrowlegend'] = 'فلٹر {$a}';
-$string['filtersetmatchdescription'] = 'ایک سے زیادہ فلٹرز کو کیسے جوڑنا چاہیے';
-$string['filtertype'] = 'فلٹر کی قسم';
-$string['match'] = 'میچ';
-$string['matchofthefollowing'] = 'مندرجہ ذیل میں سے:';
 $string['moodlenetprofile'] = 'موڈل نیٹ پروفائل';
 $string['moodlenetprofile_help'] = 'یہ قطعہ آپ کے موڈل نیٹ پروفائل کو موڈل سے لنک کرنے کے لیے ہے۔یہ ویب فنگر کے مطابق یو آر ایل کی توقع کرتا ہے۔';
 $string['placeholdertype'] = 'ٹائپ کریں۔۔۔';
-$string['placeholdertypeorselect'] = 'ٹائپ کریں یا منتخب کریں۔۔۔';
 $string['privacy:courserequestpath'] = 'کورسز کی درخواست کی';
 $string['privacy:descriptionpath'] = 'پروفائل کی تفصیل';
 $string['privacy:devicespath'] = 'صارف کے آلات';
@@ -148,7 +134,6 @@ $string['privacy:passwordresetpath'] = 'پاس ورڈ ری سیٹ';
 $string['privacy:privatefilespath'] = 'نجی فائلیں';
 $string['privacy:profileimagespath'] = 'پروفائل امیجز';
 $string['privacy:sessionpath'] = 'سیشن کا ڈیٹا';
-$string['selectfiltertype'] = 'منتخب کریں';
 $string['target:upcomingactivitiesdue'] = 'آنے والی سرگرمیاں باقی ہیں';
 $string['target:upcomingactivitiesdue_help'] = 'یہ ہدف آئندہ آنے والی سرگرمیوں کے لیے یاد دہانیاں تیار کرتا ہے۔';
 $string['target:upcomingactivitiesdueinfo'] = 'تمام آنے والی سرگرمیوں کی وجہ بصیرت یہاں درج ہے۔ ان طلباء نے یہ بصیرتیں براہ راست حاصل کی ہیں۔';

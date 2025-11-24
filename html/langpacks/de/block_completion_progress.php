@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completion_progress', language 'de', version '4.4'.
+ * Strings for component 'block_completion_progress', language 'de', version '4.5'.
  *
  * @package     block_completion_progress
  * @category    string
@@ -34,6 +34,7 @@ $string['completion_progress:addinstance'] = 'Neuen Block \'Fortschrittsbalken\'
 $string['completion_progress:myaddinstance'] = 'Neuen Block \'Fortschrittsbalken\' zum Dashboard hinzufügen';
 $string['completion_progress:overview'] = 'Übersicht zum Bearbeitungsfortschritt für alle Kursteilnehmer/innen anzeigen';
 $string['completion_progress:showbar'] = 'Balken im Block \'Fortschrittsbalken\' anzeigen';
+$string['computeprogress'] = 'Fortschritt in Prozent berechnen';
 $string['config_activitiesincluded'] = 'Aktivitäten enthalten';
 $string['config_activitycompletion'] = 'Alle Aktivitäten mit aktivierter Abschlussverfolgung';
 $string['config_default_title'] = 'Fortschrittsbalken';
@@ -87,9 +88,16 @@ $string['notCompleted_colour_title'] = 'Farbe für nicht-abgeschlossen';
 $string['not_all_expected_set'] = 'Nicht alle Aktivitäten mit aktivierter Abschlussverfolgung haben ein \'{$a}\'-Datum gesetzt.';
 $string['now_indicator'] = 'JETZT';
 $string['overview'] = 'Überblick Teilnehmer/innen';
+$string['overviewcachetime'] = 'Zeit, um berechneten Fortschritt in Prozent zu cachen';
 $string['pluginname'] = 'Fortschrittsbalken';
+$string['privacy:metadata:block_completion_progress:blockinstanceid'] = 'Die ID des Fortschrittsbalken Blocks des zugehörigen Fortschritts in Prozent';
+$string['privacy:metadata:block_completion_progress:percentage'] = 'Der Abschluss in Prozent';
+$string['privacy:metadata:block_completion_progress:tableexplanation'] = 'Der Block Fortschrittsbalken speichert den Abschluss in Prozent zum Sortieren in der Übersichtstabelle im Cache.';
+$string['privacy:metadata:block_completion_progress:timemodified'] = 'Der Zeitpunkt der Berechnung des Prozentsatzes.';
+$string['privacy:metadata:block_completion_progress:userid'] = 'Die Nutzer-ID des zugehörigen Prozentsatzes.';
 $string['progress'] = 'Fortschritt';
 $string['progressbar'] = 'Fortschrittsbalken';
+$string['progresscachetime'] = 'Vor {$a} berechnet';
 $string['selectitem'] = '{$a} auswählen';
 $string['shortname'] = 'Kurzer Kursname';
 $string['showallinfo'] = 'Alle Infos anzeigen';

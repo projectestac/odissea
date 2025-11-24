@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'en', version '4.4'.
+ * Strings for component 'workshop', language 'en', version '4.5'.
  *
  * @package     workshop
  * @category    string
@@ -321,11 +321,11 @@ $string['reassess'] = 'Re-assess';
 $string['receivedgrades'] = 'Grades received';
 $string['recentassessments'] = 'Workshop assessments:';
 $string['recentsubmissions'] = 'Workshop submissions:';
-$string['resetassessments'] = 'Delete all assessments';
+$string['resetassessments'] = 'All assessments';
 $string['resetassessments_help'] = 'You can choose to delete just allocated assessments without affecting submissions. If submissions are to be deleted, their assessments will be deleted implicitly and this option is ignored. Note this also includes assessments of example submissions.';
 $string['resetphase'] = 'Switch to the setup phase';
 $string['resetphase_help'] = 'If enabled, all workshops will be put into the initial setup phase.';
-$string['resetsubmissions'] = 'Delete all submissions';
+$string['resetsubmissions'] = 'All submissions';
 $string['resetsubmissions_help'] = 'All the submissions and their assessments will be deleted. This does not affect example submissions.';
 $string['saveandclose'] = 'Save and close';
 $string['saveandcontinue'] = 'Save and continue editing';

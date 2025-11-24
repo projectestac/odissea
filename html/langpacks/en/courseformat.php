@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'courseformat', language 'en', version '4.4'.
+ * Strings for component 'courseformat', language 'en', version '4.5'.
  *
  * @package     courseformat
  * @category    string
@@ -37,8 +37,9 @@ $string['bulkedit'] = 'Bulk actions';
 $string['bulkeditingcourse'] = 'Bulk edit course: {$a}';
 $string['bulkselection'] = '{$a} selected';
 $string['bulkselection_plural'] = '{$a} selected';
-$string['cm_complete_feedback'] = '{$a->name} marked as completed.';
-$string['cm_complete_feedback_batch'] = 'Selected {$a->count} activities marked as completed.';
+$string['cm_add_feedback'] = '{$a->modname} added.';
+$string['cm_complete_feedback'] = '{$a->name} marked as done.';
+$string['cm_complete_feedback_batch'] = 'Selected {$a->count} activities marked as done.';
 $string['cm_delete_feedback'] = '{$a->name} deleted.';
 $string['cm_delete_feedback_batch'] = 'Selected {$a->count} activities deleted.';
 $string['cm_duplicate_feedback'] = '{$a->name} duplicated.';
@@ -53,13 +54,15 @@ $string['cm_show_feedback'] = '{$a->name} is now shown.';
 $string['cm_show_feedback_batch'] = 'The selected {$a->count} activities are now shown.';
 $string['cm_stealth_feedback'] = '{$a->name} is now available but not shown on the course page.';
 $string['cm_stealth_feedback_batch'] = 'The selected {$a->count} activities are now available but not shown on the course page.';
-$string['cm_uncomplete_feedback'] = '{$a->name} marked as uncompleted.';
-$string['cm_uncomplete_feedback_batch'] = 'Selected {$a->count} activities marked as uncompleted.';
+$string['cm_uncomplete_feedback'] = '{$a->name} marked as undone.';
+$string['cm_uncomplete_feedback_batch'] = 'Selected {$a->count} activities marked as undone.';
 $string['cm_visiblegroups_feedback'] = '{$a->name} group mode changed to Visible groups.';
 $string['cmavailability'] = 'Activity availability';
 $string['cmdelete_info'] = 'This will delete {$a->name} and any user data it contains.';
+$string['cmdelete_subsectiontitle'] = 'Delete subsection?';
 $string['cmdelete_title'] = 'Delete activity?';
 $string['cmmove_info'] = 'Move {$a} after';
+$string['cmmove_subsectiontitle'] = 'Move subsection';
 $string['cmmove_title'] = 'Move activity';
 $string['cmsdelete'] = 'Delete activities';
 $string['cmsdelete_info'] = 'This will delete {$a->count} activities and any user data they contain.';
@@ -70,15 +73,19 @@ $string['cmsmove_info'] = 'Move {$a} activities after';
 $string['cmsmove_title'] = 'Move selected activities';
 $string['courseindex'] = 'Course index';
 $string['courseindexoptions'] = 'Course index options';
+$string['maxsectionaddmessage'] = 'You have reached the maximum number of sections allowed for a course.';
 $string['nobulkaction'] = 'No bulk actions available';
+$string['orphansectionwarning'] = 'This section and its content are not part of the course structure and are not visible to students. To use any of this content, move it to a different section.';
 $string['preference:coursesectionspreferences'] = 'Section user preferences for course {$a}';
 $string['privacy:metadata:preference:coursesectionspreferences'] = 'Section user preferences like collapsed and expanded.';
+$string['section_add_feedback'] = 'Section added.';
 $string['section_delete_feedback'] = 'Course section {$a->name} deleted.';
 $string['section_delete_feedback_batch'] = 'Selected {$a->count} course sections deleted.';
 $string['section_hide_feedback'] = 'Course section {$a->name} hidden.';
 $string['section_hide_feedback_batch'] = 'Selected {$a->count} course sections hidden.';
 $string['section_show_feedback'] = 'Course section {$a->name} shown.';
 $string['section_show_feedback_batch'] = 'Selected {$a->count} course sections shown.';
+$string['sectionaddmax'] = 'You have reached the maximum number of sections allowed for a course...';
 $string['sectionavailability_title'] = 'Section availability';
 $string['sectiondelete_info'] = 'This will delete {$a->name} and all the activities it contains.';
 $string['sectiondelete_title'] = 'Delete section?';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_boost', language 'ro', version '4.4'.
+ * Strings for component 'theme_boost', language 'ro', version '4.5'.
  *
  * @package     theme_boost
  * @category    string
@@ -34,7 +34,6 @@ $string['brandcolor'] = 'Culoarea mărcii';
 $string['brandcolor_desc'] = 'Culoarea accentului.';
 $string['choosereadme'] = 'Boost este o temă modernă extrem de personalizabilă. Această temă este destinată a fi utilizată direct sau ca temă părinte atunci când creați teme noi utilizând Bootstrap 4.';
 $string['configtitle'] = 'Boost';
-$string['currentinparentheses'] = '(actual)';
 $string['generalsettings'] = 'Setări generale';
 $string['loginbackgroundimage'] = 'Imaginea de fundal pentru pagina de autentificare';
 $string['loginbackgroundimage_desc'] = 'Imaginea de afișat ca fundal pentru pagina de autentificare.';
@@ -48,8 +47,6 @@ $string['privacy:drawerblockclosed'] = 'Opțiunea curentă pentru sertarul cu bl
 $string['privacy:drawerblockopen'] = 'Opțiunea curentă pentru sertarul cu blocuri este vizibilă.';
 $string['privacy:drawerindexclosed'] = 'Opțiunea curentă pentru sertarul cu blocuri este închisă.';
 $string['privacy:drawerindexopen'] = 'Opțiunea curentă pentru sertarul cu blocuri este deschisă.';
-$string['privacy:drawernavclosed'] = 'Preferința actuală pentru sertarul de navigație este închisă.';
-$string['privacy:drawernavopen'] = 'Preferința actuală pentru sertarul de navigare este deschisă.';
 $string['privacy:metadata'] = 'Tema Boost nu stochează date personale despre niciun utilizator.';
 $string['privacy:metadata:preference:draweropenblock'] = 'Preferința utilizatorului de a ascunde sau a afișa sertarul cu blocuri.';
 $string['privacy:metadata:preference:draweropenindex'] = 'Preferința utilizatorului de a ascunde sau a afișa sertarul cu indexul cursului.';

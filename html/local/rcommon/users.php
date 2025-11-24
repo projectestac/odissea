@@ -203,44 +203,80 @@ switch ($action) {
             echo $OUTPUT->paging_bar($usercount, $page, $perpage, $baseurl);
 
             foreach ($columns as $column => $columtext) {
+
                 if ($sort !== $column) {
                     $columnicon = '';
                     $columndir = 'ASC';
+
                 } else {
-                    $columndir = $dir === 'ASC' ? 'DESC' : 'ASC';
-                    $columnicon = ($dir === 'ASC') ? 'sort_asc' : 'sort_desc';
-                    $columnicon = "<img class='iconsort' src=\"" . $OUTPUT->image_url('t/' . $columnicon) . "\" alt=\"\" />";
+                    $columndir = ($dir === 'ASC') ? 'DESC' : 'ASC';
+                    $iconname = ($dir === 'ASC') ? 'sort_asc' : 'sort_desc';
+
+                    $pix = new pix_icon('t/' . $iconname, '');
+                    $columnicon = $OUTPUT->render($pix);
                 }
-                $columns[$column] = "<a href=\"users.php?sort=$column&dir=$columndir&show=$show\">" . $columtext . "</a>$columnicon";
+
+                $url = new moodle_url('users.php', [
+                    'sort' => $column,
+                    'dir'  => $columndir,
+                    'show' => $show
+                ]);
+
+                $link = html_writer::link($url, $columtext);
+                $columns[$column] = $link . $columnicon;
+
             }
 
             $table = new html_table();
-            $table->head = [];
-            $table->head[] = $columns['firstname'] . ' / ' . $columns['lastname'];
-            $table->head[] = $columns['username'];
-            $table->head[] = get_string('marsupialcredentials', 'local_rcommon');
-            $table->head[] = get_string('actions');
-            $table->align = ['left', 'left', 'center', 'center'];
             $table->id = 'users';
+            $table->attributes['class'] = 'generaltable';
+
+            $table->head = [
+                $columns['firstname'] . ' / ' . $columns['lastname'],
+                $columns['username'],
+                get_string('marsupialcredentials', 'local_rcommon'),
+                get_string('actions'),
+            ];
+
+            $table->align = ['left', 'left', 'center', 'center'];
 
             foreach ($users as $user) {
-                $buttons = array();
-                $fullname = $user->firstname . ' ' . $user->lastname;
 
-                $buttons[] = "<a href=\"users.php?action=manage&username=$user->username\">" . get_string('keysadminsearchuserbtn', 'local_rcommon') . "</a>";
+                $fullname = fullname($user);
 
-                $row = [];
-                $row[] = "<a href=\"../../user/view.php?id=$user->id&amp;course=$site->id\">$fullname</a>";
-                $row[] = $user->username;
-                $row[] = $user->books;
-                $row[] = implode(' ', $buttons);
+                // Link to the user profile.
+                $profileurl = new moodle_url('/user/view.php', [
+                    'id' => $user->id,
+                    'course' => $site->id,
+                ]);
+                $profilelink = html_writer::link($profileurl, $fullname);
+
+                // Action manage.
+                $manageurl = new moodle_url('users.php', [
+                    'action' => 'manage',
+                    'username' => $user->username,
+                ]);
+                $managebtn = html_writer::link(
+                    $manageurl,
+                    get_string('keysadminsearchuserbtn', 'local_rcommon')
+                );
+
+                $row = new html_table_row([
+                    $profilelink,
+                    s($user->username),
+                    s($user->books),
+                    $managebtn,
+                ]);
+
                 $table->data[] = $row;
             }
 
-            echo html_writer::start_tag('div', ['class' => 'no-overflow']);
+            echo html_writer::start_div('no-overflow');
             echo html_writer::table($table);
-            echo html_writer::end_tag('div');
+            echo html_writer::end_div();
+
             echo $OUTPUT->paging_bar($usercount, $page, $perpage, $baseurl);
+
         }
 
 }

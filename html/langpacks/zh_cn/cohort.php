@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'zh_cn', version '4.4'.
+ * Strings for component 'cohort', language 'zh_cn', version '4.5'.
  *
  * @package     cohort
  * @category    string
@@ -49,7 +49,10 @@ $string['currentusers'] = '当前用户';
 $string['currentusersmatching'] = '匹配的当前用户';
 $string['defaultcontext'] = '默认情况';
 $string['delcohort'] = '删除群';
+$string['delcohortsconfirm'] = '这将删除群组和所有关联数据';
+$string['delcohortssuccess'] = '已删除的选定群组';
 $string['delconfirm'] = '这将删除群组“{$a}”和所有关联数据';
+$string['delsuccess'] = '已删除的群组';
 $string['description'] = '描述';
 $string['displayedrows'] = '{$a->displayed}行显示超过了{$a->total}。';
 $string['duplicateidnumber'] = '已有使用相同ID的群存在';

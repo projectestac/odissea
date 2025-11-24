@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'es', version '4.4'.
+ * Strings for component 'data', language 'es', version '4.5'.
  *
  * @package     data
  * @category    string
@@ -29,8 +29,6 @@ $string['action'] = 'Acción';
 $string['actionsmenu'] = 'Menú de acciones';
 $string['add'] = 'Añadir entrada';
 $string['addcomment'] = 'Añadir comentario';
-$string['addedby'] = 'Añadido por';
-$string['addentries'] = 'Añadir entradas';
 $string['addtemplate'] = 'Plantilla de añadir entrada';
 $string['advancedsearch'] = 'Búsqueda avanzada';
 $string['allowcomments'] = 'Permitir comentar las entradas';
@@ -55,8 +53,6 @@ $string['availabletags_help'] = '<p align="center"><strong>Marcas disponibles</s
 <p>En la plantilla actual sólo pueden usarse las marcas que están en la lista de "Marcas disponibles".</p>';
 $string['availabletodate'] = 'Disponible hasta';
 $string['availabletodatevalidation'] = 'La fecha de disponibilidad de fin no puede ser previa a la fecha de disponibilidad de comienzo.';
-$string['blank'] = 'En blanco';
-$string['buttons'] = 'Acciones';
 $string['bynameondate'] = 'por {$a->name} - {$a->date}';
 $string['calendarend'] = '{$a} cierra';
 $string['calendarstart'] = '{$a} abre';
@@ -145,13 +141,13 @@ $string['defaultfieldenclosure'] = '(el valor por defecto es ninguno)';
 $string['defaultsortfield'] = 'Campo de ordenación por defecto';
 $string['delcheck'] = 'Checkbox de borrado masivo';
 $string['delete'] = 'Eliminar';
-$string['deleteallentries'] = 'Eliminar todas las entradas';
+$string['deleteallentries'] = 'Todas las entradas';
 $string['deletecomment'] = '¿Está seguro de que desea eliminar este comentario?';
 $string['deleteconfirm'] = '¿Borrar ajuste predefinido {$a}?';
 $string['deleted'] = 'eliminado';
 $string['deleteentry'] = 'Eliminar entrada';
 $string['deletefield'] = 'Eliminar campo';
-$string['deletenotenrolled'] = 'Eliminar entradas de usuarios no matriculados';
+$string['deletenotenrolled'] = 'Entradas de usuarios no matriculados';
 $string['deletewarning'] = 'Borrar un ajuste previo lo borra de la lista de ajustes previos disponibles en todos los cursos.';
 $string['descending'] = 'Descendente';
 $string['directorynotapreset'] = '{$a->directory} No preset: archivos perdidos: {$a->missing_files}';
@@ -353,7 +349,6 @@ $string['nomatch'] = 'No se han encontrado entradas';
 $string['nomaximum'] = 'No máximo';
 $string['nopreviewavailable'] = 'No hay vista previa disponible para {$a}';
 $string['norecords'] = 'No hay entradas aún';
-$string['nosingletemplate'] = 'Aún no se ha definido la plantilla individual';
 $string['notapproved'] = 'Pendiente de aprobación';
 $string['notapprovederror'] = 'La entrada no está aprobada aún.';
 $string['notemplates'] = 'No hay plantillas aún';
@@ -376,7 +371,6 @@ $string['page-mod-data-x'] = 'Cualquier página del módulo actividad de Base de
 $string['pagesize'] = 'Entradas por página';
 $string['participants'] = 'Participantes';
 $string['picture'] = 'Imagen';
-$string['pleaseaddsome'] = 'Por favor, cree alguno debajo o <a href="{$a}">elija un conjunto predefinido</a> para empezar.';
 $string['pluginadministration'] = 'Administración de la actividad base de datos';
 $string['pluginname'] = 'Base de datos';
 $string['portfolionotfile'] = 'Exportar a un portafolio en lugar de a un archivo (sólo csv y leap2a)';
@@ -411,7 +405,7 @@ $string['recorddeleted'] = 'Entrada eliminada';
 $string['recorddisapproved'] = 'Entrada desaprobada';
 $string['recordsnotsaved'] = 'No se ha guardado ninguna entrada. Por favor, compruebe el formato del archivo subido.';
 $string['recordssaved'] = 'entradas guardadas';
-$string['removealldatatags'] = 'Eliminar todas las etiquetas de base de datos';
+$string['removealldatatags'] = 'Todas las etiquetas de base de datos';
 $string['requireapproval'] = 'Aprobación requerida';
 $string['requireapproval_help'] = 'Un profesor debe aprobar las entradas antes de que sean visibles para todos.';
 $string['required'] = 'Obligatorio';
@@ -448,7 +442,6 @@ $string['saveaspresetmissingcapability'] = 'El usuario no tiene permiso para gua
 $string['savedataaspreset'] = 'Guardar todos los campos y plantillas y publicar como ajuste predefinido del sitio';
 $string['savesettings'] = 'Guardar ajustes';
 $string['savesuccess'] = 'Ajuste previo guardado. <a href="{$a->url}">Vista previa</a>';
-$string['savetemplate'] = 'Guardar plantilla';
 $string['search'] = 'Buscar';
 $string['search:activity'] = 'Base de datos - información de actividad';
 $string['search:entry'] = 'Base de datos - entradas';
@@ -482,7 +475,6 @@ $string['text'] = 'Texto';
 $string['textarea'] = 'Área de texto';
 $string['timeadded'] = 'Tiempo añadido';
 $string['timemodified'] = 'Tiempo modificado';
-$string['todatabase'] = 'a esta base de datos.';
 $string['type'] = 'Tipo de campo';
 $string['undefinedprocessactionmethod'] = 'No se ha definido método de acción en Data_Preset para manejar la acción "{$a}".';
 $string['unknown'] = 'Campo desconocido';

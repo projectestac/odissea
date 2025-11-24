@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'de', version '4.4'.
+ * Strings for component 'auth_oauth2', language 'de', version '4.5'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -31,16 +31,17 @@ $string['auth_oauth2description'] = 'OAuth 2 Standard-basierte Authentifizierung
 $string['auth_oauth2settings'] = 'Einstellungen zur OAuth 2 Authentifizierung';
 $string['confirmaccountemail'] = 'Guten Tag {$a->fullname},
 
-auf \'{$a->sitename}\' wurde ein neues Nutzerkonto mit Ihrer E-Mailadresse angelegt.
+auf \'{$a->sitename}\' wurde ein neues Nutzerkonto mit Ihrer E-Mail-Adresse angefordert.
 
-Bitte folgen Sie diesem Link, um das neue Profil zu bestätigen:
+Um das neue Nutzerkonto zu bestätigen, öffnen Sie bitte die folgende Webadresse:
 
 {$a->link}
 
-In den meisten E-Mail-Programmen sollte dieser Link in blau angezeigt werden, so dass Sie ihn anklicken können. Sollte dies nicht der Fall sein, kopieren Sie bitte den Link und fügen ihn in der Adresszeile Ihres Browserfensters ein.
+In den meisten Fällen sollte dies als klickbarer Link angezeigt werden. Sollte ein Klick nicht funktionieren, kopieren Sie die Adresse in das Adressfeld Ihres Webbrowsers.
 
-Falls Sie Hilfe benötigen, kontaktieren Sie bitte den/die Administrator/in der Website,
-{$a->admin}
+Wenn Sie selber kein neues Nutzerkonto angefragt haben, könnte jemand anderes versuchen, Ihr Konto zu kompromittieren.
+
+Falls Sie Fragen haben, wenden Sie sich an: {$a->admin}
 
 Ihr E-Learning-Team';
 $string['confirmaccountemailsubject'] = '{$a}: Bestätigung für das Nutzerkonto';
@@ -48,16 +49,17 @@ $string['confirmationinvalid'] = 'Der Bestätigungslink ist ungültig oder berei
 $string['confirmationpending'] = 'Dieses Nutzerkonto wartet auf eine E-Mail-Bestätigung.';
 $string['confirmlinkedloginemail'] = 'Guten Tag {$a->fullname},
 
-unter Angabe Ihrer E-Mail-Adresse wurde eine Anfrage gestellt, das {$a->issuername}-Login \'{$a->linkedemail}\' mit Ihrem Nutzerkonto auf \'{$a->sitename}\' zu verbinden.
+unter Angabe Ihrer E-Mail-Adresse wurde die Anfrage gestellt, das {$a->issuername}-Login \'{$a->linkedemail}\' mit Ihrem Nutzerkonto auf \'{$a->sitename}\' zu verbinden.
 
-Bestätigen Sie über diesen Link die Anfrage zum Verbinden mit Ihrem Nutzerkonto:
+Um diese Anfrage zu bestätigen, öffnen Sie bitte die folgende Webadresse:
 
 {$a->link}
 
-In den meisten E-Mail-Programmen sollte dieser Link in blau angezeigt werden und anklickbar sein. Sollte dies nicht der Fall sein, kopieren Sie bitte den Link und fügen Ihn in der Adresszeile Ihres Browserfensters ein.
+In den meisten Fällen sollte dies als klickbarer Link angezeigt werden. Sollte ein Klick nicht funktionieren, kopieren Sie die Adresse in das Adressfeld Ihres Webbrowsers.
 
-Falls Sie Hilfe benötigen, kontaktieren Sie bitte Administrator/innen der Website,
-{$a->admin}
+Wenn Sie selber keine solche Anfrage gestellt haben, könnte jemand anderes versuchen, Ihr Konto zu kompromittieren.
+
+Falls Sie Fragen haben, wenden Sie sich an: {$a->admin}
 
 Ihr E-Learning-Team';
 $string['confirmlinkedloginemailsubject'] = '{$a}: Bestätigung für ein weiteres Login';
@@ -80,7 +82,7 @@ Bitte melden Sie sich wie bisher über den Link auf der Anmeldeseite an.
 $string['emailpasswordchangeinfosubject'] = '{$a}: Kennwort ändern';
 $string['info'] = 'Externes Nutzerkonto';
 $string['issuer'] = 'OAuth 2 Service';
-$string['issuernologin'] = 'Der Aussteller kann nicht als Login verwendet werden';
+$string['issuernologin'] = 'Dieser Aussteller kann nicht zum Anmelden verwendet werden';
 $string['key'] = 'Schlüssel';
 $string['linkedlogins'] = 'Weitere Logins';
 $string['linkedloginshelp'] = 'Hilfe für weitere Logins';

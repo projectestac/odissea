@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'ko', version '4.4'.
+ * Strings for component 'gradereport_grader', language 'ko', version '4.5'.
  *
  * @package     gradereport_grader
  * @category    string

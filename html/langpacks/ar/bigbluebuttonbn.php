@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bigbluebuttonbn', language 'ar', version '4.4'.
+ * Strings for component 'bigbluebuttonbn', language 'ar', version '4.5'.
  *
  * @package     bigbluebuttonbn
  * @category    string
@@ -41,6 +41,7 @@ $string['bigbluebuttonbn:join'] = 'الانضمام إلى غرفة اجتماع
 $string['bigbluebuttonbn:managerecordings'] = 'إدارة التسجيلات';
 $string['bigbluebuttonbn:protectrecordings'] = 'حماية التسجيلات';
 $string['bigbluebuttonbn:publishrecordings'] = 'نشر التسجيلات';
+$string['bigbluebuttonbn:seepresentation'] = 'مشاهدة ملف العرض التقديمي دائمًا في صفحة النشاط';
 $string['bigbluebuttonbn:unprotectrecordings'] = 'إلغاء حماية التسجيلات';
 $string['bigbluebuttonbn:unpublishrecordings'] = 'إلغاء نشر التسجيلات';
 $string['bigbluebuttonbn:view'] = 'معاينة غرفة BBB';
@@ -200,6 +201,10 @@ $string['config_server_url'] = 'عنوان الرابط لمخدم غرف اجت
 $string['config_server_url_description'] = 'عنوان رابط مخدم BigBlueButton.';
 $string['config_shared_secret'] = 'السر المشارك لـ BigBlueButton';
 $string['config_shared_secret_description'] = 'سر الأمان لمخدم BigBlueButton.';
+$string['config_showpresentation_default'] = 'إظهار ملف العرض التقديمي في صفحة النشاط';
+$string['config_showpresentation_default_description'] = 'هل ينبغي للطلاب الوصول إلى ملف العرض التقديمي قبل الجلسة؟ هذا الإعداد ليس له تأثير على المستخدمين الذي لديهم الإمكانية \'Always see presentation file on activity page\'.';
+$string['config_showpresentation_editable'] = 'خيار \'إظهار ملف العرض التقديمي في صفحة النشاط\'';
+$string['config_showpresentation_editable_description'] = 'خيار ضمن إعدادات النشاط للمعلمين لإظهار ملف العرض التقديمي للطلاب من عدمه.';
 $string['config_uidelegation_enabled'] = 'تفويض واجهة المستخدم مُمَكَّن';
 $string['config_uidelegation_enabled_description'] = 'تعمل هذه الإعدادات على تمكين أو تعطيل تفويض واجهة المستخدم لمخدم غرف اجتماعات BBB.';
 $string['config_userlimit'] = 'تحديد المستخدمين';
@@ -372,6 +377,7 @@ $string['mod_form_field_recordings_html'] = 'إظهار الجدول بصيغة 
 $string['mod_form_field_recordings_imported'] = 'إظهار الروابط المستوردة فقط';
 $string['mod_form_field_recordings_preview'] = 'إظهار استعراض التسجيل';
 $string['mod_form_field_room_name'] = 'اسم الغرفة';
+$string['mod_form_field_showpresentation'] = 'إظهار ملف العرض التقديمي في صفحة النشاط';
 $string['mod_form_field_userlimit'] = 'محدد المستخدمين';
 $string['mod_form_field_userlimit_help'] = 'الحد الأقصى لعدد المستخدمين المسموح به في الجلسة. إذا تم تعيين الحد على 0، فسيكون عدد المستخدمين غير محدود.';
 $string['mod_form_field_voicebridge'] = 'الجسرالصوتي [####]';

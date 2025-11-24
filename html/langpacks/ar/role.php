@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'ar', version '4.4'.
+ * Strings for component 'role', language 'ar', version '4.5'.
  *
  * @package     role
  * @category    string
@@ -28,6 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['addinganewrole'] = 'إضافة دور جديد';
 $string['addrole'] = 'إضافة دور جديد';
 $string['advancedoverride'] = 'التجاوز المتقدم للأدوار';
+$string['ai:acceptpolicy'] = 'قبول سياسة الذكاء الاصطناعي';
+$string['ai:fetchanyuserpolicystatus'] = 'إحصل على قبول سياسة الذكاء الاصطناعي من المستخدمين';
+$string['ai:fetchpolicy'] = 'إحصل على قبول سياسة الذكاء الاصطناعي من المستخدمين';
 $string['allow'] = 'سماح';
 $string['allowassign'] = 'السماح بتعيين الأدوار';
 $string['allowed'] = 'مسموح';
@@ -163,6 +166,8 @@ $string['confirmunassignno'] = 'إلغاء';
 $string['confirmunassigntitle'] = 'تأكيد تغيير الدور';
 $string['confirmunassignyes'] = 'إزالة';
 $string['contentbank:access'] = 'الوصول إلى بنك المحتوى';
+$string['contentbank:changelockedcustomfields'] = 'تغيير الحقول المخصصة المؤمنة لبنك المحتوى';
+$string['contentbank:configurecustomfields'] = 'تهيئة الحقول المخصصة لبنك المحتوى';
 $string['contentbank:copyanycontent'] = 'نسخ أي محتوى في بنك المحتوى';
 $string['contentbank:copycontent'] = 'نسخ المحتوى في بنك المحتوى';
 $string['contentbank:deleteanycontent'] = 'حذف أي محتوى من بنك المحتوى';
@@ -190,6 +195,7 @@ $string['course:create'] = 'إنشاء المقررات الدراسية';
 $string['course:creategroupconversations'] = 'إنشاء محادثات جماعية';
 $string['course:delete'] = 'حذف المقررات الدراسية';
 $string['course:downloadcoursecontent'] = 'تنزيل محتوى المساق';
+$string['course:editcoursewelcomemessage'] = 'تحرير رسالة ترحيب المساق';
 $string['course:enrolconfig'] = 'تهيئة عينات الانضمام في المقررات الدراسية';
 $string['course:enrolreview'] = 'مراجعة انضمامات المساق';
 $string['course:ignoreavailabilityrestrictions'] = 'تجاهل تقييدات الإتاحة';
@@ -238,8 +244,8 @@ $string['defaultrole'] = 'الدور الافتراضي';
 $string['defaultx'] = 'افتراضي: {$a}';
 $string['defineroles'] = 'تعريف الأدوار';
 $string['definitionofrolex'] = 'تعريف دور \'{$a}\'';
-$string['deletecourseoverrides'] = 'حذف كل التجاوزات في المساق';
-$string['deletelocalroles'] = 'حذف كافة تعيينات الأدوار المحلية';
+$string['deletecourseoverrides'] = 'كل التجاوزات في المساق';
+$string['deletelocalroles'] = 'كافة تعيينات الأدوار المحلية';
 $string['deleterolesure'] = '<p>هل أنت متأكد من رغبتك في حذف الدور "{$a->name} ({$a->shortname})"؟</p><p>حالياً هذا الدور معيَّن لـ {$a->count} مستخدم.</p>';
 $string['deletexrole'] = 'حذف {$a} الدور';
 $string['duplicaterole'] = 'نسخ الدور';
@@ -520,6 +526,7 @@ $string['user:viewalldetails'] = 'معاينة كامل معلومات المس�
 $string['user:viewdetails'] = 'معاينة الملفات الشخصية للمستخدمين';
 $string['user:viewhiddendetails'] = 'معاينة التفاصيل المخفية للمستخدمين';
 $string['user:viewlastip'] = 'معاينة آخر عنوان IP للمستخدم';
+$string['user:viewprofilepictures'] = 'معاينة صور المستخدمين (إذا كان تسجيل الدخول مفروضًا)';
 $string['user:viewuseractivitiesreport'] = 'مشاهدة تقارير نشاط المستخدم';
 $string['user:viewusergrades'] = 'معاينة تقديرات المستخدم';
 $string['usersfrom'] = 'المستخدمين من {$a}';

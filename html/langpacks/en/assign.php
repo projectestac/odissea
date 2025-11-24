@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'en', version '4.4'.
+ * Strings for component 'assign', language 'en', version '4.5'.
  *
  * @package     assign
  * @category    string
@@ -70,6 +70,18 @@ $string['assign:viewgrades'] = 'View grades';
 $string['assign:viewownsubmissionsummary'] = 'View own submission summary';
 $string['assignfeedback'] = 'Feedback plugin';
 $string['assignfeedbackpluginname'] = 'Feedback plugin';
+$string['assignmentduedigesthtml'] = '<p>Hi {$a->firstname},</p>
+<p>The following assignments are due on <strong>{$a->duedate}</strong>.</p>
+{$a->digest}';
+$string['assignmentduedigestitem'] = '<strong>{$a->assignmentname}</strong> in course {$a->coursename}<br/>
+<strong>Due: {$a->duetime}</strong><br/>
+<a href="{$a->url}" aria-label="Go to {$a->assignmentname}">Go to activity</a>';
+$string['assignmentduedigestsubject'] = 'You have assignments due in 7 days';
+$string['assignmentduesoonhtml'] = '<p>Hi {$a->firstname},</p>
+<p>The assignment <strong>{$a->assignmentname}</strong> in course {$a->coursename} is due soon.</p>
+<p><strong>Due: {$a->duedate}</strong></p>
+<p><a href="{$a->url}">Go to activity</a></p>';
+$string['assignmentduesoonsubject'] = 'Due on {$a->duedate}: {$a->assignmentname}';
 $string['assignmentisdue'] = 'Assignment is due';
 $string['assignmentmail'] = '{$a->grader} has posted some feedback on your
 assignment submission for \'{$a->assignment}\'
@@ -83,6 +95,12 @@ assignment submission for \'<i>{$a->assignment}</i>\'.</p>
 $string['assignmentmailsmall'] = '{$a->grader} has posted some feedback on your
 assignment submission for \'{$a->assignment}\' You can see it appended to your submission';
 $string['assignmentname'] = 'Assignment name';
+$string['assignmentoverduehtml'] = '<p>Hi {$a->firstname},</p>
+<p><strong>{$a->assignmentname}</strong> in course {$a->coursename} was due on <strong>{$a->duedate}</strong>.</p>
+<p>You might still be able to submit your assignment{$a->cutoffsnippet}, but your submission will be marked as late.</p>
+<p><a href="{$a->url}">Go to activity</a></p>';
+$string['assignmentoverduehtmlcutoffsnippet'] = '<strong>by {$a->cutoffdate}</strong>';
+$string['assignmentoverduesubject'] = 'Overdue: {$a->assignmentname}';
 $string['assignmentplugins'] = 'Assignment plugins';
 $string['assignmentsperpage'] = 'Assignments per page';
 $string['assignsubmission'] = 'Submission plugin';
@@ -91,19 +109,24 @@ $string['assigntimeleft'] = 'Time left';
 $string['attemptheading'] = 'Attempt {$a->attemptnumber}: {$a->submissionsummary}';
 $string['attempthistory'] = 'Previous attempts';
 $string['attemptnumber'] = 'Attempt number';
-$string['attemptreopenmethod'] = 'Additional attempts';
-$string['attemptreopenmethod_help'] = 'This setting determines whether a student can make additional attempts at the assignment. For each attempt, the grade and feedback are saved, and can be viewed by the teacher and the student. The available options are:
+$string['attemptreopenmethod'] = 'Grant attempts';
+$string['attemptreopenmethod_automatic'] = 'Automatically';
+$string['attemptreopenmethod_automatic_help'] = 'After each attempt, the next is granted automatically after grading.';
+$string['attemptreopenmethod_help'] = 'This setting controls how students are granted attempts for this assignment. For each attempt, the grade and feedback are saved, and can be viewed by the teacher and the student. Options are:
 
-* Never - Only one attempt is possible.
-* Manually - Additional attempts may be allowed by a teacher.
-* Automatically until pass - Additional attempts are allowed automatically until the student achieves the grade to pass set in the gradebook for this assignment.';
+* Manually - After each attempt, you can grant the next one through the Submissions page or the Grader page.
+* Automatically - After each attempt, the next is granted automatically after grading.
+* Automatically until pass - After each attempt, the next will be granted automatically after grading, until the student achieves the passing grade.';
 $string['attemptreopenmethod_manual'] = 'Manually';
+$string['attemptreopenmethod_manual_help'] = 'After each attempt, you can grant the next one through the Submissions page or the Grader page.';
 $string['attemptreopenmethod_none'] = 'Never';
 $string['attemptreopenmethod_untilpass'] = 'Automatically until pass';
+$string['attemptreopenmethod_untilpass_help'] = 'After each attempt, the next will be granted automatically after grading, until the student achieves the passing grade.';
 $string['attemptsettings'] = 'Attempt settings';
 $string['availability'] = 'Availability';
 $string['back'] = 'Back';
 $string['backtoassignment'] = 'Back to assignment';
+$string['batchoperationaddattempt'] = 'Grant attempt';
 $string['batchoperationconfirmaddattempt'] = 'Allow another attempt for selected submissions?';
 $string['batchoperationconfirmdownloadselected'] = 'Download selected submissions?';
 $string['batchoperationconfirmgrantextension'] = 'Grant an extension to all selected submissions?';
@@ -113,19 +136,26 @@ $string['batchoperationconfirmreverttodraft'] = 'Revert selected submissions to 
 $string['batchoperationconfirmsetmarkingallocation'] = 'Set marking allocation for all selected submissions?';
 $string['batchoperationconfirmsetmarkingworkflowstate'] = 'Set marking workflow state for all selected submissions?';
 $string['batchoperationconfirmunlock'] = 'Unlock all selected submissions?';
-$string['batchoperationlock'] = 'lock submissions';
-$string['batchoperationreverttodraft'] = 'revert submissions to draft';
+$string['batchoperationdownloadselected'] = 'Download';
+$string['batchoperationgrantextension'] = 'Extend';
+$string['batchoperationlock'] = 'Lock';
+$string['batchoperationremovesubmission'] = 'Delete';
+$string['batchoperationreverttodraft'] = 'Revert to draft';
 $string['batchoperationsdescription'] = 'With selected...';
-$string['batchoperationunlock'] = 'unlock submissions';
+$string['batchoperationsetmarkingallocation'] = 'Allocate marker';
+$string['batchoperationsetmarkingworkflowstate'] = 'Change marking state';
+$string['batchoperationunlock'] = 'Unlock';
 $string['batchsetallocatedmarker'] = 'Set allocated marker for {$a} selected user(s).';
 $string['batchsetmarkingworkflowstateforusers'] = 'Set marking workflow state for {$a} selected user(s).';
 $string['beginassignment'] = 'Begin assignment';
 $string['blindmarking'] = 'Anonymous submissions';
 $string['blindmarking_help'] = 'Anonymous submissions hide the identity of students from markers. Anonymous submission settings will be locked once a submission or grade has been made in relation to this assignment.';
 $string['blindmarkingenabledwarning'] = 'Anonymous submissions are enabled for this activity.';
-$string['blindmarkingnogradewarning'] = 'Anonymous submissions are enabled for this activity. Grades will not be added to the gradebook until student identities are revealed via the grading action menu.';
+$string['blindmarkingnogradewarning'] = 'Anonymous submissions are enabled for this activity. Grades will not be added to the gradebook until student identities are revealed via the "Actions" menu.';
+$string['bulkactionsselection'] = 'Bulk actions selection';
 $string['cachedef_overrides'] = 'User and group override information';
 $string['calendardue'] = '{$a} is due';
+$string['calendarextension'] = '{$a} is due (extension)';
 $string['calendargradingdue'] = '{$a} is due to be graded';
 $string['caneditsubmission'] = 'You can edit your submission and submit it after the time limit has expired, but it will be marked as late.';
 $string['changefilters'] = 'Change filters';
@@ -160,11 +190,15 @@ $string['cutoffdate_help'] = 'If set, submissions will not be accepted after thi
 $string['cutoffdatecolon'] = 'Cut-off date: {$a}';
 $string['cutoffdatefromdatevalidation'] = 'Cut-off date cannot be earlier than the allow submissions from date.';
 $string['cutoffdatevalidation'] = 'Cut-off date cannot be earlier than the due date.';
+$string['defaultgradescale'] = 'Grading scale';
+$string['defaultgradescale_help'] = 'The default grading scale for new assignments. Only standard scales are available.';
+$string['defaultgradetype'] = 'Grade type';
+$string['defaultgradetype_help'] = 'The default grade type for new assignments.';
 $string['defaultlayout'] = 'Restore default layout';
 $string['defaultsettings'] = 'Default assignment settings';
 $string['defaultsettings_help'] = 'These settings define the defaults for all new assignments.';
 $string['defaultteam'] = 'Default group';
-$string['deleteallsubmissions'] = 'Delete all submissions';
+$string['deleteallsubmissions'] = 'All submissions';
 $string['description'] = 'Description';
 $string['disabled'] = 'Disabled';
 $string['downloadall'] = 'Download all submissions';
@@ -190,7 +224,7 @@ $string['editsubmissionother'] = 'Edit submission for {$a}';
 $string['enabled'] = 'Enabled';
 $string['enabletimelimit'] = 'Enable timed assignments';
 $string['enabletimelimit_help'] = 'If enabled, you can set a time limit on assignment settings page.';
-$string['errorgradechangessaveddetail'] = 'The changes to the grade and feedback failed to save';
+$string['errorgradechangessaveddetail'] = 'The changes to the grade and feedback were not saved.';
 $string['errornosubmissions'] = 'There are no submissions to download';
 $string['errorquickgradingvsadvancedgrading'] = 'The grades were not saved because this assignment is currently using advanced grading';
 $string['errorrecordmodified'] = 'The grades were not saved because someone has modified one or more records more recently than when you loaded the page.';
@@ -227,10 +261,9 @@ $string['eventworkflowstateupdated'] = 'The state of the workflow has been updat
 $string['expandreviewpanel'] = 'Expand review panel';
 $string['extensionduedate'] = 'Extension due date';
 $string['extensionduedatecurrent'] = 'Current extension due date';
-$string['extensionduedatefrom'] = 'From {$a}';
 $string['extensionduedatenone'] = 'None';
-$string['extensionduedateto'] = 'To {$a}';
-$string['extensionduedatewithout'] = 'Users without an extension: {$a}';
+$string['extensionduedaterange'] = 'Various between {$a->earliest} and {$a->latest}';
+$string['extensionduedatewithout'] = 'Users with no current extension: {$a}';
 $string['extensionnotafterduedate'] = 'Extension date must be after the due date';
 $string['extensionnotafterfromdate'] = 'Extension date must be after the allow submissions from date';
 $string['feedback'] = 'Feedback';
@@ -262,6 +295,7 @@ $string['feedbacksettings'] = 'Feedback settings';
 $string['feedbacktypes'] = 'Feedback types';
 $string['filesubmissions'] = 'File submissions';
 $string['filter'] = 'Filter';
+$string['filterall'] = 'All';
 $string['filterdraft'] = 'Draft';
 $string['filtergrantedextension'] = 'Granted extension';
 $string['filternone'] = 'No filter';
@@ -272,6 +306,7 @@ $string['fixrescalednullgrades'] = 'This assignment contains some erroneous grad
 $string['fixrescalednullgradesconfirm'] = 'Are you sure you want to fix erroneous grades? All affected grades will be removed. This may affect course totals.';
 $string['fixrescalednullgradesdone'] = 'Grades fixed.';
 $string['gradeabovemaximum'] = 'Grade must be less than or equal to {$a}.';
+$string['gradeactions'] = 'Grade actions';
 $string['gradebelowzero'] = 'Grade must be greater than or equal to zero.';
 $string['gradebreakdown'] = 'Grade breakdown';
 $string['gradecanbechanged'] = 'Grade can be changed';
@@ -321,6 +356,7 @@ $string['hidegrader_help'] = 'If enabled, the identity of any user who grades an
 Note that this setting has no effect on the comments box on the grading page.';
 $string['hideshow'] = 'Hide/Show';
 $string['inactiveoverridehelp'] = '* This override is inactive because the user\'s access to the activity is restricted. This can be due to group or role assignments, other access restrictions, or the activity being hidden.';
+$string['includesuspendedparticipants'] = 'Include suspended participants';
 $string['indicator:cognitivedepth'] = 'Assignment cognitive';
 $string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in an assignment activity.';
 $string['indicator:cognitivedepthdef'] = 'Assignment cognitive';
@@ -353,6 +389,7 @@ $string['markingallocation'] = 'Use marking allocation';
 $string['markingallocation_help'] = 'If enabled together with marking workflow, markers can be allocated to particular students.';
 $string['markinganonymous'] = 'Allow partial release of grades while marking anonymously';
 $string['markinganonymous_help'] = 'If enabled together with anonymous submissions and marking workflow, it allows partial release of grades while marking anonymously.';
+$string['markingstate'] = 'Marking state';
 $string['markingworkflow'] = 'Use marking workflow';
 $string['markingworkflow_help'] = 'If enabled, marks will go through a series of workflow stages before being released to students. This allows for multiple rounds of marking and allows marks to be released to all students at the same time.';
 $string['markingworkflowstate'] = 'Marking workflow state';
@@ -370,12 +407,15 @@ $string['markingworkflowstatenotmarked'] = 'Not marked';
 $string['markingworkflowstatereadyforrelease'] = 'Ready for release';
 $string['markingworkflowstatereadyforreview'] = 'Marking completed';
 $string['markingworkflowstatereleased'] = 'Released';
-$string['maxattempts'] = 'Maximum attempts';
+$string['maxattempts'] = 'Allowed attempts';
 $string['maxattempts_help'] = 'The maximum number of submission attempts that can be made by a student. After this number has been reached, the submission can no longer be reopened.';
 $string['maxgrade'] = 'Maximum grade';
 $string['maxperpage'] = 'Maximum assignments per page';
 $string['maxperpage_help'] = 'The maximum number of assignments a grader can show in the assignment grading page. This setting is useful in preventing timeouts for courses with a large number of participants.';
+$string['messageprovider:assign_due_digest'] = 'Assignments due in 7 days notification';
+$string['messageprovider:assign_due_soon'] = 'Assignment due soon notification';
 $string['messageprovider:assign_notification'] = 'Assignment notifications';
+$string['messageprovider:assign_overdue'] = 'Assignment overdue notification';
 $string['modulename'] = 'Assignment';
 $string['modulename_help'] = 'The assignment activity module enables a teacher to communicate tasks, collect work and provide grades and feedback.
 
@@ -410,6 +450,7 @@ $string['noteamgrader'] = 'Not a member of any group, so unable to make submissi
 $string['notgraded'] = 'Not graded';
 $string['notgradedyet'] = 'Not graded yet';
 $string['notifications'] = 'Notifications';
+$string['notifystudents'] = 'Notify students';
 $string['nouseroverrides'] = 'There are currently no user overrides.';
 $string['nousers'] = 'No users';
 $string['nousersselected'] = 'No users selected';
@@ -479,8 +520,8 @@ $string['quickgradingchangessaved'] = 'The grade changes were saved';
 $string['quickgradingresult'] = 'Quick grading';
 $string['recordid'] = 'Identifier';
 $string['relativedatessubmissiontimeleft'] = 'Calculated for each student';
-$string['removeallgroupoverrides'] = 'Delete all group overrides';
-$string['removealluseroverrides'] = 'Delete all user overrides';
+$string['removeallgroupoverrides'] = 'All group overrides';
+$string['removealluseroverrides'] = 'All user overrides';
 $string['removesubmission'] = 'Remove submission';
 $string['removesubmissionconfirm'] = 'Are you sure you want to remove your submission?';
 $string['removesubmissionconfirmforstudent'] = 'Are you sure you want to remove the submission for {$a}?';
@@ -517,6 +558,9 @@ $string['selectlink'] = 'Select...';
 $string['selectuser'] = 'Select {$a}';
 $string['sendlatenotifications'] = 'Notify graders about late submissions';
 $string['sendlatenotifications_help'] = 'If enabled, graders (usually teachers) receive a message whenever a student submits an assignment late. Message methods are configurable.';
+$string['sendnotificationduedatesoon'] = 'Notify user of an approaching assignment due date';
+$string['sendnotificationduedigest'] = 'Notify user of assignments due in 7 days';
+$string['sendnotificationoverdue'] = 'Notify user of an assignment that is overdue';
 $string['sendnotifications'] = 'Notify graders about submissions';
 $string['sendnotifications_help'] = 'If enabled, graders (usually teachers) receive a message whenever a student submits an assignment, early, on time and late. Message methods are configurable.';
 $string['sendstudentnotifications'] = 'Notify student';
@@ -534,6 +578,7 @@ $string['showrecentsubmissions'] = 'Show recent submissions';
 $string['status'] = 'Status';
 $string['studentnotificationworkflowstateerror'] = 'Marking workflow state must be \'Released\' to notify students.';
 $string['submission'] = 'Submission';
+$string['submissionactions'] = 'Submission actions';
 $string['submissionattachments'] = 'Only show files during submission';
 $string['submissionattachments_help'] = 'Tick the box to only show files on the submission page. Otherwise, files will be shown on both the assignment and submission pages.';
 $string['submissioncopiedhtml'] = '<p>You have made a copy of your previous
@@ -619,9 +664,9 @@ $string['subplugintype_assignfeedback'] = 'Feedback plugin';
 $string['subplugintype_assignfeedback_plural'] = 'Feedback plugins';
 $string['subplugintype_assignsubmission'] = 'Submission plugin';
 $string['subplugintype_assignsubmission_plural'] = 'Submission plugins';
-$string['teamname'] = 'Team: {$a}';
+$string['teamname'] = 'Group: {$a}';
 $string['teamsubmission'] = 'Students submit in groups';
-$string['teamsubmission_help'] = 'If enabled, students will be divided into groups based on the default set of groups or a custom grouping. A group submission will be shared among group members and all members of the group will see each others\' changes to the submission.';
+$string['teamsubmission_help'] = 'If enabled, students will be divided into groups based on the default set of groups or a custom grouping. A group submission will be shared among group members and all members of the group will see each others\' changes to the submission. Note: You cannot change this setting if there are submissions already.';
 $string['teamsubmissiongroupingid'] = 'Grouping for student groups';
 $string['teamsubmissiongroupingid_help'] = 'This is the grouping that the assignment will use to find groups for student groups. If not set, the default set of groups will be used.';
 $string['textinstructions'] = 'Assignment instructions';
@@ -663,6 +708,7 @@ $string['viewfeedbackforuser'] = 'View feedback for user: {$a}';
 $string['viewfull'] = 'View full';
 $string['viewfullgradingpage'] = 'Open the full grading page to provide feedback';
 $string['viewgradebook'] = 'View gradebook';
+$string['viewgrader'] = 'View Grader';
 $string['viewgrading'] = 'View all submissions';
 $string['viewgradingformforstudent'] = 'View grading page for student: (id={$a->id}, fullname={$a->fullname}).';
 $string['viewownsubmissionform'] = 'View own submit assignment page.';

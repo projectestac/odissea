@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'ja', version '4.4'.
+ * Strings for component 'error', language 'ja', version '4.5'.
  *
  * @package     error
  * @category    string
@@ -36,6 +36,7 @@ $string['alreadyloggedin'] = 'あなたはすでに {$a} としてログイン�
 $string['authnotexisting'] = '認証プラグインがありません。';
 $string['backupcontainexternal'] = 'このバックアップファイルにはローカルに設定されていない外部Moodleネットワークホストが含まれます。';
 $string['backuptablefail'] = 'バックアップテーブルを正常に設定できませんでした!';
+$string['blockcannotadd'] = 'ブロックを追加できません。';
 $string['blockcannotconfig'] = 'このブロックはグローバル設定をサポートしません。';
 $string['blockcannotinistantiate'] = 'ブロックオブジェクトのインスタンス化に問題が発生しました。';
 $string['blockcannotread'] = 'blockid= {$a} のデータを読み込めませんでした。';
@@ -101,7 +102,7 @@ $string['cannotfindinfo'] = '次の情報が見つかりません: 「 {$a} 」'
 $string['cannotfindlang'] = '「 {$a} 」言語パックが見つかりません!';
 $string['cannotfindteacher'] = '教師が見つかりません。';
 $string['cannotfinduser'] = 'ユーザ名「 {$a} 」のユーザが見つかりません。';
-$string['cannotgeoplugin'] = 'https://www.geoplugin.comのgeoPluginサーバに接続できません。あなたのプロキシ設定を確認するか、MaxMind GeoLite Cityデータファイルをインストールしてください。';
+$string['cannotgeoplugin'] = 'https://www.geoplugin.comのgeoPluginサーバに接続できません。あなたのプロキシ設定を確認するか、MaxMind GeoIP Cityデータファイルをインストールしてください。';
 $string['cannotgetblock'] = 'データベースからブロックを検索できませんでした。';
 $string['cannotgetcats'] = 'カテゴリレコードを取得できません。';
 $string['cannotgetdata'] = 'データを取得できません。';
@@ -158,7 +159,6 @@ $string['cannotsetupcapformod'] = '{$a} のケイパビリティを設定でき�
 $string['cannotsetupcapforplugin'] = '{$a} のケイパビリティを設定できませんでした。';
 $string['cannotshowhidecoursesincategory'] = 'カテゴリ {$a} 内のコースは表示/非表示にできません。';
 $string['cannotsignup'] = 'すでに {$a} としてログインしているため、あなたは新しいアカウントを作成できません。';
-$string['cannotswitcheditmodeon'] = '編集モードを有効にできませんでした。';
 $string['cannotunassigncap'] = '非推奨ケイパビリティ {$a->cap} をロール {$a->role} から割り当て解除できませんでした。';
 $string['cannotunassignrolefrom'] = 'このユーザをロールID {$a} から割り当て解除できませんでした。';
 $string['cannotunzipfile'] = 'ZIPファイルを展開できません。';
@@ -286,6 +286,8 @@ $string['filternotenabled'] = 'フィルタが有効にされていません!';
 $string['filternotinstalled'] = '現在、フィルタ {$a} はインストールされていません。';
 $string['forumblockingtoomanyposts'] = 'あなたはこのフォーラムに設定されている投稿閾値を超えました。';
 $string['functionalityremoved'] = 'あなたは削除された機能へのアクセスを試みています。';
+$string['gdfeaturenotsupported'] = 'GD拡張モジュールは {$a} 用のメソッドでコンパイルされていません。';
+$string['gdmimetypenotsupported'] = 'MIMEタイプはサポートされていません。';
 $string['generalexceptionmessage'] = '例外 - {$a}';
 $string['gradecantregrade'] = '評定計算中にエラーが発生しました: {$a}';
 $string['gradepubdisable'] = '評定の公開が無効にされています。';
@@ -293,8 +295,8 @@ $string['gradesneedregrading'] = 'コース評定を再計算する必要があ�
 $string['groupalready'] = 'ユーザはすでにグループ「 {$a} 」に属しています';
 $string['groupexistforcourse'] = 'グループ「 {$a} 」はすでにこのコースに存在します。';
 $string['groupexistforcoursewithidnumber'] = '{$a->problemgroup}: IDナンバ「 {$a->idnumber} 」のグループ「 {$a->name} 」はすでにこのコースに存在します。';
-$string['grouphasidnumber'] = 'グループ「 {$a} 」のIDナンバは外部システムによって自動的に作成されたようです。あなたにはこのグループを削除するためのパーミッションがありません。';
-$string['groupinghasidnumber'] = 'グルーピング「 {$a} 」にはIDナンバが設定され、外部システムによって自動的に作成されたようです。あなたにはこのグルーピングを削除するためのパーミッションがありません。';
+$string['grouphasidnumber'] = 'グループ「 {$a} 」のIDナンバは外部システムにより自動的に作成されたようです。あなたにはこのグループを削除するためのパーミッションがありません。';
+$string['groupinghasidnumber'] = 'グルーピング「 {$a} 」にはIDナンバが設定され、外部システムにより自動的に作成されたようです。あなたにはこのグルーピングを削除するためのパーミッションがありません。';
 $string['groupingnotaddederror'] = 'グルーピング「 {$a} 」は追加されませんでした。';
 $string['groupnotaddederror'] = 'グループ「 {$a} 」は追加されませんでした。';
 $string['groupnotaddedtogroupingerror'] = 'グループ「 {$a->groupname} 」はグルーピング「 {$a->groupingname} 」に追加されませんでした。';
@@ -351,6 +353,7 @@ $string['invalidelementid'] = '正しくないエレメントIDです。';
 $string['invalidentry'] = '有効なエントリではありません!';
 $string['invalidevent'] = '無効なイベントです。';
 $string['invalidfieldname'] = '「 {$a} 」 は有効なフィールド名ではありません。';
+$string['invalidfile'] = 'ファイルが見つかりませんでした。';
 $string['invalidfiletype'] = '「 {$a} 」は有効なファイルタイプではありません。';
 $string['invalidformatpara'] = '選択パラメータのフォーマットが正しくありません。';
 $string['invalidformdata'] = 'フォームデータが正しくありません。';
@@ -398,6 +401,7 @@ $string['invalidxmlfile'] = '「 {$a} 」は有効なXMLファイルではあり
 $string['iplookupfailed'] = 'このIPアドレス {$a} に関するgeo情報を探せません。';
 $string['iplookupprivate'] = 'プライベートIPアドレスのルックアップを表示できません。';
 $string['ipmismatch'] = 'クライアントIPアドレスが一致しません。';
+$string['itemnotfound'] = '識別子「 {$a->identifier} 」の {$a->itemtype} が見つかりませんでした。';
 $string['listcantmovedown'] = '最後のピアのため、アイテムの下への移動に失敗しました。';
 $string['listcantmoveleft'] = '親がないため、アイテムの左への移動に失敗しました。';
 $string['listcantmoveright'] = '子にするピアがないため、アイテムの右への移動に失敗しました。あなたはアイテムを別のピアの下に移動した上で右に移動できます。';
@@ -407,8 +411,8 @@ $string['listnoitem'] = 'アイテムが見つかりませんでした。';
 $string['listnopeers'] = 'ピアアイテムが見つかりませんでした。';
 $string['listupdatefail'] = 'リスト階層の編集中にデータベース処理にエラーが発生しました。';
 $string['logfilenotavailable'] = 'ログは利用できません。';
-$string['loginasnoenrol'] = 'コースに「... としてログイン」している場合、あなたはユーザ登録および登録解除できません。';
-$string['loginasonecourse'] = 'あなたはこのコースに入れません。<br />他のコースに入る前に現在の「... としてログイン」セッションを終了する必要があります。';
+$string['loginasnoenrol'] = '「... としてログイン」している場合、あなたはユーザ登録および登録解除できません。';
+$string['loginasonecourse'] = 'あなたはこのコースに入れません。他のコースに入る前に現在の「... としてログイン」セッションを終了する必要があります。';
 $string['maxareabytes'] = 'ファイルがこのエリアの空き容量を超えています。';
 $string['maxbytesfile'] = 'ファイル {$a->file} が大きすぎます。あなたがアップロードできる最大サイズは {$a->size} です。';
 $string['maxdraftitemids'] = '大量のファイルをアップロードしたため、あなたのファイルアップロードは一時的に制限されています。後ほど再度お試しください。';
@@ -490,6 +494,7 @@ $string['nostartdatenoenddate'] = 'コース開始日も設定されている場
 $string['nostatstodisplay'] = '申し訳ございません、表示できるデータがありません。';
 $string['notallowedtoupdateprefremotely'] = 'あなたはこのユーザのプレファレンスをリモートで更新できません。';
 $string['notavailable'] = '現在利用できません';
+$string['notfound'] = '見つかりませんでした。';
 $string['notlocalisederrormessage'] = '{$a}';
 $string['notmemberofgroup'] = 'あなたはこのコースグループのメンバではありません。';
 $string['notownerofkey'] = 'あなたはこのキーのオーナではありません。';
@@ -541,6 +546,7 @@ $string['reverseproxyabused'] = 'リバースプロキシが有効にされて�
 $string['rpcerror'] = 'あなたのMNET通信に失敗しました! 以下、あなたの管理者に報告するためのエラーメッセージです: {$a}';
 $string['scheduledbackupsdisabled'] = 'スケジュールバックアップはサーバ管理者により無効にされています。';
 $string['secretalreadyused'] = 'パスワード変更確認リンクはすでに使用されています。パスワードは変更されませんでした。';
+$string['sectioncantbefound'] = '<p><strong>このコンテンツは見つかりません。</strong></p><p>削除されたか、URLが正しくない可能性があります。</p>';
 $string['sectionnotexist'] = 'このセクションは存在しません。';
 $string['sendmessage'] = 'メッセージを送信する';
 $string['sendmessagesent'] = 'フィードバックありがとうございます:<br />{$a}';
@@ -558,6 +564,7 @@ $string['sessionhandlerproblem'] = 'セッションハンドラの設定が正�
 $string['sessionipnomatch'] = '申し訳ございません、あなたのIPアドレスは初回ログインから変更されているようです。このセキュリティ機能はあなたがサイトにログインしている間、クラッカーから個人情報を盗むことを防いでいます。通常のユーザはこのメッセージを見ることはありません - 詳細はシステム管理者にお問合せください。';
 $string['sessionipnomatch2'] = '<p>申し訳ございません、あなたのIPアドレスは最初のログインから変更されているようです。このセキュリティ機能はあなたがサイトにログインしている間、クラッカーから個人情報を盗むことを防いでいます。あなたがワイヤレスネットワークまたは異なるネットワーク間のローミングを利用している場合、このエラーが表示されます。詳細はサイト管理者にお問合せください。<p>
 <p>あなたが続けたい場合、F5キーを押してこのページをリフレッシュしてください。</p>';
+$string['sessionstarterror'] = 'セッションを開始できませんでした。後ほど再度お試しください。';
 $string['sessionwaiterr'] = 'セッションロックを待っている間にタイムアウトしました。<br />あなたの現在のリクエスト終了を待って、後ほど再度お試しください。';
 $string['shortnametaken'] = '省略名がすでに別のコース ({$a}) で使用されています。';
 $string['sitepolicynotagreed'] = 'サイトポリシーに同意されていません: <a href="{$a}">サイトポリシーを開くにはここをクリックしてください。</a>';

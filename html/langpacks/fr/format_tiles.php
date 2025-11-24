@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_tiles', language 'fr', version '4.4'.
+ * Strings for component 'format_tiles', language 'fr', version '4.5'.
  *
  * @package     format_tiles
  * @category    string
@@ -38,16 +38,17 @@ $string['alternativelink'] = 'Lien alternatif';
 $string['areyousure'] = 'Voulez-vous vraiment effectuer cette opération ?';
 $string['asfraction'] = 'Afficher comme fraction';
 $string['aspectratiotootallorwide'] = 'L’image importée a été enregistrée, mais veuillez vérifier, car elle peut être <strong> {$a->tallorwide} </strong>. Si cela ne semble pas correct, veuillez la recadrer aux dimensions standard du paysage et la déposer à nouveau. Par exemple 300 de large x 200 de haut conviendraient.';
-$string['aspercentagedial'] = 'Afficher en % dans le cercle';
+$string['aspercentagedial'] = 'Afficher en %';
 $string['assumedatastoreconsent'] = 'Consentir au stockage des données dans la mémoire locale du navigateur';
 $string['assumedatastoreconsent_desc'] = 'Si cette option est sélectionnée, l’utilisateur <b>ne verra plus</b> apparaître une boîte de dialogue lui demandant de consentir au stockage des données dans la mémoire locale du navigateur.';
 $string['backupfailed'] = 'La sauvegarde a échoué';
 $string['basecolour'] = 'Couleur des tuiles';
 $string['basecolour_help'] = 'La couleur définie ici sera appliquée à toutes les tuiles du cours. Les couleurs disponibles sont déterminées par l’administrateur de votre site dans les réglages du plugin Tuiles';
 $string['brandcolour'] = 'Couleur du bandeau';
+$string['cachedef_formatoptionelementids'] = 'Tableau simple d\'identifiants d\'éléments pour lesquels des options de format ont été définies, par exemple des identifiants de sections de cours avec photos.';
+$string['cachedef_formatoptions'] = 'Tableau de valeurs d\'options de format de cours par identifiant d\'élément. Par exemple, les noms de fichiers de photos par identifiant de section de cours.';
 $string['cachedef_modalcmids'] = 'ID de module de cours (par cours) qui doit être lancé avec un modal';
 $string['cachedef_videocmids'] = 'Identifiant des modules de cours (par cours) qui sont des vidéos (activités URL pointant vers YouTube ou Vimeo)';
-$string['canceltask'] = 'Annuler la tâche';
 $string['changedcolour'] = 'Couleur des tuiles par défaut pour le cours {$a}';
 $string['checkforproblemcourses'] = 'Rechercher et résoudre les problèmes de cours';
 $string['clearphoto'] = 'Réinitialiser cette tuile';
@@ -122,9 +123,6 @@ $string['displaytitle_mod_ppt'] = 'Présentation PowerPoint';
 $string['displaytitle_mod_txt'] = 'Texte';
 $string['displaytitle_mod_xls'] = 'Feuille de calcul';
 $string['displaytitle_mod_zip'] = 'Zip';
-$string['documentation'] = 'Documentation';
-$string['documentationurl'] = 'URL de la documentation';
-$string['documentationurl_descr'] = 'URL de la documentation du format Tuiles.';
 $string['download'] = 'Télécharger';
 $string['editoradvicesubtiles'] = 'Dans cette version du plugin Tuiles, les activités n’apparaîtront en tant que sous-tuiles que si le mode d’édition est désactivé';
 $string['editsection'] = 'Modifier la tuile';
@@ -265,7 +263,7 @@ $string['imagedeletedfrom'] = 'Image supprimée de « {$a} »';
 $string['imagesavedfor'] = 'Image enregistrée pour {$a}';
 $string['imagesize'] = 'Taille de l’image';
 $string['invalidsectionid'] = 'Identifiant de section invalide « {$a} »';
-$string['jsactivate'] = 'Désactiver la navigation animée';
+$string['jsactivate'] = 'Navigation animée';
 $string['jsdeactivated'] = 'Vous avez désactivé la navigation animée. Vous pouvez la réactiver à l’aide du menu de navigation.';
 $string['jsreactivated'] = 'Vous avez activé la navigation animée sur votre compte.';
 $string['legacytiledata'] = 'Nombre de données de tuiles héritées';
@@ -289,7 +287,6 @@ $string['none'] = 'Aucun';
 $string['noproblemsfound'] = 'Aucun problème trouvé';
 $string['notcomplete'] = 'Non achevé';
 $string['notrecommended'] = 'Non recommandé';
-$string['notregistered'] = 'Votre plugin Tuiles n’est pas encore enregistré auprès du développeur du plugin.';
 $string['novaliddefaultcolour'] = 'Aucune couleur valide définie pour la couleur de tuile par défaut ci-dessous';
 $string['numberofsections'] = 'Nombre de sections dans le cours';
 $string['numbers'] = 'Nombres';
@@ -326,6 +323,8 @@ $string['privacypolicy'] = 'Politique de confidentialité';
 $string['problemcourses'] = 'Cours où il y a des problèmes';
 $string['problemcoursesintro'] = 'Les cours suivants ont des numéros de section plus élevés que prévu. Veuillez utiliser les boutons ci-dessous pour résoudre les problèmes.';
 $string['progress'] = 'Progression';
+$string['progressincludesubsections'] = 'Indicateur de progrès - inclure les données de sous-section ?';
+$string['progressincludesubsections_desc'] = 'L\'indicateur de progrès d\'une tuile doit-il inclure des données sur l\'avancement des activités au sein de ses sous-sections ?';
 $string['progresstitle'] = '{$a->numComplete} / {$a->numOutOff} éléments terminés ({$a->percent}%)';
 $string['reactivate'] = 'Réactiver';
 $string['reopenlastsection'] = 'Ré-ouvrir la dernière tuile visitée';
@@ -340,7 +339,6 @@ $string['restorefailed'] = 'La restauration a échoué';
 $string['restoreincorrectsections'] = 'Erreur : impossible de valider car le cours source contient des sections mal numérotées (par exemple, le numéro de section ({$a->sectionnum}) est supérieur au maximum autorisé ({$a->maxallowed}). Essayez d’exclure ou de supprimer les sections avec des nombres élevés.';
 $string['restoretoomanysections'] = 'Erreur : impossible de sauvegarder ou de restaurer car trop de sections de cours sont incluses ({$a->numsections}) et c’est plus que le maximum autorisé ({$a->maxallowed}). Essayez d’exclure ou de supprimer certaines sections.';
 $string['revealcontents'] = 'Révéler le contenu des tuiles';
-$string['scheduleddeleteemptysections'] = 'La tâche de suppression des sections vides du cours a été planifiée. Veuillez réessayer plus tard.';
 $string['section0name'] = 'Général';
 $string['sectionerrorstring'] = 'Votre session a peut-être expiré. Essayez d’actualiser cette page.';
 $string['sectionerrortitle'] = 'Erreur au chargement du contenu';
@@ -379,7 +377,7 @@ $string['tileicon_help'] = 'L’élément sélectionné ici remplacera, pour cet
 $string['tileicons'] = 'Icônes de tuile';
 $string['tileoutcome'] = 'Résultat pour cette tuile';
 $string['tileoutcome_help'] = 'Si vous sélectionnez un résultat pour cette tuile, vous pourrez alors, dans les paramètres du cours, afficher un ensemble de <em>boutons de filtrage</em>, un pour chaque résultat, qui, appuyé, affichera les tuiles en fonction du résultat qui leur a été attribué.';
-$string['tileselecttip'] = 'Dans le cours, en mode édition, cliquez simplement sur l’icône ou la photo que vous souhaitez modifier.  La fenêtre du sélecteur d’icônes s’affiche.';
+$string['tileselecttip'] = 'Dans le cours, en mode édition, cliquez simplement sur l’icône ou la photo que vous souhaitez modifier. La fenêtre du sélecteur d’icônes s’affiche.';
 $string['tilesformatregistration'] = 'Enregistrement du format Tuiles';
 $string['tilesreset'] = 'Les tuiles et les icônes ont été réinitialisées pour ce cours';
 $string['tilestyle'] = 'Style de tuile';
@@ -405,7 +403,5 @@ $string['usejsnavforsinglesection'] = 'Utiliser la navigation JS pour une sectio
 $string['usejsnavforsinglesection_desc'] = 'Si cette case est cochée, tout appel pour une seule section par page (&section=xx) sera traité en utilisant JavaScript, en lançant la page principale du cours, animée pour s’ouvrir à la section demandée via JS, plutôt que d’appeler l’ancienne page de section unique PHP.';
 $string['usesubtilesseczero'] = 'Utiliser les sous-tuiles dans la section du haut';
 $string['usesubtilesseczero_help'] = 'Si cette option est sélectionnée, les sous-tuiles seront utilisées dans la section supérieure, ainsi que dans toutes les tuiles. Uniquement disponible si vous utilisez des sous-tuiles dans l’ensemble du cours. Comme les sous-tuiles occupent beaucoup de place tout en haut du parcours, il peut être préférable de ne pas sélectionner cette option, afin que tous les éléments de la section supérieure soient affichés au format de liste standard à la place.';
-$string['usetooltips'] = 'Utiliser les info-bulles JavaScript';
-$string['usetooltips_desc'] = 'Utiliser les info-bulles JavaScript lorsque l’utilisateur survole certains éléments, par exemple les coches d’achèvement, les tuiles pour le contenu des titres';
 $string['version'] = 'Version {$a}';
 $string['width'] = 'largeur';

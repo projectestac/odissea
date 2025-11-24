@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'ja', version '4.4'.
+ * Strings for component 'lti', language 'ja', version '4.5'.
  *
  * @package     lti
  * @category    string
@@ -304,7 +304,7 @@ $string['module_class_type'] = 'Moodleモジュールタイプ';
 $string['modulename'] = '外部ツール';
 $string['modulename_help'] = '外部ツール活動モジュールにおいて学生は他のウェブサイト上の学習リソースおよび活動と相互連携することができます。例えば外部ツールは新しい活動タイプまたは出版社の学習教材へのアクセスを提供することができます。
 
-外部ツール活動を作成するにはツールプロバイダによるLTI (Learning Tool Interoperability 学習ツール相互運用) のサポートが必要です。教師は外部ツール活動を作成またはサイト管理者によって設定されたツールを利用可能な状態にすることができます。
+外部ツール活動を作成するにはツールプロバイダによるLTI (Learning Tool Interoperability 学習ツール相互運用) のサポートが必要です。教師は外部ツール活動を作成またはサイト管理者により設定されたツールを利用可能な状態にすることができます。
 
 いくつかの点において外部ツール活動はURLリソースと異なります:
 
@@ -399,7 +399,7 @@ $string['privacy:metadata:userid'] = 'LTIコンシューマにアクセスする
 $string['privacy:metadata:useridnumber'] = 'LTIコンシューマにアクセスするユーザのIDナンバです。';
 $string['privacy:metadata:username'] = 'LTIコンシューマにアクセスするユーザのユーザ名です。';
 $string['publickey'] = '公開鍵';
-$string['publickey_help'] = '受信メッセージおよびサービスリクエストの承認に関して署名するためツールによって提供される公開鍵 (PEMフォーマット) です。';
+$string['publickey_help'] = '受信メッセージおよびサービスリクエストの承認に関して署名するためツールにより提供される公開鍵 (PEMフォーマット) です。';
 $string['publickeyset'] = '公開鍵セット';
 $string['publickeyset_help'] = 'このサイトが受信メッセージおよびリクエストサービスの署名を検証するためのツールの公開鍵を検索できる場所からの公開鍵セットです。';
 $string['quickgrade'] = 'クイック評定を有効にする';

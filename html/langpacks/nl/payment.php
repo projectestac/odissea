@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'payment', language 'nl', version '4.4'.
+ * Strings for component 'payment', language 'nl', version '4.5'.
  *
  * @package     payment
  * @category    string
@@ -45,7 +45,7 @@ $string['gatewaydisabled'] = 'Uitgeschakeld';
 $string['gatewayenabled'] = 'Ingeschakeld';
 $string['gatewaynotfound'] = 'Gateway niet gevonden';
 $string['gotomanageplugins'] = 'Schakel betalingsgateways in en uit en stel toeslagen in via {$a}.';
-$string['gotopaymentaccounts'] = 'U kunt meerdere betalingsaccounts maken met behulp van een van deze gateways op de pagina {$a}';
+$string['gotopaymentaccounts'] = 'Je kunt meerdere betalingsaccounts maken met behulp van een van deze gateways op de pagina {$a}';
 $string['hidearchived'] = 'Gearchiveerd verbergen';
 $string['noaccountsavilable'] = 'Er zijn geen betaalrekeningen beschikbaar.';
 $string['nocurrencysupported'] = 'Er wordt geen betaling in welke valuta dan ook ondersteund. Zorg ervoor dat ten minste één betalings-gateway is ingeschakeld.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'h5pactivity', language 'it', version '4.4'.
+ * Strings for component 'h5pactivity', language 'it', version '4.5'.
  *
  * @package     h5pactivity
  * @category    string
@@ -58,7 +58,7 @@ $string['completion'] = 'Completamento';
 $string['contentbank'] = 'Ulteriori informazioni sul deposito dei contenuti';
 $string['contentbank_help'] = 'Il deposito dei contenuti consente di creare e memorizzare contenuti provenienti da diverse strumenti autore ed offre un editor integrato di contenuti H5P.';
 $string['correct_answer'] = 'Risposta corretta';
-$string['deleteallattempts'] = 'Elimina tutti i tentativi H5P';
+$string['deleteallattempts'] = 'Tutti i tentativi H5P';
 $string['displaycopyright'] = 'Pulsante di copyright';
 $string['displayembed'] = 'Pulsante incorpora';
 $string['displayexport'] = 'Consenti scaricamento';

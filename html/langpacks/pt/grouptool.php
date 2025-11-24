@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grouptool', language 'pt', version '4.4'.
+ * Strings for component 'grouptool', language 'pt', version '4.5'.
  *
  * @package     grouptool
  * @category    string
@@ -117,14 +117,14 @@ $string['checkbox_control_header'] = 'Seleção de grupos e agrupamentos';
 $string['checkbox_control_header_help'] = '<p>Ao usar esta função, pode ativar/desativar grupos de um ou mais agrupamentos nesta Ferramenta de Grupos:
 <ol>
 <li>Escolha no campo de seleção múltipla "Todos" (todos os grupos disponíveis serão ativados/desativados), um ou vários agrupamentos (mude para selecionar vários usando o ícone ao lado e depois faça Ctrl + clique).</li>
-<li>Use uma das seguintes opções "Selecione/Desselecione/Inverter":
+<li>Use uma das seguintes opções "Selecionar/Desselecionar/Inverter":
 <ul>
-<li><b>Selecione:</b> Os grupos do(s) agrupamento(s) escolhido(s) serão ativados.</li>
-<li><b>Desselecione:</b> Os grupos do(s) agrupamento(s) escolhido(s) serão desativados.</li>
+<li><b>Selecionar:</b> Os grupos do(s) agrupamento(s) escolhido(s) serão ativados.</li>
+<li><b>Desselecionar:</b> Os grupos do(s) agrupamento(s) escolhido(s) serão desativados.</li>
 <li><b>Inverter:</b> Todos os grupos dos agrupamentos não selecionados serão ativados.</li>
 </ul>
 </li>
-<li>Faça a sua escolha e clique no botão "Executar".</li>
+<li>Faça a sua escolha clicando no botão "Executar".</li>
 </ol>
 </p>';
 $string['choose'] = 'Escolha...';
@@ -145,7 +145,7 @@ $string['confirm_delete'] = 'Está prestes a apagar completamente o grupo. Isto 
 $string['confirm_delete_title'] = 'Pretende realmente apagar este elemento?';
 $string['copied_grade_feedback'] = 'Classificação do grupo<br />
 + Submissão por: <strong>{$a->student}</strong><br />
-+ Classificação por: <strong>{$a->teacher}</strong><br />
++ Avaliação por: <strong>{$a->teacher}</strong><br />
 + Data/hora original: <strong>{$a->date}</strong><br />
 + Feedback: <strong>{$a->feedback}</strong>';
 $string['copy'] = 'Copiar';
@@ -170,7 +170,7 @@ $string['create_1_person_groups_help'] = 'Criar grupos de 1 pessoa - é criado u
 <li>[lastname] - o apelido do utilizador</li>
 <li>[idnumber] - o número de identificação (ID) do utilizador</li>
 </ul>
-Se algum faltar algum dado, o marcador será substituído por nomedomarcadorXX, onde XX representa o número do grupo.';
+Se faltar algum dado, o marcador será substituído por nomedomarcadorXX, onde XX representa o número do grupo.';
 $string['create_assign_groupings'] = 'Criar/Atribuir agrupamentos';
 $string['create_fromto_groups'] = 'Criar grupos com números de um intervalo (exemplo, de 34 a 89),&nbsp;<strong>sem atribuição automática</strong>&nbsp;dos membros do grupo';
 $string['create_fromto_groups_help'] = 'Criar grupos com números de um intervalo (por exemplo, de 34 a 89) - use este modo para criar grupos em falta (ou seja, Grupo 4, Grupo 5, Grupo 6). Indique os limites e o número de dígitos que pretende usar, pelo menos para os nomes (exemplo, 1, 01, 001, 0001 ...). É possível definir um determinado tamanho do grupo com "M membros por grupo". Não haverá <strong>atribuição automática</strong> dos membros do grupo.';
@@ -184,7 +184,7 @@ $string['createinsertgrouping'] = 'Adicionar ao agrupamento';
 $string['deactivated_group'] = 'Grupo desativado';
 $string['deactivated_groups'] = 'Grupos desativados!';
 $string['define_amount_groups'] = 'Definir o número de N grupos';
-$string['define_amount_groups_help'] = 'Criar N grupos - escolha os utilizadores do papel para a criação dos grupo e indique o número pretendido de grupos no campo \'Número de N grupos\'. No esquema de nomes, pode inserir um esquema de nomes para os grupos usando:
+$string['define_amount_groups_help'] = 'Criar N grupos - escolha os utilizadores do papel pretendido para a criação dos grupo e indique o número pretendido de grupos no campo \'Número de N grupos\'. No esquema de nomes, pode inserir um esquema de nomes para os grupos usando:
 <ul>
 <li> # (será substituído pelo número do grupo) e </li>
 <li> @ (será substituído por uma letra que representa o número do grupo) </li>
@@ -283,9 +283,10 @@ $string['groupings_created_and_groups_added'] = 'Agrupamento(s) criado(s) e/ou g
 $string['groupingscreation'] = 'Criar e atribuir agrupamentos';
 $string['groupingselect'] = 'Agrupamentos para os grupos selecionados';
 $string['groupingselect_help'] = 'Criar agrupamentos para os grupos selecionados:<ul>
-<li>Criar UM agrupamento para todos os grupos selecionados. O nome do agrupamento pode ser escolhido livremente</li>
-<li>Criar um agrupamento para CADA grupo selecionado. O agrupamento é nomeado após o respetivo grupo</li>
-<li>Adicionar os grupos selecionados a um agrupamento existente</li></ul>';
+<li>Criar UM agrupamento para todos os grupos selecionados. O nome do agrupamento pode ser escolhido livremente.</li>
+<li>Criar um agrupamento para CADA grupo selecionado. O agrupamento é nomeado após o respetivo grupo.</li>
+<li>Adicionar os grupos selecionados a um agrupamento existente.</li></ul>';
+$string['groupnamelength'] = 'O nome do grupo é muito longo!';
 $string['groupoverview'] = 'Visão global do grupo';
 $string['groups_created'] = 'Grupos criados com sucesso!';
 $string['groups_queues_limit'] = 'Número de lugares da fila por grupo';
@@ -369,6 +370,7 @@ $string['landscape'] = 'Paisagem';
 $string['late'] = '{$a} atrasado';
 $string['limit'] = 'limite';
 $string['loading'] = 'a carregar...';
+$string['manage_members'] = 'Gerir membros';
 $string['max_queues_reached'] = 'Atingido o máximo da fila!';
 $string['max_regs_reached'] = 'Atingido o máximo de registos!';
 $string['maxmembers'] = 'Tamanho do Grupo global';
@@ -380,6 +382,8 @@ $string['modulenameplural'] = 'Ferramentas de Grupos';
 $string['moodlesync'] = 'Comportamento nas alterações do Moodle';
 $string['moodlesync_help'] = 'Comportamento das Ferramentas de Grupos se os membros do grupo Moodle forem adicionados/apagados ou os grupos únicos forem apagados';
 $string['moreregsthanpossible'] = 'Os número de registos necessários para conclusão não podem ser superiores ao máximo de registos permitidos';
+$string['move'] = 'Mover';
+$string['move_help'] = '[Texto da string de idioma em falta]';
 $string['move_user'] = 'Mover da fila para o grupo';
 $string['movedown'] = 'Mover para baixo';
 $string['moveup'] = 'Mover para cima';
@@ -400,10 +404,11 @@ $string['name_scheme_tags'] = '<span class="tag firstname">[firstname]</span>
 $string['nameschemenotunique'] = 'O nomes dos grupos deste esquema de nomes não são exclusivos  (<strong>{$a}</strong>). Por favor, escolha outro ou use # (índice numérico) ou @ (índice alfabético) para criar nomes de grupos exclusivos.';
 $string['namingscheme'] = 'Esquema de nomes';
 $string['namingscheme_help'] = '<p>O esquema de nomes define como os grupos serão automaticamente nomeados  quando adicionar novos grupos.</p>
-<p>Por favor, tem em atenção que:<br />
+<p>Tenha em atenção que:<br />
 <ol><li>O nome de um grupo tem de ser único dentro da disciplina.</li>
-<li>Se pretender criar mais do que um grupo de uma só vez, deve usar palavras-chave para criar nomes exclusivos. </li></ol></p>
-<p>Cada uma destas palavras-chave será substituída nos nomes finais do grupo. As palavras-chave nos [ ] estão relacionadas com os dados dos utilizadores e os símbolos # e @ serão substituídos pelo número de série dos grupos. Se o JavaScript estiver ativo, basta clicar nas palavras-chave para anexá-las ao esquema de nomes. Tenha em atenção que os nomes dos grupos têm de ser únicos em cada disciplina e, portanto, pode ter que alterar o esquema de nomes até que esteja livre de conflitos.</p>';
+<li>Se pretende criar mais do que um grupo de uma só vez, deve usar palavras-chave para criar nomes exclusivos.</li></ol></p>
+<p>Cada uma destas palavras-chave será substituída nos nomes finais do grupo. As palavras-chave nos [ ] estão relacionadas com os dados dos utilizadores e os símbolos # e @ serão substituídos pelo número de série dos grupos. Se o JavaScript estiver ativo, basta clicar nas palavras-chave para anexá-las ao esquema de nomes. Tenha em atenção que os nomes dos grupos têm de ser únicos em cada disciplina e, portanto, pode ter que alterar o esquema de nomes até que não existam conflitos.</p>';
+$string['no_active_groups'] = 'Nenhum grupo ativo';
 $string['no_conflictfree_to_display'] = 'Não existem grupos sem conflitos para mostrar. Em vez disso, tentámos mostrar todos!';
 $string['no_data_to_display'] = 'Não existem dados do(s) grupo(s) para mostrar!';
 $string['no_grades_present'] = 'Sem notas para mostrar';
@@ -421,6 +426,7 @@ $string['nogroups'] = 'Não existem grupos nesta disciplina.';
 $string['nogroupsactive'] = 'Nenhum grupo ativo nesta Ferramenta de Grupos.';
 $string['nogroupschoose'] = 'Escolher grupos';
 $string['nogroupscreate'] = 'Criar grupos';
+$string['nogroupsgrouping'] = 'Nenhum grupo neste agrupamento.';
 $string['nogroupsinactive'] = 'Nenhum grupo inativo nesta Ferramenta de Grupos.';
 $string['nogrouptools'] = 'Não existem Ferramentas de Grupos!';
 $string['nonconflicting'] = 'Sem conflitos';
@@ -454,6 +460,7 @@ $string['overview_tab'] = 'Vista de grupo';
 $string['overview_tab_alt'] = 'Vista de grupo aberto';
 $string['overwrite_label'] = 'Substituir as notas existentes';
 $string['place_allocated_in_group_success'] = 'O grupo <strong>{$a->groupname}</strong> foi marcado com sucesso para registo';
+$string['places'] = 'Lugares';
 $string['pluginadministration'] = 'Administração da Ferramenta de Grupos';
 $string['pluginname'] = 'Ferramenta de Grupos';
 $string['portrait'] = 'Retrato';
@@ -474,6 +481,7 @@ $string['queue'] = 'Colocar em fila';
 $string['queue_and_multiple_reg_title'] = 'Filas e registos duplicados';
 $string['queue_in_group'] = 'Continuar com a colocação de <strong>{$a->username}</strong> em fila de espera do grupo <strong>{$a->groupname}</strong>!';
 $string['queue_in_group_success'] = 'A colocação de <strong>{$a->username}</strong> em fila de espera do grupo <strong>{$a->groupname}</strong> foi efetuada com sucesso!';
+$string['queue_places'] = 'Lugares na fila';
 $string['queue_you_in_group'] = 'Continuar com a colocação em fila de espera do grupo <strong>{$a->groupname}</strong>!';
 $string['queue_you_in_group_success'] = 'Foi colocado em fila de espera do grupo <strong>{$a->groupname}</strong> com sucesso!';
 $string['queued'] = 'Em fila';
@@ -504,6 +512,7 @@ $string['register_you_in_group_successmailhtml'] = 'Registou-se com sucesso no g
 $string['registered'] = 'Registados';
 $string['registered_in_group_info'] = '{$a->username} foi registado no grupo <strong>{$a->groupname}</strong>';
 $string['registered_on_rank'] = 'Registado na posição #{$a}';
+$string['registration_details'] = 'Detalhes da inscrição';
 $string['registration_missing'] = '1 registo em falta';
 $string['registration_period_end'] = 'Fim do registo para';
 $string['registration_period_start'] = 'Início do registo para';
@@ -563,6 +572,7 @@ $string['showownafterreg'] = 'Próprios - após o registo';
 $string['size'] = 'Tamanho do grupo';
 $string['size_grp'] = 'Configurações do tamanho do grupo';
 $string['size_grp_help'] = 'Se a opção tamanho do grupo estiver ativa, o máximo de membros em cada grupo ficará limitado (definido para toda a instância via campo de texto). Se adicionalmente o "tamanho individual" for ativado, o tamanho de cada grupo pode ser definido na lista abaixo.';
+$string['size_help'] = 'Mostra o tamanho atual do grupo e se o tamanho do grupo é tratado individualmente para cada grupo.';
 $string['skip_user_import'] = 'Ignorado na importação';
 $string['skipped'] = 'Ignorado';
 $string['sortlist_no_data'] = 'Não existem grupos!';

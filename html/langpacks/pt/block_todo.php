@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_todo', language 'pt', version '4.4'.
+ * Strings for component 'block_todo', language 'pt', version '4.5'.
  *
  * @package     block_todo
  * @category    string
@@ -30,7 +30,6 @@ $string['hidecompleted'] = 'Mostrar/ocultar itens concluídos';
 $string['overdue'] = 'Data limite ultrapassada';
 $string['pin'] = 'Afixar';
 $string['placeholder'] = 'O que é necessário fazer?';
-$string['placeholdermore'] = 'Digite algo e pressione o botão Adicionar';
 $string['pluginname'] = 'Lista de tarefas';
 $string['privacy:metadata:db:blocktodo'] = 'Armazenamento de itens ToDo dos utilizadores.';
 $string['privacy:metadata:db:blocktodo:done'] = 'Se o item já foi marcado como concluído.';

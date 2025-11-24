@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'pt', version '4.4'.
+ * Strings for component 'moodle', language 'pt', version '4.5'.
  *
  * @package     moodle
  * @category    string
@@ -44,6 +44,7 @@ $string['activityiscurrentlyhidden'] = 'Esta atividade encontra-se oculta';
 $string['activitymodule'] = 'Módulo de atividade';
 $string['activitymodules'] = 'Módulo de atividades';
 $string['activitynotready'] = 'A atividade ainda não está pronta';
+$string['activityorresource'] = 'Atividade ou recurso';
 $string['activityreport'] = 'Relatório de atividade';
 $string['activityreports'] = 'Relatórios de atividade';
 $string['activityselect'] = 'Selecione esta atividade para movê-la';
@@ -57,6 +58,7 @@ $string['addadmin'] = 'Adicionar administrador';
 $string['addblock'] = 'Adicionar bloco';
 $string['addcomment'] = 'Adicionar comentário…';
 $string['addcondition'] = 'Adicionar condição';
+$string['addcontent'] = 'Adicionar conteúdo';
 $string['addcountertousername'] = 'Criar utilizador adicionando número ao nome de utilizador';
 $string['addcreator'] = 'Adicionar criador da disciplina';
 $string['adddots'] = 'Adicionar...';
@@ -293,6 +295,7 @@ $string['chooseuser'] = 'Escolha um utilizador';
 $string['city'] = 'Cidade/Estado';
 $string['cleaningtempdata'] = 'A apagar dados temporários';
 $string['clear'] = 'Apagar';
+$string['clearall'] = 'Limpar tudo';
 $string['clearfilterrow'] = 'Remover linha de filtro';
 $string['clearfilters'] = 'Limpar filtros';
 $string['clearsearch'] = 'Limpar entrada da pesquisa';
@@ -562,15 +565,15 @@ $string['delete'] = 'Apagar';
 $string['deleteablock'] = 'Apagar bloco';
 $string['deleteall'] = 'Apague todos(as)';
 $string['deleteallcannotundo'] = 'Apagar tudo - não pode ser recuperado';
-$string['deleteallcomments'] = 'Apagar todos os comentários';
-$string['deleteallratings'] = 'Apagar todas as avaliações';
+$string['deleteallcomments'] = 'Todos os comentários';
+$string['deleteallratings'] = 'Todas as avaliações';
 $string['deletecategory'] = 'Apagar categoria: {$a}';
 $string['deletecategorycheck'] = 'Tem a certeza absoluta de que pretende apagar completamente a categoria \'<b>{$a}</b>\'?<br />As disciplinas da categoria serão deslocadas para a categoria ascendente, se existir, ou para a categoria Diversos.';
 $string['deletecategorycheck2'] = 'Se apagar esta categoria, deve decidir o que fazer às disciplinas e subcategorias nela contidas.';
 $string['deletecategoryempty'] = 'Esta categoria está vazia.';
 $string['deletecheck'] = 'Apagar {$a}?';
 $string['deletecheckfiles'] = 'Tem a certeza de que pretende apagar estes ficheiros?';
-$string['deletecheckfull'] = 'Tem a certeza absoluta de que pretende apagar completamente o utilizador <b>{$a}</b>, incluindo as inscrições, atividade e outras informações do utilizador?';
+$string['deletecheckfull'] = 'Tem a certeza de que pretende apagar o utilizador {$a}, incluindo dados como detalhes de perfil, inscrições, adesão a grupos e grupos globais e alguns dados de atividade do utilizador?';
 $string['deletechecktype'] = 'Tem a certeza de que pretende apagar \'<strong>{$a->type}</strong>\'?';
 $string['deletechecktypename'] = 'Tem a certeza de que pretende apagar <strong>{$a->type}</strong> - "{$a->name}"?';
 $string['deletecheckwarning'] = 'Está prestes a apagar estes ficheiros';
@@ -690,15 +693,15 @@ $string['emailagain'] = 'E-mail (novamente)';
 $string['emailalreadysent'] = 'Já foi enviado um e-mail de reposição de senha. Por favor, verifique o seu e-mail.';
 $string['emailcharset'] = 'Charset do e-mail';
 $string['emailconfirm'] = 'Confirme a sua conta';
-$string['emailconfirmation'] = 'Caro(a),
+$string['emailconfirmation'] = 'Caro(a) {$a->firstname},
 
-Foi criada uma nova conta com este endereço de e-mail na plataforma de e-learning \'{$a->sitename}\'.
+Foi criada uma nova conta com este endereço de e-mail em \'{$a->sitename}\'.
 
 Para confirmar a sua nova conta, clique em:
 
 {$a->link}
 
-Se o endereço acima não for apresentado como uma hiperligação em que basta clicar, copie o endereço e cole na linha de endereço do seu navegador web.
+Na maioria dos casos, deve aparecer como uma hiperligação azul no qual pode simplesmente clicar. Se não funcionar, copie e cole na linha de endereço no topo da janela do seu navegador web.
 
 Se necessitar de ajuda, contacte o administrador do site,
 {$a->admin}';
@@ -960,13 +963,13 @@ $string['force'] = 'Forçar';
 $string['forcelanguage'] = 'Forçar idioma';
 $string['forceno'] = 'Não forçar';
 $string['forcepasswordchange'] = 'Forçar mudança de senha';
-$string['forcepasswordchange_help'] = 'Se ativar esta opção, o utilizador terá de alterar a sua senha na próxima vez que se autenticar.';
+$string['forcepasswordchange_help'] = 'Se ativar esta opção, o utilizador será solicitado a alterar a sua senha na próxima vez que se autenticar.';
 $string['forcepasswordchangecheckfull'] = 'Tem a certeza de que pretende forçar a mudança de senha para {$a}?';
 $string['forcepasswordchangenot'] = 'Não é possível forçar a mudança de senha para {$a}';
 $string['forcepasswordchangenotice'] = 'Tem de alterar a sua senha para poder continuar.';
 $string['forcepasswordresetfailurenotice'] = 'A sua senha atual já não cumpre a política de senhas definida. Contacte o administrador do Moodle para obter assistência.
    {$a}';
-$string['forcepasswordresetnotice'] = 'A sua senha atual já não cumpre a política de senhas definida. Tem de repor a senha para entrar novamente.
+$string['forcepasswordresetnotice'] = 'A sua senha atual já não cumpre a política de senhas. Tem de repor a senha para entrar novamente.
    {$a}';
 $string['forcetheme'] = 'Forçar tema';
 $string['forgotaccount'] = 'Recuperar senha';
@@ -1013,6 +1016,7 @@ $string['general'] = 'Geral';
 $string['geolocation'] = 'latitude - longitude';
 $string['gettheselogs'] = 'Obter registos';
 $string['go'] = 'Executar';
+$string['gobacktosite'] = 'Voltar';
 $string['gpl'] = 'Copyright (C) desde 1999, Martin Dougiamas (https://moodle.com)
 
 Este programa é software livre: pode redistribuí-lo e/ou modificá-lo sob os termos da Licença Pública Geral GNU, conforme publicada pela Free Software Foundation, tanto a versão 2 da Licença como (a seu critério) qualquer versão mais recente.
@@ -1177,6 +1181,8 @@ $string['indicator:userforumstracking'] = 'O utilizador está subscrito em fóru
 $string['indicator:userforumstracking_help'] = 'Este indicador mostra se o aluno tem ou não o rastreio ativo nos fóruns.';
 $string['info'] = 'Informação';
 $string['inprogress'] = 'A decorrer';
+$string['insertcontentbefore'] = 'Inserir conteúdo antes de \'{$a->activityname}\'';
+$string['insertcontentsection'] = 'Inserir conteúdo na secção \'{$a->sectionname}\'';
 $string['insertresourceoractivitybefore'] = 'Inserir uma atividade ou recurso antes de \'{$a->activityname}\'';
 $string['institution'] = 'Instituição';
 $string['instudentview'] = 'em modo de visão do aluno';
@@ -1293,6 +1299,7 @@ $string['maximumgradex'] = 'Nota máxima: {$a}';
 $string['maximumshort'] = 'Máx';
 $string['maximumupload'] = 'Tamanho máximo dos ficheiros enviados';
 $string['maximumupload_help'] = 'O tamanho máximo dos ficheiros que podem ser carregados para a disciplina. Além disso, pode depois restringir o tamanho máximo dos ficheiros em cada atividade.';
+$string['maxlengthreached'] = 'Foi atingido o limite máximo de {$a} caracteres.';
 $string['maxnumberweeks'] = 'Número máximo de secções';
 $string['maxnumberweeks_desc'] = 'Valor máximo disponível na lista pendente \'Número de Semanas/Tópicos\' nas configurações da disciplina (aplica-se apenas a certos formatos de disciplina).';
 $string['maxnumcoursesincombo'] = 'Procurar <a href="{$a->link}">{$a->numberofcourses} disciplinas</a>.';
@@ -1459,6 +1466,7 @@ $string['moveselectedcategoriesto'] = 'Mover as categorias selecionadas para...'
 $string['moveselectedcoursesto'] = 'Mover as disciplinas selecionadas para...';
 $string['movetoanotherfolder'] = 'Mover para outra pasta';
 $string['moveup'] = 'Mover para cima';
+$string['multipleitemsfound'] = 'Foram encontrados {$a} itens.';
 $string['mustchangepassword'] = 'A nova senha deverá ser diferente da atual';
 $string['mustconfirm'] = 'Precisa confirmar a sua conta';
 $string['mycourses'] = 'Minhas disciplinas';
@@ -1558,6 +1566,7 @@ $string['nofiltersapplied'] = 'Nenhum filtro aplicado';
 $string['nograde'] = 'Nenhuma nota';
 $string['nohelpforactivityorresource'] = 'Não existe atualmente nenhuma ajuda associada a esse recurso ou atividade';
 $string['noimagesyet'] = 'A sua disciplina ainda não tem nenhuma imagem';
+$string['noitemsfound'] = 'Nenhum item encontrado.';
 $string['nologsfound'] = 'Não foram encontrados registos de atividade';
 $string['nomatchingusers'] = 'Não existem utilizadores que correspondam a \'{$a}\'';
 $string['nomorecourses'] = 'Não foram encontradas mais disciplinas';
@@ -1632,6 +1641,7 @@ $string['numyears'] = '{$a} anos';
 $string['ok'] = 'OK';
 $string['oldpassword'] = 'Senha atual';
 $string['olduserdirectory'] = 'Esta é a ANTIGA pasta de utilizadores, que já não é necessário. Pode apagá-lo sem problemas. Os ficheiros nele contidos foram copiados para a NOVA pasta.';
+$string['oneitemfound'] = 'Foi encontrado 1 item.';
 $string['opendrawerblocks'] = 'Abrir painel dos blocos';
 $string['opendrawerindex'] = 'Abrir índice da disciplina';
 $string['opensinnewwindow'] = 'Abre numa nova janela';
@@ -1848,6 +1858,7 @@ $string['remoteappuser'] = 'Utilizador remoto {$a}';
 $string['remove'] = 'Remover';
 $string['removeadmin'] = 'Remover administrador';
 $string['removecreator'] = 'Remover criador da disciplina';
+$string['removed'] = 'Removido {$a}';
 $string['removestudent'] = 'Remover aluno';
 $string['removeteacher'] = 'Remover professor';
 $string['rename'] = 'Renomear';
@@ -1867,13 +1878,19 @@ $string['resendemail'] = 'Reenviar e-mail de confirmação';
 $string['reset'] = 'Limpar';
 $string['resetcomponent'] = 'Componente';
 $string['resetcourse'] = 'Limpar disciplina';
-$string['resetinfo'] = 'Apagar todos os dados dos utilizadores e repor esta disciplina para o seu estado original, mantendo intactas as atividades e as configurações.';
-$string['resetnotimplemented'] = 'Limpeza não implementada';
+$string['resetcourseconfirm'] = 'Limpar disciplina';
+$string['resetcoursewarning'] = 'Tem a certeza de que pretende limpar a disciplina \'{$a}\'?
+<br/><br/>
+Serão apagados os dados selecionados e irá repor a disciplina para o seu estado original. Não é possível anular esta ação.';
+$string['resetinfo'] = 'Esta funcionalidade permite apagar todos os dados dos utilizadores e repor esta disciplina para o seu estado original. As configurações e as atividades serão mantidas inalteradas.';
+$string['resetinfoselect'] = 'Selecione os dados que pretende apagar ou redefinir nas categorias abaixo:';
+$string['resetnotimplemented'] = 'Redefinição não suportada';
+$string['resetnotimplementedinfo'] = 'Estas atividades não podem ser redefinidas:';
 $string['resetrecordexpired'] = 'A hiperligação que usou para repor a senha foi gerada há mais de {$a} minutos e expirou. Por favor, inicie um novo pedido de reposição de senha.';
 $string['resetstartdate'] = 'Reiniciar data de início';
 $string['resetstatus'] = 'Estado';
 $string['resettable'] = 'Repor as preferências da tabela';
-$string['resettask'] = 'Tarefa';
+$string['resettask'] = 'Redefinir';
 $string['resettodefaults'] = 'Reiniciar com valores predefinidos';
 $string['resortcourses'] = 'Ordenar disciplinas';
 $string['resortsubcategoriesby'] = 'Ordenar subcategorias por {$a} ascendente';
@@ -2020,6 +2037,9 @@ $string['senddetails'] = 'Envie os meus dados por e-mail';
 $string['sent'] = 'Enviado';
 $string['separate'] = 'Separar';
 $string['separateandconnected'] = 'Modos de aprendizagem Isolado e Conexo';
+$string['separateandconnected1'] = 'Contribui principalmente para a aprendizagem INDIVIDUAL';
+$string['separateandconnected2'] = 'Aprendizagem Individual e Coletiva por igual';
+$string['separateandconnected3'] = 'Contribui principalmente para a aprendizagem COLETIVA';
 $string['separateandconnectedinfo'] = 'A escala baseada na teoria de aprendizagem isolada e conexa. Esta teoria descreve duas formas diferentes de avaliarmos e aprendermos sobre as coisas que vemos e ouvimos.<ul><li><strong>Aprendentes isolados</strong> são tão objetivos quanto possível, evitando sentimentos e emoções. Numa discussão com outras pessoas, gostam de defender as suas próprias ideias, usando a lógica de encontrar lacunas nas ideias dos adversários.</li><li><strong>Aprendentes conexos</strong> são mais sensíveis a outras pessoas. Criam facilmente empatia e preferem ouvir e questionar, até sentir que se podem ligar e "compreender as coisas do seu ponto de vista". Aprendem através da partilha das experiências que levaram ao conhecimento que encontram noutras pessoas.</li></ul>';
 $string['servererror'] = 'Ocorreu um erro ao comunicar com o servidor';
 $string['serverlocaltime'] = 'Hora local do servidor';
@@ -2175,6 +2195,7 @@ $string['statswrites'] = 'Submissões';
 $string['status'] = 'Estado';
 $string['statuschecks'] = 'Verificar estado';
 $string['statuscritical'] = 'Crítico';
+$string['statusdone'] = 'Feito';
 $string['statuserror'] = 'Erro';
 $string['statusinfo'] = 'Informação';
 $string['statusna'] = 'N/A';
@@ -2190,6 +2211,7 @@ $string['subcategory'] = 'Subcategoria';
 $string['subcategoryof'] = 'Subcategoria de {$a}';
 $string['subject'] = 'Assunto';
 $string['submit'] = 'Submeter';
+$string['subsectionmoveerror'] = 'Notificação de trabalho com data limite dentro de 7 dias';
 $string['success'] = 'Operação realizada com sucesso';
 $string['successduration'] = 'Operação realizada com sucesso ({$a} segundos)';
 $string['summary'] = 'Sumário';

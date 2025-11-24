@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'contentbank', language 'nl', version '4.4'.
+ * Strings for component 'contentbank', language 'nl', version '4.5'.
  *
  * @package     contentbank
  * @category    string
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['author'] = 'Auteur';
 $string['choosecontext'] = 'Kies cursus of categorie...';
 $string['contentbank'] = 'Inhoudsbank';
+$string['contentbankcustomfields'] = 'Inhoudsbank aangepaste velden';
 $string['contentbankpreferences'] = 'Voorkeuren voor de inhoudsbank';
 $string['contentcopied'] = 'Inhoud gekopieerd.';
 $string['contentcreated'] = 'Inhoud gemaakt.';
@@ -50,6 +51,7 @@ $string['deletecontentconfirm'] = 'Weet je zeker dat je inhoud <em>\'{$a->name}\
 $string['deletecontentconfirmlinked'] = 'De inhoud wordt alleen verwijderd uit de inhoudsbank. Alle plaatsen die er momenteel naar linken, worden automatisch bijgewerkt om in plaats daarvan een kopie van de inhoud te gebruiken.';
 $string['displaydetails'] = 'Toon inhoudsbank met bestandsdetails';
 $string['displayicons'] = 'Toon inhoudsbank met icoontjes';
+$string['displayunlisted'] = 'Toon niet-opgelijste inhoud';
 $string['emptynamenotallowed'] = 'Lege naam is niet toegestaan';
 $string['errordeletingcontentfromcategory'] = 'Fout bij het verwijderen van categorie {$a}';
 $string['errornofile'] = 'Er is een compatibel bestand nodig om inhoud te maken.';

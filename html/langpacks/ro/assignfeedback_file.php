@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_file', language 'ro', version '4.4'.
+ * Strings for component 'assignfeedback_file', language 'ro', version '4.5'.
  *
  * @package     assignfeedback_file
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['batchoperationconfirmuploadfiles'] = 'Încărcați unul sau mai multe fișiere de feedback pentru toți utilizatorii selectați?';
+$string['batchoperationuploadfiles'] = 'Încarcă feedback';
 $string['batchuploadfiles'] = 'Încărcați fișiere de feedback pentru mai mulți utilizatori';
 $string['batchuploadfilesforusers'] = 'Trimiteți fișiere de feedback utilizatorului(utilizatorilor) {$a} selectat (selectați).';
 $string['configmaxbytes'] = 'Dimensiune maximă a fișierului';
@@ -53,6 +54,6 @@ $string['privacy:metadata:filepurpose'] = 'Fișiere de feedback de la cursant pe
 $string['privacy:path'] = 'Fișiere de feedback';
 $string['selectedusers'] = 'Utilizatori selectați';
 $string['uploadfiles'] = 'Trimite fișiere de feedback';
-$string['uploadzip'] = 'Încarcă fișiere multiple de feedback într-o arhivă zip';
+$string['uploadzip'] = 'Încarcă fișiere de feedback într-o arhivă zip';
 $string['uploadzipsummary'] = 'Fișiere de feedback importate dintr-o arhivă';
 $string['userswithnewfeedback'] = 'Utilizatori cu feedback actualizat: {$a}';

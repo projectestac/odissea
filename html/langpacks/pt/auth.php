@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'pt', version '4.4'.
+ * Strings for component 'auth', language 'pt', version '4.5'.
  *
  * @package     auth
  * @category    string
@@ -47,7 +47,7 @@ $string['auth_invalidnewemailkey'] = 'Erro: se está a tentar confirmar uma alte
 $string['auth_loginpasswordtoggle'] = 'Alternar visibilidade da senha';
 $string['auth_loginpasswordtoggle_desc'] = 'Adicionar um ícone ao campo de senha na página de autenticação que permite aos utilizadores mostrar ou ocultar a senha inserida.';
 $string['auth_loginrecaptcha'] = 'Ativar reCAPTCHA na autenticação';
-$string['auth_loginrecaptcha_desc'] = 'Adicionar um elemento de formulário de confirmação visual/áudio à página de autenticação. Reduz o risco de tentativas de autenticação fraudulentas. Para mais detalhes, visite <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
+$string['auth_loginrecaptcha_desc'] = 'Adicionar um elemento de confirmação visual/áudio ao formulário da página de autenticação. Reduz o risco de tentativas de autenticação fraudulentas. Para mais detalhes, visite <a href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
 $string['auth_multiplehosts'] = 'Podem ser especificados vários servidores OU endereços (por exemplo, serv1.com;serv2.com;serv3.com OU xxx.xxx.xxx.xxx;yyy.yyy.yyy.yyy)';
 $string['auth_notconfigured'] = 'O método de autenticação {$a} não está configurado.';
 $string['auth_outofnewemailupdateattempts'] = 'Esgotou o número de tentativas disponíveis para atualizar o seu e-mail. O seu pedido de atualização foi cancelado.';
@@ -90,10 +90,10 @@ $string['emailnowexists'] = 'O endereço de e-mail que está a tentar definir no
 $string['emailupdate'] = 'Atualização do endereço de e-mail';
 $string['emailupdatemessage'] = 'Caro(a) {$a->fullname},
 
-Foi pedida uma alteração do e-mail da sua conta de utilizador na plataforma de e-learning {$a->site}.
-Para confirmar esta alteração aceda ao seguinte endereço web:
+Foi pedida uma alteração do e-mail da sua conta de utilizador em {$a->site}. Para confirmar esta alteração, aceda ao seguinte endereço web:
 
 {$a->url}
+A hiperligação de confirmação expirará em <b>10 minutos</b>.
 
 {$a->supportemail}';
 $string['emailupdatesuccess'] = 'O e-mail do utilizador <em>{$a->fullname}</em> foi atualizado com sucesso para <em>{$a->email}</em>.';
@@ -145,7 +145,7 @@ $string['potentialidps'] = 'Autenticar-se usando a sua conta:';
 $string['privacy:metadata:userpref:createpassword'] = 'Indica que deve ser gerada uma senha para o utilizador';
 $string['privacy:metadata:userpref:forcepasswordchange'] = 'Indica se o utilizador tem de alterar a sua senha na sua próxima autenticação';
 $string['privacy:metadata:userpref:loginfailedcount'] = 'O número de vezes que falhou a autenticação do utilizador';
-$string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = 'O número de vezes que falhou a autenticação do utilizador desde a última autenticação com sucesso';
+$string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = 'O número de vezes que falhou a autenticação do utilizador desde a última autenticação com sucesso.';
 $string['privacy:metadata:userpref:loginfailedlast'] = 'A data em que foi registada a última tentativa de autenticação sem sucesso';
 $string['privacy:metadata:userpref:loginlockout'] = 'Se a conta de utilizador está bloqueada devido a tentativas de autenticação falhadas, e a data em que a conta ficou bloqueada';
 $string['privacy:metadata:userpref:loginlockoutignored'] = 'Indica que a conta de um utilizador nunca deverá ser sujeita a bloqueio';
@@ -161,6 +161,10 @@ $string['selfregistration_help'] = 'Se estiver selecionado um módulo de autenti
 $string['settingmigrationmismatch'] = 'Foram detetados valores incompatíveis ao corrigir os nomes de configuração do módulo! O módulo de autenticação \'{$a->plugin}\' tinha a opção \'{$a->setting}\' configurada para \'{$a->legacy}\' com o nome antigo e \'{$a->current} com o nome atual. O último valor foi definido como válido, mas deve verificar e confirmar se é o que pretende.';
 $string['sha1'] = 'tabela hash SHA-1';
 $string['showguestlogin'] = 'Pode optar por ocultar ou mostrar o botão de entrada como visitante na página de autenticação.';
+$string['showloginform'] = 'Mostrar formulário de autenticação manual';
+$string['showloginform_desc'] = 'Se todos os utilizadores do site usarem um método de autenticação, tal como, OAuth2, que não exige a inserção do nome de utilizador e senha, pode ocultar o formulário de autenticação manual. Tenha em atenção que utilizadores com contas manuais não poderão autenticar-se.
+
+Se ocultar o formulário de autenticação manual e não conseguir autenticar-se, pode mostrar o formulário novamente através da linha de comando: php admin/cli/cfg.php --name=showloginform --set=1.';
 $string['stdchangepassword'] = 'Usar a página predefinida para alterar a senha';
 $string['stdchangepassword_expl'] = 'Se o sistema de autenticação externa permitir alteração de senha pelo Moodle, altere a configuração para Sim. Esta definição prevalece sobre a opção \'Endereço para alteração de senha\'.';
 $string['stdchangepassword_explldap'] = 'NOTA: Se o servidor LDAP for remoto é recomendado utilizar o LDAP sobre um túnel encriptado SSL (ldaps://).';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'es', version '4.4'.
+ * Strings for component 'qtype_ddwtos', language 'es', version '4.5'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -29,6 +29,8 @@ $string['addmorechoiceblanks'] = 'Espacios en blanco para {no} más opciones';
 $string['answer'] = 'Respuesta';
 $string['blank'] = 'vacío';
 $string['blanknumber'] = 'Vacío {$a}';
+$string['choicesacceptedtext'] = 'Escriba las respuestas a arrastrar en los huecos. Puede incluir respuestas adicionales para aumentar la dificultad. <br/>
+Formatos de texto aceptados: &lt;sub&gt;, &lt;sup&gt;, &lt;b&gt;, &lt;i&gt;, &lt;em&gt;, &lt;strong&gt;. También se acepta TeX, usando $$ al principio y al final.';
 $string['correctansweris'] = 'La respuesta correcta es: {$a}';
 $string['errorlimitedchoice'] = 'La opción [[{$a}]] se ha usado más de una vez sin haberse configurado como "ilimitada". Por favor, compruebe esta pregunta.';
 $string['infinite'] = 'Ilimitado';

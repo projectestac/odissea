@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'ca', version '4.4'.
+ * Strings for component 'hotpot', language 'ca', version '4.5'.
  *
  * @package     hotpot
  * @category    string
@@ -90,7 +90,7 @@ $string['configmaxeventlength'] = 'Si el HotPot té especificades alhora una dat
 Per duracions més curtes, o si només s\'especifica una data, tan sols s\'afegirà un esdeveniment al calendari. Si no s\'especifica cap data no s\'afegirà cap esdeveniment al calendari.';
 $string['configstoredetails'] = 'Si s\'habilita aquest paràmetre, llavors es desarà a la taula hotpot_details l\'XML amb els detalls dels intents dels qüestionaris HotPot. Això permet que els intents del qüestionari siguin requalificats en un futur per reflectir els canvis en el sistema de puntuació de qüestionaris HotPot. Tanmateix, si habiliteu aquesta opció en un lloc ocupat podeu provocar que la taula hotpot_details creixi molt ràpidament.';
 $string['confirmdeleteattempts'] = 'Voleu de veritat suprimir aquests intents?';
-$string['confirmstop'] = 'Esteu segurs de voler abandonar la navegació per aquesta pàgina?';
+$string['confirmstop'] = 'Confirmeu que voleu abandonar la navegació per aquesta pàgina?';
 $string['correct'] = 'Correcte';
 $string['couldnotinsertsubmissionform'] = 'No es pot inserir el formulari d\'enviament';
 $string['d_index'] = 'Índex de discriminació';

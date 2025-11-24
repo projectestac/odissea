@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'en', version '4.4'.
+ * Strings for component 'plugin', language 'en', version '4.5'.
  *
  * @package     plugin
  * @category    string
@@ -53,6 +53,8 @@ $string['err_response_format_version'] = 'Unexpected version of the response for
 $string['err_response_http_code'] = 'Unable to fetch available updates data - unexpected HTTP response code.';
 $string['filterall'] = 'Show all';
 $string['filtercontribonly'] = 'Show additional plugins only';
+$string['filtermissingonly'] = 'Show missing from disk only';
+$string['filternewpluginsonly'] = 'Show only plugins to be installed';
 $string['filterupdatesonly'] = 'Show updateable only';
 $string['incompatibleversion'] = 'Incompatible Moodle version: {$a}';
 $string['isenabled'] = 'Enabled?';
@@ -110,6 +112,10 @@ $string['status_uptodate'] = 'Installed';
 $string['supportedconversions'] = 'Supported document conversions';
 $string['supportedmoodleversions'] = 'Supported Moodle versions';
 $string['systemname'] = 'Identifier';
+$string['type_aiplacement'] = 'AI placement plugin';
+$string['type_aiplacement_plural'] = 'AI placement plugins';
+$string['type_aiprovider'] = 'AI provider plugin';
+$string['type_aiprovider_plural'] = 'AI provider plugins';
 $string['type_antivirus'] = 'Antivirus plugin';
 $string['type_antivirus_plural'] = 'Antivirus plugins';
 $string['type_auth'] = 'Authentication method';
@@ -192,6 +198,8 @@ $string['type_repository'] = 'Repository';
 $string['type_repository_plural'] = 'Repositories';
 $string['type_search'] = 'Search engine';
 $string['type_search_plural'] = 'Search engines';
+$string['type_smsgateway'] = 'SMS gateway';
+$string['type_smsgateway_plural'] = 'SMS gateways';
 $string['type_theme'] = 'Theme';
 $string['type_theme_plural'] = 'Themes';
 $string['type_tool'] = 'Admin tool';

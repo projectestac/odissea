@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'pt', version '4.4'.
+ * Strings for component 'auth_oauth2', language 'pt', version '4.5'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -29,15 +29,15 @@ $string['accountexists'] = 'Já existe neste site um utilizador com este nome de
 $string['alreadylinked'] = 'Essa conta externa já está vinculada a uma conta neste site';
 $string['auth_oauth2description'] = 'Autenticação baseada nos padrões OAuth 2';
 $string['auth_oauth2settings'] = 'Configurações da autenticação OAuth 2';
-$string['confirmaccountemail'] = 'Caro(a) {$a->fullname},
+$string['confirmaccountemail'] = 'Caro(a) {$a->firstname},
 
-Foi solicitada uma nova conta na plataforma de e-learning \'{$a->sitename}\' usando o seu endereço de e-mail.
+Foi solicitada uma nova conta em \'{$a->sitename}\' usando o seu endereço de e-mail.
 
 Para confirmar a sua nova conta, aceda a este endereço:
 
 {$a->link}
 
-Se o endereço acima não for apresentado como uma hiperligação em que basta clicar, copie o endereço e cole na linha de endereço do seu navegador web.
+Na maioria dos casos, deve aparecer como uma hiperligação azul no qual pode simplesmente clicar. Se não funcionar, copie e cole na linha de endereço no topo da janela do seu navegador web.
 
 Se precisar de ajuda, contacte o administrador do site,
 {$a->admin}
@@ -47,15 +47,15 @@ Contacte imediatamente o administrador do site.';
 $string['confirmaccountemailsubject'] = '{$a}: confirmação da conta';
 $string['confirmationinvalid'] = 'A hiperligação de confirmação é inválida ou expirou. Inicie novamente o processo de autenticação para gerar um novo e-mail de confirmação.';
 $string['confirmationpending'] = 'Esta conta está pendente da confirmação do e-mail.';
-$string['confirmlinkedloginemail'] = 'Caro(a) {$a->fullname},
+$string['confirmlinkedloginemail'] = 'Caro(a) {$a->firstname},
 
-Foi feita uma solicitação para vincular a autenticação via {$a->issuername} com o e-mail {$a->linkedemail} à sua conta na plataforma de e-learning \'{$a->sitename}\'.
+Foi feita uma solicitação para vincular a autenticação via {$a->issuername} com o e-mail {$a->linkedemail} à sua conta em \'{$a->sitename}\'.
 
 Para confirmar este pedido e vincular estas autenticações, aceda a este endereço:
 
 {$a->link}
 
-Se o endereço acima não for apresentado como uma hiperligação em que basta clicar, copie o endereço e cole na linha de endereço do seu navegador web.
+Na maioria dos casos, deve aparecer como uma hiperligação azul no qual pode simplesmente clicar. Se não funcionar, copie e cole na linha de endereço no topo da janela do seu navegador web.
 
 Se precisar de ajuda, contacte o administrador do site,
 {$a->admin}
@@ -82,7 +82,7 @@ Por favor, autentique-se usando a hiperligação na página de autenticação.
 $string['emailpasswordchangeinfosubject'] = '{$a}: Informação para alteração de senha';
 $string['info'] = 'Conta externa';
 $string['issuer'] = 'Serviço OAuth 2';
-$string['issuernologin'] = 'Este provedor não pode ser utilizado para iniciar sessão';
+$string['issuernologin'] = 'Este provedor não pode ser utilizado para iniciar sessão.';
 $string['key'] = 'Chave';
 $string['linkedlogins'] = 'Autenticações vinculadas';
 $string['linkedloginshelp'] = 'Ajuda sobre Autenticações vinculadas';

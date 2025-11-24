@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'fr', version '4.4'.
+ * Strings for component 'tool_monitor', language 'fr', version '4.5'.
  *
  * @package     tool_monitor
  * @category    string
@@ -120,7 +120,7 @@ $string['rulenopermission'] = 'Vous n’avez pas les permissions requises pour v
 $string['rulenopermissions'] = 'Vous n’avez pas les permissions requises pour {$a} une règle.';
 $string['rulescansubscribe'] = 'Règles auxquelles vous pouvez vous abonner';
 $string['selectacourse'] = 'Sélectionnez un cours';
-$string['selectcourse'] = 'Visitez ce rapport dans un cours pour obtenir la liste des modules disponibles';
+$string['selectcourse'] = 'Sélectionner un cours dans le menu déroulant pour obtenir la liste des modules disponibles';
 $string['subareyousure'] = 'Voulez-vous vraiment résilier l’abonnement à la règle « {$a} » ?';
 $string['subcreatesuccess'] = 'Abonnement créé';
 $string['subdeletesuccess'] = 'Abonnement résilié';

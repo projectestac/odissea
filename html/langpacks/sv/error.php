@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'sv', version '4.4'.
+ * Strings for component 'error', language 'sv', version '4.5'.
  *
  * @package     error
  * @category    string
@@ -158,7 +158,6 @@ $string['cannotsetupcapformod'] = 'Kunde inte konfigurera funktionsbehörigheter
 $string['cannotsetupcapforplugin'] = 'Kunde inte konfigurera funktionsbehörigheterna för {$a}';
 $string['cannotshowhidecoursesincategory'] = 'Det går inte att visa/dölja kurser i kategori {$a}.';
 $string['cannotsignup'] = 'Du kan inte skapa ett nytt konto eftersom du redan är inloggad som {$a}.';
-$string['cannotswitcheditmodeon'] = 'Kunde inte aktivera redigeringsläget';
 $string['cannotunassigncap'] = 'Det gick inte att ta bort tilldelningen av en utgången kapacitet {$a->cap} från rollen {$a->role}';
 $string['cannotunassignrolefrom'] = 'Kan inte ta bort rolltilldelningen för denna användare för roll-id: {$a}';
 $string['cannotunzipfile'] = 'Det går inte att packa upp filen';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topcoll', language 'ru', version '4.4'.
+ * Strings for component 'format_topcoll', language 'ru', version '4.5'.
  *
  * @package     format_topcoll
  * @category    string
@@ -218,7 +218,6 @@ $string['markedthissection'] = 'Этот раздел выделен как те
 $string['markthissection'] = 'Выделить этот раздел как текущий';
 $string['medium'] = 'Средний';
 $string['newsectionname'] = 'Новое название раздела {$a}';
-$string['numbersections'] = 'Количество разделов';
 $string['off'] = 'Выкл';
 $string['on'] = 'Вкл';
 $string['one'] = 'Один';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'ca', version '4.4'.
+ * Strings for component 'gradingform_guide', language 'ca', version '4.5'.
  *
  * @package     gradingform_guide
  * @category    string
@@ -27,19 +27,22 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addcomment'] = 'Afegeix un comentari utilitzat freqüentment';
 $string['addcriterion'] = 'Afegeix un criteri';
+$string['additionalcomments'] = 'Comentaris addicionals';
+$string['additionalcommentsforcriterion'] = 'Comentaris addicionals per criteri, {$a}';
 $string['alwaysshowdefinition'] = 'Mostra la definició de la guia als estudiants';
 $string['backtoediting'] = 'Torna a l\'edició';
 $string['clicktocopy'] = 'Fes clic per a copiar aquest text en la retroacció dels criteris';
 $string['clicktoedit'] = 'Fes clic per a editar';
 $string['clicktoeditname'] = 'Fes clic per a editar el nom del criteri';
 $string['comment'] = 'Comentari';
+$string['commentpickerforcriterion'] = 'Selector de comentaris emprats freqüentment per a {$a} comentaris addicionals';
 $string['comments'] = 'Comentaris freqüents';
 $string['commentsdelete'] = 'Suprimeix comentari';
 $string['commentsempty'] = 'Fes clic per a editar el comentari';
 $string['commentsmovedown'] = 'Mou cap avall';
 $string['commentsmoveup'] = 'Mou cap amunt';
 $string['confirmdeletecriterion'] = 'Confirmeu que voleu suprimir aquest element?';
-$string['confirmdeletelevel'] = 'Esteu segurs que voleu suprimir aquest nivell?';
+$string['confirmdeletelevel'] = 'Confirmeu que voleu suprimir aquest nivell?';
 $string['criterion'] = 'Nom del criteri';
 $string['criteriondelete'] = 'Suprimeix criteri';
 $string['criterionempty'] = 'Fes clic per a editar el criteri';
@@ -70,22 +73,32 @@ $string['guideoptions'] = 'Opcions de la guia de qualificació';
 $string['guidestatus'] = 'Estat actual de la guia de qualificació';
 $string['hidemarkerdesc'] = 'Oculta les descripcions de criteri de qui qualifica';
 $string['hidestudentdesc'] = 'Oculta les descripcions de criteri de l\'estudiant';
+$string['informationforcriterion'] = '{$a} informació';
 $string['insertcomment'] = 'Insereix un comentari usat freqüentment';
-$string['maxscore'] = 'Qualificació màxima';
+$string['maxscore'] = 'Puntuació màxima';
 $string['name'] = 'Nom';
 $string['needregrademessage'] = 'La definició de la guia de qualificació es va canviar després que aquest estudiant hagi estat qualificat. L\'estudiant no pot veure aquesta guia de qualificació fins que la reviseu i actualitzeu la qualificació.';
 $string['outof'] = 'Puntuació sobre {$a}';
 $string['pluginname'] = 'Guia de qualificació';
 $string['previewmarkingguide'] = 'Previsualitza la guia de qualificació';
+$string['privacy:metadata:criterionid'] = 'Identificador d\'un criteri per a la qualificació avançada.';
+$string['privacy:metadata:fillingssummary'] = 'Emmagatzema informació sobre la qualificació i retroacció d\'un usuari per a la guia de qualificació.';
+$string['privacy:metadata:instanceid'] = 'Identificador d\'una qualificació emprat en una activitat';
+$string['privacy:metadata:preference:showmarkerdesc'] = 'Si mostra les descripcions del criteri per a qui qualifica';
+$string['privacy:metadata:preference:showstudentdesc'] = 'Si mostra les descripcions del criteri per a l\'estudiant';
+$string['privacy:metadata:score'] = 'Puntuació per a aquesta qualificació del criteri.';
 $string['regrademessage1'] = 'Ara desareu els canvis en una guia de qualificació que ja s\'ha emprat per a qualificar. Indiqueu si les qualificacions existents han de ser revisades. Si ho establiu, la guia de qualificació s\'ocultarà als estudiants fins que els seus elements es tornin a qualificar.';
 $string['regrademessage5'] = 'Ara desareu canvis significatius en una guia de qualificació que ja s\'ha emprat per a qualificar. El valor en el butlletí de qualificacions serà igual, però la guia de qualificació s\'ocultarà al estudiants fins que els seus elements es tornin a qualificar.';
 $string['regradeoption0'] = 'No marqueu per requalificar';
 $string['regradeoption1'] = 'Marqueu per requalificar';
+$string['remark_help'] = 'Introduïu qualsevol comentari addicional sobre aquest criteri.';
 $string['restoredfromdraft'] = 'AVÍS: L\'últim intent de qualificar aquesta persona no s\'ha desat correctament, per tant, s\'ha restaurat l\'esborrany de qualificacions. Si voleu cancel·lar els canvis, utilitzeu el botó \'Cancel·lar\' a continuació.';
 $string['save'] = 'Desa';
 $string['saveguide'] = 'Desa la guia de qualificació i fes-la efectiva';
 $string['saveguidedraft'] = 'Desa com a esborrany';
 $string['score'] = 'puntuació';
+$string['score_help'] = 'Introduïu una puntuació per a  {$a->criterion} entre 0 i {$a->maxscore}.';
+$string['scoreforcriterion'] = '{$a} puntuació';
 $string['showmarkerdesc'] = 'Mostra les descripcions de criteri de qui qualifica';
 $string['showmarkspercriterionstudents'] = 'Mostra les puntuacions per criteri als estudiants';
 $string['showstudentdesc'] = 'Mostra les descripcions de criteri de l\'estudiant';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'zh_cn', version '4.4'.
+ * Strings for component 'course', language 'zh_cn', version '4.5'.
  *
  * @package     course
  * @category    string
@@ -104,6 +104,10 @@ $string['downloadcoursecontent_help'] = '此设置确定具有下载课程内容
 $string['enabledownloadcoursecontent'] = '启用课程内容下载';
 $string['errorendbeforestart'] = '结束日期({$a})在课程开始日期之前。';
 $string['favourite'] = '收藏的课程';
+$string['filterbothactive'] = '第一个({$a->first})最后一个({$a->last})';
+$string['filterbyname'] = '按名称过滤';
+$string['filterfirstactive'] = '第一个 ({$a->first})';
+$string['filterlastactive'] = '最后一个 ({$a->last})';
 $string['gotosection'] = '转到{$a}节';
 $string['gradetopassnotset'] = '本课程没有设置及格成绩，可以在课程的成绩项目中设置(成绩册设置)。';
 $string['hideendedcoursestask'] = '在结束日期隐藏课程';

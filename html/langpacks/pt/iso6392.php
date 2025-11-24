@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'iso6392', language 'pt', version '4.4'.
+ * Strings for component 'iso6392', language 'pt', version '4.5'.
  *
  * @package     iso6392
  * @category    string

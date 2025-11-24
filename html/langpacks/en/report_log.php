@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'en', version '4.4'.
+ * Strings for component 'report_log', language 'en', version '4.5'.
  *
  * @package     report_log
  * @category    string
@@ -37,6 +37,8 @@ $string['eventuserreportviewed'] = 'User log report viewed';
 $string['log:view'] = 'View course logs';
 $string['log:viewtoday'] = 'View today\'s logs';
 $string['logsformat'] = 'Logs format';
+$string['missingcontext'] = 'Deleted {$a->name} (id \'{$a->instanceid}\')';
+$string['missingcourse'] = 'Missing course (id \'{$a->instanceid}\')';
 $string['nocapability'] = 'Can not access user log report';
 $string['nologreaderenabled'] = 'No log reader enabled';
 $string['origin'] = 'Source';

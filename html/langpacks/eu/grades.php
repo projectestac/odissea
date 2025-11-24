@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'eu', version '4.4'.
+ * Strings for component 'grades', language 'eu', version '4.5'.
  *
  * @package     grades
  * @category    string
@@ -523,7 +523,9 @@ $string['missingitemtypeoreid'] = 'Array gakoa (itemtype edo eid) falta da';
 $string['missingscale'] = 'Eskala aukeratu beha da';
 $string['mode'] = 'Modua';
 $string['modgrade'] = 'Kalifikazioa';
-$string['modgrade_help'] = 'Aukeratu jarduera honetan erabiliko den kalifikazio-mota. "Eskala" aukeratuz gero, ondoren zabaltzen den "eskala" menuan bat aukeratu beharko duzu. Zenbakizko kalifikazioa erabiliz gero, jarduera honetarako gehieneko kalifikazioa sar dezakezu.';
+$string['modgrade_help'] = '* Puntuazioa - Zenbakizko balio bat
+* Bat ere ez - Feedbacka soilik
+* Eskala - Zerrenda bateko elementu bat';
 $string['modgradecantchangegradetype'] = 'Ezin duzu mota aldatu, dagoeneko elementu honentzako kalifikazioak daudelako.';
 $string['modgradecantchangegradetypemsg'] = 'Kalifikazio batzuk dagoeneko esleitu dira, eta ondorioz ezin da kalifikazio mota aldatu. Gehieneko kalifikazioa aldatu nahi baduzu, aurretik existitzen diren kalifikazioak berriz eskalatu nahi dituzun aukeratu behar duzu.';
 $string['modgradecantchangegradetyporscalemsg'] = 'Kalifikazio batzuk dagoeneko esleitu dira, eta ondorioz ezin dira mota eta eskala aldatu.';
@@ -728,9 +730,9 @@ $string['recovergradesdefault'] = 'Berreskuratu kalifikazioetako balio lehenetsi
 $string['recovergradesdefault_help'] = 'Modu lehenetsian kalifikazio zaharrak berreskuratu ikasle bat ikastaro batean berriz matrikulatzean.';
 $string['refreshpreview'] = 'Freskatu aurreikuspena';
 $string['regradeanyway'] = 'Berriro kalifikatu hala ere';
-$string['removeallcoursegrades'] = 'Ezabatu kalifikazio guztiak';
+$string['removeallcoursegrades'] = 'Kalifikazio guztiak';
 $string['removeallcoursegrades_help'] = 'Markatuz gero, kalifikazio-liburura eskuz gehitutako kalifikazio-elementu eta kalifikazio guztiak ezabatuko dira, baita baliogabetutako, kanpoan utzitako, ezkutatutako eta blokeatutako kalifikazioen datuekin batera. Soilik jarduerekin lotutako kalifikazio-elementuak mantenduko dira.';
-$string['removeallcourseitems'] = 'Ezabatu elementu eta kategoria guztiak';
+$string['removeallcourseitems'] = 'Elementu eta kategoria guztiak';
 $string['removeallcourseitems_help'] = 'Markatuz gero, kalifikazio-liburura eskuz gehitutako kategoriak eta kalifikazio-elementu guztiak ezabatuko dira, baliogabetutakoak, kanpoan utzitako, ezkutatutako eta blokeatutako kalifikazioak euren kalifikazio eta datuekin batera. Soilik jarduerekin lotutako kalifikazio-elementuak mantenduko dira.';
 $string['report'] = 'Txostena';
 $string['reportdefault'] = 'Lehenetsitako ezarpena ({$a})';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ja', version '4.4'.
+ * Strings for component 'calendar', language 'ja', version '4.5'.
  *
  * @package     calendar
  * @category    string
@@ -59,6 +59,7 @@ $string['courseevents'] = 'コースイベント';
 $string['courses'] = 'コース';
 $string['customexport'] = 'カスタム範囲 ({$a->timestart} - {$a->timeend})';
 $string['daily'] = '毎日';
+$string['datepicker'] = '日付ピッカ';
 $string['day'] = '日';
 $string['dayeventsmany'] = '{$a->num} イベント {$a->day}';
 $string['dayeventsnone'] = 'イベントなし {$a}';
@@ -71,7 +72,7 @@ $string['daywithnoevents'] = 'この日にイベントはありません。';
 $string['default'] = 'デフォルト';
 $string['deleteallevents'] = 'すべてのイベントを削除する';
 $string['deleteevent'] = 'イベントを削除する';
-$string['deleteevents'] = 'イベントを削除する';
+$string['deleteevents'] = 'イベント';
 $string['deleteoneevent'] = 'このイベントを削除する';
 $string['detailedmonthviewfor'] = '詳細月表示:';
 $string['detailedmonthviewtitle'] = '詳細月表示: {$a}';
@@ -188,7 +189,9 @@ $string['mon'] = '月';
 $string['monday'] = '月曜日';
 $string['monthly'] = '毎月';
 $string['monthnext'] = '来月';
+$string['monthnextwithname'] = '翌月: {$a}';
 $string['monthprev'] = '前月';
+$string['monthprevwithname'] = '前月: {$a}';
 $string['monththis'] = '今月';
 $string['more'] = '増やす';
 $string['moreevents'] = 'さらに {$a} 件';
@@ -208,7 +211,7 @@ $string['pref_lookahead_help'] = 'この設定では直近イベントとして�
 $string['pref_maxevents'] = '直近イベントの最大表示件数';
 $string['pref_maxevents_help'] = 'この設定では表示できる直近イベントの最大数を設定します。あなたがここで大きな値を設定した場合、直近イベントの表示により多くの画面スペースが使われることになります。';
 $string['pref_persistflt'] = 'フィルタ設定を記憶する';
-$string['pref_persistflt_help'] = 'この設定を有効にした場合、Moodleはあなたの直近のイベントフィルタ設定を記憶してログインするたびに自動的にその内容をリストアします。';
+$string['pref_persistflt_help'] = 'この設定を有効にした場合、あなたの直近のイベントフィルタ設定は次回ログイン時に保存されます。';
 $string['pref_startwday'] = '週の初め';
 $string['pref_startwday_help'] = 'あなたがここで選択した曜日を週の初めとしてカレンダー週が表示されます。';
 $string['pref_timeformat'] = '時間フォーマット';

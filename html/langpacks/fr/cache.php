@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'fr', version '4.4'.
+ * Strings for component 'cache', language 'fr', version '4.5'.
  *
  * @package     cache
  * @category    string
@@ -34,6 +34,8 @@ $string['addstoresuccess'] = 'Entrepôt ajouté pour {$a}';
 $string['area'] = 'Zone';
 $string['cacheadmin'] = 'Administration du cache';
 $string['cacheconfig'] = 'Configuration';
+$string['cachedef_ai_policy'] = 'Acceptation de la politique IA utilisateur.';
+$string['cachedef_ai_ratelimit'] = 'Limitation du taux d’appel du fournisseur IA';
 $string['cachedef_calculablesinfo'] = 'Infos calculées lors de l’analyse de données';
 $string['cachedef_calendar_categories'] = 'Catégories de calendrier qu’un utilisateur peut consulter';
 $string['cachedef_calendar_subscriptions'] = 'Abonnements de calendrier';
@@ -91,6 +93,7 @@ $string['cachedef_recommendation_favourite_course_content_items'] = 'Recommandat
 $string['cachedef_reportbuilder_allowed_reports'] = 'Rapports autorisés de l’utilisateur selon l’audience';
 $string['cachedef_repositories'] = 'Données d’instances des dépôts';
 $string['cachedef_roledefs'] = 'Définition des rôles';
+$string['cachedef_routes'] = 'Données de route';
 $string['cachedef_string'] = 'Cache des chaînes de caractères traduites';
 $string['cachedef_suspended_userids'] = 'Liste des utilisateurs suspendus, par cours';
 $string['cachedef_tagindexbuilder'] = 'Résultats de recherche pour les éléments taggés';

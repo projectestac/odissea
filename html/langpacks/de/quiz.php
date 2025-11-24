@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'de', version '4.4'.
+ * Strings for component 'quiz', language 'de', version '4.5'.
  *
  * @package     quiz
  * @category    string
@@ -402,6 +402,7 @@ $string['eventslotgradeitemupdated'] = 'Slot Bewertungselement aktualisiert';
 $string['eventslotmarkupdated'] = 'Bewertung des Frageslots aktualisiert';
 $string['eventslotmoved'] = 'Frageslot verschoben';
 $string['eventslotrequirepreviousupdated'] = 'Frageslot-Abhängigkeit aktualisiert';
+$string['eventslotversionupdated'] = 'Slot-Version aktualisiert';
 $string['everynquestions'] = 'Nach {$a} Fragen';
 $string['everyquestion'] = 'Jede Frage';
 $string['everythingon'] = 'Alles einschalten';
@@ -567,6 +568,7 @@ $string['maxmarks_help'] = 'Maximale Punkte, die für jede Frage verfügbar sind
 $string['messageprovider:attempt_grading_complete'] = 'Mitteilung, dass Ihr Testversuch bewertet wurde';
 $string['messageprovider:attempt_overdue'] = 'Systemnachricht zur Fälligkeit von Testabgaben';
 $string['messageprovider:confirmation'] = 'Systemnachricht bei eigener Testabgabe';
+$string['messageprovider:quiz_open_soon'] = 'Der Test beginnt bald';
 $string['messageprovider:submission'] = 'Systemnachricht bei Testabgaben von Teilnehmer/innen';
 $string['min'] = 'Min';
 $string['minutes'] = 'Minuten';
@@ -637,7 +639,7 @@ $string['noquestionsonpage'] = 'Leere Seite';
 $string['noresponse'] = 'Keine Antwort';
 $string['noreview'] = 'Sie dürfen diesen Test nicht überprüfen.';
 $string['noreviewattempt'] = 'Sie dürfen diesen Versuch nicht  erneut prüfen.';
-$string['noreviewshort'] = 'Bewertung nicht erlaubt';
+$string['noreviewshort'] = 'Überprüfung nicht erlaubt';
 $string['noreviewuntil'] = 'Sie dürfen diesen Test bis {$a} nicht überprüfen.';
 $string['noreviewuntilshort'] = '{$a} verfügbar';
 $string['noscript'] = 'JavaScript muss aktiviert sein!';
@@ -660,7 +662,7 @@ $string['onlyteachersimport'] = 'Nur Trainer/innen mit Bearbeitungsrecht können
 $string['onthispage'] = 'Diese Seite';
 $string['open'] = 'Nicht beantwortet';
 $string['openafterclose'] = 'Der Test konnte nicht aktualisiert werden. Sie haben ein Startdatum nach dem Enddatum angegeben.';
-$string['openclosedatesupdated'] = 'Start- und Schlusstermin des Tests wurden aktualisiert';
+$string['openclosedatesupdated'] = 'Start- und Endtermin des Tests';
 $string['optional'] = 'optional';
 $string['orderandpaging'] = 'Reihenfolge und Seitenumbrüche';
 $string['orderandpaging_help'] = 'Die Zahlen 10, 20, 30, ... neben jeder Frage zeigt deren Reihenfolge an. Die Zahlenfolge in 10er-Schritten lässt Platz, um weitere Fragen zwischendrin einfügen zu können. Um die Reihenfolge der Fragen zu ändern, ändern Sie die Zahlen und klicken Sie auf die Taste \'Neu sortieren\'.
@@ -842,6 +844,12 @@ $string['quizopen'] = 'Testöffnung';
 $string['quizopenclose'] = 'Anfangs- und Endzeiten';
 $string['quizopenclose_help'] = 'Teilnehmer/innen dürfen ihre Versuche nach dem Beginn anfangen und müssen sie vor dem Ende beendet haben.';
 $string['quizopenclose_link'] = 'mod/quiz/timing';
+$string['quizopendatesoonhtml'] = '<p>Hallo {$a->firstname},</p>
+<p>Der Test <strong>{$a->quizname}</strong> im Kurs {$a->coursename} beginnt bald.
+<p><strong>Öffnet: {$a->timeopen}</strong></p>
+<p><strong>Schließt: {$a->timeclose}</strong></p>
+<p><a href="{$a->url}">Zum Test</a></p>';
+$string['quizopendatesoonsubject'] = 'Öffnet am {$a->timeopen}: {$a->quizname}';
 $string['quizopened'] = 'Der Test ist geöffnet';
 $string['quizopenedon'] = 'Der Test beginnt am {$a}';
 $string['quizopens'] = 'Testöffnung';
@@ -893,9 +901,9 @@ $string['regradenotallowed'] = 'Sie haben nicht das Recht, diesen Tests neu zu b
 $string['regradingquestion'] = 'Neubewertung "{$a}"';
 $string['regradingquiz'] = 'Neubewertung Test "{$a}"';
 $string['remove'] = 'Entfernen';
-$string['removeallgroupoverrides'] = 'Alle Gruppenänderungen löschen';
-$string['removeallquizattempts'] = 'Alle Testversuche entfernen';
-$string['removealluseroverrides'] = 'Alle Nutzeränderungen löschen';
+$string['removeallgroupoverrides'] = 'Alle Gruppenänderungen';
+$string['removeallquizattempts'] = 'Alle Testversuche';
+$string['removealluseroverrides'] = 'Alle Nutzeränderungen';
 $string['removeemptypage'] = 'Entferne leere Seite';
 $string['removepagebreak'] = 'Seitenwechsel entfernen';
 $string['removeselected'] = 'Ausgewählte entfernen';
@@ -1008,6 +1016,7 @@ $string['selectmultipletoolbar'] = '"Mehrere auswählen"-Werkzeuge';
 $string['selectnone'] = 'Alle abwählen';
 $string['selectquestionslot'] = 'Frage {$a} auswählen';
 $string['selectquestiontype'] = '-- Wählen Sie einen Fragentyp --';
+$string['sendnotificationopendatesoon'] = 'Nutzer/innen über den bevorstehenden Testbeginn benachrichtigen';
 $string['serveradded'] = 'Server hinzugefügt';
 $string['serveridentifier'] = 'Identifizierung';
 $string['serverinfo'] = 'Serverinformation';
@@ -1076,6 +1085,7 @@ $string['subplugintype_quizaccess_plural'] = 'Zugriffsregeln';
 $string['substitutedby'] = 'wird ersetzt durch';
 $string['summaryofattempt'] = 'Zusammenfassung der Versuche';
 $string['summaryofattempts'] = 'Ihre Versuche';
+$string['summaryofattemptscaption'] = 'Zusammenfassung von Versuch {$a}';
 $string['temporaryblocked'] = 'Sie können für einige Zeit keinen neuen Versuch durchführen. </br>Machen Sie einen weiteren Versuch ab:';
 $string['theattempt'] = 'Versuch';
 $string['theattempt_help'] = 'Diese Option bestimmt, ob Teilnehmer/innen ihren Versuch überprüfen dürfen.';

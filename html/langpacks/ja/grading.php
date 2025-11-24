@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'ja', version '4.4'.
+ * Strings for component 'grading', language 'ja', version '4.5'.
  *
  * @package     grading
  * @category    string
@@ -72,7 +72,7 @@ $string['privacy:metadata:grading_definitions:timecreated'] = '評定定義が�
 $string['privacy:metadata:grading_definitions:timemodified'] = '評定定義の最終更新日時です。';
 $string['privacy:metadata:grading_definitions:usercreated'] = '評定定義を作成したユーザのIDです。';
 $string['privacy:metadata:grading_definitions:usermodified'] = '評定定義を最後に更新したユーザのIDです。';
-$string['privacy:metadata:grading_instances'] = '評価者によって評価された評定項目の評価レコードです。';
+$string['privacy:metadata:grading_instances'] = '評価者により評価された評定項目の評価レコードです。';
 $string['privacy:metadata:grading_instances:feedback'] = 'ユーザにより与えられたフィードバックです。';
 $string['privacy:metadata:grading_instances:feedbackformat'] = 'ユーザにより与えられたフィードバックのテキストフォーマットです。';
 $string['privacy:metadata:grading_instances:raterid'] = '評定インスタンスを評価したユーザのIDです。';

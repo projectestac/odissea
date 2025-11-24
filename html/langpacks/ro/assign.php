@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'ro', version '4.4'.
+ * Strings for component 'assign', language 'ro', version '4.5'.
  *
  * @package     assign
  * @category    string
@@ -70,6 +70,18 @@ $string['assign:viewgrades'] = 'Afişează note';
 $string['assign:viewownsubmissionsummary'] = 'Vizualizare rezumat sarcină de lucru proprie';
 $string['assignfeedback'] = 'Plugin feedback';
 $string['assignfeedbackpluginname'] = 'Plugin feedback';
+$string['assignmentduedigesthtml'] = '<p>Bună ziua, {$a->firstname},</p>
+<p>Răspunsul la următoarele sarcini de lucru trebuie predate <strong>{$a->duedate}</strong>.</p>
+{$a->digest}';
+$string['assignmentduedigestitem'] = '<strong>{$a->assignmentname}</strong> în curs {$a->coursename}<br/>
+<strong>Due: {$a->duetime}</strong><br/>
+<a href="{$a->url}" aria-label="Mergi la {$a->assignmentname}">Mergi la activitate</a>';
+$string['assignmentduedigestsubject'] = 'Aveți sarcini de lucru care trebuie predate în 7 zile.';
+$string['assignmentduesoonhtml'] = '<p>Bună ziua {$a->firstname},</p>
+<p>Pentru sarcina de lucru <strong>{$a->assignmentname}</strong> din cursul {$a->coursename} trebuie trimis răspunsul în curând</p>
+<p><strong>Trimitere răspuns: {$a->duedate}</strong></p>
+<p><a href="{$a->url}">Mergi la activitate</a></p>';
+$string['assignmentduesoonsubject'] = 'Se trimte în {$a->duedate}: {$a->assignmentname}';
 $string['assignmentisdue'] = 'Data predării';
 $string['assignmentmail'] = '{$a->grader} a postat câteva feedback-uri despre răspunsului dvs. pentru „{$a->assignment}”
 
@@ -80,6 +92,12 @@ $string['assignmentmailhtml'] = '<p> {$a->grader} a postat feedback despre răsp
 <p> Puteți vedea că este atașat la <a href="{$a->url} "> răspunsul dvs. al sarcinii </a>. </p>';
 $string['assignmentmailsmall'] = '{$a->grader} a postat feedback despre răspunsul dvs. pentru „{$a->assignment}” Puteți să-l vedeți anexat la răspunsul dvs.';
 $string['assignmentname'] = 'Denumirea sarcinii de lucru';
+$string['assignmentoverduehtml'] = '<p>Bună ziua {$a->firstname},</p>
+<p><strong>{$a->assignmentname}</strong> în cursul {$a->coursename} trebuia să trimiteți răspunsul în<strong>{$a->duedate}</strong>.</p>
+<p>Puteți să trimiteți încă răspunsul{$a->cutoffsnippet}, dar va fi marcat ca întârziat.</p>
+<p><a href="{$a->url}">Mergi la activitate</a></p>';
+$string['assignmentoverduehtmlcutoffsnippet'] = '<strong>by {$a->cutoffdate}</strong>';
+$string['assignmentoverduesubject'] = 'Depășit: {$a->assignmentname}';
 $string['assignmentplugins'] = 'Plugin-uri ale sarcinii de lucru';
 $string['assignmentsperpage'] = 'Sarcini de lucru per pagină';
 $string['assignsubmission'] = 'Plugin temă';
@@ -88,19 +106,24 @@ $string['assigntimeleft'] = 'Timp rămas';
 $string['attemptheading'] = 'Încercarea {$a->attemptnumber}: {$a->submissionsummary}';
 $string['attempthistory'] = 'Încercări anterioare';
 $string['attemptnumber'] = 'Numărul încercării';
-$string['attemptreopenmethod'] = 'Încercările sunt disponibile din nou';
-$string['attemptreopenmethod_help'] = 'Această setare determină modul în care sunt un student poate face încercări adiționale pentru temă. Pentru fiecare încercare, nota și feedback-ul sunt salvate și pot fi vizualizate de profesor și de către cursant. Opțiunile disponibile sunt:
+$string['attemptreopenmethod'] = 'Permite încercări';
+$string['attemptreopenmethod_automatic'] = 'Automat';
+$string['attemptreopenmethod_automatic_help'] = 'După fiecare încercare, următoarea este permisă automat.';
+$string['attemptreopenmethod_help'] = 'Această setare controlează modul în care cursanților li se acordă încercări pentru această sarcină de lucru. Pentru fiecare încercare, nota și feedback-ul sunt salvate și pot fi vizualizate de profesor și cursant. Opțiunile disponibile sunt:
 
-* Niciodată - Este posibilă doar o încercare.
-* Manual - Încercări suplimentare pot fi permise de către un profesor.
-* Automat până se obține notă de trecere - Încercări adiționale sunt permise automat până când cursantul obține o notă de trecere stabilită pentru această temă.';
+* Manual - După fiecare încercare, poți acorda următoarea încercare prin pagina Răspunsuri sau pe pagina Evaluatorului.
+* Automat - După fiecare încercare, următoarea încercare este acordată automat.
+* Automat până la promovare - După fiecare încercare, următoarea încercare va fi acordată automat, până când cursantul obține nota de trecere.';
 $string['attemptreopenmethod_manual'] = 'Manual';
+$string['attemptreopenmethod_manual_help'] = 'După fiecare încercare, puteți oferi următoarea încercare prin pagina Răspunsuri sau pagina evaluatorului.';
 $string['attemptreopenmethod_none'] = 'Niciodată';
 $string['attemptreopenmethod_untilpass'] = 'Automat până se obține notă de trecere';
+$string['attemptreopenmethod_untilpass_help'] = 'După fiecare încercare, următoarea încercare va fi permisă automat până când cursantul obține notă de trecere.';
 $string['attemptsettings'] = 'Setări încerecre';
 $string['availability'] = 'Disponibilitate';
 $string['back'] = 'Înapoi';
 $string['backtoassignment'] = 'Înapoi la sarcina de lucru';
+$string['batchoperationaddattempt'] = 'Permite încercări';
 $string['batchoperationconfirmaddattempt'] = 'Permiteți o altă încercare pentru răspusurile selectate?';
 $string['batchoperationconfirmdownloadselected'] = 'Descărcați răspunsurile selectate?';
 $string['batchoperationconfirmgrantextension'] = 'Acordați o extensie tuturor răspusurilor selectate?';
@@ -110,10 +133,15 @@ $string['batchoperationconfirmreverttodraft'] = 'Restabiliți răspunsurile trim
 $string['batchoperationconfirmsetmarkingallocation'] = 'Setați alocarea punctelor pentru toate răspunsurile selectate?';
 $string['batchoperationconfirmsetmarkingworkflowstate'] = 'Setați starea fluxului de lucru de punctare pentru toate răspunsurile selectate?';
 $string['batchoperationconfirmunlock'] = 'Deblocați toate răspunsurile selectate?';
-$string['batchoperationlock'] = 'blocare răspunsuri';
-$string['batchoperationreverttodraft'] = 'Restabiliți răspunsurile trimise cu status în lucru?';
+$string['batchoperationdownloadselected'] = 'Descarcă';
+$string['batchoperationgrantextension'] = 'Extinde';
+$string['batchoperationlock'] = 'Blocare';
+$string['batchoperationremovesubmission'] = 'Șterge';
+$string['batchoperationreverttodraft'] = 'Reveniți la ciornă';
 $string['batchoperationsdescription'] = 'Cu cele selectate ...';
-$string['batchoperationunlock'] = 'deblocați răspunsurile';
+$string['batchoperationsetmarkingallocation'] = 'Alocă utilizator';
+$string['batchoperationsetmarkingworkflowstate'] = 'Modifică statusul notării';
+$string['batchoperationunlock'] = 'Deblochează';
 $string['batchsetallocatedmarker'] = 'Setați persoana care notează alocată pentru cei {$a} utilizatori selectați.';
 $string['batchsetmarkingworkflowstateforusers'] = 'Setați starea fluxului de lucru de punctare pentru cei {$a} utilizatori selectați.';
 $string['beginassignment'] = 'Începeți sarcina de lucru';
@@ -122,6 +150,7 @@ $string['blindmarking_help'] = 'Trimiterea unui răspuns anonim ascunde identita
 $string['blindmarkingenabledwarning'] = 'Trimiterea anonimă a răspunsurilor este activată pentru această activitate. Notele nu vor fi adăugate în carnetul de note până când identitățile elevilor nu sunt dezvăluite prin meniul acțiunii Notare.';
 $string['cachedef_overrides'] = 'Suprascriere informații pentru utilizator și grup';
 $string['calendardue'] = '{$a} este scadent';
+$string['calendarextension'] = '{$a} trebuie predat (extension)';
 $string['calendargradingdue'] = '{$a} urmează să fie notat';
 $string['caneditsubmission'] = 'Puteți trimite/edita răspunsul după expirarea limitei de timp, dar va fi marcat ca fiind întârziat.';
 $string['changefilters'] = 'Schimbați filtrele';
@@ -156,11 +185,15 @@ $string['cutoffdate_help'] = 'Dacă este setată, sarcina de lucru nu va accepta
 $string['cutoffdatecolon'] = 'Data limită: {$a}';
 $string['cutoffdatefromdatevalidation'] = 'Data limită nu poate fi mai devreme de data de început a trimiteri răspunsurilor.';
 $string['cutoffdatevalidation'] = 'Data limită nu poate fi mai devreme decât data de trimitere.';
+$string['defaultgradescale'] = 'Scală de notare';
+$string['defaultgradescale_help'] = 'Scală de notare implicită pentru sarcinile de lucru noi. Doar scalele standard sunt disponibile.';
+$string['defaultgradetype'] = 'Tip de notare';
+$string['defaultgradetype_help'] = 'Tipul implicit de notare pentru noile sarcini de lucru.';
 $string['defaultlayout'] = 'Restabiliți aspectul implicit';
 $string['defaultsettings'] = 'Setările implicite ale sarcinii de lucru';
 $string['defaultsettings_help'] = 'Aceste setări determină valorile implicite ale tuturor sarcinilor de lucru noi.';
 $string['defaultteam'] = 'Grup implicit';
-$string['deleteallsubmissions'] = 'Ștergeți toate lucrările';
+$string['deleteallsubmissions'] = 'Toate răspunsurile';
 $string['description'] = 'Descriere';
 $string['disabled'] = 'Dezactivat';
 $string['downloadall'] = 'Descărcați toate lucrările';
@@ -222,9 +255,8 @@ $string['eventworkflowstateupdated'] = 'Starea fluxului de lucru a fost actualiz
 $string['expandreviewpanel'] = 'Extinde panoul de analiză';
 $string['extensionduedate'] = 'Termen de predare extins';
 $string['extensionduedatecurrent'] = 'Extinderea datei curente de trimitere a răspunsului';
-$string['extensionduedatefrom'] = 'De la {$a}';
 $string['extensionduedatenone'] = 'Nici unul';
-$string['extensionduedateto'] = 'Către {$a}';
+$string['extensionduedaterange'] = 'Variază între {$a->earliest} și {$a->latest}';
 $string['extensionduedatewithout'] = 'Utilizatori fără extensie: {$a}';
 $string['extensionnotafterduedate'] = 'Data prelungirii trebuie să fie ulterioară datei limită';
 $string['extensionnotafterfromdate'] = 'Data prelungirii trebuie să fie ulterioară datei de început a trimiterii răspunsurilor';
@@ -257,6 +289,7 @@ $string['feedbacksettings'] = 'Setări feedback';
 $string['feedbacktypes'] = 'Tipuri de feedback';
 $string['filesubmissions'] = 'Trimiteri de fișiere';
 $string['filter'] = 'Filtru';
+$string['filterall'] = 'Toate';
 $string['filterdraft'] = 'Draft';
 $string['filtergrantedextension'] = 'Prelungire acordată';
 $string['filternone'] = 'Fără filtru';
@@ -267,6 +300,7 @@ $string['fixrescalednullgrades'] = 'Această sarcină de lucru conține câteva 
 $string['fixrescalednullgradesconfirm'] = 'Sigur doriți să remediați notele eronate? Toate notele afectate vor fi eliminate. Acest lucru poate afecta nota totală a cursului.';
 $string['fixrescalednullgradesdone'] = 'Note ajustate.';
 $string['gradeabovemaximum'] = 'Nota trebuie să fie mai mică sau egală cu {$a}.';
+$string['gradeactions'] = 'Acțiuni de notare';
 $string['gradebelowzero'] = 'Nota trebuie să fie mai mare sau egală cu zero.';
 $string['gradebreakdown'] = 'Defalcare notă';
 $string['gradecanbechanged'] = 'Nota poate fi schimbată';
@@ -316,6 +350,7 @@ $string['hidegrader_help'] = 'Dacă este activată opțiunea, identitatea orică
 Rețineți că această setare nu are niciun efect asupra casetei de comentarii de pe pagina de notare.';
 $string['hideshow'] = 'Ascunde/Afișează';
 $string['inactiveoverridehelp'] = '* Această suprascriere este inactivă, deoarece accesul utilizatorului la activitate este restricționat. Acest lucru se poate datora sarcinii de grup sau de rol, altor restricții de acces sau activității ascunse.';
+$string['includesuspendedparticipants'] = 'Include participanții suspendați';
 $string['indicator:cognitivedepth'] = 'Informații cognitive despre activitatea sarcină';
 $string['indicator:cognitivedepth_help'] = 'Acest indicator se bazează pe profunzimea cognitivă atinsă de cursant într-o activitate de sarcină.';
 $string['indicator:cognitivedepthdef'] = 'Informații cognitive despre activitatea sarcină';
@@ -348,6 +383,7 @@ $string['markingallocation'] = 'Utilizați alocarea de utilizatori de notare';
 $string['markingallocation_help'] = 'Dacă este activată împreună cu fluxul de notare, utilizatorii de notare pot fi alocați anumitor studenți.';
 $string['markinganonymous'] = 'Permiteți publicarea parțială a notelor în timp ce punctați în mod anonim';
 $string['markinganonymous_help'] = 'Dacă este activat împreună cu trimiterea răspunsurilor anonime și fluxul de lucru de notare, permite publicarea parțială a notelor în timp ce sunt notate anonim.';
+$string['markingstate'] = 'Statusul notării';
 $string['markingworkflow'] = 'Utilizați fluxul de notare';
 $string['markingworkflow_help'] = 'Dacă este activată, notele vor trece printr-o serie de etape ale fluxului de notare înainte de a fi atribuite cursanților. Acest lucru permite mai multe runde de notare și permite atribuirea notelor pentru toți cursanții în același timp.';
 $string['markingworkflowstate'] = 'Starea fluxului de notare';
@@ -365,12 +401,15 @@ $string['markingworkflowstatenotmarked'] = 'Nu este notat';
 $string['markingworkflowstatereadyforrelease'] = 'Gata de lansare';
 $string['markingworkflowstatereadyforreview'] = 'Notare completă';
 $string['markingworkflowstatereleased'] = 'Lansat';
-$string['maxattempts'] = 'Numărul maxim de încercări';
+$string['maxattempts'] = 'Încercări permise';
 $string['maxattempts_help'] = 'Numărul maxim de încercări care pot fi făcute de către un cursant. După ce a fost atins acest număr, trimiterea răspunsurilor nu mai poate fi redeschisă.';
 $string['maxgrade'] = 'Notă maximă';
 $string['maxperpage'] = 'NUmărul maxim de sarcini de lucru per pagină';
 $string['maxperpage_help'] = 'Numărul maxim de sarcini pe care le poate afișa un utilizator care notează în pagina de notare a sarcinilor. Această setare este utilă pentru prevenirea expirării timpilor de notare pentru cursurile cu un număr mare de participanți.';
+$string['messageprovider:assign_due_digest'] = 'Notificare că sarcina de lucru expiră în 7 zile';
+$string['messageprovider:assign_due_soon'] = 'Notificare privind răspunsul care trebuie trimis în curând';
 $string['messageprovider:assign_notification'] = 'Notificări pentru sarcina de lucru';
+$string['messageprovider:assign_overdue'] = 'Notificare privind depășirea datei de trimitere';
 $string['modulename'] = 'Sarcină de lucru';
 $string['modulename_help'] = 'Modulul activitate de tip sarcină de lucru permite profesorului să comunice sarcini de lucru, să colecteze răspunsuri și să ofere note și feedback.
 
@@ -405,6 +444,7 @@ $string['noteamgrader'] = 'Nu este membru al niciunui grup, deci nu poate trimit
 $string['notgraded'] = 'Fără notă';
 $string['notgradedyet'] = 'Încă nu s-au acordat note';
 $string['notifications'] = 'Notificări';
+$string['notifystudents'] = 'Notifică studenții';
 $string['nouseroverrides'] = 'Nu sunt suprascrieri ale niciunui utilizator în prezent.';
 $string['nousers'] = 'Fără utilizatori';
 $string['nousersselected'] = 'Fără utilizatori selectați';
@@ -474,8 +514,8 @@ $string['quickgradingchangessaved'] = 'S-a salvat modificarea notelor';
 $string['quickgradingresult'] = 'Notare rapidă';
 $string['recordid'] = 'Identificator';
 $string['relativedatessubmissiontimeleft'] = 'Calculat pentru fiecare cursant';
-$string['removeallgroupoverrides'] = 'Șterge toate suprascrierile pentru grupuri';
-$string['removealluseroverrides'] = 'Șterge toate suprascrierile pentru utilizatori';
+$string['removeallgroupoverrides'] = 'Toate suprascrierile grupului';
+$string['removealluseroverrides'] = 'Toate suprascrierile utilizatorului';
 $string['removesubmission'] = 'Șterge răspunsul';
 $string['removesubmissionconfirm'] = 'Sigur vrei să elimini datele răspunsului (fișiere și text)?';
 $string['removesubmissionconfirmforstudent'] = 'Sigur vrei să elimini datele răspunsului (fișiere și text) pentru cursantul {$a}?';
@@ -512,6 +552,9 @@ $string['selectlink'] = 'Selectează...';
 $string['selectuser'] = 'Selectează {$a}';
 $string['sendlatenotifications'] = 'Notificare profesori cu privire la răspunsurile întârziate';
 $string['sendlatenotifications_help'] = 'Dacă este activat, profesorii primesc o notificare ori de câte ori un cursant trimite un răspuns după data finală de trimitere. Metodele de trimitere mesaje sunt configurabile.';
+$string['sendnotificationduedatesoon'] = 'Notificați utilizatorul cu privire la data de trimitere care se apropie';
+$string['sendnotificationduedigest'] = 'Notifică utilizatorul că sarcina de lucru expiră în 7 zile';
+$string['sendnotificationoverdue'] = 'Notifică utilizatorul că sarcina de lucru este depășită';
 $string['sendnotifications'] = 'Notificare profesori cu privire la răspunsuri';
 $string['sendnotifications_help'] = 'Dacă este activat, profesorii primesc un mesaj ori de câte ori un cursant trimite un răspuns. Metodele de trimitere mesaje sunt configurabile.';
 $string['sendstudentnotifications'] = 'Notificare cursant';
@@ -529,6 +572,7 @@ $string['showrecentsubmissions'] = 'Afişează răspunsurile recente';
 $string['status'] = 'Status';
 $string['studentnotificationworkflowstateerror'] = 'Starea fluxului de notare trebuie să fie „Alocat” pentru a notifica toți cursanții.';
 $string['submission'] = 'Temă trimisă';
+$string['submissionactions'] = 'Acțiuni de trimitere a răspunsului';
 $string['submissionattachments'] = 'Afișează fișierele doar în timpul trimiterii răspunsului.';
 $string['submissionattachments_help'] = 'Când este activat, fișierele vor fi afișate numai pe ecranul de trimitere.
 Când este dezactivat, fișierele vor fi afișate atât pe ecranul de vizualizare a sarcinilor, cât și pe ecranul de trimitere.';
@@ -661,6 +705,7 @@ $string['viewfeedbackforuser'] = 'Vezi feedback-ul utilizatorului: {$a}';
 $string['viewfull'] = 'Vizualizare completă';
 $string['viewfullgradingpage'] = 'Deschideți pagina completă de notare pentru a oferi feedback';
 $string['viewgradebook'] = 'Vezi catalogul de note';
+$string['viewgrader'] = 'Vezi evaluatorul';
 $string['viewgrading'] = 'Vezi toate răspunsurile';
 $string['viewgradingformforstudent'] = 'Vizualizați pagina de notare pentru cursantul: (id={$a->id}, fullname={$a->fullname}).';
 $string['viewownsubmissionform'] = 'Vizualizați propria pagină de trimitere răspunsurilor sarcinilor.';

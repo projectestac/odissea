@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_formulas', language 'en', version '4.4'.
+ * Strings for component 'qtype_formulas', language 'en', version '4.5'.
  *
  * @package     qtype_formulas
  * @category    string
@@ -167,7 +167,7 @@ $string['error_expects_number'] = '{$a->who} expects a number.';
 $string['error_expects_number_found'] = '{$a->who} expects a number, found {$a->found}.';
 $string['error_expects_scalar'] = '{$a->who} expects a scalar value.';
 $string['error_expects_scalar_found'] = '{$a->who} expects a scalar value, found {$a->found}.';
-$string['error_fact_toolarge'] = 'Cannot compute {$a}! on this platform, the result is bigger than PHP_MAX_INT.';
+$string['error_fact_toolarge'] = 'Cannot compute {$a}! on this platform, the result is bigger than PHP_MAX_FLOAT.';
 $string['error_fixed_range'] = 'Syntax error of a fixed range.';
 $string['error_for_expectcolon'] = 'Syntax error: : expected.';
 $string['error_for_expectidentifier'] = 'Syntax error: identifier expected.';

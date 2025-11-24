@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'it', version '4.4'.
+ * Strings for component 'backup', language 'it', version '4.5'.
  *
  * @package     backup
  * @category    string
@@ -204,6 +204,7 @@ $string['enableasyncbackup_help'] = 'Le operazioni di backup e ripristino sarann
 $string['enterasearch'] = 'Inserisci una ricerca';
 $string['error_block_for_module_not_found'] = 'È stata trovata una istanza orfana  di blocco (id: {$a->bid}) nel corso (id: {$a->mid}). Questo blocco non sarà incluso nel backup.';
 $string['error_course_module_not_found'] = 'È stato trovato un modulo orfano (id: {$a}) nel corso. Questo modulo non sarà incluso nel backup.';
+$string['error_delegate_section_not_found'] = 'Manca la sezione delegata del modulo del corso (ID {$a}). La sezione non verrà sottoposta a backup.';
 $string['errorcopyingbackupfile'] = 'Non è andata a buon fine la copia del file di backup nella cartella temporanea per il ripristino.';
 $string['errorfilenamemustbezip'] = 'Il nome del file inserito deve essere un file ZIP e deve avere l\'estensione .mbz.';
 $string['errorfilenamerequired'] = 'Devi inserire un nome valido per il file di backup. ';
@@ -280,6 +281,7 @@ $string['includeditems'] = 'Elementi inclusi:';
 $string['includefilereferences'] = 'File collegati a contenuti esterni';
 $string['includesection'] = 'Sezione {$a}';
 $string['includeuserinfo'] = 'Dati utente';
+$string['includeuserinfo_instance'] = 'Includi {$a} dati utente';
 $string['inprogress'] = 'Il backup è in svolgimento';
 $string['jumptofinalstep'] = 'Salta al passo finale';
 $string['keep'] = 'Mantieni';
@@ -398,6 +400,7 @@ $string['rootsettingusers'] = 'Includi utenti iscritti';
 $string['rootsettinguserscompletion'] = 'Includi dati completamento utente';
 $string['rootsettingxapistate'] = 'Includi lo stato dell\'utente nei contenuti, come le attività H5P.';
 $string['samesitenotification'] = 'Il backup è stato creato con i riferimenti ai file e pertanto non li contiene. Il ripristino è possibile solo su questo sito.';
+$string['section_prefix'] = 'Sezione {$a}:';
 $string['sectionactivities'] = 'Attività';
 $string['sectioninc'] = 'Inclusi nel backup (senza dati utente)';
 $string['sectionincanduser'] = 'Inclusi nel backup con i dati utente';
@@ -424,6 +427,7 @@ $string['status'] = 'Stato';
 $string['storagecourseandexternal'] = 'Area backup del corso e una cartella specifica';
 $string['storagecourseonly'] = 'Area backup del corso';
 $string['storageexternalonly'] = 'Una cartella specifica, dove salvare i backup automatici';
+$string['subsectioncontent'] = 'Contenuto della sottosezione';
 $string['successful'] = 'Backup completato correttamente';
 $string['successfulcopy'] = 'Copia completata correttamente';
 $string['successfulrestore'] = 'Ripristino completato correttamente';

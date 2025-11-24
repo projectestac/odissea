@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tiny_premium', language 'ar', version '4.4'.
+ * Strings for component 'tiny_premium', language 'ar', version '4.5'.
  *
  * @package     tiny_premium
  * @category    string
@@ -50,5 +50,4 @@ $string['premiumplugin:tinymcespellchecker'] = 'المدقق الإملائي pr
 $string['premiumplugin:typography'] = 'الطباعة المتقدمة';
 $string['premiumplugins'] = 'الإضافات المميزة';
 $string['premiumplugins_desc'] = 'يتطلب الوصول إلى ملحقات TinyMCE Premium الحصول على مفتاح واجهة برمجة التطبيق. قد لا تكون كل الملحقات المدرجة متاحة مع خلال اشتراكك في TinyMCE Premium. يمكنك التحقق من الملحقات المتاحة من صفحة حساب <a href="https://www.tiny.cloud">Tiny Cloud</a>.';
-$string['privacy:metadata'] = 'لا يقوم البرنامج الإضافي Tiny premium لـ TinyMCE بتخزين أي بيانات شخصية.
-';
+$string['privacy:metadata'] = 'إن ملحق Tiny المتميز لـ TinyMCE لا يخزن أي بيانات شخصية.';

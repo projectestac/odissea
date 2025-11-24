@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'ca', version '4.4'.
+ * Strings for component 'quiz_overview', language 'ca', version '4.5'.
  *
  * @package     quiz_overview
  * @category    string
@@ -57,6 +57,7 @@ $string['preferencespage'] = 'Preferències només per a aquesta pàgina';
 $string['preferencessave'] = 'Mostra l\'informe';
 $string['preferencesuser'] = 'Les vostres preferències per a aquest informe';
 $string['regrade'] = 'Torna a qualificar';
+$string['regrade_attempts'] = 'Recalcula les qualificacions...';
 $string['regradeall'] = 'Torna a qualificar-los tots';
 $string['regradealldry'] = 'Fes un assaig de requalificació completa';
 $string['regradealldrydo'] = 'Torna a qualificar els intents marcats per a tornar a qualificar ({$a})';

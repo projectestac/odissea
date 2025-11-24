@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search_solr', language 'ja', version '4.4'.
+ * Strings for component 'search_solr', language 'ja', version '4.5'.
  *
  * @package     search_solr
  * @category    string
@@ -43,7 +43,7 @@ $string['nodatafromserver'] = 'サーバからのデータがありません。'
 $string['pluginname'] = 'Solr';
 $string['privacy:metadata'] = 'このプラグインは外部のリンクされたSolr検索エンジンにデータを送信します。ローカルにデータを保存することはありません。';
 $string['privacy:metadata:data'] = '検索サブシステムより渡された個人データです。';
-$string['schemafieldautocreated'] = 'フィールド「 {$a} 」はSolrスキーマ内にすでに存在します。恐らく、あなたがデータのインデックス化前にこのスクリプトの実行を忘れたため、Solrによってフィールドが自動作成されたものと思われます。Solr内でデータをインデックス化する前に現在のインデックスを削除して新しいインデックスを作成した後、 再度setup_schema.phpを実行してください。';
+$string['schemafieldautocreated'] = 'フィールド「 {$a} 」はSolrスキーマ内にすでに存在します。恐らく、あなたがデータのインデックス化前にこのスクリプトの実行を忘れたため、Solrによりフィールドが自動作成されたものと思われます。Solr内でデータをインデックス化する前に現在のインデックスを削除して新しいインデックスを作成した後、 再度setup_schema.phpを実行してください。';
 $string['schemasetupfromsolr5'] = 'あなたのSolrサーババージョンは5.0より低いようです。あなたのSolrバージョンが5.0 またはそれ以上の場合のみスキーマを設定することができます。あなたは「\\search_solr\\document::get_default_fields_definition()」に従って手動でスキーマにフィールドを設定する必要があります。';
 $string['searchinfo'] = '検索クエリ';
 $string['searchinfo_help'] = '検索フィールドは検索クエリの前に「title:」「content:」「name:」または「intro:」を付けることにより指定することができます。例えば「title:news」ではタイトルが単語「news」の検索結果を返します。

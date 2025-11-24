@@ -1,0 +1,276 @@
+<?php
+// This file is part of Moodle - https://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
+
+/**
+ * Strings for component 'countries', language 'lt', version '4.5'.
+ *
+ * @package     countries
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+defined('MOODLE_INTERNAL') || die();
+
+$string['AD'] = 'Andora';
+$string['AE'] = 'Jungtiniai Arabų Emyratai';
+$string['AF'] = 'Afganistanas';
+$string['AG'] = 'Antigua ir Barbuda';
+$string['AI'] = 'Angilija';
+$string['AL'] = 'Albanija';
+$string['AM'] = 'Armėnija';
+$string['AO'] = 'Angola';
+$string['AQ'] = 'Antarktida';
+$string['AR'] = 'Argentina';
+$string['AS'] = 'Amerikos Samoa';
+$string['AT'] = 'Austrija';
+$string['AU'] = 'Australija';
+$string['AW'] = 'Aruba';
+$string['AX'] = 'Alandų Salos';
+$string['AZ'] = 'Azerbaidžanas';
+$string['BA'] = 'Bosnija ir Hercegovina';
+$string['BB'] = 'Barbadosas';
+$string['BD'] = 'Bangladešas';
+$string['BE'] = 'Belgija';
+$string['BF'] = 'Burkina Fasas';
+$string['BG'] = 'Bulgarija';
+$string['BH'] = 'Bahreinas';
+$string['BI'] = 'Burundis';
+$string['BJ'] = 'Beninas';
+$string['BL'] = 'Sen Bartelemi';
+$string['BM'] = 'Bermudai';
+$string['BN'] = 'Brunėjaus Darusalamas';
+$string['BO'] = 'Bolivija (Daugiatautė Valstybė)';
+$string['BQ'] = 'Bonairė, Sint Estatijus ir Saba';
+$string['BR'] = 'Brazilija';
+$string['BS'] = 'Bahamos';
+$string['BT'] = 'Butanas';
+$string['BV'] = 'Buvė Sala';
+$string['BW'] = 'Botsvana';
+$string['BY'] = 'Baltarusija';
+$string['BZ'] = 'Belizas';
+$string['CA'] = 'Kanada';
+$string['CC'] = 'Kokosų (Kilingo) Salos';
+$string['CD'] = 'Kongas (Demokratinė Respublika)';
+$string['CF'] = 'Centrinės Afrikos Respublika';
+$string['CG'] = 'Kongas';
+$string['CH'] = 'Šveicarija';
+$string['CI'] = 'Dramblio Kaulo Kranto Respublika';
+$string['CK'] = 'Kuko Salos';
+$string['CL'] = 'Čilė';
+$string['CM'] = 'Kamerūnas';
+$string['CN'] = 'Kinija';
+$string['CO'] = 'Kolumbija';
+$string['CR'] = 'Kosta Rika';
+$string['CU'] = 'Kuba';
+$string['CV'] = 'Žaliojo Kyšulio Respublika';
+$string['CW'] = 'Kiurasao';
+$string['CX'] = 'Kalėdų Sala';
+$string['CY'] = 'Kipras';
+$string['CZ'] = 'Čekija';
+$string['DE'] = 'Vokietija';
+$string['DJ'] = 'Džibutis';
+$string['DK'] = 'Danija';
+$string['DM'] = 'Dominika';
+$string['DO'] = 'Dominikos Respublika';
+$string['DZ'] = 'Alžyras';
+$string['EC'] = 'Ekvadoras';
+$string['EE'] = 'Estija';
+$string['EG'] = 'Egiptas';
+$string['EH'] = 'Vakarų Sachara';
+$string['ER'] = 'Eritrėja';
+$string['ES'] = 'Ispanija';
+$string['ET'] = 'Etiopija';
+$string['FI'] = 'Suomija';
+$string['FJ'] = 'Fidžis';
+$string['FK'] = 'Folklando (Malvinų) Salos';
+$string['FM'] = 'Mikronezija (Federacinės Valstijos)';
+$string['FO'] = 'Farerų Salos';
+$string['FR'] = 'Prancūzija';
+$string['GA'] = 'Gabonas';
+$string['GB'] = 'Jungtinė Karalystė';
+$string['GD'] = 'Grenada';
+$string['GE'] = 'Gruzija';
+$string['GF'] = 'Prancūzijos Gviana';
+$string['GG'] = 'Gernsis';
+$string['GH'] = 'Gana';
+$string['GI'] = 'Gibraltaras';
+$string['GL'] = 'Grenlandija';
+$string['GM'] = 'Gambija';
+$string['GN'] = 'Gvinėja';
+$string['GP'] = 'Gvadelupa';
+$string['GQ'] = 'Pusiaujo Gvinėja';
+$string['GR'] = 'Graikija';
+$string['GS'] = 'Pietų Džordžija ir Pietų Sandvičo salos';
+$string['GT'] = 'Gvatemala';
+$string['GU'] = 'Guamas';
+$string['GW'] = 'Bisau Gvinėja';
+$string['GY'] = 'Gajana';
+$string['HK'] = 'Honkongas';
+$string['HM'] = 'Heard ir McDonald salos';
+$string['HN'] = 'Hondūras';
+$string['HR'] = 'Kroatija';
+$string['HT'] = 'Haitis';
+$string['HU'] = 'Vengrija';
+$string['ID'] = 'Indonezija';
+$string['IE'] = 'Airija';
+$string['IL'] = 'Izraelis';
+$string['IM'] = 'Man sala';
+$string['IN'] = 'Indija';
+$string['IO'] = 'Indijos Vandenyno Britų Sritis';
+$string['IQ'] = 'Irakas';
+$string['IR'] = 'Iranas (Islamo Respublika)';
+$string['IS'] = 'Islandija';
+$string['IT'] = 'Italija';
+$string['JE'] = 'Džersis';
+$string['JM'] = 'Jamaika';
+$string['JO'] = 'Jordanija';
+$string['JP'] = 'Japonija';
+$string['KE'] = 'Kenija';
+$string['KG'] = 'Kirgizija';
+$string['KH'] = 'Kambodža';
+$string['KI'] = 'Kiribatis';
+$string['KM'] = 'Komorai';
+$string['KN'] = 'Saint Kitts ir Nevis';
+$string['KP'] = 'Korėja (Liaudies Demokratinė Respublika)';
+$string['KR'] = 'Korėja (Respublika)';
+$string['KW'] = 'Kuveitas';
+$string['KY'] = 'Kaimanų Salos';
+$string['KZ'] = 'Kazachija';
+$string['LA'] = 'Laoso Liaudies Demokratinė Respublika';
+$string['LB'] = 'Lebanonas';
+$string['LC'] = 'Sent Lusija';
+$string['LI'] = 'Lichtenšteinas';
+$string['LK'] = 'Šri Lanka';
+$string['LR'] = 'Liberija';
+$string['LS'] = 'Lesotas';
+$string['LT'] = 'Lietuva';
+$string['LU'] = 'Liuksemburgas';
+$string['LV'] = 'Latvija';
+$string['LY'] = 'Libija';
+$string['MA'] = 'Marokas';
+$string['MC'] = 'Monakas';
+$string['MD'] = 'Moldova (Respublika)';
+$string['ME'] = 'Montenegras';
+$string['MF'] = 'Saint Martin (prancūziška dalis)';
+$string['MG'] = 'Madagaskaras';
+$string['MH'] = 'Maršalo Salos';
+$string['MK'] = 'Šiaurės Makedonija';
+$string['ML'] = 'Malis';
+$string['MM'] = 'Mianmaras';
+$string['MN'] = 'Mongolija';
+$string['MO'] = 'Makao';
+$string['MP'] = 'Marianos Šiaurinės Salos';
+$string['MQ'] = 'Martinika';
+$string['MR'] = 'Mauritanija';
+$string['MS'] = 'Montseratas';
+$string['MT'] = 'Malta';
+$string['MU'] = 'Mauricijus';
+$string['MV'] = 'Maldyvai';
+$string['MW'] = 'Malavis';
+$string['MX'] = 'Meksika';
+$string['MY'] = 'Malaizija';
+$string['MZ'] = 'Mozambikas';
+$string['NA'] = 'Namibija';
+$string['NC'] = 'Naujoji Kaledonija';
+$string['NE'] = 'Nigeris';
+$string['NF'] = 'Norfolko Sala';
+$string['NG'] = 'Nigerija';
+$string['NI'] = 'Nikaragva';
+$string['NL'] = 'Nyderlandai';
+$string['NO'] = 'Norvegija';
+$string['NP'] = 'Nepalas';
+$string['NR'] = 'Nauru';
+$string['NU'] = 'Niujė';
+$string['NZ'] = 'Naujoji Zelandija';
+$string['OM'] = 'Omanas';
+$string['PA'] = 'Panama';
+$string['PE'] = 'Peru';
+$string['PF'] = 'Prancūzijos Polinezija';
+$string['PG'] = 'Papua Naujoji Gvinėja';
+$string['PH'] = 'Filipinai';
+$string['PK'] = 'Pakistanas';
+$string['PL'] = 'Lenkija';
+$string['PM'] = 'Sen Pjeras ir Mikelonas';
+$string['PN'] = 'Pitkernas';
+$string['PR'] = 'Puerto Rikas';
+$string['PS'] = 'Palestina, valstija';
+$string['PT'] = 'Portugalija';
+$string['PW'] = 'Palau';
+$string['PY'] = 'Paragvajus';
+$string['QA'] = 'Kataras';
+$string['RE'] = 'Reunjonas';
+$string['RO'] = 'Rumunija';
+$string['RS'] = 'Serbija';
+$string['RU'] = 'Rusija';
+$string['RW'] = 'Ruanda';
+$string['SA'] = 'Saudo Arabija';
+$string['SB'] = 'Saliamono Salos';
+$string['SC'] = 'Seišeliai';
+$string['SD'] = 'Sudanas';
+$string['SE'] = 'Švedija';
+$string['SG'] = 'Singapūras';
+$string['SH'] = 'Šventoji Elena, Ascension ir Tristan da Cunha';
+$string['SI'] = 'Slovėnija';
+$string['SJ'] = 'Svalbardas ir Janas Mayenas';
+$string['SK'] = 'Slovakija';
+$string['SL'] = 'Siera Leonė';
+$string['SM'] = 'San Marinas';
+$string['SN'] = 'Senegalas';
+$string['SO'] = 'Somalis';
+$string['SR'] = 'Surinamas';
+$string['SS'] = 'Pietų Sudanas';
+$string['ST'] = 'San Tomas ir Prinsipė';
+$string['SV'] = 'Salvadoras';
+$string['SX'] = 'Sint Martenas (olandų dalis)';
+$string['SY'] = 'Sirijos Arabų Respublika';
+$string['SZ'] = 'Esvatinas';
+$string['TC'] = 'Terkso ir Kaikoso salos';
+$string['TD'] = 'Čadas';
+$string['TF'] = 'Prancūzijos Pietų Sritys';
+$string['TG'] = 'Togas';
+$string['TH'] = 'Tailandas';
+$string['TJ'] = 'Tadžikija';
+$string['TK'] = 'Tokelau';
+$string['TL'] = 'Rytų Timoras';
+$string['TM'] = 'Turkmėnija';
+$string['TN'] = 'Tunisas';
+$string['TO'] = 'Tonga';
+$string['TR'] = 'Turkija';
+$string['TT'] = 'Trinidadas ir Tobagas';
+$string['TV'] = 'Tuvalu';
+$string['TW'] = 'Taivanas';
+$string['TZ'] = 'Tanzanija, Jungtinė Respublika';
+$string['UA'] = 'Ukraina';
+$string['UG'] = 'Uganda';
+$string['UM'] = 'Jungtinių Valstijų Mažosios Tolimosios Salos';
+$string['US'] = 'Jungtinės Valstijos';
+$string['UY'] = 'Urugvajus';
+$string['UZ'] = 'Uzbekistanas';
+$string['VA'] = 'Šventasis Sostas';
+$string['VC'] = 'Saint Vincentas ir Grenadinai';
+$string['VE'] = 'Venesuela (Bolivaro Respublika)';
+$string['VG'] = 'Mergelių salos (Britų)';
+$string['VI'] = 'Mergelių salos (JAV)';
+$string['VN'] = 'Vietnamas';
+$string['VU'] = 'Vanuatu';
+$string['WF'] = 'Volisas ir Futūna';
+$string['WS'] = 'Samoa';
+$string['YE'] = 'Jemenas';
+$string['YT'] = 'Majotas';
+$string['ZA'] = 'Pietų Afrika';
+$string['ZM'] = 'Zambija';
+$string['ZW'] = 'Zimbabvė';

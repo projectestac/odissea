@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'ca', version '4.4'.
+ * Strings for component 'tag', language 'ca', version '4.5'.
  *
  * @package     tag
  * @category    string
@@ -119,7 +119,7 @@ $string['ptags'] = 'Etiquetes definides per l\'usuari (separades per comes)';
 $string['relatedblogs'] = 'Entrades més recents del blog';
 $string['relatedtags'] = 'Etiquetes relacionades';
 $string['removetagfrommyinterests'] = 'Treu "{$a}" dels meus interessos';
-$string['reset'] = 'Reinicia el senyalador per l\'etiqueta';
+$string['reset'] = 'Reinicia la marca per l\'etiqueta';
 $string['resetfilter'] = 'Reinicia el filtre';
 $string['resetflag'] = 'Reinicia la marca';
 $string['responsiblewillbenotified'] = 'La persona responsable serà notificada';

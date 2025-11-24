@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'de', version '4.4'.
+ * Strings for component 'gradeimport_xml', language 'de', version '4.5'.
  *
  * @package     gradeimport_xml
  * @category    string

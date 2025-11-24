@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'uk', version '4.4'.
+ * Strings for component 'cache', language 'uk', version '4.5'.
  *
  * @package     cache
  * @category    string
@@ -34,6 +34,8 @@ $string['addstoresuccess'] = 'Успішно додано нове сховищ�
 $string['area'] = 'Зона';
 $string['cacheadmin'] = 'Управління кешем';
 $string['cacheconfig'] = 'Налаштування';
+$string['cachedef_ai_policy'] = 'Прийняття політики ШІ користувача.';
+$string['cachedef_ai_ratelimit'] = 'Обмеження швидкості викликів постачальника AI';
 $string['cachedef_calculablesinfo'] = 'Аналітика обчислює інформацію';
 $string['cachedef_calendar_categories'] = 'Категорії курсів календаря, до яких може отримати доступ користувач';
 $string['cachedef_calendar_subscriptions'] = 'Підписки календаря';
@@ -91,6 +93,7 @@ $string['cachedef_recommendation_favourite_course_content_items'] = 'Реком�
 $string['cachedef_reportbuilder_allowed_reports'] = 'Користувачі дозволили звіти відповідно до аудиторії';
 $string['cachedef_repositories'] = 'Дані екземплярів репозиторіїв';
 $string['cachedef_roledefs'] = 'Рольові визначення';
+$string['cachedef_routes'] = 'Дані маршруту';
 $string['cachedef_string'] = 'Кеш рядків мови';
 $string['cachedef_suspended_userids'] = 'Список заблокованих користувачів курсу';
 $string['cachedef_tagindexbuilder'] = 'Результати пошуку для елементів з мітками';

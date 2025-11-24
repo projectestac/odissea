@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'eu', version '4.4'.
+ * Strings for component 'quiz_overview', language 'eu', version '4.5'.
  *
  * @package     quiz_overview
  * @category    string
@@ -60,6 +60,17 @@ $string['privacy:metadata:preference:quiz_overview_slotmarks'] = 'Galdera-tarte 
 $string['privacy:preference:slotmarks:no'] = 'Kalifikazioak ez dira galdera-tarte bakoitzarekin batera erakusten.';
 $string['privacy:preference:slotmarks:yes'] = 'Kalifikazioak galdera-tarte bakoitzarekin batera erakusten dira.';
 $string['regrade'] = 'Berriro kalifikatu';
+$string['regrade_allattempts'] = 'Saiakera guztiak';
+$string['regrade_allquestions'] = 'Galdera guztiak';
+$string['regrade_attempts'] = 'Berriro kalifikatu saiakerak...';
+$string['regrade_commitregrade'] = 'Gorde kalifikazio berria(k)';
+$string['regrade_dryrun'] = 'Proba modua';
+$string['regrade_help'] = 'Berriro kalifikatzeak saiakeren kalifikazio automatikoa berriz kalkulatzen du, une honetako galderaren bertsioa erabilita posiblea bada. Proba moduak berriro kalifikatzeak kalifikazioetan eragingo lituzkeen aldaketak saiakeretan eragin gabe ikusteko aukera ematen du.';
+$string['regrade_link'] = 'Galdetegi_kalifikazio_txostena#Saiakerak_berriro_kalkulatzen';
+$string['regrade_regradeneedednotificationmessage'] = 'Proba moduan egindako azken ber-kalifikazioak aurkitu du berriro kalifikatzeak {$a->attempts} saiakeretako {$a->questions} galderetan aldaketak eragingo lituzkeela.';
+$string['regrade_regradenow'] = 'Berriro kalifikatu orain';
+$string['regrade_selectedattempts'] = 'Aukeratutako saiakerak';
+$string['regrade_selectedquestions'] = 'Aukeratutako galderak';
 $string['regradeall'] = 'Berriro kalifikatu guztiak';
 $string['regradealldry'] = 'Berriro kalifikatu guztiak proba moduan';
 $string['regradealldrydo'] = 'Berriro kalifikatu berriz kalifikatzea behar dutela markatuta dauden saiakerak ({$a})';

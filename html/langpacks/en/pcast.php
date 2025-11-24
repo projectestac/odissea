@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pcast', language 'en', version '4.4'.
+ * Strings for component 'pcast', language 'en', version '4.5'.
  *
  * @package     pcast
  * @category    string
@@ -64,9 +64,9 @@ $string['created'] = 'Created';
 $string['createdesc'] = 'Oldest episode first';
 $string['current'] = 'current sort {$a}';
 $string['dateview'] = 'Browse by date';
-$string['deleteallepisodetags'] = 'Delete episode tags';
-$string['deleteallviews'] = 'Delete episode view history';
-$string['deletenotenrolled'] = 'Delete episodes by users not enrolled';
+$string['deleteallepisodetags'] = 'Episode tags';
+$string['deleteallviews'] = 'Episode view history';
+$string['deletenotenrolled'] = 'Episodes by users not enrolled';
 $string['deletethisepisode'] = 'Delete this episode';
 $string['descending'] = 'Descending';
 $string['disapprove'] = 'Disapprove';
@@ -174,6 +174,12 @@ $string['privacy:metadata:core_comments'] = 'Comments made on pcast definitions 
 $string['privacy:metadata:core_files'] = 'Files linked to pcast definitions are stored using the core_files system';
 $string['privacy:metadata:core_rating'] = 'Ratings added to pcast episodes are stored using core_ratings system';
 $string['privacy:metadata:core_tag'] = 'Tags added to pcast definitions are stored using core_tag system';
+$string['privacy:metadata:pcast'] = 'Information about the user\'s pcast';
+$string['privacy:metadata:pcast:keywords'] = 'The keywords for the pcast the user added';
+$string['privacy:metadata:pcast:name'] = 'The name of the episode the user added';
+$string['privacy:metadata:pcast:subtitle'] = 'The subtitle of the pcast the user added';
+$string['privacy:metadata:pcast:timemodified'] = 'The timestamp indicating when the pcast was modified by the user';
+$string['privacy:metadata:pcast:userid'] = 'The ID of the user that is adding this pcast';
 $string['privacy:metadata:pcast_episodes'] = 'Information about the user\'s episodes for a given pcast activity';
 $string['privacy:metadata:pcast_episodes:keywords'] = 'The keywords for the episode the user added';
 $string['privacy:metadata:pcast_episodes:mediafile'] = 'The attachment of the episode the user added';
@@ -183,9 +189,12 @@ $string['privacy:metadata:pcast_episodes:subtitle'] = 'The subtitle of the episo
 $string['privacy:metadata:pcast_episodes:summary'] = 'The summary of the episode the user added';
 $string['privacy:metadata:pcast_episodes:timemodified'] = 'The timestamp indicating when the pcast episode was modified by the user';
 $string['privacy:metadata:pcast_episodes:userid'] = 'The ID of the user that is adding this pcast episode';
+$string['privacy:metadata:pcast_views'] = 'Information about the views of pcasts';
+$string['privacy:metadata:pcast_views:episodeid'] = 'The ID of the pcast episode';
+$string['privacy:metadata:pcast_views:userid'] = 'The userid of the pcast owner';
 $string['requireapproval'] = 'Require approval for episodes';
 $string['requireapproval_help'] = 'Require episodes to be approved before posting';
-$string['resetpcastsall'] = 'Delete episodes from all podcasts';
+$string['resetpcastsall'] = 'All episodes from all podcasts';
 $string['rssepisodes'] = 'Number of episodes';
 $string['rssepisodes_help'] = 'This option limits the number of episodes displayed on the RSS feed';
 $string['rsslink'] = 'RSS feed for this activity';

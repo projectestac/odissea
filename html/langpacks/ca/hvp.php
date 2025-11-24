@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'ca', version '4.4'.
+ * Strings for component 'hvp', language 'ca', version '4.5'.
  *
  * @package     hvp
  * @category    string
@@ -41,7 +41,7 @@ $string['attributionncnd'] = 'Reconeixement-NoComercial-SenseObraDerivada 4.0';
 $string['attributionncsa'] = 'Reconeixement-NoComercial-CompartirIgual 4.0';
 $string['attributionnd'] = 'Reconeixement-SenseObraDerivada 4.0';
 $string['attributionsa'] = 'Reconeixement-CompartirIgual 4.0';
-$string['author'] = 'Autor/a';
+$string['author'] = 'Autor o autora';
 $string['by'] = 'per';
 $string['cancellabel'] = 'Cancel·la';
 $string['cancelpublishconfirmationdialogconfirmbuttontext'] = 'Sí';

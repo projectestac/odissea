@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'eu', version '4.4'.
+ * Strings for component 'report_security', language 'eu', version '4.5'.
  *
  * @package     report_security
  * @category    string
@@ -131,6 +131,7 @@ $string['check_unsecuredataroot_error'] = 'Zure <code>{$a}</code> dataroot direk
 $string['check_unsecuredataroot_name'] = 'dataroot ez da segurua';
 $string['check_unsecuredataroot_ok'] = 'Dataroot direktorioak ez du web bidez eskuragarri egon behar.';
 $string['check_unsecuredataroot_warning'] = 'Zure <code>{$a}</code> dataroot direktorioa okerreko kokagunean dago eta web bidez eskuragarri egon daiteke.';
+$string['check_upgradefile_info'] = 'Eguneratze-oharren fitxategiak ez lirateke publikoak izan beharko';
 $string['check_vendordir_details'] = '<p><code>{$a->path}</code> direktorioak bitartekoen liburutegiak eta euren menpekotasunak ditu, normalean PHP composer bitartez instalatutakoak. Liburutegi hauek Moodle-ko garapen lokalerako beharrezkoak izan daitezke, esaterako PHPUnit framework-a instalatzeko. Ez dira behar lanean dagoen Moodle gune batean, eta potentzialki urruneko erasotzaileei kodea erakusteko arriskua dago.</p>
 <p>Direktorio hori ezabatzea irmoki gomendatzen da gunea URL publiko baten bitartez eskuragarri badago, edo gutxienez zure web-zerbitzariaren konfigurazioan bertara web bidezko sarbidea ukatzea.</p>';
 $string['check_vendordir_info'] = 'vendor direktorioak ez luke gune publikoetan egon behar.';

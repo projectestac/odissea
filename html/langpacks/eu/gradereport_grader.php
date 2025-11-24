@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'eu', version '4.4'.
+ * Strings for component 'gradereport_grader', language 'eu', version '4.5'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -33,9 +33,8 @@ $string['ajaxfailedupdate'] = 'Ezin da [1] [2]-rako eguneratu';
 $string['ajaxfieldchanged'] = 'Orain editatzen ari zaren eremua aldatu da. Nahi al duzu eguneratutako balioa erabili?';
 $string['aria:dropdowncolumns'] = 'Tolestutako zutabeak aurkitu dira';
 $string['cellactions'] = 'Gelaxka-ekintzak';
-$string['clearall'] = 'Garbitu guztiak';
 $string['clearsearch'] = 'Garbitu bilatutako erabiltzaileak';
-$string['collapsedcolumns'] = 'Tolestutako zutabeak  <span class="badge rounded-pill bg-primary text-white ml-1" data-collapse="count">{$a}</span>';
+$string['collapsedcolumns'] = 'Tolestutako zutabeak <span class="badge rounded-pill bg-primary text-white ms-1" data-collapse="count">{$a}</span>';
 $string['editingmode_title'] = 'Kalifikatzaile-txostena editatzen';
 $string['eventgradereportviewed'] = 'Kalifikatzaile-txostena ikusi da';
 $string['grader:manage'] = 'Kudeatu kalifikatzaile-txostena';

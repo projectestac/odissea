@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'ja', version '4.4'.
+ * Strings for component 'quiz', language 'ja', version '4.5'.
  *
  * @package     quiz
  * @category    string
@@ -396,6 +396,7 @@ $string['eventslotgradeitemupdated'] = 'スロット評定項目が更新され�
 $string['eventslotmarkupdated'] = 'スロット評点が更新されました。';
 $string['eventslotmoved'] = 'スロットが移動されました。';
 $string['eventslotrequirepreviousupdated'] = 'スロットは前回の更新を必要とする';
+$string['eventslotversionupdated'] = 'スロットバージョンが更新されました。';
 $string['everynquestions'] = '問題 {$a} 問ごと';
 $string['everyquestion'] = '問題１問ごと';
 $string['everythingon'] = 'すべて有効';
@@ -430,7 +431,7 @@ $string['fractionsnomax'] = 'この問題で満点を取ることができるよ
 $string['fromfile'] = 'ファイルからインポートする:';
 $string['functiondisabledbysecuremode'] = 'この機能は現在無効にされています。';
 $string['generalfeedback'] = '全般的なフィードバック';
-$string['generalfeedback_help'] = '全般的なフィードバックは問題の受験後、学生に表示されるテキストです。解答によって決まる特定の問題のフィードバックとは異なり常に同じ全般的なフィードバックが表示されます。';
+$string['generalfeedback_help'] = '全般的なフィードバックは問題の受験後、学生に表示されるテキストです。解答により決まる特定の問題のフィードバックとは異なり常に同じ全般的なフィードバックが表示されます。';
 $string['gobacktoquiz'] = '戻る';
 $string['graceperiod'] = '送信猶予期間';
 $string['graceperiod_desc'] = '制限時間経過後に関して「開いている受験を送信できる場合は猶予期間を設けますが ...」が設定されている場合に許可されるデフォルトの猶予期間です。';
@@ -556,6 +557,7 @@ $string['maxmarks_help'] = 'それぞれの問題で利用可能な最大評点�
 $string['messageprovider:attempt_grading_complete'] = 'あなたの受験の評定完了通知';
 $string['messageprovider:attempt_overdue'] = 'あなたの小テスト受験が期限切れとなった場合の警告';
 $string['messageprovider:confirmation'] = 'あなた自身の小テスト送信確認';
+$string['messageprovider:quiz_open_soon'] = '小テスト公開予定';
 $string['messageprovider:submission'] = 'あなたの学生の小テスト送信の通知';
 $string['min'] = '最小';
 $string['minutes'] = '分';
@@ -649,7 +651,7 @@ $string['onlyteachersimport'] = '編集権限のある教師のみ問題をイ�
 $string['onthispage'] = 'このページ';
 $string['open'] = '未解答';
 $string['openafterclose'] = '小テストを更新できませんでした。あなたは終了日の後に開始日を指定しました。';
-$string['openclosedatesupdated'] = '小テスト公開日時および終了日時が更新されました。';
+$string['openclosedatesupdated'] = '小テスト公開日時および終了日時';
 $string['optional'] = 'オプション';
 $string['orderandpaging'] = '問題順およびページング';
 $string['orderandpaging_help'] = 'それぞれの問題の反対側にある番号10、20、30、 ... は問題順を意味します。問題を追加できるよう番号は10ずつ増やされます。問題順を並べ替えるには番号を変更した後、「問題を並べ替える」ボタンをクリックしてください。
@@ -831,6 +833,12 @@ $string['quizopen'] = '小テスト受験可能期間の開始日時';
 $string['quizopenclose'] = '受験可能期間の開始および終了日時';
 $string['quizopenclose_help'] = '学生は受験可能期間の開始後のみ受験を開始することができます。また、受験可能期間の終了日時の前に受験を完了する必要があります。';
 $string['quizopenclose_link'] = 'mod/quiz/timing';
+$string['quizopendatesoonhtml'] = '<p>{$a->lastname} さん</p>
+<p>コース「 {$a->coursename} 」の小テスト「 <strong>{$a->quizname}</strong> 」がまもなく公開されます。
+<p><strong>公開日: {$a->timeopen}</strong></p>
+<p><strong>終了日: {$a->timeclose}</strong></p>
+<p><a href="{$a->url}">小テストに移動する</a></p>';
+$string['quizopendatesoonsubject'] = '公開 {$a->timeopen}: {$a->quizname}';
 $string['quizopened'] = 'この小テストは受験可能です。';
 $string['quizopenedon'] = 'この小テストは {$a} から受験可能となりました。';
 $string['quizopens'] = '受験可能期間の開始日時';
@@ -882,9 +890,9 @@ $string['regradenotallowed'] = 'あなたにはこの小テストを再評定す
 $string['regradingquestion'] = '「 {$a} 」の再評定';
 $string['regradingquiz'] = '問題「 {$a} 」の再評定';
 $string['remove'] = '削除';
-$string['removeallgroupoverrides'] = 'すべてのグループオーバーライドを削除する';
-$string['removeallquizattempts'] = 'すべての小テスト受験を削除する';
-$string['removealluseroverrides'] = 'すべてのユーザオーバーライドを削除する';
+$string['removeallgroupoverrides'] = 'すべてのグループオーバーライド';
+$string['removeallquizattempts'] = 'すべての小テスト受験';
+$string['removealluseroverrides'] = 'すべてのユーザオーバーライド';
 $string['removeemptypage'] = '空のページを削除する';
 $string['removepagebreak'] = '改ページを削除する';
 $string['removeselected'] = '選択したものを削除する';
@@ -997,6 +1005,7 @@ $string['selectmultipletoolbar'] = '複数のツールバーを選択する';
 $string['selectnone'] = 'すべての選択を解除する';
 $string['selectquestionslot'] = '問題を選択する {$a}';
 $string['selectquestiontype'] = '-- 問題タイプを選択してください --';
+$string['sendnotificationopendatesoon'] = '小テスト公開日が近づいた場合、ユーザに通知する';
 $string['serveradded'] = 'サーバ追加';
 $string['serveridentifier'] = '識別子';
 $string['serverinfo'] = 'サーバ情報';
@@ -1065,6 +1074,7 @@ $string['subplugintype_quizaccess_plural'] = 'アクセスルール';
 $string['substitutedby'] = 'が次の値と置換されます:';
 $string['summaryofattempt'] = '受験概要';
 $string['summaryofattempts'] = 'あなたの受験';
+$string['summaryofattemptscaption'] = '受験 {$a} 概要';
 $string['temporaryblocked'] = 'あなたは小テストを一時的に受験することができません。<br /> 次に小テストを受験できる日時は:';
 $string['theattempt'] = '受験';
 $string['theattempt_help'] = '学生が受験すべてをレビューできるかどうか設定します。';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'fr', version '4.4'.
+ * Strings for component 'cohort', language 'fr', version '4.5'.
  *
  * @package     cohort
  * @category    string
@@ -49,7 +49,10 @@ $string['currentusers'] = 'Utilisateurs actuels';
 $string['currentusersmatching'] = 'Utilisateurs actuels correspondant à';
 $string['defaultcontext'] = 'Contexte par défaut';
 $string['delcohort'] = 'Supprimer cohorte';
+$string['delcohortsconfirm'] = 'Cette opération supprimera les cohortes et toutes les données associées.';
+$string['delcohortssuccess'] = 'Cohortes sélectionnées supprimées';
 $string['delconfirm'] = 'Cette opération supprimera la cohorte « {$a} » et toutes les données associées.';
+$string['delsuccess'] = 'Cohorte supprimée';
 $string['description'] = 'Description';
 $string['displayedrows'] = '{$a->displayed} rangées affichées sur {$a->total}.';
 $string['duplicateidnumber'] = 'Une cohorte de même identifiant existe déjà';

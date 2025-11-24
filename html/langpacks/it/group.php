@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'it', version '4.4'.
+ * Strings for component 'group', language 'it', version '4.5'.
  *
  * @package     group
  * @category    string
@@ -50,8 +50,8 @@ $string['databaseupgradegroups'] = 'La versione dei gruppi ora è {$a}';
 $string['defaultgrouping'] = 'Raggruppamento di default';
 $string['defaultgroupingname'] = 'Raggruppamento';
 $string['defaultgroupname'] = 'Gruppo';
-$string['deleteallgroupings'] = 'Elimina tutti i raggruppamenti';
-$string['deleteallgroups'] = 'Elimina tutti i gruppi';
+$string['deleteallgroupings'] = 'Tutti i raggruppamenti';
+$string['deleteallgroups'] = 'Tutti i gruppi';
 $string['deletegroupconfirm'] = 'Sei sicuro di eliminare il gruppo \'{$a}\'?';
 $string['deletegrouping'] = 'Elimina raggruppamento';
 $string['deletegroupingconfirm'] = 'Sei sicuro di eliminare il raggruppamento \'{$a}\'? (I gruppi facenti parte del  raggruppamento non saranno eliminati.)';
@@ -198,8 +198,8 @@ $string['random'] = 'Casualmente';
 $string['removefromgroup'] = 'Rimuovi utente dal gruppo {$a}';
 $string['removefromgroupconfirm'] = 'Sei sicuro di rimuovere l\'utente "{$a->user}" dal gruppo "{$a->group}"?';
 $string['removegroupfromselectedgrouping'] = 'Rimuovi gruppo dal raggruppamento';
-$string['removegroupingsmembers'] = 'Rimuovi tutti i gruppi dai raggruppamenti';
-$string['removegroupsmembers'] = 'Rimuovi tutti i membri del gruppo';
+$string['removegroupingsmembers'] = 'Tutti i gruppi dai raggruppamenti';
+$string['removegroupsmembers'] = 'Tutti i membri del gruppo';
 $string['removeselectedusers'] = 'Rimuovi utenti selezionati';
 $string['selectfromgroup'] = 'Seleziona membri dal gruppo';
 $string['selectfromgrouping'] = 'Seleziona membri dal raggruppamento';

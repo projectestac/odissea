@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'ja', version '4.4'.
+ * Strings for component 'tool_dataprivacy', language 'ja', version '4.5'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -192,7 +192,7 @@ $string['gdpr_art_6_1_f_description'] = '特にデータ主体が子供の場合
 $string['gdpr_art_6_1_f_name'] = '正当な利益 (GDPR Art. 6.1(f))';
 $string['gdpr_art_9_2_a_description'] = '連合または加盟国法が提供するGDPR第9条第1項で言及されるデータ主体により解除されない禁止を除き1つまたはそれ以上の指定された目的のためデータ主体はこれらの個人データ処理のため明確に同意しています。';
 $string['gdpr_art_9_2_a_name'] = '明確な同意 (GDPR Art. 9.2(a))';
-$string['gdpr_art_9_2_b_description'] = '連合または加盟国法または加盟国法に従ったデータ主体の基本的権利および利益のための適切な保護条項を提供する団体協定によって公認される限りにおいて雇用および社会保障および社会保護法の分野で管理者またはデータ主体の義務および特定の権利を行使する目的として処理が必要です。';
+$string['gdpr_art_9_2_b_description'] = '連合または加盟国法または加盟国法に従ったデータ主体の基本的権利および利益のための適切な保護条項を提供する団体協定により公認される限りにおいて雇用および社会保障および社会保護法の分野で管理者またはデータ主体の義務および特定の権利を行使する目的として処理が必要です。';
 $string['gdpr_art_9_2_b_name'] = '雇用および社会保障/保護法 (GDPR Art. 9.2(b))';
 $string['gdpr_art_9_2_c_description'] = 'データ主体が物理的または合法的に同意できない場合、データ主体または別の自然人の重大利益を保護するため処理が必要です。';
 $string['gdpr_art_9_2_c_name'] = '重大利益の保護 (GDPR Art. 9.2(c))';
@@ -216,7 +216,7 @@ $string['inherit'] = '継承';
 $string['lawfulbases'] = '法的根拠';
 $string['lawfulbases_help'] = '個人データを処理するための法的根拠として提供するため少なくとも1つのオプションを選択してください。これらの法的根拠の詳細は<a href="https://gdpr-info.eu/art-6-gdpr/" target="_blank">GDPR Art. 6.1</a>をご覧ください。';
 $string['markcomplete'] = '完了マークする';
-$string['markedcomplete'] = 'あなたの問い合わせはプライバシー責任者によって完了マークされました。';
+$string['markedcomplete'] = 'あなたの問い合わせはプライバシー責任者により完了マークされました。';
 $string['message'] = 'メッセージ';
 $string['messagelabel'] = 'メッセージ:';
 $string['messageprovider:contactdataprotectionofficer'] = 'データリクエスト';
@@ -255,9 +255,9 @@ $string['privacy:metadata:purpose'] = 'このサイトのために作成され�
 $string['privacy:metadata:purpose:usermodified'] = '目的を修正したユーザのIDです。';
 $string['privacy:metadata:request'] = 'このサイトのために作成された個人データリクエスト (個人情報調査および削除リクエスト) の情報です。';
 $string['privacy:metadata:request:comments'] = 'リクエストに付随するすべてのユーザコメントです。';
-$string['privacy:metadata:request:dpocomment'] = 'リクエストに関してサイトのプライバシー責任者によって作成されたすべてのコメントです。';
+$string['privacy:metadata:request:dpocomment'] = 'リクエストに関してサイトのプライバシー責任者により作成されたすべてのコメントです。';
 $string['privacy:metadata:request:requestedby'] = '別のユーザとして作成された場合のリクエストを作成したユーザのIDです。';
-$string['privacy:metadata:request:timecreated'] = 'タイムスタンプはユーザによってリクエストが作成された日時を示します。';
+$string['privacy:metadata:request:timecreated'] = 'タイムスタンプはユーザによりリクエストが作成された日時を示します。';
 $string['privacy:metadata:request:userid'] = 'リクエストが属するユーザのIDです。';
 $string['privacyofficeronly'] = 'プライバシー責任者ロール ({$a}) が割り当てられたユーザのみこのコンテンツにアクセスすることができます。';
 $string['privacyrequestexpiry'] = 'データリクエスト有効期限';

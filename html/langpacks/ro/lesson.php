@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ro', version '4.4'.
+ * Strings for component 'lesson', language 'ro', version '4.5'.
  *
  * @package     lesson
  * @category    string
@@ -153,7 +153,7 @@ $string['customscoring'] = 'Punctare personalizată';
 $string['customscoring_help'] = 'Dacă opțiunea este activată, valoarea numărului întreg (pozitivă sau negativă) poate fi inserată pentru fiecare răspuns.';
 $string['deadline'] = 'Dată limită';
 $string['defaultessayresponse'] = 'Eseul dvs. va fi notat de profesorul dvs.';
-$string['deleteallattempts'] = 'Şterge toate încercările de parcurgere a lecţiei';
+$string['deleteallattempts'] = 'Toate încercările de parcurgere a lecţiei';
 $string['deletedefaults'] = 'S-au şters {$a} x param implicit lecţie';
 $string['deletedpage'] = 'Pagină ştearsă';
 $string['deletepagenamed'] = 'Ștergeți pagina: {$a}';
@@ -519,8 +519,8 @@ $string['rank'] = 'Rang';
 $string['rawgrade'] = 'Nota brută';
 $string['receivedcredit'] = 'Credit primit';
 $string['redisplaypage'] = 'Reafișează pagina';
-$string['removeallgroupoverrides'] = 'Ștergeți toate suprascrierile grupului';
-$string['removealluseroverrides'] = 'Ștergeți toate suprascrierile pentru utilizatori';
+$string['removeallgroupoverrides'] = 'Toate suprascrierile grupului';
+$string['removealluseroverrides'] = 'Toate suprascrierile utilizatorului';
 $string['report'] = 'Raport';
 $string['reports'] = 'Rapoarte';
 $string['response'] = 'Răspuns';

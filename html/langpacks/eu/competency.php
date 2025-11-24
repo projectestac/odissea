@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'eu', version '4.4'.
+ * Strings for component 'competency', language 'eu', version '4.5'.
  *
  * @package     competency
  * @category    string
@@ -29,6 +29,8 @@ $string['allchildrenarecomplete'] = 'Beheragoko guztiak osatuta daude';
 $string['competencies'] = 'Konpetentziak';
 $string['competenciesarenotenabled'] = 'Konpetentziak ez daude gaituta.';
 $string['competenciessettings'] = 'Konpetentzien ezarpenak';
+$string['competency'] = 'Konpetentzia';
+$string['competencyframework'] = 'Konpetentzia-markoa';
 $string['completeplanstask'] = 'Osatu amaiera-datara heldutako ikasketa-planak';
 $string['coursecompetencyoutcome_complete'] = 'Osatu konpetentzia';
 $string['coursecompetencyoutcome_evidence'] = 'Erantsi ebidentzia';
@@ -38,7 +40,7 @@ $string['coursemodulecompetencyoutcome_complete'] = 'Osatu konpetentzia';
 $string['coursemodulecompetencyoutcome_evidence'] = 'Erantsi ebidentzia';
 $string['coursemodulecompetencyoutcome_none'] = 'Ez egin ezer';
 $string['coursemodulecompetencyoutcome_recommend'] = 'Bidali berrikusteko';
-$string['deletecompetencyratings'] = 'Ezabatu konpetentzien puntuazioa';
+$string['deletecompetencyratings'] = 'Konpetentzien puntuazioa';
 $string['duplicateditemname'] = '{$a} (kopia)';
 $string['enablecompetencies'] = 'Gaitu konpetentziak';
 $string['enablecompetencies_desc'] = 'Konpetentziek erabiltzaileak ikasketa-planen arabera ebaluatuak izatea ahalbidetzen dute.';
@@ -163,8 +165,10 @@ $string['privacy:metadata:usermodified'] = 'Erregistroa sortu edo aldatu zuen er
 $string['privacy:path:plans'] = 'Ikasketa-planak';
 $string['privacy:path:relatedtome'] = 'Nirekin lotutakoak';
 $string['privacy:path:userevidence'] = 'Aurretik ikasitakoaren ebidentzia';
+$string['proficient'] = 'Gai';
 $string['pushcourseratingstouserplans'] = 'Eraman ikastaroko puntuazioak ikasketa-plan bakoitzera';
 $string['pushcourseratingstouserplans_desc'] = 'Lehenetsitako balioa ikastaro ezarpenetarako ikasketa-plan bakoitza eguneratzeko ikastaro-konpetentziak kalifikatzen direnean.';
+$string['rating'] = 'Puntuazioa';
 $string['syncplanscohorts'] = 'Sinkronizatu planak ikasketa-plan txantiloietako kohorteetatik';
 $string['taxonomy_behaviour'] = 'Jokaera';
 $string['taxonomy_competency'] = 'Konpetentzia';
@@ -197,6 +201,7 @@ $string['usercommentedonaplanhtml'] = '<p>{$a->fullname}(e)k iruzkina egin du "{
 <p>Ikusi: <a href="{$a->url}">{$a->urlname}</a>.</p>';
 $string['usercommentedonaplansmall'] = '{$a->fullname}(e)k iruzkina egin du "{$a->plan}" ikasketa-planean.';
 $string['usercommentedonaplansubject'] = '{$a}(e)k iruzkina egin du ikasketa-planean.';
+$string['usercompetency'] = 'Erabiltzailearen konpetentzia';
 $string['usercompetencystatus_idle'] = 'Ez dago aktiboa';
 $string['usercompetencystatus_inreview'] = 'Berrikusten';
 $string['usercompetencystatus_waitingforreview'] = 'Berrikusketaren zain';

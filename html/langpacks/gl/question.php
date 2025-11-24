@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'gl', version '4.4'.
+ * Strings for component 'question', language 'gl', version '4.5'.
  *
  * @package     question
  * @category    string
@@ -321,7 +321,6 @@ $string['nocate'] = 'Non hai tal categoría {$a}!';
 $string['noconditionspecified'] = 'Especifique unha condición';
 $string['nopermissionadd'] = 'Non ten permiso para engadir preguntas aquí.';
 $string['nopermissionedit'] = 'Non ten permiso para editar preguntas dende aquí.';
-$string['nopermissionmove'] = 'Non ten permiso para mover preguntas dende aquí. Debe gardar a pregunta nesta categoría ou gardala como unha pregunta nova.';
 $string['noprobs'] = 'Non se atoparon problemas na súa base de datos de preguntas.';
 $string['noquestionbanks'] = 'Non se atopou ningún complemento do banco de preguntas.';
 $string['noquestions'] = 'Non se atoparon preguntas que poidan exportarse. Asegúrese de ter seleccionada unha categoría que exportar que conteña as preguntas.';
