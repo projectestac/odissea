@@ -4,6 +4,57 @@ More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
 
+Changes 25.11.25
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 4.5.7+
+- Updated langpacks
+- Alexandria importer: Updated plugin
+- attendance: Upgraded module
+- boost_union: Added theme
+- choicegroup: Upgraded module
+- cloze: Added tiny plugin
+- cloze: Upgraded atto plugin
+- Coderunner behaviour: Added submodule
+- Coderunner question type: Added submodule
+- completion_progress: Updated block
+- configurable_reports: Upgraded block
+- Course quotas: Updated report
+- fontcolor: Added tiny plugin
+- fontfamily: Upgraded atto plugin
+- fontfamily: Added tiny plugin
+- fontsize: Added tiny plugin
+- fontsize: Upgraded atto plugin
+- geogebra: Upgraded module
+- hotpot: Upgraded module
+- hvp: Upgraded module
+- jclic: Upgraded module
+- journal: Upgraded module
+- Local oauth: Updated plugin
+- Migratehvp2h5p: Upgraded admin tool
+- multitopic: Added course format
+- purgecategory: Added question bank plugin
+- qtype_calculated: Fix for negative answers (MDL-76024)
+- questionbankoverview: Added report
+- questionnaire: Upgraded module
+- Questions: Added scripts to clean up duplicates
+- qv: Upgraded module
+- rcommon: Fixes and updates for Moodle 4.5
+- rcontent: Fixes and updates for Moodle 4.5
+- redislock: Upgraded local plugin
+- rgrade: Updated block
+- simple: Upgraded course format
+- Theme selector: Restrict access to boost_union
+- tiles: Added course format
+- tiny_c4l: Added tiny plugin
+- tiny_cloze: Updated editor plugin
+- tiny_fontcolor: Updated editor plugin
+- Vicens Vives: Upgraded all plugins
+- Wiris: Added tiny plugin
+- Wiris: Updated all components
+- xtec2020: Removed theme
+- xtecboost: Upgraded theme
+
+
 Changes 25.10.09
 ---------------------------------------------------------------------------------------
 - Tiles: Added course format
