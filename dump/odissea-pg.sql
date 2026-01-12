@@ -2,8 +2,10 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 14.11 (Ubuntu 14.11-0ubuntu0.22.04.1)
--- Dumped by pg_dump version 14.11 (Ubuntu 14.11-0ubuntu0.22.04.1)
+\restrict zdrRMf3PmROIjxhCEAzhfjXeKxg9OZGkcpveLfafhyBRvVjp2okxEspaTsgOhXJ
+
+-- Dumped from database version 16.10
+-- Dumped by pg_dump version 16.10
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -276,6 +278,180 @@ CREATE SEQUENCE public.m2adminpresets_plug_id_seq
 --
 
 ALTER SEQUENCE public.m2adminpresets_plug_id_seq OWNED BY public.m2adminpresets_plug.id;
+
+
+--
+-- Name: m2ai_action_generate_image; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2ai_action_generate_image (
+    id bigint NOT NULL,
+    prompt text,
+    numberimages bigint NOT NULL,
+    quality character varying(21) DEFAULT ''::character varying NOT NULL,
+    aspectratio character varying(20),
+    style character varying(20),
+    sourceurl text,
+    revisedprompt text
+);
+
+
+--
+-- Name: m2ai_action_generate_image_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2ai_action_generate_image_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2ai_action_generate_image_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2ai_action_generate_image_id_seq OWNED BY public.m2ai_action_generate_image.id;
+
+
+--
+-- Name: m2ai_action_generate_text; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2ai_action_generate_text (
+    id bigint NOT NULL,
+    prompt text,
+    responseid character varying(128),
+    fingerprint character varying(128),
+    generatedcontent text,
+    finishreason character varying(128),
+    prompttokens bigint,
+    completiontoken bigint
+);
+
+
+--
+-- Name: m2ai_action_generate_text_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2ai_action_generate_text_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2ai_action_generate_text_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2ai_action_generate_text_id_seq OWNED BY public.m2ai_action_generate_text.id;
+
+
+--
+-- Name: m2ai_action_register; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2ai_action_register (
+    id bigint NOT NULL,
+    actionname character varying(100) DEFAULT ''::character varying NOT NULL,
+    actionid bigint NOT NULL,
+    success smallint DEFAULT 0 NOT NULL,
+    userid bigint NOT NULL,
+    contextid bigint NOT NULL,
+    provider character varying(100) DEFAULT ''::character varying NOT NULL,
+    errorcode smallint,
+    errormessage text,
+    timecreated bigint NOT NULL,
+    timecompleted bigint
+);
+
+
+--
+-- Name: m2ai_action_register_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2ai_action_register_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2ai_action_register_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2ai_action_register_id_seq OWNED BY public.m2ai_action_register.id;
+
+
+--
+-- Name: m2ai_action_summarise_text; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2ai_action_summarise_text (
+    id bigint NOT NULL,
+    prompt text,
+    responseid character varying(128),
+    fingerprint character varying(128),
+    generatedcontent text,
+    finishreason character varying(128),
+    prompttokens bigint,
+    completiontoken bigint
+);
+
+
+--
+-- Name: m2ai_action_summarise_text_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2ai_action_summarise_text_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2ai_action_summarise_text_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2ai_action_summarise_text_id_seq OWNED BY public.m2ai_action_summarise_text.id;
+
+
+--
+-- Name: m2ai_policy_register; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2ai_policy_register (
+    id bigint NOT NULL,
+    userid bigint NOT NULL,
+    contextid bigint NOT NULL,
+    timeaccepted bigint NOT NULL
+);
+
+
+--
+-- Name: m2ai_policy_register_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2ai_policy_register_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2ai_policy_register_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2ai_policy_register_id_seq OWNED BY public.m2ai_policy_register.id;
 
 
 --
@@ -688,8 +864,8 @@ CREATE TABLE public.m2assign (
     blindmarking smallint DEFAULT 0 NOT NULL,
     hidegrader smallint DEFAULT 0 NOT NULL,
     revealidentities smallint DEFAULT 0 NOT NULL,
-    attemptreopenmethod character varying(10) DEFAULT 'none'::character varying NOT NULL,
-    maxattempts integer DEFAULT '-1'::integer NOT NULL,
+    attemptreopenmethod character varying(10) DEFAULT 'untilpass'::character varying NOT NULL,
+    maxattempts integer DEFAULT 1 NOT NULL,
     markingworkflow smallint DEFAULT 0 NOT NULL,
     markingallocation smallint DEFAULT 0 NOT NULL,
     sendstudentnotifications smallint DEFAULT 1 NOT NULL,
@@ -697,7 +873,8 @@ CREATE TABLE public.m2assign (
     activity text,
     activityformat smallint DEFAULT 0 NOT NULL,
     timelimit bigint DEFAULT 0 NOT NULL,
-    submissionattachments smallint DEFAULT 0 NOT NULL
+    submissionattachments smallint DEFAULT 0 NOT NULL,
+    markinganonymous smallint DEFAULT 0 NOT NULL
 );
 
 
@@ -1217,147 +1394,6 @@ CREATE SEQUENCE public.m2assignfeedback_file_id_seq
 --
 
 ALTER SEQUENCE public.m2assignfeedback_file_id_seq OWNED BY public.m2assignfeedback_file.id;
-
-
---
--- Name: m2assignment; Type: TABLE; Schema: public; Owner: -
---
-
-CREATE TABLE public.m2assignment (
-    id bigint NOT NULL,
-    course bigint DEFAULT 0 NOT NULL,
-    name character varying(255) DEFAULT ''::character varying NOT NULL,
-    intro text NOT NULL,
-    introformat smallint DEFAULT 0 NOT NULL,
-    assignmenttype character varying(50) DEFAULT ''::character varying NOT NULL,
-    resubmit smallint DEFAULT 0 NOT NULL,
-    preventlate smallint DEFAULT 0 NOT NULL,
-    emailteachers smallint DEFAULT 0 NOT NULL,
-    var1 bigint DEFAULT 0,
-    var2 bigint DEFAULT 0,
-    var3 bigint DEFAULT 0,
-    var4 bigint DEFAULT 0,
-    var5 bigint DEFAULT 0,
-    maxbytes bigint DEFAULT 100000 NOT NULL,
-    timedue bigint DEFAULT 0 NOT NULL,
-    timeavailable bigint DEFAULT 0 NOT NULL,
-    grade bigint DEFAULT 0 NOT NULL,
-    timemodified bigint DEFAULT 0 NOT NULL
-);
-
-
---
--- Name: TABLE m2assignment; Type: COMMENT; Schema: public; Owner: -
---
-
-COMMENT ON TABLE public.m2assignment IS 'Defines assignments';
-
-
---
--- Name: m2assignment_id_seq; Type: SEQUENCE; Schema: public; Owner: -
---
-
-CREATE SEQUENCE public.m2assignment_id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
---
--- Name: m2assignment_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
---
-
-ALTER SEQUENCE public.m2assignment_id_seq OWNED BY public.m2assignment.id;
-
-
---
--- Name: m2assignment_submissions; Type: TABLE; Schema: public; Owner: -
---
-
-CREATE TABLE public.m2assignment_submissions (
-    id bigint NOT NULL,
-    assignment bigint DEFAULT 0 NOT NULL,
-    userid bigint DEFAULT 0 NOT NULL,
-    timecreated bigint DEFAULT 0 NOT NULL,
-    timemodified bigint DEFAULT 0 NOT NULL,
-    numfiles bigint DEFAULT 0 NOT NULL,
-    data1 text,
-    data2 text,
-    grade bigint DEFAULT 0 NOT NULL,
-    submissioncomment text NOT NULL,
-    format smallint DEFAULT 0 NOT NULL,
-    teacher bigint DEFAULT 0 NOT NULL,
-    timemarked bigint DEFAULT 0 NOT NULL,
-    mailed smallint DEFAULT 0 NOT NULL
-);
-
-
---
--- Name: TABLE m2assignment_submissions; Type: COMMENT; Schema: public; Owner: -
---
-
-COMMENT ON TABLE public.m2assignment_submissions IS 'Info about submitted assignments';
-
-
---
--- Name: m2assignment_submissions_id_seq; Type: SEQUENCE; Schema: public; Owner: -
---
-
-CREATE SEQUENCE public.m2assignment_submissions_id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
---
--- Name: m2assignment_submissions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
---
-
-ALTER SEQUENCE public.m2assignment_submissions_id_seq OWNED BY public.m2assignment_submissions.id;
-
-
---
--- Name: m2assignment_upgrade; Type: TABLE; Schema: public; Owner: -
---
-
-CREATE TABLE public.m2assignment_upgrade (
-    id bigint NOT NULL,
-    oldcmid bigint DEFAULT 0 NOT NULL,
-    oldinstance bigint DEFAULT 0 NOT NULL,
-    newcmid bigint DEFAULT 0 NOT NULL,
-    newinstance bigint DEFAULT 0 NOT NULL,
-    timecreated bigint DEFAULT 0 NOT NULL
-);
-
-
---
--- Name: TABLE m2assignment_upgrade; Type: COMMENT; Schema: public; Owner: -
---
-
-COMMENT ON TABLE public.m2assignment_upgrade IS 'Info about upgraded assignments';
-
-
---
--- Name: m2assignment_upgrade_id_seq; Type: SEQUENCE; Schema: public; Owner: -
---
-
-CREATE SEQUENCE public.m2assignment_upgrade_id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
---
--- Name: m2assignment_upgrade_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
---
-
-ALTER SEQUENCE public.m2assignment_upgrade_id_seq OWNED BY public.m2assignment_upgrade.id;
 
 
 --
@@ -2738,7 +2774,6 @@ CREATE TABLE public.m2bigbluebuttonbn (
     disablepublicchat smallint DEFAULT 0 NOT NULL,
     disablenote smallint DEFAULT 0 NOT NULL,
     hideuserlist smallint DEFAULT 0 NOT NULL,
-    lockedlayout smallint DEFAULT 0 NOT NULL,
     completionattendance integer DEFAULT 0 NOT NULL,
     completionengagementchats integer DEFAULT 0 NOT NULL,
     completionengagementtalks integer DEFAULT 0 NOT NULL,
@@ -2748,7 +2783,8 @@ CREATE TABLE public.m2bigbluebuttonbn (
     guestallowed smallint DEFAULT 0,
     mustapproveuser smallint DEFAULT 1,
     guestlinkuid character varying(1024),
-    guestpassword character varying(255)
+    guestpassword character varying(255),
+    showpresentation smallint DEFAULT 1 NOT NULL
 );
 
 
@@ -2931,6 +2967,45 @@ COMMENT ON TABLE public.m2block IS 'contains all installed blocks';
 
 
 --
+-- Name: m2block_completion_progress; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2block_completion_progress (
+    id bigint NOT NULL,
+    blockinstanceid bigint NOT NULL,
+    userid bigint NOT NULL,
+    percentage smallint,
+    timemodified bigint NOT NULL
+);
+
+
+--
+-- Name: TABLE m2block_completion_progress; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2block_completion_progress IS 'Cached completion scores';
+
+
+--
+-- Name: m2block_completion_progress_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2block_completion_progress_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2block_completion_progress_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2block_completion_progress_id_seq OWNED BY public.m2block_completion_progress.id;
+
+
+--
 -- Name: m2block_configurable_reports; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -2950,7 +3025,9 @@ CREATE TABLE public.m2block_configurable_reports (
     lastexecutiontime bigint DEFAULT 0 NOT NULL,
     cron smallint DEFAULT 0 NOT NULL,
     remote smallint DEFAULT 0,
-    summaryformat smallint DEFAULT 0 NOT NULL
+    summaryformat smallint DEFAULT 0 NOT NULL,
+    displaytotalrecords smallint DEFAULT 1,
+    displayprintbutton smallint DEFAULT 1
 );
 
 
@@ -2978,6 +3055,89 @@ CREATE SEQUENCE public.m2block_configurable_reports_id_seq
 --
 
 ALTER SEQUENCE public.m2block_configurable_reports_id_seq OWNED BY public.m2block_configurable_reports.id;
+
+
+--
+-- Name: m2block_grade_me; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2block_grade_me (
+    id bigint NOT NULL,
+    itemname character varying(255),
+    itemtype character varying(30) DEFAULT ''::character varying NOT NULL,
+    itemmodule character varying(30),
+    iteminstance bigint,
+    itemsortorder bigint DEFAULT 0 NOT NULL,
+    courseid bigint DEFAULT 0 NOT NULL,
+    coursename character varying(255) DEFAULT ''::character varying NOT NULL,
+    coursemoduleid bigint DEFAULT 0 NOT NULL
+);
+
+
+--
+-- Name: TABLE m2block_grade_me; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2block_grade_me IS 'Caches information about gradeable items.';
+
+
+--
+-- Name: m2block_grade_me_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2block_grade_me_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2block_grade_me_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2block_grade_me_id_seq OWNED BY public.m2block_grade_me.id;
+
+
+--
+-- Name: m2block_grade_me_quiz_ngrade; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2block_grade_me_quiz_ngrade (
+    id bigint NOT NULL,
+    userid bigint,
+    quizid bigint,
+    questionattemptstepid bigint,
+    courseid bigint,
+    attemptid bigint
+);
+
+
+--
+-- Name: TABLE m2block_grade_me_quiz_ngrade; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2block_grade_me_quiz_ngrade IS 'Caches information about quizes needing grades.';
+
+
+--
+-- Name: m2block_grade_me_quiz_ngrade_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2block_grade_me_quiz_ngrade_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2block_grade_me_quiz_ngrade_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2block_grade_me_quiz_ngrade_id_seq OWNED BY public.m2block_grade_me_quiz_ngrade.id;
 
 
 --
@@ -3826,7 +3986,8 @@ CREATE TABLE public.m2choicegroup (
     completionsubmit smallint DEFAULT 0 NOT NULL,
     sortgroupsby bigint DEFAULT 0 NOT NULL,
     maxenrollments bigint DEFAULT 0,
-    onlyactive smallint DEFAULT 0 NOT NULL
+    onlyactive smallint DEFAULT 0 NOT NULL,
+    defaultgroupdescriptionstate smallint DEFAULT 0
 );
 
 
@@ -4019,6 +4180,112 @@ CREATE SEQUENCE public.m2comments_id_seq
 --
 
 ALTER SEQUENCE public.m2comments_id_seq OWNED BY public.m2comments.id;
+
+
+--
+-- Name: m2communication; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2communication (
+    id bigint NOT NULL,
+    instanceid bigint NOT NULL,
+    component character varying(100) DEFAULT ''::character varying NOT NULL,
+    instancetype character varying(100) DEFAULT ''::character varying NOT NULL,
+    provider character varying(100) DEFAULT ''::character varying NOT NULL,
+    roomname character varying(255),
+    avatarfilename character varying(100),
+    active smallint DEFAULT 1 NOT NULL,
+    avatarsynced smallint DEFAULT 0 NOT NULL,
+    contextid bigint NOT NULL
+);
+
+
+--
+-- Name: m2communication_customlink; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2communication_customlink (
+    id bigint NOT NULL,
+    commid bigint NOT NULL,
+    url character varying(255)
+);
+
+
+--
+-- Name: TABLE m2communication_customlink; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2communication_customlink IS 'Stores the link associated with a custom link communication instance.';
+
+
+--
+-- Name: m2communication_customlink_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2communication_customlink_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2communication_customlink_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2communication_customlink_id_seq OWNED BY public.m2communication_customlink.id;
+
+
+--
+-- Name: m2communication_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2communication_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2communication_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2communication_id_seq OWNED BY public.m2communication.id;
+
+
+--
+-- Name: m2communication_user; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2communication_user (
+    id bigint NOT NULL,
+    commid bigint NOT NULL,
+    userid bigint NOT NULL,
+    synced smallint DEFAULT 0 NOT NULL,
+    deleted smallint DEFAULT 0 NOT NULL
+);
+
+
+--
+-- Name: m2communication_user_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2communication_user_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2communication_user_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2communication_user_id_seq OWNED BY public.m2communication_user.id;
 
 
 --
@@ -5012,7 +5279,8 @@ CREATE TABLE public.m2course (
     originalcourseid bigint,
     downloadcontent smallint,
     showactivitydates smallint DEFAULT 0 NOT NULL,
-    showcompletionconditions smallint
+    showcompletionconditions smallint,
+    pdfexportfont character varying(50)
 );
 
 
@@ -5566,7 +5834,9 @@ CREATE TABLE public.m2course_sections (
     sequence text,
     visible smallint DEFAULT 1 NOT NULL,
     availability text,
-    timemodified bigint DEFAULT 0 NOT NULL
+    timemodified bigint DEFAULT 0 NOT NULL,
+    component character varying(100),
+    itemid bigint
 );
 
 
@@ -5717,7 +5987,8 @@ CREATE TABLE public.m2customfield_data (
     valueformat bigint NOT NULL,
     timecreated bigint NOT NULL,
     timemodified bigint NOT NULL,
-    contextid bigint
+    contextid bigint,
+    valuetrust smallint DEFAULT 0 NOT NULL
 );
 
 
@@ -7222,7 +7493,8 @@ CREATE TABLE public.m2external_tokens (
     iprestriction character varying(255),
     validuntil bigint,
     timecreated bigint NOT NULL,
-    lastaccess bigint
+    lastaccess bigint,
+    name character varying(255)
 );
 
 
@@ -7930,6 +8202,45 @@ CREATE SEQUENCE public.m2folder_id_seq
 --
 
 ALTER SEQUENCE public.m2folder_id_seq OWNED BY public.m2folder.id;
+
+
+--
+-- Name: m2format_tiles_tile_options; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2format_tiles_tile_options (
+    id bigint NOT NULL,
+    courseid bigint NOT NULL,
+    optiontype bigint NOT NULL,
+    elementid bigint NOT NULL,
+    optionvalue text NOT NULL
+);
+
+
+--
+-- Name: TABLE m2format_tiles_tile_options; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2format_tiles_tile_options IS 'Options for individual tiles (e.g. photo file names for each section).             We use this in preference to course_format_options, since then we do not lose data when other format is selected.';
+
+
+--
+-- Name: m2format_tiles_tile_options_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2format_tiles_tile_options_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2format_tiles_tile_options_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2format_tiles_tile_options_id_seq OWNED BY public.m2format_tiles_tile_options.id;
 
 
 --
@@ -9828,7 +10139,9 @@ CREATE TABLE public.m2groups (
     enrolmentkey character varying(50),
     picture bigint DEFAULT 0 NOT NULL,
     timecreated bigint DEFAULT 0 NOT NULL,
-    timemodified bigint DEFAULT 0 NOT NULL
+    timemodified bigint DEFAULT 0 NOT NULL,
+    visibility smallint DEFAULT 0 NOT NULL,
+    participation smallint DEFAULT 1 NOT NULL
 );
 
 
@@ -12376,6 +12689,37 @@ ALTER SEQUENCE public.m2lti_access_tokens_id_seq OWNED BY public.m2lti_access_to
 
 
 --
+-- Name: m2lti_coursevisible; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2lti_coursevisible (
+    id bigint NOT NULL,
+    typeid bigint NOT NULL,
+    courseid bigint NOT NULL,
+    coursevisible smallint NOT NULL
+);
+
+
+--
+-- Name: m2lti_coursevisible_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2lti_coursevisible_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2lti_coursevisible_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2lti_coursevisible_id_seq OWNED BY public.m2lti_coursevisible.id;
+
+
+--
 -- Name: m2lti_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
@@ -12560,6 +12904,36 @@ COMMENT ON TABLE public.m2lti_types IS 'Basic LTI pre-configured activities';
 
 
 --
+-- Name: m2lti_types_categories; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2lti_types_categories (
+    id bigint NOT NULL,
+    typeid bigint NOT NULL,
+    categoryid bigint NOT NULL
+);
+
+
+--
+-- Name: m2lti_types_categories_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2lti_types_categories_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2lti_types_categories_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2lti_types_categories_id_seq OWNED BY public.m2lti_types_categories.id;
+
+
+--
 -- Name: m2lti_types_config; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -12659,6 +13033,44 @@ CREATE SEQUENCE public.m2ltiservice_gradebookservices_id_seq
 --
 
 ALTER SEQUENCE public.m2ltiservice_gradebookservices_id_seq OWNED BY public.m2ltiservice_gradebookservices.id;
+
+
+--
+-- Name: m2matrix_room; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2matrix_room (
+    id bigint NOT NULL,
+    commid bigint NOT NULL,
+    roomid character varying(255),
+    topic character varying(255)
+);
+
+
+--
+-- Name: TABLE m2matrix_room; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2matrix_room IS 'Stores the matrix room information associated with the communication instance.';
+
+
+--
+-- Name: m2matrix_room_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2matrix_room_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2matrix_room_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2matrix_room_id_seq OWNED BY public.m2matrix_room.id;
 
 
 --
@@ -14009,6 +14421,41 @@ ALTER SEQUENCE public.m2modules_id_seq OWNED BY public.m2modules.id;
 
 
 --
+-- Name: m2moodlenet_share_progress; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2moodlenet_share_progress (
+    id bigint NOT NULL,
+    type smallint NOT NULL,
+    courseid bigint NOT NULL,
+    cmid bigint,
+    userid bigint NOT NULL,
+    timecreated bigint NOT NULL,
+    resourceurl character varying(255),
+    status smallint
+);
+
+
+--
+-- Name: m2moodlenet_share_progress_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2moodlenet_share_progress_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2moodlenet_share_progress_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2moodlenet_share_progress_id_seq OWNED BY public.m2moodlenet_share_progress.id;
+
+
+--
 -- Name: m2my_pages; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -14205,7 +14652,8 @@ CREATE TABLE public.m2oauth2_issuer (
     sortorder bigint NOT NULL,
     requireconfirmation smallint DEFAULT 1 NOT NULL,
     servicetype character varying(255),
-    loginpagename character varying(255)
+    loginpagename character varying(255),
+    systememail character varying(100)
 );
 
 
@@ -15674,7 +16122,7 @@ CREATE TABLE public.m2qtype_ordering_options (
     questionid bigint DEFAULT 0 NOT NULL,
     layouttype smallint DEFAULT 0 NOT NULL,
     selecttype smallint DEFAULT 0 NOT NULL,
-    selectcount smallint DEFAULT 0 NOT NULL,
+    selectcount smallint DEFAULT 2 NOT NULL,
     gradingtype smallint DEFAULT 0 NOT NULL,
     showgrading smallint DEFAULT 0 NOT NULL,
     numberingstyle character varying(10) DEFAULT 'none'::character varying NOT NULL,
@@ -16231,6 +16679,133 @@ CREATE SEQUENCE public.m2question_categories_id_seq
 --
 
 ALTER SEQUENCE public.m2question_categories_id_seq OWNED BY public.m2question_categories.id;
+
+
+--
+-- Name: m2question_coderunner_options; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2question_coderunner_options (
+    id bigint NOT NULL,
+    questionid bigint NOT NULL,
+    coderunnertype character varying(255) DEFAULT ''::character varying NOT NULL,
+    prototypetype smallint DEFAULT 0 NOT NULL,
+    allornothing smallint DEFAULT 1 NOT NULL,
+    showsource smallint DEFAULT 0 NOT NULL,
+    precheck integer DEFAULT 0,
+    hidecheck smallint DEFAULT 0 NOT NULL,
+    answerboxlines integer DEFAULT 18 NOT NULL,
+    answerboxcolumns integer DEFAULT 100 NOT NULL,
+    answerpreload text,
+    globalextra text,
+    useace smallint DEFAULT 1,
+    penaltyregime character varying(255) DEFAULT ''::character varying NOT NULL,
+    answer text,
+    validateonsave smallint DEFAULT 1 NOT NULL,
+    enablecombinator smallint,
+    resultcolumns character varying(255),
+    template text,
+    iscombinatortemplate smallint,
+    combinatortemplate text,
+    allowmultiplestdins smallint,
+    testsplitterre character varying(255),
+    pertesttemplate text,
+    templateparams text,
+    templateparamslang character varying(50) DEFAULT 'twig'::character varying,
+    templateparamsevalpertry smallint DEFAULT 0,
+    templateparamsevald text,
+    hoisttemplateparams smallint DEFAULT 0 NOT NULL,
+    extractcodefromjson smallint DEFAULT 1,
+    twigall smallint DEFAULT 0 NOT NULL,
+    uiparameters text,
+    language character varying(255),
+    acelang character varying(255),
+    sandbox character varying(255),
+    sandboxparams character varying(255),
+    grader character varying(255),
+    cputimelimitsecs bigint,
+    memlimitmb bigint,
+    uiplugin text,
+    attachments smallint DEFAULT 0 NOT NULL,
+    attachmentsrequired smallint DEFAULT 0 NOT NULL,
+    maxfilesize bigint DEFAULT 0 NOT NULL,
+    filenamesregex text,
+    filenamesexplain text,
+    displayfeedback smallint DEFAULT 1 NOT NULL,
+    giveupallowed smallint DEFAULT 0 NOT NULL,
+    prototypeextra text
+);
+
+
+--
+-- Name: TABLE m2question_coderunner_options; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2question_coderunner_options IS 'Extension of the coderunner question table';
+
+
+--
+-- Name: m2question_coderunner_options_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2question_coderunner_options_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2question_coderunner_options_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2question_coderunner_options_id_seq OWNED BY public.m2question_coderunner_options.id;
+
+
+--
+-- Name: m2question_coderunner_tests; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2question_coderunner_tests (
+    id bigint NOT NULL,
+    questionid bigint NOT NULL,
+    testtype integer,
+    testcode text,
+    stdin text,
+    expected text,
+    extra text,
+    useasexample smallint DEFAULT 0 NOT NULL,
+    display character varying(30) DEFAULT 'SHOW'::character varying NOT NULL,
+    hiderestiffail smallint DEFAULT 0 NOT NULL,
+    mark numeric(8,3) DEFAULT 1.0 NOT NULL
+);
+
+
+--
+-- Name: TABLE m2question_coderunner_tests; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2question_coderunner_tests IS 'Contains tests (usually called ''testcases'') to perform on a student''s code answer; should output the given output. A test case is regarded as an extension of an ''answer'' in Moodle parlance.';
+
+
+--
+-- Name: m2question_coderunner_tests_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2question_coderunner_tests_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2question_coderunner_tests_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2question_coderunner_tests_id_seq OWNED BY public.m2question_coderunner_tests.id;
 
 
 --
@@ -17664,7 +18239,8 @@ CREATE TABLE public.m2quiz (
     showblocks smallint DEFAULT 0 NOT NULL,
     completionattemptsexhausted smallint DEFAULT 0,
     allowofflineattempts smallint DEFAULT 0,
-    completionminattempts bigint DEFAULT 0 NOT NULL
+    completionminattempts bigint DEFAULT 0 NOT NULL,
+    reviewmaxmarks integer DEFAULT 0 NOT NULL
 );
 
 
@@ -17763,6 +18339,37 @@ CREATE SEQUENCE public.m2quiz_feedback_id_seq
 --
 
 ALTER SEQUENCE public.m2quiz_feedback_id_seq OWNED BY public.m2quiz_feedback.id;
+
+
+--
+-- Name: m2quiz_grade_items; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2quiz_grade_items (
+    id bigint NOT NULL,
+    quizid bigint NOT NULL,
+    sortorder bigint NOT NULL,
+    name character varying(255) DEFAULT ''::character varying NOT NULL
+);
+
+
+--
+-- Name: m2quiz_grade_items_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2quiz_grade_items_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2quiz_grade_items_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2quiz_grade_items_id_seq OWNED BY public.m2quiz_grade_items.id;
 
 
 --
@@ -17994,7 +18601,9 @@ CREATE TABLE public.m2quiz_slots (
     quizid bigint DEFAULT 0 NOT NULL,
     page bigint NOT NULL,
     requireprevious smallint DEFAULT 0 NOT NULL,
-    maxmark numeric(12,7) DEFAULT 0 NOT NULL
+    maxmark numeric(12,7) DEFAULT 0 NOT NULL,
+    displaynumber character varying(16),
+    quizgradeitemid bigint
 );
 
 
@@ -18110,7 +18719,9 @@ CREATE TABLE public.m2quizaccess_seb_quizsettings (
     showsebdownloadlink smallint,
     usermodified bigint DEFAULT 0 NOT NULL,
     timecreated bigint DEFAULT 0 NOT NULL,
-    timemodified bigint DEFAULT 0 NOT NULL
+    timemodified bigint DEFAULT 0 NOT NULL,
+    allowcapturecamera smallint,
+    allowcapturemicrophone smallint
 );
 
 
@@ -19900,6 +20511,66 @@ ALTER SEQUENCE public.m2scorm_aicc_session_id_seq OWNED BY public.m2scorm_aicc_s
 
 
 --
+-- Name: m2scorm_attempt; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2scorm_attempt (
+    id bigint NOT NULL,
+    userid bigint NOT NULL,
+    scormid bigint NOT NULL,
+    attempt bigint DEFAULT 1 NOT NULL
+);
+
+
+--
+-- Name: m2scorm_attempt_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2scorm_attempt_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2scorm_attempt_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2scorm_attempt_id_seq OWNED BY public.m2scorm_attempt.id;
+
+
+--
+-- Name: m2scorm_element; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2scorm_element (
+    id bigint NOT NULL,
+    element character varying(255) DEFAULT ''::character varying NOT NULL
+);
+
+
+--
+-- Name: m2scorm_element_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2scorm_element_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2scorm_element_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2scorm_element_id_seq OWNED BY public.m2scorm_element.id;
+
+
+--
 -- Name: m2scorm_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
@@ -20001,33 +20672,24 @@ ALTER SEQUENCE public.m2scorm_scoes_id_seq OWNED BY public.m2scorm_scoes.id;
 
 
 --
--- Name: m2scorm_scoes_track; Type: TABLE; Schema: public; Owner: -
+-- Name: m2scorm_scoes_value; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.m2scorm_scoes_track (
+CREATE TABLE public.m2scorm_scoes_value (
     id bigint NOT NULL,
-    userid bigint DEFAULT 0 NOT NULL,
-    scormid bigint DEFAULT 0 NOT NULL,
-    scoid bigint DEFAULT 0 NOT NULL,
-    attempt bigint DEFAULT 1 NOT NULL,
-    element character varying(255) DEFAULT ''::character varying NOT NULL,
+    scoid bigint NOT NULL,
+    attemptid bigint NOT NULL,
+    elementid bigint NOT NULL,
     value text NOT NULL,
     timemodified bigint DEFAULT 0 NOT NULL
 );
 
 
 --
--- Name: TABLE m2scorm_scoes_track; Type: COMMENT; Schema: public; Owner: -
+-- Name: m2scorm_scoes_value_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
-COMMENT ON TABLE public.m2scorm_scoes_track IS 'to track SCOes';
-
-
---
--- Name: m2scorm_scoes_track_id_seq; Type: SEQUENCE; Schema: public; Owner: -
---
-
-CREATE SEQUENCE public.m2scorm_scoes_track_id_seq
+CREATE SEQUENCE public.m2scorm_scoes_value_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -20036,10 +20698,10 @@ CREATE SEQUENCE public.m2scorm_scoes_track_id_seq
 
 
 --
--- Name: m2scorm_scoes_track_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+-- Name: m2scorm_scoes_value_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
-ALTER SEQUENCE public.m2scorm_scoes_track_id_seq OWNED BY public.m2scorm_scoes_track.id;
+ALTER SEQUENCE public.m2scorm_scoes_value_id_seq OWNED BY public.m2scorm_scoes_value.id;
 
 
 --
@@ -20417,6 +21079,75 @@ ALTER SEQUENCE public.m2sessions_id_seq OWNED BY public.m2sessions.id;
 
 
 --
+-- Name: m2sms_gateways; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2sms_gateways (
+    id bigint NOT NULL,
+    name character varying(255) DEFAULT ''::character varying NOT NULL,
+    gateway character varying(255) DEFAULT ''::character varying NOT NULL,
+    enabled smallint DEFAULT 1 NOT NULL,
+    config text NOT NULL
+);
+
+
+--
+-- Name: m2sms_gateways_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2sms_gateways_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2sms_gateways_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2sms_gateways_id_seq OWNED BY public.m2sms_gateways.id;
+
+
+--
+-- Name: m2sms_messages; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2sms_messages (
+    id bigint NOT NULL,
+    recipientnumber character varying(30) DEFAULT ''::character varying NOT NULL,
+    content text,
+    component character varying(100) DEFAULT ''::character varying NOT NULL,
+    messagetype character varying(100) DEFAULT ''::character varying NOT NULL,
+    recipientuserid bigint,
+    issensitive smallint DEFAULT 0 NOT NULL,
+    gatewayid bigint,
+    status character varying(100),
+    timecreated bigint NOT NULL
+);
+
+
+--
+-- Name: m2sms_messages_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2sms_messages_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2sms_messages_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2sms_messages_id_seq OWNED BY public.m2sms_messages.id;
+
+
+--
 -- Name: m2stats_daily; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -20663,6 +21394,78 @@ CREATE SEQUENCE public.m2stats_weekly_id_seq
 --
 
 ALTER SEQUENCE public.m2stats_weekly_id_seq OWNED BY public.m2stats_weekly.id;
+
+
+--
+-- Name: m2stored_progress; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2stored_progress (
+    id bigint NOT NULL,
+    idnumber character varying(255) DEFAULT ''::character varying NOT NULL,
+    timestart bigint,
+    lastupdate bigint,
+    percentcompleted numeric(5,2) DEFAULT 0,
+    message character varying(255),
+    haserrored smallint DEFAULT 0 NOT NULL
+);
+
+
+--
+-- Name: m2stored_progress_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2stored_progress_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2stored_progress_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2stored_progress_id_seq OWNED BY public.m2stored_progress.id;
+
+
+--
+-- Name: m2subsection; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2subsection (
+    id bigint NOT NULL,
+    course bigint DEFAULT 0 NOT NULL,
+    name character varying(255) DEFAULT ''::character varying NOT NULL,
+    timemodified bigint DEFAULT 0 NOT NULL
+);
+
+
+--
+-- Name: TABLE m2subsection; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2subsection IS 'Stores the delegated subsection instances.';
+
+
+--
+-- Name: m2subsection_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2subsection_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2subsection_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2subsection_id_seq OWNED BY public.m2subsection.id;
 
 
 --
@@ -21051,11 +21854,12 @@ CREATE TABLE public.m2task_adhoc (
     faildelay bigint,
     customdata text,
     userid bigint,
-    blocking smallint DEFAULT 0 NOT NULL,
     timecreated bigint DEFAULT 0 NOT NULL,
     timestarted bigint,
     hostname character varying(255),
-    pid bigint
+    pid bigint,
+    attemptsavailable smallint,
+    firststartingtime bigint
 );
 
 
@@ -21142,7 +21946,6 @@ CREATE TABLE public.m2task_scheduled (
     classname character varying(255) DEFAULT ''::character varying NOT NULL,
     lastruntime bigint,
     nextruntime bigint,
-    blocking smallint DEFAULT 0 NOT NULL,
     minute character varying(200) DEFAULT ''::character varying NOT NULL,
     hour character varying(70) DEFAULT ''::character varying NOT NULL,
     day character varying(90) DEFAULT ''::character varying NOT NULL,
@@ -21181,6 +21984,240 @@ CREATE SEQUENCE public.m2task_scheduled_id_seq
 --
 
 ALTER SEQUENCE public.m2task_scheduled_id_seq OWNED BY public.m2task_scheduled.id;
+
+
+--
+-- Name: m2theme_boost_union_flavours; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2theme_boost_union_flavours (
+    id bigint NOT NULL,
+    title character varying(255) DEFAULT ''::character varying NOT NULL,
+    description text,
+    description_format smallint,
+    sort bigint,
+    applytocohorts smallint,
+    applytocohorts_ids text,
+    applytocategories smallint,
+    applytocategories_ids text,
+    applytocategories_subcats smallint,
+    look_logo character varying(255),
+    look_logocompact character varying(255),
+    look_favicon character varying(255),
+    look_backgroundimage character varying(255),
+    look_backgroundimagepos character varying(32),
+    look_rawscss text,
+    look_rawscsspre text,
+    look_brandcolor character varying(32),
+    look_bootstrapcolorsuccess character varying(32),
+    look_bootstrapcolorinfo character varying(32),
+    look_bootstrapcolorwarning character varying(32),
+    look_bootstrapcolordanger character varying(32),
+    look_aicoladministration character varying(32),
+    look_aicolassessment character varying(32),
+    look_aicolcollaboration character varying(32),
+    look_aicolcommunication character varying(32),
+    look_aicolcontent character varying(32),
+    look_aicolinteractivecontent character varying(32),
+    look_aicolinterface character varying(32),
+    look_navbarcolor character varying(32)
+);
+
+
+--
+-- Name: TABLE m2theme_boost_union_flavours; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2theme_boost_union_flavours IS 'Flavour definitions';
+
+
+--
+-- Name: m2theme_boost_union_flavours_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2theme_boost_union_flavours_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2theme_boost_union_flavours_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2theme_boost_union_flavours_id_seq OWNED BY public.m2theme_boost_union_flavours.id;
+
+
+--
+-- Name: m2theme_boost_union_menuitems; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2theme_boost_union_menuitems (
+    id bigint NOT NULL,
+    title character varying(255),
+    menu bigint NOT NULL,
+    type integer DEFAULT 1,
+    sortorder bigint,
+    url text,
+    category text,
+    category_subcats smallint,
+    enrolmentrole text,
+    completionstatus character varying(20),
+    daterange character varying(20),
+    customfields text,
+    listsort integer,
+    displayhiddencourses integer,
+    hiddencoursesort integer,
+    displayfield integer,
+    textcount integer,
+    mode integer NOT NULL,
+    menuicon character varying(50),
+    display integer,
+    tooltip character varying(255),
+    target integer,
+    cssclass character varying(50),
+    imagealt character varying(255),
+    textposition integer DEFAULT 0,
+    textcolor character varying(10),
+    backgroundcolor character varying(10),
+    desktop integer DEFAULT 1,
+    tablet integer DEFAULT 1,
+    mobile integer DEFAULT 1,
+    roles text,
+    rolecontext integer DEFAULT 1,
+    cohorts text,
+    operator integer DEFAULT 1,
+    languages text,
+    start_date bigint,
+    end_date bigint,
+    visible integer DEFAULT 1 NOT NULL,
+    timemodified bigint,
+    byadmin integer DEFAULT 0 NOT NULL
+);
+
+
+--
+-- Name: TABLE m2theme_boost_union_menuitems; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2theme_boost_union_menuitems IS 'Table to store smart menu item data';
+
+
+--
+-- Name: m2theme_boost_union_menuitems_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2theme_boost_union_menuitems_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2theme_boost_union_menuitems_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2theme_boost_union_menuitems_id_seq OWNED BY public.m2theme_boost_union_menuitems.id;
+
+
+--
+-- Name: m2theme_boost_union_menus; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2theme_boost_union_menus (
+    id bigint NOT NULL,
+    title character varying(255),
+    description text,
+    description_format integer,
+    showdesc integer,
+    sortorder bigint,
+    location character varying(50) DEFAULT ''::character varying NOT NULL,
+    type integer DEFAULT 1 NOT NULL,
+    mode integer DEFAULT 1,
+    cssclass character varying(50),
+    moremenubehavior integer,
+    cardsize integer,
+    cardform integer,
+    cardoverflowbehavior integer,
+    roles text,
+    rolecontext integer,
+    cohorts text,
+    operator integer,
+    languages text,
+    start_date bigint,
+    end_date bigint,
+    visible integer DEFAULT 1 NOT NULL,
+    byadmin integer DEFAULT 0 NOT NULL
+);
+
+
+--
+-- Name: TABLE m2theme_boost_union_menus; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2theme_boost_union_menus IS 'Table to store smart menu data';
+
+
+--
+-- Name: m2theme_boost_union_menus_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2theme_boost_union_menus_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2theme_boost_union_menus_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2theme_boost_union_menus_id_seq OWNED BY public.m2theme_boost_union_menus.id;
+
+
+--
+-- Name: m2theme_boost_union_snippets; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2theme_boost_union_snippets (
+    id bigint NOT NULL,
+    name character varying(255),
+    source character varying(255) DEFAULT 'theme_boost_union'::character varying,
+    enabled smallint DEFAULT 0 NOT NULL,
+    sortorder bigint
+);
+
+
+--
+-- Name: TABLE m2theme_boost_union_snippets; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2theme_boost_union_snippets IS 'CSS Snippets';
+
+
+--
+-- Name: m2theme_boost_union_snippets_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2theme_boost_union_snippets_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2theme_boost_union_snippets_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2theme_boost_union_snippets_id_seq OWNED BY public.m2theme_boost_union_snippets.id;
 
 
 --
@@ -21821,6 +22858,37 @@ ALTER SEQUENCE public.m2tool_dataprivacy_category_id_seq OWNED BY public.m2tool_
 
 
 --
+-- Name: m2tool_dataprivacy_contextlist; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2tool_dataprivacy_contextlist (
+    id bigint NOT NULL,
+    component character varying(255) DEFAULT ''::character varying NOT NULL,
+    timecreated bigint DEFAULT 0 NOT NULL,
+    timemodified bigint DEFAULT 0 NOT NULL
+);
+
+
+--
+-- Name: m2tool_dataprivacy_contextlist_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2tool_dataprivacy_contextlist_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2tool_dataprivacy_contextlist_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2tool_dataprivacy_contextlist_id_seq OWNED BY public.m2tool_dataprivacy_contextlist.id;
+
+
+--
 -- Name: m2tool_dataprivacy_ctxexpired; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -21943,6 +23011,39 @@ CREATE SEQUENCE public.m2tool_dataprivacy_ctxlevel_id_seq
 --
 
 ALTER SEQUENCE public.m2tool_dataprivacy_ctxlevel_id_seq OWNED BY public.m2tool_dataprivacy_ctxlevel.id;
+
+
+--
+-- Name: m2tool_dataprivacy_ctxlst_ctx; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2tool_dataprivacy_ctxlst_ctx (
+    id bigint NOT NULL,
+    contextid bigint NOT NULL,
+    contextlistid bigint NOT NULL,
+    status smallint DEFAULT 0 NOT NULL,
+    timecreated bigint DEFAULT 0 NOT NULL,
+    timemodified bigint DEFAULT 0 NOT NULL
+);
+
+
+--
+-- Name: m2tool_dataprivacy_ctxlst_ctx_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2tool_dataprivacy_ctxlst_ctx_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2tool_dataprivacy_ctxlst_ctx_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2tool_dataprivacy_ctxlst_ctx_id_seq OWNED BY public.m2tool_dataprivacy_ctxlst_ctx.id;
 
 
 --
@@ -22081,6 +23182,160 @@ CREATE SEQUENCE public.m2tool_dataprivacy_request_id_seq
 --
 
 ALTER SEQUENCE public.m2tool_dataprivacy_request_id_seq OWNED BY public.m2tool_dataprivacy_request.id;
+
+
+--
+-- Name: m2tool_dataprivacy_rqst_ctxlst; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2tool_dataprivacy_rqst_ctxlst (
+    id bigint NOT NULL,
+    requestid bigint NOT NULL,
+    contextlistid bigint NOT NULL
+);
+
+
+--
+-- Name: m2tool_dataprivacy_rqst_ctxlst_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2tool_dataprivacy_rqst_ctxlst_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2tool_dataprivacy_rqst_ctxlst_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2tool_dataprivacy_rqst_ctxlst_id_seq OWNED BY public.m2tool_dataprivacy_rqst_ctxlst.id;
+
+
+--
+-- Name: m2tool_mfa; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2tool_mfa (
+    id bigint NOT NULL,
+    userid bigint NOT NULL,
+    factor character varying(100) DEFAULT ''::character varying NOT NULL,
+    secret character varying(1333),
+    label character varying(1333),
+    timecreated bigint,
+    createdfromip character varying(100),
+    timemodified bigint,
+    lastverified bigint,
+    revoked smallint DEFAULT 0 NOT NULL,
+    lockcounter integer DEFAULT 0 NOT NULL
+);
+
+
+--
+-- Name: TABLE m2tool_mfa; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2tool_mfa IS 'Table to store factor configurations for users';
+
+
+--
+-- Name: m2tool_mfa_auth; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2tool_mfa_auth (
+    id bigint NOT NULL,
+    userid bigint NOT NULL,
+    lastverified bigint DEFAULT 0 NOT NULL
+);
+
+
+--
+-- Name: TABLE m2tool_mfa_auth; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2tool_mfa_auth IS 'Stores the last time a successful MFA auth was registered for a userid';
+
+
+--
+-- Name: m2tool_mfa_auth_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2tool_mfa_auth_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2tool_mfa_auth_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2tool_mfa_auth_id_seq OWNED BY public.m2tool_mfa_auth.id;
+
+
+--
+-- Name: m2tool_mfa_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2tool_mfa_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2tool_mfa_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2tool_mfa_id_seq OWNED BY public.m2tool_mfa.id;
+
+
+--
+-- Name: m2tool_mfa_secrets; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2tool_mfa_secrets (
+    id bigint NOT NULL,
+    userid bigint NOT NULL,
+    factor character varying(100) DEFAULT ''::character varying NOT NULL,
+    secret character varying(1333) DEFAULT ''::character varying NOT NULL,
+    timecreated bigint NOT NULL,
+    expiry bigint NOT NULL,
+    revoked smallint DEFAULT 0 NOT NULL,
+    sessionid character varying(100)
+);
+
+
+--
+-- Name: TABLE m2tool_mfa_secrets; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2tool_mfa_secrets IS 'Table to store factor secrets';
+
+
+--
+-- Name: m2tool_mfa_secrets_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2tool_mfa_secrets_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2tool_mfa_secrets_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2tool_mfa_secrets_id_seq OWNED BY public.m2tool_mfa_secrets.id;
 
 
 --
@@ -24028,6 +25283,42 @@ ALTER SEQUENCE public.m2workshopform_rubric_levels_id_seq OWNED BY public.m2work
 
 
 --
+-- Name: m2xapi_states; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2xapi_states (
+    id bigint NOT NULL,
+    component character varying(255) DEFAULT ''::character varying NOT NULL,
+    userid bigint,
+    itemid bigint NOT NULL,
+    stateid character varying(255) DEFAULT ''::character varying NOT NULL,
+    statedata text,
+    registration character varying(255),
+    timecreated bigint NOT NULL,
+    timemodified bigint
+);
+
+
+--
+-- Name: m2xapi_states_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2xapi_states_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2xapi_states_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2xapi_states_id_seq OWNED BY public.m2xapi_states.id;
+
+
+--
 -- Name: m2adminpresets id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -24081,6 +25372,41 @@ ALTER TABLE ONLY public.m2adminpresets_it_a ALTER COLUMN id SET DEFAULT nextval(
 --
 
 ALTER TABLE ONLY public.m2adminpresets_plug ALTER COLUMN id SET DEFAULT nextval('public.m2adminpresets_plug_id_seq'::regclass);
+
+
+--
+-- Name: m2ai_action_generate_image id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2ai_action_generate_image ALTER COLUMN id SET DEFAULT nextval('public.m2ai_action_generate_image_id_seq'::regclass);
+
+
+--
+-- Name: m2ai_action_generate_text id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2ai_action_generate_text ALTER COLUMN id SET DEFAULT nextval('public.m2ai_action_generate_text_id_seq'::regclass);
+
+
+--
+-- Name: m2ai_action_register id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2ai_action_register ALTER COLUMN id SET DEFAULT nextval('public.m2ai_action_register_id_seq'::regclass);
+
+
+--
+-- Name: m2ai_action_summarise_text id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2ai_action_summarise_text ALTER COLUMN id SET DEFAULT nextval('public.m2ai_action_summarise_text_id_seq'::regclass);
+
+
+--
+-- Name: m2ai_policy_register id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2ai_policy_register ALTER COLUMN id SET DEFAULT nextval('public.m2ai_policy_register_id_seq'::regclass);
 
 
 --
@@ -24235,27 +25561,6 @@ ALTER TABLE ONLY public.m2assignfeedback_editpdf_rot ALTER COLUMN id SET DEFAULT
 --
 
 ALTER TABLE ONLY public.m2assignfeedback_file ALTER COLUMN id SET DEFAULT nextval('public.m2assignfeedback_file_id_seq'::regclass);
-
-
---
--- Name: m2assignment id; Type: DEFAULT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.m2assignment ALTER COLUMN id SET DEFAULT nextval('public.m2assignment_id_seq'::regclass);
-
-
---
--- Name: m2assignment_submissions id; Type: DEFAULT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.m2assignment_submissions ALTER COLUMN id SET DEFAULT nextval('public.m2assignment_submissions_id_seq'::regclass);
-
-
---
--- Name: m2assignment_upgrade id; Type: DEFAULT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.m2assignment_upgrade ALTER COLUMN id SET DEFAULT nextval('public.m2assignment_upgrade_id_seq'::regclass);
 
 
 --
@@ -24518,10 +25823,31 @@ ALTER TABLE ONLY public.m2block ALTER COLUMN id SET DEFAULT nextval('public.m2bl
 
 
 --
+-- Name: m2block_completion_progress id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2block_completion_progress ALTER COLUMN id SET DEFAULT nextval('public.m2block_completion_progress_id_seq'::regclass);
+
+
+--
 -- Name: m2block_configurable_reports id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.m2block_configurable_reports ALTER COLUMN id SET DEFAULT nextval('public.m2block_configurable_reports_id_seq'::regclass);
+
+
+--
+-- Name: m2block_grade_me id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2block_grade_me ALTER COLUMN id SET DEFAULT nextval('public.m2block_grade_me_id_seq'::regclass);
+
+
+--
+-- Name: m2block_grade_me_quiz_ngrade id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2block_grade_me_quiz_ngrade ALTER COLUMN id SET DEFAULT nextval('public.m2block_grade_me_quiz_ngrade_id_seq'::regclass);
 
 
 --
@@ -24690,6 +26016,27 @@ ALTER TABLE ONLY public.m2cohort_members ALTER COLUMN id SET DEFAULT nextval('pu
 --
 
 ALTER TABLE ONLY public.m2comments ALTER COLUMN id SET DEFAULT nextval('public.m2comments_id_seq'::regclass);
+
+
+--
+-- Name: m2communication id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2communication ALTER COLUMN id SET DEFAULT nextval('public.m2communication_id_seq'::regclass);
+
+
+--
+-- Name: m2communication_customlink id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2communication_customlink ALTER COLUMN id SET DEFAULT nextval('public.m2communication_customlink_id_seq'::regclass);
+
+
+--
+-- Name: m2communication_user id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2communication_user ALTER COLUMN id SET DEFAULT nextval('public.m2communication_user_id_seq'::regclass);
 
 
 --
@@ -25320,6 +26667,13 @@ ALTER TABLE ONLY public.m2filter_wiris_formulas ALTER COLUMN id SET DEFAULT next
 --
 
 ALTER TABLE ONLY public.m2folder ALTER COLUMN id SET DEFAULT nextval('public.m2folder_id_seq'::regclass);
+
+
+--
+-- Name: m2format_tiles_tile_options id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2format_tiles_tile_options ALTER COLUMN id SET DEFAULT nextval('public.m2format_tiles_tile_options_id_seq'::regclass);
 
 
 --
@@ -26016,6 +27370,13 @@ ALTER TABLE ONLY public.m2lti_access_tokens ALTER COLUMN id SET DEFAULT nextval(
 
 
 --
+-- Name: m2lti_coursevisible id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2lti_coursevisible ALTER COLUMN id SET DEFAULT nextval('public.m2lti_coursevisible_id_seq'::regclass);
+
+
+--
 -- Name: m2lti_submission id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -26044,6 +27405,13 @@ ALTER TABLE ONLY public.m2lti_types ALTER COLUMN id SET DEFAULT nextval('public.
 
 
 --
+-- Name: m2lti_types_categories id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2lti_types_categories ALTER COLUMN id SET DEFAULT nextval('public.m2lti_types_categories_id_seq'::regclass);
+
+
+--
 -- Name: m2lti_types_config id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -26055,6 +27423,13 @@ ALTER TABLE ONLY public.m2lti_types_config ALTER COLUMN id SET DEFAULT nextval('
 --
 
 ALTER TABLE ONLY public.m2ltiservice_gradebookservices ALTER COLUMN id SET DEFAULT nextval('public.m2ltiservice_gradebookservices_id_seq'::regclass);
+
+
+--
+-- Name: m2matrix_room id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2matrix_room ALTER COLUMN id SET DEFAULT nextval('public.m2matrix_room_id_seq'::regclass);
 
 
 --
@@ -26286,6 +27661,13 @@ ALTER TABLE ONLY public.m2mnetservice_enrol_enrolments ALTER COLUMN id SET DEFAU
 --
 
 ALTER TABLE ONLY public.m2modules ALTER COLUMN id SET DEFAULT nextval('public.m2modules_id_seq'::regclass);
+
+
+--
+-- Name: m2moodlenet_share_progress id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2moodlenet_share_progress ALTER COLUMN id SET DEFAULT nextval('public.m2moodlenet_share_progress_id_seq'::regclass);
 
 
 --
@@ -26667,6 +28049,20 @@ ALTER TABLE ONLY public.m2question_categories ALTER COLUMN id SET DEFAULT nextva
 
 
 --
+-- Name: m2question_coderunner_options id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2question_coderunner_options ALTER COLUMN id SET DEFAULT nextval('public.m2question_coderunner_options_id_seq'::regclass);
+
+
+--
+-- Name: m2question_coderunner_tests id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2question_coderunner_tests ALTER COLUMN id SET DEFAULT nextval('public.m2question_coderunner_tests_id_seq'::regclass);
+
+
+--
 -- Name: m2question_dataset_definitions id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -26923,6 +28319,13 @@ ALTER TABLE ONLY public.m2quiz_attempts ALTER COLUMN id SET DEFAULT nextval('pub
 --
 
 ALTER TABLE ONLY public.m2quiz_feedback ALTER COLUMN id SET DEFAULT nextval('public.m2quiz_feedback_id_seq'::regclass);
+
+
+--
+-- Name: m2quiz_grade_items id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2quiz_grade_items ALTER COLUMN id SET DEFAULT nextval('public.m2quiz_grade_items_id_seq'::regclass);
 
 
 --
@@ -27283,6 +28686,20 @@ ALTER TABLE ONLY public.m2scorm_aicc_session ALTER COLUMN id SET DEFAULT nextval
 
 
 --
+-- Name: m2scorm_attempt id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2scorm_attempt ALTER COLUMN id SET DEFAULT nextval('public.m2scorm_attempt_id_seq'::regclass);
+
+
+--
+-- Name: m2scorm_element id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2scorm_element ALTER COLUMN id SET DEFAULT nextval('public.m2scorm_element_id_seq'::regclass);
+
+
+--
 -- Name: m2scorm_scoes id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -27297,10 +28714,10 @@ ALTER TABLE ONLY public.m2scorm_scoes_data ALTER COLUMN id SET DEFAULT nextval('
 
 
 --
--- Name: m2scorm_scoes_track id; Type: DEFAULT; Schema: public; Owner: -
+-- Name: m2scorm_scoes_value id; Type: DEFAULT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.m2scorm_scoes_track ALTER COLUMN id SET DEFAULT nextval('public.m2scorm_scoes_track_id_seq'::regclass);
+ALTER TABLE ONLY public.m2scorm_scoes_value ALTER COLUMN id SET DEFAULT nextval('public.m2scorm_scoes_value_id_seq'::regclass);
 
 
 --
@@ -27367,6 +28784,20 @@ ALTER TABLE ONLY public.m2sessions ALTER COLUMN id SET DEFAULT nextval('public.m
 
 
 --
+-- Name: m2sms_gateways id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2sms_gateways ALTER COLUMN id SET DEFAULT nextval('public.m2sms_gateways_id_seq'::regclass);
+
+
+--
+-- Name: m2sms_messages id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2sms_messages ALTER COLUMN id SET DEFAULT nextval('public.m2sms_messages_id_seq'::regclass);
+
+
+--
 -- Name: m2stats_daily id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -27406,6 +28837,20 @@ ALTER TABLE ONLY public.m2stats_user_weekly ALTER COLUMN id SET DEFAULT nextval(
 --
 
 ALTER TABLE ONLY public.m2stats_weekly ALTER COLUMN id SET DEFAULT nextval('public.m2stats_weekly_id_seq'::regclass);
+
+
+--
+-- Name: m2stored_progress id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2stored_progress ALTER COLUMN id SET DEFAULT nextval('public.m2stored_progress_id_seq'::regclass);
+
+
+--
+-- Name: m2subsection id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2subsection ALTER COLUMN id SET DEFAULT nextval('public.m2subsection_id_seq'::regclass);
 
 
 --
@@ -27490,6 +28935,34 @@ ALTER TABLE ONLY public.m2task_log ALTER COLUMN id SET DEFAULT nextval('public.m
 --
 
 ALTER TABLE ONLY public.m2task_scheduled ALTER COLUMN id SET DEFAULT nextval('public.m2task_scheduled_id_seq'::regclass);
+
+
+--
+-- Name: m2theme_boost_union_flavours id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2theme_boost_union_flavours ALTER COLUMN id SET DEFAULT nextval('public.m2theme_boost_union_flavours_id_seq'::regclass);
+
+
+--
+-- Name: m2theme_boost_union_menuitems id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2theme_boost_union_menuitems ALTER COLUMN id SET DEFAULT nextval('public.m2theme_boost_union_menuitems_id_seq'::regclass);
+
+
+--
+-- Name: m2theme_boost_union_menus id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2theme_boost_union_menus ALTER COLUMN id SET DEFAULT nextval('public.m2theme_boost_union_menus_id_seq'::regclass);
+
+
+--
+-- Name: m2theme_boost_union_snippets id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2theme_boost_union_snippets ALTER COLUMN id SET DEFAULT nextval('public.m2theme_boost_union_snippets_id_seq'::regclass);
 
 
 --
@@ -27598,6 +29071,13 @@ ALTER TABLE ONLY public.m2tool_dataprivacy_category ALTER COLUMN id SET DEFAULT 
 
 
 --
+-- Name: m2tool_dataprivacy_contextlist id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_dataprivacy_contextlist ALTER COLUMN id SET DEFAULT nextval('public.m2tool_dataprivacy_contextlist_id_seq'::regclass);
+
+
+--
 -- Name: m2tool_dataprivacy_ctxexpired id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -27619,6 +29099,13 @@ ALTER TABLE ONLY public.m2tool_dataprivacy_ctxlevel ALTER COLUMN id SET DEFAULT 
 
 
 --
+-- Name: m2tool_dataprivacy_ctxlst_ctx id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_dataprivacy_ctxlst_ctx ALTER COLUMN id SET DEFAULT nextval('public.m2tool_dataprivacy_ctxlst_ctx_id_seq'::regclass);
+
+
+--
 -- Name: m2tool_dataprivacy_purpose id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -27637,6 +29124,34 @@ ALTER TABLE ONLY public.m2tool_dataprivacy_purposerole ALTER COLUMN id SET DEFAU
 --
 
 ALTER TABLE ONLY public.m2tool_dataprivacy_request ALTER COLUMN id SET DEFAULT nextval('public.m2tool_dataprivacy_request_id_seq'::regclass);
+
+
+--
+-- Name: m2tool_dataprivacy_rqst_ctxlst id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_dataprivacy_rqst_ctxlst ALTER COLUMN id SET DEFAULT nextval('public.m2tool_dataprivacy_rqst_ctxlst_id_seq'::regclass);
+
+
+--
+-- Name: m2tool_mfa id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_mfa ALTER COLUMN id SET DEFAULT nextval('public.m2tool_mfa_id_seq'::regclass);
+
+
+--
+-- Name: m2tool_mfa_auth id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_mfa_auth ALTER COLUMN id SET DEFAULT nextval('public.m2tool_mfa_auth_id_seq'::regclass);
+
+
+--
+-- Name: m2tool_mfa_secrets id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_mfa_secrets ALTER COLUMN id SET DEFAULT nextval('public.m2tool_mfa_secrets_id_seq'::regclass);
 
 
 --
@@ -27955,6 +29470,13 @@ ALTER TABLE ONLY public.m2workshopform_rubric_levels ALTER COLUMN id SET DEFAULT
 
 
 --
+-- Name: m2xapi_states id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2xapi_states ALTER COLUMN id SET DEFAULT nextval('public.m2xapi_states_id_seq'::regclass);
+
+
+--
 -- Data for Name: m2adminpresets; Type: TABLE DATA; Schema: public; Owner: -
 --
 
@@ -28012,7 +29534,6 @@ COPY public.m2adminpresets_it (id, adminpresetid, plugin, name, value) FROM stdi
 9	1	tool_dataprivacy	showdataretentionsummary	0
 10	1	none	forum_maxattachments	3
 11	1	none	guestloginbutton	0
-12	1	none	activitychoosertabmode	1
 13	2	none	usecomments	1
 14	2	none	usetags	1
 15	2	none	enablenotes	1
@@ -28024,7 +29545,8 @@ COPY public.m2adminpresets_it (id, adminpresetid, plugin, name, value) FROM stdi
 21	2	tool_dataprivacy	showdataretentionsummary	1
 22	2	none	forum_maxattachments	9
 23	2	none	guestloginbutton	1
-24	2	none	activitychoosertabmode	0
+12	1	none	activitychoosertabmode	4
+24	2	none	activitychoosertabmode	3
 \.
 
 
@@ -28162,6 +29684,46 @@ COPY public.m2adminpresets_plug (id, adminpresetid, plugin, name, enabled) FROM 
 
 
 --
+-- Data for Name: m2ai_action_generate_image; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2ai_action_generate_image (id, prompt, numberimages, quality, aspectratio, style, sourceurl, revisedprompt) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2ai_action_generate_text; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2ai_action_generate_text (id, prompt, responseid, fingerprint, generatedcontent, finishreason, prompttokens, completiontoken) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2ai_action_register; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2ai_action_register (id, actionname, actionid, success, userid, contextid, provider, errorcode, errormessage, timecreated, timecompleted) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2ai_action_summarise_text; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2ai_action_summarise_text (id, prompt, responseid, fingerprint, generatedcontent, finishreason, prompttokens, completiontoken) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2ai_policy_register; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2ai_policy_register (id, userid, contextid, timeaccepted) FROM stdin;
+\.
+
+
+--
 -- Data for Name: m2analytics_indicator_calc; Type: TABLE DATA; Schema: public; Owner: -
 --
 
@@ -28243,7 +29805,7 @@ COPY public.m2analytics_used_files (id, modelid, fileid, action, "time") FROM st
 -- Data for Name: m2assign; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2assign (id, course, name, intro, introformat, alwaysshowdescription, nosubmissions, submissiondrafts, sendnotifications, sendlatenotifications, duedate, allowsubmissionsfromdate, grade, timemodified, requiresubmissionstatement, completionsubmit, cutoffdate, gradingduedate, teamsubmission, requireallteammemberssubmit, teamsubmissiongroupingid, blindmarking, hidegrader, revealidentities, attemptreopenmethod, maxattempts, markingworkflow, markingallocation, sendstudentnotifications, preventsubmissionnotingroup, activity, activityformat, timelimit, submissionattachments) FROM stdin;
+COPY public.m2assign (id, course, name, intro, introformat, alwaysshowdescription, nosubmissions, submissiondrafts, sendnotifications, sendlatenotifications, duedate, allowsubmissionsfromdate, grade, timemodified, requiresubmissionstatement, completionsubmit, cutoffdate, gradingduedate, teamsubmission, requireallteammemberssubmit, teamsubmissiongroupingid, blindmarking, hidegrader, revealidentities, attemptreopenmethod, maxattempts, markingworkflow, markingallocation, sendstudentnotifications, preventsubmissionnotingroup, activity, activityformat, timelimit, submissionattachments, markinganonymous) FROM stdin;
 \.
 
 
@@ -28340,30 +29902,6 @@ COPY public.m2assignfeedback_editpdf_rot (id, gradeid, pageno, pathnamehash, isr
 --
 
 COPY public.m2assignfeedback_file (id, assignment, grade, numfiles) FROM stdin;
-\.
-
-
---
--- Data for Name: m2assignment; Type: TABLE DATA; Schema: public; Owner: -
---
-
-COPY public.m2assignment (id, course, name, intro, introformat, assignmenttype, resubmit, preventlate, emailteachers, var1, var2, var3, var4, var5, maxbytes, timedue, timeavailable, grade, timemodified) FROM stdin;
-\.
-
-
---
--- Data for Name: m2assignment_submissions; Type: TABLE DATA; Schema: public; Owner: -
---
-
-COPY public.m2assignment_submissions (id, assignment, userid, timecreated, timemodified, numfiles, data1, data2, grade, submissioncomment, format, teacher, timemarked, mailed) FROM stdin;
-\.
-
-
---
--- Data for Name: m2assignment_upgrade; Type: TABLE DATA; Schema: public; Owner: -
---
-
-COPY public.m2assignment_upgrade (id, oldcmid, oldinstance, newcmid, newinstance, timecreated) FROM stdin;
 \.
 
 
@@ -28492,6 +30030,7 @@ COPY public.m2auth_saml2_kvstore (id, type, k, value, expire) FROM stdin;
 2	session	bcc947033e750968532ed6dbb47e8a6c	C%3A18%3A%22SimpleSAML%5CSession%22%3A275%3A%7Ba%3A10%3A%7Bs%3A9%3A%22sessionId%22%3Bs%3A32%3A%22bcc947033e750968532ed6dbb47e8a6c%22%3Bs%3A9%3A%22transient%22%3Bb%3A0%3Bs%3A7%3A%22trackid%22%3Bs%3A10%3A%22bce4aa15de%22%3Bs%3A16%3A%22rememberMeExpire%22%3BN%3Bs%3A5%3A%22dirty%22%3Bb%3A0%3Bs%3A19%3A%22callback_registered%22%3Bb%3A0%3Bs%3A9%3A%22dataStore%22%3Ba%3A0%3A%7B%7Ds%3A12%3A%22associations%22%3Ba%3A0%3A%7B%7Ds%3A9%3A%22authToken%22%3BN%3Bs%3A8%3A%22authData%22%3Ba%3A0%3A%7B%7D%7D%7D	1637241987
 3	session	4efcb4e23b8ca5bc14b42d0f31d3dd1a	C%3A18%3A%22SimpleSAML%5CSession%22%3A275%3A%7Ba%3A10%3A%7Bs%3A9%3A%22sessionId%22%3Bs%3A32%3A%224efcb4e23b8ca5bc14b42d0f31d3dd1a%22%3Bs%3A9%3A%22transient%22%3Bb%3A0%3Bs%3A7%3A%22trackid%22%3Bs%3A10%3A%227648592112%22%3Bs%3A16%3A%22rememberMeExpire%22%3BN%3Bs%3A5%3A%22dirty%22%3Bb%3A0%3Bs%3A19%3A%22callback_registered%22%3Bb%3A0%3Bs%3A9%3A%22dataStore%22%3Ba%3A0%3A%7B%7Ds%3A12%3A%22associations%22%3Ba%3A0%3A%7B%7Ds%3A9%3A%22authToken%22%3BN%3Bs%3A8%3A%22authData%22%3Ba%3A0%3A%7B%7D%7D%7D	1680531804
 4	session	6f9b8c9af391226d10bd6d4bc2411481	O%3A18%3A%22SimpleSAML%5CSession%22%3A10%3A%7Bs%3A9%3A%22sessionId%22%3Bs%3A32%3A%226f9b8c9af391226d10bd6d4bc2411481%22%3Bs%3A9%3A%22transient%22%3Bb%3A0%3Bs%3A7%3A%22trackid%22%3Bs%3A10%3A%22c994ba91f5%22%3Bs%3A16%3A%22rememberMeExpire%22%3BN%3Bs%3A5%3A%22dirty%22%3Bb%3A0%3Bs%3A19%3A%22callback_registered%22%3Bb%3A0%3Bs%3A9%3A%22dataStore%22%3Ba%3A0%3A%7B%7Ds%3A12%3A%22associations%22%3Ba%3A0%3A%7B%7Ds%3A9%3A%22authToken%22%3BN%3Bs%3A8%3A%22authData%22%3Ba%3A0%3A%7B%7D%7D	1710950240
+5	session	fa1d9a334c8326fd976fd579a592b70f	O%3A18%3A%22SimpleSAML%5CSession%22%3A10%3A%7Bs%3A9%3A%22sessionId%22%3Bs%3A32%3A%22fa1d9a334c8326fd976fd579a592b70f%22%3Bs%3A9%3A%22transient%22%3Bb%3A0%3Bs%3A7%3A%22trackid%22%3Bs%3A10%3A%2272fef84425%22%3Bs%3A16%3A%22rememberMeExpire%22%3BN%3Bs%3A5%3A%22dirty%22%3Bb%3A0%3Bs%3A19%3A%22callback_registered%22%3Bb%3A0%3Bs%3A9%3A%22dataStore%22%3Ba%3A0%3A%7B%7Ds%3A12%3A%22associations%22%3Ba%3A0%3A%7B%7Ds%3A9%3A%22authToken%22%3BN%3Bs%3A8%3A%22authData%22%3Ba%3A0%3A%7B%7D%7D	1768255107
 \.
 
 
@@ -28636,7 +30175,7 @@ COPY public.m2badge_related (id, badgeid, relatedbadgeid) FROM stdin;
 -- Data for Name: m2bigbluebuttonbn; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2bigbluebuttonbn (id, type, course, name, intro, introformat, meetingid, moderatorpass, viewerpass, wait, record, recordallfromstart, recordhidebutton, welcome, voicebridge, openingtime, closingtime, timecreated, timemodified, presentation, participants, userlimit, recordings_html, recordings_deleted, recordings_imported, recordings_preview, clienttype, muteonstart, disablecam, disablemic, disableprivatechat, disablepublicchat, disablenote, hideuserlist, lockedlayout, completionattendance, completionengagementchats, completionengagementtalks, completionengagementraisehand, completionengagementpollvotes, completionengagementemojis, guestallowed, mustapproveuser, guestlinkuid, guestpassword) FROM stdin;
+COPY public.m2bigbluebuttonbn (id, type, course, name, intro, introformat, meetingid, moderatorpass, viewerpass, wait, record, recordallfromstart, recordhidebutton, welcome, voicebridge, openingtime, closingtime, timecreated, timemodified, presentation, participants, userlimit, recordings_html, recordings_deleted, recordings_imported, recordings_preview, clienttype, muteonstart, disablecam, disablemic, disableprivatechat, disablepublicchat, disablenote, hideuserlist, completionattendance, completionengagementchats, completionengagementtalks, completionengagementraisehand, completionengagementpollvotes, completionengagementemojis, guestallowed, mustapproveuser, guestlinkuid, guestpassword, showpresentation) FROM stdin;
 \.
 
 
@@ -28718,6 +30257,15 @@ COPY public.m2block (id, name, cron, lastcron, visible) FROM stdin;
 14	feedback	0	0	0
 32	rss_client	0	0	0
 35	selfcompletion	0	0	0
+51	grade_me	3600	0	1
+\.
+
+
+--
+-- Data for Name: m2block_completion_progress; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2block_completion_progress (id, blockinstanceid, userid, percentage, timemodified) FROM stdin;
 \.
 
 
@@ -28725,7 +30273,23 @@ COPY public.m2block (id, name, cron, lastcron, visible) FROM stdin;
 -- Data for Name: m2block_configurable_reports; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2block_configurable_reports (id, courseid, ownerid, visible, name, summary, type, pagination, components, export, jsordering, global, lastexecutiontime, cron, remote, summaryformat) FROM stdin;
+COPY public.m2block_configurable_reports (id, courseid, ownerid, visible, name, summary, type, pagination, components, export, jsordering, global, lastexecutiontime, cron, remote, summaryformat, displaytotalrecords, displayprintbutton) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2block_grade_me; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2block_grade_me (id, itemname, itemtype, itemmodule, iteminstance, itemsortorder, courseid, coursename, coursemoduleid) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2block_grade_me_quiz_ngrade; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2block_grade_me_quiz_ngrade (id, userid, quizid, questionattemptstepid, courseid, attemptid) FROM stdin;
 \.
 
 
@@ -28841,8 +30405,8 @@ COPY public.m2cache_filters (id, filter, version, md5key, rawtext, timemodified)
 --
 
 COPY public.m2cache_flags (id, flagtype, name, timemodified, value, expiry) FROM stdin;
-5	userpreferenceschanged	2	1710941731	1	1710948931
-4	accesslib/dirtycontexts	/1	1710942738	1	1710949938
+4	accesslib/dirtycontexts	/1	1768247116	1	1768254316
+5	userpreferenceschanged	2	1768247836	1	1768255036
 \.
 
 
@@ -29097,11 +30661,6 @@ COPY public.m2capabilities (id, name, captype, contextlevel, component, riskbitm
 244	mod/assign:receivegradernotifications	read	70	mod_assign	0
 245	mod/assign:manageoverrides	write	70	mod_assign	0
 246	mod/assign:showhiddengrader	read	70	mod_assign	0
-247	mod/assignment:view	read	70	mod_assignment	0
-248	mod/assignment:addinstance	write	50	mod_assignment	4
-249	mod/assignment:submit	write	70	mod_assignment	0
-250	mod/assignment:grade	write	70	mod_assignment	4
-251	mod/assignment:exportownsubmission	read	70	mod_assignment	0
 252	mod/book:addinstance	write	50	mod_book	4
 253	mod/book:read	read	70	mod_book	0
 254	mod/book:viewhiddenchapters	read	70	mod_book	0
@@ -29595,7 +31154,6 @@ COPY public.m2capabilities (id, name, captype, contextlevel, component, riskbitm
 744	mod/hvp:share	write	70	mod_hvp	16
 745	mod/hvp:contenthubregistration	write	10	mod_hvp	0
 746	mod/lti:addpreconfiguredinstance	write	50	mod_lti	0
-747	mod/lti:addmanualinstance	write	50	mod_lti	0
 748	mod/quiz:viewoverrides	read	70	mod_quiz	0
 749	enrol/fee:config	write	50	enrol_fee	0
 750	enrol/fee:manage	write	50	enrol_fee	0
@@ -29681,6 +31239,83 @@ COPY public.m2capabilities (id, name, captype, contextlevel, component, riskbitm
 830	tiny/h5p:addembed	write	70	tiny_h5p	0
 831	tiny/recordrtc:recordaudio	write	70	tiny_recordrtc	0
 832	tiny/recordrtc:recordvideo	write	70	tiny_recordrtc	0
+833	moodle/user:viewprofilepictures	read	10	moodle	0
+834	moodle/cohort:configurecustomfields	write	10	moodle	16
+835	moodle/group:configurecustomfields	write	10	moodle	16
+836	moodle/course:viewhiddengroups	READ	50	moodle	8
+837	moodle/contentbank:copyanycontent	write	50	moodle	16
+838	moodle/contentbank:copycontent	write	50	moodle	16
+839	moodle/contentbank:configurecustomfields	write	50	moodle	16
+840	moodle/contentbank:changelockedcustomfields	write	50	moodle	16
+841	moodle/reportbuilder:viewall	read	10	moodle	0
+842	moodle/moodlenet:shareactivity	read	50	moodle	0
+843	moodle/course:configurecoursecommunication	write	50	moodle	0
+844	moodle/moodlenet:sharecourse	read	50	moodle	0
+845	moodle/course:editcoursewelcomemessage	write	50	moodle	0
+846	moodle/ai:fetchanyuserpolicystatus	write	10	moodle	0
+847	moodle/ai:acceptpolicy	write	10	moodle	0
+848	moodle/ai:fetchpolicy	read	10	moodle	0
+849	aiplacement/courseassist:summarise_text	write	50	aiplacement_courseassist	0
+850	aiplacement/editor:generate_image	write	50	aiplacement_editor	0
+851	aiplacement/editor:generate_text	write	50	aiplacement_editor	0
+852	qtype/coderunner:viewhiddentestcases	read	50	qtype_coderunner	0
+853	qtype/coderunner:sandboxwsaccess	write	10	qtype_coderunner	0
+854	mod/bigbluebuttonbn:viewallrecordingformats	read	70	mod_bigbluebuttonbn	0
+855	mod/bigbluebuttonbn:seepresentation	read	70	mod_bigbluebuttonbn	0
+856	mod/forum:canmailnow	write	70	mod_forum	16
+857	mod/quiz:reopenattempts	write	70	mod_quiz	0
+858	mod/subsection:addinstance	write	50	mod_subsection	4
+859	communication/matrix:moderator	read	50	communication_matrix	0
+860	block/grade_me:myaddinstance	write	10	block_grade_me	0
+861	block/grade_me:addinstance	write	80	block_grade_me	20
+862	report/questionbankoverview:view	read	10	report_questionbankoverview	8
+863	qbank/purgecategory:purgecategory	write	50	qbank_purgecategory	32
+864	tool/mfa:mfaaccess	write	30	tool_mfa	0
+865	tool/uploadcourse:use	write	40	tool_uploadcourse	16
+866	theme/boost_union:configure	write	10	theme_boost_union	6
+867	theme/boost_union:viewhintcourseguestenrol	read	50	theme_boost_union	0
+868	theme/boost_union:viewhintcourseselfenrol	read	50	theme_boost_union	0
+869	theme/boost_union:viewhintinhiddencourse	read	50	theme_boost_union	0
+870	theme/boost_union:viewregionheader	read	50	theme_boost_union	0
+871	theme/boost_union:editregionheader	write	50	theme_boost_union	0
+872	theme/boost_union:viewregionoutsideleft	read	50	theme_boost_union	0
+873	theme/boost_union:editregionoutsideleft	write	50	theme_boost_union	0
+874	theme/boost_union:viewregionoutsideright	read	50	theme_boost_union	0
+875	theme/boost_union:editregionoutsideright	write	50	theme_boost_union	0
+876	theme/boost_union:viewregionoutsidetop	read	50	theme_boost_union	0
+877	theme/boost_union:editregionoutsidetop	write	50	theme_boost_union	0
+878	theme/boost_union:viewregionoutsidebottom	read	50	theme_boost_union	0
+879	theme/boost_union:editregionoutsidebottom	write	50	theme_boost_union	0
+880	theme/boost_union:viewregioncontentupper	read	50	theme_boost_union	0
+881	theme/boost_union:editregioncontentupper	write	50	theme_boost_union	0
+882	theme/boost_union:viewregioncontentlower	read	50	theme_boost_union	0
+883	theme/boost_union:editregioncontentlower	write	50	theme_boost_union	0
+884	theme/boost_union:viewregionfooterleft	read	50	theme_boost_union	0
+885	theme/boost_union:editregionfooterleft	write	50	theme_boost_union	0
+886	theme/boost_union:viewregionfooterright	read	50	theme_boost_union	0
+887	theme/boost_union:editregionfooterright	write	50	theme_boost_union	0
+888	theme/boost_union:viewregionfootercenter	read	50	theme_boost_union	0
+889	theme/boost_union:editregionfootercenter	write	50	theme_boost_union	0
+890	theme/boost_union:viewregionoffcanvasleft	read	50	theme_boost_union	0
+891	theme/boost_union:editregionoffcanvasleft	write	50	theme_boost_union	0
+892	theme/boost_union:viewregionoffcanvasright	read	50	theme_boost_union	0
+893	theme/boost_union:editregionoffcanvasright	write	50	theme_boost_union	0
+894	theme/boost_union:viewregionoffcanvascenter	read	50	theme_boost_union	0
+895	theme/boost_union:editregionoffcanvascenter	write	50	theme_boost_union	0
+896	quizaccess/seb:manage_seb_configuremanually	read	70	quizaccess_seb	0
+897	quizaccess/seb:manage_seb_usesebclientconfig	read	70	quizaccess_seb	0
+898	quizaccess/seb:manage_seb_allowcapturecamera	write	70	quizaccess_seb	0
+899	quizaccess/seb:manage_seb_allowcapturemicrophone	write	70	quizaccess_seb	0
+900	tiny/c4l:use	read	70	tiny_c4l	0
+901	tiny/c4l:viewplugin	write	70	tiny_c4l	0
+902	tiny/cloze:use	read	70	tiny_cloze	0
+903	tiny/fontcolor:use	read	70	tiny_fontcolor	0
+904	tiny/fontfamily:use	read	70	tiny_fontfamily	0
+905	tiny/fontsize:use	read	70	tiny_fontsize	0
+906	tiny/premium:accesspremium	read	30	tiny_premium	0
+907	tiny/recordrtc:recordscreen	write	70	tiny_recordrtc	0
+908	tiny/wiris:use	read	10	tiny_wiris	0
+909	factor/capability:cannotpassfactor	read	10	factor_capability	0
 \.
 
 
@@ -29744,7 +31379,7 @@ COPY public.m2choice_options (id, choiceid, text, maxanswers, timemodified) FROM
 -- Data for Name: m2choicegroup; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2choicegroup (id, course, name, intro, introformat, publish, multipleenrollmentspossible, showresults, display, allowupdate, showunanswered, limitanswers, timeopen, timeclose, timemodified, completionsubmit, sortgroupsby, maxenrollments, onlyactive) FROM stdin;
+COPY public.m2choicegroup (id, course, name, intro, introformat, publish, multipleenrollmentspossible, showresults, display, allowupdate, showunanswered, limitanswers, timeopen, timeclose, timemodified, completionsubmit, sortgroupsby, maxenrollments, onlyactive, defaultgroupdescriptionstate) FROM stdin;
 \.
 
 
@@ -29777,6 +31412,30 @@ COPY public.m2cohort_members (id, cohortid, userid, timeadded) FROM stdin;
 --
 
 COPY public.m2comments (id, contextid, component, commentarea, itemid, content, format, userid, timecreated) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2communication; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2communication (id, instanceid, component, instancetype, provider, roomname, avatarfilename, active, avatarsynced, contextid) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2communication_customlink; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2communication_customlink (id, commid, url) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2communication_user; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2communication_user (id, commid, userid, synced, deleted) FROM stdin;
 \.
 
 
@@ -29947,7 +31606,6 @@ COPY public.m2config (id, name, value) FROM stdin;
 38	enablerssfeeds	0
 39	enableblogs	1
 40	enablecompletion	1
-41	completiondefault	1
 42	enableavailability	1
 43	enableplagiarism	0
 44	enablebadges	1
@@ -30012,21 +31670,12 @@ COPY public.m2config (id, name, value) FROM stdin;
 104	grade_overridecat	1
 105	grade_displaytype	1
 106	grade_decimalpoints	2
-107	grade_item_advanced	iteminfo,idnumber,gradepass,plusfactor,multfactor,display,decimals,hiddenuntil,locktime
-108	grade_report_studentsperpage	100
 109	grade_report_showonlyactiveenrol	1
 110	grade_report_quickgrading	1
-111	grade_report_showquickfeedback	0
 112	grade_report_meanselection	1
-113	grade_report_enableajax	0
-114	grade_report_showcalculations	1
-115	grade_report_showeyecons	0
 116	grade_report_showaverages	1
-117	grade_report_showlocks	0
 118	grade_report_showranges	0
-119	grade_report_showanalysisicon	1
 120	grade_report_showuserimage	1
-121	grade_report_showactivityicons	1
 122	grade_report_shownumberofgrades	0
 2	rolesactive	1
 417	notloggedinroleid	6
@@ -30039,9 +31688,9 @@ COPY public.m2config (id, name, value) FROM stdin;
 3	auth	saml2
 128	grade_report_overview_showrank	0
 129	grade_report_overview_showtotalsifcontainhidden	0
-14	texteditors	atto,tinymce,textarea,tiny
 5	theme	xtecboost
 130	grade_report_user_showrank	0
+14	texteditors	tiny,atto,textarea
 131	grade_report_user_showpercentage	1
 132	grade_report_user_showgrade	1
 133	grade_report_user_showfeedback	1
@@ -30176,8 +31825,6 @@ COPY public.m2config (id, name, value) FROM stdin;
 264	allowthemechangeonurl	0
 265	allowuserblockhiding	1
 266	custommenuitems	
-268	enabledevicedetection	1
-269	devicedetectregex	[]
 270	calendartype	gregorian
 271	calendar_adminseesall	0
 272	calendar_site_timeformat	0
@@ -30207,7 +31854,6 @@ COPY public.m2config (id, name, value) FROM stdin;
 298	navcourselimit	10
 299	usesitenameforsitepages	0
 300	linkadmincategories	1
-301	linkcoursesections	1
 302	navshowfrontpagemods	1
 303	navadduserpostslinks	1
 304	formatstringstriptags	1
@@ -30223,7 +31869,6 @@ COPY public.m2config (id, name, value) FROM stdin;
 314	courseoverviewfilesext	.jpg,.gif,.png
 315	coursegraceperiodbefore	0
 316	coursegraceperiodafter	0
-317	useexternalyui	0
 318	yuicomboloading	1
 319	cachejs	1
 320	modchooserdefault	1
@@ -30392,7 +32037,6 @@ COPY public.m2config (id, name, value) FROM stdin;
 499	mobilecssurl	
 500	timezone	Europe/Madrid
 501	registerauth	
-416	registrationpending	0
 503	vicensvives_apiurl	http://api.vicensvivesdigital.com/rest
 504	vicensvives_sharekey	
 505	vicensvives_sharepass	
@@ -30411,7 +32055,6 @@ COPY public.m2config (id, name, value) FROM stdin;
 518	hotpot_maxeventlength	5
 543	divertallemailsto	
 544	divertallemailsexcept	
-411	branch	401
 545	emaildkimselector	
 546	emailheaders	
 547	debugsqltrace	0
@@ -30424,7 +32067,7 @@ COPY public.m2config (id, name, value) FROM stdin;
 527	downloadcoursecontentallowed	0
 528	maxsizeperdownloadcoursefile	52428800
 529	activitychoosertabmode	0
-531	h5plibraryhandler	h5plib_v124
+416	registrationpending	1
 532	rememberuserlicensepref	1
 533	autolangusercreation	1
 534	searchenginequeryonly	
@@ -30449,7 +32092,6 @@ COPY public.m2config (id, name, value) FROM stdin;
 585	bigbluebuttonbn_waitformoderator_default	0
 586	bigbluebuttonbn_waitformoderator_editable	1
 587	bigbluebuttonbn_waitformoderator_ping_interval	10
-25	jsrev	1710942751
 588	bigbluebuttonbn_waitformoderator_cache_ttl	60
 589	bigbluebuttonbn_voicebridge_editable	0
 590	bigbluebuttonbn_preuploadpresentation_editable	0
@@ -30458,7 +32100,6 @@ COPY public.m2config (id, name, value) FROM stdin;
 593	bigbluebuttonbn_participant_moderator_default	0
 594	bigbluebuttonbn_muteonstart_default	0
 595	bigbluebuttonbn_muteonstart_editable	0
-158	langrev	1710942751
 596	bigbluebuttonbn_disablecam_default	0
 597	bigbluebuttonbn_disablecam_editable	1
 598	bigbluebuttonbn_disablemic_default	0
@@ -30478,14 +32119,8 @@ COPY public.m2config (id, name, value) FROM stdin;
 612	proxylogunsafe	0
 613	proxyfixunsafe	0
 616	supportemail	admin@xtec.invalid
-24	themerev	1710942751
-414	allversionshash	a0938a67562926773dfff48a2a6a4f7ae1ebaafb
-549	scorm_updatetimelast	1710942994
 530	activitychooseractivefooter	tool_moodlenet
-13	filterall	0
-412	localcachedirpurged	1710942751
 557	enroladminnewcourse	0
-413	scheduledtaskreset	1710942751
 559	enablecustomreports	1
 560	searchmaxtopresults	3
 267	customusermenuitems	grades,grades|/grade/report/mygrades.php\nmessages,message|/message/index.php\nbadges,badges|/badges/mybadges.php\ncalendar,calendar|/calendar/view.php\npreferences,moodle|/user/preferences.php
@@ -30511,10 +32146,61 @@ COPY public.m2config (id, name, value) FROM stdin;
 614	customreportslimit	0
 615	customreportsliveediting	1
 617	sitenameintitle	shortname
-26	templaterev	1710942751
 28	licenses	unknown,allrightsreserved,public,cc-4.0,cc-nc-4.0,cc-nd-4.0,cc-nc-nd-4.0,cc-nc-sa-4.0,cc-sa-4.0
-30	version	2022112809.05
-410	release	4.1.9+ (Build: 20240308)
+624	gradeexport_default	ods
+549	scorm_updatetimelast	1768247856
+30	version	2024100707.07
+24	themerev	1768247161
+531	h5plibraryhandler	h5plib_v127
+412	localcachedirpurged	1768247161
+410	release	4.5.7+ (Build: 20251121)
+414	allversionshash	5584c8beeee60a9d91f854d8806b4acdcee6c2e0
+413	scheduledtaskreset	1768247161
+621	format_plugins_sortorder	topics,weeks,singleactivity,social
+25	jsrev	1768247161
+26	templaterev	1768247161
+620	xapicleanupperiod	4838400
+13	filterall	0
+411	branch	405
+158	langrev	1768247161
+622	allcomponenthash	cb32552bf88df2afa6a81c52a253a4bd63610a71
+623	customfiletypes	[{"extension":"eot","type":"application\\/vnd.ms-fontobject","icon":"unknown"},{"extension":"otf","type":"font\\/otf","icon":"unknown"},{"extension":"ttf","type":"font\\/ttf","icon":"unknown"},{"extension":"woff","type":"font\\/woff","icon":"unknown"},{"extension":"woff2","type":"font\\/woff2","icon":"unknown"}]
+625	badges_canvasregions	Australia|https://au.badgr.io|https://api.au.badgr.io/v2\nCanada|https://ca.badgr.io|https://api.ca.badgr.io/v2\nEurope|https://eu.badgr.io|https://api.eu.badgr.io/v2\nSingapore|https://sg.badgr.io|https://api.sg.badgr.io/v2\nUnited States|https://badgr.io|https://api.badgr.io/v2
+626	geoipdbedition	GeoLite2-City
+627	geoipmaxmindaccid	
+628	geoipmaxmindlicensekey	
+629	geopluginapikey	
+630	enablepdfexportfont	0
+631	showloginform	1
+632	enableloginrecaptcha	0
+633	loginpasswordtoggle	2
+634	block_grade_me_enableadminviewall	0
+635	block_grade_me_maxcourses	10
+636	block_grade_me_maxage	0
+637	block_grade_me_enableshowhidden	0
+638	block_grade_me_enableassign	1
+639	block_grade_me_enabledata	0
+640	block_grade_me_enableforum	0
+641	block_grade_me_enableglossary	0
+642	block_grade_me_enablelesson	0
+643	block_grade_me_enablequiz	1
+644	bigbluebuttonbn_checksum_algorithm	SHA256
+645	bigbluebuttonbn_recording_safe_formats	video,presentation
+646	bigbluebuttonbn_profile_picture_enabled	0
+647	forum_announcementmaxattachments	1
+648	forum_announcementsubscription	1
+649	questiondefaultssave	1
+650	coursecreationguide	https://moodle.academy/coursequickstart
+651	file_redactor_exifremoverenabled	0
+652	file_redactor_exifremovertoolpath	
+653	file_redactor_exifremoverremovetags	gps
+654	file_redactor_exifremovermimetype	image/jpeg\nimage/tiff
+655	servicespage	
+656	cron_keepalive	180
+657	task_adhoc_failed_retention	2419200
+658	enablesharingtomoodlenet	0
+659	enablecommunicationsubsystem	0
+660	debugtemplateinfo	0
 \.
 
 
@@ -32736,6 +34422,714 @@ COPY public.m2config_log (id, userid, timemodified, plugin, name, value, oldvalu
 2211	2	1710942586	\N	supportemail	admin@xtec.invalid	\N
 2212	2	1710942639	quiz_statistics	getstatslocktimeout	900	\N
 2213	2	1710942639	\N	sitenameintitle	shortname	\N
+2921	2	1768247846	theme_boost_union	loginbackgroundimagetext		\N
+2214	0	1768247158	tiny_noautolink	disabled	1	0
+2215	2	1768247171	tool_dataprivacy	allowfiltering	0	\N
+2216	2	1768247171	moodlecourse	coursecommunicationprovider	none	\N
+2217	2	1768247171	backup	backup_general_customfield	1	\N
+2218	2	1768247171	backup	backup_general_customfield_locked		\N
+2219	2	1768247171	backup	backup_general_xapistate	1	\N
+2220	2	1768247171	backup	backup_general_xapistate_locked		\N
+2221	2	1768247171	backup	backup_import_badges	0	\N
+2222	2	1768247171	backup	backup_import_badges_locked		\N
+2223	2	1768247171	backup	backup_import_customfield	1	\N
+2224	2	1768247171	backup	backup_import_customfield_locked		\N
+2225	2	1768247171	backup	backup_auto_customfield	1	\N
+2226	2	1768247171	backup	backup_auto_xapistate	1	\N
+2227	2	1768247171	restore	restore_general_customfield	1	\N
+2228	2	1768247171	restore	restore_general_customfield_locked		\N
+2229	2	1768247171	restore	restore_general_xapistate	1	\N
+2230	2	1768247171	restore	restore_general_xapistate_locked		\N
+2231	2	1768247171	\N	gradeexport_default	ods	\N
+2232	2	1768247171	aiprovider_azureai	apikey		\N
+2233	2	1768247171	aiprovider_azureai	endpoint		\N
+2234	2	1768247171	aiprovider_azureai	enableglobalratelimit	0	\N
+2235	2	1768247171	aiprovider_azureai	globalratelimit	100	\N
+2236	2	1768247171	aiprovider_azureai	enableuserratelimit	0	\N
+2237	2	1768247171	aiprovider_azureai	userratelimit	10	\N
+2238	2	1768247171	aiprovider_openai	apikey		\N
+2239	2	1768247171	aiprovider_openai	orgid		\N
+2240	2	1768247171	aiprovider_openai	enableglobalratelimit	0	\N
+2241	2	1768247171	aiprovider_openai	globalratelimit	100	\N
+2242	2	1768247171	aiprovider_openai	enableuserratelimit	0	\N
+2243	2	1768247171	aiprovider_openai	userratelimit	10	\N
+2244	2	1768247171	\N	badges_canvasregions	Australia|https://au.badgr.io|https://api.au.badgr.io/v2\nCanada|https://ca.badgr.io|https://api.ca.badgr.io/v2\nEurope|https://eu.badgr.io|https://api.eu.badgr.io/v2\nSingapore|https://sg.badgr.io|https://api.sg.badgr.io/v2\nUnited States|https://badgr.io|https://api.badgr.io/v2	\N
+2245	2	1768247171	core_h5p	h5pcustomcss		\N
+2246	2	1768247171	\N	geoipdbedition	GeoLite2-City	\N
+2247	2	1768247171	\N	geoipmaxmindaccid		\N
+2248	2	1768247171	\N	geoipmaxmindlicensekey		\N
+2249	2	1768247171	\N	geopluginapikey		\N
+2250	2	1768247171	\N	enablepdfexportfont	0	\N
+2251	2	1768247171	\N	showloginform	1	\N
+2252	2	1768247171	\N	enableloginrecaptcha	0	\N
+2253	2	1768247171	\N	loginpasswordtoggle	2	\N
+2254	2	1768247171	block_configurable_reports	csvdelimiter	cfg	\N
+2255	2	1768247171	block_completion_progress	overviewcachetime	3600	\N
+2256	2	1768247171	\N	block_grade_me_enableadminviewall	0	\N
+2257	2	1768247171	\N	block_grade_me_maxcourses	10	\N
+2258	2	1768247171	\N	block_grade_me_maxage	0	\N
+2259	2	1768247171	\N	block_grade_me_enableshowhidden	0	\N
+2260	2	1768247171	\N	block_grade_me_enableassign	1	\N
+2261	2	1768247171	\N	block_grade_me_enabledata	0	\N
+2262	2	1768247171	\N	block_grade_me_enableforum	0	\N
+2263	2	1768247171	\N	block_grade_me_enableglossary	0	\N
+2264	2	1768247171	\N	block_grade_me_enablelesson	0	\N
+2265	2	1768247171	\N	block_grade_me_enablequiz	1	\N
+2266	2	1768247172	editor_tiny	extended_valid_elements	script[*],p[*],i[*]	\N
+2267	2	1768247172	tiny_c4l	enablepreview	1	\N
+2268	2	1768247172	tiny_c4l	aimedatstudents	keyconcept,tip,reminder,quote,dodontcards,readingcontext,example,figure,tag,inlinetag,attention,allpurposecard	\N
+2269	2	1768247172	tiny_c4l	notintendedforstudents		\N
+2270	2	1768247172	tiny_c4l	customcompcount	0	\N
+2271	2	1768247172	tiny_c4l	custompreviewcss		\N
+2272	2	1768247172	tiny_c4l	customimagesbank		\N
+2273	2	1768247172	tiny_fontcolor	textcolors	[]	\N
+2274	2	1768247172	tiny_fontcolor	backgroundcolors	[]	\N
+2275	2	1768247172	tiny_fontcolor	textcolorpicker	0	\N
+2276	2	1768247172	tiny_fontcolor	backgroundcolorpicker	0	\N
+2277	2	1768247172	tiny_fontcolor	usecssclassnames	0	\N
+2278	2	1768247172	tiny_fontfamily	fonts	Arial\r\nVerdana\r\nTahoma\r\nTrebuchet MS\r\nTimes New Roman\r\nGeorgia\r\nGaramond\r\nCourier New\r\nBrush Script MT	\N
+2279	2	1768247172	tiny_premium	apikey		\N
+2280	2	1768247172	tiny_recordrtc	screenbitrate	2500000	\N
+2281	2	1768247172	tiny_recordrtc	screentimelimit	120	\N
+2282	2	1768247172	tiny_recordrtc	screensize	1280,720	\N
+2283	2	1768247172	tiny_recordrtc	allowedpausing	0	\N
+2284	2	1768247172	tool_mfa	enabled	0	\N
+2285	2	1768247172	tool_mfa	lockout	10	\N
+2286	2	1768247172	tool_mfa	debugmode	0	\N
+2287	2	1768247172	tool_mfa	redir_exclusions		\N
+2288	2	1768247172	tool_mfa	guidance	0	\N
+2289	2	1768247172	tool_mfa	guidancecontent		\N
+2290	2	1768247172	tool_mfa	guidancefiles		\N
+2291	2	1768247172	factor_admin	enabled	0	\N
+2292	2	1768247172	factor_admin	weight	100	\N
+2293	2	1768247172	factor_auth	enabled	0	\N
+2294	2	1768247172	factor_auth	weight	100	\N
+2295	2	1768247172	factor_auth	goodauth		\N
+2296	2	1768247172	factor_capability	enabled	0	\N
+2297	2	1768247172	factor_capability	weight	100	\N
+2298	2	1768247172	factor_capability	adminpasses	1	\N
+2299	2	1768247172	factor_cohort	enabled	0	\N
+2300	2	1768247172	factor_cohort	weight	100	\N
+2301	2	1768247172	factor_email	enabled	0	\N
+2302	2	1768247172	factor_email	weight	100	\N
+2303	2	1768247172	factor_email	duration	1800	\N
+2304	2	1768247172	factor_email	suspend	0	\N
+2305	2	1768247172	factor_grace	enabled	0	\N
+2306	2	1768247172	factor_grace	weight	100	\N
+2307	2	1768247172	factor_grace	forcesetup	0	\N
+2308	2	1768247172	factor_grace	graceperiod	604800	\N
+2309	2	1768247172	factor_grace	ignorelist		\N
+2310	2	1768247172	factor_grace	customwarning		\N
+2311	2	1768247172	factor_iprange	enabled	0	\N
+2312	2	1768247172	factor_iprange	weight	100	\N
+2313	2	1768247172	factor_iprange	safeips		\N
+2314	2	1768247172	factor_nosetup	enabled	0	\N
+2315	2	1768247172	factor_nosetup	weight	100	\N
+2316	2	1768247172	factor_role	enabled	0	\N
+2317	2	1768247172	factor_role	weight	100	\N
+2318	2	1768247172	factor_role	roles	admin	\N
+2319	2	1768247172	factor_sms	smsgateway	0	\N
+2320	2	1768247172	factor_sms	enabled	0	\N
+2321	2	1768247172	factor_sms	weight	100	\N
+2322	2	1768247172	factor_sms	duration	1800	\N
+2323	2	1768247172	factor_token	enabled	0	\N
+2324	2	1768247172	factor_token	weight	100	\N
+2325	2	1768247172	factor_token	expiry	86400	\N
+2326	2	1768247172	factor_token	expireovernight	1	\N
+2327	2	1768247172	factor_totp	enabled	0	\N
+2328	2	1768247172	factor_totp	weight	100	\N
+2329	2	1768247172	factor_totp	window	15	\N
+2330	2	1768247172	factor_totp	totplink	1	\N
+2331	2	1768247172	factor_webauthn	enabled	0	\N
+2332	2	1768247172	factor_webauthn	weight	100	\N
+2333	2	1768247172	factor_webauthn	authenticatortypes	usb,nfc,ble,hybrid,internal	\N
+2334	2	1768247172	factor_webauthn	userverification	preferred	\N
+2335	2	1768247172	format_tiles	followthemecolour	0	\N
+2336	2	1768247172	format_tiles	subtileiconcolourbackground	0	\N
+2337	2	1768247172	format_tiles	tilecolour1	#1670CC	\N
+2338	2	1768247172	format_tiles	colourname1	Blau	\N
+2339	2	1768247172	format_tiles	tilecolour2	#00A9CE	\N
+2340	2	1768247172	format_tiles	colourname2	Blau cel	\N
+2341	2	1768247172	format_tiles	tilecolour3	#7A9A01	\N
+2342	2	1768247172	format_tiles	colourname3	Verd	\N
+2343	2	1768247172	format_tiles	tilecolour4	#009681	\N
+2344	2	1768247172	format_tiles	colourname4	Verd fosc	\N
+2345	2	1768247172	format_tiles	tilecolour5	#D13C3C	\N
+2346	2	1768247172	format_tiles	colourname5	Vermell	\N
+2347	2	1768247172	format_tiles	tilecolour6	#772583	\N
+2348	2	1768247172	format_tiles	colourname6	Morat	\N
+2349	2	1768247172	format_tiles	modalmodules	page	\N
+2350	2	1768247172	format_tiles	modalresources	pdf,url,html	\N
+2351	2	1768247172	format_tiles	allowphototiles	1	\N
+2352	2	1768247172	format_tiles	tilestyle	1	\N
+2353	2	1768247172	format_tiles	showprogresssphototiles	1	\N
+2354	2	1768247172	format_tiles	phototiletitletransarency	0	\N
+2355	2	1768247172	format_tiles	phototitletitlelineheight	305	\N
+2356	2	1768247172	format_tiles	phototitletitlepadding	40	\N
+2357	2	1768247172	format_tiles	usejavascriptnav	1	\N
+2358	2	1768247172	format_tiles	reopenlastsection	1	\N
+2359	2	1768247172	format_tiles	usejsnavforsinglesection	1	\N
+2360	2	1768247172	format_tiles	fittilestowidth	1	\N
+2361	2	1768247172	format_tiles	allowsubtilesview	1	\N
+2362	2	1768247172	format_tiles	showoverallprogress	1	\N
+2363	2	1768247172	format_tiles	progressincludesubsections	0	\N
+2364	2	1768247172	format_tiles	showseczerocoursewide	0	\N
+2365	2	1768247172	format_tiles	seczerocollapsible	1	\N
+2366	2	1768247172	format_tiles	customcss		\N
+2367	2	1768247172	format_tiles	enablelinebreakfilter	0	\N
+2368	2	1768247172	format_tiles	assumedatastoreconsent	1	\N
+2369	2	1768247172	format_tiles	usecourseindex	1	\N
+2370	2	1768247172	format_tiles	highcontrastmodeallow	0	\N
+2371	2	1768247172	format_multitopic	startwday	1	\N
+2372	2	1768247172	format_multitopic	weeks_mindays	4	\N
+2373	2	1768247172	format_multitopic	weeks_partial	0	\N
+2374	2	1768247172	format_multitopic	indentation	1	\N
+2375	2	1768247172	enrol_database	newcoursestartdate		\N
+2376	2	1768247172	enrol_database	newcourseenddate		\N
+2377	2	1768247172	enrol_manual	sendcoursewelcomemessage	1	\N
+2378	2	1768247172	cachestore_redis	test_clustermode	0	\N
+2379	2	1768247172	cachestore_redis	test_encryption	0	\N
+2380	2	1768247172	cachestore_redis	test_cafile		\N
+2381	2	1768247172	\N	bigbluebuttonbn_checksum_algorithm	SHA256	\N
+2382	2	1768247172	\N	bigbluebuttonbn_recording_safe_formats	video,presentation	\N
+2383	2	1768247172	mod_bigbluebuttonbn	showpresentation_default	1	\N
+2384	2	1768247172	mod_bigbluebuttonbn	showpresentation_editable	0	\N
+2385	2	1768247172	\N	bigbluebuttonbn_profile_picture_enabled	0	\N
+2386	2	1768247172	choicegroup	defaultgroupdescriptionstate	0	\N
+2387	2	1768247172	\N	forum_announcementmaxattachments	1	\N
+2388	2	1768247172	\N	forum_announcementsubscription	1	\N
+2389	2	1768247172	mod_h5pactivity	enablesavestate	1	\N
+2390	2	1768247172	mod_h5pactivity	savestatefreq	60	\N
+2391	2	1768247172	mod_hvp	h5p_search_content_hub	1	\N
+2392	2	1768247172	quiz	reviewmaxmarks	69904	\N
+2393	2	1768247172	mod_assign	defaultgradetype	1	\N
+2394	2	1768247172	mod_assign	defaultgradescale		\N
+2395	2	1768247172	assign	markinganonymous	0	\N
+2396	2	1768247172	assign	markinganonymous_adv		\N
+2397	2	1768247172	assign	markinganonymous_locked		\N
+2398	2	1768247172	media_vimeo	donottrack	0	\N
+2399	2	1768247172	media_youtube	nocookie	0	\N
+2400	2	1768247172	\N	questiondefaultssave	1	\N
+2401	2	1768247172	qtype_coderunner	default_penalty_regime	10, 20, ...	\N
+2402	2	1768247172	qtype_coderunner	jobesandbox_enabled	1	\N
+2403	2	1768247172	qtype_coderunner	ideonesandbox_enabled	0	\N
+2404	2	1768247172	qtype_coderunner	jobe_host	jobe2.cosc.canterbury.ac.nz	\N
+2405	2	1768247172	qtype_coderunner	jobe_apikey	2AAA7A5415B4A9B394B54BF1D2E9D	\N
+2406	2	1768247172	qtype_coderunner	enablegradecache	0	\N
+2407	2	1768247172	qtype_coderunner	ideone_user		\N
+2408	2	1768247172	qtype_coderunner	ideone_password		\N
+2409	2	1768247172	qtype_coderunner	wsenabled	0	\N
+2410	2	1768247172	qtype_coderunner	wsjobeserver		\N
+2411	2	1768247172	qtype_coderunner	wsloggingenabled	1	\N
+2412	2	1768247172	qtype_coderunner	wsmaxhourlyrate	200	\N
+2413	2	1768247172	qtype_coderunner	wsmaxcputime	5	\N
+2414	2	1768247172	qtype_wq	quizzescalcurl	https://calcme.com	\N
+2415	2	1768247172	qtype_wq	quizzesgraphurl	https://www.wiris.net/demo/graph	\N
+2416	2	1768247172	qtype_wq	maxconnections_disabled	0	\N
+2417	2	1768247172	qtype_wq	mathjax_compatibity	0	\N
+2418	2	1768247172	qtype_wq	log_server_errors	0	\N
+2419	2	1768247172	\N	coursecreationguide	https://moodle.academy/coursequickstart	\N
+2420	2	1768247172	theme_boost_union	scsspre		\N
+2421	2	1768247172	theme_boost_union	scss		\N
+2422	2	1768247172	theme_boost_union	extscsssource	0	\N
+2423	2	1768247172	theme_boost_union	extscssurlpre		\N
+2424	2	1768247172	theme_boost_union	extscssurlpost		\N
+2425	2	1768247172	theme_boost_union	extscssgithubtoken		\N
+2426	2	1768247172	theme_boost_union	extscssgithubuser		\N
+2427	2	1768247172	theme_boost_union	extscssgithubrepo		\N
+2428	2	1768247172	theme_boost_union	extscssgithubprefilepath		\N
+2429	2	1768247172	theme_boost_union	extscssgithubpostfilepath		\N
+2430	2	1768247172	theme_boost_union	extscssvalidation	yes	\N
+2431	2	1768247172	theme_boost_union	coursecontentmaxwidth	830px	\N
+2432	2	1768247172	theme_boost_union	mediumcontentmaxwidth	1120px	\N
+2433	2	1768247172	theme_boost_union	courseindexdrawerwidth	285px	\N
+2434	2	1768247172	theme_boost_union	blockdrawerwidth	315px	\N
+2435	2	1768247172	theme_boost_union	logo		\N
+2436	2	1768247172	theme_boost_union	logocompact		\N
+2437	2	1768247172	theme_boost_union	favicon		\N
+2438	2	1768247172	theme_boost_union	backgroundimage		\N
+2439	2	1768247172	theme_boost_union	backgroundimageposition	left top	\N
+2440	2	1768247172	theme_boost_union	brandcolor		\N
+2441	2	1768247172	theme_boost_union	bootstrapcolorsuccess		\N
+2442	2	1768247172	theme_boost_union	bootstrapcolorinfo		\N
+2443	2	1768247172	theme_boost_union	bootstrapcolorwarning		\N
+2444	2	1768247172	theme_boost_union	bootstrapcolordanger		\N
+2445	2	1768247172	theme_boost_union	maxlogowidth		\N
+2446	2	1768247172	theme_boost_union	navbarcolor	light	\N
+2447	2	1768247172	theme_boost_union	activityiconcoloradministration		\N
+2448	2	1768247172	theme_boost_union	activityiconcolorassessment		\N
+2449	2	1768247172	theme_boost_union	activityiconcolorcollaboration		\N
+2450	2	1768247172	theme_boost_union	activityiconcolorcommunication		\N
+2451	2	1768247172	theme_boost_union	activityiconcolorcontent		\N
+2452	2	1768247172	theme_boost_union	activityiconcolorinteractivecontent		\N
+2453	2	1768247172	theme_boost_union	activityiconcolorinterface		\N
+2454	2	1768247172	theme_boost_union	activityiconcolorfidelity	1	\N
+2455	2	1768247172	theme_boost_union	activitypurposeassign	assessment	\N
+2456	2	1768247172	theme_boost_union	activitypurposebook	content	\N
+2457	2	1768247172	theme_boost_union	activitypurposechoice	communication	\N
+2458	2	1768247172	theme_boost_union	activitypurposedata	collaboration	\N
+2459	2	1768247172	theme_boost_union	activitypurposefeedback	communication	\N
+2460	2	1768247172	theme_boost_union	activitypurposefolder	content	\N
+2461	2	1768247172	theme_boost_union	activitypurposeforum	collaboration	\N
+2462	2	1768247172	theme_boost_union	activitypurposeglossary	collaboration	\N
+2463	2	1768247172	theme_boost_union	activitypurposeimscp	interactivecontent	\N
+2464	2	1768247172	theme_boost_union	activitypurposelabel	content	\N
+2465	2	1768247172	theme_boost_union	activitypurposelesson	interactivecontent	\N
+2466	2	1768247172	theme_boost_union	activitypurposelti	other	\N
+2467	2	1768247172	theme_boost_union	activitypurposepage	content	\N
+2468	2	1768247172	theme_boost_union	activitypurposequiz	assessment	\N
+2469	2	1768247172	theme_boost_union	activitypurposeresource	content	\N
+2470	2	1768247172	theme_boost_union	activitypurposescorm	interactivecontent	\N
+2471	2	1768247172	theme_boost_union	activitypurposesurvey	communication	\N
+2472	2	1768247172	theme_boost_union	activitypurposeurl	content	\N
+2473	2	1768247172	theme_boost_union	activitypurposewiki	collaboration	\N
+2474	2	1768247172	theme_boost_union	activitypurposeworkshop	assessment	\N
+2475	2	1768247172	theme_boost_union	activitypurposechoicegroup	collaboration	\N
+2476	2	1768247172	theme_boost_union	activitypurposegeogebra	assessment	\N
+2477	2	1768247172	theme_boost_union	activitypurposehotpot	assessment	\N
+2478	2	1768247173	theme_boost_union	activitypurposehvp	other	\N
+2479	2	1768247173	theme_boost_union	activitypurposejclic	assessment	\N
+2480	2	1768247173	theme_boost_union	activitypurposequestionnaire	communication	\N
+2481	2	1768247173	theme_boost_union	activitypurposeqv	other	\N
+2482	2	1768247173	theme_boost_union	activitypurposercontent	assessment	\N
+2483	2	1768247173	theme_boost_union	activitypurposeh5pactivity	interactivecontent	\N
+2484	2	1768247173	theme_boost_union	activitypurposeattendance	administration	\N
+2485	2	1768247173	theme_boost_union	activitypurposejournal	collaboration	\N
+2486	2	1768247173	theme_boost_union	modiconsenable	no	\N
+2487	2	1768247173	theme_boost_union	modiconsfiles		\N
+2488	2	1768247173	theme_boost_union	calendareventcolormaincategory		\N
+2489	2	1768247173	theme_boost_union	calendareventcolorbordercategory		\N
+2490	2	1768247173	theme_boost_union	calendareventcolormaincourse		\N
+2491	2	1768247173	theme_boost_union	calendareventcolorbordercourse		\N
+2492	2	1768247173	theme_boost_union	calendareventcolormaingroup		\N
+2493	2	1768247173	theme_boost_union	calendareventcolorbordergroup		\N
+2494	2	1768247173	theme_boost_union	calendareventcolormainuser		\N
+2495	2	1768247173	theme_boost_union	calendareventcolorborderuser		\N
+2496	2	1768247173	theme_boost_union	calendareventcolormainsite		\N
+2497	2	1768247173	theme_boost_union	calendareventcolorbordersite		\N
+2498	2	1768247173	theme_boost_union	calendareventcolormainother		\N
+2499	2	1768247173	theme_boost_union	calendareventcolorborderother		\N
+2500	2	1768247173	theme_boost_union	calendariconscolor		\N
+2501	2	1768247173	theme_boost_union	loginbackgroundimage		\N
+2502	2	1768247173	theme_boost_union	loginbackgroundimageposition	left top	\N
+2503	2	1768247173	theme_boost_union	loginformposition	center	\N
+2504	2	1768247173	theme_boost_union	loginformtransparency	no	\N
+2505	2	1768247173	theme_boost_union	loginlocalloginenable	yes	\N
+2506	2	1768247173	theme_boost_union	loginlocalshowintro	no	\N
+2507	2	1768247173	theme_boost_union	loginidpshowintro	yes	\N
+2508	2	1768247173	theme_boost_union	loginorderlocal	1	\N
+2509	2	1768247173	theme_boost_union	loginorderidp	2	\N
+2510	2	1768247173	theme_boost_union	loginorderfirsttimesignup	3	\N
+2511	2	1768247173	theme_boost_union	loginorderguest	4	\N
+2512	2	1768247173	theme_boost_union	sideentranceloginenable	auto	\N
+2513	2	1768247173	theme_boost_union	courseoverviewshowcourseimages	card,list,summary	\N
+2514	2	1768247173	theme_boost_union	courseoverviewshowcourseprogress	yes	\N
+2515	2	1768247173	theme_boost_union	courselistingpresentation	nochange	\N
+2516	2	1768247173	theme_boost_union	coursecardscolumncount	3	\N
+2517	2	1768247173	theme_boost_union	courselistinghowimage	yes	\N
+2518	2	1768247173	theme_boost_union	courselistingshowcontacts	no	\N
+2519	2	1768247173	theme_boost_union	courselistinghowshortname	no	\N
+2520	2	1768247173	theme_boost_union	courselistinghowcategory	no	\N
+2521	2	1768247173	theme_boost_union	courselistinghowprogress	no	\N
+2522	2	1768247173	theme_boost_union	courselistingprogressstyle	percentage	\N
+2523	2	1768247173	theme_boost_union	courselistinghowenrolicons	yes	\N
+2524	2	1768247173	theme_boost_union	courselistingshowfields	no	\N
+2525	2	1768247173	theme_boost_union	courselistingselectfields		\N
+2526	2	1768247173	theme_boost_union	courselistingstylefields	text	\N
+2527	2	1768247173	theme_boost_union	courselistinghowgoto	yes	\N
+2528	2	1768247173	theme_boost_union	courselistinghowpopup	yes	\N
+2529	2	1768247173	theme_boost_union	categorylistingpresentation	nochange	\N
+2530	2	1768247173	theme_boost_union	timelinetintenabled	no	\N
+2531	2	1768247173	theme_boost_union	upcomingeventstintenabled	no	\N
+2532	2	1768247173	theme_boost_union	recentlyaccesseditemstintenabled	no	\N
+2533	2	1768247173	theme_boost_union	activitiestintenabled	no	\N
+2534	2	1768247173	theme_boost_union	courseheaderimageenabled	no	\N
+2535	2	1768247173	theme_boost_union	courseheaderimagefallback		\N
+2536	2	1768247173	theme_boost_union	courseheaderimagelayout	headingabove	\N
+2537	2	1768247173	theme_boost_union	courseheaderimageheight	150px	\N
+2538	2	1768247173	theme_boost_union	courseheaderimageposition	center center	\N
+2539	2	1768247173	theme_boost_union	courseindexmodiconenabled	no	\N
+2540	2	1768247173	theme_boost_union	courseindexcompletioninfoposition	endofline	\N
+2541	2	1768247173	theme_boost_union	additionalresources		\N
+2542	2	1768247173	theme_boost_union	customfonts		\N
+2543	2	1768247173	theme_boost_union	cssh5p		\N
+2544	2	1768247173	theme_boost_union	h5pcontentmaxwidth	960px	\N
+2545	2	1768247173	theme_boost_union	mobilescss		\N
+2546	2	1768247173	theme_boost_union	touchiconfilesios		\N
+2547	2	1768247173	theme_boost_union	hidenodesprimarynavigation		\N
+2548	2	1768247173	theme_boost_union	alternativelogolinkurl		\N
+2549	2	1768247173	theme_boost_union	showfullnameinusermenu	no	\N
+2550	2	1768247173	theme_boost_union	addpreferredlang	no	\N
+2551	2	1768247173	theme_boost_union	loginlinkbuttonenabled	no	\N
+2552	2	1768247173	theme_boost_union	shownavbarstarredcourses	no	\N
+2553	2	1768247173	theme_boost_union	starredcourseslinktarget	mycourses	\N
+2554	2	1768247173	theme_boost_union	categorybreadcrumbs	no	\N
+2555	2	1768247173	theme_boost_union	backtotopbutton	no	\N
+2556	2	1768247173	theme_boost_union	scrollspy	no	\N
+2557	2	1768247173	theme_boost_union	activitynavigation	no	\N
+2558	2	1768247173	theme_boost_union	unaddableblocks	navigation,settings,course_list,section_links	\N
+2559	2	1768247173	theme_boost_union	blockregionsforstandard		\N
+2560	2	1768247173	theme_boost_union	blockregionsforadmin		\N
+2561	2	1768247173	theme_boost_union	blockregionsforcoursecategory		\N
+2562	2	1768247173	theme_boost_union	blockregionsforincourse		\N
+2563	2	1768247173	theme_boost_union	blockregionsformypublic		\N
+2564	2	1768247173	theme_boost_union	blockregionsforreport		\N
+2565	2	1768247173	theme_boost_union	blockregionsforcourse		\N
+2566	2	1768247173	theme_boost_union	blockregionsforfrontpage		\N
+2567	2	1768247173	theme_boost_union	blockregionsformydashboard		\N
+2568	2	1768247173	theme_boost_union	blockregionoutsideleftwidth	300px	\N
+2569	2	1768247173	theme_boost_union	blockregionoutsiderightwidth	300px	\N
+2570	2	1768247173	theme_boost_union	blockregionoutsidetopwidth	fullwidth	\N
+2571	2	1768247173	theme_boost_union	blockregionoutsidebottomwidth	fullwidth	\N
+2572	2	1768247173	theme_boost_union	blockregionfooterwidth	fullwidth	\N
+2573	2	1768247173	theme_boost_union	outsideregionsplacement	nextmaincontent	\N
+2574	2	1768247173	theme_boost_union	showsitehomerighthandblockdraweronvisit	no	\N
+2575	2	1768247173	theme_boost_union	showsitehomerighthandblockdraweronfirstlogin	no	\N
+2576	2	1768247173	theme_boost_union	showsitehomerighthandblockdraweronguestlogin	no	\N
+2577	2	1768247173	theme_boost_union	policyoverviewnavigation	no	\N
+2578	2	1768247173	theme_boost_union	markexternallinks	no	\N
+2579	2	1768247173	theme_boost_union	markexternallinksscope	wholepage	\N
+2580	2	1768247173	theme_boost_union	markmailtolinks	no	\N
+2581	2	1768247173	theme_boost_union	markmailtolinksscope	wholepage	\N
+2582	2	1768247173	theme_boost_union	markbrokenlinks	no	\N
+2583	2	1768247173	theme_boost_union	javascriptdisabledhint	no	\N
+2584	2	1768247173	theme_boost_union	footnote		\N
+2585	2	1768247173	theme_boost_union	enablefooterbutton	enablefooterbuttondesktop	\N
+2586	2	1768247173	theme_boost_union	footersuppressicons	no	\N
+2587	2	1768247173	theme_boost_union	footersuppresschat	no	\N
+2588	2	1768247173	theme_boost_union	footersuppresshelp	no	\N
+2589	2	1768247173	theme_boost_union	footersuppressservices	no	\N
+2590	2	1768247173	theme_boost_union	footersuppresscontact	no	\N
+2591	2	1768247173	theme_boost_union	footersuppresslogininfo	no	\N
+2592	2	1768247173	theme_boost_union	footersuppressusertour	no	\N
+2593	2	1768247173	theme_boost_union	footersuppressthemeswitch	no	\N
+2594	2	1768247173	theme_boost_union	footersuppresspowered	no	\N
+2595	2	1768247173	theme_boost_union	footersuppressstandardfooter_tool_dataprivacy	no	\N
+2596	2	1768247173	theme_boost_union	footersuppressstandardfooter_core_userfeedback	no	\N
+2597	2	1768247173	theme_boost_union	footersuppressstandardfooter_tool_policy	no	\N
+2598	2	1768247173	theme_boost_union	footersuppressstandardfooter_tool_mobile	no	\N
+2599	2	1768247173	theme_boost_union	enableaboutus	no	\N
+2600	2	1768247173	theme_boost_union	aboutuscontent		\N
+2601	2	1768247173	theme_boost_union	aboutuspagetitle	Sobre nosaltres	\N
+2602	2	1768247173	theme_boost_union	aboutuslinkposition	none	\N
+2603	2	1768247173	theme_boost_union	enableoffers	no	\N
+2604	2	1768247173	theme_boost_union	offerscontent		\N
+2605	2	1768247173	theme_boost_union	offerspagetitle	Ofertes	\N
+2606	2	1768247173	theme_boost_union	offerslinkposition	none	\N
+2607	2	1768247173	theme_boost_union	enableimprint	no	\N
+2608	2	1768247173	theme_boost_union	imprintcontent		\N
+2609	2	1768247173	theme_boost_union	imprintpagetitle	Avís legal	\N
+2610	2	1768247173	theme_boost_union	imprintlinkposition	none	\N
+2611	2	1768247173	theme_boost_union	enablecontact	no	\N
+2612	2	1768247173	theme_boost_union	contactcontent		\N
+2613	2	1768247173	theme_boost_union	contactpagetitle	Contacte	\N
+2614	2	1768247173	theme_boost_union	contactlinkposition	none	\N
+2615	2	1768247173	theme_boost_union	enablehelp	no	\N
+2616	2	1768247173	theme_boost_union	helpcontent		\N
+2617	2	1768247173	theme_boost_union	helppagetitle	Ajuda	\N
+2618	2	1768247173	theme_boost_union	helplinkposition	none	\N
+2619	2	1768247173	theme_boost_union	enablemaintenance	no	\N
+2620	2	1768247173	theme_boost_union	maintenancecontent		\N
+2621	2	1768247173	theme_boost_union	maintenancepagetitle	Manteniment	\N
+2622	2	1768247173	theme_boost_union	maintenancelinkposition	none	\N
+2623	2	1768247173	theme_boost_union	enablepage1	no	\N
+2624	2	1768247173	theme_boost_union	page1content		\N
+2625	2	1768247173	theme_boost_union	page1pagetitle	Pàgina genèrica 1	\N
+2626	2	1768247173	theme_boost_union	page1linkposition	none	\N
+2627	2	1768247173	theme_boost_union	enablepage2	no	\N
+2628	2	1768247173	theme_boost_union	page2content		\N
+2629	2	1768247173	theme_boost_union	page2pagetitle	Pàgina genèrica 2	\N
+2630	2	1768247173	theme_boost_union	page2linkposition	none	\N
+2631	2	1768247173	theme_boost_union	enablepage3	no	\N
+2632	2	1768247173	theme_boost_union	page3content		\N
+2633	2	1768247173	theme_boost_union	page3pagetitle	Pàgina genèrica 3	\N
+2634	2	1768247173	theme_boost_union	page3linkposition	none	\N
+2635	2	1768247173	theme_boost_union	infobanner1enabled	no	\N
+2636	2	1768247173	theme_boost_union	infobanner1content		\N
+2637	2	1768247173	theme_boost_union	infobanner1pages		\N
+2638	2	1768247173	theme_boost_union	infobanner1bsclass	primary	\N
+2639	2	1768247173	theme_boost_union	infobanner1order	1	\N
+2640	2	1768247173	theme_boost_union	infobanner1mode	perp	\N
+2641	2	1768247173	theme_boost_union	infobanner1dismissible	no	\N
+2642	2	1768247173	theme_boost_union	infobanner2enabled	no	\N
+2643	2	1768247173	theme_boost_union	infobanner2content		\N
+2644	2	1768247173	theme_boost_union	infobanner2pages		\N
+2645	2	1768247173	theme_boost_union	infobanner2bsclass	primary	\N
+2646	2	1768247173	theme_boost_union	infobanner2order	2	\N
+2647	2	1768247173	theme_boost_union	infobanner2mode	perp	\N
+2648	2	1768247173	theme_boost_union	infobanner2dismissible	no	\N
+2649	2	1768247173	theme_boost_union	infobanner3enabled	no	\N
+2650	2	1768247173	theme_boost_union	infobanner3content		\N
+2651	2	1768247173	theme_boost_union	infobanner3pages		\N
+2652	2	1768247173	theme_boost_union	infobanner3bsclass	primary	\N
+2653	2	1768247173	theme_boost_union	infobanner3order	3	\N
+2654	2	1768247173	theme_boost_union	infobanner3mode	perp	\N
+2655	2	1768247173	theme_boost_union	infobanner3dismissible	no	\N
+2656	2	1768247173	theme_boost_union	infobanner4enabled	no	\N
+2657	2	1768247173	theme_boost_union	infobanner4content		\N
+2658	2	1768247173	theme_boost_union	infobanner4pages		\N
+2659	2	1768247173	theme_boost_union	infobanner4bsclass	primary	\N
+2660	2	1768247173	theme_boost_union	infobanner4order	4	\N
+2661	2	1768247173	theme_boost_union	infobanner4mode	perp	\N
+2662	2	1768247173	theme_boost_union	infobanner4dismissible	no	\N
+2663	2	1768247173	theme_boost_union	infobanner5enabled	no	\N
+2664	2	1768247173	theme_boost_union	infobanner5content		\N
+2665	2	1768247173	theme_boost_union	infobanner5pages		\N
+2666	2	1768247173	theme_boost_union	infobanner5bsclass	primary	\N
+2667	2	1768247173	theme_boost_union	infobanner5order	5	\N
+2668	2	1768247173	theme_boost_union	infobanner5mode	perp	\N
+2669	2	1768247173	theme_boost_union	infobanner5dismissible	no	\N
+2670	2	1768247173	theme_boost_union	tilefrontpageposition	1	\N
+2671	2	1768247173	theme_boost_union	tilecolumns	2	\N
+2672	2	1768247173	theme_boost_union	tileheight	150px	\N
+2673	2	1768247173	theme_boost_union	tile1enabled	no	\N
+2674	2	1768247173	theme_boost_union	tile1title		\N
+2675	2	1768247173	theme_boost_union	tile1content		\N
+2676	2	1768247173	theme_boost_union	tile1backgroundimage		\N
+2677	2	1768247173	theme_boost_union	tile1backgroundimageposition	center center	\N
+2678	2	1768247173	theme_boost_union	tile1contentstyle	nochange	\N
+2679	2	1768247173	theme_boost_union	tile1link		\N
+2680	2	1768247173	theme_boost_union	tile1linktitle		\N
+2681	2	1768247173	theme_boost_union	tile1linktarget	same	\N
+2682	2	1768247173	theme_boost_union	tile1order	1	\N
+2683	2	1768247173	theme_boost_union	tile2enabled	no	\N
+2684	2	1768247173	theme_boost_union	tile2title		\N
+2685	2	1768247173	theme_boost_union	tile2content		\N
+2686	2	1768247173	theme_boost_union	tile2backgroundimage		\N
+2687	2	1768247173	theme_boost_union	tile2backgroundimageposition	center center	\N
+2688	2	1768247173	theme_boost_union	tile2contentstyle	nochange	\N
+2689	2	1768247173	theme_boost_union	tile2link		\N
+2690	2	1768247173	theme_boost_union	tile2linktitle		\N
+2691	2	1768247173	theme_boost_union	tile2linktarget	same	\N
+2692	2	1768247173	theme_boost_union	tile2order	2	\N
+2693	2	1768247173	theme_boost_union	tile3enabled	no	\N
+2694	2	1768247173	theme_boost_union	tile3title		\N
+2695	2	1768247173	theme_boost_union	tile3content		\N
+2696	2	1768247173	theme_boost_union	tile3backgroundimage		\N
+2697	2	1768247173	theme_boost_union	tile3backgroundimageposition	center center	\N
+2698	2	1768247173	theme_boost_union	tile3contentstyle	nochange	\N
+2699	2	1768247173	theme_boost_union	tile3link		\N
+2700	2	1768247173	theme_boost_union	tile3linktitle		\N
+2701	2	1768247173	theme_boost_union	tile3linktarget	same	\N
+2702	2	1768247173	theme_boost_union	tile3order	3	\N
+2703	2	1768247173	theme_boost_union	tile4enabled	no	\N
+2704	2	1768247173	theme_boost_union	tile4title		\N
+2705	2	1768247173	theme_boost_union	tile4content		\N
+2706	2	1768247173	theme_boost_union	tile4backgroundimage		\N
+2707	2	1768247173	theme_boost_union	tile4backgroundimageposition	center center	\N
+2708	2	1768247173	theme_boost_union	tile4contentstyle	nochange	\N
+2709	2	1768247173	theme_boost_union	tile4link		\N
+2710	2	1768247173	theme_boost_union	tile4linktitle		\N
+2711	2	1768247173	theme_boost_union	tile4linktarget	same	\N
+2712	2	1768247173	theme_boost_union	tile4order	4	\N
+2713	2	1768247173	theme_boost_union	tile5enabled	no	\N
+2714	2	1768247173	theme_boost_union	tile5title		\N
+2715	2	1768247173	theme_boost_union	tile5content		\N
+2716	2	1768247173	theme_boost_union	tile5backgroundimage		\N
+2717	2	1768247173	theme_boost_union	tile5backgroundimageposition	center center	\N
+2718	2	1768247173	theme_boost_union	tile5contentstyle	nochange	\N
+2719	2	1768247173	theme_boost_union	tile5link		\N
+2720	2	1768247173	theme_boost_union	tile5linktitle		\N
+2721	2	1768247173	theme_boost_union	tile5linktarget	same	\N
+2722	2	1768247173	theme_boost_union	tile5order	5	\N
+2723	2	1768247173	theme_boost_union	tile6enabled	no	\N
+2724	2	1768247173	theme_boost_union	tile6title		\N
+2725	2	1768247173	theme_boost_union	tile6content		\N
+2726	2	1768247173	theme_boost_union	tile6backgroundimage		\N
+2727	2	1768247173	theme_boost_union	tile6backgroundimageposition	center center	\N
+2728	2	1768247173	theme_boost_union	tile6contentstyle	nochange	\N
+2729	2	1768247173	theme_boost_union	tile6link		\N
+2730	2	1768247173	theme_boost_union	tile6linktitle		\N
+2731	2	1768247173	theme_boost_union	tile6linktarget	same	\N
+2732	2	1768247173	theme_boost_union	tile6order	6	\N
+2733	2	1768247173	theme_boost_union	tile7enabled	no	\N
+2734	2	1768247173	theme_boost_union	tile7title		\N
+2735	2	1768247173	theme_boost_union	tile7content		\N
+2736	2	1768247173	theme_boost_union	tile7backgroundimage		\N
+2737	2	1768247173	theme_boost_union	tile7backgroundimageposition	center center	\N
+2738	2	1768247173	theme_boost_union	tile7contentstyle	nochange	\N
+2739	2	1768247173	theme_boost_union	tile7link		\N
+2740	2	1768247173	theme_boost_union	tile7linktitle		\N
+2741	2	1768247173	theme_boost_union	tile7linktarget	same	\N
+2742	2	1768247173	theme_boost_union	tile7order	7	\N
+2743	2	1768247173	theme_boost_union	tile8enabled	no	\N
+2744	2	1768247173	theme_boost_union	tile8title		\N
+2745	2	1768247173	theme_boost_union	tile8content		\N
+2746	2	1768247173	theme_boost_union	tile8backgroundimage		\N
+2747	2	1768247173	theme_boost_union	tile8backgroundimageposition	center center	\N
+2748	2	1768247173	theme_boost_union	tile8contentstyle	nochange	\N
+2749	2	1768247173	theme_boost_union	tile8link		\N
+2750	2	1768247173	theme_boost_union	tile8linktitle		\N
+2751	2	1768247173	theme_boost_union	tile8linktarget	same	\N
+2752	2	1768247173	theme_boost_union	tile8order	8	\N
+2753	2	1768247173	theme_boost_union	tile9enabled	no	\N
+2754	2	1768247173	theme_boost_union	tile9title		\N
+2755	2	1768247173	theme_boost_union	tile9content		\N
+2756	2	1768247173	theme_boost_union	tile9backgroundimage		\N
+2757	2	1768247173	theme_boost_union	tile9backgroundimageposition	center center	\N
+2758	2	1768247173	theme_boost_union	tile9contentstyle	nochange	\N
+2759	2	1768247173	theme_boost_union	tile9link		\N
+2760	2	1768247173	theme_boost_union	tile9linktitle		\N
+2761	2	1768247173	theme_boost_union	tile9linktarget	same	\N
+2762	2	1768247173	theme_boost_union	tile9order	9	\N
+2763	2	1768247173	theme_boost_union	tile10enabled	no	\N
+2764	2	1768247173	theme_boost_union	tile10title		\N
+2765	2	1768247173	theme_boost_union	tile10content		\N
+2766	2	1768247173	theme_boost_union	tile10backgroundimage		\N
+2767	2	1768247173	theme_boost_union	tile10backgroundimageposition	center center	\N
+2768	2	1768247173	theme_boost_union	tile10contentstyle	nochange	\N
+2769	2	1768247173	theme_boost_union	tile10link		\N
+2770	2	1768247173	theme_boost_union	tile10linktitle		\N
+2771	2	1768247173	theme_boost_union	tile10linktarget	same	\N
+2772	2	1768247173	theme_boost_union	tile10order	10	\N
+2773	2	1768247173	theme_boost_union	tile11enabled	no	\N
+2774	2	1768247173	theme_boost_union	tile11title		\N
+2775	2	1768247173	theme_boost_union	tile11content		\N
+2776	2	1768247173	theme_boost_union	tile11backgroundimage		\N
+2777	2	1768247173	theme_boost_union	tile11backgroundimageposition	center center	\N
+2778	2	1768247173	theme_boost_union	tile11contentstyle	nochange	\N
+2779	2	1768247173	theme_boost_union	tile11link		\N
+2780	2	1768247173	theme_boost_union	tile11linktitle		\N
+2781	2	1768247173	theme_boost_union	tile11linktarget	same	\N
+2782	2	1768247173	theme_boost_union	tile11order	11	\N
+2783	2	1768247173	theme_boost_union	tile12enabled	no	\N
+2784	2	1768247173	theme_boost_union	tile12title		\N
+2785	2	1768247173	theme_boost_union	tile12content		\N
+2786	2	1768247173	theme_boost_union	tile12backgroundimage		\N
+2787	2	1768247173	theme_boost_union	tile12backgroundimageposition	center center	\N
+2788	2	1768247173	theme_boost_union	tile12contentstyle	nochange	\N
+2789	2	1768247173	theme_boost_union	tile12link		\N
+2790	2	1768247173	theme_boost_union	tile12linktitle		\N
+2791	2	1768247173	theme_boost_union	tile12linktarget	same	\N
+2792	2	1768247173	theme_boost_union	tile12order	12	\N
+2793	2	1768247173	theme_boost_union	sliderfrontpageposition	1	\N
+2794	2	1768247173	theme_boost_union	sliderarrownav	no	\N
+2795	2	1768247173	theme_boost_union	sliderindicatornav	no	\N
+2796	2	1768247173	theme_boost_union	slideranimation	1	\N
+2797	2	1768247173	theme_boost_union	sliderinterval	5000	\N
+2798	2	1768247173	theme_boost_union	sliderkeyboard	yes	\N
+2799	2	1768247173	theme_boost_union	sliderpause	yes	\N
+2800	2	1768247173	theme_boost_union	sliderride	0	\N
+2801	2	1768247173	theme_boost_union	sliderwrap	yes	\N
+2802	2	1768247173	theme_boost_union	slide1enabled	no	\N
+2803	2	1768247173	theme_boost_union	slide1backgroundimage		\N
+2804	2	1768247173	theme_boost_union	slide1backgroundimagealt		\N
+2805	2	1768247173	theme_boost_union	slide1caption		\N
+2806	2	1768247173	theme_boost_union	slide1content		\N
+2807	2	1768247173	theme_boost_union	slide1contentstyle	light	\N
+2808	2	1768247173	theme_boost_union	slide1link		\N
+2809	2	1768247173	theme_boost_union	slide1linktitle		\N
+2810	2	1768247173	theme_boost_union	slide1linksource	0	\N
+2811	2	1768247173	theme_boost_union	slide1linktarget	same	\N
+2812	2	1768247173	theme_boost_union	slide1order	1	\N
+2813	2	1768247173	theme_boost_union	slide2enabled	no	\N
+2814	2	1768247173	theme_boost_union	slide2backgroundimage		\N
+2815	2	1768247173	theme_boost_union	slide2backgroundimagealt		\N
+2816	2	1768247173	theme_boost_union	slide2caption		\N
+2817	2	1768247173	theme_boost_union	slide2content		\N
+2818	2	1768247173	theme_boost_union	slide2contentstyle	light	\N
+2819	2	1768247173	theme_boost_union	slide2link		\N
+2820	2	1768247173	theme_boost_union	slide2linktitle		\N
+2821	2	1768247173	theme_boost_union	slide2linksource	0	\N
+2822	2	1768247173	theme_boost_union	slide2linktarget	same	\N
+2823	2	1768247173	theme_boost_union	slide2order	2	\N
+2824	2	1768247173	theme_boost_union	slide3enabled	no	\N
+2825	2	1768247173	theme_boost_union	slide3backgroundimage		\N
+2826	2	1768247173	theme_boost_union	slide3backgroundimagealt		\N
+2827	2	1768247173	theme_boost_union	slide3caption		\N
+2828	2	1768247173	theme_boost_union	slide3content		\N
+2829	2	1768247173	theme_boost_union	slide3contentstyle	light	\N
+2830	2	1768247173	theme_boost_union	slide3link		\N
+2831	2	1768247173	theme_boost_union	slide3linktitle		\N
+2832	2	1768247173	theme_boost_union	slide3linksource	0	\N
+2833	2	1768247173	theme_boost_union	slide3linktarget	same	\N
+2834	2	1768247173	theme_boost_union	slide3order	3	\N
+2835	2	1768247173	theme_boost_union	slide4enabled	no	\N
+2836	2	1768247173	theme_boost_union	slide4backgroundimage		\N
+2837	2	1768247173	theme_boost_union	slide4backgroundimagealt		\N
+2838	2	1768247173	theme_boost_union	slide4caption		\N
+2839	2	1768247173	theme_boost_union	slide4content		\N
+2840	2	1768247173	theme_boost_union	slide4contentstyle	light	\N
+2841	2	1768247173	theme_boost_union	slide4link		\N
+2842	2	1768247173	theme_boost_union	slide4linktitle		\N
+2843	2	1768247173	theme_boost_union	slide4linksource	0	\N
+2844	2	1768247173	theme_boost_union	slide4linktarget	same	\N
+2845	2	1768247173	theme_boost_union	slide4order	4	\N
+2846	2	1768247173	theme_boost_union	slide5enabled	no	\N
+2847	2	1768247173	theme_boost_union	slide5backgroundimage		\N
+2848	2	1768247173	theme_boost_union	slide5backgroundimagealt		\N
+2849	2	1768247173	theme_boost_union	slide5caption		\N
+2850	2	1768247173	theme_boost_union	slide5content		\N
+2851	2	1768247173	theme_boost_union	slide5contentstyle	light	\N
+2852	2	1768247173	theme_boost_union	slide5link		\N
+2853	2	1768247173	theme_boost_union	slide5linktitle		\N
+2854	2	1768247173	theme_boost_union	slide5linksource	0	\N
+2855	2	1768247173	theme_boost_union	slide5linktarget	same	\N
+2856	2	1768247173	theme_boost_union	slide5order	5	\N
+2857	2	1768247173	theme_boost_union	slide6enabled	no	\N
+2858	2	1768247173	theme_boost_union	slide6backgroundimage		\N
+2859	2	1768247173	theme_boost_union	slide6backgroundimagealt		\N
+2860	2	1768247173	theme_boost_union	slide6caption		\N
+2861	2	1768247173	theme_boost_union	slide6content		\N
+2862	2	1768247173	theme_boost_union	slide6contentstyle	light	\N
+2863	2	1768247173	theme_boost_union	slide6link		\N
+2864	2	1768247173	theme_boost_union	slide6linktitle		\N
+2865	2	1768247173	theme_boost_union	slide6linksource	0	\N
+2866	2	1768247173	theme_boost_union	slide6linktarget	same	\N
+2867	2	1768247173	theme_boost_union	slide6order	6	\N
+2868	2	1768247173	theme_boost_union	showswitchedroleincourse	no	\N
+2869	2	1768247173	theme_boost_union	showhintcoursehidden	no	\N
+2870	2	1768247173	theme_boost_union	showhintforumnotifications	no	\N
+2871	2	1768247173	theme_boost_union	showhintcourseselfenrol	no	\N
+2872	2	1768247173	theme_boost_union	showhintcourseguestenrol	no	\N
+2873	2	1768247173	theme_boost_union	showhintcourseguestaccess	no	\N
+2874	2	1768247173	theme_boost_union	showviewcourseiconincoursemgnt	no	\N
+2875	2	1768247173	theme_boost_union	enableaccessibilitydeclaration	no	\N
+2876	2	1768247173	theme_boost_union	accessibilitydeclarationcontent		\N
+2877	2	1768247173	theme_boost_union	accessibilitydeclarationpagetitle	Declaració d'accessibilitat	\N
+2878	2	1768247173	theme_boost_union	accessibilitydeclarationlinkposition	none	\N
+2879	2	1768247173	theme_boost_union	enableaccessibilitysupport	no	\N
+2880	2	1768247173	theme_boost_union	accessibilitysupportcontent	<p>Si teniu cap comentari sobre l'accessibilitat o voleu informar d'algun obstacle, utilitzeu el formulari següent.</p><p>¿Feu servir tecnologies d'assistència com ara lectors de pantalla, lupes, control per veu o programari de reconeixement de veu? Si és així, especifiqueu quines. Per ajudar-nos a processar la vostra sol·licitud, podeu permetre que el formulari enviï automàticament la informació següent juntament amb el vostre missatge: l'URL on éreu quan vau obrir aquest formulari de suport (això s'anomena «referrer») i una mica d'informació sobre el vostre navegador.</p>	\N
+2881	2	1768247173	theme_boost_union	accessibilitysupportpagetitle	Suport a l'accessibilitat	\N
+2882	2	1768247173	theme_boost_union	accessibilitysupportlinkposition	none	\N
+2883	2	1768247173	theme_boost_union	allowaccessibilitysupportwithoutlogin	no	\N
+2884	2	1768247173	theme_boost_union	enableaccessibilitysupportfooterbutton	no	\N
+2885	2	1768247173	theme_boost_union	allowanonymoussubmits	no	\N
+2886	2	1768247173	theme_boost_union	allowsendtechinfoalong	yes	\N
+2887	2	1768247173	theme_boost_union	accessibilitysupportusermail		\N
+2888	2	1768247173	theme_boost_union	accessibilitysupportpagesrlinktitle	Obtenir suport a l'accessibilitat	\N
+2889	2	1768247173	theme_boost_union	accessibilitysupportrecaptcha	never	\N
+2890	2	1768247173	theme_boost_union	enablebuiltinsnippets	no	\N
+2891	2	1768247173	theme_boost_union	enableuploadedsnippets	no	\N
+2892	2	1768247173	theme_boost_union	uploadedsnippets		\N
+2893	2	1768247173	\N	file_redactor_exifremoverenabled	0	\N
+2894	2	1768247173	\N	file_redactor_exifremovertoolpath		\N
+2895	2	1768247173	\N	file_redactor_exifremoverremovetags	gps	\N
+2896	2	1768247173	\N	file_redactor_exifremovermimetype	image/jpeg\nimage/tiff	\N
+2897	2	1768247173	\N	servicespage		\N
+2898	2	1768247174	\N	cron_keepalive	180	\N
+2899	2	1768247174	\N	task_adhoc_failed_retention	2419200	\N
+2900	2	1768247174	tool_mobile	autologout	0	\N
+2901	2	1768247174	tool_mobile	autologouttime	86400	\N
+2902	2	1768247174	\N	enablesharingtomoodlenet	0	\N
+2903	2	1768247174	\N	enablecommunicationsubsystem	0	\N
+2904	2	1768247174	\N	debugtemplateinfo	0	\N
+2905	2	1768247174	aiprovider_azureai	action_generate_text_deployment		\N
+2906	2	1768247174	aiprovider_azureai	action_generate_text_apiversion	2024-06-01	\N
+2907	2	1768247174	aiprovider_azureai	action_generate_text_systeminstruction	Rebreu una entrada de text de l'usuari. La vostra tasca és generar un text basat en la seva sol·licitud. Seguiu aquestes instruccions importants:\n\n1. Retorneu el resum només en text pla.\n2. No inclogueu cap format de marques, salutacions ni tòpics.	\N
+2908	2	1768247174	aiprovider_azureai	action_generate_image_deployment		\N
+2909	2	1768247174	aiprovider_azureai	action_generate_image_apiversion	2024-06-01	\N
+2910	2	1768247174	aiprovider_azureai	action_summarise_text_deployment		\N
+2911	2	1768247174	aiprovider_azureai	action_summarise_text_apiversion	2024-06-01	\N
+2912	2	1768247174	aiprovider_azureai	action_summarise_text_systeminstruction	Rebreu una entrada de text de l'usuari. La vostra tasca és resumir el text proporcionat. Seguiu aquestes pautes:\n\n1. Condensar: Escurçar els passatges llargs en punts clau.\n2. Simplificar: Facilitar la comprensió de la informació complexa, especialment per als estudiants.\n\nInstruccions importants:\n\n1. Retornar el resum només en text pla.\n2. No incloure cap format de marques, salutacions ni tòpics.\n3. Centrar-se en la claredat, la concisió i l'accessibilitat.\n\nAssegureu-vos que el resum sigui fàcil de llegir i que transmeti eficaçment els punts principals del text original.	\N
+2913	2	1768247174	aiprovider_openai	action_generate_text_model	gpt-4o	\N
+2914	2	1768247174	aiprovider_openai	action_generate_text_endpoint	https://api.openai.com/v1/chat/completions	\N
+2915	2	1768247174	aiprovider_openai	action_generate_text_systeminstruction	Rebreu una entrada de text de l'usuari. La vostra tasca és generar un text basat en la seva sol·licitud. Seguiu aquestes instruccions importants:\n\n1. Retorneu el resum només en text pla.\n2. No inclogueu cap format de marques, salutacions ni tòpics.	\N
+2916	2	1768247174	aiprovider_openai	action_generate_image_model	dall-e-3	\N
+2917	2	1768247174	aiprovider_openai	action_generate_image_endpoint	https://api.openai.com/v1/images/generations	\N
+2918	2	1768247174	aiprovider_openai	action_summarise_text_model	gpt-4o	\N
+2919	2	1768247174	aiprovider_openai	action_summarise_text_endpoint	https://api.openai.com/v1/chat/completions	\N
+2920	2	1768247174	aiprovider_openai	action_summarise_text_systeminstruction	Rebreu una entrada de text de l'usuari. La vostra tasca és resumir el text proporcionat. Seguiu aquestes pautes:\n\n1. Condensar: Escurçar els passatges llargs en punts clau.\n2. Simplificar: Facilitar la comprensió de la informació complexa, especialment per als estudiants.\n\nInstruccions importants:\n\n1. Retornar el resum només en text pla.\n2. No incloure cap format de marques, salutacions ni tòpics.\n3. Centrar-se en la claredat, la concisió i l'accessibilitat.\n\nAssegureu-vos que el resum sigui fàcil de llegir i que transmeti eficaçment els punts principals del text original.	\N
 \.
 
 
@@ -32905,8 +35299,7 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 160	core_competency	enabled	1
 161	core_competency	pushcourseratingstouserplans	1
 162	cachestore_apcu	testperformance	0
-163	cachestore_memcached	testservers	
-164	cachestore_mongodb	testserver	
+3544	theme_boost_union	loginbackgroundimagetext	
 165	cachestore_redis	test_server	
 166	cachestore_redis	test_password	
 167	cachestore_redis	test_serializer	1
@@ -32944,20 +35337,20 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 199	core_admin	coursecolor8	#fdcb6e
 200	core_admin	coursecolor9	#fd79a8
 201	core_admin	coursecolor10	#6c5ce7
-2687	editor_tiny	version	2022112800
 246	mod_lti	kid	2218ff5dc1fd3cad7687
-203	availability_completion	version	2022112800
-204	availability_date	version	2022112800
-205	availability_grade	version	2022112800
-206	availability_group	version	2022112800
-208	availability_profile	version	2022112800
-209	qtype_calculated	version	2022112800
-210	qtype_calculatedmulti	version	2022112800
-211	qtype_calculatedsimple	version	2022112800
-212	qtype_ddimageortext	version	2022112800
-213	qtype_ddmarker	version	2022112800
-214	qtype_ddwtos	version	2022112800
-2689	format_topics	indentation	1
+203	availability_completion	version	2024100700
+204	availability_date	version	2024100700
+205	availability_grade	version	2024100700
+206	availability_group	version	2024100700
+208	availability_profile	version	2024100700
+209	qtype_calculated	version	2024100700
+211	qtype_calculatedsimple	version	2024100700
+210	qtype_calculatedmulti	version	2024100700
+212	qtype_ddimageortext	version	2024100700
+213	qtype_ddmarker	version	2024100700
+214	qtype_ddwtos	version	2024100700
+2687	editor_tiny	version	2024100701
+2689	format_topics	indentation	0
 247	mod_lti	privatekey	-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDF3524fsvIhIW9\nefaiXg9tEOvkl+tZ+Ifkkt/859PVcAxOgLBFSQv1F0atNdWI8G/P6KwpCZg40kdj\n/HfsXQ5qhWhYVDoK0J7/JSBKYC0bDl8yUWkM5UpnZQlKv1xh6x+2GXeedo57XLfL\nm/4T6RLcPTGbh5s1W+7oPpbdlTKYfYtPbgAi+AXg7UCU0y3u8BygsAww0z88BQeK\nxzCl5wUwqBzSP3PQTazJ3vFbjN7e/WSSxNGmMP2AuA/y/ggMF0PzgoAlYNfmj96Q\nDTGCtVwL9oB/bd9yKB4uskwV1jgMvwSn16DRe6s76VCNp506Sj021OhRZ8FVgv3I\n+zXdHEeRAgMBAAECggEAY0kU5qIYtoBoau5rpoTz0JIRCx5/ZSGjbjmUUl4wmIQk\naK+BwwIoEc6gFAFTJ+cc84GYAO9jhf9c+vqPYfY/aYuPE+MPTKXpYbTLQwaHG3BW\nq/TVdTcH4mF8DBmAzVEhFEorD0QFsjiPsIaRMoRchk3eOmAMrPV4Juhg4sYeIQzb\nBRSNbvX2o7Tm52jlMvLD3sUlk5EP6Vd/FTSito/zV/xgTy1DObpcdkdh2WktANoI\nRHUAxyUmkRr0jsaGH+yC8/yyvGbC5gftwO6FVd8AFH/phkrtabpbl5xECvWlIKsV\nU2Ecdn10OemPnSjYef7vcOuNTvFIBuo+JV7OUW71AQKBgQDyMSJT6WfM6U9V+Nnm\nPP+3LtPc09SxdZbGJ1mBkVVzv8K7n2PTqsNcr2EieETEAt562rEbBHwtfpwzpvAi\n8Btqd0l7mB4SC1nFqLvm8zWC6M30c6nvUZlpl1/EI0BF5K+03KDBG5QvF3pSByWf\napMAmyOenf85h2M+6kRuyj/JKQKBgQDRJ6QPGO7/4AQ4rJqcRZqlhLkOgVhVdKmK\nz3xR+ovS1cKIMGqxr6n3Ce0hvptKpMMCxGYBlXwICtDs4ZA9L0UZWVlR1Qa9qQ3l\nw/DNeBRmm/MYcCAVNaQOmdCObkJ9nQzeBWVF+gXrIR5sfWlQ5ruN0mG9VaBXSbM3\nGoarS46QKQKBgEQxa33/CVgcFVeasxft8v6MM+FIz+mLt4Fh0QT3e/0UcGtNzNjr\niwiM5SfEf3BFcolbDGUUFTbmIGs2xQTBYKbQoaMoSMdB5OwPv6CeuGF81YjQDHgz\nHKQrmC5s0osbghHF0YmuD0JXNPzlwEUrx+pyxEvEJvn20g4D/nLHhcBJAoGBALS+\nuAUf+/H9akh7yMTBVcox7yY82tRGk/lUItBJXync9lZw2NMixhOpbVZa/KI9zhSH\nGsvFncDpb/E1YEuvnNwyHYEdQc0G2e60LFWzrpWZsTNuOht6FoNToypi2GzrGmKH\ncSRO02yFW2BP5II4Ut5Vb4eKBp1IIGq/Lp+7FME5AoGAXyO/Z/jdcw2LiqKdgBRV\njaC+uoTLq8ZhNnFu3ZkIOlxBeG5NptMJzxVfmNCv4iDi+RiM8Ze4YJFArm07IrpJ\nMT13eisvogyftevXb7KQ30op6eEVQFQOKmLADvQYw/kVvpfMjdJ0D+PjOrf3Dlhs\n4t4MAmGjLYkGb1sYcitYYTI=\n-----END PRIVATE KEY-----\n
 290	enrol_flatfile	map_1	manager
 291	enrol_flatfile	map_2	coursecreator
@@ -32967,108 +35360,84 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 295	enrol_flatfile	map_6	guest
 296	enrol_flatfile	map_7	user
 297	enrol_flatfile	map_8	frontpage
-2690	format_weeks	indentation	1
-2691	gradereport_summary	version	2022112800
-636	gradingform_rubric	version	2022112800
-637	mlbackend_php	version	2022112800
-638	mlbackend_python	version	2022112800
-2692	qbank_bulkmove	version	2022112800
-2693	qbank_columnsortorder	version	2022112800
-2694	qbank_comment	version	2022112800
-2695	qbank_customfields	version	2022112800
-2696	qbank_deletequestion	version	2022112800
-2697	qbank_editquestion	version	2022112800
-218	qtype_match	version	2022112800
-219	qtype_missingtype	version	2022112800
-220	qtype_multianswer	version	2022112800
-221	qtype_multichoice	version	2022112800
-222	qtype_numerical	version	2022112800
-223	qtype_random	version	2022112800
-224	qtype_randomsamatch	version	2022112800
-225	qtype_shortanswer	version	2022112800
-244	mod_lti	version	2022112800
-226	qtype_truefalse	version	2022112800
-230	mod_book	version	2022112800
-234	mod_feedback	version	2022112800
-227	mod_assign	version	2022112801
-228	mod_assignment	version	2022112800
-238	mod_forum	version	2022112801
-231	mod_chat	version	2022112800
-232	mod_choice	version	2022112800
-236	mod_folder	version	2022112800
-233	mod_data	version	2022112801
-239	mod_glossary	version	2022112800
-240	mod_imscp	version	2022112800
-248	mod_page	version	2022112800
-243	mod_lesson	version	2022112800
-259	mod_workshop	version	2022112800
-252	mod_scorm	version	2022112800
-253	mod_survey	version	2022112800
-255	mod_url	version	2022112800
-250	mod_quiz	version	2022112800
-251	mod_resource	version	2022112800
-257	mod_wiki	version	2022112800
-265	auth_ldap	version	2022112800
-272	auth_none	version	2022112800
-260	auth_cas	version	2022112800
-262	auth_db	version	2022112800
-264	auth_email	version	2022112800
-273	auth_oauth2	version	2022112800
-277	calendartype_gregorian	version	2022112800
-267	auth_lti	version	2022112800
-268	auth_manual	version	2022112800
-271	auth_nologin	version	2022112800
-274	auth_shibboleth	version	2022112800
-276	auth_webservice	version	2022112800
-278	customfield_checkbox	version	2022112800
-279	customfield_date	version	2022112800
-280	customfield_select	version	2022112800
-281	customfield_text	version	2022112800
-282	customfield_textarea	version	2022112800
-283	enrol_category	version	2022112800
-285	enrol_cohort	version	2022112800
-286	enrol_database	version	2022112800
-298	enrol_guest	version	2022112800
-299	enrol_imsenterprise	version	2022112800
-301	enrol_ldap	version	2022112800
-304	enrol_manual	version	2022112800
-306	enrol_meta	version	2022112800
-308	enrol_mnet	version	2022112800
-309	enrol_paypal	version	2022112800
-310	enrol_self	version	2022112800
-303	enrol_lti	version	2022112800
-312	message_airnotifier	version	2022112800
-2698	qbank_exportquestions	version	2022112800
-2699	qbank_exporttoxml	version	2022112800
-2700	qbank_history	version	2022112800
-2701	qbank_importquestions	version	2022112800
-2702	qbank_managecategories	version	2022112800
-2703	qbank_previewquestion	version	2022112800
-639	mnetservice_enrol	version	2022112800
-640	webservice_rest	version	2022112800
-641	webservice_soap	version	2022112800
-643	repository_areafiles	version	2022112800
-648	repository_coursefiles	version	2022112800
-649	repository_dropbox	version	2022112800
-650	repository_equella	version	2022112800
-652	repository_flickr	version	2022112800
-653	repository_flickr_public	version	2022112800
-654	repository_googledocs	version	2022112800
-655	repository_local	version	2022112800
-659	repository_merlot	version	2022112800
-2704	qbank_statistics	version	2022112800
-2705	qbank_tagquestion	version	2022112800
-2706	qbank_usage	version	2022112800
-2707	qbank_viewcreator	version	2022112800
+218	qtype_match	version	2024100700
+219	qtype_missingtype	version	2024100700
+220	qtype_multianswer	version	2024100701
+221	qtype_multichoice	version	2024100700
+222	qtype_numerical	version	2024100700
+223	qtype_random	version	2024100700
+224	qtype_randomsamatch	version	2024100700
+225	qtype_shortanswer	version	2024100700
+226	qtype_truefalse	version	2024100700
+227	mod_assign	version	2024100700
+230	mod_book	version	2024100700
+231	mod_chat	version	2024100700
+232	mod_choice	version	2024100700
+234	mod_feedback	version	2024100701
+236	mod_folder	version	2024100700
+238	mod_forum	version	2024100700
+239	mod_glossary	version	2024100700
+240	mod_imscp	version	2024100700
+243	mod_lesson	version	2024100700
+244	mod_lti	version	2024100700
+248	mod_page	version	2024100700
+250	mod_quiz	version	2024100700
+251	mod_resource	version	2024100700
+252	mod_scorm	version	2024100700
+253	mod_survey	version	2024100700
+257	mod_wiki	version	2024100700
+255	mod_url	version	2024100700
+259	mod_workshop	version	2024100700
+260	auth_cas	version	2024100700
+264	auth_email	version	2024100700
+265	auth_ldap	version	2024100700
+267	auth_lti	version	2024100700
+268	auth_manual	version	2024100700
+271	auth_nologin	version	2024100700
+272	auth_none	version	2024100700
+273	auth_oauth2	version	2024100700
+274	auth_shibboleth	version	2024100700
+276	auth_webservice	version	2024100700
+277	calendartype_gregorian	version	2024100700
+278	customfield_checkbox	version	2024100700
+279	customfield_date	version	2024100700
+280	customfield_select	version	2024100700
+281	customfield_text	version	2024100700
+283	enrol_category	version	2024100700
+285	enrol_cohort	version	2024100700
+286	enrol_database	version	2024100702
+298	enrol_guest	version	2024100700
+299	enrol_imsenterprise	version	2024100700
+301	enrol_ldap	version	2024100700
+303	enrol_lti	version	2024100700
+304	enrol_manual	version	2024100700
+306	enrol_meta	version	2024100700
+308	enrol_mnet	version	2024100700
+309	enrol_paypal	version	2024100700
+310	enrol_self	version	2024100700
+312	message_airnotifier	version	2024100700
+2690	format_weeks	indentation	0
+2691	gradereport_summary	version	2024100700
+636	gradingform_rubric	version	2024100700
+637	mlbackend_php	version	2024100700
+638	mlbackend_python	version	2024100700
+640	webservice_rest	version	2024100700
+641	webservice_soap	version	2024100700
+2692	qbank_bulkmove	version	2024100700
+2693	qbank_columnsortorder	version	2024100701
+2694	qbank_comment	version	2024100700
+2695	qbank_customfields	version	2024100700
+2696	qbank_deletequestion	version	2024100700
+2697	qbank_editquestion	version	2024100700
+2698	qbank_exportquestions	version	2024100700
+2699	qbank_exporttoxml	version	2024100700
+2700	qbank_history	version	2024100700
+2701	qbank_importquestions	version	2024100700
+2702	qbank_managecategories	version	2024100700
+2703	qbank_previewquestion	version	2024100700
 645	areafiles	enablecourseinstances	0
-2708	qbank_viewquestionname	version	2022112800
-2709	qbank_viewquestiontext	version	2022112800
-2710	qbank_viewquestiontype	version	2022112800
 646	areafiles	enableuserinstances	0
-2711	tool_admin_presets	version	2022112800
-721	tool_behat	version	2022112802
-2712	tool_componentlibrary	version	2022112800
-806	cachestore_mongodb	version	2022112801
+3545	theme_boost_union	themerev	1768247860
 2714	theme_xtecboost	logo	
 2715	theme_xtecboost	footnote	
 2716	theme_xtecboost	website	
@@ -33108,29 +35477,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2749	theme_xtecboost	scsspre	
 2750	theme_xtecboost	scss	
 2751	theme_xtecboost	coursecontentmaxwidth	830
-816	assignsubmission_comments	version	2022112800
-850	datafield_radiobutton	version	2022112800
-2752	datapreset_journal	version	2022112800
-2753	datapreset_proposals	version	2022112800
-2754	datapreset_resources	version	2022112800
-2713	theme_xtecboost	version	2023120400
-2744	theme_xtecboost	themerev	1710943005
-660	repository_nextcloud	version	2022112800
-661	repository_onedrive	version	2022112800
-663	repository_recent	version	2022112800
-667	repository_s3	version	2022112800
-877	quizaccess_securewindow	version	2022112800
-2031	atto_cloze	version	2017072804
-904	atto_emoticon	version	2022112800
-911	atto_italic	version	2022112800
-924	atto_underline	version	2022112800
-2755	tiny_accessibilitychecker	version	2022112800
-2756	tiny_autosave	version	2022112800
-2757	tiny_equation	version	2022112800
-2758	tiny_h5p	version	2022112800
-2759	tiny_link	version	2022112800
-2760	tiny_media	version	2022112800
-2761	tiny_recordrtc	version	2022112800
 2762	moodlecourse	participantsperpage	20
 2763	message_airnotifier	encryptnotifications	0
 2764	message_airnotifier	encryptprocessing	0
@@ -33145,7 +35491,45 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2773	tiny_equation	librarygroup3	\n\\alpha\n\\beta\n\\gamma\n\\delta\n\\epsilon\n\\zeta\n\\eta\n\\theta\n\\iota\n\\kappa\n\\lambda\n\\mu\n\\nu\n\\xi\n\\pi\n\\rho\n\\sigma\n\\tau\n\\upsilon\n\\phi\n\\chi\n\\psi\n\\omega\n\\Gamma\n\\Delta\n\\Theta\n\\Lambda\n\\Xi\n\\Pi\n\\Sigma\n\\Upsilon\n\\Phi\n\\Psi\n\\Omega\n
 2774	tiny_equation	librarygroup4	\n\\sum{a,b}\n\\sqrt[a]{b+c}\n\\int_{a}^{b}{c}\n\\iint_{a}^{b}{c}\n\\iiint_{a}^{b}{c}\n\\oint{a}\n(a)\n[a]\n\\lbrace{a}\\rbrace\n\\left| \\begin{matrix} a_1 & a_2 \\\\ a_3 & a_4 \\end{matrix} \\right|\n\\frac{a}{b+c}\n\\vec{a}\n\\binom {a} {b}\n{a \\brack b}\n{a \\brace b}\n
 2775	tiny_recordrtc	allowedtypes	audio
-2776	tiny_recordrtc	audiobitrate	128000
+643	repository_areafiles	version	2024100700
+648	repository_coursefiles	version	2024100700
+649	repository_dropbox	version	2024100700
+650	repository_equella	version	2024100700
+652	repository_flickr	version	2024100700
+653	repository_flickr_public	version	2024100700
+654	repository_googledocs	version	2024100700
+655	repository_local	version	2024100700
+659	repository_merlot	version	2024100700
+660	repository_nextcloud	version	2024100700
+661	repository_onedrive	version	2024100700
+663	repository_recent	version	2024100700
+667	repository_s3	version	2024100700
+2704	qbank_statistics	version	2024100700
+2706	qbank_usage	version	2024100700
+2707	qbank_viewcreator	version	2024100700
+2708	qbank_viewquestionname	version	2024100700
+2709	qbank_viewquestiontext	version	2024100700
+2710	qbank_viewquestiontype	version	2024100700
+2711	tool_admin_presets	version	2024100700
+721	tool_behat	version	2024100700
+2712	tool_componentlibrary	version	2024100700
+2713	theme_xtecboost	version	2024110400
+816	assignsubmission_comments	version	2024100700
+850	datafield_radiobutton	version	2024100700
+2752	datapreset_journal	version	2024100700
+2753	datapreset_proposals	version	2024100700
+2754	datapreset_resources	version	2024100700
+877	quizaccess_securewindow	version	2024100700
+2031	atto_cloze	version	2017072808
+904	atto_emoticon	version	2024100700
+911	atto_italic	version	2024100700
+2755	tiny_accessibilitychecker	version	2024100700
+2756	tiny_autosave	version	2024100700
+2757	tiny_equation	version	2024100700
+2758	tiny_h5p	version	2024100700
+2759	tiny_link	version	2024100700
+2760	tiny_media	version	2024100700
+2761	tiny_recordrtc	version	2024100701
 2777	tiny_recordrtc	videobitrate	2500000
 2778	tiny_recordrtc	audiotimelimit	120
 2779	tiny_recordrtc	videotimelimit	120
@@ -33160,7 +35544,7 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2788	assign	enabletimelimit	0
 2789	qtype_multichoice	showstandardinstruction	0
 665	recent	enablecourseinstances	0
-2790	adminpresets	sensiblesettings	recaptchapublickey@@none, recaptchaprivatekey@@none, googlemapkey3@@none, secretphrase@@url, cronremotepassword@@none, smtpuser@@none, smtppass@@none, proxypassword@@none, quizpassword@@quiz, allowedip@@none, blockedip@@none, dbpass@@logstore_database, messageinbound_hostpass@@none, bind_pw@@auth_cas, pass@@auth_db, bind_pw@@auth_ldap, dbpass@@enrol_database, bind_pw@@enrol_ldap, server_password@@search_solr, ssl_keypassword@@search_solr, alternateserver_password@@search_solr, alternatessl_keypassword@@search_solr, test_password@@cachestore_redis, password@@mlbackend_python, badges_badgesalt@@none, calendar_exportsalt@@none
+2744	theme_xtecboost	themerev	1768247869
 2791	theme_boost	unaddableblocks	navigation,settings,course_list,section_links
 2792	theme_boost	loginbackgroundimage	
 2793	theme_classic	unaddableblocks	
@@ -33170,31 +35554,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2797	tool_mobile	qrsameipcheck	1
 2798	tool_mobile	autologinmintimebetweenreq	360
 666	recent	enableuserinstances	0
-516	block_course_list	version	2022112800
-517	block_course_summary	version	2022112800
-518	block_feedback	version	2022112800
-520	block_globalsearch	version	2022112800
-521	block_glossary_random	version	2022112800
-522	block_html	version	2022112800
-523	block_login	version	2022112800
-524	block_lp	version	2022112800
-525	block_mentees	version	2022112800
-526	block_mnet_hosts	version	2022112800
-527	block_myoverview	version	2022112800
-528	block_myprofile	version	2022112800
-529	block_navigation	version	2022112800
-530	block_news_items	version	2022112800
-531	block_online_users	version	2022112800
-535	block_recent_activity	version	2022112800
-536	block_recentlyaccessedcourses	version	2022112800
-538	block_recentlyaccesseditems	version	2022112800
-539	block_rss_client	version	2022112800
-540	block_search_forums	version	2022112800
-541	block_section_links	version	2022112800
-542	block_selfcompletion	version	2022112800
-544	block_site_main_menu	version	2022112800
-545	block_social_activities	version	2022112800
-546	block_starredcourses	version	2022112800
 2799	quiz_statistics	getstatslocktimeout	900
 671	upload	enablecourseinstances	0
 672	upload	enableuserinstances	0
@@ -33204,141 +35563,72 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 680	user	enableuserinstances	0
 684	wikimedia	enablecourseinstances	0
 685	wikimedia	enableuserinstances	0
-505	block_activity_modules	version	2022112800
-506	block_activity_results	version	2022112800
-507	block_admin_bookmarks	version	2022112800
-508	block_badges	version	2022112800
-509	block_blog_menu	version	2022112800
-510	block_blog_recent	version	2022112800
-511	block_blog_tags	version	2022112800
-513	block_calendar_upcoming	version	2022112800
-514	block_comments	version	2022112800
-515	block_completionstatus	version	2022112800
-547	block_tag_flickr	version	2022112800
-568	filter_emoticon	version	2022112800
-548	block_tag_youtube	version	2022112800
 708	question	disabledbehaviours	manualgraded
-550	block_tags	version	2022112800
-556	media_videojs	version	2022112800
-557	media_vimeo	version	2022112800
-551	block_timeline	version	2022112800
-553	media_html5audio	version	2022112800
-554	media_html5video	version	2022112800
-558	media_youtube	version	2022112800
-559	filter_activitynames	version	2022112800
-561	filter_algebra	version	2022112800
-563	filter_data	version	2022112800
-565	filter_displayh5p	version	2022112800
-567	filter_emailprotect	version	2022112800
-569	filter_glossary	version	2022112800
-579	filter_urltolink	version	2022112800
-571	filter_mathjaxloader	version	2022112800
-573	filter_mediaplugin	version	2022112800
-575	filter_multilang	version	2022112800
-576	filter_tex	version	2022112800
-578	filter_tidy	version	2022112800
-587	format_weeks	version	2022112801
-580	editor_atto	version	2022112800
-582	editor_textarea	version	2022112800
-583	editor_tinymce	version	2022112800
-584	format_singleactivity	version	2022112800
-585	format_social	version	2022112800
-586	format_topics	version	2022112801
-589	dataformat_excel	version	2022112800
-590	dataformat_html	version	2022112800
-591	dataformat_json	version	2022112800
-592	dataformat_ods	version	2022112800
-593	dataformat_pdf	version	2022112800
-594	profilefield_checkbox	version	2022112800
-595	profilefield_datetime	version	2022112800
-596	profilefield_menu	version	2022112800
-597	profilefield_text	version	2022112800
-598	profilefield_textarea	version	2022112800
-599	report_backups	version	2022112800
-600	report_competency	version	2022112800
-601	report_completion	version	2022112800
-603	report_configlog	version	2022112800
-604	report_courseoverview	version	2022112800
-605	report_eventlist	version	2022112800
-606	report_insights	version	2022112800
-607	report_log	version	2022112800
-610	report_outline	version	2022112800
-612	report_participation	version	2022112800
-614	report_performance	version	2022112800
-615	report_progress	version	2022112800
-617	report_questioninstances	version	2022112800
-618	report_security	version	2022112800
-619	report_stats	version	2022112800
-621	report_usersessions	version	2022112800
-622	gradeexport_ods	version	2022112800
-623	gradeexport_txt	version	2022112800
-624	gradeexport_xls	version	2022112800
-625	gradeexport_xml	version	2022112800
-626	gradeimport_csv	version	2022112800
-627	gradeimport_direct	version	2022112800
-628	gradeimport_xml	version	2022112800
-629	gradereport_grader	version	2022112800
-630	gradereport_history	version	2022112800
-631	gradereport_outcomes	version	2022112800
-633	gradereport_singleview	version	2022112800
-634	gradereport_user	version	2022112800
-635	gradingform_guide	version	2022112800
-669	repository_upload	version	2022112800
-673	repository_url	version	2022112800
-677	repository_user	version	2022112800
-681	repository_webdav	version	2022112800
-682	repository_wikimedia	version	2022112800
-686	repository_youtube	version	2022112800
-689	portfolio_download	version	2022112800
-690	portfolio_flickr	version	2022112800
-691	portfolio_googledocs	version	2022112800
-692	portfolio_mahara	version	2022112800
-697	qbehaviour_adaptive	version	2022112800
-694	search_simpledb	version	2022112800
-696	search_solr	version	2022112800
-699	qbehaviour_deferredcbm	version	2022112800
-700	qbehaviour_deferredfeedback	version	2022112800
-701	qbehaviour_immediatecbm	version	2022112800
-702	qbehaviour_immediatefeedback	version	2022112800
-703	qbehaviour_informationitem	version	2022112800
-704	qbehaviour_interactive	version	2022112800
-1947	qtype_multianswerwiris	version	2024010801
-706	qbehaviour_manualgraded	version	2022112800
-709	qbehaviour_missing	version	2022112800
-710	qformat_aiken	version	2022112800
-711	qformat_blackboard_six	version	2022112800
-713	qformat_gift	version	2022112800
-714	qformat_missingword	version	2022112800
-715	qformat_multianswer	version	2022112800
-718	qformat_xml	version	2022112800
-719	tool_analytics	version	2022112800
+505	block_activity_modules	version	2024100700
+506	block_activity_results	version	2024100700
+507	block_admin_bookmarks	version	2024100700
+508	block_badges	version	2024100700
+509	block_blog_menu	version	2024100700
+510	block_blog_recent	version	2024100700
+511	block_blog_tags	version	2024100700
+513	block_calendar_upcoming	version	2024100700
+514	block_comments	version	2024100700
+515	block_completionstatus	version	2024100700
+516	block_course_list	version	2024100700
+517	block_course_summary	version	2024100700
+518	block_feedback	version	2024100700
+520	block_globalsearch	version	2024100700
+521	block_glossary_random	version	2024100700
+522	block_html	version	2024100700
+523	block_login	version	2024100700
+524	block_lp	version	2024100700
+525	block_mentees	version	2024100700
+526	block_mnet_hosts	version	2024100700
+527	block_myoverview	version	2024100700
+528	block_myprofile	version	2024100700
+529	block_navigation	version	2024100700
+530	block_news_items	version	2024100700
+531	block_online_users	version	2024100700
+535	block_recent_activity	version	2024100700
+536	block_recentlyaccessedcourses	version	2024100700
+538	block_recentlyaccesseditems	version	2024100700
+539	block_rss_client	version	2024100700
+540	block_search_forums	version	2024100700
+541	block_section_links	version	2024100700
+542	block_selfcompletion	version	2024100700
+544	block_site_main_menu	version	2024100700
+545	block_social_activities	version	2024100700
+546	block_starredcourses	version	2024100700
+547	block_tag_flickr	version	2024100700
+548	block_tag_youtube	version	2024100700
+550	block_tags	version	2024100700
+551	block_timeline	version	2024100700
+553	media_html5audio	version	2024100700
+554	media_html5video	version	2024100700
+556	media_videojs	version	2024100700
+557	media_vimeo	version	2024100700
+558	media_youtube	version	2024100700
+559	filter_activitynames	version	2024100700
+561	filter_algebra	version	2024100700
+563	filter_data	version	2024100700
+565	filter_displayh5p	version	2024100700
+567	filter_emailprotect	version	2024100700
+568	filter_emoticon	version	2024100700
+569	filter_glossary	version	2024100700
+571	filter_mathjaxloader	version	2024100700
+573	filter_mediaplugin	version	2024100700
+575	filter_multilang	version	2024100700
+576	filter_tex	version	2024100700
+579	filter_urltolink	version	2024100700
+580	editor_atto	version	2024100700
+582	editor_textarea	version	2024100700
+584	format_singleactivity	version	2024100700
+585	format_social	version	2024100700
+586	format_topics	version	2024100700
+589	dataformat_excel	version	2024100700
+587	format_weeks	version	2024100700
+2776	tiny_recordrtc	audiobitrate	128000
 755	tool_log	enabled_stores	logstore_standard
-720	tool_availabilityconditions	version	2022112800
-722	tool_capability	version	2022112800
-723	tool_cohortroles	version	2022112801
-724	tool_customlang	version	2022112800
-726	tool_dataprivacy	version	2022112800
-745	tool_dbtransfer	version	2022112800
-746	tool_filetypes	version	2022112800
-747	tool_generator	version	2022112800
-749	tool_httpsreplace	version	2022112800
-750	tool_innodb	version	2022112800
-751	tool_installaddon	version	2022112800
-752	tool_langimport	version	2022112800
-753	tool_log	version	2022112800
-756	tool_lp	version	2022112800
-758	tool_lpmigrate	version	2022112800
-759	tool_messageinbound	version	2022112800
-778	tool_mobile	version	2022112800
-800	tool_usertours	version	2022112800
-779	tool_monitor	version	2022112800
-786	tool_multilangupgrade	version	2022112800
-787	tool_oauth2	version	2022112800
-788	tool_phpunit	version	2022112800
-789	tool_policy	version	2022112800
-790	tool_profiling	version	2022112800
-791	tool_recyclebin	version	2022112800
-792	tool_replace	version	2022112800
 820	assignsubmission_onlinetext	sortorder	0
 818	assignsubmission_file	sortorder	1
 819	assignsubmission_comments	sortorder	2
@@ -33346,15 +35636,99 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 827	assignfeedback_editpdf	sortorder	1
 829	assignfeedback_offline	sortorder	2
 828	assignfeedback_file	sortorder	3
-793	tool_spamcleaner	version	2022112800
-794	tool_task	version	2022112800
-795	tool_templatelibrary	version	2022112800
-796	tool_unsuproles	version	2022112800
-798	tool_uploadcourse	version	2022112800
-799	tool_uploaduser	version	2022112800
-802	tool_xmldb	version	2022112800
-803	cachestore_apcu	version	2022112800
-805	cachestore_memcached	version	2022112800
+1947	qtype_multianswerwiris	version	2025042902
+590	dataformat_html	version	2024100700
+591	dataformat_json	version	2024100700
+593	dataformat_pdf	version	2024100700
+594	profilefield_checkbox	version	2024100700
+595	profilefield_datetime	version	2024100700
+596	profilefield_menu	version	2024100700
+597	profilefield_text	version	2024100700
+598	profilefield_textarea	version	2024100700
+599	report_backups	version	2024100700
+600	report_competency	version	2024100700
+601	report_completion	version	2024100700
+603	report_configlog	version	2024100700
+604	report_courseoverview	version	2024100700
+605	report_eventlist	version	2024100700
+606	report_insights	version	2024100700
+607	report_log	version	2024100700
+610	report_outline	version	2024100700
+612	report_participation	version	2024100700
+614	report_performance	version	2024100700
+615	report_progress	version	2024100700
+618	report_security	version	2024100700
+619	report_stats	version	2024100700
+621	report_usersessions	version	2024100700
+622	gradeexport_ods	version	2024100700
+623	gradeexport_txt	version	2024100700
+624	gradeexport_xls	version	2024100700
+625	gradeexport_xml	version	2024100700
+626	gradeimport_csv	version	2024100700
+627	gradeimport_direct	version	2024100700
+628	gradeimport_xml	version	2024100700
+630	gradereport_history	version	2024100700
+629	gradereport_grader	version	2024100700
+631	gradereport_outcomes	version	2024100700
+633	gradereport_singleview	version	2024100700
+634	gradereport_user	version	2024100700
+635	gradingform_guide	version	2024100700
+669	repository_upload	version	2024100700
+673	repository_url	version	2024100700
+677	repository_user	version	2024100700
+681	repository_webdav	version	2024100700
+686	repository_youtube	version	2024100700
+689	portfolio_download	version	2024100700
+690	portfolio_flickr	version	2024100700
+691	portfolio_googledocs	version	2024100700
+692	portfolio_mahara	version	2024100700
+694	search_simpledb	version	2024100700
+696	search_solr	version	2024100700
+697	qbehaviour_adaptive	version	2024100700
+699	qbehaviour_deferredcbm	version	2024100700
+700	qbehaviour_deferredfeedback	version	2024100700
+701	qbehaviour_immediatecbm	version	2024100700
+702	qbehaviour_immediatefeedback	version	2024100700
+703	qbehaviour_informationitem	version	2024100700
+704	qbehaviour_interactive	version	2024100700
+706	qbehaviour_manualgraded	version	2024100700
+709	qbehaviour_missing	version	2024100700
+710	qformat_aiken	version	2024100700
+713	qformat_gift	version	2024100700
+714	qformat_missingword	version	2024100700
+715	qformat_multianswer	version	2024100700
+718	qformat_xml	version	2024100700
+719	tool_analytics	version	2024100700
+720	tool_availabilityconditions	version	2024100700
+722	tool_capability	version	2024100700
+724	tool_customlang	version	2024100700
+723	tool_cohortroles	version	2024100700
+745	tool_dbtransfer	version	2024100700
+726	tool_dataprivacy	version	2024100700
+746	tool_filetypes	version	2024100700
+747	tool_generator	version	2024100700
+749	tool_httpsreplace	version	2024100700
+751	tool_installaddon	version	2024100700
+752	tool_langimport	version	2024100700
+753	tool_log	version	2024100700
+756	tool_lp	version	2024100701
+758	tool_lpmigrate	version	2024100700
+759	tool_messageinbound	version	2024100700
+778	tool_mobile	version	2024100700
+779	tool_monitor	version	2024100700
+787	tool_oauth2	version	2024100700
+788	tool_phpunit	version	2024100700
+789	tool_policy	version	2024100700
+790	tool_profiling	version	2024100700
+791	tool_recyclebin	version	2024100700
+792	tool_replace	version	2024100700
+793	tool_spamcleaner	version	2024100700
+794	tool_task	version	2024100700
+795	tool_templatelibrary	version	2024100700
+796	tool_unsuproles	version	2024100700
+798	tool_uploadcourse	version	2024100700
+799	tool_uploaduser	version	2024100700
+800	tool_usertours	version	2024100700
 940	tool_log	exportlog	1
 941	tool_dataprivacy	contactdataprotectionofficer	0
 942	tool_dataprivacy	automaticdeletionrequests	1
@@ -33381,82 +35755,80 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 963	auth_email	field_lock_lastnamephonetic	unlocked
 964	auth_email	field_lock_middlename	unlocked
 965	auth_email	field_lock_alternatename	unlocked
-807	cachestore_redis	version	2022112800
-808	cachestore_session	version	2022112800
-809	cachestore_static	version	2022112800
-810	cachelock_file	version	2022112800
-811	fileconverter_googledrive	version	2022112800
-812	fileconverter_unoconv	version	2022112800
-814	theme_boost	version	2022112800
-815	theme_classic	version	2022112800
-821	assignsubmission_file	version	2022112800
-822	assignsubmission_onlinetext	version	2022112800
-824	assignfeedback_comments	version	2022112800
-832	assignfeedback_file	version	2022112800
-835	assignment_offline	version	2022112800
-836	assignment_online	version	2022112800
-837	assignment_upload	version	2022112800
-838	assignment_uploadsingle	version	2022112800
-839	booktool_exportimscp	version	2022112800
-840	booktool_importhtml	version	2022112800
-841	booktool_print	version	2022112800
-842	datafield_checkbox	version	2022112800
-843	datafield_date	version	2022112800
-844	datafield_file	version	2022112800
-845	datafield_latlong	version	2022112800
-846	datafield_menu	version	2022112800
-847	datafield_multimenu	version	2022112800
-848	datafield_number	version	2022112800
-849	datafield_picture	version	2022112800
-851	datafield_text	version	2022112800
-852	datafield_textarea	version	2022112800
-853	datafield_url	version	2022112800
-854	datapreset_imagegallery	version	2022112800
-855	forumreport_summary	version	2022112800
-858	ltiservice_memberships	version	2022112800
-857	ltiservice_gradebookservices	version	2022112800
-859	ltiservice_profile	version	2022112800
-860	ltiservice_toolproxy	version	2022112800
-861	ltiservice_toolsettings	version	2022112800
-862	quiz_grading	version	2022112800
-864	quiz_overview	version	2022112800
-866	quiz_responses	version	2022112800
-870	quizaccess_delaybetweenattempts	version	2022112800
-871	quizaccess_ipaddress	version	2022112800
-872	quizaccess_numattempts	version	2022112800
-873	quizaccess_offlineattempts	version	2022112800
-874	quizaccess_openclosedate	version	2022112800
-875	quizaccess_password	version	2022112800
-878	quizaccess_timelimit	version	2022112800
-879	scormreport_basic	version	2022112800
-880	scormreport_graphs	version	2022112800
-882	scormreport_objectives	version	2022112800
-883	workshopform_accumulative	version	2022112800
-885	workshopform_comments	version	2022112800
-887	workshopform_numerrors	version	2022112800
-889	workshopform_rubric	version	2022112800
-891	workshopallocation_manual	version	2022112800
-892	workshopallocation_random	version	2022112800
-893	workshopallocation_scheduled	version	2022112800
-894	workshopeval_best	version	2022112800
-895	atto_accessibilitychecker	version	2022112800
-896	atto_accessibilityhelper	version	2022112800
-897	atto_align	version	2022112800
-898	atto_backcolor	version	2022112800
-899	atto_bold	version	2022112800
-900	atto_charmap	version	2022112800
-901	atto_clear	version	2022112800
-902	atto_collapse	version	2022112800
-903	atto_emojipicker	version	2022112800
-906	atto_fontcolor	version	2022112800
-905	atto_equation	version	2022112800
-907	atto_h5p	version	2022112800
-908	atto_html	version	2022112800
-909	atto_image	version	2022112800
-868	quiz_statistics	version	2022112804
 966	auth_mnet	rpc_negotiation_timeout	30
 967	auth_db	host	127.0.0.1
 968	auth_db	type	mysqli
+802	tool_xmldb	version	2024100700
+803	cachestore_apcu	version	2024100700
+807	cachestore_redis	version	2024100700
+808	cachestore_session	version	2024100700
+809	cachestore_static	version	2024100700
+810	cachelock_file	version	2024100700
+811	fileconverter_googledrive	version	2024100700
+812	fileconverter_unoconv	version	2024100700
+814	theme_boost	version	2024100700
+815	theme_classic	version	2024100700
+821	assignsubmission_file	version	2024100700
+822	assignsubmission_onlinetext	version	2024100700
+824	assignfeedback_comments	version	2024100700
+832	assignfeedback_file	version	2024100700
+839	booktool_exportimscp	version	2024100700
+840	booktool_importhtml	version	2024100700
+841	booktool_print	version	2024100700
+842	datafield_checkbox	version	2024100700
+843	datafield_date	version	2024100700
+844	datafield_file	version	2024100700
+845	datafield_latlong	version	2024100700
+846	datafield_menu	version	2024100700
+847	datafield_multimenu	version	2024100700
+848	datafield_number	version	2024100700
+849	datafield_picture	version	2024100700
+851	datafield_text	version	2024100700
+852	datafield_textarea	version	2024100700
+853	datafield_url	version	2024100700
+854	datapreset_imagegallery	version	2024100700
+855	forumreport_summary	version	2024100700
+857	ltiservice_gradebookservices	version	2024100700
+858	ltiservice_memberships	version	2024100700
+859	ltiservice_profile	version	2024100700
+860	ltiservice_toolproxy	version	2024100700
+861	ltiservice_toolsettings	version	2024100700
+862	quiz_grading	version	2024100700
+864	quiz_overview	version	2024100700
+866	quiz_responses	version	2024100700
+868	quiz_statistics	version	2024100700
+870	quizaccess_delaybetweenattempts	version	2024100700
+871	quizaccess_ipaddress	version	2024100700
+872	quizaccess_numattempts	version	2024100700
+873	quizaccess_offlineattempts	version	2024100700
+874	quizaccess_openclosedate	version	2024100700
+875	quizaccess_password	version	2024100700
+878	quizaccess_timelimit	version	2024100700
+879	scormreport_basic	version	2024100700
+880	scormreport_graphs	version	2024100700
+882	scormreport_objectives	version	2024100700
+883	workshopform_accumulative	version	2024100700
+885	workshopform_comments	version	2024100700
+887	workshopform_numerrors	version	2024100700
+889	workshopform_rubric	version	2024100700
+891	workshopallocation_manual	version	2024100700
+892	workshopallocation_random	version	2024100700
+893	workshopallocation_scheduled	version	2024100700
+894	workshopeval_best	version	2024100700
+895	atto_accessibilitychecker	version	2024100700
+896	atto_accessibilityhelper	version	2024100700
+897	atto_align	version	2024100700
+898	atto_backcolor	version	2024100700
+899	atto_bold	version	2024100700
+900	atto_charmap	version	2024100700
+901	atto_clear	version	2024100700
+902	atto_collapse	version	2024100700
+903	atto_emojipicker	version	2024100700
+905	atto_equation	version	2024100700
+906	atto_fontcolor	version	2024100700
+907	atto_h5p	version	2024100700
+908	atto_html	version	2024100700
+909	atto_image	version	2024100700
 969	auth_db	sybasequoting	0
 970	auth_db	name	
 971	auth_db	user	
@@ -33539,34 +35911,24 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 1048	auth_db	field_updatelocal_middlename	oncreate
 1049	auth_db	field_updateremote_middlename	0
 1050	auth_db	field_lock_middlename	unlocked
-912	atto_link	version	2022112800
-913	atto_managefiles	version	2022112800
-914	atto_media	version	2022112800
-915	atto_noautolink	version	2022112800
-918	atto_rtl	version	2022112800
-917	atto_recordrtc	version	2022112800
-919	atto_strike	version	2022112800
-920	atto_subscript	version	2022112800
-921	atto_superscript	version	2022112800
-922	atto_table	version	2022112800
-923	atto_title	version	2022112800
-925	atto_undo	version	2022112800
-926	atto_unorderedlist	version	2022112800
-927	tinymce_ctrlhelp	version	2022112800
-928	tinymce_managefiles	version	2022112800
-929	tinymce_moodleemoticon	version	2022112800
-930	tinymce_moodleimage	version	2022112800
-931	tinymce_moodlemedia	version	2022112800
-932	tinymce_moodlenolink	version	2022112800
-933	tinymce_pdw	version	2022112800
-934	tinymce_spellchecker	version	2022112800
-936	tinymce_wrap	version	2022112800
-938	logstore_legacy	version	2022112800
-939	logstore_standard	version	2022112800
 1051	auth_db	field_map_alternatename	
 1052	auth_db	field_updatelocal_alternatename	oncreate
 1053	auth_db	field_updateremote_alternatename	0
 1054	auth_db	field_lock_alternatename	unlocked
+912	atto_link	version	2024100700
+913	atto_managefiles	version	2024100700
+914	atto_media	version	2024100700
+915	atto_noautolink	version	2024100700
+917	atto_recordrtc	version	2024100700
+918	atto_rtl	version	2024100700
+919	atto_strike	version	2024100700
+920	atto_subscript	version	2024100700
+921	atto_superscript	version	2024100700
+922	atto_table	version	2024100700
+923	atto_title	version	2024100700
+925	atto_undo	version	2024100700
+926	atto_unorderedlist	version	2024100700
+939	logstore_standard	version	2024100700
 1055	auth_manual	expiration	0
 1056	auth_manual	expirationtime	30
 1057	auth_manual	expiration_warning	0
@@ -33947,12 +36309,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 1435	atto_table	allowborders	0
 1436	atto_table	allowbackgroundcolour	0
 1437	atto_table	allowwidth	0
-1438	editor_tinymce	customtoolbar	wrap,formatselect,wrap,bold,italic,wrap,bullist,numlist,wrap,link,unlink,wrap,image\n\nundo,redo,wrap,underline,strikethrough,sub,sup,wrap,justifyleft,justifycenter,justifyright,wrap,outdent,indent,wrap,forecolor,backcolor,wrap,ltr,rtl\n\nfontselect,fontsizeselect,wrap,code,search,replace,wrap,nonbreaking,charmap,table,wrap,cleanup,removeformat,pastetext,pasteword,wrap,fullscreen
-1439	editor_tinymce	fontselectlist	Trebuchet=Trebuchet MS,Verdana,Arial,Helvetica,sans-serif;Arial=arial,helvetica,sans-serif;Courier New=courier new,courier,monospace;Georgia=georgia,times new roman,times,serif;Tahoma=tahoma,arial,helvetica,sans-serif;Times New Roman=times new roman,times,serif;Verdana=verdana,arial,helvetica,sans-serif;Impact=impact;Wingdings=wingdings
-1440	editor_tinymce	customconfig	
-1441	tinymce_moodleemoticon	requireemoticon	1
-1442	tinymce_spellchecker	spellengine	
-1443	tinymce_spellchecker	spelllanguagelist	+English=en,Danish=da,Dutch=nl,Finnish=fi,French=fr,German=de,Italian=it,Polish=pl,Portuguese=pt,Spanish=es,Swedish=sv
 1444	tool_recyclebin	coursebinenable	1
 1445	tool_recyclebin	coursebinexpiry	604800
 1446	tool_recyclebin	categorybinenable	1
@@ -34346,10 +36702,8 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 1838	assign	requiresubmissionstatement	0
 1839	assign	requiresubmissionstatement_adv	
 1840	assign	requiresubmissionstatement_locked	
-1841	assign	attemptreopenmethod	none
 1842	assign	attemptreopenmethod_adv	
 1843	assign	attemptreopenmethod_locked	
-1844	assign	maxattempts	-1
 1845	assign	maxattempts_adv	
 1846	assign	maxattempts_locked	
 1847	assign	teamsubmission	0
@@ -34422,7 +36776,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 1914	logstore_database	logguests	0
 1915	logstore_database	includelevels	1,2,0
 1916	logstore_database	includeactions	c,r,u,d
-1917	logstore_legacy	loglegacy	0
 1918	logstore_standard	logguests	1
 1919	logstore_standard	jsonformat	1
 1921	logstore_standard	buffersize	50
@@ -34434,6 +36787,8 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 1929	media_videojs	limitsize	1
 1930	qtype_multichoice	answerhowmany	1
 1931	qtype_multichoice	shuffleanswers	1
+1841	assign	attemptreopenmethod	untilpass
+1844	assign	maxattempts	1
 1932	qtype_multichoice	answernumbering	abc
 1933	tool_mobile	apppolicy	
 1934	tool_mobile	typeoflogin	1
@@ -34453,19 +36808,11 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2005	format_simple	version	2023060100
 2011	local_agora	version	2023070400
 2015	local_oauth	version	2023091301
-1948	qtype_multichoicewiris	version	2024010801
-1950	qtype_shortanswerwiris	version	2024010801
-1951	qtype_truefalsewiris	version	2024010801
-1952	qtype_wq	version	2024010801
-1954	mod_geogebra	version	2024012200
-1955	mod_hotpot	version	2024021051
 2008	qformat_hotpot	version	2024021527
 2084	local_alexandriaimporter	alexandria_token	
 1992	mod_qv	version	2019010700
-1993	mod_rcontent	version	2017101000
 2001	block_my_books	version	2015111700
 2003	block_rgrade	version	2016090500
-2012	local_alexandriaimporter	version	2016021600
 2016	local_rcommon	version	2017101000
 2018	rcommon	enabled	1
 2020	hotpotattempt_hp	version	2010112400
@@ -34479,13 +36826,10 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2028	hotpotreport_overview	version	2010112400
 2029	hotpotreport_responses	version	2010112400
 2030	hotpotreport_scores	version	2010112400
-2032	atto_fontfamily	version	2020010600
-2033	atto_fontsize	version	2015042701
 1424	editor_atto	toolbar	collapse = collapse\nstyle1 = title, bold, italic\nlist = unorderedlist, orderedlist\nlinks = link\nfiles = image, media, recordrtc, managefiles, h5p\nstyle2 = underline, strike, subscript, superscript\nalign = align\nindent = indent\ninsert = equation, charmap, table, clear\nundo = undo\naccessibility = accessibilitychecker, accessibilityhelper\nmath = wiris\nother = html
 2056	mybooks	viewer_opening	1
 2057	mybooks	addkey	1
 2058	block_configurable_reports	cron_hour	0
-1957	mod_hvp	version	2022012000
 2059	block_configurable_reports	cron_minute	0
 2060	block_configurable_reports	crrepository	jleyva/moodle-configurable_reports_repository
 2061	block_configurable_reports	sharedsqlrepository	jleyva/moodle-custom_sql_report_queries
@@ -34493,10 +36837,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2063	block_configurable_reports	reporttableui	jquery
 2064	block_configurable_reports	reportlimit	5000
 2065	block_completion_progress	wrapafter	16
-1949	qtype_ordering	version	2023042907
-1975	mod_jclic	version	2023071300
-1977	mod_journal	version	2023042400
-1978	mod_questionnaire	version	2022121600
 2066	block_completion_progress	defaultlongbars	squeeze
 2067	block_completion_progress	coursenametoshow	shortname
 2068	block_completion_progress	completed_colour	#73A839
@@ -34531,6 +36871,20 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2098	filter_wiris	pluginperformance	1
 2099	filter_wiris	editormodalwindowfullscreen	0
 2100	filter_wiris	access_provider_enabled	0
+1949	qtype_ordering	version	2024100700
+1950	qtype_shortanswerwiris	version	2025042902
+1951	qtype_truefalsewiris	version	2025042902
+1952	qtype_wq	version	2025042902
+1954	mod_geogebra	version	2025052800
+1955	mod_hotpot	version	2025050353
+1957	mod_hvp	version	2024120900
+1975	mod_jclic	version	2025052800
+1977	mod_journal	version	2024120300
+1993	mod_rcontent	version	2021011200
+1978	mod_questionnaire	version	2022121601
+2012	local_alexandriaimporter	version	2024102400
+2032	atto_fontfamily	version	2024110400
+2033	atto_fontsize	version	2023091901
 2101	rcontent	whatgrade	0
 2102	rcontent	framesize	400
 2103	rcontent	popup	0
@@ -34711,22 +37065,7 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2270	theme_xtec2020	admin_alert_start	
 2271	theme_xtec2020	admin_alert_end	
 157	analytics	modeloutputdir	
-532	block_private_files	version	2022112800
-543	block_settings	version	2022112800
-588	dataformat_csv	version	2022112800
-2288	profilefield_social	version	2022112800
-2289	report_infectedfiles	version	2022112800
-609	report_loglive	version	2022112800
-2290	report_status	version	2022112800
-632	gradereport_overview	version	2022112800
-2291	repository_contentbank	version	2022112800
-651	repository_filesystem	version	2022112800
-698	qbehaviour_adaptivenopenalty	version	2022112800
-705	qbehaviour_interactivecountback	version	2022112800
 2287	block_myoverview	displaygroupingfavourites	1
-717	qformat_xhtml	version	2022112800
-1998	block_configurable_reports	version	2020110300
-2295	tool_brickfield	version	2022112800
 1451	filter_mathjaxloader	httpsurl	https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js
 2293	contentbank	enablecourseinstances	0
 2294	contentbank	enableuserinstances	0
@@ -34743,6 +37082,19 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2317	backup	backup_import_permissions_locked	
 2318	backup	backup_import_contentbankcontent	1
 2319	backup	backup_import_contentbankcontent_locked	
+532	block_private_files	version	2024100700
+543	block_settings	version	2024100700
+588	dataformat_csv	version	2024100700
+2288	profilefield_social	version	2024100700
+609	report_loglive	version	2024100700
+2290	report_status	version	2024100700
+632	gradereport_overview	version	2024100700
+2291	repository_contentbank	version	2024100700
+651	repository_filesystem	version	2024100700
+698	qbehaviour_adaptivenopenalty	version	2024100700
+705	qbehaviour_interactivecountback	version	2024100700
+717	qformat_xhtml	version	2024100700
+2295	tool_brickfield	version	2024100700
 2320	backup	backup_import_legacyfiles	1
 2321	backup	backup_import_legacyfiles_locked	
 2322	backup	backup_auto_contentbankcontent	1
@@ -34754,8 +37106,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2328	restore	restore_general_legacyfiles	1
 2329	restore	restore_general_legacyfiles_locked	
 2330	analytics	calclifetime	35
-2298	tool_migratehvp2h5p	version	2022112900
-2301	local_redislock	version	2022101200
 2331	auth_saml2	autologin	0
 2332	auth_saml2	autologincookie	
 2333	block_accessreview	whattoshow	showboth
@@ -34763,35 +37113,8 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2335	block_accessreview	toolpage	errors
 2336	block_section_links	showsectionname	0
 2337	antivirus	notifyemail	
-207	availability_grouping	version	2022112800
 1231	auth_ldap	memberattribute_isdn	0
-269	auth_mnet	version	2022112800
-216	qtype_essay	version	2022112800
-217	qtype_gapselect	version	2022112800
-2284	mod_h5pactivity	version	2022112801
-2285	enrol_fee	version	2022112800
-242	mod_label	version	2022112801
 1139	auth_cas	memberattribute_isdn	0
-288	enrol_flatfile	version	2022112800
-363	message_email	version	2022112800
-469	message_popup	version	2022112800
-2286	block_accessreview	version	2022112800
-2297	tool_licensemanager	version	2022112800
-757	tool_lpimportcsv	version	2022112800
-512	block_calendar_month	version	2022112800
-2300	contenttype_h5p	version	2022112800
-2302	h5plib_v124	version	2022112800
-2299	tool_moodlenet	version	2022112800
-804	cachestore_file	version	2022112800
-830	assignfeedback_editpdf	version	2022112801
-2303	paygw_paypal	version	2022112800
-834	assignfeedback_offline	version	2022112800
-856	ltiservice_basicoutcomes	version	2022112800
-916	atto_orderedlist	version	2022112800
-2305	quizaccess_seb	version	2022112800
-881	scormreport_interactions	version	2022112800
-910	atto_indent	version	2022112800
-937	logstore_database	version	2022112800
 2338	antivirus	enablequarantine	0
 2339	antivirus	quarantinetime	2419200
 2340	antivirus_clamav	tcpsockethost	
@@ -34852,6 +37175,33 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2406	attendance	studentscanmarksessiontimeend	60
 2407	attendance	subnetactivitylevel	1
 2408	attendance	defaultview	2
+207	availability_grouping	version	2024100700
+216	qtype_essay	version	2024100700
+217	qtype_gapselect	version	2024100700
+242	mod_label	version	2024100700
+2284	mod_h5pactivity	version	2024100700
+269	auth_mnet	version	2024100700
+2285	enrol_fee	version	2024100700
+288	enrol_flatfile	version	2024100700
+363	message_email	version	2024100700
+469	message_popup	version	2024100700
+2286	block_accessreview	version	2024100700
+512	block_calendar_month	version	2024100700
+2297	tool_licensemanager	version	2024100700
+2298	tool_migratehvp2h5p	version	2025012000
+2299	tool_moodlenet	version	2024100700
+804	cachestore_file	version	2024100700
+2300	contenttype_h5p	version	2024100700
+2301	local_redislock	version	2025060500
+2303	paygw_paypal	version	2024100700
+830	assignfeedback_editpdf	version	2024100700
+834	assignfeedback_offline	version	2024100700
+856	ltiservice_basicoutcomes	version	2024100700
+2305	quizaccess_seb	version	2024100701
+881	scormreport_interactions	version	2024100700
+910	atto_indent	version	2024100700
+916	atto_orderedlist	version	2024100700
+937	logstore_database	version	2024100700
 2409	attendance	multisessionexpanded	0
 2410	attendance	showsessiondescriptiononreport	0
 2411	attendance	studentrecordingexpanded	1
@@ -34873,33 +37223,22 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2427	attendance	preventsharedip	0
 2428	attendance	preventsharediptime	
 2429	attendance	warningpercent	70
-2381	local_agora	adware_detected	0
 2430	attendance	warnafter	5
 2431	attendance	maxwarn	1
 2432	attendance	emailuser	1
 2433	attendance	emailsubject	Advertiment d'assistència
-2398	tool_task	lastcroninterval	22
 2440	auth_email	field_lock_schoolcode	unlocked
 2441	auth_db	field_map_schoolcode	
 2434	attendance	emailcontent	Hola, %userfirstname%,\nLa vostra assistència a %coursename% %attendancename% ha baixat per sota del %warningpercent% i, actualment, és del %percent%; esperem que estigueu bé!\n\nPer treure el màxim profit d'aquest curs, haureu de millorar la vostra assistència. Poseu-vos en contacte amb nosaltres si necessiteu ajuda.
 2436	auth_saml2	fielddelimiter	,
 2437	assignsubmission_snap	default	0
-1946	qtype_matchwiris	version	2024010801
-1997	block_completion_progress	version	2023110100
-2399	mod_attendance	version	2023020107
+2398	tool_task	lastcroninterval	34
 2167	auth_saml2	version	2022111701
-2004	filter_wiris	version	2023121300
 2369	tool_moodlenet	enablemoodlenet	1
 2435	assignsubmission_snap	version	2023032201
-1945	qtype_essaywiris	version	2024010801
-2380	enrol_self	expirynotifylast	1710942994
 1961	mod_hvp	content_type_cache_updated_at	1710942995
-2382	tool_brickfield	bfregstatus	0
-2389	theme_boost	themerev	1710942995
-2378	tool_task	lastcronstart	1710943016
 2438	assignsubmission_snap	distros	snap | Snap! | https://snap.berkeley.edu/snap/snap.html
 2439	assignsubmission_snap	cloud	0
-2379	enrol_manual	expirynotifylast	1710942994
 1430	atto_equation	librarygroup4	\n\\sum{a,b}\n\\sqrt[a]{b+c}\n\\int_{a}^{b}{c}\n\\iint_{a}^{b}{c}\n\\iiint_{a}^{b}{c}\n\\oint{a}\n(a)\n[a]\n\\lbrace{a}\\rbrace\n\\left| \\begin{matrix} a_1 & a_2 \\\\ a_3 & a_4 \\end{matrix} \\right|\n\\frac{a}{b+c}\n\\vec{a}\n\\binom {a} {b}\n{a \\brack b}\n{a \\brace b}\n
 2442	auth_db	field_updatelocal_schoolcode	oncreate
 2443	auth_db	field_updateremote_schoolcode	0
@@ -34945,6 +37284,16 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2483	message	airnotifier_provider_enrol_imsenterprise_imsenterprise_enrolment_locked	0
 2484	message	email_provider_enrol_imsenterprise_imsenterprise_enrolment_locked	0
 2485	message	popup_provider_enrol_imsenterprise_imsenterprise_enrolment_locked	0
+1945	qtype_essaywiris	version	2025042902
+1946	qtype_matchwiris	version	2025042902
+1997	block_completion_progress	version	2025101300
+2004	filter_wiris	version	2025100800
+2381	local_agora	adware_detected	0
+2379	enrol_manual	expirynotifylast	1768247856
+2380	enrol_self	expirynotifylast	1768247856
+2382	tool_brickfield	bfregstatus	0
+2389	theme_boost	themerev	1768247856
+2378	tool_task	lastcronstart	1768247890
 2486	message	message_provider_enrol_imsenterprise_imsenterprise_enrolment_enabled	email
 2487	message	airnotifier_provider_enrol_paypal_paypal_enrolment_locked	0
 2488	message	email_provider_enrol_paypal_paypal_enrolment_locked	0
@@ -34978,8 +37327,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2516	message	email_provider_mod_lesson_graded_essay_locked	0
 2517	message	popup_provider_mod_lesson_graded_essay_locked	0
 2518	message	message_provider_mod_lesson_graded_essay_enabled	email,airnotifier
-2034	atto_wiris	version	2023121300
-2390	theme_classic	themerev	1710942998
 2372	theme_xtec2020	themerev	1710943001
 2519	message	airnotifier_provider_enrol_self_expiry_notification_locked	0
 2520	message	email_provider_enrol_self_expiry_notification_locked	0
@@ -34989,10 +37336,7 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2524	message	email_provider_enrol_flatfile_flatfile_enrolment_locked	0
 2525	message	popup_provider_enrol_flatfile_flatfile_enrolment_locked	0
 2526	message	message_provider_enrol_flatfile_flatfile_enrolment_enabled	email
-2527	message	airnotifier_provider_mod_assignment_assignment_updates_locked	0
-2528	message	email_provider_mod_assignment_assignment_updates_locked	0
-2529	message	popup_provider_mod_assignment_assignment_updates_locked	0
-2530	message	message_provider_mod_assignment_assignment_updates_enabled	email
+2390	theme_classic	themerev	1768247864
 2531	message	airnotifier_provider_mod_assign_assign_notification_locked	0
 2532	message	email_provider_mod_assign_assign_notification_locked	0
 2533	message	popup_provider_mod_assign_assign_notification_locked	0
@@ -35027,6 +37371,7 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2562	message	message_provider_moodle_courserequestapproved_enabled	email,airnotifier
 2563	message	airnotifier_provider_moodle_courserequestrejected_locked	0
 2564	message	email_provider_moodle_courserequestrejected_locked	0
+2034	atto_wiris	version	2025041400
 2565	message	popup_provider_moodle_courserequestrejected_locked	0
 2566	message	message_provider_moodle_courserequestrejected_enabled	email,airnotifier
 2567	message	airnotifier_provider_moodle_badgerecipientnotice_locked	0
@@ -35133,9 +37478,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2668	message	email_provider_moodle_reportbuilderschedule_locked	1
 2669	message	popup_provider_moodle_reportbuilderschedule_locked	0
 2670	message	message_provider_moodle_reportbuilderschedule_enabled	email
-202	antivirus_clamav	version	2022112800
-215	qtype_description	version	2022112800
-2671	mod_bigbluebuttonbn	version	2022112800
 2673	message	airnotifier_provider_mod_bigbluebuttonbn_recording_ready_locked	0
 2674	message	email_provider_mod_bigbluebuttonbn_recording_ready_locked	0
 2675	message	popup_provider_mod_bigbluebuttonbn_recording_ready_locked	0
@@ -35150,7 +37492,766 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2684	message	message_provider_mod_quiz_attempt_grading_complete_enabled	airnotifier,email
 2685	enrol_lti	lti_13_kid	4e19557a15f6e9c767e9
 2686	enrol_lti	lti_13_privatekey	-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDGxmUn/ipHZ8uc\nnonS3qQEzYzjLRofx6ZKsEVFfIJIG2WXigz/Yn1+vZzygoo0xsQoLfRWjZQ3IzC5\nIrHsbG25YGNz4vCqaIgAvKhhTH6P0lJ0MudzWrt1H5RNrfwTsOvhUtMYzFYHUl5I\nTr4vhcR5q2OLHakz2m0Ll64r3P52sfqhbpZOMb1tk1R3KNcX0Djt9jmkcqeXMLAy\nNfD7wTID5S+U0cROheJiEI4SkrtKkSF8OgYT5JAgXnTlaV1XKY6V4qUJB4V7PMyF\ncorJKbY/VBetuTg/3/5INSBV13CRykgJr8owgJOwTwbSZi/j0WzqUg6PCBUhJDvY\nPMfvEr5pAgMBAAECggEAIHAp+9/PeH2ozbNVnJL2w03kCwLGO59yNMgVVeSewjOu\nXY+K1XZ2MmOxJCZHdZtmUYRGVoWeRW05u0y9Km77bQAc2sGTMswCPdSLye0YzlGt\nYQcZnEqXQuLXaeHVvEToCYphpq9Z7rHzbutiwBCdYpmkkgRSI4MmvniPVNsor6fL\nwTpFFcVOPy8mqlKQOdY14EpQS82BShom6dDEOeVCUvSChwlqOjzpsCNPK/Te+3NN\nibqjS+Ufk1oAOFlhP/5o3eWC/7oR7icI9zbic/GJwxIAjDlexQpB/BHXcAzbaScG\nEHFXiYT8BhfXlvwbaxKESbPtkJb2N+MZBFekOjVsnQKBgQDJ3cuKrXMRuW8smZml\nfgrTYVy0+/aXxE4c9svIcUmWRX7MbC52RTC2fiWoTFl5zo+v6WnakL7UrvczKKN0\nme6te07MeQe8tytkbAxV3hLGsjJtXDLXxHXVhavEic7FztXN7pvK6Jnaq2YRCpZl\n+FbOaoirdbQeLlUcnVp5mQCQ2wKBgQD8FF+0bTNJ3SKB+YkZzFy6xlqNJxzvr8J/\n/OyigUm3jYB3a3hCxU1Sc15cA4w4jGUv3gRmDEsDjVLHB+tIklgVx9H8xchbD1lP\nDkW7ovgpGpPTxVrus9UI5IfKYsdC/zdsBR5i1fOQRwyuSVziYOmgrBBaKIPXkko0\nkh3SfiYfCwKBgQCy/8JaAP21LMohMT6mGcL9tyrerUH3R7HASzNeVN5cqtkJ6a+1\nXhsY53j66GC6+ug8o2wizBD7RP6cVZ/DaC/Vky7Hb1bmB0Ip9QlnJtldaWv/vy6y\nV1npcXNjfpNkocjCp59r6J9s4GlMGShN2U0YEi2IZIHH9WuxSPKOOpbe2wKBgDYY\naTFe/dKsEeuykSloIb4zMtt3uU32edbdgCqfdCJfy2HVPkmV7bHz8Bvu5vh7qHtN\nOcRsfuyUN19e467/OMfzyaxlBUoFUTUV6wEJSBgKDA82Gv1+ugjeggV8jSZjfpE/\nx/WN1Gbx2FbOh5BNG9XPFvNCHoj0a9g8QwoY6DVhAoGACy99TCI/PyPIBJiL/e2y\nl1u9ZC944l07FyjxCU6xtt4RvdHNdhdrn7vnilaW2TqQuOJ6Pc+ukvQGJ5Pa/SMg\n/37VB6G/uiqDVEcg2F7SlYgtTQuUvZcZCBcOzfeJqjez3HrVzFt/cxZKckl2yE6f\nE6tU1dBf11J79TKN9yF5UXs=\n-----END PRIVATE KEY-----\n
-1953	mod_choicegroup	version	2023110900
+202	antivirus_clamav	version	2024100700
+215	qtype_description	version	2024100700
+2671	mod_bigbluebuttonbn	version	2024100700
+1953	mod_choicegroup	version	2025100902
+2790	adminpresets	sensiblesettings	recaptchapublickey@@none, recaptchaprivatekey@@none, googlemapkey3@@none, secretphrase@@url, cronremotepassword@@none, smtpuser@@none, smtppass@@none, proxypassword@@none, quizpassword@@quiz, allowedip@@none, blockedip@@none, dbpass@@logstore_database, messageinbound_hostpass@@none, bind_pw@@auth_cas, pass@@auth_db, bind_pw@@auth_ldap, dbpass@@enrol_database, bind_pw@@enrol_ldap, server_password@@search_solr, ssl_keypassword@@search_solr, alternateserver_password@@search_solr, alternatessl_keypassword@@search_solr, test_password@@cachestore_redis, password@@mlbackend_python, badges_badgesalt@@none, calendar_exportsalt@@none, bigbluebuttonbn_shared_secret@@none, apikey@@tiny_premium, matrixaccesstoken@@communication_matrix, api_secret@@factor_sms
+2800	message	airnotifier_provider_moodle_failedtaskmaxdelay_locked	0
+2801	message	email_provider_moodle_failedtaskmaxdelay_locked	0
+2802	message	popup_provider_moodle_failedtaskmaxdelay_locked	0
+2803	message	message_provider_moodle_failedtaskmaxdelay_enabled	email,popup
+2804	message	airnotifier_provider_moodle_enrolcoursewelcomemessage_locked	0
+2805	message	email_provider_moodle_enrolcoursewelcomemessage_locked	0
+2806	message	popup_provider_moodle_enrolcoursewelcomemessage_locked	0
+2807	message	message_provider_moodle_enrolcoursewelcomemessage_enabled	airnotifier,email,popup
+2808	aiplacement_courseassist	version	2024100700
+2809	aiplacement_editor	version	2024100700
+2810	aiprovider_azureai	version	2024100700
+2811	aiprovider_openai	version	2024100700
+2812	qtype_coderunner	version	2025081500
+1948	qtype_multichoicewiris	version	2025042902
+2814	message	airnotifier_provider_mod_assign_assign_due_soon_locked	0
+2815	message	email_provider_mod_assign_assign_due_soon_locked	0
+2816	message	popup_provider_mod_assign_assign_due_soon_locked	0
+2817	message	message_provider_mod_assign_assign_due_soon_enabled	airnotifier,email,popup
+2818	message	airnotifier_provider_mod_assign_assign_overdue_locked	0
+2819	message	email_provider_mod_assign_assign_overdue_locked	0
+2820	message	popup_provider_mod_assign_assign_overdue_locked	0
+2821	message	message_provider_mod_assign_assign_overdue_enabled	airnotifier,email,popup
+2822	message	airnotifier_provider_mod_assign_assign_due_digest_locked	0
+2823	message	email_provider_mod_assign_assign_due_digest_locked	0
+2824	message	popup_provider_mod_assign_assign_due_digest_locked	0
+2825	message	message_provider_mod_assign_assign_due_digest_enabled	airnotifier,email,popup
+2399	mod_attendance	version	2024072401
+233	mod_data	version	2024100700
+2826	message	airnotifier_provider_mod_quiz_quiz_open_soon_locked	0
+2827	message	email_provider_mod_quiz_quiz_open_soon_locked	0
+2828	message	popup_provider_mod_quiz_quiz_open_soon_locked	0
+2829	message	message_provider_mod_quiz_quiz_open_soon_enabled	airnotifier,email,popup
+2830	mod_subsection	version	2024100700
+2832	url	allowvariables	1
+262	auth_db	version	2024100700
+2833	communication_customlink	version	2024100700
+2834	communication_matrix	version	2024100700
+2835	customfield_number	version	2024100703
+282	customfield_textarea	version	2024100700
+1998	block_configurable_reports	version	2024051300
+2836	block_grade_me	version	2024100700
+2837	filter_codehighlighter	version	2024100700
+2838	format_multitopic	version	2024112702
+2839	format_tiles	version	2025070353
+592	dataformat_ods	version	2024100700
+2289	report_infectedfiles	version	2024100700
+2841	report_questionbankoverview	version	2023101000
+617	report_questioninstances	version	2024100700
+2842	report_themeusage	version	2024100700
+639	mnetservice_enrol	version	2024100700
+682	repository_wikimedia	version	2024100700
+2843	qbank_purgecategory	version	2025012600
+2705	qbank_tagquestion	version	2024100700
+2844	qbehaviour_adaptive_adapted_for_coderunner	version	2025012500
+711	qformat_blackboard_six	version	2024100700
+757	tool_lpimportcsv	version	2024100700
+2845	tool_mfa	version	2024100700
+786	tool_multilangupgrade	version	2024100700
+2846	theme_boost_union	version	2024100755
+2848	h5plib_v127	version	2024100700
+2849	smsgateway_aws	version	2024100700
+924	atto_underline	version	2024100700
+2850	tiny_aiplacement	version	2024100700
+2851	tiny_c4l	version	2025052600
+2852	tiny_cloze	version	2025100901
+2853	tiny_fontcolor	version	2025101000
+2854	tiny_fontfamily	version	2025062900
+2855	tiny_fontsize	version	2025062900
+2856	tiny_html	version	2024100700
+2857	tiny_noautolink	version	2024100700
+2859	tiny_noautolink	disabled	1
+2860	tiny_premium	version	2024100700
+2861	tiny_wiris	version	2025100800
+2862	factor_admin	version	2024100700
+2863	factor_auth	version	2024100700
+2864	factor_capability	version	2024100700
+2865	factor_cohort	version	2024100700
+2866	factor_email	version	2024100700
+2867	factor_grace	version	2024100700
+2868	factor_iprange	version	2024100700
+2869	factor_nosetup	version	2024100700
+2870	factor_role	version	2024100700
+2871	factor_sms	version	2024100702
+2872	factor_token	version	2024100700
+2873	factor_totp	version	2024100700
+2874	factor_webauthn	version	2024100700
+2875	tool_dataprivacy	allowfiltering	0
+2876	moodlecourse	coursecommunicationprovider	none
+2877	backup	backup_general_customfield	1
+2878	backup	backup_general_customfield_locked	
+2879	backup	backup_general_xapistate	1
+2880	backup	backup_general_xapistate_locked	
+2881	backup	backup_import_badges	0
+2882	backup	backup_import_badges_locked	
+2883	backup	backup_import_customfield	1
+2884	backup	backup_import_customfield_locked	
+2885	backup	backup_auto_customfield	1
+2886	backup	backup_auto_xapistate	1
+2887	restore	restore_general_customfield	1
+2888	restore	restore_general_customfield_locked	
+2889	restore	restore_general_xapistate	1
+2890	restore	restore_general_xapistate_locked	
+2891	aiprovider_azureai	apikey	
+2892	aiprovider_azureai	endpoint	
+2893	aiprovider_azureai	enableglobalratelimit	0
+2894	aiprovider_azureai	globalratelimit	100
+2895	aiprovider_azureai	enableuserratelimit	0
+2896	aiprovider_azureai	userratelimit	10
+2897	aiprovider_openai	apikey	
+2898	aiprovider_openai	orgid	
+2899	aiprovider_openai	enableglobalratelimit	0
+2900	aiprovider_openai	globalratelimit	100
+2901	aiprovider_openai	enableuserratelimit	0
+2902	aiprovider_openai	userratelimit	10
+2903	core_h5p	h5pcustomcss	
+2904	block_configurable_reports	csvdelimiter	cfg
+2905	block_completion_progress	overviewcachetime	3600
+2906	editor_tiny	extended_valid_elements	script[*],p[*],i[*]
+2907	tiny_c4l	enablepreview	1
+2908	tiny_c4l	aimedatstudents	keyconcept,tip,reminder,quote,dodontcards,readingcontext,example,figure,tag,inlinetag,attention,allpurposecard
+2909	tiny_c4l	notintendedforstudents	
+2910	tiny_c4l	customcompcount	0
+2911	tiny_c4l	custompreviewcss	
+2912	tiny_c4l	customimagesbank	
+2913	tiny_fontcolor	textcolors	[]
+2914	tiny_fontcolor	backgroundcolors	[]
+2915	tiny_fontcolor	textcolorpicker	0
+2916	tiny_fontcolor	backgroundcolorpicker	0
+2917	tiny_fontcolor	usecssclassnames	0
+2918	tiny_fontfamily	fonts	Arial\r\nVerdana\r\nTahoma\r\nTrebuchet MS\r\nTimes New Roman\r\nGeorgia\r\nGaramond\r\nCourier New\r\nBrush Script MT
+2919	tiny_premium	apikey	
+2920	tiny_recordrtc	screenbitrate	2500000
+2921	tiny_recordrtc	screentimelimit	120
+2922	tiny_recordrtc	screensize	1280,720
+2923	tiny_recordrtc	allowedpausing	0
+2924	tool_mfa	enabled	0
+2925	tool_mfa	lockout	10
+2926	tool_mfa	debugmode	0
+2927	tool_mfa	redir_exclusions	
+2928	tool_mfa	guidance	0
+2929	tool_mfa	guidancecontent	
+2930	tool_mfa	guidancefiles	
+2931	factor_admin	enabled	0
+2932	factor_admin	weight	100
+2933	factor_auth	enabled	0
+2934	factor_auth	weight	100
+2935	factor_auth	goodauth	
+2936	factor_capability	enabled	0
+2937	factor_capability	weight	100
+2938	factor_capability	adminpasses	1
+2939	factor_cohort	enabled	0
+2940	factor_cohort	weight	100
+2941	factor_email	enabled	0
+2942	factor_email	weight	100
+2943	factor_email	duration	1800
+2944	factor_email	suspend	0
+2945	factor_grace	enabled	0
+2946	factor_grace	weight	100
+2947	factor_grace	forcesetup	0
+2948	factor_grace	graceperiod	604800
+2949	factor_grace	ignorelist	
+2950	factor_grace	customwarning	
+2951	factor_iprange	enabled	0
+2952	factor_iprange	weight	100
+2953	factor_iprange	safeips	
+2954	factor_nosetup	enabled	0
+2955	factor_nosetup	weight	100
+2956	factor_role	enabled	0
+2957	factor_role	weight	100
+2958	factor_role	roles	admin
+2959	factor_sms	smsgateway	0
+2960	factor_sms	enabled	0
+2961	factor_sms	weight	100
+2962	factor_sms	duration	1800
+2963	factor_token	enabled	0
+2964	factor_token	weight	100
+2965	factor_token	expiry	86400
+2966	factor_token	expireovernight	1
+2967	factor_totp	enabled	0
+2968	factor_totp	weight	100
+2969	factor_totp	window	15
+2970	factor_totp	totplink	1
+2971	factor_webauthn	enabled	0
+2972	factor_webauthn	weight	100
+2973	factor_webauthn	authenticatortypes	usb,nfc,ble,hybrid,internal
+2974	factor_webauthn	userverification	preferred
+2975	format_tiles	followthemecolour	0
+2976	format_tiles	subtileiconcolourbackground	0
+2977	format_tiles	tilecolour1	#1670CC
+2978	format_tiles	colourname1	Blau
+2979	format_tiles	tilecolour2	#00A9CE
+2980	format_tiles	colourname2	Blau cel
+2981	format_tiles	tilecolour3	#7A9A01
+2982	format_tiles	colourname3	Verd
+2983	format_tiles	tilecolour4	#009681
+2984	format_tiles	colourname4	Verd fosc
+2985	format_tiles	tilecolour5	#D13C3C
+2986	format_tiles	colourname5	Vermell
+2987	format_tiles	tilecolour6	#772583
+2988	format_tiles	colourname6	Morat
+2989	format_tiles	modalmodules	page
+2990	format_tiles	modalresources	pdf,url,html
+2991	format_tiles	allowphototiles	1
+2992	format_tiles	tilestyle	1
+2993	format_tiles	showprogresssphototiles	1
+2994	format_tiles	phototiletitletransarency	0
+2995	format_tiles	phototitletitlelineheight	305
+2996	format_tiles	phototitletitlepadding	40
+2997	format_tiles	usejavascriptnav	1
+2998	format_tiles	reopenlastsection	1
+2999	format_tiles	usejsnavforsinglesection	1
+3000	format_tiles	fittilestowidth	1
+3001	format_tiles	allowsubtilesview	1
+3002	format_tiles	showoverallprogress	1
+3003	format_tiles	progressincludesubsections	0
+3004	format_tiles	showseczerocoursewide	0
+3005	format_tiles	seczerocollapsible	1
+3006	format_tiles	customcss	
+3007	format_tiles	enablelinebreakfilter	0
+3008	format_tiles	assumedatastoreconsent	1
+3009	format_tiles	usecourseindex	1
+3010	format_tiles	highcontrastmodeallow	0
+3011	format_multitopic	startwday	1
+3012	format_multitopic	weeks_mindays	4
+3013	format_multitopic	weeks_partial	0
+3014	format_multitopic	indentation	1
+3015	enrol_database	newcoursestartdate	
+3016	enrol_database	newcourseenddate	
+3017	enrol_manual	sendcoursewelcomemessage	1
+3018	cachestore_redis	test_clustermode	0
+3019	cachestore_redis	test_encryption	0
+3020	cachestore_redis	test_cafile	
+3021	mod_bigbluebuttonbn	showpresentation_default	1
+3022	mod_bigbluebuttonbn	showpresentation_editable	0
+3023	choicegroup	defaultgroupdescriptionstate	0
+3024	mod_h5pactivity	enablesavestate	1
+3025	mod_h5pactivity	savestatefreq	60
+3026	mod_hvp	h5p_search_content_hub	1
+3027	quiz	reviewmaxmarks	69904
+3028	mod_assign	defaultgradetype	1
+3029	mod_assign	defaultgradescale	
+3030	assign	markinganonymous	0
+3031	assign	markinganonymous_adv	
+3032	assign	markinganonymous_locked	
+3033	media_vimeo	donottrack	0
+3034	media_youtube	nocookie	0
+3035	qtype_coderunner	default_penalty_regime	10, 20, ...
+3036	qtype_coderunner	jobesandbox_enabled	1
+3037	qtype_coderunner	ideonesandbox_enabled	0
+3038	qtype_coderunner	jobe_host	jobe2.cosc.canterbury.ac.nz
+3039	qtype_coderunner	jobe_apikey	2AAA7A5415B4A9B394B54BF1D2E9D
+3040	qtype_coderunner	enablegradecache	0
+3041	qtype_coderunner	ideone_user	
+3042	qtype_coderunner	ideone_password	
+3043	qtype_coderunner	wsenabled	0
+3044	qtype_coderunner	wsjobeserver	
+3045	qtype_coderunner	wsloggingenabled	1
+3046	qtype_coderunner	wsmaxhourlyrate	200
+3047	qtype_coderunner	wsmaxcputime	5
+3048	qtype_wq	quizzescalcurl	https://calcme.com
+3049	qtype_wq	quizzesgraphurl	https://www.wiris.net/demo/graph
+3050	qtype_wq	maxconnections_disabled	0
+3051	qtype_wq	mathjax_compatibity	0
+3052	qtype_wq	log_server_errors	0
+3053	theme_boost_union	scsspre	
+3054	theme_boost_union	scss	
+3055	theme_boost_union	extscsssource	0
+3056	theme_boost_union	extscssurlpre	
+3057	theme_boost_union	extscssurlpost	
+3058	theme_boost_union	extscssgithubtoken	
+3059	theme_boost_union	extscssgithubuser	
+3060	theme_boost_union	extscssgithubrepo	
+3061	theme_boost_union	extscssgithubprefilepath	
+3062	theme_boost_union	extscssgithubpostfilepath	
+3063	theme_boost_union	extscssvalidation	yes
+3064	theme_boost_union	coursecontentmaxwidth	830px
+3065	theme_boost_union	mediumcontentmaxwidth	1120px
+3066	theme_boost_union	courseindexdrawerwidth	285px
+3067	theme_boost_union	blockdrawerwidth	315px
+3068	theme_boost_union	logo	
+3069	theme_boost_union	logocompact	
+3070	theme_boost_union	favicon	
+3071	theme_boost_union	backgroundimage	
+3072	theme_boost_union	backgroundimageposition	left top
+3073	theme_boost_union	brandcolor	
+3074	theme_boost_union	bootstrapcolorsuccess	
+3075	theme_boost_union	bootstrapcolorinfo	
+3076	theme_boost_union	bootstrapcolorwarning	
+3077	theme_boost_union	bootstrapcolordanger	
+3078	theme_boost_union	maxlogowidth	
+3079	theme_boost_union	navbarcolor	light
+3080	theme_boost_union	activityiconcoloradministration	
+3081	theme_boost_union	activityiconcolorassessment	
+3082	theme_boost_union	activityiconcolorcollaboration	
+3083	theme_boost_union	activityiconcolorcommunication	
+3084	theme_boost_union	activityiconcolorcontent	
+3085	theme_boost_union	activityiconcolorinteractivecontent	
+3086	theme_boost_union	activityiconcolorinterface	
+3087	theme_boost_union	activityiconcolorfidelity	1
+3088	theme_boost_union	activitypurposeassign	assessment
+3089	theme_boost_union	activitypurposebook	content
+3090	theme_boost_union	activitypurposechoice	communication
+3091	theme_boost_union	activitypurposedata	collaboration
+3092	theme_boost_union	activitypurposefeedback	communication
+3093	theme_boost_union	activitypurposefolder	content
+3094	theme_boost_union	activitypurposeforum	collaboration
+3095	theme_boost_union	activitypurposeglossary	collaboration
+3096	theme_boost_union	activitypurposeimscp	interactivecontent
+3097	theme_boost_union	activitypurposelabel	content
+3098	theme_boost_union	activitypurposelesson	interactivecontent
+3099	theme_boost_union	activitypurposelti	other
+3100	theme_boost_union	activitypurposepage	content
+3101	theme_boost_union	activitypurposequiz	assessment
+3102	theme_boost_union	activitypurposeresource	content
+3103	theme_boost_union	activitypurposescorm	interactivecontent
+3104	theme_boost_union	activitypurposesurvey	communication
+3105	theme_boost_union	activitypurposeurl	content
+3106	theme_boost_union	activitypurposewiki	collaboration
+3107	theme_boost_union	activitypurposeworkshop	assessment
+3108	theme_boost_union	activitypurposechoicegroup	collaboration
+3109	theme_boost_union	activitypurposegeogebra	assessment
+3110	theme_boost_union	activitypurposehotpot	assessment
+3111	theme_boost_union	activitypurposehvp	other
+3112	theme_boost_union	activitypurposejclic	assessment
+3113	theme_boost_union	activitypurposequestionnaire	communication
+3114	theme_boost_union	activitypurposeqv	other
+3115	theme_boost_union	activitypurposercontent	assessment
+3116	theme_boost_union	activitypurposeh5pactivity	interactivecontent
+3117	theme_boost_union	activitypurposeattendance	administration
+3118	theme_boost_union	activitypurposejournal	collaboration
+3119	theme_boost_union	modiconsenable	no
+3120	theme_boost_union	modiconsfiles	
+3121	theme_boost_union	calendareventcolormaincategory	
+3122	theme_boost_union	calendareventcolorbordercategory	
+3123	theme_boost_union	calendareventcolormaincourse	
+3124	theme_boost_union	calendareventcolorbordercourse	
+3125	theme_boost_union	calendareventcolormaingroup	
+3126	theme_boost_union	calendareventcolorbordergroup	
+3127	theme_boost_union	calendareventcolormainuser	
+3128	theme_boost_union	calendareventcolorborderuser	
+3129	theme_boost_union	calendareventcolormainsite	
+3130	theme_boost_union	calendareventcolorbordersite	
+3131	theme_boost_union	calendareventcolormainother	
+3132	theme_boost_union	calendareventcolorborderother	
+3133	theme_boost_union	calendariconscolor	
+3134	theme_boost_union	loginbackgroundimage	
+3135	theme_boost_union	loginbackgroundimageposition	left top
+3136	theme_boost_union	loginformposition	center
+3137	theme_boost_union	loginformtransparency	no
+3138	theme_boost_union	loginlocalloginenable	yes
+3139	theme_boost_union	loginlocalshowintro	no
+3140	theme_boost_union	loginidpshowintro	yes
+3141	theme_boost_union	loginorderlocal	1
+3142	theme_boost_union	loginorderidp	2
+3143	theme_boost_union	loginorderfirsttimesignup	3
+3144	theme_boost_union	loginorderguest	4
+3145	theme_boost_union	sideentranceloginenable	auto
+3146	theme_boost_union	courseoverviewshowcourseimages	card,list,summary
+3147	theme_boost_union	courseoverviewshowcourseprogress	yes
+3148	theme_boost_union	courselistingpresentation	nochange
+3149	theme_boost_union	coursecardscolumncount	3
+3150	theme_boost_union	courselistinghowimage	yes
+3151	theme_boost_union	courselistingshowcontacts	no
+3152	theme_boost_union	courselistinghowshortname	no
+3153	theme_boost_union	courselistinghowcategory	no
+3154	theme_boost_union	courselistinghowprogress	no
+3155	theme_boost_union	courselistingprogressstyle	percentage
+3156	theme_boost_union	courselistinghowenrolicons	yes
+3157	theme_boost_union	courselistingshowfields	no
+3158	theme_boost_union	courselistingselectfields	
+3159	theme_boost_union	courselistingstylefields	text
+3160	theme_boost_union	courselistinghowgoto	yes
+3161	theme_boost_union	courselistinghowpopup	yes
+3162	theme_boost_union	categorylistingpresentation	nochange
+3163	theme_boost_union	timelinetintenabled	no
+3164	theme_boost_union	upcomingeventstintenabled	no
+3165	theme_boost_union	recentlyaccesseditemstintenabled	no
+3166	theme_boost_union	activitiestintenabled	no
+3167	theme_boost_union	courseheaderimageenabled	no
+3168	theme_boost_union	courseheaderimagefallback	
+3169	theme_boost_union	courseheaderimagelayout	headingabove
+3170	theme_boost_union	courseheaderimageheight	150px
+3171	theme_boost_union	courseheaderimageposition	center center
+3172	theme_boost_union	courseindexmodiconenabled	no
+3173	theme_boost_union	courseindexcompletioninfoposition	endofline
+3174	theme_boost_union	additionalresources	
+3175	theme_boost_union	customfonts	
+3176	theme_boost_union	cssh5p	
+3177	theme_boost_union	h5pcontentmaxwidth	960px
+3178	theme_boost_union	mobilescss	
+3179	theme_boost_union	touchiconfilesios	
+3180	theme_boost_union	hidenodesprimarynavigation	
+3181	theme_boost_union	alternativelogolinkurl	
+3182	theme_boost_union	showfullnameinusermenu	no
+3183	theme_boost_union	addpreferredlang	no
+3184	theme_boost_union	loginlinkbuttonenabled	no
+3185	theme_boost_union	shownavbarstarredcourses	no
+3186	theme_boost_union	starredcourseslinktarget	mycourses
+3187	theme_boost_union	categorybreadcrumbs	no
+3188	theme_boost_union	backtotopbutton	no
+3189	theme_boost_union	scrollspy	no
+3190	theme_boost_union	activitynavigation	no
+3191	theme_boost_union	unaddableblocks	navigation,settings,course_list,section_links
+3192	theme_boost_union	blockregionsforstandard	
+3193	theme_boost_union	blockregionsforadmin	
+3194	theme_boost_union	blockregionsforcoursecategory	
+3195	theme_boost_union	blockregionsforincourse	
+3196	theme_boost_union	blockregionsformypublic	
+3197	theme_boost_union	blockregionsforreport	
+3198	theme_boost_union	blockregionsforcourse	
+3199	theme_boost_union	blockregionsforfrontpage	
+3200	theme_boost_union	blockregionsformydashboard	
+3201	theme_boost_union	blockregionoutsideleftwidth	300px
+3202	theme_boost_union	blockregionoutsiderightwidth	300px
+3203	theme_boost_union	blockregionoutsidetopwidth	fullwidth
+3204	theme_boost_union	blockregionoutsidebottomwidth	fullwidth
+3205	theme_boost_union	blockregionfooterwidth	fullwidth
+3206	theme_boost_union	outsideregionsplacement	nextmaincontent
+3207	theme_boost_union	showsitehomerighthandblockdraweronvisit	no
+3208	theme_boost_union	showsitehomerighthandblockdraweronfirstlogin	no
+3209	theme_boost_union	showsitehomerighthandblockdraweronguestlogin	no
+3210	theme_boost_union	policyoverviewnavigation	no
+3211	theme_boost_union	markexternallinks	no
+3212	theme_boost_union	markexternallinksscope	wholepage
+3213	theme_boost_union	markmailtolinks	no
+3214	theme_boost_union	markmailtolinksscope	wholepage
+3215	theme_boost_union	markbrokenlinks	no
+3216	theme_boost_union	javascriptdisabledhint	no
+3217	theme_boost_union	footnote	
+3218	theme_boost_union	enablefooterbutton	enablefooterbuttondesktop
+3219	theme_boost_union	footersuppressicons	no
+3220	theme_boost_union	footersuppresschat	no
+3221	theme_boost_union	footersuppresshelp	no
+3222	theme_boost_union	footersuppressservices	no
+3223	theme_boost_union	footersuppresscontact	no
+3224	theme_boost_union	footersuppresslogininfo	no
+3225	theme_boost_union	footersuppressusertour	no
+3226	theme_boost_union	footersuppressthemeswitch	no
+3227	theme_boost_union	footersuppresspowered	no
+3228	theme_boost_union	footersuppressstandardfooter_tool_dataprivacy	no
+3229	theme_boost_union	footersuppressstandardfooter_core_userfeedback	no
+3230	theme_boost_union	footersuppressstandardfooter_tool_policy	no
+3231	theme_boost_union	footersuppressstandardfooter_tool_mobile	no
+3232	theme_boost_union	enableaboutus	no
+3233	theme_boost_union	aboutuscontent	
+3234	theme_boost_union	aboutuspagetitle	Sobre nosaltres
+3235	theme_boost_union	aboutuslinkposition	none
+3236	theme_boost_union	enableoffers	no
+3237	theme_boost_union	offerscontent	
+3238	theme_boost_union	offerspagetitle	Ofertes
+3239	theme_boost_union	offerslinkposition	none
+3240	theme_boost_union	enableimprint	no
+3241	theme_boost_union	imprintcontent	
+3242	theme_boost_union	imprintpagetitle	Avís legal
+3243	theme_boost_union	imprintlinkposition	none
+3244	theme_boost_union	enablecontact	no
+3245	theme_boost_union	contactcontent	
+3246	theme_boost_union	contactpagetitle	Contacte
+3247	theme_boost_union	contactlinkposition	none
+3248	theme_boost_union	enablehelp	no
+3249	theme_boost_union	helpcontent	
+3250	theme_boost_union	helppagetitle	Ajuda
+3251	theme_boost_union	helplinkposition	none
+3252	theme_boost_union	enablemaintenance	no
+3253	theme_boost_union	maintenancecontent	
+3254	theme_boost_union	maintenancepagetitle	Manteniment
+3255	theme_boost_union	maintenancelinkposition	none
+3256	theme_boost_union	enablepage1	no
+3257	theme_boost_union	page1content	
+3258	theme_boost_union	page1pagetitle	Pàgina genèrica 1
+3259	theme_boost_union	page1linkposition	none
+3260	theme_boost_union	enablepage2	no
+3261	theme_boost_union	page2content	
+3262	theme_boost_union	page2pagetitle	Pàgina genèrica 2
+3263	theme_boost_union	page2linkposition	none
+3264	theme_boost_union	enablepage3	no
+3265	theme_boost_union	page3content	
+3266	theme_boost_union	page3pagetitle	Pàgina genèrica 3
+3267	theme_boost_union	page3linkposition	none
+3268	theme_boost_union	infobanner1enabled	no
+3269	theme_boost_union	infobanner1content	
+3270	theme_boost_union	infobanner1pages	
+3271	theme_boost_union	infobanner1bsclass	primary
+3272	theme_boost_union	infobanner1order	1
+3273	theme_boost_union	infobanner1mode	perp
+3274	theme_boost_union	infobanner1dismissible	no
+3275	theme_boost_union	infobanner2enabled	no
+3276	theme_boost_union	infobanner2content	
+3277	theme_boost_union	infobanner2pages	
+3278	theme_boost_union	infobanner2bsclass	primary
+3279	theme_boost_union	infobanner2order	2
+3280	theme_boost_union	infobanner2mode	perp
+3281	theme_boost_union	infobanner2dismissible	no
+3282	theme_boost_union	infobanner3enabled	no
+3283	theme_boost_union	infobanner3content	
+3284	theme_boost_union	infobanner3pages	
+3285	theme_boost_union	infobanner3bsclass	primary
+3286	theme_boost_union	infobanner3order	3
+3287	theme_boost_union	infobanner3mode	perp
+3288	theme_boost_union	infobanner3dismissible	no
+3289	theme_boost_union	infobanner4enabled	no
+3290	theme_boost_union	infobanner4content	
+3291	theme_boost_union	infobanner4pages	
+3292	theme_boost_union	infobanner4bsclass	primary
+3293	theme_boost_union	infobanner4order	4
+3294	theme_boost_union	infobanner4mode	perp
+3295	theme_boost_union	infobanner4dismissible	no
+3296	theme_boost_union	infobanner5enabled	no
+3297	theme_boost_union	infobanner5content	
+3298	theme_boost_union	infobanner5pages	
+3299	theme_boost_union	infobanner5bsclass	primary
+3300	theme_boost_union	infobanner5order	5
+3301	theme_boost_union	infobanner5mode	perp
+3302	theme_boost_union	infobanner5dismissible	no
+3303	theme_boost_union	tilefrontpageposition	1
+3304	theme_boost_union	tilecolumns	2
+3305	theme_boost_union	tileheight	150px
+3306	theme_boost_union	tile1enabled	no
+3307	theme_boost_union	tile1title	
+3308	theme_boost_union	tile1content	
+3309	theme_boost_union	tile1backgroundimage	
+3310	theme_boost_union	tile1backgroundimageposition	center center
+3311	theme_boost_union	tile1contentstyle	nochange
+3312	theme_boost_union	tile1link	
+3313	theme_boost_union	tile1linktitle	
+3314	theme_boost_union	tile1linktarget	same
+3315	theme_boost_union	tile1order	1
+3316	theme_boost_union	tile2enabled	no
+3317	theme_boost_union	tile2title	
+3318	theme_boost_union	tile2content	
+3319	theme_boost_union	tile2backgroundimage	
+3320	theme_boost_union	tile2backgroundimageposition	center center
+3321	theme_boost_union	tile2contentstyle	nochange
+3322	theme_boost_union	tile2link	
+3323	theme_boost_union	tile2linktitle	
+3324	theme_boost_union	tile2linktarget	same
+3325	theme_boost_union	tile2order	2
+3326	theme_boost_union	tile3enabled	no
+3327	theme_boost_union	tile3title	
+3328	theme_boost_union	tile3content	
+3329	theme_boost_union	tile3backgroundimage	
+3330	theme_boost_union	tile3backgroundimageposition	center center
+3331	theme_boost_union	tile3contentstyle	nochange
+3332	theme_boost_union	tile3link	
+3333	theme_boost_union	tile3linktitle	
+3334	theme_boost_union	tile3linktarget	same
+3335	theme_boost_union	tile3order	3
+3336	theme_boost_union	tile4enabled	no
+3337	theme_boost_union	tile4title	
+3338	theme_boost_union	tile4content	
+3339	theme_boost_union	tile4backgroundimage	
+3340	theme_boost_union	tile4backgroundimageposition	center center
+3341	theme_boost_union	tile4contentstyle	nochange
+3342	theme_boost_union	tile4link	
+3343	theme_boost_union	tile4linktitle	
+3344	theme_boost_union	tile4linktarget	same
+3345	theme_boost_union	tile4order	4
+3346	theme_boost_union	tile5enabled	no
+3347	theme_boost_union	tile5title	
+3348	theme_boost_union	tile5content	
+3349	theme_boost_union	tile5backgroundimage	
+3350	theme_boost_union	tile5backgroundimageposition	center center
+3351	theme_boost_union	tile5contentstyle	nochange
+3352	theme_boost_union	tile5link	
+3353	theme_boost_union	tile5linktitle	
+3354	theme_boost_union	tile5linktarget	same
+3355	theme_boost_union	tile5order	5
+3356	theme_boost_union	tile6enabled	no
+3357	theme_boost_union	tile6title	
+3358	theme_boost_union	tile6content	
+3359	theme_boost_union	tile6backgroundimage	
+3360	theme_boost_union	tile6backgroundimageposition	center center
+3361	theme_boost_union	tile6contentstyle	nochange
+3362	theme_boost_union	tile6link	
+3363	theme_boost_union	tile6linktitle	
+3364	theme_boost_union	tile6linktarget	same
+3365	theme_boost_union	tile6order	6
+3366	theme_boost_union	tile7enabled	no
+3367	theme_boost_union	tile7title	
+3368	theme_boost_union	tile7content	
+3369	theme_boost_union	tile7backgroundimage	
+3370	theme_boost_union	tile7backgroundimageposition	center center
+3371	theme_boost_union	tile7contentstyle	nochange
+3372	theme_boost_union	tile7link	
+3373	theme_boost_union	tile7linktitle	
+3374	theme_boost_union	tile7linktarget	same
+3375	theme_boost_union	tile7order	7
+3376	theme_boost_union	tile8enabled	no
+3377	theme_boost_union	tile8title	
+3378	theme_boost_union	tile8content	
+3379	theme_boost_union	tile8backgroundimage	
+3380	theme_boost_union	tile8backgroundimageposition	center center
+3381	theme_boost_union	tile8contentstyle	nochange
+3382	theme_boost_union	tile8link	
+3383	theme_boost_union	tile8linktitle	
+3384	theme_boost_union	tile8linktarget	same
+3385	theme_boost_union	tile8order	8
+3386	theme_boost_union	tile9enabled	no
+3387	theme_boost_union	tile9title	
+3388	theme_boost_union	tile9content	
+3389	theme_boost_union	tile9backgroundimage	
+3390	theme_boost_union	tile9backgroundimageposition	center center
+3391	theme_boost_union	tile9contentstyle	nochange
+3392	theme_boost_union	tile9link	
+3393	theme_boost_union	tile9linktitle	
+3394	theme_boost_union	tile9linktarget	same
+3395	theme_boost_union	tile9order	9
+3396	theme_boost_union	tile10enabled	no
+3397	theme_boost_union	tile10title	
+3398	theme_boost_union	tile10content	
+3399	theme_boost_union	tile10backgroundimage	
+3400	theme_boost_union	tile10backgroundimageposition	center center
+3401	theme_boost_union	tile10contentstyle	nochange
+3402	theme_boost_union	tile10link	
+3403	theme_boost_union	tile10linktitle	
+3404	theme_boost_union	tile10linktarget	same
+3405	theme_boost_union	tile10order	10
+3406	theme_boost_union	tile11enabled	no
+3407	theme_boost_union	tile11title	
+3408	theme_boost_union	tile11content	
+3409	theme_boost_union	tile11backgroundimage	
+3410	theme_boost_union	tile11backgroundimageposition	center center
+3411	theme_boost_union	tile11contentstyle	nochange
+3412	theme_boost_union	tile11link	
+3413	theme_boost_union	tile11linktitle	
+3414	theme_boost_union	tile11linktarget	same
+3415	theme_boost_union	tile11order	11
+3416	theme_boost_union	tile12enabled	no
+3417	theme_boost_union	tile12title	
+3418	theme_boost_union	tile12content	
+3419	theme_boost_union	tile12backgroundimage	
+3420	theme_boost_union	tile12backgroundimageposition	center center
+3421	theme_boost_union	tile12contentstyle	nochange
+3422	theme_boost_union	tile12link	
+3423	theme_boost_union	tile12linktitle	
+3424	theme_boost_union	tile12linktarget	same
+3425	theme_boost_union	tile12order	12
+3426	theme_boost_union	sliderfrontpageposition	1
+3427	theme_boost_union	sliderarrownav	no
+3428	theme_boost_union	sliderindicatornav	no
+3429	theme_boost_union	slideranimation	1
+3430	theme_boost_union	sliderinterval	5000
+3431	theme_boost_union	sliderkeyboard	yes
+3432	theme_boost_union	sliderpause	yes
+3433	theme_boost_union	sliderride	0
+3434	theme_boost_union	sliderwrap	yes
+3435	theme_boost_union	slide1enabled	no
+3436	theme_boost_union	slide1backgroundimage	
+3437	theme_boost_union	slide1backgroundimagealt	
+3438	theme_boost_union	slide1caption	
+3439	theme_boost_union	slide1content	
+3440	theme_boost_union	slide1contentstyle	light
+3441	theme_boost_union	slide1link	
+3442	theme_boost_union	slide1linktitle	
+3443	theme_boost_union	slide1linksource	0
+3444	theme_boost_union	slide1linktarget	same
+3445	theme_boost_union	slide1order	1
+3446	theme_boost_union	slide2enabled	no
+3447	theme_boost_union	slide2backgroundimage	
+3448	theme_boost_union	slide2backgroundimagealt	
+3449	theme_boost_union	slide2caption	
+3450	theme_boost_union	slide2content	
+3451	theme_boost_union	slide2contentstyle	light
+3452	theme_boost_union	slide2link	
+3453	theme_boost_union	slide2linktitle	
+3454	theme_boost_union	slide2linksource	0
+3455	theme_boost_union	slide2linktarget	same
+3456	theme_boost_union	slide2order	2
+3457	theme_boost_union	slide3enabled	no
+3458	theme_boost_union	slide3backgroundimage	
+3459	theme_boost_union	slide3backgroundimagealt	
+3460	theme_boost_union	slide3caption	
+3461	theme_boost_union	slide3content	
+3462	theme_boost_union	slide3contentstyle	light
+3463	theme_boost_union	slide3link	
+3464	theme_boost_union	slide3linktitle	
+3465	theme_boost_union	slide3linksource	0
+3466	theme_boost_union	slide3linktarget	same
+3467	theme_boost_union	slide3order	3
+3468	theme_boost_union	slide4enabled	no
+3469	theme_boost_union	slide4backgroundimage	
+3470	theme_boost_union	slide4backgroundimagealt	
+3471	theme_boost_union	slide4caption	
+3472	theme_boost_union	slide4content	
+3473	theme_boost_union	slide4contentstyle	light
+3474	theme_boost_union	slide4link	
+3475	theme_boost_union	slide4linktitle	
+3476	theme_boost_union	slide4linksource	0
+3477	theme_boost_union	slide4linktarget	same
+3478	theme_boost_union	slide4order	4
+3479	theme_boost_union	slide5enabled	no
+3480	theme_boost_union	slide5backgroundimage	
+3481	theme_boost_union	slide5backgroundimagealt	
+3482	theme_boost_union	slide5caption	
+3483	theme_boost_union	slide5content	
+3484	theme_boost_union	slide5contentstyle	light
+3485	theme_boost_union	slide5link	
+3486	theme_boost_union	slide5linktitle	
+3487	theme_boost_union	slide5linksource	0
+3488	theme_boost_union	slide5linktarget	same
+3489	theme_boost_union	slide5order	5
+3490	theme_boost_union	slide6enabled	no
+3491	theme_boost_union	slide6backgroundimage	
+3492	theme_boost_union	slide6backgroundimagealt	
+3493	theme_boost_union	slide6caption	
+3494	theme_boost_union	slide6content	
+3495	theme_boost_union	slide6contentstyle	light
+3496	theme_boost_union	slide6link	
+3497	theme_boost_union	slide6linktitle	
+3498	theme_boost_union	slide6linksource	0
+3499	theme_boost_union	slide6linktarget	same
+3500	theme_boost_union	slide6order	6
+3501	theme_boost_union	showswitchedroleincourse	no
+3502	theme_boost_union	showhintcoursehidden	no
+3503	theme_boost_union	showhintforumnotifications	no
+3504	theme_boost_union	showhintcourseselfenrol	no
+3505	theme_boost_union	showhintcourseguestenrol	no
+3506	theme_boost_union	showhintcourseguestaccess	no
+3507	theme_boost_union	showviewcourseiconincoursemgnt	no
+3508	theme_boost_union	enableaccessibilitydeclaration	no
+3509	theme_boost_union	accessibilitydeclarationcontent	
+3510	theme_boost_union	accessibilitydeclarationpagetitle	Declaració d'accessibilitat
+3511	theme_boost_union	accessibilitydeclarationlinkposition	none
+3512	theme_boost_union	enableaccessibilitysupport	no
+3513	theme_boost_union	accessibilitysupportcontent	<p>Si teniu cap comentari sobre l'accessibilitat o voleu informar d'algun obstacle, utilitzeu el formulari següent.</p><p>¿Feu servir tecnologies d'assistència com ara lectors de pantalla, lupes, control per veu o programari de reconeixement de veu? Si és així, especifiqueu quines. Per ajudar-nos a processar la vostra sol·licitud, podeu permetre que el formulari enviï automàticament la informació següent juntament amb el vostre missatge: l'URL on éreu quan vau obrir aquest formulari de suport (això s'anomena «referrer») i una mica d'informació sobre el vostre navegador.</p>
+3514	theme_boost_union	accessibilitysupportpagetitle	Suport a l'accessibilitat
+3515	theme_boost_union	accessibilitysupportlinkposition	none
+3516	theme_boost_union	allowaccessibilitysupportwithoutlogin	no
+3517	theme_boost_union	enableaccessibilitysupportfooterbutton	no
+3518	theme_boost_union	allowanonymoussubmits	no
+3519	theme_boost_union	allowsendtechinfoalong	yes
+3520	theme_boost_union	accessibilitysupportusermail	
+3521	theme_boost_union	accessibilitysupportpagesrlinktitle	Obtenir suport a l'accessibilitat
+3522	theme_boost_union	accessibilitysupportrecaptcha	never
+3523	theme_boost_union	enablebuiltinsnippets	no
+3524	theme_boost_union	enableuploadedsnippets	no
+3525	theme_boost_union	uploadedsnippets	
+3526	tool_mobile	autologout	0
+3527	tool_mobile	autologouttime	86400
+3528	aiprovider_azureai	action_generate_text_deployment	
+3529	aiprovider_azureai	action_generate_text_apiversion	2024-06-01
+3530	aiprovider_azureai	action_generate_text_systeminstruction	Rebreu una entrada de text de l'usuari. La vostra tasca és generar un text basat en la seva sol·licitud. Seguiu aquestes instruccions importants:\n\n1. Retorneu el resum només en text pla.\n2. No inclogueu cap format de marques, salutacions ni tòpics.
+3531	aiprovider_azureai	action_generate_image_deployment	
+3532	aiprovider_azureai	action_generate_image_apiversion	2024-06-01
+3533	aiprovider_azureai	action_summarise_text_deployment	
+3534	aiprovider_azureai	action_summarise_text_apiversion	2024-06-01
+3535	aiprovider_azureai	action_summarise_text_systeminstruction	Rebreu una entrada de text de l'usuari. La vostra tasca és resumir el text proporcionat. Seguiu aquestes pautes:\n\n1. Condensar: Escurçar els passatges llargs en punts clau.\n2. Simplificar: Facilitar la comprensió de la informació complexa, especialment per als estudiants.\n\nInstruccions importants:\n\n1. Retornar el resum només en text pla.\n2. No incloure cap format de marques, salutacions ni tòpics.\n3. Centrar-se en la claredat, la concisió i l'accessibilitat.\n\nAssegureu-vos que el resum sigui fàcil de llegir i que transmeti eficaçment els punts principals del text original.
+3536	aiprovider_openai	action_generate_text_model	gpt-4o
+3537	aiprovider_openai	action_generate_text_endpoint	https://api.openai.com/v1/chat/completions
+3538	aiprovider_openai	action_generate_text_systeminstruction	Rebreu una entrada de text de l'usuari. La vostra tasca és generar un text basat en la seva sol·licitud. Seguiu aquestes instruccions importants:\n\n1. Retorneu el resum només en text pla.\n2. No inclogueu cap format de marques, salutacions ni tòpics.
+3539	aiprovider_openai	action_generate_image_model	dall-e-3
+3540	aiprovider_openai	action_generate_image_endpoint	https://api.openai.com/v1/images/generations
+3541	aiprovider_openai	action_summarise_text_model	gpt-4o
+3542	aiprovider_openai	action_summarise_text_endpoint	https://api.openai.com/v1/chat/completions
+3543	aiprovider_openai	action_summarise_text_systeminstruction	Rebreu una entrada de text de l'usuari. La vostra tasca és resumir el text proporcionat. Seguiu aquestes pautes:\n\n1. Condensar: Escurçar els passatges llargs en punts clau.\n2. Simplificar: Facilitar la comprensió de la informació complexa, especialment per als estudiants.\n\nInstruccions importants:\n\n1. Retornar el resum només en text pla.\n2. No incloure cap format de marques, salutacions ni tòpics.\n3. Centrar-se en la claredat, la concisió i l'accessibilitat.\n\nAssegureu-vos que el resum sigui fàcil de llegir i que transmeti eficaçment els punts principals del text original.
 \.
 
 
@@ -35215,8 +38316,8 @@ COPY public.m2context_temp (id, path, depth, locked) FROM stdin;
 -- Data for Name: m2course; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2course (id, category, sortorder, fullname, shortname, idnumber, summary, summaryformat, format, showgrades, newsitems, startdate, enddate, relativedatesmode, marker, maxbytes, legacyfiles, showreports, visible, visibleold, groupmode, groupmodeforce, defaultgroupingid, lang, calendartype, theme, timecreated, timemodified, requested, enablecompletion, completionnotify, cacherev, originalcourseid, downloadcontent, showactivitydates, showcompletionconditions) FROM stdin;
-1	0	0	Odissea Dev	odissea		<p>Versió de desenvolupament d'Odissea<br></p>	0	site	1	3	0	0	0	0	0	0	0	1	1	0	0	0				1603909020	1603909308	0	0	0	1710942751	\N	\N	0	\N
+COPY public.m2course (id, category, sortorder, fullname, shortname, idnumber, summary, summaryformat, format, showgrades, newsitems, startdate, enddate, relativedatesmode, marker, maxbytes, legacyfiles, showreports, visible, visibleold, groupmode, groupmodeforce, defaultgroupingid, lang, calendartype, theme, timecreated, timemodified, requested, enablecompletion, completionnotify, cacherev, originalcourseid, downloadcontent, showactivitydates, showcompletionconditions, pdfexportfont) FROM stdin;
+1	0	0	Odissea Dev	odissea		<p>Versió de desenvolupament d'Odissea<br></p>	0	site	1	3	0	0	0	0	0	0	0	1	1	0	0	0				1603909020	1603909308	0	0	0	1768247161	\N	\N	0	\N	\N
 \.
 
 
@@ -35322,7 +38423,7 @@ COPY public.m2course_request (id, fullname, shortname, summary, summaryformat, c
 -- Data for Name: m2course_sections; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2course_sections (id, course, section, name, summary, summaryformat, sequence, visible, availability, timemodified) FROM stdin;
+COPY public.m2course_sections (id, course, section, name, summary, summaryformat, sequence, visible, availability, timemodified, component, itemid) FROM stdin;
 \.
 
 
@@ -35354,7 +38455,7 @@ COPY public.m2customfield_category (id, name, description, descriptionformat, so
 -- Data for Name: m2customfield_data; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2customfield_data (id, fieldid, instanceid, intvalue, decvalue, shortcharvalue, charvalue, value, valueformat, timecreated, timemodified, contextid) FROM stdin;
+COPY public.m2customfield_data (id, fieldid, instanceid, intvalue, decvalue, shortcharvalue, charvalue, value, valueformat, timecreated, timemodified, contextid, valuetrust) FROM stdin;
 \.
 
 
@@ -35762,7 +38863,6 @@ COPY public.m2external_functions (id, name, classname, methodname, classpath, co
 180	core_output_load_fontawesome_icon_map	core\\output\\external	load_fontawesome_icon_map	\N	moodle		\N
 181	core_output_load_fontawesome_icon_system_map	core\\external\\output\\icon_system\\load_fontawesome_map	execute	\N	moodle		\N
 182	core_question_update_flag	core_question_external	update_flag	\N	moodle	moodle/question:flag	moodle_mobile_app
-183	core_question_submit_tags_form	core_question_external	submit_tags_form	\N	moodle		\N
 184	core_question_get_random_question_summaries	core_question_external	get_random_question_summaries	\N	moodle		\N
 185	core_rating_get_item_ratings	core_rating_external	get_item_ratings	\N	moodle	moodle/rating:view	moodle_mobile_app
 186	core_rating_add_rating	core_rating_external	add_rating	\N	moodle	moodle/rating:rate	moodle_mobile_app
@@ -35880,7 +38980,6 @@ COPY public.m2external_functions (id, name, classname, methodname, classpath, co
 298	core_webservice_get_site_info	core_webservice_external	get_site_info	webservice/externallib.php	moodle		moodle_mobile_app
 299	core_block_get_course_blocks	core_block_external	get_course_blocks	\N	moodle		moodle_mobile_app
 300	core_block_get_dashboard_blocks	core_block_external	get_dashboard_blocks	\N	moodle		moodle_mobile_app
-301	core_filters_get_available_in_context	core_filters\\external	get_available_in_context	\N	moodle		moodle_mobile_app
 302	core_customfield_delete_field	core_customfield_external	delete_field	customfield/externallib.php	moodle		\N
 303	core_customfield_reload_template	core_customfield_external	reload_template	customfield/externallib.php	moodle		\N
 304	core_customfield_create_category	core_customfield_external	create_category	customfield/externallib.php	moodle		\N
@@ -35956,7 +39055,6 @@ COPY public.m2external_functions (id, name, classname, methodname, classpath, co
 374	mod_folder_get_folders_by_courses	mod_folder_external	get_folders_by_courses	\N	mod_folder	mod/folder:view	moodle_mobile_app
 375	mod_forum_get_forums_by_courses	mod_forum_external	get_forums_by_courses	mod/forum/externallib.php	mod_forum	mod/forum:viewdiscussion	moodle_mobile_app
 376	mod_forum_get_discussion_posts	mod_forum_external	get_discussion_posts	mod/forum/externallib.php	mod_forum	mod/forum:viewdiscussion, mod/forum:viewqandawithoutposting	moodle_mobile_app
-378	mod_forum_get_forum_discussions_paginated	mod_forum_external	get_forum_discussions_paginated	mod/forum/externallib.php	mod_forum	mod/forum:viewdiscussion, mod/forum:viewqandawithoutposting	moodle_mobile_app
 379	mod_forum_get_forum_discussions	mod_forum_external	get_forum_discussions	mod/forum/externallib.php	mod_forum	mod/forum:viewdiscussion, mod/forum:viewqandawithoutposting	moodle_mobile_app
 380	mod_forum_view_forum	mod_forum_external	view_forum	mod/forum/externallib.php	mod_forum	mod/forum:viewdiscussion	moodle_mobile_app
 381	mod_forum_view_forum_discussion	mod_forum_external	view_forum_discussion	mod/forum/externallib.php	mod_forum	mod/forum:viewdiscussion	moodle_mobile_app
@@ -36112,8 +39210,6 @@ COPY public.m2external_functions (id, name, classname, methodname, classpath, co
 534	gradingform_rubric_grader_gradingpanel_fetch	gradingform_rubric\\grades\\grader\\gradingpanel\\external\\fetch	execute	\N	gradingform_rubric		\N
 535	gradingform_rubric_grader_gradingpanel_store	gradingform_rubric\\grades\\grader\\gradingpanel\\external\\store	execute	\N	gradingform_rubric		\N
 536	tool_analytics_potential_contexts	tool_analytics\\external	potential_contexts	\N	tool_analytics		moodle_mobile_app
-537	tool_dataprivacy_cancel_data_request	tool_dataprivacy\\external	cancel_data_request	\N	tool_dataprivacy		\N
-538	tool_dataprivacy_contact_dpo	tool_dataprivacy\\external	contact_dpo	\N	tool_dataprivacy		\N
 539	tool_dataprivacy_mark_complete	tool_dataprivacy\\external	mark_complete	\N	tool_dataprivacy	tool/dataprivacy:managedatarequests	\N
 540	tool_dataprivacy_get_data_request	tool_dataprivacy\\external	get_data_request	\N	tool_dataprivacy	tool/dataprivacy:managedatarequests	\N
 541	tool_dataprivacy_approve_data_request	tool_dataprivacy\\external	approve_data_request	\N	tool_dataprivacy	tool/dataprivacy:managedatarequests	\N
@@ -36140,12 +39236,12 @@ COPY public.m2external_functions (id, name, classname, methodname, classpath, co
 560	tool_lp_data_for_competencies_manage_page	tool_lp\\external	data_for_competencies_manage_page	\N	tool_lp	moodle/competency:competencyview	\N
 561	tool_lp_list_courses_using_competency	tool_lp\\external	list_courses_using_competency	\N	tool_lp	moodle/competency:coursecompetencyview	\N
 562	tool_lp_data_for_course_competencies_page	tool_lp\\external	data_for_course_competencies_page	\N	tool_lp	moodle/competency:coursecompetencyview	moodle_mobile_app
+538	tool_dataprivacy_contact_dpo	tool_dataprivacy\\external	contact_dpo	\N	tool_dataprivacy		moodle_mobile_app
 563	tool_lp_data_for_template_competencies_page	tool_lp\\external	data_for_template_competencies_page	\N	tool_lp	moodle/competency:templateview	\N
 564	tool_lp_data_for_templates_manage_page	tool_lp\\external	data_for_templates_manage_page	\N	tool_lp	moodle/competency:templateview	\N
 565	tool_lp_data_for_plans_page	tool_lp\\external	data_for_plans_page	\N	tool_lp	moodle/competency:planviewown	moodle_mobile_app
 566	tool_lp_data_for_plan_page	tool_lp\\external	data_for_plan_page	\N	tool_lp	moodle/competency:planview	moodle_mobile_app
 567	tool_lp_data_for_related_competencies_section	tool_lp\\external	data_for_related_competencies_section	\N	tool_lp	moodle/competency:competencyview	\N
-568	tool_lp_search_users	tool_lp\\external	search_users	\N	tool_lp		\N
 569	tool_lp_search_cohorts	core_cohort_external	search_cohorts	cohort/externallib.php	tool_lp	moodle/cohort:view	\N
 570	tool_lp_data_for_user_evidence_list_page	tool_lp\\external	data_for_user_evidence_list_page	\N	tool_lp	moodle/competency:userevidenceview	moodle_mobile_app
 571	tool_lp_data_for_user_evidence_page	tool_lp\\external	data_for_user_evidence_page	\N	tool_lp	moodle/competency:userevidenceview	moodle_mobile_app
@@ -36173,7 +39269,6 @@ COPY public.m2external_functions (id, name, classname, methodname, classpath, co
 593	mod_choicegroup_delete_choicegroup_responses	mod_choicegroup_external	delete_choicegroup_responses	\N	mod_choicegroup	mod/choicegroup:choose	local_mobile,moodle_mobile_app
 594	mod_journal_get_entry	mod_journal_external	get_entry	mod/journal/externallib.php	mod_journal		moodle_mobile_app
 595	mod_journal_set_text	mod_journal_external	set_text	mod/journal/externallib.php	mod_journal		moodle_mobile_app
-596	mod_questionnaire_submit_questionnaire_response	mod_questionnaire_external	submit_questionnaire_response	mod/questionnaire/externallib.php	mod_questionnaire	mod/questionnaire:submit	moodle_mobile_app
 597	local_clickedu_get_activities	local_clickedu_external	get_activities	local/clickedu/externallib.php	local_clickedu		\N
 598	local_clickedu_get_grades	local_clickedu_external	get_grades	local/clickedu/externallib.php	local_clickedu		\N
 599	local_wsvicensvives_update_lti_grade	local_wsvicensvives_external	update_lti_grade	local/wsvicensvives/externallib.php	local_wsvicensvives		\N
@@ -36190,8 +39285,8 @@ COPY public.m2external_functions (id, name, classname, methodname, classpath, co
 610	core_files_delete_draft_files	core_files\\external\\delete\\draft	execute	\N	moodle		moodle_mobile_app
 611	core_files_get_unused_draft_itemid	core_files\\external\\get\\unused_draft	execute	\N	moodle		moodle_mobile_app
 612	core_form_dynamic_form	core_form\\external\\dynamic_form	execute	\N	moodle		\N
-613	core_grades_create_gradecategory	core_grades_external	create_gradecategory	\N	moodle	moodle/grade:manage	\N
 614	core_grades_create_gradecategories	core_grades\\external\\create_gradecategories	execute	\N	moodle	moodle/grade:manage	\N
+568	tool_lp_search_users	tool_lp\\external	search_users	\N	tool_lp	moodle/competency:templatemanage	\N
 615	core_user_search_identity	\\core_user\\external\\search_identity	execute	\N	moodle	moodle/user:viewalldetails	\N
 616	core_block_fetch_addable_blocks	core_block\\external\\fetch_addable_blocks	execute	\N	moodle	moodle/site:manageblocks	moodle_mobile_app
 617	core_table_get_dynamic_table_content	core_table\\external\\dynamic\\get	execute	\N	moodle		moodle_mobile_app
@@ -36234,7 +39329,6 @@ COPY public.m2external_functions (id, name, classname, methodname, classpath, co
 654	core_courseformat_update_course	core_courseformat\\external\\update_course	execute	\N	moodle	moodle/course:sectionvisibility, moodle/course:activityvisibility	\N
 655	core_course_get_enrolled_courses_with_action_events_by_timeline_classification	\\core_course\\external\\get_enrolled_courses_with_action_events_by_timeline_classification	execute	\N	moodle		moodle_mobile_app
 656	core_grades_get_enrolled_users_for_search_widget	core_grades\\external\\get_enrolled_users_for_search_widget	execute	\N	moodle		moodle_mobile_app
-657	core_grades_get_groups_for_search_widget	core_grades\\external\\get_groups_for_search_widget	execute	\N	moodle		moodle_mobile_app
 658	core_message_get_unread_notification_count	\\core_message\\external\\get_unread_notification_count	execute	\N	moodle		moodle_mobile_app
 659	core_user_update_user_device_public_key	\\core_user\\external\\update_user_device_public_key	execute	\N	moodle		moodle_mobile_app
 660	core_reportbuilder_filters_reset	core_reportbuilder\\external\\filters\\reset	execute	\N	moodle		\N
@@ -36292,6 +39386,103 @@ COPY public.m2external_functions (id, name, classname, methodname, classpath, co
 711	tiny_autosave_update_session	tiny_autosave\\external\\update_autosave_session_content	execute	\N	tiny_autosave		\N
 712	tiny_equation_filter	tiny_equation\\external\\filter	execute	\N	tiny_equation		\N
 713	core_grades_get_gradable_users	core_grades\\external\\get_gradable_users	execute	\N	moodle		moodle_mobile_app
+301	core_filters_get_available_in_context	core_filters\\external\\get_available_in_context	execute	\N	moodle		moodle_mobile_app
+657	core_grades_get_groups_for_search_widget	core_group\\external\\get_groups_for_selector	execute	\N	moodle		moodle_mobile_app
+714	core_badges_disable_badges	core_badges\\external\\disable_badges	execute	\N	moodle		\N
+715	core_badges_enable_badges	core_badges\\external\\enable_badges	execute	\N	moodle		\N
+716	core_badges_get_badge	core_badges\\external\\get_badge	execute	\N	moodle		moodle_mobile_app
+717	core_badges_get_user_badge_by_hash	core_badges\\external\\get_user_badge_by_hash	execute	\N	moodle		moodle_mobile_app
+718	core_blog_get_access_information	\\core_blog\\external\\get_access_information	execute	\N	moodle		moodle_mobile_app
+719	core_blog_add_entry	\\core_blog\\external\\add_entry	execute	\N	moodle		moodle_mobile_app
+720	core_blog_delete_entry	\\core_blog\\external\\delete_entry	execute	\N	moodle		moodle_mobile_app
+721	core_blog_prepare_entry_for_edition	\\core_blog\\external\\prepare_entry_for_edition	execute	\N	moodle		moodle_mobile_app
+722	core_blog_update_entry	\\core_blog\\external\\update_entry	execute	\N	moodle		moodle_mobile_app
+723	core_check_get_result_admintree	core\\check\\external\\get_result_admintree	execute	\N	moodle		\N
+724	core_courseformat_file_handlers	core_courseformat\\external\\file_handlers	execute	\N	moodle		\N
+725	core_courseformat_new_module	core_courseformat\\external\\new_module	execute	\N	moodle	moodle/course:manageactivities	\N
+726	core_courseformat_create_module	core_courseformat\\external\\create_module	execute	\N	moodle	moodle/course:manageactivities	\N
+727	core_grades_get_enrolled_users_for_selector	core_grades\\external\\get_enrolled_users_for_selector	execute	\N	moodle		moodle_mobile_app
+728	core_grades_get_groups_for_selector	core_group\\external\\get_groups_for_selector	execute	\N	moodle		moodle_mobile_app
+729	core_grades_get_feedback	core_grades\\external\\get_feedback	execute	\N	moodle		\N
+730	core_grades_get_gradeitems	core_grades\\external\\get_gradeitems	execute	\N	moodle		moodle_mobile_app
+731	core_grades_get_grade_tree	core_grades\\external\\get_grade_tree	execute	\N	moodle		\N
+732	core_group_get_groups_for_selector	core_group\\external\\get_groups_for_selector	execute	\N	moodle		moodle_mobile_app
+733	core_my_view_page	\\core_my\\external\\view_page	execute	\N	moodle		moodle_mobile_app
+734	core_search_get_results	\\core_search\\external\\get_results	execute	\N	moodle	moodle/search:query	moodle_mobile_app
+735	core_search_get_search_areas_list	\\core_search\\external\\get_search_areas_list	execute	\N	moodle	moodle/search:query	moodle_mobile_app
+736	core_search_view_results	\\core_search\\external\\view_results	execute	\N	moodle	moodle/search:query	moodle_mobile_app
+737	core_search_get_top_results	\\core_search\\external\\get_top_results	execute	\N	moodle	moodle/search:query	moodle_mobile_app
+738	core_user_prepare_private_files_for_edition	\\core_user\\external\\prepare_private_files_for_edition	execute	\N	moodle	moodle/user:manageownfiles	moodle_mobile_app
+739	core_user_update_private_files	\\core_user\\external\\update_private_files	execute	\N	moodle	moodle/user:manageownfiles	moodle_mobile_app
+740	core_filters_get_all_states	core_filters\\external\\get_all_states	execute	\N	moodle		moodle_mobile_app
+741	core_xapi_post_state	core_xapi\\external\\post_state	execute	\N	moodle		moodle_mobile_app
+742	core_xapi_get_state	core_xapi\\external\\get_state	execute	\N	moodle		moodle_mobile_app
+743	core_xapi_get_states	core_xapi\\external\\get_states	execute	\N	moodle		moodle_mobile_app
+744	core_xapi_delete_state	core_xapi\\external\\delete_state	execute	\N	moodle		moodle_mobile_app
+745	core_xapi_delete_states	core_xapi\\external\\delete_states	execute	\N	moodle		moodle_mobile_app
+746	core_contentbank_copy_content	core_contentbank\\external\\copy_content	execute	\N	moodle	moodle/contentbank:copycontent, moodle/contentbank:copyanycontent	\N
+747	core_reportbuilder_retrieve_system_report	core_reportbuilder\\external\\systemreports\\retrieve	execute	\N	moodle		moodle_mobile_app
+748	core_reportbuilder_can_view_system_report	core_reportbuilder\\external\\systemreports\\can_view	execute	\N	moodle		moodle_mobile_app
+749	core_admin_set_plugin_state	core_admin\\external\\set_plugin_state	execute	\N	moodle		\N
+750	core_admin_set_plugin_order	core_admin\\external\\set_plugin_order	execute	\N	moodle		\N
+751	core_admin_set_block_protection	core_admin\\external\\set_block_protection	execute	\N	moodle		\N
+752	core_moodlenet_send_activity	core\\external\\moodlenet_send_activity	execute	\N	moodle		\N
+753	core_moodlenet_get_share_info_activity	core\\external\\moodlenet_get_share_info_activity	execute	\N	moodle		\N
+754	core_moodlenet_auth_check	core\\external\\moodlenet_auth_check	execute	\N	moodle		\N
+755	core_moodlenet_get_shared_course_info	core\\external\\moodlenet_get_shared_course_info	execute	\N	moodle		\N
+756	core_moodlenet_send_course	core\\external\\moodlenet_send_course	execute	\N	moodle		\N
+757	core_output_poll_stored_progress	core\\external\\output\\poll_stored_progress	execute	\N	moodle		\N
+758	core_ai_set_policy_status	core_ai\\external\\set_policy_status	execute	\N	moodle		moodle_mobile_app
+759	core_ai_get_policy_status	core_ai\\external\\get_policy_status	execute	\N	moodle		moodle_mobile_app
+760	core_ai_set_action	core_ai\\external\\set_action	execute	\N	moodle		\N
+761	core_sms_set_gateway_status	core_sms\\external\\sms_gateway_status	execute	\N	moodle		\N
+762	aiplacement_courseassist_summarise_text	aiplacement_courseassist\\external\\summarise_text	execute	\N	aiplacement_courseassist		moodle_mobile_app
+763	aiplacement_editor_generate_image	aiplacement_editor\\external\\generate_image	execute	\N	aiplacement_editor		moodle_mobile_app
+764	aiplacement_editor_generate_text	aiplacement_editor\\external\\generate_text	execute	\N	aiplacement_editor		moodle_mobile_app
+765	qtype_coderunner_run_in_sandbox	qtype_coderunner\\external\\run_in_sandbox	execute	\N	qtype_coderunner	qtype/coderunner:sandboxwsaccess	moodle_mobile_app
+766	mod_assign_remove_submission	mod_assign\\external\\remove_submission	execute	\N	mod_assign	mod/assign:submit	moodle_mobile_app
+767	mod_chat_view_sessions	mod_chat\\external\\view_sessions	execute	\N	mod_chat	mod/chat:readlog	moodle_mobile_app
+768	mod_feedback_questions_reorder	mod_feedback\\external\\questions\\reorder	execute	\N	mod_feedback	mod/feedback:edititems	\N
+769	mod_lti_delete_course_tool_type	mod_lti\\external\\delete_course_tool_type	execute	\N	mod_lti	mod/lti:addcoursetool	\N
+770	mod_lti_toggle_showinactivitychooser	mod_lti\\external\\toggle_showinactivitychooser	execute	\N	mod_lti	mod/lti:addcoursetool	\N
+596	mod_questionnaire_submit_questionnaire_response	mod_questionnaire\\external	submit_questionnaire_response	mod/questionnaire/externallib.php	mod_questionnaire	mod/questionnaire:submit	moodle_mobile_app
+771	mod_quiz_reopen_attempt	mod_quiz\\external\\reopen_attempt	execute	\N	mod_quiz	mod/quiz:reopenattempts	\N
+772	mod_quiz_get_reopen_attempt_confirmation	mod_quiz\\external\\get_reopen_attempt_confirmation	execute	\N	mod_quiz	mod/quiz:reopenattempts	\N
+773	mod_quiz_add_random_questions	mod_quiz\\external\\add_random_questions	execute	\N	mod_quiz	mod/quiz:manage	\N
+774	mod_quiz_update_filter_condition	mod_quiz\\external\\update_filter_condition	execute	\N	mod_quiz	mod/quiz:manage	\N
+775	mod_quiz_save_overrides	mod_quiz\\external\\save_overrides	execute	\N	mod_quiz	mod/quiz:manageoverrides	\N
+776	mod_quiz_delete_overrides	mod_quiz\\external\\delete_overrides	execute	\N	mod_quiz	mod/quiz:manageoverrides	\N
+777	mod_quiz_get_overrides	mod_quiz\\external\\get_overrides	execute	\N	mod_quiz	mod/quiz:manageoverrides	\N
+778	mod_quiz_create_grade_items	mod_quiz\\external\\create_grade_items	execute	\N	mod_quiz	mod/quiz:manage	\N
+779	mod_quiz_delete_grade_items	mod_quiz\\external\\delete_grade_items	execute	\N	mod_quiz	mod/quiz:manage	\N
+780	mod_quiz_update_grade_items	mod_quiz\\external\\update_grade_items	execute	\N	mod_quiz	mod/quiz:manage	\N
+781	mod_quiz_update_slots	mod_quiz\\external\\update_slots	execute	\N	mod_quiz	mod/quiz:manage	\N
+782	mod_quiz_get_edit_grading_page_data	mod_quiz\\external\\get_edit_grading_page_data	execute	\N	mod_quiz	mod/quiz:manage	\N
+783	mod_quiz_create_grade_item_per_section	mod_quiz\\external\\create_grade_item_per_section	execute	\N	mod_quiz	mod/quiz:manage	\N
+784	customfield_number_recalculate_value	customfield_number\\external\\recalculate	execute	\N	customfield_number		\N
+785	enrol_guest_validate_password	enrol_guest\\external\\validate_password	execute	\N	enrol_guest		moodle_mobile_app
+786	format_tiles_set_image	format_tiles\\external\\external	set_image	\N	format_tiles	moodle/course:update	\N
+787	format_tiles_log_tile_click	format_tiles\\external\\external	log_tile_click	\N	format_tiles		\N
+788	format_tiles_get_icon_set	format_tiles\\external\\external	get_icon_set	\N	format_tiles	moodle/course:update	\N
+789	format_tiles_set_session_width	format_tiles\\external\\external	set_session_width	\N	format_tiles		\N
+790	format_tiles_get_section_information	format_tiles\\external\\external	get_section_information	\N	format_tiles		\N
+791	format_tiles_get_course_mod_info	format_tiles\\external\\external	get_course_mod_info	\N	format_tiles	mod/[modulename]:view	\N
+792	gradereport_grader_get_users_in_report	gradereport_grader\\external\\get_users_in_report	execute	\N	gradereport_grader	gradereport/grader:view	moodle_mobile_app
+793	gradereport_user_get_access_information	gradereport_user\\external\\get_access_information	execute	\N	gradereport_user		moodle_mobile_app
+794	qbank_columnsortorder_set_hidden_columns	qbank_columnsortorder\\external\\set_hidden_columns	execute	\N	qbank_columnsortorder		\N
+795	qbank_columnsortorder_set_column_size	qbank_columnsortorder\\external\\set_column_size	execute	\N	qbank_columnsortorder		\N
+796	qbank_managecategories_move_category	qbank_managecategories\\external\\move_category	execute	\N	qbank_managecategories	moodle/question:managecategory	\N
+797	qbank_viewquestiontext_set_question_text_format	qbank_viewquestiontext\\external\\set_question_text_format	execute	\N	qbank_viewquestiontext		\N
+798	tool_admin_presets_delete_preset	tool_admin_presets\\external\\delete_preset	execute	\N	tool_admin_presets		\N
+537	tool_dataprivacy_cancel_data_request	tool_dataprivacy\\external	cancel_data_request	\N	tool_dataprivacy		moodle_mobile_app
+799	tool_dataprivacy_submit_selected_courses_form	tool_dataprivacy\\external\\submit_selected_courses_form	execute	\N	tool_dataprivacy	tool/dataprivacy:managedatarequests	\N
+800	tool_dataprivacy_get_access_information	\\tool_dataprivacy\\external\\get_access_information	execute	\N	tool_dataprivacy		moodle_mobile_app
+801	tool_dataprivacy_create_data_request	\\tool_dataprivacy\\external\\create_data_request	execute	\N	tool_dataprivacy		moodle_mobile_app
+802	tool_dataprivacy_get_data_requests	\\tool_dataprivacy\\external\\get_data_requests	execute	\N	tool_dataprivacy		moodle_mobile_app
+803	tool_policy_get_user_acceptances	\\tool_policy\\external\\get_user_acceptances	execute	\N	tool_policy		moodle_mobile_app
+804	tool_policy_set_acceptances_status	\\tool_policy\\external\\set_acceptances_status	execute	\N	tool_policy		moodle_mobile_app
+805	theme_boost_union_get_fontawesome_icons	theme_boost_union\\external\\get_fontawesome_icons	execute	\N	theme_boost_union		\N
+806	tiny_premium_get_api_key	tiny_premium\\external\\get_api_key	execute	\N	tiny_premium		\N
 \.
 
 
@@ -36318,310 +39509,6 @@ COPY public.m2external_services_functions (id, externalserviceid, functionname) 
 367	3	local_clickedu_get_grades
 368	4	local_wsvicensvives_update_lti_grade
 369	4	local_wsvicensvives_get_lti_grade
-2696	1	core_badges_get_user_badges
-2697	1	core_blog_get_entries
-2698	1	core_blog_view_entries
-2699	1	core_calendar_get_calendar_monthly_view
-2700	1	core_calendar_get_calendar_day_view
-2701	1	core_calendar_get_calendar_upcoming_view
-2702	1	core_calendar_update_event_start_day
-2703	1	core_calendar_create_calendar_events
-2704	1	core_calendar_delete_calendar_events
-2705	1	core_calendar_get_calendar_events
-2706	1	core_calendar_get_action_events_by_timesort
-2707	1	core_calendar_get_action_events_by_course
-2708	1	core_calendar_get_action_events_by_courses
-2709	1	core_calendar_get_calendar_event_by_id
-2710	1	core_calendar_submit_create_update_form
-2711	1	core_calendar_get_calendar_access_information
-2712	1	core_calendar_get_allowed_event_types
-2713	1	core_comment_get_comments
-2714	1	core_comment_add_comments
-2715	1	core_comment_delete_comments
-2716	1	core_completion_get_activities_completion_status
-2717	1	core_completion_get_course_completion_status
-2718	1	core_completion_mark_course_self_completed
-2719	1	core_completion_update_activity_completion_status_manually
-2720	1	core_course_get_categories
-2721	1	core_course_get_contents
-2722	1	core_course_get_course_module
-2723	1	core_course_get_course_module_by_instance
-2724	1	core_course_get_courses
-2725	1	core_course_search_courses
-2726	1	core_course_view_course
-2727	1	core_course_get_user_navigation_options
-2728	1	core_course_get_user_administration_options
-2729	1	core_course_get_courses_by_field
-2730	1	core_course_check_updates
-2731	1	core_course_get_updates_since
-2732	1	core_course_get_enrolled_courses_by_timeline_classification
-2733	1	core_course_get_recent_courses
-2734	1	core_course_set_favourite_courses
-2735	1	core_enrol_get_course_enrolment_methods
-2736	1	core_enrol_get_enrolled_users
-2737	1	core_enrol_search_users
-2738	1	core_enrol_get_users_courses
-2739	1	core_files_get_files
-2740	1	core_get_component_strings
-2741	1	core_grades_grader_gradingpanel_point_fetch
-2742	1	core_grades_grader_gradingpanel_point_store
-2743	1	core_message_get_conversations
-2744	1	core_grades_grader_gradingpanel_scale_fetch
-2745	1	core_grades_grader_gradingpanel_scale_store
-2746	1	core_group_get_activity_allowed_groups
-2747	1	core_group_get_activity_groupmode
-2748	1	core_group_get_course_groupings
-2749	1	core_group_get_course_groups
-2750	1	core_group_get_course_user_groups
-2751	1	core_message_mute_conversations
-2752	1	core_message_unmute_conversations
-2753	1	core_message_block_user
-2754	1	core_message_get_contact_requests
-2755	1	core_message_create_contact_request
-2756	1	core_message_confirm_contact_request
-2757	1	core_message_decline_contact_request
-2758	1	core_message_get_received_contact_requests_count
-2759	1	core_message_delete_contacts
-2760	1	core_message_delete_conversations_by_id
-2761	1	core_message_delete_message
-2762	1	core_message_get_blocked_users
-2763	1	core_message_data_for_messagearea_search_messages
-2764	1	core_message_message_search_users
-2765	1	core_message_get_user_contacts
-2766	1	core_message_get_conversation
-2767	1	core_message_get_conversation_between_users
-2768	1	core_message_get_self_conversation
-2769	1	core_message_get_messages
-2770	1	core_message_get_conversation_counts
-2771	1	core_message_get_unread_conversation_counts
-2772	1	core_message_get_conversation_members
-2773	1	core_message_get_member_info
-2774	1	core_message_get_unread_conversations_count
-2775	1	core_message_mark_all_notifications_as_read
-2776	1	core_message_mark_all_conversation_messages_as_read
-2777	1	core_message_mark_message_read
-2778	1	core_message_mark_notification_read
-2779	1	core_message_message_processor_config_form
-2780	1	core_message_search_contacts
-2781	1	core_message_send_instant_messages
-2782	1	core_message_send_messages_to_conversation
-2783	1	core_message_get_conversation_messages
-2784	1	core_message_unblock_user
-2785	1	core_message_get_user_notification_preferences
-2786	1	core_message_get_user_message_preferences
-2787	1	core_message_set_favourite_conversations
-2788	1	core_message_unset_favourite_conversations
-2789	1	core_message_delete_message_for_all_users
-2790	1	core_notes_create_notes
-2791	1	core_notes_delete_notes
-2792	1	core_notes_get_course_notes
-2793	1	core_notes_view_notes
-2794	1	core_question_update_flag
-2795	1	core_rating_get_item_ratings
-2796	1	core_rating_add_rating
-2797	1	core_tag_get_tagindex
-2798	1	core_tag_get_tagindex_per_area
-2799	1	core_tag_get_tag_areas
-2800	1	core_tag_get_tag_collections
-2801	1	core_tag_get_tag_cloud
-2802	1	core_user_add_user_device
-2803	1	core_user_add_user_private_files
-2804	1	core_user_get_course_user_profiles
-2805	1	core_user_get_users_by_field
-2806	1	core_user_remove_user_device
-2807	1	core_user_update_user_preferences
-2808	1	core_user_view_user_list
-2809	1	core_user_view_user_profile
-2810	1	core_user_get_user_preferences
-2811	1	core_user_update_picture
-2812	1	core_user_set_user_preferences
-2813	1	core_user_agree_site_policy
-2814	1	core_user_get_private_files_info
-2815	1	core_competency_competency_viewed
-2816	1	core_competency_list_course_competencies
-2817	1	core_competency_get_scale_values
-2818	1	core_competency_user_competency_viewed
-2819	1	core_competency_user_competency_viewed_in_plan
-2820	1	core_competency_user_competency_viewed_in_course
-2821	1	core_competency_user_competency_plan_viewed
-2822	1	core_competency_grade_competency_in_course
-2823	1	core_competency_delete_evidence
-2824	1	core_webservice_get_site_info
-2825	1	core_block_get_course_blocks
-2826	1	core_block_get_dashboard_blocks
-2827	1	core_filters_get_available_in_context
-2828	1	core_h5p_get_trusted_h5p_file
-2829	1	mod_assign_get_grades
-2830	1	mod_assign_get_assignments
-2831	1	mod_assign_get_submissions
-2832	1	mod_assign_get_user_flags
-2833	1	mod_assign_set_user_flags
-2834	1	mod_assign_get_user_mappings
-2835	1	mod_assign_revert_submissions_to_draft
-2836	1	mod_assign_lock_submissions
-2837	1	mod_assign_unlock_submissions
-2838	1	mod_assign_save_submission
-2839	1	mod_assign_submit_for_grading
-2840	1	mod_assign_save_grade
-2841	1	mod_assign_save_grades
-2842	1	mod_assign_save_user_extensions
-2843	1	mod_assign_reveal_identities
-2844	1	mod_assign_view_grading_table
-2845	1	mod_assign_view_submission_status
-2846	1	mod_assign_get_submission_status
-2847	1	mod_assign_list_participants
-2848	1	mod_assign_submit_grading_form
-2849	1	mod_assign_get_participant
-2850	1	mod_assign_view_assign
-2851	1	mod_book_view_book
-2852	1	mod_book_get_books_by_courses
-2853	1	mod_chat_login_user
-2854	1	mod_chat_get_chat_users
-2855	1	mod_chat_send_chat_message
-2856	1	mod_chat_get_chat_latest_messages
-2857	1	mod_chat_view_chat
-2858	1	mod_chat_get_chats_by_courses
-2859	1	mod_chat_get_sessions
-2860	1	mod_chat_get_session_messages
-2861	1	mod_choice_get_choice_results
-2862	1	mod_choice_get_choice_options
-2863	1	mod_choice_submit_choice_response
-2864	1	mod_choice_view_choice
-2865	1	mod_choice_get_choices_by_courses
-2866	1	mod_choice_delete_choice_responses
-2867	1	mod_data_get_databases_by_courses
-2868	1	mod_data_view_database
-2869	1	mod_data_get_data_access_information
-2870	1	mod_data_get_entries
-2871	1	mod_data_get_entry
-2872	1	mod_data_get_fields
-2873	1	mod_data_search_entries
-2874	1	mod_data_approve_entry
-2875	1	mod_data_delete_entry
-2876	1	mod_data_add_entry
-2877	1	mod_data_update_entry
-2878	1	mod_feedback_get_feedbacks_by_courses
-2879	1	mod_feedback_get_feedback_access_information
-2880	1	mod_feedback_view_feedback
-2881	1	mod_feedback_get_current_completed_tmp
-2882	1	mod_feedback_get_items
-2883	1	mod_feedback_launch_feedback
-2884	1	mod_feedback_get_page_items
-2885	1	mod_feedback_process_page
-2886	1	mod_feedback_get_analysis
-2887	1	mod_feedback_get_unfinished_responses
-2888	1	mod_feedback_get_finished_responses
-2889	1	mod_feedback_get_non_respondents
-2890	1	mod_feedback_get_responses_analysis
-2891	1	mod_feedback_get_last_completed
-2892	1	mod_folder_view_folder
-2893	1	mod_folder_get_folders_by_courses
-2894	1	mod_forum_get_forums_by_courses
-2895	1	mod_forum_get_discussion_posts
-2896	1	mod_forum_get_forum_discussions_paginated
-2897	1	mod_forum_get_forum_discussions
-2898	1	mod_forum_view_forum
-2899	1	mod_forum_view_forum_discussion
-2900	1	mod_forum_add_discussion_post
-2901	1	mod_forum_add_discussion
-2902	1	mod_forum_can_add_discussion
-2903	1	mod_forum_get_forum_access_information
-2904	1	mod_forum_set_subscription_state
-2905	1	mod_forum_set_lock_state
-2906	1	mod_forum_toggle_favourite_state
-2907	1	mod_page_view_page
-2908	1	mod_forum_set_pin_state
-2909	1	mod_forum_delete_post
-2910	1	mod_forum_get_discussion_post
-2911	1	mod_forum_prepare_draft_area_for_post
-2912	1	mod_forum_update_discussion_post
-2913	1	mod_glossary_get_glossaries_by_courses
-2914	1	mod_glossary_view_glossary
-2915	1	mod_glossary_view_entry
-2916	1	mod_glossary_get_entries_by_letter
-2917	1	mod_glossary_get_entries_by_date
-2918	1	mod_glossary_get_categories
-2919	1	mod_glossary_get_entries_by_category
-2920	1	mod_glossary_get_authors
-2921	1	mod_glossary_get_entries_by_author
-2922	1	mod_glossary_get_entries_by_author_id
-2923	1	mod_glossary_get_entries_by_search
-2924	1	mod_glossary_get_entries_by_term
-2925	1	mod_glossary_get_entries_to_approve
-2926	1	mod_glossary_get_entry_by_id
-2927	1	mod_glossary_add_entry
-2928	1	mod_imscp_view_imscp
-2929	1	mod_imscp_get_imscps_by_courses
-2930	1	mod_label_get_labels_by_courses
-2931	1	mod_lesson_get_lessons_by_courses
-2932	1	mod_lesson_get_lesson_access_information
-2933	1	mod_lesson_view_lesson
-2934	1	mod_lesson_get_questions_attempts
-2935	1	mod_lesson_get_user_grade
-2936	1	mod_lesson_get_user_attempt_grade
-2937	1	mod_lesson_get_content_pages_viewed
-2938	1	mod_lesson_get_user_timers
-2939	1	mod_lesson_get_pages
-2940	1	mod_lesson_launch_attempt
-2941	1	mod_lesson_get_page_data
-2942	1	mod_lesson_process_page
-2943	1	mod_lesson_finish_attempt
-2944	1	mod_lesson_get_attempts_overview
-2945	1	mod_lesson_get_user_attempt
-2946	1	mod_lesson_get_pages_possible_jumps
-2947	1	mod_lesson_get_lesson
-2948	1	mod_lti_get_tool_launch_data
-2949	1	mod_lti_get_ltis_by_courses
-2950	1	mod_lti_view_lti
-2951	1	mod_page_get_pages_by_courses
-2952	1	mod_quiz_get_quizzes_by_courses
-2953	1	mod_quiz_view_quiz
-2954	1	mod_quiz_get_user_attempts
-2955	1	mod_quiz_get_user_best_grade
-2956	1	mod_quiz_get_combined_review_options
-2957	1	mod_quiz_start_attempt
-2958	1	mod_quiz_get_attempt_data
-2959	1	mod_quiz_get_attempt_summary
-2960	1	mod_quiz_save_attempt
-2961	1	mod_quiz_process_attempt
-2962	1	mod_quiz_get_attempt_review
-2963	1	mod_quiz_view_attempt
-2964	1	mod_quiz_view_attempt_summary
-2965	1	mod_quiz_view_attempt_review
-2966	1	mod_quiz_get_quiz_feedback_for_grade
-2967	1	mod_quiz_get_quiz_access_information
-2968	1	mod_quiz_get_attempt_access_information
-2969	1	mod_quiz_get_quiz_required_qtypes
-2970	1	mod_resource_view_resource
-2971	1	mod_resource_get_resources_by_courses
-2972	1	mod_scorm_view_scorm
-2973	1	mod_scorm_get_scorm_attempt_count
-2974	1	mod_scorm_get_scorm_scoes
-2975	1	mod_scorm_get_scorm_user_data
-2976	1	mod_scorm_insert_scorm_tracks
-2977	1	mod_scorm_get_scorm_sco_tracks
-2978	1	mod_scorm_get_scorms_by_courses
-2979	1	mod_scorm_launch_sco
-2980	1	mod_scorm_get_scorm_access_information
-2981	1	mod_survey_get_surveys_by_courses
-2982	1	mod_survey_view_survey
-2983	1	mod_survey_get_questions
-2984	1	mod_survey_submit_answers
-2985	1	mod_url_view_url
-2986	1	mod_url_get_urls_by_courses
-2987	1	mod_wiki_get_wikis_by_courses
-2988	1	mod_wiki_view_wiki
-2989	1	mod_wiki_view_page
-2990	1	mod_wiki_get_subwikis
-2991	1	mod_wiki_get_subwiki_pages
-2992	1	mod_wiki_get_subwiki_files
-2993	1	mod_wiki_get_page_contents
-2994	1	mod_wiki_get_page_for_editing
-2995	1	mod_wiki_new_page
-2996	1	mod_wiki_edit_page
-2997	1	mod_workshop_get_workshops_by_courses
-2998	1	mod_workshop_get_workshop_access_information
-2999	1	mod_workshop_get_user_plan
 1141	5	mod_attendance_add_attendance
 1142	5	mod_attendance_remove_attendance
 1143	5	mod_attendance_add_session
@@ -36630,104 +39517,451 @@ COPY public.m2external_services_functions (id, externalserviceid, functionname) 
 1146	5	mod_attendance_get_session
 1147	5	mod_attendance_update_user_status
 1148	5	mod_attendance_get_sessions
-3000	1	mod_workshop_view_workshop
-3001	1	mod_workshop_add_submission
-3002	1	mod_workshop_update_submission
-3003	1	mod_workshop_delete_submission
-3004	1	mod_workshop_get_submissions
-3005	1	mod_workshop_get_submission
-3006	1	mod_workshop_get_submission_assessments
-3007	1	mod_workshop_get_assessment
-3008	1	mod_workshop_get_assessment_form_definition
-3009	1	mod_workshop_get_reviewer_assessments
-3010	1	mod_workshop_update_assessment
-3011	1	mod_workshop_get_grades
-3012	1	mod_workshop_evaluate_assessment
-3013	1	mod_workshop_get_grades_report
-3014	1	mod_workshop_view_submission
-3015	1	mod_workshop_evaluate_submission
-3016	1	enrol_guest_get_instance_info
-3017	1	enrol_self_get_instance_info
-3018	1	enrol_self_enrol_user
-3019	1	message_airnotifier_is_system_configured
-3020	1	message_airnotifier_are_notification_preferences_configured
-3021	1	message_airnotifier_get_user_devices
-3022	1	message_airnotifier_enable_device
-3023	1	message_popup_get_popup_notifications
-3024	1	message_popup_get_unread_popup_notification_count
-3025	1	block_recentlyaccesseditems_get_recent_items
-3026	1	block_starredcourses_get_starred_courses
-3027	1	report_insights_set_notuseful_prediction
-3028	1	report_insights_set_fixed_prediction
-3029	1	report_insights_action_executed
-3030	1	gradereport_overview_get_course_grades
-3031	1	gradereport_overview_view_grade_report
-3032	1	tool_analytics_potential_contexts
-3033	1	gradereport_user_view_grade_report
-3034	1	gradereport_user_get_grade_items
-3035	1	tool_lp_data_for_course_competencies_page
-3036	1	tool_lp_data_for_plans_page
-3037	1	tool_lp_data_for_plan_page
-3038	1	tool_lp_data_for_user_evidence_list_page
-3039	1	tool_lp_data_for_user_evidence_page
-3040	1	tool_lp_data_for_user_competency_summary
-3041	1	tool_lp_data_for_user_competency_summary_in_plan
-3042	1	tool_lp_data_for_user_competency_summary_in_course
-3043	1	tool_mobile_get_plugins_supporting_mobile
-3044	1	tool_mobile_get_public_config
-3045	1	tool_mobile_get_config
-3046	1	tool_mobile_get_autologin_key
-3047	1	tool_mobile_get_content
-3048	1	tool_mobile_call_external_functions
-3049	1	mod_choicegroup_get_choicegroup_options
-3050	1	mod_choicegroup_submit_choicegroup_response
-3051	1	mod_choicegroup_view_choicegroup
-3052	1	mod_choicegroup_delete_choicegroup_responses
-3053	1	mod_journal_get_entry
-3054	1	mod_journal_set_text
-3055	1	mod_questionnaire_submit_questionnaire_response
-3056	1	core_calendar_get_calendar_export_token
-3057	1	core_files_delete_draft_files
-3058	1	core_files_get_unused_draft_itemid
-3059	1	core_block_fetch_addable_blocks
-3060	1	core_table_get_dynamic_table_content
-3061	1	core_xapi_statement_post
-3062	1	mod_glossary_delete_entry
-3063	1	mod_glossary_update_entry
-3064	1	mod_glossary_prepare_entry_for_edition
-3065	1	mod_h5pactivity_get_h5pactivity_access_information
-3066	1	mod_h5pactivity_view_h5pactivity
-3067	1	mod_h5pactivity_get_attempts
-3068	1	mod_h5pactivity_get_results
-3069	1	mod_h5pactivity_get_h5pactivities_by_courses
-3070	1	mod_h5pactivity_log_report_viewed
-3071	1	mod_h5pactivity_get_user_attempts
-3072	1	tool_mobile_validate_subscription_key
-3073	1	tool_mobile_get_tokens_for_qr_login
-3074	1	tool_moodlenet_verify_webfinger
-3075	1	tool_moodlenet_search_courses
-3076	1	core_course_get_enrolled_courses_with_action_events_by_timeline_classification
-3077	1	core_grades_get_enrolled_users_for_search_widget
-3078	1	core_grades_get_groups_for_search_widget
-3079	1	core_message_get_unread_notification_count
-3080	1	core_user_update_user_device_public_key
-3081	1	core_reportbuilder_list_reports
-3082	1	core_reportbuilder_retrieve_report
-3083	1	core_reportbuilder_view_report
-3084	1	mod_assign_start_submission
-3085	1	mod_bigbluebuttonbn_can_join
-3086	1	mod_bigbluebuttonbn_get_recordings
-3087	1	mod_bigbluebuttonbn_get_recordings_to_import
-3088	1	mod_bigbluebuttonbn_update_recording
-3089	1	mod_bigbluebuttonbn_end_meeting
-3090	1	mod_bigbluebuttonbn_completion_validate
-3091	1	mod_bigbluebuttonbn_meeting_info
-3092	1	mod_bigbluebuttonbn_get_bigbluebuttonbns_by_courses
-3093	1	mod_bigbluebuttonbn_view_bigbluebuttonbn
-3094	1	mod_bigbluebuttonbn_get_join_url
-3095	1	gradereport_singleview_get_grade_items_for_search_widget
-3096	1	gradereport_user_get_grades_table
-3097	1	core_grades_get_gradable_users
+3098	1	core_badges_get_user_badges
+3099	1	core_blog_get_entries
+3100	1	core_blog_view_entries
+3101	1	core_calendar_get_calendar_monthly_view
+3102	1	core_calendar_get_calendar_day_view
+3103	1	core_calendar_get_calendar_upcoming_view
+3104	1	core_calendar_update_event_start_day
+3105	1	core_calendar_create_calendar_events
+3106	1	core_calendar_delete_calendar_events
+3107	1	core_calendar_get_calendar_events
+3108	1	core_calendar_get_action_events_by_timesort
+3109	1	core_calendar_get_action_events_by_course
+3110	1	core_calendar_get_action_events_by_courses
+3111	1	core_calendar_get_calendar_event_by_id
+3112	1	core_calendar_submit_create_update_form
+3113	1	core_calendar_get_calendar_access_information
+3114	1	core_calendar_get_allowed_event_types
+3115	1	core_comment_get_comments
+3116	1	core_comment_add_comments
+3117	1	core_comment_delete_comments
+3118	1	core_completion_get_activities_completion_status
+3119	1	core_completion_get_course_completion_status
+3120	1	core_completion_mark_course_self_completed
+3121	1	core_completion_update_activity_completion_status_manually
+3122	1	core_course_get_categories
+3123	1	core_course_get_contents
+3124	1	core_course_get_course_module
+3125	1	core_course_get_course_module_by_instance
+3126	1	core_course_get_courses
+3127	1	core_course_search_courses
+3128	1	core_course_view_course
+3129	1	core_course_get_user_navigation_options
+3130	1	core_course_get_user_administration_options
+3131	1	core_course_get_courses_by_field
+3132	1	core_course_check_updates
+3133	1	core_course_get_updates_since
+3134	1	core_course_get_enrolled_courses_by_timeline_classification
+3135	1	core_course_get_recent_courses
+3136	1	core_course_set_favourite_courses
+3137	1	core_enrol_get_course_enrolment_methods
+3138	1	core_enrol_get_enrolled_users
+3139	1	core_enrol_search_users
+3140	1	core_enrol_get_users_courses
+3141	1	core_files_get_files
+3142	1	core_get_component_strings
+3143	1	core_grades_grader_gradingpanel_point_fetch
+3144	1	core_grades_grader_gradingpanel_point_store
+3145	1	core_message_get_conversations
+3146	1	core_grades_grader_gradingpanel_scale_fetch
+3147	1	core_grades_grader_gradingpanel_scale_store
+3148	1	core_group_get_activity_allowed_groups
+3149	1	core_group_get_activity_groupmode
+3150	1	core_group_get_course_groupings
+3151	1	core_group_get_course_groups
+3152	1	core_group_get_course_user_groups
+3153	1	core_message_mute_conversations
+3154	1	core_message_unmute_conversations
+3155	1	core_message_block_user
+3156	1	core_message_get_contact_requests
+3157	1	core_message_create_contact_request
+3158	1	core_message_confirm_contact_request
+3159	1	core_message_decline_contact_request
+3160	1	core_message_get_received_contact_requests_count
+3161	1	core_message_delete_contacts
+3162	1	core_message_delete_conversations_by_id
+3163	1	core_message_delete_message
+3164	1	core_message_get_blocked_users
+3165	1	core_message_data_for_messagearea_search_messages
+3166	1	core_message_message_search_users
+3167	1	core_message_get_user_contacts
+3168	1	core_message_get_conversation
+3169	1	core_message_get_conversation_between_users
+3170	1	core_message_get_self_conversation
+3171	1	core_message_get_messages
+3172	1	core_message_get_conversation_counts
+3173	1	core_message_get_unread_conversation_counts
+3174	1	core_message_get_conversation_members
+3175	1	core_message_get_member_info
+3176	1	core_message_get_unread_conversations_count
+3177	1	core_message_mark_all_notifications_as_read
+3178	1	core_message_mark_all_conversation_messages_as_read
+3179	1	core_message_mark_message_read
+3180	1	core_message_mark_notification_read
+3181	1	core_message_message_processor_config_form
+3182	1	core_message_search_contacts
+3183	1	core_message_send_instant_messages
+3184	1	core_message_send_messages_to_conversation
+3185	1	core_message_get_conversation_messages
+3186	1	core_message_unblock_user
+3187	1	core_message_get_user_notification_preferences
+3188	1	core_message_get_user_message_preferences
+3189	1	core_message_set_favourite_conversations
+3190	1	core_message_unset_favourite_conversations
+3191	1	core_message_delete_message_for_all_users
+3192	1	core_notes_create_notes
+3193	1	core_notes_delete_notes
+3194	1	core_notes_get_course_notes
+3195	1	core_notes_view_notes
+3196	1	core_question_update_flag
+3197	1	core_rating_get_item_ratings
+3198	1	core_rating_add_rating
+3199	1	core_tag_get_tagindex
+3200	1	core_tag_get_tagindex_per_area
+3201	1	core_tag_get_tag_areas
+3202	1	core_tag_get_tag_collections
+3203	1	core_tag_get_tag_cloud
+3204	1	core_user_add_user_device
+3205	1	core_user_add_user_private_files
+3206	1	core_user_get_course_user_profiles
+3207	1	core_user_get_users_by_field
+3208	1	core_user_remove_user_device
+3209	1	core_user_update_user_preferences
+3210	1	core_user_view_user_list
+3211	1	core_user_view_user_profile
+3212	1	core_user_get_user_preferences
+3213	1	core_user_update_picture
+3214	1	core_user_set_user_preferences
+3215	1	core_user_agree_site_policy
+3216	1	core_user_get_private_files_info
+3217	1	core_competency_competency_viewed
+3218	1	core_competency_list_course_competencies
+3219	1	core_competency_get_scale_values
+3220	1	core_competency_user_competency_viewed
+3221	1	core_competency_user_competency_viewed_in_plan
+3222	1	core_competency_user_competency_viewed_in_course
+3223	1	core_competency_user_competency_plan_viewed
+3224	1	core_competency_grade_competency_in_course
+3225	1	core_competency_delete_evidence
+3226	1	core_webservice_get_site_info
+3227	1	core_block_get_course_blocks
+3228	1	core_block_get_dashboard_blocks
+3229	1	core_h5p_get_trusted_h5p_file
+3230	1	mod_assign_get_grades
+3231	1	mod_assign_get_assignments
+3232	1	mod_assign_get_submissions
+3233	1	mod_assign_get_user_flags
+3234	1	mod_assign_set_user_flags
+3235	1	mod_assign_get_user_mappings
+3236	1	mod_assign_revert_submissions_to_draft
+3237	1	mod_assign_lock_submissions
+3238	1	mod_assign_unlock_submissions
+3239	1	mod_assign_save_submission
+3240	1	mod_assign_submit_for_grading
+3241	1	mod_assign_save_grade
+3242	1	mod_assign_save_grades
+3243	1	mod_assign_save_user_extensions
+3244	1	mod_assign_reveal_identities
+3245	1	mod_assign_view_grading_table
+3246	1	mod_assign_view_submission_status
+3247	1	mod_assign_get_submission_status
+3248	1	mod_assign_list_participants
+3249	1	mod_assign_submit_grading_form
+3250	1	mod_assign_get_participant
+3251	1	mod_assign_view_assign
+3252	1	mod_book_view_book
+3253	1	mod_book_get_books_by_courses
+3254	1	mod_chat_login_user
+3255	1	mod_chat_get_chat_users
+3256	1	mod_chat_send_chat_message
+3257	1	mod_chat_get_chat_latest_messages
+3258	1	mod_chat_view_chat
+3259	1	mod_chat_get_chats_by_courses
+3260	1	mod_chat_get_sessions
+3261	1	mod_chat_get_session_messages
+3262	1	mod_choice_get_choice_results
+3263	1	mod_choice_get_choice_options
+3264	1	mod_choice_submit_choice_response
+3265	1	mod_choice_view_choice
+3266	1	mod_choice_get_choices_by_courses
+3267	1	mod_choice_delete_choice_responses
+3268	1	mod_data_get_databases_by_courses
+3269	1	mod_data_view_database
+3270	1	mod_data_get_data_access_information
+3271	1	mod_data_get_entries
+3272	1	mod_data_get_entry
+3273	1	mod_data_get_fields
+3274	1	mod_data_search_entries
+3275	1	mod_data_approve_entry
+3276	1	mod_data_delete_entry
+3277	1	mod_data_add_entry
+3278	1	mod_data_update_entry
+3279	1	mod_feedback_get_feedbacks_by_courses
+3280	1	mod_feedback_get_feedback_access_information
+3281	1	mod_feedback_view_feedback
+3282	1	mod_feedback_get_current_completed_tmp
+3283	1	mod_feedback_get_items
+3284	1	mod_feedback_launch_feedback
+3285	1	mod_feedback_get_page_items
+3286	1	mod_feedback_process_page
+3287	1	mod_feedback_get_analysis
+3288	1	mod_feedback_get_unfinished_responses
+3289	1	mod_feedback_get_finished_responses
+3290	1	mod_feedback_get_non_respondents
+3291	1	mod_feedback_get_responses_analysis
+3292	1	mod_feedback_get_last_completed
+3293	1	mod_folder_view_folder
+3294	1	mod_folder_get_folders_by_courses
+3295	1	mod_forum_get_forums_by_courses
+3296	1	mod_forum_get_discussion_posts
+3297	1	mod_forum_get_forum_discussions
+3298	1	mod_forum_view_forum
+3299	1	mod_forum_view_forum_discussion
+3300	1	mod_forum_add_discussion_post
+3301	1	mod_forum_add_discussion
+3302	1	mod_forum_can_add_discussion
+3303	1	mod_forum_get_forum_access_information
+3304	1	mod_forum_set_subscription_state
+3305	1	mod_forum_set_lock_state
+3306	1	mod_forum_toggle_favourite_state
+3307	1	mod_page_view_page
+3308	1	mod_forum_set_pin_state
+3309	1	mod_forum_delete_post
+3310	1	mod_forum_get_discussion_post
+3311	1	mod_forum_prepare_draft_area_for_post
+3312	1	mod_forum_update_discussion_post
+3313	1	mod_glossary_get_glossaries_by_courses
+3314	1	mod_glossary_view_glossary
+3315	1	mod_glossary_view_entry
+3316	1	mod_glossary_get_entries_by_letter
+3317	1	mod_glossary_get_entries_by_date
+3318	1	mod_glossary_get_categories
+3319	1	mod_glossary_get_entries_by_category
+3320	1	mod_glossary_get_authors
+3321	1	mod_glossary_get_entries_by_author
+3322	1	mod_glossary_get_entries_by_author_id
+3323	1	mod_glossary_get_entries_by_search
+3324	1	mod_glossary_get_entries_by_term
+3325	1	mod_glossary_get_entries_to_approve
+3326	1	mod_glossary_get_entry_by_id
+3327	1	mod_glossary_add_entry
+3328	1	mod_imscp_view_imscp
+3329	1	mod_imscp_get_imscps_by_courses
+3330	1	mod_label_get_labels_by_courses
+3331	1	mod_lesson_get_lessons_by_courses
+3332	1	mod_lesson_get_lesson_access_information
+3333	1	mod_lesson_view_lesson
+3334	1	mod_lesson_get_questions_attempts
+3335	1	mod_lesson_get_user_grade
+3336	1	mod_lesson_get_user_attempt_grade
+3337	1	mod_lesson_get_content_pages_viewed
+3338	1	mod_lesson_get_user_timers
+3339	1	mod_lesson_get_pages
+3340	1	mod_lesson_launch_attempt
+3341	1	mod_lesson_get_page_data
+3342	1	mod_lesson_process_page
+3343	1	mod_lesson_finish_attempt
+3344	1	mod_lesson_get_attempts_overview
+3345	1	mod_lesson_get_user_attempt
+3346	1	mod_lesson_get_pages_possible_jumps
+3347	1	mod_lesson_get_lesson
+3348	1	mod_lti_get_tool_launch_data
+3349	1	mod_lti_get_ltis_by_courses
+3350	1	mod_lti_view_lti
+3351	1	mod_page_get_pages_by_courses
+3352	1	mod_quiz_get_quizzes_by_courses
+3353	1	mod_quiz_view_quiz
+3354	1	mod_quiz_get_user_attempts
+3355	1	mod_quiz_get_user_best_grade
+3356	1	mod_quiz_get_combined_review_options
+3357	1	mod_quiz_start_attempt
+3358	1	mod_quiz_get_attempt_data
+3359	1	mod_quiz_get_attempt_summary
+3360	1	mod_quiz_save_attempt
+3361	1	mod_quiz_process_attempt
+3362	1	mod_quiz_get_attempt_review
+3363	1	mod_quiz_view_attempt
+3364	1	mod_quiz_view_attempt_summary
+3365	1	mod_quiz_view_attempt_review
+3366	1	mod_quiz_get_quiz_feedback_for_grade
+3367	1	mod_quiz_get_quiz_access_information
+3368	1	mod_quiz_get_attempt_access_information
+3369	1	mod_quiz_get_quiz_required_qtypes
+3370	1	mod_resource_view_resource
+3371	1	mod_resource_get_resources_by_courses
+3372	1	mod_scorm_view_scorm
+3373	1	mod_scorm_get_scorm_attempt_count
+3374	1	mod_scorm_get_scorm_scoes
+3375	1	mod_scorm_get_scorm_user_data
+3376	1	mod_scorm_insert_scorm_tracks
+3377	1	mod_scorm_get_scorm_sco_tracks
+3378	1	mod_scorm_get_scorms_by_courses
+3379	1	mod_scorm_launch_sco
+3380	1	mod_scorm_get_scorm_access_information
+3381	1	mod_survey_get_surveys_by_courses
+3382	1	mod_survey_view_survey
+3383	1	mod_survey_get_questions
+3384	1	mod_survey_submit_answers
+3385	1	mod_url_view_url
+3386	1	mod_url_get_urls_by_courses
+3387	1	mod_wiki_get_wikis_by_courses
+3388	1	mod_wiki_view_wiki
+3389	1	mod_wiki_view_page
+3390	1	mod_wiki_get_subwikis
+3391	1	mod_wiki_get_subwiki_pages
+3392	1	mod_wiki_get_subwiki_files
+3393	1	mod_wiki_get_page_contents
+3394	1	mod_wiki_get_page_for_editing
+3395	1	mod_wiki_new_page
+3396	1	mod_wiki_edit_page
+3397	1	mod_workshop_get_workshops_by_courses
+3398	1	mod_workshop_get_workshop_access_information
+3399	1	mod_workshop_get_user_plan
+3400	1	mod_workshop_view_workshop
+3401	1	mod_workshop_add_submission
+3402	1	mod_workshop_update_submission
+3403	1	mod_workshop_delete_submission
+3404	1	mod_workshop_get_submissions
+3405	1	mod_workshop_get_submission
+3406	1	mod_workshop_get_submission_assessments
+3407	1	mod_workshop_get_assessment
+3408	1	mod_workshop_get_assessment_form_definition
+3409	1	mod_workshop_get_reviewer_assessments
+3410	1	mod_workshop_update_assessment
+3411	1	mod_workshop_get_grades
+3412	1	mod_workshop_evaluate_assessment
+3413	1	mod_workshop_get_grades_report
+3414	1	mod_workshop_view_submission
+3415	1	mod_workshop_evaluate_submission
+3416	1	enrol_guest_get_instance_info
+3417	1	enrol_self_get_instance_info
+3418	1	enrol_self_enrol_user
+3419	1	message_airnotifier_is_system_configured
+3420	1	message_airnotifier_are_notification_preferences_configured
+3421	1	message_airnotifier_get_user_devices
+3422	1	message_airnotifier_enable_device
+3423	1	message_popup_get_popup_notifications
+3424	1	message_popup_get_unread_popup_notification_count
+3425	1	block_recentlyaccesseditems_get_recent_items
+3426	1	block_starredcourses_get_starred_courses
+3427	1	report_insights_set_notuseful_prediction
+3428	1	report_insights_set_fixed_prediction
+3429	1	report_insights_action_executed
+3430	1	gradereport_overview_get_course_grades
+3431	1	gradereport_overview_view_grade_report
+3432	1	tool_analytics_potential_contexts
+3433	1	gradereport_user_view_grade_report
+3434	1	gradereport_user_get_grade_items
+3435	1	tool_lp_data_for_course_competencies_page
+3436	1	tool_dataprivacy_contact_dpo
+3437	1	tool_lp_data_for_plans_page
+3438	1	tool_lp_data_for_plan_page
+3439	1	tool_lp_data_for_user_evidence_list_page
+3440	1	tool_lp_data_for_user_evidence_page
+3441	1	tool_lp_data_for_user_competency_summary
+3442	1	tool_lp_data_for_user_competency_summary_in_plan
+3443	1	tool_lp_data_for_user_competency_summary_in_course
+3444	1	tool_mobile_get_plugins_supporting_mobile
+3445	1	tool_mobile_get_public_config
+3446	1	tool_mobile_get_config
+3447	1	tool_mobile_get_autologin_key
+3448	1	tool_mobile_get_content
+3449	1	tool_mobile_call_external_functions
+3450	1	mod_choicegroup_get_choicegroup_options
+3451	1	mod_choicegroup_submit_choicegroup_response
+3452	1	mod_choicegroup_view_choicegroup
+3453	1	mod_choicegroup_delete_choicegroup_responses
+3454	1	mod_journal_get_entry
+3455	1	mod_journal_set_text
+3456	1	core_calendar_get_calendar_export_token
+3457	1	core_files_delete_draft_files
+3458	1	core_files_get_unused_draft_itemid
+3459	1	core_block_fetch_addable_blocks
+3460	1	core_table_get_dynamic_table_content
+3461	1	core_xapi_statement_post
+3462	1	mod_glossary_delete_entry
+3463	1	mod_glossary_update_entry
+3464	1	mod_glossary_prepare_entry_for_edition
+3465	1	mod_h5pactivity_get_h5pactivity_access_information
+3466	1	mod_h5pactivity_view_h5pactivity
+3467	1	mod_h5pactivity_get_attempts
+3468	1	mod_h5pactivity_get_results
+3469	1	mod_h5pactivity_get_h5pactivities_by_courses
+3470	1	mod_h5pactivity_log_report_viewed
+3471	1	mod_h5pactivity_get_user_attempts
+3472	1	tool_mobile_validate_subscription_key
+3473	1	tool_mobile_get_tokens_for_qr_login
+3474	1	tool_moodlenet_verify_webfinger
+3475	1	tool_moodlenet_search_courses
+3476	1	core_course_get_enrolled_courses_with_action_events_by_timeline_classification
+3477	1	core_grades_get_enrolled_users_for_search_widget
+3478	1	core_message_get_unread_notification_count
+3479	1	core_user_update_user_device_public_key
+3480	1	core_reportbuilder_list_reports
+3481	1	core_reportbuilder_retrieve_report
+3482	1	core_reportbuilder_view_report
+3483	1	mod_assign_start_submission
+3484	1	mod_bigbluebuttonbn_can_join
+3485	1	mod_bigbluebuttonbn_get_recordings
+3486	1	mod_bigbluebuttonbn_get_recordings_to_import
+3487	1	mod_bigbluebuttonbn_update_recording
+3488	1	mod_bigbluebuttonbn_end_meeting
+3489	1	mod_bigbluebuttonbn_completion_validate
+3490	1	mod_bigbluebuttonbn_meeting_info
+3491	1	mod_bigbluebuttonbn_get_bigbluebuttonbns_by_courses
+3492	1	mod_bigbluebuttonbn_view_bigbluebuttonbn
+3493	1	mod_bigbluebuttonbn_get_join_url
+3494	1	gradereport_singleview_get_grade_items_for_search_widget
+3495	1	gradereport_user_get_grades_table
+3496	1	core_grades_get_gradable_users
+3497	1	core_filters_get_available_in_context
+3498	1	core_grades_get_groups_for_search_widget
+3499	1	core_badges_get_badge
+3500	1	core_badges_get_user_badge_by_hash
+3501	1	core_blog_get_access_information
+3502	1	core_blog_add_entry
+3503	1	core_blog_delete_entry
+3504	1	core_blog_prepare_entry_for_edition
+3505	1	core_blog_update_entry
+3506	1	core_grades_get_enrolled_users_for_selector
+3507	1	core_grades_get_groups_for_selector
+3508	1	core_grades_get_gradeitems
+3509	1	core_group_get_groups_for_selector
+3510	1	core_my_view_page
+3511	1	core_search_get_results
+3512	1	core_search_get_search_areas_list
+3513	1	core_search_view_results
+3514	1	core_search_get_top_results
+3515	1	core_user_prepare_private_files_for_edition
+3516	1	core_user_update_private_files
+3517	1	core_filters_get_all_states
+3518	1	core_xapi_post_state
+3519	1	core_xapi_get_state
+3520	1	core_xapi_get_states
+3521	1	core_xapi_delete_state
+3522	1	core_xapi_delete_states
+3523	1	core_reportbuilder_retrieve_system_report
+3524	1	core_reportbuilder_can_view_system_report
+3525	1	core_ai_set_policy_status
+3526	1	core_ai_get_policy_status
+3527	1	aiplacement_courseassist_summarise_text
+3528	1	aiplacement_editor_generate_image
+3529	1	aiplacement_editor_generate_text
+3530	1	qtype_coderunner_run_in_sandbox
+3531	1	mod_assign_remove_submission
+3532	1	mod_chat_view_sessions
+3533	1	mod_questionnaire_submit_questionnaire_response
+3534	1	enrol_guest_validate_password
+3535	1	gradereport_grader_get_users_in_report
+3536	1	gradereport_user_get_access_information
+3537	1	tool_dataprivacy_cancel_data_request
+3538	1	tool_dataprivacy_get_access_information
+3539	1	tool_dataprivacy_create_data_request
+3540	1	tool_dataprivacy_get_data_requests
+3541	1	tool_policy_get_user_acceptances
+3542	1	tool_policy_set_acceptances_status
 \.
 
 
@@ -36743,7 +39977,7 @@ COPY public.m2external_services_users (id, externalserviceid, userid, iprestrict
 -- Data for Name: m2external_tokens; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2external_tokens (id, token, privatetoken, tokentype, userid, externalserviceid, sid, contextid, creatorid, iprestriction, validuntil, timecreated, lastaccess) FROM stdin;
+COPY public.m2external_tokens (id, token, privatetoken, tokentype, userid, externalserviceid, sid, contextid, creatorid, iprestriction, validuntil, timecreated, lastaccess, name) FROM stdin;
 \.
 
 
@@ -36837,6 +40071,9 @@ COPY public.m2files (id, contenthash, pathnamehash, contextid, component, filear
 3	75c101cb8cb34ea573cd25ac38f8157b1de901b8	68317eab56c67d32aeaee5acf509a0c4aa828b6b	1	assignfeedback_editpdf	stamps	0	/	sad.png	2	966	image/png	0	\N	\N	\N	1603909089	1603909089	0	\N
 4	0c5190a24c3943966541401c883eacaa20ca20cb	695a55ff780e61c9e59428aa425430b0d6bde53b	1	assignfeedback_editpdf	stamps	0	/	tick.png	2	1039	image/png	0	\N	\N	\N	1603909089	1603909089	0	\N
 5	8c96a486d5801e0f4ab8c411f561f1c687e1f865	373e63af262a9b8466ba8632551520be793c37ff	1	assignfeedback_editpdf	stamps	0	/	cross.png	2	861	image/png	0	\N	\N	\N	1603909089	1603909089	0	\N
+6	a10af34f5fbd40d869d187b18f084db415be1a0e	da4ef0647b926d5680110256f26c06ae2f04c9b2	1	format_tiles	tilephoto	0	/tilephoto/	sample_image.jpg	\N	29231	image/jpeg	0	\N	\N	\N	1768247133	1768247133	0	\N
+7	da39a3ee5e6b4b0d3255bfef95601890afd80709	caa86574a36b345298975c39542cf5e5bbfa9f7d	1	format_tiles	tilephoto	0	/tilephoto/	.	\N	0	\N	0	\N	\N	\N	1768247133	1768247133	0	\N
+8	da39a3ee5e6b4b0d3255bfef95601890afd80709	7fd6d58ef4056524ea92eacb4f03d8cbf76dec34	1	format_tiles	tilephoto	0	/	.	\N	0	\N	0	\N	\N	\N	1768247133	1768247133	0	\N
 \.
 
 
@@ -36881,6 +40118,14 @@ COPY public.m2filter_wiris_formulas (id, md5, content, jsoncontent, alt, timecre
 --
 
 COPY public.m2folder (id, course, name, intro, introformat, revision, timemodified, display, showexpanded, showdownloadfolder, forcedownload) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2format_tiles_tile_options; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2format_tiles_tile_options (id, courseid, optiontype, elementid, optionvalue) FROM stdin;
 \.
 
 
@@ -37231,7 +40476,7 @@ COPY public.m2groupings_groups (id, groupingid, groupid, timeadded) FROM stdin;
 -- Data for Name: m2groups; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2groups (id, courseid, idnumber, name, description, descriptionformat, enrolmentkey, picture, timecreated, timemodified) FROM stdin;
+COPY public.m2groups (id, courseid, idnumber, name, description, descriptionformat, enrolmentkey, picture, timecreated, timemodified, visibility, participation) FROM stdin;
 \.
 
 
@@ -37786,11 +41031,6 @@ COPY public.m2log_display (id, module, action, mtable, field, component) FROM st
 50	assign	view submit assignment form	assign	name	mod_assign
 51	assign	view feedback	assign	name	mod_assign
 52	assign	view batch set marking workflow state	assign	name	mod_assign
-53	assignment	view	assignment	name	mod_assignment
-54	assignment	add	assignment	name	mod_assignment
-55	assignment	update	assignment	name	mod_assignment
-56	assignment	view submission	assignment	name	mod_assignment
-57	assignment	upload	assignment	name	mod_assignment
 58	book	add	book	name	mod_book
 59	book	update	book	name	mod_book
 60	book	view	book	name	mod_book
@@ -38013,6 +41253,7 @@ COPY public.m2logstore_standard_log (id, eventname, component, action, target, o
 1970	\\core\\event\\config_log_created	core	created	config_log	config_log	2093	c	0	1	10	0	2	0	\N	0	{"name":"field_map_schoolcode","oldvalue":null,"value":"","plugin":"auth_cas"}	1680524492	web	192.168.33.1	\N
 1971	\\core\\event\\config_log_created	core	created	config_log	config_log	2094	c	0	1	10	0	2	0	\N	0	{"name":"field_updatelocal_schoolcode","oldvalue":null,"value":"oncreate","plugin":"auth_cas"}	1680524492	web	192.168.33.1	\N
 1972	\\core\\event\\config_log_created	core	created	config_log	config_log	2095	c	0	1	10	0	2	0	\N	0	{"name":"field_updateremote_schoolcode","oldvalue":null,"value":"0","plugin":"auth_cas"}	1680524492	web	192.168.33.1	\N
+3085	\\core\\event\\course_viewed	core	viewed	course	\N	\N	r	2	2	50	1	0	1	\N	0	null	1768247821	web	192.168.56.1	\N
 1973	\\core\\event\\config_log_created	core	created	config_log	config_log	2096	c	0	1	10	0	2	0	\N	0	{"name":"field_lock_schoolcode","oldvalue":null,"value":"unlocked","plugin":"auth_cas"}	1680524492	web	192.168.33.1	\N
 1974	\\core\\event\\config_log_created	core	created	config_log	config_log	2097	c	0	1	10	0	2	0	\N	0	{"name":"field_map_profile_field_schoolcode","oldvalue":null,"value":"","plugin":"auth_cas"}	1680524492	web	192.168.33.1	\N
 1975	\\core\\event\\config_log_created	core	created	config_log	config_log	2098	c	0	1	10	0	2	0	\N	0	{"name":"field_updatelocal_profile_field_schoolcode","oldvalue":null,"value":"oncreate","plugin":"auth_cas"}	1680524492	web	192.168.33.1	\N
@@ -38184,6 +41425,951 @@ COPY public.m2logstore_standard_log (id, eventname, component, action, target, o
 2144	\\core\\event\\notification_sent	core	sent	notification	notifications	1	c	0	1	10	0	0	0	2	0	{"courseid":"1"}	1710942995	cli	192.168.56.1	\N
 2145	\\core\\event\\user_loggedout	core	loggedout	user	user	2	r	0	1	10	0	2	0	\N	0	{"sessionid":"lse22gceomvit2vke9afejmnhm"}	1710943040	web	192.168.56.1	\N
 2146	\\core\\event\\course_viewed	core	viewed	course	\N	\N	r	2	2	50	1	0	1	\N	0	null	1710943040	web	192.168.56.1	\N
+2147	\\core\\event\\capability_unassigned	core	unassigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/assignment:view"}	1768247112	cli	\N	\N
+2148	\\core\\event\\capability_unassigned	core	unassigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/assignment:view"}	1768247112	cli	\N	\N
+2149	\\core\\event\\capability_unassigned	core	unassigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/assignment:view"}	1768247112	cli	\N	\N
+2150	\\core\\event\\capability_unassigned	core	unassigned	capability	role_capabilities	5	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/assignment:view"}	1768247112	cli	\N	\N
+2151	\\core\\event\\capability_unassigned	core	unassigned	capability	role_capabilities	6	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/assignment:view"}	1768247112	cli	\N	\N
+2152	\\core\\event\\capability_unassigned	core	unassigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/assignment:addinstance"}	1768247112	cli	\N	\N
+2153	\\core\\event\\capability_unassigned	core	unassigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/assignment:addinstance"}	1768247112	cli	\N	\N
+2154	\\core\\event\\capability_unassigned	core	unassigned	capability	role_capabilities	5	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/assignment:submit"}	1768247112	cli	\N	\N
+2155	\\core\\event\\capability_unassigned	core	unassigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/assignment:grade"}	1768247112	cli	\N	\N
+2156	\\core\\event\\capability_unassigned	core	unassigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/assignment:grade"}	1768247112	cli	\N	\N
+2157	\\core\\event\\capability_unassigned	core	unassigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/assignment:grade"}	1768247113	cli	\N	\N
+2158	\\core\\event\\capability_unassigned	core	unassigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/assignment:exportownsubmission"}	1768247113	cli	\N	\N
+2159	\\core\\event\\capability_unassigned	core	unassigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/assignment:exportownsubmission"}	1768247113	cli	\N	\N
+2160	\\core\\event\\capability_unassigned	core	unassigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/assignment:exportownsubmission"}	1768247113	cli	\N	\N
+2161	\\core\\event\\capability_unassigned	core	unassigned	capability	role_capabilities	5	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/assignment:exportownsubmission"}	1768247113	cli	\N	\N
+2162	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	6	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/user:viewprofilepictures","oldpermission":0,"permission":1}	1768247116	cli	\N	\N
+2163	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/user:viewprofilepictures","oldpermission":0,"permission":1}	1768247116	cli	\N	\N
+2164	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/course:viewhiddengroups","oldpermission":0,"permission":1}	1768247116	cli	\N	\N
+2165	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/course:viewhiddengroups","oldpermission":0,"permission":1}	1768247116	cli	\N	\N
+2166	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/course:viewhiddengroups","oldpermission":0,"permission":1}	1768247116	cli	\N	\N
+2167	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:copyanycontent","oldpermission":0,"permission":1}	1768247116	cli	\N	\N
+2168	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	2	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:copyanycontent","oldpermission":0,"permission":1}	1768247116	cli	\N	\N
+2169	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:copycontent","oldpermission":0,"permission":1}	1768247116	cli	\N	\N
+2170	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	2	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:copycontent","oldpermission":0,"permission":1}	1768247116	cli	\N	\N
+2200	\\core\\event\\question_created	core	created	question	question	4	c	1	1	10	0	0	0	\N	0	{"categoryid":"2"}	1768247118	cli	\N	\N
+2171	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:copycontent","oldpermission":0,"permission":1}	1768247116	cli	\N	\N
+2172	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:configurecustomfields","oldpermission":0,"permission":1}	1768247116	cli	\N	\N
+2173	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:changelockedcustomfields","oldpermission":0,"permission":1}	1768247116	cli	\N	\N
+2174	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/moodlenet:shareactivity","oldpermission":0,"permission":1}	1768247116	cli	\N	\N
+2175	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/moodlenet:shareactivity","oldpermission":0,"permission":1}	1768247116	cli	\N	\N
+2176	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/course:configurecoursecommunication","oldpermission":0,"permission":1}	1768247116	cli	\N	\N
+2177	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/course:configurecoursecommunication","oldpermission":0,"permission":1}	1768247116	cli	\N	\N
+2178	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/moodlenet:sharecourse","oldpermission":0,"permission":1}	1768247116	cli	\N	\N
+2179	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/moodlenet:sharecourse","oldpermission":0,"permission":1}	1768247116	cli	\N	\N
+2180	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/course:editcoursewelcomemessage","oldpermission":0,"permission":1}	1768247116	cli	\N	\N
+2181	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/course:editcoursewelcomemessage","oldpermission":0,"permission":1}	1768247116	cli	\N	\N
+2182	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/ai:fetchanyuserpolicystatus","oldpermission":0,"permission":1}	1768247116	cli	\N	\N
+2183	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/ai:acceptpolicy","oldpermission":0,"permission":1}	1768247116	cli	\N	\N
+2184	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/ai:fetchpolicy","oldpermission":0,"permission":1}	1768247116	cli	\N	\N
+2185	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"aiplacement\\/courseassist:summarise_text","oldpermission":0,"permission":1}	1768247116	cli	\N	\N
+2186	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"aiplacement\\/courseassist:summarise_text","oldpermission":0,"permission":1}	1768247117	cli	\N	\N
+2187	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"aiplacement\\/courseassist:summarise_text","oldpermission":0,"permission":1}	1768247117	cli	\N	\N
+2188	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	5	u	0	1	10	0	0	0	\N	0	{"capability":"aiplacement\\/courseassist:summarise_text","oldpermission":0,"permission":1}	1768247117	cli	\N	\N
+2189	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"aiplacement\\/editor:generate_image","oldpermission":0,"permission":1}	1768247117	cli	\N	\N
+2190	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"aiplacement\\/editor:generate_image","oldpermission":0,"permission":1}	1768247117	cli	\N	\N
+2191	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"aiplacement\\/editor:generate_image","oldpermission":0,"permission":1}	1768247117	cli	\N	\N
+2192	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	5	u	0	1	10	0	0	0	\N	0	{"capability":"aiplacement\\/editor:generate_image","oldpermission":0,"permission":1}	1768247117	cli	\N	\N
+2193	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"aiplacement\\/editor:generate_text","oldpermission":0,"permission":1}	1768247117	cli	\N	\N
+2194	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"aiplacement\\/editor:generate_text","oldpermission":0,"permission":1}	1768247117	cli	\N	\N
+2195	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"aiplacement\\/editor:generate_text","oldpermission":0,"permission":1}	1768247117	cli	\N	\N
+2196	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	5	u	0	1	10	0	0	0	\N	0	{"capability":"aiplacement\\/editor:generate_text","oldpermission":0,"permission":1}	1768247117	cli	\N	\N
+2197	\\core\\event\\question_created	core	created	question	question	1	c	1	1	10	0	0	0	\N	0	{"categoryid":"2"}	1768247118	cli	\N	\N
+2198	\\core\\event\\question_created	core	created	question	question	2	c	1	1	10	0	0	0	\N	0	{"categoryid":"2"}	1768247118	cli	\N	\N
+2199	\\core\\event\\question_created	core	created	question	question	3	c	1	1	10	0	0	0	\N	0	{"categoryid":"2"}	1768247118	cli	\N	\N
+2201	\\core\\event\\question_created	core	created	question	question	5	c	1	1	10	0	0	0	\N	0	{"categoryid":"2"}	1768247118	cli	\N	\N
+2202	\\core\\event\\question_created	core	created	question	question	6	c	1	1	10	0	0	0	\N	0	{"categoryid":"2"}	1768247118	cli	\N	\N
+2203	\\core\\event\\question_created	core	created	question	question	7	c	1	1	10	0	0	0	\N	0	{"categoryid":"2"}	1768247118	cli	\N	\N
+2204	\\core\\event\\question_created	core	created	question	question	8	c	1	1	10	0	0	0	\N	0	{"categoryid":"2"}	1768247118	cli	\N	\N
+2205	\\core\\event\\question_created	core	created	question	question	9	c	1	1	10	0	0	0	\N	0	{"categoryid":"2"}	1768247118	cli	\N	\N
+2206	\\core\\event\\question_created	core	created	question	question	10	c	1	1	10	0	0	0	\N	0	{"categoryid":"2"}	1768247118	cli	\N	\N
+2207	\\core\\event\\question_created	core	created	question	question	11	c	1	1	10	0	0	0	\N	0	{"categoryid":"2"}	1768247118	cli	\N	\N
+2208	\\core\\event\\question_created	core	created	question	question	12	c	1	1	10	0	0	0	\N	0	{"categoryid":"2"}	1768247118	cli	\N	\N
+2209	\\core\\event\\question_created	core	created	question	question	13	c	1	1	10	0	0	0	\N	0	{"categoryid":"2"}	1768247118	cli	\N	\N
+2210	\\core\\event\\question_created	core	created	question	question	14	c	1	1	10	0	0	0	\N	0	{"categoryid":"2"}	1768247118	cli	\N	\N
+2211	\\core\\event\\question_created	core	created	question	question	15	c	1	1	10	0	0	0	\N	0	{"categoryid":"2"}	1768247118	cli	\N	\N
+2212	\\core\\event\\question_created	core	created	question	question	16	c	1	1	10	0	0	0	\N	0	{"categoryid":"2"}	1768247118	cli	\N	\N
+2213	\\core\\event\\question_created	core	created	question	question	17	c	1	1	10	0	0	0	\N	0	{"categoryid":"2"}	1768247118	cli	\N	\N
+2214	\\core\\event\\question_created	core	created	question	question	18	c	1	1	10	0	0	0	\N	0	{"categoryid":"2"}	1768247119	cli	\N	\N
+2215	\\core\\event\\question_created	core	created	question	question	19	c	1	1	10	0	0	0	\N	0	{"categoryid":"2"}	1768247119	cli	\N	\N
+2216	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"qtype\\/coderunner:viewhiddentestcases","oldpermission":0,"permission":"1"}	1768247119	cli	\N	\N
+2217	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"qtype\\/coderunner:viewhiddentestcases","oldpermission":0,"permission":"1"}	1768247119	cli	\N	\N
+2218	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"qtype\\/coderunner:viewhiddentestcases","oldpermission":0,"permission":"1"}	1768247119	cli	\N	\N
+2219	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	5	u	0	1	10	0	0	0	\N	0	{"capability":"qtype\\/coderunner:sandboxwsaccess","oldpermission":0,"permission":1}	1768247119	cli	\N	\N
+2220	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"qtype\\/coderunner:sandboxwsaccess","oldpermission":0,"permission":1}	1768247119	cli	\N	\N
+2221	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"qtype\\/coderunner:sandboxwsaccess","oldpermission":0,"permission":1}	1768247119	cli	\N	\N
+2222	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"qtype\\/coderunner:sandboxwsaccess","oldpermission":0,"permission":1}	1768247119	cli	\N	\N
+2223	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/bigbluebuttonbn:viewallrecordingformats","oldpermission":0,"permission":1}	1768247121	cli	\N	\N
+2224	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/bigbluebuttonbn:viewallrecordingformats","oldpermission":0,"permission":1}	1768247121	cli	\N	\N
+2225	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/bigbluebuttonbn:seepresentation","oldpermission":0,"permission":1}	1768247121	cli	\N	\N
+2226	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/bigbluebuttonbn:seepresentation","oldpermission":0,"permission":1}	1768247121	cli	\N	\N
+2227	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/bigbluebuttonbn:seepresentation","oldpermission":0,"permission":1}	1768247121	cli	\N	\N
+2228	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	5	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/forum:canmailnow","oldpermission":0,"permission":1}	1768247122	cli	\N	\N
+2229	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/forum:canmailnow","oldpermission":0,"permission":1}	1768247122	cli	\N	\N
+2230	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/forum:canmailnow","oldpermission":0,"permission":1}	1768247122	cli	\N	\N
+2231	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/forum:canmailnow","oldpermission":0,"permission":1}	1768247122	cli	\N	\N
+2232	\\core\\event\\capability_unassigned	core	unassigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/lti:addmanualinstance"}	1768247123	cli	\N	\N
+2233	\\core\\event\\capability_unassigned	core	unassigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/lti:addmanualinstance"}	1768247123	cli	\N	\N
+2234	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/quiz:reopenattempts","oldpermission":0,"permission":1}	1768247124	cli	\N	\N
+2235	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/quiz:reopenattempts","oldpermission":0,"permission":1}	1768247124	cli	\N	\N
+2236	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/subsection:addinstance","oldpermission":0,"permission":"1"}	1768247124	cli	\N	\N
+2237	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/subsection:addinstance","oldpermission":0,"permission":"1"}	1768247124	cli	\N	\N
+2238	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"communication\\/matrix:moderator","oldpermission":0,"permission":1}	1768247125	cli	\N	\N
+2239	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"communication\\/matrix:moderator","oldpermission":0,"permission":1}	1768247126	cli	\N	\N
+2240	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"communication\\/matrix:moderator","oldpermission":0,"permission":1}	1768247126	cli	\N	\N
+2241	\\core\\event\\capability_unassigned	core	unassigned	capability	role_capabilities	2	u	0	1	10	0	0	0	\N	0	{"capability":"block\\/completion_progress:overview"}	1768247128	cli	\N	\N
+2242	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"block\\/grade_me:myaddinstance","oldpermission":0,"permission":"1"}	1768247129	cli	\N	\N
+2243	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"block\\/grade_me:addinstance","oldpermission":0,"permission":"1"}	1768247129	cli	\N	\N
+2244	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"block\\/grade_me:addinstance","oldpermission":0,"permission":"1"}	1768247129	cli	\N	\N
+2245	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"report\\/questionbankoverview:view","oldpermission":0,"permission":"1"}	1768247136	cli	\N	\N
+2246	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"report\\/questionbankoverview:view","oldpermission":0,"permission":"1"}	1768247136	cli	\N	\N
+2247	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"report\\/questionbankoverview:view","oldpermission":0,"permission":"1"}	1768247136	cli	\N	\N
+2248	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"qbank\\/purgecategory:purgecategory","oldpermission":0,"permission":1}	1768247141	cli	\N	\N
+2249	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"qbank\\/purgecategory:purgecategory","oldpermission":0,"permission":1}	1768247141	cli	\N	\N
+2250	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"tool\\/mfa:mfaaccess","oldpermission":0,"permission":1}	1768247146	cli	\N	\N
+2251	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"tool\\/uploadcourse:use","oldpermission":0,"permission":1}	1768247147	cli	\N	\N
+2252	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewhintcourseguestenrol","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2253	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewhintcourseguestenrol","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2254	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewhintcourseguestenrol","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2255	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewhintcourseselfenrol","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2256	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewhintcourseselfenrol","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2257	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewhintcourseselfenrol","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2258	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewhintinhiddencourse","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2259	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewhintinhiddencourse","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2260	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewhintinhiddencourse","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2261	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionheader","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2262	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionheader","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2263	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionheader","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2264	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionheader","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2265	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionheader","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2266	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionheader","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2267	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionheader","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2268	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoutsideleft","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2269	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoutsideleft","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2270	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoutsideleft","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2271	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoutsideleft","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2272	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionoutsideleft","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2273	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionoutsideleft","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2274	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionoutsideleft","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2275	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoutsideright","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2276	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoutsideright","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2277	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoutsideright","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2278	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoutsideright","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2279	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionoutsideright","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2280	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionoutsideright","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2281	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionoutsideright","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2282	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoutsidetop","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2283	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoutsidetop","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2284	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoutsidetop","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2285	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoutsidetop","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2286	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionoutsidetop","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2287	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionoutsidetop","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2288	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionoutsidetop","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2289	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoutsidebottom","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2290	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoutsidebottom","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2291	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoutsidebottom","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2292	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoutsidebottom","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2293	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionoutsidebottom","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2294	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionoutsidebottom","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2295	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionoutsidebottom","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2296	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregioncontentupper","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2297	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregioncontentupper","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2298	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregioncontentupper","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2299	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregioncontentupper","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2300	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregioncontentupper","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2301	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregioncontentupper","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2302	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregioncontentupper","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2303	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregioncontentlower","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2304	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregioncontentlower","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2305	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregioncontentlower","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2306	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregioncontentlower","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2307	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregioncontentlower","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2308	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregioncontentlower","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2309	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregioncontentlower","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2310	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionfooterleft","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2311	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionfooterleft","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2312	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionfooterleft","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2313	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionfooterleft","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2314	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionfooterleft","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2315	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionfooterleft","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2316	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionfooterleft","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+3086	\\core\\event\\user_password_updated	core	updated	user_password	\N	\N	u	0	5	30	2	0	0	2	0	{"forgottenreset":false}	1768247836	web	192.168.56.1	\N
+2317	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionfooterright","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2318	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionfooterright","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2319	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionfooterright","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2320	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionfooterright","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2321	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionfooterright","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2322	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionfooterright","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2323	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionfooterright","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2324	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionfootercenter","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2325	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionfootercenter","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2326	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionfootercenter","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2327	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionfootercenter","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2328	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionfootercenter","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2329	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionfootercenter","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2330	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionfootercenter","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2331	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoffcanvasleft","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2332	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoffcanvasleft","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2333	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoffcanvasleft","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2334	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoffcanvasleft","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2335	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionoffcanvasleft","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2336	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionoffcanvasleft","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2337	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionoffcanvasleft","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2338	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoffcanvasright","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2339	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoffcanvasright","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2340	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoffcanvasright","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2341	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoffcanvasright","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2342	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionoffcanvasright","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2343	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionoffcanvasright","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+3087	\\core\\event\\user_password_updated	core	updated	user_password	\N	\N	u	0	5	30	2	0	0	2	0	{"forgottenreset":false}	1768247836	web	192.168.56.1	\N
+2344	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionoffcanvasright","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2345	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoffcanvascenter","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2346	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoffcanvascenter","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2347	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoffcanvascenter","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2348	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:viewregionoffcanvascenter","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2349	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionoffcanvascenter","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2350	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionoffcanvascenter","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2351	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"theme\\/boost_union:editregionoffcanvascenter","oldpermission":0,"permission":1}	1768247149	cli	\N	\N
+2352	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_configuremanually","oldpermission":0,"permission":"1"}	1768247153	cli	\N	\N
+2353	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_configuremanually","oldpermission":0,"permission":"1"}	1768247153	cli	\N	\N
+2354	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_usesebclientconfig","oldpermission":0,"permission":"1"}	1768247153	cli	\N	\N
+2355	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_usesebclientconfig","oldpermission":0,"permission":"1"}	1768247153	cli	\N	\N
+2356	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_allowcapturecamera","oldpermission":0,"permission":1}	1768247153	cli	\N	\N
+2357	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_allowcapturecamera","oldpermission":0,"permission":1}	1768247153	cli	\N	\N
+2358	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_allowcapturemicrophone","oldpermission":0,"permission":1}	1768247153	cli	\N	\N
+2359	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_allowcapturemicrophone","oldpermission":0,"permission":1}	1768247153	cli	\N	\N
+2360	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"tiny\\/c4l:use","oldpermission":0,"permission":1}	1768247157	cli	\N	\N
+2361	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	5	u	0	1	10	0	0	0	\N	0	{"capability":"tiny\\/c4l:viewplugin","oldpermission":0,"permission":1}	1768247157	cli	\N	\N
+2362	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"tiny\\/c4l:viewplugin","oldpermission":0,"permission":1}	1768247157	cli	\N	\N
+2363	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"tiny\\/c4l:viewplugin","oldpermission":0,"permission":1}	1768247157	cli	\N	\N
+2364	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"tiny\\/c4l:viewplugin","oldpermission":0,"permission":1}	1768247157	cli	\N	\N
+2365	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"tiny\\/cloze:use","oldpermission":0,"permission":1}	1768247158	cli	\N	\N
+2366	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"tiny\\/fontcolor:use","oldpermission":0,"permission":1}	1768247158	cli	\N	\N
+2367	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"tiny\\/fontfamily:use","oldpermission":0,"permission":1}	1768247158	cli	\N	\N
+2368	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"tiny\\/fontsize:use","oldpermission":0,"permission":1}	1768247158	cli	\N	\N
+2369	\\core\\event\\config_log_created	core	created	config_log	config_log	2214	c	0	1	10	0	0	0	\N	0	{"name":"disabled","oldvalue":false,"value":true,"plugin":"tiny_noautolink"}	1768247158	cli	\N	\N
+2370	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"tiny\\/premium:accesspremium","oldpermission":0,"permission":1}	1768247158	cli	\N	\N
+2371	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"tiny\\/recordrtc:recordscreen","oldpermission":0,"permission":1}	1768247159	cli	\N	\N
+2372	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"tiny\\/wiris:use","oldpermission":0,"permission":1}	1768247159	cli	\N	\N
+2373	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	2	u	0	1	10	0	0	0	\N	0	{"capability":"tiny\\/wiris:use","oldpermission":0,"permission":1}	1768247159	cli	\N	\N
+2374	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"tiny\\/wiris:use","oldpermission":0,"permission":1}	1768247159	cli	\N	\N
+2375	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"tiny\\/wiris:use","oldpermission":0,"permission":1}	1768247159	cli	\N	\N
+2376	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	5	u	0	1	10	0	0	0	\N	0	{"capability":"tiny\\/wiris:use","oldpermission":0,"permission":1}	1768247159	cli	\N	\N
+2377	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	6	u	0	1	10	0	0	0	\N	0	{"capability":"tiny\\/wiris:use","oldpermission":0,"permission":1}	1768247159	cli	\N	\N
+2378	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"tiny\\/wiris:use","oldpermission":0,"permission":1}	1768247159	cli	\N	\N
+2379	\\core\\event\\config_log_created	core	created	config_log	config_log	2215	c	0	1	10	0	2	0	\N	0	{"name":"allowfiltering","oldvalue":null,"value":"0","plugin":"tool_dataprivacy"}	1768247171	cli	\N	\N
+2380	\\core\\event\\config_log_created	core	created	config_log	config_log	2216	c	0	1	10	0	2	0	\N	0	{"name":"coursecommunicationprovider","oldvalue":null,"value":"none","plugin":"moodlecourse"}	1768247171	cli	\N	\N
+2381	\\core\\event\\config_log_created	core	created	config_log	config_log	2217	c	0	1	10	0	2	0	\N	0	{"name":"backup_general_customfield","oldvalue":null,"value":"1","plugin":"backup"}	1768247171	cli	\N	\N
+2382	\\core\\event\\config_log_created	core	created	config_log	config_log	2218	c	0	1	10	0	2	0	\N	0	{"name":"backup_general_customfield_locked","oldvalue":null,"value":"","plugin":"backup"}	1768247171	cli	\N	\N
+2383	\\core\\event\\config_log_created	core	created	config_log	config_log	2219	c	0	1	10	0	2	0	\N	0	{"name":"backup_general_xapistate","oldvalue":null,"value":"1","plugin":"backup"}	1768247171	cli	\N	\N
+2384	\\core\\event\\config_log_created	core	created	config_log	config_log	2220	c	0	1	10	0	2	0	\N	0	{"name":"backup_general_xapistate_locked","oldvalue":null,"value":"","plugin":"backup"}	1768247171	cli	\N	\N
+2385	\\core\\event\\config_log_created	core	created	config_log	config_log	2221	c	0	1	10	0	2	0	\N	0	{"name":"backup_import_badges","oldvalue":null,"value":"0","plugin":"backup"}	1768247171	cli	\N	\N
+2386	\\core\\event\\config_log_created	core	created	config_log	config_log	2222	c	0	1	10	0	2	0	\N	0	{"name":"backup_import_badges_locked","oldvalue":null,"value":"","plugin":"backup"}	1768247171	cli	\N	\N
+2387	\\core\\event\\config_log_created	core	created	config_log	config_log	2223	c	0	1	10	0	2	0	\N	0	{"name":"backup_import_customfield","oldvalue":null,"value":"1","plugin":"backup"}	1768247171	cli	\N	\N
+2388	\\core\\event\\config_log_created	core	created	config_log	config_log	2224	c	0	1	10	0	2	0	\N	0	{"name":"backup_import_customfield_locked","oldvalue":null,"value":"","plugin":"backup"}	1768247171	cli	\N	\N
+2389	\\core\\event\\config_log_created	core	created	config_log	config_log	2225	c	0	1	10	0	2	0	\N	0	{"name":"backup_auto_customfield","oldvalue":null,"value":"1","plugin":"backup"}	1768247171	cli	\N	\N
+2390	\\core\\event\\config_log_created	core	created	config_log	config_log	2226	c	0	1	10	0	2	0	\N	0	{"name":"backup_auto_xapistate","oldvalue":null,"value":"1","plugin":"backup"}	1768247171	cli	\N	\N
+2391	\\core\\event\\config_log_created	core	created	config_log	config_log	2227	c	0	1	10	0	2	0	\N	0	{"name":"restore_general_customfield","oldvalue":null,"value":"1","plugin":"restore"}	1768247171	cli	\N	\N
+2392	\\core\\event\\config_log_created	core	created	config_log	config_log	2228	c	0	1	10	0	2	0	\N	0	{"name":"restore_general_customfield_locked","oldvalue":null,"value":"","plugin":"restore"}	1768247171	cli	\N	\N
+2393	\\core\\event\\config_log_created	core	created	config_log	config_log	2229	c	0	1	10	0	2	0	\N	0	{"name":"restore_general_xapistate","oldvalue":null,"value":"1","plugin":"restore"}	1768247171	cli	\N	\N
+2394	\\core\\event\\config_log_created	core	created	config_log	config_log	2230	c	0	1	10	0	2	0	\N	0	{"name":"restore_general_xapistate_locked","oldvalue":null,"value":"","plugin":"restore"}	1768247171	cli	\N	\N
+2395	\\core\\event\\config_log_created	core	created	config_log	config_log	2231	c	0	1	10	0	2	0	\N	0	{"name":"gradeexport_default","oldvalue":null,"value":"ods","plugin":null}	1768247171	cli	\N	\N
+2396	\\core\\event\\config_log_created	core	created	config_log	config_log	2232	c	0	1	10	0	2	0	\N	0	{"name":"apikey","oldvalue":null,"value":"","plugin":"aiprovider_azureai"}	1768247171	cli	\N	\N
+2397	\\core\\event\\config_log_created	core	created	config_log	config_log	2233	c	0	1	10	0	2	0	\N	0	{"name":"endpoint","oldvalue":null,"value":"","plugin":"aiprovider_azureai"}	1768247171	cli	\N	\N
+2398	\\core\\event\\config_log_created	core	created	config_log	config_log	2234	c	0	1	10	0	2	0	\N	0	{"name":"enableglobalratelimit","oldvalue":null,"value":"0","plugin":"aiprovider_azureai"}	1768247171	cli	\N	\N
+2399	\\core\\event\\config_log_created	core	created	config_log	config_log	2235	c	0	1	10	0	2	0	\N	0	{"name":"globalratelimit","oldvalue":null,"value":"100","plugin":"aiprovider_azureai"}	1768247171	cli	\N	\N
+2400	\\core\\event\\config_log_created	core	created	config_log	config_log	2236	c	0	1	10	0	2	0	\N	0	{"name":"enableuserratelimit","oldvalue":null,"value":"0","plugin":"aiprovider_azureai"}	1768247171	cli	\N	\N
+2401	\\core\\event\\config_log_created	core	created	config_log	config_log	2237	c	0	1	10	0	2	0	\N	0	{"name":"userratelimit","oldvalue":null,"value":"10","plugin":"aiprovider_azureai"}	1768247171	cli	\N	\N
+2402	\\core\\event\\config_log_created	core	created	config_log	config_log	2238	c	0	1	10	0	2	0	\N	0	{"name":"apikey","oldvalue":null,"value":"","plugin":"aiprovider_openai"}	1768247171	cli	\N	\N
+2403	\\core\\event\\config_log_created	core	created	config_log	config_log	2239	c	0	1	10	0	2	0	\N	0	{"name":"orgid","oldvalue":null,"value":"","plugin":"aiprovider_openai"}	1768247171	cli	\N	\N
+2404	\\core\\event\\config_log_created	core	created	config_log	config_log	2240	c	0	1	10	0	2	0	\N	0	{"name":"enableglobalratelimit","oldvalue":null,"value":"0","plugin":"aiprovider_openai"}	1768247171	cli	\N	\N
+2405	\\core\\event\\config_log_created	core	created	config_log	config_log	2241	c	0	1	10	0	2	0	\N	0	{"name":"globalratelimit","oldvalue":null,"value":"100","plugin":"aiprovider_openai"}	1768247171	cli	\N	\N
+2406	\\core\\event\\config_log_created	core	created	config_log	config_log	2242	c	0	1	10	0	2	0	\N	0	{"name":"enableuserratelimit","oldvalue":null,"value":"0","plugin":"aiprovider_openai"}	1768247171	cli	\N	\N
+2407	\\core\\event\\config_log_created	core	created	config_log	config_log	2243	c	0	1	10	0	2	0	\N	0	{"name":"userratelimit","oldvalue":null,"value":"10","plugin":"aiprovider_openai"}	1768247171	cli	\N	\N
+2408	\\core\\event\\config_log_created	core	created	config_log	config_log	2244	c	0	1	10	0	2	0	\N	0	{"name":"badges_canvasregions","oldvalue":null,"value":"Australia|https:\\/\\/au.badgr.io|https:\\/\\/api.au.badgr.io\\/v2\\nCanada|https:\\/\\/ca.badgr.io|https:\\/\\/api.ca.badgr.io\\/v2\\nEurope|https:\\/\\/eu.badgr.io|https:\\/\\/api.eu.badgr.io\\/v2\\nSingapore|https:\\/\\/sg.badgr.io|https:\\/\\/api.sg.badgr.io\\/v2\\nUnited States|https:\\/\\/badgr.io|https:\\/\\/api.badgr.io\\/v2","plugin":null}	1768247171	cli	\N	\N
+2409	\\core\\event\\config_log_created	core	created	config_log	config_log	2245	c	0	1	10	0	2	0	\N	0	{"name":"h5pcustomcss","oldvalue":null,"value":"","plugin":"core_h5p"}	1768247171	cli	\N	\N
+2410	\\core\\event\\config_log_created	core	created	config_log	config_log	2246	c	0	1	10	0	2	0	\N	0	{"name":"geoipdbedition","oldvalue":null,"value":"GeoLite2-City","plugin":null}	1768247171	cli	\N	\N
+2411	\\core\\event\\config_log_created	core	created	config_log	config_log	2247	c	0	1	10	0	2	0	\N	0	{"name":"geoipmaxmindaccid","oldvalue":null,"value":"","plugin":null}	1768247171	cli	\N	\N
+2412	\\core\\event\\config_log_created	core	created	config_log	config_log	2248	c	0	1	10	0	2	0	\N	0	{"name":"geoipmaxmindlicensekey","oldvalue":null,"value":"","plugin":null}	1768247171	cli	\N	\N
+2413	\\core\\event\\config_log_created	core	created	config_log	config_log	2249	c	0	1	10	0	2	0	\N	0	{"name":"geopluginapikey","oldvalue":null,"value":"","plugin":null}	1768247171	cli	\N	\N
+2414	\\core\\event\\config_log_created	core	created	config_log	config_log	2250	c	0	1	10	0	2	0	\N	0	{"name":"enablepdfexportfont","oldvalue":null,"value":"0","plugin":null}	1768247171	cli	\N	\N
+2415	\\core\\event\\config_log_created	core	created	config_log	config_log	2251	c	0	1	10	0	2	0	\N	0	{"name":"showloginform","oldvalue":null,"value":"1","plugin":null}	1768247171	cli	\N	\N
+2416	\\core\\event\\config_log_created	core	created	config_log	config_log	2252	c	0	1	10	0	2	0	\N	0	{"name":"enableloginrecaptcha","oldvalue":null,"value":"0","plugin":null}	1768247171	cli	\N	\N
+2417	\\core\\event\\config_log_created	core	created	config_log	config_log	2253	c	0	1	10	0	2	0	\N	0	{"name":"loginpasswordtoggle","oldvalue":null,"value":"2","plugin":null}	1768247171	cli	\N	\N
+2418	\\core\\event\\config_log_created	core	created	config_log	config_log	2254	c	0	1	10	0	2	0	\N	0	{"name":"csvdelimiter","oldvalue":null,"value":"cfg","plugin":"block_configurable_reports"}	1768247171	cli	\N	\N
+2419	\\core\\event\\config_log_created	core	created	config_log	config_log	2255	c	0	1	10	0	2	0	\N	0	{"name":"overviewcachetime","oldvalue":null,"value":"3600","plugin":"block_completion_progress"}	1768247171	cli	\N	\N
+2420	\\core\\event\\config_log_created	core	created	config_log	config_log	2256	c	0	1	10	0	2	0	\N	0	{"name":"block_grade_me_enableadminviewall","oldvalue":null,"value":"0","plugin":null}	1768247171	cli	\N	\N
+2421	\\core\\event\\config_log_created	core	created	config_log	config_log	2257	c	0	1	10	0	2	0	\N	0	{"name":"block_grade_me_maxcourses","oldvalue":null,"value":"10","plugin":null}	1768247171	cli	\N	\N
+2422	\\core\\event\\config_log_created	core	created	config_log	config_log	2258	c	0	1	10	0	2	0	\N	0	{"name":"block_grade_me_maxage","oldvalue":null,"value":"0","plugin":null}	1768247171	cli	\N	\N
+2423	\\core\\event\\config_log_created	core	created	config_log	config_log	2259	c	0	1	10	0	2	0	\N	0	{"name":"block_grade_me_enableshowhidden","oldvalue":null,"value":"0","plugin":null}	1768247171	cli	\N	\N
+2424	\\core\\event\\config_log_created	core	created	config_log	config_log	2260	c	0	1	10	0	2	0	\N	0	{"name":"block_grade_me_enableassign","oldvalue":null,"value":"1","plugin":null}	1768247171	cli	\N	\N
+2425	\\core\\event\\config_log_created	core	created	config_log	config_log	2261	c	0	1	10	0	2	0	\N	0	{"name":"block_grade_me_enabledata","oldvalue":null,"value":"0","plugin":null}	1768247171	cli	\N	\N
+2426	\\core\\event\\config_log_created	core	created	config_log	config_log	2262	c	0	1	10	0	2	0	\N	0	{"name":"block_grade_me_enableforum","oldvalue":null,"value":"0","plugin":null}	1768247171	cli	\N	\N
+2427	\\core\\event\\config_log_created	core	created	config_log	config_log	2263	c	0	1	10	0	2	0	\N	0	{"name":"block_grade_me_enableglossary","oldvalue":null,"value":"0","plugin":null}	1768247171	cli	\N	\N
+2428	\\core\\event\\config_log_created	core	created	config_log	config_log	2264	c	0	1	10	0	2	0	\N	0	{"name":"block_grade_me_enablelesson","oldvalue":null,"value":"0","plugin":null}	1768247171	cli	\N	\N
+3089	\\core\\event\\course_viewed	core	viewed	course	\N	\N	r	2	2	50	1	2	1	\N	0	null	1768247836	web	192.168.56.1	\N
+2429	\\core\\event\\config_log_created	core	created	config_log	config_log	2265	c	0	1	10	0	2	0	\N	0	{"name":"block_grade_me_enablequiz","oldvalue":null,"value":"1","plugin":null}	1768247171	cli	\N	\N
+2430	\\core\\event\\config_log_created	core	created	config_log	config_log	2266	c	0	1	10	0	2	0	\N	0	{"name":"extended_valid_elements","oldvalue":null,"value":"script[*],p[*],i[*]","plugin":"editor_tiny"}	1768247172	cli	\N	\N
+2431	\\core\\event\\config_log_created	core	created	config_log	config_log	2267	c	0	1	10	0	2	0	\N	0	{"name":"enablepreview","oldvalue":null,"value":"1","plugin":"tiny_c4l"}	1768247172	cli	\N	\N
+2432	\\core\\event\\config_log_created	core	created	config_log	config_log	2268	c	0	1	10	0	2	0	\N	0	{"name":"aimedatstudents","oldvalue":null,"value":"keyconcept,tip,reminder,quote,dodontcards,readingcontext,example,figure,tag,inlinetag,attention,allpurposecard","plugin":"tiny_c4l"}	1768247172	cli	\N	\N
+2433	\\core\\event\\config_log_created	core	created	config_log	config_log	2269	c	0	1	10	0	2	0	\N	0	{"name":"notintendedforstudents","oldvalue":null,"value":"","plugin":"tiny_c4l"}	1768247172	cli	\N	\N
+2434	\\core\\event\\config_log_created	core	created	config_log	config_log	2270	c	0	1	10	0	2	0	\N	0	{"name":"customcompcount","oldvalue":null,"value":"0","plugin":"tiny_c4l"}	1768247172	cli	\N	\N
+2435	\\core\\event\\config_log_created	core	created	config_log	config_log	2271	c	0	1	10	0	2	0	\N	0	{"name":"custompreviewcss","oldvalue":null,"value":"","plugin":"tiny_c4l"}	1768247172	cli	\N	\N
+2436	\\core\\event\\config_log_created	core	created	config_log	config_log	2272	c	0	1	10	0	2	0	\N	0	{"name":"customimagesbank","oldvalue":null,"value":"","plugin":"tiny_c4l"}	1768247172	cli	\N	\N
+2437	\\core\\event\\config_log_created	core	created	config_log	config_log	2273	c	0	1	10	0	2	0	\N	0	{"name":"textcolors","oldvalue":null,"value":"[]","plugin":"tiny_fontcolor"}	1768247172	cli	\N	\N
+2438	\\core\\event\\config_log_created	core	created	config_log	config_log	2274	c	0	1	10	0	2	0	\N	0	{"name":"backgroundcolors","oldvalue":null,"value":"[]","plugin":"tiny_fontcolor"}	1768247172	cli	\N	\N
+2439	\\core\\event\\config_log_created	core	created	config_log	config_log	2275	c	0	1	10	0	2	0	\N	0	{"name":"textcolorpicker","oldvalue":null,"value":"0","plugin":"tiny_fontcolor"}	1768247172	cli	\N	\N
+2440	\\core\\event\\config_log_created	core	created	config_log	config_log	2276	c	0	1	10	0	2	0	\N	0	{"name":"backgroundcolorpicker","oldvalue":null,"value":"0","plugin":"tiny_fontcolor"}	1768247172	cli	\N	\N
+2441	\\core\\event\\config_log_created	core	created	config_log	config_log	2277	c	0	1	10	0	2	0	\N	0	{"name":"usecssclassnames","oldvalue":null,"value":"0","plugin":"tiny_fontcolor"}	1768247172	cli	\N	\N
+2442	\\core\\event\\config_log_created	core	created	config_log	config_log	2278	c	0	1	10	0	2	0	\N	0	{"name":"fonts","oldvalue":null,"value":"Arial\\r\\nVerdana\\r\\nTahoma\\r\\nTrebuchet MS\\r\\nTimes New Roman\\r\\nGeorgia\\r\\nGaramond\\r\\nCourier New\\r\\nBrush Script MT","plugin":"tiny_fontfamily"}	1768247172	cli	\N	\N
+2443	\\core\\event\\config_log_created	core	created	config_log	config_log	2279	c	0	1	10	0	2	0	\N	0	{"name":"apikey","oldvalue":null,"value":"","plugin":"tiny_premium"}	1768247172	cli	\N	\N
+2444	\\core\\event\\config_log_created	core	created	config_log	config_log	2280	c	0	1	10	0	2	0	\N	0	{"name":"screenbitrate","oldvalue":null,"value":"2500000","plugin":"tiny_recordrtc"}	1768247172	cli	\N	\N
+2445	\\core\\event\\config_log_created	core	created	config_log	config_log	2281	c	0	1	10	0	2	0	\N	0	{"name":"screentimelimit","oldvalue":null,"value":"120","plugin":"tiny_recordrtc"}	1768247172	cli	\N	\N
+2446	\\core\\event\\config_log_created	core	created	config_log	config_log	2282	c	0	1	10	0	2	0	\N	0	{"name":"screensize","oldvalue":null,"value":"1280,720","plugin":"tiny_recordrtc"}	1768247172	cli	\N	\N
+2447	\\core\\event\\config_log_created	core	created	config_log	config_log	2283	c	0	1	10	0	2	0	\N	0	{"name":"allowedpausing","oldvalue":null,"value":"0","plugin":"tiny_recordrtc"}	1768247172	cli	\N	\N
+2448	\\core\\event\\config_log_created	core	created	config_log	config_log	2284	c	0	1	10	0	2	0	\N	0	{"name":"enabled","oldvalue":null,"value":"0","plugin":"tool_mfa"}	1768247172	cli	\N	\N
+2449	\\core\\event\\config_log_created	core	created	config_log	config_log	2285	c	0	1	10	0	2	0	\N	0	{"name":"lockout","oldvalue":null,"value":"10","plugin":"tool_mfa"}	1768247172	cli	\N	\N
+2450	\\core\\event\\config_log_created	core	created	config_log	config_log	2286	c	0	1	10	0	2	0	\N	0	{"name":"debugmode","oldvalue":null,"value":"0","plugin":"tool_mfa"}	1768247172	cli	\N	\N
+2451	\\core\\event\\config_log_created	core	created	config_log	config_log	2287	c	0	1	10	0	2	0	\N	0	{"name":"redir_exclusions","oldvalue":null,"value":"","plugin":"tool_mfa"}	1768247172	cli	\N	\N
+2452	\\core\\event\\config_log_created	core	created	config_log	config_log	2288	c	0	1	10	0	2	0	\N	0	{"name":"guidance","oldvalue":null,"value":"0","plugin":"tool_mfa"}	1768247172	cli	\N	\N
+2453	\\core\\event\\config_log_created	core	created	config_log	config_log	2289	c	0	1	10	0	2	0	\N	0	{"name":"guidancecontent","oldvalue":null,"value":"","plugin":"tool_mfa"}	1768247172	cli	\N	\N
+2454	\\core\\event\\config_log_created	core	created	config_log	config_log	2290	c	0	1	10	0	2	0	\N	0	{"name":"guidancefiles","oldvalue":null,"value":"","plugin":"tool_mfa"}	1768247172	cli	\N	\N
+2455	\\core\\event\\config_log_created	core	created	config_log	config_log	2291	c	0	1	10	0	2	0	\N	0	{"name":"enabled","oldvalue":null,"value":"0","plugin":"factor_admin"}	1768247172	cli	\N	\N
+2456	\\core\\event\\config_log_created	core	created	config_log	config_log	2292	c	0	1	10	0	2	0	\N	0	{"name":"weight","oldvalue":null,"value":"100","plugin":"factor_admin"}	1768247172	cli	\N	\N
+2457	\\core\\event\\config_log_created	core	created	config_log	config_log	2293	c	0	1	10	0	2	0	\N	0	{"name":"enabled","oldvalue":null,"value":"0","plugin":"factor_auth"}	1768247172	cli	\N	\N
+2458	\\core\\event\\config_log_created	core	created	config_log	config_log	2294	c	0	1	10	0	2	0	\N	0	{"name":"weight","oldvalue":null,"value":"100","plugin":"factor_auth"}	1768247172	cli	\N	\N
+2459	\\core\\event\\config_log_created	core	created	config_log	config_log	2295	c	0	1	10	0	2	0	\N	0	{"name":"goodauth","oldvalue":null,"value":"","plugin":"factor_auth"}	1768247172	cli	\N	\N
+2460	\\core\\event\\config_log_created	core	created	config_log	config_log	2296	c	0	1	10	0	2	0	\N	0	{"name":"enabled","oldvalue":null,"value":"0","plugin":"factor_capability"}	1768247172	cli	\N	\N
+2461	\\core\\event\\config_log_created	core	created	config_log	config_log	2297	c	0	1	10	0	2	0	\N	0	{"name":"weight","oldvalue":null,"value":"100","plugin":"factor_capability"}	1768247172	cli	\N	\N
+2462	\\core\\event\\config_log_created	core	created	config_log	config_log	2298	c	0	1	10	0	2	0	\N	0	{"name":"adminpasses","oldvalue":null,"value":"1","plugin":"factor_capability"}	1768247172	cli	\N	\N
+2463	\\core\\event\\config_log_created	core	created	config_log	config_log	2299	c	0	1	10	0	2	0	\N	0	{"name":"enabled","oldvalue":null,"value":"0","plugin":"factor_cohort"}	1768247172	cli	\N	\N
+2464	\\core\\event\\config_log_created	core	created	config_log	config_log	2300	c	0	1	10	0	2	0	\N	0	{"name":"weight","oldvalue":null,"value":"100","plugin":"factor_cohort"}	1768247172	cli	\N	\N
+2465	\\core\\event\\config_log_created	core	created	config_log	config_log	2301	c	0	1	10	0	2	0	\N	0	{"name":"enabled","oldvalue":null,"value":"0","plugin":"factor_email"}	1768247172	cli	\N	\N
+2466	\\core\\event\\config_log_created	core	created	config_log	config_log	2302	c	0	1	10	0	2	0	\N	0	{"name":"weight","oldvalue":null,"value":"100","plugin":"factor_email"}	1768247172	cli	\N	\N
+2467	\\core\\event\\config_log_created	core	created	config_log	config_log	2303	c	0	1	10	0	2	0	\N	0	{"name":"duration","oldvalue":null,"value":"1800","plugin":"factor_email"}	1768247172	cli	\N	\N
+2468	\\core\\event\\config_log_created	core	created	config_log	config_log	2304	c	0	1	10	0	2	0	\N	0	{"name":"suspend","oldvalue":null,"value":"0","plugin":"factor_email"}	1768247172	cli	\N	\N
+2469	\\core\\event\\config_log_created	core	created	config_log	config_log	2305	c	0	1	10	0	2	0	\N	0	{"name":"enabled","oldvalue":null,"value":"0","plugin":"factor_grace"}	1768247172	cli	\N	\N
+2470	\\core\\event\\config_log_created	core	created	config_log	config_log	2306	c	0	1	10	0	2	0	\N	0	{"name":"weight","oldvalue":null,"value":"100","plugin":"factor_grace"}	1768247172	cli	\N	\N
+2471	\\core\\event\\config_log_created	core	created	config_log	config_log	2307	c	0	1	10	0	2	0	\N	0	{"name":"forcesetup","oldvalue":null,"value":"0","plugin":"factor_grace"}	1768247172	cli	\N	\N
+2472	\\core\\event\\config_log_created	core	created	config_log	config_log	2308	c	0	1	10	0	2	0	\N	0	{"name":"graceperiod","oldvalue":null,"value":"604800","plugin":"factor_grace"}	1768247172	cli	\N	\N
+2473	\\core\\event\\config_log_created	core	created	config_log	config_log	2309	c	0	1	10	0	2	0	\N	0	{"name":"ignorelist","oldvalue":null,"value":"","plugin":"factor_grace"}	1768247172	cli	\N	\N
+2474	\\core\\event\\config_log_created	core	created	config_log	config_log	2310	c	0	1	10	0	2	0	\N	0	{"name":"customwarning","oldvalue":null,"value":"","plugin":"factor_grace"}	1768247172	cli	\N	\N
+2475	\\core\\event\\config_log_created	core	created	config_log	config_log	2311	c	0	1	10	0	2	0	\N	0	{"name":"enabled","oldvalue":null,"value":"0","plugin":"factor_iprange"}	1768247172	cli	\N	\N
+2476	\\core\\event\\config_log_created	core	created	config_log	config_log	2312	c	0	1	10	0	2	0	\N	0	{"name":"weight","oldvalue":null,"value":"100","plugin":"factor_iprange"}	1768247172	cli	\N	\N
+2477	\\core\\event\\config_log_created	core	created	config_log	config_log	2313	c	0	1	10	0	2	0	\N	0	{"name":"safeips","oldvalue":null,"value":"","plugin":"factor_iprange"}	1768247172	cli	\N	\N
+2478	\\core\\event\\config_log_created	core	created	config_log	config_log	2314	c	0	1	10	0	2	0	\N	0	{"name":"enabled","oldvalue":null,"value":"0","plugin":"factor_nosetup"}	1768247172	cli	\N	\N
+2479	\\core\\event\\config_log_created	core	created	config_log	config_log	2315	c	0	1	10	0	2	0	\N	0	{"name":"weight","oldvalue":null,"value":"100","plugin":"factor_nosetup"}	1768247172	cli	\N	\N
+2480	\\core\\event\\config_log_created	core	created	config_log	config_log	2316	c	0	1	10	0	2	0	\N	0	{"name":"enabled","oldvalue":null,"value":"0","plugin":"factor_role"}	1768247172	cli	\N	\N
+2481	\\core\\event\\config_log_created	core	created	config_log	config_log	2317	c	0	1	10	0	2	0	\N	0	{"name":"weight","oldvalue":null,"value":"100","plugin":"factor_role"}	1768247172	cli	\N	\N
+2482	\\core\\event\\config_log_created	core	created	config_log	config_log	2318	c	0	1	10	0	2	0	\N	0	{"name":"roles","oldvalue":null,"value":"admin","plugin":"factor_role"}	1768247172	cli	\N	\N
+2483	\\core\\event\\config_log_created	core	created	config_log	config_log	2319	c	0	1	10	0	2	0	\N	0	{"name":"smsgateway","oldvalue":null,"value":"0","plugin":"factor_sms"}	1768247172	cli	\N	\N
+2484	\\core\\event\\config_log_created	core	created	config_log	config_log	2320	c	0	1	10	0	2	0	\N	0	{"name":"enabled","oldvalue":null,"value":"0","plugin":"factor_sms"}	1768247172	cli	\N	\N
+2485	\\core\\event\\config_log_created	core	created	config_log	config_log	2321	c	0	1	10	0	2	0	\N	0	{"name":"weight","oldvalue":null,"value":"100","plugin":"factor_sms"}	1768247172	cli	\N	\N
+2486	\\core\\event\\config_log_created	core	created	config_log	config_log	2322	c	0	1	10	0	2	0	\N	0	{"name":"duration","oldvalue":null,"value":"1800","plugin":"factor_sms"}	1768247172	cli	\N	\N
+2487	\\core\\event\\config_log_created	core	created	config_log	config_log	2323	c	0	1	10	0	2	0	\N	0	{"name":"enabled","oldvalue":null,"value":"0","plugin":"factor_token"}	1768247172	cli	\N	\N
+2488	\\core\\event\\config_log_created	core	created	config_log	config_log	2324	c	0	1	10	0	2	0	\N	0	{"name":"weight","oldvalue":null,"value":"100","plugin":"factor_token"}	1768247172	cli	\N	\N
+2489	\\core\\event\\config_log_created	core	created	config_log	config_log	2325	c	0	1	10	0	2	0	\N	0	{"name":"expiry","oldvalue":null,"value":"86400","plugin":"factor_token"}	1768247172	cli	\N	\N
+2490	\\core\\event\\config_log_created	core	created	config_log	config_log	2326	c	0	1	10	0	2	0	\N	0	{"name":"expireovernight","oldvalue":null,"value":"1","plugin":"factor_token"}	1768247172	cli	\N	\N
+2491	\\core\\event\\config_log_created	core	created	config_log	config_log	2327	c	0	1	10	0	2	0	\N	0	{"name":"enabled","oldvalue":null,"value":"0","plugin":"factor_totp"}	1768247172	cli	\N	\N
+2492	\\core\\event\\config_log_created	core	created	config_log	config_log	2328	c	0	1	10	0	2	0	\N	0	{"name":"weight","oldvalue":null,"value":"100","plugin":"factor_totp"}	1768247172	cli	\N	\N
+2493	\\core\\event\\config_log_created	core	created	config_log	config_log	2329	c	0	1	10	0	2	0	\N	0	{"name":"window","oldvalue":null,"value":"15","plugin":"factor_totp"}	1768247172	cli	\N	\N
+2494	\\core\\event\\config_log_created	core	created	config_log	config_log	2330	c	0	1	10	0	2	0	\N	0	{"name":"totplink","oldvalue":null,"value":"1","plugin":"factor_totp"}	1768247172	cli	\N	\N
+2495	\\core\\event\\config_log_created	core	created	config_log	config_log	2331	c	0	1	10	0	2	0	\N	0	{"name":"enabled","oldvalue":null,"value":"0","plugin":"factor_webauthn"}	1768247172	cli	\N	\N
+2496	\\core\\event\\config_log_created	core	created	config_log	config_log	2332	c	0	1	10	0	2	0	\N	0	{"name":"weight","oldvalue":null,"value":"100","plugin":"factor_webauthn"}	1768247172	cli	\N	\N
+2497	\\core\\event\\config_log_created	core	created	config_log	config_log	2333	c	0	1	10	0	2	0	\N	0	{"name":"authenticatortypes","oldvalue":null,"value":"usb,nfc,ble,hybrid,internal","plugin":"factor_webauthn"}	1768247172	cli	\N	\N
+2498	\\core\\event\\config_log_created	core	created	config_log	config_log	2334	c	0	1	10	0	2	0	\N	0	{"name":"userverification","oldvalue":null,"value":"preferred","plugin":"factor_webauthn"}	1768247172	cli	\N	\N
+2499	\\core\\event\\config_log_created	core	created	config_log	config_log	2335	c	0	1	10	0	2	0	\N	0	{"name":"followthemecolour","oldvalue":null,"value":"0","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2500	\\core\\event\\config_log_created	core	created	config_log	config_log	2336	c	0	1	10	0	2	0	\N	0	{"name":"subtileiconcolourbackground","oldvalue":null,"value":"0","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2501	\\core\\event\\config_log_created	core	created	config_log	config_log	2337	c	0	1	10	0	2	0	\N	0	{"name":"tilecolour1","oldvalue":null,"value":"#1670CC","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2502	\\core\\event\\config_log_created	core	created	config_log	config_log	2338	c	0	1	10	0	2	0	\N	0	{"name":"colourname1","oldvalue":null,"value":"Blau","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2503	\\core\\event\\config_log_created	core	created	config_log	config_log	2339	c	0	1	10	0	2	0	\N	0	{"name":"tilecolour2","oldvalue":null,"value":"#00A9CE","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2504	\\core\\event\\config_log_created	core	created	config_log	config_log	2340	c	0	1	10	0	2	0	\N	0	{"name":"colourname2","oldvalue":null,"value":"Blau cel","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2505	\\core\\event\\config_log_created	core	created	config_log	config_log	2341	c	0	1	10	0	2	0	\N	0	{"name":"tilecolour3","oldvalue":null,"value":"#7A9A01","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2506	\\core\\event\\config_log_created	core	created	config_log	config_log	2342	c	0	1	10	0	2	0	\N	0	{"name":"colourname3","oldvalue":null,"value":"Verd","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2507	\\core\\event\\config_log_created	core	created	config_log	config_log	2343	c	0	1	10	0	2	0	\N	0	{"name":"tilecolour4","oldvalue":null,"value":"#009681","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2508	\\core\\event\\config_log_created	core	created	config_log	config_log	2344	c	0	1	10	0	2	0	\N	0	{"name":"colourname4","oldvalue":null,"value":"Verd fosc","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2509	\\core\\event\\config_log_created	core	created	config_log	config_log	2345	c	0	1	10	0	2	0	\N	0	{"name":"tilecolour5","oldvalue":null,"value":"#D13C3C","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2510	\\core\\event\\config_log_created	core	created	config_log	config_log	2346	c	0	1	10	0	2	0	\N	0	{"name":"colourname5","oldvalue":null,"value":"Vermell","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2511	\\core\\event\\config_log_created	core	created	config_log	config_log	2347	c	0	1	10	0	2	0	\N	0	{"name":"tilecolour6","oldvalue":null,"value":"#772583","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2512	\\core\\event\\config_log_created	core	created	config_log	config_log	2348	c	0	1	10	0	2	0	\N	0	{"name":"colourname6","oldvalue":null,"value":"Morat","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2513	\\core\\event\\config_log_created	core	created	config_log	config_log	2349	c	0	1	10	0	2	0	\N	0	{"name":"modalmodules","oldvalue":null,"value":"page","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2514	\\core\\event\\config_log_created	core	created	config_log	config_log	2350	c	0	1	10	0	2	0	\N	0	{"name":"modalresources","oldvalue":null,"value":"pdf,url,html","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2515	\\core\\event\\config_log_created	core	created	config_log	config_log	2351	c	0	1	10	0	2	0	\N	0	{"name":"allowphototiles","oldvalue":null,"value":"1","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2516	\\core\\event\\config_log_created	core	created	config_log	config_log	2352	c	0	1	10	0	2	0	\N	0	{"name":"tilestyle","oldvalue":null,"value":"1","plugin":"format_tiles"}	1768247172	cli	\N	\N
+3092	\\core\\event\\course_viewed	core	viewed	course	\N	\N	r	2	2	50	1	0	1	\N	0	null	1768247907	web	192.168.56.1	\N
+2517	\\core\\event\\config_log_created	core	created	config_log	config_log	2353	c	0	1	10	0	2	0	\N	0	{"name":"showprogresssphototiles","oldvalue":null,"value":"1","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2518	\\core\\event\\config_log_created	core	created	config_log	config_log	2354	c	0	1	10	0	2	0	\N	0	{"name":"phototiletitletransarency","oldvalue":null,"value":"0","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2519	\\core\\event\\config_log_created	core	created	config_log	config_log	2355	c	0	1	10	0	2	0	\N	0	{"name":"phototitletitlelineheight","oldvalue":null,"value":"305","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2520	\\core\\event\\config_log_created	core	created	config_log	config_log	2356	c	0	1	10	0	2	0	\N	0	{"name":"phototitletitlepadding","oldvalue":null,"value":"40","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2521	\\core\\event\\config_log_created	core	created	config_log	config_log	2357	c	0	1	10	0	2	0	\N	0	{"name":"usejavascriptnav","oldvalue":null,"value":"1","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2522	\\core\\event\\config_log_created	core	created	config_log	config_log	2358	c	0	1	10	0	2	0	\N	0	{"name":"reopenlastsection","oldvalue":null,"value":"1","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2523	\\core\\event\\config_log_created	core	created	config_log	config_log	2359	c	0	1	10	0	2	0	\N	0	{"name":"usejsnavforsinglesection","oldvalue":null,"value":"1","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2524	\\core\\event\\config_log_created	core	created	config_log	config_log	2360	c	0	1	10	0	2	0	\N	0	{"name":"fittilestowidth","oldvalue":null,"value":"1","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2525	\\core\\event\\config_log_created	core	created	config_log	config_log	2361	c	0	1	10	0	2	0	\N	0	{"name":"allowsubtilesview","oldvalue":null,"value":"1","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2526	\\core\\event\\config_log_created	core	created	config_log	config_log	2362	c	0	1	10	0	2	0	\N	0	{"name":"showoverallprogress","oldvalue":null,"value":"1","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2527	\\core\\event\\config_log_created	core	created	config_log	config_log	2363	c	0	1	10	0	2	0	\N	0	{"name":"progressincludesubsections","oldvalue":null,"value":"0","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2528	\\core\\event\\config_log_created	core	created	config_log	config_log	2364	c	0	1	10	0	2	0	\N	0	{"name":"showseczerocoursewide","oldvalue":null,"value":"0","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2529	\\core\\event\\config_log_created	core	created	config_log	config_log	2365	c	0	1	10	0	2	0	\N	0	{"name":"seczerocollapsible","oldvalue":null,"value":"1","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2530	\\core\\event\\config_log_created	core	created	config_log	config_log	2366	c	0	1	10	0	2	0	\N	0	{"name":"customcss","oldvalue":null,"value":"","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2531	\\core\\event\\config_log_created	core	created	config_log	config_log	2367	c	0	1	10	0	2	0	\N	0	{"name":"enablelinebreakfilter","oldvalue":null,"value":"0","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2532	\\core\\event\\config_log_created	core	created	config_log	config_log	2368	c	0	1	10	0	2	0	\N	0	{"name":"assumedatastoreconsent","oldvalue":null,"value":"1","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2533	\\core\\event\\config_log_created	core	created	config_log	config_log	2369	c	0	1	10	0	2	0	\N	0	{"name":"usecourseindex","oldvalue":null,"value":"1","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2534	\\core\\event\\config_log_created	core	created	config_log	config_log	2370	c	0	1	10	0	2	0	\N	0	{"name":"highcontrastmodeallow","oldvalue":null,"value":"0","plugin":"format_tiles"}	1768247172	cli	\N	\N
+2535	\\core\\event\\config_log_created	core	created	config_log	config_log	2371	c	0	1	10	0	2	0	\N	0	{"name":"startwday","oldvalue":null,"value":"1","plugin":"format_multitopic"}	1768247172	cli	\N	\N
+2536	\\core\\event\\config_log_created	core	created	config_log	config_log	2372	c	0	1	10	0	2	0	\N	0	{"name":"weeks_mindays","oldvalue":null,"value":"4","plugin":"format_multitopic"}	1768247172	cli	\N	\N
+2537	\\core\\event\\config_log_created	core	created	config_log	config_log	2373	c	0	1	10	0	2	0	\N	0	{"name":"weeks_partial","oldvalue":null,"value":"0","plugin":"format_multitopic"}	1768247172	cli	\N	\N
+2538	\\core\\event\\config_log_created	core	created	config_log	config_log	2374	c	0	1	10	0	2	0	\N	0	{"name":"indentation","oldvalue":null,"value":"1","plugin":"format_multitopic"}	1768247172	cli	\N	\N
+2539	\\core\\event\\config_log_created	core	created	config_log	config_log	2375	c	0	1	10	0	2	0	\N	0	{"name":"newcoursestartdate","oldvalue":null,"value":"","plugin":"enrol_database"}	1768247172	cli	\N	\N
+2540	\\core\\event\\config_log_created	core	created	config_log	config_log	2376	c	0	1	10	0	2	0	\N	0	{"name":"newcourseenddate","oldvalue":null,"value":"","plugin":"enrol_database"}	1768247172	cli	\N	\N
+2541	\\core\\event\\config_log_created	core	created	config_log	config_log	2377	c	0	1	10	0	2	0	\N	0	{"name":"sendcoursewelcomemessage","oldvalue":null,"value":"1","plugin":"enrol_manual"}	1768247172	cli	\N	\N
+2542	\\core\\event\\config_log_created	core	created	config_log	config_log	2378	c	0	1	10	0	2	0	\N	0	{"name":"test_clustermode","oldvalue":null,"value":"0","plugin":"cachestore_redis"}	1768247172	cli	\N	\N
+2543	\\core\\event\\config_log_created	core	created	config_log	config_log	2379	c	0	1	10	0	2	0	\N	0	{"name":"test_encryption","oldvalue":null,"value":"0","plugin":"cachestore_redis"}	1768247172	cli	\N	\N
+2544	\\core\\event\\config_log_created	core	created	config_log	config_log	2380	c	0	1	10	0	2	0	\N	0	{"name":"test_cafile","oldvalue":null,"value":"","plugin":"cachestore_redis"}	1768247172	cli	\N	\N
+2545	\\core\\event\\config_log_created	core	created	config_log	config_log	2381	c	0	1	10	0	2	0	\N	0	{"name":"bigbluebuttonbn_checksum_algorithm","oldvalue":null,"value":"SHA256","plugin":null}	1768247172	cli	\N	\N
+2546	\\core\\event\\config_log_created	core	created	config_log	config_log	2382	c	0	1	10	0	2	0	\N	0	{"name":"bigbluebuttonbn_recording_safe_formats","oldvalue":null,"value":"video,presentation","plugin":null}	1768247172	cli	\N	\N
+2547	\\core\\event\\config_log_created	core	created	config_log	config_log	2383	c	0	1	10	0	2	0	\N	0	{"name":"showpresentation_default","oldvalue":null,"value":"1","plugin":"mod_bigbluebuttonbn"}	1768247172	cli	\N	\N
+2548	\\core\\event\\config_log_created	core	created	config_log	config_log	2384	c	0	1	10	0	2	0	\N	0	{"name":"showpresentation_editable","oldvalue":null,"value":"0","plugin":"mod_bigbluebuttonbn"}	1768247172	cli	\N	\N
+2549	\\core\\event\\config_log_created	core	created	config_log	config_log	2385	c	0	1	10	0	2	0	\N	0	{"name":"bigbluebuttonbn_profile_picture_enabled","oldvalue":null,"value":"0","plugin":null}	1768247172	cli	\N	\N
+2550	\\core\\event\\config_log_created	core	created	config_log	config_log	2386	c	0	1	10	0	2	0	\N	0	{"name":"defaultgroupdescriptionstate","oldvalue":null,"value":"0","plugin":"choicegroup"}	1768247172	cli	\N	\N
+2551	\\core\\event\\config_log_created	core	created	config_log	config_log	2387	c	0	1	10	0	2	0	\N	0	{"name":"forum_announcementmaxattachments","oldvalue":null,"value":"1","plugin":null}	1768247172	cli	\N	\N
+2552	\\core\\event\\config_log_created	core	created	config_log	config_log	2388	c	0	1	10	0	2	0	\N	0	{"name":"forum_announcementsubscription","oldvalue":null,"value":"1","plugin":null}	1768247172	cli	\N	\N
+2553	\\core\\event\\config_log_created	core	created	config_log	config_log	2389	c	0	1	10	0	2	0	\N	0	{"name":"enablesavestate","oldvalue":null,"value":"1","plugin":"mod_h5pactivity"}	1768247172	cli	\N	\N
+2554	\\core\\event\\config_log_created	core	created	config_log	config_log	2390	c	0	1	10	0	2	0	\N	0	{"name":"savestatefreq","oldvalue":null,"value":"60","plugin":"mod_h5pactivity"}	1768247172	cli	\N	\N
+2555	\\core\\event\\config_log_created	core	created	config_log	config_log	2391	c	0	1	10	0	2	0	\N	0	{"name":"h5p_search_content_hub","oldvalue":null,"value":"1","plugin":"mod_hvp"}	1768247172	cli	\N	\N
+2556	\\core\\event\\config_log_created	core	created	config_log	config_log	2392	c	0	1	10	0	2	0	\N	0	{"name":"reviewmaxmarks","oldvalue":null,"value":"69904","plugin":"quiz"}	1768247172	cli	\N	\N
+2557	\\core\\event\\config_log_created	core	created	config_log	config_log	2393	c	0	1	10	0	2	0	\N	0	{"name":"defaultgradetype","oldvalue":null,"value":"1","plugin":"mod_assign"}	1768247172	cli	\N	\N
+2558	\\core\\event\\config_log_created	core	created	config_log	config_log	2394	c	0	1	10	0	2	0	\N	0	{"name":"defaultgradescale","oldvalue":null,"value":"","plugin":"mod_assign"}	1768247172	cli	\N	\N
+2559	\\core\\event\\config_log_created	core	created	config_log	config_log	2395	c	0	1	10	0	2	0	\N	0	{"name":"markinganonymous","oldvalue":null,"value":"0","plugin":"assign"}	1768247172	cli	\N	\N
+2560	\\core\\event\\config_log_created	core	created	config_log	config_log	2396	c	0	1	10	0	2	0	\N	0	{"name":"markinganonymous_adv","oldvalue":null,"value":"","plugin":"assign"}	1768247172	cli	\N	\N
+2561	\\core\\event\\config_log_created	core	created	config_log	config_log	2397	c	0	1	10	0	2	0	\N	0	{"name":"markinganonymous_locked","oldvalue":null,"value":"","plugin":"assign"}	1768247172	cli	\N	\N
+2562	\\core\\event\\config_log_created	core	created	config_log	config_log	2398	c	0	1	10	0	2	0	\N	0	{"name":"donottrack","oldvalue":null,"value":"0","plugin":"media_vimeo"}	1768247172	cli	\N	\N
+2563	\\core\\event\\config_log_created	core	created	config_log	config_log	2399	c	0	1	10	0	2	0	\N	0	{"name":"nocookie","oldvalue":null,"value":"0","plugin":"media_youtube"}	1768247172	cli	\N	\N
+2564	\\core\\event\\config_log_created	core	created	config_log	config_log	2400	c	0	1	10	0	2	0	\N	0	{"name":"questiondefaultssave","oldvalue":null,"value":"1","plugin":null}	1768247172	cli	\N	\N
+2565	\\core\\event\\config_log_created	core	created	config_log	config_log	2401	c	0	1	10	0	2	0	\N	0	{"name":"default_penalty_regime","oldvalue":null,"value":"10, 20, ...","plugin":"qtype_coderunner"}	1768247172	cli	\N	\N
+2566	\\core\\event\\config_log_created	core	created	config_log	config_log	2402	c	0	1	10	0	2	0	\N	0	{"name":"jobesandbox_enabled","oldvalue":null,"value":"1","plugin":"qtype_coderunner"}	1768247172	cli	\N	\N
+2567	\\core\\event\\config_log_created	core	created	config_log	config_log	2403	c	0	1	10	0	2	0	\N	0	{"name":"ideonesandbox_enabled","oldvalue":null,"value":"0","plugin":"qtype_coderunner"}	1768247172	cli	\N	\N
+2568	\\core\\event\\config_log_created	core	created	config_log	config_log	2404	c	0	1	10	0	2	0	\N	0	{"name":"jobe_host","oldvalue":null,"value":"jobe2.cosc.canterbury.ac.nz","plugin":"qtype_coderunner"}	1768247172	cli	\N	\N
+2569	\\core\\event\\config_log_created	core	created	config_log	config_log	2405	c	0	1	10	0	2	0	\N	0	{"name":"jobe_apikey","oldvalue":null,"value":"2AAA7A5415B4A9B394B54BF1D2E9D","plugin":"qtype_coderunner"}	1768247172	cli	\N	\N
+2570	\\core\\event\\config_log_created	core	created	config_log	config_log	2406	c	0	1	10	0	2	0	\N	0	{"name":"enablegradecache","oldvalue":null,"value":"0","plugin":"qtype_coderunner"}	1768247172	cli	\N	\N
+2571	\\core\\event\\config_log_created	core	created	config_log	config_log	2407	c	0	1	10	0	2	0	\N	0	{"name":"ideone_user","oldvalue":null,"value":"","plugin":"qtype_coderunner"}	1768247172	cli	\N	\N
+2572	\\core\\event\\config_log_created	core	created	config_log	config_log	2408	c	0	1	10	0	2	0	\N	0	{"name":"ideone_password","oldvalue":null,"value":"","plugin":"qtype_coderunner"}	1768247172	cli	\N	\N
+2573	\\core\\event\\config_log_created	core	created	config_log	config_log	2409	c	0	1	10	0	2	0	\N	0	{"name":"wsenabled","oldvalue":null,"value":"0","plugin":"qtype_coderunner"}	1768247172	cli	\N	\N
+2574	\\core\\event\\config_log_created	core	created	config_log	config_log	2410	c	0	1	10	0	2	0	\N	0	{"name":"wsjobeserver","oldvalue":null,"value":"","plugin":"qtype_coderunner"}	1768247172	cli	\N	\N
+2575	\\core\\event\\config_log_created	core	created	config_log	config_log	2411	c	0	1	10	0	2	0	\N	0	{"name":"wsloggingenabled","oldvalue":null,"value":"1","plugin":"qtype_coderunner"}	1768247172	cli	\N	\N
+2576	\\core\\event\\config_log_created	core	created	config_log	config_log	2412	c	0	1	10	0	2	0	\N	0	{"name":"wsmaxhourlyrate","oldvalue":null,"value":"200","plugin":"qtype_coderunner"}	1768247172	cli	\N	\N
+2577	\\core\\event\\config_log_created	core	created	config_log	config_log	2413	c	0	1	10	0	2	0	\N	0	{"name":"wsmaxcputime","oldvalue":null,"value":"5","plugin":"qtype_coderunner"}	1768247172	cli	\N	\N
+2578	\\core\\event\\config_log_created	core	created	config_log	config_log	2414	c	0	1	10	0	2	0	\N	0	{"name":"quizzescalcurl","oldvalue":null,"value":"https:\\/\\/calcme.com","plugin":"qtype_wq"}	1768247172	cli	\N	\N
+2579	\\core\\event\\config_log_created	core	created	config_log	config_log	2415	c	0	1	10	0	2	0	\N	0	{"name":"quizzesgraphurl","oldvalue":null,"value":"https:\\/\\/www.wiris.net\\/demo\\/graph","plugin":"qtype_wq"}	1768247172	cli	\N	\N
+2580	\\core\\event\\config_log_created	core	created	config_log	config_log	2416	c	0	1	10	0	2	0	\N	0	{"name":"maxconnections_disabled","oldvalue":null,"value":"0","plugin":"qtype_wq"}	1768247172	cli	\N	\N
+2581	\\core\\event\\config_log_created	core	created	config_log	config_log	2417	c	0	1	10	0	2	0	\N	0	{"name":"mathjax_compatibity","oldvalue":null,"value":"0","plugin":"qtype_wq"}	1768247172	cli	\N	\N
+2582	\\core\\event\\config_log_created	core	created	config_log	config_log	2418	c	0	1	10	0	2	0	\N	0	{"name":"log_server_errors","oldvalue":null,"value":"0","plugin":"qtype_wq"}	1768247172	cli	\N	\N
+2583	\\core\\event\\config_log_created	core	created	config_log	config_log	2419	c	0	1	10	0	2	0	\N	0	{"name":"coursecreationguide","oldvalue":null,"value":"https:\\/\\/moodle.academy\\/coursequickstart","plugin":null}	1768247172	cli	\N	\N
+2584	\\core\\event\\config_log_created	core	created	config_log	config_log	2420	c	0	1	10	0	2	0	\N	0	{"name":"scsspre","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2585	\\core\\event\\config_log_created	core	created	config_log	config_log	2421	c	0	1	10	0	2	0	\N	0	{"name":"scss","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2586	\\core\\event\\config_log_created	core	created	config_log	config_log	2422	c	0	1	10	0	2	0	\N	0	{"name":"extscsssource","oldvalue":null,"value":"0","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2587	\\core\\event\\config_log_created	core	created	config_log	config_log	2423	c	0	1	10	0	2	0	\N	0	{"name":"extscssurlpre","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2588	\\core\\event\\config_log_created	core	created	config_log	config_log	2424	c	0	1	10	0	2	0	\N	0	{"name":"extscssurlpost","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2589	\\core\\event\\config_log_created	core	created	config_log	config_log	2425	c	0	1	10	0	2	0	\N	0	{"name":"extscssgithubtoken","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2590	\\core\\event\\config_log_created	core	created	config_log	config_log	2426	c	0	1	10	0	2	0	\N	0	{"name":"extscssgithubuser","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2591	\\core\\event\\config_log_created	core	created	config_log	config_log	2427	c	0	1	10	0	2	0	\N	0	{"name":"extscssgithubrepo","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2592	\\core\\event\\config_log_created	core	created	config_log	config_log	2428	c	0	1	10	0	2	0	\N	0	{"name":"extscssgithubprefilepath","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2593	\\core\\event\\config_log_created	core	created	config_log	config_log	2429	c	0	1	10	0	2	0	\N	0	{"name":"extscssgithubpostfilepath","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2594	\\core\\event\\config_log_created	core	created	config_log	config_log	2430	c	0	1	10	0	2	0	\N	0	{"name":"extscssvalidation","oldvalue":null,"value":"yes","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2595	\\core\\event\\config_log_created	core	created	config_log	config_log	2431	c	0	1	10	0	2	0	\N	0	{"name":"coursecontentmaxwidth","oldvalue":null,"value":"830px","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2596	\\core\\event\\config_log_created	core	created	config_log	config_log	2432	c	0	1	10	0	2	0	\N	0	{"name":"mediumcontentmaxwidth","oldvalue":null,"value":"1120px","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2597	\\core\\event\\config_log_created	core	created	config_log	config_log	2433	c	0	1	10	0	2	0	\N	0	{"name":"courseindexdrawerwidth","oldvalue":null,"value":"285px","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2598	\\core\\event\\config_log_created	core	created	config_log	config_log	2434	c	0	1	10	0	2	0	\N	0	{"name":"blockdrawerwidth","oldvalue":null,"value":"315px","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2599	\\core\\event\\config_log_created	core	created	config_log	config_log	2435	c	0	1	10	0	2	0	\N	0	{"name":"logo","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2600	\\core\\event\\config_log_created	core	created	config_log	config_log	2436	c	0	1	10	0	2	0	\N	0	{"name":"logocompact","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2601	\\core\\event\\config_log_created	core	created	config_log	config_log	2437	c	0	1	10	0	2	0	\N	0	{"name":"favicon","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2602	\\core\\event\\config_log_created	core	created	config_log	config_log	2438	c	0	1	10	0	2	0	\N	0	{"name":"backgroundimage","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2603	\\core\\event\\config_log_created	core	created	config_log	config_log	2439	c	0	1	10	0	2	0	\N	0	{"name":"backgroundimageposition","oldvalue":null,"value":"left top","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2604	\\core\\event\\config_log_created	core	created	config_log	config_log	2440	c	0	1	10	0	2	0	\N	0	{"name":"brandcolor","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2605	\\core\\event\\config_log_created	core	created	config_log	config_log	2441	c	0	1	10	0	2	0	\N	0	{"name":"bootstrapcolorsuccess","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2606	\\core\\event\\config_log_created	core	created	config_log	config_log	2442	c	0	1	10	0	2	0	\N	0	{"name":"bootstrapcolorinfo","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2607	\\core\\event\\config_log_created	core	created	config_log	config_log	2443	c	0	1	10	0	2	0	\N	0	{"name":"bootstrapcolorwarning","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2608	\\core\\event\\config_log_created	core	created	config_log	config_log	2444	c	0	1	10	0	2	0	\N	0	{"name":"bootstrapcolordanger","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2609	\\core\\event\\config_log_created	core	created	config_log	config_log	2445	c	0	1	10	0	2	0	\N	0	{"name":"maxlogowidth","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2610	\\core\\event\\config_log_created	core	created	config_log	config_log	2446	c	0	1	10	0	2	0	\N	0	{"name":"navbarcolor","oldvalue":null,"value":"light","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2611	\\core\\event\\config_log_created	core	created	config_log	config_log	2447	c	0	1	10	0	2	0	\N	0	{"name":"activityiconcoloradministration","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2612	\\core\\event\\config_log_created	core	created	config_log	config_log	2448	c	0	1	10	0	2	0	\N	0	{"name":"activityiconcolorassessment","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2613	\\core\\event\\config_log_created	core	created	config_log	config_log	2449	c	0	1	10	0	2	0	\N	0	{"name":"activityiconcolorcollaboration","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2614	\\core\\event\\config_log_created	core	created	config_log	config_log	2450	c	0	1	10	0	2	0	\N	0	{"name":"activityiconcolorcommunication","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2615	\\core\\event\\config_log_created	core	created	config_log	config_log	2451	c	0	1	10	0	2	0	\N	0	{"name":"activityiconcolorcontent","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2616	\\core\\event\\config_log_created	core	created	config_log	config_log	2452	c	0	1	10	0	2	0	\N	0	{"name":"activityiconcolorinteractivecontent","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2617	\\core\\event\\config_log_created	core	created	config_log	config_log	2453	c	0	1	10	0	2	0	\N	0	{"name":"activityiconcolorinterface","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2618	\\core\\event\\config_log_created	core	created	config_log	config_log	2454	c	0	1	10	0	2	0	\N	0	{"name":"activityiconcolorfidelity","oldvalue":null,"value":"1","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2619	\\core\\event\\config_log_created	core	created	config_log	config_log	2455	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposeassign","oldvalue":null,"value":"assessment","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2620	\\core\\event\\config_log_created	core	created	config_log	config_log	2456	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposebook","oldvalue":null,"value":"content","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2621	\\core\\event\\config_log_created	core	created	config_log	config_log	2457	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposechoice","oldvalue":null,"value":"communication","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2622	\\core\\event\\config_log_created	core	created	config_log	config_log	2458	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposedata","oldvalue":null,"value":"collaboration","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2623	\\core\\event\\config_log_created	core	created	config_log	config_log	2459	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposefeedback","oldvalue":null,"value":"communication","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2624	\\core\\event\\config_log_created	core	created	config_log	config_log	2460	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposefolder","oldvalue":null,"value":"content","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2625	\\core\\event\\config_log_created	core	created	config_log	config_log	2461	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposeforum","oldvalue":null,"value":"collaboration","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2626	\\core\\event\\config_log_created	core	created	config_log	config_log	2462	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposeglossary","oldvalue":null,"value":"collaboration","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2627	\\core\\event\\config_log_created	core	created	config_log	config_log	2463	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposeimscp","oldvalue":null,"value":"interactivecontent","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2628	\\core\\event\\config_log_created	core	created	config_log	config_log	2464	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposelabel","oldvalue":null,"value":"content","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2629	\\core\\event\\config_log_created	core	created	config_log	config_log	2465	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposelesson","oldvalue":null,"value":"interactivecontent","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2630	\\core\\event\\config_log_created	core	created	config_log	config_log	2466	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposelti","oldvalue":null,"value":"other","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2631	\\core\\event\\config_log_created	core	created	config_log	config_log	2467	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposepage","oldvalue":null,"value":"content","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2632	\\core\\event\\config_log_created	core	created	config_log	config_log	2468	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposequiz","oldvalue":null,"value":"assessment","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2633	\\core\\event\\config_log_created	core	created	config_log	config_log	2469	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposeresource","oldvalue":null,"value":"content","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2634	\\core\\event\\config_log_created	core	created	config_log	config_log	2470	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposescorm","oldvalue":null,"value":"interactivecontent","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2635	\\core\\event\\config_log_created	core	created	config_log	config_log	2471	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposesurvey","oldvalue":null,"value":"communication","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2636	\\core\\event\\config_log_created	core	created	config_log	config_log	2472	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposeurl","oldvalue":null,"value":"content","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2637	\\core\\event\\config_log_created	core	created	config_log	config_log	2473	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposewiki","oldvalue":null,"value":"collaboration","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2638	\\core\\event\\config_log_created	core	created	config_log	config_log	2474	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposeworkshop","oldvalue":null,"value":"assessment","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2639	\\core\\event\\config_log_created	core	created	config_log	config_log	2475	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposechoicegroup","oldvalue":null,"value":"collaboration","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2640	\\core\\event\\config_log_created	core	created	config_log	config_log	2476	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposegeogebra","oldvalue":null,"value":"assessment","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2641	\\core\\event\\config_log_created	core	created	config_log	config_log	2477	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposehotpot","oldvalue":null,"value":"assessment","plugin":"theme_boost_union"}	1768247172	cli	\N	\N
+2642	\\core\\event\\config_log_created	core	created	config_log	config_log	2478	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposehvp","oldvalue":null,"value":"other","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2643	\\core\\event\\config_log_created	core	created	config_log	config_log	2479	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposejclic","oldvalue":null,"value":"assessment","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2644	\\core\\event\\config_log_created	core	created	config_log	config_log	2480	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposequestionnaire","oldvalue":null,"value":"communication","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2645	\\core\\event\\config_log_created	core	created	config_log	config_log	2481	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposeqv","oldvalue":null,"value":"other","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2646	\\core\\event\\config_log_created	core	created	config_log	config_log	2482	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposercontent","oldvalue":null,"value":"assessment","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2647	\\core\\event\\config_log_created	core	created	config_log	config_log	2483	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposeh5pactivity","oldvalue":null,"value":"interactivecontent","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2648	\\core\\event\\config_log_created	core	created	config_log	config_log	2484	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposeattendance","oldvalue":null,"value":"administration","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2649	\\core\\event\\config_log_created	core	created	config_log	config_log	2485	c	0	1	10	0	2	0	\N	0	{"name":"activitypurposejournal","oldvalue":null,"value":"collaboration","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2650	\\core\\event\\config_log_created	core	created	config_log	config_log	2486	c	0	1	10	0	2	0	\N	0	{"name":"modiconsenable","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2651	\\core\\event\\config_log_created	core	created	config_log	config_log	2487	c	0	1	10	0	2	0	\N	0	{"name":"modiconsfiles","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2652	\\core\\event\\config_log_created	core	created	config_log	config_log	2488	c	0	1	10	0	2	0	\N	0	{"name":"calendareventcolormaincategory","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2653	\\core\\event\\config_log_created	core	created	config_log	config_log	2489	c	0	1	10	0	2	0	\N	0	{"name":"calendareventcolorbordercategory","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2654	\\core\\event\\config_log_created	core	created	config_log	config_log	2490	c	0	1	10	0	2	0	\N	0	{"name":"calendareventcolormaincourse","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2655	\\core\\event\\config_log_created	core	created	config_log	config_log	2491	c	0	1	10	0	2	0	\N	0	{"name":"calendareventcolorbordercourse","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2656	\\core\\event\\config_log_created	core	created	config_log	config_log	2492	c	0	1	10	0	2	0	\N	0	{"name":"calendareventcolormaingroup","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2657	\\core\\event\\config_log_created	core	created	config_log	config_log	2493	c	0	1	10	0	2	0	\N	0	{"name":"calendareventcolorbordergroup","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2658	\\core\\event\\config_log_created	core	created	config_log	config_log	2494	c	0	1	10	0	2	0	\N	0	{"name":"calendareventcolormainuser","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2659	\\core\\event\\config_log_created	core	created	config_log	config_log	2495	c	0	1	10	0	2	0	\N	0	{"name":"calendareventcolorborderuser","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2660	\\core\\event\\config_log_created	core	created	config_log	config_log	2496	c	0	1	10	0	2	0	\N	0	{"name":"calendareventcolormainsite","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2661	\\core\\event\\config_log_created	core	created	config_log	config_log	2497	c	0	1	10	0	2	0	\N	0	{"name":"calendareventcolorbordersite","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2662	\\core\\event\\config_log_created	core	created	config_log	config_log	2498	c	0	1	10	0	2	0	\N	0	{"name":"calendareventcolormainother","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2663	\\core\\event\\config_log_created	core	created	config_log	config_log	2499	c	0	1	10	0	2	0	\N	0	{"name":"calendareventcolorborderother","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2664	\\core\\event\\config_log_created	core	created	config_log	config_log	2500	c	0	1	10	0	2	0	\N	0	{"name":"calendariconscolor","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2665	\\core\\event\\config_log_created	core	created	config_log	config_log	2501	c	0	1	10	0	2	0	\N	0	{"name":"loginbackgroundimage","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2666	\\core\\event\\config_log_created	core	created	config_log	config_log	2502	c	0	1	10	0	2	0	\N	0	{"name":"loginbackgroundimageposition","oldvalue":null,"value":"left top","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2667	\\core\\event\\config_log_created	core	created	config_log	config_log	2503	c	0	1	10	0	2	0	\N	0	{"name":"loginformposition","oldvalue":null,"value":"center","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2668	\\core\\event\\config_log_created	core	created	config_log	config_log	2504	c	0	1	10	0	2	0	\N	0	{"name":"loginformtransparency","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2669	\\core\\event\\config_log_created	core	created	config_log	config_log	2505	c	0	1	10	0	2	0	\N	0	{"name":"loginlocalloginenable","oldvalue":null,"value":"yes","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2670	\\core\\event\\config_log_created	core	created	config_log	config_log	2506	c	0	1	10	0	2	0	\N	0	{"name":"loginlocalshowintro","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2671	\\core\\event\\config_log_created	core	created	config_log	config_log	2507	c	0	1	10	0	2	0	\N	0	{"name":"loginidpshowintro","oldvalue":null,"value":"yes","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2672	\\core\\event\\config_log_created	core	created	config_log	config_log	2508	c	0	1	10	0	2	0	\N	0	{"name":"loginorderlocal","oldvalue":null,"value":"1","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2673	\\core\\event\\config_log_created	core	created	config_log	config_log	2509	c	0	1	10	0	2	0	\N	0	{"name":"loginorderidp","oldvalue":null,"value":"2","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2674	\\core\\event\\config_log_created	core	created	config_log	config_log	2510	c	0	1	10	0	2	0	\N	0	{"name":"loginorderfirsttimesignup","oldvalue":null,"value":"3","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2675	\\core\\event\\config_log_created	core	created	config_log	config_log	2511	c	0	1	10	0	2	0	\N	0	{"name":"loginorderguest","oldvalue":null,"value":"4","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2676	\\core\\event\\config_log_created	core	created	config_log	config_log	2512	c	0	1	10	0	2	0	\N	0	{"name":"sideentranceloginenable","oldvalue":null,"value":"auto","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2677	\\core\\event\\config_log_created	core	created	config_log	config_log	2513	c	0	1	10	0	2	0	\N	0	{"name":"courseoverviewshowcourseimages","oldvalue":null,"value":"card,list,summary","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2678	\\core\\event\\config_log_created	core	created	config_log	config_log	2514	c	0	1	10	0	2	0	\N	0	{"name":"courseoverviewshowcourseprogress","oldvalue":null,"value":"yes","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2679	\\core\\event\\config_log_created	core	created	config_log	config_log	2515	c	0	1	10	0	2	0	\N	0	{"name":"courselistingpresentation","oldvalue":null,"value":"nochange","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2680	\\core\\event\\config_log_created	core	created	config_log	config_log	2516	c	0	1	10	0	2	0	\N	0	{"name":"coursecardscolumncount","oldvalue":null,"value":"3","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2681	\\core\\event\\config_log_created	core	created	config_log	config_log	2517	c	0	1	10	0	2	0	\N	0	{"name":"courselistinghowimage","oldvalue":null,"value":"yes","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2682	\\core\\event\\config_log_created	core	created	config_log	config_log	2518	c	0	1	10	0	2	0	\N	0	{"name":"courselistingshowcontacts","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2683	\\core\\event\\config_log_created	core	created	config_log	config_log	2519	c	0	1	10	0	2	0	\N	0	{"name":"courselistinghowshortname","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2684	\\core\\event\\config_log_created	core	created	config_log	config_log	2520	c	0	1	10	0	2	0	\N	0	{"name":"courselistinghowcategory","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2685	\\core\\event\\config_log_created	core	created	config_log	config_log	2521	c	0	1	10	0	2	0	\N	0	{"name":"courselistinghowprogress","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2686	\\core\\event\\config_log_created	core	created	config_log	config_log	2522	c	0	1	10	0	2	0	\N	0	{"name":"courselistingprogressstyle","oldvalue":null,"value":"percentage","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2687	\\core\\event\\config_log_created	core	created	config_log	config_log	2523	c	0	1	10	0	2	0	\N	0	{"name":"courselistinghowenrolicons","oldvalue":null,"value":"yes","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2688	\\core\\event\\config_log_created	core	created	config_log	config_log	2524	c	0	1	10	0	2	0	\N	0	{"name":"courselistingshowfields","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2689	\\core\\event\\config_log_created	core	created	config_log	config_log	2525	c	0	1	10	0	2	0	\N	0	{"name":"courselistingselectfields","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2690	\\core\\event\\config_log_created	core	created	config_log	config_log	2526	c	0	1	10	0	2	0	\N	0	{"name":"courselistingstylefields","oldvalue":null,"value":"text","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2691	\\core\\event\\config_log_created	core	created	config_log	config_log	2527	c	0	1	10	0	2	0	\N	0	{"name":"courselistinghowgoto","oldvalue":null,"value":"yes","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2692	\\core\\event\\config_log_created	core	created	config_log	config_log	2528	c	0	1	10	0	2	0	\N	0	{"name":"courselistinghowpopup","oldvalue":null,"value":"yes","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2693	\\core\\event\\config_log_created	core	created	config_log	config_log	2529	c	0	1	10	0	2	0	\N	0	{"name":"categorylistingpresentation","oldvalue":null,"value":"nochange","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2694	\\core\\event\\config_log_created	core	created	config_log	config_log	2530	c	0	1	10	0	2	0	\N	0	{"name":"timelinetintenabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2695	\\core\\event\\config_log_created	core	created	config_log	config_log	2531	c	0	1	10	0	2	0	\N	0	{"name":"upcomingeventstintenabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2696	\\core\\event\\config_log_created	core	created	config_log	config_log	2532	c	0	1	10	0	2	0	\N	0	{"name":"recentlyaccesseditemstintenabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2697	\\core\\event\\config_log_created	core	created	config_log	config_log	2533	c	0	1	10	0	2	0	\N	0	{"name":"activitiestintenabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2698	\\core\\event\\config_log_created	core	created	config_log	config_log	2534	c	0	1	10	0	2	0	\N	0	{"name":"courseheaderimageenabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2699	\\core\\event\\config_log_created	core	created	config_log	config_log	2535	c	0	1	10	0	2	0	\N	0	{"name":"courseheaderimagefallback","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2700	\\core\\event\\config_log_created	core	created	config_log	config_log	2536	c	0	1	10	0	2	0	\N	0	{"name":"courseheaderimagelayout","oldvalue":null,"value":"headingabove","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2701	\\core\\event\\config_log_created	core	created	config_log	config_log	2537	c	0	1	10	0	2	0	\N	0	{"name":"courseheaderimageheight","oldvalue":null,"value":"150px","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2702	\\core\\event\\config_log_created	core	created	config_log	config_log	2538	c	0	1	10	0	2	0	\N	0	{"name":"courseheaderimageposition","oldvalue":null,"value":"center center","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2703	\\core\\event\\config_log_created	core	created	config_log	config_log	2539	c	0	1	10	0	2	0	\N	0	{"name":"courseindexmodiconenabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2704	\\core\\event\\config_log_created	core	created	config_log	config_log	2540	c	0	1	10	0	2	0	\N	0	{"name":"courseindexcompletioninfoposition","oldvalue":null,"value":"endofline","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2705	\\core\\event\\config_log_created	core	created	config_log	config_log	2541	c	0	1	10	0	2	0	\N	0	{"name":"additionalresources","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2706	\\core\\event\\config_log_created	core	created	config_log	config_log	2542	c	0	1	10	0	2	0	\N	0	{"name":"customfonts","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2707	\\core\\event\\config_log_created	core	created	config_log	config_log	2543	c	0	1	10	0	2	0	\N	0	{"name":"cssh5p","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2708	\\core\\event\\config_log_created	core	created	config_log	config_log	2544	c	0	1	10	0	2	0	\N	0	{"name":"h5pcontentmaxwidth","oldvalue":null,"value":"960px","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2709	\\core\\event\\config_log_created	core	created	config_log	config_log	2545	c	0	1	10	0	2	0	\N	0	{"name":"mobilescss","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2710	\\core\\event\\config_log_created	core	created	config_log	config_log	2546	c	0	1	10	0	2	0	\N	0	{"name":"touchiconfilesios","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2711	\\core\\event\\config_log_created	core	created	config_log	config_log	2547	c	0	1	10	0	2	0	\N	0	{"name":"hidenodesprimarynavigation","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2712	\\core\\event\\config_log_created	core	created	config_log	config_log	2548	c	0	1	10	0	2	0	\N	0	{"name":"alternativelogolinkurl","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2713	\\core\\event\\config_log_created	core	created	config_log	config_log	2549	c	0	1	10	0	2	0	\N	0	{"name":"showfullnameinusermenu","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2714	\\core\\event\\config_log_created	core	created	config_log	config_log	2550	c	0	1	10	0	2	0	\N	0	{"name":"addpreferredlang","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2715	\\core\\event\\config_log_created	core	created	config_log	config_log	2551	c	0	1	10	0	2	0	\N	0	{"name":"loginlinkbuttonenabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2716	\\core\\event\\config_log_created	core	created	config_log	config_log	2552	c	0	1	10	0	2	0	\N	0	{"name":"shownavbarstarredcourses","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2717	\\core\\event\\config_log_created	core	created	config_log	config_log	2553	c	0	1	10	0	2	0	\N	0	{"name":"starredcourseslinktarget","oldvalue":null,"value":"mycourses","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2718	\\core\\event\\config_log_created	core	created	config_log	config_log	2554	c	0	1	10	0	2	0	\N	0	{"name":"categorybreadcrumbs","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2719	\\core\\event\\config_log_created	core	created	config_log	config_log	2555	c	0	1	10	0	2	0	\N	0	{"name":"backtotopbutton","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2720	\\core\\event\\config_log_created	core	created	config_log	config_log	2556	c	0	1	10	0	2	0	\N	0	{"name":"scrollspy","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2721	\\core\\event\\config_log_created	core	created	config_log	config_log	2557	c	0	1	10	0	2	0	\N	0	{"name":"activitynavigation","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2722	\\core\\event\\config_log_created	core	created	config_log	config_log	2558	c	0	1	10	0	2	0	\N	0	{"name":"unaddableblocks","oldvalue":null,"value":"navigation,settings,course_list,section_links","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2723	\\core\\event\\config_log_created	core	created	config_log	config_log	2559	c	0	1	10	0	2	0	\N	0	{"name":"blockregionsforstandard","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2724	\\core\\event\\config_log_created	core	created	config_log	config_log	2560	c	0	1	10	0	2	0	\N	0	{"name":"blockregionsforadmin","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2725	\\core\\event\\config_log_created	core	created	config_log	config_log	2561	c	0	1	10	0	2	0	\N	0	{"name":"blockregionsforcoursecategory","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2726	\\core\\event\\config_log_created	core	created	config_log	config_log	2562	c	0	1	10	0	2	0	\N	0	{"name":"blockregionsforincourse","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2727	\\core\\event\\config_log_created	core	created	config_log	config_log	2563	c	0	1	10	0	2	0	\N	0	{"name":"blockregionsformypublic","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2728	\\core\\event\\config_log_created	core	created	config_log	config_log	2564	c	0	1	10	0	2	0	\N	0	{"name":"blockregionsforreport","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2729	\\core\\event\\config_log_created	core	created	config_log	config_log	2565	c	0	1	10	0	2	0	\N	0	{"name":"blockregionsforcourse","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2730	\\core\\event\\config_log_created	core	created	config_log	config_log	2566	c	0	1	10	0	2	0	\N	0	{"name":"blockregionsforfrontpage","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2731	\\core\\event\\config_log_created	core	created	config_log	config_log	2567	c	0	1	10	0	2	0	\N	0	{"name":"blockregionsformydashboard","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2732	\\core\\event\\config_log_created	core	created	config_log	config_log	2568	c	0	1	10	0	2	0	\N	0	{"name":"blockregionoutsideleftwidth","oldvalue":null,"value":"300px","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2733	\\core\\event\\config_log_created	core	created	config_log	config_log	2569	c	0	1	10	0	2	0	\N	0	{"name":"blockregionoutsiderightwidth","oldvalue":null,"value":"300px","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2734	\\core\\event\\config_log_created	core	created	config_log	config_log	2570	c	0	1	10	0	2	0	\N	0	{"name":"blockregionoutsidetopwidth","oldvalue":null,"value":"fullwidth","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2735	\\core\\event\\config_log_created	core	created	config_log	config_log	2571	c	0	1	10	0	2	0	\N	0	{"name":"blockregionoutsidebottomwidth","oldvalue":null,"value":"fullwidth","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2736	\\core\\event\\config_log_created	core	created	config_log	config_log	2572	c	0	1	10	0	2	0	\N	0	{"name":"blockregionfooterwidth","oldvalue":null,"value":"fullwidth","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2737	\\core\\event\\config_log_created	core	created	config_log	config_log	2573	c	0	1	10	0	2	0	\N	0	{"name":"outsideregionsplacement","oldvalue":null,"value":"nextmaincontent","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2738	\\core\\event\\config_log_created	core	created	config_log	config_log	2574	c	0	1	10	0	2	0	\N	0	{"name":"showsitehomerighthandblockdraweronvisit","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2739	\\core\\event\\config_log_created	core	created	config_log	config_log	2575	c	0	1	10	0	2	0	\N	0	{"name":"showsitehomerighthandblockdraweronfirstlogin","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2740	\\core\\event\\config_log_created	core	created	config_log	config_log	2576	c	0	1	10	0	2	0	\N	0	{"name":"showsitehomerighthandblockdraweronguestlogin","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2741	\\core\\event\\config_log_created	core	created	config_log	config_log	2577	c	0	1	10	0	2	0	\N	0	{"name":"policyoverviewnavigation","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2742	\\core\\event\\config_log_created	core	created	config_log	config_log	2578	c	0	1	10	0	2	0	\N	0	{"name":"markexternallinks","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2743	\\core\\event\\config_log_created	core	created	config_log	config_log	2579	c	0	1	10	0	2	0	\N	0	{"name":"markexternallinksscope","oldvalue":null,"value":"wholepage","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2744	\\core\\event\\config_log_created	core	created	config_log	config_log	2580	c	0	1	10	0	2	0	\N	0	{"name":"markmailtolinks","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2745	\\core\\event\\config_log_created	core	created	config_log	config_log	2581	c	0	1	10	0	2	0	\N	0	{"name":"markmailtolinksscope","oldvalue":null,"value":"wholepage","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2746	\\core\\event\\config_log_created	core	created	config_log	config_log	2582	c	0	1	10	0	2	0	\N	0	{"name":"markbrokenlinks","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2747	\\core\\event\\config_log_created	core	created	config_log	config_log	2583	c	0	1	10	0	2	0	\N	0	{"name":"javascriptdisabledhint","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2748	\\core\\event\\config_log_created	core	created	config_log	config_log	2584	c	0	1	10	0	2	0	\N	0	{"name":"footnote","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2749	\\core\\event\\config_log_created	core	created	config_log	config_log	2585	c	0	1	10	0	2	0	\N	0	{"name":"enablefooterbutton","oldvalue":null,"value":"enablefooterbuttondesktop","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2750	\\core\\event\\config_log_created	core	created	config_log	config_log	2586	c	0	1	10	0	2	0	\N	0	{"name":"footersuppressicons","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2751	\\core\\event\\config_log_created	core	created	config_log	config_log	2587	c	0	1	10	0	2	0	\N	0	{"name":"footersuppresschat","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2752	\\core\\event\\config_log_created	core	created	config_log	config_log	2588	c	0	1	10	0	2	0	\N	0	{"name":"footersuppresshelp","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2753	\\core\\event\\config_log_created	core	created	config_log	config_log	2589	c	0	1	10	0	2	0	\N	0	{"name":"footersuppressservices","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2754	\\core\\event\\config_log_created	core	created	config_log	config_log	2590	c	0	1	10	0	2	0	\N	0	{"name":"footersuppresscontact","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2755	\\core\\event\\config_log_created	core	created	config_log	config_log	2591	c	0	1	10	0	2	0	\N	0	{"name":"footersuppresslogininfo","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2756	\\core\\event\\config_log_created	core	created	config_log	config_log	2592	c	0	1	10	0	2	0	\N	0	{"name":"footersuppressusertour","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2757	\\core\\event\\config_log_created	core	created	config_log	config_log	2593	c	0	1	10	0	2	0	\N	0	{"name":"footersuppressthemeswitch","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2758	\\core\\event\\config_log_created	core	created	config_log	config_log	2594	c	0	1	10	0	2	0	\N	0	{"name":"footersuppresspowered","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2759	\\core\\event\\config_log_created	core	created	config_log	config_log	2595	c	0	1	10	0	2	0	\N	0	{"name":"footersuppressstandardfooter_tool_dataprivacy","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2760	\\core\\event\\config_log_created	core	created	config_log	config_log	2596	c	0	1	10	0	2	0	\N	0	{"name":"footersuppressstandardfooter_core_userfeedback","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2761	\\core\\event\\config_log_created	core	created	config_log	config_log	2597	c	0	1	10	0	2	0	\N	0	{"name":"footersuppressstandardfooter_tool_policy","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2762	\\core\\event\\config_log_created	core	created	config_log	config_log	2598	c	0	1	10	0	2	0	\N	0	{"name":"footersuppressstandardfooter_tool_mobile","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2763	\\core\\event\\config_log_created	core	created	config_log	config_log	2599	c	0	1	10	0	2	0	\N	0	{"name":"enableaboutus","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2764	\\core\\event\\config_log_created	core	created	config_log	config_log	2600	c	0	1	10	0	2	0	\N	0	{"name":"aboutuscontent","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2765	\\core\\event\\config_log_created	core	created	config_log	config_log	2601	c	0	1	10	0	2	0	\N	0	{"name":"aboutuspagetitle","oldvalue":null,"value":"Sobre nosaltres","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2766	\\core\\event\\config_log_created	core	created	config_log	config_log	2602	c	0	1	10	0	2	0	\N	0	{"name":"aboutuslinkposition","oldvalue":null,"value":"none","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2767	\\core\\event\\config_log_created	core	created	config_log	config_log	2603	c	0	1	10	0	2	0	\N	0	{"name":"enableoffers","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2768	\\core\\event\\config_log_created	core	created	config_log	config_log	2604	c	0	1	10	0	2	0	\N	0	{"name":"offerscontent","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2769	\\core\\event\\config_log_created	core	created	config_log	config_log	2605	c	0	1	10	0	2	0	\N	0	{"name":"offerspagetitle","oldvalue":null,"value":"Ofertes","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2770	\\core\\event\\config_log_created	core	created	config_log	config_log	2606	c	0	1	10	0	2	0	\N	0	{"name":"offerslinkposition","oldvalue":null,"value":"none","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2771	\\core\\event\\config_log_created	core	created	config_log	config_log	2607	c	0	1	10	0	2	0	\N	0	{"name":"enableimprint","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2772	\\core\\event\\config_log_created	core	created	config_log	config_log	2608	c	0	1	10	0	2	0	\N	0	{"name":"imprintcontent","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2773	\\core\\event\\config_log_created	core	created	config_log	config_log	2609	c	0	1	10	0	2	0	\N	0	{"name":"imprintpagetitle","oldvalue":null,"value":"Av\\u00eds legal","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2774	\\core\\event\\config_log_created	core	created	config_log	config_log	2610	c	0	1	10	0	2	0	\N	0	{"name":"imprintlinkposition","oldvalue":null,"value":"none","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2775	\\core\\event\\config_log_created	core	created	config_log	config_log	2611	c	0	1	10	0	2	0	\N	0	{"name":"enablecontact","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2776	\\core\\event\\config_log_created	core	created	config_log	config_log	2612	c	0	1	10	0	2	0	\N	0	{"name":"contactcontent","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2777	\\core\\event\\config_log_created	core	created	config_log	config_log	2613	c	0	1	10	0	2	0	\N	0	{"name":"contactpagetitle","oldvalue":null,"value":"Contacte","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2778	\\core\\event\\config_log_created	core	created	config_log	config_log	2614	c	0	1	10	0	2	0	\N	0	{"name":"contactlinkposition","oldvalue":null,"value":"none","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2779	\\core\\event\\config_log_created	core	created	config_log	config_log	2615	c	0	1	10	0	2	0	\N	0	{"name":"enablehelp","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2780	\\core\\event\\config_log_created	core	created	config_log	config_log	2616	c	0	1	10	0	2	0	\N	0	{"name":"helpcontent","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2781	\\core\\event\\config_log_created	core	created	config_log	config_log	2617	c	0	1	10	0	2	0	\N	0	{"name":"helppagetitle","oldvalue":null,"value":"Ajuda","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2782	\\core\\event\\config_log_created	core	created	config_log	config_log	2618	c	0	1	10	0	2	0	\N	0	{"name":"helplinkposition","oldvalue":null,"value":"none","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2783	\\core\\event\\config_log_created	core	created	config_log	config_log	2619	c	0	1	10	0	2	0	\N	0	{"name":"enablemaintenance","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2784	\\core\\event\\config_log_created	core	created	config_log	config_log	2620	c	0	1	10	0	2	0	\N	0	{"name":"maintenancecontent","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2785	\\core\\event\\config_log_created	core	created	config_log	config_log	2621	c	0	1	10	0	2	0	\N	0	{"name":"maintenancepagetitle","oldvalue":null,"value":"Manteniment","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2786	\\core\\event\\config_log_created	core	created	config_log	config_log	2622	c	0	1	10	0	2	0	\N	0	{"name":"maintenancelinkposition","oldvalue":null,"value":"none","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2787	\\core\\event\\config_log_created	core	created	config_log	config_log	2623	c	0	1	10	0	2	0	\N	0	{"name":"enablepage1","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2788	\\core\\event\\config_log_created	core	created	config_log	config_log	2624	c	0	1	10	0	2	0	\N	0	{"name":"page1content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2789	\\core\\event\\config_log_created	core	created	config_log	config_log	2625	c	0	1	10	0	2	0	\N	0	{"name":"page1pagetitle","oldvalue":null,"value":"P\\u00e0gina gen\\u00e8rica 1","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2790	\\core\\event\\config_log_created	core	created	config_log	config_log	2626	c	0	1	10	0	2	0	\N	0	{"name":"page1linkposition","oldvalue":null,"value":"none","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2791	\\core\\event\\config_log_created	core	created	config_log	config_log	2627	c	0	1	10	0	2	0	\N	0	{"name":"enablepage2","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2792	\\core\\event\\config_log_created	core	created	config_log	config_log	2628	c	0	1	10	0	2	0	\N	0	{"name":"page2content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2793	\\core\\event\\config_log_created	core	created	config_log	config_log	2629	c	0	1	10	0	2	0	\N	0	{"name":"page2pagetitle","oldvalue":null,"value":"P\\u00e0gina gen\\u00e8rica 2","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2794	\\core\\event\\config_log_created	core	created	config_log	config_log	2630	c	0	1	10	0	2	0	\N	0	{"name":"page2linkposition","oldvalue":null,"value":"none","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2795	\\core\\event\\config_log_created	core	created	config_log	config_log	2631	c	0	1	10	0	2	0	\N	0	{"name":"enablepage3","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2796	\\core\\event\\config_log_created	core	created	config_log	config_log	2632	c	0	1	10	0	2	0	\N	0	{"name":"page3content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2797	\\core\\event\\config_log_created	core	created	config_log	config_log	2633	c	0	1	10	0	2	0	\N	0	{"name":"page3pagetitle","oldvalue":null,"value":"P\\u00e0gina gen\\u00e8rica 3","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2798	\\core\\event\\config_log_created	core	created	config_log	config_log	2634	c	0	1	10	0	2	0	\N	0	{"name":"page3linkposition","oldvalue":null,"value":"none","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2799	\\core\\event\\config_log_created	core	created	config_log	config_log	2635	c	0	1	10	0	2	0	\N	0	{"name":"infobanner1enabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2800	\\core\\event\\config_log_created	core	created	config_log	config_log	2636	c	0	1	10	0	2	0	\N	0	{"name":"infobanner1content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2801	\\core\\event\\config_log_created	core	created	config_log	config_log	2637	c	0	1	10	0	2	0	\N	0	{"name":"infobanner1pages","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2802	\\core\\event\\config_log_created	core	created	config_log	config_log	2638	c	0	1	10	0	2	0	\N	0	{"name":"infobanner1bsclass","oldvalue":null,"value":"primary","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2803	\\core\\event\\config_log_created	core	created	config_log	config_log	2639	c	0	1	10	0	2	0	\N	0	{"name":"infobanner1order","oldvalue":null,"value":"1","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2804	\\core\\event\\config_log_created	core	created	config_log	config_log	2640	c	0	1	10	0	2	0	\N	0	{"name":"infobanner1mode","oldvalue":null,"value":"perp","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2805	\\core\\event\\config_log_created	core	created	config_log	config_log	2641	c	0	1	10	0	2	0	\N	0	{"name":"infobanner1dismissible","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2806	\\core\\event\\config_log_created	core	created	config_log	config_log	2642	c	0	1	10	0	2	0	\N	0	{"name":"infobanner2enabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2807	\\core\\event\\config_log_created	core	created	config_log	config_log	2643	c	0	1	10	0	2	0	\N	0	{"name":"infobanner2content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2808	\\core\\event\\config_log_created	core	created	config_log	config_log	2644	c	0	1	10	0	2	0	\N	0	{"name":"infobanner2pages","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2809	\\core\\event\\config_log_created	core	created	config_log	config_log	2645	c	0	1	10	0	2	0	\N	0	{"name":"infobanner2bsclass","oldvalue":null,"value":"primary","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2810	\\core\\event\\config_log_created	core	created	config_log	config_log	2646	c	0	1	10	0	2	0	\N	0	{"name":"infobanner2order","oldvalue":null,"value":"2","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2811	\\core\\event\\config_log_created	core	created	config_log	config_log	2647	c	0	1	10	0	2	0	\N	0	{"name":"infobanner2mode","oldvalue":null,"value":"perp","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2812	\\core\\event\\config_log_created	core	created	config_log	config_log	2648	c	0	1	10	0	2	0	\N	0	{"name":"infobanner2dismissible","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2813	\\core\\event\\config_log_created	core	created	config_log	config_log	2649	c	0	1	10	0	2	0	\N	0	{"name":"infobanner3enabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2814	\\core\\event\\config_log_created	core	created	config_log	config_log	2650	c	0	1	10	0	2	0	\N	0	{"name":"infobanner3content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2815	\\core\\event\\config_log_created	core	created	config_log	config_log	2651	c	0	1	10	0	2	0	\N	0	{"name":"infobanner3pages","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2816	\\core\\event\\config_log_created	core	created	config_log	config_log	2652	c	0	1	10	0	2	0	\N	0	{"name":"infobanner3bsclass","oldvalue":null,"value":"primary","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2817	\\core\\event\\config_log_created	core	created	config_log	config_log	2653	c	0	1	10	0	2	0	\N	0	{"name":"infobanner3order","oldvalue":null,"value":"3","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2818	\\core\\event\\config_log_created	core	created	config_log	config_log	2654	c	0	1	10	0	2	0	\N	0	{"name":"infobanner3mode","oldvalue":null,"value":"perp","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2819	\\core\\event\\config_log_created	core	created	config_log	config_log	2655	c	0	1	10	0	2	0	\N	0	{"name":"infobanner3dismissible","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2820	\\core\\event\\config_log_created	core	created	config_log	config_log	2656	c	0	1	10	0	2	0	\N	0	{"name":"infobanner4enabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2821	\\core\\event\\config_log_created	core	created	config_log	config_log	2657	c	0	1	10	0	2	0	\N	0	{"name":"infobanner4content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2822	\\core\\event\\config_log_created	core	created	config_log	config_log	2658	c	0	1	10	0	2	0	\N	0	{"name":"infobanner4pages","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2823	\\core\\event\\config_log_created	core	created	config_log	config_log	2659	c	0	1	10	0	2	0	\N	0	{"name":"infobanner4bsclass","oldvalue":null,"value":"primary","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2824	\\core\\event\\config_log_created	core	created	config_log	config_log	2660	c	0	1	10	0	2	0	\N	0	{"name":"infobanner4order","oldvalue":null,"value":"4","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2825	\\core\\event\\config_log_created	core	created	config_log	config_log	2661	c	0	1	10	0	2	0	\N	0	{"name":"infobanner4mode","oldvalue":null,"value":"perp","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2826	\\core\\event\\config_log_created	core	created	config_log	config_log	2662	c	0	1	10	0	2	0	\N	0	{"name":"infobanner4dismissible","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2827	\\core\\event\\config_log_created	core	created	config_log	config_log	2663	c	0	1	10	0	2	0	\N	0	{"name":"infobanner5enabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2828	\\core\\event\\config_log_created	core	created	config_log	config_log	2664	c	0	1	10	0	2	0	\N	0	{"name":"infobanner5content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2829	\\core\\event\\config_log_created	core	created	config_log	config_log	2665	c	0	1	10	0	2	0	\N	0	{"name":"infobanner5pages","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2830	\\core\\event\\config_log_created	core	created	config_log	config_log	2666	c	0	1	10	0	2	0	\N	0	{"name":"infobanner5bsclass","oldvalue":null,"value":"primary","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2831	\\core\\event\\config_log_created	core	created	config_log	config_log	2667	c	0	1	10	0	2	0	\N	0	{"name":"infobanner5order","oldvalue":null,"value":"5","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2832	\\core\\event\\config_log_created	core	created	config_log	config_log	2668	c	0	1	10	0	2	0	\N	0	{"name":"infobanner5mode","oldvalue":null,"value":"perp","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2833	\\core\\event\\config_log_created	core	created	config_log	config_log	2669	c	0	1	10	0	2	0	\N	0	{"name":"infobanner5dismissible","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2834	\\core\\event\\config_log_created	core	created	config_log	config_log	2670	c	0	1	10	0	2	0	\N	0	{"name":"tilefrontpageposition","oldvalue":null,"value":"1","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2835	\\core\\event\\config_log_created	core	created	config_log	config_log	2671	c	0	1	10	0	2	0	\N	0	{"name":"tilecolumns","oldvalue":null,"value":"2","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2836	\\core\\event\\config_log_created	core	created	config_log	config_log	2672	c	0	1	10	0	2	0	\N	0	{"name":"tileheight","oldvalue":null,"value":"150px","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2837	\\core\\event\\config_log_created	core	created	config_log	config_log	2673	c	0	1	10	0	2	0	\N	0	{"name":"tile1enabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2838	\\core\\event\\config_log_created	core	created	config_log	config_log	2674	c	0	1	10	0	2	0	\N	0	{"name":"tile1title","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2839	\\core\\event\\config_log_created	core	created	config_log	config_log	2675	c	0	1	10	0	2	0	\N	0	{"name":"tile1content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2840	\\core\\event\\config_log_created	core	created	config_log	config_log	2676	c	0	1	10	0	2	0	\N	0	{"name":"tile1backgroundimage","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2841	\\core\\event\\config_log_created	core	created	config_log	config_log	2677	c	0	1	10	0	2	0	\N	0	{"name":"tile1backgroundimageposition","oldvalue":null,"value":"center center","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2842	\\core\\event\\config_log_created	core	created	config_log	config_log	2678	c	0	1	10	0	2	0	\N	0	{"name":"tile1contentstyle","oldvalue":null,"value":"nochange","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2843	\\core\\event\\config_log_created	core	created	config_log	config_log	2679	c	0	1	10	0	2	0	\N	0	{"name":"tile1link","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2844	\\core\\event\\config_log_created	core	created	config_log	config_log	2680	c	0	1	10	0	2	0	\N	0	{"name":"tile1linktitle","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2845	\\core\\event\\config_log_created	core	created	config_log	config_log	2681	c	0	1	10	0	2	0	\N	0	{"name":"tile1linktarget","oldvalue":null,"value":"same","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2846	\\core\\event\\config_log_created	core	created	config_log	config_log	2682	c	0	1	10	0	2	0	\N	0	{"name":"tile1order","oldvalue":null,"value":"1","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2847	\\core\\event\\config_log_created	core	created	config_log	config_log	2683	c	0	1	10	0	2	0	\N	0	{"name":"tile2enabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2848	\\core\\event\\config_log_created	core	created	config_log	config_log	2684	c	0	1	10	0	2	0	\N	0	{"name":"tile2title","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2849	\\core\\event\\config_log_created	core	created	config_log	config_log	2685	c	0	1	10	0	2	0	\N	0	{"name":"tile2content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2850	\\core\\event\\config_log_created	core	created	config_log	config_log	2686	c	0	1	10	0	2	0	\N	0	{"name":"tile2backgroundimage","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2851	\\core\\event\\config_log_created	core	created	config_log	config_log	2687	c	0	1	10	0	2	0	\N	0	{"name":"tile2backgroundimageposition","oldvalue":null,"value":"center center","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2852	\\core\\event\\config_log_created	core	created	config_log	config_log	2688	c	0	1	10	0	2	0	\N	0	{"name":"tile2contentstyle","oldvalue":null,"value":"nochange","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2853	\\core\\event\\config_log_created	core	created	config_log	config_log	2689	c	0	1	10	0	2	0	\N	0	{"name":"tile2link","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2854	\\core\\event\\config_log_created	core	created	config_log	config_log	2690	c	0	1	10	0	2	0	\N	0	{"name":"tile2linktitle","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2855	\\core\\event\\config_log_created	core	created	config_log	config_log	2691	c	0	1	10	0	2	0	\N	0	{"name":"tile2linktarget","oldvalue":null,"value":"same","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2856	\\core\\event\\config_log_created	core	created	config_log	config_log	2692	c	0	1	10	0	2	0	\N	0	{"name":"tile2order","oldvalue":null,"value":"2","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2857	\\core\\event\\config_log_created	core	created	config_log	config_log	2693	c	0	1	10	0	2	0	\N	0	{"name":"tile3enabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2858	\\core\\event\\config_log_created	core	created	config_log	config_log	2694	c	0	1	10	0	2	0	\N	0	{"name":"tile3title","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2859	\\core\\event\\config_log_created	core	created	config_log	config_log	2695	c	0	1	10	0	2	0	\N	0	{"name":"tile3content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2860	\\core\\event\\config_log_created	core	created	config_log	config_log	2696	c	0	1	10	0	2	0	\N	0	{"name":"tile3backgroundimage","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2861	\\core\\event\\config_log_created	core	created	config_log	config_log	2697	c	0	1	10	0	2	0	\N	0	{"name":"tile3backgroundimageposition","oldvalue":null,"value":"center center","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2862	\\core\\event\\config_log_created	core	created	config_log	config_log	2698	c	0	1	10	0	2	0	\N	0	{"name":"tile3contentstyle","oldvalue":null,"value":"nochange","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2863	\\core\\event\\config_log_created	core	created	config_log	config_log	2699	c	0	1	10	0	2	0	\N	0	{"name":"tile3link","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2864	\\core\\event\\config_log_created	core	created	config_log	config_log	2700	c	0	1	10	0	2	0	\N	0	{"name":"tile3linktitle","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2865	\\core\\event\\config_log_created	core	created	config_log	config_log	2701	c	0	1	10	0	2	0	\N	0	{"name":"tile3linktarget","oldvalue":null,"value":"same","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2866	\\core\\event\\config_log_created	core	created	config_log	config_log	2702	c	0	1	10	0	2	0	\N	0	{"name":"tile3order","oldvalue":null,"value":"3","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2867	\\core\\event\\config_log_created	core	created	config_log	config_log	2703	c	0	1	10	0	2	0	\N	0	{"name":"tile4enabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2868	\\core\\event\\config_log_created	core	created	config_log	config_log	2704	c	0	1	10	0	2	0	\N	0	{"name":"tile4title","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2869	\\core\\event\\config_log_created	core	created	config_log	config_log	2705	c	0	1	10	0	2	0	\N	0	{"name":"tile4content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2870	\\core\\event\\config_log_created	core	created	config_log	config_log	2706	c	0	1	10	0	2	0	\N	0	{"name":"tile4backgroundimage","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2871	\\core\\event\\config_log_created	core	created	config_log	config_log	2707	c	0	1	10	0	2	0	\N	0	{"name":"tile4backgroundimageposition","oldvalue":null,"value":"center center","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2872	\\core\\event\\config_log_created	core	created	config_log	config_log	2708	c	0	1	10	0	2	0	\N	0	{"name":"tile4contentstyle","oldvalue":null,"value":"nochange","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2873	\\core\\event\\config_log_created	core	created	config_log	config_log	2709	c	0	1	10	0	2	0	\N	0	{"name":"tile4link","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2874	\\core\\event\\config_log_created	core	created	config_log	config_log	2710	c	0	1	10	0	2	0	\N	0	{"name":"tile4linktitle","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2875	\\core\\event\\config_log_created	core	created	config_log	config_log	2711	c	0	1	10	0	2	0	\N	0	{"name":"tile4linktarget","oldvalue":null,"value":"same","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2876	\\core\\event\\config_log_created	core	created	config_log	config_log	2712	c	0	1	10	0	2	0	\N	0	{"name":"tile4order","oldvalue":null,"value":"4","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2877	\\core\\event\\config_log_created	core	created	config_log	config_log	2713	c	0	1	10	0	2	0	\N	0	{"name":"tile5enabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2878	\\core\\event\\config_log_created	core	created	config_log	config_log	2714	c	0	1	10	0	2	0	\N	0	{"name":"tile5title","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2879	\\core\\event\\config_log_created	core	created	config_log	config_log	2715	c	0	1	10	0	2	0	\N	0	{"name":"tile5content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2880	\\core\\event\\config_log_created	core	created	config_log	config_log	2716	c	0	1	10	0	2	0	\N	0	{"name":"tile5backgroundimage","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2881	\\core\\event\\config_log_created	core	created	config_log	config_log	2717	c	0	1	10	0	2	0	\N	0	{"name":"tile5backgroundimageposition","oldvalue":null,"value":"center center","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2882	\\core\\event\\config_log_created	core	created	config_log	config_log	2718	c	0	1	10	0	2	0	\N	0	{"name":"tile5contentstyle","oldvalue":null,"value":"nochange","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2883	\\core\\event\\config_log_created	core	created	config_log	config_log	2719	c	0	1	10	0	2	0	\N	0	{"name":"tile5link","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2884	\\core\\event\\config_log_created	core	created	config_log	config_log	2720	c	0	1	10	0	2	0	\N	0	{"name":"tile5linktitle","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2885	\\core\\event\\config_log_created	core	created	config_log	config_log	2721	c	0	1	10	0	2	0	\N	0	{"name":"tile5linktarget","oldvalue":null,"value":"same","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2886	\\core\\event\\config_log_created	core	created	config_log	config_log	2722	c	0	1	10	0	2	0	\N	0	{"name":"tile5order","oldvalue":null,"value":"5","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2887	\\core\\event\\config_log_created	core	created	config_log	config_log	2723	c	0	1	10	0	2	0	\N	0	{"name":"tile6enabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2888	\\core\\event\\config_log_created	core	created	config_log	config_log	2724	c	0	1	10	0	2	0	\N	0	{"name":"tile6title","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2889	\\core\\event\\config_log_created	core	created	config_log	config_log	2725	c	0	1	10	0	2	0	\N	0	{"name":"tile6content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2890	\\core\\event\\config_log_created	core	created	config_log	config_log	2726	c	0	1	10	0	2	0	\N	0	{"name":"tile6backgroundimage","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2891	\\core\\event\\config_log_created	core	created	config_log	config_log	2727	c	0	1	10	0	2	0	\N	0	{"name":"tile6backgroundimageposition","oldvalue":null,"value":"center center","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2892	\\core\\event\\config_log_created	core	created	config_log	config_log	2728	c	0	1	10	0	2	0	\N	0	{"name":"tile6contentstyle","oldvalue":null,"value":"nochange","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2893	\\core\\event\\config_log_created	core	created	config_log	config_log	2729	c	0	1	10	0	2	0	\N	0	{"name":"tile6link","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2894	\\core\\event\\config_log_created	core	created	config_log	config_log	2730	c	0	1	10	0	2	0	\N	0	{"name":"tile6linktitle","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2895	\\core\\event\\config_log_created	core	created	config_log	config_log	2731	c	0	1	10	0	2	0	\N	0	{"name":"tile6linktarget","oldvalue":null,"value":"same","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2896	\\core\\event\\config_log_created	core	created	config_log	config_log	2732	c	0	1	10	0	2	0	\N	0	{"name":"tile6order","oldvalue":null,"value":"6","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2897	\\core\\event\\config_log_created	core	created	config_log	config_log	2733	c	0	1	10	0	2	0	\N	0	{"name":"tile7enabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2898	\\core\\event\\config_log_created	core	created	config_log	config_log	2734	c	0	1	10	0	2	0	\N	0	{"name":"tile7title","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2899	\\core\\event\\config_log_created	core	created	config_log	config_log	2735	c	0	1	10	0	2	0	\N	0	{"name":"tile7content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2900	\\core\\event\\config_log_created	core	created	config_log	config_log	2736	c	0	1	10	0	2	0	\N	0	{"name":"tile7backgroundimage","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2901	\\core\\event\\config_log_created	core	created	config_log	config_log	2737	c	0	1	10	0	2	0	\N	0	{"name":"tile7backgroundimageposition","oldvalue":null,"value":"center center","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2902	\\core\\event\\config_log_created	core	created	config_log	config_log	2738	c	0	1	10	0	2	0	\N	0	{"name":"tile7contentstyle","oldvalue":null,"value":"nochange","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2903	\\core\\event\\config_log_created	core	created	config_log	config_log	2739	c	0	1	10	0	2	0	\N	0	{"name":"tile7link","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2904	\\core\\event\\config_log_created	core	created	config_log	config_log	2740	c	0	1	10	0	2	0	\N	0	{"name":"tile7linktitle","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2905	\\core\\event\\config_log_created	core	created	config_log	config_log	2741	c	0	1	10	0	2	0	\N	0	{"name":"tile7linktarget","oldvalue":null,"value":"same","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2906	\\core\\event\\config_log_created	core	created	config_log	config_log	2742	c	0	1	10	0	2	0	\N	0	{"name":"tile7order","oldvalue":null,"value":"7","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2907	\\core\\event\\config_log_created	core	created	config_log	config_log	2743	c	0	1	10	0	2	0	\N	0	{"name":"tile8enabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2908	\\core\\event\\config_log_created	core	created	config_log	config_log	2744	c	0	1	10	0	2	0	\N	0	{"name":"tile8title","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2909	\\core\\event\\config_log_created	core	created	config_log	config_log	2745	c	0	1	10	0	2	0	\N	0	{"name":"tile8content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2910	\\core\\event\\config_log_created	core	created	config_log	config_log	2746	c	0	1	10	0	2	0	\N	0	{"name":"tile8backgroundimage","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2911	\\core\\event\\config_log_created	core	created	config_log	config_log	2747	c	0	1	10	0	2	0	\N	0	{"name":"tile8backgroundimageposition","oldvalue":null,"value":"center center","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2912	\\core\\event\\config_log_created	core	created	config_log	config_log	2748	c	0	1	10	0	2	0	\N	0	{"name":"tile8contentstyle","oldvalue":null,"value":"nochange","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2913	\\core\\event\\config_log_created	core	created	config_log	config_log	2749	c	0	1	10	0	2	0	\N	0	{"name":"tile8link","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2914	\\core\\event\\config_log_created	core	created	config_log	config_log	2750	c	0	1	10	0	2	0	\N	0	{"name":"tile8linktitle","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2915	\\core\\event\\config_log_created	core	created	config_log	config_log	2751	c	0	1	10	0	2	0	\N	0	{"name":"tile8linktarget","oldvalue":null,"value":"same","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2916	\\core\\event\\config_log_created	core	created	config_log	config_log	2752	c	0	1	10	0	2	0	\N	0	{"name":"tile8order","oldvalue":null,"value":"8","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2917	\\core\\event\\config_log_created	core	created	config_log	config_log	2753	c	0	1	10	0	2	0	\N	0	{"name":"tile9enabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2918	\\core\\event\\config_log_created	core	created	config_log	config_log	2754	c	0	1	10	0	2	0	\N	0	{"name":"tile9title","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2919	\\core\\event\\config_log_created	core	created	config_log	config_log	2755	c	0	1	10	0	2	0	\N	0	{"name":"tile9content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2920	\\core\\event\\config_log_created	core	created	config_log	config_log	2756	c	0	1	10	0	2	0	\N	0	{"name":"tile9backgroundimage","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2921	\\core\\event\\config_log_created	core	created	config_log	config_log	2757	c	0	1	10	0	2	0	\N	0	{"name":"tile9backgroundimageposition","oldvalue":null,"value":"center center","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2922	\\core\\event\\config_log_created	core	created	config_log	config_log	2758	c	0	1	10	0	2	0	\N	0	{"name":"tile9contentstyle","oldvalue":null,"value":"nochange","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2923	\\core\\event\\config_log_created	core	created	config_log	config_log	2759	c	0	1	10	0	2	0	\N	0	{"name":"tile9link","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2924	\\core\\event\\config_log_created	core	created	config_log	config_log	2760	c	0	1	10	0	2	0	\N	0	{"name":"tile9linktitle","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2925	\\core\\event\\config_log_created	core	created	config_log	config_log	2761	c	0	1	10	0	2	0	\N	0	{"name":"tile9linktarget","oldvalue":null,"value":"same","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2926	\\core\\event\\config_log_created	core	created	config_log	config_log	2762	c	0	1	10	0	2	0	\N	0	{"name":"tile9order","oldvalue":null,"value":"9","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2927	\\core\\event\\config_log_created	core	created	config_log	config_log	2763	c	0	1	10	0	2	0	\N	0	{"name":"tile10enabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2928	\\core\\event\\config_log_created	core	created	config_log	config_log	2764	c	0	1	10	0	2	0	\N	0	{"name":"tile10title","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2929	\\core\\event\\config_log_created	core	created	config_log	config_log	2765	c	0	1	10	0	2	0	\N	0	{"name":"tile10content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2930	\\core\\event\\config_log_created	core	created	config_log	config_log	2766	c	0	1	10	0	2	0	\N	0	{"name":"tile10backgroundimage","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2931	\\core\\event\\config_log_created	core	created	config_log	config_log	2767	c	0	1	10	0	2	0	\N	0	{"name":"tile10backgroundimageposition","oldvalue":null,"value":"center center","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2932	\\core\\event\\config_log_created	core	created	config_log	config_log	2768	c	0	1	10	0	2	0	\N	0	{"name":"tile10contentstyle","oldvalue":null,"value":"nochange","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2933	\\core\\event\\config_log_created	core	created	config_log	config_log	2769	c	0	1	10	0	2	0	\N	0	{"name":"tile10link","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2934	\\core\\event\\config_log_created	core	created	config_log	config_log	2770	c	0	1	10	0	2	0	\N	0	{"name":"tile10linktitle","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2935	\\core\\event\\config_log_created	core	created	config_log	config_log	2771	c	0	1	10	0	2	0	\N	0	{"name":"tile10linktarget","oldvalue":null,"value":"same","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2936	\\core\\event\\config_log_created	core	created	config_log	config_log	2772	c	0	1	10	0	2	0	\N	0	{"name":"tile10order","oldvalue":null,"value":"10","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2937	\\core\\event\\config_log_created	core	created	config_log	config_log	2773	c	0	1	10	0	2	0	\N	0	{"name":"tile11enabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2938	\\core\\event\\config_log_created	core	created	config_log	config_log	2774	c	0	1	10	0	2	0	\N	0	{"name":"tile11title","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2939	\\core\\event\\config_log_created	core	created	config_log	config_log	2775	c	0	1	10	0	2	0	\N	0	{"name":"tile11content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2940	\\core\\event\\config_log_created	core	created	config_log	config_log	2776	c	0	1	10	0	2	0	\N	0	{"name":"tile11backgroundimage","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2941	\\core\\event\\config_log_created	core	created	config_log	config_log	2777	c	0	1	10	0	2	0	\N	0	{"name":"tile11backgroundimageposition","oldvalue":null,"value":"center center","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2942	\\core\\event\\config_log_created	core	created	config_log	config_log	2778	c	0	1	10	0	2	0	\N	0	{"name":"tile11contentstyle","oldvalue":null,"value":"nochange","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2943	\\core\\event\\config_log_created	core	created	config_log	config_log	2779	c	0	1	10	0	2	0	\N	0	{"name":"tile11link","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2944	\\core\\event\\config_log_created	core	created	config_log	config_log	2780	c	0	1	10	0	2	0	\N	0	{"name":"tile11linktitle","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2945	\\core\\event\\config_log_created	core	created	config_log	config_log	2781	c	0	1	10	0	2	0	\N	0	{"name":"tile11linktarget","oldvalue":null,"value":"same","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2946	\\core\\event\\config_log_created	core	created	config_log	config_log	2782	c	0	1	10	0	2	0	\N	0	{"name":"tile11order","oldvalue":null,"value":"11","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2947	\\core\\event\\config_log_created	core	created	config_log	config_log	2783	c	0	1	10	0	2	0	\N	0	{"name":"tile12enabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2948	\\core\\event\\config_log_created	core	created	config_log	config_log	2784	c	0	1	10	0	2	0	\N	0	{"name":"tile12title","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2949	\\core\\event\\config_log_created	core	created	config_log	config_log	2785	c	0	1	10	0	2	0	\N	0	{"name":"tile12content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2950	\\core\\event\\config_log_created	core	created	config_log	config_log	2786	c	0	1	10	0	2	0	\N	0	{"name":"tile12backgroundimage","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2951	\\core\\event\\config_log_created	core	created	config_log	config_log	2787	c	0	1	10	0	2	0	\N	0	{"name":"tile12backgroundimageposition","oldvalue":null,"value":"center center","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2952	\\core\\event\\config_log_created	core	created	config_log	config_log	2788	c	0	1	10	0	2	0	\N	0	{"name":"tile12contentstyle","oldvalue":null,"value":"nochange","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2953	\\core\\event\\config_log_created	core	created	config_log	config_log	2789	c	0	1	10	0	2	0	\N	0	{"name":"tile12link","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2954	\\core\\event\\config_log_created	core	created	config_log	config_log	2790	c	0	1	10	0	2	0	\N	0	{"name":"tile12linktitle","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2955	\\core\\event\\config_log_created	core	created	config_log	config_log	2791	c	0	1	10	0	2	0	\N	0	{"name":"tile12linktarget","oldvalue":null,"value":"same","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2956	\\core\\event\\config_log_created	core	created	config_log	config_log	2792	c	0	1	10	0	2	0	\N	0	{"name":"tile12order","oldvalue":null,"value":"12","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2957	\\core\\event\\config_log_created	core	created	config_log	config_log	2793	c	0	1	10	0	2	0	\N	0	{"name":"sliderfrontpageposition","oldvalue":null,"value":"1","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2958	\\core\\event\\config_log_created	core	created	config_log	config_log	2794	c	0	1	10	0	2	0	\N	0	{"name":"sliderarrownav","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2959	\\core\\event\\config_log_created	core	created	config_log	config_log	2795	c	0	1	10	0	2	0	\N	0	{"name":"sliderindicatornav","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2960	\\core\\event\\config_log_created	core	created	config_log	config_log	2796	c	0	1	10	0	2	0	\N	0	{"name":"slideranimation","oldvalue":null,"value":"1","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2961	\\core\\event\\config_log_created	core	created	config_log	config_log	2797	c	0	1	10	0	2	0	\N	0	{"name":"sliderinterval","oldvalue":null,"value":"5000","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2962	\\core\\event\\config_log_created	core	created	config_log	config_log	2798	c	0	1	10	0	2	0	\N	0	{"name":"sliderkeyboard","oldvalue":null,"value":"yes","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2963	\\core\\event\\config_log_created	core	created	config_log	config_log	2799	c	0	1	10	0	2	0	\N	0	{"name":"sliderpause","oldvalue":null,"value":"yes","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2964	\\core\\event\\config_log_created	core	created	config_log	config_log	2800	c	0	1	10	0	2	0	\N	0	{"name":"sliderride","oldvalue":null,"value":"0","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2965	\\core\\event\\config_log_created	core	created	config_log	config_log	2801	c	0	1	10	0	2	0	\N	0	{"name":"sliderwrap","oldvalue":null,"value":"yes","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2966	\\core\\event\\config_log_created	core	created	config_log	config_log	2802	c	0	1	10	0	2	0	\N	0	{"name":"slide1enabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2967	\\core\\event\\config_log_created	core	created	config_log	config_log	2803	c	0	1	10	0	2	0	\N	0	{"name":"slide1backgroundimage","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2968	\\core\\event\\config_log_created	core	created	config_log	config_log	2804	c	0	1	10	0	2	0	\N	0	{"name":"slide1backgroundimagealt","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2969	\\core\\event\\config_log_created	core	created	config_log	config_log	2805	c	0	1	10	0	2	0	\N	0	{"name":"slide1caption","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2970	\\core\\event\\config_log_created	core	created	config_log	config_log	2806	c	0	1	10	0	2	0	\N	0	{"name":"slide1content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2971	\\core\\event\\config_log_created	core	created	config_log	config_log	2807	c	0	1	10	0	2	0	\N	0	{"name":"slide1contentstyle","oldvalue":null,"value":"light","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2972	\\core\\event\\config_log_created	core	created	config_log	config_log	2808	c	0	1	10	0	2	0	\N	0	{"name":"slide1link","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2973	\\core\\event\\config_log_created	core	created	config_log	config_log	2809	c	0	1	10	0	2	0	\N	0	{"name":"slide1linktitle","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2974	\\core\\event\\config_log_created	core	created	config_log	config_log	2810	c	0	1	10	0	2	0	\N	0	{"name":"slide1linksource","oldvalue":null,"value":"0","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2975	\\core\\event\\config_log_created	core	created	config_log	config_log	2811	c	0	1	10	0	2	0	\N	0	{"name":"slide1linktarget","oldvalue":null,"value":"same","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2976	\\core\\event\\config_log_created	core	created	config_log	config_log	2812	c	0	1	10	0	2	0	\N	0	{"name":"slide1order","oldvalue":null,"value":"1","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2977	\\core\\event\\config_log_created	core	created	config_log	config_log	2813	c	0	1	10	0	2	0	\N	0	{"name":"slide2enabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2978	\\core\\event\\config_log_created	core	created	config_log	config_log	2814	c	0	1	10	0	2	0	\N	0	{"name":"slide2backgroundimage","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2979	\\core\\event\\config_log_created	core	created	config_log	config_log	2815	c	0	1	10	0	2	0	\N	0	{"name":"slide2backgroundimagealt","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2980	\\core\\event\\config_log_created	core	created	config_log	config_log	2816	c	0	1	10	0	2	0	\N	0	{"name":"slide2caption","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2981	\\core\\event\\config_log_created	core	created	config_log	config_log	2817	c	0	1	10	0	2	0	\N	0	{"name":"slide2content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2982	\\core\\event\\config_log_created	core	created	config_log	config_log	2818	c	0	1	10	0	2	0	\N	0	{"name":"slide2contentstyle","oldvalue":null,"value":"light","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2983	\\core\\event\\config_log_created	core	created	config_log	config_log	2819	c	0	1	10	0	2	0	\N	0	{"name":"slide2link","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2984	\\core\\event\\config_log_created	core	created	config_log	config_log	2820	c	0	1	10	0	2	0	\N	0	{"name":"slide2linktitle","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2985	\\core\\event\\config_log_created	core	created	config_log	config_log	2821	c	0	1	10	0	2	0	\N	0	{"name":"slide2linksource","oldvalue":null,"value":"0","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2986	\\core\\event\\config_log_created	core	created	config_log	config_log	2822	c	0	1	10	0	2	0	\N	0	{"name":"slide2linktarget","oldvalue":null,"value":"same","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2987	\\core\\event\\config_log_created	core	created	config_log	config_log	2823	c	0	1	10	0	2	0	\N	0	{"name":"slide2order","oldvalue":null,"value":"2","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2988	\\core\\event\\config_log_created	core	created	config_log	config_log	2824	c	0	1	10	0	2	0	\N	0	{"name":"slide3enabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2989	\\core\\event\\config_log_created	core	created	config_log	config_log	2825	c	0	1	10	0	2	0	\N	0	{"name":"slide3backgroundimage","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2990	\\core\\event\\config_log_created	core	created	config_log	config_log	2826	c	0	1	10	0	2	0	\N	0	{"name":"slide3backgroundimagealt","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2991	\\core\\event\\config_log_created	core	created	config_log	config_log	2827	c	0	1	10	0	2	0	\N	0	{"name":"slide3caption","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2992	\\core\\event\\config_log_created	core	created	config_log	config_log	2828	c	0	1	10	0	2	0	\N	0	{"name":"slide3content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2993	\\core\\event\\config_log_created	core	created	config_log	config_log	2829	c	0	1	10	0	2	0	\N	0	{"name":"slide3contentstyle","oldvalue":null,"value":"light","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2994	\\core\\event\\config_log_created	core	created	config_log	config_log	2830	c	0	1	10	0	2	0	\N	0	{"name":"slide3link","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2995	\\core\\event\\config_log_created	core	created	config_log	config_log	2831	c	0	1	10	0	2	0	\N	0	{"name":"slide3linktitle","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2996	\\core\\event\\config_log_created	core	created	config_log	config_log	2832	c	0	1	10	0	2	0	\N	0	{"name":"slide3linksource","oldvalue":null,"value":"0","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2997	\\core\\event\\config_log_created	core	created	config_log	config_log	2833	c	0	1	10	0	2	0	\N	0	{"name":"slide3linktarget","oldvalue":null,"value":"same","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2998	\\core\\event\\config_log_created	core	created	config_log	config_log	2834	c	0	1	10	0	2	0	\N	0	{"name":"slide3order","oldvalue":null,"value":"3","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+2999	\\core\\event\\config_log_created	core	created	config_log	config_log	2835	c	0	1	10	0	2	0	\N	0	{"name":"slide4enabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3000	\\core\\event\\config_log_created	core	created	config_log	config_log	2836	c	0	1	10	0	2	0	\N	0	{"name":"slide4backgroundimage","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3001	\\core\\event\\config_log_created	core	created	config_log	config_log	2837	c	0	1	10	0	2	0	\N	0	{"name":"slide4backgroundimagealt","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3002	\\core\\event\\config_log_created	core	created	config_log	config_log	2838	c	0	1	10	0	2	0	\N	0	{"name":"slide4caption","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3003	\\core\\event\\config_log_created	core	created	config_log	config_log	2839	c	0	1	10	0	2	0	\N	0	{"name":"slide4content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3004	\\core\\event\\config_log_created	core	created	config_log	config_log	2840	c	0	1	10	0	2	0	\N	0	{"name":"slide4contentstyle","oldvalue":null,"value":"light","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3005	\\core\\event\\config_log_created	core	created	config_log	config_log	2841	c	0	1	10	0	2	0	\N	0	{"name":"slide4link","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3006	\\core\\event\\config_log_created	core	created	config_log	config_log	2842	c	0	1	10	0	2	0	\N	0	{"name":"slide4linktitle","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3007	\\core\\event\\config_log_created	core	created	config_log	config_log	2843	c	0	1	10	0	2	0	\N	0	{"name":"slide4linksource","oldvalue":null,"value":"0","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3008	\\core\\event\\config_log_created	core	created	config_log	config_log	2844	c	0	1	10	0	2	0	\N	0	{"name":"slide4linktarget","oldvalue":null,"value":"same","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3009	\\core\\event\\config_log_created	core	created	config_log	config_log	2845	c	0	1	10	0	2	0	\N	0	{"name":"slide4order","oldvalue":null,"value":"4","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3010	\\core\\event\\config_log_created	core	created	config_log	config_log	2846	c	0	1	10	0	2	0	\N	0	{"name":"slide5enabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3011	\\core\\event\\config_log_created	core	created	config_log	config_log	2847	c	0	1	10	0	2	0	\N	0	{"name":"slide5backgroundimage","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3012	\\core\\event\\config_log_created	core	created	config_log	config_log	2848	c	0	1	10	0	2	0	\N	0	{"name":"slide5backgroundimagealt","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3013	\\core\\event\\config_log_created	core	created	config_log	config_log	2849	c	0	1	10	0	2	0	\N	0	{"name":"slide5caption","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3014	\\core\\event\\config_log_created	core	created	config_log	config_log	2850	c	0	1	10	0	2	0	\N	0	{"name":"slide5content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3015	\\core\\event\\config_log_created	core	created	config_log	config_log	2851	c	0	1	10	0	2	0	\N	0	{"name":"slide5contentstyle","oldvalue":null,"value":"light","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3016	\\core\\event\\config_log_created	core	created	config_log	config_log	2852	c	0	1	10	0	2	0	\N	0	{"name":"slide5link","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3017	\\core\\event\\config_log_created	core	created	config_log	config_log	2853	c	0	1	10	0	2	0	\N	0	{"name":"slide5linktitle","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3018	\\core\\event\\config_log_created	core	created	config_log	config_log	2854	c	0	1	10	0	2	0	\N	0	{"name":"slide5linksource","oldvalue":null,"value":"0","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3019	\\core\\event\\config_log_created	core	created	config_log	config_log	2855	c	0	1	10	0	2	0	\N	0	{"name":"slide5linktarget","oldvalue":null,"value":"same","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3020	\\core\\event\\config_log_created	core	created	config_log	config_log	2856	c	0	1	10	0	2	0	\N	0	{"name":"slide5order","oldvalue":null,"value":"5","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3021	\\core\\event\\config_log_created	core	created	config_log	config_log	2857	c	0	1	10	0	2	0	\N	0	{"name":"slide6enabled","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3022	\\core\\event\\config_log_created	core	created	config_log	config_log	2858	c	0	1	10	0	2	0	\N	0	{"name":"slide6backgroundimage","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3023	\\core\\event\\config_log_created	core	created	config_log	config_log	2859	c	0	1	10	0	2	0	\N	0	{"name":"slide6backgroundimagealt","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3024	\\core\\event\\config_log_created	core	created	config_log	config_log	2860	c	0	1	10	0	2	0	\N	0	{"name":"slide6caption","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3025	\\core\\event\\config_log_created	core	created	config_log	config_log	2861	c	0	1	10	0	2	0	\N	0	{"name":"slide6content","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3026	\\core\\event\\config_log_created	core	created	config_log	config_log	2862	c	0	1	10	0	2	0	\N	0	{"name":"slide6contentstyle","oldvalue":null,"value":"light","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3027	\\core\\event\\config_log_created	core	created	config_log	config_log	2863	c	0	1	10	0	2	0	\N	0	{"name":"slide6link","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3028	\\core\\event\\config_log_created	core	created	config_log	config_log	2864	c	0	1	10	0	2	0	\N	0	{"name":"slide6linktitle","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3029	\\core\\event\\config_log_created	core	created	config_log	config_log	2865	c	0	1	10	0	2	0	\N	0	{"name":"slide6linksource","oldvalue":null,"value":"0","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3030	\\core\\event\\config_log_created	core	created	config_log	config_log	2866	c	0	1	10	0	2	0	\N	0	{"name":"slide6linktarget","oldvalue":null,"value":"same","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3031	\\core\\event\\config_log_created	core	created	config_log	config_log	2867	c	0	1	10	0	2	0	\N	0	{"name":"slide6order","oldvalue":null,"value":"6","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3032	\\core\\event\\config_log_created	core	created	config_log	config_log	2868	c	0	1	10	0	2	0	\N	0	{"name":"showswitchedroleincourse","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3033	\\core\\event\\config_log_created	core	created	config_log	config_log	2869	c	0	1	10	0	2	0	\N	0	{"name":"showhintcoursehidden","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3034	\\core\\event\\config_log_created	core	created	config_log	config_log	2870	c	0	1	10	0	2	0	\N	0	{"name":"showhintforumnotifications","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3035	\\core\\event\\config_log_created	core	created	config_log	config_log	2871	c	0	1	10	0	2	0	\N	0	{"name":"showhintcourseselfenrol","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3036	\\core\\event\\config_log_created	core	created	config_log	config_log	2872	c	0	1	10	0	2	0	\N	0	{"name":"showhintcourseguestenrol","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3037	\\core\\event\\config_log_created	core	created	config_log	config_log	2873	c	0	1	10	0	2	0	\N	0	{"name":"showhintcourseguestaccess","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3038	\\core\\event\\config_log_created	core	created	config_log	config_log	2874	c	0	1	10	0	2	0	\N	0	{"name":"showviewcourseiconincoursemgnt","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3039	\\core\\event\\config_log_created	core	created	config_log	config_log	2875	c	0	1	10	0	2	0	\N	0	{"name":"enableaccessibilitydeclaration","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3040	\\core\\event\\config_log_created	core	created	config_log	config_log	2876	c	0	1	10	0	2	0	\N	0	{"name":"accessibilitydeclarationcontent","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3041	\\core\\event\\config_log_created	core	created	config_log	config_log	2877	c	0	1	10	0	2	0	\N	0	{"name":"accessibilitydeclarationpagetitle","oldvalue":null,"value":"Declaraci\\u00f3 d'accessibilitat","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3042	\\core\\event\\config_log_created	core	created	config_log	config_log	2878	c	0	1	10	0	2	0	\N	0	{"name":"accessibilitydeclarationlinkposition","oldvalue":null,"value":"none","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3043	\\core\\event\\config_log_created	core	created	config_log	config_log	2879	c	0	1	10	0	2	0	\N	0	{"name":"enableaccessibilitysupport","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3044	\\core\\event\\config_log_created	core	created	config_log	config_log	2880	c	0	1	10	0	2	0	\N	0	{"name":"accessibilitysupportcontent","oldvalue":null,"value":"<p>Si teniu cap comentari sobre l'accessibilitat o voleu informar d'algun obstacle, utilitzeu el formulari seg\\u00fcent.<\\/p><p>\\u00bfFeu servir tecnologies d'assist\\u00e8ncia com ara lectors de pantalla, lupes, control per veu o programari de reconeixement de veu? Si \\u00e9s aix\\u00ed, especifiqueu quines. Per ajudar-nos a processar la vostra sol\\u00b7licitud, podeu permetre que el formulari envi\\u00ef autom\\u00e0ticament la informaci\\u00f3 seg\\u00fcent juntament amb el vostre missatge: l'URL on \\u00e9reu quan vau obrir aquest formulari de suport (aix\\u00f2 s'anomena \\u00abreferrer\\u00bb) i una mica d'informaci\\u00f3 sobre el vostre navegador.<\\/p>","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3045	\\core\\event\\config_log_created	core	created	config_log	config_log	2881	c	0	1	10	0	2	0	\N	0	{"name":"accessibilitysupportpagetitle","oldvalue":null,"value":"Suport a l'accessibilitat","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3046	\\core\\event\\config_log_created	core	created	config_log	config_log	2882	c	0	1	10	0	2	0	\N	0	{"name":"accessibilitysupportlinkposition","oldvalue":null,"value":"none","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3047	\\core\\event\\config_log_created	core	created	config_log	config_log	2883	c	0	1	10	0	2	0	\N	0	{"name":"allowaccessibilitysupportwithoutlogin","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3048	\\core\\event\\config_log_created	core	created	config_log	config_log	2884	c	0	1	10	0	2	0	\N	0	{"name":"enableaccessibilitysupportfooterbutton","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3049	\\core\\event\\config_log_created	core	created	config_log	config_log	2885	c	0	1	10	0	2	0	\N	0	{"name":"allowanonymoussubmits","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3050	\\core\\event\\config_log_created	core	created	config_log	config_log	2886	c	0	1	10	0	2	0	\N	0	{"name":"allowsendtechinfoalong","oldvalue":null,"value":"yes","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3051	\\core\\event\\config_log_created	core	created	config_log	config_log	2887	c	0	1	10	0	2	0	\N	0	{"name":"accessibilitysupportusermail","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3052	\\core\\event\\config_log_created	core	created	config_log	config_log	2888	c	0	1	10	0	2	0	\N	0	{"name":"accessibilitysupportpagesrlinktitle","oldvalue":null,"value":"Obtenir suport a l'accessibilitat","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3053	\\core\\event\\config_log_created	core	created	config_log	config_log	2889	c	0	1	10	0	2	0	\N	0	{"name":"accessibilitysupportrecaptcha","oldvalue":null,"value":"never","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3054	\\core\\event\\config_log_created	core	created	config_log	config_log	2890	c	0	1	10	0	2	0	\N	0	{"name":"enablebuiltinsnippets","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3055	\\core\\event\\config_log_created	core	created	config_log	config_log	2891	c	0	1	10	0	2	0	\N	0	{"name":"enableuploadedsnippets","oldvalue":null,"value":"no","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3056	\\core\\event\\config_log_created	core	created	config_log	config_log	2892	c	0	1	10	0	2	0	\N	0	{"name":"uploadedsnippets","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247173	cli	\N	\N
+3057	\\core\\event\\config_log_created	core	created	config_log	config_log	2893	c	0	1	10	0	2	0	\N	0	{"name":"file_redactor_exifremoverenabled","oldvalue":null,"value":"0","plugin":null}	1768247173	cli	\N	\N
+3058	\\core\\event\\config_log_created	core	created	config_log	config_log	2894	c	0	1	10	0	2	0	\N	0	{"name":"file_redactor_exifremovertoolpath","oldvalue":null,"value":"","plugin":null}	1768247173	cli	\N	\N
+3059	\\core\\event\\config_log_created	core	created	config_log	config_log	2895	c	0	1	10	0	2	0	\N	0	{"name":"file_redactor_exifremoverremovetags","oldvalue":null,"value":"gps","plugin":null}	1768247173	cli	\N	\N
+3060	\\core\\event\\config_log_created	core	created	config_log	config_log	2896	c	0	1	10	0	2	0	\N	0	{"name":"file_redactor_exifremovermimetype","oldvalue":null,"value":"image\\/jpeg\\nimage\\/tiff","plugin":null}	1768247173	cli	\N	\N
+3061	\\core\\event\\config_log_created	core	created	config_log	config_log	2897	c	0	1	10	0	2	0	\N	0	{"name":"servicespage","oldvalue":null,"value":"","plugin":null}	1768247173	cli	\N	\N
+3062	\\core\\event\\config_log_created	core	created	config_log	config_log	2898	c	0	1	10	0	2	0	\N	0	{"name":"cron_keepalive","oldvalue":null,"value":"180","plugin":null}	1768247174	cli	\N	\N
+3063	\\core\\event\\config_log_created	core	created	config_log	config_log	2899	c	0	1	10	0	2	0	\N	0	{"name":"task_adhoc_failed_retention","oldvalue":null,"value":"2419200","plugin":null}	1768247174	cli	\N	\N
+3064	\\core\\event\\config_log_created	core	created	config_log	config_log	2900	c	0	1	10	0	2	0	\N	0	{"name":"autologout","oldvalue":null,"value":"0","plugin":"tool_mobile"}	1768247174	cli	\N	\N
+3065	\\core\\event\\config_log_created	core	created	config_log	config_log	2901	c	0	1	10	0	2	0	\N	0	{"name":"autologouttime","oldvalue":null,"value":"86400","plugin":"tool_mobile"}	1768247174	cli	\N	\N
+3066	\\core\\event\\config_log_created	core	created	config_log	config_log	2902	c	0	1	10	0	2	0	\N	0	{"name":"enablesharingtomoodlenet","oldvalue":null,"value":"0","plugin":null}	1768247174	cli	\N	\N
+3067	\\core\\event\\config_log_created	core	created	config_log	config_log	2903	c	0	1	10	0	2	0	\N	0	{"name":"enablecommunicationsubsystem","oldvalue":null,"value":"0","plugin":null}	1768247174	cli	\N	\N
+3068	\\core\\event\\config_log_created	core	created	config_log	config_log	2904	c	0	1	10	0	2	0	\N	0	{"name":"debugtemplateinfo","oldvalue":null,"value":"0","plugin":null}	1768247174	cli	\N	\N
+3069	\\core\\event\\config_log_created	core	created	config_log	config_log	2905	c	0	1	10	0	2	0	\N	0	{"name":"action_generate_text_deployment","oldvalue":null,"value":"","plugin":"aiprovider_azureai"}	1768247174	cli	\N	\N
+3070	\\core\\event\\config_log_created	core	created	config_log	config_log	2906	c	0	1	10	0	2	0	\N	0	{"name":"action_generate_text_apiversion","oldvalue":null,"value":"2024-06-01","plugin":"aiprovider_azureai"}	1768247174	cli	\N	\N
+3071	\\core\\event\\config_log_created	core	created	config_log	config_log	2907	c	0	1	10	0	2	0	\N	0	{"name":"action_generate_text_systeminstruction","oldvalue":null,"value":"Rebreu una entrada de text de l'usuari. La vostra tasca \\u00e9s generar un text basat en la seva sol\\u00b7licitud. Seguiu aquestes instruccions importants:\\n\\n1. Retorneu el resum nom\\u00e9s en text pla.\\n2. No inclogueu cap format de marques, salutacions ni t\\u00f2pics.","plugin":"aiprovider_azureai"}	1768247174	cli	\N	\N
+3072	\\core\\event\\config_log_created	core	created	config_log	config_log	2908	c	0	1	10	0	2	0	\N	0	{"name":"action_generate_image_deployment","oldvalue":null,"value":"","plugin":"aiprovider_azureai"}	1768247174	cli	\N	\N
+3073	\\core\\event\\config_log_created	core	created	config_log	config_log	2909	c	0	1	10	0	2	0	\N	0	{"name":"action_generate_image_apiversion","oldvalue":null,"value":"2024-06-01","plugin":"aiprovider_azureai"}	1768247174	cli	\N	\N
+3074	\\core\\event\\config_log_created	core	created	config_log	config_log	2910	c	0	1	10	0	2	0	\N	0	{"name":"action_summarise_text_deployment","oldvalue":null,"value":"","plugin":"aiprovider_azureai"}	1768247174	cli	\N	\N
+3075	\\core\\event\\config_log_created	core	created	config_log	config_log	2911	c	0	1	10	0	2	0	\N	0	{"name":"action_summarise_text_apiversion","oldvalue":null,"value":"2024-06-01","plugin":"aiprovider_azureai"}	1768247174	cli	\N	\N
+3076	\\core\\event\\config_log_created	core	created	config_log	config_log	2912	c	0	1	10	0	2	0	\N	0	{"name":"action_summarise_text_systeminstruction","oldvalue":null,"value":"Rebreu una entrada de text de l'usuari. La vostra tasca \\u00e9s resumir el text proporcionat. Seguiu aquestes pautes:\\n\\n1. Condensar: Escur\\u00e7ar els passatges llargs en punts clau.\\n2. Simplificar: Facilitar la comprensi\\u00f3 de la informaci\\u00f3 complexa, especialment per als estudiants.\\n\\nInstruccions importants:\\n\\n1. Retornar el resum nom\\u00e9s en text pla.\\n2. No incloure cap format de marques, salutacions ni t\\u00f2pics.\\n3. Centrar-se en la claredat, la concisi\\u00f3 i l'accessibilitat.\\n\\nAssegureu-vos que el resum sigui f\\u00e0cil de llegir i que transmeti efica\\u00e7ment els punts principals del text original.","plugin":"aiprovider_azureai"}	1768247174	cli	\N	\N
+3077	\\core\\event\\config_log_created	core	created	config_log	config_log	2913	c	0	1	10	0	2	0	\N	0	{"name":"action_generate_text_model","oldvalue":null,"value":"gpt-4o","plugin":"aiprovider_openai"}	1768247174	cli	\N	\N
+3078	\\core\\event\\config_log_created	core	created	config_log	config_log	2914	c	0	1	10	0	2	0	\N	0	{"name":"action_generate_text_endpoint","oldvalue":null,"value":"https:\\/\\/api.openai.com\\/v1\\/chat\\/completions","plugin":"aiprovider_openai"}	1768247174	cli	\N	\N
+3079	\\core\\event\\config_log_created	core	created	config_log	config_log	2915	c	0	1	10	0	2	0	\N	0	{"name":"action_generate_text_systeminstruction","oldvalue":null,"value":"Rebreu una entrada de text de l'usuari. La vostra tasca \\u00e9s generar un text basat en la seva sol\\u00b7licitud. Seguiu aquestes instruccions importants:\\n\\n1. Retorneu el resum nom\\u00e9s en text pla.\\n2. No inclogueu cap format de marques, salutacions ni t\\u00f2pics.","plugin":"aiprovider_openai"}	1768247174	cli	\N	\N
+3080	\\core\\event\\config_log_created	core	created	config_log	config_log	2916	c	0	1	10	0	2	0	\N	0	{"name":"action_generate_image_model","oldvalue":null,"value":"dall-e-3","plugin":"aiprovider_openai"}	1768247174	cli	\N	\N
+3081	\\core\\event\\config_log_created	core	created	config_log	config_log	2917	c	0	1	10	0	2	0	\N	0	{"name":"action_generate_image_endpoint","oldvalue":null,"value":"https:\\/\\/api.openai.com\\/v1\\/images\\/generations","plugin":"aiprovider_openai"}	1768247174	cli	\N	\N
+3082	\\core\\event\\config_log_created	core	created	config_log	config_log	2918	c	0	1	10	0	2	0	\N	0	{"name":"action_summarise_text_model","oldvalue":null,"value":"gpt-4o","plugin":"aiprovider_openai"}	1768247174	cli	\N	\N
+3083	\\core\\event\\config_log_created	core	created	config_log	config_log	2919	c	0	1	10	0	2	0	\N	0	{"name":"action_summarise_text_endpoint","oldvalue":null,"value":"https:\\/\\/api.openai.com\\/v1\\/chat\\/completions","plugin":"aiprovider_openai"}	1768247174	cli	\N	\N
+3084	\\core\\event\\config_log_created	core	created	config_log	config_log	2920	c	0	1	10	0	2	0	\N	0	{"name":"action_summarise_text_systeminstruction","oldvalue":null,"value":"Rebreu una entrada de text de l'usuari. La vostra tasca \\u00e9s resumir el text proporcionat. Seguiu aquestes pautes:\\n\\n1. Condensar: Escur\\u00e7ar els passatges llargs en punts clau.\\n2. Simplificar: Facilitar la comprensi\\u00f3 de la informaci\\u00f3 complexa, especialment per als estudiants.\\n\\nInstruccions importants:\\n\\n1. Retornar el resum nom\\u00e9s en text pla.\\n2. No incloure cap format de marques, salutacions ni t\\u00f2pics.\\n3. Centrar-se en la claredat, la concisi\\u00f3 i l'accessibilitat.\\n\\nAssegureu-vos que el resum sigui f\\u00e0cil de llegir i que transmeti efica\\u00e7ment els punts principals del text original.","plugin":"aiprovider_openai"}	1768247174	cli	\N	\N
+3088	\\core\\event\\user_loggedin	core	loggedin	user	user	2	r	0	1	10	0	2	0	\N	0	{"username":"admin","extrauserinfo":[]}	1768247836	web	192.168.56.1	\N
+3090	\\core\\event\\config_log_created	core	created	config_log	config_log	2921	c	0	1	10	0	2	0	\N	0	{"name":"loginbackgroundimagetext","oldvalue":null,"value":"","plugin":"theme_boost_union"}	1768247846	web	192.168.56.1	\N
+3091	\\core\\event\\user_loggedout	core	loggedout	user	user	2	r	0	1	10	0	2	0	\N	0	{"sessionid":"tuq7mi2va5p3cfur33n6ja09jd"}	1768247907	web	192.168.56.1	\N
 \.
 
 
@@ -38200,6 +42386,14 @@ COPY public.m2lti (id, course, name, intro, introformat, timecreated, timemodifi
 --
 
 COPY public.m2lti_access_tokens (id, typeid, scope, token, validuntil, timecreated, lastaccess) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2lti_coursevisible; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2lti_coursevisible (id, typeid, courseid, coursevisible) FROM stdin;
 \.
 
 
@@ -38236,6 +42430,14 @@ COPY public.m2lti_types (id, name, baseurl, tooldomain, state, course, coursevis
 
 
 --
+-- Data for Name: m2lti_types_categories; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2lti_types_categories (id, typeid, categoryid) FROM stdin;
+\.
+
+
+--
 -- Data for Name: m2lti_types_config; Type: TABLE DATA; Schema: public; Owner: -
 --
 
@@ -38248,6 +42450,14 @@ COPY public.m2lti_types_config (id, typeid, name, value) FROM stdin;
 --
 
 COPY public.m2ltiservice_gradebookservices (id, gradeitemid, courseid, toolproxyid, typeid, baseurl, ltilinkid, tag, resourceid, subreviewurl, subreviewparams) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2matrix_room; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2matrix_room (id, commid, roomid, topic) FROM stdin;
 \.
 
 
@@ -38364,7 +42574,6 @@ COPY public.m2message_providers (id, name, component, capability) FROM stdin;
 15	asyncbackupnotification	moodle	\N
 16	gradenotifications	moodle	\N
 17	assign_notification	mod_assign	\N
-18	assignment_updates	mod_assignment	\N
 19	submission	mod_feedback	\N
 20	message	mod_feedback	\N
 21	posts	mod_forum	\N
@@ -38397,6 +42606,12 @@ COPY public.m2message_providers (id, name, component, capability) FROM stdin;
 48	recording_ready	mod_bigbluebuttonbn	\N
 49	instance_updated	mod_bigbluebuttonbn	\N
 50	attempt_grading_complete	mod_quiz	mod/quiz:emailnotifyattemptgraded
+51	failedtaskmaxdelay	moodle	moodle/site:config
+52	enrolcoursewelcomemessage	moodle	\N
+53	assign_due_soon	mod_assign	\N
+54	assign_overdue	mod_assign	\N
+55	assign_due_digest	mod_assign	\N
+56	quiz_open_soon	mod_quiz	\N
 \.
 
 
@@ -38639,7 +42854,6 @@ COPY public.m2mnetservice_enrol_enrolments (id, hostid, userid, remotecourseid, 
 
 COPY public.m2modules (id, name, cron, lastcron, search, visible) FROM stdin;
 1	assign	0	0		1
-2	assignment	60	0		0
 3	book	0	0		1
 5	choice	0	0		1
 6	data	0	0		1
@@ -38672,6 +42886,15 @@ COPY public.m2modules (id, name, cron, lastcron, search, visible) FROM stdin;
 33	attendance	0	0		1
 28	journal	0	1650457808		1
 34	bigbluebuttonbn	0	0		0
+35	subsection	0	0		0
+\.
+
+
+--
+-- Data for Name: m2moodlenet_share_progress; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2moodlenet_share_progress (id, type, courseid, cmid, userid, timecreated, resourceurl, status) FROM stdin;
 \.
 
 
@@ -38717,7 +42940,7 @@ COPY public.m2oauth2_endpoint (id, timecreated, timemodified, usermodified, name
 -- Data for Name: m2oauth2_issuer; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2oauth2_issuer (id, timecreated, timemodified, usermodified, name, image, baseurl, clientid, clientsecret, loginscopes, loginscopesoffline, loginparams, loginparamsoffline, alloweddomains, scopessupported, enabled, showonloginpage, basicauth, sortorder, requireconfirmation, servicetype, loginpagename) FROM stdin;
+COPY public.m2oauth2_issuer (id, timecreated, timemodified, usermodified, name, image, baseurl, clientid, clientsecret, loginscopes, loginscopesoffline, loginparams, loginparamsoffline, alloweddomains, scopessupported, enabled, showonloginpage, basicauth, sortorder, requireconfirmation, servicetype, loginpagename, systememail) FROM stdin;
 \.
 
 
@@ -39046,6 +43269,25 @@ COPY public.m2qtype_wq_variables (id, identifier, value) FROM stdin;
 --
 
 COPY public.m2question (id, parent, name, questiontext, questiontextformat, generalfeedback, generalfeedbackformat, defaultmark, penalty, qtype, length, stamp, timecreated, timemodified, createdby, modifiedby) FROM stdin;
+1	0	BUILT_IN_PROTOTYPE_c_function	Built-in prototypes are documented in the language strings.	1		1	1.0000000	0.0000000	coderunner	1	unknownhost+260112194518+KFEMch	1768247118	1768247118	0	0
+2	0	BUILT_IN_PROTOTYPE_cpp_function	Built-in prototypes are documented in the language strings.	1		1	1.0000000	0.0000000	coderunner	1	unknownhost+260112194518+jw4zZq	1768247118	1768247118	0	0
+3	0	BUILT_IN_PROTOTYPE_cpp_program	Built-in prototypes are documented in the language strings.	1		1	1.0000000	0.0000000	coderunner	1	unknownhost+260112194518+2E1kFB	1768247118	1768247118	0	0
+4	0	BUILT_IN_PROTOTYPE_c_program	Built-in prototypes are documented in the language strings.	1		1	1.0000000	0.0000000	coderunner	1	unknownhost+260112194518+hOgU3y	1768247118	1768247118	0	0
+5	0	BUILT_IN_PROTOTYPE_directed_graph	<p>Built-in prototypes are documented in the language strings.</p>	1		1	1.0000000	0.0000000	coderunner	1	unknownhost+260112194518+CwkAbE	1768247118	1768247118	0	0
+6	0	BUILT_IN_PROTOTYPE_java_class	Built-in prototypes are documented in the language strings.	1		1	1.0000000	0.0000000	coderunner	1	unknownhost+260112194518+psuxiP	1768247118	1768247118	0	0
+7	0	BUILT_IN_PROTOTYPE_java_method	Built-in prototypes are documented in the language strings.	1		1	1.0000000	0.0000000	coderunner	1	unknownhost+260112194518+KpVuaB	1768247118	1768247118	0	0
+8	0	BUILT_IN_PROTOTYPE_java_program	Built-in prototypes are documented in the language strings.	1		1	1.0000000	0.0000000	coderunner	1	unknownhost+260112194518+7pyEYL	1768247118	1768247118	0	0
+9	0	BUILT_IN_PROTOTYPE_multilanguage	<p>Built-in prototypes are documented in the language strings.<br></p>	1		1	1.0000000	0.0000000	coderunner	1	unknownhost+260112194518+a9aWXq	1768247118	1768247118	0	0
+10	0	BUILTIN_PROTOTYPE_nodejs	<p>Built-in prototypes are documented in the language strings.</p>	1		1	1.0000000	0.0000000	coderunner	1	unknownhost+260112194518+lnwBCJ	1768247118	1768247118	0	0
+11	0	BUILT_IN_PROTOTYPE_octave_function	Built-in prototypes are documented in the language strings.	1		1	1.0000000	0.0000000	coderunner	1	unknownhost+260112194518+ohMVtz	1768247118	1768247118	0	0
+12	0	BUILT_IN_PROTOTYPE_pascal_function	Built-in prototypes are documented in the language strings.	1		1	1.0000000	0.0000000	coderunner	1	unknownhost+260112194518+7CbDpf	1768247118	1768247118	0	0
+13	0	BUILT_IN_PROTOTYPE_pascal_program	Built-in prototypes are documented in the language strings.	1		1	1.0000000	0.0000000	coderunner	1	unknownhost+260112194518+M2jGFu	1768247118	1768247118	0	0
+14	0	BUILT_IN_PROTOTYPE_php	Built-in prototypes are documented in the language strings.	1		1	1.0000000	0.0000000	coderunner	1	unknownhost+260112194518+O7o22I	1768247118	1768247118	0	0
+15	0	BUILT_IN_PROTOTYPE_python2	Built-in prototypes are documented in the language strings.	1		1	1.0000000	0.0000000	coderunner	1	unknownhost+260112194518+FeICrV	1768247118	1768247118	0	0
+16	0	BUILT_IN_PROTOTYPE_python3	Built-in prototypes are documented in the language strings.	1		1	1.0000000	0.0000000	coderunner	1	unknownhost+260112194518+P8hbZV	1768247118	1768247118	0	0
+17	0	BUILTIN_PROTOTYPE_python3_w_input	<p>Built-in prototypes are documented in the language strings.</p>	1		1	1.0000000	0.0000000	coderunner	1	unknownhost+260112194518+B1wq5J	1768247118	1768247118	0	0
+18	0	BUILT_IN_PROTOTYPE_sql	Built-in prototypes are documented in the language strings.	1		1	1.0000000	0.0000000	coderunner	1	unknownhost+260112194519+hTqYIH	1768247119	1768247119	0	0
+19	0	BUILT_IN_PROTOTYPE_undirected_graph	<p>Built-in prototypes are documented in the language strings.</p>	1		1	1.0000000	0.0000000	coderunner	1	unknownhost+260112194519+Y0INFy	1768247119	1768247119	0	0
 \.
 
 
@@ -39086,6 +43328,25 @@ COPY public.m2question_attempts (id, questionusageid, slot, behaviour, questioni
 --
 
 COPY public.m2question_bank_entries (id, questioncategoryid, idnumber, ownerid) FROM stdin;
+1	2	\N	0
+2	2	\N	0
+3	2	\N	0
+4	2	\N	0
+5	2	\N	0
+6	2	\N	0
+7	2	\N	0
+8	2	\N	0
+9	2	\N	0
+10	2	\N	0
+11	2	\N	0
+12	2	\N	0
+13	2	\N	0
+14	2	\N	0
+15	2	\N	0
+16	2	\N	0
+17	2	\N	0
+18	2	\N	0
+19	2	\N	0
 \.
 
 
@@ -39110,6 +43371,43 @@ COPY public.m2question_calculated_options (id, question, synchronize, single, sh
 --
 
 COPY public.m2question_categories (id, name, contextid, info, infoformat, stamp, parent, sortorder, idnumber) FROM stdin;
+1	top	1		0	unknownhost+260112194518+7rK5W2	0	0	\N
+2	CR_PROTOTYPES	1	Category for CodeRunner question built-in prototypes. FOR SYSTEM USE ONLY.	0	unknownhost+260112194518+NKer37	1	999	\N
+\.
+
+
+--
+-- Data for Name: m2question_coderunner_options; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2question_coderunner_options (id, questionid, coderunnertype, prototypetype, allornothing, showsource, precheck, hidecheck, answerboxlines, answerboxcolumns, answerpreload, globalextra, useace, penaltyregime, answer, validateonsave, enablecombinator, resultcolumns, template, iscombinatortemplate, combinatortemplate, allowmultiplestdins, testsplitterre, pertesttemplate, templateparams, templateparamslang, templateparamsevalpertry, templateparamsevald, hoisttemplateparams, extractcodefromjson, twigall, uiparameters, language, acelang, sandbox, sandboxparams, grader, cputimelimitsecs, memlimitmb, uiplugin, attachments, attachmentsrequired, maxfilesize, filenamesregex, filenamesexplain, displayfeedback, giveupallowed, prototypeextra) FROM stdin;
+1	1	c_function	1	1	0	0	0	18	100			1	33.3, 66.7, ...		0	\N	\N	#include <stdio.h>\n#include <stdlib.h>\n#include <ctype.h>\n#include <string.h>\n#include <stdbool.h>\n#include <math.h>\n#define SEPARATOR "#<ab@17943918#@>#"\n\n{{ STUDENT_ANSWER }}\n\nint main() {\n{% for TEST in TESTCASES %}\n   {\n    {{ TEST.testcode }};\n   }\n    {% if not loop.last %}printf("%s\\n", SEPARATOR);{% endif %}\n{% endfor %}\n    return 0;\n}	1	\N	0	|#<ab@17943918#@>#\\n|ms	\N		twig	0		0	1	0		C	\N	\N	{"linkargs": ["-lm"]}	EqualityGrader	\N	\N	ace	0	0	0			0	0	\N
+2	2	cpp_function	1	1	0	0	0	18	100			1	33.3, 66.7, ...		0	\N	\N	#include <iostream>\n#include <fstream>\n#include <string>\n#include <cmath>\n#include <vector>\n#include <algorithm>\n\nusing namespace std;\n#define SEPARATOR "#<ab@17943918#@>#"\n\n{{ STUDENT_ANSWER }}\n\nint main() {\n{% for TEST in TESTCASES %}\n   {\n    {{ TEST.extra }};\n    {{ TEST.testcode }};\n   }\n    {% if not loop.last %}cout << SEPARATOR << endl;{% endif %}\n{% endfor %}\n    return 0;\n}	1	\N	0	|#<ab@17943918#@>#\\n|ms	\N		twig	0		0	1	0		cpp	\N	\N	{"linkargs": ["-lm"]}	EqualityGrader	\N	\N	ace	0	0	0			0	0	\N
+3	3	cpp_program	1	1	0	0	0	18	100			1	33.3, 66.7, ...		0	\N	\N	{{ STUDENT_ANSWER }}	0	\N	0	\N	\N		twig	0		0	1	0		cpp	\N	\N	{"linkargs": ["-lm"]}	EqualityGrader	\N	\N	ace	0	0	0			0	0	\N
+4	4	c_program	1	1	0	0	0	18	100			1	33.3, 66.7, ...		0	\N	\N	{{ STUDENT_ANSWER }}	0	\N	0	\N	\N		twig	0		0	1	0		C	\N	\N	{"linkargs": ["-lm"]}	EqualityGrader	\N	\N	ace	0	0	0			0	0	\N
+5	5	directed_graph	1	1	0	0	0	18	100			1	10, 20, ...		0	\N	\N	import json\n\nstudent_answer = """{{ STUDENT_ANSWER | e('py') }}"""\nSEPARATOR = "#<ab@17943918#@>#"\n\nerror_count = 0\ndef error(s):\n    global error_count\n    print(s)\n    error_count += 1\n\ntry:\n    graph_rep = json.loads(student_answer)\n    node_id_to_name_map = {}\n    for i, node in enumerate(graph_rep['nodes']):\n        name_stripped = node[0].strip()\n        node_id_to_name_map[i] = name_stripped if name_stripped != '' else ('#' + str(i))\n    #print("Nodes:", nodes)\n    edges = graph_rep['edges']\n    #print("Edges:", edges)\n    graph = {}\n    for node_id, node_name in sorted(node_id_to_name_map.items()):\n        edges = []\n        for id0, id1, edge_label, *loc in graph_rep['edges']:\n            if id0 == node_id:\n                edges.append((node_id_to_name_map[id1], edge_label.strip()))\n        edges.sort()\n        graph[node_name] = edges\n\nexcept json.JSONDecodeError as e:\n    raise Exception("Oops. Illegal graph received (exception {}). Please report (unless you did something silly yourself)".format(e))\n\n{% for TEST in TESTCASES %}\n{# note: also check unhoisted variable name in case someone turned off hoisting #}\n{% if extra == "pretest" or QUESTION.parameters.extra == "pretest" %}\n{{TEST.extra}}\n{% endif %}\n{{TEST.testcode}}\n{# note: also check unhoisted variable name in case someone turned off hoisting #}\n{% if extra == "posttest" or QUESTION.parameters.extra == "posttest" %}\n{{TEST.extra}}\n{% endif %}\n{% if not loop.last %}\nprint(SEPARATOR)\n{% endif %}\n{% endfor %}	1	\N	0	|#<ab@17943918#@>#\\n|ms	\N	{"extra":"posttest"}	twig	0	{"extra":"posttest"}	1	1	0	{"isdirected": true, "isfsm": false}	python3	\N	\N	\N	EqualityGrader	\N	\N	graph	0	0	0			0	0	\N
+6	6	java_class	1	1	0	0	0	18	100			1	33.3, 66.7, ...		0	\N	\N	{{ STUDENT_ANSWER | replace({'public class ': 'class '}) }}\n\npublic class __tester__ {\n\n    public static void main(String[] args) {\n        __tester__ main = new __tester__();\n        main.runTests();\n    }\n\n    public void runTests() {\n        {{ TEST.testcode }};\n    }\n}\n	0	\N	0	\N	\N		twig	0		0	1	0		Java	\N	\N	\N	EqualityGrader	\N	2000	ace	0	0	0			0	0	\N
+7	7	java_method	1	1	0	0	0	18	100			1	33.3, 66.7, ...		0	\N	\N	public class __tester__ {\n    static String SEPARATOR = "#<ab@17943918#@>#";\n    {{ STUDENT_ANSWER }}\n\n    public static void main(String[] args) {\n        __tester__ main = new __tester__();\n        main.runTests();\n    }\n\n    public void runTests() {\n{% for testCase in TESTCASES %}\n    {\n    {{ testCase.testcode }};\n    {% if not loop.last %}\n    System.out.println(SEPARATOR);\n    {% endif %}\n    }\n{% endfor %}\n    }\n}	1	\N	0	|#<ab@17943918#@>#\\n|ms	\N		twig	0		0	1	0		Java	\N	\N	\N	EqualityGrader	\N	2000	ace	0	0	0			0	0	\N
+8	8	java_program	1	1	0	0	0	18	100			1	33.3, 66.7, ...		0	\N	\N	{{ STUDENT_ANSWER }}	0	\N	0	\N	\N		twig	0		0	1	0		Java	\N	\N	\N	EqualityGrader	\N	2000	ace	0	0	0			0	0	\N
+9	9	multilanguage	1	1	0	0	0	18	100			1	10, 20, ...		0	\N	\N	"""The template for a "write a program" question type that accepts answers\n    in C, C++, Java,Python3,Perl,PHP,Ruby,JavaScript,C# or Golang according to the value in the language select\n    dropdown menu.\n"""\n\nimport subprocess\nimport re\nstudent_answer = """{{ STUDENT_ANSWER | e('py') }}"""\nlanguage = """{{ ANSWER_LANGUAGE | e('py') }}""".lower()\nlanguage_extension_map = {\n      'c':'c'\n    , 'cpp':'cpp'\n    , 'java':'java'\n    , 'python3':'py'\n    , 'perl':'pl'\n    , 'php':'php'\n    , 'ruby':'rb'\n    , 'javascript':'js'\n    , 'c#':'cs'\n    , 'golang':'go'\n\n\n}\n\nif language not in language_extension_map.keys():\n    raise Exception('Error in question. Unknown/unexpected language ({})'.format(language))\n\nif language == 'java':\n    # Need to determine public class name in order to name output file. Sigh.\n    # The best I can be bothered to do is to use a regular expression match.\n    match = re.search(r'public\\s+class\\s+([_a-zA-Z][_a-zA-Z0-9]*)', student_answer, re.DOTALL | re.MULTILINE)\n    if match is None:\n        raise Exception("Unable to determine class name. Does the file include 'public class name'?")\n    classname = match.group(1)\n    filename = classname + '.java'\nelif language == 'golang':\n    filename = 'tester.' + language_extension_map[language]\nelse:\n    filename = '__tester__.' + language_extension_map[language]\n\n# Write the student code to a file\n\nwith open(filename, "w") as src:\n    print(student_answer, file=src)\n\n# Compile C, C++ and Java\nif language == 'c':\n    cflags = "-std=c99 -Wall -Werror"\n    return_code = subprocess.call("gcc {0} -o __tester__ __tester__.c".format(cflags).split())\n    if return_code != 0:\n        raise Exception("** Compilation failed. Testing aborted **")\n    exec_command = ["./__tester__"]\nelif language == 'cpp':\n    cppflags = "-Wall -Werror"\n    return_code = subprocess.call("g++ {0} -o __tester__ __tester__.cpp".format(cppflags).split())\n    if return_code != 0:\n        raise Exception("** Compilation failed. Testing aborted **")\n    exec_command = ["./__tester__"]\nelif language == 'java':\n    return_code = subprocess.call(['javac', "-J-Xss64m", "-J-Xmx4g", filename])\n    if return_code != 0:\n        raise Exception("** Compilation failed. Testing aborted **")\n    exec_command = ["java", "-Xss16m", "-Xmx500m", classname]\nelif language == 'perl':\n    exec_command = ["perl", "-w", "./__tester__.pl" ]\nelif language == 'ruby':\n    exec_command = ["ruby", "-w", "./__tester__.rb" ]\nelif language == 'php':\n    exec_command = ["php", "./__tester__.php" ]\nelif language == 'javascript':\n    exec_command = ["node", "./__tester__.js" ]\nelif language == 'golang':\n    go_env = {}\n    go_env["GOCACHE"]="/tmp/.go-cache"\n    completedProc = subprocess.run([ "go", "build", "-o", "tester.exe",  filename ],env=go_env  )\n    if completedProc.returncode != 0:\n        raise Exception("** Golang Compilation failed. Testing aborted **")\n    exec_command = ["./tester.exe"]\nelif language == 'c#':\n    cs_env = {}\n    completedProc = subprocess.run([ "mcs",  "-out:tester.exe", filename ],env=cs_env  )\n    if completedProc.returncode != 0:\n        raise Exception("** C# Compilation failed. Testing aborted **")\n    exec_command = ["./tester.exe"]\nelse: # Python doesn't need a compile phase\n    exec_command = ["python3", "./__tester__.py"]\n\n# Now run the code. Since this is a per-test template,\n# stdin is already set up for the stdin text specified in the test case,\n# so we can run the compiled program directly.\n\ntry:\n    output = subprocess.check_output(exec_command, universal_newlines=True)\n    print(output)\nexcept subprocess.CalledProcessError as e:\n    if e.returncode > 0:\n        # Ignore non-zero positive return codes\n        if e.output:\n            print(e.output)\n    else:\n        # But negative return codes are signals - abort\n        if e.output:\n            print(e.output, file=sys.stderr)\n        if e.returncode < 0:\n            print("Task failed with signal", -e.returncode, file=sys.stderr)\n        print("** Further testing aborted **", file=sys.stderr)	0	\N	0	\N	\N		twig	0		0	1	0		python3	c,cpp,java,python3,perl,php,ruby,javascript,c#,golang	\N	{"numprocs": 50}	EqualityGrader	\N	16000	ace	0	0	0			0	0	\N
+10	10	nodejs	1	1	0	0	0	18	100			1	33.3, 66.7, ...		0	\N	\N	{{ STUDENT_ANSWER }}\n\nvar SEPARATOR = "#<ab@17943918#@>#";\n\n{% for TEST in TESTCASES %}\n{{ TEST.testcode }}\n{% if not loop.last %}\nconsole.log(SEPARATOR);\n{% endif %}\n{% endfor %}	1	\N	0	|#<ab@17943918#@>#\\n|ms	\N		twig	0		0	1	0		nodejs	\N	\N	{"sourcefilename": "__tester__.js"}	EqualityGrader	\N	1000	ace	0	0	0			0	0	\N
+11	11	octave_function	1	1	0	0	0	18	100			1	33.3, 66.7, ...		0	\N	\N	1; % Dummy statement to make a script\n{{ STUDENT_ANSWER }}\n\nformat free\n\n{% for TEST in TESTCASES %}\n{{ TEST.testcode }};\n{% if not loop.last %}\ndisp('#<ab@17943918#@>#');\n{% endif %}\n{% endfor %}\n	1	\N	0	|#<ab@17943918#@>#\\n|ms	\N		twig	0		0	1	0		octave	\N	\N	{"sourcefilename": "prog"}	EqualityGrader	3	1000	ace	0	0	0			0	0	\N
+12	12	pascal_function	1	1	0	0	0	18	100			1	10, 20, ...		0	\N	\N	{{ STUDENT_ANSWER }}\n\nbegin\n    {{ TEST.testcode }};\nend.\n	0	\N	0	|#<ab@17943918#@>#\\n|ms	\N		twig	0		0	1	0		pascal	\N	\N	\N	EqualityGrader	\N	\N	ace	0	0	0			0	0	\N
+13	13	pascal_program	1	1	0	0	0	18	100			1	10, 20, ...		0	\N	\N	{{ STUDENT_ANSWER }}	0	\N	0	\N	\N		twig	0		0	1	0		pascal	\N	\N	\N	EqualityGrader	\N	\N	ace	0	0	0			0	0	\N
+14	14	php	1	1	0	0	0	18	100			1	33.3, 66.7, ...		0	\N	\N	{{ STUDENT_ANSWER }}\n\ndefine('SEPARATOR', "#<ab@17943918#@>#\\n");\n\n{% for TEST in TESTCASES %}\n{{ TEST.testcode }};\n{% if not loop.last %}\necho SEPARATOR;\n{% endif %}\n{% endfor %}	1	\N	0	|#<ab@17943918#@>#\\n|ms	\N		twig	0		0	1	0		php	\N	\N	\N	EqualityGrader	\N	500000	ace	0	0	0			0	0	\N
+15	15	python2	1	1	0	0	0	18	100			1	33.3, 66.7, ...		0	\N	\N	{{ STUDENT_ANSWER }}\n\n__student_answer__ = """{{ STUDENT_ANSWER | e('py') }}"""\n\nSEPARATOR = "#<ab@17943918#@>#"\n\n{% for TEST in TESTCASES %}\n{{ TEST.testcode }}\n{% if not loop.last %}\nprint(SEPARATOR)\n{% endif %}\n{% endfor %}	1	\N	0	|#<ab@17943918#@>#\\n|ms	\N		twig	0		0	1	0		python2	\N	\N	\N	EqualityGrader	\N	\N	ace	0	0	0			0	0	\N
+16	16	python3	1	1	0	0	0	18	100			1	33.3, 66.7, ...		0	\N	\N	{{ STUDENT_ANSWER }}\n\n__student_answer__ = """{{ STUDENT_ANSWER | e('py') }}"""\n\nSEPARATOR = "#<ab@17943918#@>#"\n\n{% for TEST in TESTCASES %}\n{{ TEST.testcode }}\n{% if not loop.last %}\nprint(SEPARATOR)\n{% endif %}\n{% endfor %}	1	\N	0	|#<ab@17943918#@>#\\n|ms	\N		twig	0		0	1	0		python3	\N	\N	\N	EqualityGrader	\N	\N	ace	0	0	0			0	0	\N
+17	17	python3_w_input	1	1	0	0	0	18	100			1	33.3, 66.7, ...		0	\N	\N	__saved_input__ = input\ndef input(prompt=''):\n    s = __saved_input__(prompt)\n    print(s)\n    return s\n\n{{ STUDENT_ANSWER }}\nSEPARATOR = "#<ab@17943918#@>#"\n\n{% for TEST in TESTCASES %}\n{{ TEST.testcode }}\n{% if not loop.last %}\nprint(SEPARATOR)\n{% endif %}\n{% endfor %}	1	\N	0	|#<ab@17943918#@>#\\n|ms	\N		twig	0		0	1	0		python3	\N	\N	\N	EqualityGrader	\N	\N	ace	0	0	0			0	0	\N
+18	18	sql	1	1	0	0	0	18	100			1	10, 20, ...		0	\N	\N	import subprocess, os, shutil\n\n# Use Twig to get students answer and the columnwidth template parameter\nstudent_answer = """{{ STUDENT_ANSWER | e('py') }}""".rstrip()\ncolumn_widths = []\n{% for width in QUESTION.parameters.columnwidths %}\ncolumn_widths.append({{width}})\n{% endfor %}\n\nif not student_answer.endswith(';'):\n    student_answer = student_answer + ';'\ndb_files = [fname for fname in os.listdir() if fname.endswith('.db')]\nif len(db_files) == 0:\n    raise Exception("No DB files found!")\nelif len(db_files) == 1:\n    db_working = db_files[0][:-3]  # Strip .db extension\nelse:\n    raise Exception("Multiple DB files not implemented yet, sorry!")\n\nSEPARATOR = "#<ab@17943918#@>#"\ncontrols = [".mode column", ".headers on"]\nif column_widths: # Add column width specifiers if given\n    controls.append(".width " + ' '.join(str(width) for width in column_widths))\nprelude = '\\n'.join(controls) + '\\n'\n\n{% for TEST in TESTCASES %}\nshutil.copyfile(db_files[0], db_working)  # Copy clean writeable db file\ntestcode = """{{ TEST.testcode | e('py') }}"""\nextra = """{{ TEST.extra | e('py') }}"""\ncode_to_run = '\\n'.join([prelude, extra, student_answer, testcode])\nwith open('commands', 'w') as sqlite_commands:\n    sqlite_commands.write(code_to_run)\n\nwith open('commands') as cmd_input:\n    text_input = cmd_input.read()\n    try:\n        output = subprocess.check_output(['sqlite3', db_working], input=text_input,\n                 universal_newlines=True)\n        print(output)\n    except Exception as e:\n        raise Exception("sqlite3 error: " + str(e))\n\n{% if not loop.last %}\nprint(SEPARATOR)\n{% endif %}\n{% endfor %}	1	\N	0	|#<ab@17943918#@>#\\n|ms	\N		twig	0		0	1	0		python3	sql	\N	\N	EqualityGrader	\N	500	ace	0	0	0			0	0	\N
+19	19	undirected_graph	1	1	0	0	0	18	100			1	10, 20, ...		0	\N	\N	import json\n\nstudent_answer = """{{ STUDENT_ANSWER | e('py') }}"""\nSEPARATOR = "#<ab@17943918#@>#"\n\nerror_count = 0\ndef error(s):\n    global error_count\n    print(s)\n    error_count += 1\n\ntry:\n    graph_rep = json.loads(student_answer)\n    node_id_to_name_map = {}\n    for i, node in enumerate(graph_rep['nodes']):\n        name_stripped = node[0].strip()\n        node_id_to_name_map[i] = name_stripped if name_stripped != '' else ('#' + str(i))\n    #print("Nodes:", nodes)\n    edges = graph_rep['edges']\n    #print("Edges:", edges)\n    graph = {}\n    for node_id, node_name in sorted(node_id_to_name_map.items()):\n        edges = []\n        for id0, id1, edge_label, *loc in graph_rep['edges']:\n            label_stripped = edge_label.strip()\n            if id0 == node_id:\n                edges.append((node_id_to_name_map[id1], label_stripped))\n            elif id1 == node_id:\n                edges.append((node_id_to_name_map[id0], label_stripped))\n        edges.sort()\n        graph[node_name] = edges\n\nexcept json.JSONDecodeError as e:\n    raise Exception("Oops. Illegal graph received (exception {}). Please report (unless you did something silly yourself)".format(e))\n\n{% for TEST in TESTCASES %}\n{# note: also check unhoisted variable name in case someone turned off hoisting #}\n{% if extra == "pretest" or QUESTION.parameters.extra == "pretest" %}\n{{TEST.extra}}\n{% endif %}\n{{TEST.testcode}}\n{# note: also check unhoisted variable name in case someone turned off hoisting #}\n{% if extra == "posttest" or QUESTION.parameters.extra == "posttest" %}\n{{TEST.extra}}\n{% endif %}\n{% if not loop.last %}\nprint(SEPARATOR)\n{% endif %}\n{% endfor %}	1	\N	0	|#<ab@17943918#@>#\\n|ms	\N	{"extra":"posttest"}	twig	0	{"extra":"posttest"}	1	1	0	{"isdirected": false, "isfsm": false}	python3	\N	\N	\N	EqualityGrader	\N	\N	graph	0	0	0			0	0	\N
+\.
+
+
+--
+-- Data for Name: m2question_coderunner_tests; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2question_coderunner_tests (id, questionid, testtype, testcode, stdin, expected, extra, useasexample, display, hiderestiffail, mark) FROM stdin;
 \.
 
 
@@ -39254,6 +43552,25 @@ COPY public.m2question_usages (id, contextid, component, preferredbehaviour) FRO
 --
 
 COPY public.m2question_versions (id, questionbankentryid, version, questionid, status) FROM stdin;
+1	1	1	1	ready
+2	2	1	2	ready
+3	3	1	3	ready
+4	4	1	4	ready
+5	5	1	5	ready
+6	6	1	6	ready
+7	7	1	7	ready
+8	8	1	8	ready
+9	9	1	9	ready
+10	10	1	10	ready
+11	11	1	11	ready
+12	12	1	12	ready
+13	13	1	13	ready
+14	14	1	14	ready
+15	15	1	15	ready
+16	16	1	16	ready
+17	17	1	17	ready
+18	18	1	18	ready
+19	19	1	19	ready
 \.
 
 
@@ -39401,7 +43718,7 @@ COPY public.m2questionnaire_survey (id, name, courseid, realm, status, title, em
 -- Data for Name: m2quiz; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2quiz (id, course, name, intro, introformat, timeopen, timeclose, timelimit, overduehandling, graceperiod, preferredbehaviour, canredoquestions, attempts, attemptonlast, grademethod, decimalpoints, questiondecimalpoints, reviewattempt, reviewcorrectness, reviewmarks, reviewspecificfeedback, reviewgeneralfeedback, reviewrightanswer, reviewoverallfeedback, questionsperpage, navmethod, shuffleanswers, sumgrades, grade, timecreated, timemodified, password, subnet, browsersecurity, delay1, delay2, showuserpicture, showblocks, completionattemptsexhausted, allowofflineattempts, completionminattempts) FROM stdin;
+COPY public.m2quiz (id, course, name, intro, introformat, timeopen, timeclose, timelimit, overduehandling, graceperiod, preferredbehaviour, canredoquestions, attempts, attemptonlast, grademethod, decimalpoints, questiondecimalpoints, reviewattempt, reviewcorrectness, reviewmarks, reviewspecificfeedback, reviewgeneralfeedback, reviewrightanswer, reviewoverallfeedback, questionsperpage, navmethod, shuffleanswers, sumgrades, grade, timecreated, timemodified, password, subnet, browsersecurity, delay1, delay2, showuserpicture, showblocks, completionattemptsexhausted, allowofflineattempts, completionminattempts, reviewmaxmarks) FROM stdin;
 \.
 
 
@@ -39418,6 +43735,14 @@ COPY public.m2quiz_attempts (id, quiz, userid, attempt, uniqueid, layout, curren
 --
 
 COPY public.m2quiz_feedback (id, quizid, feedbacktext, feedbacktextformat, mingrade, maxgrade) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2quiz_grade_items; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2quiz_grade_items (id, quizid, sortorder, name) FROM stdin;
 \.
 
 
@@ -39469,7 +43794,7 @@ COPY public.m2quiz_sections (id, quizid, firstslot, heading, shufflequestions) F
 -- Data for Name: m2quiz_slots; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2quiz_slots (id, slot, quizid, page, requireprevious, maxmark) FROM stdin;
+COPY public.m2quiz_slots (id, slot, quizid, page, requireprevious, maxmark, displaynumber, quizgradeitemid) FROM stdin;
 \.
 
 
@@ -39485,7 +43810,7 @@ COPY public.m2quiz_statistics (id, hashcode, whichattempts, timemodified, firsta
 -- Data for Name: m2quizaccess_seb_quizsettings; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2quizaccess_seb_quizsettings (id, quizid, cmid, templateid, requiresafeexambrowser, showsebtaskbar, showwificontrol, showreloadbutton, showtime, showkeyboardlayout, allowuserquitseb, quitpassword, linkquitseb, userconfirmquit, enableaudiocontrol, muteonstartup, allowspellchecking, allowreloadinexam, activateurlfiltering, filterembeddedcontent, expressionsallowed, regexallowed, expressionsblocked, regexblocked, allowedbrowserexamkeys, showsebdownloadlink, usermodified, timecreated, timemodified) FROM stdin;
+COPY public.m2quizaccess_seb_quizsettings (id, quizid, cmid, templateid, requiresafeexambrowser, showsebtaskbar, showwificontrol, showreloadbutton, showtime, showkeyboardlayout, allowuserquitseb, quitpassword, linkquitseb, userconfirmquit, enableaudiocontrol, muteonstartup, allowspellchecking, allowreloadinexam, activateurlfiltering, filterembeddedcontent, expressionsallowed, regexallowed, expressionsblocked, regexblocked, allowedbrowserexamkeys, showsebdownloadlink, usermodified, timecreated, timemodified, allowcapturecamera, allowcapturemicrophone) FROM stdin;
 \.
 
 
@@ -40342,21 +44667,6 @@ COPY public.m2role_capabilities (id, contextid, roleid, capability, permission, 
 473	1	4	mod/assign:showhiddengrader	1	1603909054	0
 474	1	3	mod/assign:showhiddengrader	1	1603909054	0
 475	1	1	mod/assign:showhiddengrader	1	1603909054	0
-476	1	6	mod/assignment:view	1	1603909055	0
-477	1	5	mod/assignment:view	1	1603909055	0
-478	1	4	mod/assignment:view	1	1603909055	0
-479	1	3	mod/assignment:view	1	1603909055	0
-480	1	1	mod/assignment:view	1	1603909055	0
-481	1	1	mod/assignment:addinstance	1	1603909055	0
-482	1	3	mod/assignment:addinstance	1	1603909055	0
-483	1	5	mod/assignment:submit	1	1603909055	0
-484	1	4	mod/assignment:grade	1	1603909055	0
-485	1	3	mod/assignment:grade	1	1603909055	0
-486	1	1	mod/assignment:grade	1	1603909055	0
-487	1	4	mod/assignment:exportownsubmission	1	1603909055	0
-488	1	3	mod/assignment:exportownsubmission	1	1603909055	0
-489	1	1	mod/assignment:exportownsubmission	1	1603909055	0
-490	1	5	mod/assignment:exportownsubmission	1	1603909055	0
 491	1	1	mod/book:addinstance	1	1603909055	0
 492	1	3	mod/book:addinstance	1	1603909055	0
 493	1	6	mod/book:read	1	1603909055	0
@@ -41371,7 +45681,6 @@ COPY public.m2role_capabilities (id, contextid, roleid, capability, permission, 
 1502	1	4	block/completion_progress:overview	1	1603910605	2
 1503	1	3	block/completion_progress:overview	1	1603910605	2
 1504	1	1	block/completion_progress:overview	1	1603910605	2
-1505	1	2	block/completion_progress:overview	1	1603910605	2
 1506	1	4	block/completion_progress:showbar	1	1603910605	2
 1507	1	3	block/completion_progress:showbar	1	1603910605	2
 1508	1	5	block/completion_progress:showbar	1	1603910605	2
@@ -41475,8 +45784,6 @@ COPY public.m2role_capabilities (id, contextid, roleid, capability, permission, 
 1606	1	1	mod/hvp:share	1	1637065382	0
 1607	1	1	mod/lti:addpreconfiguredinstance	1	1637065384	0
 1608	1	3	mod/lti:addpreconfiguredinstance	1	1637065384	0
-1609	1	1	mod/lti:addmanualinstance	1	1637065385	0
-1610	1	3	mod/lti:addmanualinstance	1	1637065385	0
 1611	1	4	mod/quiz:viewoverrides	1	1637065387	0
 1612	1	3	mod/quiz:viewoverrides	1	1637065387	0
 1613	1	1	mod/quiz:viewoverrides	1	1637065387	0
@@ -41639,6 +45946,200 @@ COPY public.m2role_capabilities (id, contextid, roleid, capability, permission, 
 1772	1	3	tiny/h5p:addembed	1	1710932391	0
 1773	1	7	tiny/recordrtc:recordaudio	1	1710932393	0
 1774	1	7	tiny/recordrtc:recordvideo	1	1710932393	0
+1775	1	6	moodle/user:viewprofilepictures	1	1768247116	0
+1776	1	7	moodle/user:viewprofilepictures	1	1768247116	0
+1777	1	4	moodle/course:viewhiddengroups	1	1768247116	0
+1778	1	3	moodle/course:viewhiddengroups	1	1768247116	0
+1779	1	1	moodle/course:viewhiddengroups	1	1768247116	0
+1780	1	1	moodle/contentbank:copyanycontent	1	1768247116	0
+1781	1	2	moodle/contentbank:copyanycontent	1	1768247116	0
+1782	1	1	moodle/contentbank:copycontent	1	1768247116	0
+1783	1	2	moodle/contentbank:copycontent	1	1768247116	0
+1784	1	3	moodle/contentbank:copycontent	1	1768247116	0
+1785	1	1	moodle/contentbank:configurecustomfields	1	1768247116	0
+1786	1	1	moodle/contentbank:changelockedcustomfields	1	1768247116	0
+1787	1	3	moodle/moodlenet:shareactivity	1	1768247116	0
+1788	1	1	moodle/moodlenet:shareactivity	1	1768247116	0
+1789	1	3	moodle/course:configurecoursecommunication	1	1768247116	0
+1790	1	1	moodle/course:configurecoursecommunication	1	1768247116	0
+1791	1	3	moodle/moodlenet:sharecourse	1	1768247116	0
+1792	1	1	moodle/moodlenet:sharecourse	1	1768247116	0
+1793	1	3	moodle/course:editcoursewelcomemessage	1	1768247116	0
+1794	1	1	moodle/course:editcoursewelcomemessage	1	1768247116	0
+1795	1	7	moodle/ai:fetchanyuserpolicystatus	1	1768247116	0
+1796	1	7	moodle/ai:acceptpolicy	1	1768247116	0
+1797	1	7	moodle/ai:fetchpolicy	1	1768247116	0
+1798	1	1	aiplacement/courseassist:summarise_text	1	1768247116	0
+1799	1	3	aiplacement/courseassist:summarise_text	1	1768247116	0
+1800	1	4	aiplacement/courseassist:summarise_text	1	1768247117	0
+1801	1	5	aiplacement/courseassist:summarise_text	1	1768247117	0
+1802	1	1	aiplacement/editor:generate_image	1	1768247117	0
+1803	1	3	aiplacement/editor:generate_image	1	1768247117	0
+1804	1	4	aiplacement/editor:generate_image	1	1768247117	0
+1805	1	5	aiplacement/editor:generate_image	1	1768247117	0
+1806	1	1	aiplacement/editor:generate_text	1	1768247117	0
+1807	1	3	aiplacement/editor:generate_text	1	1768247117	0
+1808	1	4	aiplacement/editor:generate_text	1	1768247117	0
+1809	1	5	aiplacement/editor:generate_text	1	1768247117	0
+1810	1	4	qtype/coderunner:viewhiddentestcases	1	1768247119	0
+1811	1	3	qtype/coderunner:viewhiddentestcases	1	1768247119	0
+1812	1	1	qtype/coderunner:viewhiddentestcases	1	1768247119	0
+1813	1	5	qtype/coderunner:sandboxwsaccess	1	1768247119	0
+1814	1	4	qtype/coderunner:sandboxwsaccess	1	1768247119	0
+1815	1	3	qtype/coderunner:sandboxwsaccess	1	1768247119	0
+1816	1	1	qtype/coderunner:sandboxwsaccess	1	1768247119	0
+1817	1	1	mod/bigbluebuttonbn:viewallrecordingformats	1	1768247121	0
+1818	1	3	mod/bigbluebuttonbn:viewallrecordingformats	1	1768247121	0
+1819	1	1	mod/bigbluebuttonbn:seepresentation	1	1768247121	0
+1820	1	4	mod/bigbluebuttonbn:seepresentation	1	1768247121	0
+1821	1	3	mod/bigbluebuttonbn:seepresentation	1	1768247121	0
+1822	1	5	mod/forum:canmailnow	1	1768247122	0
+1823	1	4	mod/forum:canmailnow	1	1768247122	0
+1824	1	3	mod/forum:canmailnow	1	1768247122	0
+1825	1	1	mod/forum:canmailnow	1	1768247122	0
+1826	1	3	mod/quiz:reopenattempts	1	1768247124	0
+1827	1	1	mod/quiz:reopenattempts	1	1768247124	0
+1828	1	3	mod/subsection:addinstance	1	1768247124	0
+1829	1	1	mod/subsection:addinstance	1	1768247124	0
+1830	1	3	communication/matrix:moderator	1	1768247125	0
+1831	1	1	communication/matrix:moderator	1	1768247126	0
+1832	1	4	communication/matrix:moderator	1	1768247126	0
+1833	1	7	block/grade_me:myaddinstance	1	1768247129	0
+1834	1	3	block/grade_me:addinstance	1	1768247129	0
+1835	1	1	block/grade_me:addinstance	1	1768247129	0
+1836	1	4	report/questionbankoverview:view	1	1768247136	0
+1837	1	3	report/questionbankoverview:view	1	1768247136	0
+1838	1	1	report/questionbankoverview:view	1	1768247136	0
+1839	1	3	qbank/purgecategory:purgecategory	1	1768247141	0
+1840	1	1	qbank/purgecategory:purgecategory	1	1768247141	0
+1841	1	7	tool/mfa:mfaaccess	1	1768247146	0
+1842	1	1	tool/uploadcourse:use	1	1768247147	0
+1843	1	4	theme/boost_union:viewhintcourseguestenrol	1	1768247149	0
+1844	1	3	theme/boost_union:viewhintcourseguestenrol	1	1768247149	0
+1845	1	1	theme/boost_union:viewhintcourseguestenrol	1	1768247149	0
+1846	1	4	theme/boost_union:viewhintcourseselfenrol	1	1768247149	0
+1847	1	3	theme/boost_union:viewhintcourseselfenrol	1	1768247149	0
+1848	1	1	theme/boost_union:viewhintcourseselfenrol	1	1768247149	0
+1849	1	4	theme/boost_union:viewhintinhiddencourse	1	1768247149	0
+1850	1	3	theme/boost_union:viewhintinhiddencourse	1	1768247149	0
+1851	1	1	theme/boost_union:viewhintinhiddencourse	1	1768247149	0
+1852	1	7	theme/boost_union:viewregionheader	1	1768247149	0
+1853	1	4	theme/boost_union:viewregionheader	1	1768247149	0
+1854	1	3	theme/boost_union:viewregionheader	1	1768247149	0
+1855	1	1	theme/boost_union:viewregionheader	1	1768247149	0
+1856	1	4	theme/boost_union:editregionheader	1	1768247149	0
+1857	1	3	theme/boost_union:editregionheader	1	1768247149	0
+1858	1	1	theme/boost_union:editregionheader	1	1768247149	0
+1859	1	7	theme/boost_union:viewregionoutsideleft	1	1768247149	0
+1860	1	4	theme/boost_union:viewregionoutsideleft	1	1768247149	0
+1861	1	3	theme/boost_union:viewregionoutsideleft	1	1768247149	0
+1862	1	1	theme/boost_union:viewregionoutsideleft	1	1768247149	0
+1863	1	4	theme/boost_union:editregionoutsideleft	1	1768247149	0
+1864	1	3	theme/boost_union:editregionoutsideleft	1	1768247149	0
+1865	1	1	theme/boost_union:editregionoutsideleft	1	1768247149	0
+1866	1	7	theme/boost_union:viewregionoutsideright	1	1768247149	0
+1867	1	4	theme/boost_union:viewregionoutsideright	1	1768247149	0
+1868	1	3	theme/boost_union:viewregionoutsideright	1	1768247149	0
+1869	1	1	theme/boost_union:viewregionoutsideright	1	1768247149	0
+1870	1	4	theme/boost_union:editregionoutsideright	1	1768247149	0
+1871	1	3	theme/boost_union:editregionoutsideright	1	1768247149	0
+1872	1	1	theme/boost_union:editregionoutsideright	1	1768247149	0
+1873	1	7	theme/boost_union:viewregionoutsidetop	1	1768247149	0
+1874	1	4	theme/boost_union:viewregionoutsidetop	1	1768247149	0
+1875	1	3	theme/boost_union:viewregionoutsidetop	1	1768247149	0
+1876	1	1	theme/boost_union:viewregionoutsidetop	1	1768247149	0
+1877	1	4	theme/boost_union:editregionoutsidetop	1	1768247149	0
+1878	1	3	theme/boost_union:editregionoutsidetop	1	1768247149	0
+1879	1	1	theme/boost_union:editregionoutsidetop	1	1768247149	0
+1880	1	7	theme/boost_union:viewregionoutsidebottom	1	1768247149	0
+1881	1	4	theme/boost_union:viewregionoutsidebottom	1	1768247149	0
+1882	1	3	theme/boost_union:viewregionoutsidebottom	1	1768247149	0
+1883	1	1	theme/boost_union:viewregionoutsidebottom	1	1768247149	0
+1884	1	4	theme/boost_union:editregionoutsidebottom	1	1768247149	0
+1885	1	3	theme/boost_union:editregionoutsidebottom	1	1768247149	0
+1886	1	1	theme/boost_union:editregionoutsidebottom	1	1768247149	0
+1887	1	7	theme/boost_union:viewregioncontentupper	1	1768247149	0
+1888	1	4	theme/boost_union:viewregioncontentupper	1	1768247149	0
+1889	1	3	theme/boost_union:viewregioncontentupper	1	1768247149	0
+1890	1	1	theme/boost_union:viewregioncontentupper	1	1768247149	0
+1891	1	4	theme/boost_union:editregioncontentupper	1	1768247149	0
+1892	1	3	theme/boost_union:editregioncontentupper	1	1768247149	0
+1893	1	1	theme/boost_union:editregioncontentupper	1	1768247149	0
+1894	1	7	theme/boost_union:viewregioncontentlower	1	1768247149	0
+1895	1	4	theme/boost_union:viewregioncontentlower	1	1768247149	0
+1896	1	3	theme/boost_union:viewregioncontentlower	1	1768247149	0
+1897	1	1	theme/boost_union:viewregioncontentlower	1	1768247149	0
+1898	1	4	theme/boost_union:editregioncontentlower	1	1768247149	0
+1899	1	3	theme/boost_union:editregioncontentlower	1	1768247149	0
+1900	1	1	theme/boost_union:editregioncontentlower	1	1768247149	0
+1901	1	7	theme/boost_union:viewregionfooterleft	1	1768247149	0
+1902	1	4	theme/boost_union:viewregionfooterleft	1	1768247149	0
+1903	1	3	theme/boost_union:viewregionfooterleft	1	1768247149	0
+1904	1	1	theme/boost_union:viewregionfooterleft	1	1768247149	0
+1905	1	4	theme/boost_union:editregionfooterleft	1	1768247149	0
+1906	1	3	theme/boost_union:editregionfooterleft	1	1768247149	0
+1907	1	1	theme/boost_union:editregionfooterleft	1	1768247149	0
+1908	1	7	theme/boost_union:viewregionfooterright	1	1768247149	0
+1909	1	4	theme/boost_union:viewregionfooterright	1	1768247149	0
+1910	1	3	theme/boost_union:viewregionfooterright	1	1768247149	0
+1911	1	1	theme/boost_union:viewregionfooterright	1	1768247149	0
+1912	1	4	theme/boost_union:editregionfooterright	1	1768247149	0
+1913	1	3	theme/boost_union:editregionfooterright	1	1768247149	0
+1914	1	1	theme/boost_union:editregionfooterright	1	1768247149	0
+1915	1	7	theme/boost_union:viewregionfootercenter	1	1768247149	0
+1916	1	4	theme/boost_union:viewregionfootercenter	1	1768247149	0
+1917	1	3	theme/boost_union:viewregionfootercenter	1	1768247149	0
+1918	1	1	theme/boost_union:viewregionfootercenter	1	1768247149	0
+1919	1	4	theme/boost_union:editregionfootercenter	1	1768247149	0
+1920	1	3	theme/boost_union:editregionfootercenter	1	1768247149	0
+1921	1	1	theme/boost_union:editregionfootercenter	1	1768247149	0
+1922	1	7	theme/boost_union:viewregionoffcanvasleft	1	1768247149	0
+1923	1	4	theme/boost_union:viewregionoffcanvasleft	1	1768247149	0
+1924	1	3	theme/boost_union:viewregionoffcanvasleft	1	1768247149	0
+1925	1	1	theme/boost_union:viewregionoffcanvasleft	1	1768247149	0
+1926	1	4	theme/boost_union:editregionoffcanvasleft	1	1768247149	0
+1927	1	3	theme/boost_union:editregionoffcanvasleft	1	1768247149	0
+1928	1	1	theme/boost_union:editregionoffcanvasleft	1	1768247149	0
+1929	1	7	theme/boost_union:viewregionoffcanvasright	1	1768247149	0
+1930	1	4	theme/boost_union:viewregionoffcanvasright	1	1768247149	0
+1931	1	3	theme/boost_union:viewregionoffcanvasright	1	1768247149	0
+1932	1	1	theme/boost_union:viewregionoffcanvasright	1	1768247149	0
+1933	1	4	theme/boost_union:editregionoffcanvasright	1	1768247149	0
+1934	1	3	theme/boost_union:editregionoffcanvasright	1	1768247149	0
+1935	1	1	theme/boost_union:editregionoffcanvasright	1	1768247149	0
+1936	1	7	theme/boost_union:viewregionoffcanvascenter	1	1768247149	0
+1937	1	4	theme/boost_union:viewregionoffcanvascenter	1	1768247149	0
+1938	1	3	theme/boost_union:viewregionoffcanvascenter	1	1768247149	0
+1939	1	1	theme/boost_union:viewregionoffcanvascenter	1	1768247149	0
+1940	1	4	theme/boost_union:editregionoffcanvascenter	1	1768247149	0
+1941	1	3	theme/boost_union:editregionoffcanvascenter	1	1768247149	0
+1942	1	1	theme/boost_union:editregionoffcanvascenter	1	1768247149	0
+1943	1	1	quizaccess/seb:manage_seb_configuremanually	1	1768247153	0
+1944	1	3	quizaccess/seb:manage_seb_configuremanually	1	1768247153	0
+1945	1	1	quizaccess/seb:manage_seb_usesebclientconfig	1	1768247153	0
+1946	1	3	quizaccess/seb:manage_seb_usesebclientconfig	1	1768247153	0
+1947	1	1	quizaccess/seb:manage_seb_allowcapturecamera	1	1768247153	0
+1948	1	3	quizaccess/seb:manage_seb_allowcapturecamera	1	1768247153	0
+1949	1	1	quizaccess/seb:manage_seb_allowcapturemicrophone	1	1768247153	0
+1950	1	3	quizaccess/seb:manage_seb_allowcapturemicrophone	1	1768247153	0
+1951	1	7	tiny/c4l:use	1	1768247157	0
+1952	1	5	tiny/c4l:viewplugin	1	1768247157	0
+1953	1	4	tiny/c4l:viewplugin	1	1768247157	0
+1954	1	3	tiny/c4l:viewplugin	1	1768247157	0
+1955	1	1	tiny/c4l:viewplugin	1	1768247157	0
+1956	1	3	tiny/cloze:use	1	1768247158	0
+1957	1	3	tiny/fontcolor:use	1	1768247158	0
+1958	1	7	tiny/fontfamily:use	1	1768247158	0
+1959	1	7	tiny/fontsize:use	1	1768247158	0
+1960	1	7	tiny/premium:accesspremium	1	1768247158	0
+1961	1	7	tiny/recordrtc:recordscreen	1	1768247159	0
+1962	1	1	tiny/wiris:use	1	1768247159	0
+1963	1	2	tiny/wiris:use	1	1768247159	0
+1964	1	3	tiny/wiris:use	1	1768247159	0
+1965	1	4	tiny/wiris:use	1	1768247159	0
+1966	1	5	tiny/wiris:use	1	1768247159	0
+1967	1	6	tiny/wiris:use	1	1768247159	0
+1968	1	7	tiny/wiris:use	1	1768247159	0
 \.
 
 
@@ -41704,6 +46205,22 @@ COPY public.m2scorm_aicc_session (id, userid, scormid, hacpsession, scoid, scorm
 
 
 --
+-- Data for Name: m2scorm_attempt; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2scorm_attempt (id, userid, scormid, attempt) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2scorm_element; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2scorm_element (id, element) FROM stdin;
+\.
+
+
+--
 -- Data for Name: m2scorm_scoes; Type: TABLE DATA; Schema: public; Owner: -
 --
 
@@ -41720,10 +46237,10 @@ COPY public.m2scorm_scoes_data (id, scoid, name, value) FROM stdin;
 
 
 --
--- Data for Name: m2scorm_scoes_track; Type: TABLE DATA; Schema: public; Owner: -
+-- Data for Name: m2scorm_scoes_value; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2scorm_scoes_track (id, userid, scormid, scoid, attempt, element, value, timemodified) FROM stdin;
+COPY public.m2scorm_scoes_value (id, scoid, attemptid, elementid, value, timemodified) FROM stdin;
 \.
 
 
@@ -41801,6 +46318,22 @@ COPY public.m2sessions (id, state, sid, userid, sessdata, timecreated, timemodif
 
 
 --
+-- Data for Name: m2sms_gateways; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2sms_gateways (id, name, gateway, enabled, config) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2sms_messages; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2sms_messages (id, recipientnumber, content, component, messagetype, recipientuserid, issensitive, gatewayid, status, timecreated) FROM stdin;
+\.
+
+
+--
 -- Data for Name: m2stats_daily; Type: TABLE DATA; Schema: public; Owner: -
 --
 
@@ -41845,6 +46378,22 @@ COPY public.m2stats_user_weekly (id, courseid, userid, roleid, timeend, statsrea
 --
 
 COPY public.m2stats_weekly (id, courseid, timeend, roleid, stattype, stat1, stat2) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2stored_progress; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2stored_progress (id, idnumber, timestart, lastupdate, percentcompleted, message, haserrored) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2subsection; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2subsection (id, course, name, timemodified) FROM stdin;
 \.
 
 
@@ -41982,6 +46531,8 @@ COPY public.m2tag_area (id, component, itemtype, enabled, tagcollid, callback, c
 9	mod_forum	forum_posts	1	1	mod_forum_get_tagged_posts	/mod/forum/locallib.php	0	0
 10	mod_glossary	glossary_entries	1	1	mod_glossary_get_tagged_entries	/mod/glossary/locallib.php	0	0
 11	mod_wiki	wiki_pages	1	1	mod_wiki_get_tagged_pages	/mod/wiki/locallib.php	0	0
+12	core_badges	badge	1	1	badge_get_tagged_badges	/badges/lib.php	0	0
+13	core_reportbuilder	reportbuilder_report	1	1	core_reportbuilder_get_tagged_reports	/reportbuilder/lib.php	0	0
 \.
 
 
@@ -42014,7 +46565,7 @@ COPY public.m2tag_instance (id, tagid, component, itemtype, itemid, contextid, t
 -- Data for Name: m2task_adhoc; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2task_adhoc (id, component, classname, nextruntime, faildelay, customdata, userid, blocking, timecreated, timestarted, hostname, pid) FROM stdin;
+COPY public.m2task_adhoc (id, component, classname, nextruntime, faildelay, customdata, userid, timecreated, timestarted, hostname, pid, attemptsavailable, firststartingtime) FROM stdin;
 \.
 
 
@@ -42395,6 +46946,70 @@ COPY public.m2task_log (id, type, component, classname, userid, timestart, timee
 370	1	assignfeedback_editpdf	assignfeedback_editpdf\\task\\bump_submission_for_stale_conversions	0	1710942995.7285000000	1710942995.7312000000	1	0	0	Execute adhoc task: assignfeedback_editpdf\\task\\bump_submission_for_stale_conversions\nAdhoc task id: 7\nAdhoc task custom data: \n... started 14:56:35. Current memory use 5.5 MB.\n... used 1 dbqueries\n... used 0.00065994262695312 seconds\nAdhoc task complete: assignfeedback_editpdf\\task\\bump_submission_for_stale_conversions\n	default	29361
 371	1	assignfeedback_editpdf	assignfeedback_editpdf\\task\\remove_orphaned_editpdf_files	0	1710942995.7348000000	1710942995.7386000000	1	1	0	Execute adhoc task: assignfeedback_editpdf\\task\\remove_orphaned_editpdf_files\nAdhoc task id: 8\nAdhoc task custom data: \n... started 14:56:35. Current memory use 5.5 MB.\n... used 2 dbqueries\n... used 0.0022838115692139 seconds\nAdhoc task complete: assignfeedback_editpdf\\task\\remove_orphaned_editpdf_files\n	default	29361
 372	1		core\\task\\build_installed_themes_task	0	1710942995.7418000000	1710943008.1355000000	6	4	0	Execute adhoc task: core\\task\\build_installed_themes_task\nAdhoc task id: 9\nAdhoc task custom data: \n... started 14:56:35. Current memory use 5.5 MB.\n... used 10 dbqueries\n... used 12.3918800354 seconds\nAdhoc task complete: core\\task\\build_installed_themes_task\n	default	29361
+373	0	moodle	core\\task\\automated_backup_report_task	0	1768247856.1050000000	1768247856.1416000000	0	0	0	Execute scheduled task: Informe de còpies de seguretat automatitzades (core\\task\\automated_backup_report_task)\n... started 20:57:36. Current memory use 2.0 MB.\n... used 0 dbqueries\n... used 0.00087904930114746 seconds\nScheduled task complete: Informe de còpies de seguretat automatitzades (core\\task\\automated_backup_report_task)\n	default	73237
+374	0	mod_assign	mod_assign\\task\\queue_all_assignment_overdue_notification_tasks	0	1768247856.1509000000	1768247856.1560000000	1	0	0	Execute scheduled task: Notifica a l'usuari que una tasca ha vençut (mod_assign\\task\\queue_all_assignment_overdue_notification_tasks)\n... started 20:57:36. Current memory use 2.5 MB.\n... used 1 dbqueries\n... used 0.004025936126709 seconds\nScheduled task complete: Notifica a l'usuari que una tasca ha vençut (mod_assign\\task\\queue_all_assignment_overdue_notification_tasks)\n	default	73237
+375	0	moodle	core\\task\\cache_cron_task	0	1768247856.1637000000	1768247856.1649000000	0	0	0	Execute scheduled task: Processament en segon pla de la memòria cau (core\\task\\cache_cron_task)\n... started 20:57:36. Current memory use 2.5 MB.\nCleaning up stale session data from cache stores.\n... used 0 dbqueries\n... used 0.00051403045654297 seconds\nScheduled task complete: Processament en segon pla de la memòria cau (core\\task\\cache_cron_task)\n	default	73237
+376	0	moodle	core\\task\\automated_backup_task	0	1768247856.1741000000	1768247856.3044000000	0	0	0	Execute scheduled task: Còpies de seguretat automatitzades. (core\\task\\automated_backup_task)\n... started 20:57:36. Current memory use 2.5 MB.\nChecking automated backup status...INACTIVE\n... used 0 dbqueries\n... used 0.12935900688171 seconds\nScheduled task complete: Còpies de seguretat automatitzades. (core\\task\\automated_backup_task)\n	default	73237
+377	0	moodle	core\\task\\complete_plans_task	0	1768247856.3098000000	1768247856.3118000000	1	0	0	Execute scheduled task: Plans d'aprenentatge complets que estan vençuts. (core\\task\\complete_plans_task)\n... started 20:57:36. Current memory use 4.0 MB.\n... used 1 dbqueries\n... used 0.0011849403381348 seconds\nScheduled task complete: Plans d'aprenentatge complets que estan vençuts. (core\\task\\complete_plans_task)\n	default	73237
+378	0	local_agora	local_agora\\task\\adware	0	1768247856.3172000000	1768247856.3511000000	146	1	0	Execute scheduled task: Detecta Adware (local_agora\\task\\adware)\n... started 20:57:36. Current memory use 4.0 MB.\n... used 147 dbqueries\n... used 0.033416032791138 seconds\nScheduled task complete: Detecta Adware (local_agora\\task\\adware)\n	default	73237
+379	0	auth_saml2	auth_saml2\\task\\metadata_refresh	0	1768247856.3561000000	1768247856.3569000000	0	0	0	Execute scheduled task: Metadata refresh task (auth_saml2\\task\\metadata_refresh)\n... started 20:57:36. Current memory use 4.1 MB.\nIdP metadata not configured.\n... used 0 dbqueries\n... used 8.4161758422852E-5 seconds\nScheduled task complete: Metadata refresh task (auth_saml2\\task\\metadata_refresh)\n	default	73237
+380	0	moodle	core\\task\\badges_cron_task	0	1768247856.3647000000	1768247856.3676000000	1	0	0	Execute scheduled task: Afegeix tasques adhoc de concessió d'insígnies (core\\task\\badges_cron_task)\n... started 20:57:36. Current memory use 3.4 MB.\n0 adhoc badge tasks were added\n... used 1 dbqueries\n... used 0.0011911392211914 seconds\nScheduled task complete: Afegeix tasques adhoc de concessió d'insígnies (core\\task\\badges_cron_task)\n	default	73237
+381	0	moodle	core\\task\\badges_message_task	0	1768247856.3718000000	1768247856.3725000000	1	0	0	Execute scheduled task: Neteja les taules, registres i fitxers de còpia de seguretat (core\\task\\badges_message_task)\n... started 20:57:36. Current memory use 3.4 MB.\nSending scheduled badge notifications.\n... used 1 dbqueries\n... used 0.00031280517578125 seconds\nScheduled task complete: Neteja les taules, registres i fitxers de còpia de seguretat (core\\task\\badges_message_task)\n	default	73237
+382	0	mod_scorm	mod_scorm\\task\\cron_task	0	1768247856.3773000000	1768247856.3817000000	3	1	0	Execute scheduled task: Processament en segon pla del mòdul SCORM (mod_scorm\\task\\cron_task)\n... started 20:57:36. Current memory use 3.5 MB.\nUpdating scorm packages which require daily update\n... used 4 dbqueries\n... used 0.0035529136657715 seconds\nScheduled task complete: Processament en segon pla del mòdul SCORM (mod_scorm\\task\\cron_task)\n	default	73237
+383	0	enrol_manual	enrol_manual\\task\\sync_enrolments	0	1768247856.3864000000	1768247856.3898000000	0	0	0	Execute scheduled task: Synchronise manual enrolments task (enrol_manual\\task\\sync_enrolments)\n... started 20:57:36. Current memory use 3.7 MB.\nVerifying manual enrolment expiration...\n...manual enrolment updates finished.\n... used 0 dbqueries\n... used 0.0027518272399902 seconds\nScheduled task complete: Synchronise manual enrolments task (enrol_manual\\task\\sync_enrolments)\n	default	73237
+384	0	enrol_manual	enrol_manual\\task\\send_expiry_notifications	0	1768247856.3946000000	1768247856.3976000000	2	1	0	Execute scheduled task: Manual enrolment send expiry notifications task (enrol_manual\\task\\send_expiry_notifications)\n... started 20:57:36. Current memory use 3.7 MB.\nProcessing manual enrolment expiration notifications...\n...notification processing finished.\n... used 3 dbqueries\n... used 0.0025999546051025 seconds\nScheduled task complete: Manual enrolment send expiry notifications task (enrol_manual\\task\\send_expiry_notifications)\n	default	73237
+385	0	enrol_self	enrol_self\\task\\sync_enrolments	0	1768247856.4020000000	1768247856.4061000000	2	0	0	Execute scheduled task: Synchronise self enrolments task (enrol_self\\task\\sync_enrolments)\n... started 20:57:36. Current memory use 3.7 MB.\nVerifying self-enrolments...\n...user self-enrolment updates finished.\nNo expired enrol_self enrolments detected\n... used 2 dbqueries\n... used 0.0035440921783447 seconds\nScheduled task complete: Synchronise self enrolments task (enrol_self\\task\\sync_enrolments)\n	default	73237
+386	0	enrol_self	enrol_self\\task\\send_expiry_notifications	0	1768247856.4111000000	1768247856.4132000000	2	1	0	Execute scheduled task: Self enrolment send expiry notifications task (enrol_self\\task\\send_expiry_notifications)\n... started 20:57:36. Current memory use 3.7 MB.\nProcessing self enrolment expiration notifications...\n...notification processing finished.\n... used 3 dbqueries\n... used 0.0016348361968994 seconds\nScheduled task complete: Self enrolment send expiry notifications task (enrol_self\\task\\send_expiry_notifications)\n	default	73237
+387	0	moodle	core_reportbuilder\\task\\send_schedules	0	1768247856.4171000000	1768247856.4202000000	1	0	0	Execute scheduled task: Send report schedules (core_reportbuilder\\task\\send_schedules)\n... started 20:57:36. Current memory use 3.8 MB.\n... used 1 dbqueries\n... used 0.002392053604126 seconds\nScheduled task complete: Send report schedules (core_reportbuilder\\task\\send_schedules)\n	default	73237
+420	0	moodle	core\\task\\portfolio_cron_task	0	1768247890.4225000000	1768247890.4248000000	0	0	0	Execute scheduled task: Processament en segon pla dels connectors de portafolis (core\\task\\portfolio_cron_task)\n... started 20:58:10. Current memory use 1.9 MB.\n... used 0 dbqueries\n... used 0.00026607513427734 seconds\nScheduled task complete: Processament en segon pla dels connectors de portafolis (core\\task\\portfolio_cron_task)\n	default	73235
+388	0	mod_quiz	mod_quiz\\task\\quiz_notify_attempt_manual_grading_completed	0	1768247856.4288000000	1768247856.4312000000	1	0	0	Execute scheduled task: Send quiz attempt graded notifications (mod_quiz\\task\\quiz_notify_attempt_manual_grading_completed)\n... started 20:57:36. Current memory use 4.0 MB.\nLooking for quiz attempts which may need a graded notification sent...\n... used 1 dbqueries\n... used 0.0011551380157471 seconds\nScheduled task complete: Send quiz attempt graded notifications (mod_quiz\\task\\quiz_notify_attempt_manual_grading_completed)\n	default	73237
+389	0	moodle	core\\task\\session_cleanup_task	0	1768247856.4361000000	1768247856.4370000000	0	1	0	Execute scheduled task: Neteja sessions velles (core\\task\\session_cleanup_task)\n... started 20:57:36. Current memory use 4.0 MB.\n... used 1 dbqueries\n... used 0.00051999092102051 seconds\nScheduled task complete: Neteja sessions velles (core\\task\\session_cleanup_task)\n	default	73237
+390	0	moodle	core\\task\\send_new_user_passwords_task	0	1768247856.4411000000	1768247856.4420000000	1	0	0	Execute scheduled task: Envia contrasenyes dels nous usuaris (core\\task\\send_new_user_passwords_task)\n... started 20:57:36. Current memory use 4.0 MB.\n... used 1 dbqueries\n... used 0.00042986869812012 seconds\nScheduled task complete: Envia contrasenyes dels nous usuaris (core\\task\\send_new_user_passwords_task)\n	default	73237
+391	0	moodle	core\\task\\send_failed_login_notifications_task	0	1768247856.4464000000	1768247856.4469000000	0	0	0	Execute scheduled task: Envia notificacions d'intents d'inici de sessió erronis (core\\task\\send_failed_login_notifications_task)\n... started 20:57:36. Current memory use 4.0 MB.\n... used 0 dbqueries\n... used 6.5088272094727E-5 seconds\nScheduled task complete: Envia notificacions d'intents d'inici de sessió erronis (core\\task\\send_failed_login_notifications_task)\n	default	73237
+392	0	moodle	core\\task\\grade_cron_task	0	1768247856.4510000000	1768247856.4527000000	2	0	0	Execute scheduled task: Processament en segon pla del butlletí de qualificacions (core\\task\\grade_cron_task)\n... started 20:57:36. Current memory use 4.0 MB.\n... used 2 dbqueries\n... used 0.00130295753479 seconds\nScheduled task complete: Processament en segon pla del butlletí de qualificacions (core\\task\\grade_cron_task)\n	default	73237
+393	0	moodle	core\\task\\completion_regular_task	0	1768247856.4571000000	1768247856.4733000000	6	0	0	Execute scheduled task: Calcula les dades ordinàries de compleció (core\\task\\completion_regular_task)\n... started 20:57:36. Current memory use 4.0 MB.\nAggregating completions\n... used 6 dbqueries\n... used 0.015700101852417 seconds\nScheduled task complete: Calcula les dades ordinàries de compleció (core\\task\\completion_regular_task)\n	default	73237
+394	0	moodle	core\\task\\portfolio_cron_task	0	1768247856.4808000000	1768247856.4816000000	0	0	0	Execute scheduled task: Processament en segon pla dels connectors de portafolis (core\\task\\portfolio_cron_task)\n... started 20:57:36. Current memory use 4.1 MB.\n... used 0 dbqueries\n... used 9.7036361694336E-5 seconds\nScheduled task complete: Processament en segon pla dels connectors de portafolis (core\\task\\portfolio_cron_task)\n	default	73237
+395	0	moodle	core\\task\\plagiarism_cron_task	0	1768247856.4887000000	1768247856.4895000000	0	0	0	Execute scheduled task: Processament en segon pla del cron heretat en els connectors de detecció de plagi (core\\task\\plagiarism_cron_task)\n... started 20:57:36. Current memory use 4.1 MB.\n... used 0 dbqueries\n... used 9.5844268798828E-5 seconds\nScheduled task complete: Processament en segon pla del cron heretat en els connectors de detecció de plagi (core\\task\\plagiarism_cron_task)\n	default	73237
+396	0	moodle	core\\task\\calendar_cron_task	0	1768247856.4978000000	1768247856.5090000000	1	0	0	Execute scheduled task: Envia notificacions del calendari (core\\task\\calendar_cron_task)\n... started 20:57:36. Current memory use 4.1 MB.\n... used 1 dbqueries\n... used 0.010272979736328 seconds\nScheduled task complete: Envia notificacions del calendari (core\\task\\calendar_cron_task)\n	default	73237
+397	0	moodle	core\\task\\blog_cron_task	0	1768247856.5144000000	1768247856.5162000000	1	1	0	Execute scheduled task: Sincronitza bitàcoles externes (core\\task\\blog_cron_task)\n... started 20:57:36. Current memory use 4.1 MB.\n... used 2 dbqueries\n... used 0.0012741088867188 seconds\nScheduled task complete: Sincronitza bitàcoles externes (core\\task\\blog_cron_task)\n	default	73237
+398	0	moodle	core\\task\\question_preview_cleanup_task	0	1768247856.5201000000	1768247856.5234000000	1	4	0	Execute scheduled task: Processament en segon pla del netejador de previsualitzacions de qüestions (core\\task\\question_preview_cleanup_task)\n... started 20:57:36. Current memory use 4.1 MB.\n\n  Cleaning up old question previews...done.\n... used 5 dbqueries\n... used 0.0027940273284912 seconds\nScheduled task complete: Processament en segon pla del netejador de previsualitzacions de qüestions (core\\task\\question_preview_cleanup_task)\n	default	73237
+399	0	mod_assign	mod_assign\\task\\cron_task	0	1768247856.5291000000	1768247856.5456000000	4	0	0	Execute scheduled task: Processament en segon pla del mòdul de tasques (mod_assign\\task\\cron_task)\n... started 20:57:36. Current memory use 4.2 MB.\n... used 4 dbqueries\n... used 0.015475988388062 seconds\nScheduled task complete: Processament en segon pla del mòdul de tasques (mod_assign\\task\\cron_task)\n	default	73237
+400	0	mod_forum	mod_forum\\task\\cron_task	0	1768247856.5526000000	1768247856.5552000000	1	1	0	Execute scheduled task: Tasques de manteniment i missatgeria del fòrum (mod_forum\\task\\cron_task)\n... started 20:57:36. Current memory use 4.5 MB.\nRemoving old digest records from 7 days ago.\nRemoved all old digest records.\nFetching unmailed posts.\n  No posts found.\n... used 2 dbqueries\n... used 0.0015010833740234 seconds\nScheduled task complete: Tasques de manteniment i missatgeria del fòrum (mod_forum\\task\\cron_task)\n	default	73237
+401	0	mod_quiz	mod_quiz\\task\\update_overdue_attempts	0	1768247856.5608000000	1768247856.5668000000	1	0	0	Execute scheduled task: Updating overdue quiz attempts (mod_quiz\\task\\update_overdue_attempts)\n... started 20:57:36. Current memory use 4.5 MB.\n  Looking for quiz overdue quiz attempts...\n  Considered 0 attempts in 0 quizzes.\n... used 1 dbqueries\n... used 0.0054631233215332 seconds\nScheduled task complete: Updating overdue quiz attempts (mod_quiz\\task\\update_overdue_attempts)\n	default	73237
+402	0	mod_workshop	mod_workshop\\task\\cron_task	0	1768247856.5718000000	1768247856.5734000000	1	0	0	Execute scheduled task: Processament en segon pla del mòdul de taller (mod_workshop\\task\\cron_task)\n... started 20:57:36. Current memory use 4.5 MB.\n processing workshop subplugins ...\n... used 1 dbqueries\n... used 0.00043892860412598 seconds\nScheduled task complete: Processament en segon pla del mòdul de taller (mod_workshop\\task\\cron_task)\n	default	73237
+403	0	tool_messageinbound	tool_messageinbound\\task\\pickup_task	0	1768247856.5826000000	1768247856.6018000000	0	0	0	Execute scheduled task: Recollida de correu electrònic entrant (tool_messageinbound\\task\\pickup_task)\n... started 20:57:36. Current memory use 4.0 MB.\nInbound Message not fully configured - exiting early.\n... used 0 dbqueries\n... used 0.01850700378418 seconds\nScheduled task complete: Recollida de correu electrònic entrant (tool_messageinbound\\task\\pickup_task)\n	default	73237
+404	0	tool_monitor	tool_monitor\\task\\clean_events	0	1768247856.6078000000	1768247856.6085000000	0	0	0	Execute scheduled task: Fes neteja dels esdeveniments del monitor d'esdeveniments (tool_monitor\\task\\clean_events)\n... started 20:57:36. Current memory use 4.1 MB.\n... used 0 dbqueries\n... used 0.00017094612121582 seconds\nScheduled task complete: Fes neteja dels esdeveniments del monitor d'esdeveniments (tool_monitor\\task\\clean_events)\n	default	73237
+405	0	workshopallocation_scheduled	workshopallocation_scheduled\\task\\cron_task	0	1768247856.6152000000	1768247856.6162000000	1	0	0	Execute scheduled task: Processament en segon pla per l'assignació programada (workshopallocation_scheduled\\task\\cron_task)\n... started 20:57:36. Current memory use 4.1 MB.\n... no workshops awaiting scheduled allocation. ... used 1 dbqueries\n... used 0.00053286552429199 seconds\nScheduled task complete: Processament en segon pla per l'assignació programada (workshopallocation_scheduled\\task\\cron_task)\n	default	73237
+406	0	local_agora	local_agora\\task\\scripts	0	1768247856.6205000000	1768247856.6362000000	0	0	0	Execute scheduled task: Àgora Scripts (local_agora\\task\\scripts)\n... started 20:57:36. Current memory use 4.1 MB.\n... used 0 dbqueries\n... used 0.015231847763062 seconds\nScheduled task complete: Àgora Scripts (local_agora\\task\\scripts)\n	default	73237
+407	0	local_oauth	local_oauth\\task\\clean	0	1768247856.6416000000	1768247856.6432000000	0	3	0	Execute scheduled task: Proveïdor OAuth (local_oauth\\task\\clean)\n... started 20:57:36. Current memory use 4.2 MB.\nDeleting expired tokens...\n... used 3 dbqueries\n... used 0.00089907646179199 seconds\nScheduled task complete: Proveïdor OAuth (local_oauth\\task\\clean)\n	default	73237
+408	0	tool_brickfield	tool_brickfield\\task\\bulk_process_courses	0	1768247856.6479000000	1768247856.6505000000	1	1	0	Execute scheduled task: Process bulk batch accessibility checking (tool_brickfield\\task\\bulk_process_courses)\n... started 20:57:36. Current memory use 4.2 MB.\n... used 2 dbqueries\n... used 0.0018820762634277 seconds\nScheduled task complete: Process bulk batch accessibility checking (tool_brickfield\\task\\bulk_process_courses)\n	default	73237
+409	0	tool_brickfield	tool_brickfield\\task\\bulk_process_caches	0	1768247856.6552000000	1768247856.6573000000	2	1	0	Execute scheduled task: Process bulk caching (tool_brickfield\\task\\bulk_process_caches)\n... started 20:57:36. Current memory use 4.2 MB.\n... used 3 dbqueries\n... used 0.0016331672668457 seconds\nScheduled task complete: Process bulk caching (tool_brickfield\\task\\bulk_process_caches)\n	default	73237
+410	0	tool_brickfield	tool_brickfield\\task\\process_analysis_requests	0	1768247856.6626000000	1768247856.6653000000	2	1	0	Execute scheduled task: Processa les peticions d’anàlisi de contingut (tool_brickfield\\task\\process_analysis_requests)\n... started 20:57:36. Current memory use 4.2 MB.\n... used 3 dbqueries\n... used 0.0021920204162598 seconds\nScheduled task complete: Processa les peticions d’anàlisi de contingut (tool_brickfield\\task\\process_analysis_requests)\n	default	73237
+411	0	tool_odisseagtafsync	tool_odisseagtafsync\\task\\cron_task	0	1768247856.6704000000	1768247856.6779000000	1	0	0	Execute scheduled task: Sincronitza (tool_odisseagtafsync\\task\\cron_task)\n... started 20:57:36. Current memory use 4.2 MB.\nNo hi ha cap fitxer pendent de processar.\n... used 1 dbqueries\n... used 0.0069689750671387 seconds\nScheduled task complete: Sincronitza (tool_odisseagtafsync\\task\\cron_task)\n	default	73237
+412	0	mod_journal	mod_journal\\task\\cron_task	0	1768247856.6838000000	1768247856.6852000000	1	0	0	Execute scheduled task: Background processing for journal module (mod_journal\\task\\cron_task)\n... started 20:57:36. Current memory use 4.2 MB.\n... used 1 dbqueries\n... used 0.00084686279296875 seconds\nScheduled task complete: Background processing for journal module (mod_journal\\task\\cron_task)\n	default	73237
+413	1		core\\task\\build_installed_themes_task	0	1768247856.6947000000	1768247877.3939000000	12	4	0	Execute adhoc task: core\\task\\build_installed_themes_task\nAdhoc task id: 10\nAdhoc task custom data: \n... started 20:57:36. Current memory use 4.4 MB.\n... used 16 dbqueries\n... used 20.69845199585 seconds\nAdhoc task complete: core\\task\\build_installed_themes_task\n	default	73237
+414	0	mod_assign	mod_assign\\task\\queue_all_assignment_due_soon_notification_tasks	0	1768247890.2183000000	1768247890.2493000000	1	0	0	Execute scheduled task: Notify user of an approaching assignment due date (mod_assign\\task\\queue_all_assignment_due_soon_notification_tasks)\n... started 20:58:10. Current memory use 1.8 MB.\n... used 1 dbqueries\n... used 0.018662929534912 seconds\nScheduled task complete: Notify user of an approaching assignment due date (mod_assign\\task\\queue_all_assignment_due_soon_notification_tasks)\n	default	73235
+415	0	moodle	core\\task\\session_cleanup_task	0	1768247890.2850000000	1768247890.2933000000	0	1	0	Execute scheduled task: Neteja sessions velles (core\\task\\session_cleanup_task)\n... started 20:58:10. Current memory use 1.9 MB.\n... used 1 dbqueries\n... used 0.0021829605102539 seconds\nScheduled task complete: Neteja sessions velles (core\\task\\session_cleanup_task)\n	default	73235
+416	0	moodle	core\\task\\send_new_user_passwords_task	0	1768247890.3064000000	1768247890.3108000000	1	0	0	Execute scheduled task: Envia contrasenyes dels nous usuaris (core\\task\\send_new_user_passwords_task)\n... started 20:58:10. Current memory use 1.9 MB.\n... used 1 dbqueries\n... used 0.0022130012512207 seconds\nScheduled task complete: Envia contrasenyes dels nous usuaris (core\\task\\send_new_user_passwords_task)\n	default	73235
+417	0	moodle	core\\task\\send_failed_login_notifications_task	0	1768247890.3314000000	1768247890.3337000000	0	0	0	Execute scheduled task: Envia notificacions d'intents d'inici de sessió erronis (core\\task\\send_failed_login_notifications_task)\n... started 20:58:10. Current memory use 1.9 MB.\n... used 0 dbqueries\n... used 0.00026202201843262 seconds\nScheduled task complete: Envia notificacions d'intents d'inici de sessió erronis (core\\task\\send_failed_login_notifications_task)\n	default	73235
+418	0	moodle	core\\task\\grade_cron_task	0	1768247890.3485000000	1768247890.3540000000	2	0	0	Execute scheduled task: Processament en segon pla del butlletí de qualificacions (core\\task\\grade_cron_task)\n... started 20:58:10. Current memory use 1.9 MB.\n... used 2 dbqueries\n... used 0.0039901733398438 seconds\nScheduled task complete: Processament en segon pla del butlletí de qualificacions (core\\task\\grade_cron_task)\n	default	73235
+419	0	moodle	core\\task\\completion_regular_task	0	1768247890.3654000000	1768247890.4026000000	6	0	0	Execute scheduled task: Calcula les dades ordinàries de compleció (core\\task\\completion_regular_task)\n... started 20:58:10. Current memory use 1.9 MB.\nAggregating completions\n... used 6 dbqueries\n... used 0.035751104354858 seconds\nScheduled task complete: Calcula les dades ordinàries de compleció (core\\task\\completion_regular_task)\n	default	73235
+421	0	moodle	core\\task\\plagiarism_cron_task	0	1768247890.4510000000	1768247890.4526000000	0	0	0	Execute scheduled task: Processament en segon pla del cron heretat en els connectors de detecció de plagi (core\\task\\plagiarism_cron_task)\n... started 20:58:10. Current memory use 1.9 MB.\n... used 0 dbqueries\n... used 0.00019693374633789 seconds\nScheduled task complete: Processament en segon pla del cron heretat en els connectors de detecció de plagi (core\\task\\plagiarism_cron_task)\n	default	73235
+422	0	moodle	core\\task\\calendar_cron_task	0	1768247890.4742000000	1768247890.4818000000	1	0	0	Execute scheduled task: Envia notificacions del calendari (core\\task\\calendar_cron_task)\n... started 20:58:10. Current memory use 1.9 MB.\n... used 1 dbqueries\n... used 0.0047709941864014 seconds\nScheduled task complete: Envia notificacions del calendari (core\\task\\calendar_cron_task)\n	default	73235
+423	0	moodle	core\\task\\blog_cron_task	0	1768247890.5010000000	1768247890.5077000000	1	1	0	Execute scheduled task: Sincronitza bitàcoles externes (core\\task\\blog_cron_task)\n... started 20:58:10. Current memory use 1.9 MB.\n... used 2 dbqueries\n... used 0.0048758983612061 seconds\nScheduled task complete: Sincronitza bitàcoles externes (core\\task\\blog_cron_task)\n	default	73235
+424	0	moodle	core\\task\\question_preview_cleanup_task	0	1768247890.5250000000	1768247890.5368000000	1	4	0	Execute scheduled task: Processament en segon pla del netejador de previsualitzacions de qüestions (core\\task\\question_preview_cleanup_task)\n... started 20:58:10. Current memory use 1.9 MB.\n\n  Cleaning up old question previews...done.\n... used 5 dbqueries\n... used 0.010258913040161 seconds\nScheduled task complete: Processament en segon pla del netejador de previsualitzacions de qüestions (core\\task\\question_preview_cleanup_task)\n	default	73235
+425	0	mod_assign	mod_assign\\task\\cron_task	0	1768247890.5571000000	1768247890.5805000000	3	0	0	Execute scheduled task: Processament en segon pla del mòdul de tasques (mod_assign\\task\\cron_task)\n... started 20:58:10. Current memory use 2.0 MB.\n... used 3 dbqueries\n... used 0.019945859909058 seconds\nScheduled task complete: Processament en segon pla del mòdul de tasques (mod_assign\\task\\cron_task)\n	default	73235
+426	0	mod_forum	mod_forum\\task\\cron_task	0	1768247890.5977000000	1768247890.6059000000	1	1	0	Execute scheduled task: Tasques de manteniment i missatgeria del fòrum (mod_forum\\task\\cron_task)\n... started 20:58:10. Current memory use 2.2 MB.\nRemoving old digest records from 7 days ago.\nRemoved all old digest records.\nFetching unmailed posts.\n  No posts found.\n... used 2 dbqueries\n... used 0.0048630237579346 seconds\nScheduled task complete: Tasques de manteniment i missatgeria del fòrum (mod_forum\\task\\cron_task)\n	default	73235
+427	0	mod_quiz	mod_quiz\\task\\update_overdue_attempts	0	1768247890.6262000000	1768247890.6354000000	1	0	0	Execute scheduled task: Updating overdue quiz attempts (mod_quiz\\task\\update_overdue_attempts)\n... started 20:58:10. Current memory use 2.3 MB.\n  Looking for quiz overdue quiz attempts...\n  Considered 0 attempts in 0 quizzes.\n... used 1 dbqueries\n... used 0.0060889720916748 seconds\nScheduled task complete: Updating overdue quiz attempts (mod_quiz\\task\\update_overdue_attempts)\n	default	73235
+428	0	mod_workshop	mod_workshop\\task\\cron_task	0	1768247890.6467000000	1768247890.6495000000	1	0	0	Execute scheduled task: Processament en segon pla del mòdul de taller (mod_workshop\\task\\cron_task)\n... started 20:58:10. Current memory use 2.4 MB.\n processing workshop subplugins ...\n... used 1 dbqueries\n... used 0.0009770393371582 seconds\nScheduled task complete: Processament en segon pla del mòdul de taller (mod_workshop\\task\\cron_task)\n	default	73235
+429	0	tool_messageinbound	tool_messageinbound\\task\\pickup_task	0	1768247890.6732000000	1768247890.6761000000	0	0	0	Execute scheduled task: Recollida de correu electrònic entrant (tool_messageinbound\\task\\pickup_task)\n... started 20:58:10. Current memory use 2.0 MB.\nInbound Message not fully configured - exiting early.\n... used 0 dbqueries\n... used 0.0011210441589355 seconds\nScheduled task complete: Recollida de correu electrònic entrant (tool_messageinbound\\task\\pickup_task)\n	default	73235
+430	0	tool_monitor	tool_monitor\\task\\clean_events	0	1768247890.6871000000	1768247890.6888000000	0	0	0	Execute scheduled task: Fes neteja dels esdeveniments del monitor d'esdeveniments (tool_monitor\\task\\clean_events)\n... started 20:58:10. Current memory use 2.0 MB.\n... used 0 dbqueries\n... used 0.00046420097351074 seconds\nScheduled task complete: Fes neteja dels esdeveniments del monitor d'esdeveniments (tool_monitor\\task\\clean_events)\n	default	73235
+431	0	workshopallocation_scheduled	workshopallocation_scheduled\\task\\cron_task	0	1768247890.7011000000	1768247890.7040000000	1	0	0	Execute scheduled task: Processament en segon pla per l'assignació programada (workshopallocation_scheduled\\task\\cron_task)\n... started 20:58:10. Current memory use 2.0 MB.\n... no workshops awaiting scheduled allocation. ... used 1 dbqueries\n... used 0.0016160011291504 seconds\nScheduled task complete: Processament en segon pla per l'assignació programada (workshopallocation_scheduled\\task\\cron_task)\n	default	73235
+432	0	local_agora	local_agora\\task\\scripts	0	1768247890.7155000000	1768247890.7196000000	0	0	0	Execute scheduled task: Àgora Scripts (local_agora\\task\\scripts)\n... started 20:58:10. Current memory use 1.9 MB.\n... used 0 dbqueries\n... used 0.0029881000518799 seconds\nScheduled task complete: Àgora Scripts (local_agora\\task\\scripts)\n	default	73235
+433	0	local_oauth	local_oauth\\task\\clean	0	1768247890.7307000000	1768247890.7334000000	0	3	0	Execute scheduled task: Proveïdor OAuth (local_oauth\\task\\clean)\n... started 20:58:10. Current memory use 1.9 MB.\nDeleting expired tokens...\n... used 3 dbqueries\n... used 0.0015528202056885 seconds\nScheduled task complete: Proveïdor OAuth (local_oauth\\task\\clean)\n	default	73235
+434	0	mod_journal	mod_journal\\task\\cron_task	0	1768247890.7433000000	1768247890.7464000000	1	0	0	Execute scheduled task: Background processing for journal module (mod_journal\\task\\cron_task)\n... started 20:58:10. Current memory use 2.0 MB.\n... used 1 dbqueries\n... used 0.0016658306121826 seconds\nScheduled task complete: Background processing for journal module (mod_journal\\task\\cron_task)\n	default	73235
+435	0	moodle	core_reportbuilder\\task\\send_schedules	0	1768247890.7619000000	1768247890.7666000000	1	0	0	Execute scheduled task: Send report schedules (core_reportbuilder\\task\\send_schedules)\n... started 20:58:10. Current memory use 2.0 MB.\n... used 1 dbqueries\n... used 0.0023829936981201 seconds\nScheduled task complete: Send report schedules (core_reportbuilder\\task\\send_schedules)\n	default	73235
+436	0	moodle	core\\task\\automated_backup_report_task	0	1768247890.7914000000	1768247890.8014000000	0	0	0	Execute scheduled task: Informe de còpies de seguretat automatitzades (core\\task\\automated_backup_report_task)\n... started 20:58:10. Current memory use 2.3 MB.\n... used 0 dbqueries\n... used 0.00078487396240234 seconds\nScheduled task complete: Informe de còpies de seguretat automatitzades (core\\task\\automated_backup_report_task)\n	default	73235
 \.
 
 
@@ -42402,130 +47017,181 @@ COPY public.m2task_log (id, type, component, classname, userid, timestart, timee
 -- Data for Name: m2task_scheduled; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2task_scheduled (id, component, classname, lastruntime, nextruntime, blocking, minute, hour, day, month, dayofweek, faildelay, customised, disabled, timestarted, hostname, pid) FROM stdin;
-8	moodle	\\core\\task\\messaging_cleanup_task	1637234390	1710945300	0	35	*	*	*	*	0	0	0	\N	\N	\N
-9	moodle	\\core\\task\\send_new_user_passwords_task	1710942995	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
-11	moodle	\\core\\task\\create_contexts_task	1637234390	1710975600	1	0	0	*	*	*	0	0	0	\N	\N	\N
-12	moodle	\\core\\task\\legacy_plugin_cron_task	1710942995	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
-13	moodle	\\core\\task\\grade_cron_task	1710942995	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
-15	moodle	\\core\\task\\completion_regular_task	1710942995	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
-16	moodle	\\core\\task\\completion_daily_task	1637234390	1711014480	0	48	10	*	*	*	0	0	0	\N	\N	\N
-17	moodle	\\core\\task\\portfolio_cron_task	1710942995	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
-18	moodle	\\core\\task\\plagiarism_cron_task	1710942995	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
-19	moodle	\\core\\task\\calendar_cron_task	1710942995	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
-20	moodle	\\core\\task\\blog_cron_task	1710942995	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
-23	moodle	\\core\\task\\registration_cron_task	0	1711525980	0	53	8	*	*	3	0	0	0	\N	\N	\N
-26	moodle	\\core\\task\\automated_backup_task	1637234390	1710946200	0	50	*	*	*	*	0	0	0	\N	\N	\N
-27	moodle	\\core\\task\\badges_cron_task	1710942994	1710943200	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
-28	moodle	\\core\\task\\badges_message_task	1710942994	1710943200	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
-30	moodle	\\core\\task\\file_trash_cleanup_task	1637234390	1710957300	0	55	*/6	*	*	*	0	0	0	\N	\N	\N
-31	moodle	\\core\\task\\search_index_task	1663840833	1710943200	0	*/30	*	*	*	*	0	0	0	\N	\N	\N
-32	moodle	\\core\\task\\search_optimize_task	1637234390	1710976500	0	15	*/12	*	*	*	0	0	0	\N	\N	\N
-33	moodle	\\core\\task\\stats_cron_task	1637234390	1710975600	0	0	0	*	*	*	0	0	0	\N	\N	\N
-34	moodle	\\core\\task\\password_reset_cleanup_task	1663840831	1710954000	0	0	*/6	*	*	*	0	0	0	\N	\N	\N
-35	moodle	\\core\\task\\complete_plans_task	1637234390	1710944700	0	25	*	*	*	*	0	0	0	\N	\N	\N
-37	moodle	\\core_files\\task\\conversion_cleanup_task	1637234390	1710984540	0	29	2	*	*	*	0	0	0	\N	\N	\N
-38	moodle	\\core\\oauth2\\refresh_system_tokens_task	1650457808	1710945000	0	30	*	*	*	*	0	0	0	\N	\N	\N
-39	moodle	\\core\\task\\analytics_cleanup_task	1637234390	1710945720	0	42	*	*	*	*	0	0	0	\N	\N	\N
-40	moodle	\\core\\task\\task_log_cleanup_task	1637234390	1711026900	0	15	14	*	*	*	0	0	0	\N	\N	\N
-41	moodle	\\core\\task\\h5p_get_content_types_task	0	1711967820	0	37	12	1	*	*	0	0	0	\N	\N	\N
-43	mod_assign	\\mod_assign\\task\\cron_task	1710942995	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
-44	mod_chat	\\mod_chat\\task\\cron_task	0	1710932400	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
-45	mod_forum	\\mod_forum\\task\\cron_task	1710942995	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
-46	mod_lti	\\mod_lti\\task\\clean_access_tokens	1680524555	1711002720	0	32	7	*	*	*	0	0	0	\N	\N	\N
-47	mod_quiz	\\mod_quiz\\task\\update_overdue_attempts	1710942995	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
-50	mod_scorm	\\mod_scorm\\task\\cron_task	1710942994	1710943200	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
-51	mod_workshop	\\mod_workshop\\task\\cron_task	1710942995	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
-52	mod_workshop	\\mod_workshop\\task\\legacy_workshop_allocation_cron	1710942995	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
-53	auth_cas	\\auth_cas\\task\\sync_task	0	1710975600	0	0	0	*	*	*	0	0	1	\N	\N	\N
-54	auth_db	\\auth_db\\task\\sync_users	0	1710958800	0	20	19	*	*	*	0	0	1	\N	\N	\N
-55	auth_ldap	\\auth_ldap\\task\\sync_roles	0	1710975600	0	0	0	*	*	*	0	0	1	\N	\N	\N
-56	auth_ldap	\\auth_ldap\\task\\sync_task	0	1710975600	0	0	0	*	*	*	0	0	1	\N	\N	\N
-57	auth_mnet	\\auth_mnet\\task\\cron_task	0	1710932400	0	*/10	*	*	*	*	0	0	0	\N	\N	\N
-109	auth_saml2	\\auth_saml2\\task\\metadata_refresh	1680524555	1710975600	0	0	0	*	*	*	0	0	0	\N	\N	\N
-58	enrol_category	\\enrol_category\\task\\enrol_category_sync	0	1710932280	0	*	*	*	*	*	0	0	0	\N	\N	\N
-59	enrol_cohort	\\enrol_cohort\\task\\enrol_cohort_sync	1710942994	1710945600	0	40	*	*	*	*	0	0	0	\N	\N	\N
-60	enrol_database	\\enrol_database\\task\\sync_enrolments	0	1710979200	0	0	1	*	*	*	0	0	1	\N	\N	\N
-61	enrol_flatfile	\\enrol_flatfile\\task\\flatfile_sync_task	0	1710933300	0	15	*	*	*	*	0	0	0	\N	\N	\N
-62	enrol_imsenterprise	\\enrol_imsenterprise\\task\\cron_task	0	1710933000	0	10	*	*	*	*	0	0	0	\N	\N	\N
-63	enrol_ldap	\\enrol_ldap\\task\\sync_enrolments	0	1710937260	0	21	13	*	*	*	0	0	1	\N	\N	\N
-64	enrol_lti	\\enrol_lti\\task\\sync_grades	0	1710932400	0	*/30	*	*	*	*	0	0	0	\N	\N	\N
-65	enrol_lti	\\enrol_lti\\task\\sync_members	0	1710932400	0	*/30	*	*	*	*	0	0	0	\N	\N	\N
-68	enrol_meta	\\enrol_meta\\task\\enrol_meta_sync	0	1710933660	0	21	*	*	*	*	0	0	0	\N	\N	\N
-69	enrol_paypal	\\enrol_paypal\\task\\process_expirations	0	1710932280	0	*	*	*	*	*	0	0	0	\N	\N	\N
-76	repository_dropbox	\\repository_dropbox\\task\\cron_task	0	1710932340	0	*	*	*	*	*	0	0	0	\N	\N	\N
-77	repository_filesystem	\\repository_filesystem\\task\\cron_task	0	1710932340	0	*	*	*	*	*	0	0	0	\N	\N	\N
-78	repository_onedrive	\\repository_onedrive\\remove_temp_access_task	0	1711418100	0	55	2	*	*	2	0	0	0	\N	\N	\N
-105	local_agora	\\local_agora\\task\\adware	1663840833	1711247100	0	25	3	*	*	0	0	0	0	\N	\N	\N
-106	local_agora	\\local_agora\\task\\scripts	1710942995	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
-7	moodle	\\core\\task\\cache_cleanup_task	1650457808	1710945000	0	30	*	*	*	*	0	0	0	\N	\N	\N
-4	moodle	\\core\\task\\backup_cleanup_task	1637234389	1710943800	0	10	*	*	*	*	0	0	0	\N	\N	\N
-5	moodle	\\core\\task\\tag_cron_task	1637234389	1710988980	0	43	3	*	*	*	0	0	0	\N	\N	\N
-6	moodle	\\core\\task\\context_cleanup_task	1650457807	1710944700	0	25	*	*	*	*	0	0	0	\N	\N	\N
-14	moodle	\\core\\task\\grade_history_cleanup_task	1637234390	1710975600	0	*	0	*	*	*	0	0	0	\N	\N	\N
-21	moodle	\\core\\task\\question_preview_cleanup_task	1710942995	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
-24	moodle	\\core\\task\\check_for_updates_task	1637234390	1710968160	0	56	21	*	*	*	0	0	0	\N	\N	\N
-25	moodle	\\core\\task\\cache_cron_task	1637234390	1710946200	0	50	*	*	*	*	0	0	0	\N	\N	\N
-29	moodle	\\core\\task\\file_temp_cleanup_task	1637234390	1710957300	0	55	*/6	*	*	*	0	0	0	\N	\N	\N
-36	moodle	\\core\\task\\sync_plans_from_template_cohorts_task	1650457808	1710943500	0	5	*	*	*	*	0	0	0	\N	\N	\N
-110	moodle	\\core\\task\\h5p_clean_orphaned_records_task	1637234392	1710977520	0	32	0	*	*	*	0	0	0	\N	\N	\N
-111	moodle	\\core\\task\\antivirus_cleanup_task	1637234392	1710975960	0	6	0	*	*	*	0	0	0	\N	\N	\N
-118	mod_attendance	\\mod_attendance\\task\\auto_mark	1710942994	1710943680	0	8	*	*	*	*	0	0	0	\N	\N	\N
-119	mod_attendance	\\mod_attendance\\task\\notify	0	1710981000	0	30	1	*	*	*	0	0	0	\N	\N	\N
-121	mod_journal	\\mod_journal\\task\\cron_task	1710942995	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
-103	mod_questionnaire	\\mod_questionnaire\\task\\cleanup	1710942994	1710976680	0	18	*/12	*	*	*	0	0	0	\N	\N	\N
-48	mod_quiz	\\mod_quiz\\task\\legacy_quiz_reports_cron	1710942995	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
-66	enrol_manual	\\enrol_manual\\task\\sync_enrolments	1710942994	1710943200	0	*/10	*	*	*	*	0	0	0	\N	\N	\N
-67	enrol_manual	\\enrol_manual\\task\\send_expiry_notifications	1710942994	1710943200	0	*/10	*	*	*	*	0	0	0	\N	\N	\N
-70	enrol_self	\\enrol_self\\task\\sync_enrolments	1710942994	1710943200	0	*/10	*	*	*	*	0	0	0	\N	\N	\N
-71	enrol_self	\\enrol_self\\task\\send_expiry_notifications	1710942994	1710943200	0	*/10	*	*	*	*	0	0	0	\N	\N	\N
-72	message_email	\\message_email\\task\\send_email_task	1680524556	1710968400	0	0	22	*	*	*	0	0	0	\N	\N	\N
-73	block_recent_activity	\\block_recent_activity\\task\\cleanup	1680524556	1711017840	0	44	11	*	*	*	0	0	0	\N	\N	\N
-74	block_rss_client	\\block_rss_client\\task\\refreshfeeds	1680524556	1710932400	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
-75	editor_atto	\\editor_atto\\task\\autosave_cleanup_task	1680524556	1711210560	0	16	17	*	*	6	0	0	0	\N	\N	\N
-79	tool_analytics	\\tool_analytics\\task\\train_models	1680524556	1710957600	0	0	19	*	*	*	0	0	0	\N	\N	\N
-80	tool_analytics	\\tool_analytics\\task\\predict_models	1710942994	1711018800	0	0	12	*	*	*	0	0	0	\N	\N	\N
-112	tool_brickfield	\\tool_brickfield\\task\\bulk_process_courses	1710942995	1710943200	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
-113	tool_brickfield	\\tool_brickfield\\task\\bulk_process_caches	1710942995	1710943200	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
-114	tool_brickfield	\\tool_brickfield\\task\\checkid_validation	1680524558	1711008300	0	05	9	*	*	*	0	0	0	\N	\N	\N
-115	tool_brickfield	\\tool_brickfield\\task\\update_summarydata	1680524558	1710978600	0	50	0	*	*	*	0	0	0	\N	\N	\N
-81	tool_cohortroles	\\tool_cohortroles\\task\\cohort_role_sync	1710942994	1710943080	0	58	*	*	*	*	0	0	0	\N	\N	\N
-82	tool_dataprivacy	\\tool_dataprivacy\\task\\expired_retention_period	1680524556	1710964800	0	0	21	*	*	*	0	0	0	\N	\N	\N
-83	tool_dataprivacy	\\tool_dataprivacy\\task\\delete_expired_contexts	1680524556	1711008000	0	0	9	*	*	*	0	0	0	\N	\N	\N
-84	tool_dataprivacy	\\tool_dataprivacy\\task\\delete_expired_requests	1680524556	1711007700	0	55	8	*	*	*	0	0	0	\N	\N	\N
-85	tool_dataprivacy	\\tool_dataprivacy\\task\\delete_existing_deleted_users	0	1710981840	0	44	1	*	*	*	0	0	1	\N	\N	\N
-86	tool_langimport	\\tool_langimport\\task\\update_langpacks_task	1680524556	1710993000	0	50	4	*	*	*	0	0	0	\N	\N	\N
-87	tool_messageinbound	\\tool_messageinbound\\task\\pickup_task	1710942995	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
-88	tool_messageinbound	\\tool_messageinbound\\task\\cleanup_task	1680524556	1710982500	0	55	1	*	*	*	0	0	0	\N	\N	\N
-89	tool_monitor	\\tool_monitor\\task\\clean_events	1710942995	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
-90	tool_monitor	\\tool_monitor\\task\\check_subscriptions	1680524556	1710988560	0	36	3	*	*	*	0	0	0	\N	\N	\N
-92	tool_recyclebin	\\tool_recyclebin\\task\\cleanup_category_bin	1710942994	1710943200	0	*/30	*	*	*	*	0	0	0	\N	\N	\N
-108	local_oauth	\\local_oauth\\task\\clean	1710942995	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
-94	ltiservice_gradebookservices	\\ltiservice_gradebookservices\\task\\cleanup_task	1680524556	1710958800	0	20	19	*	*	*	0	0	0	\N	\N	\N
-96	workshopallocation_scheduled	\\workshopallocation_scheduled\\task\\cron_task	1710942995	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
-97	logstore_legacy	\\logstore_legacy\\task\\cleanup_task	0	1710996240	0	44	5	*	*	*	0	0	0	\N	\N	\N
-98	logstore_standard	\\logstore_standard\\task\\cleanup_task	1680524557	1710990000	0	0	4	*	*	*	0	0	0	\N	\N	\N
-3	moodle	\\core\\task\\delete_incomplete_users_task	1637234389	1710943500	0	5	*	*	*	*	0	0	0	\N	\N	\N
-99	mod_hvp	\\mod_hvp\\task\\look_for_updates	1710942995	1711014240	0	44	10	*	*	*	0	0	0	\N	\N	\N
-100	mod_hvp	\\mod_hvp\\task\\remove_tmpfiles	1710942995	1710969120	0	12	22	*	*	*	0	0	0	\N	\N	\N
-101	mod_hvp	\\mod_hvp\\task\\remove_old_log_entries	1710942995	1710975780	0	3	0	*	*	*	0	0	0	\N	\N	\N
-102	mod_hvp	\\mod_hvp\\task\\remove_old_auth_tokens	1710942995	1710945240	0	34	*	*	*	*	0	0	0	\N	\N	\N
-120	mod_attendance	\\mod_attendance\\task\\clear_temporary_passwords	0	1710979200	0	0	1	*	*	*	0	0	0	\N	\N	\N
-124	mod_bigbluebuttonbn	\\mod_bigbluebuttonbn\\task\\check_pending_recordings	0	1710932400	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
-125	mod_bigbluebuttonbn	\\mod_bigbluebuttonbn\\task\\check_dismissed_recordings	0	1711018620	0	*	*	*/10	*	*	0	0	0	\N	\N	\N
-127	enrol_lti	\\enrol_lti\\local\\ltiadvantage\\task\\sync_members	0	1710932400	0	*/30	*	*	*	*	0	0	0	\N	\N	\N
-128	enrol_lti	\\enrol_lti\\local\\ltiadvantage\\task\\sync_grades	0	1710932400	0	*/30	*	*	*	*	0	0	0	\N	\N	\N
-2	moodle	\\core\\task\\delete_unconfirmed_users_task	1663840831	1710943200	0	0	*	*	*	*	0	0	0	\N	\N	\N
-123	moodle	\\core\\task\\task_lock_cleanup_task	0	1710977580	0	33	0	*	*	*	0	0	0	\N	\N	\N
-122	moodle	\\core_reportbuilder\\task\\send_schedules	1710942994	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
-126	mod_quiz	\\mod_quiz\\task\\quiz_notify_attempt_manual_grading_completed	1710942994	1710944640	0	24	*	*	*	*	0	0	0	\N	\N	\N
-129	cachestore_redis	\\cachestore_redis\\task\\ttl	1710942994	1710944940	0	29	*	*	*	*	0	0	0	\N	\N	\N
-91	tool_recyclebin	\\tool_recyclebin\\task\\cleanup_course_bin	1710942994	1710943200	0	*/30	*	*	*	*	0	0	0	\N	\N	\N
-116	tool_brickfield	\\tool_brickfield\\task\\process_analysis_requests	1710942995	1710943200	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
-117	tool_odisseagtafsync	\\tool_odisseagtafsync\\task\\cron_task	1710942995	1710943200	0	0	*	*	*	*	0	0	0	\N	\N	\N
-1	moodle	\\core\\task\\session_cleanup_task	1710942995	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
-10	moodle	\\core\\task\\send_failed_login_notifications_task	1710942995	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
-49	mod_quiz	\\mod_quiz\\task\\legacy_quiz_accessrules_cron	1710942995	1710943020	0	*	*	*	*	*	0	0	0	\N	\N	\N
+COPY public.m2task_scheduled (id, component, classname, lastruntime, nextruntime, minute, hour, day, month, dayofweek, faildelay, customised, disabled, timestarted, hostname, pid) FROM stdin;
+5	moodle	\\core\\task\\tag_cron_task	1637234389	1768269900	5	3	*	*	*	0	0	0	\N	\N	\N
+6	moodle	\\core\\task\\context_cleanup_task	1650457807	1768249500	25	*	*	*	*	0	0	0	\N	\N	\N
+7	moodle	\\core\\task\\cache_cleanup_task	1650457808	1768249800	30	*	*	*	*	0	0	0	\N	\N	\N
+8	moodle	\\core\\task\\messaging_cleanup_task	1637234390	1768250100	35	*	*	*	*	0	0	0	\N	\N	\N
+9	moodle	\\core\\task\\send_new_user_passwords_task	1768247890	1768247940	*	*	*	*	*	0	0	0	\N	\N	\N
+11	moodle	\\core\\task\\create_contexts_task	1637234390	1768258800	0	0	*	*	*	0	0	0	\N	\N	\N
+13	moodle	\\core\\task\\grade_cron_task	1768247890	1768247940	*	*	*	*	*	0	0	0	\N	\N	\N
+15	moodle	\\core\\task\\completion_regular_task	1768247890	1768247940	*	*	*	*	*	0	0	0	\N	\N	\N
+16	moodle	\\core\\task\\completion_daily_task	1637234390	1768249860	31	21	*	*	*	0	0	0	\N	\N	\N
+17	moodle	\\core\\task\\portfolio_cron_task	1768247890	1768247940	*	*	*	*	*	0	0	0	\N	\N	\N
+18	moodle	\\core\\task\\plagiarism_cron_task	1768247890	1768247940	*	*	*	*	*	0	0	0	\N	\N	\N
+19	moodle	\\core\\task\\calendar_cron_task	1768247890	1768247940	*	*	*	*	*	0	0	0	\N	\N	\N
+20	moodle	\\core\\task\\blog_cron_task	1768247890	1768247940	*	*	*	*	*	0	0	0	\N	\N	\N
+26	moodle	\\core\\task\\automated_backup_task	1768247856	1768251000	50	*	*	*	*	0	0	0	\N	\N	\N
+27	moodle	\\core\\task\\badges_cron_task	1768247856	1768248000	*/5	*	*	*	*	0	0	0	\N	\N	\N
+28	moodle	\\core\\task\\badges_message_task	1768247856	1768248000	*/5	*	*	*	*	0	0	0	\N	\N	\N
+30	moodle	\\core\\task\\file_trash_cleanup_task	1637234390	1768262100	55	*/6	*	*	*	0	0	0	\N	\N	\N
+31	moodle	\\core\\task\\search_index_task	1663840833	1768248000	*/30	*	*	*	*	0	0	0	\N	\N	\N
+32	moodle	\\core\\task\\search_optimize_task	1637234390	1768259700	15	*/12	*	*	*	0	0	0	\N	\N	\N
+33	moodle	\\core\\task\\stats_cron_task	1637234390	1768258800	0	0	*	*	*	0	0	0	\N	\N	\N
+34	moodle	\\core\\task\\password_reset_cleanup_task	1663840831	1768258800	0	*/6	*	*	*	0	0	0	\N	\N	\N
+35	moodle	\\core\\task\\complete_plans_task	1768247856	1768250880	48	*	*	*	*	0	0	0	\N	\N	\N
+37	moodle	\\core_files\\task\\conversion_cleanup_task	1637234390	1768268400	40	2	*	*	*	0	0	0	\N	\N	\N
+38	moodle	\\core\\oauth2\\refresh_system_tokens_task	1650457808	1768249800	30	*	*	*	*	0	0	0	\N	\N	\N
+39	moodle	\\core\\task\\analytics_cleanup_task	1637234390	1768250520	42	*	*	*	*	0	0	0	\N	\N	\N
+40	moodle	\\core\\task\\task_log_cleanup_task	1637234390	1768248540	9	21	*	*	*	0	0	0	\N	\N	\N
+41	moodle	\\core\\task\\h5p_get_content_types_task	0	1769977980	33	21	1	*	*	0	0	0	\N	\N	\N
+43	mod_assign	\\mod_assign\\task\\cron_task	1768247890	1768247940	*	*	*	*	*	0	0	0	\N	\N	\N
+44	mod_chat	\\mod_chat\\task\\cron_task	0	1768247400	*/5	*	*	*	*	0	0	0	\N	\N	\N
+45	mod_forum	\\mod_forum\\task\\cron_task	1768247890	1768247940	*	*	*	*	*	0	0	0	\N	\N	\N
+46	mod_lti	\\mod_lti\\task\\clean_access_tokens	1680524555	1768273380	3	4	*	*	*	0	0	0	\N	\N	\N
+47	mod_quiz	\\mod_quiz\\task\\update_overdue_attempts	1768247890	1768247940	*	*	*	*	*	0	0	0	\N	\N	\N
+50	mod_scorm	\\mod_scorm\\task\\cron_task	1768247856	1768248000	*/5	*	*	*	*	0	0	0	\N	\N	\N
+51	mod_workshop	\\mod_workshop\\task\\cron_task	1768247890	1768247940	*	*	*	*	*	0	0	0	\N	\N	\N
+53	auth_cas	\\auth_cas\\task\\sync_task	0	1768258800	0	0	*	*	*	0	0	1	\N	\N	\N
+54	auth_db	\\auth_db\\task\\sync_users	0	1768259280	8	0	*	*	*	0	0	1	\N	\N	\N
+55	auth_ldap	\\auth_ldap\\task\\sync_roles	0	1768258800	0	0	*	*	*	0	0	1	\N	\N	\N
+56	auth_ldap	\\auth_ldap\\task\\sync_task	0	1768258800	0	0	*	*	*	0	0	1	\N	\N	\N
+57	auth_mnet	\\auth_mnet\\task\\cron_task	0	1768247400	*/10	*	*	*	*	0	0	0	\N	\N	\N
+58	enrol_category	\\enrol_category\\task\\enrol_category_sync	0	1768247160	*	*	*	*	*	0	0	0	\N	\N	\N
+59	enrol_cohort	\\enrol_cohort\\task\\enrol_cohort_sync	1710942994	1768249560	26	*	*	*	*	0	0	0	\N	\N	\N
+60	enrol_database	\\enrol_database\\task\\sync_enrolments	0	1768323660	1	18	*	*	*	0	0	1	\N	\N	\N
+61	enrol_flatfile	\\enrol_flatfile\\task\\flatfile_sync_task	0	1768248900	15	*	*	*	*	0	0	0	\N	\N	\N
+62	enrol_imsenterprise	\\enrol_imsenterprise\\task\\cron_task	0	1768248600	10	*	*	*	*	0	0	0	\N	\N	\N
+63	enrol_ldap	\\enrol_ldap\\task\\sync_enrolments	0	1768251420	57	21	*	*	*	0	0	1	\N	\N	\N
+64	enrol_lti	\\enrol_lti\\task\\sync_grades	0	1768248000	*/30	*	*	*	*	0	0	0	\N	\N	\N
+65	enrol_lti	\\enrol_lti\\task\\sync_members	0	1768248000	*/30	*	*	*	*	0	0	0	\N	\N	\N
+68	enrol_meta	\\enrol_meta\\task\\enrol_meta_sync	0	1768247700	55	*	*	*	*	0	0	0	\N	\N	\N
+69	enrol_paypal	\\enrol_paypal\\task\\process_expirations	0	1768247160	*	*	*	*	*	0	0	0	\N	\N	\N
+76	repository_dropbox	\\repository_dropbox\\task\\cron_task	0	1768247160	*	*	*	*	*	0	0	0	\N	\N	\N
+77	repository_filesystem	\\repository_filesystem\\task\\cron_task	0	1768247160	*	*	*	*	*	0	0	0	\N	\N	\N
+78	repository_onedrive	\\repository_onedrive\\remove_temp_access_task	0	1768519020	17	0	*	*	5	0	0	0	\N	\N	\N
+105	local_agora	\\local_agora\\task\\adware	1768247856	1768703100	25	3	*	*	0	0	0	0	\N	\N	\N
+109	auth_saml2	\\auth_saml2\\task\\metadata_refresh	1768247856	1768258800	0	0	*	*	*	0	0	0	\N	\N	\N
+106	local_agora	\\local_agora\\task\\scripts	1768247890	1768247940	*	*	*	*	*	0	0	0	\N	\N	\N
+2	moodle	\\core\\task\\delete_unconfirmed_users_task	1663840831	1768248000	0	*	*	*	*	0	0	0	\N	\N	\N
+3	moodle	\\core\\task\\delete_incomplete_users_task	1637234389	1768248300	5	*	*	*	*	0	0	0	\N	\N	\N
+14	moodle	\\core\\task\\grade_history_cleanup_task	1637234390	1768258800	*	0	*	*	*	0	0	0	\N	\N	\N
+21	moodle	\\core\\task\\question_preview_cleanup_task	1768247890	1768247940	*	*	*	*	*	0	0	0	\N	\N	\N
+24	moodle	\\core\\task\\check_for_updates_task	1637234390	1768321320	22	17	*	*	*	0	0	0	\N	\N	\N
+25	moodle	\\core\\task\\cache_cron_task	1768247856	1768251000	50	*	*	*	*	0	0	0	\N	\N	\N
+29	moodle	\\core\\task\\file_temp_cleanup_task	1637234390	1768262100	55	*/6	*	*	*	0	0	0	\N	\N	\N
+36	moodle	\\core\\task\\sync_plans_from_template_cohorts_task	1650457808	1768250040	34	*	*	*	*	0	0	0	\N	\N	\N
+110	moodle	\\core\\task\\h5p_clean_orphaned_records_task	1637234392	1768260300	25	0	*	*	*	0	0	0	\N	\N	\N
+111	moodle	\\core\\task\\antivirus_cleanup_task	1637234392	1768259640	14	0	*	*	*	0	0	0	\N	\N	\N
+118	mod_attendance	\\mod_attendance\\task\\auto_mark	1710942994	1768248480	8	*	*	*	*	0	0	0	\N	\N	\N
+119	mod_attendance	\\mod_attendance\\task\\notify	0	1768264200	30	1	*	*	*	0	0	0	\N	\N	\N
+120	mod_attendance	\\mod_attendance\\task\\clear_temporary_passwords	0	1768262400	0	1	*	*	*	0	0	0	\N	\N	\N
+124	mod_bigbluebuttonbn	\\mod_bigbluebuttonbn\\task\\check_pending_recordings	0	1768247400	*/5	*	*	*	*	0	0	0	\N	\N	\N
+125	mod_bigbluebuttonbn	\\mod_bigbluebuttonbn\\task\\check_dismissed_recordings	0	1768950000	*	*	*/10	*	*	0	0	0	\N	\N	\N
+99	mod_hvp	\\mod_hvp\\task\\look_for_updates	1710942995	1768303080	18	12	*	*	*	0	0	0	\N	\N	\N
+100	mod_hvp	\\mod_hvp\\task\\remove_tmpfiles	1710942995	1768286700	45	7	*	*	*	0	0	0	\N	\N	\N
+101	mod_hvp	\\mod_hvp\\task\\remove_old_log_entries	1710942995	1768316280	58	15	*	*	*	0	0	0	\N	\N	\N
+102	mod_hvp	\\mod_hvp\\task\\remove_old_auth_tokens	1710942995	1768250280	38	*	*	*	*	0	0	0	\N	\N	\N
+121	mod_journal	\\mod_journal\\task\\cron_task	1768247890	1768247940	*	*	*	*	*	0	0	0	\N	\N	\N
+103	mod_questionnaire	\\mod_questionnaire\\task\\cleanup	1710942994	1768261920	52	*/12	*	*	*	0	0	0	\N	\N	\N
+127	enrol_lti	\\enrol_lti\\local\\ltiadvantage\\task\\sync_members	0	1768248000	*/30	*	*	*	*	0	0	0	\N	\N	\N
+128	enrol_lti	\\enrol_lti\\local\\ltiadvantage\\task\\sync_grades	0	1768248000	*/30	*	*	*	*	0	0	0	\N	\N	\N
+66	enrol_manual	\\enrol_manual\\task\\sync_enrolments	1768247856	1768248000	*/10	*	*	*	*	0	0	0	\N	\N	\N
+67	enrol_manual	\\enrol_manual\\task\\send_expiry_notifications	1768247856	1768248000	*/10	*	*	*	*	0	0	0	\N	\N	\N
+70	enrol_self	\\enrol_self\\task\\sync_enrolments	1768247856	1768248000	*/10	*	*	*	*	0	0	0	\N	\N	\N
+71	enrol_self	\\enrol_self\\task\\send_expiry_notifications	1768247856	1768248000	*/10	*	*	*	*	0	0	0	\N	\N	\N
+72	message_email	\\message_email\\task\\send_email_task	1680524556	1768251600	0	22	*	*	*	0	0	0	\N	\N	\N
+73	block_recent_activity	\\block_recent_activity\\task\\cleanup	1680524556	1768306440	14	13	*	*	*	0	0	0	\N	\N	\N
+74	block_rss_client	\\block_rss_client\\task\\refreshfeeds	1680524556	1768247400	*/5	*	*	*	*	0	0	0	\N	\N	\N
+75	editor_atto	\\editor_atto\\task\\autosave_cleanup_task	1680524556	1768720620	17	8	*	*	0	0	0	0	\N	\N	\N
+79	tool_analytics	\\tool_analytics\\task\\train_models	1680524556	1768251600	0	22	*	*	*	0	0	0	\N	\N	\N
+80	tool_analytics	\\tool_analytics\\task\\predict_models	1710942994	1768298400	0	11	*	*	*	0	0	0	\N	\N	\N
+112	tool_brickfield	\\tool_brickfield\\task\\bulk_process_courses	1768247856	1768248000	*/5	*	*	*	*	0	0	0	\N	\N	\N
+113	tool_brickfield	\\tool_brickfield\\task\\bulk_process_caches	1768247856	1768248000	*/5	*	*	*	*	0	0	0	\N	\N	\N
+114	tool_brickfield	\\tool_brickfield\\task\\checkid_validation	1680524558	1768291500	05	9	*	*	*	0	0	0	\N	\N	\N
+115	tool_brickfield	\\tool_brickfield\\task\\update_summarydata	1680524558	1768261800	50	0	*	*	*	0	0	0	\N	\N	\N
+81	tool_cohortroles	\\tool_cohortroles\\task\\cohort_role_sync	1710942994	1768249380	23	*	*	*	*	0	0	0	\N	\N	\N
+82	tool_dataprivacy	\\tool_dataprivacy\\task\\expired_retention_period	1680524556	1768323600	0	18	*	*	*	0	0	0	\N	\N	\N
+83	tool_dataprivacy	\\tool_dataprivacy\\task\\delete_expired_contexts	1680524556	1768294800	0	10	*	*	*	0	0	0	\N	\N	\N
+84	tool_dataprivacy	\\tool_dataprivacy\\task\\delete_expired_requests	1680524556	1768306980	23	13	*	*	*	0	0	0	\N	\N	\N
+85	tool_dataprivacy	\\tool_dataprivacy\\task\\delete_existing_deleted_users	0	1768287900	5	8	*	*	*	0	0	1	\N	\N	\N
+86	tool_langimport	\\tool_langimport\\task\\update_langpacks_task	1680524556	1768276200	50	4	*	*	*	0	0	0	\N	\N	\N
+87	tool_messageinbound	\\tool_messageinbound\\task\\pickup_task	1768247890	1768247940	*	*	*	*	*	0	0	0	\N	\N	\N
+88	tool_messageinbound	\\tool_messageinbound\\task\\cleanup_task	1680524556	1768265700	55	1	*	*	*	0	0	0	\N	\N	\N
+89	tool_monitor	\\tool_monitor\\task\\clean_events	1768247890	1768247940	*	*	*	*	*	0	0	0	\N	\N	\N
+90	tool_monitor	\\tool_monitor\\task\\check_subscriptions	1680524556	1768317600	20	16	*	*	*	0	0	0	\N	\N	\N
+92	tool_recyclebin	\\tool_recyclebin\\task\\cleanup_category_bin	1710942994	1768248000	*/30	*	*	*	*	0	0	0	\N	\N	\N
+94	ltiservice_gradebookservices	\\ltiservice_gradebookservices\\task\\cleanup_task	1680524556	1768309860	11	14	*	*	*	0	0	0	\N	\N	\N
+96	workshopallocation_scheduled	\\workshopallocation_scheduled\\task\\cron_task	1768247890	1768247940	*	*	*	*	*	0	0	0	\N	\N	\N
+98	logstore_standard	\\logstore_standard\\task\\cleanup_task	1680524557	1768274880	28	4	*	*	*	0	0	0	\N	\N	\N
+108	local_oauth	\\local_oauth\\task\\clean	1768247890	1768247940	*	*	*	*	*	0	0	0	\N	\N	\N
+4	moodle	\\core\\task\\backup_cleanup_task	1637234389	1768248600	10	*	*	*	*	0	0	0	\N	\N	\N
+23	moodle	\\core\\task\\registration_cron_task	0	1768296720	32	10	*	*	2	0	0	0	\N	\N	\N
+116	tool_brickfield	\\tool_brickfield\\task\\process_analysis_requests	1768247856	1768248000	*/5	*	*	*	*	0	0	0	\N	\N	\N
+123	moodle	\\core\\task\\task_lock_cleanup_task	0	1768260720	32	0	*	*	*	0	0	0	\N	\N	\N
+131	moodle	\\core_xapi\\task\\state_cleanup_task	0	1768261980	53	0	*	*	*	0	0	0	\N	\N	\N
+132	moodle	\\core\\task\\show_started_courses_task	0	1768262400	00	01	*	*	*	0	0	1	\N	\N	\N
+133	moodle	\\core\\task\\hide_ended_courses_task	0	1768262400	00	01	*	*	*	0	0	1	\N	\N	\N
+134	moodle	\\core_communication\\task\\synchronise_providers_task	0	1768730640	4	11	*	*	0	0	0	0	\N	\N	\N
+136	moodle	\\core\\task\\update_geoip2file_task	0	1768600800	0	23	*	*	5	0	0	1	\N	\N	\N
+137	moodle	\\core\\task\\stored_progress_bar_cleanup_task	0	1768262400	00	01	*	*	*	0	0	0	\N	\N	\N
+138	qtype_coderunner	\\qtype_coderunner\\task\\cache_cleaner	0	1768608180	3	1	*	*	6	0	0	0	\N	\N	\N
+141	mod_assign	\\mod_assign\\task\\queue_all_assignment_due_digest_notification_tasks	0	1768265340	49	1	*	*	*	0	0	0	\N	\N	\N
+142	mod_quiz	\\mod_quiz\\task\\queue_all_quiz_open_notification_tasks	0	1768253640	34	*/2	*	*	*	0	0	0	\N	\N	\N
+143	customfield_number	\\customfield_number\\task\\cron	0	1768267740	29	2	*	*	*	0	0	0	\N	\N	\N
+144	block_grade_me	\\block_grade_me\\task\\cache_grade_data	0	1768248000	*/15	*	*	*	*	0	0	0	\N	\N	\N
+145	block_grade_me	\\block_grade_me\\task\\reset_block	0	1768263300	15	1	*	*	*	0	0	0	\N	\N	\N
+91	tool_recyclebin	\\tool_recyclebin\\task\\cleanup_course_bin	1710942994	1768248000	*/30	*	*	*	*	0	0	0	\N	\N	\N
+129	cachestore_redis	\\cachestore_redis\\task\\ttl	1710942994	1768250700	45	*	*	*	*	0	0	0	\N	\N	\N
+146	theme_boost_union	\\theme_boost_union\\task\\purge_cache	0	1768258800	0	0	*	*	*	0	0	1	\N	\N	\N
+147	factor_grace	\\factor_grace\\task\\revoke_expired_factors	0	1768261740	49	0	*	*	*	0	0	0	\N	\N	\N
+148	factor_nosetup	\\factor_nosetup\\task\\delete_unusable_factors	0	1768259940	19	0	*	*	*	0	0	0	\N	\N	\N
+117	tool_odisseagtafsync	\\tool_odisseagtafsync\\task\\cron_task	1768247856	1768248000	0	*	*	*	*	0	0	0	\N	\N	\N
+140	mod_assign	\\mod_assign\\task\\queue_all_assignment_overdue_notification_tasks	1768247856	1768251300	55	*/1	*	*	*	0	0	0	\N	\N	\N
+139	mod_assign	\\mod_assign\\task\\queue_all_assignment_due_soon_notification_tasks	1768247890	1768255080	58	*/2	*	*	*	0	0	0	\N	\N	\N
+126	mod_quiz	\\mod_quiz\\task\\quiz_notify_attempt_manual_grading_completed	1768247856	1768251360	56	*	*	*	*	0	0	0	\N	\N	\N
+1	moodle	\\core\\task\\session_cleanup_task	1768247890	1768247940	*	*	*	*	*	0	0	0	\N	\N	\N
+10	moodle	\\core\\task\\send_failed_login_notifications_task	1768247890	1768247940	*	*	*	*	*	0	0	0	\N	\N	\N
+122	moodle	\\core_reportbuilder\\task\\send_schedules	1768247890	1768247940	*	*	*	*	*	0	0	0	\N	\N	\N
+135	moodle	\\core\\task\\automated_backup_report_task	1768247890	1768247940	*	*	*	*	*	0	0	0	\N	\N	\N
+\.
+
+
+--
+-- Data for Name: m2theme_boost_union_flavours; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2theme_boost_union_flavours (id, title, description, description_format, sort, applytocohorts, applytocohorts_ids, applytocategories, applytocategories_ids, applytocategories_subcats, look_logo, look_logocompact, look_favicon, look_backgroundimage, look_backgroundimagepos, look_rawscss, look_rawscsspre, look_brandcolor, look_bootstrapcolorsuccess, look_bootstrapcolorinfo, look_bootstrapcolorwarning, look_bootstrapcolordanger, look_aicoladministration, look_aicolassessment, look_aicolcollaboration, look_aicolcommunication, look_aicolcontent, look_aicolinteractivecontent, look_aicolinterface, look_navbarcolor) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2theme_boost_union_menuitems; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2theme_boost_union_menuitems (id, title, menu, type, sortorder, url, category, category_subcats, enrolmentrole, completionstatus, daterange, customfields, listsort, displayhiddencourses, hiddencoursesort, displayfield, textcount, mode, menuicon, display, tooltip, target, cssclass, imagealt, textposition, textcolor, backgroundcolor, desktop, tablet, mobile, roles, rolecontext, cohorts, operator, languages, start_date, end_date, visible, timemodified, byadmin) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2theme_boost_union_menus; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2theme_boost_union_menus (id, title, description, description_format, showdesc, sortorder, location, type, mode, cssclass, moremenubehavior, cardsize, cardform, cardoverflowbehavior, roles, rolecontext, cohorts, operator, languages, start_date, end_date, visible, byadmin) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2theme_boost_union_snippets; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2theme_boost_union_snippets (id, name, source, enabled, sortorder) FROM stdin;
+1	calendar_height.scss	theme_boost_union	0	1
+2	debugging_footer.scss	theme_boost_union	0	2
+3	no_round_corners.scss	theme_boost_union	0	3
+4	rainbow_navbar.scss	theme_boost_union	0	4
+5	site_policy_modal.scss	theme_boost_union	0	5
+6	tertiary_navigation_button.scss	theme_boost_union	0	6
 \.
 
 
@@ -42681,6 +47347,14 @@ COPY public.m2tool_dataprivacy_category (id, name, description, descriptionforma
 
 
 --
+-- Data for Name: m2tool_dataprivacy_contextlist; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2tool_dataprivacy_contextlist (id, component, timecreated, timemodified) FROM stdin;
+\.
+
+
+--
 -- Data for Name: m2tool_dataprivacy_ctxexpired; Type: TABLE DATA; Schema: public; Owner: -
 --
 
@@ -42705,6 +47379,14 @@ COPY public.m2tool_dataprivacy_ctxlevel (id, contextlevel, purposeid, categoryid
 
 
 --
+-- Data for Name: m2tool_dataprivacy_ctxlst_ctx; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2tool_dataprivacy_ctxlst_ctx (id, contextid, contextlistid, status, timecreated, timemodified) FROM stdin;
+\.
+
+
+--
 -- Data for Name: m2tool_dataprivacy_purpose; Type: TABLE DATA; Schema: public; Owner: -
 --
 
@@ -42725,6 +47407,38 @@ COPY public.m2tool_dataprivacy_purposerole (id, purposeid, roleid, lawfulbases, 
 --
 
 COPY public.m2tool_dataprivacy_request (id, type, comments, commentsformat, userid, requestedby, status, dpo, dpocomment, dpocommentformat, usermodified, timecreated, timemodified, creationmethod, systemapproved) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2tool_dataprivacy_rqst_ctxlst; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2tool_dataprivacy_rqst_ctxlst (id, requestid, contextlistid) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2tool_mfa; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2tool_mfa (id, userid, factor, secret, label, timecreated, createdfromip, timemodified, lastverified, revoked, lockcounter) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2tool_mfa_auth; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2tool_mfa_auth (id, userid, lastverified) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2tool_mfa_secrets; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2tool_mfa_secrets (id, userid, factor, secret, timecreated, expiry, revoked, sessionid) FROM stdin;
 \.
 
 
@@ -42829,6 +47543,9 @@ COPY public.m2tool_usertours_steps (id, tourid, title, content, targettype, targ
 22	8	tour_navigation_course_announcements_teacher_title,tool_usertours	tour_navigation_course_announcements_teacher_content,tool_usertours	0	.course-content .course-content-item-content .activity-item[data-activityname="Announcements"]	2	{"placement":"left"}	1
 23	9	tour_navigation_mycourses_title,tool_usertours	tour_navigation_mycourses_content,tool_usertours	0	.header-actions-container .btn-group.course-manage	0	{}	1
 24	10	tour_navigation_dashboard_title,tool_usertours	tour_navigation_dashboard_content,tool_usertours	0	.drawer-toggles .drawer-toggler.drawer-right-toggle	0	{"placement":"left"}	1
+25	11	tour_gradebook_search_title,tool_usertours	tour_gradebook_search_content,tool_usertours	0	.tertiary-navigation .user-search	0	{}	1
+26	11	tour_gradebook_filter_title,tool_usertours	tour_gradebook_filter_content,tool_usertours	0	.tertiary-navigation .initials-selector	1	{}	1
+27	11	tour_gradebook_action_title,tool_usertours	tour_gradebook_action_content,tool_usertours	0	tr.heading th.highlightable .action-menu.grader	2	{}	1
 \.
 
 
@@ -42837,16 +47554,17 @@ COPY public.m2tool_usertours_steps (id, tourid, title, content, targettype, targ
 --
 
 COPY public.m2tool_usertours_tours (id, name, description, pathmatch, enabled, sortorder, configdata, endtourlabel, displaystepnumbers) FROM stdin;
-10	tour_navigation_dashboard_tour_name,tool_usertours	tour_navigation_dashboard_tour_des,tool_usertours	FRONTPAGE_MY	1	0	{"placement":"left","orphan":"0","backdrop":"1","reflex":"0","filtervalues":{"accessdate":{"filter_accessdate":"tool_usertours_accountcreation","filter_accessdate_range":0,"filter_accessdate_enabled":"0"},"category":[],"course":[],"courseformat":[],"role":[],"theme":["boost"],"cssselector":[]},"majorupdatetime":1641972465,"shipped_tour":true,"shipped_filename":"40_tour_navigation_dashboard.json","shipped_version":4}		1
-5	Activity information in activity page (Teacher)	A tour of the activity information for Teacher display on the activity page	/mod/%/view.php%	0	5	{"placement":"bottom","orphan":"0","backdrop":"1","reflex":"0","filtervalues":{"accessdate":{"filter_accessdate":"tool_usertours_accountcreation","filter_accessdate_range":0,"filter_accessdate_enabled":"0"},"category":[],"course":[],"courseformat":[],"role":["manager","teacher","editingteacher"],"theme":[],"cssselector":["[data-region=activity-information]"]},"majorupdatetime":1620110287,"shipped_tour":true,"shipped_filename":"311_activity_information_activity_page_teacher.json","shipped_version":2}	\N	0
-3	Activity information in course homepage (Teacher)	A tour of the activity information for Teacher display on the course homepage	/course/view.php%	0	7	{"placement":"bottom","orphan":"0","backdrop":"1","reflex":"0","filtervalues":{"accessdate":{"filter_accessdate":"tool_usertours_accountcreation","filter_accessdate_range":0,"filter_accessdate_enabled":"0"},"category":[],"course":[],"courseformat":[],"role":["manager","teacher","editingteacher"],"theme":[],"cssselector":["[data-region=activity-information]"]},"majorupdatetime":1620109487,"shipped_tour":true,"shipped_filename":"311_activity_information_course_page_teacher.json","shipped_version":2}	\N	0
-7	tour_navigation_course_student_tour_name,tool_usertours	tour_navigation_course_student_tour_des,tool_usertours	/course/view.php%	1	3	{"placement":"right","orphan":"0","backdrop":"1","reflex":"0","filtervalues":{"accessdate":{"filter_accessdate":"tool_usertours_accountcreation","filter_accessdate_range":0,"filter_accessdate_enabled":"0"},"category":[],"course":[],"courseformat":[],"role":["student"],"theme":["boost"],"cssselector":[]},"majorupdatetime":1641972472,"shipped_tour":true,"shipped_filename":"40_tour_navigation_course_student.json","shipped_version":3}		1
-2	Dashboard	New dashboard features	/my/%	0	8	{"placement":"top","orphan":"0","backdrop":"0","reflex":"0","filtervalues":{"category":[],"course":["0"],"courseformat":[],"role":[],"theme":[]},"majorupdatetime":1543396938,"shipped_tour":true,"shipped_filename":"36_dashboard.json","shipped_version":3}	\N	0
-8	tour_navigation_course_teacher_tour_name,tool_usertours	tour_navigation_course_teacher_tour_des,tool_usertours	/course/view.php%	1	2	{"placement":"bottom","orphan":"0","backdrop":"1","reflex":"0","filtervalues":{"accessdate":{"filter_accessdate":"tool_usertours_accountcreation","filter_accessdate_range":0,"filter_accessdate_enabled":"0"},"category":[],"course":[],"courseformat":[],"role":["-1","coursecreator","manager","teacher","editingteacher"],"theme":["boost"],"cssselector":[]},"majorupdatetime":1641972470,"shipped_tour":true,"shipped_filename":"40_tour_navigation_course_teacher.json","shipped_version":3}		1
-6	Activity information in activity page (Student)	A tour of the activity information for Student display on the activity page	/mod/%/view.php%	0	4	{"placement":"bottom","orphan":"0","backdrop":"1","reflex":"0","filtervalues":{"accessdate":{"filter_accessdate":"tool_usertours_accountcreation","filter_accessdate_range":0,"filter_accessdate_enabled":"0"},"category":[],"course":[],"courseformat":[],"role":["student"],"theme":[],"cssselector":["[data-region=activity-information]"]},"majorupdatetime":1620110287,"shipped_tour":true,"shipped_filename":"311_activity_information_activity_page_student.json","shipped_version":2}	\N	0
-9	tour_navigation_mycourses_tour_name,tool_usertours	tour_navigation_mycourses_tour_des,tool_usertours	/my/courses.php	1	1	{"placement":"bottom","orphan":"0","backdrop":"1","reflex":"0","filtervalues":{"accessdate":{"filter_accessdate":"tool_usertours_accountcreation","filter_accessdate_range":0,"filter_accessdate_enabled":"0"},"category":[],"course":[],"courseformat":[],"role":[],"theme":["boost"],"cssselector":[]},"majorupdatetime":1641972468,"shipped_tour":true,"shipped_filename":"40_tour_navigation_mycourse.json","shipped_version":5}	tour_navigation_mycourses_endtourlabel,tool_usertours	1
-1	New Messaging System	New messaging interface in Moodle 3.6	/course/view.php%	0	9	{"placement":"bottom","orphan":"0","backdrop":"0","reflex":"0","filtervalues":{"category":[],"course":["0"],"courseformat":[],"role":[],"theme":[]},"majorupdatetime":1543468823,"shipped_tour":true,"shipped_filename":"36_messaging.json","shipped_version":3}	\N	0
-4	Activity information in course homepage (Student)	A tour of the activity information for Student display on the course homepage	/course/view.php%	0	6	{"placement":"bottom","orphan":"0","backdrop":"1","reflex":"0","filtervalues":{"accessdate":{"filter_accessdate":"tool_usertours_accountcreation","filter_accessdate_range":0,"filter_accessdate_enabled":"0"},"category":[],"course":[],"courseformat":[],"role":["student"],"theme":[],"cssselector":["[data-region=activity-information]"]},"majorupdatetime":1620109487,"shipped_tour":true,"shipped_filename":"311_activity_information_course_page_student.json","shipped_version":2}	\N	0
+6	Activity information in activity page (Student)	A tour of the activity information for Student display on the activity page	/mod/%/view.php%	0	5	{"placement":"bottom","orphan":"0","backdrop":"1","reflex":"0","filtervalues":{"accessdate":{"filter_accessdate":"tool_usertours_accountcreation","filter_accessdate_range":0,"filter_accessdate_enabled":"0"},"category":[],"course":[],"courseformat":[],"role":["student"],"theme":[],"cssselector":["[data-region=activity-information]"]},"majorupdatetime":1620110287,"shipped_tour":true,"shipped_filename":"311_activity_information_activity_page_student.json","shipped_version":2}	\N	0
+4	Activity information in course homepage (Student)	A tour of the activity information for Student display on the course homepage	/course/view.php%	0	7	{"placement":"bottom","orphan":"0","backdrop":"1","reflex":"0","filtervalues":{"accessdate":{"filter_accessdate":"tool_usertours_accountcreation","filter_accessdate_range":0,"filter_accessdate_enabled":"0"},"category":[],"course":[],"courseformat":[],"role":["student"],"theme":[],"cssselector":["[data-region=activity-information]"]},"majorupdatetime":1620109487,"shipped_tour":true,"shipped_filename":"311_activity_information_course_page_student.json","shipped_version":2}	\N	0
+3	Activity information in course homepage (Teacher)	A tour of the activity information for Teacher display on the course homepage	/course/view.php%	0	8	{"placement":"bottom","orphan":"0","backdrop":"1","reflex":"0","filtervalues":{"accessdate":{"filter_accessdate":"tool_usertours_accountcreation","filter_accessdate_range":0,"filter_accessdate_enabled":"0"},"category":[],"course":[],"courseformat":[],"role":["manager","teacher","editingteacher"],"theme":[],"cssselector":["[data-region=activity-information]"]},"majorupdatetime":1620109487,"shipped_tour":true,"shipped_filename":"311_activity_information_course_page_teacher.json","shipped_version":2}	\N	0
+7	tour_navigation_course_student_tour_name,tool_usertours	tour_navigation_course_student_tour_des,tool_usertours	/course/view.php%	1	4	{"placement":"right","orphan":"0","backdrop":"1","reflex":"0","filtervalues":{"accessdate":{"filter_accessdate":"tool_usertours_accountcreation","filter_accessdate_range":0,"filter_accessdate_enabled":"0"},"category":[],"course":[],"courseformat":[],"role":["student"],"theme":["boost"],"cssselector":[]},"majorupdatetime":1641972472,"shipped_tour":true,"shipped_filename":"40_tour_navigation_course_student.json","shipped_version":3}		1
+5	Activity information in activity page (Teacher)	A tour of the activity information for Teacher display on the activity page	/mod/%/view.php%	0	6	{"placement":"bottom","orphan":"0","backdrop":"1","reflex":"0","filtervalues":{"accessdate":{"filter_accessdate":"tool_usertours_accountcreation","filter_accessdate_range":0,"filter_accessdate_enabled":"0"},"category":[],"course":[],"courseformat":[],"role":["manager","teacher","editingteacher"],"theme":[],"cssselector":["[data-region=activity-information]"]},"majorupdatetime":1620110287,"shipped_tour":true,"shipped_filename":"311_activity_information_activity_page_teacher.json","shipped_version":2}	\N	0
+8	tour_navigation_course_teacher_tour_name,tool_usertours	tour_navigation_course_teacher_tour_des,tool_usertours	/course/view.php%	1	3	{"placement":"bottom","orphan":"0","backdrop":"1","reflex":"0","filtervalues":{"accessdate":{"filter_accessdate":"tool_usertours_accountcreation","filter_accessdate_range":0,"filter_accessdate_enabled":"0"},"category":[],"course":[],"courseformat":[],"role":["-1","coursecreator","manager","teacher","editingteacher"],"theme":["boost"],"cssselector":[]},"majorupdatetime":1641972470,"shipped_tour":true,"shipped_filename":"40_tour_navigation_course_teacher.json","shipped_version":3}		1
+2	Dashboard	New dashboard features	/my/%	0	9	{"placement":"top","orphan":"0","backdrop":"0","reflex":"0","filtervalues":{"category":[],"course":["0"],"courseformat":[],"role":[],"theme":[]},"majorupdatetime":1543396938,"shipped_tour":true,"shipped_filename":"36_dashboard.json","shipped_version":3}	\N	0
+1	New Messaging System	New messaging interface in Moodle 3.6	/course/view.php%	0	10	{"placement":"bottom","orphan":"0","backdrop":"0","reflex":"0","filtervalues":{"category":[],"course":["0"],"courseformat":[],"role":[],"theme":[]},"majorupdatetime":1543468823,"shipped_tour":true,"shipped_filename":"36_messaging.json","shipped_version":3}	\N	0
+9	tour_navigation_mycourses_tour_name,tool_usertours	tour_navigation_mycourses_tour_des,tool_usertours	/my/courses.php	1	2	{"placement":"bottom","orphan":"0","backdrop":"1","reflex":"0","filtervalues":{"accessdate":{"filter_accessdate":"tool_usertours_accountcreation","filter_accessdate_range":0,"filter_accessdate_enabled":"0"},"category":[],"course":[],"courseformat":[],"role":[],"theme":["boost"],"cssselector":[]},"majorupdatetime":1641972468,"shipped_tour":true,"shipped_filename":"40_tour_navigation_mycourse.json","shipped_version":5}	tour_navigation_mycourses_endtourlabel,tool_usertours	1
+10	tour_navigation_dashboard_tour_name,tool_usertours	tour_navigation_dashboard_tour_des,tool_usertours	FRONTPAGE_MY	1	1	{"placement":"left","orphan":"0","backdrop":"1","reflex":"0","filtervalues":{"accessdate":{"filter_accessdate":"tool_usertours_accountcreation","filter_accessdate_range":0,"filter_accessdate_enabled":"0"},"category":[],"course":[],"courseformat":[],"role":[],"theme":["boost"],"cssselector":[]},"majorupdatetime":1641972465,"shipped_tour":true,"shipped_filename":"40_tour_navigation_dashboard.json","shipped_version":4}		1
+11	tour_gradebook_tour_name,tool_usertours	tour_gradebook_tour_description,tool_usertours	/grade/report/grader/index.php%	1	0	{"placement":"bottom","orphan":"0","backdrop":"1","reflex":"0","filtervalues":{"accessdate":{"filter_accessdate":"tool_usertours_accountcreation","filter_accessdate_range":0,"filter_accessdate_enabled":"0"},"category":[],"course":[],"courseformat":[],"role":[],"theme":[],"cssselector":[]},"majorupdatetime":1683276000,"shipped_tour":true,"shipped_filename":"42_tour_gradebook_grader_report.json","shipped_version":1}		1
 \.
 
 
@@ -47513,6 +52231,1580 @@ COPY public.m2upgrade_log (id, type, plugin, version, targetversion, info, detai
 4656	0	atto_wiris	2023061200	2023121300	Starting plugin upgrade	\N		2	1710942750
 4657	0	atto_wiris	2023121300	2023121300	Upgrade savepoint reached	\N		2	1710942750
 4658	0	atto_wiris	2023121300	2023121300	Plugin upgraded	\N		2	1710942750
+4659	0	core	2022112809.05	2024100707.07	Starting core upgrade	\N		0	1768247108
+4660	0	core	2022120900.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247108
+4661	0	core	2022121600.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247109
+4662	0	core	2023010300	2024100707.07	Upgrade savepoint reached	\N		0	1768247109
+4663	0	core	2023020800	2024100707.07	Upgrade savepoint reached	\N		0	1768247109
+4664	0	core	2023021700.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247109
+4665	0	core	2023022000	2024100707.07	Upgrade savepoint reached	\N		0	1768247109
+4666	0	core	2023030300.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247109
+4667	0	core	2023030300.02	2024100707.07	Upgrade savepoint reached	\N		0	1768247109
+4668	0	core	2023030300.03	2024100707.07	Upgrade savepoint reached	\N		0	1768247109
+4669	0	core	2023031000.02	2024100707.07	Upgrade savepoint reached	\N		0	1768247109
+4670	0	core	2023031400.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247109
+4671	0	core	2023031400.02	2024100707.07	Upgrade savepoint reached	\N		0	1768247109
+4672	0	core	2023040600.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247109
+4673	0	core	2023041100	2024100707.07	Upgrade savepoint reached	\N		0	1768247110
+4674	0	core	2023042000	2024100707.07	Upgrade savepoint reached	\N		0	1768247113
+4675	0	core	2023051500	2024100707.07	Upgrade savepoint reached	\N		0	1768247113
+4676	0	core	2023062200	2024100707.07	Upgrade savepoint reached	\N		0	1768247113
+4677	0	core	2023062700.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247113
+4678	0	core	2023062900.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247113
+4679	0	core	2023080100	2024100707.07	Upgrade savepoint reached	\N		0	1768247113
+4680	0	core	2023081500	2024100707.07	Upgrade savepoint reached	\N		0	1768247113
+4681	0	core	2023081800.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247113
+4682	0	core	2023082200.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247113
+4683	0	core	2023082200.02	2024100707.07	Upgrade savepoint reached	\N		0	1768247113
+4684	0	core	2023082200.04	2024100707.07	Upgrade savepoint reached	\N		0	1768247113
+4685	0	core	2023082600.02	2024100707.07	Upgrade savepoint reached	\N		0	1768247113
+4686	0	core	2023082600.03	2024100707.07	Upgrade savepoint reached	\N		0	1768247113
+4687	0	core	2023082600.05	2024100707.07	Upgrade savepoint reached	\N		0	1768247113
+4688	0	core	2023090100	2024100707.07	Upgrade savepoint reached	\N		0	1768247113
+4689	0	core	2023090200.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247113
+4690	0	core	2023091300.03	2024100707.07	Upgrade savepoint reached	\N		0	1768247113
+4691	0	core	2023100400.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247113
+4692	0	core	2023100400.03	2024100707.07	Upgrade savepoint reached	\N		0	1768247113
+4693	0	core	2023110900	2024100707.07	Upgrade savepoint reached	\N		0	1768247113
+4694	0	core	2023120100.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247113
+4695	0	core	2023121800.02	2024100707.07	Upgrade savepoint reached	\N		0	1768247114
+4696	0	core	2023122100.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247114
+4697	0	core	2023122100.02	2024100707.07	Upgrade savepoint reached	\N		0	1768247114
+4698	0	core	2024010400.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247114
+4699	0	core	2024012300	2024100707.07	Upgrade savepoint reached	\N		0	1768247114
+4700	0	core	2024020200.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247114
+4701	0	core	2024021500.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247114
+4702	0	core	2024021500.02	2024100707.07	Upgrade savepoint reached	\N		0	1768247114
+4703	0	core	2024022300.02	2024100707.07	Upgrade savepoint reached	\N		0	1768247114
+4704	0	core	2024030500.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247114
+4705	0	core	2024030500.02	2024100707.07	Upgrade savepoint reached	\N		0	1768247114
+4706	0	core	2024032600.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247114
+4707	0	core	2024041200	2024100707.07	Upgrade savepoint reached	\N		0	1768247114
+4708	0	core	2024070500.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247114
+4709	0	core	2024071900.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247114
+4710	0	core	2024072600.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247115
+4711	0	core	2024080500	2024100707.07	Upgrade savepoint reached	\N		0	1768247115
+4712	0	core	2024082900.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247115
+4713	0	core	2024091000.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247115
+4714	0	core	2024091700.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247115
+4715	0	core	2024092000.01	2024100707.07	Upgrade savepoint reached	\N		0	1768247115
+4716	0	core	2024092600	2024100707.07	Upgrade savepoint reached	\N		0	1768247116
+4717	0	core	2024100100.02	2024100707.07	Upgrade savepoint reached	\N		0	1768247116
+4718	0	core	2024100701.02	2024100707.07	Upgrade savepoint reached	\N		0	1768247116
+4719	0	core	2024100702.03	2024100707.07	Upgrade savepoint reached	\N		0	1768247116
+4720	0	core	2024100704.07	2024100707.07	Upgrade savepoint reached	\N		0	1768247116
+4721	0	core	2024100704.1	2024100707.07	Upgrade savepoint reached	\N		0	1768247116
+4722	0	core	2024100705.09	2024100707.07	Upgrade savepoint reached	\N		0	1768247116
+4723	0	core	2024100707.07	2024100707.07	Upgrade savepoint reached	\N		0	1768247116
+4724	0	core	2024100707.07	2024100707.07	Core upgraded	\N		0	1768247116
+4725	0	aiplacement_courseassist	\N	2024100700	Starting plugin installation	\N		0	1768247116
+4726	0	aiplacement_courseassist	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247116
+4727	0	aiplacement_courseassist	2024100700	2024100700	Plugin installed	\N		0	1768247117
+4728	0	aiplacement_editor	\N	2024100700	Starting plugin installation	\N		0	1768247117
+4729	0	aiplacement_editor	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247117
+4730	0	aiplacement_editor	2024100700	2024100700	Plugin installed	\N		0	1768247117
+4731	0	aiprovider_azureai	\N	2024100700	Starting plugin installation	\N		0	1768247117
+4732	0	aiprovider_azureai	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247117
+4733	0	aiprovider_azureai	2024100700	2024100700	Plugin installed	\N		0	1768247117
+4734	0	aiprovider_openai	\N	2024100700	Starting plugin installation	\N		0	1768247117
+4735	0	aiprovider_openai	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247117
+4736	0	aiprovider_openai	2024100700	2024100700	Plugin installed	\N		0	1768247117
+4737	0	antivirus_clamav	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247117
+4738	0	antivirus_clamav	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247117
+4739	0	antivirus_clamav	2024100700	2024100700	Plugin upgraded	\N		0	1768247117
+4740	0	availability_completion	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247117
+4741	0	availability_completion	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247117
+4742	0	availability_completion	2024100700	2024100700	Plugin upgraded	\N		0	1768247117
+4743	0	availability_date	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247117
+4744	0	availability_date	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247117
+4745	0	availability_date	2024100700	2024100700	Plugin upgraded	\N		0	1768247117
+4746	0	availability_grade	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247117
+4747	0	availability_grade	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247117
+4748	0	availability_grade	2024100700	2024100700	Plugin upgraded	\N		0	1768247117
+4749	0	availability_group	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247117
+4750	0	availability_group	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247117
+4751	0	availability_group	2024100700	2024100700	Plugin upgraded	\N		0	1768247117
+4752	0	availability_grouping	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247117
+4753	0	availability_grouping	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247117
+4754	0	availability_grouping	2024100700	2024100700	Plugin upgraded	\N		0	1768247117
+4755	0	availability_profile	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247117
+4756	0	availability_profile	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247117
+4757	0	availability_profile	2024100700	2024100700	Plugin upgraded	\N		0	1768247117
+4758	0	qtype_calculated	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247117
+4759	0	qtype_calculated	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247117
+4760	0	qtype_calculated	2024100700	2024100700	Plugin upgraded	\N		0	1768247117
+4761	0	qtype_calculatedmulti	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247117
+4762	0	qtype_calculatedmulti	2024011700	2024100700	Upgrade savepoint reached	\N		0	1768247117
+4763	0	qtype_calculatedmulti	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247117
+4764	0	qtype_calculatedmulti	2024100700	2024100700	Plugin upgraded	\N		0	1768247117
+4765	0	qtype_calculatedsimple	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247117
+4766	0	qtype_calculatedsimple	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247117
+4767	0	qtype_calculatedsimple	2024100700	2024100700	Plugin upgraded	\N		0	1768247117
+4768	0	qtype_coderunner	\N	2025081500	Starting plugin installation	\N		0	1768247118
+4769	0	qtype_coderunner	2025081500	2025081500	Upgrade savepoint reached	\N		0	1768247118
+4770	0	qtype_coderunner	2025081500	2025081500	Plugin installed	\N		0	1768247119
+4771	0	qtype_ddimageortext	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247119
+4772	0	qtype_ddimageortext	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247119
+4773	0	qtype_ddimageortext	2024100700	2024100700	Plugin upgraded	\N		0	1768247119
+4774	0	qtype_ddmarker	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247119
+4775	0	qtype_ddmarker	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247119
+4776	0	qtype_ddmarker	2024100700	2024100700	Plugin upgraded	\N		0	1768247119
+4777	0	qtype_ddwtos	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247119
+4778	0	qtype_ddwtos	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247119
+4779	0	qtype_ddwtos	2024100700	2024100700	Plugin upgraded	\N		0	1768247119
+4780	0	qtype_description	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247119
+4781	0	qtype_description	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247119
+4782	0	qtype_description	2024100700	2024100700	Plugin upgraded	\N		0	1768247119
+4783	0	qtype_essay	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247119
+4784	0	qtype_essay	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247119
+4785	0	qtype_essay	2024100700	2024100700	Plugin upgraded	\N		0	1768247119
+4786	0	qtype_essaywiris	2024010801	2025042902	Starting plugin upgrade	\N		0	1768247119
+4787	0	qtype_essaywiris	2025042902	2025042902	Upgrade savepoint reached	\N		0	1768247119
+4788	0	qtype_essaywiris	2025042902	2025042902	Plugin upgraded	\N		0	1768247119
+4789	0	qtype_gapselect	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247119
+4790	0	qtype_gapselect	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247119
+4791	0	qtype_gapselect	2024100700	2024100700	Plugin upgraded	\N		0	1768247119
+4792	0	qtype_match	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247119
+4793	0	qtype_match	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247119
+4794	0	qtype_match	2024100700	2024100700	Plugin upgraded	\N		0	1768247119
+4795	0	qtype_matchwiris	2024010801	2025042902	Starting plugin upgrade	\N		0	1768247119
+4796	0	qtype_matchwiris	2025042902	2025042902	Upgrade savepoint reached	\N		0	1768247119
+4797	0	qtype_matchwiris	2025042902	2025042902	Plugin upgraded	\N		0	1768247119
+4798	0	qtype_missingtype	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247119
+4799	0	qtype_missingtype	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247119
+4800	0	qtype_missingtype	2024100700	2024100700	Plugin upgraded	\N		0	1768247119
+4801	0	qtype_multianswer	2022112800	2024100701	Starting plugin upgrade	\N		0	1768247119
+4802	0	qtype_multianswer	2024100701	2024100701	Upgrade savepoint reached	\N		0	1768247119
+4803	0	qtype_multianswer	2024100701	2024100701	Plugin upgraded	\N		0	1768247120
+4804	0	qtype_multianswerwiris	2024010801	2025042902	Starting plugin upgrade	\N		0	1768247120
+4805	0	qtype_multianswerwiris	2025042902	2025042902	Upgrade savepoint reached	\N		0	1768247120
+4806	0	qtype_multianswerwiris	2025042902	2025042902	Plugin upgraded	\N		0	1768247120
+4807	0	qtype_multichoice	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247120
+4808	0	qtype_multichoice	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247120
+4809	0	qtype_multichoice	2024100700	2024100700	Plugin upgraded	\N		0	1768247120
+4810	0	qtype_multichoicewiris	2024010801	2025042902	Starting plugin upgrade	\N		0	1768247120
+4811	0	qtype_multichoicewiris	2025042902	2025042902	Upgrade savepoint reached	\N		0	1768247120
+4812	0	qtype_multichoicewiris	2025042902	2025042902	Plugin upgraded	\N		0	1768247120
+4813	0	qtype_numerical	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247120
+4814	0	qtype_numerical	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247120
+4815	0	qtype_numerical	2024100700	2024100700	Plugin upgraded	\N		0	1768247120
+4816	0	qtype_ordering	2023042907	2024100700	Starting plugin upgrade	\N		0	1768247120
+4817	0	qtype_ordering	2023092911	2024100700	Upgrade savepoint reached	\N		0	1768247120
+4818	0	qtype_ordering	2024040401	2024100700	Upgrade savepoint reached	\N		0	1768247120
+4819	0	qtype_ordering	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247120
+4820	0	qtype_ordering	2024100700	2024100700	Plugin upgraded	\N		0	1768247120
+4821	0	qtype_random	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247120
+4822	0	qtype_random	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247120
+4823	0	qtype_random	2024100700	2024100700	Plugin upgraded	\N		0	1768247120
+4824	0	qtype_randomsamatch	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247120
+4825	0	qtype_randomsamatch	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247120
+4826	0	qtype_randomsamatch	2024100700	2024100700	Plugin upgraded	\N		0	1768247120
+4827	0	qtype_shortanswer	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247120
+4828	0	qtype_shortanswer	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247120
+4829	0	qtype_shortanswer	2024100700	2024100700	Plugin upgraded	\N		0	1768247120
+4830	0	qtype_shortanswerwiris	2024010801	2025042902	Starting plugin upgrade	\N		0	1768247120
+4831	0	qtype_shortanswerwiris	2025042902	2025042902	Upgrade savepoint reached	\N		0	1768247120
+4832	0	qtype_shortanswerwiris	2025042902	2025042902	Plugin upgraded	\N		0	1768247120
+4833	0	qtype_truefalse	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247120
+4834	0	qtype_truefalse	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247120
+4835	0	qtype_truefalse	2024100700	2024100700	Plugin upgraded	\N		0	1768247120
+4836	0	qtype_truefalsewiris	2024010801	2025042902	Starting plugin upgrade	\N		0	1768247120
+4837	0	qtype_truefalsewiris	2025042902	2025042902	Upgrade savepoint reached	\N		0	1768247120
+4838	0	qtype_truefalsewiris	2025042902	2025042902	Plugin upgraded	\N		0	1768247121
+4839	0	qtype_wq	2024010801	2025042902	Starting plugin upgrade	\N		0	1768247121
+4840	0	qtype_wq	2025042902	2025042902	Upgrade savepoint reached	\N		0	1768247121
+4841	0	qtype_wq	2025042902	2025042902	Plugin upgraded	\N		0	1768247121
+4842	0	mod_assign	2022112801	2024100700	Starting plugin upgrade	\N		0	1768247121
+4843	0	mod_assign	2023103000	2024100700	Upgrade savepoint reached	\N		0	1768247121
+4844	0	mod_assign	2024042201	2024100700	Upgrade savepoint reached	\N		0	1768247121
+4845	0	mod_assign	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247121
+4846	0	mod_assign	2024100700	2024100700	Plugin upgraded	\N		0	1768247121
+4847	0	mod_attendance	2023020107	2024072401	Starting plugin upgrade	\N		0	1768247121
+4848	0	mod_attendance	2023021700	2024072401	Upgrade savepoint reached	\N		0	1768247121
+4849	0	mod_attendance	2023032800	2024072401	Upgrade savepoint reached	\N		0	1768247121
+4850	0	mod_attendance	2024072401	2024072401	Upgrade savepoint reached	\N		0	1768247121
+4851	0	mod_attendance	2024072401	2024072401	Plugin upgraded	\N		0	1768247121
+4852	0	mod_bigbluebuttonbn	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247121
+4853	0	mod_bigbluebuttonbn	2023011800	2024100700	Upgrade savepoint reached	\N		0	1768247121
+4854	0	mod_bigbluebuttonbn	2023021300	2024100700	Upgrade savepoint reached	\N		0	1768247121
+4855	0	mod_bigbluebuttonbn	2024071900	2024100700	Upgrade savepoint reached	\N		0	1768247121
+4856	0	mod_bigbluebuttonbn	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247121
+4857	0	mod_bigbluebuttonbn	2024100700	2024100700	Plugin upgraded	\N		0	1768247121
+4858	0	mod_book	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247121
+4859	0	mod_book	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247121
+4860	0	mod_book	2024100700	2024100700	Plugin upgraded	\N		0	1768247121
+4861	0	mod_chat	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247121
+4862	0	mod_chat	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247121
+4863	0	mod_chat	2024100700	2024100700	Plugin upgraded	\N		0	1768247121
+4864	0	mod_choice	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247121
+4865	0	mod_choice	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247121
+4866	0	mod_choice	2024100700	2024100700	Plugin upgraded	\N		0	1768247122
+4867	0	mod_choicegroup	2023110900	2025100902	Starting plugin upgrade	\N		0	1768247122
+4868	0	mod_choicegroup	2024092600	2025100902	Upgrade savepoint reached	\N		0	1768247122
+4869	0	mod_choicegroup	2025100902	2025100902	Upgrade savepoint reached	\N		0	1768247122
+4870	0	mod_choicegroup	2025100902	2025100902	Plugin upgraded	\N		0	1768247122
+4871	0	mod_data	2022112801	2024100700	Starting plugin upgrade	\N		0	1768247122
+4872	0	mod_data	2023061300	2024100700	Upgrade savepoint reached	\N		0	1768247122
+4873	0	mod_data	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247122
+4874	0	mod_data	2024100700	2024100700	Plugin upgraded	\N		0	1768247122
+4875	0	mod_feedback	2022112800	2024100701	Starting plugin upgrade	\N		0	1768247122
+4876	0	mod_feedback	2024100701	2024100701	Upgrade savepoint reached	\N		0	1768247122
+4877	0	mod_feedback	2024100701	2024100701	Plugin upgraded	\N		0	1768247122
+4878	0	mod_folder	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247122
+4879	0	mod_folder	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247122
+4880	0	mod_folder	2024100700	2024100700	Plugin upgraded	\N		0	1768247122
+4881	0	mod_forum	2022112801	2024100700	Starting plugin upgrade	\N		0	1768247122
+4882	0	mod_forum	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247122
+4883	0	mod_forum	2024100700	2024100700	Plugin upgraded	\N		0	1768247122
+4884	0	mod_geogebra	2024012200	2025052800	Starting plugin upgrade	\N		0	1768247122
+4885	0	mod_geogebra	2025052800	2025052800	Upgrade savepoint reached	\N		0	1768247122
+4886	0	mod_geogebra	2025052800	2025052800	Plugin upgraded	\N		0	1768247122
+4887	0	mod_glossary	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247122
+4888	0	mod_glossary	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247122
+4889	0	mod_glossary	2024100700	2024100700	Plugin upgraded	\N		0	1768247122
+4890	0	mod_h5pactivity	2022112801	2024100700	Starting plugin upgrade	\N		0	1768247122
+4891	0	mod_h5pactivity	2023042401	2024100700	Upgrade savepoint reached	\N		0	1768247122
+4892	0	mod_h5pactivity	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247122
+4893	0	mod_h5pactivity	2024100700	2024100700	Plugin upgraded	\N		0	1768247122
+4894	0	mod_hotpot	2024021051	2025050353	Starting plugin upgrade	\N		0	1768247122
+4895	0	mod_hotpot	2025050353	2025050353	Upgrade savepoint reached	\N		0	1768247122
+4896	0	mod_hotpot	2025050353	2025050353	Plugin upgraded	\N		0	1768247122
+4897	0	mod_hvp	2022012000	2024120900	Starting plugin upgrade	\N		0	1768247122
+4898	0	mod_hvp	2024120900	2024120900	Upgrade savepoint reached	\N		0	1768247122
+4899	0	mod_hvp	2024120900	2024120900	Plugin upgraded	\N		0	1768247123
+4900	0	mod_imscp	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247123
+4901	0	mod_imscp	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247123
+4902	0	mod_imscp	2024100700	2024100700	Plugin upgraded	\N		0	1768247123
+4903	0	mod_jclic	2023071300	2025052800	Starting plugin upgrade	\N		0	1768247123
+4904	0	mod_jclic	2025052800	2025052800	Upgrade savepoint reached	\N		0	1768247123
+4905	0	mod_jclic	2025052800	2025052800	Plugin upgraded	\N		0	1768247123
+4906	0	mod_journal	2023042400	2024120300	Starting plugin upgrade	\N		0	1768247123
+4907	0	mod_journal	2024120300	2024120300	Upgrade savepoint reached	\N		0	1768247123
+4908	0	mod_journal	2024120300	2024120300	Plugin upgraded	\N		0	1768247123
+4909	0	mod_label	2022112801	2024100700	Starting plugin upgrade	\N		0	1768247123
+4910	0	mod_label	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247123
+4911	0	mod_label	2024100700	2024100700	Plugin upgraded	\N		0	1768247123
+4912	0	mod_lesson	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247123
+4913	0	mod_lesson	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247123
+4914	0	mod_lesson	2024100700	2024100700	Plugin upgraded	\N		0	1768247123
+4915	0	mod_lti	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247123
+4916	0	mod_lti	2023070501	2024100700	Upgrade savepoint reached	\N		0	1768247123
+4917	0	mod_lti	2023081101	2024100700	Upgrade savepoint reached	\N		0	1768247123
+4918	0	mod_lti	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247123
+4919	0	mod_lti	2024100700	2024100700	Plugin upgraded	\N		0	1768247123
+4920	0	mod_page	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247123
+4921	0	mod_page	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247123
+4922	0	mod_page	2024100700	2024100700	Plugin upgraded	\N		0	1768247123
+4923	0	mod_questionnaire	2022121600	2022121601	Starting plugin upgrade	\N		0	1768247123
+4924	0	mod_questionnaire	2022121600.02	2022121601	Upgrade savepoint reached	\N		0	1768247123
+4925	0	mod_questionnaire	2022121601	2022121601	Upgrade savepoint reached	\N		0	1768247123
+4926	0	mod_questionnaire	2022121601	2022121601	Plugin upgraded	\N		0	1768247123
+4927	0	mod_quiz	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247123
+4928	0	mod_quiz	2022120500	2024100700	Upgrade savepoint reached	\N		0	1768247123
+4929	0	mod_quiz	2023042401	2024100700	Upgrade savepoint reached	\N		0	1768247123
+4930	0	mod_quiz	2023112300	2024100700	Upgrade savepoint reached	\N		0	1768247123
+4931	0	mod_quiz	2023112400	2024100700	Upgrade savepoint reached	\N		0	1768247123
+4932	0	mod_quiz	2023112401	2024100700	Upgrade savepoint reached	\N		0	1768247123
+4933	0	mod_quiz	2023112402	2024100700	Upgrade savepoint reached	\N		0	1768247124
+4934	0	mod_quiz	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247124
+4935	0	mod_quiz	2024100700	2024100700	Plugin upgraded	\N		0	1768247124
+4936	0	mod_rcontent	2017101000	2021011200	Starting plugin upgrade	\N		0	1768247124
+4937	0	mod_rcontent	2021011200	2021011200	Upgrade savepoint reached	\N		0	1768247124
+4938	0	mod_rcontent	2021011200	2021011200	Plugin upgraded	\N		0	1768247124
+4939	0	mod_resource	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247124
+4940	0	mod_resource	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247124
+4941	0	mod_resource	2024100700	2024100700	Plugin upgraded	\N		0	1768247124
+4942	0	mod_scorm	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247124
+4943	0	mod_scorm	2023042401	2024100700	Upgrade savepoint reached	\N		0	1768247124
+4944	0	mod_scorm	2023042402	2024100700	Upgrade savepoint reached	\N		0	1768247124
+4945	0	mod_scorm	2023042403	2024100700	Upgrade savepoint reached	\N		0	1768247124
+4946	0	mod_scorm	2023100901	2024100700	Upgrade savepoint reached	\N		0	1768247124
+4947	0	mod_scorm	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247124
+4948	0	mod_scorm	2024100700	2024100700	Plugin upgraded	\N		0	1768247124
+4949	0	mod_subsection	\N	2024100700	Starting plugin installation	\N		0	1768247124
+4950	0	mod_subsection	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247124
+4951	0	mod_subsection	2024100700	2024100700	Plugin installed	\N		0	1768247124
+4952	0	mod_survey	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247124
+4953	0	mod_survey	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247124
+4954	0	mod_survey	2024100700	2024100700	Plugin upgraded	\N		0	1768247124
+4955	0	mod_url	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247124
+4956	0	mod_url	2023100901	2024100700	Upgrade savepoint reached	\N		0	1768247124
+4957	0	mod_url	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247124
+4958	0	mod_url	2024100700	2024100700	Plugin upgraded	\N		0	1768247124
+4959	0	mod_wiki	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247124
+4960	0	mod_wiki	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247124
+4961	0	mod_wiki	2024100700	2024100700	Plugin upgraded	\N		0	1768247124
+4962	0	mod_workshop	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247124
+4963	0	mod_workshop	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247124
+4964	0	mod_workshop	2024100700	2024100700	Plugin upgraded	\N		0	1768247124
+4965	0	auth_cas	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247124
+4966	0	auth_cas	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247124
+4967	0	auth_cas	2024100700	2024100700	Plugin upgraded	\N		0	1768247124
+4968	0	auth_db	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247124
+4969	0	auth_db	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247124
+4970	0	auth_db	2024100700	2024100700	Plugin upgraded	\N		0	1768247125
+4971	0	auth_email	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247125
+4972	0	auth_email	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247125
+4973	0	auth_email	2024100700	2024100700	Plugin upgraded	\N		0	1768247125
+4974	0	auth_ldap	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247125
+4975	0	auth_ldap	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247125
+4976	0	auth_ldap	2024100700	2024100700	Plugin upgraded	\N		0	1768247125
+4977	0	auth_lti	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247125
+4978	0	auth_lti	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247125
+4979	0	auth_lti	2024100700	2024100700	Plugin upgraded	\N		0	1768247125
+4980	0	auth_manual	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247125
+4981	0	auth_manual	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247125
+4982	0	auth_manual	2024100700	2024100700	Plugin upgraded	\N		0	1768247125
+4983	0	auth_mnet	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247125
+4984	0	auth_mnet	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247125
+4985	0	auth_mnet	2024100700	2024100700	Plugin upgraded	\N		0	1768247125
+4986	0	auth_nologin	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247125
+4987	0	auth_nologin	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247125
+4988	0	auth_nologin	2024100700	2024100700	Plugin upgraded	\N		0	1768247125
+4989	0	auth_none	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247125
+4990	0	auth_none	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247125
+4991	0	auth_none	2024100700	2024100700	Plugin upgraded	\N		0	1768247125
+4992	0	auth_oauth2	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247125
+4993	0	auth_oauth2	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247125
+4994	0	auth_oauth2	2024100700	2024100700	Plugin upgraded	\N		0	1768247125
+4995	0	auth_shibboleth	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247125
+4996	0	auth_shibboleth	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247125
+4997	0	auth_shibboleth	2024100700	2024100700	Plugin upgraded	\N		0	1768247125
+4998	0	auth_webservice	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247125
+4999	0	auth_webservice	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247125
+5000	0	auth_webservice	2024100700	2024100700	Plugin upgraded	\N		0	1768247125
+5001	0	calendartype_gregorian	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247125
+5002	0	calendartype_gregorian	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247125
+5003	0	calendartype_gregorian	2024100700	2024100700	Plugin upgraded	\N		0	1768247125
+5004	0	communication_customlink	\N	2024100700	Starting plugin installation	\N		0	1768247125
+5005	0	communication_customlink	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247125
+5006	0	communication_customlink	2024100700	2024100700	Plugin installed	\N		0	1768247125
+5007	0	communication_matrix	\N	2024100700	Starting plugin installation	\N		0	1768247125
+5008	0	communication_matrix	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247125
+5009	0	communication_matrix	2024100700	2024100700	Plugin installed	\N		0	1768247126
+5010	0	customfield_checkbox	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247126
+5011	0	customfield_checkbox	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247126
+5012	0	customfield_checkbox	2024100700	2024100700	Plugin upgraded	\N		0	1768247126
+5013	0	customfield_date	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247126
+5014	0	customfield_date	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247126
+5015	0	customfield_date	2024100700	2024100700	Plugin upgraded	\N		0	1768247126
+5016	0	customfield_number	\N	2024100703	Starting plugin installation	\N		0	1768247126
+5017	0	customfield_number	2024100703	2024100703	Upgrade savepoint reached	\N		0	1768247126
+5018	0	customfield_number	2024100703	2024100703	Plugin installed	\N		0	1768247126
+5019	0	customfield_select	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247126
+5020	0	customfield_select	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247126
+5021	0	customfield_select	2024100700	2024100700	Plugin upgraded	\N		0	1768247126
+5022	0	customfield_text	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247126
+5023	0	customfield_text	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247126
+5024	0	customfield_text	2024100700	2024100700	Plugin upgraded	\N		0	1768247126
+5025	0	customfield_textarea	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247126
+5026	0	customfield_textarea	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247126
+5027	0	customfield_textarea	2024100700	2024100700	Plugin upgraded	\N		0	1768247126
+5028	0	enrol_category	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247126
+5029	0	enrol_category	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247126
+5030	0	enrol_category	2024100700	2024100700	Plugin upgraded	\N		0	1768247126
+5031	0	enrol_cohort	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247126
+5032	0	enrol_cohort	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247126
+5033	0	enrol_cohort	2024100700	2024100700	Plugin upgraded	\N		0	1768247126
+5034	0	enrol_database	2022112800	2024100702	Starting plugin upgrade	\N		0	1768247126
+5035	0	enrol_database	2024100702	2024100702	Upgrade savepoint reached	\N		0	1768247126
+5036	0	enrol_database	2024100702	2024100702	Plugin upgraded	\N		0	1768247126
+5037	0	enrol_fee	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247126
+5038	0	enrol_fee	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247126
+5039	0	enrol_fee	2024100700	2024100700	Plugin upgraded	\N		0	1768247126
+5040	0	enrol_flatfile	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247126
+5041	0	enrol_flatfile	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247126
+5042	0	enrol_flatfile	2024100700	2024100700	Plugin upgraded	\N		0	1768247126
+5043	0	enrol_guest	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247126
+5044	0	enrol_guest	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247126
+5045	0	enrol_guest	2024100700	2024100700	Plugin upgraded	\N		0	1768247126
+5046	0	enrol_imsenterprise	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247126
+5047	0	enrol_imsenterprise	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247126
+5048	0	enrol_imsenterprise	2024100700	2024100700	Plugin upgraded	\N		0	1768247127
+5049	0	enrol_ldap	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247127
+5050	0	enrol_ldap	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247127
+5051	0	enrol_ldap	2024100700	2024100700	Plugin upgraded	\N		0	1768247127
+5052	0	enrol_lti	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247127
+5053	0	enrol_lti	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247127
+5054	0	enrol_lti	2024100700	2024100700	Plugin upgraded	\N		0	1768247127
+5055	0	enrol_manual	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247127
+5056	0	enrol_manual	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247127
+5057	0	enrol_manual	2024100700	2024100700	Plugin upgraded	\N		0	1768247127
+5058	0	enrol_meta	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247127
+5059	0	enrol_meta	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247127
+5060	0	enrol_meta	2024100700	2024100700	Plugin upgraded	\N		0	1768247127
+5061	0	enrol_mnet	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247127
+5062	0	enrol_mnet	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247127
+5063	0	enrol_mnet	2024100700	2024100700	Plugin upgraded	\N		0	1768247127
+5064	0	enrol_paypal	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247127
+5065	0	enrol_paypal	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247127
+5066	0	enrol_paypal	2024100700	2024100700	Plugin upgraded	\N		0	1768247127
+5067	0	enrol_self	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247127
+5068	0	enrol_self	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247127
+5069	0	enrol_self	2024100700	2024100700	Plugin upgraded	\N		0	1768247127
+5070	0	message_airnotifier	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247127
+5071	0	message_airnotifier	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247127
+5072	0	message_airnotifier	2024100700	2024100700	Plugin upgraded	\N		0	1768247127
+5073	0	message_email	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247127
+5074	0	message_email	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247127
+5075	0	message_email	2024100700	2024100700	Plugin upgraded	\N		0	1768247127
+5076	0	message_popup	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247127
+5077	0	message_popup	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247127
+5078	0	message_popup	2024100700	2024100700	Plugin upgraded	\N		0	1768247127
+5079	0	block_accessreview	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247127
+5080	0	block_accessreview	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247127
+5081	0	block_accessreview	2024100700	2024100700	Plugin upgraded	\N		0	1768247127
+5082	0	block_activity_modules	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247127
+5083	0	block_activity_modules	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247127
+5084	0	block_activity_modules	2024100700	2024100700	Plugin upgraded	\N		0	1768247127
+5085	0	block_activity_results	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247127
+5086	0	block_activity_results	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247127
+5087	0	block_activity_results	2024100700	2024100700	Plugin upgraded	\N		0	1768247128
+5088	0	block_admin_bookmarks	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247128
+5089	0	block_admin_bookmarks	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247128
+5090	0	block_admin_bookmarks	2024100700	2024100700	Plugin upgraded	\N		0	1768247128
+5091	0	block_badges	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247128
+5092	0	block_badges	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247128
+5093	0	block_badges	2024100700	2024100700	Plugin upgraded	\N		0	1768247128
+5094	0	block_blog_menu	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247128
+5095	0	block_blog_menu	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247128
+5096	0	block_blog_menu	2024100700	2024100700	Plugin upgraded	\N		0	1768247128
+5097	0	block_blog_recent	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247128
+5098	0	block_blog_recent	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247128
+5099	0	block_blog_recent	2024100700	2024100700	Plugin upgraded	\N		0	1768247128
+5100	0	block_blog_tags	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247128
+5101	0	block_blog_tags	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247128
+5102	0	block_blog_tags	2024100700	2024100700	Plugin upgraded	\N		0	1768247128
+5103	0	block_calendar_month	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247128
+5104	0	block_calendar_month	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247128
+5105	0	block_calendar_month	2024100700	2024100700	Plugin upgraded	\N		0	1768247128
+5106	0	block_calendar_upcoming	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247128
+5107	0	block_calendar_upcoming	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247128
+5108	0	block_calendar_upcoming	2024100700	2024100700	Plugin upgraded	\N		0	1768247128
+5109	0	block_comments	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247128
+5110	0	block_comments	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247128
+5111	0	block_comments	2024100700	2024100700	Plugin upgraded	\N		0	1768247128
+5112	0	block_completion_progress	2023110100	2025101300	Starting plugin upgrade	\N		0	1768247128
+5113	0	block_completion_progress	2025011600	2025101300	Upgrade savepoint reached	\N		0	1768247128
+5114	0	block_completion_progress	2025090200	2025101300	Upgrade savepoint reached	\N		0	1768247128
+5115	0	block_completion_progress	2025101300	2025101300	Upgrade savepoint reached	\N		0	1768247128
+5116	0	block_completion_progress	2025101300	2025101300	Plugin upgraded	\N		0	1768247128
+5117	0	block_completionstatus	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247128
+5118	0	block_completionstatus	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247128
+5119	0	block_completionstatus	2024100700	2024100700	Plugin upgraded	\N		0	1768247128
+5120	0	block_configurable_reports	2020110300	2024051300	Starting plugin upgrade	\N		0	1768247128
+5121	0	block_configurable_reports	2024051300	2024051300	Upgrade savepoint reached	\N		0	1768247129
+5122	0	block_configurable_reports	2024051300	2024051300	Plugin upgraded	\N		0	1768247129
+5123	0	block_course_list	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247129
+5124	0	block_course_list	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247129
+5125	0	block_course_list	2024100700	2024100700	Plugin upgraded	\N		0	1768247129
+5126	0	block_course_summary	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247129
+5127	0	block_course_summary	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247129
+5128	0	block_course_summary	2024100700	2024100700	Plugin upgraded	\N		0	1768247129
+5129	0	block_feedback	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247129
+5130	0	block_feedback	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247129
+5131	0	block_feedback	2024100700	2024100700	Plugin upgraded	\N		0	1768247129
+5132	0	block_globalsearch	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247129
+5133	0	block_globalsearch	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247129
+5134	0	block_globalsearch	2024100700	2024100700	Plugin upgraded	\N		0	1768247129
+5135	0	block_glossary_random	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247129
+5136	0	block_glossary_random	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247129
+5137	0	block_glossary_random	2024100700	2024100700	Plugin upgraded	\N		0	1768247129
+5138	0	block_grade_me	\N	2024100700	Starting plugin installation	\N		0	1768247129
+5139	0	block_grade_me	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247129
+5140	0	block_grade_me	2024100700	2024100700	Plugin installed	\N		0	1768247129
+5141	0	block_html	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247129
+5142	0	block_html	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247129
+5143	0	block_html	2024100700	2024100700	Plugin upgraded	\N		0	1768247129
+5144	0	block_login	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247129
+5145	0	block_login	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247129
+5146	0	block_login	2024100700	2024100700	Plugin upgraded	\N		0	1768247129
+5147	0	block_lp	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247129
+5148	0	block_lp	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247129
+5149	0	block_lp	2024100700	2024100700	Plugin upgraded	\N		0	1768247129
+5150	0	block_mentees	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247129
+5151	0	block_mentees	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247129
+5152	0	block_mentees	2024100700	2024100700	Plugin upgraded	\N		0	1768247129
+5153	0	block_mnet_hosts	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247129
+5154	0	block_mnet_hosts	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247129
+5155	0	block_mnet_hosts	2024100700	2024100700	Plugin upgraded	\N		0	1768247129
+5156	0	block_myoverview	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247130
+5157	0	block_myoverview	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247130
+5158	0	block_myoverview	2024100700	2024100700	Plugin upgraded	\N		0	1768247130
+5159	0	block_myprofile	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247130
+5160	0	block_myprofile	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247130
+5161	0	block_myprofile	2024100700	2024100700	Plugin upgraded	\N		0	1768247130
+5162	0	block_navigation	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247130
+5163	0	block_navigation	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247130
+5164	0	block_navigation	2024100700	2024100700	Plugin upgraded	\N		0	1768247130
+5165	0	block_news_items	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247130
+5166	0	block_news_items	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247130
+5167	0	block_news_items	2024100700	2024100700	Plugin upgraded	\N		0	1768247130
+5168	0	block_online_users	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247130
+5169	0	block_online_users	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247130
+5170	0	block_online_users	2024100700	2024100700	Plugin upgraded	\N		0	1768247130
+5171	0	block_private_files	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247130
+5172	0	block_private_files	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247130
+5173	0	block_private_files	2024100700	2024100700	Plugin upgraded	\N		0	1768247130
+5174	0	block_recent_activity	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247130
+5175	0	block_recent_activity	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247130
+5176	0	block_recent_activity	2024100700	2024100700	Plugin upgraded	\N		0	1768247130
+5177	0	block_recentlyaccessedcourses	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247130
+5178	0	block_recentlyaccessedcourses	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247130
+5179	0	block_recentlyaccessedcourses	2024100700	2024100700	Plugin upgraded	\N		0	1768247130
+5180	0	block_recentlyaccesseditems	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247130
+5181	0	block_recentlyaccesseditems	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247130
+5182	0	block_recentlyaccesseditems	2024100700	2024100700	Plugin upgraded	\N		0	1768247130
+5183	0	block_rss_client	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247130
+5184	0	block_rss_client	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247130
+5185	0	block_rss_client	2024100700	2024100700	Plugin upgraded	\N		0	1768247130
+5186	0	block_search_forums	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247130
+5187	0	block_search_forums	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247130
+5188	0	block_search_forums	2024100700	2024100700	Plugin upgraded	\N		0	1768247130
+5189	0	block_section_links	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247130
+5190	0	block_section_links	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247130
+5191	0	block_section_links	2024100700	2024100700	Plugin upgraded	\N		0	1768247131
+5192	0	block_selfcompletion	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247131
+5193	0	block_selfcompletion	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247131
+5194	0	block_selfcompletion	2024100700	2024100700	Plugin upgraded	\N		0	1768247131
+5195	0	block_settings	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247131
+5196	0	block_settings	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247131
+5197	0	block_settings	2024100700	2024100700	Plugin upgraded	\N		0	1768247131
+5198	0	block_site_main_menu	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247131
+5199	0	block_site_main_menu	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247131
+5200	0	block_site_main_menu	2024100700	2024100700	Plugin upgraded	\N		0	1768247131
+5201	0	block_social_activities	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247131
+5202	0	block_social_activities	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247131
+5203	0	block_social_activities	2024100700	2024100700	Plugin upgraded	\N		0	1768247131
+5204	0	block_starredcourses	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247131
+5205	0	block_starredcourses	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247131
+5206	0	block_starredcourses	2024100700	2024100700	Plugin upgraded	\N		0	1768247131
+5207	0	block_tag_flickr	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247131
+5208	0	block_tag_flickr	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247131
+5209	0	block_tag_flickr	2024100700	2024100700	Plugin upgraded	\N		0	1768247131
+5210	0	block_tag_youtube	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247131
+5211	0	block_tag_youtube	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247131
+5212	0	block_tag_youtube	2024100700	2024100700	Plugin upgraded	\N		0	1768247131
+5213	0	block_tags	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247131
+5214	0	block_tags	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247131
+5215	0	block_tags	2024100700	2024100700	Plugin upgraded	\N		0	1768247131
+5216	0	block_timeline	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247131
+5217	0	block_timeline	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247131
+5218	0	block_timeline	2024100700	2024100700	Plugin upgraded	\N		0	1768247131
+5219	0	media_html5audio	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247131
+5220	0	media_html5audio	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247131
+5221	0	media_html5audio	2024100700	2024100700	Plugin upgraded	\N		0	1768247131
+5222	0	media_html5video	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247131
+5223	0	media_html5video	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247131
+5224	0	media_html5video	2024100700	2024100700	Plugin upgraded	\N		0	1768247131
+5225	0	media_videojs	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247131
+5226	0	media_videojs	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247131
+5227	0	media_videojs	2024100700	2024100700	Plugin upgraded	\N		0	1768247131
+5228	0	media_vimeo	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247131
+5229	0	media_vimeo	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247131
+5230	0	media_vimeo	2024100700	2024100700	Plugin upgraded	\N		0	1768247131
+5231	0	media_youtube	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247131
+5232	0	media_youtube	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247131
+5233	0	media_youtube	2024100700	2024100700	Plugin upgraded	\N		0	1768247132
+5234	0	filter_activitynames	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247132
+5235	0	filter_activitynames	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247132
+5236	0	filter_activitynames	2024100700	2024100700	Plugin upgraded	\N		0	1768247132
+5237	0	filter_algebra	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247132
+5238	0	filter_algebra	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247132
+5239	0	filter_algebra	2024100700	2024100700	Plugin upgraded	\N		0	1768247132
+5240	0	filter_codehighlighter	\N	2024100700	Starting plugin installation	\N		0	1768247132
+5241	0	filter_codehighlighter	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247132
+5242	0	filter_codehighlighter	2024100700	2024100700	Plugin installed	\N		0	1768247132
+5243	0	filter_data	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247132
+5244	0	filter_data	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247132
+5245	0	filter_data	2024100700	2024100700	Plugin upgraded	\N		0	1768247132
+5246	0	filter_displayh5p	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247132
+5247	0	filter_displayh5p	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247132
+5248	0	filter_displayh5p	2024100700	2024100700	Plugin upgraded	\N		0	1768247132
+5249	0	filter_emailprotect	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247132
+5250	0	filter_emailprotect	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247132
+5251	0	filter_emailprotect	2024100700	2024100700	Plugin upgraded	\N		0	1768247132
+5252	0	filter_emoticon	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247132
+5253	0	filter_emoticon	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247132
+5254	0	filter_emoticon	2024100700	2024100700	Plugin upgraded	\N		0	1768247132
+5255	0	filter_glossary	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247132
+5256	0	filter_glossary	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247132
+5257	0	filter_glossary	2024100700	2024100700	Plugin upgraded	\N		0	1768247132
+5258	0	filter_mathjaxloader	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247132
+5259	0	filter_mathjaxloader	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247132
+5260	0	filter_mathjaxloader	2024100700	2024100700	Plugin upgraded	\N		0	1768247132
+5261	0	filter_mediaplugin	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247132
+5262	0	filter_mediaplugin	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247132
+5263	0	filter_mediaplugin	2024100700	2024100700	Plugin upgraded	\N		0	1768247132
+5264	0	filter_multilang	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247132
+5265	0	filter_multilang	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247132
+5266	0	filter_multilang	2024100700	2024100700	Plugin upgraded	\N		0	1768247132
+5267	0	filter_tex	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247132
+5268	0	filter_tex	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247132
+5269	0	filter_tex	2024100700	2024100700	Plugin upgraded	\N		0	1768247132
+5270	0	filter_urltolink	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247132
+5271	0	filter_urltolink	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247132
+5272	0	filter_urltolink	2024100700	2024100700	Plugin upgraded	\N		0	1768247132
+5273	0	filter_wiris	2023121300	2025100800	Starting plugin upgrade	\N		0	1768247132
+5274	0	filter_wiris	2025100800	2025100800	Upgrade savepoint reached	\N		0	1768247132
+5275	0	filter_wiris	2025100800	2025100800	Plugin upgraded	\N		0	1768247132
+5276	0	editor_atto	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247132
+5277	0	editor_atto	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247132
+5278	0	editor_atto	2024100700	2024100700	Plugin upgraded	\N		0	1768247133
+5279	0	editor_textarea	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247133
+5280	0	editor_textarea	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247133
+5281	0	editor_textarea	2024100700	2024100700	Plugin upgraded	\N		0	1768247133
+5282	0	editor_tiny	2022112800	2024100701	Starting plugin upgrade	\N		0	1768247133
+5283	0	editor_tiny	2024100701	2024100701	Upgrade savepoint reached	\N		0	1768247133
+5284	0	editor_tiny	2024100701	2024100701	Plugin upgraded	\N		0	1768247133
+5285	0	format_multitopic	\N	2024112702	Starting plugin installation	\N		0	1768247133
+5286	0	format_multitopic	2024112702	2024112702	Upgrade savepoint reached	\N		0	1768247133
+5287	0	format_multitopic	2024112702	2024112702	Plugin installed	\N		0	1768247133
+5288	0	format_singleactivity	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247133
+5289	0	format_singleactivity	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247133
+5290	0	format_singleactivity	2024100700	2024100700	Plugin upgraded	\N		0	1768247133
+5291	0	format_social	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247133
+5292	0	format_social	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247133
+5293	0	format_social	2024100700	2024100700	Plugin upgraded	\N		0	1768247133
+5294	0	format_tiles	\N	2025070353	Starting plugin installation	\N		0	1768247133
+5295	0	format_tiles	2025070353	2025070353	Upgrade savepoint reached	\N		0	1768247133
+5296	0	format_tiles	2025070353	2025070353	Plugin installed	\N		0	1768247133
+5297	0	format_topics	2022112801	2024100700	Starting plugin upgrade	\N		0	1768247133
+5298	0	format_topics	2023030700	2024100700	Upgrade savepoint reached	\N		0	1768247133
+5299	0	format_topics	2023100901	2024100700	Upgrade savepoint reached	\N		0	1768247133
+5300	0	format_topics	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247133
+5301	0	format_topics	2024100700	2024100700	Plugin upgraded	\N		0	1768247133
+5302	0	format_weeks	2022112801	2024100700	Starting plugin upgrade	\N		0	1768247133
+5303	0	format_weeks	2023030700	2024100700	Upgrade savepoint reached	\N		0	1768247133
+5304	0	format_weeks	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247133
+5305	0	format_weeks	2024100700	2024100700	Plugin upgraded	\N		0	1768247133
+5306	0	dataformat_csv	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247133
+5307	0	dataformat_csv	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247133
+5308	0	dataformat_csv	2024100700	2024100700	Plugin upgraded	\N		0	1768247133
+5309	0	dataformat_excel	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247133
+5310	0	dataformat_excel	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247133
+5311	0	dataformat_excel	2024100700	2024100700	Plugin upgraded	\N		0	1768247134
+5312	0	dataformat_html	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247134
+5313	0	dataformat_html	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247134
+5314	0	dataformat_html	2024100700	2024100700	Plugin upgraded	\N		0	1768247134
+5315	0	dataformat_json	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247134
+5316	0	dataformat_json	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247134
+5317	0	dataformat_json	2024100700	2024100700	Plugin upgraded	\N		0	1768247134
+5318	0	dataformat_ods	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247134
+5319	0	dataformat_ods	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247134
+5320	0	dataformat_ods	2024100700	2024100700	Plugin upgraded	\N		0	1768247134
+5321	0	dataformat_pdf	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247134
+5322	0	dataformat_pdf	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247134
+5323	0	dataformat_pdf	2024100700	2024100700	Plugin upgraded	\N		0	1768247134
+5324	0	profilefield_checkbox	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247134
+5325	0	profilefield_checkbox	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247134
+5326	0	profilefield_checkbox	2024100700	2024100700	Plugin upgraded	\N		0	1768247134
+5327	0	profilefield_datetime	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247134
+5328	0	profilefield_datetime	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247134
+5329	0	profilefield_datetime	2024100700	2024100700	Plugin upgraded	\N		0	1768247134
+5330	0	profilefield_menu	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247134
+5331	0	profilefield_menu	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247134
+5332	0	profilefield_menu	2024100700	2024100700	Plugin upgraded	\N		0	1768247134
+5333	0	profilefield_social	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247134
+5334	0	profilefield_social	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247134
+5335	0	profilefield_social	2024100700	2024100700	Plugin upgraded	\N		0	1768247134
+5336	0	profilefield_text	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247134
+5337	0	profilefield_text	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247134
+5338	0	profilefield_text	2024100700	2024100700	Plugin upgraded	\N		0	1768247134
+5339	0	profilefield_textarea	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247134
+5340	0	profilefield_textarea	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247134
+5341	0	profilefield_textarea	2024100700	2024100700	Plugin upgraded	\N		0	1768247134
+5342	0	report_backups	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247134
+5343	0	report_backups	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247134
+5344	0	report_backups	2024100700	2024100700	Plugin upgraded	\N		0	1768247134
+5345	0	report_competency	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247134
+5346	0	report_competency	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247134
+5347	0	report_competency	2024100700	2024100700	Plugin upgraded	\N		0	1768247135
+5348	0	report_completion	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247135
+5349	0	report_completion	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247135
+5350	0	report_completion	2024100700	2024100700	Plugin upgraded	\N		0	1768247135
+5351	0	report_configlog	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247135
+5352	0	report_configlog	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247135
+5353	0	report_configlog	2024100700	2024100700	Plugin upgraded	\N		0	1768247135
+5354	0	report_courseoverview	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247135
+5355	0	report_courseoverview	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247135
+5356	0	report_courseoverview	2024100700	2024100700	Plugin upgraded	\N		0	1768247135
+5357	0	report_eventlist	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247135
+5358	0	report_eventlist	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247135
+5359	0	report_eventlist	2024100700	2024100700	Plugin upgraded	\N		0	1768247135
+5360	0	report_infectedfiles	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247135
+5361	0	report_infectedfiles	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247135
+5362	0	report_infectedfiles	2024100700	2024100700	Plugin upgraded	\N		0	1768247135
+5363	0	report_insights	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247135
+5364	0	report_insights	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247135
+5365	0	report_insights	2024100700	2024100700	Plugin upgraded	\N		0	1768247135
+5366	0	report_log	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247135
+5367	0	report_log	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247135
+5368	0	report_log	2024100700	2024100700	Plugin upgraded	\N		0	1768247135
+5369	0	report_loglive	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247135
+5370	0	report_loglive	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247135
+5371	0	report_loglive	2024100700	2024100700	Plugin upgraded	\N		0	1768247135
+5372	0	report_outline	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247135
+5373	0	report_outline	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247135
+5374	0	report_outline	2024100700	2024100700	Plugin upgraded	\N		0	1768247135
+5375	0	report_participation	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247135
+5376	0	report_participation	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247135
+5377	0	report_participation	2024100700	2024100700	Plugin upgraded	\N		0	1768247135
+5378	0	report_performance	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247135
+5379	0	report_performance	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247135
+5380	0	report_performance	2024100700	2024100700	Plugin upgraded	\N		0	1768247135
+5381	0	report_progress	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247135
+5382	0	report_progress	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247135
+5383	0	report_progress	2024100700	2024100700	Plugin upgraded	\N		0	1768247136
+5384	0	report_questionbankoverview	\N	2023101000	Starting plugin installation	\N		0	1768247136
+5385	0	report_questionbankoverview	2023101000	2023101000	Upgrade savepoint reached	\N		0	1768247136
+5386	0	report_questionbankoverview	2023101000	2023101000	Plugin installed	\N		0	1768247136
+5387	0	report_questioninstances	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247136
+5388	0	report_questioninstances	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247136
+5389	0	report_questioninstances	2024100700	2024100700	Plugin upgraded	\N		0	1768247136
+5390	0	report_security	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247136
+5391	0	report_security	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247136
+5392	0	report_security	2024100700	2024100700	Plugin upgraded	\N		0	1768247136
+5393	0	report_stats	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247136
+5394	0	report_stats	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247136
+5395	0	report_stats	2024100700	2024100700	Plugin upgraded	\N		0	1768247136
+5396	0	report_status	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247136
+5397	0	report_status	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247136
+5398	0	report_status	2024100700	2024100700	Plugin upgraded	\N		0	1768247136
+5399	0	report_themeusage	\N	2024100700	Starting plugin installation	\N		0	1768247136
+5400	0	report_themeusage	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247136
+5401	0	report_themeusage	2024100700	2024100700	Plugin installed	\N		0	1768247136
+5402	0	report_usersessions	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247136
+5403	0	report_usersessions	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247136
+5404	0	report_usersessions	2024100700	2024100700	Plugin upgraded	\N		0	1768247136
+5405	0	gradeexport_ods	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247136
+5406	0	gradeexport_ods	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247136
+5407	0	gradeexport_ods	2024100700	2024100700	Plugin upgraded	\N		0	1768247136
+5408	0	gradeexport_txt	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247136
+5409	0	gradeexport_txt	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247136
+5410	0	gradeexport_txt	2024100700	2024100700	Plugin upgraded	\N		0	1768247136
+5411	0	gradeexport_xls	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247136
+5412	0	gradeexport_xls	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247136
+5413	0	gradeexport_xls	2024100700	2024100700	Plugin upgraded	\N		0	1768247137
+5414	0	gradeexport_xml	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247137
+5415	0	gradeexport_xml	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247137
+5416	0	gradeexport_xml	2024100700	2024100700	Plugin upgraded	\N		0	1768247137
+5417	0	gradeimport_csv	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247137
+5418	0	gradeimport_csv	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247137
+5419	0	gradeimport_csv	2024100700	2024100700	Plugin upgraded	\N		0	1768247137
+5420	0	gradeimport_direct	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247137
+5421	0	gradeimport_direct	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247137
+5422	0	gradeimport_direct	2024100700	2024100700	Plugin upgraded	\N		0	1768247137
+5423	0	gradeimport_xml	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247137
+5424	0	gradeimport_xml	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247137
+5425	0	gradeimport_xml	2024100700	2024100700	Plugin upgraded	\N		0	1768247137
+5426	0	gradereport_grader	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247137
+5427	0	gradereport_grader	2023032100	2024100700	Upgrade savepoint reached	\N		0	1768247137
+5428	0	gradereport_grader	2023032700	2024100700	Upgrade savepoint reached	\N		0	1768247137
+5429	0	gradereport_grader	2023032800	2024100700	Upgrade savepoint reached	\N		0	1768247137
+5430	0	gradereport_grader	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247137
+5431	0	gradereport_grader	2024100700	2024100700	Plugin upgraded	\N		0	1768247137
+5432	0	gradereport_history	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247137
+5433	0	gradereport_history	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247137
+5434	0	gradereport_history	2024100700	2024100700	Plugin upgraded	\N		0	1768247137
+5435	0	gradereport_outcomes	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247137
+5436	0	gradereport_outcomes	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247137
+5437	0	gradereport_outcomes	2024100700	2024100700	Plugin upgraded	\N		0	1768247137
+5438	0	gradereport_overview	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247137
+5439	0	gradereport_overview	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247137
+5440	0	gradereport_overview	2024100700	2024100700	Plugin upgraded	\N		0	1768247137
+5441	0	gradereport_singleview	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247137
+5442	0	gradereport_singleview	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247137
+5443	0	gradereport_singleview	2024100700	2024100700	Plugin upgraded	\N		0	1768247137
+5444	0	gradereport_summary	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247137
+5445	0	gradereport_summary	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247137
+5446	0	gradereport_summary	2024100700	2024100700	Plugin upgraded	\N		0	1768247137
+5447	0	gradereport_user	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247137
+5448	0	gradereport_user	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247137
+5449	0	gradereport_user	2024100700	2024100700	Plugin upgraded	\N		0	1768247137
+5450	0	gradingform_guide	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247137
+5451	0	gradingform_guide	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247137
+5452	0	gradingform_guide	2024100700	2024100700	Plugin upgraded	\N		0	1768247137
+5453	0	gradingform_rubric	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247137
+5454	0	gradingform_rubric	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247137
+5455	0	gradingform_rubric	2024100700	2024100700	Plugin upgraded	\N		0	1768247138
+5456	0	mlbackend_php	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247138
+5457	0	mlbackend_php	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247138
+5458	0	mlbackend_php	2024100700	2024100700	Plugin upgraded	\N		0	1768247138
+5459	0	mlbackend_python	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247138
+5460	0	mlbackend_python	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247138
+5461	0	mlbackend_python	2024100700	2024100700	Plugin upgraded	\N		0	1768247138
+5462	0	mnetservice_enrol	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247138
+5463	0	mnetservice_enrol	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247138
+5464	0	mnetservice_enrol	2024100700	2024100700	Plugin upgraded	\N		0	1768247138
+5465	0	webservice_rest	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247138
+5466	0	webservice_rest	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247138
+5467	0	webservice_rest	2024100700	2024100700	Plugin upgraded	\N		0	1768247138
+5468	0	webservice_soap	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247138
+5469	0	webservice_soap	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247138
+5470	0	webservice_soap	2024100700	2024100700	Plugin upgraded	\N		0	1768247138
+5471	0	repository_areafiles	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247138
+5472	0	repository_areafiles	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247138
+5473	0	repository_areafiles	2024100700	2024100700	Plugin upgraded	\N		0	1768247138
+5474	0	repository_contentbank	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247138
+5475	0	repository_contentbank	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247138
+5476	0	repository_contentbank	2024100700	2024100700	Plugin upgraded	\N		0	1768247138
+5477	0	repository_coursefiles	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247138
+5478	0	repository_coursefiles	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247138
+5479	0	repository_coursefiles	2024100700	2024100700	Plugin upgraded	\N		0	1768247138
+5480	0	repository_dropbox	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247138
+5481	0	repository_dropbox	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247138
+5482	0	repository_dropbox	2024100700	2024100700	Plugin upgraded	\N		0	1768247138
+5483	0	repository_equella	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247138
+5484	0	repository_equella	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247138
+5485	0	repository_equella	2024100700	2024100700	Plugin upgraded	\N		0	1768247138
+5486	0	repository_filesystem	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247138
+5487	0	repository_filesystem	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247138
+5488	0	repository_filesystem	2024100700	2024100700	Plugin upgraded	\N		0	1768247138
+5489	0	repository_flickr	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247138
+5490	0	repository_flickr	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247138
+5491	0	repository_flickr	2024100700	2024100700	Plugin upgraded	\N		0	1768247138
+5492	0	repository_flickr_public	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247138
+5493	0	repository_flickr_public	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247138
+5494	0	repository_flickr_public	2024100700	2024100700	Plugin upgraded	\N		0	1768247139
+5495	0	repository_googledocs	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247139
+5496	0	repository_googledocs	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247139
+5497	0	repository_googledocs	2024100700	2024100700	Plugin upgraded	\N		0	1768247139
+5498	0	repository_local	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247139
+5499	0	repository_local	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247139
+5500	0	repository_local	2024100700	2024100700	Plugin upgraded	\N		0	1768247139
+5501	0	repository_merlot	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247139
+5502	0	repository_merlot	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247139
+5503	0	repository_merlot	2024100700	2024100700	Plugin upgraded	\N		0	1768247139
+5504	0	repository_nextcloud	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247139
+5505	0	repository_nextcloud	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247139
+5506	0	repository_nextcloud	2024100700	2024100700	Plugin upgraded	\N		0	1768247139
+5507	0	repository_onedrive	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247139
+5508	0	repository_onedrive	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247139
+5509	0	repository_onedrive	2024100700	2024100700	Plugin upgraded	\N		0	1768247139
+5510	0	repository_recent	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247139
+5511	0	repository_recent	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247139
+5512	0	repository_recent	2024100700	2024100700	Plugin upgraded	\N		0	1768247139
+5513	0	repository_s3	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247139
+5514	0	repository_s3	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247139
+5515	0	repository_s3	2024100700	2024100700	Plugin upgraded	\N		0	1768247139
+5516	0	repository_upload	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247139
+5517	0	repository_upload	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247139
+5518	0	repository_upload	2024100700	2024100700	Plugin upgraded	\N		0	1768247139
+5519	0	repository_url	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247139
+5520	0	repository_url	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247139
+5521	0	repository_url	2024100700	2024100700	Plugin upgraded	\N		0	1768247139
+5522	0	repository_user	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247139
+5523	0	repository_user	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247139
+5524	0	repository_user	2024100700	2024100700	Plugin upgraded	\N		0	1768247139
+5525	0	repository_webdav	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247139
+5526	0	repository_webdav	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247139
+5527	0	repository_webdav	2024100700	2024100700	Plugin upgraded	\N		0	1768247139
+5528	0	repository_wikimedia	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247139
+5529	0	repository_wikimedia	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247139
+5530	0	repository_wikimedia	2024100700	2024100700	Plugin upgraded	\N		0	1768247139
+5531	0	repository_youtube	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247140
+5532	0	repository_youtube	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247140
+5533	0	repository_youtube	2024100700	2024100700	Plugin upgraded	\N		0	1768247140
+5534	0	portfolio_download	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247140
+5535	0	portfolio_download	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247140
+5536	0	portfolio_download	2024100700	2024100700	Plugin upgraded	\N		0	1768247140
+5537	0	portfolio_flickr	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247140
+5538	0	portfolio_flickr	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247140
+5539	0	portfolio_flickr	2024100700	2024100700	Plugin upgraded	\N		0	1768247140
+5540	0	portfolio_googledocs	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247140
+5541	0	portfolio_googledocs	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247140
+5542	0	portfolio_googledocs	2024100700	2024100700	Plugin upgraded	\N		0	1768247140
+5543	0	portfolio_mahara	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247140
+5544	0	portfolio_mahara	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247140
+5545	0	portfolio_mahara	2024100700	2024100700	Plugin upgraded	\N		0	1768247140
+5546	0	search_simpledb	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247140
+5547	0	search_simpledb	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247140
+5548	0	search_simpledb	2024100700	2024100700	Plugin upgraded	\N		0	1768247140
+5549	0	search_solr	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247140
+5550	0	search_solr	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247140
+5551	0	search_solr	2024100700	2024100700	Plugin upgraded	\N		0	1768247140
+5552	0	qbank_bulkmove	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247140
+5553	0	qbank_bulkmove	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247140
+5554	0	qbank_bulkmove	2024100700	2024100700	Plugin upgraded	\N		0	1768247140
+5555	0	qbank_columnsortorder	2022112800	2024100701	Starting plugin upgrade	\N		0	1768247140
+5556	0	qbank_columnsortorder	2024042201	2024100701	Upgrade savepoint reached	\N		0	1768247140
+5557	0	qbank_columnsortorder	2024051000	2024100701	Upgrade savepoint reached	\N		0	1768247140
+5558	0	qbank_columnsortorder	2024100701	2024100701	Upgrade savepoint reached	\N		0	1768247140
+5559	0	qbank_columnsortorder	2024100701	2024100701	Plugin upgraded	\N		0	1768247140
+5560	0	qbank_comment	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247140
+5561	0	qbank_comment	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247140
+5562	0	qbank_comment	2024100700	2024100700	Plugin upgraded	\N		0	1768247140
+5563	0	qbank_customfields	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247140
+5564	0	qbank_customfields	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247140
+5565	0	qbank_customfields	2024100700	2024100700	Plugin upgraded	\N		0	1768247141
+5566	0	qbank_deletequestion	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247141
+5567	0	qbank_deletequestion	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247141
+5568	0	qbank_deletequestion	2024100700	2024100700	Plugin upgraded	\N		0	1768247141
+5569	0	qbank_editquestion	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247141
+5570	0	qbank_editquestion	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247141
+5571	0	qbank_editquestion	2024100700	2024100700	Plugin upgraded	\N		0	1768247141
+5572	0	qbank_exportquestions	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247141
+5573	0	qbank_exportquestions	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247141
+5574	0	qbank_exportquestions	2024100700	2024100700	Plugin upgraded	\N		0	1768247141
+5575	0	qbank_exporttoxml	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247141
+5576	0	qbank_exporttoxml	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247141
+5577	0	qbank_exporttoxml	2024100700	2024100700	Plugin upgraded	\N		0	1768247141
+5578	0	qbank_history	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247141
+5579	0	qbank_history	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247141
+5580	0	qbank_history	2024100700	2024100700	Plugin upgraded	\N		0	1768247141
+5581	0	qbank_importquestions	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247141
+5582	0	qbank_importquestions	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247141
+5583	0	qbank_importquestions	2024100700	2024100700	Plugin upgraded	\N		0	1768247141
+5584	0	qbank_managecategories	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247141
+5585	0	qbank_managecategories	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247141
+5586	0	qbank_managecategories	2024100700	2024100700	Plugin upgraded	\N		0	1768247141
+5587	0	qbank_previewquestion	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247141
+5588	0	qbank_previewquestion	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247141
+5589	0	qbank_previewquestion	2024100700	2024100700	Plugin upgraded	\N		0	1768247141
+5590	0	qbank_purgecategory	\N	2025012600	Starting plugin installation	\N		0	1768247141
+5591	0	qbank_purgecategory	2025012600	2025012600	Upgrade savepoint reached	\N		0	1768247141
+5592	0	qbank_purgecategory	2025012600	2025012600	Plugin installed	\N		0	1768247141
+5593	0	qbank_statistics	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247141
+5594	0	qbank_statistics	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247141
+5595	0	qbank_statistics	2024100700	2024100700	Plugin upgraded	\N		0	1768247141
+5596	0	qbank_tagquestion	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247141
+5597	0	qbank_tagquestion	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247141
+5598	0	qbank_tagquestion	2024100700	2024100700	Plugin upgraded	\N		0	1768247142
+5599	0	qbank_usage	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247142
+5600	0	qbank_usage	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247142
+5601	0	qbank_usage	2024100700	2024100700	Plugin upgraded	\N		0	1768247142
+5602	0	qbank_viewcreator	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247142
+5603	0	qbank_viewcreator	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247142
+5604	0	qbank_viewcreator	2024100700	2024100700	Plugin upgraded	\N		0	1768247142
+5605	0	qbank_viewquestionname	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247142
+5606	0	qbank_viewquestionname	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247142
+5607	0	qbank_viewquestionname	2024100700	2024100700	Plugin upgraded	\N		0	1768247142
+5608	0	qbank_viewquestiontext	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247142
+5609	0	qbank_viewquestiontext	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247142
+5610	0	qbank_viewquestiontext	2024100700	2024100700	Plugin upgraded	\N		0	1768247142
+5611	0	qbank_viewquestiontype	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247142
+5612	0	qbank_viewquestiontype	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247142
+5613	0	qbank_viewquestiontype	2024100700	2024100700	Plugin upgraded	\N		0	1768247142
+5614	0	qbehaviour_adaptive	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247142
+5615	0	qbehaviour_adaptive	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247142
+5616	0	qbehaviour_adaptive	2024100700	2024100700	Plugin upgraded	\N		0	1768247142
+5617	0	qbehaviour_adaptive_adapted_for_coderunner	\N	2025012500	Starting plugin installation	\N		0	1768247142
+5618	0	qbehaviour_adaptive_adapted_for_coderunner	2025012500	2025012500	Upgrade savepoint reached	\N		0	1768247142
+5619	0	qbehaviour_adaptive_adapted_for_coderunner	2025012500	2025012500	Plugin installed	\N		0	1768247142
+5620	0	qbehaviour_adaptivenopenalty	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247142
+5621	0	qbehaviour_adaptivenopenalty	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247142
+5622	0	qbehaviour_adaptivenopenalty	2024100700	2024100700	Plugin upgraded	\N		0	1768247142
+5623	0	qbehaviour_deferredcbm	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247142
+5624	0	qbehaviour_deferredcbm	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247142
+5625	0	qbehaviour_deferredcbm	2024100700	2024100700	Plugin upgraded	\N		0	1768247142
+5626	0	qbehaviour_deferredfeedback	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247142
+5627	0	qbehaviour_deferredfeedback	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247142
+5628	0	qbehaviour_deferredfeedback	2024100700	2024100700	Plugin upgraded	\N		0	1768247142
+5629	0	qbehaviour_immediatecbm	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247142
+5630	0	qbehaviour_immediatecbm	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247142
+5631	0	qbehaviour_immediatecbm	2024100700	2024100700	Plugin upgraded	\N		0	1768247142
+5632	0	qbehaviour_immediatefeedback	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247142
+5633	0	qbehaviour_immediatefeedback	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247142
+5634	0	qbehaviour_immediatefeedback	2024100700	2024100700	Plugin upgraded	\N		0	1768247143
+5635	0	qbehaviour_informationitem	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247143
+5636	0	qbehaviour_informationitem	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247143
+5637	0	qbehaviour_informationitem	2024100700	2024100700	Plugin upgraded	\N		0	1768247143
+5638	0	qbehaviour_interactive	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247143
+5639	0	qbehaviour_interactive	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247143
+5640	0	qbehaviour_interactive	2024100700	2024100700	Plugin upgraded	\N		0	1768247143
+5641	0	qbehaviour_interactivecountback	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247143
+5642	0	qbehaviour_interactivecountback	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247143
+5643	0	qbehaviour_interactivecountback	2024100700	2024100700	Plugin upgraded	\N		0	1768247143
+5644	0	qbehaviour_manualgraded	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247143
+5645	0	qbehaviour_manualgraded	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247143
+5646	0	qbehaviour_manualgraded	2024100700	2024100700	Plugin upgraded	\N		0	1768247143
+5647	0	qbehaviour_missing	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247143
+5648	0	qbehaviour_missing	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247143
+5649	0	qbehaviour_missing	2024100700	2024100700	Plugin upgraded	\N		0	1768247143
+5650	0	qformat_aiken	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247143
+5651	0	qformat_aiken	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247143
+5652	0	qformat_aiken	2024100700	2024100700	Plugin upgraded	\N		0	1768247143
+5653	0	qformat_blackboard_six	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247143
+5654	0	qformat_blackboard_six	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247143
+5655	0	qformat_blackboard_six	2024100700	2024100700	Plugin upgraded	\N		0	1768247143
+5656	0	qformat_gift	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247143
+5657	0	qformat_gift	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247143
+5658	0	qformat_gift	2024100700	2024100700	Plugin upgraded	\N		0	1768247143
+5659	0	qformat_missingword	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247143
+5660	0	qformat_missingword	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247143
+5661	0	qformat_missingword	2024100700	2024100700	Plugin upgraded	\N		0	1768247143
+5662	0	qformat_multianswer	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247143
+5663	0	qformat_multianswer	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247143
+5664	0	qformat_multianswer	2024100700	2024100700	Plugin upgraded	\N		0	1768247143
+5665	0	qformat_xhtml	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247143
+5666	0	qformat_xhtml	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247143
+5667	0	qformat_xhtml	2024100700	2024100700	Plugin upgraded	\N		0	1768247143
+5668	0	qformat_xml	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247143
+5669	0	qformat_xml	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247143
+5670	0	qformat_xml	2024100700	2024100700	Plugin upgraded	\N		0	1768247144
+5671	0	tool_admin_presets	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247144
+5672	0	tool_admin_presets	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247144
+5673	0	tool_admin_presets	2024100700	2024100700	Plugin upgraded	\N		0	1768247144
+5674	0	tool_analytics	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247144
+5675	0	tool_analytics	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247144
+5676	0	tool_analytics	2024100700	2024100700	Plugin upgraded	\N		0	1768247144
+5677	0	tool_availabilityconditions	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247144
+5678	0	tool_availabilityconditions	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247144
+5679	0	tool_availabilityconditions	2024100700	2024100700	Plugin upgraded	\N		0	1768247144
+5680	0	tool_behat	2022112802	2024100700	Starting plugin upgrade	\N		0	1768247144
+5681	0	tool_behat	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247144
+5682	0	tool_behat	2024100700	2024100700	Plugin upgraded	\N		0	1768247144
+5683	0	tool_brickfield	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247144
+5684	0	tool_brickfield	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247144
+5685	0	tool_brickfield	2024100700	2024100700	Plugin upgraded	\N		0	1768247144
+5686	0	tool_capability	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247144
+5687	0	tool_capability	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247144
+5688	0	tool_capability	2024100700	2024100700	Plugin upgraded	\N		0	1768247144
+5689	0	tool_cohortroles	2022112801	2024100700	Starting plugin upgrade	\N		0	1768247144
+5690	0	tool_cohortroles	2023042401	2024100700	Upgrade savepoint reached	\N		0	1768247144
+5691	0	tool_cohortroles	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247144
+5692	0	tool_cohortroles	2024100700	2024100700	Plugin upgraded	\N		0	1768247144
+5693	0	tool_componentlibrary	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247144
+5694	0	tool_componentlibrary	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247144
+5695	0	tool_componentlibrary	2024100700	2024100700	Plugin upgraded	\N		0	1768247144
+5696	0	tool_customlang	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247144
+5697	0	tool_customlang	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247144
+5698	0	tool_customlang	2024100700	2024100700	Plugin upgraded	\N		0	1768247144
+5699	0	tool_dataprivacy	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247144
+5700	0	tool_dataprivacy	2023062700	2024100700	Upgrade savepoint reached	\N		0	1768247144
+5701	0	tool_dataprivacy	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247144
+5702	0	tool_dataprivacy	2024100700	2024100700	Plugin upgraded	\N		0	1768247145
+5703	0	tool_dbtransfer	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247145
+5704	0	tool_dbtransfer	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247145
+5705	0	tool_dbtransfer	2024100700	2024100700	Plugin upgraded	\N		0	1768247145
+5706	0	tool_filetypes	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247145
+5707	0	tool_filetypes	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247145
+5708	0	tool_filetypes	2024100700	2024100700	Plugin upgraded	\N		0	1768247145
+5709	0	tool_generator	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247145
+5710	0	tool_generator	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247145
+5711	0	tool_generator	2024100700	2024100700	Plugin upgraded	\N		0	1768247145
+5712	0	tool_httpsreplace	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247145
+5713	0	tool_httpsreplace	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247145
+5714	0	tool_httpsreplace	2024100700	2024100700	Plugin upgraded	\N		0	1768247145
+5715	0	tool_installaddon	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247145
+5716	0	tool_installaddon	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247145
+5717	0	tool_installaddon	2024100700	2024100700	Plugin upgraded	\N		0	1768247145
+5718	0	tool_langimport	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247145
+5719	0	tool_langimport	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247145
+5720	0	tool_langimport	2024100700	2024100700	Plugin upgraded	\N		0	1768247145
+5721	0	tool_licensemanager	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247145
+5722	0	tool_licensemanager	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247145
+5723	0	tool_licensemanager	2024100700	2024100700	Plugin upgraded	\N		0	1768247145
+5724	0	tool_log	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247145
+5725	0	tool_log	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247145
+5726	0	tool_log	2024100700	2024100700	Plugin upgraded	\N		0	1768247145
+5727	0	tool_lp	2022112800	2024100701	Starting plugin upgrade	\N		0	1768247145
+5728	0	tool_lp	2024100701	2024100701	Upgrade savepoint reached	\N		0	1768247145
+5729	0	tool_lp	2024100701	2024100701	Plugin upgraded	\N		0	1768247145
+5730	0	tool_lpimportcsv	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247145
+5731	0	tool_lpimportcsv	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247145
+5732	0	tool_lpimportcsv	2024100700	2024100700	Plugin upgraded	\N		0	1768247145
+5733	0	tool_lpmigrate	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247145
+5734	0	tool_lpmigrate	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247145
+5735	0	tool_lpmigrate	2024100700	2024100700	Plugin upgraded	\N		0	1768247146
+5736	0	tool_messageinbound	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247146
+5737	0	tool_messageinbound	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247146
+5738	0	tool_messageinbound	2024100700	2024100700	Plugin upgraded	\N		0	1768247146
+5739	0	tool_mfa	\N	2024100700	Starting plugin installation	\N		0	1768247146
+5740	0	tool_mfa	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247146
+5741	0	tool_mfa	2024100700	2024100700	Plugin installed	\N		0	1768247146
+5742	0	tool_migratehvp2h5p	2022112900	2025012000	Starting plugin upgrade	\N		0	1768247146
+5743	0	tool_migratehvp2h5p	2025012000	2025012000	Upgrade savepoint reached	\N		0	1768247146
+5744	0	tool_migratehvp2h5p	2025012000	2025012000	Plugin upgraded	\N		0	1768247146
+5745	0	tool_mobile	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247146
+5746	0	tool_mobile	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247146
+5747	0	tool_mobile	2024100700	2024100700	Plugin upgraded	\N		0	1768247146
+5748	0	tool_monitor	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247146
+5749	0	tool_monitor	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247146
+5750	0	tool_monitor	2024100700	2024100700	Plugin upgraded	\N		0	1768247146
+5751	0	tool_moodlenet	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247146
+5752	0	tool_moodlenet	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247146
+5753	0	tool_moodlenet	2024100700	2024100700	Plugin upgraded	\N		0	1768247146
+5754	0	tool_multilangupgrade	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247146
+5755	0	tool_multilangupgrade	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247146
+5756	0	tool_multilangupgrade	2024100700	2024100700	Plugin upgraded	\N		0	1768247146
+5757	0	tool_oauth2	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247146
+5758	0	tool_oauth2	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247146
+5759	0	tool_oauth2	2024100700	2024100700	Plugin upgraded	\N		0	1768247146
+5760	0	tool_phpunit	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247146
+5761	0	tool_phpunit	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247146
+5762	0	tool_phpunit	2024100700	2024100700	Plugin upgraded	\N		0	1768247146
+5763	0	tool_policy	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247146
+5764	0	tool_policy	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247146
+5765	0	tool_policy	2024100700	2024100700	Plugin upgraded	\N		0	1768247146
+5766	0	tool_profiling	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247146
+5767	0	tool_profiling	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247146
+5768	0	tool_profiling	2024100700	2024100700	Plugin upgraded	\N		0	1768247147
+5769	0	tool_recyclebin	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247147
+5770	0	tool_recyclebin	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247147
+5771	0	tool_recyclebin	2024100700	2024100700	Plugin upgraded	\N		0	1768247147
+5772	0	tool_replace	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247147
+5773	0	tool_replace	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247147
+5774	0	tool_replace	2024100700	2024100700	Plugin upgraded	\N		0	1768247147
+5775	0	tool_spamcleaner	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247147
+5776	0	tool_spamcleaner	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247147
+5777	0	tool_spamcleaner	2024100700	2024100700	Plugin upgraded	\N		0	1768247147
+5778	0	tool_task	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247147
+5779	0	tool_task	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247147
+5780	0	tool_task	2024100700	2024100700	Plugin upgraded	\N		0	1768247147
+5781	0	tool_templatelibrary	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247147
+5782	0	tool_templatelibrary	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247147
+5783	0	tool_templatelibrary	2024100700	2024100700	Plugin upgraded	\N		0	1768247147
+5784	0	tool_unsuproles	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247147
+5785	0	tool_unsuproles	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247147
+5786	0	tool_unsuproles	2024100700	2024100700	Plugin upgraded	\N		0	1768247147
+5787	0	tool_uploadcourse	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247147
+5788	0	tool_uploadcourse	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247147
+5789	0	tool_uploadcourse	2024100700	2024100700	Plugin upgraded	\N		0	1768247147
+5790	0	tool_uploaduser	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247147
+5791	0	tool_uploaduser	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247147
+5792	0	tool_uploaduser	2024100700	2024100700	Plugin upgraded	\N		0	1768247147
+5793	0	tool_usertours	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247147
+5794	0	tool_usertours	2023053000	2024100700	Upgrade savepoint reached	\N		0	1768247148
+5795	0	tool_usertours	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247148
+5796	0	tool_usertours	2024100700	2024100700	Plugin upgraded	\N		0	1768247148
+5797	0	tool_xmldb	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247148
+5798	0	tool_xmldb	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247148
+5799	0	tool_xmldb	2024100700	2024100700	Plugin upgraded	\N		0	1768247148
+5800	0	cachestore_apcu	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247148
+5801	0	cachestore_apcu	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247148
+5802	0	cachestore_apcu	2024100700	2024100700	Plugin upgraded	\N		0	1768247148
+5803	0	cachestore_file	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247148
+5804	0	cachestore_file	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247148
+5805	0	cachestore_file	2024100700	2024100700	Plugin upgraded	\N		0	1768247148
+5806	0	cachestore_redis	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247148
+5807	0	cachestore_redis	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247148
+5808	0	cachestore_redis	2024100700	2024100700	Plugin upgraded	\N		0	1768247148
+5809	0	cachestore_session	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247148
+5810	0	cachestore_session	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247148
+5811	0	cachestore_session	2024100700	2024100700	Plugin upgraded	\N		0	1768247148
+5812	0	cachestore_static	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247148
+5813	0	cachestore_static	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247148
+5814	0	cachestore_static	2024100700	2024100700	Plugin upgraded	\N		0	1768247148
+5815	0	cachelock_file	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247148
+5816	0	cachelock_file	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247148
+5817	0	cachelock_file	2024100700	2024100700	Plugin upgraded	\N		0	1768247148
+5818	0	fileconverter_googledrive	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247148
+5819	0	fileconverter_googledrive	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247148
+5820	0	fileconverter_googledrive	2024100700	2024100700	Plugin upgraded	\N		0	1768247148
+5821	0	fileconverter_unoconv	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247148
+5822	0	fileconverter_unoconv	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247148
+5823	0	fileconverter_unoconv	2024100700	2024100700	Plugin upgraded	\N		0	1768247148
+5824	0	contenttype_h5p	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247148
+5825	0	contenttype_h5p	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247148
+5826	0	contenttype_h5p	2024100700	2024100700	Plugin upgraded	\N		0	1768247148
+5827	0	theme_boost	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247148
+5828	0	theme_boost	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247148
+5829	0	theme_boost	2024100700	2024100700	Plugin upgraded	\N		0	1768247148
+5830	0	theme_boost_union	\N	2024100755	Starting plugin installation	\N		0	1768247148
+5831	0	theme_boost_union	2024100755	2024100755	Upgrade savepoint reached	\N		0	1768247149
+5832	0	theme_boost_union	2024100755	2024100755	Plugin installed	\N		0	1768247149
+5833	0	theme_classic	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247149
+5834	0	theme_classic	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247149
+5835	0	theme_classic	2024100700	2024100700	Plugin upgraded	\N		0	1768247149
+5836	0	theme_xtecboost	2023120400	2024110400	Starting plugin upgrade	\N		0	1768247149
+5837	0	theme_xtecboost	2024110400	2024110400	Upgrade savepoint reached	\N		0	1768247149
+5838	0	theme_xtecboost	2024110400	2024110400	Plugin upgraded	\N		0	1768247149
+5839	0	local_alexandriaimporter	2016021600	2024102400	Starting plugin upgrade	\N		0	1768247149
+5840	0	local_alexandriaimporter	2024102400	2024102400	Upgrade savepoint reached	\N		0	1768247149
+5841	0	local_alexandriaimporter	2024102400	2024102400	Plugin upgraded	\N		0	1768247149
+5842	0	local_redislock	2022101200	2025060500	Starting plugin upgrade	\N		0	1768247149
+5843	0	local_redislock	2025060500	2025060500	Upgrade savepoint reached	\N		0	1768247149
+5844	0	local_redislock	2025060500	2025060500	Plugin upgraded	\N		0	1768247149
+5845	0	h5plib_v127	\N	2024100700	Starting plugin installation	\N		0	1768247149
+5846	0	h5plib_v127	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247149
+5847	0	h5plib_v127	2024100700	2024100700	Plugin installed	\N		0	1768247149
+5848	0	paygw_paypal	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247149
+5849	0	paygw_paypal	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247149
+5850	0	paygw_paypal	2024100700	2024100700	Plugin upgraded	\N		0	1768247149
+5851	0	smsgateway_aws	\N	2024100700	Starting plugin installation	\N		0	1768247149
+5852	0	smsgateway_aws	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247149
+5853	0	smsgateway_aws	2024100700	2024100700	Plugin installed	\N		0	1768247149
+5854	0	assignsubmission_comments	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247149
+5855	0	assignsubmission_comments	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247149
+5856	0	assignsubmission_comments	2024100700	2024100700	Plugin upgraded	\N		0	1768247149
+5857	0	assignsubmission_file	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247149
+5858	0	assignsubmission_file	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247149
+5859	0	assignsubmission_file	2024100700	2024100700	Plugin upgraded	\N		0	1768247150
+5860	0	assignsubmission_onlinetext	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247150
+5861	0	assignsubmission_onlinetext	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247150
+5862	0	assignsubmission_onlinetext	2024100700	2024100700	Plugin upgraded	\N		0	1768247150
+5863	0	assignfeedback_comments	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247150
+5864	0	assignfeedback_comments	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247150
+5865	0	assignfeedback_comments	2024100700	2024100700	Plugin upgraded	\N		0	1768247150
+5866	0	assignfeedback_editpdf	2022112801	2024100700	Starting plugin upgrade	\N		0	1768247150
+5867	0	assignfeedback_editpdf	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247150
+5868	0	assignfeedback_editpdf	2024100700	2024100700	Plugin upgraded	\N		0	1768247150
+5869	0	assignfeedback_file	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247150
+5870	0	assignfeedback_file	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247150
+5871	0	assignfeedback_file	2024100700	2024100700	Plugin upgraded	\N		0	1768247150
+5872	0	assignfeedback_offline	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247150
+5873	0	assignfeedback_offline	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247150
+5874	0	assignfeedback_offline	2024100700	2024100700	Plugin upgraded	\N		0	1768247150
+5875	0	booktool_exportimscp	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247150
+5876	0	booktool_exportimscp	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247150
+5877	0	booktool_exportimscp	2024100700	2024100700	Plugin upgraded	\N		0	1768247150
+5878	0	booktool_importhtml	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247150
+5879	0	booktool_importhtml	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247150
+5880	0	booktool_importhtml	2024100700	2024100700	Plugin upgraded	\N		0	1768247150
+5881	0	booktool_print	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247150
+5882	0	booktool_print	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247150
+5883	0	booktool_print	2024100700	2024100700	Plugin upgraded	\N		0	1768247150
+5884	0	datafield_checkbox	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247150
+5885	0	datafield_checkbox	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247150
+5886	0	datafield_checkbox	2024100700	2024100700	Plugin upgraded	\N		0	1768247150
+5887	0	datafield_date	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247150
+5888	0	datafield_date	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247150
+5889	0	datafield_date	2024100700	2024100700	Plugin upgraded	\N		0	1768247150
+5890	0	datafield_file	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247150
+5891	0	datafield_file	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247150
+5892	0	datafield_file	2024100700	2024100700	Plugin upgraded	\N		0	1768247151
+5893	0	datafield_latlong	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247151
+5894	0	datafield_latlong	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247151
+5895	0	datafield_latlong	2024100700	2024100700	Plugin upgraded	\N		0	1768247151
+5896	0	datafield_menu	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247151
+5897	0	datafield_menu	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247151
+5898	0	datafield_menu	2024100700	2024100700	Plugin upgraded	\N		0	1768247151
+5899	0	datafield_multimenu	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247151
+5900	0	datafield_multimenu	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247151
+5901	0	datafield_multimenu	2024100700	2024100700	Plugin upgraded	\N		0	1768247151
+5902	0	datafield_number	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247151
+5903	0	datafield_number	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247151
+5904	0	datafield_number	2024100700	2024100700	Plugin upgraded	\N		0	1768247151
+5905	0	datafield_picture	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247151
+5906	0	datafield_picture	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247151
+5907	0	datafield_picture	2024100700	2024100700	Plugin upgraded	\N		0	1768247151
+5908	0	datafield_radiobutton	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247151
+5909	0	datafield_radiobutton	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247151
+5910	0	datafield_radiobutton	2024100700	2024100700	Plugin upgraded	\N		0	1768247151
+5911	0	datafield_text	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247151
+5912	0	datafield_text	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247151
+5913	0	datafield_text	2024100700	2024100700	Plugin upgraded	\N		0	1768247151
+5914	0	datafield_textarea	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247151
+5915	0	datafield_textarea	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247151
+5916	0	datafield_textarea	2024100700	2024100700	Plugin upgraded	\N		0	1768247151
+5917	0	datafield_url	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247151
+5918	0	datafield_url	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247151
+5919	0	datafield_url	2024100700	2024100700	Plugin upgraded	\N		0	1768247151
+5920	0	datapreset_imagegallery	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247151
+5921	0	datapreset_imagegallery	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247151
+5922	0	datapreset_imagegallery	2024100700	2024100700	Plugin upgraded	\N		0	1768247151
+5923	0	datapreset_journal	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247151
+5924	0	datapreset_journal	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247151
+5925	0	datapreset_journal	2024100700	2024100700	Plugin upgraded	\N		0	1768247151
+5926	0	datapreset_proposals	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247151
+5927	0	datapreset_proposals	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247151
+5928	0	datapreset_proposals	2024100700	2024100700	Plugin upgraded	\N		0	1768247151
+5929	0	datapreset_resources	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247151
+5930	0	datapreset_resources	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247151
+5931	0	datapreset_resources	2024100700	2024100700	Plugin upgraded	\N		0	1768247152
+5932	0	forumreport_summary	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247152
+5933	0	forumreport_summary	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247152
+5934	0	forumreport_summary	2024100700	2024100700	Plugin upgraded	\N		0	1768247152
+5935	0	ltiservice_basicoutcomes	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247152
+5936	0	ltiservice_basicoutcomes	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247152
+5937	0	ltiservice_basicoutcomes	2024100700	2024100700	Plugin upgraded	\N		0	1768247152
+5938	0	ltiservice_gradebookservices	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247152
+5939	0	ltiservice_gradebookservices	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247152
+5940	0	ltiservice_gradebookservices	2024100700	2024100700	Plugin upgraded	\N		0	1768247152
+5941	0	ltiservice_memberships	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247152
+5942	0	ltiservice_memberships	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247152
+5943	0	ltiservice_memberships	2024100700	2024100700	Plugin upgraded	\N		0	1768247152
+5944	0	ltiservice_profile	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247152
+5945	0	ltiservice_profile	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247152
+5946	0	ltiservice_profile	2024100700	2024100700	Plugin upgraded	\N		0	1768247152
+5947	0	ltiservice_toolproxy	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247152
+5948	0	ltiservice_toolproxy	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247152
+5949	0	ltiservice_toolproxy	2024100700	2024100700	Plugin upgraded	\N		0	1768247152
+5950	0	ltiservice_toolsettings	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247152
+5951	0	ltiservice_toolsettings	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247152
+5952	0	ltiservice_toolsettings	2024100700	2024100700	Plugin upgraded	\N		0	1768247152
+5953	0	quiz_grading	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247152
+5954	0	quiz_grading	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247152
+5955	0	quiz_grading	2024100700	2024100700	Plugin upgraded	\N		0	1768247152
+5956	0	quiz_overview	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247152
+5957	0	quiz_overview	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247152
+5958	0	quiz_overview	2024100700	2024100700	Plugin upgraded	\N		0	1768247152
+5959	0	quiz_responses	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247152
+5960	0	quiz_responses	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247152
+5961	0	quiz_responses	2024100700	2024100700	Plugin upgraded	\N		0	1768247152
+5962	0	quiz_statistics	2022112804	2024100700	Starting plugin upgrade	\N		0	1768247152
+5963	0	quiz_statistics	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247152
+5964	0	quiz_statistics	2024100700	2024100700	Plugin upgraded	\N		0	1768247152
+5965	0	quizaccess_delaybetweenattempts	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247152
+5966	0	quizaccess_delaybetweenattempts	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247152
+5967	0	quizaccess_delaybetweenattempts	2024100700	2024100700	Plugin upgraded	\N		0	1768247152
+5968	0	quizaccess_ipaddress	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247152
+5969	0	quizaccess_ipaddress	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247152
+5970	0	quizaccess_ipaddress	2024100700	2024100700	Plugin upgraded	\N		0	1768247153
+5971	0	quizaccess_numattempts	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247153
+5972	0	quizaccess_numattempts	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247153
+5973	0	quizaccess_numattempts	2024100700	2024100700	Plugin upgraded	\N		0	1768247153
+5974	0	quizaccess_offlineattempts	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247153
+5975	0	quizaccess_offlineattempts	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247153
+5976	0	quizaccess_offlineattempts	2024100700	2024100700	Plugin upgraded	\N		0	1768247153
+5977	0	quizaccess_openclosedate	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247153
+5978	0	quizaccess_openclosedate	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247153
+5979	0	quizaccess_openclosedate	2024100700	2024100700	Plugin upgraded	\N		0	1768247153
+5980	0	quizaccess_password	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247153
+5981	0	quizaccess_password	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247153
+5982	0	quizaccess_password	2024100700	2024100700	Plugin upgraded	\N		0	1768247153
+5983	0	quizaccess_seb	2022112800	2024100701	Starting plugin upgrade	\N		0	1768247153
+5984	0	quizaccess_seb	2024100701	2024100701	Upgrade savepoint reached	\N		0	1768247153
+5985	0	quizaccess_seb	2024100701	2024100701	Plugin upgraded	\N		0	1768247153
+5986	0	quizaccess_securewindow	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247153
+5987	0	quizaccess_securewindow	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247153
+5988	0	quizaccess_securewindow	2024100700	2024100700	Plugin upgraded	\N		0	1768247153
+5989	0	quizaccess_timelimit	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247153
+5990	0	quizaccess_timelimit	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247153
+5991	0	quizaccess_timelimit	2024100700	2024100700	Plugin upgraded	\N		0	1768247153
+5992	0	scormreport_basic	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247153
+5993	0	scormreport_basic	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247153
+5994	0	scormreport_basic	2024100700	2024100700	Plugin upgraded	\N		0	1768247153
+5995	0	scormreport_graphs	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247153
+5996	0	scormreport_graphs	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247153
+5997	0	scormreport_graphs	2024100700	2024100700	Plugin upgraded	\N		0	1768247153
+5998	0	scormreport_interactions	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247153
+5999	0	scormreport_interactions	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247153
+6000	0	scormreport_interactions	2024100700	2024100700	Plugin upgraded	\N		0	1768247153
+6001	0	scormreport_objectives	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247153
+6002	0	scormreport_objectives	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247153
+6003	0	scormreport_objectives	2024100700	2024100700	Plugin upgraded	\N		0	1768247153
+6004	0	workshopform_accumulative	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247153
+6005	0	workshopform_accumulative	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247153
+6006	0	workshopform_accumulative	2024100700	2024100700	Plugin upgraded	\N		0	1768247153
+6007	0	workshopform_comments	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247154
+6008	0	workshopform_comments	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247154
+6009	0	workshopform_comments	2024100700	2024100700	Plugin upgraded	\N		0	1768247154
+6010	0	workshopform_numerrors	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247154
+6011	0	workshopform_numerrors	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247154
+6012	0	workshopform_numerrors	2024100700	2024100700	Plugin upgraded	\N		0	1768247154
+6013	0	workshopform_rubric	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247154
+6014	0	workshopform_rubric	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247154
+6015	0	workshopform_rubric	2024100700	2024100700	Plugin upgraded	\N		0	1768247154
+6016	0	workshopallocation_manual	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247154
+6017	0	workshopallocation_manual	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247154
+6018	0	workshopallocation_manual	2024100700	2024100700	Plugin upgraded	\N		0	1768247154
+6019	0	workshopallocation_random	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247154
+6020	0	workshopallocation_random	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247154
+6021	0	workshopallocation_random	2024100700	2024100700	Plugin upgraded	\N		0	1768247154
+6022	0	workshopallocation_scheduled	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247154
+6023	0	workshopallocation_scheduled	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247154
+6024	0	workshopallocation_scheduled	2024100700	2024100700	Plugin upgraded	\N		0	1768247154
+6025	0	workshopeval_best	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247154
+6026	0	workshopeval_best	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247154
+6027	0	workshopeval_best	2024100700	2024100700	Plugin upgraded	\N		0	1768247154
+6028	0	atto_accessibilitychecker	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247154
+6029	0	atto_accessibilitychecker	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247154
+6030	0	atto_accessibilitychecker	2024100700	2024100700	Plugin upgraded	\N		0	1768247154
+6031	0	atto_accessibilityhelper	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247154
+6032	0	atto_accessibilityhelper	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247154
+6033	0	atto_accessibilityhelper	2024100700	2024100700	Plugin upgraded	\N		0	1768247154
+6034	0	atto_align	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247154
+6035	0	atto_align	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247154
+6036	0	atto_align	2024100700	2024100700	Plugin upgraded	\N		0	1768247154
+6037	0	atto_backcolor	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247154
+6038	0	atto_backcolor	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247154
+6039	0	atto_backcolor	2024100700	2024100700	Plugin upgraded	\N		0	1768247154
+6040	0	atto_bold	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247154
+6041	0	atto_bold	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247154
+6042	0	atto_bold	2024100700	2024100700	Plugin upgraded	\N		0	1768247154
+6043	0	atto_charmap	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247154
+6044	0	atto_charmap	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247154
+6045	0	atto_charmap	2024100700	2024100700	Plugin upgraded	\N		0	1768247155
+6046	0	atto_clear	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247155
+6047	0	atto_clear	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247155
+6048	0	atto_clear	2024100700	2024100700	Plugin upgraded	\N		0	1768247155
+6049	0	atto_cloze	2017072804	2017072808	Starting plugin upgrade	\N		0	1768247155
+6050	0	atto_cloze	2017072808	2017072808	Upgrade savepoint reached	\N		0	1768247155
+6051	0	atto_cloze	2017072808	2017072808	Plugin upgraded	\N		0	1768247155
+6052	0	atto_collapse	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247155
+6053	0	atto_collapse	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247155
+6054	0	atto_collapse	2024100700	2024100700	Plugin upgraded	\N		0	1768247155
+6055	0	atto_emojipicker	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247155
+6056	0	atto_emojipicker	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247155
+6057	0	atto_emojipicker	2024100700	2024100700	Plugin upgraded	\N		0	1768247155
+6058	0	atto_emoticon	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247155
+6059	0	atto_emoticon	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247155
+6060	0	atto_emoticon	2024100700	2024100700	Plugin upgraded	\N		0	1768247155
+6061	0	atto_equation	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247155
+6062	0	atto_equation	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247155
+6063	0	atto_equation	2024100700	2024100700	Plugin upgraded	\N		0	1768247155
+6064	0	atto_fontcolor	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247155
+6065	0	atto_fontcolor	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247155
+6066	0	atto_fontcolor	2024100700	2024100700	Plugin upgraded	\N		0	1768247155
+6067	0	atto_fontfamily	2020010600	2024110400	Starting plugin upgrade	\N		0	1768247155
+6068	0	atto_fontfamily	2024110400	2024110400	Upgrade savepoint reached	\N		0	1768247155
+6069	0	atto_fontfamily	2024110400	2024110400	Plugin upgraded	\N		0	1768247155
+6070	0	atto_fontsize	2015042701	2023091901	Starting plugin upgrade	\N		0	1768247155
+6071	0	atto_fontsize	2023091901	2023091901	Upgrade savepoint reached	\N		0	1768247155
+6072	0	atto_fontsize	2023091901	2023091901	Plugin upgraded	\N		0	1768247155
+6073	0	atto_h5p	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247155
+6074	0	atto_h5p	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247155
+6075	0	atto_h5p	2024100700	2024100700	Plugin upgraded	\N		0	1768247155
+6076	0	atto_html	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247155
+6077	0	atto_html	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247155
+6078	0	atto_html	2024100700	2024100700	Plugin upgraded	\N		0	1768247156
+6079	0	atto_image	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247156
+6080	0	atto_image	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247156
+6081	0	atto_image	2024100700	2024100700	Plugin upgraded	\N		0	1768247156
+6082	0	atto_indent	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247156
+6083	0	atto_indent	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247156
+6084	0	atto_indent	2024100700	2024100700	Plugin upgraded	\N		0	1768247156
+6085	0	atto_italic	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247156
+6086	0	atto_italic	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247156
+6087	0	atto_italic	2024100700	2024100700	Plugin upgraded	\N		0	1768247156
+6088	0	atto_link	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247156
+6089	0	atto_link	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247156
+6090	0	atto_link	2024100700	2024100700	Plugin upgraded	\N		0	1768247156
+6091	0	atto_managefiles	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247156
+6092	0	atto_managefiles	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247156
+6093	0	atto_managefiles	2024100700	2024100700	Plugin upgraded	\N		0	1768247156
+6094	0	atto_media	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247156
+6095	0	atto_media	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247156
+6096	0	atto_media	2024100700	2024100700	Plugin upgraded	\N		0	1768247156
+6097	0	atto_noautolink	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247156
+6098	0	atto_noautolink	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247156
+6099	0	atto_noautolink	2024100700	2024100700	Plugin upgraded	\N		0	1768247156
+6100	0	atto_orderedlist	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247156
+6101	0	atto_orderedlist	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247156
+6102	0	atto_orderedlist	2024100700	2024100700	Plugin upgraded	\N		0	1768247156
+6103	0	atto_recordrtc	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247156
+6104	0	atto_recordrtc	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247156
+6105	0	atto_recordrtc	2024100700	2024100700	Plugin upgraded	\N		0	1768247156
+6106	0	atto_rtl	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247156
+6107	0	atto_rtl	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247156
+6108	0	atto_rtl	2024100700	2024100700	Plugin upgraded	\N		0	1768247156
+6109	0	atto_strike	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247156
+6110	0	atto_strike	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247156
+6111	0	atto_strike	2024100700	2024100700	Plugin upgraded	\N		0	1768247156
+6112	0	atto_subscript	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247156
+6113	0	atto_subscript	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247156
+6114	0	atto_subscript	2024100700	2024100700	Plugin upgraded	\N		0	1768247156
+6115	0	atto_superscript	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247156
+6116	0	atto_superscript	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247156
+6117	0	atto_superscript	2024100700	2024100700	Plugin upgraded	\N		0	1768247157
+6118	0	atto_table	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247157
+6119	0	atto_table	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247157
+6120	0	atto_table	2024100700	2024100700	Plugin upgraded	\N		0	1768247157
+6121	0	atto_title	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247157
+6122	0	atto_title	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247157
+6123	0	atto_title	2024100700	2024100700	Plugin upgraded	\N		0	1768247157
+6124	0	atto_underline	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247157
+6125	0	atto_underline	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247157
+6126	0	atto_underline	2024100700	2024100700	Plugin upgraded	\N		0	1768247157
+6127	0	atto_undo	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247157
+6128	0	atto_undo	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247157
+6129	0	atto_undo	2024100700	2024100700	Plugin upgraded	\N		0	1768247157
+6130	0	atto_unorderedlist	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247157
+6131	0	atto_unorderedlist	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247157
+6132	0	atto_unorderedlist	2024100700	2024100700	Plugin upgraded	\N		0	1768247157
+6133	0	atto_wiris	2023121300	2025041400	Starting plugin upgrade	\N		0	1768247157
+6134	0	atto_wiris	2025041400	2025041400	Upgrade savepoint reached	\N		0	1768247157
+6135	0	atto_wiris	2025041400	2025041400	Plugin upgraded	\N		0	1768247157
+6136	0	tiny_accessibilitychecker	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247157
+6137	0	tiny_accessibilitychecker	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247157
+6138	0	tiny_accessibilitychecker	2024100700	2024100700	Plugin upgraded	\N		0	1768247157
+6139	0	tiny_aiplacement	\N	2024100700	Starting plugin installation	\N		0	1768247157
+6140	0	tiny_aiplacement	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247157
+6141	0	tiny_aiplacement	2024100700	2024100700	Plugin installed	\N		0	1768247157
+6142	0	tiny_autosave	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247157
+6143	0	tiny_autosave	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247157
+6144	0	tiny_autosave	2024100700	2024100700	Plugin upgraded	\N		0	1768247157
+6145	0	tiny_c4l	\N	2025052600	Starting plugin installation	\N		0	1768247157
+6146	0	tiny_c4l	2025052600	2025052600	Upgrade savepoint reached	\N		0	1768247157
+6147	0	tiny_c4l	2025052600	2025052600	Plugin installed	\N		0	1768247157
+6148	0	tiny_cloze	\N	2025100901	Starting plugin installation	\N		0	1768247158
+6149	0	tiny_cloze	2025100901	2025100901	Upgrade savepoint reached	\N		0	1768247158
+6150	0	tiny_cloze	2025100901	2025100901	Plugin installed	\N		0	1768247158
+6151	0	tiny_equation	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247158
+6152	0	tiny_equation	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247158
+6153	0	tiny_equation	2024100700	2024100700	Plugin upgraded	\N		0	1768247158
+6154	0	tiny_fontcolor	\N	2025101000	Starting plugin installation	\N		0	1768247158
+6155	0	tiny_fontcolor	2025101000	2025101000	Upgrade savepoint reached	\N		0	1768247158
+6156	0	tiny_fontcolor	2025101000	2025101000	Plugin installed	\N		0	1768247158
+6157	0	tiny_fontfamily	\N	2025062900	Starting plugin installation	\N		0	1768247158
+6158	0	tiny_fontfamily	2025062900	2025062900	Upgrade savepoint reached	\N		0	1768247158
+6159	0	tiny_fontfamily	2025062900	2025062900	Plugin installed	\N		0	1768247158
+6160	0	tiny_fontsize	\N	2025062900	Starting plugin installation	\N		0	1768247158
+6161	0	tiny_fontsize	2025062900	2025062900	Upgrade savepoint reached	\N		0	1768247158
+6162	0	tiny_fontsize	2025062900	2025062900	Plugin installed	\N		0	1768247158
+6163	0	tiny_h5p	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247158
+6164	0	tiny_h5p	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247158
+6165	0	tiny_h5p	2024100700	2024100700	Plugin upgraded	\N		0	1768247158
+6166	0	tiny_html	\N	2024100700	Starting plugin installation	\N		0	1768247158
+6167	0	tiny_html	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247158
+6168	0	tiny_html	2024100700	2024100700	Plugin installed	\N		0	1768247158
+6169	0	tiny_link	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247158
+6170	0	tiny_link	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247158
+6171	0	tiny_link	2024100700	2024100700	Plugin upgraded	\N		0	1768247158
+6172	0	tiny_media	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247158
+6173	0	tiny_media	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247158
+6174	0	tiny_media	2024100700	2024100700	Plugin upgraded	\N		0	1768247158
+6175	0	tiny_noautolink	\N	2024100700	Starting plugin installation	\N		0	1768247158
+6176	0	tiny_noautolink	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247158
+6177	0	tiny_noautolink	2024100700	2024100700	Plugin installed	\N		0	1768247158
+6178	0	tiny_premium	\N	2024100700	Starting plugin installation	\N		0	1768247158
+6179	0	tiny_premium	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247158
+6180	0	tiny_premium	2024100700	2024100700	Plugin installed	\N		0	1768247159
+6181	0	tiny_recordrtc	2022112800	2024100701	Starting plugin upgrade	\N		0	1768247159
+6182	0	tiny_recordrtc	2024042400	2024100701	Upgrade savepoint reached	\N		0	1768247159
+6183	0	tiny_recordrtc	2024100701	2024100701	Upgrade savepoint reached	\N		0	1768247159
+6184	0	tiny_recordrtc	2024100701	2024100701	Plugin upgraded	\N		0	1768247159
+6185	0	tiny_wiris	\N	2025100800	Starting plugin installation	\N		0	1768247159
+6186	0	tiny_wiris	2025100800	2025100800	Upgrade savepoint reached	\N		0	1768247159
+6187	0	tiny_wiris	2025100800	2025100800	Plugin installed	\N		0	1768247159
+6188	0	logstore_database	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247159
+6189	0	logstore_database	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247159
+6190	0	logstore_database	2024100700	2024100700	Plugin upgraded	\N		0	1768247159
+6191	0	logstore_standard	2022112800	2024100700	Starting plugin upgrade	\N		0	1768247159
+6192	0	logstore_standard	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247159
+6193	0	logstore_standard	2024100700	2024100700	Plugin upgraded	\N		0	1768247159
+6194	0	factor_admin	\N	2024100700	Starting plugin installation	\N		0	1768247159
+6195	0	factor_admin	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247159
+6196	0	factor_admin	2024100700	2024100700	Plugin installed	\N		0	1768247159
+6197	0	factor_auth	\N	2024100700	Starting plugin installation	\N		0	1768247159
+6198	0	factor_auth	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247159
+6199	0	factor_auth	2024100700	2024100700	Plugin installed	\N		0	1768247159
+6200	0	factor_capability	\N	2024100700	Starting plugin installation	\N		0	1768247159
+6201	0	factor_capability	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247159
+6202	0	factor_capability	2024100700	2024100700	Plugin installed	\N		0	1768247159
+6203	0	factor_cohort	\N	2024100700	Starting plugin installation	\N		0	1768247159
+6204	0	factor_cohort	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247159
+6205	0	factor_cohort	2024100700	2024100700	Plugin installed	\N		0	1768247159
+6206	0	factor_email	\N	2024100700	Starting plugin installation	\N		0	1768247159
+6207	0	factor_email	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247159
+6208	0	factor_email	2024100700	2024100700	Plugin installed	\N		0	1768247159
+6209	0	factor_grace	\N	2024100700	Starting plugin installation	\N		0	1768247159
+6210	0	factor_grace	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247159
+6211	0	factor_grace	2024100700	2024100700	Plugin installed	\N		0	1768247159
+6212	0	factor_iprange	\N	2024100700	Starting plugin installation	\N		0	1768247159
+6213	0	factor_iprange	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247159
+6214	0	factor_iprange	2024100700	2024100700	Plugin installed	\N		0	1768247159
+6215	0	factor_nosetup	\N	2024100700	Starting plugin installation	\N		0	1768247159
+6216	0	factor_nosetup	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247159
+6217	0	factor_nosetup	2024100700	2024100700	Plugin installed	\N		0	1768247160
+6218	0	factor_role	\N	2024100700	Starting plugin installation	\N		0	1768247160
+6219	0	factor_role	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247160
+6220	0	factor_role	2024100700	2024100700	Plugin installed	\N		0	1768247160
+6221	0	factor_sms	\N	2024100702	Starting plugin installation	\N		0	1768247160
+6222	0	factor_sms	2024100702	2024100702	Upgrade savepoint reached	\N		0	1768247160
+6223	0	factor_sms	2024100702	2024100702	Plugin installed	\N		0	1768247160
+6224	0	factor_token	\N	2024100700	Starting plugin installation	\N		0	1768247160
+6225	0	factor_token	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247160
+6226	0	factor_token	2024100700	2024100700	Plugin installed	\N		0	1768247160
+6227	0	factor_totp	\N	2024100700	Starting plugin installation	\N		0	1768247160
+6228	0	factor_totp	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247160
+6229	0	factor_totp	2024100700	2024100700	Plugin installed	\N		0	1768247160
+6230	0	factor_webauthn	\N	2024100700	Starting plugin installation	\N		0	1768247160
+6231	0	factor_webauthn	2024100700	2024100700	Upgrade savepoint reached	\N		0	1768247160
+6232	0	factor_webauthn	2024100700	2024100700	Plugin installed	\N		0	1768247160
 \.
 
 
@@ -47531,7 +53823,7 @@ COPY public.m2url (id, course, name, intro, introformat, externalurl, display, d
 COPY public.m2user (id, auth, confirmed, policyagreed, deleted, suspended, mnethostid, username, password, idnumber, firstname, lastname, email, emailstop, phone1, phone2, institution, department, address, city, country, lang, calendartype, theme, timezone, firstaccess, lastaccess, lastlogin, currentlogin, lastip, secret, picture, description, descriptionformat, mailformat, maildigest, maildisplay, autosubscribe, trackforums, timecreated, timemodified, trustbitmask, imagealt, lastnamephonetic, firstnamephonetic, middlename, alternatename, moodlenetprofile) FROM stdin;
 1	manual	1	0	0	0	1	guest	$2y$10$CFokzHIxm7HyxXvoUatsEOVB5bK/0xi5Vx/OZPrj7VgaUw5TjqvJy		Usuari convidat	 	root@localhost	0								ca	gregorian		99	0	0	0	0			0	Aquest usuari és un usuari especial que permet entrar a alguns cursos en mode només de lectura (read-only).	1	1	0	2	1	0	0	1603909020	0	\N	\N	\N	\N	\N	\N
 3	manual	1	0	0	0	1	xtecadmin	$2y$10$9fyNq/zdjWkdheNPsM/pHOu7LKAR6ERFLg9A.0YPd14m6vLRXS22C		Administrador	XTEC	xtecadmin@xtec.invalid	0							CT	ca	gregorian		99	1604422435	1604422766	0	1604422435	192.168.33.1		0		1	1	0	2	1	0	1603911452	1603911452	0						\N
-2	manual	1	0	0	0	1	admin	$2y$10$JbL6B67VOmmzjQyv/h9JpeJdsNoc2abrGW3TV/N3OoP68FBZU3G4.		Admin	Usuari	admin@xtec.invalid	0							CT	ca	gregorian		99	1603909129	1710943027	1680524349	1710941637	192.168.56.1		0		1	1	0	1	1	0	0	1603911485	0						\N
+2	manual	1	0	0	0	1	admin	$6$rounds=10000$GgUhLFxsRaYHwe/m$dNAGlkG8cXoMxVoo9XkRmY1B1Is2HuS8qCFLGoMZy3UARJ28/ujOXM0GBLbtjwNvnI6MjoC63.IpkmFre.fgx0		Admin	Usuari	admin@xtec.invalid	0							CT	ca	gregorian		99	1603909129	1768247902	1710941637	1768247836	192.168.56.1		0		1	1	0	1	1	0	0	1603911485	0						\N
 \.
 
 
@@ -47615,7 +53907,6 @@ COPY public.m2user_preferences (id, userid, name, value) FROM stdin;
 2	2	auth_manual_passwordupdatetime	1603911485
 8	2	userselector_preserveselected	0
 9	2	userselector_autoselectunique	0
-10	2	userselector_searchanywhere	0
 11	3	core_message_migrate_data	1
 12	3	tool_usertours_tour_completion_time_2	1604422442
 14	2	login_failed_count_since_success	0
@@ -47800,6 +54091,14 @@ COPY public.m2workshopform_rubric_levels (id, dimensionid, grade, definition, de
 
 
 --
+-- Data for Name: m2xapi_states; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2xapi_states (id, component, userid, itemid, stateid, statedata, registration, timecreated, timemodified) FROM stdin;
+\.
+
+
+--
 -- Name: m2adminpresets_app_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
@@ -47853,6 +54152,41 @@ SELECT pg_catalog.setval('public.m2adminpresets_it_id_seq', 24, true);
 --
 
 SELECT pg_catalog.setval('public.m2adminpresets_plug_id_seq', 117, true);
+
+
+--
+-- Name: m2ai_action_generate_image_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2ai_action_generate_image_id_seq', 1, false);
+
+
+--
+-- Name: m2ai_action_generate_text_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2ai_action_generate_text_id_seq', 1, false);
+
+
+--
+-- Name: m2ai_action_register_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2ai_action_register_id_seq', 1, false);
+
+
+--
+-- Name: m2ai_action_summarise_text_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2ai_action_summarise_text_id_seq', 1, false);
+
+
+--
+-- Name: m2ai_policy_register_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2ai_policy_register_id_seq', 1, false);
 
 
 --
@@ -48010,27 +54344,6 @@ SELECT pg_catalog.setval('public.m2assignfeedback_file_id_seq', 1, false);
 
 
 --
--- Name: m2assignment_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
---
-
-SELECT pg_catalog.setval('public.m2assignment_id_seq', 1, false);
-
-
---
--- Name: m2assignment_submissions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
---
-
-SELECT pg_catalog.setval('public.m2assignment_submissions_id_seq', 1, false);
-
-
---
--- Name: m2assignment_upgrade_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
---
-
-SELECT pg_catalog.setval('public.m2assignment_upgrade_id_seq', 1, false);
-
-
---
 -- Name: m2assignsubmission_file_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
@@ -48132,7 +54445,7 @@ SELECT pg_catalog.setval('public.m2auth_saml2_idps_id_seq', 1, false);
 -- Name: m2auth_saml2_kvstore_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2auth_saml2_kvstore_id_seq', 4, true);
+SELECT pg_catalog.setval('public.m2auth_saml2_kvstore_id_seq', 5, true);
 
 
 --
@@ -48283,6 +54596,13 @@ SELECT pg_catalog.setval('public.m2bigdata_profiles_id_seq', 1, false);
 
 
 --
+-- Name: m2block_completion_progress_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2block_completion_progress_id_seq', 1, false);
+
+
+--
 -- Name: m2block_configurable_reports_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
@@ -48290,10 +54610,24 @@ SELECT pg_catalog.setval('public.m2block_configurable_reports_id_seq', 1, false)
 
 
 --
+-- Name: m2block_grade_me_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2block_grade_me_id_seq', 1, false);
+
+
+--
+-- Name: m2block_grade_me_quiz_ngrade_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2block_grade_me_quiz_ngrade_id_seq', 1, false);
+
+
+--
 -- Name: m2block_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2block_id_seq', 50, true);
+SELECT pg_catalog.setval('public.m2block_id_seq', 51, true);
 
 
 --
@@ -48377,7 +54711,7 @@ SELECT pg_catalog.setval('public.m2cache_flags_id_seq', 5, true);
 -- Name: m2capabilities_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2capabilities_id_seq', 832, true);
+SELECT pg_catalog.setval('public.m2capabilities_id_seq', 909, true);
 
 
 --
@@ -48462,6 +54796,27 @@ SELECT pg_catalog.setval('public.m2cohort_members_id_seq', 1, false);
 --
 
 SELECT pg_catalog.setval('public.m2comments_id_seq', 1, false);
+
+
+--
+-- Name: m2communication_customlink_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2communication_customlink_id_seq', 1, false);
+
+
+--
+-- Name: m2communication_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2communication_id_seq', 1, false);
+
+
+--
+-- Name: m2communication_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2communication_user_id_seq', 1, false);
 
 
 --
@@ -48587,21 +54942,21 @@ SELECT pg_catalog.setval('public.m2competency_userevidencecomp_id_seq', 1, false
 -- Name: m2config_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2config_id_seq', 618, true);
+SELECT pg_catalog.setval('public.m2config_id_seq', 660, true);
 
 
 --
 -- Name: m2config_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2config_log_id_seq', 2213, true);
+SELECT pg_catalog.setval('public.m2config_log_id_seq', 2921, true);
 
 
 --
 -- Name: m2config_plugins_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2config_plugins_id_seq', 2799, true);
+SELECT pg_catalog.setval('public.m2config_plugins_id_seq', 3545, true);
 
 
 --
@@ -48951,14 +55306,14 @@ SELECT pg_catalog.setval('public.m2events_queue_id_seq', 1, false);
 -- Name: m2external_functions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2external_functions_id_seq', 713, true);
+SELECT pg_catalog.setval('public.m2external_functions_id_seq', 806, true);
 
 
 --
 -- Name: m2external_services_functions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2external_services_functions_id_seq', 3097, true);
+SELECT pg_catalog.setval('public.m2external_services_functions_id_seq', 3542, true);
 
 
 --
@@ -49056,7 +55411,7 @@ SELECT pg_catalog.setval('public.m2file_conversion_id_seq', 1, false);
 -- Name: m2files_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2files_id_seq', 5, true);
+SELECT pg_catalog.setval('public.m2files_id_seq', 8, true);
 
 
 --
@@ -49092,6 +55447,13 @@ SELECT pg_catalog.setval('public.m2filter_wiris_formulas_id_seq', 1, false);
 --
 
 SELECT pg_catalog.setval('public.m2folder_id_seq', 1, false);
+
+
+--
+-- Name: m2format_tiles_tile_options_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2format_tiles_tile_options_id_seq', 1, false);
 
 
 --
@@ -49770,7 +56132,7 @@ SELECT pg_catalog.setval('public.m2log_queries_id_seq', 1, false);
 -- Name: m2logstore_standard_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2logstore_standard_log_id_seq', 2146, true);
+SELECT pg_catalog.setval('public.m2logstore_standard_log_id_seq', 3092, true);
 
 
 --
@@ -49778,6 +56140,13 @@ SELECT pg_catalog.setval('public.m2logstore_standard_log_id_seq', 2146, true);
 --
 
 SELECT pg_catalog.setval('public.m2lti_access_tokens_id_seq', 1, false);
+
+
+--
+-- Name: m2lti_coursevisible_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2lti_coursevisible_id_seq', 1, false);
 
 
 --
@@ -49809,6 +56178,13 @@ SELECT pg_catalog.setval('public.m2lti_tool_settings_id_seq', 1, false);
 
 
 --
+-- Name: m2lti_types_categories_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2lti_types_categories_id_seq', 1, false);
+
+
+--
 -- Name: m2lti_types_config_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
@@ -49827,6 +56203,13 @@ SELECT pg_catalog.setval('public.m2lti_types_id_seq', 1, false);
 --
 
 SELECT pg_catalog.setval('public.m2ltiservice_gradebookservices_id_seq', 1, false);
+
+
+--
+-- Name: m2matrix_room_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2matrix_room_id_seq', 1, false);
 
 
 --
@@ -49910,7 +56293,7 @@ SELECT pg_catalog.setval('public.m2message_processors_id_seq', 4, true);
 -- Name: m2message_providers_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2message_providers_id_seq', 50, true);
+SELECT pg_catalog.setval('public.m2message_providers_id_seq', 56, true);
 
 
 --
@@ -50057,7 +56440,14 @@ SELECT pg_catalog.setval('public.m2mnetservice_enrol_enrolments_id_seq', 1, fals
 -- Name: m2modules_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2modules_id_seq', 34, true);
+SELECT pg_catalog.setval('public.m2modules_id_seq', 35, true);
+
+
+--
+-- Name: m2moodlenet_share_progress_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2moodlenet_share_progress_id_seq', 1, false);
 
 
 --
@@ -50407,7 +56797,7 @@ SELECT pg_catalog.setval('public.m2question_attempts_id_seq', 1, false);
 -- Name: m2question_bank_entries_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2question_bank_entries_id_seq', 1, false);
+SELECT pg_catalog.setval('public.m2question_bank_entries_id_seq', 19, true);
 
 
 --
@@ -50428,7 +56818,21 @@ SELECT pg_catalog.setval('public.m2question_calculated_options_id_seq', 1, false
 -- Name: m2question_categories_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2question_categories_id_seq', 1, false);
+SELECT pg_catalog.setval('public.m2question_categories_id_seq', 2, true);
+
+
+--
+-- Name: m2question_coderunner_options_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2question_coderunner_options_id_seq', 19, true);
+
+
+--
+-- Name: m2question_coderunner_tests_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2question_coderunner_tests_id_seq', 1, false);
 
 
 --
@@ -50477,7 +56881,7 @@ SELECT pg_catalog.setval('public.m2question_hints_id_seq', 1, false);
 -- Name: m2question_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2question_id_seq', 1, false);
+SELECT pg_catalog.setval('public.m2question_id_seq', 19, true);
 
 
 --
@@ -50561,7 +56965,7 @@ SELECT pg_catalog.setval('public.m2question_usages_id_seq', 1, false);
 -- Name: m2question_versions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2question_versions_id_seq', 1, false);
+SELECT pg_catalog.setval('public.m2question_versions_id_seq', 19, true);
 
 
 --
@@ -50688,6 +57092,13 @@ SELECT pg_catalog.setval('public.m2quiz_attempts_id_seq', 1, false);
 --
 
 SELECT pg_catalog.setval('public.m2quiz_feedback_id_seq', 1, false);
+
+
+--
+-- Name: m2quiz_grade_items_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2quiz_grade_items_id_seq', 1, false);
 
 
 --
@@ -51002,7 +57413,7 @@ SELECT pg_catalog.setval('public.m2role_assignments_id_seq', 1, false);
 -- Name: m2role_capabilities_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2role_capabilities_id_seq', 1774, true);
+SELECT pg_catalog.setval('public.m2role_capabilities_id_seq', 1968, true);
 
 
 --
@@ -51048,6 +57459,20 @@ SELECT pg_catalog.setval('public.m2scorm_aicc_session_id_seq', 1, false);
 
 
 --
+-- Name: m2scorm_attempt_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2scorm_attempt_id_seq', 1, false);
+
+
+--
+-- Name: m2scorm_element_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2scorm_element_id_seq', 1, false);
+
+
+--
 -- Name: m2scorm_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
@@ -51069,10 +57494,10 @@ SELECT pg_catalog.setval('public.m2scorm_scoes_id_seq', 1, false);
 
 
 --
--- Name: m2scorm_scoes_track_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+-- Name: m2scorm_scoes_value_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2scorm_scoes_track_id_seq', 1, false);
+SELECT pg_catalog.setval('public.m2scorm_scoes_value_id_seq', 1, false);
 
 
 --
@@ -51139,6 +57564,20 @@ SELECT pg_catalog.setval('public.m2sessions_id_seq', 28, true);
 
 
 --
+-- Name: m2sms_gateways_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2sms_gateways_id_seq', 1, false);
+
+
+--
+-- Name: m2sms_messages_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2sms_messages_id_seq', 1, false);
+
+
+--
 -- Name: m2stats_daily_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
@@ -51181,6 +57620,20 @@ SELECT pg_catalog.setval('public.m2stats_weekly_id_seq', 1, false);
 
 
 --
+-- Name: m2stored_progress_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2stored_progress_id_seq', 1, false);
+
+
+--
+-- Name: m2subsection_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2subsection_id_seq', 1, false);
+
+
+--
 -- Name: m2survey_analysis_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
@@ -51212,7 +57665,7 @@ SELECT pg_catalog.setval('public.m2survey_questions_id_seq', 73, true);
 -- Name: m2tag_area_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2tag_area_id_seq', 11, true);
+SELECT pg_catalog.setval('public.m2tag_area_id_seq', 13, true);
 
 
 --
@@ -51247,21 +57700,49 @@ SELECT pg_catalog.setval('public.m2tag_instance_id_seq', 1, false);
 -- Name: m2task_adhoc_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2task_adhoc_id_seq', 9, true);
+SELECT pg_catalog.setval('public.m2task_adhoc_id_seq', 10, true);
 
 
 --
 -- Name: m2task_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2task_log_id_seq', 372, true);
+SELECT pg_catalog.setval('public.m2task_log_id_seq', 436, true);
 
 
 --
 -- Name: m2task_scheduled_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2task_scheduled_id_seq', 130, true);
+SELECT pg_catalog.setval('public.m2task_scheduled_id_seq', 148, true);
+
+
+--
+-- Name: m2theme_boost_union_flavours_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2theme_boost_union_flavours_id_seq', 1, false);
+
+
+--
+-- Name: m2theme_boost_union_menuitems_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2theme_boost_union_menuitems_id_seq', 1, false);
+
+
+--
+-- Name: m2theme_boost_union_menus_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2theme_boost_union_menus_id_seq', 1, false);
+
+
+--
+-- Name: m2theme_boost_union_snippets_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2theme_boost_union_snippets_id_seq', 6, true);
 
 
 --
@@ -51370,6 +57851,13 @@ SELECT pg_catalog.setval('public.m2tool_dataprivacy_category_id_seq', 1, false);
 
 
 --
+-- Name: m2tool_dataprivacy_contextlist_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2tool_dataprivacy_contextlist_id_seq', 1, false);
+
+
+--
 -- Name: m2tool_dataprivacy_ctxexpired_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
@@ -51391,6 +57879,13 @@ SELECT pg_catalog.setval('public.m2tool_dataprivacy_ctxlevel_id_seq', 1, false);
 
 
 --
+-- Name: m2tool_dataprivacy_ctxlst_ctx_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2tool_dataprivacy_ctxlst_ctx_id_seq', 1, false);
+
+
+--
 -- Name: m2tool_dataprivacy_purpose_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
@@ -51409,6 +57904,34 @@ SELECT pg_catalog.setval('public.m2tool_dataprivacy_purposerole_id_seq', 1, fals
 --
 
 SELECT pg_catalog.setval('public.m2tool_dataprivacy_request_id_seq', 1, false);
+
+
+--
+-- Name: m2tool_dataprivacy_rqst_ctxlst_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2tool_dataprivacy_rqst_ctxlst_id_seq', 1, false);
+
+
+--
+-- Name: m2tool_mfa_auth_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2tool_mfa_auth_id_seq', 1, false);
+
+
+--
+-- Name: m2tool_mfa_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2tool_mfa_id_seq', 1, false);
+
+
+--
+-- Name: m2tool_mfa_secrets_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2tool_mfa_secrets_id_seq', 1, false);
 
 
 --
@@ -51478,21 +58001,21 @@ SELECT pg_catalog.setval('public.m2tool_recyclebin_course_id_seq', 1, false);
 -- Name: m2tool_usertours_steps_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2tool_usertours_steps_id_seq', 24, true);
+SELECT pg_catalog.setval('public.m2tool_usertours_steps_id_seq', 27, true);
 
 
 --
 -- Name: m2tool_usertours_tours_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2tool_usertours_tours_id_seq', 10, true);
+SELECT pg_catalog.setval('public.m2tool_usertours_tours_id_seq', 11, true);
 
 
 --
 -- Name: m2upgrade_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2upgrade_log_id_seq', 4658, true);
+SELECT pg_catalog.setval('public.m2upgrade_log_id_seq', 6232, true);
 
 
 --
@@ -51727,6 +58250,13 @@ SELECT pg_catalog.setval('public.m2workshopform_rubric_levels_id_seq', 1, false)
 
 
 --
+-- Name: m2xapi_states_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2xapi_states_id_seq', 1, false);
+
+
+--
 -- Name: m2adminpresets m2admi_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -51788,6 +58318,46 @@ ALTER TABLE ONLY public.m2adminpresets_it_a
 
 ALTER TABLE ONLY public.m2adminpresets_plug
     ADD CONSTRAINT m2admiplug_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2ai_action_generate_image m2aiactigeneimag_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2ai_action_generate_image
+    ADD CONSTRAINT m2aiactigeneimag_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2ai_action_generate_text m2aiactigenetext_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2ai_action_generate_text
+    ADD CONSTRAINT m2aiactigenetext_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2ai_action_register m2aiactiregi_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2ai_action_register
+    ADD CONSTRAINT m2aiactiregi_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2ai_action_summarise_text m2aiactisummtext_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2ai_action_summarise_text
+    ADD CONSTRAINT m2aiactisummtext_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2ai_policy_register m2aipoliregi_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2ai_policy_register
+    ADD CONSTRAINT m2aipoliregi_id_pk PRIMARY KEY (id);
 
 
 --
@@ -51860,14 +58430,6 @@ ALTER TABLE ONLY public.m2analytics_used_analysables
 
 ALTER TABLE ONLY public.m2analytics_used_files
     ADD CONSTRAINT m2analusedfile_id_pk PRIMARY KEY (id);
-
-
---
--- Name: m2assignment m2assi_id3_pk; Type: CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.m2assignment
-    ADD CONSTRAINT m2assi_id3_pk PRIMARY KEY (id);
 
 
 --
@@ -51975,27 +58537,11 @@ ALTER TABLE ONLY public.m2assignsubmission_snap
 
 
 --
--- Name: m2assignment_submissions m2assisubm_id3_pk; Type: CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.m2assignment_submissions
-    ADD CONSTRAINT m2assisubm_id3_pk PRIMARY KEY (id);
-
-
---
 -- Name: m2assign_submission m2assisubm_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.m2assign_submission
     ADD CONSTRAINT m2assisubm_id_pk PRIMARY KEY (id);
-
-
---
--- Name: m2assignment_upgrade m2assiupgr_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.m2assignment_upgrade
-    ADD CONSTRAINT m2assiupgr_id_pk PRIMARY KEY (id);
 
 
 --
@@ -52287,11 +58833,35 @@ ALTER TABLE ONLY public.m2block
 
 
 --
+-- Name: m2block_completion_progress m2bloccompprog_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2block_completion_progress
+    ADD CONSTRAINT m2bloccompprog_id_pk PRIMARY KEY (id);
+
+
+--
 -- Name: m2block_configurable_reports m2blocconfrepo_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.m2block_configurable_reports
     ADD CONSTRAINT m2blocconfrepo_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2block_grade_me m2blocgradme_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2block_grade_me
+    ADD CONSTRAINT m2blocgradme_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2block_grade_me_quiz_ngrade m2blocgradmequizngra_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2block_grade_me_quiz_ngrade
+    ADD CONSTRAINT m2blocgradmequizngra_id_pk PRIMARY KEY (id);
 
 
 --
@@ -52479,11 +59049,35 @@ ALTER TABLE ONLY public.m2cohort_members
 
 
 --
+-- Name: m2communication m2comm_id2_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2communication
+    ADD CONSTRAINT m2comm_id2_pk PRIMARY KEY (id);
+
+
+--
 -- Name: m2comments m2comm_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.m2comments
     ADD CONSTRAINT m2comm_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2communication_customlink m2commcust_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2communication_customlink
+    ADD CONSTRAINT m2commcust_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2communication_user m2commuser_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2communication_user
+    ADD CONSTRAINT m2commuser_id_pk PRIMARY KEY (id);
 
 
 --
@@ -53212,6 +59806,14 @@ ALTER TABLE ONLY public.m2filter_wiris_formulas
 
 ALTER TABLE ONLY public.m2folder
     ADD CONSTRAINT m2fold_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2format_tiles_tile_options m2formtiletileopti_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2format_tiles_tile_options
+    ADD CONSTRAINT m2formtiletileopti_id_pk PRIMARY KEY (id);
 
 
 --
@@ -54015,6 +60617,14 @@ ALTER TABLE ONLY public.m2lti_access_tokens
 
 
 --
+-- Name: m2lti_coursevisible m2lticour_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2lti_coursevisible
+    ADD CONSTRAINT m2lticour_id_pk PRIMARY KEY (id);
+
+
+--
 -- Name: m2ltiservice_gradebookservices m2ltisgrad_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -54055,11 +60665,27 @@ ALTER TABLE ONLY public.m2lti_types
 
 
 --
+-- Name: m2lti_types_categories m2ltitypecate_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2lti_types_categories
+    ADD CONSTRAINT m2ltitypecate_id_pk PRIMARY KEY (id);
+
+
+--
 -- Name: m2lti_types_config m2ltitypeconf_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.m2lti_types_config
     ADD CONSTRAINT m2ltitypeconf_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2matrix_room m2matrroom_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2matrix_room
+    ADD CONSTRAINT m2matrroom_id_pk PRIMARY KEY (id);
 
 
 --
@@ -54324,6 +60950,14 @@ ALTER TABLE ONLY public.m2mnet_sso_access_control
 
 ALTER TABLE ONLY public.m2modules
     ADD CONSTRAINT m2modu_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2moodlenet_share_progress m2moodsharprog_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2moodlenet_share_progress
+    ADD CONSTRAINT m2moodsharprog_id_pk PRIMARY KEY (id);
 
 
 --
@@ -54767,6 +61401,22 @@ ALTER TABLE ONLY public.m2question_categories
 
 
 --
+-- Name: m2question_coderunner_options m2quescodeopti_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2question_coderunner_options
+    ADD CONSTRAINT m2quescodeopti_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2question_coderunner_tests m2quescodetest_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2question_coderunner_tests
+    ADD CONSTRAINT m2quescodetest_id_pk PRIMARY KEY (id);
+
+
+--
 -- Name: m2question_datasets m2quesdata_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -55060,6 +61710,14 @@ ALTER TABLE ONLY public.m2quiz_feedback
 
 ALTER TABLE ONLY public.m2quiz_grades
     ADD CONSTRAINT m2quizgrad_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2quiz_grade_items m2quizgraditem_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2quiz_grade_items
+    ADD CONSTRAINT m2quizgraditem_id_pk PRIMARY KEY (id);
 
 
 --
@@ -55463,6 +62121,22 @@ ALTER TABLE ONLY public.m2scorm_aicc_session
 
 
 --
+-- Name: m2scorm_attempt m2scoratte_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2scorm_attempt
+    ADD CONSTRAINT m2scoratte_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2scorm_element m2scorelem_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2scorm_element
+    ADD CONSTRAINT m2scorelem_id_pk PRIMARY KEY (id);
+
+
+--
 -- Name: m2scorm_scoes m2scorscoe_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -55479,11 +62153,11 @@ ALTER TABLE ONLY public.m2scorm_scoes_data
 
 
 --
--- Name: m2scorm_scoes_track m2scorscoetrac_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: m2scorm_scoes_value m2scorscoevalu_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.m2scorm_scoes_track
-    ADD CONSTRAINT m2scorscoetrac_id_pk PRIMARY KEY (id);
+ALTER TABLE ONLY public.m2scorm_scoes_value
+    ADD CONSTRAINT m2scorscoevalu_id_pk PRIMARY KEY (id);
 
 
 --
@@ -55559,6 +62233,22 @@ ALTER TABLE ONLY public.m2sessions
 
 
 --
+-- Name: m2sms_gateways m2smsgate_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2sms_gateways
+    ADD CONSTRAINT m2smsgate_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2sms_messages m2smsmess_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2sms_messages
+    ADD CONSTRAINT m2smsmess_id_pk PRIMARY KEY (id);
+
+
+--
 -- Name: m2stats_daily m2statdail_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -55604,6 +62294,22 @@ ALTER TABLE ONLY public.m2stats_user_weekly
 
 ALTER TABLE ONLY public.m2stats_weekly
     ADD CONSTRAINT m2statweek_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2stored_progress m2storprog_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2stored_progress
+    ADD CONSTRAINT m2storprog_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2subsection m2subs_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2subsection
+    ADD CONSTRAINT m2subs_id_pk PRIMARY KEY (id);
 
 
 --
@@ -55700,6 +62406,38 @@ ALTER TABLE ONLY public.m2task_log
 
 ALTER TABLE ONLY public.m2task_scheduled
     ADD CONSTRAINT m2tasksche_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2theme_boost_union_flavours m2themboosunioflav_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2theme_boost_union_flavours
+    ADD CONSTRAINT m2themboosunioflav_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2theme_boost_union_menuitems m2themboosuniomenu_id3_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2theme_boost_union_menuitems
+    ADD CONSTRAINT m2themboosuniomenu_id3_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2theme_boost_union_menus m2themboosuniomenu_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2theme_boost_union_menus
+    ADD CONSTRAINT m2themboosuniomenu_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2theme_boost_union_snippets m2themboosuniosnip_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2theme_boost_union_snippets
+    ADD CONSTRAINT m2themboosuniosnip_id_pk PRIMARY KEY (id);
 
 
 --
@@ -55823,6 +62561,14 @@ ALTER TABLE ONLY public.m2tool_dataprivacy_category
 
 
 --
+-- Name: m2tool_dataprivacy_contextlist m2tooldatacont_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_dataprivacy_contextlist
+    ADD CONSTRAINT m2tooldatacont_id_pk PRIMARY KEY (id);
+
+
+--
 -- Name: m2tool_dataprivacy_ctxexpired m2tooldatactxe_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -55847,6 +62593,14 @@ ALTER TABLE ONLY public.m2tool_dataprivacy_ctxlevel
 
 
 --
+-- Name: m2tool_dataprivacy_ctxlst_ctx m2tooldatactxlctx_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_dataprivacy_ctxlst_ctx
+    ADD CONSTRAINT m2tooldatactxlctx_id_pk PRIMARY KEY (id);
+
+
+--
 -- Name: m2tool_dataprivacy_purposerole m2tooldatapurp_id3_pk; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -55868,6 +62622,38 @@ ALTER TABLE ONLY public.m2tool_dataprivacy_purpose
 
 ALTER TABLE ONLY public.m2tool_dataprivacy_request
     ADD CONSTRAINT m2tooldatarequ_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2tool_dataprivacy_rqst_ctxlst m2tooldatarqstctxl_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_dataprivacy_rqst_ctxlst
+    ADD CONSTRAINT m2tooldatarqstctxl_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2tool_mfa m2toolmfa_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_mfa
+    ADD CONSTRAINT m2toolmfa_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2tool_mfa_auth m2toolmfaauth_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_mfa_auth
+    ADD CONSTRAINT m2toolmfaauth_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2tool_mfa_secrets m2toolmfasecr_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_mfa_secrets
+    ADD CONSTRAINT m2toolmfasecr_id_pk PRIMARY KEY (id);
 
 
 --
@@ -56231,6 +63017,14 @@ ALTER TABLE ONLY public.m2workshop_submissions
 
 
 --
+-- Name: m2xapi_states m2xapistat_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2xapi_states
+    ADD CONSTRAINT m2xapistat_id_pk PRIMARY KEY (id);
+
+
+--
 -- Name: m2admiapp_adm_ix; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -56291,6 +63085,34 @@ CREATE INDEX m2admiita_ite_ix ON public.m2adminpresets_it_a USING btree (itemid)
 --
 
 CREATE INDEX m2admiplug_adm_ix ON public.m2adminpresets_plug USING btree (adminpresetid);
+
+
+--
+-- Name: m2aiactiregi_actact_uix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX m2aiactiregi_actact_uix ON public.m2ai_action_register USING btree (actionname, actionid);
+
+
+--
+-- Name: m2aiactiregi_actpro_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2aiactiregi_actpro_ix ON public.m2ai_action_register USING btree (actionname, provider);
+
+
+--
+-- Name: m2aiactiregi_use_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2aiactiregi_use_ix ON public.m2ai_action_register USING btree (userid);
+
+
+--
+-- Name: m2aipoliregi_use_uix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX m2aipoliregi_use_uix ON public.m2ai_policy_register USING btree (userid);
 
 
 --
@@ -56445,13 +63267,6 @@ CREATE INDEX m2analusedfile_mod_ix ON public.m2analytics_used_files USING btree 
 --
 
 CREATE INDEX m2analusedfile_modactfil_ix ON public.m2analytics_used_files USING btree (modelid, action, fileid);
-
-
---
--- Name: m2assi_cou2_ix; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX m2assi_cou2_ix ON public.m2assignment USING btree (course);
 
 
 --
@@ -56665,13 +63480,6 @@ CREATE INDEX m2assisnap_sub_ix ON public.m2assignsubmission_snap USING btree (su
 
 
 --
--- Name: m2assisubm_ass2_ix; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX m2assisubm_ass2_ix ON public.m2assignment_submissions USING btree (assignment);
-
-
---
 -- Name: m2assisubm_ass_ix; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -56700,45 +63508,10 @@ CREATE INDEX m2assisubm_att_ix ON public.m2assign_submission USING btree (attemp
 
 
 --
--- Name: m2assisubm_mai_ix; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX m2assisubm_mai_ix ON public.m2assignment_submissions USING btree (mailed);
-
-
---
--- Name: m2assisubm_tim_ix; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX m2assisubm_tim_ix ON public.m2assignment_submissions USING btree (timemarked);
-
-
---
--- Name: m2assisubm_use2_ix; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX m2assisubm_use2_ix ON public.m2assignment_submissions USING btree (userid);
-
-
---
 -- Name: m2assisubm_use_ix; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX m2assisubm_use_ix ON public.m2assign_submission USING btree (userid);
-
-
---
--- Name: m2assiupgr_old2_ix; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX m2assiupgr_old2_ix ON public.m2assignment_upgrade USING btree (oldinstance);
-
-
---
--- Name: m2assiupgr_old_ix; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX m2assiupgr_old_ix ON public.m2assignment_upgrade USING btree (oldcmid);
 
 
 --
@@ -57246,6 +64019,13 @@ CREATE INDEX m2bigblogs_cou_ix ON public.m2bigbluebuttonbn_logs USING btree (cou
 
 
 --
+-- Name: m2bigblogs_coubig_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2bigblogs_coubig_ix ON public.m2bigbluebuttonbn_logs USING btree (courseid, bigbluebuttonbnid);
+
+
+--
 -- Name: m2bigblogs_coubiguselog_ix; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -57306,6 +64086,76 @@ CREATE UNIQUE INDEX m2bigdprof_nam_uix ON public.m2bigdata_profiles USING btree 
 --
 
 CREATE UNIQUE INDEX m2bloc_nam_uix ON public.m2block USING btree (name);
+
+
+--
+-- Name: m2bloccompprog_blo_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2bloccompprog_blo_ix ON public.m2block_completion_progress USING btree (blockinstanceid);
+
+
+--
+-- Name: m2bloccompprog_use_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2bloccompprog_use_ix ON public.m2block_completion_progress USING btree (userid);
+
+
+--
+-- Name: m2blocgradme_cou2_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2blocgradme_cou2_ix ON public.m2block_grade_me USING btree (coursemoduleid);
+
+
+--
+-- Name: m2blocgradme_cou_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2blocgradme_cou_ix ON public.m2block_grade_me USING btree (courseid);
+
+
+--
+-- Name: m2blocgradme_couite_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2blocgradme_couite_ix ON public.m2block_grade_me USING btree (courseid, itemmodule);
+
+
+--
+-- Name: m2blocgradme_id3_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2blocgradme_id3_ix ON public.m2block_grade_me USING btree (id);
+
+
+--
+-- Name: m2blocgradme_ite2_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2blocgradme_ite2_ix ON public.m2block_grade_me USING btree (itemmodule);
+
+
+--
+-- Name: m2blocgradme_ite3_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2blocgradme_ite3_ix ON public.m2block_grade_me USING btree (iteminstance);
+
+
+--
+-- Name: m2blocgradme_ite_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2blocgradme_ite_ix ON public.m2block_grade_me USING btree (itemsortorder);
+
+
+--
+-- Name: m2blocinst_blo_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2blocinst_blo_ix ON public.m2block_instances USING btree (blockname);
 
 
 --
@@ -57624,6 +64474,13 @@ CREATE INDEX m2cohomemb_use_ix ON public.m2cohort_members USING btree (userid);
 
 
 --
+-- Name: m2comm_con_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2comm_con_ix ON public.m2communication USING btree (contextid);
+
+
+--
 -- Name: m2comm_concomite_ix; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -57635,6 +64492,27 @@ CREATE INDEX m2comm_concomite_ix ON public.m2comments USING btree (contextid, co
 --
 
 CREATE INDEX m2comm_use_ix ON public.m2comments USING btree (userid);
+
+
+--
+-- Name: m2commcust_com_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2commcust_com_ix ON public.m2communication_customlink USING btree (commid);
+
+
+--
+-- Name: m2commuser_com_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2commuser_com_ix ON public.m2communication_user USING btree (commid);
+
+
+--
+-- Name: m2commuser_use_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2commuser_use_ix ON public.m2communication_user USING btree (userid);
 
 
 --
@@ -58363,6 +65241,13 @@ CREATE INDEX m2courpubl_hub_ix ON public.m2course_published USING btree (hubcour
 --
 
 CREATE INDEX m2courrequ_sho_ix ON public.m2course_request USING btree (shortname);
+
+
+--
+-- Name: m2coursect_comite_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2coursect_comite_ix ON public.m2course_sections USING btree (component, itemid);
 
 
 --
@@ -59273,6 +66158,27 @@ CREATE UNIQUE INDEX m2filtwiriform_md5_uix ON public.m2filter_wiris_formulas USI
 --
 
 CREATE INDEX m2fold_cou_ix ON public.m2folder USING btree (course);
+
+
+--
+-- Name: m2formtiletileopti_cou_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2formtiletileopti_cou_ix ON public.m2format_tiles_tile_options USING btree (courseid);
+
+
+--
+-- Name: m2formtiletileopti_coueleo_uix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX m2formtiletileopti_coueleo_uix ON public.m2format_tiles_tile_options USING btree (courseid, elementid, optiontype);
+
+
+--
+-- Name: m2formtiletileopti_eleopt_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2formtiletileopti_eleopt_ix ON public.m2format_tiles_tile_options USING btree (elementid, optiontype);
 
 
 --
@@ -60781,6 +67687,20 @@ CREATE INDEX m2ltiaccetoke_typ_ix ON public.m2lti_access_tokens USING btree (typ
 
 
 --
+-- Name: m2lticour_cou_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2lticour_cou_ix ON public.m2lti_coursevisible USING btree (courseid);
+
+
+--
+-- Name: m2lticour_typ_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2lticour_typ_ix ON public.m2lti_coursevisible USING btree (typeid);
+
+
+--
 -- Name: m2ltisgrad_gracou_ix; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -60858,10 +67778,31 @@ CREATE INDEX m2ltitype_too_ix ON public.m2lti_types USING btree (tooldomain);
 
 
 --
+-- Name: m2ltitypecate_cat_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2ltitypecate_cat_ix ON public.m2lti_types_categories USING btree (categoryid);
+
+
+--
+-- Name: m2ltitypecate_typ_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2ltitypecate_typ_ix ON public.m2lti_types_categories USING btree (typeid);
+
+
+--
 -- Name: m2ltitypeconf_typ_ix; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX m2ltitypeconf_typ_ix ON public.m2lti_types_config USING btree (typeid);
+
+
+--
+-- Name: m2matrroom_com_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2matrroom_com_ix ON public.m2matrix_room USING btree (commid);
 
 
 --
@@ -61268,6 +68209,20 @@ CREATE INDEX m2modu_nam_ix ON public.m2modules USING btree (name);
 --
 
 CREATE INDEX m2mypage_usepri_ix ON public.m2my_pages USING btree (userid, private);
+
+
+--
+-- Name: m2noti_tim2_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2noti_tim2_ix ON public.m2notifications USING btree (timeread);
+
+
+--
+-- Name: m2noti_tim_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2noti_tim_ix ON public.m2notifications USING btree (timecreated);
 
 
 --
@@ -61901,6 +68856,34 @@ CREATE INDEX m2quescate_par_ix ON public.m2question_categories USING btree (pare
 
 
 --
+-- Name: m2quescodeopti_cod_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2quescodeopti_cod_ix ON public.m2question_coderunner_options USING btree (coderunnertype);
+
+
+--
+-- Name: m2quescodeopti_pro_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2quescodeopti_pro_ix ON public.m2question_coderunner_options USING btree (prototypetype);
+
+
+--
+-- Name: m2quescodeopti_que_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2quescodeopti_que_ix ON public.m2question_coderunner_options USING btree (questionid);
+
+
+--
+-- Name: m2quescodetest_que_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2quescodetest_que_ix ON public.m2question_coderunner_tests USING btree (questionid);
+
+
+--
 -- Name: m2quesdata_dat_ix; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -62272,6 +69255,20 @@ CREATE INDEX m2quizgrad_use_ix ON public.m2quiz_grades USING btree (userid);
 
 
 --
+-- Name: m2quizgraditem_qui_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2quizgraditem_qui_ix ON public.m2quiz_grade_items USING btree (quizid);
+
+
+--
+-- Name: m2quizgraditem_quisor_uix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX m2quizgraditem_quisor_uix ON public.m2quiz_grade_items USING btree (quizid, sortorder);
+
+
+--
 -- Name: m2quizover_gro_ix; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -62353,6 +69350,13 @@ CREATE INDEX m2quizsect_qui_ix ON public.m2quiz_sections USING btree (quizid);
 --
 
 CREATE UNIQUE INDEX m2quizsect_quifir_uix ON public.m2quiz_sections USING btree (quizid, firstslot);
+
+
+--
+-- Name: m2quizslot_qui2_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2quizslot_qui2_ix ON public.m2quiz_slots USING btree (quizgradeitemid);
 
 
 --
@@ -62521,6 +69525,13 @@ CREATE INDEX m2repocolu_use_ix ON public.m2reportbuilder_column USING btree (use
 --
 
 CREATE INDEX m2repofilt_rep_ix ON public.m2reportbuilder_filter USING btree (reportid);
+
+
+--
+-- Name: m2repofilt_repuniisc_uix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX m2repofilt_repuniisc_uix ON public.m2reportbuilder_filter USING btree (reportid, uniqueidentifier, iscondition);
 
 
 --
@@ -62923,6 +69934,27 @@ CREATE INDEX m2scoraiccsess_use_ix ON public.m2scorm_aicc_session USING btree (u
 
 
 --
+-- Name: m2scoratte_sco_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2scoratte_sco_ix ON public.m2scorm_attempt USING btree (scormid);
+
+
+--
+-- Name: m2scoratte_use_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2scoratte_use_ix ON public.m2scorm_attempt USING btree (userid);
+
+
+--
+-- Name: m2scorelem_ele_uix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX m2scorelem_ele_uix ON public.m2scorm_element USING btree (element);
+
+
+--
 -- Name: m2scorscoe_sco_ix; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -62937,31 +69969,24 @@ CREATE INDEX m2scorscoedata_sco_ix ON public.m2scorm_scoes_data USING btree (sco
 
 
 --
--- Name: m2scorscoetrac_sco2_ix; Type: INDEX; Schema: public; Owner: -
+-- Name: m2scorscoevalu_att_ix; Type: INDEX; Schema: public; Owner: -
 --
 
-CREATE INDEX m2scorscoetrac_sco2_ix ON public.m2scorm_scoes_track USING btree (scoid);
-
-
---
--- Name: m2scorscoetrac_sco_ix; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX m2scorscoetrac_sco_ix ON public.m2scorm_scoes_track USING btree (scormid);
+CREATE INDEX m2scorscoevalu_att_ix ON public.m2scorm_scoes_value USING btree (attemptid);
 
 
 --
--- Name: m2scorscoetrac_use_ix; Type: INDEX; Schema: public; Owner: -
+-- Name: m2scorscoevalu_ele_ix; Type: INDEX; Schema: public; Owner: -
 --
 
-CREATE INDEX m2scorscoetrac_use_ix ON public.m2scorm_scoes_track USING btree (userid);
+CREATE INDEX m2scorscoevalu_ele_ix ON public.m2scorm_scoes_value USING btree (elementid);
 
 
 --
--- Name: m2scorscoetrac_usescoscoat_uix; Type: INDEX; Schema: public; Owner: -
+-- Name: m2scorscoevalu_sco_ix; Type: INDEX; Schema: public; Owner: -
 --
 
-CREATE UNIQUE INDEX m2scorscoetrac_usescoscoat_uix ON public.m2scorm_scoes_track USING btree (userid, scormid, scoid, attempt, element);
+CREATE INDEX m2scorscoevalu_sco_ix ON public.m2scorm_scoes_value USING btree (scoid);
 
 
 --
@@ -63182,6 +70207,13 @@ CREATE INDEX m2sess_use_ix ON public.m2sessions USING btree (userid);
 
 
 --
+-- Name: m2smsmess_gat_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2smsmess_gat_ix ON public.m2sms_messages USING btree (gatewayid);
+
+
+--
 -- Name: m2statdail_cou_ix; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -63326,6 +70358,20 @@ CREATE INDEX m2statweek_rol_ix ON public.m2stats_weekly USING btree (roleid);
 --
 
 CREATE INDEX m2statweek_tim_ix ON public.m2stats_weekly USING btree (timeend);
+
+
+--
+-- Name: m2storprog_idn_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2storprog_idn_ix ON public.m2stored_progress USING btree (idnumber);
+
+
+--
+-- Name: m2subs_cou_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2subs_cou_ix ON public.m2subsection USING btree (course);
 
 
 --
@@ -63770,6 +70816,13 @@ CREATE INDEX m2tooldatactxl_pur_ix ON public.m2tool_dataprivacy_ctxlevel USING b
 
 
 --
+-- Name: m2tooldatactxlctx_con_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2tooldatactxlctx_con_ix ON public.m2tool_dataprivacy_ctxlst_ctx USING btree (contextlistid);
+
+
+--
 -- Name: m2tooldatapurp_pur_ix; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -63823,6 +70876,76 @@ CREATE INDEX m2tooldatarequ_use2_ix ON public.m2tool_dataprivacy_request USING b
 --
 
 CREATE INDEX m2tooldatarequ_use_ix ON public.m2tool_dataprivacy_request USING btree (userid);
+
+
+--
+-- Name: m2tooldatarqstctxl_con_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2tooldatarqstctxl_con_ix ON public.m2tool_dataprivacy_rqst_ctxlst USING btree (contextlistid);
+
+
+--
+-- Name: m2tooldatarqstctxl_req_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2tooldatarqstctxl_req_ix ON public.m2tool_dataprivacy_rqst_ctxlst USING btree (requestid);
+
+
+--
+-- Name: m2tooldatarqstctxl_reqcon_uix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX m2tooldatarqstctxl_reqcon_uix ON public.m2tool_dataprivacy_rqst_ctxlst USING btree (requestid, contextlistid);
+
+
+--
+-- Name: m2toolmfa_fac_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolmfa_fac_ix ON public.m2tool_mfa USING btree (factor);
+
+
+--
+-- Name: m2toolmfa_use_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolmfa_use_ix ON public.m2tool_mfa USING btree (userid);
+
+
+--
+-- Name: m2toolmfa_usefacloc_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolmfa_usefacloc_ix ON public.m2tool_mfa USING btree (userid, factor, lockcounter);
+
+
+--
+-- Name: m2toolmfaauth_use_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolmfaauth_use_ix ON public.m2tool_mfa_auth USING btree (userid);
+
+
+--
+-- Name: m2toolmfasecr_exp_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolmfasecr_exp_ix ON public.m2tool_mfa_secrets USING btree (expiry);
+
+
+--
+-- Name: m2toolmfasecr_fac_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolmfasecr_fac_ix ON public.m2tool_mfa_secrets USING btree (factor);
+
+
+--
+-- Name: m2toolmfasecr_use_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolmfasecr_use_ix ON public.m2tool_mfa_secrets USING btree (userid);
 
 
 --
@@ -64449,6 +71572,29 @@ CREATE INDEX m2worksubm_wor_ix ON public.m2workshop_submissions USING btree (wor
 
 
 --
+-- Name: m2xapistat_comite_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2xapistat_comite_ix ON public.m2xapi_states USING btree (component, itemid);
+
+
+--
+-- Name: m2xapistat_tim_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2xapistat_tim_ix ON public.m2xapi_states USING btree (timemodified);
+
+
+--
+-- Name: m2xapistat_use_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2xapistat_use_ix ON public.m2xapi_states USING btree (userid);
+
+
+--
 -- PostgreSQL database dump complete
 --
+
+\unrestrict zdrRMf3PmROIjxhCEAzhfjXeKxg9OZGkcpveLfafhyBRvVjp2okxEspaTsgOhXJ
 
