@@ -24,7 +24,7 @@ global $CFG;
 require_once($CFG->dirroot . '/question/engine/tests/helpers.php');
 require_once($CFG->dirroot . '/question/type/coderunner/tests/test.php');
 require_once($CFG->dirroot . '/question/type/coderunner/question.php');
-
+require_once($CFG->dirroot . '/question/type/coderunner/tests/walkthrough_testbase.php');
 
 /**
  * A walkthrough of a simple multilanguage question that asks for a program
@@ -37,13 +37,13 @@ require_once($CFG->dirroot . '/question/type/coderunner/question.php');
  * @copyright  2018 Richard Lobb, The University of Canterbury
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class walkthrough_multilang_test extends \qbehaviour_walkthrough_test_base {
+class walkthrough_multilang_test extends walkthrough_testbase {
     protected function setUp(): void {
         parent::setUp();
         \qtype_coderunner_testcase::setup_test_sandbox_configuration();
     }
 
-    public function test_echostdin() {
+    public function test_echostdin(): void {
 
         $answers = [
             'python3' => "try:\n    while 1:\n        print(input())\n\nexcept:\n    pass\n",

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addlabel'] = 'Afegir una etiqueta';
+$string['addlabel'] = 'Afegeix una etiqueta nova';
 $string['approvalpending'] = 'Aprovació pendent';
 $string['approve'] = 'Aprovar';
 $string['approvemode'] = 'Mode d\'aprovació';

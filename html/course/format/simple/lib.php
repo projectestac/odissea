@@ -17,14 +17,11 @@
 /**
  * This file contains main class for the course format Simple Topic
  *
- * @since     2.0
  * @package   format_simple
- * @copyright 2012-2014 UPCnet
- * @author Pau Ferrer Ocaña pau.ferrer-ocana@upcnet.es
- * @author Jaume Fernàndez Valiente jfern343@xtec.cat
- * @author Marc Espinosa Zamora marc.espinosa.zamora@upcnet.es
- * @author Israel Forés Monzó israel.fores@ithinkupc.com
- * @author Toni Ginard toni.ginard@ithinkupc.com
+ * @copyright 2012 onwards UPCnet / IThinkUPC
+ * @author    Pau Ferrer Ocaña pau.ferrer-ocana@upcnet.es
+ * @author    Israel Forés Monzó israel.fores@ithinkupc.com
+ * @author    Toni Ginard toni.ginard@ithinkupc.com
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -36,37 +33,50 @@ require_once $CFG->dirroot . '/course/format/topics/lib.php';
 use format_simple\output\renderer as format_simple_renderer;
 
 /**
- * Main class for the Simple Topics course format
- *
- * @package    format_simple
- * @copyright  2012 UPCnet
- * @author Pau Ferrer Ocaña pau.ferrer-ocana@upcnet.es, Jaume Fernàndez Valiente jfern343@xtec.cat
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * Main class for the Simple Topics course format.
  */
-class format_simple extends core_courseformat\base {
-
+class format_simple extends core_courseformat\base
+{
     /**
      * Returns true if this course format uses sections.
      *
      * @return bool
      */
-    public function uses_sections(): bool {
-        return true;
-    }
-
-    public function uses_course_index(): bool {
+    public function uses_sections(): bool
+    {
         return true;
     }
 
     /**
-     * Returns the display name of the given section that the course prefers.
-     * Use section name is specified by user. Otherwise, use default ("Topic #").
+     * Returns true if this course format uses course index.
      *
-     * @param int|stdClass $section Section object from database or just field section.section
+     * @return bool
+     */
+    public function uses_course_index(): bool
+    {
+        return true;
+    }
+
+    /**
+     * Returns true if this course format uses indentation.
+     *
+     * @return bool
+     */
+    public function uses_indentation(): bool
+    {
+        return false;
+    }
+
+    /**
+     * Returns the display name of the given section that the course prefers.
+     *
+     * @param int|stdClass|section_info $section Section object from database or just field course_sections.section
+     * @throws coding_exception
      * @throws moodle_exception
      * @return string Display name that the course format prefers, e.g. "Topic 2"
      */
-    public function get_section_name($section): string {
+    public function get_section_name($section): string
+    {
         $section = $this->get_section($section);
 
         if ($section->name !== '') {
@@ -91,7 +101,8 @@ class format_simple extends core_courseformat\base {
      * @throws moodle_exception
      * @return string The default value for the section name.
      */
-    public function get_default_section_name($section): string {
+    public function get_default_section_name($section): string
+    {
         $section = $this->get_section($section);
 
         if ($section->sectionnum === 0) {
@@ -107,7 +118,8 @@ class format_simple extends core_courseformat\base {
      * @throws coding_exception
      * @return string the page title
      */
-    public function page_title(): string {
+    public function page_title(): string
+    {
         return get_string('sectionoutline');
     }
 
@@ -122,7 +134,8 @@ class format_simple extends core_courseformat\base {
      * @throws moodle_exception
      * @return moodle_url
      */
-    public function get_view_url($section, $options = []): moodle_url {
+    public function get_view_url($section, $options = []): moodle_url
+    {
         $course = $this->get_course();
 
         if (array_key_exists('sr', $options) && !is_null($options['sr'])) {
@@ -150,14 +163,21 @@ class format_simple extends core_courseformat\base {
      *
      * @return stdClass
      */
-    public function supports_ajax(): stdClass {
+    public function supports_ajax(): stdClass
+    {
         $ajaxsupport = new stdClass();
         $ajaxsupport->capable = true;
 
         return $ajaxsupport;
     }
 
-    public function supports_components(): bool {
+    /**
+     * Returns whether this format supports course components.
+     *
+     * @return bool
+     */
+    public function supports_components(): bool
+    {
         return true;
     }
 
@@ -170,7 +190,8 @@ class format_simple extends core_courseformat\base {
      * @throws moodle_exception
      * @return void
      */
-    public function extend_course_navigation($navigation, navigation_node $node): void {
+    public function extend_course_navigation($navigation, navigation_node $node): void
+    {
         global $PAGE;
 
         // If section is specified in course/view.php, make sure it is expanded in navigation.
@@ -189,8 +210,9 @@ class format_simple extends core_courseformat\base {
         // We want to remove the general section if it is empty.
         $modinfo = get_fast_modinfo($this->get_course());
         $sections = $modinfo->get_sections();
+
         if (!isset($sections[0])) {
-            // The general section is empty to find the navigation node for it we need to get its ID.
+            // The general section is empty. To find the navigation node for it, we need to get its ID.
             $section = $modinfo->get_section_info(0);
             $generalsection = $node->get($section->id, navigation_node::TYPE_SECTION);
             if ($generalsection) {
@@ -208,7 +230,8 @@ class format_simple extends core_courseformat\base {
      * @throws moodle_exception
      * @return array This will be passed in ajax response
      */
-    public function ajax_section_move(): array {
+    public function ajax_section_move(): array
+    {
         global $PAGE;
 
         $titles = [];
@@ -231,7 +254,8 @@ class format_simple extends core_courseformat\base {
      * @return array of default blocks, must contain two keys BLOCK_POS_LEFT and BLOCK_POS_RIGHT
      *     each of values is an array of block names (for left and right side columns)
      */
-    public function get_default_blocks(): array {
+    public function get_default_blocks(): array
+    {
         return [
             BLOCK_POS_LEFT => [],
             BLOCK_POS_RIGHT => [],
@@ -249,7 +273,8 @@ class format_simple extends core_courseformat\base {
      * @throws dml_exception|coding_exception
      * @return array of options
      */
-    public function course_format_options($foreditform = false) {
+    public function course_format_options($foreditform = false)
+    {
         static $courseformatoptions = false;
 
         if ($courseformatoptions === false) {
@@ -353,9 +378,182 @@ class format_simple extends core_courseformat\base {
         return $courseformatoptions;
     }
 
+    /**
+     * Adds format options elements to the course/section edit form.
+     *
+     * This function is called from {@link course_edit_form::definition_after_data()}.
+     *
+     * @param MoodleQuickForm $mform form the elements are added to.
+     * @param bool $forsection 'true' if this is a section edit form, 'false' if this is course edit form.
+     * @throws coding_exception
+     * @throws dml_exception
+     * @return array array of references to the added form elements.
+     */
+    public function create_edit_form_elements(&$mform, $forsection = false): array
+    {
+        global $COURSE;
+        $elements = parent::create_edit_form_elements($mform, $forsection);
+
+        if (!$forsection && (empty($COURSE->id) || $COURSE->id == SITEID)) {
+            // Add "numsections" element to the create course form - it will force new course to be prepopulated
+            // with empty sections.
+            // The "Number of sections" option is no longer available when editing course, instead teachers should
+            // delete and add sections when needed.
+            $courseconfig = get_config('moodlecourse');
+            $max = (int)$courseconfig->maxsections;
+            $element = $mform->addElement('select', 'numsections', get_string('numberweeks'), range(0, $max ?: 52));
+            $mform->setType('numsections', PARAM_INT);
+            if (is_null($mform->getElementValue('numsections'))) {
+                $mform->setDefault('numsections', $courseconfig->numsections);
+            }
+            array_unshift($elements, $element);
+        }
+
+        return $elements;
+    }
+
+    /**
+     * Updates format options for a course.
+     *
+     * In case of course format was changed to 'topics', we try to copy options
+     * 'coursedisplay' and 'hiddensections' from the previous format.
+     *
+     * @param stdClass|array $data return value from {@link moodleform::get_data()} or array with data
+     * @param null $oldcourse if this function is called from {@link update_course()}
+     *     this object contains information about the course before update
+     * @throws coding_exception
+     * @throws dml_exception
+     * @return bool whether there were any changes to the options values
+     */
+    public function update_course_format_options($data, $oldcourse = null): bool
+    {
+        $data = (array)$data;
+        if ($oldcourse !== null) {
+            $oldcourse = (array)$oldcourse;
+            $options = $this->course_format_options();
+            foreach ($options as $key => $unused) {
+                if (!array_key_exists($key, $data) && array_key_exists($key, $oldcourse)) {
+                    $data[$key] = $oldcourse[$key];
+                }
+            }
+        }
+        return $this->update_format_options($data);
+    }
+
+    /**
+     * Whether this format allows to delete sections.
+     *
+     * Do not call this function directly, instead use {@link course_can_delete_section()}
+     *
+     * @param int|stdClass|section_info $section
+     * @return bool
+     */
+    public function can_delete_section($section): bool
+    {
+        return true;
+    }
+
+    /**
+     * Indicates whether the course format supports the creation of a news forum.
+     *
+     * @return bool
+     */
+    public function supports_news(): bool
+    {
+        return true;
+    }
+
+    /**
+     * Returns whether this course format allows the activity to
+     * have "triple visibility state" - visible always, hidden on course page but available, hidden.
+     *
+     * @param stdClass|cm_info $cm course module (may be null if we are displaying a form for adding a module)
+     * @param stdClass|section_info $section section where this module is located or will be added to
+     * @return bool
+     */
+    public function allow_stealth_module_visibility($cm, $section): bool
+    {
+        // Allow the third visibility state inside visible sections or in section 0.
+        return !$section->section || $section->visible;
+    }
+
+    /**
+     * Callback used in WS core_course_edit_section when teacher performs an AJAX action on a section (show/hide).
+     *
+     * Access to the course is already validated in the WS but the callback has to make sure
+     * that particular action is allowed by checking capabilities
+     *
+     * Course formats should register.
+     *
+     * @param section_info|stdClass $section
+     * @param string $action
+     * @param int $sr
+     * @throws required_capability_exception
+     * @throws moodle_exception
+     * @return null|array any data for the Javascript post-processor (must be json-encodeable)
+     */
+    public function section_action($section, $action, $sr): ?array
+    {
+        global $PAGE;
+
+        if ($section->section && ($action === 'setmarker' || $action === 'removemarker')) {
+            // Format 'topics' allows to set and remove markers in addition to common section actions.
+            require_capability('moodle/course:setcurrentsection', context_course::instance($this->courseid));
+            course_set_marker($this->courseid, ($action === 'setmarker') ? $section->section : 0);
+            return null;
+        }
+
+        // For show/hide actions call the parent method and return the new content for .section_availability element.
+        $rv = parent::section_action($section, $action, $sr);
+        $renderer = $PAGE->get_renderer('format_simple');
+
+        if (!($section instanceof section_info)) {
+            $modinfo = course_modinfo::instance($this->courseid);
+            $section = $modinfo->get_section_info($section->section);
+        }
+        $elementclass = $this->get_output_classname('content\\section\\availability');
+        $availability = new $elementclass($this, $section);
+
+        $rv['section_availability'] = $renderer->render($availability);
+        return $rv;
+    }
+
+    /**
+     * Return the plugin configs for external functions.
+     *
+     * @throws dml_exception
+     * @return array the list of configuration settings
+     * @since Moodle 3.5
+     */
+    public function get_config_for_external(): array
+    {
+        // Return everything (nothing to hide).
+        $formatoptions = $this->get_format_options();
+        $formatoptions['indentation'] = get_config('format_topics', 'indentation');
+        return $formatoptions;
+    }
+
 }
 
-function format_simple_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload): bool {
+/**
+ * Serve the requested file for the format_simple plugin.
+ *
+ * @param stdClass $course the course object
+ * @param stdClass $cm the course module object
+ * @param stdClass $context the context
+ * @param string $filearea the name of the file area
+ * @param array $args extra arguments (itemid, path)
+ * @param bool $forcedownload whether force download
+ * @param array $options additional options affecting the file serving
+ *
+ * @throws coding_exception
+ * @throws moodle_exception
+ * @throws require_login_exception
+ *
+ * @return bool false if the file not found, just send the file otherwise and do not return anything
+ */
+function format_simple_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options): bool
+{
     if ($context->contextlevel !== CONTEXT_MODULE) {
         return false;
     }
@@ -364,7 +562,11 @@ function format_simple_pluginfile($course, $cm, $context, $filearea, $args, $for
         return false;
     }
 
-    array_shift($args); // ignore revision - designed to prevent caching problems only
+    // Make sure the user is logged in and has access to the module context.
+    require_login($course);
+
+    // The args is an array containing [itemid, path]. Remove itemid.
+    array_shift($args);
 
     $fs = get_file_storage();
     $relativepath = implode('/', $args);
@@ -372,12 +574,20 @@ function format_simple_pluginfile($course, $cm, $context, $filearea, $args, $for
     $file = $fs->get_file_by_hash(sha1($fullpath));
 
     // Finally, send the file.
-    send_stored_file($file, 86400, 0, false);
+    send_stored_file($file, 86400, 0, false, $options);
 
     return true;
 }
 
-function simple_get_current_icon($instanceid): stored_file|bool|null {
+/**
+ * Returns the current icon file for the course module.
+ *
+ * @param int $instanceid Id del course module
+ * @throws coding_exception
+ * @return stored_file|bool|null
+ */
+function simple_get_current_icon(int $instanceid): stored_file|bool|null
+{
     $context = context_module::instance($instanceid, IGNORE_MISSING);
 
     if ($context) {
@@ -395,7 +605,15 @@ function simple_get_current_icon($instanceid): stored_file|bool|null {
     return false;
 }
 
-function simple_get_current_icon_url($instanceid) {
+/**
+ * Returns the current icon URL for the course module.
+ *
+ * @param int $instanceid Id del course module
+ * @throws coding_exception
+ * @return string|bool
+ */
+function simple_get_current_icon_url(int $instanceid): bool|string
+{
     global $CFG;
 
     if ($file = simple_get_current_icon($instanceid)) {
@@ -406,15 +624,34 @@ function simple_get_current_icon_url($instanceid) {
     return false;
 }
 
-// Retorna la url de la icona
-function simple_get_icon_url($mod, $instanceid = false, $iconsize = format_simple_renderer::DEFAULTICONSIZE) {
+/**
+ * Returns the icon URL (Moodle default or custom icon) for the course module.
+ *
+ * @param cm_info|stdClass $mod Course
+ * @param bool|int $instanceid Id del course module
+ * @param int $iconsize Size of the icon
+ * @throws coding_exception
+ * @return moodle_url|bool|string
+ */
+function simple_get_icon_url(cm_info|stdClass $mod, bool|int $instanceid = false,
+                             int $iconsize = format_simple_renderer::DEFAULTICONSIZE): moodle_url|bool|string
+{
     if ($instanceid && $icon = simple_get_current_icon_url($instanceid)) {
         return $icon;
     }
     return simple_get_default_icon_url($mod, $iconsize);
 }
 
-function simple_get_default_icon_url($mod, $iconsize = format_simple_renderer::DEFAULTICONSIZE) {
+/**
+ * Returns the Moodle default icon URL for the course module.
+ *
+ * @param stdClass $mod Course
+ * @param int $iconsize Size of the icon
+ * @throws coding_exception
+ * @return moodle_url
+ */
+function simple_get_default_icon_url($mod, $iconsize = format_simple_renderer::DEFAULTICONSIZE): moodle_url
+{
     global $OUTPUT;
 
     // Support modules setting their own, external, icon image
@@ -425,7 +662,7 @@ function simple_get_default_icon_url($mod, $iconsize = format_simple_renderer::D
     $iconurl = $mod->get_icon_url();
 
     if ($mod->modname === 'resource') {
-        $resicon = explode('-', $iconurl->param('image'), 2);
+        $resicon = explode('-', $iconurl->param('image') ?? '', 2);
         if (isset($resicon[1]) && (int)$resicon[1] === 24) {
             $resicon[1] = $iconsize;
             $iconurl->param('image', implode('-', $resicon));
@@ -435,46 +672,65 @@ function simple_get_default_icon_url($mod, $iconsize = format_simple_renderer::D
     return $iconurl;
 }
 
-// Updates the selected imatge to the course module from the form
-function simple_update_module_image($data) {
-    if ($data->simple_image == 0 && (!isset($data->default_image) || $data->default_image == 'current')) {
-        // It's not necessary to change current image
+/**
+ * Updates the module image according to the form data.
+ *
+ * @param stdClass $data
+ * @throws coding_exception
+ * @throws file_exception
+ * @return void
+ */
+function simple_update_module_image(stdClass $data): void
+{
+    if ($data->simple_image === '0' && (!isset($data->default_image) || $data->default_image === 'current')) {
+        // It's not necessary to change current image.
         return;
     }
 
-    // First, try to erase current image if current is not selected
-    if ($data->simple_image == 0 && isset($data->default_image) && $data->default_image != 'current') {
+    // First, try to erase the current image if current is not selected.
+    if ($data->simple_image === '0' && isset($data->default_image) && $data->default_image !== 'current') {
         simple_delete_module_image($data->coursemodule);
     }
 
-    // Then copy the image selected to the module space
+    // Then copy the image selected to the module space.
     simple_add_module_image($data);
 }
 
-// Adds the selected imatge to the course module from the form
-function simple_add_module_image($data) {
+/**
+ * Adds the module image according to the form data.
+ *
+ * @param $data
+ * @throws coding_exception
+ * @throws file_exception
+ * @throws stored_file_creation_exception
+ * @return void
+ */
+function simple_add_module_image($data): void
+{
     global $CFG, $USER;
 
     $cmid = $data->coursemodule;
 
-    if ($data->simple_image == 0) {
+    // $data->simple_image === 0 means default image selected
+    // $data->simple_image === 1 means custom image uploaded
+    if ($data->simple_image === '0') {
         // Copy file if default is not selected
-        if ($data->default_image != 'default') {
+        if (isset($data->default_image)) {
             // Copy the file from $data->default_image
             $fs = get_file_storage();
             $context = context_module::instance($cmid);
-            $component = 'format_simple';
-            $filearea = 'bigicon';
-            // Prepare file record object
-            $fileinfo = array(
-                'contextid' => $context->id, // ID of context
-                'component' => $component,     // usually = table name
-                'filearea' => $filearea,     // usually = table name
-                'itemid' => 0,               // usually = ID of row in table
-                'filepath' => '/',           // any path beginning and ending in /
-                'userid' => $USER->id); // any filename
 
-            if (strpos($data->default_image, 'subject/') === 0) {
+            // Prepare file record object
+            $fileinfo = [
+                'contextid' => $context->id,
+                'component' => 'format_simple',
+                'filearea' => 'bigicon',
+                'itemid' => 0,
+                'filepath' => '/',
+                'userid' => $USER->id,
+                ];
+
+            if (str_starts_with($data->default_image, 'subject/')) {
                 $fileinfo['filename'] = $data->default_image;
                 $frompath = "$CFG->dirroot/course/format/simple/pix/" . $data->default_image;
                 $fs->create_file_from_pathname($fileinfo, $frompath);
@@ -491,25 +747,30 @@ function simple_add_module_image($data) {
         return;
     }
 
-    // Personalized image uploaded
-    $fs = get_file_storage();
+    // Custom image uploaded.
     $context = context_module::instance($cmid);
 
     $component = 'format_simple';
     $filearea = 'bigicon';
     $draftitemid = $data->simple_icon;
 
-    $fileoptions = array('subdirs' => false, 'maxfiles' => 1, 'accepted_types' => 'image');
+    $fileoptions = ['subdirs' => false, 'maxfiles' => 1, 'accepted_types' => 'image'];
     if ($draftitemid) {
         file_save_draft_area_files($draftitemid, $context->id, $component, $filearea, 0, $fileoptions);
     }
-    return;
 
 }
 
-// Deletes the selected imatge to the course module from the form
-function simple_delete_module_image($cmid, $context = false) {
-
+/**
+ * Deletes the selected imatge to the course module from the form.
+ *
+ * @param $cmid
+ * @param bool $context
+ * @throws coding_exception
+ * @return void
+ */
+function simple_delete_module_image($cmid, bool $context = false): void
+{
     if (!$context) {
         $context = context_module::instance($cmid, IGNORE_MISSING);
     }
@@ -518,7 +779,8 @@ function simple_delete_module_image($cmid, $context = false) {
         $fs = get_file_storage();
         $component = 'format_simple';
         $filearea = 'bigicon';
-        // Erase current image
+
+        // Delete current image.
         $files = $fs->get_area_files($context->id, $component, $filearea);
         foreach ($files as $file) {
             $file->delete();
@@ -526,19 +788,29 @@ function simple_delete_module_image($cmid, $context = false) {
     }
 }
 
-function simple_coursemodule_elements(&$mform, $mod) {
+/**
+ * Adds the form elements to select/upload the course module image. Called from
+ * course modedit formto add the image selection elements.
+ *
+ * @param MoodleQuickForm $mform
+ * @param stdClass $mod
+ * @throws coding_exception
+ * @throws dml_exception
+ * @return void
+ */
+function simple_coursemodule_elements(MoodleQuickForm $mform, stdClass $mod): void
+{
     global $CFG, $PAGE, $DB, $USER;
 
     $courseid = $mod->course;
 
     $mform->addElement('header', 'simple_iconhdr', get_string('icon', 'format_simple'));
 
-    $instanceid = $_GET['update'] ?? false;
+    $instanceid = optional_param('update', false, PARAM_INT);
 
-    $defaulticon = simple_get_default_icon_url($mod);
+    $defaulticon = simple_get_icon_url($mod);
     $currenticon = simple_get_current_icon_url($instanceid);
 
-    // Opcions de les icones a triar
     $iconoptions = [];
     $iconsurl = [];
     $iconshash = [];
@@ -592,6 +864,7 @@ function simple_coursemodule_elements(&$mform, $mod) {
         'filearea' => $filearea,
         'userid' => $USER->id,
     ];
+
     if (!empty($actcontexts)) {
         $contexts = implode(',', $actcontexts);
         $select = 'component = :component AND filearea = :filearea AND (contextid IN(' . $contexts . ') OR userid = :userid)';
@@ -636,7 +909,7 @@ function simple_coursemodule_elements(&$mform, $mod) {
 
     $separators = [
         0 => '<br/>',
-        1 => $currentimage . '<br/>'
+        1 => $currentimage . '<br/>',
     ];
 
     $mform->addGroup($imagearray, 'simple_image', '', $separators, false);
@@ -657,7 +930,7 @@ function simple_coursemodule_elements(&$mform, $mod) {
  * @throws dml_exception
  * @return \core\output\inplace_editable
  */
-function format_simple_inplace_editable($itemtype, $itemid, $newvalue) {
+function simple_inplace_editable($itemtype, $itemid, $newvalue) {
     global $DB, $CFG;
     require_once $CFG->dirroot . '/course/lib.php';
 

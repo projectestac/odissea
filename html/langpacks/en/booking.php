@@ -135,6 +135,7 @@ $string['approvalsettings_desc'] = 'Booking supports various confirmation proces
 $string['approvalworkflows'] = 'Approval workflows';
 $string['approvalworkflows_desc'] = 'Select one or more approval workflows. Depending on the selection, specific behaviors can be configured in the booking options.';
 $string['areyousure:book'] = 'Click again to confirm booking';
+$string['areyousure:bookconfirmation'] = 'Click again to confirm booking on waitinglist';
 $string['areyousure:cancel'] = 'Click again to confirm cancellation';
 $string['asglobaltemplate'] = 'Use as global template';
 $string['askforconfirmationheader'] = '<i class="fa fa-fw fa-lock" aria-hidden="true"></i>&nbsp;Demand confirmation';
@@ -565,6 +566,7 @@ $string['bookingoptionsall'] = 'Shortcode to show all bookingoptions.';
 $string['bookingoptionsfromtemplatemenu'] = 'New booking option from template';
 $string['bookingoptionsmenu'] = 'Booking options';
 $string['bookingoptiontitle'] = 'Booking option title';
+$string['bookingoptionuncompleted'] = 'Completion of booking option undone';
 $string['bookingoptionupdated'] = 'Booking option updated';
 $string['bookingoptionupdateddesc'] = 'User with id "{$a->userid}" updated bookingoption with id "{$a->objectid}".';
 $string['bookingoptionwaitinglistbooked'] = 'Booked on waitinglist';
@@ -704,9 +706,9 @@ $string['cacheturnoffforbookinganswers'] = 'Turn off caching of responses (user 
 $string['cacheturnoffforbookinganswers_desc'] = 'This setting significantly increases the load on the database. However, if there are massive problems with the cache configuration, this setting can still be advantageous.';
 $string['cacheturnoffforbookingsettings'] = 'Turn off caching of booking option settings';
 $string['cacheturnoffforbookingsettings_desc'] = 'This setting significantly increases the load on the database. However, if there are massive problems with the cache configuration, this setting can still be advantageous.';
-$string['caladdascourseevent'] = 'Add to calendar (visible only to course participants)';
+$string['caladdascourseevent'] = 'Add to calendar (visible only to participants of moodle course)';
 $string['caladdassiteevent'] = 'Add to calendar (visible to all users)';
-$string['caldonotadd'] = 'Do not add to course calendar';
+$string['caldonotadd'] = 'Do not add to calendar of moodle course';
 $string['caleventtype'] = 'Calendar event visibility';
 $string['callbackfunctionnotapplied'] = 'Callback function could not be applied.';
 $string['callbackfunctionnotdefined'] = 'Callback function is not defined.';
@@ -866,6 +868,7 @@ $string['completionchangedhistory'] = 'The completion status was changed from "{
 $string['completionmodule'] = 'Upon completion of the selected course activity, enable bulk deletion of user bookings';
 $string['completionmodule_help'] = 'Display bulk deletion button for booking answers, if another course module has been completed. The bookings of users will be deleted with a click of a button on the report page! Only activities with completion enabled can be selected from the list.';
 $string['completionoptioncompletedcminfo'] = 'Get marked as completed in at least {$a} booking options (by teacher, manager or admin).';
+$string['conditionselectresponsiblecontactinbo_desc'] = 'Select responsible contact(s) of the booking option.';
 $string['conditionselectstudentinbo_desc'] = 'Select all students of the booking option (affected by the rule) having a certain role.';
 $string['conditionselectstudentinboroles'] = 'Choose role';
 $string['conditionselectteacherinbo_desc'] = 'Select the teachers of the booking option (affected by the rule).';
@@ -967,9 +970,9 @@ $string['credits'] = 'Credits';
 $string['credits_help'] = 'The number of credits which will be used by booking this option.';
 $string['creditsmessage'] = 'You have {$a->creditsleft} of {$a->maxcredits} credits left.';
 $string['csvfile'] = 'CSV file';
+$string['currentcategory'] = 'Category of booking option';
 $string['custombulkmessagesent'] = 'Custom bulk message sent (> 75% of booked users, min. 3)';
 $string['customdatesbtn'] = '<i class="fa fa-plus-square"></i> Custom dates...';
-$string['customdownloadreport'] = 'Download report';
 $string['customfield'] = 'Custom field to be set in the booking option settings. It will then be shown in the booking option overview.';
 $string['customfieldchanged'] = 'Custom field changed';
 $string['customfieldconfigure'] = 'Booking: Custom booking option fields';
@@ -1020,8 +1023,6 @@ $string['customlabelsdeprecated'] = '[DEPRECATED] Custom labels';
 $string['custommessagesent'] = 'Custom message sent';
 $string['customprofilefield'] = 'Custom profile field to check';
 $string['customprofilefieldvalue'] = 'Custom profile field value to check';
-$string['customreporttemplate'] = 'Custom report template';
-$string['customreporttemplates'] = 'Custom report templates';
 $string['customuserprofilefield'] = 'Custom user profile field';
 $string['customuserprofilefield_help'] = 'If you choose a value here, the price part of the camapaign will only be valid for users with the defined value in the defined custom field.';
 $string['dashboardsummary'] = 'General';
@@ -1308,6 +1309,7 @@ $string['error:taskalreadystarted'] = 'You have already started a task!';
 $string['error:tousepriceinstallshoppingcart'] = 'You need to install shopping cart if you want users to buy something that has a price.';
 $string['error:wrongpagenumberforprebookingpage'] = 'Error: Wrong page number for pre-booking page.';
 $string['error:wrongteacherid'] = 'Error: No user could be found for the provided "teacherid".';
+$string['errorcreationofoptionwentwrong'] = 'Error creating option.';
 $string['errorduplicatepricecategoryidentifier'] = 'Price category identifiers need to be unique.';
 $string['errorduplicatepricecategoryname'] = 'Price category names need to be unique.';
 $string['errorduplicatepricecatsortorder'] = 'Price category sort order needs to be unique.';
@@ -1321,7 +1323,11 @@ $string['erroremptysemesteridentifier'] = 'Semester identifier is needed!';
 $string['erroremptysemestername'] = 'Semester name is not allowed to be empty';
 $string['errorholidayend'] = 'Holiday is not allowed to end before the start date.';
 $string['errorholidaystart'] = 'Holiday is not allowed to start after the end date.';
+$string['errorloadingtemplate'] = 'Error loading template.';
+$string['errorloadinguserdata'] = 'Error loading user data.';
 $string['errormultibooking'] = 'There was an ERROR when booking the electives.';
+$string['errornorighttoaccessthisform'] = 'You are not allowed to access this form.';
+$string['erroronsetdata'] = 'Error on set_data.';
 $string['erroroptiondateend'] = 'Date end needs to be after date start.';
 $string['erroroptiondatestart'] = 'Date start needs to be before date end.';
 $string['errorpagination'] = 'Please enter a number bigger than 0';
@@ -1330,6 +1336,7 @@ $string['errorpricecategoryidentifiermustbedefault'] = 'The identifier "default"
 $string['errorsemesterend'] = 'Semester end needs to be after semester start.';
 $string['errorsemesterstart'] = 'Semester start needs to be before semester end.';
 $string['errortoomanydecimals'] = 'Only 2 decimals are allowed.';
+$string['errorupdateofoptionwentwrong'] = 'Error updating option.';
 $string['errorusernotfound'] = 'Error: The organizer with ID "{$a}" could not be found.';
 $string['eventalreadyover'] = 'This event is already over.';
 $string['eventdesc:bookinganswercancelled'] = 'The user "{$a->user}" cancelled "{$a->relateduser}" from "{$a->title}".';
@@ -1372,8 +1379,11 @@ $string['fieldofstudyoptions'] = 'Shortcode to show all booking options of a fie
  They are defined by a common cohort sync enrolement & the booking availabilty condition of
  having to be inscribed in one of these courses.';
 $string['fillinatleastoneoption'] = 'You need to provide at least two possible answers.';
+$string['filteravailalbetobook'] = 'Available to book';
+$string['filterbookingavailability'] = 'Booking availability';
 $string['filterbtn'] = 'Filter';
 $string['filterenddate'] = 'Until';
+$string['filterfullybooked'] = 'Fully booked';
 $string['filterstartdate'] = 'From';
 $string['firstname'] = 'Firstname';
 $string['firstnamerelated'] = 'Firstname of the related person (like i.e. the user the booking was made for)';
@@ -1424,11 +1434,11 @@ $string['helptext:emailsettings'] = '<div class="alert alert-warning style="marg
 </div>';
 $string['helptext:placeholders'] = '<div class="alert alert-info" style="margin-left: 200px;">
 <a data-toggle="collapse" data-bs-toggle="collapse" href="#collapsePlaceholdersHelptext" role="button" aria-expanded="false" aria-controls="collapsePlaceholdersHelptext">
-  <i class="fa fa-question-circle" aria-hidden="true"></i><span>&nbsp;Placeholders you can use in your emails.</span>
+  <i class="fa fa-question-circle" aria-hidden="true"></i><span>&nbsp;Show {placeholders} you can use in your emails.</span>
 </a>
 </div>
 <div class="collapse" id="collapsePlaceholdersHelptext">
-  <div class="card card-body">
+  <div class="card card-body mb-3">
     {$a}
   </div>
 </div>';
@@ -1598,7 +1608,6 @@ Please make sure that there are existing e-mail templates in the booking setting
 $string['managebookedusers_heading'] = 'Manage bookings for <b>{$a->scopestring}</b>: "{$a->title}"';
 $string['managebooking'] = 'Manage';
 $string['managebookinginstancetemplates'] = 'Manage booking instance templates';
-$string['managecustomreporttemplates'] = 'Manage custom report templates';
 $string['manageoptiontemplates'] = 'Manage booking option templates';
 $string['manageresponses'] = 'Manage bookings';
 $string['manageresponsesdownloadfields'] = 'Manage responses - Download (CSV, XLSX...)';
@@ -1835,14 +1844,15 @@ $string['optionbookablebody'] = '{$a->title} is now available again. <a href="{$
 $string['optionbookabletitle'] = '{$a->title} is available again';
 $string['optiondate'] = 'Date';
 $string['optiondateend'] = 'End';
+$string['optiondatefromevent'] = 'If the event is related to a specific date, you can use this placeholder to show it.';
 $string['optiondates'] = 'Dates';
 $string['optiondatesmanager'] = 'Manage option dates';
 $string['optiondatesmessage'] = 'Session {$a->number}: {$a->date} <br> From: {$a->starttime} <br> To: {$a->endtime}';
 $string['optiondatessuccessfullydelete'] = 'Session time was deleted.';
 $string['optiondatessuccessfullysaved'] = 'Session time was saved.';
 $string['optiondatestart'] = 'Start';
-$string['optiondatesteacheradded'] = 'Substitution teacher was added';
-$string['optiondatesteacherdeleted'] = 'Teacher deleted from teaching journal';
+$string['optiondatesteacheradded'] = 'Teacher was added to specific option date';
+$string['optiondatesteacherdeleted'] = 'Teacher was deleted from specific option date';
 $string['optiondatesteachersreport'] = 'Substitutions / Cancelled dates';
 $string['optiondatesteachersreport_desc'] = 'This report gives an overview of which teacher was present at which specific date.<br>
 By default, every date will be filled in with the option\'s teacher. You can overwrite specific dates with replacement teachers.';
@@ -1946,6 +1956,7 @@ $string['pollurltextmessage'] = 'Please take the survey:
 Survey URL: <a href="{pollurl}" target="_blank">{pollurl}</a>';
 $string['pollurltextsubject'] = 'Please take the survey';
 $string['populatefromtemplate'] = 'Populate from template';
+$string['postprogressstring'] = '% completed';
 $string['potentialsubscribers'] = 'Potential subscribers';
 $string['prepareimport'] = 'Prepare Import';
 $string['presence'] = 'Presence';
@@ -2290,6 +2301,9 @@ $string['rulessettingsdesc'] = 'Settings that apply to the <a href="{$a}">Bookin
 $string['ruletemplatebookingoptioncompleted'] = 'Template - Bookingoption completed with poll';
 $string['ruletemplatebookingoptioncompletedbody'] = 'You have completed the following booking option:<br>{bookingdetails}<br> Please participate in the Poll. Poll link: {pollurl} <br>To the course: {courselink}<br>View all booking options: {bookinglink}';
 $string['ruletemplatebookingoptioncompletedsubject'] = 'Bookingoption completed';
+$string['ruletemplatebookingoptionuncompleted'] = 'Template - Bookingoption completion undone';
+$string['ruletemplatebookingoptionuncompletedbody'] = 'The completion of the following booking option has been undone:<br>{bookingdetails}';
+$string['ruletemplatebookingoptionuncompletedsubject'] = 'Completion undone';
 $string['ruletemplateconfirmbooking'] = 'Template - Confirm booking';
 $string['ruletemplateconfirmbookingbody'] = 'Dear {firstname} {lastname},<br>Thank you very much for your booking<br>{bookingdetails}<br>All the best!';
 $string['ruletemplateconfirmbookingsubject'] = 'You have successfully booked';
@@ -2366,6 +2380,7 @@ $string['selectoptionid'] = 'Please, select option!';
 $string['selectoptioninotherbooking'] = 'Option';
 $string['selectoptionsfirst'] = 'Please select booking options first.';
 $string['selectpresencestatus'] = 'Choose presence status';
+$string['selectresponsiblecontactinbo'] = 'Select contact(s) of a booking option';
 $string['selectstudentinbo'] = 'Select users of a booking option';
 $string['selectteacherinbo'] = 'Select teachers of a booking option';
 $string['selectteacherswithprofilefieldonly'] = 'Restrict trainer selection';
@@ -2701,7 +2716,7 @@ an educational unit in the plugin settings (e.g. 45 instead of 60 minutes).<br/>
 &gt;&gt; Go to plugin settings...
 </a>';
 $string['teamsmeeting'] = 'Teams meeting';
-$string['template'] = 'Templates';
+$string['template'] = 'Template';
 $string['templatecategoryname'] = 'Short name of the course category where the template courses are located.';
 $string['templatecategoryname_desc'] = 'Booking options can be linked to Moodle courses. This feature allows the courses to be created upon the first saving of the booking option.';
 $string['templatedeleted'] = 'Template was deleted!';

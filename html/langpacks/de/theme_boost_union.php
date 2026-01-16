@@ -238,6 +238,7 @@ $string['brandcolorsheading'] = 'Markenfarben';
 $string['breadcrumbsheading'] = 'Breadcrumb-Navigation';
 $string['cachedef_flavours'] = 'Variationen, die für eine bestimmte Seitenkategorie-ID der aktuellen Person gelten';
 $string['cachedef_fontawesomeicons'] = 'FontAwesome-Symbole';
+$string['cachedef_hooksuppress'] = 'Hook Unterdrückungen';
 $string['cachedef_smartmenu_items'] = 'Smartmenü-Element';
 $string['cachedef_smartmenus'] = 'Smartmenüs';
 $string['cachedef_touchiconsios'] = 'Dateien mit TouchIcons für iOS';
@@ -430,6 +431,7 @@ $string['enablebuiltinsnippets_desc'] = 'Mit dieser Einstellung können Sie die 
 $string['enablecontactsetting'] = 'Kontaktseite aktivieren';
 $string['enablefooterbutton'] = 'Fußbereich aktivieren';
 $string['enablefooterbutton_desc'] = 'Mit "Fußzeile" ist der Kreis mit dem Fragezeichen am Ende der Seite gemeint.<br />Beim Klicken wird ein Overlay angezeigt. Abhängig von der Website-Konfiguration zeigt Moodle mehrere Links (wie "Dokumentation für diese Seite" oder "Zusammenfassung der Datenaufbewahrung") in diesem Overlay an.<br />Mit dieser Einstellung können Sie steuern, ob die Taste "Fußzeile" am Ende der Seite angezeigt oder unterdrückt werden soll.';
+$string['enablefooterbutton_note'] = 'Achtung: Der Inhalt der <a href="{$a->url}">Moodle Core Einstellung additionalhtmlfooter</a> wird standardmäßig innerhalb des Footers angezeigt. Wenn Sie "Auf allen Geräten verbergen" auswählen, um den Footer komplett zu verbergen, würde der Inhalt von additionalhtmlfooter nirgends mehr angezeigt. Um diese Einschränkung zu umgehen, verschiebt Boost Union den Inhalt von additionalhtmlfooter ganz zum Ende der Seite.';
 $string['enablefooterbuttonboth'] = 'Für Desktop, Tablet und Smartphone aktivieren';
 $string['enablefooterbuttondesktop'] = 'Für Desktop und Tablet aktivieren, für Smartphone verbergen (unverändert, wie von Moodle Core dargestellt)';
 $string['enablefooterbuttonhidden'] = 'Auf allen Endgeräten verbergen';
@@ -574,6 +576,7 @@ $string['footersuppresspoweredsetting_desc'] = 'Mit dieser Einstellung können S
 $string['footersuppressservicessetting'] = 'Link "Dienste und Support" unterdrücken';
 $string['footersuppressservicessetting_desc'] = 'Mit dieser Einstellung können Sie den Link "Dienste und Support" in der Fußzeile unterdrücken. Andernfalls würde dieser Link Administratoren den <a href="{$a->url}">"Dienste und Support"-Link</a> anzeigen.';
 $string['footersuppressstandardfooter'] = 'Fußzeilenausgabe des Plugins \'{$a}\' unterdrücken';
+$string['footersuppressstandardfooter_configoverride_desc'] = 'Der Footer Output von Plugin \'{$a}\' wird bereits von <code>$CFG->hooks_callback_overrides</code> in Ihrer <code>config.php</code> unterdrückt. Um diese Einstellung konfigurierbar zu machen, müssen Sie die Überschreibung in <code>config.php</code> entfernen.';
 $string['footersuppressstandardfooter_desc'] = 'Mit dieser Einstellung können Sie die Fußzeilenausgabe durch das Plugin \'{$a}\' vollständig unterdrücken. Plugins (auch wenn sie mit Moodle Core ausgeliefert werden, aber technisch gesehen Plugins sind) können der Fußzeile zusätzlichen Inhalt hinzufügen, indem sie einen bestimmten Hook oder eine bestimmte Funktion implementieren. Dieses Plugin hat diese/n Funktion/Hook implementiert und kann unter bestimmten Umständen Inhalte zur Fußzeile hinzufügen.<br />Hinweis: Aufgrund der Implementierung kann es vorkommen, dass diese Einstellung erst nach dem zweiten erneuten Laden der Seite angewandt wird.';
 $string['footersuppressstandardfootercore'] = 'Fußzeilenausgabe durch die Core-Komponente \'{$a}\' unterdrücken';
 $string['footersuppressstandardfootercore_desc'] = 'Mit dieser Einstellung können Sie die Fußzeilenausgabe durch die Core-Komponente \'{$a}\' vollständig unterdrücken. Core-Komponenten können der Fußzeile zusätzliche Inhalte hinzufügen, indem ein bestimmter Haken oder eine bestimmte Funktion implementiert wird. Diese Core-Komponente hat diese Funktion implementiert und kann unter bestimmten Umständen Inhalte zur Fußzeile hinzufügen.';

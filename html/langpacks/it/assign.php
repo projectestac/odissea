@@ -109,7 +109,7 @@ $string['attemptnumber'] = 'Numero tentativo';
 $string['attemptreopenmethod'] = 'Tentativi aggiuntivi';
 $string['attemptreopenmethod_automatic'] = 'Automaticamente';
 $string['attemptreopenmethod_automatic_help'] = 'Dopo ogni tentativo, il successivo viene concesso automaticamente dopo la valutazione.';
-$string['attemptreopenmethod_help'] = 'Questa impostazione controlla il modo in cui agli studenti vengono concessi i tentativi . Per ogni tentativo, la valutazione e il feedback vengono salvati e possono essere visualizzati dal docente e dallo studente. Le opzioni disponibili sono:
+$string['attemptreopenmethod_help'] = 'Questa impostazione controlla il modo in cui agli studenti vengono concessi i tentativi. Per ogni tentativo, la valutazione e il feedback vengono salvati e possono essere visualizzati dal docente e dallo studente. Le opzioni disponibili sono:
 
 * Manualmente: dopo ogni tentativo, è possibile concedere quello successivo tramite la pagina Consegne o la pagina Valutazione.
 * Automaticamente: dopo ogni tentativo, viene concesso automaticamente il successivo.

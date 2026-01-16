@@ -161,6 +161,7 @@ $string['sessionover'] = 'sesiune încheiată';
 $string['sessions'] = 'Sesiuni';
 $string['sessionsoncoursepage'] = 'Sesiuni afișate pe pagina cursului';
 $string['sessionstartdate'] = 'Data începerii cursului';
+$string['sessionstartdateandtimewithouttimezone'] = '{$a->startdate}, {$a->starttime} - {$a->endtime}';
 $string['sessionstarttime'] = 'Data începerii cursului';
 $string['setting:addchangemanageremail_caption'] = 'Email-ul managerului';
 $string['setting:defaultcancellationinstrmngr'] = 'Mesaj implicit de anulare trimis managerilor.';

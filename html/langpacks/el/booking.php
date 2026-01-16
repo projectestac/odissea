@@ -218,7 +218,6 @@ $string['editrule'] = 'Επεξεργασία';
 $string['edittag'] = 'Επεξεργασία';
 $string['editteachers'] = 'Επεξεργασία';
 $string['editteacherslink'] = 'Επεξεργασία διδασκόντων';
-$string['enablecompletiongroup'] = 'Απαιτούνται καταχωρήσεις';
 $string['entervalidurl'] = 'Παρακαλούμε, δώστε μια έγκυρη διεύθυνση URL!';
 $string['errorpagination'] = 'Παρακαλούμε, δώστε έναν αριθμό μεγαλύτερο από 0';
 $string['eventduration'] = 'Διάρκεια γεγονότος';

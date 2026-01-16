@@ -553,4 +553,5 @@ $string['version_help'] = 'このバージョンフィールドはバッジ作�
 $string['viewbadge'] = '発行済みバッジを表示する';
 $string['visible'] = '表示';
 $string['warnexpired'] = '(このバッジの有効期限は切れています!)';
+$string['wrongrole'] = 'あなたが使用したいロールは割り当てられていません。';
 $string['year'] = '年';

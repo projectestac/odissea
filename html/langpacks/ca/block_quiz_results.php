@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Resultats del qüestionari (desactivat)';
-$string['quiz_results:addinstance'] = 'Afegir un bloc nou de resultats del qüestionari';
+$string['quiz_results:addinstance'] = 'Afegeix un bloc nou de resultats del qüestionari';

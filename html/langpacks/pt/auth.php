@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['actauthhdr'] = 'Módulos de autenticação disponíveis';
 $string['allowaccountssameemail'] = 'Contas de utilizador com o mesmo e-mail';
 $string['allowaccountssameemail_desc'] = 'Se ativar esta opção, o mesmo endereço de e-mail poderá ser utilizado em várias contas de utilizador. Esta ação poderá levantar alguns problemas de privacidade e de segurança em determinadas situações, como por exemplo, no envio de e-mails para alteração de senha.';
-$string['alternatelogin'] = 'Se inserir um URL, será utilizado como página de autenticação para este site. A página deverá conter um formulário que tenha a propriedade \'action\' definida para \'<strong>{$a}</strong>\' e os campos de retorno <strong>username</strong> e <strong>password</strong>.<br />Tenha cuidado para não inserir um URL incorreto porque pode bloquear a si mesmo o acesso a este site.<br />Deixe esta definição em branco para utilizar a página de autenticação predefinida do Moodle.';
+$string['alternatelogin'] = 'Se inserir um URL, será utilizado como página de autenticação para este site. A página deverá conter um formulário que tenha a propriedade \'action\' definida para \'<strong>{$a}</strong>\' e os campos de retorno <strong>username</strong> e <strong>password</strong>.<br />Tenha cuidado para não inserir um URL incorreto porque pode bloquear a si mesmo o acesso a este site.<br />Deixe em branco para utilizar a página de autenticação predefinida do Moodle.';
 $string['alternateloginurl'] = 'Endereço alternativo para autenticação';
 $string['auth_changepasswordhelp'] = 'Ajuda para alteraração de senha';
 $string['auth_changepasswordhelp_expl'] = 'Mostrar ajuda aos utilizadores que perderam a sua senha {$a}. Será mostrada também ou em vez de <strong>URL para alterar senha</strong> ou a mudança de senha interna do Moodle.';
@@ -45,7 +45,7 @@ $string['auth_fieldlocks_help'] = '<p>Pode bloquear campos de perfil dos utiliza
 $string['auth_fieldmapping'] = 'Mapeamento de dados ({$a})';
 $string['auth_invalidnewemailkey'] = 'Erro: se está a tentar confirmar uma alteração de e-mail, deve ter cometido um erro ao copiar o URL enviado no e-mail de confirmação. Por favor, copie novamente o URL e tente novamente.';
 $string['auth_loginpasswordtoggle'] = 'Alternar visibilidade da senha';
-$string['auth_loginpasswordtoggle_desc'] = 'Adicionar um ícone ao campo de senha na página de autenticação que permite aos utilizadores mostrar ou ocultar a senha inserida.';
+$string['auth_loginpasswordtoggle_desc'] = 'Adicionar um ícone ao campo da senha na página de autenticação que permite aos utilizadores mostrar ou ocultar a senha inserida.';
 $string['auth_loginrecaptcha'] = 'Ativar reCAPTCHA na autenticação';
 $string['auth_loginrecaptcha_desc'] = 'Adicionar um elemento de confirmação visual/áudio ao formulário da página de autenticação. Reduz o risco de tentativas de autenticação fraudulentas. Para mais detalhes, visite <a href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
 $string['auth_multiplehosts'] = 'Podem ser especificados vários servidores OU endereços (por exemplo, serv1.com;serv2.com;serv3.com OU xxx.xxx.xxx.xxx;yyy.yyy.yyy.yyy)';
@@ -79,7 +79,7 @@ $string['authloginviaemail_desc'] = 'Se ativar esta opção, será permitido que
 $string['auto_add_remote_users'] = 'Adicionar automaticamente utilizadores remotos';
 $string['cannotmapfield'] = 'O campo "{$a->fieldname}" não pode ser mapeado porque o nome curto "{$a->shortname}" é muito longo. Para ser possível o mapeamento, encurte o campo de perfil \'Nome curto\' para {$a->charlimit} caracteres. <a href="{$a->link}">Editar campos de perfil do utilizador</a>';
 $string['changepassword'] = 'Endereço para alteração de senha';
-$string['changepasswordhelp'] = 'Endereço URL da página de recuperação de senha que será enviado aos utilizadores por e-mail. Tenha em atenção que esta configuração não terá efeito caso um endereço URL de recuperação de senha esteja definido nas configurações comuns da autenticação.';
+$string['changepasswordhelp'] = 'Endereço URL da página de recuperação da senha que será enviado aos utilizadores por e-mail. Tenha em atenção que esta configuração não terá efeito caso um endereço URL de recuperação de senha esteja definido nas configurações comuns da autenticação.';
 $string['chooseauthmethod'] = 'Método de autenticação';
 $string['chooseauthmethod_help'] = 'Esta configuração determina o método de autenticação utilizado sempre que o utilizador se autentica. Deve selecionar unicamente métodos de autenticação ativos, caso contrário o utilizador não conseguirá autenticar-se. Para impedir um utilizador de se autenticar, selecione "Impedir autenticação".';
 $string['createpassword'] = 'Gerar senha e notificar o utilizador';
@@ -112,8 +112,8 @@ $string['eventuserloginfailed'] = 'Falhou a autenticação do utilizador';
 $string['forcechangepassword'] = 'Obrigar alteração da senha';
 $string['forcechangepassword_help'] = 'Obrigar os utilizadores a alterar a senha na sua próxima autenticação no Moodle.';
 $string['forcechangepasswordfirst_help'] = 'Obrigar os utilizadores a alterar a senha na sua primeira autenticação no Moodle.';
-$string['forgottenpassword'] = 'Se inserir um URL aqui, será usado neste site como página para recuperação de senha. Este campo foi criado para sites onde a totalidade das senhas é gerida externamente e não pelo Moodle. Deixe em branco se pretende usar a página de recuperação de senha predefinida do Moodle.';
-$string['forgottenpasswordurl'] = 'URL para recuperação de senha';
+$string['forgottenpassword'] = 'Se inserir um URL aqui, será usado neste site como página para recuperação dae senha. Este campo foi criado para sites onde a totalidade das senhas é gerida externamente e não pelo Moodle. Deixe em branco se pretende usar a página de recuperação de senha predefinida do Moodle.';
+$string['forgottenpasswordurl'] = 'URL para recuperação da senha';
 $string['getrecaptchaapi'] = 'Para usar o reCAPTCHA, tem de obter uma chave da API em <a href=\'https://www.google.com/recaptcha/admin\'>https://www.google.com/recaptcha/admin</a>';
 $string['guestloginbutton'] = 'Botão de entrada como visitante';
 $string['incorrectpleasetryagain'] = 'Incorreto. Por favor, tente novamente.';
@@ -162,7 +162,7 @@ $string['settingmigrationmismatch'] = 'Foram detetados valores incompatíveis ao
 $string['sha1'] = 'tabela hash SHA-1';
 $string['showguestlogin'] = 'Pode optar por ocultar ou mostrar o botão de entrada como visitante na página de autenticação.';
 $string['showloginform'] = 'Mostrar formulário de autenticação manual';
-$string['showloginform_desc'] = 'Se todos os utilizadores do site usarem um método de autenticação, tal como, OAuth2, que não exige a inserção do nome de utilizador e senha, pode ocultar o formulário de autenticação manual. Tenha em atenção que utilizadores com contas manuais não poderão autenticar-se.
+$string['showloginform_desc'] = 'Se todos os utilizadores do site usarem um método de autenticação, por exemplo, OAuth2, que não exige inserir o nome de utilizador e senha, pode ocultar o formulário de autenticação manual. Tenha em atenção que utilizadores com contas manuais não poderão autenticar-se.
 
 Se ocultar o formulário de autenticação manual e não conseguir autenticar-se, pode mostrar o formulário novamente através da linha de comando: php admin/cli/cfg.php --name=showloginform --set=1.';
 $string['stdchangepassword'] = 'Usar a página predefinida para alterar a senha';

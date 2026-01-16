@@ -30,4 +30,4 @@ $string['completecourse'] = 'Kurs beenden';
 $string['pluginname'] = 'Kurs abschließen';
 $string['privacy:metadata'] = 'Der Block \'Kurs abschließen\' zeigt nur Daten an, die an anderen Orten gespeichert sind.';
 $string['selfcompletion:addinstance'] = 'Neuen Block \'Kurs abschließen\' hinzufügen';
-$string['selfcompletionnotenabled'] = 'Die Selbstbestätigung des Abschlusses ist in diesem Kurs nicht aktiviert';
+$string['selfcompletionnotenabled'] = 'In diesem Kurs ist die Selbstbestätigung des Abschlusses nicht aktiviert';

@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addentry'] = 'Afegeix una entrada nova';
-$string['askaddentry'] = 'Quan els usuaris puguin afegir entrades al glossari, mostra amb un enllaç aquest text.';
+$string['askaddentry'] = 'Quan els usuaris puguin afegir entrades al glossari, mostra un enllaç amb aquest text';
 $string['askinvisible'] = 'Quan els usuaris no puguin editar o veure el glossari, mostra aquest text (sense enllaç).';
-$string['askviewglossary'] = 'Quan els usuaris puguin veure el glossari però no afegir entrades, mostra un enllaç amb aquest text.';
-$string['glossary_random:addinstance'] = 'Afegir un bloc nou d\'entrada de glossari aleatòri';
+$string['askviewglossary'] = 'Quan els usuaris puguin veure el glossari però no afegir-hi entrades, mostra un enllaç amb aquest text';
+$string['glossary_random:addinstance'] = 'Afegeix un bloc nou d\'entrada de glossari aleatori';
 $string['glossary_random:myaddinstance'] = 'Afegeix un bloc nou d\'entrada de glossari aleatori a la pàgina del Tauler.';
 $string['intro'] = 'Assegureu-vos de tenir almenys un glossari amb almenys una entrada per aquest curs. Llavors, podeu configurar els següents paràmetres';
 $string['invisible'] = '( continuarà )';

@@ -71,7 +71,6 @@ $string['cachedef_groupdata'] = 'معلومات مجموعة المادة';
 $string['cachedef_h5p_content_type_translations'] = 'ترجمات مكتبات نوع المحتوى لـ H5P';
 $string['cachedef_h5p_libraries'] = 'مكتبات H5P';
 $string['cachedef_h5p_library_files'] = 'ملفات مكتبة H5P';
-$string['cachedef_hookcallbacks'] = 'استدعاءات الوَصلة';
 $string['cachedef_htmlpurifier'] = 'HTML تنقية - تنظيف المحتوى';
 $string['cachedef_langmenu'] = 'قائمة اللغات المتاحة';
 $string['cachedef_license'] = 'قائمة التراخيص';

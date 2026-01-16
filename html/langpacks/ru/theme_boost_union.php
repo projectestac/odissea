@@ -237,7 +237,6 @@ $string['bootstrapwarningcolor'] = 'Цвет предупреждения';
 $string['brandcolorsheading'] = 'Фирменные цвета';
 $string['breadcrumbsheading'] = 'Навигационная цепочка';
 $string['cachedef_flavours'] = 'Стили, которые применяются к данному идентификатору категории страницы для текущего пользователя';
-$string['cachedef_hookoverrides'] = 'Переопределения хуков';
 $string['cachedef_smartmenu_items'] = 'Элементы умного меню';
 $string['cachedef_smartmenus'] = 'Умные меню';
 $string['cachedef_touchiconsios'] = 'Файлы сенсорных значков для iOS';

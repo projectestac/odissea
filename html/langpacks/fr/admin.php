@@ -1325,7 +1325,7 @@ $string['showuseridentity_desc'] = 'Lors de la recherche ou de la sélection d�
 Les champs marqués d’un * sont des champs de profil personnalisés. Vous pouvez les sélectionner, mais ils n’apparaîtront pas sur certaines pages.';
 $string['simplexmlrequired'] = 'L’installation de l’extension SimpleXML de PHP est maintenant requise par Moodle.';
 $string['sitemailcharset'] = 'Jeu de caractères';
-$string['sitemaintenance'] = 'Ce site est actuellement en maintenance. Il est donc temporairement non disponible';
+$string['sitemaintenance'] = 'Ce site est en cours de maintenance, et donc temporairement non disponible';
 $string['sitemaintenancemode'] = 'Mode de maintenance';
 $string['sitemaintenanceoff'] = 'Le mode de maintenance a été désactivé et le site fonctionne à nouveau normalement';
 $string['sitemaintenanceon'] = 'Votre site est actuellement en mode maintenance (seuls les administrateurs peuvent se connecter et utiliser le site).';

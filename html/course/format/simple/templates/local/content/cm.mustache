@@ -15,23 +15,63 @@
     along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
 {{!
-  Include the core content/section template.
+    @template core_courseformat/local/content/cm
+
+    Displays a course module instance inside a course section.
+
+    Example context (json):
+    {
+        "cmname": {
+            "displayvalue" : "<a class=\"aalink\" href=\"#\"><span class=\"instancename\">Activity example</span></a>"
+        },
+        "hasname": "true",
+        "afterlink": "<span class=\"badge bg-primary\">30 unread messages</span>",
+        "hasextras": true,
+        "extras": ["<span class=\"badge bg-secondary\">[extras]</span>"],
+        "activityinfo": {
+            "hasmodavailability": true,
+            "activityname": "Activity example",
+            "hascompletion": true,
+            "uservisible": true,
+            "hasdates": true,
+            "isautomatic": true,
+            "istrackeduser": true,
+            "activitydates": [
+                {
+                    "label": "Opens:",
+                    "datestring": "6 April 2021, 6:46 PM"
+                }
+            ],
+            "completiondetails": [
+                {
+                    "statuscomplete": 1,
+                    "description": "Viewed"
+                },
+                {
+                    "statusincomplete": 1,
+                    "description": "Receive a grade"
+                }
+            ]
+        },
+        "modstealth": true,
+        "indent": 1
+    }
 }}
-
-
 {{#editing}}
-    <div class="divider divider-plus bulk-hidden" data-action="insert-before-{{activityname}}">
-        {{> core_course/activitychooserbuttonactivity}}
-    </div>
+    {{< core_courseformat/local/content/divider}}
+        {{$content}}
+            {{#activitychooserbutton}}{{> core_course/activitychooserbutton}}{{/activitychooserbutton}}
+        {{/content}}
+    {{/ core_courseformat/local/content/divider}}
 {{/editing}}
-<div class="{{#modstealth}}hiddenactivity{{/modstealth}}{{!
+<div class="activity-item focus-control {{#modstealth}}hiddenactivity{{/modstealth}}{{!
         }}{{#modhiddenfromstudents}}hiddenactivity{{/modhiddenfromstudents}}{{!
-        }}{{#modinline}}activityinline{{/modinline}}" data-activityname="{{activityname}}">
-    {{! Code for Moodle 4.2 and above. Remove character ! in the three lines below to enable it. }}
-    {{!$ core_courseformat/local/content/cm/bulkselect }}
-        {{!> core_courseformat/local/content/cm/bulkselect }}
-    {{!/ core_courseformat/local/content/cm/bulkselect }}
-    {{! End of code for Moodle 4.2 and above. }}
+        }}{{#modinline}}activityinline{{/modinline}}" data-activityname="{{activityname}}" data-region="activity-card">
+    {{#cmbulk}}
+        {{$ core_courseformat/local/content/cm/bulkselect }}
+            {{> core_courseformat/local/content/cm/bulkselect }}
+        {{/ core_courseformat/local/content/cm/bulkselect }}
+    {{/cmbulk}}
     {{!
       Place the actual content of the activity-item in a separate template to make it easier for other formats to add
       additional content to the activity wrapper.
@@ -40,4 +80,3 @@
         {{> format_simple/local/content/cm/activity }}
     {{/ core_courseformat/local/content/cm/activity }}
 </div>
-

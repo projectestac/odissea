@@ -513,7 +513,9 @@ $string['missingitemtypeoreid'] = 'Dizi anahtarı (itemtype veya eid) eksik';
 $string['missingscale'] = 'Ölçek seçilmeli';
 $string['mode'] = 'Mod';
 $string['modgrade'] = 'Not';
-$string['modgrade_help'] = 'Bu etkinlik için kullanılan puanlama türünü seçin. "Ölçek" seçilirse, daha sonra "ölçek" açılır menüsünden ölçeği seçebilirsiniz. "Nokta" puanlamasını kullanıyorsanız, daha sonra bu etkinlik için mevcut olan en yüksek notu girebilirsiniz.';
+$string['modgrade_help'] = '* Puan - Sayısal bir değer
+* Yok - Sadece geri bildirim
+* Ölçek - Bir listeden bir öğe';
 $string['modgradecantchangegradetype'] = 'Türünü değiştiremezsiniz. Çünkü bu öge için zaten notlar mevcut.';
 $string['modgradecantchangegradetypemsg'] = 'Bazı notlar zaten verilmiş olması nedeniyle not tipi değiştirilemez. Eğer enyüksek notu değiştirmek isterseniz, öncelikle mevcut notları tekrar ölçeklendirip artırmamaya karar vermelisiniz.';
 $string['modgradecantchangegradetyporscalemsg'] = 'Bazı notlar zaten verilmiştir, bu nedenle not türü ve ölçeği değiştirilemez.';

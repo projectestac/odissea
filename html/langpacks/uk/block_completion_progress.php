@@ -83,7 +83,6 @@ $string['not_all_expected_set'] = 'Не для всіх заходів із за
 $string['now_indicator'] = 'ЗАРАЗ';
 $string['overview'] = 'Огляд учнів';
 $string['pluginname'] = 'Прогрес виконання';
-$string['privacy:metadata'] = 'Блок Прогресу виконання  відображає лише наявні дані про завершення.';
 $string['progress'] = 'Прогрес';
 $string['progressbar'] = 'Прогрес виконання';
 $string['selectitem'] = 'Виберіть "{$a}"';

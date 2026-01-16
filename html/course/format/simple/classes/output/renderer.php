@@ -18,10 +18,10 @@
  * Simple Format.
  *
  * @package   format_simple
- * @version   See the value of '$plugin->version' in version.php.
- * @copyright 2012-onwards UPCnet
- * @author    Pau Ferrer Ocaña pau.ferrer-ocana@upcnet.es, Jaume Fernàndez Valiente jfern343@xtec.cat,
- *            Marc Espinosa Zamora marc.espinosa.zamora@upcnet.es, Israel Forés Monzó israel.fores@ithinkupc.com
+ * @copyright 2012 onwards UPCnet / IThinkUPC
+ * @author    Pau Ferrer Ocaña pau.ferrer-ocana@upcnet.es
+ * @author    Israel Forés Monzó israel.fores@ithinkupc.com
+ * @author    Toni Ginard toni.ginard@ithinkupc.com
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -32,9 +32,6 @@ use moodle_page;
 
 /**
  * Basic renderer for simple format.
- *
- * @copyright 2012-onwards UPCnet
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class renderer extends section_renderer {
 

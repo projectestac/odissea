@@ -75,13 +75,13 @@ $string['rulecm'] = 'Activitat o recurs';
 $string['ruleset:all'] = 'TOTES les condicions són certes';
 $string['ruleset:any'] = 'QUALSEVOL de les condicions és certa';
 $string['ruleset:none'] = 'CAP de les condicions és certa';
-$string['rulesformhelp'] = '<p>Aquest connector fa ús dels esdeveniments per atribuir punts d\'experiència a les accions que fan els estudiants. Podeu usar el següent formulari per afegir les vostres pròpies regles i visualitzar les que hi ha per defecte.</p>
-<p>S\'aconsella comprovar el <a href="{$a->log}">registre</a> del connector per tal d\'identificar quins esdeveniments s\'activen a mesura que feu accions en el curs, així com llegir més sobre els esdeveniments mateixos: <a href="{$a->list}">llista de tots els esdeveniments</a>, <a href="{$a->doc}">documentació del desenvolupador</a>.</p>
-<p>Finalment, sapigueu que el connector ignora sempre:
+$string['rulesformhelp'] = '<p>Aquest connector fa ús dels esdeveniments per atribuir punts a les accions que fan els estudiants. Podeu usar el formulari següent per afegir les vostres pròpies regles i visualitzar les que hi ha per defecte.</p>
+<p>S\'aconsella comprovar el <a href="{$a->log}">registre</a> del connector per tal d\'identificar quins esdeveniments s\'activen a mesura que feu accions dins el curs, així com llegir més sobre els esdeveniments mateixos: <a href="{$a->list}">llista de tots els esdeveniments</a>, <a href="{$a->doc}">documentació del desenvolupador</a>.</p>
+<p>Per acabar, tingueu en compte que el connector ignora sempre:
 <ul>
   <li>Les accions que fan els administradors, convidats o usuaris que no han iniciat sessió.</li>
   <li>Les accions que fan els usuaris que no tenen la capacitat <em>block/xp:earnxp</em>.</li>
-  <li>Accions repetides dins un interval curt de temps, per tal d\'evitar la còpia.</li>
+  <li>Les accions repetides dins un interval curt de temps, per tal d\'evitar la còpia.</li>
   <li>Esdeveniments que estan senyalats com a <em>anònim</em>; p. ex., a una retroacció anònima.</li>
   <li>I els esdeveniments d\'un nivell educatiu diferent a <em>Participant</em>.</li>
 </ul>

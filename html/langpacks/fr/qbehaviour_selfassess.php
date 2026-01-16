@@ -32,5 +32,7 @@ $string['rated'] = 'Classé {$a} étoiles';
 $string['rateyourself'] = 'Évaluez votre réponse';
 $string['rateyourself_help'] = 'Compte tenu des conseils fournis dans les commentaires, comment évalueriez-vous la réponse que vous avez donnée à cette question ?';
 $string['saveandfeedback'] = 'Enregistrer';
+$string['selfassessed'] = '{$a->stars} étoiles auto-évaluées sans commentaire';
+$string['selfassessedwithcomment'] = '{$a->stars} étoiles auto-évaluées avec commentaire : {$a->comment}';
 $string['selfassessment'] = 'Auto-évaluation : {$a}';
 $string['selfcommented'] = 'Commenté : {$a->comment}';

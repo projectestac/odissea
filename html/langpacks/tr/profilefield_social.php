@@ -38,5 +38,5 @@ $string['privacy:metadata:profile_field_social:fieldid'] = 'Profil alanının ki
 $string['privacy:metadata:profile_field_social:tableexplanation'] = 'İlave profil verileri';
 $string['privacy:metadata:profile_field_social:userid'] = 'Verileri sosyal kullanıcı profil alanı tarafından saklanan kullanıcının kimliği';
 $string['skypeid'] = 'Skype ID';
-$string['webpage'] = 'Web sayfası';
+$string['webpage'] = 'Web sitesi';
 $string['yahooid'] = 'Yahoo ID';

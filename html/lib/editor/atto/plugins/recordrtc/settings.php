@@ -32,6 +32,12 @@ require_once($CFG->dirroot . '/lib/editor/atto/plugins/recordrtc/lib.php');
 $ADMIN->add('editoratto', new admin_category('atto_recordrtc', new lang_string('pluginname', 'atto_recordrtc')));
 
 if ($ADMIN->fulltree) {
+
+    // XTEC ************ AFEGIT - Only xtecadmin can set video in tiny_recordrtc.
+    // 2026.01.08 @aginard
+    if (get_protected_agora()) {
+    // ************ FI
+
     // Types allowed.
     $options = array(
         'both' => new lang_string('audioandvideo', 'atto_recordrtc'),
@@ -41,6 +47,19 @@ if ($ADMIN->fulltree) {
     $name = get_string('allowedtypes', 'atto_recordrtc');
     $desc = get_string('allowedtypes_desc', 'atto_recordrtc');
     $default = 'both';
+
+    // XTEC ************ AFEGIT - Only xtecadmin can set video in tiny_recordrtc.
+    // 2026.01.08 @aginard
+    } else {
+    $options = [
+        'audio' => new lang_string('onlyaudio', 'atto_recordrtc'),
+    ];
+    $name = get_string('allowedtypes', 'atto_recordrtc');
+    $desc = get_string('allowedtypes_desc', 'atto_recordrtc');
+    $default = 'audio';
+    }
+    // ************ FI
+
     $setting = new admin_setting_configselect('atto_recordrtc/allowedtypes', $name, $desc, $default, $options);
     $settings->add($setting);
 

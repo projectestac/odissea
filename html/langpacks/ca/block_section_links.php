@@ -36,4 +36,4 @@ $string['numsections1_help'] = 'Una vegada que el nombre de seccions del curs ar
 $string['numsections2'] = 'Nombre de seccions alternativament';
 $string['numsections2_help'] = 'Una vegada que el nombre de seccions del curs arriba a aquest valor s\'utilitza l\'increment per valor.';
 $string['pluginname'] = 'Enllaç a la secció';
-$string['section_links:addinstance'] = 'Afegir un bloc nou d\'enllaços a les seccions';
+$string['section_links:addinstance'] = 'Afegeix un bloc nou d\'enllaços a les seccions';

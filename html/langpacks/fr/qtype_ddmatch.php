@@ -33,3 +33,4 @@ $string['pluginname_link'] = 'question/type/ddmatch';
 $string['pluginnameadding'] = 'Ajout d’une question appariement par glisser-déposer';
 $string['pluginnameediting'] = 'Édition d’une question appariement par glisser-déposer';
 $string['pluginnamesummary'] = 'Une extension des questions appariement où l’utilisateur doit déplacer les réponses sur chaque sous question pour indiquer ses choix';
+$string['privacy:metadata'] = 'Le plugin de type question ddmatch n’enregistre aucune donnée personnelle.';

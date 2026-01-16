@@ -15,18 +15,18 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Version details
+ * Version details.
  *
- * @package    format
- * @subpackage simple
- * @copyright 2012-onwards UPCnet
- * @author Pau Ferrer Ocaña pau.ferrer-ocana@upcnet.es, Jaume Fernàndez Valiente jfern343@xtec.cat, 
- * Marc Espinosa Zamora marc.espinosa.zamora@upcnet.es, Israel Forés Monzó israel.fores@ithinkupc.com
+ * @package   format_simple
+ * @copyright 2012 onwards UPCnet / IThinkUPC
+ * @author    Pau Ferrer Ocaña pau.ferrer-ocana@upcnet.es
+ * @author    Israel Forés Monzó israel.fores@ithinkupc.com
+ * @author    Toni Ginard toni.ginard@ithinkupc.com
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2023060100;        // The current plugin version (Date: YYYYMMDDXX).
+$plugin->version   = 2025121800;        // The current plugin version (Date: YYYYMMDDXX).
 $plugin->requires  = 2022111800;        // Requires this Moodle version.
 $plugin->component = 'format_simple';   // Full name of the plugin (used for diagnostics).

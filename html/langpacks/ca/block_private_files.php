@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Fitxers privats';
-$string['private_files:addinstance'] = 'Afegir un bloc nou de fitxers privats';
+$string['private_files:addinstance'] = 'Afegeix un bloc de fitxers privats nou';
 $string['private_files:myaddinstance'] = 'Afegeix un bloc nou dels meus fitxers privats al Tauler';
 $string['privatefiles'] = 'Fitxers privats';

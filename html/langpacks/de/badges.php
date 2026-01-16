@@ -615,4 +615,5 @@ $string['version_help'] = 'Das Versionsfeld kann verwendet werden, um die Badge-
 $string['viewbadge'] = 'Verliehenen Badge anzeigen';
 $string['visible'] = 'Sichtbar';
 $string['warnexpired'] = '(Dieser Badge ist abgelaufen!)';
+$string['wrongrole'] = 'Die Rolle, die Sie verwenden möchten, ist Ihnen nicht zugewiesen.';
 $string['year'] = 'Jahr(e)';

@@ -1284,11 +1284,6 @@ class qtype_coderunner_edit_form extends question_edit_form {
             }
         }
 
-        $penaltyregimeerror = $this->validate_penalty_regime($data);
-        if ($penaltyregimeerror) {
-             $errors['markinggroup'] = $penaltyregimeerror;
-        }
-
         $resultcolumnsjson = trim($data['resultcolumns'] ?? '');
         if ($resultcolumnsjson !== '') {
             $resultcolumns = json_decode($resultcolumnsjson);
@@ -1322,6 +1317,15 @@ class qtype_coderunner_edit_form extends question_edit_form {
 
         if (count($errors) == 0 && $data['twigall']) {
             $errors = $this->validate_twigables();
+        }
+
+        if (count($errors) == 0) {
+            // Penalty regime is Twiggable, so we have postponed validating
+            // until after validate_twigables.
+            $penaltyregimeerror = $this->validate_penalty_regime($data);
+            if ($penaltyregimeerror) {
+                $errors['markinggroup'] = $penaltyregimeerror;
+            }
         }
 
         if (count($errors) == 0 && !empty($data['validateonsave'])) {
@@ -1461,6 +1465,16 @@ class qtype_coderunner_edit_form extends question_edit_form {
         $errorstring = '';
         $expectedpr = '/[0-9]+(\.[0-9]*)?%?([, ] *[0-9]+(\.[0-9]*)?%?)*([, ] *...)?/';
         $penaltyregime = trim($data['penaltyregime'] ?? '');
+
+        // If twigall on, we should Twig expand the penalty regime
+        // before attempting to validate it.
+        if ($penaltyregime && $data['twigall']) {
+            $question = $this->formquestion;
+            $jsonparams = $question->templateparamsevald;
+            $parameters = json_decode($jsonparams, true);
+            $penaltyregime = $this->twig_render($penaltyregime, $parameters, true);
+        }
+
         if ($penaltyregime == '') {
             $errorstring = get_string('emptypenaltyregime', 'qtype_coderunner');
         } else if (!preg_match($expectedpr, $penaltyregime)) {
@@ -1502,10 +1516,11 @@ class qtype_coderunner_edit_form extends question_edit_form {
         $question = $this->formquestion;
         $jsonparams = $question->templateparamsevald;
         $parameters = json_decode($jsonparams, true);
-        $parameters['QUESTION'] = $question;
+        $parameters['QUESTION'] = $question; // Shouldn't really include this but removing it might break existing questions.
 
         // Try twig expanding everything (see question::twig_all), with strict_variables true.
-        foreach (['questiontext', 'answer', 'answerpreload', 'globalextra', 'prototypeextra'] as $field) {
+        $twigablefields = qtype_coderunner::twigablefields();
+        foreach ($twigablefields as $field) {
             $text = $question->$field;
             if (is_array($text)) {
                 $text = $text['text'];
@@ -1715,8 +1730,9 @@ class qtype_coderunner_edit_form extends question_edit_form {
     // @return Rendered text.
     private function twig_render($text, $params = [], $isstrict = false) {
         global $USER;
-        $student = new qtype_coderunner_student($USER);
-        return qtype_coderunner_twig::render($text, $student, (array) $params, $isstrict);
+        $params['STUDENT'] = new qtype_coderunner_student($USER);
+        $params['QUIZ'] = new qtype_coderunner_quiz();
+        return qtype_coderunner_twig::render($text, $params, $isstrict);
     }
 
 

@@ -30,7 +30,6 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class restore_journal_activity_structure_step extends restore_activity_structure_step {
-
     /**
      * Define the structure of the backup
      *
@@ -55,10 +54,9 @@ class restore_journal_activity_structure_step extends restore_activity_structure
      * @return void
      */
     protected function process_journal($data) {
-
         global $DB;
 
-        $data = (Object)$data;
+        $data = (object) $data;
 
         unset($data->id);
 
@@ -76,10 +74,9 @@ class restore_journal_activity_structure_step extends restore_activity_structure
      * @return void
      */
     protected function process_journal_entry($data) {
-
         global $DB;
 
-        $data = (Object)$data;
+        $data = (object) $data;
 
         $oldid = $data->id;
         unset($data->id);
@@ -91,7 +88,7 @@ class restore_journal_activity_structure_step extends restore_activity_structure
         $data->teacher = $this->get_mappingid('user', $data->teacher);
 
         $newid = $DB->insert_record('journal_entries', $data);
-        $this->set_mapping('journal_entry', $oldid, $newid);
+        $this->set_mapping('journal_entry', $oldid, $newid, true);
     }
 
     /**
@@ -101,7 +98,7 @@ class restore_journal_activity_structure_step extends restore_activity_structure
      */
     protected function after_execute() {
         $this->add_related_files('mod_journal', 'intro', null);
-        $this->add_related_files('mod_journal_entries', 'text', 'journal_entry');
-        $this->add_related_files('mod_journal_entries', 'entrycomment', 'journal_entry');
+        $this->add_related_files('mod_journal', 'entry', 'journal_entry');
+        $this->add_related_files('mod_journal', 'feedback', 'journal_entry');
     }
 }

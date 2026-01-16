@@ -280,6 +280,7 @@ $string['sessions'] = 'Σύνοδοι';
 $string['sessionsoncoursepage'] = 'Σύνοδοι που εμφανίζονται στην σελίδα μαθήματος';
 $string['sessionsoncoursepage_help'] = 'Αυτός είναι ο αριθμός των συνόδων για κάθε δραστηριότητα Πρόσωπο-με-Πρόσωπο που θα εμφανιστεί στην κύρια σελίδα μαθήματος.';
 $string['sessionstartdate'] = 'Ημερομηνία έναρξης συνόδου';
+$string['sessionstartdateandtimewithouttimezone'] = '{$a->startdate}, {$a->starttime} - {$a->endtime}';
 $string['sessionstarttime'] = 'Ώρα έναρξης συνόδου';
 $string['sessionvenue'] = 'Τόπος συνόδου';
 $string['setting:addchangemanageremail'] = 'Ρωτήστε τους χρήστες για την διεύθυνση ηλε.ταχυδρομείου του διευθυντή τους';

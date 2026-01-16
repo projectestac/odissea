@@ -15,13 +15,38 @@
     along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
 {{!
-  Include the core content/section/cmitem template.
+    @template core_courseformat/local/content/section/cmitem
+
+    Displays the course module list inside a course section.
+
+    Example context (json):
+    {
+        "cmformat": {
+            "cmname": "<a class=\"aalink\" href=\"#\"><span class=\"instancename\">Activity example</span></a>",
+            "hasname": "true",
+            "moveicon": "<i>[Move]</i>",
+            "indent": 2,
+            "afterlink": "<span class=\"badge bg-primary\">30 unread messages</span>",
+            "hasextras": true,
+            "extras": ["<span class=\"badge bg-secondary\">[extras]</span>"],
+            "completion": "<span class=\"badge bg-success\">Completed!</span>"
+        },
+        "id": 3,
+        "anchor": "module-3",
+        "module": "forum",
+        "extraclasses": "newmessages",
+        "indent": 0
+    }
 }}
-{{< core_courseformat/local/content/section/cmitem }}
-    {{!
-        Add any cm item blocks override here.
-    }}
-    {{$ core_courseformat/local/content/cm}}
-        {{> format_simple/local/content/cm}}
-    {{/ core_courseformat/local/content/cm}}
-{{/ core_courseformat/local/content/section/cmitem }}
+<li
+    class="activity activity-wrapper {{module}} modtype_{{module}} {{extraclasses}} {{#hasinfo}}hasinfo{{/hasinfo}} {{#indent}}indented{{/indent}}"
+    id="{{anchor}}"
+    data-for="cmitem"
+    data-id="{{id}}"
+>
+    {{#cmformat}}
+        {{$ core_courseformat/local/content/cm}}
+            {{> format_simple/local/content/cm}}
+        {{/ core_courseformat/local/content/cm}}
+    {{/cmformat}}
+</li>

@@ -614,4 +614,5 @@ $string['version_help'] = 'The version field may be used to keep track of the ba
 $string['viewbadge'] = 'View issued badge';
 $string['visible'] = 'Visible';
 $string['warnexpired'] = '(This badge has expired!)';
+$string['wrongrole'] = 'The role you want to use is not assigned to you.';
 $string['year'] = 'Year(s)';

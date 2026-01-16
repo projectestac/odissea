@@ -367,7 +367,7 @@ $string['configproxytype'] = 'Web proxy tipi (SOCKS5 desteği için PHP5 ve cURL
 $string['configproxyuser'] = 'Gerektiğinde internete vekil sunucu üzerinden ulaşmak için kullanıcı adı gerekir, yoksa boştur (PHP cURL eklentisi gerekir).';
 $string['configrecaptchaprivatekey'] = 'Moodle sunucunuz ile recaptcha sunucusu arasında iletişim kurmak için kullanılan karakter dizisi (gizli anahtar). ReCAPTCHA anahtarları <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a>\'dan edinilebilir.';
 $string['configrecaptchapublickey'] = 'Kayıt ve site destek formunda reCAPTCHA öğesini görüntülemek için kullanılan karakter dizesi (site anahtarı). ReCAPTCHA anahtarları <a target="_blank" href="https://www.google.com/recaptcha"> Google reCAPTCHA </a> \'dan edinilebilir.';
-$string['configrequestedstudentname'] = 'İstek kurslariçin öğrenci kelimesi';
+$string['configrequestedstudentname'] = 'İstek kurslar için öğrenci kelimesi';
 $string['configrequestedstudentsname'] = 'İstek kurslar için öğrenciler kelimesi';
 $string['configrequestedteachername'] = 'Talep edilen kurslar için öğretmenler için kullanılan kelime';
 $string['configrequestedteachersname'] = 'Talep edilen kurslar için öğretmenler için kullanılan kelime';
@@ -640,7 +640,7 @@ $string['enroladminnewcourse_help'] = 'Bir yönetici yeni bir kurs eklediğinde,
 $string['enrolinstancedefaults'] = 'Kayıt olma örneği varsayılanları';
 $string['enrolinstancedefaults_desc'] = 'Yeni kurslar için varsayılan kayıt olma ayarları';
 $string['enrolmultipleusers'] = 'Kullanıcıları kayıtla';
-$string['ensureauroraversion'] = 'Siteniz Amazon Aurora veritabanı motorunda çalışıyor. Lütfen Amazon Aurora\'daki MySQL sürümünün, yüklediğiniz veya yükselttiğiniz Moodle sürümüyle uyumlu olduğundan emin olun. Uyumluluğu <a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.30Updates.html" target="_blank">Amazon Aurora MySQL sürüm 3 için veritabanı motoru güncellemeleri</a> bölümünden kontrol edebilirsiniz.';
+$string['ensureauroraversion'] = '"Siteniz Amazon Aurora veritabanı motorunda çalışıyor. Amazon Aurora\'daki MySQL sürümünün, yüklediğiniz veya yükselttiğiniz Moodle sürümü ile uyumlu olması gerekir. Uyumluluğu, Amazon Aurora MySQL sürüm 3 için Veritabanı motoru güncellemeleri sayfasında kontrol edin.';
 $string['entitytasklog'] = 'Görev günlüğü';
 $string['environment'] = 'Ortam';
 $string['environmenterrortodo'] = 'Bu Moodle sürümünü kurmaya başlamadan önce yukarıda bulunan bütün ortam sorunlarını (hatalarını) çözmeniz gerekiyor!';
@@ -718,6 +718,7 @@ $string['geoipmaxmindaccid_desc'] = 'MaxMind API hizmetinde oluşturulan hesabı
 $string['geoipmaxmindlicensekey'] = 'MaxMind lisans anahtarı';
 $string['geoipmaxmindlicensekey_desc'] = 'MaxMind API hizmetinde oluşturulan hesabın lisans anahtarı.';
 $string['geopluginapikey'] = 'GeoPlugin API anahtarı';
+$string['geopluginapikey_desc'] = 'GeoPlugin hizmetine erişmek için kullanılan API anahtarı. Anahtarınızı <a href="https://www.geoplugin.com/" target="_blank">geoplugin.com</a> adresinden alın.';
 $string['getremoteaddrconf'] = 'Kaydı tutulan IP adres kaynağı';
 $string['globalsearch'] = 'Genel arama';
 $string['globalsearchmanage'] = 'Genel armayı yönet';

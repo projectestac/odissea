@@ -44,7 +44,7 @@ $backuptab = '';
 $backupusage = report_coursequotas_format_size((int)get_config(REPORT_COMPONENTNAME, 'backup_usage'));
 
 if ($backupusage->bytes > 0) {
-    $backuptab = '<li><a href="' . $CFG->wwwroot . '/report/coursequotas/filemanager.php?backups=true&sort=filesize&dir=DESC">' . get_string('backups', 'report_coursequotas') . '</a></li>';
+    $backuptab = '<li style="margin: 10px;"><a href="' . $CFG->wwwroot . '/report/coursequotas/filemanager.php?backups=true&sort=filesize&dir=DESC">' . get_string('backups', REPORT_COMPONENTNAME) . '</a></li>';
 }
 
 // Create the page and send it to the user

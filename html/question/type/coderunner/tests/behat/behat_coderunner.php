@@ -24,10 +24,9 @@
 
 use Behat\Mink\Exception\ExpectationException;
 use Facebook\WebDriver\Exception\NoSuchAlertException;
-
+use Moodle\BehatExtension\Exception\SkippedException;
 
 class behat_coderunner extends behat_base {
-
     /**
      * Loads the default coderunner settings file for testing.
      * It seems silly that I have to do that. Why is there not
@@ -36,7 +35,7 @@ class behat_coderunner extends behat_base {
      */
     public function the_coderunner_test_configuration_file_is_loaded() {
         global $CFG;
-        require($CFG->dirroot .'/question/type/coderunner/tests/fixtures/test-sandbox-config.php');
+        require($CFG->dirroot . '/question/type/coderunner/tests/fixtures/test-sandbox-config.php');
     }
 
     /**
@@ -50,10 +49,10 @@ class behat_coderunner extends behat_base {
 
 
     /**
-      * Sets the webserver webservice to disabled for testing purposes.
-      *
-      * @Given /^the CodeRunner webservice is disabled/
-      */
+     * Sets the webserver webservice to disabled for testing purposes.
+     *
+     * @Given /^the CodeRunner webservice is disabled/
+     */
     public function the_coderunner_webservice_is_disabled() {
         set_config('wsenabled', 0, 'qtype_coderunner');
     }
@@ -137,7 +136,8 @@ class behat_coderunner extends behat_base {
      * @param string $expected The string that we expect to find
      */
     public function i_set_ace_field($elname, $value) {
-        $xpath = "//textarea[@name='$elname' or (contains(@name, '$elname') and contains(@class, 'edit_code'))]/following-sibling::div[1]/div";
+        $xpath = "//textarea[@name='$elname' or (contains(@name, '$elname') " .
+             "and contains(@class, 'edit_code'))]/following-sibling::div[1]/div";
         $driver = $this->getSession()->getDriver();
         // Does the div managed by Ace exist?
         if (!$driver->find($xpath)) {
@@ -312,7 +312,17 @@ class behat_coderunner extends behat_base {
         }
     }
 
-
+    /**
+     * Skips scenario if the given language is not installed on the Jobe server
+     *
+     * @Given /^the Jobe server supports "(?P<lang>[^"]+)"$/
+     */
+    public function jobe_supports_lanugage(string $lang): void {
+        if (qtype_coderunner_sandbox::get_best_sandbox($lang, true) === null) {
+            $msg = "$lang is not installed on your server. Scenario skipped.";
+            throw new SkippedException($msg);
+        }
+    }
 
     /**
      * Presses a named button. Checks if there is a specified error text displayed.

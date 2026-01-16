@@ -674,9 +674,9 @@ abstract class moodleform_mod extends moodleform {
 
         // XTEC ************ AFEGIT - Added patch for course format "Simple"
         // 2010.07.12 @aginard
-        // Form code to select custom icon
-        if ($COURSE->format == 'simple') {
-            require_once($CFG->dirroot . '/course/format/simple/lib.php');
+        // Form code to select custom icon.
+        if ($COURSE->format === 'simple') {
+            require_once $CFG->dirroot . '/course/format/simple/lib.php';
             if (empty($this->_cm)) {
                 $cm = new StdClass();
                 $cm->course = $COURSE->id;

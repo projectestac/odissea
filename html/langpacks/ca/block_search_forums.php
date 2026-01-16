@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['advancedsearch'] = 'Cerca avançada';
 $string['pluginname'] = 'Cerca als fòrums';
 $string['privacy:metadata'] = 'El bloc de cerca als fòrums només mostra dades emmagatzemades en altres llocs.';
-$string['search_forums:addinstance'] = 'Afegir un bloc nou per a cercar als fòrums';
+$string['search_forums:addinstance'] = 'Afegeix un bloc nou per a cercar als fòrums';

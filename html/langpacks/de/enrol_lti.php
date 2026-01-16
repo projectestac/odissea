@@ -104,7 +104,7 @@ Legacy-Versionen (1.1 und 2.0) erfordern, dass für jeden neu veröffentlichten 
 $string['managedeployments'] = 'Bereitstellungen verwalten';
 $string['maxenrolled'] = 'Maximal eingeschriebene Nutzer/innen';
 $string['maxenrolled_help'] = 'Legt die Höchstzahl der Nutzer fest, die vom externen System zugreifen dürfen. Der Wert \'0\' bedeutet keine Begrenzung.';
-$string['maxenrolledreached'] = 'Die Höchstzahl der zugelassenen Nutzer, die vom externen System zugreifen dürfen, wurde erreicht.';
+$string['maxenrolledreached'] = 'Die Höchstzahl der zugelassenen Nutzer/innen, die vom externen System zugreifen dürfen, wurde erreicht.';
 $string['membersync'] = 'Nutzersynchronisation';
 $string['membersync_help'] = 'Diese Option legt fest, ob ein regelmäßiger Task externe Nutzer/innen aus einem anderen System mit den Einschreibungen dieses Kurses synchronisiert, wobei für externe Nutzer/innen ein Nutzerkonto angelegt und die Einschreibung bzw. Abmeldung vorgenommen wird.
 

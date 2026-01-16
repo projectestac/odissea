@@ -1645,6 +1645,7 @@ $string['oneitemfound'] = 'Найден 1 элемент.';
 $string['opendrawerblocks'] = 'Открыть боковую панель';
 $string['opendrawerindex'] = 'Открыть оглавление курса';
 $string['opensinnewwindow'] = 'Открывается в новом окне';
+$string['opensinnewwindowbracketed'] = '(Открывается в новом окне)';
 $string['operator_and'] = 'и';
 $string['operator_andnot'] = 'и';
 $string['operator_or'] = 'или';

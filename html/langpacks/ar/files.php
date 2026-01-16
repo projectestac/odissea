@@ -58,7 +58,7 @@ $string['redactor:exifremover:failedprocessgd'] = 'التنقيح قد فشل: �
 $string['redactor:exifremover:heading'] = 'ExifTool';
 $string['redactor:exifremover:mimetype'] = 'أنواع MIME المدعومة';
 $string['redactor:exifremover:mimetype_desc'] = 'لإضافة أنواع MIME جديدة، تأكد من أنها مضمنة في <a href="./tool/filetypes/index.php">أنواع الملفات</a>.';
-$string['redactor:exifremover:removetags'] = 'وسوم EXIF التي ستتم إزالتها.';
+$string['redactor:exifremover:removetags'] = 'وسوم EXIF المزمع إزالتها';
 $string['redactor:exifremover:removetags_desc'] = 'وسوم EXIF التي بحاجة إلى إزالة.';
 $string['redactor:exifremover:tag:all'] = 'الكل';
 $string['redactor:exifremover:tag:gps'] = 'فقط GPS';

@@ -27,7 +27,6 @@
  * Journal conversion handler
  */
 class moodle1_mod_journal_handler extends moodle1_mod_handler {
-
     /**
      * Declare the paths in moodle.xml we are able to convert
      *
@@ -40,7 +39,8 @@ class moodle1_mod_journal_handler extends moodle1_mod_handler {
     public function get_paths() {
         return [
             new convert_path(
-                'journal', '/MOODLE_BACKUP/COURSE/MODULES/MOD/JOURNAL',
+                'journal',
+                '/MOODLE_BACKUP/COURSE/MODULES/MOD/JOURNAL',
                 [
                     'renamefields' => [
                         'assessed' => 'grade',
@@ -62,14 +62,18 @@ class moodle1_mod_journal_handler extends moodle1_mod_handler {
 
         // Get the course module id and context id.
         $instanceid = $data['id'];
-        $cminfo     = $this->get_cminfo($instanceid);
-        $moduleid   = $cminfo['id'];
-        $contextid  = $this->converter->get_contextid(CONTEXT_MODULE, $moduleid);
+        $cminfo = $this->get_cminfo($instanceid);
+        $moduleid = $cminfo['id'];
+        $contextid = $this->converter->get_contextid(CONTEXT_MODULE, $moduleid);
 
         // We now have all information needed to start writing into the file.
         $this->open_xml_writer("activities/journal_{$moduleid}/journal.xml");
-        $this->xmlwriter->begin_tag('activity', ['id' => $instanceid, 'moduleid' => $moduleid,
-            'modulename' => 'journal', 'contextid' => $contextid, ]);
+        $this->xmlwriter->begin_tag('activity', [
+            'id' => $instanceid,
+            'moduleid' => $moduleid,
+            'modulename' => 'journal',
+            'contextid' => $contextid,
+        ]);
         $this->xmlwriter->begin_tag('journal', ['id' => $instanceid]);
 
         unset($data['id']);

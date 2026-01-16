@@ -158,20 +158,21 @@ if ($files->count) {
     ];
 
     foreach ($columns as $column => $columnname) {
-        if ($column == REPORT_COURSEQUOTAS_OWNER_STRING || $column == 'context') {
+        if ($column === REPORT_COURSEQUOTAS_OWNER_STRING || $column === 'context') {
             $table->head[] = $columnname;
         } else {
-            if ($sort != $column) {
+            if ($sort !== $column) {
                 $columnicon = '';
-                if ($column == 'filesize') {
+                if ($column === 'filesize') {
                     $columndir = 'DESC';
                 } else {
                     $columndir = 'ASC';
                 }
             } else {
-                $columndir = $dir == 'ASC' ? 'DESC' : 'ASC';
-                $columnicon = ($dir == 'ASC') ? 'sort_asc' : 'sort_desc';
-                $columnicon = "<img class='iconsort' src=\"" . $OUTPUT->image_url('t/' . $columnicon) . "\" alt=\"\" />";
+               $columndir = ($dir === 'ASC') ? 'DESC' : 'ASC';
+                $iconname = ($dir === 'ASC') ? 'sort_asc' : 'sort_desc';
+                $pix = new pix_icon('t/' . $iconname, '');
+                $columnicon = $OUTPUT->render($pix);
             }
             $baseurl->param('sort', $column);
             $baseurl->param('dir', $columndir);
@@ -275,8 +276,8 @@ if ($files->count) {
               </div>
             </div>
         </div>
-    </div>
-        <script src="' . $CFG->wwwroot . '/report/coursequotas/filemanager.js"></script>';
+    </div>';
+    $PAGE->requires->js_call_amd('report_coursequotas/filemanager', 'init');
 } else {
     echo $OUTPUT->notification(get_string('nofilesfound', REPORT_COMPONENTNAME));
 }

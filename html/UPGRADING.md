@@ -6,7 +6,7 @@ More detailed information on key changes can be found in the [Developer update n
 
 The format of this change log follows the advice given at [Keep a CHANGELOG](https://keepachangelog.com).
 
-## 4.5.7+
+## 4.5.8
 
 ### core
 
@@ -28,6 +28,14 @@ The format of this change log follows the advice given at [Keep a CHANGELOG](htt
 - When responding to pcntl signals, call existing signal handlers.
 
   For more information see [MDL-87079](https://tracker.moodle.org/browse/MDL-87079)
+
+### mod_glossary
+
+#### Added
+
+- Function mod_glossary_rating_can_see_item_ratings is now implemented for checking permissions to view ratings.
+
+  For more information see [MDL-86960](https://tracker.moodle.org/browse/MDL-86960)
 
 ## 4.5.7
 

@@ -433,6 +433,21 @@ class com_wiris_util_xml_WXmlUtils {
 		}
 		return $r;
 	}
+	static function getTrimmedInnerText($xml) {
+		if($xml->nodeType == Xml::$PCData || $xml->nodeType == Xml::$CData) {
+			$nodeValue = com_wiris_util_xml_WXmlUtils::getNodeValue($xml);
+			if($nodeValue !== null) {
+				$nodeValue = trim($nodeValue);
+			}
+			return $nodeValue;
+		}
+		$buffer = "";
+		$iter = $xml->iterator();
+		while($iter->hasNext()) {
+			$buffer .= com_wiris_util_xml_WXmlUtils::getTrimmedInnerText($iter->next());
+		}
+		return $buffer;
+	}
 	static function setText($xml, $text) {
 		if($xml->nodeType != Xml::$Element) {
 			return;
@@ -685,7 +700,7 @@ class com_wiris_util_xml_WXmlUtils {
 						if($cdata->match($aux)) {
 							$res->add($aux);
 						} else {
-							haxe_Log::trace("WARNING! malformed XML at character " . _hx_string_rec($end, "") . ":" . $xml, _hx_anonymous(array("fileName" => "WXmlUtils.hx", "lineNumber" => 835, "className" => "com.wiris.util.xml.WXmlUtils", "methodName" => "indentXml")));
+							haxe_Log::trace("WARNING! malformed XML at character " . _hx_string_rec($end, "") . ":" . $xml, _hx_anonymous(array("fileName" => "WXmlUtils.hx", "lineNumber" => 857, "className" => "com.wiris.util.xml.WXmlUtils", "methodName" => "indentXml")));
 							$res->add($aux);
 						}
 					}

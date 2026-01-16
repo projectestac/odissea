@@ -73,6 +73,7 @@ $string['badmanifest'] = 'Erros no manifesto: ver o registo de erros';
 $string['browse'] = 'Pré-visualização';
 $string['browsed'] = 'Consultado';
 $string['browsemode'] = 'Modo de pré-visualização';
+$string['browsemodewithname'] = 'Modo de pré-visualização: {$a}';
 $string['browserepository'] = 'Pesquisar repositório';
 $string['cachedef_elements'] = 'Cache do elemento';
 $string['calculatedweight'] = 'Peso calculado';
@@ -301,7 +302,7 @@ $string['optionsadv_desc'] = 'Se selecionar esta opção, a largura e altura ser
 $string['optnoattemptsonly'] = 'apenas utilizadores que não iniciaram';
 $string['organization'] = 'Organização';
 $string['organizations'] = 'Organizações';
-$string['othersettings'] = 'Definições adicionais';
+$string['othersettings'] = 'Configurações adicionais';
 $string['package'] = 'Ficheiro do pacote';
 $string['package_help'] = 'O ficheiro do pacote é um ficheiro Zip (ou pif) contendo ficheiros de definição da disciplina em formato SCORM.';
 $string['packagedir'] = 'Erro no sistema de ficheiros: não é possível criar a pasta do pacote';
@@ -404,6 +405,7 @@ $string['tag_error'] = 'Tag desconhecida ({$a->tag}) com o seguinte conteúdo: {
 $string['time'] = 'Tempo';
 $string['title'] = 'Título';
 $string['toc'] = 'Índice';
+$string['toggletableofcontents'] = 'Alternar índice';
 $string['too_many_attributes'] = 'A tag {$a->tag} tem demasiados atributos';
 $string['too_many_children'] = 'A tag {$a->tag} tem demasiados descendentes';
 $string['toolbar'] = 'Mostrar barra de ferramentas';
@@ -462,7 +464,7 @@ Notas sobre a gestão das múltiplas tentativas:
 
 * Alguns pacotes SCORM reconhecem as novas tentativas, outros não. Isto significa que se o aluno entra numa tentativa existente, e o pacote SCORM não possuir lógica interna para evitar a sobreposição dos dados anteriores, estes poderão ser substituídos mesmo que à tentativa já tenha sido atribuído o estado \'Concluído\' ou \'Aprovado\'.
 
-* As configurações "Forçar conclusão", "Forçar nova tentativa" e "Bloquear após tentativa final" também permitem gerir as definições das múltiplas tentativas.';
+* As configurações "Forçar conclusão", "Forçar nova tentativa" e "Bloquear após tentativa final" também permitem uma gestão adicional de múltiplas tentativas.';
 $string['whatgradedesc'] = 'Caso sejam permitidas múltiplas tentativas, esta configuração define como é obtida a nota da atividade que é exibida na pauta.';
 $string['width'] = 'Largura';
 $string['window'] = 'Janela';

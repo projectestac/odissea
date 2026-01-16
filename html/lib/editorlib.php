@@ -99,16 +99,6 @@ function editors_get_enabled() {
     }
     $active = array();
     foreach(explode(',', $CFG->texteditors) as $e) {
-
-        // XTEC ************ AFEGIT - Removed tinyMCE from editors' list
-        // 2021.07.14 @aginard
-        if (isset($CFG->isagora) && $CFG->isagora) {
-            if (!is_enabled_in_agora($e)) {
-                continue;
-            }
-        }
-        // ************ FI
-
         if ($editor = get_texteditor($e)) {
             $active[$e] = $editor;
         }

@@ -577,22 +577,22 @@ else:
 $string['qtype_java_class'] = '<p>Una pregunta per a escriure una classe Java, on l\'estudiant envia
 una classe completa a la seva resposta. Cada prova típicament instancia un objecte de la classe
 especificada i el fa servir per a una o més proves. No és un tipus de pregunta combinada, això vol dir que
-cada cas de prova es du a terme en una execució independent a la zona de proves.
+cada cas de prova es duu a terme en una execució independent a la zona de proves.
 </p><p>El programa generat per a cada cas de prova consisteix en la resposta de l\'estudiant, amb
-l\'atribut&nbsp;<i>public</i> eliminat si estava present. Aquesta (ara local)
+l\'atribut&nbsp;<i>public</i> eliminat si hi era present. Aquesta (ara local)
 definició de classe és seguida d\'una classe&nbsp;pública&nbsp;<i>__Tester__</i> que
 té un mètode&nbsp;<i>main</i> que instancia la classe <i>__Tester__</i> i en crida
 el seu mètode&nbsp;<i>runTests</i>. El mètode&nbsp;<i>runTests</i> simplement conté el
-codi del cas de prova. Vegeu la plantilla per tenir-ne més detalls.</p><p>Noteu que
+codi del cas de prova. Vegeu la plantilla per tenir-ne més detalls.</p><p>Tingueu en compte que
 l\'algorisme que es fa servir per eliminar l\'atribut <i>public</i> de la classe enviada per l\'estudiant
 és simple; només funciona si les paraules <i>public class</i> existeixen exactament
 una vegada en el codi de l\'estudiant, separades per un sol espai.</p>
 <p>El camp addicional del cas de prova és ignorat.</p>
 <p>Aquest tipus de pregunta és ineficient si hi ha molts casos de prova, ja que s\'envia
-un procés de compilació i execució a la zona de proves per cadascun. Això es podria
+un procés de compilació i execució a la zona de proves per a cadascun. Això es podria
 resoldre escrivint un tipus de pregunta combinada. Vegeu la documentació
 de CodeRunner (coderunner.org.nz) per a més informació.</p>';
-$string['qtype_java_method'] = '<p>Fet servir per a preguntes d\'escriure un mètode en Java, on es demana
+$string['qtype_java_method'] = '<p> Es fa servir per a preguntes d\'escriure un mètode en Java, on es demana
 a l\'estudiant que escrigui un mètode que és essencialment una funció independent.
 El codi de prova típicament conté una o dues línies de codi que
 (aparentment) criden el mètode enviat per l\'estudiant, com a C. Internament, la
@@ -603,57 +603,55 @@ instància de la classe principal i n\'executa el mètode <i>runTests</i>. Vegeu
 $string['qtype_java_program'] = '<p>Una pregunta d\'escriure un programa en Java, on l\'estudiant
 envia un programa complet a la seva resposta. El programa és compilat i
 executat per a cada cas de prova.
-El codi de prova no es fa servir; només es té en compte les dades d\'entrada de cada cas de prova. El camp addicional tampoc es fa servir.</p>
+El codi de prova no es fa servir; només es tenen en compte les dades d\'entrada de cada cas de prova. El camp addicional tampoc no es fa servir.</p>
 <p>Aquest tipus de pregunta pot esdevenir molt ineficient si hi ha molts casos de prova, ja que
-cadascun necessita un cicle complet de compilació i execució en el servidor Jobe. És
+cadascun necessita un cicle complet de compilació i execució al servidor Jobe. És
 possible incloure tots els casos de prova en un sol script Python que s\'envia al
-servidor de la zona de proves, compila el programa una sola vegada i l\'executa per cada cas de prova.
+servidor de la zona de proves, compila el programa una sola vegada i l\'executa per a cada cas de prova.
 Per a més detalls sobre aquesta tècnica, vegeu el fòrum d\'autors de preguntes a coderunner.org.nz.</p>';
 $string['qtype_multilanguage'] = '<p>Una pregunta d\'escriure un programa
-en la qual l\'estudiant pot enviar una resposta en un de diversos llenguatges diferents.
-Els llenguatges C, C++, Java, Python3, PHP i JavaScript (nodejs) estan disponibles
-per defecte en els servidors Jobe i haurien de funcionar directament. Aquest tipus
-de pregunta també permet fer servir perl, ruby, golang i C# però és necessari
-instal·lar compiladors i/o intèrprets addicionals en el servidor Jobe.
+en la qual l\'estudiant pot enviar una resposta en qualsevol dels diversos llenguatges diferents.
+Els llenguatges C, C++, Java, Python3, PHP i JavaScript (nodejs) es troben disponibles
+per defecte als servidors Jobe i haurien de funcionar directament. Aquest tipus
+de pregunta també permet fer servir perl, ruby, golang i C#, però és necessari
+instal·lar compiladors i/o intèrprets addicionals al servidor Jobe.
 Per exemple, <code>sudo apt-get install mono-mcs</code> per instal·lar
 el compilador mono C#, mcs.</p>
 <p>Si l\'autor de la pregunta indica una resposta d\'exemple, poden especificar el llenguatge
 de la seva resposta en una de tres maneres. <ol><li>Afegint un paràmetre de la plantilla
 com <code>{"answer_language": "cpp"}</code> per especificar quin llenguatge fan servir.</li>
 <li>Fent servir el llenguatge per defecte, si s\'ha establert. El llenguatge per defecte es marca
-amb un asterisc després del nom del llenguatge al camp "Llenguatge de l\'Ace" en el
+amb un asterisc després del nom del llenguatge al camp «Llenguatge de l\'Ace» al
 tauler Personalització avançada, si l\'autor fa servir una pregunta personalitzada.
-Si no, no hi ha llenguatge per defecte.</li>
-<li>Fent servir el primer llenguatge llistat al camp "Llenguatge de l\'Ace" en el tauler Personalització avançada - per defecte és C.</li></p>
-<p>Es poden afegir llenguatges addicionals, si són suportats pel servidor Jobe,
-afegint el nom de llenguatge al camp "Llenguatge de l\'Ace" al formulari d\'edició
-de la pregunta i ampliant la plantilla per gestionar aquest nou llenguatge.</p>
-<p>El programa enviat és executat sense canvis per a cada cas de prova.
+Si no, no hi ha cap llenguatge per defecte.</li>
+<li>Fent servir el primer llenguatge enumerat al camp «Llenguatge de l\'Ace» al tauler Personalització avançada; per defecte és C.</li></p>
+<p>Es poden afegir llenguatges addicionals, si són admesos pel servidor Jobe,
+afegint el nom de llenguatge al camp «Llenguatge de l\'Ace» al formulari d\'edició
+de la pregunta i ampliant la plantilla per gestionar aquest llenguatge nou.</p>
+<p>El programa enviat és executat sense cap canvi per a cada cas de prova.
 Els camps de codi de prova i addicional de cada cas de prova són ignorats.</p>';
 $string['qtype_nodejs'] = '<p>Un tipus de pregunta en JavaScript, executat fent servir nodejs.
 El programa que s\'executa comença amb la resposta de l\'estudiant.
-A això se li afegeix cadascun dels codis dels casos de prova, imprimint un separador
-entre cadascun. Però, si hi ha cap cas de prova que faci servir entrada estàndard,
+A això s\'afegeix cadascun dels codis dels casos de prova, entre cadascun dels qual s\'imprimeix un separador. Amb tot, si hi ha cap cas de prova que faci servir una entrada estàndard,
 es durà a terme una execució independent per a cada cas de prova.</p><p>
-Si hi ha risc d\'efectes laterals d\'un cas de prova que n\'afecti un de posterior,
-podeu afegir entrada estàndard a qualsevol cas de prova per forçar que
+Si hi ha cap risc d\'efectes col·llaterals d\'un cas de prova que n\'afecti un de posterior,
+podeu afegir una entrada estàndard a qualsevol cas de prova per imposar que
 s\'executin els casos de prova independentment.</p>';
 $string['qtype_octave_function'] = '<p>Un tipus de pregunta que especifica una funció en Octave,
-enviada completament per l\'estudiant. Cada cas de prova típicament crida
+la qual l\'estudiant ha de trametre completament. Cada cas de prova típicament crida
 la funció de l\'estudiant amb arguments de prova i imprimeix el resultat o un
 valor derivat d\'aquest. Si cap cas de prova té entrada estàndard, s\'executa un
 programa que conté la resposta de l\'estudiant, la sentència <code>format free</code>
 i el cas de prova de cada cas de prova, amb una sentència <i>disp</i> per
-imprimir un separador entre les sortides dels casos de prova.</p><p>Si algun cas de
-prova té entrada estàndard, cada cas de prova s\'executa per separat.</p>';
-$string['qtype_pascal_function'] = '<p>Un tipus de pregunta en Pascal on l\'estudiant
+imprimir un separador entre les sortides dels casos de prova.</p><p>Si hi ha algun cas de prova que té entrada estàndard, cada cas de prova s\'executa per separat.</p>';
+$string['qtype_pascal_function'] = '<p>Un tipus de pregunta en Pascal en què l\'estudiant
 ha d\'escriure un procediment o una funció. El programa a executar consisteix en
 la resposta de l\'estudiant seguida del codi de prova en un bloc <code>begin ... end.</code>.<br>
 Aquest no és un tipus de pregunta combinada, així que es durà a terme una execució per a cada cas de prova.</p>';
-$string['qtype_pascal_program'] = '<p>Un tipus de pregunta en Pascal on l\'estudiant
+$string['qtype_pascal_program'] = '<p>Un tipus de pregunta en Pascal en què l\'estudiant
 ha d\'escriure un programa en Pascal complet. El programa és compilat i executat
-una vegada per a cada cas de prova, fent servir el camp d\'entrada estàndard
-especificat a cada cas de prova i ignorant els camps <i>testcode</i> i <i>extra</i>.</p>';
+una vegada per a cada cas de prova; s\'hi fa servir el camp d\'entrada estàndard
+especificat a cada cas de prova i s\'ignoren els camps <i>testcode</i> i <i>extra</i>.</p>';
 $string['qtype_php'] = '<p>Un tipus de pregunta en php en la qual l\'estudiant envia codi php.
 En el cas més simple, el codi de l\'estudiant començarà amb <code>&lt;?php</code>
 però <i>no tancarà l\'etiqueta PHP</i>. És important que aquesta etiqueta no es
@@ -662,118 +660,122 @@ pels codis de prova dels casos de prova. Si voleu que l\'estudiant acabi el seu 
 tancant l\'etiqueta PHP, hauríeu d\'editar la plantilla per tornar a obrir l\'etiqueta PHP
 abans de la seqüència de casos de prova.
 </p><p>La sortida de cada cas de prova, que hauria de coincidir amb el camp <i>expected</i> de cada cas de prova, serà la sortida del codi PHP de l\'estudiant
-(incloent-hi qualsevol contingut excepte les etiquetes &lt;?php...?&gt;) més la sortida
+(hi inclourà qualsevol contingut excepte les etiquetes &lt;?php...?&gt;) més la sortida
 del codi de prova.</p><p>Inspeccioneu el codi de la plantilla
 (fent clic a <i>Personalitza</i> per entendre tot això.</p>';
 $string['qtype_python2'] = '<p>Un tipus de pregunta per a Python2, que admet preguntes del tipus
 escriure una funció, escriure una classe o escriure un programa.
-Per cada cas de prova, la resposta de l\'estudiant és seguida del codi de prova.
+Per a cada cas de prova, la resposta de l\'estudiant és seguida del codi de prova.
 Llavors, per exemple, si es demana a l\'estudiant que escrigui la definició d\'una
 funció, la seva definició s\'executarà primer, seguida del codi de prova,
 que típicament cridarà la funció i imprimirà el resultat o algun valor derivat d\'aquest.</p>
-<p>Si no hi ha entrada estàndard a cap cas de prova, la pregunta engloba tots
-els casos de prova en una sola execució, imprimint un separador entre les sortides
-dels casos de prova. Aneu amb compte que això no és necessàriament el mateix
-que executar cada cas de prova per separat. Per exemple, si hi ha cap variable global
-definida al codi de l\'estudiant, aquestes retindran els valors entre execucions.
+<p>Si no hi ha cap entrada estàndard a cap cas de prova, la pregunta engloba tots
+els casos de prova en una sola execució, i imprimeix un separador entre les sortides
+dels casos de prova. Teniu en compte que això no és necessàriament el mateix
+que executar cada cas de prova per separat. Per exemple, si hi ha variables globals
+definides al codi de l\'estudiant, aquestes retindran els valors entre execucions.
 Si això pot ser un problema, el més senzill és definir entrada estàndard a un
-dels casos de prova. Això forçarà que CodeRunner executi cada cas de prova per separat.</p>';
+dels casos de prova. Això imposarà que CodeRunner executi cada cas de prova per separat.</p>';
 $string['qtype_python3'] = '<p>Un tipus de pregunta per a Python3, que admet preguntes del tipus
 escriure una funció, escriure una classe o escriure un programa.
-Per cada cas de prova, la resposta de l\'estudiant és seguida del codi de prova.
+Per a cada cas de prova, la resposta de l\'estudiant és seguida del codi de prova.
 Llavors, per exemple, si es demana a l\'estudiant que escrigui la definició d\'una
 funció, la seva definició s\'executarà primer, seguida del codi de prova,
 que típicament cridarà la funció i imprimirà el resultat o algun valor derivat d\'aquest.</p>
-<p>Si no hi ha entrada estàndard a cap cas de prova, la pregunta engloba tots
-els casos de prova en una sola execució, imprimint un separador entre les sortides
-dels casos de prova. Aneu amb compte que això no és necessàriament el mateix
-que executar cada cas de prova per separat. Per exemple, si hi ha cap variable global
-definida al codi de l\'estudiant, aquestes retindran els valors entre execucions.
+<p>Si no hi ha cap entrada estàndard a cap cas de prova, la pregunta engloba tots
+els casos de prova en una sola execució, i imprimeix un separador entre les sortides
+dels casos de prova. Teniu en compte que això no és necessàriament el mateix
+que executar cada cas de prova per separat. Per exemple, si hi ha variables globals
+definides al codi de l\'estudiant, aquestes retindran els valors entre execucions.
 Si això pot ser un problema, el més senzill és definir entrada estàndard a un
-dels casos de prova. Això forçarà que CodeRunner executi cada cas de prova per separat.</p>';
+dels casos de prova. Això imposarà que CodeRunner executi cada cas de prova per separat.</p>';
 $string['qtype_python3_w_input'] = '<p>Un tipus de pregunta per a Python3, que admet preguntes del tipus
 escriure una funció, escriure una classe o escriure un programa.
-Es diferencia del tipus de pregunta lleugerament més senzill <i>python3</i> en què
+Es diferencia del tipus de pregunta lleugerament més senzill <i>python3</i> en el fet que
 la funció <i>input</i> ha estat substituïda per una versió personalitzada que
 repeteix l\'entrada estàndard a la sortida estàndard a mesura que és consumida.
 Això fa que la sortida s\'assembli al que habitualment veuen els estudiants quan
 proven el seu codi amb entrada per teclat.
-Es recomana en comptes del tipus de pregunta <i>python3</i> en qualsevol
-pregunta que faci servir <i>input</i> en cursos introductoris de programació,
-on és més probable que els estudiants es confonguin si no es mostra l\'entrada
+Es recomana a comptes del tipus de pregunta <i>python3</i> a qualsevol
+pregunta que faci servir <i>input</i> a cursos introductoris de programació,
+en què és més probable que els estudiants es confonguin si no es mostra l\'entrada
 estàndard en obtenir-la d\'un fitxer.</p><p>Un petit inconvenient d\'aquest tipus
-de pregunta en comparació al tipus de pregunta <i>python3</i> és que els
-missatges d\'error en el codi de l\'estudiant tindran nombres de línies confosos, ja que
-la funció que substitueix a <i>input</i> s\'insereix abans del codi de l\'estudiant.</p>
-<p>Per cada cas de prova, la resposta de l\'estudiant és seguida del codi de prova.
+de pregunta en comparació amb el tipus de pregunta <i>python3</i> és que els
+missatges d\'error al codi de l\'estudiant tindran nombres de línies confosos, ja que
+la funció que substitueix <i>input</i> s\'insereix abans del codi de l\'estudiant.</p>
+<p>Per a cada cas de prova, la resposta de l\'estudiant és seguida del codi de prova.
 Llavors, per exemple, si es demana a l\'estudiant que escrigui la definició d\'una
 funció, la seva definició s\'executarà primer, seguida del codi de prova,
 que típicament cridarà la funció i imprimirà el resultat o algun valor derivat d\'aquest.</p>
-<p>Si no hi ha entrada estàndard a cap cas de prova, la pregunta engloba tots
-els casos de prova en una sola execució, imprimint un separador entre les sortides
-dels casos de prova. Aneu amb compte que això no és necessàriament el mateix
-que executar cada cas de prova per separat. Per exemple, si hi ha cap variable global
-definida al codi de l\'estudiant, aquestes retindran els valors entre execucions.
+<p>Si no hi ha cap entrada estàndard a cap cas de prova, la pregunta engloba tots
+els casos de prova en una sola execució, i imprimeix un separador entre les sortides
+dels casos de prova. Teniu en compte que això no és necessàriament el mateix
+que executar cada cas de prova per separat. Per exemple, si hi ha variables globals
+definides al codi de l\'estudiant, aquestes retindran els valors entre execucions.
 Si això pot ser un problema, el més senzill és definir entrada estàndard a un
-dels casos de prova. Això forçarà que CodeRunner executi cada cas de prova per separat.</p>';
-$string['qtype_sql'] = '<p>Un tipus de pregunta SQL, fent servir sqlite3, executat des de Python3.
+dels casos de prova. Això imposarà que CodeRunner executi cada cas de prova per separat.</p>';
+$string['qtype_sql'] = '<p>Un tipus de pregunta SQL, que fa servir sqlite3, executat des de Python3.
 sqlite3 ha d\'estar instal·lat al servidor Jobe perquè aquest tipus de pregunta funcioni.</p>
-<p>Se cerca al directori de treball un fitxer amb l\'extensió \'.db\'. Si només
+<p>Se cerca al directori de treball un fitxer amb l\'extensió «.db». Si només
 se\'n troba un, es fa servir com a base de dades sqlite3 per a tots els casos de prova.
 Si n\'hi ha més d\'un, es mostrarà un missatge d\'error; una possible extensió és
-fer servir fitxers db diferents per a cada prova, per exemple, en ordre.</p>
+fer servir fitxers db diferents per a cada prova, per exemple, per ordre.</p>
 <p>Per a cada cas de prova, s\'executa un script sqlite3 d\'aquesta forma:</p>
  <pre>.mode column<br>.headers on<br>&lt;codi en el camp addicional&gt;<br>&lt;resposta de l\'estudiant&gt;<br>&lt;codi de prova&gt;</pre>
 <p>Es fa servir una còpia nova del fitxer db a cada cas de prova.</p>
 <p>El paràmetre de la plantilla <i>columnwidths</i> pot fer-se servir per establir
-l\'amplada de les columnes de l\'informe. Per defecte, sqlite3 estableix l\'amplada
-de cada columna al màxim de tres nombres: 10, l\'amplada de la capçalera i
-l\'amplada de la primera fila de dades.
+l\'amplària de les columnes de l\'informe. Per defecte, sqlite3 estableix l\'amplària
+de cada columna al màxim de tres nombres: 10, l\'amplària de la capçalera i
+l\'amplària de la primera fila de dades.
 Si s\'especifica això als paràmetres de la plantilla,</p><pre><code>{"columnwidths": [10, 50, 10, 5]}
 </code></pre>
-<p>en comptes d\'això es faran servir amplades de columna 10, 50, 10 i 5
+<p>en comptes d\'això es faran servir amplàries de columna 10, 50, 10 i 5
 per a les primeres quatre columnes.</p>';
-$string['qtype_undirected_graph'] = '<p>Un tipus de pregunta en Python3 que demana a l\'estudiant que dibuixi
-un graf no dirigit que satisfaci alguna especificació. L\'autor de la pregunta ha d\'escriure
-el codi Python3 necessari per comprovar el graf resultant.</p><p>Noteu que no és realment
-necessari fer servir aquest tipus de pregunta per a grafs no dirigits, ja que la funcionalitat
-és subministrada principalment pel connector GraphUI. Si el preprocessat del graf
-dut a terme per aquest tipus de pregunta no staisfà les vostres necessitats, podeu fer servir una pregunta
-Python3 normal (o en un altre llenguatge), establir la IU a GraphUI i analitzar la versió serialitzada del graf en JSON (la variable Twig STUDENT_ANSWER).
-Però, aquest tipus de pregunta dona un exemple de com fer servir
+$string['qtype_undirected_graph'] = '<p>Un tipus de pregunta a Python3 que demana a l\'estudiant que dibuixi
+un graf no dirigit que satisfaci alguna especificació. </p>
+<h4>Paràmetre de la plantilla</h4>
+<p><b>extra</b>: es pot establir a <i>pretest</i> o <i>posttest</i>per tenir el codi <i>extra</i>
+executat abans/després del codi de prova, respectivament. Per defecte: <i>posttest</i>, per a compatibilitat amb versions anteriors (originàriament el codi extra sempre s\'executava després del  codi de prova).</p>
+<h4>Informació d\'ús</h4>
+<p>L\'autor de la pregunta ha d\'escriure
+el codi Python3 necessari per comprovar el graf resultant.</p><p>Tingueu en compte que no és realment necessari fer servir aquest tipus de pregunta per a grafs no dirigits, ja que la funcionalitat
+és subministrada principalment pel connector GraphUI. Si el preprocessament del graf
+dut a terme per aquest tipus de pregunta no satisfà les vostres necessitats, podeu fer servir una pregunta Python3 normal (o en un altre llenguatge), establir la IU a GraphUI i analitzar la versió serialitzada del graf en JSON (la variable Twig STUDENT_ANSWER).
+De totes maneres, aquest tipus de pregunta dona un exemple de com fer servir
 el connector GraphUI. Feu clic a <i<Personalitza</i> per veure el codi de la plantilla.</p>
 <p>L\'especificació demanarà a l\'estudiant que dibuixi un graf no dirigit que satisfaci
-uns requisits concrets. Per exemple, un graf que representi un conjunt de ciutats
+uns requisits concrets: per exemple, un graf que representi un conjunt de ciutats
 connectades per carreteres de doble sentit. El cas de prova i/o el camp addicional es
-faran servir per analitzar el graf i imprimir un missatge per a l\'estudiant, com OK si el
+faran servir per analitzar el graf i imprimir un missatge per a l\'estudiant, com ara «OK» si el
 graf és correcte o un missatge d\'error adient si no ho és.</p>
 <p>La plantilla per a aquesta pregunta analitza el graf serialitzat en JSON i n\'extrau la topologia a través del diccionari d\'adjacència <i>graph</i>. Aquesta
-variable està disponible als camps de codi de prova i addicional del cas de prova. Les claus
+variable es troba disponible als camps de codi de prova i addicional del cas de prova. Les claus
 del diccionari són noms de nodes, si en tenen, o etiquetes identificadores arbitràries
-en la forma #1, #2, etc, si no. Els valors del diccionari són llistes d\'arestes,
-ordenades pel nom del node veí o el seu identificador, cada aresta és una tupla
+en la forma #1, #2, etc., si no. Els valors del diccionari són llistes d\'arestes,
+ordenades pel nom del node veí o el seu identificador; cada aresta és una tupla
 (idVeí, etiquetaAresta).</p><p>Cada entrada a la llista d\'adjacència és una tupla
-(nomOIdNode, veïns) on veïns és una llista de tuples
+(nomOIdNode, veïns) on «veïns» és una llista de tuples
 (nomOIdNodeVeí, etiquetaAresta). Si es dona nom als nodes, aquests es fan servir
-com a identificadors de nodes, i si no els noms #1, #2, etc es fan servir. La llista
+com a identificadors de nodes; altrament es fan servir els noms #1, #2, etc. La llista
 d\'adjacència i la llista de veïns s\'ordenen segons el nom o identificador dels nodes.</p>
 <p>La plantilla és combinada: el <i>codi de prova<i> i
-<i>addicional</i> s\'executen per a cada cas de prova.</p><p>Com a exemple
-senzill, si l\'especificació només demanés "Dibuixeu un graf no dirigit amb dos nodes
-etiquetats A i B, amb una aresta entre els dos nodes", un cas de prova adient (tot i que
+<i>addicional</i> s\'executen per a cada cas de prova. Amb el codi <i>extra</i> que, per defecte, s\'executa després del cas de prova (posttest).</p>
+<p>Com a exemple
+senzill, si l\'especificació només demanés «Dibuixeu un graf no dirigit amb dos nodes
+etiquetats A i B, amb una aresta entre els dos nodes», un cas de prova adient (tot i que
 sense missatges d\'error que ajudin gaire) podria ser:</p><pre>
 if set(graph.keys()) == {\'A\', \'B\'} and len(graph[\'A\']) == 1 and len(graph[\'B\']) == 0 and graph[\'A\'][0][0] == \'B\':
     print(\'OK\')
 else:
     print(\'Nope\')
 </pre>
-<p>Alternativament, hi podria haver un conjunt de casos de prova i que cadascun comprovi un dels aspectes de l\'especificació. Per exemple, el primer cas de prova podria imprimir les claus ordenades i esperaria obtenir \'A\', \'B\'. El segon cas de prova podria imprimir les arestes que connecten el node \'A\', etc.</p>';
+<p>De manera alternativa, hi podria haver un conjunt de casos de prova en què cadascun comprovaria un dels aspectes de l\'especificació. Per exemple, el primer cas de prova podria imprimir les claus ordenades i esperaria obtenir «A», «B». El segon cas de prova podria imprimir les arestes que connecten el node «A», etc.</p>';
 $string['qtypehelp'] = 'Ajuda amb el tipus de pregunta';
-$string['question_type_changed'] = 'Canviant tipus de pregunta. Fes clic a OK per recarregar els camps de personalització, cancel·la per mantenir les personalitzacions existents.';
+$string['question_type_changed'] = 'S\'està canviant el tipus de pregunta. Feu clic a «OK» per actualitzar els camps de personalització, i a «Cancel·la» per mantenir les personalitzacions existents.';
 $string['questioncheckboxes'] = 'Personalització';
 $string['questioncheckboxes_help'] = 'Per personalitzar el tipus de pregunta, per exemple, per editar
-la plantilla de la pregunta, paràmetres de la interfície d\'usuari o de la zona de proves,
-fes clic al botó \'Personalitza\' i llegeix l\'ajuda disponible als elements que es mostren
+la plantilla de la pregunta, els paràmetres de la interfície d\'usuari o de la zona de proves,
+feu clic al botó «Personalitza» i llegiu l\'ajuda disponible als elements que es mostren
 ara per a més informació.
 
 Si s\'activa la casella de selecció de depuració de la plantilla, el programa generat que
@@ -783,13 +785,13 @@ $string['questionpreview'] = 'Previsualització de la pregunta';
 $string['questiontype'] = 'Tipus de pregunta';
 $string['questiontype_help'] = 'Seleccioneu el tipus de pregunta.
 
-Aquest quadre combinat us permet triar un dels tipus predefinits, que suporten
-un llenguatge en particular i, en alguns casos, la zona de proves en la que
+Aquest quadre combinat us permet triar un dels tipus predefinits, que admeten
+un llenguatge en particular i, en alguns casos, la zona de proves en la qual
 s\'executaran els programes. Cada tipus de pregunta té una plantilla que defineix
 com es construeix el programa executable a partir de les dades dels casos
 de prova i de la resposta de l\'estudiant.
 
-La plantilla pot visualitzar-se i personalitzar-se opcionalment fent clic al botó \'Personalitza\'.
+La plantilla pot visualitzar-se i personalitzar-se opcionalment fent clic al botó «Personalitza».
 
 Si la casella de selecció de depuració de la plantilla està marcada, el programa
 generat per a cada cas de prova es mostrarà a la sortida.';
@@ -825,12 +827,12 @@ que també poden seleccionar-se per mostrar. També és possible combinar
 múltiples camps en una columna afegint camps addicionals a l\'especificador:
 aquests han de precedir el format sprintf, que llavors esdevé obligatori.
 Per exemple, per mostrar la puntuació com a fracció en una columna de la forma
-0.74/1.00, es podria fer servir una especificació de columna del tipus ["Fracció de la puntuació", "awarded", "mark", "%.2f/%.2f"].
+0.74/1.00, es podria fer servir una especificació de columna del tipus [«Fracció de la puntuació», «awarded», «mark», «%.2f/%.2f»].
 
 Com a cas especial, el format %h es fa servir quan el valor del camp del resultat
 s\'ha de fer servir directament com a HTML i no s\'hauria de processar
 addicionalment; això és només útil en plantilles de qualificació personalitzades
-que generen sortida HTML, com gràfics SVG.
+que generen sortida HTML, com ara els gràfics SVG.
 
 El valor per defecte de resultcolumns és
 [["Prova", "testcode"],["Entrada", "stdin"], ["Esperat", "expected"], ["Obtingut", "got"]].
@@ -844,65 +846,65 @@ $string['resultstring-abnormaltermination'] = 'Terminació anormal';
 $string['resultstring-compilationerror'] = 'Error de compilació';
 $string['resultstring-illegalsyscall'] = 'Crida de funció il·legal';
 $string['resultstring-internalerror'] = 'Error de CodeRunner (IE): aviseu un tutor';
-$string['resultstring-memorylimit'] = 'Límit de memòria excedit';
-$string['resultstring-norun'] = 'No executat';
+$string['resultstring-memorylimit'] = 'S\'ha excedit el límit de memòria';
+$string['resultstring-norun'] = 'No s\'ha executat';
 $string['resultstring-outputlimit'] = 'Sortida excessiva';
 $string['resultstring-runtimeerror'] = 'Error d\'execució';
 $string['resultstring-sandboxoverload'] = 'Servidor de la zona de proves sobrecarregat. Proveu-ho més tard.';
 $string['resultstring-sandboxpending'] = 'Error de CodeRunner (PD): aviseu un tutor';
 $string['resultstring-sandboxpolicy'] = 'Error de CodeRunner (BP): aviseu un tutor';
 $string['resultstring-success'] = 'OK';
-$string['resultstring-timelimit'] = 'Límit de temps excedit';
+$string['resultstring-timelimit'] = 'S\'ha excedit el límit de temps';
 $string['run_failed'] = 'S\'han produït errors en fer les comprovacions';
-$string['sampleanswerattachments'] = 'Adjunts de la resposta d\'exemple';
+$string['sampleanswerattachments'] = 'Fitxers adjunts de la resposta d\'exemple';
 $string['sampleanswerattachments_help'] = 'Si la resposta d\'exemple necessita fitxers adjunts, pugeu-los aquí';
 $string['sandboxcontrols'] = 'Zona de proves';
 $string['sandboxcontrols_help'] = 'Totes les proves s\'executen a la zona de proves Jobe, que imposa
-límits en l\'ús de memòria, temps de CPU, sortida de fitxers, etc.
-Aquí és on podeu ajustar aquests límits.
+límits en l\'ús de memòria, el temps de CPU, la sortida de fitxers, etc.
+Aquí podeu ajustar aquests límits.
 
-\'Límit de temps (segons)\' defineix la quantitat màxima de temps en segons
-que es permet per cada execució a la zona de proves i \'Límit de memòria (MB)\'
+«Límit de temps (segons)» defineix la quantitat màxima de temps en segons
+que es permet per cada execució a la zona de proves i «Límit de memòria (MB)»
 defineix la quantitat màxima de memòria que el programa pot fer servir.
 Un valor en blanc fa servir el valor per defecte de la zona de proves (típicament
 5 segons per al temps d\'execució i una quantitat de memòria que depèn
 del llenguatge), però els defectes poden no ser adequats per a programes
 que fan un ús intens de recursos. Un valor de zero per a la quantitat màxima
 de memòria fa que no s\'estableixin límits a l\'ús de memòria. La quantitat de
-memòria definida aquí és el total de memòria necessària per a l\'execució,
-incloent-hi totes les biblioteques, intèrprets, màquines virtuals, etc.
+memòria definida aquí és el total de memòria necessària per a l\'execució;
+s\'hi inclouen totes les biblioteques, els intèrprets, les màquines virtuals, etc.
 
-El camp \'Paràmetres\' es fa servir per passar més dades específiques a la
-zona de proves, com opcions de compilació i claus d\'API. Generalment es pot
+El camp «Paràmetres» es fa servir per passar més dades específiques a la
+zona de proves, com ara opcions de compilació i claus d\'API. Generalment es pot
 deixar en blanc, però si s\'especifica un valor, aquest ha de ser un registre JSON vàlid.
 En el cas de la zona de proves Jobe, els atributs disponibles inclouen disklimit,
 streamsize, numprocs, compileargs, linkargs i interpreterargs.
 Per exemple, <code>{"compileargs":["-std=c89"]}</code> per a una pregunta en C
 forçaria l\'estàndard C89 i cap altra opció de C es faria servir. Vegeu la documentació
-de Jobe per a més detalls. Algunes zones de proves (per exemple la zona de proves
-obsoleta Ideone) poden ignorar silenciosament alguns o tots aquests valors.
+de Jobe per a més detalls. Algunes zones de proves (per exemple, la zona de proves
+obsoleta Ideone) poden ignorar silenciosament alguns d\'aquests valors o tots.
 
-És possible definir un servidor Jobe diferent establint el paràmetre \'jobeserver\' i, també, opcionalment, una \'jobeapikey\'. Per exemple, si el camp \'Paràmetres\' s\'estableix a <code>{"jobeserver": "myspecialjobe.com"}</code>, l\'execució
-es durà a terme al servidor "myspecialjobe.com".';
+És possible definir un servidor Jobe diferent establint el paràmetre «jobeserver» i, també, opcionalment, una «jobeapikey». Per exemple, si el camp «Paràmetres» s\'estableix a <code>{"jobeserver": "myspecialjobe.com"}</code>, l\'execució
+es durà a terme al servidor «myspecialjobe.com».';
 $string['sandboxerror'] = 'Error de la zona de proves [{$a->sandbox}]: {$a->message}';
 $string['sandboxparams'] = 'Paràmetres';
-$string['scratchpad_ui_bad_api_keys'] = 'Camp scratchpad-direct mal configurat. La longitud de la llista de claus d\'API ha de ser igual que la de servidors Jobe.';
-$string['scratchpad_ui_badrunwrappersrc'] = 'Embolcall d\'execució invàlid, contacteu l\'autor de la pregunta.';
-$string['scratchpad_ui_error'] = 'Petició XML HTTP fallida. Error de xarxa o CORS.';
-$string['scratchpad_ui_invalidserialisation'] = 'Serialització JSON invàlida subministrada, heu d\'incloure un camp \\"answer_code\\".';
-$string['scratchpad_ui_no_protocol'] = 'El nom del servidor Jobe ha de començar amb http:// o https://.';
-$string['scratchpad_ui_request_failed'] = 'Petició al servidor de la zona de proves fallida.';
-$string['scratchpad_ui_templateloadfail'] = 'No s\'ha pogut carregar la plantilla de la IU Scratchpad; recarregueu la pàgina. Si això persisteix, informeu.';
+$string['scratchpad_ui_bad_api_keys'] = 'El camp scratchpad-direct s\'ha configurat malament. La longitud de la llista de claus d\'API ha de ser igual que la dels servidors Jobe.';
+$string['scratchpad_ui_badrunwrappersrc'] = 'Embolcall d\'execució no vàlid; contacteu amb l\'autor de la pregunta.';
+$string['scratchpad_ui_error'] = 'Ha fallat la petició XML HTTP. Error de xarxa o CORS.';
+$string['scratchpad_ui_invalidserialisation'] = 'La serialització JSON subministrada és no vàlida; heu d\'incloure un camp \\"answer_code\\".';
+$string['scratchpad_ui_no_protocol'] = 'El nom del servidor Jobe ha de començar per http:// o https://.';
+$string['scratchpad_ui_request_failed'] = 'Ha fallat la petició al servidor de la zona de proves.';
+$string['scratchpad_ui_templateloadfail'] = 'No s\'ha pogut carregar la plantilla de la IU Scratchpad; recarregueu la pàgina. Informeu d\'això si persisteix.';
 $string['scratchpadui_api_keys_descr'] = 'Una llista de claus d\'API per fer servir amb els jobe_servers (si s\'han definit). Si és buida, no es fan servir claus d\'API. EXPERIMENTAL i potencialment insegur.';
 $string['scratchpadui_button_name_descr'] = 'Text del botó d\'execució.';
-$string['scratchpadui_close_delimiter_descr'] = 'El delimitador de finalització que es fa servir en inserir una resposta o codi Scratchpad a l\'embolcall. Substituirà el valor per defecte \'|}\'.';
+$string['scratchpadui_close_delimiter_descr'] = 'El delimitador de finalització que es fa servir en inserir una resposta o codi Scratchpad a l\'embolcall. Substituirà el valor per defecte «|}».';
 $string['scratchpadui_def_button_name'] = 'Executa';
-$string['scratchpadui_def_help_text'] = '<p>Podeu introduir codi en aquest panell i fer clic a \'Executa\' per executar-lo.</p>
-<p>Per defecte, el codi en aquest panell és prefixat pels continguts de la caixa de resposta, donant-vos una manera fàcil de provar el vostre codi.</p>
-<p>Podeu desmarcar la casella de selecció \'Prefixa amb resposta\' per executar el codi en aquest panell independentment per, per exemple, explorar com petits fragments de codi es comporten.</p>';
+$string['scratchpadui_def_help_text'] = '<p>Podeu introduir codi en aquest panell i fer clic a «Executa» per executar-lo.</p>
+<p>Per defecte, el codi en aquest panell és prefixat pels continguts del quadre de resposta, la qual cosa us dona una manera fàcil de provar el vostre codi.</p>
+<p>Podeu desmarcar la casella de selecció «Prefixa amb resposta» per executar el codi en aquest panell independentment, per exemple, per explorar la manera com es comporten els fragments de codi petits.</p>';
 $string['scratchpadui_def_prefix_name'] = 'Prefixa amb resposta';
 $string['scratchpadui_def_scratchpad_name'] = 'Scratchpad';
-$string['scratchpadui_disable_scratchpad_descr'] = 'Desactiva l\'Scratchpad, fa que la IU torni a ser l\'Ace per a l\'estudiant.';
+$string['scratchpadui_disable_scratchpad_descr'] = 'Desactiva l\'Scratchpad; això fa que la IU torni a ser l\'Ace per a l\'estudiant.';
 $string['scratchpadui_escape_descr'] = 'Tracta els caràcters especials (elimina el caràcter " del principi i del final del JSON)
 d\'ANSWER_CODE i SCRATCHPAD_CODE abans d\'inserir-los a l\'embolcall. Útil quan
 s\'insereix codi en un text. COMPTE: les cometes simples \' NO es tracten.';
@@ -910,7 +912,7 @@ $string['scratchpadui_help_text_descr'] = 'El text d\'ajuda a mostrar.';
 $string['scratchpadui_invert_prefix_descr'] = 'Inverteix el significat de la serialització de prefix_ans: \'1\' vol dir no marcat
 i al contrari. Es pot fer servir per invertir l\'estat per defecte.';
 $string['scratchpadui_jobe_servers_descr'] = 'Una llista de servidors Jobe, un dels quals es triarà aleatòriament com a objectiu
-directe de les peticions AJAX, en comptes de passar per Moodel. EXPERIMENTAL
+directe de les peticions AJAX, en comptes de passar per Moodle. EXPERIMENTAL
 i potencialment insegur.';
 $string['scratchpadui_open_delimiter_descr'] = 'El delimitador d\'inici que es fa servir en inserir una resposta o codi Scratchpad a l\'embolcall. Substituirà el valor per defecte \'{|\'.';
 $string['scratchpadui_output_display_mode_descr'] = 'Controla com la sortida del programa es mostra a les execucions,
@@ -921,29 +923,29 @@ hi ha tres modes principals:
         <ul>
             <li>Accepta JSON a l\'execució amb els camps:</li>
             <ul>
-                <li>returncode: Codi de sortida del programa executat.</li>
-                <li>stdout: Sortida estàndard del programa executat.</li>
-                <li>stderr: Sortida d\'error del programa executat.</li>
-                <li>files: Un objecte que conté els noms de fitxers relacionats amb imatges codificades en base64. Es mostraran davall qualsevol sortida estàndard.</li>
+                <li>returncode: codi de sortida del programa executat.</li>
+                <li>stdout: sortida estàndard del programa executat.</li>
+                <li>stderr: sortida d\'error del programa executat.</li>
+                <li>files: Un objecte que conté els noms de fitxers relacionats amb imatges codificades en base64. Es mostraran davall de qualsevol sortida estàndard.</li>
             </ul>
             <li>Quan el returncode és 42, s\'afegirà un camp HTML input després de la darrera sortida obtinguda. Quan es premi la tecla de retorn dins aquest input, el seu valor s\'afegeix a l\'entrada estàndard i el programa s\'executa una altra vegada amb aquesta entrada actualitzada. Això es repeteix fins que el returncode sigui diferent de 42.</li>
         </ul>
         <li>html: Mostra la sortida del programa directament com a HTML a l\'element de sortida. (avançat)</li>
         <ul>
-            <li>Es pot fer servir per mostrar imatges i inserir altre HTML.</li>
+            <li>Es pot fer servir per mostrar imatges i inserir un altre HTML.</li>
             <li>Si es dona la classe coderunner-run-input a un element &lt;input&gt;, s\'afegirà un esdeveniment: quan es premi la tecla de retorn dins aquest input, el seu valor s\'afegirà a l\'entrada estàndard i el programa s\'executarà una altra vegada amb aquesta entrada actualitzada.</li>
         </ul>
     </ul>';
 $string['scratchpadui_params_descr'] = 'Paràmetres per al servei web de la zona de proves';
 $string['scratchpadui_prefix_name_descr'] = 'Text de la casella de selecció per prefixar amb la resposta';
 $string['scratchpadui_run_lang_descr'] = 'Llenguatge que es fa servir per executar el codi quan el botó d\'execució es fa servir,
-hauria de ser el llenguatge en el qual el vostre embolcall s\'ha escrit (si aplica).';
+hauria de ser el llenguatge en el qual el vostre embolcall s\'ha escrit (si s\'escau).';
 $string['scratchpadui_scratchpad_name_descr'] = 'Nom que es fa servir per a l\'Scratchpad, es fa servir per amagar o mostrar l\'Scratchpad.';
 $string['scratchpadui_wrapper_src_descr'] = 'Ubicació de l\'embolcall a fer servir en prémer el botó d\'execució: si s\'estableix a \'globalextra\', es farà servir el text al camp addicional global, si s\'estableix a \'prototypeextra\' es farà servir el camp addicional del prototipus.';
-$string['seethisquestioninthequestionbank'] = 'Veu aquesta pregunta al banc de preguntes.';
-$string['showcolumns'] = 'Mostra columnes:';
+$string['seethisquestioninthequestionbank'] = 'Visualitza aquesta pregunta al banc de preguntes.';
+$string['showcolumns'] = 'Mostra les columnes:';
 $string['showcolumns_help'] = 'Selecciona quines columnes de la taula de resultats s\'haurien de mostrar
-als estudiants. Columnes buides s\'amagaran en qualsevol cas.
+als estudiants. Les columnes buides s\'amagaran en qualsevol cas.
 Els valors per defecte són adients en la majoria dels casos.';
 $string['showdetails'] = 'Mostra els detalls';
 $string['showdifferences'] = 'Mostra les diferències';
@@ -952,25 +954,25 @@ $string['sourcecodeallruns'] = 'Depuració: codi font de totes les execucions de
 $string['stdin'] = 'Entrada estàndard';
 $string['stdin_help'] = 'L\'entrada estàndard per a la prova. Disponible a la plantilla com {{TEST.stdin}}';
 $string['student_answer'] = 'Resposta de l\'estudiant';
-$string['submitbuttons'] = 'Botons d\'enviament';
+$string['submitbuttons'] = 'Botons de tramesa';
 $string['supportscripts'] = 'Scripts de suport';
 $string['syntax_errors'] = 'Error(s) de sintaxi';
-$string['table_ui_invalidjson'] = 'IU taula: serialització JSON invàlida.';
-$string['table_ui_invalidserialisation'] = 'IU taula: serialització invàlida.';
+$string['table_ui_invalidjson'] = 'IU taula: serialització JSON no vàlida.';
+$string['table_ui_invalidserialisation'] = 'IU taula: serialització no vàlida.';
 $string['table_ui_missingparams'] = 'La IU taula necessita els paràmetres num_colums i num_rows.';
 $string['tableui_column_headers_descr'] = 'Una llista de textos per a les capçaleres de les columnes.';
-$string['tableui_column_width_percents_descr'] = 'Una llista de nombres reals que especifiquen el percentatge de l\'amplada disponible de la taula per posar-hi les columnes, incloent-hi la columna amb les etiquetes de les files, si hi és present.';
-$string['tableui_dynamic_rows_descr'] = 'Si és cert, i el botó "Afegeix fila" s\'especifica per a permetre als usuaris afegir files a la taula.';
+$string['tableui_column_width_percents_descr'] = 'Una llista de nombres reals que especifiquen el percentatge de l\'amplària disponible de la taula per posar-hi les columnes, inclosa la columna amb les etiquetes de les files, si hi és present.';
+$string['tableui_dynamic_rows_descr'] = 'Si és cert, i el botó «Afegeix una fila» s\'especifica per a permetre als usuaris afegir files a la taula.';
 $string['tableui_lines_per_cell_descr'] = 'La quantitat de files de text a cada textarea o cel·la.';
 $string['tableui_locked_cells_descr'] = 'Una llista de llistes de dos elements que especifica les coordenades (començant per 0) de les cel·les que l\'usuari no pot alterar. Les coordenades no inclouen una possible fila de capçaleres de columna o una columna d\'etiquetes de fila.';
 $string['tableui_num_columns_descr'] = 'La quantitat de columnes de la taula, sense comptar la columna de més a l\'esquerra si es donen etiquetes de files. Requerit.';
 $string['tableui_num_rows_descr'] = 'La quantitat (inicial) de files de la taula, sense comptar la fila de capçaleres si es donen capçaleres. Requerit.';
-$string['tableui_row_labels_descr'] = 'Una llista de textos per les etiquetes de les files, és a dir, els valors a la columna 0.';
-$string['tableui_sync_interval_secs_descr'] = 'L\'interval de temps en segons entre crides per sincronitzar els continguts de l\'IU amb la resposta de la pregunta. 0 per no autosincronitzar-los.';
+$string['tableui_row_labels_descr'] = 'Una llista de textos per a les etiquetes de les files, és a dir, els valors a la columna 0.';
+$string['tableui_sync_interval_secs_descr'] = 'L\'interval de temps en segons entre crides per sincronitzar els continguts de la IU amb la resposta de la pregunta. 0 per no sincronitzar-los de manera automàtica.';
 $string['template'] = 'Plantilla';
-$string['template_changed'] = 'Plantilla per cas de prova modificada - desactivar plantilla combinada? [\'Cancel·la\' ho deixa activat.]';
-$string['template_help'] = 'La plantilla defineix el/s programa/es que s\'executen a la zona de proves per una
-resposta de l\'estudiant donada i la/es prova/es. Hi ha dos tipus de plantilles:
+$string['template_changed'] = 'S\'ha modificat la plantilla per al cas de prova. Voleu desactivar la plantilla combinada? [«Cancel·la» la deixa activada.]';
+$string['template_help'] = 'La plantilla defineix el programa o programes que s\'executen a la zona de proves per a una
+resposta de l\'estudiant donada i la prova o les proves. Hi ha dos tipus de plantilles:
 
 * una plantilla per cas de prova, que defineix un programa que s\'executarà per a un sol cas de prova i,
 * una plantilla combinada, que defineix un programa que combina tots els casos de prova en una sola execució.
@@ -980,33 +982,31 @@ d\'aquest panell d\'ajuda suposa que feu servir una plantilla per cas de prova; 
 la documentació completa per fer servir plantilles combinades.
 
 La plantilla es processa amb el motor de plantilles Twig
-(vegeu http://twig.sensiolabs.org) en un context on STUDENT_ANSWER és la
+(vegeu http://twig.sensiolabs.org) en un context en el qual STUDENT_ANSWER és la
 resposta de l\'estudiant i TEST.testcode és el codi per al cas de prova actual.
 Aquests valors (i altres valors del cas de prova com TEST.expected, TEST.stdin,
 TEST.mark) poden inserir-se a la plantilla si s\'envolten en claus dobles, per exemple
-<code>{{TEST.testcode}}</code>. Per fer-los servir en literals string, convé aplicar-los
-una funció de neteja, per exemple <code>{{STUDENT_ANSWER | e(\'py\')}}</code> és
-adient per fer-los servir a strings de cometes triples de Python. Altres funcions de
+<code>{{TEST.testcode}}</code>. Per fer-los servir en cadenes literals, convé aplicar-los
+una funció de neteja: per exemple, <code>{{STUDENT_ANSWER | e(\'py\')}}</code> és
+adient per fer-los servir a cadenes de cometes triples de Python. Altres funcions de
 neteja són <code>e(\'c\')</code>, <code>e(\'java\')</code>, <code>e(\'matlab\')</code>.
-El programa que genera Twig es compila i executa en el llenguatge del tipus
+El programa que genera Twig es compila i s\'executa en el llenguatge del tipus
 de pregunta predefinit triat i s\'estableix l\'stdin a TEST.stdin. La sortida d\'aquesta
-execució es passa a l\'avaluador seleccionat. Vegeu més ajuda a \'Controls de
-qualificació\' per a més informació.
+execució es passa a l\'avaluador seleccionat. Per a més informació sobre això vegeu l\'ajuda que hi ha sota els «Controls de qualificació».
 
-Compte que si es fa servir una plantilla per cas de prova personalitzada,
-s\'enviaran a la zona de proves tasques de compilar-i-executar per cada cas de prova,
+Teniu en compte que si es fa servir una plantilla per cas de prova personalitzada,
+s\'enviaran a la zona de proves tasques de compilar-i-executar per a cada cas de prova,
 mentre que la majoria de tipus de pregunta predefinits fan servir una plantilla
 combinada que combina tots els casos de prova en una sola execució.
 
-Si se selecciona la depuració de la plantilla, el programa generat per a cada execució
-es mostrarà a la sortida.';
+Si se selecciona la depuració de la plantilla, el programa generat per a cada execució a la zona de proves es mostrarà a la sortida.';
 $string['templatecontrols'] = 'Controls de la plantilla';
-$string['templatecontrols_help'] = 'Seleccionar la casella de selecció \'És una plantilla combinada\' especifica que la plantilla és
+$string['templatecontrols_help'] = 'El fet de marcar la casella de selecció «És una plantilla combinada» especifica que la plantilla és
 combinada, que combina (o intenta combinar) la resposta de l\'estudiant amb tots
 els casos de prova en una sola execució de la plantilla. Si se selecciona aquesta
 casella, també haureu de definir el valor del camp test_splitter_re, que és l\'expressió
 regular PHP que es fa servir per separar la sortida de la plantilla en el conjunt de
-respostes individuals de cada cas de prova. Però no heu de definir això si també
+respostes individuals de cada cas de prova. Amb tot, no heu de definir això si també
 feu servir una plantilla d\'avaluació, ja que en aquest cas la plantilla mateixa és la
 responsable de dividir la sortida i qualificar-la.
 
@@ -1018,17 +1018,16 @@ imprimeix els resultats de cada cas de prova, separats per un text únic.
 El text separador és definit per una expressió regular donada pel camp del
 formulari \'test_splitter_re\'.
 
-Però, si els casos de prova tenen entrada estàndard, les plantilles combinades
+De totes maneres, si els casos de prova tenen entrada estàndard, les plantilles combinades
 esdevenen problemàtiques. Si la plantilla construeix un únic programa, quina
 hauria de ser la seva entrada estàndard? La solució més simple (i per defecte) és
 executar els casos de prova un a un, fent servir la plantilla combinada per
-construir cada programa, passant-los la variable TESTCASES però que conté una
-sola prova. Aquest \'truc\' permet que la plantilla combinada serveixi un rol doble:
-es comporta com una plantilla per cas de prova (amb un array TESTCASES d\'un
-sol element) quan l\'autor de la pregunta hi especifica entrada estàndard; però
-com una autèntica plantilla combinada (amb un array TESTCASES d\'n elements) si
-no. Per canviar aquest comportament, de manera que la plantilla rebi tots els casos
-de prova, fins i tot quan l\'stdin està present, seleccioneu la casella \'Permet múltiples stdins\'.
+construir cada programa, passant-los la variable TESTCASES que conté una
+sola prova. Aquest «truc» permet que la plantilla combinada compleixi un rol doble:
+es comporta com una plantilla per cas de prova (amb una matriu TESTCASES d\'un
+sol element) quan l\'autor de la pregunta hi especifica entrada estàndard, però
+altrament es comporta com una autèntica plantilla combinada (amb una matriu TESTCASES de n elements). Per canviar aquest comportament, de manera que la plantilla rebi tots els casos
+de prova, fins i tot quan l\'stdin és present, seleccioneu la casella «Permet múltiples stdins».
 
 Si l\'execució d\'una plantilla combinada genera alguna sortida a stderr, s\'interpreta
 que és un error d\'execució. Per assegurar que l\'estudiant obté puntuació per tants
@@ -1039,10 +1038,10 @@ de produir un resultat JSON vàlid.';
 $string['templateerror'] = 'ERROR DE PLANTILLA';
 $string['templategrader'] = 'Plantilla d\'avaluació';
 $string['templateparams'] = 'Paràmetres de la plantilla';
-$string['templateparams_help'] = 'Si no és en blanc, el camp de paràmetres de la plantilla ha d\'avaluar a un
+$string['templateparams_help'] = 'Si no és en blanc, el camp de paràmetres de la plantilla ha d\'avaluar un
 registre en format JSON. En la seva forma més simple el camp <i>és</i> un camp
 JSON que defineix un conjunt de variables que s\'afegeixen a l\'entorn de la plantilla
-Twig quan el sistema expandeix la plantilla (i altres amps si \'Aplica Twig a tot\' està seleccionat).
+Twig quan el sistema expandeix la plantilla (i altres camps si «Aplica Twig a tot» està seleccionat).
 
 Si s\'especifica un preprocessador a la secció de Control de paràmetres de la plantilla,
 els paràmetres de la plantilla es processen abans amb el llenguatge especificat per
@@ -1050,149 +1049,102 @@ obtenir el registre JSON. Vegeu
 <a href="https://coderunner.org.nz/mod/url/view.php?id=199">la documentació</a>
 per a més detalls.
 
-<b>Compte:</b> fer servir un preprocessador diferent de Twig pot tenir efectes
-importants en el rendiment si la casella de selecció Evalua per estudiant està
+<b>Atenció!:</b> el fet de fer servir un preprocessador diferent de Twig pot tenir efectes
+importants en el rendiment si la casella de selecció Avalua per estudiant està
 seleccionada, que s\'ha de fer servir per aleatoritzar o personalitzar les preguntes
-per cada estudiant. El preprocessat s\'ha de fer abans de poder mostrar una
-pregunta i, excepte per a Twig, es du a terme al servidor de la zona de proves Jobe.
-Cada intent a cada pregunta d\'aquest tipus per cada estudiant implicarà una tasca
-enviada a aquest servidor. Això pot provocar milers de tasques a la vegada a
-l\'inici d\'una prova o examen, que pot fer que se sobrecarregui. Caveat Emptor!';
-$string['templateparamsevalpertry'] = 'Evalua per estudiant';
+per a cada estudiant. El preprocessament s\'ha de fer abans de poder mostrar una
+pregunta i, tret de per a Twig, es duu a terme al servidor de la zona de proves Jobe.
+Cada intent de cada estudiant a cada pregunta d\'aquest tipus farà que s\'enviï una tasca a aquest servidor. Això pot provocar milers de tasques a la vegada a
+l\'inici d\'una prova o un examen, la qual cosa probablement el sobrecarregui. Caveat Emptor!';
+$string['templateparamsevalpertry'] = 'Avalua per estudiant';
 $string['templateparamslang'] = 'Preprocessador';
 $string['templateparamsusingsandbox'] = 'Els preprocessadors diferents de Twig fan servir el servidor de la zona de proves.
-Si "Evalua per estudiant" també està seleccionat, quan un estudiant comenci un
-qüestionari, totes les preguntes iniciaran una execució a la zona de proves abans
-que la pregunta es pugui tan sols mostrar. En una prova o examen, això pot
+Si «Avalua per estudiant» també està seleccionat, quan un estudiant comenci un qüestionari totes les preguntes iniciaran una execució a la zona de proves abans
+que la pregunta es pugui tan sols mostrar. En una prova o un examen això pot
 sobrecarregar el servidor. Caveat emptor!';
-$string['testallincategory'] = 'Prova totes les preguntes d\'aquesta categoria';
-$string['testalltitle'] = 'Prova totes les preguntes d\'aquest context';
+$string['testallincategory'] = 'Comprova totes les preguntes d\'aquesta categoria';
+$string['testalltitle'] = 'Comprova totes les preguntes d\'aquest context';
 $string['testcase'] = 'Cas de prova {$a}';
 $string['testcasecontrols'] = 'Propietats del cas de prova:';
-$string['testcasecontrols_help'] = 'Si \'Fes servir com a exemple\' està seleccionat, aquest cas de prova s\'inclourà
-automàticament a la taula de resultats \'Per exemple:\'.
+$string['testcasecontrols_help'] = 'Si «Fes servir com a exemple» està seleccionat, aquest cas de prova s\'inclourà de manera automàtica a la taula de resultats «Per exemple:».
 
-La casella de selecció \'Mostra\' determina quan aquest cas de prova es mostra
-a l\'estudiant a la taula de resultats.
+La casella de selecció «Mostra» determina quan es mostra aquest cas de prova a l\'estudiant a la taula de resultats.
 
-Si \'Amaga la resta si falla\' està seleccionat i aquest cas de prova falla, tots els casos
-de prova s\'amagaran de l\'estudiant, independentment del valor de \'Mostra\'.
+Si «Amaga la resta si falla» està seleccionat i aquest cas de prova falla, tots els casos de prova s\'amagaran a l\'estudiant, independentment del valor de «Mostra».
 
-\'Puntuació\' estableix el valor d\'aquest cas de prova; només és útil si no és
-una pregunta \'Tot o res\'.
+«Puntuació» estableix el valor d\'aquest cas de prova; només és útil si no és una pregunta del tipus «Tot o res».
 
-\'Ordenació\' pot ser fet servir per canviar l\'ordre dels casos de prova quan la
-pregunta ja s\'ha desat: els casos s\'ordenen segons aquest camp.';
+«Ordenació» pot ser fet servir per canviar l\'ordre dels casos de prova quan la pregunta ja s\'ha desat: els casos s\'ordenen segons aquest camp.';
 $string['testcases'] = 'Casos de prova';
 $string['testcode'] = 'Codi de prova';
-$string['testcode_help'] = 'El codi per a aquest cas de prova. Disponible a la plantilla com {{TEST.testcode}}';
+$string['testcode_help'] = 'El codi per a aquest cas de prova. Disponible a la plantilla com a {{TEST.testcode}}';
 $string['testcolhdr'] = 'Prova';
-$string['testingquestion'] = 'Provant pregunta {$a}';
+$string['testingquestion'] = 'S’està comprovant la pregunta {$a}';
 $string['testsplitterre'] = 'Separador de casos de prova (expressió regular)';
 $string['testtype'] = 'Tipus de precomprovació del cas de prova';
 $string['testtype_both'] = 'Les dues';
-$string['testtype_help'] = 'Si la precomprovació s\'activa i s\'estableix a \'Seleccionat\', aquesta opció controla
-si el cas de prova es fa servir només en una execució normal, només en una
-execució de precomprovació o a les dues.
-Si la percomprovació s\'estableix a qualsevol altra cosa que no sigui \'Seleccionat\',
-aquesta opció és ignorada.';
+$string['testtype_help'] = 'Si la precomprovació s\'activa i s\'estableix a «seleccionat», aquesta opció controla si el cas de prova es fa servir només en una execució normal, només en una execució de precomprovació o a ambdues.
+Si la precomprovació s\'estableix a qualsevol altra cosa que no sigui «seleccionat», aquesta opció s’ignora.';
 $string['testtype_normal'] = 'Només comprovació';
 $string['testtype_precheck'] = 'Només precomprovació';
 $string['tooshort'] = 'La resposta és massa curta per tenir significat i s\'ha ignorat sense penalització';
 $string['twigall'] = 'Aplica Twig a tot';
 $string['twigcontrols'] = 'Control dels paràmetres de la plantilla';
-$string['twigcontrols_help'] = 'Tradicionalment, s\'ha fet referència als paràmetres de la plantilla durant l\'expansió
-del Twig en la forma {{QUESTION.parameters.algunparametre}} . Però, si la casella
-de selecció Fes \'hoisting\' dels paràmetres de la plantilla està seleccionada, els
-paràmetres s\'inclouen a l\'espai de noms global de Twig i es poden accedir amb
-{{algunparametre}}.
+$string['twigcontrols_help'] = 'Tradicionalment, s\'ha fet referència als paràmetres de la plantilla durant l\'expansió de Twig en la forma {{QUESTION.parameters.algunparametre}} . No obstant això, si la casella de selecció «Eleva els paràmetres de la plantilla» està seleccionada, els paràmetres s\'inclouen a l\'espai de noms global de Twig i es poden referenciar com a {{algunparametre}}.
 
-Satisfà Ace/Scratchpad permet assegurar el canvi transparent entre les IU Ace i
-Scratchpad. Deixeu-lo sense seleccionar si voleu poder editar amb l\'Ace un text
-JSON amb amb la clau "answer_code", que si no s\'enviaria a serialització de
-l\'Scratchpad.
+El compliment d’Ace/Scratchpad permet assegurar el canvi transparent entre les IU Ace i Scratchpad. Deixeu-lo marcat tret que vulgueu que Ace pugui editar una cadena de text JSON amb una clau «answer_code»", que s\'enviaria a una serialització de l\'Scratchpad.
 
-Si Aplica Twig a tot està seleccionat, l\'expansió de macros Twig s\'aplica al text de la pregunta, la resposta d\'exemple, la resposta precarregada, paràmetres de l\'IU i
-tots els camps dels casos de prova fent servir els paràmetres de la plantilla com a
-entorn. Habitualment haureu d\'activar Aplica Twig a tot si feu servir aleatorització
-en els paràmetres de la plantilla. Compte que aquesta expansió d\'Aplica Twig a tot
-ocorre quan la pregunta s\'inicialitza per primera vegada, mentre que l\'expansió Twig
-de la plantilla ocorre molt de temps després, quan l\'estudiant envia una resposta.
-L\'entorn per expandir la plantilla inclou la variable Twig QUESTION (un subconjunt
-de tot el registre de la pregunta), alguns camps del qual poden haver estat expandits
-com a resultat d\'Aplica Twig a tot.
 
-El text en el camp de paràmetres de la plantilla ha de ser o bé un text JSON o
-ha d\'avaluar a un text JSON quan és preprocessat pel preprocessador especificat.
-Aneu amb compte que si feu servir un preprocessador diferent de Twig, això
-farà que s\'enviï una tasca a la zona de proves Jobe abans que la pregunta pugui
-ser tan sols mostrada. Vegeu
+Si Aplica Twig a tot està seleccionat, l\'expansió de macros Twig s\'aplica al text de la pregunta, la resposta d\'exemple, la resposta precarregada, els paràmetres de la IU i tots els camps dels casos de prova fent servir els paràmetres de la plantilla com a entorn. Habitualment haureu d\'activar Aplica Twig a tot si feu servir aleatorització en els paràmetres de la plantilla. Tingueu en compte que aquesta expansió d\'Aplica Twig a tot ocorre quan la pregunta s\'inicialitza per primera vegada, mentre que l\'expansió Twig de la plantilla ocorre molt de temps després, quan l\'estudiant tramet una resposta.
+L\'entorn per expandir la plantilla inclou la variable Twig QUESTION (un subconjunt de tot el registre de la pregunta), alguns camps del qual poden haver estat expandits com a resultat d\'Aplica Twig a tot.
+
+El text al camp de paràmetres de la plantilla ha de ser o bé un text JSON o ha d\'avaluar un text JSON quan és preprocessat pel preprocessador especificat.
+Aneu amb compte perquè si feu servir un preprocessador diferent de Twig, això farà que s\'enviï una tasca a la zona de proves Jobe abans que la pregunta ni tan sols es pugui mostrar. Vegeu
 <a href="https://coderunner.org.nz/mod/url/view.php?id=199">la documentació</a>
 per saber com escriure un preprocessador diferent de Twig.
 
-Si feu servir un preprocessador diferent de Twig, normalment és necessari enviar
-una tasca a la zona de proves Jobe per cada pregunta per cada estudiant quan
-comencen el qüestionari. Si <i>Avalua per estudiant</i> està sense seleccionar,
-s\'enviarà una sola tasca quan la pregunta es desa; això és una operació amb un
-cost baix, però no és normalment útil, ja que essencialment impedeix fer servir
-cap classe d\'aleatorització per estudiant. Així i tot, pot ser útil per generar
-contingut de la pregunta en alguns casos.';
+Si feu servir un preprocessador diferent de Twig, normalment és necessari trametre una tasca a la zona de proves Jobe per a cada pregunta per a cada estudiant quan comencen el qüestionari. Si <i>Avalua per estudiant</i> està sense seleccionar, es trametrà una sola tasca quan la pregunta es desi; això és una operació amb un cost baix, però no és normalment útil, ja que essencialment impedeix fer servir cap classe d\'aleatorització per estudiant. Així i tot, pot ser útil per generar el contingut de la pregunta en alguns casos.';
 $string['twigerror'] = 'Error de Twig {$a}';
 $string['twigerrorintest'] = 'Error de Twig en processar aquesta prova {$a}';
 $string['type_header'] = 'Tipus de pregunta CodeRunner';
 $string['typename'] = 'Tipus de pregunta';
-$string['typerequired'] = 'Seleccioneu el tipus de pregunta (llenguatge, format, etc)';
-$string['ui_fallback'] = 'Fent servir alternativament una caixa de text en cru.';
-$string['uichanged'] = 'L\'IU ha canviat. Deseu i recarregueu la pàgina per veure i editar els paràmetres de l\'IU disponibles (si n\'hi ha cap).';
+$string['typerequired'] = 'Seleccioneu el tipus de pregunta (llenguatge, format, etc.)';
+$string['ui_fallback'] = 'S\'està fent servir un quadre de text en brut de manera alternativa.';
+$string['uichanged'] = 'La IU ha canviat. Deseu i recarregueu la pàgina per veure i editar els paràmetres de la IU disponibles (si n\'hi ha cap).';
 $string['uicontrols'] = 'IU d\'entrada';
-$string['uicontrols_help'] = 'Seleccioneu els controladors de la Interfície d\'Usuari per a la resposta de l\'estudiant
-i la plantilla de l\'autor de la pregunta.
+$string['uicontrols_help'] = 'Seleccioneu els controladors de la interfície d\'usuari per a la resposta de l\'estudiant i la plantilla de l\'autor de la pregunta.
 
-El quadre combinat de la resposta de l\'estudiant conté una llista dels connectors
-disponibles. Per a preguntes de programació, l\'editor Ace és habitualment utilitzat.
-El valor \'Cap\' pot seleccionar-se per fer servir una caixa de text en cru.
+El quadre combinat de la resposta de l\'estudiant conté una llista dels connectors disponibles. L\'editor Ace s’utilitza de manera habitual per a les preguntes de programació,.
+El valor «Cap» es pot seleccionar per fer servir un quadre de text en brut.
 
-El valor \'Graf\' fa que l\'usuari tingui disponible una interfície d\'usuari simple amb la
-qual dibuixar grafs per fer-se servir en preguntes que demanin a l\'estudiant que
-dibuixi un graf segons alguna especificació; com preguntes que habitualment tenen
-un únic cas de prova, amb una plantilla que analitza la representació serialitzada
-del graf i imprimeix un missatge com "OK" si la resposta és correcta o un
-missatge informatiu adient si no.
+El valor «Graf» proporciona a l\'usuari una interfície d\'usuari simple amb la qual pot dibuixar grafs que es poden emprar en aquelles preguntes que demanin a l\'estudiant que dibuixi un graf d’acord amb alguna especificació, com ara les preguntes que habitualment tenen un únic cas de prova, amb una plantilla que analitza la representació serialitzada
+del graf i imprimeix un missatge com ara «OK» si la resposta és correcta o, altrament, un missatge informatiu adient.
 
-L\'element d\'interfície d\'usuari \'Taula\', que mostra una taula de caixes de text perquè
-l\'estudiant les ompli. Es fa servir al tipus de pregunta \'python3_program_testing\',
-que està disponible a les preguntes d\'exemple a GitHub.
+L\'element d\'interfície d\'usuari «Taula», mostra una taula de quadres de text perquè l\'estudiant els empleni. Es fa servir al tipus de pregunta «python3_program_testing»,
+que es troba disponible a les preguntes d\'exemple a GitHub.
 
-Les interfícies d\'usuari \'Gapfiller\' i \'Html\' estan documentades a la documentació
-principal de CodeRunner a https://github.com/trampgeek/moodle-qtype_coderunner#code-runner.
+Les interfícies d\'usuari «Gapfiller» i «Html» es troben documentades a la documentació principal de CodeRunner a https://github.com/trampgeek/moodle-qtype_coderunner#code-runner.
 
-Els estudiants amb problemes de vista o els autors que vulguin inspeccionar les
-serialitzacions (per exemple, per entendre la representació feta servir per l\'IU Graf)
-poden activar i desactivar l\'ús de tots els connectors d\'IU a la pàgina actual amb
+Els estudiants amb problemes de visió o els autors que vulguin inspeccionar les serialitzacions (per exemple, per entendre la representació feta servir per la IU Graf) poden activar i desactivar l\'ús de tots els connectors d\'IU a la pàgina actual amb
 Ctrl-Alt-M.
 
-Sigui quin sigui el valor triat per la resposta de l\'estudiant també es farà servir
-al formulari d\'edició per als camps de la resposta d\'exemple i la resposta
-precarregada.
+Sigui quin sigui el valor triat per a la resposta de l\'estudiant, també es farà servir al formulari d\'edició per als camps de la resposta d\'exemple i la resposta precarregada.
 
-Si \'La plantilla fa servir Ace\' està seleccionat, l\'editor de codi Ace es farà servir tant
-a les caixes de la plantilla com a la dels paràmetres de la plantilla. Si no, es farà
-servir una caixa de text en cru.';
+Si «La plantilla fa servir Ace» s’ha seleccionat, l\'editor de codi Ace es farà servir tant als quadres de la plantilla com als dels paràmetres de la plantilla. Altrament, es farà servir un quadre de text en brut.';
 $string['uiparamdefault'] = 'Per defecte';
 $string['uiparamdesc'] = 'Descripció';
-$string['uiparametergroup'] = 'Paràmetres de l\'IU';
-$string['uiparametergroup_help'] = 'Un text JSON que defineix els valors dels paràmetres de la Interfície d\'Usuari
-que requereixen el connector de l\'IU o que sobreescriuen els valors per defecte.
+$string['uiparametergroup'] = 'Paràmetres de la IU';
+$string['uiparametergroup_help'] = 'Un text JSON que defineix els valors dels paràmetres de la interfície d\'usuari que requereixen el connector de la IU o que sobreescriuen els valors per defecte.
 Per exemple, per dibuixar nodes més grossos en fer servir la GraphUI: \'{"noderadius": 30}\'';
-$string['uiparameters'] = 'Paràmetres de l\'IU (JSON)';
-$string['uiparametertablehead'] = 'La IU {$a->uiname} pren els següents paràmetres:';
+$string['uiparameters'] = 'Paràmetres de la IU (JSON)';
+$string['uiparametertablehead'] = 'La IU {$a->uiname} admet els paràmetres següents:';
 $string['uiparamname'] = 'Nom';
 $string['unauthorisedbulktest'] = 'No teniu accés a cap pregunta CodeRunner';
 $string['unauthoriseddbaccess'] = 'No teniu permís per executar aquest script';
-$string['unknowncombinatorgraderfield'] = 'Nom de camp desconegut ({$a->fieldname}) en la sortida de la plantilla d\'avaluació';
-$string['unknownerror'] = 'Ha ocorregut un error inesperat. La zona de proves pot estar no disponible. Torneu-ho a provar d\'aquí a un poc de temps.';
-$string['unknownuiplugin'] = 'S\'ha demanat informació sobre un plugin desconegut ({$a->pluginname}).';
-$string['unserializefailed'] = 'Els resultats emmagatzemats no han pogut ser deserialitzats. Voleu provar de requalificar?';
+$string['unknowncombinatorgraderfield'] = 'Nom de camp desconegut ({$a->fieldname}) a la sortida de la plantilla d\'avaluació';
+$string['unknownerror'] = 'S\'ha produït un error inesperat. La zona de proves pot no estar disponible. Torneu a intentar-ho d\'aquí a una estona.';
+$string['unknownuiplugin'] = 'S\'ha demanat informació sobre el connector desconegut següent: ({$a->pluginname}).';
+$string['unserializefailed'] = 'No s\'han pogut desserialitzar els resultats emmagatzemats. Voleu provar de requalificar?';
 $string['useace'] = 'La plantilla fa servir Ace';
 $string['useasexample'] = 'Fes servir com a exemple';
 $string['validateonsave'] = 'Valida en desar';
@@ -1204,9 +1156,9 @@ $string['wsloggingenable'] = 'Registra l\'ús del servei web de la zona de prove
 $string['wsloggingenable_desc'] = 'Si aquesta opció està seleccionada, s\'enregistraran totes les execucions a través del servei web de la zona de proves. Aquesta opció ha d\'estar activada perquè funcioni la limitació per usuari.';
 $string['wsmaxcputime'] = 'Màxim temps de CPU (segons)';
 $string['wsmaxcputime_desc'] = 'Limita el temps màxim de CPU que l\'execució en un servei web pot fer servir, encara que estableixi el paràmetre de la zona de proves de temps de CPU.';
-$string['wsmaxhourlyrate'] = 'Quantitat màxima d\'enviaments per hora';
-$string['wsmaxhourlyrate_desc'] = 'Si un usuari intenta sobrepassar aquesta quantitat d\'enviaments en una hora, no es permetrà que en faci més. 0 per no limitar-les.';
-$string['wsnoaccess'] = 'Només usuaris registrats i no-visitants poden accedir a aquesta funcionalitat';
-$string['wsnolanguage'] = 'Llenguatge "{$a}" desconegut';
-$string['wssubmissionrateexceeded'] = 'Heu excedit la quantitat màxima d\'enviaments per hora \'Prova-ho!\'. Accés denegat.';
+$string['wsmaxhourlyrate'] = 'Quantitat màxima de trameses per hora';
+$string['wsmaxhourlyrate_desc'] = 'Si un usuari intenta sobrepassar aquesta quantitat de trameses en una hora, no es permetrà que en faci més. 0 per no limitar-les.';
+$string['wsnoaccess'] = 'Només els usuaris registrats i no-visitants poden accedir a aquesta funcionalitat';
+$string['wsnolanguage'] = 'El llenguatge «{$a}» no es coneix';
+$string['wssubmissionrateexceeded'] = 'Heu excedit la quantitat màxima de trameses per hora «Prova-ho!». Accés denegat.';
 $string['xmlcoderunnerformaterror'] = 'Error de format XML a la pregunta CodeRunner';

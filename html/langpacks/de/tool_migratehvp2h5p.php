@@ -32,9 +32,9 @@ $string['copy2cb'] = 'Sollen diese Inhalte zum Inhaltsspeicher hinzugefügt werd
 $string['copy2cb_no'] = 'Nein, sie sollen nur in der Aktivität angelegt werden.';
 $string['copy2cb_yeswithlink'] = 'Ja, und in der Aktivität soll ein Link auf diese Dateien verwendet werden.';
 $string['copy2cb_yeswithoutlink'] = 'Ja, aber in der Aktivität soll eine Kopie verwendet werden (Änderungen im Inhaltsspeicher wirken sich nicht auf die Aktivität aus).';
-$string['error_contenttypeh5p_disabled'] = 'Der H5P-Inhaltsspeichertyp ist deaktiviert. Er muss aktiviert werden, um Aktivitäten von mod_hvp zu migrieren und Sie auch zum Inhaltsspeicher hinzuzufügen. Sie können diesen Inhaltstyp aktivieren unter \'Website-Administration | Plugins | Inhaltsspeicher | Inhaltstypen verwalten\' oder starten Sie das Migrationstool noch einmal und wählen Sie \'Nein, Sie sollen nur in der Aktivität angelegt werden\'. (oder \'copy2cb=0\', wenn Sie CLI nutzen) um zu vermeiden, dass Dateien im Inhaltsspeicher angelegt werden.';
-$string['error_modh5pactivity_disabled'] = 'Die H5P-Aktivität ist deaktiviert. Sie muss aktiviert sein, um Aktivitäten von mod_hvp zu migrieren';
-$string['event_hvp_migrated'] = 'mod_hvp zu mod_h5pactivity migriert';
+$string['error_contenttypeh5p_disabled'] = 'Der H5P-Inhaltsspeichertyp ist deaktiviert. Er muss aktiviert werden, um hvp-Aktivitäten zu migrieren und zum Inhaltsspeicher hinzuzufügen. Sie können diesen Inhaltstyp aktivieren unter \'Website-Administration | Plugins | Inhaltsspeicher | Inhaltstypen verwalten\' oder starten Sie das Migrationstool noch einmal und wählen Sie \'Nein, Sie sollen nur in der Aktivität angelegt werden\'. (oder \'copy2cb=0\', wenn Sie CLI nutzen) um zu vermeiden, dass Dateien im Inhaltsspeicher angelegt werden.';
+$string['error_modh5pactivity_disabled'] = 'Die H5P-Aktivität ist deaktiviert. Sie muss aktiviert sein, um hvp-Aktivitäten zu migrieren';
+$string['event_hvp_migrated'] = 'hvp zu h5pactivity migriert';
 $string['graded'] = 'Teilnehmer/innen mit Bewertung';
 $string['hvpactivities'] = 'Ausstehende hvp-Aktivitäten';
 $string['id'] = 'ID';
@@ -44,13 +44,13 @@ $string['keeporiginal_hide'] = 'Original-Aktivität verbergen';
 $string['keeporiginal_nothing'] = 'Original-Aktivität belassen, wie sie ist';
 $string['migrate'] = 'Migrieren';
 $string['migrate_fail'] = 'Fehler bei Migrieren der hvp-Aktivität mit der ID {$a}';
-$string['migrate_gradesoverridden'] = 'Die Original mod_hvp Aktivität "{$a->name}", with id {$a->id}, wurde erfolgreich migriert. Allerdings wurden einige Bewertungsinformationen überschrieben, wie z.B. feedback, das nicht migriert wurde, weil die Original-Aktivität mit einem unzulässigen Bewertungsmaximum konfiguriert wurde (es muss größer als 0 sein, um in die Bewertungen migriert werden zu können).';
-$string['migrate_gradesoverridden_notdelete'] = 'Die Original mod_hvp Aktivität "{$a->name}", with id {$a->id}, wurde erfolgreich migriert. Allerdings wurden einige Bewertungsinformationen überschrieben, wie z.B. feedback, das nicht migriert wurde, weil die Original-Aktivität mit einem unzulässigen Bewertungsmaximum konfiguriert wurde (es muss größer als 0 sein, um in die Bewertungen migriert werden zu können).
+$string['migrate_gradesoverridden'] = 'Die Original hvp-Aktivität "{$a->name}" mit der ID {$a->id} wurde erfolgreich migriert. Allerdings wurden einige Bewertungsinformationen überschrieben, wie z.B. feedback, das nicht migriert wurde, weil die Original-Aktivität mit einem unzulässigen Bewertungsmaximum konfiguriert wurde (es muss größer als 0 sein, um in die Bewertungen migriert werden zu können).';
+$string['migrate_gradesoverridden_notdelete'] = 'Die Original hvp-Aktivität "{$a->name}" mit der ID {$a->id} wurde erfolgreich migriert. Allerdings wurden einige Bewertungsinformationen überschrieben, wie z.B. feedback, das nicht migriert wurde, weil die Original-Aktivität mit einem unzulässigen Bewertungsmaximum konfiguriert wurde (es muss größer als 0 sein, um in die Bewertungen migriert werden zu können).
 Die Original-Aktivität wurde verborgen anstatt entfernt zu werden.';
-$string['migrate_success'] = 'hvp-Aktivität mit ID {$a} erfolgreich migriert';
+$string['migrate_success'] = 'hvp-Aktivität mit der ID {$a} erfolgreich migriert';
 $string['nohvpactivities'] = 'Es gibt keine hvp-Aktivität, die als h5pactivity migriert werden könnte.';
-$string['pluginname'] = 'Inhalt von mod_hvp zu mod_h5pactivity migrieren';
-$string['privacy:metadata'] = 'Das Plugin "Inhalt von mod_hvp zu mod_h5pactivity migrieren" speichert keine personenbezogenen Daten';
+$string['pluginname'] = 'Inhalt von hvp zu h5pactivity migrieren';
+$string['privacy:metadata'] = 'Das Plugin "Inhalt von hvp zu h5pactivity migrieren" speichert keine personenbezogenen Daten';
 $string['savedstate'] = 'Gespeicherte Zustände';
-$string['selecthvpactivity'] = 'hvp Aktivität {$a} wählen';
+$string['selecthvpactivity'] = 'hvp-Aktivität {$a} wählen';
 $string['settings'] = 'Migrationseinstellungen';

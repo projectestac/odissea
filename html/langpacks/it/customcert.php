@@ -141,7 +141,6 @@ $string['invalidmargin'] = 'Il margine deve essere un numero maggiore di 0.';
 $string['invalidposition'] = 'Per favore inserisci un numero positivo per la posizione {$a}.';
 $string['invalidwidth'] = 'La larghezza deve essere un numero maggiore di 0.';
 $string['landscape'] = 'Orizzontale';
-$string['languageoptions'] = 'Forza la lingua del certificato';
 $string['leftmargin'] = 'Margine sinistro';
 $string['leftmargin_help'] = 'Questo è il margine sinistro del certificato in mm.';
 $string['listofissues'] = 'Destinatari: {$a}';
@@ -227,8 +226,6 @@ $string['useadhoc'] = 'Usa l\'invio di certificati e-mail come attività ad hoc'
 $string['useadhoc_desc'] = 'Quando è abilitato, le e-mail relative ai certificati saranno gestite immediatamente attraverso un\'attività ad hoc creata per ogni emissione. Quando è disattivata, le e-mail saranno gestite dalla normale attività pianificata.
 
 L\'attivazione di questa opzione può migliorare le prestazioni dell\'attività pianificata scaricando l\'elaborazione delle e-mail su attività ad hoc.';
-$string['userlanguage'] = 'Utilizzare le preferenze dell\'utente';
-$string['userlanguage_help'] = 'È possibile forzare la lingua del certificato per ignorare le preferenze linguistiche dell\'utente.';
 $string['verified'] = 'Verificato';
 $string['verify'] = 'Verifica';
 $string['verifyallcertificates'] = 'Permette la verifica di tutti i certifcertificati';

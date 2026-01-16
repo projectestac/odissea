@@ -26,7 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['placeholder'] = 'Τί έχετε να κάνετε;';
-$string['placeholdermore'] = 'Πληκτρολογήστε κάτι εδώ και πατήστε το πλήκτρο Προσθήκη';
 $string['pluginname'] = 'Η λίστα σας Προς ενέργεια';
 $string['privacy:metadata:db:blocktodo'] = 'Αποθήκευση αντικειμένων χρηστών Προς ενέργεια.';
 $string['privacy:metadata:db:blocktodo:done'] = 'Έχει το στοιχείο επισημανθεί ως ολοκληρωμένο;';

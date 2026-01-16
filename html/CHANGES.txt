@@ -4,6 +4,46 @@ More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/agora_moodle2
 
 
+Changes 26.01.13
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 4.5.8+
+- Updated langpacks
+- Atto editor: Disallow all admins to activate video recording in recordrtc
+- Tiny editor: Allow all admins to access to configuration
+- Attendance: Upgraded module
+- Coderunner: Upgraded question type
+- coursequotas: Fixed deletion and download of files
+- Journal: Upgraded module
+- Local Àgora: Updated cache definitions for Moodle 4.5.8+
+- Questionnaire: Upgraded module
+- Simple course format: Fixes for Moodle 4.5
+- Wiris: Upgraded all components
+- Added patch to support running adhoc tasks via web in Àgora
+
+
+Changes 25.12.18
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 4.5.8+
+- Updated langpacks
+- config.php: Increased size of some static cache variables
+- Replaced print_error() in XTEC patches
+- Updated mimetex compiled file
+- attendance: Upgraded module
+- boost_union: Upgraded theme
+- Coderunner: Updated question type
+- Grade me: Added block
+- journal: Upgraded module
+- Local Àgora: Updated cache definitions for Moodle 4.5.7
+- local_rcommon: Fixes for Moodle 4.5
+- migratehvp2h5p: Upgraded admin tool
+- QV: Replaced print_error() with exception
+- redislock: Upgraded local plugin
+- Repository Google Docs: Fix for MDL-80447
+- simple: Upgraded course format
+- tiles: Upgraded course format
+- xtecboost: Removed unused advice code and connection to Nodes
+
+
 Changes 25.10.22
 ---------------------------------------------------------------------------------------
 - Updated langpacks

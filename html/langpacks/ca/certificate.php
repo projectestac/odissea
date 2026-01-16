@@ -42,7 +42,7 @@ $string['borderlines'] = 'Línies';
 $string['borderstyle'] = 'Imatge de vora';
 $string['borderstyle_help'] = 'L\'opció d\'imatge de vora us permet triar una imatge de vora de la carpeta certificate/pix/borders. Seleccioneu la imatge de vora que voleu a les vores del certificat o seleccioneu sense vora.';
 $string['certificate'] = 'Verificació de codi de certificat:';
-$string['certificate:addinstance'] = 'Afegir una instància de certificat';
+$string['certificate:addinstance'] = 'Afegeix una instància de certificat';
 $string['certificate:manage'] = 'Gestiona una instància de certificat';
 $string['certificate:printteacher'] = 'Aparèixer com a professor en el certificat si l\'opció «imprimir professor» es troba activada';
 $string['certificate:student'] = 'Recupera un certificat';
@@ -51,15 +51,15 @@ $string['certificatename'] = 'Nom del certificat';
 $string['certificatereport'] = 'Informe de certificats';
 $string['certificatesfor'] = 'Certificats per';
 $string['certificatetype'] = 'Tipus de certificat';
-$string['certificatetype_help'] = 'Aquí és on es determina la disposició del certificat. La carpeta tipus de certificat inclou quatre certificats per defecte:
+$string['certificatetype_help'] = 'Aquí és on determineu la disposició del certificat. La carpeta tipus de certificat inclou quatre certificats per defecte:
 «A4 Embedded» imprimeix en paper de mida A4 amb fonts incrustades.
 A4 Non-Embedded» Imprimeix en paper de mida A4 sense fonts incrustades.
 «Letter Embedded» imprimeix en paper de mida carta amb fonts incrustades.
 «Letter Non-Embedded» imprimeix en paper mida carta sense fonts incrustades.
 
-Els tipus «sense fonts incrustades» utilitzen les fonts Helvetica i Times. Si creieu que els vostres usuaris no tindran aquestes fonts en el seu equip o si el seu vostre utilitza caràcters o símbols que no estan inclosos a les fonts Helvetica i Times, aleshores escolliu un tipus amb fonts incrustades. Aquests darrers utilitzen les fonts DejaVuSans i DejaVuSerif. Això farà que l\'arxiu pdf sigui bastant més gran; per aquest motiu no es recomana l\'ús d\'un tipus incrustat llevat que que sigui realment necessari.
+Els tipus «sense fonts incrustades» utilitzen les fonts Helvetica i Times. Si creieu que els vostres usuaris no tindran aquestes fonts en el seu equip o si el vostre llenguatge utilitza caràcters o símbols que no estan inclosos a les fonts Helvetica i Times, aleshores escolliu un tipus amb fonts incrustades. Aquests darrers utilitzen les fonts DejaVuSans i DejaVuSerif. Això farà que el fitxer PDF sigui més aviat gran; per aquest motiu, no es recomana l\'ús d\'un tipus incrustat llevat que que sigui realment necessari.
 
-Es poden afegir noves carpetes amb tipus a la carpeta certificate/type. El nom de la carpeta i les noves cadenes d\'idioma per al nou tipus s\'han d\'agregar a l\'arxiu d\'idioma del certificat.';
+Es poden afegir carpetes amb tipus noves a la carpeta certificate/type. El nom de la carpeta i les cadenes d\'idioma noves per al tipus nou s\'han d\'afegir al fitxer d\'idioma del certificat.';
 $string['certify'] = 'Aquest document certifica que';
 $string['code'] = 'Codi';
 $string['completiondate'] = 'Compleció del curs';

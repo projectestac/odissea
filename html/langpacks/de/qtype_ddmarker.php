@@ -56,11 +56,11 @@ Die drei Formen verwenden die Koordinaten auf folgende Weise:
 * Polygon: x1, y1; x2, y2; ... xn, yn <br />z.B.: <code>20, 60; 100, 60; 20, 100</code>
 
 Wenn Sie einen Markierungstext wählen, wird dieser Text der Form in der Vorschau hinzugefügt.';
-$string['followingarewrong'] = 'Die Markierungensind in den falschen Bereich gesetzt: {$a}.';
+$string['followingarewrong'] = 'Die Markierungen sind in den falschen Bereich gesetzt: {$a}.';
 $string['followingarewrongandhighlighted'] = 'Falsch platzierte Markierungen: {$a}. Hervorgehobene Markierungen werden jetzt an den richtigen Stellen angezeigt. Klicken Sie auf die Markierung, um den erlaubten Bereich hervorzuheben.';
 $string['formerror_dragrequired'] = 'Sie müssen mindestens eine Markierung für diese Frage definieren.';
 $string['formerror_droprequired'] = 'Sie müssen mindestens einen Ablagebereich für diese Frage definieren.';
-$string['formerror_nobgimage'] = 'Sie müssen ein Hintergrundbild für die Drag&drop-Fläche wählen.';
+$string['formerror_nobgimage'] = 'Sie müssen ein Hintergrundbild für den Drag&drop-Bereich wählen.';
 $string['formerror_noitemselected'] = 'Sie haben einen Ablegebereich festgelegt, aber kein Objekt ausgewählt, welches in den Bereich gezogen werden soll.';
 $string['formerror_nosemicolons'] = 'Ihre Koordinaten-Zeichenkette enthält keine \';\'. Ihre Koordinaten für ein(en) {$a->shape} müssen als {$a->coordsstring} ausgedrückt werden.';
 $string['formerror_onlysometagsallowed'] = 'Nur \'{$a}\' Tags sind in der Beschreibung für eine Markierung erlaubt.';
@@ -78,17 +78,17 @@ $string['markers'] = 'Markierungen';
 $string['nolabel'] = 'Kein Beschriftungstext';
 $string['noofdrags'] = 'Anzahl';
 $string['pleasedragatleastonemarker'] = 'Die Antwort ist nicht vollständig. Sie müssen mindestens eine Markierung auf das Bild setzen.';
-$string['pluginname'] = 'Drag&drop-Objekte';
-$string['pluginname_help'] = 'Drag&drop-Objekte benötigen Platzhalter, um Textfelder in die vorgesehenen Anlegebereiche auf dem Hintergrundbild verschieben zu können.';
+$string['pluginname'] = 'Drag&drop-Markierungen';
+$string['pluginname_help'] = 'Drag&drop-Markierungen benötigen Platzhalter, um Textfelder in die vorgesehenen Anlegebereiche auf dem Hintergrundbild verschieben zu können.';
 $string['pluginname_link'] = 'question/type/ddmarker';
-$string['pluginnameadding'] = 'Drag&drop-Objekte hinzufügen';
-$string['pluginnameediting'] = 'Drag&drop-Objekte bearbeiten';
-$string['pluginnamesummary'] = 'Objekte werden per Drag&drop auf ein Hintergrundbild gezogen.
+$string['pluginnameadding'] = 'Drag&drop-Markierungen hinzufügen';
+$string['pluginnameediting'] = 'Drag&drop-Markierungen bearbeiten';
+$string['pluginnamesummary'] = 'Markierungen werden per Drag&drop auf ein Hintergrundbild gezogen.
 
 Hinweis: Dieser Fragetyp ist für sehbehinderte Nutzer/innen nicht barrierefrei.';
 $string['previewareaheader'] = 'Vorschau';
-$string['previewareamessage'] = 'Wählen Sie ein Hintergrundbild, geben Sie Textfelder als Objekte an und legen Sie die Ablagebereiche auf dem Hintergrundbild fest, auf welche die Objekte gezogen werden sollen.';
-$string['privacy:metadata'] = 'Das Frageformat "Drag&drop-Objekte" erlaubt es Frageautor/innen, standardmäßige Optionen als Nutzereinstellungen zu setzen.';
+$string['previewareamessage'] = 'Wählen Sie ein Hintergrundbild, geben Sie Textfelder für Markierungen an und legen Sie die Ablagebereiche auf dem Hintergrundbild fest, auf welche die Objekte gezogen werden sollen.';
+$string['privacy:metadata'] = 'Das Frageformat "Drag&drop-Markierungen" erlaubt es Frageautor/innen, standardmäßige Optionen als Nutzereinstellungen zu setzen.';
 $string['privacy:preference:defaultmark'] = 'Die Standardmarkierung wird für eine bestimmte Frage gesetzt.';
 $string['privacy:preference:penalty'] = 'Abzug für jeden falschen Versuch, wenn Fragen mit dem Verhalten "Interaktiv mit mehreren Versuchen" oder "Adaptiver Modus" ausgeführt werden.';
 $string['privacy:preference:shuffleanswers'] = 'Gibt an, ob die Antworten automatisch gemischt werden sollen.';
@@ -105,7 +105,7 @@ $string['shape_rectangle_coords'] = 'x,y;b,h - In dieser Liste sind x,y die Koor
 $string['shape_rectangle_lowercase'] = 'rectangle';
 $string['showmisplaced'] = 'Kennzeichnen Sie die Ablegebereiche auf welche nicht die richtige Markierung gelegt wurde.';
 $string['shuffleimages'] = 'Verschiebbare Elemente bei jedem Versuch zufällig anordnen';
-$string['stateincorrectlyplaced'] = 'Zeige, welche Markierungen falsch plaziert wurden.';
+$string['stateincorrectlyplaced'] = 'Markierungen anzeigen, die falsch plaziert wurden.';
 $string['summariseplace'] = '{$a->no}. {$a->text}';
 $string['summariseplaceno'] = 'Dropzone {$a}';
 $string['ytop'] = 'Oben';

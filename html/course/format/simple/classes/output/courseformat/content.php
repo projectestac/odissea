@@ -18,9 +18,10 @@
  * Contains the default content output class.
  *
  * @package   format_simple
- * @copyright 2012-onwards UPCnet
- * @author    Pau Ferrer Ocaña pau.ferrer-ocana@upcnet.es, Jaume Fernàndez Valiente jfern343@xtec.cat,
- *            Marc Espinosa Zamora marc.espinosa.zamora@upcnet.es, Israel Forés Monzó israel.fores@ithinkupc.com
+ * @copyright 2012 onwards UPCnet / IThinkUPC
+ * @author    Pau Ferrer Ocaña pau.ferrer-ocana@upcnet.es
+ * @author    Israel Forés Monzó israel.fores@ithinkupc.com
+ * @author    Toni Ginard toni.ginard@ithinkupc.com
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -28,25 +29,27 @@ namespace format_simple\output\courseformat;
 
 use core_courseformat\output\local\content as content_base;
 use renderer_base;
+use stdClass;
 
 /**
  * Base class to render a course content.
- *
- * @copyright 2012-onwards UPCnet
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class content extends content_base {
+
+    /**
+     * @var bool Topic format has also added section after each topic.
+     */
+    protected $hasaddsection = true;
+
     /**
      * Export this data so it can be used as the context for a mustache template (core/inplace_editable).
      *
      * @param renderer_base $output typically, the renderer that's calling this function
-     * @return object|\stdClass data context for a mustache template
+     * @return stdClass data context for a mustache template
      */
-    public function export_for_template(renderer_base $output) {
+    public function export_for_template(renderer_base $output): stdClass
+    {
         global $PAGE;
-
-        $PAGE->requires->js_call_amd('format_topics/mutations', 'init');
-        $PAGE->requires->js_call_amd('format_topics/section', 'init');
 
         $data = parent::export_for_template($output);
 

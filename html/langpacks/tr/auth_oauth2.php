@@ -92,7 +92,7 @@ Lütfen giriş sayfasındaki bağlantıyı kullanarak daha önce olduğu gibi gi
 $string['emailpasswordchangeinfosubject'] = '{$a}: Şifre değişim bilgisi';
 $string['info'] = 'Harici hesap';
 $string['issuer'] = 'OAuth 2 hizmeti';
-$string['issuernologin'] = 'Bu veren, giriş yapmak için kullanılamaz';
+$string['issuernologin'] = 'Bu sağalayıcı, giriş yapmak için kullanılamaz';
 $string['key'] = 'Anahtar';
 $string['linkedlogins'] = 'Bağlantılı girişler';
 $string['linkedloginshelp'] = 'Bağlantılı girişlerle ilgili yardım';

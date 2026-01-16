@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addsection'] = 'Додати тиждень';
 $string['automaticenddate'] = 'Розрахуйте дату закінчення за кількістю розділів';
 $string['automaticenddate_help'] = 'Якщо ввімкнено, дата закінчення курсу буде автоматично розрахована на основі кількості розділів і дати початку курсу.';
 $string['currentsection'] = 'Цей тиждень';

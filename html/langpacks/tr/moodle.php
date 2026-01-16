@@ -974,7 +974,7 @@ $string['forcepasswordchangecheckfull'] = '{$a} şifre değişimini zorunlu  yap
 $string['forcepasswordchangenot'] = 'Şifrenin {$a} olması dayatılamadı';
 $string['forcepasswordchangenotice'] = 'Devam etmek için şifrenizi değiştirmelisiniz.';
 $string['forcepasswordresetfailurenotice'] = 'Mevcut şifreniz artık ayarlanan şifre politikasını geçemez. Lütfen yardım için Moodle yöneticinizle iletişime geçin.    {$a}';
-$string['forcepasswordresetnotice'] = 'Mevcut şifreniz artık ayarlanan şifre politikasını geçmiyor, oturum açmak için şifrenizi sıfırlamalısınız.  {$a}';
+$string['forcepasswordresetnotice'] = 'Mevcut şifreniz artık şifre politikasını sağlamıyor. Oturum açabilmek için şifrenizi sıfırlamalısınız.  {$a}';
 $string['forcetheme'] = 'Temayı zorunlu tut';
 $string['forgotaccount'] = 'Şifrenizi mi unuttunuz?';
 $string['forgotten'] = 'Kullanıcı adı veya şifrenizi mi unuttunuz?';
@@ -1542,16 +1542,16 @@ $string['newusernewpasswordtext'] = 'Merhaba {$a->firstname},
 
 \'{$a->sitename}\' adresinde sizin için bir hesap oluşturuldu.
 
-   kullanıcı adı: {$a->kullanıcı adı}
+   kullanıcı adı: {$a->username}
    şifre: {$a->newpassword}
 
 (İlk kez giriş yaptığınızda şifrenizi değiştirmeniz istenecektir.)
 
 \'{$a->sitename}\' kullanmaya başlamak için şu adreste oturum açın:
-   {$a->bağlantı}
+   {$a->link}
 
 Yardıma ihtiyacınız varsa site yöneticisiyle iletişime geçin.
-{$a->imza at}';
+{$a->signoff}';
 $string['newusers'] = 'Yeni kullanıcılar';
 $string['newwindow'] = 'Yeni pencere';
 $string['next'] = 'Sonraki';
@@ -1652,6 +1652,7 @@ $string['oneitemfound'] = '1 adet öge bulundu.';
 $string['opendrawerblocks'] = 'Blok çekmecesini aç';
 $string['opendrawerindex'] = 'Kurs dizinini aç';
 $string['opensinnewwindow'] = 'Yeni pencerede açılır';
+$string['opensinnewwindowbracketed'] = '(Yeni pencerede açılır)';
 $string['operator_and'] = 've';
 $string['operator_andnot'] = 've';
 $string['operator_or'] = 'veya';

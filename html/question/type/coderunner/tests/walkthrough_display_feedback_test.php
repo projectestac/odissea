@@ -22,7 +22,7 @@ global $CFG;
 require_once($CFG->dirroot . '/question/engine/tests/helpers.php');
 require_once($CFG->dirroot . '/question/type/coderunner/tests/test.php');
 require_once($CFG->dirroot . '/question/type/coderunner/question.php');
-
+require_once($CFG->dirroot . '/question/type/coderunner/tests/walkthrough_testbase.php');
 
 /**
  * Use a walkthrough test to validate the new (2019) display-feedback options.
@@ -33,7 +33,7 @@ require_once($CFG->dirroot . '/question/type/coderunner/question.php');
  * @copyright  2019 Richard Lobb, The University of Canterbury
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class walkthrough_display_feedback_test extends \qbehaviour_walkthrough_test_base {
+class walkthrough_display_feedback_test extends walkthrough_testbase {
     protected function setUp(): void {
         parent::setUp();
         \qtype_coderunner_testcase::setup_test_sandbox_configuration();
@@ -44,7 +44,7 @@ class walkthrough_display_feedback_test extends \qbehaviour_walkthrough_test_bas
      *  displayfeedback set to 0 or 1, feedback (result table) is shown but
      *  not if display feedback is set to 2.
      */
-    public function test_display_feedback_adaptive() {
+    public function test_display_feedback_adaptive(): void {
         $q = \test_question_maker::make_question('coderunner', 'sqr');
         $this->assertEquals($q->displayfeedback, 1);
         $this->start_attempt_at_question($q, 'adaptive', 1);
@@ -70,7 +70,7 @@ class walkthrough_display_feedback_test extends \qbehaviour_walkthrough_test_bas
      *  behaviour - you have to explicitly set the displayoptions that
      *  (usually) correspond to that behaviour.
      */
-    public function test_display_feedback_deferred() {
+    public function test_display_feedback_deferred(): void {
         $q = \test_question_maker::make_question('coderunner', 'sqr');
         $q->displayfeedback = 0;  // Uses quiz feedback setting.
         $this->start_attempt_at_question($q, 'deferredfeedback', 1);

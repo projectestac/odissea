@@ -141,18 +141,6 @@ global $CFG;
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
     ),
-    'core/hookcallbacks' => 
-    array (
-      'mode' => 1,
-      'simplekeys' => true,
-      'simpledata' => true,
-      'staticacceleration' => false,
-      'canuselocalstore' => true,
-      'component' => 'core',
-      'area' => 'hookcallbacks',
-      'selectedsharingoption' => 2,
-      'userinputsharingkey' => '',
-    ),
     'core/questiondata' => 
     array (
       'mode' => 1,
@@ -860,6 +848,8 @@ global $CFG;
       'canuselocalstore' => true,
       'component' => 'core',
       'area' => 'routes',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
     ),
     'core/ai_policy' => 
     array (
@@ -871,6 +861,8 @@ global $CFG;
       'canuselocalstore' => true,
       'component' => 'core',
       'area' => 'ai_policy',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
     ),
     'core/ai_ratelimit' => 
     array (
@@ -880,6 +872,8 @@ global $CFG;
       'staticacceleration' => true,
       'component' => 'core',
       'area' => 'ai_ratelimit',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
     ),
     'core/navigation_cache' => 
     array (
@@ -936,6 +930,8 @@ global $CFG;
       'ttl' => 1209600,
       'component' => 'qtype_coderunner',
       'area' => 'coderunner_grading_cache',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
     ),
     'qtype_wq/images' => 
     array (
@@ -1166,6 +1162,8 @@ global $CFG;
       'staticaccelerationsize' => 30,
       'component' => 'format_tiles',
       'area' => 'formatoptionelementids',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
     ),
     'format_tiles/formatoptions' => 
     array (
@@ -1176,6 +1174,8 @@ global $CFG;
       'staticaccelerationsize' => 30,
       'component' => 'format_tiles',
       'area' => 'formatoptions',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
     ),
     'repository_googledocs/folder' => 
     array (
@@ -1372,6 +1372,17 @@ global $CFG;
       'staticacceleration' => false,
       'component' => 'theme_boost_union',
       'area' => 'hookoverrides',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+    ),
+    'theme_boost_union/fontawesomeicons' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'simpledata' => false,
+      'canuselocalstore' => true,
+      'component' => 'theme_boost_union',
+      'area' => 'fontawesomeicons',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
     ),

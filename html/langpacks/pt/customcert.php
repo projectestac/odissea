@@ -132,7 +132,6 @@ $string['invalidmargin'] = 'A margem tem de ser um número válido maior que 0.'
 $string['invalidposition'] = 'Selecione um número positivo para a posição {$a}.';
 $string['invalidwidth'] = 'A largura tem de ser um número válido maior que 0.';
 $string['landscape'] = 'Paisagem';
-$string['languageoptions'] = 'Forçar idioma do certificado';
 $string['leftmargin'] = 'Margem esquerda';
 $string['leftmargin_help'] = 'Tamanho da margem esquerda do certificado PDF (em mm).';
 $string['listofissues'] = 'Destinatários: {$a}';
@@ -209,8 +208,6 @@ $string['type'] = 'Tipo';
 $string['uploadimage'] = 'Carregar imagem';
 $string['uploadimagedesc'] = 'Esta hiperligação abre uma nova janela onde pode carregar imagens.
 As imagens carregadas por este método estarão disponíveis em todo o site para todos os utilizadores capazes de criar um Certificado Personalizado.';
-$string['userlanguage'] = 'Usar as preferências do utilizador';
-$string['userlanguage_help'] = 'Pode forçar o idioma do certificado a substituir as preferências de idioma do utilizador.';
 $string['verified'] = 'Verificado';
 $string['verify'] = 'Verificar';
 $string['verifyallcertificates'] = 'Permitir a verificação de todos os certificados';

@@ -153,6 +153,7 @@ $string['page-message-x'] = 'Tüm mesaj sayfaları';
 $string['participants'] = 'Katılımcılar';
 $string['pendingcontactrequests'] = 'Bekleyen {$a} iletişim isteği var';
 $string['permitted'] = 'İzinli';
+$string['preference'] = 'Tercih';
 $string['privacy'] = 'Gizlilik';
 $string['privacy:export:conversationprefix'] = 'Konuşma:';
 $string['privacy:metadata:core_favourites'] = 'Kullanıcı tarafından yıldız eklenen görüşmeler';

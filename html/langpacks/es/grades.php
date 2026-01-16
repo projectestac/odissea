@@ -52,7 +52,7 @@ Esta configuración determina si las calificaciones vacías (faltantes) NO será
 
 Nota del traductor: Dependiento de este ajuste, los cálculos de media, mediana y moda podrían no toman en cuenta las calificaciones faltantes, por lo que si existieran alumnos que faltan a algunos/varios/muchos exámenes sin justificación válida, la suma de calificaciones puede ser una mejor forma (pero más estricta) de evaluar su desempeño real (y la calificación que merecen) que media, mediana o moda donde exámenes no hechos no afectaron la calificación. Por favor corra pruebas con datos reales en su servidor antes de extender alguna estrategia de calificación a su institución...';
 $string['aggregateoutcomes'] = 'Incluir resultados en cálculo total';
-$string['aggregateoutcomes_help'] = '<p>La inclusión de resultados en la agregación puede no conducir a la calificafión global deseada, de modo que usted tiene la opción de incluirlos o desecharlos.</p>';
+$string['aggregateoutcomes_help'] = '<p>La inclusión de resultados en la agregación puede no conducir a la calificación global deseada, de modo que usted tiene la opción de incluirlos o desecharlos.</p>';
 $string['aggregatesonly'] = 'Mostrar sólo totales';
 $string['aggregatesubcatsupgradedgrades'] = 'Nota: La configuración de cálculos "Cálculos totales incluyendo subtageorías" ha sido removido tras la actualización del portal. Debido a que "Cálculos totales incluyendo subcategorías" se utilizaba en este curso, se recomienda que compruebe el cambio en el libro de calificaciones.';
 $string['aggregatesum'] = 'Suma';

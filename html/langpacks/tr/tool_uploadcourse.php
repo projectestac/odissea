@@ -143,4 +143,4 @@ $string['uploadcourses_help'] = 'Kurslar metin dosyası aracılığıyla yüklen
  * İlk kayıt, dosyanın geri kalanının biçimini tanımlayan bir alan adları listesi içerir.
  * Gerekli alan adları kısa ad, tam ad ve kategoridir.';
 $string['uploadcoursespreview'] = 'Yüklenen kurs önizlemesi';
-$string['uploadcoursesresult'] = 'Kurs yükeame sonuçları';
+$string['uploadcoursesresult'] = 'Kurs yükleme sonuçları';

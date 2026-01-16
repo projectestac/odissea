@@ -612,4 +612,5 @@ $string['version_help'] = 'O campo da versão pode ser utilizado para registar o
 $string['viewbadge'] = 'Ver medalha emitida';
 $string['visible'] = 'Visível';
 $string['warnexpired'] = '&nbsp;(A validade desta medalha terminou!)';
+$string['wrongrole'] = 'O papel que pretende utilizar não lhe foi atribuído.';
 $string['year'] = 'Ano(s)';

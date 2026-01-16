@@ -173,6 +173,25 @@ class qtype_coderunner extends question_type {
         ];
     }
 
+    /** A list of all fields in a question that are to be Twig expanded
+     * when TwigAll is set. It excludes the template itself, which is
+     * Twig expanded only when the question is run (as it needs a
+     * student answer).
+     * @return array A list of all fields to be Twig-expanded prior to rendering.
+     */
+    public static function twigablefields() {
+        return [
+            'questiontext',
+            'generalfeedback',
+            'answer',
+            'answerpreload',
+            'globalextra',
+            'prototypeextra',
+            'penaltyregime',
+            'uiparameters',
+        ];
+    }
+
     public function response_file_areas() {
         return ['attachments'];
     }
@@ -373,10 +392,13 @@ class qtype_coderunner extends question_type {
         }
 
         // Convert penalty regime string to generic form without '%'s and with
-        // ', ' as a separator.
-        $penaltyregime = str_replace('%', '', $question->penaltyregime);
-        $penaltyregime = str_replace(',', ', ', $penaltyregime);
-        $question->penaltyregime = preg_replace('/ *,? +/', ', ', $penaltyregime);
+        // ', ' as a separator. Unless it's Twig when we just hope for the best.
+        if (!preg_match('/{{.*}}/', trim($question->penaltyregime))) {
+            // It's not a Twig expression so do the tidying.
+            $penaltyregime = str_replace('%', '', $question->penaltyregime);
+            $penaltyregime = str_replace(',', ', ', $penaltyregime);
+            $question->penaltyregime = preg_replace('/ *,? +/', ', ', $penaltyregime);
+        }
 
         // Copy and clean testcases.
         if (!isset($question->testcases)) {

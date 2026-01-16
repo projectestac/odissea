@@ -25,11 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['acceptederror'] = '受け入れることのできるエラー範囲';
+$string['acceptederror'] = '許容誤差';
 $string['addmoreanswerblanks'] = 'さらに {no} 個の答え入力欄を追加する';
 $string['addmoreunitblanks'] = 'さらに {no} 個の単位を追加する';
 $string['answercolon'] = '答え:';
-$string['answererror'] = 'エラー';
+$string['answererror'] = '誤差';
 $string['answermustbenumberorstar'] = '答えには「-1.234」「3e8」のような数値、または「*」を使用してください。';
 $string['answerno'] = '解答 {$a}';
 $string['decfractionofquestiongrade'] = '問題評点の小数 (0-1) として';
@@ -52,19 +52,19 @@ $string['nonvalidcharactersinnumber'] = '有効ではない文字が数字とし
 $string['notenoughanswers'] = 'あなたは少なくとも1つの答えを入力する必要があります。';
 $string['nounitdisplay'] = '単位評定なし';
 $string['numericalmultiplier'] = '乗数';
-$string['numericalmultiplier_help'] = '乗数は正しい数値の解答に掛けられる要素です。
+$string['numericalmultiplier_help'] = '乗数は正しい数値の解答に掛けられる係数です。
 
 最初の単位 (単位1) はデフォルト乗数に1を持ちます。従って正しい数値の解答が500、あなたが設定した単位1 (デフォルト乗数=1) の単位がWの場合、正解は5500Wになります。
 
-あなたが乗数0.001の単位kWを追加した場合、正解は5.5kWになります。これは5500Wまたは5.5kWの解答が正解とされることを意味します。
+あなたが乗数0.001の単位kWを追加した場合、5.5kWも正しい解答として認められます。これは5500Wまたは5.5kWの解答が正解とされることを意味します。
 
-許容されるエラーも乗算されることに留意してください。そのため、許容されるエラーが100Wの場合、0.1kWのエラーとなります。';
+許容誤差も乗算されることに留意してください。そのため、許容誤差100Wは、誤差0.1kWになります。';
 $string['oneunitshown'] = '単位1が表示されます。数字の解答のみ評定されます。';
 $string['onlynumerical'] = '単位の使用は許可されません。数字の解答のみ評定されます。';
 $string['pleaseenterananswer'] = '答えを入力してください。';
 $string['pleaseenteranswerwithoutthousandssep'] = '3桁区切り ({$a}) を使用せずに答えを入力してください。';
 $string['pluginname'] = '数値問題';
-$string['pluginname_help'] = '数値問題は学生からは記述問題のように見えます。記述問題と異なる点は数値問題では間違いを受け入れるようにできることです。このことにより連続した範囲の答えを設定することができます。例えば正解が10で受け入れることのできるエラー範囲が2の場合、8から12までの間の答えが正解とされます。';
+$string['pluginname_help'] = '数値問題は学生からは記述問題のように見えます。記述問題と異なる点は数値問題では誤差を許容するようにできることです。このことにより連続した範囲の答えを設定することができます。例えば正解が10で許容できる誤差範囲が2の場合、8から12までの間の答えが正解とされます。';
 $string['pluginname_link'] = 'question/type/numerical';
 $string['pluginnameadding'] = '数値問題の追加';
 $string['pluginnameediting'] = '数値問題の編集';

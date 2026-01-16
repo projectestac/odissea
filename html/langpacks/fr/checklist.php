@@ -72,6 +72,7 @@ $string['checklistintro'] = 'Introduction';
 $string['checklistsettings'] = 'Paramètres';
 $string['checks'] = 'Marques';
 $string['choosecourse'] = 'Choisir le cours…';
+$string['commenton'] = 'Commentaire sur {$a}';
 $string['comments'] = 'Commentaires';
 $string['completiondetail:items'] = 'Éléments à cocher : {$a}';
 $string['completiondetail:percent'] = 'Éléments à cocher : {$a} %';

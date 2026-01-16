@@ -24,6 +24,7 @@ global $CFG;
 require_once($CFG->dirroot . '/question/engine/tests/helpers.php');
 require_once($CFG->dirroot . '/question/type/coderunner/tests/test.php');
 require_once($CFG->dirroot . '/question/type/coderunner/question.php');
+require_once($CFG->dirroot . '/question/type/coderunner/tests/walkthrough_testbase.php');
 
 define('PRELOAD_TEST', "# TEST COMMENT TO CHECK PRELOAD IS WORKING\n");
 
@@ -38,13 +39,13 @@ define('PRELOAD_TEST', "# TEST COMMENT TO CHECK PRELOAD IS WORKING\n");
  * @copyright  2012, 2014 Richard Lobb, The University of Canterbury
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class walkthrough_extras_test extends \qbehaviour_walkthrough_test_base {
+class walkthrough_extras_test extends walkthrough_testbase {
     protected function setUp(): void {
         parent::setUp();
         \qtype_coderunner_testcase::setup_test_sandbox_configuration();
     }
 
-    public function test_extra_testcase_field() {
+    public function test_extra_testcase_field(): void {
         $q = \test_question_maker::make_question('coderunner', 'sqr');
         $q->testcases = [
             (object) ['type'     => 0,
@@ -72,7 +73,7 @@ EOTEMPLATE;
         $this->check_current_mark(1.0);
     }
 
-    public function test_result_column_selection() {
+    public function test_result_column_selection(): void {
         // Make sure can relabel result table columns.
         $q = \test_question_maker::make_question('coderunner', 'sqr');
         $q->resultcolumns = '[["Blah", "testcode"], ["Thing", "expected"], ["Gottim", "got"]]';
@@ -93,7 +94,7 @@ EOTEMPLATE;
      * @expectedExceptionMessageRegExp |.*Error from the sandbox.*may be down or overloaded.*|
      * @retrun void
      */
-    public function test_misconfigured_jobe() {
+    public function test_misconfigured_jobe(): void {
         if (!get_config('qtype_coderunner', 'jobesandbox_enabled')) {
             $this->markTestSkipped("Jobe sandbox unavailable: test skipped");
         }
@@ -107,7 +108,7 @@ EOTEMPLATE;
      *  is present and allowmultiplestdins is false, but run with all test
      *  cases when allowmutliplestdins is true.
      */
-    public function test_multiplestdins() {
+    public function test_multiplestdins(): void {
         $q = \test_question_maker::make_question('coderunner', 'sqr');
         $q->testcases[0]->stdin = 'A bit of standard input to trigger one-at-a-time mode';
         $q->showsource = true;

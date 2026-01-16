@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addcaptionstrack'] = 'Titel-Track hinzufügen';
 $string['addchapterstrack'] = 'Kapitel-Track hinzufügen';
 $string['adddescriptionstrack'] = 'Beschreibungs-Track hinzufügen';
-$string['addfilesdrop'] = 'Ziehen Sie ein Bild zum Hochladen per Drag-and-Drop oder klicken Sie zum Auszuwählen';
+$string['addfilesdrop'] = 'Ziehen Sie ein Bild zum Hochladen per Drag&drop oder klicken Sie zum Auszuwählen';
 $string['addmetadatatrack'] = 'Metadata-Track hinzufügen';
 $string['addsource'] = 'Alternative Quelle hinzufügen';
 $string['addsource_help'] = 'Sie sollten eine alternative Medienquelle bereitstellen, wenn Desktop- und mobile Browser  unterschiedliche Dateiformate unterstützen.';

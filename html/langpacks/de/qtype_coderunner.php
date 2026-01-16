@@ -31,6 +31,7 @@ $string['HIDE_IF_SUCCEED'] = 'Verstecken falls bestanden';
 $string['SHOW'] = 'Anzeigen';
 $string['aborted'] = 'Der Test wurde aufgrund von Fehlern abgebrochen.';
 $string['ace-language'] = 'Ace-Sprache';
+$string['ace_aria_label'] = 'Code Editor - Geben Sie Ihren Code hier ein.';
 $string['ace_gapfillerui_ui_source_descr'] = '"globalextra" übernimmt den anzuzeigenden Code vom Global extra Feld oder "test0" übernimmt ihn vom Testcode Feld des ersten Tests.';
 $string['ace_ui_notready'] = 'Ace-Editor nicht bereit. Vielleicht Seite neu laden?';
 $string['aceui_auto_switch_light_dark_descr'] = 'Einer Browser- oder Betriebssystem-Einstellung erlauben ein Light Theme mit Darkmode zu überschreiben.';
@@ -95,13 +96,22 @@ $string['badtemplateparams'] = 'Vorlagenparameter müssen entweder leer oder ein
 $string['baduiparams'] = 'UI Parameter müssen entweder leer oder ein gültiger JSON-Datensatz sein.';
 $string['brokencombinator'] = 'Erwartete {$a->numtests} Testergebnisse, erhielt {$a->numresults}. Vielleicht zu große Ausgabe oder Fehler in der Frage?';
 $string['brokentemplategrader'] = 'Fehlerhafte Ausgabe des Bewerters: {$a->output}. Ihre Programmausführung wurde möglicherweise abgebrochen (z.B. wurde eine Zeitüberschreitung oder ein Speicherlimit überschritten).';
+$string['browsequestions'] = 'Fragen durchsuchen';
 $string['bulkquestiontester'] = 'Das <a href="{$a->link}">Bulk-Tester-Skript</a> prüft, dass Beispielantworten für alle Fragen im aktuellen Kontext richtig bewertet werden. Erst sinnvoll, wenn einige Fragen mit Beispielantworten hinzugefügt wurden; die Erstinstallation hat keine.';
+$string['bulktestallcachenotclearedmessage'] = '<b>Hinweis:</b> Bewertungs-Cache nicht geleert -- Leeren Sie den Cache unter Administration > Plugins > Cache wenn Sie diesen für alle Kurse leeren möchten.';
 $string['bulktestallincontext'] = 'Alle ausführen';
+$string['bulktestalltitle'] = 'ALLE Fragen der Webseite überprüfen';
+$string['bulktestclearcachefirstlabel'] = 'Bewertungs-Cache des Kurses zuerst leeren:';
 $string['bulktestcontinuefromhere'] = 'Erneut ausführen, oder von hier an fortsetzen';
 $string['bulktestindextitle'] = 'CodeRunner Bulk-Testing';
+$string['bulktestnumrunslabel'] = 'Anzahl der Durchläufe pro Frage:';
 $string['bulktestoverallresults'] = 'Gesamtergebnisse';
+$string['bulktestrepeatrandomonlyexplanation'] = 'Limitiert wiederholtes Ausführen von Fragen mit <emph>random</emph> im Namen.';
+$string['bulktestrepeatrandomonlylabel'] = 'Nur Zufällige wiederholen';
 $string['bulktestrun'] = 'Alle Fragetests für alle Fragen im System ausführen (langsam, nur für Administratoren)';
 $string['bulktesttitle'] = 'Testfragen in {$a}';
+$string['bulktestusecacheexplanation'] = 'Ob der Coderunner Bewertungscache verwendet werden soll. Wenn deaktiviert, werden alle Fragen immer am Jobe Server ausgeführt. Wenn Code mehrmals ausgeführt wird, zeigt diese Einstellung Probleme mit einzelnen Jobe Servern, wenn mehrere Jobe Server oder ein Jobe Proxy der die Last auf mehrere Jobe Server verteilt verwendet werden. Standard: ja';
+$string['bulktestusecachelabel'] = 'Bewertungs-Cache verwenden:';
 $string['cachedef_coderunner_grading_cache'] = 'Bewertungsergebnisse werden gecached, sodass vermieden werden kann, den Jobe Server so oft aufzurufen.';
 $string['cachepurgepagetitle'] = 'Cache für {$a} leeren';
 $string['cannotrunprototype'] = 'Dies ist ein Prototyp und kann nicht ausgeführt werden. Wenn Sie diesen Prototypen verwenden möchten, erstellen Sie eine neue Frage und wählen Sie diesen Fragetyp.';
@@ -128,6 +138,7 @@ $string['columncontrols'] = 'Resultatetabelle';
 $string['columncontrols_help'] = 'Die Checkboxen markieren, welche Spalten der Ergebnistabelle den Studierenden nach der Einreichung angezeigt werden sollen';
 $string['confirm_proceed'] = 'Wenn Sie diese Frage mit nicht gewähltem "Anpassen" speichern, gehen alle vorgenommenen Anpassungen verloren. Möchten Sie fortfahren?';
 $string['confirmreset'] = 'Ihre gesamte Arbeit an dieser Frage verwerfen und das Antwortfeld auf den ursprünglichen vorinstallierten Wert zurücksetzen?';
+$string['contextidnotacourseincachepurgerequest'] = 'Bewertungs-Cache nicht geleert, da die Kontext-ID {$a} kein Kurs ist.';
 $string['corruptuiparams'] = 'Die UI Parameter für diese Frage oder diesen Prototyp sind fehlerhaft.';
 $string['cputime'] = 'Zeitbegrenzung (s)';
 $string['currentttlinfo'] = 'Coderunner Bewertungscache Time to Live Einstellungen: TTL = {$a->seconds} Sekunden (={$a->days} Tage)';
@@ -151,7 +162,7 @@ $string['enable_diff_check'] = 'Button "Unterschiede anzeigen" aktivieren';
 $string['enable_diff_check_desc'] = 'Geben Sie Teilnehmer/innen eine Schaltfläche "Unterschiede anzeigen", wenn ihre Antwort falsch ist und ein Validierer für genaue Übereinstimmung verwendet wird (experimentell).';
 $string['enable_sandbox_desc'] = 'Die Verwendung der angegebenen Sandbox für die Ausführung von Studierenden-Einreichungen erlauben';
 $string['enable_sandbox_ws'] = 'Sandbox Webservice aktivieren';
-$string['enable_sandbox_ws_desc'] = 'Webservice aktivieren, der direkten Zugriff auf den Sandbox Server (normalerweise Jobe) erlaubt. EXPERIMENTELLES FEATURE';
+$string['enable_sandbox_ws_desc'] = 'Webservice aktivieren, der direkten Zugriff auf den Sandbox Server (normalerweise Jobe) erlaubt.';
 $string['enablecombinator'] = 'Kombinator aktivieren';
 $string['enablegradecache'] = 'Aktivieren Sie Lesen/Schreiben des Jobs von/in den Coderunner Bewertungscache.';
 $string['enablegradecache_desc'] = 'Experimentell. Der Cache ist ein lokaler Moodle Cache (derzeit File Cache), um Ergebnisse der Fragebewertung zu speichern. Das Feature dient dazu erneute Bewertungen durch gecachte Ergebnisse von bereits bewerteten Auswertungen am Jobe Server zu beschleunigen. HINWEIS: Wenn Sie den Bewertungscache deaktivieren, sollten Sie den Coderunner Bewertungscache leeren, bevor Sie ihn wieder aktivieren, sodass Sie über einen bekannten Status des Cache verfügen. Sie sollten den Cache auch leeren, wenn Sie das Jobe Backend ändern (z.B. Installation einer neuen Python Version), da Ergebnisse von den gespeicherten Werten im Cache abweichen könnten.';
@@ -401,7 +412,8 @@ $string['prototypeusage'] = 'CodeRunner Frageprototyp-Verwendung für Kurs {$a}'
 $string['prototypeusageindex'] = 'Verfügbare Kurse';
 $string['purgeallcachekeysbutton'] = 'ALLE Schlüssel löschen';
 $string['purgeoldcachekeysbutton'] = 'Nur ALTE Schlüssel löschen';
-$string['purgingallkeysmessage'] = 'Alle Schlüssel für den Kurs löschen, unabhängig von "Time to Live" (TTL).';
+$string['purgingallkeysmessage'] = 'Alle Schlüssel für den Kontext löschen, unabhängig von "Time to Live" (TTL).';
+$string['purgingoldkeysmessage'] = 'Nur alte Schlüssel für den Kurs löschen, basierend auf Time to Live. TTL={$a->seconds} Sekunden (={$a->days} days)';
 $string['qWrongBehaviour'] = 'Verwenden Sie das adaptive Verhalten für alle CodeRunner-Fragen, oder es können massive Leistungseinbußen auftreten. Beispielsweise müssen alle Fragen auf einer Seite neu bewertet werden, wenn die Seite erneut angezeigt wird.';
 $string['qtype_c_function'] = '<p>Ein Fragetyp für Schreibe-Eine-C-Funktion Fragen. Es wird eine vollständige C-Funktion in der Antwort erwartet. Der Antwort kann jedoch anderer in sich geschlossenem C-Code wie beispielsweise Präprozessor Direktiven und Support-Funktionen vorangestellt werden.</p>
 
@@ -516,13 +528,14 @@ $string['run_failed'] = 'Tests konnten nicht ausgeführt werden';
 $string['sampleanswerattachments'] = 'Beispiel für Antwortanhänge';
 $string['sampleanswerattachments_help'] = 'Wenn die Beispielantwort Anhänge benötigt, laden Sie diese hier hoch';
 $string['sandboxcontrols'] = 'Sandbox';
-$string['sandboxcontrols_help'] = 'Wählen Sie aus, welche Sandbox zum Ausführen der Studierendeneinreichungen verwendet werden soll. DEFAULT verwendet die Sandbox mit der höchsten Priorität, die für die ausgewählte Sprache verfügbar ist. Da Jobe alle Sandbox-Typen mit Ausnahme der veralteten "ideonesandbox" ersetzt hat, wird der Wert "jobesandbox" für die normale Verwendung empfohlen und führt zu besseren Fehlermeldungen, als DEFAULT, wenn der Jobe-Server ausgefallen ist.
+$string['sandboxcontrols_help'] = 'Alle Jobs werden in der Jobe Sandbox durchgeführt, dies wirkt sich auf CPU-Zeit, Dateioutput etc. aus. Sie können diese Einschränkungen hier anpassen:
 
-Sie können auch die maximale CPU-Zeit in Sekunden festlegen, die für jeden Testfalllauf zulässig ist, und den maximalen Speicher, den ein einzelner Testfalllauf verbrauchen kann (MB). Ein leerer Eintrag verwendet den Standardwert der Sandbox (normalerweise 5 Sekunden für das CPU-Zeitlimit und eine sprachabhängige Speichermenge), aber die Standardwerte sind möglicherweise nicht für ressourcenintensive Programme geeignet. Ein Wert von Null für den maximalen Speicher führt dazu, dass keine Begrenzung auferlegt wird. Die hier angegebene Speichermenge ist die Gesamtmenge, die für den Durchlauf benötigt wird, einschließlich aller Bibliotheken, Interpreter, VMs usw.
+\'TimeLimit (secs)\' setzt die maximale CPU Zeit in Sekunden für jede Ausführung der Sandbox.
+ \'MemLimit (MB)\' setzt den maximalen Speicher, den die Ausführung verwenden kann. Ein leerer Eintrag setzt die Standardwerte (normalerweise 5 Sekunden für CPU Zeit und einen sprachabhängigen Speicherverbrauch). Die Standardwerte sind nicht für ressourcenintensieve Anwendungen geeignet. Ein Wert von Null für den maximalen Speicher führt dazu, dass keine Begrenzung auferlegt wird. Die hier angegebene Speichermenge ist die Gesamtmenge, die für den Durchlauf benötigt wird, einschließlich aller Bibliotheken, Interpreter, VMs usw.
 
-Der Parameter \'Parameters\' wird verwendet, um weitere Sandbox-spezifische Daten wie Compileroptionen und API-Schlüssel zu übergeben. Er sollte normalerweise leer gelassen werden, aber wenn er nicht leer ist, muss es ein gültiger JSON-Datensatz sein. Im Falle der Jobe-Sandbox umfassen die verfügbaren Attribute disklimit, streamsize, numprocs, compileargs, linkargs und interpreterargs. Zum Beispiel würde `{"compileargs":["-std=c89"]}` für eine C-Frage die C89-Konformität erzwingen und keine anderen C-Optionen würden verwendet werden. Details finden Sie in der Jobe-Dokumentation. Einige Sandboxen (z.B. die veraltete Ideone-Sandbox) ignorieren möglicherweise einige oder alle dieser Einstellungen stillschweigend.
+Der Parameter \'Parameters\' wird verwendet, um weitere Sandbox-spezifische Daten wie Compileroptionen und API-Schlüssel zu übergeben. Er sollte normalerweise leer gelassen werden, aber wenn er nicht leer ist, muss es ein gültiger JSON-Datensatz sein. Im Falle der Jobe-Sandbox umfassen die verfügbaren Attribute disklimit, streamsize, numprocs, compileargs, linkargs und interpreterargs. Zum Beispiel würde <code>{"compileargs":["-std=c89"]}</code> für eine C-Frage die C89-Konformität erzwingen und keine anderen C-Optionen würden verwendet werden. Details finden Sie in der Jobe-Dokumentation. Einige Sandboxen (z.B. die veraltete Ideone-Sandbox) ignorieren möglicherweise einige oder alle dieser Einstellungen stillschweigend.
 
-Wenn die Sandbox auf "jobesandbox" eingestellt ist, wird der Jobe-Host, der zum Testen der Frage verwendet wird, normalerweise über die Administratoreinstellungen für das CodeRunner-Plugin festgelegt. Es ist jedoch möglich, einen anderen Jobserver auszuwählen, indem Sie einen Parameter \'jobeserver\' und optional \'jobeapikey\' definieren. Wenn beispielsweise das Feld \'Parameters\' auf `{"jobeserver": "myspecialjobe.com"} gesetzt ist, wird der Durchlauf stattdessen an den Server "myspecialjobe.com" gesendet. Warnung: Diese Funktion ist noch experimentell und kann sich in Zukunft ändern.';
+Es ist möglich, einen anderen Jobserver auszuwählen, indem Sie einen Parameter \'jobeserver\' und optional \'jobeapikey\' definieren. Wenn beispielsweise das Feld \'Parameters\' auf <code>{"jobeserver": "myspecialjobe.com"}</code> gesetzt ist, wird die Ausführung stattdessen an den Server "myspecialjobe.com" gesendet.';
 $string['sandboxerror'] = 'Fehler der Sandbox [{$a->sandbox}]: {$a->message}';
 $string['sandboxparams'] = 'Parameter';
 $string['scratchpad_ui_error'] = 'XML HTTP Anfrage fehlgeschlagen. Netzwerkfehler oder CORS.';
@@ -533,7 +546,27 @@ $string['scratchpadui_def_button_name'] = 'Ausführen';
 $string['scratchpadui_def_prefix_name'] = 'Präfix mit Antwort';
 $string['scratchpadui_def_scratchpad_name'] = 'Scratchpad';
 $string['scratchpadui_help_text_descr'] = 'Hilfetext, der angezeigt wird';
+$string['scratchpadui_output_display_mode_descr'] = 'Legen Sie fest, wie die Ausgabe eines Programms bei der Ausführung angezeigt wird. Es gibt 3 Modi:
+<ul>
+        <li>text: die Ausgabe als Text anzeigen, html wird escaped. (Default)</li>
+        <li>json: JSON Ausgabe von Programmen anzeigen, empfohlen um stdin und Bilder anzuzeigen.</li>
+        <ul>
+ <li>Akzeptiert JSON in der Programmausgabe mit den Feldern:</li>
+            <ul>
+                <li>returncode: Exit Code von der Programmausführung.</li>
+                <li>stdout: Stdout Text von der Programmausführung.</li>
+                <li>stderr: Fehlertext von der Programmausführung.</li>
+                <li>files: Ein Objekt das Dateinamen zu base64 encoded Bildern enthält. Diese werden unter dem stdout Text angezeigt.</li>
+            </ul>
+<li>Senn der returncode auf 42 gesetzt wird, wird ein HTML Eingabefeld nach dem letzten erhaltenen stdout hinzugefügt. Wenn die Eingabetaste in diesem Eingabefeld gedrückt wird, wird der eingegebene Wert zu stdin hinzugefügt und das Programm wird erneut mit diesem aktualisierten stdin ausgeführt. Dies wird so oft wiederholt bis der returncode nicht mehr auf 42 gesetzt wird.</li></ul>
+ <li>html: Programmausgabe als html innerhalb des Ausgabebereichs anzeigen. (fortgeschritten)</li>
+<ul>
+                <li>Dies kann verwendet werden, um Bilder anzuzeigen und anderes HTML einzufügen.</li>
+                <li>Wenn einem &lt;input&gt; Element die class coderunner-run-input hinzugefügt wird, wird ein Event hinzugefügt: Wenn die Eingabetaste innerhalb des Eingabefeldes gedrückt wird, wird der eigegebene Wert zum stdin des Programms hinzugefügt und das Programm wird erneut mit diesem aktualisierten Eingabewert ausgeführt.</li>
+            </ul>
+    </ul>';
 $string['scratchpadui_params_descr'] = 'Parameter für Sandbox Webservice.';
+$string['scratchpadui_scratchpad_name_descr'] = 'Anzeigename des Scratchpad, wird verwendet um das Scratchpad anzuzeigen / zu verbergen.';
 $string['seethisquestioninthequestionbank'] = 'Diese Frage in der Fragesammlung anzeigen';
 $string['showcolumns'] = 'Spalten anzeigen:';
 $string['showcolumns_help'] = 'Wählen Sie, welche Spalten der Ergebnistabelle den Studierenden angezeigt werden sollen. Leere Spalten werden unabhängig davon ausgeblendet.
@@ -584,13 +617,11 @@ Wenn ein Lauf des Kombinator-Programms zu einer Ausgabe nach stderr führt, wird
 $string['templateerror'] = 'VORLAGEFEHLER';
 $string['templategrader'] = 'Bewerter-Vorlage';
 $string['templateparams'] = 'Vorlageparameter';
-$string['templateparams_help'] = 'Im Vorlageparameter-Feld können Sie String-Parameter an die Vorlage einer Frage übergeben. Wenn es nicht leer ist, muss dies ein Datensatz im JSON-Format sein. Die Felder des Datensatzs können dann in der Vorlage verwendet werden, in der sie als QUESTION.parameters.<<param>> angezeigt werden. Zum Beispiel, wenn Vorlageparameter
+$string['templateparams_help'] = 'Wenn das Vorlageparameter-Feld nicht leer ist, muss die Vorlage-Parameter im JSON-Format eingegeben werden. In der einfachsten Form ist dieses feld ein JSON Datensatz, der eine Variablenliste definiert, die zur Twig-Vorlage Umgebung hinzugefügt werden, wenn die Vorlage erweitert wird.
 
-        {"age": 23}
+Wenn ein Präprozessor in den Vorlageparameter-Einstellungen definiert wird, werden die Vorlageparameter zuerst von der definierten Sprache verarbeitet, um einen JSON Datensatz zu erzeugen. Weitere Informationen in der <a href="https://coderunner.org.nz/mod/url/view.php?id=199">Dokumentation</a>.
 
-ist, würde der Wert 23 in die Vorlage eingefügt anstelle der Vorlagenvariable `{{QUESTION.parameters.age}}`.
-
-Die Menge der Vorlagenparameter, die an die Vorlage übergeben werden, besteht aus beliebigen Vorlageparameter, die mit den Parametern, die in der Fragevorlage im Prototyp definiert sind, fusioniert werden. Frageparameter können somit Prototypparameter außer Kraft setzen, sie aber nicht löschen.';
+<b>Warnung:</b> der Einsatz eines anderen Präprozessors als Twig kann drastische Auswirkungen auf die Performance haben, wenn die Auswertung-pro-Teilnehmer/in-Checkbox aktiviert ist. Diese muss aktiviert sein, wenn eine zufällige Frage-Zuordung für alle Teilnehmer/innen konfiguriert wurde. Die Frage muss den Präprozessor durchlaufen, bevor sie dem/der Teilnehmer/in angezeigt wird. Nur Twig wird vom Jobe Sandbox Server verarbeitet. Jeder Versuch von jeder Frage von jedem/jeder Teilnehmer/in löst einen Job aus, der an den Server gesendet wird. Dies kann dazu führen, dass tausende Jobs vom Server abgearbeitet werden müssen, was zu einem Serveroverload führen kann.';
 $string['templateparamsevalpertry'] = 'Pro Teilnehmer/in auswerten';
 $string['templateparamslang'] = 'Präprozessor';
 $string['templateparamsusingsandbox'] = 'Andere Präprozessoren als Twig verwenden den Sandbox-Server. Wenn "Pro Teilnehmer/in auswerten" aktiviert ist, wird sobald ein/e Teilnehmer/in einen Test startet ein Sandbox-Lauf für diese Fragen initiiert bevor die Frage überhaupt angezeigt werden kann. In einem Test- oder Prüfungssetting kann dies den Sandbox-Server überlasten.';
@@ -619,6 +650,7 @@ $string['testtype_help'] = 'Wenn die Vorabprüfung aktiviert und auf "ausgewähl
 Wenn die Vorabprüfung auf etwas anderes als "ausgewählt" eingestellt ist, wird diese Einstellung ignoriert.';
 $string['testtype_normal'] = 'Nur Prüfung';
 $string['testtype_precheck'] = 'Nur Vorabprüfung';
+$string['toobigfiles'] = 'Zu große Datei(en): {$a}';
 $string['tooshort'] = 'Die Antwort ist zu kurz um einen Sinn zu ergeben und wurde ohne Strafe ignoriert';
 $string['twigall'] = 'Twig für alles';
 $string['twigcontrols'] = 'Vorlageparameter Steuerung';
@@ -631,6 +663,7 @@ $string['type_header'] = 'CodeRunner-Fragetyp';
 $string['typename'] = 'Fragetyp';
 $string['typerequired'] = 'Bitte wählen Sie den Typ der Frage (Sprache, Format, etc.)';
 $string['ui_fallback'] = 'Rückgriff auf ein Rohtext-Feld.';
+$string['uichanged'] = 'UI geändert. Speichern Sie und laden Sie die Seite neu, um verfügbare UI Parameter anzuzeigen oder zu bearbeiten.';
 $string['uicontrols'] = 'Input UIs';
 $string['uiparamdefault'] = 'Standard';
 $string['uiparamdesc'] = 'Beschreibung';

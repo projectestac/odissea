@@ -71,7 +71,6 @@ $string['cachedef_groupdata'] = 'Cursus groepsinformatie';
 $string['cachedef_h5p_content_type_translations'] = 'H5P inhoudstype vertalingen van de bibliotheken';
 $string['cachedef_h5p_libraries'] = 'H5P-bibliotheken';
 $string['cachedef_h5p_library_files'] = 'H5P-bibliotheekbestanden';
-$string['cachedef_hookcallbacks'] = 'Hook callback';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier - opgeschoonde inhoud';
 $string['cachedef_langmenu'] = 'Lijst van beschikbare talen';
 $string['cachedef_license'] = 'Lijst met licenties';

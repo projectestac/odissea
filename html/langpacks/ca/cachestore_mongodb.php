@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['database'] = 'Base de dades';
 $string['database_help'] = 'El nom de la base de dades a utilitzar.';
 $string['extendedmode'] = 'Utilitza claus esteses';
-$string['extendedmode_help'] = 'Si s\'habilita la clau completa, s\'utilitzarà quan es treballi amb el connector. Això no s\'utilitza internament, encara, però us permetrà buscar fàcilment el connector MongoDB manualment i investigar-hi, si així ho voleu. Activar aquesta opció afegirà un petita sobrecàrrega, per la qual cosa és recomanable que només es faci si així ho requeriu.';
+$string['extendedmode_help'] = 'Si s\'habilita la clau completa, s\'utilitzarà quan es treballi amb el connector. Això no s\'utilitza internament encara, però us permetrà buscar fàcilment el connector MongoDB manualment i investigar-hi, si així ho voleu. Activar aquesta opció afegirà un petita sobrecàrrega, per la qual cosa és recomanable que només es faci si així ho requeriu.';
 $string['password'] = 'Contrasenya';
 $string['password_help'] = 'La contrasenya que l\'usuari utilitza durant la connexió.';
 $string['pleaseupgrademongo'] = 'Esteu utilitzant una versió antiga de l\'extensió de PHP Mongo (< 1.3 ). La compatibilitat amb versions velles de Mongo s\'abandonarà aviat. Us aconsellem actualitzar.';

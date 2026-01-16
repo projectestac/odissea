@@ -71,15 +71,15 @@ $string['comp_customsql'] = 'Consulta SQL personalitzada';
 $string['comp_customsql_help'] = '<p>Afegeix una consulta SQL operativa. No s\'ha de fer servir el prefix de la base de dades moodle $CFG-> prefix; en lloc d\'això, s\'ha d\'usar «prefix_» sense cometes</ p>
 <p>Exemple: SELECT * FROM prefix_course</p>
 
-<p>Podeu trobar molts informes SQL aquí: <a href="http://docs.moodle.org/en/ad-hoc_contributed_reports" target="_blank"> contribucions d\'informes ad-hoc</a></p>
+<p>Podeu trobar molts informes SQL aquí: <a href="http://docs.moodle.org/en/ad-hoc_contributed_reports" target="_blank"> contribucions d\'informes ad hoc</a></p>
 
-<p>Un disseny actualitzat de les taules de Moodle i les seves relacions interconnectades: <a href="https://docs.moodle.org/dev/Database_Schema" target="_blank"> Esquema de bases de dades</a></p>
+<p>Un disseny actualitzat de les taules de Moodle i les seves relacions interconnectades: <a href="https://docs.moodle.org/dev/Database_Schema" target="_blank">Esquema de bases de dades</a></p>
 
 <p>Com que aquest bloc admet els informes de Consultes CustomSQL de Tim Hunt (Tim Hunt\'s CustomSQL Reports), podeu utilitzar qualsevol consulta.</p>
 
-<p>Recordeu afegir-hi un «filtre de temps» (<i>«Time filter»</i>) si voleu utilitzar informes amb testimonis (<i>tokens</i>) temporals.</p>
+<p>Recordeu que hi heu d\'afegir un «filtre de temps» (<i>«Time filter»</i>) si voleu utilitzar informes amb testimonis (<i>tokens</i>) temporals.</p>
 
-<p>Per utilitzar els filtres, consulteu: <a href="http://docs.moodle.org/en/blocks/configurable_reports/#Creating_a_SQL_Report" target="_blank"> Creació d\'un tutorial d\'informes SQL</a></p>';
+<p>Per utilitzar els filtres, consulteu el recurs següent: <a href="http://docs.moodle.org/en/blocks/configurable_reports/#Creating_a_SQL_Report" target="_blank"> Creació d\'un tutorial d\'informes SQL</a></p>';
 $string['comp_filters'] = 'Filtres';
 $string['comp_filters_help'] = '<p>Aquí podeu escollir quins filtres es mostraran</p>
 

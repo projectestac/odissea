@@ -153,6 +153,7 @@ $string['tagarea_blog_external'] = 'Dış blog gönderileri';
 $string['tagarea_course'] = 'Kurslar';
 $string['tagarea_course_modules'] = 'Etkinlik ve kaynaklar';
 $string['tagarea_post'] = 'Blog girdileri';
+$string['tagarea_tag'] = 'İlişkili etiketler';
 $string['tagarea_user'] = 'Kullanıcı ilgi alanları';
 $string['tagareaenabled'] = 'Etkinleştirildi';
 $string['tagareaname'] = 'İsim';

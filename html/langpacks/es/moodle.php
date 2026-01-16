@@ -1558,7 +1558,7 @@ Para comenzar a usar "{$a->sitename}", entre en
 {$a->link}
 
 Si necesita ayuda, puede contactar con el administrador del sitio,
-{$a->admin}';
+{$a->signoff}';
 $string['newusers'] = 'Nuevos usuarios';
 $string['newwindow'] = 'Nueva ventana';
 $string['next'] = 'Siguiente';

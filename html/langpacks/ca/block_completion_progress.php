@@ -97,5 +97,5 @@ $string['why_set_the_title_help'] = '<p>Pot haver-hi múltiples instàncies del 
 $string['why_show_precentage'] = 'Per què mostrar un percentatge del progrés al estudiants?';
 $string['why_show_precentage_help'] = '<p>És possible mostrar als estudiants un percentatge global del progrés.</p><p>Es calcula com el nombre d\'activitats completades dividit pel nombre total d\'activitats a la barra.</p><p>El percentatge de progrés és visible fins que l\'estudiant passa per sobre d\'un element de la barra.</p>';
 $string['why_use_icons'] = 'Per què hauríeu de voler usar icones?';
-$string['why_use_icons_help'] = '<p>Potser voleu afegir signes de vist-i-plau o creus al Progrés de la compleció perquè el bloc sigui visualment més accessible als estudiants amb daltonisme.</p><p>També pot clarificar el significat del bloc, si considereu que els colors no són intuïtius per qüestions culturals o personals.</p>';
+$string['why_use_icons_help'] = '<p>Potser voleu afegir signes de vist-i-plau o creus al Progrés de la compleció perquè el bloc sigui visualment més accessible als estudiants amb daltonisme.</p><p>També pot aclarir el significat del bloc, si considereu que els colors no són intuïtius per qüestions culturals o personals.</p>';
 $string['wrapafter'] = 'En ajustar, limita les files a';

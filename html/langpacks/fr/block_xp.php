@@ -100,6 +100,7 @@ $string['basepointsrelativedesc'] = 'Les nombre de points pour démarrer.';
 $string['basexp'] = 'Base de l’algorithme';
 $string['blockappearance'] = 'Apparence du bloc';
 $string['blockappearancemovedtopluginsettings'] = 'Les paramètres d’apparence du bloc ont été déplacés vers la page de paramètres du plugin.';
+$string['cachedef_block_count'] = 'Nombre d\'instances de blocs';
 $string['cachedef_filters'] = 'Filtres de niveau';
 $string['cachedef_metadata'] = 'Métadonnées';
 $string['cachedef_ruleevent_eventslist'] = 'Liste de quelques événements';
@@ -143,6 +144,7 @@ $string['configtitle'] = 'Titre';
 $string['configtitle_help'] = 'Le titre du bloc.';
 $string['congratulationsyouleveledup'] = 'Félicitations !';
 $string['coolthanks'] = 'Merci c’est cool !';
+$string['copiedexcl'] = 'Copié !';
 $string['coursea'] = 'Cours « {$a} »';
 $string['courselog'] = 'Journal';
 $string['courselogintro'] = 'Le journal affiche les actions observées et le nombre de points qu\'elles ont permis d\'obtenir.';
@@ -205,8 +207,10 @@ Les drops peuvent être utilisés pour attribuer astucieusement des points lorsq
 [Plus d’informations](https://docs.levelup.plus/xp/docs/how-to/use-drops?ref=blockxp_help)';
 $string['dropsintro'] = 'Les drops sont des morceaux de code directement placés dans le contenu qui attribuent des points lorsqu’ils sont rencontrés par un utilisateur.';
 $string['editcondition'] = 'Modifier la condition';
+$string['editingdefaultsettingsincoursemodenotice'] = '**Attention !** Vous ne modifiez pas les paramètres actuellement actifs, mais les valeurs par défaut. Pour modifier les paramètres d\'un cours, cliquez sur le lien « Paramètres » dans le bloc XP.';
 $string['editingdefaultsettingsinwholesitemodenotice'] = '**Attention !** Vous ne modifiez pas les paramètres actifs actuellement, mais vous êtes en train de modifier les valeurs par défaut. Comme Level Up XP est utilisé sur l’ensemble du site, votre intention est probablement de modifier les paramètres du site. [Naviguez ici]({$a->url}) pour modifier ces paramètres, ou suivez le lien "Paramètres" à partir du bloc XP lui-même.';
 $string['editinstructions'] = 'Modifier l’information';
+$string['embedleaderboard'] = 'Intégrer le classement';
 $string['enablecheatguard'] = 'Activer la mise en garde sur la triche';
 $string['enablecheatguard_help'] = 'Le dispositif de protection contre la tricherie offre un mécanisme simple et peu coûteux pour empêcher les étudiants d’abuser du système en utilisant des techniques évidentes, telles que l’actualisation permanente de la même page ou la répétition de la même action à plusieurs reprises.
 
@@ -444,6 +448,7 @@ $string['pluginavailabilityxpdesc'] = 'Ce plugin permet aux enseignants de restr
 $string['pluginenrolxpdesc'] = 'Ce plugin permet l’inscription automatique à des cours en fonction du niveau d’un étudiant dans un autre cours.';
 $string['pluginname'] = 'Level Up XP';
 $string['pluginshortcodesdesc'] = 'Ce plugin permet aux formateurs de personnaliser leur matériel en incluant des éléments liés à XP (points, niveau, tableau de classement…) dans le contenu, ainsi que de masquer ou d’afficher le contenu en fonction du niveau de l’étudiant.';
+$string['pluginshortcodesrequiredtousefeature'] = 'Le plugin [Shortcodes](https://docs.levelup.plus/xp/docs/getting-started/installation/recommended-plugins) doit être installé et activé pour pouvoir utiliser cette fonctionnalité.';
 $string['pluginsoutofsync'] = '__Incompatibilité des plugins XP !__
 
 Il y a des problèmes de compatibilité entre Level Up XP et Level Up XP+. À l\'avenir, Level Up XP+ se désactivera automatiquement s\'il n\'est pas compatible. Pour éviter cela, veuillez contacter l\'administrateur de votre site. [Lire la suite]({$a->url})';
@@ -514,6 +519,7 @@ Il est important de noter que si vous utilisez _Progressez !_ pour l’ensemble
 
 Voulez-vous vraiment supprimer les points et les journaux de cet utilisateur ?';
 $string['reallyresetallcourselevelstodefaults'] = 'Voulez-vous vraiment rétablir les niveaux par défaut dans TOUS les cours ? Cette action est irréversible.';
+$string['reallyresetallcoursessettingstodefaults'] = 'Voulez-vous vraiment réinitialiser TOUS les cours aux paramètres par défaut ? Cette action est irréversible.';
 $string['reallyresetallcoursestodefaults'] = 'Voulez-vous vraiment rétablir les règles par défaut dans TOUS les cours ? Cette action est irréversible.';
 $string['reallyresetallcoursevisualstodefaults'] = 'Voulez-vous vraiment rétablir les règles par défaut dans TOUS les cours ? Cette action est irréversible.';
 $string['reallyresetcourselevelstodefaults'] = 'Voulez-vous vraiment réinitialiser les niveaux du cours aux niveaux par défaut ? Cette action est irréversible.';
@@ -531,10 +537,12 @@ $string['removefilter'] = 'Enlever le filtre';
 $string['reportisempty'] = 'Le rapport est vide, les étudiants n’ont pas encore gagné de points.';
 $string['reportisemptyenrolstudents'] = 'Le rapport est vide, est-ce que les étudiants ont été inscrits au cours ?';
 $string['requires'] = 'Requiert';
+$string['resetallcoursessettingstodefaults'] = 'Suivez ce lien pour [réinitialiser tous les cours aux paramètres par défaut]({$a->url}). Si vous avez apporté des modifications, vous devez les enregistrer au préalable. Notez que cette opération remplacera les paramètres de tous les cours et qu\'elle est irréversible. Cela n\'affecte pas les niveaux, l\'apparence et les règles par défaut. Pour les réinitialiser, veuillez consulter les pages d\'administration correspondantes.';
 $string['resetallcoursestodefaults'] = 'Rétablir tous les cours aux paramètres par défaut.';
 $string['resetallcoursestodefaultsintro'] = 'Cliquez le bouton ci-dessous pour rétablir tous les cours aux paramètres par défaut ci-dessus.';
 $string['resetcoursedata'] = 'Réinitialiser les données du cours';
 $string['resetcourserulestodefaults'] = 'Rétablir le cours aux règles par défaut.';
+$string['resetcourses'] = 'Réinitialiser les cours';
 $string['resetgroupdata'] = 'Remettre à zéro les données du groupe';
 $string['resetladderparticiptionofeveryone'] = 'Réinitialiser le statut de participation de tout le monde';
 $string['resetlevelstodefaults'] = 'Réinitialiser les niveaux aux valeurs par défaut';
@@ -694,6 +702,9 @@ Le style des points dépendra de si une valeur arbitraire est affichée ou des p
 [xppoints 123 plain]
 ```';
 $string['shortcode:xpprogressbar'] = 'La barre de progression de l’utilisateur actuel vers le prochain niveau.';
+$string['shortcodeinactiveleaderboarddisabled'] = 'Le classement est actuellement désactivé, le code court sera inactif. Vous pouvez activer le classement dans ses paramètres.';
+$string['shortcodexpladderembedintro'] = 'Grâce au code court suivant, le classement peut être intégré n\'importe où sur ce site. Vous trouverez plus d\'options et d\'informations dans la [documentation](https://docs.levelup.plus/xp/docs/how-to/use-shortcodes).';
+$string['shortcodexpteamladderembedintro'] = 'Grâce au code court suivant, le classement peut être intégré n\'importe où sur ce site. Vous trouverez plus d\'options et d\'informations dans la [documentation](https://docs.levelup.plus/xp/docs/how-to/use-shortcodes).';
 $string['sitewide'] = 'Sur tout le site';
 $string['somefeaturesrequireotherplugins'] = 'Certaines fonctionnalités nécessitent l’installation de plugins supplémentaires.';
 $string['someoneelse'] = 'Quelqu’un d’autre';

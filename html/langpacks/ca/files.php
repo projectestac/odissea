@@ -43,3 +43,17 @@ $string['privacy:metadata:files:source'] = 'L\'origen del fitxer';
 $string['privacy:metadata:files:timecreated'] = 'El moment en què es va crear el fitxer';
 $string['privacy:metadata:files:timemodified'] = 'El moment de l\'última modificació del fitxer';
 $string['privacy:metadata:files:userid'] = 'L\'usuari que ha creat el fitxer';
+$string['redactor:exifremover'] = 'Eliminador d\'EXIF';
+$string['redactor:exifremover:enabled'] = 'Activa l\'eliminació d\'EXIF';
+$string['redactor:exifremover:enabled_desc'] = 'Per defecte, l\'eliminador d\'EXIF només admet fitxers JPG mitjançant PHP GD o ExifTool, si està configurat. L\'ús de PHP GD per a aquest propòsit pot degradar la qualitat de la imatge.
+
+Per millorar el rendiment de l\'eliminador d\'EXIF, configureu els paràmetres d\'ExifTool a continuació.
+
+Podeu trobar més informació sobre la instal·lació d\'ExifTool a {$a->link}';
+$string['redactor:exifremover:failedprocessexiftool'] = 'No s\'ha pogut processar el fitxer amb ExifTool.';
+$string['redactor:exifremover:heading'] = 'ExifTool';
+$string['redactor:exifremover:removetags'] = 'Etiquetes EXIF que s\'han d\'eliminar';
+$string['redactor:exifremover:removetags_desc'] = 'Les etiquetes EXIF que cal eliminar.';
+$string['redactor:exifremover:tooldoesnotexist'] = 'L\'ExifTool no està disponible.';
+$string['redactor:exifremover:toolpath'] = 'Camí a ExifTool';
+$string['redactor:exifremover:toolpath_desc'] = 'Per utilitzar l\'ExifTool, proporcioneu el camí a l\'executable d\'ExifTool. Normalment, en sistemes Unix/Linux, la ruta és /usr/bin/exiftool.';

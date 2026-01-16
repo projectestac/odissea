@@ -152,7 +152,7 @@ $string['attended'] = 'teilgenommen';
 $string['auth'] = 'Authentifizierungsmethode';
 $string['availability'] = 'Verfügbarkeit';
 $string['availablefrom'] = 'Anfragen möglich ab';
-$string['availablefrom_help'] = 'Definieren Sie das Zeitfenster, während welches Teilnehmer/innen sich für diese Slots anmelden können. Ersatzweise checken Sie die "Ab jetzt" Checkbox, um die Anmeldungen sofort zu ermöglichen.';
+$string['availablefrom_help'] = 'Definieren Sie das Zeitfenster, während welches Teilnehmer/innen sich für diese Termine anmelden können. Ersatzweise checken Sie die "Ab jetzt" Checkbox, um die Anmeldungen sofort zu ermöglichen.';
 $string['availablegrouplist'] = 'Verfügbare Gruppen';
 $string['availableslotsfor'] = 'Verfügbare Termine für';
 $string['back'] = 'Zurück';
@@ -167,6 +167,7 @@ $string['btn_editsingle'] = 'Ausgewählten Slot bearbeiten';
 $string['btn_eval'] = 'Ausgewählte Slots bewerten';
 $string['btn_eval_short'] = 'Bewerten';
 $string['btn_evalsingle'] = 'Ausgewählten Slot bewerten';
+$string['btn_exportics'] = 'Ausgewählten Termin als ICS Datei exportieren';
 $string['btn_print'] = 'Ausgewählte Slots drucken';
 $string['btn_printsingle'] = 'Ausgewählten Slot drucken';
 $string['btn_queue'] = 'Warteliste';
@@ -188,7 +189,7 @@ $string['cfg_dontshowidentity_desc'] = 'Die Teilnehmer-ID wird in der Terminlist
 $string['cfg_limitedwidth'] = 'Schmaler Content-Bereich';
 $string['cfg_limitedwidth_desc'] = 'Sie können hier das schmale Moodle 4.x-Design im Terminplaner aktivieren. Längere Tabelleneinträge können aber zu einem Strecken des Content-Bereichs führen.';
 $string['changegradewarning'] = 'In diesem Terminplaner sind bereits Termine bewertet worden. Bei einer Änderung der Bewertungseinstellungen sind Neuberechnungen der Bewertungen erforderlich. Sie müssen ggfs. die Neuberechnung gesondert starten.';
-$string['collision'] = 'Warnung! Zeitkollision mit dem/n folgenden Termin/en entdeckt:';
+$string['collision'] = 'Achtung! Zeitkollision mit folgenden Ergeignissen oder Terminen erkannt:';
 $string['configabsolutedeadline'] = 'Voreinstellung für den Offset der Datums- und Zeitauswahl, ausgehend vom jetzigen Zeitpunkt.';
 $string['configahead'] = 'vorher';
 $string['configallowcreationofpasttimeslots'] = 'Das Anlegen von Terminen in der Vergangenheit zulassen?';
@@ -281,7 +282,7 @@ $string['edit_notify_student:smallmessage'] = 'Die Details des Termins {$a->send
 $string['edit_notify_student:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Termindetails verändert';
 $string['edit_notify_teacher:fullmessage'] = 'Hallo {$a->receivername}!
 
-Im Rahmen des Kurses {$a->courseid} {$a->coursefullname}, sind die Details des Zeitslots am {$a->date} um {$a->time} von {$a->sendername} verändert worden.
+Im Rahmen des Kurses {$a->courseid} {$a->coursefullname}, sind die Details des Termins am {$a->date} um {$a->time} von {$a->sendername} verändert worden.
 
 Trainer/in: {$a->slot_teacher}
 Ort: {$a->slot_location}
@@ -391,6 +392,8 @@ $string['eventtemplatewithoutlinks'] = '{$a->coursename} / {$a->organizername}: 
 $string['eventtitle'] = '{$a->coursename} / {$a->organizername}: {$a->appwith}';
 $string['eventwith'] = 'mit';
 $string['eventwithout'] = '';
+$string['exportics'] = 'ICS Export';
+$string['exporticsaction'] = 'ICS exportieren';
 $string['exportsettings'] = 'Exporteinstellungen';
 $string['filtertable'] = 'Diese Tabelle durchsuchen';
 $string['filtertable_help'] = 'Alle Felder dieser Tabelle nach vorhandenen Begriffen durchsuchen.';
@@ -421,7 +424,7 @@ $string['gradeaggregationmethod_help'] = 'Die Bewertungsberechnungs-Methode legt
 * Niedrigste Bewertung
 * Höchste Bewertung
 * Summe - Alle Terminbewertungen aufsummiert';
-$string['grading_desc_grade'] = 'Bewertungen wurden aktiviert.';
+$string['grading_desc_grade'] = 'Bewertungen sind aktiviert.';
 $string['grading_desc_nograde'] = 'Bewertungen sind nicht aktiviert.';
 $string['group_registration_notify:student:queue:group:fullmessage'] = 'Hallo {$a->receivername}!
 
@@ -486,7 +489,9 @@ $string['groupmodenogroups'] = 'Kein Gruppenmodus';
 $string['groupmodeslotgroups'] = 'Gruppen für neue Termine anlegen';
 $string['groupmodeslotgroupsappointment'] = 'Gruppen für gebuchte Termine anlegen';
 $string['groupoptions'] = 'Gruppeneinstellungen';
+$string['grouporganizer_desc'] = 'Dies ist ein Gruppen-Terminplaner.';
 $string['grouporganizer_desc_novalidgroup'] = 'Dies ist ein Gruppen-Terminplaner. Sie sind nicht Mitglied einer Gruppe, die Teil dieses Terminplaners ist!';
+$string['grouporganizer_desc_participant'] = 'Dies ist ein Gruppen-Terminplaner. Klicken Sie auf den Registrieren Button, um diesen Termin für Sie und alle Gruppenmitglieder {$a->groupname} zu reservieren. Alle Gruppenmitglieder können die Registrierung ändern und kommentieren.';
 $string['grouppicker'] = 'Gruppenauswahl';
 $string['groupwarning'] = 'Prüfen Sie die Gruppeneinstellungen unten!';
 $string['headerfooter'] = 'Kopf-/Fußzeilen';
@@ -496,7 +501,7 @@ $string['hidecalendar_help'] = 'Stellen Sie hier ein, ob der Kalender in diesem 
 $string['hour'] = 'h';
 $string['hour_pl'] = 'hrs';
 $string['id'] = 'ID';
-$string['img_title_due'] = 'Der Slot ist fällig';
+$string['img_title_due'] = 'Der Termin kann gebucht werden';
 $string['img_title_evaluated'] = 'Der Slot ist bewertet';
 $string['img_title_full'] = 'Der Termin ist ausgebucht';
 $string['img_title_no_participants'] = 'Der Slot hatte keine Teilnehmer/innen';
@@ -507,50 +512,50 @@ $string['includetraineringroups_help'] = 'Wenn Sie diese Checkbox anklicken werd
 $string['infobox_app_countdown'] = 'Zeit bis zum Termin: {$a->days} Tage, {$a->hours} Stunden, {$a->minutes} Minuten, {$a->seconds} Sekunden';
 $string['infobox_app_inprogress'] = 'Der Termin findet gerade statt.';
 $string['infobox_app_occured'] = 'Der Termin hat schon stattgefunden.';
-$string['infobox_appointmentsstatus_pl'] = '{$a->tooless} Buchung(en) sind noch fällig. Es gibt noch {$a->places} freie Plätze in {$a->slots} zukünftigen Slot(s).';
-$string['infobox_appointmentsstatus_sg'] = '{$a->tooless} Buchung(en) sind noch fällig. Es gibt noch {$a->places} freien Platz in {$a->slots} zukünftigen Slot(s).';
-$string['infobox_counter_slotrows'] = 'Slots sichtbar.';
+$string['infobox_appointmentsstatus_pl'] = '{$a->tooless} Buchung(en) sind noch fällig. Es gibt noch {$a->places} freie Plätze in {$a->slots} zukünftigen Terminen.';
+$string['infobox_appointmentsstatus_sg'] = '{$a->tooless} Buchung(en) sind noch fällig. Es gibt noch {$a->places} freien Platz in {$a->slots} zukünftigen Terminen.';
+$string['infobox_counter_slotrows'] = 'Termine sichtbar.';
 $string['infobox_deadline_countdown'] = 'Zeit bis zur An-/Abmeldungsdeadline: {$a->days} Tage, {$a->hours} Stunden, {$a->minutes} Minuten, {$a->seconds} Sekunden';
 $string['infobox_deadline_passed'] = 'Der Anmeldezeitraum ist abgelaufen. Sie können Anmeldungen nicht mehr ändern.';
-$string['infobox_deadline_passed_slot'] = 'xxx Slots wurden nicht angelegt, da sie nicht innerhalb der Anmeldefrist liegen würden.';
-$string['infobox_deadline_passed_slotphp'] = '{$a->slots} Slot(s) wurden nicht angelegt, da die Deadline zur Registrierung vorbei ist.';
+$string['infobox_deadline_passed_slot'] = 'xxx Termine wurden nicht angelegt, da sie außerhalb der Anmeldefrist liegen würden.';
+$string['infobox_deadline_passed_slotphp'] = '{$a->slots} Termin(e) wurden nicht angelegt, da die Deadline zur Registrierung vorbei ist.';
 $string['infobox_deadlines_title'] = 'Anmeldefristen';
 $string['infobox_description_title'] = 'Terminplanerbeschreibung';
 $string['infobox_feedback_title'] = 'Feedback';
 $string['infobox_group'] = 'Meine Gruppe: {$a->groupname}';
 $string['infobox_link'] = 'Anzeigen/Verbergen';
 $string['infobox_messages_title'] = 'Systemnachrichten';
-$string['infobox_messaging_title'] = 'Benachrichtigungseinstellungen';
+$string['infobox_messaging_title'] = '';
 $string['infobox_minmax'] = 'Buchungen per Teilnehmer/in: Minimum {$a->min} - Maximum {$a->max}.';
 $string['infobox_mycomments_title'] = 'Meine Kommentare';
 $string['infobox_myslot_noslot'] = 'Sie sind derzeit für keinen Slot angemeldet.';
-$string['infobox_myslot_title'] = 'Mein Slot';
+$string['infobox_myslot_title'] = 'Meine Termine';
 $string['infobox_myslot_userslots_left'] = 'Sie haben noch {$a->left} Buchungen zur Verfügung.';
 $string['infobox_myslot_userslots_left_group'] = 'Ihre Gruppe hat noch {$a->left} Buchungen zur Verfügung.';
-$string['infobox_myslot_userslots_max_reached'] = 'Sie haben das Maximum von {$a->max} Slot(s) gebucht.';
-$string['infobox_myslot_userslots_max_reached_group'] = 'Ihre Gruppe hat das Maximum von {$a->max} Slot(s) gebucht.';
-$string['infobox_myslot_userslots_min_not_reached'] = 'Sie haben noch nicht die geforderte Anzahl von {$a->min} Slot(s) gebucht.';
-$string['infobox_myslot_userslots_min_not_reached_group'] = 'Ihre Gruppe hat noch nicht die geforderte Anzahl von {$a->min} Slot(s) gebucht.';
-$string['infobox_myslot_userslots_min_reached'] = 'Sie haben die geforderte Anzahl von {$a->min} Slot(s) gebucht.';
-$string['infobox_myslot_userslots_min_reached_group'] = 'Ihre Gruppe hat die geforderte Anzahl von {$a->min} Slot(s) gebucht.';
-$string['infobox_myslot_userslots_status'] = '{$a->booked} von {$a->max} Slots wurden gebucht.';
+$string['infobox_myslot_userslots_max_reached'] = 'Sie haben das Maximum von {$a->max} Termin(en) gebucht.';
+$string['infobox_myslot_userslots_max_reached_group'] = 'Ihre Gruppe hat das Maximum von {$a->max} Termin(en) gebucht.';
+$string['infobox_myslot_userslots_min_not_reached'] = 'Sie haben noch nicht die geforderte Anzahl von {$a->min} Termin(en) gebucht.';
+$string['infobox_myslot_userslots_min_not_reached_group'] = 'Ihre Gruppe hat noch nicht die geforderte Anzahl von {$a->min} Termin(en) gebucht.';
+$string['infobox_myslot_userslots_min_reached'] = 'Sie haben die geforderte Anzahl von {$a->min} Termin(en) gebucht.';
+$string['infobox_myslot_userslots_min_reached_group'] = 'Ihre Gruppe hat die geforderte Anzahl von {$a->min} Terminen gebucht.';
+$string['infobox_myslot_userslots_status'] = '{$a->booked} von {$a->max} Terminen wurden gebucht.';
 $string['infobox_organizer_expired'] = 'Dieser Terminplaner lief am {$a->date} um {$a->time} ab';
 $string['infobox_organizer_expires'] = 'Dieser Terminplaner läuft am {$a->date} um {$a->time} ab.';
 $string['infobox_organizer_never_expires'] = 'Dieser Terminplaner läuft nicht ab.';
-$string['infobox_registrationstatistic_title'] = 'Status';
+$string['infobox_registrationstatistic_title'] = 'Zusammenfassung';
 $string['infobox_showallparticipants'] = 'Alle Teilnehmer/innen anzeigen';
-$string['infobox_showfreeslots'] = 'Freie Slots';
+$string['infobox_showfreeslots'] = 'Nur freie Termine';
 $string['infobox_showhiddenslots'] = 'Verborgene Slots';
-$string['infobox_showmyslotsonly'] = 'Meine Slots';
-$string['infobox_showregistrationsonly'] = 'Gebuchte Slots';
-$string['infobox_showslots'] = 'Vergangene Slots';
+$string['infobox_showmyslotsonly'] = 'Nur meine Termine';
+$string['infobox_showregistrationsonly'] = 'Nur gebuchte Termine';
+$string['infobox_showslots'] = 'Auch vergangene Termine';
 $string['infobox_slotoverview_title'] = 'Slot Übersicht';
 $string['infobox_slotsviewoptions'] = 'Optionen zum Filtern';
 $string['infobox_slotsviewoptions_help'] = 'Diese Filteroptionen sind mit der Konjunktion UND verbunden!';
-$string['infobox_statistic_maxreached'] = '{$a->maxreached} von {$a->entries} Teilnehmer/innen haben das Maximum von {$a->max} Slot(s) gebucht.';
-$string['infobox_statistic_maxreached_group'] = '{$a->maxreached} von {$a->entries} Gruppen haben das Maximum von {$a->max} Slot(s) gebucht.';
-$string['infobox_statistic_minreached'] = '{$a->minreached} von {$a->entries} Teilnehmer/innen haben das geforderte Minimum von {$a->min} Slot(s) gebucht.';
-$string['infobox_statistic_minreached_group'] = '{$a->minreached} von {$a->entries} Gruppen haben das geforderte Minimum von {$a->min} Slot(s) gebucht.';
+$string['infobox_statistic_maxreached'] = '{$a->maxreached} von {$a->entries} Teilnehmer/innen haben das Maximum von {$a->max} Terminen gebucht.';
+$string['infobox_statistic_maxreached_group'] = '{$a->maxreached} von {$a->entries} Gruppen haben das Maximum von {$a->max} Termin(en) gebucht.';
+$string['infobox_statistic_minreached'] = '{$a->minreached} von {$a->entries} Teilnehmer/innen haben das geforderte Minimum von {$a->min} Termin(en) gebucht.';
+$string['infobox_statistic_minreached_group'] = '{$a->minreached} von {$a->entries} Gruppen haben das geforderte Minimum von {$a->min} Termin(en) gebucht.';
 $string['infobox_title'] = 'Infobox';
 $string['introeditor_error'] = 'Eine Beschreibung des Terminplaners muss vorhanden sein!';
 $string['invalidgrouping'] = 'Sie müssen eine gültige Gruppierung auswählen!';
@@ -573,7 +578,7 @@ $string['maxparticipants_help'] = 'Bestimmt die maximale Anzahl Teilnehmer/innen
 $string['message_autogenerated2'] = 'Automatisch generierte Nachricht';
 $string['message_custommessage'] = 'Benutzerdefinierte Nachricht';
 $string['message_custommessage_help'] = 'Geben sie hier eine Nachricht ein die in die automatisch generierte Nachricht eingefügt wird.';
-$string['message_error_action_notallowed'] = 'Diese Aktion kann nicht mehr ausgeführt werden!';
+$string['message_error_action_notallowed'] = 'Diese Aktion kann nicht mehr ausgeführt werden. Bitte navigieren Sie zur letzten Seite zurück oder aktualisieren Sie die Seite.';
 $string['message_error_groupsynchronization'] = 'Die Synchronisierung der Termin-Gruppen schlug fehl!';
 $string['message_error_noactionchosen'] = 'Wählen Sie eine Aktion aus und drücken Sie dann auf den Start-Button.';
 $string['message_error_slot_full_group'] = 'Dieser Slot ist vergeben!';
@@ -593,16 +598,16 @@ $string['message_info_reregistered'] = 'Sie haben sich erfolgreich für einen Te
 $string['message_info_reregistered_group'] = 'Ihre Gruppe hat sich erfolgreich für einen Termin angemeldet.';
 $string['message_info_slots_added_pl'] = '{$a->count} neue Slots hinzugefügt.';
 $string['message_info_slots_added_sg'] = '{$a->count} neuer Slot hinzugefügt.';
-$string['message_info_slots_deleted_pl'] = '{$a->deleted} Slots wurden gelöscht. {$a->notified} Teilnehmer/innen wurden benachrichtigt.';
-$string['message_info_slots_deleted_sg'] = 'Der Slot wurde gelöscht. {$a->notified} Teilnehmer/innen wurden benachrichtigt.';
-$string['message_info_slots_edited_pl'] = '{$a->count} Slots wurden bearbeitet.';
-$string['message_info_slots_edited_sg'] = 'Ein Slot wurde erfolgreich bearbeitet.';
-$string['message_info_slots_evaluated_pl'] = '{$a->count} Slots wurden bewertet.';
-$string['message_info_slots_evaluated_sg'] = 'Ein Slot wurde bewertet.';
+$string['message_info_slots_deleted_pl'] = '{$a->deleted} Termine wurden gelöscht. {$a->notified} Teilnehmer/innen wurden benachrichtigt.';
+$string['message_info_slots_deleted_sg'] = 'Der Termin wurde gelöscht. {$a->notified} Teilnehmer/innen wurden benachrichtigt.';
+$string['message_info_slots_edited_pl'] = '{$a->count} Termine wurden bearbeitet.';
+$string['message_info_slots_edited_sg'] = '{$a->count} Termin wurde bearbeitet.';
+$string['message_info_slots_evaluated_pl'] = '{$a->count} Teilnehmer/innen wurden bewertet.';
+$string['message_info_slots_evaluated_sg'] = '{$a->count} Teilnehmer/in wurde bewertet.';
 $string['message_info_unqueued'] = 'Sie wurden aus der Warteliste entfernt.';
 $string['message_info_unqueued_group'] = 'Ihre Gruppe wurde aus der Warteliste entfernt.';
-$string['message_info_unregistered'] = 'Sie wurden von dem Slot ergfolgreich abgemeldet.';
-$string['message_info_unregistered_group'] = 'Ihre Gruppe wurde von dem Slot erfolgreich abgemeldet.';
+$string['message_info_unregistered'] = 'Sie wurden von dem Termin abgemeldet.';
+$string['message_info_unregistered_group'] = 'Ihre Gruppe wurde von dem Termin abgemeldet.';
 $string['message_warning_no_slots_added'] = 'Es wurden keine neuen Slots hinzugefügt!';
 $string['message_warning_no_slots_selected'] = 'Sie müssen zuerst mindestens einen Slot auswählen!';
 $string['message_warning_no_visible_slots_selected'] = 'Sie müssen zuerst mindestens einen SICHTBAREN Slot auswählen!';
@@ -637,7 +642,7 @@ $string['modulename'] = 'Terminplaner';
 $string['modulename_help'] = 'Terminplaner ermöglichen es den Trainer/innen Termine bzw. Zeitfenster für die Teilnehmer/innen bereitzustellen.';
 $string['modulenameplural'] = 'Terminplaner';
 $string['monthlyview'] = 'Monatsansicht';
-$string['multimember'] = 'Teilnehmer dürfen nicht binnen einer Gruppierung zu mehreren Gruppen gehören!';
+$string['multimember'] = 'Teilnehmer dürfen nicht zu mehreren Gruppen im Kurs gehören!';
 $string['multimemberspecific'] = 'Teilnehmer {$a->username} {$a->idnumber} hat sich für mehr als eine Gruppe angemeldet! ({$a->groups})';
 $string['multipleappointmentenddate'] = 'Enddatum';
 $string['multipleappointmentstartdate'] = 'Startdatum';
@@ -651,19 +656,19 @@ $string['mymoodle_completed_app_group'] = 'Ihre Gruppe {$a->groupname} hat am Te
 $string['mymoodle_missed_app'] = 'Sie haben am Termin am {$a->date} um {$a->time} nicht teilgenommen';
 $string['mymoodle_missed_app_group'] = 'Ihre Gruppe {$a->groupname} hat am Termin am {$a->date} um {$a->time} nicht teilgenommen';
 $string['mymoodle_next_slot'] = 'Nächster Slot am {$a->date} um {$a->time}';
-$string['mymoodle_no_reg_slot'] = 'Sie haben sich noch nicht für einen Zeitslot angemeldet.';
-$string['mymoodle_no_reg_slot_group'] = 'Ihre Gruppe {$a->groupname} hat sich noch nicht für einen Zeitslot angemeldet.';
+$string['mymoodle_no_reg_slot'] = 'Sie haben {$a->booked} Termine gebucht aber noch nicht das Minimum von {$a->slotsmin} Terminen erreicht.';
+$string['mymoodle_no_reg_slot_group'] = 'Ihre Gruppe {$a->groupname} hat {$a->booked} Termine gebucht aber noch nicht das Minimum von {$a->slotsmin} Terminen erreicht.';
 $string['mymoodle_no_slots'] = 'Keine bevorstehenden Slots';
 $string['mymoodle_organizer_expired'] = 'Dieser Terminplaner lief am {$a->date} um {$a->time} ab. Sie können ihn nicht mehr benutzen.';
 $string['mymoodle_organizer_expires'] = 'Dieser Terminplaner läuft am {$a->date} um {$a->time} ab.';
 $string['mymoodle_pending_app'] = 'Ausstehende Bewertung Ihres Termins';
 $string['mymoodle_pending_app_group'] = 'Ausstehende Bewertung des Termins Ihrer Gruppe {$a->groupname}';
-$string['mymoodle_reg_slot'] = 'Sie haben {a->booked} Slots gebucht und daher das Minimum von {a->slotsmin} Buchungen erreicht.';
-$string['mymoodle_reg_slot_group'] = 'Ihre Gruppe {$a->groupname} hat {a->booked} Slots gebucht und daher das Minimum von {a->slotsmin} Buchungen erreicht.';
+$string['mymoodle_reg_slot'] = 'Sie haben {a->booked} Termine gebucht und daher das Minimum von {a->slotsmin} Buchungen erreicht.';
+$string['mymoodle_reg_slot_group'] = 'Ihre Gruppe {$a->groupname} hat {a->booked} Termine gebucht und daher das Minimum von {a->slotsmin} Buchungen erreicht.';
 $string['mymoodle_registered'] = '{$a->registered}/{$a->total} Teilnehmer/innen haben sich für einen Termin angemeldet.';
 $string['mymoodle_registered_group'] = '{$a->registered}/{$a->total} Gruppen haben sich für einem Termin angemeldet.';
-$string['mymoodle_registered_group_short'] = '$a->registered} von {$a->total} Gruppen haben das Mimimum von {a->slotsmin} Slots gebucht.';
-$string['mymoodle_registered_short'] = '{$a->registered} von {$a->total} Teilnehmer/innen haben das Minimum von {a->slotsmin} Slots gebucht.';
+$string['mymoodle_registered_group_short'] = '$a->registered} von {$a->total} Gruppen haben das Mimimum von {a->slotsmin} Terminen gebucht.';
+$string['mymoodle_registered_short'] = '{$a->registered} von {$a->total} Teilnehmer/innen haben das Minimum von {a->slotsmin} Terminen gebucht.';
 $string['mymoodle_upcoming_app'] = 'Ihr Termin findet am {$a->date} um {$a->time} im/in {$a->location} statt.';
 $string['mymoodle_upcoming_app_group'] = 'Der Termin Ihrer Gruppe, {$a->groupname}, findet am {$a->date} um {$a->time} im/in {$a->location} statt.';
 $string['newslot'] = 'Weitere Slots hinzufügen';
@@ -672,14 +677,14 @@ $string['no_due_slots'] = 'Alle in diesem Terminplaner erstellten Zeitslots sind
 $string['no_my_slots'] = 'Sie haben in diesem Terminplaner keine Slots erstellt.';
 $string['no_slots'] = 'Es wurden keine Zeitslots in diesem Terminplaner erstellt.';
 $string['no_slots_defined'] = 'Derzeit sind keine Zeitslots verfügbar.';
-$string['no_slots_defined_teacher'] = 'Derzeit sind keine Zeitslots verfügbar. Legen Sie <a href="{$a->link}">hier</a> neue an.';
+$string['no_slots_defined_teacher'] = 'Derzeit sind keine Termine verfügbar. Legen Sie <a href="{$a->link}">hier</a> neue an.';
 $string['nocalendareventslotcreation'] = 'Keine Kalendereinträge für (noch) leere Slots';
 $string['nocalendareventslotcreation_help'] = 'Wenn Sie diese Option anklicken werden beim Anlegen von Terminen noch keine Kalendereinträge erstellt. Erst Verabredungen führen zu Kalendereinträgen für Termine.';
 $string['nofreeslots'] = 'Derzeit ist kein freier Termin verfügbar.';
 $string['nogroup'] = 'Keine Gruppe';
 $string['nolocationplaceholder'] = '_noch nicht definiert_';
 $string['noparticipants'] = 'Keine Teilnehmer/innen';
-$string['noreregistrations'] = 'Keine Ummeldungen nach Ablauf der Anmeldefrist';
+$string['noreregistrations'] = 'Keine Anmeldungen nach Ablauf der Anmeldefrist';
 $string['noreregistrations_help'] = 'Wurde ein Termin gebucht, dessen Anmeldefrist schon abgelaufen ist, kann diese Buchung nicht mehr umgemeldet werden.';
 $string['norightpage'] = 'Sie haben nicht das Recht, diese Seite aufzurufen.';
 $string['nosingleslotprintfields'] = 'Es kann kein Ausdruck vorgenommen werden. Es wurden keine Profilfelder zum Ausdruck bestimmt. Siehe die Terminplaner-Einstellungen.';
@@ -853,21 +858,20 @@ $string['register_promotion_student:smallmessage'] = 'Ihre Registrierung für ei
 $string['register_promotion_student:subject'] = 'Moodle Terminplaner: Von Warteliste nachgerückt';
 $string['register_reminder_student:fullmessage'] = 'Hallo {$a->receivername}!
 
-Im Rahmen des Kurses {$a->courseid} {$a->coursefullname}, haben Sie sich entweder noch nicht für einen Zeitslot angemeldet, oder denjenigen verpasst für den Sie sich angemeldet haben.
+Im Rahmen des Kurses {$a->courseid} {$a->coursefullname}, haben Sie sich entweder noch nicht für genügend Termine angemeldet.
 
 {$a->custommessage}
 
 Moodle Messaging System';
 $string['register_reminder_student:group:fullmessage'] = 'Hallo {$a->receivername}!
 
-Im Rahmen des Kurses {$a->courseid} {$a->coursefullname}, hat sich Ihre Gruppe {$a->groupname} entweder noch nicht für einen Zeitslot angemeldet, oder denjenigen verpasst für den Sie sich angemeldet hat.
-
+Im Rahmen des Kurses {$a->courseid} {$a->coursefullname}, hat sich Ihre Gruppe {$a->groupname} noch nicht für genügend Termine angemeldet.
 {$a->custommessage}
 
 Moodle Messaging System';
-$string['register_reminder_student:group:smallmessage'] = 'Bitte melden Sie sich für einen (neuen) Zeitslot an.';
+$string['register_reminder_student:group:smallmessage'] = 'Bitte melden Sie Ihre Gruppe für die erforderliche Anzahl an Terminen an.';
 $string['register_reminder_student:group:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Anmeldungserinnerung';
-$string['register_reminder_student:smallmessage'] = 'Bitte melden Sie sich für einen (neuen) Zeitslot an.';
+$string['register_reminder_student:smallmessage'] = 'Bitte melden Sie sich für die erforderliche Anzahl an Terminen an.';
 $string['register_reminder_student:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Anmeldungserinnerung';
 $string['relative_deadline_before'] = 'vor dem Termin';
 $string['relative_deadline_now'] = 'Ab sofort';
@@ -898,7 +902,7 @@ $string['singleslotprintfield'] = 'Termin-Ausdruck Profilfeld';
 $string['singleslotprintfield0'] = 'Termin-Ausdruck Profilfeld';
 $string['singleslotprintfield0_help'] = 'Diese Profilfelder werden für jede/n TeilnehmerIn beim Ausdruck eines einzelnen Termins ausgedruckt.';
 $string['singleslotprintfields'] = 'Termin-Ausdruck Profilfelder';
-$string['singleslotprintfields_help'] = 'Hier finden Sie die Termin-Ausdruck Profilfelder für den Export einzelner Slots über das Drucker-Symbol vor, welche Sie entsprechend der Instanz-Einstellungen von Moodle selbst auswählen können oder durch den Administrator/in vordefiniert wurden.';
+$string['singleslotprintfields_help'] = 'In diesem Abschnitt legen Sie zusätzliche Profilfelder fest, die für jede/n Teilnehmer/in gedruckt werden, wenn ein Termin ausgedruckt wird.';
 $string['slot'] = 'Termin';
 $string['slot_anonymous'] = 'Anonymer Slot';
 $string['slot_slotvisible'] = 'Mitglieder nur sichtbar wenn eigener Slot';
@@ -906,14 +910,10 @@ $string['slot_visible'] = 'Mitglieder des Slots immer sichtbar';
 $string['slotassignedby'] = 'Termin zugewiesen von';
 $string['slotdeleted_notify_student:fullmessage'] = 'Hallo {$a->receivername}!
 
-Im Rahmen des Kurses {$a->courseshortname} wurde ihr Termin am {$a->date} um {$a->time} im/in {$a->location} abgesagt.
-Beachten Sie dabei, dass Sie keinen Termin mehr im Terminplaner {$a->organizername} haben!
-Für einen Ersatztermin folgen Sie bitte dem Link: {$a->courselink}';
+Im Rahmen des Kurses {$a->courseshortname} wurde ihr Termin am {$a->date} um {$a->time} im/in {$a->location} abgesagt.';
 $string['slotdeleted_notify_student:group:fullmessage'] = 'Hallo {$a->receivername}!
 
-Im Rahmen des Kurses {$a->courseshortname} wurde ihr Termin am {$a->date} um {$a->time} im/in {$a->location} abgesagt.
-Beachten Sie dabei, dass Sie keinen Termin mehr im Terminplaner {$a->organizername} haben!
-Für einen Ersatztermin folgen Sie bitte dem Link: {$a->courselink}';
+Im Rahmen des Kurses {$a->courseshortname} wurde ihr Termin am {$a->date} um {$a->time} im/in {$a->location} abgesagt.';
 $string['slotdeleted_notify_student:group:smallmessage'] = 'Ihr Termin am {$a->date} um {$a->time} im Terminplaner "{$a->organizername}" wurde abgesagt.';
 $string['slotdeleted_notify_student:group:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Termin abgesagt';
 $string['slotdeleted_notify_student:smallmessage'] = 'Ihr Termin am {$a->date} um {$a->time} im Terminplaner "{$a->organizername}" wurde abgesagt.';
@@ -921,8 +921,8 @@ $string['slotdeleted_notify_student:subject'] = '[{$a->courseid}{$a->courseshort
 $string['slotdetails'] = 'Slot Details';
 $string['slotfrom'] = 'von';
 $string['slotlistempty'] = 'Es konnten keine Termine gefunden werden.';
-$string['slotoptionstable'] = '\'Slotauswahl erweitern\'';
-$string['slotoptionstable_help'] = 'Auch vergangene oder versteckte Slots sollen angezeigt werden.';
+$string['slotoptionstable'] = '\'Diese Tabelle erweitern\'';
+$string['slotoptionstable_help'] = 'Auch vergangene oder versteckte Termine anzeigen.';
 $string['slotperiodendtime'] = 'Enddatum';
 $string['slotperiodheader'] = 'Erzeuge Slots für Zeitraum';
 $string['slotperiodheader_help'] = 'Geben Sie ein Start- und Enddatum an für welche die täglichen Zeitfenster (siehe darunter) verwendet werden. Geben Sie hier auch bekannt, ob der Termin für Studierende sichtbar sein soll.';
@@ -998,14 +998,14 @@ $string['unknown'] = 'Unbekannt';
 $string['userslots_mingreatermax'] = 'Die Minimalanzahl von Buchungen ist höher als die Maximalanzahl.';
 $string['userslotsdailymax'] = 'Maximale Anzahl der Buchungen pro Person oder pro Gruppe pro Tag.';
 $string['userslotsdailymax_help'] = 'Anzahl der Buchungen, die eine Person oder Gruppe pro Tag vornehmen kann. \'0\' bedeutet, dass es keine Begrenzung gibt.';
-$string['userslotsmax'] = 'Maximum Buchungen';
-$string['userslotsmax_help'] = 'Die Anzahl an möglichen Buchungen, die Teilnehmer/innen bzw. Gruppen buchen dürfen.';
-$string['userslotsmin'] = 'Minimum Buchungen';
-$string['userslotsmin_help'] = 'Die notwendige Anzahl an Buchungen, die Teilnehmer/innen bzw. Gruppen tätigen müssen.';
+$string['userslotsmax'] = 'Maximum an Terminen pro Teilnehmer/in oder Gruppe';
+$string['userslotsmax_help'] = 'Die Anzahl an Terminen, die Teilnehmer/innen bzw. Gruppen buchen dürfen.';
+$string['userslotsmin'] = 'Minimum an Terminen pro Teilnehmer/in oder Gruppe';
+$string['userslotsmin_help'] = 'Die notwendige Anzahl an Terminen, die Teilnehmer/innen bzw. Gruppen buchen müssen.';
 $string['visibility'] = 'Sichtbarkeit der Angemeldeten - Voreinstellung';
 $string['visibility_all'] = 'Sichtbar';
 $string['visibility_anonymous'] = 'Anonym';
-$string['visibility_help'] = 'Geben Sie hier den Standard vor, wie neue Slots angelegt werden sollen:<br/><b>Anonym:</b> Die anderen Teilnehmer/innen eines Slots sind einem/r Teilnehmer/-in stets verborgen.<br/><b>Sichtbar nur, wenn eigener Slot:</b> Die anderen Teilnehmer/-innen eines Slots sind nur sichtbar, wenn man den Slot selber gebucht hat.<br/><b>Sichtbar:</b> Die Teilnehmer/innen eines Slots werden immer angezeigt.';
+$string['visibility_help'] = 'Geben Sie hier den Standard vor, wie neue Termine angelegt werden sollen:<br/><b>Anonym:</b> Die Teilnehmer/innen dieses Termins werden nie angezeigt.<br/><b>Sichtbar:</b> Alle Teilnehmer/innen dieses Termins werden immer allen angezeigt.<br/><b>Nur für Termin-Teilnehmer/innen sichtbar:</b> Nur Teilnehmer/innen des Termins können einander sehen.';
 $string['visibility_slot'] = 'Sichtbar nur, wenn eigener Slot';
 $string['visible'] = 'Termin sichtbar';
 $string['waitinglists_desc_active'] = 'Wartelisten sind aktiviert.';

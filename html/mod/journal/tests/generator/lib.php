@@ -32,7 +32,6 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class mod_journal_generator extends testing_module_generator {
-
     /**
      * @var int keep track of how many journals have been created.
      */
@@ -56,7 +55,7 @@ class mod_journal_generator extends testing_module_generator {
      * @return void
      */
     public function create_instance($record = null, ?array $options = null) {
-        $record = (object)(array)$record;
+        $record = (object) (array) $record;
 
         if (!isset($record->name)) {
             $record->name = 'Test journal name ' . $this->journalcount;
@@ -73,7 +72,28 @@ class mod_journal_generator extends testing_module_generator {
 
         $this->journalcount++;
 
-        return parent::create_instance($record, (array)$options);
+        return parent::create_instance($record, (array) $options);
     }
 
+    /**
+     * Create a journal entry.
+     *
+     * @param object $record Journal entry record, needs at least the journal ID.
+     * @return int The ID of the created journal entry
+     */
+    public function create_entry(object $record): int {
+        global $DB, $USER;
+
+        if (!isset($record->journal)) {
+            throw new coding_exception('You must specify the journal ID in the record to create a journal entry.');
+        }
+        if (!isset($record->userid)) {
+            $record->userid = $USER->id;
+        }
+        if (!isset($record->text)) {
+            $record->text = 'The student\'s journal entry text.';
+        }
+
+        return $DB->insert_record('journal_entries', $record);
+    }
 }

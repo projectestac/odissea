@@ -54,24 +54,22 @@ if ($ADMIN->fulltree) {
     $settings->add($setting);
 }
 
-// XTEC ************ AFEGIT - Allow access only to xtecadmin user.
-// 2024.12.02 @aginard
-if (get_protected_agora()) {
-// ************ FI
-
 // Note: We add editortiny to the settings page here manually rather than deferring to the plugininfo class.
 // This ensures that it shows in the category list too.
 $ADMIN->add('editortiny', $settings);
 
 foreach (core_plugin_manager::instance()->get_plugins_of_type('tiny') as $plugin) {
+
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user (tiny_fontcolor).
+    // 2026.01.12 @aginard
+    if ('fontcolor' === $plugin->name && !get_protected_agora()) {
+        continue;
+    }
+    // ***************** FI
+
     /** @var \editor_tiny\plugininfo\tiny $plugin */
     $plugin->load_settings($ADMIN, 'editortiny', $hassiteconfig);
 }
-
-// XTEC ************ AFEGIT - Allow access only to xtecadmin user.
-// 2024.12.02 @aginard
-}
-// ************ FI
 
 // Required or the editor plugininfo will add this section twice.
 unset($settings);

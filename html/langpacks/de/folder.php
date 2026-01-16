@@ -51,7 +51,7 @@ $string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozi
 $string['indicator:socialbreadthdef'] = 'Verzeichnis sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Verzeichnis-Ressourcen während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein).';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['maxsizetodownload'] = 'Max. Verzeichnisgröße (MB) zum Herunterladen';
+$string['maxsizetodownload'] = 'Maximale Verzeichnisgröße (MB) zum Herunterladen';
 $string['maxsizetodownload_help'] = 'Die Option legt die maximale Verzeichnisgröße fest, die als ZIP-Archiv heruntergeladen werden kann. Wenn der Wert Null ist, ist die Verzeichnisgröße nicht beschränkt.';
 $string['modulename'] = 'Verzeichnis';
 $string['modulename_help'] = 'Wenn Sie eine größere Anzahl von Dateien in Ihrem Kurs bereitstellen möchten, legen Sie dafür ein Verzeichnis an. Laden Sie die Dateien ins Verzeichnis und strukturieren Sie alles übersichtlich in Unterverzeichnissen.

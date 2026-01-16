@@ -87,11 +87,13 @@ $string['badpenalties'] = 'Penalty regime must be a comma separated list of numb
 $string['badquestion'] = 'Error in question';
 $string['badrandomintarg'] = 'Bad argument to JSON @randomint function';
 $string['badrandompickarg'] = 'Bad argument to JSON @randompic function';
+$string['badresultstable'] = 'Bad test results table. Should be a list of lists.';
 $string['badsandboxparams'] = '\'Other\' field (sandbox params) must be either blank or a valid JSON record';
 $string['badtemplateparams'] = 'Template parameters must evaluate to blank or a valid JSON record. Got: <pre class="templateparamserror">{$a}</pre>';
 $string['baduiparams'] = 'UI parameters must be blank or a valid JSON record.';
 $string['brokencombinator'] = 'Expected {$a->numtests} test results, got {$a->numresults}. Perhaps excessive output or error in question?';
 $string['brokentemplategrader'] = 'Bad output from grader: {$a->output}. Your program execution may have aborted (e.g. a timeout or memory limit exceeded).';
+$string['browsequestions'] = 'Browse questions';
 $string['bulkquestiontester'] = 'The <a href="{$a->link}">bulk tester script</a> tests that the sample answers for all questions in the current context are marked right. Useful only once some questions with sample answers have been added; the initial install has none.';
 $string['bulktestallincontext'] = 'Test all';
 $string['bulktestcontinuefromhere'] = 'Run again or resume, starting from here';
@@ -1015,7 +1017,7 @@ The \'Parameters\' entry
 is used to pass further sandbox-specific data, such as compile options and
 API-keys. It should generally be left blank but if non-blank it must be a valid
 JSON record. In the case of the jobe sandbox, available attributes include
-disklimit, streamsize, numprocs, compileargs, linkargs and interpreterargs. For
+disklimit, streamsize, numprocs, compileargs, linkargs, runargs and interpreterargs. For
 example <code>{"compileargs":["-std=c89"]}</code> for a C question would force C89
 compliance and no other C options would be used. See the jobe documentation
 for details. Some sandboxes (e.g. the deprecated Ideone sandbox) may silently ignore any or all of

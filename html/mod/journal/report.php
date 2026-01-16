@@ -17,9 +17,9 @@
 /**
  * The report page for the mod_journal plugin
  *
- * @package mod_journal
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     mod_journal
+ * @copyright   1999 onwards Martin Dougiamas  {@link http://moodle.com}
+ * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  **/
 
 require_once('../../config.php');
@@ -27,8 +27,9 @@ require_once('lib.php');
 
 $id = required_param('id', PARAM_INT);   // Course module.
 $sortby = optional_param('sortby', 'dateasc', PARAM_ALPHA);
+$selecteduser = optional_param('selecteduser', 0, PARAM_INT);
 
-$valid_sort_options = [
+$validsortoptions = [
     'dateasc',
     'datedesc',
     'firstnameasc',
@@ -36,7 +37,7 @@ $valid_sort_options = [
     'lastnameasc',
     'lastnamedesc',
 ];
-if (!in_array($sortby, $valid_sort_options)) {
+if (!in_array($sortby, $validsortoptions)) {
     $sortby = 'dateasc';
 }
 
@@ -52,6 +53,12 @@ $PAGE->set_url('/mod/journal/report.php', ['id' => $id]);
 $PAGE->navbar->add(get_string('entries', 'journal'));
 $PAGE->set_title(get_string('modulenameplural', 'journal'));
 $PAGE->set_heading($course->fullname);
+
+// Moodle 4.0+ Activity Header support.
+if (method_exists($PAGE, 'set_activity_record')) {
+    $PAGE->set_activity_record($journal);
+}
+
 $PAGE->requires->js_call_amd('mod_journal/report', 'init');
 
 echo $OUTPUT->header();
@@ -66,9 +73,41 @@ foreach ($entries as $entry) {
     $entrybyentry[$entry->id] = $entry;
 }
 
+// Map users with entries for the filter.
+$userswithentries = array_map(function ($entry) {
+    return $entry->userid;
+}, $entries);
+
 // Group mode.
 $groupmode = groups_get_activity_groupmode($cm);
 $currentgroup = groups_get_activity_group($cm, true);
+
+// Fetch users who can ADD entries (Students, but also Teachers/Admins).
+$groups = $currentgroup ? $currentgroup : '';
+$users = get_users_by_capability($context, 'mod/journal:addentries', '', '', '', '', $groups);
+
+// Fetch users who can MANAGE entries (Teachers, Managers, Admins).
+$teachers = get_users_by_capability($context, 'mod/journal:manageentries');
+
+// Filter out Teachers/Managers from the "Users" list.
+// This ensures they don't appear in the "Users who have not completed the journal" list.
+if ($users && $teachers) {
+    foreach ($teachers as $teacherid => $teacher) {
+        if (isset($users[$teacherid])) {
+            unset($users[$teacherid]);
+        }
+    }
+}
+
+// Build filter options.
+$useroptions = [];
+if ($users) {
+    foreach ($users as $user) {
+        if (in_array($user->id, $userswithentries)) {
+            $useroptions[$user->id] = fullname($user);
+        }
+    }
+}
 
 // Process incoming data if there is any.
 if ($data = data_submitted()) {
@@ -88,12 +127,25 @@ if ($data = data_submitted()) {
     $timenow = time();
     $count = 0;
     foreach ($feedback as $num => $vals) {
+        if (!isset($entrybyentry[$num])) {
+            continue;
+        }
         $entry = $entrybyentry[$num];
         $ratingchanged = false;
 
         $studentrating = clean_param($vals['r'], PARAM_INT);
-        $studentcomment = clean_text($vals['c']['text'], FORMAT_HTML);
-        $studentcomment = file_save_draft_area_files($vals['c']['itemid'], $context->id, 'mod_journal', 'feedback', $num, [], $studentcomment);
+        // Ensure text is a string to satisfy PHP 8.1 strict typing.
+        $rawtext = isset($vals['c']['text']) ? (string) $vals['c']['text'] : '';
+        $studentcomment = clean_text($rawtext, FORMAT_HTML);
+        $studentcomment = file_save_draft_area_files(
+            $vals['c']['itemid'],
+            $context->id,
+            'mod_journal',
+            'feedback',
+            $num,
+            [],
+            $studentcomment
+        );
 
         if ($studentrating != $entry->rating || $studentcomment != $entry->entrycomment) {
             $ratingchanged = $studentrating != $entry->rating;
@@ -107,7 +159,10 @@ if ($data = data_submitted()) {
                 'mailed' => 0,
             ];
             if (!$DB->update_record('journal_entries', $newentry)) {
-                echo $OUTPUT->notification(get_string('failedupdate', 'journal', $entry->userid), \core\output\notification::NOTIFY_ERROR);
+                echo $OUTPUT->notification(
+                    get_string('failedupdate', 'journal', $entry->userid),
+                    \core\output\notification::NOTIFY_ERROR
+                );
             } else {
                 $count++;
                 $entrybyuser[$entry->userid]->rating = $studentrating;
@@ -144,21 +199,40 @@ if ($data = data_submitted()) {
     $event->add_record_snapshot('journal', $journal);
     $event->trigger();
 }
-// Determine the group context.
-if ($currentgroup) {
-    $groups = $currentgroup;
-} else {
-    $groups = '';
-}
-$users = get_users_by_capability($context, 'mod/journal:addentries', '', '', '', '', $groups);
 
-if (!$users) {
+if (!$users && !journal_get_users_done($journal, $currentgroup)) {
     echo $OUTPUT->notification(get_string('nousersyet', 'journal'), \core\output\notification::NOTIFY_INFO);
 } else {
-    // Render group activity menu.
+    // Toolbar Area: Filter, Group, Sort.
+    echo html_writer::start_div('d-flex flex-wrap justify-content-between align-items-center mb-3');
+
+    // 1. User Filter Form.
+    $filterform = html_writer::start_tag('form', [
+        'method' => 'get',
+        'action' => 'report.php',
+        'class' => 'd-flex align-items-center me-3', // Class me-3 for spacing (Bootstrap 5).
+    ]);
+    $filterform .= html_writer::empty_tag('input', ['type' => 'hidden', 'name' => 'id', 'value' => $id]);
+    $filterform .= html_writer::select(
+        $useroptions,
+        'selecteduser',
+        $selecteduser,
+        ['' => get_string('allusers', 'search')],
+        ['class' => 'form-select me-2'] // Classes form-select and me-2 (Bootstrap 5).
+    );
+    $filterform .= html_writer::empty_tag('input', [
+        'type' => 'submit',
+        'value' => get_string('filter'),
+        'class' => 'btn btn-secondary',
+    ]);
+    $filterform .= html_writer::end_tag('form');
+    echo $filterform;
+
+    // 2. Group Activity Menu.
+    echo html_writer::div('', 'me-3'); // Spacer.
     groups_print_activity_menu($cm, $PAGE->url);
 
-    // Sorting dropdown.
+    // 3. Sorting Dropdown.
     $options = [
         'dateasc' => get_string('dateasc', 'journal'),
         'datedesc' => get_string('datedesc', 'journal'),
@@ -172,15 +246,14 @@ if (!$users) {
         'sortby',
         $options,
         $sortby,
-        null
+        null,
     );
-    $select->set_label(get_string('sortby'));
+    $select->set_label(get_string('sortby'), ['class' => 'me-1']);
     echo html_writer::div($OUTPUT->render($select), 'divwrapper sortbyselect');
 
+    echo html_writer::end_div(); // End Toolbar.
+
     $grades = make_grades_menu($journal->grade);
-    if (!$teachers = get_users_by_capability($context, 'mod/journal:manageentries')) {
-        throw new \moodle_exception(get_string('noentriesmanagers', 'journal'));
-    }
 
     // Start the form.
     echo html_writer::start_tag('form', [
@@ -192,8 +265,14 @@ if (!$users) {
         mod_journal_sort_users($usersdone, $sortby, $entrybyuser);
         echo html_writer::tag('h3', get_string('userswhocompletedthejournal', 'journal'), ['class' => 'journalheader']);
         foreach ($usersdone as $user) {
-            journal_print_user_entry($course, $user, $entrybyuser[$user->id], $teachers, $grades, $cm->id);
-            unset($users[$user->id]);
+            // Apply User Filter.
+            if ($selecteduser == 0 || $selecteduser == $user->id) {
+                journal_print_user_entry($course, $user, $entrybyuser[$user->id], $teachers, $grades, $cm->id);
+            }
+            // Remove user from the "Not Completed" list if they are in the "Done" list.
+            if (isset($users[$user->id])) {
+                unset($users[$user->id]);
+            }
         }
     }
 
@@ -201,7 +280,10 @@ if (!$users) {
         mod_journal_sort_users($users, $sortby, $entrybyuser);
         echo html_writer::tag('h3', get_string('userswhodidnotcompletedthejournal', 'journal'), ['class' => 'journalheader']);
         foreach ($users as $user) {
-            journal_print_user_entry($course, $user, null, $teachers, $grades, $cm->id);
+            // Apply User Filter.
+            if ($selecteduser == 0 || $selecteduser == $user->id) {
+                journal_print_user_entry($course, $user, null, $teachers, $grades, $cm->id);
+            }
         }
     }
 
@@ -224,13 +306,20 @@ if (!$users) {
         'value' => $sortby,
     ]);
 
+    // Keep the user filter active when saving feedback.
+    echo html_writer::empty_tag('input', [
+        'type' => 'hidden',
+        'name' => 'selecteduser',
+        'value' => $selecteduser,
+    ]);
+
     // Add the submit button inside a paragraph with class.
     echo html_writer::tag(
         'p',
         html_writer::empty_tag('input', [
             'type' => 'submit',
             'value' => get_string('saveallfeedback', 'journal'),
-            'class' => 'btn btn-secondary m-t-1',
+            'class' => 'btn btn-secondary mt-1',
         ]),
         ['class' => 'feedbacksave']
     );

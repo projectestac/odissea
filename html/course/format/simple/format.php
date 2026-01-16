@@ -15,15 +15,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Simple Topics course format.  Display the whole course as "Simple blocks" made of modules.
- * This format is based on "topics" format from Moodle 2.4
+ * Simple Topics course format. Display the whole course as "Simple blocks" made of modules.
+ * This format is based on "topics" format.
  *
- * @package    course/format
- * @subpackage Simple
- * @copyright 2012-2014 UPCnet
- * @author Pau Ferrer Ocaña pau.ferrer-ocana@upcnet.es, Jaume Fernàndez Valiente jfern343@xtec.cat,
- * Marc Espinosa Zamora marc.espinosa.zamora@upcnet.es, Israel Forés Monzó israel.fores@ithinkupc.com
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package   format_simple
+ * @copyright 2012 onwards UPCnet / IThinkUPC
+ * @author    Pau Ferrer Ocaña pau.ferrer-ocana@upcnet.es
+ * @author    Israel Forés Monzó israel.fores@ithinkupc.com
+ * @author    Toni Ginard toni.ginard@ithinkupc.com
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -52,7 +52,10 @@ if ($format->show_editor()) {
 
 $renderer = $PAGE->get_renderer('format_simple');
 
-// Create the ouptut instance and render it.
+if (!is_null($displaysection)) {
+    $format->set_sectionnum($displaysection);
+}
+
 $outputclass = $format->get_output_classname('content');
 $widget = new $outputclass($format);
 

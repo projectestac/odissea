@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Activitat recent';
-$string['recent_activity:addinstance'] = 'Afegir un bloc nou d\'activitat recent';
+$string['recent_activity:addinstance'] = 'Afegeix un bloc d\'activitat recent nou';
 $string['recent_activity:viewaddupdatemodule'] = 'Mostra al bloc d\'activitat recent els mòduls afegits i actualitzats';
 $string['recent_activity:viewdeletemodule'] = 'Mostra al bloc d\'activitat recent els mòduls suprimits';

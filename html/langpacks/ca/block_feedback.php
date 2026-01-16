@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['feedback'] = 'Retroacció';
-$string['feedback:addinstance'] = 'Afegir un bloc nou d\'enquesta';
+$string['feedback:addinstance'] = 'Afegeix un bloc nou d\'enquesta';
 $string['pluginname'] = 'Retroacció';

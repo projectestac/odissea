@@ -69,7 +69,6 @@ $string['not_all_expected_set'] = 'Δεν έχουν όλες οι δραστη�
 $string['now_indicator'] = 'ΤΩΡΑ';
 $string['overview'] = 'Επισκόπηση μαθητών';
 $string['pluginname'] = 'Πρόοδος ολοκλήρωσης';
-$string['privacy:metadata'] = 'Το μπλοκ Προόδου Ολοκλήρωσης εμφανίζει μόνο τα υπάρχοντα δεδομένα ολοκλήρωσης.';
 $string['progress'] = 'Πρόοδος';
 $string['progressbar'] = 'Πρόοδος ολοκλήρωσης';
 $string['selectitem'] = 'Επιλογή «{$a}»';

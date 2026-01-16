@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmoreusers'] = 'Afegir {no} usuaris més';
+$string['addmoreusers'] = 'Afegeix {no} usuaris més';
 $string['configheader_settings'] = 'Informació de bloc';
 $string['displayemail'] = 'Mostra el correu electrònic';
 $string['displaylastaccess'] = 'Mostra l\'últim accés';

@@ -355,6 +355,7 @@ $string['sessionroles'] = 'Sessierollen';
 $string['sessions'] = 'Sessies';
 $string['sessionsoncoursepage'] = 'Sessie getoond op cursuspagina';
 $string['sessionstartdate'] = 'Startdatum sessie';
+$string['sessionstartdateandtimewithouttimezone'] = '{$a->startdate}, {$a->starttime} - {$a->endtime}';
 $string['sessionstarttime'] = 'Begintijd sessie';
 $string['sessionvenue'] = 'Ruimte/lokaal sessie';
 $string['setting:addchangemanageremail'] = 'Vraag gebruikers om het emailadres van de afspraakmanager';

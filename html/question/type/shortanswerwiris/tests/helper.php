@@ -29,11 +29,11 @@ class qtype_shortanswerwiris_test_helper extends question_test_helper {
      * Makes a shortanswerwiris question with correct answer 'math', partially
      * correct answer 'mat' and defaultmark 1. This question also has a
      * '*' match anything answer.
-     * @return qtype_shortanswerwiris_question
+     * @return stdClass
      */
     public function get_shortanswerwiris_question_form_data_scienceshortanswer() {
         question_bank::load_question_definition_classes('shortanswerwiris');
-        $form = new qtype_shortanswerwiris_question();
+        $form = new stdClass();
         test_question_maker::initialise_a_question($form);
         $form->name = 'Short answer wiris question';
         $form->questiontext = array();
@@ -47,15 +47,18 @@ class qtype_shortanswerwiris_test_helper extends question_test_helper {
         $form->answer = array(
             13 => 'math',
             14 => 'mat',
-            15 => '*' );
+            15 => '*'
+        );
         $form->fraction = array(
             13 => '1.0',
             14 => '0.8',
-            15 => '0.0');
+            15 => '0.0'
+        );
         $form->feedback = array(
             13 => array('text' => 'Math is a very good answer.', 'format' => '1'),
             14 => array('text' => 'Mat is an OK good answer.', 'format' => '1'),
-            15 => array('text' => 'That is a bad answer.', 'format' => '1'));
+            15 => array('text' => 'That is a bad answer.', 'format' => '1')
+        );
 
         $form->qtype = question_bank::get_qtype('shortanswer');
 
@@ -85,8 +88,10 @@ class qtype_shortanswerwiris_test_helper extends question_test_helper {
         $form->name = 'Short answer question';
         $form->questiontext = array('text' => 'Just write x + #a:', 'format' => FORMAT_HTML);
         $form->defaultmark = 1.0;
-        $form->generalfeedback = array('text' => '#formula - Generalfeedback: You should have said x + #a.',
-                                       'format' => FORMAT_HTML);
+        $form->generalfeedback = array(
+            'text' => '#formula - Generalfeedback: You should have said x + #a.',
+            'format' => FORMAT_HTML
+        );
         $form->usecase = false;
         $form->answer = array('x+#a');
         $form->fraction = array('1.0');

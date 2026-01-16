@@ -51,6 +51,7 @@ $string['answernotgiven'] = 'Cette réponse n’étant pas donnée';
 $string['answerquestions'] = 'Répondre aux questions';
 $string['answers'] = 'Réponses';
 $string['attempted'] = 'Vous avez répondu à ce questionnaire.';
+$string['attemptsallowed'] = 'Tentatives autorisées : {$a}';
 $string['attemptstillinprogress'] = 'En cours. Enregistré le :';
 $string['autonumbering'] = 'Numérotation automatique';
 $string['autonumbering_help'] = 'Numérotation automatique des questions (et des pages). Il peut être utile de désactiver la numérotation automatique dans les questionnaires qui comportent des questions à branchement conditionnel.';

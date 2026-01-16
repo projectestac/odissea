@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['login:addinstance'] = 'Afegir un nou bloc d\'inici de sessió';
+$string['login:addinstance'] = 'Afegeix un bloc d\'inici de sessió nou';
 $string['pluginname'] = 'Inici de sessió';
 $string['privacy:metadata'] = 'El bloc d\'inici de sessió només ofereix una manera d\'identificar-se i no guarda cap informació per si mateix.';

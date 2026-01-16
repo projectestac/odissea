@@ -41,6 +41,7 @@ $string['premiumplugin:export'] = 'Dışa aktar';
 $string['premiumplugin:footnotes'] = 'Dipnotlar';
 $string['premiumplugin:formatpainter'] = 'Biçim boyacısı';
 $string['premiumplugin:linkchecker'] = 'Bağlantı Denetleyicisi';
+$string['premiumplugin:math'] = 'Matematik araçları';
 $string['premiumplugin:pageembed'] = 'Sayfa Gömme';
 $string['premiumplugin:permanentpen'] = 'Silinmeyen Kalem';
 $string['premiumplugin:powerpaste'] = 'Güçlüyapıştırma';

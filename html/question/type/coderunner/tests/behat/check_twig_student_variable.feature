@@ -6,6 +6,7 @@ Feature: Check the STUDENT Twig variable allows access to current username in Co
 
   Background:
     Given the CodeRunner test configuration file is loaded
+    And the Jobe server supports "python3"
     And the following "users" exist:
       | username | firstname | lastname | email            |
       | teacher1 | Teacher   | 1        | teacher1@asd.com |
@@ -33,7 +34,7 @@ Feature: Check the STUDENT Twig variable allows access to current username in Co
       | id_answerboxlines       | 5                                          |
       | id_validateonsave       | 0                                          |
       | id_template             | {{ STUDENT_ANSWER }}                       |
-      | id_answer               | print("{{STUDENT.username}})"              |
+      | id_answer               | print("{{STUDENT.username}}")              |
       | id_iscombinatortemplate | 0                                          |
       | id_testcode_0           | # This isn't used                          |
       | id_expected_0           | {{ STUDENT.username }}                     |

@@ -1250,6 +1250,7 @@ $string['loginstepsnone'] = '<p>Hi!</p>
 <p>If someone else has already chosen your username then you\'ll have to try again using a different username.</p>';
 $string['loginto'] = 'Log in to {$a}';
 $string['loginagain'] = 'Log in again';
+$string['loginrequired'] = 'Login required';
 $string['logoof'] = 'Logo of {$a}';
 $string['logout'] = 'Log out';
 $string['logoutconfirm'] = 'Do you really want to log out?';
@@ -1622,6 +1623,7 @@ $string['oneitemfound'] = 'There is 1 item found.';
 $string['opendrawerblocks'] = 'Open block drawer';
 $string['opendrawerindex'] = 'Open course index';
 $string['opensinnewwindow'] = 'Opens in new window';
+$string['opensinnewwindowbracketed'] = '(Opens in new window)';
 $string['operator_and'] = 'and';
 $string['operator_andnot'] = 'and';
 $string['operator_or'] = 'or';

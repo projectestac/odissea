@@ -31,6 +31,7 @@ $string['ajaxclicktoclose'] = 'Cliqueu la caixeta per esborrar-ho';
 $string['ajaxerror'] = 'Error';
 $string['ajaxfailedupdate'] = 'No es pot actualitzar [1] per [2]';
 $string['ajaxfieldchanged'] = 'El camp que esteu editant ha estat modificat, el voleu actualitzar al nou valor?';
+$string['cellactions'] = 'Accions de la cel·la';
 $string['collapsedcolumns'] = 'Columnes contretes <span class="badge badge-pill badge-primary ml-1" data-collapse="count">{$a}</span>';
 $string['eventgradereportviewed'] = 'S\'ha visualitzat l\'informe del qualificador';
 $string['grader:manage'] = 'Gestionar l\'informe del qualificador';

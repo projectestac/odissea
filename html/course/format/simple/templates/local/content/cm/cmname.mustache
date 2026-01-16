@@ -47,39 +47,30 @@
 {{#url}}
     <div class="activity-instance d-flex flex-column">
         <div class="activitytitle {{textclasses}} modtype_{{modname}} position-relative align-self-start">
-            <div class=" communication courseicon align-self-start mr-3">
-                <img src="{{{icon}}}" class="{{iconclass}}" alt="{{{modname}}} icon" width="{{{iconsize}}}" height="{{{iconsize}}}">
-            </div>
-            <div class="media-body align-self-center">
-                {{#pluginname}}
-                    <div class="text-uppercase small">
-                        {{{pluginname}}}
-                    </div>
-                {{/pluginname}}
+            {{! Icon }}
+            {{#activityicon}}
+                {{$ core_courseformat/local/content/cm/cmicon }}
+                    {{> format_simple/local/content/cm/cmicon }}
+                {{/ core_courseformat/local/content/cm/cmicon }}
+            {{/activityicon}}
+        </div>
+
+        {{! Name & Badge}}
+        <div class="activity-name-area activity-instance d-flex flex-column me-2">
+            <div class="activitytitle {{textclasses}} modtype_{{modname}} position-relative align-self-start">
                 <div class="activityname">
                     {{#activityname}}
                         {{$ core/inplace_editable }}
                             {{> core/inplace_editable }}
                         {{/ core/inplace_editable }}
                     {{/activityname}}
+                    {{#activitybadge}}
+                        {{$ core_courseformat/local/content/cm/activitybadge }}
+                            {{> core_courseformat/local/content/cm/activitybadge }}
+                        {{/ core_courseformat/local/content/cm/activitybadge }}
+                    {{/activitybadge}}
                 </div>
             </div>
         </div>
     </div>
-{{/url}}
-
-{{^url}}
-    {{#activityname}}
-        <div class="activitytitle {{textclasses}} format-simple-label position-relative align-self-start">
-            <div class="media-body align-self-center">
-                <div class="activityname" style="text-align: left;">
-                    {{{activityname}}}
-                </div>
-            </div>
-            <div class="media-body align-self-center">
-                <div class="content">
-                    {{{content}}}
-                </div>
-            </div>
-    {{/activityname}}
 {{/url}}

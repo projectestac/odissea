@@ -42,6 +42,9 @@ $CFG->timezone = 99; // Changed by default to Server's local time
 $CFG->cronremotepassword = '';
 $CFG->cronclionly = 1;
 
+// Reduce from 4 days to 1 the waiting time to purge files.
+$CFG->agora_draftfilepurgeage = 60 * 60 * 24;
+
 // Encryption in https is provided by the load balancer.
 $CFG->sslproxy = true;
 

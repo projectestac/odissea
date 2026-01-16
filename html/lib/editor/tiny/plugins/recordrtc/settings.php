@@ -43,8 +43,8 @@ if ($ADMIN->fulltree) {
         $settings->add($setting);
     }
 
-    // XTEC ************ AFEGIT - Allow access only to xtecadmin user.
-    // 2023.07.14 @aginard
+    // XTEC ************ AFEGIT - Only xtecadmin can set video in tiny_recordrtc.
+    // 2026.01.08 @aginard
     if (get_protected_agora()) {
     // ************ FI
 
@@ -54,30 +54,34 @@ if ($ADMIN->fulltree) {
         \tiny_recordrtc\constants::TINYRECORDRTC_VIDEO_TYPE => new lang_string('onlyvideo', 'tiny_recordrtc'),
         \tiny_recordrtc\constants::TINYRECORDRTC_SCREEN_TYPE => new lang_string('onlyscreen', 'tiny_recordrtc'),
     ];
+
     $name = get_string('allowedtypes', 'tiny_recordrtc');
     $desc = get_string('allowedtypes_desc', 'tiny_recordrtc');
 
-    // XTEC ************ MODIFICAT - Set TinyMCE default value for RTC to only audio.
-    // 2023.07.14 @aginard
-    $default = [
-        \tiny_recordrtc\constants::TINYRECORDRTC_AUDIO_TYPE => 1,
-    ];
-    // ************ ORIGINAL
-    /*
     $default = [
         \tiny_recordrtc\constants::TINYRECORDRTC_AUDIO_TYPE => 1,
         \tiny_recordrtc\constants::TINYRECORDRTC_VIDEO_TYPE => 1,
     ];
-    */
+
+    // XTEC ************ AFEGIT - Only xtecadmin can set video in tiny_recordrtc.
+    // 2026.01.08 @aginard
+    } else {
+        $options = [
+            \tiny_recordrtc\constants::TINYRECORDRTC_AUDIO_TYPE => new lang_string('onlyaudio', 'tiny_recordrtc'),
+            \tiny_recordrtc\constants::TINYRECORDRTC_SCREEN_TYPE => new lang_string('onlyscreen', 'tiny_recordrtc'),
+        ];
+
+        $name = get_string('allowedtypes', 'tiny_recordrtc');
+        $desc = get_string('allowedtypes_desc', 'tiny_recordrtc');
+
+        $default = [
+            \tiny_recordrtc\constants::TINYRECORDRTC_AUDIO_TYPE => 1,
+        ];
+    }
     // ************ FI
 
     $setting = new admin_setting_configmulticheckbox('tiny_recordrtc/allowedtypes', $name, $desc, $default, $options);
     $settings->add($setting);
-
-    // XTEC ************ AFEGIT - Allow access only to xtecadmin user.
-    // 2023.07.14 @aginard
-    }
-    // ************ FI
 
     // Audio bitrate.
     $name = get_string('audiobitrate', 'tiny_recordrtc');

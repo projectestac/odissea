@@ -141,7 +141,6 @@ $string['invalidmargin'] = '余白はゼロを除く有効数字にしてくだ�
 $string['invalidposition'] = 'ポジション {$a} には正数を選択してください。';
 $string['invalidwidth'] = '幅はゼロを除く有効数字にしてください。';
 $string['landscape'] = 'ランドスケープ';
-$string['languageoptions'] = '証明書の言語を強制する';
 $string['leftmargin'] = '左余白';
 $string['leftmargin_help'] = 'これは証明書PDFの左余白 (mm) です。';
 $string['listofissues'] = '受理者: {$a}';
@@ -230,8 +229,6 @@ $string['useadhoc'] = 'メール証明書アドホックタスクを使用';
 $string['useadhoc_desc'] = '有効にすると、証明書に関連するメールは、各発行のために作成されたアドホックタスクを通じて即座に処理されます。無効にすると、メールは通常のスケジュールタスクによって管理されます。
 
 このオプションを有効にすると、メール処理をアドホックタスクに分担させることで、スケジュールタスクのパフォーマンスが向上する可能性があります。';
-$string['userlanguage'] = 'ユーザの設定を使用';
-$string['userlanguage_help'] = '証明書の言語をユーザの言語設定に上書きして強制することができます';
 $string['verified'] = '確認済み';
 $string['verify'] = '確認する';
 $string['verifyallcertificates'] = 'すべての証明書の確認を許可する';

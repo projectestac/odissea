@@ -71,7 +71,6 @@ $string['cachedef_groupdata'] = 'Kurs grup bilgisi';
 $string['cachedef_h5p_content_type_translations'] = 'H5P içerik türü kütüphlane çevirileri';
 $string['cachedef_h5p_libraries'] = 'H5P kütüphanesi';
 $string['cachedef_h5p_library_files'] = 'H5P içerik kütüphaneleri';
-$string['cachedef_hookcallbacks'] = 'Geri çağırma kancaları';
 $string['cachedef_htmlpurifier'] = 'HTML temizleyici - temizlenmiş içerik';
 $string['cachedef_langmenu'] = 'Kullanılabilecek dil listesi';
 $string['cachedef_license'] = 'Lisans listesi';

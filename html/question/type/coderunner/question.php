@@ -237,11 +237,14 @@ class qtype_coderunner_question extends question_graded_automatically {
      */
     public function start_attempt(question_attempt_step $step = null, $variant = null) {
         global $DB, $USER;
+
+        $this->quiz = new qtype_coderunner_quiz(); // Will be meaningless if not running in a quiz.
         if ($step !== null) {
             parent::start_attempt($step, $variant);
             $userid = $step->get_user_id();
             $this->student = new qtype_coderunner_student($DB->get_record('user', ['id' => $userid]));
             $step->set_qt_var('_STUDENT', serialize($this->student));
+            $step->set_qt_var('_QUIZ', serialize($this->quiz));
         } else {  // Validation, so just use the global $USER as student.
             $this->student = new qtype_coderunner_student($USER);
         }
@@ -259,6 +262,12 @@ class qtype_coderunner_question extends question_graded_automatically {
     public function apply_attempt_state(question_attempt_step $step) {
         parent::apply_attempt_state($step);
         $this->student = unserialize($step->get_qt_var('_STUDENT'));
+        $quiz = $step->get_qt_var('_QUIZ');
+
+        // If the saved attempt did not have a quiz variable, create a dummy (empty) one.
+        $this->quiz = $quiz ? unserialize($quiz) : new qtype_coderunner_quiz();
+
+        // Ensure any randomisation is always the same.
         $seed = $step->get_qt_var('_mtrandseed');
         if ($seed === null) {
             // Rendering a question that was begun before randomisation
@@ -409,6 +418,7 @@ class qtype_coderunner_question extends question_graded_automatically {
                 $this->cachedfuncparams === ['lang' => $lang, 'seed' => $seed]
         ) {
             // Use previously cached result if possible.
+
             $jsontemplateparams = $this->cachedevaldtemplateparams;
         } else {
             $lang = strtolower($lang); // Just in case some old legacy DB entries escaped.
@@ -447,10 +457,30 @@ class qtype_coderunner_question extends question_graded_automatically {
         $files = $this->get_files();
         $input = '';
         $runargs = ["seed=$seed"];
-        foreach (['id', 'username', 'firstname', 'lastname', 'email'] as $key) {
-            $value = preg_replace("/[^A-Za-z0-9]/", '', $this->student->$key);
-            $runargs[] = "$key=" . $value;
+
+        // Add student attributes with proper quoting for strings.
+        $runargs[] = "id=" . $this->student->id;  // ID is numeric, no quotes.
+        foreach (['username', 'firstname', 'lastname', 'email'] as $key) {
+            $value = $this->student->$key;
+            // Escape single quotes in the value and wrap in single quotes.
+            $value = str_replace("'", "'\\''", $value);  // Horrible way of escaping quotes in bash.
+            $runargs[] = "$key='$value'";
         }
+
+        // Add quiz name if present (only when running in a quiz).
+        if (!empty($this->quiz->name)) {
+            $quizname = str_replace("'", "'\\''", $this->quiz->name);
+            $runargs[] = "quizname='$quizname'";
+        }
+
+        // Add quiz tags if present (only when running in a quiz AND has tags).
+        if (!empty($this->quiz->tags)) {
+            // Join array of tags with commas, then escape single quotes.
+            $quiztags = implode(',', $this->quiz->tags);
+            $quiztags = str_replace("'", "'\\''", $quiztags);
+            $runargs[] = "quiztags='$quiztags'";
+        }
+
         $sandboxparams = ["runargs" => $runargs, "cputime" => 10];
         $sandbox = $this->get_sandbox();
         $cachecategory = "contextid_{$this->contextid}";
@@ -481,10 +511,11 @@ class qtype_coderunner_question extends question_graded_automatically {
 
     // Render the given twig text using the given random number seed and
     // student variable. This version should be called only during question
-    // initialisation when evaluating the template parametersfunction evaluate_template_params_on_jobeg.
+    // initialisation when evaluating the template parameters.
     private function twig_render_with_seed($text, $seed) {
         mt_srand($seed);
-        return qtype_coderunner_twig::render($text, $this->student);
+        $params = ['STUDENT' => $this->student, 'QUIZ' => $this->quiz];
+        return qtype_coderunner_twig::render($text, $params);
     }
 
 
@@ -994,15 +1025,13 @@ class qtype_coderunner_question extends question_graded_automatically {
     private function twig_all() {
         // Twig expand everything in a context that includes the template
         // parameters and the STUDENT and QUESTION objects.
-        $this->questiontext = $this->twig_expand($this->questiontext);
-        $this->generalfeedback = $this->twig_expand($this->generalfeedback);
-        $this->answer = $this->twig_expand($this->answer);
-        $this->answerpreload = $this->twig_expand($this->answerpreload);
-        $this->globalextra = $this->twig_expand($this->globalextra);
-        $this->prototypeextra = $this->twig_expand($this->prototypeextra);
-        if (!empty($this->uiparameters)) {
-            $this->uiparameters = $this->twig_expand($this->uiparameters);
+        $twigables = qtype_coderunner::twigablefields();
+        foreach ($twigables as $twigable) {
+            if (!empty($this->$twigable)) {
+                $this->$twigable = $this->twig_expand($this->$twigable);
+            }
         }
+
         foreach (array_keys($this->testcases) as $key) {
             foreach (['testcode', 'stdin', 'expected', 'extra'] as $field) {
                 $text = $this->testcases[$key]->$field;
@@ -1047,17 +1076,19 @@ class qtype_coderunner_question extends question_graded_automatically {
      * parameters are to be hoisted, the (key, value) pairs in $this->parameters.
      * @param string $text Text to be twig expanded.
      */
-    public function twig_expand($text, $context = []) {
+    public function twig_expand($text, $params = []) {
         if (empty(trim($text ?? ''))) {
             return $text;
         } else {
-            $context['QUESTION'] = $this->sanitised_clone_of_this();
+            $params['QUESTION'] = $this->sanitised_clone_of_this();
             if ($this->hoisttemplateparams) {
                 foreach ($this->parameters as $key => $value) {
-                    $context[$key] = $value;
+                    $params[$key] = $value;
                 }
             }
-            return qtype_coderunner_twig::render($text, $this->student, $context);
+            $params['STUDENT'] = $this->student;
+            $params['QUIZ'] = $this->quiz;
+            return qtype_coderunner_twig::render($text, $params);
         }
     }
 

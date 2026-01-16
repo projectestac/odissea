@@ -607,4 +607,5 @@ $string['version_help'] = 'Le champ version peut être utilisé pour conserver l
 $string['viewbadge'] = 'Afficher le badge délivré';
 $string['visible'] = 'Visible';
 $string['warnexpired'] = ' (Ce badge est arrivé à échéance !)';
+$string['wrongrole'] = 'Vous n’avez pas le rôle que vous voulez utiliser.';
 $string['year'] = 'Année(s)';

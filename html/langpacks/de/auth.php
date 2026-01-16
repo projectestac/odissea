@@ -99,7 +99,7 @@ Der Bestätigungslink gilt 10 Minuten. Falls Sie Fragen haben, wenden Sie sich a
 Ihr E-Learning-Team';
 $string['emailupdatesuccess'] = 'Die E-Mail-Adresse von <em>{$a->fullname}</em> wurde erfolgreich aktualisiert: <em>{$a->email}</em>.';
 $string['emailupdatetitle'] = 'Bestätigung der E-Mail-Änderung bei {$a->site}';
-$string['errormaxconsecutiveidentchars'] = 'Kennwörter dürfen maximal {$a} aufeinander folgende identische Zeichen besitzen.';
+$string['errormaxconsecutiveidentchars'] = 'Kennwörter dürfen maximal {$a} aufeinander folgende identische Zeichen enthalten.';
 $string['errorminpassworddigits'] = 'Kennwörter müssen mindestens {$a} Ziffer(n) enthalten.';
 $string['errorminpasswordlength'] = 'Kennwörter müssen mindestens {$a} Zeichen lang sein.';
 $string['errorminpasswordlower'] = 'Kennwörter müssen mindestens {$a} Kleinbuchstaben enthalten.';

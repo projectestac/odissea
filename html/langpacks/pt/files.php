@@ -50,9 +50,9 @@ $string['redactor:exifremover:enabled'] = 'Redação do ficheiro';
 $string['redactor:exifremover:enabled_desc'] = 'Por predefinição, o EXIF Remover apenas suporta ficheiros JPG utilizando GD do PHP GD ou ExifTool, se configurado.
 Utilizar o GD do PHP para este fim pode degradar a qualidade da imagem.
 
-Para melhorar o desempenho do EXIF Remover, configure abaixo as definições do ExifTool.
+Para melhorar o desempenho do EXIF Remover, configure abaixo as configurações do ExifTool.
 
-Mais informações sobre a instalação do ExifTool podem ser encontradas em {$a->link}';
+Mais informações sobre a instalação do ExifTool, consulte {$a->link}';
 $string['redactor:exifremover:failedprocessexiftool'] = 'Redação do ficheiro';
 $string['redactor:exifremover:failedprocessgd'] = 'Redação do ficheiro';
 $string['redactor:exifremover:heading'] = 'Redação do ficheiro';

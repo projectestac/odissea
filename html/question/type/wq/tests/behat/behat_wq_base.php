@@ -101,7 +101,8 @@ class behat_wq_base extends behat_base {
         $session = $this->getSession();
         $readonly = $session->getPage()->find('css', '.wrsUI_readOnly');
         if (empty($readonly)) {
-            throw new Exception('Readonly field not found.');
+            $currentUrl = $session->getCurrentUrl();
+            throw new Exception("Readonly field not found. Current URL: {$currentUrl}");
         }
     }
 
@@ -121,9 +122,10 @@ class behat_wq_base extends behat_base {
      */
     public function feedback_should_exist() {
         $session = $this->getSession();
-        $readonly = $session->getPage()->find('css', '.feedback');
-        if (empty($readonly)) {
-            throw new Exception('Readonly field not found.');
+        $feedback = $session->getPage()->find('css', '.feedback');
+        if (empty($feedback)) {
+            $currentUrl = $session->getCurrentUrl();
+            throw new Exception("Feedback element not found. Current URL: {$currentUrl}");
         }
     }
 
@@ -132,9 +134,10 @@ class behat_wq_base extends behat_base {
      */
     public function generalfeedback_should_exist() {
         $session = $this->getSession();
-        $readonly = $session->getPage()->find('css', '.generalfeedback');
-        if (empty($readonly)) {
-            throw new Exception('Readonly field not found.');
+        $generalfeedback = $session->getPage()->find('css', '.generalfeedback');
+        if (empty($generalfeedback)) {
+            $currentUrl = $session->getCurrentUrl();
+            throw new Exception("General feedback element not found. Current URL: {$currentUrl}");
         }
     }
 

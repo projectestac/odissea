@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['helplinktext'] = 'Помощник по формату HTML';
-$string['pluginname'] = 'Форматчик HTML';
-$string['privacy:metadata'] = 'Плагин «Форматчик HTML Tiny» не хранит никаких личных данных.';
+$string['pluginname'] = 'HTML TinyMCE';
+$string['privacy:metadata'] = 'Плагин «HTML Tiny MCE» не хранит никаких личных данных.';

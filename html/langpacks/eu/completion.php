@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['achievinggrade'] = 'Lorpen-kalifikazioa';
+$string['achievinggrade'] = 'Kalifikazioa lortzea';
 $string['achievingpassinggrade'] = 'Gainditzeko kalifikazioa lortzea';
 $string['activities'] = 'Jarduerak';
 $string['activitiescompleted'] = 'Jarduera-osaketa';
@@ -259,7 +259,7 @@ $string['updateactivities'] = 'Eguneratu markatutako jardueren osatze-egoera';
 $string['usealternateselector'] = 'Erabili ordezko ikastaro-hautatzailea';
 $string['usernotenroled'] = 'Erabiltzailea ez dago ikastaro honetan matrikulatuta';
 $string['viewcoursereport'] = 'Ikusi ikastaroaren txostena';
-$string['viewingactivity'] = '{$a} ikusten';
+$string['viewingactivity'] = '{$a} ikustea';
 $string['withconditions'] = 'Baldintzekin';
 $string['writingcompletiondata'] = 'Osaketaren datuak idazten';
 $string['xdays'] = '{$a} egun';

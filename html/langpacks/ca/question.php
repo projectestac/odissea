@@ -148,7 +148,7 @@ Cada categoria pertany a un context que determina on es poden utilitzar les preg
 * Context d\'activitat - Les preguntes només estan disponibles dins del mòdul de l\'activitat.
 * Context del curs - Les preguntes estan disponibles en tots els mòduls d\'activitats del curs.
 * Context de la categoria del curs - Les preguntes estan disponibles en tots els mòduls d\'activitats i cursos en la categoria de cursos.
- * Context de sistema - Les preguntes queden disponibles en tots els cursos i totes les activitats del lloc.
+* Context de sistema - Les preguntes queden disponibles en tots els cursos i totes les activitats del lloc.
 
 Les categories també es poden utilitzar per preparar qüestionaris de preguntes aleatòries, com amb les preguntes triades d\'una categoria en particular.';
 $string['editcategories_link'] = 'question/category';

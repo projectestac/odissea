@@ -38,5 +38,5 @@ $string['privacy:metadata:profile_field_social:fieldid'] = 'ID del campo del pro
 $string['privacy:metadata:profile_field_social:tableexplanation'] = 'Dati aggiuntivi del profilo';
 $string['privacy:metadata:profile_field_social:userid'] = 'ID dell\'utente i cui dati sono memorizzati nel campo social del profilo utente';
 $string['skypeid'] = 'Skype ID';
-$string['webpage'] = 'Pagina web';
+$string['webpage'] = 'Sito web';
 $string['yahooid'] = 'Yahoo ID';

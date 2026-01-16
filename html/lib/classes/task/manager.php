@@ -1675,6 +1675,13 @@ class manager {
         $pathcomponents = [$CFG->dirroot, $CFG->admin, 'cli', 'adhoc_task.php'];
         $scriptpath = escapeshellarg(implode(DIRECTORY_SEPARATOR, $pathcomponents));
 
+        // XTEC ************ AFEGIT - Added param to identify Moodle instance in Agora
+        // 2026.01.08 @aginard
+        if (is_agora()) {
+            $taskarg .= ' ' . escapeshellarg("--ccentre=$CFG->dnscentre");
+        }
+        // ************ FI
+
         // Build the CLI command.
         $command = "{$phpbinary} {$scriptpath} {$taskarg} --force";
 

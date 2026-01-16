@@ -18,9 +18,10 @@
  * Simple Format.
  *
  * @package   format_simple
- * @copyright 2012-onwards UPCnet
- * @author    Pau Ferrer Ocaña pau.ferrer-ocana@upcnet.es, Jaume Fernàndez Valiente jfern343@xtec.cat,
- *            Marc Espinosa Zamora marc.espinosa.zamora@upcnet.es, Israel Forés Monzó israel.fores@ithinkupc.com
+ * @copyright 2012 onwards UPCnet / IThinkUPC
+ * @author    Pau Ferrer Ocaña pau.ferrer-ocana@upcnet.es
+ * @author    Israel Forés Monzó israel.fores@ithinkupc.com
+ * @author    Toni Ginard toni.ginard@ithinkupc.com
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -28,16 +29,15 @@ namespace format_simple\output\courseformat\content;
 
 use core_courseformat\output\local\content\cm as base_cm;
 
-class cm extends base_cm {
-
+class cm extends base_cm
+{
     /**
      * Returns the output class template path.
      *
      * This method redirects the default template when the course section is rendered.
      */
-    public function get_template_name(\renderer_base $renderer): string {
+    public function get_template_name(\renderer_base $renderer): string
+    {
         return 'format_simple/local/content/cm';
     }
-
 }
-

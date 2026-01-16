@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['accessdenied'] = 'Kein Zugriff';
 $string['alwaysopen'] = 'Immer verfügbar';
 $string['blankentry'] = 'Leerer Eintrag';
+$string['completiondetail:completion_create_entry'] = 'Einen Eintrag im Journal erstellen';
 $string['couldnotupdatejournal'] = 'Das Journal konnte nicht aktualisiert werden.';
 $string['countnotinsertjournalentry'] = 'Der neue Journaleintrag konnte nicht eingefügt werden.';
 $string['crontask'] = 'Hintergrundverarbeitung für Journal';
@@ -35,6 +36,10 @@ $string['dateasc'] = 'Datum aufsteigend';
 $string['datedesc'] = 'Datum absteigend';
 $string['daysavailable'] = 'Tage verfügbar';
 $string['deadline'] = 'Tage offen';
+$string['defaultgrade'] = 'Standard für die maximale Bewertung';
+$string['defaultgrade_help'] = 'Die standardmäßige maximale Bewertung für neue Journaleinträge
+* Geben Sie **100** (oder eine beliebige andere positive Zahl) ein, um standardmäßig die Punktebewertung zu aktivieren
+* Geben Sie **0** ein, um die Bewertung standardmäßig zu deaktivieren';
 $string['editingended'] = 'Bearbeitungszeitraum ist abgelaufen';
 $string['editingends'] = 'Bearbeitungszeitraum läuft ab';
 $string['entries'] = 'Einträge';
@@ -61,17 +66,37 @@ $string['incorrectuserid'] = 'Die ausgewählte Nutzer-ID ist ungültig.';
 $string['journal:addentries'] = 'Journaleinträge hinzufügen';
 $string['journal:addinstance'] = 'Journal hinzufügen';
 $string['journal:manageentries'] = 'Journaleinträge verwalten';
-$string['journalmail'] = '{$a->teacher} hat ein Feedback zu Ihrem Eintrag im Journal \'{$a->journal}\' abgegeben.
+$string['journalmail'] = 'Hallo {$a->student},
+
+{$a->teacher} hat ein Feedback zu Ihrem Eintrag im Journal \'{$a->journal}\' abgegeben.
+
+Kurs: {$a->course_name}
+Journal: {$a->journal}
+Datum: {$a->date}
 
 Sie können das Feedback als Anhang zu Ihrem Journaleintrag anzeigen:
-
     {$a->url}';
-$string['journalmailhtml'] = '{$a->teacher} hat ein Feedback zu Ihrem Eintrag im Journal \'<i>{$a->journal}</i>\' abgegeben.<br /><br />Sie können das Feedback als Anhang zu Ihrem <a href="{$a->url}">Journaleintrag</a> anzeigen.';
+$string['journalmailhtml'] = '<p>Hallo {$a->student},</p>
+<p>{$a->teacher} hat ein Feedback zu Ihrem Eintrag im Journal  \'<strong>{$a->journal}</strong>\' abgegeben.</p>
+<p>
+    <strong>Kurs:</strong> {$a->course_name}<br />
+    <strong>Journal:</strong> {$a->journal}<br />
+    <strong>Datum:</strong> {$a->date}
+</p>
+<p>Sie können das Feedback <a href="{$a->url}">als Anhang zu Ihrem Journaleintrag</a> anzeigen.</p>';
 $string['journalname'] = 'Name des Journals';
 $string['journalquestion'] = 'Beschreibung';
 $string['lastnameasc'] = 'Nachname aufsteigend';
 $string['lastnamedesc'] = 'Nachname absteigend';
+$string['mailbody'] = '{$a->username} hat den Journaleintrag für \'{$a->journalname}\' aktualisiert
+
+Sie können den Eintrag hier anzeigen:
+    {$a->url}';
+$string['mailbodyhtml'] = '{$a->username} hat den Journaleintrag für \'<i>{$a->journalname}</i>\' aktualisiert. <br><br>
+Sie können den <a href="{$a->url}">Eintrag hier anzeigen</a>.';
 $string['mailsubject'] = 'Feedback zum Journal';
+$string['messageprovider:journal_feedback'] = 'Feedback zum Journal vom Trainer/von der Trainerin';
+$string['messageprovider:submission'] = 'Journaleintrag erstellt oder verändert';
 $string['modulename'] = 'Journal';
 $string['modulename_help'] = '<p>Die Aktivität Journal ermöglicht es, von Teilnehmer/innen eine Rückmeldung zu einem bestimmten Thema zu erhalten, die ausschließlich die schreibende Person selbst und die Trainer/innen lesen können.</p><p>Anwendungsbeispiele sind u.a.<ul><li>Tagebücher zum Projektverlauf</li><li>Rechenschaftsberichte</li></ul></p>';
 $string['modulename_link'] = 'mod/journal/view';
@@ -83,8 +108,17 @@ $string['nodeadline'] = 'Immer offen';
 $string['noentriesmanagers'] = 'Keine Trainer/in eingeschrieben';
 $string['noentry'] = 'Kein Eintrag';
 $string['noratinggiven'] = 'Keine Bewertung abgegeben';
+$string['notifystudents'] = 'Teilnehmer/innen benachrichtigen';
+$string['notifystudents_default'] = 'Teilnehmer/innen standardmäßig benachrichtigen';
+$string['notifystudents_default_help'] = 'Standard-Einstellung für neue Journal-Aktivitäten';
+$string['notifystudents_help'] = 'Falls aktiviert, erhalten die Teilnehmer/innen eine Benachrichtigung über die Moodle-Nachrichtenfunktion wenn ein/e Trainer/in ein Feedback zu einem Journaleintrag abgibt.';
+$string['notifyteachers'] = 'Trainer/innen benachrichtigen';
+$string['notifyteachers_default'] = 'Trainer/innen standardmäßig benachrichtigen';
+$string['notifyteachers_default_help'] = 'Standard-Einstellung für neue Journal-Aktivitäten';
+$string['notifyteachers_help'] = 'Falls aktiviert, erhalten die Trainer/innen eine Benachrichtigung über die Moodle-Nachrichtenfunktion wenn ein/e Teilnehmer/in einen Journaleintrag anlegt oder aktualisiert.';
 $string['notopenuntil'] = 'Das Journal ist verfügbar ab';
 $string['notstarted'] = 'Sie haben mit dem Journal noch nicht begonnen';
+$string['numchars'] = '{$a} Zeichen';
 $string['overallrating'] = 'Gesamtbewertung';
 $string['pluginadministration'] = 'Journal-Administration';
 $string['pluginname'] = 'Journal';

@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configtitle'] = 'Títol del bloc';
 $string['configtitleblankhides'] = 'Títol del bloc (cap títol si es deixa en blanc)';
-$string['mentees:addinstance'] = 'Afegir un bloc nou de Tutelats';
+$string['mentees:addinstance'] = 'Afegeix un bloc de mentorats nou';
 $string['mentees:myaddinstance'] = 'Afegeix un bloc nou de Tutelats a la pàgina del Tauler';
 $string['newmenteesblock'] = '(nou bloc de Tutelats)';
 $string['pluginname'] = 'Tutelats';

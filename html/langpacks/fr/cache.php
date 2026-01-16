@@ -71,7 +71,6 @@ $string['cachedef_groupdata'] = 'Information du groupe de cours';
 $string['cachedef_h5p_content_type_translations'] = 'Traductions des bibliothèques de types de contenu H5P';
 $string['cachedef_h5p_libraries'] = 'Bibliothèques H5P';
 $string['cachedef_h5p_library_files'] = 'Fichiers des bibliothèques H5P';
-$string['cachedef_hookcallbacks'] = 'Callbacks de hook';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier - contenu nettoyé';
 $string['cachedef_langmenu'] = 'Liste des langues disponibles';
 $string['cachedef_license'] = 'Liste des licences';

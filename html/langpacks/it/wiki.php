@@ -325,5 +325,5 @@ $string['wikiorderedlist'] = 'Elenco ordinato';
 $string['wikipages'] = 'Pagine wiki';
 $string['wikisettings'] = 'Impostazioni Wiki';
 $string['wikiunorderedlist'] = 'Elenco non ordinato';
-$string['wrongversionlock'] = 'Un altro utente ha modificato questa pagina mentre la stavi modificando anche tu. Le tue modifiche son ora obsolete.';
+$string['wrongversionlock'] = 'Un altro utente ha modificato questa pagina mentre la stavi modificando anche tu. Le tue modifiche sono ora obsolete.';
 $string['wrongversionsave'] = 'Un altro utente ha generato una versione mentre stavi modificando la pagina. Hai sovrascritto le sue modifiche, controlla lo storico della pagina.';

@@ -830,7 +830,6 @@ $string['createnewmoodlecoursefromtemplate'] = 'Créer cours Moodle depuis modè
 $string['credits'] = 'Crédits';
 $string['csvfile'] = 'Fichier CSV';
 $string['customdatesbtn'] = '<i class="fa fa-plus-square"></i> Dates personnalisées…';
-$string['customdownloadreport'] = 'Télécharger le rapport';
 $string['customfield'] = 'Champ personnalisé à définir dans les paramètres de l\'option de réservation. Il sera ensuite affiché dans l\'aperçu de l\'option de réservation.';
 $string['customfieldchanged'] = 'Champ personnalisé modifié';
 $string['customfieldconfigure'] = 'Réservation : Champs d\'options de réservation personnalisés';
@@ -858,8 +857,6 @@ $string['customformnotchecked'] = 'Vous n\'avez pas encore accepté.';
 $string['custommessagesent'] = 'Message personnalisé envoyé';
 $string['customprofilefield'] = 'Champ de profil personnalisé à vérifier';
 $string['customprofilefieldvalue'] = 'Valeur du champ de profil personnalisé à vérifier';
-$string['customreporttemplate'] = 'Modèle de rapport personnalisé';
-$string['customreporttemplates'] = 'Modèles de rapport personnalisé';
 $string['customuserprofilefield'] = 'Champ de profil utilisateur personnalisé';
 $string['dashboardsummary'] = 'Général';
 $string['dateandtime'] = 'Date et heure';
@@ -1191,7 +1188,6 @@ Veuillez vous assurer que des modèles d\'e-mail existent déjà dans les param�
 $string['managebookedusers_heading'] = 'Gérer les réservations pour <b>{$a->scopestring}</b> : "{$a->title}"';
 $string['managebooking'] = 'Gérer';
 $string['managebookinginstancetemplates'] = 'Gérer les modèles d\'instances de réservation';
-$string['managecustomreporttemplates'] = 'Gérer les modèles de rapports personnalisés';
 $string['manageoptiontemplates'] = 'Gérer les modèles d\'options de réservation';
 $string['manageresponses'] = 'Gérer les réponses';
 $string['manageresponsesdownloadfields'] = 'Gérer les réponses - Télécharger (CSV, XLSX…)';

@@ -615,4 +615,5 @@ $string['version_help'] = 'Bertsioaren eremua dominaren garapenaren erregistroa 
 $string['viewbadge'] = 'Ikusi emandako domina';
 $string['visible'] = 'Ikusgai';
 $string['warnexpired'] = '(Domina hau iraungita dago!)';
+$string['wrongrole'] = 'Ez daukazu esleituta erabili nahi duzun rola.';
 $string['year'] = 'Urte';
