@@ -4,6 +4,27 @@ More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
 
+Changes 26.01.20
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 4.5.8+
+- Updated langpacks
+- Local Àgora: Updated cache definitions for Moodle 4.5.8+
+- Attendance: Upgraded module
+- boost_union: Upgraded theme
+- Coderunner: Upgraded question type
+- coursequotas: Fixed deletion and download of files
+- Journal: Upgraded module
+- Questionnaire: Upgraded module
+- QV: Replaced print_error() with exception
+- redislock: Upgraded local plugin
+- Replaced print_error() in XTEC patches
+- Repository Google Docs: Fix for MDL-80447
+- Simple course format: Fixes for Moodle 4.5
+- tiles: Upgraded course format
+- Wiris: Upgraded all components
+- Updated mimetex compiled file
+
+
 Changes 25.11.25
 ---------------------------------------------------------------------------------------
 - Upgraded Moodle to version 4.5.7+
