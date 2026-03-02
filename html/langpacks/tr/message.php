@@ -69,6 +69,7 @@ $string['disallowed'] = 'Kilitlendi';
 $string['editmessages'] = 'İletileri düzenle';
 $string['emailtagline'] = 'Bu, {$a->sitename} sitesinde size gönderilen bir mesajın kopyasıdır. Cevaplamak için <a href="{$a->url}">{$a->url}</a>\'a gidin.';
 $string['enabled'] = 'Etkinleştirildi';
+$string['enablenotificationplugin'] = 'Bildirim eklentisini etkinleştir: {$a}';
 $string['errorcallingprocessor'] = 'Tanımlı işleyici çağırırken hata';
 $string['errorconversationdoesnotexist'] = 'Görüşme mevcut değil';
 $string['errormessagetoolong'] = 'Mesaj, izin verilen maksimum değerden daha uzun.';
@@ -139,6 +140,7 @@ $string['notificationdatahasnotbeenmigrated'] = 'Mesajlaşma altyapısındaki y�
 $string['notificationimage'] = 'Bildirim resmi';
 $string['notificationpreferences'] = 'Bildirim tercihleri';
 $string['notifications'] = 'Bildirimler';
+$string['notificationsmarkedasread'] = 'Tüm bildirimler okundu olarak işaretlenir.';
 $string['notificationwindow'] = 'Bildirim penceresi';
 $string['notincontacts'] = 'Onlara mesaj gönderebilmek için kişilerinize {$a} eklemeniz gerekir.';
 $string['notincontactsheading'] = '{$a}, kişilerinizde değil';

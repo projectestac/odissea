@@ -32,7 +32,6 @@ use format_tiles\local\format_option;
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 final class format_tiles_course_format_options_test extends \advanced_testcase {
-
     /**
      * This method is called before the first test of this test class is run.
      */
@@ -82,13 +81,20 @@ final class format_tiles_course_format_options_test extends \advanced_testcase {
         for ($sectionnumber = 1; $sectionnumber <= 9; $sectionnumber++) {
             $expectedfilename = "placeholder_$sectionnumber.jpg";
             $sectionid = $DB->get_field(
-                'course_sections', 'id', ['course' => $course->id, 'section' => $sectionnumber]
+                'course_sections',
+                'id',
+                ['course' => $course->id, 'section' => $sectionnumber]
             );
             $optionvalue = format_option::get($course->id, format_option::OPTION_SECTION_PHOTO, $sectionid);
             $this->assertEquals($optionvalue, $expectedfilename);
 
             $file = $fs->get_file(
-                $context->id, 'format_tiles', 'tilephoto', $sectionid, '/tilephoto/', $expectedfilename
+                $context->id,
+                'format_tiles',
+                'tilephoto',
+                $sectionid,
+                '/tilephoto/',
+                $expectedfilename
             );
             $this->assertEquals($file->get_filename() ?? null, $expectedfilename);
             $this->assertTrue(($file->get_filesize() ?? 0) > 0);
@@ -97,11 +103,15 @@ final class format_tiles_course_format_options_test extends \advanced_testcase {
         for ($sectionnumber = 11; $sectionnumber <= 15; $sectionnumber++) {
             $expectedicon = $icons[$sectionnumber];
             $sectionid = $DB->get_field(
-                'course_sections', 'id', ['course' => $course->id, 'section' => $sectionnumber]
+                'course_sections',
+                'id',
+                ['course' => $course->id, 'section' => $sectionnumber]
             );
             $optionvalue = format_option::get($course->id, format_option::OPTION_SECTION_ICON, $sectionid);
             $this->assertEquals(
-                $optionvalue, $expectedicon, "Section ID $sectionid, number $sectionnumber, option value '$optionvalue'"
+                $optionvalue,
+                $expectedicon,
+                "Section ID $sectionid, number $sectionnumber, option value '$optionvalue'"
             );
         }
     }
@@ -185,7 +195,9 @@ final class format_tiles_course_format_options_test extends \advanced_testcase {
                     continue;
                 }
                 $photo = format_option::get_db_record(
-                    $restoredcourseid, format_option::OPTION_SECTION_PHOTO, $section->id
+                    $restoredcourseid,
+                    format_option::OPTION_SECTION_PHOTO,
+                    $section->id
                 );
                 $this->assertFalse(
                     $photo,

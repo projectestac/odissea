@@ -248,6 +248,7 @@ $string['privacy:metadata:valuetmp'] = 'Devam etmekte olan bir gönderimde bir s
 $string['public'] = 'Genel';
 $string['question'] = 'Soru';
 $string['questionandsubmission'] = 'Soru ve gönderme ayarları';
+$string['questionmoved'] = 'Soru taşındı';
 $string['questions'] = 'Sorular';
 $string['questionslimited'] = 'Sadece {$a} ilk soruları göstererek, tek tek cevapları görüntüleyin veya hepsini görüntülemek için tablo verilerini indirin.';
 $string['radio'] = 'Çoktan seçmeli - tek cevap';

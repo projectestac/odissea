@@ -90,10 +90,14 @@ $string['emailnowexists'] = 'L\'adreça de correu electrònic que heu intentat v
 $string['emailupdate'] = 'Actualització de l\'adreça de correu';
 $string['emailupdatemessage'] = 'Hola, {$a->firstname},
 
-Heu sol·licitat el canvi d\'adreça de correu electrònic del vostre compte d\'usuari a {$a->site}. Obriu l\'enllaç següent amb el vostre navegador per confirmar el canvi:
+Heu sol·licitat el canvi d\'adreça de correu electrònic del vostre compte a {$a->site}.
 
-{$a->url}
-L\'enllaç de confirmació expira en <b>10 minuts</b>.
+Per confirmar aquest canvi, feu clic a l\'enllaç següent:
+
+<a href="{$a->url}">Confirma el canvi d\'adreça de correu</a>
+
+
+L\'enllaç de confirmació expira en <strong>10 minuts</strong>.
 
 {$a->supportemail}';
 $string['emailupdatesuccess'] = 'L\'adreça de correu electrònic de l\'usuari <em>{$a->fullname}</em> ha estat actualitzada i ara és <em>{$a->email}</em>.';

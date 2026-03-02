@@ -142,7 +142,6 @@ if ($mform->is_cancelled()) {
             $tempfile->delete();
         } else {
             try {
-
                 // Delete any existing file attached to this section.
                 \format_tiles\local\tile_photo::delete_files_from_ids($courseid, $sectionid);
 

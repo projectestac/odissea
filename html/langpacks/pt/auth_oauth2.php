@@ -35,11 +35,9 @@ Foi solicitada uma nova conta em \'{$a->sitename}\' usando o seu endereço de e-
 
 Para confirmar a sua nova conta, aceda a este endereço:
 
-{$a->link}
+<a href="{$a->link}">Confirmar a sua conta</a>
 
-Na maioria dos casos, deve aparecer como uma hiperligação azul no qual pode simplesmente clicar. Se não funcionar, copie e cole na linha de endereço no topo da janela do seu navegador web.
-
-Se precisar de ajuda, contacte o administrador do site,
+Se precisar de ajuda, por favor, contacte o administrador do site.
 {$a->admin}
 
 Se não fez este pedido, outra pessoa pode estar a tentar aceder à sua conta.
@@ -51,11 +49,10 @@ $string['confirmlinkedloginemail'] = 'Caro(a) {$a->firstname},
 
 Foi feita uma solicitação para vincular a autenticação via {$a->issuername} com o e-mail {$a->linkedemail} à sua conta em \'{$a->sitename}\'.
 
-Para confirmar este pedido e vincular estas autenticações, aceda a este endereço:
+Para confirmar este pedido e vincular estas autenticações, aceda a endereço abaixo:
 
-{$a->link}
+<a href="{$a->link}">Vincular as suas contas</a>
 
-Na maioria dos casos, deve aparecer como uma hiperligação azul no qual pode simplesmente clicar. Se não funcionar, copie e cole na linha de endereço no topo da janela do seu navegador web.
 
 Se precisar de ajuda, contacte o administrador do site,
 {$a->admin}

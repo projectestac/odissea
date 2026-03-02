@@ -31,7 +31,7 @@ $string['accounts'] = 'Nutzerkonten';
 $string['accountunlocked'] = 'Ihr Nutzerkonto ist entsperrt. Sie können sich anmelden.';
 $string['addcategory'] = 'Kursbereich hinzufügen';
 $string['additionalhtml'] = 'Zusätzliches HTML';
-$string['additionalhtml_desc'] = 'Die folgenden Felder erlauben die Eingabe von HTML-Code, der automatisch auf jeder Seite eingefügt wird. Vorgesehen sind Anweisungen innerhalb des &lt;head&gt;-Bereichs, direkt am Anfang des &lt;body&gt;-Bereichs und direkt am Ende des &lt;body&gt;-Bereichs. <br /><br />Auf diese Weise können nutzerdefinierte Kopf- oder Fußzeilen auf jeder Seite eingefügt werden. Zur Einbindung von externen Diensten wie Google Analytics ist es sehr einfach, die notwendigen Anweisungen einzutragen und unabhängig vom gewählten Design zu benutzen.';
+$string['additionalhtml_desc'] = 'Die folgenden Felder erlauben die Eingabe von HTML-Code, der automatisch auf jeder Seite eingefügt wird. Vorgesehen sind Anweisungen innerhalb des &lt;head&gt;-Bereichs, direkt am Anfang des &lt;body&gt;-Bereichs und direkt am Ende des &lt;body&gt;-Bereichs. <br /><br />Auf diese Weise können nutzerdefinierte Kopf- oder Fußzeilen auf jeder Seite eingefügt werden. Zur Einbindung von externen Diensten wie Google Analytics ist es sehr einfach, die notwendigen Anweisungen einzutragen und unabhängig vom gewählten Design zu nutzen.';
 $string['additionalhtml_heading'] = 'Zusätzlicher HTML-Code für jede Seite
 ';
 $string['additionalhtmlfooter'] = 'Vor dem Schließen von &lt;body&gt;';
@@ -383,8 +383,8 @@ $string['configproxypassword'] = 'Für den Internetzugang ist eventuell ein Kenn
 $string['configproxyport'] = 'Falls dieser Server einen Proxy benutzt, geben Sie hier bitte den Proxy-Port an.';
 $string['configproxytype'] = 'Typ des Web-Proxys. Für die Unterstützung von SOCKS5 ist PHP5 und die PHP-Extension cURL notwendig!';
 $string['configproxyuser'] = 'Für den Internet-Zugriff muss eventuell ein Anmeldename eingegeben werden. Lassen Sie das Feld leer, falls der Proxy keinen Anmeldenamen verlangt. Die PHP-Extension cURL ist notwendig!';
-$string['configrecaptchaprivatekey'] = 'Dieser Code (Secret Key) dient der Kommunikation zwischen Moodle und dem Recaptcha-Server.  Sie erhalten den Code unter <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
-$string['configrecaptchapublickey'] = 'Die Zeichenfolge (Website-Schlüssel) wird verwendet, um das reCAPTCHA-Element im Anmeldeformular und im Website-Support-Formular anzuzeigen. reCAPTCHA-Schlüssel können von <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a> bezogen werden.';
+$string['configrecaptchaprivatekey'] = 'Dieser Code (Secret Key) dient der Kommunikation zwischen Moodle und dem reCAPTCHA-Server. reCAPTCHA-Schlüssel können von <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA </a> bezogen werden.';
+$string['configrecaptchapublickey'] = 'Die Zeichenfolge (Site Key) wird verwendet, um das reCAPTCHA-Element im Anmeldeformular und im Website-Support-Formular anzuzeigen. reCAPTCHA-Schlüssel können von <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a> bezogen werden.';
 $string['configrequestedstudentname'] = 'Begriff für Teilnehmer/in in beantragten Kursen';
 $string['configrequestedstudentsname'] = 'Begriff für Teilnehmer/innen in beantragten Kursen';
 $string['configrequestedteachername'] = 'Begriff für Trainer/in in beantragten Kursen';
@@ -583,7 +583,7 @@ $string['disabled'] = 'Deaktiviert';
 $string['disableplugin'] = '{$a} deaktivieren';
 $string['disableuserimages'] = 'Nutzerbilder deaktivieren';
 $string['displayerrorswarning'] = 'Die Aktivierung der PHP-Einstellung <em>display_errors</em> wird für produktive Websites nicht empfohlen, weil einige der Fehlermeldungen sensible Infos zu Ihrer Serverumgebung preisgeben könnten.';
-$string['displayloginfailures'] = 'Login-Fehler anzeigen';
+$string['displayloginfailures'] = 'Anmeldefehler anzeigen';
 $string['divertallemails'] = 'E-Mail-Umleitung';
 $string['divertallemailsdetail'] = 'Diese Option dient als Sicherheitsmaßnahme in Entwicklungsumgebungen für den Test von E-Mails und sollte nicht in produktiven Plattformen verwendet werden.';
 $string['divertallemailsexcept'] = 'Ausnahmen für die E-Mail-Umleitung';
@@ -876,15 +876,12 @@ $string['lockoutemailbody'] = 'Guten Tag {$a->firstname} {$a->lastname}
 
 Ihr Nutzerkonto mit dem Anmeldenamen \'{$a->username}\' auf dem Server \'{$a->sitename}\' wurde nach mehreren ungültigen Anmeldeversuchen gesperrt.
 
-Um das Konto zu entsperren, öffnen Sie bitte die folgende Webadresse:
+Um das Nutzerkonto zu entsperren, klicken Sie bitte auf folgenden Link:
 
-{$a->link}
+<a href="{$a->link}">Nutzerkonto freischalten</a>
 
-In den meisten Fällen sollte ein klickbarer Link angezeigt werden. Sollte ein Klick nicht funktionieren, kopieren Sie die Adresse in das Adressfeld Ihres Webbrowsers.
 
-Falls Sie Hilfe benötigen, wenden Sie sich an {$a->admin}.
-
-Ihr E-Learning-Team';
+Falls Sie Hilfe benötigen, wenden Sie sich an {$a->admin}.';
 $string['lockoutemailsubject'] = 'Ihr Konto auf \'{$a}\' wurde gesperrt.';
 $string['lockouterrorunlock'] = 'Ungültige Daten zur Kontofreigabe';
 $string['lockoutthreshold'] = 'Schwelle zur Kontosperrung';
@@ -897,7 +894,7 @@ $string['logguests'] = 'Gastzugang loggen';
 $string['logguests_help'] = 'Diese Einstellung legt fest, ob die Aktionen über den Gastzugang unabhängig von den anderen Nutzerkonten geloggt werden soll. Es wird dringend empfohlen, bei produktiven Websites diese Einstellung zu aktivieren, auch wenn zur Verringerung der Serverlast die Deaktivierung von Logdaten für den Gastzugang erwogen wird.';
 $string['logininfoinsecurelayout'] = 'Angemeldete Person im sicheren Layout anzeigen';
 $string['logininfoinsecurelayout_desc'] = 'Wenn diese Option aktiviert ist, wird der vollständige Name einer Person in der Navigation angezeigt, wenn sie einen Test oder eine andere Aktivität im sicheren Layout versucht.';
-$string['loginpageautofocus'] = 'Autofokus auf Login';
+$string['loginpageautofocus'] = 'Autofokus auf Anmeldung';
 $string['loginpageautofocus_help'] = 'Das Aktivieren dieser Option verbessert die Nutzbarkeit der Anmeldeseite, aber ein Autofokus auf bestimmte Felder könnte Probleme hinsichtlich der Barrierefreiheit verursachen.';
 $string['loglifetime'] = 'Logdaten speichern';
 $string['logo'] = 'Logo';
@@ -990,6 +987,7 @@ $string['moodlebrandedapp'] = 'Individuell angepasste Mobile App';
 $string['moodlebrandedapp_help'] = '<p>Die individuell angepasste Moodle-App verfügt über alle Funktionen der freien mobilen Moodle-App. Sie steht in den AppStores mit Design Ihrer Schule oder Institution zur Verfügung.</p>
 <a href="https://moodle.com/branded-app">Über die individuelle Moodle-App</a>';
 $string['moodlebrandedappreference'] = 'Alternativ können Sie eine <a href="https://moodle.com/branded-app">individuelle Moodle-App</a> für Ihre Institution bestellen.';
+$string['moodlenetremovalwarning'] = 'Der MoodleNet-Dienst wird am 20. April 2026 eingestellt. Wenn Sie MoodleNet weiterhin auf Ihrer Website nutzen möchten, installieren Sie das MoodleNet-Plugin aus dem <a href="https://moodle.org/plugins" target="_blank">Moodle-Plugin-Verzeichnis</a> und verbinden Sie es mit einer selbstgehosteten MoodleNet-Instanz. Anschließend wird das Feld für die MoodleNet-Profil-ID entfernt. Bitte migrieren Sie diese Daten, falls Sie sie anderweitig verwenden.';
 $string['moodlepartners'] = 'Moodle Partner';
 $string['moodlepartners_help'] = '<p>Moodle Partner sind vom Moodle HQ zertifizierte Servicedienstleister für Ihre Online-Lernumgebung.</p>
 <a href="https://moodle.com/about-partners/">Über unsere Partner</a><br />
@@ -1038,7 +1036,7 @@ $string['noroles'] = 'Keine Rollen';
 $string['nosupportedlogstore'] = 'Nicht unterstützte Logdaten gefunden';
 $string['noteunneededblocks'] = 'Hinweis: Blöcke, die angezeigt werden sollen, werden im Menü "Block hinzufügen" in einem Kurs nicht aufgeführt, wenn sie in der Designeinstellung "Nicht benötigte Blöcke" eingetragen sind.';
 $string['notifications'] = 'Systemnachrichten';
-$string['notifyloginfailures'] = 'E-Mail bei Login-Fehlern an';
+$string['notifyloginfailures'] = 'E-Mail bei Anmeldefehlern an';
 $string['notifyloginthreshold'] = 'Schwelle zur E-Mail-Systemnachricht';
 $string['notloggedinroleid'] = 'Rolle für Besucher/innen';
 $string['numberofmissingstrings'] = 'Anzahl der fehlenden Texte: {$a}';
@@ -1057,7 +1055,7 @@ $string['order2'] = 'Zweitens';
 $string['order3'] = 'Drittens';
 $string['order4'] = 'Viertens';
 $string['outgoingmailconfig'] = 'Ausgehende E-Mails';
-$string['overridetossl'] = 'Https für Login ist nun veraltet. Diese Instanz erfordert nun SSL. Um die Warnung zu entfernen, muss der  Eintrag für den wwwroot in der Datei config.php auf https://umgestellt werden.';
+$string['overridetossl'] = 'HTTP für Anmeldungen ist nun veraltet. Diese Instanz erfordert nun SSL. Um die Warnung zu entfernen, muss der  Eintrag für den wwwroot in der Datei config.php auf https://umgestellt werden.';
 $string['pageinfodebugsummary'] = 'Diese Seite ist: {$a}';
 $string['passwordchangelogout'] = 'Nach einer Kennwortänderung abmelden';
 $string['passwordchangelogout_desc'] = 'Wenn diese Option aktiviert ist und wenn das Kennwort geändert wird, werden alle Browsersessions abgebrochen, außer derjenigen, in der das neue Kennwort eingegeben wurde. Diese Einstellung hat keine Auswirkungen auf die Kennwortänderungen per Bulk-Upload.';
@@ -1641,8 +1639,8 @@ Die Warnung kann auch bedeuten, dass bei einem unvollständigen Update über git
 
 Weitere Informationen: <a href="{$a}">{$a}</a>.';
 $string['upgradestart'] = 'Aktualisierung der Datenbank starten';
-$string['upgradesure'] = '<p>Die Moodle-Dateien wurden auf Ihrem Server verändert. Moodle wird automatisch auf die Version <strong>{$a}</strong> aktualisiert. Danach können Sie nicht mehr zur alten Version zurückkehren. Beachten Sie, dass der Vorgang sehr lange dauern könnte!</p>
-<p>Möchten Sie die Aktualisierung des Servers wirklich starten?</p>';
+$string['upgradesure'] = '<p>Die Moodle-Dateien auf Ihrem Server wurden verändert. Moodle wird automatisch auf die Version <strong>{$a}</strong> aktualisiert. Danach können Sie nicht mehr zur alten Version zurückkehren. Beachten Sie bitte, dass der Vorgang sehr lange dauern könnte!</p>
+<p>Möchten Sie die Aktualisierung des Servers wirklich jetzt starten?</p>';
 $string['upgradetimedout'] = 'Die Aktualisierung wurde wegen Zeitüberschreitung abgebrochen. Starten Sie den Vorgang bitte nochmal.';
 $string['upgradingdata'] = 'Daten werden aktualisiert.';
 $string['upgradinglogs'] = 'Logdaten werden aktualisiert.';

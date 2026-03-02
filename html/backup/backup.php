@@ -115,7 +115,7 @@ if (!get_protected_agora() && is_rush_hour()) {
 // XTEC ************ AFEGIT - Check if there's enough disk space quota
 // 2012.06.04 @aginard
 if (($CFG->diskPercent) && ($CFG->diskPercent >= 100)) {
-    throw new \moodle_exception('diskquotaerror', 'local_agora', $CFG->wwwroot . '/course/view.php?id=' . $id);
+    throw new \moodle_exception('diskquotaerror_no_html', 'local_agora', $CFG->wwwroot . '/course/view.php?id=' . $id);
 }
 // ************ FI
 

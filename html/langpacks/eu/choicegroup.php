@@ -49,6 +49,8 @@ $string['char_bullet_expanded'] = '▼';
 $string['char_limitui_parenthesis_end'] = '⦘';
 $string['char_limitui_parenthesis_start'] = '⦗';
 $string['choice'] = 'Aukeraketa';
+$string['choicebegins'] = 'Aukeraketaren hasiera-data:';
+$string['choiceends'] = 'Aukeraketaren amaiera-data:';
 $string['choicegroup:addinstance'] = 'Gehitu talde-aukeraketa jarduera berri bat';
 $string['choicegroup:choose'] = 'Gorde aukeraketa bat';
 $string['choicegroup:deleteresponses'] = 'Ezabatu erantzunak';
@@ -68,6 +70,7 @@ Aukeratutako taldeak eskuineko zerrendan erakusten dira.
 
 Talderen bat aukeratutakoen zerrendatik kentzeko eskuineko zerrendan aukeratu eta "Kendu" botoian klik egin ezazu.';
 $string['choicegroupsaved'] = 'Zure aukera gorde da';
+$string['choices'] = 'Aukeraketak';
 $string['choicetext'] = 'Aukeraren testua';
 $string['chooseaction'] = 'Aukeratu ekintza bat...';
 $string['choosegroup'] = 'Aukeratu talde bat';
@@ -114,8 +117,21 @@ $string['maxenrollments_help'] = 'Aukera honek partaide bakoitzaren talde kopuru
 $string['members/'] = 'Kideak';
 $string['members/max'] = 'Kideka / Muga';
 $string['modulename'] = 'Talde-aukeraketa';
-$string['modulename_help'] = 'Talde-aukeraketa moduluak ikasleei euren ikastaro barruko taldea hautatzeko aukera ematen du. Irakasleak ikasleek aukeratu dezaketen taldeen zerrenda eta talde bakoitzeko gehieneko kide kopurua zehaztu dezake.';
+$string['modulename_help'] = '###### Funtzio nagusiak
+* Ikasleek euren burua ikastaroko taldeetan sartzea ahalbidetzen du
+* Irakasleek taldeen gehieneko tamaina eta eskuragarritasuna kontrolatu dezakete
+* Ikasleek taldean sartu aurretik taldeetako kideak ikusi ditzakete
+* Amaiera-data iritsi arte ikasleek taldez aldatzea baimentzeko aukera
+* Talde anitz aukeratzea eta izenaren arabera ala sortze-dataren arabera ordenatzea baimentzen du
+
+###### Erabiltzeko moduak
+* Antolatu ikasleak taldekako proiektuak ala zereginak egin ditzaten
+* Sortu lantaldeak eztabaida, laborategia ala tailerretarako
+* Gaitu ikasleek elkarlaneko zereginetarako euren taldekideak aukeratzea
+* Kudeatu taldeen tamaina parte-hartzea orekatze aldera
+* Baimendu jarduera hasi bitartean taldeen osaketa aldatzea';
 $string['modulename_link'] = 'mod/choicegroup/view';
+$string['modulename_summary'] = 'Ikasleek ikastaroko taldeak aukeratu eta bere burua bertara gehitzea ahalbidetzen du, taldeen tamaina, ikusgarritasuna eta amaiera-data malguak zehazteko aukerekin.';
 $string['modulenameplural'] = 'Talde-aukeraketak';
 $string['moveselectedusersto'] = 'Mugitu aukeratutako erabiltzaileak hona...';
 $string['multipleenrollmentspossible'] = 'Baimendu hainbat taldetan matrikulatzea';
@@ -133,7 +149,7 @@ $string['notyetresultsviewable'] = 'Emaitzak jarduera itxi ondoren egongo dira i
 $string['numberofuser'] = 'Erabiltzaile kopurua';
 $string['onlyactive'] = 'Iragazi iraungitako matrikulazio eta matrikulazio ez-aktiboak dituzten erabiltzaileak.';
 $string['option'] = 'Taldea';
-$string['page-mod-choice-x'] = 'Edozein talde-aukeraketa modulu-orri';
+$string['page-mod-choicegroup-x'] = 'Edozein talde-aukeraketa moduluko orri';
 $string['pleaseselectonegroup'] = 'Aukeratu ezazu mesedez gutxienez hautatu ahal den talde bat.';
 $string['pleasesetgroups'] = 'Sortu ezazu mesedez gutxienez talde bat ikastaro honetan.';
 $string['pleasesetonegroupor'] = 'Sortu ezazu mesedez gutxienez talde bat ikastaro honetan.<br /><br />
@@ -167,6 +183,7 @@ $string['skipresultgraph'] = 'Ez erakutsi emaitzen grafikoa';
 $string['sortgroupsby'] = 'Taldeen ordenatze-irizpidea';
 $string['spaceleft'] = 'hutsune bat eskuragarri';
 $string['spacesleft'] = 'hutsune eskuragarri';
+$string['studentswhochose'] = 'Aukeratu duten ikasleak';
 $string['systemdefault_date'] = 'Sistemak Lehenetsitakoa (une honetan taldearen sortze-data)';
 $string['systemdefault_name'] = 'Sistemak Lehenetsitakoa (une honetan taldearen izena)';
 $string['taken'] = 'Auketatuta';

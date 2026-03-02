@@ -758,7 +758,7 @@ $string['tracking'] = 'Spåra';
 $string['trackingoff'] = 'Av';
 $string['trackingon'] = 'Tvingad';
 $string['trackingoptional'] = 'Valfri';
-$string['trackingtype'] = 'Spåra lästa inlägga';
+$string['trackingtype'] = 'Spåra lästa inlägg';
 $string['trackingtype_help'] = '<p>Om \'spårning av lästa\' för forum är aktiverat kan användare
 spåra lästa och olästa meddelanden i forum och diskussionsämnen.
 Läraren/kursledaren kan välja att tvinga fram en typ av spårning för

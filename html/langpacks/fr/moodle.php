@@ -93,7 +93,7 @@ $string['adminhelpaddnewuser'] = 'Créer manuellement un nouveau compte d’util
 $string['adminhelpassignadmins'] = 'Les administrateurs peuvent tout faire et aller partout dans le site';
 $string['adminhelpassigncreators'] = 'Les créateurs de cours peuvent créer de nouveaux cours';
 $string['adminhelpassignsiteroles'] = 'Attribuer des rôles du site à des utilisateurs';
-$string['adminhelpassignstudents'] = 'Choisissez un cours et ajoutez des étudiants (menu Administration)';
+$string['adminhelpassignstudents'] = 'Choisir un cours et ajouter des étudiants (menu Administration)';
 $string['adminhelpauthentication'] = 'Il est possible d’utiliser des comptes internes ou ceux d’une base de données externe';
 $string['adminhelpbackup'] = 'Configurer les sauvegardes';
 $string['adminhelpconfiguration'] = 'Configurer l’aspect et le fonctionnement du site';
@@ -187,7 +187,7 @@ $string['backtocourselisting'] = 'Retour à la liste des cours';
 $string['backtohome'] = 'Retour à la page d’accueil';
 $string['backtopageyouwereon'] = 'Retour à la page d’où vous venez';
 $string['backup'] = 'Sauvegarde';
-$string['backupactivehelp'] = 'Choisissez d’activer ou non les sauvegardes automatiques.';
+$string['backupactivehelp'] = 'Choisir d’activer ou non les sauvegardes automatiques.';
 $string['backupadhocpending'] = 'Tâche ad hoc de sauvegarde de cours en attente';
 $string['backupcancelled'] = 'Sauvegarde annulée';
 $string['backupcoursefileshelp'] = 'Une fois cette option activée, les fichiers des cours seront inclus dans les sauvegardes automatiques';
@@ -197,14 +197,14 @@ $string['backupdateold'] = '{$a->TAG} était {$a->weekday}, {$a->mday} {$a->mont
 $string['backupdaterecordtype'] = '<br />{$a->recordtype} - {$a->recordname}<br />';
 $string['backupdetails'] = 'Détails de la sauvegarde';
 $string['backuperrorinvaliddestination'] = 'Le dossier de destination des sauvegardes n’existe pas ou n’est pas atteignable en écriture.';
-$string['backupexecuteathelp'] = 'Choisissez l’heure à laquelle les sauvegardes automatiques doivent être lancées.';
+$string['backupexecuteathelp'] = 'Choisir l’heure à laquelle les sauvegardes automatiques doivent être lancées.';
 $string['backupfailed'] = 'Certains de vos cours n’ont pas été sauvegardés.';
 $string['backupfilename'] = 'sauvegarde';
 $string['backupfinished'] = 'La sauvegarde s’est déroulée sans erreur';
 $string['backupfromthissite'] = 'La sauvegarde a-t-elle été effectuée sur ce site ?';
 $string['backupgradebookhistoryhelp'] = 'S’il est activé, l’historique du carnet de notes sera inclus dans les sauvegardes automatiques. Notez que l’historique des notes ne doit pas être désactivé dans les paramètres du serveur (désactiver l’historique des notes) pour que cela fonctionne';
-$string['backupincludemoduleshelp'] = 'Choisissez si vous désirez inclure dans les sauvegardes automatiques les modules de cours, avec ou sans les données des utilisateurs';
-$string['backupincludemoduleuserdatahelp'] = 'Choisissez si vous désirez inclure dans les sauvegardes automatiques les données utilisateur des modules.';
+$string['backupincludemoduleshelp'] = 'Choisir si vous désirez inclure dans les sauvegardes automatiques les modules de cours, avec ou sans les données des utilisateurs';
+$string['backupincludemoduleuserdatahelp'] = 'Choisir si vous désirez inclure dans les sauvegardes automatiques les données utilisateur des modules.';
 $string['backupinfo'] = 'Créer une copie de cours, y compris tout son contenu et ses activités. Le fichier de sauvegarde peut être utilisé pour restaurer le cours.';
 $string['backuplogdetailed'] = 'Rapport détaillé des exécutions';
 $string['backuploglaststatus'] = 'Rapport de la dernière exécution';
@@ -217,7 +217,7 @@ $string['backuproleassignments'] = 'Sauvegarder les attributions de rôles pour 
 $string['backupsavetohelp'] = 'Chemin d’accès complet du dossier où vous voulez enregistrer les sauvegardes';
 $string['backupsitefileshelp'] = 'Cochez cette option si vous voulez que les fichiers du site utilisés dans les cours soient inclus dans les sauvegardes automatiques';
 $string['backuptakealook'] = 'Veuillez consulter les journaux des sauvegardes : {$a}';
-$string['backupuserfileshelp'] = 'Choisissez si vous désirez inclure les fichiers des utilisateurs (par exemple l’image du profil) dans les sauvegardes automatiques';
+$string['backupuserfileshelp'] = 'Choisir si vous désirez inclure les fichiers des utilisateurs (par exemple l’image du profil) dans les sauvegardes automatiques';
 $string['backupversion'] = 'Version de la sauvegarde';
 $string['badges'] = 'Badges';
 $string['block'] = 'Bloc';
@@ -523,7 +523,7 @@ $string['currentcourse'] = 'Cours actuel';
 $string['currentcourseadding'] = 'Cours actuel, en y ajoutant les données';
 $string['currentcoursedeleting'] = 'Cours actuel, en le supprimant d’abord';
 $string['currentlanguage'] = 'Langue active';
-$string['currentlocaltime'] = 'l’heure à l’endroit où vous êtes';
+$string['currentlocaltime'] = 'l’heure de l’endroit où vous êtes';
 $string['currentpicture'] = 'Image actuelle';
 $string['currentrelease'] = 'Information sur la version actuelle';
 $string['currenttheme'] = 'Thème actuel';
@@ -697,11 +697,9 @@ $string['emailconfirmation'] = 'Bonjour {$a->firstname},
 
 Un nouveau compte a été demandé sur « {$a->sitename} » avec votre adresse de courriel.
 
-Pour confirmer votre nouveau compte, veuillez vous rendre à cette adresse web :
+Pour confirmer votre nouveau compte, veuillez cliquer sur le lien ci-dessous :
 
-{$a->link}
-
-Dans la plupart des programmes de courriel, ce lien devrait apparaître sous la forme d’un lien bleu sur lequel vous pouvez simplement cliquer. Si cela ne fonctionne pas, veuillez couper et coller l’adresse dans la barre d’adresse en haut de la fenêtre de votre navigateur web.
+<a href="{$a->link}">Confirmer votre compte</a>
 
 Si vous avez besoin d’aide, veuillez contacter l’administrateur du site, {$a->admin}';
 $string['emailconfirmationresend'] = 'Renvoyer le courriel de confirmation';
@@ -721,7 +719,7 @@ $string['emaildigestcomplete'] = 'Complet (un courriel par jour avec l’intégr
 $string['emaildigestoff'] = 'Pas de récapitulatif (un courriel par message)';
 $string['emaildigestsubjects'] = 'Objets (un courriel par jour avec les objets des messages)';
 $string['emaildisable'] = 'Cette adresse de courriel est désactivée';
-$string['emaildisableclick'] = 'Cliquez ici pour désactiver l’envoi de courriels à cette adresse';
+$string['emaildisableclick'] = 'Cliquer ici pour désactiver l’envoi de courriels à cette adresse';
 $string['emaildisplay'] = 'Visibilité de l’adresse de courriel';
 $string['emaildisplay_help'] = '* Cachée - Seuls les utilisateurs aux permissions adéquates, comme les enseignants, peuvent voir votre adresse de courriel.
 * Visible pour tout le monde - Tous les utilisateurs du site peuvent voir votre adresse de courriel.
@@ -733,7 +731,7 @@ $string['emaildisplayhide'] = '(cachée pour tout le monde, sauf pour les utilis
 $string['emaildisplayno'] = 'Cachée';
 $string['emaildisplayyes'] = 'Visible pour tout le monde';
 $string['emailenable'] = 'Cette adresse de courriel est activée';
-$string['emailenableclick'] = 'Cliquez ici pour ré-activer l’envoi de courriels à cette adresse';
+$string['emailenableclick'] = 'Cliquer ici pour ré-activer l’envoi de courriels à cette adresse';
 $string['emailexists'] = 'Cette adresse est déjà enregistrée.';
 $string['emailexistshintlink'] = 'Récupérer un nom ou un mot de passe oublié';
 $string['emailexistssignuphint'] = 'Vous avez peut-être créé un compte auparavant ? {$a}';
@@ -746,11 +744,10 @@ $string['emailpasswordchangeinfo'] = 'Bonjour {$a->firstname},
 
 Quelqu’un (probablement vous) a demandé un nouveau mot de passe pour votre compte « {$a->username} » sur « {$a->sitename} ».
 
-Pour modifier votre mot de passe, visitez la page web suivante :
+Pour modifier votre mot de passe, veuillez cliquer sur le lien ci-dessous :
 
-{$a->link}
+<a href="{$a->link}">Changer de mot de passe</a>
 
-Dans la plupart des logiciels de courriel, cette adresse devrait apparaître comme un lien de couleur bleue qu’il vous suffit de cliquer. Si cela ne fonctionne pas, copiez ce lien et collez-le dans la barre d’adresse de votre navigateur web.
 
 Si vous avez besoin d’aide, veuillez contacter l’administrateur du site,
 {$a->admin}';
@@ -769,11 +766,9 @@ $string['emailpasswordconfirmation'] = 'Bonjour {$a->firstname},
 
 Quelqu’un (probablement vous) a demandé un nouveau mot de passe pour votre compte sur « {$a->sitename} ».
 
-Pour confirmer cette demande et recevoir votre nouveau mot de passe par courriel, visitez la page web suivante :
+Pour confirmer cette demande et recevoir votre nouveau mot de passe par courriel, veuillez cliquer sur le lien ci-dessous :
 
-{$a->link}
-
-Dans la plupart des logiciels de courriel, cette adresse devrait apparaître comme un lien de couleur bleue qu’il vous suffit de cliquer. Si cela ne fonctionne pas, copiez ce lien et collez-le dans la barre d’adresse de votre navigateur web.
+<a href="{$a->link}">Obtenir un nouveau mot de passe</a>
 
 Si vous avez besoin d’aide, veuillez contacter l’administrateur du site,
 {$a->admin}';
@@ -789,8 +784,9 @@ $string['emailresetconfirmation'] = 'Bonjour {$a->firstname},
 
 Une réinitialisation de mot de passe a été demandée pour votre compte utilisateur « {$a->username} » sur {$a->sitename}.
 
-Pour confirmer cette demande et définir un nouveau mot de passe, veuillez visiter l’adresse ci-dessous :
-<a href="{$a->link}">{$a->link}</a>
+Pour confirmer cette demande et définir un nouveau mot de passe, veuillez cliquer sur le lien ci-dessous :
+
+<a href="{$a->link}">Réinitialiser le mot de passe</a>
 
 Ce lien est valable durant {$a->resetminutes} minutes à partir de la demande de réinitialisation.
 
@@ -827,9 +823,9 @@ $string['enddatewithtaskenabled_help'] = 'La date à laquelle le cours est cach�
 $string['english'] = 'Anglais';
 $string['enrolmentmethods'] = 'Méthodes d’inscription';
 $string['entercourse'] = 'Cliquer pour entrer dans le cours';
-$string['enteremail'] = 'Tapez votre adresse de courriel';
-$string['enteremailaddress'] = 'Tapez votre adresse de courriel afin qu’un nouveau mot de passe vous soit envoyé par courriel';
-$string['enterusername'] = 'Tapez votre nom d’utilisateur';
+$string['enteremail'] = 'Entrer votre adresse de courriel';
+$string['enteremailaddress'] = 'Entrer votre adresse de courriel afin qu’un nouveau mot de passe vous soit envoyé par courriel';
+$string['enterusername'] = 'Entrer votre nom d’utilisateur';
 $string['entries'] = 'Article';
 $string['error'] = 'Erreur';
 $string['errorcreatingactivity'] = 'Impossible de créer une instance de l’activité « {$a} »';
@@ -1302,7 +1298,7 @@ $string['menu'] = 'Menu';
 $string['message'] = 'Message personnel';
 $string['messagebody'] = 'Texte du message';
 $string['messagedselectedusers'] = 'Le message a été envoyé aux utilisateurs sélectionnés et la liste des destinataires réinitialisée.';
-$string['messagedselectedusersfailed'] = 'Une erreur est survenue lors de l’envoi du message aux utilisateurs sélectionnés. Certains d’entre eux ont peut-être reçu le message.';
+$string['messagedselectedusersfailed'] = 'Une erreur est survenue lors de l’envoi du message aux utilisateurs sélectionnés. Mais certains d’entre eux ont peut-être reçu le message.';
 $string['messageprovider:asyncbackupnotification'] = 'Notifications de sauvegardes/restaurations asynchrones';
 $string['messageprovider:availableupdate'] = 'Notifications de mises à jour disponibles';
 $string['messageprovider:backup'] = 'Notifications de sauvegarde';
@@ -1317,7 +1313,7 @@ $string['messageprovider:courserequested'] = 'Notification de demande de créati
 $string['messageprovider:courserequestrejected'] = 'Notification de rejet de création de cours';
 $string['messageprovider:enrolcoursewelcomemessage'] = 'Message de bienvenue pour les nouvelles inscriptions';
 $string['messageprovider:errors'] = 'Importantes erreurs avec le site';
-$string['messageprovider:errors_help'] = 'Ces erreurs sont graves et doivent être annoncées à un administrateur.';
+$string['messageprovider:errors_help'] = 'Ces erreurs sont graves et doivent être signalées à un administrateur.';
 $string['messageprovider:failedtaskmaxdelay'] = 'La tâche a atteint son délai d’échec maximal';
 $string['messageprovider:gradenotifications'] = 'Évaluer les notifications';
 $string['messageprovider:infected'] = 'Notifications des échecs d’antivirus.';
@@ -1532,10 +1528,9 @@ Un compte a été créé pour vous sur le site « {$a->sitename} ».
 
 (Vous devrez changer votre mot de passe lors de votre première connexion.)
 
-Pour commencer à travailler sur « {$a->sitename} », connectez-vous sur
-   {$a->link}
+<a href="{$a->link}">Cliquer pour vous connecter</a> commencer à utiliser « {$a->sitename} ».
 
-Si vous avez besoin d’aide, vous pouvez contacter l’administrateur du site,
+Si vous avez besoin d’aide, contactez l’administrateur du site.
 {$a->signoff}';
 $string['newusers'] = 'Nouveaux utilisateurs';
 $string['newwindow'] = 'Nouvelle fenêtre';
@@ -1566,7 +1561,7 @@ $string['nomoreidnumber'] = 'N’utilise pas d’identifiant pour éviter les co
 $string['none'] = 'Aucun';
 $string['noneditingteacher'] = 'Enseignant non éditeur';
 $string['noneditingteacherdescription'] = 'Les enseignants non éditeurs peuvent enseigner dans leur cours et donner des notes aux étudiants, mais ne peuvent ni ajouter, ni modifier des activités.';
-$string['nonstandard'] = 'Non standard';
+$string['nonstandard'] = 'Additionnel';
 $string['nopendingcourses'] = 'Il n’y a aucun cours en attente d’approbation';
 $string['nopotentialadmins'] = 'Aucun administrateur potentiel';
 $string['nopotentialcreators'] = 'Aucun créateur de cours potentiel';
@@ -1914,7 +1909,7 @@ $string['restoreusersprecheckerror'] = 'Des problèmes ont été détectés lors
 $string['restricted'] = 'Accès restreint';
 $string['resultsfound'] = '{$a} résultats trouvés';
 $string['retry'] = 'Réessayer';
-$string['returningtosite'] = 'Vous possédez déjà un compte ?';
+$string['returningtosite'] = 'De retour sur ce site web ?';
 $string['returntooriginaluser'] = 'Retour à {$a}';
 $string['revert'] = 'Version précédente';
 $string['role'] = 'Rôle';
@@ -2306,7 +2301,7 @@ $string['totopofsection'] = 'En haut de la section « {$a} »';
 $string['trackforums'] = 'Suivi des messages de forum';
 $string['trackforumsno'] = 'Non, ne pas signaler les messages non lus';
 $string['trackforumsyes'] = 'Oui, me signaler les nouveaux messages';
-$string['trysearching'] = 'Essayez plutôt la recherche.';
+$string['trysearching'] = 'Essayer plutôt la recherche.';
 $string['turneditingoff'] = 'Quitter le mode édition';
 $string['turneditingon'] = 'Activer le mode édition';
 $string['unabletocopytoclipboard'] = 'Impossible de copier le texte dans le presse-papier';

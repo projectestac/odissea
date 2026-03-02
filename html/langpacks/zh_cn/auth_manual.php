@@ -33,5 +33,5 @@ $string['expiration_warning_desc'] = '密码无效几天前发出通知';
 $string['passwdexpire_settings'] = '密码终止设置';
 $string['passwdexpiretime'] = '密码有效时间';
 $string['passwdexpiretime_desc'] = '密码的有效期限';
-$string['pluginname'] = '人工帐号';
+$string['pluginname'] = '手工导入账号';
 $string['privacy:metadata:preference:passwordupdatetime'] = '上次更改密码日期。';

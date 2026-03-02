@@ -114,7 +114,7 @@ $string['hidden'] = 'Gizli';
 $string['hiddenhint'] = '(gizli)';
 $string['idnumber'] = 'Kimlik numarası';
 $string['inheritfromframework'] = 'Yetkinlik çerçevesinden miras al (varsayılan)';
-$string['itemstoadd'] = 'Eklenecek öğeler';
+$string['itemstoadd'] = 'Eklenecek ögeler';
 $string['jumptocompetency'] = 'Yetkinliğe geç';
 $string['jumptouser'] = 'Kullanıcıya geç';
 $string['learningplancompetencies'] = 'Öğrenme planı yetkinlikleri';
@@ -200,8 +200,8 @@ $string['savechanges'] = 'Değişiklikleri kaydet';
 $string['scale'] = 'Ölçek';
 $string['scale_help'] = 'Bir ölçek, bir yetkinlikte yeterlilik ölçüsünü belirler. Bir ölçek seçtikten sonra yapılandırılmalıdır.
 
-* \'Varsayılan\' olarak seçilen öğe, bir yetkinlik otomatik olarak tamamlandığında verilen puandır.
-* \'Yeterli\' olarak seçilen öğe (ler), yeterlilikleri puanlandıklarında yetkinlikler olarak hangi değer (ler) i işaretleyeceklerini gösterir.';
+* \'Varsayılan\' olarak seçilen öge, bir yetkinlik otomatik olarak tamamlandığında verilen puandır.
+* \'Yeterli\' olarak seçilen öge (ler), yeterlilikleri puanlandıklarında yetkinlikler olarak hangi değer (ler) i işaretleyeceklerini gösterir.';
 $string['scalevalue'] = 'Ölçek değeri';
 $string['search'] = 'Arama...';
 $string['selectcohortstosync'] = 'Senkronize edilecek toplulukları seçin';

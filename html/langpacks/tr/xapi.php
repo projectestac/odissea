@@ -27,11 +27,11 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventxapipost'] = 'xAPI beyanı yayınla';
 $string['privacy:metadata:component'] = 'Frankenstyle\'daki bileşen adı';
-$string['privacy:metadata:itemid'] = 'Durumun öğe kimliği';
+$string['privacy:metadata:itemid'] = 'Durumun öge kimliği';
 $string['privacy:metadata:registration'] = 'xAPI kayıt UUID\'si';
 $string['privacy:metadata:statedata'] = 'Durum verileriyle JSON nesnesi';
 $string['privacy:metadata:stateid'] = 'xAPI durum kimliği.';
-$string['privacy:metadata:timecreated'] = 'Durum öğesinin oluşturulduğu zaman';
+$string['privacy:metadata:timecreated'] = 'Durum ögesinin oluşturulduğu zaman';
 $string['privacy:metadata:timemodified'] = 'Durumun son güncellendiği zaman';
 $string['privacy:metadata:userid'] = 'Duruma ait kullanıcının kimliği';
 $string['privacy:metadata:xapi_states'] = 'Saklanan xAPI durumları';

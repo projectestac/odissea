@@ -63,6 +63,9 @@ $string['privacy:metadata'] = 'Das MoodleNet-Werkzeug ermöglicht die Kommunikat
 $string['profilevalidationerror'] = 'Beim Versuch, Ihre MoodleNet-Profil-ID zu validieren, ist ein Problem aufgetreten.';
 $string['profilevalidationfail'] = 'Geben Sie bitte eine gültige MoodleNet-Profil-ID ein';
 $string['profilevalidationpass'] = 'Das sieht gut aus!';
+$string['removalwarning_feature'] = 'Falls Sie MoodleNet weiterhin nutzen möchten, wenden Sie sich an Ihren Website-Administrator, um eine selbstgehostete MoodleNet-Instanz einzurichten.';
+$string['removalwarning_service'] = 'Nach diesem Datum können Sie keine Inhalte mehr in MoodleNet Central durchsuchen oder hinzufügen.';
+$string['removalwarning_title'] = 'Der MoodleNet-Dienst wird am 20. April 2026 eingestellt.';
 $string['removedmnetprofilenotification'] = '<p>Aufgrund von Änderungen auf der MoodleNet-Plattform können Nutzer/innen, die zuvor ihr MoodleNet-Profil auf der Website gespeichert haben, diese Daten nicht mehr zur Authentifizierung auf der MoodleNet-Plattform verwenden. Die zugehörigen Daten wurden entfernt, da sie nicht mehr gültig sind.</p>
 <p>Die Nutzer/innen müssen diese Informationen auf der Website zurücksetzen, indem sie ihre MoodleNet-Profil-ID verknüpfen, die in ihrem MoodleNet-Profil zu finden ist.</p>';
 $string['removedmnetprofilenotification_subject'] = 'MoodleNet-Profil-ID-Format ändern';

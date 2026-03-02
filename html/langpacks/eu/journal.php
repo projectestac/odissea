@@ -28,12 +28,13 @@ defined('MOODLE_INTERNAL') || die();
 $string['accessdenied'] = 'Sarbide ukatua';
 $string['alwaysopen'] = 'Beti zabalik';
 $string['blankentry'] = 'Sarrera hutsik';
+$string['changessaved'] = 'Aldaketak gordeta';
 $string['completiondetail:completion_create_entry'] = 'Sortu egunkari-sarrera bat';
 $string['couldnotupdatejournal'] = 'Ezin izan da zure egunkaria eguneratu';
 $string['countnotinsertjournalentry'] = 'Ezin izan da egunkari-sarrera berria txertatu';
 $string['crontask'] = 'Egunkaria moduluaren atzeko planoko prozesamendua';
-$string['dateasc'] = 'Dataren arabera Gorantz';
-$string['datedesc'] = 'Dataren arabera Beherantz';
+$string['dateasc'] = 'Dataren arabera gorantz';
+$string['datedesc'] = 'Dataren arabera beherantz';
 $string['daysavailable'] = 'Zenbat egunetan eskuragarri';
 $string['deadline'] = 'Zenbat egunetan zabalik';
 $string['defaultgrade'] = 'Sarreren kalifikazio lehenetsia';
@@ -52,10 +53,13 @@ $string['eventjournalcreated'] = 'Egunkaria sortu da';
 $string['eventjournaldeleted'] = 'Egunkaria ezabatu da';
 $string['eventjournalviewed'] = 'Egunkaria ikusi da';
 $string['failedupdate'] = '{$a} erabiltzailearentzako egunkari-feedbacka eguneratzeak huts egin du';
+$string['feedback'] = 'Feedbacka';
 $string['feedbackupdated'] = 'Feedbacka eguneratu da {$a} sarreratan';
 $string['feedbackupdatedforuser'] = 'Feedbacka eguneratuta {$a} erabiltzailearentzat';
-$string['firstnameasc'] = 'Izenaren arabera Gorantz';
-$string['firstnamedesc'] = 'Izenaren arabera Beherantz';
+$string['firstnameasc'] = 'Izenaren arabera gorantz';
+$string['firstnamedesc'] = 'Izenaren arabera beherantz';
+$string['grade'] = 'Kalifikazioa';
+$string['gradedby'] = 'Kalifikatzailea';
 $string['gradeingradebook'] = 'Oraingo kalifikazioa kalifikazio-liburuan';
 $string['incorrectcmid'] = 'Ikastaro-moduluaren IDa baliogabea da';
 $string['incorrectcourseid'] = 'Ikastaroaren IDa baliogabea da';
@@ -86,8 +90,9 @@ $string['journalmailhtml'] = '<p>Kaixo, {$a->student}</p>
 <p>Feedbackaren edukia <a href="{$a->url}">hemen</a> ikusi dezakezu.</p>';
 $string['journalname'] = 'Egunkariaren izena';
 $string['journalquestion'] = 'Egunkariaren galdera';
-$string['lastnameasc'] = 'Abizenaren arabera Gorantz';
-$string['lastnamedesc'] = 'Abizenaren arabera Beherantz';
+$string['lastedited'] = 'Azkenengoz editatua';
+$string['lastnameasc'] = 'Abizenaren arabera gorantz';
+$string['lastnamedesc'] = 'Abizenaren arabera beherantz';
 $string['mailbody'] = '{$a->username}(e)k \'{$a->journalname}\' egunkariko sarrera eguneratu du.
 
 Sarrera hemen ikusi dezakezu:
@@ -98,8 +103,21 @@ $string['mailsubject'] = 'Egunkariaren feedbacka';
 $string['messageprovider:journal_feedback'] = 'Egunkariaren irakaslearen feedbacka';
 $string['messageprovider:submission'] = 'Egunkari-sarrera sortuta ala eguneratuta';
 $string['modulename'] = 'Egunkaria';
-$string['modulename_help'] = 'Egunkariak irakasleak ikasleengandik gai jakin bati buruzko feedbacka lortzea ahalbidetzen du';
+$string['modulename_help'] = '###### Funtzio nagusiak
+* Ikasleen online testuzko sarrerak biltzen ditu feedbacka eman edota kalifikatuak izan daitezen
+* Sarrerak pribatuak dira ikasle eta irakasleen artean (ikasle batek ezin du beste ikasleen sarrerarik ikusi)
+* Irakasleek testu bidezko feedbacka eman eta sarrerak kalifikatu ahal dituzte
+* Eskuragarritasun ezarpen bat dauka bidalketa epea zehaztu ahal izateko
+* Irakasleei partaide guztien ala talde bateko kideen sarrera guztiak orri bakarrean erakusten dizkio berrikusketa eraginkorra izan dadin
+
+###### Erabiltzeko moduak
+* Idatzizko gogoeta laburrak ala ikaste-egunkariak esleitzea
+* Etengabeko feedbacka eman eta ikasleen lana iterazio bidezko hobekuntzarako erabiltzea
+* Ikasleak ikasgaiak laburtu ala irakurketak euren hitzen adieraztera bultzatzea
+* Ikasleen aurrerapenaren jarraipena testuetan oinarritutako zeregin sinpleen bitartez egitea
+* Irakasle eta ikasleen arteko ebaluazio formatiborako komunikazio pribatua erraztea';
 $string['modulename_link'] = 'mod/journal/view';
+$string['modulename_summary'] = 'Ikasleen online testu pribatuak biltzen ditu feedbacka eman edota kalifikatuak izan daitezen, eskuragarritasun-epe bat zehaztuta, eta fitxategi-igoerarik gabe.';
 $string['modulenameplural'] = 'Egunkariak';
 $string['needsregrade'] = 'Sarrera aldatu da feedbacka gorde zen azken alditik.';
 $string['newjournalentries'] = 'Egunkari-sarrera berriak';
@@ -107,6 +125,7 @@ $string['nodatachanged'] = 'Ez da daturik aldatu.';
 $string['nodeadline'] = 'Betik zabalik';
 $string['noentriesmanagers'] = 'Ez dago irakaslerik';
 $string['noentry'] = 'Sarrerarik ez';
+$string['nograde'] = 'Kalifikaziorik ez';
 $string['noratinggiven'] = 'Ez da kalifikaziorik eman';
 $string['notifystudents'] = 'Jakinarazi ikasleak';
 $string['notifystudents_default'] = 'Jakinarazi ikasleak modu lehenetsian';
@@ -133,11 +152,13 @@ $string['rate'] = 'Kalifikazioa';
 $string['removeentries'] = 'Ezabatu sarrera guztiak';
 $string['removemessages'] = 'Ezabatu egunkari-sarrera guztiak';
 $string['saveallfeedback'] = 'Gorde nire feedback guztiak';
+$string['savechanges'] = 'Gorde aldaketak';
 $string['savefeedback'] = 'Gorde feedbacka';
 $string['search:activity'] = 'Egunkaria - jarduera-informazioa';
 $string['search:entry'] = 'Egunkaria - sarrerak';
 $string['showoverview'] = 'Erakutsi egunkarien ikuspegi orokorra aginte-panelean';
 $string['showrecentactivity'] = 'Erakutsi duela gutxiko aktibitatea';
+$string['started'] = 'Egunkari hau hasi duzu';
 $string['startoredit'] = 'Hasi edo editatu nire egunkari-sarrera';
 $string['userswhocompletedthejournal'] = 'Egunkaria osatu duten erabiltzaileak';
 $string['userswhodidnotcompletedthejournal'] = 'Egunkaria osatu ez duten erabiltzaileak';

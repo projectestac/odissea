@@ -48,7 +48,7 @@ Instruções importantes:
 Certifique-se de que o resumo é fácil de ler e transmite eficazmente os pontos principais do texto original.';
 $string['action_translate_text'] = 'Traduzir texto';
 $string['action_translate_text_desc'] = 'Traduza o texto fornecido de um idioma para outro.';
-$string['actionsettingprovider'] = 'Configurações da ação {$a}';
+$string['actionsettingprovider'] = 'Configurações da ação \'{$a}\'';
 $string['actionsettingprovider_desc'] = 'Estas configurações controlam a forma como {$a->providername} executa a ação {$a->actionname}.';
 $string['ai'] = 'IA';
 $string['aiplacements'] = 'Inserções de IA';
@@ -111,9 +111,9 @@ $string['providersettings'] = 'Configurações';
 $string['userpolicy'] = '<h4><strong>Bem-vindo à nova funcionalidade de IA!</strong></h4>
 <p>Esta funcionalidade de Inteligência Artificial (IA) baseia-se exclusivamente em Large Language Models (LLM) externos para melhorar a sua experiência de aprendizagem e ensino. Antes de começar a utilizar estes serviços de IA, leia esta política de utilização.</p>
 <h4><strong>Precisão do conteúdo gerado por IA</strong></h4>
-<p>A IA pode fornecer sugestões e informações úteis, mas a sua precisão pode variar. Deve sempre verificar as informações fornecidas para ter a certeza de que são precisas, completas e adequadas à sua situação específica.</p>
+<p>A IA pode fornecer sugestões e informações úteis, mas a sua precisão pode variar. Deve sempre verificar cuidadosamente as informações fornecidas para ter a certeza de que são precisas, completas e adequadas à sua situação específica.</p>
 <h4><strong>Como são processados os seus dados?</strong></h4>
-<p>Esta funcionalidade de IA utiliza Large Language Models (LLM) externos. Se utilizar esta funcionalidade, quaisquer informações ou dados pessoais que partilhe serão tratados de acordo com a política de privacidade destes LLM. Recomendamos que leia a política de privacidade do LLM para compreender como os seus dados pessoais serão tratados.
+<p>Esta funcionalidade de IA utiliza Large Language Models (LLM) externos. Se utilizar esta funcionalidade, quaisquer informações ou dados pessoais que partilhe serão tratados de acordo com a política de privacidade destes LLM. Recomenda-se a leitura da política de privacidade do LLM para compreender como os seus dados pessoais serão tratados.
 Além disso, pode ser mantido, neste site, um registo das suas interações com os recursos de IA.</p>
-<p>Se tiver dúvidas sobre como os seus dados são processados, consulte os seus professores ou os administradores da organização de aprendizagem.</p>
+<p>Se tiver dúvidas sobre como os seus dados são processados, consulte os seus professores ou os administradores da organização de ensino.</p>
 <p>Ao continuar, reconhece que compreende e concorda com esta política.</p>';

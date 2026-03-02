@@ -128,7 +128,6 @@ $string['notyetresultsviewable'] = 'Rezultatai bus matomi, kai veikla bus uždar
 $string['numberofuser'] = 'Naudotojų skaičius';
 $string['onlyactive'] = 'Filtruoti naudotojų, kurių registracija pasibaigė arba laikinai sustabdyta, atsakymų duomenis';
 $string['option'] = 'Grupė';
-$string['page-mod-choice-x'] = 'Bet kuris grupės pasirinkimo modulio puslapis';
 $string['pleaseselectonegroup'] = 'Pasirinkite bent vieną grupę.';
 $string['pleasesetgroups'] = 'Sukurkite bent vieną grupę šiame kurse.';
 $string['pleasesetonegroupor'] = 'Sukurkite bent vieną grupę šiame kurse.<br /><br />

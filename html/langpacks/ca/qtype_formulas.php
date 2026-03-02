@@ -231,4 +231,4 @@ $string['varsrandom_help'] = 'Es generen valors aleatoris nous a l\'inici de cad
 Els elements poden ser nombres, cadenes o llistes de nombres. A l\'inici de cada intent s\'agafarà un valor del conjunt i s\'assignarà a la variable de l\'esquerra. A més, per a un conjunt de nombres, podeu emprar una notació de l\'estil 10:100:10 (vegeu-ne l\'exemple E més amunt). </p>';
 $string['varsrandom_link'] = 'https://moodleformulas.org/';
 $string['varsstatistics'] = 'Estadístiques';
-$string['yougotnright'] = 'Heu respost correctament {$a->num} part(s) d\'aquesta pregunta.';
+$string['yougotnright'] = 'Heu respost correctament {$a} part(s) d\'aquesta pregunta.';

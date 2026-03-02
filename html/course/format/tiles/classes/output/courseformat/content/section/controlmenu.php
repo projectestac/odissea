@@ -36,7 +36,6 @@ use core_courseformat\base as course_format;
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class controlmenu extends controlmenu_base {
-
     /** @var course_format the course format class */
     protected $format;
 

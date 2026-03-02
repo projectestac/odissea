@@ -31,20 +31,18 @@ $string['auth_oauth2description'] = 'Autenticación basada en estándares OAuth 
 $string['auth_oauth2settings'] = 'Ajustes de autenticación OAuth 2.';
 $string['confirmaccountemail'] = 'Hola, {$a->fullname}.
 
-Se ha solicitado una nueva cuenta en \'{$a->sitename}\'
-utilizando su dirección de correo electrónico.
+Se ha solicitado una nueva cuenta en "{$a->sitename}" utilizando su dirección de correo electrónico.
 
-Para confirmar su nueva cuenta, vaya a esta dirección web:
+Para confirmar su nueva cuenta, por favor, vaya a esta dirección web:
 
-{$a->link}
+<a href="{$a->link}">Confirme su cuenta</a>
 
-En la mayoría de los programas de correo, esto debería aparecer como un enlace azul en el que puede hacer clic.
-Si eso no funciona, corte y pegue la dirección en la barra de navegación en la parte superior de la ventana de su navegador web.
 
-Si necesita ayuda, póngase en contacto con el administrador del sitio, {$a->admin}
+Si necesita ayuda, póngase en contacto con el administrador del sitio.
+{$a->admin}
 
 Si usted no hizo esto, alguien más podría estar intentando poner en peligro su cuenta.
-Póngase en contacto con el administrador del sitio de inmediato.';
+Por favor, póngase en contacto con el administrador del sitio de inmediato.';
 $string['confirmaccountemailsubject'] = '{$a}: confirmación de cuenta';
 $string['confirmationinvalid'] = 'El enlace de confirmación no es válido o ha caducado. Vuelva a iniciar el proceso de inicio de sesión para generar un nuevo correo electrónico de confirmación.';
 $string['confirmationpending'] = 'Esta cuenta está pendiente de confirmación por correo electrónico.';
@@ -54,15 +52,14 @@ Se ha realizado una solicitud para vincular el inicio de sesión de {$a->issuern
 
 Para confirmar esta solicitud y vincular estos inicios de sesión, vaya a esta dirección web:
 
-{$a->link}
+<a href="{$a->link}">Enlace a sus cuentas</a>
 
-En la mayoría de los programas de correo, esto debería aparecer como un enlace azul en el que puede hacer clic.
-Si eso no funciona, corte y pegue la dirección en la barra de navegación en la parte superior de la ventana de su navegador web.
 
-Si necesita ayuda, póngase en contacto con el administrador del sitio, {$a->admin}
+Si necesita ayuda, póngase en contacto con el administrador del sitio.
+{$a->admin}
 
 Si usted no hizo esto, alguien más podría estar intentando poner en peligro su cuenta.
-Póngase en contacto con el administrador del sitio de inmediato.';
+Por favor, póngase en contacto con el administrador del sitio de inmediato.';
 $string['confirmlinkedloginemailsubject'] = '{$a}: confirmación de inicio de sesión vinculado';
 $string['createaccountswarning'] = 'Este complemento de autenticación permite a los usuarios crear cuentas en su sitio. Es posible que desee habilitar la configuración "authpreventaccountcreation" si utiliza este complemento.';
 $string['createnewlinkedlogin'] = 'Vincular una nueva cuenta ({$a})';

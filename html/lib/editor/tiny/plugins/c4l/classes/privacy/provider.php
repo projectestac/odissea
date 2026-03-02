@@ -16,8 +16,6 @@
 
 namespace tiny_c4l\privacy;
 
-defined('MOODLE_INTERNAL') || die();
-
 use core_privacy\local\metadata\collection;
 use core_privacy\local\request\writer;
 
@@ -30,16 +28,15 @@ use core_privacy\local\request\writer;
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class provider implements
-        \core_privacy\local\metadata\provider,
-        \core_privacy\local\request\user_preference_provider {
-
+    \core_privacy\local\metadata\provider,
+    \core_privacy\local\request\user_preference_provider {
     /**
      * Returns meta data about this system.
      *
      * @param   collection     $collection The initialised collection to add items to.
      * @return  collection     A listing of user data stored through this system.
      */
-    public static function get_metadata(collection $collection) : collection {
+    public static function get_metadata(collection $collection): collection {
         $collection->add_user_preference('c4l_components_variants', 'privacy:preference:components_variants');
 
         return $collection;
@@ -55,8 +52,12 @@ class provider implements
         // Variants.
         $variants = get_user_preferences('c4l_components_variants', null, $userid);
         if ($variants !== null) {
-            writer::export_user_preference('tiny_c4l', 'c4l_components_variants', $variants,
-                    get_string('privacy:preference:components_variants', 'tiny_c4l'));
+            writer::export_user_preference(
+                'tiny_c4l',
+                'c4l_components_variants',
+                $variants,
+                get_string('privacy:preference:components_variants', 'tiny_c4l')
+            );
         }
     }
 }

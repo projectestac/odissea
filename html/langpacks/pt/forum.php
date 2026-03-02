@@ -65,6 +65,7 @@ $string['blockperiod'] = 'Intervalo de tempo';
 $string['blockperiod_help'] = 'Os alunos podem ser impedidos de submeter mais do que um determinado número de mensagens no intervalo de tempo aqui especificado. Os utilizadores com a permissão \'mod/forum:postwithoutthrottling\' não são afetados por estes limites.';
 $string['blockperioddisabled'] = 'Não bloquear';
 $string['blogforum'] = 'Fórum standard em formato blogue';
+$string['browsediscussions'] = 'Explorar tópicos';
 $string['bynameondate'] = 'por {$a->name} - {$a->date}';
 $string['cachedef_forum_count_discussions'] = 'Número de tópicos de fórum';
 $string['cachedef_forum_is_tracked'] = 'Estado do seguimento do fórum para o utilizador';

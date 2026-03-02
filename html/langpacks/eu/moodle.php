@@ -698,13 +698,12 @@ $string['emailconfirmation'] = 'Kaixo, {$a->firstname}:
 
 \'{$a->sitename}\' gunean kontu berri baten eskaera bat jaso dugu zure helbide elektronikotik.
 
-Zure kontua berresteko, mesedez hurrengo helbide honetara joan zaitez:
+Zure kontua berresteko, egin klik ondorengo esteka honetan:
 
-{$a->link}
+<a href="{$a->link}">Baieztatu nire kontua</a>
 
-Posta elektronikoko programa gehienetan goiko helbidea esteka urdin gisa agertu beharko litzateke eta zuk zuzenean klik egiteko aukera izan beharko zenuke. Horrela ez bada, helbidea kopiatu eta zure nabigatzailearen goialdean dagoen helbide-barran itsatsi ezazu.
 
-Laguntza behar izanez gero, mesedez jarri harremanetan guneko kudeatzailearekin.
+Laguntza behar izanez gero, jarri zaitez harremanetan guneko kudeatzailearekin,
 {$a->admin}';
 $string['emailconfirmationresend'] = 'Berriz bidali berrespen e-maila';
 $string['emailconfirmationsubject'] = '{$a}: kontuaren berrespena';
@@ -750,13 +749,12 @@ $string['emailpasswordchangeinfo'] = 'Kaixo, {$a->firstname}:
 
 Norbaitek (ziurrenik zeuk) zure \'{$a->sitename}\' guneko \'{$a->username}\' konturako pasahitz berria eskatu du.
 
-Zure pasahitza aldatzeko, mesedez hurrengo helbide honetara joan zaitez:
+Zure pasahitza aldatzeko, egin klik ondorengo esteka honetan:
 
-{$a->link}
+<a href="{$a->link}">Aldatu pasahitza</a>
 
-Posta elektronikoko programa gehienetan goiko helbidea esteka urdin gisa agertu beharko litzateke eta zuk zuzenean klik egiteko aukera izan beharko zenuke. Horrela ez bada, helbidea kopiatu eta zure nabigatzailearen goialdean dagoen helbide-barran itsatsi ezazu.
 
-Laguntza behar izanez gero, mesedez jarri harremanetan guneko kudeatzailearekin.
+Laguntza behar izanez gero, jarri zaitez harremanetan guneko kudeatzailearekin,
 {$a->admin}';
 $string['emailpasswordchangeinfodisabled'] = 'Kaixo, {$a->firstname}:
 
@@ -775,13 +773,12 @@ $string['emailpasswordconfirmation'] = 'Kaixo, {$a->firstname}:
 
 Norbaitek (ziurrenik zeuk) zure \'{$a->sitename}\' guneko zure konturako pasahitz berria eskatu du.
 
-Eskaera hau berretsi eta pasahitz berria posta elektroniko bidez jaso ahal izateko, mesedez hurrengo helbide honetara joan zaitez:
+Eskaera hau berretsi eta pasahitz berria posta elektroniko bidez jaso ahal izateko, egin klik ondorengo esteka honetan:
 
-{$a->link}
+<a href="{$a->link}">Eskuratu pasahitz berri bat</a>
 
-Posta elektronikoko programa gehienetan goiko helbidea esteka urdin gisa agertu beharko litzateke eta zuk zuzenean klik egiteko aukera izan beharko zenuke. Horrela ez bada, helbidea kopiatu eta zure nabigatzailearen goialdean dagoen helbide-barran itsatsi ezazu.
 
-Laguntza behar izanez gero, mesedez jarri harremanetan guneko kudeatzailearekin.
+Laguntza behar izanez gero, jarri zaitez harremanetan guneko kudeatzailearekin,
 {$a->admin}';
 $string['emailpasswordconfirmationsubject'] = '{$a}: Pasahitz-aldaketaren berrespena';
 $string['emailpasswordconfirmmaybesent'] = '<p>Erabiltzaile-izen edo helbide elektroniko bakar eta zuzena eman baduzu honezkero e-maila bidaliko zitzaizun.</p>
@@ -799,14 +796,16 @@ $string['emailresetconfirmation'] = 'Kaixo, {$a->firstname}:
 
 Norbaitek (zeuk ziurrenik) \'{$a->sitename}\' zure \'{$a->username}\' konturako pasahitz berria eskatu du.
 
-Zure pasahitza aldatzeko, jo helbide honetara:
-<a href="{$a->link}">{$a->link}</a>
+Eskaera hau baieztatu eta zure konturako pasahitz berri bat zehazteko, egin klik ondorengo esteka honetan:
+
+<a href="{$a->link}">Berrabiarazi pasahitza</a>
+
 
 (Esteka hau baliagarria izango da {$a->resetminutes} minutu eskaera egin zenetik hasita.)
 
-Ez baduzu pasahitza eskaerarik egin, ez duzu ezer egin behar.
+Ez baduzu pasahitza berrabiarazteko eskaerarik egin, ez duzu ezer egin behar.
 
-Laguntza gehiago behar baduzu, mesedez jar zaitez harremanetan guneko kudeatzailerekin,
+Laguntza behar izanez gero, jarri zaitez harremanetan guneko kudeatzailearekin,
 {$a->admin}';
 $string['emailresetconfirmationsubject'] = '{$a}: pasahitza berrezartzeko eskaria';
 $string['emailresetconfirmsent'] = 'Zure <b>{$a}</b> helbidera e-mail bat bidali dugu.
@@ -1541,17 +1540,17 @@ $string['newuser'] = 'Erabiltzaile berria';
 $string['newusernewpasswordsubj'] = 'Erabiltzaile berriaren kontua';
 $string['newusernewpasswordtext'] = 'Kaixo, {$a->firstname}:
 
-Kontu bat sortu da \'{$a->sitename}\' gunean.
+Zuretzako kontu bat sortu da \'{$a->sitename}\' gunean.
 
    erabiltzaile-izena: {$a->username}
    pasahitza: {$a->newpassword}
 
 (Pasahitza aldatzeko eskatuko zaizu lehen aldiz sartzen zarenean.)
 
-\'{$a->sitename}\' erabiltzen hasteko, egin klik hemen:
-   {$a->link}
 
-Laguntza behar baduzu jarri zaitez harremanetan guneko kudeatzailearekin,
+<a href="{$a->link}">Egin klik saioa hasi</a> eta \'{$a->sitename}\' erabiltzen hasteko.
+
+Laguntza behar izanez gero, jarri zaitez harremanetan guneko kudeatzailearekin.
 {$a->signoff}';
 $string['newusers'] = 'Erabiltzaile berriak';
 $string['newwindow'] = 'Leiho berria';

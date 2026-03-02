@@ -40,4 +40,6 @@ $string['newchild'] = '{$a}\'nın yeni çocuğu olarak';
 $string['pluginname'] = 'Kategorileri Yönet';
 $string['privacy:preference:includesubcategories_filter_default'] = 'Kullanıcı soru bankasını görüntülerken "Alt kategorilerdeki soruları da göster" filtre seçeneğinin varsayılan olarak etkin olup olmadığını belirtir.';
 $string['privacy:preference:showdescriptions'] = 'Kategori açıklamalarının gösterilip gösterilmediğini gösteren bayrak.';
+$string['questionsubcategoriesdisplayed'] = 'Soru bankasında kategoriler seçilirken, "Alt kategorilerden de soruları göster" seçeneği kullanılır, böylece alt kategorilerden gelen sorular da filtre sonuçlarına dahil edilir.';
+$string['questionsubcategoriesnotdisplayed'] = 'Soru bankasında kategoriler seçilirken, "Alt kategorilerden de soruları göster" seçeneği kullanılmadığından, alt kategorilerden gelen sorular filtre sonuçlarına dahil edilmez.';
 $string['showcategorydescription'] = 'Açıklamaları göster';

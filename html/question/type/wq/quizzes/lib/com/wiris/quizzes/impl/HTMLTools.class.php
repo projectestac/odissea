@@ -824,7 +824,7 @@ class com_wiris_quizzes_impl_HTMLTools {
 	}
 	public function textToMathMLWithSemantics($text) {
 		$mathml = $this->textToMathMLImpl($text);
-		$mathml = "<semantics><mrow>" . $mathml . "</mrow><annotation encoding=\"text/plain\">" . $text . "</annotation></semantics>";
+		$mathml = "<semantics><mrow>" . $mathml . "</mrow><annotation encoding=\"text/plain\">" . com_wiris_util_xml_WXmlUtils::escapeXmlEntities($text) . "</annotation></semantics>";
 		$result = com_wiris_quizzes_impl_HTMLTools::addMathTag($mathml);
 		return $result;
 	}

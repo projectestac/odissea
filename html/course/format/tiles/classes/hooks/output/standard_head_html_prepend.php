@@ -24,7 +24,6 @@ namespace format_tiles\hooks\output;
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class standard_head_html_prepend {
-
     /**
      * Callback to add head elements.  Used to add dynamic CSS used by Tiles format.
      *

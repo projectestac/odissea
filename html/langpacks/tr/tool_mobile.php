@@ -51,12 +51,12 @@ mm.user.student|Learner|tr
 mm.user.student|Aprendiz|es
 </pre>
 Dize tanımlayıcılarının tam listesi için belgelere bakın.';
-$string['custommenuitems'] = 'Özel menü öğeleri';
-$string['custommenuitems_desc'] = 'Ek öğeler, burada belirtilerek uygulamanın ana menüsüne eklenebilir.  Her bir özel menü öğesini şu biçime sahip yeni bir satıra girin: öğe metni, bağlantı URL\'si, bağlantı açma yöntemi ve dil kodu (isteğe bağlı, öğeyi yalnızca belirtilen dildeki kullanıcılara görüntülemek için), dikey çizgi karakterleriyle ayırarak.
+$string['custommenuitems'] = 'Özel menü ögeleri';
+$string['custommenuitems_desc'] = 'Ek ögeler, burada belirtilerek uygulamanın ana menüsüne eklenebilir.  Her bir özel menü ögesini şu biçime sahip yeni bir satıra girin: öge metni, bağlantı URL\'si, bağlantı açma yöntemi ve dil kodu (isteğe bağlı, ögeyi yalnızca belirtilen dildeki kullanıcılara görüntülemek için), dikey çizgi karakterleriyle ayırarak.
 
  Bağlantı açma yöntemleri şunlardır: uygulama (uygulama tarafından desteklenen bir etkinliğe bağlantı için), inappbrowser (uygulamadan çıkmadan bir tarayıcıda bağlantı açmak için), tarayıcı (bağlantıyı uygulamanın dışında cihazın varsayılan tarayıcısında açmak için) ve gömülü (bağlantıyı uygulamada yeni bir sayfada bir iframe\'de görüntülemek için).
 
- Öğelerin belirli bir dil için çevirisi eksik olduğunda, dil koduna "_only" eklenmediği sürece diğer dilleri yedek olarak kullanırlar.
+ Ögelerin belirli bir dil için çevirisi eksik olduğunda, dil koduna "_only" eklenmediği sürece diğer dilleri yedek olarak kullanırlar.
 
  Örneğin:
  <pre>
@@ -140,7 +140,7 @@ $string['qrsameipcheck_desc'] = 'Kullanıcıların oturum açmak için hem QR ko
 $string['qrsiteadminsnotallowed'] = 'Güvenlik nedeniyle, site yöneticileri veya başka bir kullanıcı olarak oturum açtıysanız, QR kodu ile giriş yapmanıza izin verilmez.';
 $string['readingthisemailgettheapp'] = 'Bunu bir e-postada mı okuyorsun?  <a href="{$a}">Mobil uygulamayı indirin ve mobil cihazınızda bildirimler alın</a>.';
 $string['remoteaddons'] = 'Uzak eklentiler';
-$string['responsivemainmenuitems'] = 'Duyarlı menü öğeleri';
+$string['responsivemainmenuitems'] = 'Duyarlı menü ögeleri';
 $string['scanqrcode'] = 'QR kodunu tarayın';
 $string['selfsignedoruntrustedcertificatewarning'] = 'Görünüşe göre HTTPS sertifikası kendinden imzalı veya güvenilir değil.  Mobil uygulama yalnızca güvenilir sitelerle çalışacaktır.  Lütfen sorunu teşhis etmek için herhangi bir çevrimiçi SSL denetleyicisi kullanın.  Sertifikanızın tamam olduğunu gösteriyorsa, bu uyarıyı yok sayabilirsiniz.';
 $string['setuplink'] = 'Uygulama indirme sayfası';

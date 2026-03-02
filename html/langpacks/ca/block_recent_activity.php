@@ -26,6 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Activitat recent';
+$string['privacy:metadata:block_recent_activity:action'] = 'Acció: creada, actualitzada o eliminada';
+$string['privacy:metadata:block_recent_activity:cmid'] = 'Identificador de l\'activitat del curs';
+$string['privacy:metadata:block_recent_activity:courseid'] = 'ID del curs';
 $string['recent_activity:addinstance'] = 'Afegeix un bloc d\'activitat recent nou';
 $string['recent_activity:viewaddupdatemodule'] = 'Mostra al bloc d\'activitat recent els mòduls afegits i actualitzats';
 $string['recent_activity:viewdeletemodule'] = 'Mostra al bloc d\'activitat recent els mòduls suprimits';

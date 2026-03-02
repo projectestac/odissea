@@ -30,8 +30,8 @@ $string['close'] = 'Kapat';
 $string['comment'] = 'Yorum';
 $string['comment_added'] = '\'{$a->userid}\' kimlikli kullanıcı, \'{$a->objectid}\' kimlikli yorumu ekledi
 \'{$a->itemid}\' kimlikli soru için \'{$a->component}\' öğesine.';
-$string['comment_removed'] = '\'{$a->userid}\' kimlikli kullanıcı, \'{$a->objectid}\' kimlikli yorumu sildi
-\'{$a->itemid}\' kimlikli soru için \'{$a->component}\' öğesinden.';
+$string['comment_removed'] = '\'{$a->userid}\' kimlik numaralı kullanıcı, \'{$a->objectid}\' kimlik numaralı yorumu sildi.
+\'{$a->itemid}\' kimlik numarasına sahip soru için \'{$a->component}\' bileşeninden.';
 $string['commentdisabled'] = 'Yorumlar şu anda bu sitede devre dışı bırakılmıştır. Lütfen site yöneticinize başvurun.';
 $string['commentheader'] = 'Soru yorumları';
 $string['commentplural'] = 'Yorumlar';

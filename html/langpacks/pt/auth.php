@@ -90,9 +90,12 @@ $string['emailnowexists'] = 'O endereço de e-mail que está a tentar definir no
 $string['emailupdate'] = 'Atualização do endereço de e-mail';
 $string['emailupdatemessage'] = 'Caro(a) {$a->fullname},
 
-Foi pedida uma alteração do e-mail da sua conta de utilizador em {$a->site}. Para confirmar esta alteração, aceda ao seguinte endereço web:
+Foi pedida uma alteração do e-mail da sua conta de utilizador em {$a->site}.
 
-{$a->url}
+Para confirmar esta alteração, aceda ao endereço web abaixo:
+
+<a href="{$a->url}">Confirmar alteração de e-mail</a>
+
 A hiperligação de confirmação expirará em <b>10 minutos</b>.
 
 {$a->supportemail}';

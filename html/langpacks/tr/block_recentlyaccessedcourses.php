@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['displaycategories'] = 'Görünüm kategorileri';
-$string['displaycategories_help'] = 'Son erişilen kurs blok öğelerinde kurs kategorisini görüntüleyin.';
+$string['displaycategories_help'] = 'Son erişilen kurs blok ögelerinde kurs kategorisini görüntüleyin.';
 $string['nocourses'] = 'Yeni kurs yok';
 $string['pluginname'] = 'Erişilen son kurslar';
 $string['privacy:metadata'] = 'Son erişilen kurslar bloğu herhangi bir kişisel veri depolamaz.';

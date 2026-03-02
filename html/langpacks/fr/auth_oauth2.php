@@ -33,11 +33,9 @@ $string['confirmaccountemail'] = 'Bonjour {$a->firstname},
 
 Un nouveau compte a été demandé sur « {$a->sitename} » en utilisant votre adresse de courriel.
 
-Pour confirmer votre nouveau compte, veuillez visiter la page web suivante :
+Pour confirmer votre nouveau compte, veuillez cliquer sur le lien ci-dessous :
 
-{$a->link}
-
-Dans la plupart des logiciels de courriel, cette adresse devrait apparaître comme un lien de couleur bleue qu’il vous suffit de cliquer. Si cela ne fonctionne pas, copiez ce lien et collez-le dans la barre d’adresse de votre navigateur web.
+<a href="{$a->url}">Confirmer votre compte</a>
 
 Si vous avez besoin d’aide, veuillez contacter l’administrateur du site,
 {$a->admin}
@@ -50,11 +48,9 @@ $string['confirmlinkedloginemail'] = 'Bonjour {$a->firstname},
 
 Une requête a été effectuée avec votre adresse de courriel pour lier le compte {$a->issuername} ({$a->linkedemail}) à votre compte sur la plateforme « {$a->sitename} ».
 
-Pour confirmer cette demande et lier ces comptes, veuillez visiter la page web suivante :
+Pour confirmer cette demande et lier ces comptes,  veuillez cliquer sur le lien ci-dessous :
 
-{$a->link}
-
-Dans la plupart des logiciels de courriel, cette adresse devrait apparaître comme un lien de couleur bleue qu’il vous suffit de cliquer. Si cela ne fonctionne pas, copiez ce lien et collez-le dans la barre d’adresse de votre navigateur web.
+<a href="{$a->link}">Lier mes comptes</a>
 
 Si vous avez besoin d’aide, veuillez contacter l’administrateur du site,
 {$a->admin}

@@ -30,7 +30,6 @@ namespace format_tiles\local;
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class video_cm {
-
     /**
      * Get a list of the CM IDs for this course which aare to be shown as video activities.
      * @param int $courseid
@@ -155,4 +154,3 @@ class video_cm {
         $cache->delete($courseid);
     }
 }
-

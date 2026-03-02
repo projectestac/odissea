@@ -51,7 +51,7 @@ $string['defaultcontext'] = 'Context per defecte';
 $string['delcohort'] = 'Suprimeix cohort';
 $string['delcohortsconfirm'] = 'Això suprimirà les cohorts i totes les dades associades.';
 $string['delcohortssuccess'] = 'S\'han suprimit les cohorts seleccionades';
-$string['delconfirm'] = 'De veritat voleu suprimir la cohort  \'{$a}\'?';
+$string['delconfirm'] = 'Això suprimirà la cohort «{$a}» i totes les dades associades.';
 $string['delsuccess'] = 'S\'ha suprimit la cohort';
 $string['description'] = 'Descripció';
 $string['displayedrows'] = 'Es mostren {$a->displayed} files d\'un total de {$a->total}.';
@@ -70,7 +70,7 @@ $string['invalidtheme'] = 'El tema de la cohort no existeix';
 $string['memberofcohort'] = 'Membre de la cohort';
 $string['memberscount'] = 'Mida de la cohort';
 $string['name'] = 'Nom';
-$string['namecolumnmissing'] = 'S\'ha detectat un problema amb el format del fitxer CSV. Comproveu que inclou els noms de les columnes.';
+$string['namecolumnmissing'] = 'Hi ha algun problema amb el format del fitxer CSV. Comproveu que inclogui els noms de columna correctes. Per afegir usuaris a una cohort, aneu a «Puja usuaris» a l\'administració del lloc.';
 $string['namefieldempty'] = 'El nom del camp no pot estar buit';
 $string['newidnumberfor'] = 'Número ID nou per a la cohort {$a}';
 $string['newnamefor'] = 'Nom nou per a la cohort {$a}';
@@ -90,13 +90,13 @@ $string['selectfromcohort'] = 'Selecciona membres de la cohort';
 $string['systemcohorts'] = 'Cohorts de sistema';
 $string['unknowncohort'] = 'Cohort desconeguda ({$a})!';
 $string['uploadcohorts'] = 'Carrega cohorts';
-$string['uploadcohorts_help'] = 'Les cohorts poden actualitzar-se mitjançant fitxers de text. El format del fitxer ha de ser com segueix:
+$string['uploadcohorts_help'] = 'Les cohorts es poden carregar mitjançant un fitxer de text. El format del fitxer ha de ser el següent:
 
-* Cada línia conté un registre.
-* Cada registre és una sèrie de dades separades per comes (o altres delimitadors).
-* El primer registre conté una llista de noms de camp que defineixen el format de la resta del fitxer.
-* Cal posar nom al nom del camp.
-* Alguns noms de camp opcionals són:  idnumber, description, descriptionformat, visible, context, category, category_id, category_idnumber, category_path';
+* Cada línia del fitxer conté un registre
+* Cada registre és una sèrie de dades separades pel separador seleccionat
+* El primer registre conté una llista de noms de camp que defineixen el format de la resta del fitxer
+* El nom de camp obligatori és name
+* Els noms de camp opcionals són idnumber, description, descriptionformat, visible, context, category, category_id, category_idnumber, category_path';
 $string['uploadedcohorts'] = 'S\'han carregat {$a} cohorts';
 $string['useradded'] = 'S\'ha afegit l\'usuari a la cohort «{$a}»';
 $string['visible'] = 'Visible';

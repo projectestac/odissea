@@ -32,6 +32,7 @@ $string['display_country'] = 'Visualitza el país';
 $string['display_currentlogin'] = 'Visualitza el nom d\'usuari actual';
 $string['display_email'] = 'Visualitza el correu electrònic';
 $string['display_firstaccess'] = 'Visualitza el primer accés';
+$string['display_idnumber'] = 'Mostra l\'ID d\'usuari';
 $string['display_institution'] = 'Visualitza institució';
 $string['display_lastaccess'] = 'Visualitza el darrer accés';
 $string['display_lastip'] = 'Visualitza la darrera IP';

@@ -567,7 +567,6 @@ md-elevation-transition {
   height: 36px;
   min-width: 64px;
   -webkit-appearance: none;
-  perspective: 1px;
 }
 .wrsUI_app .wrsUI_button > .wrsUI_aux_ripple {
   position: absolute;
@@ -597,6 +596,9 @@ md-elevation-transition {
 .wrsUI_app .wrsUI_button.wrsUI_focused {
   background: rgba(103, 147, 169, 0.2);
 }
+.wrsUI_app .wrsUI_button {
+  perspective: 1px;
+}
 .wrsUI_app .wrsUI_button:active {
   perspective: 2px;
 }
@@ -611,17 +613,17 @@ md-elevation-transition {
   padding: 0 16px;
 }
 .wrsUI_app .wrsUI_button.wrsUI_buttonContained > .wrsUI_aux_ripple {
-  background: #a8c1ce;
+  background: rgb(168.1428571429, 193.2857142857, 205.8571428571);
 }
 .wrsUI_app .wrsUI_button.wrsUI_buttonContained:not(:disabled):hover:not(.wrsUI_focused) {
-  background: #779fb2;
+  background: rgb(119.2857142857, 158.5714285714, 178.2142857143);
 }
 .wrsUI_app .wrsUI_button.wrsUI_buttonContained:not(:disabled):active {
   box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
-  background: #88aabb;
+  background: rgb(135.5714285714, 170.1428571429, 187.4285714286);
 }
 .wrsUI_app .wrsUI_button.wrsUI_buttonContained.wrsUI_focused {
-  background: #88aabb;
+  background: rgb(135.5714285714, 170.1428571429, 187.4285714286);
 }
 .wrsUI_app .wrsUI_button.wrsUI_buttonIcon.wrsUI_buttonText {
   padding: 0 16px 0 9px;
@@ -1191,7 +1193,7 @@ md-elevation-transition {
   background: rgba(103, 147, 169, 0.3);
 }
 .wrsUI_app .wrsUI_button.wrsUI_selected.wrsUI_buttonContained {
-  background: #a8c1ce;
+  background: rgb(168.1428571429, 193.2857142857, 205.8571428571);
   box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -1421,10 +1423,10 @@ md-elevation-transition {
 }
 
 .wrsUI_app .wrsUI_drawingPanel.wrsUI_drawingPanelEmpty .wrsUI_aux_canvasContainer {
-  background: url("decoration/drawing_panel_empty.svg?v=4.13.3") center center no-repeat;
+  background: url("decoration/drawing_panel_empty.svg?v=4.14.0") center center no-repeat;
 }
 .wrsUI_app .wrsUI_drawingPanel.wrsUI_drawingPanelEmpty .wrsUI_aux_canvasContainer canvas {
-  background: url("decoration/drawing_panel_grid.png?v=4.13.3");
+  background: url("decoration/drawing_panel_grid.png?v=4.14.0");
 }
 .wrsUI_app .wrsUI_drawingPanel .wrsUI_aux_canvasContainer {
   position: absolute;
@@ -1705,7 +1707,6 @@ md-elevation-transition {
   overflow: hidden;
   background: transparent;
   -webkit-appearance: none;
-  perspective: 1px;
 }
 .wrsUI_app .wrsUI_buttonPanel > .wrsUI_label {
   color: #000 !important;
@@ -1741,6 +1742,9 @@ md-elevation-transition {
 }
 .wrsUI_app .wrsUI_buttonPanel.wrsUI_focused {
   background: rgba(0, 0, 0, 0.12);
+}
+.wrsUI_app .wrsUI_buttonPanel {
+  perspective: 1px;
 }
 .wrsUI_app .wrsUI_buttonPanel:active:hover {
   perspective: 2px;
@@ -2307,10 +2311,6 @@ md-elevation-transition {
   left: 0;
   margin-left: 70px;
 }
-.wrsUI_app .wrsUI_tabbedPanel.wrsUI_tabbedPanelNavigation {
-  /*> div:first-child > div:active
-  * background: $color-highlight*/
-}
 .wrsUI_app .wrsUI_tabbedPanel.wrsUI_tabbedPanelNavigation:not(.wrsUI_tabbedPanelAtRight):not(.wrsUI_tabbedPanelAtLeft) .wrsUI_aux_tabbedPanelTabContainer {
   background: #fff;
   box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
@@ -2326,6 +2326,10 @@ md-elevation-transition {
 .wrsUI_app .wrsUI_tabbedPanel.wrsUI_tabbedPanelNavigation .wrsUI_aux_tabbedPanelTabContainer .wrsUI_tabbedPanelTab {
   font-size: 12px;
   color: #6793a9;
+}
+.wrsUI_app .wrsUI_tabbedPanel.wrsUI_tabbedPanelNavigation {
+  /*> div:first-child > div:active
+  * background: $color-highlight*/
 }
 .wrsUI_app .wrsUI_tabbedPanel.wrsUI_tabbedPanelNavigation .wrsUI_aux_tabbedPanelTabContainer .wrsUI_tabbedPanelTab:not(.wrsUI_aux_selected) > * {
   -webkit-filter: grayscale(100%);
@@ -2957,7 +2961,6 @@ md-elevation-transition {
   padding: 0 12px;
   background: #e0e0e0;
   border-radius: 16px;
-  perspective: 1px;
 }
 .wrsUI_app .wrsUI_chip > .wrsUI_aux_ripple {
   position: absolute;
@@ -2974,6 +2977,9 @@ md-elevation-transition {
 .wrsUI_app .wrsUI_chip.wrsUI_aux_rippling > .wrsUI_aux_ripple {
   opacity: 1;
   perspective: 2px;
+}
+.wrsUI_app .wrsUI_chip {
+  perspective: 1px;
 }
 .wrsUI_app .wrsUI_chip:active {
   perspective: 2px;
@@ -3117,10 +3123,10 @@ md-elevation-transition {
   position: absolute;
 }
 .wrsUI_app .wrsUI_label.wrsUI_hyperlinkLabel:hover {
-  background: rgba(191, 191, 191, 0.25);
+  background: rgba(191.25, 191.25, 191.25, 0.25);
 }
 .wrsUI_app .wrsUI_label.wrsUI_hyperlinkLabel.wrsUI_focused {
-  background: rgba(191, 191, 191, 0.25);
+  background: rgba(191.25, 191.25, 191.25, 0.25);
   outline: -webkit-focus-ring-color auto 1px;
 }
 
@@ -3129,10 +3135,10 @@ md-elevation-transition {
   color: #6793a9;
 }
 .wrsUI_app .wrsUI_label.wrsUI_actionLabel:hover {
-  background: rgba(191, 191, 191, 0.25);
+  background: rgba(191.25, 191.25, 191.25, 0.25);
 }
 .wrsUI_app .wrsUI_label.wrsUI_actionLabel.wrsUI_focused {
-  background: rgba(191, 191, 191, 0.25);
+  background: rgba(191.25, 191.25, 191.25, 0.25);
   outline: -webkit-focus-ring-color auto 1px;
 }
 

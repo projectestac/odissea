@@ -36,7 +36,6 @@ require_once("$CFG->libdir/formslib.php");
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class upload_image_form extends moodleform {
-
     /**
      * Define fields and form.
      * @throws \coding_exception
@@ -52,8 +51,7 @@ class upload_image_form extends moodleform {
         $mform->addElement('html', \html_writer::div(
             get_string('photoguidance_desc', 'format_tiles'),
             'photoguidance mt-3 mb-3'
-            )
-        );
+        ));
         $mform->setExpanded('guidance', true);
 
         $existingphotourl = $instance['existingurl'] ?? '';
@@ -62,7 +60,8 @@ class upload_image_form extends moodleform {
             $formheading = \html_writer::div(
                 \html_writer::img(
                     $existingphotourl,
-                    get_string('existingimage', 'format_tiles'), ['class' => 'existingtilephoto']
+                    get_string('existingimage', 'format_tiles'),
+                    ['class' => 'existingtilephoto']
                 )
             );
             if ($instance['aspectratiomessage']) {
@@ -70,7 +69,8 @@ class upload_image_form extends moodleform {
             }
             $formheading .= \html_writer::div(
                 \html_writer::link(
-                    new \moodle_url('/course/format/tiles/editor/editimage.php',
+                    new \moodle_url(
+                        '/course/format/tiles/editor/editimage.php',
                         [
                             'delete' => 1,
                             'sectionid' => $instance['sectionid'],

@@ -247,7 +247,7 @@ $string['configdebugdisplay'] = 'Une fois ce réglage activé, les rapports d’
 $string['configdebugpageinfo'] = 'Activer cette option pour afficher des informations concernant la page dans le pied de page.';
 $string['configdebugvalidators'] = 'Activer cette option si vous voulez que les liens vers des serveurs de validation soient visibles dans le pied de page. Il vous sera peut-être nécessaire de créer dans votre Moodle un nouvel utilisateur dont le nom d’utilisateur est <em>w3cvalidator</em> et d’activer l’accès aux visiteurs anonymes. Ces modifications peuvent ouvrir l’accès à votre serveur par des personnes non autorisées. Ne les activez pas sur des serveurs en production !';
 $string['configdefaulthomepage'] = 'Ce réglage détermine la page vers laquelle les utilisateurs sont dirigés après leur connexion. Il détermine aussi le premier lien de la navigation des utilisateurs utilisant les thèmes basés sur Classic.';
-$string['configdefaultrequestcategory'] = 'Les cours demandés par les utilisateurs qui en ont la capacité seront automatiquement classés dans cette catégorie, à moins qu’ils puisent choisir une catégorie différente.';
+$string['configdefaultrequestcategory'] = 'Les cours demandés par les utilisateurs qui en ont la capacité seront automatiquement classés dans cette catégorie, à moins qu’ils puissent choisir une catégorie différente.';
 $string['configdefaultrequestedcategory'] = 'Catégorie par défaut où placer les cours dont la demande a été approuvée.';
 $string['configdefaultuserroleid'] = 'Tous les utilisateurs connectés auront les capacités du rôle spécifié ici, au niveau du site, EN PLUS de celles de tous les autres rôles qu’ils ont déjà. Par défaut, il s’agit du rôle « Utilisateur authentifié ». Il est à remarquer que cela n’entrera pas en conflit avec les autres rôles disponibles, à moins que vous n’interdisiez des capacités : cela permet simplement de s’assurer que tous les utilisateurs possèdent les capacités qui ne peuvent être attribuées au niveau des cours (par exemple écrire des articles de blog, gérer son calendrier, etc.).';
 $string['configdeleteincompleteusers'] = 'Après ce laps de temps, tout compte sans nom, prénom ou adresse de courriel sera supprimé.';
@@ -783,8 +783,8 @@ $string['httpsecurity'] = 'Sécurité HTTP';
 $string['iconvrequired'] = 'L’installation de l’extension ICONV de PHP est requise.';
 $string['igbinary322buggyversion'] = 'L’extension php-igbinary installée sur ce site peut entraîner des problèmes lorsqu’elle fonctionne avec PHP7.2. Il est recommandé soit de mettre à jour php-igbinary à la version 3.2.5 ou ultérieure, soit de mettre à jour PHP vers la version PHP7.3 ou ultérieure.';
 $string['ignore'] = 'Ignorer';
-$string['importantupdates_content'] = '<p>Dans Moodle 5.0, les activités Chat et Consultation sont retirées du noyau de Moodle. Elles sont disponibles comme plugins dans le <a href="https://moodle.org/plugins/">Répertoire des plugins Moodle</a>.</p>
-<p>Si vous souhaitez continuer à utiliser Chat ou Consultation sur votre site, vous pourrez les installer en tant que plugins lors de la mise à jour vers Moodle 5.0.</p>';
+$string['importantupdates_content'] = '<p>Dans Moodle 5.0, les activités Chat et Consultation sont retirées du cœur de Moodle. Elles sont disponibles comme plugins additionnels dans le <a href="https://moodle.org/plugins/">Répertoire des plugins Moodle</a>.</p>
+<p>Si vous souhaitez continuer à utiliser Chat ou Consultation sur votre site, vous pourrez les installer en tant que plugins additionnels lors de la mise à jour vers Moodle 5.0.</p>';
 $string['importantupdates_title'] = 'Information importante au sujet des activités Chat et Consultation';
 $string['includemoduleuserdata'] = 'Inclure les données utilisateurs des modules';
 $string['incompatibleblocks'] = 'Blocs incompatibles';
@@ -843,11 +843,9 @@ $string['lockoutemailbody'] = 'Bonjour {$a->firstname},
 
 Votre compte utilisateur « {$a->username} » sur le serveur « {$a->sitename} » a été bloqué suite à plusieurs tentatives de connexion non valides.
 
-Pour débloquer votre compte immédiatement, veuillez consulter la page à l’adresse
+Pour débloquer votre compte immédiatement, veuillez cliquer le lien ci-dessous :
 
-{$a->link}
-
-Dans la plupart des logiciels de courriel, cette adresse devrait apparaître comme un lien de couleur bleue qu’il vous suffit de cliquer. Si cela ne fonctionne pas, copiez ce lien et collez-le dans la barre d’adresse de votre navigateur web.
+<a href="{$a->link}">Débloquer le compte</a>
 
 Si vous avez besoin d’aide, veuillez contacter l’administrateur du site,
 {$a->admin}';
@@ -956,6 +954,7 @@ $string['moodlebrandedapp'] = 'App Moodle personnalisée';
 $string['moodlebrandedapp_help'] = '<p>L’app Moodle personnalisée a toutes les fonctionnalités de notre app mobile gratuite pour Moodle, avec votre propre visuel personnalisé.</p>
 <a href="https://moodle.com/branded-app">À propos de l’app Moodle personnalisée</a>';
 $string['moodlebrandedappreference'] = 'Autrement, obtenez une <a href="https://moodle.com/branded-app">app Moodle personnalisée</a> avec vos propres visuels.';
+$string['moodlenetremovalwarning'] = 'Le service MoodleNet sera fermé le 20 avril 2026. Si vous désirez continuer à utiliser MoodleNet sur votre site, installez le plugin MoodleNet depuis le <a href="https://moodle.org/plugins" target="_blank">Moodle plugins directory <i class="fa fa-external-link" role="img" aria-label="S’ouvre dans une nouvelle fenêtre" title="S’ouvre dans une nouvelle fenêtre"></i></a> et connectez-le à une instance auto-hebergée de MoodleNet. Ceci fait, le champ ID de profil MoodleNet sera supprimé ; veuillez migrer ces données si vous les utilisez à d’autres fins.';
 $string['moodlepartners'] = 'Partenaires Moodle';
 $string['moodlepartners_help'] = '<p>Les Partenaires Moodle sont des fournisseurs de services certifiés par Moodle HQ pour fournir des services Moodle de qualité élevée pour l’organisation de votre environnement d’apprentissage Moodle.</p>
 <a href="https://moodle.com/about-partners/">À propos de nos Partenaires Moodle</a><br />
@@ -1596,7 +1595,7 @@ Pour nettoyer votre dossier Moodle, il est recommandé d’agir ainsi :
 
 * renommer votre dossier Moodle en « moodle_old »;
 * créer un nouveau dossier Moodle ne contenant que les fichiers provenant soit de la distribution standard de Moodle préalablement téléchargée, soit du dépôt Git de Moodle ;
-* déplacer le fichier config.php et tous les plugins non-standards du dossier « moodle_old » vers le nouveau dossier Moodle.
+* déplacer le fichier config.php et tous les plugins additionnels du dossier « moodle_old » vers le nouveau dossier Moodle.
 
 Une fois votre dossier Moodle nettoyé, rafraîchissez l’affichage de cette page pour reprendre le processus de mise à jour de Moodle.
 

@@ -720,3 +720,11 @@ On section.php:
 4.5.0.26 (2025070353)
 =====================
 - Issue 291 and 292 fix malfunctioning modal iframe URL for file activities
+
+4.5.0.27 (2025070354)
+=====================
+- Fix completion icons not changing state in section zero
+
+4.5.0.28 (2025070355)
+=====================
+- Code format cleanup

@@ -836,15 +836,13 @@ $string['lockoutduration'] = 'Duração do bloqueio de conta';
 $string['lockoutduration_desc'] = 'O bloqueio de conta será automaticamente desbloqueado depois desta duração.';
 $string['lockoutemailbody'] = 'Caro(a) {$a->firstname},
 
-A sua conta com o nome de utilizador \'{$a->username}\' no servidor \'{$a->sitename}\' foi bloqueada após múltiplas tentativas de autenticação inválidas.
+A sua conta com o nome de utilizador \'{$a->username}\' no servidor \'{$a->sitename}\' foi bloqueada após várias tentativas de autenticação inválidas.
 
-Para desbloquear imediatamente a conta, aceda ao seguinte endereço:
+Para desbloquear imediatamente a conta, aceda ao endereço abaixo:
 
-{$a->link}
+<a href="{$a->link}">Desbloquear conta</a>
 
-Na maioria dos casos, deve aparecer como uma hiperligação azul no qual pode simplesmente clicar. Se não funcionar, copie e cole na linha de endereço no topo da janela do seu navegador web.
-
-Se precisar de ajuda, por favor, contacte o administrador do site,
+Se precisar de ajuda, por favor, contacte o administrador do site.
 {$a->admin}.';
 $string['lockoutemailsubject'] = 'A sua conta em \'{$a}\' foi bloqueada.';
 $string['lockouterrorunlock'] = 'A informação fornecida para desbloqueio de conta é inválida.';
@@ -950,6 +948,7 @@ $string['moodlebrandedapp'] = 'Aplicação móvel Moodle Personalizada';
 $string['moodlebrandedapp_help'] = '<p>A Aplicação móvel Moodle Personalizada tem todas as funcionalidades da Aplicação móvel Moodle gratuita mas personalizada com a identidade da sua organização.</p>
 <a href="https://moodle.com/branded-app">Acerca da Aplicação móvel Moodle Personalizada</a>';
 $string['moodlebrandedappreference'] = 'Como alternativa, obtenha uma <a href="https://moodle.com/branded-app/">Aplicação móvel Moodle Personalizada</a> com a identidade da sua organização.';
+$string['moodlenetremovalwarning'] = 'O serviço MoodleNet será desativado a 20 de abril de 2026. Se desejar continuar a utilizar o MoodleNet no seu site, instale o módulo do MoodleNet a partir do <a href="https://moodle.org/plugins" target="_blank">diretório de módulos do Moodle</a> e ligue-o a uma instância do MoodleNet alojada no seu próprio servidor. Após esta instalação, o campo de ID do perfil MoodleNet será removido; migre estes dados caso os utilize para outros fins.';
 $string['moodlepartners'] = 'Parceiros Moodle';
 $string['moodlepartners_help'] = '<p>Parceiros Moodle são fornecedores de serviços certificados pelo Moodle HQ para fornecer serviços Moodle de alta qualidade para o ambiente de aprendizagem online da sua organização.</p>
 <a href="https://moodle.com/about-partners/">Acerca dos nossos parceiros</a> <br />

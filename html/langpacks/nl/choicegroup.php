@@ -130,7 +130,6 @@ $string['notyetresultsviewable'] = 'De gemaakte keuzes worden getoond nadat de a
 $string['numberofuser'] = 'Het aantal gebruikers';
 $string['onlyactive'] = 'Gegevens over reacties van gebruikers met vervallen of geschorste aanmeldingen uitfilteren';
 $string['option'] = 'Groep';
-$string['page-mod-choice-x'] = 'Willekeurige Groepkeuze module pagina';
 $string['pleaseselectonegroup'] = 'Selecteer ten minst een groep om uit te kunnen kiezen.';
 $string['pleasesetgroups'] = 'Maak ten minste twee groepen binnen deze cursus.';
 $string['pleasesetonegroupor'] = 'Maak ten minste een groep aan in deze cursus.<br /><br />

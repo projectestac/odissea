@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['accountexists'] = 'Es existiert bereits eine Person mit diesem Anmeldenamen. Falls es sich dabei um Ihr Nutzerkonto handelt, melden Sie sich bitte mit Ihrem Anmeldenamen und Kennwort an und fügen Sie ihn über Ihre Favoritenseite als verbundenen Login hinzu.';
+$string['accountexists'] = 'Eine andere Person verwendet bereits diesem Anmeldenamen. Falls dies Ihr eigenes Nutzerkonto ist, melden Sie sich bitte mit Ihrem Anmeldenamen und Kennwort an und fügen Sie das Nutzerkonto als verbundene Anmeldung über Ihre Einstellungen hinzu.';
 $string['alreadylinked'] = 'Dieses externe Konto ist bereits mit einem Nutzerkonto auf dieser Seite verknüpft.';
 $string['auth_oauth2description'] = 'OAuth 2 Standard-basierte Authentifizierung';
 $string['auth_oauth2settings'] = 'Einstellungen zur OAuth 2 Authentifizierung';
@@ -33,36 +33,30 @@ $string['confirmaccountemail'] = 'Guten Tag {$a->fullname},
 
 auf \'{$a->sitename}\' wurde ein neues Nutzerkonto mit Ihrer E-Mail-Adresse angefordert.
 
-Um das neue Nutzerkonto zu bestätigen, öffnen Sie bitte die folgende Webadresse:
+Um das neue Nutzerkonto zu bestätigen, klicken Sie bitte auf folgenden Link:
 
-{$a->link}
+<a href="{$a->link}">Nutzerkonto bestätigen</a>
 
-In den meisten Fällen sollte dies als klickbarer Link angezeigt werden. Sollte ein Klick nicht funktionieren, kopieren Sie die Adresse in das Adressfeld Ihres Webbrowsers.
 
-Wenn Sie selber kein neues Nutzerkonto angefragt haben, könnte jemand anderes versuchen, Ihr Konto zu kompromittieren.
+Wenn Sie selber kein neues Nutzerkonto angefragt haben, könnte jemand anderes versuchen, Ihr Nutzerkonto zu kompromittieren.
 
-Falls Sie Fragen haben, wenden Sie sich an: {$a->admin}
-
-Ihr E-Learning-Team';
+Falls Sie Fragen haben, wenden Sie sich an: {$a->admin}';
 $string['confirmaccountemailsubject'] = '{$a}: Bestätigung für das Nutzerkonto';
-$string['confirmationinvalid'] = 'Der Bestätigungslink ist ungültig oder bereits abgelaufen. Starten Sie den Anmeldevorgang erneut, um eine neue Bestätigungs-E-Mail zu erhalten.';
+$string['confirmationinvalid'] = 'Der Bestätigungslink ist ungültig oder bereits abgelaufen. Starten Sie den Anmeldevorgang neu, um eine neue Bestätigungs-E-Mail zu erhalten.';
 $string['confirmationpending'] = 'Dieses Nutzerkonto wartet auf eine E-Mail-Bestätigung.';
 $string['confirmlinkedloginemail'] = 'Guten Tag {$a->fullname},
 
-unter Angabe Ihrer E-Mail-Adresse wurde die Anfrage gestellt, das {$a->issuername}-Login \'{$a->linkedemail}\' mit Ihrem Nutzerkonto auf \'{$a->sitename}\' zu verbinden.
+mit Ihrer E-Mail-Adresse wurde die Anfrage gestellt, die {$a->issuername}-Anmeldung \'{$a->linkedemail}\' mit Ihrem Nutzerkonto auf \'{$a->sitename}\' zu verbinden.
 
-Um diese Anfrage zu bestätigen, öffnen Sie bitte die folgende Webadresse:
+Um diese Anfrage zu bestätigen, klicken Sie auf folgenden Link:
 
-{$a->link}
+<a href="{$a->link}">Nutzerkonten verbinden</a>
 
-In den meisten Fällen sollte dies als klickbarer Link angezeigt werden. Sollte ein Klick nicht funktionieren, kopieren Sie die Adresse in das Adressfeld Ihres Webbrowsers.
 
 Wenn Sie selber keine solche Anfrage gestellt haben, könnte jemand anderes versuchen, Ihr Konto zu kompromittieren.
 
-Falls Sie Fragen haben, wenden Sie sich an: {$a->admin}
-
-Ihr E-Learning-Team';
-$string['confirmlinkedloginemailsubject'] = '{$a}: Bestätigung für ein weiteres Login';
+Falls Sie Fragen haben, wenden Sie sich an: {$a->admin}';
+$string['confirmlinkedloginemailsubject'] = '{$a}: Bestätigung für verknüpfte Anmeldung';
 $string['createaccountswarning'] = 'Dieses Authentifizierungsplugin ermöglicht es Nutzer/innen, ein Nutzerkonto auf Ihrer Seite anzulegen. Wenn Sie dieses Plugin verwenden, sollten Sie die Einstellung \'authpreventaccountcreation\' aktivieren.';
 $string['createnewlinkedlogin'] = 'Neues Nutzerkonto ({$a}) verlinken';
 $string['emailconfirmlink'] = 'Ihre Nutzerkonten verlinken';
@@ -73,9 +67,9 @@ $string['emailconfirmlinksent'] = '<p>Zu dieser E-Mail-Adresse wurde ein bereits
  <p>Falls Probleme auftreten, wenden Sie sich an die Administrator/innen der Website.</p>';
 $string['emailpasswordchangeinfo'] = 'Hallo {$a->firstname},
 
-jemand (wahrscheinlich Sie) hat ein neues Kennwort für Ihr Nutzerkonto auf "{$a->sitename}" angefordert.
+jemand hat ein neues Kennwort für Ihr Nutzerkonto auf "{$a->sitename}" angefordert.
 
-Ihr Kennwort kann jedoch nicht zurückgesetzt werden, da Sie Ihr Nutzerkonto zur Anmeldung auf einer anderen Website nutzen.
+Ihr Kennwort kann nicht zurückgesetzt werden, da Sie Ihr Nutzerkonto zur Anmeldung auf einer anderen Website nutzen.
 
 Bitte melden Sie sich wie bisher über den Link auf der Anmeldeseite an.
 {$a->admin}';
@@ -84,8 +78,8 @@ $string['info'] = 'Externes Nutzerkonto';
 $string['issuer'] = 'OAuth 2 Service';
 $string['issuernologin'] = 'Dieser Aussteller kann nicht zum Anmelden verwendet werden';
 $string['key'] = 'Schlüssel';
-$string['linkedlogins'] = 'Weitere Logins';
-$string['linkedloginshelp'] = 'Hilfe für weitere Logins';
+$string['linkedlogins'] = 'Verknüpfte Anmeldungen';
+$string['linkedloginshelp'] = 'Hilfe für verknüpfte Anmeldungen';
 $string['loggedin'] = 'Nutzer/in erfolgreich beim Provider authentifiziert.';
 $string['loginerror_authenticationfailed'] = 'Der Authentifizierungsvorgang ist fehlgeschlagen.';
 $string['loginerror_cannotcreateaccounts'] = 'Ein Nutzerkonto mit dieser E-Mail-Adresse konnte nicht gefunden werden.';
@@ -93,23 +87,23 @@ $string['loginerror_invaliddomain'] = 'Die E-Mail-Adresse ist für diese Website
 $string['loginerror_nouserinfo'] = 'Es wurden keine Nutzerinfos zurückgegeben. Der OAuth 2 Service ist möglicherweise falsch konfiguriert.';
 $string['loginerror_userincomplete'] = 'Die zurückgegebenen Nutzerinfos enthalten keinen Nutzernamen und keine E-Mail-Adresse. Der OAuth 2 Service ist möglicherweise falsch konfiguriert.';
 $string['noconfiguredidps'] = 'Keine OAuth2-Provider konfiguriert.';
-$string['noissuersavailable'] = 'Keiner der konfigurierten OAuth 2 Services erlaubt Ihnen die Verknüpfung von Login-Konten.';
+$string['noissuersavailable'] = 'Keiner der konfigurierten OAuth 2 Services erlaubt Ihnen die Verknüpfung von Anmeldekonten.';
 $string['notenabled'] = 'Das Plugin zur OAuth 2 Authentifizierung ist leider nicht aktiviert.';
-$string['notloggedindebug'] = 'Der Login-Versuch ist fehlgeschlagen. {$a}';
-$string['notwhileloggedinas'] = 'Weitere Logins können nicht verwaltet werden, wenn Sie mit einem anderen Nutzerkonto eingeloggt sind.';
-$string['oauth2:managelinkedlogins'] = 'Weitere eigene verlinkte Nutzerkonten verwalten';
-$string['plugindescription'] = 'Dieses Authentifizierungs-Plugin zeigt auf der Anmeldeseite eine Liste der konfigurierten Identity Provider. Mit der Auswahl des Identity Provider können Nutzer/innen sich mit ihren Anmeldedaten eines OAuth 2 Providers anmelden.';
+$string['notloggedindebug'] = 'Der Anmeldeversuch ist fehlgeschlagen. {$a}';
+$string['notwhileloggedinas'] = 'Verknüpfte Anmeldungen können nicht verwaltet werden, wenn Sie mit einem anderen Nutzerkonto angemeldet sind.';
+$string['oauth2:managelinkedlogins'] = 'Eigene verknüpfte Anmeldekonten verwalten';
+$string['plugindescription'] = 'Dieses Authentifizierungsplugin zeigt auf der Anmeldeseite eine Liste der konfigurierten Identity Provider. Mit der Auswahl des Identity Provider können Nutzer/innen sich mit ihren Anmeldedaten eines OAuth2-Providers anmelden.';
 $string['pluginname'] = 'OAuth 2';
 $string['privacy:metadata:auth_oauth2'] = 'OAuth2 Authentifizierung';
 $string['privacy:metadata:auth_oauth2:authsubsystem'] = 'Dieses Plugin ist mit dem Authentifizierungs-Subsystem verbunden.';
 $string['privacy:metadata:auth_oauth2:confirmtoken'] = 'Das Bestätigungs-Token';
 $string['privacy:metadata:auth_oauth2:confirmtokenexpires'] = 'Zeitstempel für Ablauf des Bestätigungs-Token';
 $string['privacy:metadata:auth_oauth2:email'] = 'Externe E-Mail-Adresse, die mit diesem Konto verbunden ist';
-$string['privacy:metadata:auth_oauth2:issuerid'] = 'ID des OAuth2-Ausstellers für dieses OAuth2-Login';
+$string['privacy:metadata:auth_oauth2:issuerid'] = 'ID des OAuth2-Issuer für diese OAuth2-Anmeldung';
 $string['privacy:metadata:auth_oauth2:tableexplanation'] = 'OAuth2-Accounts, die mit einem Moodle-Nutzerkonto verbunden sind.';
-$string['privacy:metadata:auth_oauth2:timecreated'] = 'Zeitstempel mit dem der Nutzer mit dem OAuth2-Login verknüpft wurde';
+$string['privacy:metadata:auth_oauth2:timecreated'] = 'Zeitpunkt, zu dem das Nutzerkonto mit der OAuth2-Anmeldung verknüpft wurde';
 $string['privacy:metadata:auth_oauth2:timemodified'] = 'Zeitstempel wann der Datensatz verändert wurde';
-$string['privacy:metadata:auth_oauth2:userid'] = 'ID der Person, mit der dieser OAuth2-Login verknüpft ist.';
+$string['privacy:metadata:auth_oauth2:userid'] = 'ID des Nutzerkontos, das mit dieser OAuth2-Anmeldung verknüpft ist.';
 $string['privacy:metadata:auth_oauth2:usermodified'] = 'ID des Nutzers, der dieses Konto bearbeitet hat.';
 $string['privacy:metadata:auth_oauth2:username'] = 'Der externe  Nutzername, der mit diesem Account verbunden ist';
 $string['testidplogin'] = 'Testanmeldung mit:';

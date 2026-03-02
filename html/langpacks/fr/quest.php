@@ -97,10 +97,10 @@ $string['detailsofassessment'] = 'détail de lévaluation';
 $string['disagreewiththisassessment'] = 'Contester cette évaluation';
 $string['displayoffinalgrades'] = 'afficher les notes finales';
 $string['dontshowgrades'] = 'ne pas afficher les notes';
-$string['edit'] = 'éditer';
-$string['editacomment'] = 'éditer un commentaire';
-$string['editingassessmentelements'] = 'éditer les éléments dévaluation.En cours';
-$string['editingassessmentelementsofautors'] = 'éditer les élements dévaluation des auteurs. En cours';
+$string['edit'] = 'Éditer';
+$string['editacomment'] = 'Éditer un commentaire';
+$string['editingassessmentelements'] = 'Éditer les éléments d’évaluation.';
+$string['editingassessmentelementsofautors'] = 'Éditer les éléments d’évaluation des auteurs.';
 $string['element'] = 'élément';
 $string['elementweight'] = 'poids de l’élément';
 $string['emailaddsubmission'] = 'Bonjour, {$a->firstname}.\\n
@@ -256,12 +256,12 @@ $string['noassessmentsdone'] = 'Aucune évaluation na été faite';
 $string['noattachments'] = 'Il ny a pas de piece jointe';
 $string['nograde'] = 'Il ny a pas de note';
 $string['notavailable'] = 'Non disponible';
-$string['noteonassessmentelements'] = 'La note se divise en plusieurs « élément dévaluation ».<br />
+$string['noteonassessmentelements'] = 'La note se divise en plusieurs « élément d’évaluation ».<br />
 Cela rend la note plus simple et plus consistante. En tant que professeur vous devez ajouter ces<br />
 Éléments avant de mettre le travail à disposition des étudiants. On les obtient<br />
-En cliquant sur le travail en cours, et sil n’y a pas d’élément il vous sera demandé<br />
-De les ajouter. Vous pouvez changer le nombre d’élément en utilisant la page Éditer Travail,<br />
-L’élément en soi peut  être rectifier depuis la page "Administrer Travail ".';
+En cliquant sur le travail en cours, et s’il n’y a pas d’élément, il vous sera demandé<br />
+de les ajouter. Vous pouvez changer le nombre d’éléments en utilisant la page Éditer Travail,<br />
+l’élément en soi peut être rectifié depuis la page "Administrer Travail ".';
 $string['notgraded'] = 'Sans note';
 $string['notsubmittedyet'] = 'Aucun thème envoyé';
 $string['nsubmissions'] = 'nbr de thème';

@@ -36,7 +36,6 @@ require_once($CFG->dirroot . '/course/format/lib.php');
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class format_tiles extends core_courseformat\base {
-
     /**
      * Creates a new instance of class
      *
@@ -172,9 +171,11 @@ class format_tiles extends core_courseformat\base {
         if (!$data['enablecompletion'] && $data['courseshowtileprogress']) {
             $reterrors['courseshowtileprogress'] = get_string('courseshowtileprogress_error', 'format_tiles');
         }
-        if (($data['displayfilterbar'] == \format_tiles\local\format_option::FILTER_OUTCOMES_ONLY
+        if (
+            ($data['displayfilterbar'] == \format_tiles\local\format_option::FILTER_OUTCOMES_ONLY
                 || $data['displayfilterbar'] == \format_tiles\local\format_option::FILTER_OUTCOMES_AND_NUMBERS)
-            && empty(\format_tiles\local\filters::get_course_outcomes($courseid))) {
+            && empty(\format_tiles\local\filters::get_course_outcomes($courseid))
+        ) {
             $outcomeslink = html_writer::link(
                 new moodle_url('/grade/edit/outcome/course.php', ['id' => $courseid]),
                 new lang_string('outcomes', 'format_tiles')
@@ -198,8 +199,10 @@ class format_tiles extends core_courseformat\base {
         // If section is specified in course/view.php, make sure it is expanded in navigation.
         if ($navigation->includesectionnum === false) {
             $selectedsection = optional_param('section', null, PARAM_INT);
-            if ($selectedsection !== null && (!defined('AJAX_SCRIPT') || AJAX_SCRIPT == '0') &&
-                $PAGE->url->compare(new moodle_url('/course/view.php'), URL_MATCH_BASE)) {
+            if (
+                $selectedsection !== null && (!defined('AJAX_SCRIPT') || AJAX_SCRIPT == '0') &&
+                $PAGE->url->compare(new moodle_url('/course/view.php'), URL_MATCH_BASE)
+            ) {
                 $navigation->includesectionnum = $selectedsection;
             }
         }
@@ -237,7 +240,6 @@ class format_tiles extends core_courseformat\base {
                 $navigation->add_node($settingsnode);
             }
         }
-
     }
 
     /**
@@ -366,7 +368,7 @@ class format_tiles extends core_courseformat\base {
 
         if ($foreditform && !isset($courseformatoptions['coursedisplay']['label'])) {
             $tilespalette = \format_tiles\local\util::get_tiles_palette();
-            $tileicons = (new \format_tiles\local\icon_set)->available_tile_icons($this->get_courseid());
+            $tileicons = (new \format_tiles\local\icon_set())->available_tile_icons($this->get_courseid());
 
             $courseformatoptionsedit = [
                 'hiddensections' => [
@@ -563,7 +565,8 @@ class format_tiles extends core_courseformat\base {
             $PAGE->requires->js_call_amd('format_tiles/edit_form_helper', 'init', $jsparams);
         } else {
             // Add a tip to the edit section form for anyone who does not know how to edit tile icon/photos.
-            $mform->addElement('html',
+            $mform->addElement(
+                'html',
                 html_writer::div(
                     html_writer::div(get_string('setbackgroundphoto', 'format_tiles'), 'col-md-3 col-form-label')
                     . html_writer::div(get_string('tileselecttip', 'format_tiles'), 'col-md-9'),
@@ -772,8 +775,13 @@ class format_tiles extends core_courseformat\base {
      * @return \core\output\inplace_editable
      * @throws coding_exception
      */
-    public function inplace_editable_render_section_name($section, $linkifneeded = false,
-                                                         $editable = null, $edithint = null, $editlabel = null) {
+    public function inplace_editable_render_section_name(
+        $section,
+        $linkifneeded = false,
+        $editable = null,
+        $edithint = null,
+        $editlabel = null
+    ) {
         if (empty($edithint)) {
             $edithint = new lang_string('editsectionname', 'format_tiles');
         }
@@ -894,7 +902,8 @@ class format_tiles extends core_courseformat\base {
                 $courseusessubtiles = get_config('format_tiles', 'allowsubtilesview')
                     && ($page->course->id ?? null)
                     && $DB->get_field(
-                        'course_format_options', 'value',
+                        'course_format_options',
+                        'value',
                         ['courseid' => $page->course->id, 'format' => 'tiles', 'sectionid' => 0, 'name' => 'courseusesubtiles']
                     ) == "1";
                 if (!$courseusessubtiles) {
@@ -937,7 +946,9 @@ function format_tiles_inplace_editable($itemtype, $itemid, $newvalue) {
     if ($itemtype === 'sectionname' || $itemtype === 'sectionnamenl') {
         $section = $DB->get_record_sql(
             "SELECT s.* FROM {course_sections} s JOIN {course} c ON s.course = c.id WHERE s.id = ? AND c.format = ?",
-            [$itemid, 'tiles'], MUST_EXIST);
+            [$itemid, 'tiles'],
+            MUST_EXIST
+        );
         return course_get_format($section->course)->inplace_editable_update_section_name($section, $itemtype, $newvalue);
     }
 }
@@ -980,7 +991,7 @@ function format_tiles_pluginfile($course, $cm, $context, $filearea, $args, $forc
     $fileapiparams = \format_tiles\local\tile_photo::file_api_params();
     $fs = get_file_storage();
     $sectionid = (int)$args[0];
-    $filepath = '/' . $args[1] .'/';
+    $filepath = '/' . $args[1] . '/';
     $filename = $args[2];
     $file = $fs->get_file($context->id, $fileapiparams['component'], $filearea, $sectionid, $filepath, $filename);
     if (!$file) {
@@ -1007,15 +1018,22 @@ function format_tiles_output_fragment_get_cm_list(array $args): string {
     $section = $DB->get_record('course_sections', ['id' => $sectionid]);
     if (!$section) {
         throw new moodle_exception(
-            'invalidsectionid', 'format_tiles', '', $sectionid, "Section ID '$sectionid' not found"
+            'invalidsectionid',
+            'format_tiles',
+            '',
+            $sectionid,
+            "Section ID '$sectionid' not found"
         );
     }
     $course = get_course($section->course);
 
     if ($course->format != 'tiles') {
         throw new moodle_exception(
-            'invalidsectionid', 'format_tiles', '',
-            $sectionid, "Course '$course->id' is not a tiles course"
+            'invalidsectionid',
+            'format_tiles',
+            '',
+            $sectionid,
+            "Course '$course->id' is not a tiles course"
         );
     }
 
@@ -1071,14 +1089,13 @@ function format_tiles_output_fragment_get_cm_content(array $args): string {
         try {
             // Issue #153 avoid multiple glossary auto link JS onclick events.
             $PAGE->requires->should_create_one_time_item_now('filter_glossary_autolinker');
-
         } catch (\Exception $e) {
             debugging('Could not set glossary autolink created', DEBUG_DEVELOPER);
         }
         if ($mod->modname == 'page') {
             // Record from the page table.
             $record = $DB->get_record($mod->modname, ['id' => $mod->instance]);
-            list($course, $cm) = get_course_and_cm_from_cmid($mod->id);
+            [$course, $cm] = get_course_and_cm_from_cmid($mod->id);
             require_once("$CFG->dirroot/mod/page/lib.php");
             page_view($record, $course, $cm, $modcontext);
             return \format_tiles\local\util::format_cm_content_text($mod->modname, $record, $modcontext);

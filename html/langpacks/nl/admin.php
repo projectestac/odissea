@@ -233,7 +233,7 @@ $string['configcronremotepassword'] = 'Dit betekent dat het script cron.php niet
 https://site.voorbeeld.com/admin/cron.php?password=opensesame
 </pre> Als dit leeg gelaten wordt, is er geen wachtwoord nodig.';
 $string['configcurlcache'] = 'Levenduur van cURL-cache in seconden.';
-$string['configcustommenuitems'] = 'Je kunt hier een aangepast menu configuren. Zet elk menu-item op een nieuwe regel met volgende opmaak: menu tekst, een URL (optioneel - niet voor een topmenu met sub-items), een tooltip titel (optioneel) en een taalcode of komma-gescheiden lijst met codes (optioneel, om de lijn aan gebruikers van een bepaalde taal te tonen), gescheiden door pipe tekens ( | ).
+$string['configcustommenuitems'] = 'Je kunt hier een aangepast menu configureren. Zet elk menu-item op een nieuwe regel met volgende opmaak: menu tekst, een URL (optioneel - niet voor een topmenu met sub-items), een tooltip titel (optioneel) en een taalcode of komma-gescheiden lijst met codes (optioneel, om de lijn aan gebruikers van een bepaalde taal te tonen), gescheiden door pipe tekens ( | ).
 Regels die beginnen met een liggend streepje zullen als menu-items verschijnen in het vorige top-menu en ###-tekens maken een scheiding.
 Bijvoorbeeld:
 <pre>
@@ -242,7 +242,7 @@ Cursussen
 -Cursussen zoeken|/course/search.php
 -###
 -FAQ|https://voorbeeld.com/faq
--Preguntas más frecuentes|https://vooorbeeld.com/faq|es
+-Preguntas más frecuentes|https://vooorbeeld.com/faq||es
 -Mobile app|https://voorbeeld.com/app|Download onze app
 </pre>';
 $string['configcustomusermenuitems'] = 'Je kunt de inhoud van het gebruikersmenu configureren (uitgezonderd de link om af te melden, die wordt automatisch toegevoegd). Elke lijn wordt gescheiden door een verticale lijn of pipe (|)  en bestaat uit 1) een string in het formaat "taalstringnaam, componentnaam" of als platte tekst en 2) een URL

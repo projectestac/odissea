@@ -43,7 +43,7 @@ $string['enrolusers'] = 'Inscriviu usuaris';
 $string['enroluserscohorts'] = 'Inscriu els usuaris i cohorts seleccionats';
 $string['expiredaction'] = 'Acció de venciment de la inscripció';
 $string['expiredaction_help'] = 'Seleccioneu l\'acció a realitzar quan la inscripció venci. Tingueu en compte que algunes dades d\'usuari i configuracions es purguen del curs durant la desinscripció del curs.';
-$string['expirymessageenrolledbody'] = 'Apreciat / apreciada {$a->user},
+$string['expirymessageenrolledbody'] = 'Benvolgut / Benvolguda {$a->user},
 
 Aquesta és una notificació que la vostra inscripció al curs «{$a->course}» és a punt de vèncer el {$a->timeend}.
 

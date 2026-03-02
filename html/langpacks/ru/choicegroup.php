@@ -111,7 +111,6 @@ $string['notopenyet'] = 'К сожалению, это действие недо
 $string['notyetresultsviewable'] = 'Результаты будут видны после закрытия этого действия.';
 $string['numberofuser'] = 'Количество пользователей';
 $string['option'] = 'Группа';
-$string['page-mod-choice-x'] = 'Страница модуля выбора любой группы';
 $string['pleaseselectonegroup'] = 'Пожалуйста, выберите хотя бы одну группу';
 $string['pleasesetgroups'] = 'Пожалуйста, создайте хотя бы одну группу в этом курсе.';
 $string['pleasesetonegroupor'] = 'Пожалуйста, создайте хотя бы одну группу в этом курсе. <br /><br /> <ul> <li><a href="{$a->linkgroups}">управлять группами курса</a></li> <li><a href="{$a->linkcourse}">вернуться к курсу</a></li> </ul>';

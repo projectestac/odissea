@@ -30,8 +30,6 @@ namespace format_tiles\local;
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class util {
-
-
     /**
      * Get information about a particular course module including whether modal is allowed.
      * Called by web service when deciding how to handle an activity click.
@@ -311,7 +309,8 @@ class util {
         }
 
         $jsconfigvalues['defaultcourseicon'] = $DB->get_field(
-            'course_format_options', 'value',
+            'course_format_options',
+            'value',
             ['courseid' => $courseid, 'format' => 'tiles', 'sectionid' => 0, 'name' => 'defaulttileicon']
         );
 
@@ -384,8 +383,10 @@ class util {
         }
         // The core method will return true for both icon and monologo, but we want to check for monlogo only.
         $pattern = '/monologo\.(svg|png)$/i';
-        if ((!$svgmonologolocation || !preg_match($pattern, $svgmonologolocation))
-            && (!$pngmonologolocation || !preg_match($pattern, $pngmonologolocation))) {
+        if (
+            (!$svgmonologolocation || !preg_match($pattern, $svgmonologolocation))
+            && (!$pngmonologolocation || !preg_match($pattern, $pngmonologolocation))
+        ) {
             return false;
         }
         return true;

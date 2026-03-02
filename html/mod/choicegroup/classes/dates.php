@@ -33,7 +33,6 @@ use core\activity_dates;
  * Class for fetching the important dates in mod_choicegroup for a given module instance and a user.
  */
 class dates extends activity_dates {
-
     /**
      * Returns a list of important dates in mod_choicegroup
      * (code copied from /mod/assign/classes/dates.php)
@@ -45,7 +44,7 @@ class dates extends activity_dates {
         $course = get_course($this->cm->course);
         $context = \context_module::instance($this->cm->id);
 
-        list($course, $module) = get_course_and_cm_from_cmid($this->cm->id);
+        [$course, $module] = get_course_and_cm_from_cmid($this->cm->id);
 
         $choicegroup = choicegroup_get_choicegroup($module->instance);
 
@@ -58,6 +57,7 @@ class dates extends activity_dates {
         if ($timeopen) {
             $openlabelid = $timeopen > $now ? 'activitydate:willopen' : 'activitydate:hasopened';
             $date = [
+                    'dataid'    => 'timeopen',
                     'label'     => get_string($openlabelid, 'mod_choicegroup'),
                     'timestamp' => (int)$timeopen,
             ];
@@ -66,6 +66,7 @@ class dates extends activity_dates {
 
         if ($timeclose) {
             $date = [
+                     'dataid'    => 'timeclose',
                     'label'     => get_string('activitydate:willclose', 'mod_choicegroup'),
                     'timestamp' => (int)$timeclose,
             ];

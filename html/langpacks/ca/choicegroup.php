@@ -130,7 +130,6 @@ $string['notyetresultsviewable'] = 'Els resultats seran visibles un cop es tanqu
 $string['numberofuser'] = 'Nombre d\'usuaris';
 $string['onlyactive'] = 'Exclou les dades de les respostes d\'usuaris amb inscripcions caducades o suspeses';
 $string['option'] = 'Grup';
-$string['page-mod-choice-x'] = 'Pàgina del mòdul Elecció de grup qualsevol';
 $string['pleaseselectonegroup'] = 'Cal que seleccioneu almenys un grup.';
 $string['pleasesetgroups'] = 'Creeu almenys dos grups al curs.';
 $string['pleasesetonegroupor'] = 'Cal que creeu almenys un grup al curs.<br /><br />

@@ -129,7 +129,6 @@ $string['notyetresultsviewable'] = 'Os resultados estarão visíveis após o fec
 $string['numberofuser'] = 'Número de utilizadores';
 $string['onlyactive'] = 'Filtrar os dados de resposta para utilizadores com inscrições expiradas ou suspensas';
 $string['option'] = 'Grupo';
-$string['page-mod-choice-x'] = 'Qualquer página do módulo Escolher Grupo';
 $string['pleaseselectonegroup'] = 'Selecione pelo menos um grupo para escolher.';
 $string['pleasesetgroups'] = 'Crie pelo menos um grupo nesta disciplina';
 $string['pleasesetonegroupor'] = 'Crie pelo menos um grupo nesta disciplina.<br /><br />

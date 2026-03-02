@@ -22,18 +22,27 @@
  */
 
 import Modal from 'core/modal';
-import ModalRegistry from 'core/modal_registry';
 
-const C4LModal = class extends Modal {
+export default class C4LModal extends Modal {
     static TYPE = 'tiny_c4l/modal';
     static TEMPLATE = 'tiny_c4l/modal';
 
     registerEventListeners() {
         // Call the parent registration.
         super.registerEventListeners();
+
+        // Register to close on save/cancel.
+        this.registerCloseOnSave();
+        this.registerCloseOnCancel();
     }
-};
 
-ModalRegistry.register(C4LModal.TYPE, C4LModal, C4LModal.TEMPLATE);
+    configure(modalConfig) {
+        modalConfig.large = true;
+        modalConfig.show = true;
+        modalConfig.removeOnClose = true;
 
-export default C4LModal;
+        super.configure(modalConfig);
+    }
+}
+
+C4LModal.registerModalType();

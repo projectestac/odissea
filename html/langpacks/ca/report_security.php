@@ -57,7 +57,8 @@ $string['check_embed_details'] = '<p>Incrustar un nombre il·limitat d\'objectes
 $string['check_embed_error'] = 'Hi ha habilitada la incrustació il·limitada d\'objectes - Això és molt perillós per la majoria de servidors.';
 $string['check_embed_name'] = 'Permet EMBED i OBJECT';
 $string['check_embed_ok'] = 'No es permet incrustar un nombre il·limitat d\'objectes.';
-$string['check_frontpagerole_details'] = '<p>El rol de la pàgina principal es dóna a tots els usuaris inscrits a les activitats de la pagina principal. Comproveu que aquest rol no té permesa cap capacitat arriscada.</p> <p>Es recomana que es creï un rol especial per a aquest propòsit i que no s\'utilitzi cap rol de tipus heretat.</p>';
+$string['check_frontpagerole_details'] = '<p>El rol de la pàgina principal es dona a tots els usuaris inscrits a les activitats de la pagina principal. Comproveu que aquest rol no té permesa cap capacitat arriscada.</p>
+<p>Es recomana que es creï un rol especial per a aquest propòsit i que no s\'utilitzi cap rol de tipus heretat.</p>';
 $string['check_frontpagerole_error'] = 'S\'ha detectat una definició incorrecta del rol de la pàgina principal «{$a}»!';
 $string['check_frontpagerole_name'] = 'Rol de la pàgina principal';
 $string['check_frontpagerole_notset'] = 'El rol de la pàgina principal no està definit.';

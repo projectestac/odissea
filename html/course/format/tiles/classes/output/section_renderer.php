@@ -32,7 +32,6 @@ namespace format_tiles\output;
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class section_renderer extends \core_courseformat\output\section_renderer {
-
     /**
      * When a teacher uses bulk editing to hide a section, fragment API re-renders the section using this method.
      * Also used when teacher uses show/hide on whole section using JS and it is re-rendered with icon or photo.

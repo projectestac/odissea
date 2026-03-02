@@ -28,7 +28,8 @@ if ($ADMIN->fulltree) {
     $settings = null; // We add our own settings pages and do not want the standard settings link.
 
     $settingscategory = new \format_tiles\local\admin_settingspage_tabs(
-        'formatsettingtiles', get_string('pluginname', 'format_tiles')
+        'formatsettingtiles',
+        get_string('pluginname', 'format_tiles')
     );
 
     // Colour settings.
@@ -103,7 +104,7 @@ if ($ADMIN->fulltree) {
 
     // Modal activities / resources.
     $page = new admin_settingpage('format_tiles/tab-modalwindows', get_string('modalwindows', 'format_tiles'));
-    $cachecallback = function() {
+    $cachecallback = function () {
         \cache_helper::purge_by_event('format_tiles/modaladminsettingchanged');
     };
 
@@ -174,7 +175,8 @@ if ($ADMIN->fulltree) {
         get_string('tilestyle', 'format_tiles'),
         get_string('tilestyle_desc', 'format_tiles'),
         "1",
-        $choices);
+        $choices
+    );
     $page->add($setting);
 
     $name = 'format_tiles/showprogresssphototiles';
@@ -185,8 +187,11 @@ if ($ADMIN->fulltree) {
 
     // Tile title CSS adjustments.
     $page->add(
-        new admin_setting_heading('transparenttitleadjustments', get_string('transparenttitleadjustments', 'format_tiles'),
-            get_string('transparenttitleadjustments_desc', 'format_tiles'))
+        new admin_setting_heading(
+            'transparenttitleadjustments',
+            get_string('transparenttitleadjustments', 'format_tiles'),
+            get_string('transparenttitleadjustments_desc', 'format_tiles')
+        )
     );
 
     $opacities = [0.3, 0.2, 0.1, 0];
@@ -199,7 +204,8 @@ if ($ADMIN->fulltree) {
         get_string('phototiletitletransarency', 'format_tiles'),
         get_string('phototiletitletransarency_desc', 'format_tiles'),
         "0",
-        $choices);
+        $choices
+    );
     $page->add($setting);
 
     // Tile title line height.
@@ -212,7 +218,8 @@ if ($ADMIN->fulltree) {
         get_string('phototitletitlelineheight', 'format_tiles'),
         '',
         305,
-        $choices);
+        $choices
+    );
     $page->add($setting);
 
     // Tile title line line padding.
@@ -225,7 +232,8 @@ if ($ADMIN->fulltree) {
         get_string('phototitletitlepadding', 'format_tiles'),
         '',
         40,
-        $choices);
+        $choices
+    );
     $page->add($setting);
     $settingscategory->add($page);
 
@@ -274,8 +282,11 @@ if ($ADMIN->fulltree) {
     );
 
     $page->add(
-        new admin_setting_heading('other', get_string('other', 'format_tiles'),
-            '')
+        new admin_setting_heading(
+            'other',
+            get_string('other', 'format_tiles'),
+            ''
+        )
     );
 
 
@@ -336,7 +347,9 @@ if ($ADMIN->fulltree) {
     $page->add(new admin_setting_configcheckbox($name, $title, $description, $default));
 
     $page->add(new admin_setting_heading(
-        'experimentalfeatures', get_string('experimentalfeatures', 'format_tiles'), ''
+        'experimentalfeatures',
+        get_string('experimentalfeatures', 'format_tiles'),
+        ''
     ));
     $name = 'format_tiles/highcontrastmodeallow';
     $title = get_string('highcontrastmodeallow', 'format_tiles');

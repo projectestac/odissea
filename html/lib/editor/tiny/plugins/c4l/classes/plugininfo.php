@@ -33,7 +33,6 @@ class plugininfo extends plugin implements
     plugin_with_buttons,
     plugin_with_menuitems,
     plugin_with_configuration {
-
     /**
      * Get the editor buttons for this plugins
      *
@@ -73,10 +72,10 @@ class plugininfo extends plugin implements
         array $fpoptions,
         ?\editor_tiny\editor $editor = null
     ): array {
-
         $config = get_config('tiny_c4l');
         $viewc4l = has_capability('tiny/c4l:viewplugin', $context);
         $showpreview = get_config('tiny_c4l', 'enablepreview');
+        $showdocs = get_config('tiny_c4l', 'enabledocs');
         $isstudent = !has_capability('gradereport/grader:view', $context);
         $allowedcomps = [];
         if ($isstudent) {
@@ -95,6 +94,7 @@ class plugininfo extends plugin implements
             'isstudent' => $isstudent,
             'allowedcomps' => $allowedcomps,
             'showpreview' => ($showpreview == '1'),
+            'showdocs' => ($showdocs == '1'),
             'viewc4l' => $viewc4l,
             'previewcss' => $previewcss,
             'customcomps' => $customcomponents,
@@ -119,8 +119,14 @@ class plugininfo extends plugin implements
                 $fs = get_file_storage();
 
                 // Get all files from filearea.
-                $files = $fs->get_area_files($context->id, 'tiny_c4l', 'customimagesbank',
-                        false, 'itemid', false);
+                $files = $fs->get_area_files(
+                    $context->id,
+                    'tiny_c4l',
+                    'customimagesbank',
+                    false,
+                    'itemid',
+                    false
+                );
                 foreach ($files as $file) {
                     $customfiles[$file->get_filename()] = $file;
                 }
@@ -129,10 +135,11 @@ class plugininfo extends plugin implements
                 $compcode   = "customcompcode{$i}";
                 $compenable = "customcompenable{$i}";
                 $compname   = "customcompname{$i}";
-                if ($config->$compenable === '1'
+                if (
+                    $config->$compenable === '1'
                     && !empty(trim($config->$compname))
-                    && !empty(trim($config->$compcode))) {
-
+                    && !empty(trim($config->$compcode))
+                ) {
                     // Component parameters.
                     $compicon  = "customcompicon{$i}";
                     $comptext  = "customcomptext{$i}";
@@ -140,8 +147,14 @@ class plugininfo extends plugin implements
                     $compsort  = "customcompsortorder{$i}";
 
                     if (!empty($config->$compicon)) {
-                        $icon = \moodle_url::make_pluginfile_url($context->id, 'tiny_c4l',
-                            "customcompicon{$i}", 0, '/', basename($config->$compicon));
+                        $icon = \moodle_url::make_pluginfile_url(
+                            $context->id,
+                            'tiny_c4l',
+                            "customcompicon{$i}",
+                            0,
+                            '/',
+                            basename($config->$compicon)
+                        );
                     } else {
                         $icon = $OUTPUT->image_url('c4l_customcomponent_icon', 'tiny_c4l');
                     }
@@ -151,13 +164,20 @@ class plugininfo extends plugin implements
                     $html = str_replace('{{PLACEHOLDER}}', '~~PLACEHOLDER~~', $html);
 
                     // Set url images.
-                    $html = preg_replace_callback('/{{([^}]*)}}/',
+                    $html = preg_replace_callback(
+                        '/{{([^}]*)}}/',
                         function ($matches) use ($customfiles) {
                             if (isset($matches[1]) && isset($customfiles[$matches[1]])) {
                                 $file = $customfiles[$matches[1]];
-                                $fileurl = \moodle_url::make_pluginfile_url($file->get_contextid(), $file->get_component(),
-                                    $file->get_filearea(), $file->get_itemid(), $file->get_filepath(),
-                                    $file->get_filename(), false)->out();
+                                $fileurl = \moodle_url::make_pluginfile_url(
+                                    $file->get_contextid(),
+                                    $file->get_component(),
+                                    $file->get_filearea(),
+                                    $file->get_itemid(),
+                                    $file->get_filepath(),
+                                    $file->get_filename(),
+                                    false
+                                )->out();
 
                                 return $fileurl;
                             } else {
@@ -188,7 +208,7 @@ class plugininfo extends plugin implements
             }
 
             // Sort components.
-            usort($customcomponents, function($a, $b) {
+            usort($customcomponents, function ($a, $b) {
                 return $a['sortorder'] <=> $b['sortorder'];
             });
         }

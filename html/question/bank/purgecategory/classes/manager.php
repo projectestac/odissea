@@ -28,8 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 
 require_once($CFG->libdir.'/questionlib.php');
 
-use context;
-use qbank_managecategories\question_category_object as base_question_category_object;
+use core_question\category_manager;
 
 /**
  * Class representing custom question category
@@ -38,63 +37,7 @@ use qbank_managecategories\question_category_object as base_question_category_ob
  * @copyright  2016 Vadim Dvorovenko <Vadimon@mail.ru>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class question_category_object extends base_question_category_object {
-
-    /**
-     * Initializes this classes general category-related variables
-     *
-     * @param int $page
-     * @param array $contexts
-     * @param int $currentcat
-     * @param int $defaultcategory
-     * @param int $todelete
-     * @param array $addcontexts
-     */
-    public function initialize($page, $contexts, $currentcat, $defaultcategory, $todelete, $addcontexts): void {
-        $lastlist = null;
-        foreach ($contexts as $context) {
-            $this->editlists[$context->id] = new question_category_list('ul', '', true,
-                    $this->pageurl, $page, 'cpage', QUESTION_PAGE_LENGTH, $context);
-            $this->editlists[$context->id]->lastlist = & $lastlist;
-            if ($lastlist !== null) {
-                $lastlist->nextlist = & $this->editlists[$context->id];
-            }
-            $lastlist = & $this->editlists[$context->id];
-        }
-
-        $count = 1;
-        $paged = false;
-        foreach ($this->editlists as $key => $list) {
-            [$paged, $count] = $this->editlists[$key]->list_from_records($paged, $count);
-        }
-    }
-
-    /**
-     * Outputs a list to allow editing/rearranging of existing categories
-     * $this->initialize() must have already been called
-     */
-    public function output_edit_lists(): void {
-        global $OUTPUT;
-
-        echo $OUTPUT->heading(get_string('purgecategories', 'qbank_purgecategory'));
-
-        foreach ($this->editlists as $context => $list) {
-            $listhtml = $list->to_html(0, ['str' => $this->str]);
-            if ($listhtml) {
-                $classes = 'boxwidthwide boxaligncenter generalbox questioncategories';
-                $classes .= ' contextlevel' . $list->context->contextlevel;
-                echo $OUTPUT->box_start($classes);
-                $fullcontext = context::instance_by_id($context);
-                echo $OUTPUT->heading(get_string('questioncatsfor', 'question', $fullcontext->get_context_name()), 3);
-                echo $listhtml;
-                echo $OUTPUT->box_end();
-            }
-        }
-
-        if (!empty($list)) {
-            echo $list->display_page_numbers();
-        }
-    }
+class manager extends category_manager {
 
     /**
      * Moves used questions to new category. Removes category and all subcategories and all unused questions.
@@ -109,16 +52,17 @@ class question_category_object extends base_question_category_object {
             $this->move_and_purge_category($subcategory->id, $newcat);
         }
         // Trying to remove all unused question.
-        $questionids = $this->get_real_question_ids_in_category($oldcat);
+        $manager = new category_manager();
+        $questionids = $manager->get_real_question_ids_in_category($oldcat);
         foreach ($questionids as $questionid) {
             question_delete_question($questionid);
         }
         // Move used questions to new category and delete category.
-        $questionids = $this->get_real_question_ids_in_category($oldcat);
+        $questionids = $manager->get_real_question_ids_in_category($oldcat);
         if ($questionids) {
-            $this->move_questions_and_delete_category($oldcat, $newcat);
+            $manager->move_questions_and_delete_category($oldcat, $newcat);
         } else {
-            $this->delete_category($oldcat);
+            $manager->delete_category($oldcat);
         }
     }
 
@@ -134,14 +78,15 @@ class question_category_object extends base_question_category_object {
             $this->purge_category($subcategory->id);
         }
         // Trying to remove all unused question.
-        $questionids = $this->get_real_question_ids_in_category($oldcat);
+        $manager = new category_manager();
+        $questionids = $manager->get_real_question_ids_in_category($oldcat);
         foreach ($questionids as $questionid) {
             question_delete_question($questionid);
         }
         // Delete category, if no questions.
-        $questionids = $this->get_real_question_ids_in_category($oldcat);
+        $questionids = $manager->get_real_question_ids_in_category($oldcat);
         if (!$questionids) {
-            $this->delete_category($oldcat);
+            $manager->delete_category($oldcat);
         }
     }
 

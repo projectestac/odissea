@@ -851,11 +851,9 @@ $string['lockoutemailbody'] = 'Kaixo, {$a->firstname}:
 
 Zure \'{$a->sitename}\' zerbitzariko {$a->username} erabiltzailearen kontua blokeatua izan da sartzeko saiakera oker anitz egin direlako.
 
-Kontua berehala desblokeatzeko, sartu hurrengo estekan:
+Kontua berehala desblokeatzeko, egin klik hurrengo estekan:
 
 {$a->link}
-
-Posta elektronikoko programa gehienetan goiko helbidea esteka urdin gisa agertu beharko litzateke eta zuk zuzenean klik egiteko aukera izan beharko zenuke. Horrela ez bada, helbidea kopiatu eta zure nabigatzailearen goialdean dagoen helbide-barran itsatsi ezazu.
 
 Laguntza behar baduzu, mesedez jarri harremanetan zure guneko kudeatzailearekin,
 {$a->admin}';
@@ -964,6 +962,7 @@ $string['moodlebrandedapp'] = 'Moodle markako aplikazioa';
 $string['moodlebrandedapp_help'] = '<p>Moodle markako aplikazioak gure Moodlerako aplikazio librearen funtzionalitate guztiak ditu, zure marka pertsonalizatua ere jasoz.</p>
 <a href="https://moodle.com/branded-app">Moodle markako aplikazioari buruz</a>';
 $string['moodlebrandedappreference'] = 'Bestela, lortu <a href="https://moodle.com/branded-app/">Moodle markako aplikazioa</a> zure marka pertsonalizatuarekin.';
+$string['moodlenetremovalwarning'] = 'MoodleNet zerbitzua 2026ko apirilaren 20an itxiko da. Zure gunean MoodleNet erabiltzen jarraitu nahi baduzu, instalatu MoodleNet plugina <a href="https://moodle.org/plugins" target="_blank">Moodle-ren pluginen direktoriotik <i class="fa fa-exter-link" role="img" aria-label="Beste leiho batean irekitzen da" title="Beste leiho batean irekitzen da"></i></a> eta konektatu norberak hostatutako MoodleNet-eko instantzia batera. Aurrerago MoodleNet profilaren IDa eremua ezabatuko da; mesedez, migratu datu horiek beste helburu batzuetarako erabiltzen ari bazara.';
 $string['moodlepartners'] = 'Moodle Partner-ak';
 $string['moodlepartners_help'] = '<p>Moodle Partner-ak Moodle HQk egiaztatutako zerbitzu-hornitzaileak dira, zure erakundearen online hezkuntza-ingurunerako goi mailako kalitateko Moodle-zerbitzuak eman ditzaketenak.</p>
 <a href="https://moodle.com/about-partners/">Gure Bazkideen zerbitzuez</a><br />

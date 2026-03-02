@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['accessdenied'] = 'Kein Zugriff';
 $string['alwaysopen'] = 'Immer verfügbar';
 $string['blankentry'] = 'Leerer Eintrag';
+$string['changessaved'] = 'Änderungen gespeichert';
 $string['completiondetail:completion_create_entry'] = 'Einen Eintrag im Journal erstellen';
 $string['couldnotupdatejournal'] = 'Das Journal konnte nicht aktualisiert werden.';
 $string['countnotinsertjournalentry'] = 'Der neue Journaleintrag konnte nicht eingefügt werden.';
@@ -52,10 +53,12 @@ $string['eventjournalcreated'] = 'Journal erstellt';
 $string['eventjournaldeleted'] = 'Journal gelöscht';
 $string['eventjournalviewed'] = 'Journal angezeigt';
 $string['failedupdate'] = 'Fehler beim Aktualisieren des Journalfeedbacks für {$a}';
+$string['feedback'] = 'Feedback';
 $string['feedbackupdated'] = 'Feedback für {$a} Einträge aktualisiert';
 $string['feedbackupdatedforuser'] = 'Feedback für {$a} aktualisiert';
 $string['firstnameasc'] = 'Vorname aufsteigend';
 $string['firstnamedesc'] = 'Vorname absteigend';
+$string['grade'] = 'Bewertung';
 $string['gradeingradebook'] = 'Aktuelle Bewertung in der Bewertungsübersicht';
 $string['incorrectcmid'] = 'Die Modul-ID ist ungültig.';
 $string['incorrectcourseid'] = 'Die Kurs-ID ist ungültig.';
@@ -86,6 +89,7 @@ $string['journalmailhtml'] = '<p>Hallo {$a->student},</p>
 <p>Sie können das Feedback <a href="{$a->url}">als Anhang zu Ihrem Journaleintrag</a> anzeigen.</p>';
 $string['journalname'] = 'Name des Journals';
 $string['journalquestion'] = 'Beschreibung';
+$string['lastedited'] = 'Zuletzt bearbeitet';
 $string['lastnameasc'] = 'Nachname aufsteigend';
 $string['lastnamedesc'] = 'Nachname absteigend';
 $string['mailbody'] = '{$a->username} hat den Journaleintrag für \'{$a->journalname}\' aktualisiert
@@ -98,8 +102,21 @@ $string['mailsubject'] = 'Feedback zum Journal';
 $string['messageprovider:journal_feedback'] = 'Feedback zum Journal vom Trainer/von der Trainerin';
 $string['messageprovider:submission'] = 'Journaleintrag erstellt oder verändert';
 $string['modulename'] = 'Journal';
-$string['modulename_help'] = '<p>Die Aktivität Journal ermöglicht es, von Teilnehmer/innen eine Rückmeldung zu einem bestimmten Thema zu erhalten, die ausschließlich die schreibende Person selbst und die Trainer/innen lesen können.</p><p>Anwendungsbeispiele sind u.a.<ul><li>Tagebücher zum Projektverlauf</li><li>Rechenschaftsberichte</li></ul></p>';
+$string['modulename_help'] = '###### Hauptmerkmale
+- Sammeln von Online-Texteinträgen von Teilnehmer/innen zur Überprüfung und Bewertung.
+- Die Einträge sind privat zwischen Teilnehmer/innen und Trainer/innen (für andere Teilnehmer/innen nicht sichtbar).
+- Unterstützt Feedback in Textform und Bewertung durch Trainer/innen.
+- Enthält eine Einstellung für "Verfügbare Tage", um den Einreichungszeitraum zu steuern.
+- Zeigt alle Einträge für eine Klasse oder Gruppe auf einer Seite an, um eine effiziente Überprüfung zu ermöglichen.
+
+###### Anwendungsmöglichkeiten
+- Kurze Reflexionsaufgaben oder Lernjournale vergeben.
+- Das Tool für kontinuierliches Feedback und die iterative Verbesserung der Schülerarbeiten nutzen.
+- Die Teilnehmer/innen ermutigen, Unterrichtsinhalte oder Lesestoffe mit eigenen Worten zusammenzufassen.
+- Den Fortschritt der Teilnehmer/innen anhand einfacher textbasierter Aufgaben verfolgen.
+- Die private Kommunikation zwischen Trainer/in und Teilnehmer/in für formative Bewertungen erleichtern.';
 $string['modulename_link'] = 'mod/journal/view';
+$string['modulename_summary'] = 'Private Online-Texteinträge von Teilnehmer/innen für Feedback und Bewertung sammeln, mit einer festgelegten Verfügbarkeitsdauer und ohne Datei-Uploads.';
 $string['modulenameplural'] = 'Journale';
 $string['needsregrade'] = 'Eintrag wurde verändert, seit dem das letzte Feedback gespeichert wurde.';
 $string['newjournalentries'] = 'Neue Journaleinträge';
@@ -107,6 +124,7 @@ $string['nodatachanged'] = 'Keine Daten geändert';
 $string['nodeadline'] = 'Immer offen';
 $string['noentriesmanagers'] = 'Keine Trainer/in eingeschrieben';
 $string['noentry'] = 'Kein Eintrag';
+$string['nograde'] = 'Keine Bewertung';
 $string['noratinggiven'] = 'Keine Bewertung abgegeben';
 $string['notifystudents'] = 'Teilnehmer/innen benachrichtigen';
 $string['notifystudents_default'] = 'Teilnehmer/innen standardmäßig benachrichtigen';
@@ -133,11 +151,13 @@ $string['rate'] = 'Bewertung';
 $string['removeentries'] = 'Alle Einträge löschen';
 $string['removemessages'] = 'Alle Journaleinträge löschen';
 $string['saveallfeedback'] = 'Mein Feedback speichern';
+$string['savechanges'] = 'Änderungen speichern';
 $string['savefeedback'] = 'Feedback speichern';
 $string['search:activity'] = 'Journal - Aktivitätsinfo';
 $string['search:entry'] = 'Journal - Einträge';
 $string['showoverview'] = 'Journalübersicht im \'Dashboard\' anzeigen';
 $string['showrecentactivity'] = 'Aktuelle Aktivitäten anzeigen';
+$string['started'] = 'Sie haben dieses Journal begonnen.';
 $string['startoredit'] = 'Journaleintrag bearbeiten';
 $string['userswhocompletedthejournal'] = 'Nutzer/innen, die das Journal abgeschlossen haben';
 $string['userswhodidnotcompletedthejournal'] = 'Nutzer/innen, die das Journal nicht abgeschlossen haben';

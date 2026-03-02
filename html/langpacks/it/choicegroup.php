@@ -126,7 +126,6 @@ $string['notyetresultsviewable'] = 'I risultati saranno visibili soltanto dopo l
 $string['numberofuser'] = 'Il numero degli utenti';
 $string['onlyactive'] = 'Filtra le risposte in base agli utenti con iscrizioni scadute o sospese';
 $string['option'] = 'Gruppo';
-$string['page-mod-choice-x'] = 'Pagina contenente ogni scelta del gruppo';
 $string['pleaseselectonegroup'] = 'Selezionare almeno un gruppo.';
 $string['pleasesetgroups'] = 'Per favore crea almeno un gruppo nel corso.';
 $string['pleasesetonegroupor'] = 'Per favore crea almeno un gruppo nel corso.<br /><br />

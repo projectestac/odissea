@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_emaildescription'] = 'E-Posta onayı varsayılan kimlik denetimi yöntemidir. Kullanıcı kendi seçtiği kullanıcı adı ve şifreyle kaydolduğunda kullanıcının adresine bir onay e-postası gönderilir. Bu e-posta, kullanıcının hesabını onaylayabileceği güvenli bir bağlantı içerir. Sonraki girişler, Moodle veriabanındaki kayıtlı kullanıcı adı ve şifre değerleriyle kontrol edilir.';
 $string['auth_emailnoemail'] = 'Size e-posta göndermeye çalıştı ama başarısız oldu!';
-$string['auth_emailrecaptcha'] = 'Kendi kendine kayıt yaptıracak kullanıcılar için kayıt sayfasına görsel/işitsel bir teyit formu öğesi ekleyin. Bu sitenizi istenmeyen e-posta göndericilerine karşı korur ve değerli bir amaca hizmet eder. Daha fazla ayrıntı için https://recaptcha.net/learnmore.html. <br/><em>PHP cURL eklentisi gerekir.</em>';
+$string['auth_emailrecaptcha'] = 'Kendi kendine kayıt yaptıracak kullanıcılar için kayıt sayfasına görsel/işitsel bir teyit formu ögesi ekleyin. Bu sitenizi istenmeyen e-posta göndericilerine karşı korur ve değerli bir amaca hizmet eder. Daha fazla ayrıntı için https://recaptcha.net/learnmore.html. <br/><em>PHP cURL eklentisi gerekir.</em>';
 $string['auth_emailrecaptcha_key'] = 'reCAPTCHA etkinleştir';
 $string['auth_emailsettings'] = 'Ayarlar';
 $string['pluginname'] = 'E-Posta temelli kendi kendine kayıt';

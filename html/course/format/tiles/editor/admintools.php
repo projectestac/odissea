@@ -76,7 +76,8 @@ function permitted_colours() {
     global $DB;
     $records = $DB->get_records_select(
         'config_plugins',
-        "plugin = 'format_tiles' AND " . $DB->sql_like('name', '?', false), ["tilecolour%"]
+        "plugin = 'format_tiles' AND " . $DB->sql_like('name', '?', false),
+        ["tilecolour%"]
     );
     $permittedcolours = [];
     foreach ($records as $record) {
@@ -105,11 +106,13 @@ function reset_colours($settingsurl, $pageurl) {
     if (count($permittedcolours) === 0) {
         redirect(
             $settingsurl,
-            get_string('novaliddefaultcolour', 'format_tiles'), null, \core\output\notification::NOTIFY_ERROR
+            get_string('novaliddefaultcolour', 'format_tiles'),
+            null,
+            \core\output\notification::NOTIFY_ERROR
         );
     }
     // Prepare a "NOT IN" statement for the permitted colours, to find records which have other colours.
-    list($permittedcolourssql, $params) = $DB->get_in_or_equal($permittedcolours, SQL_PARAMS_NAMED, 'param', false);
+    [$permittedcolourssql, $params] = $DB->get_in_or_equal($permittedcolours, SQL_PARAMS_NAMED, 'param', false);
 
     if (!optional_param('sure', 0, PARAM_INT)) {
         // User has not said they are sure yet so count how many courses are affected and offer user chance to confirm.
@@ -135,11 +138,15 @@ function reset_colours($settingsurl, $pageurl) {
         $defaultvalue = get_config('format_tiles', 'tilecolour1');
 
         // Validate our default value before we apply it to multiple courses.
-        if (!$defaultvalue || strlen($defaultvalue) > 7 || strpos($defaultvalue, "#") !== 0
-            || !ctype_xdigit(substr($defaultvalue, 1)) || hexdec($defaultvalue) === 0) {
+        if (
+            !$defaultvalue || strlen($defaultvalue) > 7 || strpos($defaultvalue, "#") !== 0
+            || !ctype_xdigit(substr($defaultvalue, 1)) || hexdec($defaultvalue) === 0
+        ) {
             redirect(
                 $settingsurl,
-                get_string('novaliddefaultcolour', 'format_tiles'), null, \core\output\notification::NOTIFY_ERROR
+                get_string('novaliddefaultcolour', 'format_tiles'),
+                null,
+                \core\output\notification::NOTIFY_ERROR
             );
         }
         // We don't want to trawl through and update each course record individually as it may take a while.
@@ -152,7 +159,9 @@ function reset_colours($settingsurl, $pageurl) {
 
         redirect(
             $settingsurl,
-            get_string('tilecolourschanged', 'format_tiles'), null, \core\output\notification::NOTIFY_SUCCESS
+            get_string('tilecolourschanged', 'format_tiles'),
+            null,
+            \core\output\notification::NOTIFY_SUCCESS
         );
     }
     return '';
@@ -191,7 +200,7 @@ function list_problem_courses() {
                 get_string('migratecoursedata', 'format_tiles'),
                 ['class' => 'btn btn-primary']
             ),
-        'm-3'
+            'm-3'
         );
     return $o;
 }

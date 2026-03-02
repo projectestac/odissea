@@ -32,7 +32,6 @@ namespace format_tiles\output\courseformat\content\section;
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class header extends \core_courseformat\output\local\content\section\header {
-
     /**
      * Export this data so it can be used as the context for a mustache template.
      *

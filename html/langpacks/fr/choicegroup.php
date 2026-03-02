@@ -133,7 +133,6 @@ $string['notyetresultsviewable'] = 'Les résultats ne seront visibles que lorsqu
 $string['numberofuser'] = 'Nombre d’utilisateurs';
 $string['onlyactive'] = 'Filtrer les données de réponse pour les utilisateurs dont les inscriptions ont expiré ou sont suspendues';
 $string['option'] = 'Groupe';
-$string['page-mod-choice-x'] = 'Toutes les pages du module Choix du groupe';
 $string['pleaseselectonegroup'] = 'Veuillez sélectionner au moins un groupe parmi lequel choisir.';
 $string['pleasesetgroups'] = 'Veuillez créer au moins un groupe dans ce cours.';
 $string['pleasesetonegroupor'] = 'Veuillez créer au moins un groupe dans ce cours.<br /><br />

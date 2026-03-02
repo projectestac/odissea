@@ -33,17 +33,16 @@ $string['confirmaccountemail'] = 'Kaixo, {$a->firstname}:
 
 Kontu-eskaera bat jaso dugu \'{$a->sitename}\' gunean zure helbide elektronikotik.
 
-Zure kontua berresteko, mesedez hurrengo helbide honetara joan:
+Zure kontua berresteko, egin klik ondorengo esteka honetan:
 
-{$a->link}
+<a href="{$a->link}">Baieztatu nire kontua</a>
 
-Posta elektronikoko programa gehienetan goiko helbidea esteka urdin gisa agertu beharko litzateke eta zuk zuzenean klik egiteko aukera izan beharko zenuke. Horrela ez bada, helbidea kopiatu eta zure nabigatzailearen goialdean dagoen helbide-barran itsatsi ezazu.
 
-Laguntza behar izanez gero, mesedez jarri harremanetan guneko kudeatzailearekin,
+Laguntza behar izanez gero, jarri zaitez harremanetan guneko kudeatzailearekin,
 {$a->admin}
 
-Kontu-eskaera hau zuk egin ez baduzu, norbait zure kontuan sarbidea lortzeko saiakera egiten egon daiteke.
-Mesedez zure guneko kudeatzailearekin harremanetan jarri zaitez lehen bai lehen.';
+Eskaera hau zuk egin ez baduzu, baliteke norbait zure kontuan sarbidea lortzeko saiakera egin izana.
+Mesedez jarri zaitez harremanetan zure guneko kudeatzailearekin lehen bai lehen.';
 $string['confirmaccountemailsubject'] = '{$a}: kontuaren berrespena';
 $string['confirmationinvalid'] = 'Berrespen-esteka baliogabea da edo iraungi da. Mesedez, hasi berriz sartzeko prozesua kontua berrespen e-mail berri bat sortzeko.';
 $string['confirmationpending'] = 'Kontu hau posta elektroniko bidezko berrespenaren zain dago.';
@@ -51,17 +50,16 @@ $string['confirmlinkedloginemail'] = 'Kaixo, {$a->firstname}:
 
 Eskaera bat egin da {$a->issuername}(e)ko {$a->linkedemail} helbidea zure helbide elektronikoa erabiliz zure \'{$a->sitename}\' guneko kontuarekin lotzeko.
 
-Eskaera hau baieztatu eta sarbide horiek lotzeko, mesedez sartu hurrengo helbidean:
+Eskaera hau baieztatu eta sarbide horiek lotzeko, egin klik ondorengo esteka honetan:
 
-{$a->link}
+<a href="{$a->link}">Lotu nire kontuak</a>
 
-Posta elektronikoko programa gehienetan goiko helbidea esteka urdin gisa agertu beharko litzateke eta zuk zuzenean klik egiteko aukera izan beharko zenuke. Horrela ez bada, helbidea kopiatu eta zure nabigatzailearen goialdean dagoen helbide-barran itsatsi ezazu.
 
-Laguntza behar baduzu, mesedez jarri harremanetan zure guneko kudeatzailearekin,
+Laguntza behar izanez gero, jarri zaitez harremanetan guneko kudeatzailearekin,
 {$a->admin}
 
-Kontu-eskaera hau zuk egin ez baduzu, norbait zure kontuan sarbidea lortzeko saiakera egiten egon daiteke.
-Mesedez zure guneko kudeatzailearekin harremanetan jarri zaitez lehen bai lehen.';
+Eskaera hau zuk egin ez baduzu, baliteke norbait zure kontuan sarbidea lortzeko saiakera egin izana.
+Mesedez jarri zaitez harremanetan zure guneko kudeatzailearekin lehen bai lehen.';
 $string['confirmlinkedloginemailsubject'] = '{$a}: lotutako sarbidearen berrespena';
 $string['createaccountswarning'] = 'Autentifikazio-plugin honek zure gunean kontuak sortzea ahalbidetzen du. Plugin hau erabiltzen baduzu baliteke "Galarazi kontuen sorrera identifikatzean" ezarpena gaitu ala desgaitu nahi izatea.';
 $string['createnewlinkedlogin'] = 'Estekatu kontu berri bat ({$a})';

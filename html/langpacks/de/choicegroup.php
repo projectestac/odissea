@@ -49,6 +49,8 @@ $string['char_bullet_expanded'] = '▼';
 $string['char_limitui_parenthesis_end'] = ')';
 $string['char_limitui_parenthesis_start'] = '(';
 $string['choice'] = 'Gruppenwahl';
+$string['choicebegins'] = 'Wahl beginnt';
+$string['choiceends'] = 'Wahl endet';
 $string['choicegroup:addinstance'] = 'Neue Gruppenwahl hinzufügen';
 $string['choicegroup:choose'] = 'Gruppenwahl durchführen';
 $string['choicegroup:deleteresponses'] = 'Antworten löschen';
@@ -68,6 +70,7 @@ Die ausgewählten Gruppen erscheinen in der Liste auf der rechten Seite.
 
 Um Gruppen aus der Auswahl wieder zu entfernen, wählen Sie diese in der Liste auf der rechten Seite aus und klicken Sie auf "Entfernen".';
 $string['choicegroupsaved'] = 'Ihre Wahl wurde gespeichert.';
+$string['choices'] = 'Wahlen';
 $string['choicetext'] = 'Auswahltext';
 $string['chooseaction'] = 'Aktion auswählen ...';
 $string['choosegroup'] = 'Gruppe wählen';
@@ -114,8 +117,21 @@ $string['maxenrollments_help'] = 'Diese Option ermöglicht es, die Anzahl der Gr
 $string['members/'] = 'Gruppenmitglieder';
 $string['members/max'] = 'Gruppenmitglieder / Maximalzahl';
 $string['modulename'] = 'Gruppenwahl';
-$string['modulename_help'] = 'Mit der \'Gruppenwahl\' ist es möglich, dass Teilnehmer/innen sich selber in Gruppen innerhalb eines Kurses eintragen. Die Trainer/innen geben die Gruppen im Kurs vor, die als Wahloption verfügbar sind, außerdem die maximale Gruppengröße.';
+$string['modulename_help'] = '###### Hauptmerkmale
+- Ermöglicht Teilnehmer/innen die Selbstanmeldung zu Gruppen innerhalb eines Kurses
+- Trainer/innen können maximale Gruppengrößen festlegen und die Verfügbarkeit kontrollieren
+- Teilnehmer/innen können Gruppenmitglieder vor dem Beitritt sehen
+- Option, Teilnehmer/innen den Gruppenwechsel bis zu einer Frist zu ermöglichen
+- Unterstützt die Auswahl mehrerer Gruppen und die Sortierung nach Name oder Erstellungsdatum
+
+###### Anwendungsmöglichkeiten
+- Teilnehmer/innen in Projekt- oder Aufgabengruppen organisieren
+- Gruppenarbeit für Diskussionen, Praktika oder Workshops erleichtern
+- Teilnehmer/innen die Wahl von Partnern für gemeinsame Aufgaben ermöglichen
+- Gruppengrößen für eine ausgewogene Beteiligung verwalten
+- Flexible Gruppenwechsel vor Beginn der Aktivitäten ermöglichen';
 $string['modulename_link'] = 'mod/choicegroup/view';
+$string['modulename_summary'] = 'Ermöglicht es Teilnehmer/innen, sich selbst Kursgruppen auszuwählen und beizutreten, wobei Optionen für Größenbeschränkungen, Sichtbarkeit der Mitgliedschaft und flexible Fristen zur Verfügung stehen.';
 $string['modulenameplural'] = 'Gruppenwahlen';
 $string['moveselectedusersto'] = 'Ausgewählte Nutzer/innen verschieben ...';
 $string['multipleenrollmentspossible'] = 'Eintrag in mehrere Gruppen erlauben';
@@ -133,7 +149,7 @@ $string['notyetresultsviewable'] = 'Die Ergebnisse werden nach dem Ende der Wahl
 $string['numberofuser'] = 'Nutzeranzahl';
 $string['onlyactive'] = 'Antwortdaten von Teilnehmer/innen mit inaktiven oder abgelaufenen Einschreibungen ausfiltern';
 $string['option'] = 'Gruppe';
-$string['page-mod-choice-x'] = 'Jede Seite der Gruppenwahl';
+$string['page-mod-choicegroup-x'] = 'Jede Gruppenwahlseite';
 $string['pleaseselectonegroup'] = 'Mindestens eine Gruppe auswählen';
 $string['pleasesetgroups'] = 'Mindestens eine Gruppe in diesem Kurs anlegen';
 $string['pleasesetonegroupor'] = 'Legen Sie bitte mindestens eine Gruppe in diesem Kurs an.<br /><br />
@@ -167,6 +183,7 @@ $string['skipresultgraph'] = 'Ergebnisanzeige überspringen';
 $string['sortgroupsby'] = 'Gruppenliste sortieren nach';
 $string['spaceleft'] = 'Platz verfügbar';
 $string['spacesleft'] = 'Plätze verfügbar';
+$string['studentswhochose'] = 'Teilnehmer/innen, die wählten';
 $string['systemdefault_date'] = 'Systemstandard (momentan Erstellungsdatum der Gruppe)';
 $string['systemdefault_name'] = 'Systemstandard (momentan Gruppenname)';
 $string['taken'] = 'Eingetragen';

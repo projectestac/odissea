@@ -25,12 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cachedef_items'] = 'Koşullu değerlendirme için önbelleğe alınmış not öğeleri';
+$string['cachedef_items'] = 'Koşullu değerlendirme için önbelleğe alınmış not ögeleri';
 $string['cachedef_scores'] = 'Koşullu kullanılabilirliği değerlendirmek için önbelleklenen kullanıcı notları';
 $string['description'] = 'Öğrencilerin başarı için belirli bir not elde etmelerini isteyin.';
 $string['error_backwardrange'] = 'Not aralığı belirtirken, en düşük en yüksekden daha düşük olmalıdır.';
 $string['error_invalidnumber'] = 'Not aralıkları geçerli yüzdelerle belirtilmelidir.';
-$string['error_selectgradeid'] = 'Not koşulu için bir not öğesi seçmelisiniz.';
+$string['error_selectgradeid'] = 'Not koşulu için bir not ögesi seçmelisiniz.';
 $string['label_max'] = 'Maksimum not yüzdesi (hariç)';
 $string['label_min'] = 'Minimum not yüzdesi (dahil)';
 $string['missing'] = '(Eksik etkinlik)';

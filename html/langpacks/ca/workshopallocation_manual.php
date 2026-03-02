@@ -30,6 +30,6 @@ $string['addreviewer'] = 'Afegeix un revisor';
 $string['allocationadded'] = 'La tramesa s\'ha assignat satisfactòriament';
 $string['allocationexists'] = 'Aquesta tramesa ja existeix';
 $string['areyousuretodeallocate'] = 'Segur que voleu desassignar la tramesa seleccionada?';
-$string['areyousuretodeallocategraded'] = 'Esteu a punt d\'esborrar una tramesa que ja ha estat avaluada. Segur que voleu fer-ho?';
+$string['areyousuretodeallocategraded'] = 'Ara esborrareu una tramesa que ja ha estat avaluada. Segur que voleu fer-ho?';
 $string['pluginname'] = 'Assignació manual';
 $string['showallparticipants'] = 'Mostra tots els participants';

@@ -24,7 +24,6 @@ namespace format_tiles\hooks\output;
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class before_footer_html_generation {
-
     /**
      * Callback to add pre-footer elements.
      *
@@ -74,8 +73,9 @@ class before_footer_html_generation {
                     }
                 }
                 $PAGE->requires->js_call_amd(
-                    'format_tiles/course_mod_modal', 'init',
-                [$PAGE->course->id, false, $PAGE->pagetype, $launchmodalcmid, $usingjsnav]
+                    'format_tiles/course_mod_modal',
+                    'init',
+                    [$PAGE->course->id, false, $PAGE->pagetype, $launchmodalcmid, $usingjsnav]
                 );
             }
 
@@ -87,7 +87,6 @@ class before_footer_html_generation {
                 $renderer = $PAGE->get_renderer('format_tiles');
                 $hook->add_html($renderer->render_from_template('format_tiles/js-config', ['tiles_js_config' => $jsconfig]));
             }
-
         } catch (\Exception $e) {
             debugging("Could not prepare format_tiles footer data: " . $e->getMessage(), DEBUG_DEVELOPER);
         }

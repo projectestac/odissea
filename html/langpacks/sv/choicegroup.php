@@ -119,7 +119,6 @@ $string['notopenyet'] = 'Tvärr är aktiviteten inte tillgänglig förrän {$a}'
 $string['notyetresultsviewable'] = 'Resultaten visas när den här aktiviteten har stängts.';
 $string['numberofuser'] = 'Antal användare';
 $string['option'] = 'Grupp';
-$string['page-mod-choice-x'] = 'Vilken gruppvalsida som helst';
 $string['pleaseselectonegroup'] = 'Välj minst en grupp att välja från';
 $string['pleasesetgroups'] = 'Skapa minst en grupp för den här kursen.';
 $string['pleasesetonegroupor'] = 'Skapa minst en grupp för den här kursen.

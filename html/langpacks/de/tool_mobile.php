@@ -155,6 +155,6 @@ $string['subscriptionlimitsurpassed'] = 'Abonnementlimit überschritten';
 $string['subscriptionregister'] = 'Weitere Infos zu den verschiedenen App-Plänen und zum Zugriff auf die Nutzungsstatistiken für die Moodle-Apps finden Sie im <a href="{$a}" target="_blank"> Moodle-Apps-Portal </a>.';
 $string['subscriptionsseemore'] = 'Hinweis: Die angezeigten Infos werden nicht in Echtzeit aktualisiert. Möglicherweise müssen Sie sich abmelden und neu anmelden, um die Aktualisierungen anzuzeigen. Infos zum Erweitern Ihres App-Plans erhalten Sie im <a href="{$a}" target="_blank">Moodle Apps-Portal</a>.<br>';
 $string['switchaccount'] = 'Nutzerkonto wechseln';
-$string['typeoflogin'] = 'Login';
+$string['typeoflogin'] = 'Anmeldung';
 $string['typeoflogin_desc'] = 'Wenn Ihre Website eine SSO-Authentifizierung verwendet, wählen Sie entweder \'Im Browser\' oder \'Im integrierten Browser\'. Der integrierte Browser sorgt für eine bessere Nutzerführung, funktioniert aber nicht mit allen SSO-Plugins.';
 $string['viewqrcode'] = 'QR-Code anzeigen';

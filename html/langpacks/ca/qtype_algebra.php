@@ -60,7 +60,7 @@ Equivalència: És el més senzill dels mètodes. Efectua només la comparació 
 $string['compareequiv'] = 'Equivalència';
 $string['compareeval'] = 'Avaluació';
 $string['comparesage'] = 'SAGE';
-$string['correctansweris'] = 'La resposta correcta és: {$a}, que dóna';
+$string['correctansweris'] = 'La resposta correcta és: {$a}, que dona';
 $string['correctanswers'] = 'Respostes correctes';
 $string['decimal'] = '.';
 $string['defaultmethod'] = 'Mètode de comparació per defecte';

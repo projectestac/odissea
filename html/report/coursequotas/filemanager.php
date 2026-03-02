@@ -253,9 +253,9 @@ if ($files->count) {
                 <p><strong>Path hash</strong>: <span id="fileModal_pathnamehash"></span></p>
               </div>
               <div class="modal-footer">
-                <a id="fileModal_similar" class="btn btn-info edit-btn" aria-hidden="true" href="#" target="_blank" original-href="' . $CFG->wwwroot . '/report/coursequotas/filemanager.php?hash="><i class="fa fa-eye" aria-hidden="true"></i>' . get_string('viewsimilarfiles', REPORT_COMPONENTNAME) . '</a>
-                <button class="btn btn-primary edit-btn" aria-hidden="true" onclick="filemanager_downloadFile()"><i class="fa fa-download" aria-hidden="true"></i>' . get_string('download') . '</button>
-                <a href="#deleteModal" data-toggle="modal" class="btn btn-danger edit-btn" onclick="filemanager_deleteFile()"><i class="fa fa-trash" aria-hidden="true"></i>' . get_string('delete') . '</a>
+                <a id="fileModal_similar" class="btn btn-info edit-btn" aria-hidden="true" href="#" target="_blank" original-href="' . $CFG->wwwroot . '/report/coursequotas/filemanager.php?hash="><i class="fa fa-eye" aria-hidden="true"></i> ' . get_string('viewsimilarfiles', REPORT_COMPONENTNAME) . '</a>
+                <button class="btn btn-primary edit-btn" aria-hidden="true" onclick="filemanager_downloadFile()"><i class="fa fa-download" aria-hidden="true"></i> ' . get_string('download') . '</button>
+                <a href="#deleteModal" data-toggle="modal" class="btn btn-danger edit-btn" onclick="filemanager_deleteFile()"><i class="fa fa-trash" aria-hidden="true"></i> ' . get_string('delete') . '</a>
               </div>
             </div>
         </div>
@@ -271,8 +271,8 @@ if ($files->count) {
                 <p>' . get_string('confirmdeletefile', REPORT_COURSEQUOTAS_REPOSITORY_STRING) . '</p>
               </div>
               <div class="modal-footer">
-                <button class="btn btn-success edit-btn" data-dismiss="modal" aria-hidden="true" onclick="filemanager_deleteFile_confirm()"><i class="fa fa-check" aria-hidden="true"></i>' . get_string('confirm') . '</button>
-                <button class="btn btn-danger edit-btn" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i>' . get_string('cancel') . '</button>
+                <button class="btn btn-success edit-btn" data-dismiss="modal" aria-hidden="true" onclick="filemanager_deleteFile_confirm()"><i class="fa fa-check" aria-hidden="true"></i> ' . get_string('confirm') . '</button>
+                <button class="btn btn-danger edit-btn" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i> ' . get_string('cancel') . '</button>
               </div>
             </div>
         </div>

@@ -697,11 +697,9 @@ $string['emailconfirmation'] = 'Caro(a) {$a->firstname},
 
 Foi criada uma nova conta com este endereço de e-mail em \'{$a->sitename}\'.
 
-Para confirmar a sua nova conta, clique em:
+Para confirmar a sua nova conta,
 
-{$a->link}
-
-Na maioria dos casos, deve aparecer como uma hiperligação azul no qual pode simplesmente clicar. Se não funcionar, copie e cole na linha de endereço no topo da janela do seu navegador web.
+<a href="{$a->link}">Confirmar a sua conta</a>
 
 Se necessitar de ajuda, contacte o administrador do site,
 {$a->admin}';
@@ -747,15 +745,13 @@ $string['emailnotfound'] = 'O e-mail não foi encontrado na base de dados';
 $string['emailonlyallowed'] = 'Este e-mail não pode ser usado. Os domínios de e-mail permitidos são: {$a}.';
 $string['emailpasswordchangeinfo'] = 'Caro(a) {$a->firstname},
 
-Foi pedida uma nova senha para a sua conta \'{$a->username}\' na plataforma de e-learning \'{$a->sitename}\'.
+Foi pedida uma nova senha para a sua conta \'{$a->username}\' em \'{$a->sitename}\'.
 
-Para mudar a sua senha, aceda a este endereço:
+Para mudar a sua senha, clique no endereço abaixo:
 
-{$a->link}
+<a href="{$a->link}">Alterar sednha</a>
 
-Se o endereço acima não for apresentado como uma hiperligação em que basta clicar, copie o endereço e cole na linha de endereço do seu navegador web.
-
-Se precisar de ajuda, contacte o administrador do site,
+Se precisar de ajuda, contacte o administrador do site.
 {$a->admin}';
 $string['emailpasswordchangeinfodisabled'] = 'Caro(a) {$a->firstname},
 
@@ -773,15 +769,13 @@ Por favor, contacte o administrador da plataforma,
 $string['emailpasswordchangeinfosubject'] = '{$a}: Informação para alteração de senha';
 $string['emailpasswordconfirmation'] = 'Caro(a) {$a->firstname},
 
-Foi pedida uma nova senha para a sua conta na plataforma de e-learning \'{$a->sitename}\'.
+Foi pedida uma nova senha para a sua conta em \'{$a->sitename}\'.
 
-Para confirmar este pedido e receber uma nova senha por e-mail, aceda a este endereço:
+Para confirmar este pedido e receber uma nova senha por e-mail, clique no endereço abaixo:
 
-{$a->link}
+<a href="{$a->link}">Obter nova senha</a>
 
-Se o endereço acima não for apresentado como uma hiperligação em que basta clicar, copie o endereço e cole na linha de endereço do seu navegador web.
-
-Se precisar de ajuda, contacte o administrador do site,
+Se precisar de ajuda, contacte o administrador do site.
 {$a->admin}';
 $string['emailpasswordconfirmationsubject'] = '{$a}:  Confirmação de alteração da senha';
 $string['emailpasswordconfirmmaybesent'] = '<p>Se indicou um nome de utilizador correto ou um endereço de e-mail exclusivo, deverá receber um e-mail.</p>
@@ -800,14 +794,17 @@ $string['emailresetconfirmation'] = 'Caro(a) {$a->firstname},
 
 Foi pedida uma reposição de senha para a sua conta \'{$a->username}\' em {$a->sitename}.
 
-Para confirmar este pedido e definir uma nova senha para a sua conta, aceda ao seguinte endereço:
-<a href="{$a->link}">{$a->link}</a>
+Para confirmar este pedido e definir uma nova senha para a sua conta, clique no endereço abaixo:
+
+<a href="{$a->link}">Redefinir a senha</a>
+
 
 (Esta hiperligação é válida por {$a->resetminutes} minutos a partir do momento em que a reposição de senha foi pedida).
 
 Se não fez o pedido de reposição da senha, ignore esta mensagem.
 
-Se precisar de ajuda, por favor, contacte o administrador do site, {$a->admin}.';
+Se precisar de ajuda, por favor, contacte o administrador do site.
+{$a->admin}.';
 $string['emailresetconfirmationsubject'] = '{$a}: Pedido de reposição de senha';
 $string['emailresetconfirmsent'] = 'Foi enviado um e-mail para o seu endereço em <b>{$a}</b>.<br />Este contém instruções para confirmar e concluir a alteração da sua senha. Se precisar de ajuda, por favor, contacte o administrador do site.';
 $string['emailstop'] = 'Desativar as notificações';
@@ -1539,12 +1536,11 @@ Foi criada uma conta de utilizador para si em \'{$a->sitename}\'.
      Nome de utilizador: {$a->username}
      Senha: {$a->newpassword}
 
-(Ser-lhe-á solicitado que altere a sua palavra-passe quando entrar pela primeira vez.)
+(Ser-lhe-á solicitado que altere a sua senha quando entrar pela primeira vez.)
 
-Para começar a usar \'{$a->sitename}\', autentique-se em
-  {$a->link}.
+<a href="{$a->link}">Clique para autenticar-se</a> e começar a usar \'{$a->sitename}\'.
 
-Se precisar de ajuda, contacte o administrador do site,
+Se precisar de ajuda, contacte o administrador do site.
 {$a->signoff}';
 $string['newusers'] = 'Novos utilizadores';
 $string['newwindow'] = 'Nova janela';

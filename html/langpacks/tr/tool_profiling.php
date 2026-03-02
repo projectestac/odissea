@@ -30,6 +30,7 @@ $string['cannotfindanyrunforrunid'] = 'Üzgünüz, \'{$a}\' profil çalıştırm
 $string['cannotfindanyrunforurl'] = 'Üzgünüz, \'{$a}\' URL\'si için profil çalıştırması bulunamadı';
 $string['comment'] = 'Yorum';
 $string['cputime'] = 'CPU süre';
+$string['detailview'] = 'Çalışma özeti';
 $string['differencesbetween2runsof'] = '{$a} \'nın 2 çalıştırılması arasındaki farklar';
 $string['executiontime'] = 'Uygulama süresi';
 $string['export'] = 'Dışa aktar';

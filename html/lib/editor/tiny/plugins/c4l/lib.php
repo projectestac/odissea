@@ -22,8 +22,6 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
-
 /**
  * Return a list of all the user preferences used by tiny_c4l.
  *
@@ -53,14 +51,15 @@ function tiny_c4l_user_preferences() {
  * @param array $options additional options affecting the file serving
  * @return bool false if file not found, does not return if found - just send the file
  */
-function tiny_c4l_pluginfile($course,
+function tiny_c4l_pluginfile(
+    $course,
     $cm,
     $context,
     $filearea,
     $args,
     $forcedownload,
-    array $options = []) {
-
+    array $options = []
+) {
     $compicon = strpos($filearea, 'compicon') !== false;
     $compimage = strpos($filearea, 'customimagesbank') !== false;
 

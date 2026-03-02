@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Bilgi ögeleri davranışı';
-$string['privacy:metadata'] = 'Bilgi öğeleri soru davranışı eklentisi herhangi bir kişisel veri saklamaz.';
+$string['privacy:metadata'] = 'Bilgi ögeleri soru davranışı eklentisi herhangi bir kişisel veri saklamaz.';
 $string['seen'] = 'Görüldü';

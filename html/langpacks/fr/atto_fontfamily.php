@@ -27,5 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fontselectlist'] = 'Lister les polices disponibles';
 $string['pluginname'] = 'Changer la police';
-$string['privacy:metadata'] = 'Le plugin Atto fontfamily ne stocke aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin Atto fontfamily n’enregistre aucune donnée personnelle.';
 $string['settings'] = 'Option';

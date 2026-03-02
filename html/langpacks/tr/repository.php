@@ -260,6 +260,7 @@ $string['unknownoriginal'] = 'Bilinmeyen';
 $string['unknownsource'] = 'Bilinmeyen kaynak';
 $string['unzipped'] = 'Başarıyla çıkartıldı';
 $string['upload'] = 'Bu dosyayı yükle';
+$string['uploaderror'] = 'Dosya yükleme hatası';
 $string['uploading'] = 'Yükleniyor...';
 $string['uploadsucc'] = 'Bu dosya başarıyla yüklendi';
 $string['uselatestfile'] = 'Son dosyayı kullan';

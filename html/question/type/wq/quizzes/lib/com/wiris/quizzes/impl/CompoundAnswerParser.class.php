@@ -76,6 +76,7 @@ class com_wiris_quizzes_impl_CompoundAnswerParser {
 						$a = _hx_index_of($value, ">", $a) + 1;
 						$b = _hx_index_of($value, "</annotation>", $a);
 						$value = _hx_substr($value, $a, $b - $a);
+						$value = com_wiris_util_xml_WXmlUtils::htmlUnescape($value);
 						unset($b);
 					} else {
 						$value = $s[0] . $value . $s[2];

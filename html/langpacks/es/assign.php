@@ -152,6 +152,7 @@ $string['blindmarking'] = 'Envíos anónimos';
 $string['blindmarking_help'] = 'Los envíos anónimos ocultan la identidad de los estudiantes de los marcadores. La configuración de envío anónimo se bloqueará una vez que se haya realizado un envío o calificación en relación con esta tarea.';
 $string['blindmarkingenabledwarning'] = 'Los envíos anónimos están habilitados para esta actividad.';
 $string['blindmarkingnogradewarning'] = 'Los envíos anónimos están habilitados para esta actividad. Las calificaciones no se agregarán al libro de calificaciones hasta que se revelen las identidades de los estudiantes a través del menú "acciones".';
+$string['bulkactionsselection'] = 'Selección de acciones masivas';
 $string['cachedef_overrides'] = 'Información de anulación de usuarios y grupos';
 $string['calendardue'] = 'Vencimiento de {$a}';
 $string['calendarextension'] = '{$a} ha vencido (extensión)';

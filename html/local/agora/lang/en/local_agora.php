@@ -4,6 +4,7 @@ $string['pluginname'] = 'Agora';
 
 // Disk quota
 $string['diskquotaerror'] = '<strong>WARNING</strong>: This Moodle site has expired its disk quota.<br />It won\'t be possible to upload files or do backups before freeing some disk space or requesting an increase of the quota.';
+$string['diskquotaerror_no_html'] = 'WARNING: This Moodle site has expired its disk quota. It won\'t be possible to upload files or do backups before freeing some disk space or requesting an increase of the quota.';
 
 // Rush hour
 $string['rush_hour'] = 'This operation is not allowed in rush hours';

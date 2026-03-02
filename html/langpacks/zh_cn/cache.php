@@ -71,7 +71,6 @@ $string['cachedef_groupdata'] = '课程组信息';
 $string['cachedef_h5p_content_type_translations'] = 'H5P 内容类型库翻译';
 $string['cachedef_h5p_libraries'] = 'H5P 库';
 $string['cachedef_h5p_library_files'] = 'H5P库文件';
-$string['cachedef_hookcallbacks'] = '钩子回调';
 $string['cachedef_htmlpurifier'] = 'HTML净化器-清除不必要的内容';
 $string['cachedef_langmenu'] = '可用的语言列表';
 $string['cachedef_license'] = '许可证列表';

@@ -1,0 +1,65 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template qbank_purgecategory/category
+
+    This template renders the list item for each category.
+
+    Example context (json):
+    {
+        "categoryid": "1",
+        "contextid": "2",
+        "categoryname": "Default for Miscellaneous",
+        "questioncount": "1",
+        "categorydesc": "The default category for questions shared in context Miscellaneous",
+        "actionlink": {
+            "disabled": false,
+            "url": "#",
+            "id": "test-id",
+            "classes": "",
+            "attributes": [],
+            "icon": {
+                "pix": {
+                    "key": "purge",
+                    "component": "qbank_purgecategory",
+                    "title": "Purge this category"
+                }
+            },
+            "text": "Purge"
+        },
+        "haschildren": false,
+        "children": []
+    }
+}}
+<b>{{categoryname}}</b> ({{questioncount}})
+{{#actionlink}}
+    {{> core/action_link }}
+{{/actionlink}}
+{{#categorydesc}}
+    <div>
+        {{{categorydesc}}}
+    </div>
+{{/categorydesc}}
+{{#haschildren}}
+    <ul>
+        {{#children}}
+            <li>
+                {{> qbank_purgecategory/category }}
+            </li>
+        {{/children}}
+    </ul>
+{{/haschildren}}

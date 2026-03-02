@@ -26,8 +26,13 @@
 
 require_once("../../config.php");
 require_once("lib.php");
+global $CFG;
 
 $id = required_param('id', PARAM_INT); // Course.
+
+if ($CFG->version > 2025041400) {
+    \core_courseformat\activityoverviewbase::redirect_to_overview_page($id, 'choicegroup');
+}
 
 $PAGE->set_url('/mod/choicegroup/index.php', ['id' => $id]);
 
@@ -90,15 +95,18 @@ foreach ($choicegroups as $choicegroup) {
     } else {
         $aa = "";
     }
+
     if ($usesections) {
         $printsection = "";
         if ($choicegroup->section !== $currentsection) {
             if ($choicegroup->section) {
                 $printsection = get_section_name($course, $sections[$choicegroup->section]);
             }
+
             if ($currentsection !== "") {
                 $table->data[] = 'hr';
             }
+
             $currentsection = $choicegroup->section;
         }
     }
@@ -112,14 +120,15 @@ foreach ($choicegroups as $choicegroup) {
         // Show normal if the mod is visible.
         $tthref = "<a href=\"view.php?id=$choicegroup->coursemodule\">" . format_string($choicegroup->name, true) . "</a>";
     }
+
     if ($usesections) {
         $table->data[] = [$printsection, $tthref, $aa];
     } else {
         $table->data[] = [$tthref, $aa];
     }
 }
+
 echo "<br />";
 echo html_writer::table($table);
 
 echo $OUTPUT->footer();
-

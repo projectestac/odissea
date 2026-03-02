@@ -25,6 +25,8 @@ use required_capability_exception;
 /**
  * Unit tests for the class \mod_journal\external\set_text
  *
+ * @runTestsInSeparateProcesses
+ *
  * @package   mod_journal
  * @copyright 2025 eDaktik GmbH {@link https://www.edaktik.at/}
  * @author    Christian Abila <christian.abila@edaktik.at>
@@ -74,9 +76,9 @@ final class set_text_test extends advanced_testcase {
             ] + $maindata,
         );
 
-        $result = set_text::execute($journal->cmid, 'newtext', FORMAT_PLAIN);
+        $result = set_text::execute($journal->id, 'newtext', FORMAT_PLAIN);
 
-        $this->assertEquals('newtext', $result);
+        $this->assertEquals('newtext', $result['text']);
 
         $result = $DB->get_record('journal_entries', ['journal' => $journal->id, 'userid' => $USER->id]);
 

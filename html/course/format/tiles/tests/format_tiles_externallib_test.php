@@ -40,7 +40,6 @@ require_once($CFG->dirroot . '/webservice/tests/helpers.php');
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 final class format_tiles_externallib_test extends \externallib_advanced_testcase {
-
     /**
      * The format options to use when setting up a course in tiles format.
      * @var array
@@ -80,9 +79,11 @@ final class format_tiles_externallib_test extends \externallib_advanced_testcase
         // Teacher can do it.
         $teacher = self::getDataGenerator()->create_user();
         $teacherrole = $DB->get_record('role', ['shortname' => 'teacher']);
-        $this->getDataGenerator()->enrol_user($teacher->id,
+        $this->getDataGenerator()->enrol_user(
+            $teacher->id,
             $course->id,
-            $teacherrole->id);
+            $teacherrole->id
+        );
         $this->setUser($teacher);
         $contextid = \context_course::instance($course->id)->id;
         $roleid = $this->assignUserCapability('moodle/course:update', $contextid);
@@ -91,7 +92,12 @@ final class format_tiles_externallib_test extends \externallib_advanced_testcase
         $sectionid = get_fast_modinfo($course)->get_section_info_all()[1]->id;
 
         $result = \format_tiles\external\external::set_image(
-            $course->id, $sectionid, $newicon, 'tileicon', 0, 0
+            $course->id,
+            $sectionid,
+            $newicon,
+            'tileicon',
+            0,
+            0
         );
         $result = \core_external\external_api::clean_returnvalue(\format_tiles\external\external::set_image_returns(), $result);
         // Check for 0 warnings.
@@ -99,7 +105,9 @@ final class format_tiles_externallib_test extends \externallib_advanced_testcase
 
         // Check it worked and data made it to db.
         $dbvalue = \format_tiles\local\format_option::get(
-            $course->id, \format_tiles\local\format_option::OPTION_SECTION_ICON, $sectionid
+            $course->id,
+            \format_tiles\local\format_option::OPTION_SECTION_ICON,
+            $sectionid
         );
 
         $this->assertEquals($newicon, $dbvalue);
@@ -108,15 +116,20 @@ final class format_tiles_externallib_test extends \externallib_advanced_testcase
         $this->unassignUserCapability('moodle/course:update', $contextid, $roleid);
         $this->expectException('required_capability_exception');
         $result = \format_tiles\external\external::set_image(
-            $course->id, $sectionid, $newicon, 'tileicon'
+            $course->id,
+            $sectionid,
+            $newicon,
+            'tileicon'
         );
 
         // Student not allowed to do it.
         $student1 = self::getDataGenerator()->create_user();
         $studentrole = $DB->get_record('role', ['shortname' => 'student']);
-        $this->getDataGenerator()->enrol_user($student1->id,
+        $this->getDataGenerator()->enrol_user(
+            $student1->id,
             $course->id,
-            $studentrole->id);
+            $studentrole->id
+        );
         $this->setUser($student1);
         $this->expectException('required_capability_exception');
         $result = \format_tiles\external\external::set_image($course->id, $sectionid, $newicon, 'tileicon');
@@ -147,16 +160,19 @@ final class format_tiles_externallib_test extends \externallib_advanced_testcase
         // Teacher can do it.
         $teacher = self::getDataGenerator()->create_user();
         $teacherrole = $DB->get_record('role', ['shortname' => 'teacher']);
-        $this->getDataGenerator()->enrol_user($teacher->id,
+        $this->getDataGenerator()->enrol_user(
+            $teacher->id,
             $course->id,
-            $teacherrole->id);
+            $teacherrole->id
+        );
         $this->setUser($teacher);
         $contextid = \context_course::instance($course->id)->id;
         $roleid = $this->assignUserCapability('moodle/course:update', $contextid);
 
         $result = \format_tiles\external\external::set_session_width($course->id, 1366);
         $result = \core_external\external_api::clean_returnvalue(
-            \format_tiles\external\external::set_session_width_returns(), $result
+            \format_tiles\external\external::set_session_width_returns(),
+            $result
         );
         // Check for 0 warnings.
         $this->assertTrue($result['status']);
@@ -168,14 +184,17 @@ final class format_tiles_externallib_test extends \externallib_advanced_testcase
         // Student also allowed to do it.
         $student1 = self::getDataGenerator()->create_user();
         $studentrole = $DB->get_record('role', ['shortname' => 'student']);
-        $this->getDataGenerator()->enrol_user($student1->id,
+        $this->getDataGenerator()->enrol_user(
+            $student1->id,
             $course->id,
-            $studentrole->id);
+            $studentrole->id
+        );
         $this->setUser($student1);
 
         $result = \format_tiles\external\external::set_session_width($course->id, 1366);
         $result = \core_external\external_api::clean_returnvalue(
-            \format_tiles\external\external::set_session_width_returns(), $result
+            \format_tiles\external\external::set_session_width_returns(),
+            $result
         );
         // Check for 0 warnings.
         $this->assertTrue($result['status']);
@@ -190,7 +209,8 @@ final class format_tiles_externallib_test extends \externallib_advanced_testcase
 
         $result = \format_tiles\external\external::set_session_width($course->id, 1366);
         $result = \core_external\external_api::clean_returnvalue(
-            \format_tiles\external\external::set_session_width_returns(), $result
+            \format_tiles\external\external::set_session_width_returns(),
+            $result
         );
     }
 }

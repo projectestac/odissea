@@ -125,7 +125,7 @@ function format_tiles_upgrade_hide_extra_sections($courseid, $numsections) {
         // Hide other orphaned sections.
         // This is different from what set_section_visible() does but we want to preserve actual
         // module visibility in this case.
-        list($sql, $params) = $DB->get_in_or_equal($tohide);
+        [$sql, $params] = $DB->get_in_or_equal($tohide);
         $DB->execute("UPDATE {course_sections} SET visible = 0 WHERE id " . $sql, $params);
     }
 }

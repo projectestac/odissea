@@ -26,6 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['buffersize'] = 'Mida de la memòria intermèdia d\'escriptura';
+$string['jsonformat'] = 'format JSON';
 $string['pluginname'] = 'Registre estàndard';
 $string['pluginname_desc'] = 'Un connector de registre que emmagatzema entrades de registre en una taula de la base de dades de Moodle.';
+$string['privacy:metadata:log:eventname'] = 'Nom de l\'esdeveniment';
+$string['privacy:metadata:log:origin'] = 'Origen de l\'esdeveniment';
+$string['privacy:metadata:log:other'] = 'Informació addicional sobre l\'esdeveniment';
 $string['taskcleanup'] = 'Neteja de la taula de registre';

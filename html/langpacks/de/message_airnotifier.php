@@ -33,7 +33,7 @@ $string['airnotifiermobileappname'] = 'Name der mobilen App';
 $string['airnotifierport'] = 'Airnotifier-Port';
 $string['airnotifierurl'] = 'Airnotifier-Server';
 $string['checkconfiguration'] = 'Konfiguration für die Push-Mitteilungen prüfen';
-$string['configairnotifieraccesskey'] = 'Zugriffsschlüssel für die Verbindung zum Airnotifier-Server. Sie erhalten einen Zugriffsschlüssel, wenn Sie unten auf den Link "Zugriffsschlüssel anfordern" klicken (nur für registrierte Websites) oder indem Sie ein Konto im <a href="https://apps.moodle.com">Moodle Apps Portal</a> erstellen.';
+$string['configairnotifieraccesskey'] = 'Zugriffsschlüssel für die Verbindung zum Airnotifier-Server. Sie erhalten einen Zugriffsschlüssel, wenn Sie unten auf den Link "Zugriffsschlüssel abrufen" klicken (nur für registrierte Websites) oder indem Sie ein Konto im <a href="https://apps.moodle.com">Moodle Apps Portal</a> erstellen.';
 $string['configairnotifierappname'] = 'Die mobile App identifiziert sich mit diesem Name beim Airnotifier-Server.';
 $string['configairnotifiermobileappname'] = 'Die mobile App hat eine eindeutige ID, z.B. com.moodle.moodlemobile';
 $string['configairnotifierport'] = 'Port für die Verbindung zum Airnotifier-Server';

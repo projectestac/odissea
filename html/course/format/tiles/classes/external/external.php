@@ -46,7 +46,6 @@ use format_tiles\local\tile_photo;
  * @since      Moodle 4.0
  */
 class external extends external_api {
-
     /**
      * Teacher is changing the icon/photo for a course section or whole course using AJAX
      * @param Integer $courseid the id of this course
@@ -66,11 +65,17 @@ class external extends external_api {
      * @throws stored_file_creation_exception
      */
     public static function set_image(
-        $courseid, $sectionid, $filename, $imagetype = 'tileicon', $sourcecontextid = 0, $sourceitemid = 0
+        $courseid,
+        $sectionid,
+        $filename,
+        $imagetype = 'tileicon',
+        $sourcecontextid = 0,
+        $sourceitemid = 0
     ) {
         global $DB, $OUTPUT;
 
-        $data = self::validate_parameters(self::set_image_parameters(),
+        $data = self::validate_parameters(
+            self::set_image_parameters(),
             [
                 'courseid' => $courseid,
                 'sectionid' => $sectionid,
@@ -82,8 +87,13 @@ class external extends external_api {
         );
 
         // Section id of zero means we are changing the course icon.  Otherwise check sec id is valid.
-        if ($data['sectionid'] && $DB->get_record('course_sections',
-                ['course' => $data['courseid'], 'id' => $data['sectionid']]) === false) {
+        if (
+            $data['sectionid']
+            && $DB->get_record(
+                'course_sections',
+                ['course' => $data['courseid'], 'id' => $data['sectionid']]
+            ) === false
+        ) {
             throw new invalid_parameter_exception('Invalid course and section id combination');
         }
 
@@ -153,7 +163,7 @@ class external extends external_api {
         );
         if (!$sourcefile) {
             throw new invalid_parameter_exception(
-                'Source file not found: ' . $data['sourcecontextid'] .'|' . $data['sourceitemid']
+                'Source file not found: ' . $data['sourcecontextid'] . '|' . $data['sourceitemid']
             );
         }
         $newfile = $tilephoto->set_file_from_stored_file($sourcefile, $data['image']);
@@ -192,7 +202,9 @@ class external extends external_api {
 
             // If there is an icon attached to this element, clear it (as in this function we are setting a photo).
             \format_tiles\local\format_option::unset(
-                $data['courseid'], \format_tiles\local\format_option::OPTION_SECTION_ICON, $sectionid
+                $data['courseid'],
+                \format_tiles\local\format_option::OPTION_SECTION_ICON,
+                $sectionid
             );
 
             return ['status' => true, 'imageurl' => ''];
@@ -212,7 +224,7 @@ class external extends external_api {
             throw new invalid_parameter_exception("Invalid context level");
         }
 
-        if ($data['sourcecontextid'] &&!$issettingsampleimage) {
+        if ($data['sourcecontextid'] && !$issettingsampleimage) {
             // Arguably we don't need to do this as the only files the user will see are those they posted themselves.
             // This is thanks to the database query which generates the files list. So they could see them once.
             require_capability('moodle/course:viewhiddenactivities', $sourcecontext);
@@ -228,7 +240,7 @@ class external extends external_api {
         if (!$sourcefile) {
             throw new invalid_parameter_exception(
                 'Source file not found: sourcecontextid: ' . $data['sourcecontextid']
-                .' | sourceitemid' . $data['sourceitemid']
+                . ' | sourceitemid' . $data['sourceitemid']
             );
         }
         $tilephoto = new tile_photo($context, $data['sectionid']);
@@ -236,7 +248,9 @@ class external extends external_api {
         if ($file) {
             // If there is an icon attached to this element, clear it (as here we are setting a photo).
             \format_tiles\local\format_option::unset(
-                $data['courseid'], \format_tiles\local\format_option::OPTION_SECTION_ICON, $sectionid
+                $data['courseid'],
+                \format_tiles\local\format_option::OPTION_SECTION_ICON,
+                $sectionid
             );
             return ['status' => true, 'imageurl' => $tilephoto->get_image_url()];
         } else {
@@ -258,7 +272,7 @@ class external extends external_api {
         // If the tile icon is a number icon, it's not a real image so we don't need to validate.
         $tilenumber = \format_tiles\local\util::get_tile_number_from_icon_name($data['image']);
         if (!$tilenumber) {
-            $availableicons = (new \format_tiles\local\icon_set)->available_tile_icons($data['courseid']);
+            $availableicons = (new \format_tiles\local\icon_set())->available_tile_icons($data['courseid']);
             if (!isset($availableicons[$data['image']])) {
                 throw new invalid_parameter_exception('Icon is invalid');
             }
@@ -269,7 +283,8 @@ class external extends external_api {
 
         // We are dealing with a tile icon for one particular section, so check if user has picked the course default.
         $defaulticonthiscourse = $DB->get_field(
-            'course_format_options', 'value',
+            'course_format_options',
+            'value',
             ['courseid' => $data['courseid'], 'format' => 'tiles', 'sectionid' => 0, 'name' => 'defaulttileicon']
         );
         if ($data['image'] == $defaulticonthiscourse) {
@@ -341,10 +356,16 @@ class external extends external_api {
                 'image' => new external_value(PARAM_RAW, 'File name for the image picked'),
                 'imagetype' => new external_value(PARAM_RAW, 'Image type for image picked (tileicon, tilephoto, draftfile)'),
                 'sourcecontextid' => new external_value(
-                    PARAM_INT, 'File table context id for the photo file picked (0 if unused)', VALUE_DEFAULT, 0
+                    PARAM_INT,
+                    'File table context id for the photo file picked (0 if unused)',
+                    VALUE_DEFAULT,
+                    0
                 ),
                 'sourceitemid' => new external_value(
-                    PARAM_INT, 'File table item id for the photo file picked (0 if unused)', VALUE_DEFAULT, 0
+                    PARAM_INT,
+                    'File table item id for the photo file picked (0 if unused)',
+                    VALUE_DEFAULT,
+                    0
                 ),
             ]
         );
@@ -461,7 +482,7 @@ class external extends external_api {
         $data = [
             'status' => true,
             'warnings' => [],
-            'icons' => json_encode((new \format_tiles\local\icon_set)->available_tile_icons($params['courseid'])),
+            'icons' => json_encode((new \format_tiles\local\icon_set())->available_tile_icons($params['courseid'])),
             'photos' => '',
         ];
         if (get_config('format_tiles', 'allowphototiles')) {
@@ -712,10 +733,15 @@ class external extends external_api {
                             ),
                             'percent' => new external_value(PARAM_INT, 'Percent complete', VALUE_OPTIONAL, 0),
                             'percentcircumf' => new external_value(
-                                PARAM_FLOAT, 'Circumference of radial indicator', VALUE_OPTIONAL, 0
+                                PARAM_FLOAT,
+                                'Circumference of radial indicator',
+                                VALUE_OPTIONAL,
+                                0
                             ),
                             'percentoffset' => new external_value(
-                                PARAM_INT, 'Percent offset for radial indicator'. VALUE_OPTIONAL, 0
+                                PARAM_INT,
+                                'Percent offset for radial indicator' . VALUE_OPTIONAL,
+                                0
                             ),
                             'iscomplete' => new external_value(PARAM_BOOL, 'Is the section complete', VALUE_OPTIONAL, false),
                             'isavailable' => new external_value(PARAM_BOOL, 'Is the section available (not restricted)'),

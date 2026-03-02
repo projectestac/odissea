@@ -295,7 +295,7 @@ $string['gradedisplay'] = 'Kalifikazioa erakutsi';
 $string['gradedisplaytype'] = 'Kalifikazioa erakusteko modua';
 $string['gradedisplaytype_help'] = 'Ezarpen honek adierazten du nola erakusten diren kalifikazioak kalifikazio-liburuan eta erabiltzaile-txostenetan.
 
-* Benetakoa - Oraingo kalifikazio balore-eskalak
+* Benetakoa - Oraingo kalifikazio balio-eskalak
 * Ehunekoa - Gehieneko eta gutxieneko kalifikazioekiko
 * Letrak - Letrak edo hitzak erabiltzen dira kalifikazio-tarteak adierazteko, kalifikazio-liburuko \'Letrak\' atalean azaldutakoaren arabera';
 $string['gradedon'] = 'Kalifikatuta: {$a}';

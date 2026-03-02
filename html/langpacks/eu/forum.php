@@ -65,6 +65,7 @@ $string['blockperiod'] = 'Blokeoa eragiteko gutxieneko denbora-tartea';
 $string['blockperiod_help'] = 'Ikasleei blokeatu egin ahal zaie denbora-tarte baterako ezarritako mezu-kopurua baino gehiago bidaltzeko aukera. mod/forum:postwithoutthrottling gaitasuna duten erabiltzaileek ez dute mezu-mugarik izango.';
 $string['blockperioddisabled'] = 'Ez blokeatu';
 $string['blogforum'] = 'Blog-formatuan azaltzen den foro estandarra';
+$string['browsediscussions'] = 'Arakatu eztabaidak';
 $string['bynameondate'] = '{$a->name} - {$a->date}';
 $string['cachedef_forum_count_discussions'] = 'Foroko eztabaida kopurua';
 $string['cachedef_forum_is_tracked'] = 'Erabiltzailearentzako foroetako jarraipenaren egoera';

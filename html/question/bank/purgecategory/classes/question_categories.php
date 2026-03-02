@@ -15,29 +15,23 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Tool for deleting question category with question and subcategories.
+ * Tool for quick renaming of many question categories.
  *
  * @package    qbank_purgecategory
- * @copyright  2016 Vadim Dvorovenko <Vadimon@mail.ru>
+ * @copyright  2025 Vadim Dvorovenko <Vadimon@mail.ru>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 namespace qbank_purgecategory;
 
-use qbank_managecategories\question_category_list as base_question_category_list;
+use qbank_managecategories\question_categories as base_question_categories;
 
 /**
- * Class representing custom category list
+ * Builds a tree for categories for rendering categories page.
  *
  * @package    qbank_purgecategory
- * @copyright  2016 Vadim Dvorovenko <Vadimon@mail.ru>
+ * @copyright  2025 Vadim Dvorovenko <Vadimon@mail.ru>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class question_category_list extends base_question_category_list {
-
-    /**
-     * @var string
-     */
-    public $listitemclassname = question_category_list_item::class;
-
+class question_categories extends base_question_categories {
 }

@@ -30,7 +30,6 @@ namespace format_tiles\local;
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class modal_helper {
-
     /**
      * Which course modules is the site administrator allowing to be displayed in a modal?
      * @return array the permitted modules including resource types e.g. page, pdf, HTML
@@ -38,8 +37,10 @@ class modal_helper {
      */
     public static function allowed_modal_modules(): array {
         $devicetype = \core_useragent::get_device_type();
-        if ($devicetype != \core_useragent::DEVICETYPE_TABLET && $devicetype != \core_useragent::DEVICETYPE_MOBILE
-            && !(\core_useragent::is_ie())) {
+        if (
+            $devicetype != \core_useragent::DEVICETYPE_TABLET && $devicetype != \core_useragent::DEVICETYPE_MOBILE
+            && !(\core_useragent::is_ie())
+        ) {
             // JS navigation and modals in Internet Explorer are not supported by this plugin so we disable modals here.
             $resources = get_config('format_tiles', 'modalresources');
             $modules = get_config('format_tiles', 'modalmodules');
@@ -81,7 +82,7 @@ class modal_helper {
         $excludeddisplaytypes = [
             RESOURCELIB_DISPLAY_POPUP, RESOURCELIB_DISPLAY_NEW, RESOURCELIB_DISPLAY_DOWNLOAD,
         ];
-        list($notinsql, $params) =
+        [$notinsql, $params] =
             $DB->get_in_or_equal($excludeddisplaytypes, SQL_PARAMS_NAMED, 'param', false);
         $params['courseid'] = $courseid;
         $params['contextmodule'] = CONTEXT_MODULE;
@@ -100,7 +101,7 @@ class modal_helper {
                     WHERE cm.course = :courseid AND cm.deletioninprogress = 0 AND r.display $notinsql";
 
         // Get the details of the highest sortorder file on each CM of the relevant mime type, to check against main files.
-        list($insql, $insqlparams) = $DB->get_in_or_equal($mimetypes, SQL_PARAMS_NAMED);
+        [$insql, $insqlparams] = $DB->get_in_or_equal($mimetypes, SQL_PARAMS_NAMED);
         $params = array_merge($params, $insqlparams);
 
         // Get the details of the highest sortorder ("main") file on each CM, as that's the only one that could be relevant.
@@ -109,7 +110,8 @@ class modal_helper {
             return $result;
         }
         $lastmimetypefilecms = $DB->get_recordset_sql(
-            "SELECT cm.id AS cmid, f.mimetype, $basesql AND f.mimetype $insql GROUP BY cm.id, f.mimetype", $params
+            "SELECT cm.id AS cmid, f.mimetype, $basesql AND f.mimetype $insql GROUP BY cm.id, f.mimetype",
+            $params
         );
         // Now check if the highest sortorder ("main") file on each CM is of the right MIME type.
         if ($lastmimetypefilecms->valid()) {
@@ -125,7 +127,7 @@ class modal_helper {
         }
         $lastmimetypefilecms->close();
         foreach ([$result->pdf, $result->html] as $res) {
-            $res = array_map(function($cmid) {
+            $res = array_map(function ($cmid) {
                 return (int)$cmid;
             }, $res);
             sort($res);

@@ -29,7 +29,7 @@ require_once('../../../config.php');
 $cmid = required_param('cmid', PARAM_INT);
 $forcedownload = optional_param('forcedownload', false, PARAM_BOOL);
 
-list($course, $cm) = get_course_and_cm_from_cmid($cmid);
+[$course, $cm] = get_course_and_cm_from_cmid($cmid);
 // This will also check that cm is user visible.
 require_course_login($course, true, $cm);
 
@@ -53,8 +53,15 @@ if ($cm->modname === 'resource') {
     $fs = get_file_storage();
     // We show the file with the highest sort order, like on mod/resource/view.php.
     $files = $fs->get_area_files(
-        $context->id, 'mod_resource', 'content', 0,
-        'sortorder DESC, id ASC', false, 0, 0, 10
+        $context->id,
+        'mod_resource',
+        'content',
+        0,
+        'sortorder DESC, id ASC',
+        false,
+        0,
+        0,
+        10
     );
     if (!empty($files)) {
         $allowedmimetypes = ['application/pdf', 'text/html'];

@@ -82,7 +82,7 @@ $string['launchviasiteinbrowser'] = 'Llança a través del lloc al navegador del
 $string['loginintheapp'] = 'A través de l\'app';
 $string['logininthebrowser'] = 'A través d\'una finestra del navegador (per als connectors SSO)';
 $string['loginintheembeddedbrowser'] = 'A través d\'un navegador incrustat (per als connectors SSO)';
-$string['logoutconfirmation'] = 'Esteu segur que voleu tancar la sessió de l\'aplicació mòbil als vostres dispositius mòbils? En tancar la sessió, haureu de tornar a introduir el vostre nom d\'usuari i contrasenya a l\'aplicació mòbil en tots els dispositius on tingueu l\'aplicació instal·lada.';
+$string['logoutconfirmation'] = 'Confirmeu que voleu tancar la sessió de l\'aplicació mòbil als vostres dispositius mòbils? En tancar la sessió, haureu de tornar a introduir el vostre nom d\'usuari i la vostra contrasenya a l\'aplicació mòbil a tots els dispositius on tingueu l\'aplicació instal·lada.';
 $string['mainmenu'] = 'Menú principal';
 $string['managefiletypes'] = 'Gestiona els tipus de fitxers';
 $string['minimumversion'] = 'Si s\'especifica una versió d\'aplicació (3.8.0 o superior), es demanarà a tots els usuaris que facin servir una versió anterior de l\'aplicació que actualitzin la seva aplicació abans de poder accedir al lloc.';
@@ -112,6 +112,7 @@ $string['qrcodetype_desc'] = 'Es pot proporcionar un codi QR per a què els usua
 $string['qrcodetypelogin'] = 'Codi QR amb inici de sessió automàtic';
 $string['qrcodetypeurl'] = 'Codi QR amb l\'URL del lloc';
 $string['qrsiteadminsnotallowed'] = 'Per motius de seguretat, no es permet iniciar la sessió mitjançant codi QR als administradors del lloc, o si ja heu iniciat la sessió amb un altre usuari.';
+$string['readingthisemailgettheapp'] = 'Esteu llegint això en un missatge de correu electrònic? <a href="{$a}">Descarregueu l\'aplicació mòbil i rebeu notificacions al vostre dispositiu mòbil</a>.';
 $string['remoteaddons'] = 'Complements remots';
 $string['scanqrcode'] = 'Escaneja el codi QR';
 $string['smartappbanners'] = 'Bàners de l\'app';

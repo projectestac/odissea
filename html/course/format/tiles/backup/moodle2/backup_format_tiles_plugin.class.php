@@ -34,7 +34,6 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class backup_format_tiles_plugin extends backup_format_plugin {
-
     /**
      * Carries out some checks at start of course backup.
      *

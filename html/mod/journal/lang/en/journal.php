@@ -28,6 +28,7 @@
 $string['accessdenied'] = 'Access denied';
 $string['alwaysopen'] = 'Always open';
 $string['blankentry'] = 'Blank entry';
+$string['changessaved'] = 'Changes saved';
 $string['completiondetail:completion_create_entry'] = 'Create a journal entry';
 $string['couldnotupdatejournal'] = 'Could not update your journal';
 $string['countnotinsertjournalentry'] = 'Could not insert a new journal entry';
@@ -52,10 +53,13 @@ $string['eventjournalcreated'] = 'Journal created';
 $string['eventjournaldeleted'] = 'Journal deleted';
 $string['eventjournalviewed'] = 'Journal viewed';
 $string['failedupdate'] = 'Failed to update the journal feedback for {$a}';
+$string['feedback'] = 'Feedback';
 $string['feedbackupdated'] = 'Feedback updated for {$a} entries';
 $string['feedbackupdatedforuser'] = 'Feedback updated for {$a}';
 $string['firstnameasc'] = 'Firstname Ascending';
 $string['firstnamedesc'] = 'Firstname Descending';
+$string['grade'] = 'Grade';
+$string['gradedby'] = 'Graded by';
 $string['gradeingradebook'] = 'Current grade in gradebook';
 $string['incorrectcmid'] = 'Course module ID is incorrect';
 $string['incorrectcourseid'] = 'Course ID is incorrect';
@@ -88,6 +92,7 @@ $string['journalmailhtml'] = '<p>Hi {$a->student},</p>
 <p>You can view the feedback <a href="{$a->url}">here</a>.</p>';
 $string['journalname'] = 'Journal name';
 $string['journalquestion'] = 'Journal question';
+$string['lastedited'] = 'Last edited';
 $string['lastnameasc'] = 'Lastname Ascending';
 $string['lastnamedesc'] = 'Lastname Descending';
 $string['mailbody'] = '{$a->username} has updated the journal entry for \'{$a->journalname}\'
@@ -100,9 +105,21 @@ $string['mailsubject'] = 'Journal feedback';
 $string['messageprovider:journal_feedback'] = 'Journal feedback from teacher';
 $string['messageprovider:submission'] = 'Journal entry created or modified';
 $string['modulename'] = 'Journal';
-$string['modulename_help'] = 'The journal activity enables teachers to obtain students feedback
- about a specific topic';
+$string['modulename_help'] = '###### Key features
+- Collect online text entries from students for review and grading
+- Entries are private between student and teacher (not visible to other students)
+- Supports feedback in text form and grading by the teacher
+- Includes a "Days available" setting to control submission period
+- Displays all entries for a class or group on one page for efficient review
+
+###### Ways to use it
+- Assign short reflective writing tasks or learning journals
+- Use for ongoing feedback and iterative improvement of student work
+- Encourage students to summarize lessons or readings in their own words
+- Track student progress on simple text-based assignments
+- Facilitate private communication between teacher and student for formative assessment';
 $string['modulename_link'] = 'mod/journal/view';
+$string['modulename_summary'] = 'Collects private online text entries from students for feedback and grading, with a set availability period and no file uploads.';
 $string['modulenameplural'] = 'Journals';
 $string['needsregrade'] = 'Entry has changed since last feedback was saved.';
 $string['newjournalentries'] = 'New journal entries';
@@ -110,6 +127,7 @@ $string['nodatachanged'] = 'No data was changed.';
 $string['nodeadline'] = 'Always open';
 $string['noentriesmanagers'] = 'There are no teachers';
 $string['noentry'] = 'No entry';
+$string['nograde'] = 'No grade';
 $string['noratinggiven'] = 'No rating given';
 $string['notifystudents'] = 'Notify students';
 $string['notifystudents_default'] = 'Notify students by default';
@@ -136,11 +154,13 @@ $string['rate'] = 'Rate';
 $string['removeentries'] = 'Remove all entries';
 $string['removemessages'] = 'Remove all Journal entries';
 $string['saveallfeedback'] = 'Save all my feedback';
+$string['savechanges'] = 'Save changes';
 $string['savefeedback'] = 'Save feedback';
 $string['search:activity'] = 'Journal - activity information';
 $string['search:entry'] = 'Journal - entries';
 $string['showoverview'] = 'Show journals overview on my moodle';
 $string['showrecentactivity'] = 'Show recent activity';
+$string['started'] = 'You have started this journal';
 $string['startoredit'] = 'Start or edit my journal entry';
 $string['userswhocompletedthejournal'] = 'Users who completed the journal';
 $string['userswhodidnotcompletedthejournal'] = 'Users who have not completed the journal';

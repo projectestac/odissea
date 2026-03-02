@@ -28,6 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['bulkcancel'] = 'Avsluta massredigering';
 $string['bulkedit'] = 'Massredigera';
 $string['bulkselection'] = '{$a} valda';
+$string['cmdelete_info'] = 'Detta kommer att radera {$a->name} och all användardata som den innehåller.';
+$string['cmdelete_title'] = 'Radera aktivitet?';
 $string['courseindex'] = 'Kursindex';
 $string['nobulkaction'] = 'Inga massredigeringsåtgärder tillgängliga';
 $string['preference:coursesectionspreferences'] = 'Användarinställningar för avsnitt i kursen <strong>\'{$a}\'</strong>';

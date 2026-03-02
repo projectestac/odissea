@@ -4,6 +4,32 @@ More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/agora_moodle2
 
 
+Changes 26.03.03
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 4.5.10+
+- Updated langpacks
+- Hidden some notification messages to regular admins
+- Choicegroup: Upgraded module
+- Coderunner: Upgraded question type
+- Course Format Simple: Fixed error when removing modules with custom image
+- Coursequotas: Added install script to add essencial var to config_plugins
+- Coursequotas: Fixed modified time not being shown in modal
+- Journal: Upgraded module
+- Purgecategory: Upgraded question bank plugin
+- Quota check: Added lang string diskquotaerror_no_html
+- Tiny C4L: Upgraded editor plugin
+- Wiris: Upgraded all components
+
+
+Changes 26.01.27
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 4.5.8+
+- Updated langpacks
+- Boost Union: Upgraded theme
+- Simple: Upgraded course format
+- Tiles: Upgraded course format
+
+
 Changes 26.01.13
 ---------------------------------------------------------------------------------------
 - Upgraded Moodle to version 4.5.8+

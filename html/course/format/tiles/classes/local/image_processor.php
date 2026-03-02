@@ -36,7 +36,6 @@ require_once($CFG->libdir . '/gdlib.php');
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class image_processor {
-
     /**
      * When the user uploads a new file, it is saved as tempfile which may be large.
      * This takes the temp file and adds an adjusted version to the tile_photo object.
@@ -49,8 +48,14 @@ class image_processor {
      * @return \stored_file|bool
      * @throws \required_capability_exception
      */
-    public static function adjust_and_copy_file(\stored_file $tempfile, string $newfilename,
-                                                \context $context, int $itemid, int $width, int $height) {
+    public static function adjust_and_copy_file(
+        \stored_file $tempfile,
+        string $newfilename,
+        \context $context,
+        int $itemid,
+        int $width,
+        int $height
+    ) {
         require_capability('moodle/course:update', $context);
         $newfilename = str_replace(' ', '_', $newfilename);
         $storedfilerecord = self::stored_file_record($context->id, $itemid, $newfilename);
@@ -162,11 +167,21 @@ class image_processor {
         $dstx = floor(($requestedwidth - $targetwidth) / 2);
         $dsty = floor(($requestedheight - $targetheight) / 2);
 
-        imagecopybicubic($finalimage, $original, $dstx, $dsty, 0, 0, $targetwidth, $targetheight, $originalwidth,
-            $originalheight);
+        imagecopybicubic(
+            $finalimage,
+            $original,
+            $dstx,
+            $dsty,
+            0,
+            0,
+            $targetwidth,
+            $targetheight,
+            $originalwidth,
+            $originalheight
+        );
 
         ob_start();
-        switch($imageparams['function']) {
+        switch ($imageparams['function']) {
             case 'imagejpeg':
                 if (!imagejpeg($finalimage, null, $imageparams['quality'])) {
                     ob_end_clean();
@@ -261,7 +276,7 @@ class image_processor {
             default:
                 break;
         }
-        debugging('Mime type \''.$mime.'\' is not supported as an image format. PNG, JPEG and GIF are supported. '
+        debugging('Mime type \'' . $mime . '\' is not supported as an image format. PNG, JPEG and GIF are supported. '
             . 'The GD PHP extension should be installed.');
         return false;
     }

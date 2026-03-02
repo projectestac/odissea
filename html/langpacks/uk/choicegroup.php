@@ -115,7 +115,6 @@ $string['notopenyet'] = 'На жаль, ця діяльність недосту
 $string['notyetresultsviewable'] = 'Результати будуть видимі після того, як ця діяльність буде закрита.';
 $string['numberofuser'] = 'Кількість користувачів';
 $string['option'] = 'Група';
-$string['page-mod-choice-x'] = 'Будь-яка сторінка модуля вибору групи';
 $string['pleaseselectonegroup'] = 'Виберіть принаймні одну групу на вибір.';
 $string['pleasesetgroups'] = 'Будь ласка, створіть хоча б одну групу в цьому курсі.';
 $string['pleasesetonegroupor'] = 'Будь ласка, створіть хоча б одну групу в цьому курсі.

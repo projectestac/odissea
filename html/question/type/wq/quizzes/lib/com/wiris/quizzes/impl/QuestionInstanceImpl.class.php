@@ -1270,20 +1270,30 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 						$variables = true;
 						$variablesResult = $result;
 						$resultVars = $variablesResult->variables;
+						$varsToUpdate = new _hx_array(array());
 						{
 							$_g3 = 0; $_g2 = $resultVars->length;
 							while($_g3 < $_g2) {
 								$j1 = $_g3++;
 								$variable = $resultVars[$j1];
 								if($variable->type === com_wiris_quizzes_impl_MathContent::$TYPE_IMAGE) {
-									$resultVars[$j1] = $this->storeImageVariable($variable);
+									$variable = $this->storeImageVariable($variable);
 								}
-								unset($variable,$j1);
+								$isRedundant = false;
+								if($this->variables !== null && $this->variables->exists($variable->type)) {
+									$invalidVariableContent = com_wiris_quizzes_impl_QuestionInstanceImpl_3($this, $_g, $_g1, $_g2, $_g3, $checks, $i, $i1, $isRedundant, $j, $j1, $questionResponseImpl, $response, $result, $resultVars, $s, $tag, $variable, $variables, $variablesResult, $varsToUpdate);
+									$isRedundant = $this->variables->get($variable->type)->exists($variable->name) && $invalidVariableContent === $variable->content;
+									unset($invalidVariableContent);
+								}
+								if(!$isRedundant) {
+									$varsToUpdate->push($variable);
+								}
+								unset($variable,$j1,$isRedundant);
 							}
 							unset($_g3,$_g2);
 						}
-						$this->variables = $this->variablesToHash($variablesResult->variables, $this->variables);
-						unset($variablesResult,$resultVars);
+						$this->variables = $this->variablesToHash($varsToUpdate, $this->variables);
+						unset($varsToUpdate,$variablesResult,$resultVars);
 					} else {
 						if($tag === com_wiris_quizzes_impl_ResultGetCheckAssertions::$tagName) {
 							if(!$checks) {
@@ -1316,6 +1326,9 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 		$h = new com_wiris_quizzes_impl_HTMLTools();
 		$h->setPlotterLoadingSrc(com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getResourceUrl("plotter_loading.png"));
 		$h->setProxyUrl(com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL));
+		if(com_wiris_quizzes_impl_MathContent::getMathType($text) === com_wiris_quizzes_impl_MathContent::$TYPE_MATHML) {
+			$text = $h->mathMLToText($text);
+		}
 		if($this->variables === null || $this->variables->get(com_wiris_quizzes_impl_MathContent::$TYPE_TEXT_EVAL) === null) {
 			return $this->expandVariablesText($text);
 		} else {
@@ -1581,5 +1594,12 @@ function com_wiris_quizzes_impl_QuestionInstanceImpl_2(&$»this, &$content, &$d,
 		$s1 = new haxe_Utf8(null);
 		$s1->addChar(haxe_Utf8::charCodeAt($s, $i));
 		return $s1->toString();
+	}
+}
+function com_wiris_quizzes_impl_QuestionInstanceImpl_3(&$»this, &$_g, &$_g1, &$_g2, &$_g3, &$checks, &$i, &$i1, &$isRedundant, &$j, &$j1, &$questionResponseImpl, &$response, &$result, &$resultVars, &$s, &$tag, &$variable, &$variables, &$variablesResult, &$varsToUpdate) {
+	if($variable->type === com_wiris_quizzes_impl_MathContent::$TYPE_MATHML || $variable->type === com_wiris_quizzes_impl_MathContent::$TYPE_MATHML_EVAL) {
+		return "<math><mrow><mi>" . $variable->name . "</mi></mrow></math>";
+	} else {
+		return $variable->name;
 	}
 }

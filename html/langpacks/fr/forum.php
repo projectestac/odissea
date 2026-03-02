@@ -65,6 +65,7 @@ $string['blockperiod'] = 'Durée de blocage';
 $string['blockperiod_help'] = 'Il est possible d’empêcher des participants de poster des messages après qu’ils en ont écrit un certain nombre durant une période donnée. Les utilisateurs ayant la capacité mod/forum:postwithoutthrottling ne sont pas touchés par les limites de message.';
 $string['blockperioddisabled'] = 'Ne pas bloquer';
 $string['blogforum'] = 'Forum standard affiché comme un blog';
+$string['browsediscussions'] = 'Parcourir les discussions';
 $string['bynameondate'] = 'par {$a->name}, {$a->date}';
 $string['cachedef_forum_count_discussions'] = 'Nombre de discussions de forum';
 $string['cachedef_forum_is_tracked'] = 'Statut de suivi des messages de forum pour l’utilisateur';

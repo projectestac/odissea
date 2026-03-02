@@ -94,17 +94,54 @@
                         </button>
                     {{/buttons}}
                 </div>
-                {{#preview}}
-                    <div class="c4l-code-preview">
-                        <div class="c4l-text-preview">{{#str}} preview, tiny_c4l {{/str}}</div>
-                        <div data-id="code-preview-default">
-                            <div class="c4l-preview-default">{{#str}} previewdefault, tiny_c4l {{/str}}</div>
-                        </div>
-                        {{#buttons}}
-                            <div data-id="code-preview-{{id}}" class="c4l-component-code {{#css}}c4l-component-custom-code{{/css}} c4l-hidden" role="presentation" style="{{css}}">{{{htmlcode}}}</div>
-                        {{/buttons}}
+                {{#showAside}}
+                <div class="c4l-modal-aside {{^preview}}c4l-docs-only{{/preview}}">
+                    <div class="c4l-aside-header">
+                        {{#docs}}
+                        <button class="c4l-tab-docs {{^preview}}c4l-tab-active{{/preview}}" type="button" {{^bothEnabled}}disabled{{/bothEnabled}}>
+                            {{#str}} docs, tiny_c4l {{/str}}
+                        </button>
+                        {{/docs}}
+                        {{#preview}}
+                        <button class="c4l-tab-preview {{#preview}}c4l-tab-active{{/preview}}" type="button" {{^bothEnabled}}disabled{{/bothEnabled}}>
+                            {{#str}} preview, tiny_c4l {{/str}}
+                        </button>
+                        {{/preview}}
                     </div>
-                {{/preview}}
+                    <div class="c4l-aside-slider">
+                        <div class="c4l-code-preview">
+                            <div data-id="code-preview-default">
+                                <div class="c4l-preview-default">{{#str}} previewdefault, tiny_c4l {{/str}}</div>
+                            </div>
+                            {{#buttons}}
+                            <div data-id="code-preview-{{id}}" class="c4l-component-code {{#css}}c4l-component-custom-code{{/css}} c4l-hidden" role="presentation" style="{{css}}">{{{htmlcode}}}</div>
+                            {{/buttons}}
+                        </div>
+                        <div class="c4l-code-docs">
+                            <div data-id="code-docs-default">
+                                <div class="c4l-docs-default">{{#str}} previewdocsdefault, tiny_c4l {{/str}}</div>
+                            </div>
+                            {{#buttons}}
+                            <div data-id="code-docs-{{id}}" class="c4l-docs-content c4l-hidden">
+                                {{#docsData}}
+                                <p class="c4l-docs-description">{{{description}}}</p>
+                                {{#hasUseCases}}
+                                <div class="c4l-docs-section">
+                                    <h5 class="c4l-docs-heading">{{#str}} docs_usecases, tiny_c4l {{/str}}</h5>
+                                    <ul class="c4l-docs-list">
+                                        {{#useCases}}
+                                        <li>{{{text}}}</li>
+                                        {{/useCases}}
+                                    </ul>
+                                </div>
+                                {{/hasUseCases}}
+                                {{/docsData}}
+                            </div>
+                            {{/buttons}}
+                        </div>
+                    </div>
+                </div>
+                {{/showAside}}
             </div>
         </div>
     {{/body}}

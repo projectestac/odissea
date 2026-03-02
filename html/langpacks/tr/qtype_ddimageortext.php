@@ -26,23 +26,23 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmoredropzones'] = '{no} daha fazla bırakma bölgesi için boşluklar';
-$string['addmoreimages'] = '{no} daha fazla sürüklenebilir öğeler için boşluklar';
+$string['addmoreimages'] = '{no} daha fazla sürüklenebilir ögeler için boşluklar';
 $string['answer'] = 'Cevap';
 $string['bgimage'] = 'Arka plan resmi';
 $string['blank'] = 'boş';
 $string['correctansweris'] = 'Doğru cevap: {$a}';
 $string['deletedchoice'] = '[Silinmiş tercih]';
 $string['draggableimage'] = 'Sürüklenebilir resim';
-$string['draggableitem'] = 'Sürüklenebilir öğe';
-$string['draggableitemheader'] = 'Sürüklenebilir öğe {$a}';
-$string['draggableitems'] = 'Sürüklenebilir öğeler';
+$string['draggableitem'] = 'Sürüklenebilir öge';
+$string['draggableitemheader'] = 'Sürüklenebilir öge {$a}';
+$string['draggableitems'] = 'Sürüklenebilir ögeler';
 $string['draggableitemtype'] = 'Tür';
 $string['draggableword'] = 'Sürüklenebilir metin';
 $string['dropbackground'] = 'İşaretleyicileri üzerine sürüklemek için arka plan resmi';
 $string['dropzone'] = 'Bırakma bölgesi {$a}';
 $string['dropzoneheader'] = 'Bırakma bölgeleri';
 $string['formerror_disallowedtags'] = 'Bu sürüklenebilir metinde yalnızca "{$a}" etiketlerine izin verilir.';
-$string['formerror_dragrequired'] = 'Bu soruya en az bir sürüklenebilir öğe eklemelisiniz.';
+$string['formerror_dragrequired'] = 'Bu soruya en az bir sürüklenebilir öge eklemelisiniz.';
 $string['formerror_droprequired'] = 'Bu soru için en az bir bırakma bölgesi tanımlamalısınız.';
 $string['formerror_multipledraginstance'] = 'Bir bırakma bölgesi için {$a} resmi bir kereden fazla seçtiniz, ancak sınırsız sürükleme öğesi olarak işaretlenmiyor.';
 $string['formerror_multipledraginstance2'] = 'Bu resmi bir düşen bölge için doğru seçim olarak birden çok kez seçtiniz, ancak sınırsız sürükleme öğesi olarak işaretlenmiyor.';

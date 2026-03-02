@@ -327,14 +327,14 @@
   position: absolute;
   top: calc(100% + 4px);
 }
-.wrsUI_app .wrsUI_inputComponent.wrsUI_mathTypeComponent.wrsUI_inputComponentError {
-  border-bottom: 0px !important;
-}
 .wrsUI_app .wrsUI_inputComponent.wrsUI_mathTypeComponent.wrsUI_inputComponentError .wrsUI_aux_mathTypeComponentWrapper .wrs_editor {
   border: 2px solid #FF0000 !important;
 }
 .wrsUI_app .wrsUI_inputComponent.wrsUI_mathTypeComponent.wrsUI_inputComponentError .wrsUI_aux_mathTypeComponentHelperText {
   color: #FF0000;
+}
+.wrsUI_app .wrsUI_inputComponent.wrsUI_mathTypeComponent.wrsUI_inputComponentError {
+  border-bottom: 0px !important;
 }
 .wrsUI_app .wrsUI_inputComponent.wrsUI_mathTypeComponent.wrsUI_inputComponentError::after {
   display: none;
@@ -560,7 +560,7 @@
   background: rgba(0, 0, 0, 0.08);
 }
 .wrsUI_app .wrsUI_quizzesStudio .wrsUI_chip.wrsUI_choiceChip.wrsUI_selected {
-  color: #066068;
+  color: rgb(5.6777777778, 95.7111111111, 103.8222222222);
   background: rgba(7, 118, 128, 0.08);
 }
 .wrsUI_app .wrsUI_quizzesStudio .wrsUI_chip.wrsUI_choiceChip::after {

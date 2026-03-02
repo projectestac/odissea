@@ -31,7 +31,6 @@ namespace format_tiles\local;
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class admin_settingspage_tabs extends \admin_settingpage {
-
     /** @var array $tabs The tabs of this page */
     protected $tabs = [];
 
@@ -43,7 +42,7 @@ class admin_settingspage_tabs extends \admin_settingpage {
      */
     public function add_tab(\admin_settingpage $tab) {
         foreach ($tab->settings as $setting) {
-            $this->settings->{$setting->plugin.$setting->name} = $setting;
+            $this->settings->{$setting->plugin . $setting->name} = $setting;
         }
         $this->tabs[] = $tab;
         return true;
@@ -81,11 +80,11 @@ class admin_settingspage_tabs extends \admin_settingpage {
 
         foreach ($this->get_tabs() as $index => $tab) {
             $data = [
-                'name' => str_replace('format_tiles/' , '', $tab->name),
+                'name' => str_replace('format_tiles/', '', $tab->name),
                 'displayname' => $tab->visiblename,
                 'html' => $tab->output_html(),
             ];
-            if ($index == 0 ) {
+            if ($index == 0) {
                 $data['active'] = 1;
             }
             if ($tab->name === "format_tiles/tab-colours") {
@@ -99,4 +98,3 @@ class admin_settingspage_tabs extends \admin_settingpage {
         return $OUTPUT->render_from_template('format_tiles/admin_setting_tabs', $context);
     }
 }
-

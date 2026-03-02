@@ -11,7 +11,7 @@
 @media only screen and (min-width: 576px) {
     .c4l-modal.modal-open .modal-dialog,
     .c4l-modal-no-preview.modal-open .modal-dialog {
-        min-width: 550px;
+        min-width: 576px;
     }
 
     .c4l-select-filters {
@@ -132,7 +132,11 @@
     .c4l-allpurposecard,
     .c4lv-allpurposecard,
     .c4l-learningoutcomes,
-    .c4lv-learningoutcomes {
+    .c4lv-learningoutcomes,
+    .c4l-conceptreview,
+    .c4lv-conceptreview,
+    .c4l-furtherreading,
+    .c4lv-furtherreading {
         max-width: 75%;
     }
 
@@ -192,7 +196,7 @@
     }
 
     .c4l-modal-no-preview.modal-open .modal-dialog {
-        max-width: 550px;
+        max-width: 576px;
     }
 
     .c4l-buttons-preview {
@@ -298,14 +302,45 @@
         box-shadow: none;
     }
 
-    .c4l-code-preview {
+    .c4l-modal-aside {
         position: relative;
         display: flex;
         flex-direction: column;
-        height: 300px;
+        height: 310px;
         width: 343px;
+    }
+
+    .c4l-aside-header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .c4l-aside-slider {
+        height: 100%;
+    }
+
+    .c4l-code-preview {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
+        padding-top: 30px;
+        width: 100%;
+    }
+
+    .c4l-code-docs {
+        height: 100%;
+        padding-top: 30px;
+        width: 100%;
     }
 
     .c4l-preview-default {
@@ -324,18 +359,4 @@
         user-select: none;
     }
 
-    .c4l-text-preview {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        font-weight: 600;
-        font-size: 9.5px;
-        line-height: 11px;
-        letter-spacing: 0.06em;
-        color: #fff;
-        background-color: #535d76;
-        border-radius: 6px;
-        padding: 5px;
-        text-transform: uppercase;
-    }
 }

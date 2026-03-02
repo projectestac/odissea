@@ -36,7 +36,6 @@ use format_tiles\local\util;
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class section extends section_base {
-
     /**
      * Export this data so it can be used as the context for a mustache template.
      *
@@ -63,11 +62,12 @@ class section extends section_base {
                     ['sectionid' => $this->section->id]
                 );
             }
-
         }
         if (!$data->hasphoto) {
             $data->tileicon = \format_tiles\local\format_option::get(
-                $this->section->course, \format_tiles\local\format_option::OPTION_SECTION_ICON, $this->section->id
+                $this->section->course,
+                \format_tiles\local\format_option::OPTION_SECTION_ICON,
+                $this->section->id
             );
             if (!$data->tileicon) {
                 $formatoptions = $this->format->get_format_options();

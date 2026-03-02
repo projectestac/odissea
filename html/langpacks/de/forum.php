@@ -65,6 +65,7 @@ $string['blockperiod'] = 'Sperrdauer';
 $string['blockperiod_help'] = 'In diesem Zeitfenster dürfen maximal so viele Beiträge pro Nutzer/in ins Forum eingetragen werden, wie mit der Zahl \'Sperre\' festgelegt sind. Nutzer/innen mit der Berechtigung mod/forum:postwithoutthrottling sind von einer Sperre ausgenommen.';
 $string['blockperioddisabled'] = 'Nicht sperren';
 $string['blogforum'] = 'Standardforum in blog-ähnlicher Anzeige';
+$string['browsediscussions'] = 'Diskussionen durchsuchen';
 $string['bynameondate'] = 'von {$a->name} - {$a->date}';
 $string['cachedef_forum_count_discussions'] = 'Anzahl von Forenthemen';
 $string['cachedef_forum_is_tracked'] = 'Forumstracking-Status für den Nutzer';
@@ -299,8 +300,8 @@ $string['exportstriphtml_help'] = 'Diese Option legt fest, ob HTML-Tags wie &lt;
 $string['favourites'] = 'Markiert';
 $string['favouriteupdated'] = 'Ihre Markierungsoption wurde aktualisiert.';
 $string['firstpost'] = 'Erster Beitrag';
-$string['forcedreadtracking'] = 'Verbindliches Forumstracking erlauben';
-$string['forcedreadtracking_desc'] = 'Diese Option ermöglicht es in Foren, das Forumstracking für alle Nutzer/innen verbindlich vorzugeben. In Kursen mit vielen Foren und Beiträgen könnte sich die Ladezeit der Seite deutlich erhöhen. Wenn diese Option deaktiviert wird, wird ein vorher verbindliches Forumstracking zu einer optionalen Einstellung.';
+$string['forcedreadtracking'] = 'Verpflichtendes Forumstracking erlauben';
+$string['forcedreadtracking_desc'] = 'Diese Option ermöglicht es in Foren, das Forumstracking für alle Nutzer/innen verpflichtend vorzugeben. In Kursen mit vielen Foren und Beiträgen könnte sich die Ladezeit der Seite deutlich erhöhen. Wenn diese Option deaktiviert wird, wird ein vorher verbindliches Forumstracking zu einer optionalen Einstellung.';
 $string['forcesubscribed'] = 'Dieses Forum zwingt alle, es zu abonnieren.';
 $string['forcesubscribed_help'] = 'Das Forum ist so eingestellt, dass Sie keine Themen abbestellen können.';
 $string['forum'] = 'Forum';
@@ -730,7 +731,7 @@ Normalerweise dürfen Sie auswählen, ob Sie die Beiträge bekommen möchten. Ma
 $string['subscriptionandtracking'] = 'Abonnement und Tracking';
 $string['subscriptionauto'] = 'Automatisch';
 $string['subscriptiondisabled'] = 'Deaktiviert';
-$string['subscriptionforced'] = 'Verbindlich';
+$string['subscriptionforced'] = 'Verpflichtend';
 $string['subscriptionmode'] = 'Abonnement';
 $string['subscriptionmode_help'] = 'Alle Abonnent/innen dieses Forums bekommen die Beiträge als Mitteilungen gesendet. Es gibt unterschiedliche Modi für ein Abonnement:
 
@@ -758,13 +759,13 @@ $string['togglesettingsdrawer'] = 'Einstellungsleiste umschalten';
 $string['trackforum'] = 'Ungelesene Beiträge markieren';
 $string['tracking'] = 'Markieren?';
 $string['trackingoff'] = 'Aus';
-$string['trackingon'] = 'Verbindlich';
+$string['trackingon'] = 'Verpflichtend';
 $string['trackingoptional'] = 'Optional';
 $string['trackingtype'] = 'Forumstracking';
 $string['trackingtype_help'] = 'Mithilfe des Forumstrackings können Teilnehmer/innen sehen, welche Beiträge sie noch nicht gelesen haben.
 
 * Optional - Das Forumstracking ist ein- und ausschaltbar. Teilnehmer/innen finden dafür eine Einstellung in der Aktivitätsnavigation des Forums oder im Block Forums-Administration. Sie müssen vorher das Forumstracking in den persönlichen Einstellungen aktiviert haben.
-* Verbindlich - Wenn in der Website-Administration die Option \'Verbindliches Forumstracking erlauben\' aktiviert ist, ist eine weitere Option \'Verbindlich\' verfügbar. Hierbei ist das Forumstracking immer aktiviert, unabhängig von den persönlichen Nutzer/inneneinstellungen.';
+* Verpflichtend - Wenn in der Website-Administration die Option \'Verpflichtendes Forumstracking erlauben\' aktiviert ist, ist eine weitere Option \'Verpflichtend\' verfügbar. Hierbei ist das Forumstracking immer aktiviert, unabhängig von den persönlichen Nutzereinstellungen.';
 $string['trackreadposts_header'] = 'Forumstracking';
 $string['unlockdiscussion'] = 'Dieses Thema entsperren';
 $string['unpindiscussion'] = 'Dieses Thema abpinnen';
@@ -778,7 +779,7 @@ $string['unsubscribeall'] = 'Ich möchte alle Foren abbestellen';
 $string['unsubscribeallconfirm'] = 'Sie haben aktuell abonniert: Foren {$a->forums} und Themen {$a->discussions}. Möchten Sie wirklich alle Foren und Themen abbestellen und das automatische Abonnement deaktivieren?';
 $string['unsubscribeallconfirmdiscussions'] = 'Sie haben aktuell abonniert: Themen {$a->discussions}. Möchten Sie wirklich alle Themen abbestellen und das automatische Abonnement deaktivieren?';
 $string['unsubscribeallconfirmforums'] = 'Sie haben aktuell abonniert: Foren {$a->forums}. Möchten Sie wirklich alle Foren abbestellen und das automatische Abonnement deaktivieren?';
-$string['unsubscribealldone'] = 'Sie haben alle optionalen Abonnements abbestellt. Trotzdem werden Sie Beiträge aus Foren mit verbindlichen Abonnements erhalten. Die Forums-Benachrichtigungen können Sie in den Einstellungen Ihres Nutzerprofils verwalten.';
+$string['unsubscribealldone'] = 'Sie haben alle optionalen Abonnements abbestellt. Trotzdem werden Sie Beiträge aus Foren mit verpflichtenden Abonnements erhalten. Die Forums-Benachrichtigungen können Sie in den Einstellungen Ihres Nutzerprofils verwalten.';
 $string['unsubscribeallempty'] = 'Sie haben kein Forum abonniert. Die Systemnachrichten können Sie in den Einstellungen Ihres Nutzerprofils vollständig deaktivieren.';
 $string['unsubscribed'] = 'Abgemeldet';
 $string['unsubscribediscussion'] = 'Von diesem Thema abmelden';

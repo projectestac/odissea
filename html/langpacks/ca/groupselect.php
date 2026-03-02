@@ -127,5 +127,6 @@ $string['timeavailable'] = 'Obre a partir de';
 $string['timeavailable_error_past_timedue'] = 'Error: no es pot posar una data posterior a la data límit';
 $string['timedue'] = 'Tanca a partir de';
 $string['timedue_error_pre_timeavailable'] = 'Error: no es pot acabar abans de la data d\'inici';
+$string['unassigngroup_confirm'] = 'Això dessassignarà els supervisors dels grups. Confirmeu que voleu continuar?';
 $string['unselect'] = 'Abandona el grup {$a}';
 $string['unselectconfirm'] = 'Confirmeu que voleu abandonar el grup <em>{$a}</em>?';

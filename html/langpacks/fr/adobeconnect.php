@@ -174,7 +174,7 @@ $string['settingblurb'] = '<center><img src = "{$a->image}" /> </center><br />
     partenaire Alfresco. La société propose des services d’hébergement SaaS, des contrats de support informatique,
     programmation, formation au développement de la main-d’œuvre, conception pédagogique et service-conseil stratégique
      pour les organisations qui planifient des programmes d’apprentissage en ligne.</p><br />
-    <p>Consultez le <a href="{$a->url} ">répertoire des plug-ins Adobe Connect Moodle</a> pour obtenir des informations sur le support Enterprise.</p>';
+    <p>Consultez le <a href="{$a->url} ">répertoire des plugins Adobe Connect Moodle</a> pour obtenir des informations sur le support Enterprise.</p>';
 $string['starttime'] = 'Heure de début';
 $string['testconnection'] = 'Test de connexion';
 $string['unableretrdetails'] = 'Impossible de récupérer les détails de la réunion';

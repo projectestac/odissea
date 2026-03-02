@@ -36,7 +36,7 @@ $string['cbmgradeexplanation'] = 'Per a QBC (CBM), la qualificació del damunt e
 $string['cbmgrades'] = 'Qualificacions QBC (CBM)';
 $string['cbmgrades_help'] = 'Amb Qualificació Basada en la Certesa (Certainty Based Marking, CBM) aconseguint cada pregunta correcta amb C = 1 (certesa baixa) s\'obté una qualificació de 100%. Les qualificacions poden ser tan altes com 300% si cada pregunta és correcta amb C = 3 (certesa alta). Els errors conceptuals (respostes equivocades en què es confia molt) baixen la qualificació molt més que respostes equivocades que són reconegudes com a incertes. Això pot fins i tot conduir a qualificacions globals negatives.
 
-**Precisió** és el % d\'encerts ignorant la certesa però ponderat per la nota màxima de cada pregunta. Distingir correctament les respostes més fiables de les que són menys fiables dóna una millor nota que seleccionar la mateixa certesa per a cada pregunta. Això es reflecteix en el ** Bonus CBM **.
+**Precisió** és el % d\'encerts ignorant la certesa però ponderat per la nota màxima de cada pregunta. Distingir correctament les respostes més fiables de les que són menys fiables dona una millor nota que seleccionar la mateixa certesa per a cada pregunta. Això es reflecteix al ** Bonus CBM **.
 
 **Precisió** + **Bonificació QBC** és una millor mesura del coneixement que **Precisió**. Els errors conceptuals poden portar a bonificacions negatives, una advertència per tal de fixar-se amb cura en allò que se sap i allò que no.';
 $string['cbmgrades_link'] = 'qbehaviour/deferredcbm/certaintygrade';

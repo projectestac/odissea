@@ -56,6 +56,7 @@ $string['conversationlistdisplayheader'] = 'S\'estan mostrant {$a->show} {$a->st
 $string['conversationopened'] = 'S\'ha obert la conversa';
 $string['conversationopenedcron'] = 'Les converses s\'obriran automàticament';
 $string['conversationopenedwith'] = '<strong>1</strong> conversa oberta amb:';
+$string['conversationreopenconfirm'] = 'Confirmeu que voleu reobrir la conversa {$a}?';
 $string['conversations'] = 'Converses';
 $string['conversationsopenedwith'] = '<string>{$a}</strong> converses obertes amb:';
 $string['cutoffdate'] = 'Data límit';

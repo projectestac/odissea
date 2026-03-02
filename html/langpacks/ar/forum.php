@@ -65,6 +65,7 @@ $string['blockperiod'] = 'الفترة الزمنية للمنع';
 $string['blockperiod_help'] = 'يمكن منع الطلاب من النشر إذا وصلت منشوراتهم في المنتدى إلى عدد محدد ضمن فترة زمنية معينة. المستخدمون الذين يتمتعون بالإمكانية mod/forum:postwithoutthrottling هم معفون من عتبة النشر.';
 $string['blockperioddisabled'] = 'لا تمنع';
 $string['blogforum'] = 'منتدى قياسي يظهر بشكل مدونة';
+$string['browsediscussions'] = 'تصفح المناقشات';
 $string['bynameondate'] = 'بواسطة {$a->date} -  {$a->name}';
 $string['cachedef_forum_count_discussions'] = 'عدد مناقشات المنتدى';
 $string['cachedef_forum_is_tracked'] = 'حالة تعقب المنتدى للمستخدم';

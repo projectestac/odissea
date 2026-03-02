@@ -43,7 +43,7 @@ $string['handlerdisabled'] = 'S\'ha inhabilitat el gestor de correu amb el qual 
 $string['incomingmailconfiguration'] = 'Configuració del correu electrònic entrant';
 $string['incomingmailserversettings'] = 'Paràmetres del servidor del correu electrònic entrant';
 $string['incomingmailserversettings_desc'] = 'Moodle té la capacitat de connectar-se a servidors IMAP configurats de manera apropiada. Podeu especificar els paràmetres que heu utilitzat per connectar-vos al vostre servidor IMAP aquí.';
-$string['invalid_recipient_handler'] = 'Si es rep un missatge vàlid, però el remitent no pot ser autenticat, aquest missatge s\'emmagatzema al servidor de correu, i es contacta amb l\'usuari emprant l\'adreça electrònica del seu perfil d\'usuari. Es dóna a l\'usuari l\'oportunitat de respondre per confirmar l\'autenticitat del missatge original.
+$string['invalid_recipient_handler'] = 'Si es rep un missatge vàlid, però el remitent no pot ser autenticat, aquest missatge s\'emmagatzema al servidor de correu, i es contacta amb l\'usuari emprant l\'adreça electrònica del seu perfil d\'usuari. Es dona a l\'usuari l\'oportunitat de respondre per confirmar l\'autenticitat del missatge original.
 
 Aquest gestor processa aquestes respostes.
 

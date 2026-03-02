@@ -281,7 +281,7 @@ $string['gradebookcalculationsuptodate'] = 'Not defterindeki hesaplamalar günce
 $string['gradebookcalculationswarning'] = 'Not: Not defterinde görüntülenen notların hesaplanmasında bazı hatalar tespit edilmiştir. Kursunuz başlamadı veya devam ediyorsa, bazı notların değişmesine neden olacak olsa da, hataları aşağıdaki butona tıklayarak düzeltmeniz önerilir. Kursunuz zaten bitti ve notlar gönderildiyse, muhtemelen bu sorunu çözmek istemezsiniz.
 
 Yeni sürüm {$a->currentversion}; Gradebook {$a>gradebookversion} sürümünü kullanıyorsunuz. <a href="{$a-> url} "> Defter hesaplama değişikliklerinde </a> değişikliklerin bir listesini görebilirsiniz.';
-$string['gradebookhiddenerror'] = 'Notdefteri şu anda öğrencilerden herşeyi gizle olarak ayarlandı.';
+$string['gradebookhiddenerror'] = 'Not defteri şu anda öğrencilerden her şeyi gizle olarak ayarlandı.';
 $string['gradebookhistories'] = 'Not geçmişleri';
 $string['gradebooknavigationmenu'] = 'Son ({$a->last})';
 $string['gradebooksetup'] = 'Not defteri kurulumu';
@@ -347,7 +347,7 @@ $string['gradepass'] = 'Geçme notu';
 $string['gradepass_help'] = 'Bu ayar, geçmek için gereken minimum puanı belirler. Bu değer, etkinlik ve kurs tamamlama ve başarı notlarının yeşil ve başarısız notlarının kırmızı renkte vurgulandığı not defterinde kullanılır.';
 $string['gradepassgreaterthangrade'] = 'Geçme notu, mümkün olan en yüksek nota {$a}';
 $string['gradepointdefault'] = 'Varsayılan not puanı';
-$string['gradepointdefault_help'] = 'Bu ayar, bir not öğesinde mevcut olan notun puan değeri için varsayılan değeri belirler.';
+$string['gradepointdefault_help'] = 'Bu ayar, bir not ögesinde mevcut olan notun puan değeri için varsayılan değeri belirler.';
 $string['gradepointdefault_validateerror'] = 'Bu ayar 1 ile en yüksek not puanı arasında bir tamsayı olmalıdır.';
 $string['gradepointmax'] = 'En yüksek not puanı';
 $string['gradepointmax_help'] = 'Bu ayar, bir etkinlikte kullanılabilen enyüksek not puanı değerini belirler.';

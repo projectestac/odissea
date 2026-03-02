@@ -697,17 +697,14 @@ $string['emailconfirmation'] = 'Guten Tag {$a->fullname},
 
 mit Ihrer E-Mail-Adresse wurde ein neues Nutzerkonto für \'{$a->sitename}\' angefordert.
 
-Um das neue Nutzerkonto zu bestätigen, öffnen Sie bitte die folgende Webadresse:
+Um das neue Nutzerkonto zu bestätigen, klicken Sie bitte auf den folgenden Link:
 
-{$a->link}
+<a href="{$a->link}">Nutzerkonto bestätigen</a>
 
-In den meisten Fällen sollte dies als klickbarer Link angezeigt werden. Sollte ein Klick nicht funktionieren, kopieren Sie die Adresse in das Adressfeld Ihres Webbrowsers.
 
 Wenn Sie selber kein neues Nutzerkonto angefragt haben, könnte jemand anderes versuchen, Ihr Konto zu kompromittieren.
 
-Falls Sie Fragen haben, wenden Sie sich an: {$a->admin}
-
-Ihr E-Learning-Team';
+Falls Sie Fragen haben, wenden Sie sich an: {$a->admin}';
 $string['emailconfirmationresend'] = 'Bestätigungsmitteilung erneut senden';
 $string['emailconfirmationsubject'] = '{$a}: Zugangsbestätigung';
 $string['emailconfirmsent'] = '<p>Um sicherzugehen, dass sich niemand unberechtigt über die von Ihnen angegebene E-Mail anmeldet, wird eine automatische Benachrichtigung an diese Adresse <b>{$a}</b> gesendet.</p>
@@ -750,15 +747,12 @@ $string['emailpasswordchangeinfo'] = 'Guten Tag {$a->firstname},
 
 jemand (wahrscheinlich Sie) hat ein neues Kennwort für Ihren Zugang \'{$a->username}\' auf \'{$a->sitename}\' angefordert.
 
-Um das Kennwort zu ändern, gehen Sie bitte auf folgende Webseite:
+Um das Kennwort zu ändern, klicken Sie bitte auf den folgenden Link:
 
-{$a->link}
+<a href="{$a->link}">Kennwort ändern</a>
 
-In den meisten E-Mail-Programmen ist der Link aktiv und muss einfach angeklickt werden. Sollte das nicht funktionieren, kopieren Sie bitte die Webadresse in die Adresszeile des Browserfensters.
 
 Bei Problemen wenden Sie sich bitte an die Administrator/innen der Website.
-
-Viel Erfolg!
 {$a->admin}';
 $string['emailpasswordchangeinfodisabled'] = 'Guten Tag {$a->firstname},
 
@@ -779,17 +773,14 @@ $string['emailpasswordconfirmation'] = 'Guten Tag {$a->firstname} {$a->lastname}
 
 jemand (wahrscheinlich Sie) hat ein neues Kennwort für Ihren Zugang auf \'{$a->sitename}\' angefordert.
 
-Um dies zu bestätigen und ein neues Kennwort per E-Mail zu erhalten, gehen Sie bitte auf folgende Webseite:
+Um dies zu bestätigen und ein neues Kennwort per E-Mail zu erhalten, klicken Sie bitte auf den folgenden Link:
 
-{$a->link}
+<a href="{$a->link}">Neues Kennwort anfordern</a>
 
-In den meisten E-Mail-Programmen ist der Link aktiv und muss einfach angeklickt werden. Sollte das nicht funktionieren, kopieren Sie bitte die Webadresse in die Adresszeile des Browserfensters.
 
 Sollten Sie die Kennwortanforderung nicht selber ausgelöst haben, hat vermutlich jemand anders Ihren Anmeldenamen oder Ihre E-Mail-Adresse eingegeben. Dies ist kein Grund zur Beunruhigung. Ignorieren Sie die Nachricht dann bitte.
 
 Bei Problemen wenden Sie sich bitte an die Administrator/innen der Website.
-
-Viel Erfolg!
 {$a->admin}';
 $string['emailpasswordconfirmationsubject'] = '{$a}: Kennwort-Änderung bestätigen';
 $string['emailpasswordconfirmmaybesent'] = '<p>Wenn Sie den Anmeldenamen bzw. die eindeutige E-Mail-Adresse richtig angegeben haben, wird eine automatische E-Mail an Sie gesendet.</p><p>Die Mitteilung enthält eine Anleitung, wie Sie das Zurücksetzen des Kennwortes abschließen. Bei Problemen wenden Sie sich an die Administrator/innen der Website.</p>';
@@ -802,14 +793,17 @@ $string['emailresetconfirmation'] = 'Hallo {$a->firstname},
 
 jemand (wahrscheinlich Sie) hat bei \'{$a->sitename}\' das Zurücksetzen des Kennwortes für das Nutzerkonto \'{$a->username}\' angefordert.
 
-Um diese Anforderung zu bestätigen und um ein neues Kennwort zu bekommen, gehen Sie bitte auf folgende Webseite:
-<a href="{$a->link}">{$a->link}</a>
+Um diese Anforderung zu bestätigen und um ein neues Kennwort zu bekommen, klicken Sie bitte auf den folgenden Link:
+
+<a href="{$a->link}">Kennwort zurücksetzen</a>
+
 
 Dieser Link ist {$a->resetminutes} Minuten nach der Anforderung gültig.
 
 Sollte die Kennwortanforderung nicht von Ihnen selber sein, müssen Sie nichts weiter tun.
 
-Bei Problemen wenden Sie sich bitte an die Administrator/innen der Website {$a->admin}.';
+Bei Problemen wenden Sie sich bitte an die Administrator/innen der Website.
+{$a->admin}';
 $string['emailresetconfirmationsubject'] = '{$a}: Anforderung für neues Kennwort';
 $string['emailresetconfirmsent'] = 'Eine E-Mail wurde an Ihre Adresse bei <b>{$a}</b> gesendet. <br />Sie enthält eine einfache Anleitung, wie Sie weiter vorgehen müssen, um das Kennwort zu ändern. Wenn Sie Schwierigkeiten haben, wenden Sie sich bitte an eine/n Administrator/in.';
 $string['emailstop'] = 'Systemnachrichten deaktivieren';
@@ -924,7 +918,7 @@ $string['explanation'] = 'Erläuterung';
 $string['explanationdigitalminor'] = 'Diese Informationen sind notwendig um festzustellen, ob Sie sich selber registrieren dürfen. Nur wenn Sie alt genug sind, können Sie selber den Richtlinien und Nutzungsbedingungen zustimmen. Andernfalls müssen dies Ihre Erziehungsberechtigten tun.';
 $string['extendperiod'] = 'Verlängerter Zeitraum';
 $string['extendsession'] = 'Aktuelle Sitzung verlängern';
-$string['failedloginattempts'] = '{$a->attempts} erfolglose Anmeldeversuche seit Ihrem letzten Login';
+$string['failedloginattempts'] = '{$a->attempts} erfolglose Anmeldeversuche seit Ihrer letzten Anmeldung';
 $string['failedtaskbody'] = '<p>Hallo {$a->firstname},</p>
 <p>Die Task <b>{$a->taskname}</b> ist mehrmals fehlgeschlagen und erfordert Ihre Aufmerksamkeit.</p>
 <p><a href="{$a->link}">Task anzeigen</a></p>';
@@ -965,7 +959,7 @@ $string['force'] = 'Vorgeben';
 $string['forcelanguage'] = 'Sprache erzwingen';
 $string['forceno'] = 'Nicht festlegen';
 $string['forcepasswordchange'] = 'Kennwortänderung fordern';
-$string['forcepasswordchange_help'] = 'Wenn diese Option aktiviert ist, muss die Person ihr Kennwort beim nächsten Login ändern.';
+$string['forcepasswordchange_help'] = 'Wenn diese Option aktiviert ist, muss die Person ihr Kennwort bei der nächsten Anmeldung ändern.';
 $string['forcepasswordchangecheckfull'] = 'Möchten Sie wirklich eine Kennwortänderung einfordern von {$a}?';
 $string['forcepasswordchangenot'] = 'Die Kennwortänderung konnte nicht eingefordert werden von {$a}';
 $string['forcepasswordchangenotice'] = 'Ändern Sie Ihr Kennwort, bevor Sie weiterarbeiten.';
@@ -1193,7 +1187,7 @@ $string['interests'] = 'Persönliche Interessen';
 $string['interestslist'] = 'Persönliche Interessen';
 $string['interestslist_help'] = 'Geben Sie Ihre Interessen einzeln an, die auf Ihrer Profilseite als Tags angezeigt werden sollen.';
 $string['invalidemail'] = 'Ungültige E-Mail-Adresse';
-$string['invalidlogin'] = 'Ungültige Anmeldedaten. Versuchen Sie es nochmal!';
+$string['invalidlogin'] = 'Ungültige Anmeldung. Versuchen Sie es nochmal!';
 $string['invalidtaskclassname'] = 'Ungültige Task-Klasse {$a}';
 $string['invalidtaskid'] = 'Ungültige Task-ID';
 $string['invalidusername'] = 'Der Anmeldename darf nur Kleinbuchstaben und Ziffern enthalten, außerdem die Zeichen Unterstrich _ , Bindestrich - , Punkt . sowie das Zeichen @.';
@@ -1213,7 +1207,7 @@ $string['lastaccess'] = 'Letzter Zugriff';
 $string['lastcourseaccess'] = 'Letzter Zugriff im Kurs';
 $string['lastedited'] = 'Zuletzt bearbeitet';
 $string['lastip'] = 'Letzte IP-Adresse';
-$string['lastlogin'] = 'Zuletzt eingeloggt';
+$string['lastlogin'] = 'Zuletzt angemeldet';
 $string['lastmodified'] = 'Zuletzt geändert';
 $string['lastname'] = 'Nachname';
 $string['lastnamephonetic'] = 'Nachname - lautgetreu';
@@ -1243,21 +1237,21 @@ $string['log_excel_date_format'] = 'yyyy mmmm d h:mm';
 $string['loggedinas'] = 'Sie sind angemeldet als {$a}';
 $string['loggedinasguest'] = 'Sie sind als Gast angemeldet';
 $string['loggedinnot'] = 'Sie sind nicht angemeldet.';
-$string['login'] = 'Login';
-$string['login_failure_logs'] = 'Login-Fehlerdaten';
-$string['loginactivity'] = 'Login-Aktivität';
+$string['login'] = 'Anmelden';
+$string['login_failure_logs'] = 'Protokoll über fehlerhafte Anmeldungen';
+$string['loginactivity'] = 'Anmeldeaktivität';
 $string['loginagain'] = 'Erneut anmelden';
 $string['loginalready'] = 'Sie sind bereits angemeldet.';
 $string['loginas'] = 'Anmelden als';
-$string['loginaspasswordexplain'] = '<p>Sie müssen das spezielle \'Login als\'-Kennwort für diese Funktion verwenden. <br />Falls Ihnen dieses Kennwort nicht bekannt ist, wenden Sie sich an die Administrator/innen Ihrer Website.</p>';
+$string['loginaspasswordexplain'] = '<p>Sie müssen das spezielle Kennwort für die Funktion "Anmeldung als" verwenden. <br />Falls Ihnen dieses Kennwort nicht bekannt ist, wenden Sie sich an die Administrator/innen.</p>';
 $string['loginguest'] = 'Anmelden als Gast';
-$string['loginrequired'] = 'Login notwendig';
+$string['loginrequired'] = 'Anmeldung notwendig';
 $string['loginsite'] = 'Hier können Sie sich anmelden';
 $string['loginsteps'] = 'Für den vollen Zugriff auf die Website brauchen Sie ein Nutzerkonto.';
 $string['loginstepsnone'] = '<p>Hallo,
 <p>um an den Kursen teilnehmen zu können, müssen Sie ein Nutzerkonto anlegen.</p>
 <p>Wählen Sie einen Anmeldenamen und ein Kennwort, die Sie oben auf dieser Seite eintragen. Falls jemand bereits diesen Anmeldenamen hat, müssen Sie einen anderen Anmeldenamen verwenden.</p>';
-$string['loginto'] = 'Login bei \'{$a}\'';
+$string['loginto'] = 'Anmelden bei \'{$a}\'';
 $string['logoof'] = 'Logo von {$a}';
 $string['logout'] = 'Logout';
 $string['logoutconfirm'] = 'Möchten Sie sich wirklich abmelden?';
@@ -1339,7 +1333,7 @@ $string['messageprovider:insights'] = 'Einschätzungen, die durch Vorhersagemode
 $string['messageprovider:instantmessage'] = 'Persönliche Mitteilungen';
 $string['messageprovider:instantmessage_help'] = 'In diesem Bereich wird festgelegt, was mit Mitteilungen passieren soll, die von anderen Nutzer/innen direkt an Sie gesendet werden.';
 $string['messageprovider:messagecontactrequests'] = 'Kontaktanfrage für Mitteilungen';
-$string['messageprovider:newlogin'] = 'Systemnachricht bei neuem Login';
+$string['messageprovider:newlogin'] = 'Systemnachricht bei neuer Anmeldung';
 $string['messageprovider:notices'] = 'Systemnachricht bei kleinen Problemen';
 $string['messageprovider:notices_help'] = 'Es gibt Hinweise, die Administrator/innen sehen sollten.';
 $string['messageprovider:reportbuilderschedule'] = 'Nutzerdefinierte Zeitpläne für die Berichtserstellung';
@@ -1492,9 +1486,9 @@ $string['newaccount'] = 'Neues Nutzerkonto';
 $string['newactivityname'] = 'Neuer Name für Aktivität {$a}';
 $string['newcourse'] = 'Neuer Kurs';
 $string['newloginnotificationbodyfull'] = '<p>Hallo {$a->userfullname},</p>
-<p>Ihr Konto bei \'{$a->sitename}\' wurde gerade über ein neues Gerät angemeldet.</p>
+<p>Ihr Nutzerkonto bei \'{$a->sitename}\' wurde gerade über ein neues Gerät angemeldet.</p>
 <ul>
-<li>Ihr Konto: {$a->username} {$a->useremail}</li>
+<li>Konto: {$a->username} {$a->useremail}</li>
 <li>Zeit: {$a->logintime}</li>
 <li>Gerät: {$a->logindevice}</li>
 <li>IP-Adresse: {$a->loginip}</li>
@@ -1507,7 +1501,7 @@ $string['newpassword_help'] = 'Lassen Sie dieses Feld leer, um das bisherige Ken
 $string['newpasswordfromlost'] = '<strong>Hinweis:</strong> Ihr <strong> Ersatzkennwort </strong> wurde Ihnen mit einer <strong>zweiten E-Mail</strong> zugeschickt. Sie können sich jetzt nur noch mit dem neuen Ersatzkennwort einloggen.';
 $string['newpasswordtext'] = 'Guten Tag {$a->firstname} {$a->lastname},
 
-Ihr Kennwort auf \'{$a->sitename}\' wurde zurückgesetzt. Ihnen ist ein neues, temporäres Kennwort zugewiesen worden.
+Ihr Kennwort auf \'{$a->sitename}\' wurde zurückgesetzt. Ihnen ist ein temporäres Kennwort zugewiesen worden.
 
 Ihre Zugangsdaten lauten jetzt:
 Anmeldename: {$a->username}
@@ -1528,7 +1522,7 @@ $string['newsectionname'] = 'Neuer Name für Abschnitt {$a}';
 $string['newsitem'] = 'Nachricht';
 $string['newsitems'] = 'Ankündigungen';
 $string['newsitemsnumber'] = 'Anzahl von Ankündigungen';
-$string['newsitemsnumber_help'] = 'Im Ankündigungsforum ist standardmäßig ein verbindliches Abonnement festgelegt. Nur Trainer/innen und Nutzer/innen mit entsprechenden Rechten können darin Beiträge schreiben.
+$string['newsitemsnumber_help'] = 'Im Ankündigungsforum ist standardmäßig ein verpflichtendes Abonnement festgelegt. Nur Trainer/innen und Nutzer/innen mit entsprechenden Rechten können darin Beiträge schreiben.
 
 Wenn Sie kein Ankündigungsforum benötigen, setzen Sie diesen Wert auf Null.
 
@@ -1542,7 +1536,10 @@ für Sie wurde ein neuer Zugang auf \'{$a->sitename}\' angelegt. Für Sie gelten
    Anmeldename: {$a->username}
    Kennwort: {$a->newpassword}
 
-Sie werden aufgefordert, dieses Kennwort beim ersten Anmelden zu ändern. Rufen Sie {$a->sitename} auf und melden Sie sich auf der Seite {$a->link} an.
+Sie werden aufgefordert, dieses Kennwort beim ersten Anmelden zu ändern.
+
+<a href="{$a->link}">Hier zum Anmelden klicken</a> und die Nutzung von \'{$a->sitename}\' beginnen.
+
 
 Bei Problemen wenden Sie sich bitte an die Administrator/innen der Website.
 {$a->signoff}';
@@ -1612,7 +1609,7 @@ $string['noticenewerbackup'] = 'Diese Sicherungsdatei wurde mit Moodle {$a->back
 $string['notifications'] = 'Systemnachrichten';
 $string['notifyloginfailuresmessage'] = '{$a->time}, IP: {$a->ip}, Nutzerkonto: {$a->info}, Name: {$a->name}';
 $string['notifyloginfailuresmessageend'] = 'Sie können diese Logdaten unter {$a} ansehen.';
-$string['notifyloginfailuresmessagestart'] = 'Erfolglose Anmeldeversuche für {$a}';
+$string['notifyloginfailuresmessagestart'] = 'Erfolglose Anmeldeversuche bei {$a} seit der letzen Benachrichtigung';
 $string['notifyloginfailuressubject'] = '{$a} :: Erfolglose Anmeldeversuche';
 $string['notincluded'] = 'Nicht einbezogen';
 $string['notingroup'] = 'Die Aktivität ist nur für Gruppenmitglieder zugänglich.';
@@ -1927,7 +1924,7 @@ $string['restoreusersprecheckerror'] = 'Bei der Prüfung der Nutzerdaten wurden 
 $string['restricted'] = 'Eingeschränkt';
 $string['resultsfound'] = '{$a} Resultate gefunden';
 $string['retry'] = 'Neu versuchen';
-$string['returningtosite'] = 'Zur Nutzung ist ein Login notwendig';
+$string['returningtosite'] = 'Zur Nutzung ist eine Anmeltung notwendig';
 $string['returntooriginaluser'] = 'Zurück zu {$a}';
 $string['revert'] = 'Zurücksetzen';
 $string['role'] = 'Rolle';
@@ -2097,7 +2094,7 @@ $string['sidepanel'] = 'Website-Übersicht';
 $string['signoutofotherservices'] = 'Von allen Web-Apps abmelden';
 $string['signoutofotherservices_help'] = 'Melden Sie alle Geräte und Systeme ab, die Webdienste verwenden, z.B. die mobile Moodle App. Browsersitzungen bleiben aktiv.';
 $string['since'] = 'Seit';
-$string['sincelast'] = 'seit dem letzten Login';
+$string['sincelast'] = 'seit der letzten Anmeldung';
 $string['site'] = 'Website';
 $string['sitedefault'] = 'Grundeinstellung';
 $string['sitedefaultspecified'] = 'Standardmäßig ({$a})';
@@ -2153,14 +2150,14 @@ $string['state'] = 'Bundesland/Kanton';
 $string['statistics'] = 'Statistiken';
 $string['statisticsgraph'] = 'Grafische Darstellung';
 $string['stats'] = 'Statistiken';
-$string['statslogins'] = 'Logins';
+$string['statslogins'] = 'Anmeldungen';
 $string['statsmodedetailed'] = 'Detailansicht der Nutzer/innen';
 $string['statsmodegeneral'] = 'Übersicht';
 $string['statsnodata'] = 'Es gibt keine Daten für diese Kombination aus Kurs und Zeitraum.';
 $string['statsnodatauser'] = 'Es gibt keine Daten für die Kombination aus Kurs, Nutzer/in und Zeitraum.';
 $string['statsoff'] = 'Statistiken sind zur Zeit nicht aktiviert.';
 $string['statsreads'] = 'Zugriffe';
-$string['statsreport1'] = 'Logins';
+$string['statsreport1'] = 'Anmeldungen';
 $string['statsreport10'] = 'Aktivitäten der Nutzer/innen';
 $string['statsreport11'] = 'Aktivste Kurse';
 $string['statsreport12'] = 'Aktivste Kurse (gewichtet)';
@@ -2172,11 +2169,11 @@ $string['statsreport4'] = 'Alle Aktivitäten (Trainer/innen und Teilnehmer/innen
 $string['statsreport5'] = 'Alle Aktivitäten (Zugriffe und Beiträge)';
 $string['statsreport7'] = 'Nutzeraktivitäten (Zugriffe und Beiträge)';
 $string['statsreport8'] = 'Alle Nutzeraktivitäten';
-$string['statsreport9'] = 'Logins (Website)';
+$string['statsreport9'] = 'Anmeldungen (Website)';
 $string['statsreportactivity'] = 'Alle Aktivitäten (alle Rollen)';
 $string['statsreportactivitybyrole'] = 'Alle Aktivitäten (lesend und schreibend)';
 $string['statsreportforuser'] = 'für';
-$string['statsreportlogins'] = 'Logins';
+$string['statsreportlogins'] = 'Anmeldungen';
 $string['statsreportreads'] = 'Zugriffe (alle Rollen)';
 $string['statsreporttype'] = 'Berichtsform';
 $string['statsreportwrites'] = 'Beiträge (alle Rollen)';
@@ -2187,9 +2184,9 @@ $string['statsteacheractivity'] = 'Aktivitäten der Trainer/innen';
 $string['statsteacherreads'] = 'Trainer/innenzugriffe';
 $string['statsteacherwrites'] = 'Beiträge der Trainer/innen';
 $string['statstimeperiod'] = 'Zeitraum/-dauer:';
-$string['statsuniquelogins'] = 'Einmalige Logins';
+$string['statsuniquelogins'] = 'Einmalige Anmeldungen';
 $string['statsuseractivity'] = 'Alle Aktionen';
-$string['statsuserlogins'] = 'Logins';
+$string['statsuserlogins'] = 'Anmeldungen';
 $string['statsuserreads'] = 'Zugriffe';
 $string['statsuserwrites'] = 'Beiträge';
 $string['statswrites'] = 'Beiträge';
@@ -2494,7 +2491,7 @@ $string['youhaveupcomingactivitiesdueinfo'] = 'Hallo {$a},
 
 <br/><br/>Sie haben anstehende Aktivitäten:';
 $string['youneedtoenrol'] = 'Um diese Aktion auszuführen, müssen Sie sich in diesen Kurs eintragen.';
-$string['yourlastlogin'] = 'Ihr letztes Login war';
+$string['yourlastlogin'] = 'Ihre letzte Anmeldung war';
 $string['yourself'] = 'sich selbst';
 $string['yourteacher'] = '{$a}';
 $string['yourwordforx'] = 'Bezeichnung für \'{$a}\'';

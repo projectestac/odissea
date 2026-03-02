@@ -35,7 +35,6 @@ use core_courseformat\output\local\content as content_base;
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class content extends content_base {
-
     /**
      * Export this data so it can be used as the context for a mustache template (core/inplace_editable).
      *
@@ -60,8 +59,10 @@ class content extends content_base {
 
             $course = $this->format->get_course();
 
-            if (get_config('format_tiles', 'allowsubtilesview')
-                && isset($courseformatoptions['courseusesubtiles']) && $courseformatoptions['courseusesubtiles']) {
+            if (
+                get_config('format_tiles', 'allowsubtilesview')
+                && isset($courseformatoptions['courseusesubtiles']) && $courseformatoptions['courseusesubtiles']
+            ) {
                 // For now (Beta version) we warn editor about sub tiles only appearing in non-edit view.
                 $messgage = get_string('editoradvicesubtiles', 'format_tiles');
                 if (has_capability('moodle/site:config', \context_system::instance())) {
@@ -80,14 +81,14 @@ class content extends content_base {
             $warneditorcompletion = $course->enablecompletion
                 && $DB->record_exists('course_modules', ['course' => $course->id, 'visible' => 1])
                 && !$DB->record_exists_sql(
-                "SELECT id FROM {course_modules} WHERE course = ? AND visible = 1 AND completion != 0",
-                [$course->id]
-            );
+                    "SELECT id FROM {course_modules} WHERE course = ? AND visible = 1 AND completion != 0",
+                    [$course->id]
+                );
 
             if ($warneditorcompletion) {
                 $bulklink = \html_writer::link(
-                  new \moodle_url('/course/bulkcompletion.php', ['id' => $course->id]),
-                  get_string('completionwarning_changeinbulk', 'format_tiles')
+                    new \moodle_url('/course/bulkcompletion.php', ['id' => $course->id]),
+                    get_string('completionwarning_changeinbulk', 'format_tiles')
                 );
                 $helplink = \html_writer::link(
                     get_docs_url('Activity_completion_settings#Changing_activity_completion_settings_in_bulk'),

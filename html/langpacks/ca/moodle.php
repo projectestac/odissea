@@ -574,9 +574,9 @@ $string['deletecategorycheck2'] = 'Si voleu suprimir aquesta categoria, heu de d
 $string['deletecategoryempty'] = 'Categoria buida';
 $string['deletecheck'] = 'Suprimiu {$a} ?';
 $string['deletecheckfiles'] = 'Esteu absolutament segur que voleu suprimir aquests fitxers?';
-$string['deletecheckfull'] = 'Esteu segur que voleu esborrar l\'usuari {$a}, incloent-hi dades com ara els detalls del perfil, les inscripcions, la pertinença a grups i cohorts i algunes dades d\'activitat de l\'usuari?';
+$string['deletecheckfull'] = 'Confirmeu que voleu esborrar l\'usuari {$a}, incloses dades com ara els detalls del perfil, les inscripcions, la pertinença a grups i cohorts i algunes dades d\'activitat de l\'usuari?';
 $string['deletechecktype'] = 'Confirmeu que voleu suprimir aquest {$a->type}?';
-$string['deletechecktypename'] = 'Confirmeu que voleu suprimir  {$a->type} «{$a->name}»?';
+$string['deletechecktypename'] = 'Confirmeu que voleu suprimir {$a->type} «{$a->name}»?';
 $string['deletecheckwarning'] = 'Ara suprimireu aquests fitxers';
 $string['deletecommentbyon'] = 'Suprimeix el comentari publicat per {$a->user} el {$a->time}';
 $string['deletecompletely'] = 'Suprimeix-los completament';
@@ -696,19 +696,14 @@ $string['emailcharset'] = 'Joc de caràcters del correu';
 $string['emailconfirm'] = 'Confirmació del compte';
 $string['emailconfirmation'] = 'Hola, {$a->firstname},
 
-S\'ha sol·licitat un compte nou a «{$a->sitename}» utilitzant
-la vostra adreça de correu electrònic.
+S\'ha sol·licitat un compte nou a «{$a->sitename}» utilitzant la vostra adreça de correu electrònic.
 
 Per confirmar el compte nou, aneu a aquesta adreça web:
 
-{$a->link}
+<a href="{$a->link}">Confirma el compte</a>
 
-A la majoria de programes de correu, s\'hauria de mostrar amb
-un enllaç blau sobre el qual només cal fer clic. Si això no funciona,
-retalleu i enganxeu l\'adreça a la línia d\'adreces a la part superior
-de la finestra del navegador web.
 
-Si necessiteu ajuda, contacteu amb l\'administrador del lloc,
+Si necessiteu ajuda, contacteu amb l\'administrador del lloc.
 {$a->admin}';
 $string['emailconfirmationresend'] = 'Reenvia el correu de confirmació';
 $string['emailconfirmationsubject'] = '{$a}: confirmació de compte';
@@ -750,17 +745,17 @@ $string['emailmustbereal'] = 'Nota: l\'adreça de correu ha de ser una adreça r
 $string['emailnotallowed'] = 'Les adreces de correu d\'aquests dominis no són permeses ({$a})';
 $string['emailnotfound'] = 'No s\'ha trobat l\'adreça de correu en la base de dades';
 $string['emailonlyallowed'] = 'Aquesta adreça de correu electrònic no es pot utilitzar. Els dominis de correu electrònic permesos són: {$a}.';
-$string['emailpasswordchangeinfo'] = 'Hola {$a->firstname},
+$string['emailpasswordchangeinfo'] = 'Hola, {$a->firstname},
 
-Algú (probablement vós) heu sol·licitat una contrasenya nova per al vostre compte {$a->username}\' al lloc \'{$a->sitename}\'.
+Algú (probablement vós) ha sol·licitat una contrasenya nova per al vostre compte «{$a->username}» al web «{$a->sitename}».
 
-Si voleu canviar la contrasenya, aneu a l\'adreça web següent:
+Per canviar la contrasenya, cliqueu l\'enllaç següent:
 
-{$a->link}
+<a href="{$a->link}">Canvia la contrasenya</a>
 
-En la majoria de programes de correu, la línia de dalt s\'hauria de veure com un enllaç blau on podeu fer clic. Si això no funciona, copieu l\'adreça i enganxeu-la al camp d\'adreces de la finestra del vostre navegador web.
 
-Si necessiteu ajuda, contacteu amb l\'administrador del lloc, {$a->admin}';
+Si necessiteu ajuda, contacteu amb l\'administrador del lloc.
+{$a->admin}';
 $string['emailpasswordchangeinfodisabled'] = 'Hola {$a->firstname},
 
 Algú (probablement vós) ha sol·licitat una contrasenya nova per al vostre compte a «{$a->sitename}».
@@ -772,19 +767,16 @@ Algú (probablement vós) ha sol·licitat una contrasenya nova per al vostre com
 
 Malauradament, en aquest lloc no es poden canviar les contrasenyes. Contacteu amb l\'administrador del lloc {$a->admin}.';
 $string['emailpasswordchangeinfosubject'] = '{$a}: informació de canvi de contrasenya';
-$string['emailpasswordconfirmation'] = '{$a->firstname},
+$string['emailpasswordconfirmation'] = 'Hola, {$a->firstname},
 
-Algú (probablement vós) ha demanat una contrasenya nova
-per al vostre compte a «{$a->sitename}».
+Algú (probablement vós) ha demanat una contrasenya nova per al vostre compte a «{$a->sitename}».
 
 Per a confirmar aquesta sol·licitud i rebre la contrasenya nova per correu electrònic, aneu a l\'adreça web següent:
 
-  {$a->link}
+<a href="{$a->link}">Obté una contrasenya nova</a>
 
-En la majoria de programes de correu, la línia de dalt s\'hauria de veure com un enllaç blau on podeu fer clic. Si això no funciona, copieu l\'adreça i enganxeu-la al camp d\'adreces de la finestra del vostre navegador web.
 
-Si necessiteu ajuda, contacteu amb l\'administrador del lloc:
-
+Si necessiteu ajuda, contacteu amb l\'administrador del lloc.
 {$a->admin}';
 $string['emailpasswordconfirmationsubject'] = '{$a}: Confirmació del canvi de contrasenya';
 $string['emailpasswordconfirmmaybesent'] = '<p>Si heu proporcionat un nom d\'usuari o una adreça de correu correctes aviat hauríeu de rebre un missatge de correu electrònic.</p>
@@ -804,13 +796,16 @@ $string['emailresetconfirmation'] = 'Hola, {$a->firstname},
 S\'ha sol·licitat un restabliment de la contrasenya per al vostre compte «{$a->username}» a {$a->sitename}.
 
 Per confirmar aquesta sol·licitud i establir una contrasenya nova per al compte, aneu a l\'adreça web següent:
-<a href="{$a->link}">{$a->link}</a>
+
+<a href="{$a->link}">Restableix la contrasenya</a>
+
 
 (Aquest enllaç és vàlid durant {$a->resetminutes} minuts des del moment en què es va sol·licitar aquest restabliment per primera vegada.)
 
 Si no heu sol·licitat aquest restabliment de la contrasenya, no cal que feu res.
 
-Si necessiteu ajuda, poseu-vos en contacte amb l\'administrador del lloc, {$a->admin}';
+Si necessiteu ajuda, poseu-vos en contacte amb l\'administrador del lloc.
+{$a->admin}';
 $string['emailresetconfirmationsubject'] = 'Sol·licitud de restabliment de contrasenya: {$a}';
 $string['emailresetconfirmsent'] = 'S\'ha enviat un correu electrònic a la seva adreça en <b>{$a}.</b>
 <br/> Conté instruccions senzilles per completar i confirmar el canvi de contrasenya.
@@ -1543,15 +1538,15 @@ $string['newusernewpasswordtext'] = 'Hola, {$a->firstname},
 
 S\'ha creat un compte per a vós a «{$a->sitename}».
 
-Nom d\'usuari: {$a->username}
-Contrasenya: {$a->newpassword}
+  Nom d\'usuari: {$a->username}
+  Contrasenya: {$a->newpassword}
 
 (Us demanarà que canvieu la contrasenya en iniciar la sessió per primera vegada.)
 
-Per començar a utilitzar «{$a->sitename}», inicieu la sessió a
-{$a->link}
 
-Si necessiteu ajuda, contacteu amb l\'administrador del lloc,
+ <a href="{$a->link}">Cliqueu aquí per entrar</a> i començar a utilitzar «{$a->sitename}».
+
+Si necessiteu ajuda, contacteu amb l\'administrador del lloc.
 {$a->signoff}';
 $string['newusers'] = 'Usuaris nous';
 $string['newwindow'] = 'Finestra nova';
@@ -1888,7 +1883,7 @@ $string['reset'] = 'Reinicia';
 $string['resetcomponent'] = 'Component';
 $string['resetcourse'] = 'Reinicia curs';
 $string['resetcourseconfirm'] = 'Reiniciar el curs?';
-$string['resetcoursewarning'] = 'Esteu segur que voleu restablir el curs «{$a}»?
+$string['resetcoursewarning'] = 'Confirmeu que voleu restablir el curs «{$a}»?
 <br/><br/>
 Això esborrarà les dades seleccionades i restablirà el curs al seu estat original. Aquesta acció no es pot desfer.';
 $string['resetinfo'] = 'Aquesta funcionalitat permet esborrar totes les dades dels usuaris i restablir el curs al seu estat original. Les activitats i els paràmetres del curs no es modifiquen.';

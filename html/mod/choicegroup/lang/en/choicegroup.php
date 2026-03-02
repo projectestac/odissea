@@ -47,6 +47,8 @@ $string['char_bullet_expanded'] = '▼';
 $string['char_limitui_parenthesis_end'] = '⦘';
 $string['char_limitui_parenthesis_start'] = '⦗';
 $string['choice'] = 'Choice';
+$string['choicebegins'] = 'Choice begins at';
+$string['choiceends'] = 'Choice ends at';
 $string['choicegroup:addinstance'] = 'Add a new group choice activity';
 $string['choicegroup:choose'] = 'Record a choice';
 $string['choicegroup:deleteresponses'] = 'Delete responses';
@@ -66,6 +68,7 @@ The selected groups appear on the list on the right.
 
 To remove any groups from the selection, select them from the list on the right and click "Remove".';
 $string['choicegroupsaved'] = 'Your choice has been saved';
+$string['choices'] = 'Choices';
 $string['choicetext'] = 'Choice text';
 $string['chooseaction'] = 'Choose an action ...';
 $string['choosegroup'] = 'Choose a group';
@@ -112,8 +115,22 @@ $string['maxenrollments_help'] = 'This option allows to limit the number of grou
 $string['members/'] = 'Members';
 $string['members/max'] = 'Members / Capacity';
 $string['modulename'] = 'Group choice';
-$string['modulename_help'] = 'The Group Choice module allows students to enrol themselves in a group within a course. The teacher can select which groups students can choose from and the maximum number of students allowed in each group.';
+$string['modulename_help'] = '
+###### Key features
+- Allows students to self-enrol into groups within a course
+- Teachers can set maximum group sizes and control availability
+- Students can view group members before joining
+- Option to allow students to change groups until a deadline
+- Supports multiple group selections and sorting by name or creation date
+
+###### Ways to use it
+- Organize students into project or assignment groups
+- Facilitate group work for discussions, labs, or workshops
+- Enable students to choose partners for collaborative tasks
+- Manage group sizes for balanced participation
+- Allow flexible group changes before activities start';
 $string['modulename_link'] = 'mod/choicegroup/view';
+$string['modulename_summary'] = 'Allows students to self-select and join course groups with options for size limits, membership visibility, and flexible deadlines.';
 $string['modulenameplural'] = 'Group choices';
 $string['moveselectedusersto'] = 'Move selected users to...';
 $string['multipleenrollmentspossible'] = 'Allow enrollment to multiple groups';
@@ -131,7 +148,7 @@ $string['notyetresultsviewable'] = 'The results will be visible after this activ
 $string['numberofuser'] = 'The number of users';
 $string['onlyactive'] = 'Filter out response data for users with expired or suspended enrolments';
 $string['option'] = 'Group';
-$string['page-mod-choice-x'] = 'Any Group choice module page';
+$string['page-mod-choicegroup-x'] = 'Any Group choice module page';
 $string['pleaseselectonegroup'] = 'Please select at least one group to choose from.';
 $string['pleasesetgroups'] = 'Please create at least one group in this course.';
 $string['pleasesetonegroupor'] = 'Please create at least one group in this course.<br /><br />
@@ -165,6 +182,7 @@ $string['skipresultgraph'] = 'Skip result graph';
 $string['sortgroupsby'] = 'Sort groups by';
 $string['spaceleft'] = 'space available';
 $string['spacesleft'] = 'spaces available';
+$string['studentswhochose'] = 'Students who chose';
 $string['systemdefault_date'] = 'System Default (currently Group creation date)';
 $string['systemdefault_name'] = 'System Default (currently Name)';
 $string['taken'] = 'Taken';

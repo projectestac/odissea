@@ -23,13 +23,13 @@
 
 import {component} from './common';
 import C4LModal from './modal';
-import ModalFactory from 'core/modal_factory';
 import {components as Components} from './components';
 import {get_strings as getStrings} from 'core/str';
 import {
     isStudent,
     getallowedComponents,
     showPreview,
+    showDocs,
     getpreviewCSS,
     getcustomComponents
 } from './options';
@@ -44,9 +44,11 @@ import {
     saveVariantPreferences,
     variantExists
 } from './variantslib';
+import Notification from 'core/notification';
 
 let userStudent = false;
 let previewC4L = true;
+let docsC4L = true;
 let allowedComponents = [];
 let Contexts = [];
 let langStrings = {};
@@ -62,12 +64,16 @@ const compPrefix = 'c4lv-';
 export const handleAction = async(editor) => {
     userStudent = isStudent(editor);
     previewC4L = showPreview(editor);
+    docsC4L = showDocs(editor);
     customComponents = getcustomComponents(editor);
     addCustomComponents();
     allowedComponents = getallowedComponents(editor);
     previewCSS = getpreviewCSS(editor);
     langStrings = await getAllStrings();
-    loadVariantPreferences(Components).then(() => displayDialogue(editor));
+    loadVariantPreferences(Components).then(() => {
+        displayDialogue(editor);
+        return;
+    }).catch(Notification.exception);
 };
 
 /**
@@ -79,14 +85,13 @@ const displayDialogue = async(editor) => {
     const data = Object.assign({}, {});
 
     // Show modal with buttons.
-    const modal = await ModalFactory.create({
-        type: C4LModal.TYPE,
+    const modal = await C4LModal.create({
         templateContext: await getTemplateContext(editor, data),
-        large: true,
     });
 
-    // Choose class to modal.
-    const modalClass = previewC4L ? 'c4l-modal' : 'c4l-modal-no-preview';
+    // Choose class to modal (show aside if either preview or docs is enabled).
+    const showAside = previewC4L || docsC4L;
+    const modalClass = showAside ? 'c4l-modal' : 'c4l-modal-no-preview';
 
     // Set class to modal.
     editor.targetElm.closest('body').classList.add(modalClass);
@@ -123,7 +128,7 @@ const displayDialogue = async(editor) => {
         node.addEventListener('click', (event) => {
             handleButtonClick(event, editor, modal);
         });
-        if (previewC4L) {
+        if (previewC4L || docsC4L) {
             node.addEventListener('mouseenter', (event) => {
                 handleButtonMouseEvent(event, modal, true);
             });
@@ -139,7 +144,7 @@ const displayDialogue = async(editor) => {
         node.addEventListener('click', (event) => {
             handleVariantClick(event, modal);
         });
-        if (previewC4L) {
+        if (previewC4L || docsC4L) {
             node.addEventListener('mouseenter', (event) => {
                 handleVariantMouseEvent(event, modal, true);
             });
@@ -148,6 +153,27 @@ const displayDialogue = async(editor) => {
             });
         }
     });
+
+    // Event tab buttons listeners (only when both preview and docs are enabled).
+    if (previewC4L && docsC4L) {
+        const tabPreviewBtn = modal.getRoot()[0].querySelector('.c4l-tab-preview');
+        const tabDocsBtn = modal.getRoot()[0].querySelector('.c4l-tab-docs');
+        const aside = modal.getRoot()[0].querySelector('.c4l-modal-aside');
+
+        if (tabPreviewBtn && tabDocsBtn && aside) {
+            tabPreviewBtn.addEventListener('click', () => {
+                aside.classList.remove('c4l-show-docs');
+                tabPreviewBtn.classList.add('c4l-tab-active');
+                tabDocsBtn.classList.remove('c4l-tab-active');
+            });
+
+            tabDocsBtn.addEventListener('click', () => {
+                aside.classList.add('c4l-show-docs');
+                tabDocsBtn.classList.add('c4l-tab-active');
+                tabPreviewBtn.classList.remove('c4l-tab-active');
+            });
+        }
+    }
 };
 
 /**
@@ -277,16 +303,32 @@ const handleButtonClick = (event, editor, modal) => {
  */
 const handleButtonMouseEvent = (event, modal, show) => {
     const selectedButton = event.target.closest('button').dataset.id;
-    const node = modal.getRoot()[0].querySelector('div[data-id="code-preview-' + selectedButton + '"]');
+
+    // Toggle preview content.
+    const previewNode = modal.getRoot()[0].querySelector('div[data-id="code-preview-' + selectedButton + '"]');
     const previewDefault = modal.getRoot()[0].querySelector('div[data-id="code-preview-default"]');
 
-    if (node) {
+    if (previewNode) {
         if (show) {
             previewDefault.classList.toggle('c4l-hidden');
-            node.classList.toggle('c4l-hidden');
+            previewNode.classList.toggle('c4l-hidden');
         } else {
-            node.classList.toggle('c4l-hidden');
+            previewNode.classList.toggle('c4l-hidden');
             previewDefault.classList.toggle('c4l-hidden');
+        }
+    }
+
+    // Toggle docs content.
+    const docsNode = modal.getRoot()[0].querySelector('div[data-id="code-docs-' + selectedButton + '"]');
+    const docsDefault = modal.getRoot()[0].querySelector('div[data-id="code-docs-default"]');
+
+    if (docsNode) {
+        if (show) {
+            docsDefault.classList.toggle('c4l-hidden');
+            docsNode.classList.toggle('c4l-hidden');
+        } else {
+            docsNode.classList.toggle('c4l-hidden');
+            docsDefault.classList.toggle('c4l-hidden');
         }
     }
 };
@@ -335,6 +377,9 @@ const getTemplateContext = async(editor, data) => {
         buttons: await getButtons(editor),
         filters: await getFilters(),
         preview: previewC4L,
+        docs: docsC4L,
+        showAside: previewC4L || docsC4L,
+        bothEnabled: previewC4L && docsC4L,
     }, data);
 };
 
@@ -405,6 +450,10 @@ const getButtons = (editor) => {
             }
 
             buttonText = component.type == 'custom' ? component.buttonname : langStrings.get(component.name);
+
+            // Process structured docs object.
+            const docsData = processDocsData(component.docs);
+
             buttons.push({
                 id: component.name,
                 name: buttonText,
@@ -413,6 +462,7 @@ const getButtons = (editor) => {
                 imageClass: component.imageClass,
                 classComponent: compPrefix + component.name,
                 htmlcode: componentCode,
+                docsData: docsData,
                 css: component.css ?? '',
                 variants: getVariantsState(component.name, component.variants),
             });
@@ -579,6 +629,36 @@ const applyLangStrings = (text) => {
 };
 
 /**
+ * Process structured docs data object.
+ *
+ * @param  {object} docs - The docs object with description and useCases
+ * @return {object} Processed docs data for the template
+ */
+const processDocsData = (docs) => {
+    if (!docs || typeof docs !== 'object') {
+        return {
+            description: applyLangStrings('{{#docs_nodocsavailable_desc}}'),
+            useCases: [],
+            hasUseCases: false,
+        };
+    }
+
+    const result = {
+        description: docs.description ? applyLangStrings(docs.description) : '',
+        useCases: [],
+        hasUseCases: false,
+    };
+
+    // Process use cases.
+    if (docs.useCases && Array.isArray(docs.useCases) && docs.useCases.length > 0) {
+        result.useCases = docs.useCases.map(item => ({text: applyLangStrings(item)}));
+        result.hasUseCases = true;
+    }
+
+    return result;
+};
+
+/**
  * Generates a random string.
  * @return {string} A random string
  */
@@ -611,6 +691,9 @@ const getAllStrings = async() => {
     const keys = [];
     const compRegex = /{{#([^}]*)}}/g;
 
+    // Add fallback docs string.
+    keys.push('docs_nodocsavailable_desc');
+
     Components.forEach(element => {
 
         // Only add name from standard components.
@@ -638,6 +721,28 @@ const getAllStrings = async() => {
                 keys.push(strLang[1]);
             }
         });
+
+        // Get lang strings from docs object.
+        if (element.docs && typeof element.docs === 'object') {
+            // Get description string.
+            if (element.docs.description) {
+                [...element.docs.description.matchAll(compRegex)].forEach(strLang => {
+                    if (keys.indexOf(strLang[1]) === -1) {
+                        keys.push(strLang[1]);
+                    }
+                });
+            }
+            // Get use cases strings.
+            if (element.docs.useCases && Array.isArray(element.docs.useCases)) {
+                element.docs.useCases.forEach(useCase => {
+                    [...useCase.matchAll(compRegex)].forEach(strLang => {
+                        if (keys.indexOf(strLang[1]) === -1) {
+                            keys.push(strLang[1]);
+                        }
+                    });
+                });
+            }
+        }
     });
 
     const stringValues = await getStrings(keys.map((key) => ({key, component})));
@@ -650,18 +755,18 @@ const getAllStrings = async() => {
 const addCustomComponents = () => {
     if (customComponents.length > 0) {
         customComponents.forEach(customcomp => {
-            if (Components.find(element => element.id == customcomp['id'] + 1000) == undefined) {
+            if (Components.find(element => element.id == customcomp.id + 1000) == undefined) {
                 Components.push({
-                    id: customcomp['id'] + 1000,
-                    name: customcomp['name'],
-                    buttonname: customcomp['buttonname'],
+                    id: customcomp.id + 1000,
+                    name: customcomp.name,
+                    buttonname: customcomp.buttonname,
                     type: 'custom',
                     imageClass: 'c4l-custom-icon',
                     code: replaceCustomPlaceholders(customcomp),
-                    text: customcomp['text'].length > 0 ? customcomp['text'] : '{{#textplaceholder}}',
-                    variants: customcomp['variants'] ? ["full-width"] : [],
-                    icon: customcomp['icon'],
-                    css: customcomp['css']
+                    text: customcomp.text.length > 0 ? customcomp.text : '{{#textplaceholder}}',
+                    variants: customcomp.variants ? ["full-width"] : [],
+                    icon: customcomp.icon,
+                    css: customcomp.css
                 });
             }
         });
@@ -675,9 +780,9 @@ const addCustomComponents = () => {
  * @return {string} HTML code.
  */
 const replaceCustomPlaceholders = (component) => {
-    let html = component['code'];
-    const variants = component['variants'] ? " {{VARIANTS}}" : "";
-    html = html.replace('{{CUSTOMCLASS}}', compPrefix + component['name'] + ' ' + compPrefix + "custom-component" + variants);
+    let html = component.code;
+    const variants = component.variants ? " {{VARIANTS}}" : "";
+    html = html.replace('{{CUSTOMCLASS}}', compPrefix + component.name + ' ' + compPrefix + "custom-component" + variants);
 
     return html;
 };

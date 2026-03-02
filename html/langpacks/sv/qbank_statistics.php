@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['discrimination_index'] = 'Behöver du kontrolleras?';
+$string['discrimination_index'] = 'Behöver kontrolleras?';
 $string['discrimination_index_help'] = 'En fråga flaggas som att den antagligen behöver kontrolleras baserat på frågestatistik. Till exempel; om eleverna får en låg poäng på frågan men en hög poäng på hela kunskapstestet, eller en hög poäng på frågan men en låg poäng på hela kunskapstestet, kan det finnas ett problem med frågan, till exempel att ett felaktigt svar angivits som korrekt. Statistik är dock inte ofelbar; den är bara en ledtråd om att frågan bör kontrolleras.';
 $string['discriminative_efficiency'] = 'Diskrimineringseffektivitet';
 $string['discriminative_efficiency_help'] = 'Bedömningseffektivitet är en statistisk uppskattning av hur väl frågan bedömer eleverna, där ett högre värde är bättre. Ett särskilt lågt värde kan indikera ett problem med frågan. En mycket svår eller enkel fråga (med svårighetsindex nära 0% eller 100%) kan också leda till ett lågt värde.';

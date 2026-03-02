@@ -124,6 +124,13 @@
         </div>
     {{/controlmenu}}
 
+    {{! Description }}
+    {{#altcontent}}
+        <div class="activity-altcontent text-break {{#hasname}}activity-description{{/hasname}}">
+            {{{altcontent}}}
+        </div>
+    {{/altcontent}}
+
     {{! Availability }}
     {{#modavailability}}
         {{$ core_courseformat/local/content/cm/availability }}

@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['RPC_HTTPS_SELF_SIGNED'] = 'HTTPS (自己署名)';
 $string['RPC_HTTPS_VERIFIED'] = 'HTTPS (署名)';
-$string['RPC_HTTP_PLAINTEXT'] = 'HTTP 暗号化なし';
+$string['RPC_HTTP_PLAINTEXT'] = 'HTTP暗号化なし';
 $string['RPC_HTTP_SELF_SIGNED'] = 'HTTP (自己署名)';
 $string['RPC_HTTP_VERIFIED'] = 'HTTP (署名)';
 $string['aboutyourhost'] = 'あなたのサーバ情報';

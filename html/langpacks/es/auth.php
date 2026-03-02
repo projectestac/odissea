@@ -90,10 +90,14 @@ $string['emailnowexists'] = 'La dirección email que ha intentado asignar a su p
 $string['emailupdate'] = 'Actualizar dirección Email';
 $string['emailupdatemessage'] = 'Hola, {$a->fullname}.
 
-Ha solicitado un cambio de su dirección de correo electrónico en su cuenta de {$a->site}. Por favor, para confirmar este cambio vaya a la siguiente dirección web:
+Ha solicitado un cambio de su dirección de correo electrónico en su cuenta de {$a->site}.
 
-{$a->url}
-El enlace de confirmación expirará en <b>10 minutos</b>.
+Por favor, para confirmar este cambio vaya a la siguiente dirección web:
+
+<a href="{$a->url}">Confirmar cambio de dirección de correo</a>
+
+
+El enlace de confirmación expirará en <strong>10 minutos</strong>.
 
 {$a->supportemail}';
 $string['emailupdatesuccess'] = 'La dirección email del usuario <em>{$a->fullname}</em> ha sido actualizada con éxito a <em>{$a->email}</em>.';

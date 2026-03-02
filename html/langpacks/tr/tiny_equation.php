@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['buttontitle'] = 'Denklem düzenleyici';
-$string['cursorinfo'] = 'Bir ok, öğe kitaplığından yeni öğelerin ekleneceği konumu gösterir.';
+$string['cursorinfo'] = 'Bir ok, gğe kitaplığından yeni ögelerin ekleneceği konumu gösterir.';
 $string['editequation'] = '<a href="{$a}" target="_blank">TeX</a> kullanarak denklemi düzenleyin';
 $string['helplinktext'] = 'Denklem yardımcısı';
 $string['librarygroup1'] = 'Operatörler';

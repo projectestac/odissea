@@ -25,7 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['are_you_sure_to_delete_offline_session'] = 'Confirmeu que voleu suprimir aquesta sessió fora de línia?';
 $string['click_for_detail'] = 'feu clic per a més detalls';
 $string['crontask'] = 'Recalcula les sessions «attendanceregister»';
 $string['duration'] = 'Durada';
 $string['fullname'] = 'Nom';
+$string['unreasoneable_session'] = 'Ho confirmeu? Això són més de {$a} hores!';

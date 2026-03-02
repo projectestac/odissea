@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['anycategory'] = 'Alle Kategorien';
 $string['apierror'] = 'Der YouTube API Key ist nicht gesetzt. Wenden Sie sich an die Administrator/innen.';
 $string['apikey'] = 'API Key';
-$string['apikeyinfo'] = 'Holen Sie sich einen <a href="https://developers.google.com/youtube/v3/getting-started">Google API key</a> für Ihre Website.';
+$string['apikeyinfo'] = 'Holen Sie sich einen <a href="https://developers.google.com/youtube/v3/getting-started">Google API Key</a> für Ihre Website.';
 $string['autosvehicles'] = 'Autos & Fahrzeuge';
 $string['category'] = 'Kategorie';
 $string['categoryerror'] = 'Die Liste der Kategorien konnte nicht abgerufen werden. <br> {$a}';

@@ -95,13 +95,16 @@ $string['downloadcontent'] = 'Inclou en la descàrrega de contingut del curs';
 $string['downloadcontent_help'] = 'Cal incloure aquesta activitat o recurs en el fitxer zip del contingut del curs disponible per a descarregar? Els fitxers, carpetes, pàgines i àrees de text i multimèdia es poden descarregar completament. Per a totes les altres activitats i recursos, només es descarregarà el nom i la descripció. Aquesta opció requereix que la baixada de contingut del curs estigui habilitada a la configuració del curs.
 
 La configuració no té cap efecte en la descàrrega de contingut per ús fora de línia en l\'aplicació mòbil.';
-$string['downloadcourseconfirmation'] = 'Esteu a punt de descarregar un fitxer ZIP amb el contingut del curs (excloent els elements que no es poden baixar i els fitxers de més de {$a}).';
+$string['downloadcourseconfirmation'] = 'Ara descarregareu un fitxer ZIP amb el contingut del curs (sense els elements que no es poden baixar i els fitxers de més de {$a}).';
 $string['downloadcoursecontent'] = 'Baixa el contingut del curs';
 $string['downloadcoursecontent_help'] = 'Aquest paràmetre determina si el contingut del curs pot ser descarregat pels usuaris amb la capacitat de baixar el contingut del curs (per defecte els usuaris amb el rol d\'estudiant o professor).';
 $string['enabledownloadcoursecontent'] = 'Habilita la baixada de contingut del curs';
 $string['errorendbeforestart'] = 'La data de finalització del curs {$a}) és anterior a la data d\'inici del curs.';
 $string['favourite'] = 'Curs destacat';
+$string['filterbothactive'] = 'Primer ({$a->first}) Darrer ({$a->last})';
 $string['filterbyname'] = 'Filtra per nom';
+$string['filterfirstactive'] = 'Primer ({$a->first})';
+$string['filterlastactive'] = 'Darrer ({$a->last})';
 $string['gotosection'] = 'Vés a la secció {$a}';
 $string['gradetopassnotset'] = 'El curs no té habilitada cap qualificació per aprovar. Es pot habilitar en l\'element de qualificació del curs (Configuració del llibre de qualificacions).';
 $string['hideendedcoursestask'] = 'Amaga els cursos en la data de finalització';

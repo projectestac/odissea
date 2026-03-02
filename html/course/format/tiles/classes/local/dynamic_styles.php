@@ -31,7 +31,6 @@ namespace format_tiles\local;
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class dynamic_styles {
-
     /**
      * Default hex tile colour if none other found.
      */
@@ -63,7 +62,7 @@ class dynamic_styles {
             $courseid = $iscourseviewpage ? $idparam : $DB->get_field('course_sections', 'course', ['id' => $idparam]);
             if ($courseid) {
                 $data = self::data_for_template($courseid);
-                $m = new \Mustache_Engine;
+                $m = new \Mustache_Engine();
                 return $m->render(
                     file_get_contents("$CFG->dirroot/course/format/tiles/templates/dynamic_styles.mustache"),
                     $data
@@ -112,10 +111,12 @@ class dynamic_styles {
             // If the site admin sets background opacity to solid then it doesn't matter if the lines overlap.
             $outputdata['phototilefontsize'] = 20;
             $outputdata['phototiletextpadding'] = number_format(
-                (float)get_config('format_tiles', 'phototitletitlepadding') / 10, 1
+                (float)get_config('format_tiles', 'phototitletitlepadding') / 10,
+                1
             );
             $outputdata['phototiletextlineheight'] = number_format(
-                (float)get_config('format_tiles', 'phototitletitlelineheight') / 10, 1
+                (float)get_config('format_tiles', 'phototitletitlelineheight') / 10,
+                1
             );
         }
 
@@ -134,7 +135,7 @@ class dynamic_styles {
      * @return string rgb colour
      */
     public static function rgbcolour(string $hex): string {
-        list($r, $g, $b) = sscanf($hex, "#%02x%02x%02x");
+        [$r, $g, $b] = sscanf($hex, "#%02x%02x%02x");
         return "$r,$g,$b";
     }
 

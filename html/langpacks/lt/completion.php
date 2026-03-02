@@ -263,4 +263,4 @@ $string['viewingactivity'] = 'Peržiūrimas {$a}';
 $string['withconditions'] = 'Su sąlygomis';
 $string['writingcompletiondata'] = 'Įrašomi užbaigimo duomenys';
 $string['xdays'] = 'Dienų: {$a}';
-$string['youmust'] = 'Jūs privalote';
+$string['youmust'] = 'Jūs turite';

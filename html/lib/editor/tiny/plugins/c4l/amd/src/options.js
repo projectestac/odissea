@@ -27,6 +27,7 @@ import {pluginName} from './common';
 const isstudentName = getPluginOptionName(pluginName, 'isstudent');
 const allowedcompsName = getPluginOptionName(pluginName, 'allowedcomps');
 const showpreviewName = getPluginOptionName(pluginName, 'showpreview');
+const showdocsName = getPluginOptionName(pluginName, 'showdocs');
 const viewc4lName = getPluginOptionName(pluginName, 'viewc4l');
 const previewCSS = getPluginOptionName(pluginName, 'previewcss');
 const customComps = getPluginOptionName(pluginName, 'customcomps');
@@ -45,6 +46,11 @@ export const register = (editor) => {
     });
 
     registerOption(showpreviewName, {
+        processor: 'boolean',
+        "default":  true,
+    });
+
+    registerOption(showdocsName, {
         processor: 'boolean',
         "default":  true,
     });
@@ -88,6 +94,14 @@ export const isStudent = (editor) => editor.options.get(isstudentName);
  * @returns {object}
  */
 export const showPreview = (editor) => editor.options.get(showpreviewName);
+
+/**
+ * Get the docs visibility configuration for the Tiny C4L plugin.
+ *
+ * @param {TinyMCE} editor
+ * @returns {object}
+ */
+export const showDocs = (editor) => editor.options.get(showdocsName);
 
 /**
  * Get components allowed at students configuration for the Tiny C4L plugin.

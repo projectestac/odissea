@@ -846,16 +846,12 @@ $string['lockoutemailbody'] = 'Hi {$a->firstname},
 Your account with username {$a->username} on server \'{$a->sitename}\'
 was locked out after multiple invalid login attempts.
 
-To unlock the account immediately go to the following address
+To unlock the account immediately, please click the link below:
 
-{$a->link}
+<a href="{$a->link}">Unlock account</a>
 
-In most mail programs, this should appear as a blue link
-which you can just click on.  If that doesn\'t work,
-then copy and paste the address into the address
-line at the top of your web browser window.
 
-If you need help, please contact the site administrator,
+If you need help, please contact the site administrator.
 {$a->admin}';
 $string['lockoutemailsubject'] = 'Your account on {$a} was locked out';
 $string['lockouterrorunlock'] = 'Invalid account unlock information supplied.';
@@ -965,6 +961,7 @@ $string['moodlebrandedapp'] = 'Branded Moodle app';
 $string['moodlebrandedapp_help'] = '<p>The Branded Moodle app has all the functionality of our free mobile app for Moodle combined with your own custom branding.</p>
 <a href="https://moodle.com/branded-app">About the Branded Moodle app</a>';
 $string['moodlebrandedappreference'] = 'Alternatively, get a <a href="https://moodle.com/branded-app/">Branded Moodle app</a> with your own custom branding.';
+$string['moodlenetremovalwarning'] = 'The MoodleNet service will be shut down on 20 April 2026. If you wish to continue using MoodleNet on your site, install the MoodleNet plugin from the <a href="https://moodle.org/plugins" target="_blank">Moodle plugins directory <i class="fa fa-external-link" role="img" aria-label="Opens in new window" title="Opens in new window"></i></a> and connect it to a self-hosted MoodleNet instance. Following this, the MoodleNet profile ID field will be removed; please migrate that data if you are using it for other purposes.';
 $string['moodlepartners'] = 'Moodle Partners';
 $string['moodlepartners_help'] = '<p>Moodle Partners are services providers that are certified by Moodle HQ to provide high quality Moodle services for your organisation\'s online learning environment.</p>
 <a href="https://moodle.com/about-partners/">About our Partners</a><br />

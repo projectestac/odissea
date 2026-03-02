@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['access'] = 'Pritaikomumas';
-$string['accesshelp'] = 'Pritaikomumo žinynas';
+$string['access'] = 'Prieinamumas';
+$string['accesshelp'] = 'Prieinamumo žinynas';
 $string['accesskey'] = 'Prieigos raktas, {$a}';
-$string['accessstatement'] = 'Pritaikomumo patvirtinimas';
+$string['accessstatement'] = 'Prieinamumo patvirtinimas';
 $string['activitynext'] = 'Kita veikla';
 $string['activityprev'] = 'Ankstesnė veikla';
 $string['breadcrumb'] = 'Naršymo juosta';

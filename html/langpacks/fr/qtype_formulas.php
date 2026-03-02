@@ -48,7 +48,7 @@ $string['answermulti'] = 'Réponse pour la partie {$a->part}';
 $string['answerno'] = 'Partie {$a}';
 $string['answernotacceptable'] = 'Cette réponse n\'est pas valide pour le type de réponse donné : {$a}.';
 $string['answernotunique'] = 'Il y a d\'autres réponses correctes.';
-$string['answernotunique_help'] = 'Si cette option est cochée, l\'étudiant verra « Une réponse correcte est : ... » au lieu de « La réponse correcte est : ... » lorsqu\'il examinera sa tentative.';
+$string['answernotunique_help'] = 'Si cette option est cochée, l\'étudiant verra « Une réponse correcte est : … » au lieu de « La réponse correcte est : … » lorsqu\'il examinera sa tentative.';
 $string['answersingle'] = 'Réponse';
 $string['answertype'] = 'Type de réponse';
 $string['answertype_help'] = 'Il existe quatre types de réponses.
@@ -72,8 +72,7 @@ $string['correctansweris'] = 'Une réponse correcte possible est : {$a}';
 $string['correctfeedback'] = 'Pour toute réponse correcte';
 $string['correctfeedback_help'] = 'Ce feedback sera affiché aux étudiants ayant le maximum de points sur cette partie. Il peut intégrer des variables globales ou locales qui seront remplacées par leurs valeurs.';
 $string['correctness'] = 'Critère de notation*';
-$string['correctness_help'] = '**Requis**. Vous pouvez choisir une erreur relative ou absolue avec une tolérance.
-On ne peut pas utiliser une erreur relative avec une réponse de type formule algébrique.
+$string['correctness_help'] = '**Requis**. Vous pouvez choisir une erreur relative ou absolue avec une tolérance. On ne peut pas utiliser une erreur relative avec une réponse de type formule algébrique.
 
 Pour une définition précise de l’erreur relative ou absolue quand il y a plusieurs champs de réponse, voir la documentation.';
 $string['correctness_link'] = 'https://dynamiccourseware.org/';
@@ -331,37 +330,31 @@ où sera inséré le contenu de la partie. C’est une chaîne de caractères al
 Si ce champ est laissé vide, la partie sera ajoutée à la fin du texte principal de la question.';
 $string['pleaseputananswer'] = 'Veuillez remplir tous les champs.';
 $string['pluginname'] = 'Formules';
-$string['pluginname_help'] = 'Pour commencer à utiliser ce type de questions, veuillez lire le <a href="http://code.google.com/p/moodle-coordinate-question/wiki/Tutorial">tutoriel</a>.
+$string['pluginname_help'] = 'Pour commencer à utiliser cette question, rendez-vous sur <a href="https://dynamiccourseware.org/">dynamiccourseware.org</a>.
 
-Pour des exemples de questions possibles, téléchargez et importez <a href="http://code.google.com/p/moodle-coordinate-question/downloads/list">les exemples</a>,
-ou consulter les <a href="http://code.google.com/p/moodle-coordinate-question/wiki/ScreenShots">copies d’écran</a>.
+ Pour toute question, rendez-vous sur <a href="https://dynamiccourseware.org/">dynamiccourseware.org</a>.
 
-Pour comprendre les options dans le formulaire ci-dessous, consultez les <a href="http://code.google.com/p/moodle-coordinate-question/wiki/QuestionOptions">options de questions</a>
+ Pour connaître les options disponibles dans le formulaire d\'édition ci-dessous, rendez-vous sur <a href="https://dynamiccourseware.org/">dynamiccourseware.org</a>.
 
-Pour la documentation complète, lisez <a href="http://code.google.com/p/moodle-coordinate-question/wiki/Documentation">la documentation</a>';
+ Pour consulter la documentation complète, rendez-vous sur <a href="https://dynamiccourseware.org/">dynamiccourseware.org</a>.';
 $string['pluginname_link'] = 'question/type/formulas';
 $string['pluginnameadding'] = 'Ajout d’une question formules';
 $string['pluginnameediting'] = 'Modification d’une question formules';
-$string['pluginnamesummary'] = 'Type de questions avec des valeurs aléatoires et des champs de réponse multiples.
-Les champs de réponse peuvent être placés n’importe où dans le texte de la question, ce qui permet de créer des questions
-impliquant des structures variées comme des vecteurs, des polynômes ou des matrices.
-D’autres possibilités comme la vérification des unités et les questions en plusieurs parties sont aussi disponibles et faciles à utiliser.';
+$string['pluginnamesummary'] = 'Type de question avec des valeurs aléatoires et plusieurs réponses. Les champs de réponse peuvent être placés n\'importe où, ce qui permet de créer des questions impliquant diverses structures telles que des vecteurs, des polynômes et des matrices. D\'autres fonctionnalités telles que la vérification des unités et les questions à plusieurs parties sont également intégrées de manière transparente et faciles à utiliser.';
 $string['postunit'] = 'Unité';
 $string['postunit_help'] = 'Vous pouvez spécifier une unité ici. Ce type de question est spécialement conçu pour le système SI, un espace
-représente le \'produit\' de différentes \'unités de base\' and <tt> ^ </tt> est utilisé pour les exposants.
-De plus <tt> / </tt> peut être utilisé pour les exposants négatifs. Toute permuntation des unités de base est considérée comme équivalente.
+représente le produit de différentes unités de base and <tt> ^ </tt> est utilisé pour les exposants.De plus, <tt> / </tt> peut être utilisé   pour les exposants négatifs. Toute permutation des unités de base est considérée comme équivalente.
 
-Les étudiants doivent utiliser le même format d’entrée. Par exemple,
-
-<pre class="prettyprint">1 m<br>0.1 m^2<br>20 m s^(-1)<br>400 kg m/s<br>100 kW</pre>';
+Les étudiants doivent utiliser le même format d’entrée. Par exemple : <pre class="prettyprint">1 m<br>0.1 m^2<br>20 m s^(-1)<br>400 kg m/s<br>100 kW</pre>';
 $string['previewerror'] = 'Aucun aperçu disponible. Il faut vérifier la définition des variables aléatoires, variables globales, variables locales des parties et réponses. Message d’erreur initial : {$a}';
 $string['privacy:metadata'] = 'Le plugin type de question Formules n’enregistre aucune donnée personnelle.';
-$string['qtextpreview'] = 'Prévisualiser avec le jeu de données';
+$string['qtextpreview'] = 'Aperçu';
 $string['questiontext'] = 'Texte de la question';
-$string['questiontext_help'] = 'En plus du texte normal vous pouvez aussi utiliser ici des variables globales et des espaces réservés.
+$string['questiontext_help'] = 'En plus du texte normal de la question, vous pouvez également utiliser ici des variables globales et des espaces réservés.
 
-Les variables globales seront remplacées par leur valeur et les espaces réservés seront remplacés par la partie de question correspondante.
-    Un exemple simple avec des variables globales <tt> A, B, C </tt> et des espaces réservés <tt> #1, #2, #3 </tt> is:
+Les variables globales seront remplacées par leurs valeurs et les espaces réservés seront remplacés par des parties.
+
+Un exemple simple avec des variables globales <tt> A, B, C </tt> et des espaces réservés <tt> #1, #2, #3 </tt> est :
 
 <pre class="prettyprint">Quel est le résultat de {A} + {B}?<br>{#1}<br>Quel est le résultat de {A} - {B}?<br>{#2}<br>Quel est le résultat de {C} / {B}?<br>{#3}</pre>';
 $string['relerror'] = 'Erreur relative';
@@ -371,24 +364,33 @@ $string['response_wrong'] = 'Incorrect';
 $string['response_wrong_unit'] = 'Valeur correcte, unité incorrecte';
 $string['response_wrong_value'] = 'Valeur incorrecte, unité correcte';
 $string['ruleid'] = 'Règles de conversion de base';
-$string['ruleid_help'] = 'Ce type de question possède un système de conversion d’unités incorporé et des règles de base de conversions d’unité.
+$string['ruleid_help'] = 'Ce type de question dispose d\'un système de conversion d\'unités intégré et de règles de conversion de base.
 
-Les règles de base les plus usuelles sont les règles du "Système international d’unités SI" qui convertit entre elles les unités standard
-comme par exemple pour les longueurs km, m, cm et mm.
-Cette option n’a aucun effet si aucune unité n’a été spécifiée.';
+La règle de base est celle des « unités SI  », qui convertit les unités standard telles que les unités de longueur,
+comme par exemple km, m, cm et mm. Cette option n’a aucun effet si aucune unité n’a été spécifiée.';
+$string['settingallowdecimalcomma'] = 'Séparateur décimal localisé';
+$string['settingallowdecimalcomma_desc'] = 'Autoriser tous les étudiants à utiliser la virgule comme séparateur décimal dans leurs réponses.<br>Si cette option est activée, les nombres seront affichés conformément aux paramètres régionaux.';
+$string['settingdebouncedelay'] = 'Délai avant validation à la volée';
+$string['settingdebouncedelay_desc'] = 'Le délai entre la dernière modification d\'un champ de réponse et la validation à la volée.';
+$string['settinglenientimport'] = 'Contrôle laxiste à l\'importation';
+$string['settinglenientimport_desc'] = 'Lors de l\'importation d\'une question, ne vérifiez pas si les réponses types fournies obtiendraient la note maximale. <br>Remarque : vous ne devez activer ce paramètre que temporairement.';
+$string['settings_heading_general'] = 'Préférences générales';
+$string['settings_heading_width'] = 'Largeurs par défaut';
+$string['settings_heading_width_desc'] = 'Largeur par défaut des champs de saisie pour les différents types de réponses. Pour les champs laissés vides, les paramètres du fichier de style du plugin seront utilisés. Veuillez utiliser ces paramètres avec précaution. Si les champs sont trop petits, vos étudiants pourraient avoir des difficultés à saisir leur réponse. Notez que l\'icône en forme de point d\'exclamation qui s\'affiche pour les réponses non valides occupe environ 12 pixels.';
+$string['settingshownumbertooltip'] = 'Afficher l\'info-bulle « Nombre »';
+$string['settingshownumbertooltip_desc'] = 'Indique si l\'info-bulle « Numéro » doit s\'afficher pour ce type de réponse. Il peut être judicieux de ne pas afficher cette info-bulle, par exemple lorsque vous travaillez avec des enfants à l\'école primaire. Ce paramètre n\'affecte pas les info-bulles des autres types de réponse ni celles des champs combinés.';
 $string['settingusepopup'] = 'Utiliser les infobulles';
 $string['settingusepopup_desc'] = 'Afficher la réponse correcte et le feedback dans une infobulle';
-$string['subqoptions'] = 'Options supplémentaires';
+$string['subqoptions'] = 'Paramètres de l\'unité';
 $string['subqtext'] = 'Texte de la partie';
-$string['subqtext_help'] = 'Le texte de la partie et les emplacements des champs de réponse peuvent être spécifiés ici.
-Les espaces réservés qui peuvent être utilisés pour marquer les emplacements des champs réponse sont :
+$string['subqtext_help'] = 'Le texte de la partie et les emplacements des champs de réponse peuvent être spécifiés ici. Les espaces réservés pouvant être utilisés pour spécifier l\'emplacement des champs de réponse sont les suivants :
 
 <pre class="prettyprint">{_0}<br>{_1}<br>{_2}<br>…<br>{_u}</pre>
 
-<tt> {_0}, {_1}, {_2} </tt> sont les emplacements des champs réponse pour les coordonnées et <tt> {_u} </tt> est la place du champ réponse pour l’unité.
+Les champs <tt>{_0}, {_1}, {_2}</tt> sont les différents champs de saisie pour les valeurs et <tt>{_u}</tt> est le champ de saisie pour l\'unité.
 
-Tous les champs manquants sont ajoutés automatiquement à la fin du texte de la partie.
-Un cas spécial est que si <tt> {_0} </tt> et <tt> {_u} </tt> sont spécifiés consécutivement, et que la réponse ne comporte qu’une coordonnée et une unité, c’est à dire. <tt> {_0}{_u} </tt>, ils seront combinés en un seul champ réponse long pour entrer à la fois la réponse et l’unité.';
+Tous les champs manquants sont automatiquement ajoutés à la fin du texte de la partie. Un cas particulier se présente lorsque <tt>{_0}</tt> et <tt>{_u}</tt> sont spécifiés consécutivement sans espace,
+et qu\'il n\'y a qu\'un seul champ de réponse et une seule unité, c\'est-à-dire <tt>{_0}{_u}</tt>. Ils seront alors combinés en un seul long champ de réponse pour la réponse et l\'unité.';
 $string['uniquecorrectansweris'] = 'La réponse correcte est : {$a}';
 $string['unit'] = 'Unité';
 $string['unitpenalty'] = 'Pénalité pour unité incorrecte (0-1)*';

@@ -47,7 +47,7 @@ $string['auth_invalidnewemailkey'] = 'Hata: E-posta adresinde bir değişikliği
 $string['auth_loginpasswordtoggle'] = 'Şifre görünürlüğü geçişi';
 $string['auth_loginpasswordtoggle_desc'] = 'Oturum açma ekranındaki parola alanına, kullanıcıların girdikleri parolayı göstermelerini veya gizlemelerini sağlayan bir simge ekleyin.';
 $string['auth_loginrecaptcha'] = 'Giriş için reCAPTCHA\'yı etkinleştirin';
-$string['auth_loginrecaptcha_desc'] = 'Oturum açma sayfasına görsel/sesli bir onay formu öğesi ekleyin. Bu, yersiz oturum açma girişimleri riskini azaltır. Daha fazla ayrıntı için <a target="_blank" href="https://www.google.com/recaptcha">Google reCAPTCHA</a> sayfasına bakın.';
+$string['auth_loginrecaptcha_desc'] = 'Giriş sayfasına görsel/sesli onay formu ögesi ekleyin. Bu, haksız giriş girişimlerinin riskini azaltır. Daha fazla ayrıntı için <a href="https://www.google.com/recaptcha">Google reCAPTCHA</a> sayfasına bakın.';
 $string['auth_multiplehosts'] = 'Birden çok alan adları VEYA adresler belirtilebilir. (örnek host1.com;host2.com;host3.com veya xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx)';
 $string['auth_notconfigured'] = '{$a} kimlik doğrulama yöntemi yapılandırılmadı.';
 $string['auth_outofnewemailupdateattempts'] = 'E-posta adresinizi güncellemek için izin verilen deneme sayısını aştınız. Güncelleme talebiniz iptal edildi.';
@@ -145,7 +145,7 @@ $string['potentialidps'] = 'Şu hesabınızla oturum açın:';
 $string['privacy:metadata:userpref:createpassword'] = 'Kullanıcı için bir şifre oluşturulması gerektiğini gösterir.';
 $string['privacy:metadata:userpref:forcepasswordchange'] = 'Kullanıcının oturum açtıktan sonra şifresini değiştirmesi gerekip gerekmediğini gösterir';
 $string['privacy:metadata:userpref:loginfailedcount'] = 'Kullanıcının oturum açamama sayısı';
-$string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = 'Kullanıcının son başarılı girişinden bu yana giriş yapamama sayısı';
+$string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = 'Kullanıcının son başarılı oturum açma işleminden bu yana oturum açmada başarısız olduğu sayı.';
 $string['privacy:metadata:userpref:loginfailedlast'] = 'Başarısız olan son giriş denemesinin kaydedildiği tarih';
 $string['privacy:metadata:userpref:loginlockout'] = 'Başarısız oturum açma girişimleri nedeniyle kullanıcının hesabının kilitlenip kilitlenmediği ve hesabın kilitlendiği tarih';
 $string['privacy:metadata:userpref:loginlockoutignored'] = 'Bir kullanıcının hesabının asla kilitlenmeye tabi olmaması gerektiğini belirtir';

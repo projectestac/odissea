@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['createlicense'] = 'Crea una llicència personalitzada';
 $string['createlicensebuttontext'] = 'Crea una llicència';
 $string['deletelicense'] = 'Esborra la llicència';
-$string['deletelicenseconfirmmessage'] = 'Esteu segur de voler esborrar aquesta llicència?';
+$string['deletelicenseconfirmmessage'] = 'Confirmeu que voleu esborrar aquesta llicència?';
 $string['deletelicensename'] = 'Esborra la llicència «{$a}»';
 $string['disablelicensename'] = 'Desactiva la llicència «{$a}»';
 $string['duplicatelicenseshortname'] = 'El nom curt de la llicència ha de ser únic.';

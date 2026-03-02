@@ -1,0 +1,48 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template qbank_purgecategory/categories
+
+    Template for displaying categories editing form.
+
+    Example context (json):
+    {
+        "categories": [{
+            "ctxlvl": "contextlevel70",
+            "heading": "Question categories for 'Quiz: qz'",
+            "items": [{
+                "categoryid": "1",
+                "contextid": "2",
+                "categoryname": "Default for Miscellaneous",
+                "haschildren": false,
+                "children": []
+            }]
+        }]
+    }
+}}
+{{#categories}}
+    <div class="box py-3 boxwidthwide boxaligncenter generalbox questioncategories {{ctxlvl}}">
+        <h3>{{heading}}</h3>
+        <ul>
+            {{#items}}
+                <li>
+                    {{> qbank_purgecategory/category }}
+                </li>
+            {{/items}}
+        </ul>
+    </div>
+{{/categories}}

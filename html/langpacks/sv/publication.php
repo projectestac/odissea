@@ -32,8 +32,6 @@ $string['allowedfiletypes_err'] = 'Kontrollera! Ogiltig filtyp eller ogiltiga te
 $string['allowedfiletypes_help'] = 'Godkända filtyper kan begränsas genom att ange en kommaseparerad lista med mimetyper, t.ex. \'video / mp4, audio / mp3, image / png, image / jpeg\' eller filtillägg inklusive en punkt, t.ex. \'.png, .jpg\'. Om fältet lämnas tomt är alla filtyper tillåtna.';
 $string['allowsubmissionsanddescriptionfromdatesummary'] = 'Uppgiftsinformationen och inlämningsformuläret kommer att vara tillgängliga från <strong>{$a} </strong>';
 $string['allowsubmissionsfromdate'] = 'Från';
-$string['allowsubmissionsfromdate_import'] = 'Medgivande kan ges från';
-$string['allowsubmissionsfromdate_upload'] = 'Filer kan laddas upp från';
 $string['allowsubmissionsfromdatesummary'] = 'Denna uppgift accepterar inlämningar från <strong>{$a}</strong>';
 $string['alwaysshowdescription'] = 'Visa alltid beskrivning';
 $string['alwaysshowdescription_help'] = 'Om inaktiverat kommer uppgiftsbeskrivningen ovan att visas endast för studenter från datumet "Tillåt inlämning från".';
@@ -63,8 +61,6 @@ $string['downloadall'] = 'Ladde ned alla som zip-fil';
 $string['duedate'] = 'Till';
 $string['duedate_help'] = 'Stoppdatum/tid är då inlämningen ska vara klar. Inlämningar kommer fortfarande att vara tillåtna efter detta datum men alla uppdrag som skickas in efter detta datum markeras som sena.
 För att förhindra inlämningar efter ett visst datum - ställ in uppgiftens Avstängningsdatum.';
-$string['duedate_import'] = 'Medgivande kan ges till';
-$string['duedate_upload'] = 'Filer kan laddas upp till';
 $string['duedatevalidation'] = 'Stoppdatum/tid måste vara senare än "Tillåt inlämningar från".';
 $string['edit_timeover'] = 'Filer kan bara redigeras under ändringsperioden.';
 $string['edit_uploads'] = 'Redigera / Ladda upp filer';

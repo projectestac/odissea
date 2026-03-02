@@ -31,7 +31,6 @@ $string['allowedfiletypes'] = 'Αποδεκτοί τύποι αρχείων';
 $string['allowedfiletypes_err'] = 'Ελέγξτε είσοδο! Μη έγκυρα διαχωριστικά ή επεκτάσεις αρχείων.';
 $string['allowsubmissionsanddescriptionfromdatesummary'] = 'Οι λεπτομέρειες της ανάθεσης και η φόρμα υποβολής θα είναι διαθέσιμα από <strong>{$a}</strong>';
 $string['allowsubmissionsfromdate'] = 'από';
-$string['allowsubmissionsfromdate_import'] = 'Έγκριση από';
 $string['allowsubmissionsfromdatesummary'] = 'Αυτή η ανάθεση θα δέχεται υποβολές από <strong>{$a}</strong>';
 $string['alwaysshowdescription'] = 'Πάντα εμφάνιση περιγραφής';
 $string['alwaysshowdescription_help'] = 'Εάν απενεργοποιηθεί, η παραπάνω περιγραφή ανάθεσης, θα γίνει ορατή στους μαθητές μόνο κατά την «Ημερομηνία έναρξης υποβολών».';

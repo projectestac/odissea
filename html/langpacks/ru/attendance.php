@@ -378,6 +378,7 @@ $string['notmember'] = 'не&nbsp;член';
 $string['notset'] = 'не задан';
 $string['nounmarkedstatusset'] = 'Для занятия (id:{$a->sessionid}) не настроен статус «не отмечено», чтобы исправить это, обновите <a href="{$a->url}">Набор статусов</a>.';
 $string['noupgradefromthisversion'] = 'Модуль «Посещаемость» не может быть обновлен с установленной у вас версии attforblock. - Удалите attforblock или обновите его до последней версии перед установкой нового модуля attendance';
+$string['nousers'] = 'Не найдено записанных пользователей, для которых можно отметить посещаемость.';
 $string['numsessions'] = 'Число занятий';
 $string['numsessionstaken'] = 'Количество отмеченных занятий';
 $string['olddate'] = 'Старая дата';

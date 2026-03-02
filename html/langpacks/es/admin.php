@@ -717,6 +717,8 @@ $string['geoipmaxmindaccid'] = 'ID de cuenta MaxMind';
 $string['geoipmaxmindaccid_desc'] = 'El ID de cuenta creado en el servicio de API de MaxMind';
 $string['geoipmaxmindlicensekey'] = 'Clave de licencia de MaxMind';
 $string['geoipmaxmindlicensekey_desc'] = 'La clave de licencia de la cuenta creada en el servidio de API de MaxMind';
+$string['geopluginapikey'] = 'Clave de API GeoPlugin';
+$string['geopluginapikey_desc'] = 'La clave de API para usar el servicio GeoPlugin. Se consigue en <a href="https://www.geoplugin.com/" target="_blank">geoplugin.com</a>.';
 $string['getremoteaddrconf'] = 'Fuente de direcciones IP registradas';
 $string['globalsearch'] = 'Búsqueda global';
 $string['globalsearchmanage'] = 'Administrar búsqueda global';
@@ -842,11 +844,10 @@ Su cuenta de usuario {$a->username} en el sitio "{$a->sitename}" ha sido bloquea
 
 Para desbloquear la cuenta de forma inmediata pulse en el siguiente enlace:
 
-{$a->link}
+<a href="{$a->link}">Unlock account</a>
 
-En la mayoría de programas de correo aparecerá como un enlace en azul sobre el que puede pulsar. Si no funciona, simplemente copie el texto del enlace y péguelo en la barra de direcciones de la parte superior de su navegador web.
-
-Si necesita ayuda, por favor contacte con el administrador del sitio, {$a->admin}';
+Si necesita ayuda, por favor contacte con el administrador del sitio.
+{$a->admin}';
 $string['lockoutemailsubject'] = 'Su cuenta en {$a} fue bloqueada';
 $string['lockouterrorunlock'] = 'Suministrada información no válida de bloqueo de cuenta.';
 $string['lockoutthreshold'] = 'Umbral de bloqueo de la cuenta';
@@ -952,6 +953,8 @@ $string['moodlebrandedapp'] = 'App Moodle de marca';
 $string['moodlebrandedapp_help'] = '<p>La App Moodle de marca tiene toda la funcionalidad de nuestra App móvil gratuita para Moodle combinada con las características de su marca personalizada propia.</p>
 <a href="https://moodle.com/branded-app">Acerca de la App Moodle de marca</a>';
 $string['moodlebrandedappreference'] = 'Alternativamente, obtenga una  <a href="https://moodle.com/branded-app/">Branded Moodle app (App Moodle de marca)</a> con su propio estilo personalizable.';
+$string['moodlenetremovalwarning'] = 'El servicio MoodleNet cerrará el 20 de abril de 2026. Si desea continuar usando MoodleNet en su situio, instale el plugin MoodleNet desde <a href="https://moodle.org/plugins" target="_blank">el directorio de plugins de Moodle <i class="fa fa-external-link" role="img" aria-label="Abre en nueva ventana" title="Abre en ventana nueva"></i></a> y conéctelo a una instancia de MoodleNet autoalojada.
+A continuación, el campo de perfil de ID de MoodleNet se eliminará; por favor, migre esos datos si los está usando para otros propósitos.';
 $string['moodlepartners'] = 'Moodle Partners (Socios Moodle)';
 $string['moodlepartners_help'] = '<p>Los Moodle Partners (Socios Moodle) son proveedores de servicio que están certificados por Moodle HQ para proporcionar servicios de alta calidad para el entorno de aprendizaje en línea de su organización.</p>
 <a href="https://moodle.com/about-partners/">Acerca de nuestros Socios</a><br />
@@ -1617,7 +1620,7 @@ $string['user'] = 'Usuario';
 $string['userbulk'] = 'Acciones de usuario masivas';
 $string['userbulkdownload'] = 'Exportar usuarios como';
 $string['userdefaultpreferences'] = 'Preferencias predeterminadas del usuario';
-$string['userfeedbackafterupgrade'] = 'Luego de cada actualización mayor';
+$string['userfeedbackafterupgrade'] = 'Después de cada actualización mayor';
 $string['userfeedbackencouragement'] = '<p>Moodle incluye una característica que permite al usuario la opción de proveer retroalimentación acerca del software Moodle a través de una encuesta externa almacenada en el sitio de Moodle HQ. No se envía ninguna información de usuarios al servidor de la encuesta.</p>
 <p>Moodle HQ se esfuerza para ser abierto y transparente acerca de sus prácticas de  recolección de información. Por esto, queremos asegurarnos que ud. está al tanto y en control de esta funcionalidad.</p>
 <p>La retroalimentación de los usuarios asistirá enormemente a Moodle HQ en mejorar el software Moodle. Para habilitar esta función, por favor, vaya a <a href="{$a}">Configuración de retroalimentación</a>.</p>';

@@ -48,7 +48,7 @@
     color: #fff;
     opacity: 0.8;
 }
-.format-tiles .badge-info {
+.format-tiles li.tile .badge-info {
     background-color: var(--format-tiles-colour);
 }
 .format-tiles .course-content .single-section .navigation-arrows .navigation-arrow:not(.dimmed):hover,

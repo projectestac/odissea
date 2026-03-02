@@ -63,7 +63,7 @@ Por ejemplo:
 Ayuda de la aplicación | https://someurl.xyz/help | inappbrowser
 Mis calificaciones | https://someurl.xyz/local/mygrades/index.php | embedded | es
 Mis calificaciones | https://someurl.xyz/local/mygrades/index.php | embedded | es
-Solo verá esto en inglés | https://someurl.xyz/english | browser | en_only
+Solo verá esto en inglés | https://someurl.xyz/spanish | browser | en_only
 </pre>';
 $string['darkmode'] = 'Modo oscuro';
 $string['disabledfeatures'] = 'Características deshabilitadas';

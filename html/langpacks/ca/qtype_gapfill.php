@@ -53,4 +53,4 @@ $string['pluginnamesummary'] = 'Una pregunta de buits. Té menys possibilitats q
 $string['questionsmissing'] = 'Encara no hi ha cap buit al text de la pregunta';
 $string['wronganswers'] = 'Respostes trampa.';
 $string['wronganswers_help'] = 'Llista de paraules incorrectes com a resposta destinades a disfressar les respostes correctes. Els mots es separen per comes, i la llista només s\'utilitza en els modes de resposta de llista de selecció i d\'arrossegat.';
-$string['yougotnrightcount'] = 'Fins ara, hi ha {$a->num} buits correctament emplenats.';
+$string['yougotnrightcount'] = 'Heu completat {$a->num} {$a->gaporgaps} correctament de {$a->outof}.';

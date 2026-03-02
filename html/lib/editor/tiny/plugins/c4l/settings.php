@@ -29,7 +29,6 @@ $ADMIN->add('editortiny', new admin_category('tiny_c4l', new lang_string('plugin
 $settings = new admin_settingpage('tiny_c4l_settings', new lang_string('pluginname', 'tiny_c4l'));
 
 if ($ADMIN->fulltree) {
-
     // Custom components settings.
     $settings->add(new admin_setting_heading('tiny_c4l/generalsettings', new lang_string('generalsettings', 'tiny_c4l'), ''));
 
@@ -38,6 +37,13 @@ if ($ADMIN->fulltree) {
     $desc = get_string('enablepreview_desc', 'tiny_c4l');
     $default = 1;
     $setting = new admin_setting_configcheckbox('tiny_c4l/enablepreview', $name, $desc, $default);
+    $settings->add($setting);
+
+    // Configure component docs.
+    $name = get_string('enabledocs', 'tiny_c4l');
+    $desc = get_string('enabledocs_desc', 'tiny_c4l');
+    $default = 1;
+    $setting = new admin_setting_configcheckbox('tiny_c4l/enabledocs', $name, $desc, $default);
     $settings->add($setting);
 
     // Configure available students' components.
@@ -67,6 +73,9 @@ if ($ADMIN->fulltree) {
         'duedate' => get_string('duedate', 'tiny_c4l'),
         'proceduralcontext' => get_string('proceduralcontext', 'tiny_c4l'),
         'gradingvalue' => get_string('gradingvalue', 'tiny_c4l'),
+        'aiuseallowed' => get_string('aiuseallowed', 'tiny_c4l'),
+        'aiusenotallowed' => get_string('aiusenotallowed', 'tiny_c4l'),
+        'aiusereported' => get_string('aiusereported', 'tiny_c4l'),
         'expectedfeedback' => get_string('expectedfeedback', 'tiny_c4l'),
         'learningoutcomes' => get_string('learningoutcomes', 'tiny_c4l'),
     ];
@@ -113,7 +122,6 @@ if ($ADMIN->fulltree) {
     }
 
     for ($componentindex = 1; $componentindex <= $customcompcount; $componentindex++) {
-
         // Header.
         $name = 'tiny_c4l/customcomptitle' . $componentindex;
         $title = get_string('customcomptitle', 'tiny_c4l', $componentindex);
@@ -172,5 +180,4 @@ if ($ADMIN->fulltree) {
         $setting = new admin_setting_configtext($name, $title, $description, $componentindex, PARAM_INT);
         $settings->add($setting);
     }
-
 }

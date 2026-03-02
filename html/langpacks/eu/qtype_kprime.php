@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configintro'] = 'Kprime galderetarako balore lehenetsiak.';
+$string['configintro'] = 'Kprime galderetarako balio lehenetsiak.';
 $string['configscoringmethod'] = 'Kprime galderetarako kalifikazio-metodo lehenetsia.';
 $string['configshuffleanswers'] = 'Kprime galderetako aukerak nahasteko lehenetsitako ezarpena';
 $string['correctresponse'] = 'Erantzun zuzena';
@@ -39,8 +39,8 @@ $string['feedbackforoption'] = '{$a} aukerarako feedbacka';
 $string['generalfeedback'] = 'Feedback orokorra';
 $string['generalfeedback_help'] = 'Feedback orokor bera erakusten da aukeratutako erantzuna edozein izanik ere.';
 $string['maxpoints'] = 'Gehieneko puntuazioa';
-$string['mustsupplyresponses'] = 'Erantzun guztietarako baloreak eman behar dituzu.';
-$string['mustsupplyvalue'] = 'Balore bat eman behar duzu hemen.';
+$string['mustsupplyresponses'] = 'Erantzun guztietarako balioak eman behar dituzu.';
+$string['mustsupplyvalue'] = 'Balio bat eman behar duzu hemen.';
 $string['numberchoicehaschanged'] = 'Aukera-kopurua aldatu da. Saiakerak ezin dira berriro kalifikatu.';
 $string['oneanswerperrow'] = 'Eman erantzuna galderaren atal guztiei, mesedez.';
 $string['optionno'] = '{$a} aukera';

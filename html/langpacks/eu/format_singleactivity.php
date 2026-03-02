@@ -36,4 +36,4 @@ $string['plugin_description'] = 'Ikastaroak jarduera ala baliabide bakarra dauka
 $string['pluginname'] = 'Jarduera bakarra';
 $string['privacy:metadata'] = 'Jarduera bakarreko formatua pluginak ez du datu pertsonalik biltzen.';
 $string['sectionname'] = '';
-$string['warningchangeformat'] = 'Ikastaroaren formatua oraingo "Jarduera bakarrekoa"tik aldatzean ziurtatu ikastaroko aparteko jarduera guztiak kendu direla, baita "Albisteak" foroari dagozkionak ere. Kontuan izan atalen egitura aldatu egin daitekeela.';
+$string['warningchangeformat'] = 'Ikastaroaren oraingo formatua "Jarduera bakarra" formatura aldatzean ziurtatu ikastaroko bestelako jarduera guztiak kendu dituzula, baita "Albisteak" foroari dagozkionak ere. Kontuan izan atalen egitura aldatu egin daitekeela.';

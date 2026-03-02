@@ -55,7 +55,7 @@ $string['enrolstartdate'] = 'Data d\'inici';
 $string['enrolstartdate_help'] = 'Si s\'habilita, els usuaris només es poden inscriure a partir d\'aquest període';
 $string['expiredaction'] = 'Acció de venciment de la inscripció';
 $string['expiredaction_help'] = 'Seleccioneu l\'acció a realitzar quan la inscripció de l\'usuari venciment. Tingueu en compte que algunes dades d\'usuari i configuracions es suprimeixen  del curs durant la cancel·lació de la inscripció del curs.';
-$string['expirymessageenrolledbody'] = 'Estimat/da {$a->user},
+$string['expirymessageenrolledbody'] = 'Benvolgut / Benvolguda {$a->user},
 
 Aquesta és una notificació per comunicar-vos que la inscripció al curs «{$a->course}» és a punt de vèncer el {$a->timeend}.
 

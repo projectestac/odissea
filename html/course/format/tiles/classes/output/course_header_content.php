@@ -29,7 +29,6 @@ namespace format_tiles\output;
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class course_header_content extends \format_tiles\output\course_output {
-
     /**
      * Export the course data for the mustache template.
      * @param \renderer_base $output

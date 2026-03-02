@@ -23,7 +23,6 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class format_tiles_renderer {
-
     // This is a legacy file to avoid exceptions and to flag changes to developers.
     // Methods have been removed from this file to align it with the core renderer /course/format/renderer.php.
     // Core course formats "Topics" and "Weeks" do the same.

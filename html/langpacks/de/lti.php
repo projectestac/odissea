@@ -109,8 +109,8 @@ $string['createdon'] = 'Erstellt am';
 $string['curllibrarymissing'] = 'PHP-Extension curl ist notwendig für das externe Tool.';
 $string['custom'] = 'Angepasste Parameter';
 $string['custom_config'] = 'Angepasste Tool-Konfiguration verwenden';
-$string['custom_help'] = 'Angepasste Parameter sind Einstellungen, die vom Tool Provider genutzt werden. Beispiel: eine Parameter kann die Nutzung einer Ressource des Providers sein.
-Jeder Parameter ist in einer eigenenZeile einzugeben. Die Eingabe erfolgt nach folgender Regel: "name=value"; z.B. "chapter=3".
+$string['custom_help'] = 'Angepasste Parameter sind Einstellungen, die vom Tool Provider genutzt werden. Beispiel: ein Parameter kann die Nutzung einer Ressource des Providers sein.
+Jeder Parameter ist in einer eigenen Zeile einzugeben. Die Eingabe erfolgt nach folgender Regel: "name=value"; z.B. "chapter=3".
 
 Wenn keine direkten Hinweise des Tool Providers vorliegen, ist es am sichersten das Feld leer zu lassen.';
 $string['custominstr'] = 'Angepasste Parameter';
@@ -220,7 +220,7 @@ $string['indicator:socialbreadthdef'] = 'LTI sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die LTI-Aktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein, Teilnahme mit anderen).';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['initiatelogin'] = 'Anmelde-URL';
-$string['initiatelogin_help'] = 'Die Tool-URL, an die Anfragen zur Initiierung eines Logins gesendet werden sollen. Diese URL ist erforderlich, bevor eine Nachricht erfolgreich an das Tool gesendet werden kann.';
+$string['initiatelogin_help'] = 'Die Tool-URL, an die Anfragen zur Initiierung einer Anmeldung gesendet werden sollen. Diese URL ist erforderlich, bevor eine Nachricht erfolgreich an das Tool gesendet werden kann.';
 $string['invalidid'] = 'LTI ID war fehlerhaft';
 $string['jwtsecurity'] = 'LTI 1.3';
 $string['keytype'] = 'Öffentlicher Schlüsseltyp';

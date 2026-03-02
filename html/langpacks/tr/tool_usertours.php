@@ -160,7 +160,7 @@ $string['target_block'] = 'Blok';
 $string['target_heading'] = 'Adım hedefi';
 $string['target_selector'] = 'Seçici';
 $string['target_selector_targetvalue'] = 'CSS seçici';
-$string['target_selector_targetvalue_help'] = 'Bir CSS seçici, sayfadaki hemen hemen her öğeyi hedeflemek için kullanılabilir. Uygun seçici, web tarayıcınızın geliştirici araçları kullanılarak kolayca bulunabilir.';
+$string['target_selector_targetvalue_help'] = 'Bir CSS seçici, sayfadaki hemen hemen her ögeyi hedeflemek için kullanılabilir. Uygun seçici, web tarayıcınızın geliştirici araçları kullanılarak kolayca bulunabilir.';
 $string['target_unattached'] = 'Sayfanın ortasında görüntüleme';
 $string['targettype'] = 'Hedef türü';
 $string['targettype_help'] = 'Her adım sayfanın bir bölümü ile ilişkilendirilir - hedef. Hedef türleri şunlardır:
@@ -252,7 +252,7 @@ $string['tour_activityinfo_course_teacher_content'] = 'Yeni kurs ayarları "Tama
 $string['tour_activityinfo_course_teacher_title'] = 'Yeni: Etkinlik bilgileri';
 $string['tour_final_step_content'] = 'Bu, kullanıcı turunuzun sonu.  Altbilgideki bağlantıyı kullanarak sıfırlamadığınız sürece tekrar gösterilmez.';
 $string['tour_final_step_title'] = 'Turun sonu';
-$string['tour_gradebook_action_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_action_menu::tool_usertours@@</div>Sütunları sıralayın ve hangilerinin görüntüleneceğini seçin.  Düzenleme modunda, not öğelerini görüntüleme ve düzenlemeyle ilgili sık kullanılan görevlere erişmek için bu kısayolu kullanın.';
+$string['tour_gradebook_action_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_action_menu::tool_usertours@@</div>Sütunları sıralayın ve hangilerinin görüntüleneceğini seçin.  Düzenleme modunda, not ögelerini görüntüleme ve düzenlemeyle ilgili sık kullanılan görevlere erişmek için bu kısayolu kullanın.';
 $string['tour_gradebook_action_title'] = 'Eylemlere hızlı bağlantılar';
 $string['tour_gradebook_filter_content'] = '<div class="text-center">@@PIXICON::tour/tour_grader_report_initials::tool_usertours@@</div>Öğrencileri adlarının veya soyadlarının baş harflerine göre filtreleyin.';
 $string['tour_gradebook_filter_title'] = 'İsme göre filtrele';

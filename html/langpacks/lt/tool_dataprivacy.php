@@ -104,7 +104,7 @@ $string['dataretentionexplanation'] = 'Šioje santraukoje pateikiamos naudotojo 
 $string['dataretentionsummary'] = 'Duomenų saugojimo santrauka';
 $string['datecomment'] = '[{$a->date}]:
  {$a->comment}';
-$string['daterequested'] = 'Prašoma data';
+$string['daterequested'] = 'Prašymo data';
 $string['daterequesteddetail'] = 'Date requested:';
 $string['defaultexpired'] = 'Duomenys visiems naudotojams';
 $string['defaultexpiredexcept'] = 'Duomenys apie visus naudotojus, išskyrus tuos, kurie atlieka bet kurį iš šių vaidmenų:<br>

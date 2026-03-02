@@ -65,12 +65,12 @@ $string['messageinboundgeneralconfiguration_desc'] = 'Moodle kann eingehende E-M
 $string['messageinboundhost'] = 'Eingehender E-Mail-Server';
 $string['messageinboundhostoauth_help'] = 'OAuth2-Dienst, mit dessen Hilfe die XOAuth2-Authentifizierung auf den IMAP-Server zuzugreifen. Wenn der Dienst noch nicht vorhanden ist, müssen Sie ihn erstellen.';
 $string['messageinboundhostpass'] = 'Kennwort';
-$string['messageinboundhostpass_desc'] = 'Dieses Kennwort haben Sie für den Login zum E-Mail-Postfach hinterlegt.';
+$string['messageinboundhostpass_desc'] = 'Dieses Kennwort hat Ihnen Ihr E-Mail-Anbieter für die Anmeldung bei Ihrem E-Mail-Konto mitgeteilt.';
 $string['messageinboundhostssl'] = 'SSL verwenden';
 $string['messageinboundhostssl_desc'] = 'Einige E-Mail-Server unterstützen die Verschlüsselung der Kommunikation zwischen Moodle und dem Server. Wir empfehlen die Nutzung der SSL Verschlüsselung wenn dies auf Ihrem Server unterstützt wird.';
 $string['messageinboundhosttype'] = 'Servertyp';
 $string['messageinboundhostuser'] = 'Nutzername';
-$string['messageinboundhostuser_desc'] = 'Diesen Nutzernamen haben Sie für den Login zum E-Mail-Postfach hinterlegt.';
+$string['messageinboundhostuser_desc'] = 'Diesen Nutzernamen hat Ihnen Ihr E-Mail-Anbieter für die Anmeldung bei Ihrem E-Mail-Konto mitgeteilt.';
 $string['messageinboundmailboxconfiguration_desc'] = 'Wenn Mitteilungen versandt werden, nutzen Sie das Format address+data@example.com. Um zuverlässige E-Mail-Adressen zu erzeugen legen Sie die Adressen, die Sie vor und nach dem @-Zeichen verwenden, getrennt an.  Der Mailboxname in dem Beispiel oben wäre \'address\' und die E-Mail-Domain lautet \'example.com\'. Verwenden Sie für diesen Zweck eine gesonderte E-Mail-Adresse.';
 $string['messageprocessingerror'] = 'Sie haben vor kurzem eine E-Mail "{$a->subject}" versendet. Diese konnte leider nicht zugestellt werden.
 

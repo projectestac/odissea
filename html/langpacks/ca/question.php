@@ -196,8 +196,9 @@ $string['eventquestionviewed'] = 'S\'ha visualitzat la pregunta';
 $string['export'] = 'Exporta';
 $string['exportasxml'] = 'Exporta com a XML de Moodle';
 $string['exportcategory'] = 'Exporta categoria';
-$string['exportcategory_help'] = '<p>Aquest paràmetre determina la categoria de la qual s\'exportaran les preguntes.</p>
-<p>Alguns formats d\'importació, com ara el GIFT i XML de Moodle, permeten copiar la categoria i el context al fitxer exportat, i això permet (opcionalment) recrear-los en una importació. Si cal, és recomanable que marqueu els quadres de selecció adequats.';
+$string['exportcategory_help'] = 'Aquest paràmetre determina la categoria de la qual s\'extrauran les preguntes exportades.
+
+Alguns formats d\'importació, com ara GIFT i XML de Moodle, permeten incloure dades de categoria i context al fitxer d\'exportació, cosa que permet (opcionalment) recrear-les en importar. Si es requereix, cal marcar les caselles de selecció corresponents.';
 $string['exporterror'] = 'Errors durant l\'exportació!';
 $string['exportfilename'] = 'preguntes';
 $string['exportnameformat'] = '%Y%m%d-%H%M';
@@ -242,8 +243,9 @@ $string['idnumber_help'] = 'Si l\'utilitzeu, el nombre ID ha de ser únic dins d
 $string['ignorebroken'] = 'Ignora enllaços trencats';
 $string['import'] = 'Importa';
 $string['importcategory'] = 'Importació d\'una categoria';
-$string['importcategory_help'] = '<p>Aquest paràmetre determina la categoria cap a on aniran les preguntes importades.</p>
-<p>Alguns formats d\'importació, com ara el GIFT i XML de Moodle poden incloure la categoria i el context en el fitxer d\'importació. Per utilitzar aquesta informació, en lloc de la categoria seleccionada, cal haver marcat els quadres de selecció pertinents. Si les categories al fitxer d\'importació no es troben, se\'n crearan de noves.';
+$string['importcategory_help'] = 'Aquest paràmetre determina la categoria cap a on aniran les preguntes importades.
+
+Alguns formats d\'importació, com ara el GIFT i XML de Moodle poden incloure la categoria i el context en el fitxer d\'importació. Per utilitzar aquesta informació, en lloc de la categoria seleccionada, cal haver marcat els quadres de selecció pertinents. Si les categories al fitxer d\'importació no es troben, se\'n crearan de noves.';
 $string['importerror'] = 'S\'ha produït un error en el procés d\'importació.';
 $string['importerrorquestion'] = 'Error en importar la pregunta.';
 $string['importfromcoursefiles'] = '... o escolliu un fitxer de curs per importar.';
@@ -306,11 +308,11 @@ $string['moveq'] = 'Mou la o les preguntes';
 $string['moveqtoanothercontext'] = 'Mou la pregunta a un altre context';
 $string['moveto'] = 'Mou a';
 $string['movingcategory'] = 'S\'està movent la categoria';
-$string['movingcategoryandfiles'] = 'Segur que voleu moure la categoria {$a->name}, i totes les categories que en són filles, al context "{$a->contextto}"?<br />S\'han detectat {$a->urlcount} fitxers enllaçats des de preguntes en {$a->fromareaname}. Voleu copiar o moure aquests fitxers a {$a->toareaname}?';
-$string['movingcategorynofiles'] = 'Segur que voleu moure la categoria {$a->name}, i totes les categories que en són filles, al context "{$a->contextto}"?';
+$string['movingcategoryandfiles'] = 'Segur que voleu moure la categoria {$a->name}, i totes les categories que en són filles, al context «{$a->contextto}»?<br />S\'han detectat {$a->urlcount} fitxers enllaçats des de preguntes a {$a->fromareaname}. Voleu copiar o moure aquests fitxers a {$a->toareaname}?';
+$string['movingcategorynofiles'] = 'Segur que voleu moure la categoria {$a->name}, i totes les categories que en són filles, al context «{$a->contextto}»?';
 $string['movingquestions'] = 'S\'estan movent les preguntes i els fitxers';
-$string['movingquestionsandfiles'] = 'Segur que voleu moure les preguntes {$a->questions} al context <strong>"{$a->tocontext}"</strong>?<br />S\'han detectat {<strong>{$a->urlcount} fitxers</strong> enllaçats des d\'aquestes preguntes en {$a->fromareaname}. Voleu copiar o moure aquests fitxers a {$a->toareaname}?';
-$string['movingquestionsnofiles'] = 'Segur que voleu moure les preguntes {$a->questions} al context <strong>"{$a->tocontext}"</strong>?<br />No s\'ha detectat <strong>cap fitxer</strong> enllaçat des d\'aquestes preguntes en {$a->fromareaname}.';
+$string['movingquestionsandfiles'] = 'Segur que voleu moure les preguntes {$a->questions} al context <strong>«{$a->tocontext}»</strong>?<br />S\'han detectat {<strong>{$a->urlcount} fitxers</strong> enllaçats des d\'aquestes preguntes a {$a->fromareaname}. Voleu copiar o moure aquests fitxers a {$a->toareaname}?';
+$string['movingquestionsnofiles'] = 'Segur que voleu moure les preguntes {$a->questions} al context <strong>«{$a->tocontext}«</strong>?<br />No s\'ha detectat <strong>cap fitxer</strong> enllaçat des d\'aquestes preguntes a {$a->fromareaname}.';
 $string['needtochoosecat'] = 'Heu de triar una categoria on moure aquesta pregunta o cancel·lar.';
 $string['nocate'] = 'No es troba la categoria {$a} (!)';
 $string['noconditionspecified'] = 'Especifiqueu una condició';

@@ -75,7 +75,7 @@ $string['check_frontpagerole_error'] = 'Yanlış tanımlanmış ana sayfa rolü 
 $string['check_frontpagerole_name'] = 'Ana sayfa rolü';
 $string['check_frontpagerole_notset'] = 'Ana sayfa rolü ayarlanmadı';
 $string['check_frontpagerole_ok'] = 'Ana sayfa rol tanımı uygundur.';
-$string['check_guestrole_details'] = '<p>Konuk rolü, giriş yapmayan konuklar ve geçici konuk dersi erişimi için değil, konuklar için kullanılır. Lütfen bu rolde riskli yeteneklere izin verilmediğinden emin olun.</p>
+$string['check_guestrole_details'] = '<p>Konuk rolü; konuklar, giriş yapmamış kullanıcılar ve geçici konuk kurs erişimi için kullanılır. Lütfen bu rolde riskli yeteneklere izin verilmediğinden emin olun.</p>
 <p>Konuk rolü için tek desteklenen devralınan tip <em>Konuk</em>tur.</p>';
 $string['check_guestrole_error'] = 'Konuk rolü "{$a}" yanlış tanımlanmıştır!';
 $string['check_guestrole_name'] = 'Konuk rolü';

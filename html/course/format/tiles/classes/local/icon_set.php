@@ -30,7 +30,6 @@ namespace format_tiles\local;
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class icon_set {
-
     /**
      * These are shown on tiles.  The teacher chooses which one to apply to each tile or course.
      * To make more icons available to a teacher, add them here using the set at https://fontawesome.com/v4.7.0/icons/.

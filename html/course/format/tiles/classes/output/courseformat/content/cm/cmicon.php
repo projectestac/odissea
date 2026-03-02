@@ -32,7 +32,6 @@ namespace format_tiles\output\courseformat\content\cm;
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class cmicon extends \core_courseformat\output\local\content\cm\cmicon {
-
     /**
      * Export this data so it can be used as the context for a mustache template.
      *

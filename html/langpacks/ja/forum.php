@@ -65,6 +65,7 @@ $string['blockperiod'] = 'ブロッキング期間';
 $string['blockperiod_help'] = '指定された時間内に指定された投稿数以上を投稿した場合、学生の投稿を拒否することができます。ケイパビリティ「mod/forum:postwithoutthrottling」が割り当てられたユーザは投稿制限から除外されます。';
 $string['blockperioddisabled'] = 'ブロックしない';
 $string['blogforum'] = 'ブログフォーマットで表示される標準フォーラム';
+$string['browsediscussions'] = 'ディスカッションを閲覧する';
 $string['bynameondate'] = '{$a->date} - {$a->name} の投稿';
 $string['cachedef_forum_count_discussions'] = 'フォーラムディスカッションカウント';
 $string['cachedef_forum_is_tracked'] = 'ユーザのフォーラムトラッキングステータス';

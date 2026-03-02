@@ -717,7 +717,7 @@ $string['emaildigest_help'] = 'Numatytieji forumo skelbimų santraukos nustatyma
 * Santrauka – Viskas - Jūs gausite po  el. laišką su pilnu kiekvieno forumo skelbimo turiniu;
 * Santrauka - Temos - Jūs gausite vieną el. laišką per dieną su kiekvieno forumo skelbimo temomis.
 Taip pat, jei norite, Jūs galite parinkti skirtingus nustatymus kiekvienam forumui atskirai.';
-$string['emaildigestcomplete'] = 'Viskas (kasdienis el. laiškas su visais skelbimais)';
+$string['emaildigestcomplete'] = 'Viskas (kasdienis el. laiškas su visais įrašais)';
 $string['emaildigestoff'] = 'Be santraukos (atskiras el. laiškas kiekvienam forumo skelbimui)';
 $string['emaildigestsubjects'] = 'Temos (kasdienis el. laiškas tik su skelbimų temomis)';
 $string['emaildisable'] = 'Šis el. pašto adresas yra išjungtas';
@@ -2401,7 +2401,7 @@ $string['visible_help'] = 'Šis parametras nurodo, ar kursai rodomi kursų sąra
 $string['visibletostudents'] = 'Kam matoma: {$a}';
 $string['warning'] = 'Įspėjimas';
 $string['warningdeleteresource'] = 'Įspėjimas: {$a} yra nurodytas ištekliuje. Ar norėtumėte atnaujinti išteklių?';
-$string['wcagcheck'] = 'Žiniatinklio turinio pritaikomumo gairių (WCAG) patikra';
+$string['wcagcheck'] = 'Žiniatinklio turinio Prieinamumo gairių (WCAG) patikra';
 $string['webpage'] = 'Tinklalapis';
 $string['week'] = 'Savaitė';
 $string['weekhide'] = 'Slėpti šią savaitę nuo {$a}';

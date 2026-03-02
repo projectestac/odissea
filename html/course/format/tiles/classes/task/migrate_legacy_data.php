@@ -32,7 +32,6 @@ namespace format_tiles\task;
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class migrate_legacy_data extends \core\task\adhoc_task {
-
     /**
      * Run the migration task.
      */

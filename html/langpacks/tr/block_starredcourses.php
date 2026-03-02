@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['displaycategories'] = 'Kategorileri göster';
-$string['displaycategories_help'] = 'Yıldızlı kurslar blok öğeleri üzerinde kurs kategorisini görüntüleyin.';
+$string['displaycategories_help'] = 'Yıldızlı kurslar blok ögeleri üzerinde kurs kategorisini görüntüleyin.';
 $string['nocourses'] = 'Yıldızlı kurs yok';
 $string['pluginname'] = 'Yıldızlı kurslar';
 $string['privacy:metadata'] = 'Yıldızlı kurslar bloğu herhangi bir kişisel veriyi saklamaz.';

@@ -27,10 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['absoluteposition'] = 'Mutlak pozisyon';
 $string['addmultipleanswers'] = '{$a} öğe daha ekle';
-$string['addsingleanswer'] = 'Bir öğe daha ekle';
+$string['addsingleanswer'] = 'Bir öge daha ekle';
 $string['allornothing'] = 'Tümü yada hiçbiri';
 $string['answer'] = 'Öğe metni';
-$string['correctitemsnumber'] = 'Doğru öğeler: {$a}';
+$string['correctitemsnumber'] = 'Doğru ögeler: {$a}';
 $string['correctorder'] = 'Bu öğelerin doğru sırası şöyledir:';
 $string['defaultanswerformat'] = 'Varsayılan cevap biçimi';
 $string['defaultquestionname'] = 'Aşağıdaki öğeleri doğru sıraya sürükleyin.';
@@ -40,22 +40,22 @@ $string['duplicatesnotallowed'] = 'Sürüklenebilir öğelerin çoğaltılmasın
 $string['editingordering'] = 'Sıralama sorusunu düzenleniyor';
 $string['gradedetails'] = 'Not detayları';
 $string['gradingtype'] = 'Not verme türü';
-$string['gradingtype_help'] = '**Herşey ya da hiçbirşey**
-&nbsp;  Bütün maddeler doğru pozisyonda ise, tam puan verilir. Aksi takdirde puan sıfırdır.
+$string['gradingtype_help'] = '**Her şey ya da hiçbir şey**
+Bütün maddeler doğru pozisyonda ise, tam puan verilir. Aksi takdirde puan sıfırdır.
 
 ** Mutlak pozisyon **
-: Bir öğe, doğru cevapta olduğu gibi aynı konumdaysa, doğru sayılır. Soru için mümkün olan en yüksek puanı öğrenciye gösterilen öğelerin sayısı ile **aynıdır**.
+Bir öge, doğru cevapta olduğu gibi aynı konumdaysa, doğru sayılır. Soru için mümkün olan en yüksek puanı öğrenciye gösterilen ögelerin sayısı ile **aynıdır**.
 
 **Doğru pozisyona göre**
-&nbsp; Bir öğe, doğru cevapta olduğu gibi aynı konumdaysa doğru olarak kabul edilir. Doğru öğeler, görüntülenen öğe sayısı eksi bire eşit bir puan alır. Yanlış öğeler, görüntülenen öğe sayısından bir eksiğine ve öğenin doğru konumundan uzaklığına eşit bir puan alır. Dolayısıyla, öğrenciye ***n*** madde gösterilirse, her madde için mevcut puan sayısı ***(n - 1)***\'dir ve soru için mevcut en yüksek puan ***n x (n - 1)***\'dir, bu da ***(n² - n)*** ile aynıdır.
+Bir öge, doğru cevapta olduğu gibi aynı konumdaysa doğru olarak kabul edilir. Doğru ögeler, görüntülenen öge sayısı eksi bire eşit bir puan alır. Yanlış ögeler, görüntülenen öge sayısından bir eksiğine ve ögenin doğru konumundan uzaklığına eşit bir puan alır. Dolayısıyla, öğrenciye ***n*** madde gösterilirse, her madde için mevcut puan sayısı ***(n - 1)***\'dir ve soru için mevcut en yüksek puan ***n x (n - 1)***\'dir, bu da ***(n² - n)*** ile aynıdır.
 
 
-** Bir sonraki öğeye göre (son hariç) **
-: Bir öğe, doğru cevabın aynısı olduğu takdirde doğru kabul edilir. Son konumdaki öğe kontrol edilmez. Böylece, soru için mümkün olan en yüksek skor ** öğrenciye gösterilen öğelerin sayısından ** bir düşüktür.
+** Bir sonraki ögeye göre (son hariç) **
+Bir öge, doğru cevabın aynısı olduğu takdirde doğru kabul edilir. Son konumdaki öge kontrol edilmez. Böylece, soru için mümkün olan en yüksek skor ** öğrenciye gösterilen ögelerin sayısından ** bir düşüktür.
 
 
-** Bir sonraki öğeye göre (son dahil) **
-: Bir öğenin, doğru cevabın aynısı olduğu takdirde doğru kabul edilir. Bu, takip eden hiçbir öğenin bulunmaması,  gereken son öğeyi içerir. Böylece, soru için mümkün olan en yüksek puan ** ** öğrenciye gösterilen öğelerin sayısı ile aynıdır.
+** Bir sonraki ögeye göre (son dahil) **
+Bir ögenin, doğru cevabın aynısı olduğu takdirde doğru kabul edilir. Bu, takip eden hiçbir ögenin bulunmaması,  gereken son ögeyi içerir. Böylece, soru için mümkün olan en yüksek puan ** ** öğrenciye gösterilen ögelerin sayısı ile aynıdır.
 
 
 ** Önceki ve sonraki öğelere göre **
@@ -74,7 +74,7 @@ $string['gradingtype_help'] = '**Herşey ya da hiçbirşey**
 : Not, öğelerin en uzun bitişik alt kümesindeki öğe sayısıdır. Olası en yüksek not, görüntülenen öğe sayısıyla aynıdır. Bir alt kümenin en az iki öğesi olmalıdır. Alt kümelerin ilk maddenin başında olması gerekmez (ancak yapılabilir) ve KONUMLANDIRILMALIDIR. Eşit uzunluktaki birden çok alt küme varsa, soldan sağa arama yaparken önce bulunan alt kümedeki öğeler doğru olarak görüntülenir. Diğer öğeler yanlış olarak işaretlenecek.';
 $string['highlightresponse'] = 'Cevabı doğru veya yanlış olarak vurgulayın';
 $string['horizontal'] = 'Yatay';
-$string['incorrectitemsnumber'] = 'Yanlış öğeler: {$a}';
+$string['incorrectitemsnumber'] = 'Yanlış ögeler: {$a}';
 $string['layouttype'] = 'Öğelerin yerleşimi';
 $string['layouttype_help'] = 'Öğeleri dikey veya yatay olarak görüntüleyip görüntülemeyeceğinizi seçin.';
 $string['longestcontiguoussubset'] = 'En uzun bitişik altküme';
@@ -85,13 +85,13 @@ $string['moveright'] = 'Sağa dön.';
 $string['noresponsedetails'] = 'Üzgünüz, bu sorunun yanıtına ilişkin hiçbir ayrıntı mevcut değil.';
 $string['noscore'] = 'Puan yok';
 $string['notenoughanswers'] = 'Sıralama sorularının {$a}\'dan daha fazla cevabı olmalıdır.';
-$string['notenoughsubsetitems'] = 'Bir alt kümenin en az {$a} öğeye sahip olması gerekir.';
+$string['notenoughsubsetitems'] = 'Bir alt kümenin en az {$a} ögeye sahip olması gerekir.';
 $string['numberingstyle'] = 'Seçenekleri numaralandıralım mı?';
 $string['numberingstyle123'] = '1., 2., 3., ...';
 $string['numberingstyleABCD'] = 'A., B., C., ...';
 $string['numberingstyleIIII'] = 'I., II., III., ...';
 $string['numberingstyle_desc'] = 'Varsayılan numaralandırma stili.';
-$string['numberingstyle_help'] = 'Bu soruda sürüklenebilir öğeler için numaralandırma stilini seçin.';
+$string['numberingstyle_help'] = 'Bu soruda sürüklenebilir ögeler için numaralandırma stilini seçin.';
 $string['numberingstyleabc'] = 'a., b., c., ...';
 $string['numberingstyleiii'] = 'i., ii., iii., ...';
 $string['numberingstylenone'] = 'Numaralandırma yok';

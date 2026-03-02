@@ -734,13 +734,6 @@ function simple_add_module_image($data): void
                 $fileinfo['filename'] = $data->default_image;
                 $frompath = "$CFG->dirroot/course/format/simple/pix/" . $data->default_image;
                 $fs->create_file_from_pathname($fileinfo, $frompath);
-            } else {
-                // Copy only in the database!
-                $file = $fs->get_file_by_id($data->default_image);
-                if ($file) {
-                    $fileinfo['filename'] = $file->get_filename();
-                    $fs->create_file_from_storedfile($fileinfo, $file->get_id());
-                }
             }
         }
 
@@ -765,11 +758,11 @@ function simple_add_module_image($data): void
  * Deletes the selected imatge to the course module from the form.
  *
  * @param $cmid
- * @param bool $context
+ * @param bool|\core\context\module $context
  * @throws coding_exception
  * @return void
  */
-function simple_delete_module_image($cmid, bool $context = false): void
+function simple_delete_module_image($cmid, bool|\core\context\module $context = false): void
 {
     if (!$context) {
         $context = context_module::instance($cmid, IGNORE_MISSING);

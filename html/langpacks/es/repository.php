@@ -262,6 +262,7 @@ $string['unknownoriginal'] = 'Desconocido';
 $string['unknownsource'] = 'Origen desconocido';
 $string['unzipped'] = 'Descomprimido con éxito';
 $string['upload'] = 'Subir este archivo';
+$string['uploaderror'] = 'Error en la subida de archivo';
 $string['uploading'] = 'Subiendo...';
 $string['uploadsucc'] = 'El archivo ha sido subido con éxito';
 $string['uselatestfile'] = 'Usar archivo más nuevo';

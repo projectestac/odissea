@@ -717,7 +717,7 @@ class com_wiris_quizzes_impl_QuizzesImpl extends com_wiris_quizzes_api_Quizzes {
 					unset($words,$splitByRegularSp);
 				}
 				if($isPlainTextField || $isStringSyntax || $hasMultiletterIdentifierInTextFormat) {
-					$value = $qi->expandVariablesText($value);
+					$value = $qi->expandVariablesTextEval($value);
 				} else {
 					$value = $qi->expandVariablesMathMLEval($value);
 				}

@@ -90,9 +90,13 @@ $string['emailnowexists'] = 'Zure profilari ezarri nahi diozun helbide elektroni
 $string['emailupdate'] = 'Eguneratu helbide elektronikoa';
 $string['emailupdatemessage'] = 'Kaixo, {$a->firstname}:
 
-Zure kontuko helbide elektronikoa aldatzeko eskaria egin duzu {$a->site} gunean. Aldaketa hau baieztatzeko joan mesedez ondorengo web helbidera:
+Zure kontuko helbide elektronikoa aldatzeko eskaria egin duzu {$a->site} gunean.
 
-{$a->url}
+Aldaketa hau baieztatzeko egin klik ondorengo esteka honetan:
+
+<a href="{$a->url}">Baieztatu helbide elektroniko aldaketa</a>
+
+
 Berreste-esteka <b>10 minututan</b> iraungiko da.
 
 {$a->supportemail}';

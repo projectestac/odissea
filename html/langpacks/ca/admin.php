@@ -350,7 +350,7 @@ $string['confignavshowcategories'] = 'Mostra les categories dels cursos a la bar
 $string['confignoreplyaddress'] = 'Alguns missatges de correu són tramesos en nom d\'un usuari (p. ex., els missatges dels fòrums). L\'adreça de correu que especifiqueu aquí s\'utilitzarà com a remitent («From») quan no es vol que el destinatari pugui respondre directament el missatge (p. ex., quan el remitent ha triat mantenir en privat la seva adreça). Aquest paràmetre s\'emprarà també com a <em>envelope sender</em> quan s\'enviï un correu electrònic.';
 $string['confignotifyloginfailures'] = 'Envia els missatges de notificació dels inicis de sessió erronis a aquests usuaris seleccionats. Això necessita tenir habilitat un magatzem de registre intern (per exemple, el magatzem de registre estàndard).';
 $string['confignotifyloginthreshold'] = 'Si s\'han activat les notificacions d\'inici de sessió erroni, quants intents erronis del mateix usuari o de la mateixa adreça IP cal esperar per enviar la notificació?';
-$string['confignotloggedinroleid'] = 'Els usuaris que no hagin iniciat sessió seran tractats com si se\'ls hagués atorgat aquest rol al nivell del lloc. Generalment se\'ls dóna el rol Visitant, però igualment podríeu crear un rol que fos més o menys restrictiu. En tot cas, certes accions com ara enviar un missatge en un fòrum requereixen sempre que l\'usuari hagi iniciat sessió.';
+$string['confignotloggedinroleid'] = 'Els usuaris que no hagin iniciat la sessió seran tractats com si se\'ls hagués atorgat aquest rol al nivell del lloc. Generalment se\'ls dona el rol Visitant, però igualment podríeu crear un rol que fos més o menys restrictiu. En tot cas, certes accions com ara enviar un missatge en un fòrum requereixen sempre que l\'usuari hagi iniciat la sessió.';
 $string['configopentowebcrawlers'] = 'Si habiliteu aquest paràmetre, es permetrà que Google entri al vostre lloc com a visitant. A més a més, la gent que entri al vostre lloc a través d\'una cerca de Google, ho farà automàticament com a visitant. Teniu en compte que això proporciona un accés transparent als cursos que permeten l\'accés de visitants.';
 $string['configoverride'] = 'Definit en config.php';
 $string['configpasswordpolicy'] = 'Si està activat, les contrasenyes dels usuaris es comprovaran amb la política de contrasenyes especificada als paràmetres següents. L\'activació de la política de contrasenyes no afectarà els usuaris existents fins que decideixin canviar la seva contrasenya o se\'ls demani que la canviïn, o si el paràmetre «Comprova la contrasenya en iniciar la sessió» està activat.';
@@ -472,7 +472,7 @@ $string['courselistshortnames_desc'] = 'Si està activat, a la llista de cursos 
 $string['coursemgmt'] = 'Gestiona cursos i categories';
 $string['courseoverview'] = 'Resum dels cursos';
 $string['courserequestnotify'] = 'Notificació de sol·licitud de curs';
-$string['courserequestnotifyemail'] = 'L\'usuari {$a->user} ha sol·licitat un nou curs: {$a->link}';
+$string['courserequestnotifyemail'] = 'L\'usuari {$a->user} ha sol·licitat un curs nou a <a href="{$a->link}">{$a->link}</a>.';
 $string['courserequests'] = 'Sol·licitud de cursos';
 $string['courserequestspending'] = 'Sol·licituds de cursos pendents';
 $string['courses'] = 'Cursos';
@@ -857,13 +857,10 @@ s\'ha bloquejat després de diversos intents d\'inici de sessió no vàlids.
 
 Per desbloquejar el compte immediatament, aneu a l\'adreça següent:
 
-{$a->link}
+<a href="{$a->link}">Desbloqueja el compte</a>
 
-A la majoria de programes de correu, això hauria d\'aparèixer com un enllaç blau
-sobre el qual només cal fer clic. Si això no funciona, copieu i enganxeu l\'adreça a
-la línia d\'adreces a la part superior de la finestra del navegador web.
 
-Si necessiteu ajuda, poseu-vos en contacte amb l\'administrador del lloc,
+Si necessiteu ajuda, poseu-vos en contacte amb l\'administrador del lloc.
 {$a->admin}';
 $string['lockoutemailsubject'] = 'El vostre compte a {$a} ha estat blocat';
 $string['lockouterrorunlock'] = 'La informació subministrada per desblocar el compte no és vàlida.';
@@ -971,6 +968,7 @@ $string['moodlebrandedapp'] = 'Aplicació Branded Moodle';
 $string['moodlebrandedapp_help'] = '<p>L\'aplicació Branded Moodle té tota la funcionalitat de la nostra aplicació mòbil gratuïta per a Moodle combinada amb la vostra pròpia marca personalitzada.</p>
 <a href="https://moodle.com/branded-app">Sobre l\'aplicació de Moodle de marca</a>';
 $string['moodlebrandedappreference'] = 'Alternativament, obteniu <a href="https://moodle.com/branded-app/">Branded Moodle app</a> amb la vostra pròpia marca personalitzada.';
+$string['moodlenetremovalwarning'] = 'El servei MoodleNet es tancarà el 20 d\'abril de 2026. Si voleu continuar utilitzant MoodleNet al vostre lloc, instal·leu el connector MoodleNet des del <a href="https://moodle.org/plugins" target="_blank">directori de connectors del Moodle <i class="fa fa-external-link" role="img" aria-label="S\'obre en una finestra nova" title="S\'obre en una finestra nova"></i></a> i connecteu-lo a una instància de MoodleNet autoallotjada. A continuació, s\'eliminarà el camp d\'ID de MoodleNet del perfil; migreu aquestes dades si les feu servir per a altres finalitats.';
 $string['moodlepartners'] = 'Moodle Partners';
 $string['moodlepartners_help'] = '<p>Moodle Partners són proveïdors de serveis certificats per Moodle HQ per proporcionar serveis de Moodle d\'alta qualitat per a l\'entorn d\'aprenentatge en línia de la vostra organització.</p>
 <a href="https://moodle.com/about-partners/">Sobre els nostres socis</a><br />

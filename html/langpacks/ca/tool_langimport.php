@@ -47,5 +47,5 @@ $string['pluginname'] = 'Paquets d\'idioma';
 $string['purgestringcaches'] = 'Purga la memòria cau de cadenes.';
 $string['selectlangs'] = 'Selecciona els idiomes a desinstal·lar';
 $string['uninstall'] = 'Desinstal·la el paquet d\'idioma seleccionat';
-$string['uninstallconfirm'] = 'Ara desinstal·lareu completament el paquet d\'idioma {$a}. N\'esteu segur?';
+$string['uninstallconfirm'] = 'Ara desinstal·lareu de manera completa aquests paquets d\'idioma: <strong>{$a}</strong>. Confirmeu que voleu que es dugui a terme aquesta acció?';
 $string['updatelangs'] = 'Actualitza els paquets d\'idioma';

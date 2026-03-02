@@ -48,7 +48,7 @@ function helper_restore_test_course(string $filename, string $newcoursename): in
     $adminuser = get_admin();
 
     $timenow = time();
-    $filerecord = new \stdClass;
+    $filerecord = new \stdClass();
     $filerecord->component = 'format_tiles';
     $filerecord->filearea = 'coursebackups';
     $filerecord->filepath = '/';
@@ -83,8 +83,11 @@ function helper_restore_test_course(string $filename, string $newcoursename): in
         $rc = new \restore_controller(
             $unzipdirname,
             $newcourseid,
-            \backup::INTERACTIVE_NO, \backup::MODE_GENERAL,
-            $adminuser->id, \backup::TARGET_NEW_COURSE);
+            \backup::INTERACTIVE_NO,
+            \backup::MODE_GENERAL,
+            $adminuser->id,
+            \backup::TARGET_NEW_COURSE
+        );
         $rc->get_plan()->get_setting('users')->set_value(false);
         $rc->execute_precheck();
         $rc->execute_plan();
@@ -112,7 +115,9 @@ function helper_set_legacy_tilephoto(int $courseid, int $sectionnumber, string $
         'courseid' => $courseid,
         'format' => 'tiles',
         'sectionid' => $DB->get_field(
-            'course_sections', 'id', ['course' => $courseid, 'section' => $sectionnumber]
+            'course_sections',
+            'id',
+            ['course' => $courseid, 'section' => $sectionnumber]
         ),
         'name' => 'tilephoto',
         'value' => $filename,
@@ -121,7 +126,9 @@ function helper_set_legacy_tilephoto(int $courseid, int $sectionnumber, string $
 
     $filepath = "$CFG->dirroot/course/format/tiles/tests/fixtures/images";
     $sectionid = $DB->get_field(
-        'course_sections', 'id', ['course' => $courseid, 'section' => $sectionnumber]
+        'course_sections',
+        'id',
+        ['course' => $courseid, 'section' => $sectionnumber]
     );
     $context = context_course::instance($courseid);
 
@@ -153,7 +160,9 @@ function helper_set_legacy_tile_icon(int $courseid, int $sectionnumber, string $
         'courseid' => $courseid,
         'format' => 'tiles',
         'sectionid' => $DB->get_field(
-            'course_sections', 'id', ['course' => $courseid, 'section' => $sectionnumber]
+            'course_sections',
+            'id',
+            ['course' => $courseid, 'section' => $sectionnumber]
         ),
         'name' => 'tileicon',
         'value' => $icon,

@@ -25,17 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['accessreview:addinstance'] = 'Pridėti pritaikomumo peržiūros bloką';
-$string['accessreview:view'] = 'Peržiūrėti pritaikomumo apžvalgą';
+$string['accessreview:addinstance'] = 'Pridėti prieinamumo peržiūros bloką';
+$string['accessreview:view'] = 'Peržiūrėti prieinamumo apžvalgą';
 $string['checktypes'] = 'Tipai';
 $string['downloadreport'] = 'Parsisiųsti';
-$string['downloadreportalt'] = 'Atsisiųsti pritaikomumo ataskaitos santrauką';
+$string['downloadreportalt'] = 'Atsisiųsti prieinamumo ataskaitos santrauką';
 $string['errordisplay'] = 'Rodyti klaidas šiuo formatu';
 $string['errors'] = 'Klaidos';
-$string['errorssummary'] = 'Pritaikomumo peržiūra';
+$string['errorssummary'] = 'Prieinamumo peržiūra';
 $string['frown'] = 'Rasta klaidų, atsiprašome!';
-$string['nodata'] = 'Nerasta pritaikomumo rezultatų duomenų.';
-$string['pluginname'] = 'Pritaikomumo peržiūra';
+$string['nodata'] = 'Nerasta prieinamumo rezultatų duomenų.';
+$string['pluginname'] = 'Prieinamumo peržiūra';
 $string['privacy:metadata:preference:block_accessreviewtogglestate'] = 'Naudotojo pasirinkimas slėpti arba rodyti kurso pritaikymo paryškinimą.';
 $string['privacy:togglestateoff'] = 'Dabartinė kurso pritaikymo paryškinimo nuostata išjungta.';
 $string['privacy:togglestateon'] = 'Dabartinė kurso pritaikymo paryškinimo nuostata įjungta.';
@@ -46,10 +46,10 @@ $string['showicons'] = 'Rodyti tik skaičiaus piktogramas';
 $string['showint'] = 'Rodyti sumą';
 $string['showpercent'] = 'Rodyti procentą';
 $string['smile'] = '0 klaidų, sveikiname!';
-$string['status:errors'] = 'Pritaikomumo testas nepavyko – klaidų skaičius: {$a->errorCount}';
+$string['status:errors'] = 'Prieinamumo testas nepavyko – klaidų skaičius: {$a->errorCount}';
 $string['status:errorsalt'] = 'Klaidos';
-$string['status:success'] = 'Pritaikomumo testas pavyko';
-$string['status:successalt'] = 'Pritaikomumo testas pavyko';
+$string['status:success'] = 'Pavyko';
+$string['status:successalt'] = 'Pavyko';
 $string['toggle'] = 'Perjungti paryškinimą';
 $string['toggleaccessreview'] = 'Perjungti paryškinimą';
 $string['togglealt'] = 'Perjungti pritaikytą spalvų intensyvumo žemėlapį';

@@ -30,7 +30,7 @@ use format_tiles\local\util;
 
 defined('MOODLE_INTERNAL') || die();
 global $CFG;
-require_once($CFG->dirroot .'/course/format/lib.php');
+require_once($CFG->dirroot . '/course/format/lib.php');
 
 /**
  * Tiles course format, main course output class to prepare data for mustache templates
@@ -38,7 +38,6 @@ require_once($CFG->dirroot .'/course/format/lib.php');
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class course_output implements \renderable, \templatable {
-
     /**
      * Course object for this class
      * @var \stdClass
@@ -152,7 +151,8 @@ class course_output implements \renderable, \templatable {
         }
         $this->devicetype = \core_useragent::get_device_type();
         $this->modalscmids = \format_tiles\local\modal_helper::get_modal_allowed_cm_ids_integer_list(
-            $this->course->id, false
+            $this->course->id,
+            false
         );
         $this->format = course_get_format($this->course);
         $this->modinfo = get_fast_modinfo($this->course);
@@ -190,7 +190,6 @@ class course_output implements \renderable, \templatable {
             try {
                 // Issue #153 avoid multiple glossary auto link JS onclick events.
                 $PAGE->requires->should_create_one_time_item_now('filter_glossary_autolinker');
-
             } catch (\Exception) {
                 debugging('Could not set glossary autolink created', DEBUG_DEVELOPER);
             }
@@ -201,8 +200,9 @@ class course_output implements \renderable, \templatable {
 
         // Only show section zero if we need it.
         $onmultisectionpage = $this->sectionnum === null;
-        $processsectionzero = $onmultisectionpage ||
-            (get_config('format_tiles', 'showseczerocoursewide') && !$this->isediting);
+        $processsectionzero = $onmultisectionpage
+            || (get_config('format_tiles', 'showseczerocoursewide') && !$this->isediting)
+            || $this->sectionnum === '0';
         if ($processsectionzero) {
             // Only show section 0 on multi section page, or single sec page with admin setting to show course wide.
             $data = $this->append_section_zero_data($data, $output);
@@ -278,8 +278,14 @@ class course_output implements \renderable, \templatable {
      * @return string
      */
     protected function temp_format_summary_text($section) {
-        $summarytext = file_rewrite_pluginfile_urls($section->summary, 'pluginfile.php',
-            $this->coursecontext->id, 'course', 'section', $section->id);
+        $summarytext = file_rewrite_pluginfile_urls(
+            $section->summary,
+            'pluginfile.php',
+            $this->coursecontext->id,
+            'course',
+            'section',
+            $section->id
+        );
 
         $options = new \stdClass();
         $options->noclean = true;
@@ -522,7 +528,8 @@ class course_output implements \renderable, \templatable {
             $data['allowphototiles'] = 1;
             $data['showprogressphototiles'] = get_config('format_tiles', 'showprogresssphototiles');
             $phototileids = format_option::get_element_ids_having_options(
-                $this->course->id, format_option::OPTION_SECTION_PHOTO
+                $this->course->id,
+                format_option::OPTION_SECTION_PHOTO
             );
             $phototileextraclasses = 'phototile';
         } else {
@@ -584,7 +591,9 @@ class course_output implements \renderable, \templatable {
                 } else {
                     $title = format_string($rawtitle);
                 }
-                $ariatitle = get_string('tilearialabel', 'format_tiles',
+                $ariatitle = get_string(
+                    'tilearialabel',
+                    'format_tiles',
                     trim($title)
                         ? $title
                         : get_string('tilearialabel', 'format_tiles', $this->format->get_default_section_name($section))
@@ -669,7 +678,9 @@ class course_output implements \renderable, \templatable {
                 // See below about when "hide add cm control" is true.
                 $newtile['hideaddcmcontrol'] = false;
                 $newtile['single_sec_add_cm_control_html'] = $this->courserenderer->course_section_add_cm_control(
-                    $this->course, $section->section, 0
+                    $this->course,
+                    $section->section,
+                    0
                 );
 
                 $newtile['is_expanded'] = false;
@@ -749,7 +760,8 @@ class course_output implements \renderable, \templatable {
                     if (!$issubsection && $this->completioninfo->is_enabled($thismod) != COMPLETION_TRACKING_NONE) {
                         $outof++;
                         $completiondata = $this->completioninfo->get_data($thismod, true);
-                        if ($completiondata->completionstate == COMPLETION_COMPLETE ||
+                        if (
+                            $completiondata->completionstate == COMPLETION_COMPLETE ||
                             $completiondata->completionstate == COMPLETION_COMPLETE_PASS
                         ) {
                             $completed++;
@@ -998,7 +1010,7 @@ class course_output implements \renderable, \templatable {
         if ($mod->modname == 'folder') {
             $moduleobject['url'] = new \moodle_url('/mod/folder/view.php', ['id' => $mod->id]);
         }
-        if ($mod->modname == 'url'&& \format_tiles\local\video_cm::is_video_cm($this->course->id, $mod->id)) {
+        if ($mod->modname == 'url' && \format_tiles\local\video_cm::is_video_cm($this->course->id, $mod->id)) {
             $externalurl = $DB->get_field('url', 'externalurl', ['id' => $mod->instance]);
             $modifiedvideourl = \format_tiles\local\video_cm::check_modify_embedded_url($externalurl);
             if ($modifiedvideourl) {
@@ -1057,12 +1069,16 @@ class course_output implements \renderable, \templatable {
                         break;
                     case COMPLETION_COMPLETE_PASS:
                         $moduleobject['completionstring'] = get_string(
-                            'completion-pass', 'core_completion', $moduleobject['activityname']
+                            'completion-pass',
+                            'core_completion',
+                            $moduleobject['activityname']
                         );
                         break;
                     case COMPLETION_COMPLETE_FAIL:
                         $moduleobject['completionstring'] = get_string(
-                            'completion-fail', 'core_completion', $moduleobject['activityname']
+                            'completion-fail',
+                            'core_completion',
+                            $moduleobject['activityname']
                         );
                         $moduleobject['isfail'] = 1;
                         break;
@@ -1160,7 +1176,8 @@ class course_output implements \renderable, \templatable {
         if (get_config('format_tiles', 'highcontrastmodeallow')) {
             $controls[] = [
                 'url' => new \moodle_url(
-                    $courseurl, array_merge($courseurlparams, ['format-tiles-action' => 'togglehighcontrast'])
+                    $courseurl,
+                    array_merge($courseurlparams, ['format-tiles-action' => 'togglehighcontrast'])
                 ),
                 'label' => get_string('highcontrastmode', 'format_tiles'),
                 'checked' => \format_tiles\local\util::using_high_contrast(),

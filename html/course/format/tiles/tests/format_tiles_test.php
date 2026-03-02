@@ -37,7 +37,6 @@ require_once($CFG->dirroot . '/course/lib.php');
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 final class format_tiles_test extends \advanced_testcase {
-
     /**
      * The format options to use when setting up a course in tiles format.
      * @var array
@@ -66,7 +65,8 @@ final class format_tiles_test extends \advanced_testcase {
 
         $course = $this->getDataGenerator()->create_course(
             $this->tilescourseformatoptions,
-            ['createsections' => true]);
+            ['createsections' => true]
+        );
 
         $sectionscreated = get_fast_modinfo($course)->get_section_info_all();
 
@@ -78,7 +78,10 @@ final class format_tiles_test extends \advanced_testcase {
             $icon = $toseticons[$section->section] ?? null;
             if ($icon) {
                 format_option::set(
-                    $course->id, format_option::OPTION_SECTION_ICON, $section->section, $icon
+                    $course->id,
+                    format_option::OPTION_SECTION_ICON,
+                    $section->section,
+                    $icon
                 );
                 $this->assertEquals(
                     $icon,
@@ -99,7 +102,8 @@ final class format_tiles_test extends \advanced_testcase {
 
         $course = $this->getDataGenerator()->create_course(
             $this->tilescourseformatoptions,
-            ['createsections' => true]);
+            ['createsections' => true]
+        );
         set_config('followthemecolour', 0, 'format_tiles');
         set_config('allowsubtilesview', 0, 'format_tiles');
 
@@ -158,7 +162,6 @@ final class format_tiles_test extends \advanced_testcase {
                 // Id is course ID and will not be in new db values.
                 $this->assertEquals($pushedvalue, $newvalues[$name], 'No match on name ' . $name);
             }
-
         }
     }
 
@@ -184,8 +187,10 @@ final class format_tiles_test extends \advanced_testcase {
             \core_external::update_inplace_editable('format_tiles', 'sectionname', $section->id, 'New section name');
             $this->fail('Exception expected');
         } catch (\moodle_exception $e) {
-            $this->assertEquals('Course or activity not accessible. (Not enrolled)',
-                $e->getMessage());
+            $this->assertEquals(
+                'Course or activity not accessible. (Not enrolled)',
+                $e->getMessage()
+            );
         }
 
         // Change to teacher and make sure that section name can be updated using web service update_inplace_editable().
@@ -310,7 +315,8 @@ final class format_tiles_test extends \advanced_testcase {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course(
             $this->tilescourseformatoptions,
-            ['createsections' => true]);
+            ['createsections' => true]
+        );
 
         // Must be a non-guest user to create resources.
         $this->setAdminUser();
@@ -334,7 +340,8 @@ final class format_tiles_test extends \advanced_testcase {
             'defaultfilename' => $pdffilepath, 'display' => RESOURCELIB_DISPLAY_EMBED,
         ]);
         $this->assertEquals(
-            'pdf', \format_tiles\local\modal_helper::cm_modal_type($course->id, $instance->cmid)
+            'pdf',
+            \format_tiles\local\modal_helper::cm_modal_type($course->id, $instance->cmid)
         );
 
         // Add a text file to the PDF existing resource activity.
@@ -349,7 +356,8 @@ final class format_tiles_test extends \advanced_testcase {
 
         // At this point we added the HTML file so the PDF should still be the main file so it's still a modal activity.
         $this->assertEquals(
-            'pdf', \format_tiles\local\modal_helper::cm_modal_type($course->id, $instance->cmid)
+            'pdf',
+            \format_tiles\local\modal_helper::cm_modal_type($course->id, $instance->cmid)
         );
 
         // Add another PDF to make sure code is not confused by having multiple PDFs.
@@ -364,7 +372,8 @@ final class format_tiles_test extends \advanced_testcase {
         // At this point we added a text file and another PDF.
         // The original PDF should still be the main file so it's still a modal activity.
         $this->assertEquals(
-            'pdf', \format_tiles\local\modal_helper::cm_modal_type($course->id, $instance->cmid)
+            'pdf',
+            \format_tiles\local\modal_helper::cm_modal_type($course->id, $instance->cmid)
         );
 
         // Now set the newly added text file as the main file so this is no longer a modal activity.
@@ -382,7 +391,8 @@ final class format_tiles_test extends \advanced_testcase {
         rebuild_course_cache($course->id, true);
         \format_tiles\local\modal_helper::clear_cache_modal_cmids($course->id, 'resource');
         $this->assertEquals(
-            'pdf', \format_tiles\local\modal_helper::cm_modal_type($course->id, $instance->cmid)
+            'pdf',
+            \format_tiles\local\modal_helper::cm_modal_type($course->id, $instance->cmid)
         );
 
         // Now set an excluded display types to the resource activity and check that it has no modal.
@@ -400,7 +410,8 @@ final class format_tiles_test extends \advanced_testcase {
             'defaultfilename' => 'course/format/tiles/tests/fixtures/test.html',
         ]);
         $this->assertEquals(
-            'html', \format_tiles\local\modal_helper::cm_modal_type($course->id, $instance->cmid)
+            'html',
+            \format_tiles\local\modal_helper::cm_modal_type($course->id, $instance->cmid)
         );
     }
 
@@ -418,7 +429,8 @@ final class format_tiles_test extends \advanced_testcase {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course(
             $this->tilescourseformatoptions,
-            ['createsections' => true]);
+            ['createsections' => true]
+        );
 
         // Must be a non-guest user to create resources.
         $this->setAdminUser();
@@ -432,7 +444,8 @@ final class format_tiles_test extends \advanced_testcase {
             'display' => RESOURCELIB_DISPLAY_AUTO,
         ]);
         $this->assertEquals(
-            'url', \format_tiles\local\modal_helper::cm_modal_type($course->id, $instance->cmid)
+            'url',
+            \format_tiles\local\modal_helper::cm_modal_type($course->id, $instance->cmid)
         );
 
         $DB->set_field('url', 'display', RESOURCELIB_DISPLAY_POPUP, ['id' => $instance->id]);
@@ -449,7 +462,6 @@ final class format_tiles_test extends \advanced_testcase {
         $this->assertFalse(
             \format_tiles\local\modal_helper::cm_has_modal($course->id, $instance->cmid)
         );
-
     }
 
     /**
@@ -461,7 +473,8 @@ final class format_tiles_test extends \advanced_testcase {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course(
             $this->tilescourseformatoptions,
-            ['createsections' => true]);
+            ['createsections' => true]
+        );
 
         // Must be a non-guest user to create resources.
         $this->setAdminUser();
@@ -471,7 +484,8 @@ final class format_tiles_test extends \advanced_testcase {
         $instance = $generator->create_instance(['course' => $course->id]);
 
         $this->assertEquals(
-            'page', \format_tiles\local\modal_helper::cm_modal_type($course->id, $instance->cmid)
+            'page',
+            \format_tiles\local\modal_helper::cm_modal_type($course->id, $instance->cmid)
         );
 
         set_config('modalmodules', '', 'format_tiles');
@@ -489,7 +503,8 @@ final class format_tiles_test extends \advanced_testcase {
         $this->resetAfterTest();
         $course = $this->getDataGenerator()->create_course(
             $this->tilescourseformatoptions,
-            ['createsections' => true]);
+            ['createsections' => true]
+        );
 
         // We never store data for label.
         $this->assertFalse(

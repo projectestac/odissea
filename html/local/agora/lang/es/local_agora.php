@@ -4,6 +4,7 @@ $string['pluginname'] = 'Agora';
 
 // Disk quota
 $string['diskquotaerror'] = '<strong>ATENCIÓN</strong>: Este Moodle ha superado la cuota de espacio disponible.<br /> No se podrá subir ningún fichero ni generar ninguna copia de seguridad hasta que no se libere espacio y/o se solicite una ampliación de la cuota.';
+$string['diskquotaerror_no_html'] = 'ATENCIÓN: Este Moodle ha superado la cuota de espacio disponible. No se podrá subir ningún fichero ni generar ninguna copia de seguridad hasta que no se libere espacio y/o se solicite una ampliación de la cuota.';
 
 // Rush hour
 $string['rush_hour'] = 'Esta operación no está permitida en horas punta';

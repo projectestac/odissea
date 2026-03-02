@@ -411,7 +411,7 @@ $string['listnopeers'] = 'Keine Gleichen (Peers) zum Element gefunden.';
 $string['listupdatefail'] = 'Datenbankfehler bei der Bearbeitung der Listenhierarchie';
 $string['logfilenotavailable'] = 'Keine Logdaten verfügbar';
 $string['loginasnoenrol'] = 'Sie können sich nicht für einen Kurs einschreiben oder abmelden, wenn Sie "Anmelden als" verwenden.';
-$string['loginasonecourse'] = 'Sie können diesen Kurs nicht betreten. Beenden Sie zuerst die Sitzung "Login als", bevor Sie einen anderen Kurs betreten.';
+$string['loginasonecourse'] = 'Sie können diesen Kurs nicht betreten. Beenden Sie zuerst die Sitzung "Anmeldung als", bevor Sie einen anderen Kurs betreten.';
 $string['maxareabytes'] = 'Diese Datei ist größer als der in diesem Bereich verfügbare Platz.';
 $string['maxbytesfile'] = 'Die Datei {$a->file} ist zu groß. Die maximale Größe zum Hochladen ist {$a->size}.';
 $string['maxdraftitemids'] = 'Ihre Datei-Uploads sind vorübergehend eingeschränkt, nachdem Sie eine große Anzahl von Dateien hochgeladen haben. Versuchen Sie es bitte später nochmal.';
@@ -554,7 +554,7 @@ $string['sessioncannotobtainlock'] = '<p>Die Sperre für die Sitzungs-ID {$a->id
 <p>Wahrscheinlich läuft in einem anderen Browser-Tab eine andere Seite ({$a->whohaslock}) oder die Sperre wurde wegen eines Fehlers nicht freigegeben.</p>
 <p>Sie können bis zum Timeout der Sitzungssperre ({$a->lockexpire}) warten oder Ihre Browsersitzung neu starten. Wenn dieser Fehler weiterhin besteht, fragen Sie bitte die Administrator/innen.</p>';
 $string['sessioncookiesdisable'] = 'Fehlerhafte Verwendung von  require_key_login() - Session Cookie sollte deaktiviert werden!';
-$string['sessiondiskfull'] = 'Die Session-Partition ist voll. Ein Login ist zurzeit nicht möglich. Bitte benachrichtigen Sie die Server-Administrator/innen.';
+$string['sessiondiskfull'] = 'Die Session-Partition ist voll. Eine Anmeldung ist momentan nicht möglich. Benachrichtigen Sie bitte die Administrator/innen.';
 $string['sessionerroruser'] = 'Die Session ist abgelaufen. Melden Sie sich neu an.';
 $string['sessionerroruser2'] = 'Ein Serverfehler ist aufgetreten, der Ihre Anmeldung betrifft. Melden Sie sich bitte neu an oder starten Sie Ihren Browser nochmal.';
 $string['sessionexpired'] = 'Sitzung abgelaufen';

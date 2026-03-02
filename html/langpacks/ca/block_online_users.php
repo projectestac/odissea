@@ -32,6 +32,7 @@ $string['numusers'] = '{$a} usuaris en línia';
 $string['online_users:addinstance'] = 'Afegeix un bloc d\'usuaris en línia nou';
 $string['online_users:myaddinstance'] = 'Afegeix un bloc nou d\'usuaris en línia a la pàgina del Tauler';
 $string['online_users:viewlist'] = 'Veure la llista d\'usuaris en línia';
+$string['otherusers'] = 'Altres usuaris ({$a})';
 $string['periodnminutes'] = 'darrers {$a} minuts';
 $string['pluginname'] = 'Usuaris en línia';
 $string['timetosee'] = 'Treu després d\'un temps d\'inactivitat (minuts)';

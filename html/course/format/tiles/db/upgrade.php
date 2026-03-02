@@ -41,7 +41,6 @@ function xmldb_format_tiles_upgrade($oldversion) {
     require_once($CFG->dirroot . '/course/format/tiles/db/upgradelib.php');
 
     if ($oldversion < 2017102700) {
-
         // Remove 'numsections' option and hide or delete orphaned sections.
         format_tiles_upgrade_remove_numsections();
 
@@ -57,12 +56,20 @@ function xmldb_format_tiles_upgrade($oldversion) {
     if ($oldversion < 2018080103) {
         // Rename the field "tiletopleftthistile" to "tileicon".
         // The latter is much simpler and the former was only used for legacy reasons.
-        $DB->set_field('course_format_options', 'name', 'tileicon',
-            ['format' => 'tiles', 'name' => 'tiletopleftthistile']);
+        $DB->set_field(
+            'course_format_options',
+            'name',
+            'tileicon',
+            ['format' => 'tiles', 'name' => 'tiletopleftthistile']
+        );
 
         // Same for "defaulttiletopleftdisplay".
-        $DB->set_field('course_format_options', 'name', 'defaulttileicon',
-            ['format' => 'tiles', 'name' => 'defaulttiletopleftdisplay']);
+        $DB->set_field(
+            'course_format_options',
+            'name',
+            'defaulttileicon',
+            ['format' => 'tiles', 'name' => 'defaulttiletopleftdisplay']
+        );
 
         // Delete any 'course default' records for tile icons as these are no longer used.
         $DB->delete_records_select(
@@ -85,19 +92,29 @@ function xmldb_format_tiles_upgrade($oldversion) {
         // Field courseusebarforheadings setting has been simplified to yes or no (1 or 0) instead of several options.
         // So change all legacy values to 0 or 1.
         $DB->set_field_select(
-            "course_format_options", "value", "1", "format='tiles' AND name = 'courseusebarforheadings' AND value != 'standard'"
+            "course_format_options",
+            "value",
+            "1",
+            "format='tiles' AND name = 'courseusebarforheadings' AND value != 'standard'"
         );
         $DB->set_field_select(
-            "course_format_options", "value", "0", "format='tiles' AND name = 'courseusebarforheadings' AND value = 'standard'"
+            "course_format_options",
+            "value",
+            "0",
+            "format='tiles' AND name = 'courseusebarforheadings' AND value = 'standard'"
         );
 
         // Which filter button a user previously had pressed is now stored in browser session storage.
         // Same for whether sec zero is collapsed, so delete from database.
         $DB->delete_records_select(
-            'user_preferences', $DB->sql_like("name", "?", false), ["format_tiles_filterbutton_%"]
+            'user_preferences',
+            $DB->sql_like("name", "?", false),
+            ["format_tiles_filterbutton_%"]
         );
         $DB->delete_records_select(
-            'user_preferences', $DB->sql_like("name", "?", false), ["format_tiles_collapseseczero_%"]
+            'user_preferences',
+            $DB->sql_like("name", "?", false),
+            ["format_tiles_collapseseczero_%"]
         );
 
         $DB->set_field_select(
@@ -160,7 +177,6 @@ function xmldb_format_tiles_upgrade($oldversion) {
     }
 
     if ($oldversion < 2024020200) {
-
         // New way of storing tile images, using a new format_tiles_tile_options table instead of core course_format_options.
 
         // Define table format_tiles_tile_options to be created.

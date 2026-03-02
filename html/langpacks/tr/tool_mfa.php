@@ -156,6 +156,7 @@ $string['settings:weight'] = 'Faktör ağırlığı';
 $string['settings:weight_help'] = 'Geçilirse bu faktörün ağırlığı. Bir kullanıcının oturum açmak için en az 100 puana ihtiyacı vardır.';
 $string['setup'] = 'Kurulum';
 $string['setupfactor'] = 'Faktörü ayarla';
+$string['setupfactorbuttonadditional'] = 'Ek faktör ekle';
 $string['setuprequired'] = 'Kullanıcı ayarları';
 $string['state:fail'] = 'Başarısız';
 $string['state:locked'] = 'Kilitli';

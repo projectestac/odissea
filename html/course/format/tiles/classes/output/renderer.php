@@ -25,7 +25,6 @@ use core_courseformat\output\section_renderer;
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class renderer extends section_renderer {
-
     /**
      * Override this so that we can use our own local templates.
      * Used at present to ensure tiles specific editor controls are shown.
@@ -161,7 +160,9 @@ class renderer extends section_renderer {
         $parentdata = $widget->export_for_template($this);
         $sectionnum = $parentdata->num;
         $templateable = new \format_tiles\output\course_output(
-            $this->page->course, true, $sectionnum
+            $this->page->course,
+            true,
+            $sectionnum
         );
         $data = $templateable->export_for_template($this);
         $template = 'format_tiles/course_modules_subsection';

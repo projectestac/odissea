@@ -90,9 +90,12 @@ $string['emailnowexists'] = 'L’adresse de courriel que vous tentez d’utilise
 $string['emailupdate'] = 'Modification d’adresse de courriel';
 $string['emailupdatemessage'] = 'Bonjour {$a->firstname},
 
-Vous avez demandé la modification de votre adresse de courriel pour votre compte sur {$a->site}. Veuillez visiter l’URL ci-dessous afin de confirmer la modification :
+Vous avez demandé une modification de votre adresse de courriel pour votre compte sur {$a->site}.
 
-{$a->url}
+Pour confirmer ce changement, veuillez cliquer sur le lien ci-dessous :
+
+<a href="{$a->url}">Confirmer la modification de l’adresse de courriel</a>
+
 Le lien de confirmation expirera dans <b>10 minutes</b>.
 
 {$a->supportemail}';

@@ -39,7 +39,7 @@ if (optional_param('sesskey', '', PARAM_TEXT)) {
     redirect(
         new moodle_url('/course/view.php', ['id' => $courseid]),
         $result ? get_string('tilesreset', 'format_tiles')
-            : get_string('resetincomplete', 'format_tiles') ,
+            : get_string('resetincomplete', 'format_tiles'),
         0,
         $result
             ? \core\output\notification::NOTIFY_SUCCESS
@@ -52,7 +52,7 @@ if (optional_param('sesskey', '', PARAM_TEXT)) {
     $PAGE->set_heading($course->fullname);
 
     $message = html_writer::div(
-    html_writer::div(get_string('resetalltilessure', 'format_tiles'), 'mb-2')
+        html_writer::div(get_string('resetalltilessure', 'format_tiles'), 'mb-2')
         . html_writer::link(
             new moodle_url('/course/format/tiles/editor/reset.php', ['courseid' => $courseid, 'sesskey' => sesskey()]),
             html_writer::tag('span', get_string('reset'), ['class' => 'btn btn-danger me-2'])

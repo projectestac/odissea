@@ -833,7 +833,7 @@ $string['quizopen'] = '小テスト受験可能期間の開始日時';
 $string['quizopenclose'] = '受験可能期間の開始および終了日時';
 $string['quizopenclose_help'] = '学生は受験可能期間の開始後のみ受験を開始することができます。また、受験可能期間の終了日時の前に受験を完了する必要があります。';
 $string['quizopenclose_link'] = 'mod/quiz/timing';
-$string['quizopendatesoonhtml'] = '<p>{$a->lastname} さん</p>
+$string['quizopendatesoonhtml'] = '<p>こんにちは {$a->fullname} さん</p>
 <p>コース「 {$a->coursename} 」の小テスト「 <strong>{$a->quizname}</strong> 」がまもなく公開されます。
 <p><strong>公開日: {$a->timeopen}</strong></p>
 <p><strong>終了日: {$a->timeclose}</strong></p>

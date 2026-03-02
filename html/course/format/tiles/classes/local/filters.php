@@ -31,8 +31,6 @@ namespace format_tiles\local;
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class filters {
-
-
     /**
      * Get the details of the filter buttons to be displayed at the top of this course
      * where the teacher has selected to use OUTCOME filter buttons e.g. button 1 might
