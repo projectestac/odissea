@@ -153,6 +153,7 @@ $string['tagarea_blog_external'] = 'Externe blogberichten';
 $string['tagarea_course'] = 'Cursussen';
 $string['tagarea_course_modules'] = 'Activiteiten en bronnen';
 $string['tagarea_post'] = 'Blogberichten';
+$string['tagarea_tag'] = 'Gerelateerde tags';
 $string['tagarea_user'] = 'Gebruikersinteresses';
 $string['tagareaenabled'] = 'Ingeschakeld';
 $string['tagareaname'] = 'Naam';

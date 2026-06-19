@@ -43,6 +43,7 @@ $string['installfromzipsubmit'] = 'Įdiegti papildinį iš ZIP failo';
 $string['installfromziptype'] = 'Papildinio tipas';
 $string['installfromziptype_help'] = 'Įskiepių, kurie teisingai deklaruoja savo komponento pavadinimą, diegimo programa gali automatiškai aptikti papildinio tipą. Jei automatinis aptikimas nepavyksta, rankiniu būdu pasirinkite tinkamą papildinio tipą. Įspėjimas: Diegimo procedūra gali nepavykti, jei nurodytas netinkamas papildinio tipas.';
 $string['installfromziptype_link'] = 'Development:Plugins';
+$string['marketplaceadminlinktext'] = 'Peržiūrėti naujus papildinius';
 $string['permcheck'] = 'Įsitikinkite, kad interneto serverio procesas gali įrašyti papildinio tipo šakninę vietą.';
 $string['permcheckerror'] = 'Klaida tikrinant rašymo leidimą';
 $string['permcheckprogress'] = 'Tikrinama, ar yra rašymo leidimas...';

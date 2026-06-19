@@ -25,7 +25,6 @@ namespace tiny_fontcolor;
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 final class color_list_test extends \advanced_testcase {
-
     /**
      * @var color_list
      */
@@ -103,6 +102,5 @@ final class color_list_test extends \advanced_testcase {
         $expected = ".tiny_fontcolor-textcolors-black{color:#000000}\n"
             . ".tiny_fontcolor-textcolors-white{color:#FFFFFF}\n";
         $this->assertEquals($expected, $this->list->get_css_string('textcolors'));
-
     }
 }

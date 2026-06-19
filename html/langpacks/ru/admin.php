@@ -899,6 +899,7 @@ $string['managelang'] = 'Управление';
 $string['manageqbanks'] = 'Управление плагинами банка вопросов';
 $string['manageqbehaviours'] = 'Управление поведением вопросов';
 $string['manageqtypes'] = 'Управление типами вопросов';
+$string['marketplaceavailablenotice'] = 'Просматривайте и загружайте плагины на <a href="{$a}" target="_blank" rel="noopener noreferrer">Moodle Marketplace <i class="fa fa-external-link" role="img" aria-label="Откроется в новом окне" title="Откроется в новом окне"></i></a>.';
 $string['maturity100'] = 'Бета-версия';
 $string['maturity150'] = 'Релиз-кандидат';
 $string['maturity200'] = 'Стабильная версия';
@@ -966,7 +967,7 @@ $string['moodlebrandedapp'] = 'Фирменное приложение Moodle';
 $string['moodlebrandedapp_help'] = '<p>Фирменное приложение Moodle имеет все функции нашего бесплатного мобильного приложения для Moodle в сочетании с вашим собственным пользовательским фирменным . </p>
 <a href="https://moodle.com/branded-app"> О приложении Branded Moodle </a>';
 $string['moodlebrandedappreference'] = 'Кроме того, вы можете получить <a href="https://moodle.com/branded-app/">фирменное приложение Moodle</a> со своим собственным фирменным знаком.';
-$string['moodlenetremovalwarning'] = 'Сервис MoodleNet будет закрыт 20 апреля 2026 года. Если вы хотите продолжать использовать MoodleNet на своем сайте, установите плагин MoodleNet из <a href="https://moodle.org/plugins " target="_blank">Каталога плагинов Moodle <i class="fa fa-external-link" role="img" aria-label="Откроется в новом окне" title="Откроется в новом окне"></i></a> и подключите его к своему экземпляру MoodleNet. После этого поле идентификатора профиля MoodleNet будет удалено; пожалуйста, перенесите эти данные, если вы используете их для других целей.';
+$string['moodlenetremovalwarning'] = 'Сервис MoodleNet будет закрыт 20 апреля 2026 года. Если вы хотите продолжать использовать MoodleNet на своем сайте, установите плагин MoodleNet из <a href="https://github.com/moodlehq/moodle-tool_moodlenet" target="_blank">Moodle HQ GitHub repository <i class="fa fa-external-link" role="img" aria-label="Откроется в новом окне" title="Откроется в новом окне"></i></a> и подключите его к своему экземпляру MoodleNet. После этого поле идентификатора профиля MoodleNet будет удалено; пожалуйста, перенесите эти данные, если вы используете их для других целей.';
 $string['moodlepartners'] = 'Партнеры Moodle';
 $string['moodlepartners_help'] = '<p> Партнеры Moodle - это поставщики услуг, сертифицированные штаб-квартирой Moodle для предоставления высококачественных услуг Moodle для онлайн-среды обучения вашей организации. </p>
 <a href="https://moodle.com/about-partners/"> О наших партнерах </a> <br />

@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addgroup'] = 'Afegeix al grup';
+$string['delconfirm'] = 'Confirmeu que voleu eliminar la cohort «{$a}»?';
 $string['description'] = 'Descripció';
 $string['idnumber'] = 'ID de la cohort';
 $string['search'] = 'Cerca';

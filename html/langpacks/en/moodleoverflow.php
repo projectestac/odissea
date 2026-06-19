@@ -219,7 +219,21 @@ $string['maxtimehaspassed'] = 'The time to edit the post has passed. You can not
 $string['message'] = 'Message';
 $string['messageprovider:posts'] = 'Notification of new posts';
 $string['modulename'] = 'Moodleoverflow';
-$string['modulename_help'] = 'The Moodleoverflow module enables participants to use a question-answer forum structure. The forum display is non-chronological as the ordering depends on collaborative voting instead of on time.';
+$string['modulename_help'] = '###### Key features
+- Provides a non-linear, non-chronological question-and-answer forum structure
+- Posts are ordered by collaborative voting rather than time
+- Users can rate posts and earn reputation scores based on ratings
+- Discussion starters can mark answers as helpful; teachers can mark correct solutions
+- Highly customizable to fit different course needs
+
+###### Ways to use it
+- Facilitate Q&A discussions for assignments, projects, or exams
+- Encourage peer support and collaborative problem-solving
+- Highlight the most helpful answers through voting and teacher validation
+- Use reputation scores to motivate quality contributions
+- Create dynamic, interactive forums for large classes or complex topics';
+$string['modulename_summary'] = 'Provides a question-and-answer forum where posts are ranked by votes instead of time, with reputation scores, helpful answer marking, and teacher validation for correct solutions.';
+$string['modulename_tip'] = 'Explore the official <a href=\'https://github.com/learnweb/moodle-mod_moodleoverflow/wiki\'>wiki</a> for more details and customization options!';
 $string['modulenameplural'] = 'Moodleoverflows';
 $string['moodleoverflow'] = 'Moodleoverflow';
 $string['moodleoverflow:addinstance'] = 'Add a new Moodleoverflow instance';
@@ -404,6 +418,7 @@ $string['tasksendreviewmails'] = 'Moodleoverflow job to send a needed review not
 $string['taskupdategrades'] = 'Moodleoverflow maintenance job to update grades';
 $string['teacherrating'] = 'Solution';
 $string['there_are_no_posts_needing_review'] = 'There are no more posts in this forum that need to be reviewed.';
+$string['topicmove_success'] = 'Discussion was moved successfully to {$a}.';
 $string['tracking'] = 'Track';
 $string['trackingoff'] = 'Off';
 $string['trackingon'] = 'Forced';
@@ -420,6 +435,7 @@ $string['unreadposts'] = 'Unread posts';
 $string['unreadpostsnumber'] = '{$a} unread posts';
 $string['unreadpostsone'] = '1 unread post';
 $string['unsubscribe'] = 'Unsubscribe from this forum';
+$string['unsubscribed'] = 'Unsubscribed';
 $string['unsubscribediscussion'] = 'Unsubscribe from this discussion';
 $string['unsubscribediscussionlink'] = 'Unsubscribe from this discussion: {$a}';
 $string['unsubscribelink'] = 'Unsubscribe from this forum: {$a}';
@@ -438,7 +454,7 @@ $string['votescalehelpful'] = 'Reputation: Helpful';
 $string['votescalesolved'] = 'Reputation: Solution';
 $string['votescaleupvote'] = 'Reputation: Upvote';
 $string['votescalevote'] = 'Reputation: Vote.';
-$string['wheremovetopic'] = 'Where do you want to move the topic "{$a}"?';
+$string['wheremovetopic'] = 'To which moodleoverflow do you want to move "{$a}":';
 $string['wronginteraction'] = 'Something went wrong executing the interaction.';
 $string['wrongparametercount'] = 'Exactly one parameter should be declared in the url. Please specify the one action you want to perform.';
 $string['your_post_was_rejected'] = 'Your post was rejected.';

@@ -47,6 +47,7 @@ $string['addnewpagesafterselected'] = 'Aggiungi nuove pagine dopo le domande sel
 $string['addnewquestionsqbank'] = 'Aggiungi domande alla categoria {$a->catname}: {$a->link}';
 $string['addnewuseroverride'] = 'Aggiungi personalizzazione individuale';
 $string['addpagebreak'] = 'Inserisci interruzione di pagina';
+$string['addpagebreakafter'] = 'Aggiungi interruzione di pagina dopo la domanda {$a}';
 $string['addpagehere'] = 'Aggiungi pagina';
 $string['addquestion'] = 'Aggiungi domanda';
 $string['addquestionfrombankatend'] = 'Aggiungi dal deposito delle domande alla fine';
@@ -585,6 +586,7 @@ Il docente può decidere quando e come far vedere agli studenti le risposte esat
 * autovalutazione';
 $string['modulename_link'] = 'mod/quiz/view';
 $string['modulenameplural'] = 'Quiz';
+$string['movequestionnumber'] = 'Sposta domanda: {$a}';
 $string['moveselectedonpage'] = 'Sposta le domande selezionate a pagina: {$a}';
 $string['multichoice'] = 'Risposta multipla';
 $string['multipleanswers'] = 'Scegli almeno una risposta.';

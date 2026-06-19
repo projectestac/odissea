@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allquestionversionsdeleted'] = 'Tutte le versioni di questa domanda sono state eliminate.';
-$string['close_history'] = 'Chiusi';
+$string['close_history'] = 'Chiudi';
 $string['history_action'] = 'Storico';
 $string['history_header'] = 'Storico della domanda';
 $string['pluginname'] = 'Storico della domanda';

@@ -26,6 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['abort_button'] = 'Abbrechen';
+$string['activitydate:closedanswering'] = 'Für die Beantwortung von Fragen geschlossen:';
+$string['activitydate:closedsubmission'] = 'Für die Einreichung von Fragen geschlossen:';
+$string['activitydate:closesanswering'] = 'Schließt für die Beantwortung von Fragen:';
+$string['activitydate:closessubmission'] = 'Schließt für die Einreichung von Fragen:';
+$string['activitydate:openedanswering'] = 'Für die Beantwortung von Fragen geöffnet:';
+$string['activitydate:openedsubmission'] = 'Für die Einreichung von Fragen geöffnet:';
+$string['activitydate:opensanswering'] = 'Öffnet für die Beantwortung von Fragen:';
+$string['activitydate:openssubmission'] = 'Öffnet für die Einreichung von Fragen:';
 $string['add_comment'] = 'Kommentar hinzufügen';
 $string['add_reply'] = 'Antwort hinzufügen';
 $string['addprivatecomment'] = 'Privaten Kommentar hinzufügen (nur zwischen Teilnehmer/in und Trainer/in)';
@@ -35,7 +43,9 @@ $string['after_answering_end_date'] = 'Dieses StudentQuiz wurde am {$a} für wei
 $string['after_submission_end_date'] = 'Dieses StudentQuiz wurde am {$a} für das Einreichen von Fragen geschlossen.';
 $string['anonymous_user'] = 'Anonyme Person';
 $string['anonymous_user_name'] = 'Anonyme/r Nutzer/in #{$a}';
+$string['answeringclose'] = 'Beantwortung bis:';
 $string['answeringndbeforestart'] = 'Der Endtermin für die Beantwortung von Fragen kann nicht vor dem Starttermin liegen.';
+$string['answeringopen'] = 'Beantwortung ab:';
 $string['api_state_change_error_content'] = 'Diese Frage kann nicht gelöscht werden, da sie bestätigt wurde.';
 $string['api_state_change_error_title'] = 'Fehler beim Löschen einer Frage';
 $string['api_state_change_success_content'] = 'Fragestatus/Sichtbarkeit erfolgreich geändert';
@@ -232,8 +242,22 @@ $string['mine_column_name'] = 'Meine';
 $string['missingparam'] = 'Ein Parameter fehlt oder ist falsch';
 $string['moderator'] = 'Moderator/in';
 $string['modulename'] = 'StudentQuiz';
-$string['modulename_help'] = 'Die StudentQuiz-Aktivität ermöglicht es Teilnehmer/innen, Fragen zum Pool hinzuzufügen. In der StudentQuiz-Übersicht können die Teilnehmer/innen Fragen filtern. Sie können die gefilterten Fragen anschließend zum Üben benutzen. Trainer/innen haben die Option die Spalte "erstellt von" zu anonymisieren.<br><br>Die StudentQuiz-Aktivität vergibt Teilnehmer/innen Punkte, um sie zu motivieren, Fragen hinzuzufügen und damit zu üben. Die Punkte werden in einer Rangliste aufgelistet.';
+$string['modulename_help'] = '###### Features
+- Ermöglicht es Teilnehmer/innen, kollaborative Fragepools zu erstellen
+- Ermöglicht das Filtern, Bewerten und Kommentieren von Fragen
+- Ermöglicht es Teilnehmer/innen personalisierte Tests vom geteilten Fragepool zusammenzustellen
+- Ermöglicht das tracken von individuellen Beiträgen und dem Lernfortschritt mit Rangliste-Punkten
+- Fügt erstellte Fragen zur Moodle Fragenbank zur Wiederverwendung hinzu
+
+###### Möglichkeiten zur Verwendung
+- Motivation von Teilnehmer/innen zum aktiven Beitrag und Übung durch Gamification
+- Vorbereitung auf Prüfungen durch einen kollaborativ erstellten Fragepool
+- Motivation zu Peer Feedback und Diskussionen über gegenseitige Bewertungen und Kommentare
+- Trainer/innen haben die Kontrolle über die Freigabe von Fragen und Einstellungen zur Anonymisierung
+- Unterstützt personalisiertes Lernen durch das Zusammenstellen von Tests durch Teilnehmer/innen
+In der StudentQuiz-Übersicht können die Teilnehmer/innen Fragen filtern. Sie können die gefilterten Fragen anschließend zum Üben benutzen. Trainer/innen haben die Option die Spalte "erstellt von" zu anonymisieren.<br><br>Die StudentQuiz-Aktivität vergibt Teilnehmer/innen Punkte, um sie zu motivieren, Fragen hinzuzufügen und damit zu üben. Die Punkte werden in einer Rangliste aufgelistet.';
 $string['modulename_link'] = 'mod/studentquiz/view';
+$string['modulename_summary'] = 'Ermöglicht es Teilnehmer/innen, Fragebanken zu erstellen und daraus personalisierte Tests zusammenzustellen. Zur Motivation werden dabei Punkte gesammelt.';
 $string['modulenameplural'] = 'StudentQuizzes';
 $string['more'] = 'Mehr';
 $string['myattempts_column_name'] = 'Meine Versuche';
@@ -593,7 +617,9 @@ $string['studentquiz:unhideanonymous'] = 'Kann die Namen von anderen Teilnehmer/
 $string['studentquiz:view'] = 'StudentQuiz anzeigen und nutzen';
 $string['studentquizname'] = 'StudentQuiz Name';
 $string['studentquizname_help'] = 'StudentQuiz Name';
+$string['submissionclose'] = 'Einreichungen bis';
 $string['submissionendbeforestart'] = 'Die Frist für das Einreichen von Fragen kann nicht vor dem Starttermin für das Einreichen von Fragen liegen';
+$string['submissionopen'] = 'Einreichungen ab';
 $string['tags'] = 'Tags';
 $string['unapprove'] = 'Ablehnen';
 $string['unpin'] = 'Frage lösen';

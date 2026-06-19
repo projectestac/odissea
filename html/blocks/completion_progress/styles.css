@@ -107,7 +107,7 @@
     text-align: right;
 }
 
-.block_completion_progress .progressBarCell .nowicon {
+.block_completion_progress .progressBarCell .nowDiv .icon {
     width: 15px;
     height: 15px;
     margin: 0;
@@ -148,42 +148,42 @@
 .block_completion_progress .progressPercentage {
     font-size: x-small;
     text-align: left;
-    white-space: pre;
     overflow: hidden;
     padding: 0;
     margin: 5px;
 }
-.block_completion_progress .progressEventInfo {
-    white-space: pre-wrap;
-}
-.block_completion_progress .progressEventInfo .iconInInfo,
+.block_completion_progress .progressEventInfo .icon,
 #fitem_id_config_progressBarIcons .iconOnConfig {
     height: 1.2em;
     width: 1.2em;
 }
 
-#page-blocks-completion_progress-overview .overviewTable {
-    table-layout: fixed;
-}
-#page-blocks-completion_progress-overview .overviewTable th.col-select .form-check {
+#page-blocks-completion_progress-overview #overview th.col-select .form-check {
     padding-left: 0;
 }
-#page-blocks-completion_progress-overview .overviewTable .col-select {
+#page-blocks-completion_progress-overview #overview .col-select {
     width: 2rem;
     text-align: center;
 }
-#page-blocks-completion_progress-overview .overviewTable .col-fullname {
+#page-blocks-completion_progress-overview #overview .col-fullname {
     width: 20%;
 }
-#page-blocks-completion_progress-overview .overviewTable .col-timeaccess {
+#page-blocks-completion_progress-overview #overview .col-timeaccess {
     width: 15%;
 }
-#page-blocks-completion_progress-overview .overviewTable .col-progressbar {
+#page-blocks-completion_progress-overview #overview .col-progressbar {
     min-width: 200px;
+    max-width: 40vw;
 }
-#page-blocks-completion_progress-overview .overviewTable .col-progress {
+#page-blocks-completion_progress-overview #overview .col-progress {
     width: 6rem;
     text-align: center;
+}
+#page-blocks-completion_progress-overview .bulkactions {
+    display: none;
+}
+#page-blocks-completion_progress-overview.jsenabled .bulkactions {
+    display: block;
 }
 
 .block_completion_progress .progressEventInfo img {

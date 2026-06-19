@@ -30,6 +30,7 @@ $string['cannotfindanyrunforrunid'] = 'Sorry, kan de \'{$a}\' profiling run niet
 $string['cannotfindanyrunforurl'] = 'Sorry, kan geen enkele profiling run vinden voor URL \'{$a}\'';
 $string['comment'] = 'Opmerking';
 $string['cputime'] = 'Processortijd';
+$string['detailview'] = 'Samenvatting';
 $string['differencesbetween2runsof'] = 'Verschillen tussen 2 runs van {$a}';
 $string['executiontime'] = 'Uitvoertijd';
 $string['export'] = 'Exporteer';

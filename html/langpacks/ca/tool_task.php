@@ -136,7 +136,7 @@ $string['taskscheduleminute_help'] = 'Camp del minut de la tasca programada. El 
 * <strong>2-10</strong> Cada minut entre els 2 i els 10 (inclòs)
 * <strong>2, 6, 9</strong> En els minuts 2, 6 i 9';
 $string['taskschedulemonth'] = 'Mes';
-$string['taskschedulemonth_help'] = 'Camp del mes de la tasca programada. El camp utilitza el mateix format que unix cron. Alguns exemples són:
+$string['taskschedulemonth_help'] = 'Camp del mes de la tasca programada. El camp utilitza el mateix format que unix cron. Alguns exemples en són els següents:
 
 * <strong>*</strong> Cada mes
 * <strong>*/2</strong> Cada segon mes

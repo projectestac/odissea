@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Instruktörens namn';
+$string['teacher'] = 'Lärare';

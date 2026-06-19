@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['friday'] = 'Divendres';
+$string['friday'] = 'divendres';
 $string['monday'] = 'Dilluns';
-$string['saturday'] = 'Dissabte';
-$string['sunday'] = 'Diumenge';
-$string['thursday'] = 'Dijous';
-$string['tuesday'] = 'Dimarts';
-$string['wednesday'] = 'Dimecres';
+$string['saturday'] = 'dissabte';
+$string['sunday'] = 'diumenge';
+$string['thursday'] = 'dijous';
+$string['tuesday'] = 'dimarts';
+$string['wednesday'] = 'dimecres';

@@ -14,8 +14,6 @@ function AuthenticateUserContent($data, $usr_creden = false, $showurl = true) {
 
     global $CFG, $DB, $USER, $OUTPUT;
 
-    $from = optional_param('from', '', PARAM_TEXT);
-
     if (!isset($data->bookid) || ($book = $DB->get_record('rcommon_books', ['id' => $data->bookid])) === false) {
         throw new \moodle_exception('nobookid', 'local_rcommon');
     }
@@ -97,8 +95,8 @@ function AuthenticateUserContent($data, $usr_creden = false, $showurl = true) {
 
         //convert rcommon_teacherroles to array
         $rcommon_teacherroles = explode(',', get_config('rcommon', 'teacherroles'));
-        //get user role
 
+        //get user role
         // To avoid problems because in some cases the courseid was null
         $context = context_course::instance($data->course);
 
@@ -141,7 +139,7 @@ function AuthenticateUserContent($data, $usr_creden = false, $showurl = true) {
     } catch (Throwable $e) {
         log_to_file("wsAutenthication exception: " . get_string('bad_wsdl_connection', 'local_rcommon'));
         echo '<script type="text/javascript">window.alert("' . get_string('bad_wsdl_connection', 'local_rcommon') . '"); history.go(-1);</script>';
-        echo $OUTPUT->notification(get_string('bad_wsdl_connection', 'local_rcommon'));
+        echo $OUTPUT->notification($e->getMessage());
         die();
     }
 
@@ -163,7 +161,6 @@ function AuthenticateUserContent($data, $usr_creden = false, $showurl = true) {
     //check if there are any response error
     if ($response->AutenticarUsuarioContenidoResult->Codigo <= 0) {
         //test if isset the url
-        //
         $urlok = false;
         $message = 'Instance ID: ' . $data->id . ', Text: ' . get_string('wsautenticationerror', $data->module == 'check_credentials' ? 'rcontent' : $data->module) . ", Code: " . $response->AutenticarUsuarioContenidoResult->Codigo . ", Detail: " . $response->AutenticarUsuarioContenidoResult->Descripcion;
         if (isset($response->AutenticarUsuarioContenidoResult->URL)) {

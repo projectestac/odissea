@@ -56,12 +56,12 @@ $string['assign:exportownsubmission'] = 'Exporteer je opdracht';
 $string['assign:grade'] = 'Beoordeel opdracht';
 $string['assign:grantextension'] = 'Geef extra tijd';
 $string['assign:manageallocations'] = 'Beheer toegewezen beoordelaars';
-$string['assign:managegrades'] = 'Bekijk cijfers en geef ze vrij';
+$string['assign:managegrades'] = 'Beoordeel cijfers en geef ze vrij';
 $string['assign:manageoverrides'] = 'Beheer opdrachtoverschrijvingen';
 $string['assign:receivegradernotifications'] = 'Ontvang meldingen van ingediende opdrachten';
 $string['assign:releasegrades'] = 'Geef cijfers vrij';
 $string['assign:revealidentities'] = 'Identiteit leerlingen tonen';
-$string['assign:reviewgrades'] = 'Bekijk cijfers';
+$string['assign:reviewgrades'] = 'Cijfers beoordelen';
 $string['assign:showhiddengrader'] = 'Zie de identiteit van een verborgen beoordeler';
 $string['assign:submit'] = 'Stuur opdracht in';
 $string['assign:view'] = 'Bekijk opdracht';
@@ -108,18 +108,18 @@ $string['attempthistory'] = 'Vorige pogingen';
 $string['attemptnumber'] = 'Pogingnummer';
 $string['attemptreopenmethod'] = 'Extra pogingen';
 $string['attemptreopenmethod_automatic'] = 'Automatisch';
-$string['attemptreopenmethod_automatic_help'] = 'Na elke poging is de volgende automatisch toegestaan.';
+$string['attemptreopenmethod_automatic_help'] = 'Na elke poging is de volgende automatisch toegestaan na beoordeling.';
 $string['attemptreopenmethod_help'] = 'Deze instelling bepaalt of een leerling bijkomende pogingen kan insturen voor de opdracht. Voor elke inzending wordt de poging, het cijfer en de feedback bewaard en die kan bekeken worden door leraar en leerling.
 De beschikbare opties zijn:
 
-* Manueel - Na elke poging kunnen er bijkomende pogingen toegestaan via de instuur en beoordelingspagina.
-* Automatisch - Na elke poging wordt een nieuwe poging automatisch toegestaan.
-* Automatisch tot geslaagd - de leerling kan automatisch meer pogingen insturen tot de leerling een slaagcijfer behaalt.';
+* Manueel - Na elke poging kun je bijkomende pogingen toegestaan via de instuur en beoordelingspagina.
+* Automatisch - Na elke poging wordt een nieuwe poging automatisch toegestaan na beoordeling.
+* Automatisch tot geslaagd - de leerling kan automatisch meer pogingen insturen tot de leerling het slaagcijfer behaalt.';
 $string['attemptreopenmethod_manual'] = 'Manueel';
 $string['attemptreopenmethod_manual_help'] = 'Na elke poging kun je de volgende toestaan via de ingestuurde opdrachten-pagina of via de beoordelingspagina.';
 $string['attemptreopenmethod_none'] = 'Nooit';
 $string['attemptreopenmethod_untilpass'] = 'Automatisch tot geslaagd';
-$string['attemptreopenmethod_untilpass_help'] = 'Na elke poging zal de volgende automatisch toegestaan worden tot de leerling de score om te slagen behaalt.';
+$string['attemptreopenmethod_untilpass_help'] = 'Na elke poging zal de volgende automatisch toegestaan worden tot de leerling het slaagcijfer behaalt.';
 $string['attemptsettings'] = 'Poginginstellingen';
 $string['availability'] = 'Beschikbaarheid';
 $string['back'] = 'Terug';
@@ -150,6 +150,7 @@ $string['blindmarking'] = 'Anoniem insturen';
 $string['blindmarking_help'] = 'Anoniem insturen verbergt de identiteit van leerlingen voor de beoordelaars. De instellingen voor anoniem insturen zullen geblokkeerd worden als er minstens één inzending of één beoordeling is gebeurd voor deze opdracht.';
 $string['blindmarkingenabledwarning'] = 'Voor deze activiteit is anoniem insturen ingeschakeld.';
 $string['blindmarkingnogradewarning'] = 'Voor deze activiteit is anoniem insturen ingeschakeld. Cijfers zullen niet aan het puntenboek toegevoegd worden tot de identiteit van de leerlingen vrijgegeven wordt via het "Acties"-menu.';
+$string['bulkactionsselection'] = 'Bulk actie selectie';
 $string['cachedef_overrides'] = 'Informatie gebruiker- en groepsoverschrijving';
 $string['calendardue'] = '{$a} moet worden ingeleverd';
 $string['calendarextension'] = '{$a} moet klaar zijn (verlenging)';
@@ -669,7 +670,7 @@ $string['timeremaining'] = 'Resterende tijd';
 $string['timeremainingcolon'] = 'Resterende tijd: {$a}';
 $string['togglezoom'] = 'Zoom regio in/uit';
 $string['ungroupedusers'] = 'De instelling "Groeplidmaatschap vereist om een inzending te maken" is ingeschakeld en sommige gebruikers zijn niet toegewezen aan een groep of zijn lid van meerdere groepen. Dit zal het onmogelijk maken hun opdracht in te sturen.';
-$string['ungroupedusersoptional'] = 'De instelling \'Leerlingen sturen groepsopdracht in\' is ingeschakeld en sommige gebruikers maken geen deel uit van een groep of zijn lid van meer dan één groep. Houd er rekening mee dat deze leerlingen zich aanmelden als leden van de \'Standaardgroep\'.';
+$string['ungroupedusersoptional'] = 'De instelling \'Leerlingen sturen groepsopdracht in\' is ingeschakeld en sommige gebruikers maken geen deel uit van een groep of zijn lid van meer dan één groep. Houd er rekening mee dat deze leerlingen de opdracht zullen insturen als leden van de \'Standaardgroep\'.';
 $string['unlimitedattempts'] = 'Onbeperkt';
 $string['unlimitedattemptsallowed'] = 'Onbeperkt aantal pogingen toegestaan.';
 $string['unlimitedpages'] = 'Onbeperkt';

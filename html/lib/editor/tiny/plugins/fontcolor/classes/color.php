@@ -32,7 +32,6 @@
   * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
   */
 class color {
-
     /**
      * Descriptive name of the color (might contain HTML to have multilang capability).
      * @var string
@@ -105,4 +104,3 @@ class color {
         return !($this->has_name_error() || $this->has_value_error());
     }
 }
-

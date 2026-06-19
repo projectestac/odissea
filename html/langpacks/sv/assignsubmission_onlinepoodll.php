@@ -25,5 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['active'] = 'Aktiv';
+$string['allowonlinepoodllsubmissions'] = 'Aktivera';
+$string['clicktoshow'] = 'Föreställning';
+$string['default'] = 'Aktiverad som standard';
 $string['no'] = 'Nej';
+$string['replysnapshot'] = 'Skärmbild';
+$string['replywhiteboard'] = 'Whiteboard';
 $string['yes'] = 'Ja';

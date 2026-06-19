@@ -744,7 +744,16 @@ class redis extends handler implements SessionHandlerInterface {
 
         // Guest user.
         if ($userid == $CFG->siteguest) {
+
+            // XTEC ************ MODIFICAT - Don't increase the TTL for sessions of guest user to reduce data in redis.
+            // 2026.05.12 @aginard
+            return $CFG->sessiontimeout;
+            // *********** CODI ORIGINAL
+            /*
             return $CFG->sessiontimeout * 5;
+            */
+            // ***************** FI
+
         }
 
         // All other users.

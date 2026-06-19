@@ -252,6 +252,7 @@ $string['event_meeting_left'] = 'Meeting left';
 $string['event_recording_deleted'] = 'Recording deleted';
 $string['event_recording_edited'] = 'Recording edited';
 $string['event_recording_imported'] = 'Recording imported';
+$string['event_recording_link_deleted'] = 'Recording link deleted';
 $string['event_recording_protected'] = 'Recording protected';
 $string['event_recording_published'] = 'Recording published';
 $string['event_recording_unprotected'] = 'Recording unprotected';

@@ -120,7 +120,7 @@ $string['cwrqpfs'] = 'Preguntes aleatòries que seleccionen preguntes de subcate
 $string['cwrqpfsinfo'] = '<p>Durant l\'actualització a Moodle 1.9 se separaran les categories de preguntes en diferents contextos. Caldrà canviar l\'estat de publicació d\'algunes preguntes i categories de preguntes del vostre lloc. Això és necessari en casos com el vostre, quan hi ha preguntes «aleatòries» en un qüestionari definides de manera que trien preguntes de subcategories i alguna d\'aquestes subcategories té un estat de publicació diferent de l\'estat de la categoria mare on està creada la pregunta aleatòria.</p>
 <p>Es canviarà l\'estat de publicació de les categories següents, d\'on treuen preguntes les preguntes «aleatòries» de categories mare, a l\'estat de publicació de la categoria que conté la pregunta aleatòria. Les preguntes afectades continuaran funcionant en tots els qüestionaris existents.</p>';
 $string['cwrqpfsnoprob'] = 'El vostre lloc no conté categories afectades pel problema de les "preguntes aleatòries que seleccionen preguntes de subcategories".';
-$string['decimalplacesingrades'] = 'Xifres decimals en les puntuacions';
+$string['decimalplacesingrades'] = 'Nombre de decimals a les qualificacions';
 $string['defaultfor'] = 'Categoria per defecte en {$a}';
 $string['defaultinfofor'] = 'La categoria per defecte per a preguntes compartides en el context «{$a}»';
 $string['defaultmark'] = 'Puntuació per defecte';

@@ -39,7 +39,7 @@ $string['course'] = 'Curs';
 $string['coursenotes'] = 'Anotacions del curs';
 $string['created'] = 'creació';
 $string['deleteconfirm'] = 'Voleu suprimir aquesta anotació?';
-$string['deletenotes'] = 'Suprimeix totes les anotacions';
+$string['deletenotes'] = 'Totes les anotacions';
 $string['editnote'] = 'Edita anotació';
 $string['enablenotes'] = 'Habilita les anotacions';
 $string['eventnotecreated'] = 'S\'ha creat l\'anotació';
@@ -69,10 +69,11 @@ $string['privacy:metadata:core_notes:lastmodified'] = 'La darrera data/hora modi
 $string['privacy:metadata:core_notes:publishstate'] = 'L\'estat de publicació de la nota.';
 $string['privacy:metadata:core_notes:userid'] = 'L\'ID de l\'usuari associat amb la nota';
 $string['publishstate'] = 'Context';
-$string['publishstate_help'] = 'El context d\'una anotació determina qui la pot veure.
-* Personal - L\'anotació serà visible només per a vós
-* Curs - L\'anotació serà visible per al professorat del curs
-* Lloc - L\'anotació serà visible per al professorat de tots els cursos';
+$string['publishstate_help'] = 'El context d\'una anotació determina qui la pot veure. Els usuaris han de ser conscients que totes les anotacions, incloses les personals, es poden divulgar segons les lleis de les seves jurisdiccions.
+
+* Personal: l\'anotació només serà visible per a vós
+* Curs: l\'anotació serà visible per als professors d\'aquest curs
+* Lloc: l\'anotació serà visible per als professors de tots els cursos';
 $string['recipient'] = 'Destinatari';
 $string['site'] = 'Lloc';
 $string['sitenotes'] = 'Anotacions del lloc';

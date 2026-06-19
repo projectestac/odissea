@@ -36,6 +36,7 @@ $string['alreadyloggedin'] = 'Je bent al aangemeld als {$a}, je moet afmelden vo
 $string['authnotexisting'] = 'De authorisatieplugin bestaat niet';
 $string['backupcontainexternal'] = 'Het back-upbestand bevat externe Moodle Hosts die lokaal niet geconfigureerd zijn.';
 $string['backuptablefail'] = 'Back-uptabellen konden niet juist ingesteld worden';
+$string['blockcannotadd'] = 'Kan blok niet toevoegen';
 $string['blockcannotconfig'] = 'Dit blok ondersteunt geen globale configuratie';
 $string['blockcannotinistantiate'] = 'Probleem met het inistialiseren van het blok object';
 $string['blockcannotread'] = 'Kon gegevens voor blokid={$a} niet lezen';
@@ -561,6 +562,7 @@ $string['sessionexpired'] = 'Sessie verlopen';
 $string['sessionhandlerproblem'] = 'Sessieafhandeling is fout geconfigureerd';
 $string['sessionipnomatch'] = 'Sorry, maar je IP-adres is gewijzigd sinds je aangemeld bent. Deze beveiligingsmethode voorkomt dat crackers je identiteit stelen terwijl je aangemeld bent op deze site. Gewone gebruikers zouden deze melding niet mogen zien - vraag je sitebeheerder om hulp.';
 $string['sessionipnomatch2'] = '<p>Je IP-nummer is blijkbaar gewijzigd sinds je login. Deze beveiligingsfunctie verhindert dat crackers je identiteit stelen terwijl je aangemeld bent bij deze site. Je kunt deze melding zien als je draadloze netwerken gebruikt of als je schakelt tussen verschillende netwerken. Vraag de sitebeheerder om hulp.</p><p>Als je wil verder gaan, klik dan op F5 om deze pagina te verversen.</p>';
+$string['sessionstarterror'] = 'Kon de sessie niet starten. Probeer later opnieuw';
 $string['sessionwaiterr'] = 'Time out tijdens het wachten op sessie slot.<br />. Wacht tot je huidige aanvragen afgelopen zijn en probeer later opnieuw.';
 $string['shortnametaken'] = 'Deze korte naam wordt al gebruikt voor een andere cursus ({$a})';
 $string['sitepolicynotagreed'] = 'Niet eens met het website-beleid: <a href="{$a}" Klik hier om het website-beleid te openen </a>.';

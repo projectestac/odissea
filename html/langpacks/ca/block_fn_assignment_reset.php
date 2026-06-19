@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['assignfeedback_comments_enabled'] = 'Comentaris de la retroacció';
+$string['assignfeedback_comments_enabled'] = 'Comentaris de la tramesa';
 $string['assignfeedback_file_enabled'] = 'Fitxers de la retroacció';
 $string['assignsubmission_comments_enabled'] = 'Comentaris de la tramesa';
 $string['gradetopass_header'] = 'Qualificació per aprovar';

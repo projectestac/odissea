@@ -1,6 +1,6 @@
 <?php
 
-class com_wiris_quizzes_api_assertion_ComparisonName extends Enum {
+class com_wiris_quizzes_api_assertion_ComparisonName extends HxEnum {
 	public static $ANY_ANSWER;
 	public static $EQUIVALENT_EQUATIONS;
 	public static $GRADING_FUNCTION;

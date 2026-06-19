@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['done'] = 'Fet';
 $string['noattemptsonly'] = 'Mostra/baixa només {$a} sense intents';
+$string['optallattempts'] = 'tots els intents';
 $string['randomsummaryreport'] = 'Informe de resum de la pregunta aleatòria';

@@ -59,6 +59,7 @@ $string['attachment_help'] = 'İsteğe bağlı olarak bir veya daha fazla dosyay
 $string['author'] = 'yazar';
 $string['authorview'] = 'Yazara göre gözat';
 $string['back'] = 'Geri';
+$string['bynameondate'] = 'Ekleyen: {$a->name} - {$a->date}';
 $string['cachedef_concepts'] = 'Kavram bağlama';
 $string['cantinsertcat'] = 'Kategori eklenemez';
 $string['cantinsertrec'] = 'Kayıt eklenemez';

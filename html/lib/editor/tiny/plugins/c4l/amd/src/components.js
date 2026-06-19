@@ -28,7 +28,7 @@ const components = [
         type: "contextual",
         imageClass: "c4l-keyconcept-icon",
         code:
-            '<p class="c4l-spacer"></p><div class="c4lv-keyconcept {{VARIANTS}}" aria-label="{{#keyconcept}}">' +
+            '<p class="c4l-spacer"></p><div class="c4lv-keyconcept {{VARIANTS}}" role="note" aria-label="{{#keyconcept}}">' +
             "{{PLACEHOLDER}}</div>",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor odio vel turpis consequat sodales.",
         docs: {
@@ -47,7 +47,7 @@ const components = [
         type: "contextual",
         imageClass: "c4l-tip-icon",
         code:
-            `<p class="c4l-spacer"></p><div class="c4lv-tip {{VARIANTS}}" aria-label="{{#tip}}">
+            `<p class="c4l-spacer"></p><div class="c4lv-tip {{VARIANTS}}" role="note" aria-label="{{#tip}}">
             {{PLACEHOLDER}}</div>`,
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor odio vel turpis consequat sodales.",
         docs: {
@@ -67,7 +67,7 @@ const components = [
         imageClass: "c4l-reminder-icon",
         code:
             `<p class="c4l-spacer"></p><div class="c4lv-reminder {{VARIANTS}}"
-             aria-label="{{#reminder}}">
+             role="note" aria-label="{{#reminder}}">
             {{PLACEHOLDER}}</div>`,
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor odio vel turpis consequat sodales.",
         docs: {
@@ -87,7 +87,7 @@ const components = [
         imageClass: "c4l-quote-icon",
         code:
             `<p class="c4l-spacer"></p><div class="c4lv-quote {{VARIANTS}}"
-            aria-label="{{#quote}}">
+            role="note" aria-label="{{#quote}}">
             <div class="c4l-quote-body"><div class="c4l-quote-line"></div><div class="c4l-quote-text">
             <p>{{PLACEHOLDER}}</p>
             </div></div>
@@ -114,9 +114,9 @@ const components = [
         imageClass: "c4l-dodontcards-icon",
         code:
             `<p class="c4l-spacer"></p><div class="c4lv-dodontcards {{VARIANTS}}"
-            aria-label="{{#dodontcards}}">
-            <div class="c4l-dodontcards-do" aria-label="{{#do-card}}">{{PLACEHOLDER}}</div>
-            <div class="c4l-dodontcards-dont" aria-label="{{#dont-card}}">
+            role="note" aria-label="{{#dodontcards}}">
+            <div class="c4l-dodontcards-do" role="note" aria-label="{{#do-card}}">{{PLACEHOLDER}}</div>
+            <div class="c4l-dodontcards-dont" role="note" aria-label="{{#dont-card}}">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Phasellus a posuere nibh, eu mollis lacus.
             Praesent dictum in velit sed dapibus. Orci varius natoque penatibus et magnis dis parturient montes,
@@ -141,7 +141,7 @@ const components = [
         imageClass: "c4l-readingcontext-icon",
         code:
             `<p class="c4l-spacer"></p><div class="c4lv-readingcontext {{VARIANTS}}"
-            aria-label="{{#readingcontext}}">
+            role="note" aria-label="{{#readingcontext}}">
             <p>{{PLACEHOLDER}}</p>{{VARIANTSHTML}}</div>`,
         text:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus leo, hendrerit ac sem vitae," +
@@ -164,7 +164,7 @@ const components = [
         imageClass: "c4l-example-icon",
         code:
             `<p class="c4l-spacer"></p><div class="c4lv-example {{VARIANTS}}"
-            aria-label="{{#example}}"><h1>Lorem ipsum dolor sit amet</h1>
+            role="note" aria-label="{{#example}}"><h1>Lorem ipsum dolor sit amet</h1>
              <p>{{PLACEHOLDER}}</p></div>`,
         text:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
@@ -187,7 +187,7 @@ const components = [
         imageClass: "c4l-figure-icon",
         code:
             `<p class="c4l-spacer"></p><figure class="c4lv-figure {{VARIANTS}}"
-            aria-label="{{#figure}}"><img src="" alt="Lorem ipsum dolor sit amet">
+            role="note" aria-label="{{#figure}}"><img src="" alt="Lorem ipsum dolor sit amet">
             {{VARIANTSHTML}}</figure>`,
         text: "Consectetur adipiscing elit.",
         docs: {
@@ -206,7 +206,7 @@ const components = [
         type: "contextual",
         imageClass: "c4l-tag-icon",
         code:
-            `<p class="c4l-spacer"></p><div class="c4l-display-left" aria-label="{{#tag}}">
+            `<p class="c4l-spacer"></p><div class="c4l-display-left" role="note" aria-label="{{#tag}}">
             <div class="c4lv-tag {{VARIANTS}}">{{PLACEHOLDER}}</div></div>`,
         text: "Lorem ipsum",
         docs: {
@@ -223,7 +223,7 @@ const components = [
         name: "inlinetag",
         type: "contextual",
         imageClass: "c4l-inlinetag-icon",
-        code: `<span class="c4lv-inlinetag {{VARIANTS}}" aria-label="{{#inlinetag}}">{{PLACEHOLDER}}</span>`,
+        code: `<span class="c4lv-inlinetag {{VARIANTS}}" role="note" aria-label="{{#inlinetag}}">{{PLACEHOLDER}}</span>`,
         text: "Text",
         docs: {
             description: "{{#docs_inlinetag_desc}}",
@@ -240,7 +240,7 @@ const components = [
         type: "procedural",
         imageClass: "c4l-attention-icon",
         code:
-            `<p class="c4l-spacer"></p><div class="c4lv-attention {{VARIANTS}}" aria-label="{{#attention}}">
+            `<p class="c4l-spacer"></p><div class="c4lv-attention {{VARIANTS}}" role="note" aria-label="{{#attention}}">
             {{PLACEHOLDER}}</div>`,
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor odio vel turpis consequat sodales.",
         docs: {
@@ -259,7 +259,7 @@ const components = [
         imageClass: "c4l-estimatedtime-icon",
         code:
             `<p class="c4l-spacer"></p><div class="c4l-inline-group"><div class="c4lv-estimatedtime {{VARIANTS}}"
-            aria-label="{{#estimatedtime}}">{{PLACEHOLDER}} <span>{{#min}}</span></div></div>`,
+            role="note" aria-label="{{#estimatedtime}}">{{PLACEHOLDER}} <span>{{#min}}</span></div></div>`,
         text: "15",
         docs: {
             description: "{{#docs_estimatedtime_desc}}",
@@ -277,7 +277,7 @@ const components = [
         imageClass: "c4l-duedate-icon",
         code:
             `<p class="c4l-spacer"></p><div class="c4l-inline-group"><div class="c4lv-duedate {{VARIANTS}}"
-            aria-label="{{#duedate}}">{{PLACEHOLDER}}</div></div>`,
+            role="note" aria-label="{{#duedate}}">{{PLACEHOLDER}}</div></div>`,
         text: "November 17th",
         docs: {
             description: "{{#docs_duedate_desc}}",
@@ -294,7 +294,7 @@ const components = [
         imageClass: "c4l-proceduralcontext-icon",
         code:
             `<p class="c4l-spacer"></p><p class="c4lv-proceduralcontext {{VARIANTS}}"
-            aria-label="{{#proceduralcontext}}" >
+            role="note" aria-label="{{#proceduralcontext}}" >
             {{PLACEHOLDER}}</p>`,
         text:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a posuere nibh, eu mollis lacus." +
@@ -318,7 +318,7 @@ const components = [
         imageClass: "c4l-learningoutcomes-icon",
         code:
             `<p class="c4l-spacer"></p>
-            <div class="c4lv-learningoutcomes {{VARIANTS}}" aria-label="{{#learningoutcomes}}">
+            <div class="c4lv-learningoutcomes {{VARIANTS}}" role="note" aria-label="{{#learningoutcomes}}">
             <h6 class="c4l-learningoutcomes-title">{{#learningoutcomes}}</h6>
             <ul class="c4l-learningoutcomes-list"><li>{{PLACEHOLDER}}</li><li>Curabitur non nulla sit amet
             nisl tempus convallis quis ac lectus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</li>
@@ -343,7 +343,7 @@ const components = [
         imageClass: "c4l-gradingvalue-icon",
         code:
             `<p class="c4l-spacer"></p><div class="c4l-inline-group"><div class="c4lv-gradingvalue {{VARIANTS}}"
-             aria-label="{{#gradingvalue}}"><span>{{#gradingvalue}}: </span>{{PLACEHOLDER}}</div></div>`,
+             role="note" aria-label="{{#gradingvalue}}"><span>{{#gradingvalue}}: </span>{{PLACEHOLDER}}</div></div>`,
         text: "33.3%",
         docs: {
             description: "{{#docs_gradingvalue_desc}}",
@@ -360,7 +360,7 @@ const components = [
         imageClass: "c4l-expectedfeedback-icon",
         code:
             `<p class="c4l-spacer"></p><div class="c4lv-expectedfeedback {{VARIANTS}}"
-            aria-label="{{#expectedfeedback}}">
+            role="note" aria-label="{{#expectedfeedback}}">
             <p>{{PLACEHOLDER}}</p></div>`,
         text:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a posuere nibh, eu mollis lacus." +
@@ -382,7 +382,7 @@ const components = [
         imageClass: "c4l-allpurposecard-icon",
         code:
             `<p class="c4l-spacer"></p><div class="c4lv-allpurposecard {{VARIANTS}}"
-            aria-label="{{#allpurposecard}}"><p>{{PLACEHOLDER}}</p></div>`,
+            role="note" aria-label="{{#allpurposecard}}"><p>{{PLACEHOLDER}}</p></div>`,
         text:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a posuere nibh, eu mollis lacus." +
             " Praesent dictum in velit sed dapibus." +
@@ -402,7 +402,7 @@ const components = [
         type: "contextual",
         imageClass: "c4l-conceptreview-icon",
         code:
-            `<p class="c4l-spacer"></p><div class="c4lv-conceptreview {{VARIANTS}}" aria-label="{{#conceptreview}}">
+            `<p class="c4l-spacer"></p><div class="c4lv-conceptreview {{VARIANTS}}" role="note" aria-label="{{#conceptreview}}">
             <h6 class="c4l-concept-review-title">{{#conceptreview}}</h6>{{PLACEHOLDER}}</div>`,
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor odio vel turpis consequat sodales.",
         docs: {
@@ -421,7 +421,7 @@ const components = [
         imageClass: "c4l-furtherreading-icon",
         code:
             `<p class="c4l-spacer"></p>
-            <div class="c4lv-furtherreading {{VARIANTS}}" aria-label="{{#furtherreading}}">
+            <div class="c4lv-furtherreading {{VARIANTS}}" role="note" aria-label="{{#furtherreading}}">
             <h6 class="c4l-further-reading-title">{{#furtherreading}}</h6>
             <ul class="c4l-furtherreading-list"><li>{{PLACEHOLDER}}</li><li>Curabitur non nulla sit amet
             nisl tempus convallis quis ac lectus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</li>
@@ -448,7 +448,7 @@ const components = [
         imageClass: "c4l-aiuseallowed-icon",
         code:
             `<p class="c4l-spacer"></p><div class="c4l-inline-group"><div class="c4lv-aiuseallowed {{VARIANTS}}"
-             aria-label="{{#aiuseallowed}}">{{PLACEHOLDER}}</div></div>`,
+             role="note" aria-label="{{#aiuseallowed}}">{{PLACEHOLDER}}</div></div>`,
         text: "Use of AI is <strong>allowed</strong>",
         docs: {
             description: "{{#docs_aiuseallowed_desc}}",
@@ -466,7 +466,7 @@ const components = [
         imageClass: "c4l-aiusenotallowed-icon",
         code:
             `<p class="c4l-spacer"></p><div class="c4l-inline-group"><div class="c4lv-aiusenotallowed {{VARIANTS}}"
-             aria-label="{{#aiusenotallowed}}">{{PLACEHOLDER}}</div></div>`,
+             role="note" aria-label="{{#aiusenotallowed}}">{{PLACEHOLDER}}</div></div>`,
         text: "Use of AI is <strong>not allowed</strong>",
         docs: {
             description: "{{#docs_aiusenotallowed_desc}}",
@@ -485,7 +485,7 @@ const components = [
         imageClass: "c4l-aiusereported-icon",
         code:
             `<p class="c4l-spacer"></p><div class="c4l-inline-group"><div class="c4lv-aiusereported {{VARIANTS}}"
-             aria-label="{{#aiusereported}}">{{PLACEHOLDER}}</div></div>`,
+             role="note" aria-label="{{#aiusereported}}">{{PLACEHOLDER}}</div></div>`,
         text: "Use of AI must be <strong>reported</strong>",
         docs: {
             description: "{{#docs_aiusereported_desc}}",

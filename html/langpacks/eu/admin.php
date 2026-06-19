@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['accessdenied'] = 'Sarrera ukatu egin zaizu';
+$string['accessdenied'] = 'Sarbidea ukatuta';
 $string['accountlocked'] = 'Zure kontua blokeatua izan da. Kontua desblokeatzeko esteka posta elektroniko bidez bidali da.';
 $string['accounts'] = 'Kontuak';
 $string['accountunlocked'] = 'Zure kontua desblokeatuta dago. Saioa hasi dezakezu.';
@@ -897,6 +897,7 @@ $string['managelang'] = 'Kudeatu';
 $string['manageqbanks'] = 'Kudeatu galdera-bankuko pluginak';
 $string['manageqbehaviours'] = 'Kudeatu galderen jokaerak';
 $string['manageqtypes'] = 'Kudeatu galdera motak';
+$string['marketplaceavailablenotice'] = 'Arakatu eta deskargatu pluginak <a href="{$a}" target="_blank" rel="noopener noreferrer">Moodle Marketplace-tik <i class="fa fa-external-link" role="img" aria-label="Leiho berri batean irekitzen da" title="Leiho berri batean irekitzen da"></i></a>.';
 $string['maturity100'] = 'Beta';
 $string['maturity150'] = 'Azken bertsiorako hautagaia';
 $string['maturity200'] = 'Bertsio egonkorra';
@@ -962,7 +963,7 @@ $string['moodlebrandedapp'] = 'Moodle markako aplikazioa';
 $string['moodlebrandedapp_help'] = '<p>Moodle markako aplikazioak gure Moodlerako aplikazio librearen funtzionalitate guztiak ditu, zure marka pertsonalizatua ere jasoz.</p>
 <a href="https://moodle.com/branded-app">Moodle markako aplikazioari buruz</a>';
 $string['moodlebrandedappreference'] = 'Bestela, lortu <a href="https://moodle.com/branded-app/">Moodle markako aplikazioa</a> zure marka pertsonalizatuarekin.';
-$string['moodlenetremovalwarning'] = 'MoodleNet zerbitzua 2026ko apirilaren 20an itxiko da. Zure gunean MoodleNet erabiltzen jarraitu nahi baduzu, instalatu MoodleNet plugina <a href="https://moodle.org/plugins" target="_blank">Moodle-ren pluginen direktoriotik <i class="fa fa-exter-link" role="img" aria-label="Beste leiho batean irekitzen da" title="Beste leiho batean irekitzen da"></i></a> eta konektatu norberak hostatutako MoodleNet-eko instantzia batera. Aurrerago MoodleNet profilaren IDa eremua ezabatuko da; mesedez, migratu datu horiek beste helburu batzuetarako erabiltzen ari bazara.';
+$string['moodlenetremovalwarning'] = 'MoodleNet zerbitzua 2026ko apirilaren 20an itxiko da. Zure gunean MoodleNet erabiltzen jarraitu nahi baduzu, instalatu MoodleNet plugina <a href="https://github.com/moodlehq/moodle-tool_moodlenet" target="_blank">MoodleHQ-ko GitHub biltegitik <i class="fa fa-exter-link" role="img" aria-label="Beste leiho batean irekitzen da" title="Beste leiho batean irekitzen da"></i></a> eta konektatu norberak hostatutako MoodleNet-eko instantzia batera. Aurrerago MoodleNet profilaren IDa eremua ezabatuko da; mesedez, migratu datu horiek beste helburu batzuetarako erabiltzen ari bazara.';
 $string['moodlepartners'] = 'Moodle Partner-ak';
 $string['moodlepartners_help'] = '<p>Moodle Partner-ak Moodle HQk egiaztatutako zerbitzu-hornitzaileak dira, zure erakundearen online hezkuntza-ingurunerako goi mailako kalitateko Moodle-zerbitzuak eman ditzaketenak.</p>
 <a href="https://moodle.com/about-partners/">Gure Bazkideen zerbitzuez</a><br />
@@ -1073,8 +1074,8 @@ $string['pleaserefreshregistration'] = 'Zure gunea erregistratuta dago. Erregist
 $string['pleaserefreshregistrationnewdata'] = 'Erregistroko informazioa aldatu da. Mesedez, berretsi ezazu ‘Eguneratu erregistroa’ botoian klik eginda.';
 $string['pleaserefreshregistrationunknown'] = 'Zure gunea erregistratu da baina erregistro-data ezezaguna da. Mesedez, eguneratu zure erregistroa ‘Eguneratu erregistroa’ botoiaren bitartez edo ziurtatu ‘Gunearen erregistroa’ programatutako ataza gaituta dagoela erregistroa automatikoki eguneratzeko.';
 $string['plugin'] = 'Plugina';
-$string['plugin_disabled'] = '{$a} plugina desgaitu da';
-$string['plugin_enabled'] = '{$a} plugina gaitu da';
+$string['plugin_disabled'] = '{$a} plugina desgaitu da.';
+$string['plugin_enabled'] = '{$a} plugina gaitu da.';
 $string['plugins'] = 'Pluginak';
 $string['pluginscheck'] = 'Egiaztatu pluginen menpekotasuna';
 $string['pluginscheckfailed'] = 'Menpekotasun egiaztapenak huts egin du hurrengo hauetan: {$a->pluginslist}';
@@ -1530,7 +1531,7 @@ $string['timezoneinvalid'] = 'Ordu eremu baliogabea "{$a}"';
 $string['timezoneisforcedto'] = 'Behartu erabiltzaile guztiak erabiltzera';
 $string['timezonenotforced'] = 'Erabiltzaileek euren ordu eremua aukera dezakete';
 $string['timezonephpdefault'] = 'Lehenetsitako PHP ordu eremua ({$a})';
-$string['timezoneserver'] = 'Zerbitzariaren ordu eremua ({$a}) ({$a})';
+$string['timezoneserver'] = 'Zerbitzariaren ordu eremua ({$a})';
 $string['tlswarning'] = 'Ez da TLSv1.2 onartzen duen PHP/cURL hedapenik aurkitu. Baliteke zerbitzu batzuk ez funtzionatzea. Zure TLS liburutegiak eguneratzea irmoki gomendatzen da.';
 $string['tokenduration'] = 'Erabiltzaileek sortutako tokenen iraupena';
 $string['tokenduration_desc'] = 'Erabiltzaile batek sortutako web-zerbitzu baten tokena (mobile aplikazioaren bidez adibidez) baliozkoa izango den denbora.';

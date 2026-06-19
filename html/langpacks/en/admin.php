@@ -893,6 +893,7 @@ $string['managelang'] = 'Manage';
 $string['manageqbanks'] = 'Manage question bank plugins';
 $string['manageqbehaviours'] = 'Manage question behaviours';
 $string['manageqtypes'] = 'Manage question types';
+$string['marketplaceavailablenotice'] = 'Browse and download plugins on <a href="{$a}" target="_blank" rel="noopener noreferrer">Moodle Marketplace <i class="fa fa-external-link" role="img" aria-label="Opens in new window" title="Opens in new window"></i></a>.';
 $string['maturity100'] = 'Beta';
 $string['maturity150'] = 'Release candidate';
 $string['maturity200'] = 'Stable version';
@@ -961,7 +962,7 @@ $string['moodlebrandedapp'] = 'Branded Moodle app';
 $string['moodlebrandedapp_help'] = '<p>The Branded Moodle app has all the functionality of our free mobile app for Moodle combined with your own custom branding.</p>
 <a href="https://moodle.com/branded-app">About the Branded Moodle app</a>';
 $string['moodlebrandedappreference'] = 'Alternatively, get a <a href="https://moodle.com/branded-app/">Branded Moodle app</a> with your own custom branding.';
-$string['moodlenetremovalwarning'] = 'The MoodleNet service will be shut down on 20 April 2026. If you wish to continue using MoodleNet on your site, install the MoodleNet plugin from the <a href="https://moodle.org/plugins" target="_blank">Moodle plugins directory <i class="fa fa-external-link" role="img" aria-label="Opens in new window" title="Opens in new window"></i></a> and connect it to a self-hosted MoodleNet instance. Following this, the MoodleNet profile ID field will be removed; please migrate that data if you are using it for other purposes.';
+$string['moodlenetremovalwarning'] = 'The MoodleNet service will be shut down on 20 April 2026. If you wish to continue using MoodleNet on your site, install the MoodleNet plugin from the <a href="https://github.com/moodlehq/moodle-tool_moodlenet" target="_blank">Moodle HQ GitHub repository <i class="fa fa-external-link" role="img" aria-label="Opens in new window" title="Opens in new window"></i></a> and connect it to a self-hosted MoodleNet instance. Following this, the MoodleNet profile ID field will be removed; please migrate that data if you are using it for other purposes.';
 $string['moodlepartners'] = 'Moodle Partners';
 $string['moodlepartners_help'] = '<p>Moodle Partners are services providers that are certified by Moodle HQ to provide high quality Moodle services for your organisation\'s online learning environment.</p>
 <a href="https://moodle.com/about-partners/">About our Partners</a><br />

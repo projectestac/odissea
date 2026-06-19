@@ -67,7 +67,7 @@ $string['disableall'] = 'Desgaitu jakinarazpenak';
 $string['disabled'] = 'Mezularitza desgaituta dago gune honetan';
 $string['disallowed'] = 'Blokeatuta';
 $string['editmessages'] = 'Editatu mezuak';
-$string['emailtagline'] = 'Mezu hau {$a->sitename} gunean zuri bidalitako mezu baten kopia da. Erantzuteko <a href="{$a->url}">hona sartu zaitez</a>.';
+$string['emailtagline'] = 'Mezu hau {$a->sitename} gunean zuri bidalitako mezu baten kopia da. Erantzuteko <a href="{$a->url}">hona sartu zaitez: {$a->url}</a>.';
 $string['enabled'] = 'Gaituta';
 $string['enablenotificationplugin'] = 'Gaitu jakinarazpen-plugina: {$a}';
 $string['errorcallingprocessor'] = 'Errorea definitutako irteera-prozesatzaileari deitzean';

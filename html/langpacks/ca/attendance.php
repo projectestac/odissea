@@ -112,7 +112,7 @@ $string['calendarevent_help'] = 'Si està habilitat, es crearà un esdeveniment 
 Si està inhabilitat, se suprimirà qualsevol esdeveniment del calendari existent per a aquesta sessió.';
 $string['caleventcreated'] = 'S\'ha creat amb èxit l\'esdeveniment del calendari per a la sessió';
 $string['caleventdeleted'] = 'S\'ha esborrat amb èxit l\'esdeveniment del calendari per a la sessió';
-$string['calmonths'] = 'Gener,Febrer,Març,Abril,Maig,Juny,Juliol,Agost,Setembre,Octubre,Novembre,Desembre';
+$string['calmonths'] = 'gener,febrer,març,abril,maig,juny,juliol,agost,setembre,octubre,novembre,desembre';
 $string['calshow'] = 'Escolliu data';
 $string['calweekdays'] = 'Dg,Dl,Dm,Dc,Dj,Dv,Ds';
 $string['cannottakeforgroup'] = 'No podeu registrar l\'assistència del grup «{$a}»';

@@ -1,6 +1,6 @@
 <?php
 
-class com_wiris_quizzes_api_assertion_SyntaxName extends Enum {
+class com_wiris_quizzes_api_assertion_SyntaxName extends HxEnum {
 	public static $GRAPHIC;
 	public static $MATH;
 	public static $MATH_MULTISTEP;

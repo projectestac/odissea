@@ -901,6 +901,7 @@ $string['managelang'] = '管理';
 $string['manageqbanks'] = '管理问题库插件';
 $string['manageqbehaviours'] = '管理题目行为';
 $string['manageqtypes'] = '管理题目类型';
+$string['marketplaceavailablenotice'] = '在 <a href="{$a}" target="_blank" rel="noopener noreferrer">Moodle Marketplace <i class="fa fa-external-link" role="img" aria-label="在新窗口打开" title="在新窗口打开"></i></a> 浏览并下载插件。';
 $string['maturity100'] = '测试';
 $string['maturity150'] = '待发行';
 $string['maturity200'] = '稳定版';
@@ -965,6 +966,7 @@ $string['moodleapp_help'] = '<p>免费的Moodle应用程序允许用户在移动
 $string['moodlebrandedapp'] = '定制 Moodle 移动应用';
 $string['moodlebrandedapp_help'] = '<p> 定制版 Moodle应用程序具有Moodle免费移动应用程序的所有功能，并结合您自己品牌。</p>  <a href="https://moodle.com/branded-app">关于定制版 Moodle 移动应用程序</a>';
 $string['moodlebrandedappreference'] = '另外，也可获取<a href="https://moodle.com/branded-app/">贴牌 Moodle移动应用</a>打造您的的品牌。';
+$string['moodlenetremovalwarning'] = 'MoodleNet 服务将于 2026 年 4 月 20 日关闭。如果您希望继续在您的网站上使用 MoodleNet，请从 <a href="https://github.com/moodlehq/moodle-tool_moodlenet" target="_blank">Moodle HQ GitHub 代码库 <i class="fa fa-external-link" role="img" aria-label="在新窗口打开" title="在新窗口打开"></i></a> 安装 MoodleNet 插件，并将其连接到一个自托管的 MoodleNet 实例。之后，MoodleNet 个人资料 ID 字段将被移除；如果您正将该数据用于其他目的，请迁移这些数据。';
 $string['moodlepartners'] = 'Moodle合作伙伴';
 $string['moodlepartners_help'] = '<p> Moodle 合作伙伴是Moodle HQ认证的服务提供商，为您组织的在线学习环境提供高质量的Moodle服务。</p> <a href =“https://moodle.com/about-partners/ “>关于我们的合作伙伴</a> <br /> <a href="https://moodle.com/partners">寻找合作伙伴</a>';
 $string['moodleservices'] = 'Moodle服务';

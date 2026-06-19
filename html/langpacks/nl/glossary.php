@@ -64,6 +64,7 @@ $string['attachment_help'] = 'Je kunt optioneel één of meer bestanden uploaden
 $string['author'] = 'Auteur';
 $string['authorview'] = 'Blader volgens auteur';
 $string['back'] = 'Terug';
+$string['bynameondate'] = 'by {$a->name} - {$a->date}';
 $string['cachedef_concepts'] = 'Concept linken';
 $string['cantinsertcat'] = 'Kan geen categorie toevoegen';
 $string['cantinsertrec'] = 'Kan geen record toevoegen';

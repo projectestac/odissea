@@ -25,4 +25,29 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['actions'] = 'Funktioner';
+$string['actions:export'] = 'Export';
+$string['comment'] = 'Kommentar';
+$string['comment:add'] = 'Lägg till kommentar';
+$string['comment:store'] = 'Spara kommentar';
+$string['comments'] = 'Kommentarer';
+$string['event:description'] = '<emph>Betydelse</emph>';
+$string['event:logo'] = 'Ingen logotyp';
+$string['event:name'] = 'Namn';
+$string['event:submissions'] = 'Insändningar';
 $string['form:submit'] = 'Spara';
+$string['item:contributor'] = 'Bidragande';
+$string['item:description'] = '<emph>Betydelse</emph>';
+$string['item:event'] = 'Evenemang';
+$string['item:file'] = 'Arkiv';
+$string['item:file:append'] = 'Lägg till fil';
+$string['item:files'] = 'Filer';
+$string['item:memo'] = 'Memo';
+$string['item:organization'] = 'Organisation';
+$string['item:section:personaldata'] = 'Personliga data';
+$string['item:title'] = 'Namn';
+$string['mail:subject:comment'] = 'Kommentar lades till';
+$string['mail:subject:file_append'] = 'Fil tillagd';
+$string['mail:subject:file_delete'] = 'Filen borttagen';
+$string['none'] = 'Inga';
+$string['user:external'] = 'Extern användare';

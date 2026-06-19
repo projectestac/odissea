@@ -27,3 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['enrolenddate'] = 'Data de finalització';
 $string['enrolperiod'] = 'Durada de la inscripció';
+$string['unenrolselfconfirm'] = 'Confirmeu que voleu cancel·lar la vostra inscripció al curs «{$a}»?';
+$string['unenroluser'] = 'Confirmeu que voleu cancel·lar la inscripció de la persona usuària «{$a->user}» al curs «{$a->course}»?';

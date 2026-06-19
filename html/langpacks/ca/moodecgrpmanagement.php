@@ -26,6 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['add'] = 'Afegeix';
+$string['add_group'] = 'Afegeix un grup';
+$string['add_grouping'] = 'Afegeix un agrupament';
+$string['add_groupings'] = 'Afegeix agrupaments';
+$string['add_groups'] = 'Afegeix grups';
 $string['limit'] = 'límit';
 $string['nextString'] = 'Següent';
 $string['responses'] = 'Respostes';

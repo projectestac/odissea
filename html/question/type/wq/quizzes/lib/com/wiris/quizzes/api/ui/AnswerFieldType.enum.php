@@ -1,6 +1,6 @@
 <?php
 
-class com_wiris_quizzes_api_ui_AnswerFieldType extends Enum {
+class com_wiris_quizzes_api_ui_AnswerFieldType extends HxEnum {
 	public static $INLINE_GRAPH_EDITOR;
 	public static $INLINE_MATH_EDITOR;
 	public static $MULTISTEP_MATH_EDITOR;

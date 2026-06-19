@@ -162,7 +162,7 @@ $string['embed'] = 'Eingebettet';
 $string['embed_no_blocks'] = 'Eingebettet ohne Blöcke';
 $string['enableemailnotification'] = 'E-Mail-Systemnachrichten senden';
 $string['enableemailnotification_help'] = 'Nach der Aktivierung erhalten Teilnehmer/innen E-Mail-Systemnachrichten, wenn ihre Leistungen bewertet wurden.';
-$string['enterkeyandsecret'] = 'Geben Sie Ihre Zugangskennung und den Schlüssel (secret) ein.';
+$string['enterkeyandsecret'] = 'Geben Sie Ihre Zugangskennung und den Schlüssel (secret) ein';
 $string['enterkeyandsecret_help'] = 'Fall Sie einen Consumer-Key und/oder ein Shared Secret erhalten haben, geben sie diese bitte hier ein.';
 $string['entitycourseexternaltools'] = 'LTI Externe Tools';
 $string['errorbadurl'] = 'Die URL ist keine gültige URL für ein Tool oder ein Cartridge.';
@@ -198,7 +198,7 @@ $string['fixexistingconf'] = 'Verwenden Sie eine bestehende Konfiguration für d
 $string['fixnew'] = 'Neue Konfiguration';
 $string['fixnewconf'] = 'Definieren Sie eine neue Konfiguration für die fehlerhafte Instanz';
 $string['fixold'] = 'Bestehende verwenden';
-$string['force_ssl'] = 'SSL erzwingen';
+$string['force_ssl'] = 'SSL festlegen';
 $string['force_ssl_help'] = 'Mit dieser Funktion erzwingen Sie SSL für alle Verbindungen zu diesem Tool-Anbieter.
 Dies gilt auch für alle Webservice-Anfragen von diesem Tool-Anbieter.
 Hierzu ist es erforderlich, dass SSL sowohl vom Moodle-System als auch vom Tool-Anbieter unterstützt wird.';
@@ -220,7 +220,7 @@ $string['indicator:socialbreadthdef'] = 'LTI sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die LTI-Aktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein, Teilnahme mit anderen).';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['initiatelogin'] = 'Anmelde-URL';
-$string['initiatelogin_help'] = 'Die Tool-URL, an die Anfragen zur Initiierung einer Anmeldung gesendet werden sollen. Diese URL ist erforderlich, bevor eine Nachricht erfolgreich an das Tool gesendet werden kann.';
+$string['initiatelogin_help'] = 'Die Tool-URL, an die Anmeldeanfragen gesendet werden sollen. Diese URL ist erforderlich, bevor eine Nachricht erfolgreich an das Tool gesendet werden kann.';
 $string['invalidid'] = 'LTI ID war fehlerhaft';
 $string['jwtsecurity'] = 'LTI 1.3';
 $string['keytype'] = 'Öffentlicher Schlüsseltyp';

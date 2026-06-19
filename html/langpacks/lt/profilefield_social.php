@@ -38,5 +38,5 @@ $string['privacy:metadata:profile_field_social:fieldid'] = 'Profilio lauko ID';
 $string['privacy:metadata:profile_field_social:tableexplanation'] = 'Papildomi profilio duomenys';
 $string['privacy:metadata:profile_field_social:userid'] = 'Naudotojo, kurio duomenis saugo socialinio naudotojo profilio laukas, ID';
 $string['skypeid'] = '„Skype“ ID';
-$string['webpage'] = 'Tinklalapis';
+$string['webpage'] = 'Svetainė';
 $string['yahooid'] = '„Yahoo“ ID';

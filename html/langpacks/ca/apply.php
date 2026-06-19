@@ -40,6 +40,7 @@ $string['edit_entry_button'] = 'Edita';
 $string['edit_item'] = 'Edita la pregunta';
 $string['execd_done'] = 'Fet';
 $string['execd_entry'] = 'fet';
+$string['file'] = '';
 $string['horizontal'] = 'horitzontal';
 $string['info'] = 'informació';
 $string['multichoice'] = 'Opció múltiple';

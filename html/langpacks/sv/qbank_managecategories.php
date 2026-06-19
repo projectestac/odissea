@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Hantera kategorier';
+$string['showcategorydescription'] = 'Visa beskrivningar';

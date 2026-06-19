@@ -25,5 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activityname'] = 'Aktivitetsnamn';
+$string['apikeylabel'] = 'API-nyckel';
+$string['datecreated'] = 'Skapad datum';
 $string['description'] = 'Beskrivning';
+$string['groupselect'] = 'Grupp';
+$string['id'] = 'ID';
+$string['issued'] = 'Utfärdad';
 $string['modulename_link'] = 'mod/accredible/view';
+$string['recipient'] = 'Mottagare';

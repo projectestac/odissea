@@ -1,6 +1,6 @@
 <?php
 
-class com_wiris_quizzes_api_assertion_ValidationName extends Enum {
+class com_wiris_quizzes_api_assertion_ValidationName extends HxEnum {
 	public static $CHECK_COLOR;
 	public static $CHECK_COMMON_DENOMINATOR;
 	public static $CHECK_DECIMAL_NOTATION;

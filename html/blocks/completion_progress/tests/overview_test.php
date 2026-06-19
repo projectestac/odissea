@@ -31,6 +31,8 @@ require_once($CFG->dirroot . '/mod/assign/locallib.php');
 require_once($CFG->dirroot . '/blocks/moodleblock.class.php');
 require_once($CFG->dirroot . '/blocks/completion_progress/block_completion_progress.php');
 
+use core_table\local\filter\filter;
+use core_table\local\filter\integer_filter;
 use block_completion_progress\completion_progress;
 use block_completion_progress\defaults;
 
@@ -80,6 +82,7 @@ final class overview_test extends \advanced_testcase {
         $this->resetAfterTest(true);
 
         set_config('enablecompletion', 1);
+        set_config('enablenotes', 1);
 
         $generator = $this->getDataGenerator();
 
@@ -88,6 +91,7 @@ final class overview_test extends \advanced_testcase {
         ]);
 
         $this->teachers[0] = $generator->create_and_enrol($this->course, 'teacher');
+        $this->setUser($this->teachers[0]);
 
         $this->groups[0] = $generator->create_group(['courseid' => $this->course->id]);
         $this->groups[1] = $generator->create_group(['courseid' => $this->course->id]);
@@ -132,9 +136,7 @@ final class overview_test extends \advanced_testcase {
      * @covers \block_completion_progress\table\overview
      */
     public function test_overview_options(): void {
-        global $DB, $PAGE;
-
-        $output = $PAGE->get_renderer('block_completion_progress');
+        global $PAGE;
 
         // Add a block.
         $context = \context_course::instance($this->course->id);
@@ -157,7 +159,7 @@ final class overview_test extends \advanced_testcase {
         ];
         $blockinstance = $this->getDataGenerator()->create_block('completion_progress', $blockinfo);
 
-        $assign = $this->create_assign_instance([
+        $this->create_assign_instance([
           'submissiondrafts' => 0,
           'completionsubmit' => 1,
           'completion' => COMPLETION_TRACKING_AUTOMATIC,
@@ -169,9 +171,11 @@ final class overview_test extends \advanced_testcase {
         set_config('showinactive', 0, 'block_completion_progress');
         set_config('showlastincourse', 0, 'block_completion_progress');
         set_config('forceiconsinbar', 0, 'block_completion_progress');
-        $progress = (new completion_progress($this->course))->for_overview()->for_block_instance($blockinstance);
-        $table = new \block_completion_progress\table\overview($progress, [], 0, true);
-        $table->define_baseurl('/');
+        $table = new \block_completion_progress\table\overview('block_completion_progress-overview-' . $blockinstance->id);
+        $filterset = new \block_completion_progress\table\overview_filterset();
+        $filterset->add_filter(new integer_filter('courseid', filter::JOINTYPE_DEFAULT, [(int)$this->course->id]));
+        $filterset->add_filter(new integer_filter('blockinstanceid', filter::JOINTYPE_DEFAULT, [(int)$blockinstance->id]));
+        $table->set_filterset($filterset);
 
         ob_start();
         $table->out(30, false);
@@ -186,9 +190,11 @@ final class overview_test extends \advanced_testcase {
         set_config('showinactive', 1, 'block_completion_progress');
         set_config('showlastincourse', 1, 'block_completion_progress');
         set_config('forceiconsinbar', 1, 'block_completion_progress');
-        $progress = (new completion_progress($this->course))->for_overview()->for_block_instance($blockinstance);
-        $table = new \block_completion_progress\table\overview($progress, [], 0, true);
-        $table->define_baseurl('/');
+        $table = new \block_completion_progress\table\overview('block_completion_progress-overview-' . $blockinstance->id);
+        $filterset = new \block_completion_progress\table\overview_filterset();
+        $filterset->add_filter(new integer_filter('courseid', filter::JOINTYPE_DEFAULT, [(int)$this->course->id]));
+        $filterset->add_filter(new integer_filter('blockinstanceid', filter::JOINTYPE_DEFAULT, [(int)$blockinstance->id]));
+        $table->set_filterset($filterset);
 
         ob_start();
         $table->out(30, false);
@@ -200,9 +206,12 @@ final class overview_test extends \advanced_testcase {
         $this->assertStringContainsString('barWithIcons', $text);
 
         // Test that group filtering works.
-        $progress = (new completion_progress($this->course))->for_overview()->for_block_instance($blockinstance);
-        $table = new \block_completion_progress\table\overview($progress, [$this->groups[0]->id], 0, true);
-        $table->define_baseurl('/');
+        $table = new \block_completion_progress\table\overview('block_completion_progress-overview-' . $blockinstance->id);
+        $filterset = new \block_completion_progress\table\overview_filterset();
+        $filterset->add_filter(new integer_filter('courseid', filter::JOINTYPE_DEFAULT, [(int)$this->course->id]));
+        $filterset->add_filter(new integer_filter('blockinstanceid', filter::JOINTYPE_DEFAULT, [(int)$blockinstance->id]));
+        $filterset->add_filter(new integer_filter('groups', filter::JOINTYPE_DEFAULT, [(int)$this->groups[0]->id]));
+        $table->set_filterset($filterset);
 
         ob_start();
         $table->out(30, false);
@@ -219,10 +228,9 @@ final class overview_test extends \advanced_testcase {
      * @covers \block_completion_progress\table\overview
      */
     public function test_overview_percentage_sort(): void {
-        global $DB, $PAGE;
+        global $PAGE;
 
         $PAGE->set_url('/');
-        $output = $PAGE->get_renderer('block_completion_progress');
         $generator = $this->getDataGenerator();
 
         // Add a block.
@@ -266,11 +274,12 @@ final class overview_test extends \advanced_testcase {
         // Set student 0 as having completed one page.
         $completion->update_state($page1cm, COMPLETION_COMPLETE, $this->students[0]->id);
 
-        $progress = (new completion_progress($this->course))->for_overview()->for_block_instance($blockinstance);
-        $progress->compute_overview_percentages(null);
-        $table = new \block_completion_progress\table\overview($progress, [], 0, true);
+        $table = new \block_completion_progress\table\overview('block_completion_progress-overview-' . $blockinstance->id);
+        $filterset = new \block_completion_progress\table\overview_filterset();
+        $filterset->add_filter(new integer_filter('courseid', filter::JOINTYPE_DEFAULT, [(int)$this->course->id]));
+        $filterset->add_filter(new integer_filter('blockinstanceid', filter::JOINTYPE_DEFAULT, [(int)$blockinstance->id]));
+        $table->set_filterset($filterset);
         $table->set_sortdata([['sortby' => 'progress', 'sortorder' => SORT_DESC]]);
-        $table->define_baseurl('/');
 
         ob_start();
         $table->out(5, false);

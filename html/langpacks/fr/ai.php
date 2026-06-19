@@ -66,7 +66,7 @@ $string['manageaiproviders'] = 'Gestion des fournisseurs IA';
 $string['noproviders'] = 'Cette action n’est pas disponible. Aucun <a href="{$a}">fournisseur IA</a> n’est configuré pour cette action.';
 $string['placement'] = 'Placement';
 $string['placementactionsettings'] = 'Actions';
-$string['placementactionsettings_desc'] = 'Les actions AI disponibles pour ce placement.';
+$string['placementactionsettings_desc'] = 'Les actions IA disponibles pour ce placement.';
 $string['placementsettings'] = 'Réglages spécifiques au placement';
 $string['placementsettings_desc'] = 'Ces réglages déterminent comment ce placement IA se connecte au service IA et d’autres opérations en lien.';
 $string['privacy:metadata:ai_action_generate_image'] = 'Une table contenant les requêtes de génération faites par les utilisateurs.';

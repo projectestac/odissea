@@ -60,5 +60,5 @@ $string['ratinginvalid'] = 'La puntuació és invàlida';
 $string['ratings'] = 'Puntuacions';
 $string['ratingtime'] = 'Restringeix la qualificació a les entrades fetes entre aquestes dates:';
 $string['rolewarning'] = 'Rols amb permís per qualificar';
-$string['rolewarning_help'] = 'Per trametre qualificacions els usuaris necessiten la capacitat moodle/rating:rate i totes les capacitats específiques del mòdul. Els usuaris que tinguin assignats els rols següents tindran capacitat per puntuar activitats. La llista de rols pot ser modificada mitjançant els permisos seguint l\'enllaç al bloc de configuracions.';
+$string['rolewarning_help'] = 'Els rols amb permís per qualificar són rols amb la capacitat moodle/rating:rate més qualsevol capacitat de valoració específica de l\'activitat. Podeu donar permís per avaluar a més rols a través de la pàgina Permisos.';
 $string['scaleselectionrequired'] = 'Quan es selecciona un tipus d\'agregació de valoracions, heu de seleccionar una escala o establir una puntuació màxima.';

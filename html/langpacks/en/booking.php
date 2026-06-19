@@ -29,6 +29,8 @@ $string['aboutmodaloptiondateform'] = 'Create custom dates
 (e.g. for blocked events or for single dates that differ from the date series).';
 $string['accept'] = 'Accept';
 $string['accessdenied'] = 'Access denied';
+$string['action_createcertificate'] = 'Create certificate';
+$string['action_createcertificate_certid'] = 'Certificate ID';
 $string['actionbuttonconfirm'] = 'Confirm';
 $string['actionbuttondelete'] = 'Delete';
 $string['actionbuttondeny'] = 'Deny';
@@ -49,9 +51,12 @@ Go to course: {$a->courselink}
 See all booking options: {$a->bookinglink}';
 $string['activitycompletiontextsubject'] = 'Booking option completed';
 $string['addastemplate'] = 'Add as template';
+$string['addastemplatename'] = 'Template name';
+$string['addastemplatename_help'] = 'Enter a name for this template. If provided, this name will be used as the display name for the template instead of the booking option name.';
 $string['addbookingcampaign'] = 'Add campaign';
 $string['addbookingrule'] = 'Add rule';
 $string['addcategory'] = 'Edit categories';
+$string['addcertificatecondition'] = 'Add certificate condition';
 $string['addcomment'] = 'Add a comment...';
 $string['addcustomfieldorcomment'] = 'Add a comment or custom field';
 $string['adddatebutton'] = 'Add date';
@@ -66,6 +71,7 @@ $string['addnewreporttemplate'] = 'Add new report template';
 $string['addnewtagtemplate'] = 'Add new tag template';
 $string['addoptiondate'] = 'Add date';
 $string['addoptiondateseries'] = 'Create date series';
+$string['addoptiontofavorites'] = 'Add to favorites';
 $string['addpricecategory'] = 'Add price category';
 $string['addpricecategoryinfo'] = 'You can add another price category';
 $string['address'] = 'Address';
@@ -83,6 +89,7 @@ $string['addusertogroup'] = 'Add user to group:';
 $string['adminparameter_desc'] = 'Use parameter that are set in the admin settings.';
 $string['adminparametervalue'] = 'Admin parameter';
 $string['advancedoptions'] = 'Advanced options';
+$string['after'] = 'After';
 $string['aftercompletedtext'] = 'After activity completed';
 $string['aftercompletedtext_help'] = 'Message shown after activity was completed';
 $string['aftersubmitaction'] = 'After saving...';
@@ -133,7 +140,7 @@ $string['applyunitfactor_desc'] = 'If this setting is active, the educational un
  to calculate the number of educational units. This number will be used as factor for the price formula.
  Example: A booking option has a date series like "Mon, 15:00 - 16:30". So it lasts 2 educational units (45 min each).
  So a unit factor of 2 will be applied to the price formula. (Unit factor will only be applied if a price formula is present.)';
-$string['applyuserwhobookedcheckbox'] = 'Yes, I am booking the training also for myself.';
+$string['applyuserwhobookedcheckbox'] = 'Yes, I am booking the training also for myself (and consume one of the specified places).';
 $string['approvalbytrainer'] = 'Approval by the teacher';
 $string['approvalsettings'] = 'Approval workflows';
 $string['approvalsettings_desc'] = 'Booking supports various confirmation processes when users need to have to have their bookings confirmed. In the standard process, trainers can confirm the requests from the waiting list. Other processes can be added via Bookingextension subplugins.';
@@ -174,6 +181,7 @@ $string['badge:pro'] = '<span class="badge bg-success text-light"><i class="fa f
 $string['banusernames'] = 'Ban usernames';
 $string['banusernames_help'] = 'To limit which usernames can`t apply just write in this field, and separate with coma. To ban usernames, that end with gmail.com and yahoo.com just write: gmail.com, yahoo.com';
 $string['banusernameswarning'] = 'Your username is banned so you can\'t book.';
+$string['before'] = 'Before';
 $string['beforebookedtext'] = 'Before booked';
 $string['beforebookedtext_help'] = 'Message shown before option being booked';
 $string['beforecompletedtext'] = 'After booked';
@@ -349,7 +357,7 @@ $string['bocondmaxnumberofbookingsfullavailable'] = 'Booking is possible';
 $string['bocondmaxnumberofbookingsfullnotavailable'] = 'User has reached the max number of bookings';
 $string['bocondmaxnumberofbookingsnotavailable'] = 'Max. number of bookings reached';
 $string['bocondmaxoptionsfromcategory'] = 'maxoptionsfromcategory: Maximum options from category reached';
-$string['bocondnooverlapping'] = 'nooverlapping: No overlapping allowed';
+$string['bocondnooverlapping'] = 'No overlapping with other booking options allowed';
 $string['bocondnooverlappingproxy'] = 'nooverlappingproxy: Overlapping check (proxy)';
 $string['bocondnoshoppingcart'] = 'noshoppingcart: No shopping cart available';
 $string['bocondnotifymelist'] = 'Notify list';
@@ -372,9 +380,9 @@ $string['bocondotheroptionsavailable'] = 'Linked options not available';
 $string['bocondpreviouslybooked'] = 'User has previously booked a certain option';
 $string['bocondpreviouslybookedavailable'] = 'Book it';
 $string['bocondpreviouslybookedfullavailable'] = 'Booking is possible';
-$string['bocondpreviouslybookedfullnotavailable'] = 'Only users who have previously booked <a href="{$a}">this option</a> are allowed to book.
+$string['bocondpreviouslybookedfullnotavailable'] = 'Only users who have previously booked <a href="{$a->url}">{$a->title}</a> are allowed to book.
     <br>But you have the right to book a user anyways.';
-$string['bocondpreviouslybookednotavailable'] = 'Only users who have previously booked <a href="{$a}">this option</a> are allowed to book.';
+$string['bocondpreviouslybookednotavailable'] = 'Only users who have previously booked <a href="{$a->url}">{$a->title}</a> are allowed to book.';
 $string['bocondpreviouslybookedoptionid'] = 'Must be already booked';
 $string['bocondpreviouslybookedrequirecompletion'] = 'Require completion of the selected booking option';
 $string['bocondpreviouslybookedrestrict'] = 'User has previously booked a certain option';
@@ -452,8 +460,10 @@ $string['bookedtextsubjectbookingmanager'] = 'New booking for {$a->title} by {$a
 $string['bookedusers'] = 'Booked users';
 $string['bookelectivesbtn'] = 'Book selected electives';
 $string['booking'] = 'Booking';
-$string['booking:addeditownoption'] = 'Add new option and edit own options.';
-$string['booking:addinstance'] = 'Add new booking';
+$string['booking:addeditownoption'] = 'Edit own booking options (own booking options are those
+that you either created yourself or are assigned to as a teacher)';
+$string['booking:addinstance'] = 'Add new booking instances';
+$string['booking:addoption'] = 'Add new booking options';
 $string['booking:alwayscanapprove'] = 'Always can confirm/deny booking answers';
 $string['booking:assigndeputies'] = 'Assign deputies';
 $string['booking:bookanyone'] = 'Allowed to book anyone';
@@ -472,9 +482,11 @@ $string['booking:deleteresponses'] = 'Delete responses';
 $string['booking:downloadchecklist'] = 'Download checklist';
 $string['booking:downloadresponses'] = 'Download responses';
 $string['booking:editbookingrules'] = 'Edit rules (Pro)';
+$string['booking:editcertificateconditions'] = 'Edit certificate conditions';
 $string['booking:editoptionformconfig'] = 'Edit option config form';
 $string['booking:editperformance'] = 'Test Performance';
 $string['booking:editscheduledmails'] = 'Edit scheduled mails';
+$string['booking:editsemesters'] = 'Edit semesters';
 $string['booking:editteacherdescription'] = 'Edit teacher description';
 $string['booking:executebulkoperations'] = 'Can execute bulk operations';
 $string['booking:expertoptionform'] = 'Expert option form';
@@ -533,6 +545,8 @@ Here\'s what\'s new:
 To view the change(s) and all your booked courses click on the following link: {$a->bookinglink}';
 $string['bookingchangedtextsubject'] = 'Change notification for {$a->title}';
 $string['bookingclosingtime'] = 'Bookable until';
+$string['bookingclosingtimerelativeautoapply'] = '⤷ Apply relative booking closing time automatically to new booking options';
+$string['bookingclosingtimerelativeautoapply_desc'] = 'If enabled, the relative booking closing time checkbox is pre-checked when creating a new booking option.';
 $string['bookingcondition'] = 'Condition';
 $string['bookingconfirmationlink'] = 'Link to booking receipt';
 $string['bookingcustomfield'] = 'Booking customfields for booking options';
@@ -561,6 +575,8 @@ $string['bookingname'] = 'Booking instance name';
 $string['bookingnotopenyet'] = 'Your event starts in {$a} minutes. The link you used will redirect you if you click it again within 15 minutes before.';
 $string['bookingopen'] = 'Open';
 $string['bookingopeningtime'] = 'Bookable from';
+$string['bookingopeningtimerelativeautoapply'] = '⤷ Apply relative booking opening time automatically to new booking options';
+$string['bookingopeningtimerelativeautoapply_desc'] = 'If enabled, the relative booking opening time checkbox is pre-checked when creating a new booking option.';
 $string['bookingoption'] = 'Booking option';
 $string['bookingoptionbooked'] = 'Booking option booked';
 $string['bookingoptionbookedotheruserdesc'] = 'The user with id {$a->userid} booked the user with id {$a->relateduserid} to the option with id  {$a->objectid}.';
@@ -587,6 +603,7 @@ $string['bookingoptiondenied'] = 'Booking option denied';
 $string['bookingoptiondenied:description'] = 'User with ID {$a->userid} denied booking of booking option {$a->objectid} for user with ID {$a->relateduserid}.';
 $string['bookingoptiondescription'] = 'Description of the booking option.';
 $string['bookingoptiondetaillink'] = 'Link to the details view of the booking option';
+$string['bookingoptionend'] = 'End of booking option';
 $string['bookingoptionfreetobookagain'] = 'Free places again';
 $string['bookingoptionimage'] = 'Header image';
 $string['bookingoptionmovedupfromwaitinglist'] = 'Moved up from waitinglist';
@@ -595,8 +612,10 @@ $string['bookingoptionname'] = 'Booking option name';
 $string['bookingoptionnamewithoutprefix'] = 'Name (without prefix)';
 $string['bookingoptionprice'] = 'Price';
 $string['bookingoptionsall'] = 'Shortcode to show all bookingoptions.';
+$string['bookingoptionsfromcondition'] = 'Shortcode to show bookingoptions from certificate condition.';
 $string['bookingoptionsfromtemplatemenu'] = 'New booking option from template';
 $string['bookingoptionsmenu'] = 'Booking options';
+$string['bookingoptionstart'] = 'Start of booking option';
 $string['bookingoptiontitle'] = 'Booking option title';
 $string['bookingoptionuncompleted'] = 'Completion of booking option undone';
 $string['bookingoptionupdated'] = 'Booking option updated';
@@ -669,6 +688,30 @@ $string['bookingsubbookingedit'] = 'Edit';
 $string['bookingsubbookingsheader'] = 'Subbookings';
 $string['bookingtags'] = 'Tags';
 $string['bookingtext'] = 'Booking text';
+$string['bookingtimeabsolutemode'] = 'Absolute date/time (fixed)';
+$string['bookingtimeclosingabsolutedate'] = 'Booking closes on (absolute date)';
+$string['bookingtimeclosingrelativeduration'] = 'Time to close booking';
+$string['bookingtimenomode'] = 'No restriction';
+$string['bookingtimeopeningabsolutedate'] = 'Booking opens on (absolute date)';
+$string['bookingtimeopeningrelativeduration'] = 'Time to open booking';
+$string['bookingtimerelativebeforeafter'] = 'Before or after the selected date';
+$string['bookingtimerelativedatefield'] = 'Relative to';
+$string['bookingtimerelativedefaultclosingbeforeafter'] = '⤷ Default relative closing before/after';
+$string['bookingtimerelativedefaultclosingbeforeafter_desc'] = 'Default before/after selection prefilled for the relative booking closing time.';
+$string['bookingtimerelativedefaultclosingdatefield'] = '⤷ Default relative closing date field';
+$string['bookingtimerelativedefaultclosingdatefield_desc'] = 'Default date field prefilled for the relative booking closing time.';
+$string['bookingtimerelativedefaultclosingduration'] = '⤷ Default relative closing duration';
+$string['bookingtimerelativedefaultclosingduration_desc'] = 'Default relative duration prefilled for booking closing time.';
+$string['bookingtimerelativedefaultopeningbeforeafter'] = '⤷ Default relative opening before/after';
+$string['bookingtimerelativedefaultopeningbeforeafter_desc'] = 'Default before/after selection prefilled for the relative booking opening time.';
+$string['bookingtimerelativedefaultopeningdatefield'] = '⤷ Default relative opening date field';
+$string['bookingtimerelativedefaultopeningdatefield_desc'] = 'Default date field prefilled for the relative booking opening time.';
+$string['bookingtimerelativedefaultopeningduration'] = '⤷ Default relative opening duration';
+$string['bookingtimerelativedefaultopeningduration_desc'] = 'Default relative duration prefilled for booking opening time.';
+$string['bookingtimerelativeenabled'] = 'Enable relative booking time mode';
+$string['bookingtimerelativeenabled_desc'] = 'If enabled, booking time condition can be configured relative to booking option start. If disabled, only absolute booking opening/closing dates are available (legacy behavior).';
+$string['bookingtimerelativemode'] = 'Relative to a date field';
+$string['bookingtimerelativeneedsdates'] = 'Relative booking time requires at least one option date. It cannot be used with self-learning courses or options without dates.';
 $string['bookinguseastemplate'] = 'Set this rule as template';
 $string['booknow'] = 'Book now';
 $string['bookondetail'] = 'More information';
@@ -710,6 +753,7 @@ $string['btncacname'] = 'Name of button: Confirm activity completion';
 $string['btncancelname'] = 'Name of button: Cancel booking';
 $string['btnviewavailable'] = 'View available options';
 $string['bulkoperations'] = 'Zeige Liste von Buchungsoptionen um Massenoperationen zu ermöglichen';
+$string['bulkoperationsbutton'] = 'Load field to edit all selected booking options';
 $string['bulkoperationsheader'] = 'Update data for selected bookingoption(s)';
 $string['cachedef_bookedusertable'] = 'Booked users table (cache)';
 $string['cachedef_bookforuser'] = 'Book for user (Cache)';
@@ -814,18 +858,38 @@ $string['cdo:buttoncolor:warning'] = 'Warning (yellow)';
 $string['cdo:coursestarttime'] = 'Start of the booking option (coursestarttime)';
 $string['cdo:semesterstart'] = 'Semester start';
 $string['certificate'] = 'Certificate';
+$string['certificateaction'] = 'Action';
 $string['certificatecode'] = 'Code of certificate';
 $string['certificatecolheader'] = 'Latest certificate';
+$string['certificatecondition'] = 'Condition';
+$string['certificateconditionisactive'] = 'Condition is active and applied';
+$string['certificateconditionisnotactive'] = 'Condition is inactive';
+$string['certificateconditionname'] = 'Name of the Condition';
+$string['certificateconditions'] = 'Certificate Conditions';
+$string['certificateconditionsettings'] = 'Settings for Certificate Conditions';
+$string['certificateconditionsettingsdesc'] = 'Settings that apply to the <a href="{$a}">Certificate Conditions feature</a>.';
+$string['certificateconditionsnootherfound'] = 'No certificate conditions found in other contexts.';
+$string['certificateconditionsoptionheading'] = 'Certificate conditions for this booking option';
+$string['certificateconditionsoptionlink'] = 'Open certificate conditions';
+$string['certificateconditionsoptionnone'] = 'This booking option is currently not targeted by any certificate condition.';
+$string['certificateconditionsothercontextheading'] = 'Certificate conditions in other contexts';
+$string['certificateconditionswithbadge'] = 'Certificate Conditions <span class="badge bg-success text-light"><i class="fa fa-certificate" aria-hidden="true"></i> PRO</span>';
 $string['certificateexpirationdate'] = 'Expiration date';
+$string['certificatefilter'] = 'Filter';
+$string['certificatefilternorestriction'] = 'No restriction';
 $string['certificateheader'] = 'Moodle certificate';
 $string['certificateissued'] = 'Certificate issued';
 $string['certificateissuedate'] = 'Issue date';
 $string['certificateissueddesc'] = 'User with ID {$a->userid} issued a certificate (ID {$a->objectid}) to user with ID {$a->relateduserid}.';
+$string['certificatemanualtrigger'] = 'Manual certificate trigger only';
+$string['certificatemanualtrigger_desc'] = 'If enabled, certificates are not created automatically and can only be triggered manually.';
 $string['certificatemodalheader'] = 'Certificates of {$a}';
 $string['certificatenotactive'] = 'Certificate not active';
-$string['certificatenotapplyforusers'] = 'No certifactes were generated.';
+$string['certificatenotapplyforusers'] = 'No certificates were generated.';
 $string['certificateon'] = 'Activate certificate creation <span class="badge bg-success text-light"><i class="fa fa-cogs" aria-hidden="true"></i> PRO</span>';
 $string['certificateon_desc'] = 'Enable this setting if you want to issue certificates for the completion of booking options.';
+$string['certificateoptions'] = 'Certificate options';
+$string['certificateoptions_desc'] = 'Choose which certificate feature should be used.';
 $string['certificaterequiredoptionsmode'] = 'Only one of the selected options needs to be completed';
 $string['certificaterequiredoptionsmode_help'] = 'If this checkbox is checked, only ONE of the selected options needs to be completed for the certificate to be issued. If unchecked (default), ALL selected options must be completed.';
 $string['certificaterequiresall'] = 'All selected options must be completed';
@@ -855,10 +919,10 @@ $string['changenew'] = '[NEW]';
 $string['changeold'] = '[DELETED]';
 $string['changepresencestatus'] = 'Change presence status';
 $string['changes'] = 'Changes made in bookingoption (for rule listening to bookingoption_updated)';
-$string['changesemester'] = 'Reset and create dates for semester';
-$string['changesemester:warning'] = '<strong>Be careful:</strong> By clicking "Save changes" all dates will be deleted
+$string['changesemester'] = 'Reset and create dates';
+$string['changesemester:warning'] = '<strong>Be careful:</strong> By clicking "Save changes" all dates in <strong>{$a}</strong> will be deleted
 and be replaced with dates of the chosen semester.';
-$string['changesemesteradhoctaskstarted'] = 'Success. The dates will be re-generated the next time CRON is running. This may take several minutes.';
+$string['changesemesteradhoctaskstarted'] = 'Success. The dates for this booking instance will be re-generated the next time CRON is running. This may take several minutes.';
 $string['changesinentity'] = '{$a->name} (ID: {$a->id})';
 $string['changesinexpirydateabsolute'] = 'Certificate: an absolute value of expiration date';
 $string['changesinexpirydaterelative'] = 'Certificate: a relative value of expiration date';
@@ -920,6 +984,14 @@ $string['completionchangedhistory'] = 'The completion status was changed from "{
 $string['completionmodule'] = 'Upon completion of the selected course activity, enable bulk deletion of user bookings';
 $string['completionmodule_help'] = 'Display bulk deletion button for booking answers, if another course module has been completed. The bookings of users will be deleted with a click of a button on the report page! Only activities with completion enabled can be selected from the list.';
 $string['completionoptioncompletedcminfo'] = 'Get marked as completed in at least {$a} booking options (by teacher, manager or admin).';
+$string['condition:cohort'] = 'Cohort';
+$string['condition:profilefieldcurrentuser'] = 'Current user';
+$string['condition:supervisor'] = 'Supervisor is current user';
+$string['condition:withinpastxyears'] = 'Is within the past X years';
+$string['condition_bookingoption'] = 'Booking option';
+$string['condition_bookingoption_optionid'] = 'Booking option ID';
+$string['condition_bookingoption_requiredcount'] = 'Required completed options count';
+$string['condition_taggedoptions'] = 'Tagged options';
 $string['conditionselectbookingmanager'] = 'Select booking manager.';
 $string['conditionselectbookingmanager_desc'] = 'Booking manager as definied in the settings of the module booking instance.';
 $string['conditionselectresponsiblecontactinbo_desc'] = 'Select responsible contact(s) of the booking option.';
@@ -934,9 +1006,7 @@ $string['conditionsoverwritingbillboard'] = 'Overwrite messages about blocking r
 $string['conditionsoverwritingbillboard_desc'] = 'A text can be entered in the settings of the booking instance that is displayed instead of other messages on blocking reasons of bookings.';
 $string['conditionssettings'] = 'Availability conditions settings';
 $string['conditionssettings_desc'] = 'You can opt out of certain conditions if they are not needed. This will give you a performance boost, since the system will not check these conditions anymore during the booking process.';
-$string['conditionsskippedwarning'] = '<div class="alert alert-info" role="alert">
-    This condition can not be selected, since it was skipped in the settings.
-    </div>';
+$string['conditionsskippedwarning'] = '<div class="alert alert-warning" role="alert">This condition can not be selected because it was <a href="{$a}" target="_blank">turned off (skipped) in the settings</a>.</div>';
 $string['conditiontextfield'] = 'Value';
 $string['configurefields'] = 'Configure fields and columns';
 $string['confirmactivtyfrom'] = 'Confirm users activity from';
@@ -954,7 +1024,7 @@ $string['confirmbookingoffollowing'] = 'Please confirm the booking of following 
 $string['confirmbookingtitle'] = 'Confirm booking';
 $string['confirmcanceloption'] = 'Confirm cancelation of booking option';
 $string['confirmcanceloptiontitle'] = 'Change the status of the booking option';
-$string['confirmchangesemester'] = 'YES, I really want to delete all existing dates of the booking instance and generate new ones.';
+$string['confirmchangesemester'] = 'YES, I really want to delete all existing dates of <strong>{$a}</strong> and generate new ones.';
 $string['confirmdeletebookingoption'] = 'Do you really want to delete this booking option <b>{$a}</b>?';
 $string['confirmed'] = 'Confirmed';
 $string['confirmoptioncompletion'] = '(Un)confirm completion status';
@@ -1010,6 +1080,7 @@ $string['coursestarttime'] = 'Start time of the course';
 $string['courseurl'] = 'Course URL';
 $string['createcompetencylink'] = '<a href="{$a}" class="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer">
 Create new competency (in framework) </a>';
+$string['created'] = 'Created';
 $string['createdbywunderbyte'] = 'Booking module created by Wunderbyte GmbH';
 $string['createical'] = 'Create calendar event(s)';
 $string['createnewbookingoption'] = 'New booking option';
@@ -1080,7 +1151,12 @@ doubleroom => Double Room => 5 => student:100,expert:200,default:150 => 1,2,3,4,
 </span>
 </div>';
 $string['customlabelsdeprecated'] = '[DEPRECATED] Custom labels';
+$string['custommessageattachment'] = 'Attachment';
+$string['custommessageattachment_help'] = 'Optionally upload a file to be attached to the email. The file will be deleted immediately after all mails have been sent.';
+$string['custommessagerecipients'] = 'Recipients';
+$string['custommessagerecipients_help'] = 'All currently selected users are preselected. Remove users here if they should not receive the message.';
 $string['custommessagesent'] = 'Custom message sent';
+$string['custommessagessentto'] = 'Custom messages have been sent to the following users: {$a}';
 $string['customprofilefield'] = 'Custom profile field to check';
 $string['customprofilefieldvalue'] = 'Custom profile field value to check';
 $string['customuserprofilefield'] = 'Custom user profile field';
@@ -1088,6 +1164,8 @@ $string['customuserprofilefield_help'] = 'If you choose a value here, the price 
 $string['dashboardsummary'] = 'General';
 $string['dashboardsummary_desc'] = 'Contains the settings and stats for the whole Moodle site';
 $string['dataincomplete'] = 'Record with componentid {$a->id} is incomplete and could not be treated entirely. Check field "{$a->field}".';
+$string['datasource:bookinganswers'] = 'Booking answers';
+$string['datasource:bookingoptions'] = 'Booking options';
 $string['dateandtime'] = 'Date and time';
 $string['dateerror'] = 'Wrong date in line {$a}:';
 $string['datenotset'] = 'Date not set';
@@ -1118,6 +1196,11 @@ $string['defaultbookingoption'] = 'Default booking options';
 $string['defaultcanceldate'] = 'Default cancel date';
 $string['defaultcanceldate_desc'] = 'Define which default setting should be selected for cancellation in the booking instance.';
 $string['defaultdateformat'] = 'j.n.Y H:i:s';
+$string['defaultnooverlappingoncreate'] = 'Default no-overlapping handling for new booking options';
+$string['defaultnooverlappingoncreate:blocking'] = 'Blocking (prevent booking when overlapping)';
+$string['defaultnooverlappingoncreate:disabled'] = 'Disabled (no restriction preselected)';
+$string['defaultnooverlappingoncreate:warning'] = 'Warning (show alert, allow booking)';
+$string['defaultnooverlappingoncreate_desc'] = 'If set, newly created booking options in the option form will preselect the no-overlapping condition with the chosen handling mode.';
 $string['defaultoptionsort'] = 'Default sorting by column';
 $string['defaultpricecategoryinfoalert'] = 'The default price category always has the identifier "default" and it cannot be disabled.';
 $string['defaultpricecategoryname'] = 'Default price category name';
@@ -1149,6 +1232,8 @@ $string['deletebookinglong'] = 'Do you really want to delete this booking?';
 $string['deletebookingrule'] = 'Delete rule';
 $string['deletebookingruleconfirmtext'] = 'Do you really want to delete the following rule?';
 $string['deletecategory'] = 'Delete';
+$string['deletecertificatecondition'] = 'Delete certificate condition';
+$string['deletecertificateconditionconfirmtext'] = 'Do you really want to delete the following certificate condition?';
 $string['deletecheckedanswersbody'] = 'Do you really want to delete the selected bookings?';
 $string['deleteconditionsfrombookinganswer'] = 'Delete userdata from booking form';
 $string['deletecustomfield'] = 'Delete custom field?';
@@ -1185,6 +1270,7 @@ $string['deletesemester'] = 'Delete semester';
 $string['deletesubcategory'] = 'Please, first delete all subcategories of this category!';
 $string['deletethisbookingoption'] = 'Delete this booking option';
 $string['deleteuserfrombooking'] = 'Do you really want to delete the users from the booking?';
+$string['delimiterbookingoptionsfromcondition'] = '<br>';
 $string['delnotification'] = 'You deleted {$a->del} of {$a->all} users. Users, that have completed activity, can\'t be deleted!';
 $string['delnotificationactivitycompletion'] = 'You deleted {$a->del} of {$a->all} users. Users, that have completed activity, can\'t be deleted!';
 $string['deny'] = 'Deny';
@@ -1254,6 +1340,7 @@ $string['editbookingoption'] = 'Edit booking option';
 $string['editbookingoptions'] = 'Edit Bookingoptions';
 $string['editcampaign'] = 'Edit campaign';
 $string['editcategory'] = 'Edit';
+$string['editcertificatecondition'] = 'Edit';
 $string['editingoptiondate'] = 'You are currently editing this session';
 $string['editinstitutions'] = 'Edit institutions';
 $string['editotherbooking'] = 'Other booking rules';
@@ -1273,6 +1360,7 @@ $string['electivesbookedsuccess'] = 'Your selected electives have been booked su
 $string['electivesettings'] = 'Elective Settings';
 $string['email'] = 'Email';
 $string['emailbody'] = 'Email body';
+$string['emailrelated'] = 'E-mail address of related person (like i.e. the user the booking was made for)';
 $string['emailsettings'] = 'E-mail settings <span class="badge bg-warning"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Deprecated</span>';
 $string['enable'] = 'Enable';
 $string['enablecompletionmincompleted'] = 'Min. number of completed booking options';
@@ -1280,6 +1368,10 @@ $string['enablecompletionmincompleted_help'] = 'A user must be set to "Completed
 To mark users as "Completed", open the "Configure fields and columns" section (of the Booking instance) and add the "Completed" field under "Manage responses".
 The users can then be marked as completed on the report page. This has to be done by teacher, manager or admin.';
 $string['enablecompletionminnumber'] = 'Minimum number:';
+$string['enablefavoritestoggle'] = 'Booking favorites';
+$string['enablefavoritestoggle_desc'] = 'Allow users to mark booking options as favorites. When enabled, a star icon appears on every booking option
+so users can add or remove it from their personal favorites list. A dedicated "My favorites" tab can then be added to each Booking instance.
+<span class="text-danger">Please remember to add the "My favorites" tab in the settings of your Booking instances after activating this feature.</span>';
 $string['enddate'] = 'Enddate';
 $string['endtime'] = 'Endtime';
 $string['endtimemeasurement'] = 'Measurement time';
@@ -1301,12 +1393,24 @@ $string['enrollink:3'] = 'Your enrolment link is invalid.';
 $string['enrollink:4'] = 'There are no more places available in the bundle.';
 $string['enrollink:5'] = 'No guestusers allowed';
 $string['enrollink:6'] = 'Your registration has been completed and must still be confirmed by an authorised person.';
+$string['enrollink:7'] = 'Enrolment not possible: {$a}';
+$string['enrollinkskipconditions'] = 'Turn off specific availability conditions for enrolment links';
+$string['enrollinkskipconditions_desc'] = 'Select which availability conditions should be bypassed when a user books via an enrolment link.';
 $string['enrollinktriggered'] = 'Enrol link generation triggered';
 $string['enrollinktriggered:description'] = 'The event as the basis for the automatic generation of an enrolment link has been triggered.';
 $string['enrolmentstatus'] = 'Enrol users at course start time (Default: Not checked &rarr; enrol them immediately.)';
 $string['enrolmentstatus_help'] = 'Notice: In order for automatic enrolment to work, you need to change the booking instance setting
  "Automatically enrol users" to "Yes".';
 $string['enrolmultipleusers'] = 'Enrol multiple users';
+$string['enrolmultipleusersformmode'] = 'Behavior of the form element "Enrol multiple users"';
+$string['enrolmultipleusersformmode:alsobookmyself'] = 'The person booking for others always participates (and consumes one of the specified places)';
+$string['enrolmultipleusersformmode:alsobookmyself:hint'] = 'Note: One of the specified places will be consumed by yourself.';
+$string['enrolmultipleusersformmode:checkbox'] = 'The person booking for others can choose themselves if they want to participate - show checkbox (default)';
+$string['enrolmultipleusersformmode:donotbookmyself'] = 'The person booking for others never participates themselves (the booking person does not consume a place)';
+$string['enrolmultipleusersformmode:donotbookmyself:hint'] = 'You are not participating in the booking yourself, but are only booking for other persons. You do not consume any of the specified places.';
+$string['enrolmultipleusersformmode_desc'] = 'Set the behavior of the form element "Enrol multiple users".
+You\'ll find this element in the editing form of booking options under "Availability conditions" &gt; "Form needs to be filled out before booking"
+&gt; Element "Enrol multiple users".';
 $string['enrolusersaction:alert'] = '<div class="alert alert-info" role="alert">
 <i class="fa fa-info-circle" aria-hidden="true"></i>
 <span>
@@ -1322,6 +1426,8 @@ $string['enteruserprofilefield'] = 'Select users by entering a value for custom 
 $string['entervalidurl'] = 'Please, enter a valid URL!';
 $string['entities'] = 'Choose places with entities plugin';
 $string['entitiesfieldname'] = 'Place(s)';
+$string['entitybookinganswer'] = 'Booking answer';
+$string['entitybookingoption'] = 'Booking option';
 $string['entitydeleted'] = 'Location has been deleted';
 $string['equals'] = 'has exactly this value (text or number)';
 $string['equalsnot'] = 'has not exactly this value (text or number)';
@@ -1338,6 +1444,8 @@ $string['error:confirmthatyouaresure'] = 'Please confirm that you are sure.';
 $string['error:coursecategoryvaluemissing'] = 'You need to choose a value here as it is needed as course category
 for the automatically created Moodle course.';
 $string['error:deactivatelegacymailtemplates'] = 'If you want to use this rule you first have to <a href="{$a}" target="_blank">deactivate legacy mail templates</a>.';
+$string['error:enrolusersactionexceedscapacity'] = 'The requested number exceeds available places ({$a} left).';
+$string['error:enrolusersactionnotnumeric'] = 'You have to enter a positive number.';
 $string['error:entervalue'] = 'You have to enter a value here.';
 $string['error:failedtosendconfirmation'] = 'The following user did not receive a confirmation mail
 Booking status: {$a->status}
@@ -1348,6 +1456,7 @@ Link: {$a->bookinglink}
 Associated course: {$a->courselink}';
 $string['error:formcapabilitymissing'] = 'You do not have the necessary permission to edit this form. Please contact an administrator.';
 $string['error:identifierexists'] = 'Choose another identifier. This one already exists.';
+$string['error:installmentdatefieldcondition'] = 'Installment date can only be selected in combination with the "Choose user who has to pay installments" condition.';
 $string['error:invalidcmid'] = 'The report cannot be opened because no valid course module ID (cmid) was provided. It needs to be the cmid of a booking instance!';
 $string['error:limitfactornotbetween1and2'] = 'You need to enter a value between 0 and 2, e.g. 1.2 to add 20% more bookable places.';
 $string['error:missingblockinglabel'] = 'Please enter the message to show when booking is blocked.';
@@ -1371,6 +1480,7 @@ $string['error:ruleactionsendcopynotpossible'] = 'It\'s not possible to send an 
 $string['error:selflearningcourseallowsnodates'] = 'Booking options of type "{$a}" are not allowed to have dates. Please remove all dates and save again.';
 $string['error:semestermissingbutcanceldependentonsemester'] = 'The setting to calculate cancellation periods from semester start is active but semester is missing!';
 $string['error:taskalreadystarted'] = 'You have already started a task!';
+$string['error:templatenamereq'] = 'You must provide either a booking option name or a template name.';
 $string['error:tousepriceinstallshoppingcart'] = 'You need to install shopping cart if you want users to buy something that has a price.';
 $string['error:wrongpagenumberforprebookingpage'] = 'Error: Wrong page number for pre-booking page.';
 $string['error:wrongteacherid'] = 'Error: No user could be found for the provided "teacherid".';
@@ -1446,6 +1556,11 @@ $string['fieldofstudyoptions'] = 'Shortcode to show all booking options of a fie
  They are defined by a common cohort sync enrolement & the booking availabilty condition of
  having to be inscribed in one of these courses.';
 $string['fillinatleastoneoption'] = 'You need to provide at least two possible answers.';
+$string['filter:completeddateyears'] = 'Completed date (past X years)';
+$string['filter:timemodifiedyears'] = 'Time modified (past X years)';
+$string['filter_userprofilefield'] = 'User profile field';
+$string['filter_userprofilefield_field'] = 'Profile field name';
+$string['filter_userprofilefield_value'] = 'Required value';
 $string['filteravailalbetobook'] = 'Available to book';
 $string['filterbookingavailability'] = 'Booking availability';
 $string['filterbtn'] = 'Filter';
@@ -1495,6 +1610,7 @@ $string['gotomoodlecourse'] = 'Go to Moodle course';
 $string['groupdeleted'] = 'This booking instance creates groups automatically in the target course. But the group has been manually deleted in the target course. Activate the following checkbox in order to recreate the group';
 $string['groupexists'] = 'The group already exists in the target course, please choose another name for the booking option';
 $string['groupid'] = 'Group';
+$string['groupiddisplay'] = 'Group';
 $string['groupiddisplay_help'] = '<i class="fa fa-lightbulb-o" aria-hidden="true"></i>&nbsp;Upon booking, users are automatically enrolled into this course group<span class="text-small"></span>';
 $string['groupname'] = 'Group name';
 $string['h'] = '';
@@ -1561,11 +1677,18 @@ $string['importlocation'] = 'Ort einer Buchungsoption. Wird automatisch bei 100%
 $string['importmaxanswers'] = 'Maximale Anzahl von Buchungen pro Buchungsoption';
 $string['importmaxoverbooking'] = 'Maximale Anzahl an Wartelistenplätzen pro Buchungsoption';
 $string['importpartial'] = 'The import was only partially completed. There were problems with following lines and they were not imported:';
+$string['importpreview'] = 'Save';
+$string['importpreviewlinenumber'] = 'Line';
+$string['importpreviewreason'] = 'Skip reason';
+$string['importpreviewskipped'] = 'Rows to be skipped';
+$string['importpreviewtitle'] = 'Import preview';
+$string['importpreviewvalid'] = 'Rows to be imported';
 $string['importsuccess'] = 'Import was successful. {$a} record(s) treated.';
 $string['importteacheremail'] = 'Email addresses of users on the platform who can be listed as teachers in the booking options. Use a comma as a separator for multiple email addresses (beware of escaping for comma-separated CSVs!)';
 $string['importtext'] = 'Title of a booking option (synonym for text)';
 $string['importtileprefix'] = 'Prefix (e.g., course number)';
 $string['importtitle'] = 'Title of a booking option';
+$string['importuploaddatabase'] = 'Upload';
 $string['importuseremail'] = 'Email addresses of users on the platform who have booked this option. Use a comma as a separator for multiple email addresses (beware of escaping for comma-separated CSVs!)';
 $string['inarray'] = 'user has one of these comma separated values';
 $string['includeteachers'] = 'Include teachers in the sign-in sheet';
@@ -1573,6 +1696,7 @@ $string['indexnumber'] = 'Numbering';
 $string['info:teachersforoptiondates'] = 'Go to the <a href="{$a}" target="_self">teaching journal</a>, to manage teachers for specific dates.';
 $string['infoalreadybooked'] = '<div class="infoalreadybooked"><i>You are already booked for this option.</i></div>';
 $string['infonobookingoption'] = 'In order to add a booking option please use the settings block or the settings-icon on top of the page';
+$string['infotext:favoritestoggleisdisabled'] = 'The "My favorites" feature is currently disabled. You can enable it <a href="{$a}" target="_blank">here</a>.';
 $string['infotext:installmoodlebugfix'] = 'Wunderbyte has added a bug fix to the Moodle core. This bug fix has not yet been included in your Moodle version. Therefore, you may encounter JavaScript error messages in certain areas. Starting with Moodle 4.1, it is sufficient to apply the ongoing security updates.';
 $string['infotext:onlyfordebugging'] = 'This page is only accessible in debug mode';
 $string['infotext:prolicensenecessary'] = '<a href="https://showroom.wunderbyte.at/course/view.php?id=62" target="_blank">Get your PRO license here...</a>';
@@ -1603,6 +1727,8 @@ $string['isempty'] = 'field is empty';
 $string['isnotempty'] = 'field is not empty';
 $string['issuecertificate'] = 'Issue certificate';
 $string['issuecertificatebody'] = 'It is checked whether all requirements are met and, if so, the certificate is issued according to the settings.';
+$string['issuemultiplecertificates'] = 'Issue multiple certificates';
+$string['issuemultiplecertificates_desc'] = 'Issues a certificate whenever condition is met. If turned off only one certificate will be issued per condition even if condition is met multiple times.';
 $string['journal'] = 'Journal';
 $string['json'] = 'Stores supplementary information';
 $string['keepusersbookedonreducingmaxanswers'] = 'Keep users booked on limit reduction';
@@ -1621,6 +1747,8 @@ $string['lblsputtname'] = 'Name of label: Send poll url to teachers';
 $string['lblsurname'] = 'Name of label: Surname';
 $string['lblteachname'] = 'Name of label: Teachers';
 $string['leftandrightdate'] = '{$a->leftdate} to {$a->righttdate}';
+$string['legacymailremovalacknowledged'] = 'I understand that legacy email templates will be removed in the near future and that I need to setup Booking Rules in order to be able to send automated emails after the removal.';
+$string['legacymailremovalacknowledged_desc'] = 'You are still using the deprecated legacy email templates. Please confirm that you are aware of the upcoming removal and that you will migrate your email templates to <a href="{$a}">Booking Rules</a> in time.';
 $string['licenseactivated'] = 'PRO version activated successfully.<br>(Expires: {$a})';
 $string['licenseexpired'] = 'PRO version has expired ({$a}).
 <a href="https://showroom.wunderbyte.at/course/view.php?id=62" target="_blank">
@@ -1763,6 +1891,7 @@ $string['mod/booking:reducedoptionform4'] = 'Reduced booking option 4';
 $string['mod/booking:reducedoptionform5'] = 'Reduced booking option 5';
 $string['mod/booking:seepersonalteacherinformation'] = 'See personal teacher information';
 $string['modaloptiondateformtitle'] = 'Custom dates';
+$string['modified'] = 'Last modified';
 $string['modulename'] = 'Booking';
 $string['modulenameplural'] = 'Bookings';
 $string['monday'] = 'Monday';
@@ -1783,6 +1912,7 @@ $string['mybookingoptions'] = 'My booked options';
 $string['mybookingsbooking'] = 'Booking (Course)';
 $string['mybookingsoption'] = 'Option';
 $string['mycourselist'] = 'Show my Booking options.';
+$string['myfavorites'] = 'My favorites';
 $string['myinstitution'] = 'My institution';
 $string['name'] = 'Name';
 $string['newcourse'] = 'Create new course...';
@@ -1801,6 +1931,7 @@ $string['nocancelreason'] = 'You need to give a reason for canceling this bookin
 $string['nocfnameselected'] = 'Nothing selected. Either type new name or select one from the list.';
 $string['nocmidselected'] = 'No cmid was selected';
 $string['nocomments'] = 'Commenting disabled';
+$string['noconditionselected'] = 'No condition selected';
 $string['noconfirmationworkflow'] = 'No confirmtion necessary';
 $string['nocourse'] = 'No course selected for this booking option';
 $string['nocourseselected'] = 'No course selected';
@@ -1979,7 +2110,8 @@ $string['optionstoconfirm'] = 'Options to confirm';
 $string['optiontemplate'] = 'Option template';
 $string['optiontemplatename'] = 'Option template name';
 $string['optiontemplatenotsavednovalidlicense'] = 'Booking option template could not be saved as template.
-                                                  Upgrade to PRO version to save an unlimited number of templates.';
+Upgrade to PRO version to save an unlimited number of templates.';
+$string['optiontemplates'] = 'Booking option templates';
 $string['optiontemplatessettings'] = 'Booking option templates';
 $string['optiontypefilternormal'] = 'Normal';
 $string['optionviewcustomfields'] = 'Show customfields on detail page';
@@ -1990,7 +2122,7 @@ $string['optionvisible'] = 'Visible to everyone (default)';
 $string['optionvisibledirectlink'] = 'Normal users can only see this option with a direct link';
 $string['organizatorname'] = 'Organizer name';
 $string['organizatorname_help'] = 'You can either enter the organizer name manually or choose from a list of previous organizers.
-                                    You can choose one organizer only. Once you save, the organizer will be added to the list.';
+You can choose one organizer only. Once you save, the organizer will be added to the list.';
 $string['orotherfield'] = 'OR additional field';
 $string['otherbookingaddrule'] = 'Add new rule';
 $string['otherbookinglimit'] = 'Limit';
@@ -2198,7 +2330,8 @@ $string['problemsofcohortorgroupbooking'] = '<br><p>Not all users could be booke
 <ul>
 <li>{$a->notenrolledusers} users are not enrolled in the course</li>
 <li>{$a->notsubscribedusers} users not booked for other reasons</li>
-</ul>';
+</ul>
+<p>The reason is probably that the users to be booked are not enrolled in this course and you do not have the mod/booking:bookanyone capability</p>';
 $string['problemwithdate'] = 'Please verify dates';
 $string['profeatures:appearance'] = '<ul>
 <li><b>hide Wunderbyte logo and link</b></li>
@@ -2245,6 +2378,10 @@ $string['profeatures:cancellationsettings'] = '<ul>
 </ul>';
 $string['profeatures:duplicationrestoreoption'] = '<ul>
 <li><b>duplicate moodle course when duplicating a booking option</b></li>
+</ul>';
+$string['profeatures:enablefavoritestoggle'] = '<ul>
+<li>Users can mark booking options as favorites using a star icon.</li>
+<li>A personal "My favorites" tab can be enabled per Booking instance.</li>
 </ul>';
 $string['profeatures:overbooking'] = '<ul>
 <li><b>allow overbooking</b></li>
@@ -2338,6 +2475,7 @@ $string['reminder1sent'] = 'First reminder sent';
 $string['reminder2sent'] = 'Second reminder sent';
 $string['reminderteachersent'] = 'Teacher reminder sent';
 $string['removeafterminutes'] = 'Remove activity completion after N minutes';
+$string['removeoptionfromfavorites'] = 'Remove from favorites';
 $string['removeresponses'] = 'Remove all responses';
 $string['removeuseronunenrol'] = 'Remove user from booking upon unenrolment from associated course?';
 $string['reoccurringdatestring'] = 'Weekday, start and end time (Day, HH:MM - HH:MM)';
@@ -2374,8 +2512,8 @@ $string['responsiblecontactenroltocourse'] = 'Enrol responsible contact person t
 $string['responsiblecontactenroltocourse_desc'] = 'Please also define the role the responsible contact person should have in the connected Moodle course.';
 $string['responsiblecontactshowfirstteacher'] = 'On details page, if no responsible contact is set, show the first teacher as responsible contact.';
 $string['restresponse'] = 'rest_response';
-$string['restrictanswerperiodclosing'] = 'Booking is possible only until a certain date';
-$string['restrictanswerperiodopening'] = 'Booking is possible only after a certain date';
+$string['restrictanswerperiodclosing'] = 'Booking is possible only <b>until</b> a certain date';
+$string['restrictanswerperiodopening'] = 'Booking is possible only <b>after</b> a certain date';
 $string['restrictavailabilityforinstance'] = 'Apply access restrictions of booking instances to booking options';
 $string['restrictavailabilityforinstance_desc'] = 'If you activate this feature and you have access restrictions on your booking instance,
 these restrictions will also apply to booking options even if they are used in a shortcode like [courselist].';
@@ -2499,6 +2637,9 @@ $string['scgfselectgroups'] = 'Select group(s)';
 $string['sch_allowinstallment'] = 'Allow installments';
 $string['sch_allowrebooking'] = 'Allow rebooking';
 $string['scheduledmails'] = 'Scheduled mails';
+$string['scheduledmailscleanupinvalidbody'] = 'This checks all currently listed scheduled mails and deletes all entries with status "No".';
+$string['scheduledmailscleanupinvalidsubmit'] = 'Delete invalid entries';
+$string['scheduledmailscleanupinvalidtitle'] = 'Delete invalid scheduled mails';
 $string['screstoreitemfromreserved'] = 'Automatically put reserved items in the shopping cart';
 $string['screstoreitemfromreserved_desc'] = 'This setting will put back items in your shopping cart when the cache was deleted';
 $string['search'] = 'Search...';
@@ -2654,6 +2795,7 @@ $string['showlistoncoursepage_help'] = 'If you activate this setting, the course
                                             redirecting to the available booking options will be shown.';
 $string['showmessages'] = 'Show messages';
 $string['showmybookingsonly'] = 'My booked options';
+$string['showmyfavoritesonly'] = 'My favorites';
 $string['showmyfieldofstudyonly'] = 'My field of study';
 $string['showoptiondatesextrainfo'] = 'Show additional information for dates';
 $string['showoptiondatesextrainfo_desc'] = 'Show comments and extra infos of sessions (dates) in the list of booking options
@@ -2706,7 +2848,8 @@ $string['signinsheetmode_desc'] = 'Select the mode for downloading the sign-in s
 $string['signinsheettoporientation'] = 'Sign-in Sheet Top-Button Orientation';
 $string['signinsheettoporientationdesc'] = 'Orientation Top PDF download button';
 $string['signinsheettoporientationdesc_help'] = 'Sets the default orientation for the sign-in sheet top download button. Choose between Portrait and Landscape.';
-$string['skipableconditions'] = 'Skippable conditions';
+$string['simplecertificateoption'] = 'Simple certificate option';
+$string['skipableconditions'] = 'Turn off specific availability conditions';
 $string['skipableconditions_desc'] = 'Select which availability conditions should be skipped during the booking process.';
 $string['skipbookingrulesmode'] = 'Apply booking rules';
 $string['skipbookingrulesoptin'] = 'Opt in: Only apply the following rules';
@@ -2825,6 +2968,7 @@ $string['taken'] = 'Taken';
 $string['taskadhocresetoptiondatesforsemester'] = 'Adhoc task: Reset and generate new optiondates for semester';
 $string['taskcheckanswers'] = 'Booking: Check answers';
 $string['taskcleanbookingdb'] = 'Booking: Clean database';
+$string['taskcleanupinvalidscheduledmails'] = 'Booking: Cleanup invalid scheduled mails';
 $string['taskconfirmbookinganswerbymailbyruleadhoc'] = 'Booking: Confirm booking answer from waitinglist by mail (adhoc task)';
 $string['taskenrolbookeduserstocourse'] = 'Booking: Enrol booked users to course';
 $string['taskpurgecampaigncaches'] = 'Booking: Clean caches for booking campaigns';
@@ -2839,6 +2983,12 @@ $string['teacher'] = 'Teacher';
 $string['teacherdescription'] = 'Description';
 $string['teachernotfound'] = 'Teacher could not be found or does not exist.';
 $string['teacherpageshiddenbookingids'] = 'Booking instances to be hidden on teacher pages';
+$string['teacherpagevisibilitymode'] = 'Assigned teachers\' visibility of hidden options on their own teacher page';
+$string['teacherpagevisibilitymode:both'] = 'On their own teacher page, assigned teachers may see fully invisible and direct-link-only options';
+$string['teacherpagevisibilitymode:default'] = 'Default behaviour (hidden options remain hidden)';
+$string['teacherpagevisibilitymode:directlinkonly'] = 'On their own teacher page, assigned teachers may see direct-link-only options';
+$string['teacherpagevisibilitymode:fullyinvisible'] = 'On their own teacher page, assigned teachers may see fully invisible options';
+$string['teacherpagevisibilitymode_desc'] = 'Controls which hidden booking options are included when a visibility override mode is used. Current use case: assigned teachers on their own public teacher profile page. It does not apply when viewing other teachers\' pages, and only options where that teacher is assigned are shown. The same visibility modes can also be reused by other listing contexts in the future. This setting does not affect users with the \'canseeinvisibleoptions\' capability, who can always see all hidden options';
 $string['teacherroleid'] = 'Select the following role to enrol teachers in a newly created course (if given).';
 $string['teachers'] = 'Teachers';
 $string['teachersallowmailtobookedusers'] = 'Allow teachers to send an e-mail to all booked users using their own mail client';
@@ -2846,6 +2996,7 @@ $string['teachersallowmailtobookedusers_desc'] = 'If you activate this setting, 
     to all booked users using their own mail client - the e-mail-addresses of all users will be visible.
     <span class="text-danger"><b>Be careful:</b> This might be a privacy issue. Only activate this,
     if you are sure it corresponds with your organization\'s privacy policy.</span>';
+$string['teachersbookingoptionsfromcondition'] = 'Teachers:';
 $string['teachersettings'] = 'Teachers <span class="badge bg-success text-light"><i class="fa fa-cogs" aria-hidden="true"></i> PRO</span>';
 $string['teachersettings_desc'] = 'Teacher-specific settings.';
 $string['teachersforoption'] = 'Teachers';
@@ -2961,6 +3112,7 @@ $string['unsubscribe:successnotificationlist'] = 'You were unsubscribed successf
 $string['until'] = 'Until';
 $string['updatebooking'] = 'Update booking';
 $string['updatedrecords'] = '{$a} record(s) updated.';
+$string['upgrade:legacymailacknowledgementrequired'] = 'You are still using legacy email templates but have not confirmed that you are aware of the upcoming removal. Please go to <a href="{$a}">Booking plugin settings</a>, check the acknowledgement checkbox and save.';
 $string['uploadheaderimages'] = 'Header images for booking options';
 $string['usecompetencies'] = 'Use competencies';
 $string['usecompetencies_desc'] = 'Booking options can be tagged with competencies and sorted accordingly';
@@ -2980,11 +3132,13 @@ $string['usenonnativemailer_desc'] = 'If checked, emails with calendar invitatio
 $string['usenotificationlist'] = 'Use notification list';
 $string['useonlyonefield'] = 'No additional field';
 $string['useprice'] = 'Only book with price';
+$string['useprotoenablemorecertificateconditions'] = 'You need a Pro license to create more certificate conditions.';
 $string['useprotoenablemorerules'] = 'You need Booking PRO, to be able to add more rules.
 <a href="https://wunderbyte.at/kontakt" target="_blank">Contact Wunderbyte</a>, if you want to buy a pro license.';
 $string['useraffectedbyevent'] = 'User affected by the event';
 $string['usercalendarentry'] = 'You are booked for <a href="{$a}">this session</a>.';
 $string['usercalendarurl'] = 'User calendar URL';
+$string['usercreated'] = 'Created by';
 $string['userdownload'] = 'Download users';
 $string['usergavereason'] = '{$a} gave the following reason for cancellation:';
 $string['userid'] = 'UserID';
@@ -2994,7 +3148,7 @@ $string['userleave'] = 'User has cancelled his/her own booking (enter 0 to turn 
 $string['userleavemessage'] = 'Hello {$a->participant},
 You have been unsubscribed from {$a->title}.';
 $string['userleavesubject'] = 'You successfully unsubscribed from {$a->title}';
-$string['usermodified'] = 'Modified by';
+$string['usermodified'] = 'Last modified by';
 $string['username'] = 'username';
 $string['usernameofbookingmanager'] = 'Choose a booking manager';
 $string['usernameofbookingmanager_help'] = 'Username of the user who will be displayed in the "From" field of the confirmation notifications. If the option "Send confirmation e-mail to booking manager" is enabled, this is the user who receives a copy of the confirmation notifications.';
@@ -3114,7 +3268,9 @@ $string['whatsnew'] = 'What\'s new?';
 $string['whichview'] = 'Default view for booking options';
 $string['whichviewerror'] = 'You have to include the default view in: Views to show in the booking options overview';
 $string['withselected'] = 'With selected users:';
+$string['wrongcompletedvalue'] = 'Wrong completed value: {$a}. It should be either 0 or 1.';
 $string['wrongdataallfields'] = 'Please, fill out all fields!';
+$string['wrongdateformat'] = 'Wrong date format "{$a->format}" for the value "{$a->value}".';
 $string['wronggroup'] = 'Is this the wrong group?';
 $string['wronggroup_help'] = 'When duplicating booking instances, it is possible that the wrong group is duplicated. Click the checkbox to recreate the group.';
 $string['wronglabels'] = 'Imported CSV not containing the right labels. Column {$a} can not be imported.';

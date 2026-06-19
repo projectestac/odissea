@@ -253,6 +253,7 @@ $string['event_meeting_left'] = 'Saiu da sessão';
 $string['event_recording_deleted'] = 'Gravação apagada';
 $string['event_recording_edited'] = 'Gravação editada';
 $string['event_recording_imported'] = 'Gravação importada';
+$string['event_recording_link_deleted'] = 'Ligação para a gravação eliminada';
 $string['event_recording_protected'] = 'Gravação protegida';
 $string['event_recording_published'] = 'Gravação publicada';
 $string['event_recording_unprotected'] = 'Gravação desprotegida';

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addingfilestoqueue'] = '{$a} formularios de respuesta han sido añadido a la cola de evaluación. Le será enviado un correo electrónico a su dirección cuando los datos hayan sido procesados.';
+$string['addingfilestoqueue'] = '{$a} formularios de respuesta han sido añadidos a la cola de evaluación. Le será enviado un correo electrónico a su dirección cuando los datos hayan sido procesados.';
 $string['correcterror'] = 'Corregir';
 $string['deleteselectedpages'] = 'Borrar páginas seleccionadas';
 $string['errorcouldnotgrab'] = 'No se pudo interpretar';

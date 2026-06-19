@@ -22,8 +22,19 @@
  */
 
 export const isNull = a => typeof a === 'undefined' || a === null;
-export const strdecode = t => String(t).replace(/\\(#|\}|~)/g, '$1');
+export const strdecode = t => String(t)
+  .replace(/\\(#|\}|~)/g, '$1')
+  .replaceAll('&amp;', '&')
+  .replaceAll('&lt;', '<')
+  .replaceAll('&gt;', '>');
 export const strencode = t => String(t).replace(/(#|\}|~)/g, '\\$1');
+
+// Regular expressions to detect cloze question types in edtor content.
+// eslint-disable-next-line max-len
+export const regexBaseQtypes = 'MULTICHOICE(_H|_V|_S|_HS|_VS)?|MULTIRESPONSE(_H|_S|_HS)?|NUMERICAL|SHORTANSWER(_C)?|SAC?|NM|MWC?|M[CR](V|H|VS|HS)?';
+export const regexMultianswerrgxQtypes = '|REGEXP(_C)?|RXC?';
+// __REGEX_QTYPES__ will be replaced by regexBaseQtypes and optional with regexMultianswerrgxQtypes.
+export const regexClozeStr = '\\{([0-9]*):(__REGEX_QTYPES__):(.*?)(?<!\\\\)\\}';
 
 /**
  * Check at which position a given node is in the list.
@@ -437,4 +448,32 @@ export const getStr = function(key) {
     return STR;
   }
   return STR[key] ?? key;
+};
+
+/**
+ * Take editor and wrap cloze question texts with marker spans.
+ * @param {string} content
+ * @param {RegExp} regex
+ * @returns {string|null}
+ */
+export const addMarkers = function(content, regex) {
+  // Check if there is already a marker span. In this case we do not have to do anything.
+  if (content.indexOf(markerClass) !== -1) {
+    return null;
+  }
+  const m = content.match(regex);
+  // If we have no matches, no cloze questions are present.
+  if (!m) {
+    return null;
+  }
+  // Unique values to avoid replacing already replaced content.
+  const n = m.filter((v, i, a) => a.indexOf(v) === i);
+  // Replace all matches with the marker span added.
+  for (let i = 0; i < n.length; i++) {
+    // `replaceAll` allows special replacement patterns beginning with `$`.
+    // Escape these in the replacement string if they appear in the content.
+    const escaped = n[i].replaceAll('$', '$$$$');
+    content = content.replaceAll(n[i], markerSpan + escaped + '</span>');
+  }
+  return content;
 };

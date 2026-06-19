@@ -355,7 +355,6 @@ define(['jquery'], function($) {
 
     AceWrapper.prototype.resize = function(w, h) {
         this.editNode.outerHeight(h);
-        this.editNode.outerWidth(w);
         this.editor.resize();
     };
 

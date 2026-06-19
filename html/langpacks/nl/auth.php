@@ -91,10 +91,14 @@ $string['emailnowexists'] = 'Het e-mailadres dat je probeert te gebruiken, is al
 $string['emailupdate'] = 'E-mailadres aanpassen';
 $string['emailupdatemessage'] = 'Beste {$a->firstname},
 
-Je hebt gevraagd om je e-mailadres te wijzigen voor je account op {$a->site}. Ga naar volgend webadres om de wijziging te bevestigen:
+Je hebt gevraagd om je e-mailadres te wijzigen voor je account op {$a->site}.
 
-{$a->url}
-De bevestigingslink blijft <b>10 minuten</b> geldig
+Ga naar volgend webadres om de wijziging te bevestigen:
+
+<a href="{$a->url}">Bevestig en wijzig e-mailadres</a>
+
+
+De bevestigingslink blijft <strong>10 minuten</strong> geldig
 
 {$a->supportemail}';
 $string['emailupdatesuccess'] = 'Het e-mail adres van gebruiker <em>{$a->fullname}</em> is gewijzigd naar <em>{$a->email}</em>.';

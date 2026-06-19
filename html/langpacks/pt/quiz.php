@@ -47,6 +47,7 @@ $string['addnewpagesafterselected'] = 'Inserir nova página após perguntas sele
 $string['addnewquestionsqbank'] = 'Adicionar perguntas à categoria {$a->catname}: {$a->link}';
 $string['addnewuseroverride'] = 'Adicionar exceção para utilizador';
 $string['addpagebreak'] = 'Adicionar quebra de página';
+$string['addpagebreakafter'] = 'Adicionar quebra de página após a pergunta {$a}';
 $string['addpagehere'] = 'Inserir página';
 $string['addquestion'] = 'Adicionar pergunta';
 $string['addquestionfrombankatend'] = 'Adicionar no final a partir da base de dados de perguntas';
@@ -583,6 +584,7 @@ Os testes podem ser utilizados:
 * Para autoavaliação.';
 $string['modulename_link'] = '';
 $string['modulenameplural'] = 'Testes';
+$string['movequestionnumber'] = 'Mover a pergunta: {$a}';
 $string['moveselectedonpage'] = 'Mover as perguntas selecionadas para a página: {$a}';
 $string['multichoice'] = 'Escolha múltipla';
 $string['multipleanswers'] = 'Escolha pelo menos uma resposta';
@@ -895,6 +897,7 @@ $string['removeallquizattempts'] = 'Todas as tentativas do teste';
 $string['removealluseroverrides'] = 'Todas as exceções para utilizadores';
 $string['removeemptypage'] = 'Apagar página vazia';
 $string['removepagebreak'] = 'Remover quebra de página';
+$string['removepagebreakafter'] = 'Remover quebra de página após a pergunta {$a}';
 $string['removeselected'] = 'Apagar selecionadas';
 $string['rename'] = 'Renomear';
 $string['renderingserverconnectfailed'] = 'O servidor {$a} falhou ao processar um pedido RQP. Verifique se o URL se está correto.';

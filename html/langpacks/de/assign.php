@@ -349,7 +349,7 @@ $string['hidegrader'] = 'Bewerteridentität für Teilnehmer/innen verbergen';
 $string['hidegrader_help'] = 'Wenn diese Option aktiviert ist, wird die Identität von Personen verborgen, die eine Aufgabeneinreichung bewerten. Teilnehmer/innen können nicht sehen können, wer ihre Arbeit bewertet.
 
 Beachten Sie, dass diese Einstellung keine Auswirkungen auf das Kommentarfeld auf der Bewertungsseite hat.';
-$string['hideshow'] = 'Verbergen/Anzeigen';
+$string['hideshow'] = 'Verbergen / Anzeigen';
 $string['inactiveoverridehelp'] = '* Diese Nutzeränderung ist inaktiv, weil kein Zugang zur Aktivität besteht. Das kann aufgrund der Gruppenzugehörigkeit oder Rolle sein, aufgrund anderer Zugriffsbeschränkungen oder weil die Aktivität verborgen ist.';
 $string['includesuspendedparticipants'] = 'Gesperrte Teilnehmer/innen einschließen';
 $string['indicator:cognitivedepth'] = 'Aufgabe kognitiv';
@@ -451,7 +451,7 @@ $string['nousers'] = 'Keine Nutzer/innen';
 $string['nousersselected'] = 'Niemand ausgewählt';
 $string['numberofdraftsubmissions'] = 'Entwürfe';
 $string['numberofparticipants'] = 'Teilnehmer/innen';
-$string['numberofsubmissionsneedgrading'] = 'Bewertung erwartet';
+$string['numberofsubmissionsneedgrading'] = 'Noch zu bewerten';
 $string['numberofsubmissionsneedgradinglabel'] = 'Bewertung erwartet: {$a}';
 $string['numberofsubmittedassignments'] = 'Abgegeben';
 $string['numberofteams'] = 'Gruppen';

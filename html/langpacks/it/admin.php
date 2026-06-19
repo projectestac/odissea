@@ -79,7 +79,7 @@ $string['alternativefullnameformat_desc'] = 'Imposta la visualizzazione del nome
 $string['always'] = 'Sempre';
 $string['appearance'] = 'Aspetto';
 $string['aspellpath'] = 'Percorso di aspell';
-$string['asyncbackupdisabled'] = 'Il sito è attualmente configurato per utilizzare backup sincroni. I backup asincroni offrono un\'esperienza utente migliore, consentendo di effettuare altre operazioni una volta avviato il backup.
+$string['asyncbackupdisabled'] = 'Il sito è configurato per utilizzare backup sincroni. I backup asincroni offrono un\'esperienza utente migliore, consentendo di effettuare altre operazioni una volta avviato il backup.
 I backup asincroni saranno abilitati per tutti i siti da Moodle LMS 4.5 LTS.
 I backup sincroni verranno rimossi da Moodle LMS nella versione successiva alla 4.5 LTS';
 $string['authentication'] = 'Autenticazione';
@@ -811,7 +811,7 @@ $string['invalidforgottenpasswordurl'] = 'L\'URL di recupero password non è un 
 $string['invalidsection'] = 'Sezione non valida';
 $string['invalidthemepreset'] = 'La preimpostazione selezionata non è compatibile con il tema. Errore SCSS: "{$a}"';
 $string['invaliduserchangeme'] = 'Il nome utente "changeme" è riservato - non è possibile creare utenti con quel nome utente.';
-$string['ipblocked'] = 'Questo sito non è al momento disponibile.';
+$string['ipblocked'] = 'Il sito non è al momento disponibile.';
 $string['ipblocker'] = 'Blocco IP';
 $string['ipblockersyntax'] = 'Inserire un valore per ogni linea. È possibile inserire un indirizzo IP completo (ad esempio <b>192.168.10.1</b>) di un singolo host, oppure un indirizzo IP parziale (ad esempio <b>192.168</b>) per includere tutti gli indirizzi che iniziano con tali numeri. È anche possibile usare la notazione CIDR (ad esempio <b>231.54.211.0/20</b>) oppure un intervallo (ad esempio <b>231.3.56.10-20</b>) dove l\'intervallo è definito dalle ultime quattro cifre. I nomi di dominio come ad esempio "example.com" non sono supportati. Le linee lasciate vuote ed eventuali linee precedete da "#" non saranno tenute in considerazione.';
 $string['iplookup'] = 'Ricerca indirizzo IP';
@@ -853,15 +853,14 @@ $string['lockoutduration'] = 'Durata del blocco del profilo utente';
 $string['lockoutduration_desc'] = 'I profili utente bloccati saranno sbloccati automaticamente non appena trascorso il tempo impostato.';
 $string['lockoutemailbody'] = 'Gentile {$a->firstname},
 
-Il tuo profilo utente {$a->username} sul server \'{$a->sitename}\' è stato bloccato a causa di ripetuti tentativi di autenticazione falliti.
+Il tuo profilo utente {$a->username} sul server \'{$a->sitename}\' è stato bloccato a causa di ripetuti tentativi falliti di autenticazione.
 
 Per sbloccare il profilo puoi usare il seguente indirizzo:
 
-{$a->link}
+<a href="{$a->link}">Sblocca profilo</a>
 
-Nella maggioranza dei programmi di posta elettronica il link di solito appare colorato di blu ed è possibile fare click per utilizzarlo. Se il link non funziona, copialo ed incollalo nella barra degli indirizzi del browser.
-
-Se hai bisogno di aiuto, contatta l\'amministratore del sito: {$a->admin}';
+Se hai bisogno di aiuto, contatta l\'amministratore del sito.
+{$a->admin}';
 $string['lockoutemailsubject'] = 'Il tuo profilo utente su {$a} è stato bloccato';
 $string['lockouterrorunlock'] = 'Sono state fornite informazioni non valide per lo sblocco del profilo utente.';
 $string['lockoutthreshold'] = 'Soglia per il blocco del profilo utente';
@@ -902,6 +901,7 @@ $string['managelang'] = 'Gestione';
 $string['manageqbanks'] = 'Gestione plugin deposito domande';
 $string['manageqbehaviours'] = 'Gestione comportamenti domande';
 $string['manageqtypes'] = 'Gestione tipi domande';
+$string['marketplaceavailablenotice'] = 'Sfoglia e scarica plugin su <a href="{$a}" target="_blank" rel="noopener noreferrer">Moodle Marketplace <i class="fa fa-external-link" role="img" aria-label="Si apre in una nuova finestra" title="Si apre in una nuova finestra"></i></a>.';
 $string['maturity100'] = 'Beta';
 $string['maturity150'] = 'Release candidate';
 $string['maturity200'] = 'Versione stabile';
@@ -967,6 +967,7 @@ $string['moodlebrandedapp'] = 'Moodle app pesonalizzata';
 $string['moodlebrandedapp_help'] = '<p>La Moodle app personalizzata ha le stesse funzionalità dell\'app gratuita ma riporta logo e colori a scelta.</p>
 <a href="https://moodle.com/branded-app">Ulteriori informazioni sulla Moodle app personalizzata</a>';
 $string['moodlebrandedappreference'] = 'È anche possibile avere la <a href="https://moodle.com/branded-app/">Branded Moodle app</a> con il proprio logo e colori.';
+$string['moodlenetremovalwarning'] = 'Il servizio MoodleNet verrà disattivato il 20 aprile 2026. Se si desidera continuare a utilizzare MoodleNet sul proprio sito, installare il plugin MoodleNet dal repository GitHub di Moodle HQ <a href="https://github.com/moodlehq/moodle-tool_moodlenet" target="_blank">Moodle HQ</a> e collegarlo a un\'istanza MoodleNet self-hosted. Successivamente, il campo ID profilo MoodleNet verrà rimosso; se si utilizzano questi dati per altri scopi, si prega di migrarli.';
 $string['moodlepartners'] = 'Moodle Partner';
 $string['moodlepartners_help'] = '<p>I Moodle Partner sono aziende che forniscono servizi di alta qualità su Moodle, certificati dal Moodle HQ.</p>
 <a href="https://moodle.com/about-partners/">I nostri Partner</a><br />
@@ -1177,7 +1178,7 @@ $string['purgecachesconfirm'] = 'Moodle può tenere in cache temi, javascript, s
 $string['purgecachesfinished'] = 'Tutte le cache sono state svuotate';
 $string['purgecachesnoneselected'] = 'Seleziona le cache da svuotare';
 $string['purgecachespage'] = 'Svuota cache';
-$string['purgefiltercache'] = 'Filtri del testo';
+$string['purgefiltercache'] = 'Filtri testo';
 $string['purgejscache'] = 'JavaScript';
 $string['purgelangcache'] = 'Stringhe di lingua';
 $string['purgemuc'] = 'Tutte le cache MUC';

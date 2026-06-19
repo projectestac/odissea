@@ -61,5 +61,5 @@ $string['ratinginvalid'] = 'A avaliação não é válida';
 $string['ratings'] = 'Avaliações';
 $string['ratingtime'] = 'Restringir a avaliação para itens de um intervalo de datas';
 $string['rolewarning'] = 'Papéis com permissão para avaliar';
-$string['rolewarning_help'] = 'Os papeis com permissão para avaliar são papeis com a permissão moodle/rating:rate além de quaisquer capacidades de avaliação específicas da atividade. Pode dar permissão a mais papeis para avaliar via página Permissões.';
+$string['rolewarning_help'] = 'Os papeis com permissão para avaliar são papeis com a permissão moodle/rating:rate além de quaisquer permissões de avaliação específicas da atividade. Pode dar permissão a mais papeis para avaliar via página Permissões.';
 $string['scaleselectionrequired'] = 'Quando selecionar um tipo de agregação de avaliações, também deverá selecionar se vai usar uma escala ou definir uma pontuação máxima.';

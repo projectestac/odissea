@@ -82,6 +82,7 @@ $string['not_all_expected_set'] = 'Tamamlanan tüm etkinliklerin "{$a}" tarih ay
 $string['now_indicator'] = 'Şu an';
 $string['overview'] = 'Öğrencilere genel bakış';
 $string['pluginname'] = 'Tamamlama Durumu';
+$string['privacy:metadata'] = 'Tamamlama durum bloğu yalnızca mevcut tamamlama verilerini görüntüler.';
 $string['progress'] = 'İlerleme';
 $string['progressbar'] = 'Tamamlama Durumu';
 $string['selectitem'] = '\'{$a}\' seçeneğini seçin';

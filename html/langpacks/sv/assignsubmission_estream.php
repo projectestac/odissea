@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['default'] = 'Aktiverad som standard';
 $string['upload'] = 'Ladda upp video eller audiofil';

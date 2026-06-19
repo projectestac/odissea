@@ -110,7 +110,7 @@ function rcommon_get_wsdl_namespace($urlwdsl) {
     try {
         $wsdlcontents = rcommon_get_wsdl($urlwdsl);
         $xml = simplexml_load_string($wsdlcontents);
-        return (string)$xml['targetNamespace'];
+        return !empty($xml['targetNamespace']) ? (string)$xml['targetNamespace'] : 'no_namespace';
     } catch (Throwable $e) {
         return false;
     }

@@ -26,4 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['statusdisabled'] = 'Inhabilitat';
+$string['unenrolselfconfirm'] = 'Confirmeu que voleu cancel·lar la vostra inscripció al curs «{$a}»?';
+$string['unenroluser'] = 'Confirmeu que voleu cancel·lar la inscripció de la persona usuària «{$a->user}» al curs «{$a->course}»?';
 $string['wsnoinstance'] = 'La instància del connector d\'inscripció SAML no existeix o està inhabilitada per al curs (ID = {$a->courseid})';

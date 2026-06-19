@@ -29,6 +29,13 @@ require_once('lib.php');
 
 redirect_if_major_upgrade_required();
 
+// XTEC ************ AFEGIT - Allow CORS from web.additioapp.com.
+// 2026.06.04 @aginard
+header('Access-Control-Allow-Origin: https://web.additioapp.com');
+header('Access-Control-Allow-Headers: range');
+header('Access-Control-Expose-Headers: Content-Range');
+// ***************** FI
+
 $testsession = optional_param('testsession', 0, PARAM_INT); // test session works properly
 $anchor      = optional_param('anchor', '', PARAM_RAW);     // Used to restore hash anchor to wantsurl.
 $loginredirect = optional_param('loginredirect', 1, PARAM_BOOL);   // Used to bypass alternateloginurl.

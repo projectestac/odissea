@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['countparticipantsfound'] = 'Nombre de participants que s\'han trobat: {$a}';
 $string['filterbykeyword'] = 'Paraula clau';
-$string['moodlenetprofile'] = 'Perfil de MoodleNet';
+$string['moodlenetprofile'] = 'ID del perfil de MoodleNet';
 $string['moodlenetprofile_help'] = 'El vostre ID de perfil de MoodleNet enllaça el vostre perfil de MoodleNet amb aquest lloc.';
 $string['placeholdertype'] = 'Tipus...';
 $string['privacy:courserequestpath'] = 'Cursos sol·licitats';
@@ -75,8 +75,8 @@ $string['privacy:metadata:lastaccess'] = 'El temps que l\'usuari va accedir per 
 $string['privacy:metadata:lastaccesstablesummary'] = 'Informació sobre l\'última vegada que un usuari va accedir a un curs.';
 $string['privacy:metadata:lastip'] = 'Darrera adreça IP de l\'usuari.';
 $string['privacy:metadata:lastlogin'] = 'L\'últim inici de sessió d\'aquest usuari.';
-$string['privacy:metadata:lastname'] = 'Cognom de l\'usuari.';
-$string['privacy:metadata:lastnamephonetic'] = 'Detalls fonètics sobre el cognom de l\'usuari.';
+$string['privacy:metadata:lastname'] = 'El cognom de l\'usuari.';
+$string['privacy:metadata:lastnamephonetic'] = 'Els detalls fonètics del cognom de l\'usuari.';
 $string['privacy:metadata:maildigest'] = 'Un paràmetre per al resum del correu d\'aquest usuari.';
 $string['privacy:metadata:maildisplay'] = 'Una preferència per a l\'usuari sobre mostrar la seva adreça de correu electrònic a altres usuaris.';
 $string['privacy:metadata:middlename'] = 'El nom del mig de l\'usuari';

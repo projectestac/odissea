@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['notcomplete'] = 'Inte fullständig';
 $string['precheck'] = 'Förhandsgranska';

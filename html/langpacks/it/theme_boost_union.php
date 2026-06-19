@@ -202,8 +202,6 @@ $string['coursetab'] = 'Corso';
 $string['cssh5pheading'] = 'CSS grezzo per H5P';
 $string['cssh5psetting'] = 'CSS grezzo per H5P';
 $string['cssh5psetting_desc'] = 'Utilizza questo campo per fornire il codice CSS che sarà applicato alla presentazione dei contenuti H5P da parte di mod_h5p e mod_hvp. Consultare i tipi di contenuto H5P per trovare i selettori CSS necessari.';
-$string['customfontsfileurlpersistent'] = 'URL (persistene)';
-$string['customfontsfileurlrevisioned'] = 'URL (revisionato)';
 $string['customfontsheading'] = 'Font personalizzati';
 $string['customfontslistsetting'] = 'Lista dei font personalizzati';
 $string['customfontslistsetting_desc'] = 'Questo è l\'elenco dei font caricati nell\'area dei file dei font personalizzati. Gli snippet CSS forniti possono essere usati per aggiungere questi font al vostro SCSS personalizzato. Si noti che per ora è necessario occuparsi del valore del formato dei font e delle proprietà CSS font-family, font-style e font-weight, poiché Boost Union non è ancora in grado di analizzare i file dei font.';
@@ -259,7 +257,6 @@ $string['enablepage3setting'] = 'Abilita pagina generica 3';
 $string['error:infobannerdismissnonotdismissible'] = 'Il banner informativo non è dismissibile';
 $string['error:infobannerdismissnonotvalid'] = 'Il numero del banner informativo fornito non è valido';
 $string['faviconheading'] = 'Favicon';
-$string['faviconheading_desc'] = 'Nota bene: Boost Union ha un proprio upload di favicon e non utilizza la favicon di <a href="{$a}">Impostazione favicon di Moodle core</a>.<br />Boost Union permette in particolare di sovrascrivere la favicon caricata all\'interno dei suoi flavour.';
 $string['faviconsetting'] = 'Favicon';
 $string['faviconsetting_desc'] = 'Qui è possibile caricare un\'immagine personalizzata (formato .ico o .png) che il browser mostrerà come favicon del sito web di Moodle. Se non viene caricata alcuna favicon personalizzata, verrà utilizzata la favicon standard di Moodle.';
 $string['flavoursappliesto'] = 'Applica a';
@@ -385,7 +382,6 @@ Ad esempio:<br/>
 background-image-1.jpg|Copyright: CC0|dark<br/>
 Come colore del testo, si possono usare i valori "dark" o "light".<br />
 È possibile dichiarare i testi per un numero arbitrario di immagini di sfondo di login caricate. I testi saranno aggiunti solo alle immagini il cui nome di file corrisponde all\'identificatore dichiarato in questa impostazione.';
-$string['loginformheading'] = 'Maschera di autenticazione';
 $string['loginformpositionsetting'] = 'Posizione maschera di autenticazione';
 $string['loginformpositionsetting_center'] = 'Centrato';
 $string['loginformpositionsetting_desc'] = 'Con questa impostazione, è possibile ottimizzare la maschera di autenticazione per adattarla a una maggiore varietà di immagini di sfondo. Per impostazione predefinita, la maschera di autenticazione viene visualizzata al centro della pagina di login. In alternativa, è possibile spostarla a sinistra o a destra della pagina di login per far risaltare altre parti dell\'immagine di sfondo. Naturalmente, è possibile modificare questa impostazione anche se non sono state caricate immagini di sfondo.';
@@ -399,7 +395,6 @@ $string['logocompactsetting_desc'] = 'Qui è possibile caricare una versione com
 $string['logosetting'] = 'Logo';
 $string['logosetting_desc'] = 'Qui è possibile caricare un logo completo da utilizzare come decorazione. Questa immagine viene utilizzata soprattutto nella pagina di login. L\'immagine può essere ad alta risoluzione, perché verrà ridimensionata per l\'uso.';
 $string['logosheading'] = 'Loghi';
-$string['logosheading_desc'] = 'Nota bene: Boost Union ha un proprio logo da caricare e non utilizza il logo di <a href="{$a}">Impostazione logo di Moodle core</a>.<br />Boost Union permette di caricare più formati di immagine rispetto a quelli consentiti da Moodle Core e permette di sovrascrivere i loghi caricati all\'interno dei suoi flavour.';
 $string['maintenancecontentsetting'] = 'Contenuto pagina "Informazioni sulla manutenzione"';
 $string['maintenancecontentsetting_desc'] = 'In questa impostazione, è possibile aggiungere contenuto in formato rich text che verrà mostrato nella pagina "Informazioni sulla manutenzione".';
 $string['maintenancedisabled'] = 'La pagina "Informazioni sulla manutenzione" è disattivata per questo sito. Non c\'è nulla da vedere qui.';
@@ -435,7 +430,6 @@ $string['modiconnamefail'] = 'Questo file è stato caricato nella cartella corre
 $string['modiconnotexist'] = 'Questo file è stato caricato in una posizione non idonea, poiché è impossibile dedurre una particolare attività dal percorso del file <em>{$a}</em>.';
 $string['modiconsenablesetting'] = 'Abilita icone personalizzate per attività e risorse';
 $string['modiconsenablesetting_desc'] = 'Con questa impostazione è possibile modificare le icone delle attività e delle risorse utilizzate da Moodle nelle pagine del corso e nel selezionatore di attività.';
-$string['modiconserrorcreatingpath'] = 'Non è stato possibile creare la cartella pix_plugins/mod nella directory Moodledata.<br />Il messaggio di eccezione era:{$a}.';
 $string['modiconsfiles'] = 'File delle icone personalizzate';
 $string['modiconsfiles_desc'] = 'Qui puoi caricare icone personalizzate per tutti o solo alcuni moduli di attività installati in questa istanza di Moodle.';
 $string['modiconsfileshowto'] = 'Per caricare l\'icona di una particolare attività personalizzata, si inizia creando una cartella con il nome interno dell\'attività, ad esempio <em>assign</em> per l\'attività compito. In questa cartella, si carica l\'icona come file SVG chiamato monologo.svg e, se possibile, come file PNG di riserva chiamato monologo.png. Se si desidera personalizzare le icone colorate che sono state utilizzate fino a Moodle 3 e che potrebbero essere ancora utilizzate dai vecchi plugin, è possibile caricarle anche come file icon.svg e icon.png. Tuttavia, per ottenere risultati migliori, si consiglia di attenersi a icone SVG monocromatiche. Quindi, salvare la pagina delle impostazioni. Una volta salvate le impostazioni con almeno un file, apparirà un elenco di file che vi aiuterà a verificare se le icone personalizzate sono state caricate correttamente.';
@@ -448,8 +442,6 @@ $string['navbarcolorsetting'] = 'Colore barra di navigazione';
 $string['navbarcolorsetting_dark'] = 'Barra di navigazione scura con colore del carattere chiaro';
 $string['navbarcolorsetting_desc'] = 'Con questa impostazione, puoi cambiare il colore della barra di navigazione dalla barra di navigazione chiara predefinita a quella scura o colorata.';
 $string['navbarcolorsetting_light'] = 'Barra di navigazione chiara con colore del carattere scuro (invariato come presentato da Moodle Core)';
-$string['navbarcolorsetting_primarydark'] = 'Barra di navigazione nel colore primario con colore del carattere chiaro';
-$string['navbarcolorsetting_primarylight'] = 'Barra di navigazione nel colore primario con colore del carattere scuro';
 $string['navbarheading'] = 'Barra di navigazione';
 $string['navigationheading'] = 'Navigazione';
 $string['navigationtab'] = 'Navigazione';
@@ -527,7 +519,6 @@ $string['region-footer-center'] = 'Footer (center)';
 $string['region-footer-left'] = 'Footer (a sinistra)';
 $string['region-footer-right'] = 'Footer (a destra)';
 $string['region-header'] = 'Header';
-$string['region-none'] = 'Nessuna';
 $string['region-offcanvas-center'] = 'Off-canvas (center)';
 $string['region-offcanvas-left'] = 'Off-canvas (a sinistra)';
 $string['region-offcanvas-right'] = 'Off-canvas (a destra)';

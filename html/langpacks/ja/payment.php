@@ -27,9 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['accountarchived'] = 'アーカイブ済み';
 $string['accountconfignote'] = 'このアカウントの支払いゲートウェイは分けて設定されます。';
-$string['accountdeleteconfirm'] = 'このアカウントに前の支払いがある場合、アーカイブされます。そうでない場合、設定データは完全に削除されます。本当に続けてもよろしいですか?';
+$string['accountdeleteconfirm'] = 'このアカウントに前の支払いがある場合、アーカイブされます。そうではない場合、設定データは完全に削除されます。本当に続けてもよろしいですか?';
 $string['accountidnumber'] = 'IDナンバ';
-$string['accountidnumber_help'] = 'IDナンバは外部システムとのアカウントのマッチングのみに使用されます。サイト内で表示されることはありません。アカウントに公式コード名がある場合、それを入力できます。そうでない場合、空白のままにできます。';
+$string['accountidnumber_help'] = 'IDナンバは外部システムとのアカウントのマッチングのみに使用されます。サイト内で表示されることはありません。アカウントに公式コード名がある場合、それを入力できます。そうではない場合、空白のままにできます。';
 $string['accountname'] = 'アカウント名';
 $string['accountname_help'] = '支払いを設定する教師またはマネージャによるこのアカウントの識別方法です (例 コース登録プラグイン)。';
 $string['accountnotavailable'] = '利用不可';

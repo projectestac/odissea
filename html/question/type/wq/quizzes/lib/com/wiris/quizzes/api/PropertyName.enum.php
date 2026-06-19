@@ -1,6 +1,6 @@
 <?php
 
-class com_wiris_quizzes_api_PropertyName extends Enum {
+class com_wiris_quizzes_api_PropertyName extends HxEnum {
 	public static $ANSWER_FIELD_TYPE;
 	public static $AUXILIARY_CAS_HIDE_FILE_MENU;
 	public static $AUXILIARY_TEXT;

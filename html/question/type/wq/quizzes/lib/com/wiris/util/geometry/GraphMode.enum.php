@@ -1,6 +1,6 @@
 <?php
 
-class com_wiris_util_geometry_GraphMode extends Enum {
+class com_wiris_util_geometry_GraphMode extends HxEnum {
 	public static $BAR_CHART;
 	public static $BOX_PLOT;
 	public static $HISTOGRAM;

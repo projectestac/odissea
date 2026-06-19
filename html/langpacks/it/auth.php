@@ -91,10 +91,13 @@ $string['emailnowexists'] = 'L\'indirizzo email che hai cercato di assegnare al 
 $string['emailupdate'] = 'Modifica indirizzo email';
 $string['emailupdatemessage'] = 'Gentile {$a->firstname},
 
-hai richiesto la modifica dell\'indirizzo email del tuo account sul sito {$a->site}. Per confermare la richiesta, apri il link seguente con il browser:
+Hai richiesto la modifica dell\'indirizzo email per il tuo account su {$a->site}.
 
-{$a->url}
-Il link di conferma scadrà dopo <b>10 minuti</b>.
+Per confermare la modifica, clicca sul link qui sotto:
+
+<a href="{$a->url}">Conferma la modifica dell\'email</a>
+
+Il link di conferma scadrà tra <strong>10 minuti</strong>.
 
 {$a->supportemail}';
 $string['emailupdatesuccess'] = 'L\'indirizzo email dell\'utente <em>{$a->fullname}</em> è stato modificato in <em>{$a->email}</em>.';

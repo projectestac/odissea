@@ -116,6 +116,8 @@ $string['deletedisabled'] = 'Aquest element no es pot esborrar';
 $string['deletedresp'] = 'S\'ha esborrat la resposta';
 $string['deleteresp'] = 'Esborra aquesta resposta';
 $string['deletingresp'] = 'S\'està esborrant la resposta';
+$string['deletionquetions'] = 'Àrea de supressió de preguntes';
+$string['deletionquetions_help'] = 'Les preguntes suprimides o altrament òrfenes no s\'esborren de manera directa ni immediata; primer es mouen aquí. Les preguntes es poden suprimir permanentment de manera manual (clicant la icona «X») o de manera automàtica (el sistema elimina qualsevol pregunta després d\'una setmana). Cal utilitzar el botó de la fletxa cap amunt per restaurar una pregunta.';
 $string['dependencies'] = 'Dependències';
 $string['dependquestion'] = 'Pregunta mare';
 $string['dependquestion_help'] = 'Podeu seleccionar una pregunta mare i una opció d\'elecció per a aquesta pregunta. Només es mostrarà a l\'estudiant una pregunta filla si la seva pregunta mare i la seva opció mare s\'han seleccionat prèviament.';
@@ -207,6 +209,7 @@ $string['fieldlength'] = 'Longitud del quadre de text';
 $string['fieldlength_help'] = 'Per a les preguntes del tipus **Quadre d\'edició**, indiqueu la **Longitud del quadre d\'edició** i la **Longitud màxima del text** del text que s\'hagi de lliurar com a resposta.
 
 Els valors predefinits són 20 caràcters per al quadre d\'edició i 25 caràcters per a la longitud màxima del text.';
+$string['file'] = 'Fitxer';
 $string['finished'] = 'Heu respost totes les preguntes d\'aquesta enquesta.';
 $string['firstrespondent'] = 'Primer enquestat';
 $string['formateditor'] = 'Editor HTML';

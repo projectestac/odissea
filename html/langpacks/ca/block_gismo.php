@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['completion_completed_on_tooltip_months'] = '[\'gen.\',\'febr.\',\'març\',\'abr.\',\'maig\',\'juny\',\'jul.\',\'ag.\',\'set.\',\'oct.\',\'nov.\',\'des.\']';
 $string['completion_resource_menu'] = 'Recursos';
 $string['details'] = 'Detalls';
 $string['exit'] = 'Surt';

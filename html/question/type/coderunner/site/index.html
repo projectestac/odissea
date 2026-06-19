@@ -3432,7 +3432,7 @@ a course before attempting to run the scripts.</p>
     preview of it. The selected subset of questions can be exported in a
     custom compressed form as JSON or CSV.</li>
 </ol>
-<h1 id="1-ltmoodle_homegtquestiontypecoderunnerbulktestindexphp">1. <code>&amp;lt;moodle_home&amp;gt;/question/type/coderunner/bulktestindex.php</code></h1>
+<h1 id="1-ltmoodle_homegtquestiontypecoderunnerbulktestphp">1. <code>&amp;lt;moodle_home&amp;gt;/question/type/coderunner/scripts/bulktest.php</code></h1>
 <ol>
 <li>
 <p><code>&lt;moodle_home&gt;/question/type/coderunner/questionbrowserindex.php</code>
@@ -3450,7 +3450,7 @@ a course before attempting to run the scripts.</p>
     custom compressed form as JSON or CSV.</p>
 </li>
 <li>
-<p><code>&lt;moodle_home&gt;/question/type/coderunner/bulktestindex.php</code></p>
+<p><code>&lt;moodle_home&gt;/question/type/coderunner/scripts/bulktest.php</code></p>
 <blockquote>
 <blockquote>
 <blockquote>
@@ -3475,15 +3475,16 @@ a course before attempting to run the scripts.</p>
 </blockquote>
 </li>
 <li>
-<p><code>&lt;moodle_home&gt;/question/type/coderunner/prototypeusageindex.php</code>
-    This scripts displays an index like the one above except that the
-    clickable links now run a script that reports on the question prototype
-    usage within that category.</p>
+<p><code>&lt;moodle_home&gt;/question/type/coderunner/scripts/prototypeusage.php</code>
+    When called without parameters, this script displays an index of all
+    accessible courses/contexts. Clicking a link then shows a report of
+    question prototype usage within that context.</p>
 </li>
 <li>
-<p><code>&lt;moodle_home&gt;/question/type/coderunner/cachepurgeindex.php</code>
-    This script displays a list of contexts in which the grade cache has
-    entries, allowing manual purging of all entries in that context.</p>
+<p><code>&lt;moodle_home&gt;/question/type/coderunner/scripts/cachepurge.php</code>
+    When called without parameters, this script lists all contexts in which
+    the grade cache has entries, with buttons to purge old or all entries.
+    Clicking a button then performs the purge for that context.</p>
 </li>
 <li>
 <p><code>&lt;moodle_home&gt;/question/type/coderunner/downloadquizattempts.php</code>

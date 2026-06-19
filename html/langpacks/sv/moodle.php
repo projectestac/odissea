@@ -199,7 +199,7 @@ $string['backupdaterecordtype'] = '<br />{$a->recordtype} - {$a->recordname}<br 
 $string['backupdetails'] = 'Detaljer för säkerhetskopia';
 $string['backuperrorinvaliddestination'] = 'Målkatalogen för säkerhetskopiering finns inte eller så är den inte skrivbar.';
 $string['backupexecuteathelp'] = 'Välj vid vilken tid automatiska säkerhetskopieringar ska genomföras.';
-$string['backupfailed'] = 'Vissa kurser sparades inte!';
+$string['backupfailed'] = 'Vissa av dina kurser sparades inte.';
 $string['backupfilename'] = 'säkerhetskopia';
 $string['backupfinished'] = 'Säkerhetskopieringen slutfördes';
 $string['backupfromthissite'] = 'Har den den här webbplatsen säkerhetskopierats?';
@@ -381,7 +381,7 @@ $string['courseadministration'] = 'Kursadministration';
 $string['courseapprovedemail'] = 'Den kurs du har efterfrågat, <a href="{$a->url}">{$a->name}</a>, har godkänts och du har gjorts till {$a->teacher} för den';
 $string['courseapprovedemail2'] = 'Den kurs du har efterfrågat, {$a->name}, har godkänts:  <a href="{$a->url}">{$a->name}</a>.';
 $string['courseapprovedfailed'] = 'Det gick inte att spara kursen som godkänd!';
-$string['courseapprovedsubject'] = 'Din kurs har blivit godkänd!';
+$string['courseapprovedsubject'] = 'Din kurs har blivit godkänd.';
 $string['courseavailable'] = 'Den här kursen är tillgänglig för studenter.';
 $string['courseavailablenot'] = 'Den här kursen är inte tillgänglig för studenter.';
 $string['coursebackup'] = 'Säkerhetskopiering av kurs';
@@ -695,21 +695,16 @@ $string['emailagain'] = 'E-post (igen)';
 $string['emailalreadysent'] = 'Ett meddelande om lösenordsåterställning har redan skickats. Vänligen kontrollera din epost.';
 $string['emailcharset'] = 'Teckenuppsättning för e-post';
 $string['emailconfirm'] = 'Bekräfta konto';
-$string['emailconfirmation'] = 'Hej {$a->firstname}!
+$string['emailconfirmation'] = 'Hej {$a->firstname},
 
-Ett nytt konto har begärts på \'{$a->sitename}\'
-med din e-postadress.
+Ett nytt konto har skapats på ’{$a->sitename}’ med din e-postadress.
 
-För att bekräfta ditt nya konto, gå till denna webbadress:
+Klicka på länken nedan för att bekräfta ditt nya konto:
 
-{$a->link}
+<a href="{$a->link}">Bekräfta ditt konto</a>
 
-I de flesta e-postprogram bör detta visas som en blå länk
-som du kan klicka på. Om det inte fungerar,
-klipp ut och klistra in adressen i adressfältet
-längst upp i webbläsarfönstret.
 
-Om du behöver hjälp, kontakta webbplatsens administratör,
+Om du behöver hjälp, kontakta webbplatsadministratören,
 {$a->admin}';
 $string['emailconfirmationresend'] = 'Skicka om bekräftelsemejl';
 $string['emailconfirmationsubject'] = '{$a}: bekräftelse av konto';
@@ -752,20 +747,15 @@ $string['emailnotallowed'] = 'E-postadresser i de här domänerna är inte till�
 $string['emailnotfound'] = 'Det gick inte att hitta e-postadressen i databasen.';
 $string['emailonlyallowed'] = 'Den här e-postdomänen kan inte användas. Tillåtna epostdomäner är: {$a}.';
 $string['emailpasswordchangeinfo'] = 'Hej {$a->firstname},
-Någon (troligen du) har beställt ett nytt lösenord för ditt konto hos
-\'{$a->sitename}\'.
 
-För att byta lösenordet, gå till följande adress:
+Någon (troligen du) har begärt ett nytt lösenord för ditt konto ”{$a->username}” på ”{$a->sitename}”.
 
-{$a->link}
+Klicka på länken nedan för att byta lösenord:
 
-I de flesta e-postprogram kommer den att visas som en blå länk som du bara behöver klicka på.
+<a href="{$a->link}">Byt lösenord</a>
 
-Om det inte fungerar, kan du klippa ut adressen och klistra in den i adressfönstret på din webbläsare, klicka sedan på Gå eller tryck på
-radmatningen (Enter).
 
-Om du behöver hjälp så är du välkommen att
-kontakta den som är ansvarig för webbplatsen,
+Om du behöver hjälp, kontakta webbplatsadministratören.
 {$a->admin}';
 $string['emailpasswordchangeinfodisabled'] = 'Hej {$a->firstname},
 Någon (troligen du) har beställt
@@ -792,26 +782,16 @@ Var god kontakta administratören
 för webbplatsen:
 {$a->admin}';
 $string['emailpasswordchangeinfosubject'] = '{$a}: information om byte av lösenord';
-$string['emailpasswordconfirmation'] = 'Hej {$a->firstname}!
+$string['emailpasswordconfirmation'] = 'Hej {$a->firstname},
 
-Någon (antagligen du) har beställt ett nytt lösenord till ditt konto på: \'{$a->sitename}\'.
+Någon (troligen du) har begärt ett nytt lösenord till ditt konto på ’{$a->sitename}’.
 
-Om du vill bekräfta detta och att vi ska skicka
-det nya lösenordet med e-post så behöver du koppla
-upp dig till den följande webbadressen:
+För att bekräfta detta och få ett nytt lösenord skickat till dig via e-post, klicka på länken nedan:
 
-{$a->link}
+<a href="{$a->link}">Skaffa ett nytt lösenord</a>
 
-I de flesta e-postprogram kommer den att visas som
-en blå länk som du bara behöver klicka på.
 
-Om det inte fungerar, kan du klippa ut adressen
-här och klistra in den i adressfönstret på din
-webbläsare, klicka sedan på Gå eller tryck på
-radmatningen (Enter).
-
-Om du behöver hjälp så är du välkommen att
-kontakta den som är ansvarig för webbplatsen,
+Om du behöver hjälp, kontakta webbplatsadministratören.
 {$a->admin}';
 $string['emailpasswordconfirmationsubject'] = '{$a}: bekräftelse av ändrat lösenord';
 $string['emailpasswordconfirmmaybesent'] = '<p>Om du angav ett korrekt användarnamn eller en unik e-postadress skickas ett e-postmeddelande till dig.</p>
@@ -839,18 +819,21 @@ lösenordet till din adress på:
 Det nya lösenordet har skapats automatiskt -
 och du kanske vill <a href="{$a->link}">byta ditt
 lösenord</a> till något som är lättare att komma ihåg.';
-$string['emailresetconfirmation'] = 'Hej {$a->firstname}!
+$string['emailresetconfirmation'] = 'Hej {$a->firstname},
 
-En lösenordsåterställning har begärts för ditt konto \'{$a->username}\' på {$a->sitename}.
+En begäran om återställning av lösenord har skickats in för ditt konto ”{$a->username}” på {$a->sitename}.
 
-För att bekräfta återställningen och ange ett nytt lösenord för ditt konto, gå till följande webbadress:
-<a href="{$a->link}">{$a->link}</a>
+För att bekräfta denna begäran och ange ett nytt lösenord för ditt konto, klicka på länken nedan:
 
-(Den här länken är giltig i {$a->resetminutes} minuter från det att denna återställning begärdes.)
+<a href="{$a->link}">Återställ lösenord</a>
 
-Om denna lösenordsåterställning inte begärdes av dig, behövs ingen åtgärd.
 
-Om du behöver hjälp, kontakta webbplatsens administratör, {$a->admin}';
+(Denna länk är giltig i {$a->resetminutes} minuter från det att återställningen först begärdes.)
+
+Om du inte har begärt denna återställning av lösenordet behöver du inte göra något.
+
+Om du behöver hjälp, vänligen kontakta webbplatsadministratören.
+{$a->admin}';
 $string['emailresetconfirmationsubject'] = '{$a}: Begäran om återställning av lösenord';
 $string['emailresetconfirmsent'] = 'Ett epostmeddelande har skickats till din adress <b>{$a}</b>.
 <br />Det innehåller enkla instruktioner för att bekräfta och slutföra det här bytet av lösenord.
@@ -1012,14 +995,14 @@ $string['force'] = 'Tvinga';
 $string['forcelanguage'] = 'Tvinga språkval';
 $string['forceno'] = 'Tvinga inte';
 $string['forcepasswordchange'] = 'Påtvinga lösenordsbyte';
-$string['forcepasswordchange_help'] = 'Om kryssrutan är markerad uppmanas användaren byta lösenord vid nästa inloggning';
+$string['forcepasswordchange_help'] = 'Om kryssrutan är markerad uppmanas användaren byta lösenord vid nästa inloggning.';
 $string['forcepasswordchangecheckfull'] = 'Är du helt säker på att du vill göra en ändring av lösenord till {$a}?';
 $string['forcepasswordchangenot'] = 'Det gick inte att tvinga ett lösenordbyte {$a}';
 $string['forcepasswordchangenotice'] = 'Du måste byta ditt lösenord för att fortsätta.';
 $string['forcepasswordresetfailurenotice'] = 'Ditt nuvarande lösenord uppfyller inte längre kraven i den angivna lösenordsprincipen. Kontakta din Moodle-administratör för att få hjälp.
   {$a}';
-$string['forcepasswordresetnotice'] = 'Ditt nuvarande lösenord uppfyller inte längre kraven i den angivna lösenordsprincipen. Du behöver återställa ditt lösenord för att logga in.
-  {$a}';
+$string['forcepasswordresetnotice'] = 'Ditt nuvarande lösenord uppfyller inte längre lösenordsreglerna. Du måste återställa ditt lösenord för att kunna logga in.
+   {$a}';
 $string['forcetheme'] = 'Tvinga tema';
 $string['forgotaccount'] = 'Glömt lösenordet?';
 $string['forgotten'] = 'Glömt användarnamn eller lösenord?';
@@ -1296,6 +1279,7 @@ $string['loginalready'] = 'Du är redan inloggad.';
 $string['loginas'] = 'Logga in som';
 $string['loginaspasswordexplain'] = '<p>Du måste mata in det specifika "logga in som, lösenord" för att kunna utnyttja den här egenskapen.<br />Om du inte kan lösenordet, kontakta administratören.</p>';
 $string['loginguest'] = 'Logga in som gäst';
+$string['loginrequired'] = 'Inloggning krävs';
 $string['loginsite'] = 'Logga in på webbplatsen';
 $string['loginsteps'] = 'För att få full åtkomst till denna webbplats måste du först skapa ett konto.';
 $string['loginstepsnone'] = 'Hej!
@@ -1346,6 +1330,7 @@ $string['maximumgradex'] = 'Maxbetyg: {$a}';
 $string['maximumshort'] = 'Max';
 $string['maximumupload'] = 'Maximal storlek på uppladdade filer.';
 $string['maximumupload_help'] = 'Den maximala filstorleken som tillåts för studentuppladdningar till kursen. Dessutom kan du ytterligare begränsa den maximala uppladdningsstorleken för varje aktivitet.';
+$string['maxlengthreached'] = 'Det maximala antalet tecken för {$a} har uppnåtts.';
 $string['maxnumberweeks'] = 'Maximalt antal sektioner';
 $string['maxnumberweeks_desc'] = 'Det maximala värdet i listrutan "Antal sektioner" (gäller endast för vissa kursformat).';
 $string['maxnumcoursesincombo'] = 'Bläddra <a href="{$a->link}">{$a->numberofcourses} kurser</a>';
@@ -1438,7 +1423,7 @@ $string['modvisiblewithstealth_help'] = '* Visa på kurssidan: Tillgänglig för
 $string['month'] = 'Månad';
 $string['months'] = 'Månader';
 $string['moodledocs'] = 'Moodle-dokumentation';
-$string['moodledocslink'] = 'Hjälp och dokumentation';
+$string['moodledocslink'] = 'Dokumentation för denna sida';
 $string['moodlelogo'] = 'Moodie-logotyp';
 $string['moodlenet:cannotconnecttoserver'] = 'Kunde inte koppla upp mot MoodleNet-servern';
 $string['moodlenet:columnname'] = 'Namn';
@@ -1530,15 +1515,15 @@ $string['newaccount'] = 'Nytt konto';
 $string['newactivityname'] = 'Nytt namn för aktiviteten {$a}';
 $string['newcourse'] = 'Ny kurs';
 $string['newloginnotificationbodyfull'] = '<p>Hej {$a->userfullname},</p>
-<p>Ditt {$a->sitename}-konto användes precis för att logga in från en annan enhet.</p>
+<p>Någon har just loggat in på ditt {$a->sitename}-konto från en ny enhet.</p>
 <ul>
-<li>Konto: {$a->username} {$a->useremail}</li>
+<li>Ditt konto: {$a->username} {$a->useremail}</li>
 <li>{$a->logintime}</li>
 <li>Enhet: {$a->logindevice}</li>
 <li>IP: {$a->loginip}</li>
 </ul>
-<p>Om detta är du behöver du inte göra något.</p>
-<p>Om det <strong>inte</strong> är du, vänligen <a href="{$a->changepasswordlink}">ändra ditt lösenord</a></p>';
+<p>Om det var du som gjorde detta behöver du inte göra något.</p>
+<p>Om du inte känner igen denna aktivitet, vänligen <a href="{$a->changepasswordlink}">ändra ditt lösenord</a>.</p>';
 $string['newloginnotificationbodysmall'] = 'Ditt {$a}-konto användes precis för att logga in från en annan enhet.';
 $string['newloginnotificationtitle'] = 'Ny inloggning till ditt {$a}-konto';
 $string['newpassword'] = 'Nytt lösenord';
@@ -1575,19 +1560,19 @@ Om ett nyhetsforum inte krävs i kursen, bör den här inställningen anges till
 Den här inställningen avgör hur många \'senaste nyheter\' som ska visas i blocket Senaste nyheter.';
 $string['newuser'] = 'Ny användare';
 $string['newusernewpasswordsubj'] = 'Nytt användarkonto';
-$string['newusernewpasswordtext'] = 'Hej {$a->firstname}!
+$string['newusernewpasswordtext'] = 'Hej {$a->firstname},
 
-Ett konto har skapats åt dig på \'{$a->sitename}\'.
+Ett konto har skapats åt dig på ’{$a->sitename}’.
 
- användarnamn: {$a->username}
- lösenord: {$a->newpassword}
+   användarnamn: {$a->username}
+   lösenord: {$a->newpassword}
 
-(Du kommer att bli ombedd att ändra ditt lösenord när du loggar in för första gången.)
+(Du kommer att uppmanas att byta lösenord när du loggar in för första gången.)
 
-För att börja använda \'{$a->sitename}\', logga in på
- {$a->link}
 
-Om du behöver hjälp, kontakta webbplatsens administratör,
+<a href="{$a->link}">Klicka här för att logga in</a> och börja använda ’{$a->sitename}’.
+
+Om du behöver hjälp, kontakta webbplatsadministratören.
 {$a->signoff}';
 $string['newusers'] = 'Nya användare';
 $string['newwindow'] = 'Nytt fönster';
@@ -1686,8 +1671,9 @@ $string['oldpassword'] = 'Nuvarande lösenord';
 $string['olduserdirectory'] = 'Detta är den GAMLA katalogen över användare och den behövs inte längre. Du kan lugnt ta bort den. De filer som den innehåller har kopierats över till den NYA
 katalogen över användare.';
 $string['opendrawerblocks'] = 'Öppna blockmeny';
-$string['opendrawerindex'] = 'Öppna kurskatalog';
+$string['opendrawerindex'] = 'Öppna kursmenyn';
 $string['opensinnewwindow'] = 'Öppnas i nytt fönster';
+$string['opensinnewwindowbracketed'] = '(Öppnar i nytt fönster)';
 $string['operator_and'] = 'och';
 $string['operator_andnot'] = 'och';
 $string['operator_or'] = 'eller';
@@ -1734,13 +1720,13 @@ $string['passwordsenttext'] = '<p>Vi har skickat ett e-postbrev till din adress:
 $string['passwordset'] = 'Ditt lösenord har uppdaterats.';
 $string['path'] = 'Sökväg';
 $string['pathnotexists'] = 'Sökvägen finns inte på din server!';
-$string['pathslasherror'] = 'Sökvägar kan inte avslutas med snedstreck (\'/\' eller \'\\\')';
+$string['pathslasherror'] = 'Sökvägen får inte avslutas med snedstreck.';
 $string['paymentinstant'] = 'Använd knappen nedan för att betala och bli registrerad inom några minuter!';
 $string['paymentpending'] = '(<small><b><u>{$a}</u></b> avvaktande</small>)';
 $string['paymentrequired'] = 'För att få tillgång till den här kursen måste du först betala.';
 $string['payments'] = 'Betalningar';
 $string['paymentsorry'] = 'Tack för din betalning! Tyvärr är din betalning ännu inte helt färdigbehandlad och du är ännu inte registrerad för att komma in i kursen "{$a->fullname}". Försök gärna gå till kursen igen om några sekunder. Om du fortsätter att ha problem att komma åt kursen, meddela {$a->teacher} eller webbplatsadministratören.';
-$string['paymentthanks'] = 'Tack för din betalning! Du är nu registrerad på din kurs: <br />"{$a}"';
+$string['paymentthanks'] = 'Tack för din betalning! Du är nu registrerad för kursen {$a}.';
 $string['pendingrequests'] = 'Väntande förfrågningar';
 $string['percents'] = '{$a}%';
 $string['periodending'] = 'Perioden upphör ({$a})';
@@ -1891,6 +1877,7 @@ $string['remoteappuser'] = 'Fjärranvändare {$a}';
 $string['remove'] = 'Ta bort';
 $string['removeadmin'] = 'Ta bort administratör';
 $string['removecreator'] = 'Ta bort kursutvecklare';
+$string['removed'] = 'Tog bort {$a}';
 $string['removestudent'] = 'Ta bort studenter';
 $string['removeteacher'] = 'Ta bort lärare';
 $string['rename'] = 'Döp om';
@@ -2129,7 +2116,7 @@ $string['showsettings'] = 'Visa inställningar';
 $string['showtheselogs'] = 'Visa dessa loggar';
 $string['showthishelpinlanguage'] = 'Visa denna hjälp på språket: {$a}';
 $string['sidepanel'] = 'Sidopanel';
-$string['signoutofotherservices'] = 'Logga ut överallt';
+$string['signoutofotherservices'] = 'Logga ut från alla webbappar';
 $string['signoutofotherservices_help'] = 'Logga ut från alla enheter och system som använder webbtjänster, till exempel mobilappen. Webbläsarsessioner förblir aktiva.';
 $string['since'] = 'Sedan';
 $string['sincelast'] = 'sedan senaste login';
@@ -2229,6 +2216,7 @@ $string['statsuserreads'] = 'Vyer';
 $string['statsuserwrites'] = 'Inlägg';
 $string['statswrites'] = 'Inlägg';
 $string['status'] = 'Status';
+$string['statuschecks'] = 'Statuskontroller';
 $string['statuscritical'] = 'Kritiskt';
 $string['statusdone'] = 'Klar';
 $string['statuserror'] = 'Fel';
@@ -2437,7 +2425,10 @@ $string['userpreferences'] = 'Användarinställningar';
 $string['users'] = 'Användare';
 $string['userselectorautoselectunique'] = 'Om endast en användare matchar sökningen - välj den automatiskt';
 $string['userselectorpreserveselected'] = 'Behåll utvalda användare, även om de inte längre matchar sökningen';
-$string['userselectorsearchanywhere'] = 'Matcha söktexten var som helst i de visade fälten';
+$string['userselectorsearchanywhere'] = 'överallt';
+$string['userselectorsearchexactmatchonly'] = 'endast exakta träffar';
+$string['userselectorsearchfromstart'] = 'från början';
+$string['userselectorsearchmatching'] = 'Matchar:';
 $string['usersnew'] = 'Nya användare';
 $string['usersnoaccesssince'] = 'Visa användare som har varit inaktiva i mer än';
 $string['userswithfiles'] = 'Användare med filer';
@@ -2471,13 +2462,13 @@ $string['weekhide'] = 'Dölj denna vecka för {$a}';
 $string['weeklyoutline'] = 'Veckodisposition';
 $string['weeks'] = 'veckor';
 $string['weekshow'] = 'Visa denna vecka för {$a}';
-$string['welcomeback'] = 'Välkommen tillbaka, {$a->firstname}! 👋';
+$string['welcomeback'] = 'Hej, {$a->firstname}! 👋';
 $string['welcometocourse'] = 'Välkommen till {$a}';
 $string['welcometocoursetext'] = 'Välkommen till {$a->coursename}!
 
 En av de första sakerna du bör göra är att uppdatera din profilsida så att vi kan lära känna dig bättre:
 
-  {$a->profileurl}';
+<a href="{$a->profileurl}">{$a->profileurl}</a>';
 $string['welcometosite'] = 'Välkommen, {$a->firstname}! 👋';
 $string['whatforlink'] = 'Vad vill du göra med länken?';
 $string['whatforpage'] = 'Vad vill du göra med texten?';

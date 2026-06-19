@@ -82,7 +82,7 @@ $string['syncenrolmentstask'] = 'Eskuzko matrikulazioen sinkronizazio ataza';
 $string['unenrol'] = 'Desmatrikulatu erabiltzailea';
 $string['unenrolselectedusers'] = 'Desmatrikulatu aukeratutako erabiltzaileak';
 $string['unenrolselfconfirm'] = 'Ziur al zaude "{$a}" ikastarotik desmatrikulatu nahi duzula?';
-$string['unenroluser'] = 'Ziur al zaude  "{$a->user}" desmatrikulatu nahi duzula "{$a}" ikastarotik?';
+$string['unenroluser'] = 'Ziur al zaude "{$a->user}" erabiltzailea "{$a->course}" ikastarotik desmatrikulatu nahi duzula?';
 $string['unenrolusers'] = 'Desmatrikulatu erabiltzaileak';
 $string['wscannotenrol'] = 'Pluginaren instantziak ezin du erabiltzailea id = {$a->courseid} duen ikastaroan eskuz matrikulatu.';
 $string['wsnoinstance'] = 'Eskuzko matrikulazio-pluginaren instantzia ez da existitzen edo ikastaro honentzako (id = {$a->courseid}) desgaituta dago';

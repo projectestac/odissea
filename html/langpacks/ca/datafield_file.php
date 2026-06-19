@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Camp de fitxer';
+$string['fieldtypelabel'] = 'Fitxer';
 $string['pluginname'] = 'Fitxer';

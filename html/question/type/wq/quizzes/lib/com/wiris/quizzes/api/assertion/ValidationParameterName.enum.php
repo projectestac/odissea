@@ -1,6 +1,6 @@
 <?php
 
-class com_wiris_quizzes_api_assertion_ValidationParameterName extends Enum {
+class com_wiris_quizzes_api_assertion_ValidationParameterName extends HxEnum {
 	public static $ALLOW_PREFIXES;
 	public static $ELEMENTS_TO_GRADE;
 	public static $MAX;

@@ -69,6 +69,7 @@ $string['disallowed'] = 'Užrakintas';
 $string['editmessages'] = 'Redaguoti žinutes';
 $string['emailtagline'] = 'Tai pranešimo kopija, išsiųsta jums svetainėje {$a->sitename}. Norėdami atsakyti eikite į <a href="{$a->url}">{$a->url}</a>.';
 $string['enabled'] = 'Įjungta';
+$string['enablenotificationplugin'] = 'Įjungti pranešimų papildinį: {$a}';
 $string['errorcallingprocessor'] = 'Klaida iškviečiant apibrėžtą procesorių';
 $string['errorconversationdoesnotexist'] = 'Pokalbis neegzistuoja';
 $string['errormessagetoolong'] = 'Pranešimas ilgesnis nei maksimalus leistinas.';
@@ -139,6 +140,7 @@ $string['notificationdatahasnotbeenmigrated'] = 'Jūsų pranešimai laikinai nep
 $string['notificationimage'] = 'Pranešimo vaizdas';
 $string['notificationpreferences'] = 'Pranešimų nuostatos';
 $string['notifications'] = 'Pranešimai';
+$string['notificationsmarkedasread'] = 'Visi pranešimai pažymėti kaip perskaityti.';
 $string['notificationwindow'] = 'Pranešimo langas';
 $string['notincontacts'] = 'Turite įtraukti {$a} į kontaktus, kad galėtumėte siųsti jiems žinutes.';
 $string['notincontactsheading'] = '{$a} nėra Jūsų kontaktuose';

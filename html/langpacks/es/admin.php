@@ -132,10 +132,10 @@ $string['calendarsettings'] = 'Calendario';
 $string['calendartype'] = 'Tipo de calendario';
 $string['calendartype_desc'] = 'Elija un tipo de calendario por defecto para todo el sitio. Este ajuste se puede sobrescribir por los ajustes de la configuración del curso o por los del perfil personal del usuario';
 $string['campaign'] = 'Campaña';
-$string['cannotdeletemodfilter'] = 'No puedes desinstalar \'{$a->filter}\' porque es parte del módulo \'{$a->module}\'.';
+$string['cannotdeletemodfilter'] = 'No puede desinstalar \'{$a->filter}\' porque es parte del módulo \'{$a->module}\'.';
 $string['cannotuninstall'] = '{$a} no puede ser desinstalado.';
 $string['categoryemail'] = 'Correo electrónico';
-$string['cfgwwwrootslashwarning'] = '$CFG->wwwroot ha sido definido incorrectamente en el archivo config.php. Ha incluído el carácter \'/\' al final. Por favor, elimínelo.';
+$string['cfgwwwrootslashwarning'] = '$CFG->wwwroot ha sido definido incorrectamente en el archivo config.php. Ha incluido el carácter \'/\' al final. Por favor, elimínelo.';
 $string['cfgwwwrootwarning'] = '$CFG->wwwroot ha sido definido incorrectamente en el archivo config.php. Debe corresponder a la URL que usted está utilizando para acceder a ésta página.';
 $string['change'] = 'cambiar';
 $string['checkboxno'] = 'No';
@@ -239,7 +239,7 @@ Cursos
 Aplicación móvil|https://someurl.xyz/app | Descarga nuestra aplicación
 </pre>';
 $string['configcustomusermenuitems'] = 'Puede configurar el contenido del menú de usuario (a excepción del enlace de cierre de sesión, que se añade automáticamente). Cada línea está separada por caracteres| y consiste en 1) una cadena de texto en el formato "nombredecadenadeidioma, nombredelcomponente" o como texto simple, 2) una URL. Se pueden utilizar separadores añadiendo una línea de uno o más caracteres # donde se desee.';
-$string['configdbsessions'] = 'Si elige esta opción, se usará la base de datos para almacenar información sobre las sesiones actuales. Tenga en cuenta que la modificación de este ajuste desconectará a todos los usuarios (incluído usted). Si está utilizando MySQL por favor confirme que la opción \'max_allowed_packet\' en my.cnf (o my.ini) es de por lo menos 4M. Otros drivers de sesión pueden ser configurados directamente en config.php, lea el fichero config-dist.php para más información. Esta opción desaparece si usted especifica un driver de sesión en el fichero config.php.';
+$string['configdbsessions'] = 'Si elige esta opción, se usará la base de datos para almacenar información sobre las sesiones actuales. Tenga en cuenta que la modificación de este ajuste desconectará a todos los usuarios (incluido usted). Si está utilizando MySQL por favor confirme que la opción \'max_allowed_packet\' en my.cnf (o my.ini) es de por lo menos 4M. Otros drivers de sesión pueden ser configurados directamente en config.php, lea el fichero config-dist.php para más información. Esta opción desaparece si usted especifica un driver de sesión en el fichero config.php.';
 $string['configdebug'] = 'Si activa esta opción, se incrementará el error_reporting de PHP, de modo que recibirá más advertencias. Sólo resulta útil para los desarrolladores.';
 $string['configdebugdisplay'] = 'Si activa esta opción, el informe de errores irá a la página HTML. Es práctico pero rompe XHTML, JS, \'cookies\' y cabeceras HTTP en general. Si deshabilita esta opción, se enviarán las salidas a los registros del servidor, permitiendo una mejor depuración. El parámetro de configuración de PHP <b>error_log</b>controla a qué registro va el error.';
 $string['configdebugpageinfo'] = 'Habilítelo si desea que la información de la página aparezca en el pie de página.';
@@ -888,6 +888,7 @@ $string['managelang'] = 'Administrar';
 $string['manageqbanks'] = 'Administrar los complementos del banco de preguntas';
 $string['manageqbehaviours'] = 'Gestionar comportamientos de preguntas.';
 $string['manageqtypes'] = 'Administrar tipos de preguntas';
+$string['marketplaceavailablenotice'] = 'Mostrar y descargar plugins en <a href="{$a}" target="_blank" rel="noopener noreferrer">Moodle Marketplace <i class="fa fa-external-link" role="img" aria-label="Se abre en ventana nueva" title="Se abre en ventana nueva"></i></a>.';
 $string['maturity100'] = 'Beta';
 $string['maturity150'] = 'Candidato a versión final';
 $string['maturity200'] = 'Versión estable';
@@ -953,8 +954,7 @@ $string['moodlebrandedapp'] = 'App Moodle de marca';
 $string['moodlebrandedapp_help'] = '<p>La App Moodle de marca tiene toda la funcionalidad de nuestra App móvil gratuita para Moodle combinada con las características de su marca personalizada propia.</p>
 <a href="https://moodle.com/branded-app">Acerca de la App Moodle de marca</a>';
 $string['moodlebrandedappreference'] = 'Alternativamente, obtenga una  <a href="https://moodle.com/branded-app/">Branded Moodle app (App Moodle de marca)</a> con su propio estilo personalizable.';
-$string['moodlenetremovalwarning'] = 'El servicio MoodleNet cerrará el 20 de abril de 2026. Si desea continuar usando MoodleNet en su situio, instale el plugin MoodleNet desde <a href="https://moodle.org/plugins" target="_blank">el directorio de plugins de Moodle <i class="fa fa-external-link" role="img" aria-label="Abre en nueva ventana" title="Abre en ventana nueva"></i></a> y conéctelo a una instancia de MoodleNet autoalojada.
-A continuación, el campo de perfil de ID de MoodleNet se eliminará; por favor, migre esos datos si los está usando para otros propósitos.';
+$string['moodlenetremovalwarning'] = 'El servicio MoodleNet cerrará el 20 de abril de 2026. Si desea continuar usando MoodleNet en su situio, instale el plugin MoodleNet desde <a href="https://github.com/moodlehq/moodle-tool_moodlenet" target="_blank">el repositorio Moodle HQ GitHub<i class="fa fa-external-link" role="img" aria-label="Sse abre en ventana nueva" title="Se abre en ventana nueva"></i></a> y conéctelo a una instancia de MoodleNet autoalojada. A continuación, el campo de perfil de ID de MoodleNet se eliminará. Por favor, migre esos datos si los está usando para otros propósitos.';
 $string['moodlepartners'] = 'Moodle Partners (Socios Moodle)';
 $string['moodlepartners_help'] = '<p>Los Moodle Partners (Socios Moodle) son proveedores de servicio que están certificados por Moodle HQ para proporcionar servicios de alta calidad para el entorno de aprendizaje en línea de su organización.</p>
 <a href="https://moodle.com/about-partners/">Acerca de nuestros Socios</a><br />

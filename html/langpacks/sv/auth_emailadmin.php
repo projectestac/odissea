@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_emailadminconfirmationsubject'] = '{$a}: kontobekräftelse';
+$string['auth_emailadminsettings'] = 'Buffertinställningar';

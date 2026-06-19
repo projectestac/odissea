@@ -26,5 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['completedcourses'] = 'Fullföljda kurser';
+$string['configtitle'] = 'Blockrubrik';
+$string['courses'] = 'Kurser';
 $string['hidefromguests'] = 'Dölj för gäster';
 $string['starredcourses'] = 'Favoritmärkta kurser';
+$string['top'] = 'Längst upp';

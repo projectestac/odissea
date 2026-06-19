@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['anonymize_user_data'] = 'Souhaitez-vous anonymiser les données utilisateur ?';
-$string['atleast_one_course_module_must_be_included'] = 'Au moins un module de cours doit être inclus, veuillez sélectionner au moins un module de cours à inclure.';
+$string['atleast_one_course_module_must_be_included'] = 'Au moins un module de cours doit être inclus ; veuillez sélectionner au moins un module de cours à inclure.';
 $string['backup_failed'] = 'La sauvegarde a échoué. Vous pouvez supprimer l’élément du panier d’activités et essayer à nouveau.';
 $string['backup_item'] = 'Copier l\'élément';
 $string['backup_settings'] = 'Copier les paramètres';
@@ -57,9 +57,7 @@ $string['maybe_the_queue_is_stuck'] = 'Si vous souhaitez exécuter la copie main
 $string['module_is_disabled_on_site'] = 'Cette activité a été désactivée sur le site, vous ne pourrez pas la copier.';
 $string['no_course_modules_in_section'] = 'Aucune activité de cours dans cette section';
 $string['no_course_modules_in_section_description'] = 'Cette section ne contient aucune activité de cours, par conséquent vous ne pouvez pas la copier.';
-$string['no_items'] = 'Aucun élément.<br>
-<br>
-Glissez et déposez des activités ou sections dans le panier d’activités ou cliquez sur l’icône <i class="fa fa-shopping-basket"></i> pour ajouter des éléments au panier d’activités.';
+$string['no_items'] = 'Aucun élément.<br><br>Glissez et déposez des activités ou sections dans le panier d’activités ou cliquez sur l’icône <i class="fa fa-shopping-basket"></i> pour ajouter des éléments au panier d’activités.';
 $string['no_restores'] = '<div class="no-restores text-muted">Aucune copie en cours.<br>
 <br>
 Cliquez sur l’icône <i class="fa fa-clone"></i> pour ajouter des éléments du panier d’activités au cours.</div>';

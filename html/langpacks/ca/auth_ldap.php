@@ -30,7 +30,7 @@ $string['auth_ldap_attrcreators'] = 'Llista de grups o contextos als membres del
 $string['auth_ldap_attrcreators_key'] = 'Creadors d\'atributs';
 $string['auth_ldap_auth_user_create_key'] = 'Crea usuaris externament';
 $string['auth_ldap_bind_dn'] = 'Si voleu utilitzar el bind-user per cercar usuaris, especifiqueu-ho aquí. Per exemple \'cn=ldapuser,ou=public,o=org\'';
-$string['auth_ldap_bind_dn_key'] = 'Nom distingit (distinguised name, «dn»)';
+$string['auth_ldap_bind_dn_key'] = 'Nom distintiu («distinguished name, DN»)';
 $string['auth_ldap_bind_pw'] = 'Contrasenya del bind-user.';
 $string['auth_ldap_bind_pw_key'] = 'Contrasenya';
 $string['auth_ldap_bind_settings'] = 'Paràmetres de vinculació';

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['invalidxml'] = 'Ungültige XML-Datei - String erwartet (CDATA wenden?)';
+$string['invalidxml'] = 'Ungültige XML-Datei - String erwartet (CDATA verwenden?)';
 $string['pluginname'] = 'Moodle-XML-Format';
 $string['pluginname_help'] = 'Dies ist ein moodle-spezifisches Format für den Import und Export von Fragen.';
 $string['pluginname_link'] = 'qformat/xml';

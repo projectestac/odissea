@@ -267,7 +267,8 @@ $string['screenshots'] = 'Capturas de ecrã';
 $string['screenshotsDescription'] = 'Adicione até cinco capturas de ecrã do seu conteúdo';
 $string['share'] = 'Partilhar';
 $string['shareFailed'] = 'Erro ao partilhar.';
-$string['shareTryAgain'] = 'Ocorreu um erro. Tente partilhar novamente.';
+$string['shareTryAgain'] = 'Ocorreu um erro. Tente partilhar novamente.
+Não foi possível estabelecer comunicação com o Hub H5P. Tente novamente mais tarde.';
 $string['shared'] = 'Partilhado';
 $string['sharingNote'] = 'Todos os detalhes do conteúdo podem ser editados após a partilha';
 $string['shortDescription'] = 'Descrição curta';

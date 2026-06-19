@@ -25,6 +25,7 @@ Feature: Tiny editor text color/text background color
       | backgroundcolors | [{"name":"Black","value":"000000"},{"name":"White","value":"ffffff"},{"name":"Yellow","value":"e2b007"},{"name":"Magenta Blur","value":"#FF00FF69"}]| tiny_fontcolor |
       | textcolors | [{"name":"Normal","value":"#000000"},{"name":"Gray dark","value":"0a2c2e"},{"name":"gray","value":"#ffccba"},{"name":"Gray Blur","value":"#2E2E2EA5"}] | tiny_fontcolor |
     And I log in as "admin"
+    And I change viewport size to "1400x1080"
     And I open my profile in edit mode
     And I wait until the page is ready
     And I set the field "Description" to "<p>Some plain text</p><p>Some more text</p>"
@@ -45,6 +46,7 @@ Feature: Tiny editor text color/text background color
       | backgroundcolors | [{"name":"Black","value":"000000"},{"name":"White","value":"ffffff"},{"name":"Yellow","value":"e2b007"},{"name":"rosa","value":"#ffccc0"}] | tiny_fontcolor |
       | textcolors | [{"name":"Normal","value":"#000000"},{"name":"Gray dark","value":"#0a2c2e"},{"name":"gray","value":"#ffccba"},{"name":"test1","value":"#fce34f"}] | tiny_fontcolor |
     And I log in as "admin"
+    And I change viewport size to "1400x1080"
     And I open my profile in edit mode
     And I wait until the page is ready
     And I set the field "Description" to "<p>Some plain text</p><p>Some more text</p>"
@@ -61,6 +63,7 @@ Feature: Tiny editor text color/text background color
       | backgroundcolors | [{"name":"Black","value":"000000"},{"name":"White","value":"ffffff"},{"name":"Yellow","value":"e2b007"},{"name":"Magenta Blur","value":"#FF00FF69"}] | tiny_fontcolor |
       | textcolors | [{"name":"Normal","value":"#000000"},{"name":"Gray dark","value":"#0a2c2e"},{"name":"gray","value":"#ffccba"},{"name":"Gray Blur","value":"#2E2E2EA5"}] | tiny_fontcolor |
     And I log in as "admin"
+    And I change viewport size to "1400x1080"
     And I open my profile in edit mode
     And I wait until the page is ready
     And I set the field "Description" to "<p>Some plain text</p><p>Some more text</p>"
@@ -82,6 +85,7 @@ Feature: Tiny editor text color/text background color
       | textcolors       | [{"name":"gray","value":"#ffccba"},{"name":"test1","value":"#fce34f"}]  | tiny_fontcolor |
       | usecssclassnames | 1                                                                       | tiny_fontcolor |
     And I log in as "admin"
+    And I change viewport size to "1400x1080"
     And I open my profile in edit mode
     And I wait until the page is ready
     And I set the field "Description" to "<p>Some plain text</p><p>Some more text</p>"

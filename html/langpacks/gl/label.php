@@ -51,7 +51,7 @@ $string['labeltext'] = 'Texto';
 $string['modulename'] = 'Área de texto e multimedia';
 $string['modulename_help'] = 'A área de texto e multimedia permite amosar texto e multimedia na páxina do curso.
 
-Pode usar unha área de texto e mulimedia para:
+Pode usar unha área de texto e mulimedia para
 
 *Dividir unha longa lista de actividades do curso cun subtítulo ou unha imaxe
 * Amosar un vídeo incrustado directamente na páxina do curso

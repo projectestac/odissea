@@ -25,5 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowpdfsubmissions'] = 'Aktivera';
+$string['deletetemplate'] = 'Ta bort alarmmall';
 $string['errorcopyfile'] = 'Kan inte kopiera filen \'{$a}\' till den temporära mappen';
+$string['itemdate'] = 'Datum';
+$string['itemtext'] = 'Anfangstext';
+$string['itemwidth'] = 'Bredd';
+$string['maxbytes'] = 'Maximal filstorlek';
+$string['newitem'] = 'Nytt objekt';
+$string['newtemplate'] = 'Ny alarmmall';
+$string['savetemplate'] = 'Spara mall';
+$string['select'] = 'Markera';
 $string['templatecopy'] = '(Kopiera)';
+$string['templatename'] = 'Mallens namn';
+$string['uploadpreview'] = 'Ladda upp';

@@ -37,8 +37,6 @@ Per confermare l\'account, devi cliccare sul link seguente:
 
 {$a->link}
 
-Nella maggior parte dei programmi di posta il link apparirà colorato di blu ed è sufficiente cliccarlo. Se il link non dovesse essere attivo, copia e incolla il link nella barra dell\'indirizzo del browser e premi il tasto invio.
-
 Se hai bisogno di aiuto contatta l\'amministratore del sito,
 {$a->admin}
 
@@ -53,8 +51,6 @@ $string['confirmlinkedloginemail'] = 'Gentile {$a->firstname},
 Per confermare la richiesta e collegare le autenticazioni, devi cliccare sul link seguente:
 
 {$a->link}
-
-Nella maggior parte dei programmi di posta il link apparirà colorato di blu ed è sufficiente cliccarlo. Se il link non dovesse essere attivo, copia e incolla il link nella barra dell\'indirizzo del browser e premi il tasto invio.
 
 Se hai bisogno di aiuto contatta l\'amministratore del sito,
 {$a->admin}

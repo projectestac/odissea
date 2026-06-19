@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['correctanswers'] = 'Instruktioner';
 $string['pluginname_link'] = 'question/type/easyolewis';

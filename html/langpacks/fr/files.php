@@ -64,4 +64,4 @@ $string['redactor:exifremover:tag:all'] = 'Tous';
 $string['redactor:exifremover:tag:gps'] = 'Seulement GPS';
 $string['redactor:exifremover:tooldoesnotexist'] = 'Caviardage échoué : ExifTool n’existe pas !';
 $string['redactor:exifremover:toolpath'] = 'Chemin d’accès à <em>ExifTool</em>';
-$string['redactor:exifremover:toolpath_desc'] = 'Pour utiliser ExifTool, veuillez indique le chemin d’accès du programme « ExifTool ». En général quelque chose comme « /usr/bin/exiftool ».';
+$string['redactor:exifremover:toolpath_desc'] = 'Pour utiliser ExifTool, veuillez indique le chemin d’accès du programme « ExifTool ». En général quelque chose comme /usr/bin/exiftool.';

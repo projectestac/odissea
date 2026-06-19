@@ -610,4 +610,5 @@ $string['version_help'] = 'Il campo versione è utile per tenere traccia dall\'e
 $string['viewbadge'] = 'Visualizza badge rilasciati';
 $string['visible'] = 'Visibile';
 $string['warnexpired'] = '(Questo badge è scaduto!)';
+$string['wrongrole'] = 'Il ruolo che desideri utilizzare non ti è stato assegnato.';
 $string['year'] = 'Anni';

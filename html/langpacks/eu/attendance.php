@@ -44,6 +44,7 @@ $string['adduser'] = 'Gehitu erabiltzailea';
 $string['addwarning'] = 'Gehitu abisua';
 $string['all'] = 'Guztiak';
 $string['allcourses'] = 'Ikastaro guztiak';
+$string['allfieldsrequired'] = 'Mezua ezin da hutsik egon.';
 $string['allowupdatestatus'] = 'Baimendu ikasleei euren bertaratzea eguneratzen';
 $string['allowupdatestatus_desc'] = 'Markatuz gero, ikasleek norbere saioaren bertaratzea erregistratu ondoren erregistro hori eguneratzeko aukera izango dute.';
 $string['allowupdatestatus_help'] = 'Markatuz gero ikasleek norbere saioaren bertaratzea erregistratu ondoren erregistro hori eguneratzeko aukera izango dute.';

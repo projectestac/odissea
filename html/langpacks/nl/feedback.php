@@ -245,6 +245,7 @@ $string['privacy:metadata:valuetmp'] = 'Gegevens over het antwoord op een vraag 
 $string['public'] = 'Publiek';
 $string['question'] = 'Vraag';
 $string['questionandsubmission'] = 'Vraag- en instuuropties';
+$string['questionmoved'] = 'Vraag verplaatst';
 $string['questions'] = 'Vragen';
 $string['questionslimited'] = 'Toont enkel de eerste  {$a} vragen, bekijk individuele antwoorden of download de tabelgegevens om alles te bekijken.';
 $string['radio'] = 'Meerkeuzevraag - één antwoord';

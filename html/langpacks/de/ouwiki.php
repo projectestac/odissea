@@ -30,18 +30,19 @@ $string['add'] = 'Hinzufügen';
 $string['addannotation'] = 'Anmerkung hinzufügen';
 $string['addedbegins'] = '<strong>[Hinzugefügter Text]</strong>';
 $string['addedends'] = '<strong>[Ende des hinzugefügten Textes]</strong>';
-$string['addnewsection'] = 'Neuen Bereich hinzufügen';
-$string['addnewsection1'] = 'Neuen Bereich hinzufügen';
-$string['advice_annotate'] = '<p>Anmerkung zur nachfolgenden Seite hinzufügen
-</p>
+$string['addnewsection'] = 'Neuen Abschnitt zu dieser Seite hinzufügen';
+$string['addnewsection1'] = 'Neuen Abschnitt hinzufügen';
+$string['advice_annotate'] = '<p>Anmerkung zur nachfolgenden Seite hinzufügen</p>
 <ul>
 <li>Um eine Anmerkung zu schreiben, klicken Sie auf das entsprechende Icon und geben Sie den notwendigen Text ein.</li>
-<li>Neue und vorhandene Anmerkungen können gelöscht werden, indem Sie den gesamten Text aus dem Formularfeld entfernen.</li></ul>';
-$string['advice_diff'] = 'Die ältere Version ist links <span class=\'accesshide\'> unter der Überschrift \'Ältere Version\'</span>  zu sehen. Gelöschter Text ist hervorgehoben. Hinzugefügter Text wird in der neueren Version rechts <span class=\'accesshide\'> unter der Überschrift \'Neuere Version\'</span> angezeigt. <span class=\'accesshide\'>Jede Änderung wird von einem entsprechenden Icons eingerahmt.</span>';
+<li>Neue und vorhandene Anmerkungen können gelöscht werden, indem Sie den gesamten Text aus dem Formularfeld entfernen.</li>
+<li>Die Zahlen in Klammern verweisen auf die Anmerkungen.</li>
+</ul>';
+$string['advice_diff'] = 'Die ältere Version ist links <span class=\'accesshide\'> unter der Überschrift \'Ältere Version\'</span> zu sehen. Gelöschter Text ist hervorgehoben. Hinzugefügter Text wird in der neueren Version rechts <span class=\'accesshide\'> unter der Überschrift \'Neuere Version\'</span> angezeigt. <span class=\'accesshide\'>Jede Änderung wird von entsprechenden Icons eingerahmt.</span>';
 $string['advice_edit'] = '<p>Seite bearbeiten</p>
 <ul>
-<li>Für einen Link zu einer anderen Seite setzen Sie den Seitennamen in eckigen Klammern: [[Seitenname]].</li>
-<li>Zum Erstellen einer neuen Seite setzen Sie den neuen Seitennamen ein. Die neue Seite wird automatisch erstellt, sobald jemand klickt, etwas schreibt und die neue Seite sichert.{$a}</li>
+<li>Für einen Link zu einer anderen Seite setzen Sie den Seitennamen in doppelte eckige Klammern: [[Seitenname]].</li>
+<li>Zum Erstellen einer neuen Seite setzen Sie den neuen Seitennamen ein. Die neue Seite wird automatisch erstellt, sobald jemand klickt, etwas schreibt und die neue Seite sichert. {$a}</li>
 </ul>
 </p>';
 $string['advice_history'] = '<p>Die Übersicht zeigt alle Änderungen der <a href="{$a}">aktuellen Seite</a>.</p>
@@ -56,20 +57,20 @@ $string['advice_wikirecentchanges_changes_nohighlight'] = '<p>Diese Übersicht z
 <p>Über die Links können Sie sehen, wie die Seite bei einer bestimmten Änderung aussah und was sich in diesem Moment geändert hat.</p>';
 $string['advice_wikirecentchanges_pages'] = '<p>Diese Übersicht zeigt, wann jede Seite zum Wiki hinzugefügt wurde, beginnend mit der zuletzt angelegten Seite.</p>';
 $string['ajaxnotenabled'] = 'AJAX ist in Ihrem Nutzerprofil nicht aktiviert.';
-$string['allowediting_help'] = '<p>Wenn diese Option aktiviert ist, wird das Wiki bis zum angegebenen Datum schreibgeschützt. Nutzer/innen können in diesem Modus alle Seiten und Versionen sehen, sich an der Diskussion beteiligen, aber keine Änderungen vornehmen.</p>
+$string['allowediting_help'] = '<p>Wenn diese Option aktiviert ist, wird das Wiki bis zum angegebenen Datum schreibgeschützt. Nutzer/innen können in diesem Modus alle Seiten und den Verlauf sehen, sich an der Diskussion beteiligen, aber keine Änderungen vornehmen.</p>
 
 <h2>Änderungen verhindern ab</h2>
-Wenn diese Option aktiviert ist, wird das Wiki ab dem angegebenen Datum schreibgeschützt.</p>';
+<p>Wenn diese Option aktiviert ist, wird das Wiki ab dem angegebenen Datum schreibgeschützt.</p>';
 $string['allowimport'] = 'Link zum Importieren von Seiten';
-$string['allowimport_help'] = 'Diese Option legt fest, dass Seiten aus einem anderen Wikis dieses Kurses in das dieses Wiki importiert werden dürfen.';
+$string['allowimport_help'] = 'Diese Option legt fest, dass Seiten aus anderen Wikis dieses Kurses in das dieses Wiki importiert werden dürfen.';
 $string['annotate'] = 'Anmerken';
 $string['annotatingpage'] = 'Seite für Anmerkungen';
-$string['annotationmarker'] = 'Anmerkungshinweis';
+$string['annotationmarker'] = 'Anmerkungsmarkierung';
 $string['annotations'] = 'Anmerkungen';
 $string['annotationsystem'] = 'Anmerkungssystem';
-$string['annotationsystem_help'] = 'Aktiviert die Anmerkungs-Registerkarte für Benutzer mit der entsprechenden Berechtigung ..
+$string['annotationsystem_help'] = 'Diese Option aktiviert die Anmerkungs-Registerkarte für Nutzer/innen mit der entsprechenden Berechtigung ..
 
-Mit dieser Registerkarte können Sie Inline-Anmerkungen zu den Wiki-Seiten hinzufügen (z.B. Lehrende kommentieren studentische Arbeiten).';
+Mit dieser Registerkarte können Sie Inline-Anmerkungen zu den Wikiseiten hinzufügen (z.B. Trainer/innen kommentieren die Arbeit der Teilnehmer/innen).';
 $string['attachments'] = 'Anhänge';
 $string['brokenimage'] = '<span class="imgremoved">Fehlendes Bild ist nicht in der Vorlage enthalten. </span>';
 $string['cancel'] = 'Abbrechen';
@@ -79,33 +80,36 @@ $string['changedby'] = 'Geändert von';
 $string['changedifferences'] = 'Unterschiede';
 $string['changes'] = 'Änderungen';
 $string['changesnav'] = 'Änderungen';
-$string['collapseallannotations'] = 'Anmerkungen einklappen';
+$string['collapseallannotations'] = 'Alle Anmerkungen einklappen';
 $string['collapseannotation'] = 'Anmerkung einklappen';
 $string['compare'] = 'Vergleichen';
 $string['compareselected'] = 'Auswahl vergleichen';
 $string['completion_help'] = '<ul>
 <li>
-Wenn Sie "Erfordert neue Seiten" auswählen, dann wird das Wiki als vollständig für Benutzer markiert, sobald sie die angegebene Anzahl von Seiten erstellt haben. Mit dieser Option können Benutzer Seiten von Grund auf neu erstellen. Wenn jemand anderes die Seite erstellt und die Benutzer diese dann bearbeiten, zählt es nicht.
+Wenn Sie "Erfordert neue Seiten" auswählen, dann wird das Wiki für Nutzer/innen als abgeschlossen markiert, sobald sie die angegebene Anzahl von Seiten erstellt haben. Mit dieser Option müssen Nutzer/innen Seiten von Grund auf neu erstellen. Wenn jemand anderes die Seite erstellt und Nutzer/innen diese dann bearbeiten, zählt es nicht.
 </li>
 
 <li>
-Wenn Sie "Erfordert Bearbeitungen" auswählen, dann wird das Wiki als vollständig für Benutzer markiert, sobald sie eine bestimmte Anzahl von Bearbeitungen durchführen. Der Benutzer könnte viele Seiten bearbeiten, oder die gleiche Seite mehrmals bearbeiten; beides zählt.
+Wenn Sie "Erfordert Bearbeitungen" auswählen, dann wird das Wiki für Nutzer/innen als abgeschlossen markiert, sobald sie eine bestimmte Anzahl von Bearbeitungen durchgeführt haben. Jemand könnte viele Seiten bearbeiten, oder die gleiche Seite mehrmals bearbeiten ... beides zählt.
 </li>
 </ul>
 
-<p>Beachten Sie, dass Schreiben der ersten Version einer Seite zählt auch als eine Bearbeitung. Wenn Sie möchten, dass jemand eine Seite erstellt <i>und</i> mindestens eine Bearbeitung von etwas anderem vornimmt, setzen Sie Seiten auf 1 und Bearbeitungen auf 2.
+<p>Hinweis: Das Schreiben der ersten Version einer Seite zählt ebenfalls als Bearbeitung. Wenn Sie möchten, dass jemand eine Seite erstellt <i>und</i> mindestens eine Bearbeitung von etwas anderem vornimmt, setzen Sie Seiten auf 1 und Bearbeitungen auf 2.
 </p>';
+$string['completiondetail:edits'] = 'Änderungen vornehmen: {$a}';
+$string['completiondetail:pages'] = 'Seiten erstellen: {$a}';
 $string['completionedits'] = 'Änderungen müssen vorgenommen werden:';
 $string['completioneditsgroup'] = 'Änderungen notwendig';
-$string['completioneditshelp'] = 'Änderungen sind notwendig, um die Aktivität abschließen zu können.';
+$string['completioneditshelp'] = 'Um die Aktivität abschließen zu können, sind Änderungen notwendig.';
 $string['completionpages'] = 'Neue Seiten müssen erstellen:';
 $string['completionpagesgroup'] = 'Neue Seiten notwendig';
 $string['completionpageshelp'] = 'Um die Aktivität abschließen zu können, müssen neue Seiten erstellt werden.';
 $string['contributions'] = '<strong>{$a->pages}</strong> neue Seite{$a->pagesplural}, <strong>{$a->changes}</strong> andere Änderungen{$a->changesplural}.';
 $string['contributionsbyuser'] = 'Beiträge nach Nutzer/in';
 $string['contributionsgrouplabel'] = 'Gruppe';
-$string['countdowntext'] = 'Das Wiki erlaubt Änderungen nur innerhalb von {$a} Minuten. Sichern Sie Ihre Änderungen, bevor die erlaubte Zeit (Anzeige rechts) bei Null angekommen ist.';
-$string['countdownurgent'] = 'Bitte sichern Sie jetzt Ihre Änderungen oder brechen Sie die Bearbeitung ab. Wenn die Zeit abgelaufen ist, werden die Änderungen automatisch gesichert.';
+$string['countdowntext'] = 'Dieses Wiki erlaubt Änderungen nur innerhalb von {$a} Minuten. Sichern Sie Ihre Änderungen, bevor die erlaubte Zeit (Anzeige rechts) bei Null angekommen ist.';
+$string['countdownurgent'] = 'Sichern Sie bitte jetzt Ihre Änderungen oder brechen Sie die Bearbeitung ab. Wenn die Zeit abgelaufen ist, werden die Änderungen automatisch gespeichert.';
+$string['countdownurgent_sr'] = 'noch eine Minute';
 $string['create'] = 'Erstellen';
 $string['createdbyon'] = 'Erstellt von {$a->name} am {$a->date}';
 $string['createlinkedwiki'] = 'Neue Seite wird erstellt';
@@ -121,8 +125,8 @@ $string['currentversionof'] = 'Aktuelle Version von';
 $string['deletedbegins'] = '<strong>[Gelöschter Text]</strong>';
 $string['deletedends'] = '<strong>[Ende des gelöschten Textes]</strong>';
 $string['deleteorphanedannotations'] = 'Verlorene Anmerkungen löschen';
-$string['deleteversionerror'] = 'Fehler beim Löschen der Version';
-$string['deleteversionerrorversion'] = 'Eine nicht vorhandene Version kann nicht gelöscht werden';
+$string['deleteversionerror'] = 'Fehler beim Löschen der Seitenversion';
+$string['deleteversionerrorversion'] = 'Eine nicht vorhandene Seitenversion kann nicht gelöscht werden';
 $string['detail'] = 'Detail';
 $string['diff_nochanges'] = 'Bei dieser Bearbeitung wurden keine Änderungen im Text vorgenommen, so dass keine Unterschiede markiert sind. Es könnte Änderungen in der Darstellung geben.';
 $string['diff_someannotations'] = 'Bei dieser Bearbeitung wurden keine Änderungen im Text vorgenommen, so dass keine Unterschiede markiert sind. Es wurden allerdings Anmerkungen vorgenommen. Außerdem könnte es Änderungen in der Darstellung geben.';
@@ -131,7 +135,7 @@ $string['downloadcsv'] = 'kommaseparierte Liste (csv-Datei)';
 $string['downloadspreadsheet'] = 'Als Tabelle herunterladen';
 $string['duplicatepagetitle'] = 'Der Titel der neuen Seite darf nicht mit dem einer vorhandenen Seite übereinstimmen.';
 $string['editbegin'] = 'Änderungen erlauben ab';
-$string['editbegin_help'] = '<p>Wenn diese Option aktiviert ist, wird das Wiki bis zum angegebenen Datum schreibgeschützt. Nutzer/innen können in diesem Modus alle Seiten und Versionen sehen, sich an der Diskussion beteiligen, aber keine Änderungen vornehmen.</p>';
+$string['editbegin_help'] = '<p>Wenn diese Option aktiviert ist, wird das Wiki bis zum angegebenen Datum schreibgeschützt. Nutzer/innen können in diesem Modus alle Seiten und den Verlauf sehen, sich an der Diskussion beteiligen, aber keine Änderungen vornehmen.</p>';
 $string['editedby'] = 'Bearbeitet von {$a}';
 $string['editend'] = 'Änderungen verhindern ab';
 $string['editend_help'] = 'Wenn diese Option aktiviert ist, wird das Wiki ab dem angegebenen Datum schreibgeschützt.';
@@ -144,19 +148,19 @@ $string['emptysectiontitle'] = 'Der Bereichsname darf nicht leer sein.';
 $string['endannotation'] = 'Ende der Anmerkung';
 $string['entirewiki'] = 'Gesamtes Wiki';
 $string['error_export'] = 'Fehler beim Exportieren der Wikidaten';
-$string['error_nopermission'] = 'Sie haben keine Berechtigung, um diesen Seiteninhalt zu sehen';
+$string['error_nopermission'] = 'Sie haben keine Rechte, um diesen Seiteninhalt zu sehen';
 $string['errorcoursesubwiki'] = 'Die Option muss \'Keine Gruppen\' sein. Andernfalls muss die Option für Teilwikis \'Ein Wiki pro Gruppe\' eingestellt sein.';
 $string['errorgroupssubwiki'] = 'Die Option muss aktiviert sein, wenn die Option für Teilwikis \'Ein Wiki pro Gruppe\'  eingestellt ist.';
-$string['event:ouwikidelete'] = 'OU wiki Version gelöscht';
-$string['event:ouwikipagecreated'] = 'OU wiki Seite angelegt';
-$string['event:ouwikipageupdated'] = 'OU wiki Seite aktualisiert';
-$string['event:ouwikiundelete'] = 'OU wiki Version wiederhergestellt';
-$string['event:ouwikiviewed'] = 'OU wiki Ansicht';
-$string['event:pagelock'] = 'OU wiki sperren';
-$string['event:pageunlock'] = 'OU wiki freigeben';
+$string['event:ouwikidelete'] = 'OU-Wiki: Version gelöscht';
+$string['event:ouwikipagecreated'] = 'OU-Wiki: Seite angelegt';
+$string['event:ouwikipageupdated'] = 'OU-Wiki: Seite aktualisiert';
+$string['event:ouwikiundelete'] = 'OU-Wiki:Version wiederhergestellt';
+$string['event:ouwikiviewed'] = 'OU-Wiki: Ansicht';
+$string['event:pagelock'] = 'OU-Wiki: Sperre';
+$string['event:pageunlock'] = 'OU-Wiki: Freigabe';
 $string['event:savefailed'] = 'Session-Fehler beim Speichern der Seite';
 $string['excelcsvdownload'] = 'Als Tabelle herunterladen (.csv)';
-$string['expandallannotations'] = 'Anmerkungen aufklappen';
+$string['expandallannotations'] = 'Alle Anmerkungen aufklappen';
 $string['expandannotation'] = 'Anmerkung aufklappen';
 $string['externaldashboardadd'] = 'Wiki zur Steuerung hinzufügen';
 $string['externaldashboardremove'] = 'Wiki aus der Steuerung entfernen';
@@ -173,12 +177,16 @@ $string['feedtitle'] = '{$a->course} Wiki: {$a->name} - {$a->subtitle}';
 $string['format_html'] = 'Online anzeigen';
 $string['format_rtf'] = 'Im Textformat herunterladen';
 $string['format_template'] = 'Als Wikivorlage herunterladen';
+$string['formathtml'] = 'HTML-Format';
+$string['formathtml_help'] = 'Der HTML-Editor kann zum Formatieren von Inhalten verwendet werden.
+
+Um eine neue Seite zu erstellen, geben Sie den Namen der neuen Seite in doppelten eckigen Klammern ein, z.B. [[Neue Seite]].';
 $string['frompage'] = 'von {$a}';
 $string['frompages'] = 'von {$a}';
 $string['gradesupdated'] = 'Bewertungen aktualisiert';
 $string['hideannotationicons'] = 'Anmerkungen verbergen';
 $string['historycompareaccessibility'] = '{$a->lastdate} {$a->createdtime} auswählen';
-$string['historyfor'] = 'Versionen für';
+$string['historyfor'] = 'Verlauf für';
 $string['import'] = 'Seiten importieren';
 $string['import_confirm'] = 'Import bestätigen';
 $string['import_confirm_conflicts'] = 'Seitenkonflikte:';
@@ -225,16 +233,17 @@ $string['lastchange'] = 'Letzte Änderung: {$a->date} / {$a->userlink}';
 $string['lastmodified'] = 'Letzte Änderung: {$a}';
 $string['linkedfrom'] = 'Seiten, die zu dieser Seite verlinken';
 $string['linkedfromsingle'] = 'Seite, die zu dieser Seite verlinkt';
-$string['lockcancelled'] = 'Ihre Bearbeitungssperre wurde überschrieben und ein anderer Nutzer bearbeitet die Seite nun. Wenn Sie Ihre Änderungen erhalten möchten, sollten Sie sie markieren und kopieren, dann Abbrechen klicken und dann erneut versuchen, die Seite zu bearbeiten.';
+$string['lockcancelled'] = 'Ihre Bearbeitungssperre wurde überschrieben und eine andere Person bearbeitet die Seite nun. Wenn Sie Ihre Änderungen erhalten möchten, sollten Sie sie markieren und kopieren, bevor Sie auf Abbrechen klicken und dann erneut versuchen, die Seite zu bearbeiten.';
 $string['lockediting'] = 'Wiki sperren - keine Änderungen möglich';
 $string['lockpage'] = 'Seite sperren';
 $string['lockstartpages'] = 'Startseiten sperren';
-$string['lockstartpages_help'] = 'Sperrt alle vorhandenen Startseiten und alle nach diesem Zeitpunkt erstellten Startseiten, wenn eine Vorlage zum Auffüllen des Inhalts verwendet wird.';
+$string['lockstartpages_help'] = 'Diese Option sperrt alle vorhandenen Startseiten und alle nach diesem Zeitpunkt erstellten Startseiten, wenn eine Vorlage zum Auffüllen des Inhalts verwendet wird.';
 $string['missingpages'] = 'Fehlende Seiten';
-$string['modulename'] = 'OU Wiki';
-$string['modulename_help'] = '<p>Ein Wiki ist ein webbasiertes System, das Nutzer/innen erlaubt, eine Menge von verlinkten Seiten zu bearbeiten. In Moodle wird ein Wiki normalerweise benutzt, wenn Teilnehmer/innen Texte schreiben sollen.</p>
-<p>Das OU Wiki verfügt über eine Vielfalt an Optionen. Bitte schauen Sie in die Einzelhilfen zu jeder Einstellmöglichkeit, um weitere Informationen zu erhalten.</p>';
-$string['modulenameplural'] = 'OU Wikis';
+$string['modulename'] = 'OU-Wiki';
+$string['modulename_help'] = '<p>Ein Wiki ist ein webbasiertes System, das Nutzer/innen erlaubt, eine Menge von verlinkten Seiten zu bearbeiten. In Moodle wird ein Wiki normalerweise benutzt, wenn Teilnehmer/innen Inhalte erstellen sollen.</p>
+
+<p>Das OU-Wiki verfügt über zahlreiche Optionen. Schauen Sie bitte in die Einzelhilfen zu jeder Einstellmöglichkeit, um weitere Infos zu bekommen.</p>';
+$string['modulenameplural'] = 'OU-Wikis';
 $string['mustspecify2'] = 'Sie müssen zwei Versionen auswählen, um sie zu vergleichen.';
 $string['myparticipation'] = 'Meine Mitarbeit';
 $string['newerversion'] = 'Neuere Version';
@@ -251,27 +260,27 @@ $string['note'] = 'Hinweis:';
 $string['nousersingroup'] = 'Die gewählte Gruppe hat keine Mitglieder.';
 $string['nowikipages'] = 'Dieses Wiki enthält noch keine Seite.';
 $string['numedits'] = '{$a} Änderungen';
-$string['numwords'] = 'Worte: {$a}';
+$string['numwords'] = 'Wörter: {$a}';
 $string['olderversion'] = 'Ältere Version';
 $string['oldversion'] = 'Alte Version';
 $string['onepageview'] = 'Sie können zum Ausdrucken oder als Referenz alle Seiten des Wikis zusammen anzeigen lassen.';
 $string['orphanedannotations'] = 'Verlorene Anmerkungen';
 $string['orphanpages'] = 'Nicht verlinkte Seiten';
-$string['ouwiki:addinstance'] = 'OU Wiki anlegen';
+$string['ouwiki:addinstance'] = 'Neues OU-Wiki anlegen';
 $string['ouwiki:annotate'] = 'Anmerkungen erlauben';
-$string['ouwiki:annotateothers'] = 'Kommentierung aller Unterwikis, die angezeigt werden';
+$string['ouwiki:annotateothers'] = 'Kommentierung aller Teilwikis, die angezeigt werden können';
 $string['ouwiki:deletepage'] = 'Wikiseiten löschen';
 $string['ouwiki:edit'] = 'Wikiseiten bearbeiten';
-$string['ouwiki:editothers'] = 'Inhalt in allen Unterwikis bearbeiten, die angezeigt werden';
+$string['ouwiki:editothers'] = 'Inhalt in allen Teilwikis bearbeiten, die angezeigt werden können';
 $string['ouwiki:grade'] = 'Nutzer/innen bewerten, die Zugang zum Wiki haben';
 $string['ouwiki:lock'] = 'Wikiseiten sperren und entsperren';
 $string['ouwiki:overridelock'] = 'Gesperrte Wikiseiten überschreiben';
 $string['ouwiki:view'] = 'Wikis anzeigen';
-$string['ouwiki:viewallindividuals'] = 'Nutzer Subwikis: alle zeigen';
-$string['ouwiki:viewcontributions'] = 'Liste von Beträgen ansehen, sortiert nach Nutzer/innen';
-$string['ouwiki:viewgroupindividuals'] = 'Nutzer Subwikis: gleiche Gruppe zeigen';
+$string['ouwiki:viewallindividuals'] = 'Nutzerbezogene Teilwikis: alle zeigen';
+$string['ouwiki:viewcontributions'] = 'Liste von Beträgen anzeigen, sortiert nach Nutzer/innen';
+$string['ouwiki:viewgroupindividuals'] = 'Nutzerbezogene Teilwikis: gleiche Gruppe zeigen';
 $string['ouwiki:viewparticipation'] = 'Mitarbeit aller Nutzer/innen anzeigen, die Zugriff zum Wiki haben';
-$string['ouwikicrontask'] = 'OU wiki Wartungsjobs';
+$string['ouwikicrontask'] = 'OU-Wiki: Wartungsjobs';
 $string['overridelock'] = 'Wikisperre übergehen';
 $string['overviewnumentrysince'] = 'Neue Wikieinträge seit dem letzten Login';
 $string['overviewnumentrysince1'] = 'Neuer Wikieintrag seit dem letzten Login';
@@ -280,82 +289,87 @@ $string['pagecheckboxlabel'] = 'Seite importieren, {$a}';
 $string['pagedeletedinfo'] = 'Die Liste zeigt einige gelöschte Versionen, die nur für Nutzer/innen mit dem Recht sichtbar sind, Versionen löschen zu dürfen. Normale Nutzer/innen sehen die Versionen nicht.';
 $string['pagedoesnotexist'] = 'Die Seite gibt es in diesem Wiki noch nicht';
 $string['pageedits'] = 'Seitenänderungen';
-$string['pagelockeddetails'] = '{$a->name} hat begonnen diese Seite zu bearbeiten um {$a->lockedat} und wird noch {$a->seenat} weiter daran arbeiten. Sie können keine Änderungen vornehmen bevor er oder sie fertig ist.';
-$string['pagelockeddetailsnojs'] = '{$a->name} hat begonnen diese Seite zu bearbeiten um {$a->lockedat} und wird weiter daran arbeiten bis {$a->nojs}. Sie können keine Änderungen vornehmen bevor er oder sie fertig ist.';
-$string['pagelockedoverride'] = 'Sie haben die Berechtigung Änderungen anderer rückgängig zu machen und die Seitensperre aufzuheben.
-Wenn Sie das machen, werden alle Änderungen der anderen verloren sein, was immer diese auch eingegeben haben.
-Bitte überlegen Sie es sich also gut, bevor Sie den Überschreiben-Knopf anklicken.';
+$string['pagelockeddetails'] = '{$a->name} bearbeitet die Seite seit {$a->lockedat} und kann noch bis {$a->seenat} weitermachen. Sie können keine Änderungen vornehmen, bevor die Person fertig ist.';
+$string['pagelockeddetailsnojs'] = '{$a->name} bearbeitet die Seite seit {$a->lockedat} und kann noch bis {$a->nojs} weitermachen. Sie können keine Änderungen vornehmen, bevor die Person fertig ist.';
+$string['pagelockedoverride'] = 'Sie haben die Rechte, Änderungen anderer rückgängig zu machen und die Seitensperre aufzuheben.
+Wenn Sie das machen, gehen alle Änderungen der anderen verloren, was immer diese auch eingegeben haben.
+Überlegen Sie bitte genau, bevor Sie die Überschreiben-Taste anklicken.';
 $string['pagelockedtimeout'] = 'Ihr Bearbeitungszeitraum endet um {$a}';
 $string['pagelockedtitle'] = 'Diese Seite wurde von jemand anders geändert';
-$string['pagenameisstartpage'] = 'Der Name der Seite ist identisch mit dem der Startseite. Bitte ändern Sie den Namen.';
-$string['pagenametoolong'] = 'Der Name der Seite ist zu lang. Bitte kürzen Sie den Namen.';
+$string['pagenameisstartpage'] = 'Der Name der Seite ist identisch mit dem der Startseite. Ändern Sie den Namen.';
+$string['pagenametoolong'] = 'Der Name der Seite ist zu lang. Kürzen Sie den Namen.';
 $string['pagescreated'] = 'Seiten wurden erstellt';
 $string['pagesimported'] = 'Seite importiert';
 $string['participation'] = 'Beteiligung';
 $string['participationbyuser'] = 'Beteiligung';
-$string['pluginadministration'] = 'OU Wiki Administration';
-$string['pluginname'] = 'OU Wiki';
+$string['pluginadministration'] = 'OU-Wiki Administration';
+$string['pluginname'] = 'OU-Wiki';
 $string['preview'] = 'Vorschau';
 $string['previewwarning'] = 'Die Vorschau Ihrer Änderungen wurde noch nicht gespeichert.
-<strong>Wenn Sie nicht speichern, geht Ihre Arbeit verloren.</strong> Speichern können Sie, indem Sie \'Änderungen speichern\' am Ende der Seite anklicken.';
+<strong>Wenn Sie nicht speichern, geht Ihre Arbeit verloren.</strong> Speichern Sie, indem Sie die Taste \'Änderungen speichern\' am Ende der Seite anklicken.';
 $string['previous'] = 'Neuere Änderungen';
 $string['previousversion'] = 'Vorherige: {$a}';
 $string['privacy:annotationdeleted'] = '[Annotation auf Nutzeranfrage gelöscht]';
-$string['privacy:metadata:core_files'] = 'Dateianhänge von Unterwikis';
-$string['privacy:metadata:ouwiki_annotations'] = 'Annotationen von OU Wiki Seiten';
-$string['privacy:metadata:ouwiki_annotations:content'] = 'Annotations-Inhalt der Seite';
+$string['privacy:metadata:core_files'] = 'Dateianhänge von Teilwikis';
+$string['privacy:metadata:ouwiki_annotations'] = 'Annotationen von OU-Wiki-Seiten';
+$string['privacy:metadata:ouwiki_annotations:content'] = 'Annotationsinhalt der Seite';
 $string['privacy:metadata:ouwiki_annotations:timemodified'] = 'Letzte Änderung der Annotation';
 $string['privacy:metadata:ouwiki_annotations:userid'] = 'Ersteller/in der Annotation';
-$string['privacy:metadata:ouwiki_locks'] = 'Temporärer Speicher der Bearbeitungssperre';
-$string['privacy:metadata:ouwiki_locks:expiresat'] = 'Zeitpunkt des Ablaufs der Sperre';
-$string['privacy:metadata:ouwiki_locks:lockedat'] = 'Sperrdatum';
+$string['privacy:metadata:ouwiki_locks'] = 'Temporärer Speicher für Bearbeitungssperre';
+$string['privacy:metadata:ouwiki_locks:expiresat'] = 'Zeitpunkt, zu dem die Sperre abläuft';
+$string['privacy:metadata:ouwiki_locks:lockedat'] = 'Zeitpunkt, zu dem gesperrt wurde';
 $string['privacy:metadata:ouwiki_locks:sectionsize'] = 'Größe des editierten Abschnitts in Bytes';
 $string['privacy:metadata:ouwiki_locks:sectionstart'] = 'Startposition in Bytes relativ zum XHTML-Feld der Version';
-$string['privacy:metadata:ouwiki_locks:seenat'] = 'Zeitpunkt, an dem der user-client auf Bestätigung prüfte';
-$string['privacy:metadata:ouwiki_locks:userid'] = 'User, der die Seite sperrte';
-$string['privacy:metadata:ouwiki_subwikis'] = 'Infos zu Unterwikis';
-$string['privacy:metadata:ouwiki_subwikis:groupid'] = 'Gruppe, der ein Unterwiki gehört';
-$string['privacy:metadata:ouwiki_subwikis:userid'] = 'User, dem ein Unterwiki gehört (für individuelle oder einzelne Wikis)';
-$string['privacy:metadata:ouwiki_versions'] = 'Infos zur Wiki-Seitenhistorie';
-$string['privacy:metadata:ouwiki_versions:changeprevsize'] = 'Vorherige Größe der Abschnittsnummer';
-$string['privacy:metadata:ouwiki_versions:changesize'] = 'Neue Größe des Abschnitts';
-$string['privacy:metadata:ouwiki_versions:changestart'] = 'Startpunkt beim Editieren des Abschnitts';
+$string['privacy:metadata:ouwiki_locks:seenat'] = 'Zeitpunkt, zu dem das Gerät der Person eingecheckt hat, um dies zu bestätigen';
+$string['privacy:metadata:ouwiki_locks:userid'] = 'Person, die die Seite gesperrt hat';
+$string['privacy:metadata:ouwiki_subwikis'] = 'Infos zu Teilwikis';
+$string['privacy:metadata:ouwiki_subwikis:groupid'] = 'Gruppe, der ein Teilwiki gehört';
+$string['privacy:metadata:ouwiki_subwikis:userid'] = 'Person, der ein Teilwiki gehört (für individuelle oder einzelne Wikis)';
+$string['privacy:metadata:ouwiki_versions'] = 'Infos zum Wikiseiten-Verlauf';
+$string['privacy:metadata:ouwiki_versions:changeprevsize'] = 'Die vorherige Größe des Abschnitts zum Zeitpunkt der Bearbeitung';
+$string['privacy:metadata:ouwiki_versions:changesize'] = 'Neue Größe des Abschnitts zum Zeitpunkt der Bearbeitung';
+$string['privacy:metadata:ouwiki_versions:changestart'] = 'Startpunkt bei der Bearbeitung des Abschnitts';
 $string['privacy:metadata:ouwiki_versions:deletedat'] = 'Löschdatum der Revision';
-$string['privacy:metadata:ouwiki_versions:importversionid'] = 'Import Revisions-ID';
+$string['privacy:metadata:ouwiki_versions:importversionid'] = 'Import-Revisions-ID';
 $string['privacy:metadata:ouwiki_versions:previousversionid'] = 'ID vorheriger Revision';
-$string['privacy:metadata:ouwiki_versions:timecreated'] = 'Erstellugszeitpunkt der Revision';
-$string['privacy:metadata:ouwiki_versions:userid'] = 'user, der die Resvison erstellte';
-$string['privacy:metadata:ouwiki_versions:wordcount'] = 'Waortanzahl des Revisionsinhalts';
+$string['privacy:metadata:ouwiki_versions:timecreated'] = 'Erstellungszeitpunkt der Revision';
+$string['privacy:metadata:ouwiki_versions:userid'] = 'Person, die die Revison erstellte';
+$string['privacy:metadata:ouwiki_versions:wordcount'] = 'Wortanzahl des Revisionsinhalts';
 $string['privacy:metadata:ouwiki_versions:xhtml'] = 'Revisionsinhalt';
-$string['privacy:metadata:preferences:ouwiki_hide_annotations'] = 'Annotationen bei Wiki-Ansicht verbergen';
-$string['privacy:xhtmlcontentdeleted'] = '[Information zu Mitwirkenden auf Nutzeranfrage gelöscht]';
+$string['privacy:metadata:preferences:ouwiki_hide_annotations'] = 'Annotationen bei Wikiansicht verbergen';
+$string['privacy:xhtmlcontentdeleted'] = '[Info zu Mitwirkenden auf Nutzeranfrage gelöscht]';
 $string['privacy_somebodyelse'] = 'Jemand anderes';
 $string['privacy_you'] = 'Sie';
 $string['recentchanges'] = 'Letzte Änderungen';
-$string['returntohistory'] = '(<a href=\'{$a}\'>Zurück zu Versionen</a>.)';
+$string['returntohistory'] = '(<a href=\'{$a}\'>Zurück zum Verlauf</a>.)';
+$string['returntolabel'] = 'Zurück zu';
 $string['returntopage'] = 'Zurück zur Wikiseite';
 $string['returntoview'] = 'Aktuelle Seite anzeigen';
 $string['revert'] = 'Zurücksetzen';
-$string['reverterrorcapability'] = 'Sie sind nicht berechtigt, die Seite auf eine frühere Version zurückzusetzen.';
+$string['reverterrorcapability'] = 'Sie haben nicht die Rechte, die Seite auf eine frühere Version zurückzusetzen.';
 $string['reverterrorversion'] = 'Auf eine nicht existierende Seitenversion kann nicht zurückgesetzt werden';
 $string['revertversion'] = 'Zurücksetzen';
-$string['revertversionconfirm'] = '<p>Diese Seite wird in den Zustand vom {$a} zurückgesetzt. Alle Änderungen, die seit dem vorgenommen wurden, gehen dabei verloren. Die verlorenen Änderungen sind allerdings über die Versionen weiter verfügbar.</p><p>Sind Sie sicher, dass Sie die Seite auf diese Version zurücksetzen möchten?</p>';
+$string['revertversionconfirm'] = '<p>Diese Seite wird in den Zustand vom {$a} zurückgesetzt. Alle Änderungen, die seit dem vorgenommen wurden, gehen dabei verloren. Die verlorenen Änderungen sind allerdings über den Verlauf weiter verfügbar.</p><p>Möchten Sie die Seite auf diese Version zurücksetzen?</p>';
 $string['rssfeedalt'] = 'RSS-Feed abonnieren';
-$string['savedat'] = 'gesichert am {$a}';
-$string['savedby'] = 'gesichert von {$a}';
+$string['savecheck'] = 'Sicherheitsprüfung aktivieren';
+$string['savecheck_desc'] = 'Diese Option aktiviert die Überprüfung der Sitzung beim Absenden des Bearbeitungsformulars.';
+$string['savedat'] = 'Gesichert am {$a}';
+$string['savedby'] = 'Gesichert von {$a}';
 $string['savefailcontent'] = 'Ihre Version der Seite ist unten angezeigt, so dass Sie mit kopieren und einfügen die relevanten Teile in einem anderen Programm bearbeiten können. Wenn Sie es später zurück ins Wiki kopieren möchten, seien Sie bitte vorsichtig und achten Sie darauf, dass Sie die Änderungen anderer nicht überschreiben.';
-$string['savefaildesynch'] = 'Während Sie diese Seite bearbeiten, hat noch jemand anders Änderungen vorgenommen. (Das kann passieren, wenn Sie einen ungewöhnlichen Browser verwenden oder Javascript abgeschaltet wurde.)
-Leider können Ihre Änderungen deshalb nicht gespeichert werden, weil dann die Änderungen von jemand anderem überschrieben würden.';
-$string['savefaillocked'] = 'Während Sie diese Seite bearbeiten, hat jemand anders die Blockierung der Seite veranlasst. (Das kann passieren, wenn Sie einen ungewöhnlichen Browser verwenden oder Javascript abgeschaltet wurde.)
-Leider können Ihre Änderungen deshalb im Moment nicht gesichert werden.';
-$string['savefailnetwork'] = '<p>Bedauerlicherweise können Ihre Änderungen zur Zeit nicht gesichert werden. Wegen eines Netzwerkfehlers ist die Website vorübergehend nicht erreichbar oder Sie wurden abgemeldet.</p><p>Das Sichern der Seite wurde deaktiviert. Um die Änderungen zu behalten, kopieren Sie den vollständigen Inhalt der Seite in die Zwischenablage. Anschließend können Sie die Seite erneut bearbeiten, den Inhalt der Zwischenablage einfügen und die Seite sichern.</p>';
-$string['savefailtitle'] = 'Seite kann nicht gesichert werden';
+$string['savefaildesynch'] = 'Während Sie diese Seite bearbeiten, hat noch jemand anders Änderungen vorgenommen. (Das kann passieren, wenn Sie einen ungewöhnlichen Browser verwenden oder Javascript abgeschaltet haben.)
+Leider können Ihre Änderungen deshalb nicht gespeichert werden, weil sonst die Änderungen der anderen Person überschrieben würden.';
+$string['savefaillocked'] = 'Während Sie diese Seite bearbeiten, hat jemand anders die Blockierung der Seite veranlasst. (Das kann passieren, wenn Sie einen ungewöhnlichen Browser verwenden oder Javascript abgeschaltet haben.)
+Leider können Ihre Änderungen deshalb im Moment nicht gespeichert werden.';
+$string['savefailnetwork'] = 'Netzwerkfehler. Die Website ist vorübergehend nicht verfügbar oder kann nicht erreicht werden.';
+$string['savefailsession'] = 'Sitzungsfehler. Ihre Sitzung ist aufgrund von Inaktivität abgelaufen oder Sie sind nicht mehr angemeldet.';
+$string['savefailtext'] = '<p>Leider können Ihre Änderungen derzeit nicht gespeichert werden. Die Ursache ist: {$a}. </p><p>Das Speichern ist auf dieser Seite deaktiviert. Um Ihre Änderungen zu speichern, müssen Sie den bearbeiteten Seiteninhalt kopieren, die Bearbeitungsseite erneut aufrufen und Ihre Änderungen einfügen.</p>';
+$string['savefailtitle'] = 'Die Seite kann nicht gespeichert werden';
 $string['savegrades'] = 'Bewertungen sichern';
-$string['savetemplate'] = 'Wiki als Vorlage sichern';
+$string['savetemplate'] = 'Wiki als Vorlage speichern';
 $string['search'] = 'Wiki durchsuchen';
-$string['search:activity'] = 'OUWiki - Aktivitätsinformationen';
-$string['search:page_version'] = 'OUWiki - Seiten-Versionen';
-$string['seedetails'] = 'Alle Versionen';
+$string['search:activity'] = 'OU-Wiki: Aktivitätsinformationen';
+$string['search:page_version'] = 'OU-Wiki: Seitenversionen';
+$string['seedetails'] = 'Gesamter Verlauf';
 $string['showannotationicons'] = 'Anmerkungen zeigen';
 $string['showwordcounts'] = 'Wortanzahl zeigen';
 $string['showwordcounts_help'] = 'Wenn diese Option aktiviert ist, wird die Wortanzahl jeder Seite bestimmt und am unteren Ende des Textes angezeigt.';
@@ -368,20 +382,17 @@ $string['subwikiexist'] = 'Die Teilwikis wurden bereits angelegt. Das Hinzufüge
 $string['subwikis'] = 'Teilwikis';
 $string['subwikis_groups'] = 'Getrennte Wikis für jede Gruppe';
 $string['subwikis_help'] = '<ul>
-<li><strong>Wiki für den gesamten Kurs</strong><br />
-Dieses Wiki verhält sich wie ein einzelnes Wiki. Jede Person im Kurs sieht die gleichen Wikiseiten.</li>
-<li><strong>Getrennte Wikis für jede Gruppe</strong><br />
-Die Mitglieder jeder Gruppe sehen eine völlig unterschiedliche Kopie des Wikis (Teilwiki), u.z. bezogen auf ihre Gruppe. Sie können nur auf Seiten zugreifen, die von Mitgliedern der gleichen Gruppe erstellt wurden. Wenn Sie Mitglied in mehr als eine Gruppe sind oder wenn Sie das Recht besitzen, alle Gruppen anzuzeigen, können Sie die Gruppen über ein Menü auswählen.
-<li><strong>Getrennte Wikis für alle Nutzer/innen</strong><br />
-Alle Einzelnutzer/innen erhalten ein völlig anderes Wiki. Alle können nur sein eigenes Wiki sehen und bearbeiten. Wenn Sie das Recht besitzen, alle Personen anzuzeigen, können Sie die Personen über ein Menü auswählen.   (This can be used as a way for students to contribute work, although you should
-consider other ways to achieve this such as the Assessment activity.)</li>
+<li><strong>Ein Wiki für den Kurs</strong><br />
+Dieses Wiki ist ein einziges Wiki und alle Teilnehmer/innen sehen dieselben Seiten.</li>
+<li><strong>Ein Wiki pro Gruppe</strong><br />
+Mitglieder jeder Gruppe sehen eine separate Kopie des Wikis (Teilwiki), das speziell für ihre Gruppe erstellt wurde. Jede Person sieht nur Seiten, die von Personen in derselben Gruppe erstellt wurden.
+Wenn Sie Mitglied in mehr als einer Gruppe sind oder wenn Sie das Recht haben, alle Gruppen anzuzeigen, wird Ihnen ein Dropdown-Menü zur Auswahl jeder Gruppe angezeigt.</li>
+<li><strong>Separates Wiki für jede Person</strong><br />
+Jede Person erhält ein eigenes Wiki. Sie sehen nur Ihr eigenes Wiki, es sei denn, Sie haben das Recht, andere Personen anzuzeigen. In diesem Fall wird Ihnen ein Dropdown-Menü zur Auswahl jeder Person angezeigt. (Dies ist eine Möglichkeit, Einzelarbeiten zu sammeln. Sie sollten jedoch auch eine gegenseitige Bewertungsaktivität in Betracht ziehen.)</li>
 </ul>
 
-<p>
-Note that the group option works with the chosen grouping. It will ignore groups in other
-groupings.
-</p>';
-$string['subwikis_individual'] = 'Getrennte Wikis für alle Nutzer/innen';
+<p>Hinweis: Die Gruppenoption funktioniert nur mit der gewählten Gruppierung. Gruppen in anderen Gruppierungen werden ignoriert.</p>';
+$string['subwikis_individual'] = 'Getrennte Wikis für jede Person';
 $string['subwikis_single'] = 'Wiki für den gesamten Kurs';
 $string['summary'] = 'Beschreibung';
 $string['summary_help'] = '<p>Wenn Sie eine Beschreibung eintragen, wird diese Beschreibung auf der Startseite des Wikis angezeigt, u.z. oberhalb des normalen bearbeitbaren Wikitextes. </p>
@@ -391,81 +402,55 @@ $string['system'] = 'das System';
 $string['tab_annotate'] = 'Anmerken';
 $string['tab_discuss'] = 'Diskussion';
 $string['tab_edit'] = 'Bearbeiten';
-$string['tab_history'] = 'Versionen';
+$string['tab_history'] = 'Verlauf';
 $string['tab_index_alpha'] = 'Alphabetisch';
 $string['tab_index_changes'] = 'Alle Änderungen';
 $string['tab_index_pages'] = 'Neue Seiten';
 $string['tab_index_tree'] = 'Struktur';
 $string['tab_view'] = 'Anzeigen';
 $string['template'] = 'Vorlagen';
-$string['template_help'] = '<p>
-Eine Vorlage ist eine vordefinierte Satz von Wiki-Seiten. Wenn eine Vorlage eingestellt ist, beginnt das Wiki mit dem Inhalt, der in der Vorlage definiert ist.
-</p>
+$string['template_help'] = '<p>Eine Vorlage ist ein vordefinierter Satz von Wiki-Seiten. Wenn eine Vorlage eingestellt ist, beginnt das Wiki mit dem Inhalt, der in der Vorlage definiert ist.</p>
 
-<p>
-Die Vorlage gilt für jedes Unter-Wiki; in "Ein Wiki pro Gruppe"-Modus zum Beispiel, wird jedes Gruppenwiki mit den Seiten in der Vorlage initialisiert.
-</p>
+<p>Die Vorlage gilt für jedes Teilwiki. Im Modus "Ein Wiki pro Gruppe", wird z.B. jedes Gruppenwiki mit den Seiten in der Vorlage initialisiert.</p>
 
-<p>
-Um eine Vorlage zu erstellen, schreiben Sie die Seiten in einem Wiki, dann besuchen Sie die Index-Seite und klicken Sie auf den Button "Wiki als Vorlage speichern". (Sie können auch manuell Vorlagen in einer anderen Software erstellen; Es ist ein extrem einfaches XML-Format. Schauen Sie sich eine gespeicherte Vorlage an, um das Format zu sehen.)
-</p>
+<p>Um eine Vorlage zu erstellen, schreiben Sie die Seiten in einem Wiki, dann besuchen Sie die Index-Seite und klicken Sie auf die Taste "Wiki als Vorlage speichern". (Sie können auch manuell Vorlagen in einer anderen Software erstellen. Es ist ein extrem einfaches XML-Format. Schauen Sie sich eine gespeicherte Vorlage an, um das Format zu sehen.)</p>
 
-<p>
-Sie können die Vorlage, nach dem das Wiki erstellt wurde, hinzufügen. Hinzufügen einer Vorlage betrifft nur neu erstellte Unter-Wikis, bestehende werden unverändert beibehalten. </p>';
+<p>Sie können die Vorlage auch hinzufügen, nachdem das Wiki erstellt wurde. Die Vorlage betrifft aber nur neu erstellte Teilwikis, bestehende Teilwikis werden unverändert beibehalten.</p>';
 $string['templatefileexists'] = 'Eine Vorlagendatei \'{$a}\' ist bereits im Einsatz.';
 $string['thispageislocked'] = 'Diese Wikiseite ist zur Zeit gesperrt und kann nicht bearbeitet werden.';
 $string['timelocked_after'] = 'Dieses Wiki ist zur Zeit gesperrt und kann nicht weiter bearbeitet werden.';
 $string['timelocked_before'] = 'Dieses Wiki ist zur Zeit gesperrt. Es kann ab {$a} bearbeitet werden.';
 $string['timeout'] = 'Zugelassene Bearbeitungszeit';
-$string['timeout_help'] = '<p>
-Wenn Sie einen Timeout auswählen, sind die Menschen, die die Bearbeitung des Wikis vornehmen, berechtigt dieses Wiki in der vorgegebenen Zeit zu bearbeiten.
-Das Wiki sperrt Seiten, während sie bearbeitet werden (so, dass zwei Menschen nicht gleichzeitg die gleiche Seite bearbeiten können). Mit der Timeout-Einstellung wird verhindert, dass das Wiki für andere gesperrt wird.
-</p>
+$string['timeout_help'] = '<p>Wenn Sie einen Timeout auswählen, sind die Personen berechtigt, Seiten in diesem Wiki in der vorgegebenen Zeit zu bearbeiten.
+Das Wiki sperrt eine Seite, während sie bearbeitet wird (so, dass nie zwei Personen gleichzeitg die gleiche Seite bearbeiten können). Mit der Timeout-Einstellung wird verhindert, dass das Wiki dauerhaft für andere gesperrt bleibt.</p>
 
-<h3>Was Benutzer sehen</h3>
+<h3>Was Nutzer/innen sehen</h3>
+<p>Wenn ein Timeout aktiviert ist, sehen Nutzer/innen einen Countdown, wenn sie eine Seite bearbeiten. Wenn der Countdown bei Null ist, speichert der Browser automatisch die Änderungen und beendet die Bearbeitung.</p>
 
-<p>
-Wenn Timeout aktiviert ist, sehen Benutzer einen Countdown, wenn sie eine Seite bearbeiten. Wenn der Countdown bei null ist, wird ihr Browser automatisch die Änderungen speichern und die Bearbeitung stoppen.
-</p>
-
-<h3>Benutzer ohne aktiviertes Javascript</h3>
-
-<p>
-Diese Option hat keine Auswirkung auf Benutzer, die Javascript nicht aktiviert haben, oder einen alten Browser verwenden.
-Ein fünfzehn-minütiges Timeout gilt immer für diese Benutzer. Wenn sie eine Seite bearbeiten, wird die Zeit angezeigt, in der sie die Änderungen speichern müssen. Wenn sie es nicht tun, könnten sie ihre Arbeit verlieren.
-</p>
+<h3>Nutzer/innen ohne aktiviertes Javascript</h3>
+<p>Diese Option hat keine Auswirkung auf Nutzer/innen, die Javascript nicht aktiviert haben oder einen alten Browser verwenden.
+Ein fünfzehn-minütiges Timeout gilt auch für diese Nutzer/innen. Wenn sie eine Seite bearbeiten, wird die Zeit angezeigt, in der sie die Änderungen speichern müssen. Wenn sie dies nicht tun, könnten sie ihre Arbeit verlieren.</p>
 
 <h3>Warum benötigen Sie möglicherweise diese Option nicht</h3>
-
-<p>
-Auch wenn diese Option ausgeschaltet ist, werden Sperren automatisch in den folgenden Situationen verworfen, nachdem
-ein Benutzer damit begonnen hat, eine Seite zu bearbeiten:
-</p>
-
+<p>Auch wenn diese Option ausgeschaltet ist, werden Sperren automatisch in den folgenden Situationen verworfen, nachdem
+eine Person damit begonnen hat, eine Seite zu bearbeiten:</p>
 <ul>
-<li>Ohne die Änderungen zu speichern oder abzubrechen geht der Benutzer auf eine andere Seite.</li>
-<li>Der Benutzer schließt seinen Browser.</li>
-<li>Der Computer des Benutzers stürzt ab.</li>
-<li>Der Benutzer verliert seine Internet-Verbindung.</li>
+<li>Ohne die Änderungen zu speichern oder abzubrechen geht die Person auf eine andere Seite.</li>
+<li>Der Person schließt ihren Browser.</li>
+<li>Der Computer der Person stürzt ab.</li>
+<li>Die Person verliert ihre Internet-Verbindung.</li>
 </ul>
 
-<p>
-In diesen Situationen wird die Sperre automatisch nach etwa zwei Minuten entfernt.
-</p>
+<p>In diesen Situationen wird die Sperre automatisch nach etwa zwei Minuten entfernt.</p>
 
-<p>
-Darüber hinaus haben Tutoren und Kurs-Personal (standardmäßig) die Fähigkeit, jede Sperre jederzeit zu aufzuheben.
-</p>
+<p>Darüber hinaus haben Trainer/innen (standardmäßig) die Fähigkeit, jede Sperre jederzeit zu aufzuheben.</p>
 
 <h3>Was diese Option nicht tut</h3>
-
-<p>
-Diese Option wird niemanden stoppen auf einer Seite zu bleiben und verhindern, dass andere Benutzer diese bearbeiten, wenn diese sehr entschlossen sind. Sie könnten eine Seite bearbeiten und warten, bis das Zeitlimit fast abgelaufen ist und die Änderungen speichern und dann sehr schnell diese Seite erneut bearbeiten.
-</p>';
+<p>Diese Option wird niemanden davon abhalten, auf einer Seite zu bleiben und die Bearbeitung durch andere zu verhindern. Eine Person könnte eine Seite bearbeiten und warten, bis das Zeitlimit fast abgelaufen ist. Nach dem Speichern der Änderungen ruft die Person die Seite erneut zum Bearbeiten auf. </p>';
 $string['timeout_none'] = 'Kein Timeout';
 $string['tryagain'] = 'Nochmal versuchen';
 $string['typeinpagename'] = 'Seitenname';
-$string['typeinsectionname'] = 'Bereichsname';
+$string['typeinsectionname'] = 'Abschnittsname';
 $string['unabletoimport'] = 'Keine Wikis vorhanden, aus denen Inhalte importiert werden könnten.';
 $string['undelete'] = 'Wiederherstellen';
 $string['unlockpage'] = 'Seite entsperren';
@@ -479,9 +464,11 @@ $string['viewwikistartpage'] = '{$a} anzeigen';
 $string['wiki_content_mask'] = 'Durch generierten Text ähnlicher Länge ersetzen, HTML-Tags und [[Wiki-Seite]]-Links beibehalten';
 $string['wikifor'] = 'Wiki anzeigen für:';
 $string['wikifullchanges'] = 'Alle Änderungen anzeigen';
+$string['wikiintro'] = 'Beschreibung';
 $string['wikirecentchanges'] = 'Änderungen';
 $string['wikirecentchanges_from'] = 'Änderungen (Seite {$a})';
-$string['words'] = 'Worte';
-$string['wordsadded'] = 'Worte hinzugefügt';
-$string['wordsdeleted'] = 'Worte gelöscht';
-$string['wouldyouliketocreate'] = 'Wollen Sie das erstellen?';
+$string['wikisettings'] = 'Wiki-Einstellungen';
+$string['words'] = 'Wörter';
+$string['wordsadded'] = 'Wörter hinzugefügt';
+$string['wordsdeleted'] = 'Wörter gelöscht';
+$string['wouldyouliketocreate'] = 'Möchten Sie das jetzte erstellen?';

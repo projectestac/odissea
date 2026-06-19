@@ -77,4 +77,3 @@ if ($ADMIN->fulltree) {
     );
     $settings->add($setting);
 }
-

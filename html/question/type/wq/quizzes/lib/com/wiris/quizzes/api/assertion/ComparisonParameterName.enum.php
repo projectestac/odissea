@@ -1,6 +1,6 @@
 <?php
 
-class com_wiris_quizzes_api_assertion_ComparisonParameterName extends Enum {
+class com_wiris_quizzes_api_assertion_ComparisonParameterName extends HxEnum {
 	public static $ELEMENTS_TO_GRADE;
 	public static $FUNCTION_ARGUMENT_MODE;
 	public static $FUNCTION_NAME;

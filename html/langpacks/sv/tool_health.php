@@ -32,3 +32,4 @@ $string['healthreturntomain'] = 'Fortsätt';
 $string['healthsolution'] = 'Lösning';
 $string['pluginname'] = 'Hälsocenter';
 $string['privacy:metadata'] = 'Pluginmodulen Hälsocenter lagrar ingen personlig information.';
+$string['problem_000016_description_id'] = 'ID';

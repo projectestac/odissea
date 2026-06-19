@@ -44,6 +44,7 @@ $string['adduser'] = 'Añadir usuario';
 $string['addwarning'] = 'Añadir aviso';
 $string['all'] = 'Todas';
 $string['allcourses'] = 'Todos los cursos';
+$string['allfieldsrequired'] = 'El mensaje no puede estar vacío.';
 $string['allowupdatestatus'] = 'Permitir a los estudiantes actualizar su asistencia';
 $string['allowupdatestatus_desc'] = 'Si está marcado, los estudiantes podrán actualizar su asistencia a una sesión después de haberla informado ellos mismos.';
 $string['allowupdatestatus_help'] = 'Si está marcado los estudiantes podrán actualizar su asistencia a una sesión después de haberla informado ellos mismos.';
@@ -547,7 +548,7 @@ $string['sessiontype_help'] = 'Puede agregar sesiones para todos los estudiantes
 
 * En el modo de grupo "Sin grupos" puede agregar solo sesiones para todos los estudiantes.
 * En el modo de grupo "Separar grupos" puede agregar solo sesiones para un grupo de estudiantes.
-* En el modo de grupo "Grupos visibles" puedes agregar ambos tipos de sesiones.';
+* En el modo de grupo "Grupos visibles" puede agregar ambos tipos de sesiones.';
 $string['sessiontypeshort'] = 'Tipo';
 $string['sessionunknowngroup'] = 'Una sesión especifica grupo(s) desconocido(s): {$a}';
 $string['sessionupdated'] = 'Sesión actualizada con éxito';

@@ -44,6 +44,7 @@ $string['adduser'] = 'Ajouter un utilisateur';
 $string['addwarning'] = 'Ajouter un avertissement';
 $string['all'] = 'Tout';
 $string['allcourses'] = 'Tous les cours';
+$string['allfieldsrequired'] = 'Le message ne peut pas être vide.';
 $string['allowupdatestatus'] = 'Permettre aux étudiants de mettre à jour leur propre présence';
 $string['allowupdatestatus_desc'] = 'Si cette case est cochée, les étudiants pourront mettre à jour leur présence pour une session après l’avoir déjà déclarée.';
 $string['allowupdatestatus_help'] = 'Si cette case est cochée, les étudiants pourront mettre à jour leur présence pour une session après l’avoir déjà déclarée.';
@@ -146,9 +147,9 @@ $string['createmultiplesessions'] = 'Créer plusieurs sessions';
 $string['createmultiplesessions_help'] = 'Cette fonction vous permet de créer plusieurs sessions en une seule étape.
 Les sessions commencent à la date de la session de base et se poursuivent jusqu’à la date de « répétition jusqu’à ».
 
-  * <strong> Répéter le </strong> : sélectionner les jours de la semaine où votre classe se réunira (par exemple, lundi / mercredi / vendredi).
-  * <strong> Répéter tous les </strong> : permet un réglage de fréquence. Si votre classe se réunit chaque semaine, sélectionner 1; si elle se réunit toutes les deux semaines, sélectionner 2; toutes les 3 semaines, sélectionner 3, etc.
-  * <strong> Répéter jusqu’à </strong> : sélectionner le dernier jour de cours (le dernier jour auquel vous souhaitez participer).';
+  * <strong>Répéter le</strong> : sélectionner les jours de la semaine où votre classe se réunira (par exemple, lundi / mercredi / vendredi).
+  * <strong>Répéter tous les</strong> : permet un réglage de fréquence. Si votre classe se réunit chaque semaine, sélectionner 1; si elle se réunit toutes les deux semaines, sélectionner 2 ; toutes les 3 semaines, sélectionner 3, etc.
+  * <strong>Répéter jusqu’à</strong> : sélectionner le dernier jour de cours (le dernier jour auquel vous souhaitez participer).';
 $string['createonesession'] = 'Créer une session pour le cours';
 $string['csvdelimiter'] = 'Délimiteur CSV';
 $string['currentlyselectedusers'] = 'Utilisateurs actuellement sélectionnés';
@@ -198,7 +199,7 @@ $string['emailcontent_default'] = 'Bonjour %userfirstname%,
 Votre assiduité à %coursename% %attendancename% a chuté en dessous de %warningpercent% et est actuellement de %percent% - nous espérons que vous êtes ok !
 
 Pour tirer le meilleur parti de ce cours, vous devez améliorer votre assiduité. N’hésitez pas à nous contacter si vous avez besoin d’aide.';
-$string['emailcontent_help'] = 'Lorsqu’un avertissement est envoyé à un étudiant, le contenu de l’e-mail est extrait de ce champ. Les caractères génériques suivants peuvent être utilisés :
+$string['emailcontent_help'] = 'Lorsqu’un avertissement est envoyé à un étudiant, le contenu du courriel est extrait de ce champ. Les caractères génériques suivants peuvent être utilisés :
 <ul>
 <li>%coursename%</li>
 <li>%userfirstname%</li>
@@ -322,11 +323,11 @@ $string['lasttaken'] = 'Dernier relevé des présences';
 $string['manualtriggerauto'] = 'Marquage automatique à déclenchement manuel';
 $string['marksessionimportcsvhelp'] = 'Ce formulaire vous permet de télécharger un fichier CSV contenant un identifiant d’utilisateur et un statut - le champ de statut peut être l’acronyme du statut ou l’heure à laquelle la présence a été enregistrée pour cet utilisateur. Si une valeur de temps est transmise, il essaiera d’attribuer la valeur de statut avec la note la plus élevée disponible à ce moment-là.';
 $string['maxpossible'] = 'Maximum possible';
-$string['maxpossible_help'] = 'Affiche le score que chaque utilisateur peut atteindre s’ils reçoivent le maximum de points dans chaque session non prise (passé et futur) :
-    <ul>
-    <li><strong>Points</strong> : les points maximum auxquels chaque utilisateur peut accéder à toutes les sessions. </li>
-    <li><strong>Pourcentage</strong> : pourcentage maximal chaque utilisateur peut atteindre toutes les sessions. </li>
-    </ul>';
+$string['maxpossible_help'] = 'Affiche le score que chaque utilisateur peut atteindre s’il reçoit le maximum de points dans chaque session non prise (passé et futur) :
+<ul>
+    <li><strong>Points</strong> : les points maximum auxquels chaque utilisateur peut accéder pour toutes les sessions.</li>
+    <li><strong>Pourcentage</strong> : le pourcentage maximal que chaque utilisateur peut atteindre pour toutes les sessions.</li>
+</ul>';
 $string['maxpossiblepercentage'] = 'Pourcentage maximum possible';
 $string['maxpossiblepoints'] = 'Point maximum possible';
 $string['maxwarn'] = 'Nombre maximal de notifications par courriel';
@@ -387,18 +388,18 @@ $string['onactivitycompletion'] = 'À la fin de l’activité';
 $string['onlyselectedusers'] = 'Exportation d’utilisateurs spécifiques';
 $string['overallsessions'] = 'Sur toutes les sessions';
 $string['overallsessions_help'] = 'Affiche les statistiques pour toutes les sessions, y compris celles qui n’ont pas encore été prises (passé et futur) :
-    <ul>
-    <li> <strong>Sessions</strong> : nombre total de sessions. </li>
-    <li> <strong>Points</strong> : points attribués en fonction des séances prises. </li>
-    <li> <strong>Pourcentage</strong> : pourcentage de points attribués sur le maximum de points possibles pour toutes les sessions. </li>
-    </ul>';
+<ul>
+    <li><strong>Sessions</strong> : nombre total de sessions.</li>
+    <li><strong>Points</strong> : points attribués en fonction des séances prises.</li>
+    <li><strong>Pourcentage</strong> : pourcentage de points attribués sur le maximum de points possibles pour toutes les sessions.</li>
+</ul>';
 $string['oversessionstaken'] = 'Au cours des séances prises';
 $string['oversessionstaken_help'] = 'Affiche les statistiques pour les sessions où la participation a été prise :
-    <ul>
-    <li> <strong>Sessions</strong> : nombre de sessions déjà prises. </li>
-    <li> <strong>Points</strong> : points attribués en fonction des séances prises.</li>
-    <li> <strong>Pourcentage</strong> : pourcentage de points attribués sur le maximum des points possibles des sessions prises. </li>
-    </ul>';
+<ul>
+    <li><strong>Sessions</strong> : nombre de sessions déjà prises.</li>
+    <li><strong>Points</strong> : points attribués en fonction des séances prises.</li>
+    <li><strong>Pourcentage</strong> : pourcentage de points attribués sur le maximum des points possibles des sessions prises.</li>
+</ul>';
 $string['pageof'] = 'Page {$a->page} sur {$a->numpages}';
 $string['participant'] = 'Participant';
 $string['password'] = 'Mot de passe';
@@ -469,31 +470,31 @@ $string['requiredentry_help'] = '<p align="center"><b>Présence</b></p>
 <p align="left"><strong>Fusion de comptes</strong></p>
 <p align="left">
 <table border="2" cellpadding="4">
-<tr>
-<th>Participant</th>
-<th>Utilisateur temporaire</th>
-<th>Action</th>
-</tr>
-<tr>
-<td>Données de présence</td>
-<td>Données de présence</td>
-<td>L’utilisateur temporaire remplace le Participant</td>
-</tr>
-<tr>
-<td>Pas de données de présence</td>
-<td>Données de présence</td>
-<td>La présence de l’utilisateur temporaire sera transférée au Participant</td>
-</tr>
-<tr>
-<td>Données de présence</td>
-<td>Pas de données de présence</td>
-<td>L’utilisateur temporaire sera supprimé</td>
-</tr>
-<tr>
-<td>Pas de données de présence</td>
-<td>Pas de données de présence</td>
-<td>L’utilisateur temporaire sera supprimé</td>
-</tr>
+    <tr>
+        <th>Participant</th>
+        <th>Utilisateur temporaire</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>Données de présence</td>
+        <td>Données de présence</td>
+        <td>L’utilisateur temporaire remplace le Participant</td>
+    </tr>
+    <tr>
+        <td>Pas de données de présence</td>
+        <td>Données de présence</td>
+        <td>La présence de l’utilisateur temporaire sera transférée au Participant</td>
+    </tr>
+    <tr>
+        <td>Données de présence</td>
+        <td>Pas de données de présence</td>
+        <td>L’utilisateur temporaire sera supprimé</td>
+    </tr>
+    <tr>
+        <td>Pas de données de présence</td>
+        <td>Pas de données de présence</td>
+        <td>L’utilisateur temporaire sera supprimé</td>
+    </tr>
 </table>
 
 </p>

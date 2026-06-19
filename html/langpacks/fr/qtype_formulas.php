@@ -375,6 +375,7 @@ $string['settingdebouncedelay_desc'] = 'Le délai entre la dernière modificatio
 $string['settinglenientimport'] = 'Contrôle laxiste à l\'importation';
 $string['settinglenientimport_desc'] = 'Lors de l\'importation d\'une question, ne vérifiez pas si les réponses types fournies obtiendraient la note maximale. <br>Remarque : vous ne devez activer ce paramètre que temporairement.';
 $string['settings_heading_general'] = 'Préférences générales';
+$string['settings_heading_tooltip'] = 'Infobulles';
 $string['settings_heading_width'] = 'Largeurs par défaut';
 $string['settings_heading_width_desc'] = 'Largeur par défaut des champs de saisie pour les différents types de réponses. Pour les champs laissés vides, les paramètres du fichier de style du plugin seront utilisés. Veuillez utiliser ces paramètres avec précaution. Si les champs sont trop petits, vos étudiants pourraient avoir des difficultés à saisir leur réponse. Notez que l\'icône en forme de point d\'exclamation qui s\'affiche pour les réponses non valides occupe environ 12 pixels.';
 $string['settingshownumbertooltip'] = 'Afficher l\'info-bulle « Nombre »';
@@ -391,6 +392,11 @@ Les champs <tt>{_0}, {_1}, {_2}</tt> sont les différents champs de saisie pour 
 
 Tous les champs manquants sont automatiquement ajoutés à la fin du texte de la partie. Un cas particulier se présente lorsque <tt>{_0}</tt> et <tt>{_u}</tt> sont spécifiés consécutivement sans espace,
 et qu\'il n\'y a qu\'un seul champ de réponse et une seule unité, c\'est-à-dire <tt>{_0}{_u}</tt>. Ils seront alors combinés en un seul long champ de réponse pour la réponse et l\'unité.';
+$string['tooltiptrigger'] = 'Déclencheur';
+$string['tooltiptrigger_desc'] = 'Dans quelles circonstances les infobulles doivent s\'afficher.';
+$string['triggerboth'] = 'Au survol et à la mise en surbrillance';
+$string['triggerdisabled'] = 'Pas d\'infobulles';
+$string['triggerhover'] = 'Uniquement au survol de la souris';
 $string['uniquecorrectansweris'] = 'La réponse correcte est : {$a}';
 $string['unit'] = 'Unité';
 $string['unitpenalty'] = 'Pénalité pour unité incorrecte (0-1)*';

@@ -902,6 +902,7 @@ $string['managelang'] = 'Gestió';
 $string['manageqbanks'] = 'Gestiona els connectors del banc de preguntes';
 $string['manageqbehaviours'] = 'Gestiona el comportament de les preguntes';
 $string['manageqtypes'] = 'Gestiona els tipus de preguntes';
+$string['marketplaceavailablenotice'] = 'Navegueu i descarregueu connectors al <a href="{$a}" target="_blank" rel="noopener noreferrer">Moodle Marketplace <i class="fa fa-external-link" role="img" aria-label="S\'obre en una finestra nova" title="S\'obre en una finestra nova"></i></a>.';
 $string['maturity100'] = 'Beta';
 $string['maturity150'] = 'Candidat per ser publicat';
 $string['maturity200'] = 'Versió estable';
@@ -968,7 +969,7 @@ $string['moodlebrandedapp'] = 'Aplicació Branded Moodle';
 $string['moodlebrandedapp_help'] = '<p>L\'aplicació Branded Moodle té tota la funcionalitat de la nostra aplicació mòbil gratuïta per a Moodle combinada amb la vostra pròpia marca personalitzada.</p>
 <a href="https://moodle.com/branded-app">Sobre l\'aplicació de Moodle de marca</a>';
 $string['moodlebrandedappreference'] = 'Alternativament, obteniu <a href="https://moodle.com/branded-app/">Branded Moodle app</a> amb la vostra pròpia marca personalitzada.';
-$string['moodlenetremovalwarning'] = 'El servei MoodleNet es tancarà el 20 d\'abril de 2026. Si voleu continuar utilitzant MoodleNet al vostre lloc, instal·leu el connector MoodleNet des del <a href="https://moodle.org/plugins" target="_blank">directori de connectors del Moodle <i class="fa fa-external-link" role="img" aria-label="S\'obre en una finestra nova" title="S\'obre en una finestra nova"></i></a> i connecteu-lo a una instància de MoodleNet autoallotjada. A continuació, s\'eliminarà el camp d\'ID de MoodleNet del perfil; migreu aquestes dades si les feu servir per a altres finalitats.';
+$string['moodlenetremovalwarning'] = 'El servei MoodleNet es tancarà el 20 d\'abril de 2026. Si voleu continuar utilitzant MoodleNet al vostre lloc, instal·leu el connector MoodleNet des del <a href="https://github.com/moodlehq/moodle-tool_moodlenet" target="_blank">repositori GitHub de Moodle HQ <i class="fa fa-external-link" role="img" aria-label="S\'obre en una finestra nova" title="S\'obre en una finestra nova"></i></a> i connecteu-lo a una instància de MoodleNet autoallotjada. A continuació, s\'eliminarà el camp d\'ID del perfil de MoodleNet; migreu aquestes dades si les feu servir per a altres finalitats.';
 $string['moodlepartners'] = 'Moodle Partners';
 $string['moodlepartners_help'] = '<p>Moodle Partners són proveïdors de serveis certificats per Moodle HQ per proporcionar serveis de Moodle d\'alta qualitat per a l\'entorn d\'aprenentatge en línia de la vostra organització.</p>
 <a href="https://moodle.com/about-partners/">Sobre els nostres socis</a><br />
@@ -1546,7 +1547,7 @@ $string['unbookmarkthispage'] = 'Suprimeix la drecera a aquesta pàgina';
 $string['unicoderequired'] = 'Totes les dades s\'han d\'emmagatzemar en format Unicode (UTF-8). Per a les noves instal·lacions, la base de dades ha de tenir UTF-8 com a conjunt de caràcters per defecte. Si esteu actualitzant, heu de seguir el procés de migració a UTF-8.';
 $string['uninstallplugin'] = 'Desinstal·la';
 $string['unlockaccount'] = 'Desbloca el compte';
-$string['unoconvwarning'] = 'La versió d\'«unoconv» que heu instal·lat no està suportada. La caracte';
+$string['unoconvwarning'] = 'La versió d\'«unoconv» que heu instal·lat no està suportada.';
 $string['unsettheme'] = 'Inhabilita el tema';
 $string['unsupported'] = 'No implementat';
 $string['unsupporteddbfileformat'] = 'La vostra base de dades té taules que utilitzen Antelope com a format de fitxer. El suport complet d\'UTF-8 a MySQL i MariaDB requereix el format de fitxer Barracuda. Cal que convertiu les taules al format del fitxer Barracuda. Consulteu la documentació  <a href="https://docs.moodle.org/en/cli"> Administració a través de la línia d\'ordres </a> per obtenir informació sobre una eina per convertir taules InnoDB a Barracuda.';

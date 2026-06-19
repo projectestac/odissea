@@ -51,7 +51,7 @@ $string['labeltext'] = 'Text';
 $string['modulename'] = 'Àrea de text i multimèdia';
 $string['modulename_help'] = 'El recurs d\'àrea de text i multimèdia permet inserir textos i elements multimèdia a la pàgina del curs.
 
-Podeu utilitzar una àrea de text i multimèdia per fer el següent:
+Podeu utilitzar una àrea de text i multimèdia per fer el següent
 
 * Separar una llista llarga d\'activitats del curs amb subtítols o imatges.
 * Mostrar un fitxer incrustat d\'àudio o vídeo directament a la pàgina del curs.

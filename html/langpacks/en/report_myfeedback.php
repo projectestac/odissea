@@ -413,7 +413,6 @@ $string['usagetblheader_totalviews_info'] = 'The total number of views of any My
 $string['usagetblheader_viewed'] = 'Viewed';
 $string['usagetblheader_viewed_info'] = 'How many users (or whether one user has) viewed the report at least once.';
 $string['usagetblheader_viewedby'] = 'Viewed by';
-$string['usagetblheader_viewedby_info'] = 'How many staff have viewed the report for this student.';
 $string['usernotavailable'] = 'The details of this user are not available to you.';
 $string['userprogramme'] = 'Programme:';
 $string['view'] = 'view';

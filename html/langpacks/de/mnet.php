@@ -69,7 +69,7 @@ $string['duplicate_usernames'] = 'Beim Anlegen eines Index für die Spalten "mne
 Dies kann passieren, wenn ein  <a href="{$a}" target="_blank">doppelter Anmeldename in der Nutzertabelle</a> vorhanden ist.<br />
 Das Update sollte dennoch erfolgreich abgeschlossen worden sein. Klicken Sie auf den Link und die Hinweise zur Problemlösung öffnen sich in einem neuen Fenster. Sie können sich mit diesem Problem nach Abschluss des Updates befassen.<br/>';
 $string['enabled_for_all'] = 'Dieser Service wurde für alle Hosts aktiviert.';
-$string['enterausername'] = 'Bitte geben Sie einen Anmeldenamen ein (oder eine kommagetrennte Liste von Anmeldenamen)';
+$string['enterausername'] = 'Geben Sie bitte einen Anmeldenamen ein (oder eine kommagetrennte Liste von Anmeldenamen)';
 $string['error7020'] = 'Dieser Fehler tritt normalerweise auf, wenn die Remote-Server einen Dateneintrag für wwwroot falsch erzeugt hat, z.B. https://domain.de statt https://www.domain.de. Sie sollten die Administrator/innen der Remote-Server über die richtige Einstellung für wwwroot  informieren (so wie in config.php angegeben), damit der dortige Dateneintrag für Ihren Server korrigiert werden kann.';
 $string['error7022'] = 'Die von Ihnen an den Remote-Server gesendete Nachricht war richtig verschlüsselt, aber nicht signiert. Dies ist ziemlich seltsam! Sie sollten diesen Fehler bei seinem Auftreten unbedingt melden und dabei die beteiligten Moodle-Versionen angeben.';
 $string['error7023'] = 'Der Remote-Server ist bei dem Versuch gescheitert, Ihre Nachricht mit den für Ihre Site verfügbaren Schlüssel zu entschlüsseln. Eventuell sind Sie in der Lage, dieses Problem durch ein manuelles Eingreifen (re-keying) zu beheben. Dieses Problem ist sehr unwahrscheinlich, außer Sie hatten mehrere Monate keinen Kontakt zum Remote-Server.';
@@ -129,7 +129,7 @@ $string['last_connect_time_help'] = 'Zeitpunkt, zu dem Sie das letzte Mal mit di
 $string['last_transport_help'] = 'Übertragungsprotokoll, das Sie für die vorherige Verbindung benutzt hatten.';
 $string['leavedefault'] = 'Grundeinstellungen benutzen';
 $string['listservices'] = 'Services auflisten';
-$string['loginlinkmnetuser'] = '<br />Falls Sie ein MNet-Remote-Nutzer sind und hier <a href="{$a}">Ihre E-Mail-Adresse bestätigen</a>, können Sie zu Ihrer Login-Seite weitergeleitet werden.<br />';
+$string['loginlinkmnetuser'] = '<br />Falls Sie ein MNet-Remote-Nutzer sind und hier <a href="{$a}">Ihre E-Mail-Adresse </a> bestätigen, können Sie zu Ihrer Anmeldeseite weitergeleitet werden.<br />';
 $string['logs'] = 'Logdaten';
 $string['managemnetpeers'] = 'Peers verwalten';
 $string['method'] = 'Methode';

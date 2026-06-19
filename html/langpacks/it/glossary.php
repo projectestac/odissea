@@ -59,6 +59,7 @@ $string['attachment_help'] = 'Alle voci è possibile allegare uno o più file.';
 $string['author'] = 'autore';
 $string['authorview'] = 'Visualizza per autore';
 $string['back'] = 'Indietro';
+$string['bynameondate'] = 'di {$a->name} - {$a->date}';
 $string['cachedef_concepts'] = 'Collegamenti voci di glossario';
 $string['cantinsertcat'] = 'Non è possibile inserire la categoria';
 $string['cantinsertrec'] = 'Non è possibile inserire il record';

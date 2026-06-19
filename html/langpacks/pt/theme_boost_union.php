@@ -357,8 +357,6 @@ $string['coursetab'] = 'Disciplina';
 $string['cssh5pheading'] = 'CSS Raw para H5P';
 $string['cssh5psetting'] = 'CSS Raw para H5P';
 $string['cssh5psetting_desc'] = 'Utilize este campo para fornecer o código CSS que será aplicado à apresentação do conteúdo H5P pelos módulos mod_h5p e mod_hvp. Consulte os tipos de conteúdo H5P para encontrar os seletores CSS necessários.';
-$string['customfontsfileurlpersistent'] = 'URL (persistente)';
-$string['customfontsfileurlrevisioned'] = 'URL (revisto)';
 $string['customfontsheading'] = 'Tipos de letra personalizados';
 $string['customfontslistsetting'] = 'Lista dos tipos de letra personalizados';
 $string['customfontslistsetting_desc'] = 'Lista de tipos de letra que carregou para a área de ficheiros de tipos de letra personalizados. Os excertos de CSS fornecidos podem ser utilizados para adicionar estes tipos de letra ao seu SCSS personalizado. Tenha em atenção que terá de lidar manualmente com o valor do formato do tipo de letra, bem como com as propriedades CSS `font-family`, `font-style` e `font-weight`, uma vez que o Boost Union ainda não consegue analisar os ficheiros de tipos de letra.';
@@ -468,7 +466,6 @@ $string['extscssurlpre_desc'] = 'O URL público de onde o Pré SCSS externo deve
 $string['extscssvalidationsetting'] = 'Validação do SCSS externo';
 $string['extscssvalidationsetting_desc'] = 'Se esta configuração estiver ativada, o SCSS externo será validado para verificar se pode ser compilado antes de ser adicionado à pilha SCSS. O código SCSS externo que não possa ser compilado será ignorado silenciosamente e não será utilizado. No entanto, esta validação é apenas executada no código SCSS externo, e não na pilha SCSS combinada que seria o resultado da integração do SCSS externo. Isto significa que, assim que utilizar variáveis SCSS do core do Moodle ou do Bootstrap no seu SCSS externo, terá de desativar a validação e verificar por si próprio se o código SCSS é válido para evitar problemas na interface.';
 $string['faviconheading'] = 'Favicon';
-$string['faviconheading_desc'] = 'Atenção: o Boost Union tem o seu próprio sistema de carregamento de favicon e não utiliza o favicon da <a href="{$a}">configuração de favicon do Moodle</a>. <br />O Boost Union permite, em particular, substituir o favicon carregado dentro das suas variantes.';
 $string['faviconsetting'] = 'Favicon';
 $string['faviconsetting_desc'] = 'Pode carregar uma imagem personalizada (formato . ico ou . png) que o navegador irá exibir como favicon do seu site Moodle. Caso não seja carregado nenhum favicon personalizado, será utilizado o favicon predefinido do Moodle.';
 $string['flavoursactivityiconcoloradministration'] = 'Cor do ícone de atividade para "Administração"';
@@ -658,7 +655,6 @@ Por exemplo:<br/>
 background-image-1. jpg|Copyright: CC0|dark<br/>
 Como cor do texto, pode utilizar os valores "dark" ou "light". <br/>
 Pode declarar textos para uma quantidade arbitrária das suas imagens de fundo da autenticação carregadas. Os textos serão adicionados apenas às imagens cujo nome de ficheiro corresponda ao identificador declarado nesta configuração.';
-$string['loginformheading'] = 'Formulário de autenticação';
 $string['loginformpositionsetting'] = 'Posição do formulário de autenticação';
 $string['loginformpositionsetting_center'] = 'Centrado';
 $string['loginformpositionsetting_desc'] = 'Com esta configuração, pode otimizar o formulário de início de sessão para se adaptar a uma maior variedade de imagens de fundo. Por predefinição, o formulário de início de sessão é apresentado centrado na página de início de sessão. Em alternativa, pode movê-lo para a esquerda ou para a direita da página de início de sessão para permitir que outras partes da imagem de fundo apareçam. É claro que também pode alterar esta configuração se não for carregada nenhuma imagem de fundo.';
@@ -690,7 +686,6 @@ $string['logocompactsetting_desc'] = 'Pode carregar uma versão compacta do mesm
 $string['logosetting'] = 'Logótipo';
 $string['logosetting_desc'] = 'Pode carregar um logótipo completo para ser utilizado como decoração. Esta imagem é especialmente utilizada na página de autenticação. Pode ter uma resolução bastante elevada, pois será redimensionada para utilização.';
 $string['logosheading'] = 'Logótipos';
-$string['logosheading_desc'] = 'Atenção: o Boost Union tem o seu próprio sistema de carregamento de logótipos e não utiliza o logótipo da <a href="{$a}">configuração do logótipo do Moodle</a>. <br />O Boost Union permite carregar mais formatos de imagem do que os permitidos pelo Moodle, para além de possibilitar a substituição dos logótipos carregados dentro das suas próprias configurações.';
 $string['maintenancecontentsetting'] = 'Conteúdo da página de informação de manutenção';
 $string['maintenancecontentsetting_desc'] = 'Nesta configuração, pode adicionar conteúdo Rich Text que será apresentado na página de informação de manutenção (que não é a mesma que a página do modo de manutenção integrada do Moodle).';
 $string['maintenancedisabled'] = 'A página de informação de manutenção está desativada para este site. Não há nada para ver aqui.';
@@ -737,7 +732,6 @@ $string['modiconnamefail'] = 'Este ficheiro foi carregado para a pasta correta d
 $string['modiconnotexist'] = 'Este ficheiro foi carregado num local inadequado, uma vez que é impossível deduzir uma atividade específica a partir do caminho do ficheiro <em>{$a}</em>.';
 $string['modiconsenablesetting'] = 'Ícones personalizados para atividades e recursos';
 $string['modiconsenablesetting_desc'] = 'Com esta configuração, pode modificar os ícones de atividades e recursos que são utilizados pelo Moodle nas páginas da disciplina e no seletor de atividades.';
-$string['modiconserrorcreatingpath'] = 'Não foi possível criar a pasta pix_plugins/mod no seu diretório Moodledata. <br />A mensagem de excepção foi:{$a}.';
 $string['modiconsfiles'] = 'Ficheiros de ícones personalizados';
 $string['modiconsfiles_desc'] = 'Pode carregar ícones personalizados para todos os módulos de atividade instalados nesta instância do Moodle ou apenas para alguns deles.';
 $string['modiconsfileshowto'] = 'Para carregar um ícone personalizado específico para uma atividade, comece por criar uma pasta com o nome interno da atividade, por exemplo, <em>assign</em> para a atividade de trabalho. Nessa pasta, carregue o ícone como um ficheiro SVG denominado monologo.svg e, se possível, como um ficheiro PNG alternativo denominado monologo.png. Se quiser personalizar os ícones coloridos que foram utilizados até ao Moodle 3 e que ainda podem ser utilizados pelos módulos mais antigos, também pode carregá-los como ficheiros icon.svg e icon.png. No entanto, para melhores resultados, prefira utilizar ícones SVG monocromáticos, se possível. Em seguida, guarde a página de configurações. Assim que guardar as configurações com pelo menos um ficheiro, será apresentada uma lista de ficheiros abaixo, permitindo verificar se os ícones personalizados foram carregados corretamente.';
@@ -750,8 +744,6 @@ $string['navbarcolorsetting'] = 'Cor da barra de navegação';
 $string['navbarcolorsetting_dark'] = 'Barra de navegação escura com cor de tipo de letra clara';
 $string['navbarcolorsetting_desc'] = 'Pode alterar a cor da barra de navegação de cor clara predefinida para uma colorida ou de cor escura.';
 $string['navbarcolorsetting_light'] = 'Barra de navegação clara com cor de letra escura (conforme apresentado pelo Moodle)';
-$string['navbarcolorsetting_primarydark'] = 'Barra de navegação na cor primária com cor clara do tipo de letra';
-$string['navbarcolorsetting_primarylight'] = 'Barra de navegação na cor primária com cor escura do tipo de letra';
 $string['navbarheading'] = 'Barra de navegação';
 $string['navigationheading'] = 'Navegação';
 $string['navigationtab'] = 'Navegação';
@@ -837,7 +829,6 @@ $string['region-footer-center'] = 'Rodapé (centro)';
 $string['region-footer-left'] = 'Rodapé (esquerda)';
 $string['region-footer-right'] = 'Rodapé (direita)';
 $string['region-header'] = 'Cabeçalho';
-$string['region-none'] = 'Nenhum';
 $string['region-offcanvas-center'] = 'Fora do ecrã (centro)';
 $string['region-offcanvas-left'] = 'Fora do ecrã (esquerda)';
 $string['region-offcanvas-right'] = 'Fora do ecrã (direita)';
@@ -993,7 +984,6 @@ $string['smartmenusbyadmin_nonadmins'] = 'Apenas a não administradores';
 $string['smartmenusbycohort'] = 'Por grupo global';
 $string['smartmenusbycohort_help'] = 'Restringir a visibilidade com base nos grupos globais do utilizador.';
 $string['smartmenusbydate'] = 'Por data';
-$string['smartmenusbydate_help'] = 'Restringir a visibilidade com base na data';
 $string['smartmenusbydatefrom'] = 'Desde';
 $string['smartmenusbydatefrom_help'] = 'Restringir a visibilidade antes de ser atingida a data especificada.';
 $string['smartmenusbydateuntil'] = 'Até';
@@ -1299,7 +1289,5 @@ $string['upgradenotice_2025041413'] = 'A configuração “courselistinghowfield
 $string['upgradenotice_2025041416'] = 'Os separadores de menu inteligentes estão agora disponíveis como um tipo de item de menu dedicado. Os separadores existentes (criados utilizando o tipo cabeçalho com sinais #) foram automaticamente convertidos para o novo tipo de separador.';
 $string['uploadedsnippets'] = 'Carregar excertos';
 $string['uploadedsnippets_desc'] = 'Pode enviar ficheiros individuais de excertos de código SCSS ou um ficheiro ZIP contendo vários ficheiros de excertos de código SCSS. O ficheiro ZIP será extraído automaticamente e os excertos de código SCSS nele contidos ficarão disponíveis nesta área como ficheiros individuais.';
-$string['uploadedsnippets_note'] = 'Pode encontrar a estrutura e a sintaxe dos excertos SCSS do Boost Union no nosso <a href="{$a->url}" target="_blank">repositório de excertos SCSS</a>. Aí, também encontrará instruções sobre como utilizar excertos existentes da comunidade e contribuir com excertos para a comunidade.';
 $string['usermenuheading'] = 'Menu do utilizador';
 $string['warningboostunioninactive'] = 'O Boost Union (ou um tema descendente do Boost Union) não é o tema ativo neste momento. As definições destas páginas não terão qualquer efeito se não tornar o Boost Union o tema ativo ou permitir que seja utilizado como tema de categoria/disciplina/utilizador/grupo global.';
-$string['warningslashargumentsdisabled'] = 'Atenção: A opção <a href="{$a->url}">slasharguments</a> está desativada na configuração do Moodle. No entanto, esta opção é necessária para o funcionamento correto da seguinte configuração do Boost Union. Ativa os slasharguments, caso contrário esta configuração não terá qualquer efeito.';

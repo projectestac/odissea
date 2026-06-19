@@ -25,7 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcomments'] = 'Yorum ekle';
+$string['additem'] = 'Ekle';
+$string['additemalt'] = 'Listeye yeni bir madde ekle';
 $string['additemhere'] = 'Bundan sonra yeni öğe ekle';
+$string['addownitems'] = 'Kendi maddelerinizi ekleyin';
+$string['addownitems-stop'] = 'Kendi maddelerinizi eklemeyi durdurun';
 $string['canceledititem'] = 'İptal';
 $string['comments'] = 'Yorumlar';
 $string['import'] = 'Öğeleri içe aktar';

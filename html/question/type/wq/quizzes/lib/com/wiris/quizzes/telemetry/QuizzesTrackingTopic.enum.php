@@ -1,6 +1,6 @@
 <?php
 
-class com_wiris_quizzes_telemetry_QuizzesTrackingTopic extends Enum {
+class com_wiris_quizzes_telemetry_QuizzesTrackingTopic extends HxEnum {
 	public static $ACTIVITY_SWITCH;
 	public static $HELP_REQUESTED;
 	public static $STUDIO_CLOSED;

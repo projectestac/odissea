@@ -835,15 +835,14 @@ $string['locked'] = 'Kilitli';
 $string['lockoutduration'] = 'Hesap kilitleme süresi';
 $string['lockoutduration_desc'] = 'Kilitli bir hesap bu zaman zarfından sonra otomatik olarak açılır.';
 $string['lockoutemailbody'] = 'Merhaba {$a->firstname},
-\'{$a->sitename}\' sunucusunda, kullanıcı adı {$a->username} olan hesabınız birden fazla geçersiz oturum açma girişimi sonucu kilitlendi.
 
-Hesabınızı açmak için hemen aşağıdaki adrese gidin
+\'{$a->sitename}\' sunucusundaki {$a->username} kullanıcı adlı hesabınız, birden fazla geçersiz giriş denemesi nedeniyle kilitlendi.
 
-{$a->link}
+Hesabınızın kilidini hemen açmak için lütfen aşağıdaki bağlantıya tıklayın:
 
-Birçok mail programında mavi renkli bir bağlantı olarak görünmesi gerekir. İşe yaramıyorsa bağlantıyı kopyala/yapıştır yöntemi ile tarayıcınızın adres çubuğuna girin ve entar tuşuna basın.
+Hesabın kilidini aç
 
-Yardıma ihtiyacınız olursa, lütfen site yöneticisi ile temasa geçin,
+Yardıma ihtiyacınız olursa lütfen site yöneticisiyle iletişime geçin.
 {$a->admin}';
 $string['lockoutemailsubject'] = '{$a} üzerindeki hesabınız kilitlendi.';
 $string['lockouterrorunlock'] = 'Hesap açma bilgisi geçersiz.';
@@ -886,6 +885,7 @@ $string['managelang'] = 'Yönet';
 $string['manageqbanks'] = 'Soru bankası eklentilerini yönet';
 $string['manageqbehaviours'] = 'Soru davranışlarını yönet';
 $string['manageqtypes'] = 'Soru tiplerini yönet';
+$string['marketplaceavailablenotice'] = '<a href = "{$a}" target = "_blank" rel = "noopener noreferrer"> Moodle Marketplace <i class = "fa fa-external-link" role = "img" aria-label = "Yeni pencerede açılır" title = "Yeni pencerede açılır"></i></a>\'da eklentilere göz atın ve indirin.';
 $string['maturity100'] = 'Beta';
 $string['maturity150'] = 'Yayımlanmaya aday sürüm';
 $string['maturity200'] = 'Kararlı sürüm';
@@ -951,6 +951,7 @@ $string['moodlebrandedapp'] = 'Markalı Moodle uygulaması';
 $string['moodlebrandedapp_help'] = '<p>Markalı Moodle uygulaması, kendi özel markanızla birlikte Moodle için ücretsiz mobil uygulamamızın tüm işlevlerine sahiptir.</p>
 <a href="https://moodle.com/branded-app">Markalı Moodle uygulaması hakkında</a>';
 $string['moodlebrandedappreference'] = 'Alternatif olarak, kendi özel markanızla bir <a href="https://moodle.com/branded-app/">Markalı Moodle uygulaması</a> edinin.';
+$string['moodlenetremovalwarning'] = 'MoodleNet hizmeti 20 Nisan 2026 tarihinde kapatılacaktır. Sitenizde MoodleNet\'i kullanmaya devam etmek istiyorsanız, Moodle HQ GitHub deposundan MoodleNet eklentisini yükleyin ve kendi sunucunuzda barındırdığınız bir MoodleNet örneğine bağlayın. Bundan sonra, MoodleNet profil kimliği alanı kaldırılacaktır; bu verileri başka amaçlarla kullanıyorsanız lütfen taşıyın.';
 $string['moodlepartners'] = 'Moodle Ortakları';
 $string['moodlepartners_help'] = '<p>Moodle İş Ortakları, kuruluşunuzun çevrimiçi öğrenme ortamına yüksek kaliteli Moodle hizmetleri sağlamak için Moodle Genel Merkezi tarafından onaylanmış hizmet sağlayıcılardır.</p>
 <a href="https://moodle.com/about-partners/">Ortaklarımız Hakkında</a><br/>

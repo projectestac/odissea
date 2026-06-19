@@ -574,7 +574,7 @@ $string['deletecategorycheck2'] = 'Als je deze categorie verwijderd, moet je kie
 $string['deletecategoryempty'] = 'Deze categorie is leeg';
 $string['deletecheck'] = 'Verwijder {$a}?';
 $string['deletecheckfiles'] = 'Weet je zeker dat je deze bestanden wilt verwijderen?';
-$string['deletecheckfull'] = 'Weet je zeker dat je gebruiker {$a} volledig wil verwijderen, inclusief de aanmeldingen, activiteiten en andere gebruikersgegevens?';
+$string['deletecheckfull'] = 'Weet je zeker dat je gebruiker {$a} volledig wil verwijderen, inclusief  gegevens zoals profieldetails, aanmeldingen, activiteiten, groepslidmaatschap en andere gebruikersgegevens?';
 $string['deletechecktype'] = 'Weet je zeker dat je dit wil verwijderen: {$a->type}?';
 $string['deletechecktypename'] = 'Weet je zeker dat je dit wil verwijderen: {$a->type} "{$a->name}"';
 $string['deletecheckwarning'] = 'Je staat op het punt deze bestanden te verwijderen';
@@ -697,14 +697,12 @@ $string['emailconfirm'] = 'Bevestig je account';
 $string['emailconfirmation'] = 'Beste {$a->firstname},
 
 Er is een nieuwe account aangevraagd bij \'{$a->sitename}\' met gebruik van dit e-mailadres.
-Ga naar onderstaande link om de account te bevestigen:
 
-{$a->link}
+Klik op onderstaande link om je account te bevestigen:
 
-In de meeste e-mailprogramma\'s kun je op de bovenstaande link klikken. Als dat niet lukt kun je het adres knippen en vervolgens plakken in het adresveld van je browservenster.
+<a href="{$a->link}">Bevestig je account</a>
 
-Veel succes en met vriendelijke groet,
-
+Als je hulp nodig hebt, neem dat contact op met je site-beheerder,
 {$a->admin}';
 $string['emailconfirmationresend'] = 'Bevestigingsmail opnieuw versturen';
 $string['emailconfirmationsubject'] = '{$a}: Bevestiging van de account';
@@ -750,11 +748,10 @@ $string['emailpasswordchangeinfo'] = 'Beste {$a->firstname},
 
 Iemand (waarschijnlijk jijzelf) heeft een nieuw wachtwoord gevraagd voor je account  \'{$a->username}\' op \'{$a->sitename}\'.
 
-Ga naar onderstaand adres om om je wachtwoord te wijzigen:
+Klik op onderstaande link om om je wachtwoord te wijzigen:
 
-{$a->link}
+<a href="{$a->link}">Wijzig wachtwoord</a>
 
-In de meeste e-mailprogramma\'s zou dit moeten verschijnen als een blauwe link waarop je kunt klikken. Als dat niet werkt, knip en plak het adres dan in de adresbalk van je browser.
 
 Als je hulp nodig hebt, neem dan contact op met de sitebeheerder,
 {$a->admin}';
@@ -773,13 +770,12 @@ $string['emailpasswordconfirmation'] = 'Beste {$a->firstname},
 
 Iemand (waarschijnlijk jijzelf) heeft een nieuw wachtwoord gevraagd voor je account op \'{$a->sitename}\'.
 
-Ga naar onderstaand adres om dit te bevestigen en om een nieuw wachtwoord te krijgen via mail:
+Klik op onderstaande link om dit te bevestigen en om een nieuw wachtwoord te krijgen via mail:
 
-{$a->link}
+<a href="{$a->link}">Vraag nieuw wachtwoord</a>
 
-In de meeste e-mailprogramma\'s zou dit moeten verschijnen als een blauwe link waarop je kunt klikken. Als dat niet werkt, knip en plak het adres dan in de adresbalk van je browser.
-
-Als je hulp nodig hebt, neem dan contact op met de sitebeheerder, {$a->admin}';
+Als je hulp nodig hebt, neem dan contact op met de sitebeheerder,
+{$a->admin}';
 $string['emailpasswordconfirmationsubject'] = '{$a}: bevestiging van de wijziging van het wachtwoord';
 $string['emailpasswordconfirmmaybesent'] = '<p>Als je de juiste gebruikersnaam of e-mailadres hebt ingegeven, dan is er een e-mail naar jou verstuurd.</p>
 <p>Daarin staan eenvoudige instructies om te bevestigen en het wijzigen van je wachtwoord te voltooien.</p><p>Mocht je moeilijkheden blijven ondervinden, dan kun je het beste contact opnemen met de beheerder van de site.</p>';
@@ -796,14 +792,16 @@ $string['emailresetconfirmation'] = 'Hallo {$a->firstname},
 
 Er is een nieuw wachtwoord gevraagd voor jouw account \'{$a->username}\' op {$a->sitename}.
 
-Ga naar volgend adres om deze vraag te bevestigen en een nieuw wachtwoord voor je account te krijgen:
-<a href="{$a->link}">{$a->link}</a>
+Klik op onderstaande link om deze vraag te bevestigen en een nieuw wachtwoord voor je account te krijgen:
+
+<a href="{$a->link}">Wachtwoord opnieuw instellen</a
 
 (Deze link is {$a->resetminutes} minuten geldig vanaf het moment dat de aanvraag voor het nieuwe wachtwoord is gebeurd)
 
 Als je geen nieuw wachtwoord gevraagd hebt, dan hoef je verder niets te doen.
 
-Als je hulp nodig hebt, neem dan contact op met {$a->admin}, je site-beheerder.';
+Als je hulp nodig hebt, neem dan contact op met je site-beheerder.
+{$a->admin}';
 $string['emailresetconfirmationsubject'] = '{$a}: Wachtwoord reset aangevraagd';
 $string['emailresetconfirmsent'] = 'Er is een e-mail verstuurd naar <b>{$a}</b>.
 <br />Daar staan eenvoudige instructies in om je wachtwoord te wijzigen.
@@ -1247,6 +1245,7 @@ $string['loginalready'] = 'Je bent al aangemeld';
 $string['loginas'] = 'Login als';
 $string['loginaspasswordexplain'] = '<p>Je moet het speciale "loginas" wachtwoord ingeven om deze functie te kunnen gebruiken.<br />Als je dit niet kent, vraag het dan aan je serverbeheerder.</p>';
 $string['loginguest'] = 'Toegang als gast';
+$string['loginrequired'] = 'Inloggen vereist';
 $string['loginsite'] = 'Op de site inloggen';
 $string['loginsteps'] = 'Om volledige toegang tot deze site te krijgen, moet je een account maken.';
 $string['loginstepsnone'] = 'Hallo!<p>Om volledige toegang te krijgen tot de verschillende cursussen moet je een account voor jezelf aanmaken.</p>
@@ -1544,8 +1543,7 @@ Er is voor jou een nieuwe account gemaakt op \'{$a->sitename}\' .
 
 (je zult je wachtwoord moeten wijzigen wanneer je je de eerste keer aanmeldt op de site)
 
-Om \'{$a->sitename}\' te beginnen gebruiken, meld je je aan op
-    {$a->link}
+<a href="{$a->link}">Klik om aan te melden</a> en \'{$a->sitename}\'  beginnen te gebruiken.
 
 Als je hulp nodig hebt, neem dan contact op met de beheerder,
 {$a->signoff}';
@@ -1649,6 +1647,7 @@ $string['oneitemfound'] = 'Er is 1 item gevonden.';
 $string['opendrawerblocks'] = 'Open blokkenpaneel';
 $string['opendrawerindex'] = 'Open cursusindex';
 $string['opensinnewwindow'] = 'Opent in nieuw venster';
+$string['opensinnewwindowbracketed'] = '(Opent in nieuw venster)';
 $string['operator_and'] = 'en';
 $string['operator_andnot'] = 'en';
 $string['operator_or'] = 'of';

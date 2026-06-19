@@ -20,8 +20,8 @@
  * @copyright  2020 Jonathon Fowler <fowlerj@usq.edu.au>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-define(['jquery', 'core/pubsub', 'core/utils'],
-    function($, PubSub, Utils) {
+define(['jquery', 'core/ajax', 'core/log', 'core/templates', 'core/utils'],
+    function($, Ajax, Log, Templates, Utils) {
         /**
          * Show progress event information for a cell.
          * @param {Event} event
@@ -30,7 +30,7 @@ define(['jquery', 'core/pubsub', 'core/utils'],
             var cell = $(this);
             var container = cell.closest('.block_completion_progress .barContainer');
             var visibleinfo = container.siblings('.progressEventInfo:visible');
-            var infotoshow = container.siblings('#' + cell.data('infoRef'));
+            var infotoshow = container.siblings('.progressEventInfo[data-inforef=' + cell.data('inforef') + ']');
 
             if (!visibleinfo.is(infotoshow)) {
                 visibleinfo.hide();
@@ -59,8 +59,8 @@ define(['jquery', 'core/pubsub', 'core/utils'],
         function viewActivity() {
             var cell = $(this);
             var container = cell.closest('.block_completion_progress .barContainer');
-            var infotoshow = container.siblings('#' + cell.data('infoRef'));
-            var infolink = infotoshow.find('a.action_link');
+            var infotoshow = container.siblings('.progressEventInfo[data-inforef=' + cell.data('inforef') + ']');
+            var infolink = infotoshow.find('a').first();
             if (infolink.prop('onclick') !== null) {
                 infolink.click();
             } else {
@@ -121,74 +121,107 @@ define(['jquery', 'core/pubsub', 'core/utils'],
         }
 
         /**
-         * Prepare scroll mode behaviour.
-         * @param {jQuery} barcontainers there could be many nodes here in overview mode
+         * Place the 'now' marker in the centre of the scrolled bar.
+         * @param {jQuery} barel optional bar element. If not passed, all bars will be positioned.
          */
-        function setupScroll(barcontainers) {
-            var barrows = barcontainers.find('.barRow');
-
-            /**
-             * Check arrow visibility for each of the bar rows.
-             */
-            function checkEachBar() {
-                barrows.each(checkArrows);
+        function positionNow(barel) {
+            var barrows;
+            if (typeof barel !== 'undefined') {
+                barrows = barel.find('.barRow');
+            } else {
+                barrows = $('.block_completion_progress .barRow');
             }
+            var nowicons = barrows.find('.nowDiv .icon');
+            nowicons.each(function() {
+                var nowicon = $(this);
+                var barrow = nowicon.closest('.block_completion_progress .barRow');
 
-            barrows.scroll(checkArrows);
-            $(window).resize(checkEachBar);
-            PubSub.subscribe('nav-drawer-toggle-end', checkEachBar); // Boost ≤3.11.
-            $(document).on('theme_boost/drawers:shown theme_boost/drawers:hidden',
-                Utils.debounce(checkEachBar, 250)); // Boost ≥4.0.
-
-            // On page load, place the 'now' marker in the centre of the scrolled bar
-            // and adjust which arrows should be visible.
-            $(function() {
-                var nowicons = barcontainers.find('.nowicon');
-                nowicons.each(function() {
-                    var nowicon = $(this);
-                    var barrow = nowicon.closest('.block_completion_progress .barRow');
-
-                    barrow.prop('scrollLeft', 0);
-                    barrow.prop('scrollLeft', nowicon.offset().left - barrow.offset().left -
-                        barrow.width() / 2);
-                });
-
-                barrows.each(checkArrows);
+                barrow.prop('scrollLeft', 0);
+                barrow.prop('scrollLeft', nowicon.offset().left - barrow.offset().left -
+                    barrow.width() / 2);
             });
-
-            barcontainers.on('click', '.left-arrow-svg', -1, scrollContainer);
-            barcontainers.on('click', '.right-arrow-svg', 1, scrollContainer);
+            barrows.each(checkArrows);
         }
 
         /**
-         * Set up event handlers for a particular progress bar instance.
-         * @param {integer} instanceid the bar instance id
+         * Re-render the blocks which have a cell for the given cmid.
+         * @param {String} cmid
          */
-        function initialiseBar(instanceid) {
-            var barcontainers = $('.block_completion_progress ' +
-                '.barContainer[data-instanceid="' + instanceid + '"]');
+        function rerenderBlocksWithCmid(cmid) {
+            var blocks = $('.block.block_completion_progress:has(.progressBarCell[data-inforef$="-' + cmid + '"])');
+            blocks.each(function() {
+                let block = $(this);
+                let blockcontent = block.find('div.block_completion_progress');
+                let barcontainer = block.find('.barContainer');
+                let courseid = barcontainer.data('courseid');
+                let instanceid = barcontainer.data('instanceid');
+                let userid = barcontainer.data('userid');
 
+                Log.debug(`block_completion_progress: reloading course ${courseid} blockinstance ${instanceid} user ${userid}`);
+                Ajax.call(
+                    [{
+                        methodname: 'block_completion_progress_get_blockinstance_data',
+                        args: {
+                            courseid,
+                            instanceid,
+                            userid,
+                        },
+                        done: function(response) {
+                            Templates.render('block_completion_progress/completion_progress', response)
+                                .done(function(html, js) {
+                                    let newcontent = Templates.replaceNode(blockcontent, html, js);
+                                    positionNow($(newcontent[0]));
+                                })
+                                .fail(ex => Log.debug('block_completion_progress: error rendering template to reload ' +
+                                    `course ${courseid} blockinstance ${instanceid} user ${userid} -- ${ex.errorcode}`));
+                        },
+                        fail: ex => Log.debug('block_completion_progress: error making ajax call to reload ' +
+                            `course ${courseid} blockinstance ${instanceid} user ${userid} -- ${ex.errorcode}`),
+                    }],
+                    true, true, true
+                );
+            });
+        }
+
+        /**
+         * Set up event handlers to drive all instances of progress bars which may exist.
+         */
+        function init() {
             // Show information elements on hover or tap.
-            barcontainers.on('touchstart mouseover', '.progressBarCell', showInfo);
+            $(document.body).on('touchstart mouseover', '.block_completion_progress .progressBarCell', showInfo);
 
             // Navigate to the activity when its cell is clicked.
-            barcontainers.on('click', '.progressBarCell[data-haslink=true]', viewActivity);
+            $(document.body).on('click', '.block_completion_progress .progressBarCell[data-haslink=true]', viewActivity);
 
             // Show all information elements when the 'show all' link is clicked.
-            barcontainers.siblings('.progressEventInfo').find('.progressShowAllInfo').click(showAllInfo);
+            $(document.body).on('click', '.block_completion_progress .progressShowAllInfo', showAllInfo);
 
-            setupScroll(barcontainers);
+            // Handle the presentation of scroll arrows when in scroll mode.
+            document.addEventListener('scroll', function(e) {
+                if (e.target.matches && e.target.matches('.block_completion_progress .barRow')) {
+                    checkArrows.call(e.target);
+                }
+            }, true);
+            $(document.body).on('click', '.block_completion_progress .left-arrow-svg', -1, scrollContainer);
+            $(document.body).on('click', '.block_completion_progress .right-arrow-svg', 1, scrollContainer);
+            $(window).resize(() => $('.block_completion_progress .barRow').each(checkArrows));
+            $(document).on('theme_boost/drawers:shown theme_boost/drawers:hidden',
+                Utils.debounce(() => $('.block_completion_progress .barRow').each(checkArrows), 250));
+
+            // Handle the 'now' marker on page load and if a dynamic table updates.
+            $(document).on('core_table/dynamic:tableContentRefreshed', function(e) {
+                if (e.target.matches && e.target.matches('.table-dynamic[data-table-handler="overview"]' +
+                        '[data-table-component="block_completion_progress"]')) {
+                    positionNow();
+                }
+            });
+            $(() => positionNow());
+
+            // Rerender the block if a student manually completes an activity on the course page.
+            $(document).on('core_course:manualcompletiontoggled', e => rerenderBlocksWithCmid(e.target.dataset.cmid));
         }
 
         return /** @alias module:block_completion_progress/progressbar */ {
-            /**
-             * Initialise progress bar instances.
-             * @param {array} instanceids an array of progress bar instance ids
-             */
-            init: function(instanceids) {
-                for (var i = instanceids.length - 1; i >= 0; i--) {
-                    initialiseBar(instanceids[i]);
-                }
-            },
+            init: init
         };
     });

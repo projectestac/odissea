@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['accountexists'] = 'Ya existe un usuario en este sitio con ese nombre de usuario. Si esta es su cuenta inicie sesión utilizando su nombre de usuario y contraseña y añádalo como un inicio de sesión enlazado a través de su página de preferencias.';
-$string['alreadylinked'] = 'Esta cuanta externa ya está enlazada con una cuenta en este sitio';
+$string['alreadylinked'] = 'Esta cuenta externa ya está enlazada con una cuenta en este sitio';
 $string['auth_oauth2description'] = 'Autenticación basada en estándares OAuth 2';
 $string['auth_oauth2settings'] = 'Ajustes de autenticación OAuth 2.';
 $string['confirmaccountemail'] = 'Hola, {$a->fullname}.

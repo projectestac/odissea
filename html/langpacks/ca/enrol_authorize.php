@@ -138,7 +138,7 @@ $string['tested'] = 'Comprovat';
 $string['testwarning'] = 'Registra/Invalida/Reemborsa sembla que estan treballant en el mode de prova, però no s\'ha actualitzat cap dada en la base de dades.';
 $string['transid'] = 'Identificació de la transacció';
 $string['underreview'] = 'Sota revisió';
-$string['unenrolselfconfirm'] = 'Realment voleu cancel·lar la vostra inscripció en el curs "{$a}"?';
+$string['unenrolselfconfirm'] = 'Confirmeu que voleu cancel·lar la vostra inscripció al curs «{$a}»?';
 $string['unenrolstudent'] = 'Cancel·la la inscripció de l\'estudiant ?';
 $string['uploadcsv'] = 'Carrega un fitxer CSV';
 $string['usingccmethod'] = 'Inscriu mitjançant la  <a href="{$a->url}"><strong>Targeta de crèdit</strong></a>';

@@ -82,6 +82,7 @@ $string['not_all_expected_set'] = 'Ne visos užbaigiamos veiklos turi nustatytą
 $string['now_indicator'] = 'Dabar';
 $string['overview'] = 'Besimokančiųjų peržiūra';
 $string['pluginname'] = 'Baigimo eiga';
+$string['privacy:metadata'] = 'Užbaigimo sekimo bloke rodomi tik esami užbaigimo duomenys.';
 $string['progress'] = 'Pažanga';
 $string['progressbar'] = 'Baigimo eiga';
 $string['selectitem'] = 'Pasirinkti „{$a}“';

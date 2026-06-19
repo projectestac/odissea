@@ -44,6 +44,7 @@ $string['adduser'] = 'Adicionar utilizador';
 $string['addwarning'] = 'Adicionar aviso';
 $string['all'] = 'Todas';
 $string['allcourses'] = 'Todas as disciplinas';
+$string['allfieldsrequired'] = 'A mensagem não pode estar vazia.';
 $string['allowupdatestatus'] = 'Permitir que os alunos atualizem a própria assiduidade';
 $string['allowupdatestatus_desc'] = 'Se ativar esta opção, os alunos poderão atualizar a sua assiduidade numa sessão depois de já a terem registada.';
 $string['allowupdatestatus_help'] = 'Se ativar esta opção, os alunos poderão atualizar a sua assiduidade numa sessão depois de já a terem registada.';

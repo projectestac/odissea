@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['add'] = 'Afegeix';
 $string['addsession'] = 'Afegeix una sessió';
 $string['addsessions'] = 'Afegeix sessions';
+$string['calmonths'] = 'gener,febrer,març,abril,maig,juny,juliol,agost,setembre,octubre,novembre,desembre';
 $string['changeduration'] = 'Canvia la durada';
 $string['duration'] = 'Durada';
 $string['export'] = 'Exporta';

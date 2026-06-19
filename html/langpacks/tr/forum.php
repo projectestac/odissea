@@ -65,6 +65,7 @@ $string['blockperiod'] = 'Engelleme için süre';
 $string['blockperiod_help'] = 'Öğrencilerin belirli bir süre içinde belirli bir sayıdan fazla gönderi göndermeleri engellenebilir. Mod / forum: postwithrottling özelliği olan kullanıcılar, gönderi sınırlarından muaftır.';
 $string['blockperioddisabled'] = 'Engelleme yok';
 $string['blogforum'] = 'Blog biçiminde görünen standart forum';
+$string['browsediscussions'] = 'Tartışmalara göz at';
 $string['bynameondate'] = 'yazan {$a->name} - {$a->date}';
 $string['cachedef_forum_count_discussions'] = 'Forum tartışmalarının sayısı';
 $string['cachedef_forum_is_tracked'] = 'Kullanıcı için forum izleme durumu';

@@ -27,14 +27,14 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['emptytext'] = '空白テキスト';
 $string['entiredocument'] = 'ドキュメント全体';
-$string['helplinktext'] = 'アクエセシビリティヘルパ';
+$string['helplinktext'] = 'アクセシビリティヘルパ';
 $string['imagesmissingalt'] = '画像は代替テキストを必要とします。この警告を修正するにはimgタグにalt属性を追加してください。空のalt属性も使用できますが、画像が純粋に装飾的であり何の情報も持たない場合に限ります。';
 $string['needsmorecontrast'] = '前景色および背景色のコントラストが十分ではありません。この警告を修正するにはテキストの前景色または背景色のいずれかを変更して読みやすくしてください。';
 $string['needsmoreheadings'] = '見出しのないテキストがたくさんあります。見出しがあることで、スクリーンリーダのユーザは簡単にページ内を移動でき、誰にとっても利用しやすいページとなります。';
 $string['nowarnings'] = 'おめでとうございます。アクセシビリティの問題は発見されませんでした!';
-$string['pluginname'] = 'アクエセシビリティチェッカ';
+$string['pluginname'] = 'アクセシビリティチェッカ';
 $string['privacy:metadata'] = 'TinyMCEアクセシビリティチェッカはいかなる個人データも保存しません。';
-$string['report'] = 'アクエセシビリティレポート';
+$string['report'] = 'アクセシビリティレポート';
 $string['tablesmissingcaption'] = '表のタイトルは必須ではありませんが、一般的に有用です。';
 $string['tablesmissingheaders'] = '表には行・列の見出しを入れる必要があります。';
 $string['tableswithmergedcells'] = 'スクリーンリーダではサポートされない場合があるため、表には結合されたセルを含めないでください。';

@@ -98,4 +98,4 @@ $string['singleuse_text'] = 'Kendu zerrendatik hutsune batera eramandako element
 $string['visitquestions'] = 'Klikatu <a href={$a}>hemen</a> galderak bisitatzeko';
 $string['wronganswers'] = 'Distraitzekoak';
 $string['wronganswers_help'] = 'Erantzun zuzenetatik distraitzeko hitz okerren zerrenda. Hitzak komez banatuta daude. Bakarrik "hartu eta eraman eta "zabaltzen den zerrenda" motetan aplika daiteke';
-$string['yougotnrightcount'] = 'Ongi betetako hutsune-kopurua {$a->num} da.';
+$string['yougotnrightcount'] = 'Ongi betetako hutsune-kopurua {$a->num} {$a->gaporgaps} da guztirako {$a->outof}(e)tatik.';

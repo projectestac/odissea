@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['acknowledgement'] = '同意';
 $string['acknowledgementtext'] = '私は追加プラグインをインストールする前にこのサイトをフルバックすることは自分の責任であることを理解しています。私はプラグイン (非公開の場所から取得したものに限らず) にセキュリティホールが含まれサイトが利用不可能な状態または個人情報が漏洩または喪失する可能性があることを容認および理解します。';
+$string['activitychooserfootertext'] = 'さらに活動を閲覧する:';
 $string['featuredisabled'] = 'このサイトではプラグインインストーラが無効にされています。';
 $string['installaddon'] = 'プラグインをインストールする!';
 $string['installaddons'] = 'プラグインをインストールする';
@@ -43,6 +44,8 @@ $string['installfromzipsubmit'] = 'ZIPファイルからプラグインをイン
 $string['installfromziptype'] = 'プラグインタイプ';
 $string['installfromziptype_help'] = 'コンポーネント名が正しく宣言されているプラグインではインストーラが自動的にプラグインタイプを検出することができます。自動検出に失敗した場合、正しいプラグインタイプを手動で選択してください。注意: 正しくないプラグインタイプが指定された場合、インストール処理が失敗する可能性があります。';
 $string['installfromziptype_link'] = 'Development:Plugins';
+$string['marketplaceadminlinktext'] = '新しいプラグインを閲覧する';
+$string['marketplacelink'] = 'Moodleマーケットプレイス';
 $string['permcheck'] = 'プラグインタイプのルートロケーションがウェブサーバプロセスにより書き込み可能かどうかご確認ください。';
 $string['permcheckerror'] = '書き込み権のチェック中にエラーが発生しました。';
 $string['permcheckprogress'] = '書き込み権のチェック ...';

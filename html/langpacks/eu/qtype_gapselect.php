@@ -52,5 +52,5 @@ $string['privacy:preference:shuffleanswers'] = 'Erantzunak automatikoki nahastu 
 $string['regradeissuenumchoiceschanged'] = '{$a} taldeko aukera kopurua aldatu da.';
 $string['regradeissuenumgroupsschanged'] = 'Aukera taldeen kopurua aldatu da.';
 $string['shuffle'] = 'Nahastu';
-$string['tagsnotallowed'] = '{$a->tag} ez dago baimenduta. ({$a->tag} soilik dago baimenduta.)';
+$string['tagsnotallowed'] = '{$a->tag} ez dago baimenduta. ({$a->allowed} soilik dago baimenduta.)';
 $string['tagsnotallowedatall'] = '{$a->tag} ez dago baimenduta. (Ezin da HTML kodea erabili hemen.)';

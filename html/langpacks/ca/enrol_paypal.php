@@ -59,4 +59,4 @@ $string['pluginname_desc'] = 'El modul PayPal us permet configurar cursos de pag
 $string['sendpaymentbutton'] = 'Envia pagament via Paypal';
 $string['status'] = 'Habilita la inscripció PayPal';
 $string['status_desc'] = 'Habilita els usuaris per utilitzar PayPal per inscriure\'s al curs per defecte.';
-$string['unenrolselfconfirm'] = 'De veritat voleu cancel·lar la vostra inscripció al curs "{$a}"?';
+$string['unenrolselfconfirm'] = 'Confirmeu que voleu cancel·lar la vostra inscripció al curs «{$a}»?';

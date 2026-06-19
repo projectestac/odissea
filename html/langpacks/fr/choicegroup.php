@@ -49,6 +49,8 @@ $string['char_bullet_expanded'] = '▼';
 $string['char_limitui_parenthesis_end'] = ')';
 $string['char_limitui_parenthesis_start'] = '(';
 $string['choice'] = 'Choix';
+$string['choicebegins'] = 'Le choix commence à';
+$string['choiceends'] = 'Le choix s\'arrête à';
 $string['choicegroup:addinstance'] = 'Ajouter un nouveau choix de groupe';
 $string['choicegroup:choose'] = 'Enregistrer un choix';
 $string['choicegroup:deleteresponses'] = 'Supprimer les réponses';
@@ -68,6 +70,7 @@ Les groupes sélectionnés apparaissent sur la liste à droite.
 
 Pour supprimer des groupes de la sélection, sélectionnez-les dans la liste à droite et cliquez sur « Supprimer ».';
 $string['choicegroupsaved'] = 'Votre choix a été enregistré';
+$string['choices'] = 'Choix';
 $string['choicetext'] = 'Texte';
 $string['chooseaction'] = 'Choisir une action…';
 $string['choosegroup'] = 'Choisir un groupe';
@@ -114,8 +117,21 @@ $string['maxenrollments_help'] = 'Cette option permet de limiter le nombre d’i
 $string['members/'] = 'Membres';
 $string['members/max'] = 'Membres / Capacité';
 $string['modulename'] = 'Choix de Groupe';
-$string['modulename_help'] = 'Le module « Choix de Groupe » permet à l’enseignant de laisser l’étudiant choisir un groupe. L’enseignant peut déterminer parmi quels groupes les étudiants peuvent choisir et le nombre maximal d’étudiants dans chaque groupe.';
+$string['modulename_help'] = '###### Principales fonctionnalités
+- Permet aux étudiants de s\'inscrire eux-mêmes à des groupes au sein d\'un cours
+- Les enseignants peuvent définir la taille maximale des groupes et contrôler leur disponibilité
+- Les étudiants peuvent consulter la liste des membres d\'un groupe avant de le rejoindre
+- Possibilité de permettre aux étudiants de changer de groupe jusqu\'à une date limite
+- Prise en charge de la sélection de plusieurs groupes et du tri par nom ou par date de création
+
+###### Exemples d\'utilisation
+- Répartir les étudiants en groupes de projet ou de travail
+- Faciliter le travail en groupe pour les discussions, les travaux pratiques ou les ateliers
+- Permettre aux étudiants de choisir leurs partenaires pour les tâches collaboratives
+- Gérer la taille des groupes pour une participation équilibrée
+- Autoriser des changements de groupe flexibles avant le début des activités';
 $string['modulename_link'] = 'mod/choicegroup/view';
+$string['modulename_summary'] = 'Permet aux étudiants de choisir eux-mêmes les groupes de cours auxquels ils souhaitent s\'inscrire, avec des options relatives à la taille des groupes, à la visibilité des membres et à des délais flexibles.';
 $string['modulenameplural'] = 'Choix de Groupe';
 $string['moveselectedusersto'] = 'Déplacer les utilisateurs sélectionnés pour…';
 $string['multipleenrollmentspossible'] = 'Permettre l’inscription à plusieurs groupes';
@@ -133,6 +149,7 @@ $string['notyetresultsviewable'] = 'Les résultats ne seront visibles que lorsqu
 $string['numberofuser'] = 'Nombre d’utilisateurs';
 $string['onlyactive'] = 'Filtrer les données de réponse pour les utilisateurs dont les inscriptions ont expiré ou sont suspendues';
 $string['option'] = 'Groupe';
+$string['page-mod-choicegroup-x'] = 'Toute page du module de sélection de groupe';
 $string['pleaseselectonegroup'] = 'Veuillez sélectionner au moins un groupe parmi lequel choisir.';
 $string['pleasesetgroups'] = 'Veuillez créer au moins un groupe dans ce cours.';
 $string['pleasesetonegroupor'] = 'Veuillez créer au moins un groupe dans ce cours.<br /><br />
@@ -166,6 +183,7 @@ $string['skipresultgraph'] = 'Sauter le graphique de résultat';
 $string['sortgroupsby'] = 'Trier les groupes par';
 $string['spaceleft'] = 'espace disponible';
 $string['spacesleft'] = 'espaces disponibles';
+$string['studentswhochose'] = 'Les étudiants qui ont choisi';
 $string['systemdefault_date'] = 'Valeur par défaut du système (actuellement par la date de création des groupes)';
 $string['systemdefault_name'] = 'Valeur par défaut du système (actuellement par le nom)';
 $string['taken'] = 'Pris';

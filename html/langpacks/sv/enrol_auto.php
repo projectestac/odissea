@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['courseview'] = 'Kyrsvy';
+$string['userlogin'] = 'Användarinloggning';

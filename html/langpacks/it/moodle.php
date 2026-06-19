@@ -699,9 +699,7 @@ $string['emailconfirmation'] = 'Gentile {$a->firstname},
 
 Per confermare l\'account, devi cliccare sul link seguente:
 
-{$a->link}
-
-Nella maggior parte dei programmi di posta il link dovrebbe apparire colorato di blu ed è sufficiente cliccarlo. Se il link non dovesse essere attivo, copia e incolla il link nella barra dell\'indirizzo del tuo browser e premi il tasto invio.
+<a href="{$a->link}">Conferma account</a>
 
 Se hai bisogno di aiuto contatta l\'amministratore del sito,
 {$a->admin}';
@@ -751,12 +749,10 @@ $string['emailpasswordchangeinfo'] = 'Gentile {$a->firstname},
 
 Per cambiare la password devi cliccare sul link seguente:
 
-{$a->link}
+<a href="{$a->link}">Cambia password</a>
 
-Nella maggior parte dei programmi di posta il link dovrebbe apparire colorato
-di blu ed è sufficiente cliccarlo. Se il link non dovesse essere attivo, copia e incolla il link nella barra dell\'indirizzo del tuo browser e premi il tasto invio.
-
-Se hai bisogno di aiuto, contatta l\'amministratore del sito: {$a->admin}';
+Se hai bisogno di aiuto, contatta l\'amministratore del sito:
+{$a->admin}';
 $string['emailpasswordchangeinfodisabled'] = 'Gentile {$a->firstname},
 
 è stata richiesta una nuova password per il tuo account su \'{$a->sitename}\'.
@@ -774,12 +770,10 @@ $string['emailpasswordconfirmation'] = 'Gentile {$a->firstname},
 
 Per confermare il cambiamento e ricevere la nuova password devi cliccare sul link seguente:
 
-{$a->link}
+<a href="{$a->link}">Cambia password</a>
 
-Nella maggior parte dei programmi di posta il link dovrebbe apparire colorato
-di blu ed è sufficiente cliccarlo. Se il link non dovesse essere attivo, copia e incolla il link nella barra dell\'indirizzo del tuo browser e premi il tasto invio.
-
-Se hai bisogno di aiuto, contatta l\'amministratore del sito: {$a->admin}';
+Se hai bisogno di aiuto, contatta l\'amministratore del sito.
+{$a->admin}';
 $string['emailpasswordconfirmationsubject'] = '{$a}: Conferma cambiamento password';
 $string['emailpasswordconfirmmaybesent'] = '<p> Se hai fornito uno username corretto o un indirizzo email corretto, riceverai una email.</p>
 <p>Nel messaggio troverai le istruzioni per confermare e completare la modifica della password.
@@ -798,13 +792,15 @@ $string['emailresetconfirmation'] = 'Gentile {$a->firstname},
 è stato richiesto un cambio password del tuo account \'{$a->username}\' su \'{$a->sitename}\'.
 
 Per confermare la richiesta ed impostare una nuova password, fare click sul link seguente:
-<a href="{$a->link}">{$a->link}</a>
+
+<a href="{$a->link}">Reimposta password</a>
 
 (Il link sarà valido per {$a->resetminutes} minuti a partire dal momento in cui è stata effettuata la richiesta)
 
 Se la richiesta non è stata effettuata da te, puoi ignorare questa email.
 
-Se hai bisogno di aiuto, contatta l\'amministratore del sito, {$a->admin}';
+Se hai bisogno di aiuto, contatta l\'amministratore del sito.
+{$a->admin}';
 $string['emailresetconfirmationsubject'] = '{$a}: Richiesta recupero password';
 $string['emailresetconfirmsent'] = 'È stata inviata un\'email al tuo indirizzo di posta <b>{$a}</b>.
 <br />L\'email contiene le istruzioni per confermare la richiesta di cambio password.
@@ -1250,6 +1246,7 @@ $string['loginalready'] = 'Sei già collegato';
 $string['loginas'] = 'Login come';
 $string['loginaspasswordexplain'] = '<p>È necessario impostare la speciale "password login come" per utilizzare questa caratteristica.<br />Se non la conoscete, chiedete all\'amministratore del server.</p>';
 $string['loginguest'] = 'Login come ospite';
+$string['loginrequired'] = 'Autenticazione obbligatoria';
 $string['loginsite'] = 'Login al sito';
 $string['loginsteps'] = 'Per accedere al sito devi creare un account.';
 $string['loginstepsnone'] = '<p>Per accedere ai corsi è necessario creare un account.</p>
@@ -1539,19 +1536,16 @@ $string['newuser'] = 'Nuovo utente';
 $string['newusernewpasswordsubj'] = 'Registrazione nuovo utente';
 $string['newusernewpasswordtext'] = 'Gentile {$a->firstname},
 
-È stato creato un nuovo account su \'{$a->sitename}\'
-e ti è stata assegnata una nuova password temporanea.
+È stato creato un nuovo account su \'{$a->sitename}\'.
 
-Le tue informazioni di accesso sono:
-username: {$a->username}
-password: {$a->newpassword}
-(dovrai cambiare la tua password
-la prima volta che effettuerai l\'accesso )
+   username: {$a->username}
+   password: {$a->newpassword}
 
-Per iniziare a usare \'{$a->sitename}\', accedi a
-{$a->link}
+(dovrai cambiare la tua password la prima volta che effettuerai l\'accesso )
 
-Se hai bisogno di aiuto, puoi contattare l\'amministratore del sito,
+Per iniziare a usare \'{$a->sitename}\', <a href="{$a->link}">clicca per autenticarti</a>
+
+Se hai bisogno di aiuto, puoi contattare l\'amministratore del sito.
 {$a->signoff}';
 $string['newusers'] = 'Nuovi utenti';
 $string['newwindow'] = 'Nuova finestra';
@@ -1653,6 +1647,7 @@ $string['oneitemfound'] = 'È stato trovato 1 elemento.';
 $string['opendrawerblocks'] = 'Apri il cassetto del blocco';
 $string['opendrawerindex'] = 'Apri indice del corso';
 $string['opensinnewwindow'] = 'Apri in una nuova finestra';
+$string['opensinnewwindowbracketed'] = '(Si apre in una nuova finestra)';
 $string['operator_and'] = 'and';
 $string['operator_andnot'] = 'and not';
 $string['operator_or'] = 'or';

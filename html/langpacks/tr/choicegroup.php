@@ -118,7 +118,6 @@ $string['notopenyet'] = 'Üzgünüz, bu etkinlik {$a} kadar kullanılamıyor';
 $string['notyetresultsviewable'] = 'Sonuçlar, bu etkinlik kapatıldıktan sonra görülebilir.';
 $string['numberofuser'] = 'Kullanıcı sayısı';
 $string['option'] = 'Grup';
-$string['page-mod-choice-x'] = 'Seçim modülü sayfasında herhangi bir grup';
 $string['pleasesetgroups'] = 'Lütfen bu derste en az iki grup oluşturun.';
 $string['pleasesetonegroupor'] = 'Lütfen bu kursta en az bir grup oluşturun.<br /><br />
 <ul>

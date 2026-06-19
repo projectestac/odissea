@@ -86,7 +86,6 @@ $string['notopenyet'] = 'Desculpe, esta actividade non está dispoñíbel ata {$
 $string['notyetresultsviewable'] = 'Os resultados serán visíbeis despois de que se peche esta actividade.';
 $string['numberofuser'] = 'O número de usuario';
 $string['option'] = 'Grupo';
-$string['page-mod-choice-x'] = 'Calquera páxina do módulo de grupo de escolla';
 $string['pleasesetgroups'] = 'Cree cando menos dous grupos neste curso.';
 $string['pluginadministration'] = 'Administración de escolla';
 $string['pluginname'] = 'Grupo de escolla';

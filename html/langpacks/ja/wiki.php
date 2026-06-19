@@ -133,7 +133,7 @@ $string['indicator:socialbreadth_help'] = 'この指標はWiki活動で学生が
 $string['indicator:socialbreadthdef'] = 'Wiki社会的';
 $string['indicator:socialbreadthdef_help'] = 'この分析間隔中、参加者がWiki活動から提供された社会的関与のこのパーセンテージに到達しました (レベル = 参加なし, 個人で参加, 他の人と参加)。';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['individualpagedoesnotexist'] = '個人Wikiページは存在していません。';
+$string['individualpagedoesnotexist'] = '個人Wikiページは存在しません。';
 $string['insertcomment'] = 'コメントを追加する';
 $string['insertimage'] = 'イメージを挿入する ...';
 $string['insertimage_help'] = 'ドロップダウンリストによりイメージをWikiエディタに追加することができます。あなたがさらにイメージを追加したい場合、「ファイル」タブを使用してください。';

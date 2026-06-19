@@ -33,11 +33,9 @@ $string['confirmaccountemail'] = 'Beste {$a->firstname},
 
 Er is een nieuwe account voor jou aangevraagd op \'{$a->sitename}\' met jouw e-mailadres.
 
-Ga naar volgend webadres om je nieuwe account te bevestigen:
+Klik op onderstaande link om je nieuwe account te bevestigen:
 
-{$a->link}
-
-In de meeste e-mailprogramma\'s zou dit als een blauwe link moeten verschijnen waarop je gewoon kan klikken. Als dat niet werkt, knip en plak het adres dan in de adresbalk bovenaan je webbrowser.
+<a href="{$a->link}">Bevestig je account</a>
 
 Als je hulp nodig hebt, contacteer dan de site-beheerder,
 {$a->admin}
@@ -50,11 +48,9 @@ $string['confirmlinkedloginemail'] = 'Beste {$a->firstname},
 
 Er is gevraagd om de account {$a->issuername} te koppelen aan jouw account {$a->linkedemail} op \'{$a->sitename}\' met jouw e-mailadres.
 
-Ga om deze vraag te te bevestigen en deze accounts te koppelen naar volgend webadres:
+Om deze vraag te te bevestigen en deze accounts te koppelen, klik op onderstaande link:
 
-{$a->link}
-
-In de meeste e-mailprogramma\'s zou dit als een blauwe link moeten verschijnen waarop je gewoon kan klikken. Als dat niet werkt, knip en plak het adres dan in de adresbalk bovenaan je webbrowser.
+<a href="{$a->link}">Koppel je accounts</a>
 
 Als je hulp nodig hebt, contacteer dan de site-beheerder,
 {$a->admin}

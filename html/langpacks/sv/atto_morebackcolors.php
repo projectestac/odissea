@@ -26,3 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['availablecolors'] = 'Valbara färger';
+$string['hexadecimal'] = 'Hexadecimal:';
+$string['rgb'] = 'RGB:';
+$string['saturation'] = 'Färgmättnad:';
+$string['submit'] = 'Skicka';

@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['editor:a11ytitlehidelabel'] = 'Скрыть ярлык ВТ';
-$string['editor:a11ytitleshowlabel'] = 'Показать ярлык ВТ';
+$string['editor:a11ytitlehidelabel'] = 'Скрыть метку для ВТ';
+$string['editor:a11ytitleshowlabel'] = 'Показать метку для ВТ';
 $string['editor:add'] = 'Добавить';
 $string['editor:addauthor'] = 'Сохранить автора';
 $string['editor:addentity'] = 'Добавить :entity';
@@ -170,11 +170,11 @@ $string['editor:numresults'] = 'результатов - :num';
 $string['editor:ok'] = 'OK';
 $string['editor:onlynumbers'] = 'Значение :property может содержать только числа.';
 $string['editor:or'] = 'или';
-$string['editor:orderitemdown'] = 'Упорядочить элементы по убыванию';
-$string['editor:orderitemup'] = 'Упорядочить элементы по возрастанию';
+$string['editor:orderitemdown'] = 'Разместить ниже';
+$string['editor:orderitemup'] = 'Разместить выше';
 $string['editor:outofstep'] = 'Значение :property можно изменять только пошагово от :step.';
 $string['editor:pasteandreplacebutton'] = 'Вставить и заменить';
-$string['editor:pasteandreplacefromclipboard'] = 'Заменить существующий контент контентом H5P из буфера обмена';
+$string['editor:pasteandreplacefromclipboard'] = 'Заменить существующий контент содержимым H5P из буфера обмена';
 $string['editor:pastebutton'] = 'Вставить';
 $string['editor:pastecontent'] = 'Заменить контент';
 $string['editor:pastecontentnotsupported'] = 'Содержимое буфера обмена H5P не поддерживается в этом контексте.';

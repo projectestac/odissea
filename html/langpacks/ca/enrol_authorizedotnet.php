@@ -29,3 +29,4 @@ $string['enrolenddate'] = 'Data de finalització';
 $string['enrolperiod'] = 'Durada de la inscripció';
 $string['enrolperiod_help'] = 'Període de temps durant el qual la inscripció és vàlida; comença en el moment en què l\'usuari s\'ha inscrit. Si s\'inhabilita, la durada de la inscripció esdevé il·limitada.';
 $string['mailstudents'] = 'Notifica-ho als estudiants';
+$string['unenrolselfconfirm'] = 'Confirmeu que voleu cancel·lar la vostra inscripció al curs «{$a}»?';

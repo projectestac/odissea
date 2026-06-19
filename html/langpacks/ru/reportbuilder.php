@@ -50,6 +50,7 @@ $string['audiencecreated'] = 'Адресаты созданы';
 $string['audiencedeleted'] = 'Удалены адресаты «{$a}»';
 $string['audiencedeletedevent'] = 'Адресаты удалены';
 $string['audiencelabel'] = '{$a->name}: {$a->description}';
+$string['audiencemultiselectpostfix'] = '{$a->elements} плюс еще {$a->morecount}';
 $string['audiencenotsaved'] = 'Адресаты не сохранены';
 $string['audiencesaved'] = 'Адресаты сохранены';
 $string['audienceupdated'] = 'Адресаты обновлены';

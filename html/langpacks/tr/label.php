@@ -51,11 +51,11 @@ $string['labeltext'] = 'Metin';
 $string['modulename'] = 'Metin ve ortam alanı';
 $string['modulename_help'] = 'Metin ve ortam alanı, kurs sayfasında metin ve çoklu ormatmları görüntülemenizi sağlar.
 
-Metin ve ortam alanı;
+Metin ve ortam alanı:
 
 * Bir alt başlık veya bir resim ile uzun bir etkinlik listesini ayrıştırmak için
 * Gömülü bir ses dosyasını veya videoyu doğrudan ders sayfasında görüntülemek için
-* Kurs bölümüne kısa bir açıklama eklemek için kullanabilirsiniz';
+* Kurs bölümüne kısa bir açıklama eklemek için kullanabilirsiniz.';
 $string['modulename_link'] = 'mod/label/view';
 $string['modulenameplural'] = 'Metin ve medya alanları';
 $string['pluginadministration'] = 'Metin ve medya alanı yönetimi';

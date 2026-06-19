@@ -277,7 +277,11 @@ Puede verlo junto a su envio de la tarea
     {$a->url}';
 $string['feedbackavailablehtml'] = '{$a->username} ha aportado alguna retroalimentación en su entrega de la tarea \'<i>{$a->assignment}</i>\'<br /><br /> Puede verla añadida <a href="{$a->url}">a su entrega</a>.';
 $string['feedbackavailablesmall'] = '{$a->username} ha hecho un comentario en la tarea {$a->assignment}';
-$string['feedbackavailabletext'] = '{$a->username}  ha publicado retroalimentación a su envío de tarea para \'{$a->assignment}\' Usted puede verla incluída en suenvío de tarea';
+$string['feedbackavailabletext'] = '{$a->username}  ha publicado retroalimentación a su envío de tarea para "{$a->assignment}".
+
+Usted puede verla incluida en su envío de tarea:
+
+ {$a->url}';
 $string['feedbackplugin'] = 'Extensión de retroalimentacion';
 $string['feedbackpluginforgradebook'] = 'Extensión de retroalimentación que sube los comentarios al libro de calificaciones';
 $string['feedbackpluginforgradebook_help'] = 'Solo una extensión de retroalimentación de la tarea puede introducir los comentarios en el libro de calificaciones.';

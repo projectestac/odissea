@@ -47,6 +47,7 @@ $string['alreadyfilled'] = 'Usted ya ha cumplimentado la encuesta {$a}. Gracias'
 $string['andaveragevalues'] = 'y valores medios';
 $string['anonymous'] = 'Anónimo';
 $string['answer'] = 'Respuesta';
+$string['answered'] = 'Contestado';
 $string['answergiven'] = 'Esta respuesta dada';
 $string['answernotgiven'] = 'Esta respuesta no dada';
 $string['answerquestions'] = 'Responda a las preguntas...';
@@ -90,6 +91,7 @@ $string['checkbreaksok'] = 'Todos los saltos de página requeridos están presen
 $string['checkbreaksremoved'] = 'Eliminar {$a} salto(s) de página extra.';
 $string['checknotstarted'] = 'Seleccione sin iniciar';
 $string['checkstarted'] = 'Seleccione iniciado';
+$string['cleanrecylebin'] = '"Papelera de reciclaje" de cuestionarios vacíos';
 $string['clicktoswitch'] = '(Haga click para activar)';
 $string['closebeforeopen'] = 'Usted ha especificado una fecha de cierre anterior a la fecha de apertura.';
 $string['closed'] = 'Cerró el {$a}.';
@@ -109,6 +111,7 @@ $string['confirmdelallresp'] = '¿Está seguro que quiere eliminar TODAS las res
 $string['confirmdelchildren'] = 'Si borra esta pregunta, la/s subpregunta/s relacionada/s también serán borradas:';
 $string['confirmdeletesection'] = '¿Está seguro de querer eliminar la sección de retroalimentación "{$a}"?';
 $string['confirmdelgroupresp'] = '¿Está seguro que quiere eliminar TODAS las respuestas de{$a}?';
+$string['confirmdelpermanentlyq'] = '¿Seguro que desea eliminar permanentemente esta sesión?';
 $string['confirmdelquestion'] = 'Está seguro que quiere borrar la pregunta de la posición {$a}?';
 $string['confirmdelquestionresps'] = 'Esto también borrará la/s {$a} respuesta/s ya dadas a la pregunta.';
 $string['confirmdelresp'] = '¿Está seguro que desea eliminar la respuesta de {$a}?';
@@ -119,6 +122,7 @@ $string['confpagedesc'] = 'Título (en negrita) y cuerpo del texto para la pági
 $string['contentoptions'] = 'Tipo de Cuestionario';
 $string['couldnotcreatenewsurvey'] = 'No se pudo crear una nueva encuesta!';
 $string['couldnotdelresp'] = 'No ha sido posible borrar las respuestas';
+$string['couldnotdelrespby'] = 'No se pudo borrar la respuesta {$a->rid} de {$a->user}';
 $string['createcontent'] = 'Definir nuevo contenido';
 $string['createcontent_help'] = 'Seleccione una de las opciones del botón de radio. \'Crear nuevo\' es el valor predeterminado.';
 $string['createcontent_link'] = 'mod/questionnaire/mod#Content_Options';
@@ -135,9 +139,14 @@ $string['deletedallgroupresp'] = 'Todas las respuestas del grupo {$a} han sido b
 $string['deletedallresp'] = 'Respuestas eliminadas';
 $string['deletedisabled'] = 'Esta pregunta no se puede eliminar';
 $string['deletedresp'] = 'Respuestas borradas';
+$string['deletepermanentlybutton'] = 'Borrar pregunta permanentemente';
+$string['deletequestionsolderthan'] = 'Borrar preguntas más antiguas de';
 $string['deleteresp'] = 'Borrar esta respuesta';
 $string['deletesection'] = 'Eliminar esta sección';
+$string['deletesettingdescription'] = 'La tarea programada borrará preguntas de la zona de eliminación que sean más antiguas que estos días';
 $string['deletingresp'] = 'Supresión de respuestas';
+$string['deletionquetions'] = 'Zona de eliminación de preguntas';
+$string['deletionquetions_help'] = 'Las preguntas borradas o huérfanas se moverán primero aquí en vez de eliminarse directamente. Las preguntas pueden borrarse permanentemente o bien manualmente como presionando el icono "X", o bien porque el sistema las eliminará automáticamente pasada una semana. Use el botón "flecha arriba" para restaurar la pregunta.';
 $string['dependencies'] = 'Dependencias';
 $string['dependquestion'] = 'Pregunta Padre';
 $string['dependquestion_help'] = 'Usted puede seleccionar una pregunta padre y una opción elegible para esta pregunta. Una pregunta hija solamente se le mostrará al estudiante si su pregunta padre y opción padre han sido previamente seleccionadas.';
@@ -156,6 +165,7 @@ $string['downloadtypes'] = 'Tipo de reporte';
 $string['dropdown'] = 'Lista desplegable';
 $string['dropdown_help'] = 'No hay ninguna ventaja real de utilizar el cuadro desplegable sobre el uso de los botones de radio, excepto tal vez para las listas bastante largas de opciones, para ahorrar espacio en la pantalla.';
 $string['dropdown_link'] = 'mod/questionnaire/questions#Dropdown_Box';
+$string['duedate'] = 'Vencimiento';
 $string['edit'] = 'Editar';
 $string['editingfeedback'] = 'Editando configuraciones de retroalimentación';
 $string['editingquestionnaire'] = 'Modificación de cuestionario - página General';
@@ -171,6 +181,7 @@ $string['emailsend'] = 'Enviar reportes';
 $string['emailsnotspecified'] = 'No se especificó Email(s)';
 $string['emailssent'] = 'Descargas enviadas a Email(s) específicado(s)';
 $string['enabled'] = 'Habililtado';
+$string['enterpossibleanswers'] = 'Introduzca respuestas posibles';
 $string['errnewname'] = 'Lo sentimos, ese nombre ya está en uso. Seleccione un nuevo nombre.';
 $string['erroropening'] = 'Error al abrir el cuestionario.';
 $string['errortable'] = 'Error de sistema (tabla corrupta).';
@@ -247,6 +258,8 @@ $string['fieldlength'] = 'Longitud de la caja de texto';
 $string['fieldlength_help'] = 'Para la pregunta de tipo **Caja de Texto**, introduzca el **Largo de Caja de Texto** y la **Longitud Máxima del Texto** para el texto que será tecleado por quien responde.
 
 Los valores por defecto son 20 caracteres para el ancho de la caja de Texto y 25 caracteres para la longitud máxima del texto introducido.';
+$string['file'] = 'Archivo';
+$string['file_help'] = 'Permite al usuario subir un archivo (sólo se permiten formatos sencillos, libres de virus)';
 $string['finished'] = '¡ Ya has respondido todas las preguntas de este cuestionario!';
 $string['firstrespondent'] = 'Primera persona en responder';
 $string['formateditor'] = 'Editor HTML';
@@ -343,6 +356,7 @@ $string['noresponsedata'] = 'No hay respuestas para esta pregunta.';
 $string['noresponses'] = 'Sin respuestas';
 $string['normal'] = 'Normal';
 $string['not_started'] = 'No empezado';
+$string['notanswered'] = 'Sin respuesta';
 $string['notanumber'] = '<strong>{$a}</strong> no es un formato de número válido.';
 $string['notapplicable'] = 'NS/NC';
 $string['notapplicablecolumn'] = 'Columna NS/NC';
@@ -502,6 +516,7 @@ $string['questionnairereport'] = 'Informe de la encuesta';
 $string['questionnum'] = 'Pregunta #';
 $string['questions'] = 'Preguntas';
 $string['questionsinsection'] = 'Preguntas en esta sección:';
+$string['questiontypeandname'] = '[{$a->type}] ({$a->name})';
 $string['questiontypes'] = 'Tipos de preguntas';
 $string['questiontypes_help'] = 'Mira la Documentación de Moodle a continuación';
 $string['questiontypes_link'] = 'mod/questionnaire/questions#Question_Types';
@@ -513,14 +528,12 @@ $string['ratescale'] = 'Escala Likert (1..5)';
 $string['ratescale_help'] = 'Mira la Documentación de Moodle a continuación';
 $string['ratescale_link'] = 'mod/questionnaire/questions#Rate_.28scale_1..5.29';
 $string['realm'] = 'Tipo de Encuesta';
-$string['realm_help'] = '* ** Hay tres tipos de encuesta:**
-
-* Privada  - pertenece solo al curso en el que se ha definido
-
-* Plantilla * - puede ser copiada y editada.
-
+$string['realm_help'] = '**Hay tres tipos de encuesta:**
+* Privada  - pertenece solo al curso en el que se ha definido.
+* Plantilla  - puede ser copiada y editada.
 * Pública  - se puede compartir entre cursos.';
 $string['realm_link'] = 'mod/questionnaire/qsettings#Questionnaire_Type';
+$string['recylebindisabled'] = '<span class="timedeletednext7days">La eliminación automática está deshabilitada</span>';
 $string['redirecturl'] = 'La URL a la que el usuario será redireccionado después de completar esta encuesta.';
 $string['remove'] = 'Suprimir';
 $string['removeallquestionnaireattempts'] = 'Eliminar todas las respuestas del cuestionario';
@@ -535,6 +548,7 @@ $string['required_link'] = 'mod/questionnaire/questions#Response_Required';
 $string['requiredparameter'] = 'Falta un parámetro obligatorio.';
 $string['reset'] = 'Reinicializar';
 $string['respeligiblerepl'] = '(reemplazado por la gestión de roles)';
+$string['responded'] = 'Contestado';
 $string['respondent'] = 'Encuestado';
 $string['respondenteligibleall'] = 'Todo el mundo';
 $string['respondenteligiblestudents'] = 'Sólamente los estudiantes';
@@ -560,6 +574,7 @@ $string['responseviewstudentsalways'] = 'Siempre';
 $string['responseviewstudentsnever'] = 'Nunca';
 $string['responseviewstudentswhenanswered'] = 'Después de responder a la encuesta';
 $string['responseviewstudentswhenclosed'] = 'Después de que la encuesta se cierre';
+$string['restorebutton'] = 'Restaurar esta pregunta';
 $string['restrictedtoteacher'] = 'Estas funciones están restringidas a los profesores';
 $string['resume'] = 'Guardar / Continuar';
 $string['resume_help'] = 'Esta opción permite a los usuarios guardar sus respuestas a una encuesta antes de enviarla. Los usuarios pueden dejar sin terminar la encuesta y reanudarla posteriormente desde el punto de guardador.';
@@ -604,6 +619,7 @@ $string['stepvalue_help'] = 'El valor incremental del deslizador especifica con 
 $string['strfdate'] = '%d/%m/%Y';
 $string['strfdateformatcsv'] = 'd/m/Y H:i:s';
 $string['strictdateformatting'] = 'Introduzca la fecha usando el siguiente selector de fechas.';
+$string['studentwhoresponded'] = 'Estudiantes que respondieron';
 $string['subject'] = 'Asunto';
 $string['submissionnotificationhtmlanon'] = 'Hay un nuevo <a href="{$a->submissionurl}">envío</a> de la encuesta "{$a->name}".';
 $string['submissionnotificationhtmluser'] = '<a href="{$a->profileurl}">{$a->username}</a> tiene una nueva <a href="{$a->submissionurl}">entrega</a> del "{$a->name}" cuestionarioi del curso "{$a->coursename}".';
@@ -640,6 +656,7 @@ $string['thismonth'] = 'este mes';
 $string['thisresponse'] = 'Esta respuesta';
 $string['thisweek'] = 'esta semana';
 $string['thousands'] = 'No use separadores de mil.';
+$string['timedeletednext7days'] = '<span class="timedeletednext7days">Momento de eliminación permanente: noche del {$a}</strong>';
 $string['title'] = 'Título';
 $string['title_help'] = 'Título de la encuesta que aparecerá en la parte superior de cada página. Por defecto Título será el nombre de la encuesta, pero podrá editarlo si lo desea.';
 $string['today'] = 'hoy';
@@ -667,6 +684,7 @@ Esta lista desplegable permite al usuario "filtrar"  las respuestas a la encuest
 
 Si el ajuste es **Modo de grupo**: *Grupos separados *, los usuarios que no tienen la capacidad *moodle/site:accessallgroups capacidad* (por lo general, los  Estudiantes o los Profesores sin capacidad de edición, etc), sólo podrán ver las respuestas de los grupos a los que pertenecen.';
 $string['viewallresponses_link'] = 'Viewing_Questionnaire_responses#Group_filtering';
+$string['viewallxresponses'] = 'Ver todas las {$a} respuestas';
 $string['viewbyresponse'] = 'Lista de respuestas';
 $string['viewindividualresponse'] = 'Respuestas individuales';
 $string['viewindividualresponse_help'] = 'Clique en los nombres de los participants de la lista siguiente para ver sus respuestas individuales.';

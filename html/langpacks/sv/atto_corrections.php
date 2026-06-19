@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addcomment'] = 'Lägg till';
+$string['corrections:canmarkup'] = 'Använd markup';
+$string['corrtext'] = 'Kommentar';

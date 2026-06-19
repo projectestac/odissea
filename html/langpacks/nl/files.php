@@ -57,7 +57,7 @@ $string['redactor:exifremover:failedprocessgd'] = 'Redactie mislukt: kon bestand
 $string['redactor:exifremover:heading'] = 'ExifTool';
 $string['redactor:exifremover:mimetype'] = 'Ondersteunde MIME-types';
 $string['redactor:exifremover:mimetype_desc'] = 'Om nieuwe MIME-types toe te voegen met je er voor zorgen dat ze bij de <a href="./tool/filetypes/index.php">Bestandstypes</a> staan.';
-$string['redactor:exifremover:removetags'] = 'De EXIF-tag zal verwijderd worden';
+$string['redactor:exifremover:removetags'] = 'Te verwijderen EXIF-tags';
 $string['redactor:exifremover:removetags_desc'] = 'De EXIF-tags die verwijderd moeten worden.';
 $string['redactor:exifremover:tag:all'] = 'Alle';
 $string['redactor:exifremover:tag:gps'] = 'Enkel GPS';

@@ -205,6 +205,7 @@ $string['showseczerocoursewide'] = 'Mostra la secció zero al capdamunt de totes
 $string['tileicon'] = 'Icona o fotografia per mostrar només en aquest mosaic';
 $string['tileicon_help'] = 'L\'element que se seleccioni aquí substituirà, només per a aquest mosaic, qualsevol icona de mosaic que s\'hagi establert al nivell del curs.';
 $string['tileicons'] = 'Icones del mosaic';
+$string['tileselecttip'] = 'Al curs, amb el mode d\'edició activat, cliqueu la icona o la fotografia que vulgueu canviar. S\'obrirà la finestra del selector d\'icones.';
 $string['uploadnewphoto'] = 'Puja una foto nova';
 $string['uploadnewphoto_help'] = 'Puja una imatge per utilitzar-la en aquest mosaic';
 $string['usesubtilesseczero'] = 'Utilitza submosaics a la secció de dalt de tot';

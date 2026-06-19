@@ -374,11 +374,11 @@ $string['submissionstartdatetime'] = 'Bidalketetarako hasiera-data: {$a->daydate
 $string['submissionstartevent'] = '{$a} hasiko da bidalketa-fasea';
 $string['submissiontitle'] = 'Izenburua';
 $string['submissiontypedisabled'] = 'Bidalketa mota hau desgatiu da tailer honetan.';
-$string['submissiontypefileavailable'] = 'Fitxategi-eransketa <span class="accesshide">eskuragarria</span>';
-$string['submissiontypefilerequired'] = '<span class="accesshide">Fitxategi-eransketa </span> Nahitaezkoa';
+$string['submissiontypefileavailable'] = 'Fitxategi-eransketa <span class="accesshide">eskuragarri dago</span>';
+$string['submissiontypefilerequired'] = '<span class="accesshide">Fitxategi-eransketa</span> beharrezkoa da';
 $string['submissiontypes'] = 'Bidalketa-motak';
-$string['submissiontypetextavailable'] = 'On-line testua<span class="accesshide"> eskuragarri</span>';
-$string['submissiontypetextrequired'] = '<span class="accesshide">On-line testua </span>beharrezkoa';
+$string['submissiontypetextavailable'] = 'On-line testua <span class="accesshide">eskuragarri dago</span>';
+$string['submissiontypetextrequired'] = '<span class="accesshide">On-line testua</span> beharrezkoa da';
 $string['submittednotsubmitted'] = 'Bidalita ({$a->submitted}) / bidali gabe ({$a->notsubmitted})';
 $string['subplugintype_workshopallocation'] = 'Bidalketak esleitzeko metodoa';
 $string['subplugintype_workshopallocation_plural'] = 'Bidalketak esleitzeko metodoak';

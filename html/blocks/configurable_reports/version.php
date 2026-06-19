@@ -27,10 +27,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2024051300;
-$plugin->requires = 2017111300;
+$plugin->version = 2027050401;
+$plugin->requires = 2022041900; // Requires this Moodle version, 4.0.
 $plugin->maturity = MATURITY_STABLE;
-$plugin->release = '4.1.0';
-$plugin->supported = [400, 401];
+$plugin->release = '5.2.0';
+$plugin->supported = [400, 500];
 $plugin->component = 'block_configurable_reports';
 $plugin->cron = 86400;

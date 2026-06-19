@@ -25,12 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activity'] = 'Activiteit';
 $string['addcertpage'] = 'Voeg pagina toe';
 $string['addelement'] = 'Voeg element toe';
+$string['alignleft'] = 'Links uitlijnen';
+$string['alignment'] = 'Uitlijning';
+$string['alignright'] = 'Rechts uitlijnen';
 $string['awardedto'] = 'Uitgereikt aan';
 $string['cannotverifyallcertificates'] = 'Je hebt geen toestemming om alle certificaten op deze site te verificeren.';
 $string['certificate'] = 'Certificaat';
+$string['certificatesperrun'] = 'Certificaten per run';
 $string['code'] = 'Code';
+$string['codegenerationmethod'] = 'Methode voor het genereren van code';
 $string['copy'] = 'Kopie';
 $string['coursetimereq'] = 'Aantal verplichte minuten in de cursus';
 $string['coursetimereq_help'] = 'Vul hier het minimum aantal minuten in dat een leerling in de cursus moet bezig zijn, voordat ze een certificaat mogen ontvangen.';
@@ -159,6 +165,8 @@ $string['refpoint'] = 'Locatie referentiepunt';
 $string['refpoint_help'] = 'Het referentiepunt is de locatie van een element waarvan de x en y coördinaten zijn vastgesteld. De \'+\'  die in het midden of in de hoeken van het element getoond wordt, is de indicatie.';
 $string['replacetemplate'] = 'Vervang';
 $string['requiredtimenotmet'] = 'Je moest tenminste {$a->requiredtime} minuten in de cursus bezig zijn geweest voor je toegang krijgt tot dit certificaat.';
+$string['returncourse'] = 'Terug naar cursus knop';
+$string['returncourselabel'] = 'Terug naar cursus';
 $string['rightmargin'] = 'Rechtermarge';
 $string['rightmargin_help'] = 'Dit is de rechtermarge van het PDF-certificaat in mm.';
 $string['save'] = 'Bewaren';

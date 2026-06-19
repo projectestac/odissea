@@ -860,11 +860,11 @@ Je account  met gebruikersnaam {$a->username} op server {$a->sitename} is geblok
 
 Om je account onmiddellijk vrij te geven ga je naar volgend adres:
 
-{$a->link}
 
-In de meeste e-mailprogramma\'s zou dit als een blauwe link moeten verschijnen, waarop je gewoon kunt klikken. Als dat niet werkt, kopieer en plak de link dan in de adresbalk van je webbrowser.
+<a href="{$a->link}">Account vrijgeven</a>
 
-Als je meer hulp nodig hebt, neem dan contact op met je site-beheerder, {$a->admin}';
+Als je meer hulp nodig hebt, neem dan contact op met je site-beheerder.
+{$a->admin}';
 $string['lockoutemailsubject'] = 'Je account op {$a} is geblokkeerd';
 $string['lockouterrorunlock'] = 'Ongeldige deblokkeerinformatie gegeven.';
 $string['lockoutthreshold'] = 'Duur blokkering account';
@@ -905,6 +905,7 @@ $string['managelang'] = '<b>Beheer</b>';
 $string['manageqbanks'] = 'Plugins voor vragenpool beheren';
 $string['manageqbehaviours'] = 'Beheer gedrag van vragen';
 $string['manageqtypes'] = 'Beheer vraagtypes';
+$string['marketplaceavailablenotice'] = 'Zoek en download plugins op <a href="{$a}" target="_blank" rel="noopener noreferrer">Moodle Marketplace <i class="fa fa-external-link" role="img" aria-label="Opent in nieuw venster" title="Opent in nieuw venster"></i></a>.';
 $string['maturity100'] = 'Beta';
 $string['maturity150'] = 'Release kandidaat';
 $string['maturity200'] = 'Stabiele versie';
@@ -970,6 +971,7 @@ $string['moodlebrandedapp'] = 'Branded Moodle app';
 $string['moodlebrandedapp_help'] = '<p>De Branded Moodle app heeft alle functionaliteit van de gratis moodle app voor Moodle, maar met jouw huisstijl toegevoegd.</p>
 <a href="https://moodle.com/branded-app">Over de Branded Moodle app</a>';
 $string['moodlebrandedappreference'] = 'Je kunt ook een  <a href="https://moodle.com/branded-app">Branded Moodle app</a>, aangepast aan je huisstijl bekomen.';
+$string['moodlenetremovalwarning'] = 'The MoodleNet service stopt op 20 april 2026. Als je MoodleNet wil blijven gebruiken op je site, installeer dan de MoodleNet plugin van de <a href="https://github.com/moodlehq/moodle-tool_moodlenet" target="_blank">Moodle HQ GitHub repository <i class="fa fa-external-link" role="img" aria-label="Opent in nieuw venster" title="Opent in nieuw venster"></i></a> en verbind het met een zelf gehoste MoodleNet server. Hierna zal het MoodleNet profile ID veld verwijderd worden. Migreer je gegevens als je dit voor andere doeleinden gebruikt.';
 $string['moodlepartners'] = 'Moodle Partners';
 $string['moodlepartners_help'] = '<p>Moodle Partners zijn door Moodle HQ gecertificeerde dienstverleners die hoge kwaliteits Moodle dienstverlening leveren voor de online leeromgeving van jouw organisatie.</p>
 <a href="https://moodle.com/about-partners/">Over onze Partners</a><br />

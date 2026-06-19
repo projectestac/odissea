@@ -45,4 +45,3 @@ $string['helplinktext'] = 'Cloze question editor';
 
 // Deprecated since Tiny cloze editor 1.12.
 $string['cloze:viewplugin'] = 'Helper to edit cloze questions';
-

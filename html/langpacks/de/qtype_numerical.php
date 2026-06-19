@@ -62,7 +62,7 @@ Bedenken Sie, dass auch die eingeräumte Fehlertoleranz multipliziert wird; Lieg
 $string['oneunitshown'] = 'Die Einheit wird automatisch neben der Texteingabe angezeigt.';
 $string['onlynumerical'] = 'Die Einheiten werden nicht benutzt. Nur der Zahlenwert wird bewertet.';
 $string['pleaseenterananswer'] = 'Geben Sie bitte eine Antwort ein';
-$string['pleaseenteranswerwithoutthousandssep'] = 'Geben Sie bitte Ihre Antwort ohne ein Trennungzeichen ({$a}) zwischen den Tausendern ein.';
+$string['pleaseenteranswerwithoutthousandssep'] = 'Geben Sie Ihre Antwort ohne ein Trennzeichen ({$a}) zwischen den Tausendern ein.';
 $string['pluginname'] = 'Numerisch';
 $string['pluginname_help'] = 'Aus Nutzersicht sehen numerische Fragen wie gewöhnliche Kurztextfragen aus. Der Unterschied liegt darin, dass numerische Fragen mit einer Fehlertoleranz versehen werden können. Beispiel: Ist die Antwort 10 und die Fehlertoleranz liegt bei 2, so sind alle Antworten von 8 bis 12 richtig.';
 $string['pluginname_link'] = 'question/type/numerical';

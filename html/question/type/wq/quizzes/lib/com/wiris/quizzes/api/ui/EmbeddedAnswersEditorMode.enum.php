@@ -1,6 +1,6 @@
 <?php
 
-class com_wiris_quizzes_api_ui_EmbeddedAnswersEditorMode extends Enum {
+class com_wiris_quizzes_api_ui_EmbeddedAnswersEditorMode extends HxEnum {
 	public static $AUTHORING;
 	public static $DELIVERY;
 	public static $REVIEW;

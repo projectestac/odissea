@@ -172,18 +172,18 @@ $string['emailaddress'] = 'Dirección Email';
 $string['emailaddressdescription'] = 'La dirección Email será usada por H5P para ponerse en contacto con el publicador en el caso de que hubiera algún problema con el contenido, o en el caso de que el publicador necesite recuperar su cuenta.  No será publicada ni compartida con ningún tercero';
 $string['emailconfirmbody'] = 'Hola {$a->username},
 
-Gracias por enviar tus respuestas a \'{$a->hvpname}\' en el curso \'{$a->coursename}\'.
+Gracias por enviar sus respuestas a \'{$a->hvpname}\' en el curso \'{$a->coursename}\'.
 
-Este mensaje confirma que tus respuestas han sido guardadas.
+Este mensaje confirma que sus respuestas han sido guardadas.
 
-Puedes acceder a este H5P en {$a->hvpurl}.';
+Puede acceder a este H5P en {$a->hvpurl}.';
 $string['emailconfirmsmall'] = 'Gracias por enviar tus respuestas a \'{$a->hvpname}\'';
 $string['emailconfirmsubject'] = 'Confirmación de envío: {$a->hvpname}';
 $string['emailnotifybody'] = 'Hola {$a->username},
 
 {$a->studentname} ha completado \'{$a->hvpname}\' ({$a->hvpurl}) en el curso \'{$a->coursename}\'.
 
-Puedes revisar este intento en {$a->hvpreporturl}.';
+Puede revisar este intento en {$a->hvpreporturl}.';
 $string['emailnotifysmall'] = '{$a->studentname} ha completado {$a->hvpname}. Mira en {$a->hvpreporturl}';
 $string['emailnotifysubject'] = '{$a->studentname} ha completado {$a->hvpname}';
 $string['embed'] = 'Incrustar';

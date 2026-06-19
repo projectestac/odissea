@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['add'] = 'Afegeix BDN';
+$string['addstu'] = 'Afegeix grups';
 $string['edit'] = 'Edita';
 $string['facility_to_moodle:validateparentdata'] = 'Validar els pares';
 $string['labelmisc'] = 'Opcions diverses';

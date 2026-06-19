@@ -2,6 +2,10 @@
 
 ## Changes
 
+### V1.3
+
+- Support for Moodle 5.2
+
 ### V1.2
 
 - Fix [Background color choosen via background colorpicker is saved as text color #24](https://github.com/bfh/moodle-tiny_fontcolor/issues/24)

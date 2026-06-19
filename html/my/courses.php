@@ -33,6 +33,13 @@ require_once($CFG->dirroot . '/course/lib.php');
 
 redirect_if_major_upgrade_required();
 
+// XTEC ************ AFEGIT - Allow CORS from web.additioapp.com.
+// 2026.06.04 @aginard
+header('Access-Control-Allow-Origin: https://web.additioapp.com');
+header('Access-Control-Allow-Headers: range');
+header('Access-Control-Expose-Headers: Content-Range');
+// ***************** FI
+
 require_login();
 
 $hassiteconfig = has_capability('moodle/site:config', context_system::instance());

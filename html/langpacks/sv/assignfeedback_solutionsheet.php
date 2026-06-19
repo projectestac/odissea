@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['confirmtitle'] = 'Bekräfta';
+$string['default'] = 'Aktiverad som standard';
 $string['enabled_link'] = 'assignfeedback/solutionsheet';
 $string['yesfromprefix'] = 'Ja,';
 $string['yesimmediate'] = 'Ja, från och med nu';

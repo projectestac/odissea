@@ -85,7 +85,7 @@ $string['group_memberofattribute'] = 'Nom de l\'atribut que especifica a quins g
 $string['group_memberofattribute_key'] = 'Atribut « Membre de »';
 $string['host_url'] = 'Especifiqueu el servidor LDAP en forma d\'URL, p. ex. \'ldap://ldap.myorg.com/\' o \'ldaps://ldap.myorg.com/\'.';
 $string['host_url_key'] = 'URL del servidor';
-$string['idnumber_attribute'] = 'Si els membres del grup contenen noms distingits , especifiqueu el mateix atribut que heu utilitzat per al mapat  de l\'usuari «Nombre d\'identificació » als paràmetres d\'autenticació LDAP.';
+$string['idnumber_attribute'] = 'Si els membres del grup contenen noms distintius, especifiqueu el mateix atribut que heu utilitzat per al mapatge de l\'usuari «Nombre d\'identificació» als paràmetres d\'autenticació LDAP.';
 $string['idnumber_attribute_key'] = 'Atribut amb nombre ID';
 $string['ldap:manage'] = 'Gestiona les instàncies d\'inscripció LDAP';
 $string['ldap_encoding'] = 'Especifica la codificació utilitzada pel servidor LDAP. Molt probablement sigui utf-8, MS AD v2 utilitza la codificació per defecte de la plataforma, això és, cp1252, cp1250, etc.';
@@ -124,7 +124,7 @@ $string['unassignrole'] = 'S\'està suprimint l\'assignació del rol \'{$a->role
 $string['unassignrolefailed'] = 'No s\'ha pogut suprimir l\'assignació del rol \'{$a->role_shortname}\' a l\'usuari \'{$a->user_username}\'  en el curs \'{$a->course_shortname}\' (id {$a->course_id})';
 $string['unassignroleid'] = 'S\'està suprimint l\'assignació del rol id \'{$a->role_id}\' a l\'usuari id  \'{$a->user_id}\'';
 $string['updatelocal'] = 'Actualitza dades locals';
-$string['user_attribute'] = 'Si el membre del grup conté noms distingits, especifiqueu l\'atribut utilitzat en nom/cerca d\'usuaris. Si esteu utilitzant autenticació LDAP, aquest valor sol trobar l\'atribut especificat al mapatge \'Nombre ID\' al connector d\'autenticació de LDAP.';
+$string['user_attribute'] = 'Si el membre del grup conté noms distintius, especifiqueu l\'atribut utilitzat a nom/cerca d\'usuaris. Si utilitzeu l\'autenticació LDAP, aquest valor sol trobar l\'atribut especificat al mapatge «Nombre d\'identificació» al connector d\'autenticació de LDAP.';
 $string['user_attribute_key'] = 'Atribut del número ID';
 $string['user_contexts'] = 'Si el membre del grup conté noms distingits, especifiqueu la llista de contexts on els usuaris seran situats. Separeu els diferents contexts amb \';\'. Per exemple: \'ou=usuaris,o=org; ou=altres,o=org\'';
 $string['user_contexts_key'] = 'Contexts';

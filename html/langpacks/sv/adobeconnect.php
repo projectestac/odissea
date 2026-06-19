@@ -25,4 +25,22 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addparticipant'] = 'Addera';
+$string['addpresenter'] = 'Addera';
+$string['adobeconnectintro'] = 'Intro';
+$string['availablelist'] = 'Ledigt';
+$string['cancelchanges'] = 'Avbryt';
+$string['endtime'] = 'Sluttid';
+$string['host'] = 'Dator';
+$string['joinmeeting'] = 'Gå med i mötet';
+$string['particpantslabel'] = 'Deltagare';
+$string['port'] = 'Hamn';
+$string['presenterlabel'] = 'Presentatör';
+$string['private'] = 'Privat';
+$string['public'] = 'Allmän';
+$string['recordinghdr'] = 'Inspelningar';
+$string['removeparticipant'] = 'Avinstallera';
+$string['removepresenter'] = 'Avinstallera';
 $string['savechanges'] = 'Spara';
+$string['starttime'] = 'Starttid';
+$string['testconnection'] = 'Testa anslutning';

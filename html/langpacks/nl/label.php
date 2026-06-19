@@ -51,10 +51,11 @@ $string['labeltext'] = 'Tekst';
 $string['modulename'] = 'Tekst- en mediazone';
 $string['modulename_help'] = 'Tekst- en mediazone maakt het mogelijk om tekst en multimedia te tonen op de cursuspagina.
 
-Tekst- en mediazone kun je gebruiken:
-* Om een lange lijst activiteiten op te splitsen met een ondertitel of een afbeelding
-* Om een ingebedde video rechtstreeks op de cursuspagina te tonen
-* Om een korte beschrijving te geven bij een cursussectie';
+Tekst- en mediazone kun je gebruiken
+
+* om een lange lijst activiteiten op te splitsen met een ondertitel of een afbeelding
+* om een ingebedde video rechtstreeks op de cursuspagina te tonen
+* om een korte beschrijving te geven bij een cursussectie.';
 $string['modulename_link'] = 'mod/label/view';
 $string['modulenameplural'] = 'Tekst- en mediazones';
 $string['pluginadministration'] = 'Beheer Tekst- en mediazone';

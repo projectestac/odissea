@@ -353,7 +353,7 @@ $string['configpasswordpolicy'] = 'Si ce réglage est activé, Moodle vérifie s
 $string['configpasswordpolicycheckonlogin'] = 'Si ce réglage est activé, Moodle vérifiera lors de chaque connexion si les mots de passe sont conformes à la politique des mots de passe. Si la vérification échoue, l’utilisateur devra modifier son mot de passe avant de pouvoir continuer. Il est utile d’activer ce réglage après une modification de la politique des mots de passe.';
 $string['configpasswordresettime'] = 'Ce réglage spécifie le temps à disposition des utilisateurs pour valider une demande de réinitialisation de mot de passe avant son échéance.
 Une durée de 30 minutes est adéquate.';
-$string['configpathtodu'] = 'Chemin d’accès du programme « du » (disk usage). En général quelque chose comme « /usr/bin/du ». Si vous spécifiez ce chemin, les pages affichant le contenu de dossiers contenant beaucoup de fichiers se chargeront beaucoup plus vite.';
+$string['configpathtodu'] = 'Chemin d’accès du programme « du » (disk usage). En général quelque chose comme /usr/bin/du Si vous spécifiez ce chemin, les pages affichant le contenu de dossiers contenant beaucoup de fichiers se chargeront beaucoup plus vite.';
 $string['configpathtophp'] = 'Chemin d’accès du programme « PHP CLI ». En général, quelque chose comme « /usr/bin/php ». Si vous spécifiez ce chemin, les scripts de cron pourront être lancés à partir de l’interface web d’administration.';
 $string['configperfdebug'] = 'L’activation de cette option a pour effet l’affichage d’informations de performance dans le pied de page du thème standard.';
 $string['configprofileroles'] = 'Rôles affichés sur les profils utilisateurs et sur la page des participants.';
@@ -802,7 +802,7 @@ $string['invalidthemepreset'] = 'Le fichier de préréglages choisi n’est pas 
 $string['invaliduserchangeme'] = 'Le nom d’utilisateur « changeme » est réservé. Il n’est pas permis de créer un compte de ce nom.';
 $string['ipblocked'] = 'Ce site n’est actuellement pas disponible.';
 $string['ipblocker'] = 'Blocage IP';
-$string['ipblockersyntax'] = 'Indiquer une adresse (complète ou partielle) ou une plage d’adresses par ligne. Des entrées valides sont soit une adresse IP complète (par exemple <b>192.168.10.1</b>), qui correspond à un seul serveur, soit une adresse IP partielle, (par exemple <b>192.168</b>), qui correspond à la plage des adresses commençant par ces nombres, ou une adresse en format CIDR (par exemple <b>231.54.211.0/20</b>), ou encore une plage d’adresses IP (par exemple <b>231.3.56.10-20</b>) dans laquelle la plage est indiquée sur la dernière partie de l’adresse. Les noms de domaines (comme « exemple.fr ») ne sont pas autorisés. Les lignes vide et le texte après un caractère « # » sont ignorés.';
+$string['ipblockersyntax'] = 'Indiquer une adresse IP (complète ou partielle) ou une plage d’adresses par ligne. Des entrées valides sont soit une adresse IP complète (par exemple <b>192.168.10.1</b>) qui correspond à un seul serveur, soit une adresse IP partielle (par exemple <b>192.168</b>) qui correspond à la plage des adresses commençant par ces nombres, ou une adresse en format CIDR (par exemple <b>231.54.211.0/20</b>), ou encore une plage d’adresses IP (par exemple <b>231.3.56.10-20</b>) dans laquelle la plage est indiquée sur la dernière partie de l’adresse. Les noms de domaines (comme « exemple.fr ») ne sont pas autorisés. Les lignes vides et le texte après un caractère « # » sont ignorés.';
 $string['iplookup'] = 'Recherche d’adresse IP';
 $string['iplookupgeoplugin'] = 'Le service <a href="https://www.geoplugin.com">geoPlugin</a> est actuellement utilisé pour obtenir les informations géographiques. Pour des résultats plus précis, l’installation d’une copie locale de la base de données MaxMind GeoIP City est recommandée.';
 $string['iplookupinfo'] = 'Le serveur gratuit NetGeo pour localiser les adresses IP. Cette base de données n’est toutefois plus entretenue et peut fournir des données incorrects. Il est recommandé d’installer sur votre serveur une copie d’une base de données GeoIP gratuite de MaxMind.<br />Si une clef API Google Maps V3 est fournie, la localisation des adresses IP est affichée à l’aide de Google Maps. Il faut pour cela un compte Google et de demander une clef API Google Maps V3. Si une telle clef n’est pas fournie, la localisation des adresses IP est affichée au moyen de OpenStreetMap.';
@@ -889,6 +889,7 @@ $string['managelang'] = 'Gérer';
 $string['manageqbanks'] = 'Gérer les plugins banque de questions';
 $string['manageqbehaviours'] = 'Gérer les comportements de question';
 $string['manageqtypes'] = 'Gérer les types de question';
+$string['marketplaceavailablenotice'] = 'Découvrir et télécharger des plugins dans la <a href="{$a}" target="_blank" rel="noopener noreferrer">Place du marché Moodle <i class="fa fa-external-link" role="img" aria-label="S’ouvre dans une nouvelle fenêtre" title="S’ouvre dans une nouvelle fenêtre"></i></a>.';
 $string['maturity100'] = 'Bêta';
 $string['maturity150'] = 'Version candidate';
 $string['maturity200'] = 'Version stable';
@@ -954,7 +955,7 @@ $string['moodlebrandedapp'] = 'App Moodle personnalisée';
 $string['moodlebrandedapp_help'] = '<p>L’app Moodle personnalisée a toutes les fonctionnalités de notre app mobile gratuite pour Moodle, avec votre propre visuel personnalisé.</p>
 <a href="https://moodle.com/branded-app">À propos de l’app Moodle personnalisée</a>';
 $string['moodlebrandedappreference'] = 'Autrement, obtenez une <a href="https://moodle.com/branded-app">app Moodle personnalisée</a> avec vos propres visuels.';
-$string['moodlenetremovalwarning'] = 'Le service MoodleNet sera fermé le 20 avril 2026. Si vous désirez continuer à utiliser MoodleNet sur votre site, installez le plugin MoodleNet depuis le <a href="https://moodle.org/plugins" target="_blank">Moodle plugins directory <i class="fa fa-external-link" role="img" aria-label="S’ouvre dans une nouvelle fenêtre" title="S’ouvre dans une nouvelle fenêtre"></i></a> et connectez-le à une instance auto-hebergée de MoodleNet. Ceci fait, le champ ID de profil MoodleNet sera supprimé ; veuillez migrer ces données si vous les utilisez à d’autres fins.';
+$string['moodlenetremovalwarning'] = 'Le service MoodleNet sera fermé le 20 avril 2026. Si vous désirez continuer à utiliser MoodleNet sur votre site, installez le plugin MoodleNet depuis le <a href="https://github.com/moodlehq/moodle-tool_moodlenet" target="_blank">dépôt Github de Moodle HQ <i class="fa fa-external-link" role="img" aria-label="S’ouvre dans une nouvelle fenêtre" title="S’ouvre dans une nouvelle fenêtre"></i></a> et connectez-le à une instance auto-hebergée de MoodleNet. Ceci fait, le champ ID de profil MoodleNet sera supprimé ; veuillez migrer ces données si vous les utilisez à d’autres fins.';
 $string['moodlepartners'] = 'Partenaires Moodle';
 $string['moodlepartners_help'] = '<p>Les Partenaires Moodle sont des fournisseurs de services certifiés par Moodle HQ pour fournir des services Moodle de qualité élevée pour l’organisation de votre environnement d’apprentissage Moodle.</p>
 <a href="https://moodle.com/about-partners/">À propos de nos Partenaires Moodle</a><br />
@@ -1037,7 +1038,7 @@ $string['pathtodot'] = 'Chemin d’accès à <em>dot</em>';
 $string['pathtodot_help'] = 'Chemin d’accès du programme « dot ». Sur Linux, quelque chose comme /usr/bin/dot. Sur MacOS, quelque chose comme /usr/local/bin/dot. Sous Windows, quelque chose comme C:\\Program Files (x86)\\Graphviz2.38\\bin\\dot.exe. Pour permettre de générer des fichiers graphiques à partir de fichiers DOT, vous devez installer l’exécutable dot et indiquer ici son chemin d’accès.';
 $string['pathtodu'] = 'Chemin d’accès à <em>du</em>';
 $string['pathtogs'] = 'Chemin d’accès à <em>ghostscript</em>';
-$string['pathtogs_help'] = 'Chemin d’accès du programme « ghostscript ». En général quelque chose comme « /usr/bin/gs ». Sur les serveurs Windows, cela sera quelque chose comme « c:\\gs\\bin\\gswin32c.exe » (assurez-vous qu’il n’y a pas d’espace dans le chemin d’accès. Si nécessaire, copiez les fichiers « gswin32c.exe » et « gsdll32.dll » dans un nouveau dossier dont le chemin d’accès ne comporte pas d’espace).';
+$string['pathtogs_help'] = 'Chemin d’accès du programme « ghostscript ». En général quelque chose comme /usr/bin/gs. Sur les serveurs Windows, cela sera quelque chose comme c:\\gs\\bin\\gswin32c.exe (assurez-vous qu’il n’y a pas d’espace dans le chemin d’accès. Si nécessaire, copiez les fichiers « gswin32c.exe » et « gsdll32.dll » dans un nouveau dossier dont le chemin d’accès ne comporte pas d’espace).';
 $string['pathtopdftoppm'] = 'Chemin d’accès à <em>pdftoppm</em>';
 $string['pathtopdftoppm_help'] = '<a href="https://poppler.freedesktop.org/">Poppler</a> est une bibliothèque de rendu en PDF qui inclut l’utilitaire <em>pdftoppm</em> pour convertir les fichiers PDF en PNG. La performance est généralement meilleure qu’en utilisant Ghostscript, en particulier pour les gros fichiers. Si l’exécutable <em>pdftoppm</em> est disponible, il sera utilisé au lieu de Ghostscript. Sur la plupart des serveurs Linux, le chemin <em>/usr/bin/pdftoppm</em> peut être conservé. Sinon, il faut installer les poppler-utils ou le paquetage poppler, selon la distribution Linux. Sous Windows, l’exécutable est fourni par Cygwin.';
 $string['pathtopgdump'] = 'Chemin d’accès à <em>pg_dump</em>';
@@ -1495,7 +1496,7 @@ $string['testoutgoingmailconf_subject'] = '{$a->site} : message de test. {$a->a
 $string['testoutgoingmailconf_subjectadditional'] = 'Sujet additionnel';
 $string['testoutgoingmailconf_toemail'] = 'Adresse de courriel de destination';
 $string['testoutgoingmaildetail'] = 'Attention ! Veuillez enregistrer la configuration avant de lancer le test.<br />{$a}';
-$string['testsiteupgradewarning'] = 'Vous utilisez actuellement le site de test {$a}. Pour e mettre à jour correctement, veuillez utiliser l’outil de mise à jour en ligne de commande.';
+$string['testsiteupgradewarning'] = 'Vous utilisez actuellement le site de test {$a}. Pour e mettre à jour correctement, veuillez utiliser l’outil de mise à jour en ligne de commande (CLI).';
 $string['themedefinedinconfigphp'] = 'Le thème ne peut pas être changé, car il est défini dans config.php comme {$a}.';
 $string['themedesignermode'] = 'Mode concepteur de thème';
 $string['themedesignermodewarning'] = 'Le mode concepteur de thème est activé. Ce mode ne devrait pas être activité sur une plateforme en production, car les performances en sont notablement réduites.';
@@ -1597,7 +1598,7 @@ Pour nettoyer votre dossier Moodle, il est recommandé d’agir ainsi :
 * créer un nouveau dossier Moodle ne contenant que les fichiers provenant soit de la distribution standard de Moodle préalablement téléchargée, soit du dépôt Git de Moodle ;
 * déplacer le fichier config.php et tous les plugins additionnels du dossier « moodle_old » vers le nouveau dossier Moodle.
 
-Une fois votre dossier Moodle nettoyé, rafraîchissez l’affichage de cette page pour reprendre le processus de mise à jour de Moodle.
+Une fois votre dossier Moodle nettoyé, actualisez l’affichage de cette page pour reprendre le processus de mise à jour de Moodle.
 
 Cet avertissement s’affiche le plus souvent suite au dé-compactage d’une archive ZIP standard de Moodle par-dessus une version existante de Moodle. Ce procédé est valable pour les mises à jour mineures. Il est en revanche vigoureusement déconseillé pour les mises à jour majeures de Moodle.
 

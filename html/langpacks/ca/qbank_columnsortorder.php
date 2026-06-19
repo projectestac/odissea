@@ -25,6 +25,25 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcolumn'] = 'Afegeix la columna «{$a}»';
 $string['addcolumns'] = 'Afegeix columnes';
+$string['auto'] = 'Automàtic';
+$string['columnwidth'] = 'Amplada de columna (píxels)';
+$string['invalidwidth'] = 'L\'amplada ha de ser com a mínim de {$a}.';
+$string['movecolumn'] = 'Mou la columna «{$a}»';
+$string['pluginname'] = 'Ordenació de les columnes';
+$string['privacy:metadata:preference:colsize'] = 'El connector del banc de preguntes d\'ordenació de les columnes desa la preferència de l\'usuari sobre les mides de columna.';
+$string['privacy:metadata:preference:enabledcol'] = 'El connector del banc de preguntes d\'ordenació de les columnes desa la preferència de l\'usuari sobre l\'ordre de les columnes.';
+$string['privacy:metadata:preference:hiddencols'] = 'El connector del banc de preguntes  d\'ordenació de les columnes desa la preferència de l\'usuari de les columnes ocultes.';
+$string['qbankcolumnname'] = '{$a}';
+$string['qbankcolumnsdisabled'] = 'Connectors del banc de preguntes desactivats actualment:';
+$string['qbankcolumnsortorder'] = 'Ordenació de les columnes';
+$string['qbankgotocolumnsort'] = 'Podeu canviar l\'ordre de les columnes del banc de preguntes de la pàgina {$a}.';
+$string['qbankgotomanageqbanks'] = 'Podeu eliminar una columna desactivant el connector a <a href=\'{$a}\'>Gestiona els connectors del banc de preguntes</a>.';
+$string['qbanksortdescription'] = 'L\'ordre en què es mostren els complements a continuació determina l\'ordre de les columnes del banc de preguntes.';
+$string['removecolumn'] = 'Elimina la columna «{$a}»';
 $string['resetcolumns'] = 'Reinicialitza les columnes';
 $string['resize'] = 'Canvia la mida';
+$string['resizecolumn'] = 'Canvia la mida de la columna «{$a}»';
+$string['showhidecolumn'] = 'Mostra/Amaga la columna';
+$string['width'] = 'Amplada de «{$a}» en píxels';

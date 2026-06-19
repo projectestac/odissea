@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['description'] = 'Zugriff über die Nutzung der mobilen App regeln';
+$string['description'] = 'Zugriff über die Moodle Mobile App regeln';
 $string['label_access'] = 'Zugriffsart:';
-$string['pluginname'] = 'Voraussetzung: Mobile App';
-$string['privacy:metadata'] = 'Die Voraussetzung \'Mobile App\' speichert keine personenbezogenen Daten.';
-$string['requires_app'] = 'Zugriff mit der mobilen App';
-$string['requires_notapp'] = 'Zugriff ohne die mobile App';
-$string['title'] = 'Mobile App';
+$string['pluginname'] = 'Voraussetzung: Moodle Mobile';
+$string['privacy:metadata'] = 'Das Plugin \'Voraussetzung: Moodle Mobile\' speichert keine personenbezogenen Daten.';
+$string['requires_app'] = 'Zugriff mit Moodle Mobile';
+$string['requires_notapp'] = 'Zugriff ohne Moodle Mobile';
+$string['title'] = 'Moodle Mobile App';

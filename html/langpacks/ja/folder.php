@@ -73,4 +73,4 @@ $string['search:activity'] = 'フォルダ';
 $string['showdownloadfolder'] = 'ダウンロードフォルダボタンを表示する';
 $string['showdownloadfolder_help'] = 'この設定を有効にした場合、フォルダのコンテンツをZIPファイルとしてダウンロードできるボタンが表示されます。';
 $string['showexpanded'] = 'サブフォルダを展開表示する';
-$string['showexpanded_help'] = 'この設定を有効にした場合、サブフォルダはデフォルトで展開表示されます。そうでない場合、折りたたんで表示されます。';
+$string['showexpanded_help'] = 'この設定を有効にした場合、サブフォルダはデフォルトで展開表示されます。そうではない場合、折りたたんで表示されます。';

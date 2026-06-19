@@ -30,7 +30,7 @@ $links = [
     get_string(
         'bulkquestiontester',
         'qtype_coderunner',
-        ['link' => (string) new moodle_url('/question/type/coderunner/bulktestindex.php')]
+        ['link' => (string) new moodle_url('/question/type/coderunner/scripts/bulktest.php')]
     ),
 ];
 

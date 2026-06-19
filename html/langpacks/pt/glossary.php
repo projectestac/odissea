@@ -59,6 +59,7 @@ $string['attachment_help'] = 'Pode anexar um ou mais ficheiros a um termo.';
 $string['author'] = 'autor';
 $string['authorview'] = 'Consultar por autor';
 $string['back'] = 'Voltar';
+$string['bynameondate'] = 'por {$a->name} - {$a->date}';
 $string['cachedef_concepts'] = 'Ligação de conceitos';
 $string['cantinsertcat'] = 'Não é possível inserir a categoria';
 $string['cantinsertrec'] = 'Não é possível inserir o registo';

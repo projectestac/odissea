@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addcondition'] = 'Lägg till villkor';
+$string['addgroup'] = 'Lägg till grupp';

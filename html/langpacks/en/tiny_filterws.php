@@ -29,6 +29,7 @@ $string['addfilterws'] = 'Add WebService filter tag';
 $string['apply'] = 'Apply';
 $string['filteruseragent'] = 'Filter by User Agent';
 $string['filteruseragent_help'] = 'If a value is provided, the selected content will only be displayed if the User Agent contains this value. The value will be converted to a regular expression.';
+$string['filterws:use'] = 'Use TinyMCE FilterWS';
 $string['insert'] = 'Insert';
 $string['insertfilterws'] = 'Insert Web Service filter';
 $string['origin'] = 'Origin';

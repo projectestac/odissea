@@ -229,4 +229,4 @@ $string['usage_sd'] = 'Standardabweichung';
 $string['usage_total'] = 'Geschätzter Gesamtwert';
 $string['usage_totalmargin'] = 'Fehlerquote (95%)';
 $string['userinputsharingkey'] = 'Eigener Schlüssel für Sharing';
-$string['userinputsharingkey_help'] = 'Geben Sie hier Ihren privaten Schlüssel an. Wenn Sie weitere Speicher bei anderen Websites anlegen und Daten gemeinsam nutzen möchten, verwenden Sie immer den gleichen Schlüssel.';
+$string['userinputsharingkey_help'] = 'Geben Sie Ihren privaten Schlüssel ein. Wenn Sie weitere Speicher bei anderen Websites anlegen und die Daten gemeinsam nutzen möchten, verwenden Sie immer den gleichen Schlüssel.';

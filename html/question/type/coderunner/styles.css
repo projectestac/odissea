@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+#page-question-type-coderunner table,
+.que.coderunner table {
+    width:auto;
+}
+
 #page-question-type-coderunner table.coderunner-test-results td,
 #page-question-type-coderunner table.coderunner-test-results th,
 .que.coderunner table.coderunner-test-results td,
@@ -117,6 +122,7 @@ body#page-question-type-coderunner .ace_editor {
 
 .que.coderunner table.coderunner-test-results,
 .que.coderunner table.coderunnerexamples {
+    width: auto;
     margin-bottom: 1em;
 }
 
@@ -165,7 +171,7 @@ body#page-question-type-coderunner .ace_editor {
 }
 
 .que.coderunner div.coderunner-test-results.good.precheck {
-    background: repeating-linear-gradient(0deg, #fff, #fff 8px, #f8f1f9 8px, #f8f1f9 16px);
+    background: repeating-linear-gradient(0deg, #f0fff0, #f0fff0 8px, #d0ffd0 8px, #d0ffd0 16px);
 }
 
 .que.coderunner div.coderunner-test-results.bad,
@@ -177,6 +183,10 @@ body#page-question-type-coderunner .ace_editor {
 .que.coderunner div.coderunner-test-results.bad.precheck,
 .que.coderunner pre.pre_syntax_error .precheck {
     background: repeating-linear-gradient(0deg, #fdd, #fdd 8px, #fee 8px, #fee 16px);
+}
+
+.que.coderunner div.coderunner-test-results.bad.precheck pre {
+    background: white;  /* Need to override default of 0.5 transparency */
 }
 
 .que.coderunner pre.pre_syntax_error,

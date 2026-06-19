@@ -51,7 +51,8 @@ $string['labeltext'] = 'Text';
 $string['modulename'] = 'Text- und Medienfeld';
 $string['modulename_help'] = 'Das \'Text- und Medienfeld\' ermöglicht es, Texte und Multimedia auf der Kursseite anzuzeigen.
 
-Sie können das \'Text- und Medienfeld\' auch verwenden,
+Sie können das \'Text- und Medienfeld\' auch verwenden
+
 * um eine Liste von Aktivitäten mit Zwischentiteln oder Bildern zu unterteilen
 * um ein Audio oder ein Video direkt eingebettet in der Kursseite anzuzeigen
 * um eine kurze Beschreibung in einen Kursabschnitt einzufügen';

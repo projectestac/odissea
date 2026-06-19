@@ -696,20 +696,14 @@ $string['emailcharset'] = 'E-posta karakter seti';
 $string['emailconfirm'] = 'Hesabınızı onaylayın';
 $string['emailconfirmation'] = 'Merhaba {$a->firstname},
 
-E-posta adresiniz kullanılarak
- \'{$a->sitename}\'de yeni bir hesap talep edilmiştir.
+E-posta adresiniz kullanılarak \'{$a->sitename}\' üzerinde yeni bir hesap talep edilmiştir.
 
-Yeni hesabınızı onaylamak için lütfen bu web adresine gidin:
+Yeni hesabınızı onaylamak için lütfen aşağıdaki bağlantıya tıklayın:
 
-{$a->link}
+<a href="{$a->link}">Hesabınızı onaylayın</a>
 
-Çoğu posta programında bu, üzerine tıklayabileceğiniz
-mavi bir bağlantı olarak görünmelidir.
-Bu işe yaramazsa, adresi kesip
-web tarayıcınızın penceresinin üst kısmındaki
-adres satırına yapıştırın.
-
-Yardıma ihtiyacınız olursa, lütfen site yöneticisi ile iletişime geçin, {$a->admin}';
+Yardıma ihtiyacınız olursa lütfen site yöneticisi ile iletişime geçin,
+{$a->admin}';
 $string['emailconfirmationresend'] = 'Onaylama e-postasını yeniden gönder';
 $string['emailconfirmationsubject'] = '{$a}: hesap onayı';
 $string['emailconfirmsent'] = '<p>Bu e-posta adresinize (<b>{$a}</b>) bir e-posta gönderildi.</p>
@@ -752,15 +746,13 @@ $string['emailnotfound'] = 'E-posta adresi veritabanında bulunamadı';
 $string['emailonlyallowed'] = 'Bu e-posta kullanılamaz. İzin verilen e-posta alan adları şunlardır: {$a}.';
 $string['emailpasswordchangeinfo'] = 'Merhaba {$a->firstname},
 
-Birisi (büyük olasılıkla siz) \'{$a->sitename}\' sitesindeki \'{$a->username}\'  hesabı için yeni bir şifre isteğinde bulundu.
+Birisi (muhtemelen siz), \'{$a->sitename}\' üzerindeki \'{$a->username}\' kullanıcı adlı hesabınız için yeni bir şifre talep etti.
 
-Şifrenizi değiştirmek için aşağıdaki linki takip edin:
+Şifrenizi değiştirmek için lütfen aşağıdaki bağlantıya tıklayın:
 
-{$a->link}
+<a href="{$a->link}">Şifreyi değiştir</a>
 
-Bir çok mail programı yukarıdaki linki tıklanabilir olarak göstermektedir. Tıklanabilir değilse, linkin üzerine gelip sağ tıklayarak kopyalayın ve web tarayıcınızı açarak adres çubuğuna bu adresi yapıştırın.
-
-Yardıma ihtiyacınız olursa site yöneticisiyle iletişim kurun:
+Yardıma ihtiyacınız olursa lütfen site yöneticisi ile iletişime geçin.
 {$a->admin}';
 $string['emailpasswordchangeinfodisabled'] = 'Merhaba {$a->firstname},
 
@@ -777,15 +769,13 @@ Maalesef, bu sitede şifreler yeniden oluşturulamaz. Lütfen site yöneticisiyl
 $string['emailpasswordchangeinfosubject'] = '{$a}: Şifre değişim bilgisi';
 $string['emailpasswordconfirmation'] = 'Merhaba {$a->firstname},
 
-Birisi (büyük olasılıkla siz) \'{$a->sitename}\' sitesindeki hesabınız için yeni bir şifre isteğinde bulundu.
+Birisi (muhtemelen siz), \'{$a->sitename}\' üzerindeki hesabınız için yeni bir şifre talep etti.
 
-Bunu onaylıyor ve yeni bir şifrenin e-posta adresinize gönderilmesini istiyorsanız, aşağıdaki bağlantıyı takip edin:
+Bunu onaylamak ve yeni şifrenizin size e-posta yoluyla gönderilmesini sağlamak için lütfen aşağıdaki bağlantıya tıklayın:
 
-{$a->link}
+<a href="{$a->link}">Yeni şifre al</a>
 
-Bir çok e-posta programı yukarıdaki bağlantıyı tıklanabilir olarak göstermektedir. Tıklanabilir değilse, bağlantının üzerine gelip sağ tıklayarak kopyalayın ve web tarayıcınızı açarak adres çubuğuna bu adresi yapıştırın.
-
-Yardıma ihtiyacınız olursa site yöneticisiyle iletişim kurun:
+Yardıma ihtiyacınız olursa lütfen site yöneticisi ile iletişime geçin.
 {$a->admin}';
 $string['emailpasswordconfirmationsubject'] = '{$a}: Şifre değiştirme onayı';
 $string['emailpasswordconfirmmaybesent'] = '<p>Geçerli bir kullanıcı adı veya benzersiz bir e-posta adresi belirttiyseniz size şu anda bir e-posta gönderildi.</p>
@@ -800,16 +790,17 @@ Bu işlemleri yaparken zorluk yaşarsanız site yöneticisiyle iletişim kurabil
 $string['emailpasswordsent'] = 'Şifre değişimini onayladığınız için teşekkür ederiz. Bu e-posta adresinize <b>{$a->email}</b> yeni şifrenizi içeren bir e-posta gönderildi. Yeni şifreniz otomatik olarak oluşturulmuştur ve isterseniz bunu hatırlaması daha kolay bir <a href="{$a->link}">şifreyle değiştirebilirsiniz</a>.';
 $string['emailresetconfirmation'] = 'Merhaba {$a->firstname},
 
-{$a->sitename} sitesindeki \'{$a->username}\' hesabınız için şifre sıfırlama talebinde bulunuldu.
+{$a->sitename} üzerindeki \'{$a->username}\' kullanıcı adlı hesabınız için şifre sıfırlama talebinde bulunuldu.
 
-Bu isteği onaylamak ve hesabınız için yeni bir şifre belirlemek için, lütfen aşağıdaki web adresini ziyaret edin:
-<a href="{$a->link}">{$a->link}</a>
+Bu talebi onaylamak ve hesabınız için yeni bir şifre belirlemek amacıyla lütfen aşağıdaki bağlantıya tıklayın:
 
-(Bu bağlantı, sıfırlama talebinin istendiği andan itibaren {$a->resetminutes} dakika geçerlidir)
+<a href="{$a->link}">Şifreyi sıfırla</a>
 
-Şifre sıfırlama, sizin tarafınızdan talep edilmediyse herhangi bir şey yapmanıza gerek yok.
+(Bu bağlantı, sıfırlama talebinin ilk yapıldığı andan itibaren {$a->resetminutes} dakika boyunca geçerlidir.)
 
-Yardıma ihtiyacınız varsa, site yöneticisi ile irtibata geçiniz.
+Bu şifre sıfırlama talebi sizin tarafınızdan yapılmadıysa, herhangi bir işlem yapmanıza gerek yoktur.
+
+Yardıma ihtiyacınız olursa lütfen site yöneticisi ile iletişime geçin.
 {$a->admin}';
 $string['emailresetconfirmationsubject'] = '{$a}: Şifre sıfırlama talebi';
 $string['emailresetconfirmsent'] = '<b>{$a}</b> adresinize bir e-posta gönderildi.<br />

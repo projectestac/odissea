@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['acknowledgement'] = 'Onarpena';
 $string['acknowledgementtext'] = 'Plugin gehigarriak instalatu aurreko gune honetako segurtasun-kopia osoak izatea nire ardura dela onartzen dut. Ulertu eta onartzen dut gehigarriek (eta bereziki jatorri ez-ofiziala dutenek, baina ez horiek bakarrik) segurtasun-arazoak izan ditzaketela, gunea ez-eskuragarri utzi dezaketela, edota datu pribatuen filtrazioa edo galera eragin dezaketela.';
+$string['activitychooserfootertext'] = 'Arakatu jarduera gehiago hemen:';
 $string['featuredisabled'] = 'Plugin-instalatzailea desgaituta dago gune honetan.';
 $string['installaddon'] = 'Instalatu plugina!';
 $string['installaddons'] = 'Instalatu pluginak';
@@ -43,6 +44,8 @@ $string['installfromzipsubmit'] = 'Instalatu plugina ZIP fitxategitik';
 $string['installfromziptype'] = 'Plugin mota';
 $string['installfromziptype_help'] = 'Euren osagaiaren izena ondo adierazten duten pluginen kasuan, instalatzailea pluginaren mota automatikoki antzemateko gai da. Antzemate-automatikoa huts egiten badu, aukeratu ezazu eskuz plugin mota egokia. Kontuz: instalatze-prozesuak larriki huts egin dezake plugin mota modu egokian zehazten ez bada.';
 $string['installfromziptype_link'] = 'Development:Plugins';
+$string['marketplaceadminlinktext'] = 'Arakatu plugin berriak';
+$string['marketplacelink'] = 'Moodle Marketplace';
 $string['permcheck'] = 'Ziurtatu web-zerbitzariaren prozesuak plugin motaren jatorriaren kokapenean idazteko baimena duela.';
 $string['permcheckerror'] = 'Errorea idazte-baimenak egiaztatzean';
 $string['permcheckprogress'] = 'Egiaztatzen idazteko baimena...';

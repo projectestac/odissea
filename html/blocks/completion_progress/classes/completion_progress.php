@@ -38,7 +38,7 @@ use coding_exception;
  * @copyright  2021 Jonathon Fowler <fowlerj@usq.edu.au>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class completion_progress implements \renderable {
+class completion_progress implements \renderable, \templatable {
     /**
      * Sort activities by course order.
      */
@@ -177,7 +177,7 @@ class completion_progress implements \renderable {
      * Specialise for overview page use.
      * @return self
      */
-    public function for_overview() {
+    public function for_overview(): self {
         if ($this->user) {
             throw new coding_exception('cannot re-specialise for overview');
         }
@@ -208,6 +208,8 @@ class completion_progress implements \renderable {
             call_user_func($progresscallback, 0);
         }
 
+        $clock = \core\di::get(\core\clock::class);
+
         $numdone = 0;
         $numcompletions = count($this->completions);
         $cachetime = get_config('block_completion_progress', 'overviewcachetime') ?: defaults::OVERVIEWCACHETIME;
@@ -219,7 +221,7 @@ class completion_progress implements \renderable {
             ];
             $rec = $DB->get_record('block_completion_progress', $rec) ?: (object)$rec;
 
-            if (!empty($rec->timemodified) && time() - $rec->timemodified < $cachetime) {
+            if (!empty($rec->timemodified) && $clock->time() - $rec->timemodified < $cachetime) {
                 $trans->allow_commit();
                 continue;
             }
@@ -243,7 +245,7 @@ class completion_progress implements \renderable {
                     $rec->percentage = (int)round(100 * $completecount / count($this->visibleactivities));
                 }
             }
-            $rec->timemodified = time();
+            $rec->timemodified = $clock->time();
 
             if (empty($rec->id)) {
                 $rec->id = $DB->insert_record('block_completion_progress', $rec);
@@ -549,35 +551,28 @@ class completion_progress implements \renderable {
      * Filter down the activities to those a user can see.
      */
     protected function filter_visible_activities() {
-        global $CFG, $USER;
-
         if (!$this->user || $this->activities === null) {
             return;
         }
 
         $this->visibleactivities = [];
         $modinfo = get_fast_modinfo($this->course, $this->user->id);
-        $canviewhidden = has_capability('moodle/course:viewhiddenactivities', $this->context, $this->user);
 
         // Keep only activities that are visible.
         foreach ($this->activities as $key => $activity) {
             $cm = $modinfo->cms[$activity->id];
+            $section = $cm->get_section_info();
 
-            // Check visibility in course.
-            if (!$cm->visible && !$canviewhidden) {
+            if (!$section->uservisible) {
                 continue;
-            }
-
-            // Check availability, allowing for visible, but not accessible items.
-            if (!empty($CFG->enableavailability)) {
-                if ($canviewhidden) {
-                    $activity->available = true;
+            } else if (!$cm->uservisible) {
+                if (!!$cm->availableinfo) {
+                    $activity->available = false;
                 } else {
-                    if (isset($cm->available) && !$cm->available && empty($cm->availableinfo)) {
-                        continue;
-                    }
-                    $activity->available = $cm->available;
+                    continue;
                 }
+            } else {
+                $activity->available = true;
             }
 
             // Check for exclusions.
@@ -585,7 +580,7 @@ class completion_progress implements \renderable {
                 continue;
             }
 
-            // Save the visible event.
+            // Save the visible activity.
             $this->visibleactivities[$key] = $activity;
         }
     }
@@ -836,5 +831,193 @@ class completion_progress implements \renderable {
                 $this->submissions[$obj->userid][$obj->cmid] = $obj;
             }
         }
+    }
+
+    /**
+     * Produce template data for rendering.
+     * @param \renderer_base $output
+     * @return stdClass
+     */
+    public function export_for_template(\renderer_base $output): stdClass {
+        global $CFG, $USER;
+
+        $data = new stdClass();
+
+        $clock = \core\di::get(\core\clock::class);
+        $now = $clock->time();
+        $activities = $this->get_visible_activities();
+        $completions = $this->get_completions();
+        $config = $this->get_block_config();
+        $userid = $this->get_user()->id;
+        $courseid = $this->get_course()->id;
+        $instance = $this->get_block_instance()->id;
+        $simple = $this->is_simple_bar();
+        $numactivities = count($activities);
+
+        // Get relevant block instance settings or use defaults.
+        $useicons = get_config('block_completion_progress', 'forceiconsinbar') ?:
+            ($config->progressBarIcons ?? defaults::PROGRESSBARICONS);
+        $orderby = $config->orderby ?? defaults::ORDERBY;
+        $longbars = $config->longbars ??
+            (get_config('block_completion_progress', 'defaultlongbars') ?: defaults::LONGBARS);
+        $displaynow = $orderby == self::ORDERBY_TIME;
+        $showpercentage = $config->showpercentage ?? defaults::SHOWPERCENTAGE;
+
+        $alternatelinks = [
+            'assign' => [
+                'url' => '/mod/assign/view.php?id=:cmid&action=grade&userid=:userid',
+                'capability' => 'mod/assign:grade',
+            ],
+            'feedback' => [
+                // Breaks if anonymous feedback is collected.
+                'url' => '/mod/feedback/show_entries.php?id=:cmid&do_show=showoneentry&userid=:userid',
+                'capability' => 'mod/feedback:viewreports',
+            ],
+            'lesson' => [
+                'url' => '/mod/lesson/report.php?id=:cmid&action=reportdetail&userid=:userid',
+                'capability' => 'mod/lesson:viewreports',
+            ],
+            'quiz' => [
+                'url' => '/mod/quiz/report.php?id=:cmid&mode=overview',
+                'capability' => 'mod/quiz:viewreports',
+            ],
+        ];
+
+        $data->courseid = $courseid;
+        $data->instanceid = $instance;
+        $data->userid = $userid;
+        $data->simple = $simple;
+        $data->useicons = $useicons;
+
+        if ($simple && $numactivities == 0) {
+            $data->novisibleactivities = true;
+            return $data;
+        }
+
+        $wrapafter = max(1, get_config('block_completion_progress', 'wrapafter') ?: defaults::WRAPAFTER);
+        if ($longbars == 'wrap' && $numactivities > $wrapafter) {
+            $data->barwrap = true;
+            $data->cellsperrow = ceil($numactivities / max(1, ceil($numactivities / $wrapafter)));
+            $displaynow = false;
+        } else if ($longbars == 'scroll') {
+            $data->barscroll = true;
+        } else {
+            $longbars = 'squeeze';
+            $data->barsqueeze = true;
+        }
+
+        // Determine where to put the NOW indicator.
+        $nowpos = -1;
+        if ($orderby == 'orderbytime' && $longbars != 'wrap' && $displaynow && !$simple) {
+            $data->displaynow = true;
+
+            $nowpos = 0;
+            while ($nowpos < $numactivities && $now > $activities[$nowpos]->expected && $activities[$nowpos]->expected != 0) {
+                $nowpos++;
+            }
+        }
+
+        if ($showpercentage && !$simple) {
+            $data->progresspercentage = $this->get_percentage() . '%';
+        }
+
+        // Determine links to activities.
+        for ($i = 0; $i < $numactivities; $i++) {
+            if (
+                $userid != $USER->id &&
+                array_key_exists($activities[$i]->type, $alternatelinks) &&
+                has_capability($alternatelinks[$activities[$i]->type]['capability'], $activities[$i]->context)
+            ) {
+                $substitutions = [
+                    '/:courseid/' => $courseid,
+                    '/:eventid/'  => $activities[$i]->instance,
+                    '/:cmid/'     => $activities[$i]->id,
+                    '/:userid/'   => $userid,
+                ];
+                $link = $alternatelinks[$activities[$i]->type]['url'];
+                $link = preg_replace(array_keys($substitutions), array_values($substitutions), $link);
+                $activities[$i]->link = $CFG->wwwroot . $link;
+            } else {
+                $activities[$i]->link = $activities[$i]->url;
+            }
+        }
+
+        $data->cells = [];
+
+        // Determine the bar cells and information blocks.
+        $counter = 1;
+        foreach ($activities as $activity) {
+            $complete = $completions[$activity->id] ?? null;
+
+            // A cell in the progress bar.
+            $cell = new stdClass();
+            $cell->activityid = $activity->id;
+
+            if ($complete === 'submitted') {
+                $cell->submittednotcomplete = true;
+            } else if ($complete == COMPLETION_COMPLETE || $complete == COMPLETION_COMPLETE_PASS) {
+                $cell->completed = true;
+            } else if (
+                $complete == COMPLETION_COMPLETE_FAIL ||
+                (!isset($config->orderby) || $config->orderby == 'orderbytime') &&
+                (isset($activity->expected) && $activity->expected > 0 && $activity->expected < $now)
+            ) {
+                $cell->notcompleted = true;
+            } else {
+                $cell->futurenotcompleted = true;
+            }
+            if (empty($activity->link)) {
+                $cell->haslink = 'false';
+            } else if (!empty($activity->available) || $simple) {
+                $cell->haslink = 'true';
+            } else if (!empty($activity->link)) {
+                $cell->haslink = 'not-allowed';
+            }
+
+            // Place the NOW indicator.
+            if ($nowpos == 0 && $counter == 1) {
+                $cell->firstnow = true;
+            } else if ($nowpos == $counter) {
+                if ($nowpos < $numactivities / 2) {
+                    $cell->firsthalfnow = true;
+                } else {
+                    $cell->lasthalfnow = true;
+                }
+            }
+
+            $cell->activityicon = $activity->icon->out(false);
+            $cell->activityname = $activity->name;
+            if (!empty($activity->link) && (!empty($activity->available) || $simple)) {
+                $cell->activitylink = $activity->link;
+                if (!empty($activity->onclick)) {
+                    $cell->activityonclick = $activity->onclick;
+                }
+            }
+            if ($complete == COMPLETION_COMPLETE) {
+                $cell->infocomplete = true;
+                $cell->infoicon = 'tick';
+            } else if ($complete == COMPLETION_COMPLETE_PASS) {
+                $cell->infopassed = true;
+                $cell->infoicon = 'tick';
+            } else if ($complete == COMPLETION_COMPLETE_FAIL) {
+                $cell->infofailed = true;
+                $cell->infoicon = 'cross';
+            } else if ($complete === 'submitted') {
+                $cell->infosubmitted = true;
+                $cell->infoicon = 'cross';
+            } else {
+                $cell->infoincomplete = true;
+                $cell->infoicon = 'cross';
+            }
+            if ($activity->expected != 0) {
+                $cell->activityexpected = $activity->expected;
+            }
+
+            $data->cells[] = $cell;
+
+            $counter++;
+        }
+
+        return $data;
     }
 }

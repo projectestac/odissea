@@ -1,6 +1,6 @@
 # CodeRunner
 
-Version: 5.7.3 October 11, 2025. Requires **MOODLE V4.3 or later + PHP >=8.1**. Earlier versions
+Version: 5.9.2 May 10, 2026. Requires **MOODLE V4.3 or later + PHP >=8.1**. Earlier versions
 of Moodle must use CodeRunner V4.
 
 
@@ -39,7 +39,7 @@ CodeRunner has been in use at the University of Canterbury for over fifteen year
 running many millions of student quiz question submissions in Python, C, JavaScript,
 PHP, Octave and Matlab. It is used in laboratory work, assignments, tests and
 exams in multiple courses. In recent years CodeRunner has spread around the
-world and as of August 2025 is installed nearly 4000 Moodle sites worldwide
+world and as of April 2026 is installed on around 4000 Moodle sites worldwide
 (see [here](https://moodle.org/plugins/stats.php?plugin=qtype_coderunner)), with
 at least some of its language strings translated into 20 other languages (see
 [here](https://moodle.org/plugins/translations.php?plugin=qtype_coderunner])).
@@ -143,7 +143,8 @@ useful to you, *please* set up your own Jobe sandbox as
 described in [sandbox configuration](#sandbox-configuration) below.
 
 WARNING: at least a couple of users have broken CodeRunner by duplicating
-the prototype questions in the System/CR\_PROTOTYPES category. `Do not` touch
+the prototype questions in the CR\_PROTOTYPES category of the System question bank.
+`Do not` touch
 those special questions until you have read this entire manual and
 are familiar with the inner workings of CodeRunner. Even then, you should
 proceed with caution. These prototypes are not
@@ -363,7 +364,8 @@ So, you need to do the following before the Uninstall link is displayed:
  3. Remove all the user-defined CodeRunner questions.
 
  4. Delete all the CodeRunner prototypes (which define the set of available
-    question types) from the System > Top for System > CR_PROTOTYPES category.
+    question types) from the System > Top for System > CR_PROTOTYPES category (Moodle 4)
+    or the site System shared question bank > CR_PROTOTYPES category (Moodle 5).
     This requires Moodle administrator level privileges.
 
 You should then find the Uninstall link showing for CodeRunner in the Manage plugins page.
@@ -563,8 +565,6 @@ questions that need editing should be stored there, with the question-type
 name modified accordingly. New prototype question types can also be created
 in that category. Editing of prototypes is discussed in the section
 [User defined question types](#user-defined-question-types).
-
-Built-in question types include the following:
 
 Built-in question types include the following:
 
@@ -3407,15 +3407,18 @@ Other arguments to the ajax webservice call are:
 
 ## Administrator scripts
 
-There are several CodeRunner-related utility scripts available.
+There are several CodeRunner-related utility scripts available
+ via the CodeRunner management page: 
+
+`<moodle_home>/question/type/coderunner/management.php`.
+
 Teachers are able to run the scripts
 only within courses they can normally access; they must be logged into such
 a course before attempting to run the scripts.
 
 The scripts are:
-<<<<<<<< HEAD:README.md
 
- 1. `&lt;moodle_home&gt;/question/type/coderunner/questionbrowserindex.php`
+ 1. *question browser*
     This script displays a list of all question banks and categories accessible to the
     currently logged in user.
     Each course/bank/category is displayed as a clickable link which takes the
@@ -3428,41 +3431,32 @@ The scripts are:
     preview of it. The selected subset of questions can be exported in a
     custom compressed form as JSON or CSV.
 
- 1. `&lt;moodle_home&gt;/question/type/coderunner/bulktestindex.php`
-========
-
- 1. `<moodle_home>/question/type/coderunner/questionbrowserindex.php`
-    [Coming soon to the Master branch]
-    This script displays a list of all question banks and categories accessible to the
-    currently logged in user.
-    Each course/bank/category is displayed as a clickable link which takes the
-    user to an interactive browser that displays all the CodeRunner questions in
-    the given context. Questions can be filtered to select only those which match
-    a given text string or regular expression either anywhere in the question or
-    in a selected field (question text, answer, tags, etc). Questions can be
-    sorted by name or category. Buttons allow expanding out the question text or
-    its answer, or linking to the actual question in the question bank or a 
-    preview of it. The selected subset of questions can be exported in a
-    custom compressed form as JSON or CSV.
-
- 1. `<moodle_home>/question/type/coderunner/bulktestindex.php`
->>>>>>>> master:docs/index.md
+ 1. *bulk tester*
     This script displays a list of all question banks and categories accessible to the
     user who is currently logged into Moodle on the machine running the script.
     Each course/bank/category is displayed as a clickable link that then runs a script that
     tests the sample answers on all questions in that category, reporting
     all successes and failures.
 
- 1. `<moodle_home>/question/type/coderunner/prototypeusageindex.php`
-    This scripts displays an index like the one above except that the
-    clickable links now run a script that reports on the question prototype
-    usage within that category.
+ 1. *prototype usage*
+    This displays a report of
+    question prototype usage within a selected context, usually a question bank.
 
- 1. `<moodle_home>/question/type/coderunner/cachepurgeindex.php`
-    This script displays a list of contexts in which the grade cache has
-    entries, allowing manual purging of all entries in that context.
+ 1. *Runs-cache purger*
+    To avoid rerunning the same job multiple times, CodeRunner maintains a cache of
+    recent runs. This script purges that cache for a given course or context. It should
+    be run after any upgrade to the Jobe server that could alter run results.
 
- 1. `<moodle_home>/question/type/coderunner/downloadquizattempts.php`
+ 1. *Delete old question versions*
+    This script - available only to Moodle administrators - cleans up bloated question banks
+    by deleting old question versions. It keeps
+    only the most recent version of each question, plus any additional versions explicitly 
+    in use by quizzes. It works for all question types.
+    ** WARNING ** Since this script directly updates the database, it is potentially dangerous.
+    It is not recommended for use on production servers but only when a course is being cloned
+    onto a new server. Certainly full backups should be taken before running this script.
+
+ 1. *Download quiz attempts*
     This script
     displays a list of all quizzes available to the logged in user,
     allowing them to download a spreadsheet of all submissions to a selected quiz
@@ -3565,6 +3559,29 @@ text area inputs now have two modes:
   https://www.w3.org/TR/wai-aria-practices/#richtext).
 
 * Esc always switches to non-capturing mode.
+
+## Additional resources
+
+The following CodeRunner-related resources might be of interest to teachers and developers.
+
+ * [The Ace inline filter](https://moodle.org/plugins/filter_ace_inline). This Moodle filter
+   allows teachers to insert "Try it!" boxes into most Moodle pages. These contain contain code
+   that students can run and experiment with directly in the web page. The code is executed using
+   CodeRunner's sandbox web service.
+
+ * [University of Canterbury question types](https://github.com/trampgeek/ucquestiontypes). This is a
+   repository of custom question types used in introductory programming at the University of Canterbury
+   in their introductory programming courses. It includes the *python3_scratchpad* question type,
+   used in over 2000 questions, which includes template parameters for style checking (via the ruff
+   style checker), banning or
+   requiring certain Python constructs, and using the provided sample answer for tests rather than
+   explicitly providing each expected output.
+
+ * [A Claude code skill for question generation](https://github.com/danielcregg/moodle-coderunner). This
+   skill allows Claude code users to generate CodeRunner questions. It is essentially a structured prompt
+   with all the CodeRunner XML formatting rules, test case patterns, and best practices baked in. It generates
+   an xml file that can be imported into a question bank with an answer preload, model solution, visible
+   and hidden test cases. It supports java_class, java_program, java_method, python3, and others.
 
 
 ## APPENDIX 1: How questions get marked

@@ -31,3 +31,5 @@ Els marcadors de posició següents poden ser inclosos en el missatge:
 
 * Nom del curs {$a->coursename}
 * Enllaç a la pàgina de perfil de l\'usuari {$a->profileurl}';
+$string['unenrolselfconfirm'] = 'Confirmeu que voleu cancel·lar la vostra inscripció al curs «{$a}»?';
+$string['unenroluser'] = 'Confirmeu que voleu cancel·lar la inscripció de la persona usuària «{$a->user}» al curs «{$a->course}»?';

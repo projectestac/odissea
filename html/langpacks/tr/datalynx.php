@@ -48,7 +48,6 @@ $string['exportall'] = 'Tümün dışa aktar';
 $string['exportcontent'] = 'İçeriği dışa aktar';
 $string['exportpage'] = 'Sayafayı dışa aktar';
 $string['fieldedit'] = '\'{$a}\' düzenleniyor';
-$string['fieldeditable'] = 'düzenlenebilir';
 $string['fieldsimportsettings'] = 'Ayarları içe aktar';
 $string['filteredit'] = '\'{$a}\' düzenleniyor';
 $string['filtersave'] = 'Filtreyi kaydet';

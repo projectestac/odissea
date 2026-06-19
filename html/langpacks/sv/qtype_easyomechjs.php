@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['correct_answer'] = 'Rätt svar';
 $string['pluginname_link'] = 'question/type/easyomechjs';

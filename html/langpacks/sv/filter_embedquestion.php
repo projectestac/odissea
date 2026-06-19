@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['defaultx'] = 'Standard ({$a})';
+$string['displayoptions'] = 'Alternativ för visning';

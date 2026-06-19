@@ -34,4 +34,5 @@ $string['privacy:metadata:repository_wikimedia'] = 'El complemento del repositor
 $string['privacy:metadata:repository_wikimedia:preference:maxheight'] = 'La altura máxima de preferencia del usuario configurada para el repositorio de Wikimedia.';
 $string['privacy:metadata:repository_wikimedia:preference:maxwidth'] = 'El ancho máximo de preferencia del usuario configurado para el repositorio de Wikimedia';
 $string['privacy:metadata:repository_wikimedia:search_text'] = 'La consulta de texto de búsqueda del usuario del repositorio de Wikimedia.';
+$string['ratelimited'] = 'Wikimedia ha puesto un límite a las peticiones. Por favor, inténtelo más tarde.';
 $string['wikimedia:view'] = 'Ver repositorio Wikimedia';

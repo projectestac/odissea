@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['add'] = 'Aggiungi';
-$string['addarandomquestion'] = 'domande casuali';
+$string['addarandomquestion'] = 'domanda casuale';
 $string['addarandomquestion_help'] = 'Moodle aggiunge una selezione casuale di domande a scelta multipla (o domande a scelta multipla tutto o niente) all\'attuale gruppo di quiz offline. È possibile impostare il numero di domande aggiunte. Le domande vengono scelte dalla categoria di domande corrente (e, se selezionata, dalle sue sottocategorie).';
 $string['addarandomselectedquestion'] = 'Aggiungi una domanda selezionata casualmente ...';
-$string['addlist'] = 'Aggiungi elenco';
+$string['addlist'] = 'Aggiungi elenco presenze';
 $string['addnewpagesafterselected'] = 'Aggiungi un salto pagina dopo le domande selezionate';
 $string['addnewquestion'] = 'una nuova domanda';
 $string['addnewquestionsqbank'] = 'Aggiungi domande alla categoria {$a->catname}: {$a->link}';
@@ -64,7 +64,14 @@ $string['attemptsnum'] = 'Risultati: {$a}';
 $string['attemptsonly'] = 'Visualizza solo studenti con risultati';
 $string['attendanceoverview'] = 'Presenze';
 $string['attendances'] = 'Presenze';
+$string['attendancesevaluationheadline'] = '2. Valutazione';
 $string['attendancesheadline'] = 'Presenze';
+$string['attendancespreparationheadline'] = '1. Preparazione';
+$string['attendenceoverviewattwithoutresults'] = 'presenti senza risultati:';
+$string['attendenceoverviewattwithresults'] = 'presenti con risultati:';
+$string['attendenceoverviewcorrectionnecessary'] = 'Correzione necessaria (pagine):';
+$string['attendenceoverviewnoattwithoutresults'] = 'Assenti senza risultati:';
+$string['attendenceoverviewnoattwithresults'] = 'Assenti con risultati:';
 $string['backtopreview'] = 'Visualizza Anteprima';
 $string['basicideasofofflinequiz'] = 'Idee di base per la creazione di quiz offline';
 $string['blackwhitethreshold'] = 'Soglia bianco/nero';
@@ -81,6 +88,8 @@ $string['closebeforeopen'] = 'Impossibile aggiornare il quiz offline. Hai specif
 $string['closestudentview'] = 'Chiudi vista studente';
 $string['closewindow'] = 'Chiudi finestra';
 $string['cmmissing'] = 'Manca il modulo del corso per il quiz offline con ID {$a}';
+$string['completiondetail:passgrade'] = 'Ricevere la sufficienza';
+$string['completionpass_help'] = 'Gli studenti completano questo quiz offline soltanto se raggiungono una valutazione uguale o superiore alla sufficienza impostata nelle opzioni di valutazione';
 $string['configblackwhitethreshold'] = 'Imposta la soglia per la conversione bianco/nero tra 1 e 99 - Più alto è il valore e maggiormente bianco dovrà essere il pixel importato per essere riconosciuto come bianco. Qualsiasi altro valore non comporta nessuna conversione bianco/nero.';
 $string['configdecimalplaces'] = 'Numero di cifre che devono essere visualizzate dopo il punto decimale durante la visualizzazione dei voti per il quiz offline.';
 $string['configdisableimgnewlines'] = 'Disabilita le nuove righe prima e dopo le immagini nei fogli delle domande in pdf. Attenzione: questo potrebbe causare problemi di formattazione.';
@@ -93,7 +102,8 @@ $string['configpapergray'] = 'valore del bianco della carta, che viene utilizzat
 $string['configshuffleanswers'] = 'Risposte mescolate';
 $string['configshufflequestions'] = 'Se si abilita questa opzione, l\'ordine delle domande nei gruppi di quiz offline verrà mescolato casualmente ogni volta che si ricrea l\'anteprima nella scheda "Crea moduli".';
 $string['configshufflewithin'] = 'Se si abilita questa opzione, le parti che compongono le singole domande verranno mescolate casualmente quando vengono creati i moduli di domanda e risposta.';
-$string['configuseridentification'] = 'Una formula per descrivere l\'identificazione dell\'utente. Questa formula è utilizzata per assegnare i moduli di risposta agli utenti del sistema. La parte destra dell\'equazione deve corrispondere a un campo della tabella utenti di Moodle.';
+$string['configuseridentification'] = 'Una formula che descrive l\'identificazione dell\'utente. Questa formula viene utilizzata per assegnare i moduli delle risposte agli utenti nel sistema. La parte sinistra dell\'equazione definisce il numero di cifre (solo numeri interi, fino a 10 cifre). La parte destra dell\'equazione deve indicare un campo nella tabella degli utenti di Moodle (es. id, idnumber, phone1).
+Inoltre, l\'equazione può gestire prefissi e suffissi che vengono aggiunti alle cifre contrassegnate (es. "a[7]=username" o "b[5]cd=username"). Queste concatenazioni di stringhe e numeri indicano il valore del campo utilizzato nella tabella utenti per l\'identificazione.';
 $string['confirmremovequestion'] = 'Sei sicuro di voler rimuovere questa domanda {$a}?';
 $string['copy'] = 'Copia';
 $string['copyright'] = '<strong>Attenzione: i testi in questa pagina sono solo per tua personale informazione. Come qualsiasi altro testo, queste domande sono soggette a restrizioni sul copyright. Non ti è permesso copiarli o mostrarli ad altre persone!</strong>';
@@ -106,6 +116,20 @@ $string['correctheader'] = 'Correzione necessaria:';
 $string['correctionerrors'] = 'Moduli con errori di correzione:';
 $string['correctionform'] = 'Correzione';
 $string['correctionforms'] = 'Moduli per la correzione';
+$string['correctionheader'] = 'Correzione';
+$string['correctionheader_help'] = '<p>il modulo di risposta visualizzato necessita la tua attenzione e deve essere corretto manualmente. Non è possibile una correzione automatica.</p>
+<u>Possono essersi generati i seguenti errori...</u>
+<ul>
+  <li><strong>Segnatura non accurata:</strong> Alcuni segni potrebbero non essere stati valutati.</li>
+  <li><strong>Numero di gruppo non valido:</strong> Il numero di gruppo non può essere valutato.</li>
+  <li><strong>Numero di pagina non valido:</strong> Il numero di pagina non può essere valutato.</li>
+  <li><strong>modulo storto:</strong> Il modulo di risposte è stato scansionato non correttamente e non può essere valutato.</li>
+  <li><strong>Esiste un risultato diverso:</strong> È già presente un risultato valutato con un numero di gruppo differente.</li>
+  <li><strong>Pagine incomplete:</strong> Il foglio delle risposte corrente è stato valutato, ma manca almeno 1 altro foglio per completare la valutazione dell\'utente identificato. (si verifica soltanto con moduli di risposta composti da più pagine.)</li>
+  <li><strong>Il risultato esiste:</strong> un risultato valutato esiste già.</li>
+  <li><strong>Utente non iscritto al corso:</strong> Il partecipante individuato non risulta attualmente registrato al corso.</li>
+  <li><strong>L\'utente non esiste:</strong> Il partecipante individuato è sconosciuto.</li>
+</ul>';
 $string['correctionoptionsheading'] = 'Opzioni di correzione';
 $string['correctupdated'] = 'Modulo di correzione aggiornato per il gruppo {$a}.';
 $string['couldnotgrab'] = 'Impossibile acquisire l\'immagine {$a}';
@@ -657,6 +681,7 @@ $string['totalpointsx'] = 'Totale dei punti: {$a}';
 $string['totalquestionsinrandomqcategory'] = 'Totale di {$a} domande nella categoria.';
 $string['trigger'] = 'limite inferiore/superiore';
 $string['tutorial'] = 'Tutorial per i quiz offline';
+$string['tutorial:feedback:2:1'] = 'La crocetta è troppo chiara. È possibile che non sia stata scansionata correttamente';
 $string['type'] = 'Tipo';
 $string['uncheckparts'] = 'Segna il partecipanti selezionati come assenti';
 $string['updatedsumgrades'] = 'La somma di tutti i voti del gruppo {$a->letter} è stata ricalcolata in {$a->grade}.';

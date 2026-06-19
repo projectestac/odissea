@@ -50,6 +50,7 @@ $string['chooseexam'] = 'Choose final quiz';
 $string['completionissuecheckbox'] = 'Yes, issue upon course completion';
 $string['completionissueheader'] = 'Auto-issue criteria: by course completion';
 $string['coursetotal'] = 'Course Total';
+$string['credentialloaderror'] = 'Could not load credentials from Accredible right now. Please try again later; details are in the logs (component mod_accredible).';
 $string['dashboardlink'] = 'Accredible dashboard link';
 $string['dashboardlinktext'] = 'To delete or style credentials, log in to the <a href="https://dashboard.accredible.com" target="_blank">dashboard</a>';
 $string['datecreated'] = 'Date created';
@@ -57,7 +58,11 @@ $string['description'] = 'Description';
 $string['emptygradeattributekeyname'] = 'The final course grade will be mapped to the selected Accredible custom attribute. If you have not yet created a custom attribute, you can do so on the <a href="{$a}" target="_blank">Accredible Platform</a>.';
 $string['euhelp'] = 'Select if you would like to host data in the EU (Frankfurt) instead of the USA';
 $string['eulabel'] = 'EU (Frankfurt) Server';
+$string['eventapirequestfailed'] = 'Accredible API request failed';
 $string['eventcertificatecreated'] = 'A credential was posted to Accredible';
+$string['eventcredentialissued'] = 'Accredible Credential issued';
+$string['eventcredentialissuefailed'] = 'Accredible Credential issuance failed';
+$string['eventcredentialissueskipped'] = 'Accredible Credential issuance skipped';
 $string['gotodashboard'] = 'To update the appearance of your badges and certificates, visit: <a href="https://dashboard.accredible.com" target="_blank">https://dashboard.accredible.com</a>';
 $string['gradeattributegradeitemselect'] = 'Choose Moodle grade to include:';
 $string['gradeattributekeynameselect'] = 'Choose an Accredible design attribute:';
@@ -69,6 +74,7 @@ $string['includegradeattributedescription'] = 'Include Student\'s Grade in Crede
 $string['indexheader'] = 'All certificates/badges for {$a}';
 $string['issued'] = 'Issued';
 $string['manualheader'] = 'Manually issue certificates/badges';
+$string['manualissuefailures'] = 'Credential issuance failed for {$a->count} user(s): {$a->users}. See Site administration → Reports → Logs (component mod_accredible) for details.';
 $string['modulename'] = 'Accredible certificates & badges';
 $string['modulename_help'] = 'The Accredible certificate & badge activity module allows you to issue course certificates or badges to students on accredible.com.
 
@@ -88,6 +94,14 @@ $string['privacy:metadata:accredible'] = 'In order to integrate with Accredible,
 $string['privacy:metadata:accredible:email'] = 'Your email address is sent to Accredible to issue a credential.';
 $string['privacy:metadata:accredible:fullname'] = 'Your full name is sent to Accredible to issue a credential.';
 $string['privacy:metadata:accredible:quizgrade'] = 'Your quiz grade may be sent to Accredible to issue a credential.';
+$string['reason_completion_not_met'] = 'Required completion activities were not all complete';
+$string['reason_exception'] = 'An unexpected error occurred during issuance';
+$string['reason_grade_below_threshold'] = 'The grade was below the passing threshold';
+$string['reason_malformed_completion_record'] = 'The stored completion activities record is corrupt';
+$string['reason_missing_email'] = 'The user has no email address';
+$string['reason_missing_groupid'] = 'No Accredible group id is configured';
+$string['reason_nothing_to_check'] = 'The activity has no final quiz or completion activities configured';
+$string['reason_repeat_attempt'] = 'The deciding quiz was attempted more than once';
 $string['recipient'] = 'Recipient';
 $string['templatename'] = 'Cohort name (from dashboard)';
 $string['unissueddescription'] = 'These users have met the requirements for this certificate but have not yet been issued a certificate. Select those you would like to issue certificates for.';

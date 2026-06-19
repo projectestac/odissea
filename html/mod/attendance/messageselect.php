@@ -78,6 +78,11 @@ if (empty($SESSION->emailselect[$id]) || $messagebody) {
     $SESSION->emailselect[$id] = ['messagebody' => $messagebody];
 }
 $messagebody = $SESSION->emailselect[$id]['messagebody'];
+
+if (isset($messagebody['text'])) {
+    $messagebody = $messagebody['text'];
+}
+
 $count = 0;
 if ($data = data_submitted()) {
     require_sesskey();
@@ -173,7 +178,7 @@ if (!empty($messagebody) && !$edit && !$deluser && ($preview || $send)) {
 echo '<p align="center"><a href="' . $returnto . '">' . get_string("keepsearching", 'mod_attendance') . '</a>' .
     ((count($SESSION->emailto[$id])) ? ', ' . get_string('usemessageform', 'mod_attendance') : '') . '</p>';
 if ((!empty($send) || !empty($preview) || !empty($edit)) && (empty($messagebody))) {
-    echo $OUTPUT->notification(get_string('allfieldsrequired'));
+    echo $OUTPUT->notification(get_string('allfieldsrequired', 'mod_attendance'));
 }
 if (count($SESSION->emailto[$id])) {
     require_sesskey();

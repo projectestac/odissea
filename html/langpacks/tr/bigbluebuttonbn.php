@@ -254,6 +254,7 @@ $string['event_meeting_left'] = 'Toplantı bitti';
 $string['event_recording_deleted'] = 'Kayıt silindi';
 $string['event_recording_edited'] = 'Kayıt düzenlendi';
 $string['event_recording_imported'] = 'Kayıt içe aktarıldı';
+$string['event_recording_link_deleted'] = 'Kayıt bağlantısı silindi';
 $string['event_recording_protected'] = 'Kayıt korumalı';
 $string['event_recording_published'] = 'Kayıt yayınlandı';
 $string['event_recording_unprotected'] = 'Kayıt korumasız';

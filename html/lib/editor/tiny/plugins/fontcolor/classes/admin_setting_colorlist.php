@@ -36,7 +36,6 @@ use admin_setting;
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class admin_setting_colorlist extends admin_setting {
-
     /**
      * Placeholder that is used as a value for the value of the original settings hidden input field.
      * @var string
@@ -56,7 +55,7 @@ class admin_setting_colorlist extends admin_setting {
      * @return string Returns an XHTML string
      * @throws \coding_exception
      */
-    public function output_html($data, $query='') {
+    public function output_html($data, $query = '') {
         global $OUTPUT;
 
         // The original object is destroyed, so we don't have information about the error. However, if
@@ -68,7 +67,8 @@ class admin_setting_colorlist extends admin_setting {
             $mustvalidate = true;
         } else {
             // Assume here that we got a json from the config out of the DB.
-            $this->settingval = color_list::load_from_json($data);
+            $json = (is_string($data)) ? $data : '';
+            $this->settingval = color_list::load_from_json($json);
             $mustvalidate = false;
         }
 
@@ -121,7 +121,6 @@ class admin_setting_colorlist extends admin_setting {
         foreach ($this->settingval->get_list() as $color) {
             if (!$color->is_valid()) {
                 return false;
-
             }
         }
         return true;

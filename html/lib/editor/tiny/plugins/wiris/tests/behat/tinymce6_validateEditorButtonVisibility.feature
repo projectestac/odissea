@@ -15,6 +15,7 @@ I need to change the settings on the filter wiris
       | user     | course | role           |
       | admin  | C1     | editingteacher |
     And the "wiris" filter is "on"
+    And the "wiris" filter has maximum priority
     And the "urltolink" filter is "off"
     And the "mathjaxloader" filter is "off"
     And I log in as "admin"

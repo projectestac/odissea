@@ -46,8 +46,6 @@ foreach ($publisher_books as $publisher){
         }
     } catch (Throwable $e){
         $fail_description = $e->getMessage();
-    } catch (SoapFault $e){
-        $fail_description = $e->getMessage();
     }
 
     if($success){

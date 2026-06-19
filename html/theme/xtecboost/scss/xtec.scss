@@ -6,6 +6,17 @@ $headerbg: #f8f8f8 !default;
 $fontfamily: null !default;
 $texttransform: null !default;
 
+:root {
+  --primary: #{$maincolor};
+  --core-header-toolbar-background: #{$maincolor};
+  --core-header-toolbar-color: #{$colorcontrast};
+  --core-bottom-tabs-background: #{$maincolor};
+  --core-bottom-tabs-color-selected: #{$colorcontrast};
+  --core-bottom-tabs-color: #{$colorcontrast};
+  --core-progressbar-text-color: #{$maincolor};
+  --core-bottom-tabs-badge-color: #{$colorcontrast};
+}
+
 @font-face {
     font-family: Abecedario;
     src: url('[[font:theme|Abecedario.ttf]]');

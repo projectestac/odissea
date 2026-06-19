@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addedby'] = 'Afegit per {$a}';
 $string['addgroup'] = 'Afegeix l\'usuari al grup';
-$string['addgroupstogrouping'] = 'Afegeix grups a l\'agrupament';
+$string['addgroupstogrouping'] = 'Afegeix el grup a l\'agrupament';
 $string['addgroupstogroupings'] = 'Afegeix/suprimeix grups';
 $string['adduserstogroup'] = 'Afegeix/suprimeix usuaris';
 $string['allocateby'] = 'Assigna membres';
@@ -50,13 +50,13 @@ $string['databaseupgradegroups'] = 'La versió de grups és ara {$a}';
 $string['defaultgrouping'] = 'Agrupament per defecte';
 $string['defaultgroupingname'] = 'Agrupament';
 $string['defaultgroupname'] = 'Grup';
-$string['deleteallgroupings'] = 'Suprimeix tots els agrupaments';
-$string['deleteallgroups'] = 'Suprimeix tots els grups';
+$string['deleteallgroupings'] = 'Tots els agrupaments';
+$string['deleteallgroups'] = 'Tots els grups';
 $string['deletegroupconfirm'] = 'Segur que voleu suprimir el grup «{$a}»?';
 $string['deletegrouping'] = 'Suprimeix agrupament';
 $string['deletegroupingconfirm'] = 'Segur que voleu suprimir l\'agrupament «{$a}»? (Els grups d\'aquest agrupament no se suprimiran.)';
 $string['deletegroupsconfirm'] = 'Segur que voleu suprimir els grups següents?';
-$string['deleteselectedgroup'] = 'Suprimeix grup seleccionat';
+$string['deleteselectedgroup'] = 'Esborra';
 $string['disablemessagingaction'] = 'Desactiva la missatgeria';
 $string['editgroupingsettings'] = 'Edita els paràmetres d\'agrupament';
 $string['editgroupsettings'] = 'Edita els paràmetres del grup';
@@ -94,7 +94,7 @@ $string['existingmembers'] = 'Membres existents: {$a}';
 $string['exportgroupsgroupings'] = 'Baixa els grups i agrupaments com a';
 $string['filtergroups'] = 'Filtra grups per:';
 $string['group'] = 'Grup';
-$string['groupaddedsuccesfully'] = 'S\'ha afegit amb èxit el grup {$a}';
+$string['groupaddedsuccesfully'] = 'S\'ha afegit el grup {$a} correctament';
 $string['groupaddedtogroupingsuccesfully'] = 'El grup {$a->groupname} s\'ha afegit a l\'agrupació  {$a->groupingname} amb èxit.';
 $string['groupby'] = 'Crea grups automàticament basats en';
 $string['groupdescription'] = 'Descripció del grup';
@@ -119,15 +119,13 @@ $string['groupmembersselected'] = 'Membres del grup seleccionat';
 $string['groupmode'] = 'Mode de grups';
 $string['groupmode_groupsseparate_help'] = 'Cada membre del grup només pot veure el seu propi grup, els altres són invisibles.';
 $string['groupmode_groupsvisible_help'] = 'Cada membre del grup treballa en el seu propi grup, però també pot veure altres grups.';
-$string['groupmode_help'] = 'Aquest paràmetre té 3 opcions:
+$string['groupmode_help'] = '* Sense grups
+* Grups separats: els estudiants es divideixen en grups i només poden veure el treball del seu grup.
+* Grups visibles: els estudiants es divideixen en grups, però poden veure el treball dels altres grups.
 
-* Sense grups
-* Grups separats: cada membre d\'un grup veu només el seu grup, els altres són invisibles.
-* Grups visibles: cada membre d\'un grup treballa dins del seu propi grup, però pot veure també els altres grups.
-
-El mode de grup definit a nivell de curs és el mode per defecte en totes les activitats del curs. Cada activitat que admeti grups pot definir també el seu propi mode de grup, encara que si s\'imposa el mode de grup a nivell de curs, s\'ignorarà el paràmetre de mode de grup de cada activitat.';
+El mode de grup establert a nivell de curs és el mode per defecte per a totes les activitats. Si el mode de grup es força a nivell de curs, no es pot canviar en una activitat.';
 $string['groupmodeforce'] = 'Imposa el mode de grup';
-$string['groupmodeforce_help'] = 'Si es força el mode de grups, el mode de grups del curs s\'aplica a cada activitat del curs. Aleshores els modes de grup de cada activitat no es tenen en compte.';
+$string['groupmodeforce_help'] = 'El mode de grup s\'aplica a totes les activitats i no es pot canviar en una activitat.';
 $string['groupmy'] = 'El meu grup';
 $string['groupname'] = 'Nom del grup';
 $string['groupnameexists'] = 'Ja existeix un grup denominat \'{$a}\' en aquest curs. Trieu un altre nom.';
@@ -153,7 +151,7 @@ $string['importgroups_help'] = 'Els grups poden ser importats amb el fitxer de t
 $string['importgroups_link'] = 'group/import';
 $string['includeonlyactiveenrol'] = 'Inclou sols les inscripcions actives';
 $string['includeonlyactiveenrol_help'] = 'Si s\'habilita, els usuaris amb inscripció desactivada no seran inclosos als grups.';
-$string['javascriptrequired'] = 'Aquesta pàgina requereix Javascript';
+$string['javascriptrequired'] = 'Aquesta pàgina requereix que el JavaScript estigui habilitat.';
 $string['manageactions'] = 'Gestiona';
 $string['memberofgroup'] = 'Membre del grup de: {$a}';
 $string['members'] = 'Membres per grup';
@@ -173,13 +171,13 @@ $string['nogroup'] = 'Sense grup';
 $string['nogrouping'] = 'Sense agrupaments';
 $string['nogroups'] = 'Encara no s\'ha definit cap grup en aquest curs';
 $string['nogroupsassigned'] = 'No s\'han assignat grups';
-$string['nopermissionforcreation'] = 'No s\'ha pogut crear el grup "{$a}" perquè no teniu els permisos requerits';
+$string['nopermissionforcreation'] = 'No podeu crear el grup «{$a}» perquè no teniu els permisos necessaris.';
 $string['nosmallgroups'] = 'Impedeix que el darrer grup sigui massa petit';
 $string['notingroup'] = 'Ignora usuaris en grups';
-$string['notingrouping'] = '[en cap agrupament]';
-$string['notingrouplist'] = '[En cap grup]';
+$string['notingrouping'] = 'En cap agrupament';
+$string['notingrouplist'] = 'En cap grup';
 $string['nousersinrole'] = 'No hi ha usuaris apropiats en el rol seleccionat';
-$string['number'] = 'Nombre de grups o membres per grup';
+$string['number'] = 'Nombre de grups/membres';
 $string['numgroups'] = 'Nombre de grups';
 $string['nummembers'] = 'Membres per grup';
 $string['othergroups'] = 'Altres grups';
@@ -189,23 +187,23 @@ $string['participation_help'] = 'Els membres del grup haurien de poder seleccion
 $string['participationshort'] = 'Participació';
 $string['potentialmembers'] = 'Membres en potència: {$a}';
 $string['potentialmembs'] = 'Membres potencials';
-$string['printerfriendly'] = 'Visualització per a imprimir de l\'agrupament';
+$string['printerfriendly'] = 'Pantalla per imprimir';
 $string['privacy:metadata:core_message'] = 'Les converses de grup';
 $string['privacy:metadata:groups'] = 'Un registre de membres del grup.';
 $string['privacy:metadata:groups:groupid'] = 'L\'ID del grup.';
 $string['privacy:metadata:groups:timeadded'] = 'La marca horària que indica quan es va afegir l\'usuari al grup.';
 $string['privacy:metadata:groups:userid'] = 'L\'ID de l\'usuari que està associat al grup.';
-$string['random'] = 'aleatòriament';
+$string['random'] = 'Aleatòriament';
 $string['removefromgroup'] = 'Elimina del grup {$a}';
 $string['removefromgroupconfirm'] = 'Segur que voleu eliminar l\'usuari "{$a->user}" del grup "{$a->group}"?';
 $string['removegroupfromselectedgrouping'] = 'Treu el grup de l\'agrupament';
-$string['removegroupingsmembers'] = 'Treu tots els grups dels agrupaments';
-$string['removegroupsmembers'] = 'Treu tots els membres del grup';
+$string['removegroupingsmembers'] = 'Tots els grups dels agrupaments';
+$string['removegroupsmembers'] = 'Tots els membres del grup';
 $string['removeselectedusers'] = 'Suprimeix els usuaris seleccionats';
 $string['selectfromgroup'] = 'Selecciona els membres des d\'un grup';
 $string['selectfromgrouping'] = 'Selecciona els membres de l\'agrupament';
-$string['selectfromrole'] = 'Selecciona membres del rol';
-$string['showgroupsingrouping'] = 'Mostra grups de l\'agrupament';
+$string['selectfromrole'] = 'Selecciona els membres amb rol';
+$string['showgroupsingrouping'] = 'Mostra els grups de l\'agrupament';
 $string['showmembersforgroup'] = 'Mostra membres del grup';
 $string['toomanygroups'] = 'No hi ha prou usuaris per a poblar aquest nombre de grups. Només hi ha {$a} usuaris en el rol seleccionat.';
 $string['usercount'] = 'Nombre d\'usuaris';
@@ -220,7 +218,7 @@ $string['visibility_help'] = '* Visible per a tothom: tots els participants del 
 Els usuaris amb la capacitat de visualitzar els grups amagats sempre poden veure la pertinença al grup.
 
 Tingueu en compte que no podeu canviar aquest paràmetre si el grup té membres.';
-$string['visibilityall'] = 'Visible per a tothom';
+$string['visibilityall'] = 'Visible';
 $string['visibilitymembers'] = 'Visible només per als membres';
 $string['visibilitynone'] = 'Ocult';
 $string['visibilityown'] = 'Mostra només la pròpia pertinença';

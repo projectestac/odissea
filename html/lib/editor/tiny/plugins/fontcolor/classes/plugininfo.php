@@ -27,9 +27,9 @@ namespace tiny_fontcolor;
 use context;
 use editor_tiny\editor;
 use editor_tiny\plugin;
-use editor_tiny\plugin_with_menuitems;
 use editor_tiny\plugin_with_buttons;
 use editor_tiny\plugin_with_configuration;
+use editor_tiny\plugin_with_menuitems;
 
 /**
  * BFH Font colour plugin.
@@ -38,8 +38,7 @@ use editor_tiny\plugin_with_configuration;
  * @copyright   2023 Luca Bösch <luca.boesch@bfh.ch>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class plugininfo extends plugin implements plugin_with_menuitems, plugin_with_buttons, plugin_with_configuration {
-
+class plugininfo extends plugin implements plugin_with_buttons, plugin_with_configuration, plugin_with_menuitems {
     /**
      * Plugin name.
      */
@@ -97,9 +96,12 @@ class plugininfo extends plugin implements plugin_with_menuitems, plugin_with_bu
      * @return array
      * @throws \dml_exception
      */
-    public static function get_plugin_configuration_for_context(context $context, array $options, array $fpoptions,
-                                                                ?editor $editor = null): array {
-
+    public static function get_plugin_configuration_for_context(
+        context $context,
+        array $options,
+        array $fpoptions,
+        ?editor $editor = null
+    ): array {
         // Set the mode first, css classnames or style attributes with color codes.
         $config = [
             'usecssclassnames' => (bool)get_config('tiny_fontcolor', 'usecssclassnames'),

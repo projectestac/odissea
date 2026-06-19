@@ -44,6 +44,7 @@ $string['adduser'] = 'Add user';
 $string['addwarning'] = 'Add warning';
 $string['all'] = 'All';
 $string['allcourses'] = 'All courses';
+$string['allfieldsrequired'] = 'The message cannot be empty.';
 $string['allowupdatestatus'] = 'Allow students to update own attendance';
 $string['allowupdatestatus_desc'] = 'If checked, students will be able to update their attendance for a session after they have already self-reported it.';
 $string['allowupdatestatus_help'] = 'If checked students will be able to update their attendance for a session after they have already self-reported it.';

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['description'] = 'Zugriff über die Eingabe eines Kennworts erlauben';
+$string['description'] = 'Zugriff über ein Kennwort regeln';
 $string['enterpassword'] = 'Kennwort eingeben';
 $string['enterpasswordfor'] = 'Kennwort für {$a} eingeben';
 $string['error_setpassword'] = 'Sie müssen ein Kennwort festlegen';
@@ -34,7 +34,7 @@ $string['passwordintro'] = 'Der Zugriff zu <em>{$a}</em> ist mit einem Kennwort 
 $string['passwordprotection'] = 'Kennwort erforderlich';
 $string['permanently'] = 'dauerhaft';
 $string['pluginname'] = 'Voraussetzung: Kennwort';
-$string['privacy:metadata:availability_password_grant'] = 'Info zu Nutzer/innen, die das Kennwort für die Aktivität richtig eingegeben haben.';
+$string['privacy:metadata:availability_password_grant'] = 'Info über alle Nutzer/innen, die das Kennwort für die Aktivität richtig eingegeben haben.';
 $string['privacy:metadata:availability_password_grant:cmid'] = 'Aktivitäts-ID, für die das Kennwort eingegeben wurde.';
 $string['privacy:metadata:availability_password_grant:courseid'] = 'Kurs-ID des Kurses, in dem das Kennwort eingegeben wurde.';
 $string['privacy:metadata:availability_password_grant:password'] = 'Kennwort, das eingegeben wurde.';

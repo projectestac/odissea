@@ -25,5 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['active'] = 'Aktiv';
+$string['default'] = 'Aktiverad som standard';
 $string['no'] = 'nej';
+$string['replysnapshot'] = 'Skärmbild';
+$string['replywhiteboard'] = 'Whiteboard';
 $string['yes'] = 'ja';

@@ -4,6 +4,28 @@ More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/agora_moodle2
 
 
+Changes 26.06.22
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 4.5.12
+- Updated langpacks
+- Atto cloze: Upgraded editor plugin
+- Tiny fontcolor: Upgraded editor plugin
+- Tiny cloze: Upgraded editor plugin
+- Tiny c4l: Upgraded editor plugin
+- Attendance: Upgraded module
+- Board: Added module
+- Coderunner: Upgrades question type and question behaviour
+- Import rubric & customgradingform: Added block
+- Configurable reports: Upgraded block
+- Completion progress: Upgraded block
+- Local redislock: Fix: Only set ttl in new locks
+- rcommon: Improved spinner in user check. Also minor improvements
+- xtecboost: Added support for color change in mobile app
+- Wiris: Upgraded all components
+- Don't increase the TTL for sessions of guest user to reduce data in redis
+- CORS: Added specific headers for additio
+
+
 Changes 26.03.03
 ---------------------------------------------------------------------------------------
 - Upgraded Moodle to version 4.5.10+

@@ -169,7 +169,7 @@ $string['publishto_help'] = '<p>Hay tres posibilidades</p>
 
 <p><b>Todos en este sitio</b> - Cualquiera registrado en el sitio puede leer esta entrada.</p>
 
-<p><b>Todo el mundo</b> - Cualquiera (incluídos los invitados) puede leer esta entrada.</p>';
+<p><b>Todo el mundo</b> - Cualquiera (incluidos los invitados) puede leer esta entrada.</p>';
 $string['publishtocourse'] = 'Usuarios que comparten curso con usted';
 $string['publishtocourseassoc'] = 'Miembros del curso asociado';
 $string['publishtocourseassocparam'] = 'Miembros de {$a}';

@@ -260,6 +260,7 @@ $string['unknownoriginal'] = 'Onbekend';
 $string['unknownsource'] = 'Onbekende bron';
 $string['unzipped'] = 'Uitpakken gelukt';
 $string['upload'] = 'Upload dit bestand';
+$string['uploaderror'] = 'Fout bij het uploaden van het bestand';
 $string['uploading'] = 'Uploaden...';
 $string['uploadsucc'] = 'Het bestand is met succes geüpload';
 $string['uselatestfile'] = 'Gebruik laatste bestand';

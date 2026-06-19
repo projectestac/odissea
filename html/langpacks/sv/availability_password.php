@@ -25,4 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['enterpassword'] = 'Ange lösenord';
+$string['passwordprotection'] = 'Lösenordsskydd';
+$string['permanently'] = 'Permanent';
 $string['pluginname'] = 'Begränsning via lösenord';

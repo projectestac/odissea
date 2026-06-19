@@ -32,7 +32,7 @@ Això modificarà els enllaços d\'administració de Moodle.';
 $string['admindirsettinghead'] = 'S\'està configurant el directori d\'administració...';
 $string['admindirsettingsub'] = 'Molts pocs serveis d\'allotjament web utilitzen /admin com a URL especial perquè accediu a un tauler de control o quelcom semblant. Malauradament,  això entra en conflicte amb la ubicació estàndard de les pàgines d\'administració de Moodle. Podeu arreglar aquest problema canviant el nom del directori d\'administració de Moodle en la vostra instal·lació i posant-ne el nou nom aquí. Per exemple:<br /> <br /><b>moodleadmin</b><br /> <br />
 Això modificarà els enllaços d\'administració de Moodle.';
-$string['availablelangs'] = 'Llista d\'idiomes disponibles';
+$string['availablelangs'] = 'Paquets d\'idiomes disponibles';
 $string['caution'] = 'Alerta';
 $string['chooselanguage'] = 'Trieu un idioma';
 $string['chooselanguagehead'] = 'Trieu un idioma';
@@ -58,14 +58,14 @@ $string['configurationcompletehead'] = 'S\'ha completat la configuració';
 $string['configurationcompletesub'] = 'Moodle ha intentat desar la configuració en un fitxer en l\'arrel de la vostra instal·lació de Moodle.';
 $string['database'] = 'Base de dades';
 $string['databasehead'] = 'Paràmetres de la base de dades';
-$string['databasehost'] = 'Servidor de base de dades:';
-$string['databasename'] = 'Nom de la base de dades:';
-$string['databasepass'] = 'Contrasenya de la base de dades:';
+$string['databasehost'] = 'Servidor de base de dades';
+$string['databasename'] = 'Nom de la base de dades';
+$string['databasepass'] = 'Contrasenya de la base de dades';
 $string['databaseport'] = 'Port de la base de dades';
 $string['databasesocket'] = 'Sòcol Unix';
 $string['databasetypehead'] = 'Trieu el controlador de la base de dades';
 $string['databasetypesub'] = 'Moodle funciona amb diversos tipus de servidors de base de dades. Contacteu amb l\'administrador de la base de dades si no sabeu quin tipus heu d\'utilitzar.';
-$string['databaseuser'] = 'Usuari de la base de dades:';
+$string['databaseuser'] = 'Usuari de la base de dades';
 $string['dataroot'] = 'Directori de dades';
 $string['datarooterror'] = 'No s\'ha pogut trobar o crear el directori de dades que heu especificat. Corregiu el camí o creeu el directori a mà.';
 $string['datarootpermission'] = 'Permisos dels directoris de dades';
@@ -96,7 +96,7 @@ Especifiqueu el camí complet del directori d\'aquesta instal·lació. Assegureu
 <br /><br />
 <b>Directori de dades:</b>
 Necessiteu un lloc on Moodle pugui desar els fitxers que es pengin. L\'usuari del servidor web (generalment «nobody» o «apache») ha de tenir permisos de lectura i d\'ESCRIPTURA en aquest directori, però no hauria de ser accessible directament a través de la web. L\'instal·lador intentarà crear-lo si no existeix.</p>';
-$string['dirroot'] = 'Directori de Moodle';
+$string['dirroot'] = 'Directori del Moodle';
 $string['dirrooterror'] = 'El paràmetre «Directori de Moodle» sembla incorrecte: no s\'hi ha pogut trobar cap instal·lació de Moodle. S\'ha reiniciat el valor del paràmetre.';
 $string['download'] = 'Baixa';
 $string['downloadlanguagebutton'] = 'Baixa el paquet d\'idioma "{$a}"';
@@ -119,7 +119,7 @@ $string['fileuploadshelp'] = '<p>Sembla que la càrrega de fitxers està inhabil
 <p>Per habilitar la càrrega de fitxers cal editar el fitxer php.ini principal del sistema i establir el paràmetre <b>file_uploads</b> a «1».</p>';
 $string['inputdatadirectory'] = 'Directori de dades:';
 $string['inputwebadress'] = 'Adreça web:';
-$string['inputwebdirectory'] = 'Directori de Moodle';
+$string['inputwebdirectory'] = 'Directori del Moodle:';
 $string['installation'] = 'Instal·lació';
 $string['invaliddbprefix'] = 'Prefix no vàlid. El prefix només pot consistir en lletres minúscules i guió baix.';
 $string['langdownloaderror'] = 'Dissortadament l\'idioma "{$a}" no es pot baixar. La instal·lació prosseguirà en anglès.';
@@ -173,7 +173,7 @@ $string['pathssubdataroot'] = '<p>Directori on Moodle emmagatzemarà els materia
 <p>Aquest directori hauria de tenir permisos de lectura i escriptura per a l\'usuari del servidor web (normalment «www-data», «nobody», or «apache»).</p>
 <p>No ha de ser accessible directament via web.</p>
 <p>L\'instal·lador provarà de crear-lo si no existeix.</p>';
-$string['pathssubdirroot'] = 'Camí complet del directori d\'instal·lació de Moodle.';
+$string['pathssubdirroot'] = '<p>El camí complet al directori que conté el codi del Moodle.</p>';
 $string['pathssubwwwroot'] = '<p>L\'adreça web completa on s\'accedirà a Moodle; per exemple, l\'adreça que els usuaris introduiran a la barra d\'adreces del navegador per accedir a Moodle.</p> <p> No és possible accedir a Moodle utilitzant diferents adreces. Si el vostre lloc és accessible a través de diferents adreces, trieu-ne la més fàcil i configureu una redirecció permanent per a cadascuna de les altres adreces.</p> <p>
 Si el vostre lloc és accessible tant des d\'Internet com des d\'una xarxa interna (anomenada de vegades intranet), utilitzeu l\'adreça pública aquí.</p> <p>Si l\'adreça actual no és correcta, canvieu l\'URL a la barra d\'adreces del navegador i reinicieu la instal·lació.';
 $string['pathsunsecuredataroot'] = 'La ubicació del dataroot no és segura.';
@@ -187,11 +187,11 @@ $string['phpversionhelp'] = '<p>El Moodle requereix una versió de PHP almenys 5
 $string['releasenoteslink'] = 'Per a més informació sobre aquesta versió de Moodle, consulteu les notes de llançament a {$a}';
 $string['safemode'] = 'Mode segur';
 $string['safemodeerror'] = 'Moodle pot tenir problemes amb el mode segur activat';
-$string['safemodehelp'] = '<p>Moodle pot tenir diversos problemes amb el mode segur activat. Probablement no podrà crear fitxers nous.</p>
+$string['safemodehelp'] = '<p>El Moodle pot tenir diversos problemes amb el mode segur activat, entre els quals, probablement, que no se li permetrà crear fitxers nous.</p>
 
-<p>Normalment el mode segur només està habilitat en servidors webs públics una mica paranoics, de manera que és probable que hàgiu de buscar un altre servei d\'allotjament per al vostre Moodle.</p>
+<p>El mode segur normalment només està activat a servidors web públics paranoics, de manera que és possible que hàgiu de trobar una nova empresa d\'allotjament web per al vostre lloc Moodle.</p>
 
-<p>Podeu continuar la instal·lació si voleu, però trobareu problemes de funcionament més endavant.</p>';
+<p>Podeu intentar continuar la instal·lació si voleu, però compteu que us trobareu alguns problemes més endavant.</p>';
 $string['sessionautostart'] = 'Inici automàtic de sessió';
 $string['sessionautostarterror'] = 'Hauria d\'estar desactivat';
 $string['sessionautostarthelp'] = '<p>Moodle necessita suport per a sessions i no funcionarà sense.</p>
@@ -203,10 +203,8 @@ $string['welcomep10'] = '{$a->installername} ({$a->installerversion})';
 $string['welcomep20'] = 'Esteu veient aquesta pàgina perquè heu instal·lat amb èxit i heu executat el paquet <strong>{$a->packname} {$a->packversion}</strong>. Felicitacions.';
 $string['welcomep30'] = 'Aquesta versió de <strong>{$a->installername}</strong> inclou les aplicacions necessàries per crear un entorn en el qual funcioni <strong>Moodle</strong>, concretament:';
 $string['welcomep40'] = 'El paquet inclou també <strong>Moodle {$a->moodlerelease} ({$a->moodleversion})</strong>.';
-$string['welcomep50'] = 'L\'ús de totes les aplicacions d\'aquest paquet és governat per les seves llicències respectives. El paquet <strong>{$a->installername}</strong> complet és
-<a href="http://www.opensource.org/docs/definition_plain.html">codi font obert</a> i es distribueix
-sota llicència <a href="http://www.gnu.org/copyleft/gpl.html">GPL</a>.';
-$string['welcomep60'] = 'Les pàgines següents us guiaran per una sèrie de passos fàcils de seguir per configurar <strong>Moodle</strong> en el vostre ordinador. Podeu acceptar els paràmetres per defecte o, opcionalment, modificar-los perquè s\'ajustin a les vostres necessitats.';
+$string['welcomep50'] = 'L\'ús de totes les aplicacions d\'aquest paquet es regeix per les seves respectives llicències. El paquet complet <strong>{$a->installername}</strong> és de <a href="https://www.opensource.org/docs/definition_plain.html">codi obert</a> i es distribueix sota la llicència <a href="https://www.gnu.org/copyleft/gpl.html">GPL</a>.';
+$string['welcomep60'] = 'Les pàgines següents us guiaran per una sèrie de passos fàcils de seguir per configurar el <strong>Moodle</strong> en el vostre ordinador. Podeu acceptar els paràmetres per defecte o, opcionalment, modificar-los perquè s\'ajustin a les vostres necessitats.';
 $string['welcomep70'] = 'Feu clic al botó «Següent» per continuar amb la configuració de <strong>Moodle</strong>.';
 $string['wwwroot'] = 'Adreça web';
 $string['wwwrooterror'] = 'L\'adreça web no sembla vàlida. La instal·lació de Moodle no sembla que sigui en aquesta ubicació. Aquest valor s\'ha reiniciat.';

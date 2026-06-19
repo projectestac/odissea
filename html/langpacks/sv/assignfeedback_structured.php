@@ -25,4 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['close'] = 'Nära';
+$string['criteriasetnameusedtitle'] = 'Namnet används redan';
 $string['criteriasetpublish'] = 'Dela med andra användare';
+$string['criteriasetshared'] = 'Delad';
+$string['default'] = 'Aktiverad som standard';

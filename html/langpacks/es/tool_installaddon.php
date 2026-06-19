@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['acknowledgement'] = 'Reconocimiento';
 $string['acknowledgementtext'] = 'Entiendo que es mi responsabilidad disponer de copias de seguridad completas de este sitio antes de instalar módulos externos (ad-ons). Acepto y entiendo que los módulos externos  (especialmente, pero no exclusivamente, aquellos procedentes de fuentes no oficiales) pueden contener agujeros de seguridad, hacer que el sitio quede fuera de servicio, o provocar fugas de datos privados o la pérdida de los mismos.';
+$string['activitychooserfootertext'] = 'Mostrar más actividades';
 $string['featuredisabled'] = 'El instalador de complementos está deshabilitado en este sitio.';
 $string['installaddon'] = '¡Instalar complemento!';
 $string['installaddons'] = 'Instalar complementos';
@@ -43,6 +44,8 @@ $string['installfromzipsubmit'] = 'Instalar complemento desde archivo ZIP';
 $string['installfromziptype'] = 'Tipo de extensión';
 $string['installfromziptype_help'] = 'Para los complementos que declaran correctamente el nombre de su componente, el instalador puede detectar el tipo de complemento automáticamente. Si la detección automática falla, elija el tipo correcto de complemento manualmente. Advertencia: El procedimiento de instalación puede fallar gravemente si se especifica un tipo de complemento incorrecto.';
 $string['installfromziptype_link'] = 'Development:Plugins';
+$string['marketplaceadminlinktext'] = 'Mostrar nuevos plugins';
+$string['marketplacelink'] = 'Moodle Marketplace';
 $string['permcheck'] = 'Asegúrese de que los procesos del servidor web pueden escribir en la ubicación raíz de este tipo de extensiones.';
 $string['permcheckerror'] = 'Error al comprobar los permisos de escritura';
 $string['permcheckprogress'] = 'Comprobando los permisos de escritura...';

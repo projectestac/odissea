@@ -124,8 +124,8 @@ $string['groupmode_help'] = '* Keine Gruppen
 * Sichtbare Gruppen - Teilnehmer/innen sind in Gruppen geteilt, aber sie können die Arbeit anderer Gruppen sehen.
 
 Der Gruppenmodus, der auf Kursebene gesetzt wird, ist der Standardmodus für alle Aktivitäten im Kurs. Falls der Gruppenmodus auf Kursebene erzwungen wird, kann diese Einstellung für keine Aktivität geändert werden.';
-$string['groupmodeforce'] = 'Gruppenmodus erzwingen';
-$string['groupmodeforce_help'] = 'Der Gruppenmodus ist für den ganzen Kurs erzwungen und kann für keine Aktivität geändert werden.';
+$string['groupmodeforce'] = 'Gruppenmodus festlegen';
+$string['groupmodeforce_help'] = 'Der Gruppenmodus ist für den ganzen Kurs festgelegt und kann für keine Aktivität geändert werden.';
 $string['groupmy'] = 'Meine Gruppe';
 $string['groupname'] = 'Gruppenname';
 $string['groupnameexists'] = 'In diesem Kurs gibt es bereits die Gruppe \'{$a}\'. Wählen Sie einen anderen Namen.';

@@ -534,11 +534,7 @@ $string['privacy:path:essayresponses'] = 'Respuestas al ensayo';
 $string['privacy:path:pages'] = 'Páginas';
 $string['processerror'] = 'Ha ocurrido un error durante el procesamiento';
 $string['progressbar'] = 'Barra de progreso';
-$string['progressbar_help'] = '<p>Muestra una barra de progreso al final de la lección.
-Por el momento, la barra de progreso tiene más precisión cuando las lecciones son lineales.</p>
-<p>Al calcular el porcentaje completado, las Tablas de ramificación y las páginas de preguntas contestadas correctamente contribuyen al progreso de la lección. Al calcular el número total de páginas de la lección, los conglomerados y las páginas incluídas en los conglomerados sólo cuentan como una página única, excluyéndose las páginas de final de conglomerado y final de tabla de ramificación. El resto de las páginas cuentan para calcular el total de páginas de la lección.</p>
-<p>Nota: los estilos por defecto de la barra de progreso no impresionan ;)  Todos los estilos (e.g.: colores, imágenes de fondo, etc.)
-de la barra de progreso pueden modificarse en mod/lesson/styles.php.';
+$string['progressbar_help'] = 'Si se habilita, se muestra una barra bajo las páginas de la lección mostrando el porcentaje de progreso aproximado.';
 $string['progressbarteacherwarning'] = 'La barra de progreso no se muestra para {$a}';
 $string['progressbarteacherwarning2'] = 'Usted no verá la barra de progreso porque puede editar esta lección';
 $string['progresscompleted'] = 'Ha alcanzado el {$a}% de esta lección';

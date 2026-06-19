@@ -194,7 +194,7 @@ $string['editingofflinequiz'] = 'Talde-galderak editatzen';
 $string['editingofflinequiz_help'] = 'Offline galdetegia sortzean ondokoak dira oinarrizko kontzeptuak:
 <ul><li> Offline galdetegia, orri bat edo gehiagotan galderak dituena</li>
 <li> Galdera-bankua, galdera guztien kpopiak kategoriaka sailkatuta gordetzen dituena</li></ul>';
-$string['editingofflinequizx'] = 'Offline galdetegia editatu: {$a}';
+$string['editingofflinequizx'] = 'Galderak';
 $string['editlist'] = 'Editatu zerrenda';
 $string['editlists'] = 'Editatu zerrendak';
 $string['editmaxmark'] = 'Editatu gehieneko puntuazioa';
@@ -263,7 +263,7 @@ $string['gradeiszero'] = 'Oharra: offline quiz honetako gehieneko kalifikazioa 0
 $string['gradeswarning'] = 'Galderen kalifikazioak zenbakizkoak izan behar dira';
 $string['gradewarning'] = 'Galderaren kalifikazioa zenbakizkoa izan behar da';
 $string['gradingofflinequiz'] = 'Kalifikazioak';
-$string['gradingofflinequizx'] = 'Kalifikazioak: {$a}';
+$string['gradingofflinequizx'] = 'Kalifikazioak';
 $string['gradingoptionsheading'] = 'Kalifikazio-aukerak';
 $string['greeniscross'] = 'gurutze bezala zenbatua';
 $string['group'] = 'Taldea';

@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['details'] = 'Detalls';
 $string['filedetails'] = 'Detalls';
+$string['override:add:group'] = 'Afegeix una excepció de grup';
 $string['overview'] = 'Resum';
 $string['privacy:path:resources'] = 'Recursos';
 $string['withselected'] = 'Amb el que s\'ha seleccionat...';

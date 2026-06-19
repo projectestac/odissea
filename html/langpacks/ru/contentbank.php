@@ -101,5 +101,5 @@ $string['visibilitychoiceunlisted'] = 'Вне списка';
 $string['visibilitypref'] = 'Видимость контента по умолчанию';
 $string['visibilitypref_help'] = 'Контент, создаваемый в банке контента, по умолчанию будет использовать эту настройку видимости.';
 $string['visibilitysetpublic'] = 'Опубликовать';
-$string['visibilitysetunlisted'] = 'Отметить вне списка';
+$string['visibilitysetunlisted'] = 'Снять с публикации';
 $string['visibilitytitleunlisted'] = '{$a} (Вне списка)';

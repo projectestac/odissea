@@ -51,14 +51,16 @@ if (empty($credentials)){
 		}
 		$row[] = '<span title="' . $credential->credentials . '">' . (core_text::strlen($credential->credentials) > 30? core_text::substr($credential->credentials, 0, 30) . '...': $credential->credentials);
 		$row[] = $name;
-		$actions = array();
-		$actions[] = '<a href="edit_book_credential.php?backto=books&id=' . $credential->id . '" title="' . get_string('edit') .'" style="margin-left: 15px;">' . get_string('edit') . '</a>';
-		if (!empty($credential->credentials) && !empty($credential->euserid)){
-			$actions[] = '<a onclick="M.local_rcommon.exec_test(' . $credential->id . ');" title="' . get_string('keymanager_test', 'local_rcommon') . '">' . get_string('keymanager_test', 'local_rcommon') . '</a>';
-		}
-		$row[] = implode(' | ', $actions);
-		$row[] = '<img id="loading_small_' . $credential->id.'" style="visibility:hidden" src="'.$OUTPUT->image_url('i/loading_small').'" alt="" /><span id="desc_' . $credential->id . '"></span>';
-		$table->data[] = $row;
+        $actions = array();
+        $actions[] = '<a href="edit_book_credential.php?backto=books&id=' . $credential->id . '" title="' . get_string('edit') .'" style="margin-left: 15px;">' . get_string('edit') . '</a>';
+        if (!empty($credential->credentials) && !empty($credential->euserid)){
+            $actions[] = '<a onclick="M.local_rcommon.exec_test(' . $credential->id . ');" title="' . get_string('keymanager_test', 'local_rcommon') . '" style="cursor: pointer;">' . get_string('keymanager_test', 'local_rcommon') . '</a>';
+        }
+        $row[] = implode(' | ', $actions);
+        $spinner = '<div id="loading_small_' . $credential->id . '" class="spinner-border spinner-border-sm text-primary d-inline-block align-middle" role="status" style="visibility: hidden; margin-right: 5px;">' .
+            '</div>';
+        $row[] = $spinner . '<span id="desc_' . $credential->id . '" class="align-middle"></span>';
+        $table->data[] = $row;
 	}
 	echo html_writer::table($table);
 	if ($canmanage) {

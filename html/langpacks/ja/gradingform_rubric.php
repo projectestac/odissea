@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addcriterion'] = 'クライテリアを追加する';
 $string['additionalfeedback'] = '追加フィードバック';
-$string['alwaysshowdefinition'] = 'ユーザがルーブリックをプレビューできるようにする (そうでない場合、ルーブリックは評定後のみ閲覧できます)';
+$string['alwaysshowdefinition'] = 'ユーザがルーブリックをプレビューできるようにする (そうではない場合、ルーブリックは評定後のみ閲覧できます)';
 $string['backtoediting'] = '編集に戻る';
 $string['confirmdeletecriterion'] = '本当にこのクライテリアを削除してもよろしいですか?';
 $string['confirmdeletelevel'] = '本当にこのレベルを削除してもよろしいですか?';

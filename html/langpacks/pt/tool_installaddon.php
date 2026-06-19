@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['acknowledgement'] = 'Confirmação';
 $string['acknowledgementtext'] = 'Compreendo que é da minha responsabilidade ter cópias de segurança completas deste site antes de instalar módulos adicionais. Aceito e compreendo que os módulos (especialmente, mas não apenas, os provenientes de fontes não oficiais) podem conter falhas de segurança, tornar o site indisponível ou causar fuga ou perda de dados privados.';
+$string['activitychooserfootertext'] = 'Pesquise mais atividades em';
 $string['featuredisabled'] = 'A instalação de módulos está desativada neste site.';
 $string['installaddon'] = 'Instalar módulo';
 $string['installaddons'] = 'Instalar módulos';
@@ -44,6 +45,8 @@ $string['installfromziptype'] = 'Tipo de módulo';
 $string['installfromziptype_help'] = 'No caso de módulos que declaram corretamente o seu nome, o instalador é capaz de detetar automaticamente o tipo de módulo. Se a auto-deteção falhar, escolha manualmente o tipo correto de módulo que está prestes a instalar.
 Aviso: O procedimento de instalação pode falhar se for especificado um tipo de módulo incorreto.';
 $string['installfromziptype_link'] = 'Development:Plugins';
+$string['marketplaceadminlinktext'] = 'Pesquise novos módulos';
+$string['marketplacelink'] = 'Moodle Marketplace';
 $string['permcheck'] = 'Certifique-se que a pasta onde se encontram os módulos do tipo que pretende instalar permite a escrita pelo processo do servidor web.';
 $string['permcheckerror'] = 'Erro durante a verificação de permissão de escrita';
 $string['permcheckprogress'] = 'A verificar a permissão de escrita…';

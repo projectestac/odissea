@@ -91,7 +91,9 @@ switch ($action) {
 
                     $actions[] = '<a onclick="M.local_rcommon.exec_test(' . $credential->id . ');" title="' . get_string('keymanager_test', 'local_rcommon') . '">' . get_string('keymanager_test', 'local_rcommon') . '</a>';
                     $row[] = implode(' | ', $actions);
-                    $row[] = '<img id="loading_small_' . $credential->id . '" style="visibility:hidden" src="' . $OUTPUT->image_url('i/loading_small') . '" alt="" /><span id="desc_' . $credential->id . '"></span>';
+                    $spinner = '<div id="loading_small_' . $credential->id . '" class="spinner-border spinner-border-sm text-primary d-inline-block align-middle" role="status" style="visibility: hidden; margin-right: 5px;">' .
+                        '</div>';
+                    $row[] = $spinner . '<span id="desc_' . $credential->id . '" class="align-middle"></span>';
                     $table->data[] = $row;
                 }
 

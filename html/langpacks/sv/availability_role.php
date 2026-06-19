@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Begränsning via kursroll';
+$string['title'] = 'Befattning';

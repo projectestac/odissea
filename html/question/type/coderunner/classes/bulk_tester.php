@@ -737,7 +737,7 @@ class bulk_tester {
 
             echo html_writer::tag('p', '&nbsp;&nbsp;-------> ' . $retestalllink);
         }
-        $url = new moodle_url('/question/type/coderunner/bulktestindex.php');
+        $url = new moodle_url('/question/type/coderunner/scripts/bulktest.php');
         $link = html_writer::link($url, get_string('backtobulktestindex', 'qtype_coderunner'));
         echo html_writer::tag('p', $link);
     }

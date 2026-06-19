@@ -91,8 +91,85 @@ class restore_qtype_multianswerwiris_plugin extends restore_qtype_multianswer_pl
         }
     }
 
+    /**
+     * Remaps subquestion IDs in question_multianswer.sequence after restore.
+     *
+     * Overrides the parent to scope processing to 'multianswerwiris' records only.
+     * Without this, when a backup contains both native multianswer and multianswerwiris
+     * questions, the parent's unscoped query would run twice and corrupt the sequences
+     * (already-remapped IDs would pass through get_mappingid() as nulls, emptying the
+     * sequence and making all embedded answer fields disappear).
+     *
+     * Assumes Moodle runs the native multianswer plugin first (guaranteed by backup
+     * ordering). The native plugin has no qtype filter, so it must run before this one.
+     *
+     * @see restore_qtype_multianswer_plugin::after_execute_question()
+     */
     public function after_execute_question() {
-        return;
+        global $DB;
+
+        $rs = $DB->get_recordset_sql("
+                SELECT qma.id, qma.sequence
+                  FROM {question_multianswer} qma
+                  JOIN {backup_ids_temp} bi ON bi.newitemid = qma.question
+                  JOIN {question} q ON q.id = qma.question
+                 WHERE bi.backupid = :backupid
+                   AND bi.itemname = 'question_created'
+                   AND q.qtype = 'multianswerwiris'",
+                ['backupid' => $this->get_restoreid()]);
+
+        foreach ($rs as $rec) {
+            $sequence = $this->remap_sequence($rec->sequence);
+            if ($sequence === null) {
+                continue; // Already processed by the native multianswer plugin.
+            }
+            $DB->set_field('question_multianswer', 'sequence', $sequence, ['id' => $rec->id]);
+            $this->fix_multichoice_shuffle($sequence);
+        }
+
+        $rs->close();
+    }
+
+    /**
+     * Maps old backup subquestion IDs to new restored IDs for a sequence string.
+     *
+     * Returns null if no ID in the sequence has a backup→restore mapping, which means
+     * the native multianswer plugin has already processed this record.
+     */
+    private function remap_sequence(string $sequence): ?string {
+        $ids = preg_split('/,/', $sequence, -1, PREG_SPLIT_NO_EMPTY);
+        $remapped = array_filter(array_map(
+            fn($id) => $this->get_mappingid('question', $id),
+            $ids
+        ));
+        return !empty($remapped) ? implode(',', $remapped) : null;
+    }
+
+    /**
+     * Resets shuffleanswers to 0 on any multichoice subquestion in the sequence.
+     *
+     * Mirrors restore_qtype_multianswer_plugin::after_execute_question(). Multichoice
+     * answers embedded in a cloze question must not be shuffled because their order is
+     * determined by the question text syntax ({1:MC:=A~B~C}).
+     */
+    private function fix_multichoice_shuffle(string $sequence): void {
+        global $DB;
+
+        $subquestions = $DB->get_records_list('question', 'id', explode(',', $sequence), 'id ASC');
+        foreach ($subquestions as $sub) {
+            if ($sub->qtype !== 'multichoice') {
+                continue;
+            }
+            question_bank::get_qtype('multichoice')->get_question_options($sub);
+            if (!isset($sub->options->shuffleanswers)) {
+                continue;
+            }
+            preg_match('/' . ANSWER_REGEX . '/s', $sub->questiontext, $match);
+            if (!empty($match[ANSWER_REGEX_ANSWER_TYPE_MULTICHOICE])) {
+                $DB->set_field('qtype_multichoice_options', 'shuffleanswers', 0,
+                    ['id' => $sub->options->id]);
+            }
+        }
     }
 
     protected function decode_html_entities($xml) {

@@ -25,6 +25,12 @@
  */
 
 /**
+ * Remember the source of the event to avoid handling auto click events on
+ * buttons when the original event was a hit on <enter> in the inputfield.
+ */
+let tinyFontcolorEventSource = null;
+
+/**
  * The add button that was clicked. This button is in the last row. Therefore, it creates
  * a clone of the entire row. In the cloned row we need to update the input elements (id and
  * name attribute -> increase the tailing sequence number by 1, empty any value attributes).
@@ -59,6 +65,12 @@ const insertRow = element => {
   jscolor.install(newRow);
   newRow.querySelector('button').addEventListener('click', function(e) {
     handleRow(e);
+    tinyFontcolorEventSource = null;
+  });
+  newRow.querySelectorAll('input').forEach(input => {
+    input.addEventListener('keypress', function(e) {
+      tinyFontcolorEventSource = e.target;
+    });
   });
 };
 
@@ -72,6 +84,9 @@ const deleteRow = element => {
 
 const handleRow = event => {
   event.preventDefault();
+  if (tinyFontcolorEventSource && tinyFontcolorEventSource !== event.target) {
+    return;
+  }
   if (event.target.classList.contains('del')) {
     deleteRow(event.target);
   } else if (event.target.classList.contains('add')) {
@@ -81,6 +96,8 @@ const handleRow = event => {
 
 /**
  * Initialize event handlers for all buttons inside the input fields for one color setting.
+ * The eslint disabeling is because of the rule no-loop-func, because the global variable
+ * tinyFontcolorEventSource is used inside the looped function.
  * @param {string} name of settings field, for which the js handling is needed.
  */
 export const init = name => {
@@ -90,8 +107,17 @@ export const init = name => {
   }
   const buttons = root.getElementsByTagName('button');
   for (let i = 0; i < buttons.length; i++) {
+    // eslint-disable-next-line
     buttons.item(i).addEventListener('click', function(e) {
       handleRow(e);
+      tinyFontcolorEventSource = null;
+    });
+  }
+  const inputs = root.getElementsByTagName('input');
+  for (let i = 0; i < inputs.length; i++) {
+    // eslint-disable-next-line
+    inputs.item(i).addEventListener('keypress', function(e) {
+      tinyFontcolorEventSource = e.target;
     });
   }
 };

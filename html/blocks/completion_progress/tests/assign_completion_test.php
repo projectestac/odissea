@@ -46,7 +46,7 @@ final class assign_completion_test extends \block_completion_progress\tests\comp
      * @covers \block_completion_progress\completion_progress
      */
     public function test_assign_get_completion_state(): void {
-        global $DB, $PAGE;
+        global $PAGE;
 
         $output = $PAGE->get_renderer('block_completion_progress');
         $generator = $this->getDataGenerator();
@@ -249,7 +249,7 @@ final class assign_completion_test extends \block_completion_progress\tests\comp
         $instance = $generator->create_module('assign', [
             'course' => $this->course->id,
             'maxattempts' => -1,
-            'attemptreopenmethod' => ASSIGN_ATTEMPT_REOPEN_METHOD_NONE,
+            'attemptreopenmethod' => ASSIGN_ATTEMPT_REOPEN_METHOD_MANUAL,
             'completion' => COMPLETION_TRACKING_AUTOMATIC,
             'completionusegrade' => 1, // The student must receive a grade to complete.
             'completionexpected' => time() - DAYSECS,

@@ -40,9 +40,9 @@ $string['descriptiontype_custom'] = 'Descripción personalizada especificada en 
 $string['descriptiontype_default'] = 'Por defecto (tipo MIME o la cadena de idioma correspondiente si está disponible)';
 $string['descriptiontype_help'] = 'Existen tres formas posibles de indicar una descripción.
 
-* El comportamiento por defecto utiliza el tipo MIME. Si existe una cadena de idioma en mimetypes.php correspondiente a ese tipo MIME, será utilizada; si no existe, se mostrará a los usuariosel propio tipo MIME.
-* Puedes especificar una descripción personalizada en este formulario.
-* Puedes especificar el nombre de una cadena de idioma en mimetypes.php para ser utilizada en vez del tipo MIME.';
+* El comportamiento por defecto utiliza el tipo MIME. Si existe una cadena de idioma en mimetypes.php correspondiente a ese tipo MIME, será utilizada; si no existe, se mostrará a los usuarios el propio tipo MIME.
+* Puede especificar una descripción personalizada en este formulario.
+* Puede especificar el nombre de una cadena de idioma en mimetypes.php para ser utilizada en vez del tipo MIME.';
 $string['descriptiontype_lang'] = 'Cadena de idioma alternativa (desde mimetypes.php)';
 $string['displaydescription'] = 'Descripción';
 $string['editfiletypes'] = 'Editar un tipo de fichero existente';

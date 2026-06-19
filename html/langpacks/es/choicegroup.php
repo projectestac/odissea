@@ -117,7 +117,19 @@ $string['maxenrollments_help'] = 'Esta opción permite limitar el número de gru
 $string['members/'] = 'Miembros';
 $string['members/max'] = 'Miembros / Capacidad';
 $string['modulename'] = 'Elección de grupo';
-$string['modulename_help'] = 'El módulo de selección de Grupo le permite a los estudiantes inscribirse ellos mismos en un grupo dentro de un curso. El profesor puede seleccionar los grupos en los cuales se pueden inscribir los alumnos y el número máximo de estudiantes permitidos en cada grupo.';
+$string['modulename_help'] = '###### Características clave
+- Permite a los estudiantes escoger grupos dentro de un curso
+- Definición de tamaños máximos de grupo y controlar la disponibilidad
+- Opción de permitir a estudiantes ver a los miembros del grupo antes de unirse
+- Opción de permitir a los estudiantes cambiar de grupo hasta una fecha límite
+- Múltiples selecciones de grupos y clasificación por nombre o fecha de creación
+
+###### Ejemplos de uso
+- Organizar a los estudiantes en grupos de proyectos o tareas
+- Facilitar el trabajo en grupo para debates, laboratorios o talleres
+- Permitir que los estudiantes elijan compañeros para tareas colaborativas
+- Gestionar el tamaño de los grupos para una participación equilibrada
+- Permitir cambios de grupo flexibles antes del comienzo de actividades';
 $string['modulename_link'] = 'mod/choicegroup/view';
 $string['modulename_summary'] = 'Permite a los estudiantes elegir y formar parte de grupos con opciones de límite de cupo, visibilidad de membresía, y fechas límite flexibles.';
 $string['modulenameplural'] = 'Selección de grupos.';

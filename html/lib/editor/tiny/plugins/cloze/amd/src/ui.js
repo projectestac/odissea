@@ -23,7 +23,6 @@
 
 import ModalEvents from 'core/modal_events';
 import Modal from 'core/modal';
-import ModalFactory from 'core/modal_factory';
 import Mustache from 'core/mustache';
 import {get_strings as getStrings} from 'core/str';
 import {component} from './common';
@@ -31,10 +30,12 @@ import {hasQtypeMultianswerrgx} from './options';
 import {
   CSS, TEMPLATE,
   markerClass, markerSpan,
+  addMarkers,
   isNull, strdecode, strencode, indexOfNode,
   getUuid, getFractionOptions, getQuestionTypes,
   hasInvalidChars, hasOddBracketCount, isCustomGrade, setStr,
-  selectCustomPercent
+  selectCustomPercent,
+  regexBaseQtypes, regexMultianswerrgxQtypes, regexClozeStr
 } from './cloze';
 
 // Language strings used in the modal dialogue.
@@ -124,16 +125,15 @@ const onInit = function(ed) {
 };
 
 /**
- * Regex to recognize the question string in the text e.g. {1:NUMERICAL:...} or {:MULTICHOICE:...}
+ * Get regex to recognize the question string in the text e.g. {1:NUMERICAL:...} or {:MULTICHOICE:...}
  * @param {tinymce.Editor} editor
  * @return {RegExp}
  * @private
  */
 const _getRegexQtype = (editor) => {
-  // eslint-disable-next-line max-len
-  const baseQtypes = 'MULTICHOICE(_H|_V|_S|_HS|_VS)?|MULTIRESPONSE(_H|_S|_HS)?|NUMERICAL|SHORTANSWER(_C)?|SAC?|NM|MWC?|M[CR](V|H|VS|HS)?';
-  const extQtypes = hasQtypeMultianswerrgx(editor) ? '|REGEXP(_C)?|RXC?' : '';
-  return new RegExp('\\{([0-9]*):(' + baseQtypes + extQtypes + '):(.*?)(?<!\\\\)\\}', 'g');
+  const extQtypes = hasQtypeMultianswerrgx(editor) ? regexMultianswerrgxQtypes : '';
+  const regex = regexClozeStr.replace('__REGEX_QTYPES__', regexBaseQtypes + extQtypes);
+  return new RegExp(regex, 'g');
 };
 
 /**
@@ -182,6 +182,7 @@ const _getStr = async() => {
     {key: 'err_not_numeric', component},
     {key: 'err_invalid_chars', component},
     {key: 'err_invalid_brackets', component},
+    {key: 'decsep', component: 'core_langconfig'},
   ];
   let langKeys = [
     'answer',
@@ -224,6 +225,7 @@ const _getStr = async() => {
     'err_not_numeric',
     'err_invalid_chars',
     'err_invalid_brackets',
+    'decsep',
   ];
   if (hasQtypeMultianswerrgx(_editor)) {
     strToFetch.push({key: 'regexp', component: 'qtype_regexp'});
@@ -259,11 +261,7 @@ const _createModal = async function() {
     removeOnClose: true,
     large: true,
   };
-  if (typeof Modal.create === 'function') {
-    _modal = await Modal.create(cfg);
-  } else {
-    _modal = await ModalFactory.create(cfg);
-  }
+  _modal = await Modal.create(cfg);
 };
 
 /**
@@ -331,52 +329,17 @@ const displayDialogueForEdit = async function(target) {
  */
 const _addMarkers = function() {
 
-  let content = _editor.getContent();
-  let newContent = '';
+  const content = _editor.getContent();
 
   // Check if there is already a marker span. In this case we do not have to do anything.
   if (content.indexOf(markerClass) !== -1) {
     return;
   }
-
-  let m;
-  do {
-    m = content.match((_getRegexQtype(_editor)));
-    if (!m) { // No match of a cloze question, then we are done.
-      newContent += content;
-      break;
-    }
-    // Copy the current match to the new string preceded with the <span>.
-    const pos = content.indexOf(m[0]);
-    newContent += content.substring(0, pos) + markerSpan + content.substring(pos, pos + m[0].length);
-    content = content.substring(pos + m[0].length);
-
-    // Count the { in the string, should be just one (the very first one at position 0).
-    let level = (m[0].match(/\{/g) || []).length;
-    if (level === 1) {
-      // If that's the case, we close the span and the cloze question text is the innerHTML of that marker span.
-      newContent += '</span>';
-      continue; // Look for the next matching cloze question.
-    }
-    // If there are more { than } in the string, then we did not find the corresponding } that belongs to the cloze string.
-    while (level > 1) {
-      const a = content.indexOf('{');
-      const b = content.indexOf('}');
-      if (a > -1 && b > -1 && a < b) { // The { is before another } so remember to find as many } until we back at level 1.
-        level++;
-        newContent = content.substring(0, a);
-        content = content.substring(a + 1);
-      } else if (b > -1) { // We found a closing } to a previously {.
-        newContent = content.substring(0, b);
-        content = content.substring(b + 1);
-        level--;
-      } else {
-        level = 1; // Should not happen, just to stop the endless loop.
-      }
-    }
-    newContent += '</span>';
-  } while (m);
-  _editor.setContent(newContent);
+  const newContent = addMarkers(content, _getRegexQtype(_editor));
+  // If the content has changed, set the new content.
+  if (newContent !== null) {
+    _editor.setContent(newContent);
+  }
 };
 
 /**
@@ -817,7 +780,14 @@ const _setSubquestion = function(e) {
     question += _answerdata[i].fraction && !isNaN(_answerdata[i].fraction)
       ? '%' + _answerdata[i].fraction + '%' : _answerdata[i].fraction;
     question += strencode(_answerdata[i].answer);
-    if (_qtype === 'NM' || _qtype === 'NUMERICAL') {
+    // Bug when question ends with an &:
+    if (question.charAt(question.length - 1) === '&') {
+      question += ' ';
+    }
+    if ( // Set tolerance only on correct or semi correct answers.
+      (_qtype === 'NM' || _qtype === 'NUMERICAL') &&
+      (_answerdata[i].fraction !== '0' && _answerdata[i].fraction !== '')
+    ) {
       question += ':' + _answerdata[i].tolerance;
     }
     if (_answerdata[i].feedback) {
@@ -852,6 +822,29 @@ const _setSubquestion = function(e) {
 };
 
 /**
+ * Build the current answer object based on one possible answer field collection.
+ * @param {NodeList} answer
+ * @param {NodeList} feedback
+ * @param {NodeList} fraction
+ * @param {string} toleranceValue
+ * @param {NodeList} customGrade
+ * @return {Object} currentAnswer
+ * @private
+ */
+const _buildCurrentAnswer = function(answer, feedback, fraction, toleranceValue, customGrade) {
+  return {
+    raw: answer.value.trim(),
+    answer: answer.value.trim(),
+    id: getUuid(),
+    feedback: feedback.value,
+    fraction: fraction.value === selectCustomPercent ? customGrade.value : fraction.value,
+    fractionOptions: getFractionOptions(fraction.value),
+    tolerance: toleranceValue,
+    isCustomGrade: fraction.value === selectCustomPercent
+  };
+};
+
+/**
  * Read the form data, process it and store the result in the internal _answerdata array.
  * Also, if validation is enabled, the fields are checked for invalid values e.g.
  * - answer field is empty (if a correct answer is contained, empty fields are eliminated).
@@ -877,23 +870,18 @@ const _processFormData = function(validate) {
   for (let i = 0; i < answers.length; i++) {
     answers.item(i).classList.remove('error');
     customGrades.item(i).classList.remove('error');
-    const currentAnswer = {
-      raw: answers.item(i).value.trim(),
-      answer: answers.item(i).value.trim(),
-      id: getUuid(),
-      feedback: feedbacks.item(i).value,
-      fraction: fractions.item(i).value === selectCustomPercent ? customGrades.item(i).value : fractions.item(i).value,
-      fractionOptions: getFractionOptions(fractions.item(i).value),
-      tolerance: tolerances.length > 0 ? tolerances.item(i).value : 0,
-      isCustomGrade: fractions.item(i).value === selectCustomPercent
-    };
+    let toleranceValue = '0';
     if (_qtype === 'NM' || _qtype === 'NUMERICAL') {
       tolerances.item(i).classList.remove('error');
-      // In numeric questions convert answer and tolerance to numeric values (this filters non numeric values).
-      currentAnswer.answer = Number(currentAnswer.answer);
-      currentAnswer.tolerance = Number(currentAnswer.tolerance);
+      toleranceValue = tolerances.item(i).value;
     }
-    _answerdata.push(currentAnswer);
+    _answerdata.push(_buildCurrentAnswer(
+      answers.item(i),
+      feedbacks.item(i),
+      fractions.item(i),
+      toleranceValue,
+      customGrades.item(i)
+    ));
   }
   _marks = _form.querySelector('.' + CSS.MARKS).value;
 
@@ -985,12 +973,30 @@ const _validateAnswers = function() {
  * @param {int} i
  */
 const _validateAnswersNumeric = function(i) {
-  if (isNaN(_answerdata[i].answer) && _answerdata[i].raw !== '') {
-    _answerdata[i].hasErrors.push('answer_not_numeric');
-  }
-  if (isNaN(_answerdata[i].tolerance)) {
+  if (!_isValidNumber(_answerdata[i].tolerance)) {
     _answerdata[i].hasErrors.push('tolerance_not_numeric');
   }
+  if (!_isValidNumber(_answerdata[i].raw) && _answerdata[i].raw !== '' && _answerdata[i].raw !== '*') {
+    _answerdata[i].hasErrors.push('answer_not_numeric');
+  }
+};
+
+/**
+ * Check îf the given value is a number.
+ * @param {string} value
+ * @returns {boolean}
+ */
+const _isValidNumber = function(value) {
+  if (!isNaN(value)) {
+    return true;
+  }
+  if (STR.decsep !== '.' && value.indexOf(STR.decsep) > -1) {
+    const valueWithPoint = value.replace(STR.decsep, '.');
+    if (!isNaN(valueWithPoint)) { // The value is a number.
+      return true;
+    }
+  }
+  return false;
 };
 
 /**

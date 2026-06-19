@@ -10,6 +10,7 @@ Feature: Tiny editor admin settings for text and background color
     And I set the field "s_tiny_fontcolor_textcolors_value_1" to "#000000"
     And I set the field "s_tiny_fontcolor_textcolors_name_2" to "White"
     And I set the field "s_tiny_fontcolor_textcolors_value_2" to "#ffffff"
+    And I press "+"
     And I click on "+" "button"
     And I set the field "s_tiny_fontcolor_textcolors_name_3" to "Magenta blur"
     And I set the field "s_tiny_fontcolor_textcolors_value_3" to "#FF00FF69"

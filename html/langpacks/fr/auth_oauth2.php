@@ -35,7 +35,7 @@ Un nouveau compte a été demandé sur « {$a->sitename} » en utilisant votre
 
 Pour confirmer votre nouveau compte, veuillez cliquer sur le lien ci-dessous :
 
-<a href="{$a->url}">Confirmer votre compte</a>
+<a href="{$a->link}">Confirmer votre compte</a>
 
 Si vous avez besoin d’aide, veuillez contacter l’administrateur du site,
 {$a->admin}

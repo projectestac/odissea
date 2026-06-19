@@ -34,4 +34,7 @@ $string['modulename'] = 'Membres del grup';
 $string['modulenameplural'] = 'Membres del grup';
 $string['noowngroupsavailable'] = 'Actualment no esteu assignat a cap grup.';
 $string['pluginname'] = 'Membres del grup';
+$string['setting_showgroupsdefault'] = 'Mostra els grups';
+$string['setting_showgroupsdefault_desc'] = 'Amb aquest paràmetre controleu el valor per defecte del paràmetre d’instància del mòdul «Mostra els grups»';
 $string['showemail:no'] = 'No, només missatges interns';
+$string['showgroups'] = 'Mostra els grups';

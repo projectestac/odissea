@@ -33,7 +33,7 @@ require_once($CFG->dirroot . '/question/type/coderunner/db/upgradelib.php');
 /**
  * @coversNothing
  */
-class qtype_coderunner_testcase extends advanced_testcase {
+abstract class qtype_coderunner_testcase extends advanced_testcase {
     protected $hasfailed = false; // Set to true when a test fails.
 
     /** @var stdClass Holds question category.*/
@@ -71,7 +71,7 @@ class qtype_coderunner_testcase extends advanced_testcase {
         if (is_readable($localconfig)) {
             require($localconfig);
         } else {
-            throw new coding_exception('tests/fixtures/test-sandbox-config.php must exist to define test configuration');
+            self::markTestSkipped('tests/fixtures/test-sandbox-config.php must exist to define test configuration');
         }
         $USER->username  = 'tester';
         $USER->email     = 'tester@nowhere.com';

@@ -59,6 +59,7 @@ $string['attachment_help'] = 'Glosario bateko sarrerari fitxategi bat edo gehiag
 $string['author'] = 'egilea';
 $string['authorview'] = 'Arakatu egilearen arabera';
 $string['back'] = 'Itzuli';
+$string['bynameondate'] = 'egilea: {$a->name} - {$a->date}';
 $string['cachedef_concepts'] = 'Kontzeptuak estekatzea';
 $string['cantinsertcat'] = 'Ezin da kategoria txertatu';
 $string['cantinsertrec'] = 'Ezin da erregistroa txertatu';

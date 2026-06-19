@@ -29,6 +29,7 @@ $string['admindesceventaccount'] = 'Defineix quin compte ConnectTxt cal emprar p
 $string['adminheadermiscsettings'] = 'Paràmetres diversos';
 $string['adminlabelaccdesc'] = 'Descripció del compte:';
 $string['buttonadd'] = 'Afegeix';
+$string['buttongroupadd'] = 'Afegeix un grup';
 $string['labelgroupdesc'] = 'Descripció del grup:';
 $string['nexttoken'] = 'Següent';
 $string['optionallusers'] = 'Tots els usuaris';

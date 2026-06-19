@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Mehrsprachiger Inhalt';
-$string['forceoldsyntax'] = 'Alte Syntax erzwingen';
+$string['forceoldsyntax'] = 'Alte Syntax festlegen';
 $string['forceoldsyntax_desc'] = 'Alte Mehrsprach-Syntax festlegen: &lt;span&gt; ohne class="multilang" und &lt;lang&gt;.';
 $string['privacy:metadata'] = 'Der Filter "Mehrsprachiger Inhalt" speichert keine personenbezogenen Daten.';

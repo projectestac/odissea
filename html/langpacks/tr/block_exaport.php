@@ -26,13 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['block_exaport_app_alloweditdelete_head'] = 'Öğrencilerin öğretmen incelemelerinden sonra öğeleri düzenlemelerine ve silmelerine izin verilir';
-$string['block_exaport_app_externaleportfolio_head'] = 'İşaretliyse dosyaları maharaya kaydedin, işaretli değilse exaport\'a kaydedin';
 $string['cancelButton'] = 'İptal';
 $string['categorydeleted'] = 'Kategori silindi.';
 $string['categoryedited'] = 'Kategori kaydedildi.';
 $string['categoryhead'] = 'Kategori adı';
 $string['close'] = 'kapat';
-$string['cofigureblock_badge'] = 'Rozetleri Seçin';
 $string['comments'] = 'Yorumlar';
 $string['course'] = 'Kurs';
 $string['createpage'] = 'Sayfanızı oluşturmak için aşağıdaki sekmelerden içerik bloklarını sürükleyip bırakın.';

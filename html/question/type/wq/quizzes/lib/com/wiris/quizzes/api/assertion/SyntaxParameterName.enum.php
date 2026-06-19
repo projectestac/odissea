@@ -1,6 +1,6 @@
 <?php
 
-class com_wiris_quizzes_api_assertion_SyntaxParameterName extends Enum {
+class com_wiris_quizzes_api_assertion_SyntaxParameterName extends HxEnum {
 	public static $CONSTANTS;
 	public static $DECIMAL_SEPARATORS;
 	public static $DIGIT_GROUP_SEPARATORS;

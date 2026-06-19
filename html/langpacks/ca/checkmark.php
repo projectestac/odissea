@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addnewgroupoverride'] = 'Afegeix una excepció de grup';
 $string['addsubmission'] = 'Afegeix la tramesa';
 $string['attendance'] = 'Assistència';
 $string['completiondetail:submit'] = 'Fer una tramesa';

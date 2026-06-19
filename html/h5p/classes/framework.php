@@ -394,7 +394,9 @@ class framework implements H5PFrameworkInterface {
             'Help me choose a license' => 'helpChoosingLicense',
             'Share failed.' => 'shareFailed',
             'Editing failed.' => 'editingFailed',
+            // Retained for backward compatibility with legacy h5plib error messages used in versions 1.27 and earlier.
             'Something went wrong, please try to share again.' => 'shareTryAgain',
+            'Couldn\'t communicate with the H5P Hub. Please try again later.' => 'shareTryAgain',
             'Please wait...' => 'pleaseWait',
             'Language' => 'language',
             'Level' => 'level',
@@ -1482,7 +1484,7 @@ class framework implements H5PFrameworkInterface {
     }
 
     /**
-     * Will clear filtered params for all the content that uses the specified.
+     * Will clear filtered params for all the content that uses the specified
      * libraries. This means that the content dependencies will have to be rebuilt and the parameters re-filtered.
      * Implements clearFilteredParameters().
      *
@@ -1495,10 +1497,17 @@ class framework implements H5PFrameworkInterface {
             return;
         }
 
-        list($insql, $inparams) = $DB->get_in_or_equal($libraryids);
+        [$maininsql, $maininparams] = $DB->get_in_or_equal($libraryids, SQL_PARAMS_NAMED, 'mainlib');
+        [$depinsql, $depinparams] = $DB->get_in_or_equal($libraryids, SQL_PARAMS_NAMED, 'deplib');
 
-        $DB->set_field_select('h5p', 'filtered', null,
-            "mainlibraryid $insql", $inparams);
+        $select = "mainlibraryid {$maininsql}
+            OR id IN (
+                SELECT h5pid
+                  FROM {h5p_contents_libraries}
+                 WHERE libraryid {$depinsql}
+            )";
+
+        $DB->set_field_select('h5p', 'filtered', null, $select, $maininparams + $depinparams);
     }
 
     /**
@@ -1867,5 +1876,14 @@ class framework implements H5PFrameworkInterface {
     public function setContentHubMetadataChecked($time, $lang = 'en') {
         debugging('The setContentHubMetadataChecked() method is not implemented.', DEBUG_DEVELOPER);
         return false;
+    }
+
+    /**
+     * Callback for reset hub data
+     *
+     * @return void
+     */
+    public function resetHubOrganizationData() {
+        debugging('The resetHubOrganizationData() method is not implemented.', DEBUG_DEVELOPER);
     }
 }

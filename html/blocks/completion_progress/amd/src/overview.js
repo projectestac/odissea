@@ -20,29 +20,64 @@
  * @copyright  2020 Jonathon Fowler <fowlerj@usq.edu.au>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-define(['core_user/participants'],
-    function(Participants) {
-        return /** @alias module:block_completion_progress/overview */ {
-            /**
-             * Initialise the overview page.
-             *
-             * @param {object} options initialisation options.
-             */
-            init: function(options) {
-                var form = document.getElementById('participantsform');
-                var action = document.getElementById('formactionid');
 
-                /**
-                 * Manage the activation of the 'With selected users' control.
-                 */
-                function checkaction() {
-                    action.disabled = (form.querySelector('input.usercheckbox:checked') === null);
-                }
+import Notification from 'core/notification';
+import Pending from 'core/pending';
+import * as PubSub from 'core/pubsub';
+import {showAddNote, showSendMessage} from 'core_user/local/participants/bulkactions';
 
-                Participants.init(options);
+const tablesel = '.table-dynamic[data-table-component="block_completion_progress"]' +
+        '[data-table-handler="overview"]';
 
-                checkaction();
-                form.addEventListener('change', checkaction);
-            }
-        };
+export const init = (courseid, noteStateNames) => {
+    const page = document.getElementById('page');
+
+    // Listen for submissions on the download form and copy the filters in.
+    page.addEventListener('submit', function(e) {
+        if (!e.target.matches('form.dataformatselector')) {
+            return;
+        }
+        var filtersetel = e.target.elements.filterset || (function() {
+            var el = document.createElement('INPUT');
+            el.type = 'hidden';
+            el.name = 'filterset';
+            e.target.appendChild(el);
+            return el;
+        })();
+        filtersetel.value = document.querySelector(tablesel).dataset.tableFilters;
     });
+
+    // Listen for togglegroup checkboxes changing state and enable/disable bulk action buttons.
+    PubSub.subscribe('core/checkbox-toggleall:checkboxToggled', function(e) {
+        var buttons = document.querySelectorAll('[data-table-component="block_completion_progress"] .bulkactions button');
+        buttons.forEach(n => void (n.disabled = !e.anyChecked));
+    });
+
+    /**
+     * Operate the bulk messaging/note functions.
+     * @copyright 2017 Damyon Wiese
+     */
+    page.addEventListener('click', function(e) {
+        let bulkAction;
+        const checkboxes = document.querySelectorAll("input[data-togglegroup='overview-table'][data-toggle='slave']:checked," +
+            "input[data-togglegroup='overview-table'][data-toggle='target']:checked");
+        const noteHelpIcon = document.querySelector('[data-region="state-help-icon"]');
+        const ids = [];
+        checkboxes.forEach(checkbox => {
+            ids.push(checkbox.getAttribute('name').replace('user', ''));
+        });
+
+        if (e.target.id === 'sendmessage') {
+            bulkAction = showSendMessage(ids);
+        } else if (e.target.id === 'addnote') {
+            bulkAction = showAddNote(courseid, ids, noteStateNames, noteHelpIcon);
+        }
+        if (bulkAction) {
+            const pendingBulkAction = new Pending('core_user/participants:bulkActionSelected');
+            bulkAction.then(modal => {
+                pendingBulkAction.resolve();
+                return modal;
+            }).catch(Notification.exception);
+        }
+    });
+};

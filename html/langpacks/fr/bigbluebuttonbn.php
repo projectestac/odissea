@@ -251,6 +251,7 @@ $string['event_meeting_left'] = 'Réunion quittée';
 $string['event_recording_deleted'] = 'Enregistrement supprimé';
 $string['event_recording_edited'] = 'Enregistrement modifié';
 $string['event_recording_imported'] = 'Enregistrement importé';
+$string['event_recording_link_deleted'] = 'Lien d’enregistrement supprimé';
 $string['event_recording_protected'] = 'Enregistrement protégé';
 $string['event_recording_published'] = 'Enregistrement publié';
 $string['event_recording_unprotected'] = 'Enregistrement déprotégé';

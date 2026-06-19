@@ -61,7 +61,7 @@ $string['fflate_desc'] = 'URL para el ultimo script fast flate, usado para decom
 $string['filename'] = 'Nombre de archivo';
 $string['filenotfound'] = 'El archivo especificado no existe';
 $string['filetype'] = 'Tipo';
-$string['filetype_help'] = 'Esta configuración determina como la actividad de GeoGebra está incluída en el curso. Hay dos opciones:
+$string['filetype_help'] = 'Esta configuración determina como la actividad de GeoGebra está incluida en el curso. Hay dos opciones:
 
 * Subir GeoGebra - Selecciona un paquete ".ggb" válido para ser subido.
 * URL externa - Selecciona una URL específica. Nota: La URL debe empezar con http(s) o www y contener un archivo ".ggb" válido.';

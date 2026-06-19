@@ -25,5 +25,22 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['alternativename'] = 'Aktivitetsnamn';
 $string['changeallowed_help'] = 'Om ej ikryssad så kommer användaren inte kunna ändra sitt val. Lärare och alla roller som har förmågan `alternatives:forceregistration` kommer att kunna ändra valet för vem som helst.';
+$string['datecomment'] = 'Datum';
+$string['individual'] = 'Enskild person';
+$string['modulename'] = 'Alternativ';
+$string['multiple'] = 'Flera';
 $string['optionintro'] = 'Beskrivning';
+$string['optionname'] = 'Namn';
+$string['places'] = 'Antal siffror';
+$string['private'] = 'Privat';
+$string['public'] = 'Allmän';
+$string['register'] = 'Register';
+$string['registrations'] = 'Registreringar';
+$string['separator'] = 'Avgränsare';
+$string['synthfree'] = 'Fri';
+$string['team'] = 'Arbetslag';
+$string['teams'] = 'Grupper';
+$string['unique'] = 'Unik';
+$string['unregister'] = 'Avregistrera';

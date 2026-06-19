@@ -1,6 +1,6 @@
 # ![MathType](./pix/logo-mathtype.png) MathType Moodle plugin for TinyMCE by WIRIS
 
-[![Moodle Plugin CI](https://github.com/wiris/moodle-tinymce_tiny_mce_wiris/actions/workflows/moodle-ci.yml/badge.svg)](https://github.com/wiris/moodle-tinymce_tiny_mce_wiris/actions/workflows/moodle-ci.yml)
+[![Moodle Plugin CI](https://github.com/wiris/moodle-tiny_wiris/actions/workflows/moodle-ci.yml/badge.svg)](https://github.com/wiris/moodle-tiny_wiris/actions/workflows/moodle-ci.yml)
 
 This repository contains the MathType TinyMCE plugin for Moodle versions later than 4.2, which integrates WIRIS tools to enable users to type and handwrite mathematical notation in Moodle with MathType for TinyMCE editor.
 

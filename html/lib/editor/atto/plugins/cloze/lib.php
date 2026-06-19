@@ -28,13 +28,13 @@
 function atto_cloze_strings_for_js() {
     global $PAGE;
 
-    $PAGE->requires->strings_for_js([ 'pluginname' ], 'atto_cloze' );
-    $PAGE->requires->strings_for_js([ 'privacy:request:historyactioninsert' ], 'core_grades' );
-    $PAGE->requires->strings_for_js([ 'answer', 'chooseqtypetoadd', 'defaultmark', 'feedback', 'incorrect' ], 'question' );
-    $PAGE->requires->strings_for_js([ 'multichoice', 'numerical', 'shortanswer' ], 'mod_quiz' );
-    $PAGE->requires->strings_for_js([ 'addmoreanswerblanks', 'tolerance' ], 'qtype_calculated' );
+    $PAGE->requires->strings_for_js([ 'pluginname' ], 'atto_cloze');
+    $PAGE->requires->strings_for_js([ 'privacy:request:historyactioninsert' ], 'core_grades');
+    $PAGE->requires->strings_for_js([ 'answer', 'chooseqtypetoadd', 'defaultmark', 'feedback', 'incorrect' ], 'question');
+    $PAGE->requires->strings_for_js([ 'multichoice', 'numerical', 'shortanswer' ], 'mod_quiz');
+    $PAGE->requires->strings_for_js([ 'addmoreanswerblanks', 'tolerance' ], 'qtype_calculated');
     $PAGE->requires->strings_for_js([ 'add', 'cancel', 'delete',
-            'duplicate', 'down', 'gradenoun', 'previous', 'up' ], 'core' );
+            'duplicate', 'down', 'gradenoun', 'previous', 'up' ], 'core');
 }
 
 /**

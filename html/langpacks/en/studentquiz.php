@@ -26,6 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['abort_button'] = 'Abort';
+$string['activitydate:closedanswering'] = 'Closed for question answering:';
+$string['activitydate:closedsubmission'] = 'Closed for question submission:';
+$string['activitydate:closesanswering'] = 'Closes for question answering:';
+$string['activitydate:closessubmission'] = 'Closes for question submission:';
+$string['activitydate:openedanswering'] = 'Opened for question answering:';
+$string['activitydate:openedsubmission'] = 'Opened for question submission:';
+$string['activitydate:opensanswering'] = 'Opens for question answering:';
+$string['activitydate:openssubmission'] = 'Opens for question submission:';
 $string['add_comment'] = 'Add comment';
 $string['add_reply'] = 'Add reply';
 $string['addprivatecomment'] = 'Add private comment (these are between the student and tutor only)';
@@ -35,7 +43,9 @@ $string['after_answering_end_date'] = 'This StudentQuiz closed for answering on 
 $string['after_submission_end_date'] = 'This StudentQuiz closed for question submission on {$a}.';
 $string['anonymous_user'] = 'Anonymous User';
 $string['anonymous_user_name'] = 'Anonymous User #{$a}';
+$string['answeringclose'] = 'Answering until';
 $string['answeringndbeforestart'] = 'Answering deadline can not be specified before the open for answering date';
+$string['answeringopen'] = 'Answering from';
 $string['api_state_change_error_content'] = 'This question cannot be deleted because it has been approved.';
 $string['api_state_change_error_title'] = 'Error deleting question';
 $string['api_state_change_success_content'] = 'Question state/visibility changed successfully';
@@ -233,8 +243,21 @@ $string['mine_column_name'] = 'Mine';
 $string['missingparam'] = 'A required parameter is missing or wrong';
 $string['moderator'] = 'Moderator';
 $string['modulename'] = 'StudentQuiz';
-$string['modulename_help'] = 'The StudentQuiz activity allows students to add questions for the crowd. In the StudentQuiz overview the students can filter questions. They also can use the filtered questions in the crowd to practice. The teacher has an option to anonymize the created by column.<br><br>The StudentQuiz activity awards the students with points to motivate them to add and practice. The Points are listed in a ranking table.';
+$string['modulename_help'] = '###### Key features
+- Allows students to collaboratively create question pools within Moodle
+- Enables filtering, rating, and commenting on questions
+- Lets students build personalized quizzes from the shared pool
+- Tracks individual contributions and learning progress with ranking points
+- Adds created questions to the Moodle question bank for reuse
+
+###### Ways to use it
+- Motivate students to actively contribute and practice through gamification
+- Prepare for exams by building a large, diverse question pool together
+- Encourage peer feedback and discussion through ratings and comments
+- Provide teachers with control over question approval and anonymity settings
+- Support personalized learning by letting students create custom quizzes';
 $string['modulename_link'] = 'mod/studentquiz/view';
+$string['modulename_summary'] = 'Enables students to collaboratively create question pools and build personalized quizzes from them, while earning gamified points for motivation.';
 $string['modulenameplural'] = 'StudentQuizzes';
 $string['more'] = 'More';
 $string['myattempts_column_name'] = 'My Attempts';
@@ -599,7 +622,9 @@ $string['studentquiz:unhideanonymous'] = 'Can see real names even when anonymize
 $string['studentquiz:view'] = 'See and use questions on StudentQuiz';
 $string['studentquizname'] = 'StudentQuiz Name';
 $string['studentquizname_help'] = 'The name of this StudentQuiz Activity';
+$string['submissionclose'] = 'Submissions until';
 $string['submissionendbeforestart'] = 'Submissions deadline can not be specified before the open for submissions date';
+$string['submissionopen'] = 'Submissions from';
 $string['tags'] = 'Tags';
 $string['unapprove'] = 'Unapprove';
 $string['unpin'] = 'Unpin question';

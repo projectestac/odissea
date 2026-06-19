@@ -47,6 +47,7 @@ $string['addnewpagesafterselected'] = 'Ajouter de nouvelles pages après les que
 $string['addnewquestionsqbank'] = 'Ajouter des questions à la catégorie {$a->catname} : {$a->link}';
 $string['addnewuseroverride'] = 'Ajouter une dérogation d’utilisateur';
 $string['addpagebreak'] = 'Ajouter un saut de page';
+$string['addpagebreakafter'] = 'Ajouter un saut de page après la question {$a}';
 $string['addpagehere'] = 'Ajouter une page ici';
 $string['addquestion'] = 'Ajouter question';
 $string['addquestionfrombankatend'] = 'Ajouter une question à la fin, tirée de la banque de questions';
@@ -583,6 +584,7 @@ Les tests peuvent notamment être utilisés :
 * pour l’auto-évaluation.';
 $string['modulename_link'] = 'mod/quiz/view';
 $string['modulenameplural'] = 'Tests';
+$string['movequestionnumber'] = 'Déplacer la question : {$a}';
 $string['moveselectedonpage'] = 'Déplacer les questions sélectionnées vers la page {$a}';
 $string['multichoice'] = 'Choix multiple';
 $string['multipleanswers'] = 'Veuillez choisir au moins une réponse.';
@@ -895,6 +897,7 @@ $string['removeallquizattempts'] = 'Toutes les tentatives des tests';
 $string['removealluseroverrides'] = 'Toutes les dérogations utilisateur';
 $string['removeemptypage'] = 'Supprimer page vide';
 $string['removepagebreak'] = 'Supprimer le saut de page';
+$string['removepagebreakafter'] = 'Supprimer le saut de page après la question {$a}';
 $string['removeselected'] = 'Retirer la sélection';
 $string['rename'] = 'Renommer';
 $string['renderingserverconnectfailed'] = 'Le serveur {$a} n’a pas pu traiter une requête RQP. Vérifiez que l’URL est correcte.';

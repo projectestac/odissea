@@ -51,7 +51,7 @@ $string['labeltext'] = 'Testo';
 $string['modulename'] = 'Area di testo e media';
 $string['modulename_help'] = 'L\'area di testo e media consente di inserire immagini e testo nella pagina home del corso.
 
-È possibile usare l\'area di testo e media per:
+È possibile usare l\'area di testo e media per
 
 * Dividere elenchi di attività con sottotitoli o immagini
 * Visualizzare video e suoni direttamente nella pagina home del corso

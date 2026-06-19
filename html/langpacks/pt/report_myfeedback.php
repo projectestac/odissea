@@ -391,7 +391,6 @@ $string['usagetblheader_totalviews_info'] = 'Número total de visualizações de
 $string['usagetblheader_viewed'] = 'Visualizado';
 $string['usagetblheader_viewed_info'] = 'Quantos utilizadores (ou se pelo menos um utilizador) visualizaram o relatório pelo menos uma vez.';
 $string['usagetblheader_viewedby'] = 'Visualizado por:';
-$string['usagetblheader_viewedby_info'] = 'Quantos responsáveis da organização visualizaram o relatório para este aluno?';
 $string['userprogramme'] = 'Programa:';
 $string['view'] = 'visualização';
 $string['viewadminreports'] = 'Ver relatórios do administrador';

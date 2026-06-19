@@ -19,6 +19,7 @@ For full install instructions, see the
 [CodeRunner install instructions](https://github.com/trampgeek/moodle-qtype_coderunner/blob/master/Readme.md).
 
 ## CHANGE HISTORY
+10/05/26. V1.4.5. Bug fix: module was using a defunct interface call to initialise submit buttons, causing behat failures in Moodle 5.2.
 29/01/25. V1.4.4. Bug fix Regrade Error with "Each attempt builds on the last" = "Yes" and Updated CodeRunner Question Version (Issue CodeRunner issue #236). 
 18/04/24. V1.4.3. Bug fix: regrading of quizzes run with adaptive-no-penalties would apply penalties. Also some code-tidying.
 13/04/22: V1.4.2. Bug fix: a regrade while the sandbox was down, or after a

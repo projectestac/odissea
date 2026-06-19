@@ -47,6 +47,7 @@ $string['availableproviders'] = 'Tvarkykite DI paslaugų teikėjus, prijungtus p
 $string['availableproviders_desc'] = 'DI paslaugų teikėjai jūsų svetainę papildo DI funkcijomis, pvz., teksto santraukomis ar paveikslėlių generavimu.<br/>
 Kiekvieno teikėjo veiksmus galite tvarkyti jo nustatymuose.';
 $string['contentwatermark'] = 'Sugeneruota su DI';
+$string['declineaipolicy'] = 'Atmesti';
 $string['manageaiplacements'] = 'Tvarkykite dirbtinio intelekto įterpimo vietas';
 $string['manageaiproviders'] = 'DI paslaugų teikėjų valdymas';
 $string['placement'] = 'Įterpimo vieta';

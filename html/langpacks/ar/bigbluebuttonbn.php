@@ -253,6 +253,7 @@ $string['event_meeting_left'] = 'اجتماع تمت مغادرته';
 $string['event_recording_deleted'] = 'تسجيل تم حذفه';
 $string['event_recording_edited'] = 'تسجيل تم تعديله';
 $string['event_recording_imported'] = 'تسجيل تم استيراده';
+$string['event_recording_link_deleted'] = 'ابط التسجيل تم حذفه';
 $string['event_recording_protected'] = 'تسجيل تمت حمايته';
 $string['event_recording_published'] = 'تسجيل تم نشره';
 $string['event_recording_unprotected'] = 'تسجيل تم إلغاء حمايته';

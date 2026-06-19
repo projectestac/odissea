@@ -39,8 +39,7 @@ require_once(__DIR__ . '/../../../../../behat/classes/util.php');
 /**
  * The capabilities of the plugin, in this case there is one toolbar button and one menu item.
  */
-class plugininfo extends plugin implements plugin_with_buttons, plugin_with_menuitems, plugin_with_configuration {
-
+class plugininfo extends plugin implements plugin_with_buttons, plugin_with_configuration, plugin_with_menuitems {
     /**
      * Get the internal name of the toolbar button.
      * @return string[]
@@ -107,5 +106,4 @@ class plugininfo extends plugin implements plugin_with_buttons, plugin_with_menu
         }
         return $config;
     }
-
 }

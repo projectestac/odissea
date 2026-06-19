@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['acknowledgement'] = 'Accettazione';
 $string['acknowledgementtext'] = 'Sono consapevole che è mia responsabilità disporre di backup completi del sito effettuati prima di installare plugin aggiuntivi. Accetto e comprendo che i plugin aggiuntivi (ivi inclusi quelli provenienti da siti non ufficiali) possono contenere problemi di sicurezza, rendere il sito non funzionante nonché provocare la perdita di dati o la diffusione di dati sensibili.';
+$string['activitychooserfootertext'] = 'Scopri altre attività su';
 $string['featuredisabled'] = 'L\'installazione di plugin è disabilitata';
 $string['installaddon'] = 'Installa plugin';
 $string['installaddons'] = 'Installazione plugin';
@@ -43,6 +44,8 @@ $string['installfromzipsubmit'] = 'Installa plugin da file ZIP';
 $string['installfromziptype'] = 'Tipo plugin';
 $string['installfromziptype_help'] = 'l\'installer è in grado di rilevare automaticamente il tipo di plugin per quei plugin che dichiarano correttamente il proprio nome del componente. Se il rilevamento automatico dovesse fallire, è possibile selezionare il tipo di plugin a mano. Attenzione: selezionando un tipo di plugin errato l\'installazione non andrà a buon fine.';
 $string['installfromziptype_link'] = 'Development:Plugins';
+$string['marketplaceadminlinktext'] = 'Scopri i nuovi plugin';
+$string['marketplacelink'] = 'Moodle Marketplace';
 $string['permcheck'] = 'È necessario accertarsi che la cartella radice del tipo di plugin sia scrivibile dal processo web server';
 $string['permcheckerror'] = 'Si è verificato un errore durante il controllo dei permessi di scrittura';
 $string['permcheckprogress'] = 'Verifica permessi di scrittura in corso...';

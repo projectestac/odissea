@@ -88,14 +88,14 @@ $string['emailchangecancel'] = 'E-Mail-Änderung abbrechen';
 $string['emailchangepending'] = 'Die Änderung ist noch nicht abgeschlossen. Öffnen Sie den zugesandten Link in {$a->preference_newemail}';
 $string['emailnowexists'] = 'Die E-Mail-Adresse, die Sie in Ihrem Nutzerprofil eintragen möchten, wird bereits von jemand anders verwendet. Die Änderung wird abgebrochen, aber Sie können die Eingabe einer weiteren Adresse versuchen.';
 $string['emailupdate'] = 'Änderung der E-Mail-Adresse';
-$string['emailupdatemessage'] = 'Guten Tag {$a->firstname},
+$string['emailupdatemessage'] = 'Guten Tag {$a->fullname},
 
 Sie möchten die E-Mail-Adresse für Ihr Nutzerkonto bei {$a->site} ändern. Um die Änderung zu bestätigen, klicken Sie bitte auf folgenden Link:
 
 <a href="{$a->url}">E-Mail-Änderung bestätigen</a>
 
 
-Der Bestätigungslink gilt <strong>10 Minuten</strong>.
+Der Bestätigungslink gilt nur <strong>10 Minuten</strong>.
 
 Falls Sie Fragen haben, wenden Sie sich an: {$a->supportemail}';
 $string['emailupdatesuccess'] = 'Die E-Mail-Adresse von <em>{$a->fullname}</em> wurde erfolgreich aktualisiert: <em>{$a->email}</em>.';
@@ -111,7 +111,7 @@ $string['errorpasswordupdate'] = 'Fehler: Kennwort konnte nicht geändert werden
 $string['eventuserloggedin'] = 'Nutzer/in angemeldet';
 $string['eventuserloggedinas'] = 'Nutzer/in ist als andere Person angemeldet';
 $string['eventuserloginfailed'] = 'Nutzeranmeldung fehlgeschlagen';
-$string['forcechangepassword'] = 'Kennwortänderung fordern';
+$string['forcechangepassword'] = 'Kennwortänderung festlegen';
 $string['forcechangepassword_help'] = 'Nutzer/innen werden aufgefordert, ihr Kennwort beim nächsten Anmelden zu ändern.';
 $string['forcechangepasswordfirst_help'] = 'Nutzer/innen werden aufgefordert, ihr Kennwort beim ersten Anmelden zu ändern.';
 $string['forgottenpassword'] = 'Wenn hier eine URL eintragen ist, wird eine Anfrage zur Kennwortrücksetzung zur angegebenen Adresse weitergeleitet, z.B. wenn die Kennwörter außerhalb von Moodle verwaltet werden. Lassen Sie das Feld leer, damit die Moodle-Standardfunktion für diesen Zweck verwendet wird.';
@@ -130,7 +130,7 @@ $string['informpasswordpolicy'] = 'Kennwortregeln: <br />{$a}';
 $string['instructions'] = 'Anleitung';
 $string['internal'] = 'Intern';
 $string['limitconcurrentlogins'] = 'Gleichzeitige Anmeldungen begrenzen';
-$string['limitconcurrentlogins_desc'] = 'Wenn diese Option aktiviert ist, wird die Anzahl der Anmeldungen für alle Nutzer/innen eingeschränkt. Die älteste Sitzung wird beim Erreichen der Grenze beendet, alle nicht gespeicherten Daten gehen verloren. Diese Einstellung ist nicht mit einer Authentifizierung über Single-Sign-On (SSO) kompatibel.';
+$string['limitconcurrentlogins_desc'] = 'Wenn diese Option aktiviert ist, wird die Anzahl der Anmeldungen für Nutzer/innen eingeschränkt. Die älteste Sitzung wird beim Erreichen der Grenze beendet, alle nicht gespeicherten Daten gehen verloren. Diese Einstellung ist nicht mit einer Authentifizierung über Single-Sign-On (SSO) kompatibel.';
 $string['locked'] = 'Gesperrt';
 $string['md5'] = 'MD5-Hash';
 $string['nopasswordchange'] = 'Kennwort kann nicht geändert werden';
@@ -145,7 +145,7 @@ $string['pluginnotenabled'] = 'Authentifizierungsplugin \'{$a}\' ist nicht aktiv
 $string['pluginnotinstalled'] = 'Authentifizierungsplugin \'{$a}\' ist nicht installiert.';
 $string['potentialidps'] = 'Verwenden Sie Ihr Nutzerkonto bei';
 $string['privacy:metadata:userpref:createpassword'] = 'Legt fest, dass ein Kennwort für die Person erstellt werden soll';
-$string['privacy:metadata:userpref:forcepasswordchange'] = 'Legt fest, ob eine Person beim Login das Kennwort ändern soll';
+$string['privacy:metadata:userpref:forcepasswordchange'] = 'Diese Option legt fest, ob eine Person beim Anmelden das Kennwort ändern soll.';
 $string['privacy:metadata:userpref:loginfailedcount'] = 'Anzahl von fehlerhaften Nutzeranmeldungen';
 $string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = 'Anzahl der fehlerhaften Anmeldungen der Person seit der letzten erfolgreichen Anmeldung.';
 $string['privacy:metadata:userpref:loginfailedlast'] = 'Datum, an dem der letzte Anmeldeversuch erfolgte';
@@ -162,11 +162,11 @@ $string['selfregistration'] = 'Selbstregistrierung';
 $string['selfregistration_help'] = 'Wenn die Selbstregistrierung (z.B. \'E-Mail basiert\') aktiviert ist, können sich alle Personen selbst registrieren und ein Nutzerkonto anlegen. Auf diese Weise könnten aber auch Spammer ein Nutzerkonto erhalten und Einträge in Foren, Blogs oder Profilen  missbrauchen. Um dieses Risiko zu vermeiden, können Sie die Selbstregistrierung ausschalten oder auf bestimmte E-Mail-Domains (z.B. meinefirma.de) beschränken.';
 $string['settingmigrationmismatch'] = 'Fehlende Übereinstimmungen, die bei der Korrektur der Namen in den Plugin-Einstellungen erkannt wurden! Beim Authentifizierungs-Plugin \'{$a->plugin}\' war die Einstellung \'{$a->setting}\' mit dem veralteten Namen \'{$a->legacy}\' und dem aktuellen Namen \'{$a->current}\' konfiguriert. Der letztere Wert wurde als gültig gesetzt, aber Sie sollten dies nochmal überprüfen.';
 $string['sha1'] = 'SHA-1 hash';
-$string['showguestlogin'] = 'Sie können auf der Anmeldeseite die Taste zur Gastanmeldung anzeigen oder verbergen. Wenn die Taste verborgen ist, ist die Gastanmeldung nicht möglich.';
+$string['showguestlogin'] = 'Sie können auf der Anmeldeseite die Taste "Gastanmeldung" anzeigen oder verbergen. Wenn die Taste verborgen ist, ist die Gastanmeldung nicht möglich.';
 $string['showloginform'] = 'Manuelle Anmeldung anzeigen';
 $string['showloginform_desc'] = 'Wenn alle Nutzer/innen auf der Website eine Authentifizierung wie OAuth2 verwenden, bei der sie keinen Anmeldenamen und kein Kennwort eingeben müssen, können Sie die manuelle Anmeldung ausblenden. Beachten Sie aber, dass sich dann niemand mehr mit einem manuellen Nutzerkonto anmelden kann.
 
-Um die manuelle Anmeldung wieder anzuzeigen, weil Sie sich selber ausgesperrt haben, verwenden Sie die folgende Befehlszeile: php admin/cli/cfg.php --name=showloginform --set=1';
+Um die manuelle Anmeldung wieder anzuzeigen, weil Sie sich selber ausgesperrt haben, verwenden Sie die folgende Befehlszeile im Terminal: php admin/cli/cfg.php --name=showloginform --set=1';
 $string['stdchangepassword'] = 'Standardseite zur Kennwortänderung nutzen';
 $string['stdchangepassword_expl'] = 'Stellen Sie diese Option auf \'Ja\', wenn das externe Authentifizierungssystem eine Änderung des Kennwortes durch Moodle zulässt. Die Einstellungen überschreiben \'URL zur Kennwortänderung\'';
 $string['stdchangepassword_explldap'] = 'Warnung: LDAP sollte unbedingt SSL-verschlüsselt sein (ldaps://), wenn der LDAP-Server extern betrieben wird.';

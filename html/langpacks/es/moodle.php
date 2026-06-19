@@ -704,12 +704,11 @@ Se ha solicitado la creación de una cuenta en "{$a->sitename}" utilizando su di
 
 Para confirmar su nueva cuenta, por favor vaya a esta dirección web:
 
-{$a->link}
+<a href="{$a->link}">Confirme su cuenta</a>
 
-En la mayoría de programas de correo electrónico, debería aparecer un enlace azul donde poder hacer clic.
-Si no funciona, cópielo y péguelo en la barra de direcciones de su navegador.
 
-Si necesita ayuda, por favor contacte con el administrador del sitio, {$a->admin}';
+Si necesita ayuda, por favor contacte con el administrador del sitio,
+{$a->admin}';
 $string['emailconfirmationresend'] = 'Reenviar correo de confirmación';
 $string['emailconfirmationsubject'] = 'Confirmación de la cuenta  {$a}';
 $string['emailconfirmsent'] = '<p>Hemos enviado un correo electrónico a <b>{$a}</b></p>
@@ -750,18 +749,16 @@ $string['emailmustbereal'] = 'IMPORTANTE: Debe escribir una dirección de correo
 $string['emailnotallowed'] = 'Las direcciones email de estos dominios no están permitidas ({$a})';
 $string['emailnotfound'] = 'No se ha encontrado la dirección email en la base de datos';
 $string['emailonlyallowed'] = 'Este email no se puede usar. Los dominios permitidos son: {$a}.';
-$string['emailpasswordchangeinfo'] = 'Hola {$a->firstname},
+$string['emailpasswordchangeinfo'] = 'Hola {$a->firstname}.
 
-Alguien (seguramente usted) ha solicitado una nueva contraseña para su
-cuenta \'{$a->username}\' en \'{$a->sitename}\'.
+Alguien (seguramente usted) ha solicitado una nueva contraseña para su cuenta "{$a->username}" en \'{$a->sitename}\'.
 
 Para cambiar su contraseña, por favor, diríjase a la siguiente dirección:
 
-{$a->link}
+<a href="{$a->link}">Cambiar contraseña</a>
 
-En la mayoría de los programas de correo electrónico, esto aparecerá como un enlace en color azul en el que usted puede hacer clic. Si no funcionara, copie y pegue la dirección en la barra de navegación de su navegador.
 
-Si necesita ayuda, por favor póngase en contacto con el administrador del sitio,
+Si necesita ayuda, por favor póngase en contacto con el administrador del sitio.
 {$a->admin}';
 $string['emailpasswordchangeinfodisabled'] = 'Hola, {$a->firstname},
 
@@ -776,21 +773,15 @@ Desafortunadamente las contraseñas no pueden cambiarse en este sitio. Por favor
 $string['emailpasswordchangeinfosubject'] = '{$a}: Información sobre cambiar la contraseña';
 $string['emailpasswordconfirmation'] = 'Hola, {$a->firstname}.
 
-Recibimos la solicitud de nueva contraseña para su cuenta
-en \'{$a->sitename}\'.
+Alguien (seguramente usted) ha solicitado una nueva contraseña para su cuenta en \'{$a->sitename}\'.
 
-Para concluir el proceso y poder enviarle una nueva contraseña por correo,
-diríjase a la siguiente dirección:
+Para confirmar esto y recibir una nueva contraseña por correo electrónico, por favor, clique sobre el siguiente enlace:
 
-{$a->link}
+<a href="{$a->link}">Obtener una nueva contraseña</a>
 
-En la mayoría de programas de correo electrónico el
-enlace anterior debería aparecer en azul y puede hacer
-clic sobre él. Si no funcionara, cópielo y péguelo en la
-ventana de direcciones de su navegador.
 
-Si necesita ayuda adicional, póngase en contacto con el
-administrador, {$a->admin}';
+Si necesita ayuda adicional, póngase en contacto con el administrador.
+{$a->admin}';
 $string['emailpasswordconfirmationsubject'] = '{$a}: confirmación de cambio de contraseña';
 $string['emailpasswordconfirmmaybesent'] = '<p>Si ha suministrado un nombre de usuario correcto o dirección de correo electrónico única, se le debería haber enviado un correo electrónico.</p>
 <p>Contiene instrucciones sencillas para confirmar y completar este cambio de contraseña. Si sigue teniendo problemas, por favor contacte con el administrador del sitio.</p>';
@@ -807,14 +798,17 @@ $string['emailresetconfirmation'] = 'Hola, {$a->firstname}.
 
 Se ha solicitado un restablecimiento de contraseña para su cuenta \'{$a->username}\' en {$a->sitename}.
 
-Para confirmar esta petición y establecer una nueva contraseña para su cuenta, por favor, vaya a la siguiente dirección de Internet:
-<a href="{$a->link}">{$a->link}</a>
+Para confirmar esta petición y establecer una nueva contraseña para su cuenta, por favor, clique en el siguiente enlace:
 
-(Este enlace es válido durante  {$a->resetminutes} minutos desde el momento en que hizo la solicitud por primera vez.
+<a href="{$a->link}">Resetear contraseña</a>
+
+
+(Este enlace es válido durante  {$a->resetminutes} minutos desde el momento en que hizo la solicitud por primera vez)
 
 Si usted no ha solicitado este restablecimiento de contraseña, no necesita realizar ninguna acción.
 
-Si necesita ayuda, por favor póngase en contacto con el administrador del sitio, {$a->admin}';
+Si necesita ayuda, por favor, póngase en contacto con el administrador del sitio.
+{$a->admin}';
 $string['emailresetconfirmationsubject'] = '{$a}: Solicitud de restablecimiento de contraseña';
 $string['emailresetconfirmsent'] = 'Se ha enviado un correo electrónico a su dirección en <b>{$a}.</b> <br /> Contiene unas sencillas instrucciones para confirmar y completar el cambio de contraseña.
 Si continúa teniendo problemas, póngase en contacto con el administrador del sitio.';
@@ -1555,10 +1549,10 @@ Se le ha creado una nueva cuenta en "{$a->sitename}".
 
 (Deberá cambiar su contraseña cuando acceda por primera vez)
 
-Para comenzar a usar "{$a->sitename}", entre en
-{$a->link}
 
-Si necesita ayuda, puede contactar con el administrador del sitio,
+<a href="{$a->link}">Clique para acceder</a> y empezar a usar \'{$a->sitename}\'.
+
+Si necesita ayuda, puede contactar con el administrador del sitio.
 {$a->signoff}';
 $string['newusers'] = 'Nuevos usuarios';
 $string['newwindow'] = 'Nueva ventana';

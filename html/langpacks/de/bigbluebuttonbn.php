@@ -252,6 +252,7 @@ $string['event_meeting_left'] = 'Meeting verlassen';
 $string['event_recording_deleted'] = 'Aufzeichnung gelöscht';
 $string['event_recording_edited'] = 'Aufzeichnung bearbeitet';
 $string['event_recording_imported'] = 'Aufzeichnung importiert';
+$string['event_recording_link_deleted'] = 'Aufnahme-Link gelöscht';
 $string['event_recording_protected'] = 'Aufzeichnung geschützt';
 $string['event_recording_published'] = 'Aufzeichnung veröffentlicht';
 $string['event_recording_unprotected'] = 'Schutz der Aufzeichnung entfernt';

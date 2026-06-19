@@ -190,10 +190,14 @@ class redis_lock_factory implements lock_factory {
             try {
                 $locked = $this->redis->setnx($resource, $this->get_lock_value());
 
-                // XTEC ************ AFEGIT - Added expiration to locks to automatically remove them in case the script doesn't
-                //                            finish correctly.
+                // XTEC ************ AFEGIT - Added expiration to just created locks to automatically remove them in case
+                //                            the script doesn't finish correctly.
                 // 2023.03.20 @aginard
-                $this->redis->expire($resource, 3600);
+                if ($locked) {
+                    // Only set the expiration time if the lock didn't exist and has been just created
+                    // with the recent call to setnx.
+                    $this->redis->expire($resource, 3600);
+                }
                 // ************ FI
 
                 $exception = false;

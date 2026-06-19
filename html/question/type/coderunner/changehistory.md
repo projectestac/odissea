@@ -1,5 +1,25 @@
 # CHANGE HISTORY
 
+### 10 May 2026, 5.9.2
+
+Update for Moodle 5.2 compatibility.
+
+### 13 April 2026, 5.9.1
+
+Add the two analytics scripts (studenttimeanalysis and quiztrajectory) to the management page.
+
+### 8 April 2026, 5.9.0
+
+Extensive refactoring of scripts, merging all {scriptname}index.php and {scriptname}.php pairs.
+Script files all moved into scripts folder leaving only management.php at the plugin root.
+
+### 4 November 2025, 5.8.1
+
+ * New scripts for question bank clean up (deletion of old unused versions) and integrity checking.
+ * Addition of a top-level management.php script that links to other CodeRunner management scripts.
+ * Fix bug in CodeRunner upgrade lib that resulted in the built-in prototypes being invisibly orphaned
+   rather than properly deleted prior to installing the latest versions.
+
 ### 28 October 2025, 5.8.0
 
  * New question browser script moodlehome/question/type/coderunner/questionbrowserindex.php allows easy browsing
@@ -8,7 +28,7 @@
  * Add a QUIZ variable to the Twig context with fields QUIZ.name and QUIZ.tags. Allows customising the behaviour
    of CodeRunner questions according to the quiz in which they're running.
  * Extend TwigAll to include penalty regime.
- * Improve resilience of combinator template grader code to bad response from author's template.
+ * Improve resilience of combinator template grader code to bad responses from author's template.
  * Improvements to test suite (issues #266, #267 and #276)
  * Bug fix: when using equality grader, trailing space characters were correctly being removed from
    all lines but the spec said all whitespace characters were being removed. That wasn't true - characters
@@ -24,7 +44,7 @@
 
  * Updates to grade caching.
    - Scheduled task purges old cache entries automatically (only if using FileStore)
-   - Manual grade-cache cleaner available (script cachepurgeindex.php)
+   - Manual grade-cache cleaner available (script cachepurge.php)
    - Fix for issue #261 Unsupported modification of PAGE->context
 
  * Extended bulk-tester capabilites

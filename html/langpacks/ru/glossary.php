@@ -79,6 +79,7 @@ $string['attachment_help'] = '<h2>Вложения для записей</h2>
 $string['author'] = 'автор';
 $string['authorview'] = 'Обзор по авторам';
 $string['back'] = 'Назад';
+$string['bynameondate'] = 'от {$a->name} - {$a->date}';
 $string['cachedef_concepts'] = 'Концепция связывания';
 $string['cantinsertcat'] = 'Нельзя вставить категорию';
 $string['cantinsertrec'] = 'Нельзя вставить запись';

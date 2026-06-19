@@ -25,4 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['defaulton'] = 'Aktiverad som standard';
+$string['noneselected'] = 'Inget valt';
+$string['option_collections'] = 'Samlingar';
+$string['option_views'] = 'Visningar';
+$string['site'] = 'Plats';
 $string['yeskeeplocked'] = '';

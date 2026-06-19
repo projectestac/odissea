@@ -291,7 +291,6 @@ $string['settoggleiconfontopen_help'] = '\'toggleiconset\' ezarpenean \'Ikonoare
 $string['settoggleiconposition'] = 'Zehaztu ikonoaren kokapena';
 $string['settoggleiconposition_help'] = 'Ikonoa etengailuaren testuaren ezkerrean edo eskuinean egon behar den zehazten du.';
 $string['settoggleiconset'] = 'Zehaztu ikono multzoa';
-$string['settoggleiconset_help'] = 'Etengailuaren ikono multzoa zehazten du.';
 $string['setviewsinglesectionenabled'] = 'Ikusi atal bakarra gaituta';
 $string['setviewsinglesectionenabled_help'] = 'Ikusi atal bakarra funtzionalitatea gaituta dago.';
 $string['showfromothers'] = 'Erakutsi gaia';

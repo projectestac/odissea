@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['buttontitle'] = 'Ekvationsredigerare';
 $string['librarygroup1'] = 'Operatorer';
 $string['librarygroup1_desc'] = 'TeX-kommandon på Operatorer-fliken.';
 $string['librarygroup2'] = 'Pilar';
@@ -33,3 +34,5 @@ $string['librarygroup3'] = 'Grekiska symboler';
 $string['librarygroup3_desc'] = 'TeX-kommandon på Grekiska symboler-fliken.';
 $string['librarygroup4'] = 'Avancerat';
 $string['librarygroup4_desc'] = 'TeX-kommandon på avancerat-fliken.';
+$string['modaltitle'] = 'Ekvationsredigerare';
+$string['pluginname'] = 'Ekvationsredigerare';

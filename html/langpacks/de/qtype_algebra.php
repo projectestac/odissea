@@ -50,17 +50,17 @@ $string['cdot'] = '\\cdot';
 $string['checktolerance'] = 'Kontrolltoleranz';
 $string['compalgorithm'] = 'Vergleichsalgorithmus';
 $string['compareby'] = 'Vergleichsalgorithmus';
-$string['compareby_help'] = 'Wählt die Methode aus, mit der die Antworten der Studierenden mit den Antworten auf alle Fragen verglichen werden. Die verschiedenen Möglichkeiten sind:
+$string['compareby_help'] = 'Wählt die Methode aus, mit der die Antworten der Teilnehmer/innen mit den Antworten auf alle Fragen verglichen werden. Die verschiedenen Möglichkeiten sind:
 
 SAGE: verwendet die Open Source <a href="http://www.sagemath.org/">SAGE</a>
 Mathematiksoftware, um einen vollständigen symbolischen algebraischen Vergleich durchzuführen.
 
-Auswertung: Diese Methode generiert Zufallszahlen für die Fragevariablen und wertet dann sowohl die Studierendenantwort als auch die Antwort auf die Frage für diese Menge von Werten.
+Evaluation: Diese Methode generiert Zufallszahlen für die Fragevariablen und wertet dann sowohl die Studierendenantwort als auch die Antwort auf die Frage für diese Menge von Werten.
 
 Äquivalenz:
 Dies ist die einfachste aller Methoden. Sie führt nur die grundlegendsten Vergleiche zwischen Ausdrücken.';
 $string['compareequiv'] = 'Äquivalenz';
-$string['compareeval'] = 'Auswertung';
+$string['compareeval'] = 'Evaluation';
 $string['comparesage'] = 'SAGE';
 $string['correctansweris'] = 'Die richtige Antwort ist : {$a}. Das ergibt';
 $string['correctanswers'] = 'Richtige Antworten';

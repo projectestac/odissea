@@ -95,7 +95,7 @@ Feature: Using Completion Progress block overview
     And I click on "Overview of students" "button" in the "Completion Progress" "block"
     When I click on "Select 'Student 1'" "checkbox"
     And I click on "Select 'Student 2'" "checkbox"
-    And I select "Send a message" from the "With selected users..." singleselect
+    And I click on "Send a message" "button"
     And I set the field "Message" to "Message"
     And I click on "Send message to 2 people" "button"
     Then I should see "Message sent to 2 people"
@@ -106,7 +106,7 @@ Feature: Using Completion Progress block overview
     And I click on "Overview of students" "button" in the "Completion Progress" "block"
     When I click on "Select 'Student 1'" "checkbox"
     And I click on "Select 'Student 2'" "checkbox"
-    And I select "Add a new note" from the "With selected users..." singleselect
+    And I click on "Add a new note" "button"
     And I set the field "Note" to "Note"
     And I click on "Add a new note to 2 people" "button"
     Then I should see "Note added to 2 people"

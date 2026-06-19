@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['acknowledgement'] = 'Quittance';
 $string['acknowledgementtext'] = 'Je suis conscient qu’il est de ma responsabilité d’effectuer une sauvegarde complète de ce site avant d’installer des plugins additionnels. J’accepte et je suis conscient que des plugins additionnels (en particulier ceux provenant de sources non officielles, mais pas uniquement) peuvent comporter des lacunes de sécurité, rendre ce site indisponible et causer des pertes ou fuites de données privées.';
+$string['activitychooserfootertext'] = 'Découvrir plus d’activités sur';
 $string['featuredisabled'] = 'L’installeur de plugins additionnels est désactivé sur ce site.';
 $string['installaddon'] = 'Installer le plugin !';
 $string['installaddons'] = 'Installer des plugins';
@@ -43,6 +44,8 @@ $string['installfromzipsubmit'] = 'Installer le plugin à partir du fichier ZIP'
 $string['installfromziptype'] = 'Type de plugin';
 $string['installfromziptype_help'] = 'Pour les plugins qui déclarent correctement leur nom de composant, l’installeur est capable de détecter automatiquement le type de plugin. Si la détection automatique échoue, veuillez choisir manuellement le type de plugin correct. Attention ! La procédure d’installation peut lamentablement échouer si un type incorrect est indiqué.';
 $string['installfromziptype_link'] = 'Development:Plugins';
+$string['marketplaceadminlinktext'] = 'Découvrir de nouveaux plugins';
+$string['marketplacelink'] = 'Place du marché Moodle';
 $string['permcheck'] = 'Assurez-vous que l’emplacement sur le serveur pour ce type de plugin est atteignable en écriture par le serveur web.';
 $string['permcheckerror'] = 'Erreur lors de la vérification des droits d’accès en écriture';
 $string['permcheckprogress'] = 'Vérification des droits d’accès en écriture…';

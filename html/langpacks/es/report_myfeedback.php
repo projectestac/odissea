@@ -389,7 +389,6 @@ $string['usagetblheader_totalviews_info'] = 'El número de veces de cualquier re
 $string['usagetblheader_viewed'] = 'Visto';
 $string['usagetblheader_viewed_info'] = 'Cuantos usuarios ( o si es que un usuario ha) han visto el reporte por al menos una vez.';
 $string['usagetblheader_viewedby'] = 'Visto por';
-$string['usagetblheader_viewedby_info'] = 'Cuantos del staff han visto el reporte para este estudiante.';
 $string['userprogramme'] = 'Programa:';
 $string['view'] = 'vista';
 $string['viewfeedback'] = 'ver la retroalimentación directamente en Turnitin';

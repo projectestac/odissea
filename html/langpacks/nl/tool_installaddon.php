@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['acknowledgement'] = 'Bevestiging';
 $string['acknowledgementtext'] = 'Ik begrijp dat het mijn verantwoordelijkheid is om volledige backups te hebben van deze site voor ik plugins ga installeren. Ik aanvaard en begrijp dat plugins (vooral, maar niet alleen, diegene die niet van officiële bronnen afkomstig zijn) beveiligingsgaten kunnen bevatten, de site onbeschikbaar kunnen maken of het lekken of verlies van gegevens kunnen veroorzaken.';
+$string['activitychooserfootertext'] = 'Bekijk meer activiteiten op';
 $string['featuredisabled'] = 'De plugin installer is uitgeschakeld voor deze site.';
 $string['installaddon'] = 'Plugin installeren';
 $string['installaddons'] = 'Installeer plugins';
@@ -43,6 +44,8 @@ $string['installfromzipsubmit'] = 'Installeer plugin van ZIP-bestand';
 $string['installfromziptype'] = 'Plugin type';
 $string['installfromziptype_help'] = 'Voor plugins die hun componentnaam juist opgeven, kan de installer het juiste plugintype automatisch detecteren. Als de autodetectie mislukt, kies dan het juiste type plugin manueel. Waarschuwing: de installatieprocedure kan behoorlijk falen als er een fout plugintype geselecteerd wordt.';
 $string['installfromziptype_link'] = 'Development:Plugins';
+$string['marketplaceadminlinktext'] = 'Blader door nieuwe plugins';
+$string['marketplacelink'] = 'Moodle marktplaats';
 $string['permcheck'] = 'Zorg ervoor dat de root-locatie voor dit plugintype beschrijvbaar is voor het webserver proces.';
 $string['permcheckerror'] = 'Fout tijdens het controleren van de schrijfrechten';
 $string['permcheckprogress'] = 'Schrijfrechten controleren...';

@@ -65,6 +65,7 @@ $string['blockperiod'] = 'Intervallo di controllo';
 $string['blockperiod_help'] = 'Nell\'intervallo di tempo stabilito gli utenti non potranno oltrepassare un dato numero di interventi. Gli utenti con il privilegio mod/forum:postwithoutthrottling non sono influenzati da questa impostazione.';
 $string['blockperioddisabled'] = 'Nessun intervallo di controllo';
 $string['blogforum'] = 'Forum standard visualizzato in stile blog';
+$string['browsediscussions'] = 'Esplora le discussioni';
 $string['bynameondate'] = 'di {$a->name} - {$a->date}';
 $string['cachedef_forum_count_discussions'] = 'Conteggio discussioni forum';
 $string['cachedef_forum_is_tracked'] = 'Stato evidenziazione messaggi dell\'utente';

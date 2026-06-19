@@ -884,6 +884,7 @@ $string['managelang'] = 'Gerir';
 $string['manageqbanks'] = 'Gerir módulos de base de dados de perguntas';
 $string['manageqbehaviours'] = 'Gerir comportamentos das perguntas';
 $string['manageqtypes'] = 'Gerir tipos de perguntas';
+$string['marketplaceavailablenotice'] = 'Navegue e descarregue módulos no <a href="{$a}" target="_blank" rel="noopener noreferrer">Moodle Marketplace <i class="fa fa-external-link" role="img" aria-label="Abre numa nova janela" title="Abre numa nova janela"></i></a>.';
 $string['maturity100'] = 'Beta';
 $string['maturity150'] = 'Versão candidata';
 $string['maturity200'] = 'Versão estável';
@@ -948,7 +949,7 @@ $string['moodlebrandedapp'] = 'Aplicação móvel Moodle Personalizada';
 $string['moodlebrandedapp_help'] = '<p>A Aplicação móvel Moodle Personalizada tem todas as funcionalidades da Aplicação móvel Moodle gratuita mas personalizada com a identidade da sua organização.</p>
 <a href="https://moodle.com/branded-app">Acerca da Aplicação móvel Moodle Personalizada</a>';
 $string['moodlebrandedappreference'] = 'Como alternativa, obtenha uma <a href="https://moodle.com/branded-app/">Aplicação móvel Moodle Personalizada</a> com a identidade da sua organização.';
-$string['moodlenetremovalwarning'] = 'O serviço MoodleNet será desativado a 20 de abril de 2026. Se desejar continuar a utilizar o MoodleNet no seu site, instale o módulo do MoodleNet a partir do <a href="https://moodle.org/plugins" target="_blank">diretório de módulos do Moodle</a> e ligue-o a uma instância do MoodleNet alojada no seu próprio servidor. Após esta instalação, o campo de ID do perfil MoodleNet será removido; migre estes dados caso os utilize para outros fins.';
+$string['moodlenetremovalwarning'] = 'O serviço MoodleNet será desativado a 20 de abril de 2026. Se pretender continuar a utilizar o MoodleNet no seu site, instale o módulo do MoodleNet a partir do <a href="https://github.com/moodlehq/moodle-tool_moodlenet" target="_blank">repositório GitHub do Moodle HQ</a> e ligue-o a uma instância do MoodleNet alojada no seu próprio servidor. Após isto, o campo de ID do perfil MoodleNet será removido; migre estes dados caso os utilize para outros fins.ara outros fins.';
 $string['moodlepartners'] = 'Parceiros Moodle';
 $string['moodlepartners_help'] = '<p>Parceiros Moodle são fornecedores de serviços certificados pelo Moodle HQ para fornecer serviços Moodle de alta qualidade para o ambiente de aprendizagem online da sua organização.</p>
 <a href="https://moodle.com/about-partners/">Acerca dos nossos parceiros</a> <br />

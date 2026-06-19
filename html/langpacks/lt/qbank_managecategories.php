@@ -32,6 +32,7 @@ $string['categorymoved'] = 'Kategorija sėkmingai perkelta.';
 $string['confirmdelete'] = 'Ištrinti kategoriją „{$a}“? Visos antrinės kategorijos bus perkeltos į šios kategorijos pirminę kategoriją.';
 $string['descriptionnotdisplayed'] = 'Kategorijų aprašymas nerodomas';
 $string['displaydescription'] = 'Kategorijų aprašymas rodomas';
+$string['error:category'] = 'Turite pasirinkti tinkamą kategoriją';
 $string['idnumberexists'] = 'ID numeris jau naudojamas. Pakeiskite jį norėdami perkelti arba atnaujinti kategoriją.';
 $string['lastcategoryinthiscontext'] = 'Ši kategorija yra vienintelė šiame kontekste. Jei norite perkelti šią kategoriją, turite pridėti kitą kategoriją.';
 $string['movecategory'] = 'Perkelti {$a}';

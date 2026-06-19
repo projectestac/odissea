@@ -59,6 +59,7 @@ $string['attachment_help'] = 'يمكنك اختيارياً إرفاق ملف و
 $string['author'] = 'الكاتب';
 $string['authorview'] = 'الاستعراض حسب الكاتب';
 $string['back'] = 'عودة';
+$string['bynameondate'] = 'من قبل {$a->name} - {$a->date}';
 $string['cachedef_concepts'] = 'ربط المفهوم';
 $string['cantinsertcat'] = 'لا يمكن إدراج التصنيف';
 $string['cantinsertrec'] = 'تعذر إدراج السجل';

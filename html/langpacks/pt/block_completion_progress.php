@@ -87,6 +87,7 @@ $string['not_all_expected_set'] = 'Nem todas as atividades com verificação da 
 $string['now_indicator'] = 'AGORA';
 $string['overview'] = 'Visão global dos alunos';
 $string['pluginname'] = 'Barra de Progresso';
+$string['privacy:metadata'] = 'O bloco Barra de Progresso mostra apenas dados de conclusão existentes.';
 $string['progress'] = 'Progresso';
 $string['progressbar'] = 'Barra de Progresso';
 $string['selectitem'] = 'Selecionar \'{$a}\'';

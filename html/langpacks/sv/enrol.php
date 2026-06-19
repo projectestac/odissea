@@ -45,6 +45,7 @@ Följande platshållare kan inkluderas i meddelandet:
 * Länk till användarens profilsida {$a->profileurl}
 * Användar e-post {$a->email}
 * Användarens fullständiga namn {$a->fullname}';
+$string['customwelcomemessageplaceholder'] = 'Hej {$a->firstname}, du är registrerad i kursen {$a->coursename}.';
 $string['defaultenrol'] = 'Lägg till instans till nya kurser';
 $string['defaultenrol_desc'] = 'Det är möjligt att lägga till den här pluginmodulen till alla nya kurser som standard.';
 $string['deleteinstanceconfirm'] = 'OBS! Du håller på ta bort registreringsmetoden "{$a->name}". Alla {$a->users} användare som registrerats med denna metod kommer att avregistreras och all kursrelaterad data såsom användarnas betyg, grupptillhörighet eller forumsprenumerationer kommer att raderas.
@@ -138,6 +139,7 @@ $string['periodend'] = 'tills {$a}';
 $string['periodnone'] = 'registrerad {$a}';
 $string['periodstart'] = 'från {$a}';
 $string['periodstartend'] = 'från {$a->start} till {$a->end}';
+$string['plugindisabled'] = 'Registreringspluginet för {$a} är inaktiverat';
 $string['privacy:metadata:user_enrolments'] = 'Registreringar';
 $string['privacy:metadata:user_enrolments:enrolid'] = 'Registreringsplugin-instansen';
 $string['privacy:metadata:user_enrolments:modifierid'] = 'ID för användaren som senast ändrade användarregistreringen';
@@ -153,6 +155,8 @@ $string['rolefromcategory'] = '{$a->role} (Ärvd från kurskategori)';
 $string['rolefrommetacourse'] = '{$a->role} (Ärvd från föräldrakurs)';
 $string['rolefromsystem'] = '{$a->role} (Tilldelad på webbplatsnivå)';
 $string['rolefromthiscourse'] = '{$a->role} (Tilldelad i denna kurs)';
+$string['sendcoursewelcomemessage'] = 'Skicka välkomstmeddelande';
+$string['sendcoursewelcomemessage_help'] = 'När en användare eller kohort registreras i kursen kan de få ett välkomstmeddelande via e-post. Om det skickas från kurskontakten (som standard läraren), och fler än en användare har den här rollen, skickas e-postmeddelandet från den första användaren som tilldelas rollen.';
 $string['sendfromcoursecontact'] = 'Från kurskontakten';
 $string['sendfromkeyholder'] = 'Från nyckelinnehavaren';
 $string['sendfromnoreply'] = 'Från no-reply adressen';

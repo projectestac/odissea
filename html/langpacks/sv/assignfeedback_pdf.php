@@ -25,6 +25,24 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowpdffeedback'] = 'Aktivera';
 $string['cancel'] = 'Avbryt';
+$string['colourblack'] = 'Svart';
+$string['colourblue'] = 'Andel blått';
+$string['colourclear'] = 'Clear';
+$string['colourgreen'] = 'Andel grönt';
+$string['colourred'] = 'Andel rött';
+$string['colourwhite'] = 'Vit';
+$string['colouryellow'] = 'Gul';
+$string['comment'] = 'Kommentar';
+$string['deletecomment'] = 'Radera kommentar';
+$string['draftsaved'] = 'Utkast sparat';
 $string['emptyquicklist_instructions'] = 'Högerklicka på en kommentar för att kopiera den till snabblistan';
+$string['errormessage'] = 'Felmeddelande:';
+$string['findcommentsempty'] = 'Inga kommentarer';
 $string['gspath2'] = 'På de flesta Linux-installationer kan detta lämnas orört som \'/usr/bin/gs\'. På Windows kommer det att bli något i stil med "c:\\gs\\bin\\gswin32c.exe" (se till att det inte finns några mellanslag i sökvägen - om nödvändigt, kopiera filerna \'gswin32c.exe\' och \'gsdll32.dll\' till en ny mapp utan mellanslag i sökvägen)';
+$string['nocomments'] = 'Inga kommentarer';
+$string['nogroup'] = 'Ingen grupp';
+$string['pagenumber'] = 'Sidnummer';
+$string['previousnone'] = 'Inga';
+$string['resend'] = 'Skicka igen';

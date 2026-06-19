@@ -59,6 +59,7 @@ $string['attachment_help'] = 'Sie können optional eine oder mehrere Dateien an 
 $string['author'] = 'Autor/in';
 $string['authorview'] = 'Nach Autor/in';
 $string['back'] = 'Zurück';
+$string['bynameondate'] = 'Nach {$a->name} - {$a->date}';
 $string['cachedef_concepts'] = 'Konzeptverknüpfung';
 $string['cantinsertcat'] = 'Kategorie kann nicht angelegt werden';
 $string['cantinsertrec'] = 'Eintrag kann nicht angelegt werden';
