@@ -26,5 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['errorcouldnotmapcompetenciesinframework'] = 'Non foi posíbel asignar ningunha competencia neste marco.';
+$string['lpmigrate:frameworksmigrate'] = 'Migrar frameworks';
+$string['migrateframeworks'] = 'Migrar frameworks';
 $string['missingmappings'] = 'Faltan asignacións';
 $string['warnings'] = 'Advertencias';

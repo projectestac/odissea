@@ -1,11 +1,13 @@
-@javascript @mod_quiz @qtype_wq @wqmdl-108
+@qtype @qtype_wq @mod_quiz @wq @javascript @teacher @preview @regression
 Feature: Teacher can preview the whole quiz
     In order to verify rendering of WIRIS questions
     As a teacher
     I want to preview the quiz and see all questions
 
     Background:
-    Given the following "users" exist:
+    Given the "wiris" filter is "on"
+    And the "wiris" filter has maximum priority
+    And the following "users" exist:
         | username | firstname | lastname | email                |
         | teacher1 | Teacher   | One      | teacher1@example.com |
         | student1 | Student   | One      | student1@example.com |
@@ -46,12 +48,24 @@ Feature: Teacher can preview the whole quiz
         | questioncategory | qtype      | name        | questiontext         | defaultmark | shuffleanswers | subquestion[1] | subanswer[1] | subquestion[2] | subanswer[2] |
         | WIRIS bank       | matchwiris | Match Wiris | Match the pairs      | 1.0         | 0              | H2O            | Water        | NaCl           | Salt         |
 
-    And quiz "Wiris Quiz" contains the following questions:
+    # shortanswerwiris with a simple text answer
+    And the following "questions" exist:
+        | questioncategory | qtype            | name     | questiontext                        | defaultmark | answers[1] | fraction[1] |
+        | WIRIS bank       | shortanswerwiris | SA Wiris | <p>Type the energy symbol word.</p> | 1.0         | energy     | 1.0         |
+
+    # multianswerwiris (Cloze) carries its structure in the question text
+    And the following "questions" exist:
+        | questioncategory | qtype            | name        | questiontext                                            | defaultmark |
+        | WIRIS bank       | multianswerwiris | Cloze Wiris | <p>The speed of light symbol is {1:SHORTANSWER:=c}.</p> | 1.0         |
+
+    And quiz "Wiris Quiz" contains the following Wiris questions:
         | question              | page |
         | TF WIRIS – sky color  | 1    |
         | Multichoice Wiris     | 1    |
         | Essay Wiris           | 1    |
         | Match Wiris           | 1    |
+        | SA Wiris              | 1    |
+        | Cloze Wiris           | 1    |
 
 Scenario: Teacher previews the quiz and sees all questions
     Given I log in as "teacher1"
@@ -62,3 +76,5 @@ Scenario: Teacher previews the quiz and sees all questions
     And I should see "2 + 2 = ?"
     And I should see "Explain E = mc^2 in words"
     And I should see "Match the pairs"
+    And I should see "Type the energy symbol word."
+    And I should see "The speed of light symbol is"

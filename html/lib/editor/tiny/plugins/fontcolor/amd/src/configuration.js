@@ -22,7 +22,7 @@
  */
 
 import {addMenubarItem, addContextmenuItem, addToolbarButtons} from 'editor_tiny/utils';
-import {forecolor, backcolor} from './common';
+import {forecolor, backcolor, pluginName} from './common';
 
 const configureToolbar = (toolbar) => {
     toolbar = addToolbarButtons(toolbar, 'formatting', [forecolor, backcolor]);
@@ -42,11 +42,48 @@ const configureContextMenu = (menu) => {
     return addContextmenuItem(menu, '|', forecolor, backcolor);
 };
 
-export const configure = (instanceConfig) => {
+// The default table context toolbar (see the table plugin's defaultTableToolbar). We re-declare it
+// here because table_toolbar is read at plugin setup time, so the swatch buttons must be part of the
+// initial editor config rather than set later on the 'init' event.
+const defaultTableToolbar = 'tableprops tabledelete '
+    + '| tableinsertrowbefore tableinsertrowafter tabledeleterow '
+    + '| tableinsertcolbefore tableinsertcolafter tabledeletecol';
+
+// The plugin's own settings are not merged into instanceConfig until after configure() runs
+// (see editor.js getEditorConfiguration). They are, however, available on the second argument
+// under options.plugins[pluginName].config, keyed by the bare option name.
+const getPluginConfig = (options) => options?.plugins?.[pluginName]?.config ?? {};
+
+// Whether the given plugin colour list option holds at least one colour.
+const hasColors = (pluginConfig, name) => Array.isArray(pluginConfig[name]) && pluginConfig[name].length > 0;
+
+// Add the per-field colour swatch buttons that consume table_background_color_map / table_border_color_map.
+// Only do so when the "use for table" setting is on and the matching colour list actually has entries;
+// an empty map would make the table plugin fall back to the default palette (see dialoguecolors.js).
+const configureTableToolbar = (tableToolbar, pluginConfig) => {
+    const base = tableToolbar || defaultTableToolbar;
+    if (!pluginConfig.usefortable) {
+        return base;
+    }
+    const additionalButtons = [];
+    // Text colours act as border colours, background colours as cell background colours.
+    if (hasColors(pluginConfig, 'textcolors')) {
+        additionalButtons.push('tablecellbordercolor');
+    }
+    if (hasColors(pluginConfig, 'backgroundcolors')) {
+        additionalButtons.push('tablecellbackgroundcolor');
+    }
+    return additionalButtons.length === 0 ? base : `${base} | ${additionalButtons.join(' ')}`;
+};
+
+export const configure = (instanceConfig, options) => {
+    const pluginConfig = getPluginConfig(options);
     return {
         toolbar: configureToolbar(instanceConfig.toolbar),
         menu: configureMenu(instanceConfig.menu),
         // eslint-disable-next-line camelcase
         quickbars_selection_toolbar: configureContextMenu(instanceConfig.quickbars_selection_toolbar),
+        // eslint-disable-next-line camelcase
+        table_toolbar: configureTableToolbar(instanceConfig.table_toolbar, pluginConfig),
     };
 };

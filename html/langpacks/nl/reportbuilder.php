@@ -115,6 +115,7 @@ $string['editscheduledetails'] = 'Bewerk planningdetails';
 $string['editschedulename'] = 'Bewerk planningnaam';
 $string['enablecustomreports'] = 'Aangepaste rapporten inschakelen';
 $string['enablecustomreports_desc'] = 'Indien ingeschakeld, kunnen gebruikers aangepaste rapporten maken en bekijken voor het maken van rapporten.';
+$string['enabled'] = 'Ingeschakeld';
 $string['enableschedule'] = 'Schema inschakelen';
 $string['entitycourse'] = 'Cursus';
 $string['entityuser'] = 'Gebruiker';

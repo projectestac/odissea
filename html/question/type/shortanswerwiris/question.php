@@ -350,7 +350,8 @@ implements question_automatically_gradable, question_response_answer_comparer {
 
     private function is_empty_mathml(string $mathml) {
         return $mathml == '<math xmlns="http://www.w3.org/1998/Math/MathML"/>'
-            || $mathml == '<math xmlns="http://www.w3.org/1998/Math/MathML"></math>';
+            || $mathml == '<math xmlns="http://www.w3.org/1998/Math/MathML"></math>'
+            || $mathml == '<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow/><annotation encoding="application/vnd.wiris.mtweb-strokes+json">{"x":[],"y":[],"t":[],"version":"2.0.0"}</annotation></semantics></math>';
     }
 
     public function is_gradable_response(array $response) {

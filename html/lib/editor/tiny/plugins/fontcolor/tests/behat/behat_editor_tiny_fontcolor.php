@@ -32,6 +32,8 @@
 require_once(__DIR__ . '/../../../../../../behat/behat_base.php');
 require_once(__DIR__ . '/../../../../tests/behat/editor_tiny_helpers.php');
 
+use Behat\Mink\Exception\ExpectationException;
+
 /**
  * Extends general TinyMCE test to test the tiny_fontcolor plugin.
  */
@@ -134,5 +136,45 @@ class behat_editor_tiny_fontcolor extends behat_base {
 
         $item = $openmenu->find('css', "[aria-label='{$this->color}'][role^='menuitemradio']");
         $this->execute('behat_general::i_click_on', [$item, 'NodeElement']);
+    }
+
+    /**
+     * Check whether a defined colour is offered in the table dialogue colour pickers.
+     *
+     * This reads the colour map the editor was initialised with rather than driving the
+     * dialogue UI, so it asserts the actual contract: the configured palette reaches the
+     * table border/background colour pickers. Those dialogue pickers read TinyMCE's
+     * editor-wide table_{border,background}_color_map option, which is set by the fontcolor plugin.
+     *
+     * phpcs:disable
+     * @Then /^the "(?P<locator_string>(?:[^"]|\\")*)" TinyMCE editor (?P<negate_string>should|should not) offer "(?P<color_string>(?:[^"]|\\")*)" as a table (?P<type_string>border|background) colour$/
+     * phpcs:enable
+     *
+     * @param string $locator The locator for the editor
+     * @param string $negate Either "should" or "should not"
+     * @param string $color The colour name to look for
+     * @param string $type Either "border" or "background"
+     */
+    public function the_editor_offers_table_color(string $locator, string $negate, string $color, string $type): void {
+        $this->require_tiny_tags();
+
+        $editorid = $this->get_textarea_for_locator($locator)->getAttribute('id');
+
+        $js = "resolve(instance.options.get('table_{$type}_color_map') || []);";
+        $colours = $this->evaluate_javascript_for_editor($editorid, $js);
+        $offered = is_array($colours) && in_array($color, array_merge(...array_map('array_values', $colours)), true);
+
+        if ($negate === 'should' && !$offered) {
+            throw new ExpectationException(
+                "The editor does not offer '{$color}' as a table {$type} colour.",
+                $this->getSession()
+            );
+        }
+        if ($negate === 'should not' && $offered) {
+            throw new ExpectationException(
+                "The editor unexpectedly offers '{$color}' as a table {$type} colour.",
+                $this->getSession()
+            );
+        }
     }
 }

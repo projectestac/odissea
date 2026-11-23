@@ -64,3 +64,5 @@ $string['cleanupdbok'] = 'Очистка';
 $string['date_1st_name'] = 'день';
 $string['date_2nd_name'] = 'месяц';
 $string['date_3rd_name'] = 'год';
+$string['oldsessionmethod'] = 'Старый метод';
+$string['page_column_size_desc'] = '';

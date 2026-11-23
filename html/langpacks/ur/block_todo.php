@@ -26,7 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['placeholder'] = 'آپ کو کیا کرنے کی ضرورت ہے؟';
-$string['placeholdermore'] = 'یہاں کچھ ٹائپ کریں اور ایڈ بٹن دبائیں';
 $string['pluginname'] = 'میری ToDo فہرست';
 $string['privacy:metadata:db:blocktodo'] = 'صارفین کی ٹوڈو آئٹمز کا ذخیرہ۔';
 $string['privacy:metadata:db:blocktodo:done'] = 'کیا آئٹم کو مکمل کے بطور نشان زد کیا گیا ہے۔';

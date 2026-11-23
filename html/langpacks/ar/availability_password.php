@@ -35,7 +35,6 @@ $string['passwordprotection'] = 'الحماية بكلمة مرور';
 $string['pluginname'] = 'التقييد بكلمة مرور';
 $string['privacy:metadata:availability_password_grant:cmid'] = 'مُعرَّف وحدة المقرر الدراسي الذي تم فيه إدخال كلمة المرور';
 $string['privacy:metadata:availability_password_grant:courseid'] = 'مُعرَّف المقرر الدراسي الذي تم فيه إدخال كلمة المرور';
-$string['privacy:metadata:availability_password_grant:password'] = 'كلمة المرور التي تم إدخالها';
 $string['privacy:metadata:availability_password_grant:userid'] = 'مُعرَّف المستخدم الذي أدخل كلمة المرور';
 $string['rememberpassword'] = 'تذكَّر كلمة المرور المُدخلة';
 $string['requires_nopassword'] = 'لم تقم بإدخال كلمة المرور الصحيحة';

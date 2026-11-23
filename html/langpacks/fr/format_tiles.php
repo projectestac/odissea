@@ -301,7 +301,7 @@ $string['outcomesunavailable'] = 'Résultats non disponibles';
 $string['overall'] = 'Global';
 $string['overallprogress'] = 'Achèvement d’activité - progression générale';
 $string['overallprogressshort'] = 'Progression générale';
-$string['photoguidance_desc'] = '<p>Importez une photo au format <strong>paysage</strong>. La largeur doit être d’environ 1,35 fois la hauteur. Par exemple : largeur 270 x  hauteur 200 conviendraient bien. Ce rapport n’a pas besoin d’être exact. </p>
+$string['photoguidance_desc'] = '<p>Importez une photo au format <strong>paysage</strong>. La largeur doit être d’environ 1,35 fois la hauteur. Par exemple : largeur 270 x hauteur 200 conviendraient bien. Ce rapport n’a pas besoin d’être exact.</p>
 <p>Les photos au format portrait ne correspondront pas à la forme de la tuile. Les images ou fichiers volumineux seront réduits et compressés si nécessaire, après le téléchargement.</p>';
 $string['photolibrary'] = 'Galerie photo';
 $string['photolibrary_desc'] = 'Ce sont les photos que vous avez téléchargées ou utilisées récemment. Pour en utiliser une comme arrière-plan de cette tuile, cliquez dessus. Pour en télécharger une nouvelle, utilisez l’onglet de téléchargement ci-dessus.';

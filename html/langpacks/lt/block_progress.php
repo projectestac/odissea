@@ -122,7 +122,7 @@ $string['viewed'] = 'peržiūrėta';
 $string['what_actions_can_be_monitored'] = 'Kurie veiksmai gali būti stebimi?';
 $string['what_actions_can_be_monitored_help'] = '<p>Galima stebėti skirtingas veiklas ir resursus</p>
 <p>Kadangi skirtingos veiklos ir resursai gali būti naudojami skirtingais būdais, tai kas bus stebima kiekviename modulyje skirsis. Pavyzdžiui, užduotyse gali būti stebimos pateiktys; testuose gali būti stebimi bandymai; forumuose galima stebėti besimokančiųjų pranešimus; pasirinkimo veiklose galima stebėti atsakymus ir peržiūrėtus resursus.</p>
-<p>Užduoties ir testo moduliuose atlikimo fiksavimas priklauso nuo "Įvertinimo įveikimui" nustatymo įverčių knygelėje.<a href="http://docs.moodle.org/en/Grade_items#Activity-based_grade_items" target="_blank">More help...</a></p>';
+<p>Užduoties ir testo moduliuose atlikimo fiksavimas priklauso nuo "Įvertinimo įveikimui" nustatymo įverčių knygelėje. <a href="http://docs.moodle.org/en/Grade_items#Activity-based_grade_items" target="_blank">More help...</a></p>';
 $string['what_does_monitored_mean'] = 'Ką reiškia stebėjimas?';
 $string['what_does_monitored_mean_help'] = '<p>Šio bloko paskirtis, padrąsinti besimokančiuosius valdyti savo laiką efektyviai. Kiekvienas besimokantysis gali stebėti savo progresą atlikdamas sukurtas veiklas ir resursus. </p>
 <p>Nustatymo puslapyje Jūs pamatysite sąrašą modulių, kurie buvo sukurti ir gali būti stebimi "Progreso juostos" bloko pagalba. Moduliai taps stebimi ir bus rodomi kaip kvadratėliai "Progreso juostoje" tik tada, kai Jūs  pasirinksite "Taip" modulio stebėjimui.</p>';

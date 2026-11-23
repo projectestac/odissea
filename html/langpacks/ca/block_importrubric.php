@@ -26,9 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['errornoid'] = 'No s\'ha trobat l\'ID';
-$string['importfromcsv'] = 'Importa una rúbrica des d\'un CSV';
-$string['importrubric:addinstance'] = 'Afegeix un bloc per importar rúbriques a la pàgina';
-$string['importrubric:myaddinstance'] = 'Afegeix un bloc per importar rúbriques a la pàgina El meu Moodle';
-$string['onlyintask'] = 'Aquest bloc només està disponible dins d\'una activitat de tipus Tasca.';
-$string['pluginname'] = 'Importa rúbriques des de CSV';
+$string['importfromcsv'] = 'Importa rúbriques des d\'un CSV';
+$string['importrubric:addinstance'] = 'Afegeix un bloc nou d\'importació de rúbriques a una pàgina';
+$string['importrubric:myaddinstance'] = 'Afegeix un bloc nou d\'importació de rúbriques a la pàgina El meu Moodle';
+$string['onlyintask'] = 'Aquest bloc només està disponible dins d\'una activitat de tipus tasca.';
+$string['pluginname'] = 'Importa rúbriques des d\'un CSV';
 $string['privacy:metadata'] = 'El bloc d\'importació de rúbriques no emmagatzema cap dada personal.';

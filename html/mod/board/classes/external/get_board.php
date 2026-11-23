@@ -137,7 +137,7 @@ final class get_board extends external_api {
                 $params['ownerid'] = $ownerid;
             }
 
-            $notes = $DB->get_records('board_notes', $params);
+            $notes = $DB->get_records('board_notes', $params, 'sortorder ASC');
             $column->notes = [];
             foreach ($notes as $note) {
                 $note = note::format_for_display($note, $column, $board, $context);

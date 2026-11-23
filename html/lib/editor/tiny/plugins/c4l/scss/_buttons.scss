@@ -3,8 +3,8 @@
 .c4l-plugin-container {
     display: block;
     padding: 1rem;
-    background-color: #f6f7f8;
-    border: 1px solid #dee2e6;
+    background-color: var(--c4l-ui-page);
+    border: 1px solid var(--c4l-ui-page-border);
 }
 
 .c4l-buttons-filters {
@@ -20,8 +20,8 @@
 
 .c4l-select-filter {
     grid-column: 1 / -1;
-    background-color: #fff;
-    border: 1px solid #dfe2e5;
+    background-color: var(--c4l-ui-surface);
+    border: 1px solid var(--c4l-ui-border);
     border-radius: 7px;
     padding: 17px;
     width: 100%;
@@ -37,20 +37,20 @@
 }
 
 .c4l-button-filter {
-    background-color: #fff;
-    border: 1px solid #dfe2e5;
+    background-color: var(--c4l-ui-surface);
+    border: 1px solid var(--c4l-ui-border);
     padding: 10px 16px;
     font-weight: 500;
     font-size: 10.5px;
     line-height: 12px;
     letter-spacing: 0.05em;
-    color: #424b62;
+    color: var(--c4l-ui-text-strong);
     text-transform: uppercase;
 }
 
 .c4l-button-filter:hover,
 .c4l-button-filter.c4l-button-filter-enabled {
-    background-color: #e7ebef;
+    background-color: var(--c4l-ui-raised);
 }
 
 .c4l-button-filter:first-child {
@@ -91,10 +91,10 @@
     max-height: 100px;
     width: 100%;
     max-width: 100%;
-    background-color: #fff;
-    border: 1px solid #e4e9ec;
-    color: #535d76;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.10);
+    background-color: var(--c4l-ui-surface);
+    border: 1px solid var(--c4l-ui-button-border);
+    color: var(--c4l-ui-text);
+    box-shadow: 0 0 6px 0 var(--c4l-ui-shadow);
     overflow-wrap: anywhere;
     overflow: hidden;
     padding: 0;
@@ -110,7 +110,7 @@
     min-width: 49px;
     top: auto;
     left: 0;
-    border-right: 1px solid #dce3f0;
+    border-right: 1px solid var(--c4l-ui-divider);
 }
 
 .c4lt-dialog-button .c4l-button-text {
@@ -129,12 +129,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 1px solid #dce3f0;
+    border-right: 1px solid var(--c4l-ui-divider);
 }
 
 .c4lt-dialog-button:hover,
 .c4lt-dialog-button:active {
-    box-shadow: inset 0 0 3px rgba(22, 121, 249, 0.3);
+    box-shadow: inset 0 0 3px var(--c4l-ui-focus);
 }
 
 .c4lt-dialog-button .c4l-button-text {
@@ -149,7 +149,7 @@
 .c4l-modal-aside {
     display: none;
     overflow: hidden;
-    background-color: #fff;
+    background-color: var(--c4l-ui-surface);
 }
 
 .c4l-aside-header {
@@ -162,23 +162,23 @@
     font-size: 9.5px;
     line-height: 11px;
     letter-spacing: 0.06em;
-    color: #535d76;
-    background-color: #fff;
-    border: 1px solid #535d76;
+    color: var(--c4l-ui-text);
+    background-color: var(--c4l-ui-surface);
+    border: 1px solid var(--c4l-ui-tab-border);
     padding: 5px 8px;
     text-transform: uppercase;
     cursor: pointer;
 
     &:hover {
-        background-color: #e7ebee;
+        background-color: var(--c4l-ui-raised);
     }
 
     &.c4l-tab-active {
-        color: #fff;
-        background-color: #535d76;
+        color: var(--c4l-ui-tab-active-ink);
+        background-color: var(--c4l-ui-tab-active-bg);
 
         &:hover {
-            background-color: #535d76;
+            background-color: var(--c4l-ui-tab-active-bg);
         }
     }
 }
@@ -250,7 +250,7 @@
 }
 
 .c4l-keyconcept-icon .c4l-button-text::before {
-    content: url([[pix:tiny_c4l|noun_project_icons/c4l_keyconcept_icon]]);
+    @include c4l-mask-glyph(url([[pix:tiny_c4l|noun_project_icons/c4l_keyconcept_icon]]), 18px, 18px, var(--c4l-ui-icon-contextual));
 }
 
 .c4l-tip-icon::before {
@@ -258,7 +258,7 @@
 }
 
 .c4l-tip-icon .c4l-button-text::before {
-    content: url([[pix:tiny_c4l|noun_project_icons/c4l_tip_icon]]);
+    @include c4l-mask-glyph(url([[pix:tiny_c4l|noun_project_icons/c4l_tip_icon]]), 12px, 18px, var(--c4l-ui-icon-contextual));
 }
 
 .c4l-reminder-icon::before {
@@ -266,7 +266,7 @@
 }
 
 .c4l-reminder-icon .c4l-button-text::before {
-    content: url([[pix:tiny_c4l|noun_project_icons/c4l_reminder_icon]]);
+    @include c4l-mask-glyph(url([[pix:tiny_c4l|noun_project_icons/c4l_reminder_icon]]), 15px, 18px, var(--c4l-ui-icon-contextual));
 }
 
 .c4l-attention-icon::before {
@@ -274,7 +274,7 @@
 }
 
 .c4l-attention-icon .c4l-button-text::before {
-    content: url([[pix:tiny_c4l|c4l_attention_icon]]);
+    @include c4l-mask-glyph(url([[pix:tiny_c4l|c4l_attention_icon]]), 20px, 20px, var(--c4l-ui-icon-procedural));
 }
 
 .c4l-quote-icon::before {
@@ -282,7 +282,7 @@
 }
 
 .c4l-quote-icon .c4l-button-text::before {
-    content: url([[pix:tiny_c4l|noun_project_icons/c4l_quote_icon]]);
+    @include c4l-mask-glyph(url([[pix:tiny_c4l|noun_project_icons/c4l_quote_icon]]), 19px, 18px, var(--c4l-ui-icon-contextual));
 }
 
 .c4l-dodontcards-icon::before {
@@ -290,7 +290,7 @@
 }
 
 .c4l-dodontcards-icon .c4l-button-text::before {
-    content: url([[pix:tiny_c4l|c4l_dodontcards_icon]]);
+    @include c4l-mask-glyph(url([[pix:tiny_c4l|c4l_dodontcards_icon]]), 24px, 18px, var(--c4l-ui-icon-contextual));
 }
 
 .c4l-readingcontext-icon::before {
@@ -298,7 +298,7 @@
 }
 
 .c4l-readingcontext-icon .c4l-button-text::before {
-    content: url([[pix:tiny_c4l|noun_project_icons/c4l_readingcontext_icon]]);
+    @include c4l-mask-glyph(url([[pix:tiny_c4l|noun_project_icons/c4l_readingcontext_icon]]), 24px, 18px, var(--c4l-ui-icon-contextual));
 }
 
 .c4l-example-icon::before {
@@ -306,7 +306,7 @@
 }
 
 .c4l-example-icon .c4l-button-text::before {
-    content: url([[pix:tiny_c4l|c4l_example_icon]]);
+    @include c4l-mask-glyph(url([[pix:tiny_c4l|c4l_example_icon]]), 14px, 18px, var(--c4l-ui-icon-contextual));
 }
 
 .c4l-figure-icon::before {
@@ -314,7 +314,7 @@
 }
 
 .c4l-figure-icon .c4l-button-text::before {
-    content: url([[pix:tiny_c4l|c4l_figure_icon]]);
+    @include c4l-mask-glyph(url([[pix:tiny_c4l|c4l_figure_icon]]), 20px, 18px, var(--c4l-ui-icon-contextual));
 }
 
 .c4l-tag-icon::before {
@@ -322,7 +322,7 @@
 }
 
 .c4l-tag-icon .c4l-button-text::before {
-    content: url([[pix:tiny_c4l|noun_project_icons/c4l_tag_icon]]);
+    @include c4l-mask-glyph(url([[pix:tiny_c4l|noun_project_icons/c4l_tag_icon]]), 18px, 18px, var(--c4l-ui-icon-contextual));
 }
 
 /* Procedural components buttons */
@@ -332,7 +332,7 @@
 }
 
 .c4l-estimatedtime-icon .c4l-button-text::before {
-    content: url([[pix:tiny_c4l|noun_project_icons/c4l_estimatedtime_icon]]);
+    @include c4l-mask-glyph(url([[pix:tiny_c4l|noun_project_icons/c4l_estimatedtime_icon]]), 18px, 18px, var(--c4l-ui-icon-procedural));
 }
 
 .c4l-duedate-icon::before {
@@ -340,7 +340,7 @@
 }
 
 .c4l-duedate-icon .c4l-button-text::before {
-    content: url([[pix:tiny_c4l|noun_project_icons/c4l_duedate_icon]]);
+    @include c4l-mask-glyph(url([[pix:tiny_c4l|noun_project_icons/c4l_duedate_icon]]), 18px, 18px, var(--c4l-ui-icon-procedural));
 }
 
 .c4l-proceduralcontext-icon::before {
@@ -348,7 +348,7 @@
 }
 
 .c4l-proceduralcontext-icon .c4l-button-text::before {
-    content: url([[pix:tiny_c4l|c4l_proceduralcontext_icon]]);
+    @include c4l-mask-glyph(url([[pix:tiny_c4l|c4l_proceduralcontext_icon]]), 23px, 18px, var(--c4l-ui-icon-procedural));
 }
 
 .c4l-learningoutcomes-icon::before {
@@ -356,7 +356,7 @@
 }
 
 .c4l-learningoutcomes-icon .c4l-button-text::before {
-    content: url([[pix:tiny_c4l|c4l_learningoutcomes_icon]]);
+    @include c4l-mask-glyph(url([[pix:tiny_c4l|c4l_learningoutcomes_icon]]), 22px, 16px, var(--c4l-ui-icon-procedural));
 }
 
 .c4l-conceptreview-icon::before {
@@ -364,7 +364,7 @@
 }
 
 .c4l-conceptreview-icon .c4l-button-text::before {
-    content: url([[pix:tiny_c4l|c4l_conceptreview_icon]]);
+    @include c4l-mask-glyph(url([[pix:tiny_c4l|c4l_conceptreview_icon]]), 16px, 16px, var(--c4l-ui-icon-contextual));
 }
 
 .c4l-furtherreading-icon::before {
@@ -372,7 +372,7 @@
 }
 
 .c4l-furtherreading-icon .c4l-button-text::before {
-    content: url([[pix:tiny_c4l|c4l_furtherreading_icon]]);
+    @include c4l-mask-glyph(url([[pix:tiny_c4l|c4l_furtherreading_icon]]), 14px, 14px, var(--c4l-ui-icon-contextual));
 }
 
 /* Evaluative components buttons */
@@ -382,7 +382,7 @@
 }
 
 .c4l-gradingvalue-icon .c4l-button-text::before {
-    content: url([[pix:tiny_c4l|noun_project_icons/c4l_gradingvalue_icon]]);
+    @include c4l-mask-glyph(url([[pix:tiny_c4l|noun_project_icons/c4l_gradingvalue_icon]]), 20px, 18px, var(--c4l-ui-icon-evaluative));
 }
 
 .c4l-aiuseallowed-icon::before {
@@ -390,7 +390,7 @@
 }
 
 .c4l-aiuseallowed-icon .c4l-button-text::before {
-    content: url([[pix:tiny_c4l|noun_project_icons/c4l_aiuseallowed_icon]]);
+    @include c4l-mask-glyph(url([[pix:tiny_c4l|noun_project_icons/c4l_aiuseallowed_icon]]), 19px, 19px, var(--c4l-ui-icon-evaluative));
 }
 
 .c4l-aiusenotallowed-icon::before {
@@ -398,7 +398,7 @@
 }
 
 .c4l-aiusenotallowed-icon .c4l-button-text::before {
-    content: url([[pix:tiny_c4l|noun_project_icons/c4l_aiusenotallowed_icon]]);
+    @include c4l-mask-glyph(url([[pix:tiny_c4l|noun_project_icons/c4l_aiusenotallowed_icon]]), 19px, 19px, var(--c4l-ui-icon-evaluative));
 }
 
 .c4l-aiusereported-icon::before {
@@ -406,7 +406,7 @@
 }
 
 .c4l-aiusereported-icon .c4l-button-text::before {
-    content: url([[pix:tiny_c4l|noun_project_icons/c4l_aiusereported_icon]]);
+    @include c4l-mask-glyph(url([[pix:tiny_c4l|noun_project_icons/c4l_aiusereported_icon]]), 19px, 19px, var(--c4l-ui-icon-evaluative));
 }
 
 .c4l-expectedfeedback-icon::before {
@@ -414,7 +414,7 @@
 }
 
 .c4l-expectedfeedback-icon .c4l-button-text::before {
-    content: url([[pix:tiny_c4l|noun_project_icons/c4l_expectedfeedback_icon]]);
+    @include c4l-mask-glyph(url([[pix:tiny_c4l|noun_project_icons/c4l_expectedfeedback_icon]]), 20px, 18px, var(--c4l-ui-icon-evaluative));
 }
 
 /* Helper components buttons */
@@ -424,7 +424,7 @@
 }
 
 .c4l-allpurposecard-icon .c4l-button-text::before {
-    content: url([[pix:tiny_c4l|c4l_allpurposecard_icon]]);
+    @include c4l-mask-glyph(url([[pix:tiny_c4l|c4l_allpurposecard_icon]]), 17px, 18px, var(--c4l-ui-icon-helper));
 }
 
 .c4l-inlinetag-icon::before {
@@ -432,5 +432,5 @@
 }
 
 .c4l-inlinetag-icon .c4l-button-text::before {
-    content: url([[pix:tiny_c4l|c4l_inlinetag_icon]]);
+    @include c4l-mask-glyph(url([[pix:tiny_c4l|c4l_inlinetag_icon]]), 26px, 18px, var(--c4l-ui-icon-contextual));
 }

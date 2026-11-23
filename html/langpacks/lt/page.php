@@ -32,7 +32,7 @@ $string['createpage'] = 'Sukurti naują puslapio išteklių';
 $string['displayoptions'] = 'Galimos rodymo parinktys';
 $string['displayselect'] = 'Rodyti';
 $string['displayselectexplain'] = 'Pasirinkite rodymo tipą.';
-$string['indicator:cognitivedepth'] = 'Kognityvisnis puslapis';
+$string['indicator:cognitivedepth'] = 'Kognityvinis puslapis';
 $string['indicator:cognitivedepth_help'] = 'Šis rodiklis pagrįstas pažinimo gyliu, kurį besimokantysis pasiekia Puslapio šaltinyje.';
 $string['indicator:cognitivedepthdef'] = 'Kognityvinis puslapis';
 $string['indicator:cognitivedepthdef_help'] = 'Dalyvis per šį analizės intervalą pasiekė šį kognityvinio įsitraukimo procentą, kurį siūlo Puslapio ištekliai (Lygiai = Nėra peržiūros, Peržiūra)';

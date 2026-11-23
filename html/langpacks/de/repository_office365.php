@@ -26,7 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configplugin'] = 'Microsoft 365 Repository konfigurieren';
-$string['coursegroup'] = 'Gruppen (Kurse) Ordner in der Dateiauswahl deaktivieren';
 $string['defaultgroupsfolder'] = 'Kurs-Dateien';
 $string['erroraccessdenied'] = 'Zugriff verweigert';
 $string['errorauthoidcnotconfig'] = 'Bitte konfigurieren Sie OpenID Connect Authentifizierung, bevor Sie das Microsoft 365 Repository verwenden.';
@@ -40,7 +39,6 @@ $string['groups'] = 'Gruppen (Kurse)';
 $string['myfiles'] = 'Mein OneDrive';
 $string['notconfigured'] = '<p class="error">Um dieses Plugin zu vewenden, müssen zuerst die <a href="{$a}/admin/settings.php?section=local_o365">Microsoft 365 Plugins</a> konfiguriert werden.</p>';
 $string['office365:view'] = 'Microsoft 365 Repository anzeigen';
-$string['onedrivegroup'] = 'Mein OneDrive Ordner in der Dateiauswahl deaktivieren';
 $string['pluginname'] = 'Microsoft 365';
 $string['pluginname_help'] = 'Ein Microsoft 365 Repository';
 $string['privacy:metadata'] = 'Dieses Plugin kommuniziert mit der Microsoft 365 OneDrive API über den/die aktuelle/n Nutzer/in. Alle hochgeladenen Dateien werden an den Remote Server gesendet.';

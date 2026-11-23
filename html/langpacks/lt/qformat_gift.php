@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['braceerror'] = 'Nepavyko rasti {...} klausimuose';
 $string['giftleftbraceerror'] = 'Nepavyko rasti {';
 $string['giftmatchingformat'] = 'Atsakymų derinimas neteisingai formatuotas';
-$string['giftnonumericalanswers'] = 'Nerastas skaitmeninis atsakymas';
+$string['giftnonumericalanswers'] = 'Nerasta atsakymų į skaičiavimo uždavinį';
 $string['giftnovalidquestion'] = 'Nerastas galiojantis klausimas';
 $string['giftqtypenotset'] = 'Nenustatytas klausimo tipas';
 $string['giftrightbraceerror'] = 'Nepavyko rasto }';

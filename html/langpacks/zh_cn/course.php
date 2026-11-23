@@ -81,8 +81,7 @@ $string['coursecontentnotifnewbody'] = '<p>{$a->moduletypename} <a href=""{$a->l
 是课程中的新内容 <a href=""{$a->courselink}"">{$a->coursename}</a>.
 </p><p><a href=""{$a->notificationpreferenceslink}"">更改您的通知偏好</a></p>';
 $string['coursecontentnotifupdate'] = '{$a->coursename} 内容更改';
-$string['coursecontentnotifupdatebody'] = '<p>{$a->moduletypename} <a href=""{$a->link}"">{$a->modulename}</a>
-在课程中已更改 <a href=""{$a->courselink}"">{$a->coursename}</a>.</p><p><a href=""{$a->notificationpreferenceslink}"">更改您的通知偏好</a></p>';
+$string['coursecontentnotifupdatebody'] = '<p>课程 <a href=""{$a->courselink}"">{$a->coursename}</a>中的{$a->moduletypename} <a href=""{$a->link}"">{$a->modulename}的内容或要求已发生变化，请及时查阅。</a></p><p><a href=""{$a->notificationpreferenceslink}"">更改您的通知偏好</a></p>';
 $string['coursecount'] = '课程数';
 $string['coursenotyetfinished'] = '课程还没有结束';
 $string['coursenotyetstarted'] = '课程还没有开始';

@@ -113,6 +113,7 @@ $string['gotosection'] = 'Перейти в секцию {$a}';
 $string['gradetopassnotset'] = 'В этом курсе нет проходных оценок. Их можно задать в элементах оценок курса (настройка Журнала уоценок).';
 $string['hideendedcoursestask'] = 'Скрыть курсы в день окончания';
 $string['informationformodule'] = 'Информация о модуле {$a}';
+$string['locked'] = 'Заблокировано';
 $string['module'] = 'Элемент';
 $string['namewithlink'] = 'Название категории со ссылкой';
 $string['noaccesssincestartinfomessage'] = 'Здравствуйте, {$a->userfirstname}!

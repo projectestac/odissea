@@ -97,6 +97,20 @@ $formdata = (object)[
     'groupid' => $groupid,
 ];
 
+// Set up the images filearea.
+$pickeroptions = note::get_image_picker_options();
+$draftitemid = file_get_submitted_draft_itemid('imagefile');
+file_prepare_draft_area($draftitemid, $context->id, 'mod_board', 'images', null, $pickeroptions);
+$formdata->imagefile = $draftitemid;
+
+// Set up the files filearea.
+$pickeroptions = note::get_general_picker_options();
+if ($pickeroptions) {
+    $draftitemid = file_get_submitted_draft_itemid('generalfile');
+    file_prepare_draft_area($draftitemid, $context->id, 'mod_board', 'files', null, $pickeroptions);
+    $formdata->generalfile = $draftitemid;
+}
+
 $form = new note_edit(null, ['data' => $formdata, 'formatted' => null, 'column' => $column, 'board' => $board]);
 
 if ($form->is_cancelled()) {

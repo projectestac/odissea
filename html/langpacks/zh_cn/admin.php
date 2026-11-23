@@ -1323,6 +1323,7 @@ $string['settingmaxinputvars'] = '建议PHP设置max_input_vars至少为5000。'
 $string['settingmaxinputvarsrequired'] = 'PHP设置最大输入变量必须至少为5000。';
 $string['settingmemorylimit'] = '内存不够用，请在PHP设置中设定更高的内存限制。';
 $string['settingsafemode'] = 'Moodle和安全模式不完全兼容。请让服务器管理员关闭安全模式。在安全模式下运行Moodle不会获得支持。如果您坚持这么做，那么敬请期待各种问题。';
+$string['settingzendexceptionignoreargs'] = '出于安全考虑，强烈建议启用 PHP 设置 zend.exception_ignore_args。';
 $string['setupsearchengine'] = '设置搜索引擎';
 $string['showcommentscount'] = '显示评论数';
 $string['showdetails'] = '显示细节';

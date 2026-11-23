@@ -112,6 +112,7 @@ $string['gotosection'] = 'Ir para a secção {$a}';
 $string['gradetopassnotset'] = 'Esta disciplina não tem nota de aprovação definida. Pode ser definida em Avaliação da disciplina (Configuração da pauta).';
 $string['hideendedcoursestask'] = 'Ocultação de disciplinas na data de fim';
 $string['informationformodule'] = 'Informações sobre a atividade {$a}';
+$string['locked'] = 'Bloqueado';
 $string['module'] = 'Atividade';
 $string['namewithlink'] = 'Nome da categoria com hiperligação';
 $string['noaccesssincestartinfomessage'] = 'Olá {$a->userfirstname},

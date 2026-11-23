@@ -30,6 +30,7 @@ $string['cannotfindanyrunforrunid'] = 'Deja, negalima rasti \'{$a}\' profiliavim
 $string['cannotfindanyrunforurl'] = 'Negalima rasti jokio profiliavimo \'{$a}\' URL';
 $string['comment'] = 'Komentaras';
 $string['cputime'] = 'CPU laikas';
+$string['detailview'] = 'Paleidimo santrauka';
 $string['differencesbetween2runsof'] = 'Skirtumai tarp dviejų {$a}';
 $string['executiontime'] = 'Pasileidimo laikas';
 $string['export'] = 'Eksportuoti';

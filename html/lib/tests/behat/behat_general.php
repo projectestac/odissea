@@ -495,6 +495,22 @@ class behat_general extends behat_base {
     }
 
     /**
+     * Sets the focus on an element, generating a focus JS event.
+     *
+     * @When /^I set the focus on the "(?P<element_string>(?:[^"]|\\")*)" "(?P<selector_string>[^"]*)"$/
+     * @param string $element Element we look for
+     * @param string $selectortype The type of what we look for
+     */
+    public function i_set_the_focus_on_the($element, $selectortype) {
+        if (!$this->running_javascript()) {
+            throw new ExpectationException('Can\'t set the focus on "' . $element . '" in non-js mode', $this->getSession());
+        }
+        // Gets the node based on the requested selector type and locator.
+        $node = $this->get_selected_node($selectortype, $element);
+        $node->focus();
+    }
+
+    /**
      * Sets the focus and takes away the focus from an element, generating blur JS event.
      *
      * @When /^I take focus off "(?P<element_string>(?:[^"]|\\")*)" "(?P<selector_string>[^"]*)"$/
@@ -1724,8 +1740,9 @@ EOF;
     /**
      * Given the text of a link, download the linked file and return the contents.
      *
-     * A helper method used by the steps in {@see behat_download}, and the legacy
-     * {@see following_should_download_bytes()} and {@see following_should_download_between_and_bytes()}.
+     * A helper method used by the legacy {@see following_should_download_bytes()} and
+     * {@see following_should_download_between_and_bytes()} steps. New code should use
+     * {@see behat_download::download_file()}, which works with any element, not just links.
      *
      * @param string $link the text of the link.
      * @param string $containerlocator optional container element locator.
@@ -1734,30 +1751,12 @@ EOF;
      * @return string the content of the downloaded file.
      */
     public function download_file_from_link(string $link, string $containerlocator = '', string $containertype = ''): string {
-
-        // Find the link.
-        if ($containerlocator !== '' && $containertype !== '') {
-            $linknode = $this->get_node_in_container('link', $link, $containertype, $containerlocator);
-        } else {
-            $linknode = $this->find_link($link);
-        }
-
-        $this->ensure_node_is_visible($linknode);
-
-        // Get the href and check it.
-        $url = $linknode->getAttribute('href');
-        if (!$url) {
-            throw new ExpectationException('Download link does not have href attribute',
-                    $this->getSession());
-        }
-        if (!preg_match('~^https?://~', $url)) {
-            throw new ExpectationException('Download link not an absolute URL: ' . $url,
-                    $this->getSession());
-        }
-
-        // Download the URL and check the size.
-        $session = $this->getSession()->getCookie('MoodleSession');
-        return download_file_content($url, array('Cookie' => 'MoodleSession=' . $session));
+        return behat_context_helper::get('behat_download')->download_file(
+            $link,
+            $containerlocator,
+            $containertype,
+            'link',
+        );
     }
 
     /**

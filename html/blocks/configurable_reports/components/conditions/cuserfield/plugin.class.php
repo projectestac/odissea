@@ -56,10 +56,10 @@ class plugin_cuserfield extends plugin_base {
         if (strpos($data->field, 'profile_') === 0) {
             $name = $DB->get_field('user_info_field', 'name', ['shortname' => str_replace('profile_', '', $data->field)]);
 
-            return $name . ' ' . $data->operator . ' ' . $data->value;
+            return format_string($name . ' ' . $data->operator . ' ' . $data->value);
         }
 
-        return get_string($data->field) . ' ' . $data->operator . ' ' . $data->value;
+        return format_string(cr_get_field_name($data->field) . ' ' . $data->operator . ' ' . $data->value);
 
     }
 
@@ -73,8 +73,13 @@ class plugin_cuserfield extends plugin_base {
     public function execute($data, $user) {
         global $DB;
         // Data -> Plugin configuration data.
-        // TODO - Use $DB->sql_like().
-        $ilike = " LIKE ";
+
+        // Imported reports do not go through the form, so validate the field and operator again.
+        if (!in_array($data->operator, cr_get_condition_operators(), true) ||
+                in_array($data->field, cr_get_sensitive_user_columns(), true) ||
+                (strpos($data->field, 'profile_') !== 0 && !array_key_exists($data->field, $DB->get_columns('user')))) {
+            return [];
+        }
 
         if (strpos($data->field, 'profile_') === 0) {
 
@@ -84,15 +89,18 @@ class plugin_cuserfield extends plugin_base {
             }
 
             if ($fieldid = $DB->get_field('user_info_field', 'id', ['shortname' => str_replace('profile_', '', $data->field)])) {
+                $value = $data->value;
                 switch ($data->operator) {
                     case 'LIKE % %':
-                        $sql = "fieldid = $fieldid AND data $ilike ?";
-                        $params = ["%$data->value%"];
+                        $sqllike = $DB->sql_like('data', ':cuserdata', false);
+                        $sql = "fieldid = :cuserfield AND {$sqllike}";
+                        // "Contains": wrap in wildcards like 5.2 did, otherwise LIKE behaves as "=".
+                        $value = '%' . $value . '%';
                         break;
                     default:
-                        $sql = "fieldid = $fieldid AND data $data->operator ?";
-                        $params = [$data->value];
+                        $sql = "fieldid = :cuserfield AND data $data->operator :cuserdata";
                 }
+                $params = ['cuserfield' => $fieldid, 'cuserdata' => $value];
 
                 if ($infodata = $DB->get_records_select('user_info_data', $sql, $params)) {
                     $finalusersid = [];
@@ -110,8 +118,9 @@ class plugin_cuserfield extends plugin_base {
 
             switch ($data->operator) {
                 case 'LIKE % %':
-                    $sql = "$data->field $ilike ?";
-                    $params = ["%$data->value%"];
+                    $sql = $DB->sql_like($data->field, '?', false);
+                    // "Contains": wrap in wildcards like 5.2 did, otherwise LIKE behaves as "=".
+                    $params = ['%' . $data->value . '%'];
                     break;
                 default:
                     $sql = "$data->field $data->operator ?";

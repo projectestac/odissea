@@ -1501,7 +1501,7 @@ $string['newloginnotificationtitle'] = 'Nieuwe login geregistreerd van je {$a} a
 $string['newpassword'] = 'Nieuw wachtwoord';
 $string['newpassword_help'] = 'Laat dit veld leeg om het huidige wachtwoord te behouden.';
 $string['newpasswordfromlost'] = '<strong>OPMERKING:</strong> Je <strong>huidige wachtwoord</strong> zal je toegestuurd worden in de <strong>tweede</strong> van de twee e-mails die je toegestuurd worden voor het terugkrijgen van je wachtwoord. Zorg er voor dat je je nieuwe wachtwoord gekregen hebt voor je verder gaat met dit scherm.';
-$string['newpasswordtext'] = 'Beste {$a->firstname},
+$string['newpasswordtext'] = 'este {$a->firstname},
 
 Het wachtwoord voor je account op \'{$a->sitename}\' is gereset en je hebt een nieuw tijdelijk wachtwoord gekregen.
 
@@ -1515,9 +1515,6 @@ Ga naar deze pagina om je wachtwoord te wijzigen:
 In de meeste mailprogramma\'s kun je op de bovenstaande link klikken. Als dat niet lukt kun je het adres op knippen en plakken in het adresveld van je browservenster.
 
 Veel succes en met vriendelijke groet,
-
-{$a->signoff}
-(Beheerder van \'{$a->sitename}\')
 
 {$a->signoff}';
 $string['newpicture'] = 'Nieuwe foto';

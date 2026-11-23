@@ -94,7 +94,7 @@ $string['backup_shortname'] = 'Usar nome da disciplina no nome do ficheiro da c�
 $string['backup_shortnamehelp'] = 'Usar nome da disciplina como parte do nome do ficheiro da cópia de segurança.';
 $string['backups'] = 'Cópias de segurança';
 $string['badwordsconfig'] = 'Nesta configuração devem ser indicadas as palavras a censurar, separadas por vírgulas.';
-$string['badwordsdefault'] = 'Se a lista personalizada estiver vazia, será utilizada uma lista predefinida do pacote de idiomas.';
+$string['badwordsdefault'] = 'Se a lista personalizada estiver em branco, será utilizada uma lista predefinida do pacote de idiomas.';
 $string['badwordslist'] = 'Lista de palavras a censurar';
 $string['blockediplist'] = 'Lista de IPs bloqueados';
 $string['blockinstances'] = 'Instâncias';
@@ -623,7 +623,7 @@ $string['enablesearchareas'] = 'Permitir áreas de pesquisa';
 $string['enablesharingtomoodlenet'] = 'Ativar partilha no MoodleNet (saída)';
 $string['enablesharingtomoodlenet_desc'] = 'Permitir que os utilizadores partilhem o conteúdo da disciplina numa instância configurada do MoodleNet, se tiverem permissão.';
 $string['enablestats'] = 'Ativar estatísticas';
-$string['enabletrusttext'] = 'Ativar Conteúdo fiável';
+$string['enabletrusttext'] = 'Ativar conteúdo fiável';
 $string['enableuserfeedback'] = 'Ativar feedback acerca deste software';
 $string['enableuserfeedback_desc'] = 'Se ativar esta opção, uma hiperligação \'Dar feedback acerca deste software\' é mostrada no rodapé para que os utilizadores possam  enviar comentários sobre o Moodle LMS para o Moodle HQ. Se a opção \'Lembrete de feedback\' estiver definida, o utilizador também receberá um lembrete no Painel do utilizador no intervalo especificado. Definir \'Lembrete de feedback\' como \'Nunca\' desativa o lembrete do Painel do utilizador mas a hiperligação \'Dar feedback acerca deste software\' permanece no rodapé.';
 $string['enablewebservices'] = 'Ativar web services';
@@ -754,7 +754,7 @@ $string['hookcallbacknotcallable'] = 'Este callback não pode ser chamado. Pode 
 $string['hookcallbacks'] = 'Callbacks';
 $string['hookcallbacks_help'] = 'A lista de callbacks que serão chamados quando o hook for despachado.
 
-A ordem mostrada é a ordem na qual os callback são chamados.
+A ordem mostrada é a ordem pela qual os callback são chamados.
 
 Um callback com prioridade mais alta será chamado antes de outro com prioridade mais baixa.';
 $string['hookclassmissing'] = 'Classe Hook não encontrada';
@@ -881,7 +881,7 @@ $string['managecustomfields'] = 'Gerir tipos de campo personalizados';
 $string['manageformats'] = 'Gerir formatos da disciplina';
 $string['manageformatsgotosettings'] = 'O formato predefinido pode ser alterado em {$a}';
 $string['managelang'] = 'Gerir';
-$string['manageqbanks'] = 'Gerir módulos de base de dados de perguntas';
+$string['manageqbanks'] = 'Gerir módulos da base de dados de perguntas';
 $string['manageqbehaviours'] = 'Gerir comportamentos das perguntas';
 $string['manageqtypes'] = 'Gerir tipos de perguntas';
 $string['marketplaceavailablenotice'] = 'Navegue e descarregue módulos no <a href="{$a}" target="_blank" rel="noopener noreferrer">Moodle Marketplace <i class="fa fa-external-link" role="img" aria-label="Abre numa nova janela" title="Abre numa nova janela"></i></a>.';
@@ -1421,7 +1421,7 @@ $string['task_scheduled_concurrency_limit'] = 'Limite de tarefas agendadas em si
 $string['task_scheduled_concurrency_limit_desc'] = 'O número de execuções de tarefas agendadas que podem ocorrer simultaneamente. Se o limite for alto, o servidor poderá sofrer uma sobrecarga, o que irá afetar o desempenho. Uma configuração de 0 desativará completamente o processamento de tarefas agendadas.';
 $string['task_scheduled_max_runtime'] = 'Validade da tarefa agendada';
 $string['task_scheduled_max_runtime_desc'] = 'Prazo para execução da tarefa agendada antes de ser dispensada.';
-$string['task_starttime'] = 'Hora de início';
+$string['task_starttime'] = 'Data/Hora de início';
 $string['task_stats:dbreads'] = '{$a} lidas';
 $string['task_stats:dbwrites'] = '{$a} escritas';
 $string['task_status'] = 'Estado da tarefa';

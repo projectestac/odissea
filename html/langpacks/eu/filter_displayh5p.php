@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['allowedsourceslist'] = 'Baimendutako jatorriak';
 $string['allowedsourceslistdesc'] = 'Erabiltzaileek H5P edukia enbotatzeko baimena duten URLen zerrenda. Bat ere zehazten ez bada, URL guztiak esteka gisa erakutsiko dira eta ez da enbotatutako H5P edukirik erakutsiko.
 
-\'[id]\' kanpo-iturriaren H5P edukiaren IDrako gakoa da.
+\'[id]\' kanpo-iturriaren H5P edukiaren IDrako hitz-gakoa da.
 Adibidez:
 
 - H5P.com: https://[xxxxxx].h5p.com/content/[id]

@@ -1,0 +1,365 @@
+/* C4L COLOUR TOKENS
+ *
+ * Two tiers:
+ *   1. Primitives — the C4L palette itself. This is the ONLY tier a colour
+ *      mode redefines.
+ *   2. Component aliases — never redefined per mode. They exist so a site can
+ *      recolour a single component without touching the palette.
+ *
+ * C4L owns its colours. Nothing here may resolve to a theme or Bootstrap
+ * variable: a "tip" is magenta on every Moodle, light or dark. The colour mode
+ * supplies a boolean (is the page dark?), never a colour.
+ *
+ * Light values are the computed values of styles.css @ v3.2.2.
+ * Dark values are taken from the reference document
+ * "C4L components dark" (Figma 7jRRTKOY8ILl19c2tNDnfM, node 16:2).
+ */
+
+/* ------------------------------------------------------------------ *
+ *  Tier 1: primitives — LIGHT
+ * ------------------------------------------------------------------ */
+
+:root,
+[data-bs-theme=light] {
+    /* Surfaces */
+    --c4l-surface:          #fff;
+    --c4l-border:           transparent;   /* light uses shadows, not borders */
+    /* `inherit`, not a literal: C4L has never set a text colour, so the text
+       comes from the theme. Keeping that in light makes the token layer a
+       strict no-op for every existing site. Dark has to pin it, because a dark
+       theme's light body text on C4L's own surface is unreadable. */
+    --c4l-text:             inherit;
+    --c4l-text-muted:       #686d79;
+    --c4l-on-accent:        #fff;           /* text on --c4l-solid-* fills */
+
+    /* Tints — in light mode the hue lives in the fill */
+    --c4l-tint-blue:        #f1f5fe;
+    --c4l-tint-blue-alt:    #f2f5fd;        /* learningoutcomes */
+    --c4l-tint-magenta:     #fbeffa;
+    --c4l-tint-cyan:        #eff8fd;
+    --c4l-tint-orange:      #fef6ed;
+    --c4l-tint-green:       #f1fbf5;
+    --c4l-tint-green-alt:   #edf7f0;        /* aiuseallowed */
+    --c4l-tint-red:         #ffefef;
+    --c4l-tint-red-alt:     #fff2f2;        /* aiusenotallowed */
+    --c4l-tint-amber:       #fff8e7;
+
+    /* Accents — bars, rules, markers */
+    --c4l-accent-blue:      #387af1;
+    --c4l-accent-magenta:   #b00ca9;
+    --c4l-accent-cyan:      #16b9ff;
+    --c4l-accent-orange:    #f88923;
+    --c4l-accent-blue-mid:  #3171e3;        /* example rule */
+    --c4l-accent-blue-deep: #497ae9;        /* learningoutcomes marker */
+    --c4l-accent-green:     #1cc460;        /* do card badge */
+    --c4l-accent-red:       #f85449;        /* dont card badge */
+    --c4l-accent-blue-shade: #213e81;       /* learningoutcomes title fold */
+
+    /* Badge folds — the darker 3x2 corner tab on six of the badges. */
+    --c4l-accent-magenta-shade:  #71096c;
+    --c4l-accent-cyan-shade:     #007bb0;
+    --c4l-accent-orange-shade:   #ca6100;
+    --c4l-accent-blue-mid-shade: #2b5cb5;
+
+    /* Ink — text sitting on a tint */
+    --c4l-ink-blue:         #2167cf;
+    --c4l-ink-indigo:       #3a56af;
+    --c4l-ink-magenta:      #b00ca9;
+    --c4l-ink-cyan:         #0271bf;
+    --c4l-ink-green:        #127a1d;
+    --c4l-ink-red:          #df1801;
+    --c4l-ink-amber:        #b45400;
+
+    /* Solid fills that carry --c4l-on-accent text */
+    --c4l-solid-blue:       #3171e3;        /* inlinetag */
+    --c4l-solid-blue-deep:  #497ae9;        /* learningoutcomes title */
+
+    /* Plugin UI — the picker's toolbar icons, one colour per component family.
+       These are the plugin's own chrome, not course content. */
+    --c4l-ui-icon-contextual: #1679f9;
+    --c4l-ui-icon-procedural: #d93562;
+    --c4l-ui-icon-evaluative: #f5982b;
+    --c4l-ui-icon-helper:     #3aaf2a;
+
+    /* Variant strip on the picker buttons. Below 992px the tint sits on each
+       cell; above it, on the container, with the cells split by hairlines. */
+    --c4l-ui-variant-bg:   #ecf3ff;
+    --c4l-ui-variant-sep:  #fff;
+    /* Divider between the label and the strip. In light the tint already marks
+       the edge, so there is nothing to draw. */
+    --c4l-ui-variant-edge: transparent;
+    /* `on` means the variant is enabled, `hover` only means the pointer is
+       over it. They shared one rule until now; dark needs them apart. */
+    --c4l-ui-variant-on-bg:    #1679f9;
+    --c4l-ui-variant-hover-bg: #1679f9;
+    --c4l-ui-variant-ink:      #fff;
+
+    /* Plugin UI — page surface and text greys */
+    --c4l-ui-page:            #f6f7f8;
+    --c4l-ui-page-border:     #dee2e6;
+    --c4l-ui-text:            #535d76;
+    --c4l-ui-text-strong:     #424b62;
+    --c4l-ui-text-muted:      #9297a1;
+
+    /* Plugin UI — controls */
+    --c4l-ui-surface:         #fff;
+    --c4l-ui-border:          #dfe2e5;
+    --c4l-ui-button-border:   #e4e9ec;
+    --c4l-ui-raised:          #e7ebef;
+    --c4l-ui-divider:         #dce3f0;
+    --c4l-ui-shadow:          rgba(0, 0, 0, .10);
+    --c4l-ui-focus:           rgba(22, 121, 249, .3);
+    --c4l-ui-tab-border:      #535d76;
+    --c4l-ui-tab-active-bg:   #535d76;
+    --c4l-ui-tab-active-ink:  #fff;
+    --c4l-ui-panel-border:    #e1e5ee;
+    --c4l-ui-link:            #1779f9;
+    --c4l-ui-accent:          #1679f9;
+
+    /* The one asset that varies by mode. Every other icon is a mask and takes
+       its colour from a token above; this is an illustration, so it needs a
+       twin. Held as a token so _components.scss stays mode-agnostic. */
+    --c4l-figure-placeholder: url([[pix:tiny_c4l|c4l_figure_placeholder]]);
+
+    /* Elevation */
+    --c4l-shadow-soft:      rgba(0, 0, 0, .08);
+    --c4l-shadow:           rgba(0, 0, 0, .13);
+    --c4l-shadow-xsoft:     rgba(0, 0, 0, .07);
+}
+
+/* ------------------------------------------------------------------ *
+ *  Tier 1: primitives — DARK
+ *
+ *  Two structural differences from light, both deliberate:
+ *
+ *  1. The tints collapse into the surface. In light the hue is carried by
+ *     the fill; in dark it is carried entirely by the accent bar, the icon
+ *     and the ink. Large saturated dark fills muddy, so the surface stays
+ *     neutral and a 1px border does the delineation.
+ *
+ *  2. --c4l-on-accent inverts to near-black. The solid blue lightens rather
+ *     than darkens, so white text on it would fail contrast; dark text on
+ *     the light fill gives 8.2:1 instead.
+ *
+ * ------------------------------------------------------------------ */
+
+/* Moodle has no dark mode of its own, so this block hangs off Bootstrap's
+ * colour-mode attribute, which Boost already compiles. It is in four parts:
+ *
+ *   ON  by default   1. the components
+ *                    2. the picker's toolbar icons
+ *   OFF by default   A. the picker's page surface and text greys
+ *                    B. the picker's controls
+ *
+ * 1 and 2 are what a course actually renders, so they follow Boost with no
+ * setup. A and B repaint the plugin's own UI and are shipped commented: a site
+ * that wants them uncomments the block whole. */
+
+[data-bs-theme=dark] {
+    /* ============================================================== *
+     *  ACTIVE 1 — COMPONENTS
+     * ============================================================== */
+
+    /* Surfaces */
+    --c4l-surface:          #181c20;
+    --c4l-border:           #2a3037;
+    --c4l-text:             #e6e9ec;
+    --c4l-text-muted:       #8d959d;
+    --c4l-on-accent:        #0f1214;        /* inverted — see note 2 */
+
+    /* Tints collapse to the surface — see note 1 */
+    --c4l-tint-blue:        var(--c4l-surface);
+    --c4l-tint-blue-alt:    var(--c4l-surface);
+    --c4l-tint-magenta:     var(--c4l-surface);
+    --c4l-tint-cyan:        var(--c4l-surface);
+    --c4l-tint-orange:      var(--c4l-surface);
+    --c4l-tint-green:       var(--c4l-surface);
+    --c4l-tint-green-alt:   var(--c4l-surface);
+    --c4l-tint-red:         var(--c4l-surface);
+    --c4l-tint-red-alt:     var(--c4l-surface);
+    --c4l-tint-amber:       var(--c4l-surface);
+
+    /* Accents. The four light blues converge on one dark blue. */
+    --c4l-accent-blue:      #81abf5;
+    --c4l-accent-magenta:   #da72d6;
+    --c4l-accent-cyan:      #76d6ff;
+    --c4l-accent-orange:    #ffa858;
+    --c4l-accent-blue-mid:  #81abf5;
+    --c4l-accent-blue-deep: #81abf5;
+    --c4l-accent-green:     #8bf0b4;
+    --c4l-accent-red:       #ffa29b;
+
+    --c4l-accent-magenta-shade:  #7c577a;
+    --c4l-accent-cyan-shade:     #7397a6;
+    --c4l-accent-orange-shade:   #b56d2b;
+    --c4l-accent-blue-mid-shade: #3a71d1;
+    /* Not specified by the reference document — the fold is 3x2 px and did not
+       surface in the audit. Derived as a darker step of --c4l-accent-blue. */
+    --c4l-accent-blue-shade: #3f66a8;
+
+    /* Ink. Indigo also converges on the blue; amber on the orange. */
+    --c4l-ink-blue:         #81abf5;
+    --c4l-ink-indigo:       #81abf5;
+    --c4l-ink-magenta:      #da72d6;
+    --c4l-ink-cyan:         #76d6ff;
+    --c4l-ink-green:        #8bf0b4;
+    --c4l-ink-red:          #ffa29b;
+    --c4l-ink-amber:        #ffa858;
+
+    /* Solid fills — lightened, with dark text on top */
+    --c4l-solid-blue:       #81abf5;
+    --c4l-solid-blue-deep:  #81abf5;
+
+    /* ============================================================== *
+     *  ACTIVE 2 — PICKER TOOLBAR ICONS
+     *
+     *  Lightened so the glyphs read on a dark button. From the reference
+     *  document's "C4L picker — dark 2" frame.
+     * ============================================================== */
+
+    --c4l-ui-icon-contextual: #64a4f9;
+    --c4l-ui-icon-procedural: #e46487;
+    --c4l-ui-icon-evaluative: #faca92;
+    --c4l-ui-icon-helper:     #ace8a4;
+
+    --c4l-figure-placeholder: url([[pix:tiny_c4l|c4l_figure_placeholder_dark]]);
+
+    /* Elevation is carried by --c4l-border in dark, not by shadows: on
+       #181c20 over a darker page a black shadow has nothing to darken. */
+    --c4l-shadow-soft:      transparent;
+    --c4l-shadow:           transparent;
+    --c4l-shadow-xsoft:     transparent;
+
+}
+
+/* ================================================================== *
+ *  OPT-IN BLOCK A — PLUGIN UI: PAGE SURFACE AND TEXT GREYS
+ *
+ *  Darkens the picker's own backdrop and its grey text.
+ *
+ *  Two ways to switch it on:
+ *    - uncomment here and run `npm run sass`, or
+ *    - paste the rule into the theme's raw SCSS or into
+ *      additionalhtmlhead inside <style>. No rebuild needed; these are
+ *      only custom properties, so nothing else has to change.
+ *
+ *  A and B are complementary. A supplies the surface and the greys, B
+ *  repaints the controls standing on them. Either alone leaves the
+ *  picker half-painted, so switch both on unless you are staging it.
+ * ================================================================== */
+
+/*
+[data-bs-theme="dark"] {
+    --c4l-ui-page:            #0f1214;
+    --c4l-ui-page-border:     #2a3037;
+    --c4l-ui-text:            #c3cad1;
+    --c4l-ui-text-strong:     #e6e9ec;
+    --c4l-ui-text-muted:      #8d959d;
+}
+*/
+
+/* ================================================================== *
+ *  OPT-IN BLOCK B — PLUGIN UI: CONTROLS
+ *
+ *  Modal panel and aside, filter pills, the select, the component
+ *  buttons and their variant strip, the docs tabs, the preview panel.
+ *  Same two ways to switch it on as block A, and the same caveat.
+ * ================================================================== */
+
+/*
+[data-bs-theme="dark"] {
+    --c4l-ui-surface:         #181c20;
+    --c4l-ui-border:          #2a3037;
+    --c4l-ui-button-border:   #2a3037;
+    --c4l-ui-raised:          #22282e;
+    --c4l-ui-divider:         #2a3037;
+    --c4l-ui-shadow:          transparent;
+    --c4l-ui-focus:           rgba(129, 171, 245, .35);
+    --c4l-ui-tab-border:      #3a434c;
+    --c4l-ui-tab-active-bg:   #c3cad1;
+    --c4l-ui-tab-active-ink:  #0f1214;
+    --c4l-ui-panel-border:    #2a3037;
+    --c4l-ui-link:            #81abf5;
+    --c4l-ui-accent:          #81abf5;
+
+    --c4l-ui-variant-bg:       transparent;
+    --c4l-ui-variant-sep:      #2a3037;
+    --c4l-ui-variant-edge:     #2a3037;
+    --c4l-ui-variant-on-bg:    #1679f9;
+    --c4l-ui-variant-hover-bg: #2c3339;
+}
+*/
+
+/* ------------------------------------------------------------------ *
+ *  Tier 2: component aliases — mode-independent
+ *
+ *  Override these, not the primitives, to recolour a single component.
+ * ------------------------------------------------------------------ */
+
+:root,
+[data-bs-theme=light],
+[data-bs-theme=dark] {
+    /* Contextual */
+    --c4l-keyconcept-bg:            var(--c4l-tint-blue);
+    --c4l-keyconcept-accent:        var(--c4l-accent-blue);
+    --c4l-tip-bg:                   var(--c4l-tint-magenta);
+    --c4l-tip-accent:               var(--c4l-accent-magenta);
+    --c4l-tip-fold:                 var(--c4l-accent-magenta-shade);
+    --c4l-reminder-bg:              var(--c4l-tint-cyan);
+    --c4l-reminder-accent:          var(--c4l-accent-cyan);
+    --c4l-reminder-fold:            var(--c4l-accent-cyan-shade);
+    --c4l-quote-line:               var(--c4l-accent-blue);
+    --c4l-do-bg:                    var(--c4l-tint-green);
+    --c4l-do-icon:                  var(--c4l-accent-green);
+    --c4l-dont-bg:                  var(--c4l-tint-red);
+    --c4l-dont-icon:                var(--c4l-accent-red);
+    --c4l-readingcontext-bg:        var(--c4l-surface);
+    --c4l-example-bg:               var(--c4l-surface);
+    --c4l-example-rule:             var(--c4l-accent-blue-mid);
+    --c4l-figure-caption:           var(--c4l-text-muted);
+    --c4l-tag-bg:                   var(--c4l-tint-blue);
+    --c4l-tag-ink:                  var(--c4l-ink-blue);
+    --c4l-inlinetag-bg:             var(--c4l-solid-blue);
+    --c4l-inlinetag-ink:            var(--c4l-on-accent);
+    --c4l-conceptreview-bg:         var(--c4l-surface);
+    --c4l-conceptreview-title:      var(--c4l-ink-magenta);
+    --c4l-conceptreview-icon:       var(--c4l-accent-magenta);
+    --c4l-conceptreview-fold:       var(--c4l-accent-magenta-shade);
+    --c4l-furtherreading-bg:        var(--c4l-surface);
+    --c4l-furtherreading-title:     var(--c4l-ink-cyan);
+    /* The badge and the marker are the lighter cyan, not the title's ink. */
+    --c4l-furtherreading-icon:      var(--c4l-accent-cyan);
+    --c4l-furtherreading-fold:      var(--c4l-accent-cyan-shade);
+    --c4l-furtherreading-marker:    var(--c4l-accent-cyan);
+
+    /* Procedural */
+    --c4l-attention-bg:             var(--c4l-tint-orange);
+    --c4l-attention-accent:         var(--c4l-accent-orange);
+    --c4l-attention-fold:           var(--c4l-accent-orange-shade);
+    --c4l-estimatedtime-bg:         var(--c4l-tint-blue);
+    --c4l-estimatedtime-ink:        var(--c4l-ink-blue);
+    --c4l-duedate-bg:               var(--c4l-tint-blue);
+    --c4l-duedate-ink:              var(--c4l-ink-blue);
+    --c4l-proceduralcontext-ink:    var(--c4l-ink-indigo);
+    --c4l-learningoutcomes-bg:      var(--c4l-tint-blue-alt);
+    --c4l-learningoutcomes-title-bg: var(--c4l-solid-blue-deep);
+    --c4l-learningoutcomes-title-ink: var(--c4l-on-accent);
+    --c4l-learningoutcomes-title-shade: var(--c4l-accent-blue-shade);
+    --c4l-learningoutcomes-marker:  var(--c4l-accent-blue-deep);
+
+    /* Evaluative */
+    --c4l-gradingvalue-bg:          var(--c4l-tint-blue);
+    --c4l-gradingvalue-ink:         var(--c4l-ink-blue);
+    --c4l-expectedfeedback-bg:      var(--c4l-surface);
+    --c4l-expectedfeedback-icon:    var(--c4l-accent-blue);
+    --c4l-expectedfeedback-fold:    var(--c4l-accent-blue-mid-shade);
+    --c4l-aiuseallowed-bg:          var(--c4l-tint-green-alt);
+    --c4l-aiuseallowed-ink:         var(--c4l-ink-green);
+    --c4l-aiusenotallowed-bg:       var(--c4l-tint-red-alt);
+    --c4l-aiusenotallowed-ink:      var(--c4l-ink-red);
+    --c4l-aiusereported-bg:         var(--c4l-tint-amber);
+    --c4l-aiusereported-ink:        var(--c4l-ink-amber);
+
+    /* Helper */
+    --c4l-allpurposecard-bg:        var(--c4l-tint-blue);
+}

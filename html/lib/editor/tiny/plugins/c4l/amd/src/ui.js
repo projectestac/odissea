@@ -55,6 +55,7 @@ let langStrings = {};
 let previewCSS = '';
 let customComponents = [];
 const compPrefix = 'c4lv-';
+const previewStylesId = 'c4l-preview-styles';
 
 /**
  * Handle action
@@ -98,9 +99,13 @@ const displayDialogue = async(editor) => {
 
     // Inject custom component styles in editor.
     if (previewCSS !== "") {
+        const body = editor.targetElm.closest('body');
+        // Avoid stacking duplicate style elements on repeated modal openings.
+        body.querySelector('#' + previewStylesId)?.remove();
         const styles = document.createElement('style');
+        styles.id = previewStylesId;
         styles.textContent = previewCSS;
-        editor.targetElm.closest('body').appendChild(styles);
+        body.appendChild(styles);
     }
 
     modal.show();
@@ -229,13 +234,51 @@ const handleButtonFilterClick = (event, modal) => {
 };
 
 /**
+ * Reposition the shared modal backdrop below the topmost modal still open.
+ *
+ * When the C4L modal is opened while nested inside other Moodle modals (for
+ * example editing a Text block content launched from the "Add a block" flow),
+ * Moodle's shared backdrop can be left on top of the remaining modals after the
+ * C4L modal is destroyed, greying out and blocking the editor. See issue #22.
+ */
+const restoreBackdrop = () => {
+    // Defer until the C4L modal has finished hiding and removing itself.
+    window.setTimeout(() => {
+        const modals = Array.from(document.querySelectorAll('.modal.show'))
+            .filter((modal) => {
+                const rect = modal.getBoundingClientRect();
+                return rect.width > 0 && rect.height > 0;
+            });
+
+        // No modal left open: let the core handle hiding the backdrop.
+        if (modals.length === 0) {
+            return;
+        }
+
+        const topZIndex = Math.max(...modals.map(
+            (modal) => parseInt(window.getComputedStyle(modal).zIndex, 10) || 0
+        ));
+
+        document.querySelectorAll('.modal-backdrop').forEach((backdrop) => {
+            const backdropZIndex = parseInt(window.getComputedStyle(backdrop).zIndex, 10) || 0;
+            if (backdropZIndex >= topZIndex) {
+                backdrop.style.zIndex = (topZIndex - 1).toString();
+            }
+        });
+    }, 0);
+};
+
+/**
  * Handle when closing the Modal.
  *
  * @param {obj} editor
  */
 const handleModalHidden = (editor) => {
-    editor.targetElm.closest('body').classList.remove('c4l-modal-no-preview');
+    const body = editor.targetElm.closest('body');
+    body.classList.remove('c4l-modal', 'c4l-modal-no-preview');
+    body.querySelector('#' + previewStylesId)?.remove();
     saveVariantPreferences(Components);
+    restoreBackdrop();
 };
 
 /**
@@ -281,7 +324,7 @@ const handleButtonClick = (event, editor, modal) => {
         componentCode = applyLangStrings(componentCode);
 
         // Sets new content.
-        editor.selection.setContent(componentCode);
+        editor.insertContent(componentCode);
 
         // Select text.
         const nodeSel = editor.dom.select('span[data-id="' + randomId + '"]');

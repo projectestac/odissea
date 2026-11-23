@@ -519,6 +519,7 @@ $string['questionnairereport'] = 'Rapport de questionnaire';
 $string['questionnum'] = 'Question n°';
 $string['questions'] = 'Questions';
 $string['questionsinsection'] = 'Nombre de questions dans cette section :';
+$string['questiontypeandname'] = '[{$a->type}] ({$a->name})';
 $string['questiontypes'] = 'Types de questions';
 $string['questiontypes_help'] = 'Voir la documentation ci-dessous.';
 $string['questiontypes_link'] = 'mod/questionnaire/questions#Question_Types';

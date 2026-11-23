@@ -29,37 +29,37 @@ $string['accountexists'] = 'Ja existeix un usuari en aquest lloc amb aquest nom 
 $string['alreadylinked'] = 'Aquest compte extern ja està enllaçat a un altre compte d\'aquest lloc';
 $string['auth_oauth2description'] = 'Autenticació basada en l\'estàndard OAuth 2';
 $string['auth_oauth2settings'] = 'Configuració de l\'autenticació OAuth 2.';
-$string['confirmaccountemail'] = 'Hola, {$a->fullname},
+$string['confirmaccountemail'] = 'Hola, {$a->firstname},
 
-S\'ha fet la sol·licitud d\'un compte nou amb la vostra adreça de correu electrònic a \'{$a->sitename}\'.
+S\'ha sol·licitat un compte nou a «{$a->sitename}» utilitzant la vostra adreça electrònica.
 
-Per confirmar aquesta sol·licitud i enllaçar aquests accessos, feu clic a aquesta adreça web:
+Per confirmar el compte, feu clic a l\'enllaç següent:
 
-{$a->link}
+<a href="{$a->link}">Confirma el compte</a>
 
-A la majoria dels programes de correu, aquesta adreça hauria d\'aparèixer com un enllaç blau on heu de fer clic. Si això no funciona, retalleu l\'adreça i enganxeu-la en el camp d\'ubicació al capdamunt de la finestra del navegador.
+Si necessiteu ajuda, contacteu amb l\'administrador del lloc.
+{$a->admin}
 
-Si necessiteu ajuda, poseu-vos en contacte amb l’administrador del lloc, {$a->admin}
-
-Si no heu fet aquesta sol·licitud, algú altre podria estar intentant posar en risc el vostre compte.
-Poseu-vos en contacte immediatament amb l\'administrador del lloc.';
+Si no ho heu fet, algú altre podria estar intentant comprometre el vostre compte.
+Contacteu amb l\'administrador del lloc.';
 $string['confirmaccountemailsubject'] = '{$a}: confirmació del compte';
 $string['confirmationinvalid'] = 'L\'enllaç de confirmació o és no vàlid o bé ha caducat. Comenceu de nou el procés d\'autenticació per tal de generar un correu electrònic de confirmació nou.';
 $string['confirmationpending'] = 'Aquest compte està pendent del correu de confirmació.';
-$string['confirmlinkedloginemail'] = 'Hola, {$a->fullname},
+$string['confirmlinkedloginemail'] = 'Hola, {$a->firstname},
 
-S\'ha fet una sol·licitud per enllaçar l\'autenticació de {$a->issuername} {$a->linkedemail} al vostre compte al lloc «{$a->sitename}» mitjançant la vostra adreça de correu electrònic.
+S\'ha fet una sol·licitud per vincular l\'inici de sessió de {$a->issuername}
+{$a->linkedemail} al vostre compte a «{$a->sitename}»
+utilitzant la vostra adreça de correu electrònic.
 
-Per confirmar aquesta sol·licitud i enllaçar aquests accessos, feu clic a aquesta adreça web:
+Per confirmar aquesta sol·licitud i vincular aquests inicis de sessió, feu clic a l\'enllaç següent:
 
-{$a->link}
+<a href="{$a->link}">Enllaça els comptes</a>
 
-A la majoria dels programes de correu, aquesta adreça hauria d\'aparèixer com un enllaç blau on heu de fer clic. Si això no funciona, retalleu l\'adreça i enganxeu-la en el camp d\'ubicació al capdamunt de la finestra del navegador.
+Si necessiteu ajuda, poseu-vos en contacte amb l\'administrador del lloc.
+{$a->admin}
 
-Si necessiteu ajuda, poseu-vos en contacte amb l’administrador del lloc, {$a->admin}
-
-Si no heu fet aquesta sol·licitud, algú altre podria estar intentant posar en risc el vostre compte.
-Poseu-vos en contacte immediatament amb l\'administrador del lloc.';
+Si no ho heu fet, algú altre podria estar intentant comprometre el vostre compte.
+Contacte amb l\'administrador del lloc.';
 $string['confirmlinkedloginemailsubject'] = '{$a}: confirmació d\'inici de sessió enllaçada';
 $string['createaccountswarning'] = 'Aquest connector d\'autenticació permet que els usuaris puguin crear comptes al vostre lloc. Podeu habilitar la configuració «authpreventaccountcreation» si utilitzeu aquest connector.';
 $string['createnewlinkedlogin'] = 'Enllaceu un compte nou ({$a})';
@@ -80,7 +80,7 @@ Inicieu la sessió com abans, mitjançant l’enllaç de la pàgina d’inici de
 $string['emailpasswordchangeinfosubject'] = '{$a}: informació de canvi de contrasenya';
 $string['info'] = 'Compte extern';
 $string['issuer'] = 'Servei OAuth 2';
-$string['issuernologin'] = 'Aquest emissor no es pot utilitzar per iniciar la sessió';
+$string['issuernologin'] = 'Aquest emissor no es pot utilitzar per iniciar sessió.';
 $string['key'] = 'Clau';
 $string['linkedlogins'] = 'Inicis de sessió enllaçats';
 $string['linkedloginshelp'] = 'Ajuda amb els inicis de sessió enllaçats';

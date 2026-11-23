@@ -167,8 +167,9 @@ $string['btn_editsingle'] = 'Редактировать выбранный вр�
 $string['btn_eval'] = 'Выставить оценки за выбранные временные интервалы';
 $string['btn_eval_short'] = 'Оценить';
 $string['btn_evalsingle'] = 'Выставить оценку за выбранный временный интервал';
+$string['btn_exportics'] = 'Экспорт выбранного временного интервала в файл ICS.';
 $string['btn_print'] = 'Печатать выбранные временные интервалы';
-$string['btn_printsingle'] = 'Печатать выбранный временный интервал';
+$string['btn_printsingle'] = 'Печатать выбранный временной интервал';
 $string['btn_queue'] = 'Очередь';
 $string['btn_reeval'] = 'Повторная оценка';
 $string['btn_register'] = 'Записаться на встречу';
@@ -388,6 +389,8 @@ $string['eventtemplatewithoutlinks'] = '{$a->coursename} / {$a->organizername}: 
 $string['eventtitle'] = '{$a->coursename} / {$a->organizername}: {$a->appwith}';
 $string['eventwith'] = 'С';
 $string['eventwithout'] = 'С';
+$string['exportics'] = 'Экспорт ICS';
+$string['exporticsaction'] = 'экспорт ICS';
 $string['exportsettings'] = 'Настройки экспорта';
 $string['filtertable'] = 'Фильтрация этой таблицы';
 $string['filtertable_help'] = 'Поиск общих строк во временных интервалах.';
@@ -485,7 +488,9 @@ $string['groupmodenogroups'] = 'Групповых встреч нет';
 $string['groupmodeslotgroups'] = 'Создание группы в пустом временном интервале';
 $string['groupmodeslotgroupsappointment'] = 'Создание группы в забронированном временном интервале';
 $string['groupoptions'] = 'Настройки группы';
+$string['grouporganizer_desc'] = 'Это органайзер группы.';
 $string['grouporganizer_desc_novalidgroup'] = 'Это органайзер группы. Вы не являетесь членом группы, входящей в этот органайзер!';
+$string['grouporganizer_desc_participant'] = 'Это организатор группы. Нажатие кнопки «Регистрация» зарегистрирует вас и всех участников вашей группы {$a->groupname} в этом слоте. Все участники группы могут изменять и комментировать регистрацию.';
 $string['grouppicker'] = 'Выбор группы';
 $string['groupwarning'] = 'Проверьте ниже параметры группы!';
 $string['headerfooter'] = 'Печатать верхний/нижний колонтитул';
@@ -595,8 +600,8 @@ $string['message_info_slots_deleted_pl'] = 'Интервалы ({$a->deleted}) �
 $string['message_info_slots_deleted_sg'] = 'Один интервал был удален. Участники ({$a->notified}) были уведомлены.';
 $string['message_info_slots_edited_pl'] = 'Интервалы ({$a->count}) были отредактированы.';
 $string['message_info_slots_edited_sg'] = '{$a->count} временной интервал был отредактирован.';
-$string['message_info_slots_evaluated_pl'] = 'Временные интервалы ({$a->count}) были оценены.';
-$string['message_info_slots_evaluated_sg'] = '{$a->count} временной интервал был оценен.';
+$string['message_info_slots_evaluated_pl'] = 'Участники ({$a->count}) были оценены.';
+$string['message_info_slots_evaluated_sg'] = 'Участнику {$a->count} была выставлена оценка.';
 $string['message_info_unqueued'] = 'Вы были исключены из списка ожидания на временной интервал.';
 $string['message_info_unqueued_group'] = 'Ваша группа была исключена из списка ожидания на временной интервал.';
 $string['message_info_unregistered'] = 'Вы отменили регистрацию в временном интервале.';
@@ -635,7 +640,7 @@ $string['modulename'] = 'Органайзер';
 $string['modulename_help'] = 'Органайзеры позволяют учителям назначать встречи со студентами, создавая временные интервалы, на которые студенты могут зарегистрироваться.';
 $string['modulenameplural'] = 'Органайзеры';
 $string['monthlyview'] = 'Просмотр за месяц';
-$string['multimember'] = 'Пользователи не могут принадлежать к нескольким группам внутри одного потока!';
+$string['multimember'] = 'Пользователи не могут состоять одновременно в нескольких группах курса!';
 $string['multimemberspecific'] = 'Пользователь {$a->username} ({$a->idnumber}) зарегистрирован более чем в одной группе! ({$a->groups})';
 $string['multipleappointmentenddate'] = 'Дата окончания';
 $string['multipleappointmentstartdate'] = 'Дата начала';
@@ -677,6 +682,8 @@ $string['nofreeslots'] = 'Свободных интервалов нет.';
 $string['nogroup'] = 'Нет групп';
 $string['nolocationplaceholder'] = '[Будет определено]';
 $string['noparticipants'] = 'Нет участников';
+$string['noreregistrations'] = 'После истечения крайнего срока повторная регистрация невозможна.';
+$string['noreregistrations_help'] = 'Если срок действия забронированного места истек, оно больше не может служить основанием для повторной регистрации.';
 $string['norightpage'] = 'Вам не разрешено открывать эту страницу.';
 $string['nosingleslotprintfields'] = 'Печать невозможна. Не определены поля пользователя. Смотрите настройки органайзера.';
 $string['noslots'] = 'Нет временных интервалов';
@@ -776,6 +783,11 @@ $string['register_notify_teacher:queue:fullmessage'] = 'Здравствуйте
 В курсе {$a->courseid} {$a->coursefullname} студент {$a->sendername} занял очередь на интервал на {$a->date} в {$a->time} в {$a->location}.
 
 Система обмена сообщениями Moodle';
+$string['register_notify_teacher:queue:group:fullmessage'] = 'Здравствуйте, {$a->receivername}!
+
+В курсе {$a->courseid} {$a->coursefullname} студент {$a->sendername} добавил группу {$a->groupname} в список ожидания на время {$a->date} в {$a->time} в {$a->location}.
+
+Система обмена сообщениями Moodle';
 $string['register_notify_teacher:queue:group:smallmessage'] = 'Студент {$a->sendername} занял очередь для группы {$a->groupname} на интервал на {$a->date} в {$a->time} в {$a->location}.
 
 Система обмена сообщениями Moodle';
@@ -809,9 +821,15 @@ $string['register_notify_teacher:reregister:group:fullmessage'] = 'Здравс�
 $string['register_notify_teacher:reregister:group:smallmessage'] = 'Студент {$a->sendername} перерегистрировал группу {$a->groupname} на новый временной интервал на {$a->date} в {$a->time} в {$a->location}.';
 $string['register_notify_teacher:reregister:group:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - группа перерегистрирована.';
 $string['register_notify_teacher:reregister:smallmessage'] = 'Студент {$a->sendername} перерегистрировался на новый временной интервал на {$a->date} в {$a->time} в {$a->location}.';
+$string['register_notify_teacher:reregister:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Студент повторно зарегистрирован';
+$string['register_notify_teacher:unqueue:fullmessage'] = 'Здравствуйте, {$a->receivername}!
+
+В курсе {$a->courseid} {$a->coursefullname} студент {$a->sendername} исключил себя из списка ожидания на {$a->date} в {$a->time} в {$a->location}.
+
+Система обмена сообщениями Moodle';
 $string['register_notify_teacher:unqueue:group:fullmessage'] = 'Здравствуйте, {$a->receivername}!
 
-В курсе {$a->courseid} {$a->coursefullname} студент {$a->sendername} исключил группу {$a->groupname} из списка ожидания на интервал на {$a->date} в {$a->time} в {$a->location}.
+В курсе {$a->courseid} {$a->coursefullname} студент {$a->sendername} исключил группу {$a->groupname} из списка ожидания на {$a->date} в {$a->time} в {$a->location}.
 
 Система обмена сообщениями Moodle';
 $string['register_notify_teacher:unqueue:group:smallmessage'] = 'Студент {$a->sendername} исключил группу {$a->groupname} из списка ожидания на интервал на {$a->date} в {$a->time} в {$a->location}.';
@@ -885,7 +903,7 @@ $string['singleslotprintfield'] = 'Печатать поле пользоват�
 $string['singleslotprintfield0'] = 'Печатать поле пользователя';
 $string['singleslotprintfield0_help'] = 'Эти поля пользователя будут использоваться для каждого участника при распечатке одного интервала.';
 $string['singleslotprintfields'] = 'Поля профиля пользователя при печати одного интервала';
-$string['singleslotprintfields_help'] = 'ПОДДЕЛЬНЫЙ ТЕКСТ - необходимо изменить, добавив больше информации о полях профиля и о том, как они заданы в настройках администратора.';
+$string['singleslotprintfields_help'] = 'В этом разделе вы определяете дополнительные персональные поля, которые будут выводиться для каждого участника при печати отдельного временного интервала.';
 $string['slot'] = 'Встреча';
 $string['slot_anonymous'] = 'Анонимный интервал';
 $string['slot_slotvisible'] = 'Участники видны, только если у них есть интервал';

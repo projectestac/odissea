@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['direct:view'] = 'Importuoti įvertinimus iš skaičiuoklės';
 $string['pluginname'] = 'Įklijuoti iš skaičiuoklės';
-$string['privacy:metadata'] = 'Įvertinimų importavimo iš nukopijuotos skaičiuoklės papildinys nesago jokių asmeninių duomenų.';
+$string['privacy:metadata'] = 'Įvertinimų importavimo iš nukopijuotos skaičiuoklės papildinys nesaugo jokių asmeninių duomenų.';
 $string['userdata'] = 'Pagalba kopijuojant duomenis į šią formą.';
 $string['userdata_help'] = 'Įvertinimus galima nukopijuoti ir įklijuoti iš skaičiuoklės į įverčių knygelę. Skaičiuoklėje turi būti stulpelis su naudotojo tapatybės duomenimis – naudotojo vardas arba ID numeris arba el. pašto adresas. Kiekvienas importuojamas stulpelis turi turėti stulpelio antraštę.';
 $string['userdata_link'] = 'grade/import/direct/index';

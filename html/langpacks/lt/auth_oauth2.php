@@ -29,25 +29,20 @@ $string['accountexists'] = 'Šioje svetainėje jau yra naudotojas su šiuo naudo
 $string['alreadylinked'] = 'Ši išorinė paskyra jau susieta su paskyra šioje svetainėje';
 $string['auth_oauth2description'] = 'Laikas, kai įvyko veiksmas.';
 $string['auth_oauth2settings'] = 'OAuth 2 autentifikavimo nustatymai.';
-$string['confirmaccountemail'] = 'Sveiki, {$a->fullname},
+$string['confirmaccountemail'] = 'Sveiki, {$a->firstname},
 
-Gautas paskyros prašymas „{$a->sitename}“
-naudodojantis Jūsų el. pašto adresu.
+Svetainėje „{$a->sitename}“ buvo pateikta paraiška sukurti naują paskyrą, naudojant jūsų el. pašto adresą.
 
-Norėdami patvirtinti naują paskyrą, eikite į šiuo adresu:
+Norėdami patvirtinti savo naują paskyrą, spustelėkite žemiau esančią nuorodą:
 
-{$a->link}
+<a href="{$a->link}">Patvirtinkite savo paskyrą</a>
 
-Daugelyje pašto programų tai turėtų būti mėlyna nuoroda,
-kurią galite tiesiog spustelėti. Jei tai neveikia,
-tada nukopijuokite adresą į adreso eilutę
-interneto naršyklės lango viršuje.
 
-Jei jums reikia pagalbos, susisiekite su svetainės administratoriumi
+Jei reikės pagalbos, kreipkitės į svetainės administratorių.
 {$a->admin}
 
-Jei neteikėte užklausos, kažkas kitas gali bandyti įsilaužti į jūsų paskyrą.
-Nedelsdami susisiekite su svetainės administratoriumi.';
+Jei to nepadarėte, kažkas kitas gali bandyti pasinaudoti jūsų paskyra.
+Nedelsdami kreipkitės į svetainės administratorių.';
 $string['confirmaccountemailsubject'] = '{$a}: paskyros patvirtinimas';
 $string['confirmationinvalid'] = 'Patvirtinimo nuoroda yra netinkama arba pasibaigė. Prašome vėl pradėti prisijungimo procesą, kad sugeneruotumėte naują patvirtinimo el. laišką.';
 $string['confirmationpending'] = 'Laukiama šios paskyros patvirtinimo el. paštu.';

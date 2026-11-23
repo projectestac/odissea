@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Testes PHPUnit';
-$string['privacy:metadata'] = 'O módulo Testes PHPUnit não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Testes PHPUnit não armazena quaisquer dados pessoais.';

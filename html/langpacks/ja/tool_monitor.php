@@ -51,7 +51,7 @@ $string['eventrulecreated'] = 'ルールが作成されました。';
 $string['eventruledeleted'] = 'ルールが削除されました。';
 $string['eventruleupdated'] = 'ルールが更新されました。';
 $string['eventsubcreated'] = '購読が作成されました。';
-$string['eventsubcriteriamet'] = '購読がクライテリアに合致しました。';
+$string['eventsubcriteriamet'] = '購読がクライテリアに一致しました。';
 $string['eventsubdeleted'] = '購読が削除されました。';
 $string['freqdesc'] = '{$a->freq} 回 / {$a->mins} 分';
 $string['frequency'] = '通知頻度';
@@ -65,7 +65,7 @@ $string['managesubscriptions'] = 'イベントモニタリング';
 $string['managesubscriptionslink'] = 'あなたは {$a} ページでルールを購読することができます。';
 $string['messageprovider:notification'] = 'ルール購読通知';
 $string['messagetemplate'] = '通知メッセージ';
-$string['messagetemplate_help'] = '通知閾値に達した場合、購読者に通知メッセージが送信されます。以下のプレースホルダのどれかまたはすべてを含めます:
+$string['messagetemplate_help'] = '通知閾値に達した場合、購読者に通知メッセージが送信されます。以下のプレースホルダのどれかまたはすべてを使用できます:
 
 * イベントロケーションのリンク {link}
 * モニタエリアへのリンク {modulelink}

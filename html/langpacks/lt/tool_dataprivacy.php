@@ -31,6 +31,8 @@ $string['addnewdefaults'] = 'Pridėti naują modulio numatytąjį';
 $string['addpurpose'] = 'Įtraukti tikslą';
 $string['addroleoverride'] = 'Pridėti vaidmens keitimą';
 $string['allowfiltering'] = 'Leisti filtruoti eksportą pagal kursą';
+$string['allowfiltering_desc'] = 'Jei įjungta, privatumo pareigūnas gali eksportuoti naudotojo duomenis tik iš pasirinktų kursų, o ne iš visų. Kai ši funkcija įjungta,
+ eksportavimo užklausų pradinė būsena yra „Laukiama“, o patvirtinti jas galima tik baigus foninę užduotį.';
 $string['approve'] = 'Patvirtinti';
 $string['approvedrequestsubmitted'] = 'Jūsų užklausa buvo pateikta ir netrukus bus apdorota.';
 $string['approverequest'] = 'Patvirtinti užklausą';
@@ -96,7 +98,7 @@ $string['dataprivacy:requestdeleteforotheruser'] = 'Prašyti ištrinti duomenis 
 $string['dataregistry'] = 'Duomenų registras';
 $string['dataregistryinfo'] = 'Duomenų registras leidžia nustatyti kategorijas (duomenų rūšis) ir tikslus (duomenų tvarkymo priežastis) visam svetainės turiniui – nuo naudotojų ir kursų iki veiklų ir blokų. Kiekvienam tikslui gali būti nustatytas saugojimo laikotarpis. Pasibaigus saugojimo laikotarpiui, duomenys pažymimi ir įtraukiami į sąrašą, kad juos būtų galima ištrinti, laukiant administratoriaus patvirtinimo.';
 $string['datarequestcreatedforuser'] = 'Duomenų užklausa sukurta {$a}';
-$string['datarequestcreatedfromscheduledtask'] = 'Automatiškai sukurta iš suplanuotos užduoties (išanksto ištrintas naudotojas).';
+$string['datarequestcreatedfromscheduledtask'] = 'Automatiškai sukurta iš suplanuotos užduoties (iš anksto ištrintas naudotojas).';
 $string['datarequestcreatedupondelete'] = 'Automatiškai sukurta ištrynus naudotoją.';
 $string['datarequestemailsubject'] = 'Duomenų užklausa: {$a}';
 $string['datarequests'] = 'Duomenų užklausos';
@@ -116,7 +118,7 @@ $string['defaultunexpired'] = 'Tik naudotojų, turinčių bet kurį iš šių va
 {$a->expired}';
 $string['defaultunexpiredwithexceptions'] = 'Tik naudotojų, kurie turi bet kurį iš šių vaidmenų, duomenys:<br>
 {$a->expired}
-Nebent jie taip pat turibet kurį iš šių vaidmenų:<br>
+Nebent jie taip pat turi bet kurį iš šių vaidmenų:<br>
 {$a->unexpired}';
 $string['deletecategory'] = 'Naikinti kategoriją';
 $string['deletecategorytext'] = 'Ar tikrai norite naikinti kategoriją "{$a}"?';

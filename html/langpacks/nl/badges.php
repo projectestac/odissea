@@ -558,7 +558,7 @@ $string['selecting'] = 'Met geselecteerde badges...';
 $string['setup'] = 'Maak verbinding';
 $string['sitebackpackdeleted'] = 'De site backpack is verwijderd.';
 $string['sitebackpacknotdeleted'] = 'De backpack kon niet verwijderd worden omdat het een site standaard backpack is.';
-$string['sitebackpackwarning'] = 'Kon geen verbinding maken met backpack. <br/><br/> Controleer of de beheerdersinstelling \'Badge-uitgever\' de geldige e-mail is voor een account op de website van de backpack. <br/><br/> Controleer of het wachtwoord voor de "Badge-uitgever" op de <ahref="{$a->url} "> site-instellingenpagina van de backpack</a> het juiste wachtwoord is voor de account op de backpack website. <br/><br/> De backpack antwoorde: "{$a-> waarschuwing}"';
+$string['sitebackpackwarning'] = 'Kon geen verbinding maken met backpack. <br/><br/> Controleer of de beheerdersinstelling \'Badge-uitgever\' de geldige e-mail is voor een account op de website van de backpack. <br/><br/> Controleer of het wachtwoord voor de "Badge-uitgever" op de <a href="{$a->url} "> site-instellingenpagina van de backpack</a> het juiste wachtwoord is voor de account op de backpack website. <br/><br/> De backpack antwoordde: "{$a-> warning}"';
 $string['sitebadges'] = 'Site-badges';
 $string['sitebadges_help'] = 'Site badges kunnen alleen aan gebruikers gegeven worden voor site gerelateerde activiteiten. Dit kan het voltooien van een aantal cursussen zijn of het invullen van je gebruikersprofiel. Site badges kunnen ook manueel gegeven worden door een gebruiker.
 

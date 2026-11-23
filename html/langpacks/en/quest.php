@@ -30,10 +30,19 @@ $string['accumulative'] = 'Accumulative';
 $string['action'] = 'Action';
 $string['actions'] = 'Actions';
 $string['addacomment'] = 'Add a comment';
+$string['addchallenge'] = 'New plain challenge';
 $string['addcomment'] = 'Add comment';
 $string['addelement'] = 'Add element';
+$string['addfromquestionbank'] = 'Add question from question bank';
+$string['addquestionchallenge'] = 'New challenge';
 $string['addsubmission'] = 'Add challenge';
+$string['adjustchallenge'] = 'Edit challenge';
 $string['adminlogs'] = 'Admin logs';
+$string['allowedchallengetypes'] = 'Allowed challenge types';
+$string['allowedchallengetypes_desc'] = 'Controls which challenge types teachers may create and the maximum types available in each activity setting for students. When both types are allowed here, teachers can choose any of the three student options in the activity settings.';
+$string['allowqbankquestions'] = 'Challenge types students may create';
+$string['allowqbankquestions_help'] = 'Choose which challenge types students may create in this activity. The site-wide setting limits the available choices. Teachers are controlled by the site-wide setting, not this activity setting. Existing values remain compatible: disabled means basic challenges only, enabled means both types.';
+$string['allowresubmission'] = 'Allow to send again';
 $string['allowteams'] = 'Allow workteams';
 $string['allowteams_help'] = '<P align="justify">This parameter forces that each student taking part in this QUESTOURnament belongs to a team. In such a case, when a student access the QUESTOURnament for the first time, he will have to enter the name of the team to which he belongs.</P>
 <P align="justify">Moreover, in this case, besides the individual ranking, the team ranking is presented.</P>
@@ -41,10 +50,20 @@ $string['allowteams_help'] = '<P align="justify">This parameter forces that each
 $string['amendassessmentelements'] = 'Amend assessment elements';
 $string['answer'] = 'Answer';
 $string['answer_not_found'] = 'Can not get answer record with id {$a}';
+$string['answeragain'] = 'Answer again';
+$string['answerchallenge'] = 'Answer to the challenge';
+$string['answerchallenge_help'] = '<P align="justify">This page allows to answer the challenge.</P>
+<P align="justify">The fields that will be presented are the following:</P>
+<ul>
+  <li><strong>Title</strong>: name that identifies the answer to be submitted.</li>
+  <li><strong>Description</strong>: this is the body of the answer to be submitted that must cover all the items specified by the assessment form of the challenge.</li>
+  <li><strong>Attachments</strong>: if the sending of attachments is allowed, it will be possible to add them at the end of the body of the answer to be submitted.</li>
+</ul>';
 $string['answercontent'] = 'Answer content';
 $string['answerexisty'] = 'An answer to this challenge already exists.';
 $string['answername'] = 'Answer: {$a->title}';
 $string['answernoauthorizedupdate'] = 'You are not authorized to update your answer';
+$string['answerpoints'] = 'Answer points';
 $string['answers'] = 'Answers.';
 $string['answersubmission'] = 'Answer to the challenge';
 $string['answersubmission_help'] = '<P align="justify">This page allows to answer the challenge.</P>
@@ -54,7 +73,16 @@ $string['answersubmission_help'] = '<P align="justify">This page allows to answe
   <li><strong>Description</strong>: this is the body of the answer to be submitted that must cover all the items specified by the assessment form of the challenge.</li>
   <li><strong>Attachments</strong>: if the sending of attachments is allowed, it will be possible to add them at the end of the body of the answer to be submitted.</li>
 </ul>';
+$string['apply'] = 'Apply';
+$string['approvalpending'] = 'Approval pending';
 $string['approve'] = 'Approve';
+$string['approvechallenge'] = 'Approve/Reject Challenge/Question';
+$string['approvechallenge_help'] = '<P align="justify">This page allows the teacher to approve, save or delete a challenge proposed by a student. The actions that can be taken are described below:</P>
+<ul>
+  <li><strong align="justify">Approve</strong>: all the data related to the challenge are saved together with the modifications proposed by the teacher. After this, the challenge will be available for the rest of the students that will be able to submit answers once the challenge is opened.</li>
+  <li><strong align="justify">Save</strong>: all the changes made by the teacher in the challenge are saved, but it will not still be available for the rest of students. This allows that the author of the challenge makes the necessary modifications for the teacher to approve it.</li>
+</ul>
+<P align="justify">When any of these actions take place, a message is sent to the author of the challenge, internally or through e-mail, depending on the user preferences according to his profile.</P>';
 $string['approvesubmission'] = 'Approve/Reject Challenge/Question';
 $string['approvesubmission_help'] = '<P align="justify">This page allows the teacher to approve, save or delete a challenge proposed by a student. The actions that can be taken are described below:</P>
 <ul>
@@ -63,6 +91,7 @@ $string['approvesubmission_help'] = '<P align="justify">This page allows the tea
 </ul>
 <P align="justify">When any of these actions take place, a message is sent to the author of the challenge, internally or through e-mail, depending on the user preferences according to his profile.</P>';
 $string['assess'] = 'Assess';
+$string['assess_forbidden'] = 'You are not allowed to assess this answer.';
 $string['assessedon'] = 'Assessed on {$a}';
 $string['assessment'] = 'Assessment';
 $string['assessmentby'] = 'Assessment by {$a}';
@@ -70,10 +99,21 @@ $string['assessmentcharacteristics'] = 'Characteristics of the assessment';
 $string['assessmentglobal'] = 'Global assessment';
 $string['assessmentgrade'] = 'Assessment grade: {$a}';
 $string['assessmentof'] = 'Assessment of "{$a}"';
+$string['assessmentofthischallenge'] = 'Assessment of this challenge';
 $string['assessmentofthissubmission'] = 'Assessment of this challenge';
 $string['assessments'] = 'Assessments';
 $string['assessmentsby'] = 'Assessments by {$a}';
 $string['assessthisanswer'] = 'Assess this answer';
+$string['assessthischallenge'] = 'Assess this challenge';
+$string['assessthischallenge_help'] = '<P align="justify">This page allows the teacher to assess the work of the students that propose challenges in the QUESTOURnament. The score given will depend both on the labour of the student as author of a challenge and as evaluator of the answers received.</P>
+<P align="justify">In order to facilitate the assessment of the task, a set of assessment elements, each one covering an aspect to assess in the task, will be used. For each assessment element it will be necessary to:
+<div align="justify">
+  <OL>
+<LI>Introduce a score by clicking the adequate radio button, selecting an option in a selection list presented,etc., which will depend on the scale used for that assessment element.
+<LI>Introduce an explanation of why that score is given. If it is considered that the reason is obvious, this field can be left empty. However, it must be taken into account that the student whose work is being assessed can make a complaint about the score received.
+  </OL>
+</div>
+<P align="justify">It is also possible to make a general comment about the work assessed. This comment must be respectful and constructive. The score and comments made will be accessible to the author of the challenge. The teacher will be able to manually modify the global score, in case it is necessary to adjust the score automatically calculated.';
 $string['assessthissubmission'] = 'Assess this challenge';
 $string['assessthissubmission_help'] = '<P align="justify">This page allows the teacher to assess the work of the students that propose challenges in the QUESTOURnament. The score given will depend both on the labour of the student as author of a challenge and as evaluator of the answers received.</P>
 <P align="justify">In order to facilitate the assessment of the task, a set of assessment elements, each one covering an aspect to assess in the task, will be used. For each assessment element it will be necessary to:
@@ -89,32 +129,69 @@ $string['assignmentnotinthecorrectphase'] = 'Assignment is not in the correctpha
 $string['attachment'] = 'Attachment';
 $string['attachments'] = 'Attachments';
 $string['attachmentsnoauthorizedupdate'] = 'You are not authorized to modify these attachments';
+$string['author'] = 'Author';
+$string['authorofchallenge'] = 'Author of challenge';
 $string['authorofsubmission'] = 'Author of submission';
+$string['authorpoints'] = 'Author points';
+$string['autoexportqbank'] = 'Automatically export approved basic challenges to question bank';
+$string['autoexportqbank_help'] = 'When enabled, approved basic challenges are automatically exported as essay questions to the activity question bank. Question-bank challenges are not exported.';
+$string['autograde_failed'] = 'Incorrect answer. If you sent by mistake, you may ask your teacher to give you another chance.';
+$string['autograde_manual_pending'] = 'Your answer has been submitted and is pending evaluation.';
+$string['autograde_passed'] = 'Correct! Your answer was automatically graded and awarded {$a} points.';
+$string['autograde_restorebutton'] = 'Remove manual assessment and restore automatic grade ({$a}%)';
+$string['autograde_restoreconfirm'] = 'Remove the manual assessment, including its comments and criterion grades, and restore the automatic grade?';
+$string['autograde_restored'] = 'The manual assessment was removed and the automatic grade was restored.';
+$string['autograde_restorenotavailable'] = 'An automatic grade is not available for this assessed answer.';
+$string['autograding'] = 'Autograding';
+$string['autosequence'] = 'Auto-sequence';
+$string['autosequencetitle'] = 'Auto-sequence challenges';
+$string['back'] = 'Back';
 $string['by'] = 'by';
 $string['bynameondate'] = 'by {$a->name} - {$a->date}';
 $string['calification'] = 'Score';
 $string['calification_provisional_msg'] = 'Assessment shown may be provisional';
 $string['calificationautor'] = 'Assessment for the author of the challenge';
+$string['cannotanswerownchallenge'] = 'You cannot submit an answer to your own challenge.';
+$string['cannotgetchallengerecord'] = 'Cannot retrieve challenge record.';
+$string['cannotgetsubmissionrecord'] = 'Cannot retrieve challenge record.';
 $string['cantRespond_WARN'] = 'Don\'t have permissions to answer.';
 $string['cantRespond_WARN_notingroup_or_challengeended'] = 'You can\'t answer. You don\'t belong to this group or the challenge is ended.';
+$string['cards'] = 'Cards';
+$string['cardview'] = 'Card view';
+$string['challenge'] = 'Challenge';
+$string['challenge_not_evaluated'] = 'Not evaluated';
+$string['challengeadded'] = 'Challenge created successfully';
+$string['challengeclosed'] = 'This challenge is now closed for answers.';
+$string['challengeconstruction'] = 'Challenge construction';
 $string['challengeend'] = 'Closind date of the challenge';
 $string['challengeend_help'] = '<P align="justify">It allows you to set the date when a challenge will be closed. From this date on, it will not be possible to send any more answers to the challenge. However, the teaches can continue assessing the author of the challenge, both for the question made and for the work made as assesser. Also, the authors of the challenges  can continue assessing the answers sent by other studentes.</P>
 <P align="justify">Once the challenge is closed, all participants will be able to see the answers sent by others, as well as the assessments and scores obtained. </P>
 <P align="justify">This date can not be later than the <a href="help.php?component=quest&identifier=dateend"">Closing Date</a> of the QUESTOURnament module, nor before the <a href="help.php?component=quest&identifier=submissionstart"">Start Date of the Challenge </a>. </P>';
+$string['challengemodenotavailable'] = 'This challenge type is not allowed by the site-wide setting.';
+$string['challengename'] = 'Challenge name';
+$string['challengenotstarted'] = 'This challenge has not started yet.';
+$string['challenges'] = 'Challenges';
 $string['challengestart'] = 'Start Date of the challenge';
 $string['challengestart_help'] = '<P align="justify">It allows you to set the data when the challenge will start. This parameter can be adjusted by a teacher.</P>
 <P align="justify">If the challenge is created by a student, the creation date is taken as the start date of the challenge, but the reachers can modify this value when they approve or edit the challenge.</P>
 <P align="justify">From this day on, the students can view the challenge and send their answers. </P>
 <P align="justify">This date must be before the Closing date of the challenge </P>';
+$string['challengetype_both'] = 'Basic and question-bank challenges';
+$string['challengetype_quiz'] = 'Question-bank challenges only';
+$string['challengetype_simple'] = 'Basic challenges only';
 $string['change'] = 'Save Changes';
 $string['changemanualcalification'] = 'Change grade manually';
+$string['changerubricforanswers'] = 'Change rubric for answers';
 $string['changeteam'] = 'Manage Teams';
 $string['changeteamteacher'] = 'Manage Teams';
 $string['changeteamteacher_help'] = '<P align="justify">This option allows to manage the teams of the QUESTOURnament or to move a student from one team to another if it were necessary.</P>
 <P align="justify">If a student is moved from one team to another and the team loses his last member, it will automatically disappear.</P>';
 $string['checkthat'] = 'Check that';
+$string['choosestrategy'] = 'Select sequencing strategy';
 $string['clasification'] = 'Ranking';
+$string['clicktoeditdate'] = 'Click to edit the date';
 $string['closebeforeopen'] = 'The Close Date of the QUESTOURnament must be later than the Start Date';
+$string['closed'] = 'Closed';
 $string['comment'] = 'Comment';
 $string['commentby'] = 'Comment by';
 $string['commentsauthor'] = 'General comments by author';
@@ -127,18 +204,24 @@ $string['commentsteacher'] = 'General comments by teacher';
 $string['completionpass'] = 'Require passing grade';
 $string['completionpass_help'] = 'If enabled, this activity is considered complete when the student receives a pass grade (as specified in the Grade section of the Quest settings) or higher.';
 $string['completionpassdesc'] = 'Student must achieve a passing grade to complete this activity';
+$string['composequestionchallenge'] = 'Compose a challenge from question-bank questions';
 $string['confirmchangeform'] = 'This will change the evaluation form. Are you sure?';
 $string['confirmdelete'] = 'Confirm deletion';
 $string['confirmdeletionofthisitem'] = 'Confirm deletion of this item {$a}';
 $string['correct'] = 'Correct';
+$string['course_misconfigured'] = 'Course is misconfigured.';
+$string['createchallenge'] = 'Create challenge';
 $string['currentphase'] = 'Current phase of QUESTOURnament';
 $string['currentphaseanswer'] = 'Answers phase';
+$string['currentphasechallenge'] = 'Challenge phase';
 $string['currentphasesubmission'] = 'Submission phase';
+$string['currentscore'] = 'Current points';
 $string['dateanswer'] = 'Date';
 $string['dateassess'] = 'Assessment date';
 $string['dateend'] = 'Closing on';
 $string['dateend_help'] = '<P align="justify">This paramenter sets the closing date of this QUESTOURnament. After this closing date, the students that access the QUESTOURnament will not be able to do any of the usual actions. At this point, the classifications of the QUESTOURnament will be definitive.</P>
 <P align="justify">Once the contest is over, its content will still be accesible for the students and teachers of the course, whenever this was defined when the QUESTOURnament was created, this means that it will still be possible to access challenges and answers submitted by each and every participant, as well as their classifications.</P>';
+$string['dateendchallengeevent'] = 'End of challenge "{$a}"';
 $string['dateendevent'] = 'End of QUESTOURnament "{$a}"';
 $string['dateendsubmissionevent'] = 'End of challenge "{$a}"';
 $string['dateofend'] = 'Closing date';
@@ -148,6 +231,7 @@ $string['dateofstart'] = 'Starting date';
 $string['datestart'] = 'Starting on';
 $string['datestart_help'] = '<P align="justify">This parameter sets the starting date of this QUESTOURnament. After this date, the students of the course will be able to access the QUESTOURnament in order to add a challenge, submit an answer to a challenge or to do any other usual action.</P>
 <P align="justify">This date is checked when a QUESTOURnament is defined, so that if it is subsequent to the <a href="help.php?component=quest&identifier=dateend"">Closing Date</a>, an error message is shown and the QUESTOURnament that is being defined will not be created.</P>';
+$string['datestartchallengeevent'] = 'Starting of challenge "{$a}"';
 $string['datestartevent'] = 'Starting of QUESTOURnament "{$a}"';
 $string['datestartsubmissionevent'] = 'Starting of challenge "{$a}"';
 $string['datestr'] = '%m/%d/%y<br />%H:%M';
@@ -167,12 +251,19 @@ $string['disagreewiththisassessment'] = 'Disagree with this assessment';
 $string['displayoffinalgrades'] = 'Display of final grades';
 $string['dontshowgrades'] = 'Do not show grades';
 $string['doyouwantparticularform'] = 'Do you want to use for this challenge an evaluation form different to the one defined by the QUESTournament creator?';
+$string['durationdays'] = '{$a} days';
+$string['durationhours'] = '{$a} hours';
 $string['edit'] = 'Edit';
 $string['editacomment'] = 'Edit a Comment';
+$string['editbankquestion'] = 'Edit question in question bank';
+$string['editdatesmodal'] = 'Edit challenge dates';
+$string['editdatesmodaltip'] = 'Changes remain unsaved until you click Save changes.';
 $string['editelementsanswer'] = 'Edit assesment elements for answers';
 $string['editelementsautor'] = 'Edit assensment elements for autors';
+$string['editing'] = 'Editing';
 $string['editingassessmentelements'] = 'Editing assessment elements';
 $string['editingassessmentelementsofautors'] = 'Editing assessment elements of authors';
+$string['editquestion'] = 'Edit question';
 $string['element'] = 'Element';
 $string['elements'] = 'Assessment Elements';
 $string['elements_help'] = '<P align="justify">In order to assess an answer submitted to a challenge a number of &quot;Assessment Elements&quot; will be defined, covering each one a particular aspect to be assessed in the answers submitted and depending its number on the size and complexity of the challenge. The elements will have the following characteristics:
@@ -196,6 +287,15 @@ $string['elementsautor_help'] = '<P align="justify">In order to assess a challen
   </OL>
 </div>';
 $string['elementweight'] = 'Element weight';
+$string['emailaddchallenge'] = 'Hello, {$a->firstname}.
+
+A new challenge has been added in
+\'{$a->sitename} \' server, in the QUESTOURnament \'{$a->name} \'. It is titled \'{$a->title} \'.
+
+To access this new challenge, please click here:
+
+<a href="{$a->link}">{$a->link}</a>';
+$string['emailaddchallengesubject'] = 'Moodle. Challenge added in module QUESTOURnament';
 $string['emailaddsubmission'] = 'Hello, {$a->firstname}.
 
 A new challenge has been added in
@@ -263,6 +363,11 @@ To access the challenge, please click here:
 
 <a href="{$a->link}">{$a->link}</a>';
 $string['emailchallengeupdatesubject'] = 'Moodle. Challenge modified in module QUESTOURnament';
+$string['emaildeletechallenge'] = 'Hello, {$a->firstname}.
+
+The challenge \'{$a->title} \' has been deleted in
+\'{$a->sitename} \' server, in the QUESTOURnament \'{$a->name} \'.';
+$string['emaildeletechallengesubject'] = 'Moodle. Challenge deleted in module QUESTOURnament';
 $string['emaildeletesubmission'] = 'Hello, {$a->firstname}.
 
 A challenge has been deleted in
@@ -301,10 +406,13 @@ $string['emailsavesubject'] = 'Moodle. Changes in challenge in module QUESTOURna
 $string['emailtagline'] = 'This e-mail is a copy of the message you sent on \\"{$a} \\"';
 $string['enterpassword'] = 'Enter password:';
 $string['enterteam'] = 'Enter Team';
+$string['errornotquestionbankchallenge'] = 'This challenge is not linked to a Question Bank question.';
 $string['evaluate'] = 'Evaluate';
 $string['evaluation_pending'] = 'Not evaluated';
 $string['excellent'] = 'Excellent';
 $string['exponential'] = 'Exponential';
+$string['exportedtoquestionbank'] = 'Challenge successfully exported to question bank.';
+$string['exporttoquestionbank'] = 'Export to question bank';
 $string['feedback'] = 'Feedback';
 $string['feedback_help'] = 'Enter here a feedback about this part of the assessment.';
 $string['feedbackgoeshere'] = 'Feedback goes here';
@@ -326,10 +434,13 @@ $string['grade'] = 'Grade';
 $string['gradeassessment'] = 'Grade assessment';
 $string['gradeautor'] = 'Autor\'s Grade';
 $string['graded'] = 'Graded';
+$string['gradedautomatically'] = 'Graded automatically';
 $string['gradedbyteacher'] = 'Graded by {$a}';
 $string['gradeforassessments'] = 'Grade for assessments';
+$string['gradeofchallenge'] = 'Grade of challenge: {$a}';
 $string['gradeofsubmission'] = 'Grade of submission: {$a}';
-$string['grading'] = 'Assess Answer';
+$string['gradetable'] = 'Grade table';
+$string['grading'] = 'Grading';
 $string['grading_help'] = '<P align="justify">This page allows to assess an answer submitted. The score given will depend on how the answer corresponds to what is required in the corresponding challenge.</P>
 <P align="justify">In order to facilitate the assessment of the answer, a set of assessment elements, each one covering an aspect to assess in the answer, will be used. For each assessment element it will be necessary to:
 <div align="justify">
@@ -416,12 +527,19 @@ $string['inserterror'] = 'Could not insert record in table {$a} in database.';
 $string['introattachments'] = 'Additional files';
 $string['introattachments_help'] = 'Additional files for use in the questournament, such as answer templates, may be added. Download links for the files will then be displayed on the quest page under the description.';
 $string['introductiontothechallenge'] = 'Description of the challenge';
+$string['invaliddateorder'] = 'The end date must be after the start date.';
 $string['invaliddates'] = 'Invalid dates. Must be between {$a->questdatestart} and {$a->questdateend}';
+$string['invalidquestioncomposition'] = 'The selected questions, versions or maximum marks are invalid.';
 $string['invalidtext'] = 'Text field is blank';
+$string['javascriptrequired'] = 'JavaScript is recommended to view the interactive scoring chart.';
 $string['lastname'] = 'Lastname';
 $string['lastname_help'] = '';
 $string['legend'] = 'A (B) [C] {$a} <br>A: Answers. B: Correct Answers. <br>C: Not assessed Answers. {$a} Answered by me.<br>';
 $string['linear'] = 'Lineal';
+$string['list'] = 'List';
+$string['listallchallenges'] = 'List all challenges';
+$string['listview'] = 'List view';
+$string['maxanswersreached'] = 'You have reached the maximum number of allowed answers for this challenge.';
 $string['maxcalification'] = 'Highest score';
 $string['maxcalification_help'] = '<P align="justify">This parameter sets the maximum score that each challenge of this QUESTOURnament will be able to reach, which means that it is also the maximum score that a submitted answer will be able to obtain.</P>
 <P align="justify">This value may be different for each challenge, but it can not be higher than the maximum score set for the QUESTOURnament to which they belong.</P>';
@@ -432,6 +550,7 @@ $string['messageprovider:evaluation_update'] = 'Changes in a grade';
 $string['mincalification'] = 'Lowest score';
 $string['mincalification_help'] = '<P align="justify">This parameter sets the minimum score that each challenge of this QUESTOURnament will be able to reach, which means that it is also the maximum score that a submitted answer will be able to obtain.</P>
 <P align="justify">This value may be different for each challenge, but it can not be lower than the minimum score set for the QUESTOURnament to which they belong.</P>';
+$string['mode'] = 'Mode';
 $string['modif'] = 'Modify';
 $string['modifanswersubmission'] = 'Modify answer for challenge {$a}';
 $string['modified'] = 'modified';
@@ -453,18 +572,19 @@ of its authorship, otherwise, the challenge could be refused of modified by the 
 </ul>';
 $string['modulehiddenerror'] = 'Module is hidden.';
 $string['modulename'] = 'QUESTOURnament';
-$string['modulename_help'] = 'QUESTOURnament is an activity that allows to develop contests. Students can engage in a competition to answer a set of challenges whose score changes in time. The challenge gains reward as the time goes by without any valid answer. This activity allows to place some preasure and motivation on the course. The game can be played individually or in teams. The scoreboard gives credit to the best participants.';
+$string['modulename_help'] = '<p>QUESTOURnament is an activity that allows teachers to run contests. Students can compete by answering a set of challenges whose score changes over time. A challenge gains value as time passes without a valid answer, providing controlled competitive pressure and motivation. The game can be played individually or in teams, and the leaderboard recognises the best participants.</p>';
+$string['modulename_tip'] = '<a href="https://juacas.github.io/moodle-mod_quest/" target="_blank" rel="noopener">Visit the QUESTOURnament website for documentation, features and teaching resources.</a>';
 $string['modulenameplural'] = 'QUESTOURnaments';
 $string['myanswers'] = 'My Answers';
 $string['myanswers_help'] = '<strong>My Answers</strong>: it shows all the answers submitted by current user. For each answer, the date of submission, the actions that can be taken (View Assessment, etc.), the score obtained and its title are shown. An answer could be modified or deleted by the teacher at any time, while the student will only be able to modify or delete an answer that he has submitted till it has been assessed.';
 $string['mychallenges'] = 'My Challenges';
 $string['mychallenges_help'] = '<div align="justify"><strong>My Challenges</strong>: it shows a list with all the challenges that have been added by the user that views this page. For each challenge, the current score (maximum score that it will be possible to obtain by an answer submitted at this time), the phase or state in which the challenge is, the number of answers submitted and the number of them that were right, the opening and closing dates and its title are shown. Pressing its title gives access to the complete description of a challenge. The teacher will be able to modify or delete a challenge at any time, while the author, if a student, will only be able to do it till the challenge that he has added is approved by the teacher.</div>';
 $string['myplace'] = 'My Place for this QUESTOURnament';
-$string['myplace_help'] = '<P align="justify">This page shows the information corresponding to the activity developed by each participant in the QUESTOURnament.</P>';
+$string['myplace_help'] = 'Your challenges, answers and points in this QUESTOURnament.';
 $string['myranking'] = 'My Ranking';
-$string['myranking_help'] = '<strong>My Raking</strong>: it shows the different scores obtained by a student in the QUESTOURnament, both the scores corresponding to the answers assessed and to the challenges proposed. This section will be not shown if the user that views this page is a teacher.';
+$string['myranking_help'] = 'Your points from challenges and assessed answers. This section is shown to students, not teachers.';
 $string['myrankingteam'] = 'My Ranking by Teams';
-$string['myrankingteam_help'] = '<strong>My Ranking by Teams</strong>: it shows the scores obtained by the team to which the student that views this page belongs. This option will only be shown if the QUESTOURnament has the <a href="help.php?component=quest&identifier=allowteams"">Allow Teams</a> option selected. This section will not be shown if the user that views this page is a teacher.';
+$string['myrankingteam_help'] = 'Your team’s points when team participation is enabled. This section is shown to students, not teachers.';
 $string['nanswers'] = 'Answers';
 $string['nanswers_help'] = '<strong>Answers</strong>: number of answers submitted by a student in this QUESTOURnament.';
 $string['nanswersassessment'] = 'Assessed Answers';
@@ -493,8 +613,17 @@ $string['noassessments'] = 'No Assesments';
 $string['noassessmentsdone'] = 'No assessments';
 $string['noattachments'] = 'No Attachments';
 $string['nocapabilityaddchallenge'] = 'You do not have enough permissions to add a challenge';
+$string['nochallenges'] = 'No challenges found';
+$string['nochallengestoshow'] = 'No challenges available to display at this time.';
+$string['nodescription'] = 'No description provided.';
+$string['nofeedback'] = 'No feedback provided';
 $string['nograde'] = 'No Grade';
 $string['nopermissionassessment'] = 'You have no permissions to view this assessment. You should be teacher or challenge\'s author.';
+$string['noquestionsselected'] = 'Select at least one question for this challenge.';
+$string['nosubmissionsfound'] = 'No challenges found to schedule.';
+$string['notauthorizedtodeleteanswer'] = 'You are not authorized to delete this answer.';
+$string['notauthorizedtodeletechallenge'] = 'You are not authorized to delete this challenge.';
+$string['notauthorizedtodeletesubmission'] = 'You are not authorized to delete this challenge.';
 $string['notavailable'] = 'not available';
 $string['noteonassessmentelements'] = 'Note that grading is broken down into a number of \'Assessment Elements\'.<br />
     This makes the grading easier and more consistent. As evaluator you must add these <br />
@@ -503,16 +632,19 @@ $string['noteonassessmentelements'] = 'Note that grading is broken down into a n
     to add them. You can change the number of elements using the Edit Author Assessment screen,<br />
     the elements themselves can be amended from the &quot;Edit Author Assessment&quot; screen.';
 $string['notgraded'] = 'Not Graded';
+$string['notpermissionanswer'] = 'You do not have permission to answer this challenge.';
 $string['notpermissionsubmission'] = 'You have no permissions to view this challenge.';
+$string['notsubmittedanswers'] = 'No answers submitted';
 $string['notsubmittedyet'] = 'No submission has been made yet';
 $string['nsubmissions'] = 'Number of challenges';
 $string['nsubmissions_help'] = '<strong>Number of Challenges</strong>: number of challenges proposed by a student in this QUESTOURnament.';
 $string['nsubmissionsassessment'] = 'Assessed challenges';
 $string['nsubmissionsassessment_help'] = '<strong>Assessed Challenges</strong>: number of challenges assessed of all the ones proposed by this student in the QUESTOURnament.';
 $string['numbermaxofanswers'] = 'Max number of right answers';
-$string['numberofattachments'] = 'Number of Attachments expected on Submissions';
-$string['numberofattachments_help'] = '<P align="justify">This parameter sets how many text fields will be presented to allow the submission of files when a student or a teacher makes a submission. The value of this parameter must be between 0 and 5. It will usually be 0 or 1, but in certain cases it can be necessary to allow the submission of more than one attachment. If the value specified is 0, that is also the default value for this parameter, this means that it will not be allowed to send any attachment with a submission.</P>
-<P align="justify">If, for example, the number specified is 3, and only 2 files are attached to the submission, that submission is made without showing any warning message. This means that, when a submission is made, it is allowed to attach any number of files up to the maximum specified by this parameter.</P>';
+$string['numberofattachments'] = 'Number of Attachments expected on Challenges';
+$string['numberofattachments_help'] = '<P align="justify">This parameter sets how many file upload fields are shown when a student or teacher creates or edits a challenge. The value must be between 0 and 5. It will usually be 0 or 1, but some challenges may need more than one attachment. A value of 0 (the default) means that attachments are not allowed on challenges.</P>
+<P align="justify">For example, if the number specified is 3 and only 2 files are attached to a challenge, it can still be saved without a warning. Any number of files up to this maximum is allowed.</P>';
+$string['numberofnegativeresponses'] = 'Number of negative responses';
 $string['of'] = 'of';
 $string['oldteam'] = 'Current team';
 $string['password'] = 'Password';
@@ -529,32 +661,43 @@ $string['permitviewautors_help'] = '<P align="justify">If this option, that is u
 $string['phase'] = 'Phase';
 $string['phase1'] = 'Inactive QUESTOURnament';
 $string['phase1answer'] = 'Not assessed';
+$string['phase1challenge'] = 'Approval pending';
 $string['phase1quest'] = 'Start pending';
 $string['phase1short'] = 'Set Up';
 $string['phase1submission'] = 'Approval pending';
 $string['phase2'] = 'Open QUESTOURnament';
 $string['phase2answer'] = 'Assessed by Author';
+$string['phase2challenge'] = 'Start pending';
 $string['phase2quest'] = 'In process';
 $string['phase2short'] = 'Submissions';
 $string['phase2submission'] = 'Start pending';
 $string['phase3'] = 'Closed QUESTOURnament';
 $string['phase3answer'] = 'Assessed by Teacher';
+$string['phase3challenge'] = 'Challenge in process';
 $string['phase3quest'] = 'QUESTOURnament ended';
 $string['phase3short'] = 'Both';
 $string['phase3submission'] = 'Challenge in process';
 $string['phase4'] = 'QUESTOURnament Closed.<br> Scores published';
 $string['phase4answer'] = 'Assessed as correct by Author';
+$string['phase4challenge'] = 'Challenge closed';
 $string['phase4short'] = 'Assessments';
 $string['phase4submission'] = 'Challenge closed';
 $string['phase5'] = 'Final score computation.';
 $string['phase5answer'] = 'Assessed as correct by Teacher';
+$string['phase5challenge'] = 'Assessed. Approval pending.';
 $string['phase5short'] = 'Compute';
 $string['phase5submission'] = 'Assessed. Approval pending.';
 $string['phase6'] = 'Show final score';
+$string['phase6challenge'] = 'Assessed. Challenge in process';
 $string['phase6short'] = 'Show final grades';
 $string['phase6submission'] = 'Assessed. Challenge in process';
+$string['phase7challenge'] = 'Assessed. Challenge closed';
 $string['phase7submission'] = 'Assessed. Challenge closed';
+$string['phase8challenge'] = 'Assessed. Start pending.';
 $string['phase8submission'] = 'Assessed. Start pending.';
+$string['phase_deflation'] = 'Deflationary Phase';
+$string['phase_inflation'] = 'Inflationary Phase';
+$string['phase_stationary'] = 'Stationary Phase';
 $string['picture'] = 'Picture';
 $string['picture_help'] = '';
 $string['pictureof'] = 'Picture of';
@@ -564,8 +707,10 @@ $string['points'] = 'Score';
 $string['points_help'] = '<strong>Score</strong>: It is the total individual score of the student (or the team), incorporating his challenges and answers scores and a percentage of his team score if it were necessary.';
 $string['pointsanswers'] = 'Ans.Score';
 $string['pointsanswers_help'] = '<strong>Answers Score</strong>: total score obtained by the student corresponding to the assessment of the answers submitted by him.';
+$string['pointschallenge'] = 'Challenges Score';
 $string['pointsmax'] = 'Max Score';
 $string['pointsmax_help'] = '<P align="justify">This parameter sets the maximum score that this challenge will be able to reach.<P align="justify">This value may be different for each challenge, but it can not be higher than the maximum score set for the QUESTOURnament to which they belong.</P>';
+$string['pointsmaxchallenge'] = 'Maximum score reached.';
 $string['pointsmaxsubmission'] = 'Maximum score reached.';
 $string['pointsmin'] = 'Min Score';
 $string['pointsmin_help'] = '<P align="justify">This parameter sets the minimum score that this challenge will be able to reach.<P align="justify">This value may be different for each challenge, but it can not be lower than the maximum score set for the QUESTOURnament to which they belong.</P>';
@@ -579,6 +724,74 @@ $string['predictedDurationQuestion'] = 'Estimation of the time to answer this qu
 $string['predictedDurationQuestion_help'] = 'Estimation of the time to answer this question.  This level is used to cathegorize the challenges. It is used for pedagogic research. This is an optional parameter.';
 $string['present'] = 'Present';
 $string['preview'] = 'Preview';
+$string['privacy:metadata:core_files'] = 'Files attached to challenges and answers submitted in QUESTOURnament.';
+$string['privacy:metadata:core_question'] = 'Question engine attempt data generated when answering autograded questions.';
+$string['privacy:metadata:quest_answers'] = 'Stores answers submitted by users to challenges.';
+$string['privacy:metadata:quest_answers:attachment'] = 'Attached files submitted with the answer.';
+$string['privacy:metadata:quest_answers:commentforteacher'] = 'Private comments from the student to the teacher.';
+$string['privacy:metadata:quest_answers:date'] = 'Timestamp when the answer was submitted.';
+$string['privacy:metadata:quest_answers:description'] = 'The answer content or description.';
+$string['privacy:metadata:quest_answers:grade'] = 'Grade or points awarded for the answer.';
+$string['privacy:metadata:quest_answers:perceiveddifficulty'] = 'Student perceived difficulty rating of the challenge.';
+$string['privacy:metadata:quest_answers:pointsmax'] = 'Maximum points achievable for this answer.';
+$string['privacy:metadata:quest_answers:questid'] = 'The ID of the QUESTOURnament activity.';
+$string['privacy:metadata:quest_answers:questionusageid'] = 'Question engine attempt usage identifier for autograded questions.';
+$string['privacy:metadata:quest_answers:submissionid'] = 'The ID of the challenge being answered.';
+$string['privacy:metadata:quest_answers:title'] = 'The title of the answer.';
+$string['privacy:metadata:quest_answers:userid'] = 'The ID of the user submitting the answer.';
+$string['privacy:metadata:quest_assessments'] = 'Stores assessments performed on answers to challenges.';
+$string['privacy:metadata:quest_assessments:answerid'] = 'The ID of the answer being assessed.';
+$string['privacy:metadata:quest_assessments:commentsforteacher'] = 'Private comments for the teacher regarding the assessment.';
+$string['privacy:metadata:quest_assessments:commentsteacher'] = 'Teacher comments regarding the assessment.';
+$string['privacy:metadata:quest_assessments:dateassessment'] = 'Timestamp when the assessment was created.';
+$string['privacy:metadata:quest_assessments:pointsautor'] = 'Points awarded by the challenge author.';
+$string['privacy:metadata:quest_assessments:pointsteacher'] = 'Points awarded by the teacher.';
+$string['privacy:metadata:quest_assessments:questid'] = 'The ID of the QUESTOURnament activity.';
+$string['privacy:metadata:quest_assessments:teacherid'] = 'The ID of the teacher who reviewed the assessment.';
+$string['privacy:metadata:quest_assessments:userid'] = 'The ID of the user who performed the assessment.';
+$string['privacy:metadata:quest_assessments_autors'] = 'Stores assessments of the authoring work of challenges.';
+$string['privacy:metadata:quest_assessments_autors:commentsforteacher'] = 'Private comments for the teacher.';
+$string['privacy:metadata:quest_assessments_autors:commentsteacher'] = 'Teacher feedback for the author.';
+$string['privacy:metadata:quest_assessments_autors:dateassessment'] = 'Timestamp when the author assessment was performed.';
+$string['privacy:metadata:quest_assessments_autors:points'] = 'Points awarded for authoring the challenge.';
+$string['privacy:metadata:quest_assessments_autors:questid'] = 'The ID of the QUESTOURnament activity.';
+$string['privacy:metadata:quest_assessments_autors:submissionid'] = 'The ID of the challenge being assessed.';
+$string['privacy:metadata:quest_assessments_autors:userid'] = 'The ID of the user who evaluated the challenge.';
+$string['privacy:metadata:quest_calification_users'] = 'Stores cumulative points and participation statistics for users in a tournament.';
+$string['privacy:metadata:quest_calification_users:nanswers'] = 'Total number of answers submitted.';
+$string['privacy:metadata:quest_calification_users:nsubmissions'] = 'Total number of challenges proposed.';
+$string['privacy:metadata:quest_calification_users:points'] = 'Total score accumulated in the tournament.';
+$string['privacy:metadata:quest_calification_users:pointsanswers'] = 'Points earned from answering challenges.';
+$string['privacy:metadata:quest_calification_users:pointssubmission'] = 'Points earned from proposing challenges.';
+$string['privacy:metadata:quest_calification_users:questid'] = 'The ID of the QUESTOURnament activity.';
+$string['privacy:metadata:quest_calification_users:teamid'] = 'The ID of the team the user belongs to.';
+$string['privacy:metadata:quest_calification_users:userid'] = 'The ID of the user.';
+$string['privacy:metadata:quest_elements_assessments'] = 'Stores criterion-level evaluation details for answer assessments.';
+$string['privacy:metadata:quest_elements_assessments:answer'] = 'Evaluation text or feedback for the element.';
+$string['privacy:metadata:quest_elements_assessments:assessmentid'] = 'The ID of the parent assessment.';
+$string['privacy:metadata:quest_elements_assessments:calification'] = 'Score or grade awarded for the element.';
+$string['privacy:metadata:quest_elements_assessments:commentteacher'] = 'Teacher comment on the element.';
+$string['privacy:metadata:quest_elements_assessments:questid'] = 'The ID of the QUESTOURnament activity.';
+$string['privacy:metadata:quest_elements_assessments:userid'] = 'The ID of the evaluating user.';
+$string['privacy:metadata:quest_items_assesments_autor'] = 'Stores criterion-level evaluation details for author assessments.';
+$string['privacy:metadata:quest_items_assesments_autor:answer'] = 'Evaluation text or feedback for the element.';
+$string['privacy:metadata:quest_items_assesments_autor:assessmentautorid'] = 'The ID of the parent author assessment.';
+$string['privacy:metadata:quest_items_assesments_autor:calification'] = 'Score or grade awarded for the element.';
+$string['privacy:metadata:quest_items_assesments_autor:commentteacher'] = 'Teacher comment on the element.';
+$string['privacy:metadata:quest_items_assesments_autor:questid'] = 'The ID of the QUESTOURnament activity.';
+$string['privacy:metadata:quest_items_assesments_autor:userid'] = 'The ID of the evaluating user.';
+$string['privacy:metadata:quest_submissions'] = 'Stores challenges proposed by users in the QUESTOURnament activity.';
+$string['privacy:metadata:quest_submissions:attachment'] = 'Attached files associated with the proposed challenge.';
+$string['privacy:metadata:quest_submissions:commentteacherauthor'] = 'Teacher feedback for the challenge author.';
+$string['privacy:metadata:quest_submissions:commentteacherpupil'] = 'Teacher comments for the challenge author and pupils.';
+$string['privacy:metadata:quest_submissions:description'] = 'The description or body of the proposed challenge.';
+$string['privacy:metadata:quest_submissions:points'] = 'The points allocated or earned for this challenge.';
+$string['privacy:metadata:quest_submissions:questid'] = 'The ID of the QUESTOURnament activity.';
+$string['privacy:metadata:quest_submissions:timecreated'] = 'Timestamp when the challenge was created.';
+$string['privacy:metadata:quest_submissions:title'] = 'The title of the proposed challenge.';
+$string['privacy:metadata:quest_submissions:userid'] = 'The ID of the user proposing the challenge.';
+$string['privacy:request:deleted:content'] = '[The author requested the deletion of their personal data]';
+$string['privacy:request:deleted:title'] = '[Deleted challenge]';
 $string['processingquest'] = 'Processing {$a}';
 $string['quest:addchallenge'] = 'Add a new challenge to the tournament';
 $string['quest:addinstance'] = 'Add a new instance of a tournament (Deprecated)';
@@ -612,20 +825,34 @@ $string['quest:preview'] = 'View extended information and links of the different
 $string['quest:view'] = 'view a tournament';
 $string['quest:viewotherattemptsowners'] = 'View owners of other attempts';
 $string['quest:viewreports'] = 'View the questournament reports';
+$string['questapprovechallenge'] = 'Challenges approved in QUESTOURnament';
 $string['questapprovesubmission'] = 'Challenges approved in QUESTOURnament';
 $string['questassessments'] = 'Assesments in QUESTOURnament';
 $string['questcomments'] = 'Commments in QUESTOURnament';
 $string['questgraphYlegend'] = 'Score';
-$string['questgraphtitle'] = 'Potential scores';
+$string['questgraphtitle'] = 'Potential score';
+$string['questionbank'] = 'Question bank';
+$string['questionbankdisabled'] = 'Question-bank challenges cannot be created in this activity or on this site.';
+$string['questioncomposerinstructions'] = 'Drag questions to reorder them, set a maximum mark for each one, or remove a question. The final grade is weighted by the maximum marks.';
+$string['questionmark'] = 'Maximum mark';
+$string['questionpreviewattachments'] = 'This question allows up to {$a->count} attachment(s). Uploading is disabled in this preview.';
+$string['questionpreviewattachmentsrequired'] = 'This question requires at least {$a->required} attachment(s) and allows up to {$a->allowed} attachment(s). Uploading is disabled in this preview.';
 $string['quests'] = 'QUESTs';
 $string['questsubmitanswer'] = 'Answers submitted to QUESTOURnament';
+$string['questsubmitchallenge'] = 'Challenges submitted to QUESTOURnament';
 $string['questsubmitsubmission'] = 'Challenges submitted to QUESTOURnament';
+$string['rank'] = 'Rank';
+$string['rankingoverview'] = 'Leaderboard summary';
 $string['recalificationall'] = 'Re-assess all answers';
 $string['reevaluate'] = 'Re-assess';
 $string['removeelement'] = 'Remove element';
+$string['reorderchallenges'] = 'Schedule challenges';
+$string['reorderchallengesdesc'] = 'Drag challenges or their start/end handles to schedule them within the tournament timeframe.';
+$string['reorderchallengestitle'] = 'Challenge Scheduling & Timeline';
 $string['reply'] = 'Answer';
 $string['resetchanges'] = 'Reset changes';
 $string['resetquestallanswers'] = 'Erase all answers and scores.';
+$string['resetschedule'] = 'Reset schedule';
 $string['responsetochallenge'] = 'Answer to the challenge';
 $string['resume24hours'] = 'Summary of events for challenges added or modified in the QUESTOURnament {$a->name} in the past 24 hours';
 $string['resumeindividual'] = 'View Individual Summary.';
@@ -634,8 +861,10 @@ $string['resumeteams'] = 'View Summary by Teams';
 $string['returnto'] = 'Return to';
 $string['rubric'] = 'Rubric';
 $string['save'] = 'Save';
+$string['savechallenge'] = 'Save challenge';
 $string['savedok'] = 'Saved OK';
 $string['savemyassessment'] = 'Save my Assessment';
+$string['savemychallenge'] = 'Save my Challenge';
 $string['savemycomment'] = 'Save my Comment';
 $string['savemygrading'] = 'Save my Grading';
 $string['savemysubmission'] = 'Save my Challenge';
@@ -649,6 +878,16 @@ $string['scaleexcellent7'] = '7 point Excellent/Very Poor scale';
 $string['scalegood3'] = '3 point Good/Poor scale';
 $string['scalepresent'] = '2 point Present/Absent scale';
 $string['scaleyes'] = '2 point Yes/No scale';
+$string['scheduleboundaryexpanded'] = 'Tournament dates were synchronized with challenges ({$a->start} - {$a->end}).';
+$string['scheduleerroranswerafterend'] = 'Challenge \'{$a->title}\' has answers submitted at {$a->date}. End date cannot be moved before this time.';
+$string['scheduleerroranswerbeforestart'] = 'Challenge \'{$a->title}\' already has answers submitted at {$a->date}. Start date cannot be moved after this time.';
+$string['scheduleerroranswercorrect'] = 'Challenge \'{$a->title}\' has a verified correct answer at {$a->date}. The active schedule must encompass this date.';
+$string['scheduleerrordatesinvalid'] = 'Invalid dates for challenge \'{$a}\': end date must be strictly after start date.';
+$string['scheduleerrorinvaliditem'] = 'Invalid challenge schedule item.';
+$string['scheduleerrornotfound'] = 'Challenge {$a} not found in this tournament.';
+$string['schedulelegend'] = 'Timeline legend';
+$string['schedulesaved'] = 'Challenge schedule successfully saved.';
+$string['schedulesavedcount'] = 'Schedule saved successfully ({$a} challenges updated).';
 $string['see'] = 'See';
 $string['seeassessment'] = 'See Assesment';
 $string['seeassessment_help'] = '<P align="justify">This page shows the assessment of a submitted answer, this way, if the student does not agree with the assessment he can claim its revision to the teacher or to the author of the challenge, being it possible to explain the reason of his disagreement with the assessment.
@@ -659,6 +898,8 @@ $string['seeassessmentautor_help'] = '<P align="justify">This page shows the ass
 <P align="justify">The teachers will be able to manually modify the score given in order to consider those aspects that may not have been taken into account in the assessment form used for automatic assessment.</P>';
 $string['seevaluate'] = 'See assesment';
 $string['select'] = 'Select';
+$string['selectquestion'] = 'Select question';
+$string['selectquestionbank'] = 'Question bank';
 $string['selfassessment'] = 'Self Assessment';
 $string['shouldSelectDifficultyLevel'] = 'Please, select a difficulty level';
 $string['showanswer'] = 'Show answer';
@@ -668,6 +909,10 @@ $string['showanswersuser'] = 'Show individual answers';
 $string['showauthoringdetails'] = 'Show authoring details to the students in classifications.';
 $string['showauthoringdetails_help'] = '<P align="justify">If this option is selected, the ranking will show the partial data related to the challenges added and assessed by each student and by each team, besides the score obtained with the answers submitted to the different challenges proposed. It must be also taken into account that this can mean that the anonymity of the authors of the challenges is not kept, specially in small groups with a low level of participation.</P>';
 $string['showcalification'] = 'Show scores';
+$string['showchallenge'] = 'Show Challenge';
+$string['showchallenges'] = 'Show Challenges';
+$string['showchallengesteam'] = 'Show Team Challenges';
+$string['showchallengesuser'] = 'Show Individual Challenges';
 $string['showclasifindividual'] = 'Show Individual Classification';
 $string['showclasifindividual_help'] = '<P align="justify">This option is selected by default and allows that both the individual ranking and the team raking are shown, the latter one only in case that the option <a href="help.php?component=quest&identifier=allowteams"">Allow Teams</a> is selected.</P>
 <P align="justify">If the option Allow Teams is not selected, it will only make sense to choose the default value of this option that shows the individual ranking.</P>';
@@ -678,19 +923,34 @@ $string['showsubmission'] = 'Show Submission';
 $string['showsubmissions'] = 'Show Submissions';
 $string['showsubmissionsteam'] = 'Show Team Submissions';
 $string['showsubmissionsuser'] = 'Show Individual Submissions';
+$string['simplechallengedisabled'] = 'Basic challenges cannot be created in this activity or on this site.';
 $string['specimenanswer'] = 'Assessment Form for Answers';
 $string['specimenanswer_help'] = '<P align="justify">This page shows the assessment form that is used to assess each of the answers submitted to a challenge of this QUESTOURnament.</P>';
 $string['specimenassessmentform'] = 'Example Assessment Form';
-$string['specimenassessmentformanswer'] = 'Example Assessment Form for answers';
-$string['specimenassessmentformsubmission'] = 'Example Assessment Form for challenges';
+$string['specimenassessmentformanswer'] = 'Evaluator for answers';
+$string['specimenassessmentformchallenge'] = 'Example Assessment Form for challenges';
+$string['specimenassessmentformsubmission'] = 'Evaluator for authors';
 $string['specimensubmission'] = 'Assessment Form for Challenges';
 $string['specimensubmission_help'] = '<P align="justify">This page shows the assessment form that is used to assess the challenges proposed by students in this QUESTOURnament.</P>';
+$string['strategy_equal'] = 'Equal distribution';
+$string['strategy_equal_desc'] = 'Divides the tournament duration equally among all challenges in chronological order.';
+$string['strategy_equal_short'] = 'Distribute the tournament duration equally';
+$string['strategy_equal_tip'] = 'Ideal when all challenges should have a similar amount of time.';
+$string['strategy_proportional'] = 'Bounded proportional';
+$string['strategy_proportional_desc'] = 'Allocates the tournament duration proportionally to current challenge durations while limiting extreme outliers.';
+$string['strategy_proportional_short'] = 'Distribute time according to current durations';
+$string['strategy_proportional_tip'] = 'Useful when some challenges need more time than others.';
+$string['strategy_sequential'] = 'Sequential chaining';
+$string['strategy_sequential_desc'] = 'Places challenges one after another without gaps or overlaps, preserving their current durations where possible.';
+$string['strategy_sequential_short'] = 'Chain challenges preserving their current duration';
+$string['strategy_sequential_tip'] = 'Useful when each challenge already has the desired duration.';
 $string['studentassessments'] = '{$a} Assessments';
+$string['studentchallenges'] = '{$a} Challenges';
+$string['studentchallengesforassessment'] = '{$a} Student Challenges for Assessment';
 $string['studentgrades'] = '{$a} Grades';
 $string['studentsubmissions'] = '{$a} Submissions';
 $string['studentsubmissionsforassessment'] = '{$a} Student Submissions for Assessment';
 $string['subject'] = 'Subject:';
-$string['submission'] = 'Challenge';
 $string['submissionend'] = 'Closing date of the Challenge';
 $string['submissionend_help'] = '<P align="justify">It allows to set the date in which a challenge will be closed. After this date it will not be able to submit any more answers to the challenge. However, the teachers will still be able to assess the author of the challenge attending to both the challenge proposed and the assessments made. Moreover, the authors of the challenges will still be able to assess the answers submitted to them.</P>
 <P align="justify">Once a challenge is closed, all the participants will be able to see all the answers submitted, as well as the assessments made and the scores obtained.</P>
@@ -709,6 +969,7 @@ $string['submitted'] = 'Challenge Submitted';
 $string['submittedanswer'] = 'Answer submitted';
 $string['submittedby'] = 'Submitted by';
 $string['suggestedgrade'] = 'Suggested Grade';
+$string['summarydata'] = 'Summary';
 $string['team'] = 'Team';
 $string['team_help'] = '';
 $string['teamcalification'] = 'Team score';
@@ -733,6 +994,7 @@ $string['tinitial_help'] = '<P align="justify">This parameter sets the length of
 <P align="justify">The objective is that the students answer as soon as possible in order to obtain the maximum possible score.</P>';
 $string['title'] = 'Title';
 $string['today'] = 'Today';
+$string['totalpoints'] = 'Total points';
 $string['tothechallenge'] = 'to the challenge';
 $string['typecalification'] = 'Type of grading';
 $string['typecalification_help'] = '<P align="justify">This parameter sets the way in which the score of a challenge will vary. Each challenge proposed will have an initial score set by the parameter <a href="help.php?component=quest&identifier=initialpoints"">Initial Score</a>, a maximum score set by the parameter <a href="help.php?component=quest&identifier=maxcalification"">Highest Score</a> and an <a href="help.php?component=quest&identifier=tinitial"">Initial Time</a> that sets the period, in days, from the date when the challenge opens during which the score of the challenge will not vary unless a correct answer is submitted and assessed. When the initial time is over, or once a correct answer is submitted and assessed, the score of a challenge will start to vary from the initial score in two possible different ways according to the value of this parameter:</P>
@@ -750,9 +1012,11 @@ $string['typegrade_help'] = '<P align="justify">This parameter sets which is the
 $string['typeindividual'] = 'Students';
 $string['typeofscale'] = 'Type of Scale';
 $string['typeteam'] = 'Team';
+$string['unknownactionerror'] = 'Unknown action: {$a}';
 $string['unknownauthor'] = 'Unknown author';
-$string['unkownactionerror'] = 'Fatal error: Unknown action {$a}.';
+$string['unsavedchanges'] = 'You have unsaved changes.';
 $string['updatecomment'] = 'Comment updated';
+$string['useexistingquestion'] = 'Use this question';
 $string['usepassword'] = 'Use Password';
 $string['usepassword_help'] = '<P align="justify">This option allows to set an access password to this QUESTOURnament. To protect a QUESTOURnament with a password can be necessary, for example, when that QUESTOURnament is used by several groups of students in a course, and must be opened to each group in a different time slot, in which case, the access password will not allow that a group of students can access the QUESTOURnament once it is opened to another different group of students but not for them yet.</P>';
 $string['user'] = 'User';
@@ -767,8 +1031,10 @@ $string['viewassessmentautor'] = 'View Challenge Assessment';
 $string['viewclasification'] = 'View Ranking';
 $string['viewclasificationglobal'] = 'View Global Clasification';
 $string['viewclasificationteams'] = 'View Team Clasification';
+$string['viewinquestionbank'] = 'View in question bank';
 $string['warningonamendingelements'] = 'WARNING: There are submitted assessments. <br />Do NOT change the number  of elements, the scale types or the element weights.';
 $string['weight'] = 'Weight';
 $string['weights'] = 'Weights';
 $string['wrongpassword'] = 'Incorrect password for this QUESTOURnament';
+$string['wrongteam'] = 'You are not a member of this team';
 $string['yourfeedbackgoeshere'] = 'Your Feedback goes Here';

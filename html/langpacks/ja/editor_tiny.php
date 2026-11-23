@@ -168,6 +168,7 @@ $string['tiny:failed_to_initialize_plugin_0'] = 'プラグイン初期化に失�
 $string['tiny:failed_to_load_plugin_0_from_url_1'] = 'プラグイン読み込みに失敗しました:  {0} - 読み込み先URL {1}';
 $string['tiny:failed_to_load_plugin_url_0'] = 'プラグインURL読み込みに失敗しました: {0}';
 $string['tiny:failed_to_upload_image_0'] = '画像アップロードに失敗しました: {0}';
+$string['tiny:field_label_and_rich_textarea_help'] = '{$a} リッチテキストエリアです。メニューを表示するには「ALT-F9」を押してください。ツールバーを表示するには「ALT-F10」を押してください。ヘルプを表示するには「ALT-0」を押してください。';
 $string['tiny:file'] = 'ファイル';
 $string['tiny:find'] = '探す';
 $string['tiny:find_and_replace'] = '検索および置換';

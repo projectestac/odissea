@@ -102,7 +102,6 @@ $string['saveallfeedback'] = 'Enregistrer tous mes feedbacks';
 $string['savefeedback'] = 'Enregistrer le feedback';
 $string['search:activity'] = 'Journal – information sur l’activité';
 $string['search:entry'] = 'Journal – entrées';
-$string['showoverview'] = 'Afficher le sommaire des journaux sur le Tableau de bord';
 $string['showrecentactivity'] = 'Afficher les activités récentes';
 $string['startoredit'] = 'Commencer ou modifier mon journal';
 $string['userswhocompletedthejournal'] = 'Les utilisateurs qui ont complété le journal';

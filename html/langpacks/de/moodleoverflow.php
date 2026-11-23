@@ -219,7 +219,21 @@ $string['maxtimehaspassed'] = 'Die Bearbeitungszeit für diesen Beitrag ist abge
 $string['message'] = 'Mitteilung';
 $string['messageprovider:posts'] = 'Benachrichtigung neuer Beiträge';
 $string['modulename'] = 'Moodleoverflow';
-$string['modulename_help'] = 'Das Moodleoverflow-Modul ermöglicht es Teilnehmer/innen eine Frage-Antwort Forum Struktur zu nutzen. Die Beiträge im Forum werden nicht chronologisch angezeigt, sondern nach ihrer Bewertung geordnet.';
+$string['modulename_help'] = '###### Hauptmerkmale
+- Bietet eine nichtlineare, nicht chronologische Frage-und-Antwort-Forenstruktur
+- Beiträge werden nach gemeinschaftlicher Abstimmung und nicht nach Zeit sortiert
+- Teilnehmer/innen können Beiträge bewerten und anhand der Bewertungen Reputationspunkte sammeln
+- Diskussionsstarter können Antworten als hilfreich markieren; Trainer/innen können richtige Lösungen markieren
+- Hochgradig anpassbar an unterschiedliche Kursanforderungen
+
+###### Anwendungsmöglichkeiten
+- Erleichterung von Q&A-Diskussionen für Aufgaben, Projekte oder Prüfungen
+- Förderung der gegenseitigen Unterstützung und der gemeinsamen Problemlösung
+- Hervorhebung der hilfreichsten Antworten durch Abstimmungen und Validierung durch Trainer/innen
+- Nutzung von Reputationspunkten zur Motivation für hochwertige Beiträge
+- Erstellung dynamischer, interaktiver Foren für grosse Klassen oder komplexe Themen';
+$string['modulename_summary'] = 'Bietet ein Frage-und-Antwort-Forum, in dem Beiträge nach Stimmen statt nach Zeit eingestuft werden, mit Reputationswerten, der Kennzeichnung hilfreicher Antworten und der Bestätigung korrekter Lösungen durch Trainer/innen';
+$string['modulename_tip'] = 'Entdecken Sie das offizielle <a href=\'https://github.com/learnweb/moodle-mod_moodleoverflow/wiki\'>Wiki</a> für weitere Details und Anpassungsmöglichkeiten!';
 $string['modulenameplural'] = 'Moodleoverflows';
 $string['moodleoverflow'] = 'Moodleoverflow';
 $string['moodleoverflow:addinstance'] = 'Neue Moodleoverflow Instanz hinzufügen';
@@ -404,6 +418,7 @@ $string['tasksendreviewmails'] = 'Moodleoverflow-Task zum Versenden einer E-Mail
 $string['taskupdategrades'] = 'Moodleoverflow-Task, die die Bewertungen zu aktualisiert';
 $string['teacherrating'] = 'Lösung';
 $string['there_are_no_posts_needing_review'] = 'Es gibt keine weiteren Beiträge mehr, die geprüft werden müssen.';
+$string['topicmove_success'] = 'Diskussion erfolgreich nach {$a} verschoben.';
 $string['tracking'] = 'Markieren?';
 $string['trackingoff'] = 'Aus';
 $string['trackingon'] = 'An';
@@ -422,6 +437,7 @@ $string['unreadposts'] = 'Ungelesene Beiträge';
 $string['unreadpostsnumber'] = '{$a} ungelesene Beiträge';
 $string['unreadpostsone'] = '1 ungelesener Beitrag';
 $string['unsubscribe'] = 'Ich möchte das Forum abbestellen';
+$string['unsubscribed'] = 'Gekündigt';
 $string['unsubscribediscussion'] = 'Ich möchte das Thema abbestellen';
 $string['unsubscribediscussionlink'] = 'Ich möchte dieses Thema abbestellen: {$a}';
 $string['unsubscribelink'] = 'Ich möchte dieses Forum abbestellen: {$a}';

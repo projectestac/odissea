@@ -1,11 +1,13 @@
-@javascript @qtype_wq @wqmdl-282
+@qtype @qtype_wq @mod_quiz @wq @javascript @teacher @questionbank @regression
 Feature: Delete the quiz activity; Question bank remains intact
     In order to retire a quiz without losing questions
     As a teacher
     I want to delete the quiz activity while retaining the bank entries
 
 Background:
-    Given the following "users" exist:
+    Given the "wiris" filter is "on"
+    And the "wiris" filter has maximum priority
+    And the following "users" exist:
         | username | firstname | lastname | email                |
         | teacher1 | Teacher   | One      | teacher1@example.com |
         | student1 | Student   | One      | student1@example.com |
@@ -58,7 +60,7 @@ Scenario: Delete "Wiris Quiz" from the course and verify Question bank still hol
     And I am on "Course 1" course homepage with editing mode on
     When I delete "Wiris Quiz" activity
     # Check the question bank is unaffected.
-    When I navigate to "Question bank" in current page administration
+    And I am on the "Course 1" "core_question > course question bank" page
     Then I should see "TF WIRIS – sky color"
     And I should see "Multichoice Wiris"
     And I should see "Essay Wiris"

@@ -502,7 +502,7 @@ Die registrierten Tools  werden in vier Kategorien angezeigt:
 * **Zurückgewiesen** - Die Registrierung wurde vom Anbieter abgewiesen. Prüfen Sie die Einstellungen und verschieben Sie sie zurück in die Kategorie \'Konfiguriert\', damit der Prozess erneut starten kann.';
 $string['toolproxyregistration'] = 'Registrierung eines externen Tools';
 $string['toolregistration'] = 'Registrierung eines externen Tools';
-$string['toolsetup'] = 'Konfiguration eines externes Tools';
+$string['toolsetup'] = 'Konfiguration eines externen Tools';
 $string['tooltypeadded'] = 'Vorkonfiguriertes Tool hinzugefügt';
 $string['tooltypedeleted'] = 'Vorkonfiguriertes Tool gelöscht';
 $string['tooltypenotdeleted'] = 'Das vorkonfigurierte Tool kann nicht gelöscht werden.';

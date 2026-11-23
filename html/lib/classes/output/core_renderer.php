@@ -1261,6 +1261,10 @@ class core_renderer extends renderer_base {
         if ($blockid !== null) {
             $menu->set_owner_selector('#' . $blockid);
         }
+        $label = get_string('actionsmenu');
+        $icon = $this->pix_icon('i/menu', '') . html_writer::span($label, 'sr-only');
+        $menu->triggerattributes += ['title' => $label];
+        $menu->set_menu_trigger($icon, 'btn btn-sm icon-no-margin ms-1 p-1');
         $menu->attributes['class'] .= ' block-control-actions commands';
         return $this->render($menu);
     }
@@ -2904,7 +2908,9 @@ EOD;
      * @return string the HTML to output.
      */
     public function skip_link_target($id = null) {
-        return html_writer::span('', '', ['id' => $id]);
+        // The tabindex="-1" makes the target focusable so that activating the skip link moves
+        // keyboard focus to it, rather than leaving focus on the link (which would trap the user).
+        return html_writer::span('', '', ['id' => $id, 'tabindex' => -1]);
     }
 
     /**

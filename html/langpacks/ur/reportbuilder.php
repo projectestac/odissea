@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['enabled'] = 'فعال';
 $string['reports'] = 'رپورٹیں';

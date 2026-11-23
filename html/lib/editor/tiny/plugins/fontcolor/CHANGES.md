@@ -2,6 +2,12 @@
 
 ## Changes
 
+### V1.4
+
+- New setting `usefortable` that uses the defined text and background colors for the
+  table settings as well. Thanks to [Kristian Ringer](https://github.com/kristian-94).
+- Remove support for Moodle < 4.5.
+
 ### V1.3
 
 - Support for Moodle 5.2

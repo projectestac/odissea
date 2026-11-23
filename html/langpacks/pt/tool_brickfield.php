@@ -264,5 +264,5 @@ $string['totalgrouperrors'] = 'Total (soma) de erros por tipo de conteúdo';
 $string['updatesummarydata'] = 'Atualização dos dados de resumo do site';
 $string['usersmobileregistered'] = 'Número de utilizadores com dispositivos móveis registados ({$a})';
 $string['validationerror'] = 'Ocorreu um erro na validação da chave de registo. Verifique se estão corretos o URL e as chaves do seu site registado.';
-$string['warningcheckidbody'] = 'Existe um problema com uma verificação Brickfield que está ativa mas não listada na base de dados. Por favor, averigue a situação.';
+$string['warningcheckidbody'] = 'Existe um problema com a verificação Brickfield que está ativa mas não listada na base de dados. Por favor, averigue a situação.';
 $string['warningcheckidsubject'] = 'Aviso de ID de verificação da ferramenta Brickfield';

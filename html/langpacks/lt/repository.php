@@ -260,6 +260,7 @@ $string['unknownoriginal'] = 'Nežinomas';
 $string['unknownsource'] = 'Nežinomas šaltinis';
 $string['unzipped'] = 'Išskleista sėkmingai';
 $string['upload'] = 'Įkelti šį failą';
+$string['uploaderror'] = 'Failo įkėlimo klaida';
 $string['uploading'] = 'Įkeliama...';
 $string['uploadsucc'] = 'Failas sėkmingai įkeltas';
 $string['uselatestfile'] = 'Naudoti naujausią failą';

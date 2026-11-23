@@ -65,8 +65,6 @@ $string['addpricecategoryinfo'] = 'È possibile aggiungere un\'altra categoria d
 $string['address'] = 'Indirizzo';
 $string['addsemester'] = 'Aggiungi semestre';
 $string['addtocalendar'] = 'Aggiungi al calendario del corso';
-$string['addtocalendardesc'] = 'Gli eventi del calendario del corso sono visibili a TUTTI gli utenti all\'interno di un corso. Se non vuoi che vengano creati affatto,
-puoi disattivare questa impostazione e bloccarla per impostazione predefinita. Non preoccuparti: gli eventi del calendario utente per le opzioni prenotate verranno comunque creati.';
 $string['addtogroup'] = 'Iscrivi automaticamente gli utenti nel gruppo';
 $string['addtogroup_help'] = 'Iscrizione automatica degli utenti al gruppo collegato alle impostazioni dell\'opzione di prenotazione. Il gruppo verrà creato automaticamente con il nome: Nome prenotazione - Nome opzione';
 $string['addusertogroup'] = 'Aggiungi utente al gruppo:';
@@ -460,7 +458,6 @@ $string['bookedtextsubjectbookingmanager'] = 'Nuova prenotazione per {$a->title}
 $string['bookedusers'] = 'Utenti prenotati';
 $string['bookelectivesbtn'] = 'Prenota corsi opzionali selezionati';
 $string['booking'] = 'Prenotazione';
-$string['booking:addeditownoption'] = 'Aggiungere una nuova opzione e modifica le tue opzioni.';
 $string['booking:addinstance'] = 'Aggiungere nuova prenotazione';
 $string['booking:bookanyone'] = 'Autorizzato a prenotare chiunque';
 $string['booking:bookforothers'] = 'Prenota per altri';

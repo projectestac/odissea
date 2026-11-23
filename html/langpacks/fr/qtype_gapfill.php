@@ -88,7 +88,6 @@ $string['pluginnameadding'] = 'Ajout d’une question de type Texte à trous';
 $string['pluginnameediting'] = 'Édition d’une question de type Texte à trous';
 $string['pluginnamesummary'] = 'Une question de type texte à trous. Permet des réponses par glisser-déposer ou déroulantes avec des distracteurs. Syntaxe très facile à apprendre';
 $string['privacy:null_reason'] = 'La question de type Texte à trous ne conserve aucune donnée';
-$string['questioncatnotfound'] = 'Catégorie de question non trouvée. Cliquez <a href={$a}>ici</a> pour ré-initialiser, puis sur le bouton retour arrière de votre navigateur';
 $string['questionsmissing'] = 'Vous n’avez pas ajouté de mot à effacer dans le texte de votre question';
 $string['questiontext'] = 'Texte de la question';
 $string['questiontext_help'] = 'Veuillez entourer les mots à supprimer par des délimiteurs';

@@ -275,7 +275,12 @@
         justify-content: start;
         width: 36px;
         height: 99px;
-        background-color: #ecf3ff;
+        background-color: var(--c4l-ui-variant-bg);
+        /* Divider against the label. An inset shadow rather than border-left so
+           the strip stays exactly 36px wide and the glyphs do not shift.
+           Only inside this breakpoint: below it the strip spans the whole
+           button, and a left edge would land against the button's own border. */
+        box-shadow: inset 1px 0 0 var(--c4l-ui-variant-edge);
         margin: 0;
     }
 
@@ -283,19 +288,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #1679f9;
+        color: var(--c4l-ui-accent);
         height: 33px;
         width: 36px;
     }
 
     .c4lt-dialog-button:hover,
     .c4lt-dialog-button:active {
-        box-shadow: 0 0 0 3px rgba(22, 121, 249, 0.3);
+        box-shadow: 0 0 0 3px var(--c4l-ui-focus);
     }
 
     .c4lt-dialog-button .c4l-button-variants .c4l-button-variant:first-child,
     .c4lt-dialog-button .c4l-button-variants .c4l-button-variant:nth-child(2) {
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid var(--c4l-ui-variant-sep);
     }
 
     .c4lt-dialog-button:hover .c4l-button-variants .c4l-button-variant {
@@ -344,9 +349,9 @@
     }
 
     .c4l-preview-default {
-        border: 1px solid #e1e5ee;
+        border: 1px solid var(--c4l-ui-panel-border);
         border-radius: 8px;
-        color: #9297a1;
+        color: var(--c4l-ui-text-muted);
         padding: 23px 10px;
         font-weight: 400;
         font-size: 12px;

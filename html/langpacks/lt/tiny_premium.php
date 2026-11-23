@@ -49,4 +49,5 @@ $string['premiumplugin:tableofcontents'] = 'Turinys';
 $string['premiumplugin:tinymcespellchecker'] = 'Spell Checker Pro';
 $string['premiumplugin:typography'] = 'Išplėstinė tipografija';
 $string['premiumplugins'] = '"Premium" papildiniai';
-$string['privacy:metadata'] = '„Tiny Premium“ papildinys , skirtas „TinyMCE“, nesaugo jokių asmens duomenų.';
+$string['premiumplugins_desc'] = 'Prieigai prie TinyMCE Premium papildinių reikia API rakto. Ne visi išvardyti papildiniai gali būti prieinami su jūsų TinyMCE Premium prenumerata. Prieinamus papildinius galite patikrinti savo <a href="https://www.tiny.cloud">Tiny Cloud</a> paskyros puslapyje.';
+$string['privacy:metadata'] = '„Tiny Premium“ papildinys, skirtas „TinyMCE“, nesaugo jokių asmens duomenų.';

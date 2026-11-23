@@ -348,6 +348,7 @@ $string['infolink'] = 'Additional information:';
 $string['innersection1'] = 'Grid view';
 $string['innersection2'] = 'Statistics';
 $string['innersection3'] = 'Comparison: Teacher-Student';
+$string['innersection4'] = 'Chronological sequence of gained outcomes';
 $string['instruction'] = 'Instruction';
 $string['instruction_content'] = 'This is an overview for learning resources that are associated with
 				standards and ticking off competencies for students. Students can
@@ -365,6 +366,7 @@ $string['link'] = 'Link';
 $string['linkerr'] = 'The given link is not valid!';
 $string['links'] = 'Links';
 $string['local'] = 'Local';
+$string['manage_assessment_configurations'] = 'Manage assessment configurations';
 $string['manage_crosssubs'] = 'Back to overview';
 $string['materials_compProfile'] = 'Materials';
 $string['messageprovider:comment'] = 'Teacher comments an example';

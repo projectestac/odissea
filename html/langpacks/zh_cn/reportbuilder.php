@@ -115,6 +115,7 @@ $string['editscheduledetails'] = '编辑计划详细信息';
 $string['editschedulename'] = '编辑计划名称';
 $string['enablecustomreports'] = '启用自定义报告';
 $string['enablecustomreports_desc'] = '如果启用，用户可以创建和查看报告生成器自定义报告。';
+$string['enabled'] = '启用';
 $string['enableschedule'] = '启用计划';
 $string['entitycourse'] = '课程';
 $string['entityuser'] = '用户';

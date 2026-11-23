@@ -71,6 +71,7 @@ $string['blanktargetenabled'] = 'Arbel hau bere URL / estekak leiho ala fitxa be
 $string['board:addinstance'] = 'Gehitu arbela berri bat';
 $string['board:deleteallcomments'] = 'Ikusi eta ezabatu mezuetako iruzkin guztiak';
 $string['board:manageboard'] = 'Kudeatu zutabeak eta mezu guztiak';
+$string['board:managenotes'] = 'Kudeatu mezu guztiak: mugitu, editatu eta ezabatu beste erabiltzaileek sortutako mezuak.';
 $string['board:managetemplates'] = 'Kudeatu arbelaren txantiloiak';
 $string['board:post'] = 'Kudeatu norbere mezuak eta potentzialki mezuak puntuatu.';
 $string['board:postcomment'] = 'Sortu eta ikusi mezuetako iruzkinak';
@@ -101,7 +102,9 @@ $string['embed_width'] = 'Enbotatze-zabalera';
 $string['embed_width_desc'] = 'Arbela ikastaroan enbotatzeko erabiltzen den iframe-aren zabalera. CSS balio onargarri bat izan behar da, hala nola px, rem, %...';
 $string['embedboard'] = 'Enbotatu arbela ikastaroaren orrian';
 $string['enableblanktarget'] = 'Gaitu leiho/fitxa berria';
+$string['enableblanktarget_desc'] = 'Enbotatuta egonez gero, loturak leiho berri batean ireki behar dira, iframe-tik kanpo, bestela ezarpen hau desgaituta egon beharko litzateke.';
 $string['enableblanktarget_help'] = 'Gaituz gero esteka guztiak fitxa/leiho berrian zabalduko dira.';
+$string['enableblanktargetrequired'] = 'Gaituta egon behar du arbela enbotatuta badago.';
 $string['error_notemplates'] = 'Ez da txantiloirik aurkitu.';
 $string['event_add_column'] = 'Zutabea gehitu da';
 $string['event_add_column_desc'] = '\'{$a->userid}\' IDa duen erabiltzaileak \'{$a->objectid}\' IDa eta \'{$a->name}\' izena dituen zutabea sortu du.';
@@ -177,21 +180,22 @@ $string['media_selection_desc'] = 'Konfiguratu mezuarentzat aukeratutako multime
 $string['media_selection_dropdown'] = 'Aukera-menua';
 $string['messageprovider:comment_added'] = 'Zure arbelean publikatutako mezu berri baten baieztapena';
 $string['messageprovider:contexturlname'] = 'Arbelaren mezua hemen';
-$string['messageprovider:fullmessage'] = 'Zure \'{$a->boardname}\' arbelean \'{$a->noteheading}\' mezu berria publikatu da.';
-$string['messageprovider:fullmessagehtml'] = '<p>Zure \'{$a->boardname}\' arbelean \'{$a->noteheading}\' mezu berria publikatu da.</p>';
+$string['messageprovider:fullmessage'] = 'Zure \'{$a->boardname}\' arbelean \'{$a->noteheading}\' mezu berria publikatu da. Ikusi ezazu hemen: {$a->link}';
+$string['messageprovider:fullmessagehtml'] = '<p>Zure \'{$a->boardname}\' arbelean \'{$a->noteheading}\' mezu berria publikatu da.</p>
+<p><a href="{$a->link}">Ikusi arbeleko mezua</a></p>';
 $string['messageprovider:smallmessage'] = 'Zure \'{$a->boardname}\' arbelean \'{$a->noteheading}\' mezu berria publikatu da.';
 $string['messageprovider:subject'] = 'Mezua gehitu da zure arbelean.';
 $string['modal_title_edit'] = 'Editatu mezua {column} zutaberako';
 $string['modal_title_new'] = 'Mezu berria {column} zutaberako';
 $string['modulename'] = 'Arbela';
-$string['modulename_help'] = '###### Funtzio nagusiak
+$string['modulename_help'] = '#### Funtzio nagusiak
 * Ikasleen parte-hartze anonimoa.
 * Testua, irudiak, estekak edo enbotatutako bideoak dituzten mezuen sorrera.
 * Aukera konfiguragarriak, hala nola puntuazioa edo mezuetan iruzkinak idaztea.
 * Taldekako eta banakako moduak onartzen ditu.
 * Osaketaren jarraipena eta irakasleentzako edukia deskargatzeko aukerak.
 
-###### Erabiltzeko moduak
+#### Erabiltzeko moduak
 * Gidatu aurkezpena egin ala izotza apurtzeko jarduerak
 * Ikasleek modu kolaboratiboan edukia ala ideiak eraikitzea
 * Ahalbidetu eztabaida bisualerako arbelak ala arbela txuriak

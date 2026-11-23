@@ -131,7 +131,12 @@ class mod_board_mod_form extends moodleform_mod {
 
         $mform->addElement('advcheckbox', 'userscanedit', get_string('userscanedit', 'mod_board'));
 
-        $mform->addElement('advcheckbox', 'enableblanktarget', get_string('enableblanktarget', 'mod_board'));
+        $mform->addElement(
+            'advcheckbox',
+            'enableblanktarget',
+            get_string('enableblanktarget', 'mod_board'),
+            get_string('enableblanktarget_desc', 'mod_board')
+        );
         $mform->addHelpButton('enableblanktarget', 'enableblanktarget', 'mod_board');
 
         // Only add the embed setting, if embedding is allowed globally.
@@ -185,6 +190,10 @@ class mod_board_mod_form extends moodleform_mod {
             if (($data['embed'] == 1) && ($data['singleusermode'] != board::SINGLEUSER_DISABLED)) {
                 $errors['embed'] = get_string('singleusermodenotembed', 'mod_board');
             }
+        }
+        // Create a requirement for enableblanktarget if board is embedded.
+        if (($data['embed'] == 1) && ($data['enableblanktarget'] != 1)) {
+            $errors['enableblanktarget'] = get_string('enableblanktargetrequired', 'mod_board');
         }
 
         return $errors;

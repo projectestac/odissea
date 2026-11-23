@@ -1,11 +1,13 @@
-@javascript @core_question @qtype_wq @wqmdl-177
+@qtype @qtype_wq @core_question @wq @javascript @teacher @preview @questionbank @regression
 Feature: Teacher can preview each question from the Question bank
     In order to verify individual WIRIS question rendering
     As a teacher
     I want to preview each question from the Question bank
 
 Background:
-    Given the following "users" exist:
+    Given the "wiris" filter is "on"
+    And the "wiris" filter has maximum priority
+    And the following "users" exist:
         | username | firstname | lastname | email                |
         | teacher1 | Teacher   | One      | teacher1@example.com |
         | student1 | Student   | One      | student1@example.com |
@@ -46,6 +48,16 @@ Background:
         | questioncategory | qtype      | name        | questiontext         | defaultmark | shuffleanswers | subquestion[1] | subanswer[1] | subquestion[2] | subanswer[2] |
         | WIRIS bank       | matchwiris | Match Wiris | Match the pairs      | 1.0         | 0              | H2O            | Water        | NaCl           | Salt         |
 
+    # shortanswerwiris with a simple text answer
+    And the following "questions" exist:
+        | questioncategory | qtype            | name     | questiontext                        | defaultmark | answers[1] | fraction[1] |
+        | WIRIS bank       | shortanswerwiris | SA Wiris | <p>Type the energy symbol word.</p> | 1.0         | energy     | 1.0         |
+
+    # multianswerwiris (Cloze) carries its structure in the question text
+    And the following "questions" exist:
+        | questioncategory | qtype            | name        | questiontext                                            | defaultmark |
+        | WIRIS bank       | multianswerwiris | Cloze Wiris | <p>The speed of light symbol is {1:SHORTANSWER:=c}.</p> | 1.0         |
+
     And quiz "Wiris Quiz" contains the following questions:
         | question              | page |
         | TF WIRIS – sky color  | 1    |
@@ -76,3 +88,13 @@ Scenario: Preview Match WIRIS from the Question bank
     Given I log in as "teacher1"
     When I am on the "Match Wiris" "core_question > preview" page
     Then I should see "Match the pairs"
+
+Scenario: Preview Short answer WIRIS from the Question bank
+    Given I log in as "teacher1"
+    When I am on the "SA Wiris" "core_question > preview" page
+    Then I should see "Type the energy symbol word."
+
+# Cloze (multianswer) previews are exercised through the whole-quiz preview
+# (quiz_preview.feature). Previewing a Cloze question on its own from the bank is
+# not supported here because the embedded sub-questions make the by-name preview
+# resolver ambiguous ("Multiple records found").

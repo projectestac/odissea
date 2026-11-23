@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_ldap_ad_create_req'] = 'Negalima sukurti naujos paskyros aktyvioje direktorijoje. Įsitikinkite kad jūs atitinkate visus reikalavimus šiam darbui (LDAPS sujungimas, priskirti naudotojus su adekvačiomis teisėmis, ir kt.)';
-$string['auth_ldap_attrcreators'] = 'Sąrašas grupių ir kontekstų kurių nariai gali kurti atributus. Atskirkite skirtingas grupes su \';\' . Pvz. \'cn=teaches, ou=staff, o=myorg';
+$string['auth_ldap_attrcreators'] = 'Sąrašas grupių ir kontekstų, kurių nariai gali kurti atributus. Atskirkite skirtingas grupes su \';\' . Pvz. \'cn=teaches, ou=staff, o=myorg';
 $string['auth_ldap_attrcreators_key'] = 'Atributų kūrėjai';
 $string['auth_ldap_auth_user_create_key'] = 'Sukurti naudotojus išoriškai.';
 $string['auth_ldap_bind_dn'] = 'Jei jūs norite naudoti susietus naudotojus kitų naudotojų paieškai, aprašykite  čia. Pvz. \'cn=ldapuse. ou =public, o = org';
@@ -50,7 +50,7 @@ $string['auth_ldap_graceattr_desc'] = 'Neprivalomas: Nepaiso malonės prisijungi
 $string['auth_ldap_gracelogin_key'] = 'Malonės prisijungimo požymis';
 $string['auth_ldap_gracelogins_desc'] = 'Įgalinti LDAP malonės prisijungimo palaikymą. Pasibaigus slaptažodžio galiojimo laikui, naudotojas gali prisijungti, kol atidėjimo prisijungimo skaičius bus 0. Įjungus šį nustatymą, bus rodomas prisijungimo prie prisijungimo pranešimas, jei slaptažodžio galiojimo laikas baigėsi.';
 $string['auth_ldap_gracelogins_key'] = 'Malonės prisijungimai';
-$string['auth_ldap_groupecreators'] = 'Sąrašas grupių ar kontekstų narių kurie gali kurti grupes. Atskirti skirtingas grupes su \';\'. Pvz.:  \'cn=teachers,ou=staff,o=myorg';
+$string['auth_ldap_groupecreators'] = 'Sąrašas grupių ar kontekstų narių, kurie gali kurti grupes. Atskirti skirtingas grupes su \';\'. Pvz.:  \'cn=teachers,ou=staff,o=myorg';
 $string['auth_ldap_groupecreators_key'] = 'Grupių kūrėjai';
 $string['auth_ldap_host_url'] = 'Nurodykite LDAP prieglobą URL forma, pvz., „ldap://ldap.myorg.com/“ arba „ldaps://ldap.myorg.com/“. Atskirkite kelis serverius \';\' kad gautumėte perjungimo paramą.';
 $string['auth_ldap_host_url_key'] = 'Pagrindinio kompiuterio URL';
@@ -91,7 +91,7 @@ $string['auth_ldap_user_type'] = 'Pasirinkite, kaip naudotojai saugomi LDAP. Ši
 $string['auth_ldap_user_type_key'] = 'Naudotojo tipas';
 $string['auth_ldap_usertypeundefined'] = 'config.user_type neapibrėžtas arba funkcija ldap_expirationtime2unix nepalaiko pasirinkto tipo!';
 $string['auth_ldap_usertypeundefined2'] = 'config.user_type neapibrėžtas arba funkcija ldap_unixi2expirationtime nepalaiko pasirinkto tipo!';
-$string['auth_ldap_version'] = 'LDAP protokolo versija kurią naudoja serveris.';
+$string['auth_ldap_version'] = 'LDAP protokolo versija, kurią naudoja serveris.';
 $string['auth_ldap_version_key'] = 'Versija';
 $string['auth_ldapdescription'] = 'Šis metodas užtikrina autentifikavimą naudojant išorinį LDAP serverį. Jei nurodytas naudotojo vardas ir slaptažodis galioja, Moodle sukuria naują naudotojo įrašą savo duomenų bazėje. Šis papildinys gali nuskaityti naudotojo atributus iš LDAP ir iš anksto užpildyti norimus laukus Moodle. Atliekant šiuos prisijungimus, tikrinamas tik naudotojo vardas ir slaptažodis.';
 $string['auth_ldapextrafields'] = 'Šie laukai yra nebūtini. Jūs galite pasirinkti, kad Moodle pati užpildytų juos informacija iš <B>LDAP laukų</B>, kuriuos čia nurodysite. <P>Jei laukus paliksite tuščius, tai jokia informacija nebus atsiųsta iš LDAP ir Moodle pati užpildys įprastinėmis vertėmis. <P>Abiem atvejais, naudotojai galės keisti pateiktą informaciją, kai tik prisijunks.';
@@ -153,11 +153,13 @@ $string['renamingnotallowed'] = 'Naudotojų pervardijimas nėra leidžiamas LDAP
 $string['rootdseerror'] = 'Klaida užklausinėjant rootDSE aktyviai direktorijai';
 $string['start_tls'] = 'Naudokite įprastą LDAP paslaugą (389 prievadą) su TLS šifravimu';
 $string['start_tls_key'] = 'Naudoti TLS';
+$string['sync_updateuserchunk'] = 'Nurodykite, kiek naudotojų turi būti atnaujinama per vieną transakciją. Nustačius 0, visi naudotojai bus atnaujinti per vieną transakciją.';
+$string['sync_updateuserchunk_key'] = 'Sinchronizuojant atnaujinamų naudotojų paketo dydis';
 $string['syncroles'] = 'Sinchronizuoti sistemos vaidmenis iš LDAP';
 $string['synctask'] = 'LDAP naudotojų sinchronizavimo užduotis';
 $string['systemrolemapping'] = 'Sistemos vaidmenų atvaizdavimas';
 $string['updatepasserror'] = 'Klaida user_update_password(). Klaidos kodas: {$a->errno}; Klaidos tekstas: {$a->errstring}';
-$string['updatepasserrorexpire'] = 'Klaida user_update_password() skaitant slaptažodžio galiojimo laiką. Klaidos kodas : {$a->errno}; Klaidos eilutė: {$a->errstring}';
+$string['updatepasserrorexpire'] = 'Klaida user_update_password() skaitant slaptažodžio galiojimo laiką. Klaidos kodas: {$a->errno}; Klaidos eilutė: {$a->errstring}';
 $string['updatepasserrorexpiregrace'] = 'Klaida user_update_password() keičiant galiojimo laiką ir (arba) atidėjimo prisijungimus. Klaidos kodas: {$a->errno}; Klaidos eilutė: {$a->errstring}';
 $string['updateremfail'] = 'Klaida atnaujinant LDAP įrašą. Klaidos kodas: {$a->errno}; Klaidos eilutė: {$a->errstring}<br/>Key ({$a->key}) - sena moodle reikšmė \'{$a->ouvalue}\' nauja reikšmė: \'{$a->nuvalue}';
 $string['updateremfailamb'] = 'Nepavyko atnaujinti LDAP su dviprasmiška sritimi {$a->key}; sena moodle reikšmė: \'{$a->ouvalue}\', nauja reikšmė: \'{$a->nuvalue}';

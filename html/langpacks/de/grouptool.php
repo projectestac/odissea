@@ -389,9 +389,9 @@ $string['moveup'] = 'Nach oben verschieben';
 $string['multiple'] = 'Gruppenmitglieder verwalten';
 $string['multiple_desc'] = 'Multiple Verwaltung von Gruppenmitgliedern über Import und Austragen';
 $string['must_specify_groupingname'] = 'Sie müssen einen Namen für die Gruppierung angeben!';
-$string['mustbegt0'] = 'Mindestanzahl zu wählender Gruppen muss größer oder gleich 0 sein. Buchstaben oder Zeichen sind nicht erlaubt.';
+$string['mustbegt0'] = 'Mindestanzahl der Stellen muss größer oder gleich 0 sein. Buchstaben oder Zeichen sind nicht erlaubt.';
 $string['mustbegtoeqmin'] = 'Muss größer als das oder gleich dem Minimum sein!';
-$string['mustbeposint'] = 'Maximalanzahl zu wählender Gruppen muss größer oder gleich 0 sein. Buchstaben oder Zeichen sind nicht erlaubt.';
+$string['mustbeposint'] = 'Maximalanzahl zu wählender Gruppen muss größer oder gleich 1 sein. Buchstaben oder Zeichen sind nicht erlaubt.';
 $string['mygroups_only_label'] = 'Zeige nur Quellen, die ich bewertet habe';
 $string['myoverview_registrations_missing'] = 'Anmeldungen fehlen';
 $string['name_scheme_tags'] = '<span class="tag firstname">[firstname]</span>

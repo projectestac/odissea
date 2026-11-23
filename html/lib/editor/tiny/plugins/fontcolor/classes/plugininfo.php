@@ -114,6 +114,9 @@ class plugininfo extends plugin implements plugin_with_buttons, plugin_with_conf
             $config['backgroundcolorpicker'] = (bool)get_config('tiny_fontcolor', 'backgroundcolorpicker');
         }
 
+        // Whether the defined colours are added to the editor's shared colour palette.
+        $config['usefortable'] = (bool)get_config('tiny_fontcolor', 'usefortable');
+
         // Get the list of defined colors for text color and background color.
         foreach (['textcolors', 'backgroundcolors'] as $configfield) {
             $colors = color_list::load_from_json(get_config('tiny_fontcolor', $configfield));

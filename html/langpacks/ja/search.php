@@ -88,8 +88,8 @@ $string['indexwhendisabledfullnotice'] = '検索が無効にされているた�
 $string['indexwhendisabledshortnotice'] = 'インデックス化は利用できません。';
 $string['invalidindexerror'] = 'インデックスディレクトリに無効なインデックスが含まれているか、インデックスがありません。';
 $string['ittook'] = '検索時間:';
-$string['matchingfile'] = 'ファイル<span class="filename">{$a}</span>に合致する';
-$string['matchingfiles'] = 'ファイルに合致する:';
+$string['matchingfile'] = 'ファイル<span class="filename">{$a}</span>に一致する';
+$string['matchingfiles'] = 'ファイルに一致する:';
 $string['mycoursesonly'] = 'マイコースのみ';
 $string['next'] = '次へ';
 $string['noindexmessage'] = '管理: 検索インデックスが作成されていないようです。';

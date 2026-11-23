@@ -155,6 +155,7 @@ $string['settings:weight'] = 'Gewicht verificatiestap';
 $string['settings:weight_help'] = 'Het gewicht voor deze factor indien succesvol. Een gebruiker heeft minstens 100 punten nodig om in te loggen.';
 $string['setup'] = 'Instellen';
 $string['setupfactor'] = 'Factor instellen';
+$string['setupfactorbuttonadditional'] = 'Bijkomende factor toevoegen';
 $string['setuprequired'] = 'Gebruiker instellingen';
 $string['state:fail'] = 'Mislukt';
 $string['state:locked'] = 'Geblokkeerd';

@@ -350,7 +350,10 @@ class provider implements
                 ->export_data($notearea, $notedata)
 
                 // Store the associated image files.
-                ->export_area_files($notearea, 'mod_board', 'images', $note->id);
+                ->export_area_files($notearea, 'mod_board', 'images', $note->id)
+
+                // Store the associated general attachment files.
+                ->export_area_files($notearea, 'mod_board', 'files', $note->id);
         }
 
         $notes->close();
@@ -592,7 +595,7 @@ class provider implements
         $columnids = $DB->get_fieldset_select(
             'board_columns',
             'id',
-            "boardid = :boardid)",
+            "boardid = :boardid",
             ['boardid' => $boardid]
         );
 
@@ -637,9 +640,10 @@ class provider implements
 
         $DB->delete_records('board_history', ['boardid' => $boardid]);
 
-        // Delete all image files from the notes.
+        // Delete all image and general attachment files from the notes.
         $fs = get_file_storage();
-        $fs->delete_area_files($context->id, 'mod_board', 'images', $notesinsql, $notesinparams);
+        $fs->delete_area_files_select($context->id, 'mod_board', 'images', $notesinsql, $notesinparams);
+        $fs->delete_area_files_select($context->id, 'mod_board', 'files', $notesinsql, $notesinparams);
     }
 
     /**
@@ -709,9 +713,10 @@ class provider implements
                 'userid' => $userid,
             ]);
 
-            // Delete all image files from the notes.
+            // Delete all image and general attachment files from the notes.
             $fs = get_file_storage();
             $fs->delete_area_files_select($context->id, 'mod_board', 'images', $notesinsql, $notesinparams);
+            $fs->delete_area_files_select($context->id, 'mod_board', 'files', $notesinsql, $notesinparams);
         }
     }
 
@@ -738,7 +743,7 @@ class provider implements
         $columnids = $DB->get_fieldset_select(
             'board_columns',
             'id',
-            "boardid = :boardid)",
+            "boardid = :boardid",
             ['boardid' => $board->id]
         );
 
@@ -778,8 +783,9 @@ class provider implements
         );
         $DB->delete_records_select('board_history', "boardid = :boardid AND userid {$userinsql}", $params);
 
-        // Delete all image files from the posts.
+        // Delete all image and general attachment files from the posts.
         $fs = get_file_storage();
         $fs->delete_area_files_select($context->id, 'mod_board', 'images', $notesinsql, $notesinparams);
+        $fs->delete_area_files_select($context->id, 'mod_board', 'files', $notesinsql, $notesinparams);
     }
 }

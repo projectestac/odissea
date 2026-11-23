@@ -168,6 +168,7 @@ $string['tiny:failed_to_initialize_plugin_0'] = 'Erro ao inicializar o módulo: 
 $string['tiny:failed_to_load_plugin_0_from_url_1'] = 'Erro ao carregar o módulo: {0} do URL {1}';
 $string['tiny:failed_to_load_plugin_url_0'] = 'Erro ao carregar o URL do módulo: {0}';
 $string['tiny:failed_to_upload_image_0'] = 'Erro ao carregar a imagem: {0}';
+$string['tiny:field_label_and_rich_textarea_help'] = '{$a}. Área de Rich text. Prima ALT+F9 para abrir o menu. Prima ALT+F10 para aceder à barra de ferramentas. Prima ALT+0 para mostrar a ajuda.';
 $string['tiny:file'] = 'Ficheiro';
 $string['tiny:find'] = 'Localizar';
 $string['tiny:find_and_replace'] = 'Localizar e substituir';

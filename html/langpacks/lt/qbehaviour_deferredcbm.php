@@ -34,7 +34,7 @@ $string['breakdownbycertainty'] = 'Suskirstymas pagal tikrumą';
 $string['cbmbonus'] = 'CBM premija';
 $string['cbmgradeexplanation'] = 'CBM atveju aukščiau nurodytas įvertinimas rodomas atsižvelgiant į maksimalų visų teisingų C=1 įvertinimus.';
 $string['cbmgrades'] = 'CBM įvertinimai';
-$string['cbmgrades_help'] = 'Naudojant tikrumu pagrįstą žymėjimą (CBM), kai kiekvienas klausimas yra teisingas su C=1 (mažas tikrumas), įvertinimas yra 100%. Įvertinimai gali siekti net 300%, jei kiekvienas klausimas yra teisingas, kai C=3 (didelis tikrumas). Didelis tikrumas dėl neteisingu atsakymų vertinamas Žemiau negu neteisingas su mažu tikrumu. Tai netgi gali lemti neigiamus bendrus įverčius.
+$string['cbmgrades_help'] = 'Naudojant tikrumu pagrįstą žymėjimą (CBM), kai kiekvienas klausimas yra teisingas su C=1 (mažas tikrumas), įvertinimas yra 100%. Įvertinimai gali siekti net 300%, jei kiekvienas klausimas yra teisingas, kai C=3 (didelis tikrumas). Didelis tikrumas dėl neteisingų atsakymų vertinamas Žemiau negu neteisingas su mažu tikrumu. Tai netgi gali lemti neigiamus bendrus įverčius.
 
 **Tikslumas** yra teisingas procentas, neatsižvelgiant į tikrumą, bet svertinis pagal maksimalų kiekvieno klausimo balą. Sėkmingai skiriant daugiau ir mažiau patikimų atsakymų gaunamas geresnis įvertinimas, nei pasirinkus tą patį tikrumą kiekvienam klausimui. Tai atsispindi **CBM premijoje**.
 **Tikslumas** + **CBM premija** yra geresnis žinių matas nei **Tikslumas**. Klaidingos nuomonės gali sukelti neigiamą premiją, įspėjimą atidžiai pažvelgti į tai, kas yra žinoma ir kas nežinoma.';

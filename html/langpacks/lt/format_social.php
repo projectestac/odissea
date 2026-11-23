@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['numberdiscussions'] = 'Diskusijų skaičius';
 $string['numberdiscussions_help'] = 'Šis nustatymas nurodo, kiek diskusijų turėtų būti rodoma.';
+$string['plugin_description'] = 'Kursas sutelktas į pagrindinį diskusijų forumą kurso puslapyje. Papildomas veiklas ir išteklius galima įtraukti naudojant bloką „Socialinės veiklos“.';
 $string['pluginname'] = 'Socialinis';
 $string['privacy:metadata'] = 'Socialinio formato papildinys nesaugo jokių asmeninių duomenų.';
 $string['sectionname'] = 'dalis';

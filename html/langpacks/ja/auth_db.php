@@ -51,7 +51,7 @@ $string['auth_dbname'] = 'データベース名です。ODBC DSNを使用して�
 $string['auth_dbname_key'] = 'データベース名';
 $string['auth_dbnoexttable'] = '外部テーブルが指定されていません。';
 $string['auth_dbnouserfield'] = '外部ユーザフィールドが指定されていません。';
-$string['auth_dbpass'] = '上記ユーザ名に合致するパスワード';
+$string['auth_dbpass'] = '上記ユーザ名に一致するパスワード';
 $string['auth_dbpass_key'] = 'パスワード';
 $string['auth_dbpasstype'] = '<p>パスワードフィールドで使用するフォーマットを指定してください。</p>
 <p>あなたが外部データベースにユーザ名およびメールアドレスを管理させてMoodleにはパスワードを管理させたい場合、「内部」を使用してください。あなたが「内部」を使用する場合、外部データベースのメールアドレスフィールドを提供して「 \\auth_db\\task\\sync_users」スケジュールタスクを有効にする必要があります。新しいユーザに仮パスワード記載したメールをMoodleが送信します。</p>';

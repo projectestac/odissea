@@ -117,14 +117,14 @@ $string['maxenrollments_help'] = 'Aukera honek partaide bakoitzaren talde kopuru
 $string['members/'] = 'Kideak';
 $string['members/max'] = 'Kideka / Muga';
 $string['modulename'] = 'Talde-aukeraketa';
-$string['modulename_help'] = '###### Funtzio nagusiak
+$string['modulename_help'] = '#### Funtzio nagusiak
 * Ikasleek euren burua ikastaroko taldeetan sartzea ahalbidetzen du
 * Irakasleek taldeen gehieneko tamaina eta eskuragarritasuna kontrolatu dezakete
 * Ikasleek taldean sartu aurretik taldeetako kideak ikusi ditzakete
 * Amaiera-data iritsi arte ikasleek taldez aldatzea baimentzeko aukera
 * Talde anitz aukeratzea eta izenaren arabera ala sortze-dataren arabera ordenatzea baimentzen du
 
-###### Erabiltzeko moduak
+#### Erabiltzeko moduak
 * Antolatu ikasleak taldekako proiektuak ala zereginak egin ditzaten
 * Sortu lantaldeak eztabaida, laborategia ala tailerretarako
 * Gaitu ikasleek elkarlaneko zereginetarako euren taldekideak aukeratzea

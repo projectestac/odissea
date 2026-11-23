@@ -1,11 +1,13 @@
-@javascript @qtype_wq @wqmdl-283
+@qtype @qtype_wq @mod_quiz @wq @javascript @teacher @duplicate @regression
 Feature: Duplicate a quiz and verify both instances exist while Question bank remains unchanged
     In order to reuse a WIRIS quiz setup
     As a teacher
     I want to duplicate the quiz and keep the question bank intact
 
 Background:
-    Given the following "users" exist:
+    Given the "wiris" filter is "on"
+    And the "wiris" filter has maximum priority
+    And the following "users" exist:
         | username | firstname | lastname | email                |
         | teacher1 | Teacher   | One      | teacher1@example.com |
         | student1 | Student   | One      | student1@example.com |
@@ -69,10 +71,13 @@ Scenario: Duplicate the quiz from the course page
 
     # Sanity: Question bank still has our 4 questions, not duplicated.
     #Pending: Validate no duplicates exist in the question bank.
-    When I navigate to "Question bank" in current page administration
+    When I am on the "Course 1" "core_question > course question bank" page
     Then I should see "TF WIRIS – sky color"
     And I should see "Multichoice Wiris"
     And I should see "Essay Wiris"
     And I should see "Match Wiris"
-    # Optional stricter check (if your theme shows "Showing X questions"):
-    # And I should see "4" in the "qb-num-questions" "css_element"
+    # The duplicated quiz is a working, independent copy: preview shows its questions.
+    And I am on "Course 1" course homepage
+    And I click on "Wiris Quiz (copy)" "link" in the "region-main" "region"
+    And I click on "Preview" "button"
+    Then I should see "The daytime sky is blue."

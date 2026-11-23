@@ -52,7 +52,7 @@ class plugin_ccoursefield extends plugin_base {
      * @return string
      */
     public function summary(object $data): string {
-        return get_string($data->field) . ' ' . $data->operator . ' ' . $data->value;
+        return format_string(cr_get_field_name($data->field) . ' ' . $data->operator . ' ' . $data->value);
 
     }
 
@@ -65,13 +65,17 @@ class plugin_ccoursefield extends plugin_base {
     public function execute($data) {
         global $DB;
 
-        // TODO - Use DB -> sql_like().
-        $ilike = " LIKE ";
+        // Imported reports do not go through the form, so validate the field and operator again.
+        if (!array_key_exists($data->field, $DB->get_columns('course')) ||
+                !in_array($data->operator, cr_get_condition_operators(), true)) {
+            return [];
+        }
 
         switch ($data->operator) {
             case 'LIKE % %':
-                $sql = "$data->field $ilike ?";
-                $params = ["%$data->value%"];
+                $sql = $DB->sql_like($data->field, '?', false);
+                // "Contains": wrap in wildcards like 5.2 did, otherwise LIKE behaves as "=".
+                $params = ['%' . $data->value . '%'];
                 break;
             default:
                 $sql = "$data->field $data->operator ?";

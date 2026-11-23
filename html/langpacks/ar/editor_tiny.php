@@ -168,6 +168,7 @@ $string['tiny:failed_to_initialize_plugin_0'] = 'فشلت تهيئة المكو�
 $string['tiny:failed_to_load_plugin_0_from_url_1'] = 'فشل تحميل المكوِّن الإضافي: {0} من url ‏{1}';
 $string['tiny:failed_to_load_plugin_url_0'] = 'فشل تحميل url للمكوِّن الإضافي: {0}';
 $string['tiny:failed_to_upload_image_0'] = 'فشل تحميل الصورة: {0}';
+$string['tiny:field_label_and_rich_textarea_help'] = '{$a}. منطقة نص منسق. إضغط ALT-F9 لعرض القائمة. إضغط ALT-F10 لشريط الأدوات. إضغط ALT-0 للحصول على المساعدة.';
 $string['tiny:file'] = 'ملف';
 $string['tiny:find'] = 'بحث';
 $string['tiny:find_and_replace'] = 'البحث والاستبدال';

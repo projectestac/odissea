@@ -115,6 +115,7 @@ $string['editscheduledetails'] = 'تحرير تفاصيل الجدولة';
 $string['editschedulename'] = 'تحرير اسم الجدولة';
 $string['enablecustomreports'] = 'تمكين التقارير المخصصة';
 $string['enablecustomreports_desc'] = 'عند تمكينه، يمكن للمستخدمين إنشاء التقارير المخصصة من منشئ التقارير ومعاينتها.';
+$string['enabled'] = 'ممكّن';
 $string['enableschedule'] = 'تمكين الجدولة';
 $string['entitycourse'] = 'المساق';
 $string['entityuser'] = 'المستخدم';

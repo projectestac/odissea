@@ -185,7 +185,7 @@ $string['librariesmanagerdescription'] = '<p>H5Pでは特定の範囲のコン�
 <li>スケジュールタスク「利用可能なH5Pコンテンツをh5p.orgからダウンロードする」を有効にする</li>
 </ul>
 <p>ユーザはあなたのサイトにインストールされたH5Pコンテンツタイプのみ利用できることに留意してください。</p>';
-$string['librarydirectoryerror'] = 'ライブラリディレクトリ名はmachineNameまたはmachineName-majorVersion.minorVersion (library.jsonから) に合致する必要があります。(ディレクトリ: {$a->%directoryName} , machineName: {$a->%machineName}, majorVersion: {$a->%majorVersion}, minorVersion: {$a->%minorVersion})';
+$string['librarydirectoryerror'] = 'ライブラリディレクトリ名はmachineNameまたはmachineName-majorVersion.minorVersion (library.jsonから) に一致する必要があります。(ディレクトリ: {$a->%directoryName} , machineName: {$a->%machineName}, majorVersion: {$a->%majorVersion}, minorVersion: {$a->%minorVersion})';
 $string['license'] = 'ライセンス';
 $string['licenseCC010'] = 'CC0 1.0 全世界 (CC0 1.0) パブリックドメイン提供';
 $string['licenseCC010U'] = 'CC0 1.0 全世界';

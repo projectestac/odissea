@@ -179,7 +179,7 @@ $string['keywordsPlaceholder'] = 'Pridėti raktažodžių';
 $string['language'] = 'Kalba';
 $string['level'] = 'Lygis';
 $string['librariesmanagerdescription'] = '<p>H5P suteikia galimybę naudotojams kurti interaktyvų turinį pateikiant įvairių tipų turinį.</p><p>Norėdami užtikrinti, kad svetainėje būtų naudojami tik patikimi H5P turinio tipai, turite <i>arba</i> </p><ul><li>Įkelti H5P turinio tipus iš h5p.org <i>arba</i></li><li>Įgalinti suplanuotą užduotį „Atsisiųsti galimus H5P turinio tipus iš h5p.org“</li></ul><p>Pastaba: naudotojai galės naudoti tik svetainėje įdiegtus H5P turinio tipus.</p>';
-$string['librarydirectoryerror'] = 'Bibliotekos katalogo pavadinimas turi atitikti machineName arba machineName-majorVersion.minorVersion (iš library.json). (Katalogas: {$a->%directoryName} , machineName: {$a->%machineName}, majorVersion: {$a->%majorVersion}, minorVersion: {$a->%minorVersion})';
+$string['librarydirectoryerror'] = 'Bibliotekos katalogo pavadinimas turi atitikti machineName arba machineName-majorVersion.minorVersion (iš library.json). (Katalogas: {$a->%directoryName}, machineName: {$a->%machineName}, majorVersion: {$a->%majorVersion}, minorVersion: {$a->%minorVersion})';
 $string['license'] = 'Licencija';
 $string['licenseCC010'] = 'CC0 1.0 Universali (CC0 1.0)
 Priskyrimas Viešajai sričiai';
@@ -268,7 +268,7 @@ $string['screenshots'] = 'Ekrano nuotraukos';
 $string['screenshotsDescription'] = 'Pridėkite iki penkių savo turinio ekrano kopijų';
 $string['share'] = 'Bendrinti';
 $string['shareFailed'] = 'Bendrinti nepavyko.';
-$string['shareTryAgain'] = 'Kažkas ne taip, pabandykite bendrinti dar kartą.';
+$string['shareTryAgain'] = 'Nepavyko užmegzti ryšio su „H5P Hub“. Prašome pabandyti vėliau.';
 $string['shared'] = 'Bendrinama';
 $string['sharingNote'] = 'Visą informaciją apie turinį galima redaguoti po bendrinimo';
 $string['shortDescription'] = 'Trumpas aprašymas';

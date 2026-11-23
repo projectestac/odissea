@@ -14,16 +14,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ecf3ff;
-    color: #1679f9;
+    background-color: var(--c4l-ui-variant-bg);
+    color: var(--c4l-ui-accent);
     height: 42px;
     width: 36px;
 }
 
+/* `.on:hover` is listed so an enabled variant keeps its accent while the
+   pointer is over it; without it the neutral hover below would win and the
+   state would read as switched off. */
 .c4lt-dialog-button .c4l-button-variants .c4l-button-variant.on,
+.c4lt-dialog-button .c4l-button-variants .c4l-button-variant.on:hover {
+    color: var(--c4l-ui-variant-ink);
+    background-color: var(--c4l-ui-variant-on-bg);
+}
+
 .c4lt-dialog-button .c4l-button-variants .c4l-button-variant:hover {
-    color: #fff;
-    background-color: #1679f9;
+    color: var(--c4l-ui-variant-ink);
+    background-color: var(--c4l-ui-variant-hover-bg);
 }
 
 /* BUTTON VARIANTS ICON */

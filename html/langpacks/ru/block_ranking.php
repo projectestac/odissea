@@ -50,6 +50,7 @@ $string['ranking_graphs'] = 'Графический рейтинг';
 $string['rankingsize'] = 'Размер рейтинга';
 $string['rankingsize_help'] = 'Количество студентов, которое будет отображаться в рейтинге';
 $string['report_head'] = 'Детальный рейтинг: Первые {$a} студентов';
+$string['report_title'] = '{$a}: Общий рейтинг студентов';
 $string['resourcepoints'] = 'Баллы за ресурс';
 $string['see_full_ranking'] = 'Показать все результаты';
 $string['table_name'] = 'Полное имя';

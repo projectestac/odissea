@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['authpluginnotfound'] = 'Authenticatieplugin {$a} niet gevonden.';
 $string['blocknotexist'] = 'Blok {$a} bestaat niet';
 $string['cannotbenull'] = '{$a} kan niet nul zijn !!!';
-$string['cannotdowngrade'] = 'Kan niet terugdraaien van from {$a->oldversion} to {$a->newversion}.';
+$string['cannotdowngrade'] = 'Kan {$a->plugin} niet terugdraaien van from {$a->oldversion} to {$a->newversion}.';
 $string['cannotfindadmin'] = 'Kon geen beheerder vinden!';
 $string['cannotinitpage'] = 'Kan pagina niet helemaal initialiseren: ongeldige {$a->name} id {$a->id}';
 $string['cannotsetuptable'] = '{$a} tabellen konden NIET juist ingesteld worden!';

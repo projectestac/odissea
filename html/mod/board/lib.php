@@ -156,6 +156,9 @@ function board_add_instance($data, $mform = null) {
         );
     }
 
+    $completiontimeexpected = !empty($data->completionexpected) ? $data->completionexpected : null;
+    \core_completion\api::update_completion_date_event($cmid, 'board', $boardid, $completiontimeexpected);
+
     return $boardid;
 }
 
@@ -193,6 +196,9 @@ function board_update_instance($data, $mform) {
         );
     }
 
+    $completiontimeexpected = !empty($data->completionexpected) ? $data->completionexpected : null;
+    \core_completion\api::update_completion_date_event($cmid, 'board', $data->id, $completiontimeexpected);
+
     return true;
 }
 
@@ -209,6 +215,11 @@ function board_delete_instance($id) {
         return false;
     }
     $context = board::context_for_board($board);
+
+    // Remove the completion date calendar event, if any.
+    if ($cm = get_coursemodule_from_instance('board', $board->id)) {
+        \core_completion\api::update_completion_date_event($cm->id, 'board', $board->id, null);
+    }
 
     // Remove notes.
     $columns = $DB->get_records('board_columns', ['boardid' => $board->id], '', 'id');
@@ -439,6 +450,51 @@ function board_get_completion_state($course, $cm, $userid, $type) {
     }
     return $type;
 }
+
+/**
+ * Receives a calendar event and returns the action associated with it, or null if there is none.
+ *
+ * Used to determine if events should show in the Timeline / Upcoming activities due block, and if so,
+ * what actions can be performed on it (e.g. view the board, mark it as complete).
+ *
+ * @param calendar_event $event
+ * @param \core_calendar\action_factory $factory
+ * @param int $userid User id for all capability checks, etc. Set to 0 to use the current user's id.
+ * @return \core_calendar\local\event\entities\action_interface|null
+ */
+function mod_board_core_calendar_provide_event_action(
+    calendar_event $event,
+    \core_calendar\action_factory $factory,
+    $userid = 0
+) {
+    global $USER;
+
+    if (empty($userid)) {
+        $userid = $USER->id;
+    }
+
+    $cm = get_fast_modinfo($event->courseid, $userid)->instances['board'][$event->instance];
+
+    if (!$cm->uservisible) {
+        return null;
+    }
+
+    $completion = new \completion_info($cm->get_course());
+
+    $completiondata = $completion->get_data($cm, false, $userid);
+
+    if ($completiondata->completionstate != COMPLETION_INCOMPLETE) {
+        return null;
+    }
+
+    return $factory->create_instance(
+        get_string('viewboard', 'board'),
+        new moodle_url('/mod/board/view.php', ['id' => $cm->id]),
+        1,
+        true
+    );
+}
+
 /**
  * Dynamically change the activity to not show a link if we want to embed it.
  * This is called via a automatic callback if this method exists.

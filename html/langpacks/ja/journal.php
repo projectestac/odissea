@@ -75,7 +75,6 @@ $string['rate'] = '評価';
 $string['removeentries'] = 'すべてのエントリを削除する';
 $string['removemessages'] = 'すべての日誌エントリを削除する';
 $string['saveallfeedback'] = '私のフィードバックすべてを保存する';
-$string['showoverview'] = '日誌概要をマイホームに表示する';
 $string['showrecentactivity'] = '最近の活動を表示する';
 $string['startoredit'] = '私の日誌エントリを開始または編集する';
 $string['viewallentries'] = '{$a} 日誌エントリを閲覧する';

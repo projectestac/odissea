@@ -46,7 +46,7 @@ $string['donotsendnotification'] = 'Visai nesiųsti pranešimų';
 $string['enableprocessor'] = 'Įgalinti pranešimus mobiliesiems';
 $string['encryptnotifications'] = 'Šifruoti pranešimus';
 $string['encryptnotifications_help'] = 'Įgalinti galutinį programėlių pranešimų šifravimą. Kai kurie duomenys gali būti pašalinti iš pranešimų, jei jų neįmanoma užšifruoti.';
-$string['encryptprocessing'] = 'Įrenginiams, nepalaikontiems šifravimo';
+$string['encryptprocessing'] = 'Įrenginiams, nepalaikantiems šifravimo';
 $string['encryptprocessing_desc'] = 'Norint gauti šifruotus pranešimus, reikia turėti bent "Android 8" arba "iOS 13" ir "Moodle" programėlę 4.2 arba naujesnę versiją.';
 $string['errorretrievingkey'] = 'Gaunant prieigos raktą įvyko klaida. Jūsų svetainė turi būti užregistruota, kad galėtumėte naudotis šia paslauga. Jei jūsų svetainė jau užregistruota, pabandykite atnaujinti registraciją. Arba galite gauti prieigos raktą susikūrę paskyrą <a href="https://apps.moodle.com">Moodle Apps portale</a>.';
 $string['keyretrievedsuccessfully'] = 'Prieigos raktas buvo sėkmingai nuskaitytas. Norėdami pasiekti Moodle programos naudojimo statistiką, susikurkite paskyrą <a href="https://apps.moodle.com">Moodle Apps portale</a>.';

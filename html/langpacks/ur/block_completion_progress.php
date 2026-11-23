@@ -82,7 +82,6 @@ $string['not_all_expected_set'] = 'مکمل ہونے والی تمام سرگر�
 $string['now_indicator'] = 'ابھی';
 $string['overview'] = 'طلباء کا جائزہ';
 $string['pluginname'] = 'تکمیل کی پیشرفت';
-$string['privacy:metadata'] = 'تکمیلی پیشرفت بلاک صرف موجودہ تکمیلی ڈیٹا دکھاتا ہے۔';
 $string['progress'] = 'پیش رفت';
 $string['progressbar'] = 'تکمیل کی پیشرفت';
 $string['selectitem'] = '\'{$a}\' کو منتخب کریں';

@@ -115,6 +115,7 @@ $string['editscheduledetails'] = 'Modifica dettagli pianificazione';
 $string['editschedulename'] = 'Modifica nome pianificazione';
 $string['enablecustomreports'] = 'Abilita report personalizzati';
 $string['enablecustomreports_desc'] = 'Gli utenti potranno creare e visualizzare report personalizzati tramite Report Builder.';
+$string['enabled'] = 'Abilitato';
 $string['enableschedule'] = 'Abilita pianificazione';
 $string['entitycourse'] = 'Corso';
 $string['entityuser'] = 'Utente';

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['alwaysopen'] = 'Visada atidaras';
+$string['alwaysopen'] = 'Visada atidarytas';
 $string['blankentry'] = 'Tuščia';
 $string['daysavailable'] = 'Dienų pasiekiamas';
 $string['editingended'] = 'Koregavimo laikas baigėsi';

@@ -23,7 +23,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 defined('MOODLE_INTERNAL') || die;
-require_once($CFG->dirroot . '/blocks/configurable_reports/plugin.class.php');
+require_once($CFG->dirroot . '/blocks/configurable_reports/filter.class.php');
 
 /**
  * Class plugin_coursemodules
@@ -31,7 +31,7 @@ require_once($CFG->dirroot . '/blocks/configurable_reports/plugin.class.php');
  * @package   block_configurable_reports
  * @author    Juan leyva <http://www.twitter.com/jleyvadelgado>
  */
-class plugin_coursemodules extends plugin_base {
+class plugin_coursemodules extends filter_base {
 
     /**
      * Init
@@ -70,7 +70,7 @@ class plugin_coursemodules extends plugin_base {
         }
 
         if ($this->report->type !== 'sql') {
-            return [$filtercoursemoduleid];
+            return $this->narrow_to((array) $finalelements, $filtercoursemoduleid);
         }
 
         if (preg_match("/%%FILTER_COURSEMODULEID:([^%]+)%%/i", $finalelements, $output)) {
@@ -90,6 +90,43 @@ class plugin_coursemodules extends plugin_base {
         }
 
         return $finalelements;
+    }
+
+    #[\Override]
+    function execute_for_sql_report(string $sql, ?\stdClass $data = null): array {
+        global $remotedb;
+
+        $filtercoursemoduleid = optional_param('filter_coursemodules', 0, PARAM_INT);
+        if (!$filtercoursemoduleid) {
+            return [$sql, []];
+        }
+
+        if ($this->report->type !== 'sql') {
+            return [$filtercoursemoduleid];
+        }
+
+        $params = [];
+
+        if (preg_match("/%%FILTER_COURSEMODULEID:([^%]+)%%/i", $sql, $output)) {
+            $replace = ' AND ' . $output[1] . ' = :cmfield';
+            $sql = str_replace('%%FILTER_COURSEMODULEID:' . $output[1] . '%%', $replace, $sql);
+            $params['cmfield'] = $filtercoursemoduleid;
+        }
+
+        // The field list and the join column come from the report's SQL (written by the report author),
+        // not from user input: insert them as SQL like 5.2 did. Column names can't be bound params.
+        if (preg_match("/%%FILTER_COURSEMODULEFIELDS:([^%]+)%%/i", $sql, $output)) {
+            $replace = ' ' . $output[1] . ' ';
+            $sql = str_replace('%%FILTER_COURSEMODULEFIELDS:' . $output[1] . '%%', $replace, $sql);
+        }
+
+        if (preg_match("/%%FILTER_COURSEMODULE:([^%]+)%%/i", $sql, $output)) {
+            $module = $remotedb->get_record('modules', ['id' => $filtercoursemoduleid], '*', MUST_EXIST);
+            $replace = ' JOIN {' . $module->name . '} AS m ON m.id = ' . $output[1] . ' ';
+            $sql = str_replace('%%FILTER_COURSEMODULE:' . $output[1] . '%%', $replace, $sql);
+        }
+
+        return [$sql, $params];
     }
 
     /**

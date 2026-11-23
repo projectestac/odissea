@@ -42,13 +42,15 @@ $string['copy_item'] = 'Element kopieren';
 $string['copy_quiz_warning'] = 'Achtung! - Sie kopieren eine Aktivität Test in den "Zwischenspeicher zum Teilen". Wenn sich viele Fragen im Kurs befinden kann dies etwas länger dauern.';
 $string['copy_section'] = 'Abschnitt kopieren';
 $string['copy_this_course'] = 'Diesen Kurs kopieren';
-$string['copy_user_data'] = 'Möchten Sie Nutzerdaten kopieren? (z. B. Glossar/Wiki/Datenbankeinträge)';
+$string['copy_user_data'] = 'Möchten Sie Nutzerdaten einschließen? (z.B. Glossar/Wiki/Datenbankeinträge)';
 $string['copying_this_item'] = 'Kopieren dieses Elements';
 $string['delete_item'] = 'Element löschen';
 $string['delete_items'] = 'Elemente löschen';
 $string['delete_marked_items'] = 'Markierte Elemente löschen';
 $string['deselect_all'] = 'Alle abwählen';
 $string['drop_here'] = 'Hierhin ziehen…';
+$string['empty_section_restore'] = 'Beim Kopieren des Elements ist etwas schief gegangen. Das Element war leer.';
+$string['import_subsection_into_default_named_section_warning'] = 'Sie sind dabei, einen Unterabschnitt in einen unbenannten Abschnitt kopieren. Dies überschreibt den Abschnittsnamen.';
 $string['into_section'] = 'in den Abschnitt';
 $string['into_sharing_cart'] = 'in den Zwischenspeicher';
 $string['items'] = 'Elemente';
@@ -57,7 +59,7 @@ $string['maybe_the_queue_is_stuck'] = 'Wenn Sie  den Kopiervorgang jetzt ausfüh
 $string['module_is_disabled_on_site'] = 'Dieses Modul wurde auf der Site deaktiviert. Sie können es nicht kopieren.';
 $string['no_course_modules_in_section'] = 'Keine Kursmodule in diesem Abschnitt';
 $string['no_course_modules_in_section_description'] = 'Dieser Abschnitt enthält keine Kursmodule und kann daher nicht kopiert werden.';
-$string['no_items'] = 'Keine Elemente.<br/> <br/>Ziehen Sie per Drag & drop Aktivitäten oder Abschnitte in den Sharing Cart oder klicken Sie das <i class="fa fa-shopping-basket"></i> Icon, um Elemente in den Zwischenspeicher zu legen.';
+$string['no_items'] = 'Keine Elemente.<br/> <br/>Ziehen Sie Aktivitäten oder Abschnitte per Drag & drop  in den Zwischenspeicher zum Teilen oder klicken Sie auf das <i class="fa fa-shopping-basket"></i> Symbol, um Elemente in den Zwischenspeicher zu legen.';
 $string['no_restores'] = '<div class="no-restores text-muted">Kein Kopiervorgang im Prozess<br>
 <br>
 Klicken Sie auf das <i class="fa fa-clone"></i> Symbol, um Elemente aus dem "Zwischenspeicher zum Teilen" zum Kurs hinzuzufügen.</div>';

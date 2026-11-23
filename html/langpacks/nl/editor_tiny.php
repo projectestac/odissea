@@ -168,6 +168,7 @@ $string['tiny:failed_to_initialize_plugin_0'] = 'Plugin initiëren mislukt: {0}'
 $string['tiny:failed_to_load_plugin_0_from_url_1'] = 'Plugin laden mislukt: {1}';
 $string['tiny:failed_to_load_plugin_url_0'] = 'PLugin-url laden mislukt: {0}';
 $string['tiny:failed_to_upload_image_0'] = 'Afbeelding uploaden mislukt: {0}';
+$string['tiny:field_label_and_rich_textarea_help'] = '{$a}. Rich-text-gebied. Druk op ALT-F9 voor het menu. Druk op ALT-F10 voor de werkbalk. Druk op ALT-0 voor hulp.';
 $string['tiny:file'] = 'Bestand';
 $string['tiny:find'] = 'Zoeken';
 $string['tiny:find_and_replace'] = 'Zoeken en vervangen';

@@ -102,7 +102,7 @@ $string['availability_help'] = 'Mugatu egoera honen eskuragarritasuna. <br> "Den
 $string['availabilityalways'] = 'Beti';
 $string['availabilitylimitedtime'] = 'Denbora-tarte mugatu batean';
 $string['availabilityno'] = 'Ez';
-$string['availablebeforesession'] = 'Eskuragarri saioa hasten denean';
+$string['availablebeforesession'] = 'Eskuragarri saioa hasi baino lehen';
 $string['availablebeforesession_help'] = 'Ikasleek euren bertaratzea erregistratzen ari direnean, baimendu egoera hau saioaren hasiera heldu baino lehen.';
 $string['averageattendance'] = 'Batez besteko bertaratzea';
 $string['averageattendancegraded'] = 'Batez besteko bertaratzea';
@@ -357,7 +357,7 @@ $string['name'] = 'Izena';
 $string['newdate'] = 'Data berria';
 $string['newduration'] = 'Iraupen berria';
 $string['newstatusset'] = 'Egoera-multzo berria';
-$string['noabsentstatusset'] = 'Erabiltzen ari zaren egoera-multzoak ez dauka markatu gabekoetan erabiltzen egoerarik.';
+$string['noabsentstatusset'] = 'Erabiltzen ari zaren egoera-multzoak ez dauka zehaztuta markatu gabekoetan erabiliko den egoerarik.';
 $string['noattendanceusers'] = 'Ezin da daturik esportatu ikastaroetan ez dagoelako ikaslerik matrikulatuta.';
 $string['noattforuser'] = 'Ez dago erabiltzaile honen bertaratze-erregistrorik';
 $string['noautomark'] = 'Desgaituta';
@@ -377,7 +377,7 @@ $string['notfound'] = 'Ez da bertaratzearen erregistroaren jarduerarik aurkitu i
 $string['notifytask'] = 'Bidali abisuak erabiltzaileei';
 $string['notmember'] = 'ez da partaidea';
 $string['notset'] = 'ezarri gabe';
-$string['nounmarkedstatusset'] = 'Ez dago markatu gabekoentzako egoerarik zehaztuta saio honetan (id:{$a->sessionid}), hau konpontzeko <a href="{$a->url}">Egoera-multzoa</a> eguneratu ezazu.';
+$string['nounmarkedstatusset'] = 'Ez dago markatu gabekoetan erabiliko den egoerarik zehaztuta saio honetan (id:{$a->sessionid}), hau konpontzeko <a href="{$a->url}">Egoera-multzoa</a> eguneratu ezazu.';
 $string['noupgradefromthisversion'] = 'Bertaratzearen erregistroaren modulua ezin da eguneratu instalatuta daukazun attforblock bertsiotik. - attforblock ezabatu edo bere bertsio berrienera eguneratu ezazu mesedez bertaratzearen erregistroaren modulua instalatu baino lehen.';
 $string['nousers'] = 'Ez da aurkitu bertaratzea erregistratzeko matrikulatutako erabiltzailerik.';
 $string['numsessions'] = 'Saio kopurua';

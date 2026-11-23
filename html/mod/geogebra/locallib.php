@@ -27,6 +27,9 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+use GuzzleHttp\Exception\GuzzleException;
+use GuzzleHttp\RequestOptions;
+
 defined('MOODLE_INTERNAL') || die();
 
 require_once $CFG->libdir . '/filelib.php';
@@ -256,6 +259,7 @@ function geogebra_view_applet($geogebra, $cm, $context, $attempt = null, $isprev
         $PAGE->requires->js('/mod/geogebra/geogebra_view.js');
 
         echo '<form id="geogebra_form" method="POST" action="attempt.php">';
+        echo '<input type="hidden" name="sesskey" value="' . sesskey() . '"/>';
         echo '<input type="hidden" name="appletInformation" />';
         echo '<input type="hidden" name="id" value="' . $context->instanceid . '"/>';
         echo '<input type="hidden" name="n" value="' . $geogebra->id . '"/>';
@@ -299,6 +303,7 @@ function geogebra_get_script_param($name, $attributes) {
 /**
  * @throws \Random\RandomException
  * @throws dml_exception
+ * @throws JsonException
  * @return void
  */
 function geogebra_print_content($geogebra, $context) {
@@ -332,15 +337,23 @@ function geogebra_print_content($geogebra, $context) {
         unset($attribs['randomSeed']);
     }
 
+    $content = false;
+
     if (geogebra_is_valid_external_url($geogebra->url)) {
         // Get contents if specified GGB is external
         $materialid = geogebra_get_id($geogebra->url);
         if (!$materialid) {
-            $curl = curl_init();
-            curl_setopt($curl, CURLOPT_URL, $geogebra->url);
-            curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-            $content = curl_exec($curl);
-            curl_close($curl);
+            // Fetch the file through the Moodle HTTP client, so that the site proxy settings and the
+            // curl security helper (blocked hosts and allowed ports) are applied to the request.
+            try {
+                $response = \core\di::get(\core\http_client::class)->get($geogebra->url, [
+                    RequestOptions::CONNECT_TIMEOUT => 20,
+                    RequestOptions::TIMEOUT => 30,
+                ]);
+                $content = (string)$response->getBody();
+            } catch (GuzzleException $e) {
+                debugging('Error fetching ' . $geogebra->url . ': ' . $e->getMessage(), DEBUG_DEVELOPER);
+            }
         }
     } else {
         $fs = get_file_storage();
@@ -376,7 +389,7 @@ function geogebra_print_content($geogebra, $context) {
         echo $name . ':' . geogebra_get_script_param($name, $attributes) . ', ';
     }
     foreach ($attribs as $name => $value) {
-        echo $name . ':"' . $value . '", ';
+        echo $name . ':' . json_encode((string)$value, JSON_THROW_ON_ERROR | JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) . ', ';
     }
     echo '}, true);';
     if (!empty($codebase)) {
@@ -601,18 +614,36 @@ function geogebra_extract_package($cmid) {
     return $filename;
 }
 
+/**
+ * Checks whether the given reference is an external URL which may be fetched by this module.
+ *
+ * Only absolute http(s) URLs are accepted, anything else (other schemes, relative references or
+ * plain file names) is treated as a file stored in Moodle.
+ *
+ * @param string $url The reference stored in the activity.
+ * @return bool True if the reference is a supported external URL.
+ */
 function geogebra_is_valid_external_url($url) {
 
-    // URL of form geogebra.org/m/<id> is invalid.
-    if (preg_match('/^(http:\/\/|https:\/\/)([www\.]*)(geogebra\.org\/m\/)[a-z\d;:@&%=+\/\$_.-]*$/i', $url) === 1) {
-        \core\notification::warning(get_string('invalidurl', 'geogebra'));
-        $result = 0;
-    } else {
-        // Other resources
-        $result = preg_match('/(http:\/\/|https:\/\/|www).*\/*(\?[a-z+&\$_.-][a-z\d;:@&%=+\/\$_.-]*)?$/i', $url);
+    $url = trim((string)$url);
+
+    if (!str_starts_with(strtolower($url), 'http://') && !str_starts_with(strtolower($url), 'https://')) {
+        return false;
     }
 
-    return $result;
+    $host = strtolower((string)parse_url($url, PHP_URL_HOST));
+    if (empty($host)) {
+        return false;
+    }
+
+    // URLs of form geogebra.org/m/<id> are not supported, the material id has to be used instead.
+    $path = (string)parse_url($url, PHP_URL_PATH);
+    if (($host === 'geogebra.org' || str_ends_with($host, '.geogebra.org')) && str_starts_with($path, '/m/')) {
+        \core\notification::warning(get_string('invalidurl', 'geogebra'));
+        return false;
+    }
+
+    return true;
 
 }
 
@@ -894,7 +925,7 @@ function geogebra_view_userid_results($geogebra, $userid, $cm, $context, $viewmo
         $table->size = ['10%', '90%'];
 
         parse_str($attempt->vars, $parsedvars);
-        $numattempt = $parsedvars['attempts'];
+        $numattempt = s($parsedvars['attempts']);
 
         if (!$attempt->finished) {
             $numattempt .= ' (' . get_string('unfinished', 'geogebra') . ')';
@@ -1001,7 +1032,7 @@ function geogebra_get_attempt_row($geogebra, $attempt, $user, $cm = null, $conte
     }
 
     parse_str($attempt->vars, $parsedvars);
-    $numattempt = $parsedvars['attempts'];
+    $numattempt = s($parsedvars['attempts']);
 
     if (!$attempt->finished) {
         $numattempt .= ' (' . get_string('unfinished', 'geogebra') . ')';

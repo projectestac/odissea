@@ -723,13 +723,18 @@ if ($hassiteconfig) {
         $plugin->load_settings($ADMIN, 'webservicesettings', $hassiteconfig);
     }
 
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin, except for token management, which is also
+    // allowed to the school admin. The web services category is created here for the users who cannot see the rest.
+    // 2026.11.13 @aginard
+    }
+
+    if (!get_protected_agora()) {
+        $ADMIN->add('server', new admin_category('webservicesettings', new lang_string('webservices', 'webservice')));
+    }
+    // ************ FI
+
     // Web services > Manage tokens.
     $ADMIN->add('webservicesettings', new admin_externalpage('webservicetokens', new lang_string('managetokens', 'webservice'),
         new moodle_url('/admin/webservice/tokens.php')));
-
-    // XTEC ************ AFEGIT - Allow access only to xtecadmin.
-    // 2024.10.16 @aginard
-    }
-    // ************ FI
 
 }

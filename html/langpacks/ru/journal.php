@@ -70,7 +70,6 @@ $string['pluginname'] = 'Рабочая тетрадь';
 $string['rate'] = 'Оценить';
 $string['removeentries'] = 'Удалить все записи';
 $string['saveallfeedback'] = 'Сохранить все мои отзывы';
-$string['showoverview'] = 'Показать обзор рабочих тетрадей на странице «Мой Moodle»';
 $string['showrecentactivity'] = 'Показать последнюю активность';
 $string['startoredit'] = 'Начать или редактировать мою запись рабочей тетради';
 $string['viewallentries'] = 'Посмотреть записи рабочей тетради - ({$a})';

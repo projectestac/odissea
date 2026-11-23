@@ -1,0 +1,59 @@
+<?php
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
+/**
+ * Configurable Reports a Moodle block for creating customizable reports
+ *
+ * @package    block_configurable_reports
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+defined('MOODLE_INTERNAL') || die();
+
+require_once($CFG->dirroot . '/blocks/configurable_reports/plugin.class.php');
+
+/**
+ * Class plugin_base
+ *
+ * @package   block_configurable_reports
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+abstract class filter_base extends plugin_base {
+    /**
+     * Execute filter, return the modified sql and paramaters.
+     *
+     * @param string $sql
+     * @param ?\stdClass $data
+     * @return array
+     */
+    function execute_for_sql_report(string $sql, ?\stdClass $data = null): array {
+        return [$sql, []];
+    }
+
+    /**
+     * Narrow the elements of a report to the one picked in the filter.
+     *
+     * The value comes from the request, so it is only kept when the report conditions selected it: a filter can
+     * narrow what a report shows, never add elements the conditions left out.
+     *
+     * @param array $finalelements The elements the conditions and previous filters selected.
+     * @param int|string $value The value picked in the filter.
+     * @return array
+     */
+    protected function narrow_to(array $finalelements, $value): array {
+        return in_array($value, $finalelements) ? [$value] : [];
+    }
+}

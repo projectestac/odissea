@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['logoutothersessions'] = 'Atsjungti nuo visų kitų naršyklės sesijų';
+$string['logoutothersessions'] = 'Atsijungti nuo visų kitų naršyklės sesijų';
 $string['logoutothersessions_help'] = 'Atsijungti nuo visų naršyklės sesijų, išskyrus šią. Tai neturi įtakos interneto programoms.';
 $string['logoutothersessionssuccess'] = 'Esate atsijungę nuo visų kitų sesijų.';
 $string['logoutsinglesessionsuccess'] = 'Esate atsijungę nuo sesijos adresu {$a}.';

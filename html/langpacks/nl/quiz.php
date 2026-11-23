@@ -95,7 +95,7 @@ $string['attemptalreadyclosed'] = 'Deze poging is al beëindigd.';
 $string['attemptclosed'] = 'Poging is nog niet gesloten';
 $string['attemptduration'] = 'Tijdsduur';
 $string['attemptedon'] = 'Poging op';
-$string['attempterror'] = 'Je mag deze test nu niet proberen omdat:';
+$string['attempterror'] = 'Je mag deze test nu niet proberen omdat: {$a}';
 $string['attempterrorcontentchange'] = 'Dit testvoorbeeld bestaat niet meer. (Als een test bewerkt wordt, dan worden automatische alle voorbeelden die bezig zijn verwijderd.)';
 $string['attempterrorcontentchangeforuser'] = 'Deze testpoging bestaat niet meer.';
 $string['attempterrorinvalid'] = 'Ongeldig testpogingsID';
@@ -108,7 +108,7 @@ $string['attemptnumber'] = 'Poging';
 $string['attemptquiz'] = 'Poging test';
 $string['attemptquiznow'] = 'Start de test nu';
 $string['attemptreviewtitle'] = '{$a}: beoordeel poging';
-$string['attemptreviewtitlepaged'] = '{$a->name}: beoordeel poging (page{$a->currentpage} van {$ a-> totalpages})';
+$string['attemptreviewtitlepaged'] = '{$a->name}: beoordeel poging (pagina {$a->currentpage} van {$a->totalpages})';
 $string['attempts'] = 'Pogingen';
 $string['attempts_help'] = 'Het totale aantal toegestane pogingen (niet het aantal extra pogingen).';
 $string['attemptsallowed'] = 'Toegestane pogingen';
@@ -343,7 +343,7 @@ $string['emailnotifybody'] = 'Beste {$a->username},
 {$a->studentname} heeft de test \'{$a->quizname} ({$a->quizurl}) uit de cursus \'{$a->coursename}\' voltooid.
 
 Je kunt deze test nakijken op {$a->quizreviewurl}.';
-$string['emailnotifysmall'] = '{$a->studentname} heeft {$a->quizname} voltooid. Zie {$a->quizviewurl}';
+$string['emailnotifysmall'] = '{$a->studentname} heeft {$a->quizname} voltooid. Zie {$a->quizreviewurl}';
 $string['emailnotifysubject'] = '{$a->studentname} heeft de test {$a->quizname} voltooid';
 $string['emailoverduebody'] = 'Beste {$a->studentname},
 
@@ -595,7 +595,7 @@ Testen kunnen gebruikt worden
 * voor zelfevaluatie';
 $string['modulename_link'] = 'mod/quiz/view';
 $string['modulenameplural'] = 'Testen';
-$string['movequestionnumber'] = 'Verplaats vraag: {$z}';
+$string['movequestionnumber'] = 'Verplaats vraag: {$a}';
 $string['moveselectedonpage'] = 'Verplaats geselecteerde vragen naar pagina: {$a}';
 $string['multichoice'] = 'Meerkeuze';
 $string['multipleanswers'] = 'Kies minstens één antwoord';
@@ -791,7 +791,7 @@ $string['questiondependencyremove'] = 'Vraag {$a->thisq} kan niet beantwoord wor
 $string['questiondependsonprevious'] = 'Deze vraag kan niet beantwoord worden voor de vorige vraag voltooid is.';
 $string['questiondraftonly'] = 'De vraag {$a} heeft alle versies in de status concept. Bezoek de vragenpool en stel de status in op gereed om deze vraag te kunnen gebruiken.';
 $string['questiondraftwillnotwork'] = 'Deze vraag heeft alle versies in de status concept. Bezoek de vragenpool en stel de status in op gereed.';
-$string['questioninuse'] = 'De vraag \'{$a}\' is op dit moment al in gebruik:';
+$string['questioninuse'] = 'De vraag \'{$a->questionname}\' wordt op dit moment gebruikt in: <br />{$a->quiznames}<br />De vraag zal niet verwijderd worden uit deze testen, maar enkel uit de categorielijst.';
 $string['questionmissing'] = 'Vraag voor deze sessie ontbreekt';
 $string['questionname'] = 'Naam vraag';
 $string['questionnonav'] = '<span class="accesshide">Vraag </span>{$a->number}<span class="accesshide"> {$a->attributes}</span>';
@@ -1134,7 +1134,7 @@ $string['timetaken'] = 'Gebruikte tijd';
 $string['timing'] = 'Tijd';
 $string['tofile'] = 'naar bestand';
 $string['tolerance'] = 'Tolerantie';
-$string['toomanyrandom'] = 'Er zijn meer willekeurige vragen vereist, dan er in deze categorie zitten! ({$a})';
+$string['toomanyrandom'] = 'Er zijn meer willekeurige vragen vereist, dan er in deze categorie zitten!';
 $string['top'] = 'Naar boven';
 $string['totalmarks'] = 'Totaalcijfer';
 $string['totalmarksx'] = 'Totaalcijfer: {$a}';

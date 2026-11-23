@@ -153,7 +153,7 @@ $string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = 'Numero di l
 $string['privacy:metadata:userpref:loginfailedlast'] = 'Data dell\'ultimo tentativo di login errato.';
 $string['privacy:metadata:userpref:loginlockout'] = 'Se l\'account dell\'utente è bloccato a causa dei login errati, e la data in cui l\'account è stato bloccato.';
 $string['privacy:metadata:userpref:loginlockoutignored'] = 'Indica che l\'account dell\'utente non può essere soggetto a bloccaggio.';
-$string['privacy:metadata:userpref:loginlockoutsecret'] = 'Se bloccato, il codice segreto che l\'utente deve usare per sbloccare il proprio account.';
+$string['privacy:metadata:userpref:loginlockoutsecret'] = 'Se bloccato, il secrets che l\'utente deve usare per sbloccare il proprio account.';
 $string['recaptcha'] = 'reCAPTCHA';
 $string['recaptcha_help'] = 'Il CAPTCHA è un sistema per prevenire abusi da parte di sistemi automatici. per verificare che sei un persona reale, segui le istruzioni. Possono essere essere visualizzati una casella di spunta, immagini con parole da inserire, oppure una serie di immagini sa selezionare.
 

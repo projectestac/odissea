@@ -30,6 +30,7 @@ if (empty($vars)) {
 }
 
 require_login($course, true, $cm);
+require_sesskey();
 
 $attempt = geogebra_get_unfinished_attempt($geogebra->id, $USER->id);
 
@@ -44,15 +45,15 @@ if ((int)$geogebra->autograde === 0) {
 
     $vars = http_build_query([
         'grade' => $grade,
-        'duration' => $parsedVars['duration'],
-        'attempts' => $parsedVars['attempts'],
+        'duration' => (int) $parsedVars['duration'],
+        'attempts' => (int) $parsedVars['attempts'],
         'state' => $parsedVars['state'],
     ], '', '&');
 } else {
     $vars = http_build_query([
         'grade' => round($parsedVars['grade'], 2),
-        'duration' => $parsedVars['duration'],
-        'attempts' => $parsedVars['attempts'],
+        'duration' => (int) $parsedVars['duration'],
+        'attempts' => (int) $parsedVars['attempts'],
         'state' => $parsedVars['state'],
     ], '', '&');
 }

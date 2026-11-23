@@ -65,7 +65,7 @@ $string['indicator:socialbreadth_help'] = 'Este indicador baseia-se na amplitude
 $string['indicator:socialbreadthdef'] = 'Socialização do URL';
 $string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta percentagem do relacionamento social oferecido pelos recursos URL durante esse intervalo de análise (Níveis = Sem participação, Participante individual)';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['invalidstoredurl'] = 'Não é possível mostrar este recurso, o URL é inválido';
+$string['invalidstoredurl'] = 'Não é possível mostrar este recurso, o URL é inválido.';
 $string['invalidurl'] = 'Insira um URL válido';
 $string['modulename'] = 'URL';
 $string['modulename_help'] = 'O URL permite ao professor disponibilizar uma hiperligação para um conteúdo externo na página principal da disciplina, Tudo o que esteja disponível livremente online, como documentos ou imagens, pode ser partilhado, o URL não necessita de ser a página de um site. Pode copiar e colar a hiperligação de qualquer página online ou escolher uma hiperligação específica de um repositório como o Flickr, YouTube ou Wikimedia (dependendo dos repositórios que estão disponíveis na plataforma).

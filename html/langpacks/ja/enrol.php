@@ -47,7 +47,7 @@ $string['customwelcomemessage_help'] = '使用可能フォーマット: プレ�
 <li>ユーザ名 {$a->firstname}</li>
 <li>ユーザコースロール {$a->courserole}</li>
 </ul>';
-$string['customwelcomemessageplaceholder'] = 'こんにちは {$a->fullname} さん、あなたはコース {$a->coursename} に登録されました。';
+$string['customwelcomemessageplaceholder'] = 'こんにちは {$a->firstname} さん、あなたはコース {$a->coursename} に登録されました。';
 $string['defaultenrol'] = '新しいコースにインスタンスを追加する';
 $string['defaultenrol_desc'] = 'このプラグインを新しいコースすべてにデフォルトで追加できます。';
 $string['deleteinstanceconfirm'] = 'あなたは登録方法「 {$a->name} 」を削除しようとしています。この登録方法を使用して登録している {$a->users} 名のユーザすべては登録解除されます。同時にユーザ評定、グループメンバシップ、フォーラム購読のようなコース関連データすべてが削除されます。
@@ -61,13 +61,13 @@ $string['editenrolment'] = '登録を編集する';
 $string['edituserenrolment'] = '{$a} の登録を編集する';
 $string['enrol'] = '登録';
 $string['enrolcandidates'] = '受講未登録ユーザ';
-$string['enrolcandidatesmatching'] = '合致する受講未登録ユーザ';
+$string['enrolcandidatesmatching'] = '一致する受講未登録ユーザ';
 $string['enrolcohort'] = 'コーホートを登録する';
 $string['enrolcohortusers'] = 'ユーザを登録する';
 $string['enroldetails'] = '登録詳細';
 $string['enrollednewusers'] = '{$a} 名の新しいユーザが正常に登録されました。';
 $string['enrolledusers'] = '登録済みユーザ';
-$string['enrolledusersmatching'] = '合致する登録済みユーザ';
+$string['enrolledusersmatching'] = '一致する登録済みユーザ';
 $string['enrolme'] = 'このコースに私を登録する';
 $string['enrolment'] = '登録';
 $string['enrolmentinstances'] = '登録方法';

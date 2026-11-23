@@ -36,7 +36,7 @@ $string['adhoctasksdue'] = 'Ad hoc atazen amaiera';
 $string['adhoctasksfailed'] = 'Huts egindako ad hoc atazak';
 $string['adhoctasksfuture'] = 'Etorkizuneko ad hoc atazak';
 $string['adhoctasksrunning'] = 'Exekutatzen ari diren ad hoc atazak';
-$string['asap'] = '<abbr title="Ahal bezain laster">ASAP</abbr>';
+$string['asap'] = '<abbr title="Ahal bezain laster">Ahal bezain laster (ASAP)</abbr>';
 $string['backtoadhoctasks'] = 'Itzuli Ad hoc atazetara';
 $string['backtoscheduledtasks'] = 'Itzuli programatutako atazetara';
 $string['blocking'] = 'Blokeoak';

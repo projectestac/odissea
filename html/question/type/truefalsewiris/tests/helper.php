@@ -23,8 +23,68 @@
  */
 class qtype_truefalsewiris_test_helper extends question_test_helper {
     public function get_test_questions() {
-        return array('sciencetruefalse');
+        return array('sciencetruefalse', 'fixedtrue', 'fixedfalse');
     }
+
+    /**
+     * Builds a truefalsewiris form-data object with a fixed correct answer.
+     *
+     * The science template determines the right answer from a random Wiris
+     * variable (wirisoverrideanswer = '#r'), which is not deterministic. Here
+     * wirisoverrideanswer is empty, so the base True/False grading uses the fixed
+     * correctanswer directly and selecting True or False can be graded
+     * deterministically end to end. The Wiris payload is minimal (no CAS session)
+     * because the plain-text statement carries no variables.
+     *
+     * @param string $name Question name.
+     * @param string $questiontext Question text shown to the student.
+     * @param string $correctanswer '1' if True is correct, '0' if False is correct.
+     * @return stdClass
+     */
+    private function make_truefalse_form_data($name, $questiontext, $correctanswer) {
+        $form = new stdClass();
+        $form->name = $name;
+        $form->questiontext = array('text' => $questiontext, 'format' => FORMAT_HTML);
+        $form->defaultmark = 1;
+        $form->generalfeedback = array('text' => '', 'format' => FORMAT_HTML);
+        $form->correctanswer = $correctanswer;
+        $form->feedbacktrue = array('text' => 'Feedback for the True answer.', 'format' => FORMAT_HTML);
+        $form->feedbackfalse = array('text' => 'Feedback for the False answer.', 'format' => FORMAT_HTML);
+        $form->penalty = 1;
+        // Empty override -> the right answer is the fixed correctanswer (no Wiris computation).
+        $form->wirisoverrideanswer = '';
+        $form->wirisquestion = '<question><correctAnswers><correctAnswer></correctAnswer></correctAnswers>'
+            . '<assertions><assertion name="syntax_math"/><assertion name="equivalent_symbolic"/></assertions>'
+            . '<slots><slot><initialContent></initialContent></slot></slots></question>';
+        $form->wirislang = 'en';
+        $form->wiristruefalse = '';
+        return $form;
+    }
+
+    /**
+     * True/False (WIRIS) question whose correct answer is True.
+     * @return stdClass
+     */
+    public function get_truefalsewiris_question_form_data_fixedtrue() {
+        return $this->make_truefalse_form_data(
+            'TF WIRIS true',
+            '<p>The number 4 is even.</p>',
+            '1'
+        );
+    }
+
+    /**
+     * True/False (WIRIS) question whose correct answer is False.
+     * @return stdClass
+     */
+    public function get_truefalsewiris_question_form_data_fixedfalse() {
+        return $this->make_truefalse_form_data(
+            'TF WIRIS false',
+            '<p>The number 3 is even.</p>',
+            '0'
+        );
+    }
+
     /**
      * Get the form data that corresponds to saving a Science Truefalse question.
      *

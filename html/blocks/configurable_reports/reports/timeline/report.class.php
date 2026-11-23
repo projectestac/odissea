@@ -23,6 +23,8 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+defined('BLOCK_CONFIGURABLE_REPORTS_MAX_RECORDS') || define('BLOCK_CONFIGURABLE_REPORTS_MAX_RECORDS', 5000);
+
 /**
  * Class report_timeline
  *
@@ -80,22 +82,25 @@ class report_timeline extends report_base {
                 }
             }
 
-            $filterstarttime = optional_param('filter_starttime', 0, PARAM_RAW);
-            $filterendtime = optional_param('filter_endtime', 0, PARAM_RAW);
+            // The date filter posts its parts as an array, which optional_param() refuses to clean.
+            $filterstarttime = cr_filter_date_to_timestamp(optional_param_array('filter_starttime', [], PARAM_INT));
+            $filterendtime = cr_filter_date_to_timestamp(optional_param_array('filter_endtime', [], PARAM_INT));
 
             if ($filterstarttime && $filterendtime) {
-                $filterstarttime = make_timestamp($filterstarttime['year'], $filterstarttime['month'], $filterstarttime['day']);
-                $filterendtime = make_timestamp($filterendtime['year'], $filterendtime['month'], $filterendtime['day']);
-
                 $config->starttime = usergetmidnight($filterstarttime);
                 $config->endtime = usergetmidnight($filterendtime) + 24 * 60 * 60;
             }
 
-            for ($i = $config->starttime; $i < $config->endtime; $i += $config->interval * $daysecs) {
+            // The dates can come from the request, so bound the number of rows: an interval below one day never
+            // ends the loop, and a long range with a short interval runs every column for each of its rows.
+            $interval = max(1, (int) $config->interval);
+            $limit = (int) get_config('block_configurable_reports', 'reportlimit') ?: BLOCK_CONFIGURABLE_REPORTS_MAX_RECORDS;
+
+            for ($i = $config->starttime; $i < $config->endtime && count($elements) < $limit; $i += $interval * $daysecs) {
                 $row = new stdclass();
                 $row->id = $i;
                 $row->starttime = $i;
-                $row->endtime = $row->starttime + ($config->interval * $daysecs - 1);
+                $row->endtime = $row->starttime + ($interval * $daysecs - 1);
                 if ($row->endtime > $config->endtime) {
                     $row->endtime = $config->endtime;
                 }

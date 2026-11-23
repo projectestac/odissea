@@ -113,6 +113,7 @@ $string['gotosection'] = 'Go to section {$a}';
 $string['gradetopassnotset'] = 'This course does not have a grade to pass set. It may be set in the grade item of the course (Gradebook setup).';
 $string['hideendedcoursestask'] = 'Hide courses on end date';
 $string['informationformodule'] = 'Information about the {$a} activity';
+$string['locked'] = 'Locked';
 $string['module'] = 'Activity';
 $string['namewithlink'] = 'Category name with link';
 $string['noaccesssincestartinfomessage'] = 'Hi {$a->userfirstname},

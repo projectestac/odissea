@@ -83,8 +83,11 @@ final class move_note extends external_api {
         self::validate_context($context);
         require_capability('mod/board:view', $context);
 
-        if ($USER->id != $note->userid && !board::board_users_can_edit($board)) {
-            require_capability('mod/board:manageboard', $context);
+        if (
+            $USER->id != $note->userid && !board::board_users_can_edit($board)
+            && !has_any_capability(board::MANAGENOTES_CAPABILITIES, $context)
+        ) {
+            throw new \core\exception\required_capability_exception($context, 'mod/board:managenotes', 'nopermissions', '');
         }
 
         $historyid = note::move($id, $columnid, $sortorder);

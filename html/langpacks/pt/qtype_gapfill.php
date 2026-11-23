@@ -89,7 +89,6 @@ $string['pluginnameadding'] = 'Adicionar uma questão Preencher espaços em bran
 $string['pluginnameediting'] = 'Editar Preencher espaço em branco';
 $string['pluginnamesummary'] = 'Um tipo de pergunta de preenchimento de espaços em branco. Tem menos capacidades que a pergunta do tipo Respostas incorporadas (Cloze) mas tem uma sintaxe mais simples. Permite resposta através de arrastar e largar ou por lista pendente, com ou sem elementos de distração (respostas erradas).';
 $string['privacy:null_reason'] = 'O tipo de pergunta Preencher espaços em branco não afeta nem armazena dados em si.';
-$string['questioncatnotfound'] = 'Categoria de pergunta não encontrada. Clique <a href={$a}>aqui</a> para inicializar e depois no botão retroceder do navegador';
 $string['questionsmissing'] = 'Não foi incluído nenhum campo no texto da pergunta';
 $string['questiontext'] = 'Texto da pergunta';
 $string['questiontext_help'] = 'Coloque delimitadores em torno das palavras que se tornarão parte do texto';

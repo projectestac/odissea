@@ -59,7 +59,7 @@ $string['attachment_help'] = 'Sie können optional eine oder mehrere Dateien an 
 $string['author'] = 'Autor/in';
 $string['authorview'] = 'Nach Autor/in';
 $string['back'] = 'Zurück';
-$string['bynameondate'] = 'Nach {$a->name} - {$a->date}';
+$string['bynameondate'] = 'Von {$a->name} - {$a->date}';
 $string['cachedef_concepts'] = 'Konzeptverknüpfung';
 $string['cantinsertcat'] = 'Kategorie kann nicht angelegt werden';
 $string['cantinsertrec'] = 'Eintrag kann nicht angelegt werden';
@@ -151,7 +151,7 @@ $string['displayformatssetup'] = 'Einstellungen zum Anzeigeformat';
 $string['duplicatecategory'] = 'Kategorie duplizieren';
 $string['duplicateentry'] = 'Eintrag duplizieren';
 $string['editalways'] = 'Immer bearbeitbar';
-$string['editalways_help'] = 'Diese Option legt fest, wie Teilnehmer/innen ihre Einträge bearbeiten dürfen:
+$string['editalways_help'] = 'Diese Option legt fest, wie lange Teilnehmer/innen ihre Einträge bearbeiten dürfen:
 
 * Ja - Einträge sind jederzeit bearbeitbar
 * Nein - Einträge sind nur im festgelegten Zeitraum bearbeitbar (oft 30 Minuten)';
@@ -256,7 +256,7 @@ $string['linkcategory'] = 'Kategorie automatisch verlinken';
 $string['linkcategory_help'] = 'Wenn die Option \'Eintrag automatisch verlinken\' und zusätzlich diese Option aktiviert sind, wird automatisch der Kategoriename verlinkt, wo immer er im Kurs erscheint. Wenn Teilnehmer/innen einem Kategorielink folgen, werden sie auf die Anzeige \'Nach Kategorie\' im Glossar geleitet.';
 $string['linking'] = 'Autoverlinkung';
 $string['mainglossary'] = 'Hauptglossar';
-$string['maxtimehaspassed'] = 'Die maximale Bearbeitungszeit für den Kommentar wurde überschritten! ({$a})';
+$string['maxtimehaspassed'] = 'Die Bearbeitungszeit für diesen Kommentar wurde überschritten! ({$a})';
 $string['modulename'] = 'Glossar';
 $string['modulename_help'] = 'Das Glossar ermöglicht es den Teilnehmer/innen, eine Liste von Definitionen, wie ein Wörterbuch, zu erstellen und zu pflegen oder Ressourcen oder Informationen zu sammeln und zu organisieren. Zuerst legen Sie das Glossar an, danach werden die Begriffe und die Erläuterungen eingetragen.
 

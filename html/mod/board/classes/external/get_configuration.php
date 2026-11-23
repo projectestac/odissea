@@ -112,6 +112,7 @@ final class get_configuration extends external_api {
             'board' => $board,
             'contextid' => $context->id,
             'isEditor' => board::board_is_editor($board),
+            'canManageNotes' => has_any_capability(board::MANAGENOTES_CAPABILITIES, $context),
             'usersCanEdit' => (string)(int)board::board_users_can_edit($board),
             'userId' => $USER->id,
             'ownerId' => $ownerid,

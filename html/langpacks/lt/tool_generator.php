@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['additionalmodules'] = 'Papildomos veiklos';
+$string['additionalmodules_help'] = 'Pasirinkite papildomas veiklas, kuriose realizuota funkcija course_backend_generator_create_activity, kad jos būtų įtrauktos į testinį kursą.';
 $string['bigfile'] = 'Didelis failas {$a}';
 $string['courseexplanation'] = 'Šis įrankis sukuria standartinius testavimo kursus, kuriuose yra daug skyrių, veiklų ir failų.
 
@@ -116,11 +117,16 @@ $string['testplansize_3'] = 'L ({$a->users} naudotojai, {$a->loops} kilpos ir {$
 $string['testplansize_4'] = 'XL ({$a->users} naudotojai, {$a->loops} kilpos ir {$a->ramp up} padidinimo laikotarpis)';
 $string['testplansize_5'] = 'XXL ({$a->users} naudotojai, {$a->loops} kilpos ir {$a->ramp up} padidinimo laikotarpis)';
 $string['testscenario'] = 'Kurti testavimo scenarijus';
+$string['testscenario_description'] = 'Kuriant testavimo scenarijus naudojama ribota funkcijų failų sintaksė, kad būtų sukurti visi elementai, reikalingi rankiniam testui atlikti.';
 $string['testscenario_errorparsing'] = 'Klaida analizuojant funkcijų failą: {$a}';
 $string['testscenario_file'] = 'Funkcijų failas';
+$string['testscenario_filedesc'] = 'Įkeliamuose funkcijų failuose gali būti tik scenarijai su core_data_generator etapais arba kai kuriais konkrečiais etapais, kuriems nereikia selenium. Visi scenarijai bus vykdomi iš karto, išskyrus pažymėtus žyma @cleanup.';
+$string['testscenario_filedesc_list'] = 'Tai etapų, kuriuos galima naudoti testavimo scenarijaus funkcijų faile, sąrašas:';
 $string['testscenario_invalidfile'] = 'Failo formatas negalioja arba jame yra netinkamų žingsnių.';
 $string['testscenario_invalidstep'] = 'Nežinomas veiksmas. Testavimo scenarijų kūrimas priima tik generatoriaus žingsnius.';
 $string['testscenario_nosteps'] = 'Faile nėra jokių veiksmų, kuriuos reikėtų atlikti.';
+$string['testscenario_notready'] = 'Composer ir Behat bibliotekos dar neįdiegtos.<br><br>Norėdami įjungti šį įrankį, įvykdykite šią komandą: <strong>php admin/tool/generator/cli/runtestscenario.php</strong>';
+$string['testscenario_outline'] = 'Scenarijų šablonai (Scenario Outline) nepalaikomi.';
 $string['testscenario_scenarionosteps'] = 'Šiame scenarijuje nėra jokių etapų.';
 $string['testscenario_steps'] = 'Testavimo scenarijaus etapai:';
 $string['updateuserspassword'] = 'Atnaujinti kurso naudotojų slaptažodį';

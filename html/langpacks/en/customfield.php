@@ -29,6 +29,7 @@ $string['action'] = 'Action';
 $string['addingnewcustomfield'] = 'Adding a new {$a}';
 $string['addnewcategory'] = 'Add a new category';
 $string['afterfield'] = 'After field {$a}';
+$string['categoryadded'] = 'The category has been successfully added';
 $string['categorynotfound'] = 'Category not found';
 $string['checked'] = 'Checked';
 $string['commonsettings'] = 'General';

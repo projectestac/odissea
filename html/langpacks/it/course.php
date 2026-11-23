@@ -117,6 +117,7 @@ $string['gotosection'] = 'Vai alla sezione {$a}';
 $string['gradetopassnotset'] = 'Il corso non ha una valutazione minima per superarlo. È possibile impostarla nel registro delle valutazioni.';
 $string['hideendedcoursestask'] = 'Nascondere i corsi dopo la data di fine';
 $string['informationformodule'] = 'Informazioni sull\'attività {$a}';
+$string['locked'] = 'Bloccato';
 $string['module'] = 'Attività';
 $string['namewithlink'] = 'Nome della categoria con link';
 $string['noaccesssincestartinfomessage'] = 'Gentile {$a->userfirstname},

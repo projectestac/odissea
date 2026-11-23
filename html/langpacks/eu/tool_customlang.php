@@ -82,11 +82,11 @@ $string['notice_ignoreupdate'] = '{$a->component}/{$a->stringid} katea baztertuk
 $string['notice_inexitentstring'] = 'Ez da {$a->component}/{$a->stringid} katea aurkitu.';
 $string['notice_missingcomponent'] = '{$a->component} osagaia falta da.';
 $string['notice_success'] = '{$a->component}/{$a->stringid} katea ondo eguneratu da.';
-$string['placeholder'] = 'Gakoak';
-$string['placeholder_help'] = 'Gakoak `{$a}` edo `{$a->zerbait}` moduko adierazpen bereziak dira. Katea erakusten denean balio batekin ordezkatzen dira.
+$string['placeholder'] = 'Hitz-gakoak';
+$string['placeholder_help'] = 'Hitz-gakoak `{$a}` edo `{$a->zerbait}` moduko adierazpen bereziak dira. Katea erakusten denean balio batekin ordezkatzen dira.
 
 Garrantzitsua da gakoa jatorrizko katean dagoen modu zehatzean kopiatzea. Ez ezazu euskaratu edo aldatu bere norabidea.';
-$string['placeholderwarning'] = 'kateak gakoren bat dauka';
+$string['placeholderwarning'] = 'kateak hitz-gakoren bat dauka';
 $string['pluginname'] = 'Hizkuntzen pertsonalizazioa';
 $string['privacy:metadata'] = 'Hizkuntzen pertsonalizazioa pluginak ez du datu pertsonalik biltzen.';
 $string['savecheckin'] = 'Gorde aldaketak hizkuntza-paketean';

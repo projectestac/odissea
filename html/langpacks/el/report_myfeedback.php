@@ -220,7 +220,6 @@ $string['usagetblheader_tiifeedback_info'] = 'Προστέθηκε ο αριθμ
 $string['usagetblheader_totalviews'] = 'Συνολικές προβολές';
 $string['usagetblheader_viewed'] = 'Προβολές';
 $string['usagetblheader_viewedby'] = 'Προβολή από';
-$string['usagetblheader_viewedby_info'] = 'Πόσοι από το προσωπικό έχουν δει την αναφορά για αυτόν τον μαθητή.';
 $string['userprogramme'] = 'Πρόγραμμα:';
 $string['view'] = 'προβολή';
 $string['viewfeedback'] = 'δείτε τα σχόλια απευθείας στο Turnitin';

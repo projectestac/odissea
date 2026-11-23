@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="question/type/geogebra/db" VERSION="20220408" COMMENT="XMLDB file for Moodle question/type/geogebra"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="../../../../lib/xmldb/xmldb.xsd"
+        >
+    <TABLES>
+        <TABLE NAME="qtype_geogebra_options" COMMENT="Options for questions of type calculated">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+                <FIELD NAME="questionid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"
+                       COMMENT="Foreign key references question.id."/>
+                <FIELD NAME="ggbturl" TYPE="text" NOTNULL="false" SEQUENCE="false"
+                       COMMENT="The link to student worksheet from ggbtube."/>
+                <FIELD NAME="ggbparameters" TYPE="text" NOTNULL="false" SEQUENCE="false"
+                       COMMENT="The parameters from deployggb including the base64 encoded file"/>
+                <FIELD NAME="ggbviews" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="The views used by the applet"/>
+                <FIELD NAME="ggbcodebaseversion" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="Codebase version"/>
+                <FIELD NAME="ggbxml" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="The XML for constraints on vars"/>
+                <FIELD NAME="israndomized" TYPE="int" LENGTH="1" NOTNULL="true" SEQUENCE="false"/>
+                <FIELD NAME="randomizedvar" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="Variable name to be randomized"/>
+                <FIELD NAME="constraints" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="The XML for constraints on vars"/>
+                <FIELD NAME="isexercise" TYPE="int" LENGTH="1" NOTNULL="false" DEFAULT="0" SEQUENCE="false"/>
+                <FIELD NAME="forcedimensions" TYPE="int" LENGTH="1" NOTNULL="false" SEQUENCE="false"/>
+                <FIELD NAME="width" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="Width of GeoGebra applet to be forced"/>
+                <FIELD NAME="height" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="Height of GeoGebra applet to be forced"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+                <KEY NAME="questionid" TYPE="foreign-unique" FIELDS="questionid" REFTABLE="question" REFFIELDS="id"/>
+            </KEYS>
+        </TABLE>
+    </TABLES>
+</XMLDB>

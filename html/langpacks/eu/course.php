@@ -113,6 +113,7 @@ $string['gotosection'] = 'Joan {$a} atalera';
 $string['gradetopassnotset'] = 'Ez da ikastaro hau gainditzeko kalifikaziorik ezarri. Ikastaroaren kalifikazio-elementuan ezarri daiteke (Kalifikazio-liburuaren ezarpenak).';
 $string['hideendedcoursestask'] = 'Ezkutatu ikastaroak amaiera-datan';
 $string['informationformodule'] = '{$a} jarduerari buruzko informazioa';
+$string['locked'] = 'Blokeatuta';
 $string['module'] = 'Jarduera';
 $string['namewithlink'] = 'Kategoria-izena estekarekin';
 $string['noaccesssincestartinfomessage'] = 'Kaixo, {$a->userfirstname}:

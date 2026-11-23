@@ -202,7 +202,7 @@ $string['config_server_url_description'] = 'Jūsų BigBlueButton serverio URL';
 $string['config_shared_secret'] = 'BigBlueButton pasidalino paslaptimi';
 $string['config_shared_secret_description'] = 'Jūsų BigBlueButton serverio saugumo paslaptis.';
 $string['config_showpresentation_default'] = 'Rodyti prezentacijos failą veiklos puslapyje';
-$string['config_showpresentation_default_description'] = 'Ar besimokantieji turėtų turėti prieigą prie pristatymo failo prieš užsiėmimą? Šis nustatymas neturi įtakos naudotojams, turintiems galimybę „Visada matyti prezentacijos failą veiklos puslapyje“ .';
+$string['config_showpresentation_default_description'] = 'Ar besimokantieji turėtų turėti prieigą prie pristatymo failo prieš užsiėmimą? Šis nustatymas neturi įtakos naudotojams, turintiems galimybę „Visada matyti prezentacijos failą veiklos puslapyje“.';
 $string['config_showpresentation_editable'] = '„Rodyti prezentacijos failą veiklos puslapyje“ parinktis';
 $string['config_showpresentation_editable_description'] = 'Veiklos nustatymuose dėstytojai gali pasirinkti, ar besimokantiesiems rodyti prezentacijos failą.';
 $string['config_uidelegation_enabled'] = 'UI delegavimas įjungtas';
@@ -223,7 +223,7 @@ $string['config_waitformoderator_cache_ttl_description'] = 'Kad palaikytų didel
 $string['config_waitformoderator_default'] = '„Laukti moderatoriaus" įjungta pagal numatymą';
 $string['config_waitformoderator_default_description'] = 'Ar pridedant naują „BigBlueButton“ kambarį, nustatymas „Laukti moderatoriaus“ turėtų būti įjungtas pagal numatytuosius nustatymus?';
 $string['config_waitformoderator_description'] = 'Šie nustatymai yra specifiniai funkcijai';
-$string['config_waitformoderator_editable'] = '„Laukti moderatoriaus" galima redaguoti';
+$string['config_waitformoderator_editable'] = '„Laukti moderatoriaus“ galima redaguoti';
 $string['config_waitformoderator_editable_description'] = 'Ar „BigBlueButton“ veiklos nustatymuose galima redaguoti „Laukti moderatoriaus“?';
 $string['config_waitformoderator_ping_interval'] = 'Laukti moderatoriaus ping\'o (sekundes)';
 $string['config_waitformoderator_ping_interval_description'] = 'Kaip dažnai reikia įjungti serverio pingo signalą, kad būtų patikrinta, ar moderatorius įėjo į kambarį?';
@@ -233,6 +233,7 @@ $string['config_welcome_default'] = 'Numatytasis pasveikinimo pranešimas';
 $string['config_welcome_default_description'] = 'Dalyviams įėjus į kambarį rodomas sveikinimo pranešimas. Jei laukas paliekamas tuščias, naudojama kalbos eilutė „\'mod_form_field_welcome_default\'“.';
 $string['config_welcome_editable'] = 'Numatytąjį pasveikinimo pranešimą gali redaguoti dėstytojai';
 $string['config_welcome_editable_description'] = 'Sveikinimo žinutę galima redaguoti, kai egzempliorius pridedamas arba atnaujinamas';
+$string['credentials_warning'] = 'Numatytųjų serverio kredencialų naudojimas netrukus baigsis (kaip gauti naujus kredencialus, žr. pastabą aukščiau).';
 $string['dpainfonotsigned'] = 'Prieš įjungdami šį papildinį, turite patvirtinti, kad perskaitėte <a href="{$a}">Blindside Networks duomenų apdorojimo sutartį</a> ir su ja sutinkate.';
 $string['enablingbigbluebutton'] = 'Įgalinama BigBlueButton veikla';
 $string['enablingbigbluebuttondpainfo'] = 'Kad įvykdytumėte savo duomenų apsaugos įsipareigojimus, prieš įgalindami šį papildinį, gali tekti įsitikinti, kad perskaitėte <a href="{$a}" target="_blank">Blindside Networks duomenų apdorojimo sutartį</a> ir su ja sutinkate. a>. Pasitarkite su savo privatumo specialistais.';
@@ -251,6 +252,7 @@ $string['event_meeting_left'] = 'Atsijungta nuo susitikimo';
 $string['event_recording_deleted'] = 'Įrašas panaikintas';
 $string['event_recording_edited'] = 'Įrašas suredaguotas';
 $string['event_recording_imported'] = 'Įrašas importuotas';
+$string['event_recording_link_deleted'] = 'Įrašo nuoroda panaikinta';
 $string['event_recording_protected'] = 'Apsaugotas įrašymas';
 $string['event_recording_published'] = 'Įrašas paskelbtas';
 $string['event_recording_unprotected'] = 'Įrašymas neapsaugotas';
@@ -263,7 +265,7 @@ $string['general_error_no_answer'] = 'Tuščias atsakymas. Patikrinkite BigBlueB
 $string['general_error_not_allowed_to_create_instances'] = 'Naudotojui neleidžiama kurti jokio tipo egzempliorių.';
 $string['general_error_not_found'] = 'Nepavyko rasti BigBlueButton veiklos su {$a} ID.';
 $string['general_error_unable_connect'] = 'Nepavyko prisijungti. Patikrinkite BigBlueButton serverio URL IR patikrinkite, ar veikia BigBlueButton serveris.
-Details : {$a}';
+Išsami informacija: {$a}';
 $string['guest_invitation_full_message'] = 'Sveiki,
 <p>Esate pakviesti į BigBlueButton sesiją <strong>{$a->name}</strong> kurse {$a->course_fullname}.</p> <p>Nuoroda: {$a->guestjoinurl}<br/>
 <p>Slaptažodis: {$a->guestpassword}</p>
@@ -425,6 +427,7 @@ $string['privacy:metadata:bigbluebuttonbn_logs:userid'] = 'Įvykį suaktyvinusio
 $string['privacy:metadata:bigbluebuttonbn_recordings'] = 'Saugo įrašų metaduomenis.';
 $string['privacy:metadata:bigbluebuttonbn_recordings:userid'] = 'Paskutinį kartą įrašą pakeitusio naudotojo ID.';
 $string['progress_createbigbluebuttonbn'] = 'BigBlueButton veiklos kūrimas ({$a})';
+$string['recordingnotfound'] = 'Įrašas nerastas.';
 $string['recordings_from_deleted_activities'] = 'Ištrintų veiklų įrašai';
 $string['recordingurlnotfound'] = 'Netinkamas įrašo URL.';
 $string['removedevents'] = 'Deleted events';
@@ -444,6 +447,8 @@ $string['search:activity'] = 'BigBlueButton – informacija apie veiklą';
 $string['search:tags'] = 'BigBlueButton – žymės informacija';
 $string['sendnotification'] = 'Siųsti pranešimą';
 $string['settings'] = 'BigBlueButton nustatymai';
+$string['settings_credential_warning'] = 'BigBlueButton serverio kredencialai netrukus nustos galioti. Žr. <a href="{$a->settingslink}" target="_blank">BigBlueButton bendrieji nustatymai (atsidaro naujame lange)</a>.';
+$string['settings_credential_warning_no_capability'] = 'BigBlueButton serverio kredencialai netrukus nustos galioti. Kreipkitės į svetainės administratorių.';
 $string['started_at'] = 'Prasidėjo';
 $string['starts_at'] = 'Prasideda';
 $string['subplugintype_bbbext'] = 'BigBlueButton veiklos plėtinys';
@@ -589,7 +594,7 @@ $string['view_recording_recording'] = 'Įrašoma';
 $string['view_recording_select_course'] = 'Pirmiausia iškrentančiame meniu pasirinkite kursą';
 $string['view_recording_tags'] = 'Žymos';
 $string['view_recording_unprotect_confirmation'] = 'Ar tikrai norite panaikinti šio {$a} apsaugą?';
-$string['view_recording_unprotect_confirmation_warning_p'] = 'Šis įrašas turi {$a} nuorodų, kurios buvo importuotos į skirtingus kursus ar veiklą. Jei įrašas neapsaugotas, jtai taip pat turės įtakos importuotoms nuorodoms.';
+$string['view_recording_unprotect_confirmation_warning_p'] = 'Šis įrašas turi {$a} nuorodų, kurios buvo importuotos į skirtingus kursus ar veiklą. Jei įrašas neapsaugotas, tai taip pat turės įtakos importuotoms nuorodoms.';
 $string['view_recording_unprotect_confirmation_warning_s'] = 'Šis įrašas susietas su {$a} nuoroda, kuri buvo importuota į kitą kursą ar veiklą. Jei įrašas neapsaugotas, tai taip pat turės įtakos importuotoms nuorodoms.';
 $string['view_recording_unprotect_link_deleted'] = 'Šios nuorodos negalima neapsaugoti, nes originalaus įrašo nėra BigBlueButton serveryje. Nuoroda turėtų būti pašalinta.';
 $string['view_recording_unprotect_link_not_unprotected'] = 'Ši nuoroda negali būti neapsaugota, nes originalus įrašas yra apsaugotas.';

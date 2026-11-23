@@ -168,6 +168,7 @@ $string['tiny:failed_to_initialize_plugin_0'] = 'Inizializzazione plugin fallita
 $string['tiny:failed_to_load_plugin_0_from_url_1'] = 'Caricamento plugin fallito: {0} dall\'URL {1}';
 $string['tiny:failed_to_load_plugin_url_0'] = 'Caricamento URL plugin fallito: {0}';
 $string['tiny:failed_to_upload_image_0'] = 'Caricamento immagine fallito: {0}';
+$string['tiny:field_label_and_rich_textarea_help'] = '{$a}. Area di testo RTF. Premere ALT-F9 per il menu. Premere ALT-F10 per la barra degli strumenti. Premere ALT-0 per la guida.';
 $string['tiny:file'] = 'File';
 $string['tiny:find'] = 'Trova';
 $string['tiny:find_and_replace'] = 'Trova e sostituisci';

@@ -21,7 +21,7 @@ namespace tiny_fontcolor;
  *
  * @package    tiny_fontcolor
  * @category   test
- * @copyright  2015 Stephan Robotta <stephan.robotta@bfh.ch>
+ * @copyright  2025 Stephan Robotta <stephan.robotta@bfh.ch>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 final class color_test extends \advanced_testcase {

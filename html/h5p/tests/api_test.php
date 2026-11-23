@@ -283,6 +283,7 @@ final class api_test extends \advanced_testcase {
     public function test_get_content_from_pluginfile_url(): void {
         $this->setRunTestInSeparateProcess(true);
         $this->resetAfterTest();
+        $this->setAdminUser();
         $factory = new factory();
 
         // Create the H5P data.
@@ -333,6 +334,85 @@ final class api_test extends \advanced_testcase {
         list($newfile, $h5p) = api::get_content_from_pluginfile_url($url->out());
         $this->assertFalse($newfile);
         $this->assertFalse($h5p);
+    }
+
+    /**
+     * Test that a guest user is refused access to H5P content stored in CONTEXT_SYSTEM, matching the access
+     * level enforced by core's own contentbank handling for the original .h5p package.
+     *
+     * @covers ::get_content_from_pluginfile_url
+     */
+    public function test_get_content_from_pluginfile_url_system_context_guest(): void {
+        $this->setRunTestInSeparateProcess(true);
+        $this->resetAfterTest();
+        $this->setAdminUser();
+        $factory = new factory();
+
+        $filename = 'find-the-words.h5p';
+        $path = self::get_fixture_path(__NAMESPACE__, $filename);
+        $fakefile = helper::create_fake_stored_file_from_path($path);
+        $config = (object) [
+            'frame' => 1,
+            'export' => 1,
+            'embed' => 0,
+            'copyright' => 0,
+        ];
+        helper::save_h5p($factory, $fakefile, $config);
+
+        $syscontext = \context_system::instance();
+        $url = \moodle_url::make_pluginfile_url(
+            $syscontext->id,
+            \core_h5p\file_storage::COMPONENT,
+            'unittest',
+            $fakefile->get_itemid(),
+            '/',
+            $filename
+        );
+
+        $this->setGuestUser();
+        $this->expectException(\moodle_exception::class);
+        api::get_content_from_pluginfile_url($url->out());
+    }
+
+    /**
+     * Test that an ordinary logged-in user (not a guest, not an admin) is allowed access to H5P content
+     * stored in CONTEXT_SYSTEM.
+     *
+     * @covers ::get_content_from_pluginfile_url
+     */
+    public function test_get_content_from_pluginfile_url_system_context_logged_in_user(): void {
+        $this->setRunTestInSeparateProcess(true);
+        $this->resetAfterTest();
+        $this->setAdminUser();
+        $factory = new factory();
+
+        $filename = 'find-the-words.h5p';
+        $path = self::get_fixture_path(__NAMESPACE__, $filename);
+        $fakefile = helper::create_fake_stored_file_from_path($path);
+        $config = (object) [
+            'frame' => 1,
+            'export' => 1,
+            'embed' => 0,
+            'copyright' => 0,
+        ];
+        $h5pid = helper::save_h5p($factory, $fakefile, $config);
+
+        $syscontext = \context_system::instance();
+        $url = \moodle_url::make_pluginfile_url(
+            $syscontext->id,
+            \core_h5p\file_storage::COMPONENT,
+            'unittest',
+            $fakefile->get_itemid(),
+            '/',
+            $filename
+        );
+
+        $user = $this->getDataGenerator()->create_user();
+        $this->setUser($user);
+        list($newfile, $h5p) = api::get_content_from_pluginfile_url($url->out());
+
+        $this->assertEquals($h5pid, $h5p->id);
+        $this->assertEquals($fakefile->get_pathnamehash(), $h5p->pathnamehash);
     }
 
     /**
@@ -434,6 +514,129 @@ final class api_test extends \advanced_testcase {
         $this->assertFalse($source);
         $this->assertFalse($h5p);
         $this->assertFalse($file);
+    }
+
+    /**
+     * Test the behaviour of can_access_content().
+     *
+     * The extracted content files of an H5P package are always stored in the system context, so access to them
+     * must be resolved against the context of the original .h5p package instead.
+     *
+     * @covers ::can_access_content
+     */
+    public function test_can_access_content(): void {
+        $this->setRunTestInSeparateProcess(true);
+        $this->resetAfterTest();
+
+        $factory = new factory();
+        $config = (object)[
+            'frame' => 1,
+            'export' => 1,
+            'embed' => 0,
+            'copyright' => 0,
+        ];
+
+        // Create a course with a module and enrol a student in it.
+        $this->setAdminUser();
+        $course = $this->getDataGenerator()->create_course();
+        $forum = $this->getDataGenerator()->create_module('forum', ['course' => $course->id]);
+        $modcontext = \context_module::instance($forum->cmid) ?: null;
+        $student = $this->getDataGenerator()->create_and_enrol($course, 'student');
+        $otheruser = $this->getDataGenerator()->create_user();
+
+        // The main library used by the fixture package must already exist in the system for save_h5p() to
+        // accept the package instead of rejecting it with a missing-library error.
+        $generator = $this->getDataGenerator()->get_plugin_generator('core_h5p');
+        $generator->create_library_record('H5P.GreetingCard', 'GreetingCard', 1, 0);
+
+        // Simulate an H5P package uploaded to that module: its original .h5p file lives in the module
+        // context, and the resulting content is registered in the h5p table, as save_h5p() would do.
+        $filename = 'greeting-card.h5p';
+        $path = self::get_fixture_path(__NAMESPACE__, $filename);
+        $originalfile = helper::create_fake_stored_file_from_path($path, (int) $student->id, $modcontext);
+        $h5pid = helper::save_h5p($factory, $originalfile, $config);
+
+        // A user enrolled in the course can access the extracted content files.
+        $this->setUser($student);
+        $this->assertTrue(api::can_access_content($h5pid));
+
+        // A user who is not enrolled in the course cannot access the extracted content files, even though
+        // they are physically stored in the (unrestricted) system context.
+        $this->setUser($otheruser);
+        $this->expectException(\moodle_exception::class);
+        api::can_access_content($h5pid);
+    }
+
+    /**
+     * Test that can_access_content() returns false, instead of throwing an error, for an unknown H5P content id.
+     *
+     * @covers ::can_access_content
+     */
+    public function test_can_access_content_unknown_id(): void {
+        $this->resetAfterTest();
+        $this->assertFalse(api::can_access_content(-1));
+    }
+
+    /**
+     * Test the behaviour of can_access_export().
+     *
+     * In particular, that the export is served to a user who can access the content even when downloads are
+     * disabled for it: see can_access_export() for why the display option is not an access control.
+     *
+     * @covers ::can_access_export
+     */
+    public function test_can_access_export(): void {
+        $this->resetAfterTest();
+
+        $factory = new factory();
+        // Downloads are disabled for this content, which must make no difference to the access check.
+        $config = (object)[
+            'frame' => 1,
+            'export' => 0,
+            'embed' => 0,
+            'copyright' => 0,
+        ];
+
+        // Create a course with a module and enrol a student in it.
+        $this->setAdminUser();
+        $course = $this->getDataGenerator()->create_course();
+        $forum = $this->getDataGenerator()->create_module('forum', ['course' => $course->id]);
+        $modcontext = \context_module::instance($forum->cmid) ?: null;
+        $student = $this->getDataGenerator()->create_and_enrol($course, 'student');
+        $otheruser = $this->getDataGenerator()->create_user();
+
+        // The main library used by the fixture package must already exist in the system for save_h5p() to
+        // accept the package instead of rejecting it with a missing-library error.
+        $generator = $this->getDataGenerator()->get_plugin_generator('core_h5p');
+        $generator->create_library_record('H5P.GreetingCard', 'GreetingCard', 1, 0);
+
+        $filename = 'greeting-card.h5p';
+        $path = self::get_fixture_path(__NAMESPACE__, $filename);
+        $originalfile = helper::create_fake_stored_file_from_path($path, (int) $student->id, $modcontext);
+        $h5pid = helper::save_h5p($factory, $originalfile, $config);
+
+        // Build the name of the export file the same way H5PExport does. Note the slug already ends with the
+        // content id, so the id appears twice: 'greeting-card-<id>-<id>.h5p'.
+        $content = $factory->get_core()->loadContent($h5pid);
+        $slug = $content['slug'] ? $content['slug'] . '-' : '';
+        $exportfilename = "{$slug}{$content['id']}.h5p";
+
+        // A user enrolled in the course can access the export, even with downloads disabled for this content.
+        $this->setUser($student);
+        $this->assertTrue(api::can_access_export($exportfilename));
+
+        // File names which don't resolve to an existing content are rejected. Each of these is the name above
+        // with one single thing wrong with it, so it can only be refused for that reason.
+        $this->assertFalse(api::can_access_export("{$slug}{$content['id']}.zip"));
+        $this->assertFalse(api::can_access_export('greeting-card.h5p'));
+        $this->assertFalse(api::can_access_export(''));
+        $this->assertFalse(api::can_access_export("{$slug}123456789.h5p"));
+
+        // A user who is not enrolled in the course cannot, even though the export file is physically stored in
+        // the (unrestricted) system context.
+        $this->setUser($otheruser);
+        $this->expectException(\moodle_exception::class);
+        api::can_access_export($exportfilename);
     }
 
     /**
@@ -750,6 +953,7 @@ final class api_test extends \advanced_testcase {
 
         $this->setRunTestInSeparateProcess(true);
         $this->resetAfterTest();
+        $this->setAdminUser();
         $factory = new factory();
 
         // Create the H5P data.
@@ -808,6 +1012,7 @@ final class api_test extends \advanced_testcase {
 
         $this->setRunTestInSeparateProcess(true);
         $this->resetAfterTest();
+        $this->setAdminUser();
         $factory = new factory();
 
         // Create the H5P data.
@@ -870,6 +1075,7 @@ final class api_test extends \advanced_testcase {
 
         $this->setRunTestInSeparateProcess(true);
         $this->resetAfterTest();
+        $this->setAdminUser();
         $factory = new factory();
 
         // Create the H5P data.

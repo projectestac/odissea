@@ -115,6 +115,7 @@ $string['editscheduledetails'] = 'Zeitplan bearbeiten';
 $string['editschedulename'] = 'Name von Zeitplan bearbeiten';
 $string['enablecustomreports'] = 'Nutzerdefinierte Berichte aktivieren';
 $string['enablecustomreports_desc'] = 'Wenn diese Option aktiviert ist, können Nutzer/innen nutzerdefinierte Report-Builder-Berichte erstellen und anzeigen.';
+$string['enabled'] = 'Aktiviert';
 $string['enableschedule'] = 'Warteschlange aktivieren';
 $string['entitycourse'] = 'Kurs';
 $string['entityuser'] = 'Nutzer/in';

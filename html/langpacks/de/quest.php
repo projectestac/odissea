@@ -330,7 +330,6 @@ $string['studentgrades'] = '{$a} Beurteilungen';
 $string['studentsubmissions'] = '{$a} Gesendete Aufträge';
 $string['studentsubmissionsforassessment'] = '{$a} Gesendete Aufträge der Studenten für die Einschätzung';
 $string['subject'] = 'Aufgabenstellung';
-$string['submission'] = 'Aufgabenstellung';
 $string['submissionend'] = 'Enddatum der Aufgabenstellung {$a}';
 $string['submissions'] = 'Themen';
 $string['submissionstart'] = 'Anfangsdatum der Aufgabenstellung {$a}';

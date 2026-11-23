@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Sąveikaujantis su keliais bandymais( kreditas iš ankstesnių bandymų)';
+$string['pluginname'] = 'Sąveikaujantis su keliais bandymais (kreditas iš ankstesnių bandymų)';
 $string['privacy:metadata'] = 'Interaktyvus su keliais bandymais (ankstesnių bandymų kreditas) klausimų elgesio papildinys nesaugo jokių asmeninių duomenų.';

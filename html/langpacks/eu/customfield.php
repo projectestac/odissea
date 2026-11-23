@@ -29,6 +29,7 @@ $string['action'] = 'Ekintza';
 $string['addingnewcustomfield'] = '{$a} berria gehitzen';
 $string['addnewcategory'] = 'Gehitu kategoria berria';
 $string['afterfield'] = '{$a} eremuaren ondoren';
+$string['categoryadded'] = 'Kategoria ondo gehitu da';
 $string['categorynotfound'] = 'Ez da kategoria aurkitu';
 $string['checked'] = 'Egiaztatuta';
 $string['commonsettings'] = 'Orokorra';

@@ -578,7 +578,7 @@ $string['submissionattachments_help'] = 'Indien ingeschakeld, worden bestanden a
 Anders worden bestanden weergegeven in zowel de opdrachtweergave als op de instuurschermen.';
 $string['submissioncopiedhtml'] = '<p>Je hebt een kopie gemaakt van je vorige opdrachtinzending voor <i>{$a->assignment}</i>\'</p>
 <p>Je kunt de status van je opdracht bekijken bij je <a href="{$a->url}">inzending</a>.</p>';
-$string['submissioncopiedsmall'] = 'Je hebt je vorige inzending voor opdracht {$a->assignement} gekopieerd.';
+$string['submissioncopiedsmall'] = 'Je hebt je vorige inzending voor opdracht {$a->assignment} gekopieerd.';
 $string['submissioncopiedtext'] = 'Je hebt een kopie gemaakt van je vorige poging voor opdracht \'{$a->assignment}\'.
 
 Je kunt de status van je inzending zien:

@@ -51,10 +51,10 @@ $string['close'] = 'Fermer';
 $string['collection'] = 'Collection';
 $string['collectionwasdeleted'] = 'Désolé cette collection n’existe plus, elle a été supprimé du cours.';
 $string['collmode'] = 'Mode de la collection';
-$string['collmode_help'] = 'Cette collection sera-t-elle uniquement stocké dans Moodle, ou lié depuis l’extérieur. Attention, une fois choisie cette option ne pourra plus être modifié.
+$string['collmode_help'] = 'Cette collection sera-t-elle uniquement stocké dans Moodle, ou liée depuis l’extérieur. Attention, une fois choisie, cette option ne pourra plus être modifiée.
 
 <ul>
-<li>Standard:  dans ce mode, la collection, ses galeries et ses éléments sont stocké uniquement dans Moodle.</li>
+<li>Standard: dans ce mode, la collection, ses galeries et ses éléments sont stocké uniquement dans Moodle.</li>
 </ul>';
 $string['colltype'] = 'Type de la collection';
 $string['colltype_help'] = 'Le type d’une collection détermine le niveau d’interaction entre un utilisateur et cette collection.

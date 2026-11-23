@@ -231,7 +231,7 @@ $string['maximumpoints'] = 'Nombre maximum de points';
 $string['maximumsize'] = 'Nombre maximum d’inscrits';
 $string['message'] = 'Changement d’inscription à la formation {$a->coursename} !
 
-Une place s’est libérée pour la session du  {$a->duedate} ({$a->name}) dans le cours {$a->coursename}.
+Une place s’est libérée pour la session du {$a->duedate} ({$a->name}) dans le cours {$a->coursename}.
 Vous avez été inscrit. Si la date ne vous convient plus, veuillez vous désinscrire : <a href=\'{$a->url}\'>{$a->url}</a>.';
 $string['mods_help'] = '# Activités de formation
 

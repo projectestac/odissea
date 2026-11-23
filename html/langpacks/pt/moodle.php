@@ -263,7 +263,7 @@ $string['categorypath'] = 'Caminho da categoria';
 $string['categorysubcategoryof'] = '{$a->category} - subcategoria de {$a->parentcategory}';
 $string['categoryupdated'] = 'A categoria \'{$a}\' foi atualizada';
 $string['changedpassword'] = 'Senha modificada';
-$string['changepassword'] = 'Modificar senha';
+$string['changepassword'] = 'Aterar senha';
 $string['changesmade'] = 'Alterações efetuadas';
 $string['changesmadereallygoaway'] = 'Fez alterações. Tem a certeza de que pretende sair e perder as alterações efetuadas?';
 $string['changessaved'] = 'Alterações guardadas com sucesso';
@@ -643,7 +643,7 @@ $string['edhelpaspellpath'] = 'A verificação ortográfica no editor só pode s
 $string['edhelpbgcolor'] = 'Definir a área de edição de cor de fundo.<br />Os valores válidos são, por exemplo, #FFFFFF ou branco';
 $string['edhelpcleanword'] = 'Esta configuração ativa ou desativa o formato Word específico de filtragem.';
 $string['edhelpenablespelling'] = 'Ativa ou desativa a verificação ortográfica no editor. Quando a opção está ativa, <strong>aspell</strong> deve ser instalado no servidor. O segundo valor é o <strong>dicionário predefinido</strong>. Tal será usado se o aspell não tiver o dicionário da linguagem do utilizador.';
-$string['edhelpfontfamily'] = 'A família da fonte é uma lista de fontes de nomes e/ou nomes genéricos de famílias. Os nomes das famílias devem ser separados por vírgulas.';
+$string['edhelpfontfamily'] = 'A propriedade \'font-family\' é uma lista de nomes de famílias de tipos de letra e/ou nomes de famílias genéricas. Os nomes das famílias devem ser separados por vírgula.';
 $string['edhelpfontlist'] = 'Definir as fontes usadas em editores com lista pendente.';
 $string['edhelpfontsize'] = 'O tamanho da fonte predefinido define o tamanho da fonte no editor. <br />São exemplos de valores válidos:médio, grande, menor, maior, 10pt, 11px.';
 $string['edit'] = 'Editar';
@@ -1335,7 +1335,7 @@ $string['messageprovider:instantmessage'] = 'Mensagens pessoais entre utilizador
 $string['messageprovider:instantmessage_help'] = 'Esta secção define as mensagens enviadas diretamente de uns utilizadores para outros através do site';
 $string['messageprovider:messagecontactrequests'] = 'Mensagem de notificação das solicitações de contacto';
 $string['messageprovider:newlogin'] = 'Notificações de novas autenticações';
-$string['messageprovider:notices'] = 'Avisos sobre problemas menores';
+$string['messageprovider:notices'] = 'Informações sobre problemas menores';
 $string['messageprovider:notices_help'] = 'Estes são avisos que o administrador pode estar interessado em ver.';
 $string['messageprovider:reportbuilderschedule'] = 'Agendamentos do criador de relatórios personalizados';
 $string['messageselect'] = 'Selecionar este aluno como destinatário de uma mensagem';
@@ -1510,7 +1510,7 @@ Os seus dados de acesso atuais são:
    Nome de utilizador: {$a->username}
    Senha: {$a->newpassword}
 
-Por favor, visite esta página, para modificar a sua senha: {$a->link}
+Por favor, visite esta página, para alterar a sua senha: {$a->link}
 
 Se não conseguir seguir esta hiperligação, copie o URL e cole na barra de endereço do seu navegador web.
 
@@ -1603,7 +1603,7 @@ $string['noteusercannotrolldatesoncontext'] = '<strong>Nota:</strong> A capacida
 $string['noteuserschangednonetocourse'] = '<strong>Nota:</strong> É necessário restaurar os utilizadores da disciplina quando restaurar os dados dos utilizadores. Esta configuração foi alterada para si.';
 $string['nothingnew'] = 'Sem atividade recente';
 $string['nothingtodisplay'] = 'Não existe informação para apresentar';
-$string['notice'] = 'Aviso';
+$string['notice'] = 'Informação';
 $string['noticenewerbackup'] = 'Esta cópia de segurança foi criada com Moodle {$a->backuprelease} ({$a->backupversion}) que é mais recente do que a sua versão atual do Moodle {$a->serverrelease} ({$a->serverversion}). Isso poderá gerar algumas inconsistências por ser impossível garantir a compatibilidade entre cópias de versões diferentes.';
 $string['notifications'] = 'Notificações';
 $string['notifyloginfailuresmessage'] = '{$a->time}, IP: {$a->ip}, Utilizador: {$a->info}, Nome completo do utilizador: {$a->name}';
@@ -1798,7 +1798,7 @@ $string['privacy:metadata:upgrade_log:details'] = 'Informação extra relacionad
 $string['privacy:metadata:upgrade_log:info'] = 'A informação principal desta etapa da atualização..';
 $string['privacy:metadata:upgrade_log:plugin'] = 'O módulo que foi atualizado.';
 $string['privacy:metadata:upgrade_log:targetversion'] = 'A nova versão para atualizar.';
-$string['privacy:metadata:upgrade_log:timemodified'] = 'A hora em que foi feita a atualização.';
+$string['privacy:metadata:upgrade_log:timemodified'] = 'A data/hora em que foi feita a atualização.';
 $string['privacy:metadata:upgrade_log:type'] = 'O tipo de entrada de autenticação.';
 $string['privacy:metadata:upgrade_log:userid'] = 'O utilizador que executou a atualização.';
 $string['privacy:metadata:upgrade_log:version'] = 'A versão antiga deste módulo.';
@@ -1940,7 +1940,7 @@ $string['rssarticles'] = 'Número de artigos recentes na lista RSS';
 $string['rsserror'] = 'Erro na leitura dos dados da lista RSS';
 $string['rsserrorauth'] = 'A sua hiperligação para a lista RSS não contém um token de autenticação válido.';
 $string['rsserrorguest'] = 'Esta lista usa o acesso de visitante para aceder à informação, mas o visitante não tem permissões de leitura dessa informação. Visite o URL de origem desta lista, autenticado com uma conta válida, para obter uma nova hiperligação da RSS.';
-$string['rsskeyshelp'] = '<p>Para garantir a segurança e privacidade, os URLs das listas RSS possuem um token especial que identifica o utilizador a quem se destina. Desta forma, evita-se que outros utilizadores acedam a áreas do Moodle a que não têm acesso.</p><p>O token é criado automaticamente na primeira vez que aceder a uma área que produz uma lista RSS. Se achar que o token da sua lista RSS foi comprometido de alguma forma, pode solicitar um novo clicando na hiperligação de Recomeço. Tenha em atenção que, após isto, os seus URLs atuais das listas RSS ficarão inválidos. </p>';
+$string['rsskeyshelp'] = '<p>Para garantir a segurança e privacidade, os URLs das listas RSS possuem um token especial que identifica o utilizador a quem se destina. Desta forma, evita-se que outros utilizadores acedam a áreas do Moodle a que não têm acesso.</p><p>O token é criado automaticamente na primeira vez que aceder a uma área que produz uma lista RSS. Se achar que o token da sua lista RSS foi comprometido de alguma forma, pode solicitar um novo clicando na hiperligação de Limpar. Tenha em atenção que, após isto, os seus URLs atuais das listas RSS ficarão inválidos. </p>';
 $string['rsstype'] = 'Lista RSS para esta atividade';
 $string['save'] = 'Guardar';
 $string['saveandnext'] = 'Guardar e mostrar seguinte';

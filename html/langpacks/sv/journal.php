@@ -74,7 +74,6 @@ $string['removemessages'] = 'Ta bort alla journalinlägg';
 $string['saveallfeedback'] = 'Spara all min återkoppling';
 $string['search:activity'] = 'Journal - aktivitetsinformation';
 $string['search:entry'] = 'Journal - inlägg';
-$string['showoverview'] = 'Visa journal-överblick i Mitt Moodle';
 $string['showrecentactivity'] = 'Visa senaste aktivitet';
 $string['startoredit'] = 'Skriv eller ändra inlägg i journalen';
 $string['viewallentries'] = 'Visa inlägg i journalen';

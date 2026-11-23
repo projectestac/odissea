@@ -27,14 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['accessibility:addinstance'] = 'Yeni bir Erişilebilirlik bloğu ekle';
 $string['accessibility:myaddinstance'] = 'Ana Sayfam\'a yeni bir Erişilebilirlik bloğu ekleme';
-$string['blockname'] = 'Erişilebilirlik';
-$string['char'] = 'Bir';
-$string['col1text'] = 'Varsayılan Renk Düzeni (Kayıtlı Ayarı Temizler)';
-$string['config_bg'] = 'Arka Plan Rengi';
-$string['config_showATbar_checkbox'] = 'Erişilebilirlik';
-$string['config_showATbar_help'] = 'Erişilebilirlik bloğu ayrıca Southampton Üniversitesi ECS <a href="http://www.atbar.org">http://www.atbar.org</a>\'den ATbar\'ı da entegre eder.';
 $string['pluginname'] = 'Erişilebilirlik';
-$string['pluginnameplural'] = 'Erişilebilirlik Blokları';
-$string['resettext'] = 'Metin Boyutunu Sıfırla (Kayıtlı Ayarı Temizler)';
-$string['save'] = 'Ayarı Kaydet';
-$string['saved'] = 'Ayar Kaydedildi';

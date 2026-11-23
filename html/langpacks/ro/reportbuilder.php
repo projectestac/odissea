@@ -115,6 +115,7 @@ $string['editscheduledetails'] = 'Editează detaliile programării';
 $string['editschedulename'] = 'Editează denumirea programării';
 $string['enablecustomreports'] = 'Activați rapoartele personalizate';
 $string['enablecustomreports_desc'] = 'Dacă este activată, utilizatorii pot crea și vizualiza rapoarte personalizate pentru Generatorul de rapoarte.';
+$string['enabled'] = 'Activat';
 $string['enableschedule'] = 'Activează programare';
 $string['entitycourse'] = 'Curs';
 $string['entityuser'] = 'Utilizator';

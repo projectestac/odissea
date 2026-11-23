@@ -88,7 +88,6 @@ $string['pluginnameadding'] = 'Adding a Gap Fill Question.';
 $string['pluginnameediting'] = 'Editing Gap Fill.';
 $string['pluginnamesummary'] = 'A fill in the gaps style question. Allows drag drop or dropdown answers with distractors. Very easy to learn syntax';
 $string['privacy:null_reason'] = 'The Gapfill question type does not effect or store any data itself.';
-$string['questioncatnotfound'] = 'Question category not found, click click <a href={$a}>here</a> to initialise, then the browser back button';
 $string['questionsmissing'] = 'You have not included any fields in your question text';
 $string['questiontext'] = 'Question text';
 $string['questiontext_help'] = 'Put delimiters around the words that will become the text';

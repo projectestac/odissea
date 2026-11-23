@@ -47,6 +47,7 @@ $string['auth_invalidnewemailkey'] = 'Klaida: jei bandote patvirtinti el. pašto
 $string['auth_loginpasswordtoggle'] = 'Slaptažodžio matomumo perjungimas';
 $string['auth_loginpasswordtoggle_desc'] = 'Prisijungimo ekrane prie slaptažodžio lauko pridėti piktogramą, leidžiančią naudotojams parodyti arba paslėpti įvestą slaptažodį.';
 $string['auth_loginrecaptcha'] = 'Įjungti reCAPTCHA prisijungimui';
+$string['auth_loginrecaptcha_desc'] = 'Įtraukia vaizdinį / garsinį patvirtinimo formos elementą į prisijungimo puslapį. Taip sumažinama nepageidaujamų prisijungimo bandymų rizika. Daugiau informacijos rasite <a href="https://www.google.com/recaptcha">Google reCAPTCHA</a>.';
 $string['auth_multiplehosts'] = 'Daugelis pagrindinių kompiuterių ARBA adresų gali būti nurodyti (pvz., host1.com;host2.com;host3.com) ar (pvz., xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx)';
 $string['auth_notconfigured'] = 'Autentifikavimo metodas {$a} nėra sukonfigūruotas.';
 $string['auth_outofnewemailupdateattempts'] = 'Jūs išnaudojote visus bandymus atnaujinti savo el. pašto adresą. Jūsų atnaujinimo užklausa atšaukta.';
@@ -85,7 +86,7 @@ $string['createpassword'] = 'Sukurti slaptažodį ir informuoti naudotoją';
 $string['createpasswordifneeded'] = 'Jei reikia, kurti slaptažodį ir siųsti el. paštu';
 $string['emailchangecancel'] = 'Atšaukti el. pašto pakeitimą';
 $string['emailchangepending'] = 'Pakeisti laukiančius. Atverti nuorodą siųsta jums {$a->preference_newemail}.';
-$string['emailnowexists'] = 'El. pašto adresas kurį jūs bandėte susieti su savo profiliu buvo susietas su kitu jau prieš tai. Jūsų prašymas atšauktas, bet galite bandyti vėl su kitu adresu.';
+$string['emailnowexists'] = 'El. pašto adresas, kurį jūs bandėte susieti su savo profiliu, buvo susietas su kitu jau prieš tai. Jūsų prašymas atšauktas, bet galite bandyti vėl su kitu adresu.';
 $string['emailupdate'] = 'El. pašto adreso atnaujinimas';
 $string['emailupdatemessage'] = 'Gerb. {$a->fullname},
 
@@ -149,7 +150,7 @@ $string['privacy:metadata:userpref:loginfailedlast'] = 'Data, kai buvo įrašyta
 $string['privacy:metadata:userpref:loginlockout'] = 'Ar naudotojo paskyra užrakinta dėl nepavykusių bandymų prisijungti, ir data, kada paskyra buvo užrakinta';
 $string['privacy:metadata:userpref:loginlockoutignored'] = 'Nurodo, kad naudotojo paskyra niekada neturėtų būti užblokuota';
 $string['privacy:metadata:userpref:loginlockoutsecret'] = 'Kai užrakinta, paslaptis, kurią naudotojas turi naudoti, norėdamas atrakinti savo paskyrą';
-$string['recaptcha'] = '„reCAPTCHA"';
+$string['recaptcha'] = '„reCAPTCHA“';
 $string['recaptcha_help'] = 'CAPTCHA skirta užkirsti kelią automatizuotų programų piktnaudžiavimui. Vadovaukitės instrukcijomis, kad patvirtintumėte, jog esate asmuo. Tai gali būti langelis, kurį reikia pažymėti, simboliai, pateikti paveikslėlyje, kurį turite įvesti, arba vaizdų rinkinys, iš kurio galima pasirinkti.
 
 Jei nesate tikri, kokie yra vaizdai, galite pabandyti gauti kitą CAPTCHA arba garso CAPTCHA.';
@@ -161,6 +162,9 @@ $string['settingmigrationmismatch'] = 'Nustatyta nesuderinamumo reikšmė taisan
 $string['sha1'] = 'SHA-1 maiša';
 $string['showguestlogin'] = 'Prisijungimo puslapyje galite slėpti arba rodyti svečio prisijungimo mygtuką.';
 $string['showloginform'] = 'Rodyti rankinio prisijungimo formą';
+$string['showloginform_desc'] = 'Jei visi svetainės naudotojai naudoja autentifikavimo būdą, pvz., OAuth 2, kuriam nereikia įvesti naudotojo vardo ir slaptažodžio, rankinio prisijungimo formą galite paslėpti. Atkreipkite dėmesį, kad naudotojai su rankinėmis paskyromis negalės prisijungti.
+
+Jei paslėpę rankinio prisijungimo formą negalite prisijungti, ją vėl galite parodyti komandinėje eilutėje paleidę php admin/cli/cfg.php --name=showloginform --set=1';
 $string['stdchangepassword'] = 'Naudoti standartinį slaptažodžio keitimo puslapį';
 $string['stdchangepassword_expl'] = 'Jei išorinė autentifikavimo sistema leidžia keisti slaptažodį per „Moodle“, nustatykite Taip. Šis parametras pakeičia parametrą Slaptažodžio keitimo URL.';
 $string['stdchangepassword_explldap'] = 'PASTABA. Rekomenduojame naudoti LDAP per SSL šifruotą tunelį (ldaps://), jei LDAP serveris yra nuotolinis.';

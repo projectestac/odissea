@@ -1,8 +1,10 @@
-@javascript @qtype_truefalsewiris @studentwiris @wqmdl-281
+@qtype @qtype_truefalsewiris @wq @javascript @student @attempt @regression
 Feature: Student answers a quiz with a True/False (WIRIS) question
 
     Background:
-    Given the following "users" exist:
+    Given the "wiris" filter is "on"
+    And the "wiris" filter has maximum priority
+    And the following "users" exist:
         | username | firstname | lastname | email                |
         | student1 | Student   | One      | student1@example.com |
     And the following "courses" exist:
@@ -32,8 +34,10 @@ Feature: Student answers a quiz with a True/False (WIRIS) question
     Scenario: Student attempts and submits the True/False (WIRIS) quiz
     Given I am on the "WIRIS True/False Quiz" "mod_quiz > View" page logged in as "student1"
     When I press "Attempt quiz"
+    And I click on "True" "radio"
     And I click on "Finish attempt ..." "link"
     And I press "Submit all and finish"
     And I click on "Submit all and finish" "button" in the "Submit all your answers and finish?" "dialogue"
+    Then I should see "The daytime sky is blue."
 
 

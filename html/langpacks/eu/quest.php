@@ -399,7 +399,6 @@ $string['studentsubmissions'] = '{$a} bidalketa';
 $string['studentsubmissionsforassessment'] = '{$a} balioespenarentzako
 ikasleen bidaltzeak';
 $string['subject'] = 'Gaia:';
-$string['submission'] = 'Erronka';
 $string['submissionend'] = 'Erronkaren amaiera-data';
 $string['submissions'] = 'Erronkak';
 $string['submissionstart'] = 'Erronkaren epe-hasiera';

@@ -153,6 +153,7 @@ $string['tagarea_blog_external'] = 'Išoriniai tinklaraščio įrašai';
 $string['tagarea_course'] = 'Kursai';
 $string['tagarea_course_modules'] = 'Veiklos ir ištekliai';
 $string['tagarea_post'] = 'Tinklaraščio įrašai';
+$string['tagarea_tag'] = 'Susijusios žymės';
 $string['tagarea_user'] = 'Naudotojo interesai';
 $string['tagareaenabled'] = 'Įjungta';
 $string['tagareaname'] = 'Pavadinimas';

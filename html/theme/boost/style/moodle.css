@@ -25027,6 +25027,7 @@ nav.navbar .logo img {
 
 ul.dragdrop-keyboard-drag li {
   list-style-type: none;
+  margin-bottom: 0.1em;
 }
 
 a.disabled:hover,
@@ -27291,6 +27292,9 @@ img.icon {
     margin-top: 0;
   }
 }
+.editing .block_recentlyaccessedcourses .paging-bar-container {
+  margin-top: 0;
+}
 
 #block-region-side-pre .block_recentlyaccessedcourses .paging-bar-container {
   margin-top: 0;
@@ -28849,6 +28853,7 @@ span.editinstructions .alert-link {
 }
 #course-category-listings .listitem > div .idnumber {
   margin-right: 2em;
+  min-width: 0;
 }
 #course-category-listings .listitem[data-visible="0"] {
   color: #6a737b;
@@ -31947,6 +31952,9 @@ a.ygtvspacer:hover {
 .message-app .list-group .list-group-item:hover {
   color: #fff;
   background-color: #0f6cbf;
+}
+.message-app .list-group .list-group-item:hover .message-icon-forward {
+  color: inherit !important;
 }
 .message-app .list-group .list-group-item:hover .badge-primary {
   background-color: #fff;
@@ -35079,6 +35087,11 @@ img.userpicture {
   z-index: 1;
 }
 
+@media (max-width: 576px) and (max-height: 320px) {
+  .path-mod-assign .gradingtable thead tr {
+    position: static;
+  }
+}
 /**
  * Mod LTI.
  */
@@ -38793,9 +38806,24 @@ div.editor_atto_toolbar button .icon {
 }
 .courseindex .courseindex-item .completioninfo {
   min-width: 24px;
+  display: inline-flex;
+  align-items: center;
 }
 .courseindex .courseindex-item .completioninfo.completion_complete {
   color: #357a32;
+}
+.courseindex .courseindex-item .completioninfo.completion_complete .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  line-height: 1;
+}
+.courseindex .courseindex-item .completioninfo.completion_complete .icon:not(img)::before {
+  outline: 2px solid #f8f9fa;
+  border-radius: 50%;
 }
 .courseindex .courseindex-item .completioninfo.completion_fail {
   color: #ca3120;
@@ -38996,6 +39024,19 @@ div.editor_atto_toolbar button .icon {
 .drawer-primary .drawercontent .list-group .list-group-item {
   border-left: 0;
   border-right: 0;
+}
+
+.drawer-primary .drawerheader [data-region=site-home-link] {
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+.drawer-primary .drawerheader .logo {
+  max-width: 100%;
+  max-height: 60px;
+  width: auto;
+  height: 60px;
+  object-fit: contain;
 }
 
 .secondary-navigation {

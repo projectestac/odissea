@@ -88,7 +88,6 @@ $string['pluginnameadding'] = 'Hutsuneak betetzeko galdera gehitzen.';
 $string['pluginnameediting'] = 'Hutsuneak betetzeko galdera editatzen.';
 $string['pluginnamesummary'] = 'Hutsuneak betetzeko moduko galdera. Hartu eta eraman edo zabaltzen diren zerrenden erantzunak distraitzekoekin onartzen ditu. Oso erraza da sintaxia ikasteko';
 $string['privacy:null_reason'] = 'Hutsuneak betetzeko galderak ez du daturik gordetzen, ezta horietan bestelako eraginik izaten ere.';
-$string['questioncatnotfound'] = 'Galdera-kategoria ez da aurkitu. Klikatu <a href={$a}>hemen</a> abiarazteko, eta gero sakatu nabigatzailearen atzerako botoia';
 $string['questionsmissing'] = 'Ez  duzu eremurik zehaztu galderaren testuan';
 $string['questiontext'] = 'Galderaren testua';
 $string['questiontext_help'] = 'Jarri mugatzaileak testu bilakatuko diren hitzen inguruan';

@@ -9,9 +9,15 @@ require_once 'scripts.lib.php';
 
 // Get cli options.
 [$options, $params] = cli_get_params(
-    ['help' => false, 'script' => false],
+    ['help' => false, 'script' => false, 'list' => false],
     ['h' => 'help', 's' => 'script']
 );
+
+// Print the list of scripts in JSON format. Used by Àgora Portal.
+if ($options['list']) {
+    echo json_encode(scripts_api_list_scripts());
+    exit(0);
+}
 
 $script = $options['script'];
 if ($params) {
@@ -28,6 +34,7 @@ if ($options['help'] || !$script) {
 Options:
 -h, --help            Print out this help
 -s, --script          Script to execute
+--list                Print the list of scripts available for Àgora Portal in JSON format
 
 Example:
 \$sudo -u www-data /usr/bin/php local/agora/scripts/cli.php

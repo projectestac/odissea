@@ -37,7 +37,6 @@ $string['pluginname'] = 'パスワードによる制限';
 $string['privacy:metadata:availability_password_grant'] = '既定の活動に正しいパスワードを入力したユーザすべてに関する情報です。';
 $string['privacy:metadata:availability_password_grant:cmid'] = 'パスワードが入力されたコースモジュールのIDです。';
 $string['privacy:metadata:availability_password_grant:courseid'] = 'パスワードが入力されたコースのIDです。';
-$string['privacy:metadata:availability_password_grant:password'] = '入力されたパスワードです。';
 $string['privacy:metadata:availability_password_grant:userid'] = 'パスワードを入力したユーザのIDです。';
 $string['rememberpassword'] = '入力されたパスワードを記憶する';
 $string['requires_nopassword'] = 'あなたは正しいパスワードを入力していません。';

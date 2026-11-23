@@ -44,6 +44,7 @@ $string['activityiscurrentlyhidden'] = 'Esta actividade actualmente está agocha
 $string['activitymodule'] = 'Módulo de actividade';
 $string['activitymodules'] = 'Módulos de actividade';
 $string['activitynotready'] = 'A actividade aínda non está preparada';
+$string['activityorresource'] = 'Actividade ou recurso';
 $string['activityreport'] = 'Informe de actividade';
 $string['activityreports'] = 'Informes de actividades';
 $string['activityselect'] = 'Seleccionar esta actividade para movela a outro lugar';
@@ -57,6 +58,7 @@ $string['addadmin'] = 'Engadir un administrador';
 $string['addblock'] = 'Engadir un bloque';
 $string['addcomment'] = 'Engadir un comentario…';
 $string['addcondition'] = 'Engadir condición';
+$string['addcontent'] = 'Engadir contido';
 $string['addcountertousername'] = 'Crear un usuario engadindo un número ao nome de usuario';
 $string['addcreator'] = 'Engadir un creador de curso';
 $string['adddots'] = 'Engadir...';
@@ -196,7 +198,7 @@ $string['backupdaterecordtype'] = '<br />{$a->recordtype} - {$a->recordname}<br 
 $string['backupdetails'] = 'Detalles da copia de seguridade';
 $string['backuperrorinvaliddestination'] = 'O cartafol de destino da copia de seguranza, ou non existe, ou non é escribíbel.';
 $string['backupexecuteathelp'] = 'Escolla a que hora se farán as copias de seguranza automatizadas';
-$string['backupfailed'] = 'Algúns dos seus cursos non foron gardados.';
+$string['backupfailed'] = 'Algúns dos teus cursos non se gardaron.';
 $string['backupfilename'] = 'copia de seguranza';
 $string['backupfinished'] = 'A copia de seguridade completouse correctamente';
 $string['backupfromthissite'] = 'Fíxose a copia de seguranza no sitio?';
@@ -223,6 +225,8 @@ $string['block'] = 'Bloque';
 $string['blockconfiga'] = 'Configurando un bloque {$a}';
 $string['blockconfigbad'] = 'Este bloque non foi implementado correctamente polo que non se pode fornecer unha interface de configuración.';
 $string['blocks'] = 'Bloques';
+$string['blocks_main'] = 'Bloques de contido principal';
+$string['blocks_supplementary'] = 'Bloques complementarios';
 $string['blocksaddedit'] = 'Engadir/Editar bloques';
 $string['blockseditoff'] = 'Desactivar a edición de bloques';
 $string['blocksediton'] = 'Activar a edición de bloques';
@@ -562,15 +566,15 @@ $string['delete'] = 'Eliminar';
 $string['deleteablock'] = 'Eliminar un bloque';
 $string['deleteall'] = 'Eliminar todo';
 $string['deleteallcannotundo'] = 'Eliminar todo (non se poderá desfacer)';
-$string['deleteallcomments'] = 'Eliminar todos os comentarios';
-$string['deleteallratings'] = 'Eliminar todas as puntuacións';
+$string['deleteallcomments'] = 'Todos os comentarios';
+$string['deleteallratings'] = 'Todas as puntuacións';
 $string['deletecategory'] = 'Eliminar a categoría: {$a}';
 $string['deletecategorycheck'] = 'Confirma definitivamente que quere eliminar por completo a categoría <b>«{$a}»</b>?<br /> Esta acción trasladará todos os cursos á categoría superior (se existe) ou a Miscelánea.';
 $string['deletecategorycheck2'] = 'Se elimina esta categoría, necesita decidir que facer cos cursos e subcategorías que contén.';
 $string['deletecategoryempty'] = 'Esta categoría está baleira';
 $string['deletecheck'] = 'Eliminar {$a} ?';
 $string['deletecheckfiles'] = 'Confirma definitivamente que quere eliminar estes ficheiros?';
-$string['deletecheckfull'] = 'Confirma definitivamente que quere eliminar o usuario {$a}, incluíndo as súas matriculacións, actividade e outros datos de usuario?';
+$string['deletecheckfull'] = 'Estás seguro de que queres eliminar o usuario {$a}, incluíndo datos como os detalles do perfil, as matrículas, a pertenza a grupos e cohortes e algúns datos da actividade do usuario?';
 $string['deletechecktype'] = 'Confirma que quere eliminar este {$a->type}?';
 $string['deletechecktypename'] = 'Confirma que quere eliminar o {$a->type} «{$a->name}»?';
 $string['deletecheckwarning'] = 'Está a piques de eliminar estes ficheiros';
@@ -649,7 +653,7 @@ $string['editcategorysettings'] = 'Editar os axustes da categoría';
 $string['editcategorythis'] = 'Editar esta categoría';
 $string['editcoursesettings'] = 'Editar os axustes do curso';
 $string['editfiles'] = 'Editar ficheiros';
-$string['editgroupprofile'] = 'Editar o perfil do grupo';
+$string['editgroupprofile'] = 'Editar a descrición do grupo';
 $string['editinga'] = 'Editando {$a}';
 $string['editingteachershort'] = 'Editor';
 $string['editlock'] = 'Non é posíbel editar este valor.';
@@ -690,20 +694,15 @@ $string['emailagain'] = 'Correo (de novo)';
 $string['emailalreadysent'] = 'Envióuselle un correo de restabelecemento do contrasinal. Consulte o seu correo.';
 $string['emailcharset'] = 'Conxunto de caracteres para correo';
 $string['emailconfirm'] = 'Confirme a súa conta';
-$string['emailconfirmation'] = 'Ola, {$a->firstname}.
+$string['emailconfirmation'] = 'Ola {$a->firstname},
 
-Foi solicitada a apertura dunha nova conta en «{$a->sitename}»
-empregando o seu enderezo de correo.
+Solicitouse unha nova conta en \'{$a->sitename}\' usando o teu enderezo de correo electrónico.
 
-Para confirmar a súa nova conta, vaia ao seguinte enderezo web:
+Para confirmar a túa nova conta, fai clic na seguinte ligazón:
 
-{$a->link}
+<a href="{$a->link}">Confirmar a túa conta</a>
 
-Na maioría de programas de correo electrónico esta
-ligazón debería aparecer en azul, para poder premer nela.
-Se isto non funciona, corte e pegue o enderezo na liña de enderezos na parte superior da xanela do seu navegador.
-
-Se precisa de axuda, contacte co administrador do sitio,
+Se precisas axuda, ponte en contacto co administrador do sitio,
 {$a->admin}';
 $string['emailconfirmationresend'] = 'Reenviar o correo de confirmación';
 $string['emailconfirmationsubject'] = 'Confirmación da conta: {$a}';
@@ -744,22 +743,16 @@ $string['emailformat'] = 'Formato do correo';
 $string['emailmustbereal'] = 'Nota: o seu enderezo de correo debe ser un enderezo verdadeiro';
 $string['emailnotallowed'] = 'Non están permitidos os enderezos de correo deste dominio ({$a})';
 $string['emailnotfound'] = 'Non foi posíbel atopar o enderezo de correo na base de datos';
-$string['emailonlyallowed'] = 'Este correo non figura entre os permitidos ({$a})';
-$string['emailpasswordchangeinfo'] = 'Ola, {$a->firstname}.
+$string['emailonlyallowed'] = 'Este correo electrónico non se pode usar. Os dominios de correo electrónico permitidos son: {$a}.';
+$string['emailpasswordchangeinfo'] = 'Ola {$a->firstname},
 
-Alguén (seguramente vostede) solicitou un novo contrasinal para
-a súa conta en «{$a->sitename}».
+Alguén (probablemente ti) solicitou un novo contrasinal para a túa conta \'{$a->username}\' en \'{$a->sitename}\'.
 
-Para cambiar o seu contrasinal, vaia ao seguinte enderezo:
+Para cambiar o teu contrasinal, fai clic na seguinte ligazón:
 
-{$a->link}
+<a href="{$a->link}">Cambiar contrasinal</a>
 
-Na maioría de programas de correo electrónico esta
-ligazón debería aparecer en azul, para poder premer nela.
-Se non funciona, cópiea e péguea na barra de enderezos
-do seu navegador.
-
-Se precisa axuda, contacte co administrador do sitio,
+Se precisas axuda, ponte en contacto co administrador do sitio.
 {$a->admin}';
 $string['emailpasswordchangeinfodisabled'] = 'Ola, {$a->firstname}.
 
@@ -772,22 +765,15 @@ Alguén (seguramente vostede) solicitou un novo contrasinal para a súa conta en
 
 Lamentabelmente non é posíbel restabelecer os contrasinais neste sitio. Contacte co administrador do sitio {$a->admin}';
 $string['emailpasswordchangeinfosubject'] = '{$a}: información sobre o cambio de contrasinal';
-$string['emailpasswordconfirmation'] = 'Ola, {$a->firstname}.
+$string['emailpasswordconfirmation'] = 'Ola {$a->firstname},
 
-Alguén (seguramente vostede) solicitou un novo contrasinal para
-a súa conta en «{$a->sitename}».
+Alguén (probablemente ti) solicitou un novo contrasinal para a túa conta en \'{$a->sitename}\'.
 
-Para confirmar isto e recibir por correo o novo contrasinal,
-vaia ao seguinte enderezo:
+Para confirmar esta solicitude e recibir un novo contrasinal por correo electrónico, fai clic na seguinte ligazón:
 
-{$a->link}
+<a href="{$a->link}">Obter un novo contrasinal</a>
 
-Na maioría de programas de correo electrónico esta
-ligazón debería aparecer en azul, para poder premer nela.
-Se non funciona, cópiea e péguea na barra de enderezos
-do seu navegador.
-
-Se precisa axuda, contacte co administrador do sitio,
+Se precisas axuda, ponte en contacto co administrador do sitio.
 {$a->admin}';
 $string['emailpasswordconfirmationsubject'] = '{$a}: confirmación do cambio de contrasinal';
 $string['emailpasswordconfirmmaybesent'] = '<p>Se forneceu un nome de usuario ou enderezo de correo único, debería térselle enviado un correo.</p>
@@ -807,16 +793,18 @@ O novo contrasinal foi xerado automaticamente; seguramente quererá
 <a href="{$a->link}">cambiar o seu contrasinal</a> por outra máis doado de lembrar.</p>';
 $string['emailresetconfirmation'] = 'Ola {$a->firstname},
 
-Foi solicitado o restabelecemento do contrasinal para a súa conta «{$a->username}« en {$a->sitename}.
+Solicitouse un restablecement do contrasinal da túa conta \'{$a->username}\' en {$a->sitename}.
 
-Para confirmar este pedimento, e estabelecer un novo contrasinal para a súa conta, vaia ao seguinte enderezo:
-{$a->link}
+Para confirmar esta solicitude e establecer un novo contrasinal para a túa conta, fai clic na seguinte ligazón:
 
-(Esta ligazón é válida durante {$a->resetminutes} minutos dende o momento no que fixo a solicitude por primeira vez.)
+<a href="{$a->link}">Restablecer contrasinal</a>
 
-Se vostede non solicitou este restabelecemento de contrasinal, non é necesario que faga nada.
+(Esta ligazón é válida durante {$a->resetminutes} minutos desde o momento no que se solicitou por primeira vez este restablecemento.)
 
-Se precisa axuda, contacte coa administración do sitio, {$a->admin}';
+Se non solicitaches ti este restablecemento do contrasinal, non é necesario realizar ningunha acción.
+
+Se precisas axuda, ponte en contacto co administrador do sitio.
+{$a->admin}';
 $string['emailresetconfirmationsubject'] = '{$a}: Solicitude de restabelecemento de contrasinal';
 $string['emailresetconfirmsent'] = 'Temos enviado un correo electrónico a <b>{$a}</b>
 <br />Nel atopará instrucións sinxelas para confirmar e completar o cambio de contrasinal.
@@ -933,7 +921,7 @@ $string['expandcategory'] = 'Expandir {$a}';
 $string['explanation'] = 'Explicación';
 $string['explanationdigitalminor'] = 'Esta información é necesaria para determinar se a súa idade supera a idade dixital de consentimento. Esta é a idade na que un individuo pode aceptar os termos e condicións para que os seus datos sexan almacenados e procesados legalmente.';
 $string['extendperiod'] = 'Período de ampliación';
-$string['extendsession'] = 'Sesión estendida';
+$string['extendsession'] = 'Estender a sesión';
 $string['failedloginattempts'] = '{$a->attempts} intentos de acceso fallados dende o seu último acceso';
 $string['failedtaskbody'] = '<p>Ola {$a->firstname},</p>
 <p>A tarefa <b>{$a->taskname}</b> ten moitos intentos fallidos e require atención.</p>
@@ -975,12 +963,13 @@ $string['force'] = 'Forzar';
 $string['forcelanguage'] = 'Forzar o idioma';
 $string['forceno'] = 'Non forzar';
 $string['forcepasswordchange'] = 'Forzar o cambio de contrasinal';
-$string['forcepasswordchange_help'] = 'Se esta marcada esta caixiña, pediráselle ao usuario que cambie o seu contrasinal no seguinte acceso';
+$string['forcepasswordchange_help'] = 'Se está marcado, pediráselle ao usuario que cambie o seu contrasinal cando inicie sesión de novo.';
 $string['forcepasswordchangecheckfull'] = 'Confirma definitivamente que quere forzar un cambio de contrasinal a {$a} ?';
 $string['forcepasswordchangenot'] = 'Non foi posíbel forzar o cambio de contrasinal a {$a}';
 $string['forcepasswordchangenotice'] = 'Para continuar, deberá cambiar o seu contrasinal.';
 $string['forcepasswordresetfailurenotice'] = 'O seu contrasinal actual non pasa a directiva de contrasinais estabelecida. Póñase en contacto co administrador de Moodle para obter axuda.';
-$string['forcepasswordresetnotice'] = 'O seu contrasinal actual non pasa a directiva de contrasinais estabelecida. Debe restabelecer o seu contrasinal para acceder.';
+$string['forcepasswordresetnotice'] = 'O teu contrasinal actual xa non cumpre a política de contrasinais. Debes restablecer o teu contrasinal para iniciar sesión.
+{$a}';
 $string['forcetheme'] = 'Forzar o tema';
 $string['forgotaccount'] = 'Esqueceu o contrasinal?';
 $string['forgotten'] = 'Esqueceu o seu nome de usuario ou o contrasinal?';
@@ -1026,6 +1015,7 @@ $string['general'] = 'Xeral';
 $string['geolocation'] = 'latitude - lonxitude';
 $string['gettheselogs'] = 'Obter estes rexistros';
 $string['go'] = 'Ir a';
+$string['gobacktosite'] = 'Volver ao sitio';
 $string['gpl'] = 'Dereitos de autor (C) 1999 en diante Martin Dougiamas (https://moodle.com)
 
 Este programa é software libre; vostede pode redistribuílo
@@ -1202,6 +1192,8 @@ $string['indicator:userforumstracking'] = 'O usuario está seguindo os foros';
 $string['indicator:userforumstracking_help'] = 'Este indicador representa se o alumno ten ou non seguimento activado nos foros.';
 $string['info'] = 'Información';
 $string['inprogress'] = 'Avanzando';
+$string['insertcontentbefore'] = 'Inserir contido antes de \'{$a->activityname}\'';
+$string['insertcontentsection'] = 'Inserir contido na sección \'{$a->sectionname}\'';
 $string['insertresourceoractivitybefore'] = 'Inserir unha actividade ou recurso antes de «{$a->activityname}»';
 $string['institution'] = 'Institución';
 $string['instudentview'] = 'en modo de vista previa de alumno';
@@ -1222,7 +1214,7 @@ $string['labelvalue'] = '{$a->label}: {$a->value}';
 $string['langltr'] = 'Dirección do idioma de esquerda a dereita';
 $string['langrtl'] = 'Dirección do idioma de dereita a esquerda';
 $string['language'] = 'Idioma';
-$string['languagegood'] = 'Este paquete de idioma está actualizado :-)';
+$string['languagegood'] = 'Este paquete de idioma está actualizado.';
 $string['languageselector'] = 'Selector de idioma';
 $string['last'] = 'Último';
 $string['lastaccess'] = 'Último acceso';

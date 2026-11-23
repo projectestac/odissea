@@ -117,7 +117,6 @@ $string['beforecompletedtext_help'] = 'إتركه فارغاً لاستعمال 
 <li>{times} - أوقات الجلسات</li>
 <li>{shorturl} - خيار مختصر عنوان الرابط</li>
 </ul>';
-$string['booking:addeditownoption'] = 'إضافة خيار جديد وتحرير خياراته.';
 $string['booking:addinstance'] = 'إضافة حجز جديد';
 $string['bookingoptiontitle'] = 'عنوان خيار الحجز';
 $string['bookingtags'] = 'الوسوم';

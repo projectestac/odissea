@@ -115,6 +115,7 @@ $string['editscheduledetails'] = 'Редагувати деталі розкла
 $string['editschedulename'] = 'Редагувати назву розкладу';
 $string['enablecustomreports'] = 'Увімкнути спеціальні звіти';
 $string['enablecustomreports_desc'] = 'Якщо ввімкнено, користувачі можуть створювати та переглядати спеціальні звіти конструктора звітів.';
+$string['enabled'] = 'Включено';
 $string['enableschedule'] = 'Увімкнути розклад';
 $string['entitycourse'] = 'Курс';
 $string['entityuser'] = 'Користувач';

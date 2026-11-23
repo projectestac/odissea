@@ -217,7 +217,8 @@
     cursor: text;
 }
 .path-mod-board .comment .comment-input:focus {
-    outline: none;
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
     /* stylelint-disable-next-line declaration-no-important */
     border-bottom-color: #000 !important;
 }
@@ -285,7 +286,7 @@
 }
 .path-mod-board .mod_board_attachment_button {
     text-align: center;
-    border: 3px solid lightblue;
+    border: 3px solid dodgerblue;
     background: lightblue;
     padding: 8px 15px;
     font-size: 150%;

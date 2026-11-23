@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['numberdiscussions'] = 'Número de discussões';
-$string['numberdiscussions_help'] = 'Esta configuração especifica quantas discussões devem ser exibidas.';
+$string['numberdiscussions'] = 'Número de tópicos';
+$string['numberdiscussions_help'] = 'Esta configuração especifica quantos tópicos devem ser exibidos.';
 $string['plugin_description'] = 'A disciplina é centrada num fórum principal na página da disciplina. Podem ser adicionadas atividades e recursos adicionais através do bloco Atividades sociais.';
 $string['pluginname'] = 'Social';
 $string['privacy:metadata'] = 'O módulo Formato Social não armazena quaisquer dados pessoais.';

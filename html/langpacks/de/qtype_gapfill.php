@@ -88,7 +88,6 @@ $string['pluginnameadding'] = 'Füge eine erweiterte Lückentext-Frage hinzu';
 $string['pluginnameediting'] = 'Erweiterten Lückentext bearbeiten';
 $string['pluginnamesummary'] = 'Eine Fragentyp, der sich mit dem Ausfüllen von Lücken beschäftigt. Erlaubt "drag&drop" und "drop down" Antwortmöglichkeiten mit dem Einblenden von falschen Antwortmöglichkeiten, welche zur Ablenkung bei der Beantwortung der Frage dienen. Eine sehr einfach zu erlernende Syntax zur Erstellung der Frage.';
 $string['privacy:null_reason'] = 'Der Fragetyp "Erweiterter Lückentext" generiert oder speichert selbst keine Daten.';
-$string['questioncatnotfound'] = 'Fragekategorie nicht gefunden, klicken Sie zum Initialisieren <a href={$a}>hier</a>, und danach die Zurück-Taste des Browsers';
 $string['questionsmissing'] = 'Sie haben bisher keine Felder in Ihren Fragentext eingefügt.';
 $string['questiontext'] = 'Fragetext';
 $string['questiontext_help'] = 'Schließen Sie Wörter mit Abgrenzungszeichen, die zum Text werden sollen';

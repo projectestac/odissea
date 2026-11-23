@@ -15,6 +15,7 @@
 
 import ModalCancel from 'core/modal_cancel';
 import ModalEvents from 'core/modal_events';
+import Mustache from 'core/mustache';
 import Notification from 'core/notification';
 import $ from "jquery";
 import * as Str from 'core/str';
@@ -109,7 +110,7 @@ const moveLink = (columnId, movingNoteId, targetNoteId, movingNoteColumn, sortOr
  * @param {DomeNode} moveNoteControl The move note control
  */
 const displayMoveModal = (moveNoteControl) => {
-    const modalTitle = moveNoteControl.getAttribute('aria-label');
+    const modalTitle = Mustache.escape(moveNoteControl.getAttribute('aria-label') ?? '');
     ModalCancel.create({
         title: modalTitle,
         body: getDestinationsList(moveNoteControl)

@@ -47,7 +47,7 @@ $string['any'] = 'Bet kas';
 $string['approval'] = 'Patvirtinimas';
 $string['areyousureoverridecompletion'] = 'Ar Jūs tikrai norite pakeisti dabartinę veiklos užbaigimo būseną šiam naudotojui ir pažymėti kaip "{$a}"?';
 $string['badautocompletion'] = 'Turite pasirinkti bent vieną sąlygą.';
-$string['badcompletiongradeitemnumber'] = 'Reikalauti įvertinimo negalima <b>{$a}</b> , kadangi vertinimas {$a} yra neįjungtas.';
+$string['badcompletiongradeitemnumber'] = 'Reikalauti įvertinimo negalima <b>{$a}</b>, kadangi vertinimas {$a} yra neįjungtas.';
 $string['bulkactivitycompletion'] = 'Masinis veiklų užbaigimo redagavimas';
 $string['bulkactivitydetail'] = 'Pasirinkite veiklas redagavimui vienu metu';
 $string['bulkcompletiontracking'] = 'Užbaigimo sekimas';
@@ -55,7 +55,7 @@ $string['bulkcompletiontracking_help'] = '<strong>Nėra:</strong> Veiklos užbai
 
 <strong>Neautomatinis:</strong> Užbaigę veiklą besimokantieji gali ją pažymėti neautomatiniu būdu
 
-<strong>Su sąlyga (-omis):</strong> Veikla rodoma kaip užbaigta kai išpildomos sąlygos';
+<strong>Su sąlyga (-omis):</strong> Veikla rodoma kaip užbaigta, kai išpildomos sąlygos';
 $string['checkactivity'] = 'Žymimasis langelis veiklai / ištekliui: {$a}';
 $string['checkall'] = 'Pažymėti ar atžymėti visas veiklas ir išteklius';
 $string['checkallsection'] = 'Pažymėti ar atžymėti visas veiklas ir išteklius šioje dalyje: {$a}';

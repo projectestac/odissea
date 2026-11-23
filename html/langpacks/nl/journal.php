@@ -75,7 +75,6 @@ $string['rate'] = 'Beoordeel';
 $string['removeentries'] = 'Alle items verwijderen';
 $string['removemessages'] = 'Alle Logboekitems verwijderen';
 $string['saveallfeedback'] = 'Al mijn feedback bewaren';
-$string['showoverview'] = 'Toon een overzicht van mijn Logboeken op mijn startpagina';
 $string['showrecentactivity'] = 'Toon recente activiteit';
 $string['startoredit'] = 'Begin of bewerk mijn Logboekitem';
 $string['viewallentries'] = 'Bekijk {$a} Logboekitems';

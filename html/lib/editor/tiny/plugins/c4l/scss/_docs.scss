@@ -20,15 +20,15 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
-    color: #535d76;
+    color: var(--c4l-ui-text);
     font-size: 14px;
-    background-color: #fff;
+    background-color: var(--c4l-ui-surface);
 }
 
 .c4l-docs-default {
-    border: 1px solid #e1e5ee;
+    border: 1px solid var(--c4l-ui-panel-border);
     border-radius: 8px;
-    color: #9297a1;
+    color: var(--c4l-ui-text-muted);
     padding: 23px 10px;
     font-weight: 400;
     font-size: 12px;
@@ -53,7 +53,7 @@
     margin: 0 0 12px 0;
     font-size: 14px;
     font-weight: 500;
-    color: #424b62;
+    color: var(--c4l-ui-text-strong);
 }
 
 .c4l-docs-section {
@@ -65,7 +65,7 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: #1779f9;
+    color: var(--c4l-ui-link);
     margin: 0 0 6px 0;
 }
 
@@ -76,6 +76,6 @@
 
     li {
         margin-bottom: 4px;
-        color: #535d76;
+        color: var(--c4l-ui-text);
     }
 }

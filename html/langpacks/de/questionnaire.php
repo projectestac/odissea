@@ -600,8 +600,7 @@ $string['send_message'] = 'Ausgewählten Teilnehmer/innen eine Nachricht senden'
 $string['send_message_to'] = 'Nachricht senden an:';
 $string['sendemail'] = 'E-Mail versenden';
 $string['sendemail_help'] = 'Eine Kopie jeder Abgabe wird an die angegebenen E-Mail-Adressen gesendet. Sie können mehr als eine E-Mail-Adresse angeben, indem Sie sie durch Kommas trennen.
-Lassen Sie dieses Feld leer, wenn keine E-Mail gesendet werden sollen.
-In den Moduleinstellungen muss \'allowemailreporting\' aktiviert sein, um darauf zugreifen zu können.';
+Lassen Sie dieses Feld leer, wenn keine E-Mail gesendet werden sollen. In den Moduleinstellungen muss \'Benachrichtigung über Antworten verschicken\' aktiviert sein, um darauf zugreifen zu können.';
 $string['set'] = 'ausgewählt';
 $string['settings'] = 'Einstellungen';
 $string['settingssaved'] = 'Einstellungen gesichert';

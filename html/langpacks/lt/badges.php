@@ -40,6 +40,7 @@ $string['addcourse'] = 'Įtraukti kursus';
 $string['addcourse_help'] = 'Pažymėti visus kursus, kurie turi būti įtraukti prie šio pasiekimo reikalavimų. Laikykite "CTRL" norėdami pažymėti keletą elementų.';
 $string['addcriteria'] = 'Įtraukti kriterijų';
 $string['addcriteriatext'] = 'Norėdami pradėti kriterijų įtraukimą, prašom pasirinkti vieną iš parinkčių išskleidžiamajame meniu.';
+$string['addcriterion'] = 'Pridėti kriterijų';
 $string['addedtobackpack'] = 'Pasiekimas įtrauktas į saugyklą';
 $string['addrelated'] = 'Įtraukti susijusį pasiekimą';
 $string['addtobackpack'] = 'Įtraukti į saugyklą';
@@ -138,7 +139,7 @@ $string['backpackemailverifypending'] = 'Išsiuntėme el. laišką adresu <stron
 $string['backpackemailverifysuccess'] = 'Dabar esate prisijungę prie saugyklos.';
 $string['backpackemailverifytokenmismatch'] = 'Nuorodoje, kurią spustelėjote, esantis prieigos raktas neatitinka išsaugoto prieigos rakto. Įsitikinkite, kad spustelėjote nuorodą paskutiniame gautame el. laiške.';
 $string['backpackexporterror'] = 'Nepavyko eksportuoti pasiekimo į pasiekimų talpyklą';
-$string['backpackexporterrorwithinfo'] = 'Nepavyko eksportuoti pasiekimo „{$a->badgename}“ į taplyklą. Klaida: {$a->error}';
+$string['backpackexporterrorwithinfo'] = 'Nepavyko eksportuoti pasiekimo „{$a->badgename}“ į talpyklą. Klaida: {$a->error}';
 $string['backpackimport'] = 'Pasiekimo importavimo nustatymai';
 $string['backpackimport_help'] = 'Po sėkmingo ryšio prie saugyklos įsigalėjimo, pasiekimai iš saugyklos gali būti rodomi Jūsų pasiekimų ir profilio puslapyje.
 
@@ -163,6 +164,7 @@ Pastaba: Pradėjus skirti pasiekimus, gavėjo patikrinimo tikslu, prašome nekei
 $string['badgesdisabled'] = 'Šioje svetainėje pasiekimai neįgalinti';
 $string['badgesearned'] = 'Gauta pasiekimų: {$a}';
 $string['badgesettings'] = 'Pasiekimų nustatymai';
+$string['badgesnavigation'] = 'Pasiekimų naršymas';
 $string['badgestatus_0'] = 'Neprieinamas';
 $string['badgestatus_1'] = 'Prieinamas';
 $string['badgestatus_2'] = 'Neprieinamas (kriterijai užrakinti)';
@@ -181,6 +183,9 @@ $string['bmessage'] = 'Pranešimas';
 $string['boverview'] = 'Apžvalga';
 $string['brelated'] = 'Susiję pasiekimai ({$a})';
 $string['bydate'] = 'baigė';
+$string['canvascredentialsprovider'] = 'Canvas Credentials';
+$string['canvasregions'] = 'Canvas Credentials regionai';
+$string['canvasregions_desc'] = 'Galite konfigūruoti Canvas Credentials regionų turinį. Kiekvienos eilutės dalys atskiriamos vertikaliais brūkšniais; eilutę sudaro 1) regiono pavadinimas, 2) pasiekimų talpyklos URL ir 3) pasiekimų talpyklos API URL.';
 $string['claim'] = 'Reikalauti';
 $string['claimcomment'] = 'Patvirtinimo komentaras';
 $string['claimid'] = 'Reikalauti URL';
@@ -227,7 +232,7 @@ $string['criteria_9_help'] = 'Leidžia suteikti naudotojams pasiekimą pagal jų
 $string['criteria_descr'] = 'Naudotojai gaus šį pasiekimą kai jie įvykdys sekančius reikalavimus:';
 $string['criteria_descr_0'] = 'Atlikti<strong>{$a}</strong> iš išvardytų reikalavimų.';
 $string['criteria_descr_1'] = 'Baigta <strong>{$a}</strong> sekančių veiklų';
-$string['criteria_descr_2'] = 'This badge has to be awarded by the users with <strong>{$a}</strong> of the following roles';
+$string['criteria_descr_2'] = 'Šį pasiekimą turi suteikti naudotojai, turintys šiuos vaidmenis <strong>{$a}</strong>):';
 $string['criteria_descr_4'] = 'Naudotojai turi baigti šį kursą';
 $string['criteria_descr_5'] = 'Reikia baigti <strong>{$a}</strong> sekančių kursų:';
 $string['criteria_descr_6'] = 'Reikia užildyti <strong>{$a}</strong> sekančių naudotojo profilio laukų:';
@@ -301,6 +306,9 @@ $string['error:cannotact'] = 'Nepavyko aktyvuoti pasiekimo.';
 $string['error:cannotawardbadge'] = 'Nepavyksta skirti pasiekimo naudotojui.';
 $string['error:cannotdeletecriterion'] = 'Šis kriterijus negali būti ištrintas.';
 $string['error:cannotrevokebadge'] = 'Negalima panaikinti naudotojo pasiekimo.';
+$string['error:cannotsendtobackpack'] = '<strong>Nepavyko įtraukti pasiekimo į pasiekimų talpyklą</strong><br />
+Jūsų pasiekimų talpyklos paslaugos teikėjas siunčia šią žinutę: „{$a}“.<br /><br />
+Galite pabandyti atsisiųsti pasiekimą ir rankiniu būdu įtraukti jį į savo pasiekimų talpyklą arba pabandyti vėliau.';
 $string['error:clone'] = 'Nepavyksta klonuoti pasiekimo.';
 $string['error:connectionunknownreason'] = 'Prisijungti nepavyko, tačiau priežasčių paaiškinimas negautas.';
 $string['error:duplicatename'] = 'Pasiekimas su tokiu pavadinimu jau yra sistemoje.';
@@ -378,6 +386,12 @@ $string['imageauthorurl_help'] = 'Jei nurodyta, pasiekimo puslapyje rodoma nuoro
 $string['imagecaption'] = 'Paveiksliuko antraštė';
 $string['imagecaption_help'] = 'Jei nurodyta, pasiekimo puslapyje rodoma vaizdo antraštė.';
 $string['includeauthdetails'] = 'Į pasiekimų talpyklą įtraukti autentifikavimo duomenis';
+$string['includeauthdetails_desc'] = 'Įveskite savo pasiekimų išdavėjo kredencialus, kad prisijungtumėte prie pasiekimų talpyklos paslaugos teikėjo.';
+$string['includeauthdetails_help'] = 'Su kiekvienu į šią pasiekimų talpyklą eksportuojamu pasiekimu siunčia jūsų išdavėjo kredencialus.';
+$string['includeauthdetailscanvas'] = 'Prisijungti prie Canvas Credentials išdavėjo paskyros';
+$string['includeauthdetailscanvas_desc'] = 'Įveskite savo Canvas Credentials duomenis, kad prijungtumėte išdavėjo paskyrą.';
+$string['includeauthdetailscanvas_help'] = 'Į Canvas Credentials eksportuoti pasiekimai rodys jūsų organizaciją kaip išdavėją. Taip pat galėsite stebėti, kas gavo pasiekimus, ir tvarkyti atnaujinimus.';
+$string['includeauthdetailscanvas_subtitle'] = '(Reikalingas mokamas Canvas Credentials planas)';
 $string['invalidurl'] = 'Neteisingas URL';
 $string['issuancedetails'] = 'Pasiekimo galiojimas';
 $string['issuedbadge'] = 'Skirto pasiekimo informacija';
@@ -414,16 +428,19 @@ $string['messagebody'] = '<p>Jums skirtas pasiekimas „%badgename%“!</p>
 <p>Daugiau informacijos apie šį pasiekimą galima rasti pasiekimo aprašymo puslapyje %badgelink%.</p>
 <p>Jūs galite savo pasiekimus valdyti bei parsisiųsti iš šio puslapio: {$a}</p>';
 $string['messagesubject'] = 'Sveikiname! Jūs uždirbote pasiekimą!';
-$string['method'] = 'Šis kriterijus yra įvykdytas kai...';
+$string['method'] = 'Šis kriterijus yra įvykdytas, kai...';
 $string['mingrade'] = 'Reikalaujamas minimalus įvertinimas';
 $string['month'] = 'Mėnuo (-siai)';
 $string['moredetails'] = 'Daugiau informacijos';
 $string['mybackpack'] = 'Mano saugyklos nuostatos';
 $string['mybadges'] = 'Mano pasiekimai';
+$string['namewithimagelink'] = 'Pavadinimas su paveikslėliu ir nuoroda';
 $string['namewithlink'] = 'Pavadinimas su nuoroda';
 $string['never'] = 'Niekada';
 $string['newbackpack'] = 'Pridėti naują pasiekimų talpyklą';
 $string['newbadge'] = 'Pridėti naują pasiekimą';
+$string['newbadgedeprecated'] = 'Buvote peradresuoti iš badges/newbadge.php. Atkreipkite dėmesį, kad badges/newbadge.php artimiausiu metu bus pašalintas.
+<br/>Atnaujinkite nuorodas ir žymeles, kad būtų naudojamas dabartinis puslapis badges/edit.php.';
 $string['newimage'] = 'Naujas paveikslėlis';
 $string['noalignment'] = 'Šis pasiekimas nenurodo jokių išorinių įgūdžių ar standartų.';
 $string['noawards'] = 'Šis pasiekimas dar neuždirbtas';
@@ -437,9 +454,10 @@ $string['nocriteria'] = 'Šiam pasiekimui dar nenustatyti kriterijai.';
 $string['noendorsement'] = 'Šis pasiekimas neturi patvirtinimo.';
 $string['noexpiry'] = 'Šis pasiekimas neturi nustatyto galiojimo laiko.';
 $string['nomatchingawards'] = 'Dar nėra šį pasiekimą gavusių dalyvių.';
+$string['nomatchingbadges'] = 'Nėra atitinkančių pasiekimų, kuriuos naudotojai galėtų gauti.';
 $string['noparamstoadd'] = 'Šiam pasiekimo reikalavimui nėra papildomų parametrų.';
 $string['norelated'] = 'Šis pasiekimas neturi jokių susijusių pasiekimų.';
-$string['notacceptedrole'] = 'Jūsų turimas vaidmuo neleidžia pačiam suteikti šį pasiekimą. <br/>
+$string['notacceptedrole'] = 'Jūsų turimas vaidmuo neleidžia pačiam suteikti šio pasiekimo. <br/>
 Jei Jūs norite pamatyti vartotojus, kurie jau gavo šį pasiekimą, peržiūrėkite juos šiame {$a} puslapyje.';
 $string['notconnected'] = 'Neprisijungta';
 $string['notealignment'] = 'Gali būti nurodyti išoriniai įgūdžiai ar standartai, kuriuos pasiekimas atitinka. Visi išoriniai įgūdžiai ar standartai rodomi pasiekimo puslapyje.';
@@ -470,6 +488,7 @@ $string['openbadgesv1'] = 'Open Badges v1.0';
 $string['openbadgesv2'] = 'Open Badges v2.0';
 $string['openbadgesv2p1'] = 'Open Badges v2.1';
 $string['othernavigation'] = 'Kita navigacija...';
+$string['otherprovider'] = 'Kita';
 $string['overallcrit'] = 'iš pasirinktų kriterijų yra įvykdyti.';
 $string['password_required'] = 'Slaptažodžio laukas negali būti tuščias';
 $string['potentialrecipients'] = 'Tikėtini pasiekimo gavėjai';
@@ -508,9 +527,11 @@ $string['privacy:metadata:manualaward:datemet'] = 'Data, kada naudotojui buvo su
 $string['privacy:metadata:manualaward:issuerid'] = 'Pasiekimą suteikusio naudotojo ID';
 $string['privacy:metadata:manualaward:issuerrole'] = 'Pasiekimą suteikiančio naudotojo vaidmuo';
 $string['privacy:metadata:manualaward:recipientid'] = 'Naudotojo, kuriam rankiniu būdu suteiktas pasiekimas, ID';
+$string['provider'] = 'Paslaugos teikėjas';
 $string['recipient'] = 'Pasiekimo gavėjas';
 $string['recipients'] = 'Pasiekimo gavėjai';
 $string['recipientvalidationproblem'] = 'Šis naudotojas negali būti patikrintas kaip šio pasiekimo gavėjas.';
+$string['region'] = 'Regionas';
 $string['relatedbages'] = 'Susiję pasiekimai';
 $string['relative'] = 'Santykinė data';
 $string['requiredbadge'] = 'Prie pasiekimo kriterijaus reikia pridėti bent vieną pasiekimą.';
@@ -520,7 +541,7 @@ $string['requiredcourse'] = 'Į kursų rinkinio kriterijų turi būti įtrauktas
 $string['reviewbadge'] = 'Pasiekimo pasiekiamumo pasikeitimai';
 $string['reviewconfirm'] = '<p>Tai padarys Jūsų sukurtą pasiekimą matomą naudotojams ir leis jiems jį uždirbti. </p>
 
-<p>Įmanoma, kad kai kurie naudotojai jau atitinka šio pasiekimo kriterijus ir jį gaus iškart po to kai Jūs jį įgalinsite.</p>
+<p>Įmanoma, kad kai kurie naudotojai jau atitinka šio pasiekimo kriterijus ir jį gaus iškart po to, kai Jūs jį įgalinsite.</p>
 
 <p>Kai pasiekimas bus suteiktas, jis bus <strong>užrakintas</strong> - kai kurie nustatymai, įskaitant kriterijus ir galiojimo laiką, bus nebekeičiami.</p>
 
@@ -592,4 +613,5 @@ $string['version_help'] = 'Versijos laukas gali būti naudojamas norint sekti pa
 $string['viewbadge'] = 'Peržiūrėti skirtą pasiekimą';
 $string['visible'] = 'Matomas';
 $string['warnexpired'] = '(Šis pasiekimas baigė galioti!)';
+$string['wrongrole'] = 'Vaidmuo, kurį norite naudoti, jums nepriskirtas.';
 $string['year'] = 'Metai (-ų)';

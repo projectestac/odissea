@@ -27,6 +27,16 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['button_fontsize'] = 'Letra-tamaina';
 $string['fontsize:use'] = 'Baimendu plugina erabiltzea';
+$string['fontsizes'] = 'Letra-tamaina';
+$string['fontsizes_desc'] = 'Eskuragarri dauden letra-tamainen zerrenda, bakoitza lerro berri batean bereizita.';
+$string['fontsizeunit'] = 'Letra-tamainaren unitatea';
+$string['fontsizeunit_desc'] = 'Letra-tamaina bakoitzari aplikatutako CSS unitatea.';
 $string['menuitem_fontsize'] = 'Letra-tamaina';
 $string['pluginname'] = 'Letra-tamaina plugina';
 $string['privacy:metadata'] = 'Letra-tamaina pluginak ez du datu pertsonalik biltzen.';
+$string['settings'] = 'Letra-tamainaren ezarpenak';
+$string['unit_em'] = 'Em (em)';
+$string['unit_percent'] = 'Ehunekoa (%)';
+$string['unit_pt'] = 'Puntuak (pt)';
+$string['unit_px'] = 'Pixelak (px)';
+$string['unit_rem'] = 'Root em (rem)';

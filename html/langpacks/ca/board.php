@@ -51,6 +51,7 @@ $string['aria_choosefileedit'] = 'Selecciona el fitxer per a l\'entrada {post} d
 $string['aria_choosefilenew'] = 'Selecciona el fitxer per a la nova entrada de la columna {column}';
 $string['aria_column_locked'] = 'S\'ha bloquejat la columna {$a}';
 $string['aria_column_unlocked'] = 'S\'ha desbloquejat la columna {$a}';
+$string['aria_commentcount'] = 'Mostra els comentaris';
 $string['aria_deleteattachment'] = 'Suprimeix l\'adjunt de l\'entrada {post} de la columna {column}';
 $string['aria_deletecolumn'] = 'Suprimeix la columna {column}';
 $string['aria_deletepost'] = 'Suprimeix l\'entrada {post} de la columna {column}';
@@ -174,6 +175,12 @@ $string['media_selection'] = 'Selecció del multimèdia';
 $string['media_selection_buttons'] = 'Botons';
 $string['media_selection_desc'] = 'Configureu com es mostrarà la selecció de multimèdia a les entrades.';
 $string['media_selection_dropdown'] = 'Desplegable';
+$string['messageprovider:comment_added'] = 'Confirmació d\'un comentari nou a la vostra publicació del tauler';
+$string['messageprovider:contexturlname'] = 'Publicació del tauler aquí';
+$string['messageprovider:fullmessage'] = 'S\'ha afegit un comentari nou a la vostra publicació del tauler «{$a->noteheading}» a «{$a->boardname}».';
+$string['messageprovider:fullmessagehtml'] = '<p>S\'ha afegit un comentari nou a la vostra publicació del tauler «{$a->noteheading}» a «{$a->boardname}».</p>';
+$string['messageprovider:smallmessage'] = 'S\'ha afegit un comentari nou a la vostra publicació del tauler «{$a->noteheading}» a «{$a->boardname}».';
+$string['messageprovider:subject'] = 'Comentari afegit a la vostra publicació del tauler';
 $string['modal_title_edit'] = 'Editeu l\'entrada per a la columna {column}';
 $string['modal_title_new'] = 'Entrada nova per a la columna {column}';
 $string['modulename'] = 'Tauler';
@@ -195,6 +202,7 @@ Els taulers es poden utilitzar:
 * Com a contingut de proveïment participatiu (crowdsourcing).
 * Com a pissarres de debat.
 * Per al retorn del professor sobre les sessions.';
+$string['modulename_summary'] = 'Permet als estudiants compartir idees i continguts de manera anònima mitjançant publicacions interactives, com ara text, imatges, enllaços i vídeos.';
 $string['modulenameplural'] = 'Taulers';
 $string['move_column_to_aftercolumn'] = 'Mou la columna després de la columna {$a}';
 $string['move_column_to_firstplace'] = 'Mou la columna al primer lloc';

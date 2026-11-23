@@ -52,6 +52,6 @@ $string['redactor:exifremover:removetags_desc'] = 'EXIF žymos, kurias reikia pa
 $string['redactor:exifremover:tag:all'] = 'Visi';
 $string['redactor:exifremover:tag:gps'] = 'Tik GPS';
 $string['redactor:exifremover:tooldoesnotexist'] = 'Redaguoti nepavyko: ExifTool neegzistuoja!';
-$string['redactor:exifremover:toolpath'] = 'Kelias į „ExifTool';
+$string['redactor:exifremover:toolpath'] = 'Kelias į „ExifTool“';
 $string['redactor:exifremover:toolpath_desc'] = 'Norėdami naudoti „ExifTool“, nurodykite „ExifTool“ vykdomosios programos kelią.
 Paprastai „Unix/Linux“ sistemose kelias yra /usr/bin/exiftool.';

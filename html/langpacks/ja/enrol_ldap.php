@@ -126,7 +126,7 @@ $string['unassignrole'] = 'コース 「{$a->course_shortname} (id {$a->course_i
 $string['unassignrolefailed'] = 'コース 「{$a->course_shortname} (id {$a->course_id}) 」のユーザ「 {$a->user_username} 」のロール「 {$a->role_shortname} 」の割り当て解除に失敗しました。';
 $string['unassignroleid'] = 'ロールID「 {$a->role_id} 」をユーザID「 {$a->user_id} 」から割り当て解除';
 $string['updatelocal'] = 'ローカルデータを更新する';
-$string['user_attribute'] = 'グループメンバシップに識別名が含まれている場合、name/searchユーザに使用される属性を指定してください。あなたがLDAP認証を使用している場合、この値はLDAP認証プラグインの「IDナンバ」マッピングで指定されている属性と合致する必要があります。';
+$string['user_attribute'] = 'グループメンバシップに識別名が含まれている場合、name/searchユーザに使用される属性を指定してください。あなたがLDAP認証を使用している場合、この値はLDAP認証プラグインの「IDナンバ」マッピングで指定されている属性と一致する必要があります。';
 $string['user_attribute_key'] = 'IDナンバ属性';
 $string['user_contexts'] = 'グループメンバシップに識別名が含まれている場合、ユーザが配置されているコンテクスト一覧を指定してください。異なるコンテクストはセミコロン「;」で分離します。例えば次のようになります: ou=users,o=org; ou=others,o=org';
 $string['user_contexts_key'] = 'コンテクスト';

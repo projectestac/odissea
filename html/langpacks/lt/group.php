@@ -72,7 +72,7 @@ Pastaba: registracijos raktas grupei turi būti aktyvuota parinktis savarankišk
 $string['enrolmentkeyalreadyinuse'] = 'Šis įsirašymo raktas jau naudojamas kitai grupei.';
 $string['erroraddremoveuser'] = 'Įvyko klaida įtraukiant/šalinant naudotoją {$a} į grupę';
 $string['erroraddtogroup'] = 'Netinkama addtogroup reikšmė. Tai turėtų būti 0, jei nėra grupės režimo, arba 1, kad būtų sukurta nauja grupė.';
-$string['erroraddtogroupgroupname'] = 'Negalite nurodyti groupname, kai nustatyta addtogroup .';
+$string['erroraddtogroupgroupname'] = 'Negalite nurodyti groupname, kai nustatyta addtogroup.';
 $string['erroreditgroup'] = 'Įvyko klaida kuriant / atnaujinat grupę {$a}';
 $string['erroreditgrouping'] = 'Įvyko klaida kuriant / atnaujinat grupavimą {$a}';
 $string['errorinvalidgroup'] = 'Įvyko klaida, neleistina grupė {$a}';

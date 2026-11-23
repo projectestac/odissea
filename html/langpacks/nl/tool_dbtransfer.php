@@ -43,4 +43,4 @@ $string['targetdatabasenotempty'] = 'Doeldatabank mag geen tabellen bevatten met
 $string['transferdata'] = 'Transfer gegevens';
 $string['transferdbintro'] = 'Dit script zal de inhoud van de databank naar een andere databank-server transfereren. Dit wordt gebruikt voor het migreren van data naar een ander type databank.';
 $string['transferdbtoserver'] = 'Verhuis deze Moodle-databank naar een andere server';
-$string['transferringdbto'] = 'Deze databank aan het verhuizen naar een  {$a->dbtype} -databank met als naam {$a->dbname} op server {$a->dbhost}';
+$string['transferringdbto'] = 'Deze databank aan het verhuizen naar een  {$a->dbtypefrom} -databank met als naam {$a->dbname} op server {$a->dbhost}';

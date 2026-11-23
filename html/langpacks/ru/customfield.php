@@ -29,6 +29,7 @@ $string['action'] = 'Действие';
 $string['addingnewcustomfield'] = 'Добавление нового поля {$a}';
 $string['addnewcategory'] = 'Добавить новую категорию';
 $string['afterfield'] = 'После поля {$a}';
+$string['categoryadded'] = 'Категория успешно добавлена.';
 $string['categorynotfound'] = 'Категория не найдена';
 $string['checked'] = 'Проверено';
 $string['commonsettings'] = 'Общие';

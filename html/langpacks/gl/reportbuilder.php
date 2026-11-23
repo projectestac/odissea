@@ -114,6 +114,7 @@ $string['editscheduledetails'] = 'Editar detalles da programación';
 $string['editschedulename'] = 'Editar o nome da programación';
 $string['enablecustomreports'] = 'Activar os informes personalizados';
 $string['enablecustomreports_desc'] = 'Se está activado, os usuarios poden crear e ver informes personalizados do construtor de informes.';
+$string['enabled'] = 'Activado';
 $string['enableschedule'] = 'Activar a programación';
 $string['entitycourse'] = 'Curso';
 $string['entityuser'] = 'Usuario';

@@ -172,7 +172,22 @@ class format_option {
         $cache = \cache::make('format_tiles', 'formatoptions');
         $cachekey = $courseid . "_" . $optiontype . "_" . $elementid;
         $cachedvalue = $cache->get($cachekey);
+        // XTEC ************ MODIFICAT - Reload caches from db when the element ID is cached but its value is not
+        // (e.g. the formatoptions cache was evicted by Redis). Otherwise the tile photo disappears until caches are purged.
+        // 2026.11.12 @aginard
+        if ($cachedvalue === false) {
+            $cachedvalueids = self::fill_caches($courseid, $optiontype);
+            if (!in_array($elementid, $cachedvalueids)) {
+                return null;
+            }
+            $cachedvalue = $cache->get($cachekey);
+        }
+        return $cachedvalue === false ? null : $cachedvalue;
+        // ************ ORIGINAL
+        /*
         return $cachedvalue ?? null;
+        */
+        // ************ FI
     }
 
     /**
@@ -219,6 +234,28 @@ class format_option {
             $cachedvalueids
         );
         $cachedvalues = $cache->get_many($cachekeys);
+        // XTEC ************ AFEGIT - Reload caches from db when some element IDs are cached but their values are not
+        // (e.g. the formatoptions cache was evicted by Redis). Otherwise the tile photos disappear until caches are purged.
+        // 2026.11.12 @aginard
+        if ($cachedvalues && in_array(false, $cachedvalues, true)) {
+            $cachedvalueids = self::fill_caches($courseid, $optiontype);
+            if (empty($cachedvalueids)) {
+                return [];
+            }
+            $cachekeys = array_map(
+                function ($cacheid) use ($keyprefix) {
+                    return $keyprefix . "_" . $cacheid;
+                },
+                $cachedvalueids
+            );
+            $cachedvalues = array_filter(
+                $cache->get_many($cachekeys),
+                function ($value) {
+                    return $value !== false;
+                }
+            );
+        }
+        // ************ FI
         if (!$cachedvalues) {
             return [];
         }

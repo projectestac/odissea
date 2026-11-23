@@ -87,6 +87,15 @@ class board {
     const MEDIATYPE_FILE = 4;
 
     /**
+     * Capabilities that allow a user to move, edit or delete notes posted by other users.
+     *
+     * mod/board:manageboard also manages columns, mod/board:managenotes manages only notes.
+     *
+     * @var string[]
+     */
+    const MANAGENOTES_CAPABILITIES = ['mod/board:manageboard', 'mod/board:managenotes'];
+
+    /**
      * Retrieves the course module for the board
      *
      * @param stdClass $board

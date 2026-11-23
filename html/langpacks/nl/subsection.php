@@ -27,10 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['modulename'] = 'Subsectie';
 $string['modulenameplural'] = 'Subsecties';
-$string['pluginadministration'] = 'Beheer subsecties';
+$string['pluginadministration'] = 'Beheer van subsecties';
 $string['pluginname'] = 'Subsectie';
 $string['privacy:metadata'] = 'Subsectie slaat geen persoonsgegevens op';
 $string['quickcreatename'] = 'Nieuwe subsectie';
-$string['subsection:addinstance'] = 'Voeg subsectie toe';
-$string['subsection:view'] = 'Bekijk subsectie';
+$string['subsection:addinstance'] = 'Subsectie toevoegen';
+$string['subsection:view'] = 'Subsectie bekijken';
 $string['subsectionname'] = 'Naam';

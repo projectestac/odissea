@@ -45,9 +45,9 @@ $string['exiturl_help'] = 'Ceci est l’URL qui apparaît lorsque les étudiants
 Pour activer cette redirection, il suffit d’associer la dernière activité, dans l’onglet Séquences, à l’action "Exit JClic" dans la section Forward arrow.';
 $string['expired'] = 'Désolé, cette activité est terminée depuis {$a} et n’est plus disponible';
 $string['filetype'] = 'Type';
-$string['filetype_help'] = 'Ce paramètre détermine comment l’activité JClic est inclus dans le cours. Il y a jusqu’à 2 options:
+$string['filetype_help'] = 'Ce paramètre détermine comment l’activité JClic est incluse dans le cours. Il y a jusqu’à 2 options :
 
-* Fichier JClic externe - Une archive valide  de type ".jclic.zip" peut être choisi à travers le sélecteur de fichiers.
+* Fichier JClic externe - Une archive valide de type ".jclic.zip" peut être choisi à travers le sélecteur de fichiers.
 * URL externe - Une URL à préciser. Remarque : l’URL doit commencer par "http(s)" ou www et contenir une archive ".jclic.zip" valide.';
 $string['filetypeexternal'] = 'URL externe';
 $string['filetypelocal'] = 'Fichier JClic externe';

@@ -88,7 +88,6 @@ $string['pluginnameadding'] = 'ギャップフィル問題を追加する';
 $string['pluginnameediting'] = 'ギャップフィルを編集する';
 $string['pluginnamesummary'] = 'ギャップスタイル問題の解答を入力します。不正解の選択肢をドラッグ&ドロップまたはドロップダウンで選択できます。構文は簡単に学べます。';
 $string['privacy:null_reason'] = 'ギャップフィル問題タイプはいかなるデータにも影響を及ぼしません。また、いかなるデータも保存しません。';
-$string['questioncatnotfound'] = '問題カテゴリが見つかりませんでした。<a href={$a}>ここをクリック</a>して初期化した後、ブラウザの戻るボタンをクリックしてください。';
 $string['questionsmissing'] = 'あなたの問題テキストにはフィールドが含まれていません。';
 $string['questiontext'] = '問題テキスト';
 $string['questiontext_help'] = '文字の周りにテキストとなるデリミタを置いてください。';

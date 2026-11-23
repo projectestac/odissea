@@ -32,6 +32,7 @@ $string['equellaaction'] = 'EQUELLA veiksmas';
 $string['equellaoptions'] = 'EQUELLA parinktys';
 $string['equellaurl'] = 'EQUELLA URL';
 $string['equellauserfield'] = 'EQUELLA naudotojo laukas';
+$string['equellauserfield_help'] = 'Pasirinkite naudotojo lauką, pagal kurį bus susiejamas EQUELLA naudotojas. (Rodomi tik trumpojo teksto tipo naudotojo laukai.)';
 $string['equellausername'] = 'Naudotojo vardas';
 $string['group'] = '{$a} vaidmens nuostatos';
 $string['groupdefault'] = 'Numatytasis';

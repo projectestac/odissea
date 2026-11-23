@@ -23,7 +23,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 defined('MOODLE_INTERNAL') || die;
-require_once($CFG->dirroot . '/blocks/configurable_reports/plugin.class.php');
+require_once($CFG->dirroot . '/blocks/configurable_reports/filter.class.php');
 
 /**
  * Class plugin_enrolledstudents
@@ -31,7 +31,7 @@ require_once($CFG->dirroot . '/blocks/configurable_reports/plugin.class.php');
  * @package   block_configurable_reports
  * @author    Juan leyva <http://www.twitter.com/jleyvadelgado>
  */
-class plugin_enrolledstudents extends plugin_base {
+class plugin_enrolledstudents extends filter_base {
 
     /**
      * Init
@@ -68,7 +68,7 @@ class plugin_enrolledstudents extends plugin_base {
         }
 
         if ($this->report->type !== 'sql') {
-            return [$filterenrolledstudents];
+            return $this->narrow_to((array) $finalelements, $filterenrolledstudents);
         }
 
         if (preg_match("/%%FILTER_COURSEENROLLEDSTUDENTS:([^%]+)%%/i", $finalelements, $output)) {
@@ -78,6 +78,24 @@ class plugin_enrolledstudents extends plugin_base {
         }
 
         return $finalelements;
+    }
+
+    #[\Override]
+    function execute_for_sql_report(string $sql, ?\stdClass $data = null): array {
+        $filterenrolledstudents = optional_param('filter_enrolledstudents', 0, PARAM_INT);
+        if (!$filterenrolledstudents) {
+            return [$sql, []];
+        }
+
+        $params = [];
+
+        if (preg_match("/%%FILTER_COURSEENROLLEDSTUDENTS:([^%]+)%%/i", $sql, $output)) {
+            $replace = ' AND ' . $output[1] . ' = :filterenrolledstudents';
+            $sql = str_replace('%%FILTER_COURSEENROLLEDSTUDENTS:' . $output[1] . '%%', $replace, $sql);
+            $params['filterenrolledstudents'] = $filterenrolledstudents;
+        }
+
+        return [$sql, $params];
     }
 
     /**
@@ -124,13 +142,8 @@ class plugin_enrolledstudents extends plugin_base {
                 $nameformat = get_string('fullnamedisplay');
             }
 
-            if (class_exists('\core_user\fields')) {
-                $namesArray = \core_user\fields::get_name_fields();
-                $allnames = \core_user\fields::for_name()->get_sql('', false, '', '', false)->selects;
-            } else {
-                $namesArray = get_all_user_name_fields();
-                $allnames = get_all_user_name_fields(true);
-            }
+            $namesArray = \core_user\fields::get_name_fields();
+            $allnames = \core_user\fields::for_name()->get_sql('', false, '', '', false)->selects;
             $sort = implode(',', order_in_string($namesArray, $nameformat));
 
             [$usql, $params] = $remotedb->get_in_or_equal($enrolledstudentslist);

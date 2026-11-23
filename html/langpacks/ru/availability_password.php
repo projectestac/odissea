@@ -37,7 +37,6 @@ $string['pluginname'] = 'Ограничение по паролю';
 $string['privacy:metadata:availability_password_grant'] = 'Информация по всем пользователям, которые корректно ввели пароль для данного элемента курса.';
 $string['privacy:metadata:availability_password_grant:cmid'] = 'ID модуля курса, для которого был введён пароль.';
 $string['privacy:metadata:availability_password_grant:courseid'] = 'ID курса, где был введён пароль.';
-$string['privacy:metadata:availability_password_grant:password'] = 'Введённый пароль.';
 $string['privacy:metadata:availability_password_grant:userid'] = 'ID пользователя, введшего пароль.';
 $string['rememberpassword'] = 'Запомнить введённый пароль';
 $string['requires_nopassword'] = 'Вы не ввели корректный пароль';

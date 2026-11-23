@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['add'] = 'Įtraukti';
 $string['addcaptionstrack'] = 'Įtraukti antraštės takelį';
-$string['addchapterstrack'] = 'Įtraukti skyrio takelį';
+$string['addchapterstrack'] = 'Įtraukti skyrių takelį';
 $string['adddescriptionstrack'] = 'Įtraukti aprašymo takelį';
 $string['addmetadatatrack'] = 'Įtraukti metaduomenų takelį';
 $string['addsource'] = 'Įtraukti alternatyvų šaltinį';

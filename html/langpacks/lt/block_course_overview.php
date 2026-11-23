@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['activityoverview'] = 'Jūs turite {$a}, kuriems reikia dėmesio';
 $string['addfavourite'] = 'Pridėti prie mėgstamiausių';
 $string['alwaysshowall'] = 'Visada rodyti viską';
-$string['collapseall'] = 'Sutraukti Visų Kursų Sarašus';
+$string['collapseall'] = 'Sutraukti visus kursų sąrašus';
 $string['configotherexpanded'] = 'Jei įjungta, pagal nutylėjimą kiti kursai bus išskleisti, išskyrus keitimus naudotojo nuostatose.';
 $string['configpreservestates'] = 'Jei įjungta, naudotojo nustatyta būsena sutraukti/išskleisti yra išsaugoma ir naudojama kiekvienoje apkrovoje.';
 $string['course_overview:addinstance'] = 'Pridėti naują "Kurso apžvalgos" bloką';
@@ -36,7 +36,7 @@ $string['course_overview:myaddinstance'] = 'Pridėti naują "Kurso apžvalgos" b
 $string['courses'] = 'Kursai';
 $string['defaulttab'] = 'Numatytasis skirtukas';
 $string['defaulttabdesc'] = 'Kuris skirtukas bus rodomas pagal numatytuosius nustatymus atvėrus „Mano pagrindinis“ puslapį';
-$string['expandall'] = 'Išskleisti Visų Kursų Sarašus';
+$string['expandall'] = 'Išskleisti visus kursų sąrašus';
 $string['favourites'] = 'Mėgstamiausi';
 $string['fullpath'] = 'Visos kategorijos ir subkategorijos';
 $string['help'] = 'Pagalba';

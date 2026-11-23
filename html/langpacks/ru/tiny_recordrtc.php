@@ -38,6 +38,7 @@ $string['audiotimelimit_desc'] = 'Максимальная длина запис
 $string['audiotitle'] = 'Запись аудио';
 $string['confirm_yes'] = 'Да';
 $string['discard_desc'] = 'Идет запись. Вы хотите остановить запись?';
+$string['discard_title'] = 'Подтверждение закрытия';
 $string['gumabort'] = 'Произошло что-то странное, что не даёт использовать веб-камеру/микрофон/экран.';
 $string['gumabort_title'] = 'Что-то произошло';
 $string['gumnotallowed'] = 'Необходимо разрешить браузеру доступ к веб-камере/микрофону/экрану.';

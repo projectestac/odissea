@@ -92,7 +92,7 @@ $string['filter_date_account_creation'] = '次の期間以内のユーザアカ�
 $string['filter_date_first_login'] = '次の期間以内のユーザ初回アクセス日';
 $string['filter_date_last_login'] = '次の期間以内のユーザ最新アクセス日';
 $string['filter_header'] = 'ツアーフィルタ';
-$string['filter_help'] = 'ツアーが表示されるコンディションを選択してください。ツアーをユーザに表示するためにはフィルタすべてに合致する必要があります。';
+$string['filter_help'] = 'ツアーが表示されるコンディションを選択してください。ツアーをユーザに表示するためにはフィルタすべてに一致する必要があります。';
 $string['filter_role'] = 'ロール';
 $string['filter_role_help'] = 'ツアー表示時にコンテクスト内の選択されたロールにユーザを制限できます。例えば一般的にコース内で学生ロールが割り当てられたユーザには学生ロールのユーザに制限されたダッシュボードツアーは動作しません。ダッシュボードツアーはシステムロールのユーザにのみ制限できます。';
 $string['filter_theme'] = 'テーマ';
@@ -118,16 +118,16 @@ $string['nextstep_sequence'] = '次 ({$a->position}/{$a->total})';
 $string['options_heading'] = 'オプション';
 $string['orphan'] = 'ターゲットが見つからない場合に表示する';
 $string['orphan_help'] = 'ページ上にターゲットが見つからない場合にステップを表示します。';
-$string['pathmatch'] = 'URL合致を適用する';
-$string['pathmatch_help'] = 'この値に合致するURLのページ上にツアーが表示されます。
+$string['pathmatch'] = 'URL一致を適用する';
+$string['pathmatch_help'] = 'この値に一致するURLのページ上にツアーが表示されます。
 
 あなたはすべてを意味するワイルドカードとして「%」文字を使用できます。
 例として以下の値を含みます:
 
-* /my/% - ダッシュボードに合致します。
-* /course/view.php?id=2 - 特定のコースに合致します。
-* /mod/forum/view.php% - フォーラムディスカッション一覧に合致します。
-* /user/profile.php% - ユーザプロファイルページに合致します。
+* /my/% - ダッシュボードに一致します。
+* /course/view.php?id=2 - 特定のコースに一致します。
+* /mod/forum/view.php% - フォーラムディスカッション一覧に一致します。
+* /user/profile.php% - ユーザプロファイルページに一致します。
 
 あなたがツアーをサイトホームに表示したい場合、次の値を使用できます:  FRONTPAGE';
 $string['pausetour'] = '一時停止';
@@ -147,7 +147,7 @@ $string['resumetour'] = '再開';
 $string['right'] = '右';
 $string['select_block'] = 'ブロックを選択する';
 $string['selector_defaulttitle'] = '記述的なタイトルを入力してください。';
-$string['selectordisplayname'] = 'CSSセレクタ合致「 {$a} 」';
+$string['selectordisplayname'] = 'CSSセレクタ一致「 {$a} 」';
 $string['selecttype'] = 'ステップタイプを選択する';
 $string['sharedtourslink'] = 'ツアーリポジトリ';
 $string['showtoureachtime'] = 'フィルタが一致するたびに';

@@ -143,7 +143,7 @@ $string['nopublicationsincourse'] = 'In diesem Kurs gibt es keinen Studierendeno
 $string['nothing_to_show_groups'] = 'Nichts anzuzeigen - keine Gruppen vorhanden';
 $string['nothing_to_show_users'] = 'Nichts anzuzeigen - keine Teilnehmer/innen vorhanden';
 $string['nothingtodisplay'] = 'Keine Einträge';
-$string['notice'] = '<strong>Hinweis: </strong>';
+$string['notice'] = '<i class="fa fa-circle-info"></i> <strong>Hinweis</strong><br>';
 $string['notice_changes_possible_in_original'] = 'Änderungen an vorhandenen Dateien sind ausschließlich in der ursprünglichen Aufgabenaktivität möglich.';
 $string['notice_files_imported'] = 'Angezeigte Dateien werden aus einer Aufgabenaktivität importiert.';
 $string['notice_files_imported_group'] = 'Angezeigte Dateien stammen aus einer Gruppeneinreichung, importiert aus einer Aufgabenaktivität.';

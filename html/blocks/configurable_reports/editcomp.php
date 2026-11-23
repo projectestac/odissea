@@ -32,17 +32,13 @@ require_once($CFG->dirroot . '/blocks/configurable_reports/plugin.class.php');
 
 $id = required_param('id', PARAM_INT);
 $comp = required_param('comp', PARAM_ALPHA);
-$courseid = optional_param('courseid', null, PARAM_INT);
 
 if (!$report = $DB->get_record('block_configurable_reports', ['id' => $id])) {
     throw new moodle_exception('reportdoesnotexists');
 }
 
-// Ignore report's courseid, If we are running this report on a specific courseid
-// (For permission checks).
-if (empty($courseid)) {
-    $courseid = $report->courseid;
-}
+// Permissions must always be checked in the report's own course.
+$courseid = $report->courseid;
 
 if (!$course = $DB->get_record("course", ['id' => $courseid])) {
     throw new moodle_exception("No such course id");
@@ -65,15 +61,15 @@ $PAGE->requires->js('/blocks/configurable_reports/js/configurable_reports.js');
 
 $hasreportscap = has_capability('block/configurable_reports:managereports', $context);
 if (!$hasreportscap && !has_capability('block/configurable_reports:manageownreports', $context)) {
-    throw new moodle_exception('badpermissions');
+    throw new moodle_exception('badpermissions', 'block_configurable_reports');
 }
 
 if (!$hasreportscap && $report->ownerid != $USER->id) {
-    throw new moodle_exception('badpermissions');
+    throw new moodle_exception('badpermissions', 'block_configurable_reports');
 }
 
 if ($report->type === 'sql' && !block_configurable_reports_can_managesqlreports($context)) {
-    throw new moodle_exception('nosqlpermissions');
+    throw new moodle_exception('nosqlpermissions', 'block_configurable_reports');
 }
 
 require_once($CFG->dirroot . '/blocks/configurable_reports/reports/' . $report->type . '/report.class.php');
@@ -104,6 +100,8 @@ if ($compclass->form) {
         redirect($CFG->wwwroot . '/blocks/configurable_reports/editcomp.php?id=' . $id . '&amp;comp=' . $comp);
     } else if ($data = $editform->get_data()) {
         $compclass->form_process_data($editform);
+        $updatedreport = $DB->get_record('block_configurable_reports', ['id' => $report->id]);
+        \block_configurable_reports\event\report_updated::create_from_report($updatedreport, null, ['component' => $comp])->trigger();
     }
 
     $compclass->form_set_data($editform);
@@ -158,41 +156,32 @@ if ($elements) {
             continue;
         }
 
-        require_once($CFG->dirroot . '/blocks/configurable_reports/components/' . $comp . '/' . $e['pluginname'] .
-            '/plugin.class.php');
-        $pluginclassname = 'plugin_' . $e['pluginname'];
+        $pluginclassname = cr_require_component_plugin($comp, $e['pluginname']);
         $pluginclass = new $pluginclassname($report);
 
         $editcell = '';
+        // Element ids of imported reports are not checked, so let moodle_url encode them.
+        $params = ['id' => $id, 'comp' => $comp, 'pname' => $e['pluginname'], 'cid' => $e['id']];
 
         if ($pluginclass->form) {
-            $editcell .= '<a href="editplugin.php?id=' . $id . '&comp=' . $comp . '&pname=' . $e['pluginname'] . '&cid=' .
-                $e['id'] . '">' .
-                $OUTPUT->pix_icon('t/edit', get_string('edit')) .
-                '</a>';
+            $editcell .= html_writer::link(new moodle_url('/blocks/configurable_reports/editplugin.php', $params),
+                $OUTPUT->pix_icon('t/edit', get_string('edit')));
         }
 
-        $editcell .= '<a href="editplugin.php?id=' . $id . '&comp=' . $comp . '&pname=' . $e['pluginname'] .
-            '&cid=' . $e['id'] . '&delete=1&amp;sesskey=' . sesskey() . '">' .
-            $OUTPUT->pix_icon('t/delete', get_string('delete')) .
-            '</a>';
+        $actionparams = $params + ['sesskey' => sesskey()];
+        $editcell .= html_writer::link(new moodle_url('/blocks/configurable_reports/editplugin.php',
+            $actionparams + ['delete' => 1]), $OUTPUT->pix_icon('t/delete', get_string('delete')));
 
         if ($compclass->ordering && $i != 0 && count($elements) > 1) {
-            $editcell .= '<a href="editplugin.php?id=' . $id . '&comp=' . $comp . '&pname=' . $e['pluginname'] . '&cid=' .
-                $e['id'] .
-                '&moveup=1&amp;sesskey=' . sesskey() . '">' .
-                $OUTPUT->pix_icon('t/up', get_string('moveup')) .
-                '</a>';
+            $editcell .= html_writer::link(new moodle_url('/blocks/configurable_reports/editplugin.php',
+                $actionparams + ['moveup' => 1]), $OUTPUT->pix_icon('t/up', get_string('moveup')));
         }
         if ($compclass->ordering && $i != count($elements) - 1) {
-            $editcell .= '<a href="editplugin.php?id=' . $id . '&comp=' . $comp . '&pname=' . $e['pluginname'] . '&cid=' .
-                $e['id'] .
-                '&movedown=1&amp;sesskey=' . sesskey() . '">' .
-                $OUTPUT->pix_icon('t/down', get_string('movedown')) .
-                '</a>';
+            $editcell .= html_writer::link(new moodle_url('/blocks/configurable_reports/editplugin.php',
+                $actionparams + ['movedown' => 1]), $OUTPUT->pix_icon('t/down', get_string('movedown')));
         }
 
-        $table->data[] = ['c' . ($i + 1), $e['pluginfullname'], $e['summary'], $editcell];
+        $table->data[] = ['c' . ($i + 1), format_string($e['pluginfullname']), format_string($e['summary']), $editcell];
         $i++;
     }
     cr_print_table($table);
@@ -210,7 +199,7 @@ if ($compclass->plugins) {
 
     echo html_writer::select($optionsplugins, 'plugin', '', ['' => get_string('choose')], $attributes);
     $OUTPUT->add_action_handler(
-        new component_action('change', 'menuplugin', ['url' => "editplugin.php?id=" . $id . "&comp=" . $comp . "&pname="]),
+        new component_action('change', 'menuplugin', ['url' => "editplugin.php?id=" . $id . "&comp=" . $comp . "&sesskey=" . sesskey() . "&pname="]),
         'menuplugin'
     );
     echo '</p>';

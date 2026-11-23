@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['globalsearch:addinstance'] = 'Įtraukti naują visuotinės paieškos bloką';
-$string['globalsearch:myaddinstance'] = 'Įtraukti naują visuotinės paieškos bloką „Mano pagrindinis" puslapyje';
+$string['globalsearch:myaddinstance'] = 'Įtraukti naują visuotinės paieškos bloką „Mano pagrindinis“ puslapyje';
 $string['pluginname'] = 'Visuotinė paieška';
 $string['privacy:metadata'] = 'Visuotinės paieškos blokas rodo tik duomenis, saugomus kitose vietose.';

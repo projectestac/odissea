@@ -148,8 +148,8 @@ $string['allow'] = 'Zulassen';
 $string['allowinternal'] = 'Auch interne Methoden erlauben';
 $string['allownone'] = 'Nichts zulassen';
 $string['allownot'] = 'Nicht zulassen';
-$string['allowstealthmodules'] = 'Verfügbare, aber auf der Kursseite nicht angezeigte Aktivitäten erlauben';
-$string['allowstealthmodules_help'] = 'Mit dieser Option können Aktivitäten verfügbar sein, ohne auf der Kursseite angezeigt zu werden. Ist dies der Fall, muss der Link zur verborgenen Aktivität anders verfügbar gemacht werden, z.B. in einem Textfeld. In der Bewertung und anderen Berichten werden die Aktivitäten weiterhin angezeigt.';
+$string['allowstealthmodules'] = 'Verborgene Aktivitäten erlauben';
+$string['allowstealthmodules_help'] = 'Mit dieser Option können Aktivitäten verfügbar sein, ohne auf der Kursseite angezeigt zu werden. Ist dies der Fall, muss der Link zur verborgenen Aktivität anders verfügbar gemacht werden, z.B. in einem Textfeld. In Bewertungen und Berichten werden verborgene Aktivitäten weiterhin angezeigt.';
 $string['allparticipants'] = 'Alle Teilnehmer/innen';
 $string['allteachers'] = 'Alle Trainer/innen';
 $string['alphanumerical'] = 'Nur Buchstaben, Zahlen, Bindestrich (-) oder Punkt (.) sind möglich';
@@ -483,7 +483,7 @@ $string['coursetitlebulkediting'] = 'Sammelbearbeitung im Kurs: {$a->course}';
 $string['coursetitleediting'] = 'Bearbeitung von Kurs: {$a->course}';
 $string['courseupdates'] = 'Kursaktualisierungen';
 $string['coursevisibility'] = 'Kurssichtbarkeit';
-$string['coursevisibility_help'] = '* Anzeigen: Der Kurs erscheint in der Kursliste und Teilnehmer/innen können darauf zugreifen.
+$string['coursevisibility_help'] = '* Sichtbar machen: Der Kurs erscheint in der Kursliste und Teilnehmer/innen können darauf zugreifen.
 * Verbergen: Der Zugriff ist auf Trainer/innen und Nutzer/innen beschränkt, die das Recht haben, verborgene Kurse anzuzeigen.';
 $string['create'] = 'Erstellen';
 $string['createaccount'] = 'Neues Nutzerkonto anlegen';
@@ -1382,11 +1382,11 @@ $string['modvisible_help'] = '* Auf Kursseite anzeigen: Verfügbar für Teilnehm
 * Auf Kursseite verbergen: Nicht verfügbar für Teilnehmer/innen.';
 $string['modvisiblehiddensection'] = 'Verfügbarkeit';
 $string['modvisiblehiddensection_help'] = '* Auf Kursseite verbergen: Nicht verfügbar für Teilnehmer/innen.
-* Verfügbar, aber auf Kursseite nicht anzeigen: Verfügbar nur für Teilnehmer/innen, die den Link haben. Aktivitäten werden weiterhin in den Bewertungen und in anderen Berichten angezeigt.';
+* Verfügbar, aber auf Kursseite nicht anzeigen: Verfügbar nur für Teilnehmer/innen, die den Link haben. Verborgene Aktivitäten werden weiterhin in Bewertungen und Berichten angezeigt.';
 $string['modvisiblewithstealth'] = 'Verfügbarkeit';
 $string['modvisiblewithstealth_help'] = '* Auf Kursseite anzeigen: Verfügbar für Teilnehmer/innen (vorbehaltlich eventuell festgelegter Zugriffsbeschränkungen).
 * Auf Kursseite verbergen: Nicht verfügbar für Teilnehmer/innen.
-* Verfügbar, aber auf Kursseite nicht anzeigen: Verfügbar nur für Teilnehmer/innen, die den Link haben. Aktivitäten werden weiterhin in den Bewertungen und in anderen Berichten angezeigt.';
+* Verfügbar, aber auf Kursseite nicht anzeigen: Verfügbar nur für Teilnehmer/innen, die den Link haben. Verborgene Aktivitäten werden weiterhin in Bewertungen und Berichten angezeigt.';
 $string['month'] = 'Monat';
 $string['months'] = 'Monate';
 $string['moodledocs'] = 'Dokumentation';
@@ -2390,7 +2390,7 @@ $string['usernameemailmatch'] = 'Anmeldename und E-Mail-Adresse passen nicht zus
 $string['usernameexists'] = 'Der Anmeldename ist bereits vergeben.';
 $string['usernamelowercase'] = 'Es sind ausschließlich Kleinbuchstaben erlaubt.';
 $string['usernamenotfound'] = 'Der Anmeldename wurde nicht in der Datenbank gefunden.';
-$string['usernameoremail'] = 'Geben Sie den Anmeldenamen oder die E-Mail-Adresse ein.';
+$string['usernameoremail'] = 'Geben Sie den Anmeldenamen oder die E-Mail ein';
 $string['usernotconfirmed'] = '{$a} konnte nicht bestätigt werden';
 $string['userpic'] = 'Nutzerbild';
 $string['userpreferences'] = 'Nutzervoreinstellungen';

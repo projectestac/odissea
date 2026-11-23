@@ -68,10 +68,12 @@ final class comment {
         $params = new stdClass();
         $params->boardname = format_string($board->name, true, ['context' => $context]);
         $params->noteheading = board::get_note_title($note);
+        $params->link = (new \moodle_url('/mod/board/view.php', ['id' => $context->instanceid]))->out(false);
         // HTML variant — escape user-supplied content.
         $htmlparams = clone $params;
         $htmlparams->boardname = s($params->boardname);
         $htmlparams->noteheading = s($htmlparams->noteheading);
+        $htmlparams->link = $params->link;
 
         // Send notification to note author.
         $author = $DB->get_record('user', ['id' => $note->userid], '*', MUST_EXIST);

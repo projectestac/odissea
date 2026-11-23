@@ -27,9 +27,13 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['ca_file'] = 'CA failo kelias';
 $string['clustermode'] = 'Klasterio režimas';
+$string['clustermode_help'] = 'Įjungus klasterio režimą, bus naudojama Redis Cluster funkcija, leidžianti jūsų serveriui aptarnauti kelis serverius ir vienu metu apdoroti lygiagrečias užklausas.';
+$string['clustermodeunavailable'] = 'Redis Cluster šiuo metu nepasiekiamas. Įsitikinkite, kad PHP Redis plėtinys palaiko Redis Cluster funkcijas.';
 $string['compressor_none'] = 'Nesuglaudintas.';
 $string['compressor_php_gzip'] = 'Naudoti gzip glaudinimą.';
-$string['compressor_php_zstd'] = 'Naudoti Zstandartinį glaudinimą.';
+$string['compressor_php_zstd'] = 'Naudoti Zstandard glaudinimą.';
+$string['connectiontimeout'] = 'Prisijungimo skirtasis laikas';
+$string['connectiontimeout_help'] = 'Nustato skirtąjį laiką bandant prisijungti prie Redis serverio.';
 $string['encrypt_connection'] = 'Naudoti TLS šifravimą.';
 $string['password'] = 'Slaptažodis';
 $string['password_help'] = 'Tai nustato Redis serverio slaptažodį.';
@@ -44,6 +48,23 @@ $string['privacy:metadata:redis:data'] = 'Įvairūs duomenys, saugomi talpykloje
 $string['serializer_igbinary'] = 'Igbinarinis serializatorius';
 $string['serializer_php'] = 'Numatytasis PHP serializatorius';
 $string['server'] = 'Serveris (-iai)';
+$string['server_help'] = 'Testavimui naudojamas Redis serveris.
+
+Keletas reikšmių pavyzdžių:
+
+* testredis.abc.com - prisijungti prie Redis serverio pagal pagrindinio kompiuterio vardą (pagal numatytuosius nustatymus prievadas 6379).
+* testredis.abc.com:1234 - prisijungti prie Redis serverio pagal pagrindinio kompiuterio vardą per konkretų prievadą.
+* 1.2.3.4 - prisijungti prie Redis serverio pagal IP adresą (pagal numatytuosius nustatymus prievadas 6379).
+* 1.2.3.4:1234 - prisijungti prie Redis serverio pagal IP adresą per konkretų prievadą.
+* unix:///var/redis.sock - prisijungti prie Redis serverio naudojant Unix lizdą.
+* /var/redis.sock - prisijungti prie Redis serverio naudojant Unix lizdą (alternatyvus formatas).
+
+Jei įjungtas klasterio režimas, serverius nurodykite atskirose eilutėse, pvz.:<br>
+  172.23.0.11<br>
+  172.23.0.12<br>
+  172.23.0.13<br>
+
+Daugiau informacijos rasite <a href="https://redis.io/docs/reference/clients/#accepting-client-connections">Accepting Client Connections</a> ir <a href="https://redis.io/resources/clients/#php">Redis PHP clients</a>.';
 $string['task_ttl'] = 'Atlaisvinkite atmintį, kurią naudoja pasibaigę „Redis“ talpyklų įrašai';
 $string['test_clustermode'] = 'Klasterio režimas';
 $string['test_clustermode_desc'] = 'Įjungti testavimą „Redis“ klasterio režimu.';
@@ -52,6 +73,23 @@ $string['test_password_desc'] = 'Redis bandomojo serverio slaptažodis.';
 $string['test_serializer'] = 'Serializatorius';
 $string['test_serializer_desc'] = 'Serializatorius, naudojamas bandymams.';
 $string['test_server'] = 'Testuoti serverį';
+$string['test_server_desc'] = 'Testavimui naudojamas Redis serveris.
+
+Keletas reikšmių pavyzdžių:
+
+* testredis.abc.com - prisijungti prie Redis serverio pagal pagrindinio kompiuterio vardą (pagal numatytuosius nustatymus prievadas 6379).
+* testredis.abc.com:1234 - prisijungti prie Redis serverio pagal pagrindinio kompiuterio vardą per konkretų prievadą.
+* 1.2.3.4 - prisijungti prie Redis serverio pagal IP adresą (pagal numatytuosius nustatymus prievadas 6379).
+* 1.2.3.4:1234 - prisijungti prie Redis serverio pagal IP adresą per konkretų prievadą.
+* unix:///var/redis.sock - prisijungti prie Redis serverio naudojant Unix lizdą.
+* /var/redis.sock - prisijungti prie Redis serverio naudojant Unix lizdą (alternatyvus formatas).
+
+Jei įjungtas klasterio režimas, serverius nurodykite atskirose eilutėse, pvz.:<br>
+  172.23.0.11<br>
+  172.23.0.12<br>
+  172.23.0.13<br>
+
+Daugiau informacijos rasite <a href="https://redis.io/docs/reference/clients/#accepting-client-connections">Accepting Client Connections</a> ir <a href="https://redis.io/resources/clients/#php">Redis PHP clients</a>.';
 $string['test_ttl'] = 'TTL testavimas';
 $string['test_ttl_desc'] = 'Vykdyti našumo testą naudojant talpyklą, kuriai reikalingas TTL (lėtesni rinkiniai).';
 $string['usecompressor'] = 'Naudoti kompresorių';

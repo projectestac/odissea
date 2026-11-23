@@ -1,10 +1,10 @@
 moodle-tiny_fontcolor
 ========================
 
-![Release](https://img.shields.io/badge/Release-1.3-blue.svg)
+![Release](https://img.shields.io/badge/Release-1.4-blue.svg)
 [![Moodle Plugin CI](https://github.com/bfh/moodle-tiny_fontcolor/actions/workflows/moodle-plugin-ci.yml/badge.svg?branch=main)](https://github.com/bfh/moodle-tiny_fontcolor/actions/workflows/moodle-plugin-ci.yml)
 [![PHP Support](https://img.shields.io/badge/php-8.1--8.4-blue)](https://github.com/bfh/moodle-tiny_fontcolor/action)
-[![Moodle Support](https://img.shields.io/badge/Moodle-4.1--5.2-orange)](https://github.com/bfh/moodle-tiny_fontcolor/actions)
+[![Moodle Support](https://img.shields.io/badge/Moodle-4.5--5.2-orange)](https://github.com/bfh/moodle-tiny_fontcolor/actions)
 [![License GPL-3.0](https://img.shields.io/github/license/bfh/moodle-tiny_fontcolor?color=lightgrey)](https://github.com/bfh/moodle-tiny_fontcolor/blob/main/LICENSE)
 [![GitHub contributors](https://img.shields.io/github/contributors/bfh/moodle-tiny_fontcolor)](https://github.com/bfh/moodle-tiny_fontcolor/graphs/contributors)
 
@@ -90,6 +90,33 @@ There is no easy switch between the use of css classes and the use of the style
 attributes. Whenever you change the setting, remember that existing content is
 not changed. When editing the content, the plugin will only change the colors in
 the specified mode.
+
+### Colors with tables
+
+Until version 1.3 of this plugin, table colors were independent from the settings
+of this plugin and used hardcoded values that come from the table plugin of
+the TinyMCE shipped with Moodle. This has been changed with version 1.4.
+
+![Table context menu](screenshots/table_contextmenu.png "Table properties")
+
+The two icons framed in the box 1 are now added always. With these icons the
+user may select the background color or border color of the current cell.
+In the table properties and advanced settings (reachable via box 2) the colors
+can be changed as well.
+
+When the setting `usefortable` is activated, the color selectors in the context
+menu use the custom defined colors from this plugin (`textcolors` is used for
+the border, `backgroundcolors` is used for the cell background). The colors
+in the advanced settings of the table properties cannot changed to the custom
+palette separately. Also the color picker can not be removed. Therefore, at this
+place the color map is empty and the color picker and removal pen remain. It is
+recommended to use the color selectors from the context menu only.
+
+**Note**: the `usecssclassnames` setting does not apply for the table colors.
+This is because the table is an additional plugin that handles color management
+in it's own way. The fontcolor plugin only manipulates the color palette to
+choose from. When adding a color to a cell background or as a border, the
+hexcode is used always with the inline style.
 
 ## Version History
 

@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowofflineattempts'] = 'Permettre de faire le test hors ligne au moyen de l’App mobile.';
-$string['allowofflineattempts_help'] = 'Si ce réglage est activé, le participant pourra télécharger le test pour le passer hors ligne.
+$string['allowofflineattempts_help'] = 'Si ce réglage est activé, le participant pourra télécharger le test pour le tenter hors ligne.
 
 Il n’est pas possible de faire hors ligne les tests avec limite de temps, ni ceux avec une restriction d’accès par mot de passe ou par adresse IP, ni ceux utilisant des comportements autres que le feedback a posteriori (avec ou sans indication de certitude) ou qui utilisent la navigation séquentielle.';
 $string['confirmdatasaved'] = 'Je confirme que je n’ai pas de travail non enregistré sur mon appareil mobile.';

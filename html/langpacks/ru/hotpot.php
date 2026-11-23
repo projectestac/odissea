@@ -48,6 +48,7 @@ $string['allowpaste_help'] = 'При включенном параметре с�
 $string['allowreview'] = 'Разрешить просмотр';
 $string['allowreview_help'] = 'При включенном параметре студенты могут пересмотреть свои попытки после окончания теста.';
 $string['analysisreport'] = 'Анализ элемента';
+$string['attempted'] = 'Попытка сделана';
 $string['attemptlimit'] = 'Предел попыток';
 $string['attemptlimit_help'] = 'Максимальное число попыток, которые обучающийся может выполнить в этом Hotpot';
 $string['attemptnumber'] = 'Номер попытки';
@@ -76,11 +77,15 @@ $string['clicktrailreport'] = 'Отслеживание нажатий';
 $string['closed'] = 'Этот элемент курса закрыт';
 $string['clues'] = 'Ключи';
 $string['completed'] = 'Завершено';
+$string['completioncompleted'] = 'Требуется статус «Завершено»';
+$string['completionmingrade'] = 'Требуется минимальная оценка';
+$string['completionpass'] = 'Требуется проходной балл.';
+$string['completionwarning'] = 'Эти поля отключаются, если для данной задачи установлен лимит оценки «Без оценки» или весовой коэффициент оценки равен «Без весового коэффициента».';
 $string['configbodystyles'] = 'По умолчанию, стиль темы Moodle переопределяет тему HotPot. Однако, любые выбранные здесь активные стили HotPot будут иметь приоритет над стилем темы Moodle.';
 $string['configenablecache'] = 'Сохраненные в кэше тесты HotPot могут значительно ускорить отображение тестов для студентов.';
 $string['configenablecron'] = 'Укажите часы своей временной зоны, когда будет запускаться скрипт cron HotPot';
 $string['configenablemymoodle'] = 'Будут ли показаны на странице МойMoodle эти настройки управления HotPots или нет';
-$string['configenableobfuscate'] = 'Скрытие кода javascript в вставке медиаплееров усложняет определение имени медиафайла и догадку о его содержимом.';
+$string['configenableobfuscate'] = 'Маскировка текстовых строк и URL-адресов в коде JavaScript затрудняет угадывание ответов при просмотре исходного кода HTML-страницы в браузере.';
 $string['configenableswf'] = 'Разрешить встраивать SWF-файлы в HotPot. Этот включенный параметр переопределяет filter_mediaplugin_enable_swf.';
 $string['configfile'] = 'Файл конфигурации';
 $string['configframeheight'] = 'Когда тест отображается во фрейме, это значение определяет высоту (в пикселях) от верхней части фрейма, содержащей панель навигации Moodle.';
@@ -102,8 +107,8 @@ $string['delay2summary'] = 'Время задержки между послед�
 $string['delay3'] = 'Задержка 3';
 $string['delay3_help'] = 'Эти параметры определяют задержку между окончанием теста и возвращением к управлению, отображаемом в Moodle.
 
-**Использовать указанное время (в секундах)**
-: управление будет возвращено в Moodle после указанного числа секунд.
+**Использовать указанную задержку**
+: управление будет возвращено в Moodle по истечении указанной задержки.
 
 **Использовать настройки исходного файла/шаблона**
 : управление будет возвращено в Moodle после заданного числа секунд, указанных в исходном файле или в файле шаблона для этого выходного формата.
@@ -117,7 +122,7 @@ $string['delay3_help'] = 'Эти параметры определяют зад�
 Примечание: независимо от этих настроек результаты теста всегда сразу же передаются в Moodle, когда тест закончен или прерван.';
 $string['delay3afterok'] = 'Ожидать, когда студент нажмет ОК';
 $string['delay3disable'] = 'Не продолжать автоматически';
-$string['delay3specific'] = 'Использовать указанное время (в секундах)';
+$string['delay3specific'] = 'Использовать указанную задержку';
 $string['delay3summary'] = 'Время задержки при окончании теста';
 $string['delay3template'] = 'Использовать настройки исходного файла/шаблона';
 $string['deleteallattempts'] = 'Удалить все попытки';
@@ -127,7 +132,7 @@ $string['duration'] = 'Продолжительность';
 $string['enablecache'] = 'Разрешить кэш HotPot';
 $string['enablecron'] = 'Разрешить cron HotPot';
 $string['enablemymoodle'] = 'Показать HotPots в МойMoodle';
-$string['enableobfuscate'] = 'Включить скрытие кода медиаплеера';
+$string['enableobfuscate'] = 'Включить маскировку кода медиаплеера';
 $string['enableswf'] = 'Разрешить встраивание SWF-файла в HotPot';
 $string['entry_attempts'] = 'Попытки';
 $string['entry_dates'] = 'Даты';
@@ -175,6 +180,21 @@ $string['entrypage_help'] = 'Должна ли быть показана сту�
 Страница входа всегда показывается учителю, в порядке для предоставления доступа к отчетам и редактирования страницы тестов';
 $string['entrypagehdr'] = 'Страница входа';
 $string['entrytext'] = 'Текст страницы входа';
+$string['event_attempt_reviewed'] = 'Рассмотрена попытка HotPot';
+$string['event_attempt_reviewed_description'] = 'Пользователь с ID «{$a->userid}» проверил попытку выполнения упражнения «HotPot» с ID модуля курса «{$a->cmid}».';
+$string['event_attempt_reviewed_explanation'] = 'Пользователь только что оставил отзыв о попытке пройти HotPot.';
+$string['event_attempt_started'] = 'Началась попытка HotPot';
+$string['event_attempt_started_description'] = 'Пользователь с ID «{$a->userid}» начал попытку выполнения «HotPot» с ID модуля курса «{$a->cmid}».';
+$string['event_attempt_started_explanation'] = 'Пользователь только что начал попытку выполнить HotPot.';
+$string['event_attempt_submitted'] = 'Отправлен результат попытки HotPot.';
+$string['event_attempt_submitted_description'] = 'Пользователь с ID «{$a->userid}» отправил результат попытки «HotPot» с ID модуля курса «{$a->cmid}».';
+$string['event_attempt_submitted_explanation'] = 'Пользователь только что отправил отправил результат попытки «HotPot».';
+$string['event_base'] = 'Обнаружено событие HotPot';
+$string['event_base_description'] = 'Пользователь с ID «{$a->userid}» инициировал событие элемента «HotPot» с ID модуля курса «{$a->cmid}».';
+$string['event_base_explanation'] = 'Модуль HotPot зафиксировал событие.';
+$string['event_report_viewed'] = 'Просмотрен отчет HotPot';
+$string['event_report_viewed_description'] = 'Пользователь с ID «{$a->userid}» просмотрел отчет о попытках «HotPot» с ID модуля курса «{$a->cmid}».';
+$string['event_report_viewed_explanation'] = 'Пользователь только что просмотрел отчет о попытках «HotPot»';
 $string['exit_areyouok'] = 'Здравствуйте, Вы еще здесь?';
 $string['exit_attemptscore'] = 'Ваша оценка для этой попытки - {$a}';
 $string['exit_course'] = 'Курс';
@@ -301,7 +321,7 @@ $string['hotpot:manage'] = 'Изменить настройки HotPot';
 $string['hotpot:preview'] = 'Предварительный просмотр HotPot';
 $string['hotpot:reviewallattempts'] = 'Просмотреть попытки всех пользователей в HotPot';
 $string['hotpot:reviewmyattempts'] = 'Просмотреть свои собственные попытки в HotPot';
-$string['hotpot:view'] = 'Использовать опрос';
+$string['hotpot:view'] = 'Видеть страницу входа в HotPot.';
 $string['hotpotname'] = 'Название HotPot';
 $string['ignored'] = 'Игнорируется';
 $string['inprogress'] = 'В процессе';
@@ -314,6 +334,7 @@ $string['maxeventlength'] = 'Максимальное количество дн�
 $string['mediafilter_hotpot'] = 'Медиафильтр HotPot';
 $string['mediafilter_moodle'] = 'Стандартные медиафильтры Moodle';
 $string['migratingfiles'] = 'Перенос файлов тестов HotPot';
+$string['migratinglogs'] = 'Перенос журналов HotPot';
 $string['missingsourcetype'] = 'Отсутствует тип источника записи HotPot';
 $string['modulename'] = 'HotPot';
 $string['modulename_help'] = 'Модуль HotPot позволяет учителям распространять в Moodle интерактивные учебные материалы для своих студентов и просматривать отчеты об ответах и результатах студентов.
@@ -380,6 +401,7 @@ $string['noreview'] = 'К сожалению, Вы не можете получ�
 $string['noreviewafterclose'] = 'Этот тест закрыт. Вы больше не можете просматривать сведения о попытках этого теста.';
 $string['noreviewbeforeclose'] = 'К сожалению, Вы не можете увидеть сведения о попытке этого теста до {$a}';
 $string['nosourcefilesettings'] = 'Информация об исходном файле отсутствует в записи HotPot';
+$string['notattemptedyet'] = 'Еще нет попыток';
 $string['notavailable'] = 'К сожалению, этот элемент курса в настоящее время Вам не доступен.';
 $string['outputformat'] = 'Формат вывода';
 $string['outputformat_best'] = 'Лучший';
@@ -389,6 +411,10 @@ $string['outputformat_help'] = 'Формат вывода определяет, 
 
 Параметр "Лучший" будет отображать содержимое с помощью оптимального формата вывода в браузере студента.';
 $string['outputformat_hp_6_jcloze_html'] = 'JCloze (v6) с HTML';
+$string['outputformat_hp_6_jcloze_html_dropdown'] = 'Выпадающее меню с HTML';
+$string['outputformat_hp_6_jcloze_html_findit_a'] = 'FindIt (a) с HTML';
+$string['outputformat_hp_6_jcloze_html_findit_b'] = 'FindIt (b) с HTML';
+$string['outputformat_hp_6_jcloze_html_jgloss'] = 'JGloss с HTML';
 $string['outputformat_hp_6_jcloze_xml_anctscan'] = 'ANCT-Сканирование с HP6 JCloze XML';
 $string['outputformat_hp_6_jcloze_xml_dropdown'] = 'DropDown с HP6 JCloze XML';
 $string['outputformat_hp_6_jcloze_xml_findit_a'] = 'FindIt (а) с HP6 JCloze XML';
@@ -399,6 +425,7 @@ $string['outputformat_hp_6_jcloze_xml_v6_autoadvance'] = 'JCloze (v6) с hp6 XML
 $string['outputformat_hp_6_jcross_html'] = 'JCross (v6) с HTML';
 $string['outputformat_hp_6_jcross_xml_v6'] = 'JCross (v6) с XML';
 $string['outputformat_hp_6_jmatch_html'] = 'JMatch (v6) с HTML';
+$string['outputformat_hp_6_jmatch_html_sort'] = 'JMatch-сортировка с HTML';
 $string['outputformat_hp_6_jmatch_xml_flashcard'] = 'JMatch (флэш) с XML';
 $string['outputformat_hp_6_jmatch_xml_jmemori'] = 'JMemori с XML';
 $string['outputformat_hp_6_jmatch_xml_sort'] = 'JMatch-сортировка с XML';
@@ -429,6 +456,20 @@ $string['percent'] = 'Процент';
 $string['pluginadministration'] = 'Управление HotPot';
 $string['pluginname'] = 'Модуль HotPot';
 $string['pressoktocontinue'] = 'Нажмите ОК для продолжения или Отмена, чтобы остаться на текущей странице.';
+$string['privacy'] = 'Конфиденциальность результатов';
+$string['privacy:metadata:hotpot_attempts'] = 'Информация о попытках пользователей в HotPot.';
+$string['privacy:metadata:hotpot_attempts:attempt'] = 'Номер попытки указывает количество попыток, предпринятых пользователем.';
+$string['privacy:metadata:hotpot_attempts:clickreportid'] = 'Указывает идентификатор отчета о кликах пользователя';
+$string['privacy:metadata:hotpot_attempts:endtime'] = 'Время окончания указывает, когда пользователь завершил попытки.';
+$string['privacy:metadata:hotpot_attempts:hotpotid'] = 'ID попыток HotPot';
+$string['privacy:metadata:hotpot_attempts:penalties'] = 'Показатели, указывающие на размер штрафов, полученных пользователем за попытки';
+$string['privacy:metadata:hotpot_attempts:score'] = 'Показатели, указывающий количество баллов, полученных пользователем за попытки.';
+$string['privacy:metadata:hotpot_attempts:starttime'] = 'Показатель, указывающий, когда пользователь начал попытки.';
+$string['privacy:metadata:hotpot_attempts:status'] = 'Показатель, указывающий на состояние попыток пользователя.';
+$string['privacy:metadata:hotpot_attempts:timefinish'] = 'Показатель, указывающий, когда пользователь завершил попытки.';
+$string['privacy:metadata:hotpot_attempts:timemodified'] = 'Показатель, указывающий, когда пользователь изменил попытки HotPot.';
+$string['privacy:metadata:hotpot_attempts:timestart'] = 'Указывается время начала попыток, предпринятых пользователем.';
+$string['privacy:metadata:hotpot_attempts:userid'] = 'ID пользователя, совершающего попытки HotPot.';
 $string['questionshort'] = 'В-{$a}';
 $string['quizname_help'] = 'Текст справки по названию теста';
 $string['quizzes'] = 'Тесты';
@@ -528,6 +569,7 @@ $string['title_help'] = 'Этот параметр определяет назв
 
 **Использовать исходный путь к файлу**
 : исходный путь к файлу, включая любые названия папок, будет использован как заголовок веб-страницы.';
+$string['toolsindex'] = 'Индекс инструментов HotPot';
 $string['unitname_help'] = 'Текст помощи для названия элемента';
 $string['unrecognizedsourcefile'] = 'К сожалению, модуль HotPot не может определить тип исходного файла: {$a}';
 $string['updated'] = 'Обновлен';

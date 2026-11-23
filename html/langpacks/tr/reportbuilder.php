@@ -115,6 +115,7 @@ $string['editscheduledetails'] = 'Program ayrıntılarını düzenle';
 $string['editschedulename'] = 'Program adını düzenle';
 $string['enablecustomreports'] = 'Özel raporları etkinleştir';
 $string['enablecustomreports_desc'] = 'Etkinleştirilirse, kullanıcılar Rapor oluşturucu özel raporları oluşturabilir ve görüntüleyebilir.';
+$string['enabled'] = 'Etkinleştir';
 $string['enableschedule'] = 'Programı etkinleştir';
 $string['entitycourse'] = 'Kurs';
 $string['entityuser'] = 'Kullanıcı';

@@ -35,6 +35,7 @@ $string['area'] = 'Sritis';
 $string['cacheadmin'] = 'Talpyklos administravimas';
 $string['cacheconfig'] = 'Konfigūracija';
 $string['cachedef_ai_policy'] = 'Naudotojo DI politikos priėmimas.';
+$string['cachedef_ai_ratelimit'] = 'DI paslaugos teikėjo iškvietimų dažnio ribojimas';
 $string['cachedef_calculablesinfo'] = 'Analitikos skaičiavimo informacija';
 $string['cachedef_calendar_categories'] = 'Kalendoriaus kursų kategorijos, kurias gali pasiekti naudotojas';
 $string['cachedef_calendar_subscriptions'] = 'Kalendoriaus prenumeratos';

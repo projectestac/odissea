@@ -352,7 +352,7 @@ $string['partiallycorrectfeedbackdefault'] = 'Zure erantzuna partzialki zuzena d
 $string['penaltyfactor'] = 'Penalizazio-faktorea';
 $string['penaltyfactor_help'] = 'Ezarpen honek erantzun oker bakoitzagatik puntuaziotik kenduko zen zatia zehazten du. Galdetegia egokitze-moduan konfiguratuta dagoenean soilik du eragina.
 
-Penalizazio-faktoreak 0 eta 1 bitartean egon behar du- Penalizazio-faktorea 1 bada, ikasleak lehen saioan eman behar du erantzun zuzenak kalifikazioa izateko. Penalizazio-faktorea 0 bada, ikasleak nahi bezainbeste saio egin ditzake kalifikazio altuena lortzeko.';
+Penalizazio-faktoreak 0 eta 1 bitartean egon behar du- Penalizazio-faktorea 1 bada, ikasleak lehen saioan eman behar du erantzun zuzenak kalifikazioa izateko. Penalizazio-faktorea 0 bada, ikasleak nahi bezainbeste saio egin ditzake puntuazio altuena lortzeko.';
 $string['penaltyforeachincorrecttry'] = 'Penalizazioa saiakera oker bakoitzeko';
 $string['penaltyforeachincorrecttry_help'] = 'Galderak \'Interaktiboa hainbat saiakerarekin\' edo \'Egokitze modua\' erabilita egiten direnean, ikasleak erantzuteko hainbat aukera izan ditzan, aukera honek erantzun oker bakoitzeko aplikatuko den penalizazioa zehazten du.
 

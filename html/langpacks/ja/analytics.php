@@ -49,7 +49,7 @@ $string['errorexportmodelresult'] = '機械学習モデルはエクスポート�
 $string['errorimport'] = '提供されたJSONファイルのインポート時にエラーが発生しました。';
 $string['errorimportmissingclasses'] = '次のアナリティクスコンポーネントはこのサイトで利用できません:
 {$a->missingclasses}';
-$string['errorimportmissingcomponents'] = '提供されたモデルには次のプラグインがインストールされている必要があります: {$a} あなたのサイトにインストールされているバージョンがバージョンに合致する必要がないことに留意してください。多くの場合、同じまたは新しいバージョンのプラグインのインストールで十分です。';
+$string['errorimportmissingcomponents'] = '提供されたモデルには次のプラグインがインストールされている必要があります: {$a} あなたのサイトにインストールされているバージョンがバージョンに一致する必要がないことに留意してください。多くの場合、同じまたは新しいバージョンのプラグインのインストールで十分です。';
 $string['errorimportversionmismatches'] = '次のコンポーネントのバージョンがこのサイトにインストールされているバージョンと異なります: {$a} あなたはオプション「バージョンミスマッチを無視する」を使用してこれらの差異を無視できます。';
 $string['errorinvalidcontexts'] = 'いくつかの選択済みコンテクストはこのターゲットでは使用できません。';
 $string['errorinvalidindicator'] = '無効な {$a} 指標';

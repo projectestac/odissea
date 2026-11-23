@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '„Examview“';
-$string['pluginname_help'] = '„Examview“ formatas įgalina klausimų importavimą iš Examview 4 XML failų.Naujesniems Examview versijoms, Blackboard formatas gali būti naudojamas.';
+$string['pluginname_help'] = '„Examview“ formatas įgalina klausimų importavimą iš Examview 4 XML failų. Naujesniems Examview versijoms, Blackboard formatas gali būti naudojamas.';

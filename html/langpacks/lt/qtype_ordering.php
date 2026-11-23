@@ -40,6 +40,32 @@ $string['duplicatesnotallowed'] = 'Neleidžiama dubliuoti velkamų elementų. Ei
 $string['editingordering'] = 'Redaguojamas rikiavimo klausimas';
 $string['gradedetails'] = 'Įvertinimo informacija';
 $string['gradingtype'] = 'Įvertinimo tipas';
+$string['gradingtype_help'] = '**Viskas arba nieko**
+&nbsp; Jei visi elementai yra teisingoje vietoje, skiriami visi balai. Kitu atveju gaunama nulis balų.
+
+**Absoliuti padėtis**
+&nbsp; Elementas laikomas teisingu, jei jis yra toje pačioje vietoje kaip teisingame atsakyme. Didžiausias galimas klausimo balas **lygus** besimokančiajam rodomų elementų skaičiui.
+
+**Santykinai su teisinga padėtimi**
+&nbsp; Elementas laikomas teisingu, jei jis yra toje pačioje vietoje kaip teisingame atsakyme. Teisingi elementai gauna balų, lygų rodomų elementų skaičiui minus vienas. Neteisingi elementai gauna balų, lygų rodomų elementų skaičiui minus vienas ir minus elemento atstumas nuo jo teisingos padėties. Taigi, jei besimokančiajam rodoma ***n*** elementų, už kiekvieną elementą galima gauti ***(n - 1)*** balų, o didžiausias galimas klausimo balas yra ***n x (n - 1)***, t. y. ***(n² - n)***.
+
+**Santykinai su kitu elementu (be paskutinio)**
+&nbsp; Elementas laikomas teisingu, jei po jo eina tas pats elementas kaip teisingame atsakyme. Paskutinėje vietoje esantis elementas netikrinamas. Taigi didžiausias galimas klausimo balas yra **vienetu mažesnis** už besimokančiajam rodomų elementų skaičių.
+
+**Santykinai su kitu elementu (su paskutiniu)**
+&nbsp; Elementas laikomas teisingu, jei po jo eina tas pats elementas kaip teisingame atsakyme. Tai taikoma ir paskutiniam elementui, po kurio neturi būti jokio elemento. Taigi didžiausias galimas klausimo balas **lygus** besimokančiajam rodomų elementų skaičiui.
+
+**Santykinai su ankstesniu ir kitu elementais**
+&nbsp; Elementas laikomas teisingu, jei ir prieš jį, ir po jo esantys elementai yra tokie patys kaip teisingame atsakyme. Prieš pirmąjį elementą neturi būti jokio elemento, o po paskutinio elemento neturi būti jokio elemento. Taigi už kiekvieną elementą galima gauti du balus, o didžiausias galimas klausimo balas yra **dvigubai didesnis** už besimokančiajam rodomų elementų skaičių.
+
+**Santykinai su VISAIS ankstesniais ir kitais elementais**
+&nbsp; Elementas laikomas teisingu, jei prieš jį eina visi tie patys elementai kaip teisingame atsakyme ir po jo eina visi tie patys elementai kaip teisingame atsakyme. Ankstesnių elementų tvarka nesvarbi, kaip ir tolesnių elementų tvarka. Taigi, jei besimokančiajam rodoma ***n*** elementų, už kiekvieną elementą galima gauti ***(n - 1)*** balų, o didžiausias galimas klausimo balas yra ***n x (n - 1)***, t. y. ***(n² - n)***.
+
+**Ilgiausias sutvarkytas poaibis**
+&nbsp; Įvertinimas lygus elementų skaičiui ilgiausiame sutvarkytame elementų poaibyje. Didžiausias galimas įvertinimas lygus rodomų elementų skaičiui. Poaibyje turi būti bent du elementai. Poaibiai neprivalo prasidėti nuo pirmojo elemento (bet gali) ir neprivalo būti ištisiniai (bet gali būti). Jei yra keli vienodo ilgio poaibiai, teisingais bus parodyti to poaibio, kuris randamas pirmas ieškant iš kairės į dešinę, elementai. Kiti elementai bus pažymėti kaip neteisingi.
+
+**Ilgiausias ištisinis poaibis**
+&nbsp; Įvertinimas lygus elementų skaičiui ilgiausiame ištisiniame elementų poaibyje. Didžiausias galimas įvertinimas lygus rodomų elementų skaičiui. Poaibyje turi būti bent du elementai. Poaibiai neprivalo prasidėti nuo pirmojo elemento (bet gali) ir PRIVALO BŪTI IŠTISINIAI. Jei yra keli vienodo ilgio poaibiai, teisingais bus parodyti to poaibio, kuris randamas pirmas ieškant iš kairės į dešinę, elementai. Kiti elementai bus pažymėti kaip neteisingi.';
 $string['highlightresponse'] = 'Paryškinti atsakymą kaip teisingą arba neteisingą';
 $string['horizontal'] = 'Horizontaliai';
 $string['incorrectitemsnumber'] = 'Neteisingi elementai: {$a}';

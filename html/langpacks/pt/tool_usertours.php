@@ -136,8 +136,8 @@ $string['placement_help'] = 'Uma etapa pode ser colocada acima, abaixo, à esque
 
 Se não for possível ajustar a etapa no local especificado de uma determinada página, ela será automaticamente colocada noutro lugar.';
 $string['pluginname'] = 'Demonstrações ao utilizador';
-$string['privacy:metadata:preference:completed'] = 'A data e hora em que um utilizador completou pela última vez uma demonstração ao utilizador.';
-$string['privacy:metadata:preference:requested'] = 'A data e hora em que um utilizador solicitou pela última vez uma demonstração ao utilizador.';
+$string['privacy:metadata:preference:completed'] = 'Data/hora em que um utilizador completou pela última vez uma demonstração ao utilizador.';
+$string['privacy:metadata:preference:requested'] = 'Data/hora em que um utilizador solicitou pela última vez uma demonstração ao utilizador.';
 $string['privacy:request:preference:completed'] = 'A última vez que marcou como concluída a demonstração ao utilizador "{$a->name}" foi em {$a->time}';
 $string['privacy:request:preference:requested'] = 'Solicitou a demonstração ao utilizador "{$a->name}" pela última vez em {$a->time}';
 $string['reflex'] = 'Clique para avançar';

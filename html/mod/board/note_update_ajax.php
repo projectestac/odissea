@@ -50,8 +50,8 @@ $returnurl = new moodle_url('/mod/board/view.php', ['id' => $cm->id]);
 $PAGE->set_url($pageurl);
 $PAGE->set_context($context);
 
-if ($USER->id != $note->userid) {
-    require_capability('mod/board:manageboard', $context);
+if ($USER->id != $note->userid && !has_any_capability(board::MANAGENOTES_CAPABILITIES, $context)) {
+    throw new \core\exception\required_capability_exception($context, 'mod/board:managenotes', 'nopermissions', '');
 }
 if (!empty($note->groupid)) {
     board::require_access_for_group($board, $note->groupid);

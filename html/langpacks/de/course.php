@@ -113,6 +113,7 @@ $string['gotosection'] = 'Zum Abschnitt {$a}';
 $string['gradetopassnotset'] = 'Für diesen Kurs wurde keine Bestehensgrenze festgelegt, die erreichet werden muss. Dies kann im Bewertungselement des Kurses festgelegt werden (Bewertungseinstellungen).';
 $string['hideendedcoursestask'] = 'Kurse nach dem Enddatum verbergen';
 $string['informationformodule'] = 'Info zur Aktivität {$a}';
+$string['locked'] = 'Gesperrt';
 $string['module'] = 'Aktivität';
 $string['namewithlink'] = 'Kursbereichsname mit Link';
 $string['noaccesssincestartinfomessage'] = 'Guten Tag {$a->userfirstname},

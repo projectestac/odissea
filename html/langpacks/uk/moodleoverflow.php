@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['areapost'] = 'Повідомлення';
 $string['message'] = 'Повідомлення';
+$string['modulename_tip'] = 'Відвідайте офіційну <a href=“https://github.com/learnweb/moodle-mod_moodleoverflow/wiki”>вікі</a>, щоб дізнатися більше та ознайомитися з можливостями налаштування!';

@@ -54,8 +54,27 @@ class com_wiris_quizzes_service_ServiceRouter {
 		if($service === "resource" || $service === "cache") {
 			if($request->getParameter("name") === null) {
 				$res->sendError(400, "Missing \"name\" parameter.");
+				return;
 			}
 			$name = $request->getParameter("name");
+			$normalized = str_replace("\\", "/", $name);
+			$windowsAbsolutePath = strlen($normalized) >= 2 && com_wiris_util_xml_WCharacterBase::isLetter(_hx_char_code_at($normalized, 0)) && _hx_index_of($normalized, ":", null) === 1;
+			if(StringTools::startsWith($normalized, "/") || $windowsAbsolutePath) {
+				$res->sendError(403, "Forbidden");
+				return;
+			}
+			$parts = _hx_explode("/", $normalized);
+			{
+				$_g1 = 0; $_g = $parts->length;
+				while($_g1 < $_g) {
+					$i = $_g1++;
+					if(".." === $parts[$i]) {
+						$res->sendError(403, "Forbidden");
+						return;
+					}
+					unset($i);
+				}
+			}
 			$res->setHeader("Content-Type", com_wiris_quizzes_service_ServiceTools::getContentType($name));
 			$res->setHeader("Cache-Control", "max-age=1800");
 			$b = null;
@@ -106,7 +125,7 @@ class com_wiris_quizzes_service_ServiceRouter {
 					$post = false;
 				} else {
 					if(!com_wiris_quizzes_service_ServiceRouter::$router->exists($service)) {
-						$res->sendError(400, "Service \"" . $service . "\" not found.");
+						$res->sendError(400, "Invalid service.");
 						return;
 					} else {
 						$url = com_wiris_quizzes_service_ServiceRouter::$router->get($service);

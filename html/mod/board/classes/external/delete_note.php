@@ -71,8 +71,8 @@ final class delete_note extends external_api {
         require_capability('mod/board:view', $context);
         require_capability('mod/board:post', $context);
 
-        if ($USER->id != $note->userid) {
-            require_capability('mod/board:manageboard', $context);
+        if ($USER->id != $note->userid && !has_any_capability(board::MANAGENOTES_CAPABILITIES, $context)) {
+            throw new \core\exception\required_capability_exception($context, 'mod/board:managenotes', 'nopermissions', '');
         }
 
         if ($note->groupid) {

@@ -115,6 +115,7 @@ $string['editscheduledetails'] = 'Editatu programazioaren xehetasunak';
 $string['editschedulename'] = 'Editatu programazioaren izena';
 $string['enablecustomreports'] = 'Gaitu txosten pertsonalizatuak';
 $string['enablecustomreports_desc'] = 'Gaituz gero, erabiltzaileek Txosten-eraikitzailearen bidez txosten pertsonalizatuak sortu eta ikusi ahal dituzte';
+$string['enabled'] = 'Gaituta';
 $string['enableschedule'] = 'Gaitu programazioa';
 $string['entitycourse'] = 'Ikastaroa';
 $string['entityuser'] = 'Erabiltzailea';

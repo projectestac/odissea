@@ -83,7 +83,7 @@ $string['aggregationcoefweight_link'] = 'grade/aggregation';
 $string['aggregationhintdropped'] = '( Praleistas )';
 $string['aggregationhintexcluded'] = '( Išimtas )';
 $string['aggregationhintextra'] = '( Papildomas kreditas )';
-$string['aggregationhintnovalue'] = '( Tuščia )';
+$string['aggregationhintnovalue'] = '(Tuščia)';
 $string['aggregationofa'] = '{$a} agregavimas';
 $string['aggregationposition'] = 'Agregavimo padėtis';
 $string['aggregationposition_help'] = 'Šis parametras nustato, ar įverčių knygelės ataskaitose kategorijos ir kursų bendrųjų sumų stulpeliai rodomi pirmi, ar paskutiniai.';
@@ -377,7 +377,7 @@ Agreguoti galima tik reikšmės ir skalės įverčių tipus. Veikla pagrįsto į
 $string['gradevaluetoobig'] = 'Viena iš įvertinimo vertė yra didesnė, negu galima didžiausia {$a} įvertinimo vertė';
 $string['gradevaluetoosmall'] = 'Viena iš įvertinimo verčių yra mažesnė už leistiną minimalų įvertinimą {$a}.';
 $string['gradeview'] = 'Peržiūrėti įvertinimą';
-$string['gradewasmodifiedduringediting'] = 'Įvertinimas , įvestas  {$a->itemname}, skirtas {$a->username}, buvo ignoruojamas, nes jį neseniai atnaujino kažkas kitas.';
+$string['gradewasmodifiedduringediting'] = 'Įvertinimas, įvestas {$a->itemname}, skirtas {$a->username}, buvo ignoruojamas, nes jį neseniai atnaujino kažkas kitas.';
 $string['gradeweighthelp'] = 'Įvertinimo svorio žinynas';
 $string['gradingmodulename'] = 'Įvertinimas ({$a})';
 $string['groupavg'] = 'Grupės vidurkis';

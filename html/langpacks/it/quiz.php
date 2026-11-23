@@ -899,6 +899,7 @@ $string['removeallquizattempts'] = 'Tutti i tentativi del quiz';
 $string['removealluseroverrides'] = 'Tutte le personalizzazioni individuali';
 $string['removeemptypage'] = 'Rimuovi pagina vuota';
 $string['removepagebreak'] = 'Elimina interruzione di pagina';
+$string['removepagebreakafter'] = 'Rimuovi l\'interruzione di pagina dopo la domanda {$a}';
 $string['removeselected'] = 'Rimuovi selezionati';
 $string['rename'] = 'Cambia il nome';
 $string['renderingserverconnectfailed'] = 'Il server <b>{$a}</b> non è riuscito ad elaborare una richiesta RQP. Controlla la correttezza del URL.';

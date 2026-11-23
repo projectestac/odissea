@@ -126,6 +126,6 @@ $string['userfieldexternalfield'] = 'Išorinio lauko pavadinimas';
 $string['userfieldexternalfield_error'] = 'Šiame lauke negali būti HTML.';
 $string['userfieldexternalfield_help'] = 'Išorinės OAuth sistemos pateikto lauko pavadinimas.';
 $string['userfieldinternalfield'] = 'Vidinis lauko pavadinimas';
-$string['userfieldinternalfield_help'] = 'Moodle naudotojo lauko pavadinimas, kuris turėtų būti susietas iš išoriniu lauku.';
+$string['userfieldinternalfield_help'] = 'Moodle naudotojo lauko pavadinimas, kuris turėtų būti susietas su išoriniu lauku.';
 $string['userfieldmappingdeleted'] = 'Naudotojo lauko susiejimas ištrintas';
 $string['userfieldmappingsforissuer'] = 'Išdavėjo naudotojo laukų susiejimas: {$a}';

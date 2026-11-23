@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Nerasta elgsena';
 $string['privacy:metadata'] = 'Trūkstamo klausimo elgesio papildinys nesaugo jokių asmeninių duomenų.';
-$string['questionusedunknownmodel'] = 'Šis klausimas buvo atsakytas su elgsena kuri šiuo metu nėra prieinama. Mes bandysime jums parodyti klausimą, bet gali kilti problemų.';
+$string['questionusedunknownmodel'] = 'Šis klausimas buvo atsakytas su elgsena, kuri šiuo metu nėra prieinama. Mes bandysime jums parodyti klausimą, bet gali kilti problemų.';

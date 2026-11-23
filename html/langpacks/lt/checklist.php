@@ -70,7 +70,7 @@ $string['editdatesstop'] = 'Baigti datų redagavimą';
 $string['edititem'] = 'Redaguoti elementą';
 $string['emailoncomplete'] = 'Informuoti e.paštu, kai sąrašas yra baigtas';
 $string['emailoncomplete_help'] = 'Kai kontrolinis sąrašas yra užbaigtas, gali būti siunčiami pranešimai į el.paštą:  studentui, kuris užbaigė, visiems kurso dėstytojams arba abiem. <br />
-Administratorius gali kontroliuoti, kurie naudotojai gali gauti šį pranešimą į e.paštą naudojant \'mod:checklist/emailoncomplete\' - pagal nutylėjimą visi dėstytojai ir neredaguotys dėstytojai turi šią galimybę.';
+Administratorius gali kontroliuoti, kurie naudotojai gali gauti šį pranešimą į e.paštą naudojant \'mod:checklist/emailoncomplete\' - pagal nutylėjimą visi dėstytojai ir neredaguojantys dėstytojai turi šią galimybę.';
 $string['emailoncompletebody'] = 'Naudotojas {$a->user} užbaigė sąrašą \'{$a->checklist}\' kurse \'{$a->coursename}\'
 Peržiūrėti sąrašą čia:';
 $string['emailoncompletebodyown'] = 'Jūs užbaigėte sąrašą \'{$a->checklist}\' kurse \'{$a->coursename}\'

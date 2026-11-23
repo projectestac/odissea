@@ -32,6 +32,7 @@ $string['adhocqueuesize'] = 'Ad hoc užduočių eilėje yra {$a} užduotis';
 $string['adhoctaskid'] = 'Ad hoc užduoties ID: {$a}';
 $string['adhoctaskrun'] = 'Ad hoc užduoties vykdymas pradėtas';
 $string['adhoctasks'] = 'Ad hoc užduotys';
+$string['adhoctasksdue'] = 'Laukiančios ad hoc užduotys';
 $string['adhoctasksfailed'] = 'Ad hoc užduotys nepavyko';
 $string['adhoctasksfuture'] = 'Būsimos ad hoc užduotys';
 $string['adhoctasksrunning'] = 'Vykdomos ad hoc užduotys';

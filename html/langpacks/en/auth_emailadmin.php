@@ -108,5 +108,8 @@ My Name, Director
 <a href=http://www.my.org/>http://www.my.org</a>
 <a href=mailto:myorg@gmail.com>myorg@gmail.com</a>
 <a href=tel:123%20555%205555>123 555 5555</a>';
+$string['createuserandpass'] = 'Choose your sign-up details';
 $string['pluginname'] = 'Email-based self-registration with admin confirmation';
 $string['privacy:metadata'] = 'The Email Admin plugin does not store user data.';
+$string['usernamefromemail'] = 'Sign-in name';
+$string['usernamefromemail_help'] = 'You will sign in with this email address. Your username is derived from it automatically.';

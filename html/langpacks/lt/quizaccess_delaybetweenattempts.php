@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Tarpas tarp testo bandymų';
-$string['privacy:metadata'] = 'Testo bandymų atidėjimo taisyklės papildinys nesaugo jkių asmens duomenų.';
+$string['privacy:metadata'] = 'Testo bandymų atidėjimo taisyklės papildinys nesaugo jokių asmens duomenų.';
 $string['youcannotwait'] = 'Šis testas užsidarys prieš jums pradedant naują bandymą';
 $string['youmustwait'] = 'Jūs turite palaukti prieš bandant dar kartą atlikti testa. Jūs galėsite testą bandyti dar kartą po {$a}.';

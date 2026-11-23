@@ -312,7 +312,7 @@ Bij het controleren van de actieve inschrijving in een cursus, als de cursus gee
 Als de cursus geen einddatum heeft en deze instelling is ingeschakeld, kan de gebruiker niet worden verwijderd.';
 $string['requiresattention'] = 'Nakijken.';
 $string['requiresattentionexplanation'] = 'Deze plugin implementeert de Moodle privacy API niet. Als deze plugin persoonlijke gegevens bewaart, dan zullen die niet kunnen geëxporteerd of verwijderd worden via het privacy-systeem van Moodle.';
-$string['resubmitrequest'] = 'Dien een {$a- type} aanvraag voor {$a->username} opnieuw in';
+$string['resubmitrequest'] = 'Dien een {$a->type} aanvraag voor {$a->username} opnieuw in';
 $string['resubmitrequestasnew'] = 'Dien opnieuw in als nieuw verzoek';
 $string['resubmittedrequest'] = 'Het bestaande {$a->type} verzoek voor {$a->username} is geannuleerd en opnieuw ingediend.';
 $string['resultdeleted'] = 'U hebt onlangs verzocht om uw account en persoonlijke gegevens in {$a} te laten verwijderen. Dit proces is voltooid en u kunt niet langer inloggen.';

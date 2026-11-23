@@ -53,4 +53,4 @@ $string['taskautosavecleanup'] = 'Suprimeix els esborranys de desament automàti
 $string['textrecovered'] = 'Un esborrany d\'aquest text s\'ha restaurat automàticament.';
 $string['toolbarconfig'] = 'Configuració de la barra d\'eines';
 $string['toolbarconfig_desc'] = 'La llista de connectors i l\'ordre en què es mostren es pot configurar aquí. La configuració consta de grups (un per línia) seguits de la llista ordenada de connectors per a cada grup. El grup està separat dels connectors amb un signe d\'igual i els connectors estan separats per comes. Els noms dels grups han de ser únics i haurien d\'indicar el que els botons tenen en comú. Els noms de botons i de grups no es poden repetir i només poden contenir caràcters alfanumèrics.';
-$string['warningstatus'] = 'Adevertència';
+$string['warningstatus'] = 'Advertiment';

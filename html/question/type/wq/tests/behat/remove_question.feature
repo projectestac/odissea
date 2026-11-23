@@ -1,11 +1,13 @@
-@javascript @qtype_wq @wqmdl-284
+@qtype @qtype_wq @mod_quiz @wq @javascript @teacher @questionbank @regression
 Feature: Delete a question from the quiz; original stays in the Question bank
     In order to change the quiz line-up safely
     As a teacher
     I want to remove a slot without deleting the bank entry
 
 Background:
-    Given the following "users" exist:
+    Given the "wiris" filter is "on"
+    And the "wiris" filter has maximum priority
+    And the following "users" exist:
         | username | firstname | lastname | email                |
         | teacher1 | Teacher   | One      | teacher1@example.com |
         | student1 | Student   | One      | student1@example.com |
@@ -64,5 +66,5 @@ Scenario: Delete the "Essay Wiris" slot and verify bank entry remains
     And I click on "Yes" "button"
 
     # Verify the bank still contains the original Essay Wiris.
-    When I navigate to "Question bank" in current page administration
+    And I am on the "Course 1" "core_question > course question bank" page
     Then I should see "Essay Wiris"

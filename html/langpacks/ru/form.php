@@ -90,5 +90,6 @@ $string['suggestions'] = 'Предложения';
 $string['time'] = 'Время';
 $string['timeunit'] = 'Единица времени';
 $string['timing'] = 'Синхронизация';
+$string['togglesensitive'] = 'Чувствительно к переключению';
 $string['unmaskpassword'] = 'Показать';
 $string['year'] = 'Год';

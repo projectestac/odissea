@@ -371,7 +371,6 @@ $string['studentgrades'] = '{$a} Qualificacions';
 $string['studentsubmissions'] = '{$a} Trameses';
 $string['studentsubmissionsforassessment'] = '{$a} Trameses dels estudiants per a l\'avaluació';
 $string['subject'] = 'Assumpte:';
-$string['submission'] = 'Repte';
 $string['submissionend'] = 'Data de tancament del repte {$a}';
 $string['submissions'] = 'Reptes';
 $string['submissionstart'] = 'Data de començament del repte';

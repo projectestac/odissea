@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['insertemoticon'] = 'Įtrerpti emociją';
+$string['insertemoticon'] = 'Įterpti emociją';
 $string['pluginname'] = 'Emocija';
 $string['privacy:metadata'] = 'Atto_emoticon papildinys nesaugo jokių asmeninių duomenų.';

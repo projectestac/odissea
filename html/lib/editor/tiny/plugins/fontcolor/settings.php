@@ -70,6 +70,14 @@ if ($ADMIN->fulltree) {
     $settings->add($setting);
 
     $setting = new admin_setting_configcheckbox(
+        'tiny_fontcolor/usefortable',
+        new lang_string('usefortable', 'tiny_fontcolor'),
+        new lang_string('usefortable_desc', 'tiny_fontcolor'),
+        1
+    );
+    $settings->add($setting);
+
+    $setting = new admin_setting_configcheckbox(
         'tiny_fontcolor/usecssclassnames',
         new lang_string('usecssclassnames', 'tiny_fontcolor'),
         new lang_string('usecssclassnames_desc', 'tiny_fontcolor'),

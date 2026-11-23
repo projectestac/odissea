@@ -81,7 +81,6 @@ $string['not_all_expected_set'] = '并非全部设置了完成要求的活动有
 $string['now_indicator'] = '当前';
 $string['overview'] = '学生完成情况总览';
 $string['pluginname'] = '完成进度';
-$string['privacy:metadata'] = '完成进度版块仅显示已完成的数据';
 $string['progress'] = '进度';
 $string['progressbar'] = '完成进度';
 $string['selectitem'] = '选择 \'{$a}\'';

@@ -101,5 +101,5 @@ $string['score'] = 'puntuazioa';
 $string['score_help'] = 'Zehaztu {$a->criterion} irizpiderako 0 eta {$a->maxscore} arteko puntuazioa.';
 $string['scoreforcriterion'] = '{$a} puntuazioa';
 $string['showmarkerdesc'] = 'Erakutsi kalifikatzailearen irizpideen deskribapenak';
-$string['showmarkspercriterionstudents'] = 'Erakutsi ikasleei irizpide bakoitzearen kalifikazioak';
+$string['showmarkspercriterionstudents'] = 'Erakutsi ikasleei irizpide bakoitzaren puntuazioak';
 $string['showstudentdesc'] = 'Erakutsi Ikasleen irizpideen deskribapenak';

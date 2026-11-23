@@ -59,7 +59,7 @@ $string['moodlenetnotenabled'] = 'Kad būtų galima apdoroti išteklių importą
 $string['moodlenetsettings'] = 'MoodleNet gaunamo ryšio nustatymai';
 $string['notification'] = 'Ketinate importuoti turinį „{$a->name} ({$a->type})“ į savo svetainę. Pasirinkite kursą, prie kurio jis turėtų būti įtrauktas, arba <a href="{$a->cancellink}">atšaukite</a>.';
 $string['pluginname'] = 'MoodleNet';
-$string['privacy:metadata'] = 'MoodleNet įrankis tik palengvina kominikavimą su MoodleNet. Jis nesaugo jokių duomenų.';
+$string['privacy:metadata'] = 'MoodleNet įrankis tik palengvina komunikavimą su MoodleNet. Jis nesaugo jokių duomenų.';
 $string['profilevalidationerror'] = 'Bandant patvirtinti jūsų MoodleNet profilio ID kilo problema';
 $string['profilevalidationfail'] = 'Įveskite galiojantį MoodleNet profilio ID';
 $string['profilevalidationpass'] = 'Atrodo gerai!';

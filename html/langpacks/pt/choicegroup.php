@@ -49,6 +49,8 @@ $string['char_bullet_expanded'] = '▼';
 $string['char_limitui_parenthesis_end'] = '⦘';
 $string['char_limitui_parenthesis_start'] = '(';
 $string['choice'] = 'Escolha';
+$string['choicebegins'] = 'A escolha inicia';
+$string['choiceends'] = 'A escolha termina';
 $string['choicegroup:addinstance'] = 'Adicionar uma nova atividade Escolher Grupo';
 $string['choicegroup:choose'] = 'Registar a escolha';
 $string['choicegroup:deleteresponses'] = 'Apagar respostas';
@@ -59,6 +61,7 @@ $string['choicegroupfull'] = 'Escolher Grupo está cheio e não há lugares disp
 $string['choicegroupname'] = 'Nome do Escolher Grupo';
 $string['choicegroupopen'] = 'Desde';
 $string['choicegroupoptions'] = 'Opções de escolha';
+$string['choicegroupoptions_description'] = 'Defina as opções de grupo disponíveis para os participantes.';
 $string['choicegroupoptions_help'] = 'Aqui pode especificar quais os grupos que estarão disponíveis para os participantes poderem escolher.
 
 A lista da esquerda mostra todos os grupos e agrupamentos disponíveis. Para adicionar um ou vários grupos, selecione da lista e clique em "Adicionar". Para adicionar todos os grupos de um agrupamento, selecione o agrupamento e clique em "Adicionar".
@@ -67,6 +70,7 @@ Os grupos selecionados são exibidos na lista à direita.
 
 Para remover qualquer grupo da seleção, selecione na lista da direita e clique em "Remover".';
 $string['choicegroupsaved'] = 'A escolha foi registada';
+$string['choices'] = 'Escolhas';
 $string['choicetext'] = 'Texto da escolha';
 $string['chooseaction'] = 'Escolha uma ação...';
 $string['choosegroup'] = 'Escolha um grupo';
@@ -74,6 +78,8 @@ $string['collapse_all_groupings'] = 'Contrair todos os agrupamentos';
 $string['completiondetail:submit'] = 'Escolha um grupo';
 $string['completionsubmit'] = 'Mostrar como completa quando o utilizador faz a escolha';
 $string['createdate'] = 'Data criação do grupo';
+$string['defaultgroupdescriptionstate'] = 'Exibição predefinida da descrição do grupo';
+$string['defaultgroupdescriptionstate_desc'] = 'A descrição do grupo deve, por predefinição, ser apresentada ou não.';
 $string['defaultsettings'] = 'Configurações predefinidas';
 $string['del'] = 'Remover';
 $string['del_group'] = 'Remover grupo';
@@ -110,8 +116,21 @@ $string['maxenrollments_help'] = 'Esta opção permite limitar o número de insc
 $string['members/'] = 'Membros';
 $string['members/max'] = 'Membros / Permissão';
 $string['modulename'] = 'Escolher Grupo';
-$string['modulename_help'] = 'O módulo Escolher Grupo permite aos alunos inscreverem-se num grupo de uma disciplina. O professor pode selecionar os grupos que os alunos podem escolher e o número máximo de alunos permitidos em cada grupo.';
+$string['modulename_help'] = '#### Principais funcionalidades
+- Permitir que os alunos se inscrevam em grupos dentro de uma disciplina
+- Os professores podem definir o tamanho máximo dos grupos e controlar a disponibilidade
+- Os alunos podem visualizar os membros do grupo antes de se juntarem
+- Opção para permitir que os alunos troquem de grupo até a um prazo final
+- Suportar a seleção de múltiplos grupos e a ordenação por nome ou data de criação
+
+#### Formas de utilização
+- Organize os alunos em grupos para projetos ou trabalhos
+- Facilite o trabalho de grupo para discussões, laboratórios ou workshops
+- Permita que os alunos escolham parceiros para tarefas colaborativas
+- Controle o tamanho dos grupos para uma participação equilibrada
+- Permita alterações flexíveis nos grupos antes do início das atividades';
 $string['modulename_link'] = 'mod/choicegroup/view';
+$string['modulename_summary'] = 'Permitir aos alunos selecionar e participar em grupos de disciplinas com opções de limite de tamanho, visibilidade dos membros e prazos flexíveis.';
 $string['modulenameplural'] = 'Escolher Grupos';
 $string['moveselectedusersto'] = 'Mover os utilizadores selecionados para...';
 $string['multipleenrollmentspossible'] = 'Permitir inscrição em vários grupos';
@@ -129,6 +148,7 @@ $string['notyetresultsviewable'] = 'Os resultados estarão visíveis após o fec
 $string['numberofuser'] = 'Número de utilizadores';
 $string['onlyactive'] = 'Filtrar os dados de resposta para utilizadores com inscrições expiradas ou suspensas';
 $string['option'] = 'Grupo';
+$string['page-mod-choicegroup-x'] = 'Qualquer página do módulo Escolher grupo';
 $string['pleaseselectonegroup'] = 'Selecione pelo menos um grupo para escolher.';
 $string['pleasesetgroups'] = 'Crie pelo menos um grupo nesta disciplina';
 $string['pleasesetonegroupor'] = 'Crie pelo menos um grupo nesta disciplina.<br /><br />
@@ -162,6 +182,7 @@ $string['skipresultgraph'] = 'Ignorar gráfico do resultado';
 $string['sortgroupsby'] = 'Ordenar grupos por';
 $string['spaceleft'] = 'vaga disponível';
 $string['spacesleft'] = 'vagas disponíveis';
+$string['studentswhochose'] = 'Alunos que escolheram';
 $string['systemdefault_date'] = 'Padrão do Sistema (data de criação)';
 $string['systemdefault_name'] = 'Padrão do Sistema (nome)';
 $string['taken'] = 'Escolhido';

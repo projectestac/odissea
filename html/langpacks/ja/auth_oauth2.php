@@ -29,7 +29,7 @@ $string['accountexists'] = 'このユーザ名のユーザはこのシステム�
 $string['alreadylinked'] = 'この外部アカウントはすでにこのサイトのアカウントとリンクされています。';
 $string['auth_oauth2description'] = 'OAuth 2標準ベース認証';
 $string['auth_oauth2settings'] = 'OAuth 2認証設定';
-$string['confirmaccountemail'] = 'こんにちは {$a->fullname} さん
+$string['confirmaccountemail'] = 'こんにちは {$a->firstname} さん
 
 あなたのメールアドレスを使用して「 {$a->sitename} 」の新しいアカウントがリクエストされました。
 
@@ -44,7 +44,7 @@ $string['confirmaccountemail'] = 'こんにちは {$a->fullname} さん
 $string['confirmaccountemailsubject'] = '{$a}: アカウント確認';
 $string['confirmationinvalid'] = '確認リンクが無効または有効期限が切れています。新しい確認メールを生成するため再度ログイン処理を開始してください。';
 $string['confirmationpending'] = 'このアカウントはメール確認保留中です。';
-$string['confirmlinkedloginemail'] = 'こんにちは {$a->fullname} さん
+$string['confirmlinkedloginemail'] = 'こんにちは {$a->firstname} さん
 
 あなたのメールアドレスを使用して {$a->issuername} のログイン {$a->linkedemail} をあなたの「 {$a->sitename} 」のアカウントにリンクするようリクエストがありました
 
@@ -65,7 +65,7 @@ $string['emailconfirmlinksent'] = 'このメールアドレスで既存のアカ
 あなたのメールアドレス <b>{$a}</b> にメールが送信されています。
 
 メールにはあなたのアカウントをリンクするための簡単なインストラクションが含まれます。難しい場合、あなたのサイト管理者にご連絡ください。';
-$string['emailpasswordchangeinfo'] = 'こんにちは {$a->fullname} さん
+$string['emailpasswordchangeinfo'] = 'こんにちは {$a->firstname} さん
 
 誰か (恐らくあなた) が「 {$a->sitename} 」 のあなたのアカウントの新しいパスワードをリクエストしました。
 

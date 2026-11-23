@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['acknowledgement'] = 'Pripažinimas';
 $string['acknowledgementtext'] = 'Suprantu, kad prieš diegiant papildomus papildinius esu atsakinga už visas šios svetainės atsargines kopijas. Sutinku ir suprantu, kad įskiepiuose (ypač, bet ne tik iš neoficialių šaltinių) gali būti saugos spragų, jie gali padaryti svetainę nepasiekiamą arba sukelti privačių duomenų nutekėjimą ar praradimą.';
+$string['activitychooserfootertext'] = 'Ieškokite daugiau veiklų';
 $string['featuredisabled'] = 'Papildinio diegimo programa šioje svetainėje išjungta.';
 $string['installaddon'] = 'Įdiekite papildinį!';
 $string['installaddons'] = 'Įdiegti papildinius';
@@ -44,6 +45,8 @@ $string['installfromziptype'] = 'Papildinio tipas';
 $string['installfromziptype_help'] = 'Įskiepių, kurie teisingai deklaruoja savo komponento pavadinimą, diegimo programa gali automatiškai aptikti papildinio tipą. Jei automatinis aptikimas nepavyksta, rankiniu būdu pasirinkite tinkamą papildinio tipą. Įspėjimas: Diegimo procedūra gali nepavykti, jei nurodytas netinkamas papildinio tipas.';
 $string['installfromziptype_link'] = 'Development:Plugins';
 $string['marketplaceadminlinktext'] = 'Peržiūrėti naujus papildinius';
+$string['marketplacefindplugins'] = 'Ieškoti papildinių svetainėje Moodle Marketplace';
+$string['marketplacelink'] = 'Moodle Marketplace';
 $string['permcheck'] = 'Įsitikinkite, kad interneto serverio procesas gali įrašyti papildinio tipo šakninę vietą.';
 $string['permcheckerror'] = 'Klaida tikrinant rašymo leidimą';
 $string['permcheckprogress'] = 'Tikrinama, ar yra rašymo leidimas...';

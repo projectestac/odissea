@@ -104,7 +104,7 @@ if ($board->enableblanktarget) {
 }
 
 if (get_config('mod_board', 'enableprivacystatement')) {
-    echo html_writer::tag('div', get_string('privacystatement', 'mod_board'), ['class' => 'normal']);
+    echo html_writer::tag('div', get_string('privacystatement', 'mod_board'), ['class' => 'small']);
 }
 
 if ($board->singleusermode != board::SINGLEUSER_PRIVATE || has_capability('mod/board:manageboard', $context)) {
@@ -124,6 +124,7 @@ if (
         echo $OUTPUT->notification(get_string('nousers', 'mod_board'));
         echo $OUTPUT->box_end();
         echo $OUTPUT->footer();
+        die();
     } else {
         $nothing = $ownerid ? null : ['' => 'choosedots'];
         $select = new single_select($baseurl, 'ownerid', $users, $ownerid, $nothing);

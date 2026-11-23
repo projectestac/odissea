@@ -115,6 +115,7 @@ $string['editscheduledetails'] = 'Editar detalles del horario';
 $string['editschedulename'] = 'Editar nombre del horario';
 $string['enablecustomreports'] = 'Habilitar informes personalizados';
 $string['enablecustomreports_desc'] = 'Si se activa, los usuarios pueden crear y ver informes personalizados del Creador de informes.';
+$string['enabled'] = 'Habilitado';
 $string['enableschedule'] = 'Habilitar horario';
 $string['entitycourse'] = 'Curso';
 $string['entityuser'] = 'Usuario';

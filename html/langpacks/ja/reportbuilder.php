@@ -115,6 +115,7 @@ $string['editscheduledetails'] = 'スケジュール詳細を編集する';
 $string['editschedulename'] = 'スケジュール名を編集する';
 $string['enablecustomreports'] = 'カスタムレポートを有効にする';
 $string['enablecustomreports_desc'] = 'この設定を有効にした場合、ユーザはレポートビルダカスタムレポートを作成および閲覧できます。';
+$string['enabled'] = '有効';
 $string['enableschedule'] = 'スケジュールを有効にする';
 $string['entitycourse'] = 'コース';
 $string['entityuser'] = 'ユーザ';

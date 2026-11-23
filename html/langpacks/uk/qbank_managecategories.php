@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Керувати категоріями';
+$string['showcategorydescription'] = 'Показати описи';

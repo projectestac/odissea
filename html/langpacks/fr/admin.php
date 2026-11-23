@@ -224,7 +224,7 @@ $string['configcourseoverviewfileslimit'] = 'Le nombre maximal de fichiers pouva
 $string['configcourserequestnotify'] = 'Indiquez le nom d’utilisateur de la personne devant être informée lors de la demande de nouveaux cours.';
 $string['configcourserequestnotify2'] = 'Les utilisateurs qui seront avertis lors d’une demande de cours. Seuls les utilisateurs ayant les permissions requises pour approuver des demandes de cours sont affichés.';
 $string['configcoursesperpage'] = 'Saisissez le nombre de cours à afficher par page dans la liste des cours.';
-$string['configcourseswithsummarieslimit'] = 'Le nombre maximum de cours à afficher dans les listes des cours, y compris les résumés, avant de passer à une liste plus simple, sans les résumés.';
+$string['configcourseswithsummarieslimit'] = 'Le nombre maximum de cours à afficher dans les listes des cours, y compris les résumés, avant de passer à une liste plus simple.';
 $string['configcronclionly'] = 'Le lancement du cron par l’intermédiaire d’un navigateur web peut exposer des informations sensibles à des utilisateurs anonymes. Il est donc recommandé de ne lancer le cron qu’en ligne de commande ou de définir un mot de passe pour l’accès distant au cron.';
 $string['configcronremotepassword'] = 'Ce paramètre signifie que le script cron.php ne pourra pas être lancé depuis un navigateur web sans indiquer le mot de passe, suivant la syntaxe d’URL :<pre>
 http://site.exemple.fr/admin/cron.php?password=lemotdepasse
@@ -289,7 +289,7 @@ $string['configextendedusernamechars'] = 'Si ce réglage est activé, les noms d
 $string['configextramemorylimit'] = 'Certains scripts, par exemple pour rechercher, sauvegarder/restaurer ou le cron nécessitent plus de mémoire. Ce réglage spécifie la taille maximale de la mémoire supplémentaire. Indiquez des valeurs plus élevées pour de gros sites.';
 $string['configfilterall'] = 'Filtrer toutes les chaînes, y compris les en-têtes, titres, barre de navigation, etc. Ce réglage n’est utile qu’en combinaison avec l’utilisation du filtre « Contenus multilingues ». Utilisé seul, il ne fera que charger inutilement votre serveur.';
 $string['configfiltermatchoneperpage'] = 'Un seul lien automatique par page sera généré par les filtres de liaison automatique, pour chaque première apparition du texte. Toutes les autres occurrences seront ignorées.';
-$string['configfiltermatchonepertext'] = 'Les filtres de liaison automatique ne génèrent qu’un seul lien, pour la première occurence du texte correspondant sur une page. Les autres occurrences seront ignorées. Ce réglage n’a pas d’effet si le réglage « Filtrer une occurrence par page » est désactivé.';
+$string['configfiltermatchonepertext'] = 'Les filtres de liaison automatique ne génèrent qu’un seul lien, pour la première occurence du texte correspondant sur une page. Les autres occurrences seront ignorées. Ce réglage n’a pas d’effet si le réglage « Filtrer une occurrence par page » est activé.';
 $string['configfilternavigationwithsystemcontext'] = 'Normalement, le filtrage est lié au contexte dans lequel il est utilisé (par exemple dans un cours) ; pour la navigation du site, tout filtrer explicitement au niveau système peut cependant améliorer la performance lors de l’utilisation du filtrage sur « Contenu et titres ».';
 $string['configfilteruploadedfiles'] = 'Filtrer les fichiers HTML et fichiers texte déposés avant de les afficher, ne filtrer que les fichiers HTML déposés ou ne filtrer aucun fichier.';
 $string['configforcelogin'] = 'Habituellement, la page d’accueil et la liste des cours (mais pas les cours eux-mêmes) peuvent être consultés sans se connecter au site. Si vous voulez imposer aux visiteurs de se connecter avant de faire <strong>quoi que ce soit</strong> dans le site, veuillez activer cette option.';
@@ -524,7 +524,7 @@ $string['debugsqltrace_desc'] = 'Si ce réglage est activé, la trace PHP compl�
 $string['debugstringids'] = 'Afficher l’origine des chaînes de caractères';
 $string['debugstringids_desc'] = 'Si ce réglage est activé, l’identifiant de chaque chaîne de caractères et son composant d’origine sont affichés lorsque ?strings=1 ou &strings=1 est ajouté à l’URL de la page.';
 $string['debugtemplateinfo'] = 'Afficher les infos de gabarit';
-$string['debugtemplateinfo_desc'] = 'Si ce réglage est activité, les gabarits utilisés pour le rendu sont affichés en commentaire dans la page HTML. Après avoir modifé ce réglage, veuillez purger les caches. À n’utiliser que temporairement, à des fins de débogage, car le code HTML résultant produit des erreurs de validation. Ce règlage peut aussi bloquer certaines fonctionnalités.';
+$string['debugtemplateinfo_desc'] = 'Si ce réglage est activité, les gabarits utilisés pour le rendu sont affichés en commentaire dans la page HTML. Après avoir modifé ce réglage, veuillez purger les caches. À n’utiliser que temporairement, à des fins de débogage, car le code HTML résultant produit des erreurs de validation. Ce réglage peut aussi bloquer certaines fonctionnalités.';
 $string['debugvalidators'] = 'Afficher les liens de validation W3C';
 $string['defaultcity'] = 'Localité par défaut';
 $string['defaultcity_help'] = 'La localité saisie ici sera la ville par défaut lors de la création de nouveaux comptes utilisateurs.';
@@ -889,7 +889,7 @@ $string['managelang'] = 'Gérer';
 $string['manageqbanks'] = 'Gérer les plugins banque de questions';
 $string['manageqbehaviours'] = 'Gérer les comportements de question';
 $string['manageqtypes'] = 'Gérer les types de question';
-$string['marketplaceavailablenotice'] = 'Découvrir et télécharger des plugins dans la <a href="{$a}" target="_blank" rel="noopener noreferrer">Place du marché Moodle <i class="fa fa-external-link" role="img" aria-label="S’ouvre dans une nouvelle fenêtre" title="S’ouvre dans une nouvelle fenêtre"></i></a>.';
+$string['marketplaceavailablenotice'] = 'Découvrir et télécharger des plugins dans le <a href="{$a}" target="_blank" rel="noopener noreferrer">Magasin Moodle <i class="fa fa-external-link" role="img" aria-label="S’ouvre dans une nouvelle fenêtre" title="S’ouvre dans une nouvelle fenêtre"></i></a>.';
 $string['maturity100'] = 'Bêta';
 $string['maturity150'] = 'Version candidate';
 $string['maturity200'] = 'Version stable';
@@ -954,7 +954,7 @@ $string['moodleapp_help'] = '<p>L’app Moodle gratuite permet aux utilisateurs 
 $string['moodlebrandedapp'] = 'App Moodle personnalisée';
 $string['moodlebrandedapp_help'] = '<p>L’app Moodle personnalisée a toutes les fonctionnalités de notre app mobile gratuite pour Moodle, avec votre propre visuel personnalisé.</p>
 <a href="https://moodle.com/branded-app">À propos de l’app Moodle personnalisée</a>';
-$string['moodlebrandedappreference'] = 'Autrement, obtenez une <a href="https://moodle.com/branded-app">app Moodle personnalisée</a> avec vos propres visuels.';
+$string['moodlebrandedappreference'] = 'Autrement, procurez-vous une <a href="https://moodle.com/branded-app">app Moodle personnalisée</a> avec vos propres visuels.';
 $string['moodlenetremovalwarning'] = 'Le service MoodleNet sera fermé le 20 avril 2026. Si vous désirez continuer à utiliser MoodleNet sur votre site, installez le plugin MoodleNet depuis le <a href="https://github.com/moodlehq/moodle-tool_moodlenet" target="_blank">dépôt Github de Moodle HQ <i class="fa fa-external-link" role="img" aria-label="S’ouvre dans une nouvelle fenêtre" title="S’ouvre dans une nouvelle fenêtre"></i></a> et connectez-le à une instance auto-hebergée de MoodleNet. Ceci fait, le champ ID de profil MoodleNet sera supprimé ; veuillez migrer ces données si vous les utilisez à d’autres fins.';
 $string['moodlepartners'] = 'Partenaires Moodle';
 $string['moodlepartners_help'] = '<p>Les Partenaires Moodle sont des fournisseurs de services certifiés par Moodle HQ pour fournir des services Moodle de qualité élevée pour l’organisation de votre environnement d’apprentissage Moodle.</p>
@@ -1220,7 +1220,7 @@ $string['resultfilter'] = 'Filtrer par résultat';
 $string['reverseproxy'] = 'Proxy inverse';
 $string['reverseproxyignore'] = 'Ignorer les proxys inverses';
 $string['riskconfig'] = 'Les utilisateurs pourraient modifier la configuration et le comportement du site';
-$string['riskconfigshort'] = 'Configuration des risques';
+$string['riskconfigshort'] = 'Risque de configuration';
 $string['riskdataloss'] = 'Les utilisateurs pourraient détruire une grande quantité de contenus ou d’informations';
 $string['riskdatalossshort'] = 'Risque de perte de données';
 $string['riskmanagetrust'] = 'Les utilisateurs pourraient modifier les réglages de confiance d’autres utilisateurs';

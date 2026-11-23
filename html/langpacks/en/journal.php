@@ -26,9 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['accessdenied'] = 'Access denied';
+$string['allentries'] = 'All entries';
 $string['alwaysopen'] = 'Always open';
 $string['blankentry'] = 'Blank entry';
+$string['calendarclose'] = '{$a} closes';
+$string['calendaropen'] = '{$a} opens';
 $string['changessaved'] = 'Changes saved';
+$string['closebeforeopen'] = 'The closing time must be after the opening time.';
 $string['completiondetail:completion_create_entry'] = 'Create a journal entry';
 $string['couldnotupdatejournal'] = 'Could not update your journal';
 $string['countnotinsertjournalentry'] = 'Could not insert a new journal entry';
@@ -41,12 +45,17 @@ $string['defaultgrade'] = 'Default entry grade';
 $string['defaultgrade_help'] = 'The default maximum grade for new Journal entries.
 * Enter **100** (or any positive number) to default to Point grading.
 * Enter **0** to default to "No grade" (useful for formative activities).';
+$string['deleteentry'] = 'Delete entry';
+$string['deleteentryconfirm'] = 'Delete the entry of {$a}? Its feedback and grade are deleted too. This cannot be undone.';
 $string['editingended'] = 'Editing period has ended';
 $string['editingends'] = 'Editing period ends';
 $string['entries'] = 'Entries';
 $string['entry'] = 'Entry';
+$string['entrydeleted'] = 'The entry of {$a} was deleted.';
+$string['entryxofy'] = 'Entry {$a->index} of {$a->count}';
 $string['evententriesviewed'] = 'Journal entries viewed';
 $string['evententrycreated'] = 'Journal entry created';
+$string['evententrydeleted'] = 'Journal entry deleted';
 $string['evententryupdated'] = 'Journal entry updated';
 $string['eventfeedbackupdated'] = 'Journal feedback updated';
 $string['eventjournalcreated'] = 'Journal created';
@@ -61,6 +70,7 @@ $string['firstnamedesc'] = 'Firstname Descending';
 $string['grade'] = 'Grade';
 $string['gradedby'] = 'Graded by';
 $string['gradeingradebook'] = 'Current grade in gradebook';
+$string['gradeonebyone'] = 'Grade one by one';
 $string['incorrectcmid'] = 'Course module ID is incorrect';
 $string['incorrectcourseid'] = 'Course ID is incorrect';
 $string['incorrectcoursesectionid'] = 'Selected course section is incorrect';
@@ -69,7 +79,9 @@ $string['incorrectjournalid'] = 'Selected journal ID is incorrect';
 $string['incorrectuserid'] = 'Selected user ID is incorrect';
 $string['journal:addentries'] = 'Add journal entries';
 $string['journal:addinstance'] = 'Add a new journal';
+$string['journal:deleteentries'] = 'Delete journal entries';
 $string['journal:manageentries'] = 'Manage journal entries';
+$string['journalclosed'] = 'This journal is not open for editing.';
 $string['journalmail'] = 'Hi {$a->student},
 
 {$a->teacher} has posted feedback on your journal entry for \'{$a->journal}\'.
@@ -100,8 +112,14 @@ You can view the entry here:
 $string['mailbodyhtml'] = '{$a->username} has updated the journal entry for \'<i>{$a->journalname}</i>\'<br /><br />
 You can view the <a href="{$a->url}">journal entry here</a>.';
 $string['mailsubject'] = 'Journal feedback';
+$string['maxbelowminwords'] = 'The maximum number of words must be at least the minimum number of words.';
+$string['maxwords'] = 'Maximum number of words';
+$string['maxwords_help'] = 'Entries with more words than this cannot be saved. In Chinese and Japanese entries, characters are counted instead of words. 0 for no maximum.';
 $string['messageprovider:journal_feedback'] = 'Journal feedback from teacher';
+$string['messageprovider:reminder'] = 'Reminder before a journal closes';
 $string['messageprovider:submission'] = 'Journal entry created or modified';
+$string['minwords'] = 'Minimum number of words';
+$string['minwords_help'] = 'Entries with fewer words than this cannot be saved. In Chinese and Japanese entries, characters are counted instead of words. 0 for no minimum.';
 $string['modulename'] = 'Journal';
 $string['modulename_help'] = '###### Key features
 - Collect online text entries from students for review and grading
@@ -119,11 +137,16 @@ $string['modulename_help'] = '###### Key features
 $string['modulename_link'] = 'mod/journal/view';
 $string['modulename_summary'] = 'Collects private online text entries from students for feedback and grading, with a set availability period and no file uploads.';
 $string['modulenameplural'] = 'Journals';
+$string['needsgrading'] = 'Needs grading';
+$string['needsgradingcount'] = 'Needs grading ({$a})';
 $string['needsregrade'] = 'Entry has changed since last feedback was saved.';
+$string['negativewords'] = 'The number of words cannot be negative.';
 $string['newjournalentries'] = 'New journal entries';
+$string['nextentry'] = 'Next entry';
 $string['nodatachanged'] = 'No data was changed.';
 $string['nodeadline'] = 'Always open';
 $string['noentriesmanagers'] = 'There are no teachers';
+$string['noentriesneedgrading'] = 'No entries need grading.';
 $string['noentry'] = 'No entry';
 $string['nograde'] = 'No grade';
 $string['noratinggiven'] = 'No rating given';
@@ -134,13 +157,22 @@ $string['notifystudents_help'] = 'If enabled, students will receive a notificati
 $string['notifyteachers'] = 'Notify teachers';
 $string['notifyteachers_default'] = 'Notify teachers by default';
 $string['notifyteachers_default_help'] = 'Default setting for new Journal activities.';
-$string['notifyteachers_help'] = 'If enabled, teachers will receive a notification via Moodle messaging when a student creates or updates a journal entry.';
+$string['notifyteachers_help'] = 'When teachers receive a notification via Moodle messaging about the entries of students.
+
+* Never: teachers are not notified.
+* When an entry needs grading: teachers are notified when a student creates an entry, and the first time a student changes their entry after it was graded.
+* Every time an entry is saved: teachers are notified each time a student creates or updates an entry.';
+$string['notifyteachersalways'] = 'Every time an entry is saved';
+$string['notifyteachersneedsgrading'] = 'When an entry needs grading';
+$string['notifyteachersnever'] = 'Never';
 $string['notopenuntil'] = 'This journal won\'t be open until';
 $string['notstarted'] = 'You have not started this journal yet';
+$string['nousersyet'] = 'There are no users yet';
 $string['numchars'] = '{$a} characters';
 $string['overallrating'] = 'Overall rating';
 $string['pluginadministration'] = 'Journal module administration';
 $string['pluginname'] = 'Journal';
+$string['previousentry'] = 'Previous entry';
 $string['privacy:metadata:journal_entries'] = 'A record of journal entry';
 $string['privacy:metadata:journal_entries:entrycomment'] = 'The comment received by user to journal';
 $string['privacy:metadata:journal_entries:modified'] = 'The start time of the journal entries.';
@@ -149,18 +181,33 @@ $string['privacy:metadata:journal_entries:teacher'] = 'The teacher that has give
 $string['privacy:metadata:journal_entries:text'] = 'The text written by user';
 $string['privacy:metadata:journal_entries:userid'] = 'The ID of the user';
 $string['rate'] = 'Rate';
+$string['remindbefore'] = 'Remind students before closing';
+$string['remindbefore_help'] = 'Students who have not written an entry are sent a message this long before the journal closes. If the closing time changes, they are reminded again.';
+$string['reminderbody'] = 'The journal "{$a->journal}" in {$a->course} closes on {$a->timeclose}, and you have not written an entry yet. You can write it here: {$a->url}';
+$string['reminderbodyhtml'] = '<p>The journal <a href="{$a->url}">{$a->journal}</a> in {$a->course} closes on {$a->timeclose}, and you have not written an entry yet.</p>';
+$string['remindersubject'] = 'Journal closes soon: {$a}';
+$string['remindertask'] = 'Remind students before journals close';
 $string['removeentries'] = 'Remove all entries';
 $string['removemessages'] = 'Remove all Journal entries';
 $string['saveallfeedback'] = 'Save all my feedback';
 $string['savechanges'] = 'Save changes';
 $string['savefeedback'] = 'Save feedback';
+$string['savefeedbackandnext'] = 'Save and show next';
 $string['search:activity'] = 'Journal - activity information';
 $string['search:entry'] = 'Journal - entries';
-$string['showoverview'] = 'Show journals overview on my moodle';
 $string['showrecentactivity'] = 'Show recent activity';
 $string['started'] = 'You have started this journal';
 $string['startoredit'] = 'Start or edit my journal entry';
+$string['timeclose'] = 'Close the journal';
+$string['timeopen'] = 'Open the journal';
+$string['timeopen_help'] = 'If set, students can only edit their entry between the opening and closing times. The days available are then not used.';
+$string['toofewwords'] = 'Your entry has {$a->count} words, but it needs at least {$a->limit}.';
+$string['toomanywords'] = 'Your entry has {$a->count} words, but it can have at most {$a->limit}.';
 $string['userswhocompletedthejournal'] = 'Users who completed the journal';
 $string['userswhodidnotcompletedthejournal'] = 'Users who have not completed the journal';
 $string['viewallentries'] = 'View {$a} journal entries';
 $string['viewentries'] = 'View entries';
+$string['wordlimit'] = 'Number of words';
+$string['wordlimitmax'] = 'At most {$a}';
+$string['wordlimitmin'] = 'At least {$a}';
+$string['wordlimitrange'] = 'Between {$a->min} and {$a->max}';

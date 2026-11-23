@@ -1,0 +1,62 @@
+/* C4L MIXINS */
+
+/* Render a pix SVG as an alpha mask so its colour comes from a token instead
+ * of being baked into the asset.
+ *
+ * The mask files carry no brand colour: they are opaque where the plate is and
+ * transparent where the glyph is, so the component background shows through the
+ * glyph in any colour mode. One asset serves both light and dark.
+ *
+ * -webkit-mask-* is emitted alongside mask-* for Safari < 15.4 and for the
+ * WebViews used by the Moodle app.
+ *
+ * This one only paints: it leaves the box to whatever already sizes it. The
+ * toolbar icons need that, because _buttons.scss sizes their box and
+ * _responsive.scss resizes it again at the 992px breakpoint; the mask is
+ * centred at its natural size rather than stretched to fit.
+ */
+@mixin c4l-mask-glyph($image, $width, $height, $color) {
+    content: "";
+    background-color: $color;
+    -webkit-mask-image: $image;
+    mask-image: $image;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: $width $height;
+    mask-size: $width $height;
+}
+
+/* The same, plus the box. Unlike `content: url(...)`, a mask does not size
+ * itself from the image, so a pseudo-element that had nothing but the image in
+ * it needs explicit dimensions or it collapses to nothing.
+ */
+@mixin c4l-mask($image, $width, $height, $color) {
+    @include c4l-mask-glyph($image, $width, $height, $color);
+    display: inline-block;
+    width: $width;
+    height: $height;
+}
+
+/* Same as c4l-mask(), for the six badges that carry a darker 3x2 fold in the
+ * corner.
+ *
+ * A mask has one alpha channel, so it cannot express two colours — but the
+ * element underneath it can. Two background layers supply them: a 3x2 patch of
+ * $shade parked on the fold's corner, and $color across the rest. The mask then
+ * clips the patch down to the fold's triangle. Still one asset per badge.
+ *
+ * $fold-position is a background-position for the patch, e.g.
+ * `right 0.5px bottom 0` — the folds sit 0.5px in from their edge.
+ */
+@mixin c4l-mask-folded($image, $width, $height, $color, $shade, $fold-position) {
+    @include c4l-mask($image, $width, $height, $color);
+    background-color: transparent;
+    background-image:
+        linear-gradient($shade, $shade),
+        linear-gradient($color, $color);
+    background-repeat: no-repeat;
+    background-size: 3px 2px, 100% 100%;
+    background-position: $fold-position, 0 0;
+}

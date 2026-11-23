@@ -26,12 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['accessibility:addinstance'] = 'Adaugă un nou block Accesibilitate';
-$string['autolaunch'] = '(întotdeauna?)';
-$string['blockname'] = 'Accesibilitate';
-$string['char'] = 'A';
-$string['config_bg'] = 'Culoare de fundal';
-$string['jsnosave'] = 'Eroare la salvarea setărilor';
 $string['pluginname'] = 'Accesibilitate';
-$string['pluginnameplural'] = 'Blocuri Accesibilitate';
-$string['save'] = 'Salvare setări';
-$string['saved'] = 'Setări salvate';

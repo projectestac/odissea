@@ -168,6 +168,7 @@ $string['tiny:failed_to_initialize_plugin_0'] = 'Plugin konnte nicht initialisie
 $string['tiny:failed_to_load_plugin_0_from_url_1'] = 'Plugin konnte nicht geladen werden: {0} von URL {1}';
 $string['tiny:failed_to_load_plugin_url_0'] = 'Plugin-URL konnte nicht geladen werden: {0}';
 $string['tiny:failed_to_upload_image_0'] = 'Bild konnte nicht hochgeladen werden: {0}';
+$string['tiny:field_label_and_rich_textarea_help'] = '{$a}. Rich-Text-Bereich. Drücken Sie ALT-F9 für das Menü. Drücken Sie ALT-F10 für die Symbolleiste. Drücken Sie ALT-0 für Hilfe.';
 $string['tiny:file'] = 'Datei';
 $string['tiny:find'] = 'Suchen';
 $string['tiny:find_and_replace'] = 'Suchen und Ersetzen';

@@ -113,6 +113,7 @@ $string['editscheduledetails'] = 'Redigera schemadetaljer';
 $string['editschedulename'] = 'Redigera schemanamn';
 $string['enablecustomreports'] = 'Aktivera anpassade rapporter';
 $string['enablecustomreports_desc'] = 'Tillåt användare att skapa och visa anpassade rapporter för Rapportbyggaren';
+$string['enabled'] = 'Aktiverat';
 $string['enableschedule'] = 'Aktivera schema';
 $string['entitycourse'] = 'Kurs';
 $string['entityuser'] = 'Användare';

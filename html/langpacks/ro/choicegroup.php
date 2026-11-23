@@ -95,7 +95,6 @@ $string['notopenyet'] = 'Ne pare rău, această activitate nu este disponibilă 
 $string['notyetresultsviewable'] = 'Rezultatele vor fi vizibile după încheierea acestei activități.';
 $string['numberofuser'] = 'Numărul utilizatorilor';
 $string['option'] = 'Grup';
-$string['page-mod-choice-x'] = 'Orice pagină a modului de alegere a grupului';
 $string['pluginname'] = 'Alegere grup';
 $string['privacy'] = 'Confidențialitatea rezultatelor';
 $string['privacy:metadata'] = 'Pluginul Alegere grup nu stochează date personale. Toate datele utilizatorului sunt stocate de componenta de grup a nucleului Moodle (core_group).';

@@ -479,7 +479,7 @@ $string['show_in_course_lti1'] = 'ツール設定使用';
 $string['show_in_course_lti1_help'] = 'コースへの追加時の選択のため、このツールを教師に活動チューザ内で表示することができます。コースへの外部ツール追加時に事前設定ツールドロップダウンメニュー内にも表示することができます。さらなるツール設定のオプションはコースへの外部ツール追加時に正確なツールURLが入力された場合のみ使用されます。';
 $string['show_in_course_lti2'] = 'ツール設定使用';
 $string['show_in_course_lti2_help'] = 'コースへの追加時の選択のため、このツールを活動チューザ内で教師に表示することができます。またはコースへの外部ツール追加時に事前設定ツールドロップダウンメニュー内に表示することができます。';
-$string['show_in_course_no'] = '表示しない、合致するツールURLが入力された場合のみ使用する';
+$string['show_in_course_no'] = '表示しない、一致するツールURLが入力された場合のみ使用する';
 $string['show_in_course_preconfigured'] = '外部ツール追加時に事前設定ツールとして表示する';
 $string['showinactivitychooser'] = '活動チューザに表示する';
 $string['sitehost'] = 'サイトホスト名';
@@ -536,28 +536,28 @@ $string['tooltypeupdated'] = '事前設定ツールが更新されました。';
 $string['toolurl'] = 'ツールURL';
 $string['toolurl_contentitemselectionrequest'] = 'コンテンツ選択URL';
 $string['toolurl_contentitemselectionrequest_help'] = 'コンテンツ選択URLはツールプロバイダからコンテンツ選択ページを起動するために使用されます。空白にした場合、ツールURLが使用されます。';
-$string['toolurl_help'] = 'ツールベースURLは正しいツール設定をツールツールURLと合致させるために使用されます。URLの接頭辞「http(s)」は任意です。
+$string['toolurl_help'] = 'ツールベースURLは正しいツール設定をツールツールURLと一致させるために使用されます。URLの接頭辞「http(s)」は任意です。
 
 加えて、外部ツールインスタンスのツールURLが指定されていない場合、ベースURLが使用されます。
 
-例えばベースURL *tool.com* は以下と合致します:
+例えばベースURL *tool.com* は以下と一致します:
 
 * tool.com
 * tool.com/quizzes
 * tool.com/quizzes/quiz.php?id=10
 * www.tool.com/quizzes
 
-ベースURL  *www.tool.com/quizzes* は以下と合致します:
+ベースURL  *www.tool.com/quizzes* は以下と一致します:
 
 * www.tool.com/quizzes
 * tool.com/quizzes
 * tool.com/quizzes/take.php?id=10
 
-ベースURL  *quiz.tool.com* は以下と合致します:
+ベースURL  *quiz.tool.com* は以下と一致します:
 * quiz.tool.com
 * quiz.tool.com/take.php?id=10
 
-2つの異なるツール設定が同じドメインに対して割り当てられている場合、最も適切に合致した設定が使用されます。
+2つの異なるツール設定が同じドメインに対して割り当てられている場合、最も適切に一致した設定が使用されます。
 
 あなたはカートリッジURLを入力することもできます。ツール詳細は自動的に入力されます。';
 $string['toolurlplaceholder'] = 'ツールURL ...';

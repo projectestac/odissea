@@ -75,7 +75,7 @@ $string['capabilities'] = 'Galimybės';
 $string['capabilities_help'] = 'Pasirinkite tas galimybes, kurias norite pasiūlyti įrankių teikėjui. Galima pasirinkti daugiau nei vieną galimybę.';
 $string['capabilitiesrequired'] = 'Norint aktyvuoti šį įrankį, reikia turėti prieigą prie šių duomenų:';
 $string['cleanaccesstokens'] = 'Išorinis įrankis pašalina pasibaigusio galiojimo prieigos raktus';
-$string['click_to_continue'] = '<a href="{$a->link}" target="_top">Spragtelkite, kad tęsti</a>';
+$string['click_to_continue'] = '<a href="{$a->link}" target="_top">Spustelėkite, kad tęstumėte</a>';
 $string['clientidadmin'] = 'Kliento ID';
 $string['clientidadmin_help'] = 'Kliento ID yra unikali reikšmė, naudojama įrankiui identifikuoti. Jis sukuriamas automatiškai kiekvienam įrankiui, kuriame naudojamas JWT saugos profilis, įdiegtas LTI 1.3 versijoje, ir turėtų būti dalis informacijos, perduodamos įrankio tiekėjui, kad jie galėtų konfigūruoti ryšį.';
 $string['comment'] = 'Komentaras';
@@ -182,7 +182,7 @@ $string['external_tool_type_help'] = '* *** **Automatinis, pagal įrankio URL** 
 
 ### Iš anksto sukonfigūruoto įrankio redagavimas
 
-Po iš anksto sukonfigūruoto įrankio iškrentančiu meniu yra trys piktogramos::
+Po iš anksto sukonfigūruoto įrankio iškrentančiu meniu yra trys piktogramos:
 * **Pridėti** – sukurkite kurso lygio įrankio konfigūraciją. Visi šio kurso išoriniai įrankių egzemplioriai gali naudoti įrankio konfigūraciją.
 * **Redaguoti** – iškrentančiame meniu pasirinkite kurso lygio įrankį, tada spustelėkite šią piktogramą. Išsamią įrankio konfigūracijos informaciją galima redaguoti.
 * **Ištrinti** – pašalinkite pasirinktą kurso lygio įrankį.';
@@ -360,7 +360,7 @@ $string['privacy:metadata:timecreated'] = 'Data, kada įrašas sukurtas';
 $string['privacy:metadata:timemodified'] = 'Data, kada įrašas keistas';
 $string['privacy:metadata:userid'] = 'Naudotojo, pasiekiančio LTI vartotoją, ID';
 $string['privacy:metadata:useridnumber'] = 'Naudotojo, prisijungusio prie LTI vartotojo, ID numeris';
-$string['privacy:metadata:username'] = 'Naudptojo, prisijungusio prie LTI vartotojo, naudotojo vardas';
+$string['privacy:metadata:username'] = 'Naudotojo, prisijungusio prie LTI vartotojo, naudotojo vardas';
 $string['publickey'] = 'Viešasis raktas';
 $string['publickey_help'] = 'Viešasis raktas (PEM formatu), kurį suteikia įrankis, leidžiantis patikrinti gaunamų pranešimų ir paslaugų užklausų parašus.';
 $string['publickeyset'] = 'Viešasis raktų rinkinys';

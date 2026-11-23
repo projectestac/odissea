@@ -22,7 +22,7 @@
  */
 class qtype_shortanswerwiris_test_helper extends question_test_helper {
     public function get_test_questions() {
-        return array('scienceshortanswer', 'algorithmsaw');
+        return array('scienceshortanswer', 'algorithmsaw', 'textfield', 'inlineeditor', 'graphical', 'compound');
     }
 
     /**
@@ -133,5 +133,103 @@ class qtype_shortanswerwiris_test_helper extends question_test_helper {
         $form->wiristruefalse = '';
 
         return $form;
+    }
+
+    /**
+     * Builds a shortanswerwiris form-data object that shares the common
+     * boilerplate (name, marks, single correct answer and assertions) and only
+     * varies the Wiris Quizzes answer-field configuration carried in the
+     * <localData> block. This is what lets the Behat suite exercise each input
+     * option (text, inline equation, graphical, compound) without hand-writing a
+     * full payload per scenario.
+     *
+     * @param string $name Question name.
+     * @param string $questiontext Question text shown to the student.
+     * @param string $correctanswer The single correct answer.
+     * @param string $localdata The <localData>...</localData> block (field type).
+     * @param string $slots The <slots>...</slots> block (one or more answer slots).
+     * @return stdClass
+     */
+    private function make_input_type_form_data($name, $questiontext, $correctanswer, $localdata, $slots) {
+        $form = new stdClass();
+        test_question_maker::initialise_a_question($form);
+        $form->name = $name;
+        $form->questiontext = array('text' => $questiontext, 'format' => FORMAT_HTML);
+        $form->defaultmark = 1;
+        $form->generalfeedback = array('text' => '', 'format' => FORMAT_HTML);
+        $form->usecase = false;
+        $form->answer = array($correctanswer);
+        $form->fraction = array('1.0');
+        $form->feedback = array(array('text' => '', 'format' => FORMAT_HTML));
+        $form->qtype = question_bank::get_qtype('shortanswer');
+        $form->wirisquestion = '<question><correctAnswers><correctAnswer>' . $correctanswer . '</correctAnswer>'
+            . '</correctAnswers><assertions><assertion name="syntax_math"/>'
+            . '<assertion name="equivalent_symbolic"/></assertions>' . $slots . $localdata . '</question>';
+        $form->wirislang = 'en';
+        $form->wiristruefalse = '';
+        return $form;
+    }
+
+    /**
+     * Plain-text answer field: the only Wiris answer input that is a real HTML
+     * text box, so it is the one input option that Behat can both fill and grade
+     * end to end.
+     * @return stdClass
+     */
+    public function get_shortanswerwiris_question_form_data_textfield() {
+        return $this->make_input_type_form_data(
+            'SA WIRIS text field',
+            '<p>Type the word energy.</p>',
+            'energy',
+            '<localData><data name="inputField">textField</data></localData>',
+            '<slots><slot><initialContent></initialContent></slot></slots>'
+        );
+    }
+
+    /**
+     * Inline equation editor (MathType overlay). Not keyboard-fillable; the E2E
+     * test only checks that it renders and the attempt workflow completes.
+     * @return stdClass
+     */
+    public function get_shortanswerwiris_question_form_data_inlineeditor() {
+        return $this->make_input_type_form_data(
+            'SA WIRIS inline equation',
+            '<p>Write the expression x + 1.</p>',
+            'x+1',
+            '<localData><data name="inputField">inlineEditor</data></localData>',
+            '<slots><slot><initialContent></initialContent></slot></slots>'
+        );
+    }
+
+    /**
+     * Graphical (draw) answer field. Canvas based; not keyboard-fillable.
+     * @return stdClass
+     */
+    public function get_shortanswerwiris_question_form_data_graphical() {
+        return $this->make_input_type_form_data(
+            'SA WIRIS graphical',
+            '<p>Draw the line y = x.</p>',
+            'x',
+            '<localData><data name="inputField">inlineGraph</data></localData>',
+            '<slots><slot><initialContent></initialContent></slot></slots>'
+        );
+    }
+
+    /**
+     * Compound answer: several answer boxes inside one question. Not
+     * keyboard-fillable; the E2E test checks it renders and submits.
+     * @return stdClass
+     */
+    public function get_shortanswerwiris_question_form_data_compound() {
+        return $this->make_input_type_form_data(
+            'SA WIRIS compound',
+            '<p>Give the slope and intercept of y = x + 1.</p>',
+            'x+1',
+            '<localData><data name="inputField">popupEditor</data>'
+                . '<data name="inputCompound">true</data>'
+                . '<data name="gradeCompound">distribute</data></localData>',
+            '<slots><slot><initialContent></initialContent></slot>'
+                . '<slot><initialContent></initialContent></slot></slots>'
+        );
     }
 }

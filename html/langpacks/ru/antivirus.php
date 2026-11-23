@@ -45,6 +45,7 @@ $string['emailfilesize'] = 'Размер файла:';
 $string['emailgeoinfo'] = 'Местонахождение:';
 $string['emailinfectedfiledetected'] = 'Обнаружен зараженный файл';
 $string['emailipaddress'] = 'IP-адрес:';
+$string['emailreferer'] = 'Источник:';
 $string['emailreport'] = 'Отчет:';
 $string['emailscanner'] = 'Сканер:';
 $string['emailscannererrordetected'] = 'Ошибка сканирования';

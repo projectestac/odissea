@@ -174,6 +174,7 @@ export default function(settings) {
     var reloadTimer = null,
         lastHistoryId = null,
         isEditor = options.isEditor || false,
+        canManageNotes = options.canManageNotes || false,
         usersCanEdit = options.usersCanEdit,
         userId = parseInt(options.userId) || -1,
         ownerId = parseInt(options.ownerId),
@@ -299,7 +300,7 @@ export default function(settings) {
 
             note.find('.mod_board_rating').attr('aria-label', strings.aria_ratepost.replace('{column}',
                 columnIdentifier).replace('{post}', noteIdentifier));
-            note.find('.note_ariatext').html(noteIdentifier);
+            note.find('.note_ariatext').text(noteIdentifier);
         }
 
     };
@@ -588,7 +589,7 @@ export default function(settings) {
      */
     var addNote = function(columnid, ident, identifier, heading, content, attachment, owner, sortorder, rating, commentcount) {
         var ismynote = owner.id == userId || !ident;
-        var iseditable = isEditor || (ismynote && !isReadOnlyBoard);
+        var iseditable = canManageNotes || (ismynote && !isReadOnlyBoard);
 
         if (!ident) {
             // Nothing to do.
@@ -673,7 +674,7 @@ export default function(settings) {
 
             notecontrols.append(removeElement);
 
-            if (usersCanEdit == 1 || isEditor) {
+            if (usersCanEdit == 1 || canManageNotes) {
                 var moveElement = $('<div class="mod_board_move fa fa-arrows move_note" role="button" tabindex="0"></div>');
                 notecontrols.append(moveElement);
                 moveNotesDialog.init(moveNote);
@@ -847,7 +848,7 @@ export default function(settings) {
         }
         sortNotes(columnContent);
         updateColumnAria(ident);
-        if (isEditor || usersCanEdit == 1) {
+        if (canManageNotes || usersCanEdit == 1) {
             updateSortable();
         }
         if (isEditor) {
@@ -1442,8 +1443,10 @@ export default function(settings) {
 
             lastHistoryId = board.historyid;
 
-            if (isEditor) {
+            if (canManageNotes) {
                 updateSortable();
+            }
+            if (isEditor) {
                 columnSorting();
             }
 

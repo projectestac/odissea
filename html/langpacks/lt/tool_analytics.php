@@ -78,7 +78,7 @@ $string['evaluationmode_help'] = 'Yra du vertinimo režimai:
 Treniruotas modelis pasiekiamas tik tuo atveju, jei treniruotas modelis buvo importuotas į svetainę ir dar nebuvo iš naujo treniruotas naudojant svetainės duomenis.';
 $string['evaluationmodecolconfiguration'] = 'Konfigūracija';
 $string['evaluationmodecoltrainedmodel'] = 'Ištreniruotas modelis';
-$string['evaluationmodeconfiguration'] = 'Įvertiti modelio konfigūraciją';
+$string['evaluationmodeconfiguration'] = 'Įvertinti modelio konfigūraciją';
 $string['evaluationmodeinfo'] = 'Šis modelis buvo importuotas į svetainę. Galite įvertinti modelio našumą arba galite įvertinti modelio konfigūracijos našumą naudodami svetainės duomenis.';
 $string['evaluationmodetrainedmodel'] = 'Įvertinti ištreniruotą modelį';
 $string['executescheduledanalysis'] = 'Atlikti suplanuotą analizę';
@@ -90,7 +90,7 @@ $string['extrainfo'] = 'Info';
 $string['generalerror'] = 'Vertinimo klaida. Būsenos kodas {$a}';
 $string['goodmodel'] = 'Tai geras modelis prognozėms gauti. Įjunkite jį, kad pradėtumėte gauti prognozes.';
 $string['ignoreversionmismatches'] = 'Ignoruoti versijų neatitikimus';
-$string['ignoreversionmismatchescheckbox'] = 'Nepaisti šios svetainės versijos ir pradinės svetainės versijos skirtumų.';
+$string['ignoreversionmismatchescheckbox'] = 'Nepaisyti šios svetainės versijos ir pradinės svetainės versijos skirtumų.';
 $string['importedsuccessfully'] = 'Modelis sėkmingai importuotas.';
 $string['importmodel'] = 'Importuoti modelį';
 $string['indicators'] = 'Rodikliai';

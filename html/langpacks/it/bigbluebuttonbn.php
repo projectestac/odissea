@@ -252,6 +252,7 @@ $string['event_meeting_left'] = 'Abbandono della riunione';
 $string['event_recording_deleted'] = 'Eliminazione registrazione';
 $string['event_recording_edited'] = 'Modifica registrazione';
 $string['event_recording_imported'] = 'Importazione registrazione';
+$string['event_recording_link_deleted'] = 'Eliminazione collegamento alla registrazione';
 $string['event_recording_protected'] = 'Protezione registrazione';
 $string['event_recording_published'] = 'Pubblicazione registrazione';
 $string['event_recording_unprotected'] = 'Rimozione protezione registrazione';

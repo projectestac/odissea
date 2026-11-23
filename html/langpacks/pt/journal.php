@@ -96,7 +96,6 @@ $string['saveallfeedback'] = 'Guardar todo o meu feedback';
 $string['savefeedback'] = 'Guardar feedback';
 $string['search:activity'] = 'Diário - informação da atividade';
 $string['search:entry'] = 'Diário - entradas';
-$string['showoverview'] = 'Mostrar visão global do diário no meu Painel do utilizador';
 $string['showrecentactivity'] = 'Mostrar atividade recente';
 $string['startoredit'] = 'Iniciar ou editar a minha entrada no diário';
 $string['userswhocompletedthejournal'] = 'Utilizadores que concluíram o diário';

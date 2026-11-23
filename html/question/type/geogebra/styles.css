@@ -1,0 +1,15 @@
+.qtype_geogebra-article * input {
+    height: auto !important;
+    margin: auto !important;
+}
+
+.qtype-geogebra-hover {
+    border: 2px dashed #000;
+    background: rgba(192,192,192,0.5);
+    opacity: 0.4;
+}
+
+/* Geogebra ggb_preview overlay fix */
+.ggb_preview {
+    z-index: 0 !important;
+}

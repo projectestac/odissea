@@ -88,7 +88,7 @@ $string['emailchangecancel'] = 'メール変更をキャンセルする';
 $string['emailchangepending'] = '変更保留中です。あなたの {$a->preference_newemail} に送信されたリンクを開いてください。';
 $string['emailnowexists'] = 'あなたのプロファイルに割り当てようと試みたメールアドレスはリクエスト後、他のユーザに割り当てられています。そのため、あなたのメールアドレス変更はキャンセルされました。別のメールアドレスで再度お試しください。';
 $string['emailupdate'] = 'メールアドレス更新';
-$string['emailupdatemessage'] = 'こんにちは {$a->fullname} さん
+$string['emailupdatemessage'] = 'こんにちは {$a->firstname} さん
 
 あなたは {$a->site} のアカウントのメールアドレス変更をリクエストしました。
 

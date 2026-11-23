@@ -70,7 +70,6 @@ $string['addpricecategoryinfo'] = 'Vous pouvez ajouter une autre catégorie de p
 $string['address'] = 'Adresse';
 $string['addsemester'] = 'Ajouter un semestre';
 $string['addtocalendar'] = 'Ajouter au calendrier du cours';
-$string['addtocalendardesc'] = 'Les événements du calendrier des cours sont visibles par TOUS les utilisateurs d’un cours. Si vous ne voulez pas qu’ils soient créés du tout, vous pouvez désactiver ce paramètre et le verrouiller par défaut. Ne vous inquiétez pas : les événements du calendrier utilisateur pour les options réservées seront quand même créés.';
 $string['addtogroup'] = 'Inscrire automatiquement les utilisateurs dans le groupe du cours lié';
 $string['addtogroup_help'] = 'Inscrire automatiquement les utilisateurs dans le groupe - le groupe sera créé automatiquement avec le nom « Nom de la réservation - Nom de l’option »';
 $string['addtogroupofcurrentcourse'] = 'Inscrire automatiquement les utilisateurs aux groupes du cours actuel';
@@ -277,10 +276,10 @@ $string['blockinglabel_help'] = 'Saisissez le message à afficher lorsqu’une r
 Si vous souhaitez qu’il soit traduit, vous pouvez utiliser
 <a href="https://docs.moodle.org/403/en/Multi-language_content_filter" target="_blank">les filtres de langage</a>.';
 $string['blockoperator'] = 'Opérateur';
-$string['blockoperator_help'] = '<b>Bloquer au-dessus</b> ... Les réservations en ligne seront bloquées une fois le pourcentage indiqué atteint.
+$string['blockoperator_help'] = '<b>Bloquer au-dessus</b> … Les réservations en ligne seront bloquées une fois le pourcentage indiqué atteint.
 Seuls les caissiers et les administrateurs pourront ensuite effectuer des réservations.<br>
 
-<b>Bloquer au-dessous</b> ... Les réservations en ligne seront bloquées jusqu\'à ce que le pourcentage indiqué soit atteint.
+<b>Bloquer au-dessous</b> … Les réservations en ligne seront bloquées jusqu\'à ce que le pourcentage indiqué soit atteint.
 Avant cela, seuls les caissiers et les administrateurs pourront effectuer des réservations.';
 $string['boactioncancelbookingdesc'] = 'Utilisé pour les options qui peuvent être achetées plusieurs fois';
 $string['boactioncancelbookingvalue'] = 'Activer l’annulation immédiate';
@@ -519,7 +518,6 @@ $string['bookedtextsubjectbookingmanager'] = 'Nouvelle réservation pour {$a->ti
 $string['bookedusers'] = 'Utilisateurs enregistrés';
 $string['bookelectivesbtn'] = 'Réserver les choix sélectionnés';
 $string['booking'] = 'Réservation';
-$string['booking:addeditownoption'] = 'Ajouter une nouvelle option et modifier ses propres options.';
 $string['booking:addinstance'] = 'Ajouter une nouvelle réservation';
 $string['booking:alwayscanapprove'] = 'Peut toujours confirmer/refuser les réservations';
 $string['booking:assigndeputies'] = 'Désigner des suppléants';
@@ -543,7 +541,7 @@ $string['booking:editoptionformconfig'] = 'Modifier le formulaire de configurati
 $string['booking:editperformance'] = 'Performances des tests';
 $string['booking:editscheduledmails'] = 'Modifier les courriels programmés';
 $string['booking:editteacherdescription'] = 'Modifier la description de l’enseignant';
-$string['booking:executebulkoperations'] = 'Peut exécuter des opérations en lot';
+$string['booking:executebulkoperations'] = 'Peut exécuter des opérations par lots';
 $string['booking:expertoptionform'] = 'Formulaire d’option expert';
 $string['booking:importoptions'] = 'Options d’importation';
 $string['booking:limitededitownoption'] = 'Moins que l\'option addeditownoption, n’autorise que des actions très limitées';
@@ -747,8 +745,6 @@ $string['bookingstatusonwaitinglist'] = 'Sur la liste d’attente';
 $string['bookingstatuspreviouslybooked'] = 'Réservé précédemment';
 $string['bookingstatusreserved'] = 'Réservé';
 $string['bookingstracker'] = 'Suivi des réservations';
-$string['bookingstracker_desc'] = 'Ici, vous pouvez activer le suivi des réservations.
-Il permet aux utilisateurs autorisés de gérer les réservations pour l\'ensemble du site à différents niveaux hiérarchiques (dates, options, instance, cours Moodle, site entier) et de modifier le statut de présence des utilisateurs ayant réservé.';
 $string['bookingstrackerdelete'] = 'Se désinscrire';
 $string['bookingstrackerpresencecounter'] = 'Compter les présences';
 $string['bookingstrackerpresencecounter_desc'] = 'Affichez un compteur indiquant le nombre total de présences.
@@ -808,7 +804,6 @@ $string['btnviewavailable'] = 'Voir les options disponibles';
 $string['bulkoperations'] = 'Afficher la liste des options de réservation pour permettre les opérations en masse';
 $string['bulkoperationsheader'] = 'Mettre à jour les données pour la ou les options de réservation sélectionnées';
 $string['cachedef_bookedusertable'] = 'Table des utilisateurs inscrits (cache)';
-$string['cachedef_bookforuser'] = 'Réserver pour un utilisateur (cache)';
 $string['cachedef_bookinganswers'] = 'Réservations (Cache)';
 $string['cachedef_bookinghistorytable'] = 'Tableau de l’historique des réservations (Cache)';
 $string['cachedef_bookingoptions'] = 'Options de réservation (cache)';
@@ -1392,7 +1387,7 @@ Cette fonction s\'applique également au cours sélectionné dans la section «�
 $string['enroluserstowaitinglist'] = 'Mettre les utilisateurs ayant réservé sur liste d’attente et les inscrire uniquement après confirmation ?';
 $string['enroluserwhobookedtocourse'] = 'Souhaitez-vous également réserver cette option pour vous-même ?';
 $string['enroluserwhobookedtocoursewarning'] = 'Si vous n’achetez qu\'une seule place et choisissez de vous inscrire vous-même, aucun lien d’inscription ne sera créé.';
-$string['enternote'] = 'Saisissez une note...';
+$string['enternote'] = 'Saisissez une note…';
 $string['enteruserprofilefield'] = 'Sélectionnez les utilisateurs en saisissant une valeur dans le champ de profil utilisateur personnalisé. Attention ! Cette action concerne tous les utilisateurs de la plateforme.';
 $string['entervalidurl'] = 'Veuillez entrer une URL valide !';
 $string['entities'] = 'Choisissez des lieux avec plugin d’entités';
@@ -1402,8 +1397,6 @@ $string['equals'] = 'a exactement cette valeur (texte ou nombre)';
 $string['equalsnot'] = 'n\'a pas exactement cette valeur (texte ou nombre)';
 $string['equalsnotplain'] = 'n\'a pas exactement cette valeur';
 $string['equalsplain'] = 'a exactement cette valeur';
-$string['error:bookingstrackernotactivated'] = 'Vous n\'êtes pas autorisé à ouvrir cette page.
-Soit le paramètre du suivi des réservations (bookingstracker) n\'est pas activé, soit vous ne disposez pas de Booking PRO (ou votre abonnement Booking PRO a expiré).';
 $string['error:campaignend'] = 'La fin de la campagne doit être postérieure à son début.';
 $string['error:campaignstart'] = 'Le début de la campagne doit précéder la fin de la campagne.';
 $string['error:chooseint'] = 'Vous devez saisir un nombre ici.';
@@ -1637,8 +1630,8 @@ $string['infoalreadybooked'] = '<div class="infoalreadybooked"><i>Vous avez déj
 $string['infonobookingoption'] = 'Pour ajouter une option de réservation, veuillez utiliser le bloc des paramètres ou l\'icône des paramètres en haut de la page.';
 $string['infotext:installmoodlebugfix'] = 'Wunderbyte a corrigé un bug dans le noyau de Moodle. Ce correctif n\'est pas encore inclus dans votre version de Moodle. Par conséquent, vous pourriez rencontrer des messages d\'erreur JavaScript à certains endroits. À partir de Moodle 4.1, il suffit d\'installer les mises à jour de sécurité en cours.';
 $string['infotext:onlyfordebugging'] = 'Cette page est uniquement accessible en mode débogage';
-$string['infotext:prolicensenecessary'] = '<a href="https://showroom.wunderbyte.at/course/view.php?id=62" target="_blank">Obtenez votre licence PRO ici...</a>';
-$string['infotext:prolicensenecessarytextandlink'] = 'Vous avez besoin d\'une licence Booking PRO pour utiliser cette fonctionnalité <a href="https://showroom.wunderbyte.at/course/view.php?id=62" target="_blank">Obtenez votre licence PRO ici...</a>';
+$string['infotext:prolicensenecessary'] = '<a href="https://showroom.wunderbyte.at/course/view.php?id=62" target="_blank">Obtenez votre licence PRO ici…</a>';
+$string['infotext:prolicensenecessarytextandlink'] = 'Vous avez besoin d\'une licence Booking PRO pour utiliser cette fonctionnalité <a href="https://showroom.wunderbyte.at/course/view.php?id=62" target="_blank">Obtenez votre licence PRO ici…</a>';
 $string['infotext:scheduledmailswarning'] = 'Videz le cache et rechargez la page pour afficher l’état actuel. <br> Veuillez noter que tous les messages programmés ne seront pas envoyés, car leur validité est vérifiée avant l’envoi.';
 $string['infowaitinglist'] = '<div class="infowaitinglist"><i>Vous êtes sur la liste d\'attente pour cette option.</i></div>';
 $string['installmentprice'] = 'Prix du versement';
@@ -1765,7 +1758,7 @@ $string['maxoptionsfromcategoryfielddesc'] = 'Sélectionnez un champ dont les va
 $string['maxoptionsfromcategoryvalue'] = 'Quelle valeur faut-il indiquer dans « {$a} » pour que cette restriction soit appliquée ?';
 $string['maxoptionsfrominstance'] = 'Cette limitation s\'applique uniquement aux réservations de cette instance';
 $string['maxoptionsstring'] = 'Vous avez atteint le nombre maximal de réservations de ce type.';
-$string['maxoptionsstringdetailed'] = 'Vous avez atteint le nombre maximal de {$a->max} réservations de type « {$a->type}»  (dans la catégorie « {$a->category} ») : <br> {$a->maxoptions}';
+$string['maxoptionsstringdetailed'] = 'Vous avez atteint le nombre maximal de {$a->max} réservations de type « {$a->type}» (dans la catégorie « {$a->category} ») : <br> {$a->maxoptions}';
 $string['maxoverbooking'] = 'Nombre max. de places sur la liste d’attente';
 $string['maxoverbooking_help'] = 'Saisissez « -1 » pour une liste d\'attente illimitée et « 0 » pour désactiver la liste d\'attente.';
 $string['maxparticipantsnumber'] = 'Nombre max. de participants';
@@ -2142,12 +2135,12 @@ $string['priceformulaadd_help'] = 'Valeur supplémentaire à <strong>ajouter</st
 $string['priceformulaheader'] = 'Formule de prix <span class="badge bg-success text-light"><i class="fa fa-cogs" aria-hidden="true"></i> PRO</span>';
 $string['priceformulaheader_desc'] = 'Utilisez une formule de prix pour calculer automatiquement les prix des options de réservation.';
 $string['priceformulainfo'] = '<a data-toggle="collapse" data-bs-toggle="collapse" href="#priceformula" role="button" aria-expanded="false" aria-controls="priceformula">
-<i class="fa fa-code"></i> Afficher le JSON de la formule de prix...
+<i class="fa fa-code"></i> Afficher le JSON de la formule de prix…
 </a>
 <div class="collapse" id="priceformula">
 <samp>{$a->formula}</samp>
 </div><br>
-<a href="{$a->url}" target="_blank"><i class="fa fa-edit"></i> Modifier la formule...</a><br><br>
+<a href="{$a->url}" target="_blank"><i class="fa fa-edit"></i> Modifier la formule…</a><br><br>
 Ci-dessous, vous pouvez également ajouter manuellement un facteur (multiplication) et une valeur absolue (addition) à la formule.';
 $string['priceformulaisactive'] = 'Lors de l’enregistrement, les prix seront calculés à l’aide de la formule de prix (cela remplacera les prix actuels).';
 $string['priceformulamultiply'] = 'Facteur manuel';
@@ -2270,12 +2263,6 @@ $string['profeatures:availabilityinfotexts'] = '<ul>
 </ul>';
 $string['profeatures:boactions'] = '<ul>
 <li><b>Activer les actions après la réservation</b></li>
-</ul>';
-$string['profeatures:bookingstracker'] = '<ul>
-<li><b>Permettez aux utilisateurs de gérer leurs réservations sur l\'ensemble du site à différents niveaux hiérarchiques (date, option de réservation, instance de réservation, cours Moodle, plateforme entière)
-et d\'enregistrer la présence des utilisateurs inscrits.</b></li>
-<li><b>Suivi de la présence : vous pouvez spécifier les présences des utilisateurs pour chaque date (session).</b></li>
-<li><b>Sélectionnez le statut de présence à suivre.</b></li>
 </ul>';
 $string['profeatures:cachesettings'] = '<ul>
 <li><b>Pas de mise en cache des paramètres de réservation</b></li>
@@ -2557,7 +2544,7 @@ $string['selected'] = 'Sélectionné';
 $string['selectelective'] = 'Choisissez une matière au choix pour {$a} crédits';
 $string['selectfield'] = 'Liste déroulante';
 $string['selectfieldofbookingoption'] = 'Sélectionnez le champ d\'option de réservation';
-$string['selectoptionid'] = 'S\'il vous plaît, sélectionnez une option !';
+$string['selectoptionid'] = 'Veuillez sélectionner une option !';
 $string['selectoptioninotherbooking'] = 'Option';
 $string['selectoptionsfirst'] = 'Veuillez d\'abord sélectionner les options de réservation.';
 $string['selectpresencestatus'] = 'Choisir le statut de présence';

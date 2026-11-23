@@ -93,9 +93,26 @@ function core_h5p_pluginfile($course, $cm, $context, string $filearea, array $ar
                 return false; // Invalid context because the content files are loaded always in the context system.
             }
             $itemid = array_shift($args);
+
+            // Content files are stored outside the original package's context.
+            if (!\core_h5p\api::can_access_content((int) $itemid)) {
+                return false;
+            }
+            break;
+        case \core_h5p\file_storage::EXPORT_FILEAREA:
+            if ($context->contextlevel != CONTEXT_SYSTEM) {
+                return false; // Invalid context because exports are always loaded in the context system.
+            }
+
+            $itemid = 0;
+
+            // Exports aren't tied to the original package's context; the content id is embedded in the filename
+            // and is used to check access against the original package.
+            if (!\core_h5p\api::can_access_export((string) end($args))) {
+                return false;
+            }
             break;
         case \core_h5p\file_storage::CACHED_ASSETS_FILEAREA:
-        case \core_h5p\file_storage::EXPORT_FILEAREA:
         case \core_h5p\file_storage::CSS_FILEAREA:
             $itemid = 0;
             break;

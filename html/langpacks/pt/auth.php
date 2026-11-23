@@ -165,7 +165,7 @@ $string['settingmigrationmismatch'] = 'Foram detetados valores incompatíveis ao
 $string['sha1'] = 'tabela hash SHA-1';
 $string['showguestlogin'] = 'Pode optar por ocultar ou mostrar o botão de entrada como visitante na página de autenticação.';
 $string['showloginform'] = 'Mostrar formulário de autenticação manual';
-$string['showloginform_desc'] = 'Se todos os utilizadores do site usarem um método de autenticação, por exemplo, OAuth2, que não exige inserir o nome de utilizador e senha, pode ocultar o formulário de autenticação manual. Tenha em atenção que utilizadores com contas manuais não poderão autenticar-se.
+$string['showloginform_desc'] = 'Se todos os utilizadores do site usarem um método de autenticação, por exemplo, OAuth 2, que não exige inserir o nome de utilizador e senha, pode ocultar o formulário de autenticação manual. Tenha em atenção que utilizadores com contas manuais não poderão autenticar-se.
 
 Se ocultar o formulário de autenticação manual e não conseguir autenticar-se, pode mostrar o formulário novamente através da linha de comando: php admin/cli/cfg.php --name=showloginform --set=1.';
 $string['stdchangepassword'] = 'Usar a página predefinida para alterar a senha';

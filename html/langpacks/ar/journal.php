@@ -80,7 +80,6 @@ $string['removemessages'] = 'إزالة كل مُدخلات المذكرة';
 $string['saveallfeedback'] = 'حفظ كل إفاداتي';
 $string['search:activity'] = 'المذكرة - معلومات النشاط';
 $string['search:entry'] = 'المذكرة - المُدخلات';
-$string['showoverview'] = 'أظهر استعراضًا للمذكرات في مودل الخاص بي';
 $string['startoredit'] = 'بدء أو تعديل مُدخل مذكرتي';
 $string['userswhocompletedthejournal'] = 'المستخدمون الذين أكملوا المذكرة';
 $string['userswhodidnotcompletedthejournal'] = 'المستخدمون الذين لم يكملوا المذكرة';

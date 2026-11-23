@@ -29,6 +29,7 @@ $string['action'] = 'الإجراء';
 $string['addingnewcustomfield'] = 'إضافة {$a} جديد';
 $string['addnewcategory'] = 'إضافة فئة جديدة';
 $string['afterfield'] = 'بعد حقل {$a}';
+$string['categoryadded'] = 'تمت إضافة التصنيف بنجاح';
 $string['categorynotfound'] = 'الفئة غير موجودة';
 $string['checked'] = 'تم اختباره';
 $string['commonsettings'] = 'الإعدادات العامة';

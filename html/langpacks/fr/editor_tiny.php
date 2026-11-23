@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['branding'] = 'Apparence TinyMCE';
+$string['branding'] = 'Visuel TinyMCE';
 $string['branding_desc'] = 'Soutenir TinyMCE en affichant son logo dans le coin inférieur de l’éditeur de texte. Le logo renvoie vers le site web de TinyMCE.';
 $string['extended_valid_elements'] = 'Éléments valides étendus';
 $string['extended_valid_elements_desc'] = 'Ceci permet d’utiliser des éléments et attributs supplémentaires dans l’éditeur.';
@@ -168,6 +168,7 @@ $string['tiny:failed_to_initialize_plugin_0'] = 'Impossible d’initialiser le p
 $string['tiny:failed_to_load_plugin_0_from_url_1'] = 'Impossible de charger le plugin : {0} depuis l’URL {1}';
 $string['tiny:failed_to_load_plugin_url_0'] = 'Impossible de charger l’URL du plugin : {0}';
 $string['tiny:failed_to_upload_image_0'] = 'Impossible de déposer l’image : {0}';
+$string['tiny:field_label_and_rich_textarea_help'] = '{$a}. Zone de texte riche. Presser ALT-F9 pour le menu. Presser ALT-F10 pour la barre d’outils. Presser ALT-0 pour l’aide.';
 $string['tiny:file'] = 'Fichier';
 $string['tiny:find'] = 'Rechercher';
 $string['tiny:find_and_replace'] = 'Rechercher et remplacer';

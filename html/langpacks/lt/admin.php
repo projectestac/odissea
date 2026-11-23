@@ -44,10 +44,10 @@ $string['adminseesall'] = 'Administratoriai mato viską';
 $string['adminseesallevents'] = 'Administratoriai mato visus įvykius';
 $string['adminseesownevents'] = 'Administratoriai yra tokie pat naudotojai';
 $string['advancedfeatures'] = 'Išplėstinės funkcijos';
-$string['agedigitalconsentverification'] = 'Skaitmeninis amžiaus patvirtinimo sutikimas';
+$string['agedigitalconsentverification'] = 'Amžiaus duodant sutikimą patikrinimas';
 $string['agedigitalconsentverification_desc'] = 'Įgalinamas skaitmeninio sutikimo amžiaus patvirtinimas prieš pateikiant registracijos puslapį savarankiškai besiregistruojantiems naudotojams. Taip jūsų svetainė apsaugoma nuo nepilnamečių prisijungimo be tėvų/globėjų sutikimo. Jei reikia daugiau pagalbos, pateikiama išsami <a target="_blank" href="{$a}">palaikymo kontaktinė</a> informacija.';
-$string['ageofdigitalconsentmap'] = 'Skaitmeninis amžius sutikimas';
-$string['ageofdigitalconsentmap_desc'] = 'Čia gali būti nurodytas numatytasis skaitmeninis sutikimo amžius ir amžius bet kurioje šalyje, kur jis skiriasi nuo numatytojo. Įveskite kiekvieną amžių naujoje eilutėje su formatu: šalies kodas, amžius (atskirkite kableliu). Numatytasis amžius nurodomas * vietoje šalies kodo. Šalių kodai nurodyti ISO 3166-2.';
+$string['ageofdigitalconsentmap'] = 'Amžius duodant sutikimą';
+$string['ageofdigitalconsentmap_desc'] = 'Čia gali būti nurodytas numatytasis sutikimo davėjo amžius ir amžius bet kurioje šalyje, kur jis skiriasi nuo numatytojo. Įveskite kiekvieną amžių naujoje eilutėje su formatu: šalies kodas, amžius (atskirkite kableliu). Numatytasis amžius nurodomas * vietoje šalies kodo. Šalių kodai nurodyti ISO 3166-2.';
 $string['allcountrycodes'] = 'Visų šalių kodai';
 $string['allowattachments'] = 'Leisti priedus';
 $string['allowbeforeblock'] = 'Pirmiausia bus apdorojamas leidžiamas sąrašas';
@@ -193,7 +193,7 @@ $string['configallowcategorythemes'] = 'Jei įjungsite tai, temas galima bus nus
 $string['configallowcohortthemes'] = 'Jei tai įjungsite, temas bus galima nustatyti grupės lygiu. Tai turės įtakos visiems naudotojams, turintiems tik vieną grupę arba daugiau nei vieną, bet tą pačią temą.';
 $string['configallowcoursethemes'] = 'Jei įjungta, kursams bus leista nustatyti savo temas. Kurso temos nepaiso visų kitų temų pasirinkimų (svetainės, naudotojo, kategorijos, grupės arba URL apibrėžtos temos).';
 $string['configallowedemaildomains'] = 'Išvardykite el. pašto domenus, kuriuos leidžiama atskleisti siunčiamo el. pašto skiltyje „Nuo“. Pagal numatytuosius nustatymus „Tuščias“ visiems siunčiamiems el. laiškams bus naudojamas adresas „Neatsakyti“. Leidžiama naudoti pakaitos simbolius pvz. *.example.com, tai leis el. laiškus siųsti iš bet kurio example.com padomenio, bet ne iš paties example.com. Tam reikės atskiro įvedimo.';
-$string['configallowemailaddresses'] = 'Jei norite apriboti visus naujus el. pašto adresus pagal tam tikrus domenus, išvardykite juos čia, atskirdami tarpais. Visi kiti domenai bus atmesti. Jei norite, kad būtų leidžiami subdomenai, įtraukite domeną, prieš jį nurodę ženklą „.“. Norėdami leisti šakninį domeną kartu su jo padomeniais, pridėkite domeną du kartus – vieną kartą su priešais esančiu „. ir vieną kartą be pvz. .ourcollege.edu.au ourcollege.edu.au.';
+$string['configallowemailaddresses'] = 'Jei norite apriboti visus naujus el. pašto adresus pagal tam tikrus domenus, išvardykite juos čia, atskirdami tarpais. Visi kiti domenai bus atmesti. Jei norite, kad būtų leidžiami subdomenai, įtraukite domeną, prieš jį nurodę ženklą „.“. Norėdami leisti šakninį domeną kartu su jo padomeniais, pridėkite domeną du kartus – vieną kartą su priešais esančiu „.“, ir vieną kartą be jo, pvz., .ourcollege.edu.au ourcollege.edu.au.';
 $string['configallowemojipicker'] = 'Įjungtas jaustukų rinkiklis leidžia naudotojams pasirinkti jaustukus, pavyzdžiui, šypsenėles, ir juos pridėti žinutėse ir kitose teksto srityse per jaustukų rinkiklio mygtuką „Atto“ teksto rengyklėje.';
 $string['configallowemojipickerincompatible'] = 'Dabartinė duomenų bazės konfigūracija tinkamai nepalaiko jaustukų. Kad įgalintumėte jaustukų rinkiklį, turėsite <a href="https://docs.moodle.org/en/MySQL_full_unicode_support">naujinti duomenų bazę, kad gautumėte visišką unikodo palaikymą</a>.';
 $string['configallowguestmymoodle'] = 'Jei įjungta, svečiai gali pasiekti „Mano pagrindinis“ puslapį. Kitu atveju svečiai nukreipiami į svetainės pagrindinį puslapį.';
@@ -215,7 +215,7 @@ $string['configautologinguests'] = 'Ar lankytojai turėtų būti automatiškai p
 $string['configbloglevel'] = 'Šis parametras leidžia jums apriboti lygį, iki kurio galima peržiūrėti šioje svetainėje esančius naudotojų tinklaraščius. Atkreipkite dėmesį, kad nurodomas maksimalus VIEWER, o ne skelbėjo arba tinklaraščio skelbimų tipų kontekstas. Tinklaraščius taip pat galite visiškai išjungti, jei nenorite jų matyti.';
 $string['configcalendarcustomexport'] = 'Įgalinti tinkintos kalendoriaus dienų sekos eksportavimą';
 $string['configcalendarexportsalt'] = 'Šis atsitiktinis tekstas naudojamas norint pagerinti autentifikavimo atpažinimo ženklų, naudojamų kalendoriams eksportuoti, saugą. Atkreipkite dėmesį, kad visi esami atpažinimo ženklai bus neleistini, jei pakeisite šį maišos „salt“.';
-$string['configcookiesecure'] = 'Jei serveris priima tik https ryšius, rekomenduojama įjungti saugių slapukų siuntimą. Jei jis įjungtas, įsitikinkite, kad žiniatinklio serveris nepriima http:// arba nustato nuolatinį peradresavimą į https:// adresą ir ideliai siunčia HSTS antraštes. Kai <em>wwwroot</em> adresas nepradedamas https://, šis parametras automatiškai išjungiamas.';
+$string['configcookiesecure'] = 'Jei serveris priima tik https ryšius, rekomenduojama įjungti saugių slapukų siuntimą. Jei jis įjungtas, įsitikinkite, kad žiniatinklio serveris nepriima http:// arba nustato nuolatinį peradresavimą į https:// adresą ir idealiai siunčia HSTS antraštes. Kai <em>wwwroot</em> adresas nepradedamas https://, šis parametras automatiškai išjungiamas.';
 $string['configcountry'] = 'Jei čia nustatysite šalį, ji bus pasirenkama kaip numatytoji naujose naudotojų paskyrose. Jei norite, kad šalį pasirinktų naudotojas, palikite šį parametrą nenustatytą.';
 $string['configcoursegraceperiodafter'] = 'Klasifikuokite ankstesnius kursus kaip vykstančius tiek daug dienų po kurso pabaigos datos.';
 $string['configcoursegraceperiodbefore'] = 'Priskirkite būsimus kursus kaip vykstančius tiek daug dienų iki kurso pradžios datos.';
@@ -342,15 +342,15 @@ $string['configmypagelocked'] = 'Šis parametras draudžia redaguoti numatytąj�
 $string['confignavcourselimit'] = 'Ribojamas kursų skaičius rodomas naudotojui naršymo metu.';
 $string['confignavshowallcourses'] = 'Šis nustatymas nustato, ar naudotojai, užsiregistravę į kursus, naršymo juostoje gali matyti kursus (visų kursų sąrašą), be „Mano kursų“ (kursų, kuriuose jie yra užsiregistravę), sąrašo.';
 $string['confignavshowcategories'] = 'Rodyti kursų kategorijas naršymo juostoje ir naršymo blokuose. Tai netaikoma kursams, kuriuose naudotojas šuo metu yra įsiregistravęs; jie vis tiek bus išvardyti sąraše „Mano kursai“ be kategorijų.';
-$string['confignoreplyaddress'] = 'El. laiškai kartais yra siunčiami naudotojo naudai. El. pašto adresas jūs nusakote bus naudojamas kaip "Iš kur" adresas tuo atveju kai gavėjai neturi galimybės tiesiogiai atrašyti( kai naudotojas pasirenka laikyti adresą nematomą).';
+$string['confignoreplyaddress'] = 'Kartais laiškai siunčiami naudotojo vardu (pvz., forumuose). Čia nurodytas el. pašto adresas bus naudojamas kaip siuntėjo adresas tais atvejais, kai gavėjai neturėtų turėti galimybės tiesiogiai atsakyti naudotojui (pvz., kai naudotojas nusprendžia savo adresą laikyti konfidencialiu). Šis nustatymas taip pat bus naudojamas kaip laiško siuntėjo adresas siunčiant el. laiškus.';
 $string['confignotifyloginfailures'] = 'Siųsti pranešimus apie prisijungimo nesėkmes šiems pasirinktiems naudotojams. Tam reikia įjungti vidinę žurnalų saugyklą (pvz., standartinę žurnalų saugyklą).';
 $string['confignotifyloginthreshold'] = 'Jei pranešimai apie nesėkmingus prisijungimus yra aktyvūs, apie kiek nesėkmingų vieno naudotojo arba IP adreso bandymų prisijungti turėtų būti pranešama?';
 $string['confignotloggedinroleid'] = 'Naudotojai, neprisijungę prie šios svetainės, bus traktuojami kaip gavę šį vaidmenį svetainės kontekste. Svečias yra beveik visada čia tinkamiausias vaidmuo, bet taip pat galite kurti vaidmenis, kurie yra daugiau arba mažiau apriboti. Norint kurti skelbimus vis tiek reikės, kad naudotojas tinkamai prisijungtų.';
 $string['configopentowebcrawlers'] = 'Jei įjungsite šį parametrą, „Google“ bus leidžiama prieiti prie jūsų svetainės kaip svečiui. Be to, žmonės, kurie ras jūsų svetainę naudodami „Google“ iešką, bus automatiškai prijungti kaip svečiai. Atkreipkite dėmesį, kad tai suteiks skaidrią prieigą tik prie kursų, kur jau leidžiama svečių prieiga.';
 $string['configoverride'] = 'Apibrėžta faile config.php';
-$string['configpasswordpolicy'] = 'Jei įjungta, naudotojų slaptažodžiai bus tikrinami pagal reikalavimus slaptažodžiui, kaip nurodyta toliau pateiktuose nustatymuose. Reikalavimų slaptažodžiui įjungimas neturės įtakos esamiems naudotojams, kol jie nenuspręs arba nebus paprašyta pakeisti savo slaptažodį arba kol nebus įjungtas nustatymas „Tikrinti slaptažodį prisijungimo metu".';
+$string['configpasswordpolicy'] = 'Jei įjungta, naudotojų slaptažodžiai bus tikrinami pagal reikalavimus slaptažodžiui, kaip nurodyta toliau pateiktuose nustatymuose. Reikalavimų slaptažodžiui įjungimas neturės įtakos esamiems naudotojams, kol jie nenuspręs arba nebus paprašyta pakeisti savo slaptažodį arba kol nebus įjungtas nustatymas „Tikrinti slaptažodį prisijungimo metu“.';
 $string['configpasswordpolicycheckonlogin'] = 'Jei įjungta, naudotojų slaptažodžiai bus tikrinami pagal reikalavimus slaptažodžiui kiekvieną kartą naudotojui jungiantis. Jei patikrinti nepavyks, prieš tęsdamas naudotojas turės pakeisti slaptažodį.
-Šį nustatymą naudinga įjungti atnaujinus reikalavimus slaptažodžui.';
+Šį nustatymą naudinga įjungti atnaujinus reikalavimus slaptažodžiui.';
 $string['configpasswordresettime'] = 'Nurodoma, kiek laiko žmonės turi, kad patvirtintų slaptažodžio nustatymo iš naujo užklausą, kol jos galiojimo laikas baigiasi. Paprastai 30 minučių yra gera vertė.';
 $string['configpathtodu'] = 'Kelias į „du“. Greičiausiai kažkas panašaus į /usr/bin/du. Jei įvesite tai, puslapiai, kuriuose rodomas katalogų turinys, veiks daug greičiau, kai bus naudojami katalogai su daug failų.';
 $string['configpathtophp'] = 'Kelias į PHP CLI. Tikriausiai kažkas panašaus į /usr/bin/php. Jei įvesite tai, cron scenarijus bus galima vykdyti iš administratoriaus interneto sąsajos.';
@@ -402,7 +402,7 @@ $string['configsitemaxcategorydepthhelp'] = 'Tai nurodo maksimalų antrinių kat
 $string['configslasharguments'] = 'Norint, kad SCORM paketai ir kelių failų ištekliai būtų rodomi teisingai, reikalingi „Slash argumentai“ (naudojant <em>PATH_INFO</em>). Jei jūsų žiniatinklio serveris nepalaiko „pasvirojo brūkšnio argumentų“ ir negalite jo sukonfigūruoti, šį nustatymą galima išjungti, tačiau dėl to viskas neveiks.<br />Pastaba: „Pasvirojo brūkšnio argumentai“ bus naudojami privalomai būsimose Moodle versijose.';
 $string['configsmtpauthtype'] = 'Tai nustato autentifikavimo tipą, naudojamą SMTP serveryje.';
 $string['configsmtphosts'] = 'Duokite pilną vardą vieno ar kelių vietinių SMTP serverių, kuriuos Moodle turėtų naudoti siųsti paštui(pvz.: „mail.a.com“ arba „mail.a.com;mail.b.com“). Nusakyti ne numatytą prievadą (kitą nei 25), galite naudoti [server]:[port] sintaksė (pvz „mail.a.com:587“. Jei paliksite tuščią, Moodle naudos numatytą PHP  siuntimo metodą.';
-$string['configsmtpmaxbulk'] = 'Didžiausias galimas kiekis žinučių kurias galima išsiųsti per SMTP sesiją. Grupuotos žinutės gali paspartinti laiškų siuntimą. Reikšmės mažesnės už 2 priverčia sukurti naują SMTP sesiją kiekvienam laiškui.';
+$string['configsmtpmaxbulk'] = 'Didžiausias galimas kiekis žinučių, kurias galima išsiųsti per SMTP sesiją. Grupuotos žinutės gali paspartinti laiškų siuntimą. Reikšmės mažesnės už 2 priverčia sukurti naują SMTP sesiją kiekvienam laiškui.';
 $string['configsmtpoauthservice'] = 'Pasirinkite „OAuth 2“ paslaugą, sukonfigūruotą bendrauti su SMTP serveriu. Jei paslauga dar neegzistuoja, turėsite ją sukurti. Atminkite, kad SMTP autentifikavimo tipą turite nustatyti į XOAUTH2.';
 $string['configsmtpsecure'] = 'Jei SMTP serveriui reikalingas saugus ryšys, nurodykite teisingą protokolo tipą.';
 $string['configsmtpuser'] = 'Jeigu jūs nusakėte SMTP serverį aukščiau, ir jis reikalauja patvirtinimo, tada įveskite naudotojo vardą ir slaptažodį čia.';
@@ -414,7 +414,7 @@ $string['configstatsmaxruntime3'] = 'Tai nurodo maksimalų vienos dienos statist
 $string['configstatsruntimedays'] = 'Tai nurodo maksimalų kiekvieno statistinių duomenų vykdymo apdorojamų dienų skaičių. Kai statistiniai duomenys atnaujinti, bus apdorojama tik viena diena, todėl atsižvelgdami į savo serverio apkrovą koreguokite šią reikšmę ir sumažinkite ją, jei „Cron“ reikia vykdyti trumpiau.';
 $string['configstatsruntimestart'] = 'Kada turėtų būti paleistas cronjob, kurio metu apdorojama statistika? Jei viename serveryje yra kelios Moodle svetainės, rekomenduojama nurodyti skirtingą laiką.';
 $string['configstatsuserthreshold'] = 'Šis parametras nurodo minimalų į kursą įsiregistravusių naudotojų skaičių, įtrauktiną į statistinių duomenų skaičiavimą.';
-$string['configstrictformsrequired'] = 'Jei įgalinta, naudotojams draudžiama padėti tarpą arba naują eilutę tik reikalaujamose laukuose formose.';
+$string['configstrictformsrequired'] = 'Jei įgalinta, naudotojai negali įvesti tarpo ar eilutės tarpo tik formų privalomuose laukeliuose.';
 $string['configstripalltitletags'] = 'Panaikinkite šio parametro žymėjimą, kad leistumėte HTML žymes veiklos ir resursų pavadinimuose.';
 $string['configsupportavailability'] = 'Nustato, kas turi prieigą prie svetainės palaikymo iš poraštės.';
 $string['configsupportemail'] = 'Jei šioje svetainėje sukonfigūruotas SMTP, o palaikymo puslapis nenustatytas, šiuo el. pašto adresu bus gauti pranešimai, pateikti naudojant palaikymo formą. Jei siuntimas nepavyks, el. pašto adresas bus rodomas prisijungusiems naudotojams.';
@@ -527,7 +527,7 @@ $string['debugtemplateinfo_desc'] = 'Jei ši funkcija įjungta, šablonai, naudo
 $string['debugvalidators'] = 'Rodyti tikrintojų saitus';
 $string['defaultcity'] = 'Numatytasis miestas';
 $string['defaultcity_help'] = 'Čia įvestas miestas bus numatytasis miestas kuriant naujas naudotojų paskyras.';
-$string['defaultformatnotset'] = 'Klaida nustatant numatytajį kursų formatą. Patikrinkite svetainės nustatymus';
+$string['defaultformatnotset'] = 'Klaida nustatant numatytąjį kursų formatą. Patikrinkite svetainės nustatymus';
 $string['defaulthomepage'] = 'Pradinis puslapis naudotojams';
 $string['defaultrequestcategory'] = 'Numatytoji kurso prašymo kategorija';
 $string['defaultsettinginfo'] = 'Numatyta: {$a}';
@@ -635,6 +635,7 @@ $string['enroladminnewcourse_help'] = 'Kai administratorius prideda naują kurs�
 $string['enrolinstancedefaults'] = 'Įregistravimo egzemplioriaus numatytosios reikšmės';
 $string['enrolinstancedefaults_desc'] = 'Numatytieji įregistravimo parametrai naujuose kursuose.';
 $string['enrolmultipleusers'] = 'Įregistruoti naudotojus';
+$string['ensureauroraversion'] = 'Jūsų svetainė veikia su „Amazon Aurora“ duomenų bazių varikliu. „Amazon Aurora“ MySQL versija turi būti suderinama su „Moodle“ versija, kurią diegiate arba į kurią naujinate. Suderinamumą patikrinkite puslapyje <a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.30Updates.html">Database engine updates for Amazon Aurora MySQL version 3</a>.';
 $string['entitytasklog'] = 'Užduočių žurnalas';
 $string['environment'] = 'Aplinka';
 $string['environmenterrortodo'] = 'Prieš tęsdami šios „Moodle“ versijos diegimą turite išspręsti visas aplinkos problemas (klaidas).';
@@ -711,6 +712,8 @@ $string['geoipmaxmindaccid'] = '„MaxMind“ paskyros ID';
 $string['geoipmaxmindaccid_desc'] = '"MaxMind API" paslaugoje sukurtos paskyros ID.';
 $string['geoipmaxmindlicensekey'] = 'MaxMind licencijos raktas';
 $string['geoipmaxmindlicensekey_desc'] = '"MaxMind API" paslaugoje sukurtos paskyros licencijos raktas.';
+$string['geopluginapikey'] = 'GeoPlugin API raktas';
+$string['geopluginapikey_desc'] = 'API raktas, naudojamas prieigai prie „GeoPlugin“ paslaugos. Raktą gaukite svetainėje <a href="https://www.geoplugin.com/" target="_blank">geoplugin.com</a>.';
 $string['getremoteaddrconf'] = 'Užregistruotas IP adreso šaltinis';
 $string['globalsearch'] = 'Visuotinė paieška';
 $string['globalsearchmanage'] = 'Tvarkyti visuotinę paiešką';
@@ -720,7 +723,7 @@ $string['gotofirst'] = 'Pereiti prie pirmos trūkstamos eilutės';
 $string['gradebook'] = 'Įvertinimų knygelė';
 $string['gradebookroles'] = 'Įvertinti vaidmenys';
 $string['gradeexport'] = 'Pirminis įvertinimų eksportavimo metodas';
-$string['gradeexportdefault'] = 'Numatasis įvertinimo eksporto metodas';
+$string['gradeexportdefault'] = 'Numatytasis įvertinimo eksporto metodas';
 $string['gravatardefaulturl'] = 'Gravatar numatytojo vaizdo URL';
 $string['gravatardefaulturl_help'] = '„Gravatar“ turi būti rodomas numatytasis vaizdas, jei jis negali rasti paveikslėlio tam tikram naudotojui. Pateikite visą vaizdo URL. Jei paliksite šį nustatymą tuščią, „Moodle“ bandys naudoti tinkamiausią numatytąjį vaizdą jūsų žiūrimam puslapiui. Taip pat atminkite, kad „Gravatar“ turi daugybę kodų, kuriuos galima naudoti <a href="https://en.gravatar.com/site/implement/images/#default-image">numatytiesiems vaizdams generuoti</a>.';
 $string['group_customfield'] = 'Grupuoti pasirinktinius laukus';
@@ -771,7 +774,7 @@ $string['installhijacked'] = 'Apgailestaujame, diegimą būtina užbaigti iš pr
 $string['installsessionerror'] = 'Nepavyko inicijuoti PHP seanso. Patikrinkite, ar Jūsų naršyklė priima slapukus.';
 $string['intlrecommended'] = 'Intl plėtinys yra naudojamas norint pagerinti internacionalizavimo palaikymą, pvz., rūšiavimą atsižvelgiant į lokalę.';
 $string['intlrequired'] = 'Intl plėtinys reikalingas siekiant pagerinti internacionalizavimo palaikymą, pvz., rūšiavimą atsižvelgiant į lokalę ir tarptautinius domenų pavadinimus.';
-$string['invalidagedigitalconsent'] = 'Skaitmeninis sutikimo amžius negalioja: {$a}';
+$string['invalidagedigitalconsent'] = 'Sutikimo amžiaus riba netaikoma: {$a}';
 $string['invalidforgottenpasswordurl'] = 'Pamiršto slaptažodžio URL nėra galiojantis URL.';
 $string['invalidsection'] = 'Neleistina dalis.';
 $string['invalidthemepreset'] = 'Pasirinktas išankstinių nustatymų rinkinio failas nesuderinamas su šia tema. SCSS kompiliavimo klaida buvo: „{$a}“';
@@ -820,17 +823,14 @@ $string['lockoutduration_desc'] = 'Užrakinta paskyra automatiškai atrakinama p
 $string['lockoutemailbody'] = 'Sveiki, {$a->firstname},
 
 Jūsų paskyra su naudotojo vardu {$a->username} serveryje „{$a->sitename}“
-buvo užrakinta po kelių neteisingų bandymų prisijungti.
+buvo užblokuota po daugkartinių nesėkmingų prisijungimo bandymų.
 
-Norėdami atrakinti paskyrą, eikite šiuo adresu
+Norėdami nedelsiant atrakinti paskyrą, spustelėkite žemiau esančią nuorodą:
 
-{$a->link}
+<a href="{$a->link}">Atrakinti paskyrą</a>
 
-Daugumoje pašto programų tai turėtų būti rodoma kaip mėlyna nuoroda, kurią galite tiesiog spustelėti.
-Jei tai neveikia, tada nukopijuokite ir įklijuokite adresą į adreso
-eilutę interneto naršyklės lango viršuje.
 
-Jei reikia pagalbos, susisiekite su svetainės administratoriumi,
+Jei reikės pagalbos, kreipkitės į svetainės administratorių.
 {$a->admin}';
 $string['lockoutemailsubject'] = 'Jūsų paskyra {$a} buvo užrakinta';
 $string['lockouterrorunlock'] = 'Pateikta neteisinga paskyros atrakinimo informacija.';
@@ -936,6 +936,7 @@ $string['moodlebrandedapp'] = 'Firminė „Moodle“ programėlė';
 $string['moodlebrandedapp_help'] = '<p>Firminėje Moodle programėlėje yra visos nemokamos Moodle programos mobiliesiems funkcijos kartu su jūsų tinkintu prekės ženklu.</p>
 <a href="https://moodle.com/branded-app">Apie firminę Moodle programą</a>';
 $string['moodlebrandedappreference'] = 'Arba gaukite <a href="https://moodle.com/branded-app/">Moodle programą su prekės ženklu</a> su savo tinkintu prekės ženklu.';
+$string['moodlenetremovalwarning'] = '„MoodleNet“ paslauga bus išjungta 2026 m. balandžio 20 d. Jei norite toliau naudoti „MoodleNet“ savo svetainėje, įdiekite „MoodleNet“ papildinį iš <a href="https://github.com/moodlehq/moodle-tool_moodlenet" target="_blank">Moodle HQ GitHub talpyklos <i class="fa fa-external-link" role="img" aria-label="Atsidaro naujame lange" title="Atsidaro naujame lange"></i></a> ir prijunkite jį prie savarankiškai talpinamo „MoodleNet“ egzemplioriaus. Po to „MoodleNet“ profilio ID laukas bus pašalintas; jei šiuos duomenis naudojate kitiems tikslams, perkelkite juos.';
 $string['moodlepartners'] = 'Moodle Partneriai';
 $string['moodlepartners_help'] = '<p>Moodle partneriai yra paslaugų teikėjai, kurie yra sertifikuotos Moodle būstinės, kurios gali teikti aukštos kokybės Moodle paslaugas jūsų organizacijos internetinėje mokymosi aplinkoje.</p>
 <a href="https://moodle.com/about-partners/">Apie mūsų partnerius</a><br />
@@ -1033,6 +1034,7 @@ $string['pathtosassc'] = 'Kelias į SassC';
 $string['pathtosassc_help'] = 'Nurodę SassC dvejetainio failo vietą, SASS kompiliatorius bus perjungtas iš Moodle PHP diegimo į SassC. Daugiau informacijos rasite adresu https://github.com/sass/sassc.';
 $string['pcreunicodewarning'] = 'PCRE PHP išplėtimo, kuris yra suderinamas su Unicode simboliais naudojimas yra labai rekomenduotinas.';
 $string['perfdebug'] = 'Našumo informacija';
+$string['perfdebugdeferred'] = 'Laukiama, kol scenarijus baigsis, kad būtų parodyta našumo derinimo informacija...';
 $string['performance'] = 'Našumas';
 $string['pgcluster'] = '„PostgreSQL“ klasteris';
 $string['pgclusterdescription'] = '„PostgreSQL“ versijos / telkinio komandų eilutės operacijų parametras. Jei jūsų sistemoje yra tik vienas „postgresql“ arba nesate tikri, kas tai yra, palikite šį parametrą tuščią.';
@@ -1121,7 +1123,7 @@ $string['profilingautofrec_help'] = 'Sukonfigūravus šį nustatymą, kai kurios
 $string['profilingenabled'] = 'Įjungti profiliavimą';
 $string['profilingenabled_help'] = 'Jei įjungsite šį parametrą, šioje  svetainėje bus galimas profiliavimas ir galėsite apibrėžti jo veikimą konfigūruodami paskesnes parinktis.';
 $string['profilingexcluded'] = 'Neįtraukti profiliavimo';
-$string['profilingexcluded_help'] = 'Sąrašas (atskirtas kableliais arba naujomis eilutėmis, absoliučiai praleidžiamas wwwroot, iškviečiamas) URL, kurie nebus profiliuojami iš tų, kurie apibrėžti nustatant „Profiluoti šiuos“.';
+$string['profilingexcluded_help'] = 'Sąrašas (atskirtas kableliais arba naujomis eilutėmis, absoliučiai praleidžiamas wwwroot, iškviečiamas) URL, kurie nebus profiliuojami iš tų, kurie apibrėžti nustatant „Profiliuoti šiuos“.';
 $string['profilingimportprefix'] = 'Profiliavimo importo priešdėlis';
 $string['profilingimportprefix_desc'] = 'Kad būtų lengviau aptikti, prie visų importuotų profiliavimo paleidimų bus nurodyta čia nurodyta vertė.';
 $string['profilingincluded'] = 'Profiliuoti šiuos';
@@ -1220,7 +1222,7 @@ $string['searchallavailablecourses'] = 'Ieškomi kursai';
 $string['searchallavailablecourses_desc'] = 'Kai kuriais atvejais paieškos variklis gali neveikti ieškant daugelyje kursų. Jei reikia apriboti ieškomų kursų skaičių, nustatykite ieškoti tik įregistruotų kursų.';
 $string['searchallavailablecourses_off'] = 'Ieškoti tik kursuose, kuriuose esate įregistruotas';
 $string['searchallavailablecourses_on'] = 'Ieškoti visuose kursuose, kuriuos gali pasiekti naudotojas';
-$string['searchallavailablecoursesdesc'] = 'Jei nustatyta ieškoti tik įregistruotuose kursuose, kursų informacijos (pavadinimo ir santraukos) ir kurso turinio bus ieškoma tik tuose kursuose, kuriuose naudotojas yra įsiregistravęs. Priešingu atveju kursų informacijos ir kursų turinio bus ieškoma visuose kursuose, kuriuos naudotojas gali pasiekti. , pvz., kursai su įjungta svečių prieiga.';
+$string['searchallavailablecoursesdesc'] = 'Jei nustatyta ieškoti tik įregistruotuose kursuose, kursų informacijos (pavadinimo ir santraukos) ir kurso turinio bus ieškoma tik tuose kursuose, kuriuose naudotojas yra įsiregistravęs. Priešingu atveju kursų informacijos ir kursų turinio bus ieškoma visuose kursuose, kuriuos naudotojas gali pasiekti, pvz., kursai su įjungta svečių prieiga.';
 $string['searchalldeleted'] = 'Visas indeksuotas turinys buvo panaikintas';
 $string['searchalternatesettings'] = 'Alternatyvūs tik užklausų nustatymai';
 $string['searchalternatesettings_desc'] = 'Jei užbaigsite šiuos nustatymus, puslapyje „Tvarkyti visuotinę paiešką“ galite pasirinkti „alternatyvius nustatymus“ šiam paieškos varikliui. Tai naudinga tik pereinant tarp dviejų to paties tipo paieškos sistemų.';
@@ -1293,6 +1295,7 @@ $string['settingmaxinputvars'] = 'PHP parametras max_input_vars rekomenduojamas 
 $string['settingmaxinputvarsrequired'] = 'PHP nustatymas max_input_vars turi būti bent 5000.';
 $string['settingmemorylimit'] = 'Aptikta, kad nepakanka atminties. PHP parametruose nustatykite didesnį atminties limitą.';
 $string['settingsafemode'] = '„Moodle“ nėra visiškai suderinama su saugiuoju režimu. Paprašykite serverio administratoriaus jį išjungti. „Moodle“ paleidimas saugiuoju režimu nėra palaikomas, jei tai darysite, gali iškilti įvairių problemų.';
+$string['settingzendexceptionignoreargs'] = 'Saugumo sumetimais primygtinai rekomenduojama įjungti PHP nustatymą zend.exception_ignore_args.';
 $string['setupsearchengine'] = 'Paieškos sistemos nustatymai';
 $string['showcommentscount'] = 'Rodyti komentarų skaičių';
 $string['showdetails'] = 'Rodyti išsamią informaciją';
@@ -1356,7 +1359,8 @@ $string['stickyblockscourseview'] = 'Kursų puslapis';
 $string['stickyblocksduplicatenotice'] = 'Jei bet kuris jūsų čia įtrauktas blokas jau yra tam tikrame puslapyje, bus sukurtas jo dublikatas.<br />Redaguoti negalima tik susegtų blokų, dublikatą vis tiek bus galima redaguoti.';
 $string['stickyblocksmymoodle'] = 'Mano „Moodle“';
 $string['stickyblockspagetype'] = 'Konfigūruotinas puslapio tipas';
-$string['strictformsrequired'] = 'Griežtas patvirtinimas privalomiems laukams';
+$string['storedprogressbarcleanuptask'] = 'Išsaugotų eigos juostų valymo užduotis';
+$string['strictformsrequired'] = 'Privalomų laukelių griežtas tikrinimas';
 $string['stripalltitletags'] = 'Pašalinti HTML žymes iš visų veiklų pavadinimų';
 $string['supportandservices'] = 'Parama ir paslaugos';
 $string['supportavailability'] = 'Palaikymo prieinamumas';
@@ -1526,6 +1530,7 @@ $string['unsupportedphpversion80'] = 'PHP 8 ir naujesnės versijos nepalaikomos.
 $string['unsupportedphpversion81'] = 'PHP 8.1 ir naujesnės versijos nepalaikomos.';
 $string['unsupportedphpversion82'] = 'PHP 8.2 ir naujesnės versijos nepalaikomos.';
 $string['unsupportedphpversion83'] = 'PHP 8.3 ir naujesnės versijos nepalaikomos.';
+$string['unsupportedphpversion84'] = 'PHP 8.4 ir naujesnės versijos nepalaikomos.';
 $string['unsuspenduser'] = 'Aktyvuoti naudotojo paskyrą';
 $string['updateaccounts'] = 'Naujinti esamas paskyras';
 $string['updateautocheck'] = 'Automatiškai tikrinti ar yra galimų atnaujinimų';
@@ -1602,7 +1607,7 @@ $string['userfeedbackencouragement'] = '<p>Moodle 3.9 ir naujesnėje versijoje �
 $string['userfeedbacknextreminder'] = 'Kito atsiliepimo priminimas';
 $string['userfeedbacknextreminder_desc'] = 'Kada turėtume paprašyti naudotojo vėl pateikti atsiliepimą?';
 $string['userfeedbackperiodically'] = 'Periodiškai';
-$string['userfeedbackremindafter'] = 'Rodyti prinimimą po';
+$string['userfeedbackremindafter'] = 'Rodyti priminimą po';
 $string['userfeedbackremindafter_desc'] = 'Vėl priminti naudotojams, kad pateiktų atsiliepimą po nurodyto dienų skaičiaus.';
 $string['userfiltersdefault'] = 'Numatytieji naudotojo filtrai';
 $string['userfiltersdefault_desc'] = 'Pasirinkite filtrus, kuriuos norite rodyti puslapyje „Masiniai naudotojo veiksmai“. Norėdami pasirinkti kelis filtrus, laikykite nuspaudę klavišą Ctrl. Nepasirinkti filtrai vis tiek bus pasiekiami spustelėjus nuorodą „Rodyti daugiau“.';

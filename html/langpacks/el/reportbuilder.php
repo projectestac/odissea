@@ -51,6 +51,7 @@ $string['deletereport'] = 'Διαγραφή αναφοράς';
 $string['deletereportconfirm'] = 'Σίγουρα θέλετε να διαγραφεί η αναφορά «{$a}» και όλα τα σχετιζόμενα δεδομένα; Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.';
 $string['editdetails'] = 'Επεξεργασία λεπτομερειών';
 $string['editreportname'] = 'Επεξεργασία ονόματος αναφοράς';
+$string['enabled'] = 'Ενεργοποιημένο';
 $string['entitycourse'] = 'Μάθημα';
 $string['entityuser'] = 'Χρήστης';
 $string['errorsourceinvalid'] = 'Δεν βρέθηκε έγκυρη πηγή αναφοράς';

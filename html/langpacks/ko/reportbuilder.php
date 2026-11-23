@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['categoryselect'] = '범주 선택';
+$string['enabled'] = '활성화 됨';
 $string['reports'] = '보고서';

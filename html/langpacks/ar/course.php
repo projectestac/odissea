@@ -111,6 +111,7 @@ $string['gotosection'] = 'الذهاب إلى القسم {$a}';
 $string['gradetopassnotset'] = 'لم يتم تحديد علامة النجاح لهذا المقرر. قد يُصار إلى وضعها في عنصر التقييم للمقرر (إعداد سجل التقديرات).';
 $string['hideendedcoursestask'] = 'إخفاء المقررات عند تاريخ الانتهاء';
 $string['informationformodule'] = 'معلومات عن النشاط {$a}';
+$string['locked'] = 'مؤمن';
 $string['module'] = 'النشاط';
 $string['namewithlink'] = 'اسم التصنيف مع رابطه';
 $string['noaccesssincestartinfomessage'] = 'مرحباً {$a->userfirstname}،

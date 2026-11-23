@@ -41,8 +41,8 @@ $string['addnewgroupoverride'] = 'Afegeix una excepció de grup';
 $string['addnewuseroverride'] = 'Afegeix una excepció d\'usuari';
 $string['addsubmission'] = 'Afegeix la tramesa';
 $string['addsubmission_help'] = 'Encara no heu fet cap tramesa.';
-$string['allocatedmarker'] = 'Avaluador assignat';
-$string['allocatedmarker_help'] = 'Avaluador assignat a aquesta tramesa';
+$string['allocatedmarker'] = 'Marcador assignat';
+$string['allocatedmarker_help'] = 'Marcador assignat a aquesta tramesa';
 $string['allowsubmissions'] = 'Permet a l\'usuari continuar realitzant trameses per a aquesta tasca.';
 $string['allowsubmissionsfromdate'] = 'Permet trameses des de';
 $string['allowsubmissionsfromdate_help'] = 'Si està activat, els estudiants no podran fer trameses abans d\'aquesta data. Si està desactivat, podran començar la tramesa immediatament.';
@@ -65,7 +65,7 @@ $string['assign:reviewgrades'] = 'Revisa les notes';
 $string['assign:showhiddengrader'] = 'Visualitza la identitat d\'un avaluador ocult';
 $string['assign:submit'] = 'Tramet la tasca';
 $string['assign:view'] = 'Veure tasca';
-$string['assign:viewblinddetails'] = 'Mostra la identitat dels estudiants quan la qualificació a cegues està activada';
+$string['assign:viewblinddetails'] = 'Mostra la identitat dels estudiants quan els enviaments anònims estan habilitats';
 $string['assign:viewgrades'] = 'Mostra les qualificacions';
 $string['assign:viewownsubmissionsummary'] = 'Mostra el resum de les trameses pròpies';
 $string['assignfeedback'] = 'Connector de retroacció';
@@ -95,6 +95,7 @@ $string['assignmentoverduehtml'] = '<p>{$a->firstname},</p>
 <p><strong>{$a->assignmentname}</strong> al curs {$a->coursename} va vèncer el <strong>{$a->duedate}</strong>.</p>
 <p>Encara podeu trametre la vostra tasca{$a->cutoffsnippet}, però es marcarà que heu fet la tramesa amb retard.</p>
 <p><a href="{$a->url}">Aneu a l\'activitat</a></p>';
+$string['assignmentoverduehtmlcutoffsnippet'] = '<strong>per {$a->cutoffdate}</strong>';
 $string['assignmentoverduesubject'] = 'Tasca vençuda:  {$a->assignmentname}';
 $string['assignmentplugins'] = 'Connectors de tasca';
 $string['assignmentsperpage'] = 'Tasques per pàgina';
@@ -104,16 +105,14 @@ $string['assigntimeleft'] = 'Temps restant';
 $string['attemptheading'] = 'Intent {$a->attemptnumber}: {$a->submissionsummary}';
 $string['attempthistory'] = 'Intents previs';
 $string['attemptnumber'] = 'Número d\'intent';
-$string['attemptreopenmethod'] = 'Intents addicionals';
+$string['attemptreopenmethod'] = 'Intents permesos';
 $string['attemptreopenmethod_automatic'] = 'Automàticament';
-$string['attemptreopenmethod_automatic_help'] = 'Després de cada intent, el següent s\'atorga automàticament.';
-$string['attemptreopenmethod_help'] = 'Determina si un estudiant pot fer intents addicionals en la tasca. Per a cada intent, es desen la qualificació i la retroacció, i es mostren a l\'estudiant i el docent.
-Les opcions disponibles són:
+$string['attemptreopenmethod_automatic_help'] = 'Després de cada intent, el següent es permet automàticament després de la qualificació.';
+$string['attemptreopenmethod_help'] = 'Aquest paràmetre controla com es concedeixen intents als estudiants per a aquesta tasca. Per a cada intent, la nota i els comentaris es desen i poden ser visualitzats pel professor i l\'estudiant. Les opcions són:
 
-* Mai - Només hi ha un intent possible.
-* Manualment - El docent pot permetre intents addicionals.
-* Automàticament fins a la superació - Es permeten intents addicionals automàticament fins que l\'estudiant assoleixi la qualificació per aprovar establerta al butlletí de qualificacions per a aquesta tasca.
-</ul>';
+* Manualment: després de cada intent, podeu permetre el següent a través de la pàgina d\'enviaments o la pàgina del qualificador.
+* Automàticament: després de cada intent, el següent es permet automàticament després de la qualificació.
+* Automàticament fins que s\'aprovi: després de cada intent, el següent es permet automàticament després de la qualificació, fins que l\'estudiant aconsegueixi la nota d\'aprovat.';
 $string['attemptreopenmethod_manual'] = 'Manualment';
 $string['attemptreopenmethod_manual_help'] = 'Després de cada intent, podeu permetre el següent a través de la pàgina d\'enviaments o de la pàgina de qualificació.';
 $string['attemptreopenmethod_none'] = 'Mai';
@@ -136,8 +135,10 @@ $string['batchoperationconfirmunlock'] = 'Desbloca totes les trameses selecciona
 $string['batchoperationdownloadselected'] = 'Baixa';
 $string['batchoperationgrantextension'] = 'Prorroga';
 $string['batchoperationlock'] = 'Bloca';
+$string['batchoperationremovesubmission'] = 'Esborra';
 $string['batchoperationreverttodraft'] = 'Reverteix les trameses a esborrany';
 $string['batchoperationsdescription'] = 'Amb la selecció...';
+$string['batchoperationsetmarkingallocation'] = 'Assigna el marcador';
 $string['batchoperationsetmarkingworkflowstate'] = 'Canvia l\'estat del flux d\'avaluació';
 $string['batchoperationunlock'] = 'Desbloca';
 $string['batchsetallocatedmarker'] = 'Assigna un avaluador als {$a} usuaris seleccionats.';
@@ -331,7 +332,7 @@ $string['hidegrader_help'] = 'Si s\'activa, oculta la identitat de qualsevol usu
 
 Fixeu-vos que aquest paràmetre no té efectes en la caixa de comentaris de la pàgina de qualificació.';
 $string['hideshow'] = 'Mostra/Oculta';
-$string['inactiveoverridehelp'] = '* L\'estudiant no té el grup o el rol correcte per realitzar la tramesa.';
+$string['inactiveoverridehelp'] = '* Aquesta excepció no és efectiva perquè l\'usuari té l\'accés restringit a l\'activitat. Pot ser, per exemple, que no tingui el grup o el rol correctes, que hi hagi altres restriccions d\'accés o que l\'activitat estigui oculta.';
 $string['indicator:cognitivedepth'] = 'Tasca cognitiva';
 $string['indicator:cognitivedepth_help'] = 'Aquest indicador es basa en la profunditat cognitiva assolida per l\'estudiant en una activitat del tipus tasca.';
 $string['indicator:cognitivedepthdef'] = 'Tasca cognitiva';

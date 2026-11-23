@@ -98,7 +98,7 @@ $string['nohubselected'] = 'Aucun serveur d’échanges sélectionné';
 $string['none'] = 'Aucun';
 $string['operation'] = 'Actions';
 $string['participantnumberaverage'] = 'Nombre moyen de participants ({$a})';
-$string['pluginusagedata'] = 'Données sur l’utilisation du plugin, collectées sur : <a href="{$a->overview}">Vue d’ensemble des plugins</a>, <a href="{$a->activities}">Activités</a> et <a href="{$a->blocks}">Blocs</a>';
+$string['pluginusagedata'] = 'Données sur l’utilisation des plugins collectées depuis : <a href="{$a->overview}">Vue d’ensemble des plugins</a>, <a href="{$a->activities}">Activités</a> et <a href="{$a->blocks}">Blocs</a>';
 $string['policyagreed'] = 'Accord de politique de confidentialité et de traitement de données';
 $string['policyagreeddesc'] = 'Je suis d’accord avec la <a href="{$a}" target="_blank">politique de confidentialité et de traitement de données</a>';
 $string['postaladdress'] = 'Adresse postale';

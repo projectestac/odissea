@@ -637,6 +637,8 @@ function($, log, autoScroll, str, ModalCancel, ModalEvents, Notification) {
      *
      * Note that we use "after" in the label for better UX
      *
+     * Returning an empty or whitespace-only string will omit this destination from the dialogue.
+     *
      * @public
      * @param {jQuery} parentElement
      * @param {jQuery} afterElement
@@ -697,6 +699,9 @@ function($, log, autoScroll, str, ModalCancel, ModalEvents, Notification) {
                     return this.getDestinationName(parentElement, afterElement);
                 }, this))
                 .then(function(txt) {
+                    if (typeof txt === 'string' && txt.trim() === '') {
+                        return destinations;
+                    }
                     var li = $('<li/>').appendTo(destinations);
                     var a = $('<a href="#"/>').attr('data-core_sortable_list-quickmove', 1).appendTo(li);
                     a.data('parent-element', parentElement).data('before-element', beforeElement).text(txt);
@@ -752,6 +757,12 @@ function($, log, autoScroll, str, ModalCancel, ModalEvents, Notification) {
                 modal.destroy();
                 this.finishDragging();
             }, this));
+            // Explicitly return focus to the drag handle that opened this dialogue. Clicking the handle
+            // triggers the drag/drop mousedown handler first, which calls preventDefault() and stops the
+            // handle from actually receiving browser focus, so Modal's own document.activeElement capture
+            // in show() cannot be relied on here (it works fine when the dialogue is opened via keyboard,
+            // since the handle already has focus in that case).
+            modal.setReturnElement(clickedElement);
             modal.setLarge();
             modal.show();
             return modal;

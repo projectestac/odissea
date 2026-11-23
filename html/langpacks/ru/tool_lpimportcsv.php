@@ -43,6 +43,7 @@ $string['importfile_help'] = 'Структуру компетенций можн
 $string['importfile_link'] = 'admin/tool/lpimportcsv';
 $string['importingfile'] = 'Импорт данных файла';
 $string['invalidimportfile'] = 'Недопустимый формат файла.';
+$string['isframework'] = 'Это основа';
 $string['noframeworks'] = 'Пока нет созданных структур компетенций.';
 $string['parentidnumber'] = 'Родительский номер ID';
 $string['pluginname'] = 'Импорт структуры компетенций';

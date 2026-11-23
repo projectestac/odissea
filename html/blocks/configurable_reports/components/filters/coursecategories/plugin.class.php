@@ -23,7 +23,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 defined('MOODLE_INTERNAL') || die;
-require_once($CFG->dirroot . '/blocks/configurable_reports/plugin.class.php');
+require_once($CFG->dirroot . '/blocks/configurable_reports/filter.class.php');
 
 /**
  * Class plugin_coursecategories
@@ -31,7 +31,7 @@ require_once($CFG->dirroot . '/blocks/configurable_reports/plugin.class.php');
  * @package   block_configurable_reports
  * @author    Juan leyva <http://www.twitter.com/jleyvadelgado>
  */
-class plugin_coursecategories extends plugin_base {
+class plugin_coursecategories extends filter_base {
 
     /**
      * Init
@@ -80,7 +80,9 @@ class plugin_coursecategories extends plugin_base {
                 $coursecache[$course] = $remotedb->get_record('course', ['id' => $course]);
             }
             $course = $coursecache[$course];
-            if ($category != $course->category && (empty($parents[$course->id]) || !in_array($category, $parents[$course->id]))) {
+            // Keep the courses in the category or in any of its subcategories.
+            if (!$course || ($category != $course->category &&
+                    (empty($parents[$course->category]) || !in_array($category, $parents[$course->category])))) {
                 unset($finalelements[$key]);
             }
         }

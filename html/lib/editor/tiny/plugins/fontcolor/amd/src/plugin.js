@@ -26,6 +26,7 @@ import {getPluginMetadata} from 'editor_tiny/utils';
 import {component, pluginName} from './common';
 import {getSetup as getCommandSetup} from './commands';
 import * as Configuration from './configuration';
+import {setup as setupDialogueColors} from './dialoguecolors';
 import {register as registerOptions} from './options';
 
 // Setup the tiny_fontcolor plugin.
@@ -50,6 +51,9 @@ export default new Promise(async(resolve) => {
 
         // Setup any commands such as buttons, menu items, and so on.
         setupCommands(editor);
+
+        // Add the defined colours to the editor's shared colour palette when enabled.
+        setupDialogueColors(editor);
 
         // Return the pluginMetadata object. This is used by TinyMCE to display a help link for your plugin.
         return pluginMetadata;

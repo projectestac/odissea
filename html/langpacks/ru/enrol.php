@@ -169,6 +169,7 @@ $string['testsettings'] = 'Проверка настроек';
 $string['testsettingsheading'] = 'Тест настроек зачисления - {$a}';
 $string['timeended'] = 'Время окончания';
 $string['timeenrolled'] = 'Время зачисления';
+$string['timereaggregated'] = 'Перераспределённое время';
 $string['timestarted'] = 'Время начала';
 $string['totalenrolledusers'] = 'На курс записано пользователей: {$a}';
 $string['totalotherusers'] = 'Других пользователей: {$a}';

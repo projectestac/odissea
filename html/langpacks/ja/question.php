@@ -132,7 +132,7 @@ $string['deleteversiontitle'] = '選択されたバージョンを削除して�
 $string['deleteversiontitle_plural'] = '選択されたバージョンを削除してもよろしいですか?';
 $string['deletingbehaviour'] = '問題動作「 {$a} 」の削除中';
 $string['deletingqtype'] = '問題タイプ「 {$a} 」の削除中';
-$string['didnotmatchanyanswer'] = '[合致する答えはありませんでした]';
+$string['didnotmatchanyanswer'] = '[一致する答えはありませんでした]';
 $string['disabled'] = '利用不可';
 $string['displayoptions'] = '表示オプション';
 $string['disterror'] = 'ディストリビューション {$a} が問題の原因となっています。';
@@ -253,7 +253,7 @@ $string['importquestions'] = 'ファイルから問題をインポートする';
 $string['importquestions_help'] = 'この機能ではテキストファイルを使用して様々なフォーマットで問題をインポートすることができます。ファイルにはUTF-8文字コードを使用する必要があることに留意してください。';
 $string['importquestions_link'] = 'question/import';
 $string['importwrongfileencoding'] = 'あなたが選択したファイルはUFT-8文字エンコーディングを使用していません。{$a} ファイルにはUTF-8を使用する必要があります。';
-$string['importwrongfiletype'] = 'あなたが選択したファイルタイプ ({$a->actualtype}) はこのインポートフォーマット ({$a->expectedtype}) に期待されるタイプに合致しません。';
+$string['importwrongfiletype'] = 'あなたが選択したファイルタイプ ({$a->actualtype}) はこのインポートフォーマット ({$a->expectedtype}) に期待されるタイプに一致しません。';
 $string['impossiblechar'] = '丸括弧として使用できない文字 {$a} が見つかりました。';
 $string['includesubcategories'] = 'サブカテゴリの問題も表示する';
 $string['incorrect'] = '不正解';
@@ -266,7 +266,7 @@ $string['invalidcategoryidforparent'] = '親カテゴリに対するカテゴリ
 $string['invalidcategoryidtomove'] = '移動するカテゴリIDが無効です!';
 $string['invalidconfirm'] = '確認ストリングが正しくありません。';
 $string['invalidcontextinhasanyquestions'] = '無効なコンテクストが「question_context_has_any_questions」に渡されました。';
-$string['invalidgrade'] = '評点 ({$a}) が評定オプションと合致しません - 問題をスキップしました。';
+$string['invalidgrade'] = '評点 ({$a}) が評定オプションと一致しません - 問題をスキップしました。';
 $string['invalidgradequestion'] = '評点 ({$a->grades}) が評定オプションと一致しません - 問題「 {$a->question} 」がスキップされました。';
 $string['invalidpenalty'] = '無効なペナルティ';
 $string['invalidwizardpage'] = 'ウィザードページが正しくないか、指定されていません!';
@@ -284,8 +284,8 @@ $string['markedoutof'] = '評点';
 $string['markedoutofmax'] = '最大評点 {$a}';
 $string['markoutofmax'] = '{$a->mark} / {$a->max}';
 $string['marks'] = '評点';
-$string['matchgrades'] = '評点の合致';
-$string['matchgrades_help'] = 'インポートされた評点は次の有効な評点一覧に合致する必要があります - 100, 90, 80, 75, 70, 66.666, 60, 50, 40, 33.333, 30, 25, 20, 16.666, 14.2857, 12.5, 11.111, 10, 5, 0 (マイナス値も使用することができます)。そうではない場合、2つのオプションがあります:
+$string['matchgrades'] = '評点の一致';
+$string['matchgrades_help'] = 'インポートされた評点は次の有効な評点一覧に一致する必要があります - 100, 90, 80, 75, 70, 66.666, 60, 50, 40, 33.333, 30, 25, 20, 16.666, 14.2857, 12.5, 11.111, 10, 5, 0 (マイナス値も使用することができます)。そうではない場合、2つのオプションがあります:
 
 * 評点が一覧にない場合、エラーにする - 一覧にない評点が問題に含まれている場合、エラーが表示され、その問題はインポートされません。
 * 評点が一覧にない場合、最も近い評点を使用する - 一覧にない評点が問題に含まれている場合、評点は一覧の中で一番近い値に変更されます。';

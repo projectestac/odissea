@@ -132,8 +132,21 @@ $string['lockteachermarks_help'] = 'Wenn diese Einstellung aktiv ist, können Tr
 $string['lockteachermarkswarning'] = 'Hinweis: Sobald Sie diese Kennzeichnungen gespeichert haben, werden Sie \'Ja\' Kennzeichnungen nicht mehr ändern können';
 $string['missinguser'] = 'Nutzer/in existiert nicht';
 $string['modulename'] = 'Fortschrittsliste';
-$string['modulename_help'] = 'Die Fortschrittslistenaktivität erlaubt Trainer/innen, eine Fortschrittsliste (Todo- oder Aufgabenliste) für die Teilnehmer/innen zu erstellen, welche diese abarbeiten sollen.';
+$string['modulename_help'] = '###### Hauptmerkmale
+- Checklisten, To-do-Listen oder Aufgabenlisten für Studierende erstellen
+- Fortschritt der Studierenden beim Abhaken von Punkten verfolgen
+- Punkte einrücken und als optional markieren
+- Studierende können ihrer Checkliste private Punkte und Notizen hinzufügen
+- Fortschritt visuell mit einem Fortschrittsbalken darstellen und ins Notenbuch exportieren
+
+###### Anwendungsmöglichkeiten
+- Kursaufgaben organisieren und deren Bearbeitung verfolgen
+- Studierende bei der Verwaltung von Aufgaben und Abgabeterminen unterstützen
+- Optionale Aufgaben für Zusatzpunkte oder zur Vertiefung hinzufügen
+- Kursaktivitäten importieren und automatisch als erledigt markieren
+- Kommentare und Notizen für personalisiertes Feedback verwenden';
 $string['modulename_link'] = 'mod/checklist/view';
+$string['modulename_summary'] = 'Eine Checkliste / To-Do-Liste / Aufgabenliste als Aktivität für Teilnehmer/innen zum Durcharbeiten';
 $string['modulenameplural'] = 'Fortschrittslisten';
 $string['moveitemdown'] = 'Dieses Element nach unten verschieben';
 $string['moveitemup'] = 'Dieses Element nach oben verschieben';

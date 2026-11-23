@@ -115,6 +115,7 @@ $string['editscheduledetails'] = 'Redaguoti tvarkaraščio informaciją';
 $string['editschedulename'] = 'Redaguoti tvarkaraščio pavadinimą';
 $string['enablecustomreports'] = 'Įgalinti tinkintas ataskaitas';
 $string['enablecustomreports_desc'] = 'Jei įjungta, naudotojai gali kurti ir peržiūrėti ataskaitų kūrimo priemonės tinkintas ataskaitas.';
+$string['enabled'] = 'Įgalintas';
 $string['enableschedule'] = 'Įjungti tvarkaraštį';
 $string['entitycourse'] = 'Kursas';
 $string['entityuser'] = 'Naudotojas';

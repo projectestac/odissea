@@ -24,7 +24,90 @@
 
 class qtype_multichoicewiris_test_helper extends question_test_helper {
     public function get_test_questions() {
-        return array('four_of_five_science');
+        return array('four_of_five_science', 'singlechoice', 'multichoice');
+    }
+
+    /**
+     * Builds a multichoicewiris form-data object with plain-text choices and
+     * explicit per-choice fractions. Both answer modes share this boilerplate and
+     * only differ in the "single" flag (1 = radio buttons, 0 = checkboxes) and the
+     * choices, which is what lets the Behat suite exercise each input option
+     * (single-answer radios vs multiple-answer checkboxes) with labels that can be
+     * clicked and graded - without the MathType variable choices of the science
+     * template. The Wiris payload is minimal (no CAS session) because plain-text
+     * choices are graded by the answer fractions, not the Wiris service.
+     *
+     * @param string $name Question name.
+     * @param string $questiontext Question text shown to the student.
+     * @param string $single '1' for single answer (radios), '0' for multiple (checkboxes).
+     * @param array $choices List of choice texts.
+     * @param array $fractions List of per-choice fractions, aligned with $choices.
+     * @return stdClass
+     */
+    private function make_choice_form_data($name, $questiontext, $single, array $choices, array $fractions) {
+        $qdata = new stdClass();
+        $qdata->name = $name;
+        $qdata->questiontext = array('text' => $questiontext, 'format' => FORMAT_HTML);
+        $qdata->generalfeedback = array('text' => '', 'format' => FORMAT_HTML);
+        $qdata->defaultmark = 1;
+        $qdata->noanswers = count($choices);
+        $qdata->numhints = 0;
+        $qdata->penalty = 0.3333333;
+        $qdata->shuffleanswers = 0;
+        $qdata->answernumbering = '123';
+        $qdata->showstandardinstruction = 0;
+        $qdata->single = $single;
+        $qdata->correctfeedback = array('text' => test_question_maker::STANDARD_OVERALL_CORRECT_FEEDBACK,
+            'format' => FORMAT_HTML);
+        $qdata->partiallycorrectfeedback = array('text' => test_question_maker::STANDARD_OVERALL_PARTIALLYCORRECT_FEEDBACK,
+            'format' => FORMAT_HTML);
+        $qdata->shownumcorrect = 1;
+        $qdata->incorrectfeedback = array('text' => test_question_maker::STANDARD_OVERALL_INCORRECT_FEEDBACK,
+            'format' => FORMAT_HTML);
+        $qdata->answer = array();
+        $qdata->fraction = array();
+        $qdata->feedback = array();
+        foreach ($choices as $i => $choice) {
+            $qdata->answer[$i] = array('text' => $choice, 'format' => FORMAT_PLAIN);
+            $qdata->fraction[$i] = (string) $fractions[$i];
+            $qdata->feedback[$i] = array('text' => '', 'format' => FORMAT_HTML);
+        }
+        $qdata->wirisquestion = '<question><correctAnswers><correctAnswer></correctAnswer></correctAnswers>'
+            . '<assertions><assertion name="syntax_math"/><assertion name="equivalent_symbolic"/></assertions>'
+            . '<slots><slot><localData><data name="cas">false</data>'
+            . '<data name="auxiliaryTextInput">false</data></localData><initialContent></initialContent></slot></slots>'
+            . '</question>';
+        $qdata->wirislang = 'en';
+        $qdata->wirisessay = '';
+        return $qdata;
+    }
+
+    /**
+     * Single-answer multiple choice (one correct choice). Renders radio buttons.
+     * @return stdClass
+     */
+    public function get_multichoicewiris_question_form_data_singlechoice() {
+        return $this->make_choice_form_data(
+            'MC WIRIS single',
+            '<p>Which city is the capital of France?</p>',
+            '1',
+            array('Paris', 'London', 'Berlin'),
+            array('1.0', '0.0', '0.0')
+        );
+    }
+
+    /**
+     * Multiple-answer multiple choice (two correct choices). Renders checkboxes.
+     * @return stdClass
+     */
+    public function get_multichoicewiris_question_form_data_multichoice() {
+        return $this->make_choice_form_data(
+            'MC WIRIS multiple',
+            '<p>Select the even numbers.</p>',
+            '0',
+            array('Two', 'Four', 'Three', 'Five'),
+            array('0.5', '0.5', '0.0', '0.0')
+        );
     }
 
     /**

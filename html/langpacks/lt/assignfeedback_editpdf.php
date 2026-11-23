@@ -74,6 +74,7 @@ $string['oval'] = 'Apskritimas';
 $string['pagenumber'] = 'Puslapis {$a}';
 $string['pagexofy'] = 'Puslapis {$a->page} iš {$a->total}';
 $string['partialwarning'] = 'Kai kuriuos šiame dokumente pateiktus failus galima pasiekti tik tiesiogiai atsisiunčiant.';
+$string['pathtogserror'] = 'Sukonfigūruotas kelias į ghostscript nustatytas neteisingai: {$a}';
 $string['pathtogspathdesc'] = 'Atkreipkite dėmesį, kad PDF komentavimas reikalauja GhostScript kelio nustatyto {$a}.';
 $string['pen'] = 'Rašiklis';
 $string['pluginname'] = 'PDF komentarai';
