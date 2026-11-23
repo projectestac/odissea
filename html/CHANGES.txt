@@ -4,6 +4,25 @@ More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
 
+Changes 26.11.23
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 4.5.16
+- Updated langpacks
+- attendance: Upgraded module
+- board: Upgraded module
+- c4l: Upgraded editor plugin
+- configurable_reports: Upgraded block
+- course_format_tiles: Fixed tiles images lost due to cache desync
+- completion_progress: Upgraded block
+- fontcolor: Upgraded editor plugin
+- GeoGebra: Upgraded module
+- importrubric: Upgraded block
+- journal: Upgraded module
+- OAuth: Upgraded local plugin
+- qtype_geogebra: Added question type
+- Wiris: Upgraded all question types
+
+
 Changes 26.06.22
 ---------------------------------------------------------------------------------------
 - Upgraded Moodle to version 4.5.12
